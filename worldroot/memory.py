@@ -52,7 +52,7 @@ class NarrativeMemory:
                 status TEXT NOT NULL, last_narrated_day INTEGER, visibility TEXT NOT NULL,
                 hypothesis_json TEXT NOT NULL, source_id TEXT, source_line INTEGER);
               CREATE TABLE IF NOT EXISTS chronology (
-                story_day INTEGER PRIMARY KEY CHECK(story_day BETWEEN 1 AND 528),
+                story_day INTEGER PRIMARY KEY CHECK(story_day >= 1),
                 kind TEXT NOT NULL CHECK(kind IN ('HEADER','ELIPSE','MENCAO','NAO_CERTIFICADO')),
                 primary_anchor TEXT, review_state TEXT NOT NULL,
                 editorial_note TEXT NOT NULL);
@@ -89,7 +89,7 @@ class NarrativeMemory:
                  visibility='BASTIDORES', status='PENDENTE_APROVACAO', semantic_review=False,
                  confidence='NAO_CERTIFICADO', minute=None):
         if status not in STATUSES or visibility not in SCOPES:raise ValueError('Invalid fact state')
-        if not 1<=day<=528 or source_line<1 or not source_id:raise ValueError('Evidence day/line required')
+        if day<1 or source_line<1 or not source_id:raise ValueError('Evidence day/line required')
         if status=='NARRADO' and not semantic_review:raise GateError('Narrated fact requires semantic review')
         if minute is not None and not 0<=minute<1440:raise ValueError('minute outside 24h')
         payload=encoded(value)
@@ -130,7 +130,7 @@ class NarrativeMemory:
     def record_relationship(self, *, relation_event_id, from_id, to_id, relation, state,
                             since_day, source_id, source_line, canon_status='PENDENTE_APROVACAO',
                             reviewed=False):
-        if canon_status not in STATUSES or not source_id or source_line<1 or not 1<=since_day<=528:
+        if canon_status not in STATUSES or not source_id or source_line<1 or since_day<1:
             raise ValueError('Relationship requires status and chronological evidence')
         if canon_status=='NARRADO' and not reviewed:
             raise GateError('Cannot canonize relationships by similarity or heuristics')
@@ -167,7 +167,7 @@ class NarrativeMemory:
         with self._db() as db:
             for item in classifications:
                 day=int(item['day'])
-                if not 1<=day<=528 or item['kind'] not in ('HEADER','ELIPSE','MENCAO','NAO_CERTIFICADO'):
+                if day<1 or item['kind'] not in ('HEADER','ELIPSE','MENCAO','NAO_CERTIFICADO'):
                     raise ValueError('Invalid day classification')
                 db.execute('INSERT OR REPLACE INTO chronology VALUES(?,?,?,?,?)',
                            (day,item['kind'],item.get('anchor'),item.get('review_state','PENDENTE'),item.get('note','')))
