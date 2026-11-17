@@ -87,6 +87,15 @@ class LedgerTest(unittest.TestCase):
         self.assertEqual(r['state'],'CONFERIDO')
         self.assertEqual(self.store.status()['event_count'],0)
 
+    def test_invalid_narrative_hour_rejected(self):
+        for bad in ('29h92','24h00','12h60','not-an-hour'):
+            with self.subTest(value=bad):
+                with self.assertRaises(ValueError):
+                    self.store.prepare('TEST-INVALID-HOUR', 'synthetic text', dict(META, hour=bad), [])
+
+    def test_canonical_narrative_hour_format(self):
+        self.assertEqual(self.store.prepare('TEST-GOOD-HOUR', 'synthetic text', dict(META, hour='23h59'), [])['state'], 'PREPARADO')
+
     def test_no_unauthorized_event_state(self):
         bad={**EVENT,'canon_status':'FAKE'}
         with self.assertRaises(ValueError):self.store.prepare('UNIT-CH1-P2-D10','x',META,[bad])
