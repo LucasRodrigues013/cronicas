@@ -53,6 +53,12 @@ def validate_interface(*, prose: str, book_closed: bool, chapter: int, part: str
         if rate>12 and total>=3:
             repetitive[phrase]={'count':total,'per_10000_words':round(rate,1)}
     if repetitive:notices.append('Review repeated stock expressions: '+', '.join(repetitive))
+    # A bare dash at the start of a dialogue paragraph is a stylistic deviation
+    # from the project convention NAME — speech. Non-blocking: legitimate
+    # literary quotations can still require human judgment.
+    unlabeled_dialogue=re.findall(r'(?m)^[ \t]*[—–]\s+[^\n]+',prose)
+    if unlabeled_dialogue:
+        notices.append(f'Review {len(unlabeled_dialogue)} unlabeled dialogue line(s) against NAME — convention')
     return {'ok':not errors,'errors':errors,'notices':notices,
             'save_label':('DRIVE CONFERIDO' if verified_remote and not errors else 'SALVAMENTO EXTERNO PENDENTE'),
             'repetitions':repetitive}
