@@ -22,10 +22,14 @@ class LedgerTest(unittest.TestCase):
     def prepared(self):
         return self.store.prepare('UNIT-CH1-P2-D10','Texto literal de teste.\n',META,[EVENT])
 
-    def completed(self):
+    def checked_locally(self):
         self.prepared();self.store.validate('UNIT-CH1-P2-D10')
         self.store.write_literal('UNIT-CH1-P2-D10','Texto literal de teste.\n')
-        self.store.verify_local('UNIT-CH1-P2-D10')
+        return self.store.verify_local('UNIT-CH1-P2-D10')
+
+    def completed(self):
+        self.checked_locally()
+        self.store.record_external_readback('UNIT-CH1-P2-D10',provider='google_drive',locator='drive-fixture-id',returned_bytes=b'Texto literal de teste.\n')
         return self.store.confirm('UNIT-CH1-P2-D10')
 
     def test_schema_integrity(self):self.assertEqual(self.store.status()['db_integrity'],'ok')
@@ -57,7 +61,9 @@ class LedgerTest(unittest.TestCase):
         self.completed();self.store.confirm('UNIT-CH1-P2-D10')
         self.assertEqual(self.store.status()['event_count'],1)
     def test_no_promotion_without_drive(self):
-        self.completed()
+        r=self.checked_locally()
+        self.assertEqual(r['state'],'CONFERIDO')
+        with self.assertRaises(GateError):self.store.confirm('UNIT-CH1-P2-D10')
         with self.assertRaises(GateError):self.store.promote('UNIT-CH1-P2-D10',author_approved=True,expected_head_day=9)
     def test_no_promotion_without_approval(self):
         self.completed()
@@ -71,8 +77,16 @@ class LedgerTest(unittest.TestCase):
         self.assertEqual(promoted['day'],10)
         self.assertEqual(self.store.status()['head']['day'],10)
     def test_reject_stale_head(self):
-        self.completed();self.store.record_external_readback('UNIT-CH1-P2-D10',provider='google_drive',locator='id',returned_bytes=b'Texto literal de teste.\n')
+        self.completed()
         with self.assertRaises(GateError):self.store.promote('UNIT-CH1-P2-D10',author_approved=True,expected_head_day=8)
+    def test_chronology_day_must_be_int(self):
+        with self.assertRaises(ValueError):self.store.prepare('BAD-DATE-001','texto',dict(META,day='10'),[])
+    def test_still_pending_local_only(self):
+        r=self.checked_locally()
+        self.assertIsNone(r['external'])
+        self.assertEqual(r['state'],'CONFERIDO')
+        self.assertEqual(self.store.status()['event_count'],0)
+
     def test_no_unauthorized_event_state(self):
         bad={**EVENT,'canon_status':'FAKE'}
         with self.assertRaises(ValueError):self.store.prepare('UNIT-CH1-P2-D10','x',META,[bad])
@@ -86,8 +100,8 @@ class LedgerTest(unittest.TestCase):
         self.store.validate('EVENTLESS-DELIVERY')
         self.store.write_literal('EVENTLESS-DELIVERY','Texto de teste')
         self.store.verify_local('EVENTLESS-DELIVERY')
-        self.store.confirm('EVENTLESS-DELIVERY')
         self.store.record_external_readback('EVENTLESS-DELIVERY', provider='google_drive', locator='fixture', returned_bytes=b'Texto de teste')
+        self.store.confirm('EVENTLESS-DELIVERY')
         with self.assertRaises(GateError):
             self.store.promote('EVENTLESS-DELIVERY',author_approved=True,expected_head_day=9)
 
