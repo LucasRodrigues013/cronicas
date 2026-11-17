@@ -102,29 +102,72 @@ class NarrativeMemory:
                 return
             db.execute('INSERT INTO facts VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)',entry)
 
-    def learn(self, *, person_id, fact_id, learned_day, channel, source_id, line, confirmed):
-        if not confirmed or not source_id or line<1 or not channel:raise GateError('Learning requires narrated provenance')
+    def learn(self, *, person_id, fact_id, learned_day, channel, source_id, line, confirmed,
+              learned_minute=None):
+        """Record narrated transfer. Without a minute, same-day knowledge is uncertain.
+
+        For minute-specific story queries, uncertain same-day transfers are
+        conservatively unavailable until the following day. Older day-only
+        queries remain backward compatible with the original schema.
+        """
+        if not confirmed or not source_id or line<1 or not channel:
+            raise GateError('Learning requires narrated provenance')
+        if not isinstance(learned_day,int) or isinstance(learned_day,bool) or learned_day<1:
+            raise ValueError('Learning day must be positive')
+        if learned_minute is not None and (not isinstance(learned_minute,int)
+                or isinstance(learned_minute,bool) or not 0<=learned_minute<1440):
+            raise ValueError('Learning minute outside 24h')
         with self._db() as db:
-            fact=db.execute('SELECT day,canon_status,semantic_review FROM facts WHERE fact_id=?',(fact_id,)).fetchone()
+            fact=db.execute('SELECT day,minute,canon_status,semantic_review FROM facts WHERE fact_id=?',(fact_id,)).fetchone()
             if not fact:raise ValueError('Unknown fact')
-            if fact[1]!='NARRADO' or not fact[2]:raise GateError('Planned/uncertified fact cannot become known canon')
-            if learned_day<fact[0]:raise GateError('Cannot know future fact without established in-world cause')
-            db.execute('INSERT OR IGNORE INTO knowledge VALUES(?,?,?,?,?,?,?,?)',
-                       (person_id,fact_id,learned_day,None,channel,source_id,line,1))
+            if fact[2]!='NARRADO' or not fact[3]:
+                raise GateError('Planned/uncertified fact cannot become known canon')
+            if learned_day<fact[0]:
+                raise GateError('Cannot know future fact without established in-world cause')
+            if learned_day==fact[0] and learned_minute is not None and fact[1] is not None and learned_minute<fact[1]:
+                raise GateError('Cannot learn a fact earlier than its narration')
+            old=db.execute('SELECT learned_minute,channel,narrator_source,narrator_line FROM knowledge WHERE person_id=? AND fact_id=? AND learned_day=?',
+                           (person_id,fact_id,learned_day)).fetchone()
+            if old:
+                if tuple(old)!=(learned_minute,channel,source_id,line):
+                    raise ConflictError('Knowledge arrival cannot silently change: add a new source event')
+                return
+            db.execute('INSERT INTO knowledge VALUES(?,?,?,?,?,?,?,?)',
+                       (person_id,fact_id,learned_day,learned_minute,channel,source_id,line,1))
 
-    def known_by(self, person_id, asof_day):
+    def known_by(self, person_id, asof_day, asof_minute=None):
+        if asof_minute is not None and (not isinstance(asof_minute,int) or not 0<=asof_minute<1440):
+            raise ValueError('asof_minute outside 24h')
+        # No future events can enter a character's knowledge due to same-day
+        # arrivals later than the current scene. Unknown time is treated as
+        # unknown until tomorrow, rather than inventing an early arrival.
+        time_clause = """AND (k.learned_day<? OR
+                 (k.learned_day=? AND k.learned_minute IS NOT NULL AND k.learned_minute<=?))
+                 AND (f.day<? OR (f.day=? AND (f.minute IS NULL OR f.minute<=?)))"""
+        if asof_minute is None:
+            time_clause = 'AND k.learned_day<=? AND f.day<=?'
+            args=(person_id,asof_day,asof_day)
+        else:
+            args=(person_id,asof_day,asof_day,asof_minute,asof_day,asof_day,asof_minute)
         with self._db() as db:
-            rows=db.execute('''SELECT f.fact_id,f.subject_id,f.predicate,f.object_json,k.learned_day,k.channel,
+            rows=db.execute("""SELECT f.fact_id,f.subject_id,f.predicate,f.object_json,k.learned_day,k.learned_minute,k.channel,
                             f.source_id,f.source_line FROM knowledge k JOIN facts f USING(fact_id)
-                            WHERE k.person_id=? AND k.confirmed=1 AND k.learned_day<=?
-                            AND f.day<=? AND f.canon_status='NARRADO' AND f.semantic_review=1
-                            ORDER BY k.learned_day,f.fact_id''',(person_id,asof_day,asof_day)).fetchall()
-        return [dict(zip(('fact_id','subject_id','predicate','value','learned_day','channel','source_id','line'),
-                         (r[0],r[1],r[2],json.loads(r[3]),r[4],r[5],r[6],r[7]))) for r in rows]
+                            WHERE k.person_id=? AND k.confirmed=1
+                            """+time_clause+""" AND f.canon_status='NARRADO' AND f.semantic_review=1
+                            ORDER BY k.learned_day,k.learned_minute,f.fact_id""",args).fetchall()
+        return [dict(zip(('fact_id','subject_id','predicate','value','learned_day','learned_minute','channel','source_id','line'),
+                         (r[0],r[1],r[2],json.loads(r[3]),r[4],r[5],r[6],r[7],r[8]))) for r in rows]
 
-    def viewed_by_reader(self, asof_day):
-        with self._db() as db:
-            rows=db.execute("SELECT fact_id,subject_id,predicate,object_json FROM facts WHERE day<=? AND canon_status='NARRADO' AND semantic_review=1 ORDER BY day",(asof_day,)).fetchall()
+    def viewed_by_reader(self, asof_day, asof_minute=None):
+        if asof_minute is not None and (not isinstance(asof_minute,int) or not 0<=asof_minute<1440):
+            raise ValueError('asof_minute outside 24h')
+        sql="SELECT fact_id,subject_id,predicate,object_json FROM facts WHERE canon_status='NARRADO' AND semantic_review=1 "
+        if asof_minute is None:
+            sql+="AND day<=? ORDER BY day,minute";args=(asof_day,)
+        else:
+            sql+="AND (day<? OR (day=? AND minute IS NOT NULL AND minute<=?)) ORDER BY day,minute"
+            args=(asof_day,asof_day,asof_minute)
+        with self._db() as db:rows=db.execute(sql,args).fetchall()
         return [{'fact_id':r[0],'subject_id':r[1],'predicate':r[2],'value':json.loads(r[3])} for r in rows]
 
     def record_relationship(self, *, relation_event_id, from_id, to_id, relation, state,
