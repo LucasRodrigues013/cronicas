@@ -18,7 +18,7 @@ class Choice:
 
 def validate_interface(*, prose: str, book_closed: bool, chapter: int, part: str,
                        choices: list[Choice], actual_save_receipt: dict | None,
-                       perspective: str='CHARACTER'):
+                       perspective: str='CHARACTER', trusted_receipt_verifier=None):
     errors=[];notices=[]
     if ENDING_BOOK.search(prose) and not book_closed:
         errors.append('Cannot render FIM DO LIVRO without approved book-close event')
@@ -32,9 +32,20 @@ def validate_interface(*, prose: str, book_closed: bool, chapter: int, part: str
         errors.append('Choices require meaningful nonempty descriptions')
     if perspective not in ('CHARACTER','READER','EDITORIAL'):
         errors.append('Unknown audience context')
+    verified_remote=False
     if actual_save_receipt:
-        if actual_save_receipt.get('verification')!='google_drive_get_media' or not actual_save_receipt.get('file_id'):
+        if (actual_save_receipt.get('verification')!='google_drive_get_media'
+                or not actual_save_receipt.get('file_id') or not actual_save_receipt.get('sha256')):
             errors.append('Unverified receipt must not be rendered as saved')
+        elif trusted_receipt_verifier is None:
+            errors.append('Caller-provided receipt alone is not proof of remote readback')
+        else:
+            try:
+                verified_remote=bool(trusted_receipt_verifier(actual_save_receipt))
+            except Exception:
+                verified_remote=False
+            if not verified_remote:
+                errors.append('Trusted receipt verification failed')
     repetitive={}
     for phrase in ('começou a rir','uma pausa.','um silêncio.','então sorriu'):
         total=len(re.findall(re.escape(phrase),prose,re.I));words=max(1,len(prose.split()))
@@ -43,7 +54,7 @@ def validate_interface(*, prose: str, book_closed: bool, chapter: int, part: str
             repetitive[phrase]={'count':total,'per_10000_words':round(rate,1)}
     if repetitive:notices.append('Review repeated stock expressions: '+', '.join(repetitive))
     return {'ok':not errors,'errors':errors,'notices':notices,
-            'save_label':('DRIVE CONFERIDO' if actual_save_receipt and not errors else 'SALVAMENTO EXTERNO PENDENTE'),
+            'save_label':('DRIVE CONFERIDO' if verified_remote and not errors else 'SALVAMENTO EXTERNO PENDENTE'),
             'repetitions':repetitive}
 
 
