@@ -51,6 +51,12 @@ class MemoryTest(unittest.TestCase):
  def test_thread_hypothesis_cannot_auto_canonize(self):
   self.db.open_thread(thread_id='HYP-001',kind='MYSTERY',title='Unproven theory',status='PLANEJADO',hypotheses={'not_canon':True})
   with self.assertRaises(ConflictError):self.db.open_thread(thread_id='HYP-001',kind='MYSTERY',title='Unproven theory',status='NARRADO',source_id='TXT')
+ def test_future_day_can_be_staged_without_story_generation(self):
+  # Engine must remain usable after the last audited day without pre-narrating it.
+  self.db.add_fact(fact_id='FACT-FUTURE',subject_id='CHAR_A',predicate='hypothesis',value='not narrated',day=529,source_id='SYNTHETIC_ONLY',source_line=1,status='PLANEJADO',semantic_review=False)
+  self.assertEqual(self.db.viewed_by_reader(529),[])
+  self.db.stage_chronology([{'day':529,'kind':'NAO_CERTIFICADO','note':'future checkpoint not yet narrated'}])
+  self.assertEqual(self.db.summary()['days']['NAO_CERTIFICADO'],1)
  def test_reviewed_public_only(self):
   self.direct_fact(visibility='PUBLICO')
   self.assertTrue(self.db.can_publish_public('FACT-0001'))
