@@ -72,7 +72,7 @@ class WorldrootStore:
                 id TEXT PRIMARY KEY, sha256 TEXT NOT NULL, bytes INTEGER NOT NULL,
                 metadata_json TEXT NOT NULL, events_json TEXT NOT NULL,
                 state TEXT NOT NULL CHECK (state IN ('PREPARADO','VALIDADO','GRAVADO','CONFERIDO','CONFIRMADO')),
-                local_path TEXT, local_verified_at TEXT, remote_receipt_json TEXT,
+                local_path TEXT, local_verified_at TEXT, remote_receipt_json TEXT, remote_head_receipt_json TEXT,
                 created_at TEXT NOT NULL, updated_at TEXT NOT NULL
             );
             CREATE TABLE IF NOT EXISTS transitions (
@@ -90,11 +90,19 @@ class WorldrootStore:
                 part TEXT NOT NULL, hour TEXT NOT NULL, location TEXT NOT NULL,
                 delivery_id TEXT, release_record_json TEXT NOT NULL, changed_at TEXT NOT NULL
             );
+            CREATE TABLE IF NOT EXISTS outbox (
+                delivery_id TEXT NOT NULL REFERENCES deliveries(id), kind TEXT NOT NULL,
+                status TEXT NOT NULL, attempts INTEGER NOT NULL DEFAULT 0, last_error TEXT,
+                updated_at TEXT NOT NULL, PRIMARY KEY(delivery_id,kind)
+            );
             CREATE TABLE IF NOT EXISTS releases (
                 release TEXT PRIMARY KEY, release_record_json TEXT NOT NULL, state TEXT NOT NULL,
                 approved_by_author INTEGER NOT NULL, documented_debt_json TEXT NOT NULL, created_at TEXT NOT NULL
             );
             ''')
+            existing = {row[1] for row in c.execute('PRAGMA table_info(deliveries)')}
+            if 'remote_head_receipt_json' not in existing:
+                c.execute('ALTER TABLE deliveries ADD COLUMN remote_head_receipt_json TEXT')
             c.commit()
         finally:
             c.close()
@@ -201,6 +209,10 @@ class WorldrootStore:
         c=self._connection()
         try:
             head=c.execute('SELECT * FROM canon_head WHERE singleton=1').fetchone()
+            if head and meta['book'] != head['book'] and not meta.get('author_approved_book_transition'):
+                raise GateError('Book transition requires separately recorded explicit author approval')
+            if head and meta['day'] == head['day'] and meta['hour'] < head['hour']:
+                raise GateError('Story clock cannot move backward within the same day')
             if head and meta['day'] < head['day']:
                 raise GateError('Cannot travel backward from canon head')
             if head and meta['day'] > head['day']+1:
@@ -248,33 +260,77 @@ class WorldrootStore:
         return self._advance(delivery_id,'GRAVADO','CONFERIDO','Local readback SHA256 and byte count verified',local_verified_at=utcnow())
 
     def record_external_readback(self, delivery_id, *, provider, locator, returned_bytes: bytes):
-        if provider != 'google_drive':
-            raise ValueError('External source of truth is currently Google Drive')
-        r=self.receipt(delivery_id)
-        if r['state'] not in ('CONFERIDO','CONFIRMADO'):
-            raise InvalidStateError('Local readback first')
-        if not locator or not isinstance(locator,str):
-            raise ValueError('A grounded, nonempty external file locator is required')
-        sha=digest(returned_bytes)
-        if sha!=r['sha256'] or len(returned_bytes)!=r['bytes']:
-            raise GateError('External bytes do not match literal SHA256')
-        receipt={'provider':provider,'locator':locator,'sha256':sha,'bytes':len(returned_bytes),'checked_at':utcnow(),'verified':True}
+        """Deprecated unsafe API: a caller cannot attest its own remote bytes.
+
+        Only `GoogleDriveSynchronizer.sync()` may record provider receipts after
+        authenticated Google API upload/download and metadata verification.
+        """
+        raise GateError('Untrusted caller bytes are not Drive evidence; use authenticated Drive synchronizer')
+
+    def _record_gateway_receipt(self, delivery_id, receipt: dict):
+        """Internal hook invoked only by adapter after authenticated API readback.
+
+        Python process memory is not a hostile-code isolation boundary. Only a
+        trusted orchestrator may instantiate this store and Google API gateway.
+        """
+        r = self.receipt(delivery_id)
+        if r['state'] not in ('CONFERIDO', 'CONFIRMADO'):
+            raise InvalidStateError('Read local literal first')
+        if (receipt.get('verification') != 'google_drive_get_media'
+                or receipt.get('provider') != 'google_drive'
+                or receipt.get('delivery_id') != delivery_id
+                or receipt.get('sha256') != r['sha256']
+                or receipt.get('bytes') != r['bytes']
+                or not receipt.get('file_id')
+                or not receipt.get('folder_id')
+                or not receipt.get('remote_version')):
+            raise GateError('Invalid authenticated Drive readback receipt metadata')
         c=self._connection()
         try:
             c.execute('BEGIN IMMEDIATE')
-            current=c.execute('SELECT remote_receipt_json FROM deliveries WHERE id=?',(delivery_id,)).fetchone()
-            if current['remote_receipt_json']:
-                if json.loads(current['remote_receipt_json'])['locator']!=locator:
-                    raise ConflictError('Delivery already has a different external receipt')
+            old=c.execute('SELECT remote_receipt_json FROM deliveries WHERE id=?',(delivery_id,)).fetchone()
+            if old is None:
+                raise KeyError(delivery_id)
+            if old['remote_receipt_json']:
+                prior=json.loads(old['remote_receipt_json'])
+                if prior['file_id'] != receipt['file_id'] or prior['sha256'] != receipt['sha256']:
+                    raise ConflictError('Already verified a different remote document')
                 c.commit()
                 return self.receipt(delivery_id)
-            c.execute('UPDATE deliveries SET remote_receipt_json=?,updated_at=? WHERE id=?',(encoded(receipt),utcnow(),delivery_id))
+            c.execute('UPDATE deliveries SET remote_receipt_json=?,updated_at=? WHERE id=?',
+                      (encoded(receipt),utcnow(),delivery_id))
             c.commit()
         except Exception:
-            c.rollback()
-            raise
-        finally:
-            c.close()
+            c.rollback();raise
+        finally:c.close()
+        return self.receipt(delivery_id)
+
+    def _record_head_receipt(self, delivery_id, *, receipt: dict):
+        """Internal hook after Google Docs requiredRevisionId write and readback."""
+        r=self.receipt(delivery_id)
+        if r['state']!='CONFIRMADO' or not r['external']:
+            raise GateError('Confirm literal before HEAD receipt')
+        expected={'provider':'google_docs','verification':'required_revision_id_readback',
+                  'delivery_id':delivery_id,'sha256':r['sha256']}
+        if any(receipt.get(k)!=v for k,v in expected.items()) or not all(
+              receipt.get(k) for k in ('document_id','prior_revision','new_revision','expected_local_release')):
+            raise GateError('Invalid HEAD revision receipt')
+        if receipt['new_revision']==receipt['prior_revision']:
+            raise GateError('HEAD revision did not change')
+        c=self._connection()
+        try:
+            c.execute('BEGIN IMMEDIATE')
+            old=c.execute('SELECT remote_head_receipt_json FROM deliveries WHERE id=?',(delivery_id,)).fetchone()
+            if old['remote_head_receipt_json']:
+                prior=json.loads(old['remote_head_receipt_json'])
+                if prior!=receipt:raise ConflictError('HEAD receipt already sealed')
+                c.commit();return self.receipt(delivery_id)
+            c.execute('UPDATE deliveries SET remote_head_receipt_json=?,updated_at=? WHERE id=?',
+                      (encoded(receipt),utcnow(),delivery_id))
+            c.commit()
+        except Exception:
+            c.rollback();raise
+        finally:c.close()
         return self.receipt(delivery_id)
 
     def confirm(self, delivery_id):
@@ -283,13 +339,13 @@ class WorldrootStore:
             return r
         if r['state']!='CONFERIDO':
             raise InvalidStateError('verify local before confirm')
-        if not r['external'] or not r['external'].get('verified'):
+        if not r['external'] or r['external'].get('verification') != 'google_drive_get_media':
             raise GateError('CONFIRMADO requires independent Drive readback (never local-only)')
         c=self._connection()
         try:
             c.execute('BEGIN IMMEDIATE')
             row=c.execute('SELECT state,events_json,remote_receipt_json FROM deliveries WHERE id=?',(delivery_id,)).fetchone()
-            if not row['remote_receipt_json'] or not json.loads(row['remote_receipt_json']).get('verified'):
+            if not row['remote_receipt_json'] or json.loads(row['remote_receipt_json']).get('verification') != 'google_drive_get_media':
                 raise GateError('External Drive receipt disappeared or is not verified')
             if row['state']!='CONFERIDO':
                 if row['state']=='CONFIRMADO':
@@ -343,14 +399,18 @@ class WorldrootStore:
         finally:
             c.close()
 
-    def promote(self, delivery_id, *, author_approved: bool, expected_head_day: int):
+    def promote(self, delivery_id, *, author_approved: bool, expected_head_day: int, expected_head_release: str | None = None):
         if not author_approved:
             raise GateError('Author did not approve publication')
         r=self.receipt(delivery_id)
         if r['state']!='CONFIRMADO':
             raise GateError('Delivery not confirmed')
-        if not r['external'] or not r['external'].get('verified'):
+        if not r['external'] or r['external'].get('verification') != 'google_drive_get_media':
             raise GateError('No externally verified Drive literal receipt')
+        if not r.get('remote_head') or r['remote_head'].get('verification') != 'required_revision_id_readback':
+            raise GateError('No authenticated Google Docs HEAD revision receipt')
+        if not expected_head_release or r['remote_head']['expected_local_release']!=expected_head_release:
+            raise GateError('Expected HEAD release must match verified remote HEAD')
         if not r['events']:
             raise GateError('A reviewed event/continuity delta is required for canon promotion')
         if any(x.get('canon_status','PENDENTE_APROVACAO')!='NARRADO' for x in r['events']):
@@ -360,14 +420,16 @@ class WorldrootStore:
         try:
             c.execute('BEGIN IMMEDIATE')
             head=c.execute('SELECT * FROM canon_head WHERE singleton=1').fetchone()
-            if not head or head['day']!=expected_head_day:
+            if not head or head['day']!=expected_head_day or head['release']!=expected_head_release:
                 raise GateError('Stale expected_head_day; manual reconciliation required')
             if int(meta['day'])<head['day'] or int(meta['day'])>head['day']+1:
                 raise GateError('Invalid chronological advancement')
+            if int(meta['day'])==head['day'] and meta['hour']<head['hour']:
+                raise GateError('Cannot promote earlier time in the same story day')
             new_release=f"{head['release']}+{delivery_id}"
             new_info={'release':new_release,'day':meta['day'],'book':meta['book'],'chapter':meta['chapter'],
                 'part':meta['part'],'hour':meta['hour'],'location':meta['location'],'delivery_id':delivery_id,
-                'hash':r['sha256'],'readback':r['external']['locator'],'approved':True}
+                'hash':r['sha256'],'readback':r['external']['file_id'],'approved':True}
             c.execute('UPDATE canon_head SET release=?,day=?,book=?,chapter=?,part=?,hour=?,location=?,delivery_id=?,release_record_json=?,changed_at=? WHERE singleton=1',
                 (new_release,int(meta['day']),meta['book'],int(meta['chapter']),meta['part'],meta['hour'],meta['location'],delivery_id,encoded(new_info),utcnow()))
             c.execute('INSERT INTO releases(release,release_record_json,state,approved_by_author,documented_debt_json,created_at) VALUES (?,?,?,?,?,?)',
@@ -388,9 +450,38 @@ class WorldrootStore:
             return {'delivery_id':delivery_id,'sha256':d['sha256'],'bytes':d['bytes'],'state':d['state'],
                 'metadata':json.loads(d['metadata_json']),'events':json.loads(d['events_json']),
                 'local_path':d['local_path'],'local_verified_at':d['local_verified_at'],
-                'external':json.loads(d['remote_receipt_json']) if d['remote_receipt_json'] else None}
+                'external':json.loads(d['remote_receipt_json']) if d['remote_receipt_json'] else None,
+                'remote_head':json.loads(d['remote_head_receipt_json']) if d.get('remote_head_receipt_json') else None}
         finally:
             c.close()
+
+    def outbox_update(self, delivery_id: str, kind: str, *, status: str, error: str | None = None):
+        """Durable retry journal for non-atomic multi-service operations.
+
+        `DONE` means that particular service step was independently read back;
+        it does NOT imply that downstream HEAD/Atlas/Wiki were all synced.
+        """
+        if kind not in ('DRIVE_LITERAL','GOOGLE_DOCS_HEAD','BASE_ATLAS','WIKI'):
+            raise ValueError('Unknown publication step')
+        if status not in ('PENDING','FAILED','DONE'):
+            raise ValueError('Unknown outbox state')
+        c=self._connection()
+        try:
+            c.execute('INSERT INTO outbox(delivery_id,kind,status,attempts,last_error,updated_at) VALUES (?,?,?,?,?,?) '
+                      'ON CONFLICT(delivery_id,kind) DO UPDATE SET status=excluded.status, '
+                      'attempts=outbox.attempts+1,last_error=excluded.last_error,updated_at=excluded.updated_at',
+                      (delivery_id,kind,status,1,error,utcnow()))
+            c.commit()
+        finally:
+            c.close()
+        return self.outbox_receipt(delivery_id,kind)
+
+    def outbox_receipt(self, delivery_id, kind):
+        c=self._connection()
+        try:
+            row=c.execute('SELECT * FROM outbox WHERE delivery_id=? AND kind=?',(delivery_id,kind)).fetchone()
+            return dict(row) if row else None
+        finally:c.close()
 
     def status(self):
         c=self._connection()
