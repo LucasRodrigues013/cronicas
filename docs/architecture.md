@@ -19,7 +19,7 @@ Existing WORLDROOT 4.3 editor/FTS runtime remains a **read-only research adapter
 `VALIDADO`: metadata, chronology and consent checked; creative semantics still require editorial validation.
 `GRAVADO`: original bytes archived locally, atomic overwrite protection.
 `CONFERIDO`: SHA256/byte count independently checked after local readback.
-`CONFIRMADO`: journal finalized; external Drive proof stored separately.
+`CONFIRMADO`: journal finalized **only after** an independently checked Drive readback receipt; local-only state remains `CONFERIDO`.
 
 For state promotion to canon: requires verified Drive readback, explicit author approval, head-version lock and a separately reviewed record of each event. `PLAN / DRAFT / SIMULATED / PENDING` cannot be promoted as narrated.
 
