@@ -107,8 +107,10 @@ class WorldrootStore:
         for key in ('day', 'book', 'chapter', 'part', 'hour', 'location', 'choice'):
             if key not in metadata or metadata[key] in ('', None):
                 raise ValueError(f'Missing required metadata: {key}')
-        if int(metadata['day']) < 1 or int(metadata['chapter']) < 1:
-            raise ValueError('Invalid day/chapter')
+        if (not isinstance(metadata['day'], int) or isinstance(metadata['day'], bool)
+                or not isinstance(metadata['chapter'], int) or isinstance(metadata['chapter'], bool)
+                or metadata['day'] < 1 or metadata['chapter'] < 1):
+            raise ValueError('day and chapter must be positive integers')
         events = events or []
         ids = set()
         for event in events:
@@ -278,10 +280,14 @@ class WorldrootStore:
             return r
         if r['state']!='CONFERIDO':
             raise InvalidStateError('verify local before confirm')
+        if not r['external'] or not r['external'].get('verified'):
+            raise GateError('CONFIRMADO requires independent Drive readback (never local-only)')
         c=self._connection()
         try:
             c.execute('BEGIN IMMEDIATE')
-            row=c.execute('SELECT state,events_json FROM deliveries WHERE id=?',(delivery_id,)).fetchone()
+            row=c.execute('SELECT state,events_json,remote_receipt_json FROM deliveries WHERE id=?',(delivery_id,)).fetchone()
+            if not row['remote_receipt_json'] or not json.loads(row['remote_receipt_json']).get('verified'):
+                raise GateError('External Drive receipt disappeared or is not verified')
             if row['state']!='CONFERIDO':
                 if row['state']=='CONFIRMADO':
                     c.commit(); return self.receipt(delivery_id)
@@ -296,7 +302,7 @@ class WorldrootStore:
                 c.execute('INSERT INTO events(event_id,delivery_id,event_type,body_json,visibility,canon_status,recorded_at) VALUES (?,?,?,?,?,?,?)',
                           (eid,delivery_id,event.get('event_type','EVENT'),encoded(event),event['visibility'],event.get('canon_status','PENDENTE_APROVACAO'),utcnow()))
             c.execute('UPDATE deliveries SET state=?,updated_at=? WHERE id=?',('CONFIRMADO',utcnow(),delivery_id))
-            self._transition(c,delivery_id,'CONFERIDO','CONFIRMADO','Local archive finalized; external confirmation recorded separately')
+            self._transition(c,delivery_id,'CONFERIDO','CONFIRMADO','Local and external Drive readbacks verified; event ledger finalized')
             c.commit()
         except Exception:
             c.rollback();raise
