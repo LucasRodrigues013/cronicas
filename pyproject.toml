@@ -4,10 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "worldroot-ledger"
-version = "0.1.0"
+version = "0.2.0"
 description = "Private narrative event ledger and safe publication contracts"
 requires-python = ">=3.10"
 dependencies = []
+
+[project.optional-dependencies]
+drive = ["google-api-python-client>=2.100,<4", "google-auth>=2.20,<4"]
 
 [tool.setuptools.packages.find]
 include = ["worldroot*"]
