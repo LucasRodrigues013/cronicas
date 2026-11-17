@@ -1,124 +1,187 @@
+import hashlib
 import tempfile
 import unittest
 from pathlib import Path
-from worldroot import WorldrootStore, ConflictError, GateError, InvalidStateError
+from worldroot.ledger import WorldrootStore, ConflictError, GateError, InvalidStateError
+from worldroot.drive_bridge import GoogleDriveSynchronizer, GoogleDocsHeadPublisher
 
-META={'day':10,'book':'Livro de Testes','chapter':1,'part':'II','hour':'09h00','location':'local fictício','choice':'4'}
-EVENT={'event_id':'EVT-0001','event_type':'DECISAO','body':'consequência de teste',
+META={'day':10,'book':'Livro Sintético','chapter':1,'part':'II','hour':'09h00','location':'cidade fictícia','choice':'4'}
+EVENT={'event_id':'EVT-SYN-01','event_type':'DECISAO','body':'synthetic test only',
        'visibility':'PRIVADO_PERSONAGEM','canon_status':'NARRADO'}
+BODY='Original fictício imutável.\n'.encode()
+
+class FakeDrive:
+    def __init__(self):self.files={};self.upload_count=0;self.fail_download=False;self.tamper=False
+    def find(self,folder_id,delivery_id):
+        return [m.copy() for m,b in self.files.values() if m['appProperties']['worldroot_delivery']==delivery_id and folder_id in m['parents']]
+    def create(self,folder_id,filename,delivery_id,sha256,body):
+        self.upload_count+=1
+        key='fake-drive-'+str(self.upload_count)
+        meta={'id':key,'name':filename,'size':str(len(body)),
+              'md5Checksum':hashlib.md5(body).hexdigest(),'version':'1','parents':[folder_id],
+              'mimeType':'text/plain','appProperties':{'worldroot_delivery':delivery_id,'worldroot_sha256':sha256}}
+        self.files[key]=(meta,body)
+        return meta.copy()
+    def info(self,file_id):return self.files[file_id][0].copy()
+    def download(self,file_id):
+        if self.fail_download:raise RuntimeError('Synthetic network failure')
+        return self.files[file_id][1]+(b'tampered' if self.tamper else b'')
+
+class FakeDoc:
+    def __init__(self):self.rev='v1';self.body='Original synthetic HEAD.\n';self.fail_revision=False
+    def documents(self):return self
+    def get(self,documentId,fields):
+        class Request:
+            def __init__(self,fn):self.fn=fn
+            def execute(self):return self.fn()
+        return Request(lambda:{'documentId':documentId,'revisionId':self.rev,
+          'body':{'content':[{'paragraph':{'elements':[{'textRun':{'content':self.body}}]}}]}})
+    def batchUpdate(self,documentId,body):
+        class Request:
+            def __init__(self,fn):self.fn=fn
+            def execute(self):return self.fn()
+        def work():
+            if body['writeControl']['requiredRevisionId']!=self.rev:
+                raise RuntimeError('Synthetic concurrent write / 409')
+            self.body=body['requests'][0]['insertText']['text']+self.body
+            self.rev='v2'
+            return {'documentId':documentId,'writeControl':{'requiredRevisionId':'v2'}}
+        return Request(work)
 
 class LedgerTest(unittest.TestCase):
     def setUp(self):
-        self.tmp=tempfile.TemporaryDirectory()
-        self.addCleanup(self.tmp.cleanup)
-        self.store=WorldrootStore(self.tmp.name)
-        self.baseline()
-
-    def baseline(self):
-        return self.store.baseline(release='r7-test-baseline',day=9,book='Livro de Testes',chapter=1,
-              part='I',hour='23h06',location='ponto canônico de teste',
-              debts=['completude semântica pendente'],approved_by_author=True)
-
-    def prepared(self):
-        return self.store.prepare('UNIT-CH1-P2-D10','Texto literal de teste.\n',META,[EVENT])
-
-    def checked_locally(self):
-        self.prepared();self.store.validate('UNIT-CH1-P2-D10')
-        self.store.write_literal('UNIT-CH1-P2-D10','Texto literal de teste.\n')
-        return self.store.verify_local('UNIT-CH1-P2-D10')
-
-    def completed(self):
-        self.checked_locally()
-        self.store.record_external_readback('UNIT-CH1-P2-D10',provider='google_drive',locator='drive-fixture-id',returned_bytes=b'Texto literal de teste.\n')
-        return self.store.confirm('UNIT-CH1-P2-D10')
-
-    def test_schema_integrity(self):self.assertEqual(self.store.status()['db_integrity'],'ok')
-    def test_baseline_no_semantic_certification(self):
-        self.assertIn('NOT_CERTIFIED',str(self.store.status()['head']['release_record_json']))
-    def test_baseline_no_double(self):self.assertEqual(self.baseline()['release'],'r7-test-baseline')
-    def test_baseline_requires_debt(self):
-        with self.assertRaises(GateError):self.store.baseline(release='other',day=528,book='V',chapter=1,part='I',hour='00',location='x',debts=[],approved_by_author=True)
-    def test_prepare_idempotent(self):self.assertEqual(self.prepared(),self.prepared())
-    def test_duplicate_different_text_forbidden(self):
-        self.prepared()
-        with self.assertRaises(ConflictError):self.store.prepare('UNIT-CH1-P2-D10','Diferente',META,[EVENT])
-    def test_missing_choice(self):
-        m=dict(META);m.pop('choice')
-        with self.assertRaises(ValueError):self.store.prepare('UNIT-CH1-P2-D10','texto',m,[])
-    def test_no_unapproved_baseline(self):
-        with self.assertRaises(GateError):self.store.baseline(release='other',day=528,book='V',chapter=1,part='I',hour='00',location='x',debts=['x'],approved_by_author=False)
+        t=tempfile.TemporaryDirectory();self.addCleanup(t.cleanup)
+        self.store=WorldrootStore(t.name)
+        self.drive=FakeDrive();self.sync=GoogleDriveSynchronizer(self.drive,'synthetic-folder',allow_synthetic_test_transport=True)
+        self.doc=FakeDoc();self.publisher=GoogleDocsHeadPublisher(self.doc,'fake-doc')
+        self.store.baseline(release='r7-synthetic',day=9,book=META['book'],chapter=1,part='I',
+            hour='23h06',location='Synthetic',debts=['unfinished semantic reconciliation'],approved_by_author=True)
+    def prepare(self,id='SYNTH-DEL-10',events=None,text=None,meta=None):
+        return self.store.prepare(id,text if text is not None else BODY.decode(),
+                                  meta if meta is not None else META,[EVENT] if events is None else events)
+    def local(self,id='SYNTH-DEL-10',events=None,text=None,meta=None):
+        self.prepare(id,events,text,meta);self.store.validate(id)
+        self.store.write_literal(id,text if text is not None else BODY.decode())
+        return self.store.verify_local(id)
+    def confirmed(self,id='SYNTH-DEL-10',events=None,text=None,meta=None):
+        self.local(id,events,text,meta);self.sync.sync(self.store,id)
+        return self.store.confirm(id)
+    def head(self,id='SYNTH-DEL-10'):
+        return self.publisher.publish(self.store,id,expected_revision='v1',
+            expected_local_release='r7-synthetic',prerequisites_verified=True,author_approved=True)
+    def test_fake_transport_not_accepted_by_default(self):
+        with self.assertRaises(GateError):GoogleDriveSynchronizer(self.drive,'synthetic-folder')
+    def test_integrity(self):self.assertEqual(self.store.status()['db_integrity'],'ok')
+    def test_author_approval_required(self):
+        with self.assertRaises(GateError):self.store.baseline(release='bad',day=1,book='x',chapter=1,part='I',hour='09h00',location='x',debts=['debt'],approved_by_author=False)
+    def test_baseline_idempotent(self):
+        self.assertEqual(self.store.baseline(release='r7-synthetic',day=9,book=META['book'],chapter=1,part='I',hour='23h06',location='Synthetic',debts=['unfinished semantic reconciliation'],approved_by_author=True)['release'],'r7-synthetic')
+    def test_prepared_idempotent(self):self.assertEqual(self.prepare(),self.prepare())
+    def test_conflict_on_changed_text(self):
+        self.prepare()
+        with self.assertRaises(ConflictError):self.prepare(text='other')
+    def test_missing_metadata(self):
+        with self.assertRaises(ValueError):self.prepare(meta={k:v for k,v in META.items() if k!='choice'})
+    def test_bad_time(self):
+        for hour in ['29h92','24h00','12h60','noon','9h00']:
+            with self.subTest(hour=hour),self.assertRaises(ValueError):self.prepare(meta={**META,'hour':hour})
+    def test_legal_time(self):
+        self.assertEqual(self.prepare(meta={**META,'hour':'23h59'})['state'],'PREPARADO')
     def test_no_write_before_validation(self):
-        self.prepared()
-        with self.assertRaises(InvalidStateError):self.store.write_literal('UNIT-CH1-P2-D10','Texto literal de teste.\n')
-    def test_no_changed_bytes_written(self):
-        self.prepared();self.store.validate('UNIT-CH1-P2-D10')
-        with self.assertRaises(ConflictError):self.store.write_literal('UNIT-CH1-P2-D10','Outro texto')
-    def test_full_local_flow(self):
-        r=self.completed()
-        self.assertEqual(r['state'],'CONFIRMADO')
-        self.assertEqual(Path(r['local_path']).read_text(),'Texto literal de teste.\n')
-    def test_no_duplicate_events_on_retry(self):
-        self.completed();self.store.confirm('UNIT-CH1-P2-D10')
+        self.prepare()
+        with self.assertRaises(InvalidStateError):self.store.write_literal('SYNTH-DEL-10',BODY.decode())
+    def test_digest_protects_write(self):
+        self.prepare();self.store.validate('SYNTH-DEL-10')
+        with self.assertRaises(ConflictError):self.store.write_literal('SYNTH-DEL-10','changed')
+    def test_local_only_cannot_confirm(self):
+        self.local()
+        with self.assertRaises(GateError):self.store.confirm('SYNTH-DEL-10')
+    def test_forged_external_readback_rejected(self):
+        self.local()
+        with self.assertRaises(GateError):self.store.record_external_readback('SYNTH-DEL-10',provider='google_drive',locator='FAKE',returned_bytes=BODY)
+        with self.assertRaises(GateError):self.store.confirm('SYNTH-DEL-10')
+    def test_verified_remote_confirm(self):
+        self.assertEqual(self.confirmed()['state'],'CONFIRMADO')
         self.assertEqual(self.store.status()['event_count'],1)
-    def test_no_promotion_without_drive(self):
-        r=self.checked_locally()
-        self.assertEqual(r['state'],'CONFERIDO')
-        with self.assertRaises(GateError):self.store.confirm('UNIT-CH1-P2-D10')
-        with self.assertRaises(GateError):self.store.promote('UNIT-CH1-P2-D10',author_approved=True,expected_head_day=9)
-    def test_no_promotion_without_approval(self):
-        self.completed()
-        with self.assertRaises(GateError):self.store.promote('UNIT-CH1-P2-D10',author_approved=False,expected_head_day=9)
-    def test_reject_external_wrong_bytes(self):
-        self.completed()
-        with self.assertRaises(GateError):self.store.record_external_readback('UNIT-CH1-P2-D10',provider='google_drive',locator='id',returned_bytes=b'wrong')
-    def test_external_validated_promote(self):
-        self.completed();self.store.record_external_readback('UNIT-CH1-P2-D10',provider='google_drive',locator='drive-fixture-id',returned_bytes=b'Texto literal de teste.\n')
-        promoted=self.store.promote('UNIT-CH1-P2-D10',author_approved=True,expected_head_day=9)
-        self.assertEqual(promoted['day'],10)
-        self.assertEqual(self.store.status()['head']['day'],10)
-    def test_reject_stale_head(self):
-        self.completed()
-        with self.assertRaises(GateError):self.store.promote('UNIT-CH1-P2-D10',author_approved=True,expected_head_day=8)
-    def test_chronology_day_must_be_int(self):
-        with self.assertRaises(ValueError):self.store.prepare('BAD-DATE-001','texto',dict(META,day='10'),[])
-    def test_still_pending_local_only(self):
-        r=self.checked_locally()
-        self.assertIsNone(r['external'])
-        self.assertEqual(r['state'],'CONFERIDO')
-        self.assertEqual(self.store.status()['event_count'],0)
+    def test_drive_idempotent(self):
+        self.confirmed();self.sync.sync(self.store,'SYNTH-DEL-10');self.store.confirm('SYNTH-DEL-10')
+        self.assertEqual(self.drive.upload_count,1)
+        self.assertEqual(self.store.status()['event_count'],1)
+    def test_remote_modified_contents_fail(self):
+        self.local();self.drive.tamper=True
+        with self.assertRaises(GateError):self.sync.sync(self.store,'SYNTH-DEL-10')
+        self.assertIsNone(self.store.receipt('SYNTH-DEL-10')['external'])
+    def test_remote_modified_metadata_fail(self):
+        self.local();self.drive.create('synthetic-folder','SYNTH-DEL-10-'+self.store.receipt('SYNTH-DEL-10')['sha256'][:16]+'.txt','SYNTH-DEL-10',self.store.receipt('SYNTH-DEL-10')['sha256'],BODY)
+        next(iter(self.drive.files.values()))[0]['parents']=['wrong-folder']
+        # The file no longer appears in expected folder; adapter creates a new correct file.
+        self.sync.sync(self.store,'SYNTH-DEL-10');self.assertEqual(self.drive.upload_count,2)
+    def test_no_network_no_confirm_and_retry(self):
+        self.local();self.drive.fail_download=True
+        with self.assertRaises(RuntimeError):self.sync.sync(self.store,'SYNTH-DEL-10')
+        self.assertEqual(self.drive.upload_count,1)
+        self.drive.fail_download=False
+        self.sync.sync(self.store,'SYNTH-DEL-10')
+        self.assertEqual(self.drive.upload_count,1)
+        self.assertEqual(self.store.confirm('SYNTH-DEL-10')['state'],'CONFIRMADO')
+    def test_duplicate_remote_rejected(self):
+        self.local();r=self.store.receipt('SYNTH-DEL-10')
+        n='SYNTH-DEL-10-'+r['sha256'][:16]+'.txt'
+        self.drive.create('synthetic-folder',n,'SYNTH-DEL-10',r['sha256'],BODY)
+        self.drive.create('synthetic-folder',n,'SYNTH-DEL-10',r['sha256'],BODY)
+        with self.assertRaises(ConflictError):self.sync.sync(self.store,'SYNTH-DEL-10')
+    def test_canon_requires_head_receipt(self):
+        self.confirmed()
+        with self.assertRaises(GateError):self.store.promote('SYNTH-DEL-10',author_approved=True,expected_head_day=9,expected_head_release='r7-synthetic')
+    def test_head_requires_prerequisites(self):
+        self.confirmed()
+        with self.assertRaises(GateError):self.publisher.publish(self.store,'SYNTH-DEL-10',expected_revision='v1',expected_local_release='r7-synthetic',prerequisites_verified=False,author_approved=True)
+    def test_head_stale_remote_revision_fails(self):
+        self.confirmed();self.doc.rev='v3'
+        with self.assertRaises(ConflictError):self.head()
+        self.assertIsNone(self.store.receipt('SYNTH-DEL-10')['remote_head'])
+    def test_head_rejects_unapproved(self):
+        self.confirmed()
+        with self.assertRaises(GateError):self.publisher.publish(self.store,'SYNTH-DEL-10',expected_revision='v1',expected_local_release='r7-synthetic',prerequisites_verified=True)
 
-    def test_invalid_narrative_hour_rejected(self):
-        for bad in ('29h92','24h00','12h60','not-an-hour'):
-            with self.subTest(value=bad):
-                with self.assertRaises(ValueError):
-                    self.store.prepare('TEST-INVALID-HOUR', 'synthetic text', dict(META, hour=bad), [])
+    def test_head_readback_success(self):
+        self.confirmed();r=self.head()
+        self.assertEqual(r['remote_head']['new_revision'],'v2')
+    def test_canon_requires_explicit_author(self):
+        self.confirmed();self.head()
+        with self.assertRaises(GateError):self.store.promote('SYNTH-DEL-10',author_approved=False,expected_head_day=9,expected_head_release='r7-synthetic')
+    def test_canon_requires_head_release_match(self):
+        self.confirmed();self.head()
+        with self.assertRaises(GateError):self.store.promote('SYNTH-DEL-10',author_approved=True,expected_head_day=9,expected_head_release='wrong')
+    def test_canon_requires_reviewed_events(self):
+        self.confirmed(events=[{**EVENT,'canon_status':'PLANEJADO'}])
+        with self.assertRaises(GateError):self.head()
+    def test_canon_promotion_when_all_gates_verified(self):
+        self.confirmed();self.head()
+        self.assertEqual(self.store.promote('SYNTH-DEL-10',author_approved=True,expected_head_day=9,expected_head_release='r7-synthetic')['day'],10)
+    def test_no_events_no_promotion(self):
+        self.confirmed(events=[])
+        with self.assertRaises(GateError):self.head()
+    def test_no_backward_day(self):
+        self.prepare(meta={**META,'day':3})
+        with self.assertRaises(GateError):self.store.validate('SYNTH-DEL-10')
+    def test_no_future_jump(self):
+        self.prepare(meta={**META,'day':15})
+        with self.assertRaises(GateError):self.store.validate('SYNTH-DEL-10')
+    def test_same_day_clock_regression_rejected(self):
+        self.prepare(meta={**META,'day':9,'hour':'22h59'})
+        with self.assertRaises(GateError):self.store.validate('SYNTH-DEL-10')
+    def test_no_book_transition_without_approval(self):
+        self.prepare(meta={**META,'book':'New Book'})
+        with self.assertRaises(GateError):self.store.validate('SYNTH-DEL-10')
+    def test_outbox_on_network_failure(self):
+        self.local();self.drive.fail_download=True
+        with self.assertRaises(RuntimeError):self.sync.sync(self.store,'SYNTH-DEL-10')
+        self.assertEqual(self.store.outbox_receipt('SYNTH-DEL-10','DRIVE_LITERAL')['status'],'FAILED')
+        self.drive.fail_download=False;self.sync.sync(self.store,'SYNTH-DEL-10')
+        self.assertEqual(self.store.outbox_receipt('SYNTH-DEL-10','DRIVE_LITERAL')['status'],'DONE')
+    def test_no_reuse_event_id_in_pending(self):
+        self.prepare()
+        with self.assertRaises(ConflictError):self.prepare('OTHER-DEL-10',events=[EVENT])
 
-    def test_canonical_narrative_hour_format(self):
-        self.assertEqual(self.store.prepare('TEST-GOOD-HOUR', 'synthetic text', dict(META, hour='23h59'), [])['state'], 'PREPARADO')
-
-    def test_no_unauthorized_event_state(self):
-        bad={**EVENT,'canon_status':'FAKE'}
-        with self.assertRaises(ValueError):self.store.prepare('UNIT-CH1-P2-D10','x',META,[bad])
-    def test_no_event_overwrite(self):
-        self.completed()
-        meta={**META,'day':9}
-        with self.assertRaises(ConflictError):
-            self.store.prepare('UNIT-CH1-OTHER','Diferente',meta,[{**EVENT}])
-    def test_no_promotion_without_events(self):
-        self.store.prepare('EVENTLESS-DELIVERY','Texto de teste', META, [])
-        self.store.validate('EVENTLESS-DELIVERY')
-        self.store.write_literal('EVENTLESS-DELIVERY','Texto de teste')
-        self.store.verify_local('EVENTLESS-DELIVERY')
-        self.store.record_external_readback('EVENTLESS-DELIVERY', provider='google_drive', locator='fixture', returned_bytes=b'Texto de teste')
-        self.store.confirm('EVENTLESS-DELIVERY')
-        with self.assertRaises(GateError):
-            self.store.promote('EVENTLESS-DELIVERY',author_approved=True,expected_head_day=9)
-
-    def test_no_backward_chronology(self):
-        self.store.prepare('OLD-DELIVERY','Texto',dict(META,day=5),[])
-        with self.assertRaises(GateError):self.store.validate('OLD-DELIVERY')
-    def test_no_future_leap(self):
-        self.store.prepare('FUTURE-DELIVERY','Texto',dict(META,day=15),[])
-        with self.assertRaises(GateError):self.store.validate('FUTURE-DELIVERY')
-
-if __name__=='__main__':unittest.main(verbosity=2)
+if __name__=='__main__':unittest.main()
