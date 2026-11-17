@@ -1,4 +1,4 @@
-# WORLDROOT living architecture — contracts v0.1
+# WORLDROOT living architecture — contracts v0.2
 
 ## Authority and security
 
@@ -32,19 +32,23 @@ Knowledge scopes: `PUBLICO`, `PRIVADO_PERSONAGEM`, `BASTIDORES`. The public wiki
 - `validate(id) -> receipt`: monotonic story day; no future skip without approval
 - `write_literal(id, full_literal) -> receipt`: archive to private directory, atomic writing
 - `verify_local(id) -> receipt`: SHA256 readback
-- `record_external_readback(id, provider='google_drive', locator=verified_id, returned_bytes=bytes) -> receipt`: independently verified external bytes
+- `record_external_readback(...)`: **DEPRECATED AND BLOCKED**. Untrusted client-supplied bytes cannot certify an upload.
+- `GoogleDriveSynchronizer.sync(...)`: authenticated Google API client, idempotent search, metadata + independent blob download and SHA256 verification; synthetic fixture is allowed only explicitly in tests.
+- `GoogleDocsHeadPublisher.publish(...)`: guarded `requiredRevisionId` Google Docs HEAD update with readback and explicit author approval.
 - `confirm(id) -> receipt`: stable, nonduplication event logging
-- `promote(id, author_approved=True, expected_head_day=N) -> release`: guarded update
+- `promote(id, author_approved=True, expected_head_day=N, expected_head_release=R) -> release`: guarded only after independently verified HEAD receipt
 - `status() -> runtime status`
 
 External Drive/Sheets/Docs connector calls run in the authorized ChatGPT/tool environment, not from public code. Workflows **must never pretend** to have sent or fetched documents if tool access was missing.
 
-## Next adapters (not claimed implemented)
+## Remaining adapters (NOT yet production ready)
 
-- Google Drive uploader with re-download proof and retry / deferred outbox
-- HEAD and Atlas update with comparison-and-swap revision checks
-- Search integration with the full v4.3 literal index and public/private knowledge views
+- Google Drive downloader exists in Python (ADC), but has only synthetic local tests and is not deployed to an authenticated runner. Outbox stores retries.
+- Google Docs HEAD revision guard exists; Base/Atlas multi-service synchronization and its authenticated proof are not implemented end-to-end.
+- Read-only `legacy.py` FTS bridge and evidence-first `memory.py` exist; authenticated per-character retrieval and complete semantic review are still pending.
 - Chapter-close event extractor requiring review for subjective claims
 - Scheduled CI/regression suite with real connector environment as opt-in
 
-No Supabase project is required for this baseline; avoid a second authoritative database.
+No Supabase project is required for this baseline; avoid a second authoritative database. The Google APIs/SQLite bridge is NOT a security boundary against malicious code running in the same interpreter.
+
+See [new hardening roadmap](hardening-r7-roadmap.md) and [narrative interface contract](narrative-interface-contract.md).
