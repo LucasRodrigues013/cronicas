@@ -1,0 +1,16 @@
+# The GitHub repository is PUBLIC. Narratives, character data, secrets and runtime state are private.
+/runtime/
+/private/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.db
+*.db-journal
+*.zip
+*.txt
+*.env
+.env*
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
