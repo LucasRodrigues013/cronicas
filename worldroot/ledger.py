@@ -111,6 +111,9 @@ class WorldrootStore:
                 or not isinstance(metadata['chapter'], int) or isinstance(metadata['chapter'], bool)
                 or metadata['day'] < 1 or metadata['chapter'] < 1):
             raise ValueError('day and chapter must be positive integers')
+        if (not isinstance(metadata['hour'], str)
+                or not re.fullmatch(r'(?:[01]\\d|2[0-3])h[0-5]\\d', metadata['hour'])):
+            raise ValueError('Hour must use 24-hour canonical format HHhMM, from 00h00 through 23h59')
         events = events or []
         ids = set()
         for event in events:
