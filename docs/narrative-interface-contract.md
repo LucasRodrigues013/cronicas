@@ -1,3 +1,5 @@
+> **ADENDO EDITORIAL R16:** Design rico é necessário mas não suficiente; não usar blocos, painéis ou diálogos para repetir descobertas semânticas já encerradas. Antes do Livro VI aplicar o baseline privado de continuidade e separar editor/narrador/consciência dos personagens; a palavra 'fim do livro' é metadado, não saber de Lucas.
+
 # Narrative interface contract — WORLDROOT
 
 **Status:** technical design standard on the draft development branch; this file contains **no story content**. It governs rendering and user-facing receipts, not canon or world simulation.

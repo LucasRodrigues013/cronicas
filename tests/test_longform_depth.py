@@ -33,7 +33,9 @@ class LongformDepthTest(unittest.TestCase):
     def test_underlength_narrative_requires_expansion(self):
         result = inspect_longform(prose(780))
         self.assertEqual(result["status"], "EXPANDIR")
-        self.assertTrue(result["errors"])
+        self.assertEqual(result["errors"], [])
+        self.assertTrue(result["below_guideline"])
+        self.assertEqual(result["floor_enforcement"], "EDITORIAL_ADVISORY_ONLY")
         self.assertLess(result["prose_words_approx"], MIN_ARCHIVE_WORDS)
 
     def test_ui_buttons_and_markup_are_not_story(self):

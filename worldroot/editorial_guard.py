@@ -85,11 +85,13 @@ def compact_brief(policy: dict, scene_tags=(), max_chars: int = 1750) -> dict:
     ))
     lines = [
         "WORLDROOT | preferências autorais vigentes v" + str(policy["version"]),
-        "LONGFORM P26: ~10000 palavras de PROSA, nunca inflar cena ou contar interface.",
-        "CANONE P27: recuperar HEAD, ultimo draft literal e memoria temporal.",
-        "VIDA P28/P29/P30: cena humana > ata de tarefa; dias organicos, nao cronograma; sentir o climax.",
+        "PROGRESSAO P31/P32: nunca reensinar arco ja concluido; climax epico por causa e consequencia, nao ritual repetido.",
+        "DADOS P33: HEAD/book_closed dinamico; BASTIDORES nao e conhecimento de personagem.",
+        "QUALIDADE P34/P26: ~10000 palavras e ideal, nao piso rigido; nao inflar por repeticao.",
+        "CANONE P27: ler cena literal e conhecimento temporal antes de criar.",
+        "VIDA P28/P29/P30: conviver > relatar projetos; dia organico e repercussao emocional.",
     ]
-    prioritized = ("P26", "P27", "P28", "P29", "P30")
+    prioritized = ("P31", "P32", "P33", "P34", "P26", "P27", "P28", "P29", "P30")
     available = {r["id"] for r in active}
     selected = [rid for rid in prioritized if rid in available]
     for rule in scored:

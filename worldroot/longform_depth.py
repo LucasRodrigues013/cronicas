@@ -2,8 +2,8 @@
 
 Length is a production criterion requested by the author, not a literary
 grade. Does not generate prose, infer character knowledge, alter canon or pad.
-New drafts below the safety floor are rejected before archiving; immutable old
-drafts are exempt from retroactive rejection. Visual and semantic gates coexist.
+Length is advisory, not a hard gate. A finished shorter episode may beat
+an artificially inflated longform. Visual, provenance and causal gates remain.
 """
 from __future__ import annotations
 
@@ -62,11 +62,10 @@ def inspect_longform(prose: str, *, minimum: int = MIN_ARCHIVE_WORDS) -> dict:
     notices = list(scenes["advisories"])
     errors = []
     if words < minimum:
-        errors.append(
-            "LONGFORM01: narrative prose has "
-            + str(words) + " words; new longform installments require at least "
-            + str(minimum) + " (goal " + str(TARGET_WORDS)
-            + "). Expand lived scenes and consequences; never repeat or pad."
+        notices.append(
+            "LONGFORM01: narrative prose has " + str(words) + " words, below the "
+            + str(minimum) + "-word editorial guideline (goal " + str(TARGET_WORDS)
+            + "). Never pad or repeat resolved arcs; a complete shorter part is allowed."
         )
     elif words < AIM_LOW:
         notices.append(
@@ -81,12 +80,14 @@ def inspect_longform(prose: str, *, minimum: int = MIN_ARCHIVE_WORDS) -> dict:
         notices.append("LONGFORM02: multiple short scenes " + ", ".join(very_short)
                        + "; check emotional development and causality, do not append filler")
     return {
-        "status": "EXPANDIR" if errors else ("REVISAR" if notices else "ALVO"),
+        "status": "EXPANDIR" if words < minimum else ("REVISAR" if notices else "ALVO"),
         "signal": STATUS,
         "prose_words_approx": words,
         "target_words": TARGET_WORDS,
         "target_range": [AIM_LOW, AIM_HIGH],
         "archive_floor": minimum,
+        "floor_enforcement": "EDITORIAL_ADVISORY_ONLY",
+        "below_guideline": words < minimum,
         "scene_count": scenes["scene_count"],
         "scene_words_approx": scenes["scene_words_approx"],
         "median_scene_words_approx": median(lengths) if lengths else 0,

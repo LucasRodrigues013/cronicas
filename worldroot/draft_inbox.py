@@ -83,12 +83,10 @@ def _assemble(episode_id: str, payload: dict, *, enforce_presentation: bool = Tr
         if visual["errors"]:
             raise GateError("Chat presentation contract failed: " + "; ".join(visual["errors"])[:350])
 
-    # New longform chapters require a genuine narrative minimum; we do not
-    # count HTML/DIL or five choice buttons as story. Never alter old drafts.
+    # The 10k target is now NON-BLOCKING editorial guidance: a genuine ending
+    # is better than resetting arcs or padding prose. UI never counts as story.
     if enforce_presentation:
-        depth = inspect_longform(prose)
-        if depth["errors"]:
-            raise GateError("Narrative depth contract failed: " + "; ".join(depth["errors"])[:350])
+        inspect_longform(prose)
 
     events = payload.get("reviewed_events")
     knowledge = payload.get("reviewed_knowledge")
