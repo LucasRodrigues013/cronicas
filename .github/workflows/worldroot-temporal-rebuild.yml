@@ -24,7 +24,7 @@ jobs:
       - name: Checkout audited temporal-fix code at immutable SHA
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: 91109a02fc54d9b5e17c1c7c811255c410b8ccac
+          ref: 0f0a6ca109374e21d094e4412031486158b2f99a
           path: engine
           persist-credentials: false
       - name: Checkout private story-archive data
