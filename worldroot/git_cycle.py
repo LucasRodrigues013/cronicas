@@ -590,8 +590,12 @@ def _journal(root: Path):
         if clos.get("story_sha256") != manifest["original_readback_sha256"]:
             raise GateError("Journal references different immutable narrative")
         opts = clos.get("chosen_option")
-        choice_path = root / "choices" / clos["episode_id"] / f"option-{opts}.json"
-        choice = load(choice_path)
+        if opts == 0 and clos.get("book_closed") is True:
+            from .book_finalizer import author_finale_choice
+            choice = author_finale_choice(root, clos["episode_id"])
+        else:
+            choice_path = root / "choices" / clos["episode_id"] / f"option-{opts}.json"
+            choice = load(choice_path)
         if sha(canonical(choice)) != clos.get("choice_sha256"):
             raise GateError("Journal author choice SHA changed")
         require_reviewed_event_evidence(draft, clos.get("events", []))
@@ -667,7 +671,7 @@ def restore(root: Path) -> dict:
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description="WORLDROOT GitHub-only atomic canon and SQLite")
-    parser.add_argument("command", choices=("bootstrap", "close", "verify", "restore", "status"))
+    parser.add_argument("command", choices=("bootstrap", "close", "finalize-book", "verify", "restore", "status"))
     parser.add_argument("--archive-root", type=Path, required=True)
     args = parser.parse_args(argv)
     root = args.archive_root.resolve()
@@ -677,6 +681,9 @@ def main(argv=None):
         result = close(root)
     elif args.command == "restore":
         result = restore(root)
+    elif args.command == "finalize-book":
+        from .book_finalizer import finalize_book
+        result = finalize_book(root)
     else:
         head = load(root / "canon" / "HEAD.json")
         detail = verify_db(root, head) if args.command == "verify" else {}
