@@ -24,6 +24,7 @@ from .presentation_guard import presentation_preflight
 from .story_focus_audit import inspect_installment
 from .day_arc_audit import inspect_day_arc
 from .longform_depth import inspect_longform
+from .longform_segments import verify_longform_segments
 
 NARRATIVE_LIMIT = 500_000
 INBOX_LIMIT = 1_000_000
@@ -174,6 +175,7 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
     head = load(root / "canon" / "HEAD.json")
     if head.get("schema") != "worldroot-git-canon-v1":
         raise GateError("GitHub operational HEAD not yet initialized")
+    stage_receipt = verify_longform_segments(root, episode_id, payload)
     existing_manifest = root / "episodes" / episode_id / "draft" / "manifesto_imutavel.json"
     draft, files, review_files = _assemble(
         episode_id, payload, enforce_presentation=not existing_manifest.is_file())
@@ -198,7 +200,9 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
             "story_focus_advisory": _focus_receipt(payload["prose"]),
         "day_arc_advisory": inspect_day_arc(payload["prose"]),
         "longform_depth": inspect_longform(payload["prose"]),
+        "longform_stage": stage_receipt,
             "longform_depth": inspect_longform(payload["prose"]),
+            "longform_stage": stage_receipt,
         }
     _chronology(head, draft.metadata)
 
