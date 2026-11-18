@@ -13,6 +13,7 @@ from .git_cycle import check_id, load, sha, verify_episode, review_deltas
 from .longform_depth import inspect_longform
 from .presentation_guard import presentation_preflight
 from .editorial_guard import quick_preflight
+from .lived_narrative_audit import inspect_lived_narrative
 from .ledger import GateError, ConflictError
 
 
@@ -28,6 +29,7 @@ def audit_release(root: Path, episode_id: str) -> dict:
     head_path = root / "canon" / "HEAD.json"
     source_sha = None
     prose_words = 0
+    lived_advisory = None
 
     try:
         if not head_path.is_file():
@@ -69,6 +71,7 @@ def audit_release(root: Path, episode_id: str) -> dict:
         checks["longform_floor"] = not depth["errors"]
         if not checks["longform_floor"]:
             raise GateError("; ".join(depth["errors"]))
+        lived_advisory = inspect_lived_narrative(inbox["prose"])
         visual = presentation_preflight(source)
         checks["ux_rich_contract"] = not visual["errors"]
         if not checks["ux_rich_contract"]:
@@ -95,6 +98,7 @@ def audit_release(root: Path, episode_id: str) -> dict:
         "checks": checks,
         "errors": errors,
         "prose_words_approx": prose_words,
+        "lived_narrative_advisory": lived_advisory,
         "story_sha256": source_sha,
         "canon_changed": False,
         "drive_changed": False,
