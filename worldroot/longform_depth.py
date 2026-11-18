@@ -15,6 +15,9 @@ from .story_focus_audit import inspect_installment
 WORD = re.compile(r"[A-Za-zÀ-ÿ0-9]+(?:[’'-][A-Za-zÀ-ÿ0-9]+)*")
 DIL_TAG = re.compile(r"</?(?:box|row|col|grid|grid-item|text|title|caption|icon|button|textarea|divider|badge|spacer)(?:\s+[^>]+)?>", re.I)
 BODY_BINDING = re.compile(r"(?m)^\s*\{@body[^\n]*")
+SCENE_START = re.compile(r"(?m)^##\s+[IVX]{1,8}\s+[—–-]\s+[^\n]+$")
+END_MARKER = re.compile(r"(?m)^\s*(?:\*\*)?FIM DA PARTE|^##\s+(?:LIVRO|WORLDROOT|CHECKPOINT)\b", re.I)
+UI_CONTENT = re.compile(r"<(?:button|title|caption|text)\b[^>]*>.*?</(?:button|title|caption|text)>", re.I | re.S)
 TARGET_WORDS = 10_000
 AIM_LOW = 9_400
 AIM_HIGH = 11_000
@@ -26,7 +29,22 @@ def count_prose_words(prose: str) -> int:
     """Approximate rendered language in narrative prose, not UI or choices."""
     if not isinstance(prose, str):
         raise TypeError("prose must be a string")
-    return len(WORD.findall(BODY_BINDING.sub(" ", DIL_TAG.sub(" ", prose))))
+    headings = list(SCENE_START.finditer(prose))
+    # Only the literary body of scenes counts. Header, calendar, checkpoint,
+    # buttons and choices can never inflate the target.
+    if not headings:
+        return 0
+    total = 0
+    for i, heading in enumerate(headings):
+        end = headings[i + 1].start() if i + 1 < len(headings) else len(prose)
+        chunk = prose[heading.end():end]
+        stop = END_MARKER.search(chunk)
+        if stop:
+            chunk = chunk[:stop.start()]
+        chunk = UI_CONTENT.sub(" ", chunk)
+        chunk = BODY_BINDING.sub(" ", DIL_TAG.sub(" ", chunk))
+        total += len(WORD.findall(chunk))
+    return total
 
 
 def inspect_longform(prose: str, *, minimum: int = MIN_ARCHIVE_WORDS) -> dict:
