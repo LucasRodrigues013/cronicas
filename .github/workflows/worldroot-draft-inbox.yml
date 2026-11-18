@@ -24,7 +24,7 @@ jobs:
       - name: Checkout audited engine at immutable version
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: a08eaa8edcd935df4b6a8922d5b3202d9d33ddb4
+          ref: c525bc68d7ba5942d9132c864dba076591e793a3
           path: engine
           persist-credentials: false
       - name: Python 3.12
@@ -47,7 +47,7 @@ jobs:
       - name: Checkout trusted main code (pinned)
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: a08eaa8edcd935df4b6a8922d5b3202d9d33ddb4
+          ref: c525bc68d7ba5942d9132c864dba076591e793a3
           path: engine
           persist-credentials: false
       - name: Checkout private story archive data only
@@ -68,6 +68,7 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           from worldroot.draft_inbox import archive_inbox
+          from worldroot.delivery_gate import audit_release
           from worldroot.ledger import GateError
           root=Path("archive")
           pending=sorted(
@@ -80,6 +81,11 @@ jobs:
               print("Idempotent inbox run: no unarchived episode.")
           else:
               receipt=archive_inbox(root,pending[0])
+              gate=audit_release(root,pending[0].stem)
+              if not gate["release_allowed"]:
+                raise GateError("Reader delivery blocked: " + "; ".join(gate["errors"])[:300])
+              print("READER_DELIVERY_GATE_OK:",gate["episode_id"],gate["story_sha256"],
+                    "narrative words:",gate["prose_words_approx"])
               print("Immutable draft archived and verified. Events:",receipt["events"],
                     "knowledge:",receipt["knowledge"],"Drive changed:",receipt["drive_changed"])
               # The literary assessment is ADVISORY, not a bureaucratic block.
