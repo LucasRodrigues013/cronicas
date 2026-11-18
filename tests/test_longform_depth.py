@@ -41,8 +41,8 @@ class LongformDepthTest(unittest.TestCase):
         fake_ui = "<box><title>" + ("Botão " * 12000) + "</title><button>Enviar</button></box>"
         result = inspect_longform(narrative)
         self.assertEqual(result["status"], "EXPANDIR")
-        self.assertLess(count_prose_words(narrative),
-                        count_prose_words(narrative + fake_ui))
+        self.assertEqual(count_prose_words(narrative),
+                         count_prose_words(narrative + fake_ui))
         # Whole chapter is passed as prose by mistake: structured UI still
         # cannot be treated as approved real narrative by a word counter.
         self.assertFalse(result["semantic_certification"])
