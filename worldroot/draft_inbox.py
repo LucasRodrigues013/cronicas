@@ -26,6 +26,7 @@ from .day_arc_audit import inspect_day_arc
 from .lived_narrative_audit import inspect_lived_narrative
 from .longform_depth import inspect_longform
 from .longform_segments import verify_longform_segments
+from .book_closure import require_book_end_approval
 
 NARRATIVE_LIMIT = 500_000
 INBOX_LIMIT = 1_000_000
@@ -35,7 +36,8 @@ def _bytes(obj):
     return canonical(obj)
 
 
-def _assemble(episode_id: str, payload: dict, *, enforce_presentation: bool = True):
+def _assemble(episode_id: str, payload: dict, *, enforce_presentation: bool = True,
+              book_end_approval_verified: bool = False):
     if (payload.get("schema") != "worldroot-draft-inbox-v1"
             or payload.get("delivery_id") != episode_id):
         raise GateError("Inbox schema or immutable ID mismatch")
@@ -45,8 +47,10 @@ def _assemble(episode_id: str, payload: dict, *, enforce_presentation: bool = Tr
         raise GateError("Exact chapter must be text within the 500 KB limit")
     if not isinstance(prose, str) or not text.startswith(prose):
         raise GateError("Narrative prose is not the exact prefix of published content")
-    if payload.get("book_closed") is not False:
-        raise GateError("The active book cannot close without separate author approval")
+    if payload.get("book_closed") not in (True, False):
+        raise GateError("Explicit book closure boolean required")
+    if payload["book_closed"] and not book_end_approval_verified:
+        raise GateError("Cannot close book without verified author approval")
     metadata = payload.get("metadata")
     if not isinstance(metadata, dict) or metadata.get("canon_status") != "RASCUNHO":
         raise GateError("Draft metadata must state RASCUNHO")
@@ -58,7 +62,7 @@ def _assemble(episode_id: str, payload: dict, *, enforce_presentation: bool = Tr
     structured = {
         "delivery_id": episode_id, "prose": prose, "full_text": text,
         "metadata": metadata, "choices": choices, "events": [],
-        "book_closed": False, "editorial_visibility": "PRIVADO",
+        "book_closed": payload["book_closed"], "editorial_visibility": "PRIVADO",
     }
     try:
         draft = EpisodeDraft.from_dict(structured)
@@ -177,9 +181,17 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
     if head.get("schema") != "worldroot-git-canon-v1":
         raise GateError("GitHub operational HEAD not yet initialized")
     stage_receipt = verify_longform_segments(root, episode_id, payload)
+    book_end_approval_verified = False
+    if payload.get("book_closed") is True:
+        metadata = payload.get("metadata")
+        if not isinstance(metadata, dict):
+            raise GateError("Book end needs episode metadata")
+        require_book_end_approval(root, episode_id, metadata.get("book"))
+        book_end_approval_verified = True
     existing_manifest = root / "episodes" / episode_id / "draft" / "manifesto_imutavel.json"
     draft, files, review_files = _assemble(
-        episode_id, payload, enforce_presentation=not existing_manifest.is_file())
+        episode_id, payload, enforce_presentation=not existing_manifest.is_file(),
+        book_end_approval_verified=book_end_approval_verified)
     if existing_manifest.is_file():
         for name, body in files.items():
             existing = root / "episodes" / episode_id / "draft" / name
