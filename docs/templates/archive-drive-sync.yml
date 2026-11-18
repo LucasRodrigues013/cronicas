@@ -1,0 +1,56 @@
+# NOT INSTALLED / NOT ACTIVE.
+# Install as .github/workflows/archive-drive-sync.yml in story-archive ONLY AFTER
+# configuring Workload Identity Federation and confirming folder permissions.
+name: WORLDROOT · Espelho privado de rascunhos no Drive
+on:
+  push:
+    branches: [story-archive]
+    paths:
+      - 'episodes/**/draft/manifesto_imutavel.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: worldroot-drive-drafts
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    # No secret, provider or destination configured: do NOT falsely claim sync.
+    if: >-
+      ${{ vars.WORLDROOT_DRIVE_WIF_PROVIDER != '' &&
+          vars.WORLDROOT_DRIVE_SERVICE_ACCOUNT != '' &&
+          vars.WORLDROOT_DRAFTS_FOLDER_ID != '' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout private story archive
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          path: archive
+          persist-credentials: false
+      - name: Checkout reviewed WORLDROOT engine (update to approved SHA)
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: worldroot/r7-episode-closure-pipeline  # REPLACE with an approved immutable SHA before activation
+          path: engine
+          persist-credentials: false
+      - name: Install Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.12'
+      - name: Acquire short-lived Google credentials via OIDC
+        uses: google-github-actions/auth@7c6bc770dae815cd3e89ee6cdf493a5fab2cc093 # v3.0.0
+        with:
+          workload_identity_provider: ${{ vars.WORLDROOT_DRIVE_WIF_PROVIDER }}
+          service_account: ${{ vars.WORLDROOT_DRIVE_SERVICE_ACCOUNT }}
+      - name: Install WORLDROOT Drive client
+        run: python -m pip install './engine[drive]'
+      - name: Mirror and verify EXACT archived DRAFT bytes on Drive
+        env:
+          WORLDROOT_DRAFTS_FOLDER_ID: ${{ vars.WORLDROOT_DRAFTS_FOLDER_ID }}
+          PYTHONPATH: engine
+        run: python -m worldroot.archive_actions --archive-root archive
