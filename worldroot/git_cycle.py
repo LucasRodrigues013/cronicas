@@ -219,8 +219,15 @@ def bootstrap(root: Path) -> dict:
             or manifest.get("utf8_bytes") != len(content)):
         raise GateError("D528 preserved source checksum/size invalid")
     source_sha = sha(content)
-    if req.get("source_sha256") != source_sha:
-        raise GateError("D528 bootstrap request has wrong literal SHA-256")
+    git_blob_sha1 = hashlib.sha1(
+        b"blob " + str(len(content)).encode("ascii") + b"\\x00" + content
+    ).hexdigest()
+    if (manifest.get("github_blob_sha1") != git_blob_sha1
+            and manifest.get("github_blob_sha1") is not None):
+        raise GateError("D528 Git blob SHA-1 mismatch")
+    if (req.get("source_sha256") != source_sha
+            and req.get("source_git_blob_sha1") != git_blob_sha1):
+        raise GateError("D528 bootstrap request must match verified source SHA")
     head = {
         "schema": VERSION, "sequence": 0, "episode_id": BOOTSTRAP_ID,
         "day": 528, "book": "Livro V", "chapter": 15, "part": "I",
