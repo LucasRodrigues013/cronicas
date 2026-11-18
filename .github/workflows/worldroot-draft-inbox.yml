@@ -1,4 +1,4 @@
-name: WORLDROOT r8 - Immutable ChatGPT draft inbox (no OIDC)
+name: WORLDROOT r8 - Immutable ChatGPT draft inbox + authorial quality gate
 
 on:
   push:
@@ -24,7 +24,7 @@ jobs:
       - name: Checkout audited engine at immutable version
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: 18a92d3c88d1464069aec2ef1a7db02c6c051d80
+          ref: 925666b1ffb5235c5e0bc3697b942b5685428f0d
           path: engine
           persist-credentials: false
       - name: Python 3.12
@@ -47,7 +47,7 @@ jobs:
       - name: Checkout trusted main code (pinned)
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: 18a92d3c88d1464069aec2ef1a7db02c6c051d80
+          ref: 925666b1ffb5235c5e0bc3697b942b5685428f0d
           path: engine
           persist-credentials: false
       - name: Checkout private story archive data only
