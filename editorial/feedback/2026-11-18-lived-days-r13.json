@@ -1,0 +1,41 @@
+{
+  "schema": "worldroot-author-feedback-event-v1",
+  "feedback_id": "WR-EDITORIAL-20261118-LIVED-DAY-ARC",
+  "recorded_at": "2026-11-18",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "authorization": "EXPLICIT_AUTHOR_REQUEST_APPROVE_NARRATIVE_DAY_ARCS",
+  "quote": "veja se conseguimos cobrir um dia inteiro de historia, talvez isso esteja em falta pro tamanho do caso. Vamos iniciar e fechar os dias.",
+  "reference_source": "episodes/LV-C16-PII-D533-AUTHOR-SOURCE/draft/narrativa_integral.md",
+  "comparison_source": "episodes/LV-C15-PII-D529-AUTHOR-SOURCE/draft/narrativa_integral.md",
+  "approved_policy": {
+    "branch": "main",
+    "path": "worldroot/editorial_policy.json",
+    "version": 4,
+    "ids": [
+      "P24",
+      "P25"
+    ]
+  },
+  "actual_day_status": {
+    "day": 533,
+    "opening": "06h43",
+    "latest_narrated": "17h29",
+    "hours_spanned": "10h46",
+    "day_complete": false,
+    "episode_draft_saved": true,
+    "episode_canon_closed": false
+  },
+  "decisions": [
+    "Viver o começo, desenvolvimento, consequências e fechamento emocional de cada dia de história de forma orgânica",
+    "Um dia pode ocupar várias partes; partes podem atravessar noites sem criar regra de 24h",
+    "Priorizar foco Lucas, vínculos e mistérios, e limitar montagem de reuniões e relatórios",
+    "Não avançar automaticamente o calendário nem realizar escolha de história por simples aprovação editorial",
+    "Usar day_arc_audit como sinal consultivo e não como gate de palavras ou duração"
+  ],
+  "github_main_pr": 21,
+  "github_engine_sha": "5b62cda746f766e3b17372e10938ab1776e2c822",
+  "private_draft_integrity_unchanged": true,
+  "head_unchanged_by_this_feedback": true,
+  "new_author_choice_recorded": false,
+  "drive_synced": false
+}
