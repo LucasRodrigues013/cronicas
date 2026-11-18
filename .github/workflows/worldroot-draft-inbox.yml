@@ -1,0 +1,106 @@
+name: WORLDROOT r8 - Immutable ChatGPT draft inbox (no OIDC)
+
+on:
+  push:
+    branches: [story-archive]
+    paths:
+      - 'inbox/*.json'
+
+concurrency:
+  group: worldroot-story-draft-inbox
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  preflight:
+    if: github.actor == 'LucasRodrigues013'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout audited engine at immutable version
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: 18a92d3c88d1464069aec2ef1a7db02c6c051d80
+          path: engine
+          persist-credentials: false
+      - name: Python 3.12
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.12'
+      - name: Test immutable inbox and memory review
+        env:
+          PYTHONPATH: engine
+        run: timeout 90s python -m unittest discover -s engine/tests -q
+
+  archive:
+    needs: preflight
+    if: github.actor == 'LucasRodrigues013'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout trusted main code (pinned)
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: 18a92d3c88d1464069aec2ef1a7db02c6c051d80
+          path: engine
+          persist-credentials: false
+      - name: Checkout private story archive data only
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: story-archive
+          path: archive
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Python 3.12
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.12'
+      - name: Verify and archive the exact ChatGPT text with SHA256
+        env:
+          PYTHONPATH: engine
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from worldroot.draft_inbox import archive_inbox
+          from worldroot.ledger import GateError
+          root=Path("archive")
+          pending=sorted(
+              p for p in (root/"inbox").glob("*.json")
+              if not (root/"episodes"/p.stem/"draft"/"manifesto_imutavel.json").exists()
+          )
+          if len(pending)>1:
+              raise GateError("Multiple incomplete drafts detected; fail closed")
+          if not pending:
+              print("Idempotent inbox run: no unarchived episode.")
+          else:
+              receipt=archive_inbox(root,pending[0])
+              print("Immutable draft archived and verified. Events:",receipt["events"],
+                    "knowledge:",receipt["knowledge"],"Drive changed:",receipt["drive_changed"])
+          PY
+      - name: Atomically commit all eight private archive sidecars
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git -C archive config user.name "github-actions[bot]"
+          git -C archive config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C archive add -A episodes/
+          if git -C archive diff --cached --quiet; then
+            echo 'No new archive bytes; idempotent recovery.'
+            exit 0
+          fi
+          git -C archive commit -m "archive(worldroot): immutable private episode package and reviewed memory"
+          auth_header="$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)"
+          git -C archive -c "http.extraheader=AUTHORIZATION: basic $auth_header" push origin HEAD:refs/heads/story-archive
+          unset auth_header
+      - name: Explicitly report scope
+        run: |
+          echo 'Private GitHub narrative archived with literal SHA256 and semantic evidence.'
+          echo 'This action does NOT promote canon, update Google Drive or generate prose.'
