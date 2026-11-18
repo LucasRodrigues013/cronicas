@@ -49,6 +49,14 @@ class DraftInboxTest(unittest.TestCase):
         archive_inbox(self.root, self.inbox)
         self.assertEqual(archive_inbox(self.root, self.inbox)["changed_file_count"], 0)
 
+    def test_rerun_after_head_advanced_remains_idempotent(self):
+        archive_inbox(self.root, self.inbox)
+        head_path = self.root / "canon" / "HEAD.json"
+        head = load(head_path)
+        head.update({"day": 529, "chapter": 15, "part": "II", "hour": "20h42"})
+        head_path.write_bytes(canonical(head))
+        self.assertEqual(archive_inbox(self.root, self.inbox)["changed_file_count"], 0)
+
     def test_altered_inbox_cannot_overwrite_original(self):
         archive_inbox(self.root, self.inbox)
         self.data["prose"] = PROSE + "Additional synthetic text"
