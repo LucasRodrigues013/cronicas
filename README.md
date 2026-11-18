@@ -1,6 +1,6 @@
 # WORLDROOT — CRÔNICAS DE UM NOVO MUNDO
 
-**Repository role:** public *source code only* for the narrative persistence layer. **No chapter text, backups, unpublished plots, character secrets or SQLite archives should ever be committed.** The authoritative story documents live in the project's restricted Google Drive folder; the operational ledger is local/private.
+**Repository role:** PRIVATE story and source-code history. Code is developed on `worldroot/**`; the original story text and recovery packages are stored in `story-archive`. Google Drive remains the authoritative narrative document archive; SQLite is an operational projection and must be durably backed up. Do not log character secrets, credentials, or unpublished scenes in CI outputs or external issues.
 
 ## Hardening lane — P0–P2
 
@@ -71,3 +71,15 @@ command after receiving the next genuine author selection. The story archive
 always requires a verified **private** repository and independent readback.
 The existing `main` branch remains untouched until a reviewed release.
 See [episode lifecycle](docs/ciclo-de-episodios.md).
+
+
+## Operation status — choice-only goal (r7)
+
+- The private GitHub `story-archive` branch contains the **literal** D529 Part II draft (`LV-C15-PII-D529-AUTHOR-SOURCE`), with SHA256 and five choices; integrity-check GitHub Actions ran **successfully**.
+- Latest Drive and GitHub draft reads succeeded. **The official HEAD is still D528.** D529 Part II has not been promoted, and the user's next choice remains outstanding.
+- The semantic event sidecar of this immutable draft is `[]`. Evidence-linked **candidates** (11 events, 6 knowledge updates) are in `episodes/LV-C15-PII-D529-AUTHOR-SOURCE/review/`. They are NOT canon or an automatic full knowledge reconciliation.
+- This development branch includes the fail-closed next-choice pipeline, and an evidence-based canonical event gate (`worldroot/semantic_gate.py`).
+- Google Drive mirroring from Actions is **not yet active**. WIF/OIDC, restricted Drive sharing, persistent SQLite replay, a deterministic close job, and a remote end-to-end test remain required.
+- Read `docs/choice-first-automation-architecture.md` before enabling any privileged workflow. GitHub Actions can run on Git events, but cannot read a new ChatGPT reply/choice unless a trusted ChatGPT-side invocation posts that event.
+
+**Never mark an episode CANÔNICO merely because a code/QA workflow passed.** The next genuine author choice must close the previous archive, Base Viva and Atlas must be checked, and the official Drive HEAD must advance last.
