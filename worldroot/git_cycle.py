@@ -21,6 +21,7 @@ from .choice_intake import verify_tree as verify_choices, IntakeError
 from .episode_pipeline import EpisodeDraft
 from .semantic_gate import require_reviewed_event_evidence
 from .ledger import GateError, ConflictError
+from .temporal_projection import event_day, load_corrections, projected_knowledge_day
 
 VERSION = "worldroot-git-canon-v1"
 PARTS = {"I": 1, "II": 2, "III": 3, "IV": 4, "V": 5}
@@ -125,6 +126,30 @@ def verify_db(root: Path, head: dict) -> dict:
         entries = connection.execute("SELECT COUNT(*) FROM episodes").fetchone()[0]
         if entries != head["sequence"]:
             raise GateError("SQLite has a different canonical episode count")
+        # Detect projection drift, including historical cross-midnight records.
+        # Reading four or a few dozen small closure JSONs is deliberately cheap.
+        corrections = load_corrections(root, load)
+        for journal_path in sorted((root / "canon" / "episodes").glob("*.json")):
+            closure = load(journal_path)
+            meta_day = closure["metadata"]["day"]
+            by_event = {ev["event_id"]: ev for ev in closure["events"]}
+            for ev in closure["events"]:
+                actual = connection.execute("SELECT day FROM events WHERE event_id=?", (ev["event_id"],)).fetchone()
+                if actual is None or actual[0] != event_day(ev, meta_day):
+                    raise GateError("SQLite event day diverges from immutable source; restore required")
+            for item in closure["knowledge"]:
+                source = by_event.get(item["source_event"])
+                if source is None:
+                    raise GateError("Canonical NPC knowledge references absent event")
+                expected_day = projected_knowledge_day(
+                    closure["episode_id"], item, source, meta_day, corrections)
+                actual = connection.execute(
+                    "SELECT acquired_day FROM npc_knowledge "
+                    "WHERE episode_id=? AND person=? AND event_id=? AND description=?",
+                    (closure["episode_id"], item["person"], item["source_event"], item["knowledge"]),
+                ).fetchone()
+                if actual is None or actual[0] != expected_day:
+                    raise GateError("SQLite NPC knowledge day diverges from source; restore required")
         return {"sequence": row[0], "episodes": entries}
     finally:
         connection.close()
@@ -308,6 +333,10 @@ def review_deltas(root: Path, episode_id: str, draft: EpisodeDraft) -> tuple[lis
         raise GateError("Closing chapter requires nonempty reviewed events")
     require_reviewed_event_evidence(draft, events)
     all_event_ids = {e["event_id"] for e in events}
+    for ev in events:
+        actual_day = event_day(ev, draft.metadata["day"])
+        if actual_day < draft.metadata["day"] - 1:
+            raise GateError("Reviewed event day outside this installment")
     if (knowledge.get("schema") != "worldroot-reviewed-knowledge-v1"
             or knowledge.get("episode_id") != episode_id
             or knowledge.get("review_status") != "REVISADO"):
@@ -323,20 +352,25 @@ def review_deltas(root: Path, episode_id: str, draft: EpisodeDraft) -> tuple[lis
                 or not isinstance(item.get("knowledge"), str) or len(item["knowledge"]) < 8
                 or item.get("source_event") not in all_event_ids):
             raise GateError("Character knowledge requires actual linked event")
-        if item.get("acquired_day") != draft.metadata["day"]:
-            raise GateError("Character knowledge time inconsistent with scene day")
+        source_event = next(ev for ev in events if ev["event_id"] == item["source_event"])
+        source_day = event_day(source_event, draft.metadata["day"])
+        knowledge_day = item.get("acquired_day")
+        if (type(knowledge_day) is not int
+                or not source_day <= knowledge_day <= draft.metadata["day"]):
+            raise GateError("Character knowledge day precedes source or exceeds chapter")
         clock = item.get("clock")
         if clock is not None and (not isinstance(clock, str) or not CLOCK.fullmatch(clock)):
             raise GateError("Invalid character knowledge clock")
         if item.get("visibility") not in ("PUBLICO", "PRIVADO_PERSONAGEM", "BASTIDORES"):
             raise GateError("Invalid character knowledge visibility")
-        source_event = next(ev for ev in events if ev["event_id"] == item["source_event"])
         event_clock = source_event.get("clock")
         if event_clock is not None and (not isinstance(event_clock, str) or not CLOCK.fullmatch(event_clock)):
             raise GateError("Event clock must be valid HHhMM")
-        if clock is not None and event_clock is not None and clock < event_clock:
+        if (clock is not None and event_clock is not None
+                and knowledge_day == source_day and clock < event_clock):
             raise GateError("Character cannot know an event before it happened")
-        if clock is not None and clock > draft.metadata["hour"]:
+        if (clock is not None and knowledge_day == draft.metadata["day"]
+                and clock > draft.metadata["hour"]):
             raise GateError("Character cannot gain knowledge after episode checkpoint")
         key = (item["person"], item["source_event"], item["knowledge"])
         if key in keyset:
@@ -386,9 +420,11 @@ def _closure(root, episode_id, head, choice, draft, events, kn):
     return payload
 
 
-def apply_closure_db(conn, closure: dict, new_head: dict):
+def apply_closure_db(conn, closure: dict, new_head: dict, corrections=None):
     episode = closure["episode_id"]
     meta = closure["metadata"]
+    corrections = corrections or {}
+    events_by_id = {x["event_id"]: x for x in closure["events"]}
     conn.execute(
         "INSERT INTO episodes VALUES (?,?,?,?,?,?,?,?,?,?,?)",
         (episode, closure["sequence"], closure["story_sha256"],
@@ -400,14 +436,19 @@ def apply_closure_db(conn, closure: dict, new_head: dict):
         conn.execute(
             "INSERT INTO events VALUES (?,?,?,?,?,?,?,?,?)",
             (event["event_id"], episode, event["summary_candidato"], event.get("event_type", "NARRADO"),
-             event["visibility"], meta["day"], event.get("clock"),
+             event["visibility"], event_day(event, meta["day"]), event.get("clock"),
              src["line"], src["literal_anchor"]),
         )
     for item in closure["knowledge"]:
+        linked = events_by_id.get(item["source_event"])
+        if linked is None:
+            raise GateError("NPC knowledge source event missing from closure")
+        projected_day = projected_knowledge_day(
+            episode, item, linked, meta["day"], corrections)
         conn.execute(
             "INSERT INTO npc_knowledge (person,event_id,episode_id,description,acquired_day,acquired_time,visibility) VALUES (?,?,?,?,?,?,?)",
             (item["person"], item["source_event"], episode, item["knowledge"],
-             item["acquired_day"], item["clock"], item["visibility"]),
+             projected_day, item["clock"], item["visibility"]),
         )
     conn.execute("INSERT INTO receipts VALUES (?,?,?,?,?)",
                  (episode, closure["choice_sha256"], sha(canonical(closure)),
@@ -474,7 +515,8 @@ def close(root: Path) -> dict:
             connection.execute("PRAGMA foreign_keys=ON")
             try:
                 connection.execute("BEGIN IMMEDIATE")
-                apply_closure_db(connection, closure, new_head)
+                apply_closure_db(connection, closure, new_head,
+                                 load_corrections(root, load))
                 connection.commit()
             except Exception:
                 connection.rollback()
@@ -575,7 +617,7 @@ def restore(root: Path) -> dict:
             for clos, new_head in _journal(root):
                 _chronology(current, clos["metadata"])
                 conn.execute("BEGIN IMMEDIATE")
-                apply_closure_db(conn, clos, new_head)
+                apply_closure_db(conn, clos, new_head, load_corrections(root, load))
                 conn.commit()
                 current = new_head
                 n += 1
