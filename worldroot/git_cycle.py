@@ -426,6 +426,14 @@ def _chronology(previous: dict, meta: dict, *, prose: str | None = None,
         raise GateError("Book cannot change without prior closure and author approval")
     if meta["day"] < previous["day"]:
         raise GateError("Book/day transition not approved")
+    if meta["book"] == "Livro VI":
+        if meta["day"] > previous["day"] + 1:
+            raise GateError("Livro VI narrates one calendar day at a time; multi-day jump rejected")
+        if prose is not None:
+            from .day_arc_audit import inspect_day_arc
+            arc = inspect_day_arc(prose)
+            if arc["days_touched"] != [meta["day"]]:
+                raise GateError("Livro VI part must contain only its current calendar day; no multiple days")
     if meta["day"] > previous["day"] + 1:
         # r14.1: a part may LIVE several days, but must show EVERY day and
         # monotonically advance time. No date jump based on metadata alone.
@@ -533,6 +541,8 @@ def close(root: Path) -> dict:
         raise GateError("Only one pending author choice per closure batch")
     selected = pending[0]
     episode_id = selected["episode_id"]
+    if (root / "editorial" / "rejections" / (episode_id + ".json")).is_file():
+        raise GateError("Author rejected this draft; cannot close into canon")
     path = root / "choices" / episode_id / f"option-{selected['option']}.json"
     choice = load(path)
     draft, _ = verify_episode(root, episode_id)
