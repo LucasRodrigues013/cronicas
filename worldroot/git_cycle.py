@@ -406,16 +406,25 @@ def review_deltas(root: Path, episode_id: str, draft: EpisodeDraft) -> tuple[lis
     return events, kn
 
 
-def _chronology(previous: dict, meta: dict, *, prose: str | None = None):
+def _chronology(previous: dict, meta: dict, *, prose: str | None = None,
+                book_open_approval_verified: bool = False):
     for key in ("day", "chapter", "part", "hour", "book", "location"):
         if key not in meta:
             raise GateError("Episode lacks chronology " + key)
     if (type(meta["day"]) is not int or type(meta["chapter"]) is not int
             or not isinstance(meta["hour"], str) or not CLOCK.fullmatch(meta["hour"])):
         raise GateError("Invalid chapter clock/day")
-    if previous.get("book_closed") is True:
-        raise GateError("Previous book closed; starting a new book needs its own explicit opening workflow")
-    if meta["book"] != previous["book"] or meta["day"] < previous["day"]:
+    new_book = previous.get("book_closed") is True
+    if new_book:
+        if (not book_open_approval_verified
+                or previous["book"] != "Livro V"
+                or meta["book"] != "Livro VI"
+                or meta["chapter"] != 1
+                or meta["part"] != "I"):
+            raise GateError("Previous book closed; explicit approved Livro VI opening required")
+    elif meta["book"] != previous["book"]:
+        raise GateError("Book cannot change without prior closure and author approval")
+    if meta["day"] < previous["day"]:
         raise GateError("Book/day transition not approved")
     if meta["day"] > previous["day"] + 1:
         # r14.1: a part may LIVE several days, but must show EVERY day and
@@ -435,11 +444,14 @@ def _chronology(previous: dict, meta: dict, *, prose: str | None = None):
         raise GateError("Cannot move same-day clock backwards")
     if meta["part"] not in PARTS or previous["part"] not in PARTS:
         raise GateError("Invalid five-part structure")
-    expected_chapter = previous["chapter"]
-    expected_part = PARTS[previous["part"]] + 1
-    if expected_part > 5:
-        expected_chapter += 1
-        expected_part = 1
+    if new_book:
+        expected_chapter, expected_part = 1, 1
+    else:
+        expected_chapter = previous["chapter"]
+        expected_part = PARTS[previous["part"]] + 1
+        if expected_part > 5:
+            expected_chapter += 1
+            expected_part = 1
     if meta["chapter"] != expected_chapter or PARTS[meta["part"]] != expected_part:
         raise GateError("Unexpected chapter/part progression")
 
@@ -536,7 +548,11 @@ def close(root: Path) -> dict:
         raise GateError("Current HEAD already at selected episode but closure receipt missing")
     if draft.metadata.get("canon_status") != "RASCUNHO":
         raise GateError("Only a saved draft may be closed")
-    _chronology(head, draft.metadata, prose=draft.prose)
+    if head.get("book_closed") is True:
+        from .book_opening import require_book_open_approval
+        require_book_open_approval(root, head, draft.metadata)
+    _chronology(head, draft.metadata, prose=draft.prose,
+                book_open_approval_verified=head.get("book_closed") is True)
     if draft.book_closed:
         from .book_closure import require_book_end_approval
         require_book_end_approval(root, episode_id, draft.metadata["book"])
@@ -671,7 +687,11 @@ def restore(root: Path) -> dict:
                 literal_prose = (load(root / "episodes" / clos["episode_id"]
                                       / "draft" / "episode_draft.json")["prose"]
                                  if span > 1 else None)
-                _chronology(current, clos["metadata"], prose=literal_prose)
+                if current.get("book_closed") is True:
+                    from .book_opening import require_book_open_approval
+                    require_book_open_approval(root, current, clos["metadata"])
+                _chronology(current, clos["metadata"], prose=literal_prose,
+                            book_open_approval_verified=current.get("book_closed") is True)
                 conn.execute("BEGIN IMMEDIATE")
                 apply_closure_db(conn, clos, new_head, load_corrections(root, load))
                 conn.commit()
