@@ -1,7 +1,7 @@
 {
   "schema": "worldroot-production-brief-v1",
   "episode_id": "LV-C16-PIV-D537-AUTHOR-SOURCE",
-  "status": "STAGED_NAO_CANONICO",
+  "status": "RASCUNHO_ARQUIVADO_VERIFICADO_NAO_FECHADO",
   "book": "Livro V",
   "chapter": 16,
   "part": "IV",
@@ -54,5 +54,21 @@
     "hour": "11h46"
   },
   "stage_source": "production/LV-C16-PIV-D537-AUTHOR-SOURCE/segments",
-  "previous_stage_identity": "production/LV-C16-PIV-D534-AUTHOR-SOURCE (working copy; superseded only for package naming)"
+  "previous_stage_identity": "production/LV-C16-PIV-D534-AUTHOR-SOURCE (working copy; superseded only for package naming)",
+  "actual_delivery": {
+    "draft_path": "episodes/LV-C16-PIV-D537-AUTHOR-SOURCE/draft/narrativa_integral.md",
+    "manifest_path": "episodes/LV-C16-PIV-D537-AUTHOR-SOURCE/draft/manifesto_imutavel.json",
+    "events_reviewed": 16,
+    "knowledge_reviewed": 17,
+    "scene_words_approx": 12107,
+    "scenes": 15,
+    "longform_advisory": "Acima da janela ideal 9400–11000; revisar densidade antes de mudanças editoriais futuras. Piso de 8800 satisfeito.",
+    "sha256": "253b8b2ebe59e33717a8324c3397c263b89342cebaa9a386a57becfee6d19998",
+    "archive_action_run_id": 44380094001,
+    "archive_action_result": "completed_success",
+    "reader_gate": "PASSED_IN_ACTION",
+    "canon_head_unchanged": "LV-C16-PIII-D534-AUTHOR-SOURCE",
+    "drive_synced": false,
+    "book_closed": false
+  }
 }
