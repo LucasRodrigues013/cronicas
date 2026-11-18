@@ -42,7 +42,7 @@ class EditorialMemoryTests(unittest.TestCase):
         result = compact_brief(self.policy, scene_tags=("MIREN", "ROMANCE"), max_chars=1750)
         self.assertLessEqual(len(result["text"]), 1900)
         self.assertIn("P06", result["selected_rule_ids"])
-        self.assertEqual(result["policy_version"], 1)
+        self.assertEqual(result["policy_version"], 2)
         self.assertNotIn("SOURCE_COUNT", result["text"])
 
     def test_images_are_structurally_rejected(self):
