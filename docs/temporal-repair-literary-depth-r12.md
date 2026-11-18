@@ -1,3 +1,5 @@
+> **ADENDO r14.** A recomendação r12 de auditoria de profundidade apenas consultiva foi substituída, quanto ao volume de novos episódios, por solicitação autoral expressa de ~10.000 palavras de prosa com piso de arquivamento 8.800 (P26). Autonomia, cronologia, foco e qualidade permanecem critérios superiores ao preenchimento artificial de palavras. Detalhes: `docs/longform-10k-context-recovery.md`.
+
 # WORLDROOT r12 — reparo temporal e direção literária profunda
 
 **Autorização autoral:** 18/11/2026, solicitação de corrigir o motor e aprofundar narrativa.  
