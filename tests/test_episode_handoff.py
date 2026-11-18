@@ -128,6 +128,20 @@ class HandoffTest(unittest.TestCase):
         self.fake_github.files[path]=b'CORRUPTED'
         with self.assertRaises(GateError):self.github.recover_draft(self.draft.delivery_id)
 
+    def test_recovery_rejects_tampered_options_sidecar(self):
+        self.remote()
+        path=f'episodes/{self.draft.delivery_id}/draft/opcoes.json'
+        self.fake_github.files[path]=b'[]\\n'
+        with self.assertRaises(GateError):
+            self.github.recover_draft(self.draft.delivery_id)
+
+    def test_recovery_rejects_missing_checkpoint_sidecar(self):
+        self.remote()
+        path=f'episodes/{self.draft.delivery_id}/draft/checkpoint_candidato.json'
+        del self.fake_github.files[path]
+        with self.assertRaises(GateError):
+            self.github.recover_draft(self.draft.delivery_id)
+
     def test_do_not_reset_closing_intent_on_stage_retry(self):
         self.remote()
         publisher=SyntheticCommitter(fail=True)
