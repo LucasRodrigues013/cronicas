@@ -25,7 +25,7 @@ jobs:
       - name: Checkout audited r12 engine at immutable commit
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: aa81156a0098bdcdb802a5d020d4c08d459b56dc
+          ref: 157955a5877da7848f87854adba68bc4bdebf213
           path: engine
           persist-credentials: false
       - name: Setup Python
@@ -50,7 +50,7 @@ jobs:
       - name: Checkout audited r12 engine (never execute archive code)
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: aa81156a0098bdcdb802a5d020d4c08d459b56dc
+          ref: 157955a5877da7848f87854adba68bc4bdebf213
           path: engine
           persist-credentials: false
       - name: Checkout latest private data branch
