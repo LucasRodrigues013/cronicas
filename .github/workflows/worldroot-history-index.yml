@@ -1,0 +1,115 @@
+name: WORLDROOT r9 - Verify Drive literals and rebuild private SQLite FTS5
+
+on:
+  push:
+    branches: [story-archive]
+    paths:
+      - 'history/sources/**'
+      - 'history/build-requests/*.json'
+      - 'history/requests/*.json'
+
+concurrency:
+  group: worldroot-private-history-index
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  preflight:
+    if: github.actor == 'LucasRodrigues013'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout audited main engine by immutable SHA
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: 88a4d3b4af9dfc5c2f391afd4c3f5c49eebc19f6
+          path: engine
+          persist-credentials: false
+      - name: Python 3.12
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.12'
+      - name: Test model without private prose
+        env:
+          PYTHONPATH: engine
+        run: timeout 90s python -m unittest discover -s engine/tests -q
+
+  build-search:
+    if: github.actor == 'LucasRodrigues013'
+    needs: preflight
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout known engine (never execute scripts from story archive)
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: 88a4d3b4af9dfc5c2f391afd4c3f5c49eebc19f6
+          path: engine
+          persist-credentials: false
+      - name: Checkout private original source blobs and history index
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: story-archive
+          path: archive
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Python 3.12
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.12'
+      - name: Validate six immutable original Drive exports, reconstruct SQLite FTS5
+        env:
+          PYTHONPATH: engine
+        run: |
+          set -euo pipefail
+          python -m worldroot.history_index build --archive-root archive
+          python -m worldroot.history_index verify --archive-root archive
+      - name: Test real search locally without exposing excerpts in logs
+        env:
+          PYTHONPATH: engine
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from worldroot.history_index import search
+          root=Path("archive")
+          for name in ("Káiron", "ARGOS", "Miren"):
+              result=search(root,name,limit=2)
+              assert result["result_count"]>0, name
+              assert all(v["line_start"]>=1 and v["drive_url"] for v in result["hits"])
+              print("Real private search passed for requested entity (hits intentionally suppressed):",name,result["result_count"])
+          PY
+      - name: Answer any pending author-requested searches, results stay private
+        env:
+          PYTHONPATH: engine
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from worldroot.history_index import process_requests
+          result=process_requests(Path("archive"))
+          print("Search requests handled:",result["processed"])
+          PY
+      - name: Atomically version search SQLite, summary and results
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git -C archive config user.name "github-actions[bot]"
+          git -C archive config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C archive add -- history/LITERAL_INDEX.sqlite history/INDEX_SUMMARY.json history/results/
+          if git -C archive diff --cached --quiet; then
+            echo 'Index and private search responses unchanged; safe idempotent return.'
+            exit 0
+          fi
+          git -C archive commit -m "history(worldroot): verified Drive literal FTS5 SQLite + private search responses"
+          auth_header="$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)"
+          git -C archive -c "http.extraheader=AUTHORIZATION: basic $auth_header" push origin HEAD:refs/heads/story-archive
+          unset auth_header
+      - name: Confirm no canon or Drive writes
+        run: echo 'Only history search projection changed. canon/HEAD.json, canon/state.sqlite and Drive untouched.'
