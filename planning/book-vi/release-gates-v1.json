@@ -1,0 +1,163 @@
+{
+  "schema": "worldroot-bookvi-release-gates-v1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "updated_at": "2026-11-18",
+  "type": "PRE_CANON_PRODUCTION_APPROVAL_NOT_STORY_STATE",
+  "source_of_truth": "story-archive/canon/HEAD.json (read live before any story action)",
+  "snapshot_when_prepared": {
+    "book": "Livro V",
+    "chapter": 16,
+    "part": "II",
+    "day": 533,
+    "hour": "17h29",
+    "sequence": 6,
+    "next_draft": "LV-C16-PIII-D534-AUTHOR-SOURCE",
+    "next_draft_status": "RASCUNHO"
+  },
+  "approved_by_author": {
+    "names": [
+      "Tharvek Ormvall",
+      "Elyrien Vaelthara",
+      "Ithran",
+      "Velkar Draen"
+    ],
+    "traits": [
+      "Tharvek raivoso, cuidadoso, carinhoso, príncipe guerreiro anão",
+      "Elyrien belíssima, irresistivelmente carismática, mortal como guardiã e distraída no cotidiano",
+      "Ithran é a grande abertura, infiltrado buscando dois emissários com equipe, confronto possível em AERÚN",
+      "Seis Sombras e Varo devem agir causalmente, sem caricatura de incompetência",
+      "Velkar é mandante estratégico, aparece gradualmente em bastidores e se revela em etapas",
+      "Livro VI grande saga com fantasia, intriga, isekai, poderes, lutas e emoção"
+    ],
+    "authorial_approval_does_not_mean": [
+      "Personagens já foram apresentados",
+      "Ataque já aconteceu",
+      "Novo Livro já começou",
+      "Novos subordinados com nomes provisórios foram aprovados",
+      "Ganhar um confronto está escrito no cânone"
+    ]
+  },
+  "materials": [
+    {
+      "path": "planning/book-vi/characters-v1.json",
+      "status": "READY_PRE_CANON",
+      "kind": "character_design"
+    },
+    {
+      "path": "planning/book-vi/ithran-operation-v1.json",
+      "status": "READY_PRE_CANON",
+      "kind": "scenario_front_branching"
+    },
+    {
+      "path": "planning/book-vi/production-bible-v1.md",
+      "status": "READY_PRE_CANON",
+      "kind": "literary_campaign_bible"
+    }
+  ],
+  "goals": [
+    {
+      "code": "G01",
+      "criterion": "Book V chapter actually closed, author authorizes Libro VI",
+      "state": "NOT_MET",
+      "critical": true,
+      "evidence": "Last HEAD is Livro V C16 PII; C16 PIII draft still exists"
+    },
+    {
+      "code": "G02",
+      "criterion": "Names and core traits of Tharvek/Elyrien approved",
+      "state": "MET_DESIGN_ONLY",
+      "critical": true,
+      "evidence": "Explicit 2026-11-18 author instruction"
+    },
+    {
+      "code": "G03",
+      "criterion": "Detailed origin of emissaries and real route/map travel confirmed before introduction",
+      "state": "NOT_MET",
+      "critical": true,
+      "evidence": "Draft design; roads and distances not canonized"
+    },
+    {
+      "code": "G04",
+      "criterion": "Ithran has clear goal, superior, non-magical travel and conditional outcomes",
+      "state": "MET_PLANNING_ONLY",
+      "critical": true,
+      "evidence": "ithran-operation-v1.json stages and branches"
+    },
+    {
+      "code": "G05",
+      "criterion": "Six Shadows roles and autonomy recovered from historical source",
+      "state": "MET_SOURCE_DESIGN",
+      "critical": true,
+      "evidence": "D178 origin + D497/V4.1.1 assignments, but latest field positions unknown"
+    },
+    {
+      "code": "G06",
+      "criterion": "Varo physically situated and informed in time before an AERÚN response",
+      "state": "NOT_MET",
+      "critical": true,
+      "evidence": "Plan must wait for scene and latest location"
+    },
+    {
+      "code": "G07",
+      "criterion": "Miren/Astra control access, research and safety at AERÚN",
+      "state": "MET_GUARDRAIL",
+      "critical": true,
+      "evidence": "Institutional source and planning"
+    },
+    {
+      "code": "G08",
+      "criterion": "Velkar versus Aethron identity preserved unresolved",
+      "state": "MET_GUARDRAIL",
+      "critical": true,
+      "evidence": "Saga and Aethron source"
+    },
+    {
+      "code": "G09",
+      "criterion": "GÊNESE preserved, antagonists defeatable and battles have aftermath",
+      "state": "MET_GUARDRAIL",
+      "critical": true,
+      "evidence": "Authorial policy v4, planning bible"
+    },
+    {
+      "code": "G10",
+      "criterion": "Operative names Selen/Brum/Ilvar and detailed powers approved or changed by author",
+      "state": "NOT_MET_OPTIONAL",
+      "critical": false,
+      "evidence": "New names are only proposals"
+    },
+    {
+      "code": "G11",
+      "criterion": "Narrative teaser is not silently published as story",
+      "state": "MET_GUARDRAIL",
+      "critical": true,
+      "evidence": "All files are in planning folder; no canon event"
+    },
+    {
+      "code": "G12",
+      "criterion": "Drive/Base/Atlas automatically synchronized",
+      "state": "NOT_MET",
+      "critical": false,
+      "evidence": "Current GitHub-only operations"
+    }
+  ],
+  "author_safe_transition": [
+    "Continue current Livro V from literal C16 PIII draft and next real author choice",
+    "Before closing Livro V require explicit author choice and narrative closure; do not gate on arbitrary calendar",
+    "Prepare/book VI narrative briefing from current HEAD and limited planning fragments on first authorized opening",
+    "On each new part update only private episode draft; on subsequent author choice close into canon and derive context",
+    "Keep separate secret-view versus reader-seen versus character-knows, and allow adversary failure",
+    "Publish no draft spoilers as established canon in current chapter"
+  ],
+  "tests_to_run_before_opening": [
+    "Read latest HEAD and last pending draft/choice",
+    "Ensure Livro V book_closed=true only if story closure actually happened",
+    "Verify no required character named under a conflicting legacy ID",
+    "Check departure/arrival travel times for all key actors",
+    "Verify AERÚN receiving authority and public vs protected spaces",
+    "Check Sombras roles, Varo location and knowledge channels",
+    "Check Velkar subgeneral chain and information delays",
+    "Verify options 1-3, 4 special, 5 free, rich design, organic passage of day",
+    "Ensure GÊNESE and victorious outcomes not nerfed or undone",
+    "Confirm new episode and README follow source truth only after GitHub readback"
+  ]
+}
