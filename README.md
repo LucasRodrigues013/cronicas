@@ -54,3 +54,20 @@ python -m worldroot.cli --root ./runtime sync-drive --id SYNTHETIC_ID --folder-i
 ```
 
 This command does not send credentials or chapter content to GitHub and does not publish HEAD. If no ADC credentials are present, it fails instead of pretending to upload.
+
+## Episode handoff: draft on options, canon on the next author choice
+
+This project now includes `worldroot/episode_handoff.py`, `worldroot/private_github.py`,
+`worldroot/sheets_index.py` and `worldroot/episode_cli.py`. Run:
+
+```sh
+python -m unittest discover -s tests -v
+python -m worldroot.episode_cli --help
+```
+
+**No background ChatGPT hook is installed.** The host must capture the FULL
+rendered episode and explicitly run the stage command, then run the closure
+command after receiving the next genuine author selection. The story archive
+always requires a verified **private** repository and independent readback.
+The existing `main` branch remains untouched until a reviewed release.
+See [episode lifecycle](docs/ciclo-de-episodios.md).
