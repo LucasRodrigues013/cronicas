@@ -12,7 +12,7 @@ from .ledger import GateError
 
 APPROVAL_FILE = "author-approvals/LVI-OPEN.json"
 _SCHEMA = "worldroot-author-book-open-v1"
-_OPEN = re.compile(r"(?i)\bvamos\s+come[cç]ar\s+um\s+livro\s+isekai\s+fenomenal\s+agora\b")
+_OPEN = re.compile(r"(?i)\bautorizo\s+iniciar\s+(?:o\s+)?livro\s+vi\b")
 
 
 def require_book_open_approval(root: Path, previous: dict, metadata: dict) -> dict:
