@@ -119,33 +119,61 @@ class PrivateGitHubArchive:
                     (directory/name).read_bytes()) for name in names}
 
     def recover_draft(self, episode_id: str):
-        """Fetch and verify literal + reconstruct draft from PRIVATE GitHub only."""
+        """Recover ALL private sidecars, validate manifest and restore literal draft."""
         from .episode_pipeline import EpisodeDraft
         self._require_private()
-        prefix=f'episodes/{episode_id}/draft/'
-        raw=self.api.get(prefix+'episode_draft.json')
-        literal=self.api.get(prefix+'narrativa_integral.md')
-        manifest=self.api.get(prefix+'manifesto_imutavel.json')
-        if not raw or not literal or not manifest:
-            raise GateError('Complete archived draft not present in private GitHub')
+        prefix = f'episodes/{episode_id}/draft/'
+        names = ('narrativa_integral.md', 'opcoes.json',
+                 'eventos_e_consequencias.json', 'checkpoint_candidato.json',
+                 'episode_draft.json')
+        manifest = self.api.get(prefix + 'manifesto_imutavel.json')
+        if not manifest:
+            raise GateError('Immutable archive manifest is missing')
         try:
-            proof=json.loads(manifest['bytes'].decode('utf-8'))
-        except (UnicodeError,ValueError,TypeError) as exc:
+            proof = json.loads(manifest['bytes'].decode('utf-8'))
+        except (UnicodeError, ValueError, TypeError):
             raise GateError('Archived GitHub manifest is invalid JSON') from None
-        if proof.get('delivery_id')!=episode_id:
+        if (proof.get('schema') != 'worldroot-episode-package-v1'
+                or proof.get('canon_status') != 'RASCUNHO'):
+            raise GateError('Archive manifest schema/status is invalid')
+        if proof.get('delivery_id') != episode_id:
             raise ConflictError('Recovered manifest episode identity mismatch')
-        for name,data in [('episode_draft.json',raw['bytes']),('narrativa_integral.md',literal['bytes'])]:
-            item=proof['artifacts'].get(name)
-            if not item or item['sha256']!=digest(data) or item['bytes']!=len(data):
-                raise GateError('GitHub recovered artifact failed manifest checksum')
+        records = proof.get('artifacts')
+        if not isinstance(records, dict) or set(records) != set(names):
+            raise GateError('Manifest must enumerate all five draft sidecars')
+
+        recovered = {}
+        for name in names:
+            remote = self.api.get(prefix + name)
+            if not remote or not isinstance(remote.get('bytes'), bytes):
+                raise GateError('Complete archived draft not present in private GitHub')
+            body = remote['bytes']
+            expected = records[name]
+            if (not isinstance(expected, dict)
+                    or expected.get('sha256') != digest(body)
+                    or type(expected.get('bytes')) is not int
+                    or expected['bytes'] != len(body)):
+                raise GateError('GitHub recovered artifact failed manifest checksum: ' + name)
+            recovered[name] = body
+
+        if proof.get('original_readback_sha256') != digest(recovered['narrativa_integral.md']):
+            raise GateError('Manifest original text hash mismatch')
         try:
-            archive=json.loads(raw['bytes'].decode('utf-8'))
-            if archive.get('delivery_id')!=episode_id:
+            archive = json.loads(recovered['episode_draft.json'].decode('utf-8'))
+            choices = json.loads(recovered['opcoes.json'].decode('utf-8'))
+            events = json.loads(recovered['eventos_e_consequencias.json'].decode('utf-8'))
+            checkpoint = json.loads(recovered['checkpoint_candidato.json'].decode('utf-8'))
+            if archive.get('delivery_id') != episode_id:
                 raise ConflictError('Recovered episode identity mismatch')
-            draft=EpisodeDraft.from_dict(archive)
-        except (UnicodeError,ValueError,TypeError,KeyError) as exc:
+            if (archive.get('choices') != choices
+                    or archive.get('events') != events
+                    or archive.get('metadata') != checkpoint
+                    or checkpoint.get('canon_status') != 'RASCUNHO'):
+                raise GateError('Recovered sidecars disagree with episode JSON')
+            draft = EpisodeDraft.from_dict(archive)
+        except (UnicodeError, ValueError, TypeError, KeyError):
             raise GateError('Recovered draft payload cannot be decoded') from None
-        if draft.full_text.encode('utf-8')!=literal['bytes']:
+        if draft.full_text.encode('utf-8') != recovered['narrativa_integral.md']:
             raise ConflictError('Full literal differs from recovered draft JSON')
         draft.validate()
         return draft
