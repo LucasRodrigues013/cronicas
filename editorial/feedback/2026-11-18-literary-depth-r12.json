@@ -1,0 +1,52 @@
+{
+  "schema": "worldroot-author-feedback-event-v1",
+  "feedback_id": "WR-EDITORIAL-20261118-R12-DEPTH",
+  "recorded_at": "2026-11-18",
+  "source": "USER_CHAT_EXPLICIT_APPROVAL",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "author_quotes": [
+    "a parte 2 e uma referencia de como precisamos, passagem de tempo e narrações, e estamos narrando muita coisa acontecendo ao mesmo tempo, precisamos talvez focar mais em lucas e colocar pontos chaves de misterio e historia ao leitor",
+    "façamos as correções necessarias avaliadas, e vamos melhorar e aprofundar a narração historia, com qualidade conforme falamos. pegue a avaliação, analise, audite, pesquise e formula e corrija pra continuarmos."
+  ],
+  "action": "PERSIST_VERSIONED_EDITORIAL_POLICY_AND_REPAIR_TEMPORAL_PROJECTIONS",
+  "effective_policy": {
+    "branch": "main",
+    "path": "worldroot/editorial_policy.json",
+    "version": 3,
+    "ids": [
+      "P20",
+      "P21",
+      "P22",
+      "P23"
+    ]
+  },
+  "literary_reference": "episodes/LV-C15-PII-D529-AUTHOR-SOURCE/draft/narrativa_integral.md",
+  "comparisons": [
+    "LV-C15-PIII-D529-AUTHOR-SOURCE",
+    "LV-C15-PIV-D530-AUTHOR-SOURCE",
+    "LV-C15-PV-D531-AUTHOR-SOURCE",
+    "LV-C16-PI-D532-AUTHOR-SOURCE"
+  ],
+  "decisions": [
+    "Protagonista Lucas privilegia cenas vividas, ritmo e desenvolvimento emocional",
+    "Mistério e pontos chaves ao leitor sem vazamento ao protagonista",
+    "World Pulse paralelo não vira uma montagem de relatórios em toda parte",
+    "Sem quota rígida de palavras; aplicação por QA editorial consultivo",
+    "Corrigir datas nos índices derivados sem reescrever relatos ou promover capítulos"
+  ],
+  "technical_evidence": {
+    "github_main_prs": [
+      17,
+      18,
+      19,
+      20
+    ],
+    "repair_run": "https://github.com/LucasRodrigues013/cronicas/actions/runs/44333628767",
+    "corrections_path": "canon/temporal-reconciliation.json",
+    "drive_synced": false
+  },
+  "canon_changed": false,
+  "chapters_rewritten": false,
+  "new_author_choice_recorded": false,
+  "status": "AUTHOR_APPROVED_EDITORIAL_POLICY_WITH_TECHNICAL_IMPLEMENTATION"
+}
