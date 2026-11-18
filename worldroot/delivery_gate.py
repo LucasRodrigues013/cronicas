@@ -15,6 +15,7 @@ from .presentation_guard import presentation_preflight
 from .editorial_guard import quick_preflight
 from .lived_narrative_audit import inspect_lived_narrative
 from .ledger import GateError, ConflictError
+from .book_closure import require_book_end_approval
 
 
 def audit_release(root: Path, episode_id: str) -> dict:
@@ -63,9 +64,15 @@ def audit_release(root: Path, episode_id: str) -> dict:
         checks["five_choices"] = len(inbox.get("choices", [])) == 5
         if not checks["five_choices"]:
             raise GateError("Five choices missing")
-        checks["book_remains_open"] = inbox.get("book_closed") is False
-        if not checks["book_remains_open"]:
-            raise GateError("Unauthorized book closure")
+        if inbox.get("book_closed") is True:
+            require_book_end_approval(root, episode_id, inbox["metadata"]["book"])
+            checks["book_status_authorized"] = (draft.book_closed is True
+                and "FIM DO LIVRO V" in inbox["prose"].upper())
+        else:
+            checks["book_status_authorized"] = (
+                inbox.get("book_closed") is False and draft.book_closed is False)
+        if not checks["book_status_authorized"]:
+            raise GateError("Book closure or book-open state does not match approved story")
         depth = inspect_longform(inbox["prose"])
         prose_words = depth["prose_words_approx"]
         checks["longform_floor"] = not depth["errors"]
