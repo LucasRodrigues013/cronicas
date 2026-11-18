@@ -7,6 +7,7 @@ from pathlib import Path
 from test_git_cycle import META, FULL, PROSE, OPTIONS, EVENT, KNOWLEDGE, ID
 from worldroot.git_cycle import canonical, load, verify_episode, review_deltas
 from worldroot.draft_inbox import archive_inbox
+from worldroot.longform_depth import inspect_longform as real_inspect_longform
 from worldroot.ledger import GateError, ConflictError
 
 
@@ -18,6 +19,11 @@ class DraftInboxTest(unittest.TestCase):
             return_value={"errors": [], "notices": [], "status": "OK"})
         self.visual_patcher.start()
         self.addCleanup(self.visual_patcher.stop)
+        self.depth_patcher = patch(
+            "worldroot.draft_inbox.inspect_longform",
+            return_value={"errors": [], "status": "ALVO", "prose_words_approx": 10000})
+        self.depth_patcher.start()
+        self.addCleanup(self.depth_patcher.stop)
         self.t = tempfile.TemporaryDirectory()
         self.addCleanup(self.t.cleanup)
         self.root = Path(self.t.name)
@@ -75,6 +81,13 @@ class DraftInboxTest(unittest.TestCase):
     def test_new_chapter_visual_failure_blocks_before_archive(self):
         with patch("worldroot.draft_inbox.presentation_preflight",
                    return_value={"errors": ["UX01: weak layout"]}):
+            with self.assertRaises(GateError):
+                archive_inbox(self.root, self.inbox)
+        self.assertFalse((self.root / "episodes" / ID).exists())
+
+    def test_actual_longform_gate_refuses_short_new_draft(self):
+        with patch("worldroot.draft_inbox.inspect_longform",
+                   side_effect=real_inspect_longform):
             with self.assertRaises(GateError):
                 archive_inbox(self.root, self.inbox)
         self.assertFalse((self.root / "episodes" / ID).exists())
