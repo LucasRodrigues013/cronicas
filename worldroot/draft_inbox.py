@@ -198,11 +198,10 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
             "changed_file_count": 0, "canon_changed": False, "drive_changed": False,
             "editorial_preflight": quick_preflight(payload["prose"])["status"],
             "story_focus_advisory": _focus_receipt(payload["prose"]),
-        "day_arc_advisory": inspect_day_arc(payload["prose"]),
-        "longform_depth": inspect_longform(payload["prose"]),
-        "longform_stage": stage_receipt,
+            "day_arc_advisory": inspect_day_arc(payload["prose"]),
             "longform_depth": inspect_longform(payload["prose"]),
             "longform_stage": stage_receipt,
+            "presentation_preflight": presentation_preflight(payload["full_text"]),
         }
     _chronology(head, draft.metadata)
 
@@ -246,6 +245,9 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
         "editorial_preflight": quick_preflight(payload["prose"])["status"],
             "story_focus_advisory": _focus_receipt(payload["prose"]),
             "day_arc_advisory": inspect_day_arc(payload["prose"]),
+            "longform_depth": inspect_longform(payload["prose"]),
+            "longform_stage": stage_receipt,
+            "presentation_preflight": presentation_preflight(payload["full_text"]),
     }
 
 
