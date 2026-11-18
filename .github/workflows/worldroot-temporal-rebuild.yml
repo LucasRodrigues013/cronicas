@@ -1,0 +1,125 @@
+name: WORLDROOT - Author-approved temporal projection rebuild (no OIDC)
+
+on:
+  push:
+    branches: [story-archive]
+    paths:
+      - 'canon/temporal-reconciliation.json'
+
+concurrency:
+  group: worldroot-canon-github-only
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  rebuild-projections:
+    if: github.actor == 'LucasRodrigues013'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout audited temporal-fix code at immutable SHA
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: 91109a02fc54d9b5e17c1c7c811255c410b8ccac
+          path: engine
+          persist-credentials: false
+      - name: Checkout private story-archive data
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: story-archive
+          path: archive
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Python 3.12
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.12'
+      - name: Validate trusted engine offline
+        env:
+          PYTHONPATH: engine
+        run: timeout 90s python -m unittest discover -s engine/tests -q
+      - name: Rebuild derived SQLite and CONTEXT, preserve protected inputs
+        shell: bash
+        env:
+          PYTHONPATH: engine
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import hashlib
+          import json
+          import sqlite3
+          import subprocess
+          from pathlib import Path
+
+          root = Path("archive")
+          source = root / "canon"
+          guard = json.loads((source / "temporal-reconciliation.json").read_text())
+          head = json.loads((source / "HEAD.json").read_text())
+          expected = guard.get("head_guard") or {}
+          if head.get("sequence") != expected.get("sequence") or head.get("episode_id") != expected.get("episode_id"):
+              raise SystemExit("HEAD moved since authorized temporal repair; do not silently update canonical data")
+
+          protected = [source / "HEAD.json"]
+          protected += sorted((source / "episodes").glob("*.json"))
+          protected += sorted((root / "choices").rglob("*.json"))
+          protected += sorted((root / "episodes").rglob("*"))
+          protected = [p for p in protected if p.is_file() and not p.is_symlink()]
+          def checksum(p):
+              return hashlib.sha256(p.read_bytes()).hexdigest()
+          before = {str(p): checksum(p) for p in protected}
+
+          subprocess.run(["python", "-m", "worldroot.git_cycle", "restore", "--archive-root", str(root)], check=True)
+          subprocess.run(["python", "-m", "worldroot.git_cycle", "verify", "--archive-root", str(root)], check=True)
+
+          after = {str(p): checksum(p) for p in protected}
+          if before != after:
+              raise SystemExit("Protected immutable story, choice or HEAD changed during derived repair")
+          with sqlite3.connect(source / "state.sqlite") as db:
+              if db.execute("PRAGMA integrity_check").fetchone()[0] != "ok":
+                  raise SystemExit("SQLite integrity check failed")
+              if db.execute("PRAGMA foreign_key_check").fetchall():
+                  raise SystemExit("SQLite foreign key check failed")
+              corrected = 0
+              for item in guard["corrections"]:
+                  actual = db.execute(
+                      "SELECT acquired_day FROM npc_knowledge WHERE episode_id=? AND person=? AND event_id=?",
+                      (item["episode_id"], item["person"], item["source_event"]),
+                  ).fetchone()
+                  # Future draft corrections have no journal rows yet.
+                  if actual is None:
+                      continue
+                  if actual[0] != item["corrected_acquired_day"]:
+                      raise SystemExit("An event-backed temporal correction was not applied")
+                  corrected += 1
+              wrong = db.execute("SELECT COUNT(*) FROM events e JOIN episodes ep USING(episode_id) WHERE e.day>ep.day").fetchone()[0]
+              if wrong:
+                  raise SystemExit("Event occurs after episode endpoint")
+              n_events = db.execute("SELECT COUNT(*) FROM events").fetchone()[0]
+              print("WORLDROOT temporal readback:", json.dumps({
+                  "head": head["episode_id"], "sequence": head["sequence"],
+                  "applied_npc_day_corrections": corrected,
+                  "events": n_events, "protected_files_unchanged": len(before),
+                  "drive_changed": False
+              }, ensure_ascii=False))
+          PY
+      - name: Commit only regenerated derived artifacts; do not touch HEAD or journals
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git -C archive config user.name "github-actions[bot]"
+          git -C archive config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C archive add canon/state.sqlite canon/CONTEXT.json
+          if git -C archive diff --cached --quiet; then
+            echo 'Idempotent projection rebuild: no changes to commit.'
+            exit 0
+          fi
+          git -C archive commit -m "fix(worldroot): rebuild temporal SQLite and CONTEXT from immutable canon"
+          auth_header="$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)"
+          git -C archive -c "http.extraheader=AUTHORIZATION: basic $auth_header" push origin HEAD:refs/heads/story-archive
+          unset auth_header
