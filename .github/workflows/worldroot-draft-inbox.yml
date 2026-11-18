@@ -24,7 +24,7 @@ jobs:
       - name: Checkout audited engine at immutable version
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: aa81156a0098bdcdb802a5d020d4c08d459b56dc
+          ref: e294dfa8e61871dc323a9735b384c12f8b5fe8e3
           path: engine
           persist-credentials: false
       - name: Python 3.12
@@ -47,7 +47,7 @@ jobs:
       - name: Checkout trusted main code (pinned)
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: aa81156a0098bdcdb802a5d020d4c08d459b56dc
+          ref: e294dfa8e61871dc323a9735b384c12f8b5fe8e3
           path: engine
           persist-credentials: false
       - name: Checkout private story archive data only
@@ -95,6 +95,15 @@ jobs:
                   "median_scene_words_approx":focus.get("median_scene_words_approx"),
                   "lucas_dialogue_scene_share":focus.get("lucas_dialogue_scene_share"),
                   "notices":focus.get("advisories",[]),
+              })
+              life=receipt.get("lived_narrative_advisory",{})
+              print("Lived narrative editorial review:",{
+                  "status":life.get("status"),
+                  "days_touched":life.get("days_touched"),
+                  "scene_count":life.get("scene_count"),
+                  "short_scene_share":life.get("short_scene_share"),
+                  "procedural_hits_per_1000_words":life.get("procedural_hits_per_1000_words"),
+                  "advisories":life.get("advisories",[]),
               })
               depth=receipt.get("longform_depth",{})
               stage=receipt.get("longform_stage",{})
