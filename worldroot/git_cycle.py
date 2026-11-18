@@ -394,6 +394,8 @@ def _chronology(previous: dict, meta: dict, *, prose: str | None = None):
     if (type(meta["day"]) is not int or type(meta["chapter"]) is not int
             or not isinstance(meta["hour"], str) or not CLOCK.fullmatch(meta["hour"])):
         raise GateError("Invalid chapter clock/day")
+    if previous.get("book_closed") is True:
+        raise GateError("Previous book closed; starting a new book needs its own explicit opening workflow")
     if meta["book"] != previous["book"] or meta["day"] < previous["day"]:
         raise GateError("Book/day transition not approved")
     if meta["day"] > previous["day"] + 1:
@@ -439,6 +441,8 @@ def _closure(root, episode_id, head, choice, draft, events, kn):
         "visibility": "PRIVADO", "status": "FECHADO_GITHUB",
         "drive_status": "NAO_SINCRONIZADO",
     }
+    if draft.book_closed:
+        payload["book_closed"] = True
     return payload
 
 
@@ -514,6 +518,9 @@ def close(root: Path) -> dict:
     if draft.metadata.get("canon_status") != "RASCUNHO":
         raise GateError("Only a saved draft may be closed")
     _chronology(head, draft.metadata, prose=draft.prose)
+    if draft.book_closed:
+        from .book_closure import require_book_end_approval
+        require_book_end_approval(root, episode_id, draft.metadata["book"])
     events, kn = review_deltas(root, episode_id, draft)
     closure = _closure(root, episode_id, head, choice, draft, events, kn)
     new_head = {
@@ -526,7 +533,7 @@ def close(root: Path) -> dict:
         "previous_head_sha256": closure["previous_head_sha256"],
         "closure_sha256": sha(canonical(closure)),
         "drive_head_status": "NAO_SINCRONIZADO",
-        "engine_mode": "GITHUB_PRIVADO_SEM_OIDC", "book_closed": False,
+        "engine_mode": "GITHUB_PRIVADO_SEM_OIDC", "book_closed": draft.book_closed,
     }
     with tempfile.TemporaryDirectory() as t:
         temporary = Path(t) / "updated.sqlite"
@@ -602,7 +609,7 @@ def _journal(root: Path):
             "previous_head_sha256": clos["previous_head_sha256"],
             "closure_sha256": sha(canonical(clos)),
             "drive_head_status": "NAO_SINCRONIZADO",
-            "engine_mode": "GITHUB_PRIVADO_SEM_OIDC", "book_closed": False,
+            "engine_mode": "GITHUB_PRIVADO_SEM_OIDC", "book_closed": draft.book_closed,
         }
         yield clos, new_head
         current = new_head
