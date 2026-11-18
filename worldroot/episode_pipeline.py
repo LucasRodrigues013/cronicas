@@ -1,7 +1,8 @@
 """WORLDROOT: fail-closed episode closure, layered on the existing r7 ledger.
 
-Private canonical story bytes live in Google Drive; the public GitHub repository
-receives only opaque technical receipts. This module does not watch ChatGPT turns.
+Google Drive remains the canonical narrative HEAD during migration; immutable
+PRIVATE GitHub story-archive drafts are separate from main code. This module
+does not watch ChatGPT turns.
 An authenticated runtime must explicitly call stage() and publish().
 """
 from __future__ import annotations
