@@ -67,7 +67,7 @@ class ContextSemanticSafetyTests(unittest.TestCase):
         result = write_context(self.root, head(False, book="Livro VI"))
         notes = " ".join(result["prohibited_assumptions"])
         self.assertIn("Livro VI remains OPEN", notes)
-        self.assertNotIn("Livro V", notes)
+        self.assertNotIn("Livro V remains OPEN", notes)
 
     def test_readback_identical_to_file(self):
         result = write_context(self.root, head(True))
