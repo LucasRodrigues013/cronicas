@@ -16,10 +16,11 @@ class EditorialMemoryTests(unittest.TestCase):
 
     def test_policy_is_versioned_scoped_and_evidence_linked(self):
         v = validate_policy(self.policy)
-        self.assertEqual(v["version"], 1)
+        self.assertEqual(v["version"], 2)
         self.assertGreaterEqual(v["rule_count"], 15)
         self.assertEqual(self.policy["project"], "CRONICAS_DE_UM_NOVO_MUNDO")
         self.assertIn("P01", {r["id"] for r in self.policy["rules"]})
+        self.assertIn("P19", {r["id"] for r in self.policy["rules"]})
 
     def test_duplicate_or_unverified_feedback_is_rejected(self):
         p = copy.deepcopy(self.policy)
