@@ -1,3 +1,5 @@
+> **ADENDO R16 (18/11/2026):** `longform_floor` não bloqueia mais a entrega porque ocasionava incentivo à inflação repetitiva. `longform_measured` registra contagem, e a meta ~10 mil é conselho editorial. Todos os outros itens de liberação — manifesto, SHA, opção/fechamento autorizados, fonte literal, sidecars, UX e readback — continuam obrigatórios. A história jamais é certificada semanticamente por uma fórmula. Ver `docs/bookv-bookvi-semantic-transition-r16.md`. O texto antigo abaixo conserva as regras históricas do r14.1 e não prevalece no tema da extensão.
+
 # WORLDROOT r14.1 — Entrega travada por evidência, sem episódios-fantasma
 
 **Aprovação autoral: 18/11/2026.** Correção após a Parte IV do Livro V, Cap. 16, ter sido apresentada no chat sem existir no GitHub e sem recibo longform r14. O erro foi operacional na etapa ChatGPT → inbox → Action → readback, não uma falha do fechamento da escolha da Parte III.
