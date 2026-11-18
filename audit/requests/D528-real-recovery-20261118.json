@@ -1,0 +1,14 @@
+{
+  "schema": "worldroot-audit-request-v1",
+  "target": "GITHUB_ONLY_D528_BOOTSTRAP_AND_PENDING_D529",
+  "scope": [
+    "sqlite_independent_restore",
+    "canonical_head_readback",
+    "d529_immutable_package",
+    "11_reviewed_events",
+    "6_character_knowledge_entries"
+  ],
+  "expected_sequence": 0,
+  "canon_promotion_requested": false,
+  "drive_write_requested": false
+}
