@@ -1,7 +1,7 @@
 {
   "schema": "worldroot-editorial-policy-v1",
   "project": "CRONICAS_DE_UM_NOVO_MUNDO",
-  "version": 7,
+  "version": 8,
   "reviewed_at": "2026-11-18",
   "approved_scope": "USER_REQUESTED_PERMANENT_PREFERENCES_NOT_CANON_EVENTS",
   "source_of_truth": "main/worldroot/editorial_policy.json",
@@ -107,6 +107,13 @@
       "at": "2026-11-18",
       "transcript_line": null,
       "quote": "Analise o ultimo livro, ao pedir pra termos mais palavras e maior historia, o motor começou a jogar muitra coisa fora de ordem que tinhamos, leia o capitulo 15, parte, e leia o capitulo 16 parte v, veja a diferença de qualidade, semantica e dados. Quero ajustar isso antes de iniciar o novo livro"
+    },
+    {
+      "id": "S15",
+      "kind": "AUTHOR_DIRECTIVE",
+      "at": "2026-11-18",
+      "transcript_line": null,
+      "quote": "Quero que grave aquilo que gosto, Lucas bem expressivo, creation e gênese sem limites, miren e Lucas em uma relacionamento que se desenvolve. Aerun ganhando e populando pesquisas e o ritmo envolvente é muita conversa e pegada legal. Além disso. Nesse novo livro além do que temos planejado, precisamos fazer tbm que a irmã de miren no meio de tudo isso seja encontrada, que ligue aos mistérios do mundo. Que argos mesmo sendo rápido teremos mt uso dele. Que três arcos realmente evolua e não fique nessa trava trava. Vamos começar um livro isekai fenomenal agora"
     }
   ],
   "rules": [
@@ -695,6 +702,142 @@
         "S12"
       ],
       "directive": "Não avaliar literatura por contagem absoluta de palavras ou número de cenas. Os alertas de densidade e repetição exigem releitura humana/editorial; preferir partes menores mas completas quando a alternativa for inflar 10000 palavras com recapitulação. Preservar humor ácido, silêncio, imprevisibilidade, drama, vida cotidiana, consequências, mistério e autonomia. Nunca declarar que testes estruturais validam qualidade semântica ou prosa.",
+      "active": true
+    },
+    {
+      "id": "P35",
+      "title": "Lucas expressivo e corajoso: humor, surpresa, exageros e vulnerabilidade",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "LUCAS",
+        "ESTILO",
+        "PERSONAGENS"
+      ],
+      "evidence": [
+        "S15"
+      ],
+      "directive": "Lucas é EXPRESSIVO, impulsivo quando plausível, vibrante, fala muito, reage de forma viva, alterna humor ácido e coragem com intimidade e responsabilidade. Mostrar reações reais, palavrões naturais, gargalhadas, gritos ocasionais e humanidade; não achatá-lo em porta-voz solene, repositório de recados ou gerenciador de reuniões. Conversas longas devem ser dramáticas e pessoais, não relatórios.",
+      "active": true
+    },
+    {
+      "id": "P36",
+      "title": "CREATION e GÊNESE plenas — nunca enfraquecer por conveniência",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "PODER",
+        "GENESE",
+        "CREATION"
+      ],
+      "evidence": [
+        "S15"
+      ],
+      "directive": "Manter poder CREATION/CRIAÇÃO e GÊNESE plenamente disponíveis conforme cânone, sem nerfs inventados, custos artificiais, bloqueios repentinos, incompetência arbitrária ou limites adicionados para forçar suspense. Criar e transformar são vias válidas de solução direta com consequências no mundo e nas relações. O desconhecido não é prova de limitação da GÊNESE; agência alheia e escolhas é que geram fricção narrativa. Respeitar nomes e capacidades documentadas, sem inventar uma habilidade separada sem fonte.",
+      "active": true
+    },
+    {
+      "id": "P37",
+      "title": "Miren e Lucas: relacionamento romântico contínuo e desenvolvido",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "MIREN",
+        "ROMANCE",
+        "PERSONAGENS"
+      ],
+      "evidence": [
+        "S15"
+      ],
+      "directive": "O amor entre Miren e Lucas não retorna ao começo nem fica congelado no conforto. Fazer crescer intimidade, desejo, confiança, conflitos cotidianos, brincadeiras internas, parceria na aventura e escolhas que impactam ambos. Miren mantém atuação e ciência próprias, Lucas possui intensidade emocional e gestos. Casal conversa, flerta, apoia e discorda com continuidade, sem repetição mecânica de autonomia ou casamento.",
+      "active": true
+    },
+    {
+      "id": "P38",
+      "title": "AERÚN: ciência viva, gente e descobertas com consequências",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "AERUN",
+        "MISTERIO",
+        "MUNDO"
+      ],
+      "evidence": [
+        "S15"
+      ],
+      "directive": "AERÚN evolui ativamente como lugar de pesquisas, pessoas, hipóteses, novas áreas e experimentos distintos, equipes que crescem de modo plausível, desacordos e achados. Miren, Astra, Nemi e demais têm iniciativa. O Prisma da Seiva, as transcrições e a sétima nota mantêm incertezas reais até novas evidências narradas. Interligar exploração aérea, ciência e vida pública, sem transformar capítulos em atas de aprovação.",
+      "active": true
+    },
+    {
+      "id": "P39",
+      "title": "Talis: promessa de reencontro ligada ao grande mistério do mundo",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "TALIS",
+        "MIREN",
+        "MISTERIO"
+      ],
+      "evidence": [
+        "S15"
+      ],
+      "directive": "No Livro VI, a irmã desaparecida de Miren, Talis, DEVE ser encontrada efetivamente no curso da narrativa com arco planejado, revelação merecida e laço material aos mistérios do mundo já em andamento (pesquisas/vestígios/rotas); sua posição, destino, conhecimento, motivações e mecanismo de desaparecimento são DESCONHECIDOS na virada D537. Narrar investigação, pistas falíveis e progressão, nunca declarar retroativamente que personagem já sabia localização ou resolver em exposição súbita. O reencontro tem efeitos profundos e continuados sobre Miren, Lucas, pesquisa e o mundo.",
+      "active": true
+    },
+    {
+      "id": "P40",
+      "title": "ARGOS: uso recorrente, versátil e exploratório com tripulação autônoma",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "ARGOS",
+        "AVENTURA",
+        "MUNDO"
+      ],
+      "evidence": [
+        "S15"
+      ],
+      "directive": "ARGOS é a aeronave arcana única existente após voo005, pico medido 1462 km/h sob condições específicas, não limite máximo. Usá-la bastante no Livro VI para exploração, viagens, descobertas, reencontros, socorro, cooperação e surpresas reais. Velocidade não encurta geografia, consentimento nem conhecimento; Naira e Rumo são agentes, pilotos e pessoas com decisões próprias. Não reduzir a aeronave a relatório técnico ou paralisá-la indefinidamente por validações; inspeções podem ocorrer organicamente fora de cena.",
+      "active": true
+    },
+    {
+      "id": "P41",
+      "title": "Três Arcos: evolução urbana, social e cívica real e visível",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "TRES_ARCOS",
+        "MUNDO",
+        "CONSEQUENCIAS"
+      ],
+      "evidence": [
+        "S15"
+      ],
+      "directive": "A Cidade Livre de Três Arcos cresce de verdade com bairros, belas praças, comércio, infraestrutura, cultura, relações políticas, autonomia institucional, migração, ensino, obras e dilemas urbanos. O crescimento deve produzir mudanças perceptíveis a cada arco, sem ciclos intermináveis de protótipos e autorização que impedem progresso. Kael, Lysa e cidadãos agem autonomamente; Lucas pode usar GÊNESE sem reduzir a cidadania a espectadores, sem obrigatoriedade de pedir licença por todo ato.",
+      "active": true
+    },
+    {
+      "id": "P42",
+      "title": "Narrativa isekai fascinante: muita conversa, vida, magia e aventura",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "ESTILO",
+        "CENA",
+        "RITMO"
+      ],
+      "evidence": [
+        "S15"
+      ],
+      "directive": "Priorizar experiência literária envolvente com cenas demoradas quando interessantes, diálogos vivos, surpresa, piadas ácidas, amizade, romance, aventura, exploração, perigos e grandiosidade criada pela própria história. Evitar capítulos-reportagem, excesso de intervalos e lentidão artificial, recapitulizações, limitação burocrática e final moralizante. Incluir escolhas significativas com quarta ESPECIAL e quinta AÇÃO LIVRE. Livro VI aproveita planos anteriores e não reduz todas as tramas à irmã de Miren.",
       "active": true
     }
   ]

@@ -215,7 +215,11 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
             "longform_stage": stage_receipt,
             "presentation_preflight": presentation_preflight(payload["full_text"]),
         }
-    _chronology(head, draft.metadata, prose=draft.prose)
+    if head.get("book_closed") is True:
+        from .book_opening import require_book_open_approval
+        require_book_open_approval(root, head, draft.metadata)
+    _chronology(head, draft.metadata, prose=draft.prose,
+                book_open_approval_verified=head.get("book_closed") is True)
 
     # Validate a disposable full package, including NPC temporal memory, BEFORE
     # any files are written to archive. This is not a cryptographic human approval.
