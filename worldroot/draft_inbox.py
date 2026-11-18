@@ -23,6 +23,7 @@ from .editorial_guard import quick_preflight
 from .presentation_guard import presentation_preflight
 from .story_focus_audit import inspect_installment
 from .day_arc_audit import inspect_day_arc
+from .lived_narrative_audit import inspect_lived_narrative
 from .longform_depth import inspect_longform
 from .longform_segments import verify_longform_segments
 
@@ -199,6 +200,7 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
             "editorial_preflight": quick_preflight(payload["prose"])["status"],
             "story_focus_advisory": _focus_receipt(payload["prose"]),
             "day_arc_advisory": inspect_day_arc(payload["prose"]),
+            "lived_narrative_advisory": inspect_lived_narrative(payload["prose"]),
             "longform_depth": inspect_longform(payload["prose"]),
             "longform_stage": stage_receipt,
             "presentation_preflight": presentation_preflight(payload["full_text"]),
@@ -245,6 +247,7 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
         "editorial_preflight": quick_preflight(payload["prose"])["status"],
             "story_focus_advisory": _focus_receipt(payload["prose"]),
             "day_arc_advisory": inspect_day_arc(payload["prose"]),
+            "lived_narrative_advisory": inspect_lived_narrative(payload["prose"]),
             "longform_depth": inspect_longform(payload["prose"]),
             "longform_stage": stage_receipt,
             "presentation_preflight": presentation_preflight(payload["full_text"]),

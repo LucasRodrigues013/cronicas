@@ -1,7 +1,7 @@
 {
   "schema": "worldroot-editorial-policy-v1",
   "project": "CRONICAS_DE_UM_NOVO_MUNDO",
-  "version": 5,
+  "version": 6,
   "reviewed_at": "2026-11-18",
   "approved_scope": "USER_REQUESTED_PERMANENT_PREFERENCES_NOT_CANON_EVENTS",
   "source_of_truth": "main/worldroot/editorial_policy.json",
@@ -93,6 +93,13 @@
       "at": "2026-11-18",
       "transcript_line": null,
       "quote": "CAPÍTULO 16 · PARTE III DE V - Esse capitulo ficou muito pequeno, e percebi que parte do motor do chat que trabalha na criação da historia fica precisa na recuperação talvez, oque podemos fazer para termos as historias chegando as 10mil palavras e mantendo o ritmo que queremos?"
+    },
+    {
+      "id": "S13",
+      "kind": "AUTHOR_DIRECTIVE",
+      "at": "2026-11-18",
+      "transcript_line": null,
+      "quote": "compare o novo episodio com oque temos, ele ficou grande, bem volumoso e com varios dias, mas pareceu um relatorio, do que um convivencia, nao precisamos refazer, mas precisamos ver isso pra nao gerar mais episodios assim, e mantermos o padrão."
     }
   ],
   "rules": [
@@ -534,9 +541,10 @@
         "LUCAS"
       ],
       "evidence": [
-        "S12"
+        "S12",
+        "S13"
       ],
-      "directive": "Planejar e desenvolver cada nova parte longa em aproximadamente 10000 palavras de PROSA, sem contar UI, opções, calendário e checkpoint. Alvo 9400–11000, piso técnico de arquivamento 8800 para novos capítulos. Aumentar vida, conflito, emoção, escolhas e consequências, jamais repetição artificial. Se o limite de saída impedir 10000 em uma resposta, continuar a MESMA parte em duas entregas, sem fechar o cânone nem oferecer escolhas até concluir.",
+      "directive": "Planejar e desenvolver cada nova parte longa em aproximadamente 10000 palavras de PROSA, sem contar UI, opções, calendário e checkpoint. Alvo 9400–11000, piso técnico de arquivamento 8800 para novos capítulos. Meta de extensão é SUBORDINADA à experiência vivida: aumentar desejo, conflito, emoção, convivência, escolhas e consequências, jamais repetição ou relatório de projetos. Se o limite de saída impedir 10000 em uma resposta, continuar a MESMA parte em duas entregas, sem fechar o cânone nem oferecer escolhas até concluir.",
       "active": true
     },
     {
@@ -555,6 +563,60 @@
         "S12"
       ],
       "directive": "Antes de continuar, recuperar HEAD real, último draft literal e escolhas, eventos e conhecimento por personagem com tempo, mais detalhes relevantes do histórico por busca literal FTS quando necessário. Nunca confiar apenas em resumos, README, contexto da conversa ou atualizar o dia antes da escolha. Revisar cronologia e conhecimento durante a expansão para 10000 palavras.",
+      "active": true
+    },
+    {
+      "id": "P28",
+      "title": "Narrativa vivida, não relatório de progresso",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "CENA",
+        "LUCAS",
+        "ESTILO",
+        "ROMANCE"
+      ],
+      "evidence": [
+        "S13"
+      ],
+      "directive": "Uma parte longa não pode se transformar em ata de planejamento, segurança, autorização, ensaios e resultados. Fazer o leitor viver a experiência de Lucas: tempo de conversa e reação, humor espontâneo, descoberta e desejo. Cenas técnicas são permitidas quando dramatizadas e com consequência humana; evitar uma cena para cada entregável, explicação defensiva ou checklist.",
+      "active": true
+    },
+    {
+      "id": "P29",
+      "title": "Dias vividos sem corrida até a data prevista",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "TEMPO",
+        "CENA",
+        "CAUSALIDADE"
+      ],
+      "evidence": [
+        "S13",
+        "S11"
+      ],
+      "directive": "Uma data de missão previamente anunciada não é obrigação de narrar todos os preparativos e chegar nela em uma única Parte. Se houver vários dias, cada transição deve ser causal e interessante, preservando experiências e vida pessoal; pode pausar a Parte dentro do mesmo dia. Não impor um dia por Parte, quota de horas, retroceder fatos ou fabricar atrasos.",
+      "active": true
+    },
+    {
+      "id": "P30",
+      "title": "Clímax com tempo de sentir e relações reais",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "CENA",
+        "PERSONAGENS",
+        "LUCAS",
+        "ROMANCE"
+      ],
+      "evidence": [
+        "S13"
+      ],
+      "directive": "Depois de uma vitória como ARGOS 005, permitir reação, alívio, surpresa e convivência suficientes para o acontecimento importar emocionalmente. Miren, NÓX, Brannik e NPCs não são funções de um relatório: têm escolhas e relações fora do projeto. Valorizar 1–2 cenas humanas centrais em vez de diluir tudo em 15 reuniões e breves transições; sem quota fixa de cenas.",
       "active": true
     }
   ]

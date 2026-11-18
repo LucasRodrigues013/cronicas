@@ -85,10 +85,13 @@ def compact_brief(policy: dict, scene_tags=(), max_chars: int = 1750) -> dict:
     ))
     lines = [
         "WORLDROOT | preferências autorais vigentes v" + str(policy["version"]),
-        "LONGFORM P26: meta ~10000 palavras de PROSA por parte; nunca contar interface ou inflar cenas.",
-        "CANONE P27: recuperar HEAD, ultimo draft literal, escolhas e memoria temporal por evidencia.",
+        "LONGFORM P26: ~10000 palavras de PROSA, nunca inflar cena ou contar interface.",
+        "CANONE P27: recuperar HEAD, ultimo draft literal e memoria temporal.",
+        "VIDA P28/P29/P30: cena humana > ata de tarefa; dias organicos, nao cronograma; sentir o climax.",
     ]
-    selected = ["P26", "P27"] if {"P26", "P27"}.issubset({r["id"] for r in active}) else []
+    prioritized = ("P26", "P27", "P28", "P29", "P30")
+    available = {r["id"] for r in active}
+    selected = [rid for rid in prioritized if rid in available]
     for rule in scored:
         if rule["id"] in selected:
             continue
