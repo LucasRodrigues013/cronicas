@@ -1,3 +1,5 @@
+> **ADENDO AUTORAL r14 (18/11/2026).** Este documento era consultivo antes do pedido posterior de Partes com ~10 mil palavras narrativas. O pedido novo cria `worldroot/longform_depth.py` com meta 10.000, janela 9.400–11.000 e piso mínimo de arquivamento 8.800 **apenas para novos drafts**. A regra não autoriza repetição de prosa nem obriga várias cenas/horas artificiais: a qualidade dramática ainda se avalia separadamente. Ver `docs/longform-10k-context-recovery.md`.
+
 # WORLDROOT r11 — auditoria da densidade narrativa e foco dramático (D529–D530)
 
 **Natureza:** análise comparativa, QA consultivo e plano de evolução.  

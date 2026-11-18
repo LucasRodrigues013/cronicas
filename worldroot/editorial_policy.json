@@ -1,7 +1,7 @@
 {
   "schema": "worldroot-editorial-policy-v1",
   "project": "CRONICAS_DE_UM_NOVO_MUNDO",
-  "version": 4,
+  "version": 5,
   "reviewed_at": "2026-11-18",
   "approved_scope": "USER_REQUESTED_PERMANENT_PREFERENCES_NOT_CANON_EVENTS",
   "source_of_truth": "main/worldroot/editorial_policy.json",
@@ -86,6 +86,13 @@
       "at": "2026-11-18",
       "transcript_line": null,
       "quote": "veja se conseguimos cobrir um dia inteiro de historia, talvez isso esteja em falta pro tamanho do caso. Vamos iniciar e fechar os dias."
+    },
+    {
+      "id": "S12",
+      "kind": "AUTHOR_DIRECTIVE",
+      "at": "2026-11-18",
+      "transcript_line": null,
+      "quote": "CAPÍTULO 16 · PARTE III DE V - Esse capitulo ficou muito pequeno, e percebi que parte do motor do chat que trabalha na criação da historia fica precisa na recuperação talvez, oque podemos fazer para termos as historias chegando as 10mil palavras e mantendo o ritmo que queremos?"
     }
   ],
   "rules": [
@@ -418,9 +425,10 @@
       ],
       "evidence": [
         "S09",
-        "S10"
+        "S10",
+        "S12"
       ],
-      "directive": "Usar Livro V C15 Parte II como referência de imersão: cada cena importante desenvolve objetivo, oposição, reações, decisões e efeitos. Evitar montagens apressadas e relatórios; sem obrigação fixa de palavras ou número de cenas.",
+      "directive": "Usar Livro V C15 Parte II como referência de imersão: cada cena importante desenvolve objetivo, oposição, reações, decisões e efeitos. Evitar montagens apressadas e relatórios; não confundir volume com profundidade: a nova meta autoral de aproximadamente 10 mil palavras de prosa segue P26, sem enchimento ou contagem fixa de cenas.",
       "active": true
     },
     {
@@ -512,6 +520,41 @@
         "S10"
       ],
       "directive": "Ao terminar uma parte antes do anoitecer, preservar o dia como aberto para a próxima escolha e permitir jantar, afeto, descobertas, consequência e repouso antes do novo amanhecer. Um dia só se fecha por acontecimento narrado e decisão de continuidade, nunca por quota, horário automático ou checklist burocrático.",
+      "active": true
+    },
+    {
+      "id": "P26",
+      "title": "Meta de 10 mil palavras narrativas por parte, sem enchimento",
+      "stance": "MELHORAR",
+      "enforcement": "ESTRUTURAL",
+      "core": true,
+      "tags": [
+        "CENA",
+        "ESTILO",
+        "LUCAS"
+      ],
+      "evidence": [
+        "S12"
+      ],
+      "directive": "Planejar e desenvolver cada nova parte longa em aproximadamente 10000 palavras de PROSA, sem contar UI, opções, calendário e checkpoint. Alvo 9400–11000, piso técnico de arquivamento 8800 para novos capítulos. Aumentar vida, conflito, emoção, escolhas e consequências, jamais repetição artificial. Se o limite de saída impedir 10000 em uma resposta, continuar a MESMA parte em duas entregas, sem fechar o cânone nem oferecer escolhas até concluir.",
+      "active": true
+    },
+    {
+      "id": "P27",
+      "title": "Recuperação de cânone por evidência e contexto seletivo",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "CANONE",
+        "MEMORIA",
+        "TEMPO",
+        "PERSONAGENS"
+      ],
+      "evidence": [
+        "S12"
+      ],
+      "directive": "Antes de continuar, recuperar HEAD real, último draft literal e escolhas, eventos e conhecimento por personagem com tempo, mais detalhes relevantes do histórico por busca literal FTS quando necessário. Nunca confiar apenas em resumos, README, contexto da conversa ou atualizar o dia antes da escolha. Revisar cronologia e conhecimento durante a expansão para 10000 palavras.",
       "active": true
     }
   ]

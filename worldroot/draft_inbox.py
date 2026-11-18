@@ -23,6 +23,8 @@ from .editorial_guard import quick_preflight
 from .presentation_guard import presentation_preflight
 from .story_focus_audit import inspect_installment
 from .day_arc_audit import inspect_day_arc
+from .longform_depth import inspect_longform
+from .longform_segments import verify_longform_segments
 
 NARRATIVE_LIMIT = 500_000
 INBOX_LIMIT = 1_000_000
@@ -75,6 +77,13 @@ def _assemble(episode_id: str, payload: dict, *, enforce_presentation: bool = Tr
         visual = presentation_preflight(text)
         if visual["errors"]:
             raise GateError("Chat presentation contract failed: " + "; ".join(visual["errors"])[:350])
+
+    # New longform chapters require a genuine narrative minimum; we do not
+    # count HTML/DIL or five choice buttons as story. Never alter old drafts.
+    if enforce_presentation:
+        depth = inspect_longform(prose)
+        if depth["errors"]:
+            raise GateError("Narrative depth contract failed: " + "; ".join(depth["errors"])[:350])
 
     events = payload.get("reviewed_events")
     knowledge = payload.get("reviewed_knowledge")
@@ -166,6 +175,7 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
     head = load(root / "canon" / "HEAD.json")
     if head.get("schema") != "worldroot-git-canon-v1":
         raise GateError("GitHub operational HEAD not yet initialized")
+    stage_receipt = verify_longform_segments(root, episode_id, payload)
     existing_manifest = root / "episodes" / episode_id / "draft" / "manifesto_imutavel.json"
     draft, files, review_files = _assemble(
         episode_id, payload, enforce_presentation=not existing_manifest.is_file())
@@ -188,7 +198,11 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
             "changed_file_count": 0, "canon_changed": False, "drive_changed": False,
             "editorial_preflight": quick_preflight(payload["prose"])["status"],
             "story_focus_advisory": _focus_receipt(payload["prose"]),
-            "day_arc_advisory": inspect_day_arc(payload["prose"]),
+        "day_arc_advisory": inspect_day_arc(payload["prose"]),
+        "longform_depth": inspect_longform(payload["prose"]),
+        "longform_stage": stage_receipt,
+            "longform_depth": inspect_longform(payload["prose"]),
+            "longform_stage": stage_receipt,
         }
     _chronology(head, draft.metadata)
 
