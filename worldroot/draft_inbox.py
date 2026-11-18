@@ -203,7 +203,7 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
             "longform_stage": stage_receipt,
             "presentation_preflight": presentation_preflight(payload["full_text"]),
         }
-    _chronology(head, draft.metadata)
+    _chronology(head, draft.metadata, prose=draft.prose)
 
     # Validate a disposable full package, including NPC temporal memory, BEFORE
     # any files are written to archive. This is not a cryptographic human approval.
