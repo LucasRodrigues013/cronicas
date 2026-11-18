@@ -1,7 +1,7 @@
 {
   "schema": "worldroot-editorial-policy-v1",
   "project": "CRONICAS_DE_UM_NOVO_MUNDO",
-  "version": 6,
+  "version": 7,
   "reviewed_at": "2026-11-18",
   "approved_scope": "USER_REQUESTED_PERMANENT_PREFERENCES_NOT_CANON_EVENTS",
   "source_of_truth": "main/worldroot/editorial_policy.json",
@@ -100,6 +100,13 @@
       "at": "2026-11-18",
       "transcript_line": null,
       "quote": "compare o novo episodio com oque temos, ele ficou grande, bem volumoso e com varios dias, mas pareceu um relatorio, do que um convivencia, nao precisamos refazer, mas precisamos ver isso pra nao gerar mais episodios assim, e mantermos o padrão."
+    },
+    {
+      "id": "S14",
+      "kind": "AUTHOR_DIRECTIVE",
+      "at": "2026-11-18",
+      "transcript_line": null,
+      "quote": "Analise o ultimo livro, ao pedir pra termos mais palavras e maior historia, o motor começou a jogar muitra coisa fora de ordem que tinhamos, leia o capitulo 15, parte, e leia o capitulo 16 parte v, veja a diferença de qualidade, semantica e dados. Quero ajustar isso antes de iniciar o novo livro"
     }
   ],
   "rules": [
@@ -533,7 +540,7 @@
       "id": "P26",
       "title": "Meta de 10 mil palavras narrativas por parte, sem enchimento",
       "stance": "MELHORAR",
-      "enforcement": "ESTRUTURAL",
+      "enforcement": "EDITORIAL",
       "core": true,
       "tags": [
         "CENA",
@@ -542,9 +549,10 @@
       ],
       "evidence": [
         "S12",
-        "S13"
+        "S13",
+        "S14"
       ],
-      "directive": "Planejar e desenvolver cada nova parte longa em aproximadamente 10000 palavras de PROSA, sem contar UI, opções, calendário e checkpoint. Alvo 9400–11000, piso técnico de arquivamento 8800 para novos capítulos. Meta de extensão é SUBORDINADA à experiência vivida: aumentar desejo, conflito, emoção, convivência, escolhas e consequências, jamais repetição ou relatório de projetos. Se o limite de saída impedir 10000 em uma resposta, continuar a MESMA parte em duas entregas, sem fechar o cânone nem oferecer escolhas até concluir.",
+      "directive": "Meta aproximada de 10000 palavras de PROSA verdadeira por parte, sem contar UI. **Alvo editorial, não piso bloqueante.** A qualidade da progressão dramática e a integridade semântica prevalecem: nunca estender uma parte para satisfazer 8800/10000 quando seu arco natural já terminou, jamais duplicar aprendizado conhecido, recapitulá-lo como novidade ou adicionar cerimônias artificiais. Se a história merece mais espaço, desenvolver ações e consequências inéditas em vez de repetir temas. O autor pode continuar a MESMA parte em vários trechos quando necessário.",
       "active": true
     },
     {
@@ -617,6 +625,76 @@
         "S13"
       ],
       "directive": "Depois de uma vitória como ARGOS 005, permitir reação, alívio, surpresa e convivência suficientes para o acontecimento importar emocionalmente. Miren, NÓX, Brannik e NPCs não são funções de um relatório: têm escolhas e relações fora do projeto. Valorizar 1–2 cenas humanas centrais em vez de diluir tudo em 15 reuniões e breves transições; sem quota fixa de cenas.",
+      "active": true
+    },
+    {
+      "id": "P31",
+      "title": "Progressão semântica: personagens não redescobrem arcos concluídos",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "PERSONAGENS",
+        "CANONE",
+        "CENA"
+      ],
+      "evidence": [
+        "S14"
+      ],
+      "directive": "Antes de criar Livro VI, comparar cenas atuais com os marcos LITERAIS C15 II e C16 V, mais o registro de progressão: Káiron já gostava da própria vida e sabia escolher no D529; Varo e os 300 já tinham relatos de vidas próprias; Miren já possuía autonomia; Lucas já rejeitava papel de rei. Reencontros e ecos são permitidos, mas novas cenas devem trazer NOVA ação, custo, relação ou consequência, não reapresentar lição conhecida como descoberta. Sempre distinguir lembrança intencional de retrocesso semântico.",
+      "active": true
+    },
+    {
+      "id": "P32",
+      "title": "Grandiosidade ganha por causalidade, não cerimônia extra ou recapitulação",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "CENA",
+        "ESTILO",
+        "CAUSALIDADE"
+      ],
+      "evidence": [
+        "S14"
+      ],
+      "directive": "Quando autor pede final glorioso, valorizar clímax conquistado, singularidade e emoção em vez de empilhar discursos de valores, metáforas repetidas, slogans e celebrações inventadas apenas para fechar. A escala pode ser épica, GÊNESE continua ilimitada, mas cada milagre/acontecimento precisa de causa, reação e transformação diferente. O Livro V já foi encerrado pelo autor; não reviver um ritual de encerramento antes de iniciar Livro VI.",
+      "active": true
+    },
+    {
+      "id": "P33",
+      "title": "Fonte de verdade e limites entre cânone, editorial e conhecimento dos personagens",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "CANONE",
+        "MEMORIA",
+        "PERSONAGENS",
+        "TEMPO"
+      ],
+      "evidence": [
+        "S14"
+      ],
+      "directive": "Consultar HEAD e CONTEXT gerados do journal e sidecars, validar book_closed dinamicamente. Não expor evento BASTIDORES (ex.: 'Livro V encerrado') em conhecimento que Lucas pode possuir. Diferenciar conhecimento temporal de cada personagem, fatos públicos, hipóteses, propostas e resumos editoriais; não inventar localizações, pesquisas resolvidas ou escolhas inexistentes. Ancorar estado do novo livro na fonte literal e não em README antigo.",
+      "active": true
+    },
+    {
+      "id": "P34",
+      "title": "Primazia da narrativa sobre metas automáticas de volume",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "ESTILO",
+        "CENA",
+        "PERSONAGENS"
+      ],
+      "evidence": [
+        "S14",
+        "S12"
+      ],
+      "directive": "Não avaliar literatura por contagem absoluta de palavras ou número de cenas. Os alertas de densidade e repetição exigem releitura humana/editorial; preferir partes menores mas completas quando a alternativa for inflar 10000 palavras com recapitulação. Preservar humor ácido, silêncio, imprevisibilidade, drama, vida cotidiana, consequências, mistério e autonomia. Nunca declarar que testes estruturais validam qualidade semântica ou prosa.",
       "active": true
     }
   ]
