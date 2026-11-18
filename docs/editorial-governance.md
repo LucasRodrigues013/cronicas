@@ -1,0 +1,67 @@
+# WORLDROOT — Contrato editorial vivo, memória e verificação rápida
+
+**Escopo exclusivo:** Crônicas de um Novo Mundo. **Autoridade:** o autor tem a última palavra.  
+**Vigência:** 18/11/2026, versão inicial solicitada expressamente pelo autor.  
+**Fonte ativa:** `main/worldroot/editorial_policy.json`; motor `worldroot/editorial_guard.py`.
+**Evidência histórica:** `story-archive/editorial/feedback/2026-11-18-baseline.json` (registro privado).
+**Histórico de teste:** `story-archive/audit/qa40-history/D001-D350-2026-11-18-STAGING.json`.
+
+## Qualidade que não pode desaparecer
+
+- **Experiência literária:** cenas completas, diálogos vivos, humor de Lucas, presença orgânica do SISTEMA, romance e personalidade independente de Miren, interações significativas com NPCs, detalhes sensoriais em prosa. Não substituir narrativa por figuras, planilhas ou comunicados.
+- **Ritmo:** tempo orgânico. Não acelerar dias importantes; também não gastar dezenas de partes sem descobertas, decisões ou resultados.
+- **Fantasia de escala:** GÊNESE/CREATION extraordinária, sem enfraquecimentos artificiais. Mundo em expansão com mistérios grandes, antagonistas inteligentes, lugares e culturas sem depender de Lucas.
+- **Pessoas livres:** legionários, Káiron, Kael, Lysa, Varo, Astra e todos os demais têm vida e iniciativa. Serís Daum deve conservar estratégia, presença e ambição sem reducionismo.
+- **Continuidade:** texto literal e fatos já narrados acima de resumos; nunca transformar esboço futuro em evento ocorrido, conhecimento do leitor em lembrança de personagem, ou um plano tecnológico em invento concluído.
+- **Interatividade:** três escolhas principais, quarta ESPECIAL e quinta LIVRE; consequências plausíveis, sem punição automática da especial; decisões autorais preservadas.
+
+As formulações completas, status, temas, versão e evidências ficam no JSON de política; não copiar cegamente uma versão resumida para uma nova fonte de verdade.
+
+## Precedência de feedback ao longo do tempo
+
+1. Decisão autoral explícita vigente sobre estilo/UX.
+2. Correção direta e elogio/crítica textual datados.
+3. Políticas anteriormente aprovadas, somente onde não conflitarem.
+4. Preferências inferidas, como hipóteses até serem confirmadas.
+
+Caso conhecido: o autor elogiou fotos anteriormente, mas depois pediu foco em texto e a diretriz atual é **sem imagens na narração**. Preservar ambos os registros, aplicar a instrução vigente. Nunca usar feedback para reescrever retrospectivamente cenas canônicas.
+
+## Caminho rápido por capítulo — sem auditoria pesada
+
+**Antes da prosa:** ler HEAD operacional privado, checkpoint compacto, últimos eventos/conhecimentos relevantes e `compact_brief(policy, scene_tags)`. Esse resumo tem orçamento máximo e somente regras-base + regras do contexto atual. Não reler transcrição de 296.900 linhas a cada resposta.
+
+**Após a prosa, antes do arquivo:** verificar estrutura, opções, tempo e conhecimentos com os validadores atuais; chamar `quick_preflight(prose, scene_tags=...)`. Bloqueio determinístico apenas para violações estruturais inequívocas (ex.: imagem embutida). Alertas literários provocam revisão pontual, **não** invalidam mecanicamente um episódio bom.
+
+**Arquivo e fechamento:** chamada explícita do ChatGPT a `story-archive/inbox/<id>.json`; o workflow arquiva texto integral com hash e revisão dos eventos. Na próxima seleção real do autor, workflow confirma o episódio anterior, acrescenta eventos e conhecimento ao ledger e ao SQLite, atualiza o HEAD do GitHub e recompõe o CONTEXT. Nada de pular para outro dia por cronograma. **GitHub Actions não observa automaticamente as respostas do ChatGPT.**
+
+**Consulta especializada:** para dúvidas históricas, consultar índices/fontes específicas por personagem/dia/evento; o arquivo histórico D001–D350 é STAGING, não memória semântica certificada. Revalidar evidências quando um detalhe antigo afetar a cena atual.
+
+## Feedback novo incorpora-se ao histórico sem virar regra silenciosa
+
+Quando o autor elogiar, corrigir ou rejeitar uma cena, registrar um evento novo e **imutável** em `story-archive/editorial/feedback/<data>-<id>.json`, contendo `source`, citação literal ou referência, `timestamp`, `stance`, escopo, versão vigente e regras impactadas. O registro é histórico, não a aprovação automática de mudança nas regras.
+
+Se o autor **aprovar** alteração permanente, propor uma mudança isolada em `main/worldroot/editorial_policy.json` com nova versão, fonte de evidência e testes. Aplicar somente após integração da revisão. O histórico das versões permanece no Git. Nunca sobrescrever a crítica antiga; marcar a preferência superada na nova edição. A memória é incrementada, não apagada.
+
+Eventos **do mundo** não devem ser inseridos nesse arquivo de estilo: vão para os sidecars `eventos_revisados.json` e `conhecimento_revisado.json` e, após escolha, para o journal `canon/episodes/*.json` no `story-archive`.
+
+## Verificações executáveis
+
+```bash
+python -m unittest discover -s tests -v
+python - <<'PY'
+from worldroot.editorial_guard import load_policy, compact_brief, quick_preflight
+p = load_policy()
+print(compact_brief(p, scene_tags=("MIREN", "ROMANCE"))["text"])
+print(quick_preflight("LUCAS — Vamos conversar.", policy=p))
+PY
+```
+
+`quick_preflight` não é um avaliador literário inteligente; é um verificador leve que sinaliza possíveis problemas. A revisão do sentido continua com o narrador/editor e, se necessário, o autor.
+
+## Limites explícitos
+
+- O arquivo r8 GitHub-only é a persistência operacional do motor; o Drive tem acervo e HEAD legado não sincronizado automaticamente.
+- Teste sintético, SHA-256 e 40 respostas com linhas de fonte **não** garantem verdade semântica nem qualidade artística perfeita.
+- As 40 respostas históricas dos Dias 1–350 têm status STAGING até revisão direcionada de cada afirmação.
+- Não alterar o HEAD D528 nem D529 rascunho por instalar regras editoriais.
+- A automação total de novos turnos depende de chamada real do plugin do GitHub; não existe hook universal de fim de resposta.

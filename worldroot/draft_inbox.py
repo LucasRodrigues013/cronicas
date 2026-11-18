@@ -19,6 +19,7 @@ from .git_cycle import (load, canonical, sha, check_id, verify_episode,
                         review_deltas, _chronology)
 from .semantic_gate import require_reviewed_event_evidence
 from .ledger import GateError, ConflictError
+from .editorial_guard import quick_preflight
 
 NARRATIVE_LIMIT = 500_000
 INBOX_LIMIT = 1_000_000
@@ -58,6 +59,12 @@ def _assemble(episode_id: str, payload: dict):
         draft.validate()
     except (KeyError, TypeError, ValueError) as exc:
         raise GateError("Episode structure invalid: " + str(exc)[:120]) from None
+
+    # Cheap editorial contract: prohibit image embeds; flag, but never
+    # automatically rewrite, short dialogue-free or otherwise unusual scenes.
+    editorial = quick_preflight(prose, scene_tags=payload.get("editorial_tags", ()))
+    if editorial["errors"]:
+        raise GateError("Authorial editorial policy violated: " + "; ".join(editorial["errors"]))
 
     events = payload.get("reviewed_events")
     knowledge = payload.get("reviewed_knowledge")
@@ -156,6 +163,7 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
             "narrative_bytes": len(files["narrativa_integral.md"]),
             "events": len(payload["reviewed_events"]), "knowledge": len(payload["reviewed_knowledge"]),
             "changed_file_count": 0, "canon_changed": False, "drive_changed": False,
+            "editorial_preflight": quick_preflight(payload["prose"])["status"],
         }
     _chronology(head, draft.metadata)
 
@@ -196,6 +204,7 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
         "narrative_bytes": len(files["narrativa_integral.md"]),
         "events": len(event_records), "knowledge": len(knowledge_records),
         "changed_file_count": len(changed), "canon_changed": False, "drive_changed": False,
+        "editorial_preflight": quick_preflight(payload["prose"])["status"],
     }
 
 
