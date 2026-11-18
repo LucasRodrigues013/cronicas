@@ -25,6 +25,11 @@ def require_book_open_approval(root: Path, previous: dict, metadata: dict) -> di
     if (metadata.get("book") != "Livro VI"
             or metadata.get("chapter") != 1 or metadata.get("part") != "I"):
         raise GateError("Approved opening is ONLY Livro VI C01 Parte I")
+    if (type(metadata.get("day")) is not int or metadata["day"] < previous.get("day", 0)):
+        raise GateError("New book chronology cannot move backwards")
+    if (metadata["day"] == previous.get("day")
+            and metadata.get("hour", "") < previous.get("hour", "")):
+        raise GateError("New book cannot precede closing scene on same day")
     approval = load(Path(root) / APPROVAL_FILE)
     if (approval.get("schema") != _SCHEMA
             or approval.get("project") != "CRONICAS_DE_UM_NOVO_MUNDO"
