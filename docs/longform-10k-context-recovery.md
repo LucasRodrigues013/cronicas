@@ -1,3 +1,5 @@
+> **RETIFICAÇÃO VIGENTE r16 (18/11/2026):** A antiga exigência de 8.800 palavras como piso técnico BLOQUEANTE foi eliminada depois de regressão semântica causada pela pressão por volume. Permanecem referência editorial ~10.000 e avisos de prosa; a integridade, o readback, a autoria e a continuidade ainda são obrigatórios. Evitar preencher extensão com lições já aprendidas e retrospectivas artificiais. Política P26 alterada; P31–P34 priorizam progressão e verdade do cânone. Documento abaixo descreve a implementação histórica r14 e seus parâmetros desatualizados; prevalece esta retificação e `docs/bookv-bookvi-semantic-transition-r16.md`.
+
 # WORLDROOT r14 — Longform 10 mil palavras e retomada por evidência
 
 **Decisão do autor, 18/11/2026.** As partes precisam voltar à profundidade da referência Livro V C15 Parte II, preferencialmente alcançando cerca de dez mil palavras de **prosa narrativa**, sem contar interface. O pedido também identifica a necessidade de maior precisão na recuperação do contexto. Não tratar a hipótese como prova de falha técnica de memória: foram verificadas compressão de cenas e ausência de alvo operacional de extensão.
