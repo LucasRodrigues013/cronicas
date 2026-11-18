@@ -26,7 +26,10 @@ FULL=PROSE+'\n'+''.join(f'{c.number} — {c.title}\n{c.description}\n' for c in 
 META={'day':10,'book':'Livro Sintético','chapter':15,'part':'II','hour':'20h42',
       'location':'Local fictício','choice':'4','canon_status':'RASCUNHO'}
 EV={'event_id':'SYNTHETIC-EVT-001','event_type':'ACONTECIMENTO','body':'SYNTHETIC ONLY',
-    'visibility':'PRIVADO_PERSONAGEM','canon_status':'PENDENTE_APROVACAO'}
+    'visibility':'PRIVADO_PERSONAGEM','canon_status':'PENDENTE_APROVACAO',
+    'summary_candidato':'Synthetic only: a character speaks once in the test scene',
+    'source':{'sha256':hashlib.sha256(FULL.encode('utf-8')).hexdigest(),
+              'line':3,'literal_anchor':'PERSONAGEM A — Este texto é apenas uma experiência de qualidade.'}}
 
 
 class MemoryDrive:
