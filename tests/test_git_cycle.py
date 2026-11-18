@@ -131,6 +131,16 @@ class GitCycleTest(unittest.TestCase):
         self.assertEqual(restore(self.root)["episodes"], 1)
         verify_db(self.root, head)
 
+    def test_context_index_has_only_explicit_character_knowledge(self):
+        self.boot()
+        close(self.root)
+        context = load(self.root / "canon" / "CONTEXT.json")
+        self.assertEqual(context["head"]["day"], 529)
+        self.assertEqual(context["head"]["sequence"], 1)
+        self.assertEqual(len(context["recent_narrated_events"]), 1)
+        self.assertIn("Personagem Sintetico", context["explicit_character_knowledge"])
+        self.assertNotIn("Other Person", context["explicit_character_knowledge"])
+
     def test_duplicate_choice_is_idempotent(self):
         self.boot()
         close(self.root)
