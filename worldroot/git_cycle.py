@@ -195,10 +195,17 @@ def write_context(root: Path, head: dict) -> dict:
             "SELECT event_id,episode_id,summary,event_type,visibility,day,hour,source_line,source_anchor "
             "FROM events ORDER BY day DESC,COALESCE(hour,'') DESC,event_id DESC LIMIT 150"
         ).fetchall()]
+        # Avoid treating editorial-only BASTIDORES notes (e.g. book closure)
+        # as a character's in-world cognition. They remain in the immutable
+        # journal/SQLite for audit, but never in explicit_character_knowledge.
         knowledge = [dict(x) for x in conn.execute(
             "SELECT person,event_id,episode_id,description,acquired_day,acquired_time,visibility "
-            "FROM npc_knowledge ORDER BY acquired_day DESC,COALESCE(acquired_time,'') DESC,row_id DESC LIMIT 750"
+            "FROM npc_knowledge WHERE visibility IN ('PUBLICO', 'PRIVADO_PERSONAGEM') "
+            "ORDER BY acquired_day DESC,COALESCE(acquired_time,'') DESC,row_id DESC LIMIT 750"
         ).fetchall()]
+        backstage_excluded = conn.execute(
+            "SELECT COUNT(*) FROM npc_knowledge WHERE visibility='BASTIDORES'"
+        ).fetchone()[0]
     characters = {}
     for item in knowledge:
         characters.setdefault(item["person"], []).append({
@@ -212,10 +219,16 @@ def write_context(root: Path, head: dict) -> dict:
         "recent_narrated_events": events, "explicit_character_knowledge": characters,
         "temporal_rule": "Unknown clock is NOT permission to learn the event earlier within the same day",
         "canonical_scope": "D528 baseline + GitHub journal closures; historical Drive records require separate read",
+        "editorial_only_knowledge_excluded": backstage_excluded,
         "prohibited_assumptions": [
             "An event in BASTIDORES is not universal character knowledge",
             "No automatic retcon or weakening of GENESE",
-            "Livro V remains open without the author's explicit closure",
+            (
+                head["book"] + " is canonically CLOSED; do not revive its last chapter "
+                "or begin a new book without an explicit author choice and opening gate."
+                if head.get("book_closed") is True else
+                head["book"] + " remains OPEN until an explicit author-approved closure."
+            ),
             "Drive HEAD has not been synchronized by this GitHub-only runner",
         ],
     }
