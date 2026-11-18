@@ -85,13 +85,14 @@ def compact_brief(policy: dict, scene_tags=(), max_chars: int = 1750) -> dict:
     ))
     lines = [
         "WORLDROOT | preferências autorais vigentes v" + str(policy["version"]),
-        "PROGRESSAO P31/P32: nunca reensinar arco ja concluido; climax epico por causa e consequencia, nao ritual repetido.",
-        "DADOS P33: HEAD/book_closed dinamico; BASTIDORES nao e conhecimento de personagem.",
-        "QUALIDADE P34/P26: ~10000 palavras e ideal, nao piso rigido; nao inflar por repeticao.",
-        "CANONE P27: ler cena literal e conhecimento temporal antes de criar.",
-        "VIDA P28/P29/P30: conviver > relatar projetos; dia organico e repercussao emocional.",
+        "ISEKAI P35-P42: Lucas expressivo; GENESE plena; romance vivo; AERUN pesquisa; Talis reencontrada no Livro VI; ARGOS usada; Tres Arcos cresce; muita conversa e aventura.",
+        "PROGRESSAO P31/P32: nunca reensinar arco ja concluido; climax epico por causa e consequencia.",
+        "DADOS P33: HEAD dinamico; BASTIDORES nao e conhecimento de personagem.",
+        "QUALIDADE P34/P26: 10000 palavras e meta nao piso; nao inflar por repeticao.",
+        "CANONE P27: ler texto literal e conhecimento temporal antes de criar.",
+        "VIDA P28/P29/P30: conviver > relatar projetos; dia organico.",
     ]
-    prioritized = ("P31", "P32", "P33", "P34", "P26", "P27", "P28", "P29", "P30")
+    prioritized = ("P35", "P36", "P37", "P38", "P39", "P40", "P41", "P42", "P31", "P32", "P33", "P34", "P26", "P27", "P28", "P29", "P30")
     available = {r["id"] for r in active}
     selected = [rid for rid in prioritized if rid in available]
     for rule in scored:
