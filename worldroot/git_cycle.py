@@ -336,7 +336,15 @@ def review_deltas(root: Path, episode_id: str, draft: EpisodeDraft) -> tuple[lis
     for ev in events:
         actual_day = event_day(ev, draft.metadata["day"])
         if actual_day < draft.metadata["day"] - 1:
-            raise GateError("Reviewed event day outside this installment")
+            # Older-than-yesterday events are permitted only when the same
+            # multi-day installment explicitly narrates those intermediate days.
+            from .day_arc_audit import inspect_day_arc
+            arc = inspect_day_arc(draft.prose)
+            if (not arc["chronological"] or not arc["last"]
+                    or arc["last"]["day"] != draft.metadata["day"]
+                    or actual_day not in arc["days_touched"]
+                    or arc["days_touched"] != list(range(arc["first"]["day"], draft.metadata["day"] + 1))):
+                raise GateError("Reviewed event day outside narrated multi-day installment")
     if (knowledge.get("schema") != "worldroot-reviewed-knowledge-v1"
             or knowledge.get("episode_id") != episode_id
             or knowledge.get("review_status") != "REVISADO"):
@@ -379,15 +387,29 @@ def review_deltas(root: Path, episode_id: str, draft: EpisodeDraft) -> tuple[lis
     return events, kn
 
 
-def _chronology(previous: dict, meta: dict):
+def _chronology(previous: dict, meta: dict, *, prose: str | None = None):
     for key in ("day", "chapter", "part", "hour", "book", "location"):
         if key not in meta:
             raise GateError("Episode lacks chronology " + key)
     if (type(meta["day"]) is not int or type(meta["chapter"]) is not int
             or not isinstance(meta["hour"], str) or not CLOCK.fullmatch(meta["hour"])):
         raise GateError("Invalid chapter clock/day")
-    if meta["book"] != previous["book"] or meta["day"] not in (previous["day"], previous["day"] + 1):
+    if meta["book"] != previous["book"] or meta["day"] < previous["day"]:
         raise GateError("Book/day transition not approved")
+    if meta["day"] > previous["day"] + 1:
+        # r14.1: a part may LIVE several days, but must show EVERY day and
+        # monotonically advance time. No date jump based on metadata alone.
+        from .day_arc_audit import inspect_day_arc
+        if not isinstance(prose, str) or not prose.strip():
+            raise GateError("Multi-day part requires original scene prose for verification")
+        arc = inspect_day_arc(prose)
+        days = list(range(previous["day"], meta["day"] + 1))
+        if (not arc["chronological"] or arc["days_touched"] != days
+                or not arc["first"] or not arc["last"]
+                or arc["first"]["day"] != previous["day"]
+                or arc["last"]["day"] != meta["day"]
+                or arc["last"]["hour"] != meta["hour"]):
+            raise GateError("Multi-day part must narrate every date in order and end at metadata clock")
     if meta["day"] == previous["day"] and meta["hour"] < previous["hour"]:
         raise GateError("Cannot move same-day clock backwards")
     if meta["part"] not in PARTS or previous["part"] not in PARTS:
@@ -491,7 +513,7 @@ def close(root: Path) -> dict:
         raise GateError("Current HEAD already at selected episode but closure receipt missing")
     if draft.metadata.get("canon_status") != "RASCUNHO":
         raise GateError("Only a saved draft may be closed")
-    _chronology(head, draft.metadata)
+    _chronology(head, draft.metadata, prose=draft.prose)
     events, kn = review_deltas(root, episode_id, draft)
     closure = _closure(root, episode_id, head, choice, draft, events, kn)
     new_head = {
@@ -615,7 +637,11 @@ def restore(root: Path) -> dict:
             current = base
             n = 0
             for clos, new_head in _journal(root):
-                _chronology(current, clos["metadata"])
+                span = clos["metadata"]["day"] - current["day"]
+                literal_prose = (load(root / "episodes" / clos["episode_id"]
+                                      / "draft" / "episode_draft.json")["prose"]
+                                 if span > 1 else None)
+                _chronology(current, clos["metadata"], prose=literal_prose)
                 conn.execute("BEGIN IMMEDIATE")
                 apply_closure_db(conn, clos, new_head, load_corrections(root, load))
                 conn.commit()
