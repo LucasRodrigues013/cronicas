@@ -206,6 +206,11 @@ def write_context(root: Path, head: dict) -> dict:
         backstage_excluded = conn.execute(
             "SELECT COUNT(*) FROM npc_knowledge WHERE visibility='BASTIDORES'"
         ).fetchone()[0]
+    # Offstage and editorial material may inform an omniscient narrator, but
+    # is NOT a witnessed, reader-seen or character-known event by default.
+    # Keep a separate, explicitly restricted channel rather than discard it.
+    offstage = [item for item in events if item["visibility"] == "BASTIDORES"]
+    narrated = [item for item in events if item["visibility"] != "BASTIDORES"]
     characters = {}
     for item in knowledge:
         characters.setdefault(item["person"], []).append({
@@ -216,7 +221,8 @@ def write_context(root: Path, head: dict) -> dict:
     payload = {
         "schema": "worldroot-context-index-v1", "derived_only": True,
         "head": head, "head_sha256": sha(canonical(head)),
-        "recent_narrated_events": events, "explicit_character_knowledge": characters,
+        "recent_narrated_events": narrated, "explicit_character_knowledge": characters,
+        "backstage_events_not_character_knowledge": offstage,
         "temporal_rule": "Unknown clock is NOT permission to learn the event earlier within the same day",
         "canonical_scope": "D528 baseline + GitHub journal closures; historical Drive records require separate read",
         "editorial_only_knowledge_excluded": backstage_excluded,
