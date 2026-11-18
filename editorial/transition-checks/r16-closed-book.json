@@ -1,0 +1,16 @@
+{
+  "schema": "worldroot-semantic-repair-request-v1",
+  "authorized_by": "AUTHOR_REQUEST_BEFORE_LIVRO_VI",
+  "date": "2026-11-18",
+  "scope": "REGENERATE_CANON_CONTEXT_ONLY",
+  "head_guard": {
+    "episode_id": "LV-C16-PV-D537-AUTHOR-SOURCE",
+    "sequence": 9,
+    "source_sha256": "34d2fa4ce224182f3bc407b17d6ad89cc7e6a239e58fa97cecd72d46c874a01b",
+    "book_closed": true,
+    "book": "Livro V"
+  },
+  "baseline_path": "editorial/transitions/lv-to-lvi-semantic-baseline.json",
+  "retain_immutable_canon": true,
+  "allow_start_book_vi": false
+}
