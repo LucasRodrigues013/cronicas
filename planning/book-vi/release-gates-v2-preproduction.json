@@ -1,0 +1,101 @@
+{
+  "schema": "worldroot-bookvi-release-gates-v2",
+  "updated": "2026-11-18",
+  "phase": "PRE_PRODUCTION_NO_STORY_APPROVED",
+  "book_title": "AS COROAS PARTIDAS",
+  "saga_title": "A ERA DAS NOVE COROAS",
+  "next_book_title": "O IMPÉRIO ALÉM DO HORIZONTE",
+  "plan": "planning/book-vi/production-bible-v2-preproduction-restored.md",
+  "supersedes": "planning/book-vi/release-gates-v1.json",
+  "canonic_head": {
+    "book": "Livro V",
+    "episode_id": "LV-C16-PV-D537-AUTHOR-SOURCE",
+    "closed": true,
+    "day": 537,
+    "hour": "23h46",
+    "sequence": 9
+  },
+  "opening_approval_status": "AUTHOR_CLARIFIED_PLANNING_ONLY_PREMATURE_APPROVAL_REVOKED",
+  "opening_authorized": false,
+  "unsolicited_episode": {
+    "episode_id": "LVI-C01-PI-D538-AUTHOR-SOURCE",
+    "status": "REJEITADO_PELO_AUTOR_NAO_CANONICO",
+    "sha256": "bde62ddbd8ac0977925a7ed74e9abb09c461d53cb08f36a1e245ab20a212a3da"
+  },
+  "episodes_approved": 0,
+  "chapters_approved": 0,
+  "chapters_planned_range": [
+    25,
+    35
+  ],
+  "parts_planned_range": [
+    125,
+    175
+  ],
+  "movements": 6,
+  "guards": [
+    {
+      "id": "G01",
+      "state": "MET",
+      "criterion": "Livro V canonically closed"
+    },
+    {
+      "id": "G02",
+      "state": "BLOCKED_BY_AUTHOR",
+      "criterion": "New explicit narrative approval after planning; prior authorization revoked"
+    },
+    {
+      "id": "G03",
+      "state": "MET_PRE_CANON",
+      "criterion": "Original title and six-movement plot from saved Saga and production bible"
+    },
+    {
+      "id": "G04",
+      "state": "MET_PRE_CANON",
+      "criterion": "Tharvek/Elyrien approved designs, own mandates and non-instant travel"
+    },
+    {
+      "id": "G05",
+      "state": "MET_PRE_CANON",
+      "criterion": "Ithran/Serakh/Velkar progressive antagonists, fail-able operation"
+    },
+    {
+      "id": "G06",
+      "state": "PENDING_SCENE",
+      "criterion": "Emissary origin, mapped distances and travel clocks must be narrated or sourced before encounter"
+    },
+    {
+      "id": "G07",
+      "state": "MET_POLICY",
+      "criterion": "Miren/Astra own AERÚN; six Sombras and Varo act competently with genuine data"
+    },
+    {
+      "id": "G08",
+      "state": "MET_POLICY",
+      "criterion": "Lucas GENESE/CREATION full; romance and city ARGOS research evolving"
+    },
+    {
+      "id": "G09",
+      "state": "MET_POLICY",
+      "criterion": "One day of scenes per Part by default; multiple parts may depict same day"
+    },
+    {
+      "id": "G10",
+      "state": "MET_PROTECTED",
+      "criterion": "Rejected generated draft must never be treated as source or closed into HEAD"
+    },
+    {
+      "id": "G11",
+      "state": "PRE_CANON",
+      "criterion": "Talis to be found in Book VI by clues, not in opener or assumed located"
+    },
+    {
+      "id": "G12",
+      "state": "NO_SYNC",
+      "criterion": "No Google Drive or external Base Viva write by this review"
+    }
+  ],
+  "author_safe_next_action": "Finish review and await new command containing AUTORIZO INICIAR LIVRO VI before first episode; no implicit continuation from rejected draft.",
+  "canon_changed": false,
+  "drive_changed": false
+}
