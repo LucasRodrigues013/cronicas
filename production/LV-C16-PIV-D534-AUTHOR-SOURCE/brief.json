@@ -1,0 +1,48 @@
+{
+  "schema": "worldroot-production-brief-v1",
+  "episode_id": "LV-C16-PIV-D534-AUTHOR-SOURCE",
+  "status": "EM_PRODUCAO_NAO_CANONICO",
+  "book": "Livro V",
+  "chapter": 16,
+  "part": "IV",
+  "anchor": {
+    "closed_episode": "LV-C16-PIII-D534-AUTHOR-SOURCE",
+    "day": 534,
+    "hour": "18h11",
+    "location": "Campo Aurora, terraço da torre",
+    "user_choice": "choices/LV-C16-PIII-D534-AUTHOR-SOURCE/option-5.json"
+  },
+  "source_of_truth": {
+    "main_engine_commit": "c525bc68d7ba5942d9132c864dba076591e793a3",
+    "head": "story-archive/canon/HEAD.json",
+    "context": "story-archive/canon/CONTEXT.json",
+    "narrative": "story-archive/episodes/LV-C16-PIII-D534-AUTHOR-SOURCE/draft/narrativa_integral.md"
+  },
+  "author_revision_2026_11_18": {
+    "instruction": "Refazer Parte IV, corrigir falhas, impedir novos episódios sem readback; ARGOS não é um jato terrestre. Explorar Coração de Voo e Matriz de Compensação criativamente para alcançar desempenho surpreendente, sem discurso antecipado de Lucas: demonstrar e deixar todos se surpreenderem.",
+    "noncanon_discarded": "Tentativa prévia da Parte IV no chat não arquivada; seus eventos, voo 005 e 1034 km/h não são cânone."
+  },
+  "continuity_constraints": [
+    "ARGOS aeronave única, voo 004 último confirmado: ~32 km, velocidade máxima observada 116 km/h e altitude 430 m no circuito, não limites totais.",
+    "Naira autoridade operacional; Rumo segundo piloto treinando; pessoas e AERÚN autônomas.",
+    "Miren precisa ser convidada, não registrada como passageira automaticamente.",
+    "Rota ao Planalto das Pedras Cantantes, Ruínas dos Arquitetos, Seral e Calderva não equivale a conhecimento de distâncias/licenças.",
+    "Saira Venn e Jardim Errante: encontro histórico D208, localização atual desconhecida.",
+    "GÊNESE plena, sem nerf; manter consequências e autonomia.",
+    "Não converter ARGOS em Harrier/turbojato; velocidade nova só após demonstração real mensurada."
+  ],
+  "production_requirements": {
+    "prose_target": 10000,
+    "ideal_min": 9400,
+    "ideal_max": 11000,
+    "archive_floor": 8800,
+    "rich_ux": true,
+    "five_choices_only_after_complete_archive": true,
+    "github_reader_gate": "worldroot/delivery_gate.py",
+    "archive_to": "story-archive/inbox/",
+    "metadata_canon_status": "RASCUNHO"
+  },
+  "not_a_story": true,
+  "not_a_canon_update": true,
+  "drive_changed": false
+}
