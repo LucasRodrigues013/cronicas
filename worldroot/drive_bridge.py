@@ -181,19 +181,35 @@ class GoogleDocsHeadPublisher:
         if not current or current['release']!=expected_local_release:
             raise GateError('Local HEAD release has changed; refuse stale write')
         store.outbox_update(delivery_id,'GOOGLE_DOCS_HEAD',status='PENDING')
-        doc=self.docs.documents().get(documentId=self.document_id,fields='documentId,revisionId').execute()
-        if doc.get('revisionId')!=expected_revision:
-            raise ConflictError('Remote Google Docs revision changed: manual reconciliation required')
-        marker=f'WORLDROOT VERIFIED DELIVERY {delivery_id} SHA256 {r["sha256"]}\n'
-        # The marker contains no secret story content; text stays in private blob.
-        result=self.docs.documents().batchUpdate(documentId=self.document_id,body={
-            'writeControl':{'requiredRevisionId':expected_revision},
-            'requests':[{'insertText':{'location':{'index':1},'text':marker}}]}).execute()
-        after=self.docs.documents().get(documentId=self.document_id,fields='documentId,revisionId,body').execute()
-        body=after.get('body',{})
-        contents=''.join(part.get('textRun',{}).get('content','') for e in body.get('content',[])
-                         for part in e.get('paragraph',{}).get('elements',[]))
-        if (after.get('revisionId')==expected_revision or marker not in contents
+        meta=r['metadata']
+        # Last writer wins is forbidden: the new authoritative HEAD pointer is
+        # always the FIRST paragraph of the document, with explicit story state.
+        marker=(f"WORLDROOT HEAD CANÔNICO | {meta['book']} | "
+                f"Capítulo {meta['chapter']} | Parte {meta['part']} | "
+                f"Dia {meta['day']} | {meta['hour']} | {meta['location']} | "
+                f"ID {delivery_id} | SHA256 {r['sha256']}\n")
+        def text_of(document):
+            return ''.join(part.get('textRun',{}).get('content','') for entry in
+                document.get('body',{}).get('content',[]) for part in
+                entry.get('paragraph',{}).get('elements',[]))
+        doc=self.docs.documents().get(documentId=self.document_id,
+                fields='documentId,revisionId,body').execute()
+        if doc.get('documentId')!=self.document_id:
+            raise GateError('Wrong HEAD document ID')
+        if text_of(doc).lstrip('\ufeff').startswith(marker):
+            # Recovery after remote write succeeded but the client lost the ACK.
+            # Do not insert a duplicate marker. Require a changed revision.
+            after=doc
+        else:
+            if doc.get('revisionId')!=expected_revision:
+                raise ConflictError('Remote Google Docs revision changed: manual reconciliation required')
+            self.docs.documents().batchUpdate(documentId=self.document_id,body={
+                'writeControl':{'requiredRevisionId':expected_revision},
+                'requests':[{'insertText':{'location':{'index':1},'text':marker}}]}).execute()
+            after=self.docs.documents().get(documentId=self.document_id,
+                     fields='documentId,revisionId,body').execute()
+        if (after.get('revisionId')==expected_revision
+                or not text_of(after).lstrip('\ufeff').startswith(marker)
                 or after.get('documentId')!=self.document_id):
             raise GateError('HEAD document readback or revision proof failed')
         proof={'provider':'google_docs','verification':'required_revision_id_readback',
