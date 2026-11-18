@@ -85,12 +85,13 @@ class DraftInboxTest(unittest.TestCase):
                 archive_inbox(self.root, self.inbox)
         self.assertFalse((self.root / "episodes" / ID).exists())
 
-    def test_actual_longform_gate_refuses_short_new_draft(self):
+    def test_shorter_complete_draft_is_not_forced_to_pad(self):
         with patch("worldroot.draft_inbox.inspect_longform",
                    side_effect=real_inspect_longform):
-            with self.assertRaises(GateError):
-                archive_inbox(self.root, self.inbox)
-        self.assertFalse((self.root / "episodes" / ID).exists())
+            result = archive_inbox(self.root, self.inbox)
+        self.assertEqual(result["status"], "RASCUNHO_GITHUB_VERIFICADO")
+        self.assertEqual(result["longform_depth"]["status"], "EXPANDIR")
+        self.assertFalse(result["canon_changed"])
 
     def test_missing_review_fails_before_writing(self):
         self.data["reviewed_events"] = []
