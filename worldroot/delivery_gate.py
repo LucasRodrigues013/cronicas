@@ -33,6 +33,8 @@ def audit_release(root: Path, episode_id: str) -> dict:
     lived_advisory = None
 
     try:
+        if (root / "editorial" / "rejections" / (episode_id + ".json")).is_file():
+            raise GateError("Author rejected the episode; not approved for reader or canon")
         if not head_path.is_file():
             raise GateError("No operational canonical HEAD")
         head = load(head_path)

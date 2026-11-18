@@ -1,7 +1,7 @@
 {
   "schema": "worldroot-editorial-policy-v1",
   "project": "CRONICAS_DE_UM_NOVO_MUNDO",
-  "version": 8,
+  "version": 9,
   "reviewed_at": "2026-11-18",
   "approved_scope": "USER_REQUESTED_PERMANENT_PREFERENCES_NOT_CANON_EVENTS",
   "source_of_truth": "main/worldroot/editorial_policy.json",
@@ -114,6 +114,13 @@
       "at": "2026-11-18",
       "transcript_line": null,
       "quote": "Quero que grave aquilo que gosto, Lucas bem expressivo, creation e gênese sem limites, miren e Lucas em uma relacionamento que se desenvolve. Aerun ganhando e populando pesquisas e o ritmo envolvente é muita conversa e pegada legal. Além disso. Nesse novo livro além do que temos planejado, precisamos fazer tbm que a irmã de miren no meio de tudo isso seja encontrada, que ligue aos mistérios do mundo. Que argos mesmo sendo rápido teremos mt uso dele. Que três arcos realmente evolua e não fique nessa trava trava. Vamos começar um livro isekai fenomenal agora"
+    },
+    {
+      "id": "S16",
+      "kind": "AUTHOR_CORRECTION",
+      "at": "2026-11-18",
+      "transcript_line": null,
+      "quote": "Não, desconsiderar isto, não pedi o primeiro episódio, estávamos revisando ainda. Já temos o nome do livro conforme combinado anteriormente, revise isso tudo. Vamos revisitar e colocar igual planejamentos. quais são os planos do livro 6?, estamos com tudo planejado pra quantos capítulos e episódios já ? Precisamos começar com antagonistas, o anão e a elfa indo a três arcos, conectando o mundo, podemos focar em falar disso e ir mostrando Lucas e os demais vivendo com as rotinas, até chegarmos neles e isso começar a orientar história com Lucas novamente, oque acha ? Precisamos manter aquele grande planejamento que tivemos e que dure, além disso, qual prompt pra iniciarmos ? Vamos tentar narrar um dia por vez, não vários, um por vez, e termos agora verdadeiramente uma aventura épica de alta fantasia."
     }
   ],
   "rules": [
@@ -784,9 +791,10 @@
         "MISTERIO"
       ],
       "evidence": [
-        "S15"
+        "S15",
+        "S16"
       ],
-      "directive": "No Livro VI, a irmã desaparecida de Miren, Talis, DEVE ser encontrada efetivamente no curso da narrativa com arco planejado, revelação merecida e laço material aos mistérios do mundo já em andamento (pesquisas/vestígios/rotas); sua posição, destino, conhecimento, motivações e mecanismo de desaparecimento são DESCONHECIDOS na virada D537. Narrar investigação, pistas falíveis e progressão, nunca declarar retroativamente que personagem já sabia localização ou resolver em exposição súbita. O reencontro tem efeitos profundos e continuados sobre Miren, Lucas, pesquisa e o mundo.",
+      "directive": "No Livro VI, a irmã desaparecida de Miren, Talis, DEVE ser encontrada efetivamente no curso da narrativa com arco planejado, revelação merecida e laço material aos mistérios do mundo já em andamento (pesquisas/vestígios/rotas); sua posição, destino, conhecimento, motivações e mecanismo de desaparecimento são DESCONHECIDOS na virada D537. Narrar investigação, pistas falíveis e progressão, nunca declarar retroativamente que personagem já sabia localização ou resolver em exposição súbita. O reencontro tem efeitos profundos e continuados sobre Miren, Lucas, pesquisa e o mundo. Prioridade de abertura: restaurar a progressão dos emissários e do conflito das coroas, não começar pela investigação de Talis ou pelo episódio rejeitado.",
       "active": true
     },
     {
@@ -835,9 +843,114 @@
         "RITMO"
       ],
       "evidence": [
-        "S15"
+        "S15",
+        "S16"
       ],
-      "directive": "Priorizar experiência literária envolvente com cenas demoradas quando interessantes, diálogos vivos, surpresa, piadas ácidas, amizade, romance, aventura, exploração, perigos e grandiosidade criada pela própria história. Evitar capítulos-reportagem, excesso de intervalos e lentidão artificial, recapitulizações, limitação burocrática e final moralizante. Incluir escolhas significativas com quarta ESPECIAL e quinta AÇÃO LIVRE. Livro VI aproveita planos anteriores e não reduz todas as tramas à irmã de Miren.",
+      "directive": "Priorizar experiência literária envolvente com cenas demoradas quando interessantes, diálogos vivos, surpresa, piadas ácidas, amizade, romance, aventura, exploração, perigos e grandiosidade criada pela própria história. Evitar capítulos-reportagem, excesso de intervalos e lentidão artificial, recapitulizações, limitação burocrática e final moralizante. Incluir escolhas significativas com quarta ESPECIAL e quinta AÇÃO LIVRE. Livro VI aproveita planos anteriores e não reduz todas as tramas à irmã de Miren. Prioridade de abertura: restaurar a progressão dos emissários e do conflito das coroas, não começar pela investigação de Talis ou pelo episódio rejeitado.",
+      "active": true
+    },
+    {
+      "id": "P43",
+      "title": "Livro VI é AS COROAS PARTIDAS, parte da saga A Era das Nove Coroas",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "CANONE",
+        "PLANEJAMENTO",
+        "LIVRO_VI"
+      ],
+      "evidence": [
+        "S16"
+      ],
+      "directive": "Não usar o título inventado 'A Sétima Voz do Mundo'. Fonte pré-canônica aprovada `planning/book-vi/production-bible-v1.md` e Google Doc Saga A Era das Nove Coroas. Livro VI chama-se AS COROAS PARTIDAS, saga maior A ERA DAS NOVE COROAS. Livro VII previsto O IMPÉRIO ALÉM DO HORIZONTE. Preservar elenco, hierarquias, gerações e mundos; planejamento não é fato narrado.",
+      "active": true
+    },
+    {
+      "id": "P44",
+      "title": "Pré-produção em andamento; não iniciar episódio por inferência",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "CANONE",
+        "AUTORIA",
+        "LIVRO_VI"
+      ],
+      "evidence": [
+        "S16"
+      ],
+      "directive": "O autor RETRATOU explicitamente a suposta autorização r17 de escrever Livro VI Parte I. O artefato `LVI-C01-PI-D538-AUTHOR-SOURCE` é RASCUNHO REJEITADO, audit-only, jamais usar como cânone ou ponto de partida. A autorização anterior `author-approvals/LVI-OPEN.json` está REVOGADA. Nenhum novo episódio, início ou escolha deve ser presumido após uma revisão; exigir nova mensagem explícita de autorização de NARRAÇÃO após concluir pré-produção.",
+      "active": true
+    },
+    {
+      "id": "P45",
+      "title": "Livro VI: um único dia vivido por parte; dia pode continuar em outras partes",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "TEMPO",
+        "RITMO",
+        "LIVRO_VI"
+      ],
+      "evidence": [
+        "S16"
+      ],
+      "directive": "Novo Livro VI deve narrar UM DIA calendário de cada vez, com horários humanos, cenas e consequências; uma data pode ocupar VÁRIAS partes ou capítulos. Não condensar D538-D541 numa única parte para alcançar evento futuro. O motor rejeita, por padrão, episódios Livro VI com mais de um dia de cena e saltos superiores a um dia entre checkpoints; alterar somente se o autor explicitamente mudar esta regra posteriormente. Sem preencher horas com burocracia ou narração de agenda.",
+      "active": true
+    },
+    {
+      "id": "P46",
+      "title": "Abertura planejada é história paralela de anão, elfa e antagonistas",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "LIVRO_VI",
+        "ANTAGONISTAS",
+        "PERSONAGENS",
+        "RITMO"
+      ],
+      "evidence": [
+        "S16"
+      ],
+      "directive": "A primeira abertura APÓS futura autorização acompanha Tharvek Ormvall e Elyrien Vaelthara em origens/caminhos anões e élficos até Três Arcos, perigo crescente de Ithran por ordem de Serakh e sombra de Velkar. Intercalar cenas de Lucas expressivo, Miren e vida urbana, AERÚN, ARGOS, Kael/Lysa, Varo/Sombras em suas rotinas e decisões. Emissários são heróis, NÃO antagonistas. Fazer a aproximação gradual com viagens e informação plausíveis; centro narrativo volta a Lucas à medida que as frentes se conectam.",
+      "active": true
+    },
+    {
+      "id": "P47",
+      "title": "Livro continental longo: 25–35 capítulos, cinco partes como referência",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "LIVRO_VI",
+        "ESTRUTURA",
+        "RITMO"
+      ],
+      "evidence": [
+        "S16"
+      ],
+      "directive": "A direção editorial discutida estima cerca de 25 a 35 capítulos, cinco partes por capítulo (~125 a 175 partes) como FAIXA PREVISTA, não episódios já narrados nem limite impositivo. Organizar em seis movimentos: (I) Porta que o Império quis fechar, (II) Coroa não protege os feridos, (III) Mesa sem rei, (IV) Pedra, Folhas e Sete Estradas, (V) Generais Caminham, (VI) Coroas Partidas. Não precipitar escalada nem monopolizar capítulos com preparação e cúpulas; consequências moldam a duração.",
+      "active": true
+    },
+    {
+      "id": "P48",
+      "title": "Grandes mistérios coexistem com saga continental sem serem fundidos",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "TALIS",
+        "ARQUITETOS",
+        "AERUN",
+        "ANTAGONISTAS"
+      ],
+      "evidence": [
+        "S16"
+      ],
+      "directive": "A busca por Talis tem relevância e deve chegar ao reencontro no Livro VI segundo pedido posterior, mas não substituir abertura do anão e da elfa nem provar conexão com Velkar/Arquitetos antes de evidência. Manter AERÚN, sétima nota, HZ-1, dragões, Arconte/Tecelã, Velkar/Aethron identidade não provada, Talis e origem de Lucas como fios separados até causalidade narrada. Conectar com delicadeza, sem vilão responsável por tudo.",
       "active": true
     }
   ]

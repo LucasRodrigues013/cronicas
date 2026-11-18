@@ -170,6 +170,8 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
         raise GateError("Only top-level private inbox/<id>.json is accepted")
     episode_id = inbox.stem
     check_id(episode_id)
+    if (root / "editorial" / "rejections" / (episode_id + ".json")).is_file():
+        raise GateError("Author rejected this unsolicited episode; read-only audit, never archive/promote")
     if not inbox.is_file() or inbox.is_symlink() or inbox.stat().st_size > INBOX_LIMIT:
         raise GateError("Unsafe or oversized inbox file")
     payload = load(inbox)

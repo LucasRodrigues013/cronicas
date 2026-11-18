@@ -10,7 +10,7 @@ from worldroot.ledger import GateError
 
 QUOTE = ("Quero que grave aquilo que gosto, Lucas bem expressivo, creation e gênese sem "
          "limites, miren e Lucas em uma relacionamento que se desenvolve. "
-         "Vamos começar um livro isekai fenomenal agora")
+         "Autorizo iniciar Livro VI")
 END = {"schema":"worldroot-git-canon-v1","book":"Livro V","book_closed":True,
        "chapter":16,"part":"V","episode_id":"LV-C16-PV-D537-AUTHOR-SOURCE",
        "sequence":9,"day":537,"hour":"23h46","source_sha256":"a"*64}
@@ -56,6 +56,22 @@ class BookOpeningTests(unittest.TestCase):
             with self.subTest(meta=meta):
                 with self.assertRaises(GateError):
                     require_book_open_approval(self.root,END,meta)
+    def test_prior_author_opening_revoked_in_preproduction(self):
+        self.approval["approved"] = False
+        self.approval["book_vi_opening_status"] = "AUTHOR_CLARIFIED_PLANNING_ONLY_PREMATURE_APPROVAL_REVOKED"
+        self.save()
+        with self.assertRaises(GateError):
+            require_book_open_approval(self.root, END, BEGIN)
+
+    def test_book_vi_one_day_per_part_no_day_skips(self):
+        with self.assertRaises(GateError):
+            _chronology(END, dict(BEGIN, day=539), book_open_approval_verified=True)
+        p = "## I — chegada\nDIA 538 · 07h00 · ponte\nCena.\n## II — depois\nDIA 539 · 08h00 · vila\nFim."
+        with self.assertRaises(GateError):
+            _chronology(END, dict(BEGIN, day=538), prose=p, book_open_approval_verified=True)
+        p = "## I — chegada\nDIA 538 · 07h00 · ponte\nCena.\n## II — conversa\nDIA 538 · 08h00 · vila\nFim."
+        _chronology(END, dict(BEGIN, day=538), prose=p, book_open_approval_verified=True)
+
     def test_opening_cannot_be_forged_from_unquoted_story(self):
         self.approval["author_quote"]="I would love to start someday."
         self.save()
