@@ -1,0 +1,51 @@
+{
+  "schema": "worldroot-author-feedback-v1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "feedback_id": "WR-LONGFORM-20261118-C16-PIII",
+  "at": "2026-11-18",
+  "kind": "AUTHOR_DIRECTIVE",
+  "author_source": "CURRENT_USER_MESSAGE",
+  "quote": "CAPÍTULO 16 · PARTE III DE V - Esse capitulo ficou muito pequeno, e percebi que parte do motor do chat que trabalha na criação da historia fica precisa na recuperação talvez, oque podemos fazer para termos as historias chegando as 10mil palavras e mantendo o ritmo que queremos?",
+  "reviewed_episode": "episodes/LV-C16-PIII-D534-AUTHOR-SOURCE/draft/narrativa_integral.md",
+  "story_sha256": "1dc02d9187fe5eea13430219536c9c27725cd421b8f98aba016c0626a1f8d4de",
+  "audit": {
+    "archive_total_words_approx": 7496,
+    "raw_prose_field_words_approx": 6602,
+    "main_scenes": 9,
+    "small_scenes": [
+      {
+        "id": "VI",
+        "words_approx": 314
+      },
+      {
+        "id": "IV",
+        "words_approx": 483
+      },
+      {
+        "id": "VII",
+        "words_approx": 506
+      }
+    ],
+    "reference_episode": "LV-C15-PII-D529-AUTHOR-SOURCE",
+    "reference_archive_words_approx": 10046,
+    "reference_prose_field_words_approx": 9417
+  },
+  "rules": [
+    "P26",
+    "P27"
+  ],
+  "constraints": [
+    "no padding",
+    "no canon retroactivity",
+    "no day/hour quota",
+    "do not assume memory failure as proven",
+    "no false autosave claim"
+  ],
+  "implementation": "https://github.com/LucasRodrigues013/cronicas/pull/24",
+  "main_commit": "a08eaa8edcd935df4b6a8922d5b3202d9d33ddb4",
+  "scope": "FUTURE_NEW_DRAFTS_ONLY",
+  "canon_changed": false,
+  "drive_synced": false,
+  "part_iii_text_rewritten": false,
+  "status": "IMPLEMENTED_WITH_SYNTHETIC_TESTS"
+}
