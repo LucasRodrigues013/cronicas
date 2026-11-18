@@ -82,6 +82,14 @@ jobs:
               receipt=archive_inbox(root,pending[0])
               print("Immutable draft archived and verified. Events:",receipt["events"],
                     "knowledge:",receipt["knowledge"],"Drive changed:",receipt["drive_changed"])
+              # The literary assessment is ADVISORY, not a bureaucratic block.
+              focus=receipt.get("story_focus_advisory",{})
+              print("Narrative depth advisory:",{
+                  "scenes":focus.get("scenes"),
+                  "median_scene_words_approx":focus.get("median_scene_words_approx"),
+                  "lucas_dialogue_scene_share":focus.get("lucas_dialogue_scene_share"),
+                  "notices":focus.get("advisories",[]),
+              })
           PY
       - name: Atomically commit all eight private archive sidecars
         shell: bash
