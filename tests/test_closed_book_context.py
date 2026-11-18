@@ -56,6 +56,8 @@ class ContextSemanticSafetyTests(unittest.TestCase):
         self.assertNotIn("remains OPEN", notes)
         self.assertEqual(result["head"]["book_closed"], True)
         self.assertEqual(result["editorial_only_knowledge_excluded"], 1)
+        self.assertEqual(len(result["backstage_events_not_character_knowledge"]), 1)
+        self.assertEqual(result["recent_narrated_events"], [])
         known = result["explicit_character_knowledge"]["Lucas"]
         self.assertEqual(len(known), 1)
         self.assertEqual(known[0]["visibility"], "PRIVADO_PERSONAGEM")
