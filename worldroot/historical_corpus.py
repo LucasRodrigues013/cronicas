@@ -202,6 +202,33 @@ def import_corpus(db_path: Path, registry_path: Path, source_dir: Path,
             or len({x.get("file_id") for x in sources}) != 6):
         raise HistoryError("Expected exactly six unique historical Drive originals")
     db_path.parent.mkdir(parents=True, exist_ok=True)
+    # Repeating identical verified imports must NOT rewrite SQLite byte streams.
+    if db_path.is_file() and not db_path.is_symlink():
+        unchanged = True
+        with sqlite3.connect(f"file:{db_path}?mode=ro", uri=True) as current:
+            if current.execute("PRAGMA integrity_check").fetchone()[0] != "ok":
+                raise HistoryError("Existing SQLite has failed integrity_check")
+            for source in sources:
+                filename = source["filename"]
+                original = source_dir / filename
+                if not original.is_file() or original.is_symlink():
+                    raise HistoryError("Missing or unsafe source in repeat: " + filename)
+                raw = original.read_bytes()
+                if (len(raw) != source["size_bytes"] or
+                        (source.get("sha256") and digest(raw) != source["sha256"])):
+                    raise HistoryError("Source changed without matching registry: " + filename)
+                row = current.execute(
+                    "SELECT source_sha256 FROM historical_sources WHERE source_id=? AND active=1",
+                    (source["file_id"],)
+                ).fetchone()
+                if row is None or row[0] != digest(raw):
+                    unchanged = False
+            if unchanged:
+                count = current.execute("SELECT COUNT(*) FROM historical_excerpts e JOIN historical_sources s ON e.source_id=s.source_id AND e.source_sha256=s.source_sha256 WHERE s.active=1").fetchone()[0]
+                return {"status": "HISTORY_FTS5_READY_NOT_CANON", "source_files": len(sources),
+                        "active_excerpts": count,
+                        "sources": [{"name": src["filename"], "result": "IDEMPOTENT", "sha256": src["sha256"]} for src in sources],
+                        "head_changed": False}
     with tempfile.TemporaryDirectory(dir=db_path.parent) as scratch:
         staging = Path(scratch) / "history.sqlite"
         if db_path.exists():
