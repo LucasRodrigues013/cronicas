@@ -21,6 +21,7 @@ from .semantic_gate import require_reviewed_event_evidence
 from .ledger import GateError, ConflictError
 from .editorial_guard import quick_preflight
 from .presentation_guard import presentation_preflight
+from .story_focus_audit import inspect_installment
 
 NARRATIVE_LIMIT = 500_000
 INBOX_LIMIT = 1_000_000
@@ -138,6 +139,18 @@ def _write_safe(path: Path, content: bytes):
     return True
 
 
+def _focus_receipt(prose: str) -> dict:
+    """Non-blocking, O(n) scene depth signal; never a quality verdict."""
+    review = inspect_installment(prose)
+    return {
+        "status": review["status"],
+        "scenes": review["scene_count"],
+        "median_scene_words_approx": review["median_scene_words_approx"],
+        "lucas_dialogue_scene_share": review["lucas_dialogue_scene_share"],
+        "advisories": review["advisories"],
+    }
+
+
 def archive_inbox(root: Path, inbox: Path) -> dict:
     root = root.resolve()
     if inbox.parent.resolve() != (root / "inbox").resolve():
@@ -173,6 +186,7 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
             "events": len(payload["reviewed_events"]), "knowledge": len(payload["reviewed_knowledge"]),
             "changed_file_count": 0, "canon_changed": False, "drive_changed": False,
             "editorial_preflight": quick_preflight(payload["prose"])["status"],
+            "story_focus_advisory": _focus_receipt(payload["prose"]),
         }
     _chronology(head, draft.metadata)
 
@@ -214,6 +228,7 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
         "events": len(event_records), "knowledge": len(knowledge_records),
         "changed_file_count": len(changed), "canon_changed": False, "drive_changed": False,
         "editorial_preflight": quick_preflight(payload["prose"])["status"],
+            "story_focus_advisory": _focus_receipt(payload["prose"]),
     }
 
 

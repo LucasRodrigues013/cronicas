@@ -16,11 +16,12 @@ class EditorialMemoryTests(unittest.TestCase):
 
     def test_policy_is_versioned_scoped_and_evidence_linked(self):
         v = validate_policy(self.policy)
-        self.assertEqual(v["version"], 2)
+        self.assertEqual(v["version"], 3)
         self.assertGreaterEqual(v["rule_count"], 15)
         self.assertEqual(self.policy["project"], "CRONICAS_DE_UM_NOVO_MUNDO")
         self.assertIn("P01", {r["id"] for r in self.policy["rules"]})
         self.assertIn("P19", {r["id"] for r in self.policy["rules"]})
+        self.assertIn("P23", {r["id"] for r in self.policy["rules"]})
 
     def test_duplicate_or_unverified_feedback_is_rejected(self):
         p = copy.deepcopy(self.policy)
@@ -42,7 +43,7 @@ class EditorialMemoryTests(unittest.TestCase):
         result = compact_brief(self.policy, scene_tags=("MIREN", "ROMANCE"), max_chars=1750)
         self.assertLessEqual(len(result["text"]), 1900)
         self.assertIn("P06", result["selected_rule_ids"])
-        self.assertEqual(result["policy_version"], 2)
+        self.assertEqual(result["policy_version"], 3)
         self.assertNotIn("SOURCE_COUNT", result["text"])
 
     def test_images_are_structurally_rejected(self):

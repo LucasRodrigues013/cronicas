@@ -1,14 +1,14 @@
 {
   "schema": "worldroot-editorial-policy-v1",
   "project": "CRONICAS_DE_UM_NOVO_MUNDO",
-  "version": 2,
+  "version": 3,
   "reviewed_at": "2026-11-18",
   "approved_scope": "USER_REQUESTED_PERMANENT_PREFERENCES_NOT_CANON_EVENTS",
   "source_of_truth": "main/worldroot/editorial_policy.json",
   "historical_feedback_reference": "story-archive/editorial/feedback/2026-11-18-baseline.json",
   "precedence": "latest_explicit_author_feedback > earlier conflicting style preference; no retcon of narrated events",
   "storage_contract": "chapter literal and event ledger live in story-archive; policy is editorial only; Drive is not auto-synchronized",
-  "validation": "one fast structural preflight per episode; small contextual briefing; semantic checks advisory; archival remains through existing user-choice GitHub pipeline",
+  "validation": "bounded scene-focused review with advisory story_focus_audit, editorial and presentation gates; no length quota; chronology per event/character",
   "sources": [
     {
       "id": "S01",
@@ -72,6 +72,13 @@
       "at": "2026-11-18",
       "transcript_line": null,
       "quote": "Notei que durante a narração da parte 3 o design apresentado no chat estava muito ruim e fraco, precisa melhorar para a proxima parte, nao seguiu os prints e diretrizes que colocamos, precisa colocar isso no github para assim que rodar o motor, seguir todos os pontos de design e classificações"
+    },
+    {
+      "id": "S10",
+      "kind": "AUTHOR_DIRECTIVE",
+      "at": "2026-11-18",
+      "transcript_line": null,
+      "quote": "façamos as correções necessarias avaliadas, e vamos melhorar e aprofundar a narração historia, com qualidade conforme falamos. pegue a avaliação, analise, audite, pesquise e formula e corrija pra continuarmos."
     }
   ],
   "rules": [
@@ -389,6 +396,78 @@
         "S09"
       ],
       "directive": "Preservar visual rico da Parte II: cabeçalho hierárquico, painel de calendário, cenas com hora/local, checkpoint independente e cinco escolhas visualmente organizadas com controles funcionais. Usar worldroot/presentation_policy.json UX01–UX12 e executar presentation_preflight em cada novo capítulo; não retornar silenciosamente a Markdown plano.",
+      "active": true
+    },
+    {
+      "id": "P20",
+      "title": "Densidade dramática conforme a Parte II",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "CENA",
+        "ESTILO",
+        "LUCAS"
+      ],
+      "evidence": [
+        "S09",
+        "S10"
+      ],
+      "directive": "Usar Livro V C15 Parte II como referência de imersão: cada cena importante desenvolve objetivo, oposição, reações, decisões e efeitos. Evitar montagens apressadas e relatórios; sem obrigação fixa de palavras ou número de cenas.",
+      "active": true
+    },
+    {
+      "id": "P21",
+      "title": "Lucas como âncora principal",
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "CENA",
+        "LUCAS",
+        "PERSONAGENS"
+      ],
+      "evidence": [
+        "S09",
+        "S10"
+      ],
+      "directive": "Priorizar o vivido por Lucas: sua percepção, criatividade, humor, vínculos, descobertas e escolhas. Interlúdios distantes são exceções expressivas, não prestação de contas de cada projeto paralelo.",
+      "active": true
+    },
+    {
+      "id": "P22",
+      "title": "Mistérios focalizados ao leitor",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "MISTERIO",
+        "CENA",
+        "MUNDO"
+      ],
+      "evidence": [
+        "S09",
+        "S10"
+      ],
+      "directive": "Oferecer pistas, perguntas e consequências que elevem a curiosidade do leitor, inclusive um ponto de vista externo quando eficaz, sem vazar ao protagonista informações que ele ainda não recebeu.",
+      "active": true
+    },
+    {
+      "id": "P23",
+      "title": "World Pulse discreto e causal",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "MUNDO",
+        "CAUSALIDADE",
+        "CENA"
+      ],
+      "evidence": [
+        "S09",
+        "S10"
+      ],
+      "directive": "Manter ações de NPCs, facções e cidades no registro causal sem interromper Lucas a cada atualização. Escolher poucos acontecimentos de alto impacto para encenar; o restante evolui em bastidor evidenciado quando necessário.",
       "active": true
     }
   ]
