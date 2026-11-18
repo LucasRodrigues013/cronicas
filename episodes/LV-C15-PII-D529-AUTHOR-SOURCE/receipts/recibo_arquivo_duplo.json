@@ -1,0 +1,39 @@
+{
+  "schema": "worldroot-verified-dual-archive-v1",
+  "status": "RASCUNHO_ARQUIVADO_DOCUMENTAL",
+  "episode_id": "LV-C15-PII-D529-AUTHOR-SOURCE",
+  "narrative_sha256": "5b2a269fa91ca1c3869d59a3b6e5fe3cccef3f226f3f7a4624597fe1dc29bea9",
+  "narrative_bytes": 72650,
+  "story_day": 529,
+  "story_hour": "20h42",
+  "canon_head_at_archive": {
+    "day": 528,
+    "hour": "23h06",
+    "state": "UNMODIFIED"
+  },
+  "drive_folder": "1D44UDjQPlY7WE8nSjhDwJoop43AWy_Ga",
+  "drive_files": {
+    "narrativa_integral.md": "1j4jq3-8nylea9ezX4vdVgOrj9d3AvrMg",
+    "opcoes.json": "19fTR8OWKU3CNJUVqKXjPtzgQhlcrKI_n",
+    "eventos_e_consequencias.json": "1RMCgYEXISnDzajWxxiPv-IfpNS51Ga-d",
+    "checkpoint_candidato.json": "1Da5gYb33mvYGQEQos5QCSopFwqPec7Z5",
+    "episode_draft.json": "1x_ZvKYR-8kwkyidfrHTYivt5JKrtPdcJ",
+    "manifesto_imutavel.json": "1RLeZih17c05De8rdGROnNqCs3l2zLHnv"
+  },
+  "github_repo": "LucasRodrigues013/cronicas",
+  "github_private_verified": true,
+  "github_branch": "story-archive",
+  "github_path": "episodes/LV-C15-PII-D529-AUTHOR-SOURCE/draft/",
+  "github_final_commit": "2c8a2af45b8ae8baab205ecf7c18fd5a92eb2e29",
+  "github_workflow_run_id": 44217274571,
+  "github_workflow_conclusion": "success",
+  "git_sha1_literal": "caaed9f3fcb7d8fd3d82eae2a26e3ca9d99482ae",
+  "verification": "User-file bytes + Drive fetched bytes + private GitHub fetched bytes, manifest integrity workflow success",
+  "unperformed": [
+    "Semantic event extraction/review for D529",
+    "HEAD/Base Viva/Atlas promotion",
+    "Automatic Google Drive WIF mirror",
+    "Closure after next author choice"
+  ],
+  "next_step": "After next author choice, review events and finalize D529 PII before generating D529 PIII"
+}
