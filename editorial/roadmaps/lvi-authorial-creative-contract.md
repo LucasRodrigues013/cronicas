@@ -1,3 +1,5 @@
+> **SUPERADO PELO PLANEJAMENTO RESTAURADO (18/11/2026).** Este arquivo contém preferências autorais VÁLIDAS (Lucas expressivo, GÊNESE, Miren, Talis, ARGOS, AERÚN, Três Arcos), mas sua frase sobre abertura IMEDIATA do Livro VI foi corrigida pelo autor: **NENHUMA NARRAÇÃO AUTORIZADA AGORA**; o primeiro episódio produzido sob r17 foi **REJEITADO**. Nome oficial: **LIVRO VI — AS COROAS PARTIDAS**, saga **A ERA DAS NOVE COROAS**. Priorizar `planning/book-vi/production-bible-v2-preproduction-restored.md` e `planning/book-vi/release-gates-v2-preproduction.json`. O anão Tharvek, a elfa Elyrien e antagonistas precedem a convergência com Lucas; um dia por parte, sem múltiplos dias em uma única entrega. A futura abertura precisa de NOVA autorização explícita. Preservar o restante abaixo como histórico de preferências, não como permissão ativa de início.
+
 # LIVRO VI — Compromisso autoral de abertura (não é evento narrado)
 
 **Status:** AUTORIZADO_PELO_AUTOR; *nenhuma cena do Livro VI está canonizada apenas por este arquivo*. Fonte: `author-approvals/LVI-OPEN.json` (citação literal, Dia atual 18/11/2026). Anterior: `canon/HEAD.json` — Livro V encerrado no Dia 537 23h46.
