@@ -83,9 +83,15 @@ def compact_brief(policy: dict, scene_tags=(), max_chars: int = 1750) -> dict:
         -len(tags.intersection(r["tags"])),
         r["id"],
     ))
-    lines = ["WORLDROOT | preferências autorais vigentes v" + str(policy["version"])]
-    selected = []
+    lines = [
+        "WORLDROOT | preferências autorais vigentes v" + str(policy["version"]),
+        "LONGFORM P26: meta ~10000 palavras de PROSA por parte; nunca contar interface ou inflar cenas.",
+        "CANONE P27: recuperar HEAD, ultimo draft literal, escolhas e memoria temporal por evidencia.",
+    ]
+    selected = ["P26", "P27"] if {"P26", "P27"}.issubset({r["id"] for r in active}) else []
     for rule in scored:
+        if rule["id"] in selected:
+            continue
         if not rule["core"] and not tags.intersection(rule["tags"]):
             continue
         sentence = rule["id"] + ": " + rule["directive"]
