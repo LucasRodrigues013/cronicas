@@ -157,6 +157,47 @@ def _save_snapshot(conn, output: Path):
             tmp.unlink()
 
 
+def write_context(root: Path, head: dict) -> dict:
+    """Generate human-readable memory index from the verified SQLite projection.
+
+    No inference, no new facts, no automatic spreading of private knowledge.
+    A character without an explicit knowledge row does NOT know the event.
+    """
+    db = root / "canon" / "state.sqlite"
+    with sqlite3.connect(f"file:{db}?mode=ro", uri=True) as conn:
+        conn.row_factory = sqlite3.Row
+        events = [dict(x) for x in conn.execute(
+            "SELECT event_id,episode_id,summary,event_type,visibility,day,hour,source_line,source_anchor "
+            "FROM events ORDER BY day DESC,COALESCE(hour,'') DESC,event_id DESC LIMIT 150"
+        ).fetchall()]
+        knowledge = [dict(x) for x in conn.execute(
+            "SELECT person,event_id,episode_id,description,acquired_day,acquired_time,visibility "
+            "FROM npc_knowledge ORDER BY acquired_day DESC,COALESCE(acquired_time,'') DESC,row_id DESC LIMIT 750"
+        ).fetchall()]
+    characters = {}
+    for item in knowledge:
+        characters.setdefault(item["person"], []).append({
+            "source_event": item["event_id"], "episode_id": item["episode_id"],
+            "description": item["description"], "acquired_day": item["acquired_day"],
+            "acquired_time": item["acquired_time"], "visibility": item["visibility"],
+        })
+    payload = {
+        "schema": "worldroot-context-index-v1", "derived_only": True,
+        "head": head, "head_sha256": sha(canonical(head)),
+        "recent_narrated_events": events, "explicit_character_knowledge": characters,
+        "temporal_rule": "Unknown clock is NOT permission to learn the event earlier within the same day",
+        "canonical_scope": "D528 baseline + GitHub journal closures; historical Drive records require separate read",
+        "prohibited_assumptions": [
+            "An event in BASTIDORES is not universal character knowledge",
+            "No automatic retcon or weakening of GENESE",
+            "Livro V remains open without the author's explicit closure",
+            "Drive HEAD has not been synchronized by this GitHub-only runner",
+        ],
+    }
+    (root / "canon" / "CONTEXT.json").write_bytes(canonical(payload))
+    return payload
+
+
 def bootstrap(root: Path) -> dict:
     """Prepare D528 historical baseline without asserting that D529 was closed."""
     canon_dir = root / "canon"
@@ -201,6 +242,7 @@ def bootstrap(root: Path) -> dict:
             conn.close()
     (canon_dir / "HEAD.json").write_bytes(canonical(head))
     verify_db(root, head)
+    write_context(root, head)
     return {"result": "BOOTSTRAP_D528_GITHUB_ONLY", "sequence": 0, "head": BOOTSTRAP_ID,
             "source_sha256": source_sha, "drive_changed": False}
 
@@ -437,6 +479,7 @@ def close(root: Path) -> dict:
     closure_path.write_bytes(canonical(closure))
     (root / "canon" / "HEAD.json").write_bytes(canonical(new_head))
     verify_db(root, new_head)
+    write_context(root, new_head)
     return {"result": "FECHADO_GITHUB", "episode_id": episode_id,
             "sequence": new_head["sequence"], "head_sha256": sha(canonical(new_head)),
             "events": len(events), "knowledge": len(kn), "drive_changed": False}
@@ -535,6 +578,7 @@ def restore(root: Path) -> dict:
         finally:
             conn.close()
     verify_db(root, target)
+    write_context(root, target)
     return {"result": "RESTORED_FROM_IMMUTABLE_JOURNAL", "sequence": target["sequence"],
             "episodes": n, "drive_changed": False}
 
