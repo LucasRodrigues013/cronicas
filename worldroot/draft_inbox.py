@@ -138,6 +138,25 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
     if head.get("schema") != "worldroot-git-canon-v1":
         raise GateError("GitHub operational HEAD not yet initialized")
     draft, files, review_files = _assemble(episode_id, payload)
+    existing_manifest = root / "episodes" / episode_id / "draft" / "manifesto_imutavel.json"
+    if existing_manifest.is_file():
+        for name, body in files.items():
+            existing = root / "episodes" / episode_id / "draft" / name
+            if not existing.is_file() or existing.is_symlink() or existing.read_bytes() != body:
+                raise ConflictError("Archived immutable draft differs from repeated inbox")
+        for name, body in review_files.items():
+            existing = root / "episodes" / episode_id / "review" / name
+            if not existing.is_file() or existing.is_symlink() or existing.read_bytes() != body:
+                raise ConflictError("Archived semantic review differs from repeated inbox")
+        verified, manifest = verify_episode(root, episode_id)
+        review_deltas(root, episode_id, verified)
+        return {
+            "status": "RASCUNHO_GITHUB_VERIFICADO", "episode_id": episode_id,
+            "source_sha256": manifest["original_readback_sha256"],
+            "narrative_bytes": len(files["narrativa_integral.md"]),
+            "events": len(payload["reviewed_events"]), "knowledge": len(payload["reviewed_knowledge"]),
+            "changed_file_count": 0, "canon_changed": False, "drive_changed": False,
+        }
     _chronology(head, draft.metadata)
 
     # Validate a disposable full package, including NPC temporal memory, BEFORE
