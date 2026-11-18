@@ -517,6 +517,9 @@ def restore(root: Path) -> dict:
         try:
             clean_db(conn)
             _write_head_in_db(conn, base)
+            # Release the write transaction before SQLite online-backup.
+            # Backing up an uncommitted writer on its own connection can hang.
+            conn.commit()
             current = base
             n = 0
             for clos, new_head in _journal(root):
