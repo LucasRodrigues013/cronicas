@@ -77,7 +77,7 @@ def inspect_installment(text: str) -> dict:
     else:
         if median(words) < 0.70 * reference["median_scene_words_approx"] and len(scenes) >= 5:
             alerts.append("Scenes are noticeably more compressed than Part II; review lived moments, dialogue and consequences")
-        if focus / len(scenes) < 0.70:
+        if len(scenes) >= 5 and focus / len(scenes) < 0.70:
             alerts.append("Many scenes lack Lucas dialogue; review protagonist focalization and off-screen interludes")
         if len(scenes) >= 5 and total < 0.60 * reference["scene_words_approx"]:
             alerts.append("Narrative scene volume substantially below the Part II reference; review depth, not a word quota")
