@@ -1,14 +1,14 @@
 {
   "schema": "worldroot-editorial-policy-v1",
   "project": "CRONICAS_DE_UM_NOVO_MUNDO",
-  "version": 3,
+  "version": 4,
   "reviewed_at": "2026-11-18",
   "approved_scope": "USER_REQUESTED_PERMANENT_PREFERENCES_NOT_CANON_EVENTS",
   "source_of_truth": "main/worldroot/editorial_policy.json",
   "historical_feedback_reference": "story-archive/editorial/feedback/2026-11-18-baseline.json",
   "precedence": "latest_explicit_author_feedback > earlier conflicting style preference; no retcon of narrated events",
   "storage_contract": "chapter literal and event ledger live in story-archive; policy is editorial only; Drive is not auto-synchronized",
-  "validation": "bounded scene-focused review with advisory story_focus_audit, editorial and presentation gates; no length quota; chronology per event/character",
+  "validation": "bounded editorial and presentation QA; advisory density and daily-arc timing inspection; preserve per-event chronology, author choice and immutable canon",
   "sources": [
     {
       "id": "S01",
@@ -79,6 +79,13 @@
       "at": "2026-11-18",
       "transcript_line": null,
       "quote": "façamos as correções necessarias avaliadas, e vamos melhorar e aprofundar a narração historia, com qualidade conforme falamos. pegue a avaliação, analise, audite, pesquise e formula e corrija pra continuarmos."
+    },
+    {
+      "id": "S11",
+      "kind": "AUTHOR_DIRECTIVE",
+      "at": "2026-11-18",
+      "transcript_line": null,
+      "quote": "veja se conseguimos cobrir um dia inteiro de historia, talvez isso esteja em falta pro tamanho do caso. Vamos iniciar e fechar os dias."
     }
   ],
   "rules": [
@@ -468,6 +475,43 @@
         "S10"
       ],
       "directive": "Manter ações de NPCs, facções e cidades no registro causal sem interromper Lucas a cada atualização. Escolher poucos acontecimentos de alto impacto para encenar; o restante evolui em bastidor evidenciado quando necessário.",
+      "active": true
+    },
+    {
+      "id": "P24",
+      "title": "Ciclo diário vivido com início, desenvolvimento e encerramento",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "TEMPO",
+        "CENA",
+        "LUCAS",
+        "ROMANCE"
+      ],
+      "evidence": [
+        "S11"
+      ],
+      "directive": "Tratar cada dia de história como arco vivido: despertar/transição, eventos e relações que importam, entardecer/noite e fechamento emocional ou causal quando chegado o momento. Um dia pode ocupar várias partes; não exigir narração de cada hora nem avançar o relógio sem escolha real.",
+      "active": true
+    },
+    {
+      "id": "P25",
+      "title": "Fechar dias sem transformar cenas em agenda",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "TEMPO",
+        "MISTERIO",
+        "CENA",
+        "CAUSALIDADE"
+      ],
+      "evidence": [
+        "S11",
+        "S10"
+      ],
+      "directive": "Ao terminar uma parte antes do anoitecer, preservar o dia como aberto para a próxima escolha e permitir jantar, afeto, descobertas, consequência e repouso antes do novo amanhecer. Um dia só se fecha por acontecimento narrado e decisão de continuidade, nunca por quota, horário automático ou checklist burocrático.",
       "active": true
     }
   ]
