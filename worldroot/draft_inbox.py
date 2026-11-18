@@ -23,6 +23,7 @@ from .editorial_guard import quick_preflight
 from .presentation_guard import presentation_preflight
 from .story_focus_audit import inspect_installment
 from .day_arc_audit import inspect_day_arc
+from .longform_depth import inspect_longform
 
 NARRATIVE_LIMIT = 500_000
 INBOX_LIMIT = 1_000_000
@@ -75,6 +76,13 @@ def _assemble(episode_id: str, payload: dict, *, enforce_presentation: bool = Tr
         visual = presentation_preflight(text)
         if visual["errors"]:
             raise GateError("Chat presentation contract failed: " + "; ".join(visual["errors"])[:350])
+
+    # New longform chapters require a genuine narrative minimum; we do not
+    # count HTML/DIL or five choice buttons as story. Never alter old drafts.
+    if enforce_presentation:
+        depth = inspect_longform(prose)
+        if depth["errors"]:
+            raise GateError("Narrative depth contract failed: " + "; ".join(depth["errors"])[:350])
 
     events = payload.get("reviewed_events")
     knowledge = payload.get("reviewed_knowledge")
@@ -189,6 +197,8 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
             "editorial_preflight": quick_preflight(payload["prose"])["status"],
             "story_focus_advisory": _focus_receipt(payload["prose"]),
             "day_arc_advisory": inspect_day_arc(payload["prose"]),
+            "longform_depth": inspect_longform(payload["prose"]),
+            "longform_depth": inspect_longform(payload["prose"]),
         }
     _chronology(head, draft.metadata)
 
