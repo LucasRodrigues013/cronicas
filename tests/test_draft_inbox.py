@@ -93,6 +93,14 @@ class DraftInboxTest(unittest.TestCase):
         self.assertEqual(result["longform_depth"]["status"], "EXPANDIR")
         self.assertFalse(result["canon_changed"])
 
+    def test_rejected_author_draft_never_archives_or_reuses(self):
+        archive_inbox(self.root, self.inbox)
+        marker = self.root / "editorial" / "rejections" / (ID + ".json")
+        marker.parent.mkdir(parents=True)
+        marker.write_text('{"status":"REJEITADO_PELO_AUTOR_NAO_CANONICO"}')
+        with self.assertRaises(GateError):
+            archive_inbox(self.root, self.inbox)
+
     def test_missing_review_fails_before_writing(self):
         self.data["reviewed_events"] = []
         self.write()
