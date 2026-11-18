@@ -62,6 +62,15 @@ class ReaderDeliveryGateTest(unittest.TestCase):
         self.assertEqual(receipt["prose_words_approx"], 10000)
         self.assertFalse(receipt["canon_changed"])
 
+    def test_rejected_original_never_passes_release_gate(self):
+        self.archive_synthetic()
+        marker = self.root / "editorial" / "rejections" / (ID + ".json")
+        marker.parent.mkdir(parents=True)
+        marker.write_text('{"status":"REJEITADO_PELO_AUTOR_NAO_CANONICO"}')
+        receipt = audit_release(self.root, ID)
+        self.assertFalse(receipt["release_allowed"])
+        self.assertTrue(any("rejected" in e for e in receipt["errors"]))
+
     def test_corrupted_story_cannot_be_released(self):
         self.archive_synthetic()
         file = self.root / "episodes" / ID / "draft" / "narrativa_integral.md"
