@@ -1,0 +1,61 @@
+{
+  "schema": "worldroot-author-feedback-v1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "feedback_id": "WR-C16-PIV-LIVED-NARRATIVE-20261118",
+  "at": "2026-11-18",
+  "kind": "AUTHOR_DIRECTION_NO_REWRITE",
+  "quote": "compare o novo episodio com oque temos, ele ficou grande, bem volumoso e com varios dias, mas pareceu um relatorio, do que um convivencia, nao precisamos refazer, mas precisamos ver isso pra nao gerar mais episodios assim, e mantermos o padrão.",
+  "episode": "LV-C16-PIV-D537-AUTHOR-SOURCE",
+  "episode_status": "RASCUNHO_GITHUB",
+  "original_source_sha256": "253b8b2ebe59e33717a8324c3397c263b89342cebaa9a386a57becfee6d19998",
+  "archive_clock": "D537 11h46",
+  "user_reported_clock": "D537 13h06",
+  "difference_status": "UNRECONCILED_DO_NOT_INFER_REWRITE",
+  "reference": "LV-C15-PII-D529-AUTHOR-SOURCE",
+  "audit": {
+    "reference_full_words_approx": 10046,
+    "reference_prose_field_words_approx": 9417,
+    "reference_scenes": 9,
+    "reference_days": [
+      529
+    ],
+    "reference_mean_scene_words_approx": 981,
+    "episode_full_words_approx": 13376,
+    "episode_prose_field_words_approx": 12677,
+    "episode_scenes": 15,
+    "episode_days": [
+      534,
+      535,
+      536,
+      537
+    ],
+    "episode_mean_scene_words_approx": 816,
+    "episode_scenes_under_650": 7,
+    "reference_scenes_under_650": 2,
+    "procedural_terms_per_1000_words_reference_approx": 1.3,
+    "procedural_terms_per_1000_words_episode_approx": 8.4
+  },
+  "preserve": [
+    "narrative literal, author choice, all historical events",
+    "Miren autonomy, Lucas humor and GENESE full",
+    "ARGOS 005 as narrated, without new retcon",
+    "human moments with Miren Brannik Rumo"
+  ],
+  "avoid": [
+    "scene-per-deliverable, meeting,test,permit,report",
+    "advancing days merely to reach announced flight window",
+    "number target superseding lived experiences",
+    "post-climax emotional compression"
+  ],
+  "rules": [
+    "P28",
+    "P29",
+    "P30"
+  ],
+  "main_merge_sha": "e294dfa8e61871dc323a9735b384c12f8b5fe8e3",
+  "review_document": "docs/c16-piv-lived-narrative-audit-r15.md",
+  "status": "PREVENTIVE_ENGINE_IMPROVEMENT_WITH_EDITORIAL_ADVISORY",
+  "canon_changed": false,
+  "episode_rewritten": false,
+  "drive_synced": false
+}
