@@ -102,7 +102,10 @@ jobs:
           set -euo pipefail
           git -C archive config user.name "github-actions[bot]"
           git -C archive config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git -C archive add -- history/LITERAL_INDEX.sqlite history/INDEX_SUMMARY.json history/results/
+          git -C archive add -- history/LITERAL_INDEX.sqlite history/INDEX_SUMMARY.json
+          if test -d archive/history/results; then
+            git -C archive add -A -- history/results/
+          fi
           if git -C archive diff --cached --quiet; then
             echo 'Index and private search responses unchanged; safe idempotent return.'
             exit 0
