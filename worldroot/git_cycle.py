@@ -281,6 +281,14 @@ def review_deltas(root: Path, episode_id: str, draft: EpisodeDraft) -> tuple[lis
             raise GateError("Invalid character knowledge clock")
         if item.get("visibility") not in ("PUBLICO", "PRIVADO_PERSONAGEM", "BASTIDORES"):
             raise GateError("Invalid character knowledge visibility")
+        source_event = next(ev for ev in events if ev["event_id"] == item["source_event"])
+        event_clock = source_event.get("clock")
+        if event_clock is not None and (not isinstance(event_clock, str) or not CLOCK.fullmatch(event_clock)):
+            raise GateError("Event clock must be valid HHhMM")
+        if clock is not None and event_clock is not None and clock < event_clock:
+            raise GateError("Character cannot know an event before it happened")
+        if clock is not None and clock > draft.metadata["hour"]:
+            raise GateError("Character cannot gain knowledge after episode checkpoint")
         key = (item["person"], item["source_event"], item["knowledge"])
         if key in keyset:
             raise ConflictError("Duplicate character knowledge record")
@@ -333,7 +341,7 @@ def apply_closure_db(conn, closure: dict, new_head: dict):
     episode = closure["episode_id"]
     meta = closure["metadata"]
     conn.execute(
-        "INSERT INTO episodes VALUES (?,?,?,?,?,?,?,?,?,?)",
+        "INSERT INTO episodes VALUES (?,?,?,?,?,?,?,?,?,?,?)",
         (episode, closure["sequence"], closure["story_sha256"],
          closure["choice_sha256"], sha(canonical(closure)), meta["day"], meta["hour"],
          meta["chapter"], meta["part"], closure["chosen_option"], "FECHADO"),
@@ -364,9 +372,19 @@ def close(root: Path) -> dict:
         raise GateError("GitHub operational canon has not been bootstrapped")
     verify_db(root, head)
     selections = verify_choices(root)
-    if len(selections) != 1:
+    pending = [
+        item for item in selections
+        if not (root / "canon" / "episodes" / (item["episode_id"] + ".json")).exists()
+    ]
+    if not pending:
+        current = root / "canon" / "episodes" / (head["episode_id"] + ".json")
+        if not current.is_file():
+            raise GateError("No pending authored choice")
+        return {"result": "IDEMPOTENTE", "episode_id": head["episode_id"],
+                "sequence": head["sequence"]}
+    if len(pending) != 1:
         raise GateError("Only one pending author choice per closure batch")
-    selected = selections[0]
+    selected = pending[0]
     episode_id = selected["episode_id"]
     path = root / "choices" / episode_id / f"option-{selected['option']}.json"
     choice = load(path)
