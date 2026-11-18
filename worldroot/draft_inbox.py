@@ -22,6 +22,7 @@ from .ledger import GateError, ConflictError
 from .editorial_guard import quick_preflight
 from .presentation_guard import presentation_preflight
 from .story_focus_audit import inspect_installment
+from .day_arc_audit import inspect_day_arc
 
 NARRATIVE_LIMIT = 500_000
 INBOX_LIMIT = 1_000_000
@@ -187,6 +188,7 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
             "changed_file_count": 0, "canon_changed": False, "drive_changed": False,
             "editorial_preflight": quick_preflight(payload["prose"])["status"],
             "story_focus_advisory": _focus_receipt(payload["prose"]),
+            "day_arc_advisory": inspect_day_arc(payload["prose"]),
         }
     _chronology(head, draft.metadata)
 
@@ -229,6 +231,7 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
         "changed_file_count": len(changed), "canon_changed": False, "drive_changed": False,
         "editorial_preflight": quick_preflight(payload["prose"])["status"],
             "story_focus_advisory": _focus_receipt(payload["prose"]),
+            "day_arc_advisory": inspect_day_arc(payload["prose"]),
     }
 
 
