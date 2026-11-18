@@ -22,10 +22,10 @@ jobs:
     permissions:
       contents: read
     steps:
-      - name: Checkout audited r8 engine at immutable commit
+      - name: Checkout audited r12 engine at immutable commit
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: cf1d5376196c13dc6962c8c51969d4bdf83e16cf
+          ref: 91109a02fc54d9b5e17c1c7c811255c410b8ccac
           path: engine
           persist-credentials: false
       - name: Setup Python
@@ -47,10 +47,10 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Checkout audited engine (never execute code from archive)
+      - name: Checkout audited r12 engine (never execute archive code)
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: cf1d5376196c13dc6962c8c51969d4bdf83e16cf
+          ref: 91109a02fc54d9b5e17c1c7c811255c410b8ccac
           path: engine
           persist-credentials: false
       - name: Checkout latest private data branch
