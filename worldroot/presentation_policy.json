@@ -1,0 +1,92 @@
+{
+  "schema": "worldroot-presentation-policy-v1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "version": 1,
+  "approved_at": "2026-11-18",
+  "source": "AUTHOR_CRITICISM_PART_III_DESIGN_2026-11-18",
+  "scope": "NEW_STORY_DRAFTS_ONLY_NO_RETCON",
+  "authoritative_exemplar": "story-archive/episodes/LV-C15-PII-D529-AUTHOR-SOURCE/draft/narrativa_integral.md",
+  "regression_exemplar": "story-archive/episodes/LV-C15-PIII-D529-AUTHOR-SOURCE/draft/narrativa_integral.md",
+  "principle": "Restaurar padrao visual rico aprovado na Parte II; nao afirmar equivalencia pixel a pixel com prints nao acessados.",
+  "classifications": [
+    {
+      "id": "UX01",
+      "area": "IDENTIDADE_VISUAL",
+      "level": "OBRIGATORIO",
+      "rule": "Cabecalho centralizado com selo CRONICAS + WORLDROOT, Livro, Capitulo/Parte, titulo cinematografico; epigrafe opcional."
+    },
+    {
+      "id": "UX02",
+      "area": "CALENDARIO_E_CONTEXTO",
+      "level": "OBRIGATORIO",
+      "rule": "Painel visual discreto de calendario separado do corpo; Dia acumulado, Ano/Mes/Dia, local e horario verificaveis."
+    },
+    {
+      "id": "UX03",
+      "area": "CENAS",
+      "level": "OBRIGATORIO",
+      "rule": "Cenas I, II, III... com titulos e timestamps, prosa imersiva sem resumo burocratico."
+    },
+    {
+      "id": "UX04",
+      "area": "DIALOGOS",
+      "level": "OBRIGATORIO",
+      "rule": "Nomes destacados, travessao e vozes individuais; SISTEMA/NÓX sem desaparecer ou onisciencia."
+    },
+    {
+      "id": "UX05",
+      "area": "CHECKPOINT",
+      "level": "OBRIGATORIO",
+      "rule": "Checkpoint WORLDROOT visualmente separado apos prosa e antes das escolhas: tempo, fatos, pendencias e segredos."
+    },
+    {
+      "id": "UX06",
+      "area": "ESCOLHAS",
+      "level": "OBRIGATORIO",
+      "rule": "Tres alternativas distintas, quarta ESPECIAL destacada e quinta ACAO LIVRE com entrada funcional."
+    },
+    {
+      "id": "UX07",
+      "area": "CONTROLES",
+      "level": "OBRIGATORIO",
+      "rule": "Botoes devem enviar escolha verdadeira por acao de interacao; nao incluir controles inertes."
+    },
+    {
+      "id": "UX08",
+      "area": "FORMATO",
+      "level": "PROIBIDO",
+      "rule": "Nao substituir padrao rico por Markdown plano ou lista seca de opcoes; nao inserir imagens na narrativa."
+    },
+    {
+      "id": "UX09",
+      "area": "ESTETICA",
+      "level": "PREFERENCIAL",
+      "rule": "Hierarquia moderada, espacos legiveis, poucas caixas neutras, sem badges decorativos ou dashboards no corpo da prosa."
+    },
+    {
+      "id": "UX10",
+      "area": "CANONE",
+      "level": "OBRIGATORIO",
+      "rule": "Design nao altera prosa passada, personagens, eventos ou HEAD; afeta apenas novos episodios."
+    },
+    {
+      "id": "UX11",
+      "area": "AMOSTRAGEM",
+      "level": "PREFERENCIAL",
+      "rule": "Consultar cabecalho, calendario, checkpoint e escolhas do exemplar, sem copiar a trama."
+    },
+    {
+      "id": "UX12",
+      "area": "LIMITACAO",
+      "level": "OBRIGATORIO",
+      "rule": "Validador estrutural nao substitui revisao humana ou inspecao visual do chat."
+    }
+  ],
+  "runtime_contract": {
+    "default_rendering": "RICH_CHAT",
+    "new_drafts": "FAIL_CLOSED_ON_STRUCTURAL_VISUAL_ERRORS",
+    "legacy_archives": "IMMUTABLE_NO_RETROACTIVE_REJECTION",
+    "images": "FORBIDDEN",
+    "drive_sync": "NOT_IMPLIED"
+  }
+}

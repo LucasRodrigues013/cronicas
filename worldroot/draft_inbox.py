@@ -20,6 +20,7 @@ from .git_cycle import (load, canonical, sha, check_id, verify_episode,
 from .semantic_gate import require_reviewed_event_evidence
 from .ledger import GateError, ConflictError
 from .editorial_guard import quick_preflight
+from .presentation_guard import presentation_preflight
 
 NARRATIVE_LIMIT = 500_000
 INBOX_LIMIT = 1_000_000
@@ -29,7 +30,7 @@ def _bytes(obj):
     return canonical(obj)
 
 
-def _assemble(episode_id: str, payload: dict):
+def _assemble(episode_id: str, payload: dict, *, enforce_presentation: bool = True):
     if (payload.get("schema") != "worldroot-draft-inbox-v1"
             or payload.get("delivery_id") != episode_id):
         raise GateError("Inbox schema or immutable ID mismatch")
@@ -65,6 +66,13 @@ def _assemble(episode_id: str, payload: dict):
     editorial = quick_preflight(prose, scene_tags=payload.get("editorial_tags", ()))
     if editorial["errors"]:
         raise GateError("Authorial editorial policy violated: " + "; ".join(editorial["errors"]))
+
+    # Mandatory visual structure for NEW chapters. Existing immutable drafts
+    # are exempt solely for idempotent readback; they must not be rewritten.
+    if enforce_presentation:
+        visual = presentation_preflight(text)
+        if visual["errors"]:
+            raise GateError("Chat presentation contract failed: " + "; ".join(visual["errors"])[:350])
 
     events = payload.get("reviewed_events")
     knowledge = payload.get("reviewed_knowledge")
@@ -144,8 +152,9 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
     head = load(root / "canon" / "HEAD.json")
     if head.get("schema") != "worldroot-git-canon-v1":
         raise GateError("GitHub operational HEAD not yet initialized")
-    draft, files, review_files = _assemble(episode_id, payload)
     existing_manifest = root / "episodes" / episode_id / "draft" / "manifesto_imutavel.json"
+    draft, files, review_files = _assemble(
+        episode_id, payload, enforce_presentation=not existing_manifest.is_file())
     if existing_manifest.is_file():
         for name, body in files.items():
             existing = root / "episodes" / episode_id / "draft" / name

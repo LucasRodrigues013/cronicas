@@ -1,6 +1,7 @@
 """Synthetic regression: one ChatGPT inbox produces complete private archive in one transaction."""
 import tempfile
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 from test_git_cycle import META, FULL, PROSE, OPTIONS, EVENT, KNOWLEDGE, ID
@@ -11,6 +12,12 @@ from worldroot.ledger import GateError, ConflictError
 
 class DraftInboxTest(unittest.TestCase):
     def setUp(self):
+        # These tests exercise archiving; presentation has a separate real regression suite.
+        self.visual_patcher = patch(
+            "worldroot.draft_inbox.presentation_preflight",
+            return_value={"errors": [], "notices": [], "status": "OK"})
+        self.visual_patcher.start()
+        self.addCleanup(self.visual_patcher.stop)
         self.t = tempfile.TemporaryDirectory()
         self.addCleanup(self.t.cleanup)
         self.root = Path(self.t.name)
@@ -64,6 +71,13 @@ class DraftInboxTest(unittest.TestCase):
         self.write()
         with self.assertRaises((ConflictError, GateError)):
             archive_inbox(self.root, self.inbox)
+
+    def test_new_chapter_visual_failure_blocks_before_archive(self):
+        with patch("worldroot.draft_inbox.presentation_preflight",
+                   return_value={"errors": ["UX01: weak layout"]}):
+            with self.assertRaises(GateError):
+                archive_inbox(self.root, self.inbox)
+        self.assertFalse((self.root / "episodes" / ID).exists())
 
     def test_missing_review_fails_before_writing(self):
         self.data["reviewed_events"] = []

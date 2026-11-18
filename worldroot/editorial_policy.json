@@ -1,7 +1,7 @@
 {
   "schema": "worldroot-editorial-policy-v1",
   "project": "CRONICAS_DE_UM_NOVO_MUNDO",
-  "version": 1,
+  "version": 2,
   "reviewed_at": "2026-11-18",
   "approved_scope": "USER_REQUESTED_PERMANENT_PREFERENCES_NOT_CANON_EVENTS",
   "source_of_truth": "main/worldroot/editorial_policy.json",
@@ -65,6 +65,13 @@
       "at": "2026-11-18",
       "transcript_line": null,
       "quote": "precisamos manter essa qualidade durante a criação da história ... não virar empecilho ... tudo que for criando novo vai se incorporando e virando o novo histórico"
+    },
+    {
+      "id": "S09",
+      "kind": "AUTHOR_CRITICISM",
+      "at": "2026-11-18",
+      "transcript_line": null,
+      "quote": "Notei que durante a narração da parte 3 o design apresentado no chat estava muito ruim e fraco, precisa melhorar para a proxima parte, nao seguiu os prints e diretrizes que colocamos, precisa colocar isso no github para assim que rodar o motor, seguir todos os pontos de design e classificações"
     }
   ],
   "rules": [
@@ -365,6 +372,23 @@
         "S08"
       ],
       "directive": "Cada nova parte vira rascunho literal imutável; somente escolha autoral real fecha a parte anterior. Registrar deltas de eventos/ciência social e atualizar índices derivados com readback; não fingir automação de ChatGPT.",
+      "active": true
+    },
+    {
+      "id": "P19",
+      "title": "Design visual do chat fiel ao padrão rico aprovado",
+      "stance": "MELHORAR",
+      "enforcement": "ESTRUTURAL",
+      "core": false,
+      "tags": [
+        "UI",
+        "DESIGN",
+        "ESTILO"
+      ],
+      "evidence": [
+        "S09"
+      ],
+      "directive": "Preservar visual rico da Parte II: cabeçalho hierárquico, painel de calendário, cenas com hora/local, checkpoint independente e cinco escolhas visualmente organizadas com controles funcionais. Usar worldroot/presentation_policy.json UX01–UX12 e executar presentation_preflight em cada novo capítulo; não retornar silenciosamente a Markdown plano.",
       "active": true
     }
   ]

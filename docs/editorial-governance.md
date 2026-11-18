@@ -1,3 +1,5 @@
+> **ADENDO UX r10 (18/11/2026).** A perda de design na Parte III foi reconhecida e não deve se repetir. Aplicar `docs/presentation-contract.md`, `worldroot/presentation_policy.json` e `presentation_preflight(full_text)` para cada **nova** narrativa, além do QA literário existente. A referência rica é a Parte II; a Parte III está arquivada sem alteração. O guardião bloqueia regressão estrutural evidente, não substitui avaliação estética humana nem prova identidade com prints não recebidos. Política editorial v2 inclui P19. Estado operacional verificado: Parte II fechada; Parte III rascunho.
+
 # WORLDROOT — Contrato editorial vivo, memória e verificação rápida
 
 **Escopo exclusivo:** Crônicas de um Novo Mundo. **Autoridade:** o autor tem a última palavra.  
