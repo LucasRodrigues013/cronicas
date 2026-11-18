@@ -236,6 +236,8 @@ class VerifiedCanonCommitter:
         self.expected_head_revision=expected_head_revision
 
     def commit_previous(self, draft, selection, reviewed_events, expected_head):
+        from .semantic_gate import require_reviewed_event_evidence
+        require_reviewed_event_evidence(draft, reviewed_events)
         if not self.expected_head_revision:
             raise GateError('Remote HEAD revision must be supplied by authenticated Docs read')
         source_metadata=dict(draft.metadata)
