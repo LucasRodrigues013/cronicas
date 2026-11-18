@@ -87,8 +87,63 @@ def verify_one(manifest_path: Path) -> dict:
     events = _json(raw['eventos_e_consequencias.json'], 'events')
     if draft.get('events') != events or not isinstance(events, list):
         raise ArchiveInvalid('events sidecar differs')
-    if draft.get('book_closed') is True and not metadata.get('book_closure_authorized'):
-        raise ArchiveInvalid('book cannot close without author approval')
+    if draft.get('book_closed') is True:
+        # Legacy metadata flag cannot establish author approval. This archive
+        # has its own immutable author request, choice and canonical receipt.
+        # Verify all four by content without mutating the original chapter.
+        root = folder.parent.parent.parent
+        book = metadata.get('book')
+        journal_path = root/'canon'/'episodes'/(episode_id+'.json')
+        approval_path = root/'author-approvals'/(episode_id+'.json')
+        request_path = root/'canon'/'BOOK_END_REQUEST.json'
+        if not all(p.is_file() and not p.is_symlink()
+                   for p in (journal_path, approval_path, request_path)):
+            raise ArchiveInvalid('book cannot close without source-backed author approval')
+        journal = _json(journal_path.read_bytes(), 'book_end_journal')
+        approval = _json(approval_path.read_bytes(), 'author_approval')
+        request = _json(request_path.read_bytes(), 'book_end_request')
+        previous = journal.get('previous_episode_id')
+        if (journal.get('status') != 'FECHADO_GITHUB'
+                or journal.get('book_closed') is not True
+                or journal.get('episode_id') != episode_id
+                or journal.get('story_sha256') != hashlib.sha256(literal).hexdigest()
+                or journal.get('metadata', {}).get('book') != book
+                or not isinstance(previous, str)
+                or not previous.isascii()
+                or not all(c.isalnum() or c in '-_' for c in previous)
+                or approval.get('schema') != 'worldroot-author-book-end-v1'
+                or approval.get('approved') is not True
+                or approval.get('author_source') != 'USER_MESSAGE'
+                or approval.get('episode_id') != episode_id
+                or approval.get('book') != book
+                or approval.get('previous_episode_id') != previous
+                or approval.get('new_book_opened') is not False
+                or not isinstance(approval.get('author_quote'), str)
+                or not approval['author_quote'].strip()
+                or request.get('schema') != 'worldroot-book-end-request-v1'
+                or request.get('episode_id') != episode_id
+                or request.get('book') != book
+                or request.get('previous_episode_id') != previous
+                or request.get('approval_path') != 'author-approvals/'+episode_id+'.json'
+                or request.get('archived_story_sha256') != journal.get('story_sha256')
+                or request.get('new_book_opened') is not False):
+            raise ArchiveInvalid('book closure record inconsistent with author approval')
+        choice_path = approval.get('choice_path')
+        prefix = 'choices/' + previous + '/'
+        if (not isinstance(choice_path, str)
+                or not choice_path.startswith(prefix)
+                or choice_path[len(prefix):] not in
+                   {f'option-{i}.json' for i in range(1, 6)}):
+            raise ArchiveInvalid('book closure approval references unsafe author choice')
+        full_choice_path = root / choice_path
+        if not full_choice_path.is_file() or full_choice_path.is_symlink():
+            raise ArchiveInvalid('book closure original author choice missing')
+        choice = _json(full_choice_path.read_bytes(), 'author_choice')
+        if (choice.get('schema') != 'worldroot-author-choice-v1'
+                or choice.get('episode_id') != previous
+                or choice.get('free_text') != approval['author_quote']
+                or choice.get('author_source') != 'USER_MESSAGE'):
+            raise ArchiveInvalid('book closure author choice differs from approval')
     return {'episode_id': episode_id, 'sha256': hashlib.sha256(literal).hexdigest(),
             'bytes': len(literal), 'state': 'RASCUNHO_VALIDADO_LOCALMENTE'}
 
