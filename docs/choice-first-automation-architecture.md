@@ -1,3 +1,5 @@
+> **ARQUITETURA HISTÓRICA r7 — substituída operacionalmente pelo WORLDROOT r8 sem OIDC.** A `main` já contém o motor, GitHub `story-archive/canon/HEAD.json` é o HEAD operacional, SQLite versionado e regenerável, e a integração GitHub-only possui Actions reais. Drive/Atlas/Base Viva continuam sem sincronização automática. Leia [ciclo atual](github-only-recoverable-cycle.md) e [instrução do Projeto ChatGPT](instrucao-unica-projeto-chatgpt.md) antes de aplicar qualquer orientação abaixo. Não interpretar pendências/PRs r7 abaixo como estado atual.
+
 # WORLDROOT r7 — comando único da escolha, Actions e fechamento protegido
 
 **Ponto observado em `2026-11-17/18`:** repositório privado; `main` ainda contém somente README; código de fechamento está no PR #6 em **draft**; fluxo `story-archive` de validação de pacote já passou com o episódio literal D529 Parte II. O capítulo está em RASCUNHO, o HEAD oficial permanece D528. **Este documento descreve a arquitetura desejada, não um deploy já concluído.**
