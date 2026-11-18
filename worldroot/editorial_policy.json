@@ -1,0 +1,371 @@
+{
+  "schema": "worldroot-editorial-policy-v1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "version": 1,
+  "reviewed_at": "2026-11-18",
+  "approved_scope": "USER_REQUESTED_PERMANENT_PREFERENCES_NOT_CANON_EVENTS",
+  "source_of_truth": "main/worldroot/editorial_policy.json",
+  "historical_feedback_reference": "story-archive/editorial/feedback/2026-11-18-baseline.json",
+  "precedence": "latest_explicit_author_feedback > earlier conflicting style preference; no retcon of narrated events",
+  "storage_contract": "chapter literal and event ledger live in story-archive; policy is editorial only; Drive is not auto-synchronized",
+  "validation": "one fast structural preflight per episode; small contextual briefing; semantic checks advisory; archival remains through existing user-choice GitHub pipeline",
+  "sources": [
+    {
+      "id": "S01",
+      "kind": "AUTHOR_FEEDBACK",
+      "at": "2026-10-31",
+      "transcript_line": 8550,
+      "quote": "Não precisa mais produzir fotos, foque na geração da história e conteúdo e no mundo"
+    },
+    {
+      "id": "S02",
+      "kind": "AUTHOR_FEEDBACK",
+      "at": "2026-11-01",
+      "transcript_line": 40890,
+      "quote": "Obrigado pelas fotos, ficou muito bom. Mas agora eu preciso da história do que aconteceu. Você só gerou as fotos."
+    },
+    {
+      "id": "S03",
+      "kind": "AUTHOR_FEEDBACK",
+      "at": "2026-11-01",
+      "transcript_line": 46786,
+      "quote": "Os dias estão passando muito rápido, precisamos melhorar essa narração"
+    },
+    {
+      "id": "S04",
+      "kind": "AUTHOR_PRAISE",
+      "at": "2026-11-05",
+      "transcript_line": 226580,
+      "quote": "O ultimo capitulo ficou muito bom, parabens, e isso que traz misterio de grande escala, um super fantasia e faz nossa historia ganhar vida propria"
+    },
+    {
+      "id": "S05",
+      "kind": "AUTHOR_CRITICISM",
+      "at": "2026-11-05",
+      "transcript_line": 247091,
+      "quote": "a antiga narração estava melhor, a forma de Lucas falar com as pessoas e as interações, e também o sistema estava muito bom, ele simplesmente sumiu, ficou ruim"
+    },
+    {
+      "id": "S06",
+      "kind": "AUTHOR_PRAISE",
+      "at": "2026-11-06",
+      "transcript_line": 256983,
+      "quote": "gostei da personagem, faça ela ser aquelas mulheres poderosas e elegantes"
+    },
+    {
+      "id": "S07",
+      "kind": "AUTHOR_DIRECTIVE",
+      "at": "2026-11-18",
+      "transcript_line": null,
+      "quote": "Colocar na main do projeto github e dados do motor meus elogios e críticas e pontos e design para que a gente não perca isso."
+    },
+    {
+      "id": "S08",
+      "kind": "AUTHOR_DIRECTIVE",
+      "at": "2026-11-18",
+      "transcript_line": null,
+      "quote": "precisamos manter essa qualidade durante a criação da história ... não virar empecilho ... tudo que for criando novo vai se incorporando e virando o novo histórico"
+    }
+  ],
+  "rules": [
+    {
+      "id": "P01",
+      "title": "Manter narrativa antes da mídia",
+      "stance": "MANTER",
+      "enforcement": "ESTRUTURAL",
+      "core": true,
+      "tags": [
+        "MIDIA",
+        "ESTILO"
+      ],
+      "evidence": [
+        "S01",
+        "S02"
+      ],
+      "directive": "Não inserir imagens, Markdown de imagem ou HTML visual na prosa das Crônicas. A preferência vigente supera o elogio antigo às fotos; nada pode substituir uma cena narrada.",
+      "active": true
+    },
+    {
+      "id": "P02",
+      "title": "Cenas completas, não relatório",
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "ESTILO",
+        "CENA"
+      ],
+      "evidence": [
+        "S02",
+        "S04",
+        "S05"
+      ],
+      "directive": "Contar acontecimentos em cenas com ação, diálogo, reação e consequência. Títulos e painéis técnicos ficam secundários; não resumir uma aventura como ata ou sequência de bullet points.",
+      "active": true
+    },
+    {
+      "id": "P03",
+      "title": "Relógio orgânico",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "TEMPO",
+        "CENA"
+      ],
+      "evidence": [
+        "S03"
+      ],
+      "directive": "Desenvolver os momentos importantes em tempo vivido, sem saltos artificiais. Nem acelerar dezenas de dias para chegar a um marco, nem gastar capítulos sem evolução; indicar deslocamentos e data reais.",
+      "active": true
+    },
+    {
+      "id": "P04",
+      "title": "Voz de Lucas",
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "LUCAS",
+        "DIALOGO"
+      ],
+      "evidence": [
+        "S05"
+      ],
+      "directive": "Preservar Lucas irreverente, humano, inteligente e espontâneo, inclusive humor e reações ousadas; também capaz de seriedade, decisão e proteção. Não impor suas escolhas.",
+      "active": true
+    },
+    {
+      "id": "P05",
+      "title": "Personalidade do SISTEMA",
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "core": false,
+      "tags": [
+        "SISTEMA",
+        "DIALOGO"
+      ],
+      "evidence": [
+        "S05"
+      ],
+      "directive": "Preservar o SISTEMA sarcástico e sua relação singular com Lucas; não apagá-lo da continuidade, mas não forçar intervenção repetitiva em toda cena.",
+      "active": true
+    },
+    {
+      "id": "P06",
+      "title": "Miren protagonista por direito próprio",
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "MIREN",
+        "ROMANCE",
+        "PERSONAGENS"
+      ],
+      "evidence": [
+        "S04",
+        "S05"
+      ],
+      "directive": "Miren tem objetivos, decisões, pesquisa, romance e conflitos próprios. Diálogos e intimidade com Lucas devem parecer vividos, sem reduzi-la a acessório ou subalterna.",
+      "active": true
+    },
+    {
+      "id": "P07",
+      "title": "NPCs conscientes e independentes",
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "PERSONAGENS",
+        "MUNDO"
+      ],
+      "evidence": [
+        "S04",
+        "S07"
+      ],
+      "directive": "Kael, Lysa, Varo, Káiron, Astra, Miren, legionários e demais NPCs têm vontades, limites, memórias e agendas próprias. A liberdade não desaparece por terem sido criados por Lucas.",
+      "active": true
+    },
+    {
+      "id": "P08",
+      "title": "GÊNESE plena, sem nerf",
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "GENESE",
+        "PODER"
+      ],
+      "evidence": [
+        "S07"
+      ],
+      "directive": "Respeitar capacidades e feitos comprovados de GÊNESE/CREATION; nunca inventar trava, custo surpresa ou inimigo imune para proteger roteiro. Tensão vem de escolhas e consequências.",
+      "active": true
+    },
+    {
+      "id": "P09",
+      "title": "Mistério épico de grande escala",
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "MISTERIO",
+        "EXPLORACAO"
+      ],
+      "evidence": [
+        "S04"
+      ],
+      "directive": "Cultivar descobertas, pistas consistentes, culturas, mapas incompletos e antagonistas inteligentes; cada mistério progride com evidência, contradição, efeito ou revelação, não só adiamento.",
+      "active": true
+    },
+    {
+      "id": "P10",
+      "title": "Mundo vivo e causal",
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "MUNDO",
+        "CAUSALIDADE"
+      ],
+      "evidence": [
+        "S04",
+        "S07"
+      ],
+      "directive": "Instituições e povos evoluem longe do protagonista com meios, prioridades e tempo próprios. Não antecipar conhecimento, deslocamento, realizações ou fama sem canal causal.",
+      "active": true
+    },
+    {
+      "id": "P11",
+      "title": "Projetos chegam a resultados",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "PROJETOS",
+        "TECNOLOGIA"
+      ],
+      "evidence": [
+        "S07"
+      ],
+      "directive": "Evitar muitos capítulos prometendo obras/projetos sem fazê-los avançar; experiências, resultados e repercussões devem ocorrer com evidência sem pular desenvolvimento significativo.",
+      "active": true
+    },
+    {
+      "id": "P12",
+      "title": "Menos burocracia ficcional",
+      "stance": "EVITAR",
+      "enforcement": "EDITORIAL",
+      "core": false,
+      "tags": [
+        "CIDADE",
+        "POLITICA"
+      ],
+      "evidence": [
+        "S07"
+      ],
+      "directive": "Não transformar uma Cidade Livre em rotina de reuniões, aprovações e relatórios intermináveis. Instituições têm autonomia e governança, mas acontecimentos e relações continuam em primeiro plano.",
+      "active": true
+    },
+    {
+      "id": "P13",
+      "title": "Relações, humor e cotidiano",
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "ROMANCE",
+        "PERSONAGENS",
+        "CENA"
+      ],
+      "evidence": [
+        "S05"
+      ],
+      "directive": "Intercalar aventura com amizade, romance, humor ácido e dias comuns. Personagens respondem à personalidade de Lucas de forma própria, sem frases genéricas idênticas.",
+      "active": true
+    },
+    {
+      "id": "P14",
+      "title": "Presença singular de Serís Daum",
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "core": false,
+      "tags": [
+        "SERIS",
+        "PERSONAGENS"
+      ],
+      "evidence": [
+        "S06"
+      ],
+      "directive": "Serís é elegante, poderosa, ambiciosa e estrategista; deseja poder, recursos e negociação. Não reduzi-la a sedução, caricatura ou personagem sem iniciativa.",
+      "active": true
+    },
+    {
+      "id": "P15",
+      "title": "Rigor do cânone e conhecimento",
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "CANONE",
+        "TEMPO"
+      ],
+      "evidence": [
+        "S07",
+        "S08"
+      ],
+      "directive": "A prosa literal prevalece; separar narrado, rascunho, planejado e rumor. Não retconar, teletransportar, vazar segredos ou tratar fatos do leitor como conhecidos por Lucas.",
+      "active": true
+    },
+    {
+      "id": "P16",
+      "title": "Interatividade aberta e justa",
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "ESCOLHAS"
+      ],
+      "evidence": [
+        "S07"
+      ],
+      "directive": "Após cada parte apresentar 1–3 alternativas genuínas, 4ª especial e 5ª livre; a especial não deve receber punição arbitrária, e a escolha do autor controla a história.",
+      "active": true
+    },
+    {
+      "id": "P17",
+      "title": "Estética literária sensorial",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": false,
+      "tags": [
+        "ESTILO",
+        "PERSONAGENS",
+        "EXPLORACAO"
+      ],
+      "evidence": [
+        "S04",
+        "S05",
+        "S06"
+      ],
+      "directive": "Descrever rostos, gestos, trajes, culturas, ambiente, som e paisagem de modo significativo, sem imagens externas, clichês repetitivos ou descrição burocrática.",
+      "active": true
+    },
+    {
+      "id": "P18",
+      "title": "História evolutiva, sem perda",
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "CANONE",
+        "MEMORIA"
+      ],
+      "evidence": [
+        "S08"
+      ],
+      "directive": "Cada nova parte vira rascunho literal imutável; somente escolha autoral real fecha a parte anterior. Registrar deltas de eventos/ciência social e atualizar índices derivados com readback; não fingir automação de ChatGPT.",
+      "active": true
+    }
+  ]
+}
