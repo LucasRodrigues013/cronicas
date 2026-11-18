@@ -1,3 +1,5 @@
+> **ESTADO NOVO r8 (18/11/2026):** bootstrap GitHub D528 efetuado e recuperação SQLite independente aprovada, 11 eventos e 6 conhecimentos D529 revisados em staging, sem escolha do autor ainda. `main` integrada e 182 testes automatizados aprovados. Fechamento de escolhas e arquivamento de novos episódios instalados como workflows privados, aguardando primeira invocação real do ChatGPT. Drive, Base Viva e Atlas continuam não sincronizados. Ver [ciclo atual](github-only-recoverable-cycle.md).
+
 # WORLDROOT r7 — deployment status and safe orchestration (18 November 2026)
 
 ## Authority and release boundary

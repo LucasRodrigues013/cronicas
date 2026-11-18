@@ -1,3 +1,5 @@
+> **NOTA r8 (18/11/2026):** este documento descreve o protótipo de espelho Drive r7. O modo ativo sem OIDC usa GitHub privado como HEAD operacional, `canon/state.sqlite`, `git-canon-cycle.yml` e `worldroot-draft-inbox.yml`. Nenhum Action altera Google Drive. Consulte [protocolo atual](github-only-recoverable-cycle.md).
+
 # WORLDROOT — GitHub Actions after the episode choices
 
 **State, 17 November 2026:** GitHub `LucasRodrigues013/cronicas` is private. An actual read-only archive package-validation workflow is installed on the `story-archive` branch: `.github/workflows/episode-archive-qa.yml`. Its first push run passed. This does **not** mean that Google Drive, HEAD, Base Viva, Atlas or semantic records have been synchronized by that workflow.
