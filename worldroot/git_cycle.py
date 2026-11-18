@@ -220,7 +220,7 @@ def bootstrap(root: Path) -> dict:
         raise GateError("D528 preserved source checksum/size invalid")
     source_sha = sha(content)
     git_blob_sha1 = hashlib.sha1(
-        b"blob " + str(len(content)).encode("ascii") + b"\\x00" + content
+        b"blob " + str(len(content)).encode("ascii") + bytes([0]) + content
     ).hexdigest()
     if (manifest.get("github_blob_sha1") != git_blob_sha1
             and manifest.get("github_blob_sha1") is not None):
