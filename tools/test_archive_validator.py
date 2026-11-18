@@ -44,6 +44,76 @@ class DraftValidation(unittest.TestCase):
     def test_rejects_canon_without_approval(self):
         self.manifest['canon_status']='NARRADO';self.update_manifest()
         with self.assertRaises(ArchiveInvalid): verify_one(self.folder/'manifesto_imutavel.json')
+    def setup_book_close(self):
+        """Create a synthetic author-approved closed-book archive package."""
+        root = self.folder.parent.parent.parent
+        draft_path = self.folder/'episode_draft.json'
+        draft = json.loads(draft_path.read_text(encoding='utf-8'))
+        meta = dict(draft['metadata'], book='Livro V')
+        draft['metadata'] = meta
+        draft['book_closed'] = True
+        (self.folder/'checkpoint_candidato.json').write_bytes(blob(meta))
+        draft_path.write_bytes(blob(draft))
+        for name in ('checkpoint_candidato.json', 'episode_draft.json'):
+            bits = (self.folder/name).read_bytes()
+            self.manifest['artifacts'][name] = {
+                'sha256': hashlib.sha256(bits).hexdigest(),
+                'bytes': len(bits)}
+        self.update_manifest()
+        story_sha = self.manifest['original_readback_sha256']
+        previous = 'LV-C16-PIV-D537-AUTHOR-SOURCE'
+        ep = self.folder.parent.name
+        quote = 'Vamos finalizar o livro, autorizado pelo autor.'
+        approval = {
+            'schema': 'worldroot-author-book-end-v1', 'episode_id': ep,
+            'book': 'Livro V', 'approved': True, 'author_source': 'USER_MESSAGE',
+            'author_quote': quote, 'previous_episode_id': previous,
+            'choice_path': f'choices/{previous}/option-5.json',
+            'new_book_opened': False
+        }
+        choice = {
+            'schema': 'worldroot-author-choice-v1', 'episode_id': previous,
+            'option': 5, 'free_text': quote, 'author_source': 'USER_MESSAGE'
+        }
+        request = {
+            'schema': 'worldroot-book-end-request-v1', 'episode_id': ep,
+            'previous_episode_id': previous, 'book': 'Livro V',
+            'approval_path': f'author-approvals/{ep}.json',
+            'archived_story_sha256': story_sha, 'new_book_opened': False
+        }
+        journal = {
+            'episode_id': ep, 'previous_episode_id': previous, 'book_closed': True,
+            'status': 'FECHADO_GITHUB', 'story_sha256': story_sha,
+            'metadata': {'book': 'Livro V'}
+        }
+        for relpath, body in (
+                (f'author-approvals/{ep}.json', approval),
+                (f'choices/{previous}/option-5.json', choice),
+                ('canon/BOOK_END_REQUEST.json', request),
+                (f'canon/episodes/{ep}.json', journal)):
+            target = root/relpath
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_bytes(blob(body))
+        return root
+
+    def test_book_closure_requires_real_evidence(self):
+        root = self.setup_book_close()
+        self.assertEqual(
+            verify_one(self.folder/'manifesto_imutavel.json')['episode_id'],
+            self.folder.parent.name)
+        (root/'canon'/'BOOK_END_REQUEST.json').unlink()
+        with self.assertRaises(ArchiveInvalid):
+            verify_one(self.folder/'manifesto_imutavel.json')
+
+    def test_book_closure_rejects_mismatched_approval(self):
+        root = self.setup_book_close()
+        approval = root/'author-approvals'/(self.folder.parent.name+'.json')
+        data = json.loads(approval.read_text(encoding='utf-8'))
+        data['author_quote'] = 'Texto alterado e não aprovado.'
+        approval.write_bytes(blob(data))
+        with self.assertRaises(ArchiveInvalid):
+            verify_one(self.folder/'manifesto_imutavel.json')
+
     def test_rejects_wrong_option_number(self):
         file=self.folder/'opcoes.json'
         data=json.loads(file.read_text());data[1]['number']=3
