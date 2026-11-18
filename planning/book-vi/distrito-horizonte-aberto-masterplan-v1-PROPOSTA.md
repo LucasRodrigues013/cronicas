@@ -64,7 +64,7 @@ A malha idealizada 5km leste-oeste por 3km norte-sul usa origem O=(0,0) no canto
 **Geração/armazenagem propostos (ainda não narrados nem inventados como fato):**
 - 4×50MW = **200MW de geração arcana firme criada por GÊNESE**, em módulos independentes com equipe responsável e manual de emergência. Capacidade na condição N−1 = **150MW**, suficiente para o pico hipotético de 140MW sem apoio externo; validar operação e sustentabilidade no worldbuilding antes de criar.
 - **250MWp solar** de telhado/fachada (não 250MW contínuos); exemplo com 4 horas equivalentes solares e 80% desempenho: **800MWh/dia**, mas irradiância real de Três Arcos NÃO foi comprovada.
-- **15MW biogás/resíduos** suplementares, operação ligada a matéria-prima real; não presumir energia gratuita de lixo insuficiente.
+- **1MW de potência nominal biogás/cogeração** para demonstração e valorização de orgânicos, operação condicionada a suprimento real. Com 40t/dia de orgânicos e rendimento hipotético de 150m³ de biogás/t e 2kWh elétricos/m³, seriam ~12MWh/dia (potência média ~0,5MW), não 15MW contínuos. A geração arcana firme dimensionada acima cobre autonomia, não o lixo.
 - **1.200MWh de baterias**, descarga nominal **200MW** (6h a 200MW; ~19h a 62,5MW hipotéticos, sem perdas). Baterias armazenam, não geram.
 - 8 microrredes com capacidade de ilhamento e painéis manuais; duas linhas independentes para hospital, ETE, bombeiros e telecomunicações. A energia arcana garante autonomia climática sem inventar nerf de GÊNESE, mas é criação FUTURA proposta, não uma capacidade já instituída no cânone.
 
