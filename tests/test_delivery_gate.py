@@ -43,12 +43,14 @@ class ReaderDeliveryGateTest(unittest.TestCase):
         self.assertFalse(receipt["release_allowed"])
         self.assertEqual(receipt["status"], "DO_NOT_PRESENT_AS_COMPLETE")
 
-    def test_real_longform_gate_blocks_short_even_if_archived_synthetically(self):
+    def test_real_longform_target_is_advisory_but_readback_still_required(self):
         self.archive_synthetic()
         with patch("worldroot.delivery_gate.presentation_preflight", return_value={"errors": []}):
             receipt = audit_release(self.root, ID)
-        self.assertFalse(receipt["release_allowed"])
-        self.assertTrue(any("LONGFORM01" in x for x in receipt["errors"]))
+        self.assertTrue(receipt["release_allowed"], receipt)
+        self.assertEqual(receipt["longform_target_status"], "EXPANDIR")
+        self.assertTrue(receipt["checks"]["longform_measured"])
+        self.assertFalse(receipt["semantic_certification"])
 
     def test_verified_readback_allows_release_only_with_completed_checks(self):
         self.archive_synthetic()
