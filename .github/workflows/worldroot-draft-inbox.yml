@@ -24,7 +24,7 @@ jobs:
       - name: Checkout audited engine at immutable version
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: 5b62cda746f766e3b17372e10938ab1776e2c822
+          ref: a08eaa8edcd935df4b6a8922d5b3202d9d33ddb4
           path: engine
           persist-credentials: false
       - name: Python 3.12
@@ -47,7 +47,7 @@ jobs:
       - name: Checkout trusted main code (pinned)
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: 5b62cda746f766e3b17372e10938ab1776e2c822
+          ref: a08eaa8edcd935df4b6a8922d5b3202d9d33ddb4
           path: engine
           persist-credentials: false
       - name: Checkout private story archive data only
@@ -89,6 +89,18 @@ jobs:
                   "median_scene_words_approx":focus.get("median_scene_words_approx"),
                   "lucas_dialogue_scene_share":focus.get("lucas_dialogue_scene_share"),
                   "notices":focus.get("advisories",[]),
+              })
+              depth=receipt.get("longform_depth",{})
+              stage=receipt.get("longform_stage",{})
+              print("Narrative only length:",{
+                  "prose_words_approx":depth.get("prose_words_approx"),
+                  "target_words":depth.get("target_words"),
+                  "status":depth.get("status"),
+                  "short_scenes":depth.get("very_short_scenes",[]),
+              })
+              print("Longform continuity receipt:",{
+                  "status":stage.get("status"),"stages":stage.get("parts"),
+                  "verified":stage.get("verified"),
               })
               days=receipt.get("day_arc_advisory",{})
               print("Lived-day advisory:",{
