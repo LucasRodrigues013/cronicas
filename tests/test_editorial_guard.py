@@ -16,7 +16,7 @@ class EditorialMemoryTests(unittest.TestCase):
 
     def test_policy_is_versioned_scoped_and_evidence_linked(self):
         v = validate_policy(self.policy)
-        self.assertEqual(v["version"], 9)
+        self.assertEqual(v["version"], 10)
         self.assertGreaterEqual(v["rule_count"], 15)
         self.assertEqual(self.policy["project"], "CRONICAS_DE_UM_NOVO_MUNDO")
         self.assertIn("P01", {r["id"] for r in self.policy["rules"]})
@@ -26,7 +26,7 @@ class EditorialMemoryTests(unittest.TestCase):
         self.assertIn("P25", {r["id"] for r in self.policy["rules"]})
         self.assertIn("P26", {r["id"] for r in self.policy["rules"]})
         self.assertIn("P27", {r["id"] for r in self.policy["rules"]})
-        for rid in ("P28", "P29", "P30", "P31", "P32", "P33", "P34", "P35", "P36", "P37", "P38", "P39", "P40", "P41", "P42", "P43", "P44", "P45", "P46", "P47", "P48"):
+        for rid in ("P28", "P29", "P30", "P31", "P32", "P33", "P34", "P35", "P36", "P37", "P38", "P39", "P40", "P41", "P42", "P43", "P44", "P45", "P46", "P47", "P48", "P49", "P50", "P51", "P52"):
             self.assertIn(rid, {r["id"] for r in self.policy["rules"]})
 
     def test_brief_prioritizes_lived_story_over_task_reporting(self):
@@ -55,7 +55,7 @@ class EditorialMemoryTests(unittest.TestCase):
         result = compact_brief(self.policy, scene_tags=("MIREN", "ROMANCE"), max_chars=1750)
         self.assertLessEqual(len(result["text"]), 1900)
         self.assertIn("P06", result["selected_rule_ids"])
-        self.assertEqual(result["policy_version"], 9)
+        self.assertEqual(result["policy_version"], 10)
         self.assertNotIn("SOURCE_COUNT", result["text"])
 
     def test_images_are_structurally_rejected(self):
