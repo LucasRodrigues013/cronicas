@@ -92,6 +92,24 @@ jobs:
                 raise GateError("Reader delivery blocked: " + "; ".join(gate["errors"])[:300])
               print("READER_DELIVERY_GATE_OK:",gate["episode_id"],gate["story_sha256"],
                     "narrative words:",gate["prose_words_approx"])
+              # The chat must later re-fetch the exact GitHub source and verify this SHA.
+              import json
+              reader_dir = root/"delivery"/"reader_receipts"
+              reader_dir.mkdir(parents=True, exist_ok=True)
+              reader_file = reader_dir/(pending[0].stem+".json")
+              reader_receipt = {
+                  "schema": "worldroot-reader-release-receipt-v1",
+                  "episode_id": pending[0].stem,
+                  "status": "ARCHIVED_DRAFT_VERIFIED_FOR_READER",
+                  "story_sha256": gate["story_sha256"],
+                  "source_path": "episodes/"+pending[0].stem+"/draft/narrativa_integral.md",
+                  "canon_promoted": False,
+                  "chat_delivery": "CHAT_MUST_FETCH_AND_CHECK_SHA_BEFORE_DISPLAY"
+              }
+              receipt_bytes = (json.dumps(reader_receipt, ensure_ascii=False, sort_keys=True, separators=(",", ":"))+"\\n").encode("utf-8")
+              if reader_file.exists() and reader_file.read_bytes() != receipt_bytes:
+                  raise GateError("Reader release receipt is immutable and differs")
+              reader_file.write_bytes(receipt_bytes)
               print("Immutable draft archived and verified. Events:",receipt["events"],
                     "knowledge:",receipt["knowledge"],"Drive changed:",receipt["drive_changed"])
               # The literary assessment is ADVISORY, not a bureaucratic block.
@@ -139,7 +157,7 @@ jobs:
           set -euo pipefail
           git -C archive config user.name "github-actions[bot]"
           git -C archive config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git -C archive add -A episodes/
+          git -C archive add -A -- episodes/ delivery/reader_receipts/
           if git -C archive diff --cached --quiet; then
             echo 'No new archive bytes; idempotent recovery.'
             exit 0
