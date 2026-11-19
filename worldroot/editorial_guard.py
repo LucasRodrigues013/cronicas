@@ -84,19 +84,16 @@ def compact_brief(policy: dict, scene_tags=(), max_chars: int = 1750) -> dict:
         r["id"],
     ))
     lines = [
-        "WORLDROOT | preferencias autorais vigentes v" + str(policy["version"]),
-        "TITULO P43: Livro VI AS COROAS PARTIDAS; saga A ERA DAS NOVE COROAS.",
-        "AUTORIA P44: PRE-PRODUCAO; draft r17 REJEITADO. NAO criar episodio sem nova autorizacao explicita.",
-        "ABERTURA P49: Lucas inicia com Miren, Kael/Lysa e Conselho; revoluciona TODA Tres Arcos + bairro 100 mil em ate 24h.",
-        "AURORA P50: Malha 3600 ja existe D531 com VERTICE; manutencao, lixo, saneamento, transporte 24h na cidade inteira.",
-        "CONTRAPONTO P51: Tharvek/Elyrien recebem noticia pelo tempo real; Ithran confirma e planeja matar representantes; derrota possivel.",
-        "PESQUISA P52: AERUN expande equipe e recebe pesquisadores com apoio da cidade aberta.",
-        "TRAMA P46/P47: seis movimentos/25-35 capitulos; nenhum encontro instantaneo ou final fixo.",
-        "TEMPO P45: narrar UM DIA por Parte; o mesmo dia pode abranger varias partes.",
-        "ISEKAI P35-P42: Lucas expressivo, GENESE plena, Miren romance, AERUN ativa, ARGOS voa, Tres Arcos cresce.",
-        "SEMANTICA P31/P32/P33/P48: nao repetir arcos, Talis com pistas reais, segredo != conhecimento de Lucas.",
-        "QUALIDADE P34/P26/P27: ~10000 palavras opcional, fonte literal antes de criar.",
-        "VIDA P28/P29/P30: conviver > relatar projetos; dia organico.",
+        "WORLDROOT v" + str(policy["version"]),
+        "TITULO P43/P44: Livro VI AS COROAS PARTIDAS. PRE-PRODUCAO; r17 rejeitado; nao narrar sem nova ordem.",
+        "ABERTURA P49: Lucas/Miren/Kael/Lysa/Conselho; cidade inteira + distrito 100 mil em ate 24h.",
+        "AURORA P50: 3600 existentes D531, VERTICE; lixo, agua, energia, transporte e manutencao 24h.",
+        "EMISSARIOS P51: Tharvek/Elyrien informados por rotas; Ithran confirma e tenta matar; pode falhar.",
+        "AERUN P52: expande pesquisadores, ensino e acolhimento; preservar areas protegidas.",
+        "TEMPO P45/P47: 1 dia por Parte; 6 movimentos/25-35 capitulos, sem encontro instantaneo.",
+        "ISEKAI P35-P42: Lucas expressivo, GENESE plena, romance Miren, ARGOS, Talis com pista real.",
+        "VIDA P28/P29/P30: convivencia, cenas vividas, dia organico; nao relatorios.",
+        "CREDIBILIDADE P26/P31-P34: ~10000 palavras alvo, nao quota; nao repetir aprendizados nem canon falso.",
     ]
     prioritized = ("P49", "P50", "P51", "P52", "P43", "P44", "P45", "P46", "P47", "P48", "P35", "P36", "P37", "P38", "P39", "P40", "P41", "P42", "P31", "P32", "P33", "P34", "P26", "P27", "P28", "P29", "P30")
     available = {r["id"] for r in active}
