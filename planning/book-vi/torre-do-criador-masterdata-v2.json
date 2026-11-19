@@ -1,0 +1,296 @@
+{
+  "schema": "worldroot-bookvi-architectural-concept-v2",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "title": "Torre do Criador",
+  "author_selection": "PERSONAL_TOWER_NOT_TRÊS_ARCOS_GOVERNMENT_MARK",
+  "status": "AUTHOR_APPROVED_VTOL_AERODOCK_DIRECTION_PREPRODUCTION_NOT_NARRATED",
+  "source": "planning/book-vi/torre-do-criador-masterplan-v2-aerodoca-PREPRODUCAO.md",
+  "location": {
+    "district": "Horizonte Aberto",
+    "city": "Três Arcos",
+    "specific_lot": "UNKNOWN_UNTIL_SCENE",
+    "site_area_m2_proposal": 25000,
+    "political_status": "PRIVATE_NOT_GOVERNMENT"
+  },
+  "form": {
+    "height_m_proposed": 145,
+    "usable_tower_height_m_proposed": 127.6,
+    "crown_m_proposed": 17.4,
+    "main_above_ground_levels": 22,
+    "basements": 3,
+    "above_ground_gross_m2_proposed": 25000,
+    "basement_gross_m2_proposed": 6000,
+    "gross_total_m2_proposed": 31000,
+    "main_symbol": "Marca do Impossível — upward rising stroke, broken halo, one floating spark",
+    "no_copies": [
+      "Avengers A",
+      "Three Arches state emblem"
+    ],
+    "meaning_of_gross_total": "ENCLOSED / INTERNAL FLOOR AREA ONLY; external open platforms separately declared"
+  },
+  "basements": [
+    {
+      "level": "B01",
+      "gross_m2": 2300,
+      "name": "Garagem do Improvável"
+    },
+    {
+      "level": "B02",
+      "gross_m2": 1900,
+      "name": "Utilidades e reservas"
+    },
+    {
+      "level": "B03",
+      "gross_m2": 1800,
+      "name": "Ensaios isolados"
+    }
+  ],
+  "floors": [
+    {
+      "floor": 1,
+      "gross_m2": 1700,
+      "name": "Átrio do Impossível",
+      "role": "Entrada monumental sem trono; recepção limitada, espelho-d’água, controle de acesso, acesso à praça; primeira visão da marca pessoal."
+    },
+    {
+      "floor": 2,
+      "gross_m2": 1600,
+      "name": "Galeria das Ideias",
+      "role": "Exposição rotativa de protótipos não confidenciais e feitos explicados com crédito aos colaboradores; visitação por convite/horário."
+    },
+    {
+      "floor": 3,
+      "gross_m2": 1500,
+      "name": "Pátio dos Visitantes",
+      "role": "Lounge para receber amigos, viajantes e pesquisadores, pequeno café, varanda e áreas de convívio; área aberta só quando autorizado."
+    },
+    {
+      "floor": 4,
+      "gross_m2": 1350,
+      "name": "Forja Experimental Pesada",
+      "role": "Entrada de carga, bancadas e materiais, fundações e isolamento; elevador de serviço independente; NÃO fábrica pública."
+    },
+    {
+      "floor": 5,
+      "gross_m2": 1350,
+      "name": "Grande Oficina do Criador",
+      "role": "Bancadas móveis, protótipos mecânicos, ponte rolante/apoios e trabalhos com Brannik quando ele desejar."
+    },
+    {
+      "floor": 6,
+      "gross_m2": 1250,
+      "name": "Ateliê de Prototipagem",
+      "role": "Impressão/manifestação de componentes por GÊNESE, montagem modular, desmontagem, parede de ideias incompletas."
+    },
+    {
+      "floor": 7,
+      "gross_m2": 1250,
+      "name": "Laboratório de Instrumentação",
+      "role": "Medições, controle de qualidade, diagnósticos e experimentos próprios; colaboração consentida com especialistas."
+    },
+    {
+      "floor": 8,
+      "gross_m2": 1250,
+      "name": "Laboratório Arcanotécnico",
+      "role": "Interfaces de energia e Costura de Dados sob autorização; não conectar automaticamente sistemas secretos de AERÚN."
+    },
+    {
+      "floor": 9,
+      "gross_m2": 1200,
+      "name": "Mecatrônica e Espaço para Inventos",
+      "role": "Bancadas de dispositivos, veículos compactos e sistemas de voo; prever pesquisa de futura aeronave pessoal, não lançamento antecipado."
+    },
+    {
+      "floor": 10,
+      "gross_m2": 1200,
+      "name": "Sala de Projeções e Projeto Aéreo",
+      "role": "Concepção, mapas de voo, simulação e briefing pessoal de expedições; nenhum governo nem rede onisciente."
+    },
+    {
+      "floor": 11,
+      "gross_m2": 1150,
+      "name": "Arena de Movimento",
+      "role": "Treinamento físico, artes marciais, mobilidade e testes seguros; torneios somente com participantes voluntários."
+    },
+    {
+      "floor": 12,
+      "gross_m2": 1150,
+      "name": "Recuperação e Resposta",
+      "role": "Banhos, fisioterapia básica, descanso e equipamento de emergência; não hospital ou atendimento público licenciado."
+    },
+    {
+      "floor": 13,
+      "gross_m2": 1100,
+      "name": "Biblioteca das Possibilidades",
+      "role": "Projetos de Lucas, livros, diários, protótipos catalogados, registros com proveniência; controle de segredos."
+    },
+    {
+      "floor": 14,
+      "gross_m2": 1100,
+      "name": "Sala da Terra",
+      "role": "Objetos recriados da memória, culinária, música e mapas afetivos, sem criar transmissão/porta real para a Terra."
+    },
+    {
+      "floor": 15,
+      "gross_m2": 1050,
+      "name": "Cinema e Museu das Besteiras",
+      "role": "Jogos, música, experiências absurdas, recordações das amizades, humor e gambiarras geniais."
+    },
+    {
+      "floor": 16,
+      "gross_m2": 1000,
+      "name": "Ala de Hóspedes",
+      "role": "Quartos para visitas convidadas, apoio e sala de estar; nenhum aliado é automaticamente morador ou subordinado."
+    },
+    {
+      "floor": 17,
+      "gross_m2": 900,
+      "name": "Cozinha do Fim do Mundo e apoio",
+      "role": "Cozinha de produção, despensa e jantar familiar ligados por elevador/escada à cozinha aberta do Salão P18."
+    },
+    {
+      "floor": 18,
+      "gross_m2": 900,
+      "name": "Salão Suspenso do Criador e Cozinha Aberta",
+      "role": "Sala panorâmica, cozinha-show, mesa, bar, estar, música; saída ao deck panorâmico separado da zona aérea e ao corredor fechado de embarque."
+    },
+    {
+      "floor": 19,
+      "gross_m2": 850,
+      "name": "Mezanino, Sala de Briefing e Mirante",
+      "role": "Mezanino com biblioteca, bar, jogos, lounge e observação protegida do ARGOS na aerodoca."
+    },
+    {
+      "floor": 20,
+      "gross_m2": 850,
+      "name": "Aposentos de Lucas",
+      "role": "Suíte, banho, escritório e terraço privado protegido dos fluxos aeronáuticos."
+    },
+    {
+      "floor": 21,
+      "gross_m2": 700,
+      "name": "Vida Compartilhada e Estúdio de Miren",
+      "role": "Estúdio e espaços reconfiguráveis somente por decisão de Miren, sem mudança obrigatória de moradia."
+    },
+    {
+      "floor": 22,
+      "gross_m2": 600,
+      "name": "Observatório do Horizonte",
+      "role": "Cúpula, céu, biblioteca íntima e vista; separado operacionalmente da aerodoca."
+    }
+  ],
+  "roof": {
+    "name": "Coroamento com Observatório P22",
+    "height_m_proposed": 145,
+    "skyport": "SEPARATE_OUTBOARD_AERODOCK_AT_P18_P19_LEVEL",
+    "argos_landing": "DESIGN_TARGET_VTOL_NOT_YET_NARRATIVELY_DEMONSTRATED"
+  },
+  "narrative": {
+    "target": "Livro VI C01 Parte V de V, if next real user choice triggers it",
+    "preceding_draft": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+    "current_head_on_design": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+    "emotion": "Creator who built home for many must decide what home means to himself",
+    "must_remain_player_choice": true,
+    "not_promoted_to_canon": true,
+    "house_jardim_branco": "PRESERVED",
+    "miren_move": "NOT_PREDETERMINED",
+    "argos_landing": "not canon; must be shown after real testing and route",
+    "personal_vtol": "future invention not yet created",
+    "symbol": "personal not Three Arches political",
+    "floor_count_preserved": true
+  },
+  "guards": [
+    "No canon publication by plan",
+    "No retcon Part IV or earlier",
+    "Real author choice closes prior draft",
+    "No preallocated civic land",
+    "No political insignia",
+    "No automatic ARGOS skyport",
+    "No compulsory move-in Miren",
+    "No new sentient creations",
+    "No change to AERUN/Forja autonomy",
+    "No ARGOS arrival automatically",
+    "Preserve 31,000m² enclosed internal count, external open decks separately",
+    "No use of FAA EB105A as certification for 39.86t ARGOS",
+    "Scene-based validation before aviation launch",
+    "No automatic life/crew creation",
+    "No direct access from party deck to active flight zone"
+  ],
+  "version": 2,
+  "supersedes_preproduction": "planning/book-vi/torre-do-criador-masterdata-v1.json",
+  "argos": {
+    "historical_sources": [
+      "D521 aircraft ficha",
+      "D528 39.86t mass re-measurement"
+    ],
+    "length_m": 31.6,
+    "span_open_m": 27.4,
+    "span_folded_m": 19.8,
+    "height_m": 7.6,
+    "measured_mass_t_d528_empty": 39.86,
+    "projected_max_mass_t_unverified": 58,
+    "propulsion": "VTOL ARCANO VETORIAL + CRUZEIRO ADAPTATIVO",
+    "operating_base": "Campo Aurora",
+    "tower_landing_status": "DESIGN_RESERVED_NOT_TESTED"
+  },
+  "aviation_platform": {
+    "name": "Aerodoca do Impossível",
+    "location": "Exterior lateral na cota do grande Salão P18/P19",
+    "outer_diameter_m": 70,
+    "outer_surface_m2": 3848.45,
+    "inner_clear_diameter_m": 58,
+    "inner_clear_area_m2": 2642.08,
+    "operational_edge_band_m": 6,
+    "load_equivalent_preliminary_t": 87,
+    "load_target_status": "FICTIONAL_PLANNING_ESTIMATE_NOT_CERTIFICATION",
+    "separate_structural_support": true,
+    "approach_path": "PENDING_MAP_ROUTE_AND_TESTS",
+    "access": "GLAZED_SECURED_BOARDING_VESTIBULE",
+    "no_simultaneous_people_on_flight_disc": true,
+    "argos_maintenance_base": "Campo Aurora",
+    "public_deck_distinct": true
+  },
+  "scenic_deck": {
+    "name": "Deck do Horizonte",
+    "area_m2_external_open": 550,
+    "level": "P18 adjoining P19 sightlines",
+    "relations": [
+      "open kitchen P18",
+      "lounge P18",
+      "mezzanine/briefing P19",
+      "glazed flight viewing"
+    ],
+    "flight_operation": "CLOSED_FOR_LANDINGS_AND_TAKEOFFS_OR_ONLY_VIEW_FROM_SHIELDED_INTERIOR",
+    "counted_inside_31000_m2": false
+  },
+  "aerial_surfaces_m2_outside_interior": 4398.45,
+  "future_craft": {
+    "project_codename": "ASA LIVRE-01 (PROVISIONAL)",
+    "status": "IDEA_NOT_CREATED",
+    "design_inspiration": "Original compact versatile personal VTOL; no Quinjet replica",
+    "length_m_concept": 13,
+    "span_open_m_concept": 10.5,
+    "height_m_concept": 3.5,
+    "proposed_mass_range_t": [
+      6,
+      10
+    ],
+    "proposed_occupants_range": [
+      4,
+      6
+    ],
+    "hangar": "B01 modular",
+    "route_to_platform": "External independent service lift / dock conditional design",
+    "not_a_replacement_for": "ARGOS"
+  },
+  "invention_pipeline": [
+    "3D arcane design projections",
+    "non-sentient precision assistants",
+    "modular tools and VTOL research",
+    "resonance/material trials",
+    "simulation based on measured data",
+    "personal vehicles and experimental apparatus",
+    "museum of deliberately silly inventions",
+    "traceable artifacts from adventures"
+  ]
+}
