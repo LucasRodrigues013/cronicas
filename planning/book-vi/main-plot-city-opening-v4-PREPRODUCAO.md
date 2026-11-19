@@ -1,3 +1,5 @@
+> **RETIFICAÇÃO PREVALENTE — ABERTURA v5 (18/11/2026):** O autor refinou a MOTIVAÇÃO: Lucas acorda no Dia538, corre por TODA Três Arcos, observa cidadãos/infraestrutura, recorda o que conheceu da TERRA, volta para CAFÉ com Miren e compartilha a visão antes de apresentar o plano a Kael/Lysa/Conselho. A obra colossal NÃO sai do nada; a rede de vídeo Costura de Dados já existia de modo regional no Livro V e será EXPANDIDA com antenas, avisos e chamadas. A estética é renascentista fantástica com grandiosidade comparável à ambição de Dubai, não cidade moderna de vidro. A criação é INCIDENTE INICIAL, não o clímax. Fontes: planning/book-vi/abertura-corrida-terra-miren-conselho-v5-PREPRODUCAO.md e planning/book-vi/tres-arcos-renaissance-arcane-network-v3-PREPRODUCAO.md. **NENHUMA CENA NARRADA.**
+
 # LIVRO VI — AS COROAS PARTIDAS
 ## ABERTURA GRANDIOSA, MULTIPLICIDADE DE PONTOS DE VISTA E AMEAÇA AOS REPRESENTANTES v4
 **ESTADO: PRÉ-PRODUÇÃO SOB DIREÇÃO AUTORAL. NÃO NARRADO. NÃO CANÔNICO.**
