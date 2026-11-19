@@ -32,7 +32,7 @@ def read_json(path: Path) -> dict | list:
         raise ArchiveInvalid(f"{path}: missing or invalid JSON") from exc
 
 def verify_lvi(root: Path, episode_id: str) -> dict:
-    if episode_id not in PARTS:
+    if not episode_id.startswith("LVI-") or episode_id == REJECTED:
         raise ArchiveInvalid(f"Unexpected or rejected episode id: {episode_id}")
 
     folder = root / "episodes" / episode_id / "draft"
@@ -119,8 +119,9 @@ def main() -> int:
                    help="fail if any D538-D539 episode is not yet archived")
     args = p.parse_args()
     root = args.root
-    present = [e for e in PARTS if (root / "episodes" / e / "draft").exists()]
-    if args.require_all and len(present) != len(PARTS):
+    present = sorted(p.parent.name for p in (root / "episodes").glob("LVI-*/draft")
+                     if p.parent.name != REJECTED)
+    if args.require_all and not all(e in present for e in PARTS):
         print("BLOCKED: not all D538-D539 literal episode packages exist")
         return 1
     try:
