@@ -7,6 +7,7 @@ on:
       - 'canon/BOOTSTRAP_REQUEST.json'
       - 'choices/*/option-*.json'
       - 'canon/BOOK_END_REQUEST.json'
+      - '.github/workflows/git-canon-cycle.yml'
 
 concurrency:
   group: worldroot-story-write
@@ -74,25 +75,11 @@ jobs:
           PYTHONPATH: engine
         run: |
           set -euo pipefail
-          if test -f archive/canon/BOOK_END_REQUEST.json; then
-            # The Livro V author-approved close request stays archived forever.
-            # Once HEAD records that closing, future selected Livro VI drafts
-            # must use the normal choice-close path, not re-finalize Livro V.
-            if python - <<'PY'
-          import json
-          from pathlib import Path
-          root=Path("archive/canon")
-          head=json.loads((root/"HEAD.json").read_text(encoding="utf-8"))
-          request=json.loads((root/"BOOK_END_REQUEST.json").read_text(encoding="utf-8"))
-          assert head.get("episode_id")==request.get("episode_id")
-          assert head.get("book_closed") is True
-          PY
-            then
-              python -m worldroot.git_cycle close --archive-root archive
-            else
-              python -m worldroot.git_cycle finalize-book --archive-root archive
-            fi
-          elif test -f archive/canon/HEAD.json; then
+          # An old Livro V BOOK_END_REQUEST remains immutable in history.
+          # It must never re-finalize a book after a valid canonical HEAD exists.
+          # Genuine pending author choice (validated above) closes its immediately
+          # preceding episode, exactly once, without modifying the new draft.
+          if test -f archive/canon/HEAD.json; then
             python -m worldroot.git_cycle close --archive-root archive
           else
             python -m worldroot.git_cycle bootstrap --archive-root archive
