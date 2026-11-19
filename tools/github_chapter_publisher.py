@@ -50,9 +50,25 @@ def assert_character_reconciliation(root: Path, book: str, chapter: int) -> None
         if status == "REVIEWED_WITH_FLAGS":
             decision_file = root / "editorial/recovery/reconciliations" / (eid + ".json")
             decision = get_json(decision_file)
-            if (decision.get("status") != "APPROVED_BY_AUTHOR"
-                    or not decision.get("author_decision")
-                    or not decision.get("source_evidence")):
+            approved_standard = (
+                decision.get("status") == "APPROVED_BY_AUTHOR"
+                and bool(decision.get("author_decision"))
+                and bool(decision.get("source_evidence")))
+            # D539 was EXPLICITLY RATIFIED as literal canon, not proven Legion
+            # membership/travel. The hold survives as an unresolved world fact.
+            journal = root / "canon/episodes" / (eid + ".json")
+            j = get_json(journal) if journal.is_file() else {}
+            approved_literal = (
+                decision.get("status") == "APPROVED_BY_AUTHOR_FOR_LITERAL_CANON"
+                and j.get("ratification_kind") == "VERBATIM_AUTHOR_RETRO_RATIFICATION_20261119"
+                and decision.get("approval_file")
+                and (root / decision["approval_file"]).is_file()
+                and bool(decision.get("source_evidence"))
+                and bool(decision.get("author_decision"))
+                and decision.get("military_affiliation_proven") is False
+                and decision.get("travel_route_proven") is False
+                and decision.get("legion_command_assumed") is False)
+            if not (approved_standard or approved_literal):
                 raise ChapterError("Unresolved character continuity flag: " + eid)
         elif status != "REVIEWED_WITH_EVIDENCE":
             raise ChapterError("Character continuity review not approved: " + eid)
