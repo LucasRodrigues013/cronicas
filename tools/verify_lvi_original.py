@@ -84,13 +84,35 @@ def verify_lvi(root: Path, episode_id: str) -> dict:
         raise ArchiveInvalid(f"{episode_id}: archive and original SHA256 diverge")
 
     events = read_json(folder / "eventos_e_consequencias.json")
-    if not isinstance(events, list) or not events:
-        raise ArchiveInvalid(f"{episode_id}: zero source-anchored events")
+    if not isinstance(events, list):
+        raise ArchiveInvalid(f"{episode_id}: invalid event sidecar")
     original_text = source.decode("utf-8")
-    for i, event in enumerate(events, 1):
-        anchor = event.get("source_anchor") if isinstance(event, dict) else None
-        if not isinstance(anchor, str) or not anchor.strip() or anchor not in original_text:
-            raise ArchiveInvalid(f"{episode_id}: event {i} lacks a literal source anchor")
+    lines = original_text.splitlines()
+    if events:
+        # Existing author-exported episodes contain original source-anchor events.
+        for i, event in enumerate(events, 1):
+            anchor = event.get("source_anchor") if isinstance(event, dict) else None
+            if not isinstance(anchor, str) or not anchor.strip() or anchor not in original_text:
+                raise ArchiveInvalid(f"{episode_id}: event {i} lacks a literal source anchor")
+    else:
+        # The pinned main draft_inbox uses [] in draft/events; reviewed, evidence-
+        # anchored candidates are stored separately. Never invent new events.
+        reviewed = read_json(root / "episodes" / episode_id / "review" / "eventos_revisados.json")
+        candidates = reviewed.get("events") if isinstance(reviewed, dict) else None
+        if (reviewed.get("review_status") != "REVISADO"
+                or reviewed.get("source_sha256") != digest(source)
+                or not isinstance(candidates, list) or not candidates):
+            raise ArchiveInvalid(f"{episode_id}: zero reviewed events in the draft pipeline")
+        for i, event in enumerate(candidates, 1):
+            anchor = event.get("source") if isinstance(event, dict) else None
+            if not isinstance(anchor, dict):
+                raise ArchiveInvalid(f"{episode_id}: missing evidence for reviewed event {i}")
+            line, literal = anchor.get("line"), anchor.get("literal_anchor")
+            if (type(line) is not int or not 1 <= line <= len(lines)
+                    or not isinstance(literal, str) or not literal.strip()
+                    or literal not in lines[line - 1]
+                    or anchor.get("sha256") != digest(source)):
+                raise ArchiveInvalid(f"{episode_id}: reviewed event {i} is not anchored in exact original")
 
     review = read_json(review_file)
     if (not isinstance(review, dict)
