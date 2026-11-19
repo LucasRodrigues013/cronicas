@@ -87,6 +87,28 @@ class OriginalSourceTests(unittest.TestCase):
         result = verify_lvi(self.root, self.episode_id)
         self.assertEqual(result["result"], "ORIGINAL_MATCHED_ARCHIVE_REVIEWED")
 
+    def test_predelivery_source_can_be_saved_but_does_not_claim_ui_parity(self):
+        self.seed_complete()
+        path = self.folder / "source_proof.json"
+        proof = json.loads(path.read_text(encoding="utf-8"))
+        proof["source_kind"] = "ASSISTANT_PREDELIVERY_EXACT_TEXT"
+        proof["source_locator"] = "PREDRAFT_SAME_TURN:fixture-response"
+        proof["ui_parity"] = "NOT_INDEPENDENTLY_VERIFIED"
+        path.write_bytes(encode(proof))
+        self.assertEqual(verify_lvi(self.root, self.episode_id)["result"],
+                         "ORIGINAL_MATCHED_ARCHIVE_REVIEWED")
+
+    def test_predelivery_source_cannot_fake_independent_ui_export(self):
+        self.seed_complete()
+        path = self.folder / "source_proof.json"
+        proof = json.loads(path.read_text(encoding="utf-8"))
+        proof["source_kind"] = "ASSISTANT_PREDELIVERY_EXACT_TEXT"
+        proof["source_locator"] = "PREDRAFT_SAME_TURN:fixture-response"
+        proof["ui_parity"] = "CLAIMED_INDEPENDENTLY_VERIFIED"
+        path.write_bytes(encode(proof))
+        with self.assertRaises(ArchiveInvalid):
+            verify_lvi(self.root, self.episode_id)
+
     def test_modified_original_is_rejected(self):
         path = self.seed_complete()
         with path.open("ab") as f:
