@@ -1,0 +1,232 @@
+{
+  "schema": "worldroot-bookvi-author-worldbuilding-baseline-v18",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "book": "LIVRO_VI_AS_COROAS_PARTIDAS",
+  "date": "2026-11-19",
+  "authorization": "USER_EXPLICIT_REQUEST_CONFIRM_EXISTING_DESIGN_AND_PREPARE_NEW_CHAT_LAUNCH",
+  "authority": "AUTHOR_RATIFIED_PREPRODUCTION_DESIGN_NOT_NARRATIVE_CANON",
+  "approved_context": [
+    "Nove Coroas nomes/capitais, escala populacional de Velkar e atlas continental devem ser consolidados como referências de produção, não alegados como conhecidos em cena",
+    "Funcionamento integral da Rede dos Arquitetos permanece desconhecido, apenas partes do Coração são fatos canônicos",
+    "Lucas não cria novas vidas conscientes nesta fase, usa GÊNESE plena em tecnologia, infraestrutura e colaboração",
+    "Lucas inspira-se tonalmente em Tony Stark/Lloyd Frontera, Velkar no arquétipo conquistador de Alexandre, sem copiar originais",
+    "Uma nova mensagem autoral contendo prompt explícito permitirá começar o Livro VI; esta consolidação não inicia episódio"
+  ],
+  "source_truth": {
+    "head": "story-archive/canon/HEAD.json",
+    "head_guard": {
+      "book": "Livro V",
+      "episode_id": "LV-C16-PV-D537-AUTHOR-SOURCE",
+      "sequence": 9,
+      "day": 537,
+      "hour": "23h46",
+      "book_closed": true
+    },
+    "main_policy": "main/worldroot/editorial_policy.json v12/P01-P64",
+    "atlas": "planning/book-vi/atlas-avaren-geografia-rotas-v11-PROPOSTA.json",
+    "crowns": "planning/book-vi/nine-crowns-vassal-lords-v8-PROPOSTA.md",
+    "imperial": "planning/book-vi/dominato-escala-militar-v14-PROPOSTA.json",
+    "architects": "planning/book-vi/aerun-coracao-rede-arquitetos-revelacoes-v15-SIGILOSO-PROPOSTA.md",
+    "characters": "planning/book-vi/characters-v2.json",
+    "story_map": "planning/book-vi/mapa-30-capitulos-epico-cinco-passos-v16-PROPOSTA.md",
+    "master": "planning/book-vi/ENTREGA-FINAL-CINCO-PASSOS-v17-PREPRODUCAO.md",
+    "planetary_bible": "https://docs.google.com/document/d/17LyxUfIkKKuAZZmi9j44Ovvdmn4GMlzQVOvHKlqa-zc/edit"
+  },
+  "geography": {
+    "status": "AUTHOR_RATIFIED_WORKING_ATLAS_MODEL_NOT_NARRATED_FACT",
+    "landmass": "Avarenn (working continent name, no automatic character knowledge)",
+    "confirmed_canon": [
+      {
+        "item": "Eixo Aurora, centro de Três Arcos até Campo Aurora",
+        "value_km": 33.2,
+        "source": "D522"
+      },
+      {
+        "item": "Distância reta Três Arcos–Campo Aurora",
+        "value_km": 24,
+        "source": "D522"
+      },
+      {
+        "item": "Grande Avenida",
+        "value_km": 8,
+        "source": "D505"
+      },
+      {
+        "item": "Três Arcos a capital de Thalor",
+        "value_days": 7,
+        "source": "D423–D430 via comitiva, não novo quilometragem confirmada"
+      }
+    ],
+    "working_road_routes": [
+      {
+        "to": "Capital de Thalor",
+        "road_km": 320,
+        "carriage_days_model": 7.1
+      },
+      {
+        "to": "Vélath",
+        "road_km": 470,
+        "carriage_days_model": 10.4
+      },
+      {
+        "to": "Calderva",
+        "road_km": 545,
+        "carriage_days_model": 12.1
+      },
+      {
+        "to": "Terras anãs (nó DW do atlas Avarenn)",
+        "road_km": 795,
+        "carriage_days_model": 17.7
+      },
+      {
+        "to": "Terras élficas (nó EL)",
+        "road_km": 880,
+        "carriage_days_model": 19.6
+      },
+      {
+        "to": "Confederações orcs (nó OR)",
+        "road_km": 750,
+        "carriage_days_model": 16.7
+      }
+    ],
+    "speed_assumptions": "Carruagem 45km/dia; ARGOS 450km/h hipotéticos em modelos desde Campo Aurora, NÃO cruzeiro certificado.",
+    "unknown_distances": [
+      "Distância marítima de Avarenn até continente do Dominato",
+      "Extensão geográfica do Dominato e fronteiras físicas de cada Coroa",
+      "Distâncias entre Avarenn e Kharum/Namaris/Selkara/Orúndia",
+      "Portos e pistas disponíveis para ARGOS em destinos estrangeiros"
+    ],
+    "critical_disambiguation": "Bíblia Planetária v3.3 chama Kharum continente CT02, mas atlas v11 tem um nó DW 'Terras anãs' ligado por estrada em Avarenn e povos v12 usa título 'Passagens anãs de Kharum'. NÃO inferir que a estrada de 795km chegue ao continente Kharum nem ao reino natal de Tharvek. Precisará reconciliação cartográfica e confirmação da localização de sua terra antes de narrar a viagem.",
+    "narrative_use": "Atlas interno pode orientar tempos aproximados das rotas listadas; nomes/quilometragem exatos só como fato in-world após medição, mapa, testemunho ou visita em cena."
+  },
+  "dominato": {
+    "status": "AUTHOR_RATIFIED_WORLD_SCALE_MODEL_NOT_CANON_CENSUS",
+    "inhabitants_total": 42000000,
+    "inhabitants_crowns_total": 32400000,
+    "inhabitants_imperial_core": 9600000,
+    "armed_forces_active": 260000,
+    "armed_forces_reserve": 190000,
+    "nominal_total": 450000,
+    "arcane_corps_included_in_active": 20000,
+    "fleet_hulls_total": 520,
+    "factions": "Dominato das Nove Coroas, em outro continente não cartografado em relação precisa a Avarenn",
+    "guardrails": [
+      "42 milhões NÃO equivale a 42 milhões de combatentes",
+      "Números não provam forças que podem chegar à Avarenn nem navios operantes em cada teatro",
+      "20 mil especialistas arcanos já incluídos nos 260 mil ativos",
+      "Não inventar que Lucas ou qualquer personagem conhece estes números antes de fontes efetivas",
+      "Escala e estrutura são fixadas como parâmetros do WORLDROOT para construção futura; continuam passíveis de alteração por cena descoberta ou decisão autoral explícita"
+    ]
+  },
+  "nine_crowns": {
+    "status": "AUTHOR_RATIFIED_PRECANON_NAMES_CAPITALS_NOT_YET_APPEARED",
+    "location": "Territórios vassalos no continente do Dominato, distintos dos reinos de Avarenn",
+    "legal_chain": "Velkar soberano > Orelia chanceler/direito imperial > lordes governam vassalagens; generais/subgenerais são comandos militares paralelos",
+    "entries": [
+      {
+        "no": 1,
+        "crown": "Basalto",
+        "lord": "Dornak Basren",
+        "capital": "Kardem",
+        "predominant_general": "Rhazek Korr"
+      },
+      {
+        "no": 2,
+        "crown": "Celeiros de Ouro",
+        "lord": "Maeritha Calven",
+        "capital": "Aldemir",
+        "predominant_general": "Rhazek Korr"
+      },
+      {
+        "no": 3,
+        "crown": "Estradas de Cinza",
+        "lord": "Urgath Khor",
+        "capital": "Gor-Khadan",
+        "predominant_general": "Rhazek Korr"
+      },
+      {
+        "no": 4,
+        "crown": "Espelhos de Vidro",
+        "lord": "Selveris Nahl",
+        "capital": "Velmoria",
+        "predominant_general": "Serakh Il-Varenn"
+      },
+      {
+        "no": 5,
+        "crown": "Jardins de Cinza",
+        "lord": "Ortheon Veil",
+        "capital": "Syravel",
+        "predominant_general": "Serakh Il-Varenn"
+      },
+      {
+        "no": 6,
+        "crown": "Sinos de Cristal",
+        "lord": "Vaelis Norr",
+        "capital": "Orsênia",
+        "predominant_general": "Serakh Il-Varenn"
+      },
+      {
+        "no": 7,
+        "crown": "Estreitos Negros",
+        "lord": "Corvann Merek",
+        "capital": "Varr-Ul",
+        "predominant_general": "Varkhess Serev"
+      },
+      {
+        "no": 8,
+        "crown": "Ilhas do Farol",
+        "lord": "Nerissa Valmor",
+        "capital": "Lunamar",
+        "predominant_general": "Varkhess Serev"
+      },
+      {
+        "no": 9,
+        "crown": "Estaleiros de Ferro",
+        "lord": "Agram Solven",
+        "capital": "Dornessa",
+        "predominant_general": "Varkhess Serev"
+      }
+    ],
+    "limitations": [
+      "Não definir genealogias, idades, raças ou datas de conquistas sem fonte adicional",
+      "Divisão 3+3+3 é predominância operacional, não propriedade civil dos generais",
+      "Casa Vareth e Farol da Coroa de Calderva NÃO são uma das Nove Coroas",
+      "Lordes mantêm agendas, lealdades diversas e podem trair ou ser derrotados; nenhum efeito predeterminado",
+      "O protagonista desconhece nomes e capital provincial até notícias autênticas"
+    ]
+  },
+  "architects": {
+    "status": "CANON_PARTIAL_CONFIRMED_AND_NETWORK_OPERATION_EXPLICITLY_UNKNOWN",
+    "known_canon": [
+      "Coração de Convergência selado sob a cidade antiga (D6); circuito periférico foi testado e apresentou fluxo residual",
+      "Tessa Arin deixou gravação e procedimentos de isolamento (D112), não é comprovadamente viva no presente",
+      "Coração RECEBE e REDISTRIBUI mana; NÃO gera energia infinita",
+      "Unidades A/B/C, nós Observação/Forma/Vínculo, nó de Validação Secundária conhecido D167, mapas incompletos",
+      "Arquivo das Marés é instalação exterior com localização ainda desconhecida"
+    ],
+    "not_confirmed": [
+      "Se existiu rede antiga de transporte de matéria ou pessoas entre cidades",
+      "Rede dos Meridianos Vivos é nome e arquitetura PROPOSTOS, não dispositivo confirmado como operacional",
+      "Uso de Observação/Forma/Vínculo/Validação como sistema completo universal de travessias",
+      "Motivo final do isolamento e quem tentou operar sistema sem autorização",
+      "Chave de Conferência dos Meridianos, localização exata da segunda estação e rotas intercontinentais",
+      "Relação com a origem de GÊNESE, Aethron, Velkar ou o desaparecimento de Talis"
+    ],
+    "discovery_process": "Miren/Astra investigam por ensaios, registros, testemunhos, artefatos e expedições; diferenciação PROPOSTO/DEMONSTRADO/INFERIDO; não exigir segredo como limitação de GÊNESE moderna."
+  },
+  "story": {
+    "title": "AS COROAS PARTIDAS",
+    "saga": "A ERA DAS NOVE COROAS",
+    "movements": 6,
+    "chapter_outline_reference": 30,
+    "part_outline_reference": 150,
+    "authorial_focus": "Lucas inventivo expressivo (Stark+Lloyd tonal), Miren companheira autônoma, Velkar conquistador estruturador (Alexandre como arquétipo), tecnologia+aliança vs conquista+magia+inteligência, aventuras e alta fantasia sem burocratização.",
+    "no_life_creation_rule": "Não criar novas vidas conscientes via GÊNESE nesta etapa; obras, instrumentos, veículos e tecnologia disponíveis conforme poderes canônicos, sem nerf.",
+    "opening": "D538 se autor explicitamente pedir; corrida por Três Arcos → memórias da Terra → café com Miren → conversa com Kael/Lysa/Conselho → transformação urbana; capítulo 1 pode levar vários dias ao longo de partes, sem pular cronologia",
+    "not_started": true,
+    "rejected_episode": "LVI-C01-PI-D538-AUTHOR-SOURCE",
+    "start_authorization": "REQUIRES_EXPLICIT_NEW_CHAT_USER_PROMPT",
+    "immutable_canon_untouched": true
+  },
+  "decision_scope": "Autor ratifica dados como parâmetros e identidades de PREPRODUÇÃO, não reescreve a história antiga nem afirma que a rede desconhecida foi descoberta."
+}
