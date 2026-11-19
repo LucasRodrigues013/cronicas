@@ -54,6 +54,15 @@ class DayArcAuditTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             inspect_day_arc("## I — Teste\nDIA 533 · 26h80")
 
+    def test_author_exported_plain_scene_headings_do_not_lose_day(self):
+        text = ("I — A manhã\\nDIA 538 · 06h08 — Quarto\\n"
+                "Lucas tomou café.\\nII — A praça\\nDIA 538 · 11h32 — Centro\\n"
+                "Lucas reencontrou Kael.\\nFIM DA PARTE I DE V")
+        result = inspect_day_arc(text)
+        self.assertEqual(result["days_touched"], [538])
+        self.assertTrue(result["chronological"])
+        self.assertEqual(result["last"], {"day": 538, "hour": "11h32"})
+
     def test_no_side_effects(self):
         prose = "## I — Amanhecer\nDIA 533 · 07h15\n"
         before = prose
