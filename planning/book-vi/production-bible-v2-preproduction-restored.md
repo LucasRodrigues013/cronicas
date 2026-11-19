@@ -1,3 +1,5 @@
+> **ADDENDUM v4 DE ABERTURA (18/11/2026):** manter título AS COROAS PARTIDAS, seis movimentos e 25–35 capítulos; o autor refinou o início para LUCAS com Kael, Lysa, Conselho e Miren, modernizando TODA Três Arcos e criando bairro para 100 mil em até 24h. Malha Aurora (3.600 unidades existentes, Vértice coordenador) mantém a estrutura física e transporte 24h até famílias chegarem; expansão opcional nova deve ser marcada pré-canônica. AERÚN cresce e recebe gente, Tharvek/Elyrien recebem a notícia em viagem e decidem procurar Três Arcos, e Ithran verifica o fenômeno e planeja matar representantes, sem sucesso automático. Detalhe vigente em `planning/book-vi/main-plot-city-opening-v4-PREPRODUCAO.md` e `planning/book-vi/tres-arcos-malha-aurora-citywide-v2-PREPRODUCAO.md`. **DIREÇÃO PRÉ-PRODUTIVA, NÃO NARRADA.**
+
 # CRÔNICAS DE UM NOVO MUNDO — LIVRO VI: AS COROAS PARTIDAS
 ## Bíblia de produção v2.0 — RESTAURAÇÃO DO PLANEJAMENTO ORIGINAL (pré-cânone)
 
