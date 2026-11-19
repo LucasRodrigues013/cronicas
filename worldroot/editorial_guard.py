@@ -85,17 +85,19 @@ def compact_brief(policy: dict, scene_tags=(), max_chars: int = 1750) -> dict:
     ))
     lines = [
         "WORLDROOT v" + str(policy["version"]),
-        "TITULO P43/P44: AS COROAS PARTIDAS; PRE-PRODUCAO, r17 rejeitado, nao narrar sem ordem.",
-        "ABERTURA P53: D538 acorda, corre cidade, lembra Terra, cafe Miren, depois Kael/Lysa/Conselho.",
-        "ESTETICA P54: escala Dubai, arquitetura renascentista arcana, arte, fontes e parques.",
-        "REDES P50/P55: Malha 3600/Vertice D531; Costura VIDEO regional D533; expandir antenas/avisos 24h.",
-        "TRAMA P49/P51/P56: cidade toda+bairro 100mil em ate 24h; emissarios viajam, Ithran ataca; inicio nao climax.",
-        "AERUN P52: pesquisa/acolhimento com Miren/Astra, proteger setores sigilosos.",
-        "TEMPO P45/P47: um dia por Parte; seis movimentos/25-35 capitulos.",
-        "ISEKAI P35-P42: Lucas expressivo, GENESE plena, romance, ARGOS, Talis.",
-        "VIDA P28/P29/P30: convivencia, surpresa, nao relatorios; canon e 10mil nao sao quota.",
+        "TITULO: AS COROAS PARTIDAS; PRE-PRODUCAO, r17 rejeitado; nao narrar sem ordem.",
+        "ABERTURA P53: D538 acorda, corre cidade, lembra Terra, cafe Miren, depois Kael/Lysa.",
+        "CIDADE P54/P59: renascentista; Kael/Lysa, AERUN e Forja crescem; inicio nao climax.",
+        "REDES P55: Costura VIDEO regional D533; Malha 3600/Vertice D531; expansao urbana.",
+        "ATLAS P57: Eixo33,2km Campo, Thalor320/Cald545 PROPOSTAS; ARGOS1462 pico nao cruzeiro.",
+        "POVOS P58: reinos, Khelen, anoes, elfos, orcs e casas antigas autonomas.",
+        "VELKAR P60: 42M/260mil/520 navios PROPOSTA; batalhas epicas, GENESE plena.",
+        "ARQUITETOS P61: Coracao distribui mana; Tessa, Marés/chave PROPOSTAS.",
+        "MEIO P62: portais/LEVIATA Livro VI como ponte, nao clímax.",
+        "TEMPO P63: C1 cinco partes em 2-3dias, uma data por Parte; escolhas livres.",
+        "VIDA P28/P29/P30: Miren, ARGOS, Talis, humor, nao relatorios.",
     ]
-    prioritized = ("P53", "P54", "P55", "P56", "P49", "P50", "P51", "P52", "P43", "P44", "P45", "P46", "P47", "P48", "P35", "P36", "P37", "P38", "P39", "P40", "P41", "P42", "P31", "P32", "P33", "P34", "P26", "P27", "P28", "P29", "P30")
+    prioritized = ("P57", "P58", "P59", "P60", "P61", "P62", "P63", "P64", "P53", "P54", "P55", "P56", "P49", "P50", "P51", "P52", "P43", "P44", "P45", "P46", "P47", "P48", "P35", "P36", "P37", "P38", "P39", "P40", "P41", "P42", "P31", "P32", "P33", "P34", "P26", "P27", "P28", "P29", "P30")
     available = {r["id"] for r in active}
     selected = [rid for rid in prioritized if rid in available]
     for rule in scored:
