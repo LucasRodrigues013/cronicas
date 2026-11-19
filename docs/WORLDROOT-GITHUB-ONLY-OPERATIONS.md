@@ -1,5 +1,7 @@
 # WORLDROOT · OPERAÇÃO GITHUB-ONLY | Crônicas de um Novo Mundo
 
+> **VIGENTE — CICLOS 1–3 (19/11/2026):** em cada retomada, consultar primeiro `canon/HEAD.json` e `ops/RESUME.json` **vivos**, depois a fonte literal do último episódio, o feedback de Lucas e `docs/WORLDROOT-THREE-CYCLES-v1.md`. O snapshot `ops/WORLDROOT-GITHUB-ONLY-STATE-20261119.json` é APENAS histórico datado. O HEAD é Livro VI C01 Parte III D539, sequência 12; Parte IV D540 foi arquivada como rascunho íntegro, sem nova escolha de fechamento. Memória: `memory/deltas/` e `memory/canon/`; Livro V C16 tem selo `chapters/LIVRO-V-C16/CANONICAL_SEAL.json`. Nunca inferir fatos ou escolhas a partir de um README antigo.
+
 **Autor — decisão de infraestrutura de 19/11/2026:** GitHub privado é a única fonte operacional para motor, história, cronologia, eventos, conhecimento, fichas, escolhas, auditoria e backup dos capítulos. **Google Drive passa a LEGADO:** links e documentos antigos continuam como referência histórica, mas o motor NÃO exige nem executa novas sincronizações para Drive. Nenhum documento existente do Drive é apagado.
 
 ## Onde está cada componente
@@ -33,15 +35,15 @@
 |---|---:|---|---|
 | Livro VI C01 Parte I (R2, reautorizada) | 538 | `fd6aa23fa1ea5e929d81e0aaebc7776ca30a697120f20d310f9b3fd1f25f98ee` | **CANÔNICO** (sequência 10–12; fonte literal inalterada) |
 | Livro VI C01 Parte II | 538 | `69be6e8eb86e68718c3eccdb823456a0e913816f94e1ca607ff44dc37d9eb740` | **CANÔNICO** (sequência 10–12; fonte literal inalterada) |
-| Livro VI C01 Parte III | 539 | `74bb2ae185f21262a292d1a48e2c75e703d8ee92659f43f97c39d0174c2fd2e7` | Original exportado, arquivado, **draft com flag CAEDREN_ROLE_LOCATION** |
+| Livro VI C01 Parte III | 539 | `74bb2ae185f21262a292d1a48e2c75e703d8ee92659f43f97c39d0174c2fd2e7` | **CANÔNICO por ratificação literal** (sequência 12); flag histórica Caedren e afiliação/rota NÃO comprovadas |
 
 Os textos têm **81.190 / 93.587 / 78.749 bytes UTF-8**, respectivamente, e 5 alternativas cada. Verificar por `python tools/verify_lvi_original.py --root . --require-all`. O export foi apresentado pelo usuário como TXT visível, não como serialização exata de DIL: a próxima interface deve aplicar a política UX, preservando integralmente a prosa e escolhas, mas não prometer reprodução pixel a pixel. Não apagar o antigo D538 rejeitado: ele permanece somente no histórico editorial de auditoria.
 
 ### Pendência narrativa crítica que NÃO pode ser tratada como fato de mundo
 
-Em D539 a narrativa original pôs Caedren no pátio da Legião e em posição relacionada a Varo sem deslocamento ou adesão militar documentados. **Caedren é o Herói das Sete Estradas, amigo livre de Lucas, não legionário automaticamente.** A fonte literal deve permanecer inalterada; não inventar uma viagem e não reconhecer cargo/cidadania com base nesse trecho. Exigir reconciliação editorial aprovada pelo autor **antes de promover a Parte III ao cânone**. Interlúdios de Tharvek, Elyrien e Velkar não concedem a Lucas conhecimento instantâneo.
+Em D539 a narrativa original pôs Caedren no pátio da Legião e em posição relacionada a Varo sem deslocamento ou adesão militar documentados. **Caedren é o Herói das Sete Estradas, amigo livre de Lucas, não legionário automaticamente.** A fonte literal deve permanecer inalterada; não inventar uma viagem e não reconhecer cargo/cidadania com base nesse trecho. A presença literal de Caedren em D539 já foi ratificada pelo autor em `editorial/recovery/reconciliations/LVI-C01-PIII-D539-AUTHOR-SOURCE.json`; isso **não autoriza inferir rota de viagem, patente ou comando**. Interlúdios de Tharvek, Elyrien e Velkar não concedem a Lucas conhecimento instantâneo.
 
-As escolhas 4 feitas após Partes I e II estão no texto original da conversa, mas registros e promoções sequenciais ainda precisam ser verificados individualmente. O usuário **ainda não escolheu a Parte IV**. **Não elevar HEAD para D539 por demanda de auditoria.**
+As escolhas 4 das Partes I e II foram ratificadas com fonte real; D539 Parte III foi ratificada excepcionalmente como cânone sem escolha futura inventada. A Parte IV D540 está arquivada como rascunho e ainda não recebeu uma nova escolha de fechamento. **Não tentar fechar D539 novamente** nem promover D540 por auditoria.
 
 ## Qualidade, planejamento e escopo
 
