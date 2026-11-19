@@ -85,6 +85,13 @@ jobs:
               print("Idempotent inbox run: no unarchived episode.")
           else:
               receipt=archive_inbox(root,pending[0])
+              if pending[0].stem.startswith("LVI-"):
+                  import sys
+                  sys.path.insert(0, str((root/"tools").resolve()))
+                  from lvi_predelivery import prepare_lvi
+                  source_proof = prepare_lvi(root, pending[0].stem)
+                  print("LVI_PREDELIVERY_PROOF:", source_proof["episode_id"],
+                        source_proof["sha256"], source_proof["ui_parity"])
               with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:
                   output.write("new_episode=" + pending[0].stem + "\n")
               gate=audit_release(root,pending[0].stem)
@@ -157,7 +164,7 @@ jobs:
           set -euo pipefail
           git -C archive config user.name "github-actions[bot]"
           git -C archive config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git -C archive add -A -- episodes/ delivery/reader_receipts/
+          git -C archive add -A -- episodes/ delivery/reader_receipts/ editorial/recovery/originals/
           if git -C archive diff --cached --quiet; then
             echo 'No new archive bytes; idempotent recovery.'
             exit 0
