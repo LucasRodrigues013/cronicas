@@ -1,0 +1,547 @@
+{
+  "schema": "worldroot-atlas-v11",
+  "status": "PROPOSTA_GEOGRAFICA_NAO_CANONICA",
+  "units": "km",
+  "origin": "Três Arcos",
+  "axes": {
+    "x": "E",
+    "y": "N"
+  },
+  "projection": "SCHEMATIC_PLANAR_NOT_LATLONG",
+  "canonical": {
+    "avenida_km": 8,
+    "eixo_aurora_km": 33.2,
+    "eixo_urbano_km": 4.6,
+    "eixo_rural_km": 28.6,
+    "campo_straight_km": 24,
+    "aerun_campus_ha": 72,
+    "campo_ha": 320,
+    "argos_flight005_peak_observed_kmh": 1462,
+    "argos_certified_cruise_kmh": null,
+    "thalor_trip_days_D423_D430": 7
+  },
+  "assumptions": {
+    "horse_km_day": 48,
+    "carriage_km_day": 45,
+    "merchant_km_day": 28,
+    "army_km_day": 22,
+    "relay_km_day": 90,
+    "argos_reference_cruise_kmh": 450,
+    "argos_route_detour_factor": 1.12,
+    "argos_operations_overhead_h": 0.5,
+    "argos_access_to_campo_h": 1.2,
+    "urban_tram_speed_kmh": 24,
+    "full_city_route_proposed_km": 16
+  },
+  "coastline_km": [
+    [
+      -850,
+      480
+    ],
+    [
+      -760,
+      720
+    ],
+    [
+      -430,
+      820
+    ],
+    [
+      -90,
+      750
+    ],
+    [
+      320,
+      760
+    ],
+    [
+      700,
+      650
+    ],
+    [
+      930,
+      400
+    ],
+    [
+      870,
+      130
+    ],
+    [
+      920,
+      -160
+    ],
+    [
+      720,
+      -330
+    ],
+    [
+      600,
+      -460
+    ],
+    [
+      370,
+      -450
+    ],
+    [
+      275,
+      -430
+    ],
+    [
+      170,
+      -480
+    ],
+    [
+      -120,
+      -670
+    ],
+    [
+      -410,
+      -590
+    ],
+    [
+      -710,
+      -300
+    ],
+    [
+      -870,
+      20
+    ]
+  ],
+  "nodes": [
+    {
+      "id": "TA",
+      "name": "Três Arcos",
+      "x_km": 0,
+      "y_km": 0,
+      "status": "C"
+    },
+    {
+      "id": "CA",
+      "name": "Campo Aurora",
+      "x_km": 24,
+      "y_km": 0,
+      "status": "C/XY-P"
+    },
+    {
+      "id": "AR",
+      "name": "AERÚN",
+      "x_km": 5,
+      "y_km": 3,
+      "status": "C/XY-P"
+    },
+    {
+      "id": "ND",
+      "name": "Distrito Novo",
+      "x_km": 10,
+      "y_km": 0,
+      "status": "P"
+    },
+    {
+      "id": "HA",
+      "name": "Halvern",
+      "x_km": -160,
+      "y_km": 70,
+      "status": "C/XY-P"
+    },
+    {
+      "id": "AV",
+      "name": "Arvendell",
+      "x_km": -350,
+      "y_km": 180,
+      "status": "C/XY-P"
+    },
+    {
+      "id": "SE",
+      "name": "Seral",
+      "x_km": -260,
+      "y_km": -180,
+      "status": "C/XY-P"
+    },
+    {
+      "id": "PL",
+      "name": "Passagem das Lanternas",
+      "x_km": 150,
+      "y_km": 90,
+      "status": "C/XY-P"
+    },
+    {
+      "id": "TH",
+      "name": "Capital de Thalor",
+      "x_km": 250,
+      "y_km": 155,
+      "status": "C/XY-P"
+    },
+    {
+      "id": "VT",
+      "name": "Vélath · Grande Torre",
+      "x_km": 350,
+      "y_km": -140,
+      "status": "C/XY-P"
+    },
+    {
+      "id": "CV",
+      "name": "Calderva",
+      "x_km": 260,
+      "y_km": -400,
+      "status": "C/XY-P"
+    },
+    {
+      "id": "VY",
+      "name": "Veyra · entreposto",
+      "x_km": 760,
+      "y_km": -315,
+      "status": "C/XY-P"
+    },
+    {
+      "id": "PR",
+      "name": "Passagem de Ressaca",
+      "x_km": 170,
+      "y_km": -350,
+      "status": "C/XY-P"
+    },
+    {
+      "id": "DW",
+      "name": "Terras anãs",
+      "x_km": -590,
+      "y_km": 420,
+      "status": "P"
+    },
+    {
+      "id": "EL",
+      "name": "Terras élficas",
+      "x_km": 735,
+      "y_km": 320,
+      "status": "P"
+    },
+    {
+      "id": "OR",
+      "name": "Confederações orcs",
+      "x_km": -610,
+      "y_km": -300,
+      "status": "P"
+    },
+    {
+      "id": "PC",
+      "name": "Planalto das Pedras Cantantes",
+      "x_km": 100,
+      "y_km": 350,
+      "status": "C/XY-P"
+    },
+    {
+      "id": "AM",
+      "name": "Colinas de Âmbar",
+      "x_km": -100,
+      "y_km": 150,
+      "status": "C/XY-P"
+    }
+  ],
+  "edges": [
+    {
+      "a": "TA",
+      "b": "CA",
+      "km": 33.2,
+      "mode": "ROAD",
+      "status": "CANON-D522"
+    },
+    {
+      "a": "TA",
+      "b": "AR",
+      "km": 7,
+      "mode": "ROAD",
+      "status": "PROPOSTA"
+    },
+    {
+      "a": "AR",
+      "b": "ND",
+      "km": 6.5,
+      "mode": "ROAD",
+      "status": "PROPOSTA"
+    },
+    {
+      "a": "TA",
+      "b": "ND",
+      "km": 11,
+      "mode": "ROAD",
+      "status": "PROPOSTA"
+    },
+    {
+      "a": "TA",
+      "b": "HA",
+      "km": 195,
+      "mode": "ROAD",
+      "status": "PROPOSTA"
+    },
+    {
+      "a": "HA",
+      "b": "AV",
+      "km": 240,
+      "mode": "ROAD",
+      "status": "PROPOSTA"
+    },
+    {
+      "a": "TA",
+      "b": "AM",
+      "km": 200,
+      "mode": "ROAD",
+      "status": "PROPOSTA"
+    },
+    {
+      "a": "AM",
+      "b": "AV",
+      "km": 300,
+      "mode": "ROAD",
+      "status": "PROPOSTA"
+    },
+    {
+      "a": "TA",
+      "b": "PL",
+      "km": 185,
+      "mode": "ROAD",
+      "status": "PROPOSTA"
+    },
+    {
+      "a": "PL",
+      "b": "TH",
+      "km": 135,
+      "mode": "ROAD",
+      "status": "PROPOSTA"
+    },
+    {
+      "a": "TA",
+      "b": "VT",
+      "km": 470,
+      "mode": "ROAD",
+      "status": "PROPOSTA"
+    },
+    {
+      "a": "TH",
+      "b": "VT",
+      "km": 370,
+      "mode": "ROAD",
+      "status": "PROPOSTA"
+    },
+    {
+      "a": "VT",
+      "b": "VY",
+      "km": 525,
+      "mode": "ROAD",
+      "status": "PROPOSTA"
+    },
+    {
+      "a": "VY",
+      "b": "CV",
+      "km": 630,
+      "mode": "ROAD",
+      "status": "PROPOSTA"
+    },
+    {
+      "a": "TA",
+      "b": "PR",
+      "km": 420,
+      "mode": "ROAD",
+      "status": "PROPOSTA"
+    },
+    {
+      "a": "PR",
+      "b": "CV",
+      "km": 125,
+      "mode": "ROAD",
+      "status": "PROPOSTA"
+    },
+    {
+      "a": "TA",
+      "b": "SE",
+      "km": 345,
+      "mode": "ROAD",
+      "status": "PROPOSTA"
+    },
+    {
+      "a": "SE",
+      "b": "OR",
+      "km": 405,
+      "mode": "ROAD",
+      "status": "PROPOSTA"
+    },
+    {
+      "a": "AV",
+      "b": "DW",
+      "km": 360,
+      "mode": "ROAD",
+      "status": "PROPOSTA"
+    },
+    {
+      "a": "TH",
+      "b": "EL",
+      "km": 560,
+      "mode": "ROAD",
+      "status": "PROPOSTA"
+    },
+    {
+      "a": "TH",
+      "b": "PC",
+      "km": 300,
+      "mode": "ROAD",
+      "status": "PROPOSTA"
+    },
+    {
+      "a": "CV",
+      "b": "VY",
+      "km": 610,
+      "mode": "SEA",
+      "status": "PROPOSTA"
+    }
+  ],
+  "examples": [
+    {
+      "id": "TH",
+      "distance_direct_km": 294.2,
+      "air_corridor_km": 329.4,
+      "argos_block_min": 74,
+      "road_km": 320,
+      "carriage_days": 7.1,
+      "army_days": 14.5,
+      "route": [
+        "TA",
+        "PL",
+        "TH"
+      ]
+    },
+    {
+      "id": "CV",
+      "distance_direct_km": 477.1,
+      "air_corridor_km": 534.3,
+      "argos_block_min": 101,
+      "road_km": 545,
+      "carriage_days": 12.1,
+      "army_days": 24.8,
+      "route": [
+        "TA",
+        "PR",
+        "CV"
+      ]
+    },
+    {
+      "id": "VT",
+      "distance_direct_km": 377,
+      "air_corridor_km": 422.2,
+      "argos_block_min": 86,
+      "road_km": 470,
+      "carriage_days": 10.4,
+      "army_days": 21.4,
+      "route": [
+        "TA",
+        "VT"
+      ]
+    },
+    {
+      "id": "DW",
+      "distance_direct_km": 724.2,
+      "air_corridor_km": 811.1,
+      "argos_block_min": 138,
+      "road_km": 795,
+      "carriage_days": 17.7,
+      "army_days": 36.1,
+      "route": [
+        "TA",
+        "HA",
+        "AV",
+        "DW"
+      ]
+    },
+    {
+      "id": "EL",
+      "distance_direct_km": 801.6,
+      "air_corridor_km": 897.8,
+      "argos_block_min": 150,
+      "road_km": 880,
+      "carriage_days": 19.6,
+      "army_days": 40,
+      "route": [
+        "TA",
+        "PL",
+        "TH",
+        "EL"
+      ]
+    },
+    {
+      "id": "OR",
+      "distance_direct_km": 679.8,
+      "air_corridor_km": 761.4,
+      "argos_block_min": 132,
+      "road_km": 750,
+      "carriage_days": 16.7,
+      "army_days": 34.1,
+      "route": [
+        "TA",
+        "SE",
+        "OR"
+      ]
+    },
+    {
+      "id": "VY",
+      "distance_direct_km": 822.7,
+      "air_corridor_km": 921.4,
+      "argos_block_min": 153,
+      "road_km": 995,
+      "carriage_days": 22.1,
+      "army_days": 45.2,
+      "route": [
+        "TA",
+        "VT",
+        "VY"
+      ]
+    },
+    {
+      "id": "HA",
+      "distance_direct_km": 174.6,
+      "air_corridor_km": 195.6,
+      "argos_block_min": 56,
+      "road_km": 195,
+      "carriage_days": 4.3,
+      "army_days": 8.9,
+      "route": [
+        "TA",
+        "HA"
+      ]
+    },
+    {
+      "id": "AV",
+      "distance_direct_km": 393.6,
+      "air_corridor_km": 440.8,
+      "argos_block_min": 89,
+      "road_km": 435,
+      "carriage_days": 9.7,
+      "army_days": 19.8,
+      "route": [
+        "TA",
+        "HA",
+        "AV"
+      ]
+    },
+    {
+      "id": "SE",
+      "distance_direct_km": 316.2,
+      "air_corridor_km": 354.2,
+      "argos_block_min": 77,
+      "road_km": 345,
+      "carriage_days": 7.7,
+      "army_days": 15.7,
+      "route": [
+        "TA",
+        "SE"
+      ]
+    }
+  ],
+  "source_notes": [
+    "D522: 33.2km Eixo and 24km straight Campo",
+    "D537: ARGOS flight005 1462km/h single peak only",
+    "D423–D430: 7d diplomatic carriage Thalor",
+    "Prior atlas schematic non-scale; current coords constructed editorially"
+  ],
+  "reference_urls": [
+    "https://cessna.txtav.com/turboprop/caravan",
+    "https://www.pilatus-aircraft.com/en/configurator/pc-12",
+    "https://www.fhwa.dot.gov/policy/23cpr/chap4.cfm",
+    "https://deremilitari.org/2014/05/the-organisation-and-support-of-an-expeditionary-force-manpower-and-logistics-in-the-middle-byzantine-period/"
+  ]
+}
