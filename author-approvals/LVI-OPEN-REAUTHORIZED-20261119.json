@@ -1,0 +1,17 @@
+{
+  "schema": "worldroot-bookvi-reauthorization-source-v1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "source": "USER_MESSAGE_CURRENT_CONVERSATION",
+  "date": "2026-11-19",
+  "original_heading_exact": "WORLDROOT — INICIAR LIVRO VI",
+  "authorization_quote_exact": "ESTA É MINHA NOVA AUTORIZAÇÃO EXPLÍCITA PARA INICIAR A HISTÓRIA.",
+  "chapter_request_quote_exact": "Quero começar o Livro VI, Capítulo 1, Parte I de V, como continuação verdadeira de Crônicas de um Novo Mundo, usando o WORLDROOT mais recente.",
+  "rejection_clause_exact": "IMPORTANTE: a antiga Parte I r17 do Livro VI foi rejeitada. Não utilize sua narrativa nem tente recuperá-la como cânone. Esta mensagem constitui a NOVA autorização de abertura.",
+  "historical_revocation_preserved_in": "author-approvals/LVI-OPEN.json",
+  "new_authorization_exists": true,
+  "permits_only": "Launch new original LVI C1 PI draft; close previous only after next actual author choice and integrity+continuity verification.",
+  "does_not_permit": "Reuse r17, fabricated episodes, immediate canon promotion, skipped closure, presumed Drive synchronization.",
+  "blocker": "Pinned trusted engine worldroot/book_opening.py _OPEN regex only accepts phrase 'autorizo iniciar ... livro vi'; exact user authorization uses equivalent language but does not match regex. Need audited engine fix instead of fabricating an author quote.",
+  "promotion_status": "NOT_ATTEMPTED",
+  "canon_changed": false
+}
