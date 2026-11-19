@@ -1,8 +1,8 @@
 {
   "schema": "worldroot-editorial-policy-v1",
   "project": "CRONICAS_DE_UM_NOVO_MUNDO",
-  "version": 12,
-  "reviewed_at": "2026-11-18",
+  "version": 13,
+  "reviewed_at": "2026-11-19",
   "approved_scope": "USER_REQUESTED_PERMANENT_PREFERENCES_NOT_CANON_EVENTS",
   "source_of_truth": "main/worldroot/editorial_policy.json",
   "historical_feedback_reference": "story-archive/editorial/feedback/2026-11-18-baseline.json",
@@ -149,6 +149,36 @@
       "at": "2026-11-18",
       "transcript_line": null,
       "quote": "Não precisamos fazer em 24horas, mas em 1 capítulo de 5 partes 2 a 3 dias, talvez pra priorizar a qualidade da história e não só velocidade."
+    },
+    {
+      "id": "S21",
+      "kind": "AUTHOR_DIRECTIVE",
+      "at": "2026-11-19",
+      "quote": "Recuperação literal: localizar o texto original dos episódios D538–D539 na conversa de origem ou em um arquivo exportado, sem reescrever as cenas."
+    },
+    {
+      "id": "S22",
+      "kind": "AUTHOR_DIRECTIVE",
+      "at": "2026-11-19",
+      "quote": "Gravação obrigatória: arquivar cada episódio no GitHub e confirmar seu texto integral, manifesto, hash e eventos antes de declará-lo entregue."
+    },
+    {
+      "id": "S23",
+      "kind": "AUTHOR_DIRECTIVE",
+      "at": "2026-11-19",
+      "quote": "Promoção controlada: após a próxima escolha de Lucas, validar a sequência e promover somente o episódio anterior autorizado, mantendo o novo como draft."
+    },
+    {
+      "id": "S24",
+      "kind": "AUTHOR_DIRECTIVE",
+      "at": "2026-11-19",
+      "quote": "Verificação de continuidade: consultar localização, afiliação, conhecimento e última aparição dos personagens antes de produzir a próxima cena. Assim evitamos situações como a de Caedren."
+    },
+    {
+      "id": "S25",
+      "kind": "AUTHOR_DIRECTIVE",
+      "at": "2026-11-19",
+      "quote": "segue o TXT para gravar no github os dados de forma integral. Depois disso, precisamos deixar que toda nova geração siga as instruções que temos no projeto pra nao acontecer mais isso"
     }
   ],
   "rules": [
@@ -1262,6 +1292,118 @@
         "S19"
       ],
       "active": true
+    },
+    {
+      "id": "P65",
+      "title": "Fonte literal imutável e rejeições autorais",
+      "tags": [
+        "INTEGRIDADE",
+        "PROVENIENCIA",
+        "LIVRO_VI"
+      ],
+      "directive": "Para cada episódio, preservar texto exato entregue ou exportado, com fonte independente e SHA-256; nunca recontar falas ou substituir cenas por resumo. O episódio LVI-C01-PI-D538-AUTHOR-SOURCE r17 está REJEITADO, mantido apenas para auditoria; não reutilizar. As Partes I/II D538 e III D539 de 19/11 têm arquivos originais distintos verificados no story-archive.",
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S21",
+        "S25"
+      ],
+      "active": true
+    },
+    {
+      "id": "P66",
+      "title": "Pacote e readback GitHub antes de declarar episódio entregue",
+      "tags": [
+        "ARQUIVO",
+        "HARD_GATE",
+        "SHA256"
+      ],
+      "directive": "Só declarar episódio ARQUIVADO após gravar texto integral, cinco escolhas, eventos/consequências ancorados, checkpoint, draft, manifesto imutável e prova de origem no ramo privado story-archive, realizar leitura de volta de todos e confirmar bytes e hashes. Falha ou ausência de ferramenta gera STATUS BLOQUEADO, nunca recibo imaginário. A UI deve permanecer fiel ao conteúdo arquivado; renderização convertida em TXT é classificada como exportação visível e não como código DIL original.",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S21",
+        "S22",
+        "S25"
+      ],
+      "active": true
+    },
+    {
+      "id": "P67",
+      "title": "Promoção transacional do episódio anterior e nunca do novo",
+      "tags": [
+        "CANO",
+        "ESCOLHAS",
+        "HEAD"
+      ],
+      "directive": "Uma escolha autoral de Lucas fecha APENAS o episódio anterior comprovado, sequencialmente contra HEAD esperado, após auditoria de eventos e conhecimento. O novo episódio permanece RASCUNHO até escolha posterior. Não promover por mera geração, não fechar múltiplas escolhas em um mesmo lote, não avançar PIII D539 enquanto conflito Caedren não for resolvido explicitamente. O GitHub é o único destino confirmado de arquivo; Drive sem recibo continua não sincronizado.",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S22",
+        "S23"
+      ],
+      "active": true
+    },
+    {
+      "id": "P68",
+      "title": "Matriz obrigatória de presença e conhecimento dos personagens",
+      "tags": [
+        "CHARACTER_BUILDING",
+        "WORLD_BUILDING",
+        "CONTINUIDADE"
+      ],
+      "directive": "ANTES de cada nova cena consultar fonte canônica literal e última aparição física de cada personagem, mapear dia/hora/local, movimentação narrada, papel/afiliação, conhecimento efetivamente recebido, relações, autonomia e informações desconhecidas. Uma menção não comprova presença. Sem fonte de deslocamento não teleportar NPC, não atribuir cargo por convite e não compartilhar segredos entre interlúdios. Caso Caedren D539 deve permanecer FLAGGED, com chegada e vínculo legionário NÃO DEMONSTRADOS; nunca corrigir o texto pretérito sem decisão autoral.",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S24"
+      ],
+      "active": true
+    },
+    {
+      "id": "P69",
+      "title": "Handoff rigoroso entre chats e retomada do mundo vivo",
+      "tags": [
+        "PERSISTENCIA",
+        "BOOTSTRAP",
+        "FONTE_DE_VERDADE"
+      ],
+      "directive": "Toda continuação inicia lendo story-archive/canon/HEAD.json, CONTEXT.json, último canônico e último draft, matriz de personagens, feedback aprovado e contrato editorial do Livro VI, além de main/worldroot/editorial_policy.json e presentation_policy.json. Referências story-archive em URLs representam um RAMO; dentro dele, caminhos começam em canon/, episodes/, editorial/. Em caso de fonte inacessível não inventar, não fechar HEAD e explicar pendência. Instruções do projeto orientam o narrador; pipelines externos só são executados por chamada real de ferramenta.",
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S25",
+        "S24"
+      ],
+      "active": true
+    },
+    {
+      "id": "P70",
+      "title": "Cânone e qualidade narrativa são verificações independentes",
+      "tags": [
+        "QUALIDADE",
+        "AUDITORIA",
+        "UX"
+      ],
+      "directive": "Validar tanto integridade literal e linha temporal quanto prosa longa, atos concretos, continuidade orgânica, Lucas expressivo, Sistema/NÓX, Miren independente, GÊNESE sem nerf e interface de cinco escolhas com botões funcionais. Um SHA íntegro não corrige erro de afiliação; revisão de personagem pode bloquear canonização sem destruir o original. Planejamento é proposta, não evento ou onisciência. Não introduzir imagens nem relatórios de gestão no corpo narrativo.",
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S21",
+        "S22",
+        "S23",
+        "S24",
+        "S25"
+      ],
+      "active": true
     }
-  ]
+  ],
+  "runtime_contract_ref": "story-archive/editorial/contracts/WORLDROOT-LVI-NEXT-TURN-STRICT-RELEASE-CONTRACT-v1.md"
 }
