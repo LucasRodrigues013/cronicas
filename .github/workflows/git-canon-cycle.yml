@@ -65,78 +65,9 @@ jobs:
         uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
         with:
           python-version: '3.12'
-      - name: Block Livre VI promotion without recovered original message bytes
+      - name: Verify only the author-selected prior episode and exact original source
         shell: bash
-        run: |
-          python - <<'PY'
-          import hashlib
-          import json
-          from pathlib import Path
-          root = Path("archive")
-          gate = root / "editorial/recovery/LVI-D538-D539-LITERAL-RECOVERY-GATE-20261119.json"
-          if not gate.is_file():
-              raise SystemExit("WORLDROOT BLOCKED: missing D538-D539 recovery gate")
-          data = json.loads(gate.read_text(encoding="utf-8"))
-          if data.get("recovery_state") != "RECUPERADO_COM_HASH_EVENTOS_E_CONTINUIDADE":
-              raise SystemExit("WORLDROOT BLOCKED: original D538-D539 messages are not fully verified")
-          for episode in data["episodes"]:
-              eid = episode["id"]
-              if not (episode.get("source_integral_verified") is True and
-                      episode.get("events_verified") is True and
-                      isinstance(episode.get("source_sha256"), str)):
-                  raise SystemExit("WORLDROOT BLOCKED: episode has not passed readback: " + eid)
-              original = (root / "editorial/recovery/originals" / (eid + ".txt"))
-              archived = root / "episodes" / eid / "draft/narrativa_integral.md"
-              manifest = root / "episodes" / eid / "draft/manifesto_imutavel.json"
-              proof = root / "episodes" / eid / "draft/source_proof.json"
-              review = root / "episodes" / eid / "review/continuity_review.json"
-              if not all(p.is_file() for p in (original, archived, manifest, proof, review)):
-                  raise SystemExit("WORLDROOT BLOCKED: missing external source or package artifact: " + eid)
-              source = original.read_bytes()
-              if (source != archived.read_bytes() or
-                  hashlib.sha256(source).hexdigest() != episode["source_sha256"]):
-                  raise SystemExit("WORLDROOT BLOCKED: original chat source differs: " + eid)
-          # Protect EVERY subsequent Livro VI draft, not merely the three recovery episodes.
-          for folder in sorted((root / "episodes").glob("LVI-*/draft")):
-              eid = folder.parent.name
-              if eid == "LVI-C01-PI-D538-AUTHOR-SOURCE":  # rejected r17, audit only
-                  continue
-              original = root / "editorial/recovery/originals" / (eid + ".txt")
-              archived = folder / "narrativa_integral.md"
-              proof = folder / "source_proof.json"
-              manifest = folder / "manifesto_imutavel.json"
-              events_file = folder / "eventos_e_consequencias.json"
-              review_file = folder.parent / "review/continuity_review.json"
-              if not all(p.is_file() for p in (original, archived, proof, manifest, events_file, review_file)):
-                  raise SystemExit("WORLDROOT BLOCKED: incomplete literal package: " + eid)
-              source = original.read_bytes()
-              text = source.decode("utf-8")
-              sha = hashlib.sha256(source).hexdigest()
-              evidence = json.loads(proof.read_text(encoding="utf-8"))
-              record = json.loads(manifest.read_text(encoding="utf-8"))
-              review = json.loads(review_file.read_text(encoding="utf-8"))
-              events = json.loads(events_file.read_text(encoding="utf-8"))
-              if (source != archived.read_bytes() or
-                  evidence.get("source_sha256") != sha or
-                  evidence.get("source_bytes") != len(source) or
-                  record.get("original_readback_sha256") != sha or
-                  review.get("status") != "REVIEWED_WITH_EVIDENCE" or
-                  not isinstance(events, list) or not events or
-                  any(not isinstance(e, dict) or
-                      not isinstance(e.get("source_anchor"), str) or
-                      e["source_anchor"] not in text for e in events)):
-                  raise SystemExit("WORLDROOT BLOCKED: missing SHA256/events/character evidence: " + eid)
-          # Historical D539 Caedren anomaly must be resolved by author before promotion.
-          resolved = root / "editorial/recovery/reconciliations/LVI-C01-PIII-D539-AUTHOR-SOURCE.json"
-          if not resolved.is_file():
-              raise SystemExit("WORLDROOT BLOCKED: Caedren D539 continuity reconciliation pending")
-          decision = json.loads(resolved.read_text(encoding="utf-8"))
-          if not (decision.get("status") == "APPROVED_BY_AUTHOR" and
-                  decision.get("issue") == "CAEDREN_ROLE_LOCATION" and
-                  decision.get("author_decision")):
-              raise SystemExit("WORLDROOT BLOCKED: Caedren resolution lacks author approval")
-          print("WORLDROOT: recovered source bytes matched for D538-D539; release may proceed to trusted engine gates")
-          PY
+        run: python archive/tools/worldroot_canon_selection_guard.py --archive-root archive
       - name: Bootstrap D528 or close the one real pending author selection
         shell: bash
         env:
