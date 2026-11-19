@@ -1,0 +1,24 @@
+{
+  "schema": "worldroot-three-cycle-bootstrap-request-v1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "approved_by": "USER_REQUEST_CURRENT_CONVERSATION",
+  "reference": "User authorized cycles 1,2,3 implementation and before/after audit",
+  "mode": "READ_VERIFIED_HISTORY_TO_DERIVED_MEMORY",
+  "scope": "LVI D538 Parts I-II, D539 Part III, D540 Part IV",
+  "protected": [
+    "canon/HEAD.json",
+    "canon/state.sqlite",
+    "episodes/**",
+    "history/**",
+    "choices/**",
+    "planning/**"
+  ],
+  "outputs": [
+    "memory/deltas/*.json",
+    "memory/canon/*.json",
+    "ops/RESUME.json",
+    "editorial/audits/LVI-C01-PIV-D540-AUTHOR-SOURCE-voice.json"
+  ],
+  "drive": "NO_WRITE",
+  "no_inferred_author_choice": true
+}
