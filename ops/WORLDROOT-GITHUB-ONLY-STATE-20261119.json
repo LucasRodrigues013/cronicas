@@ -1,0 +1,110 @@
+{
+  "schema": "worldroot-github-only-operational-state-v1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "verified_on": "2026-11-19",
+  "authority": {
+    "repo": "LucasRodrigues013/cronicas",
+    "visibility": "private",
+    "engine_and_approved_rules": "main",
+    "story_and_source": "story-archive",
+    "drive": "LEGACY_READ_ONLY_NOT_NEW_SOURCE",
+    "chapter_backup": "GITHUB_IMMUTABLE_VERSIONED"
+  },
+  "canon_head": {
+    "branch": "story-archive",
+    "path": "canon/HEAD.json",
+    "book": "Livro V",
+    "chapter": 16,
+    "part": "V",
+    "day": 537,
+    "hour": "23h46",
+    "episode_id": "LV-C16-PV-D537-AUTHOR-SOURCE",
+    "status": "FECHADO_GITHUB",
+    "not_modified_by_migration": true
+  },
+  "active_story": {
+    "book": "Livro VI",
+    "chapter": 1,
+    "next_part": "IV",
+    "next_day_proposed": 540,
+    "last_scene_day": 539,
+    "last_scene_hour": "21h08",
+    "last_location": "Casa do Jardim Branco, Três Arcos",
+    "current_episode": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+    "awaits_author_next_choice": true,
+    "source_kind": "USER_SUPPLIED_CHAT_EXPORT_VISIBLE_TEXT",
+    "original_dil_source_proven": false
+  },
+  "narrative_sources": [
+    {
+      "episode": "LVI-C01-PI-D538-REAUTHORIZED-R2-AUTHOR-SOURCE",
+      "part": "I",
+      "day": 538,
+      "byte_count": 81190,
+      "sha256": "fd6aa23fa1ea5e929d81e0aaebc7776ca30a697120f20d310f9b3fd1f25f98ee",
+      "status": "GITHUB_ARCHIVED_DRAFT_SOURCE_MATCHED",
+      "review": "REVIEWED_WITH_EVIDENCE"
+    },
+    {
+      "episode": "LVI-C01-PII-D538-AUTHOR-SOURCE",
+      "part": "II",
+      "day": 538,
+      "byte_count": 93587,
+      "sha256": "69be6e8eb86e68718c3eccdb823456a0e913816f94e1ca607ff44dc37d9eb740",
+      "status": "GITHUB_ARCHIVED_DRAFT_SOURCE_MATCHED",
+      "review": "REVIEWED_WITH_EVIDENCE"
+    },
+    {
+      "episode": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+      "part": "III",
+      "day": 539,
+      "byte_count": 78749,
+      "sha256": "74bb2ae185f21262a292d1a48e2c75e703d8ee92659f43f97c39d0174c2fd2e7",
+      "status": "GITHUB_ARCHIVED_DRAFT_SOURCE_MATCHED_CANON_BLOCKED",
+      "review": "REVIEWED_WITH_FLAGS",
+      "open_flag": "CAEDREN_ROLE_LOCATION"
+    }
+  ],
+  "original_export": {
+    "path": "history/source_exports/ChatGPT-CRONICAS_DE_UM_NOVO_MUNDO_9-20261119-1028.txt",
+    "bytes": 279900,
+    "sha256": "ac693e60ec6e9dfef2ffee6fc423641541cb52fd53bbd7ffebc9691822be95f9"
+  },
+  "historic_archive": {
+    "source_manifest": "history/sources/MANIFEST.json",
+    "source_count": 6,
+    "source_total_bytes": 13928807,
+    "labelled_ranges": "D001-D528",
+    "caveat": "Range labels do not independently certify every day's events; original literal text carries unreviewed materials",
+    "search_projection": "history/LITERAL_INDEX.sqlite",
+    "recent_archived_episodes": "episodes/LV-C15-PII-D529-AUTHOR-SOURCE through episodes/LV-C16-PV-D537-AUTHOR-SOURCE"
+  },
+  "episode_rejected": {
+    "episode": "LVI-C01-PI-D538-AUTHOR-SOURCE",
+    "status": "AUDIT_ONLY_DO_NOT_REUSE"
+  },
+  "blocking_exception": {
+    "id": "CAEDREN_ROLE_LOCATION",
+    "episode": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+    "status": "UNRESOLVED",
+    "source": "editorial/continuity/LVI-D539-CAEDREN-LOCATION-AFFILIATION-HOLD.json",
+    "rule": "No unsupported membership or travel; original literal must remain immutable; D539 not canonical until author-backed reconciliation"
+  },
+  "next_actions_guards": [
+    "No automatic retroactive promotion of D538 PI/PII",
+    "No invented choice record from user comments",
+    "No story continuation without author's next choice",
+    "Narrative text archived before showing final reader release",
+    "Reader must fetch original text from GitHub and compare SHA",
+    "Original user chat export visible text is not original DIL source",
+    "Chapter Git package only after Parts I-IV canonically closed plus Part V archived",
+    "No Google Drive writes from any active story workflow"
+  ],
+  "planning_preserved": {
+    "active_index": "planning/book-vi/INDEX-ATIVO-PREPRODUCAO.md",
+    "approval": "author-approvals/LVI-WORLD-BASELINE-V18.json",
+    "creative_rules": "main/worldroot/editorial_policy.json v13",
+    "visual_rules": "main/worldroot/presentation_policy.json v1",
+    "story_release_contract": "editorial/contracts/WORLDROOT-LVI-NEXT-TURN-STRICT-RELEASE-CONTRACT-v1.md"
+  }
+}

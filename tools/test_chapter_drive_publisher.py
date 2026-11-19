@@ -87,12 +87,24 @@ class ChapterBackupTest(unittest.TestCase):
             self.add_part(n)
         self.assertIsNone(build_chapter(self.root, "Livro V", 4))
 
-    def test_rejected_part_is_blocked(self):
+    def test_rejected_part_is_excluded_from_active_five_part_sequence(self):
         for n in range(1, 6):
             episode, _ = self.add_part(n)
         (self.root / "editorial" / "rejections" / (episode + ".json")).write_bytes(blob({"rejected": True}))
-        with self.assertRaisesRegex(ChapterError, "rejected"):
-            build_chapter(self.root, "Livro V", 4)
+        self.assertIsNone(build_chapter(self.root, "Livro V", 4))
+
+    def test_rejected_older_duplicate_does_not_block_new_authorized_part(self):
+        for n in range(1, 6):
+            self.add_part(n)
+        old_id = "LVI-OLD-REJECTED-PI"
+        old_dir = self.root / "episodes" / old_id / "draft"
+        old_dir.mkdir(parents=True)
+        (old_dir / "checkpoint_candidato.json").write_bytes(blob(
+            {"book": "Livro V", "chapter": 4, "part": "I", "canon_status": "RASCUNHO"}))
+        (self.root / "editorial" / "rejections" / (old_id + ".json")).write_bytes(blob({"rejected": True}))
+        key, blobs = build_chapter(self.root, "Livro V", 4)
+        self.assertEqual(key, "LIVRO-V-C04")
+        self.assertEqual(len(blobs), 3)
 
     def test_corrupt_part_blocks_export(self):
         for n in range(1, 6):

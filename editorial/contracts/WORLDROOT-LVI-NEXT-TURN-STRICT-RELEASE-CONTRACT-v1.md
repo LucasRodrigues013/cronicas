@@ -1,4 +1,6 @@
 # WORLDROOT — Contrato obrigatório de geração / Livro VI
+
+> **ATUALIZAÇÃO OPERACIONAL 19/11/2026 — GITHUB COMO ÚNICA FONTE ATIVA:** `docs/WORLDROOT-GITHUB-ONLY-OPERATIONS.md` e `ops/WORLDROOT-GITHUB-ONLY-STATE-20261119.json` definem armazenamento e recuperação. O Google Drive é LEGADO, somente leitura histórica, sem novos backups automáticos. Esta prioridade altera somente infraestrutura e não revoga a narrativa, os cinco caminhos de escolha, a revisão de personagens, o Livro VI ou as decisões criativas já aprovadas. HEAD e drafts continuam em `story-archive`.
 *Em vigor editorial por solicitação explícita do autor em 19/11/2026. Não é um evento narrado e não muda automaticamente o HEAD.*
 
 ## Fonte de verdade e isolamento

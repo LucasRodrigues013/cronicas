@@ -1,0 +1,61 @@
+# WORLDROOT · OPERAÇÃO GITHUB-ONLY | Crônicas de um Novo Mundo
+
+**Autor — decisão de infraestrutura de 19/11/2026:** GitHub privado é a única fonte operacional para motor, história, cronologia, eventos, conhecimento, fichas, escolhas, auditoria e backup dos capítulos. **Google Drive passa a LEGADO:** links e documentos antigos continuam como referência histórica, mas o motor NÃO exige nem executa novas sincronizações para Drive. Nenhum documento existente do Drive é apagado.
+
+## Onde está cada componente
+
+| Fonte | Ref | Conteúdo |
+|---|---|---|
+| Motor e contratos de qualidade | `main/worldroot/*` | Python, regras P01–P70 v13, UX01–UX12, testes, templates |
+| História literal e provas | `story-archive/episodes/*/draft/*` | Texto completo, opções, eventos, metadados, fontes e SHA |
+| Contexto e cânone | `story-archive/canon/HEAD.json`, `canon/CONTEXT.json`, `canon/episodes/*`, `canon/state.sqlite` | HEAD único, journal e projeção reconstituível |
+| Escolhas autorais | `story-archive/choices/*` | A escolha real arquivada, não uma inferência do assistente |
+| Históricos anteriores | `story-archive/history/sources/*`, `history/LITERAL_INDEX.sqlite` | Fontes dos intervalos nominais D001–D528 e busca; fonte literal não é automaticamente cânone |
+| Export literal recente | `story-archive/history/source_exports/ChatGPT-CRONICAS_DE_UM_NOVO_MUNDO_9-20261119-1028.txt` | Fonte apresentada pelo usuário das Partes I–III do Livro VI; renderizada TXT, não DIL original |
+| Planejamento v18 | `story-archive/planning/book-vi/*`, `author-approvals/*` | Livro VI AS COROAS PARTIDAS, grande trama e decisões ratificadas |
+| Auditoria semântica | `story-archive/editorial/*`, `episodes/*/review/*` | Rejeições, continuidade e eventos literais, incluindo retenção Caedren D539 |
+| Capítulos em 5 partes | `story-archive/chapters/<LIVRO-CXX>/*` | Quando as cinco partes estiverem elegíveis, cópia integral, manifesto e ZIP comprometidos diretamente no Git |
+| Provas de entrega | `story-archive/delivery/reader_receipts/*` e `delivery/github_chapters/*` | SHA para recuperar texto do GitHub; recibo local de pacote NÃO é liberação canônica |
+
+## Fluxo obrigatório daqui em diante
+
+1. **Antes de produzir:** ler HEAD real, último cânone literal, novo draft, escolhas, fontes de personagens e planejamento. O último texto em chat é **D539 C01 Parte III**, próximo **D540 C01 Parte IV**, mas o HEAD oficial ainda é **D537**.
+2. **Criar prosa:** Lucas expressivo, GÊNESE plena sem nerf, Miren/Astra autônomas, Sistema/NÓX presentes, romance e humor, ação de alta fantasia, antagonistas e povos autônomos. Manter cenas completas e tempo vivo; a meta de palavras serve à literatura, não a relatórios.
+3. **Pré-entrega:** a resposta preparada deve ser gravada **literalmente** em `story-archive/inbox/<id>.json` mediante **chamada real à conexão GitHub**. A Action `worldroot-draft-inbox.yml` cria seis artefatos imutáveis e revisões, executa gate, depois publica `delivery/reader_receipts/<id>.json`.
+4. **Leitura para o usuário:** **somente depois da Action concluir**, o assistente reabre o recibo e `narrativa_integral.md`, confere hash, reconstrói a apresentação aprovada (sem fingir que export TXT é código DIL), e apresenta escolhas funcionais. GitHub Actions não injeta mensagens espontâneas em uma conversa ChatGPT.
+5. **Escolha seguinte:** uma escolha **real** fecha apenas a Parte anterior selecionada e validada, sequencialmente contra HEAD, na Action `git-canon-cycle.yml`. Nenhum comentário de auditoria vira seleção, nenhuma geração promove novo texto.
+6. **Capítulo completo:** quando a quinta Parte chega como draft e as I–IV estão efetivamente fechadas, o **mesmo workflow de inbox** executa `chapter-github-publish`, validando as cinco partes, hashes, exclusão de rejeições e flags de continuidade. Comita cópia integral, JSON manifesto, ZIP de sidecars/provas e recibo, diretamente em `story-archive/chapters/*` e `delivery/github_chapters/*`. **Nenhum Drive token, conta ou pasta é usado.**
+7. **Recuperação em nova conversa:** priorizar `ops/WORLDROOT-GITHUB-ONLY-STATE-20261119.json` como fotografia inicial **datada**, mas consultar o `canon/HEAD.json` vivo e o draft mais recente; não congelar a história nesse snapshot. Ler primeiro as regras vigentes na `main`.
+
+## D538–D539 — conferência do arquivo atual
+
+| Parte | Dia | SHA-256 | Situação |
+|---|---:|---|---|
+| Livro VI C01 Parte I (R2, reautorizada) | 538 | `fd6aa23fa1ea5e929d81e0aaebc7776ca30a697120f20d310f9b3fd1f25f98ee` | Original exportado, arquivado, **draft** |
+| Livro VI C01 Parte II | 538 | `69be6e8eb86e68718c3eccdb823456a0e913816f94e1ca607ff44dc37d9eb740` | Original exportado, arquivado, **draft** |
+| Livro VI C01 Parte III | 539 | `74bb2ae185f21262a292d1a48e2c75e703d8ee92659f43f97c39d0174c2fd2e7` | Original exportado, arquivado, **draft com flag CAEDREN_ROLE_LOCATION** |
+
+Os textos têm **81.190 / 93.587 / 78.749 bytes UTF-8**, respectivamente, e 5 alternativas cada. Verificar por `python tools/verify_lvi_original.py --root . --require-all`. O export foi apresentado pelo usuário como TXT visível, não como serialização exata de DIL: a próxima interface deve aplicar a política UX, preservando integralmente a prosa e escolhas, mas não prometer reprodução pixel a pixel. Não apagar o antigo D538 rejeitado: ele permanece somente no histórico editorial de auditoria.
+
+### Pendência narrativa crítica que NÃO pode ser tratada como fato de mundo
+
+Em D539 a narrativa original pôs Caedren no pátio da Legião e em posição relacionada a Varo sem deslocamento ou adesão militar documentados. **Caedren é o Herói das Sete Estradas, amigo livre de Lucas, não legionário automaticamente.** A fonte literal deve permanecer inalterada; não inventar uma viagem e não reconhecer cargo/cidadania com base nesse trecho. Exigir reconciliação editorial aprovada pelo autor **antes de promover a Parte III ao cânone**. Interlúdios de Tharvek, Elyrien e Velkar não concedem a Lucas conhecimento instantâneo.
+
+As escolhas 4 feitas após Partes I e II estão no texto original da conversa, mas registros e promoções sequenciais ainda precisam ser verificados individualmente. O usuário **ainda não escolheu a Parte IV**. **Não elevar HEAD para D539 por demanda de auditoria.**
+
+## Qualidade, planejamento e escopo
+
+**Preservar integralmente:** a saga `A ERA DAS NOVE COROAS`, Livro VI `AS COROAS PARTIDAS`, plano v18, cidade e Horizonte Aberto, três marcos D538–540, 40.000 moradias e capacidade futura para 100.000 habitantes (não ocupação instantânea), Casa dos Três Poderes em estruturação, Conselho e poderes autônomos, AERÚN, Forja, 3.600 autômatos e Vértice, Costura de Dados, ARGOS, irmandade e mistérios de Miren/Talis, mundos ainda desconhecidos, ritmo de cenas e opções 1–3/4 especial/5 livre. **Nenhum roteiro de batalha, resultado ou destino é determinado artificialmente pela migração.**
+
+As políticas v13/P01–P70 e UX01–UX12 **não são reescritas** por esta mudança de infraestrutura. As decisões criativas continuam prevalecendo sobre ferramentas e checklists, sem retirar consequências do mundo.
+
+## Limites reais e verificações
+
+- Não existe interceptação automática universal da mensagem final do ChatGPT. O conector GitHub deve ser efetivamente chamado em cada episódio. Sem chamada, a Action não o recebe.
+- Para capítulos novos, a publicação automática GitHub está encadeada no mesmo workflow de inbox, pois um commit feito com `GITHUB_TOKEN` normalmente **não dispara outra Action via `push`**. Fonte: https://docs.github.com/en/actions/concepts/security/github_token
+- GitHub Actions Artifacts **não** são o backup histórico permanente; os conteúdos versionados são comitados como blobs da branch privada. Fonte: https://docs.github.com/en/actions/how-tos/manage-workflow-runs/download-workflow-artifacts
+- Arquivos históricos grandes permanecem fragmentados no Git; um único blob Git excedendo 100 MiB é recusado pela plataforma. Fonte: https://docs.github.com/en/repositories/creating-and-managing-repositories/repository-limits
+- `verify_lvi_original.py` verifica fonte original, hashes e fonte dos eventos; `worldroot_canon_selection_guard.py` valida a Parte que de fato recebeu escolha; `test_github_chapter_publisher.py` comprova idempotência e impossibilidade de retroagir para um episódio rejeitado. A CI não é uma inspeção literária humana.
+- Respostas finais e arquivos independentes de GitHub ainda exigem GET/readback para declarar armazenamento confirmado. Um teste verde em outra Action não é recibo de entrega do capítulo futuro.
+
+**Política de migração:** sem escrita ou exclusão no Google Drive; `main/worldroot/drive_bridge.py` e templates antigos são preservados como código legado, mas o workflow ativo de capítulo não contém job de Drive. Sem solicitações de secrets OAuth.

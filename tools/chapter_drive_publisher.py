@@ -59,7 +59,7 @@ def chapter_key(book, chapter):
     return book.replace(" ", "-").upper() + "-C" + str(chapter).zfill(2)
 
 
-def build_chapter(root: Path, book: str, chapter: int):
+def build_chapter(root: Path, book: str, chapter: int, *, publication="DRIVE_BACKUP_ONLY_NO_CANON_PROMOTION"):
     """Return (key, blobs) only when five verified parts really exist."""
     key = chapter_key(book, chapter)
     matches = {}
@@ -68,13 +68,14 @@ def build_chapter(root: Path, book: str, chapter: int):
         if meta.get("book") != book or meta.get("chapter") != chapter:
             continue
         part = meta.get("part")
-        if part not in PARTS or part in matches:
-            raise ChapterError("Duplicate or invalid part in " + key)
         folder = candidate.parent
         episode = folder.parent.name
         rejected = root / "editorial" / "rejections" / (episode + ".json")
+        # Rejected r17 remains in Git history for audit, never as a competing Part I.
         if rejected.exists():
-            raise ChapterError("A rejected episode cannot be exported: " + episode)
+            continue
+        if part not in PARTS or part in matches:
+            raise ChapterError("Duplicate or invalid active part in " + key)
         verify_one(folder / "manifesto_imutavel.json")
         matches[part] = (episode, folder, meta)
     if len(matches) < 5:
@@ -91,6 +92,10 @@ def build_chapter(root: Path, book: str, chapter: int):
         for filename in FILES:
             data = (folder / filename).read_bytes()
             archive[prefix + filename] = data
+        # Preserve provenance sidecar when present; legacy episodes may not have it.
+        source_proof = folder / "source_proof.json"
+        if source_proof.is_file() and not source_proof.is_symlink():
+            archive[prefix + "source_proof.json"] = source_proof.read_bytes()
         literal = archive[prefix + "narrativa_integral.md"]
         part_sha = digest(literal)
         journal_path = root / "canon" / "episodes" / (episode + ".json")
@@ -133,7 +138,7 @@ def build_chapter(root: Path, book: str, chapter: int):
         "part_count": 5, "parts": parts_info,
         "archive_entries": file_hashes,
         "combined_sha256": digest(combined), "combined_bytes": len(combined),
-        "publication": "DRIVE_BACKUP_ONLY_NO_CANON_PROMOTION",
+        "publication": publication,
     }
     archive["chapter_manifest.json"] = encoded(manifest)
     archive["capitulo_integral.md"] = combined
