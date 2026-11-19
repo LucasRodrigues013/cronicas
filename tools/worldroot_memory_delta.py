@@ -182,7 +182,7 @@ def resume(root:Path,*,write=False)->dict:
             "episode_id":latest[0],"book":latest[1]["book"],"chapter":latest[1]["chapter"],
             "part":latest[1]["part"],"day":latest[1]["day"],
             "source_path":"episodes/"+latest[0]+"/draft/narrativa_integral.md",
-            "source_sha256":obj(root/"episodes"/latest[0]+"/draft/manifesto_imutavel.json").get("original_readback_sha256")},
+            "source_sha256":obj(root/"episodes"/latest[0]/"draft/manifesto_imutavel.json").get("original_readback_sha256")},
         "all_pending_draft_ids":[eid for eid,_ in pending],
         "continuity_flags_from_source":flags,
         "author_style_feedback":"editorial/feedback/2026-11-19-lucas-carisma-strong-kind-loving.json",
