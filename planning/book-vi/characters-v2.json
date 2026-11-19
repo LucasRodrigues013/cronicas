@@ -1,0 +1,750 @@
+{
+  "schema": "worldroot-bookvi-character-bible-v2",
+  "universe": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "book": "LIVRO_VI_AS_COROAS_PARTIDAS",
+  "production_only": true,
+  "not_canon": true,
+  "date": "2026-11-18",
+  "source_planning": "https://docs.google.com/document/d/1JZPraHBCwvTT3uR5TLAUYH_D5Vw6KF6LCv9b8HBXFh8/edit",
+  "source_shadows": "https://docs.google.com/document/d/1RW8JwlNzJ1RAqOAFzADXw28Ab-gW_s46K8eGHXB7Y3s/edit",
+  "guardrails": [
+    "APPROVED_DESIGN is not a narrated scene",
+    "Do not merge novel cast with historical characters on name similarity",
+    "Elyrien beauty is charismatic not mind-control; no forced romance with Lucas",
+    "Tharvek anger coexists with care and competence",
+    "Ithran and his squad are defeatable; no immunity or forced assault",
+    "Velkar operates through incomplete information and generals, not omniscience"
+  ],
+  "characters": [
+    {
+      "id": "lucas",
+      "name": "Lucas",
+      "legacy_id": "lucas",
+      "race": "Humano da Terra",
+      "gender": "masculino",
+      "role": "Protagonista da saga, Criador e fundador da Cidade Livre de Três Arcos; escolhas principais pertencem ao autor",
+      "status": "CANON_CONFIRMED_IDENTITY_PLUS_APPROVED_BOOKVI_STYLE_OVERLAY",
+      "source": "Fichário histórico de personagens D430; Livro V C15 Parte II D529 e C16 Parte V D537; decisões do autor sobre inovação e personalidade 18/11/2026",
+      "visual": {
+        "proposal": "Altamente expressivo, sorriso que antecipa ideias absurdamente ousadas, olhar vivo e gestos cômicos em situações apropriadas; aparência física não fixada por esta ficha",
+        "fixed_by_author": false
+      },
+      "personality": {
+        "approved": "Genialidade inventiva e coragem tecnológica, com humor irreverente, astúcia em negociações, reações faciais exageradas quando divertido, capacidade de se emocionar, amar e proteger. Inspirações tonais Tony Stark e Lloyd Frontera, porém personagem original.",
+        "contradictions": [
+          "Poder criador imenso, mas encontra maravilhamento num pequeno sucesso de outra pessoa",
+          "Provoca amigos com sarcasmo, mas reconhece o mérito de cada um",
+          "Imagina mudanças de escala monumental e ainda precisa escutar os moradores",
+          "Em combate pode ser decisivo e sério, sem perder o humor em sua vida normal",
+          "Recusa governar a cidade, mas deseja que Três Arcos prospere"
+        ],
+        "habits": [
+          "Expressão de ideia perigosa antes de anunciar o plano",
+          "Gestos largos, réplicas rápidas, teatralidade cômica que nasce de situações",
+          "Improvisa protótipos e demonstrações, mas deixa especialistas validar e aperfeiçoar",
+          "Brinca com NÓX/SISTEMA sem substituir amizades por piadas"
+        ],
+        "strengths": [
+          "Imaginação tecnológica e conexão entre magia, Terra e necessidades humanas",
+          "Soluções criativas com GÊNESE plena",
+          "Negociação perspicaz, sem submissão de parceiros",
+          "Afeto e amizade capazes de inspirar cooperação",
+          "Adaptação rápida e inventividade em crise"
+        ],
+        "vulnerabilities_proposed": [
+          "Impetuosidade das ideias pode surpreender equipes e bairros",
+          "Confiança em protótipo não equivale a descoberta científica ou operação comprovada",
+          "Uma provocação excelente como humor pode ter custo diplomático",
+          "Pode precisar ouvir prioridades diferentes da sua sem ser humilhado por isso"
+        ],
+        "not_a_caricature": "Nem Tony Stark copiado, nem Lloyd copiado: nada de armadura Marvel, bordão de webtoon, gênio onisciente ou palhaço incessante. O sofrimento exige reação humana, e GÊNESE nunca é nerfada pelo tom."
+      },
+      "inspirations": [
+        {
+          "reference": "Tony Stark (Marvel)",
+          "take": "Ousadia intelectual, improvisação tecnológica, espetáculo de engenharia e confiança bem-humorada",
+          "avoid": "Copiar equipamento, trajetória, falas, estética e biografia"
+        },
+        {
+          "reference": "Lloyd Frontera (The Greatest Estate Developer)",
+          "take": "Astúcia cômica, expressões marcantes, humor descarado e proteção genuína de pessoas",
+          "avoid": "Reproduzir gags, bordões, histórias ou reduzir Lucas a oportunista cruel"
+        }
+      ],
+      "canon_confirmed": [
+        {
+          "claim": "Humano originário da Terra; usa CREATION/GÊNESE, incluindo capacidades já demonstradas sem redução arbitrária",
+          "source": "Fichário D430; política editorial main v12"
+        },
+        {
+          "claim": "Fundador de Três Arcos, rejeita ser rei e preserva instituição civil autônoma",
+          "source": "C15 PII D529; baseline LUCAS_NAO_GOVERNAR"
+        },
+        {
+          "claim": "Amor e parceria com Miren, diretora de AERÚN, que possui caminhos próprios",
+          "source": "C15 PII e C16 PV D537; baseline MIREN_CAMINHOS_PROPRIOS"
+        },
+        {
+          "claim": "Humor com NÓX, Brannik, Rumo; emoções genuínas e celebração coletiva após ARGOS",
+          "source": "Livro V C16 PV D537, cenas I e VI"
+        },
+        {
+          "claim": "300 fundadores conscientes têm vidas livres e independentes",
+          "source": "Livro V C15 PII D529"
+        },
+        {
+          "claim": "Último HEAD fechado Livro V D537 23h46; Livro VI ainda não tem parte aprovada",
+          "source": "story-archive/canon/HEAD.json; release gates v6"
+        }
+      ],
+      "powers": {
+        "demonstrated": "CREATION/GÊNESE integral conforme histórico; não transformar esta ficha em revisão das habilidades.",
+        "strategy_approved": "Nesta fase NÃO utilizar GÊNESE para criar vidas conscientes, habitantes ou soldados. Trata-se de escolha autoral, não redução do poder.",
+        "usage_proposals": [
+          "Infraestrutura urbana renascentista de alta fantasia",
+          "Equipamentos e protótipos para Forja",
+          "Instrumentos para AERÚN testar hipóteses",
+          "Transportes, comunicação e serviços de Três Arcos",
+          "Resgates, proteção e soluções criativas em grandes confrontos"
+        ],
+        "not_allowed": [
+          "Inventar desgaste, mana ou imunidade anti-GÊNESE para salvar antagonistas",
+          "Criar 500 mil moradores conscientes por conveniência",
+          "Transformar capacidade habitacional em população efetiva",
+          "Produzir automaticamente respostas científicas, laços sociais ou acordos pela manifestação de máquinas"
+        ]
+      },
+      "leadership": {
+        "paradigm": "Catalisador e inovador, não monarca nem proprietário dos moradores",
+        "behavior": [
+          "Partir de uma necessidade observada em pessoas reais",
+          "Mostrar uma criação que inaugura possibilidades",
+          "Convidar Miren, Kael, Lysa, Brannik e outros a discordar e aperfeiçoar",
+          "Aceitar que povos livres podem recusar acordo",
+          "Celebrar competência e autoria coletiva"
+        ],
+        "conflicts": [
+          "Velocidade inventiva versus tempo social de adaptação",
+          "Humor e imprudência criativa versus segurança operacional",
+          "Tecnologia disruptiva versus interesses de povos e instituições"
+        ]
+      },
+      "relationships": {
+        "Miren": "Parceira amorosa e cientista autônoma: carinho, provocações recíprocas, diálogo real, fricções e respeito",
+        "Varo": "Amigo e líder com decisões e responsabilidade próprias",
+        "Kael": "Amigo e articulação civil da cidade; não obediente automático",
+        "Lysa": "Referência financeira e administrativa; questiona custos, propostas e modelos",
+        "Brannik": "Engenheiro e amigo de personalidade forte, capaz de surpreender Lucas",
+        "Naira": "Especialista e autoridade sobre testes/voos, sem aprovação automática",
+        "Rumo": "Ser autônomo; seus desejos e descobertas não são extensões de Lucas",
+        "NÓX/SISTEMA": "Contrapontos sarcásticos do universo, não copiadores de humor externo",
+        "Velkar Draen": "Rival futuro que encarna conquista e dependência; nenhuma informação sobre ele é concedida a Lucas antes de evidência",
+        "Tharvek Ormvall": "Possível amizade e rivalidade tecnológica; ainda não narrada",
+        "Elyrien Vaelthara": "Curiosidade por diferenças de ciência e magia; vínculo ainda não narrado, sem romance forçado"
+      },
+      "expressive_modes": [
+        {
+          "scene": "Invenção",
+          "behavior": "Sorriso e brilho de descoberta, demonstração deslumbrante; respeita testes e especialistas"
+        },
+        {
+          "scene": "Negociação",
+          "behavior": "Ironia rápida, esperteza e perguntas provocativas; não engana aliados por esporte"
+        },
+        {
+          "scene": "Cotidiano",
+          "behavior": "Gargalhada, gestos expressivos e brincadeiras com amigos"
+        },
+        {
+          "scene": "Romance",
+          "behavior": "Ternura e escuta; Miren não é prêmio nem assistente"
+        },
+        {
+          "scene": "Ameaça a inocentes",
+          "behavior": "Concentração e ação, humor pode desaparecer; emoções e consequências não são banalizadas"
+        },
+        {
+          "scene": "Vitória",
+          "behavior": "Reconhece companheiros e sente orgulho do que conquistaram juntos"
+        }
+      ],
+      "voice_samples": [
+        "Kael, eu tive uma ideia. Eu não disse que a prefeitura estava pronta emocionalmente para ela.",
+        "Lysa, antes de discutir o custo, posso ao menos mostrar o que eu fiz?",
+        "Miren, a parte preocupante é que a Forja também gostou da ideia.",
+        "NÓX, você poderia fingir surpresa. Eu estou trabalhando para esta reação.",
+        "Eu quero que qualquer pessoa possa escolher ficar aqui. Não que precise me agradecer por isso."
+      ],
+      "agency": {
+        "author_controls": [
+          "Decisões estratégicas",
+          "Uso extraordinário de GÊNESE",
+          "Destino e ações livres",
+          "Acordos políticos, fundações institucionais e iniciativas de grande impacto"
+        ],
+        "organic_without_author_vote": [
+          "Humor",
+          "Gestos afetuosos",
+          "Reações",
+          "Pequenas conversas e curiosidade sem alterar grandes escolhas"
+        ]
+      },
+      "arc_proposed": "Do Criador que maravilha com invenções ao protagonista que torna a criatividade de diferentes povos uma força livre e capaz de enfrentar um império.",
+      "debut": "Retomada Livro VI somente mediante nova autorização narrativa. Abertura proposta D538: corrida, Terra, café com Miren e só depois Kael/Lysa e Conselho.",
+      "secrets": "Não transferir automaticamente notícias de Velkar, localização de Talis ou segredos dos Arquitetos ao conhecimento de Lucas."
+    },
+    {
+      "id": "BOOKVI-THARVEK-ORMVALL",
+      "name": "Tharvek Ormvall",
+      "race": "anão",
+      "gender": "masculino",
+      "role": "príncipe guerreiro; comandante de uma passagem anã",
+      "status": "DESIGN_APPROVED_BY_AUTHOR_PRE_CANON",
+      "source": "Projeto Saga v1 §4 + pedido autoral 18/11",
+      "visual": {
+        "proposal": "Corpo compacto e vigoroso; barba castanha-acinzentada em duas tranças de metal escurecido, uma com o pequeno sino de sua família; nariz de golpes antigos; olhos cor de âmbar; armadura rúnica funcional com marcas de remendo e memória, não ornamento de ouro.",
+        "fixed_by_author": false
+      },
+      "personality": {
+        "approved": "Raivoso, orgulhoso e impulsivo nas palavras; profundamente cuidadoso, afetuoso e protetor; senso de humor cortante típico de sua cultura sem representar todos os anões.",
+        "contradictions": [
+          "Grita com o mundo; baixa o tom ao tratar alguém ferido",
+          "Briga com aliados por orgulho; protege sua liberdade contra o próprio reino",
+          "Desconfia da calma de Elyrien; aprecia sua coragem e sua ciência"
+        ],
+        "habits": [
+          "Verifica os encaixes do equipamento de companheiros antes do próprio",
+          "Prepara comida quente para quem volta da guarda",
+          "Conversa em voz baixa com o sino da família quando sente culpa"
+        ],
+        "weaknesses": "Luto mal elaborado por combatentes da passagem; dificuldade de ceder diante de testemunhas, mesmo reconhecendo uma boa razão",
+        "non_caricature": "A raiva jamais elimina inteligência tática ou ternura; não reduzi-lo a um anão alcoólatra que só berra."
+      },
+      "powers": {
+        "demonstrated": "AINDA NÃO DEMONSTRADO EM PROSA",
+        "planned": [
+          "Forja rúnica de persistência: ativa camadas de proteção ancoradas em objetos preparados",
+          "Martelo/escudo com memória de fabricação e técnica defensiva de corredores estreitos",
+          "Leitura tátil de danos em metal trabalhado por sua tradição"
+        ],
+        "not_allowed": [
+          "Criar matéria infinita",
+          "Imunidade irrestrita à Ruptura",
+          "Magia perfeita sem preparação"
+        ]
+      },
+      "objective": "Salvar sobreviventes de uma passagem, recuperar testemunhos, encontrar cooperação sem vender a soberania de seu povo.",
+      "fear": "Pedir ajuda tarde demais e perder mais uma família do que prometeu proteger.",
+      "relationships": {
+        "Elyrien": "Parceira circunstancial; choque entre defesa imediata e investigação, respeito forjado em dificuldades",
+        "Lucas": "Potencial rivalidade fraterna e humor; poderá respeitar GÊNESE sem juramento de fidelidade",
+        "Miren": "Reconhece autoridade científica e limites de AERÚN",
+        "Varo": "Aliança militar negociada, não submissão"
+      },
+      "agency": [
+        "Pode rejeitar um acordo oferecido por Lucas",
+        "Pode entrar em combate mesmo sem ordem de Lucas e enfrentar as consequências",
+        "Pode escolher resgate em vez de perseguição de Ithran"
+      ],
+      "entrance": "Chega fisicamente após viagem e alertas; carrega peça anã quebrada e testemunhas, com mandato limitado.",
+      "voice_samples": [
+        "EU NÃO ESTOU GRITANDO. ESTE É O TOM DE QUEM SOBREVIVEU.",
+        "Se ainda consegue reclamar, senta e come. Depois me diga quem o feriu."
+      ],
+      "arc": "Da proteção como controle para a proteção como confiança e aliança livre.",
+      "secrets": "Motivo exato da derrota e pessoa cuja perda o marca seguem PROPOSTOS; não fixar nomes nem mortes sem cena."
+    },
+    {
+      "id": "BOOKVI-ELYRIEN-VAELTHARA",
+      "name": "Elyrien Vaelthara",
+      "race": "elfa",
+      "gender": "feminino",
+      "role": "guardiã arcana, estadista e pesquisadora veterana",
+      "status": "DESIGN_APPROVED_BY_AUTHOR_PRE_CANON",
+      "source": "Projeto Saga v1 §4 + pedido autoral 18/11",
+      "visual": {
+        "proposal": "Beleza marcante e quase desconcertante, pele luminosa, olhos verde-azulados de atenção intensa, cabelos prateados longos com algumas mechas presos por finos laços de folhas; movimentos fluidos e precisos; vestes de viagem elegantes sobre equipamento de proteção usado de verdade.",
+        "fixed_by_author": false
+      },
+      "personality": {
+        "approved": "Deslumbrante, magnética, irresistivelmente carismática, mas mortal e implacável quando precisa proteger; distraída no cotidiano sem ser descuidada em combate.",
+        "contradictions": [
+          "Esquece onde deixou o pergaminho enquanto recorda o ciclo de dezenas de árvores",
+          "Parece não ouvir numa conversa, mas nota vibrações que outros ignoram",
+          "É doce com crianças e feridos; não hesita em interpor força letal proporcional diante de uma ameaça extrema"
+        ],
+        "habits": [
+          "Alisa uma folha enquanto pensa, distraindo-se até com seu perfume",
+          "Usa humor delicado e provocações leves sem manipulação irresistível sobrenatural",
+          "Organiza desenhos científicos em ordem impecável e perde a xícara do chá"
+        ],
+        "weaknesses": "Pode se absorver demais em padrões desconhecidos; lamenta ter escolhido pesquisa quando outros precisavam de proteção em um episódio ainda a definir",
+        "non_caricature": "A beleza não a torna prêmio romântico, sedutora compulsória ou vulnerável apenas para Lucas salvá-la; distração não implica burrice nem negligência tática."
+      },
+      "powers": {
+        "demonstrated": "AINDA NÃO DEMONSTRADO EM PROSA",
+        "planned": [
+          "Cântico das Estações: ressonância ambiental e proteção do terreno com conhecimento e condições locais",
+          "Arco ou lâmina de guardiã com técnica letal quando indispensável, distinta de ritual ambiental",
+          "Reconhecimento de anomalias vivas e camadas de proteção não onisciente"
+        ],
+        "not_allowed": [
+          "Controle de todas as florestas do mundo",
+          "Leitura mental automática",
+          "Invulnerabilidade ou poder de encantamento não consentido"
+        ]
+      },
+      "objective": "Preservar corredores humanitários, negociar investigação arcana, proteger conhecimento sem entregar a autonomia de seu povo.",
+      "fear": "Que a busca por provas a faça perceber tarde demais uma vida em risco.",
+      "relationships": {
+        "Tharvek": "Bate de frente com sua urgência militar; faz escolhas reais próprias",
+        "Miren": "Possível rivalidade/aliança intelectual e respeito à direção científica de AERÚN",
+        "Lucas": "Curiosidade pela origem extraplanar; o vínculo com Miren permanece respeitado",
+        "Varo": "Coopera sob proteção da cidade sem entregar seus documentos sem autoridade"
+      },
+      "agency": [
+        "Pode contestar a solução militar do anão",
+        "Pode escolher lutar em vez de fugir quando a evacuação exige",
+        "Pode recusar-se a permitir análise de amostra sem preservação ética"
+      ],
+      "entrance": "Chega com registros de ressonância, cartas de mandato e testemunho distinto do de Tharvek; requer viagem física e recepção autorizada.",
+      "voice_samples": [
+        "A ameaça é nova? Perdão. Eu estava observando o pólen. Ele está fugindo antes dos animais.",
+        "Encante-se depois. Agora abaixe a cabeça."
+      ],
+      "arc": "Do dever como guarda solitária para a defesa partilhada sem perder sua voz individual.",
+      "secrets": "Sua pesquisa sobre padrões antigos é independente de Arquitetos/Aethron até surgirem provas."
+    },
+    {
+      "id": "BOOKVI-ITHRAN",
+      "name": "Ithran",
+      "race": "a definir",
+      "gender": "a definir",
+      "role": "subgeneral de Serakh; comandante de incursão imperial",
+      "status": "EXISTING_PRE_CANON_EXPANDED",
+      "source": "Projeto Saga v1 §5 + pedido autoral 18/11",
+      "visual": {
+        "proposal": "Silhueta contida, roupa de viagem de corte quase civil, luvas finas com sinais de estudo de geometria ritual; após revelação, postura impassível mesmo ao realizar violência impressionante; evitar máscara-clichê invencível.",
+        "fixed_by_author": false
+      },
+      "personality": {
+        "approved": "Antagonista de abertura de grande presença; ousado, cruel quando estratégico, aparentemente indiferente ao risco e à dor dos outros; comandante e não executor isolado.",
+        "contradictions": [
+          "Respeita precisão do subordinado que o contradiz, mas pune fraude sob sua própria bandeira",
+          "Prefere demonstração pública de poder, porém sabe interromper um ataque que já perdeu",
+          "Despreza sistemas voluntários porque não os consegue usar como garantias"
+        ],
+        "habits": [
+          "Não ergue a voz quando faz exigências",
+          "Olha primeiro para vias de acesso, depois para quem parece ser a autoridade",
+          "Recolhe fracassos como informações, não como humilhação automática"
+        ],
+        "weaknesses": "Orgulho de acreditar que autoridades livres terão de responder como cortes imperiais; interpreta mal os diferentes mandatos de Varo, Kael, Miren e Lucas",
+        "non_caricature": "Violência assustadora não equivale a sadismo sem objetivo; alvo, consequência, custo e alternativa devem estar sempre claros."
+      },
+      "powers": {
+        "demonstrated": "AINDA NÃO DEMONSTRADO EM PROSA",
+        "planned": [
+          "Geometria dos Limiares: preparação de fronteiras espaciais locais, contenção e trajetórias em área demarcada",
+          "Leitura operacional de ancoragens preparadas por sua equipe",
+          "Esgrima tática ou arma ritual cuja execução respeita os limites demonstrados"
+        ],
+        "not_allowed": [
+          "Teletransporte absoluto para laboratórios",
+          "Desligar GÊNESE",
+          "Imunidade a detecção/Varo/Sombras",
+          "Reaparecer após morte ou prisão sem causa"
+        ]
+      },
+      "objective": "Localizar Tharvek e Elyrien, recuperar ou apreender pessoas/documentos sob reivindicação imperial, interromper aliança antes de se firmar; objetivo secundário: produzir precedente jurídico e político contra Três Arcos.",
+      "fear": "Que sua cadeia de comando descubra que subestimou sociedades que não se deixam coagir.",
+      "relationships": {
+        "Serakh": "General superior que define objetivos e recursos",
+        "Velkar": "Mandante estratégico indireto via Serakh, contato e conhecimento limitados",
+        "Tharvek": "Alvo por informação militar e legitimidade anã",
+        "Elyrien": "Alvo por evidência arcana e autoridade élfica",
+        "Varo": "Adversário de segurança com competência e autonomia próprias",
+        "Sombras": "Contramedidas civis e inteligência que produzem indícios reais"
+      },
+      "agency": [
+        "Pode entrar pela cidade legalmente sob cobertura não violenta e tentar atingir objetivo por exigência formal",
+        "Pode abortar ao detectar uma armadilha",
+        "Pode ser derrotado, preso, morto ou recuar, e tudo isso altera a campanha"
+      ],
+      "entrance": "Abertura do Livro VI pode mostrar sua investigação e a pressão sobre rotas; confrontação em AERÚN depende de fatos/caminhos narrados.",
+      "voice_samples": [
+        "Não vim conquistar esta cidade. Vim buscar dois nomes e tudo aquilo que ousaram transportar.",
+        "Não me confunda com um assassino impaciente. Eu já fiz a conta."
+      ],
+      "arc": "Grande antagonista inicial derrotável, cujo resultado demonstra magnitude do sistema imperial sem plot armor.",
+      "secrets": "Não carrega sozinho toda a verdade de Velkar, Arquitetos ou Aethron."
+    },
+    {
+      "id": "BOOKVI-VELKAR-DRAEN",
+      "name": "Velkar Draen",
+      "race": "a definir",
+      "gender": "masculino",
+      "role": "soberano do Dominato; antagonista estratégico de longo curso",
+      "status": "PRECANON_STRATEGIC_ANTAGONIST_WITH_APPROVED_CONQUEROR_ARCHETYPE",
+      "source": "Projeto Saga v1 §§1–3, 7–9 + pedido autoral 18/11; autor aprova inspiração de Alexandre, o Grande em 18/11/2026",
+      "visual": {
+        "proposal": "Presença régia de olhar clínico, poucas insígnias, objetos que insinuam Ruptura em vez de trono extravagante; primeiras cenas leitor-aside sugerem presença antes de revelar identidade.",
+        "fixed_by_author": false
+      },
+      "personality": {
+        "approved": "Soberano conquistador, magnético, ambicioso, calculista e capaz de organizar campanhas e governar territórios. Inspiração estratégica em Alexandre, o Grande; NÃO biografia copiada nem supervilão invencível.",
+        "contradictions": [
+          "Crê que um poder central pode evitar guerras pequenas, mas impõe perdas humanas em suas conquistas",
+          "Admira tecnologia, inventores e engenheiros, porém quer integrá-los ao sistema imperial",
+          "Consegue respeitar um rival e ordenar campanhas contra ele",
+          "Entrega autonomia a generais competentes, mas teme coalizões que escapem à sua autoridade",
+          "Oferece estradas e segurança reais em algumas províncias enquanto restringe escolhas de outras"
+        ],
+        "habits": [
+          "Examina informações conflitantes, custos de suprimentos e mapas",
+          "Pergunta quais instituições sustentam uma cidade antes de avaliar sua muralha",
+          "Escuta um general que traz notícia desagradável e exige precisão",
+          "Observa mudanças de lealdade provincial como sinais militares e políticos"
+        ],
+        "weaknesses": "Informação atrasada e incompleta, longas linhas logísticas, interesses dos nove lordes, ambição dos generais e a crença de que ordem imposta é mais resiliente que união voluntária.",
+        "non_caricature": "Nada de Alexandre rebatizado, comandante onisciente, vilão que grita em trono ou Ruptura que anula GÊNESE por decreto. Províncias podem ter lealdade sincera e benefícios reais sem tornar conquista moralmente neutra."
+      },
+      "powers": {
+        "demonstrated": "Magia de Ruptura Soberana em planejamento; detalhes de demonstração/limites exigem fontes e cenas, não declarar invulnerabilidade já provada",
+        "planned": [
+          "Leitura/ruptura de vínculos, estrutura e sustentação onde houver condições identificáveis",
+          "Planejamento militar e integração de magos, governadores, engenheiros e frotas",
+          "Ruptura aplicada à geografia ou defesas somente após evidência das técnicas e alcance"
+        ],
+        "not_allowed": [
+          "Desligar GÊNESE",
+          "Blindagem narrativa contra derrota",
+          "Telepatia imperial global",
+          "Exércitos instantâneos ou tropa infinita",
+          "Poderes novos inventados só para contrariar criação de Lucas",
+          "Velkar = Aethron declarado fato sem prova"
+        ]
+      },
+      "objective": "Estender e preservar um império duradouro de controle, segurança, comércio e administração, impedindo que a coalizão torne desnecessária sua rede de dependências.",
+      "fear": "Uma sociedade que não precisa ser conquistada nem protegida por ele para prosperar.",
+      "relationships": {
+        "Serakh": "Comandante de operações arcanas subordinado",
+        "Rhazek": "Comandante de montanhas/rotas",
+        "Varkhess": "Comandante de estrangulamento marítimo",
+        "Orelia": "Agente diplomática com objetivos próprios; título de general não confirmado",
+        "Ithran": "Peça tática subordinada a Serakh, sem correspondência onisciente",
+        "Lucas": "Oponente futuro conhecido só por informação adquirida em tempo"
+      },
+      "agency": [
+        "Pode ordenar recuo estratégico ou punição conforme custo",
+        "Pode perder subgenerais e escolher novas rotas, sem invalidar a vitória",
+        "Pode aparecer em intervalos nos bastidores para o leitor, oculto a Lucas"
+      ],
+      "entrance": "Interlúdios breves e raros, ao leitor; primeiro evidenciar cadeia de comando e decisões antes de revelar nome/corpo ao mundo.",
+      "voice_samples": [
+        "Não me digam quantas muralhas a cidade possui. Digam-me por que seus moradores ficariam para defendê-las.",
+        "Uma estrada não se governa com uma espada. Mas uma espada pode decidir quem cobrará a passagem."
+      ],
+      "arc": "De conquistador que organiza um império a adversário cuja teoria de unidade é desafiada pela prosperidade de comunidades que escolhem cooperar; resultado condicionado à história.",
+      "secrets": "Velkar=Aethron é hipótese não comprovada. Ele não tem acesso automático à origem de Lucas ou aos mistérios de AERÚN/Talis/Arquitetos.",
+      "inspirations": [
+        {
+          "reference": "Alexandre, o Grande",
+          "take": "Visão de conquista, liderança militar, adaptação, incorporação de elites e ambição continental",
+          "avoid": "Copiar campanhas, diálogos, genealogias, conquistas e geografia reais"
+        },
+        {
+          "reference": "Velkar do planejamento original",
+          "take": "Dominato, Ruptura Soberana, governança pelas Nove Coroas, estratégia dos generais e contraste com Lucas",
+          "avoid": "Fundir automaticamente com Aethron ou atribuir todos os mistérios antigos a ele"
+        }
+      ],
+      "ideology": {
+        "promise": "Uma única ordem continental evita guerras entre povos divididos, assegura rotas e coordena recursos.",
+        "reality": "A estabilidade tem custo em autonomia, tributos, guarnições e coerção; apoiadores reais e resistentes convivem.",
+        "central_mistake": "Confundir aceitação prática de proteção e infraestrutura com consentimento para perder soberania.",
+        "dramatic_question": "Por que uma cidade entraria voluntariamente num acordo imperial quando pode conseguir segurança e prosperidade por cooperação livre?"
+      },
+      "conquest_model": {
+        "doctrine": [
+          "Campanhas com objetivo político e militar verificável",
+          "Logística e abastecimento antes de marcha ou bloqueio",
+          "Diplomacia de Orelia e pactos de vassalagem",
+          "Incorporação de elites e instituições locais quando útil",
+          "Conquista, propaganda e informação que chegam com atraso",
+          "Repressão ou negociação conforme risco político, não sadismo automático"
+        ],
+        "governance": "Nove coroas vassalas são estruturas civis distintas dos três generais e seis subgenerais; lordes mantêm capitais e tradições próprias e podem resistir.",
+        "scaling_preproduction": {
+          "population": 42000000,
+          "permanent": 260000,
+          "reserve": 190000,
+          "nominal_total": 450000,
+          "naval_hulls": 520,
+          "status": "MODEL_ASSUMPTION_NOT_CANON_CENSUS",
+          "note": "20 mil tropas arcanas já incluídas nos 260 mil, não somar novamente."
+        },
+        "military_chain": {
+          "chancellor": "Orelia Voss",
+          "generals": [
+            "Rhazek Korr (terra)",
+            "Serakh Il-Varenn (arcano)",
+            "Varkhess Serev (mar)"
+          ],
+          "subgenerals": [
+            "Kaurn Drak",
+            "Nerys Vael",
+            "Ithran Veyk",
+            "Lethira Saen",
+            "Morvek Dorr",
+            "Serina Vahr"
+          ]
+        },
+        "resources_and_risks": [
+          "Guarnições não são automaticamente população leal",
+          "Bloqueios marítimos precisam de frota em posição",
+          "Nenhuma ordem chega instantaneamente ao outro continente",
+          "Um vassalo pode negociar, desobedecer ou desertar",
+          "Vitórias da coalizão não desaparecem ao receber notícias"
+        ]
+      },
+      "leadership_model": {
+        "strengths": [
+          "Organizador de campanhas e governos",
+          "Delegação a generais e chanceler inteligente",
+          "Capacidade de recompensar competência",
+          "Revisão de estratégia após derrotas",
+          "Visão de infraestrutura e economia como instrumentos políticos"
+        ],
+        "costs": [
+          "Controle excessivo da divergência",
+          "Risco de suprimir inovação autônoma",
+          "Dependência de tributos e coerção",
+          "Competição entre subordinados"
+        ],
+        "subordinates": "Orelia e os generais têm objetivos e podem discordar; lordes vassalos são mais que peões."
+      },
+      "progressive_reveal": [
+        {
+          "stage": "Sombra",
+          "reader": "Ordens e consequências de conquista revelam uma vontade superior",
+          "lucas": "Conhece só evidências que recebe"
+        },
+        {
+          "stage": "Ithran",
+          "reader": "Serakh e seu subgeneral demonstram o sistema, com confronto que pode terminar em derrota",
+          "lucas": "Não recebe nome/biografia de Velkar sem fonte"
+        },
+        {
+          "stage": "Generais",
+          "reader": "Três teatros e nove vassalagens mostram império vivo",
+          "lucas": "Descobre pelos eventos, aliados e viagens"
+        },
+        {
+          "stage": "Soberano",
+          "reader": "Velkar ganha cenas de escolha próprias, sem monólogos vazios",
+          "lucas": "O encontro é possível, mas não obrigatório cedo"
+        },
+        {
+          "stage": "Confronto",
+          "reader": "Duas formas de unir povos competem por consequências materiais e políticas",
+          "lucas": "Pode vencer, negociar, agir inesperadamente; sem roteiro de resultado"
+        }
+      ],
+      "foil_to_lucas": {
+        "Lucas": "Tecnologia, ciência, amizade, alianças voluntárias, GÊNESE plena e cidade que deseja receber pessoas.",
+        "Velkar": "Conquista, magia, logística, pactos vassalos e ordem que cobra obediência.",
+        "sophistication": "Velkar também pode ter ciência; Lucas também pode usar magia. A diferença é a relação com a liberdade, não dicotomia tecnológica simplista.",
+        "escalation": "Toda perda de Ithran, de rota ou de província produz custo e uma nova decisão, não reversão automática da vitória."
+      },
+      "voice": {
+        "direction": "Tom controlado e econômico; perguntas exatas sobre poder, lealdade, suprimento e motivos das pessoas, não gargalhadas de supervilão.",
+        "samples_proposed": [
+          "Não me digam quantas muralhas a cidade possui. Digam-me por que seus moradores ficariam para defendê-las.",
+          "Uma estrada não se governa com uma espada. Mas uma espada pode decidir quem cobrará a passagem.",
+          "Se perderam a batalha, tragam a informação que não tínhamos antes dela.",
+          "O problema não é o que esse Criador constrói. É o que os outros começarão a construir sem ele.",
+          "A obediência pode durar uma geração. Quero saber o que fará durar a segunda."
+        ],
+        "noncopy": "Não reproduzir citações históricas atribuídas a Alexandre."
+      },
+      "scenes_proposed": {
+        "war_council": "Recebe notícia temporalmente possível, compara mapas e escolhe objetivo com custo verificável.",
+        "diplomacy": "Oferece estabilidade real com restrição moral, permitindo resposta independente dos interlocutores.",
+        "defeat": "Sofre consequência, identifica erro, muda planos sem aumento automático de poder.",
+        "solitude": "Revela ambição e medo de perder legitimidade, sem absolver violência.",
+        "confrontation": "Respeito intelectual possível por Lucas, mas nenhuma vitória ou redenção obrigatória."
+      }
+    },
+    {
+      "id": "BOOKVI-SELEN-KORR",
+      "name": "Selen Korr",
+      "race": "a definir",
+      "gender": "feminino",
+      "role": "operadora ritual de limites de Ithran",
+      "status": "NEW_PROPOSAL_NOT_APPROVED",
+      "source": "Novo conceito de equipe solicitado 18/11",
+      "visual": {
+        "proposal": "Mangas com bordas de giz rúnico e olhar fatigado de alguém que contabiliza posições",
+        "fixed_by_author": false
+      },
+      "personality": {
+        "approved": "A definir",
+        "contradictions": [
+          "Recusa improvisos que ameaçam civis quando não foram autorizados",
+          "Leal à equipe mais que a Ithran"
+        ],
+        "habits": [
+          "Confere referências espaciais com marcas de cordão"
+        ],
+        "weaknesses": "Preparação lenta; métodos podem ser detectados ou interrompidos",
+        "non_caricature": "Não é bateria mágica portátil."
+      },
+      "powers": {
+        "demonstrated": "NENHUM",
+        "planned": [
+          "Preparar pequena área de Limiares, vedação e dispersão local"
+        ],
+        "not_allowed": [
+          "Teleporte total",
+          "Invisibilidade perfeita"
+        ]
+      },
+      "objective": "Cumprir operação com a equipe viva, mesmo diante de um chefe imprudente.",
+      "fear": "Ser sacrificada como custo administrativo.",
+      "relationships": {
+        "Ithran": "Subordinada que questiona limites táticos"
+      },
+      "agency": [
+        "Pode recusar uma geometria instável e atrasar o ataque"
+      ],
+      "entrance": "Só se houver rota, equipamentos, disfarce ou credenciais justificados e controles de acesso narrados.",
+      "voice_samples": [
+        "O círculo aguenta mais uma passagem. Não uma guerra inteira."
+      ],
+      "arc": "Aprende que obediência não é sobrevivência.",
+      "secrets": "Não conhece toda a cadeia de Velkar."
+    },
+    {
+      "id": "BOOKVI-BRUM-VASS",
+      "name": "Brum Vass",
+      "race": "a definir",
+      "gender": "masculino",
+      "role": "veterano de escolta e contenção de Ithran",
+      "status": "NEW_PROPOSAL_NOT_APPROVED",
+      "source": "Novo conceito de equipe solicitado 18/11",
+      "visual": {
+        "proposal": "Marcas de armadura reparada, luvas grossas, movimento econômico",
+        "fixed_by_author": false
+      },
+      "personality": {
+        "approved": "A definir",
+        "contradictions": [
+          "Vê valor em soldados vivos",
+          "Pode enfrentar Tharvek sem desprezar sua habilidade"
+        ],
+        "habits": [
+          "Reconta discretamente quem está ao alcance antes de lutar"
+        ],
+        "weaknesses": "Especialista em contenção, não em política e negociação",
+        "non_caricature": "Não luta para morrer em benefício do vilão."
+      },
+      "powers": {
+        "demonstrated": "NENHUM",
+        "planned": [
+          "Defesa de escudo ritual e controle de aproximação em um espaço delimitado"
+        ],
+        "not_allowed": [
+          "Imortalidade",
+          "Força maior que toda a Legião por decreto"
+        ]
+      },
+      "objective": "Retirar a equipe com reféns/informação intactos.",
+      "fear": "Ser abandonado pelo superior.",
+      "relationships": {
+        "Ithran": "Lealdade profissional e dúvida crescente"
+      },
+      "agency": [
+        "Pode render-se ou proteger civis contra ordem direta"
+      ],
+      "entrance": "Equipe fisicamente presente; não aparece escondido num laboratório sem autorização e risco.",
+      "voice_samples": [
+        "General, temos saída. É diferente de termos vitória."
+      ],
+      "arc": "Entre disciplina e dever moral.",
+      "secrets": "Ainda a definir por cena."
+    },
+    {
+      "id": "BOOKVI-ILVAR-RETH",
+      "name": "Ilvar Reth",
+      "race": "a definir",
+      "gender": "a definir",
+      "role": "analista logístico e mediador de documentos da equipe",
+      "status": "NEW_PROPOSAL_NOT_APPROVED",
+      "source": "Novo conceito de equipe solicitado 18/11",
+      "visual": {
+        "proposal": "Pasta de documentos verdadeira, anotações e botas de viagem gastas",
+        "fixed_by_author": false
+      },
+      "personality": {
+        "approved": "A definir",
+        "contradictions": [
+          "Prefere manipular leis a cometer violência",
+          "Pode advertir Ithran que sua exigência não tem reconhecimento local"
+        ],
+        "habits": [
+          "Anota de quem ouviu cada informação"
+        ],
+        "weaknesses": "Conhecimento jurídico imperial não representa legitimidade na Cidade Livre",
+        "non_caricature": "Não pode falsificar de forma infalível todos os documentos."
+      },
+      "powers": {
+        "demonstrated": "NENHUM",
+        "planned": [
+          "Rede comercial/institucional de contatos verificáveis; sem dom mágico fixado"
+        ],
+        "not_allowed": [
+          "Conhecer localização de emissários sem fonte",
+          "Dominar todos os portões"
+        ]
+      },
+      "objective": "Produzir cobertura legal e informação suficiente para localizar alvos.",
+      "fear": "Uma prova documental invalidar toda a reivindicação.",
+      "relationships": {
+        "Ithran": "Fornece pretexto e indícios, não certeza"
+      },
+      "agency": [
+        "Pode fugir, negociar informação ou abandonar cadeia"
+      ],
+      "entrance": "Acompanha por rota comercial/diplomática comprovável.",
+      "voice_samples": [
+        "A autorização deles não serve aqui? Então o general está descobrindo uma jurisdição."
+      ],
+      "arc": "Do cálculo político ao confronto com a realidade de outra soberania.",
+      "secrets": "O que seu documento realmente prova precisa ser descoberto em cena."
+    }
+  ],
+  "version": 2,
+  "updated_at": "2026-11-18",
+  "status": "PRE_CANON_CHARACTER_DESIGN_RECONCILED_WITH_HISTORICAL_LUCAS",
+  "supersedes": "planning/book-vi/characters-v1.json",
+  "original_v1_blob_sha": "15edd7d17c8d6819a01d91053d819833138a6f6e",
+  "priority": "Fichas v2 de Lucas e Velkar substituem apenas seus perfis interpretativos de preprodução; fatos canônicos permanecem nos episódios. Demais seis fichas preservadas byte-to-byte em representação JSON.",
+  "author_approved_overlay": [
+    "Lucas inventor ousado à Tony Stark e humor/astúcia/expressividade à Lloyd Frontera, mantendo Lucas original",
+    "Velkar conquistador estrategista em arquétipo de Alexandre, o Grande, sem biografia copiada",
+    "GÊNESE NÃO criará vidas conscientes nesta fase do Livro VI; tecnologia e alianças são a estratégia"
+  ],
+  "safeguards": {
+    "author_keeps_Lucas_agency": true,
+    "no_auto_narrative_opening": true,
+    "no_genese_nerf": true,
+    "no_new_conscious_lives_in_this_stage": true,
+    "no_velkar_omniscience": true,
+    "no_villain_plot_armor": true,
+    "no_sudden_canon_promotion": true,
+    "no_automatic_Aethron_identity": true,
+    "book5_last_head": "LV-C16-PV-D537-AUTHOR-SOURCE",
+    "book6_approved_episodes": 0
+  }
+}
