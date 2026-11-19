@@ -99,7 +99,7 @@ def verify_lvi(root: Path, episode_id: str) -> dict:
         # anchored candidates are stored separately. Never invent new events.
         reviewed = read_json(root / "episodes" / episode_id / "review" / "eventos_revisados.json")
         candidates = reviewed.get("events") if isinstance(reviewed, dict) else None
-        if (reviewed.get("review_status") != "REVISADO"
+        if (not isinstance(reviewed, dict) or reviewed.get("review_status") != "REVISADO"
                 or reviewed.get("source_sha256") != digest(source)
                 or not isinstance(candidates, list) or not candidates):
             raise ArchiveInvalid(f"{episode_id}: zero reviewed events in the draft pipeline")
