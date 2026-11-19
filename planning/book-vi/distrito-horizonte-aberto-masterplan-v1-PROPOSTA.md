@@ -1,3 +1,5 @@
+> **ADENDO PREVALECENTE (18/11/2026) — PLANO URBANO INTEGRADO v2:** este arquivo v1 dimensiona apenas o distrito de 100 mil e permanece como caderno técnico-base. O autor esclareceu que Lucas também modernizará **TODA A CIDADE ANTIGA**; a Malha Aurora **já tinha 3.600 autômatos funcionais D531**, com Vértice como coordenador, e operará transporte 24h, limpeza, resíduos, saneamento, manutenção e defesa civil para a cidade inteira enquanto o distrito espera moradores. O caderno vigente é `planning/book-vi/tres-arcos-malha-aurora-citywide-v2-PREPRODUCAO.md`; nenhum elemento foi criado em cena. A prioridade de abertura é Lucas com Kael, Lysa, conselho e Miren, não um encontro imediato com os emissários.
+
 # CRÔNICAS — LIVRO VI AS COROAS PARTIDAS
 ## DISTRITO DO HORIZONTE ABERTO — PLANO DIRETOR ARCANOTÉCNICO v1.0
 
