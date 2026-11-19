@@ -99,7 +99,18 @@ class OriginalSourceTests(unittest.TestCase):
         path = self.folder / "eventos_e_consequencias.json"
         events = [{"event_id": "D538-E001", "source_anchor": "Invented new fact"}]
         path.write_bytes(encode(events))
-        # Internal manifest must also match: a fabricated sidecar cannot bypass either gate.
+        draft_path = self.folder / "episode_draft.json"
+        draft = json.loads(draft_path.read_text(encoding="utf-8"))
+        draft["events"] = events
+        draft_path.write_bytes(encode(draft))
+        manifest_path = self.folder / "manifesto_imutavel.json"
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        for name in ("eventos_e_consequencias.json", "episode_draft.json"):
+            blob = (self.folder / name).read_bytes()
+            manifest["artifacts"][name] = {"bytes": len(blob), "sha256": sha(blob)}
+        manifest_path.write_bytes(encode(manifest))
+        # All internal hashes are now consistent; only the independent source
+        # anchor validator can detect the invented event.
         with self.assertRaises(ArchiveInvalid):
             verify_lvi(self.root, self.episode_id)
 
