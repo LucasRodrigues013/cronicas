@@ -46,7 +46,7 @@ jobs:
           python tools/github_chapter_publisher.py --archive-root . --book 'Livro V' --chapter 16 --check-only
       - name: Verify all three original exported Livro VI parts and flag continuity
         run: |
-          python tools/verify_lvi_original.py --archive-root .
+          python tools/verify_lvi_original.py --root . --require-all
           python tools/worldroot_canon_selection_guard.py --archive-root .
       - name: No external destinations used
         run: echo 'GitHub only. No OAuth, no Drive API, no HEAD mutation.'
