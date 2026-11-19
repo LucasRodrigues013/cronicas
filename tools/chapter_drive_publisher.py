@@ -254,12 +254,19 @@ def main(argv=None):
     parser = argparse.ArgumentParser()
     parser.add_argument("--archive-root", type=Path, default=Path("."))
     parser.add_argument("--changed-paths-file", type=Path)
+    parser.add_argument("--episode-id")
     parser.add_argument("--book")
     parser.add_argument("--chapter", type=int)
     parser.add_argument("--check-only", action="store_true")
     args = parser.parse_args(argv)
     root = args.archive_root.resolve()
     targets = set()
+    if args.episode_id:
+        if not re.fullmatch(r"[A-Za-z0-9_-]{3,128}", args.episode_id):
+            raise ChapterError("Unsafe episode ID")
+        meta = load(root / "episodes" / args.episode_id / "draft" / "checkpoint_candidato.json")
+        if meta.get("part") == "V":
+            targets.add((meta.get("book"), meta.get("chapter")))
     if args.book is not None or args.chapter is not None:
         if args.book is None or args.chapter is None:
             raise ChapterError("Specify both book and chapter")
