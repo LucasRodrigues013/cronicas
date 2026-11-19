@@ -9,7 +9,7 @@ on:
       - 'canon/BOOK_END_REQUEST.json'
 
 concurrency:
-  group: worldroot-canon-github-only
+  group: worldroot-story-write
   cancel-in-progress: false
 
 permissions:
@@ -26,7 +26,7 @@ jobs:
       - name: Checkout audited r12 engine at immutable commit
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: 4b7cba3f610401775ae82289ba4081e7e1e5c5dc
+          ref: 06ee3b5b56833ad48f6e90badb94c5a6d6236284
           path: engine
           persist-credentials: false
       - name: Setup Python
@@ -51,7 +51,7 @@ jobs:
       - name: Checkout audited r12 engine (never execute archive code)
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: 4b7cba3f610401775ae82289ba4081e7e1e5c5dc
+          ref: 06ee3b5b56833ad48f6e90badb94c5a6d6236284
           path: engine
           persist-credentials: false
       - name: Checkout latest private data branch
@@ -98,6 +98,26 @@ jobs:
             python -m worldroot.git_cycle bootstrap --archive-root archive
           fi
           python -m worldroot.git_cycle verify --archive-root archive
+      - name: Incrementally seal last canon, rebuild resumable HEAD and seal finished chapter
+        shell: bash
+        env:
+          PYTHONPATH: engine
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json,sys
+          from pathlib import Path
+          sys.path.insert(0,str(Path("archive/tools").resolve()))
+          from worldroot_memory_delta import canon_delta,resume
+          from worldroot_chapter_seal import seal_head_if_last
+          root=Path("archive")
+          head=json.loads((root/"canon/HEAD.json").read_text(encoding="utf-8"))
+          if head["book"]=="Livro VI":
+              print("CANON_INCREMENTAL_MEMORY:",canon_delta(root,head["episode_id"],write=True))
+              print("CANON_CHAPTER_SEAL:",seal_head_if_last(root))
+          state=resume(root,write=True)
+          print("CANON_RESUME_CHECK:",state["canon_head"]["episode_id"],state["canon_head"]["sequence"])
+          PY
       - name: Commit HEAD plus SQLite snapshot and immutable journal atomically
         shell: bash
         env:
@@ -106,7 +126,9 @@ jobs:
           set -euo pipefail
           git -C archive config user.name "github-actions[bot]"
           git -C archive config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git -C archive add -A canon
+          git -C archive add -A canon memory ops/RESUME.json
+          if test -d archive/chapters; then git -C archive add -A chapters; fi
+          if test -d archive/delivery/github_chapters; then git -C archive add -A delivery/github_chapters; fi
           if git -C archive diff --cached --quiet; then
             echo 'Idempotent run: no canonical data has changed.'
             exit 0
@@ -114,8 +136,13 @@ jobs:
           git -C archive commit -m "canon(worldroot): verified GitHub-only SQLite snapshot and HEAD"
           # Fast-forward push is an atomic remote transaction: never --force.
           auth_header="$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)"
+          expected_sha="$(git -C archive rev-parse HEAD)"
           git -C archive -c "http.extraheader=AUTHORIZATION: basic $auth_header" push origin HEAD:refs/heads/story-archive
           unset auth_header
+          git -C archive fetch -q origin refs/heads/story-archive:refs/remotes/origin/story-archive
+          actual_sha="$(git -C archive rev-parse refs/remotes/origin/story-archive)"
+          test "$actual_sha" = "$expected_sha"
+          echo "CANON_REMOTE_READBACK_SHA_VERIFIED: $actual_sha"
       - name: Explain non-Google scope
         run: |
           echo 'WORLDROOT GitHub-only HEAD and SQLite committed if changed.'
