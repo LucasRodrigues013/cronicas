@@ -96,6 +96,36 @@ jobs:
               if (source != archived.read_bytes() or
                   hashlib.sha256(source).hexdigest() != episode["source_sha256"]):
                   raise SystemExit("WORLDROOT BLOCKED: original chat source differs: " + eid)
+          # Protect EVERY subsequent Livro VI draft, not merely the three recovery episodes.
+          for folder in sorted((root / "episodes").glob("LVI-*/draft")):
+              eid = folder.parent.name
+              if eid == "LVI-C01-PI-D538-AUTHOR-SOURCE":  # rejected r17, audit only
+                  continue
+              original = root / "editorial/recovery/originals" / (eid + ".txt")
+              archived = folder / "narrativa_integral.md"
+              proof = folder / "source_proof.json"
+              manifest = folder / "manifesto_imutavel.json"
+              events_file = folder / "eventos_e_consequencias.json"
+              review_file = folder.parent / "review/continuity_review.json"
+              if not all(p.is_file() for p in (original, archived, proof, manifest, events_file, review_file)):
+                  raise SystemExit("WORLDROOT BLOCKED: incomplete literal package: " + eid)
+              source = original.read_bytes()
+              text = source.decode("utf-8")
+              sha = hashlib.sha256(source).hexdigest()
+              evidence = json.loads(proof.read_text(encoding="utf-8"))
+              record = json.loads(manifest.read_text(encoding="utf-8"))
+              review = json.loads(review_file.read_text(encoding="utf-8"))
+              events = json.loads(events_file.read_text(encoding="utf-8"))
+              if (source != archived.read_bytes() or
+                  evidence.get("source_sha256") != sha or
+                  evidence.get("source_bytes") != len(source) or
+                  record.get("original_readback_sha256") != sha or
+                  review.get("status") != "REVIEWED_WITH_EVIDENCE" or
+                  not isinstance(events, list) or not events or
+                  any(not isinstance(e, dict) or
+                      not isinstance(e.get("source_anchor"), str) or
+                      e["source_anchor"] not in text for e in events)):
+                  raise SystemExit("WORLDROOT BLOCKED: missing SHA256/events/character evidence: " + eid)
           # Historical D539 Caedren anomaly must be resolved by author before promotion.
           resolved = root / "editorial/recovery/reconciliations/LVI-C01-PIII-D539-AUTHOR-SOURCE.json"
           if not resolved.is_file():
