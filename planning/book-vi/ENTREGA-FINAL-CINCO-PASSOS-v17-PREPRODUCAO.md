@@ -42,7 +42,7 @@
 
 **Projeto de distrito:** área 15km², capacidade 100.000 habitantes, ~40mil moradias, parque central 160ha, fachadas renascentistas fantásticas e redes modernas invisíveis. Cidade antiga também é restaurada, não apagada; há saúde, água, esgoto, resíduos, energia, escolas, galerias, pontes, teatros e comércio.
 
-**Malha Aurora:** 3.600 autômatos operacionais existentes D531, Vértice técnico; Rumo separado. Nova coorte de 1.500 unidades + frotas 96 ônibus/24 VLT são novas obras POSSÍVEIS, não canon. Kael dirige segurança/corredores/socorro, Lysa acolhimento/educação/serviços, Conselho e profissionais agem autonomamente; Miranda não é prefeita da cidade e Miren não vira sua funcionária.
+**Malha Aurora:** 3.600 autômatos operacionais existentes D531, Vértice técnico; Rumo separado. Nova coorte de 1.500 unidades + frotas 96 ônibus/24 VLT são novas obras POSSÍVEIS, não canon. Kael dirige segurança/corredores/socorro, Lysa acolhimento/educação/serviços, Conselho e profissionais agem autonomamente; Miren não governa a cidade nem vira funcionária de Kael ou Lysa: mantém autonomia como dirigente científica de AERÚN.
 
 **AERÚN** (instituição científica sob Miren/Astra) pesquisa Arquitetos, saúde, mapas, magia e educa novas equipes. **Forja Aurora** sob seus mestres e profissionais desenvolve transporte, autômatos, peças, arquitetura e ARGOS, depois colabora no LEVIATÃ. A cidade se enche de profissões e famílias que chegam POR VIAGEM/CONVITES; capacidade inicial não é ocupação inicial. A entidade dragão ancestral AERÚN mantém identidade separada da instituição de mesmo nome.
 
