@@ -31,7 +31,8 @@
     "argos_operations_overhead_h": 0.5,
     "argos_access_to_campo_h": 1.2,
     "urban_tram_speed_kmh": 24,
-    "full_city_route_proposed_km": 16
+    "full_city_route_proposed_km": 16,
+    "argos_departure_location_id": "CA"
   },
   "coastline_km": [
     [
@@ -395,8 +396,8 @@
     {
       "id": "TH",
       "distance_direct_km": 294.2,
-      "air_corridor_km": 329.4,
-      "argos_block_min": 74,
+      "air_corridor_km": 306.9,
+      "argos_block_min": 71,
       "road_km": 320,
       "carriage_days": 7.1,
       "army_days": 14.5,
@@ -404,13 +405,15 @@
         "TA",
         "PL",
         "TH"
-      ]
+      ],
+      "argos_departure": "CA",
+      "argos_departure_direct_km": 274
     },
     {
       "id": "CV",
       "distance_direct_km": 477.1,
-      "air_corridor_km": 534.3,
-      "argos_block_min": 101,
+      "air_corridor_km": 520.1,
+      "argos_block_min": 99,
       "road_km": 545,
       "carriage_days": 12.1,
       "army_days": 24.8,
@@ -418,26 +421,30 @@
         "TA",
         "PR",
         "CV"
-      ]
+      ],
+      "argos_departure": "CA",
+      "argos_departure_direct_km": 464.4
     },
     {
       "id": "VT",
       "distance_direct_km": 377,
-      "air_corridor_km": 422.2,
-      "argos_block_min": 86,
+      "air_corridor_km": 397.4,
+      "argos_block_min": 83,
       "road_km": 470,
       "carriage_days": 10.4,
       "army_days": 21.4,
       "route": [
         "TA",
         "VT"
-      ]
+      ],
+      "argos_departure": "CA",
+      "argos_departure_direct_km": 354.8
     },
     {
       "id": "DW",
       "distance_direct_km": 724.2,
-      "air_corridor_km": 811.1,
-      "argos_block_min": 138,
+      "air_corridor_km": 833.2,
+      "argos_block_min": 141,
       "road_km": 795,
       "carriage_days": 17.7,
       "army_days": 36.1,
@@ -446,13 +453,15 @@
         "HA",
         "AV",
         "DW"
-      ]
+      ],
+      "argos_departure": "CA",
+      "argos_departure_direct_km": 743.9
     },
     {
       "id": "EL",
       "distance_direct_km": 801.6,
-      "air_corridor_km": 897.8,
-      "argos_block_min": 150,
+      "air_corridor_km": 873.3,
+      "argos_block_min": 146,
       "road_km": 880,
       "carriage_days": 19.6,
       "army_days": 40,
@@ -461,13 +470,15 @@
         "PL",
         "TH",
         "EL"
-      ]
+      ],
+      "argos_departure": "CA",
+      "argos_departure_direct_km": 779.7
     },
     {
       "id": "OR",
       "distance_direct_km": 679.8,
-      "air_corridor_km": 761.4,
-      "argos_block_min": 132,
+      "air_corridor_km": 785.6,
+      "argos_block_min": 135,
       "road_km": 750,
       "carriage_days": 16.7,
       "army_days": 34.1,
@@ -475,13 +486,15 @@
         "TA",
         "SE",
         "OR"
-      ]
+      ],
+      "argos_departure": "CA",
+      "argos_departure_direct_km": 701.4
     },
     {
       "id": "VY",
       "distance_direct_km": 822.7,
-      "air_corridor_km": 921.4,
-      "argos_block_min": 153,
+      "air_corridor_km": 896.7,
+      "argos_block_min": 150,
       "road_km": 995,
       "carriage_days": 22.1,
       "army_days": 45.2,
@@ -489,26 +502,30 @@
         "TA",
         "VT",
         "VY"
-      ]
+      ],
+      "argos_departure": "CA",
+      "argos_departure_direct_km": 800.6
     },
     {
       "id": "HA",
       "distance_direct_km": 174.6,
-      "air_corridor_km": 195.6,
-      "argos_block_min": 56,
+      "air_corridor_km": 220.5,
+      "argos_block_min": 59,
       "road_km": 195,
       "carriage_days": 4.3,
       "army_days": 8.9,
       "route": [
         "TA",
         "HA"
-      ]
+      ],
+      "argos_departure": "CA",
+      "argos_departure_direct_km": 196.9
     },
     {
       "id": "AV",
       "distance_direct_km": 393.6,
-      "air_corridor_km": 440.8,
-      "argos_block_min": 89,
+      "air_corridor_km": 464.9,
+      "argos_block_min": 92,
       "road_km": 435,
       "carriage_days": 9.7,
       "army_days": 19.8,
@@ -516,27 +533,32 @@
         "TA",
         "HA",
         "AV"
-      ]
+      ],
+      "argos_departure": "CA",
+      "argos_departure_direct_km": 415.1
     },
     {
       "id": "SE",
       "distance_direct_km": 316.2,
-      "air_corridor_km": 354.2,
-      "argos_block_min": 77,
+      "air_corridor_km": 376.5,
+      "argos_block_min": 80,
       "road_km": 345,
       "carriage_days": 7.7,
       "army_days": 15.7,
       "route": [
         "TA",
         "SE"
-      ]
+      ],
+      "argos_departure": "CA",
+      "argos_departure_direct_km": 336.2
     }
   ],
   "source_notes": [
     "D522: 33.2km Eixo and 24km straight Campo",
     "D537: ARGOS flight005 1462km/h single peak only",
     "D423–D430: 7d diplomatic carriage Thalor",
-    "Prior atlas schematic non-scale; current coords constructed editorially"
+    "Prior atlas schematic non-scale; current coords constructed editorially",
+    "AUDITORIA: ARGOS flight route computed FROM Campo Aurora (CA), not city-centre Três Arcos; road-trip km remains from city-centre TA."
   ],
   "reference_urls": [
     "https://cessna.txtav.com/turboprop/caravan",
