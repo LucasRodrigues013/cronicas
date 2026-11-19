@@ -45,6 +45,22 @@ class BookOpeningTests(unittest.TestCase):
         self.assertFalse(grant["canon_changed"])
         self.assertFalse(grant["choice_recorded"])
         _chronology(END,BEGIN,book_open_approval_verified=True)
+    def test_new_explicit_user_20261119_phrase_is_accepted_without_reinventing_quote(self):
+        self.approval["author_quote"] = (
+            "WORLDROOT — INICIAR LIVRO VI\\n"
+            "CRÔNICAS DE UM NOVO MUNDO\\n"
+            "ESTA É MINHA NOVA AUTORIZAÇÃO EXPLÍCITA PARA INICIAR A HISTÓRIA."
+        ).replace("\\\\n", "\\n")
+        self.save()
+        grant = require_book_open_approval(self.root, END, BEGIN)
+        self.assertEqual(grant["status"], "AUTHOR_APPROVED_BOOK_VI_DRAFT_ONLY")
+
+    def test_generic_start_without_book_vi_identity_stays_blocked(self):
+        self.approval["author_quote"] = "ESTA É MINHA NOVA AUTORIZAÇÃO EXPLÍCITA PARA INICIAR A HISTÓRIA."
+        self.save()
+        with self.assertRaises(GateError):
+            require_book_open_approval(self.root, END, BEGIN)
+
     def test_without_verified_approval_new_book_stays_blocked(self):
         with self.assertRaises(GateError):
             _chronology(END,BEGIN)
