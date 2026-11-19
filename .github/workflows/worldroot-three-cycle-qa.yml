@@ -9,6 +9,7 @@ on:
       - 'tools/worldroot_voice_audit.py'
       - 'tools/worldroot_chapter_seal.py'
       - 'tools/test_worldroot_three_cycles.py'
+      - 'tools/test_private_git_readback.py'
       - 'tools/github_chapter_publisher.py'
       - '.github/workflows/git-canon-cycle.yml'
       - '.github/workflows/worldroot-draft-inbox.yml'
@@ -23,6 +24,7 @@ on:
       - 'tools/worldroot_voice_audit.py'
       - 'tools/worldroot_chapter_seal.py'
       - 'tools/test_worldroot_three_cycles.py'
+      - 'tools/test_private_git_readback.py'
       - '.github/workflows/worldroot-three-cycle-qa.yml'
 
 permissions:
@@ -53,6 +55,7 @@ jobs:
           set -euo pipefail
           python -m py_compile tools/worldroot_transition.py tools/worldroot_memory_delta.py tools/worldroot_voice_audit.py tools/worldroot_chapter_seal.py
           python -m unittest discover -s tools -p 'test_worldroot_three_cycles.py' -v
+          python -m unittest discover -s tools -p 'test_private_git_readback.py' -v
           python -m unittest discover -s tools -p 'test_github_chapter_publisher.py' -v
           python -m unittest discover -s tools -p 'test_lvi_predelivery.py' -v
       - name: Check real D538–D540 source and the ratified Livro VI canonical journal
