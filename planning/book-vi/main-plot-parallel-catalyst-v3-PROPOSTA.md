@@ -1,3 +1,5 @@
+> **ATUALIZAÇÃO AUTORAL PREVALECENTE (18/11/2026) — TRAMA v4:** a abertura, quando autorizada, COMEÇA com Lucas, Miren, Kael/Lysa e Conselho planejando e materializando modernização de Três Arcos antiga E um distrito para até 100 mil pessoas; rede Aurora 24h sob Vértice. AERÚN expande equipes, os emissários anão/elfa recebem notícia por vias concretas, Ithran confirma o impacto e planeja MATAR representantes (resultado não garantido), conduzindo os arcos a Lucas. Documento vigente `planning/book-vi/main-plot-city-opening-v4-PREPRODUCAO.md`; infraestrutura `planning/book-vi/tres-arcos-malha-aurora-citywide-v2-PREPRODUCAO.md`. O plano anterior permanece para rastreabilidade, mas sua ordem de cenas não prevalece. **Nenhuma narrativa iniciou.**
+
 # CRÔNICAS — LIVRO VI AS COROAS PARTIDAS
 ## TRAMA PRINCIPAL REFINADA v3.0 — O MUNDO QUE ABRE SUAS PORTAS
 **STATUS: PROPOSTA DE PRÉ-PRODUÇÃO, NÃO É HISTÓRIA NARRADA, AINDA DEPENDE DE APROVAÇÃO.**
