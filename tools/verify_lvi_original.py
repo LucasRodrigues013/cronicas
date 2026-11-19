@@ -1,8 +1,9 @@
 """WORLDROOT LVI external-source gate. No file writes or canon promotion.
 
-An internally consistent archive is not proof of fidelity to an original
-ChatGPT message. For NEW Livre VI episodes require an independently provided
-literal source, a readback hash, anchored events and a continuity review.
+An internally consistent archive alone does not prove fidelity to the UI.
+For uploaded exports, check independent literal source and readback. For new
+assistant-authored episodes, preserve the precise prepared source before final
+user delivery, while labeling UI parity as unverified until a user export.
 Older rejected r17 is retained exclusively for audit, never accepted here.
 """
 from __future__ import annotations
@@ -58,7 +59,8 @@ def verify_lvi(root: Path, episode_id: str) -> dict:
     if (proof.get("schema") != "worldroot-original-chat-source-proof-v1"
             or proof.get("episode_id") != episode_id
             or proof.get("source_kind") not in (
-                "USER_SUPPLIED_CHAT_EXPORT", "USER_SUBMITTED_LITERAL_TEXT")
+                "USER_SUPPLIED_CHAT_EXPORT", "USER_SUBMITTED_LITERAL_TEXT",
+                "ASSISTANT_PREDELIVERY_EXACT_TEXT")
             or proof.get("source_sha256") != digest(source)
             or type(proof.get("source_bytes")) is not int
             or proof.get("source_bytes") != len(source)
@@ -66,6 +68,12 @@ def verify_lvi(root: Path, episode_id: str) -> dict:
             or not isinstance(proof.get("source_locator"), str)
             or not proof["source_locator"].strip()):
         raise ArchiveInvalid(f"{episode_id}: independent source proof invalid")
+    # In new-generation mode the source is the final prepared response bytes,
+    # not independently exported UI. This claim must remain visible in proof.
+    if proof.get("source_kind") == "ASSISTANT_PREDELIVERY_EXACT_TEXT":
+        if (not proof["source_locator"].startswith("PREDRAFT_SAME_TURN:")
+                or proof.get("ui_parity") != "NOT_INDEPENDENTLY_VERIFIED"):
+            raise ArchiveInvalid("Pre-delivery source cannot claim user-export parity")
     try:
         source.decode("utf-8")
     except UnicodeError as exc:
