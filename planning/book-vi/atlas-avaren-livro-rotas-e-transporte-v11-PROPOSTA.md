@@ -21,26 +21,26 @@ Ponto 0,0 km = centro administrativo de Três Arcos; eixo X = leste, Y = norte, 
 
 ## 3. DISTÂNCIAS E TEMPO DA VIAGEM — REFERÊNCIA TRÊS ARCOS
 
-| Destino | Reta proposta | Estrada mais curta do grafo | Comitiva 45km/dia | ARGOS bloco de voo | Conexão terrestre preferencial |
+| Destino | Reta em relação ao centro da cidade | Estrada mais curta | Comitiva 45km/dia | ARGOS bloco saindo de CAMPO AURORA | Conexão terrestre preferencial |
 |---|---:|---:|---:|---:|---|
-| Capital de Thalor | 294 km | 320 km | 7,1 dias | 1h14 | Três Arcos → Passagem das Lanternas → Capital de Thalor |
-| Calderva | 477 km | 545 km | 12,1 dias | 1h41 | Três Arcos → Passagem de Ressaca → Calderva |
-| Vélath · Grande Torre | 377 km | 470 km | 10,4 dias | 1h26 | Três Arcos → Vélath · Grande Torre |
-| Terras anãs | 724 km | 795 km | 17,7 dias | 2h18 | Três Arcos → Halvern → Arvendell → Terras anãs |
-| Terras élficas | 802 km | 880 km | 19,6 dias | 2h30 | Três Arcos → Passagem das Lanternas → Capital de Thalor → Terras élficas |
-| Confederações orcs | 680 km | 750 km | 16,7 dias | 2h12 | Três Arcos → Seral → Confederações orcs |
-| Veyra · entreposto | 823 km | 995 km | 22,1 dias | 2h33 | Três Arcos → Vélath · Grande Torre → Veyra · entreposto |
-| Halvern | 175 km | 195 km | 4,3 dias | 56 min | Três Arcos → Halvern |
-| Arvendell | 394 km | 435 km | 9,7 dias | 1h29 | Três Arcos → Halvern → Arvendell |
-| Seral | 316 km | 345 km | 7,7 dias | 1h17 | Três Arcos → Seral |
+| Capital de Thalor | 294 km | 320 km | 7,1 dias | 1h11 | Três Arcos → Passagem das Lanternas → Capital de Thalor |
+| Calderva | 477 km | 545 km | 12,1 dias | 1h39 | Três Arcos → Passagem de Ressaca → Calderva |
+| Vélath · Grande Torre | 377 km | 470 km | 10,4 dias | 1h23 | Três Arcos → Vélath · Grande Torre |
+| Terras anãs | 724 km | 795 km | 17,7 dias | 2h21 | Três Arcos → Halvern → Arvendell → Terras anãs |
+| Terras élficas | 802 km | 880 km | 19,6 dias | 2h26 | Três Arcos → Passagem das Lanternas → Capital de Thalor → Terras élficas |
+| Confederações orcs | 680 km | 750 km | 16,7 dias | 2h15 | Três Arcos → Seral → Confederações orcs |
+| Veyra · entreposto | 823 km | 995 km | 22,1 dias | 2h30 | Três Arcos → Vélath · Grande Torre → Veyra · entreposto |
+| Halvern | 175 km | 195 km | 4,3 dias | 59 min | Três Arcos → Halvern |
+| Arvendell | 394 km | 435 km | 9,7 dias | 1h32 | Três Arcos → Halvern → Arvendell |
+| Seral | 316 km | 345 km | 7,7 dias | 1h20 | Três Arcos → Seral |
 
 **ARGOS não sai da Casa Cívica:** tempo DE PORTA A PORTA é `tempo do quadro + conexão Três Arcos→Campo (aprox. 70–75min com transporte local futuro) + 20–40min saída do aeródromo do destino`. Ex.: cidade→Calderva via ARGOS ~3h10–3h40 em condições favoráveis, não "1h41 de casa em casa". E não há infraestrutura aeronáutica confirmada de pouso em Calderva ou Thalor; até reconhecimento/autorizações, voo é CENÁRIO PROPOSTO e eventualmente uma passagem de sobrevoo, não conexão comercial garantida.
 
-**Velocidade de referência = 450km/h** de ARGOS em rota futura (hipótese, não medição), fator 1,12 por desvio e 30 minutos para táxi/decolagem/subida/descida/pouso/checagem. Velocidade de pico 1.462km/h não entra nessa fórmula. Se uma missão futura medir outra velocidade de cruzeiro ou combustível/energia operacional, RECALCULAR atlas sem retcon.
+**ORIGEM DO VOO = CAMPO AURORA (CA), a 24km em linha reta do centro da cidade.** A coluna reta de distância na tabela continua medida do centro da cidade para orientar mapas; o bloco de voo usa distância reta CA→destino. **Velocidade de referência = 450km/h** de ARGOS em rota futura (hipótese, não medição), fator 1,12 por desvio e 30 minutos para táxi/decolagem/subida/descida/pouso/checagem. Velocidade de pico 1.462km/h não entra nessa fórmula. Se uma missão futura medir outra velocidade de cruzeiro ou combustível/energia operacional, RECALCULAR atlas sem retcon.
 
 ```
 distancia_reta = sqrt((xB-xA)^2 + (yB-yA)^2)
-distancia_aerea_projetada = distancia_reta * 1.12
+distancia_aerea_projetada = distancia_reta(Campo_Aurora, destino) * 1.12
 tempo_bloco_ARGOS_h = distancia_aerea_projetada / 450 + 0.50
 dias_comitiva = distancia_estrada_minima / 45
 dias_caravana = distancia_estrada_minima / 28
