@@ -85,17 +85,15 @@ def compact_brief(policy: dict, scene_tags=(), max_chars: int = 1750) -> dict:
     ))
     lines = [
         "WORLDROOT v" + str(policy["version"]),
-        "TITULO P43/P44: Livro VI AS COROAS PARTIDAS. PRE-PRODUCAO; r17 rejeitado; nao narrar sem nova ordem.",
-        "ABERTURA P53: D538 acorda, CORRE cidade, recorda TERRA, cafe com MIREN, depois Kael/Lysa/Conselho.",
-        "ARTE P54: Dubai na grandiosidade, renascimento na arquitetura de alta fantasia e parques.",
-        "REDE P55: Costura de Dados JA tem VIDEO regional D533; antenas/chamadas/avisos urbanos propostos.",
-        "AURORA P49/P50: 3600 existentes/VERTICE; reforma TODA cidade + bairro 100 mil em 24h; servicos 24h.",
-        "EMISSARIOS P51/P56: Tharvek/Elyrien recebem noticias; Ithran tenta matar, pode perder; NUNCA climax precoce.",
-        "AERUN P52: recebe pesquisadores e ensino; proteger setores sigilosos.",
-        "TEMPO P45/P47: 1 dia por Parte; 6 movimentos/25-35 capitulos, sem encontro instantaneo.",
-        "ISEKAI P35-P42: Lucas expressivo, GENESE plena, romance Miren, ARGOS, Talis com pista real.",
-        "VIDA P28/P29/P30: convivencia, cenas vividas, dia organico; nao relatorios.",
-        "CREDIBILIDADE P26/P31-P34: ~10000 palavras alvo, nao quota; nao repetir aprendizados nem canon falso.",
+        "TITULO P43/P44: AS COROAS PARTIDAS; PRE-PRODUCAO, r17 rejeitado, nao narrar sem ordem.",
+        "ABERTURA P53: D538 acorda, corre cidade, lembra Terra, cafe Miren, depois Kael/Lysa/Conselho.",
+        "ESTETICA P54: escala Dubai, arquitetura renascentista arcana, arte, fontes e parques.",
+        "REDES P50/P55: Malha 3600/Vertice D531; Costura VIDEO regional D533; expandir antenas/avisos 24h.",
+        "TRAMA P49/P51/P56: cidade toda+bairro 100mil em ate 24h; emissarios viajam, Ithran ataca; inicio nao climax.",
+        "AERUN P52: pesquisa/acolhimento com Miren/Astra, proteger setores sigilosos.",
+        "TEMPO P45/P47: um dia por Parte; seis movimentos/25-35 capitulos.",
+        "ISEKAI P35-P42: Lucas expressivo, GENESE plena, romance, ARGOS, Talis.",
+        "VIDA P28/P29/P30: convivencia, surpresa, nao relatorios; canon e 10mil nao sao quota.",
     ]
     prioritized = ("P53", "P54", "P55", "P56", "P49", "P50", "P51", "P52", "P43", "P44", "P45", "P46", "P47", "P48", "P35", "P36", "P37", "P38", "P39", "P40", "P41", "P42", "P31", "P32", "P33", "P34", "P26", "P27", "P28", "P29", "P30")
     available = {r["id"] for r in active}
