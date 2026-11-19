@@ -24,6 +24,7 @@ from .presentation_guard import presentation_preflight
 from .story_focus_audit import inspect_installment
 from .day_arc_audit import inspect_day_arc
 from .lived_narrative_audit import inspect_lived_narrative
+from .story_dynamics import inspect_draft_dynamics
 from .longform_depth import inspect_longform
 from .longform_segments import verify_longform_segments
 from .book_closure import require_book_end_approval
@@ -216,6 +217,7 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
             "longform_depth": inspect_longform(payload["prose"]),
             "longform_stage": stage_receipt,
             "presentation_preflight": presentation_preflight(payload["full_text"]),
+            "dynamic_scene_advisory": inspect_draft_dynamics(payload["prose"], payload["metadata"]),
         }
     if head.get("book_closed") is True:
         from .book_opening import require_book_open_approval
