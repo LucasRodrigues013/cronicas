@@ -106,7 +106,7 @@ jobs:
                   "canon_promoted": False,
                   "chat_delivery": "CHAT_MUST_FETCH_AND_CHECK_SHA_BEFORE_DISPLAY"
               }
-              receipt_bytes = (json.dumps(reader_receipt, ensure_ascii=False, sort_keys=True, separators=(",", ":"))+"\\n").encode("utf-8")
+              receipt_bytes = (json.dumps(reader_receipt, ensure_ascii=False, sort_keys=True, separators=(",", ":"))+"\n").encode("utf-8")
               if reader_file.exists() and reader_file.read_bytes() != receipt_bytes:
                   raise GateError("Reader release receipt is immutable and differs")
               reader_file.write_bytes(receipt_bytes)
