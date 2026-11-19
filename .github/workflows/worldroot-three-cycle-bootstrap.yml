@@ -68,7 +68,7 @@ jobs:
           expected="$(git rev-parse HEAD)"
           auth_header="$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)"
           git -c "http.extraheader=AUTHORIZATION: basic $auth_header" push origin HEAD:refs/heads/story-archive
+          git -c "http.extraheader=AUTHORIZATION: basic $auth_header" fetch -q origin refs/heads/story-archive:refs/remotes/origin/story-archive
           unset auth_header
-          git fetch -q origin refs/heads/story-archive:refs/remotes/origin/story-archive
           test "$(git rev-parse refs/remotes/origin/story-archive)" = "$expected"
           echo "SOURCE_BACKED_GITHUB_MEMORY_COMMIT_VERIFIED: $expected"
