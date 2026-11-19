@@ -49,6 +49,8 @@ jobs:
           python tools/worldroot_memory_delta.py --archive-root . --mode backfill --write
           python tools/worldroot_memory_delta.py --archive-root . --mode resume --write
           python tools/worldroot_voice_audit.py --archive-root . --episode-id LVI-C01-PIV-D540-AUTHOR-SOURCE --write
+          python tools/worldroot_chapter_seal.py --archive-root . --book 'Livro V' --chapter 16
+          python tools/worldroot_chapter_seal.py --archive-root . --book 'Livro V' --chapter 16 --check-only
       - name: Commit derived memory atomically, no canon or episode changes
         env:
           GH_TOKEN: ${{ github.token }}
@@ -56,7 +58,7 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A -- memory/ ops/RESUME.json editorial/audits/
+          git add -A -- memory/ ops/RESUME.json editorial/audits/ chapters/ delivery/github_chapters/
           if git diff --cached --quiet; then
             echo 'Already bootstrapped: no new derived memory.'
             exit 0
