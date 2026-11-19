@@ -1,3 +1,5 @@
+> **ADENDO PREVALECENTE v3 (18/11/2026):** O projeto urbano de Três Arcos mantém o dimensionamento v2 de serviços, 3.600 autômatos canônicos/Vértice e bairro de 100mil; acrescenta arquitetura renascentista de alta fantasia (arte, pontes, fontes, parques), regeneração da cidade ANTIGA, e EXPANSÃO DA COSTURA DE DADOS já operativa regionalmente D533 para uma rede municipal com videochamadas/avisos/antenas. Ver planning/book-vi/tres-arcos-renaissance-arcane-network-v3-PREPRODUCAO.md e roteiro de origem humana planning/book-vi/abertura-corrida-terra-miren-conselho-v5-PREPRODUCAO.md. Os 6 hubs/24 repetidores/60 quiosques são só projeto; geografia, capacidade real da velha cidade e ligações continentais NÃO estão comprovadas. Ainda PRÉ-CÂNONE.
+
 # LIVRO VI — AS COROAS PARTIDAS
 ## TRÊS ARCOS INTEGRADA · Plano municipal e novo distrito v2.0
 **STATUS: DIRETRIZ AUTORAL DE PRÉ-PRODUÇÃO, PROPOSTA DE ENGENHARIA, NÃO NARRADO, NÃO CANONIZADO.**
