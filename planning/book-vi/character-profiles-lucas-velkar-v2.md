@@ -27,7 +27,7 @@ Lucas consegue fazer uma cidade inteira imaginar o futuro, mas a essência de su
 
 **Abertura futura planejada:** D538 — uma nova corrida por Três Arcos (não a primeira da história), memórias reais da Terra, café humano com Miren, depois discussão com Kael/Lysa e instituições. Nada disso ocorreu canonicamente no Livro VI ainda.
 
-**Fal falas-originais indicativas (não canônicas):**
+**Falas originais indicativas (não canônicas):**
 - “Kael, uma ideia não é um problema até vocês verem o tamanho dela.”
 - “Lysa, eu não disse que era barato. Eu disse que podia ser maravilhoso.”
 - “Miren, só quero registrar que desta vez Brannik ficou empolgado antes de mim.”
