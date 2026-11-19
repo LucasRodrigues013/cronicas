@@ -1,0 +1,52 @@
+{
+  "schema": "worldroot-explicit-three-episode-ratification-v1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "created_on": "2026-11-19",
+  "author_source": "USER_MESSAGE",
+  "author_quote": "Salve os 3 capítulos como cânone e não mais rascunho. E me traga as últimas 4 opções atualizadas pra continuarmos.",
+  "approval": "RATIFY_EXACT_THREE_EPISODES",
+  "previous_head_id": "LV-C16-PV-D537-AUTHOR-SOURCE",
+  "original_export_sha256": "ac693e60ec6e9dfef2ffee6fc423641541cb52fd53bbd7ffebc9691822be95f9",
+  "episodes": [
+    {
+      "id": "LVI-C01-PI-D538-REAUTHORIZED-R2-AUTHOR-SOURCE",
+      "source_sha256": "fd6aa23fa1ea5e929d81e0aaebc7776ca30a697120f20d310f9b3fd1f25f98ee"
+    },
+    {
+      "id": "LVI-C01-PII-D538-AUTHOR-SOURCE",
+      "source_sha256": "69be6e8eb86e68718c3eccdb823456a0e913816f94e1ca607ff44dc37d9eb740"
+    },
+    {
+      "id": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+      "source_sha256": "74bb2ae185f21262a292d1a48e2c75e703d8ee92659f43f97c39d0174c2fd2e7"
+    }
+  ],
+  "does_not_infer_choice_on_part_III": true,
+  "preserve_narrative_literals": true,
+  "ratification_scope": "EXACT_IMMUTABLE_TEXT_AND_NARRATED_OCCURRENCES_ONLY; UNKNOWN_CAEDREN_TRAVEL_AND_MILITARY_AFFILIATION_NOT_ASSERTED",
+  "supersedes_only": "Prior per-choice canon promotion timing restriction for these three already-written episodes due to explicit 2026-11-19 author command; no global change to future episode cycle",
+  "historical_selections": [
+    {
+      "episode_id": "LVI-C01-PI-D538-REAUTHORIZED-R2-AUTHOR-SOURCE",
+      "option": 4,
+      "original_export_lines": [
+        4048,
+        4058
+      ]
+    },
+    {
+      "episode_id": "LVI-C01-PII-D538-AUTHOR-SOURCE",
+      "option": 4,
+      "original_export_lines": [
+        8456,
+        8460
+      ]
+    },
+    {
+      "episode_id": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+      "option": null,
+      "status": "AUTHOR_RATIFICATION_NOT_A_CHOICE"
+    }
+  ],
+  "note": "This is direct user ratification, not an invented selection for Part III; next Part IV option is still pending."
+}
