@@ -1,0 +1,484 @@
+{
+  "schema": "worldroot-bookvi-dynamics-v1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "book": "Livro VI — As Coroas Partidas",
+  "saga": "A Era das Nove Coroas",
+  "approval": {
+    "status": "APROVADO_COMO_DIRETRIZ_E_SMENTES_NARRATIVAS",
+    "author_date": "2026-11-19",
+    "meaning": "Approved for future planning, not canonized incidents or automatic actions"
+  },
+  "authority": {
+    "engine_policy": "main:worldroot/editorial_policy.json v14",
+    "living_head": "story-archive:canon/HEAD.json",
+    "head_at_design": {
+      "episode": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+      "day": 539,
+      "time": "21h08"
+    },
+    "pending_draft": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+    "non_interference": [
+      "No rewrite of Parts I-IV",
+      "No promotion of Part IV by planning",
+      "No changes to source literal, HEAD, CONTEXT or SQLite",
+      "Caedren D539 remains flagged until author-resolved"
+    ],
+    "drive": "LEGACY_READ_ONLY"
+  },
+  "vision": {
+    "principles": [
+      "O mundo produz acontecimentos, não apenas consequências",
+      "Lucas pode ser amado, temido, admirado, contestado, requisitado e surpreendido",
+      "GÊNESE continua plena, poderosa, extraordinária; sem nerf artificial",
+      "Antagonistas agem com informação real, meios e oportunidades, inclusive fora da presença de Lucas",
+      "Toda grande criação altera economia, política, cultura, ciência e relações sem virar reuniões repetidas",
+      "Cinco partes formam capítulo coerente, com emoção crescente e recompensa/clímax na Parte V",
+      "Vitórias/derrotas permanecem válidas; personagens evoluem; o mundo surpreende"
+    ],
+    "four_experiences": [
+      "MARAVILHAMENTO",
+      "AVENTURA",
+      "RELACOES",
+      "ESTRATEGIA"
+    ],
+    "style": "Alta fantasia isekai, humor de Lucas, romance com Miren, SISTEMA e NÓX distintos, cenas cinematográficas, antagonismo autônomo sem quotas de violência."
+  },
+  "audit": {
+    "source": "avaliação fornecida pelo autor",
+    "scores": {
+      "fantasia": 5,
+      "protagonismo_lucas": 4,
+      "conflito": 5,
+      "autonomia": 5,
+      "antagonismo": 5,
+      "conexoes": 4,
+      "ritmo": 5,
+      "continuidade": 5,
+      "consequencias": 4
+    },
+    "total": 42,
+    "max": 45,
+    "verified_chapter_score": false,
+    "priority_improvements": [
+      "Protagonismo expressivo de Lucas",
+      "Conectar regiões e núcleos",
+      "Consequências concretas e interessantes"
+    ]
+  },
+  "arc_contract": {
+    "format": "1 capítulo = 5 partes narrativas; em cada Parte 3 opções + 4 especial + 5 livre",
+    "chapter_growth": "Incidente, colisão, extraordinário, virada e clímax. A progressão deve crescer no impacto emocional sem perder contraste ou obrigar batalha em toda parte.",
+    "parts": [
+      {
+        "part": "I",
+        "role": "RUPTURA",
+        "required_effect": "Abrir com acontecimento vivido ou curiosidade intensa",
+        "choice_gate": "Dar alternativas genuínas"
+      },
+      {
+        "part": "II",
+        "role": "COLISAO",
+        "required_effect": "Atrito real de vontades, mistério, exploração ou adversidade",
+        "choice_gate": "Avançar situação de cena"
+      },
+      {
+        "part": "III",
+        "role": "EXTRAORDINARIO",
+        "required_effect": "Demonstração, descoberta, combate, heroísmo ou criação inesperada",
+        "choice_gate": "Lucas e NPCs mantêm autonomia"
+      },
+      {
+        "part": "IV",
+        "role": "VIRADA",
+        "required_effect": "Nova interpretação, evento externo ou decisão independente cria uma virada",
+        "choice_gate": "Não garantir desfecho"
+      },
+      {
+        "part": "V",
+        "role": "CLIMAX",
+        "required_effect": "Payoff narrativo memorável conquistado; consequência concreta e porta ao próximo capítulo",
+        "choice_gate": "Resolver algo e abrir outra possibilidade sem sinopse/ata"
+      }
+    ],
+    "not_rules": [
+      "Não impor números de combates",
+      "Não escolher por Lucas",
+      "Não inventar deslocamentos",
+      "Não predeterminar vilões invencíveis",
+      "Não usar quatro experiências como checklist em cada cena"
+    ]
+  },
+  "modules": {
+    "WORLD_PULSE": {
+      "status": "DESIGN_APPROVED_NOT_LIVE_CLOCK",
+      "required_fields": [
+        "actor",
+        "objective",
+        "location",
+        "day_time",
+        "resources",
+        "next_window",
+        "observed_events",
+        "knowledge_scope"
+      ],
+      "canonicalization": "Only after literal scene, source proof and real author choice"
+    },
+    "ANTAGONIST_ENGINE": {
+      "status": "DESIGN_APPROVED_NOT_LIVE_CLOCK",
+      "required_fields": [
+        "antagonist",
+        "goal",
+        "resources",
+        "contingencies",
+        "losses",
+        "intelligence_sources",
+        "defeatable_outcomes"
+      ],
+      "canonicalization": "Only after literal scene, source proof and real author choice"
+    },
+    "SPY_NETWORK": {
+      "status": "DESIGN_APPROVED_NOT_LIVE_CLOCK",
+      "required_fields": [
+        "agent",
+        "cover",
+        "entry_route",
+        "witnesses",
+        "intel_obtained",
+        "exposure_risk",
+        "exfiltration_route"
+      ],
+      "canonicalization": "Only after literal scene, source proof and real author choice"
+    },
+    "AWE_SYSTEM": {
+      "status": "DESIGN_APPROVED_NOT_LIVE_CLOCK",
+      "required_fields": [
+        "witness",
+        "observed_genesis_act",
+        "prior_beliefs",
+        "reaction",
+        "cultural_context",
+        "news_route",
+        "delay"
+      ],
+      "canonicalization": "Only after literal scene, source proof and real author choice"
+    },
+    "COMBAT_CONTINUITY": {
+      "status": "DESIGN_APPROVED_NOT_LIVE_CLOCK",
+      "required_fields": [
+        "participants",
+        "location",
+        "terrain",
+        "skills_proven",
+        "positions",
+        "injuries",
+        "outcome",
+        "aftermath"
+      ],
+      "canonicalization": "Only after literal scene, source proof and real author choice"
+    },
+    "SCENE_DIRECTOR": {
+      "status": "DESIGN_APPROVED_NOT_LIVE_CLOCK",
+      "required_fields": [
+        "dramatic_goal",
+        "trigger",
+        "lived_action",
+        "relationship_beat",
+        "change",
+        "exit_hook"
+      ],
+      "canonicalization": "Only after literal scene, source proof and real author choice"
+    },
+    "FACTION_CLOCK": {
+      "status": "DESIGN_APPROVED_NOT_LIVE_CLOCK",
+      "required_fields": [
+        "faction",
+        "operation",
+        "travel_time",
+        "resources",
+        "current_step",
+        "earliest_legal_step",
+        "outcomes"
+      ],
+      "canonicalization": "Only after literal scene, source proof and real author choice"
+    },
+    "MYSTERY_GRAPH": {
+      "status": "DESIGN_APPROVED_NOT_LIVE_CLOCK",
+      "required_fields": [
+        "clue",
+        "literal_source",
+        "provenance",
+        "hypotheses",
+        "contradictions",
+        "who_knows",
+        "what_is_unknown"
+      ],
+      "canonicalization": "Only after literal scene, source proof and real author choice"
+    },
+    "RELATIONSHIP_PULSE": {
+      "status": "DESIGN_APPROVED_NOT_LIVE_CLOCK",
+      "required_fields": [
+        "characters",
+        "bond",
+        "last_scene",
+        "independent_goal",
+        "new_interaction",
+        "trust_delta",
+        "status"
+      ],
+      "canonicalization": "Only after literal scene, source proof and real author choice"
+    },
+    "LEGACY_EVENTS": {
+      "status": "DESIGN_APPROVED_NOT_LIVE_CLOCK",
+      "required_fields": [
+        "source_event_id",
+        "original_day",
+        "stakeholders",
+        "persistent_consequence",
+        "future_opportunity",
+        "verification"
+      ],
+      "canonicalization": "Only after literal scene, source proof and real author choice"
+    }
+  },
+  "seeds": [
+    {
+      "id": "S01",
+      "title": "O homem que veio roubar um milagre",
+      "lane": "ESPIONAGEM",
+      "status": "PROPOSTA",
+      "premise": "Investigador independente estrangeiro busca verificar GÊNESE, com identidade/cobertura/rota rastreáveis",
+      "required_location": "Três Arcos, após notícia verificável das criações",
+      "signature_scene_as_option": "Possível observação de criação; conflito com Varo e perseguição noturna",
+      "earliest_introduction": "C02 ou posterior",
+      "continuity_guard": "Notícia e observação chegam por rede física; não atribuir automaticamente a Velkar",
+      "stages": [
+        "Pista/observação verificável",
+        "Agente independente inicia movimento",
+        "Colisão conforme escolha/circunstância",
+        "Clímax aberto com resultado permanente"
+      ],
+      "outcome": "ABERTO",
+      "protagonist_knowledge": "NÃO_IMPLÍCITO"
+    },
+    {
+      "id": "S02",
+      "title": "O desafio dos campeões",
+      "lane": "CONFRONTO",
+      "status": "PROPOSTA",
+      "premise": "Guerreiro célebre procura a Legião/Lucas para testar rumores, motivações pessoais a definir",
+      "required_location": "Três Arcos, mediante chegada verificada",
+      "signature_scene_as_option": "Duelo ou torneio; Káiron surpreende sem perder autonomia",
+      "earliest_introduction": "C02 ou posterior",
+      "continuity_guard": "Não impor combate nem derrotar campeão por roteiro; Káiron age por vontade própria",
+      "stages": [
+        "Pista/observação verificável",
+        "Agente independente inicia movimento",
+        "Colisão conforme escolha/circunstância",
+        "Clímax aberto com resultado permanente"
+      ],
+      "outcome": "ABERTO",
+      "protagonist_knowledge": "NÃO_IMPLÍCITO"
+    },
+    {
+      "id": "S03",
+      "title": "A passagem que partiu uma montanha",
+      "lane": "BATALHA",
+      "status": "PROPOSTA",
+      "premise": "Tharvek enfrenta Rhazek/força de cerco mediante logística demonstrada",
+      "required_location": "Terras anãs, geografia/rotas a verificar",
+      "signature_scene_as_option": "Forja rúnica, defesa de fortaleza, consequências reais, eventual pedido de cooperação",
+      "earliest_introduction": "C02 em POV distante ou posterior",
+      "continuity_guard": "Tharvek ainda desconhecido de Lucas; não confirmar vitória/queda previamente",
+      "stages": [
+        "Pista/observação verificável",
+        "Agente independente inicia movimento",
+        "Colisão conforme escolha/circunstância",
+        "Clímax aberto com resultado permanente"
+      ],
+      "outcome": "ABERTO",
+      "protagonist_knowledge": "NÃO_IMPLÍCITO"
+    },
+    {
+      "id": "S04",
+      "title": "A floresta que parou de cantar",
+      "lane": "MISTERIO_ACAO",
+      "status": "PROPOSTA",
+      "premise": "Elyrien investiga alteração na ressonância élfica após indícios verificáveis",
+      "required_location": "Região élfica, sem deslocamento de Lucas presumido",
+      "signature_scene_as_option": "Criaturas deslocadas, combate dos guardiões, evidência ambígua",
+      "earliest_introduction": "C02 em POV distante ou posterior",
+      "continuity_guard": "Origem da interferência em aberto; não ligar automaticamente a Velkar/Arquitetos",
+      "stages": [
+        "Pista/observação verificável",
+        "Agente independente inicia movimento",
+        "Colisão conforme escolha/circunstância",
+        "Clímax aberto com resultado permanente"
+      ],
+      "outcome": "ABERTO",
+      "protagonist_knowledge": "NÃO_IMPLÍCITO"
+    },
+    {
+      "id": "S05",
+      "title": "A batalha do Estreito Negro",
+      "lane": "NAVAL",
+      "status": "PROPOSTA",
+      "premise": "Varkhess pressiona frota/rota após reconhecimento e suprimentos demonstrados",
+      "required_location": "Litoral de Calderva ou estreito a nomear e mapear",
+      "signature_scene_as_option": "Combate marítimo, técnica arcana, resgate de civis, consequências na logística",
+      "earliest_introduction": "Movimento II–V, quando causalidade permitir",
+      "continuity_guard": "LEVIATÃ apenas por escolha posterior; não criar monstros já canônicos por menção no plano",
+      "stages": [
+        "Pista/observação verificável",
+        "Agente independente inicia movimento",
+        "Colisão conforme escolha/circunstância",
+        "Clímax aberto com resultado permanente"
+      ],
+      "outcome": "ABERTO",
+      "protagonist_knowledge": "NÃO_IMPLÍCITO"
+    },
+    {
+      "id": "S06",
+      "title": "O chamado dos sobreviventes",
+      "lane": "RESGATE",
+      "status": "PROPOSTA",
+      "premise": "Caravana traz pedido urgente de socorro de comunidade em risco comprovado",
+      "required_location": "Rota externa até Três Arcos, tempo físico necessário",
+      "signature_scene_as_option": "Lucas pode receber pedido direto e manifestar GÊNESE em grande escala",
+      "earliest_introduction": "C02 ou posterior após notícia e chegada",
+      "continuity_guard": "Lucas decide a intervenção; recusa e vitória são reais e persistentes",
+      "stages": [
+        "Pista/observação verificável",
+        "Agente independente inicia movimento",
+        "Colisão conforme escolha/circunstância",
+        "Clímax aberto com resultado permanente"
+      ],
+      "outcome": "ABERTO",
+      "protagonist_knowledge": "NÃO_IMPLÍCITO"
+    },
+    {
+      "id": "S07",
+      "title": "O diplomata que nunca levanta a voz",
+      "lane": "POLITICA_ESTRATEGICA",
+      "status": "PROPOSTA",
+      "premise": "Orelia oferece acordo sedutor a reino com interesses legítimos",
+      "required_location": "Reino externo após contato por emissário documentado",
+      "signature_scene_as_option": "Debate público e confronto político com consequências materiais",
+      "earliest_introduction": "Movimentos II–IV",
+      "continuity_guard": "Não tornar todos súditos nem aceitar que Lucas vença só por existir",
+      "stages": [
+        "Pista/observação verificável",
+        "Agente independente inicia movimento",
+        "Colisão conforme escolha/circunstância",
+        "Clímax aberto com resultado permanente"
+      ],
+      "outcome": "ABERTO",
+      "protagonist_knowledge": "NÃO_IMPLÍCITO"
+    },
+    {
+      "id": "S08",
+      "title": "A expedição que desapareceu",
+      "lane": "EXPLORACAO",
+      "status": "PROPOSTA",
+      "premise": "Astra investiga atraso verificável de equipe e pistas arqueológicas",
+      "required_location": "Região exterior depois de expedição com participantes e rota definidos",
+      "signature_scene_as_option": "Ruína, ecossistema isolado, perseguição/descoberta e pesquisa",
+      "earliest_introduction": "Movimentos II–V",
+      "continuity_guard": "Não confirmar desaparecimento ou origem de ruínas antes do evento; Talis/HZ-1 separados",
+      "stages": [
+        "Pista/observação verificável",
+        "Agente independente inicia movimento",
+        "Colisão conforme escolha/circunstância",
+        "Clímax aberto com resultado permanente"
+      ],
+      "outcome": "ABERTO",
+      "protagonist_knowledge": "NÃO_IMPLÍCITO"
+    },
+    {
+      "id": "S09",
+      "title": "A vontade dos dragões",
+      "lane": "FANTASIA_ANCIENT",
+      "status": "PROPOSTA",
+      "premise": "Guardião das Marés percebe fenômeno e decide agir conforme própria vontade",
+      "required_location": "Zona das Marés quando estabelecida",
+      "signature_scene_as_option": "Encontro de seres lendários e fenômenos naturais de escala monumental",
+      "earliest_introduction": "Movimentos III–VI",
+      "continuity_guard": "Dragões não controlados por Lucas nem hierarquia global inventada",
+      "stages": [
+        "Pista/observação verificável",
+        "Agente independente inicia movimento",
+        "Colisão conforme escolha/circunstância",
+        "Clímax aberto com resultado permanente"
+      ],
+      "outcome": "ABERTO",
+      "protagonist_knowledge": "NÃO_IMPLÍCITO"
+    },
+    {
+      "id": "S10",
+      "title": "O homem que criou o impossível",
+      "lane": "AWE",
+      "status": "PROPOSTA",
+      "premise": "Visitantes testemunham manifestação física de GÊNESE",
+      "required_location": "Três Arcos ou local de criação, com observadores presentes",
+      "signature_scene_as_option": "Reverência, temor, desacordo cultural e contraste com humor cotidiano de Lucas",
+      "earliest_introduction": "C02 ou posterior, após criação escolhida",
+      "continuity_guard": "Não confundir testemunho com divindade confirmada; sem notícia instantânea",
+      "stages": [
+        "Pista/observação verificável",
+        "Agente independente inicia movimento",
+        "Colisão conforme escolha/circunstância",
+        "Clímax aberto com resultado permanente"
+      ],
+      "outcome": "ABERTO",
+      "protagonist_knowledge": "NÃO_IMPLÍCITO"
+    }
+  ],
+  "next_chapter_handoff": {
+    "current_chapter": "Livro VI C01, Parts I-III canonical, Part IV draft",
+    "next_chapter": "Livro VI C02, only after Part IV and Part V narrated and closed per legitimate choice",
+    "early_threads": [
+      {
+        "seed": "S01",
+        "stage": "Rumor ou observador inicial; cobertura/viagem antes de infiltração",
+        "priority": "ALTA"
+      },
+      {
+        "seed": "S02",
+        "stage": "Notícia ou preparação do desafiante, chegada orgânica",
+        "priority": "MEDIA"
+      },
+      {
+        "seed": "S03",
+        "stage": "POV independente de Tharvek, somente se tempo/geografia permitir",
+        "priority": "ALTA"
+      },
+      {
+        "seed": "S04",
+        "stage": "POV independente de Elyrien, continuidade do confronto D539, sem local inventado",
+        "priority": "ALTA"
+      },
+      {
+        "seed": "S10",
+        "stage": "Reação plausível de testemunhas futuras a GÊNESE, com rota de notícia",
+        "priority": "MEDIA"
+      }
+    ],
+    "part_v_c01": "O encerramento do C01 deve ter um clímax vivido e ser coerente com a escolha e o D540 narrado, sem antecipar/reescrever a Parte IV nem impor infiltrado.",
+    "long_arcs": "S05–S09 emergem durante movimentos futuros mediante evidência; todos dez são oportunidades, não acontecimentos obrigatórios."
+  },
+  "operation_rules": {
+    "no_auto_tick": true,
+    "no_self_promote": true,
+    "no_instant_knowledge": true,
+    "no_forced_escapes": true,
+    "no_genesis_nerf": true,
+    "require_actor_location_route_time": true,
+    "must_record_defeats": true
+  },
+  "validation_targets": [
+    "Cinco partes planejadas com objetivo/ação/virada/gancho, clímax vivo na V",
+    "Dez seeds permanecem PROPOSTA",
+    "NPC reage segundo conhecimento/tempo reais",
+    "Nenhum evento canônico adicionado pelo plano",
+    "Último HEAD e draft real lidos antes do próximo episódio"
+  ]
+}
