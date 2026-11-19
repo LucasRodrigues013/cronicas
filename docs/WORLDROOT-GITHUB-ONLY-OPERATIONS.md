@@ -59,3 +59,11 @@ As políticas v13/P01–P70 e UX01–UX12 **não são reescritas** por esta muda
 - Respostas finais e arquivos independentes de GitHub ainda exigem GET/readback para declarar armazenamento confirmado. Um teste verde em outra Action não é recibo de entrega do capítulo futuro.
 
 **Política de migração:** sem escrita ou exclusão no Google Drive; `main/worldroot/drive_bridge.py` e templates antigos são preservados como código legado, mas o workflow ativo de capítulo não contém job de Drive. Sem solicitações de secrets OAuth.
+
+## Contrato técnico adicional do próximo episódio Livro VI
+
+O `worldroot/draft_inbox.py` da main aceita os campos **`reviewed_events` e `reviewed_knowledge`**. Para um Livro VI novo, o mesmo `inbox/<episode_id>.json` deve trazer **`character_preflight`** (lista não vazia de fichas de presença) e, se necessário, **`continuity_flags`**. Cada personagem requer `name`, `last_physical_appearance_source`, `location_at_scene`, `affiliation_at_scene` e `knowledge_at_scene`. O campo é preparado pelo narrador antes da escrita final a partir de fontes; nenhum valor é inferido pelo GitHub.
+
+Após o arquivamento principal, `tools/lvi_predelivery.py` confere o mesmo texto literal em inbox e draft e salva, **na mesma transação GitHub**, `editorial/recovery/originals/<episode_id>.txt`, `episodes/<episode_id>/draft/source_proof.json` e `review/continuity_review.json`. A prova deve declarar `ASSISTANT_PREDELIVERY_EXACT_TEXT` e `ui_parity=NOT_INDEPENDENTLY_VERIFIED`, **nunca** alegar que o texto da interface ChatGPT foi exportado independentemente. `tools/verify_lvi_original.py` aceita os eventos já referenciados em `review/eventos_revisados.json` quando a main gera `eventos_e_consequencias.json=[]`; para os três episódios recuperados, continua exigindo a fonte exportada e seus eventos reais. Se falta personagem, origem ou âncora, o job falha antes de publicar um recibo.
+
+Essa etapa não certifica semanticamente uma viagem não narrada nem substitui uma revisão humana. A continuidade de Caedren D539 continua com flag e sem solução automática.

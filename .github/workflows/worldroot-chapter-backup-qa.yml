@@ -6,6 +6,9 @@ on:
     paths:
       - 'tools/chapter_drive_publisher.py'
       - 'tools/github_chapter_publisher.py'
+      - 'tools/lvi_predelivery.py'
+      - 'tools/test_lvi_predelivery.py'
+      - 'tools/verify_lvi_original.py'
       - 'tools/test_chapter_drive_publisher.py'
       - 'tools/test_github_chapter_publisher.py'
       - '.github/workflows/worldroot-draft-inbox.yml'
@@ -16,6 +19,9 @@ on:
     paths:
       - 'tools/chapter_drive_publisher.py'
       - 'tools/github_chapter_publisher.py'
+      - 'tools/lvi_predelivery.py'
+      - 'tools/test_lvi_predelivery.py'
+      - 'tools/verify_lvi_original.py'
       - 'tools/test_chapter_drive_publisher.py'
       - 'tools/test_github_chapter_publisher.py'
       - '.github/workflows/worldroot-chapter-backup-qa.yml'
@@ -41,6 +47,7 @@ jobs:
           python -m py_compile tools/chapter_drive_publisher.py tools/github_chapter_publisher.py
           python -m unittest discover -s tools -p 'test_chapter_drive_publisher.py' -v
           python -m unittest discover -s tools -p 'test_github_chapter_publisher.py' -v
+          python -m unittest discover -s tools -p 'test_lvi_predelivery.py' -v
       - name: Audit real Livro V Chapter 16 without mutation
         run: |
           python tools/github_chapter_publisher.py --archive-root . --book 'Livro V' --chapter 16 --check-only
