@@ -1,0 +1,77 @@
+{
+  "schema": "worldroot-author-direction-for-next-part-v1",
+  "date": "2026-11-19",
+  "source": "Author conversation request: 'Vamos deixar salvo e vamos aplicar pra história no episódio V além dos outros temas e tramas que temos'",
+  "scope": "LIVRO_VI_C01_PARTE_V",
+  "status": "APPROVED_DIRECTION_FOR_NEXT_NARRATIVE_NOT_YET_NARRATED",
+  "user_requested_actions": [
+    "Apply Torre do Criador V3 architecture and its characteristic objects/cars/Earth collections during Chapter 1 Part V",
+    "Keep the city’s ongoing consequences and the other approved major plots/interludes active",
+    "Connect the final grand personal creation to real inhabitants and life of Horizonte Aberto",
+    "Keep NÓX as existing living companion, optionally integrated; no new AI clone"
+  ],
+  "source_of_truth": {
+    "head": "story-archive/canon/HEAD.json",
+    "current_head_episode": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+    "prev_unclosed": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+    "operation_contract": "story-archive/docs/WORLDROOT-GITHUB-ONLY-OPERATIONS.md"
+  },
+  "source_docs": [
+    "planning/book-vi/torre-do-criador-masterplan-v3-automacao-legado-PREPRODUCAO.md",
+    "planning/book-vi/torre-do-criador-masterdata-v3.json",
+    "planning/book-vi/torre-do-criador-masterplan-v2-aerodoca-PREPRODUCAO.md",
+    "planning/book-vi/world-pulse-and-five-arcs-v1.json"
+  ],
+  "choice_interpretation": {
+    "type": "AUTHOR_FREEFORM_NARRATIVE_DIRECTION_FOR_PART_V",
+    "raw_intent": "Apply saved tower design, especially cars and Earth items, while incorporating ongoing story plots",
+    "fixed_new_episode_choice_not_required": "Author's explicit action direction authorizes preparing Part V, but formal canonical promotion still follows source/choice gate.",
+    "cannot_forge_choice_4": true,
+    "no_silent_piv_promotion": true
+  },
+  "chapter_1_part_v_beat_contract": [
+    {
+      "beat": 1,
+      "name": "O Lar que Faltava",
+      "need": "Lucas/Miren reconcile the desire for a private home after helping build 40,000; house Jardim Branco remains meaningful"
+    },
+    {
+      "beat": 2,
+      "name": "Uma Ideia Pessoal",
+      "need": "Legitimate site permission/land status within Horizonte Aberto and character-led project; no appropriation of government"
+    },
+    {
+      "beat": 3,
+      "name": "O Impossível Tem Endereço",
+      "need": "GÊNESE materializes 145m/22-level/3-basement Torre with personal emblem, 70m ARGOS aerodock and protected panoramic deck, subject to real scene decisions; society reacts"
+    },
+    {
+      "beat": 4,
+      "name": "A Casa Vive",
+      "need": "NÓX is asked about voluntary network connection; support the friend as existing living armor; show robotic maintenance/security/elevator, Earth garage and historical gallery in lived scenes; no 22-floor catalog"
+    },
+    {
+      "beat": 5,
+      "name": "O Céu, o Lar e os Outros Mundos",
+      "need": "Emotional cinematic climax at sky lounge and observatory with friends; independent POV from Elyrien/Tharvek and one plausible world-pulse seed, no instant knowledge to Lucas"
+    }
+  ],
+  "preserve": [
+    "22 levels + 3 basement, 145m, 31,000m² internal + external deck and dock not double-counted",
+    "NÓX already existing, not transformed into software, forced into tower, or duplicated; SISTEMA distinct",
+    "96 non-sentient private automata can appear if Lucas chooses to manifest; do not take municipal units",
+    "Gallery’s photos of unrecorded events are explicitly labeled reconstructions, not historical photographs",
+    "Cars/motorcycles and Earth items are recreated references, not evidence of Lucas having owned them in past",
+    "Miren independent and not compelled to move; city political power autonomous",
+    "ARGOS capability on sky dock must be tested: no past unverified landing; future ASA LIVRE not already built",
+    "Tharvek/Elyrien have own chronology and knowledge; don't assign unknown cylinder or spies to Velkar without evidence",
+    "No retroactive edit of draft PIV, source literal or canon head"
+  ],
+  "noncanon_status": {
+    "episode_v_written": false,
+    "tower_manifested": false,
+    "argos_tower_landing": false,
+    "permanent_plot_events_introduced": false
+  },
+  "next_action": "When writing C01 PV use this as the author’s creative direction; adhere to the canon-selection/previous-draft gate, archive the complete literal draft through permitted workflow, and get author’s later choices."
+}
