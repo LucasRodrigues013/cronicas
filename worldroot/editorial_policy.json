@@ -1,7 +1,7 @@
 {
   "schema": "worldroot-editorial-policy-v1",
   "project": "CRONICAS_DE_UM_NOVO_MUNDO",
-  "version": 9,
+  "version": 10,
   "reviewed_at": "2026-11-18",
   "approved_scope": "USER_REQUESTED_PERMANENT_PREFERENCES_NOT_CANON_EVENTS",
   "source_of_truth": "main/worldroot/editorial_policy.json",
@@ -121,6 +121,13 @@
       "at": "2026-11-18",
       "transcript_line": null,
       "quote": "Não, desconsiderar isto, não pedi o primeiro episódio, estávamos revisando ainda. Já temos o nome do livro conforme combinado anteriormente, revise isso tudo. Vamos revisitar e colocar igual planejamentos. quais são os planos do livro 6?, estamos com tudo planejado pra quantos capítulos e episódios já ? Precisamos começar com antagonistas, o anão e a elfa indo a três arcos, conectando o mundo, podemos focar em falar disso e ir mostrando Lucas e os demais vivendo com as rotinas, até chegarmos neles e isso começar a orientar história com Lucas novamente, oque acha ? Precisamos manter aquele grande planejamento que tivemos e que dure, além disso, qual prompt pra iniciarmos ? Vamos tentar narrar um dia por vez, não vários, um por vez, e termos agora verdadeiramente uma aventura épica de alta fantasia."
+    },
+    {
+      "id": "S17",
+      "kind": "AUTHOR_CREATIVE_DIRECTION_PREPRODUCTION",
+      "at": "2026-11-18",
+      "transcript_line": null,
+      "quote": "A ideia também é melhorar a infraestrutura de três arcos no total, o novo bairro vai ser criado e deixado pronto e ser feito a manutenção dele pelos autômatos da rede aurora até as pessoas chegarem. Fazemos toda estrutura de lixo, coleta, começarmos a ter uma cidade que temos transporte público com autômatos rodando 24h, que temos segurança e tudo que precisamos igual enviei os detalhes. E isso seria a abertura grandiosa de Lucas, assim que abrir o livro Lucas seguiria nessa ideia com kael e lysa e o conselho da cidade, avisando miren também, e enquanto isso a trama de aerun cresce com mais profissionais e pessoas, e abre a todos que está recebendo pessoas, é isso conecta com a trama da elfa e anão saberem que o criador deixou tudo isso pronto, e oque fizeram e irem discutir com três arcos sobre e falar sobre toda trama, o antagonista aparecer confirmar isso, querer matar os representantes e envolvermos."
     }
   ],
   "rules": [
@@ -913,9 +920,10 @@
         "RITMO"
       ],
       "evidence": [
-        "S16"
+        "S16",
+        "S17"
       ],
-      "directive": "A primeira abertura APÓS futura autorização acompanha Tharvek Ormvall e Elyrien Vaelthara em origens/caminhos anões e élficos até Três Arcos, perigo crescente de Ithran por ordem de Serakh e sombra de Velkar. Intercalar cenas de Lucas expressivo, Miren e vida urbana, AERÚN, ARGOS, Kael/Lysa, Varo/Sombras em suas rotinas e decisões. Emissários são heróis, NÃO antagonistas. Fazer a aproximação gradual com viagens e informação plausíveis; centro narrativo volta a Lucas à medida que as frentes se conectam.",
+      "directive": "A primeira abertura APÓS futura autorização acompanha Tharvek Ormvall e Elyrien Vaelthara em origens/caminhos anões e élficos até Três Arcos, perigo crescente de Ithran por ordem de Serakh e sombra de Velkar. Intercalar cenas de Lucas expressivo, Miren e vida urbana, AERÚN, ARGOS, Kael/Lysa, Varo/Sombras em suas rotinas e decisões. Emissários são heróis, NÃO antagonistas. Fazer a aproximação gradual com viagens e informação plausíveis; centro narrativo volta a Lucas à medida que as frentes se conectam. Atualização autoral posterior S17: a cena de ABERTURA principal é Lucas com Kael/Lysa/conselho/Miren e a transformação municipal; intercalar jornada do anão/elfa e POV antagonista no MESMO dia, sem iniciar só em região externa.",
       "active": true
     },
     {
@@ -951,6 +959,78 @@
         "S16"
       ],
       "directive": "A busca por Talis tem relevância e deve chegar ao reencontro no Livro VI segundo pedido posterior, mas não substituir abertura do anão e da elfa nem provar conexão com Velkar/Arquitetos antes de evidência. Manter AERÚN, sétima nota, HZ-1, dragões, Arconte/Tecelã, Velkar/Aethron identidade não provada, Talis e origem de Lucas como fios separados até causalidade narrada. Conectar com delicadeza, sem vilão responsável por tudo.",
+      "active": true
+    },
+    {
+      "id": "P49",
+      "title": "Livro VI abre com Lucas revolucionando Três Arcos inteira",
+      "tags": [
+        "LIVRO_VI",
+        "LUCAS",
+        "TRES_ARCOS",
+        "GENESE"
+      ],
+      "directive": "Quando o autor FUTURAMENTE autorizar episódio, a abertura principal começa com Lucas expressivo conversando com Miren, Kael, Lysa e Conselho, anunciando a transformação completa de TRÊS ARCOS ANTIGA e um novo distrito capaz de acolher 100 mil pessoas, para que a Cidade Livre abra suas portas antes que viajantes precisem implorar. CREATION/GÊNESE plena materializa infraestrutura física em até 24h (não precisa ocupar 24h), com a grande avenida e todos os bairros antigos ganhando saneamento, energia, transporte e saúde, preservando moradores, instituições e arquitetura. Não iniciar agora, é PLANO pré-canônico; não escrever episódio sem nova autorização.",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S17"
+      ],
+      "active": true
+    },
+    {
+      "id": "P50",
+      "title": "Malha Aurora e Vértice operam cidade integrada 24 horas sem retcon",
+      "tags": [
+        "MALHA_AURORA",
+        "TRES_ARCOS",
+        "MUNDO",
+        "PERSONAGENS"
+      ],
+      "directive": "CÂNONE D531: Malha Aurora já conta 3600 autômatos físicos verificados inicialmente, com VÉRTICE coordenador técnico criado D530; D532–D533 adotadas atribuições por Kael, Lysa e profissionais. RUMO NÃO é parte dos 3600 e não vira operador de ônibus por força de roteiro. Na proposta Livro VI: coleta e triagem de lixo, saneamento, limpeza, energia, iluminação, transporte VLT/ônibus 24h, defesa civil NÃO LETAL, manutenção de edifícios/ruas/parques e do bairro ainda desocupado, sob governança humana. Novos 1500 autômatos de serviço + 96 ônibus +24 composições VLT são HIPÓTESES FUTURAS, não unidades já criadas. Priorizar documentação `planning/book-vi/tres-arcos-malha-aurora-citywide-v2-PREPRODUCAO.md` e respeitar capacidades de segurança, pessoal e privacidade.",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S17"
+      ],
+      "active": true
+    },
+    {
+      "id": "P51",
+      "title": "Elfa, anão e antagonista recebem notícias pelas viagens, não por onisciência",
+      "tags": [
+        "LIVRO_VI",
+        "ANTAGONISTAS",
+        "CAUSALIDADE",
+        "MUNDO"
+      ],
+      "directive": "No Livro VI após abertura de Três Arcos e anúncio público, Tharvek e Elyrien recebem por meios viajados notícias do distrito pronto e dos serviços de acolhimento, confrontam o Dominato e decidem procurar Três Arcos com interesses culturais e políticos próprios. Ithran, subordinado de Serakh, verifica por fonte plausível a transformação e busca MATAR ou neutralizar os representantes que pretendem formar alianças; INTENÇÃO LETAL do antagonista não é êxito obrigatório nem morte prescrita. Sombras e Varo são competentes, GÊNESE de Lucas sem nerf, caminhos/dias/dados temporais precisam ser plausíveis. Velkar aprende após notícias e não sabe tudo.",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S17"
+      ],
+      "active": true
+    },
+    {
+      "id": "P52",
+      "title": "AERÚN cresce e cidade aberta recebe profissionais, moradores e estudantes",
+      "tags": [
+        "AERUN",
+        "MIREN",
+        "ROMANCE",
+        "LIVRO_VI"
+      ],
+      "directive": "AERÚN recruta estudiosos, mestres, pesquisadores, estudantes e equipe técnica, expandindo pesquisas e recepção pública sob Miren e Astra; campus sensível e instalações protegidas não ficam irrestritamente abertos. Novo distrito se conecta a AERÚN e Campo Aurora sem invadir zonas protegidas/rotas de voo; a cidade recebe habitantes de forma gradual e voluntária com habitações e transporte já disponíveis. Lucas e Miren amadurecem relação enquanto a rotina da cidade cresce, com cenas humanas e surpresa, não atas operacionais.",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S17"
+      ],
       "active": true
     }
   ]
