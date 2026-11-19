@@ -1,1 +1,125 @@
-{"canon_head_observed":{"book":"Livro V","closed":true,"day":537,"episode_id":"LV-C16-PV-D537-AUTHOR-SOURCE","hour":"23h46","note":"Do not mutate HEAD from this recovery metadata.","ref":"story-archive"},"canon_promotion_status":"NOT_PROMOTED","continuity_exception":{"episode_id":"LVI-C01-PIII-D539-AUTHOR-SOURCE","issue":"CAEDREN_ROLE_LOCATION","status":"FLAGGED_UNRESOLVED_NOT_CANONICAL"},"created_on":"2026-11-19","current_source":"Assistant's three user-visible episode messages in current CRÔNICAS chat; exact UTF-8 serialized source/export not yet mounted or retrieved through an API.","episodes":[{"archive_status":"DRAFT_GITHUB_READBACK_PENDING","book":"Livro VI","chapter":1,"choice_authorized_in_chat":true,"commit_sha":null,"day":538,"events_verified":true,"id":"LVI-C01-PI-D538-REAUTHORIZED-R2-AUTHOR-SOURCE","manifest_sha256":"f75c619224ae16b8fddc93d4261307ccc1b5e97892f0510a44723deedfede6a7","next_choice_visible":"Opção 4 — Lucas fala de 3 dias, três marcos, três arcos","part":"I","source_integral_verified":true,"source_locator":"Current chat: first assistant narrative after user's WORLDROOT — INICIAR LIVRO VI; heading 'A CIDADE QUE CABIA EM UM SONHO'; five continuation choices.","source_sha256":"fd6aa23fa1ea5e929d81e0aaebc7776ca30a697120f20d310f9b3fd1f25f98ee"},{"archive_status":"DRAFT_GITHUB_READBACK_PENDING","book":"Livro VI","chapter":1,"choice_authorized_in_chat":true,"commit_sha":null,"day":538,"events_verified":true,"id":"LVI-C01-PII-D538-AUTHOR-SOURCE","manifest_sha256":"c29172ea86635890723a2907a4c9cbf585335dade8eb0e6fb89ab8a4ea8bd44a","next_choice_visible":"Opção 4 — Casa dos Três Poderes, Kael/Lysa/Varo/Maelis/Brannik","part":"II","source_integral_verified":true,"source_locator":"Current chat: assistant narrative after user's primeira 'Vamos de ação 4'; heading 'TRÊS DIAS. TRÊS MARCOS. TRÊS ARCOS.'; five continuation choices.","source_sha256":"69be6e8eb86e68718c3eccdb823456a0e913816f94e1ca607ff44dc37d9eb740"},{"archive_status":"DRAFT_GITHUB_READBACK_PENDING","book":"Livro VI","chapter":1,"choice_authorized_in_chat":false,"commit_sha":null,"day":539,"events_verified":true,"id":"LVI-C01-PIII-D539-AUTHOR-SOURCE","manifest_sha256":"89b2ace767abeff6663946a0caca7206a9f565e6bec5cc810bf2ebe8bfca9c80","next_choice_visible":null,"part":"III","source_integral_verified":true,"source_locator":"Current chat: assistant narrative after user's segunda 'Vamos de ação 4'; heading 'O FUNDADOR, A CASA DOS TRÊS PODERES E O HORIZONTE ABERTO'; five continuation choices.","source_sha256":"74bb2ae185f21262a292d1a48e2c75e703d8ee92659f43f97c39d0174c2fd2e7"}],"last_review":"SOURCE_PACKAGE_COMPILED_FROM_VERIFIED_CHAT_EXPORT","owner_action_needed":"Supply exact text export if current chat messages cannot be programmatically serialized; until then the state remains BLOCKED.","purpose":"Fail-closed staging of authorized Livro VI scenes; no reconstruction or reuse of rejected r17.","recovery_state":"RECUPERADO_COM_HASH_EVENTOS_E_CONTINUIDADE","red_flag":"The only D538 episode currently stored on archive branch is the older REJECTED r17, and it MUST NOT be used as source.","rejection_guard":{"cannot_promote":true,"cannot_reuse_narrative":true,"rejected_episode_id":"LVI-C01-PI-D538-AUTHOR-SOURCE","rejected_sha256":"bde62ddbd8ac0977925a7ed74e9abb09c461d53cb08f36a1e245ab20a212a3da","rejection_record":"editorial/rejections/LVI-C01-PI-D538-AUTHOR-SOURCE.json"},"release_gate":["1) Import EXACT complete raw exported text of the original assistant messages. Preserve punctuation, DIL control markup, scene order, typography and choice content. Never paraphrase.","2) Compute sha256 and UTF-8 bytes from literal source. Validate identical readback and duplicate copy in episode_draft.json using tools/validate_episode_archive.py.","3) Human-review events and consequences with source anchors and temporal knowledge; a hash validates bytes, not continuity.","4) Check where each character last appeared and whether travel/knowledge/affiliation is proved, not just inferred.","5) Never set HEAD while creating a new draft or on a user comment; only a subsequent explicit Lucas choice can release the PRIOR, fully archived episode, sequentially, with approved journal and immutable receipt.","6) First recover+validate the three new draft episodes. The first two already have successor choices visible but still require sequential closure and audit; episode PIII must remain draft until another specific choice.","7) No Drive sync claim without independent receipt."],"required_artifacts_per_episode":["draft/narrativa_integral.md","draft/opcoes.json","draft/eventos_e_consequencias.json","draft/checkpoint_candidato.json","draft/episode_draft.json","draft/manifesto_imutavel.json"],"schema":"worldroot-bookvi-literal-recovery-gate-v1","source_export":{"bytes":279900,"path":"history/source_exports/ChatGPT-CRONICAS_DE_UM_NOVO_MUNDO_9-20261119-1028.txt","provenance":"USER_SUPPLIED_CHAT_EXPORT","sha256":"ac693e60ec6e9dfef2ffee6fc423641541cb52fd53bbd7ffebc9691822be95f9"},"source_request":"CURRENT_CONVERSATION_USER_DIRECTIVE_CORRIGIR_RECUPERACAO_GRAVACAO_PROMOCAO_CONTINUIDADE"}
+{
+  "canon_head_observed": {
+    "book": "Livro V",
+    "closed": true,
+    "day": 537,
+    "episode_id": "LV-C16-PV-D537-AUTHOR-SOURCE",
+    "hour": "23h46",
+    "note": "Do not mutate HEAD from this recovery metadata.",
+    "ref": "story-archive"
+  },
+  "canon_promotion_status": "NOT_PROMOTED",
+  "continuity_exception": {
+    "episode_id": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+    "issue": "CAEDREN_ROLE_LOCATION",
+    "status": "FLAGGED_UNRESOLVED_NOT_CANONICAL"
+  },
+  "created_on": "2026-11-19",
+  "current_source": "Assistant's three user-visible episode messages in current CRÔNICAS chat; exact UTF-8 serialized source/export not yet mounted or retrieved through an API.",
+  "episodes": [
+    {
+      "archive_status": "ARCHIVED_GITHUB_READBACK_VERIFIED",
+      "book": "Livro VI",
+      "chapter": 1,
+      "choice_authorized_in_chat": true,
+      "commit_sha": null,
+      "day": 538,
+      "events_verified": true,
+      "id": "LVI-C01-PI-D538-REAUTHORIZED-R2-AUTHOR-SOURCE",
+      "manifest_sha256": "f75c619224ae16b8fddc93d4261307ccc1b5e97892f0510a44723deedfede6a7",
+      "next_choice_visible": "Opção 4 — Lucas fala de 3 dias, três marcos, três arcos",
+      "part": "I",
+      "source_integral_verified": true,
+      "source_locator": "Current chat: first assistant narrative after user's WORLDROOT — INICIAR LIVRO VI; heading 'A CIDADE QUE CABIA EM UM SONHO'; five continuation choices.",
+      "source_sha256": "fd6aa23fa1ea5e929d81e0aaebc7776ca30a697120f20d310f9b3fd1f25f98ee",
+      "source_readback_bytes": 81190,
+      "source_blob_readback_verified": true,
+      "event_anchor_readback_verified": true,
+      "five_choices_readback_verified": true,
+      "canon_status": "RASCUNHO"
+    },
+    {
+      "archive_status": "ARCHIVED_GITHUB_READBACK_VERIFIED",
+      "book": "Livro VI",
+      "chapter": 1,
+      "choice_authorized_in_chat": true,
+      "commit_sha": null,
+      "day": 538,
+      "events_verified": true,
+      "id": "LVI-C01-PII-D538-AUTHOR-SOURCE",
+      "manifest_sha256": "c29172ea86635890723a2907a4c9cbf585335dade8eb0e6fb89ab8a4ea8bd44a",
+      "next_choice_visible": "Opção 4 — Casa dos Três Poderes, Kael/Lysa/Varo/Maelis/Brannik",
+      "part": "II",
+      "source_integral_verified": true,
+      "source_locator": "Current chat: assistant narrative after user's primeira 'Vamos de ação 4'; heading 'TRÊS DIAS. TRÊS MARCOS. TRÊS ARCOS.'; five continuation choices.",
+      "source_sha256": "69be6e8eb86e68718c3eccdb823456a0e913816f94e1ca607ff44dc37d9eb740",
+      "source_readback_bytes": 93587,
+      "source_blob_readback_verified": true,
+      "event_anchor_readback_verified": true,
+      "five_choices_readback_verified": true,
+      "canon_status": "RASCUNHO"
+    },
+    {
+      "archive_status": "ARCHIVED_GITHUB_READBACK_VERIFIED",
+      "book": "Livro VI",
+      "chapter": 1,
+      "choice_authorized_in_chat": false,
+      "commit_sha": null,
+      "day": 539,
+      "events_verified": true,
+      "id": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+      "manifest_sha256": "89b2ace767abeff6663946a0caca7206a9f565e6bec5cc810bf2ebe8bfca9c80",
+      "next_choice_visible": null,
+      "part": "III",
+      "source_integral_verified": true,
+      "source_locator": "Current chat: assistant narrative after user's segunda 'Vamos de ação 4'; heading 'O FUNDADOR, A CASA DOS TRÊS PODERES E O HORIZONTE ABERTO'; five continuation choices.",
+      "source_sha256": "74bb2ae185f21262a292d1a48e2c75e703d8ee92659f43f97c39d0174c2fd2e7",
+      "source_readback_bytes": 78749,
+      "source_blob_readback_verified": true,
+      "event_anchor_readback_verified": true,
+      "five_choices_readback_verified": true,
+      "canon_status": "RASCUNHO"
+    }
+  ],
+  "last_review": "GITHUB_READBACK_CONFIRMED_2026_11_19",
+  "owner_action_needed": "Supply exact text export if current chat messages cannot be programmatically serialized; until then the state remains BLOCKED.",
+  "purpose": "Fail-closed staging of authorized Livro VI scenes; no reconstruction or reuse of rejected r17.",
+  "recovery_state": "RECUPERADO_COM_HASH_EVENTOS_E_CONTINUIDADE",
+  "red_flag": "The only D538 episode currently stored on archive branch is the older REJECTED r17, and it MUST NOT be used as source.",
+  "rejection_guard": {
+    "cannot_promote": true,
+    "cannot_reuse_narrative": true,
+    "rejected_episode_id": "LVI-C01-PI-D538-AUTHOR-SOURCE",
+    "rejected_sha256": "bde62ddbd8ac0977925a7ed74e9abb09c461d53cb08f36a1e245ab20a212a3da",
+    "rejection_record": "editorial/rejections/LVI-C01-PI-D538-AUTHOR-SOURCE.json"
+  },
+  "release_gate": [
+    "1) Import EXACT complete raw exported text of the original assistant messages. Preserve punctuation, DIL control markup, scene order, typography and choice content. Never paraphrase.",
+    "2) Compute sha256 and UTF-8 bytes from literal source. Validate identical readback and duplicate copy in episode_draft.json using tools/validate_episode_archive.py.",
+    "3) Human-review events and consequences with source anchors and temporal knowledge; a hash validates bytes, not continuity.",
+    "4) Check where each character last appeared and whether travel/knowledge/affiliation is proved, not just inferred.",
+    "5) Never set HEAD while creating a new draft or on a user comment; only a subsequent explicit Lucas choice can release the PRIOR, fully archived episode, sequentially, with approved journal and immutable receipt.",
+    "6) First recover+validate the three new draft episodes. The first two already have successor choices visible but still require sequential closure and audit; episode PIII must remain draft until another specific choice.",
+    "7) No Drive sync claim without independent receipt."
+  ],
+  "required_artifacts_per_episode": [
+    "draft/narrativa_integral.md",
+    "draft/opcoes.json",
+    "draft/eventos_e_consequencias.json",
+    "draft/checkpoint_candidato.json",
+    "draft/episode_draft.json",
+    "draft/manifesto_imutavel.json"
+  ],
+  "schema": "worldroot-bookvi-literal-recovery-gate-v1",
+  "source_export": {
+    "bytes": 279900,
+    "path": "history/source_exports/ChatGPT-CRONICAS_DE_UM_NOVO_MUNDO_9-20261119-1028.txt",
+    "provenance": "USER_SUPPLIED_CHAT_EXPORT",
+    "sha256": "ac693e60ec6e9dfef2ffee6fc423641541cb52fd53bbd7ffebc9691822be95f9"
+  },
+  "source_request": "CURRENT_CONVERSATION_USER_DIRECTIVE_CORRIGIR_RECUPERACAO_GRAVACAO_PROMOCAO_CONTINUIDADE",
+  "github_archive_commit": "d62a979ea1ef71ede8b49bbda82e7603c5c0247f",
+  "source_original_raw_git_blob_sha1": "980dd7a347a119cefbb0c2b4c25bb9961843b092",
+  "git_tree_integrity": "CHECKED_THROUGH_PRIVATE_GITHUB_FETCH_FILE",
+  "release_state": "DRAFTS_ARCHIVED_VERIFIED_NOT_PROMOTED"
+}
