@@ -24,7 +24,7 @@ jobs:
       - name: Checkout audited engine at immutable version
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: 771c8f2ddaee8030d7a32eadc129893c16af1efb
+          ref: 41985d7b546f62fbf9d6f409fc51d6b3e098afde
           path: engine
           persist-credentials: false
       - name: Python 3.12
@@ -47,7 +47,7 @@ jobs:
       - name: Checkout trusted main code (pinned)
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: 771c8f2ddaee8030d7a32eadc129893c16af1efb
+          ref: 41985d7b546f62fbf9d6f409fc51d6b3e098afde
           path: engine
           persist-credentials: false
       - name: Checkout private story archive data only
