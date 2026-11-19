@@ -1,3 +1,5 @@
+> **ATUALIZAÇÃO DO MOTOR EDITORIAL — v14, 19/11/2026:** `main/worldroot/editorial_policy.json` P01–P81 é a fonte das preferências aprovadas. `main/worldroot/story_dynamics.py` inclui dez módulos consultivos e preflight de cinco partes, integrado ao recibo de `draft_inbox`. A base de pré-produção **aprovada como ideias, não como cenas** está em `planning/book-vi/world-pulse-and-five-arcs-v1.json`. Em próximos capítulos, explorar espionagem, confrontos, Tharvek/Elyrien, GÊNESE e reações externas com escala e causalidade; culminar quinta Parte com clímax ou transformação significativa. O estado canônico continua no HEAD vivo; Cap.1 Parte IV D540 já é draft e não deve ser narrada novamente nem promovida por esta atualização. Google Drive continua LEGADO.
+
 # WORLDROOT · OPERAÇÃO GITHUB-ONLY | Crônicas de um Novo Mundo
 
 > **VIGENTE — CICLOS 1–3 (19/11/2026):** em cada retomada, consultar primeiro `canon/HEAD.json` e `ops/RESUME.json` **vivos**, depois a fonte literal do último episódio, o feedback de Lucas e `docs/WORLDROOT-THREE-CYCLES-v1.md`. O snapshot `ops/WORLDROOT-GITHUB-ONLY-STATE-20261119.json` é APENAS histórico datado. O HEAD é Livro VI C01 Parte III D539, sequência 12; Parte IV D540 foi arquivada como rascunho íntegro, sem nova escolha de fechamento. Memória: `memory/deltas/` e `memory/canon/`; Livro V C16 tem selo `chapters/LIVRO-V-C16/CANONICAL_SEAL.json`. Nunca inferir fatos ou escolhas a partir de um README antigo.
@@ -8,7 +10,7 @@
 
 | Fonte | Ref | Conteúdo |
 |---|---|---|
-| Motor e contratos de qualidade | `main/worldroot/*` | Python, regras P01–P70 v13, UX01–UX12, testes, templates |
+| Motor e contratos de qualidade | `main/worldroot/*` | Python, regras P01–P81 v14, UX01–UX12, testes, templates |
 | História literal e provas | `story-archive/episodes/*/draft/*` | Texto completo, opções, eventos, metadados, fontes e SHA |
 | Contexto e cânone | `story-archive/canon/HEAD.json`, `canon/CONTEXT.json`, `canon/episodes/*`, `canon/state.sqlite` | HEAD único, journal e projeção reconstituível |
 | Escolhas autorais | `story-archive/choices/*` | A escolha real arquivada, não uma inferência do assistente |
@@ -49,7 +51,7 @@ As escolhas 4 das Partes I e II foram ratificadas com fonte real; D539 Parte III
 
 **Preservar integralmente:** a saga `A ERA DAS NOVE COROAS`, Livro VI `AS COROAS PARTIDAS`, plano v18, cidade e Horizonte Aberto, três marcos D538–540, 40.000 moradias e capacidade futura para 100.000 habitantes (não ocupação instantânea), Casa dos Três Poderes em estruturação, Conselho e poderes autônomos, AERÚN, Forja, 3.600 autômatos e Vértice, Costura de Dados, ARGOS, irmandade e mistérios de Miren/Talis, mundos ainda desconhecidos, ritmo de cenas e opções 1–3/4 especial/5 livre. **Nenhum roteiro de batalha, resultado ou destino é determinado artificialmente pela migração.**
 
-As políticas v13/P01–P70 e UX01–UX12 **não são reescritas** por esta mudança de infraestrutura. As decisões criativas continuam prevalecendo sobre ferramentas e checklists, sem retirar consequências do mundo.
+As políticas v14/P01–P81 e UX01–UX12 **não são reescritas** por esta mudança de infraestrutura. As decisões criativas continuam prevalecendo sobre ferramentas e checklists, sem retirar consequências do mundo.
 
 ## Limites reais e verificações
 
