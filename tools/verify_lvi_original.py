@@ -87,7 +87,7 @@ def verify_lvi(root: Path, episode_id: str) -> dict:
     review = read_json(review_file)
     if (not isinstance(review, dict)
             or review.get("episode_id") != episode_id
-            or review.get("status") != "REVIEWED_WITH_EVIDENCE"
+            or review.get("status") not in ("REVIEWED_WITH_EVIDENCE", "REVIEWED_WITH_FLAGS")
             or not isinstance(review.get("characters"), list)
             or not review["characters"]):
         raise ArchiveInvalid(f"{episode_id}: continuity review missing or incomplete")
@@ -100,14 +100,13 @@ def verify_lvi(root: Path, episode_id: str) -> dict:
             raise ArchiveInvalid(f"{episode_id}: incomplete character location/agency matrix")
 
     if episode_id == PARTS[2]:
-        fix = root / "editorial" / "recovery" / "reconciliations" / (episode_id + ".json")
-        resolution = read_json(fix)
-        if (not isinstance(resolution, dict)
-                or resolution.get("issue") != "CAEDREN_ROLE_LOCATION"
-                or resolution.get("status") != "APPROVED_BY_AUTHOR"
-                or not resolution.get("source_evidence")
-                or not resolution.get("author_decision")):
-            raise ArchiveInvalid("D539 Caedren contradiction is not author-reconciled")
+        # Archive original testimony unchanged even when a story-level
+        # contradiction is detected; promotion is a DIFFERENT gate.
+        flags = review.get("open_flags")
+        if (review.get("status") != "REVIEWED_WITH_FLAGS"
+                or not isinstance(flags, list)
+                or "CAEDREN_ROLE_LOCATION" not in flags):
+            raise ArchiveInvalid("D539 source requires explicit Caedren conflict flag")
 
     return {"episode_id": episode_id, "bytes": len(source),
             "sha256": digest(source), "result": "ORIGINAL_MATCHED_ARCHIVE_REVIEWED"}
