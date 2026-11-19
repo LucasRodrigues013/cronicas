@@ -7,7 +7,8 @@
   "source_of_truth": "main/worldroot/editorial_policy.json",
   "historical_feedback_reference": "story-archive/editorial/feedback/2026-11-18-baseline.json",
   "precedence": "latest_explicit_author_feedback > earlier conflicting style preference; no retcon of narrated events",
-  "storage_contract": "chapter literal and event ledger live in story-archive; policy is editorial only; Drive is not auto-synchronized",
+  "storage_contract": "GITHUB_ONLY: main stores engine and approved policy; private story-archive stores all live literal text, choices, canon, contexts, event reviews and five-part chapter backups. Google Drive is historical LEGACY only and never required for new stories. No universal ChatGPT auto-save hook exists.",
+  "active_storage_reference": "story-archive/docs/WORLDROOT-GITHUB-ONLY-OPERATIONS.md",
   "validation": "bounded editorial and presentation QA; advisory density and daily-arc timing inspection; preserve per-event chronology, author choice and immutable canon",
   "sources": [
     {
