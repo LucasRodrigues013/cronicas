@@ -13,6 +13,8 @@ from .ledger import GateError
 APPROVAL_FILE = "author-approvals/LVI-OPEN.json"
 _SCHEMA = "worldroot-author-book-open-v1"
 _OPEN = re.compile(r"(?i)\bautorizo\s+iniciar\s+(?:o\s+)?livro\s+vi\b")
+_REAUTHORIZED = re.compile(r"(?i)\b(?:nova\s+)?autorização\s+explícita\s+para\s+iniciar\s+a\s+história\b")
+_BOOK_VI = re.compile(r"(?i)\blivro\s+vi\b")
 
 
 def require_book_open_approval(root: Path, previous: dict, metadata: dict) -> dict:
@@ -43,7 +45,9 @@ def require_book_open_approval(root: Path, previous: dict, metadata: dict) -> di
             or approval.get("new_book_canon_head_written") is not False):
         raise GateError("Book opening not linked to actual author-approved closed HEAD")
     quote = approval.get("author_quote")
-    if not isinstance(quote, str) or not _OPEN.search(quote):
+    if not isinstance(quote, str) or not (
+            _OPEN.search(quote)
+            or (_REAUTHORIZED.search(quote) and _BOOK_VI.search(quote))):
         raise GateError("The author did not explicitly request Livro VI launch")
     return {
         "status": "AUTHOR_APPROVED_BOOK_VI_DRAFT_ONLY",
