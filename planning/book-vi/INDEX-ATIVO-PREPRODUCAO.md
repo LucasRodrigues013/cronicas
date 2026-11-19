@@ -1,3 +1,5 @@
+> **FICHAS NUCLEARES ATIVAS v2 · LUCAS E VELKAR (18/11/2026):** prioridade de interpretação e continuidade em `planning/book-vi/characters-v2.json` e leitura humana em `planning/book-vi/character-profiles-lucas-velkar-v2.md`. Lucas mantém GÊNESE plena, gênio inventivo à Tony Stark, humor/astúcia expressiva à Lloyd Frontera, sua identidade e vínculos originais. Velkar recebe arquétipo de conquistador e administrador à Alexandre, o Grande, sem fatos históricos importados, poderes infalíveis ou onisciência. **Nenhuma nova vida consciente criada por GÊNESE nesta fase** (decisão estratégica, NÃO nerf). Outras seis fichas da v1 preservadas. Este material é DESIGN PRÉ-CANÔNICO; não introduz pessoas, cenas, feitos ou fatos em Livro VI e não revoga o veto à abertura narrativa.
+
 > **ENTREGA FINAL AUDITADA DE CINCO PASSOS (v17, 18/11/2026):** `planning/book-vi/ENTREGA-FINAL-CINCO-PASSOS-v17-PREPRODUCAO.md`. Este é o resumo executivo verificável do mapa, tempos ARGOS/estradas/transporte urbano, povos e elencos, expansão de Três Arcos, escala de Velkar, ciência do Coração, ritmo do livro, links das fontes e pendências. Código WORLDROOT `main` PR #31 `e5535600950000403103945f6b0deaf4f79ed500` com 319 testes em CI SUCCESS. **Cânone permanece Livro V D537, 0 episódios Livro VI; só pré-produção.**
 
 # ÍNDICE ATIVO DE PRÉ-PRODUÇÃO · COMPLEMENTO DOS CINCO PASSOS v11–v16
@@ -39,7 +41,7 @@
 6. planning/book-vi/tres-arcos-renaissance-arcane-network-v3-PREPRODUCAO.md — estética renascentista e Costura de Dados (vídeo já REGIONAL D533), 6 centros/24 antenas/60 quiosques PROPOSTOS, sem cobertura continental.
 7. planning/book-vi/distrito-horizonte-aberto-masterplan-v1-PROPOSTA.md — cálculos de lotes, 15km², 100mil habitantes, energia/água/esgoto/parques (croqui, não geografia real).
 8. planning/book-vi/action-escalation-and-connections-v6-PREPRODUCAO.md — seis movimentos, ações, credibilidade de informações, antagonistas derrotáveis, chegada gradual dos emissários e centro pós-construção.
-9. planning/book-vi/ithran-operation-v1.json e characters-v1.json — operação S00–S08, Varo/Sombras competentes, Elyrien/Tharvek, vilões, resultados livres.
+9. `planning/book-vi/ithran-operation-v1.json` e `planning/book-vi/characters-v2.json` (substitui v1 para Lucas/Velkar, preserva os outros) — operação S00–S08, Varo/Sombras competentes, Elyrien/Tharvek, vilões, resultados livres. Ficha literária: `planning/book-vi/character-profiles-lucas-velkar-v2.md`.
 10. planning/book-vi/release-gates-v4-renaissance-tech-and-plot.json — status dos dados, 26 gates e pendências/zero episódio aprovado.
 11. Google Drive original Saga A Era das Nove Coroas v1.0; documentos de Malha Aurora D503 e fontes canônicas D531/D533 sobre autômatos/Costura. Dados do Drive não foram modificados nesta revisão.
 
