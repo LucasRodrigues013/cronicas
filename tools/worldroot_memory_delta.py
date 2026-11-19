@@ -127,8 +127,17 @@ def canon_delta(root:Path,eid:str,*,write=False)->dict:
     }
     path=root/"memory/canon"/(eid+".json")
     if write:
-        # Backfilled canonical originals may not have draft memory yet.
-        write_once(root/"memory/deltas"/(eid+".json"),enc(base))
+        # A draft memory capture is IMMUTABLE; canonical closure must never
+        # rewrite its historical "canonical_at_capture=False" observation.
+        draft_path=root/"memory/deltas"/(eid+".json")
+        if draft_path.is_file():
+            previous=obj(draft_path)
+            if (previous.get("source_sha256")!=base["source_sha256"]
+                    or previous.get("reviewed_events")!=base["reviewed_events"]
+                    or previous.get("reviewed_knowledge")!=base["reviewed_knowledge"]):
+                raise ArchiveInvalid("Existing draft memory differs from the literal review")
+        else:
+            write_once(draft_path,enc(base))
         write_once(path,enc(approval))
     return {"episode_id":eid,"status":"CANONICAL_MEMORY_VERIFIED",
             "path":str(path.relative_to(root)),"events":len(names)}
