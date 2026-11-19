@@ -19,7 +19,7 @@
 
 ## Fluxo obrigatório daqui em diante
 
-1. **Antes de produzir:** ler HEAD real, último cânone literal, novo draft, escolhas, fontes de personagens e planejamento. O último texto em chat é **D539 C01 Parte III**, próximo **D540 C01 Parte IV**, mas o HEAD oficial ainda é **D537**.
+1. **Antes de produzir:** ler HEAD real, último cânone literal, novo draft, escolhas, fontes de personagens e planejamento. O último texto narrado e HEAD canônico é **D539 C01 Parte III**, próximo **D540 C01 Parte IV**. A ratificação autoral extraordinária das três partes anteriores foi concluída em 19/11/2026.
 2. **Criar prosa:** Lucas expressivo, GÊNESE plena sem nerf, Miren/Astra autônomas, Sistema/NÓX presentes, romance e humor, ação de alta fantasia, antagonistas e povos autônomos. Manter cenas completas e tempo vivo; a meta de palavras serve à literatura, não a relatórios.
 3. **Pré-entrega:** a resposta preparada deve ser gravada **literalmente** em `story-archive/inbox/<id>.json` mediante **chamada real à conexão GitHub**. A Action `worldroot-draft-inbox.yml` cria seis artefatos imutáveis e revisões, executa gate, depois publica `delivery/reader_receipts/<id>.json`.
 4. **Leitura para o usuário:** **somente depois da Action concluir**, o assistente reabre o recibo e `narrativa_integral.md`, confere hash, reconstrói a apresentação aprovada (sem fingir que export TXT é código DIL), e apresenta escolhas funcionais. GitHub Actions não injeta mensagens espontâneas em uma conversa ChatGPT.
@@ -31,8 +31,8 @@
 
 | Parte | Dia | SHA-256 | Situação |
 |---|---:|---|---|
-| Livro VI C01 Parte I (R2, reautorizada) | 538 | `fd6aa23fa1ea5e929d81e0aaebc7776ca30a697120f20d310f9b3fd1f25f98ee` | Original exportado, arquivado, **draft** |
-| Livro VI C01 Parte II | 538 | `69be6e8eb86e68718c3eccdb823456a0e913816f94e1ca607ff44dc37d9eb740` | Original exportado, arquivado, **draft** |
+| Livro VI C01 Parte I (R2, reautorizada) | 538 | `fd6aa23fa1ea5e929d81e0aaebc7776ca30a697120f20d310f9b3fd1f25f98ee` | **CANÔNICO** (sequência 10–12; fonte literal inalterada) |
+| Livro VI C01 Parte II | 538 | `69be6e8eb86e68718c3eccdb823456a0e913816f94e1ca607ff44dc37d9eb740` | **CANÔNICO** (sequência 10–12; fonte literal inalterada) |
 | Livro VI C01 Parte III | 539 | `74bb2ae185f21262a292d1a48e2c75e703d8ee92659f43f97c39d0174c2fd2e7` | Original exportado, arquivado, **draft com flag CAEDREN_ROLE_LOCATION** |
 
 Os textos têm **81.190 / 93.587 / 78.749 bytes UTF-8**, respectivamente, e 5 alternativas cada. Verificar por `python tools/verify_lvi_original.py --root . --require-all`. O export foi apresentado pelo usuário como TXT visível, não como serialização exata de DIL: a próxima interface deve aplicar a política UX, preservando integralmente a prosa e escolhas, mas não prometer reprodução pixel a pixel. Não apagar o antigo D538 rejeitado: ele permanece somente no histórico editorial de auditoria.
@@ -66,4 +66,9 @@ O `worldroot/draft_inbox.py` da main aceita os campos **`reviewed_events` e `rev
 
 Após o arquivamento principal, `tools/lvi_predelivery.py` confere o mesmo texto literal em inbox e draft e salva, **na mesma transação GitHub**, `editorial/recovery/originals/<episode_id>.txt`, `episodes/<episode_id>/draft/source_proof.json` e `review/continuity_review.json`. A prova deve declarar `ASSISTANT_PREDELIVERY_EXACT_TEXT` e `ui_parity=NOT_INDEPENDENTLY_VERIFIED`, **nunca** alegar que o texto da interface ChatGPT foi exportado independentemente. `tools/verify_lvi_original.py` aceita os eventos já referenciados em `review/eventos_revisados.json` quando a main gera `eventos_e_consequencias.json=[]`; para os três episódios recuperados, continua exigindo a fonte exportada e seus eventos reais. Se falta personagem, origem ou âncora, o job falha antes de publicar um recibo.
 
-Essa etapa não certifica semanticamente uma viagem não narrada nem substitui uma revisão humana. A continuidade de Caedren D539 continua com flag e sem solução automática.
+Essa etapa não certifica semanticamente uma viagem não narrada nem substitui uma revisão humana. Caedren D539 integra a cena literal ratificada; a origem da viagem, a patente e o eventual serviço na Legião continuam sem comprovação e não devem ser inventados.
+
+
+## Ratificação autoral extraordinária confirmada — 19/11/2026
+
+As Partes I e II do Dia 538 e a Parte III do Dia 539 são **CANÔNICAS**, registradas nas sequências 10, 11 e 12 em `canon/episodes/`, HEAD `LVI-C01-PIII-D539-AUTHOR-SOURCE`, commit `feefa5fa2c1513d0cab918f59f86325b6fbbe949`. A Action reproduziu os originais exatos, validou fontes/eventos/continuidade, reconstruiu SQLite e conferiu o journal. As duas primeiras opções 4 correspondem aos prompts reais do TXT; a Parte III foi ratificada diretamente pelo autor, sem inventar escolha de continuação. Esta exceção pontual NÃO modifica o protocolo normal de novos episódios. Originais e manifestos continuam imutáveis.

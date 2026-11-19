@@ -13,14 +13,16 @@
   "canon_head": {
     "branch": "story-archive",
     "path": "canon/HEAD.json",
-    "book": "Livro V",
-    "chapter": 16,
-    "part": "V",
-    "day": 537,
-    "hour": "23h46",
-    "episode_id": "LV-C16-PV-D537-AUTHOR-SOURCE",
-    "status": "FECHADO_GITHUB",
-    "not_modified_by_migration": true
+    "book": "Livro VI",
+    "chapter": 1,
+    "part": "III",
+    "day": 539,
+    "hour": "21h08",
+    "episode_id": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+    "sequence": 12,
+    "status": "FECHADO_GITHUB_AUTOR_RATIFICADO",
+    "canonical_commit": "feefa5fa2c1513d0cab918f59f86325b6fbbe949",
+    "sqlite_restore_verified": true
   },
   "active_story": {
     "book": "Livro VI",
@@ -42,8 +44,10 @@
       "day": 538,
       "byte_count": 81190,
       "sha256": "fd6aa23fa1ea5e929d81e0aaebc7776ca30a697120f20d310f9b3fd1f25f98ee",
-      "status": "GITHUB_ARCHIVED_DRAFT_SOURCE_MATCHED",
-      "review": "REVIEWED_WITH_EVIDENCE"
+      "status": "CANONICALLY_RATIFIED_GITHUB_SOURCE_VERIFIED",
+      "review": "REVIEWED_WITH_EVIDENCE",
+      "sequence": 10,
+      "canon_commit": "feefa5fa2c1513d0cab918f59f86325b6fbbe949"
     },
     {
       "episode": "LVI-C01-PII-D538-AUTHOR-SOURCE",
@@ -51,8 +55,10 @@
       "day": 538,
       "byte_count": 93587,
       "sha256": "69be6e8eb86e68718c3eccdb823456a0e913816f94e1ca607ff44dc37d9eb740",
-      "status": "GITHUB_ARCHIVED_DRAFT_SOURCE_MATCHED",
-      "review": "REVIEWED_WITH_EVIDENCE"
+      "status": "CANONICALLY_RATIFIED_GITHUB_SOURCE_VERIFIED",
+      "review": "REVIEWED_WITH_EVIDENCE",
+      "sequence": 11,
+      "canon_commit": "feefa5fa2c1513d0cab918f59f86325b6fbbe949"
     },
     {
       "episode": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
@@ -60,9 +66,11 @@
       "day": 539,
       "byte_count": 78749,
       "sha256": "74bb2ae185f21262a292d1a48e2c75e703d8ee92659f43f97c39d0174c2fd2e7",
-      "status": "GITHUB_ARCHIVED_DRAFT_SOURCE_MATCHED_CANON_BLOCKED",
+      "status": "CANONICALLY_RATIFIED_GITHUB_SOURCE_VERIFIED",
       "review": "REVIEWED_WITH_FLAGS",
-      "open_flag": "CAEDREN_ROLE_LOCATION"
+      "open_flag": "CAEDREN_ROLE_LOCATION",
+      "sequence": 12,
+      "canon_commit": "feefa5fa2c1513d0cab918f59f86325b6fbbe949"
     }
   ],
   "original_export": {
@@ -86,19 +94,19 @@
   "blocking_exception": {
     "id": "CAEDREN_ROLE_LOCATION",
     "episode": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
-    "status": "UNRESOLVED",
+    "status": "AUTHOR_RATIFIED_LITERAL_WITH_UNVERIFIED_TRAVEL_AND_RANK",
     "source": "editorial/continuity/LVI-D539-CAEDREN-LOCATION-AFFILIATION-HOLD.json",
-    "rule": "No unsupported membership or travel; original literal must remain immutable; D539 not canonical until author-backed reconciliation"
+    "rule": "Caedren is physically narrated at Três Arcos on D539; no rank, assignment, route or succession is supported by ratification. Do not invent these."
   },
   "next_actions_guards": [
-    "No automatic retroactive promotion of D538 PI/PII",
     "No invented choice record from user comments",
     "No story continuation without author's next choice",
     "Narrative text archived before showing final reader release",
     "Reader must fetch original text from GitHub and compare SHA",
     "Original user chat export visible text is not original DIL source",
     "Chapter Git package only after Parts I-IV canonically closed plus Part V archived",
-    "No Google Drive writes from any active story workflow"
+    "No Google Drive writes from any active story workflow",
+    "Retrospective author ratification is complete for exactly D538 PI, D538 PII and D539 PIII; subsequent episodes return to one-choice-per-new-part workflow."
   ],
   "planning_preserved": {
     "active_index": "planning/book-vi/INDEX-ATIVO-PREPRODUCAO.md",

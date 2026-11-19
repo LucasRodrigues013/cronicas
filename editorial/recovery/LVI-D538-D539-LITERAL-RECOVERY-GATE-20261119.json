@@ -8,21 +8,22 @@
     "note": "Do not mutate HEAD from this recovery metadata.",
     "ref": "story-archive"
   },
-  "canon_promotion_status": "NOT_PROMOTED",
+  "canon_promotion_status": "AUTHOR_RATIFIED_CANON_GITHUB_SEQ_10_TO_12",
   "continuity_exception": {
     "episode_id": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
     "issue": "CAEDREN_ROLE_LOCATION",
-    "status": "FLAGGED_UNRESOLVED_NOT_CANONICAL"
+    "status": "LITERAL_CAMEO_CANONICAL_TRAVEL_AFFILIATION_UNPROVEN",
+    "resolution_file": "editorial/recovery/reconciliations/LVI-C01-PIII-D539-AUTHOR-SOURCE.json"
   },
   "created_on": "2026-11-19",
   "current_source": "Assistant's three user-visible episode messages in current CRÔNICAS chat; exact UTF-8 serialized source/export not yet mounted or retrieved through an API.",
   "episodes": [
     {
-      "archive_status": "ARCHIVED_GITHUB_READBACK_VERIFIED",
+      "archive_status": "IMMUTABLE_LITERAL_VERIFIED_CANONICALLY_CLOSED",
       "book": "Livro VI",
       "chapter": 1,
       "choice_authorized_in_chat": true,
-      "commit_sha": null,
+      "commit_sha": "feefa5fa2c1513d0cab918f59f86325b6fbbe949",
       "day": 538,
       "events_verified": true,
       "id": "LVI-C01-PI-D538-REAUTHORIZED-R2-AUTHOR-SOURCE",
@@ -36,14 +37,16 @@
       "source_blob_readback_verified": true,
       "event_anchor_readback_verified": true,
       "five_choices_readback_verified": true,
-      "canon_status": "RASCUNHO"
+      "canon_status": "NARRADO",
+      "canon_sequence": 10,
+      "canon_closed_commit": "feefa5fa2c1513d0cab918f59f86325b6fbbe949"
     },
     {
-      "archive_status": "ARCHIVED_GITHUB_READBACK_VERIFIED",
+      "archive_status": "IMMUTABLE_LITERAL_VERIFIED_CANONICALLY_CLOSED",
       "book": "Livro VI",
       "chapter": 1,
       "choice_authorized_in_chat": true,
-      "commit_sha": null,
+      "commit_sha": "feefa5fa2c1513d0cab918f59f86325b6fbbe949",
       "day": 538,
       "events_verified": true,
       "id": "LVI-C01-PII-D538-AUTHOR-SOURCE",
@@ -57,14 +60,16 @@
       "source_blob_readback_verified": true,
       "event_anchor_readback_verified": true,
       "five_choices_readback_verified": true,
-      "canon_status": "RASCUNHO"
+      "canon_status": "NARRADO",
+      "canon_sequence": 11,
+      "canon_closed_commit": "feefa5fa2c1513d0cab918f59f86325b6fbbe949"
     },
     {
-      "archive_status": "ARCHIVED_GITHUB_READBACK_VERIFIED",
+      "archive_status": "IMMUTABLE_LITERAL_VERIFIED_CANONICALLY_CLOSED",
       "book": "Livro VI",
       "chapter": 1,
       "choice_authorized_in_chat": false,
-      "commit_sha": null,
+      "commit_sha": "feefa5fa2c1513d0cab918f59f86325b6fbbe949",
       "day": 539,
       "events_verified": true,
       "id": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
@@ -78,11 +83,13 @@
       "source_blob_readback_verified": true,
       "event_anchor_readback_verified": true,
       "five_choices_readback_verified": true,
-      "canon_status": "RASCUNHO"
+      "canon_status": "NARRADO",
+      "canon_sequence": 12,
+      "canon_closed_commit": "feefa5fa2c1513d0cab918f59f86325b6fbbe949"
     }
   ],
-  "last_review": "GITHUB_READBACK_CONFIRMED_2026_11_19",
-  "owner_action_needed": "Supply exact text export if current chat messages cannot be programmatically serialized; until then the state remains BLOCKED.",
+  "last_review": "GITHUB_ACTION_RESTORED_SQLITE_VERIFIED_CANON_2026_11_19",
+  "owner_action_needed": null,
   "purpose": "Fail-closed staging of authorized Livro VI scenes; no reconstruction or reuse of rejected r17.",
   "recovery_state": "RECUPERADO_COM_HASH_EVENTOS_E_CONTINUIDADE",
   "red_flag": "The only D538 episode currently stored on archive branch is the older REJECTED r17, and it MUST NOT be used as source.",
@@ -121,5 +128,7 @@
   "github_archive_commit": "d62a979ea1ef71ede8b49bbda82e7603c5c0247f",
   "source_original_raw_git_blob_sha1": "980dd7a347a119cefbb0c2b4c25bb9961843b092",
   "git_tree_integrity": "CHECKED_THROUGH_PRIVATE_GITHUB_FETCH_FILE",
-  "release_state": "DRAFTS_ARCHIVED_VERIFIED_NOT_PROMOTED"
+  "release_state": "CANON_SEALED_HEAD_LVI_D539_PART_III",
+  "previous_release_gate": "ORIGINAL_HISTORICAL_20261119",
+  "canon_commit": "feefa5fa2c1513d0cab918f59f86325b6fbbe949"
 }

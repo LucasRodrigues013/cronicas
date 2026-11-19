@@ -3,7 +3,7 @@
   "created_on": "2026-11-19",
   "scope": "BOOK_VI_DRAFT_REPAIR_ONLY_NO_RETCON",
   "person": "Caedren",
-  "status": "ANOMALIA_LVI_C01_PIII_D539_NAO_CANONIZAR_SEM_RECONCILIAR",
+  "status": "AUTHOR_RATIFIED_D539_PHYSICAL_CAMEO_NO_PROVEN_LEGION_ROLE",
   "problem": "Livro VI C01 Parte III (D539), section IV, introduced Caedren physically in Legiao yard as a subordinate officer under Varo, without an evidenced travel path or military affiliation.",
   "historical_evidence": [
     {
@@ -50,7 +50,7 @@
   "flags": {
     "affiliation_with_legion": "NOT_ESTABLISHED",
     "subordinate_to_varo": "NOT_ESTABLISHED",
-    "physically_present_tres_arcos_D539": "NOT_VERIFIED",
+    "physically_present_tres_arcos_D539": "NARRATED_IN_RATIFIED_LITERAL",
     "allowed_to_replace_varo_legion_command": "NOT_ESTABLISHED",
     "hero_of_seven_roads": "HISTORICALLY_CONFIRMED_AS_KNOWN_BY_LUCAS_BY_D492",
     "relationship_to_althea": "HISTORICAL_RECORD_THALOR_AS_OF_EARLIER_PERIOD"
@@ -62,10 +62,12 @@
     "Reconcile D539 discrepancy through explicit author-approved editorial decision or a valid causal explanation grounded in prior events; no fabricated journey.",
     "Apply same preflight for Varo, Kael, Lysa, Miren, Astra, Maelis, Brannik, Naira, Rumo, and characters appearing in interludes."
   ],
-  "blocking_releases": [
-    "LVI-C01-PIII-D539-AUTHOR-SOURCE"
-  ],
-  "consequence": "DO_NOT_CANONIZE_EPISODE_UNTIL_RECONCILED",
+  "blocking_releases": [],
+  "consequence": "DO_NOT_INFER_UNNARRATED_TRAVEL_MILITARY_AFFILIATION_RANK_OR_SUCCESSION",
   "editorial_severity": "CRITICAL_CHARACTER_CONTINUITY",
-  "novelty": "No new in-world event is asserted by this guard"
+  "novelty": "No new in-world event is asserted by this guard",
+  "previous_status": "ANOMALIA_LVI_C01_PIII_D539_NAO_CANONIZAR_SEM_RECONCILIAR",
+  "resolution_file": "editorial/recovery/reconciliations/LVI-C01-PIII-D539-AUTHOR-SOURCE.json",
+  "canon_commit": "feefa5fa2c1513d0cab918f59f86325b6fbbe949",
+  "note": "This ratification accepts the historical literal scene without retroactive prose edit, but does not establish any offscreen travel itinerary or service obligation."
 }
