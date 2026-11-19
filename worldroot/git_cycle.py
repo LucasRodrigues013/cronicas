@@ -480,6 +480,8 @@ def _closure(root, episode_id, head, choice, draft, events, kn):
         "visibility": "PRIVADO", "status": "FECHADO_GITHUB",
         "drive_status": "NAO_SINCRONIZADO",
     }
+    if choice.get("schema") == "worldroot-author-retro-ratification-v1":
+        payload["ratification_kind"] = "VERBATIM_AUTHOR_RETRO_RATIFICATION_20261119"
     if draft.book_closed:
         payload["book_closed"] = True
     return payload
@@ -635,7 +637,10 @@ def _journal(root: Path):
         if clos.get("story_sha256") != manifest["original_readback_sha256"]:
             raise GateError("Journal references different immutable narrative")
         opts = clos.get("chosen_option")
-        if opts == 0 and clos.get("book_closed") is True:
+        if clos.get("ratification_kind") == "VERBATIM_AUTHOR_RETRO_RATIFICATION_20261119":
+            from .retro_ratify import author_ratification_choice
+            choice = author_ratification_choice(root, clos["episode_id"])
+        elif opts == 0 and clos.get("book_closed") is True:
             from .book_finalizer import author_finale_choice
             choice = author_finale_choice(root, clos["episode_id"])
         else:
