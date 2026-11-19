@@ -87,14 +87,18 @@ def compact_brief(policy: dict, scene_tags=(), max_chars: int = 1750) -> dict:
         "WORLDROOT | preferencias autorais vigentes v" + str(policy["version"]),
         "TITULO P43: Livro VI AS COROAS PARTIDAS; saga A ERA DAS NOVE COROAS.",
         "AUTORIA P44: PRE-PRODUCAO; draft r17 REJEITADO. NAO criar episodio sem nova autorizacao explicita.",
-        "ABERTURA P46/P47: Tharvek anao e Elyrien elfa viajam a Tres Arcos; Ithran antagonista; ~25-35 capitulos/6 movimentos.",
+        "ABERTURA P49: Lucas inicia com Miren, Kael/Lysa e Conselho; revoluciona TODA Tres Arcos + bairro 100 mil em ate 24h.",
+        "AURORA P50: Malha 3600 ja existe D531 com VERTICE; manutencao, lixo, saneamento, transporte 24h na cidade inteira.",
+        "CONTRAPONTO P51: Tharvek/Elyrien recebem noticia pelo tempo real; Ithran confirma e planeja matar representantes; derrota possivel.",
+        "PESQUISA P52: AERUN expande equipe e recebe pesquisadores com apoio da cidade aberta.",
+        "TRAMA P46/P47: seis movimentos/25-35 capitulos; nenhum encontro instantaneo ou final fixo.",
         "TEMPO P45: narrar UM DIA por Parte; o mesmo dia pode abranger varias partes.",
         "ISEKAI P35-P42: Lucas expressivo, GENESE plena, Miren romance, AERUN ativa, ARGOS voa, Tres Arcos cresce.",
         "SEMANTICA P31/P32/P33/P48: nao repetir arcos, Talis com pistas reais, segredo != conhecimento de Lucas.",
         "QUALIDADE P34/P26/P27: ~10000 palavras opcional, fonte literal antes de criar.",
         "VIDA P28/P29/P30: conviver > relatar projetos; dia organico.",
     ]
-    prioritized = ("P43", "P44", "P45", "P46", "P47", "P48", "P35", "P36", "P37", "P38", "P39", "P40", "P41", "P42", "P31", "P32", "P33", "P34", "P26", "P27", "P28", "P29", "P30")
+    prioritized = ("P49", "P50", "P51", "P52", "P43", "P44", "P45", "P46", "P47", "P48", "P35", "P36", "P37", "P38", "P39", "P40", "P41", "P42", "P31", "P32", "P33", "P34", "P26", "P27", "P28", "P29", "P30")
     available = {r["id"] for r in active}
     selected = [rid for rid in prioritized if rid in available]
     for rule in scored:
