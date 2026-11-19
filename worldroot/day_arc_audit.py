@@ -8,7 +8,7 @@ from __future__ import annotations
 
 import re
 
-SCENE = re.compile(r"(?m)^##\s+[IVX]{1,8}\s+[—–-]\s+[^\n]+$")
+SCENE = re.compile(r"(?m)^(?:##\s+)?[IVX]{1,8}\s+[—–-]\s+[^\n]+$")
 CLOCK = re.compile(r"(?i)\bDIA\s+(\d{1,4})\s*[·|—–-]\s*(\d{1,2})h(\d{2})\b")
 STATUS = "EDITORIAL_ADVISORY_ONLY"
 
