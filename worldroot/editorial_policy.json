@@ -1,9 +1,9 @@
 {
   "schema": "worldroot-editorial-policy-v1",
   "project": "CRONICAS_DE_UM_NOVO_MUNDO",
-  "version": 13,
+  "version": 14,
   "reviewed_at": "2026-11-19",
-  "approved_scope": "USER_REQUESTED_PERMANENT_PREFERENCES_NOT_CANON_EVENTS",
+  "approved_scope": "AUTHOR_APPROVED_EDITORIAL_DYNAMICS_NOT_NARRATED_CANON",
   "source_of_truth": "main/worldroot/editorial_policy.json",
   "historical_feedback_reference": "story-archive/editorial/feedback/2026-11-18-baseline.json",
   "precedence": "latest_explicit_author_feedback > earlier conflicting style preference; no retcon of narrated events",
@@ -180,6 +180,13 @@
       "kind": "AUTHOR_DIRECTIVE",
       "at": "2026-11-19",
       "quote": "segue o TXT para gravar no github os dados de forma integral. Depois disso, precisamos deixar que toda nova geração siga as instruções que temos no projeto pra nao acontecer mais isso"
+    },
+    {
+      "id": "S26",
+      "kind": "AUTHOR_APPROVAL",
+      "at": "2026-11-19",
+      "transcript_line": null,
+      "quote": "Aplicar as melhorias nos capítulos seguintes; mundo produz acontecimentos, protagonista pode surpreender e ser chamado, antagonistas agem; cinco partes crescem até clímax na quinta; 10 módulos dinâmicos e dez sementes, 42/45 avaliação editorial."
     }
   ],
   "rules": [
@@ -1402,6 +1409,193 @@
         "S23",
         "S24",
         "S25"
+      ],
+      "active": true
+    },
+    {
+      "id": "P71",
+      "title": "Cinco partes em crescendo emocional e quinto arco com clímax",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "CAPITULO",
+        "CINCO_PARTES",
+        "RITMO"
+      ],
+      "directive": "Cada capítulo mantém cinco partes com identidade dramática e progressão orgânica: I incidente, II colisão, III extraordinário, IV virada, V clímax com recompensa, mudança ou decisão significativa. Parte V NÃO vira simples ata das consequências. Crescendo é diretriz de emoção, nunca monotonia crescente obrigatória ou clímax forçado; cada parte contém cenas completas e escolhas 1–3/4 especial/5 livre.",
+      "evidence": [
+        "S26"
+      ],
+      "active": true
+    },
+    {
+      "id": "P72",
+      "title": "WORLD_PULSE e FACTION_CLOCK mantêm mundo ativo",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "MUNDO",
+        "TEMPO",
+        "AUTONOMIA"
+      ],
+      "directive": "Coletar operações de atores independentes com dia, local, objetivo, recursos, meios, etapa, próxima janela e evidência. Personagens e reinos podem agir fora da tela antes e depois das escolhas de Lucas, mas não teletransportar, acelerar informação nem promover bastidor a conhecimento do protagonista.",
+      "evidence": [
+        "S26"
+      ],
+      "active": true
+    },
+    {
+      "id": "P73",
+      "title": "ANTAGONIST_ENGINE e SPY_NETWORK com adversários competentes",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "ANTAGONISTAS",
+        "ESPIONAGEM",
+        "CAUSALIDADE"
+      ],
+      "directive": "Antagonistas têm agendas, contingências, meios, inteligência comprovada, possibilidade real de derrota e ações que se conectam por rotas, cobertura e risco. Introduzir espionagem/perseguição/combate quando a causalidade permitir; sucesso e falha devem permanecer válidos, sem fugas ou anti-GÊNESE automáticos.",
+      "evidence": [
+        "S26"
+      ],
+      "active": true
+    },
+    {
+      "id": "P74",
+      "title": "AWE_SYSTEM — GÊNESE provoca assombro e respostas plurais",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "GENESE",
+        "MUNDO",
+        "REACOES"
+      ],
+      "directive": "A cidade pode amar Lucas e amigos tratá-lo com intimidade, mas testemunhas externas devem reagir de forma plausível à magnitude quase divina de GÊNESE: reverência, fascínio, descrença, medo, interesse religioso, científico e político; reações exigem observação, relato e propagação. Reverência não concede cargo ou divindade literal; sem nerf de poder.",
+      "evidence": [
+        "S26"
+      ],
+      "active": true
+    },
+    {
+      "id": "P75",
+      "title": "COMBAT_CONTINUITY — ação em alta fantasia com custo e memória",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "COMBATE",
+        "MAGIA",
+        "CONTINUIDADE"
+      ],
+      "directive": "Combates rastreiam local/terreno, protagonistas, técnicas demonstradas, posições, recursos, ferimentos, ajuda, tempo, desfecho e sequelas. Lutas, monstros, perseguições, resgates e confrontos épicos são bem-vindos, nunca quota fixa; resultados não podem ser anulados por roteiro.",
+      "evidence": [
+        "S26"
+      ],
+      "active": true
+    },
+    {
+      "id": "P76",
+      "title": "Quatro experiências narrativas sem relatórios repetitivos",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "FANTASIA",
+        "AVENTURA",
+        "RELACOES",
+        "ESTRATEGIA"
+      ],
+      "directive": "Alternar maravilhamento, aventura, relações humanas e conflito estratégico dentro dos capítulos e ao longo do livro; cenas rápidas, diálogos, ação e humor não podem ser substituídos por sucessão de reuniões. Alternância é de variedade, não checklist obrigatório em toda parte.",
+      "evidence": [
+        "S26"
+      ],
+      "active": true
+    },
+    {
+      "id": "P77",
+      "title": "SCENE_DIRECTOR e RELATIONSHIP_PULSE",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "CENA",
+        "PERSONAGENS",
+        "ROMANCE"
+      ],
+      "directive": "Planejar cada cena com gatilho, desejo, oposição/curiosidade, ação vivida, virada, resultado e próximos impactos; manter voz expressiva e afetuosa de Lucas, romance vivo de Miren, Sistema/NÓX distintos, relações e autonomias dos NPCs. Não sequestrar decisões irreversíveis do jogador.",
+      "evidence": [
+        "S26"
+      ],
+      "active": true
+    },
+    {
+      "id": "P78",
+      "title": "MYSTERY_GRAPH e LEGACY_EVENTS — pistas e memória causal",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "MISTERIOS",
+        "LEGADO",
+        "PROVA"
+      ],
+      "directive": "Ligar pistas, hipóteses, fontes e personagens com informação comprovada; não fundir automaticamente Arquitetos, dragões, Talis, Velkar ou origem de Lucas. Criações e vitórias anteriores alteram oportunidades e disputas ao longo do tempo, não apenas relatórios, e não são recriadas como se inéditas.",
+      "evidence": [
+        "S26"
+      ],
+      "active": true
+    },
+    {
+      "id": "P79",
+      "title": "Dez sementes de alta fantasia aprovadas só como planejamento",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "LIVRO_VI",
+        "TRAMAS",
+        "PROPOSTA"
+      ],
+      "directive": "Sementes autorizadas para desenvolvimento gradual: espião roubar milagre, desafio dos campeões, passagem anã, floresta élfica sem canto, estreito marítimo, chamado dos sobreviventes, diplomata, expedição desaparecida, vontade dos dragões, testemunhas do impossível. Inclusão em planejamentos não significa fato narrado, presença, inimigo atribuído ou desfecho pré-escrito.",
+      "evidence": [
+        "S26"
+      ],
+      "active": true
+    },
+    {
+      "id": "P80",
+      "title": "Auditabilidade editorial 42/45 e prioridade criativa",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "AUDITORIA",
+        "QUALIDADE"
+      ],
+      "directive": "Registrar feedback autoral inicial 42/45 em nove eixos (fantasia 5, Lucas 4, conflito 5, autonomia 5, antagonismo 5, conexão 4, ritmo 5, continuidade 5, consequências 4) como avaliação de direção desejada, NÃO medição validada da qualidade do próximo capítulo. Ferramentas só emitem pareceres consultivos, preservam fontes literais e decisões.",
+      "evidence": [
+        "S26"
+      ],
+      "active": true
+    },
+    {
+      "id": "P81",
+      "title": "Sem retcon, promoção ou invenção automática por novas diretrizes",
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "tags": [
+        "CANONE",
+        "APROVACAO",
+        "INTEGRIDADE"
+      ],
+      "directive": "Manter HEAD vivo Livro VI C01 PIII D539 21h08 como fonte; PIV D540 draft e Caedren com flag histórica. Novas regras e sementes não corrigem texto pretérito, não fecham episódio, não alteram HEAD/CONTEXT e não preaprovam fatos. O capítulo seguinte deve consultar as fontes reais e o contrato GitHub-only.",
+      "evidence": [
+        "S26"
       ],
       "active": true
     }
