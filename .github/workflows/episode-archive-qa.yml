@@ -7,6 +7,11 @@ on:
       - 'episodes/**/draft/manifesto_imutavel.json'
       - '.github/workflows/episode-archive-qa.yml'
       - 'tools/validate_episode_archive.py'
+      - 'tools/verify_lvi_original.py'
+      - 'editorial/recovery/originals/**'
+      - 'episodes/**/draft/source_proof.json'
+      - 'episodes/**/review/continuity_review.json'
+      - 'editorial/recovery/reconciliations/**'
   workflow_dispatch:
 
 permissions:
@@ -34,6 +39,8 @@ jobs:
         run: python -m unittest discover -s tools -p 'test_archive_validator.py' -v
       - name: Verify literal text, 5 choices, sidecars and SHA256
         run: python tools/validate_episode_archive.py --root .
+      - name: Require matching original chat export, anchored events and continuity review for new Livro VI packages
+        run: python tools/verify_lvi_original.py --root .
       - name: Explain scope
         run: |
           echo 'Passed: GitHub archived-package integrity only.'
