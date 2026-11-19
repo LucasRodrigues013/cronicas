@@ -1,0 +1,160 @@
+{
+  "schema": "worldroot-three-cycles-evidence-based-audit-v1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "as_of_date": "2026-11-19",
+  "scoring_method": "Eight equally weighted expert review criteria, numeric 0-10, based on real GitHub artifacts and CI; NOT a measured speed benchmark, independent literary assessment, or forecast guarantee",
+  "baseline": {
+    "branch": "story-archive",
+    "commit": "eaa7a0bef54e9c3c36057747e065f6d18d7b303b",
+    "quality_engine": "main@06ee3b5b56833ad48f6e90badb94c5a6d6236284",
+    "score": 6.4
+  },
+  "after": {
+    "branch": "story-archive",
+    "cycle_merge": "c191abbc2ab33dfb06afef92a73aa4dd4ceff3fb",
+    "memory_commit": "58ea3c5efa61b386da8e2128a5ab7e3571f0ac06",
+    "private_git_auth_fix": "0c9039dda13dad171c31abb09e4976d08eebaf70",
+    "verified_readback_request": "6c47e506172cb798ac5919b8f296bf09d25d7ec0",
+    "score": 8.6
+  },
+  "delta_points": 2.2,
+  "rubric": [
+    {
+      "criterion": "Fidelidade literal e rastreabilidade",
+      "before": 9,
+      "after": 9.3,
+      "delta": 0.3,
+      "evidence": "Quatro textos do Livro VI preservados por hash; fonte D538-D540 verificada e 12 journals replayados",
+      "confidence": "Alta para integridade, não para fidelidade visual do chat"
+    },
+    {
+      "criterion": "Fechamento autoral e idempotência",
+      "before": 5.5,
+      "after": 8.5,
+      "delta": 3,
+      "evidence": "Roteador HEAD esperado, opção única, navegação canônica separada; regressões impedem segunda opção e fechamento duplicado",
+      "confidence": "Média-alta: nenhuma nova escolha real pós implantação"
+    },
+    {
+      "criterion": "Segurança dos workflows e readback",
+      "before": 5,
+      "after": 8.6,
+      "delta": 3.6,
+      "evidence": "Grupo único worldroot-story-write; fast-forward; token privado também no fetch; rerun idempotente sucesso 44589377892",
+      "confidence": "Alta para bootstrap; média para futuro fechamento ao vivo"
+    },
+    {
+      "criterion": "Memória incremental causal",
+      "before": 5.5,
+      "after": 9,
+      "delta": 3.5,
+      "evidence": "Quatro deltas imutáveis D538-D540; 3 canon receipts; 37 eventos/36 conhecimentos, fonte e evidência preservadas",
+      "confidence": "Alta para importação validada; regras de semântica ainda humanas"
+    },
+    {
+      "criterion": "Voz de Lucas e qualidade literária",
+      "before": 6.5,
+      "after": 7.1,
+      "delta": 0.6,
+      "evidence": "Revisão consultiva de carisma ligada ao feedback; métrica literal de falas e checklist humano; nenhuma cena reescrita",
+      "confidence": "Média-baixa: notas literárias não mensuráveis automaticamente"
+    },
+    {
+      "criterion": "Fechamento canônico de capítulo",
+      "before": 5,
+      "after": 8.7,
+      "delta": 3.7,
+      "evidence": "Livro V Capítulo 16 verdadeiro selado com cinco jornais, manifesto, pacote integral e ZIP conferidos",
+      "confidence": "Alta para capítulo V C16; futura Parte V do Livro VI não executada"
+    },
+    {
+      "criterion": "Recuperação em novos chats",
+      "before": 6.5,
+      "after": 9,
+      "delta": 2.5,
+      "evidence": "ops/RESUME.json atual e verificável com HEAD, último draft, referência de estilo e flags de Caedren",
+      "confidence": "Alta para reconstrução dos dados; nenhuma entrega automática em chat"
+    },
+    {
+      "criterion": "Planejamento, autonomia e segurança do cânone",
+      "before": 8.5,
+      "after": 8.8,
+      "delta": 0.3,
+      "evidence": "HEAD seq12 inalterado, zero escolhas inventadas, Livro VI v18 e feedback autoral preservados",
+      "confidence": "Alta para GitHub, qualidade subjetiva depende da leitura futura"
+    }
+  ],
+  "physical_proofs": {
+    "canon_head_id": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+    "canon_head_sequence": 12,
+    "canon_head_day": 539,
+    "canon_head_hour": "21h08",
+    "latest_draft_id": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+    "latest_draft_source_sha256": "61877abadada69a64f5be666db128c6c679e215cd6f99a7498e9f8272d47fc83",
+    "episode_deltas": 4,
+    "canon_receipts": 3,
+    "reviewed_events": 37,
+    "reviewed_knowledge": 36,
+    "sealed_chapter": "LIVRO-V-C16",
+    "seal_status": "ALL_FIVE_PARTS_CANONICAL_SOURCE_AND_ZIP_VERIFIED",
+    "resume": "ops/RESUME.json",
+    "drive_write": false,
+    "continuity_flag": "CAEDREN_ROLE_LOCATION; literal presence ratified, travel and military role unproved"
+  },
+  "ci": [
+    {
+      "run_id": 44588485163,
+      "meaning": "real 4-episode LVI backfill and real LV C16 seal rehearsal",
+      "result": "success"
+    },
+    {
+      "run_id": 44588647524,
+      "meaning": "merged three-cycle QA, replay 12 canonical journals",
+      "result": "success"
+    },
+    {
+      "run_id": 44588647775,
+      "meaning": "initial bootstrap: private fetch AFTER successful remote Git push lacked credentials; files were committed but action concluded failure",
+      "result": "failure_then_fixed"
+    },
+    {
+      "run_id": 44589341221,
+      "meaning": "readback auth correction QA",
+      "result": "success"
+    },
+    {
+      "run_id": 44589377892,
+      "meaning": "idempotent bootstrap after auth fix, green; HEAD and source unchanged",
+      "result": "success"
+    }
+  ],
+  "critical_remaining": [
+    "Next REAL user selection is not yet executed through the new choice workflow; no invented selection or sequence change is allowed",
+    "Next REAL Livro VI five-part close and canonical seal is not yet executed; only verified with Livro V C16 plus synthetic tests",
+    "GitHub-only is not off-provider backup; a second independent copy could be added only if user separately authorizes",
+    "Lucas's affectionate charisma and literary quality require human reading, not all-caps ratio; no future episode is guaranteed perfect",
+    "Current canonical D539 notes Caedren physical appearance but route, rank and Legion subordination remain unknown",
+    "GitHub Actions alone cannot deliver messages spontaneously into an ongoing ChatGPT conversation"
+  ],
+  "rating_not_claiming": [
+    "No measured live latency improvement",
+    "No pixel-equivalent DIL source from TXT",
+    "No new story episode or author choice created",
+    "No irreversible retcon",
+    "No hidden Drive sync"
+  ],
+  "changes_protected": [
+    "canon/HEAD.json",
+    "canon/state.sqlite",
+    "episodes/*/draft/narrativa_integral.md",
+    "choices/*",
+    "planning/book-vi/*"
+  ],
+  "acceptance_state": "IMPLEMENTED_MERGED_SOURCE_READBACK_VERIFIED_WITH_LIMITATIONS",
+  "links": {
+    "main_pr": "https://github.com/LucasRodrigues013/cronicas/pull/41",
+    "auth_fix_pr": "https://github.com/LucasRodrigues013/cronicas/pull/42",
+    "resume": "https://github.com/LucasRodrigues013/cronicas/blob/story-archive/ops/RESUME.json",
+    "sealed_chapter": "https://github.com/LucasRodrigues013/cronicas/blob/story-archive/chapters/LIVRO-V-C16/CANONICAL_SEAL.json"
+  }
+}
