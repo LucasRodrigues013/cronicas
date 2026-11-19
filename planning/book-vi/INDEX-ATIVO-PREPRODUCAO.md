@@ -1,3 +1,5 @@
+> **ENTREGA FINAL AUDITADA DE CINCO PASSOS (v17, 18/11/2026):** `planning/book-vi/ENTREGA-FINAL-CINCO-PASSOS-v17-PREPRODUCAO.md`. Este é o resumo executivo verificável do mapa, tempos ARGOS/estradas/transporte urbano, povos e elencos, expansão de Três Arcos, escala de Velkar, ciência do Coração, ritmo do livro, links das fontes e pendências. Código WORLDROOT `main` PR #31 `e5535600950000403103945f6b0deaf4f79ed500` com 319 testes em CI SUCCESS. **Cânone permanece Livro V D537, 0 episódios Livro VI; só pré-produção.**
+
 # ÍNDICE ATIVO DE PRÉ-PRODUÇÃO · COMPLEMENTO DOS CINCO PASSOS v11–v16
 **18/11/2026 · CINCO PASSOS PESQUISADOS, AUDITADOS E GRAVADOS COMO PROPOSTA · SEM CÂNONE NARRATIVO NOVO**
 **RELER PRIMEIRO** `canon/HEAD.json`: Livro V fechado C16 Parte V D537 23h46. LVI draft r17 REJEITADO, nova abertura não autorizada. TÍTULO Livro VI AS COROAS PARTIDAS, saga A ERA DAS NOVE COROAS. Nenhuma escolha futura/dezena de capítulos se tornou fato.
