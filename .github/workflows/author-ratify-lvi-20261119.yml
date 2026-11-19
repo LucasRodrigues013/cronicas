@@ -1,0 +1,80 @@
+name: WORLDROOT - author-approved exact retro canon for LVI D538-D539
+
+on:
+  push:
+    branches: [story-archive]
+    paths:
+      - 'canon/RETRO_RATIFY_LVI_20261119.json'
+
+concurrency:
+  group: worldroot-canon-github-only
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  ratify-verbatim:
+    if: github.actor == 'LucasRodrigues013'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout audited engine at passing immutable PR39 merge
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: 06ee3b5b56833ad48f6e90badb94c5a6d6236284
+          path: engine
+          persist-credentials: false
+      - name: Checkout current private story history
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: story-archive
+          path: archive
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Setup Python 3.12
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Run approved engine regressions
+        env:
+          PYTHONPATH: engine
+        run: python -m unittest discover -s engine/tests -q
+      - name: Verify immutable original stories and character source proofs
+        run: python archive/tools/verify_lvi_original.py --root archive --require-all
+      - name: Ratify exactly three episodes under direct author approval
+        env:
+          PYTHONPATH: engine
+        run: python -m worldroot.retro_ratify --archive-root archive
+      - name: Independently replay canonical journal and verify SQLite/HEAD
+        env:
+          PYTHONPATH: engine
+        run: |
+          python -m worldroot.git_cycle verify --archive-root archive
+          python -m worldroot.git_cycle restore --archive-root archive
+          python -m worldroot.git_cycle verify --archive-root archive
+      - name: Commit all three journal entries and SQLite HEAD atomically
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git -C archive config user.name "github-actions[bot]"
+          git -C archive config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C archive add -A canon
+          if git -C archive diff --cached --quiet; then
+            echo "Idempotent: canon already matches the ratification."
+            exit 0
+          fi
+          git -C archive commit -m "canon(worldroot): author-ratified exact LVI C01 parts I-III D538-D539"
+          auth_header="$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)"
+          git -C archive -c "http.extraheader=AUTHORIZATION: basic $auth_header" push origin HEAD:refs/heads/story-archive
+          unset auth_header
+      - name: Explain bounded scope
+        run: |
+          echo "Only D538 PI/PII and D539 PIII can be ratified by this one-time author request."
+          echo "Original story bytes and episode manifests were not modified."
+          echo "D540 Part IV remains unwritten; no fabricated Part III continuation selection."
+          echo "No Google Drive synchronization was performed."
