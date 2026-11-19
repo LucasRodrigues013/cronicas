@@ -9,7 +9,7 @@ on:
       - '.github/workflows/worldroot-draft-inbox.yml'
       - '.github/workflows/worldroot-chapter-backup-qa.yml'
   push:
-    branches: [story-archive]
+    branches: [story-archive, feature/worldroot-chapter-drive-publisher-v1]
     paths:
       - 'tools/chapter_drive_publisher.py'
       - 'tools/test_chapter_drive_publisher.py'
