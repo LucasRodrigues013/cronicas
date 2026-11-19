@@ -74,6 +74,9 @@ def route(root: Path, episode_id: str, option: int, free_text: str,
             or opts[3].get("is_special") is not True
             or opts[4].get("is_free") is not True):
         raise ArchiveInvalid("Five genuine story options required")
+    existing_options=list((root/"choices"/episode_id).glob("option-*.json"))
+    if any(p.name!=f"option-{option}.json" for p in existing_options):
+        raise ArchiveInvalid("Existing immutable choice differs: another option already selected")
     if episode_id.startswith("LVI-"):
         check=verify_lvi(root,episode_id)
     else:
