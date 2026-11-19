@@ -20,5 +20,11 @@
     "editorial/audits/LVI-C01-PIV-D540-AUTHOR-SOURCE-voice.json"
   ],
   "drive": "NO_WRITE",
-  "no_inferred_author_choice": true
+  "no_inferred_author_choice": true,
+  "readback_retry": {
+    "reason": "First bootstrap commit was remotely saved, but the subsequent private fetch lacked the scoped header; the workflow was corrected in PR #42",
+    "first_committed_sha": "58ea3c5efa61b386da8e2128a5ab7e3571f0ac06",
+    "approved_scope": "VERIFY_IDEMPOTENT_REMOTE_READBACK_ONLY_NO_NEW_STORY_OR_CHOICES",
+    "after_workflow_fix": "0c9039dda13dad171c31abb09e4976d08eebaf70"
+  }
 }
