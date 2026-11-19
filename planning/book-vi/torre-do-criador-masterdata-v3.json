@@ -1,0 +1,1582 @@
+{
+  "schema": "worldroot-bookvi-tower-inventory-v3",
+  "created": "2026-11-19",
+  "name": "Torre do Criador",
+  "status": "APROVADA_DIRECAO_DETALHAMENTO_NAO_NARRADO",
+  "historical_baseline": {
+    "book": "Livro VI",
+    "chapter": 1,
+    "part": "III",
+    "day": 539,
+    "episode": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+    "sha": "74bb2ae185f21262a292d1a48e2c75e703d8ee92659f43f97c39d0174c2fd2e7"
+  },
+  "supersedes_preproduction_only": [
+    "planning/book-vi/torre-do-criador-masterplan-v2-aerodoca-PREPRODUCAO.md",
+    "planning/book-vi/torre-do-criador-masterdata-v2.json"
+  ],
+  "v2_kept": {
+    "form": {
+      "height_m_proposed": 145,
+      "usable_tower_height_m_proposed": 127.6,
+      "crown_m_proposed": 17.4,
+      "main_above_ground_levels": 22,
+      "basements": 3,
+      "above_ground_gross_m2_proposed": 25000,
+      "basement_gross_m2_proposed": 6000,
+      "gross_total_m2_proposed": 31000,
+      "main_symbol": "Marca do Impossível — upward rising stroke, broken halo, one floating spark",
+      "no_copies": [
+        "Avengers A",
+        "Three Arches state emblem"
+      ],
+      "meaning_of_gross_total": "ENCLOSED / INTERNAL FLOOR AREA ONLY; external open platforms separately declared"
+    },
+    "aviation_platform": {
+      "name": "Aerodoca do Impossível",
+      "location": "Exterior lateral na cota do grande Salão P18/P19",
+      "outer_diameter_m": 70,
+      "outer_surface_m2": 3848.45,
+      "inner_clear_diameter_m": 58,
+      "inner_clear_area_m2": 2642.08,
+      "operational_edge_band_m": 6,
+      "load_equivalent_preliminary_t": 87,
+      "load_target_status": "FICTIONAL_PLANNING_ESTIMATE_NOT_CERTIFICATION",
+      "separate_structural_support": true,
+      "approach_path": "PENDING_MAP_ROUTE_AND_TESTS",
+      "access": "GLAZED_SECURED_BOARDING_VESTIBULE",
+      "no_simultaneous_people_on_flight_disc": true,
+      "argos_maintenance_base": "Campo Aurora",
+      "public_deck_distinct": true
+    },
+    "scenic_deck": {
+      "name": "Deck do Horizonte",
+      "area_m2_external_open": 550,
+      "level": "P18 adjoining P19 sightlines",
+      "relations": [
+        "open kitchen P18",
+        "lounge P18",
+        "mezzanine/briefing P19",
+        "glazed flight viewing"
+      ],
+      "flight_operation": "CLOSED_FOR_LANDINGS_AND_TAKEOFFS_OR_ONLY_VIEW_FROM_SHIELDED_INTERIOR",
+      "counted_inside_31000_m2": false
+    },
+    "argos": {
+      "historical_sources": [
+        "D521 aircraft ficha",
+        "D528 39.86t mass re-measurement"
+      ],
+      "length_m": 31.6,
+      "span_open_m": 27.4,
+      "span_folded_m": 19.8,
+      "height_m": 7.6,
+      "measured_mass_t_d528_empty": 39.86,
+      "projected_max_mass_t_unverified": 58,
+      "propulsion": "VTOL ARCANO VETORIAL + CRUZEIRO ADAPTATIVO",
+      "operating_base": "Campo Aurora",
+      "tower_landing_status": "DESIGN_RESERVED_NOT_TESTED"
+    },
+    "future_craft": {
+      "project_codename": "ASA LIVRE-01 (PROVISIONAL)",
+      "status": "IDEA_NOT_CREATED",
+      "design_inspiration": "Original compact versatile personal VTOL; no Quinjet replica",
+      "length_m_concept": 13,
+      "span_open_m_concept": 10.5,
+      "height_m_concept": 3.5,
+      "proposed_mass_range_t": [
+        6,
+        10
+      ],
+      "proposed_occupants_range": [
+        4,
+        6
+      ],
+      "hangar": "B01 modular",
+      "route_to_platform": "External independent service lift / dock conditional design",
+      "not_a_replacement_for": "ARGOS"
+    }
+  },
+  "assumptions": {
+    "private_building": true,
+    "city_emblem": false,
+    "first_resident_status": "POSSIBLE_IF_NARRATED",
+    "no_miren_move_without_choice": true,
+    "not_new_sapient_creation": true,
+    "building_status": "NOT_YET_BUILT_IN_STORY",
+    "nox_not_ai": true
+  },
+  "control_architecture": {
+    "name": "Rede Doméstica do Criador (RDC) — automação não consciente",
+    "tiers": [
+      "Nível local mecânico/eletroarcano que funciona sem NÓX",
+      "NÓX como parceiro que pode se conectar voluntariamente e aconselhar",
+      "Lucas/Miren/equipe autorizada com permissões específicas e controles manuais"
+    ],
+    "nox": {
+      "canonical_identity": "Armadura viva, companheira de Lucas já existente, distinta do SISTEMA",
+      "integration_status": "PROPOSTA_CONSENTIMENTO_DEPENDENTE",
+      "mechanism": "Interface de comunicação e percepção remota com vínculo verificável, não transferência, clonagem ou conversão em software",
+      "capabilities_proposed": [
+        "Falar por emissores autorizados",
+        "projetar presença lumínica sem criar novo ser",
+        "revisar alarmes com Lucas",
+        "acompanhar energia e manutenção",
+        "acessar dados de projetos com permissão",
+        "ajudar pilotos como assessor sem controlar ARGOS automaticamente",
+        "gerenciar cenas de casa com humor"
+      ],
+      "boundaries": [
+        "Pode recusar e desconectar",
+        "sem duplicação de consciência",
+        "sem onisciência fora da rede",
+        "sem acesso obrigatório aos aposentos íntimos de Miren",
+        "sem controle de corpos/sistemas externos",
+        "sem anexar SISTEMA/VÉRTICE",
+        "desligamento do vínculo remoto não incapacita NÓX"
+      ],
+      "voice": "Companheirismo, humor e firmeza próprios, não voz genérica de atendimento"
+    },
+    "system_character": {
+      "identity": "SISTEMA — personagem distinto",
+      "tower_role": "Nenhuma fusão automática à RDC ou a NÓX"
+    },
+    "vertex": {
+      "identity": "VÉRTICE coordena Malha Aurora municipal",
+      "tower_role": "Não integrado automaticamente; acordo específico e competências civis preservados"
+    },
+    "fallback": [
+      "Quedas de enlace: RDC permanece operativa em automação básica",
+      "controles manuais independentes",
+      "emergência nunca depende exclusivamente de NÓX",
+      "logs de acesso auditáveis e limitados",
+      "evacuação possível sem credencial digital"
+    ]
+  },
+  "robot_fleet": {
+    "planned_count": 96,
+    "counts_by_role": [
+      {
+        "id": "ACOLHEDORES",
+        "name": "Mensageiros do Horizonte",
+        "count": 10,
+        "skills": [
+          "Recepção",
+          "orientação",
+          "serviço de café simples",
+          "tradução apenas se idioma conhecido"
+        ],
+        "scope": "P01–P03/P15–P19",
+        "constraints": "Não espionam convidados nem impõem cerimoniais"
+      },
+      {
+        "id": "LIMPEZA",
+        "name": "Pétalas Mecânicas",
+        "count": 12,
+        "skills": [
+          "Limpeza",
+          "recolha de resíduos",
+          "lavagem",
+          "manutenção doméstica leve"
+        ],
+        "scope": "Todas áreas autorizadas",
+        "constraints": "Excluem quartos privados salvo permissão"
+      },
+      {
+        "id": "MANUTENCAO",
+        "name": "Ferreiros-Sombra",
+        "count": 14,
+        "skills": [
+          "Inspeção",
+          "pequenos reparos",
+          "troca de peças",
+          "isolamento técnico"
+        ],
+        "scope": "Infraestruturas P01–P22/B01–B03",
+        "constraints": "Não são engenheiros conscientes nem substituem especialistas"
+      },
+      {
+        "id": "FABRICACAO",
+        "name": "Dedos da Forja",
+        "count": 12,
+        "skills": [
+          "Operação de bancadas",
+          "manipulação de materiais",
+          "produção repetitiva",
+          "resposta a desligamento"
+        ],
+        "scope": "P04–P11/B01/B03",
+        "constraints": "Nenhum comando letal e nenhuma vida consciente"
+      },
+      {
+        "id": "LOGISTICA",
+        "name": "Carregadores do Impossível",
+        "count": 12,
+        "skills": [
+          "Carregamento",
+          "inventário",
+          "transporte de suprimentos",
+          "elevação segura"
+        ],
+        "scope": "B01/P03–P10/P17",
+        "constraints": "Rotas de carga isoladas dos visitantes"
+      },
+      {
+        "id": "CURADORES",
+        "name": "Arquivistas de Cristal",
+        "count": 8,
+        "skills": [
+          "Indexação",
+          "exibição de fontes",
+          "legendas",
+          "guia de acervo"
+        ],
+        "scope": "P02/P10/P13–P15/P19",
+        "constraints": "Não inventar imagens históricas nem ocultar atribuições"
+      },
+      {
+        "id": "JARDINS",
+        "name": "Jardineiros de Névoa",
+        "count": 8,
+        "skills": [
+          "Irrigação",
+          "controle hídrico",
+          "poda leve",
+          "cultivo supervisionado"
+        ],
+        "scope": "P01/P03/P17/P21 e lote",
+        "constraints": "Não alteram plantas protegidas sem responsável"
+      },
+      {
+        "id": "SAUDE",
+        "name": "Apoios Serenos",
+        "count": 6,
+        "skills": [
+          "Transporte de kits",
+          "acionamento de profissionais",
+          "assistência física não clínica"
+        ],
+        "scope": "P12/P16/P20",
+        "constraints": "Não diagnosticar nem executar procedimentos médicos autônomos"
+      },
+      {
+        "id": "RESPOSTA",
+        "name": "Sentinelas do Pórtico",
+        "count": 8,
+        "skills": [
+          "Isolamento de área",
+          "alerta",
+          "evacuação orientada",
+          "resgate com supervisão"
+        ],
+        "scope": "Entradas/saídas/sistemas técnicos",
+        "constraints": "Sem força letal automática nem cárcere indiscriminado"
+      },
+      {
+        "id": "AVIACAO",
+        "name": "Guias de Aerodoca",
+        "count": 6,
+        "skills": [
+          "Balizamento após validação",
+          "inspeção de superfície",
+          "barreiras de perímetro",
+          "comunicação autorizada"
+        ],
+        "scope": "P18/P19/Aerodoca/B01",
+        "constraints": "Nenhuma autorização autônoma de pouso sem pilotos/equipe humana"
+      }
+    ],
+    "personhood": "NÃO CONSCIENTES; NÃO SÃO NÓX; NENHUMA NOVA VIDA CRIADA",
+    "ownership": "NOVAS UNIDADES PRIVADAS; NÃO REDUZEM O EFETIVO DA MALHA AURORA",
+    "lifecycle": "PLANEJADOS, NÃO MATERIALIZADOS"
+  },
+  "security": {
+    "zones": [
+      {
+        "id": "Z0",
+        "label": "Praça e fachada",
+        "access": "VISITA LIVRE NA ÁREA AUTORIZADA"
+      },
+      {
+        "id": "Z1",
+        "label": "Galeria P01–P03",
+        "access": "PÚBLICO CONTROLADO"
+      },
+      {
+        "id": "Z2",
+        "label": "Salões e convidados",
+        "access": "CONVITE/AGENDAMENTO"
+      },
+      {
+        "id": "Z3",
+        "label": "Oficina e laboratório",
+        "access": "RESTRITO"
+      },
+      {
+        "id": "Z4",
+        "label": "Aposentos pessoais",
+        "access": "PRIVADO; CONSENTIMENTO"
+      },
+      {
+        "id": "Z5",
+        "label": "Aerodoca e testagem",
+        "access": "OPERACIONAL/APENAS PESSOAL VALIDADO"
+      }
+    ],
+    "signals": [
+      "Portas e acessos sem coleta facial compulsória",
+      "vidros perimetrais e sensores de movimento proporcionais",
+      "temperatura/fumaça/gases e água",
+      "consumo energético e corrente arcana local",
+      "vibração e integridade das nervuras",
+      "vento e fluxo no deck e aerodoca",
+      "distância/obstáculos de aeronave autorizada",
+      "falha de elevadores e obstrução",
+      "desligamento de cargas perigosas",
+      "queda de enlace RDC/NÓX"
+    ],
+    "alerts": [
+      {
+        "priority": "INFORMATIVO",
+        "example": "Visitante autorizado chega ou manutenção de rotina",
+        "action": "Informação discreta no terminal apropriado"
+      },
+      {
+        "priority": "ATENÇÃO",
+        "example": "Elevador parado, galeria lotada, vazamento localizado",
+        "action": "Isolar equipamento, orientar pessoas, avisar responsáveis"
+      },
+      {
+        "priority": "GRAVE",
+        "example": "Área restrita violada, superaquecimento, falha operacional de pouso",
+        "action": "Parar processo, proteger ocupantes, bloquear acesso indevido e acionar resposta humana"
+      },
+      {
+        "priority": "CRÍTICO",
+        "example": "Incêndio, colapso iminente, impacto de aeronave ou ataque comprovado",
+        "action": "Evacuar por saídas independentes, manter acessos de fuga e comunicar socorro"
+      }
+    ],
+    "ethics": [
+      "Sem dispositivos letais autônomos",
+      "sem câmeras em banhos e quartos",
+      "sem NÓX como fiscal permanente da vida de Miren",
+      "logs minimizados e acessíveis sob finalidade definida",
+      "visitantes podem solicitar privacidade",
+      "alarmar não significa acusar nem capturar",
+      "rotas de fuga sempre livres",
+      "magia desconhecida não é sempre classificada como inimiga"
+    ],
+    "dependency": "Tecnologias de percepção arcana específicas precisam ser criadas e testadas em cena, não detectar qualquer segredo por decreto."
+  },
+  "mobility": {
+    "name": "Elevadores Vista Livre",
+    "panoramic": {
+      "proposed_shafts": 2,
+      "access": "Átrio/P02/P03/P17/P18/P19/P22 conforme autorização",
+      "description": "Cabines de cristal curvo com vista externa do Horizonte Aberto, iluminação que acompanha a altura, modo opaco para privacidade; um eixo de vista não atravessa laboratórios",
+      "features": [
+        "Vista 270° conceitual",
+        "velocidade suave",
+        "controle manual",
+        "comunicação de emergência",
+        "modo acessível",
+        "isolamento em pousos",
+        "paradas programáveis sem escolher destino secreto"
+      ]
+    },
+    "private": {
+      "proposed_shafts": 2,
+      "access": "B01/P04–P22 com autorização, setor íntimo P20–P21",
+      "description": "Elevador privado com contenção e redundância"
+    },
+    "service": {
+      "proposed_shafts": 2,
+      "access": "B01–P10 e P17–P19 por circuito de serviço",
+      "description": "Elevador de carga e alimentação para oficinas e cozinha, separado do público"
+    },
+    "emergency": "Duas ou mais rotas enclausuradas independentes a dimensionar e verificar; não atribuir certificação física."
+  },
+  "gallery": {
+    "name": "Galeria do Criador e dos Que Caminharam Juntos",
+    "public_levels": [
+      "P01",
+      "P02",
+      "P03"
+    ],
+    "ethic": "Mostra o legado SEM transformar amigos em figurantes ou culto ao Criador; direito de corrigir registros, preservar privacidade e creditos.",
+    "exhibits": [
+      {
+        "id": "G01",
+        "title": "O Homem que Chegou da Terra",
+        "fact_gate": "Relato voluntário de Lucas; origem confirmada; detalhes privados somente com consentimento",
+        "media": "Retratos artísticos explicitamente rotulados como reconstrução"
+      },
+      {
+        "id": "G02",
+        "title": "A Primeira Legião e a escolha de permanecer",
+        "fact_gate": "Fonte literal da Legião, nomes e autonomia de integrantes",
+        "media": "Painel 3D de episódios confirmados, sem fabricar filmagens"
+      },
+      {
+        "id": "G03",
+        "title": "Três Arcos: antes e depois",
+        "fact_gate": "Obras manifestadas e marcos verificados",
+        "media": "Maquetes comparativas, linhas de tempo e relatos de moradores"
+      },
+      {
+        "id": "G04",
+        "title": "As Estradas, Calderva e além",
+        "fact_gate": "Viagens e encontros narrados, conhecimento público verificado",
+        "media": "Mapa público com rotas documentadas; regiões secretas ocultas"
+      },
+      {
+        "id": "G05",
+        "title": "Forja e ARGOS",
+        "fact_gate": "Massa, voos e operações comprovadas; capacidades projetadas rotuladas",
+        "media": "Maquete em movimento e diário de voo com fontes"
+      },
+      {
+        "id": "G06",
+        "title": "AERÚN, Miren e a ciência",
+        "fact_gate": "Dados aprovados por Miren/Astra, sem divulgar pesquisa sigilosa",
+        "media": "Retratos consentidos, experimentos educativos"
+      },
+      {
+        "id": "G07",
+        "title": "Horizonte Aberto e Cidade Livre",
+        "fact_gate": "D538–D540 apenas na medida em que passagens foram canonizadas",
+        "media": "Projeção urbana e indicadores separados entre construído e projetado"
+      },
+      {
+        "id": "G08",
+        "title": "Parede das Ideias Futuros Possíveis",
+        "fact_gate": "Cada projeto marcado IDEA/PROPOSTA/EM_TESTE/OPERACIONAL/COMPROVADO",
+        "media": "Maquetes da Torre, Asa Livre, projetos de mobilidade e explorações sem prometer resultados"
+      }
+    ],
+    "image_policy": "Fotografia verdadeira só se houver registro/câmera real em cena; caso contrário usar recriações gráficas identificadas, testemunho ou memória autorizada; proibir atribuição de fala não pronunciada.",
+    "visitor_policy": "Acesso público apenas por capacidade/horário ou convite; galeria não dá acesso à torre privada."
+  },
+  "earth_collection": {
+    "provenance": "MODELOS DA TERRA COMO REFERÊNCIAS CULTURAIS PROPOSTAS, NÃO ITENS QUE LUCAS POSSUIU OU AINDA CRIOU; se manifestados por GÊNESE são recriações e não objetos transferidos fisicamente da Terra.",
+    "cars": [
+      {
+        "name": "Volkswagen Fusca clássico",
+        "role": "Carro popular afetivo e reconhecível; artefato de design industrial",
+        "place": "B01",
+        "state": "MODELO PROPOSTO"
+      },
+      {
+        "name": "Chevrolet Opala",
+        "role": "Muscle car brasileiro de referência, memória cultural opcional",
+        "place": "B01",
+        "state": "MODELO PROPOSTO"
+      },
+      {
+        "name": "Ford Mustang Fastback clássico",
+        "role": "Estética de desempenho da Terra e inventividade de carroceria",
+        "place": "B01",
+        "state": "MODELO PROPOSTO"
+      },
+      {
+        "name": "DeLorean DMC-12",
+        "role": "Ícone do design futurista de outra época, sem propriedade de viagem no tempo",
+        "place": "B01",
+        "state": "MODELO PROPOSTO"
+      },
+      {
+        "name": "Volkswagen Kombi clássica",
+        "role": "Ícone de aventura e transporte coletivo pequeno",
+        "place": "B01",
+        "state": "MODELO PROPOSTO"
+      }
+    ],
+    "motorcycles": [
+      {
+        "name": "Honda CB750 clássica",
+        "place": "B01",
+        "role": "História da motocicleta moderna",
+        "state": "MODELO PROPOSTO"
+      },
+      {
+        "name": "Vespa clássica",
+        "place": "B01",
+        "role": "Mobilidade urbana icônica",
+        "state": "MODELO PROPOSTO"
+      },
+      {
+        "name": "Honda CG clássica",
+        "place": "B01",
+        "role": "Mobilidade cotidiana conhecida em parte da Terra",
+        "state": "MODELO PROPOSTO"
+      },
+      {
+        "name": "Kawasaki Ninja clássica",
+        "place": "B01",
+        "role": "Tecnologia esportiva e aerodinâmica",
+        "state": "MODELO PROPOSTO"
+      }
+    ],
+    "domestic_and_cultural": [
+      "Televisor de tubo",
+      "Rádio portátil de pilha",
+      "Telefone de disco",
+      "Walkman e fita cassete",
+      "Toca-discos e vinil",
+      "Câmera instantânea tipo Polaroid",
+      "Computador doméstico de época",
+      "Teclado mecânico",
+      "Console de videogame 8-bit",
+      "Videogame portátil estilo Game Boy",
+      "Fliperama de salão",
+      "Fitas VHS",
+      "Máquina de escrever",
+      "Globo da Terra",
+      "Mapa de metrô reconstruído da memória",
+      "Discos e livros favoritos a serem definidos por Lucas",
+      "Máquina de pipoca",
+      "Cafeteira italiana e utensílios",
+      "Bicicleta terrestre",
+      "Bola de futebol",
+      "Ferramentas manuais familiares",
+      "Relógio analógico",
+      "Caixa de fotografias familiares só se o autor fornecer memórias"
+    ],
+    "locations": [
+      "B01 veículos e motos",
+      "P14 objetos de memória",
+      "P15 entretenimento e música",
+      "P17/P18 utensílios e culinária",
+      "P02 exposições educativas sem violar intimidade"
+    ],
+    "safeguards": [
+      "Nenhuma fotografia real do passado surge por onisciência",
+      "nenhuma lembrança pessoal específica atribuída ao Lucas sem fonte",
+      "nomes de marcas descrevem modelos e não autorizam copiar iconografia em materiais de venda",
+      "sem propriedades mágicas fictícias dadas a aparelhos reais por padrão"
+    ]
+  },
+  "aerial": {
+    "name": "Aerodoca do Impossível",
+    "location": "Exterior lateral na cota do grande Salão P18/P19",
+    "outer_diameter_m": 70,
+    "outer_surface_m2": 3848.45,
+    "inner_clear_diameter_m": 58,
+    "inner_clear_area_m2": 2642.08,
+    "operational_edge_band_m": 6,
+    "load_equivalent_preliminary_t": 87,
+    "load_target_status": "FICTIONAL_PLANNING_ESTIMATE_NOT_CERTIFICATION",
+    "separate_structural_support": true,
+    "approach_path": "PENDING_MAP_ROUTE_AND_TESTS",
+    "access": "GLAZED_SECURED_BOARDING_VESTIBULE",
+    "no_simultaneous_people_on_flight_disc": true,
+    "argos_maintenance_base": "Campo Aurora",
+    "public_deck_distinct": true
+  },
+  "scenic_deck": {
+    "name": "Deck do Horizonte",
+    "area_m2_external_open": 550,
+    "level": "P18 adjoining P19 sightlines",
+    "relations": [
+      "open kitchen P18",
+      "lounge P18",
+      "mezzanine/briefing P19",
+      "glazed flight viewing"
+    ],
+    "flight_operation": "CLOSED_FOR_LANDINGS_AND_TAKEOFFS_OR_ONLY_VIEW_FROM_SHIELDED_INTERIOR",
+    "counted_inside_31000_m2": false
+  },
+  "future_vtol": {
+    "project_codename": "ASA LIVRE-01 (PROVISIONAL)",
+    "status": "IDEA_NOT_CREATED",
+    "design_inspiration": "Original compact versatile personal VTOL; no Quinjet replica",
+    "length_m_concept": 13,
+    "span_open_m_concept": 10.5,
+    "height_m_concept": 3.5,
+    "proposed_mass_range_t": [
+      6,
+      10
+    ],
+    "proposed_occupants_range": [
+      4,
+      6
+    ],
+    "hangar": "B01 modular",
+    "route_to_platform": "External independent service lift / dock conditional design",
+    "not_a_replacement_for": "ARGOS"
+  },
+  "floors": [
+    {
+      "floor": 1,
+      "gross_m2": 1700,
+      "name": "Átrio do Impossível",
+      "role": "Entrada monumental sem trono; recepção limitada, espelho-d’água, controle de acesso, acesso à praça; primeira visão da marca pessoal.",
+      "rooms": [
+        "Pórtico pessoal da Marca do Impossível",
+        "Átrio central com jardim e lâmina d’água",
+        "Recepção de visitantes",
+        "Controle de acessos",
+        "Café de espera e sanitários acessíveis",
+        "Sala de assistência e achados"
+      ],
+      "equipment": [
+        "Painel de boas-vindas sem coleta indiscriminada",
+        "Mapa tridimensional do prédio",
+        "Totens com rotas permitidas",
+        "Pórticos de detecção proporcional e triagem humana",
+        "Detector de fumaça e sensores de água",
+        "Sistema de orientação tátil",
+        "Bancos modulares",
+        "Fonte luminosa de baixa altura",
+        "Sinalização de saídas",
+        "Armários de guarda voluntária",
+        "Primeiros socorros e desfibrilador ficcional"
+      ],
+      "robot_roles": [
+        "ACOLHEDORES",
+        "LIMPEZA",
+        "RESPOSTA"
+      ],
+      "access_class": "PUBLICA_CONTROLADA",
+      "story_hooks": [
+        "Primeiro estrangeiro vê a marca e reconhece o Criador",
+        "Lucas brinca com visitante em vez de receber tratamento de rei"
+      ],
+      "status": "PROPOSTA_NAO_NARRADA"
+    },
+    {
+      "floor": 2,
+      "gross_m2": 1600,
+      "name": "Galeria das Ideias",
+      "role": "Exposição rotativa de protótipos não confidenciais e feitos explicados com crédito aos colaboradores; visitação por convite/horário.",
+      "rooms": [
+        "Galeria do Primeiro Dia",
+        "Galeria da Legião e amigos",
+        "Cidade Livre e primeiras obras",
+        "ARGOS e o céu",
+        "Sala do Horizonte Aberto",
+        "Corredor de projetos futuros e arquivos"
+      ],
+      "equipment": [
+        "Projeções tridimensionais rotuladas por proveniência",
+        "Retratos e imagens autorizadas",
+        "Linha do tempo com fonte literal",
+        "Vitrines de peças e réplicas",
+        "Maquete de Três Arcos antes e depois",
+        "Mapa de viagens com locais públicos conhecidos",
+        "Piso interativo de rotas",
+        "Arquivo de depoimentos consentidos",
+        "Legendas multilíngues conforme traduções existentes",
+        "Controle de capacidade",
+        "Sala de curadoria",
+        "Placas que distinguem fato de hipótese"
+      ],
+      "robot_roles": [
+        "CURADORES",
+        "ACOLHEDORES",
+        "LIMPEZA"
+      ],
+      "access_class": "PUBLICA_CURADORIA",
+      "story_hooks": [
+        "Criança encontra uma história da Legião e faz pergunta inesperada",
+        "Testemunha contesta uma representação e exige correção histórica"
+      ],
+      "status": "PROPOSTA_NAO_NARRADA"
+    },
+    {
+      "floor": 3,
+      "gross_m2": 1500,
+      "name": "Pátio dos Visitantes",
+      "role": "Lounge para receber amigos, viajantes e pesquisadores, pequeno café, varanda e áreas de convívio; área aberta só quando autorizado.",
+      "rooms": [
+        "Pátio para receber visitantes",
+        "Café da oficina",
+        "Pequeno anfiteatro de apresentação",
+        "Espaço de perguntas",
+        "Sala de grupos e excursões",
+        "Varanda para jardim"
+      ],
+      "equipment": [
+        "Mesas baixas",
+        "Mobiliário adaptável",
+        "Projetores de protótipos liberados",
+        "Painel de agenda de visitas",
+        "Refrigeração e forno de cozinha simples",
+        "Estação de água",
+        "Instrumentos musicais de convidados",
+        "Biblioteca para curiosos",
+        "Armários de acessibilidade",
+        "Sistema de bilhetes por capacidade",
+        "Janelas de vidro opaco variável"
+      ],
+      "robot_roles": [
+        "ACOLHEDORES",
+        "LIMPEZA",
+        "LOGISTICA"
+      ],
+      "access_class": "PUBLICA_CONTROLADA",
+      "story_hooks": [
+        "Lucas descobre o apelido dado à torre por crianças",
+        "Café com viajante que não está impressionado com sua fama"
+      ],
+      "status": "PROPOSTA_NAO_NARRADA"
+    },
+    {
+      "floor": 4,
+      "gross_m2": 1350,
+      "name": "Forja Experimental Pesada",
+      "role": "Entrada de carga, bancadas e materiais, fundações e isolamento; elevador de serviço independente; NÃO fábrica pública.",
+      "rooms": [
+        "Doca de materiais",
+        "Bancadas de fabricação",
+        "Câmara de corte e solda arcana",
+        "Sala de ferramentas grandes",
+        "Depósito rastreado",
+        "Controle de resíduos e ventilação"
+      ],
+      "equipment": [
+        "Ponte de içamento",
+        "Bancada anti-impacto",
+        "Fornalha enclausurada",
+        "Ferramentas de metalurgia",
+        "Prensas e moldes",
+        "Baias móveis de estoque",
+        "Armário de cristais",
+        "Dispositivos de bloqueio e emergência",
+        "Sensores de calor e vibração",
+        "Barreiras transparentes",
+        "Exaustão e tratamento local",
+        "Câmeras apenas de processo industrial"
+      ],
+      "robot_roles": [
+        "FABRICACAO",
+        "MANUTENCAO",
+        "LOGISTICA"
+      ],
+      "access_class": "OFICINA_RESTRITA",
+      "story_hooks": [
+        "Brannik discute se um protótipo precisa ser maior",
+        "Experimento de estrutura provoca teste de isolamento sem ameaça ao bairro"
+      ],
+      "status": "PROPOSTA_NAO_NARRADA"
+    },
+    {
+      "floor": 5,
+      "gross_m2": 1350,
+      "name": "Grande Oficina do Criador",
+      "role": "Bancadas móveis, protótipos mecânicos, ponte rolante/apoios e trabalhos com Brannik quando ele desejar.",
+      "rooms": [
+        "Grande bancada central de Lucas",
+        "Área de montagem modular",
+        "Parede dos planos improváveis",
+        "Mesa de amigos inventores",
+        "Câmara de demonstrações",
+        "Ferramentaria pessoal"
+      ],
+      "equipment": [
+        "Mesa de modelagem tridimensional",
+        "Braços manipuladores não conscientes",
+        "Lupas e sondas",
+        "Ferramentas manuais da Terra reinterpretadas",
+        "Suportes de protótipos",
+        "Ponte de oficina pequena",
+        "Quadro com erros anotados",
+        "Luz de precisão",
+        "Apoios ajustáveis",
+        "Bancadas de cristal e madeira",
+        "Armários de peças nomeadas",
+        "Painel de protótipos sem aprovação"
+      ],
+      "robot_roles": [
+        "FABRICACAO",
+        "MANUTENCAO",
+        "LOGISTICA"
+      ],
+      "access_class": "OFICINA_RESTRITA",
+      "story_hooks": [
+        "NÓX comenta um projeto enquanto Lucas negocia com Brannik",
+        "Uma solução civil nasce de invenção originalmente cômica"
+      ],
+      "status": "PROPOSTA_NAO_NARRADA"
+    },
+    {
+      "floor": 6,
+      "gross_m2": 1250,
+      "name": "Ateliê de Prototipagem",
+      "role": "Impressão/manifestação de componentes por GÊNESE, montagem modular, desmontagem, parede de ideias incompletas.",
+      "rooms": [
+        "Ateliê de miniaturas e maquetes",
+        "Montagem de pequenos mecanismos",
+        "Bancadas de protótipos",
+        "Estúdio de desenho",
+        "Depósito de componentes",
+        "Sala de falhas e reparos"
+      ],
+      "equipment": [
+        "Mesas com luz regulável",
+        "Escâner e projeção 3D de medidas aferidas",
+        "Instrumentos de aferição",
+        "Ferramentas de gravação",
+        "Materiais de acabamento",
+        "Prateleiras de protótipos",
+        "Ferramentas de encaixe",
+        "Microscópios de fantasia",
+        "Caixas de padrões mecânicos",
+        "Estação de isolamento de testes",
+        "Catálogo de origens dos objetos"
+      ],
+      "robot_roles": [
+        "FABRICACAO",
+        "MANUTENCAO"
+      ],
+      "access_class": "OFICINA_RESTRITA",
+      "story_hooks": [
+        "Lucas tenta reproduzir um objeto corriqueiro da Terra",
+        "Brannik descobre uma aplicação para uma invenção descartada"
+      ],
+      "status": "PROPOSTA_NAO_NARRADA"
+    },
+    {
+      "floor": 7,
+      "gross_m2": 1250,
+      "name": "Laboratório de Instrumentação",
+      "role": "Medições, controle de qualidade, diagnósticos e experimentos próprios; colaboração consentida com especialistas.",
+      "rooms": [
+        "Laboratório de medidas físicas",
+        "Sala de qualidade de materiais",
+        "Ensaio de vibração",
+        "Sala de instrumentos",
+        "Cabine de monitoramento",
+        "Arquivo de experimentos"
+      ],
+      "equipment": [
+        "Balanças e suportes de precisão",
+        "Sensores de temperatura e pressão",
+        "Medidores de vibração",
+        "Câmeras de ensaio",
+        "Sistema de registro com data",
+        "Mesa de repetição de medidas",
+        "Sensores de fadiga",
+        "Módulos de comparação por fonte",
+        "Dispositivos de interrupção",
+        "Compartimentos para amostras",
+        "Rótulos de prova e hipótese"
+      ],
+      "robot_roles": [
+        "FABRICACAO",
+        "MANUTENCAO"
+      ],
+      "access_class": "CIENCIA_RESTRITA",
+      "story_hooks": [
+        "Naira rejeita um dado bonito porém não medido",
+        "Lucas reconhece a diferença entre criação e teste"
+      ],
+      "status": "PROPOSTA_NAO_NARRADA"
+    },
+    {
+      "floor": 8,
+      "gross_m2": 1250,
+      "name": "Laboratório Arcanotécnico",
+      "role": "Interfaces de energia e Costura de Dados sob autorização; não conectar automaticamente sistemas secretos de AERÚN.",
+      "rooms": [
+        "Laboratório de fluxo arcano",
+        "Estação privada da Costura de Dados",
+        "Estação energética experimental",
+        "Sala de mapas de circuitos",
+        "Cabine de isolamento",
+        "Arquivo de protocolos"
+      ],
+      "equipment": [
+        "Painéis de fluxo local",
+        "Cristais sensoriais calibráveis",
+        "Suportes isolados",
+        "Conectores de energia",
+        "Chaves de corte manual",
+        "Consoles privados de comunicação",
+        "Osciloscópios arcanos",
+        "Testadores de enlace",
+        "Registro de permissões",
+        "Blindagem seletiva",
+        "Sensores de campo local",
+        "Caixas de emergência"
+      ],
+      "robot_roles": [
+        "FABRICACAO",
+        "MANUTENCAO"
+      ],
+      "access_class": "CIENCIA_RESTRITA",
+      "story_hooks": [
+        "NÓX solicita autorização para acessar novo circuito",
+        "Uma falha de transmissão obriga a consultar fontes sem onisciência"
+      ],
+      "status": "PROPOSTA_NAO_NARRADA"
+    },
+    {
+      "floor": 9,
+      "gross_m2": 1200,
+      "name": "Mecatrônica e Espaço para Inventos",
+      "role": "Bancadas de dispositivos, veículos compactos e sistemas de voo; prever pesquisa de futura aeronave pessoal, não lançamento antecipado.",
+      "rooms": [
+        "Mecatrônica e pequenos autômatos",
+        "Bancada de acionamentos",
+        "Mini-hangar de maquetes",
+        "Laboratório de atuadores",
+        "Estação de asas e motores",
+        "Depósito de drones sem autonomia consciente"
+      ],
+      "equipment": [
+        "Componentes móveis",
+        "Motores experimentais",
+        "Peças para VTOL compacto",
+        "Garras não conscientes",
+        "Suportes de asa",
+        "Células de teste",
+        "Medidores de empuxo fictícios",
+        "Ferramentas de servomecanismos",
+        "Cabine de simulação local",
+        "Dispositivo de parada",
+        "Câmara para drones de inspeção"
+      ],
+      "robot_roles": [
+        "FABRICACAO",
+        "MANUTENCAO",
+        "LOGISTICA"
+      ],
+      "access_class": "OFICINA_RESTRITA",
+      "story_hooks": [
+        "Lucas imagina ASA LIVRE-01 mas ainda não a criou",
+        "Autômato tropeça numa instrução absurda e Lucas melhora o projeto"
+      ],
+      "status": "PROPOSTA_NAO_NARRADA"
+    },
+    {
+      "floor": 10,
+      "gross_m2": 1200,
+      "name": "Sala de Projeções e Projeto Aéreo",
+      "role": "Concepção, mapas de voo, simulação e briefing pessoal de expedições; nenhum governo nem rede onisciente.",
+      "rooms": [
+        "Sala de projetos aéreos",
+        "Mesa de estratégia de exploração",
+        "Biblioteca de mapas públicos",
+        "Sala de simulação",
+        "Baias de briefing",
+        "Arquivo de rotas verificadas"
+      ],
+      "equipment": [
+        "Mapa volumétrico com fontes",
+        "Simulador de cockpit como hipótese",
+        "Maquetes ARGOS e ASA LIVRE",
+        "Estação de meteorologia local",
+        "Quadro de autonomia/limites aferidos",
+        "Comunicador autorizado",
+        "Terminal de diários de voo",
+        "Mesa de discussão",
+        "Sistema de sala escura",
+        "Assentos ajustáveis",
+        "Gravador consentido de reuniões"
+      ],
+      "robot_roles": [
+        "FABRICACAO",
+        "CURADORES"
+      ],
+      "access_class": "OFICINA_RESTRITA",
+      "story_hooks": [
+        "Equipe debate arquitetura do futuro VTOL e prazos sem tratá-lo como feito",
+        "Surge missão exploratória real com rotas incompletas"
+      ],
+      "status": "PROPOSTA_NAO_NARRADA"
+    },
+    {
+      "floor": 11,
+      "gross_m2": 1150,
+      "name": "Arena de Movimento",
+      "role": "Treinamento físico, artes marciais, mobilidade e testes seguros; torneios somente com participantes voluntários.",
+      "rooms": [
+        "Arena central de treinamento",
+        "Circuito de obstáculos",
+        "Parede de escalada",
+        "Sala de técnicas de espada",
+        "Baias de equipamentos",
+        "Área de observação segura"
+      ],
+      "equipment": [
+        "Piso de absorção ajustável",
+        "Plataformas móveis",
+        "Alvos e bonecos não conscientes",
+        "Armas de treino",
+        "Placar de ensaio identificado como simulação",
+        "Sensores de impacto",
+        "Estação de hidratação",
+        "Barreiras e grades",
+        "Cronômetros",
+        "Câmeras apenas de treinamento consentido",
+        "Área de pausa"
+      ],
+      "robot_roles": [
+        "FABRICACAO",
+        "RESPOSTA",
+        "LIMPEZA"
+      ],
+      "access_class": "PESSOAL_RESTRITA",
+      "story_hooks": [
+        "Káiron e Lucas demonstram técnicas sem duelo forçado",
+        "Varo corrige Lucas após testar uma sequência"
+      ],
+      "status": "PROPOSTA_NAO_NARRADA"
+    },
+    {
+      "floor": 12,
+      "gross_m2": 1150,
+      "name": "Recuperação e Resposta",
+      "role": "Banhos, fisioterapia básica, descanso e equipamento de emergência; não hospital ou atendimento público licenciado.",
+      "rooms": [
+        "Banhos de recuperação",
+        "Sala de alongamento",
+        "Espaço de primeiros socorros",
+        "Sauna arcana facultativa",
+        "Dormitório de repouso",
+        "Sala de atendimento emergencial"
+      ],
+      "equipment": [
+        "Macas e suportes",
+        "Banheiras de imersão",
+        "Armários de toalhas",
+        "Kit de proteção",
+        "Estação de hidratação",
+        "Instrumentos de respiração",
+        "Bancos térmicos",
+        "Iluminação ajustável",
+        "Sensores de segurança com privacidade",
+        "Alarmes discretos",
+        "Equipamentos de treino leve"
+      ],
+      "robot_roles": [
+        "SAUDE",
+        "LIMPEZA",
+        "RESPOSTA"
+      ],
+      "access_class": "PESSOAL_PRIVADA",
+      "story_hooks": [
+        "Após treino, personagens conversam sem relatórios",
+        "NÓX ajuda Lucas a respirar e descansar sem controlá-lo"
+      ],
+      "status": "PROPOSTA_NAO_NARRADA"
+    },
+    {
+      "floor": 13,
+      "gross_m2": 1100,
+      "name": "Biblioteca das Possibilidades",
+      "role": "Projetos de Lucas, livros, diários, protótipos catalogados, registros com proveniência; controle de segredos.",
+      "rooms": [
+        "Biblioteca de projetos concluídos",
+        "Estantes de livros",
+        "Diário de invenções",
+        "Arquivo confidencial",
+        "Sala de leitura",
+        "Mesa de consulta histórica"
+      ],
+      "equipment": [
+        "Lombadas catalogadas",
+        "Tabletes de cristal",
+        "Caixas de fontes primárias",
+        "Banco de dados local com autoria",
+        "Estações de escrita",
+        "Luminárias individuais",
+        "Prateleiras deslizantes",
+        "Cofres documentais",
+        "Terminais de versão de projetos",
+        "Controle de acesso por coleção",
+        "Mapa cronológico do universo"
+      ],
+      "robot_roles": [
+        "CURADORES",
+        "LIMPEZA"
+      ],
+      "access_class": "PRIVADA_AUTORIZADA",
+      "story_hooks": [
+        "Uma página antiga desperta lembrança da Terra",
+        "Citação errada em um memorial é corrigida antes de se espalhar"
+      ],
+      "status": "PROPOSTA_NAO_NARRADA"
+    },
+    {
+      "floor": 14,
+      "gross_m2": 1100,
+      "name": "Sala da Terra",
+      "role": "Objetos recriados da memória, culinária, música e mapas afetivos, sem criar transmissão/porta real para a Terra.",
+      "rooms": [
+        "Sala de estar da Terra",
+        "Galeria de mapas lembrados",
+        "Acervo de eletrônicos clássicos",
+        "Estante de música e filmes",
+        "Sala de cozinha nostálgica",
+        "Vitrine de fotos e memórias pessoais"
+      ],
+      "equipment": [
+        "Globo da Terra marcado como reconstrução",
+        "Mapa de ruas conhecido apenas por Lucas",
+        "TV CRT e controle remoto",
+        "Console 8-bit e aparelho portátil de jogos",
+        "Walkman com fitas",
+        "Rádio de mesa e toca-discos",
+        "Discos de vinil",
+        "Câmera instantânea e filmes",
+        "Telefone de disco",
+        "Computador desktop clássico e teclado",
+        "Cartazes culturais não oficiais",
+        "Fotografias reconstruídas pela memória devidamente rotuladas",
+        "Bicicleta ou prancha de infância se Lucas confirmar lembrança"
+      ],
+      "robot_roles": [
+        "CURADORES",
+        "LIMPEZA"
+      ],
+      "access_class": "INTIMA",
+      "story_hooks": [
+        "Miren conhece um costume da Terra que Lucas ama",
+        "Lucas revela lembrança que nunca contou sem presumir detalhes de biografia"
+      ],
+      "status": "PROPOSTA_NAO_NARRADA"
+    },
+    {
+      "floor": 15,
+      "gross_m2": 1050,
+      "name": "Cinema e Museu das Besteiras",
+      "role": "Jogos, música, experiências absurdas, recordações das amizades, humor e gambiarras geniais.",
+      "rooms": [
+        "Cinema privado",
+        "Sala de jogos",
+        "Bar de guloseimas",
+        "Galeria das Besteiras",
+        "Sala de música",
+        "Ateliê de lembranças cômicas"
+      ],
+      "equipment": [
+        "Projetor audiovisual",
+        "Poltronas confortáveis",
+        "Mesa de jogos",
+        "Jukebox ou recriação similar",
+        "Máquina de pipoca",
+        "Fliperama clássico recriado",
+        "Miniaturas engraçadas de invenções",
+        "Painel de recordes amistosos",
+        "Som ambiente de privacidade",
+        "Luzes variáveis",
+        "Armário de jogos de tabuleiro",
+        "Biblioteca de piadas e recados"
+      ],
+      "robot_roles": [
+        "ACOLHEDORES",
+        "LIMPEZA"
+      ],
+      "access_class": "SOCIAL_CONVITE",
+      "story_hooks": [
+        "Lucas inaugura uma máquina que resolve problema inexistente",
+        "NÓX corrige humorosamente o placar dos jogos"
+      ],
+      "status": "PROPOSTA_NAO_NARRADA"
+    },
+    {
+      "floor": 16,
+      "gross_m2": 1000,
+      "name": "Ala de Hóspedes",
+      "role": "Quartos para visitas convidadas, apoio e sala de estar; nenhum aliado é automaticamente morador ou subordinado.",
+      "rooms": [
+        "Suítes de convidados",
+        "Salão de hospedagem",
+        "Lavanderia de apoio",
+        "Pequena biblioteca",
+        "Terraço de descanso",
+        "Acesso independente de hóspedes"
+      ],
+      "equipment": [
+        "Camas ajustáveis",
+        "Banheiros individuais",
+        "Cofres de uso voluntário",
+        "Armários e maleiros",
+        "Mesas de trabalho",
+        "Luminárias suaves",
+        "Chaleiras e copos",
+        "Sinalização de emergência",
+        "Intercomunicadores opt-in",
+        "Iluminação noturna",
+        "Assentos e futons"
+      ],
+      "robot_roles": [
+        "ACOLHEDORES",
+        "LIMPEZA",
+        "SAUDE"
+      ],
+      "access_class": "HOSPEDES_AUTORIZADOS",
+      "story_hooks": [
+        "Um hóspede deixa de ter medo da fama de Lucas",
+        "Visita diplomática é recepcionada sem acesso indevido à vida privada"
+      ],
+      "status": "PROPOSTA_NAO_NARRADA"
+    },
+    {
+      "floor": 17,
+      "gross_m2": 900,
+      "name": "Cozinha do Fim do Mundo e apoio",
+      "role": "Cozinha de produção, despensa e jantar familiar ligados por elevador/escada à cozinha aberta do Salão P18.",
+      "rooms": [
+        "Cozinha de apoio e preparo",
+        "Despensa fria e seca",
+        "Refeitório informal",
+        "Lavanderia social",
+        "Adega sem foco comercial",
+        "Acesso de serviço vertical ao P18"
+      ],
+      "equipment": [
+        "Fogões e fornos arcanos",
+        "Chapas e bancadas de preparo",
+        "Geladeiras e câmaras frias",
+        "Lavadora de louças",
+        "Panelas clássicas da Terra",
+        "Mesa familiar",
+        "Estantes de receitas",
+        "Trituradores de resíduos",
+        "Sensores de fumaça",
+        "Elevador de pratos",
+        "Armário de especiarias",
+        "Dispensador de água e café"
+      ],
+      "robot_roles": [
+        "ACOLHEDORES",
+        "LIMPEZA",
+        "LOGISTICA"
+      ],
+      "access_class": "SOCIAL_CONVITE",
+      "story_hooks": [
+        "Lucas ensina receita da Terra e erra a medida",
+        "Brannik exige porção maior enquanto NÓX acompanha o forno"
+      ],
+      "status": "PROPOSTA_NAO_NARRADA"
+    },
+    {
+      "floor": 18,
+      "gross_m2": 900,
+      "name": "Salão Suspenso do Criador e Cozinha Aberta",
+      "role": "Sala panorâmica, cozinha-show, mesa, bar, estar, música; saída ao deck panorâmico separado da zona aérea e ao corredor fechado de embarque.",
+      "rooms": [
+        "Salão panorâmico de pé-direito duplo",
+        "Cozinha aberta com ilha principal",
+        "Mesa de jantar para grandes grupos",
+        "Lounge de sofás",
+        "Canto de piano e música",
+        "Saída ao Deck do Horizonte",
+        "Vestíbulo aeronáutico protegido separado"
+      ],
+      "equipment": [
+        "Ilha de cozinha e fogão-show",
+        "Bancada de bar com assentos",
+        "Mesa de jantar modular",
+        "Sofás curvos",
+        "Lareira arcana segura",
+        "Piano ou instrumento equivalente",
+        "Fachada de vidro de privacidade variável",
+        "Cortinas de controle lumínico",
+        "Jardins internos",
+        "Iluminação cênica",
+        "Interfone opt-in de NÓX",
+        "Portas de compartimentação aérea",
+        "Sensores meteorológicos",
+        "Câmeras apenas de perímetro autorizado",
+        "Cesto de mantas e jogos"
+      ],
+      "robot_roles": [
+        "ACOLHEDORES",
+        "LIMPEZA",
+        "AVIACAO"
+      ],
+      "access_class": "SOCIAL_CONVITE",
+      "story_hooks": [
+        "ARGOS chega sob vistas assombradas só após prova de pouso",
+        "Lucas cozinha e NÓX o corrige sobre proporções de uma receita"
+      ],
+      "status": "PROPOSTA_NAO_NARRADA"
+    },
+    {
+      "floor": 19,
+      "gross_m2": 850,
+      "name": "Mezanino, Sala de Briefing e Mirante",
+      "role": "Mezanino com biblioteca, bar, jogos, lounge e observação protegida do ARGOS na aerodoca.",
+      "rooms": [
+        "Mezanino sobre o salão",
+        "Sala de briefing privado",
+        "Biblioteca leve",
+        "Bar e jogos",
+        "Mirante protegido da aerodoca",
+        "Sala de apresentações"
+      ],
+      "equipment": [
+        "Mesa 3D de missão com mapas rotulados",
+        "Sofás",
+        "Balcão elevado",
+        "Painel de rotas",
+        "Sistema de vídeo local",
+        "Óculos de inspeção",
+        "Mesa de jogos",
+        "Estante de livros",
+        "Passarela com guarda-corpos",
+        "Escadaria escultórica",
+        "Vidro de observação acústico",
+        "Botão de fechamento aéreo manual"
+      ],
+      "robot_roles": [
+        "ACOLHEDORES",
+        "CURADORES",
+        "AVIACAO"
+      ],
+      "access_class": "PRIVADA_AUTORIZADA",
+      "story_hooks": [
+        "Equipe planeja resgate com dados incompletos",
+        "Convidados descobrem que briefing termina em refeição e gargalhadas"
+      ],
+      "status": "PROPOSTA_NAO_NARRADA"
+    },
+    {
+      "floor": 20,
+      "gross_m2": 850,
+      "name": "Aposentos de Lucas",
+      "role": "Suíte, banho, escritório e terraço privado protegido dos fluxos aeronáuticos.",
+      "rooms": [
+        "Suíte de Lucas",
+        "Banheiro de imersão",
+        "Escritório particular",
+        "Vestiário e armaria pessoal guardada",
+        "Sala de repouso",
+        "Varanda privativa"
+      ],
+      "equipment": [
+        "Cama grande",
+        "Mesa de escrita e mapas",
+        "Armário de roupas",
+        "Espelho de privacidade",
+        "Cadeira de leitura",
+        "Banheira",
+        "Cofre para pertences",
+        "Fotos íntimas autorizadas",
+        "Cesto de livros",
+        "Iluminação de amanhecer",
+        "Acesso manual de emergência",
+        "Intercomunicador de NÓX com silêncio configurável"
+      ],
+      "robot_roles": [
+        "LIMPEZA",
+        "SAUDE"
+      ],
+      "access_class": "INTIMA",
+      "story_hooks": [
+        "Lucas admite receio em conversa íntima, sem se tornar fraco",
+        "NÓX sabe quando ficar silencioso, sob escolha de Lucas"
+      ],
+      "status": "PROPOSTA_NAO_NARRADA"
+    },
+    {
+      "floor": 21,
+      "gross_m2": 700,
+      "name": "Vida Compartilhada e Estúdio de Miren",
+      "role": "Estúdio e espaços reconfiguráveis somente por decisão de Miren, sem mudança obrigatória de moradia.",
+      "rooms": [
+        "Estúdio de Miren sujeito à escolha dela",
+        "Biblioteca particular",
+        "Sala de estudos",
+        "Quarto de convivência opcional",
+        "Jardim privativo",
+        "Espaço de reunião íntima"
+      ],
+      "equipment": [
+        "Escrivaninha regulável",
+        "Estantes fechadas",
+        "Mapas de pesquisa de propriedade autorizada",
+        "Jardim de sementes",
+        "Mesa para chá",
+        "Luminárias de leitura",
+        "Sofás",
+        "Painéis isoláveis",
+        "Sistema de privacidade próprio",
+        "Controle de acesso de Miren",
+        "Equipamentos científicos somente se ela aceitar",
+        "Janela sobre o céu"
+      ],
+      "robot_roles": [
+        "LIMPEZA",
+        "JARDINS"
+      ],
+      "access_class": "INTIMA_CONSENTIMENTO_MIREN",
+      "story_hooks": [
+        "Miren decide se e como participa do novo lar",
+        "Ela traz um objeto escolhido por vontade própria"
+      ],
+      "status": "PROPOSTA_NAO_NARRADA"
+    },
+    {
+      "floor": 22,
+      "gross_m2": 600,
+      "name": "Observatório do Horizonte",
+      "role": "Cúpula, céu, biblioteca íntima e vista; separado operacionalmente da aerodoca.",
+      "rooms": [
+        "Observatório de estrelas",
+        "Câmara de lentes",
+        "Terraço íntimo",
+        "Sala de silêncio",
+        "Biblioteca astronômica",
+        "Espaço para conversas noturnas"
+      ],
+      "equipment": [
+        "Telescópio de lentes arcanas",
+        "Atlas astral com dados verificados",
+        "Assentos reclináveis",
+        "Sofás baixos",
+        "Mantas",
+        "Luminárias indiretas",
+        "Mesa pequena de refeições",
+        "Painel de céu não onisciente",
+        "Instrumentos ópticos",
+        "Guarda-corpos transparentes",
+        "Controle do brilho da marca externa",
+        "Estação meteorológica local"
+      ],
+      "robot_roles": [
+        "MANUTENCAO",
+        "LIMPEZA"
+      ],
+      "access_class": "INTIMA",
+      "story_hooks": [
+        "Lucas contempla estrelas e lembra da Terra",
+        "Miren e Lucas observam uma descoberta sem afirmar de imediato sua origem"
+      ],
+      "status": "PROPOSTA_NAO_NARRADA"
+    }
+  ],
+  "basements": [
+    {
+      "level": "B01",
+      "name": "Garagem do Improvável",
+      "area_m2": 2300,
+      "rooms": [
+        "Garagem de automóveis da Terra recriados",
+        "Galeria das motos",
+        "Vaga modular ASA LIVRE-01 futura",
+        "Oficina de veículos",
+        "Doca de peças",
+        "Acesso técnico aéreo isolado"
+      ],
+      "equipment": [
+        "Vagas amplas",
+        "Elevadores de veículos leves",
+        "Bancadas e ferramental automotivo",
+        "Ponto de inspeção de rodas",
+        "Carregamento arcano condicionado",
+        "Portas corta-fumaça",
+        "Macacos de oficina",
+        "Lavador ecológico",
+        "Painéis de projeto",
+        "Exaustão separada",
+        "Trava manual de doca"
+      ],
+      "robot_roles": [
+        "LOGISTICA",
+        "MANUTENCAO",
+        "FABRICACAO"
+      ],
+      "privacy": "OFICINA_RESTRITA"
+    },
+    {
+      "level": "B02",
+      "name": "Central Técnica",
+      "area_m2": 1900,
+      "rooms": [
+        "Centrais energéticas",
+        "Água e filtragem",
+        "Circuitos automáticos",
+        "Armazenamento e backup",
+        "Sala de emergência",
+        "Manutenção de elevadores"
+      ],
+      "equipment": [
+        "Distribuição setorizada",
+        "Reservas de energia",
+        "Chaves manuais",
+        "Filtragem de água",
+        "Sensores de vazamento",
+        "Ventilação e exaustão",
+        "Painéis locais",
+        "Ferramentas de incêndio",
+        "Reserva de peças",
+        "Logs com controle de acesso",
+        "Rede offline determinística"
+      ],
+      "robot_roles": [
+        "MANUTENCAO",
+        "RESPOSTA"
+      ],
+      "privacy": "INFRAESTRUTURA_RESTRITA"
+    },
+    {
+      "level": "B03",
+      "name": "Ensaios Isolados",
+      "area_m2": 1800,
+      "rooms": [
+        "Câmara de testes de maior energia",
+        "Sala de preparação",
+        "Depósitos de matérias",
+        "Corredor de retirada",
+        "Ponto de observação protegido",
+        "Área de pós-ensaio"
+      ],
+      "equipment": [
+        "Barreiras de isolamento",
+        "Sensores de pressão e vibração",
+        "Câmeras de ensaio",
+        "Dispositivos de corte",
+        "Luzes de emergência",
+        "Exaustão reforçada",
+        "Suportes de material",
+        "Kit de contenção",
+        "Portas de egressos independentes",
+        "Medidores de ressonância local",
+        "Registro de protocolos"
+      ],
+      "robot_roles": [
+        "FABRICACAO",
+        "RESPOSTA",
+        "MANUTENCAO"
+      ],
+      "privacy": "ALTO_RISCO_RESTRITO"
+    }
+  ],
+  "narrative": {
+    "target": "Livro VI Capítulo 1 Parte V após escolha real da IV",
+    "mood": "Lucas faz a última grande criação pessoal do distrito, não retcon",
+    "first_scene_priority": [
+      "A ideia de um lar para si",
+      "Explosão de GÊNESE com torre e Marca",
+      "NÓX convidado a integrar-se, sem conversão em IA",
+      "Visita a três ambientes, não catálogo inteiro",
+      "Galeria e amigos com créditos e vida própria",
+      "Clímax no salão/observatório, futuro da Asa Livre como desejo"
+    ],
+    "flags": [
+      "Não narrar todos os 22 andares em 1 cena",
+      "Não declarar autômatos criados apenas porque foram planejados",
+      "Não canonizar imagens recriadas como registros reais",
+      "Não fazer Miren mudar por obrigação",
+      "Não forçar espião/ataque só para testar alarmes",
+      "Não tornar NÓX onisciente ou clone",
+      "Não transformar o conjunto em instalação de governo"
+    ]
+  },
+  "validation": {
+    "floors": 22,
+    "basements": 3,
+    "upper_m2": 25000,
+    "lower_m2": 6000,
+    "internal_m2": 31000,
+    "robots_proposed": 96,
+    "each_floor_min_rooms": 5,
+    "each_floor_min_items": 10
+  }
+}
