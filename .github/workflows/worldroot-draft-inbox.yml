@@ -7,7 +7,7 @@ on:
       - 'inbox/*.json'
 
 concurrency:
-  group: worldroot-story-draft-inbox
+  group: worldroot-story-write
   cancel-in-progress: false
 
 permissions:
@@ -117,6 +117,16 @@ jobs:
               if reader_file.exists() and reader_file.read_bytes() != receipt_bytes:
                   raise GateError("Reader release receipt is immutable and differs")
               reader_file.write_bytes(receipt_bytes)
+              import sys
+              sys.path.insert(0,str((root/"tools").resolve()))
+              from worldroot_memory_delta import draft_delta,resume
+              from worldroot_voice_audit import review as review_voice
+              incremental=draft_delta(root,pending[0].stem,write=True)
+              voice=review_voice(root,pending[0].stem,write=True)
+              state=resume(root,write=True)
+              print("SOURCE_ANCHORED_MEMORY:",incremental["episode_id"],incremental["events"])
+              print("LUCAS_VOICE_ADVISORY:",voice["status"],voice["current"]["lucas_dialogue_lines"])
+              print("RESUME_STATE_SNAPSHOT:",state["canon_head"]["episode_id"])
               print("Immutable draft archived and verified. Events:",receipt["events"],
                     "knowledge:",receipt["knowledge"],"Drive changed:",receipt["drive_changed"])
               # The literary assessment is ADVISORY, not a bureaucratic block.
@@ -164,15 +174,20 @@ jobs:
           set -euo pipefail
           git -C archive config user.name "github-actions[bot]"
           git -C archive config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git -C archive add -A -- episodes/ delivery/reader_receipts/ editorial/recovery/originals/
+          git -C archive add -A -- episodes/ delivery/reader_receipts/ editorial/recovery/originals/ memory/ editorial/audits/ ops/RESUME.json
           if git -C archive diff --cached --quiet; then
             echo 'No new archive bytes; idempotent recovery.'
             exit 0
           fi
           git -C archive commit -m "archive(worldroot): immutable private episode package and reviewed memory"
           auth_header="$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)"
+          expected_sha="$(git -C archive rev-parse HEAD)"
           git -C archive -c "http.extraheader=AUTHORIZATION: basic $auth_header" push origin HEAD:refs/heads/story-archive
           unset auth_header
+          git -C archive fetch -q origin refs/heads/story-archive:refs/remotes/origin/story-archive
+          actual_sha="$(git -C archive rev-parse refs/remotes/origin/story-archive)"
+          test "$actual_sha" = "$expected_sha"
+          echo "DRAFT_REMOTE_READBACK_SHA_VERIFIED: $actual_sha"
       - name: Explicitly report scope
         run: |
           echo 'Private GitHub narrative archived with literal SHA256 and semantic evidence.'
