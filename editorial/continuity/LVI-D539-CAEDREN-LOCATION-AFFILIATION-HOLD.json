@@ -1,0 +1,71 @@
+{
+  "schema": "worldroot-character-continuity-hold-v1",
+  "created_on": "2026-11-19",
+  "scope": "BOOK_VI_DRAFT_REPAIR_ONLY_NO_RETCON",
+  "person": "Caedren",
+  "status": "ANOMALIA_LVI_C01_PIII_D539_NAO_CANONIZAR_SEM_RECONCILIAR",
+  "problem": "Livro VI C01 Parte III (D539), section IV, introduced Caedren physically in Legiao yard as a subordinate officer under Varo, without an evidenced travel path or military affiliation.",
+  "historical_evidence": [
+    {
+      "path": "history/sources/03_DIA_431_A_457_FONTE_LITERAL.txt",
+      "approx_lines": [
+        13346,
+        13355
+      ],
+      "evidence_type": "EDITORIAL_SUMMARY_NOT_NEW_SCENE",
+      "claim": "Caedren and Althea located in Thalor during earlier period, personal/private relationship."
+    },
+    {
+      "path": "history/sources/05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "lines": [
+        22625,
+        22639
+      ],
+      "day": 492,
+      "evidence_type": "LITERAL_SCENE",
+      "claim": "Lucas says Queen recognized Caedren, the Hero of Seven Roads; Kael says he is free to choose his own life."
+    },
+    {
+      "path": "history/sources/05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "lines": [
+        22679,
+        22689
+      ],
+      "day": 492,
+      "evidence_type": "LITERAL_SCENE",
+      "exact_short_quote": "VARO — Sem obrigação militar decorrente da nossa amizade com Caedren.",
+      "claim": "No military obligation follows from Lucas/Varo friendship with Caedren."
+    },
+    {
+      "path": "episodes/LV-C15-PII-D529-AUTHOR-SOURCE/draft/narrativa_integral.md through episodes/LV-C16-PV-D537-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "range_days": [
+        529,
+        537
+      ],
+      "evidence_type": "NEGATIVE_SEARCH",
+      "claim": "No Caedren occurrence found in the nine last episode drafts inspected; this does NOT prove his current location."
+    }
+  ],
+  "verified_as_of": "Historical physical location cannot be projected to D539 without a narrated journey; absence from last nine episode texts also cannot prove he is still in Thalor.",
+  "flags": {
+    "affiliation_with_legion": "NOT_ESTABLISHED",
+    "subordinate_to_varo": "NOT_ESTABLISHED",
+    "physically_present_tres_arcos_D539": "NOT_VERIFIED",
+    "allowed_to_replace_varo_legion_command": "NOT_ESTABLISHED",
+    "hero_of_seven_roads": "HISTORICALLY_CONFIRMED_AS_KNOWN_BY_LUCAS_BY_D492",
+    "relationship_to_althea": "HISTORICAL_RECORD_THALOR_AS_OF_EARLIER_PERIOD"
+  },
+  "instructions": [
+    "Keep original D539 prose intact upon literal import, but attach this continuity discrepancy to review; do not silently edit retroactively.",
+    "Before any further Caedren scene, locate last *physical* canonical appearance using literal search, then verify travel, affiliation, membership, knowledge, and availability by day/time.",
+    "Caedren does not inherit, accept or hold a Legiao command by implication. Varo transition must not presume Caedren as subordinate.",
+    "Reconcile D539 discrepancy through explicit author-approved editorial decision or a valid causal explanation grounded in prior events; no fabricated journey.",
+    "Apply same preflight for Varo, Kael, Lysa, Miren, Astra, Maelis, Brannik, Naira, Rumo, and characters appearing in interludes."
+  ],
+  "blocking_releases": [
+    "LVI-C01-PIII-D539-AUTHOR-SOURCE"
+  ],
+  "consequence": "DO_NOT_CANONIZE_EPISODE_UNTIL_RECONCILED",
+  "editorial_severity": "CRITICAL_CHARACTER_CONTINUITY",
+  "novelty": "No new in-world event is asserted by this guard"
+}
