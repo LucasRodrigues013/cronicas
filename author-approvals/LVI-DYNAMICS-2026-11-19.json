@@ -1,0 +1,55 @@
+{
+  "schema": "worldroot-author-approval-v1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "date": "2026-11-19",
+  "scope": "APPROVED_EDITORIAL_GUIDANCE_AND_CONDITIONAL_STORY_SEEDS",
+  "decision": "Apply the dynamics and 10 story-seed ideas in upcoming Book VI chapters while maintaining five-part emotional crescendo, autonomous world, strong GENESE, permanent outcomes and real causal continuity.",
+  "policy": {
+    "branch": "main",
+    "path": "worldroot/editorial_policy.json",
+    "version": 14,
+    "range": "P71-P81"
+  },
+  "planning": {
+    "branch": "story-archive",
+    "path": "planning/book-vi/world-pulse-and-five-arcs-v1.json",
+    "chapter2": "planning/book-vi/c02-the-world-comes-for-the-creator-outline-v1.md"
+  },
+  "editorial_audit": {
+    "scores": [
+      5,
+      4,
+      5,
+      5,
+      5,
+      4,
+      5,
+      5,
+      4
+    ],
+    "total": 42,
+    "max": 45
+  },
+  "seed_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10"
+  ],
+  "forbidden": [
+    "Do not treat a seed as an already narrated event",
+    "Do not reopen or rewrite prior chapters",
+    "Do not promote C01 PIV D540 draft without author choice",
+    "Do not erase losses or nerf GENESE",
+    "Do not auto-generate chapters or alter canon from planning"
+  ],
+  "actual_narrative_authorization": false,
+  "canon_write_approval": false,
+  "storage": "PRIVATE_GITHUB_ONLY"
+}
