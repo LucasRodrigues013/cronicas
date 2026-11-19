@@ -46,11 +46,17 @@ class BookOpeningTests(unittest.TestCase):
         self.assertFalse(grant["choice_recorded"])
         _chronology(END,BEGIN,book_open_approval_verified=True)
     def test_new_explicit_user_20261119_phrase_is_accepted_without_reinventing_quote(self):
-        self.approval["author_quote"] = (
-            "WORLDROOT — INICIAR LIVRO VI\\n"
-            "CRÔNICAS DE UM NOVO MUNDO\\n"
-            "ESTA É MINHA NOVA AUTORIZAÇÃO EXPLÍCITA PARA INICIAR A HISTÓRIA."
-        ).replace("\\\\n", "\\n")
+        self.approval["author_quote"] = """WORLDROOT — INICIAR LIVRO VI
+
+CRÔNICAS DE UM NOVO MUNDO
+
+A ERA DAS NOVE COROAS
+
+LIVRO VI — AS COROAS PARTIDAS
+
+MODO PROFUNDO + AUDITORIA MÁXIMA
+
+ESTA É MINHA NOVA AUTORIZAÇÃO EXPLÍCITA PARA INICIAR A HISTÓRIA."""
         self.save()
         grant = require_book_open_approval(self.root, END, BEGIN)
         self.assertEqual(grant["status"], "AUTHOR_APPROVED_BOOK_VI_DRAFT_ONLY")
