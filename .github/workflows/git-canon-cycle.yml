@@ -138,8 +138,8 @@ jobs:
           auth_header="$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)"
           expected_sha="$(git -C archive rev-parse HEAD)"
           git -C archive -c "http.extraheader=AUTHORIZATION: basic $auth_header" push origin HEAD:refs/heads/story-archive
+          git -C archive -c "http.extraheader=AUTHORIZATION: basic $auth_header" fetch -q origin refs/heads/story-archive:refs/remotes/origin/story-archive
           unset auth_header
-          git -C archive fetch -q origin refs/heads/story-archive:refs/remotes/origin/story-archive
           actual_sha="$(git -C archive rev-parse refs/remotes/origin/story-archive)"
           test "$actual_sha" = "$expected_sha"
           echo "CANON_REMOTE_READBACK_SHA_VERIFIED: $actual_sha"
