@@ -1,0 +1,38 @@
+{
+  "schema": "worldroot-chronology-blocker-audit-v1",
+  "episode_id": "LVI-C02-PV-D546-D548-AUTHOR-SOURCE",
+  "status": "ARCHIVE_REJECTED_PRESERVED_FOR_AUTHORIAL_REVIEW",
+  "attempted_run_id": 44800179026,
+  "failed_gate": "worldroot.git_cycle._chronology",
+  "literal_error": "Livro VI narrates one calendar day at a time; multi-day jump rejected",
+  "active_policy": "main:worldroot/editorial_policy.json v14 / Livro VI dia civil por Parte",
+  "head_unchanged": {
+    "episode_id": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+    "day": 545,
+    "sequence": 18
+  },
+  "unified_production_path": "production/LVI-C02-PV-D546-D548-AUTHOR-SOURCE/narrativa_integral_PENDENTE_REVISAO_CRONOLOGICA.md",
+  "unified_source_sha256": "e9285c4376f1ab7d1928e3b9de07ec6aaccf381238e3eec098462945f522d2cf",
+  "verified_readback_exact": true,
+  "scene_count": 27,
+  "days_narrated": [
+    546,
+    547,
+    548
+  ],
+  "prose_words_approx": 16590,
+  "not_canon": true,
+  "not_released_as_immutable_draft": true,
+  "recovery_options": [
+    "Rework new episode to obey the existing single-day-per-part rule, preserving prior canonical text and narrating later days only after valid new author choices.",
+    "Obtain the author's explicit approval of a carefully reviewed exception permitting an individual Livro VI part to span contiguous fully narrated days, with tests and audit before rerunning archive."
+  ],
+  "unmodified_sources": [
+    "production/LVI-C02-PV-D546-D548-AUTHOR-SOURCE/segments/01.md",
+    "production/LVI-C02-PV-D546-D548-AUTHOR-SOURCE/segments/02.md",
+    "production/LVI-C02-PV-D546-D548-AUTHOR-SOURCE/segments/03.md",
+    "production/LVI-C02-PV-D546-D548-AUTHOR-SOURCE/segments/04.md",
+    "production/LVI-C02-PV-D546-D548-AUTHOR-SOURCE/segments/05.md"
+  ],
+  "governance": "No editorial policy or engine behavior was modified without approval; only failed transient inbox will be removed after preserving literal manuscript."
+}
