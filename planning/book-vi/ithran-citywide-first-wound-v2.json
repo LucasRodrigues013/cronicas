@@ -1,0 +1,415 @@
+{
+  "schema": "worldroot-bookvi-intrigue-operation-v2",
+  "scope": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "status": "AUTHOR_APPROVED_PRECANON_DRAMATIC_DIRECTION_NOT_SCENE",
+  "approved_direction": "Ithran and a team act as true high-level adversaries. If their coordinated assault reaches activation, several sectors of Três Arcos experience a complex CIVIL crisis; irrespective of whether Lucas/Varo defeats, captures or kills Ithran, the city's sense of invulnerability is visibly damaged. GÊNESE can restore material works rapidly but cannot command fear, trust, grief or civic choices. Other outcomes, extent, casualties, and antagonist fate remain open.",
+  "not_yet_narrated": true,
+  "requires": [
+    "Livro V encerrado por escolha real antes de abrir Livro VI",
+    "Deslocamento físico e informações prévias comprovadas",
+    "Presença de Tharvek/Elyrien em Três Arcos e entrada em AERÚN justificadas, sob jurisdição de Miren",
+    "Varo e Sombras com localização/tempo/autoridade verificáveis",
+    "Acesso à área escolhida de AERÚN autorizado ou violação detectável e custosa",
+    "Nenhuma conclusão de combate forçada pela direção de produção"
+  ],
+  "setting": {
+    "location": "AERÚN; preferir salão autorizado de recepção, galeria de documentação ou encontro acadêmico com Miren/Astra, NÃO laboratórios protegidos ou coração S−4 sem evento de violação próprio",
+    "city": "Três Arcos",
+    "campus_known": "72 ha, diretora-geral Miren, vice Astra; conselho e operação independentes",
+    "timeline": "NÃO FIXAR DIA/HORA até decisões de Livro V e rotas dos emissários",
+    "day_arc": "Uma operação pode durar mais de um dia em etapas com deslocamentos, alertas e reações; ataque principal pode ocupar uma parte longa sem cortar para todos os órgãos da cidade."
+  },
+  "objective": {
+    "primary": "Confrontar e tentar tomar custódia ou documentos vinculados a Tharvek e Elyrien, impedindo cooperação anã-élfica com Três Arcos",
+    "secondary": "Obter prova política para enquadrar a Cidade Livre como protetora de pessoas reivindicadas pelo Dominato; recuperar evidência arcana útil a Serakh",
+    "collateral": "Pressionar acordos e compromissos de defesa em Thalor/Vélath; não destruir AERÚN como objetivo básico",
+    "failure": "Mesmo preso/derrotado, a cadeia de comando superior pode receber notícia por sobreviventes ou mensageiros identificáveis, não por telepatia infinita"
+  },
+  "chain_of_command": [
+    {
+      "role": "MANDANTE_ESTRATEGICO",
+      "character": "Velkar Draen",
+      "knowledge": "Relatórios imperfeitos sobre rotas e resistências; não conhece campus, Sombras ou GÊNESE em detalhe sem evidência",
+      "order": "Impedir alianças e dependência logística do continente fora do Dominato"
+    },
+    {
+      "role": "GENERAL_COMANDANTE_ARCANO",
+      "character": "Serakh",
+      "knowledge": "Relatos históricos e interceptações limitadas, não comprovados antecipadamente",
+      "order": "Montar operação contra emissários, selecionar Ithran, recursos e limites"
+    },
+    {
+      "role": "SUBGENERAL_TATICO",
+      "character": "Ithran",
+      "knowledge": "Alvos identificados por fontes adquiridas em cena; não conhece localização exata ou acesso a AERÚN sem reconhecimento",
+      "order": "Executar abordagem, obter custódia ou interromper reunião; pode negociar, infiltrar, investir, fugir ou falhar"
+    },
+    {
+      "role": "EQUIPE_LOCAL_PROPOSTA",
+      "characters": [
+        "Selen Korr",
+        "Brum Vass",
+        "Ilvar Reth"
+      ],
+      "knowledge": "Informação compartimentada; cada um conhece só sua função",
+      "order": "Ancoragem ritual local, segurança/contensão e reconhecimento documental/diplomático"
+    }
+  ],
+  "shadow_constraints": {
+    "history": "D178 seis cidadãos conscientes e independentes; D497 proposta de funções públicas; núcleo reservado somente aos seis, Lucas, Varo e Kael na formação",
+    "limits": [
+      "Sem vigilância perfeita, leitura mental automática ou malha de alerta global presumida",
+      "Nenhuma decisão de alto impacto sem instituições competentes e, quando aplicável, consenso Lucas+Varo+Kael",
+      "AERÚN sob comando científico/administrativo de Miren e Astra, não da Legião",
+      "Sombras observam indícios objetivos com atrasos e falsos positivos; indícios não implicam identidade instantânea de Ithran"
+    ],
+    "members": [
+      {
+        "id": "darien",
+        "name": "Dárien Sol",
+        "role": "Proteção, acolhimento e segurança pessoal; Pilares de Socorro",
+        "potential_signal": "Pessoas assustadas ou escoltas com comportamento incompatível com pedido humanitário",
+        "decision": "Ativar proteção dos visitantes e oferecer rota segura; não agir como guarda-costas mágico onipresente"
+      },
+      {
+        "id": "nixa",
+        "name": "Nixa Vel",
+        "role": "Investigação institucional e avaliação de ameaças; Mesa dos Padrões",
+        "potential_signal": "Inconsistência de versões de um relato que pode ter explicação inocente",
+        "decision": "Checar depoimentos/documentos com autorização e propor alerta qualificado"
+      },
+      {
+        "id": "severo",
+        "name": "Sévero Lyn",
+        "role": "Auditoria documental e integridade; Dupla Escritura",
+        "potential_signal": "Divergência verificável em atribuição de mandato, origem de declaração ou cadeia de custódia",
+        "decision": "Preservar registro e alertar autoridade; não garantir detecção infalível"
+      },
+      {
+        "id": "iria",
+        "name": "Íria Nemar",
+        "role": "Magia e análise arcana; Pedras de Ensaio",
+        "potential_signal": "Traço de geometria dos Limiares que não corresponde a um serviço conhecido, sujeito a interferências",
+        "decision": "Testar hipótese e avisar Miren/Astra e Varo sem declarar autor só pela magia"
+      },
+      {
+        "id": "rael",
+        "name": "Rael Fenn",
+        "role": "Cartografia, reconhecimento e terreno; Cartografia das Passagens",
+        "potential_signal": "Rota declarada não confere com desgaste de viagem, mapas e tempos conhecidos",
+        "decision": "Verificar trajetos reais, lacunas e possíveis entradas alternativas"
+      },
+      {
+        "id": "teria",
+        "name": "Téria Solen",
+        "role": "Coordenação e proteção contra concentração de poder; Mesa do Pulso Urbano",
+        "potential_signal": "Múltiplos sinais independentes, afetando saúde, circulação e serviços",
+        "decision": "Articular aviso e autorização proporcional; preservar direitos e evitar pânico público"
+      }
+    ]
+  },
+  "operation_stages": [
+    {
+      "id": "S00",
+      "title": "Ordem distante",
+      "place": "Dominato; gabinete/teatro externo a decidir",
+      "view": "Leitor, raro; Lucas não recebe acesso",
+      "prerequisites": [
+        "Comando de Velkar/Serakh com evidência temporal de recebimento de notícias"
+      ],
+      "event": "Velkar define objetivo estratégico, Serakh decide método e designa Ithran; uma fala humana revela interesses e limites",
+      "clue": "Registro de perdas de rotas comerciais; NÃO comprovar Velkar=Aethron",
+      "exit": "Missão preparada"
+    },
+    {
+      "id": "S01",
+      "title": "Rastro dos emissários",
+      "place": "Travessia anã/élfica/caminhos comerciais a estabelecer",
+      "view": "Tharvek/Elyrien ou leitor, separadamente",
+      "prerequisites": [
+        "Emissários saem de origem real com mapas, escoltas, feridas, permissões e jornada narradas"
+      ],
+      "event": "A dupla protege evidências diferentes, não é unida por conveniência, enfrenta escolha de caminho e deixa informação parcial acessível a terceiros",
+      "clue": "Marca em documento ou testemunho que pode ser correlacionado depois",
+      "exit": "Ithran pode iniciar busca; localização apenas aproximada"
+    },
+    {
+      "id": "S02",
+      "title": "Entrada na cidade aberta",
+      "place": "Portal dos Povos e vias civis com controles já demonstrados",
+      "view": "Ithran ou Nixa/Rael",
+      "prerequisites": [
+        "Viagem física possível; equipe possui cobertura plausível; inspeções civis da cidade respeitadas"
+      ],
+      "event": "A equipe utiliza o caráter acolhedor da Cidade Livre para buscar informação e acesso público; nenhuma falsificação perfeita ou 'hack' universal. Indícios começam a surgir mas também podem ser falsos positivos.",
+      "clue": "Inconsistência documental observável, coincidência de rota, assinatura ritual ou interesse incomum na dupla",
+      "exit": "Alvos podem não estar localizados; alguns membros podem ser questionados ou detidos"
+    },
+    {
+      "id": "S03",
+      "title": "Rede de proteção reage",
+      "place": "Três Arcos, pontos públicos e escritório autorizado",
+      "view": "Sombras + Varo",
+      "prerequisites": [
+        "Pelo menos um indício adquirido; localização física dos atores verificada"
+      ],
+      "event": "Nixa/Sévero/Íria/Rael produzem evidências parciais distintas; Téria coordena sem violar direitos; Dárien reforça cuidado. Varo recebe um aviso qualificado enquanto está em alcance real; decide posicionar equipe ou permanecer em outra frente segundo riscos.",
+      "clue": "Três Arcos percebe uma ameaça sem conhecer toda a verdade; alertas não são 100% corretos",
+      "exit": "Podem suspeitar cedo, tarde, identificar cúmplice ou responder a isca errada"
+    },
+    {
+      "id": "S04",
+      "title": "Audiência em AERÚN",
+      "place": "Espaço de recepção/acadêmico de AERÚN cuja disponibilidade é definida por Miren",
+      "view": "Lucas, Miren, Tharvek, Elyrien, Ithran conforme escolhido",
+      "prerequisites": [
+        "Tharvek/Elyrien consentem ou são autorizados em AERÚN; segurança institucional independente; Ithran encontra pista factual sobre encontro"
+      ],
+      "event": "Tharvek prefere ação imediata; Elyrien se distrai com um detalhe de pesquisa e percebe padrão útil; a negociação tem vozes próprias e humor. Ithran pode aparecer como reivindicante exterior ou por abertura pública, apresentando exigência imperial contestável.",
+      "clue": "A disputa jurídica é arma, não prova de soberania do Dominato",
+      "exit": "Escalada ou diálogo pode ocorrer dependendo de Varo, Miren e decisão autoral de Lucas"
+    },
+    {
+      "id": "S05",
+      "title": "O golpe indiferente",
+      "place": "Local acessível de AERÚN já legitimado; destruição deve causar reação",
+      "view": "Lucas preferencialmente; primeiro choque pode ser de Tharvek/Elyrien/Varo",
+      "prerequisites": [
+        "Ithran presente por rota concreta; objetivo e círculo limitado preparados; guarda e visitantes com espaço de reação"
+      ],
+      "event": "Ithran demonstra desprezo aterrador por garantias e vidas, ordenando a intervenção de Selen/Brum/Ilvar; golpe visual de Geometria dos Limiares delimita área e ameaça duas pessoas, NÃO todo campus. Elyrien responde de maneira mortal/protetora; Tharvek protege civis e explode em fúria tática.",
+      "clue": "Um nome, insígnia ou expressão incompleta sugere hierarquia superior, não revela Velkar a Lucas",
+      "exit": "Batalha não tem resultado imposto; proteger civis, capturar adversários, lutar ou negociar são ações possíveis"
+    },
+    {
+      "id": "S06",
+      "title": "Varo escolhe o próprio risco",
+      "place": "Próximo à audiência conforme deslocamento comprovado",
+      "view": "Varo/Lucas",
+      "prerequisites": [
+        "Varo avisado com tempo ou convocado por um canal efetivamente existente; não teletransportar ou colocá-lo na sala por roteiro"
+      ],
+      "event": "Varo executa uma decisão independente: contenção, retirada de civis, duelo em espaço delimitado ou resgate dos Sombras. Sua chegada não apaga atos de Tharvek/Elyrien/Miren nem substitui decisão de Lucas.",
+      "clue": "Reconhece que o inimigo buscava dois alvos, não a cidade inteira",
+      "exit": "Varo pode ser ferido, vencer, recuar ou chegar após a primeira troca de golpes, conforme cronologia"
+    },
+    {
+      "id": "S07",
+      "title": "Custo e vida depois da luta",
+      "place": "AERÚN / Três Arcos / rotas de fuga",
+      "view": "Lucas e personagens participantes",
+      "prerequisites": [
+        "Resultado da escolha real e combate narrados"
+      ],
+      "event": "Feridos têm cuidados, edifício sofre danos que precisam ser reparados, trabalhadores e moradores reagem, Tharvek e Elyrien discutem o que revelar, Varo e Sombras investigam; humanos têm autonomia legal. Há tempo para medo, afeto, humor e decisões.",
+      "clue": "Prova parcial leva a Serakh ou a uma rede; nenhuma revelação integral de Velkar prematura",
+      "exit": "Resultado persistente abre próximo arco: captura/derrota, fuga, troca de reféns, negociação, missão de resgate ou outro caminho autoral"
+    },
+    {
+      "id": "S08",
+      "title": "A sombra do mandante",
+      "place": "Fora do alcance de Lucas",
+      "view": "Leitor em interlúdio curto, não obrigatório em toda parte",
+      "prerequisites": [
+        "Mensagem verificável chegou a Serakh/Velkar, ou reação estratégica sem conhecimento direto"
+      ],
+      "event": "Velkar é revelado gradualmente no comando, avaliando o sucesso ou fracasso de Ithran; o leitor percebe que há generais e uma máquina imperial, sem poder atribuir tudo que aconteceu no passado a ele.",
+      "clue": "Uma frase ou decisão que será ecoada muito depois pela história",
+      "exit": "Próxima frente avança por recursos e tempo reais"
+    }
+  ],
+  "outcome_branches": [
+    {
+      "id": "EARLY_DETECTION",
+      "trigger": "Sombras/Varo identificam riscos antes da entrada na AERÚN",
+      "consequence": "Ataque pode falhar, converter-se em negociação/coerção externa ou perseguição nas vias públicas; Sombras recebem crédito e responsabilidades, não vilanizados como obstáculo dramático"
+    },
+    {
+      "id": "PARTIAL_DETECTION",
+      "trigger": "Sombras percebem quadro incompleto mas equipe chega a AERÚN",
+      "consequence": "Varo consegue posicionar-se próximo; parte do ataque surpreende mas existe resposta preparada; custo depende de escolha"
+    },
+    {
+      "id": "LATE_DETECTION",
+      "trigger": "Sinais ambíguos e restrições legítimas atrasam aviso",
+      "consequence": "Ithran alcança local acessível; alto impacto, sem impossibilitar reação dos dois emissários/Miren e demais guardiões"
+    },
+    {
+      "id": "ITHRAN_CAPTURED_OR_KILLED",
+      "trigger": "Lucas/Varo/dupla vence o confronto em grau definitivo",
+      "consequence": "Vitória vale; não salvar Ithran por força de roteiro. Outros generais e redes reagem quando notícias chegarem"
+    },
+    {
+      "id": "ITHRAN_RETREATS",
+      "trigger": "Geometria falha ou adversários contra-atacam",
+      "consequence": "Retirada pela rota existente com danos/perdas reais, nenhum teleport universal; recuperação de material gera pistas"
+    },
+    {
+      "id": "DIPLOMATIC_RESOLUTION",
+      "trigger": "Lucas/Conselho conseguem impor negociação, prova ou rendição",
+      "consequence": "Não forçar luta; torna a tentativa de ataque uma demonstração de tensão e vulnerabilidade política da causa imperial"
+    }
+  ],
+  "red_lines": [
+    "No forced Tharvek/Elyrien capture, murder, humiliation or rescue by Lucas",
+    "No instant knowledge of protected AERÚN floor plan, S−4 or Shadows identity",
+    "No unauthorized control of Miren's campus by Varo",
+    "No forced NPC allegiance to Lucas or crown status",
+    "No guaranteed assassination or permanent invulnerability of Ithran",
+    "No malicious automatic defenses or infallible surveillance",
+    "Even if all Sombras perform well, plausible choices and stakes remain",
+    "Neither the 6 founding Sombras nor anyone else gets erased from history",
+    "No rewriting prior defeated Tecelã or identifying Aethron as Velkar without evidence",
+    "Book VI must not start before Book V closes by authorial choice",
+    "NÃO criar ataque ou mortes fora de cena apenas para garantir derrota da cidade",
+    "NÃO impor falha de segurança total, paralisia da Malha, incompetência dos Sombras ou ausência conveniente de Lucas",
+    "NÃO reduzir, anular ou cobrar mana de GÊNESE para impedir reparação física",
+    "NÃO determinar emoções uniformes, perda automática de confiança de todos ou impossibilidade de recuperação",
+    "NÃO ligar Corven Dall ao Dominato sem evidência canônica",
+    "NÃO oferecer instruções detalhadas de sabotagem real de infraestrutura civil"
+  ],
+  "version": 2,
+  "based_on": "planning/book-vi/ithran-operation-v1.json",
+  "snapshot_at_edit": {
+    "book": "Livro VI",
+    "chapter": 2,
+    "part": "I",
+    "day": 542,
+    "hour": "21h08",
+    "last_canon_episode": "LVI-C02-PI-D542-AUTHOR-SOURCE",
+    "head_sequence": 15
+  },
+  "author_source": "USER_MESSAGE 2026-11-20: operação da equipe do subgeneral causando grave crise multissetorial; cidade sofre derrota simbólica como comunidade apesar de possível vitória de Lucas; medo social não é apagado por GÊNESE.",
+  "theme": {
+    "name": "A PRIMEIRA FERIDA DE TRÊS ARCOS",
+    "premise": "Uma cidade que parecia poder reconstruir tudo descobre que confiança é construída por gente livre, não manifestada por magia.",
+    "contrast": "Vitória TÁTICA de heróis contra Ithran pode coexistir com FERIDA CÍVICA de população, instituições e pactos.",
+    "non_railroad_boundary": "Se o plano inteiro for impedido antes de qualquer incidente, NÃO fabricar explosões, mortes ou falha de defesa: ameaça descoberta pode desencadear debate e perda proporcional de confiança. O peso da ferida aumenta somente com fatos narrados.",
+    "operational_guarantee": "Uma vez que uma CRISE multissetorial de fato começar em cena, narrar seu impacto social e a recuperação não instantânea, sem depender da sobrevivência de Ithran."
+  },
+  "operation_intent": {
+    "primary": "Interromper a atuação política de Tharvek e Elyrien, cuja busca de cooperação ameaça planos imperiais.",
+    "secondary": "Demonstrar que a Cidade Livre ainda possui pessoas que podem ser assustadas, confundidas ou feridas, e que seu prestígio tecnológico não equivale a segurança emocional.",
+    "information_gate": "Ithran só amplia o objetivo depois de obter dados reais sobre a cidade, rotas, instituições e o valor simbólico da tecnologia; ordem remota de Serakh/Velkar exige meio e tempo reais.",
+    "integrity": "Não atribuir a Corven Dall filiação imperial ou papel cúmplice: ele é investigador com contratante não identificado no cânone atual."
+  },
+  "multi_sector_crisis": {
+    "description": "Frentes simultâneas de tensão EM FICÇÃO, focadas em percepção/efeito e resposta dos personagens; não prescrever mecanismos reais de sabotagem.",
+    "sectors": [
+      {
+        "area": "BAIRROS, MERCADOS E RUAS",
+        "narrative_effect": "Multidões divididas entre abrigo, busca de familiares e ajuda; perda temporária da tranquilidade nas rotinas. Comerciantes e moradores têm nomes, decisões e dignidade.",
+        "first_responder": "Guarda Civil, Dárien e redes comunitárias",
+        "guard": "Não produzir pânico homogêneo ou massacre garantido."
+      },
+      {
+        "area": "MOBILIDADE E ACESSO",
+        "narrative_effect": "Desorganização localizada de deslocamentos e desencontro de famílias ou socorristas, com rotas alternativas e apoio; tecnologia pode manter partes operantes.",
+        "first_responder": "Kael, transporte, Vértice e Malha Aurora",
+        "guard": "Não desativar automaticamente os 3.600 autômatos nem assumir rede inteira vulnerável."
+      },
+      {
+        "area": "COMUNICAÇÃO E CONFIANÇA PÚBLICA",
+        "narrative_effect": "Relatos parciais e boatos competem com mensagens verificadas; moradores questionam se os avisos bastam.",
+        "first_responder": "Téria, Sévero e serviços cívicos",
+        "guard": "Não inventar controle total da Costura de Dados ou propagação instantânea a outros continentes."
+      },
+      {
+        "area": "ACOLHIMENTO, SAÚDE E FAMÍLIAS",
+        "narrative_effect": "Atendimento a feridos ou pessoas em choque SE a crise de fato produzi-los; abrigos, voluntários e profissionais fazem escolhas.",
+        "first_responder": "Defesa Civil, profissionais de saúde, Lysa e Dárien",
+        "guard": "Não fixar vítimas fatais, mutilações ou número de feridos por meta de roteiro."
+      },
+      {
+        "area": "AERÚN E OS REPRESENTANTES",
+        "narrative_effect": "Possível confronto direto no setor PÚBLICO/autorizado de AERÚN, com Miren/Astra e a dupla reagindo; pesquisa sensível segue protegida salvo violação específica com preço.",
+        "first_responder": "Miren, Astra, Elyrien, Tharvek, proteção institucional e Varo em deslocamento comprovado",
+        "guard": "Não transformar ameaça em acesso automático ao S-4, ao Coração ou à identidade dos Sombras."
+      }
+    ],
+    "scope_guard": "Usar 2–4 frentes realmente dramatizadas, não necessariamente cinco falhas enormes; efeitos surgem apenas quando as ações foram realizadas e enfrentam defesa real.",
+    "attacker_roles": "Ithran dirige a crise por objetivos e comunicação plausíveis; integrantes confirmados e novos nomes apenas PROPOSTOS executam tarefas ficcionais em um ou mais locais e podem ser interceptados, dividir-se, desertar ou perder; NÃO detalhar métodos reais de sabotagem.",
+    "timing": "Preparação gradual durante capítulos, chegada física de emissários, reconhecimento por fontes verificáveis, escolhas de defesa e escalada. Ataque pode ocupar várias Partes/um dia vivido sem montagem de relatórios."
+  },
+  "city_responses": {
+    "Lucas": "Pode usar GÊNESE plena para deter ameaça, salvar vidas e reconstruir instantaneamente; não decide que todos voltam a confiar.",
+    "Varo": "Legião/proteção territorial competente, toma decisões com informações e tempo; pode derrotar Ithran sem descredibilizar capacidade da cidade.",
+    "Seis Sombras": "Dárien, Nixa, Sévero, Íria, Rael, Téria detectam, verificam e organizam respostas independentes, podendo impedir parte da crise; nenhum está onisciente.",
+    "Miren e Astra": "Respondem à ameaça em AERÚN conforme competência, protegem pessoas e pesquisa; não são subordinadas à Legião.",
+    "Kael": "Coordena resposta pública, deslocamento, reparos e representação da comunidade, sem transformar cidade em tirania.",
+    "Lysa": "Acolhimento, reservas, comunicação econômica e atendimento às pessoas em coordenação civil; não virar tesoureira apenas calculando perdas.",
+    "Vértice e Malha Aurora": "Continuam 3.600 autômatos e coordenação técnica já existentes; podem funcionar bem em muitas frentes ou sofrer interrupção LOCAL demonstrada, jamais desligamento global por roteiro.",
+    "Tharvek e Elyrien": "Podem enfrentar ameaças, proteger pessoas ou rejeitar ser usados como desculpa para sacrificar moradores; não precisam ser resgatados obrigatoriamente.",
+    "Moradores": "Protagonistas cívicos, com múltiplas reações: pavor, coragem, solidariedade, indignação, cuidado, demandas por informação e críticas legítimas."
+  },
+  "consequence_ladder": [
+    {
+      "id": "CRISIS_PREVENTED",
+      "condition": "Todos os atos danosos realmente interceptados antes da primeira ocorrência",
+      "allowed": "Pode haver apreensão pública se houver evidência/boato verificável, mas não declarar trauma coletivo universal, mortes ou danos."
+    },
+    {
+      "id": "LIMITED_SHOCK",
+      "condition": "Uma frente atinge pessoas antes de contenção",
+      "allowed": "Medo localizado, rotinas interrompidas, debate público; heróis e Sombras têm sucesso real e perdas minimizadas."
+    },
+    {
+      "id": "MULTISECTOR_WOUND",
+      "condition": "Duas ou mais frentes geram efeitos públicos documentados",
+      "allowed": "Marco do Livro VI: sentimento de segurança coletiva rompido, apesar de vitória tática; reconstrução física pode ser imediata; confiança depende de tempo, relações e escolhas."
+    },
+    {
+      "id": "SEVERE_CITY_CRISIS",
+      "condition": "Várias frentes têm efeitos confirmados por decisões e acontecimentos",
+      "allowed": "Danos amplos, serviços tensionados, famílias afetadas, críticas e reforma de instituições; não decidir mortes/destino dos emisários ou inimigos antecipadamente."
+    }
+  ],
+  "aftermath_arcs": [
+    {
+      "beat": "PRIMEIRAS HORAS",
+      "scene": "Resgate, reencontros, famílias e decisões de líderes com competência; Lucas não pode estar em todos os lugares sem ação explícita."
+    },
+    {
+      "beat": "PRIMEIRA NOITE",
+      "scene": "Rua reconstruída e ainda assim gente relutante em atravessá-la; histórias de comerciantes, crianças e legionários, sem sentimentalismo coercitivo."
+    },
+    {
+      "beat": "PRIMEIROS DIAS",
+      "scene": "Conselho civil ouve moradores, Miren/AERÚN cuida de sua comunidade, Varo/Seis Sombras revisam provas e falhas reais; condenações dependem de responsabilidade."
+    },
+    {
+      "beat": "SEMANAS E NOVOS CAPÍTULOS",
+      "scene": "Confiança reconstruída por serviços transparentes e relações, não por um feitiço; o orgulho cívico não desaparece, amadurece."
+    },
+    {
+      "beat": "RESPOSTA CONTINENTAL",
+      "scene": "Tharvek/Elyrien e possíveis aliados reagem com escolhas e mandatos reais; Velkar/Serakh só ficam sabendo por meios e atrasos reais."
+    }
+  ],
+  "emotional_cost": {
+    "fixed_if_crisis_started": "O lugar que parecia imune à calamidade perde sua aura de segurança garantida; se verá na vida cotidiana.",
+    "not_fixed": [
+      "Total de pessoas feridas ou mortas",
+      "Captura/morte/fuga de Ithran",
+      "Destino de Tharvek ou Elyrien",
+      "Escala das interrupções",
+      "Resposta política de Kael e Lysa",
+      "Reação pessoal de Lucas",
+      "Resultado de investigação"
+    ],
+    "examples_of_human_truth": [
+      "Lucas refaz a fachada de um mercado e descobre que a dona hesita em abrir as portas.",
+      "Uma criança pergunta se as luzes bonitas conseguem mesmo protegê-la; adultos não prometem o impossível.",
+      "A Guarda e Sombras são reconhecidos por terem impedido tragédias maiores, enquanto moradores ainda reclamam legitimamente.",
+      "Miren considera que recuperar um instrumento não restaura a confiança de uma jovem pesquisadora que testemunhou a crise."
+    ],
+    "no_forced_psychology": "Nenhum personagem precisa ficar traumatizado por imposição, e nenhuma cidade inteira sente a mesma coisa. Diferenciar moradores por experiências reais."
+  },
+  "story_integration": {
+    "trigger": "Somente quando Tharvek/Elyrien forem identificados e puderem realmente chegar à cidade por deslocamentos demonstrados, Ithran tiver informação e meios, e as Partes anteriores tiverem produzido acontecimentos necessários.",
+    "chapter_map": "Sugerir um arco maior de chegada > ameaça > primeiro choque > resposta e contraofensiva > primeira noite > reconstrução civil; não fixar número de capítulo nem data.",
+    "previous_state": "Livro VI C02 Parte I D542 já canônico; Corven Dall observou a GÊNESE e ainda não fez relatório ao contratante, Tharvek e Elyrien permanecem fisicamente longe; não converter automaticamente Corven em agente do Dominato.",
+    "book_vi_impact": "Transformar a necessidade de confiança/coalizão/defesa civil em proposta vivida, não usar crise como licença para militarização automática, xenofobia ou fechamento permanente dos portões.",
+    "no_premature_canon": "Plano não altera HEAD, CONTEXT ou episódios; cabe ao motor futuro seguir a escolha do autor e persistir somente ações narradas."
+  }
+}
