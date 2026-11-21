@@ -27,7 +27,7 @@ jobs:
       - name: Checkout audited SHA-bound r14 chronology exception engine at immutable commit
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: e62dc537ee7d73208de10b2ca1e969961a5a16b4
+          ref: dfb4b3a700a7d01604b2f0bb701829a452f79a74
           path: engine
           persist-credentials: false
       - name: Setup Python
@@ -52,7 +52,7 @@ jobs:
       - name: Checkout audited SHA-bound r14 chronology exception engine (never execute archive code)
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: e62dc537ee7d73208de10b2ca1e969961a5a16b4
+          ref: dfb4b3a700a7d01604b2f0bb701829a452f79a74
           path: engine
           persist-credentials: false
       - name: Checkout latest private data branch
