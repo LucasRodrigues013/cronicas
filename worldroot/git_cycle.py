@@ -406,6 +406,58 @@ def review_deltas(root: Path, episode_id: str, draft: EpisodeDraft) -> tuple[lis
     return events, kn
 
 
+
+# Author-ratified one-off preservation of the exact 27-scene Chapter 2 finale.
+# Approval: story-archive/author-approvals/
+# LVI-C02-PV-EXCECAO-CRONOLOGICA-PONTUAL-2026-11-20.json
+# The standard Livro VI one-day-per-part gate remains unchanged for every other
+# prose file and every other chronology transition. Do not generalize this branch.
+_C02_PV_MULTIDAY_APPROVED_PROSE_SHA256 = (
+    "893adea655b3bf6acd946655642ba6bb143c2b1c35aece8fcae359b2793f63ef"
+)
+
+
+def _is_exact_author_approved_c02_pv_exception(previous: dict, meta: dict,
+                                                 prose: str | None) -> bool:
+    if (not isinstance(prose, str)
+            or previous.get("episode_id") != "LVI-C02-PIV-D545-AUTHOR-SOURCE"
+            or previous.get("sequence") != 18
+            or previous.get("day") != 545
+            or previous.get("part") != "IV"
+            or previous.get("chapter") != 2
+            or meta.get("book") != "Livro VI"
+            or meta.get("chapter") != 2
+            or meta.get("part") != "V"
+            or meta.get("day") != 548
+            or meta.get("hour") != "22h31"):
+        return False
+    if sha(prose.encode("utf-8")) != _C02_PV_MULTIDAY_APPROVED_PROSE_SHA256:
+        return False
+    from .day_arc_audit import inspect_day_arc
+    arc = inspect_day_arc(prose)
+    if (arc["days_touched"] != [546, 547, 548]
+            or arc["first"] != {"day": 546, "hour": "06h07"}
+            or arc["last"] != {"day": 548, "hour": "22h31"}
+            or arc["scene_clock_count"] != 27):
+        raise GateError("Author-approved C02 PV source has changed its 27-scene clock contract")
+    clocks = re.findall(
+        r"(?m)^##\s+([IVX]+)\s+—\s+[^\n]+\n\n\*\*DIA\s+(\d{3})\s+·\s+(\d{2}h\d{2})",
+        prose,
+    )
+    if len(clocks) != 27:
+        raise GateError("Author-approved C02 PV literal scene anchors incomplete")
+    minutes = [int(day) * 1440 + int(hour[:2]) * 60 + int(hour[3:])
+               for _, day, hour in clocks]
+    rewinds = [i for i in range(1, len(minutes))
+               if minutes[i] < minutes[i - 1]]
+    if (rewinds != [6] or clocks[6] != ("VII", "546", "10h11")
+            or "## VII — A forja onde o ferro começou a mentir\n\n"
+               "**DIA 546 · 10h11 — REGIÃO ANÃ, VALE DOS OFÍCIOS BAIXOS**\n\n"
+               "Mais cedo," not in prose):
+        raise GateError("Unexpected chronology rewind in approved distant-POV scene")
+    return True
+
+
 def _chronology(previous: dict, meta: dict, *, prose: str | None = None,
                 book_open_approval_verified: bool = False):
     for key in ("day", "chapter", "part", "hour", "book", "location"):
@@ -426,7 +478,9 @@ def _chronology(previous: dict, meta: dict, *, prose: str | None = None,
         raise GateError("Book cannot change without prior closure and author approval")
     if meta["day"] < previous["day"]:
         raise GateError("Book/day transition not approved")
-    if meta["book"] == "Livro VI":
+    scoped_chronology_exception = _is_exact_author_approved_c02_pv_exception(
+        previous, meta, prose)
+    if meta["book"] == "Livro VI" and not scoped_chronology_exception:
         if meta["day"] > previous["day"] + 1:
             raise GateError("Livro VI narrates one calendar day at a time; multi-day jump rejected")
         if prose is not None:
@@ -434,7 +488,7 @@ def _chronology(previous: dict, meta: dict, *, prose: str | None = None,
             arc = inspect_day_arc(prose)
             if arc["days_touched"] != [meta["day"]]:
                 raise GateError("Livro VI part must contain only its current calendar day; no multiple days")
-    if meta["day"] > previous["day"] + 1:
+    if meta["day"] > previous["day"] + 1 and not scoped_chronology_exception:
         # r14.1: a part may LIVE several days, but must show EVERY day and
         # monotonically advance time. No date jump based on metadata alone.
         from .day_arc_audit import inspect_day_arc
