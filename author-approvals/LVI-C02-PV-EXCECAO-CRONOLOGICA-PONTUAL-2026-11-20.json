@@ -1,0 +1,40 @@
+{
+  "schema": "worldroot-author-scoped-chronology-ratification-v1",
+  "date": "2026-11-20",
+  "authorization": "USER_MESSAGE_CURRENT_TURN",
+  "author_instruction": "WORLDROOT, continuar a história. Regularize primeiro a pendência cronológica do Capítulo 2, preservando integralmente a narrativa aprovada. Em seguida, inicie o Livro VI, Capítulo 3, Parte I, seguindo o planejamento mais recente aprovado no GitHub, com todas as diretrizes de narrativa, personagens, batalhas, consequências e escolhas.",
+  "interpretation": "Autor ratificou expressamente a integralidade da Parte V do C02 D546-D548, autorizando regularização técnica única e auditada; preservar todos os 27 quadros e horas literais, sem reescrever cenas ou reduzir GÊNESE. Isto não altera a regra para outros episódios.",
+  "target": {
+    "episode_id": "LVI-C02-PV-D546-D548-AUTHOR-SOURCE",
+    "prior_head": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+    "prior_sequence": 18,
+    "chapter": 2,
+    "part": "V",
+    "days_narrated": [
+      546,
+      547,
+      548
+    ],
+    "last_day": 548,
+    "last_hour": "22h31",
+    "prose_sha256": "893adea655b3bf6acd946655642ba6bb143c2b1c35aece8fcae359b2793f63ef",
+    "full_text_sha256": "e9285c4376f1ab7d1928e3b9de07ec6aaccf381238e3eec098462945f522d2cf",
+    "scene_count": 27,
+    "editorial_clock_rewind": {
+      "after_scene": "VI",
+      "before_scene": "VII",
+      "scene_seven_literally_begins": "Mais cedo",
+      "scope": "separate dwarf POV same day, not backwards in local thread"
+    }
+  },
+  "guards": [
+    "Only exact prose hash and canon HEAD may use exception",
+    "All three days explicitly shown and no day omitted between 545 and 548",
+    "Scene VII intentionally depicts earlier morning in a distant kingdom with explicit retrospective cue",
+    "No scene, quote, clock, option or prior canon source altered",
+    "Future Livro VI episodes remain one day per part unless separately authorized",
+    "Future new episodes are draft until next author selection"
+  ],
+  "approved_status": "EXPLICIT_AUTHOR_DIRECTIVE_SCOPED_EXCEPTION",
+  "expected_result": "Archive exact source then canonicalize C02 PV as Chapter 2 closure; follow with C03 Part I on Dia549 as new DRAFT, display complete narrative in chat"
+}
