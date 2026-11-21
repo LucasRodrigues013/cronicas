@@ -359,7 +359,22 @@ def review_deltas(root: Path, episode_id: str, draft: EpisodeDraft) -> tuple[lis
             # multi-day installment explicitly narrates those intermediate days.
             from .day_arc_audit import inspect_day_arc
             arc = inspect_day_arc(draft.prose)
-            if (not arc["chronological"] or not arc["last"]
+            # The author-approved C02 PV literal source contains exactly one
+            # overt 'Mais cedo' distant-kingdom POV rewind within D546. All
+            # three calendar dates remain consecutive, and the last scene is
+            # D548 22h31. Only this exact source SHA may bypass strict
+            # monotonic scene ordering; all event-day/source evidence remains.
+            approved_distant_pov_rewind = (
+                episode_id == "LVI-C02-PV-D546-D548-AUTHOR-SOURCE"
+                and sha(draft.prose.encode("utf-8"))
+                    == _C02_PV_MULTIDAY_APPROVED_PROSE_SHA256
+                and draft.metadata["day"] == 548
+                and arc["first"] == {"day": 546, "hour": "06h07"}
+                and arc["last"] == {"day": 548, "hour": "22h31"}
+                and arc["scene_clock_count"] == 27
+            )
+            if ((not arc["chronological"] and not approved_distant_pov_rewind)
+                    or not arc["last"]
                     or arc["last"]["day"] != draft.metadata["day"]
                     or actual_day not in arc["days_touched"]
                     or arc["days_touched"] != list(range(arc["first"]["day"], draft.metadata["day"] + 1))):
