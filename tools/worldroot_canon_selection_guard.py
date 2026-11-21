@@ -40,6 +40,32 @@ def selected_pending(root: Path) -> list[str]:
     return result
 
 
+def _author_scoped_c02_pv_multiday_exception(root: Path, head: dict,
+                                             meta: dict, source_sha256: str,
+                                             episode: str) -> bool:
+    """Permit only the exact author-ratified D546-D548 literary source."""
+    if (episode != "LVI-C02-PV-D546-D548-AUTHOR-SOURCE"
+            or head.get("episode_id") != "LVI-C02-PIV-D545-AUTHOR-SOURCE"
+            or head.get("sequence") != 18 or head.get("day") != 545
+            or head.get("chapter") != 2 or head.get("part") != "IV"
+            or meta.get("book") != "Livro VI" or meta.get("chapter") != 2
+            or meta.get("part") != "V" or meta.get("day") != 548
+            or meta.get("hour") != "22h31"):
+        return False
+    path = root / "author-approvals/LVI-C02-PV-EXCECAO-CRONOLOGICA-PONTUAL-2026-11-20.json"
+    approval = data(path)
+    target = approval.get("target", {})
+    return (approval.get("schema") == "worldroot-author-scoped-chronology-ratification-v1"
+            and approval.get("authorization") == "USER_MESSAGE_CURRENT_TURN"
+            and approval.get("approved_status") == "EXPLICIT_AUTHOR_DIRECTIVE_SCOPED_EXCEPTION"
+            and target.get("episode_id") == episode
+            and target.get("full_text_sha256") == source_sha256
+            and target.get("prose_sha256") ==
+                "893adea655b3bf6acd946655642ba6bb143c2b1c35aece8fcae359b2793f63ef"
+            and target.get("days_narrated") == [546, 547, 548]
+            and target.get("scene_count") == 27)
+
+
 def verify_prior(root: Path) -> dict:
     head = data(root / "canon/HEAD.json")
     pending = selected_pending(root)
@@ -65,9 +91,11 @@ def verify_prior(root: Path) -> dict:
         previous_chapter, previous_part = head["chapter"], head["part"]
         expect_chapter = previous_chapter + (previous_part == "V")
         expect_part = "I" if previous_part == "V" else PARTS[PARTS.index(previous_part)+1]
+        one_off = _author_scoped_c02_pv_multiday_exception(
+            root, head, m, gate["sha256"], episode)
         if (m.get("chapter") != expect_chapter or m.get("part") != expect_part
                 or type(m.get("day")) is not int
-                or not head["day"] <= m["day"] <= head["day"] + 1):
+                or not (head["day"] <= m["day"] <= head["day"] + 1 or one_off)):
             raise ArchiveInvalid("Selected previous episode is out of canonical order")
     else:
         raise ArchiveInvalid("Unknown canonical head book/closure state")
