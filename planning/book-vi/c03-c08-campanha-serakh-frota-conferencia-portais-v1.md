@@ -4,6 +4,25 @@
 
 > **Tese:** Ithran tenta quebrar Três Arcos e é derrotado como comandante de sua primeira operação. A notícia provoca avaliação de Serakh, que alerta Velkar. O soberano aprova o emprego estratégico de metade da armada imperial numa campanha coordenada com Varkhess. Enquanto a Cidade Livre se recupera, moderniza sua defesa, aproxima os povos e realiza a primeira conferência continental, o general amadurece uma invasão de escala superior. Se o avanço terrestre for derrotado, a força imperial pode buscar uma segunda vantagem **no mar**, abrindo um futuro arco de bloqueio, navegação e guerra naval. Lucas não perde GÊNESE; sua força agora inspira uma cooperação continental que o Império terá dificuldade para governar.
 
+### DIRETRIZ AUTORAL SUPERIOR — A PRIMEIRA FERIDA É DA CIDADE, NÃO DO EXÉRCITO (20/11/2026)
+**Complemento aprovado em** \`author-approvals/LVI-C03-PRIMEIRA-FERIDA-HOSPITAL-2026-11-20.json\`. Vale prioritariamente para C03 e para os efeitos de C04. **Não é evento já narrado.**
+
+**O arco previsto é: sabotagem/ataques mágicos hostis em vários pontos → explosões/incêndios/danos se realmente alcançarem setores → muitos civis e combatentes feridos, sem necessidade de mortos → hospitais e atendimento sobrecarregados → Legião e Lucas vencem a operação de Ithran → NÃO HÁ COMEMORAÇÃO DE VITÓRIA → a cidade enfrenta medo, perda de confiança, recuperação e renovação do pertencimento.**
+
+Esta mudança corrige um risco dos esboços antigos: mostrar apenas a batalha espetacular, vitória militar e fachadas restauradas seria insuficiente. O verdadeiro custo é o que acontece com as pessoas, famílias, atendentes e cidadãos. A guerra deve ser contada pela experiência dos que vivem nela, incluindo moradores que ainda amam a cidade mas têm medo de voltar para casa.
+
+**Detalhes narrativos inegociáveis SE o ataque realmente atingir a cidade:**
+- **Explosões e danos:** ondas de choque e fogo/magia em bairros, praças e setores vinculados à Forja/AERÚN/serviços, com consequências localizadas e defesa parcial competente. Sem localização operacional ou explicações técnicas reais de bombas, sabotagem de água, energia ou hospitais.
+- **Resgate e muitos feridos:** ferimentos variados, pessoas procurando parentes, equipamentos de resgate da Legião, **Toran e seus especialistas de proteção e socorro**, Varo coordenando a prioridade de salvar vidas, voluntários, curandeiros, equipes médicas e magistrados agindo. Não é preciso matar um único personagem para ferir a cidade; jamais impor contagem fechada de vítimas.
+- **Hospital e atendimento:** se a quantidade superar a capacidade existente, mostrar triagem organizada, corredores ocupados, leitos temporários, equipe sobrecarregada, dificuldade de transportar pacientes, noites de plantão, materiais/logística, curas mágicas que precisam de especialistas e seus métodos comprovados. AERÚN/Forja/Kael/Lysa apoiam e não substituem magicamente toda a equipe. Não inventar número canônico de leitos ou nome de prédio médico sem fonte.
+- **Lucas continua extraordinário:** GÊNESE pode criar infraestrutura, medicamentos/equipamentos compatíveis, transporte, abrigos e edifícios de imediato; se propuser cura física, respeitar capacidade demonstrada e escolha autoral, não inserir limitação de poder. A velocidade de construir NÃO apaga susto, memória, desorientação, insegurança ou confiança ferida.
+- **Legião e Varo:** grandes vitórias táticas com responsabilidade humana, comandantes escolhendo salvar gente antes de perseguir fugitivos, veteranos com exaustão/ferimentos quando causalmente ocorridos. O grito dos 300 em C03 III mostra determinação; NÃO substitui o silêncio e o cansaço do final em C03 V.
+- **Sem festa de vitória:** o anúncio da derrota de Ithran não deve virar desfile, fogos ou triunfo coletivo. É um alívio amargo. O silêncio após o combate, o hospital cheio e a procura por parentes podem ser mais impactantes que o duelo final. Gratidão, abraço e um sorriso individual continuam possíveis; a cidade não precisa sentir uma única emoção uniforme.
+- **C04 não zera trauma:** a Parte I deve continuar concretamente a crise médico-social e a reconstrução da confiança; a Parte II dá protagonismo a novas defesas, preparação civil, monitoramento e resgate; as emissárias em III chegam a uma cidade recuperando-se de verdade; Kael/Lysa, AERÚN e os Três Poderes respondem com recursos, garantias, contratos e serviços em IV–V. A recuperação vira motivo ético da Conferência Continental.
+- **Condição de agência:** o objetivo do autor é uma ferida grande quando a campanha de Ithran atingir setores habitados; se Lucas e seus aliados de fato impedirem danos relevantes antes de ocorrerem, o motor não pode fabricar muitos feridos para cumprir quota. Precisa sustentar o risco com adversários plausíveis, cenas e consequências do que REALMENTE acontecer.
+
+**Frase motora:** *Ithran perdeu para a Legião. Três Arcos venceu a batalha. Mas quando ninguém conseguiu comemorar, todos compreenderam que a cidade havia sido ferida.*
+
 ### Estado da verdade (ler ANTES de qualquer nova Parte)
 - HEAD relido nesta revisão: **Livro VI, Capítulo 2, Parte IV, Dia 545, 22h18, seq. 18** (\`LVI-C02-PIV-D545-AUTHOR-SOURCE\`). A Parte V do Capítulo 2 **já existe como narrativa integral validada pelo autor**, dias 546–548, porém o gate cronológico a rejeitou por conter três dias numa Parte. Arquivo \`production/LVI-C02-PV-D546-D548-AUTHOR-SOURCE/narrativa_integral_PENDENTE_REVISAO_CRONOLOGICA.md\`, auditoria \`.../AUDITORIA_BLOQUEIO_CRONOLOGIA.json\`. **Não iniciar um novo HEAD do C03 antes de reparar esse bloqueio com autorização e testes**, sem destruir a prosa aprovada.
 - Política atual v14: uma data civil por Parte; cinco Partes por capítulo. Atribuir datas futuras apenas durante a execução, após o fechamento real de C02. Aceleramos acontecimentos e decisões, **não teleportamos tempo ou pessoas**.
@@ -59,7 +78,7 @@ A grande guerra no mar deverá ser **mais tarde no Livro VI**, quando portos, ci
 # III. ROTEIRO EXECUTIVO — SEIS CAPÍTULOS, TRINTA PARTES
 
 ## CAPÍTULO 3 — A PRIMEIRA GUERRA DE AURORA
-**Arco:** a cidade é ferida ou salva com esforço; o poder real da Legião surpreende Lucas; **Ithran perde** sua campanha e o relatório desperta o general.
+**Arco:** a ofensiva de Ithran pressiona Três Arcos e, quando atinge setores habitados, provoca ferimentos numerosos, hospitais sobrecarregados, medo e abalo cívico; a Legião pode vencer de forma extraordinária, mas **ninguém comemora a derrota militar de Ithran**, pois o socorro prossegue. O poder real da Legião surpreende Lucas; o relatório da derrota desperta Serakh. Não forçar feridos se a defesa impedir o ataque.
 
 ### Parte I — O adversário deixa de observar
 **Início:** partir da escolha e estado válidos no fim de C02, não de uma reunião longa. Os Sombras identificam ameaça nova e a Legião impede um primeiro ato hostil ou enfrenta um incidente que realmente começou. Ithran pode estar dirigindo uma ofensiva desde local compatível com logística, com informações parciais, sem ganhar autoria retroativa dos ataques de Vesra.
@@ -69,28 +88,28 @@ A grande guerra no mar deverá ser **mais tarde no Livro VI**, quando portos, ci
 ### Parte II — As ruas em guerra
 **Início:** ações ficcionais em setores urbanos ameaçam rotina, mobilidade, AERÚN e/ou Forja; fogo, explosões, magia e proteção urbana devem ser narrados como **efeitos**, nunca tutorial real de sabotagem.
 **Meio:** dilema de veterano de elite diante de adversários e civis, resgate com equipamentos, rotas que exigem coordenação. Kael, Lysa, Guarda, seis Sombras e Vértice têm decisões independentes. O inimigo pode usar mágicas de percepção, com condições reais, sem desativar GÊNESE.
-**Fim:** Varo consegue vitória local ou paga custo real por escolhas; civis não são figurantes, número de mortos não é predeterminado.
+**Fim:** Varo consegue vitória local ou paga custo real por escolhas; a cidade vê feridos chegando ao hospital, triagens e atendimento emergencial conforme os danos efetivos; civis não são figurantes. Muitas pessoas podem sair machucadas sem que seja necessário matar ninguém; não fixar contagem.
 
 ### Parte III — Trezentos, uma cidade
 **Início:** Varo coordena a reunião física ou simultânea da Primeira Legião, caso não comprometa os postos defensivos: eco do Dia 1 — **300 originais livres agora defendendo sua cidade, não somente Lucas**. Os dez campeões/líderes históricos são conciliados antes de nomear todos; não inventar um décimo adicional a Varo.
 **Meio:** lanças Aurora evoluídas, escudos de formação, armaduras, torretas e bastiões modernizados pela Forja e pela Legião ao longo de centenas de dias; distinguir arsenal histórico, evolução testada e protótipos. O campo revela resultados. Lucas vibra e celebra as criações alheias, com humor irreverente em momento proporcional.
-**Fim:** tropas entram em combate/resgate com juramento “Ninguém fica para trás” **se os personagens o adotarem na cena**, transformando a moral da cidade e surpreendendo os invasores.
+**Fim:** tropas entram em combate/resgate com juramento “Ninguém fica para trás” **se os personagens o adotarem na cena**, transformando a moral da cidade e surpreendendo os invasores. A imagem das formações precisa contrastar com o socorro contínuo e os atendimentos médicos, não esconder os feridos.
 
 ### Parte IV — A contraofensiva do impossível
 **Início:** formação completa ou companhias coordenadas colidem com estratégia de Ithran. Magia de guerra extraordinária, criaturas e efeitos arcanos só se introduzidos causalmente.
 **Meio:** ARGOS e futura Rede Tática Aurora podem auxiliar por observação e dados testados; **aeronave não nasce teletransportada ao combate**. Lucas/NÓX e Miren/Astra enfrentam ameaça num mundo que especializou magia mental, sem nerf GÊNESE nem sequestro automático de decisões do protagonista.
-**Fim:** um setor central é salvo, um comandante inimigo é desarmado ou a lógica da ofensiva adversária se rompe; consequências reais, risco remanescente justificado.
+**Fim:** um setor central é salvo, um comandante inimigo é desarmado ou a lógica da ofensiva adversária se rompe; enquanto isso, equipes de saúde e resgate fazem triagem/transferências e o hospital, quando sobrecarregado, opera no limite. Os profissionais não falham por estupidez. Consequências reais, risco remanescente justificado.
 
 ### Parte V — Ithran perde; Serakh desperta
 **Início:** confrontação decisiva e encerramento verdadeiro da ofensiva.
-**Meio:** o destino pessoal de Ithran decorre do que Lucas e outros realmente fizeram; **sua operação perde**. Pode haver ferida na cidade mesmo com vitória militar; GÊNESE reconstrói matéria mas não decreta confiança. Varo/Legião/cidadãos participam do resultado e do socorro.
+**Meio:** o destino pessoal de Ithran decorre do que Lucas e outros realmente fizeram; **sua operação perde**. Se sua campanha tiver provocado danos reais, Varo/Legião/cidadãos vencem enquanto hospitais seguem cheios, equipes trabalham exaustas, famílias procuram uns aos outros e os feridos precisam de acolhimento. GÊNESE reconstrói matéria e pode ajudar extraordinariamente, mas não decreta confiança nem apaga lembranças. **A cidade não celebra a vitória militar**; o depois tem silêncio, medo e indignação, sem decretar uma emoção uniforme.
 **Fim de alto impacto:** testemunho verificado ou o relatório de Ithran percorre rota real até Serakh. **Cena externa PARA O LEITOR**, se simultaneidade e prazo permitirem: Serakh lê a derrota, pede informações em vez de condenar automaticamente todos os subordinados e decide propor uma operação imperial maior a Velkar. Não fazer a ordem de metade da frota chegar imediatamente à Três Arcos.
 
 ## CAPÍTULO 4 — DAS CINZAS AO HORIZONTE
 **Arco:** a cidade reconstrói confiança, defesa e instituições, os emissários chegam por meios válidos, Lucas/Forja redesenham ARGOS e Serakh passa a organizar a expedição.
 
 ### Parte I — Depois do choque
-**Início:** cidadãos, legionários feridos se houver, famílias, mercados e médicos vivem consequências; não tempo morto.
+**Início:** após a crise do C03, hospitais/locais de acolhimento ainda recebem e acompanham feridos quando o ataque os produziu; profissionais se revezam, famílias tentam voltar à rotina, comerciantes e legionários convivem com medo, raiva e solidariedade. A cidade não resetou após GÊNESE reconstruir fachadas. Sem tempo morto nem resumos burocráticos.
 **Meio:** Varo propõe mudanças militares com base em lições observadas. Kael conduz resposta do Executivo, Câmara/representantes deliberam, Justiça preserva garantias; Lysa apresenta atos econômicos com fonte e resultado. AERÚN pode demonstrar renome a partir de descoberta real.
 **Fim:** resolução concreta de um serviço público ou uma controvérsia, não reunião interminável. Serakh recebe uma informação verificada se a mensagem tiver chegado.
 
@@ -255,6 +274,9 @@ A grande guerra no mar deverá ser **mais tarde no Livro VI**, quando portos, ci
 - [ ] A derrota de Ithran é direção autoral, mas as decisões e destinos particulares são resultado da história.
 - [ ] A alocação de 260 cascos acontece por ordem narrada, não é armada já presente em Avarenn.
 - [ ] Serakh não assume comando marítimo de Varkhess sem arranjo explícito de Velkar.
+- [ ] Primeira Ferida da cidade: explosões e incêndios ficcionais com impacto real se atingirem setores; feridos numerosos e hospital sobrecarregado narrados com cuidado; nenhuma exigência de mortes, nem feridos artificiais quando defesa impede danos.
+- [ ] A derrota militar de Ithran NÃO é comemorada com desfile: alívio amargo, continuidade de socorro, medo e respostas diferentes de moradores.
+- [ ] C04 continua os cuidados médicos, reconstrução de confiança e evolução civil/militar; curas e materiais criados com GÊNESE não apagaram memória.
 - [ ] Sem mortes fixadas, sem trauma coletivo uniforme, sem retirada garantida se personagens impedirem.
 - [ ] C05 conferência em AERÚN com pessoas realmente presentes, ciência protegida e liberdade dos reinos.
 - [ ] C06 resultado terrestre e futuro cerco marítimo precisam de teatro, data, rota, inteligência e recursos demonstrados.
