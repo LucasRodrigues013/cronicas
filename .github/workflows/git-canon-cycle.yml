@@ -7,6 +7,7 @@ on:
       - 'canon/BOOTSTRAP_REQUEST.json'
       - 'choices/*/option-*.json'
       - 'canon/BOOK_END_REQUEST.json'
+      - 'tools/worldroot_canon_selection_guard.py'
       - '.github/workflows/git-canon-cycle.yml'
 
 concurrency:
