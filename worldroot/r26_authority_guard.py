@@ -110,31 +110,37 @@ def scan_creation_prose(prose: str) -> dict[str, Any]:
     errors, warnings = [], []
     dragon_refs, institute_refs, unclear_refs = 0, 0, 0
     for raw in prose.splitlines():
-        line = raw.strip()
-        if not line:
-            continue
-        if "AERÚN" in line.upper() or "AERUN" in line.upper():
-            if DRAGON_MENTION.search(line):
-                dragon_refs += 1
-            elif INSTITUTE_MENTION.search(line):
-                institute_refs += 1
-            else:
-                unclear_refs += 1
-        if ATTRIBUTED_DIALOGUE.match(line) or HYPOTHESIS.search(line):
-            # People can believe, question or speculate; no omniscient fact is inferred.
-            continue
-        if AUTHORITY_CATEGORY.search(line):
-            errors.append("R26_CREATION: GÊNESE classified as an ordinary ranked spell")
-        if AUTHORITY_FUEL.search(line):
-            errors.append("R26_CREATION: artificial mana exhaustion/arcane resource limit")
-        if AUTHORITY_COUNTER.search(line):
-            errors.append("R26_CREATION: ordinary spell cannot automatically negate Authority")
-        if COSMOLOGY_DRAGONS.search(line):
-            errors.append("R26_COSMOLOGY: pre-world dragon chronology is unproven")
-        if COSMOLOGY_SYSTEM.search(line):
-            errors.append("R26_COSMOLOGY: Sistema/Coração origin of CREATION remains unknown")
-        if ENTITY_MIXUP.search(line):
-            errors.append("R26_ENTITY: AERÚN institution and dragon are distinct")
+        # Evaluate each sentence separately; a speculative first sentence must
+        # not launder a false assertion in the next sentence on the same line.
+        attributed = ATTRIBUTED_DIALOGUE.match(raw.strip()) is not None
+        for line in re.split(r"(?<=[.!?])\s+", raw.strip()):
+            if not line:
+                continue
+            if "AERÚN" in line.upper() or "AERUN" in line.upper():
+                if DRAGON_MENTION.search(line):
+                    dragon_refs += 1
+                elif INSTITUTE_MENTION.search(line):
+                    institute_refs += 1
+                else:
+                    unclear_refs += 1
+            if attributed:
+                # A character's dialogue can make false assertions; the
+                # narrator and the audit cannot treat those as verified truth.
+                continue
+            if HYPOTHESIS.search(line):
+                continue
+            if AUTHORITY_CATEGORY.search(line):
+                errors.append("R26_CREATION: GÊNESE classified as an ordinary ranked spell")
+            if AUTHORITY_FUEL.search(line):
+                errors.append("R26_CREATION: artificial mana exhaustion/arcane resource limit")
+            if AUTHORITY_COUNTER.search(line):
+                errors.append("R26_CREATION: ordinary spell cannot automatically negate Authority")
+            if COSMOLOGY_DRAGONS.search(line):
+                errors.append("R26_COSMOLOGY: pre-world dragon chronology is unproven")
+            if COSMOLOGY_SYSTEM.search(line):
+                errors.append("R26_COSMOLOGY: Sistema/Coração origin of CREATION remains unknown")
+            if ENTITY_MIXUP.search(line):
+                errors.append("R26_ENTITY: AERÚN institution and dragon are distinct")
     if unclear_refs:
         warnings.append(
             "R26_ENTITY_ADVISORY: ambiguous AERÚN mention(s) require scene-context review")

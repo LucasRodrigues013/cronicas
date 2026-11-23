@@ -276,6 +276,16 @@ class R262Scenarios(unittest.TestCase):
                             and x["knowledge_of_aerun"] == "NÃO_ESTABELECIDO"
                             for x in mystery))
 
+    def test_s34_speculation_in_first_sentence_cannot_hide_mana_nerf_afterward(self):
+        self.assert_reason(
+            self.audit("Talvez AERÚN existisse antes do mundo. GÊNESE parou de funcionar porque Lucas ficou sem mana."),
+            "R26_CREATION")
+
+    def test_s35_character_dialogue_is_not_automatic_narrator_truth(self):
+        story = "**THAERON —** Talvez os dragões sejam mais antigos que o mundo. Eu não sei."
+        r = self.audit(story)
+        self.assertTrue(r["ready"], r["errors"])
+
     def test_s33_spell_lookup_returns_copy_not_shared_catalog_object(self):
         x = get_spell("R26-AEROMANCIA-08")
         original = x["nome"]
