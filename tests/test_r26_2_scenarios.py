@@ -324,6 +324,38 @@ class R262Scenarios(unittest.TestCase):
         self.assertEqual(len(r["magic"]["high_circle_spells"]), 1)
         self.assertFalse(r["magic_proposals_autocanonized"])
 
+    def test_s38_book_title_in_ratified_episode_is_not_prior_spell_skill(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            src = self.staged_canon(root)
+            old_line = "Thaeron abriu um livro chamado Fio de Orvalho."
+            src.write_text(old_line + "\n", encoding="utf-8")
+            register = root / "canon" / "episodes" / "LVI-C04-PI-D554-AUTHOR-SOURCE.json"
+            data = json.loads(register.read_text(encoding="utf-8"))
+            data["story_sha256"] = sha256(src.read_bytes()).hexdigest()
+            register.write_text(json.dumps(data), encoding="utf-8")
+            anchor, use = self.old_spell()
+            use["previous_literal_anchor"] = old_line
+            self.assert_reason(
+                self.audit(anchor, extra_review={"spell_uses": [use]},
+                           archive_root=root), "R26_PROVENANCE")
+
+    def test_s39_ratifed_teaching_with_actual_named_spell_is_valid(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            src = self.staged_canon(root)
+            learned = "Miren ensinou Thaeron a dominar Fio de Orvalho num lago protegido."
+            src.write_text(learned + "\n", encoding="utf-8")
+            register = root / "canon" / "episodes" / "LVI-C04-PI-D554-AUTHOR-SOURCE.json"
+            data = json.loads(register.read_text(encoding="utf-8"))
+            data["story_sha256"] = sha256(src.read_bytes()).hexdigest()
+            register.write_text(json.dumps(data), encoding="utf-8")
+            anchor, use = self.old_spell()
+            use["previous_literal_anchor"] = learned
+            report = self.audit(anchor, extra_review={"spell_uses": [use]},
+                                archive_root=root)
+            self.assertTrue(report["ready"], report["errors"])
+
     def test_s33_spell_lookup_returns_copy_not_shared_catalog_object(self):
         x = get_spell("R26-AEROMANCIA-08")
         original = x["nome"]
