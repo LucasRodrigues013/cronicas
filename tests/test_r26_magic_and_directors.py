@@ -88,6 +88,50 @@ class R26MagicTests(unittest.TestCase):
         self.assertTrue(search_spells(school="AERUN_ESTUDOS"))
         self.assertEqual(len(search_spells(school="AERUN_ESTUDOS", limit=100)), 50)
 
+
+    def test_new_city_spell_cannot_appear_without_a_citizen_inventor(self):
+        name = get_spell("R26X-FORJA_AURORA_ESTUDOS-F1-C0")["nome"]
+        story = PROSE + "\nBrannik pronuncia " + name + " e todos observam a marca.\n"
+        info = {"spell_id": "R26X-FORJA_AURORA_ESTUDOS-F1-C0",
+                "literal_anchor": "Brannik pronuncia " + name + " e todos observam a marca.",
+                "caster": "BRANNIK", "learning_status": "ESTREIA_NARRADA"}
+        denied = audit_fantasy(story, fantasy(spell_uses=[info]), head_episode_id=HEAD)
+        self.assertFalse(denied["ready"])
+        self.assertTrue(any("R26_ORIGIN" in x for x in denied["errors"]))
+        proto = "Brannik mediu primeiro o metal com sua equipe, testando cinco ligas sem Lucas."
+        story = story + proto + "\n"
+        info["acquisition"] = {
+            "pathway": "INVENCAO_INSTITUCIONAL",
+            "school_lineage": "Runotecnologia da Forja Aurora",
+            "inventor": "BRANNIK",
+            "literal_origin_anchor": proto,
+            "prototype_anchor": proto,
+            "not_automatically_invented_by_lucas": True,
+        }
+        granted = audit_fantasy(story, fantasy(spell_uses=[info]), head_episode_id=HEAD)
+        self.assertTrue(granted["ready"], granted["errors"])
+        self.assertFalse(granted["magic_proposals_autocanonized"])
+
+    def test_new_regional_spell_requires_tradition_discovery(self):
+        new = get_spell("R26X-GEADA_SELKARA-F1-C2")
+        anchor = "A pesquisadora nomeou " + new["nome"] + " diante da aldeia."
+        source = "Uma anciã de Selkara transmitiu à jovem o rito de cristais de gelo."
+        story = PROSE + "\n" + source + "\n" + anchor + "\n"
+        entry = {"spell_id": new["id"], "caster": "PESQUISADORA",
+                 "literal_anchor": anchor, "learning_status": "ESTREIA_NARRADA",
+                 "acquisition": {
+                     "pathway": "ENSINO_DE_TRADICAO",
+                     "school_lineage": "Cristalomancia histórica de Selkara",
+                     "literal_origin_anchor": source
+                 }}
+        granted = audit_fantasy(story, fantasy(spell_uses=[entry]),
+                                head_episode_id=HEAD)
+        self.assertTrue(granted["ready"], granted["errors"])
+        entry.pop("acquisition")
+        denied = audit_fantasy(story, fantasy(spell_uses=[entry]),
+                               head_episode_id=HEAD)
+        self.assertTrue(any("R26_ORIGIN" in e for e in denied["errors"]))
+
     def test_invented_spells_never_autocanonize_from_simple_mentions(self):
         story = PROSE.replace("três correntes de ar",
                               "Catedral do Céu Partilhado e três correntes de ar")
