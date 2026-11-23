@@ -12,9 +12,11 @@ from worldroot.ledger import GateError
 from test_r26_magic_and_directors import fantasy
 
 
-class R26ArchiveIntegrationTest(R25ArchiveIntegrationTest):
+class R26ArchiveIntegrationTest(unittest.TestCase):
+    write = R25ArchiveIntegrationTest.write
+    run_archive = R25ArchiveIntegrationTest.run_archive
     def setUp(self):
-        super().setUp()
+        R25ArchiveIntegrationTest.setUp(self)
         self.payload["schema"] = "worldroot-draft-inbox-v3"
         self.payload["fantasy_review"] = fantasy(
             character_evolution=[{
