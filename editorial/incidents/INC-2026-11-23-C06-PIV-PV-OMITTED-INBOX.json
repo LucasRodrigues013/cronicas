@@ -1,0 +1,79 @@
+{
+  "schema": "worldroot-incident-review-v1",
+  "incident_id": "INC-2026-11-23-C06-PIV-PV-OMITTED-INBOX",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "date": "2026-11-23",
+  "priority": "ALTA",
+  "symptom": "Assistant narrated Livro VI C06 Parte IV D567 and Parte V D568 without submitting exact narrative to GitHub inbox. Only supplemental editorial continuity notes and separate selection intent were stored; HEAD stayed D566.",
+  "verified_root_cause": {
+    "primary": "The assistant failed to explicitly call GitHub create_file for inbox/<episode_id>.json in the narration turns, despite connected tools and the mandatory archive-before-delivery workflow.",
+    "engine_behavior": "GitHub Action worldroot-draft-inbox.yml is event-driven only on push to inbox/*.json; it cannot observe or save arbitrary ChatGPT messages automatically. GitHub canon cycle only closes a verified previous episode after an official author choice file.",
+    "why_motor_did_not_recover": "There was no full source in GitHub archive or inbox for D567 and D568; editorial/continuity-pending summaries are not archival source. The motor correctly did not infer narrative from summaries or promote silently.",
+    "secondary_observed": "First recovery attempt for D567 failed at lvi_predelivery.py because character_preflight required by v3 was omitted; this was corrected with an authenticated sequential update and a successful rerun.",
+    "not_caused_by": "The user's selections, lack of project data, insufficient story memory or disabled GitHub integration."
+  },
+  "remediation": [
+    {
+      "step": "1",
+      "result": "COMPLETE",
+      "description": "D567 full 11-scene narrative recovered and submitted to inbox v3, archived with immutable SHA-256, 26-character preflight, 11 event anchors."
+    },
+    {
+      "step": "2",
+      "result": "COMPLETE",
+      "description": "Original author choice 4 for D567 entered in official choices path and canon cycle passed."
+    },
+    {
+      "step": "3",
+      "result": "COMPLETE",
+      "description": "HEAD advanced D566 seq37 → D567 seq38, verified via GitHub readback."
+    },
+    {
+      "step": "4",
+      "result": "COMPLETE",
+      "description": "D568 full 13-scene narrative recovered and submitted to inbox v3, archived with immutable SHA-256, 27-character preflight, 13 event anchors."
+    },
+    {
+      "step": "5",
+      "result": "COMPLETE",
+      "description": "Complete five-part Chapter 6 packaged as LIVRO-VI-C06-INTEGRAL.md plus immutable ZIP and manifest in private GitHub; V is archived, not canonicalized."
+    },
+    {
+      "step": "6",
+      "result": "EXPECTED_NEXT_AUTHOR_ACTION",
+      "description": "Per existing approved canon cycle, D568 Part V becomes canonical once author selects the next Chapter 7 option; do not invent or preselect narrative direction."
+    }
+  ],
+  "evidence": {
+    "canonical_head": {
+      "episode": "LVI-C06-PIV-D567-AUTHOR-SOURCE",
+      "day": 567,
+      "sequence": 38,
+      "source_sha256": "5b7266ca7eb5fbce44fe070de66ea355f3d65c28f7ff15d95dbc87ef5a82e630"
+    },
+    "archived_latest": {
+      "episode": "LVI-C06-PV-D568-AUTHOR-SOURCE",
+      "day": 568,
+      "source_sha256": "c178b87337d668bb44d0a369de3a1615bf3bf2d823987812bd1a2591b28b93a4"
+    },
+    "github_action_archive_d567": "https://github.com/LucasRodrigues013/cronicas/actions/runs/45239366608",
+    "github_action_canon_d567": "https://github.com/LucasRodrigues013/cronicas/actions/runs/45239685595",
+    "github_action_archive_d568": "https://github.com/LucasRodrigues013/cronicas/actions/runs/45240391706",
+    "chapter_package": "chapters/LIVRO-VI-C06/LIVRO-VI-C06-INTEGRAL.md",
+    "resume": "ops/RESUME.json"
+  },
+  "known_limits": [
+    "Recovered narrative scenes transcribed from this chat and saved in three production segments per part; rich DIL header and choice UI reconstructed for pipeline structural validation. Independent byte-for-byte parity against original ChatGPT UI messages is NOT verified; source_proof.json reports ui_parity=NOT_INDEPENDENTLY_VERIFIED.",
+    "No Google Drive update; current canonical engine is GITHUB_PRIVADO_SEM_OIDC and Drive marked NAO_SINCRONIZADO.",
+    "Chapter 6 Parte V remains archived-draft until the author selects a Chapter 7 continuation. Do not manufacture a choice for the user."
+  ],
+  "preventative_controls_existing_and_required": [
+    "Before publishing future narrative, call authenticated GitHub tool to write full inbox v3, including source, metadata, character_preflight, R25/R26 evidence.",
+    "Wait for GitHub Action receipt and read back exact full_text SHA/manifest; present link or status only after verification.",
+    "On the NEXT author choice, first ensure previous episode archived, then write exact option N to choices/<previous>/option-N.json, confirm canon-cycle success and HEAD increase before writing next inbox.",
+    "Follow ops/RESUME.json and canon/HEAD.json; an editorial note is NEVER a substitute for an archived narrative.",
+    "Never promise automatic chat-to-GitHub capture; no watch exists."
+  ],
+  "process_change_approval_status": "DOCUMENTED_EXISTING_POLICY_ONLY_NO_ENGINE_RULE_CHANGE",
+  "status": "NARRATIVE_STORAGE_GAP_CLOSED; CHAPTER6_ALL_PARTS_ARCHIVED; D568_CANON_SELECTION_STILL_AWAITS_AUTHOR_NEXT_CHOICE"
+}
