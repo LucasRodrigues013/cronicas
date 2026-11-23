@@ -51,7 +51,8 @@ class R26MagicTests(unittest.TestCase):
         self.assertEqual(report["wonders"], 12)
         self.assertEqual(report["creatures"], 12)
         self.assertEqual(report["tracked_characters"], 25)
-        self.assertEqual(report["historical_feats"], 11)
+        self.assertEqual(report["historical_feats"], 10)
+        self.assertEqual(report["draft_only_feats"], 1)
         self.assertTrue(report["genese_outside_rank"])
         for spell in load_grimoire()["spells"]:
             self.assertEqual(spell["status"], "R26_PROPOSTO_NAO_CANONICO")

@@ -34,11 +34,13 @@ Nenhum Círculo é fórmula de dano, nível total de personagem, limite da imagi
 - worldroot/r26/grimoire.json — 12 escolas, 120 magias originais com nome, círculo, efeito, assinatura sensorial, exigência situacional, lacuna de contrajogo e candidatos de estudo.
 - worldroot/r26/world_codex.json — 16 invocações, 12 criaturas e 12 fenômenos/locais para aventuras; tudo PROPOSTO, sem falsa cartografia.
 - worldroot/r26/character_memory.json — 25 perfis resumidos com vínculos, voz, local conhecido ou desconhecido, identidade e alertas.
-- worldroot/r26/source_feats.json — 11 feitos históricos descritos, com fontes literais. É índice inicial, NÃO cobertura integral do Livro I ao VI.
+- worldroot/r26/source_feats.json — 10 feitos canônicos descritos e 1 feito apenas de rascunho D563, todos com fontes literais. É índice inicial, NÃO cobertura integral do Livro I ao VI.
 - worldroot/r26_magic_catalog.py — busca exata por nome/ID, filtros por escola ou círculo, validação e verificação opcional de trechos históricos.
 - worldroot/r26_fantasy_directors.py — motor R26 e seis auditores; não escolhe vitória nem escreve narrativa.
 - docs/worldroot-r26-grimoire-index.md — tabela completa, legível, dos 120 feitiços.
 - docs/r26-thaeron-demonstration-noncanonical.md — exemplo de prosa, sem alteração da história.
+
+**Nota de proveniência:** o fato de um trecho existir em um arquivo integral do capítulo não faz de D563 um capítulo fechado. O índice separa 10 evidências canônicas e 1 demonstração de rascunho, sujeita à escolha autoral.
 
 ## 5. Os seis diretores
 

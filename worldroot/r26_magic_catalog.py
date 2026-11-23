@@ -112,10 +112,14 @@ def validate_codex() -> dict[str, Any]:
         errors.append("FEAT01: missing historical provenance")
     elif any(
         not entry.get("source", {}).get("literal_anchor")
-        or entry.get("status") != "DEMONSTRADO_DESCRITIVO_SEM_NOME_NOVO_DE_FEITIÇO"
+        or entry.get("status") != (
+            "DESCRITO_EM_RASCUNHO_NAO_CANONICO"
+            if entry.get("published_context") == "RASCUNHO_NAO_CANONICO"
+            else "DEMONSTRADO_DESCRITIVO_SEM_NOME_NOVO_DE_FEITIÇO"
+        )
         for entry in feats["entries"]
     ):
-        errors.append("FEAT02: fabricated or unqualified historical feat")
+        errors.append("FEAT02: unqualified historical feat or draft misclassified")
     return {
         "status": "OK" if not errors else "BLOQUEADO",
         "errors": errors,
@@ -125,7 +129,10 @@ def validate_codex() -> dict[str, Any]:
         "creatures": len(world.get("creatures", [])),
         "wonders": len(world.get("wonders", [])),
         "tracked_characters": len(profiles or []),
-        "historical_feats": len(feats.get("entries", [])),
+        "historical_feats": sum(x.get("status") == "DEMONSTRADO_DESCRITIVO_SEM_NOME_NOVO_DE_FEITIÇO"
+                                for x in feats.get("entries", [])),
+        "draft_only_feats": sum(x.get("status") == "DESCRITO_EM_RASCUNHO_NAO_CANONICO"
+                                for x in feats.get("entries", [])),
         "genese_outside_rank": True,
         "canon_changed": False,
         "literary_quality_certified": False,
