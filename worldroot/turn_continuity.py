@@ -112,7 +112,9 @@ def audit_turn_handoff(root: Path, previous_episode_id: str, *,
             )
             latest = resume.get("latest_unclosed_draft")
             checks["latest_part_acknowledged"] = (
-                not isinstance(latest, dict) or latest.get("episode_id") == prev
+                (require_canon_promotion and head_id == prev)
+                or not isinstance(latest, dict)
+                or latest.get("episode_id") == prev
             )
             if not checks["resume_head"] or not checks["latest_part_acknowledged"]:
                 raise ValueError("Stale RESUME or newer saved part not acknowledged")

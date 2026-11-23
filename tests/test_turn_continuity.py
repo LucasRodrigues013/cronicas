@@ -100,7 +100,8 @@ class TurnHandoffTest(unittest.TestCase):
             "schema": "worldroot-git-canon-v1", "episode_id": PREV,
             "book": "Livro VI", "chapter": 6, "part": "V", "day": 568})
         write(self.root / "ops/RESUME.json", {
-            "canon_head": {"episode_id": PREV}, "latest_unclosed_draft": None})
+            "canon_head": {"episode_id": PREV},
+            "latest_unclosed_draft": {"episode_id": "LVI-C07-PI-D569-AUTHOR-SOURCE"}})
         write(self.root / "canon/episodes" / (PREV + ".json"), {
             "episode_id": PREV, "story_sha256": self.sha})
         write(self.root / "choices" / PREV / "option-4.json", {
