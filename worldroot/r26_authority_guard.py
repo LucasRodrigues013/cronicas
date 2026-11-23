@@ -60,7 +60,7 @@ def validate_authority_bible() -> dict[str, Any]:
 HYPOTHESIS = re.compile(
     r"(?i)\b(?:talvez|sup[oô]s|hip[oó]tes|boato|rumor|"
     r"diziam|dizem|segundo|lenda|acreditam|seria|"
-    r"quem sabe|pergunt|ningu[eé]m sabia|n[aã]o havia prova|se .*?(?:fosse|existisse))\b"
+    r"quem sabe|pergunt\w*|suspeit\w*|duvid\w*|ningu[eé]m sabia|n[aã]o havia prova|se .*?(?:fosse|existisse))\b"
 )
 ATTRIBUTED_DIALOGUE = re.compile(r"^\s*(?:\*\*)?[A-ZÁÉÍÓÚÂÊÔÃÕÇ ]+\s+—")
 AUTHORITY = r"(?:G[EÊ]NESE|CREATION)"
