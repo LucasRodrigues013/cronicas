@@ -54,8 +54,14 @@ def load_grimoire() -> dict[str, Any]:
     new_spells = [
         {**spell,
          "manifestacao_sensorial": spell["assinatura_sensorial"],
-         "exigencia_situacional": spell["substrato_necessario"],
-         "contrajogo_ou_lacuna": spell["contrajogo"]}
+         "exigencia_situacional": (
+             spell["substrato_necessario"]
+             + "; a condição depende do terreno, da presença e do conhecimento local"
+         ),
+         "contrajogo_ou_lacuna": (
+             spell["contrajogo"]
+             + "; essa falha pode ser observada e explorada sem garantir vitória"
+         )}
         for spell in expansion["spells"]
     ]
     return {**book, "schools": [*book["schools"], *expansion["schools"]],
