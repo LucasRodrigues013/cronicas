@@ -192,6 +192,31 @@ def _magic(prose: str, body: dict, errors: list[str],
             elif status == "JA_CONHECIDA_COM_PROVA":
                 if not _words(item.get("previous_source"), 20) or not _words(item.get("previous_literal_anchor"), 14):
                     errors.append("R26_ORIGIN: reused technique needs prior episode path and literal evidence")
+        if spell["id"].startswith("R26X-") and spell["circulo"] >= 7:
+            # Large regional spells from the template-based 900 must be
+            # individualized in lived fiction, not just assign a bigger rank.
+            craft = item.get("individual_scene_design")
+            if not isinstance(craft, dict):
+                errors.append("R26_SPECIFICITY: high-circle regional magic needs unique scene design")
+            else:
+                for key in ("cultural_signature", "unique_mechanism",
+                            "character_choice_or_meaning"):
+                    if not _words(craft.get(key), 24):
+                        errors.append("R26_SPECIFICITY: incomplete " + key)
+                witness = craft.get("sensory_witness_anchor")
+                consequence = craft.get("world_response_anchor")
+                _anchor(prose, witness, errors, "individual regional magic sensory witness")
+                _anchor(prose, consequence, errors, "individual regional magic consequence")
+                narrative = str(literal or "")
+                if not (
+                    isinstance(witness, str) and isinstance(consequence, str)
+                    and any(
+                        narrative in scene and witness in scene and consequence in scene
+                        and scene.index(narrative) < scene.index(witness) < scene.index(consequence)
+                        for _, scene in scene_blocks(prose)
+                    )
+                ):
+                    errors.append("R26_SPECIFICITY: sensory witness and effect must unfold in one scene")
         if spell["circulo"] >= 7:
             majestic.append(spell["id"])
     # A conjurer may repeat a legitimate spell in separate beats/scenes.
