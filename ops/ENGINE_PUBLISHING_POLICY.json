@@ -1,0 +1,52 @@
+{
+  "schema": "worldroot-engine-publishing-policy-v1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "status": "APROVADO_PELO_AUTOR",
+  "approved_at": "2026-11-23",
+  "policy_revision": "R27",
+  "engine_code_branch": "main",
+  "engine_code_commit": "5785e8fd5873eae1cd75965428355d4e852e6568",
+  "canonical_head_rule": "canon/HEAD.json is a historical narrative checkpoint, never a dumping ground for engine policy; update only after real next author choice and canonical validation.",
+  "source_of_truth": "story-archive/episodes/<ID>/draft/narrativa_integral.md plus immutable manifest + inbox + review + reader_receipt",
+  "before_new_episode": {
+    "guard": "worldroot.turn_continuity.audit_turn_handoff(root,previous_episode_id,expected_head_id=live_head.episode_id)",
+    "required": true,
+    "latest_unclosed_must_match_previous": true,
+    "user_choice_for_previous": "If author chose, save real choice, wait for canon workflow and read back HEAD before writing next new inbox.",
+    "on_failure": "BLOCK_NARRATIVE_COMPLETION_AND_REPORT_NO_SAVE; never use editorial summary as substituted prose"
+  },
+  "for_each_episode": {
+    "must_save_complete_text": true,
+    "must_include": [
+      "prose",
+      "full_text",
+      "five_choices",
+      "checkpoints",
+      "reviewed_events_with_literal_source_lines",
+      "reviewed_character_knowledge",
+      "character_preflight",
+      "r25_reader_review",
+      "r26_fantasy_review"
+    ],
+    "longform_segments": "Use 2-6 production/EPISODE/segments/*.md for long text; immutable exact bytes; merely staging is not archived episode.",
+    "write_endpoint": "Authenticated ChatGPT GitHub connector create_file/update_file for story-archive/inbox/EPISODE.json (not automagical).",
+    "verified_archival": "Successful worldroot-draft-inbox action, archived narrative readback, SHA256 manifest, reader receipt, R14/R26 release gate and R27 handoff.",
+    "no_finish_claim_without_verified_remote_readback": true,
+    "next_author_choice": "Only next actual USER_MESSAGE choice closes previous archived episode in canon and increments HEAD."
+  },
+  "limits": {
+    "automatic_chat_capture": false,
+    "guarantee_without_connector": false,
+    "drive_sync_active": false,
+    "note": "GitHub Actions only react to repository updates; no chat message interception. Engine guards can enforce only when invoked. Never claim 100% automatic capture."
+  },
+  "origin_incident": "editorial/incidents/INC-2026-11-23-C06-PIV-PV-OMITTED-INBOX.json",
+  "last_verified_historical_state_at_adoption": {
+    "canon_episode_id": "LVI-C06-PIV-D567-AUTHOR-SOURCE",
+    "sequence": 38,
+    "latest_archived_episode_id": "LVI-C06-PV-D568-AUTHOR-SOURCE",
+    "latest_archived_sha256": "c178b87337d668bb44d0a369de3a1615bf3bf2d823987812bd1a2591b28b93a4",
+    "chapter_6_all_five_parts_archived": true
+  },
+  "scope": "PROCEDURAL_ONLY_NO_NARRATIVE_CHANGE"
+}
