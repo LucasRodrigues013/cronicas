@@ -151,16 +151,20 @@ def build_live_brief(head: dict, policy: dict, max_chars: int = 1700) -> dict:
         raise TypeError("Verified live HEAD and policy mappings are required")
     if type(max_chars) is not int or max_chars < 350:
         raise ValueError("Insufficient editorial brief budget")
-    for key in ("book", "chapter", "part", "day", "episode_id", "sequence"):
+    for key in ("book", "chapter", "part", "day", "episode_id"):
         if not head.get(key):
             raise ValueError(f"Missing live HEAD field: {key}")
-    if type(head["chapter"]) is not int or type(head["day"]) is not int or type(head["sequence"]) is not int:
+    if type(head["chapter"]) is not int or type(head["day"]) is not int:
         raise ValueError("Invalid HEAD chronological fields")
+    sequence = head.get("sequence")
+    if sequence is not None and (type(sequence) is not int or sequence < 0):
+        raise ValueError("Invalid HEAD sequence")
+    sequence_label = str(sequence) if sequence is not None else "não informada"
     if head["part"] not in HEAD_PARTS or not isinstance(head["episode_id"], str):
         raise ValueError("Invalid HEAD part/episode reference")
     lines = [
         "WORLDROOT — CONTINUIDADE EDITORIAL VIVA, SEM PROMOÇÃO AUTOMÁTICA.",
-        f"HEAD VERIFICADO EXTERNAMENTE PELO CHAMADOR: {head['book']}, C{head['chapter']:02d}, Parte {head['part']}, D{head['day']}, sequência {head['sequence']}.",
+        f"HEAD FORNECIDO PELO CHAMADOR (validar leitura externa): {head['book']}, C{head['chapter']:02d}, Parte {head['part']}, D{head['day']}, sequência {sequence_label}.",
         "Fonte literal: " + head["episode_id"] + ". O novo episódio não é canônico pela escrita.",
         "Preservar CREATION/GÊNESE plena, agência de Lucas e seus aliados, Miren, Rumo e NÓX livres.",
         "Priorizar cenas vividas: desejo, resistência, ação, mudança e consequências; sem fórmulas de quantidade de cenas.",
