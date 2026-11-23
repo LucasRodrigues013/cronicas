@@ -86,7 +86,9 @@ def audit_release(root: Path, episode_id: str) -> dict:
             raise GateError("Narrative word count missing")
         lived_advisory = inspect_lived_narrative(inbox["prose"])
         visual = presentation_preflight(
-            source, strict_dialogue=inbox["schema"] in ("worldroot-draft-inbox-v2", "worldroot-draft-inbox-v3"))
+            source, strict_dialogue=inbox["schema"] in ("worldroot-draft-inbox-v2", "worldroot-draft-inbox-v3"),
+            min_scenes=1 if inbox["schema"] == "worldroot-draft-inbox-v3" else 3,
+            min_named_turns=0 if inbox["schema"] == "worldroot-draft-inbox-v3" else 5)
         checks["ux_rich_contract"] = not visual["errors"]
         if not checks["ux_rich_contract"]:
             raise GateError("; ".join(visual["errors"]))

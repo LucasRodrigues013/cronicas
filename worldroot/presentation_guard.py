@@ -34,11 +34,16 @@ def load_presentation_policy(path: Path | None = None) -> dict:
 
 
 def presentation_preflight(full_text: str, *, policy: dict | None = None,
-                           strict_dialogue: bool = True) -> dict:
+                           strict_dialogue: bool = True, min_scenes: int = 3,
+                           min_named_turns: int = 5) -> dict:
     """Check the VISIBLE installment including checkpoint and choices.
 
     Does not certify the narrative's truth, aesthetics or actual screen rendering.
     """
+    if type(min_scenes) is not int or min_scenes < 1:
+        raise ValueError("At least one scene is allowed; no fixed count quota")
+    if type(min_named_turns) is not int or min_named_turns < 0:
+        raise ValueError("Named dialogue minimum must be nonnegative")
     policy = policy or load_presentation_policy()
     if policy.get("project") != "CRONICAS_DE_UM_NOVO_MUNDO":
         raise ValueError("Presentation policy crosses universes")
@@ -63,8 +68,8 @@ def presentation_preflight(full_text: str, *, policy: dict | None = None,
         "rich_header": '<box align="center"' in s[:1800] and s[:2200].count("<title") >= 3,
         "calendar_panel": "CALENDÁRIO DO HORIZONTE" in upper[:3500]
             and "<grid" in s[:3500] and "<box border" in s[:3500],
-        "scenes": len(scenes) >= 3,
-        "dialogue": len(DIALOGUE.findall(s)) >= 5,
+        "scenes": len(scenes) >= min_scenes,
+        "dialogue": len(DIALOGUE.findall(s)) >= min_named_turns,
         "unlabeled_dialogue": unlabeled_count == 0,
         "scene_clocks": len(CLOCK.findall(s)) >= 2,
         "checkpoint": checkpoint_at > 0,

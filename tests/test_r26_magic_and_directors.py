@@ -128,6 +128,20 @@ class R26MagicTests(unittest.TestCase):
     def test_source_head_cannot_be_old(self):
         self.assertFalse(audit_fantasy(PROSE, fantasy(), head_episode_id="OLD")["ready"])
 
+    def test_r26_one_full_scene_or_silent_scene_is_allowed(self):
+        from worldroot.presentation_guard import presentation_preflight
+        from test_presentation_guard import RICH
+        only_one = RICH.replace("## II — A promessa", "### PARTE DA MESMA CENA")
+        only_one = only_one.replace("## III — A escolha", "### CONTINUAÇÃO")
+        only_one = only_one.replace("**LUCAS —** Bom dia.", "Ele observou o mundo em silêncio.")
+        only_one = only_one.replace("**MIREN —** Boa noite.", "Miren permaneceu ao seu lado.")
+        only_one = only_one.replace("**VARO —** Entendi.", "Varo assentiu.")
+        only_one = only_one.replace("**KÁIRON —** Concordo.", "Káiron ficou imóvel.")
+        only_one = only_one.replace("**SISTEMA —** Ainda é cedo.", "O vento soprou.")
+        report = presentation_preflight(only_one, min_scenes=1, min_named_turns=0)
+        self.assertEqual(report["errors"], [], report)
+        self.assertFalse(presentation_preflight(only_one)["checks"]["scenes"])
+
     def test_summons_and_spells_keep_their_distinct_records(self):
         self.assertTrue(summon_ids_used_in_prose(
             PROSE + "\nO Guardião da Maré Oca apareceu no crepúsculo."))

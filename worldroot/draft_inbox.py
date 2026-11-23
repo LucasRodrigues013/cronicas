@@ -111,7 +111,9 @@ def _assemble(episode_id: str, payload: dict, *, enforce_presentation: bool = Tr
     # Mandatory visual structure for NEW chapters. Existing immutable drafts
     # are exempt solely for idempotent readback; they must not be rewritten.
     if enforce_presentation:
-        visual = presentation_preflight(text)
+        visual = presentation_preflight(
+            text, min_scenes=1 if payload["schema"] == "worldroot-draft-inbox-v3" else 3,
+            min_named_turns=0 if payload["schema"] == "worldroot-draft-inbox-v3" else 5)
         if visual["errors"]:
             raise GateError("Chat presentation contract failed: " + "; ".join(visual["errors"])[:350])
 
@@ -277,7 +279,9 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
             "lived_narrative_advisory": inspect_lived_narrative(payload["prose"]),
             "longform_depth": inspect_longform(payload["prose"]),
             "longform_stage": stage_receipt,
-            "presentation_preflight": presentation_preflight(payload["full_text"]),
+            "presentation_preflight": presentation_preflight(payload["full_text"],
+                min_scenes=1 if payload.get("schema") == "worldroot-draft-inbox-v3" else 3,
+                min_named_turns=0 if payload.get("schema") == "worldroot-draft-inbox-v3" else 5),
             "dynamic_scene_advisory": inspect_draft_dynamics(payload["prose"], payload["metadata"]),
             "literary_precision_advisory": review_episode(payload["prose"]),
             "r25_reader_experience": assess_experience(payload["prose"]),
@@ -334,7 +338,9 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
             "lived_narrative_advisory": inspect_lived_narrative(payload["prose"]),
             "longform_depth": inspect_longform(payload["prose"]),
             "longform_stage": stage_receipt,
-            "presentation_preflight": presentation_preflight(payload["full_text"]),
+            "presentation_preflight": presentation_preflight(payload["full_text"],
+                min_scenes=1 if payload.get("schema") == "worldroot-draft-inbox-v3" else 3,
+                min_named_turns=0 if payload.get("schema") == "worldroot-draft-inbox-v3" else 5),
             "literary_precision_advisory": review_episode(payload["prose"]),
             "r25_reader_experience": assess_experience(payload["prose"]),
             "r26_fantasy_review": (r26_assessment_summary(payload, head, root)
