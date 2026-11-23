@@ -124,6 +124,10 @@ def validate_codex() -> dict[str, Any]:
     atlas = load_regional_atlas()
     if len(atlas.get("schools", [])) != 18 or len(atlas.get("spells", [])) != 900:
         errors.append("MAG10: altered regional atlas count")
+    if len({f["mecanismo"] for school in atlas["schools"] for f in school["familias"]}) != 90:
+        errors.append("MAG11: regional lineages lack distinct effect mechanisms")
+    if sum(x.get("origem", "").startswith("Três Arcos") for x in atlas["spells"]) != 200:
+        errors.append("MAG12: missing independent City of Three Arches pathways")
     for entry in spells:
         if entry.get("escola") not in school_ids or entry.get("status") != SPELL_STATUS:
             errors.append("MAG06: spell improperly presented as canon: " + str(entry.get("id")))
@@ -169,6 +173,9 @@ def validate_codex() -> dict[str, Any]:
         "named_spells": len(spells),
         "regional_new_spells": len(atlas.get("spells", [])),
         "regional_lineages": book["regional_expansion"]["lineages"],
+        "regional_unique_mechanisms": len({f["mecanismo"] for school in atlas["schools"] for f in school["familias"]}),
+        "proposed_three_arcos_spells": sum(x.get("origem", "").startswith("Três Arcos") for x in atlas["spells"]),
+        "culturally_grounded_spells": len(atlas["spells"]),
         "proven_ownership_from_regional_expansion": 0,
         "summons": len(world.get("invocations", [])),
         "creatures": len(world.get("creatures", [])),

@@ -48,6 +48,8 @@ class R26MagicTests(unittest.TestCase):
         self.assertEqual(report["schools"], 30)
         self.assertEqual(report["regional_new_spells"], 900)
         self.assertEqual(report["regional_lineages"], 90)
+        self.assertEqual(report["regional_unique_mechanisms"], 90)
+        self.assertEqual(report["proposed_three_arcos_spells"], 200)
         self.assertEqual(report["named_spells"], 1020)
         self.assertEqual(report["summons"], 16)
         self.assertEqual(report["wonders"], 12)
