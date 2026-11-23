@@ -56,7 +56,7 @@ FLAT = """# CRÔNICAS DE UM NOVO MUNDO
 class PresentationContractTest(unittest.TestCase):
     def test_policy_is_classified_and_project_scoped(self):
         p = load_presentation_policy()
-        self.assertEqual(p["version"], 1)
+        self.assertEqual(p["version"], 2)
         self.assertEqual(len(p["classifications"]), 12)
         self.assertEqual(p["project"], "CRONICAS_DE_UM_NOVO_MUNDO")
 
