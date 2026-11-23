@@ -21,6 +21,8 @@ from .semantic_gate import require_reviewed_event_evidence
 from .ledger import GateError, ConflictError
 from .editorial_guard import quick_preflight
 from .literary_revision import review_episode
+from .reader_experience import validate_reader_review, assess_experience
+from .narrative_director import validate_direction
 from .presentation_guard import presentation_preflight
 from .story_focus_audit import inspect_installment
 from .day_arc_audit import inspect_day_arc
@@ -40,7 +42,7 @@ def _bytes(obj):
 
 def _assemble(episode_id: str, payload: dict, *, enforce_presentation: bool = True,
               book_end_approval_verified: bool = False, head: dict | None = None):
-    if (payload.get("schema") != "worldroot-draft-inbox-v1"
+    if (payload.get("schema") not in ("worldroot-draft-inbox-v1", "worldroot-draft-inbox-v2")
             or payload.get("delivery_id") != episode_id):
         raise GateError("Inbox schema or immutable ID mismatch")
     text = payload.get("full_text")
@@ -56,6 +58,19 @@ def _assemble(episode_id: str, payload: dict, *, enforce_presentation: bool = Tr
     metadata = payload.get("metadata")
     if not isinstance(metadata, dict) or metadata.get("canon_status") != "RASCUNHO":
         raise GateError("Draft metadata must state RASCUNHO")
+    # R25 for NEW v2 work: a compact private creative direction and an
+    # assistant-prepared, source-anchored literary review. Not human certification.
+    r25_assessment = None
+    r25_director = None
+    if payload["schema"] == "worldroot-draft-inbox-v2":
+        source_head = head if enforce_presentation else {
+            "episode_id": (payload.get("narrative_direction") or {}).get("source_episode_id")
+        }
+        r25_director = validate_direction(source_head, payload.get("narrative_direction"))
+        r25_assessment = validate_reader_review(prose, payload.get("reader_review"))
+        if r25_director["errors"] or r25_assessment["errors"]:
+            raise GateError("R25 creative review failed: " + "; ".join(
+                r25_director["errors"] + r25_assessment["errors"])[:380])
     choices = payload.get("choices")
     if not isinstance(choices, list) or len(choices) != 5:
         raise GateError("A chapter must include five ordered choices")
@@ -141,6 +156,13 @@ def _assemble(episode_id: str, payload: dict, *, enforce_presentation: bool = Tr
         "eventos_revisados.json": _bytes(reviewed_events),
         "conhecimento_revisado.json": _bytes(reviewed_knowledge),
     }
+    if payload["schema"] == "worldroot-draft-inbox-v2":
+        review_files["experiencia_r25.json"] = _bytes({
+            "schema": "worldroot-r25-evidence-sidecar-v1",
+            "assessment": r25_assessment, "director": r25_director,
+            "review": payload["reader_review"],
+            "note": "Assistant editorial evidence, not independent human certification.",
+        })
     return draft, files, review_files
 
 
@@ -191,6 +213,11 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
         require_book_end_approval(root, episode_id, metadata.get("book"))
         book_end_approval_verified = True
     existing_manifest = root / "episodes" / episode_id / "draft" / "manifesto_imutavel.json"
+    meta = payload.get("metadata")
+    if (not existing_manifest.is_file() and isinstance(meta, dict)
+            and meta.get("book") == "Livro VI"
+            and payload.get("schema") != "worldroot-draft-inbox-v2"):
+        raise GateError("R25 new Livro VI draft requires v2 schema with review evidence")
     draft, files, review_files = _assemble(
         episode_id, payload, enforce_presentation=not existing_manifest.is_file(),
         book_end_approval_verified=book_end_approval_verified, head=head)
@@ -220,6 +247,7 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
             "presentation_preflight": presentation_preflight(payload["full_text"]),
             "dynamic_scene_advisory": inspect_draft_dynamics(payload["prose"], payload["metadata"]),
             "literary_precision_advisory": review_episode(payload["prose"]),
+            "r25_reader_experience": assess_experience(payload["prose"]),
         }
     if head.get("book_closed") is True:
         from .book_opening import require_book_open_approval
@@ -272,6 +300,7 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
             "longform_stage": stage_receipt,
             "presentation_preflight": presentation_preflight(payload["full_text"]),
             "literary_precision_advisory": review_episode(payload["prose"]),
+            "r25_reader_experience": assess_experience(payload["prose"]),
     }
 
 
