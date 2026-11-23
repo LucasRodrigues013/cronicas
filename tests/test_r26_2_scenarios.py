@@ -286,6 +286,44 @@ class R262Scenarios(unittest.TestCase):
         r = self.audit(story)
         self.assertTrue(r["ready"], r["errors"])
 
+    def grand_regional_scene(self):
+        spell = get_spell("R26X-VELATH_METEOROS-F1-C8")
+        source = "Iriel ensinou a Thaeron o compasso raro da Quinta Corrente no observatório."
+        start = "Thaeron pronunciou " + spell["nome"] + " e a torre ressoou."
+        witness = "Iriel viu sete arcos luminosos nascerem acima das escarpas."
+        response = "Miren segurou a mão de Lucas e ouviu o céu responder de volta."
+        intro = {"spell_id": spell["id"], "caster": "THAERON",
+                 "literal_anchor": start, "learning_status": "ESTREIA_NARRADA",
+                 "acquisition": {"pathway": "ENSINO_DE_TRADICAO",
+                                 "school_lineage": "Astrofonia da Grande Torre de Vélath",
+                                 "literal_origin_anchor": source}}
+        moment = {"scene": "I", "first_anchor": start,
+                  "reaction_anchor": witness,
+                  "dramatic_promise": "A Torre poderia revelar uma nova tradição do céu.",
+                  "sensory_change": "O ar adquiriu sete tons distintos e novos.",
+                  "lasting_consequence": "O grupo desejou retornar para investigar.",
+                  "not_just_reported": True}
+        return "\n".join((source, start, witness, response)), intro, moment, witness, response
+
+    def test_s36_high_regional_spell_without_unique_scene_is_blocked(self):
+        prose, use, moment, witness, response = self.grand_regional_scene()
+        r = self.audit(prose, extra_review={"spell_uses": [use], "moments": [moment]})
+        self.assert_reason(r, "R26_SPECIFICITY")
+
+    def test_s37_high_regional_spell_with_lived_uniqueness_is_allowed(self):
+        prose, use, moment, witness, response = self.grand_regional_scene()
+        use["individual_scene_design"] = {
+            "cultural_signature": "Astrofonia de Vélath respondendo a harmônicos da montanha.",
+            "unique_mechanism": "A Quinta Corrente conduz sete alturas sem consumir a autoridade de Lucas.",
+            "character_choice_or_meaning": "Miren se aproxima e Lucas escolhe aprender, em vez de pedir controle do céu.",
+            "sensory_witness_anchor": witness,
+            "world_response_anchor": response,
+        }
+        r = self.audit(prose, extra_review={"spell_uses": [use], "moments": [moment]})
+        self.assertTrue(r["ready"], r["errors"])
+        self.assertEqual(len(r["magic"]["high_circle_spells"]), 1)
+        self.assertFalse(r["magic_proposals_autocanonized"])
+
     def test_s33_spell_lookup_returns_copy_not_shared_catalog_object(self):
         x = get_spell("R26-AEROMANCIA-08")
         original = x["nome"]
