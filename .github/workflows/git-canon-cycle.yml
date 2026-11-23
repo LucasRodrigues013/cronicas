@@ -28,7 +28,7 @@ jobs:
       - name: Checkout audited SHA-bound r14 chronology exception engine at immutable commit
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: 094b3ee62ad5b1647fe37e2d7572738991941565
+          ref: 047abd4692782cf3f026258fe686af9b4517d82c
           path: engine
           persist-credentials: false
       - name: Setup Python
@@ -53,7 +53,7 @@ jobs:
       - name: Checkout audited SHA-bound r14 chronology exception engine (never execute archive code)
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: 094b3ee62ad5b1647fe37e2d7572738991941565
+          ref: 047abd4692782cf3f026258fe686af9b4517d82c
           path: engine
           persist-credentials: false
       - name: Checkout latest private data branch
@@ -104,6 +104,17 @@ jobs:
               print("CANON_INCREMENTAL_MEMORY:",canon_delta(root,head["episode_id"],write=True))
               print("CANON_CHAPTER_SEAL:",seal_head_if_last(root))
           state=resume(root,write=True)
+          # On every Livro VI author-choice closure, verify the *exact* saved
+          # previous chapter including receipt, choice, journal and HEAD.
+          if head["book"]=="Livro VI" and list((root/"choices"/head["episode_id"]).glob("option-*.json")):
+              from worldroot.turn_continuity import audit_turn_handoff
+              from worldroot.ledger import GateError
+              r27=audit_turn_handoff(root,head["episode_id"],
+                  expected_head_id=head["episode_id"],
+                  require_canon_promotion=True)
+              if not r27["ready"]:
+                  raise GateError("R27 canonical handoff failed: "+"; ".join(r27["errors"])[:250])
+              print("R27_CANON_CHOICE_AND_SOURCE_VERIFIED:",r27["story_sha256"])
           print("CANON_RESUME_CHECK:",state["canon_head"]["episode_id"],state["canon_head"]["sequence"])
           PY
       - name: Commit HEAD plus SQLite snapshot and immutable journal atomically

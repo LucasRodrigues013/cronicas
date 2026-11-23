@@ -24,7 +24,7 @@ jobs:
       - name: Checkout audited engine at immutable version, with C02 PV scoped exception
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: 094b3ee62ad5b1647fe37e2d7572738991941565
+          ref: 047abd4692782cf3f026258fe686af9b4517d82c
           path: engine
           persist-credentials: false
       - name: Python 3.12
@@ -49,7 +49,7 @@ jobs:
       - name: Checkout trusted main code (pinned)
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: 094b3ee62ad5b1647fe37e2d7572738991941565
+          ref: 047abd4692782cf3f026258fe686af9b4517d82c
           path: engine
           persist-credentials: false
       - name: Checkout private story archive data only
@@ -83,6 +83,18 @@ jobs:
               raise GateError("Multiple incomplete drafts detected; fail closed")
           if not pending:
               print("Idempotent inbox run: no unarchived episode.")
+              # R27 smoke-check the most recently saved Part even on no-op runs.
+              from worldroot.turn_continuity import audit_turn_handoff
+              import json
+              resume_file=root/"ops"/"RESUME.json"
+              if resume_file.is_file():
+                  status=json.loads(resume_file.read_text(encoding="utf-8"))
+                  latest=status.get("latest_unclosed_draft") or status.get("canon_head")
+                  check=audit_turn_handoff(root,latest["episode_id"],
+                      expected_head_id=status["canon_head"]["episode_id"])
+                  if not check["ready"]:
+                      raise GateError("R27 persisted source missing: "+"; ".join(check["errors"])[:240])
+                  print("R27_LAST_COMPLETE_ARCHIVE_VERIFIED:", check["story_sha256"])
           else:
               receipt=archive_inbox(root,pending[0])
               if pending[0].stem.startswith("LVI-"):
@@ -124,6 +136,14 @@ jobs:
               incremental=draft_delta(root,pending[0].stem,write=True)
               voice=review_voice(root,pending[0].stem,write=True)
               state=resume(root,write=True)
+              # A previous episode cannot be called complete without literal
+              # story, immutable SHA, reader receipt and adjacent live HEAD.
+              from worldroot.turn_continuity import audit_turn_handoff
+              r27=audit_turn_handoff(root,pending[0].stem,
+                  expected_head_id=state["canon_head"]["episode_id"])
+              if not r27["ready"]:
+                  raise GateError("R27 full episode handoff blocked: "+"; ".join(r27["errors"])[:300])
+              print("R27_FULL_EPISODE_HANDOFF_OK:",r27["story_sha256"])
               print("SOURCE_ANCHORED_MEMORY:",incremental["episode_id"],incremental["events"])
               print("LUCAS_VOICE_ADVISORY:",voice["status"],voice["current"]["lucas_dialogue_lines"])
               print("RESUME_STATE_SNAPSHOT:",state["canon_head"]["episode_id"])
