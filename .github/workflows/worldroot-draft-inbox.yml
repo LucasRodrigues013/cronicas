@@ -5,6 +5,9 @@ on:
     branches: [story-archive]
     paths:
       - 'inbox/*.json'
+      - '.github/workflows/worldroot-draft-inbox.yml'
+      - 'ops/ENGINE_PUBLISHING_POLICY.json'
+  workflow_dispatch:
 
 concurrency:
   group: worldroot-story-write
