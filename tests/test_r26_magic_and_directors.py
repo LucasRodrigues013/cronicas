@@ -79,6 +79,45 @@ class R26MagicTests(unittest.TestCase):
         self.assertTrue(any("R26_MAGIC" in e for e in assessed["errors"]))
         self.assertFalse(assessed["canon_changed"])
 
+    def test_high_circle_magic_needs_action_and_reaction_in_same_scene(self):
+        story = (
+            PROSE + "\nThaeron pronunciou Catedral do Céu Partilhado.\n"
+            + "Miren viu sete abóbadas brilharem sobre as montanhas.\n"
+        )
+        spell_use = {
+            "spell_id": "R26-AEROMANCIA-08",
+            "literal_anchor": "Thaeron pronunciou Catedral do Céu Partilhado.",
+            "caster": "THAERON", "learning_status": "ESTREIA_NARRADA"
+        }
+        missing = audit_fantasy(story, fantasy(spell_uses=[spell_use]),
+                                head_episode_id=HEAD)
+        self.assertFalse(missing["ready"])
+        self.assertTrue(any("R26_SPECTACLE" in x for x in missing["errors"]))
+        attested = fantasy(spell_uses=[spell_use], moments=[{
+            "scene": "I",
+            "first_anchor": "Thaeron pronunciou Catedral do Céu Partilhado.",
+            "reaction_anchor": "Miren viu sete abóbadas brilharem sobre as montanhas.",
+            "dramatic_promise": "A Torre revela uma arte que Lucas não conhece.",
+            "sensory_change": "Sete formas luminosas atravessam o céu alto.",
+            "lasting_consequence": "O grupo decide estudar a tradição de Vélath.",
+            "not_just_reported": True
+        }])
+        r = audit_fantasy(story, attested, head_episode_id=HEAD)
+        self.assertTrue(r["ready"], r["errors"])
+        self.assertIn("R26-AEROMANCIA-08", r["magic"]["high_circle_spells"])
+        self.assertFalse(r["magic_proposals_autocanonized"])
+
+    def test_spell_can_be_conjured_more_than_once_without_an_artificial_quota(self):
+        story = (PROSE + "\nThaeron pronunciou Fio de Orvalho e ergueu uma gota.\n"
+                 + "Thaeron pronunciou Fio de Orvalho outra vez, criando um segundo gesto.\n")
+        use = {"spell_id": "R26-HIDROMANCIA-00", "caster": "THAERON",
+               "learning_status": "ESTREIA_NARRADA"}
+        first = {**use, "literal_anchor": "Thaeron pronunciou Fio de Orvalho e ergueu uma gota."}
+        second = {**use, "literal_anchor": "Thaeron pronunciou Fio de Orvalho outra vez, criando um segundo gesto."}
+        report = audit_fantasy(story, fantasy(spell_uses=[first, second]),
+                               head_episode_id=HEAD)
+        self.assertTrue(report["ready"], report["errors"])
+
     def test_quiet_life_is_valid_without_summon_or_battle(self):
         report = audit_fantasy(PROSE, fantasy(), head_episode_id=HEAD)
         self.assertTrue(report["ready"], report)

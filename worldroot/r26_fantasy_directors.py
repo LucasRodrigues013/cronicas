@@ -127,8 +127,8 @@ def _magic(prose: str, body: dict, errors: list[str]) -> dict:
             errors.append("R26_MAGIC: prior demonstrated claim needs an exact source path")
         if spell["circulo"] >= 7:
             majestic.append(spell["id"])
-    if len(identifiers) != len(set(identifiers)):
-        errors.append("R26_MAGIC: repeated same spell identity in usage ledger")
+    # A conjurer may repeat a legitimate spell in separate beats/scenes.
+    # Each occurrence can carry its own literal anchor; no one-cast quota.
     if known.difference(identifiers):
         errors.append("R26_MAGIC: named grimoire spells in story not registered: " +
                       ", ".join(sorted(known.difference(identifiers)))[:160])
