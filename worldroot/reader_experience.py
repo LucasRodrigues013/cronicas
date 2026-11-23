@@ -1,6 +1,7 @@
 """R25 source-grounded literary experience gate. Never certifies prose or rewrites canon."""
 from __future__ import annotations
 import re
+from pathlib import Path
 from statistics import median
 
 SCENE = re.compile(r"(?m)^##\s+([IVX]{1,8})\s+[—–-]\s+([^\n]+)$")
@@ -82,18 +83,23 @@ def validate_reader_review(prose: str, review: dict | None, *,
         evidence = []
     rows = dict(scene_blocks(prose))
     used = set()
+    anchors_used = set()
     for entry in evidence:
         if not isinstance(entry, dict):
             errors.append("R25_REVIEW: malformed evidence")
             continue
         scene = entry.get("scene")
         anchor = entry.get("literal_anchor")
-        if not isinstance(scene, str) or scene in used or scene not in rows:
+        if not isinstance(scene, str) or scene not in rows or (scene in used and len(rows) > 1):
             errors.append("R25_REVIEW: scene missing or repeated")
             continue
         used.add(scene)
         if not isinstance(anchor, str) or len(anchor.strip()) < 12 or anchor not in rows[scene]:
             errors.append("R25_REVIEW: source quote not found in its scene")
+        elif anchor in anchors_used:
+            errors.append("R25_REVIEW: distinct lived moments require distinct anchors")
+        if isinstance(anchor, str):
+            anchors_used.add(anchor)
         for key in ("felt_experience", "scene_turn", "lasting_consequence"):
             value = entry.get(key)
             if not isinstance(value, str) or len(value.strip()) < 12:
@@ -118,3 +124,35 @@ def preview_reader_review(prose: str, *, previous_counts: list[int] | None = Non
         "narrative_alerts": data["risks"],
         "literary_certification": False,
     }
+
+
+def previous_canonical_scene_counts(root: Path, metadata: dict) -> list[int]:
+    """Read only the last two *closed* parts of the same chapter.
+
+    Never treat a draft, old synopsis or unrelated chapter as prior evidence.
+    Missing history is not evidence of a different structure.
+    """
+    if not isinstance(metadata, dict) or metadata.get("book") != "Livro VI":
+        return []
+    chapter = metadata.get("chapter")
+    part = metadata.get("part")
+    order = ("I", "II", "III", "IV", "V")
+    if type(chapter) is not int or part not in order:
+        return []
+    folder = root / "canon" / "episodes"
+    if not folder.is_dir():
+        return []
+    prefix = f"LVI-C{chapter:02d}-P"
+    measured = []
+    for file in folder.glob(prefix + "*.json"):
+        match = re.match(r"^LVI-C[0-9]{2}-P(I|II|III|IV|V)-", file.stem)
+        if not match or order.index(match.group(1)) >= order.index(part):
+            continue
+        identity = file.stem
+        text = root / "episodes" / identity / "draft" / "narrativa_integral.md"
+        if not text.is_file():
+            continue
+        measured.append((order.index(match.group(1)),
+                         len(scene_blocks(text.read_text(encoding="utf-8")))))
+    measured.sort()
+    return [count for _, count in measured[-2:]]

@@ -21,7 +21,8 @@ from .semantic_gate import require_reviewed_event_evidence
 from .ledger import GateError, ConflictError
 from .editorial_guard import quick_preflight
 from .literary_revision import review_episode
-from .reader_experience import validate_reader_review, assess_experience
+from .reader_experience import (validate_reader_review, assess_experience,
+                                previous_canonical_scene_counts)
 from .narrative_director import validate_direction
 from .presentation_guard import presentation_preflight
 from .story_focus_audit import inspect_installment
@@ -41,7 +42,8 @@ def _bytes(obj):
 
 
 def _assemble(episode_id: str, payload: dict, *, enforce_presentation: bool = True,
-              book_end_approval_verified: bool = False, head: dict | None = None):
+              book_end_approval_verified: bool = False, head: dict | None = None,
+              previous_counts: list[int] | None = None):
     if (payload.get("schema") not in ("worldroot-draft-inbox-v1", "worldroot-draft-inbox-v2")
             or payload.get("delivery_id") != episode_id):
         raise GateError("Inbox schema or immutable ID mismatch")
@@ -67,7 +69,8 @@ def _assemble(episode_id: str, payload: dict, *, enforce_presentation: bool = Tr
             "episode_id": (payload.get("narrative_direction") or {}).get("source_episode_id")
         }
         r25_director = validate_direction(source_head, payload.get("narrative_direction"))
-        r25_assessment = validate_reader_review(prose, payload.get("reader_review"))
+        r25_assessment = validate_reader_review(
+            prose, payload.get("reader_review"), previous_counts=previous_counts)
         if r25_director["errors"] or r25_assessment["errors"]:
             raise GateError("R25 creative review failed: " + "; ".join(
                 r25_director["errors"] + r25_assessment["errors"])[:380])
@@ -220,7 +223,8 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
         raise GateError("R25 new Livro VI draft requires v2 schema with review evidence")
     draft, files, review_files = _assemble(
         episode_id, payload, enforce_presentation=not existing_manifest.is_file(),
-        book_end_approval_verified=book_end_approval_verified, head=head)
+        book_end_approval_verified=book_end_approval_verified, head=head,
+        previous_counts=previous_canonical_scene_counts(root, meta))
     if existing_manifest.is_file():
         for name, body in files.items():
             existing = root / "episodes" / episode_id / "draft" / name

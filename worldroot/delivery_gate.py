@@ -14,7 +14,7 @@ from .longform_depth import inspect_longform
 from .presentation_guard import presentation_preflight
 from .editorial_guard import quick_preflight
 from .lived_narrative_audit import inspect_lived_narrative
-from .reader_experience import validate_reader_review
+from .reader_experience import validate_reader_review, previous_canonical_scene_counts
 from .narrative_director import validate_direction
 from .ledger import GateError, ConflictError
 from .book_closure import require_book_end_approval
@@ -97,7 +97,9 @@ def audit_release(root: Path, episode_id: str) -> dict:
             direction = inbox.get("narrative_direction") or {}
             compass = validate_direction({"episode_id": direction.get("source_episode_id")},
                                          direction)
-            experience = validate_reader_review(inbox["prose"], inbox.get("reader_review"))
+            experience = validate_reader_review(
+                inbox["prose"], inbox.get("reader_review"),
+                previous_counts=previous_canonical_scene_counts(root, inbox["metadata"]))
             sidecar = pkg / "review" / "experiencia_r25.json"
             checks["r25_reader_evidence"] = (
                 not compass["errors"] and not experience["errors"]

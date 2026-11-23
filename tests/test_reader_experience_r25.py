@@ -111,6 +111,20 @@ class R25ContractTest(unittest.TestCase):
         self.assertFalse(outcome["speaker_attribution_reliable"])
         self.assertIsNone(outcome["lucas_dialogue_scene_share"])
 
+    def test_one_long_scene_can_have_two_evidence_moments_without_split(self):
+        prose = ("## I — Um único encontro\n"
+                 "Lucas tocou a pedra e a floresta respondeu.\n"
+                 "**LUCAS —** Eu escutei.\n"
+                 "Miren decidiu seguir a trilha mais longa.\n")
+        moments = [
+            {**REVIEW["scene_evidence"][0], "scene": "I",
+             "literal_anchor": "Lucas tocou a pedra e a floresta respondeu."},
+            {**REVIEW["scene_evidence"][1], "scene": "I",
+             "literal_anchor": "Miren decidiu seguir a trilha mais longa."},
+        ]
+        self.assertTrue(validate_reader_review(
+            prose, {**REVIEW, "scene_evidence": moments})["release_ready"])
+
     def test_review_not_generated_by_storage_provenance(self):
         self.assertFalse(assess_experience(NARRATIVE)["canon_changed"])
         self.assertFalse(validate_direction(HEAD, DIRECTION)["fiction_content"])
