@@ -108,7 +108,7 @@ class R262Scenarios(unittest.TestCase):
         self.assertTrue(r["ready"], r["errors"])
 
     def test_s11_two_aerun_entities_can_coexist(self):
-        r = self.audit("O Instituto AERÚN abriu a biblioteca. O dragão AERÚN viveu além dos mapas.")
+        r = self.audit("O Instituto AERÚN abriu a biblioteca.\nO dragão AERÚN viveu além dos mapas.")
         self.assertTrue(r["ready"], r["errors"])
         self.assertGreaterEqual(r["authority"]["dragon_references"], 1)
         self.assertGreaterEqual(r["authority"]["institute_references"], 1)
