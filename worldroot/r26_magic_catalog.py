@@ -7,8 +7,10 @@ from __future__ import annotations
 
 import json
 import re
+from hashlib import sha256
 import unicodedata
 from functools import lru_cache
+from pathlib import PurePosixPath
 from pathlib import Path
 from typing import Any
 
@@ -191,14 +193,21 @@ def validate_codex() -> dict[str, Any]:
     }
 
 
-@lru_cache(maxsize=1500)
+@lru_cache(maxsize=1)
+def _spell_lookup_index() -> dict[str, dict]:
+    by_id = {}
+    for spell in load_grimoire()["spells"]:
+        by_id[spell["id"]] = spell
+        by_id[norm(spell["nome"])] = spell
+    return by_id
+
+
 def get_spell(identifier: str) -> dict | None:
     if not isinstance(identifier, str) or not identifier.strip():
         raise ValueError("Spell identifier must be nonempty")
-    for spell in load_grimoire()["spells"]:
-        if identifier == spell["id"] or norm(identifier) == norm(spell["nome"]):
-            return spell
-    return None
+    match = _spell_lookup_index().get(identifier) or _spell_lookup_index().get(norm(identifier))
+    # Return isolated mapping to prevent one caller mutating the shared cache.
+    return dict(match) if match is not None else None
 
 
 def search_spells(query: str = "", *, school: str | None = None,
@@ -233,6 +242,111 @@ def spell_ids_used_in_prose(prose: str) -> list[str]:
         if re.search(r"(?<!\w)" + re.escape(spell["nome"]) + r"(?!\w)", prose, re.I):
             ids.append(spell["id"])
     return ids
+
+
+# Mentions of a spell in a library, rumor, lesson, catalog or title should not
+# falsely require a cast ledger. The default for unexplained mentions remains
+# conservative and is an advisory, never proof of casting.
+DOCUMENT_MARKERS = re.compile(
+    r"(?i)\b(?:livro|volume|manual|capítulo|titulo|título|manuscrito|"
+    r"página|pergaminho|estudo|teoria|catálogo|registro|inscrição|"
+    r"biblioteca|caderno|verbete|hipótese|lenda|crônica|"
+    r"leu|leitura|estudou|pesquisou|ouviu falar|citou|comentou)\b"
+)
+CAST_MARKERS = re.compile(
+    r"(?i)\b(?:conjurou|conjurava|pronunciou|lançou|invocou|"
+    r"ativou|moldou|manifestou|evocou|ergueu|teceu|"
+    r"sussurrou|fez surgir|fez nascer|materializou|"
+    r"canalizou|desferiu|disparou)\b"
+)
+
+
+def classify_named_spell_references(prose: str) -> dict[str, list[str]]:
+    """Heuristic: titles and discussions are not automatically cast events."""
+    if not isinstance(prose, str):
+        raise TypeError("Literal prose must be text")
+    acts, mentions, unresolved = set(), set(), set()
+    for spell in load_grimoire()["spells"]:
+        pattern = re.compile(r"(?<!\w)" + re.escape(spell["nome"]) + r"(?!\w)", re.I)
+        for match in pattern.finditer(prose):
+            start = prose.rfind("\n", 0, match.start()) + 1
+            end = prose.find("\n", match.end())
+            line = prose[start:len(prose) if end < 0 else end]
+            before = line[:match.start() - start]
+            # A book's title remains a mention even if a character opened it.
+            doc = DOCUMENT_MARKERS.search(line) is not None
+            action = CAST_MARKERS.search(before[-90:]) is not None
+            if doc and not action:
+                mentions.add(spell["id"])
+            elif action or line.strip().startswith("**") or not doc:
+                acts.add(spell["id"])
+                if not action and not doc:
+                    unresolved.add(spell["id"])
+            else:
+                mentions.add(spell["id"])
+    return {
+        "active_or_unresolved": sorted(acts),
+        "noncasting_mentions": sorted(mentions - acts),
+        "requires_human_semantics": sorted(unresolved),
+    }
+
+
+def verify_prior_spell_source(
+    archive_root: Path | None, source_path: str | None, literal_anchor: str | None,
+    *, spell_name: str | None = None,
+) -> dict:
+    """Read-back only; never infer proof from a plausible filename.
+
+    Reject traversal, missing archive roots, symlinks, no archive bytes or
+    unquoted claims. Not responsible for approving whether the earlier feat
+    was a genuine cast; it proves the exact text was already archived.
+    """
+    failure = {"verified": False, "error": "R26_PROVENANCE: no verified previous literal source"}
+    if not isinstance(archive_root, Path) or not archive_root.is_dir():
+        return failure
+    if not isinstance(source_path, str) or not source_path.strip():
+        return failure
+    if not isinstance(literal_anchor, str) or len(literal_anchor.strip()) < 14:
+        return failure
+    if spell_name is not None:
+        if norm(spell_name) not in norm(literal_anchor):
+            return {**failure, "error": "R26_PROVENANCE: wrong spell name in prior source"}
+        learning = re.search(r"(?i)\b(?:aprendeu|ensinou|demonstrou|dominou|treinou|praticou)\b",
+                             literal_anchor) is not None
+        if CAST_MARKERS.search(literal_anchor) is None and not learning:
+            return {**failure, "error": "R26_PROVENANCE: previous mere mention is not learning or casting"}
+    normalized = source_path.replace("\\", "/")
+    p = PurePosixPath(normalized)
+    if p.is_absolute() or ".." in p.parts or "." in p.parts:
+        return failure
+    # An aggregated chapter could contain an unapproved later Part.
+    # Prior-source proof must name the one ratified episode, not chapter totals.
+    if len(p.parts) != 4 or p.parts[0] != "episodes" or (
+        p.parts[2] != "draft" or p.parts[3] != "narrativa_integral.md"
+    ):
+        return failure
+    target = archive_root / normalized
+    canon_record = archive_root / "canon" / "episodes" / (p.parts[1] + ".json")
+    if not canon_record.is_file() or canon_record.is_symlink():
+        return {**failure, "error": "R26_PROVENANCE: archived draft is not a ratified episode"}
+    try:
+        approved = json.loads(canon_record.read_text(encoding="utf-8"))
+    except (ValueError, OSError, UnicodeError):
+        return failure
+    if approved.get("episode_id") != p.parts[1] or approved.get("status") != "FECHADO_GITHUB":
+        return failure
+    if not target.resolve().is_relative_to(archive_root.resolve()) or target.is_symlink():
+        return failure
+    if not target.is_file() or target.stat().st_size > 5_000_000:
+        return failure
+    try:
+        original = target.read_bytes()
+        truth = (literal_anchor in original.decode("utf-8")
+                 and approved.get("story_sha256") == sha256(original).hexdigest())
+    except (OSError, UnicodeError):
+        return failure
+    return {"verified": truth,
+            "error": None if truth else "R26_PROVENANCE: anchor absent in prior source"}
 
 
 def summon_ids_used_in_prose(prose: str) -> list[str]:

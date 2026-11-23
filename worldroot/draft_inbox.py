@@ -44,7 +44,8 @@ def _bytes(obj):
 
 def _assemble(episode_id: str, payload: dict, *, enforce_presentation: bool = True,
               book_end_approval_verified: bool = False, head: dict | None = None,
-              previous_counts: list[int] | None = None):
+              previous_counts: list[int] | None = None,
+              archive_root: Path | None = None):
     if (payload.get("schema") not in ("worldroot-draft-inbox-v1", "worldroot-draft-inbox-v2", "worldroot-draft-inbox-v3")
             or payload.get("delivery_id") != episode_id):
         raise GateError("Inbox schema or immutable ID mismatch")
@@ -83,7 +84,7 @@ def _assemble(episode_id: str, payload: dict, *, enforce_presentation: bool = Tr
             fantasy.get("source_episode_id") if isinstance(fantasy, dict) else None)
         r26_assessment = audit_fantasy(
             prose, fantasy, head_episode_id=previous_source or "",
-            previous_counts=previous_counts)
+            previous_counts=previous_counts, archive_root=archive_root)
         if r26_assessment["errors"]:
             raise GateError("R26 fantasy review failed: " + "; ".join(r26_assessment["errors"])[:450])
     choices = payload.get("choices")
@@ -217,7 +218,8 @@ def r26_assessment_summary(payload: dict, head: dict, root: Path) -> dict:
     report = audit_fantasy(payload["prose"], fantasy,
                            head_episode_id=fantasy.get("source_episode_id", ""),
                            previous_counts=previous_canonical_scene_counts(
-                               root, payload["metadata"]))
+                               root, payload["metadata"]),
+                           archive_root=root)
     return {key: report.get(key) for key in ("ready", "status", "magic", "combat", "wonder",
                                             "spectacle", "character_memory", "repetition")}
 
@@ -255,7 +257,8 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
     draft, files, review_files = _assemble(
         episode_id, payload, enforce_presentation=not existing_manifest.is_file(),
         book_end_approval_verified=book_end_approval_verified, head=head,
-        previous_counts=previous_canonical_scene_counts(root, meta))
+        previous_counts=previous_canonical_scene_counts(root, meta),
+        archive_root=root)
     if existing_manifest.is_file():
         for name, body in files.items():
             existing = root / "episodes" / episode_id / "draft" / name

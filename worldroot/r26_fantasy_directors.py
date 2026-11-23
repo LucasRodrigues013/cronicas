@@ -7,10 +7,12 @@ from __future__ import annotations
 
 import re
 from hashlib import sha256
+from pathlib import Path
+from .r26_authority_guard import scan_creation_prose, validate_authority_bible
 from .reader_experience import assess_experience, scene_blocks
 from .r26_magic_catalog import (
-    get_spell, load_world, load_people, spell_ids_used_in_prose,
-    summon_ids_used_in_prose, validate_codex,
+    get_spell, load_world, load_people, classify_named_spell_references,
+    verify_prior_spell_source, summon_ids_used_in_prose, validate_codex,
 )
 
 SCHEMA = "worldroot-r26-fantasy-review-v1"
@@ -97,8 +99,10 @@ def _wonder(prose: str, body: dict, errors: list[str]) -> dict:
     return {"mode": mode, "evidenced_encounters": len(encounters)}
 
 
-def _magic(prose: str, body: dict, errors: list[str]) -> dict:
-    known = set(spell_ids_used_in_prose(prose))
+def _magic(prose: str, body: dict, errors: list[str],
+           archive_root: Path | None = None) -> dict:
+    references = classify_named_spell_references(prose)
+    known = set(references["active_or_unresolved"])
     used = body.get("spell_uses")
     if not isinstance(used, list):
         errors.append("R26_MAGIC: explicit spell_uses list required, may be empty")
@@ -115,16 +119,43 @@ def _magic(prose: str, body: dict, errors: list[str]) -> dict:
             errors.append("R26_MAGIC: unknown spell " + str(ident))
             continue
         identifiers.append(spell["id"])
-        _anchor(prose, item.get("literal_anchor"), errors, "named spell " + spell["nome"])
+        if spell["id"] in references["noncasting_mentions"]:
+            errors.append("R26_MAGIC: a manual title or discussion cannot be claimed as a cast")
+        literal = item.get("literal_anchor")
+        _anchor(prose, literal, errors, "named spell " + spell["nome"])
+        if not isinstance(literal, str) or spell["nome"].casefold() not in literal.casefold():
+            errors.append("R26_MAGIC: spell name must be quoted in its usage anchor")
         if spell["nome"].casefold() not in prose.casefold():
             errors.append("R26_MAGIC: catalog spell name absent from prose " + spell["id"])
-        if not _words(item.get("caster"), 2):
+        caster = item.get("caster")
+        if not _words(caster, 2):
             errors.append("R26_MAGIC: a specific caster must be named")
+        else:
+            source = str(literal or "")
+            caster_in_anchor = caster.casefold() in source.casefold()
+            extra = item.get("caster_anchor")
+            same_scene = (
+                isinstance(extra, str) and len(extra) >= 12
+                and extra in prose and caster.casefold() in extra.casefold()
+                and any(extra in scene and source in scene
+                        for _, scene in scene_blocks(prose))
+            )
+            if not caster_in_anchor and not same_scene:
+                errors.append("R26_CASTER: caster must be witnessed in literal spell scene")
         status = item.get("learning_status")
         if status not in ("ESTREIA_NARRADA", "JA_CONHECIDA_COM_PROVA"):
             errors.append("R26_MAGIC: distinguish first showing from already demonstrated")
-        if status == "JA_CONHECIDA_COM_PROVA" and not _words(item.get("previous_source"), 20):
-            errors.append("R26_MAGIC: prior demonstrated claim needs an exact source path")
+        if status == "JA_CONHECIDA_COM_PROVA":
+            proof = verify_prior_spell_source(
+                archive_root, item.get("previous_source"),
+                item.get("previous_literal_anchor"), spell_name=spell["nome"])
+            if not proof["verified"]:
+                errors.append(proof["error"])
+            prior_quote = item.get("previous_literal_anchor") or ""
+            if spell["nome"].casefold() not in str(prior_quote).casefold():
+                errors.append("R26_PROVENANCE: previous quote does not name the same spell")
+            if not _words(item.get("previous_source"), 20):
+                errors.append("R26_MAGIC: prior demonstrated claim needs an exact source path")
         if spell["id"].startswith("R26X-"):
             # An atlas is not an already learned skill. The very first
             # appearance must show exactly how this particular tradition was
@@ -145,7 +176,7 @@ def _magic(prose: str, body: dict, errors: list[str]) -> dict:
                         errors.append("R26_ORIGIN: missing known magical lineage")
                     if pathway == "INVENCAO_INSTITUCIONAL":
                         person = lineage.get("inventor")
-                        if not _words(person, 2) or person.casefold().strip() == "lucas":
+                        if not _words(person, 2) or person.casefold().strip().startswith("lucas"):
                             errors.append("R26_ORIGIN: city magic requires a specific non-Lucas inventor")
                         _anchor(prose, lineage.get("prototype_anchor"), errors,
                                 "independent city invention")
@@ -161,6 +192,31 @@ def _magic(prose: str, body: dict, errors: list[str]) -> dict:
             elif status == "JA_CONHECIDA_COM_PROVA":
                 if not _words(item.get("previous_source"), 20) or not _words(item.get("previous_literal_anchor"), 14):
                     errors.append("R26_ORIGIN: reused technique needs prior episode path and literal evidence")
+        if spell["id"].startswith("R26X-") and spell["circulo"] >= 7:
+            # Large regional spells from the template-based 900 must be
+            # individualized in lived fiction, not just assign a bigger rank.
+            craft = item.get("individual_scene_design")
+            if not isinstance(craft, dict):
+                errors.append("R26_SPECIFICITY: high-circle regional magic needs unique scene design")
+            else:
+                for key in ("cultural_signature", "unique_mechanism",
+                            "character_choice_or_meaning"):
+                    if not _words(craft.get(key), 24):
+                        errors.append("R26_SPECIFICITY: incomplete " + key)
+                witness = craft.get("sensory_witness_anchor")
+                consequence = craft.get("world_response_anchor")
+                _anchor(prose, witness, errors, "individual regional magic sensory witness")
+                _anchor(prose, consequence, errors, "individual regional magic consequence")
+                narrative = str(literal or "")
+                if not (
+                    isinstance(witness, str) and isinstance(consequence, str)
+                    and any(
+                        narrative in scene and witness in scene and consequence in scene
+                        and scene.index(narrative) < scene.index(witness) < scene.index(consequence)
+                        for _, scene in scene_blocks(prose)
+                    )
+                ):
+                    errors.append("R26_SPECIFICITY: sensory witness and effect must unfold in one scene")
         if spell["circulo"] >= 7:
             majestic.append(spell["id"])
     # A conjurer may repeat a legitimate spell in separate beats/scenes.
@@ -187,8 +243,15 @@ def _magic(prose: str, body: dict, errors: list[str]) -> dict:
     literal_summons = set(summon_ids_used_in_prose(prose))
     if literal_summons.difference(summon_ids):
         errors.append("R26_SUMMON: unregistered named invocation")
-    return {"spells_used": sorted(set(identifiers)), "summons_used": sorted(set(summon_ids)),
-            "high_circle_spells": majestic, "new_magic_does_not_retroactively_change_canon": True}
+    return {
+        "spells_used": sorted(set(identifiers)),
+        "summons_used": sorted(set(summon_ids)),
+        "high_circle_spells": majestic,
+        "book_title_or_reference_mentions": references["noncasting_mentions"],
+        "potential_unnarrated_incantations_for_human_review":
+            references["requires_human_semantics"],
+        "new_magic_does_not_retroactively_change_canon": True,
+    }
 
 
 def _spectacle(prose: str, body: dict, errors: list[str], high_circles: list[str]) -> dict:
@@ -212,6 +275,11 @@ def _spectacle(prose: str, body: dict, errors: list[str], high_circles: list[str
         second = item.get("reaction_anchor")
         _anchor(prose, first, errors, "spectacle action", body=bodytext)
         _anchor(prose, second, errors, "spectacle reaction", body=bodytext)
+        if isinstance(first, str) and isinstance(second, str) and (
+            first in bodytext and second in bodytext
+            and bodytext.index(second) <= bodytext.index(first)
+        ):
+            errors.append("R26_SPECTACLE: reaction must follow manifested action")
         if first == second:
             errors.append("R26_SPECTACLE: action and reaction must be distinct moments")
         for key in ("dramatic_promise", "sensory_change", "lasting_consequence"):
@@ -275,12 +343,17 @@ def _repeat(prose: str, body: dict, errors: list[str],
 
 
 def audit_fantasy(prose: str, review: dict | None, *,
-                  head_episode_id: str, previous_counts: list[int] | None = None) -> dict:
+                  head_episode_id: str, previous_counts: list[int] | None = None,
+                  archive_root: Path | None = None) -> dict:
     """Evaluates one *actual* chapter prose, never chooses an outcome or writes canon."""
     if not isinstance(prose, str) or not prose.strip():
         raise ValueError("R26 needs source prose")
     errors = []
     codex = validate_codex()
+    authority_bible = validate_authority_bible()
+    if authority_bible["errors"]:
+        return {"errors": authority_bible["errors"],
+                "ready": False, "canon_changed": False}
     if codex["errors"]:
         return {"errors": ["R26_CATALOG: " + "; ".join(codex["errors"])],
                 "ready": False, "canon_changed": False}
@@ -295,7 +368,9 @@ def audit_fantasy(prose: str, review: dict | None, *,
         errors.append("R26_GENESE: GÊNESE remains unrestricted; no arbitrary resource nerfs")
     if review.get("backstage_invisible") is not True:
         errors.append("R26_BACKSTAGE: audit notes cannot be narrator prose")
-    magic = _magic(prose, review, errors)
+    authority = scan_creation_prose(prose)
+    errors.extend(authority["errors"])
+    magic = _magic(prose, review, errors, archive_root=archive_root)
     combat = _combat(prose, review.get("combat", {}), errors)
     wonder = _wonder(prose, review.get("wonder", {}), errors)
     spectacle = _spectacle(prose, review, errors, magic["high_circle_spells"])
@@ -310,7 +385,8 @@ def audit_fantasy(prose: str, review: dict | None, *,
         "codex_counts": {k: codex[k] for k in
                          ("schools", "named_spells", "summons", "creatures", "wonders",
                           "tracked_characters", "historical_feats")},
-        "magic": magic, "combat": combat, "wonder": wonder, "spectacle": spectacle,
+        "magic": magic, "authority": authority, "combat": combat,
+        "wonder": wonder, "spectacle": spectacle,
         "character_memory": characters, "repetition": repetition,
         "canon_changed": False, "independently_human_certified": False,
         "narrative_automatically_generated": False,
