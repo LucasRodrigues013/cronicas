@@ -14,6 +14,8 @@ from .longform_depth import inspect_longform
 from .presentation_guard import presentation_preflight
 from .editorial_guard import quick_preflight
 from .lived_narrative_audit import inspect_lived_narrative
+from .reader_experience import validate_reader_review, previous_canonical_scene_counts
+from .narrative_director import validate_direction
 from .ledger import GateError, ConflictError
 from .book_closure import require_book_end_approval
 
@@ -45,7 +47,7 @@ def audit_release(root: Path, episode_id: str) -> dict:
             raise GateError("No explicit inbox submission for chapter")
         inbox = load(inbox_path)
         checks["inbox_status"] = (
-            inbox.get("schema") == "worldroot-draft-inbox-v1"
+            inbox.get("schema") in ("worldroot-draft-inbox-v1", "worldroot-draft-inbox-v2")
             and inbox.get("delivery_id") == episode_id
             and inbox.get("metadata", {}).get("canon_status") == "RASCUNHO"
         )
@@ -82,7 +84,8 @@ def audit_release(root: Path, episode_id: str) -> dict:
         if not checks["longform_measured"]:
             raise GateError("Narrative word count missing")
         lived_advisory = inspect_lived_narrative(inbox["prose"])
-        visual = presentation_preflight(source)
+        visual = presentation_preflight(
+            source, strict_dialogue=inbox["schema"] == "worldroot-draft-inbox-v2")
         checks["ux_rich_contract"] = not visual["errors"]
         if not checks["ux_rich_contract"]:
             raise GateError("; ".join(visual["errors"]))
@@ -90,6 +93,21 @@ def audit_release(root: Path, episode_id: str) -> dict:
         checks["editorial_structural"] = not literary["errors"]
         if not checks["editorial_structural"]:
             raise GateError("; ".join(literary["errors"]))
+        if inbox["schema"] == "worldroot-draft-inbox-v2":
+            direction = inbox.get("narrative_direction") or {}
+            compass = validate_direction({"episode_id": direction.get("source_episode_id")},
+                                         direction)
+            experience = validate_reader_review(
+                inbox["prose"], inbox.get("reader_review"),
+                previous_counts=previous_canonical_scene_counts(root, inbox["metadata"]))
+            sidecar = pkg / "review" / "experiencia_r25.json"
+            checks["r25_reader_evidence"] = (
+                not compass["errors"] and not experience["errors"]
+                and sidecar.is_file() and load(sidecar).get("assessment") == experience
+                and load(sidecar).get("director") == compass
+            )
+            if not checks["r25_reader_evidence"]:
+                raise GateError("R25: reader evidence or director differs from archive")
         event_records, knowledge_records = review_deltas(root, episode_id, draft)
         checks["semantic_sidecars"] = bool(event_records) and isinstance(knowledge_records, list)
         if not checks["semantic_sidecars"]:
@@ -110,6 +128,9 @@ def audit_release(root: Path, episode_id: str) -> dict:
         "prose_words_approx": prose_words,
         "longform_target_status": (depth.get("status") if "depth" in locals() else None),
         "lived_narrative_advisory": lived_advisory,
+        "r25_contract": ("ENFORCED" if "inbox" in locals() and isinstance(inbox, dict)
+                         and inbox.get("schema") == "worldroot-draft-inbox-v2"
+                         else "LEGACY_READBACK_NO_RETROACTIVE_REJECTION"),
         "story_sha256": source_sha,
         "canon_changed": False,
         "drive_changed": False,

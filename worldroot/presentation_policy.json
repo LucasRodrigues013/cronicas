@@ -1,7 +1,7 @@
 {
   "schema": "worldroot-presentation-policy-v1",
   "project": "CRONICAS_DE_UM_NOVO_MUNDO",
-  "version": 1,
+  "version": 2,
   "approved_at": "2026-11-18",
   "source": "AUTHOR_CRITICISM_PART_III_DESIGN_2026-11-18",
   "scope": "NEW_STORY_DRAFTS_ONLY_NO_RETCON",
@@ -31,7 +31,7 @@
       "id": "UX04",
       "area": "DIALOGOS",
       "level": "OBRIGATORIO",
-      "rule": "Nomes destacados, travessao e vozes individuais; SISTEMA/NÓX sem desaparecer ou onisciencia."
+      "rule": "Novos episodios exigem falas diretas com nome destacado, por exemplo **LUCAS —**; fala sem nome e menos de cinco turnos rotulados bloqueiam entrega. Arquivos historicos nao sao reprovados retroativamente."
     },
     {
       "id": "UX05",
@@ -87,6 +87,7 @@
     "new_drafts": "FAIL_CLOSED_ON_STRUCTURAL_VISUAL_ERRORS",
     "legacy_archives": "IMMUTABLE_NO_RETROACTIVE_REJECTION",
     "images": "FORBIDDEN",
-    "drive_sync": "NOT_IMPLIED"
+    "drive_sync": "NOT_IMPLIED",
+    "new_v2_drafts": "R25_NAMED_DIALOGUE_AND_READER_EVIDENCE_HARD_GATE"
   }
 }
