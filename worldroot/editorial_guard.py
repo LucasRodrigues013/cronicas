@@ -68,9 +68,12 @@ def load_policy(path: Path | None = None) -> dict:
     return data
 
 
-def compact_brief(policy: dict, scene_tags=(), max_chars: int = 1750) -> dict:
+def compact_brief(policy: dict, scene_tags=(), max_chars: int = 1750, *, head: dict | None = None) -> dict:
     """Stable small prompt context; no retrieval of 296,900-line historical transcript."""
     validate_policy(policy)
+    if head is not None:
+        from .literary_revision import build_live_brief
+        return build_live_brief(head, policy, max_chars=max_chars)
     if type(max_chars) is not int or max_chars < 320:
         raise ValueError("Context budget too small")
     if isinstance(scene_tags, str):
@@ -115,7 +118,7 @@ def compact_brief(policy: dict, scene_tags=(), max_chars: int = 1750) -> dict:
             "policy_version": policy["version"], "truncated_to_budget": len(selected) < len(active)}
 
 
-def quick_preflight(prose: str, *, policy: dict | None = None, scene_tags=()) -> dict:
+def quick_preflight(prose: str, *, policy: dict | None = None, scene_tags=(), head: dict | None = None) -> dict:
     """Linear-time, low-noise checks. Warnings NEVER silently rewrite or reject art."""
     policy = policy or load_policy()
     validate_policy(policy)
@@ -131,10 +134,18 @@ def quick_preflight(prose: str, *, policy: dict | None = None, scene_tags=()) ->
         notices.append("Short installment: editorial review for full scenes and character interactions")
     if words >= 350 and not re.search(r"(?m)^\s*[\wÀ-ÿ][\wÀ-ÿ .'-]{0,55}\s*[—–]\s*\S", prose):
         notices.append("Review dialogue and character voices; no identifiable NAME — dialogue")
-    selected = compact_brief(policy, scene_tags=scene_tags, max_chars=900)
+    from .literary_revision import review_episode
+    literary = review_episode(prose) if prose.strip() else None
+    if literary and literary["scene_count"] >= 2:
+        notices.extend(literary["notices"])
+    if head is None and re.search(r"\bLIVRO\s+VI\b", prose[:2000], re.I):
+        notices.append("LIT06: HEAD vivo não informado; não reutilizar breve estático da abertura para a continuidade")
+    selected = compact_brief(policy, scene_tags=scene_tags, max_chars=900, head=head)
     return {"status": "BLOQUEADO" if errors else ("REVISAR" if notices else "OK"),
             "errors": errors, "notices": notices, "words": words,
             "policy_version": policy["version"], "consulted_rules": selected["selected_rule_ids"],
+            "editorial_brief_mode": selected.get("mode", "LEGACY_STATIC_NO_HEAD"),
+            "literary_review": literary,
             "semantic_certification": False, "canon_changed": False,
             "fast_path": "LOCAL_DETERMINISTIC_NO_NETWORK"}
 
