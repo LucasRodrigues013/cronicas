@@ -250,7 +250,8 @@ def spell_ids_used_in_prose(prose: str) -> list[str]:
 DOCUMENT_MARKERS = re.compile(
     r"(?i)\b(?:livro|volume|manual|capítulo|titulo|título|manuscrito|"
     r"página|pergaminho|estudo|teoria|catálogo|registro|inscrição|"
-    r"biblioteca|caderno|verbete|hipótese|lenda|crônica|"\n    r"leu|leitura|estudou|pesquisou|ouviu falar|citou|comentou)\b"
+    r"biblioteca|caderno|verbete|hipótese|lenda|crônica|"
+    r"leu|leitura|estudou|pesquisou|ouviu falar|citou|comentou)\b"
 )
 CAST_MARKERS = re.compile(
     r"(?i)\b(?:conjurou|conjurava|pronunciou|lançou|invocou|"
