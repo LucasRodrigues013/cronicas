@@ -12,6 +12,7 @@ from pathlib import Path
 POLICY_PATH = Path(__file__).with_name("presentation_policy.json")
 SCENE = re.compile(r"(?m)^\s*##\s+[IVX]{1,8}\s*[—–-]\s+\S")
 DIALOGUE = re.compile(r"(?m)^\s*\*\*[A-ZÀ-Ÿ][A-ZÀ-Ÿ .'-]{1,36}\s+[—–-]\*\*\s+\S")
+UNLABELED = re.compile(r"(?m)^\s*[—–]\s+\S")
 CLOCK = re.compile(r"(?im)\bDIA\s+\d+\s*[·|—-]\s*\d{1,2}h\d{2}")
 BUTTON = re.compile(r"<button\b", re.I)
 ACTION = re.compile(r"<button\b[^>]*onClick\s*=\s*\{\s*\(\s*\)\s*=>\s*GenUI\.issueNewTurn\s*\(", re.I)
@@ -32,7 +33,8 @@ def load_presentation_policy(path: Path | None = None) -> dict:
     return policy
 
 
-def presentation_preflight(full_text: str, *, policy: dict | None = None) -> dict:
+def presentation_preflight(full_text: str, *, policy: dict | None = None,
+                           strict_dialogue: bool = True) -> dict:
     """Check the VISIBLE installment including checkpoint and choices.
 
     Does not certify the narrative's truth, aesthetics or actual screen rendering.
@@ -50,6 +52,9 @@ def presentation_preflight(full_text: str, *, policy: dict | None = None) -> dic
     scenes = SCENE.findall(s)
     checkpoint_at = upper.rfind("CHECKPOINT")
     choice_at = upper.rfind("ESCOLHA")
+    first_scene_at = s.find(scenes[0]) if scenes else 0
+    prose_end = checkpoint_at if checkpoint_at > first_scene_at else len(s)
+    unlabeled_count = len(UNLABELED.findall(s[first_scene_at:prose_end]))
     checks = {
         "masthead": "CRÔNICAS DE UM NOVO MUNDO" in upper[:2500] and "WORLDROOT" in upper[:2500],
         "book_chapter_part": bool(re.search(r"LIVRO\s+[IVX]+\b", upper[:2500]))
@@ -60,6 +65,7 @@ def presentation_preflight(full_text: str, *, policy: dict | None = None) -> dic
             and "<grid" in s[:3500] and "<box border" in s[:3500],
         "scenes": len(scenes) >= 3,
         "dialogue": len(DIALOGUE.findall(s)) >= 5,
+        "unlabeled_dialogue": unlabeled_count == 0,
         "scene_clocks": len(CLOCK.findall(s)) >= 2,
         "checkpoint": checkpoint_at > 0,
         "rich_checkpoint": checkpoint_at > 0
@@ -78,18 +84,23 @@ def presentation_preflight(full_text: str, *, policy: dict | None = None) -> dic
         "choice_controls": "UX07", "free_control": "UX06",
         "correct_order": "UX05",
     }
+    if strict_dialogue:
+        essential.update({"dialogue": "UX04", "unlabeled_dialogue": "UX04"})
     for key, code in essential.items():
         if not checks[key]:
             errors.append(f"{code}: {key} absent or weak; use approved Part II rich presentation")
-    for key, code in (("scenes", "UX03"), ("scene_clocks", "UX02"),
-                      ("dialogue", "UX04")):
+    for key, code in (("scenes", "UX03"), ("scene_clocks", "UX02")):
         if not checks[key]:
             notices.append(f"{code}: review {key}; structure cannot grade prose")
+    if not strict_dialogue and not checks["dialogue"]:
+        notices.append("UX04: legacy source does not prove speaker attribution")
     if len(BUTTON.findall(s)) > 18:
         notices.append("UX09: excessive interactions distract from literature")
     return {
         "status": "BLOQUEADO" if errors else ("REVISAR" if notices else "OK"),
         "errors": errors, "notices": notices, "checks": checks,
+        "unlabeled_dialogue_count": unlabeled_count,
+        "dialogue_contract_applied": strict_dialogue,
         "policy_version": policy["version"],
         "semantic_certification": False, "screenshot_certification": False,
         "canon_changed": False,

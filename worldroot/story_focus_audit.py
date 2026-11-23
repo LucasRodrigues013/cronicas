@@ -11,6 +11,7 @@ from statistics import median
 
 SCENE = re.compile(r"(?m)^##\s+([IVX]{1,8})\s+[—–-]\s+([^\n]+)$")
 LUCAS_SPEAKS = re.compile(r"(?mi)^\s*\*\*LUCAS\s*[—–-]\*\*")
+UNLABELED_DIALOGUE = re.compile(r"(?m)^\s*[—–]\s+\S")
 TEXT_WORD = re.compile(r"[A-Za-zÀ-ÿ0-9]+(?:['’\-][A-Za-zÀ-ÿ0-9]+)*")
 PRESENTATION_TAG = re.compile(r"</?(?:box|row|col|grid|grid-item|text|title|caption|icon|button|textarea|divider|badge|spacer)(?:\s+[^>]+)?>", re.I)
 SCRIPT_LINE = re.compile(r"(?m)^\s*\{@body\b[^\n]*")
@@ -57,6 +58,7 @@ def inspect_installment(text: str) -> dict:
                 break
         count = _word_count(chunk)
         speakers = len(LUCAS_SPEAKS.findall(chunk))
+        unlabeled = len(UNLABELED_DIALOGUE.findall(chunk))
         clocks = CLOCK.findall(chunk)
         scenes.append({
             "scene": match.group(1),
@@ -64,11 +66,14 @@ def inspect_installment(text: str) -> dict:
             "words_approx": count,
             "lucas_dialogue_lines": speakers,
             "lucas_speaks": speakers > 0,
+            "unlabeled_dialogue_lines": unlabeled,
             "clock_mentions": [{"day": int(d), "time": f"{int(h):02d}h{int(m):02d}"}
                                for d, h, m in clocks if int(h) < 24 and int(m) < 60],
         })
     words = [sc["words_approx"] for sc in scenes]
     focus = sum(sc["lucas_speaks"] for sc in scenes)
+    unattributed = sum(sc["unlabeled_dialogue_lines"] for sc in scenes)
+    attribution_reliable = unattributed == 0
     total = sum(words)
     reference = REFERENCE_II
     alerts = []
@@ -77,10 +82,12 @@ def inspect_installment(text: str) -> dict:
     else:
         if median(words) < 0.70 * reference["median_scene_words_approx"] and len(scenes) >= 5:
             alerts.append("Scenes are noticeably more compressed than Part II; review lived moments, dialogue and consequences")
-        if len(scenes) >= 5 and focus / len(scenes) < 0.70:
+        if attribution_reliable and len(scenes) >= 5 and focus / len(scenes) < 0.70:
             alerts.append("Many scenes lack Lucas dialogue; review protagonist focalization and off-screen interludes")
         if len(scenes) >= 5 and total < 0.60 * reference["scene_words_approx"]:
             alerts.append("Narrative scene volume substantially below the Part II reference; review depth, not a word quota")
+    if not attribution_reliable:
+        alerts.append("Unlabeled dialogue: Lucas speaker share unmeasurable; restore UX04")
     return {
         "status": STATUS,
         "source": "FULL_VISIBLE_CHAPTER_WITH_SCENE_SPLIT",
@@ -89,8 +96,10 @@ def inspect_installment(text: str) -> dict:
         "scene_count": len(scenes),
         "scene_words_approx": total,
         "median_scene_words_approx": median(words) if words else 0,
-        "lucas_dialogue_scenes": focus,
-        "lucas_dialogue_scene_share": round(focus / len(scenes), 3) if scenes else 0,
+        "lucas_dialogue_scenes": focus if attribution_reliable else None,
+        "lucas_dialogue_scene_share": round(focus / len(scenes), 3) if scenes and attribution_reliable else None,
+        "unlabeled_dialogue_lines": unattributed,
+        "speaker_attribution_reliable": attribution_reliable,
         "advisories": alerts,
         "canon_changed": False,
         "semantic_certification": False,

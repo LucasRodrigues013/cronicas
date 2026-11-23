@@ -14,6 +14,7 @@ from .story_focus_audit import SCENE, NON_SCENE, _word_count
 CLOCK = re.compile(r"(?mi)\bDIA\s+(\d{1,4})\s*[·—–-]\s*(\d{1,2})h(\d{2})\b")
 DIALOGUE = re.compile(r"(?mi)^\s*\*\*[A-ZÀ-Ÿ][A-ZÀ-Ÿ .'-]+\s*[—–-]\*\*")
 LUCAS = re.compile(r"(?mi)^\s*\*\*LUCAS\s*[—–-]\*\*")
+UNLABELED = re.compile(r"(?m)^\s*[—–]\s+\S")
 # This is a vocabulary *hint*, NOT a semantic 'technical scene' classifier.
 LOGISTICS = re.compile(
     r"(?i)\b(?:relat[oó]rios?|registros?|reuni[oõ]es?|ensaios?|"
@@ -59,6 +60,7 @@ def inspect_lived_narrative(prose: str) -> dict:
             "clock": clocks[0] if clocks else None,
             "dialogue_lines": len(DIALOGUE.findall(text)),
             "lucas_dialogue_lines": len(LUCAS.findall(text)),
+            "unlabeled_dialogue_lines": len(UNLABELED.findall(text)),
             "procedural_word_hits": len(LOGISTICS.findall(text)),
         })
     days = list(dict.fromkeys(
@@ -69,6 +71,7 @@ def inspect_lived_narrative(prose: str) -> dict:
     short = [x["scene"] for x in scene_rows if x["words_approx"] < 650]
     dialogue = sum(x["dialogue_lines"] for x in scene_rows)
     lucas = sum(x["lucas_dialogue_lines"] for x in scene_rows)
+    unattributed = sum(x["unlabeled_dialogue_lines"] for x in scene_rows)
     number = len(scene_rows)
     short_share = len(short) / number if number else 0.0
     per_thousand = 1000 * procedural_hits / words if words else 0.0
@@ -118,7 +121,9 @@ def inspect_lived_narrative(prose: str) -> dict:
         "short_scenes_under_650": short,
         "short_scene_share": round(short_share, 3),
         "dialogue_lines": dialogue,
-        "lucas_dialogue_lines": lucas,
+        "lucas_dialogue_lines": lucas if not unattributed else None,
+        "unlabeled_dialogue_lines": unattributed,
+        "speaker_attribution_reliable": unattributed == 0,
         "procedural_word_hits": procedural_hits,
         "procedural_hits_per_1000_words": round(per_thousand, 2),
         "scene_signals": scene_rows,
