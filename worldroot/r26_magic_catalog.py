@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import json
 import re
+from hashlib import sha256
 import unicodedata
 from functools import lru_cache
 from pathlib import PurePosixPath
@@ -249,7 +250,7 @@ def spell_ids_used_in_prose(prose: str) -> list[str]:
 DOCUMENT_MARKERS = re.compile(
     r"(?i)\b(?:livro|volume|manual|capítulo|titulo|título|manuscrito|"
     r"página|pergaminho|estudo|teoria|catálogo|registro|inscrição|"
-    r"biblioteca|caderno|verbete|hipótese|lenda|crônica)\b"
+    r"biblioteca|caderno|verbete|hipótese|lenda|crônica|"\n    r"leu|leitura|estudou|pesquisou|ouviu falar|citou|comentou)\b"
 )
 CAST_MARKERS = re.compile(
     r"(?i)\b(?:conjurou|conjurava|pronunciou|lançou|invocou|"
@@ -309,15 +310,30 @@ def verify_prior_spell_source(
     p = PurePosixPath(normalized)
     if p.is_absolute() or ".." in p.parts or "." in p.parts:
         return failure
-    if len(p.parts) < 3 or p.parts[0] not in ("episodes", "chapters"):
+    # An aggregated chapter could contain an unapproved later Part.
+    # Prior-source proof must name the one ratified episode, not chapter totals.
+    if len(p.parts) != 4 or p.parts[0] != "episodes" or (
+        p.parts[2] != "draft" or p.parts[3] != "narrativa_integral.md"
+    ):
         return failure
     target = archive_root / normalized
+    canon_record = archive_root / "canon" / "episodes" / (p.parts[1] + ".json")
+    if not canon_record.is_file() or canon_record.is_symlink():
+        return {**failure, "error": "R26_PROVENANCE: archived draft is not a ratified episode"}
+    try:
+        approved = json.loads(canon_record.read_text(encoding="utf-8"))
+    except (ValueError, OSError, UnicodeError):
+        return failure
+    if approved.get("episode_id") != p.parts[1] or approved.get("status") != "FECHADO_GITHUB":
+        return failure
     if not target.resolve().is_relative_to(archive_root.resolve()) or target.is_symlink():
         return failure
     if not target.is_file() or target.stat().st_size > 5_000_000:
         return failure
     try:
-        truth = literal_anchor in target.read_text(encoding="utf-8")
+        original = target.read_bytes()
+        truth = (literal_anchor in original.decode("utf-8")
+                 and approved.get("story_sha256") == sha256(original).hexdigest())
     except (OSError, UnicodeError):
         return failure
     return {"verified": truth,
