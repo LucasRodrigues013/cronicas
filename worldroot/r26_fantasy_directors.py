@@ -119,6 +119,8 @@ def _magic(prose: str, body: dict, errors: list[str],
             errors.append("R26_MAGIC: unknown spell " + str(ident))
             continue
         identifiers.append(spell["id"])
+        if spell["id"] in references["noncasting_mentions"]:
+            errors.append("R26_MAGIC: a manual title or discussion cannot be claimed as a cast")
         literal = item.get("literal_anchor")
         _anchor(prose, literal, errors, "named spell " + spell["nome"])
         if not isinstance(literal, str) or spell["nome"].casefold() not in literal.casefold():
@@ -149,6 +151,9 @@ def _magic(prose: str, body: dict, errors: list[str],
                 item.get("previous_literal_anchor"))
             if not proof["verified"]:
                 errors.append(proof["error"])
+            prior_quote = item.get("previous_literal_anchor") or ""
+            if spell["nome"].casefold() not in str(prior_quote).casefold():
+                errors.append("R26_PROVENANCE: previous quote does not name the same spell")
             if not _words(item.get("previous_source"), 20):
                 errors.append("R26_MAGIC: prior demonstrated claim needs an exact source path")
         if spell["id"].startswith("R26X-"):
