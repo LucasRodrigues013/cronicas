@@ -148,7 +148,7 @@ def _magic(prose: str, body: dict, errors: list[str],
         if status == "JA_CONHECIDA_COM_PROVA":
             proof = verify_prior_spell_source(
                 archive_root, item.get("previous_source"),
-                item.get("previous_literal_anchor"))
+                item.get("previous_literal_anchor"), spell_name=spell["nome"])
             if not proof["verified"]:
                 errors.append(proof["error"])
             prior_quote = item.get("previous_literal_anchor") or ""

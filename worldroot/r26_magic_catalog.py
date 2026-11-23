@@ -293,6 +293,7 @@ def classify_named_spell_references(prose: str) -> dict[str, list[str]]:
 
 def verify_prior_spell_source(
     archive_root: Path | None, source_path: str | None, literal_anchor: str | None,
+    *, spell_name: str | None = None,
 ) -> dict:
     """Read-back only; never infer proof from a plausible filename.
 
@@ -307,6 +308,13 @@ def verify_prior_spell_source(
         return failure
     if not isinstance(literal_anchor, str) or len(literal_anchor.strip()) < 14:
         return failure
+    if spell_name is not None:
+        if norm(spell_name) not in norm(literal_anchor):
+            return {**failure, "error": "R26_PROVENANCE: wrong spell name in prior source"}
+        learning = re.search(r"(?i)\b(?:aprendeu|ensinou|demonstrou|dominou|treinou|praticou)\b",
+                             literal_anchor) is not None
+        if CAST_MARKERS.search(literal_anchor) is None and not learning:
+            return {**failure, "error": "R26_PROVENANCE: previous mere mention is not learning or casting"}
     normalized = source_path.replace("\\", "/")
     p = PurePosixPath(normalized)
     if p.is_absolute() or ".." in p.parts or "." in p.parts:
