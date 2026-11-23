@@ -20,6 +20,7 @@ from .git_cycle import (load, canonical, sha, check_id, verify_episode,
 from .semantic_gate import require_reviewed_event_evidence
 from .ledger import GateError, ConflictError
 from .editorial_guard import quick_preflight
+from .literary_revision import review_episode
 from .presentation_guard import presentation_preflight
 from .story_focus_audit import inspect_installment
 from .day_arc_audit import inspect_day_arc
@@ -38,7 +39,7 @@ def _bytes(obj):
 
 
 def _assemble(episode_id: str, payload: dict, *, enforce_presentation: bool = True,
-              book_end_approval_verified: bool = False):
+              book_end_approval_verified: bool = False, head: dict | None = None):
     if (payload.get("schema") != "worldroot-draft-inbox-v1"
             or payload.get("delivery_id") != episode_id):
         raise GateError("Inbox schema or immutable ID mismatch")
@@ -73,7 +74,7 @@ def _assemble(episode_id: str, payload: dict, *, enforce_presentation: bool = Tr
 
     # Cheap editorial contract: prohibit image embeds; flag, but never
     # automatically rewrite, short dialogue-free or otherwise unusual scenes.
-    editorial = quick_preflight(prose, scene_tags=payload.get("editorial_tags", ()))
+    editorial = quick_preflight(prose, scene_tags=payload.get("editorial_tags", ()), head=head)
     if editorial["errors"]:
         raise GateError("Authorial editorial policy violated: " + "; ".join(editorial["errors"]))
 
@@ -192,7 +193,7 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
     existing_manifest = root / "episodes" / episode_id / "draft" / "manifesto_imutavel.json"
     draft, files, review_files = _assemble(
         episode_id, payload, enforce_presentation=not existing_manifest.is_file(),
-        book_end_approval_verified=book_end_approval_verified)
+        book_end_approval_verified=book_end_approval_verified, head=head)
     if existing_manifest.is_file():
         for name, body in files.items():
             existing = root / "episodes" / episode_id / "draft" / name
@@ -210,7 +211,7 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
             "narrative_bytes": len(files["narrativa_integral.md"]),
             "events": len(payload["reviewed_events"]), "knowledge": len(payload["reviewed_knowledge"]),
             "changed_file_count": 0, "canon_changed": False, "drive_changed": False,
-            "editorial_preflight": quick_preflight(payload["prose"])["status"],
+            "editorial_preflight": quick_preflight(payload["prose"], head=head)["status"],
             "story_focus_advisory": _focus_receipt(payload["prose"]),
             "day_arc_advisory": inspect_day_arc(payload["prose"]),
             "lived_narrative_advisory": inspect_lived_narrative(payload["prose"]),
@@ -218,6 +219,7 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
             "longform_stage": stage_receipt,
             "presentation_preflight": presentation_preflight(payload["full_text"]),
             "dynamic_scene_advisory": inspect_draft_dynamics(payload["prose"], payload["metadata"]),
+            "literary_precision_advisory": review_episode(payload["prose"]),
         }
     if head.get("book_closed") is True:
         from .book_opening import require_book_open_approval
@@ -262,13 +264,14 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
         "narrative_bytes": len(files["narrativa_integral.md"]),
         "events": len(event_records), "knowledge": len(knowledge_records),
         "changed_file_count": len(changed), "canon_changed": False, "drive_changed": False,
-        "editorial_preflight": quick_preflight(payload["prose"])["status"],
+        "editorial_preflight": quick_preflight(payload["prose"], head=head)["status"],
             "story_focus_advisory": _focus_receipt(payload["prose"]),
             "day_arc_advisory": inspect_day_arc(payload["prose"]),
             "lived_narrative_advisory": inspect_lived_narrative(payload["prose"]),
             "longform_depth": inspect_longform(payload["prose"]),
             "longform_stage": stage_receipt,
             "presentation_preflight": presentation_preflight(payload["full_text"]),
+            "literary_precision_advisory": review_episode(payload["prose"]),
     }
 
 
