@@ -269,5 +269,32 @@ def print_stats() -> dict:
     return validate_codex()
 
 
+def main(argv: list[str] | None = None) -> int:
+    """Query 1,020 spells directly without opening huge JSON in an editor."""
+    import argparse
+    parser = argparse.ArgumentParser(description="WORLDROOT R26.1 1020 spell atlas")
+    parser.add_argument("--list", action="store_true", help="search the indexed spells")
+    parser.add_argument("--school", default=None, help="school identifier")
+    parser.add_argument("--circle", type=int, default=None, help="circle 0 to 9")
+    parser.add_argument("--search", default="", help="spell name, effect or counterplay")
+    parser.add_argument("--limit", type=int, default=30)
+    parser.add_argument("--format", choices=("json", "table"), default="table")
+    args = parser.parse_args(argv)
+    if not args.list:
+        print(json.dumps(print_stats(), ensure_ascii=False, indent=2))
+        return 0
+    spells = search_spells(args.search, school=args.school,
+                           circle=args.circle, limit=args.limit)
+    if args.format == "json":
+        print(json.dumps(spells, ensure_ascii=False, indent=2))
+    else:
+        print("ID | Círculo | Nome | Escola | Linhagem")
+        for spell in spells:
+            print(" | ".join((spell["id"], str(spell["circulo"]),
+                              spell["nome"], spell["escola"],
+                              spell.get("linhagem", "R26 ORIGINAL"))))
+    return 0
+
+
 if __name__ == "__main__":
-    print(json.dumps(print_stats(), ensure_ascii=False, indent=2))
+    raise SystemExit(main())

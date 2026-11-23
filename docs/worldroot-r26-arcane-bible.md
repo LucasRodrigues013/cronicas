@@ -32,6 +32,7 @@ Nenhum Círculo é fórmula de dano, nível total de personagem, limite da imagi
 ## 4. Catálogo no GitHub
 
 - worldroot/r26/grimoire.json — 12 escolas, 120 magias originais com nome, círculo, efeito, assinatura sensorial, exigência situacional, lacuna de contrajogo e candidatos de estudo.
+- **R26.1 ADENDO APROVADO:** worldroot/r26/grimoire_regional_900.json acrescenta 900 magias em 18 tradições regionais, completando 1.020 nomeadas. Das 900, 200 são possibilidades institucionais de Três Arcos, não técnicas já inventadas. Governança integral: docs/worldroot-r26-1-atlas-milenar.md.
 - worldroot/r26/world_codex.json — 16 invocações, 12 criaturas e 12 fenômenos/locais para aventuras; tudo PROPOSTO, sem falsa cartografia.
 - worldroot/r26/character_memory.json — 25 perfis resumidos com vínculos, voz, local conhecido ou desconhecido, identidade e alertas.
 - worldroot/r26/source_feats.json — 10 feitos canônicos descritos e 1 feito apenas de rascunho D563, todos com fontes literais. É índice inicial, NÃO cobertura integral do Livro I ao VI.
