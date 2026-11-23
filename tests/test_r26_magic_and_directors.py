@@ -45,8 +45,12 @@ class R26MagicTests(unittest.TestCase):
     def test_grimoire_is_complete_original_and_still_proposed(self):
         report = validate_codex()
         self.assertEqual(report["status"], "OK", report)
-        self.assertEqual(report["schools"], 12)
-        self.assertEqual(report["named_spells"], 120)
+        self.assertEqual(report["schools"], 30)
+        self.assertEqual(report["regional_new_spells"], 900)
+        self.assertEqual(report["regional_lineages"], 90)
+        self.assertEqual(report["regional_unique_mechanisms"], 90)
+        self.assertEqual(report["proposed_three_arcos_spells"], 200)
+        self.assertEqual(report["named_spells"], 1020)
         self.assertEqual(report["summons"], 16)
         self.assertEqual(report["wonders"], 12)
         self.assertEqual(report["creatures"], 12)
@@ -62,6 +66,7 @@ class R26MagicTests(unittest.TestCase):
         for school in book["schools"]:
             spells = [s for s in book["spells"] if s["escola"] == school["id"]]
             self.assertEqual({s["circulo"] for s in spells}, set(range(10)))
+            self.assertIn(len(spells), (10, 50))
             self.assertTrue(all(s.get("contrajogo_ou_lacuna") for s in spells))
         self.assertEqual(get_spell("Catedral do Céu Partilhado")["escola"], "AEROMANCIA")
         self.assertEqual(get_spell("Coroa do Mar Invertido")["circulo"], 9)
@@ -69,6 +74,65 @@ class R26MagicTests(unittest.TestCase):
         self.assertTrue(search_spells("névoa"))
         self.assertTrue(load_people()["profiles"])
         self.assertTrue(load_world()["invocations"])
+
+    def test_original_120_unchanged_and_expansion_not_autocanon(self):
+        from worldroot.r26_magic_catalog import load_regional_atlas
+        self.assertEqual(len(load_regional_atlas()["spells"]), 900)
+        self.assertEqual(len([x for x in load_grimoire()["spells"]
+                              if x["id"].startswith("R26-")]), 120)
+        self.assertEqual(len([x for x in load_grimoire()["spells"]
+                              if x["id"].startswith("R26X-")]), 900)
+        expanded = get_spell("R26X-AERUN_ESTUDOS-F1-C0")
+        self.assertIsNotNone(expanded)
+        self.assertEqual(expanded["inventor_personagem"], "NAO_ATRIBUIDO")
+        self.assertEqual(expanded["status"], "R26_PROPOSTO_NAO_CANONICO")
+        self.assertEqual(expanded["evidencia_de_aprendizado"], "AUSENTE_ATÉ_NARRAÇÃO_COM_FONTE")
+        self.assertTrue(search_spells(school="AERUN_ESTUDOS"))
+        self.assertEqual(len(search_spells(school="AERUN_ESTUDOS", limit=100)), 50)
+
+
+    def test_new_city_spell_cannot_appear_without_a_citizen_inventor(self):
+        name = get_spell("R26X-FORJA_AURORA_ESTUDOS-F1-C0")["nome"]
+        story = PROSE + "\nBrannik pronuncia " + name + " e todos observam a marca.\n"
+        info = {"spell_id": "R26X-FORJA_AURORA_ESTUDOS-F1-C0",
+                "literal_anchor": "Brannik pronuncia " + name + " e todos observam a marca.",
+                "caster": "BRANNIK", "learning_status": "ESTREIA_NARRADA"}
+        denied = audit_fantasy(story, fantasy(spell_uses=[info]), head_episode_id=HEAD)
+        self.assertFalse(denied["ready"])
+        self.assertTrue(any("R26_ORIGIN" in x for x in denied["errors"]))
+        proto = "Brannik mediu primeiro o metal com sua equipe, testando cinco ligas sem Lucas."
+        story = story + proto + "\n"
+        info["acquisition"] = {
+            "pathway": "INVENCAO_INSTITUCIONAL",
+            "school_lineage": "Runotecnologia da Forja Aurora",
+            "inventor": "BRANNIK",
+            "literal_origin_anchor": proto,
+            "prototype_anchor": proto,
+            "not_automatically_invented_by_lucas": True,
+        }
+        granted = audit_fantasy(story, fantasy(spell_uses=[info]), head_episode_id=HEAD)
+        self.assertTrue(granted["ready"], granted["errors"])
+        self.assertFalse(granted["magic_proposals_autocanonized"])
+
+    def test_new_regional_spell_requires_tradition_discovery(self):
+        new = get_spell("R26X-GEADA_SELKARA-F1-C2")
+        anchor = "A pesquisadora nomeou " + new["nome"] + " diante da aldeia."
+        source = "Uma anciã de Selkara transmitiu à jovem o rito de cristais de gelo."
+        story = PROSE + "\n" + source + "\n" + anchor + "\n"
+        entry = {"spell_id": new["id"], "caster": "PESQUISADORA",
+                 "literal_anchor": anchor, "learning_status": "ESTREIA_NARRADA",
+                 "acquisition": {
+                     "pathway": "ENSINO_DE_TRADICAO",
+                     "school_lineage": "Cristalomancia histórica de Selkara",
+                     "literal_origin_anchor": source
+                 }}
+        granted = audit_fantasy(story, fantasy(spell_uses=[entry]),
+                                head_episode_id=HEAD)
+        self.assertTrue(granted["ready"], granted["errors"])
+        entry.pop("acquisition")
+        denied = audit_fantasy(story, fantasy(spell_uses=[entry]),
+                               head_episode_id=HEAD)
+        self.assertTrue(any("R26_ORIGIN" in e for e in denied["errors"]))
 
     def test_invented_spells_never_autocanonize_from_simple_mentions(self):
         story = PROSE.replace("três correntes de ar",

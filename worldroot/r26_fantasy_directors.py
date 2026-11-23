@@ -125,6 +125,42 @@ def _magic(prose: str, body: dict, errors: list[str]) -> dict:
             errors.append("R26_MAGIC: distinguish first showing from already demonstrated")
         if status == "JA_CONHECIDA_COM_PROVA" and not _words(item.get("previous_source"), 20):
             errors.append("R26_MAGIC: prior demonstrated claim needs an exact source path")
+        if spell["id"].startswith("R26X-"):
+            # An atlas is not an already learned skill. The very first
+            # appearance must show exactly how this particular tradition was
+            # accessed, taught, discovered or independently invented.
+            if status == "ESTREIA_NARRADA":
+                lineage = item.get("acquisition") or {}
+                if not isinstance(lineage, dict):
+                    errors.append("R26_ORIGIN: acquisition must be a structured source")
+                else:
+                    pathway = lineage.get("pathway")
+                    if pathway not in ("INVENCAO_INSTITUCIONAL",
+                                       "ENSINO_DE_TRADICAO", "DESCOBERTA",
+                                       "RITO_CULTURAL_APRENDIDO"):
+                        errors.append("R26_ORIGIN: missing justified path to spell")
+                    _anchor(prose, lineage.get("literal_origin_anchor"), errors,
+                            "magical origin of " + spell["nome"])
+                    if not _words(lineage.get("school_lineage"), 12):
+                        errors.append("R26_ORIGIN: missing known magical lineage")
+                    if pathway == "INVENCAO_INSTITUCIONAL":
+                        person = lineage.get("inventor")
+                        if not _words(person, 2) or person.casefold().strip() == "lucas":
+                            errors.append("R26_ORIGIN: city magic requires a specific non-Lucas inventor")
+                        _anchor(prose, lineage.get("prototype_anchor"), errors,
+                                "independent city invention")
+                        if lineage.get("not_automatically_invented_by_lucas") is not True:
+                            errors.append("R26_ORIGIN: no auto-invention by Lucas")
+                        if not spell.get("origem", "").startswith("Três Arcos"):
+                            errors.append("R26_ORIGIN: institutional origin outside established city")
+                    elif spell.get("origem", "").startswith("Três Arcos"):
+                        # Residents may LEARN foreign traditions; however this
+                        # does not retroactively make a city-origin invention
+                        # already exist without someone developing it.
+                        errors.append("R26_ORIGIN: new Three Arches methods need narrated research")
+            elif status == "JA_CONHECIDA_COM_PROVA":
+                if not _words(item.get("previous_source"), 20) or not _words(item.get("previous_literal_anchor"), 14):
+                    errors.append("R26_ORIGIN: reused technique needs prior episode path and literal evidence")
         if spell["circulo"] >= 7:
             majestic.append(spell["id"])
     # A conjurer may repeat a legitimate spell in separate beats/scenes.
