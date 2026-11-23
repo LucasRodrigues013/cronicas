@@ -45,8 +45,10 @@ class R26MagicTests(unittest.TestCase):
     def test_grimoire_is_complete_original_and_still_proposed(self):
         report = validate_codex()
         self.assertEqual(report["status"], "OK", report)
-        self.assertEqual(report["schools"], 12)
-        self.assertEqual(report["named_spells"], 120)
+        self.assertEqual(report["schools"], 30)
+        self.assertEqual(report["regional_new_spells"], 900)
+        self.assertEqual(report["regional_lineages"], 90)
+        self.assertEqual(report["named_spells"], 1020)
         self.assertEqual(report["summons"], 16)
         self.assertEqual(report["wonders"], 12)
         self.assertEqual(report["creatures"], 12)
@@ -62,6 +64,7 @@ class R26MagicTests(unittest.TestCase):
         for school in book["schools"]:
             spells = [s for s in book["spells"] if s["escola"] == school["id"]]
             self.assertEqual({s["circulo"] for s in spells}, set(range(10)))
+            self.assertIn(len(spells), (10, 50))
             self.assertTrue(all(s.get("contrajogo_ou_lacuna") for s in spells))
         self.assertEqual(get_spell("Catedral do Céu Partilhado")["escola"], "AEROMANCIA")
         self.assertEqual(get_spell("Coroa do Mar Invertido")["circulo"], 9)
@@ -69,6 +72,21 @@ class R26MagicTests(unittest.TestCase):
         self.assertTrue(search_spells("névoa"))
         self.assertTrue(load_people()["profiles"])
         self.assertTrue(load_world()["invocations"])
+
+    def test_original_120_unchanged_and_expansion_not_autocanon(self):
+        from worldroot.r26_magic_catalog import load_regional_atlas
+        self.assertEqual(len(load_regional_atlas()["spells"]), 900)
+        self.assertEqual(len([x for x in load_grimoire()["spells"]
+                              if x["id"].startswith("R26-")]), 120)
+        self.assertEqual(len([x for x in load_grimoire()["spells"]
+                              if x["id"].startswith("R26X-")]), 900)
+        expanded = get_spell("R26X-AERUN_ESTUDOS-F1-C0")
+        self.assertIsNotNone(expanded)
+        self.assertEqual(expanded["inventor_personagem"], "NAO_ATRIBUIDO")
+        self.assertEqual(expanded["status"], "R26_PROPOSTO_NAO_CANONICO")
+        self.assertEqual(expanded["evidencia_de_aprendizado"], "AUSENTE_ATÉ_NARRAÇÃO_COM_FONTE")
+        self.assertTrue(search_spells(school="AERUN_ESTUDOS"))
+        self.assertEqual(len(search_spells(school="AERUN_ESTUDOS", limit=100)), 50)
 
     def test_invented_spells_never_autocanonize_from_simple_mentions(self):
         story = PROSE.replace("três correntes de ar",

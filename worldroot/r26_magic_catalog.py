@@ -8,11 +8,13 @@ from __future__ import annotations
 import json
 import re
 import unicodedata
+from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
 BASE = Path(__file__).resolve().parent / "r26"
 GRIMOIRE = BASE / "grimoire.json"
+GRIMOIRE_EXPANSION = BASE / "grimoire_regional_900.json"
 WORLDS = BASE / "world_codex.json"
 CHARACTERS = BASE / "character_memory.json"
 FEATS = BASE / "source_feats.json"
@@ -31,11 +33,40 @@ def norm(value: str) -> str:
     return "".join(x for x in decomposed if not unicodedata.combining(x)).casefold()
 
 
+@lru_cache(maxsize=1)
+def load_regional_atlas() -> dict[str, Any]:
+    expansion = _data(GRIMOIRE_EXPANSION)
+    if expansion.get("schema") != "worldroot-r26-regional-atlas-expansion-v1":
+        raise ValueError("Wrong R26.1 atlas expansion schema")
+    if expansion.get("base_grimoire") != "worldroot/r26/grimoire.json":
+        raise ValueError("Wrong parent grimoire reference")
+    return expansion
+
+
+@lru_cache(maxsize=1)
 def load_grimoire() -> dict[str, Any]:
+    """Combined read-only view: preserves original 120 entries unchanged."""
     book = _data(GRIMOIRE)
     if book.get("schema") != "worldroot-r26-arcane-grimoire-v1":
         raise ValueError("Wrong R26 grimoire schema")
-    return book
+    expansion = load_regional_atlas()
+    # Normalize expanded entries to the original API; the source files remain distinct.
+    new_spells = [
+        {**spell,
+         "manifestacao_sensorial": spell["assinatura_sensorial"],
+         "exigencia_situacional": spell["substrato_necessario"],
+         "contrajogo_ou_lacuna": spell["contrajogo"]}
+        for spell in expansion["spells"]
+    ]
+    return {**book, "schools": [*book["schools"], *expansion["schools"]],
+            "spells": [*book["spells"], *new_spells],
+            "regional_expansion": {
+                "schema": expansion["schema"],
+                "additions": len(new_spells),
+                "lineages": sum(len(x["familias"]) for x in expansion["schools"]),
+                "new_school_count": len(expansion["schools"]),
+                "newly_canonical_spells": 0,
+            }}
 
 
 def load_world() -> dict[str, Any]:
@@ -65,10 +96,10 @@ def validate_codex() -> dict[str, Any]:
         load_grimoire(), load_world(), load_people(), load_feats())
     schools = book.get("schools", [])
     spells = book.get("spells", [])
-    if not isinstance(schools, list) or len(schools) < 10:
+    if not isinstance(schools, list) or len(schools) != 30:
         errors.append("MAG01: missing original schools")
         schools = []
-    if not isinstance(spells, list) or len(spells) < 100:
+    if not isinstance(spells, list) or len(spells) != 1020:
         errors.append("MAG02: insufficient named spell coverage")
         spells = []
     school_ids = {x.get("id") for x in schools}
@@ -80,8 +111,13 @@ def validate_codex() -> dict[str, Any]:
         errors.append("MAG04: duplicate spell name or ID")
     for school in schools:
         circles = [s.get("circulo") for s in spells if s.get("escola") == school["id"]]
-        if sorted(circles) != list(range(10)):
-            errors.append("MAG05: each school must offer circles 0..IX: " + school["id"])
+        expected_per_circle = 1 if school["id"] in {
+            x["id"] for x in _data(GRIMOIRE)["schools"]} else 5
+        if any(circles.count(i) != expected_per_circle for i in range(10)):
+            errors.append("MAG05: invalid circle density for " + school["id"])
+    atlas = load_regional_atlas()
+    if len(atlas.get("schools", [])) != 18 or len(atlas.get("spells", [])) != 900:
+        errors.append("MAG10: altered regional atlas count")
     for entry in spells:
         if entry.get("escola") not in school_ids or entry.get("status") != SPELL_STATUS:
             errors.append("MAG06: spell improperly presented as canon: " + str(entry.get("id")))
@@ -125,6 +161,9 @@ def validate_codex() -> dict[str, Any]:
         "errors": errors,
         "schools": len(schools),
         "named_spells": len(spells),
+        "regional_new_spells": len(atlas.get("spells", [])),
+        "regional_lineages": book["regional_expansion"]["lineages"],
+        "proven_ownership_from_regional_expansion": 0,
         "summons": len(world.get("invocations", [])),
         "creatures": len(world.get("creatures", [])),
         "wonders": len(world.get("wonders", [])),
@@ -139,6 +178,7 @@ def validate_codex() -> dict[str, Any]:
     }
 
 
+@lru_cache(maxsize=1500)
 def get_spell(identifier: str) -> dict | None:
     if not isinstance(identifier, str) or not identifier.strip():
         raise ValueError("Spell identifier must be nonempty")
