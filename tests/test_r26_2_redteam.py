@@ -4,7 +4,7 @@ These deliberately expect the correct future behavior and should fail against
 unrepaired R26.1. Re-run unchanged after repair for a real red-to-green trace.
 """
 import unittest
-from tests.test_r26_magic_and_directors import fantasy, PROSE, HEAD
+from test_r26_magic_and_directors import fantasy, PROSE, HEAD
 from worldroot.r26_fantasy_directors import audit_fantasy
 from worldroot.r26_magic_catalog import get_spell
 
