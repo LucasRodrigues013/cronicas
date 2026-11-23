@@ -115,7 +115,8 @@ def audit_release(root: Path, episode_id: str) -> dict:
             fantasy = inbox.get("fantasy_review") or {}
             fantasy_review = audit_fantasy(
                 inbox["prose"], fantasy, head_episode_id=fantasy.get("source_episode_id", ""),
-                previous_counts=previous_canonical_scene_counts(root, inbox["metadata"]))
+                previous_counts=previous_canonical_scene_counts(root, inbox["metadata"]),
+                archive_root=root)
             fantasy_sidecar = pkg / "review" / "fantasia_r26.json"
             checks["r26_fantasy_evidence"] = (
                 fantasy_review.get("ready") is True
