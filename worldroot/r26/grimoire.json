@@ -1,0 +1,2835 @@
+{
+  "schema": "worldroot-r26-arcane-grimoire-v1",
+  "universe": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "mode": "R26_WORLD_BIBLE_PROPOSAL_NOT_NARRATED",
+  "author_authorization": "PEDIDO_2026-11-22_IMPLEMENTAR_GRIMORIO_E_MOTOR",
+  "counts": {
+    "schools": 12,
+    "spells": 120
+  },
+  "ranks": [
+    {
+      "circle": 0,
+      "title": "Faísca",
+      "reach": "TOQUE",
+      "duration": "INSTANTÂNEO",
+      "purpose": "observação, conforto e gesto"
+    },
+    {
+      "circle": 1,
+      "title": "Aprendiz",
+      "reach": "PESSOAL",
+      "duration": "BREVE",
+      "purpose": "uma pessoa ou objeto"
+    },
+    {
+      "circle": 2,
+      "title": "Praticante",
+      "reach": "PEQUENO_GRUPO",
+      "duration": "BREVE",
+      "purpose": "movimento local"
+    },
+    {
+      "circle": 3,
+      "title": "Especialista",
+      "reach": "AMBIENTE",
+      "duration": "CENA",
+      "purpose": "duelo e exploração"
+    },
+    {
+      "circle": 4,
+      "title": "Mestre",
+      "reach": "EDIFÍCIO",
+      "duration": "CENA",
+      "purpose": "intervenção simultânea"
+    },
+    {
+      "circle": 5,
+      "title": "Alto Mestre",
+      "reach": "QUARTEIRÃO",
+      "duration": "RITUAL_OU_CENA",
+      "purpose": "técnica distinta"
+    },
+    {
+      "circle": 6,
+      "title": "Arquimago",
+      "reach": "CAMPO",
+      "duration": "RITUAL_OU_CENA",
+      "purpose": "conflito de frente"
+    },
+    {
+      "circle": 7,
+      "title": "Grande Arcano",
+      "reach": "VALE",
+      "duration": "RITUAL",
+      "purpose": "marco regional"
+    },
+    {
+      "circle": 8,
+      "title": "Arqui-Ritual",
+      "reach": "CIDADE",
+      "duration": "RITUAL",
+      "purpose": "fenômeno urbano"
+    },
+    {
+      "circle": 9,
+      "title": "Maravilha Territorial",
+      "reach": "REGIÃO",
+      "duration": "RITUAL_PROLONGADO",
+      "purpose": "fenômeno regional, não garantido"
+    }
+  ],
+  "special_authorities": [
+    {
+      "id": "CREATION_GENESE",
+      "nome": "CREATION / GÊNESE",
+      "classification": "FORA_DA_ESCALA_0_IX",
+      "canonical_status": "CANON_DEMONSTRATED",
+      "notes": "Autoridade plena de Lucas. Sem introdução de custo de mana, cancelamento por rank, exaustão arbitrária ou imunidade inimiga. Técnicas comuns e rituais admitem métodos e conhecimento incomparáveis, não poder superior declarado."
+    }
+  ],
+  "schools": [
+    {
+      "id": "HIDROMANCIA",
+      "nome": "Hidromancia das Marés",
+      "assinaturas": [
+        "correntes",
+        "pressão",
+        "vapor e névoa"
+      ],
+      "candidatos": [
+        "conjuradores costeiros",
+        "guardiões dos canais de Calderva"
+      ],
+      "condicao": "requer água acessível ou umidade explicitamente disponível; não cria oceanos do nada",
+      "status": "R26_PROPOSTO_NAO_CANONICO"
+    },
+    {
+      "id": "PIROARCANA",
+      "nome": "Piroarcana das Brasas",
+      "assinaturas": [
+        "chama",
+        "temperatura",
+        "ignição simbólica"
+      ],
+      "candidatos": [
+        "magos das forjas de Kharum",
+        "conjuradores de guerra independentes"
+      ],
+      "condicao": "a combustão segue matéria e ambiente; aliados e inocentes não são automaticamente poupados",
+      "status": "R26_PROPOSTO_NAO_CANONICO"
+    },
+    {
+      "id": "AEROMANCIA",
+      "nome": "Aeromancia dos Sete Ventos",
+      "assinaturas": [
+        "pressão",
+        "ressonância",
+        "trajetória aérea"
+      ],
+      "candidatos": [
+        "Thaeron (proposta de repertório futuro)",
+        "ordens da Grande Torre de Vélath"
+      ],
+      "condicao": "correntes existentes, altitude e entorno moldam o resultado; não é limite universal de Thaeron",
+      "status": "R26_PROPOSTO_NAO_CANONICO"
+    },
+    {
+      "id": "LITORRUNA",
+      "nome": "Litorruna das Forjas e Montanhas",
+      "assinaturas": [
+        "pedra",
+        "runas",
+        "ressonância mineral"
+      ],
+      "candidatos": [
+        "Tharvek (proposta de repertório futuro)",
+        "mestres rúnicos de Kharum"
+      ],
+      "condicao": "requer minerais, superfícies e inscrições adequadas; não força obediência de seres minerais conscientes",
+      "status": "R26_PROPOSTO_NAO_CANONICO"
+    },
+    {
+      "id": "SILVAMANCIA",
+      "nome": "Silvamancia dos Cânticos Vivos",
+      "assinaturas": [
+        "raízes",
+        "estações",
+        "ecossistemas"
+      ],
+      "candidatos": [
+        "Elyrien (proposta de repertório futuro)",
+        "guardiões das florestas"
+      ],
+      "condicao": "necessita ecossistema e vínculos locais; não comanda todas as florestas nem controla mentes",
+      "status": "R26_PROPOSTO_NAO_CANONICO"
+    },
+    {
+      "id": "FULGURIA",
+      "nome": "Fulguria e Tempestades",
+      "assinaturas": [
+        "cargas",
+        "luz elétrica",
+        "descargas atmosféricas"
+      ],
+      "candidatos": [
+        "observadores de Vélath",
+        "magos de frente desconhecidos"
+      ],
+      "condicao": "cargas e condutores interagem com ambiente; eletricidade não seleciona amigos automaticamente",
+      "status": "R26_PROPOSTO_NAO_CANONICO"
+    },
+    {
+      "id": "RESONANCIA",
+      "nome": "Ressonância e Cânticos de Cristal",
+      "assinaturas": [
+        "som",
+        "harmônicos",
+        "inscrições ressonantes"
+      ],
+      "candidatos": [
+        "Thaeron (pesquisa futura)",
+        "cantores ancestrais",
+        "estudiosos de AERÚN"
+      ],
+      "condicao": "precisa de meio vibratório; não concede informação de origem desconhecida",
+      "status": "R26_PROPOSTO_NAO_CANONICO"
+    },
+    {
+      "id": "UMBRAL",
+      "nome": "Umbralurgia de Sombras",
+      "assinaturas": [
+        "ocultação",
+        "contraste",
+        "rastros"
+      ],
+      "candidatos": [
+        "ordens desconhecidas da sombra",
+        "especialistas independentes"
+      ],
+      "condicao": "sombra não significa viagem instantânea, onisciência ou leitura de almas",
+      "status": "R26_PROPOSTO_NAO_CANONICO"
+    },
+    {
+      "id": "ASTROMANCIA",
+      "nome": "Astromancia das Constelações",
+      "assinaturas": [
+        "luz",
+        "orientação",
+        "ciclos celestes"
+      ],
+      "candidatos": [
+        "mestres do Sétimo Observatório",
+        "guardas das rotas altas"
+      ],
+      "condicao": "não enxerga futuro obrigatório nem redefine destino; leitura celeste pode ser errada",
+      "status": "R26_PROPOSTO_NAO_CANONICO"
+    },
+    {
+      "id": "METAMATERIA",
+      "nome": "Metamatéria e Transmutação Comum",
+      "assinaturas": [
+        "forma",
+        "liga",
+        "estado material"
+      ],
+      "candidatos": [
+        "alquimistas da Forja Aurora",
+        "artífices independentes"
+      ],
+      "condicao": "é tradição arcana comum; não equiparar alcance técnico à GÊNESE/CREATION",
+      "status": "R26_PROPOSTO_NAO_CANONICO"
+    },
+    {
+      "id": "PACTOS",
+      "nome": "Conjuração e Pactos de Entidades",
+      "assinaturas": [
+        "sinais",
+        "vínculos voluntários",
+        "seres independentes"
+      ],
+      "candidatos": [
+        "ordens de pactuantes ainda desconhecidas",
+        "arquimagos com tratados rituais"
+      ],
+      "condicao": "invocar não equivale a fabricar vida consciente, controlar vontade ou prender alma",
+      "status": "R26_PROPOSTO_NAO_CANONICO"
+    },
+    {
+      "id": "TRAVESSIAS",
+      "nome": "Dobras e Travessias Arcanas",
+      "assinaturas": [
+        "distância",
+        "marcos",
+        "limiares"
+      ],
+      "candidatos": [
+        "pesquisadores da Grande Torre",
+        "guardiões de rotas antigas"
+      ],
+      "condicao": "rituais espaciais exigem marcos conhecidos; não servem para transportar NPCs sem jornada narrada",
+      "status": "R26_PROPOSTO_NAO_CANONICO"
+    }
+  ],
+  "spells": [
+    {
+      "id": "R26-HIDROMANCIA-00",
+      "nome": "Fio de Orvalho",
+      "escola": "HIDROMANCIA",
+      "circulo": 0,
+      "grau": "Faísca",
+      "perfil_escala": "TOQUE",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "suspende gotas isoladas e as conduz por gestos pequenos",
+      "manifestacao_sensorial": "A manifestação deve evidenciar correntes de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "requer água acessível ou umidade explicitamente disponível; não cria oceanos do nada",
+      "contrajogo_ou_lacuna": "calor e poeira podem dissipar as gotas",
+      "acesso_candidatos": [
+        "conjuradores costeiros",
+        "guardiões dos canais de Calderva"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-HIDROMANCIA-01",
+      "nome": "Taça Suspensa",
+      "escola": "HIDROMANCIA",
+      "circulo": 1,
+      "grau": "Aprendiz",
+      "perfil_escala": "PESSOAL",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "levita uma porção de água em recipiente sem derramar",
+      "manifestacao_sensorial": "A manifestação deve evidenciar pressão de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "requer água acessível ou umidade explicitamente disponível; não cria oceanos do nada",
+      "contrajogo_ou_lacuna": "movimentos bruscos desfazem a forma",
+      "acesso_candidatos": [
+        "conjuradores costeiros",
+        "guardiões dos canais de Calderva"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-HIDROMANCIA-02",
+      "nome": "Sete Riachos",
+      "escola": "HIDROMANCIA",
+      "circulo": 2,
+      "grau": "Praticante",
+      "perfil_escala": "PEQUENO_GRUPO",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "divide um curso de água controlável em braços separados",
+      "manifestacao_sensorial": "A manifestação deve evidenciar vapor e névoa de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "requer água acessível ou umidade explicitamente disponível; não cria oceanos do nada",
+      "contrajogo_ou_lacuna": "terreno e vazão continuam existindo",
+      "acesso_candidatos": [
+        "conjuradores costeiros",
+        "guardiões dos canais de Calderva"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-HIDROMANCIA-03",
+      "nome": "Trança da Corrente",
+      "escola": "HIDROMANCIA",
+      "circulo": 3,
+      "grau": "Especialista",
+      "perfil_escala": "AMBIENTE",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "forma cordas móveis de água que empurram objetos",
+      "manifestacao_sensorial": "A manifestação deve evidenciar correntes de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "requer água acessível ou umidade explicitamente disponível; não cria oceanos do nada",
+      "contrajogo_ou_lacuna": "massas e atrito oferecem resistência",
+      "acesso_candidatos": [
+        "conjuradores costeiros",
+        "guardiões dos canais de Calderva"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-HIDROMANCIA-04",
+      "nome": "Manto de Névoa",
+      "escola": "HIDROMANCIA",
+      "circulo": 4,
+      "grau": "Mestre",
+      "perfil_escala": "EDIFÍCIO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "espalha névoa densa sobre terreno úmido",
+      "manifestacao_sensorial": "A manifestação deve evidenciar pressão de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "requer água acessível ou umidade explicitamente disponível; não cria oceanos do nada",
+      "contrajogo_ou_lacuna": "ventos e fontes de calor a atravessam",
+      "acesso_candidatos": [
+        "conjuradores costeiros",
+        "guardiões dos canais de Calderva"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-HIDROMANCIA-05",
+      "nome": "Mandíbula da Maré",
+      "escola": "HIDROMANCIA",
+      "circulo": 5,
+      "grau": "Alto Mestre",
+      "perfil_escala": "QUARTEIRÃO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "ergue uma onda em forma de arco para defesa ou investida",
+      "manifestacao_sensorial": "A manifestação deve evidenciar vapor e névoa de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "requer água acessível ou umidade explicitamente disponível; não cria oceanos do nada",
+      "contrajogo_ou_lacuna": "uma praia rasa não fornece a mesma massa",
+      "acesso_candidatos": [
+        "conjuradores costeiros",
+        "guardiões dos canais de Calderva"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-HIDROMANCIA-06",
+      "nome": "Catedral das Correntes",
+      "escola": "HIDROMANCIA",
+      "circulo": 6,
+      "grau": "Arquimago",
+      "perfil_escala": "CAMPO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "modela canais aquáticos em camadas simultâneas sobre um vale",
+      "manifestacao_sensorial": "A manifestação deve evidenciar correntes de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "requer água acessível ou umidade explicitamente disponível; não cria oceanos do nada",
+      "contrajogo_ou_lacuna": "a saída e a continuidade dos fluxos devem ser mapeadas",
+      "acesso_candidatos": [
+        "conjuradores costeiros",
+        "guardiões dos canais de Calderva"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-HIDROMANCIA-07",
+      "nome": "Serpente dos Sete Estuários",
+      "escola": "HIDROMANCIA",
+      "circulo": 7,
+      "grau": "Grande Arcano",
+      "perfil_escala": "VALE",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "convoca uma figura fluida gigantesca de águas reunidas",
+      "manifestacao_sensorial": "A manifestação deve evidenciar pressão de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "requer água acessível ou umidade explicitamente disponível; não cria oceanos do nada",
+      "contrajogo_ou_lacuna": "depende de ligação hidrológica e tem trajetória visível",
+      "acesso_candidatos": [
+        "conjuradores costeiros",
+        "guardiões dos canais de Calderva"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-HIDROMANCIA-08",
+      "nome": "Abismo que Caminha",
+      "escola": "HIDROMANCIA",
+      "circulo": 8,
+      "grau": "Arqui-Ritual",
+      "perfil_escala": "CIDADE",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "desloca temporariamente uma massa de água costeira de grande porte",
+      "manifestacao_sensorial": "A manifestação deve evidenciar vapor e névoa de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "requer água acessível ou umidade explicitamente disponível; não cria oceanos do nada",
+      "contrajogo_ou_lacuna": "não apaga efeitos ecológicos nem garante comando do oceano",
+      "acesso_candidatos": [
+        "conjuradores costeiros",
+        "guardiões dos canais de Calderva"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-HIDROMANCIA-09",
+      "nome": "Coroa do Mar Invertido",
+      "escola": "HIDROMANCIA",
+      "circulo": 9,
+      "grau": "Maravilha Territorial",
+      "perfil_escala": "REGIÃO",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "organiza marés monumentais em uma bacia ou estreito ritualizado",
+      "manifestacao_sensorial": "A manifestação deve evidenciar correntes de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "requer água acessível ou umidade explicitamente disponível; não cria oceanos do nada",
+      "contrajogo_ou_lacuna": "exige costa, estudo, tempo e âncoras, e pode ser contestada por outras marés",
+      "acesso_candidatos": [
+        "conjuradores costeiros",
+        "guardiões dos canais de Calderva"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-PIROARCANA-00",
+      "nome": "Fagulha de Âmbar",
+      "escola": "PIROARCANA",
+      "circulo": 0,
+      "grau": "Faísca",
+      "perfil_escala": "TOQUE",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "acende uma chama de sinalização na palma",
+      "manifestacao_sensorial": "A manifestação deve evidenciar chama de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "a combustão segue matéria e ambiente; aliados e inocentes não são automaticamente poupados",
+      "contrajogo_ou_lacuna": "chuva e vento exigem abrigo",
+      "acesso_candidatos": [
+        "magos das forjas de Kharum",
+        "conjuradores de guerra independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-PIROARCANA-01",
+      "nome": "Pavio Escarlate",
+      "escola": "PIROARCANA",
+      "circulo": 1,
+      "grau": "Aprendiz",
+      "perfil_escala": "PESSOAL",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "conduz chama por uma trilha curta visível",
+      "manifestacao_sensorial": "A manifestação deve evidenciar temperatura de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "a combustão segue matéria e ambiente; aliados e inocentes não são automaticamente poupados",
+      "contrajogo_ou_lacuna": "uma descontinuidade pode interrompê-la",
+      "acesso_candidatos": [
+        "magos das forjas de Kharum",
+        "conjuradores de guerra independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-PIROARCANA-02",
+      "nome": "Arco das Sete Velas",
+      "escola": "PIROARCANA",
+      "circulo": 2,
+      "grau": "Praticante",
+      "perfil_escala": "PEQUENO_GRUPO",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "cria sete fontes de luz e calor para a noite",
+      "manifestacao_sensorial": "A manifestação deve evidenciar ignição simbólica de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "a combustão segue matéria e ambiente; aliados e inocentes não são automaticamente poupados",
+      "contrajogo_ou_lacuna": "a luz denuncia a posição",
+      "acesso_candidatos": [
+        "magos das forjas de Kharum",
+        "conjuradores de guerra independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-PIROARCANA-03",
+      "nome": "Lâmina de Brasa Serena",
+      "escola": "PIROARCANA",
+      "circulo": 3,
+      "grau": "Especialista",
+      "perfil_escala": "AMBIENTE",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "revestimento ígneo controlado numa arma preparada",
+      "manifestacao_sensorial": "A manifestação deve evidenciar chama de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "a combustão segue matéria e ambiente; aliados e inocentes não são automaticamente poupados",
+      "contrajogo_ou_lacuna": "o portador precisa resistir ao calor por meio próprio",
+      "acesso_candidatos": [
+        "magos das forjas de Kharum",
+        "conjuradores de guerra independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-PIROARCANA-04",
+      "nome": "Rosa de Cinzas",
+      "escola": "PIROARCANA",
+      "circulo": 4,
+      "grau": "Mestre",
+      "perfil_escala": "EDIFÍCIO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "dispersa fagulhas em pétalas que revelam movimentos do ar",
+      "manifestacao_sensorial": "A manifestação deve evidenciar temperatura de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "a combustão segue matéria e ambiente; aliados e inocentes não são automaticamente poupados",
+      "contrajogo_ou_lacuna": "espaços sem oxigênio atenuam o efeito",
+      "acesso_candidatos": [
+        "magos das forjas de Kharum",
+        "conjuradores de guerra independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-PIROARCANA-05",
+      "nome": "Muralha da Salamandra Rubra",
+      "escola": "PIROARCANA",
+      "circulo": 5,
+      "grau": "Alto Mestre",
+      "perfil_escala": "QUARTEIRÃO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "levanta barreira de fogo para negar passagem",
+      "manifestacao_sensorial": "A manifestação deve evidenciar ignição simbólica de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "a combustão segue matéria e ambiente; aliados e inocentes não são automaticamente poupados",
+      "contrajogo_ou_lacuna": "fumaça e calor afetam terreno e espectadores",
+      "acesso_candidatos": [
+        "magos das forjas de Kharum",
+        "conjuradores de guerra independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-PIROARCANA-06",
+      "nome": "Tempestade do Forno Antigo",
+      "escola": "PIROARCANA",
+      "circulo": 6,
+      "grau": "Arquimago",
+      "perfil_escala": "CAMPO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "lança colunas de brasas sobre campo desocupado",
+      "manifestacao_sensorial": "A manifestação deve evidenciar chama de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "a combustão segue matéria e ambiente; aliados e inocentes não são automaticamente poupados",
+      "contrajogo_ou_lacuna": "o vento pode espalhar resíduos além do alvo",
+      "acesso_candidatos": [
+        "magos das forjas de Kharum",
+        "conjuradores de guerra independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-PIROARCANA-07",
+      "nome": "Fornalha das Trinta Luas",
+      "escola": "PIROARCANA",
+      "circulo": 7,
+      "grau": "Grande Arcano",
+      "perfil_escala": "VALE",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "mantém forjas de cerco incandescentes por sustentação ritual",
+      "manifestacao_sensorial": "A manifestação deve evidenciar temperatura de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "a combustão segue matéria e ambiente; aliados e inocentes não são automaticamente poupados",
+      "contrajogo_ou_lacuna": "precisa combustível e estrutura compatível",
+      "acesso_candidatos": [
+        "magos das forjas de Kharum",
+        "conjuradores de guerra independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-PIROARCANA-08",
+      "nome": "Sol Ferido de Kharum",
+      "escola": "PIROARCANA",
+      "circulo": 8,
+      "grau": "Arqui-Ritual",
+      "perfil_escala": "CIDADE",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "produz um núcleo ígneo majestoso de alcance urbano",
+      "manifestacao_sensorial": "A manifestação deve evidenciar ignição simbólica de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "a combustão segue matéria e ambiente; aliados e inocentes não são automaticamente poupados",
+      "contrajogo_ou_lacuna": "risco a inocentes exige escolha dramática e preparo",
+      "acesso_candidatos": [
+        "magos das forjas de Kharum",
+        "conjuradores de guerra independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-PIROARCANA-09",
+      "nome": "Trono da Aurora Incendiada",
+      "escola": "PIROARCANA",
+      "circulo": 9,
+      "grau": "Maravilha Territorial",
+      "perfil_escala": "REGIÃO",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "ergue um fenômeno ritual de chamas sobre grande região",
+      "manifestacao_sensorial": "A manifestação deve evidenciar chama de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "a combustão segue matéria e ambiente; aliados e inocentes não são automaticamente poupados",
+      "contrajogo_ou_lacuna": "não pode ser lançado sem testemunhos, âncoras e consequências climáticas",
+      "acesso_candidatos": [
+        "magos das forjas de Kharum",
+        "conjuradores de guerra independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-AEROMANCIA-00",
+      "nome": "Sopro de Vidro",
+      "escola": "AEROMANCIA",
+      "circulo": 0,
+      "grau": "Faísca",
+      "perfil_escala": "TOQUE",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "move páginas e poeira sem tocar nelas",
+      "manifestacao_sensorial": "A manifestação deve evidenciar pressão de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "correntes existentes, altitude e entorno moldam o resultado; não é limite universal de Thaeron",
+      "contrajogo_ou_lacuna": "correntes adversas alteram detalhes",
+      "acesso_candidatos": [
+        "Thaeron (proposta de repertório futuro)",
+        "ordens da Grande Torre de Vélath"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-AEROMANCIA-01",
+      "nome": "Degrau do Ar Quieto",
+      "escola": "AEROMANCIA",
+      "circulo": 1,
+      "grau": "Aprendiz",
+      "perfil_escala": "PESSOAL",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "cria um apoio curto para saltar no vazio",
+      "manifestacao_sensorial": "A manifestação deve evidenciar ressonância de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "correntes existentes, altitude e entorno moldam o resultado; não é limite universal de Thaeron",
+      "contrajogo_ou_lacuna": "mudanças de pressão exigem reajuste",
+      "acesso_candidatos": [
+        "Thaeron (proposta de repertório futuro)",
+        "ordens da Grande Torre de Vélath"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-AEROMANCIA-02",
+      "nome": "Flauta da Brisa Oblíqua",
+      "escola": "AEROMANCIA",
+      "circulo": 2,
+      "grau": "Praticante",
+      "perfil_escala": "PEQUENO_GRUPO",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "desvia flechas leves com rajadas finas",
+      "manifestacao_sensorial": "A manifestação deve evidenciar trajetória aérea de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "correntes existentes, altitude e entorno moldam o resultado; não é limite universal de Thaeron",
+      "contrajogo_ou_lacuna": "massa e velocidade importam",
+      "acesso_candidatos": [
+        "Thaeron (proposta de repertório futuro)",
+        "ordens da Grande Torre de Vélath"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-AEROMANCIA-03",
+      "nome": "Mãos da Tempestade Mansa",
+      "escola": "AEROMANCIA",
+      "circulo": 3,
+      "grau": "Especialista",
+      "perfil_escala": "AMBIENTE",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "sustenta várias pessoas com colchões de ar",
+      "manifestacao_sensorial": "A manifestação deve evidenciar pressão de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "correntes existentes, altitude e entorno moldam o resultado; não é limite universal de Thaeron",
+      "contrajogo_ou_lacuna": "demanda observação dos movimentos protegidos",
+      "acesso_candidatos": [
+        "Thaeron (proposta de repertório futuro)",
+        "ordens da Grande Torre de Vélath"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-AEROMANCIA-04",
+      "nome": "Círculo dos Ventos Esquecidos",
+      "escola": "AEROMANCIA",
+      "circulo": 4,
+      "grau": "Mestre",
+      "perfil_escala": "EDIFÍCIO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "expõe correntes invisíveis como fitas de luz",
+      "manifestacao_sensorial": "A manifestação deve evidenciar ressonância de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "correntes existentes, altitude e entorno moldam o resultado; não é limite universal de Thaeron",
+      "contrajogo_ou_lacuna": "revela também a posição de quem manipula o ar",
+      "acesso_candidatos": [
+        "Thaeron (proposta de repertório futuro)",
+        "ordens da Grande Torre de Vélath"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-AEROMANCIA-05",
+      "nome": "Lança de Pressão Celeste",
+      "escola": "AEROMANCIA",
+      "circulo": 5,
+      "grau": "Alto Mestre",
+      "perfil_escala": "QUARTEIRÃO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "comprime vento em ataque direcional preciso",
+      "manifestacao_sensorial": "A manifestação deve evidenciar trajetória aérea de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "correntes existentes, altitude e entorno moldam o resultado; não é limite universal de Thaeron",
+      "contrajogo_ou_lacuna": "abrigos e alterações de curso podem frustrar a linha",
+      "acesso_candidatos": [
+        "Thaeron (proposta de repertório futuro)",
+        "ordens da Grande Torre de Vélath"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-AEROMANCIA-06",
+      "nome": "Ponte das Nove Correntes",
+      "escola": "AEROMANCIA",
+      "circulo": 6,
+      "grau": "Arquimago",
+      "perfil_escala": "CAMPO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "liga precipícios por túneis de vento estáveis",
+      "manifestacao_sensorial": "A manifestação deve evidenciar pressão de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "correntes existentes, altitude e entorno moldam o resultado; não é limite universal de Thaeron",
+      "contrajogo_ou_lacuna": "as rotas precisam ser harmonizadas com a paisagem",
+      "acesso_candidatos": [
+        "Thaeron (proposta de repertório futuro)",
+        "ordens da Grande Torre de Vélath"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-AEROMANCIA-07",
+      "nome": "Órgão das Mil Alturas",
+      "escola": "AEROMANCIA",
+      "circulo": 7,
+      "grau": "Grande Arcano",
+      "perfil_escala": "VALE",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "faz vales inteiros ressoarem em camadas atmosféricas",
+      "manifestacao_sensorial": "A manifestação deve evidenciar ressonância de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "correntes existentes, altitude e entorno moldam o resultado; não é limite universal de Thaeron",
+      "contrajogo_ou_lacuna": "ecos de montanha podem gerar contrapontos inesperados",
+      "acesso_candidatos": [
+        "Thaeron (proposta de repertório futuro)",
+        "ordens da Grande Torre de Vélath"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-AEROMANCIA-08",
+      "nome": "Catedral do Céu Partilhado",
+      "escola": "AEROMANCIA",
+      "circulo": 8,
+      "grau": "Arqui-Ritual",
+      "perfil_escala": "CIDADE",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "Thaeron poderia desenhar vastas cúpulas móveis de pressão e luz",
+      "manifestacao_sensorial": "A manifestação deve evidenciar trajetória aérea de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "correntes existentes, altitude e entorno moldam o resultado; não é limite universal de Thaeron",
+      "contrajogo_ou_lacuna": "o ritual exige ouvir a resposta do céu e proteger terceiros",
+      "acesso_candidatos": [
+        "Thaeron (proposta de repertório futuro)",
+        "ordens da Grande Torre de Vélath"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-AEROMANCIA-09",
+      "nome": "Nono Horizonte: Abertura das Tempestades",
+      "escola": "AEROMANCIA",
+      "circulo": 9,
+      "grau": "Maravilha Territorial",
+      "perfil_escala": "REGIÃO",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "organiza um fenômeno colossal de ventos sobre horizonte regional",
+      "manifestacao_sensorial": "A manifestação deve evidenciar pressão de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "correntes existentes, altitude e entorno moldam o resultado; não é limite universal de Thaeron",
+      "contrajogo_ou_lacuna": "é ritual proposto, não feito histórico nem garantia de domínio meteorológico",
+      "acesso_candidatos": [
+        "Thaeron (proposta de repertório futuro)",
+        "ordens da Grande Torre de Vélath"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-LITORRUNA-00",
+      "nome": "Cinzel do Silêncio",
+      "escola": "LITORRUNA",
+      "circulo": 0,
+      "grau": "Faísca",
+      "perfil_escala": "TOQUE",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "grava marca temporária que faz a pedra responder ao toque",
+      "manifestacao_sensorial": "A manifestação deve evidenciar pedra de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "requer minerais, superfícies e inscrições adequadas; não força obediência de seres minerais conscientes",
+      "contrajogo_ou_lacuna": "a marca exige superfície acessível",
+      "acesso_candidatos": [
+        "Tharvek (proposta de repertório futuro)",
+        "mestres rúnicos de Kharum"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-LITORRUNA-01",
+      "nome": "Pulso do Basalto",
+      "escola": "LITORRUNA",
+      "circulo": 1,
+      "grau": "Aprendiz",
+      "perfil_escala": "PESSOAL",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "sente vibrações transmitidas por rochas",
+      "manifestacao_sensorial": "A manifestação deve evidenciar runas de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "requer minerais, superfícies e inscrições adequadas; não força obediência de seres minerais conscientes",
+      "contrajogo_ou_lacuna": "não revela mentes ou segredos remotos",
+      "acesso_candidatos": [
+        "Tharvek (proposta de repertório futuro)",
+        "mestres rúnicos de Kharum"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-LITORRUNA-02",
+      "nome": "Escada de Ardósia",
+      "escola": "LITORRUNA",
+      "circulo": 2,
+      "grau": "Praticante",
+      "perfil_escala": "PEQUENO_GRUPO",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "ergue degraus numa parede rochosa",
+      "manifestacao_sensorial": "A manifestação deve evidenciar ressonância mineral de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "requer minerais, superfícies e inscrições adequadas; não força obediência de seres minerais conscientes",
+      "contrajogo_ou_lacuna": "a rocha precisa sustentar o próprio peso",
+      "acesso_candidatos": [
+        "Tharvek (proposta de repertório futuro)",
+        "mestres rúnicos de Kharum"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-LITORRUNA-03",
+      "nome": "Juramento de Ferro Vivo",
+      "escola": "LITORRUNA",
+      "circulo": 3,
+      "grau": "Especialista",
+      "perfil_escala": "AMBIENTE",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "temporariamente endurece arma ou ferramenta entalhada",
+      "manifestacao_sensorial": "A manifestação deve evidenciar pedra de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "requer minerais, superfícies e inscrições adequadas; não força obediência de seres minerais conscientes",
+      "contrajogo_ou_lacuna": "o metal ruim não se torna lendário sem trabalho",
+      "acesso_candidatos": [
+        "Tharvek (proposta de repertório futuro)",
+        "mestres rúnicos de Kharum"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-LITORRUNA-04",
+      "nome": "Mãos do Granito Acordado",
+      "escola": "LITORRUNA",
+      "circulo": 4,
+      "grau": "Mestre",
+      "perfil_escala": "EDIFÍCIO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "move blocos grandes como uma oficina gigante",
+      "manifestacao_sensorial": "A manifestação deve evidenciar runas de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "requer minerais, superfícies e inscrições adequadas; não força obediência de seres minerais conscientes",
+      "contrajogo_ou_lacuna": "o movimento deixa rastros e muda o terreno",
+      "acesso_candidatos": [
+        "Tharvek (proposta de repertório futuro)",
+        "mestres rúnicos de Kharum"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-LITORRUNA-05",
+      "nome": "Martelo do Primeiro Eco",
+      "escola": "LITORRUNA",
+      "circulo": 5,
+      "grau": "Alto Mestre",
+      "perfil_escala": "QUARTEIRÃO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "projeta uma onda sísmica por instrumento inscrito",
+      "manifestacao_sensorial": "A manifestação deve evidenciar ressonância mineral de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "requer minerais, superfícies e inscrições adequadas; não força obediência de seres minerais conscientes",
+      "contrajogo_ou_lacuna": "pode romper construções mal assentadas",
+      "acesso_candidatos": [
+        "Tharvek (proposta de repertório futuro)",
+        "mestres rúnicos de Kharum"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-LITORRUNA-06",
+      "nome": "Colosso das Cem Marcas",
+      "escola": "LITORRUNA",
+      "circulo": 6,
+      "grau": "Arquimago",
+      "perfil_escala": "CAMPO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "anima um construto de pedra não consciente por runas",
+      "manifestacao_sensorial": "A manifestação deve evidenciar pedra de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "requer minerais, superfícies e inscrições adequadas; não força obediência de seres minerais conscientes",
+      "contrajogo_ou_lacuna": "o corpo exige material e manutenção",
+      "acesso_candidatos": [
+        "Tharvek (proposta de repertório futuro)",
+        "mestres rúnicos de Kharum"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-LITORRUNA-07",
+      "nome": "Anel das Gargantas Profundas",
+      "escola": "LITORRUNA",
+      "circulo": 7,
+      "grau": "Grande Arcano",
+      "perfil_escala": "VALE",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "coordena muralhas minerais e túneis defensivos",
+      "manifestacao_sensorial": "A manifestação deve evidenciar runas de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "requer minerais, superfícies e inscrições adequadas; não força obediência de seres minerais conscientes",
+      "contrajogo_ou_lacuna": "rede rúnica precisa de pontos de sustentação",
+      "acesso_candidatos": [
+        "Tharvek (proposta de repertório futuro)",
+        "mestres rúnicos de Kharum"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-LITORRUNA-08",
+      "nome": "Coroa das Montanhas Cantantes",
+      "escola": "LITORRUNA",
+      "circulo": 8,
+      "grau": "Arqui-Ritual",
+      "perfil_escala": "CIDADE",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "faz uma cordilheira reverberar em ritual regional",
+      "manifestacao_sensorial": "A manifestação deve evidenciar ressonância mineral de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "requer minerais, superfícies e inscrições adequadas; não força obediência de seres minerais conscientes",
+      "contrajogo_ou_lacuna": "não desloca populações ou reescreve geografia sem efeitos",
+      "acesso_candidatos": [
+        "Tharvek (proposta de repertório futuro)",
+        "mestres rúnicos de Kharum"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-LITORRUNA-09",
+      "nome": "Forja dos Nove Juramentos",
+      "escola": "LITORRUNA",
+      "circulo": 9,
+      "grau": "Maravilha Territorial",
+      "perfil_escala": "REGIÃO",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "ergue um complexo rúnico monumental com mestres cooperando",
+      "manifestacao_sensorial": "A manifestação deve evidenciar pedra de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "requer minerais, superfícies e inscrições adequadas; não força obediência de seres minerais conscientes",
+      "contrajogo_ou_lacuna": "juramentos exigem consentimento, ferramentas e duração",
+      "acesso_candidatos": [
+        "Tharvek (proposta de repertório futuro)",
+        "mestres rúnicos de Kharum"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-SILVAMANCIA-00",
+      "nome": "Luz de Broto",
+      "escola": "SILVAMANCIA",
+      "circulo": 0,
+      "grau": "Faísca",
+      "perfil_escala": "TOQUE",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "faz uma semente germinar sob condições favoráveis",
+      "manifestacao_sensorial": "A manifestação deve evidenciar raízes de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "necessita ecossistema e vínculos locais; não comanda todas as florestas nem controla mentes",
+      "contrajogo_ou_lacuna": "uma semente morta não recebe alma inventada",
+      "acesso_candidatos": [
+        "Elyrien (proposta de repertório futuro)",
+        "guardiões das florestas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-SILVAMANCIA-01",
+      "nome": "Raiz que Escuta",
+      "escola": "SILVAMANCIA",
+      "circulo": 1,
+      "grau": "Aprendiz",
+      "perfil_escala": "PESSOAL",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "percebe movimentos pelo solo enraizado",
+      "manifestacao_sensorial": "A manifestação deve evidenciar estações de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "necessita ecossistema e vínculos locais; não comanda todas as florestas nem controla mentes",
+      "contrajogo_ou_lacuna": "raízes não transmitem visão ou pensamentos",
+      "acesso_candidatos": [
+        "Elyrien (proposta de repertório futuro)",
+        "guardiões das florestas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-SILVAMANCIA-02",
+      "nome": "Trama da Hera",
+      "escola": "SILVAMANCIA",
+      "circulo": 2,
+      "grau": "Praticante",
+      "perfil_escala": "PEQUENO_GRUPO",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "cria passagem de plantas flexíveis",
+      "manifestacao_sensorial": "A manifestação deve evidenciar ecossistemas de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "necessita ecossistema e vínculos locais; não comanda todas as florestas nem controla mentes",
+      "contrajogo_ou_lacuna": "depende de vegetação disponível",
+      "acesso_candidatos": [
+        "Elyrien (proposta de repertório futuro)",
+        "guardiões das florestas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-SILVAMANCIA-03",
+      "nome": "Arco das Folhas Prismáticas",
+      "escola": "SILVAMANCIA",
+      "circulo": 3,
+      "grau": "Especialista",
+      "perfil_escala": "AMBIENTE",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "conduz folhas e luz num escudo vegetal",
+      "manifestacao_sensorial": "A manifestação deve evidenciar raízes de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "necessita ecossistema e vínculos locais; não comanda todas as florestas nem controla mentes",
+      "contrajogo_ou_lacuna": "luz e folha são componentes distintos",
+      "acesso_candidatos": [
+        "Elyrien (proposta de repertório futuro)",
+        "guardiões das florestas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-SILVAMANCIA-04",
+      "nome": "Ninho das Quatro Estações",
+      "escola": "SILVAMANCIA",
+      "circulo": 4,
+      "grau": "Mestre",
+      "perfil_escala": "EDIFÍCIO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "mantém refúgio vivo em mudança climática local",
+      "manifestacao_sensorial": "A manifestação deve evidenciar estações de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "necessita ecossistema e vínculos locais; não comanda todas as florestas nem controla mentes",
+      "contrajogo_ou_lacuna": "o habitat precisa de água e equilíbrio",
+      "acesso_candidatos": [
+        "Elyrien (proposta de repertório futuro)",
+        "guardiões das florestas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-SILVAMANCIA-05",
+      "nome": "Flecha do Bosque Sem Nome",
+      "escola": "SILVAMANCIA",
+      "circulo": 5,
+      "grau": "Alto Mestre",
+      "perfil_escala": "QUARTEIRÃO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "condensa espinhos controlados em ataque preciso",
+      "manifestacao_sensorial": "A manifestação deve evidenciar ecossistemas de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "necessita ecossistema e vínculos locais; não comanda todas as florestas nem controla mentes",
+      "contrajogo_ou_lacuna": "alvos ocultos não são automaticamente conhecidos",
+      "acesso_candidatos": [
+        "Elyrien (proposta de repertório futuro)",
+        "guardiões das florestas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-SILVAMANCIA-06",
+      "nome": "Coro das Mil Raízes",
+      "escola": "SILVAMANCIA",
+      "circulo": 6,
+      "grau": "Arquimago",
+      "perfil_escala": "CAMPO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "convoca a cooperação ressonante de árvores próximas",
+      "manifestacao_sensorial": "A manifestação deve evidenciar raízes de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "necessita ecossistema e vínculos locais; não comanda todas as florestas nem controla mentes",
+      "contrajogo_ou_lacuna": "raízes feridas podem resistir ou sofrer",
+      "acesso_candidatos": [
+        "Elyrien (proposta de repertório futuro)",
+        "guardiões das florestas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-SILVAMANCIA-07",
+      "nome": "Guardiões do Cerne Antigo",
+      "escola": "SILVAMANCIA",
+      "circulo": 7,
+      "grau": "Grande Arcano",
+      "perfil_escala": "VALE",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "evoca formas de madeira animada não conscientes",
+      "manifestacao_sensorial": "A manifestação deve evidenciar estações de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "necessita ecossistema e vínculos locais; não comanda todas as florestas nem controla mentes",
+      "contrajogo_ou_lacuna": "não cria vidas conscientes nem escraviza espíritos",
+      "acesso_candidatos": [
+        "Elyrien (proposta de repertório futuro)",
+        "guardiões das florestas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-SILVAMANCIA-08",
+      "nome": "Cântico do Equinócio",
+      "escola": "SILVAMANCIA",
+      "circulo": 8,
+      "grau": "Arqui-Ritual",
+      "perfil_escala": "CIDADE",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "Elyrien poderia harmonizar extensas zonas de seiva e vento",
+      "manifestacao_sensorial": "A manifestação deve evidenciar ecossistemas de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "necessita ecossistema e vínculos locais; não comanda todas as florestas nem controla mentes",
+      "contrajogo_ou_lacuna": "requer conhecimento da mata e pode ser recusado por seus guardiões",
+      "acesso_candidatos": [
+        "Elyrien (proposta de repertório futuro)",
+        "guardiões das florestas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-SILVAMANCIA-09",
+      "nome": "Primavera de Todas as Memórias",
+      "escola": "SILVAMANCIA",
+      "circulo": 9,
+      "grau": "Maravilha Territorial",
+      "perfil_escala": "REGIÃO",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "ritual de restauração ecológica de grande escala",
+      "manifestacao_sensorial": "A manifestação deve evidenciar raízes de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "necessita ecossistema e vínculos locais; não comanda todas as florestas nem controla mentes",
+      "contrajogo_ou_lacuna": "não ressuscita entes, não restaura história nem desfaz perdas humanas",
+      "acesso_candidatos": [
+        "Elyrien (proposta de repertório futuro)",
+        "guardiões das florestas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-FULGURIA-00",
+      "nome": "Estalo de Cobre",
+      "escola": "FULGURIA",
+      "circulo": 0,
+      "grau": "Faísca",
+      "perfil_escala": "TOQUE",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "produz descarga curta em fio condutor",
+      "manifestacao_sensorial": "A manifestação deve evidenciar cargas de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "cargas e condutores interagem com ambiente; eletricidade não seleciona amigos automaticamente",
+      "contrajogo_ou_lacuna": "material isolante pode barrar",
+      "acesso_candidatos": [
+        "observadores de Vélath",
+        "magos de frente desconhecidos"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-FULGURIA-01",
+      "nome": "Íris Elétrica",
+      "escola": "FULGURIA",
+      "circulo": 1,
+      "grau": "Aprendiz",
+      "perfil_escala": "PESSOAL",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "faz correntes revelarem superfícies metálicas próximas",
+      "manifestacao_sensorial": "A manifestação deve evidenciar luz elétrica de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "cargas e condutores interagem com ambiente; eletricidade não seleciona amigos automaticamente",
+      "contrajogo_ou_lacuna": "pode alertar vigias",
+      "acesso_candidatos": [
+        "observadores de Vélath",
+        "magos de frente desconhecidos"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-FULGURIA-02",
+      "nome": "Dedo da Nuvem",
+      "escola": "FULGURIA",
+      "circulo": 2,
+      "grau": "Praticante",
+      "perfil_escala": "PEQUENO_GRUPO",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "atrai uma pequena descarga por haste preparada",
+      "manifestacao_sensorial": "A manifestação deve evidenciar descargas atmosféricas de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "cargas e condutores interagem com ambiente; eletricidade não seleciona amigos automaticamente",
+      "contrajogo_ou_lacuna": "mau aterramento oferece risco",
+      "acesso_candidatos": [
+        "observadores de Vélath",
+        "magos de frente desconhecidos"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-FULGURIA-03",
+      "nome": "Capa de Centelhas",
+      "escola": "FULGURIA",
+      "circulo": 3,
+      "grau": "Especialista",
+      "perfil_escala": "AMBIENTE",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "envolve combatente em corona de luz",
+      "manifestacao_sensorial": "A manifestação deve evidenciar cargas de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "cargas e condutores interagem com ambiente; eletricidade não seleciona amigos automaticamente",
+      "contrajogo_ou_lacuna": "contato com aliados requer atenção",
+      "acesso_candidatos": [
+        "observadores de Vélath",
+        "magos de frente desconhecidos"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-FULGURIA-04",
+      "nome": "Serpe de Relâmpago",
+      "escola": "FULGURIA",
+      "circulo": 4,
+      "grau": "Mestre",
+      "perfil_escala": "EDIFÍCIO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "desenha arco elétrico rasteiro entre condutores",
+      "manifestacao_sensorial": "A manifestação deve evidenciar luz elétrica de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "cargas e condutores interagem com ambiente; eletricidade não seleciona amigos automaticamente",
+      "contrajogo_ou_lacuna": "isolamento e distância alteram propagação",
+      "acesso_candidatos": [
+        "observadores de Vélath",
+        "magos de frente desconhecidos"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-FULGURIA-05",
+      "nome": "Lança do Meio-Dia",
+      "escola": "FULGURIA",
+      "circulo": 5,
+      "grau": "Alto Mestre",
+      "perfil_escala": "QUARTEIRÃO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "concentra descarga intensa em direção específica",
+      "manifestacao_sensorial": "A manifestação deve evidenciar descargas atmosféricas de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "cargas e condutores interagem com ambiente; eletricidade não seleciona amigos automaticamente",
+      "contrajogo_ou_lacuna": "barreiras e terreno oferecem contrajogo",
+      "acesso_candidatos": [
+        "observadores de Vélath",
+        "magos de frente desconhecidos"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-FULGURIA-06",
+      "nome": "Escada do Trovão",
+      "escola": "FULGURIA",
+      "circulo": 6,
+      "grau": "Arquimago",
+      "perfil_escala": "CAMPO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "salta entre pontos condutores em sucessão brilhante",
+      "manifestacao_sensorial": "A manifestação deve evidenciar cargas de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "cargas e condutores interagem com ambiente; eletricidade não seleciona amigos automaticamente",
+      "contrajogo_ou_lacuna": "não é teleporte absoluto",
+      "acesso_candidatos": [
+        "observadores de Vélath",
+        "magos de frente desconhecidos"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-FULGURIA-07",
+      "nome": "Círculo da Tempestade Ferida",
+      "escola": "FULGURIA",
+      "circulo": 7,
+      "grau": "Grande Arcano",
+      "perfil_escala": "VALE",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "organiza vários raios como defesa de uma fortaleza",
+      "manifestacao_sensorial": "A manifestação deve evidenciar luz elétrica de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "cargas e condutores interagem com ambiente; eletricidade não seleciona amigos automaticamente",
+      "contrajogo_ou_lacuna": "requer coordenar pontos de descarga",
+      "acesso_candidatos": [
+        "observadores de Vélath",
+        "magos de frente desconhecidos"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-FULGURIA-08",
+      "nome": "Três Sóis de Tempestade",
+      "escola": "FULGURIA",
+      "circulo": 8,
+      "grau": "Arqui-Ritual",
+      "perfil_escala": "CIDADE",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "ilumina céu de uma região com núcleos de tempestade",
+      "manifestacao_sensorial": "A manifestação deve evidenciar descargas atmosféricas de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "cargas e condutores interagem com ambiente; eletricidade não seleciona amigos automaticamente",
+      "contrajogo_ou_lacuna": "pode afetar voo e comércio local",
+      "acesso_candidatos": [
+        "observadores de Vélath",
+        "magos de frente desconhecidos"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-FULGURIA-09",
+      "nome": "Dia Sem Noite de Vélath",
+      "escola": "FULGURIA",
+      "circulo": 9,
+      "grau": "Maravilha Territorial",
+      "perfil_escala": "REGIÃO",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "ritual fulgurante e sonoro de grande proporção",
+      "manifestacao_sensorial": "A manifestação deve evidenciar cargas de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "cargas e condutores interagem com ambiente; eletricidade não seleciona amigos automaticamente",
+      "contrajogo_ou_lacuna": "invocação proposta, sujeita ao clima e à colaboração",
+      "acesso_candidatos": [
+        "observadores de Vélath",
+        "magos de frente desconhecidos"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-RESONANCIA-00",
+      "nome": "Nota da Taça Clara",
+      "escola": "RESONANCIA",
+      "circulo": 0,
+      "grau": "Faísca",
+      "perfil_escala": "TOQUE",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "produz tom audível numa superfície sólida",
+      "manifestacao_sensorial": "A manifestação deve evidenciar som de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "precisa de meio vibratório; não concede informação de origem desconhecida",
+      "contrajogo_ou_lacuna": "o ruído pode encobrir",
+      "acesso_candidatos": [
+        "Thaeron (pesquisa futura)",
+        "cantores ancestrais",
+        "estudiosos de AERÚN"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-RESONANCIA-01",
+      "nome": "Pêndulo Harmônico",
+      "escola": "RESONANCIA",
+      "circulo": 1,
+      "grau": "Aprendiz",
+      "perfil_escala": "PESSOAL",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "mede uma vibração visível",
+      "manifestacao_sensorial": "A manifestação deve evidenciar harmônicos de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "precisa de meio vibratório; não concede informação de origem desconhecida",
+      "contrajogo_ou_lacuna": "apenas registra o que a superfície transmite",
+      "acesso_candidatos": [
+        "Thaeron (pesquisa futura)",
+        "cantores ancestrais",
+        "estudiosos de AERÚN"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-RESONANCIA-02",
+      "nome": "Sétimo Acorde",
+      "escola": "RESONANCIA",
+      "circulo": 2,
+      "grau": "Praticante",
+      "perfil_escala": "PEQUENO_GRUPO",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "faz duas estruturas ressoarem em consonância",
+      "manifestacao_sensorial": "A manifestação deve evidenciar inscrições ressonantes de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "precisa de meio vibratório; não concede informação de origem desconhecida",
+      "contrajogo_ou_lacuna": "materiais podem responder de forma desigual",
+      "acesso_candidatos": [
+        "Thaeron (pesquisa futura)",
+        "cantores ancestrais",
+        "estudiosos de AERÚN"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-RESONANCIA-03",
+      "nome": "Coro da Vidraça Noturna",
+      "escola": "RESONANCIA",
+      "circulo": 3,
+      "grau": "Especialista",
+      "perfil_escala": "AMBIENTE",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "molda pequenas lâminas de cristal sonoro",
+      "manifestacao_sensorial": "A manifestação deve evidenciar som de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "precisa de meio vibratório; não concede informação de origem desconhecida",
+      "contrajogo_ou_lacuna": "vidro frágil pode quebrar",
+      "acesso_candidatos": [
+        "Thaeron (pesquisa futura)",
+        "cantores ancestrais",
+        "estudiosos de AERÚN"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-RESONANCIA-04",
+      "nome": "Sino do Vento Interno",
+      "escola": "RESONANCIA",
+      "circulo": 4,
+      "grau": "Mestre",
+      "perfil_escala": "EDIFÍCIO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "detecta alterações acústicas em sala conhecida",
+      "manifestacao_sensorial": "A manifestação deve evidenciar harmônicos de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "precisa de meio vibratório; não concede informação de origem desconhecida",
+      "contrajogo_ou_lacuna": "silêncio absoluto ou distância reduzem pistas",
+      "acesso_candidatos": [
+        "Thaeron (pesquisa futura)",
+        "cantores ancestrais",
+        "estudiosos de AERÚN"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-RESONANCIA-05",
+      "nome": "Prisma da Voz Aberta",
+      "escola": "RESONANCIA",
+      "circulo": 5,
+      "grau": "Alto Mestre",
+      "perfil_escala": "QUARTEIRÃO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "amplifica voz através de cristais acoplados",
+      "manifestacao_sensorial": "A manifestação deve evidenciar inscrições ressonantes de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "precisa de meio vibratório; não concede informação de origem desconhecida",
+      "contrajogo_ou_lacuna": "exige origem e receptores reais",
+      "acesso_candidatos": [
+        "Thaeron (pesquisa futura)",
+        "cantores ancestrais",
+        "estudiosos de AERÚN"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-RESONANCIA-06",
+      "nome": "Bastião das Doze Notas",
+      "escola": "RESONANCIA",
+      "circulo": 6,
+      "grau": "Arquimago",
+      "perfil_escala": "CAMPO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "cria barreira por ondas harmônicas coordenadas",
+      "manifestacao_sensorial": "A manifestação deve evidenciar som de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "precisa de meio vibratório; não concede informação de origem desconhecida",
+      "contrajogo_ou_lacuna": "dissonâncias podem exigir ajuste",
+      "acesso_candidatos": [
+        "Thaeron (pesquisa futura)",
+        "cantores ancestrais",
+        "estudiosos de AERÚN"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-RESONANCIA-07",
+      "nome": "Teatro dos Ecos Longínquos",
+      "escola": "RESONANCIA",
+      "circulo": 7,
+      "grau": "Grande Arcano",
+      "perfil_escala": "VALE",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "projeta ressonâncias observadas numa instalação arcana",
+      "manifestacao_sensorial": "A manifestação deve evidenciar harmônicos de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "precisa de meio vibratório; não concede informação de origem desconhecida",
+      "contrajogo_ou_lacuna": "não reconstrói eventos sem testemunho",
+      "acesso_candidatos": [
+        "Thaeron (pesquisa futura)",
+        "cantores ancestrais",
+        "estudiosos de AERÚN"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-RESONANCIA-08",
+      "nome": "Coração de Vidro Cantante",
+      "escola": "RESONANCIA",
+      "circulo": 8,
+      "grau": "Arqui-Ritual",
+      "perfil_escala": "CIDADE",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "conecta muitos sinos e cristais num fenômeno urbano",
+      "manifestacao_sensorial": "A manifestação deve evidenciar inscrições ressonantes de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "precisa de meio vibratório; não concede informação de origem desconhecida",
+      "contrajogo_ou_lacuna": "necessita uma rede instalada; não é o Coração de Convergência",
+      "acesso_candidatos": [
+        "Thaeron (pesquisa futura)",
+        "cantores ancestrais",
+        "estudiosos de AERÚN"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-RESONANCIA-09",
+      "nome": "Canção que Vence o Horizonte",
+      "escola": "RESONANCIA",
+      "circulo": 9,
+      "grau": "Maravilha Territorial",
+      "perfil_escala": "REGIÃO",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "ritual de ressonância de escala regional sobre meios preparados",
+      "manifestacao_sensorial": "A manifestação deve evidenciar som de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "precisa de meio vibratório; não concede informação de origem desconhecida",
+      "contrajogo_ou_lacuna": "não equivale a comunicação ou conhecimento instantâneo",
+      "acesso_candidatos": [
+        "Thaeron (pesquisa futura)",
+        "cantores ancestrais",
+        "estudiosos de AERÚN"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-UMBRAL-00",
+      "nome": "Véu da Soleira",
+      "escola": "UMBRAL",
+      "circulo": 0,
+      "grau": "Faísca",
+      "perfil_escala": "TOQUE",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "reduz o brilho em pequeno ângulo",
+      "manifestacao_sensorial": "A manifestação deve evidenciar ocultação de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "sombra não significa viagem instantânea, onisciência ou leitura de almas",
+      "contrajogo_ou_lacuna": "uma luz lateral pode expor",
+      "acesso_candidatos": [
+        "ordens desconhecidas da sombra",
+        "especialistas independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-UMBRAL-01",
+      "nome": "Passo Entre Sombras",
+      "escola": "UMBRAL",
+      "circulo": 1,
+      "grau": "Aprendiz",
+      "perfil_escala": "PESSOAL",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "abafa ruído de passos em chão sombrio",
+      "manifestacao_sensorial": "A manifestação deve evidenciar contraste de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "sombra não significa viagem instantânea, onisciência ou leitura de almas",
+      "contrajogo_ou_lacuna": "obstáculos continuam sólidos",
+      "acesso_candidatos": [
+        "ordens desconhecidas da sombra",
+        "especialistas independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-UMBRAL-02",
+      "nome": "Espelho da Penumbra",
+      "escola": "UMBRAL",
+      "circulo": 2,
+      "grau": "Praticante",
+      "perfil_escala": "PEQUENO_GRUPO",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "faz sombra revelar contornos em contraluz",
+      "manifestacao_sensorial": "A manifestação deve evidenciar rastros de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "sombra não significa viagem instantânea, onisciência ou leitura de almas",
+      "contrajogo_ou_lacuna": "não revela pensamentos",
+      "acesso_candidatos": [
+        "ordens desconhecidas da sombra",
+        "especialistas independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-UMBRAL-03",
+      "nome": "Punhal do Eclipse Raso",
+      "escola": "UMBRAL",
+      "circulo": 3,
+      "grau": "Especialista",
+      "perfil_escala": "AMBIENTE",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "projeta lâmina de sombra densa a curta distância",
+      "manifestacao_sensorial": "A manifestação deve evidenciar ocultação de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "sombra não significa viagem instantânea, onisciência ou leitura de almas",
+      "contrajogo_ou_lacuna": "fontes de luz alteram seu contorno",
+      "acesso_candidatos": [
+        "ordens desconhecidas da sombra",
+        "especialistas independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-UMBRAL-04",
+      "nome": "Manto da Lua Encoberta",
+      "escola": "UMBRAL",
+      "circulo": 4,
+      "grau": "Mestre",
+      "perfil_escala": "EDIFÍCIO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "oculta grupo parado de observadores distantes",
+      "manifestacao_sensorial": "A manifestação deve evidenciar contraste de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "sombra não significa viagem instantânea, onisciência ou leitura de almas",
+      "contrajogo_ou_lacuna": "movimento e som ainda traem presença",
+      "acesso_candidatos": [
+        "ordens desconhecidas da sombra",
+        "especialistas independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-UMBRAL-05",
+      "nome": "Cortina dos Olhos Sem Rosto",
+      "escola": "UMBRAL",
+      "circulo": 5,
+      "grau": "Alto Mestre",
+      "perfil_escala": "QUARTEIRÃO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "multiplica silhuetas falsas em campo de visão",
+      "manifestacao_sensorial": "A manifestação deve evidenciar rastros de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "sombra não significa viagem instantânea, onisciência ou leitura de almas",
+      "contrajogo_ou_lacuna": "observadores podem rastrear pegadas",
+      "acesso_candidatos": [
+        "ordens desconhecidas da sombra",
+        "especialistas independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-UMBRAL-06",
+      "nome": "Jardim de Sombras Dobradas",
+      "escola": "UMBRAL",
+      "circulo": 6,
+      "grau": "Arquimago",
+      "perfil_escala": "CAMPO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "transforma ruas conhecidas num labirinto visual",
+      "manifestacao_sensorial": "A manifestação deve evidenciar ocultação de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "sombra não significa viagem instantânea, onisciência ou leitura de almas",
+      "contrajogo_ou_lacuna": "mapeamento e percepção tátil ajudam",
+      "acesso_candidatos": [
+        "ordens desconhecidas da sombra",
+        "especialistas independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-UMBRAL-07",
+      "nome": "Portões da Noite Inacabada",
+      "escola": "UMBRAL",
+      "circulo": 7,
+      "grau": "Grande Arcano",
+      "perfil_escala": "VALE",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "abre passagens curtas entre pontos já reconhecidos",
+      "manifestacao_sensorial": "A manifestação deve evidenciar contraste de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "sombra não significa viagem instantânea, onisciência ou leitura de almas",
+      "contrajogo_ou_lacuna": "exige vínculo com ambas extremidades e não cruza continentes",
+      "acesso_candidatos": [
+        "ordens desconhecidas da sombra",
+        "especialistas independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-UMBRAL-08",
+      "nome": "Manto do Crepúsculo Vivo",
+      "escola": "UMBRAL",
+      "circulo": 8,
+      "grau": "Arqui-Ritual",
+      "perfil_escala": "CIDADE",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "cobre uma cidade com sombras ilusórias temporárias",
+      "manifestacao_sensorial": "A manifestação deve evidenciar rastros de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "sombra não significa viagem instantânea, onisciência ou leitura de almas",
+      "contrajogo_ou_lacuna": "o ritual não apaga pessoas da memória",
+      "acesso_candidatos": [
+        "ordens desconhecidas da sombra",
+        "especialistas independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-UMBRAL-09",
+      "nome": "Última Sombra Antes da Aurora",
+      "escola": "UMBRAL",
+      "circulo": 9,
+      "grau": "Maravilha Territorial",
+      "perfil_escala": "REGIÃO",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "instala ilusão territorial sobre vastas rotas preparadas",
+      "manifestacao_sensorial": "A manifestação deve evidenciar ocultação de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "sombra não significa viagem instantânea, onisciência ou leitura de almas",
+      "contrajogo_ou_lacuna": "fumaça e sombra não são invulnerabilidade nem domínio da história",
+      "acesso_candidatos": [
+        "ordens desconhecidas da sombra",
+        "especialistas independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-ASTROMANCIA-00",
+      "nome": "Ponto do Navegante",
+      "escola": "ASTROMANCIA",
+      "circulo": 0,
+      "grau": "Faísca",
+      "perfil_escala": "TOQUE",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "marca com luz uma direção escolhida",
+      "manifestacao_sensorial": "A manifestação deve evidenciar luz de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "não enxerga futuro obrigatório nem redefine destino; leitura celeste pode ser errada",
+      "contrajogo_ou_lacuna": "nuvens podem ocultar",
+      "acesso_candidatos": [
+        "mestres do Sétimo Observatório",
+        "guardas das rotas altas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-ASTROMANCIA-01",
+      "nome": "Risco de Constelação",
+      "escola": "ASTROMANCIA",
+      "circulo": 1,
+      "grau": "Aprendiz",
+      "perfil_escala": "PESSOAL",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "desenha mapa estelar temporário no ar",
+      "manifestacao_sensorial": "A manifestação deve evidenciar orientação de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "não enxerga futuro obrigatório nem redefine destino; leitura celeste pode ser errada",
+      "contrajogo_ou_lacuna": "mapa não mostra destinos desconhecidos",
+      "acesso_candidatos": [
+        "mestres do Sétimo Observatório",
+        "guardas das rotas altas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-ASTROMANCIA-02",
+      "nome": "Flecha da Aurora Branca",
+      "escola": "ASTROMANCIA",
+      "circulo": 2,
+      "grau": "Praticante",
+      "perfil_escala": "PEQUENO_GRUPO",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "concentra um feixe de luz de curto alcance",
+      "manifestacao_sensorial": "A manifestação deve evidenciar ciclos celestes de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "não enxerga futuro obrigatório nem redefine destino; leitura celeste pode ser errada",
+      "contrajogo_ou_lacuna": "reflexos e anteparos afetam a trajetória",
+      "acesso_candidatos": [
+        "mestres do Sétimo Observatório",
+        "guardas das rotas altas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-ASTROMANCIA-03",
+      "nome": "Olho das Três Luas",
+      "escola": "ASTROMANCIA",
+      "circulo": 3,
+      "grau": "Especialista",
+      "perfil_escala": "AMBIENTE",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "permite observar ângulos de luz sobre uma área",
+      "manifestacao_sensorial": "A manifestação deve evidenciar luz de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "não enxerga futuro obrigatório nem redefine destino; leitura celeste pode ser errada",
+      "contrajogo_ou_lacuna": "ainda exige linha de visão",
+      "acesso_candidatos": [
+        "mestres do Sétimo Observatório",
+        "guardas das rotas altas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-ASTROMANCIA-04",
+      "nome": "Anel de Alvorecer",
+      "escola": "ASTROMANCIA",
+      "circulo": 4,
+      "grau": "Mestre",
+      "perfil_escala": "EDIFÍCIO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "dispersa penumbra e revela ilusões luminosas simples",
+      "manifestacao_sensorial": "A manifestação deve evidenciar orientação de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "não enxerga futuro obrigatório nem redefine destino; leitura celeste pode ser errada",
+      "contrajogo_ou_lacuna": "sombras naturais não são feitiços",
+      "acesso_candidatos": [
+        "mestres do Sétimo Observatório",
+        "guardas das rotas altas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-ASTROMANCIA-05",
+      "nome": "Lanças do Sol Fraturado",
+      "escola": "ASTROMANCIA",
+      "circulo": 5,
+      "grau": "Alto Mestre",
+      "perfil_escala": "QUARTEIRÃO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "dispara raios luminosos em padrões rotativos",
+      "manifestacao_sensorial": "A manifestação deve evidenciar ciclos celestes de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "não enxerga futuro obrigatório nem redefine destino; leitura celeste pode ser errada",
+      "contrajogo_ou_lacuna": "a defesa pode antecipar os padrões",
+      "acesso_candidatos": [
+        "mestres do Sétimo Observatório",
+        "guardas das rotas altas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-ASTROMANCIA-06",
+      "nome": "Firmamento de Cristal",
+      "escola": "ASTROMANCIA",
+      "circulo": 6,
+      "grau": "Arquimago",
+      "perfil_escala": "CAMPO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "ergue cúpula astral de proteção local",
+      "manifestacao_sensorial": "A manifestação deve evidenciar luz de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "não enxerga futuro obrigatório nem redefine destino; leitura celeste pode ser errada",
+      "contrajogo_ou_lacuna": "depende de marcadores e concentração de grupo",
+      "acesso_candidatos": [
+        "mestres do Sétimo Observatório",
+        "guardas das rotas altas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-ASTROMANCIA-07",
+      "nome": "Atlas de Mil Estrelas",
+      "escola": "ASTROMANCIA",
+      "circulo": 7,
+      "grau": "Grande Arcano",
+      "perfil_escala": "VALE",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "transforma um observatório em cartografia celeste viva",
+      "manifestacao_sensorial": "A manifestação deve evidenciar orientação de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "não enxerga futuro obrigatório nem redefine destino; leitura celeste pode ser errada",
+      "contrajogo_ou_lacuna": "não cria mapa completo do planeta sem observações",
+      "acesso_candidatos": [
+        "mestres do Sétimo Observatório",
+        "guardas das rotas altas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-ASTROMANCIA-08",
+      "nome": "Cometa da Primeira Noite",
+      "escola": "ASTROMANCIA",
+      "circulo": 8,
+      "grau": "Arqui-Ritual",
+      "perfil_escala": "CIDADE",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "convoca luz colossal sobre espaço aberto ritualizado",
+      "manifestacao_sensorial": "A manifestação deve evidenciar ciclos celestes de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "não enxerga futuro obrigatório nem redefine destino; leitura celeste pode ser errada",
+      "contrajogo_ou_lacuna": "não é corpo celeste real arrancado do firmamento",
+      "acesso_candidatos": [
+        "mestres do Sétimo Observatório",
+        "guardas das rotas altas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-ASTROMANCIA-09",
+      "nome": "Céu Interior das Nove Esferas",
+      "escola": "ASTROMANCIA",
+      "circulo": 9,
+      "grau": "Maravilha Territorial",
+      "perfil_escala": "REGIÃO",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "produz domínio astral cenográfico de escala regional",
+      "manifestacao_sensorial": "A manifestação deve evidenciar luz de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "não enxerga futuro obrigatório nem redefine destino; leitura celeste pode ser errada",
+      "contrajogo_ou_lacuna": "não cria universo paralelo nem prova cosmologia antiga",
+      "acesso_candidatos": [
+        "mestres do Sétimo Observatório",
+        "guardas das rotas altas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-METAMATERIA-00",
+      "nome": "Brilho da Liga",
+      "escola": "METAMATERIA",
+      "circulo": 0,
+      "grau": "Faísca",
+      "perfil_escala": "TOQUE",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "altera aparência de metal superficialmente",
+      "manifestacao_sensorial": "A manifestação deve evidenciar forma de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "é tradição arcana comum; não equiparar alcance técnico à GÊNESE/CREATION",
+      "contrajogo_ou_lacuna": "não muda resistência",
+      "acesso_candidatos": [
+        "alquimistas da Forja Aurora",
+        "artífices independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-METAMATERIA-01",
+      "nome": "Pele de Argila",
+      "escola": "METAMATERIA",
+      "circulo": 1,
+      "grau": "Aprendiz",
+      "perfil_escala": "PESSOAL",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "flexibiliza pequena superfície mineral",
+      "manifestacao_sensorial": "A manifestação deve evidenciar liga de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "é tradição arcana comum; não equiparar alcance técnico à GÊNESE/CREATION",
+      "contrajogo_ou_lacuna": "materiais raros respondem diferente",
+      "acesso_candidatos": [
+        "alquimistas da Forja Aurora",
+        "artífices independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-METAMATERIA-02",
+      "nome": "Ponte de Cera Fria",
+      "escola": "METAMATERIA",
+      "circulo": 2,
+      "grau": "Praticante",
+      "perfil_escala": "PEQUENO_GRUPO",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "une temporariamente peças de liga conhecida",
+      "manifestacao_sensorial": "A manifestação deve evidenciar estado material de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "é tradição arcana comum; não equiparar alcance técnico à GÊNESE/CREATION",
+      "contrajogo_ou_lacuna": "a união requer contato",
+      "acesso_candidatos": [
+        "alquimistas da Forja Aurora",
+        "artífices independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-METAMATERIA-03",
+      "nome": "Mão do Artífice",
+      "escola": "METAMATERIA",
+      "circulo": 3,
+      "grau": "Especialista",
+      "perfil_escala": "AMBIENTE",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "remodela pequena ferramenta preparada",
+      "manifestacao_sensorial": "A manifestação deve evidenciar forma de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "é tradição arcana comum; não equiparar alcance técnico à GÊNESE/CREATION",
+      "contrajogo_ou_lacuna": "a ferramenta precisa de matéria",
+      "acesso_candidatos": [
+        "alquimistas da Forja Aurora",
+        "artífices independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-METAMATERIA-04",
+      "nome": "Gema de Fio Duplo",
+      "escola": "METAMATERIA",
+      "circulo": 4,
+      "grau": "Mestre",
+      "perfil_escala": "EDIFÍCIO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "faz cristal conduzir duas assinaturas",
+      "manifestacao_sensorial": "A manifestação deve evidenciar liga de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "é tradição arcana comum; não equiparar alcance técnico à GÊNESE/CREATION",
+      "contrajogo_ou_lacuna": "efeitos desconhecidos não são garantidos",
+      "acesso_candidatos": [
+        "alquimistas da Forja Aurora",
+        "artífices independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-METAMATERIA-05",
+      "nome": "Prisma da Forma Oculta",
+      "escola": "METAMATERIA",
+      "circulo": 5,
+      "grau": "Alto Mestre",
+      "perfil_escala": "QUARTEIRÃO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "revela fissuras em material trabalhado",
+      "manifestacao_sensorial": "A manifestação deve evidenciar estado material de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "é tradição arcana comum; não equiparar alcance técnico à GÊNESE/CREATION",
+      "contrajogo_ou_lacuna": "não lê passado do objeto",
+      "acesso_candidatos": [
+        "alquimistas da Forja Aurora",
+        "artífices independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-METAMATERIA-06",
+      "nome": "Coluna de Metal Flutuante",
+      "escola": "METAMATERIA",
+      "circulo": 6,
+      "grau": "Arquimago",
+      "perfil_escala": "CAMPO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "suspende massa mineral sobre suportes rúnicos",
+      "manifestacao_sensorial": "A manifestação deve evidenciar forma de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "é tradição arcana comum; não equiparar alcance técnico à GÊNESE/CREATION",
+      "contrajogo_ou_lacuna": "não é levitação universal sem âncoras",
+      "acesso_candidatos": [
+        "alquimistas da Forja Aurora",
+        "artífices independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-METAMATERIA-07",
+      "nome": "Palácio de Liga Mutável",
+      "escola": "METAMATERIA",
+      "circulo": 7,
+      "grau": "Grande Arcano",
+      "perfil_escala": "VALE",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "altera salões por redes artificiais",
+      "manifestacao_sensorial": "A manifestação deve evidenciar liga de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "é tradição arcana comum; não equiparar alcance técnico à GÊNESE/CREATION",
+      "contrajogo_ou_lacuna": "pessoas precisam escolher como usar o espaço",
+      "acesso_candidatos": [
+        "alquimistas da Forja Aurora",
+        "artífices independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-METAMATERIA-08",
+      "nome": "Torre das Mil Oficinas",
+      "escola": "METAMATERIA",
+      "circulo": 8,
+      "grau": "Arqui-Ritual",
+      "perfil_escala": "CIDADE",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "reconfigura conjunto urbano de oficinas instaladas",
+      "manifestacao_sensorial": "A manifestação deve evidenciar estado material de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "é tradição arcana comum; não equiparar alcance técnico à GÊNESE/CREATION",
+      "contrajogo_ou_lacuna": "exige materiais, desenho e manutenção",
+      "acesso_candidatos": [
+        "alquimistas da Forja Aurora",
+        "artífices independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-METAMATERIA-09",
+      "nome": "Cadeia de Matéria Acordada",
+      "escola": "METAMATERIA",
+      "circulo": 9,
+      "grau": "Maravilha Territorial",
+      "perfil_escala": "REGIÃO",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "ritual transmutativo de escala territorial",
+      "manifestacao_sensorial": "A manifestação deve evidenciar forma de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "é tradição arcana comum; não equiparar alcance técnico à GÊNESE/CREATION",
+      "contrajogo_ou_lacuna": "não cria consciências nem substitui GÊNESE",
+      "acesso_candidatos": [
+        "alquimistas da Forja Aurora",
+        "artífices independentes"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-PACTOS-00",
+      "nome": "Chamado do Vagalume Livre",
+      "escola": "PACTOS",
+      "circulo": 0,
+      "grau": "Faísca",
+      "perfil_escala": "TOQUE",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "atrai pequenas luzes naturais que aceitem aproximar-se",
+      "manifestacao_sensorial": "A manifestação deve evidenciar sinais de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "invocar não equivale a fabricar vida consciente, controlar vontade ou prender alma",
+      "contrajogo_ou_lacuna": "sem consentimento não há vínculo",
+      "acesso_candidatos": [
+        "ordens de pactuantes ainda desconhecidas",
+        "arquimagos com tratados rituais"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-PACTOS-01",
+      "nome": "Selo do Visitante",
+      "escola": "PACTOS",
+      "circulo": 1,
+      "grau": "Aprendiz",
+      "perfil_escala": "PESSOAL",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "anuncia uma presença a um aliado pactuado",
+      "manifestacao_sensorial": "A manifestação deve evidenciar vínculos voluntários de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "invocar não equivale a fabricar vida consciente, controlar vontade ou prender alma",
+      "contrajogo_ou_lacuna": "ausência de resposta não é quebra de pacto",
+      "acesso_candidatos": [
+        "ordens de pactuantes ainda desconhecidas",
+        "arquimagos com tratados rituais"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-PACTOS-02",
+      "nome": "Mesa dos Quatro Ventos",
+      "escola": "PACTOS",
+      "circulo": 2,
+      "grau": "Praticante",
+      "perfil_escala": "PEQUENO_GRUPO",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "abre local de conversa com espírito de vento proposto",
+      "manifestacao_sensorial": "A manifestação deve evidenciar seres independentes de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "invocar não equivale a fabricar vida consciente, controlar vontade ou prender alma",
+      "contrajogo_ou_lacuna": "espírito pode não existir ou recusar",
+      "acesso_candidatos": [
+        "ordens de pactuantes ainda desconhecidas",
+        "arquimagos com tratados rituais"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-PACTOS-03",
+      "nome": "Convite da Garça de Névoa",
+      "escola": "PACTOS",
+      "circulo": 3,
+      "grau": "Especialista",
+      "perfil_escala": "AMBIENTE",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "solicita auxílio de animal místico livre",
+      "manifestacao_sensorial": "A manifestação deve evidenciar sinais de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "invocar não equivale a fabricar vida consciente, controlar vontade ou prender alma",
+      "contrajogo_ou_lacuna": "não transforma animal em soldado",
+      "acesso_candidatos": [
+        "ordens de pactuantes ainda desconhecidas",
+        "arquimagos com tratados rituais"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-PACTOS-04",
+      "nome": "Passagem do Mensageiro Lunar",
+      "escola": "PACTOS",
+      "circulo": 4,
+      "grau": "Mestre",
+      "perfil_escala": "EDIFÍCIO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "traz mensageiro pactuado por rota específica",
+      "manifestacao_sensorial": "A manifestação deve evidenciar vínculos voluntários de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "invocar não equivale a fabricar vida consciente, controlar vontade ou prender alma",
+      "contrajogo_ou_lacuna": "distância e rota ainda importam",
+      "acesso_candidatos": [
+        "ordens de pactuantes ainda desconhecidas",
+        "arquimagos com tratados rituais"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-PACTOS-05",
+      "nome": "Limiar dos Guardiões Menores",
+      "escola": "PACTOS",
+      "circulo": 5,
+      "grau": "Alto Mestre",
+      "perfil_escala": "QUARTEIRÃO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "abre círculo de convite a protetores locais",
+      "manifestacao_sensorial": "A manifestação deve evidenciar seres independentes de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "invocar não equivale a fabricar vida consciente, controlar vontade ou prender alma",
+      "contrajogo_ou_lacuna": "portas devem ser fechadas e ninguém é forçado",
+      "acesso_candidatos": [
+        "ordens de pactuantes ainda desconhecidas",
+        "arquimagos com tratados rituais"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-PACTOS-06",
+      "nome": "Assembleia dos Nomes Velhos",
+      "escola": "PACTOS",
+      "circulo": 6,
+      "grau": "Arquimago",
+      "perfil_escala": "CAMPO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "convoca até três entidades previamente vinculadas",
+      "manifestacao_sensorial": "A manifestação deve evidenciar sinais de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "invocar não equivale a fabricar vida consciente, controlar vontade ou prender alma",
+      "contrajogo_ou_lacuna": "entidades mantêm objetivos próprios",
+      "acesso_candidatos": [
+        "ordens de pactuantes ainda desconhecidas",
+        "arquimagos com tratados rituais"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-PACTOS-07",
+      "nome": "Marcheiro das Tempestades",
+      "escola": "PACTOS",
+      "circulo": 7,
+      "grau": "Grande Arcano",
+      "perfil_escala": "VALE",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "pede manifestação de entidade do alto céu",
+      "manifestacao_sensorial": "A manifestação deve evidenciar vínculos voluntários de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "invocar não equivale a fabricar vida consciente, controlar vontade ou prender alma",
+      "contrajogo_ou_lacuna": "acordo é negociado, não escravidão",
+      "acesso_candidatos": [
+        "ordens de pactuantes ainda desconhecidas",
+        "arquimagos com tratados rituais"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-PACTOS-08",
+      "nome": "Corte dos Sete Visitantes",
+      "escola": "PACTOS",
+      "circulo": 8,
+      "grau": "Arqui-Ritual",
+      "perfil_escala": "CIDADE",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "ritual de cooperação com assembleia de entes livres",
+      "manifestacao_sensorial": "A manifestação deve evidenciar seres independentes de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "invocar não equivale a fabricar vida consciente, controlar vontade ou prender alma",
+      "contrajogo_ou_lacuna": "não permite copiar ou criar consciência por decreto",
+      "acesso_candidatos": [
+        "ordens de pactuantes ainda desconhecidas",
+        "arquimagos com tratados rituais"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-PACTOS-09",
+      "nome": "Conclave dos Horizontes Vivos",
+      "escola": "PACTOS",
+      "circulo": 9,
+      "grau": "Maravilha Territorial",
+      "perfil_escala": "REGIÃO",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "convoca presença de uma tradição extraplanar ainda não comprovada",
+      "manifestacao_sensorial": "A manifestação deve evidenciar sinais de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "invocar não equivale a fabricar vida consciente, controlar vontade ou prender alma",
+      "contrajogo_ou_lacuna": "estado PROPOSTO: não confirma outros planos nem entidades até manifestação narrada",
+      "acesso_candidatos": [
+        "ordens de pactuantes ainda desconhecidas",
+        "arquimagos com tratados rituais"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-TRAVESSIAS-00",
+      "nome": "Passo do Limiar",
+      "escola": "TRAVESSIAS",
+      "circulo": 0,
+      "grau": "Faísca",
+      "perfil_escala": "TOQUE",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "reduz distância de um passo por uma dobra visível",
+      "manifestacao_sensorial": "A manifestação deve evidenciar distância de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "rituais espaciais exigem marcos conhecidos; não servem para transportar NPCs sem jornada narrada",
+      "contrajogo_ou_lacuna": "pode falhar diante de obstáculo desconhecido",
+      "acesso_candidatos": [
+        "pesquisadores da Grande Torre",
+        "guardiões de rotas antigas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-TRAVESSIAS-01",
+      "nome": "Porta de Giz",
+      "escola": "TRAVESSIAS",
+      "circulo": 1,
+      "grau": "Aprendiz",
+      "perfil_escala": "PESSOAL",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "cria passagem curta entre duas faces contíguas",
+      "manifestacao_sensorial": "A manifestação deve evidenciar marcos de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "rituais espaciais exigem marcos conhecidos; não servem para transportar NPCs sem jornada narrada",
+      "contrajogo_ou_lacuna": "ambos os lados precisam ser observados",
+      "acesso_candidatos": [
+        "pesquisadores da Grande Torre",
+        "guardiões de rotas antigas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-TRAVESSIAS-02",
+      "nome": "Nó das Quatro Esquinas",
+      "escola": "TRAVESSIAS",
+      "circulo": 2,
+      "grau": "Praticante",
+      "perfil_escala": "PEQUENO_GRUPO",
+      "tipo": "GESTO_ARCANO",
+      "efeito_proposto": "marca pontos fixos para retornar por trilha normal",
+      "manifestacao_sensorial": "A manifestação deve evidenciar limiares de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "rituais espaciais exigem marcos conhecidos; não servem para transportar NPCs sem jornada narrada",
+      "contrajogo_ou_lacuna": "não teletransporta diretamente",
+      "acesso_candidatos": [
+        "pesquisadores da Grande Torre",
+        "guardiões de rotas antigas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-TRAVESSIAS-03",
+      "nome": "Ponte do Ângulo Perdido",
+      "escola": "TRAVESSIAS",
+      "circulo": 3,
+      "grau": "Especialista",
+      "perfil_escala": "AMBIENTE",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "aproxima dois pontos visíveis sobre uma fenda",
+      "manifestacao_sensorial": "A manifestação deve evidenciar distância de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "rituais espaciais exigem marcos conhecidos; não servem para transportar NPCs sem jornada narrada",
+      "contrajogo_ou_lacuna": "não cruza países sem âncoras",
+      "acesso_candidatos": [
+        "pesquisadores da Grande Torre",
+        "guardiões de rotas antigas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-TRAVESSIAS-04",
+      "nome": "Véu de Caminho Curto",
+      "escola": "TRAVESSIAS",
+      "circulo": 4,
+      "grau": "Mestre",
+      "perfil_escala": "EDIFÍCIO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "dobra pequenos trechos de uma estrada preparada",
+      "manifestacao_sensorial": "A manifestação deve evidenciar marcos de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "rituais espaciais exigem marcos conhecidos; não servem para transportar NPCs sem jornada narrada",
+      "contrajogo_ou_lacuna": "outros viajantes percebem deslocamento",
+      "acesso_candidatos": [
+        "pesquisadores da Grande Torre",
+        "guardiões de rotas antigas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-TRAVESSIAS-05",
+      "nome": "Janela das Sete Torres",
+      "escola": "TRAVESSIAS",
+      "circulo": 5,
+      "grau": "Alto Mestre",
+      "perfil_escala": "QUARTEIRÃO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "abre vista unilateral entre observatórios ligados",
+      "manifestacao_sensorial": "A manifestação deve evidenciar limiares de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "rituais espaciais exigem marcos conhecidos; não servem para transportar NPCs sem jornada narrada",
+      "contrajogo_ou_lacuna": "não envia mensagens sem dispositivos",
+      "acesso_candidatos": [
+        "pesquisadores da Grande Torre",
+        "guardiões de rotas antigas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-TRAVESSIAS-06",
+      "nome": "Arco do Marco Reconhecido",
+      "escola": "TRAVESSIAS",
+      "circulo": 6,
+      "grau": "Arquimago",
+      "perfil_escala": "CAMPO",
+      "tipo": "CONJURAÇÃO",
+      "efeito_proposto": "permite travessia local entre círculos medidos e ativados",
+      "manifestacao_sensorial": "A manifestação deve evidenciar distância de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "rituais espaciais exigem marcos conhecidos; não servem para transportar NPCs sem jornada narrada",
+      "contrajogo_ou_lacuna": "marcos danificados bloqueiam a passagem",
+      "acesso_candidatos": [
+        "pesquisadores da Grande Torre",
+        "guardiões de rotas antigas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-TRAVESSIAS-07",
+      "nome": "Estação dos Portais Concordados",
+      "escola": "TRAVESSIAS",
+      "circulo": 7,
+      "grau": "Grande Arcano",
+      "perfil_escala": "VALE",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "forma terminal ritual entre duas cidades previamente pactuadas",
+      "manifestacao_sensorial": "A manifestação deve evidenciar marcos de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "rituais espaciais exigem marcos conhecidos; não servem para transportar NPCs sem jornada narrada",
+      "contrajogo_ou_lacuna": "exige evidências de instalação e consentimento",
+      "acesso_candidatos": [
+        "pesquisadores da Grande Torre",
+        "guardiões de rotas antigas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-TRAVESSIAS-08",
+      "nome": "Caminho Entre Fronteiras",
+      "escola": "TRAVESSIAS",
+      "circulo": 8,
+      "grau": "Arqui-Ritual",
+      "perfil_escala": "CIDADE",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "mantém rota espacial temporária entre territórios assentados",
+      "manifestacao_sensorial": "A manifestação deve evidenciar limiares de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "rituais espaciais exigem marcos conhecidos; não servem para transportar NPCs sem jornada narrada",
+      "contrajogo_ou_lacuna": "não resolve diplomacia nem dispensa viajantes",
+      "acesso_candidatos": [
+        "pesquisadores da Grande Torre",
+        "guardiões de rotas antigas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    },
+    {
+      "id": "R26-TRAVESSIAS-09",
+      "nome": "Grande Limiar das Cartas Impossíveis",
+      "escola": "TRAVESSIAS",
+      "circulo": 9,
+      "grau": "Maravilha Territorial",
+      "perfil_escala": "REGIÃO",
+      "tipo": "RITUAL_OU_GRANDE_CONJURAÇÃO",
+      "efeito_proposto": "proposta de ligação entre continentes conhecidos por cartografia real",
+      "manifestacao_sensorial": "A manifestação deve evidenciar distância de maneira específica, sem perder ação e reação de personagens.",
+      "exigencia_situacional": "rituais espaciais exigem marcos conhecidos; não servem para transportar NPCs sem jornada narrada",
+      "contrajogo_ou_lacuna": "não abre portal de guerra nem altera distâncias sem arcabouço e prova canônica",
+      "acesso_candidatos": [
+        "pesquisadores da Grande Torre",
+        "guardiões de rotas antigas"
+      ],
+      "repertorio_vinculado_a_pessoa": "NÃO_APROVADO_NEM_DEMONSTRADO",
+      "status": "R26_PROPOSTO_NAO_CANONICO",
+      "origem": "R26_PROPOSTA_ORIGINAL_AUTOR_AUTORIZOU_CRIAÇÃO_DE_GRIMÓRIO",
+      "nota_gestao": "Rank representa escala hipotética de repertório, não dano tabelado, vitória garantida nem limite para GÊNESE."
+    }
+  ],
+  "external_research": [
+    {
+      "name": "D&D 2024 Free Rules: Spells",
+      "url": "https://www.dndbeyond.com/sources/dnd/br-2024/spells",
+      "derived": "separate spell rank, form, preparation and ritual; no rules or text copied"
+    },
+    {
+      "name": "D&D 2024 Dungeon Master's Guide overview",
+      "url": "https://www.dndbeyond.com/posts/1916-updates-in-the-dungeon-masters-guide-2024",
+      "derived": "DM toolbox, encounters, custom spell and creature design"
+    },
+    {
+      "name": "D&D 5.2.1 SRD licensing",
+      "url": "https://www.dndbeyond.com/srd",
+      "derived": "license boundary; all R26 names/descriptions are original"
+    },
+    {
+      "name": "Pathfinder 2e Remaster",
+      "url": "https://cdn.paizo.com/blog/pathfinder-second-edition-remaster-project",
+      "derived": "separating magical traditions and ritual mechanics"
+    },
+    {
+      "name": "Brandon Sanderson Laws of Magic",
+      "url": "https://faq.brandonsanderson.com/knowledge-base/what-are-sandersons-laws-of-magic/",
+      "derived": "expand existing magic, convey how conflict is resolved"
+    }
+  ],
+  "copyright_notice": "Names and spell descriptions are original Avarenn proposals; D&D/PF2/Sanderson used only as structural research, no book rules or fictional spells transcribed.",
+  "governance": "Do not change canon HEAD, narrate spells as historic or assign them to any character until a source-verified episode demonstrates them."
+}
