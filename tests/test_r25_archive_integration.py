@@ -1,4 +1,4 @@
-"""R25 integration: an author-style v2 candidate must pass real archive/readback gates."""
+"""R25 integration under additive R26 v3: legacy R25 receipts still required."""
 import tempfile
 import unittest
 from pathlib import Path
@@ -84,7 +84,7 @@ class R25ArchiveIntegrationTest(unittest.TestCase):
             },
         }
         self.payload = {
-            "schema": "worldroot-draft-inbox-v2",
+            "schema": "worldroot-draft-inbox-v3",
             "delivery_id": NEW_ID,
             "prose": PROSE,
             "full_text": FULL,
@@ -99,6 +99,25 @@ class R25ArchiveIntegrationTest(unittest.TestCase):
             "reviewed_knowledge": [{**KNOWLEDGE, "acquired_day": 563}],
             "narrative_direction": DIRECTION,
             "reader_review": REVIEW,
+            "fantasy_review": {
+                "schema": "worldroot-r26-fantasy-review-v1",
+                "source_episode_id": HEAD_ID,
+                "cannot_choose_for_author": True,
+                "genese_unrestricted": True,
+                "backstage_invisible": True,
+                "spell_uses": [], "summon_uses": [],
+                "combat": {"mode": "SEM_COMBATE"},
+                "wonder": {"mode": "SEM_DESCOBERTA"},
+                "moments": [],
+                "character_evolution": [{
+                    "name": "LUCAS",
+                    "literal_anchor": "Uma personagem sintetica decide escrever uma carta por vontade propria.",
+                    "decision_or_reaction": "Lucas permite a decisão independente e escuta a personagem.",
+                    "emotional_or_relational_delta": "O vínculo entre os personagens permanece em liberdade.",
+                    "new_power_claimed": False,
+                }],
+                "variation_decision": "A sequência acompanha três cenas conectadas e não comprime uma batalha artificial.",
+            },
         }
         self.inbox = self.root / "inbox" / (NEW_ID + ".json")
         self.write()
@@ -115,7 +134,7 @@ class R25ArchiveIntegrationTest(unittest.TestCase):
     def test_r25_creates_readback_evidence_and_legacy_canon_unchanged(self):
         result = self.run_archive()
         self.assertEqual(result["status"], "RASCUNHO_GITHUB_VERIFICADO")
-        self.assertEqual(result["changed_file_count"], 9)
+        self.assertEqual(result["changed_file_count"], 10)
         self.assertTrue((self.root / "episodes" / NEW_ID /
                          "review" / "experiencia_r25.json").is_file())
         self.assertEqual(load(self.root / "canon" / "HEAD.json")["episode_id"], HEAD_ID)
@@ -144,7 +163,7 @@ class R25ArchiveIntegrationTest(unittest.TestCase):
         self.payload.pop("reader_review")
         self.payload.pop("narrative_direction")
         self.write()
-        with self.assertRaisesRegex(GateError, "R25"):
+        with self.assertRaisesRegex(GateError, "R26"):
             self.run_archive()
         self.assertFalse((self.root / "episodes" / NEW_ID).exists())
 

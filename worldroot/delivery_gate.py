@@ -16,6 +16,7 @@ from .editorial_guard import quick_preflight
 from .lived_narrative_audit import inspect_lived_narrative
 from .reader_experience import validate_reader_review, previous_canonical_scene_counts
 from .narrative_director import validate_direction
+from .r26_fantasy_directors import audit_fantasy
 from .ledger import GateError, ConflictError
 from .book_closure import require_book_end_approval
 
@@ -47,7 +48,7 @@ def audit_release(root: Path, episode_id: str) -> dict:
             raise GateError("No explicit inbox submission for chapter")
         inbox = load(inbox_path)
         checks["inbox_status"] = (
-            inbox.get("schema") in ("worldroot-draft-inbox-v1", "worldroot-draft-inbox-v2")
+            inbox.get("schema") in ("worldroot-draft-inbox-v1", "worldroot-draft-inbox-v2", "worldroot-draft-inbox-v3")
             and inbox.get("delivery_id") == episode_id
             and inbox.get("metadata", {}).get("canon_status") == "RASCUNHO"
         )
@@ -85,7 +86,9 @@ def audit_release(root: Path, episode_id: str) -> dict:
             raise GateError("Narrative word count missing")
         lived_advisory = inspect_lived_narrative(inbox["prose"])
         visual = presentation_preflight(
-            source, strict_dialogue=inbox["schema"] == "worldroot-draft-inbox-v2")
+            source, strict_dialogue=inbox["schema"] in ("worldroot-draft-inbox-v2", "worldroot-draft-inbox-v3"),
+            min_scenes=1 if inbox["schema"] == "worldroot-draft-inbox-v3" else 3,
+            min_named_turns=0 if inbox["schema"] == "worldroot-draft-inbox-v3" else 5)
         checks["ux_rich_contract"] = not visual["errors"]
         if not checks["ux_rich_contract"]:
             raise GateError("; ".join(visual["errors"]))
@@ -93,7 +96,7 @@ def audit_release(root: Path, episode_id: str) -> dict:
         checks["editorial_structural"] = not literary["errors"]
         if not checks["editorial_structural"]:
             raise GateError("; ".join(literary["errors"]))
-        if inbox["schema"] == "worldroot-draft-inbox-v2":
+        if inbox["schema"] in ("worldroot-draft-inbox-v2", "worldroot-draft-inbox-v3"):
             direction = inbox.get("narrative_direction") or {}
             compass = validate_direction({"episode_id": direction.get("source_episode_id")},
                                          direction)
@@ -108,6 +111,19 @@ def audit_release(root: Path, episode_id: str) -> dict:
             )
             if not checks["r25_reader_evidence"]:
                 raise GateError("R25: reader evidence or director differs from archive")
+        if inbox["schema"] == "worldroot-draft-inbox-v3":
+            fantasy = inbox.get("fantasy_review") or {}
+            fantasy_review = audit_fantasy(
+                inbox["prose"], fantasy, head_episode_id=fantasy.get("source_episode_id", ""),
+                previous_counts=previous_canonical_scene_counts(root, inbox["metadata"]))
+            fantasy_sidecar = pkg / "review" / "fantasia_r26.json"
+            checks["r26_fantasy_evidence"] = (
+                fantasy_review.get("ready") is True
+                and fantasy_sidecar.is_file()
+                and load(fantasy_sidecar).get("assessment") == fantasy_review
+                and load(fantasy_sidecar).get("editorial") == fantasy)
+            if not checks["r26_fantasy_evidence"]:
+                raise GateError("R26: fantasy evidence is missing or altered")
         event_records, knowledge_records = review_deltas(root, episode_id, draft)
         checks["semantic_sidecars"] = bool(event_records) and isinstance(knowledge_records, list)
         if not checks["semantic_sidecars"]:
@@ -129,8 +145,11 @@ def audit_release(root: Path, episode_id: str) -> dict:
         "longform_target_status": (depth.get("status") if "depth" in locals() else None),
         "lived_narrative_advisory": lived_advisory,
         "r25_contract": ("ENFORCED" if "inbox" in locals() and isinstance(inbox, dict)
-                         and inbox.get("schema") == "worldroot-draft-inbox-v2"
+                         and inbox.get("schema") in ("worldroot-draft-inbox-v2", "worldroot-draft-inbox-v3")
                          else "LEGACY_READBACK_NO_RETROACTIVE_REJECTION"),
+        "r26_contract": ("ENFORCED" if "inbox" in locals() and isinstance(inbox, dict)
+                         and inbox.get("schema") == "worldroot-draft-inbox-v3"
+                         else "HISTORICAL_READBACK_NO_RETROACTIVE_REJECTION"),
         "story_sha256": source_sha,
         "canon_changed": False,
         "drive_changed": False,

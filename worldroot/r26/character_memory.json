@@ -1,0 +1,442 @@
+{
+  "schema": "worldroot-r26-character-profiles-v1",
+  "universe": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "scope": "PRIVATE_PRODUCTION_MEMORY_SNAPSHOT_NOT_CANON_NEW",
+  "as_of_canon_head": "LVI-C05-PIV-D562-AUTHOR-SOURCE",
+  "notes": [
+    "Profiles summarize canon and production decisions, not proof of a character's exact position now.",
+    "Before physical appearances read latest literal scene and travel clock; no offscreen instant teleport.",
+    "Spells and items remain proposals until manifested in approved text.",
+    "Authors retain choice. R26 checks provenance, not characters' inner thoughts or literary artistry.",
+    "Specific Caedren D539 anomaly is author-ratified as literary text with continuity HOLD, not retroactively fixed."
+  ],
+  "profiles": [
+    {
+      "id": "R26-CHAR-01",
+      "name": "LUCAS",
+      "role": "Criador, fundador de Três Arcos",
+      "last_known_or_unknown": "Terras de Elyrien no D562, com Miren",
+      "relations": "Miren esposa; Kael, Varo, Thaeron e Caedren vínculos históricos",
+      "demonstrated_domain_summary": "GÊNESE/CREATION plena, criação e defesa monumental",
+      "voice_and_agency": "Humor expressivo, afeto e espanto perante mundo",
+      "guardrail": "Protagonista decide livremente; não entregar resultado por roteiro",
+      "source_pointers": [
+        "story-archive/canon/HEAD.json",
+        "story-archive/planning/book-vi/production-bible-v2-preproduction-restored.md",
+        "story-archive/editorial/audits/LVI-C05-PIII-D561-SISTEMA-THAERON-CAEDREN-CREATION-2026-11-22.json"
+      ],
+      "canonical_claim_source_quality": "HISTORICAL_SUMMARY_REQUIRES_LITERAL_READBACK"
+    },
+    {
+      "id": "R26-CHAR-02",
+      "name": "MIREN",
+      "role": "Diretora/pesquisadora de AERÚN, esposa de Lucas",
+      "last_known_or_unknown": "Com Lucas em Elyrien D562",
+      "relations": "Lucas parceiro; Thaeron/Iriel interlocutores anteriores; Astra parceira científica",
+      "demonstrated_domain_summary": "AERÚN, arqueologia e decisões autônomas sob risco",
+      "voice_and_agency": "Curiosidade, amor e firmeza; discordar com carinho",
+      "guardrail": "Não é assistente nem prêmio romântico",
+      "source_pointers": [
+        "story-archive/canon/HEAD.json",
+        "story-archive/planning/book-vi/production-bible-v2-preproduction-restored.md",
+        "story-archive/editorial/audits/LVI-C05-PIII-D561-SISTEMA-THAERON-CAEDREN-CREATION-2026-11-22.json"
+      ],
+      "canonical_claim_source_quality": "HISTORICAL_SUMMARY_REQUIRES_LITERAL_READBACK"
+    },
+    {
+      "id": "R26-CHAR-03",
+      "name": "THAERON",
+      "role": "Mestre mago da Grande Torre de Vélath",
+      "last_known_or_unknown": "Vélath D562 após despedida",
+      "relations": "Conhece Lucas desde D282; boné azul, pesquisa D331; amigo de Caedren e Miren",
+      "demonstrated_domain_summary": "Manipula correntes e ressonância de vento D560",
+      "voice_and_agency": "Humor velho amigo, espanto científico e autoridade arcana",
+      "guardrail": "Catedral do Céu Partilhado e outros nomes são PROPOSTAS; não atribuir automaticamente",
+      "source_pointers": [
+        "story-archive/canon/HEAD.json",
+        "story-archive/planning/book-vi/production-bible-v2-preproduction-restored.md",
+        "story-archive/editorial/audits/LVI-C05-PIII-D561-SISTEMA-THAERON-CAEDREN-CREATION-2026-11-22.json"
+      ],
+      "canonical_claim_source_quality": "HISTORICAL_SUMMARY_REQUIRES_LITERAL_READBACK"
+    },
+    {
+      "id": "R26-CHAR-04",
+      "name": "ELYRIEN",
+      "role": "Guardiã, pesquisadora e líder élfica autônoma",
+      "last_known_or_unknown": "Terras élficas D562",
+      "relations": "Neris emissária; relação com Lucas/Miren inicia encontro no D562",
+      "demonstrated_domain_summary": "Raízes vivas e defesa da floresta D545",
+      "voice_and_agency": "Doce em cotidiano, feroz e estratégica em crise",
+      "guardrail": "Não forçar reino formal, romance ou poderes de controle total",
+      "source_pointers": [
+        "story-archive/canon/HEAD.json",
+        "story-archive/planning/book-vi/production-bible-v2-preproduction-restored.md",
+        "story-archive/editorial/audits/LVI-C05-PIII-D561-SISTEMA-THAERON-CAEDREN-CREATION-2026-11-22.json"
+      ],
+      "canonical_claim_source_quality": "HISTORICAL_SUMMARY_REQUIRES_LITERAL_READBACK"
+    },
+    {
+      "id": "R26-CHAR-05",
+      "name": "THARVEK",
+      "role": "Príncipe/guardião anão de tradição de forja",
+      "last_known_or_unknown": "Terras anãs ou rota ainda não verificada em HEAD D562",
+      "relations": "Protege seu povo; não é automaticamente subordinado a Lucas",
+      "demonstrated_domain_summary": "Defesa de passagens, talento de forja e liderança",
+      "voice_and_agency": "Seco, explosivo e afetuoso, não bêbado caricatural",
+      "guardrail": "Novas runas e técnicas dependem de descoberta narrada",
+      "source_pointers": [
+        "story-archive/canon/HEAD.json",
+        "story-archive/planning/book-vi/production-bible-v2-preproduction-restored.md",
+        "story-archive/editorial/audits/LVI-C05-PIII-D561-SISTEMA-THAERON-CAEDREN-CREATION-2026-11-22.json"
+      ],
+      "canonical_claim_source_quality": "HISTORICAL_SUMMARY_REQUIRES_LITERAL_READBACK"
+    },
+    {
+      "id": "R26-CHAR-06",
+      "name": "SERAKH",
+      "role": "General imperial de alto escalão, magia e guerra",
+      "last_known_or_unknown": "No âmbito do Dominato; local exato depende da última cena",
+      "relations": "Responde ao poder de Velkar; decisões próprias",
+      "demonstrated_domain_summary": "Estratégia arcana e reação ao fracasso de Ithran",
+      "voice_and_agency": "Tem capacidade de planejar, aprender e errar",
+      "guardrail": "Não adquirir conhecimento remoto nem imunidade gratuita a GÊNESE",
+      "source_pointers": [
+        "story-archive/canon/HEAD.json",
+        "story-archive/planning/book-vi/production-bible-v2-preproduction-restored.md",
+        "story-archive/editorial/audits/LVI-C05-PIII-D561-SISTEMA-THAERON-CAEDREN-CREATION-2026-11-22.json"
+      ],
+      "canonical_claim_source_quality": "HISTORICAL_SUMMARY_REQUIRES_LITERAL_READBACK"
+    },
+    {
+      "id": "R26-CHAR-07",
+      "name": "VELKAR",
+      "role": "Soberano do Dominato das Nove Coroas",
+      "last_known_or_unknown": "Território imperial, não informado exatamente para D562",
+      "relations": "Serakh/Varkhess/Orelia/Rhazek sob agendas diversas",
+      "demonstrated_domain_summary": "Liderança estratégica do Dominato; Ruptura segue parcialmente proposta",
+      "voice_and_agency": "Calculista, ambicioso, limitado por informação e distância",
+      "guardrail": "Não confirmar identidade com Aethron",
+      "source_pointers": [
+        "story-archive/canon/HEAD.json",
+        "story-archive/planning/book-vi/production-bible-v2-preproduction-restored.md",
+        "story-archive/editorial/audits/LVI-C05-PIII-D561-SISTEMA-THAERON-CAEDREN-CREATION-2026-11-22.json"
+      ],
+      "canonical_claim_source_quality": "HISTORICAL_SUMMARY_REQUIRES_LITERAL_READBACK"
+    },
+    {
+      "id": "R26-CHAR-08",
+      "name": "VARO",
+      "role": "Líder militar da Legião, amigo de Lucas",
+      "last_known_or_unknown": "Três Arcos, em atividades posteriores à guerra",
+      "relations": "Lucas amigo; Caedren herói livre, não subordinado",
+      "demonstrated_domain_summary": "Liderança, táticas e decisões de resgate",
+      "voice_and_agency": "Seco, leal, capaz de discordar",
+      "guardrail": "Não abandonar defesa sem transição narrada",
+      "source_pointers": [
+        "story-archive/canon/HEAD.json",
+        "story-archive/planning/book-vi/production-bible-v2-preproduction-restored.md",
+        "story-archive/editorial/audits/LVI-C05-PIII-D561-SISTEMA-THAERON-CAEDREN-CREATION-2026-11-22.json"
+      ],
+      "canonical_claim_source_quality": "HISTORICAL_SUMMARY_REQUIRES_LITERAL_READBACK"
+    },
+    {
+      "id": "R26-CHAR-09",
+      "name": "KAEL",
+      "role": "Liderança civil da Cidade Livre",
+      "last_known_or_unknown": "Três Arcos; sem viagem posterior comprovada",
+      "relations": "Lucas amigo; Lysa coordenação política",
+      "demonstrated_domain_summary": "Decisões políticas e organização de cidade",
+      "voice_and_agency": "Pragmático com humor seco",
+      "guardrail": "Não teletransportar ao ARGOS sem deslocamento",
+      "source_pointers": [
+        "story-archive/canon/HEAD.json",
+        "story-archive/planning/book-vi/production-bible-v2-preproduction-restored.md",
+        "story-archive/editorial/audits/LVI-C05-PIII-D561-SISTEMA-THAERON-CAEDREN-CREATION-2026-11-22.json"
+      ],
+      "canonical_claim_source_quality": "HISTORICAL_SUMMARY_REQUIRES_LITERAL_READBACK"
+    },
+    {
+      "id": "R26-CHAR-10",
+      "name": "LYSA",
+      "role": "Representante civil de Três Arcos",
+      "last_known_or_unknown": "Comitiva em Elyrien D562",
+      "relations": "Kael e Lucas relações históricas; Althea já a conhece",
+      "demonstrated_domain_summary": "Diplomacia e projetos cívicos",
+      "voice_and_agency": "Irônica, calorosa e firme",
+      "guardrail": "Sua viagem ao ARGOS é narrada: não marcar como teleporte",
+      "source_pointers": [
+        "story-archive/canon/HEAD.json",
+        "story-archive/planning/book-vi/production-bible-v2-preproduction-restored.md",
+        "story-archive/editorial/audits/LVI-C05-PIII-D561-SISTEMA-THAERON-CAEDREN-CREATION-2026-11-22.json"
+      ],
+      "canonical_claim_source_quality": "HISTORICAL_SUMMARY_REQUIRES_LITERAL_READBACK"
+    },
+    {
+      "id": "R26-CHAR-11",
+      "name": "ASTRA",
+      "role": "Pesquisadora e líder de AERÚN",
+      "last_known_or_unknown": "Três Arcos D562, sem viagem comprovada",
+      "relations": "Miren diretora e parceira; Lucas amigo",
+      "demonstrated_domain_summary": "Proteção e investigação científica em ataque ao instituto",
+      "voice_and_agency": "Cética, inteligente, afetuosa",
+      "guardrail": "Não aparecer em Elyrien sem viagem",
+      "source_pointers": [
+        "story-archive/canon/HEAD.json",
+        "story-archive/planning/book-vi/production-bible-v2-preproduction-restored.md",
+        "story-archive/editorial/audits/LVI-C05-PIII-D561-SISTEMA-THAERON-CAEDREN-CREATION-2026-11-22.json"
+      ],
+      "canonical_claim_source_quality": "HISTORICAL_SUMMARY_REQUIRES_LITERAL_READBACK"
+    },
+    {
+      "id": "R26-CHAR-12",
+      "name": "KÁIRON",
+      "role": "Guerreiro livre, criação especial do passado",
+      "last_known_or_unknown": "Local exato D562 não certificado",
+      "relations": "Lucas e Miren vínculos de proteção e amizade",
+      "demonstrated_domain_summary": "Combate e existência livre demonstrados no histórico",
+      "voice_and_agency": "Aprende a viver, não a obedecer",
+      "guardrail": "Não transformá-lo em servo nem canonizar nova espada sem cena",
+      "source_pointers": [
+        "story-archive/canon/HEAD.json",
+        "story-archive/planning/book-vi/production-bible-v2-preproduction-restored.md",
+        "story-archive/editorial/audits/LVI-C05-PIII-D561-SISTEMA-THAERON-CAEDREN-CREATION-2026-11-22.json"
+      ],
+      "canonical_claim_source_quality": "HISTORICAL_SUMMARY_REQUIRES_LITERAL_READBACK"
+    },
+    {
+      "id": "R26-CHAR-13",
+      "name": "CAEDREN",
+      "role": "Herói das Sete Estradas, não legionário automático",
+      "last_known_or_unknown": "Local exato no D562 não certificado",
+      "relations": "Thaeron velho amigo; Lucas velho amigo; Althea vínculo histórico",
+      "demonstrated_domain_summary": "Espada e independência comprovadas no passado",
+      "voice_and_agency": "Humor, liberdade e experiência de estrada",
+      "guardrail": "Cameo D539 no pátio militar tem HOLD; nunca inferir cargo ou viagem",
+      "source_pointers": [
+        "story-archive/canon/HEAD.json",
+        "story-archive/planning/book-vi/production-bible-v2-preproduction-restored.md",
+        "story-archive/editorial/audits/LVI-C05-PIII-D561-SISTEMA-THAERON-CAEDREN-CREATION-2026-11-22.json"
+      ],
+      "canonical_claim_source_quality": "HISTORICAL_SUMMARY_REQUIRES_LITERAL_READBACK"
+    },
+    {
+      "id": "R26-CHAR-14",
+      "name": "ALTHEA",
+      "role": "Rainha soberana de Thalor",
+      "last_known_or_unknown": "Capital de Thalor, salvo nova jornada",
+      "relations": "Já conhecia Lucas, Miren, Kael, Lysa e Varo",
+      "demonstrated_domain_summary": "Diplomacia e poder institucional",
+      "voice_and_agency": "Astuta, calorosa com velhos conhecidos",
+      "guardrail": "Nunca apresentar-se como desconhecida de Lucas",
+      "source_pointers": [
+        "story-archive/canon/HEAD.json",
+        "story-archive/planning/book-vi/production-bible-v2-preproduction-restored.md",
+        "story-archive/editorial/audits/LVI-C05-PIII-D561-SISTEMA-THAERON-CAEDREN-CREATION-2026-11-22.json"
+      ],
+      "canonical_claim_source_quality": "HISTORICAL_SUMMARY_REQUIRES_LITERAL_READBACK"
+    },
+    {
+      "id": "R26-CHAR-15",
+      "name": "NÓX",
+      "role": "Companheiro autônomo em armadura viva",
+      "last_known_or_unknown": "Integrado voluntariamente a Lucas na viagem",
+      "relations": "Lucas companheiro, SISTEMA distinto",
+      "demonstrated_domain_summary": "Proteção e análise, não mera IA de infraestrutura",
+      "voice_and_agency": "Humor próprio e intimidade de amizade",
+      "guardrail": "Não fundir consciência com SISTEMA",
+      "source_pointers": [
+        "story-archive/canon/HEAD.json",
+        "story-archive/planning/book-vi/production-bible-v2-preproduction-restored.md",
+        "story-archive/editorial/audits/LVI-C05-PIII-D561-SISTEMA-THAERON-CAEDREN-CREATION-2026-11-22.json"
+      ],
+      "canonical_claim_source_quality": "HISTORICAL_SUMMARY_REQUIRES_LITERAL_READBACK"
+    },
+    {
+      "id": "R26-CHAR-16",
+      "name": "SISTEMA",
+      "role": "Interface azul, sardônica, distinta de GÊNESE",
+      "last_known_or_unknown": "Aparece para Lucas após D561, presença não física",
+      "relations": "Lucas diálogo histórico D282 e D331; distinto de NÓX",
+      "demonstrated_domain_summary": "Informação limitada, sem onisciência",
+      "voice_and_agency": "Ironia sarcástica e intervenções raras significativas",
+      "guardrail": "Não sumir longamente por esquecimento nem impor fala por quota",
+      "source_pointers": [
+        "story-archive/canon/HEAD.json",
+        "story-archive/planning/book-vi/production-bible-v2-preproduction-restored.md",
+        "story-archive/editorial/audits/LVI-C05-PIII-D561-SISTEMA-THAERON-CAEDREN-CREATION-2026-11-22.json"
+      ],
+      "canonical_claim_source_quality": "HISTORICAL_SUMMARY_REQUIRES_LITERAL_READBACK"
+    },
+    {
+      "id": "R26-CHAR-17",
+      "name": "RUMO",
+      "role": "Autômato livre e cocriador de ASA LIVRE",
+      "last_known_or_unknown": "Na região élfica, D562",
+      "relations": "Naira e Lucas cooperação, vontade própria",
+      "demonstrated_domain_summary": "Engenharia, observação e escolhas",
+      "voice_and_agency": "Curiosidade genuína por sementes e mundo",
+      "guardrail": "Não reduzir a console humanoide",
+      "source_pointers": [
+        "story-archive/canon/HEAD.json",
+        "story-archive/planning/book-vi/production-bible-v2-preproduction-restored.md",
+        "story-archive/editorial/audits/LVI-C05-PIII-D561-SISTEMA-THAERON-CAEDREN-CREATION-2026-11-22.json"
+      ],
+      "canonical_claim_source_quality": "HISTORICAL_SUMMARY_REQUIRES_LITERAL_READBACK"
+    },
+    {
+      "id": "R26-CHAR-18",
+      "name": "NAIRA",
+      "role": "Comandante da aeronave ARGOS",
+      "last_known_or_unknown": "Campina de pouso nas terras élficas D562",
+      "relations": "Lucas e Rumo, tripulação sob comando dela",
+      "demonstrated_domain_summary": "Voo demonstrado e operação autônoma",
+      "voice_and_agency": "Competência sem perder emoção",
+      "guardrail": "Não abandonar aeronave sem decisão",
+      "source_pointers": [
+        "story-archive/canon/HEAD.json",
+        "story-archive/planning/book-vi/production-bible-v2-preproduction-restored.md",
+        "story-archive/editorial/audits/LVI-C05-PIII-D561-SISTEMA-THAERON-CAEDREN-CREATION-2026-11-22.json"
+      ],
+      "canonical_claim_source_quality": "HISTORICAL_SUMMARY_REQUIRES_LITERAL_READBACK"
+    },
+    {
+      "id": "R26-CHAR-19",
+      "name": "BRANNIK",
+      "role": "Amigo ferreiro de Três Arcos",
+      "last_known_or_unknown": "Três Arcos, sem viagem futura comprovada",
+      "relations": "Lucas e Forja Aurora",
+      "demonstrated_domain_summary": "Inventividade de forja e liderança artesanal",
+      "voice_and_agency": "Alto, expansivo e cômico",
+      "guardrail": "Não tornar gritaria a única característica",
+      "source_pointers": [
+        "story-archive/canon/HEAD.json",
+        "story-archive/planning/book-vi/production-bible-v2-preproduction-restored.md",
+        "story-archive/editorial/audits/LVI-C05-PIII-D561-SISTEMA-THAERON-CAEDREN-CREATION-2026-11-22.json"
+      ],
+      "canonical_claim_source_quality": "HISTORICAL_SUMMARY_REQUIRES_LITERAL_READBACK"
+    },
+    {
+      "id": "R26-CHAR-20",
+      "name": "ITHRAN",
+      "role": "Ex-subgeneral adversário da primeira ofensiva",
+      "last_known_or_unknown": "Capturado após C03; conferir posição posterior",
+      "relations": "Subordinado de Serakh no passado",
+      "demonstrated_domain_summary": "Operação militar inteligente, derrotada",
+      "voice_and_agency": "Competente, falível, perigoso",
+      "guardrail": "Derrota e cativeiro não resetam",
+      "source_pointers": [
+        "story-archive/canon/HEAD.json",
+        "story-archive/planning/book-vi/production-bible-v2-preproduction-restored.md",
+        "story-archive/editorial/audits/LVI-C05-PIII-D561-SISTEMA-THAERON-CAEDREN-CREATION-2026-11-22.json"
+      ],
+      "canonical_claim_source_quality": "HISTORICAL_SUMMARY_REQUIRES_LITERAL_READBACK"
+    },
+    {
+      "id": "R26-CHAR-21",
+      "name": "NIXA",
+      "role": "Uma das seis Sombras",
+      "last_known_or_unknown": "Três Arcos e operações quando documentadas",
+      "relations": "Rede Sombras e liderança de Varo",
+      "demonstrated_domain_summary": "Proteção e investigação",
+      "voice_and_agency": "Discreta, iniciativa própria",
+      "guardrail": "Não saber informações secretas por narração",
+      "source_pointers": [
+        "story-archive/canon/HEAD.json",
+        "story-archive/planning/book-vi/production-bible-v2-preproduction-restored.md",
+        "story-archive/editorial/audits/LVI-C05-PIII-D561-SISTEMA-THAERON-CAEDREN-CREATION-2026-11-22.json"
+      ],
+      "canonical_claim_source_quality": "HISTORICAL_SUMMARY_REQUIRES_LITERAL_READBACK"
+    },
+    {
+      "id": "R26-CHAR-22",
+      "name": "NERIS",
+      "role": "Emissária élfica, pesquisadora",
+      "last_known_or_unknown": "Comitiva em Elyrien D562",
+      "relations": "Elyrien confiança, Miren interlocutora",
+      "demonstrated_domain_summary": "Pesquisa de amostras, viagem e escolhas próprias",
+      "voice_and_agency": "Observadora, leal a seu povo",
+      "guardrail": "Não equivaler a Elyrien ou a porta-voz total de todas aldeias",
+      "source_pointers": [
+        "story-archive/canon/HEAD.json",
+        "story-archive/planning/book-vi/production-bible-v2-preproduction-restored.md",
+        "story-archive/editorial/audits/LVI-C05-PIII-D561-SISTEMA-THAERON-CAEDREN-CREATION-2026-11-22.json"
+      ],
+      "canonical_claim_source_quality": "HISTORICAL_SUMMARY_REQUIRES_LITERAL_READBACK"
+    },
+    {
+      "id": "R26-CHAR-23",
+      "name": "IRIEL",
+      "role": "Aprendiz pesquisadora da Grande Torre",
+      "last_known_or_unknown": "Vélath, última presença documentada D562",
+      "relations": "Thaeron mestre, Lucas/Miren conhecidos",
+      "demonstrated_domain_summary": "Instrumentos de ventos, observação de fenômenos",
+      "voice_and_agency": "Corajosa, técnica, pessoa própria",
+      "guardrail": "Não saber localização exata de Talis por suposição",
+      "source_pointers": [
+        "story-archive/canon/HEAD.json",
+        "story-archive/planning/book-vi/production-bible-v2-preproduction-restored.md",
+        "story-archive/editorial/audits/LVI-C05-PIII-D561-SISTEMA-THAERON-CAEDREN-CREATION-2026-11-22.json"
+      ],
+      "canonical_claim_source_quality": "HISTORICAL_SUMMARY_REQUIRES_LITERAL_READBACK"
+    },
+    {
+      "id": "R26-CHAR-24",
+      "name": "MAELIS",
+      "role": "Liderança de cuidado e saúde",
+      "last_known_or_unknown": "Três Arcos, verificar ao reaparecer",
+      "relations": "Varo e comunidade de saúde",
+      "demonstrated_domain_summary": "Cuidado, coordenação e coragem",
+      "voice_and_agency": "Humana, firme e cuidadosa",
+      "guardrail": "Não reduzir personagem a checklist de leitos",
+      "source_pointers": [
+        "story-archive/canon/HEAD.json",
+        "story-archive/planning/book-vi/production-bible-v2-preproduction-restored.md",
+        "story-archive/editorial/audits/LVI-C05-PIII-D561-SISTEMA-THAERON-CAEDREN-CREATION-2026-11-22.json"
+      ],
+      "canonical_claim_source_quality": "HISTORICAL_SUMMARY_REQUIRES_LITERAL_READBACK"
+    },
+    {
+      "id": "R26-CHAR-25",
+      "name": "TALIS",
+      "role": "Irmã de Miren, desaparecida",
+      "last_known_or_unknown": "LOCALIZAÇÃO_DESCONHECIDA",
+      "relations": "Miren irmã",
+      "demonstrated_domain_summary": "Nenhum poder novo presumido",
+      "voice_and_agency": "Ausência é mistério e vínculo afetivo",
+      "guardrail": "Não confirmar viva, morta, presa ou local por sugestão",
+      "source_pointers": [
+        "story-archive/canon/HEAD.json",
+        "story-archive/planning/book-vi/production-bible-v2-preproduction-restored.md",
+        "story-archive/editorial/audits/LVI-C05-PIII-D561-SISTEMA-THAERON-CAEDREN-CREATION-2026-11-22.json"
+      ],
+      "canonical_claim_source_quality": "HISTORICAL_SUMMARY_REQUIRES_LITERAL_READBACK"
+    }
+  ],
+  "critical_invariants": [
+    {
+      "id": "LUCAS-GENESE",
+      "rule": "GÊNESE plena sem gastos de mana, cooldowns ou rank limitante inventados",
+      "severity": "BLOCK_UNSUPPORTED_NEW_ASSERTION"
+    },
+    {
+      "id": "CAEDREN-NO-LEGION",
+      "rule": "Caedren não é legionário por afinidade e sua presença D539 não comprova deslocamentos",
+      "severity": "BLOCK_UNSUPPORTED_NEW_ASSERTION"
+    },
+    {
+      "id": "OLD-FRIENDS",
+      "rule": "Lucas conhecia Thaeron antes do Livro VI; Althea conhecia a comitiva; NÓX não é SISTEMA",
+      "severity": "BLOCK_FIRST_INTRODUCTION_DRIFT"
+    },
+    {
+      "id": "TALIS-MYSTERY",
+      "rule": "Localização e destino de Talis desconhecidos até prova narrada",
+      "severity": "BLOCK_FALSE_REVELATION"
+    },
+    {
+      "id": "ELS-INDEPENDENT",
+      "rule": "Elyrien e Tharvek têm soberania e escolhas próprias; evitar inventar reino institucional",
+      "severity": "EDITORIAL_REVIEW"
+    }
+  ]
+}

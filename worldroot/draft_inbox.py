@@ -24,6 +24,7 @@ from .literary_revision import review_episode
 from .reader_experience import (validate_reader_review, assess_experience,
                                 previous_canonical_scene_counts)
 from .narrative_director import validate_direction
+from .r26_fantasy_directors import audit_fantasy
 from .presentation_guard import presentation_preflight
 from .story_focus_audit import inspect_installment
 from .day_arc_audit import inspect_day_arc
@@ -44,7 +45,7 @@ def _bytes(obj):
 def _assemble(episode_id: str, payload: dict, *, enforce_presentation: bool = True,
               book_end_approval_verified: bool = False, head: dict | None = None,
               previous_counts: list[int] | None = None):
-    if (payload.get("schema") not in ("worldroot-draft-inbox-v1", "worldroot-draft-inbox-v2")
+    if (payload.get("schema") not in ("worldroot-draft-inbox-v1", "worldroot-draft-inbox-v2", "worldroot-draft-inbox-v3")
             or payload.get("delivery_id") != episode_id):
         raise GateError("Inbox schema or immutable ID mismatch")
     text = payload.get("full_text")
@@ -64,7 +65,8 @@ def _assemble(episode_id: str, payload: dict, *, enforce_presentation: bool = Tr
     # assistant-prepared, source-anchored literary review. Not human certification.
     r25_assessment = None
     r25_director = None
-    if payload["schema"] == "worldroot-draft-inbox-v2":
+    r26_assessment = None
+    if payload["schema"] in ("worldroot-draft-inbox-v2", "worldroot-draft-inbox-v3"):
         source_head = head if enforce_presentation else {
             "episode_id": (payload.get("narrative_direction") or {}).get("source_episode_id")
         }
@@ -74,6 +76,16 @@ def _assemble(episode_id: str, payload: dict, *, enforce_presentation: bool = Tr
         if r25_director["errors"] or r25_assessment["errors"]:
             raise GateError("R25 creative review failed: " + "; ".join(
                 r25_director["errors"] + r25_assessment["errors"])[:380])
+    # R26 is additive: new v3 chapters must satisfy R25 and all six fantasy directors.
+    if payload["schema"] == "worldroot-draft-inbox-v3":
+        fantasy = payload.get("fantasy_review")
+        previous_source = head.get("episode_id") if enforce_presentation else (
+            fantasy.get("source_episode_id") if isinstance(fantasy, dict) else None)
+        r26_assessment = audit_fantasy(
+            prose, fantasy, head_episode_id=previous_source or "",
+            previous_counts=previous_counts)
+        if r26_assessment["errors"]:
+            raise GateError("R26 fantasy review failed: " + "; ".join(r26_assessment["errors"])[:450])
     choices = payload.get("choices")
     if not isinstance(choices, list) or len(choices) != 5:
         raise GateError("A chapter must include five ordered choices")
@@ -99,7 +111,9 @@ def _assemble(episode_id: str, payload: dict, *, enforce_presentation: bool = Tr
     # Mandatory visual structure for NEW chapters. Existing immutable drafts
     # are exempt solely for idempotent readback; they must not be rewritten.
     if enforce_presentation:
-        visual = presentation_preflight(text)
+        visual = presentation_preflight(
+            text, min_scenes=1 if payload["schema"] == "worldroot-draft-inbox-v3" else 3,
+            min_named_turns=0 if payload["schema"] == "worldroot-draft-inbox-v3" else 5)
         if visual["errors"]:
             raise GateError("Chat presentation contract failed: " + "; ".join(visual["errors"])[:350])
 
@@ -159,12 +173,19 @@ def _assemble(episode_id: str, payload: dict, *, enforce_presentation: bool = Tr
         "eventos_revisados.json": _bytes(reviewed_events),
         "conhecimento_revisado.json": _bytes(reviewed_knowledge),
     }
-    if payload["schema"] == "worldroot-draft-inbox-v2":
+    if payload["schema"] in ("worldroot-draft-inbox-v2", "worldroot-draft-inbox-v3"):
         review_files["experiencia_r25.json"] = _bytes({
             "schema": "worldroot-r25-evidence-sidecar-v1",
             "assessment": r25_assessment, "director": r25_director,
             "review": payload["reader_review"],
             "note": "Assistant editorial evidence, not independent human certification.",
+        })
+    if payload["schema"] == "worldroot-draft-inbox-v3":
+        review_files["fantasia_r26.json"] = _bytes({
+            "schema": "worldroot-r26-fantasy-sidecar-v1",
+            "assessment": r26_assessment,
+            "editorial": payload["fantasy_review"],
+            "note": "Structure/evidence review only: no new spell or creature made canon.",
         })
     return draft, files, review_files
 
@@ -189,6 +210,16 @@ def _focus_receipt(prose: str) -> dict:
         "lucas_dialogue_scene_share": review["lucas_dialogue_scene_share"],
         "advisories": review["advisories"],
     }
+
+
+def r26_assessment_summary(payload: dict, head: dict, root: Path) -> dict:
+    fantasy = payload.get("fantasy_review") or {}
+    report = audit_fantasy(payload["prose"], fantasy,
+                           head_episode_id=fantasy.get("source_episode_id", ""),
+                           previous_counts=previous_canonical_scene_counts(
+                               root, payload["metadata"]))
+    return {key: report.get(key) for key in ("ready", "status", "magic", "combat", "wonder",
+                                            "spectacle", "character_memory", "repetition")}
 
 
 def archive_inbox(root: Path, inbox: Path) -> dict:
@@ -219,8 +250,8 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
     meta = payload.get("metadata")
     if (not existing_manifest.is_file() and isinstance(meta, dict)
             and meta.get("book") == "Livro VI"
-            and payload.get("schema") != "worldroot-draft-inbox-v2"):
-        raise GateError("R25 new Livro VI draft requires v2 schema with review evidence")
+            and payload.get("schema") != "worldroot-draft-inbox-v3"):
+        raise GateError("R26 new Livro VI draft requires v3: R25 experience + fantasy review")
     draft, files, review_files = _assemble(
         episode_id, payload, enforce_presentation=not existing_manifest.is_file(),
         book_end_approval_verified=book_end_approval_verified, head=head,
@@ -248,10 +279,15 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
             "lived_narrative_advisory": inspect_lived_narrative(payload["prose"]),
             "longform_depth": inspect_longform(payload["prose"]),
             "longform_stage": stage_receipt,
-            "presentation_preflight": presentation_preflight(payload["full_text"]),
+            "presentation_preflight": presentation_preflight(payload["full_text"],
+                min_scenes=1 if payload.get("schema") == "worldroot-draft-inbox-v3" else 3,
+                min_named_turns=0 if payload.get("schema") == "worldroot-draft-inbox-v3" else 5),
             "dynamic_scene_advisory": inspect_draft_dynamics(payload["prose"], payload["metadata"]),
             "literary_precision_advisory": review_episode(payload["prose"]),
             "r25_reader_experience": assess_experience(payload["prose"]),
+            "r26_fantasy_review": (r26_assessment_summary(payload, head, root)
+                                   if payload.get("schema") == "worldroot-draft-inbox-v3"
+                                   else None),
         }
     if head.get("book_closed") is True:
         from .book_opening import require_book_open_approval
@@ -302,9 +338,14 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
             "lived_narrative_advisory": inspect_lived_narrative(payload["prose"]),
             "longform_depth": inspect_longform(payload["prose"]),
             "longform_stage": stage_receipt,
-            "presentation_preflight": presentation_preflight(payload["full_text"]),
+            "presentation_preflight": presentation_preflight(payload["full_text"],
+                min_scenes=1 if payload.get("schema") == "worldroot-draft-inbox-v3" else 3,
+                min_named_turns=0 if payload.get("schema") == "worldroot-draft-inbox-v3" else 5),
             "literary_precision_advisory": review_episode(payload["prose"]),
             "r25_reader_experience": assess_experience(payload["prose"]),
+            "r26_fantasy_review": (r26_assessment_summary(payload, head, root)
+                                   if payload.get("schema") == "worldroot-draft-inbox-v3"
+                                   else None),
     }
 
 
