@@ -178,6 +178,9 @@ def build_live_brief(head: dict, policy: dict, max_chars: int = 1700) -> dict:
     ]
     policies = {r.get("id"): r for r in policy.get("rules", []) if isinstance(r, dict) and r.get("active")}
     selected = [rid for rid in EDIT_RULES if rid in policies]
+    if all(rid in policies for rid in ("P106","P107","P108","P109")):
+        lines.insert(4, "R31: recuperar 95% dos requisitos por criação e 100% críticos; uma rota principal, três secundárias de igual valor e ação livre; nenhuma domina.")
+        selected.extend(rid for rid in ("P106","P107","P108","P109") if rid not in selected)
     brief = "\n".join(lines)
     while len(brief) > max_chars and len(lines) > 4:
         lines.pop(-2)
