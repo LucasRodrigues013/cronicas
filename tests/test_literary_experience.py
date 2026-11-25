@@ -49,3 +49,7 @@ class R30Tests(unittest.TestCase):
             self.assertEqual(b["status"],"EDITORIAL_CONTEXT")
             self.assertEqual(writer_brief(Path("."),["unknown"],[])["status"],"RECOVER_BEFORE_ASSERTING")
             self.assertIsNone(compare("Cena nova.",Path("."),["a"])["literary_grade"])
+
+    def test_specific_backstage_phrases(self):
+        self.assertEqual(len(measure("A trajetória hipotética seguiu após recuperação prévia. Varo observou sem inventar capacidade total.")["meta_phrases"]),3)
+        self.assertEqual(measure("Miren não confirmou a hipótese porque faltava uma amostra. Lucas não queria café.")["meta_phrases"],[])

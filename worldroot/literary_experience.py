@@ -16,7 +16,7 @@ REGISTRY = "editorial/registries/r30-character-identity.json"
 CORPUS = "editorial/registries/r30-literary-corpus.json"
 VERSION = 30
 WORDS = re.compile(r"[^\W_]+", re.UNICODE)
-META = re.compile(r"\b(?:não (?:era|é|seria|significava|significa|constituía) (?:uma? )?(?:prova|aliança|conquista definitiva|autorização|confirmação)|não (?:havia|existia) (?:evidência|conhecimento suficiente)|não (?:dependia|precisava) da autorização|não (?:era|foi) (?:canonizado|canônico)|autorização do autor|conveniência narrativa|fonte literal|estado canônico|escolha autoral|sem (?:promover|canonizar))\b", re.I)
+META = re.compile(r"\b(?:não (?:era|é|seria|significava|significa|constituía) (?:uma? )?(?:prova|aliança|conquista definitiva|autorização|confirmação)|não (?:havia|existia) (?:evidência|conhecimento suficiente)|não (?:dependia|precisava) da autorização|não (?:era|foi) (?:canonizado|canônico)|autorização do autor|conveniência narrativa|fonte literal|estado canônico|escolha autoral|sem (?:promover|canonizar|inventar (?:capacidade|alcance|localização|autoria|resultado|números))|(?:após|depois de) (?:recuperação prévia|confirmar (?:a )?última localização)|trajetória hipotética|sessão (?:de ensino )?compatível com (?:a )?presença|em (?:um )?intervalo narrado|(?:não|nem) (?:declarou|declarava) (?:a )?(?:costa|terra|cidade|região) conquistada|sem atribuir autoria|certeza fabricada|não era uma missão de Lucas|não era um relatório|não era carta náutica confirmada|(?:a )?recompensa daquele capítulo)\b", re.I)
 SENSES = {
     "olfato": r"\b(?:cheir\w*|aroma\w*|perfume\w*|odor\w*|fragrância\w*)\b",
     "som": r"\b(?:sussurr\w*|rang\w*|estrond\w*|eco\w*|silêncio|voz\w*|murmur\w*|resso\w*)\b",
