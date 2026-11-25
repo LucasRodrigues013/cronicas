@@ -1,7 +1,7 @@
 {
   "schema": "worldroot-editorial-policy-v1",
   "project": "CRONICAS_DE_UM_NOVO_MUNDO",
-  "version": 17,
+  "version": 18,
   "reviewed_at": "2026-11-25",
   "approved_scope": "AUTHOR_APPROVED_EDITORIAL_DYNAMICS_NOT_NARRATED_CANON",
   "source_of_truth": "main/worldroot/editorial_policy.json",
@@ -211,6 +211,14 @@
       "transcript_line": null,
       "quote": "façamos a proxima evolução, utilize e faça isso utilizando os dados pesquisados, analisados e verificados.",
       "reference": "story-archive/author-approvals/LVI-R30-LITERARY-EXPERIENCE-2026-11-25.json"
+    },
+    {
+      "id": "S30",
+      "kind": "AUTHOR_APPROVAL",
+      "at": "2026-11-25",
+      "transcript_line": null,
+      "quote": "Precisamos chegar em no mínimo 95% de recuperação de memória por criação pra não perder detalhes. Não apagar diretrizes antigas, nem oque já melhoramos, precisamos evoluir e não substituir. Queremos viver a história sem perder ela, e ver como conectar tudo isso ao futuro, é uma linha principal de narração e as secundárias. As 4 escolhas precisam ser igualmente notáveis e não somente a 4 boa, todas com caminhos incríveis e recompensas e riscos em casa iguais, mas uma seguiria a missão principal e as outras secundárias.",
+      "reference": "USER_MESSAGE_2026-11-25_R31_CONTINUITY"
     }
   ],
   "rules": [
@@ -2052,6 +2060,78 @@
       "core": true,
       "evidence": [
         "S29"
+      ],
+      "active": true
+    },
+    {
+      "id": "P106",
+      "title": "Memória por criação",
+      "directive": "Definir requisitos de memória por cena/episódio antes de narrar; recuperar evidência histórica e estado atual, verificar pelo menos 95% dos requisitos e todos os críticos. Falta relevante exige recuperação ou revisão; não confundir referência candidata com fato ou qualidade literária.",
+      "tags": [
+        "R31",
+        "LIVRO_VI",
+        "CONTINUIDADE",
+        "QUALIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S30"
+      ],
+      "active": true
+    },
+    {
+      "id": "P107",
+      "title": "Linha principal e linhas secundárias vivas",
+      "directive": "Uma linha principal e arcos secundários autônomos com promessa, progresso, recompensa, consequência e vínculo futuro. Avançar frentes não escolhidas apenas por causalidade e tempo orgânico; não apagar, congelar ou forçar reencontro. Não transformar plano em cânone.",
+      "tags": [
+        "R31",
+        "LIVRO_VI",
+        "CONTINUIDADE",
+        "QUALIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S30"
+      ],
+      "active": true
+    },
+    {
+      "id": "P108",
+      "title": "Quatro caminhos igualmente notáveis",
+      "directive": "Complementa P87: quatro opções substanciais, uma principal e três secundárias, cada uma com riscos e recompensas comparavelmente significativos, consequências próprias e identidade singular. Nenhum número possui privilégio, a quarta não soma as outras. Preservar quinta ação livre e escolhas antigas.",
+      "tags": [
+        "R31",
+        "LIVRO_VI",
+        "CONTINUIDADE",
+        "QUALIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S30"
+      ],
+      "active": true
+    },
+    {
+      "id": "P109",
+      "title": "Experiência e continuidade sem substituição",
+      "directive": "Preservar todas as diretrizes vigentes, corpus e identidade das Crônicas; recuperar detalhes antes de escrever e aplicar beleza, cultura, romance, mistério e grandeza em prosa vivida. Bastidores técnicos não aparecem na ficção.",
+      "tags": [
+        "R31",
+        "LIVRO_VI",
+        "CONTINUIDADE",
+        "QUALIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S30"
       ],
       "active": true
     }
