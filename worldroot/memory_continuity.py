@@ -9,6 +9,7 @@ from .living_world import load_canonical, project
 from .literary_experience import source_registry
 from .history_index import read_verified_sources
 import sqlite3
+from .editorial_guard import POLICY_PATH,validate_policy
 
 DOMAINS=("identity","relationship","location","knowledge","inventory","power","world","event","promise","author_rule")
 def digest(s):return hashlib.sha256(s.encode("utf-8")).hexdigest()
@@ -63,6 +64,8 @@ def creation_packet(root, db, requirements, *, head, candidate_limit=80, vector_
     if not isinstance(requirements,list) or not 1<=len(requirements)<=80:raise ValueError("Requirements count")
     # Existing R28/R30 projections are additional retrieval routes, not replaced.
     registry=source_registry(root,head)
+    policy_text=POLICY_PATH.read_text(encoding="utf-8")
+    policy=json.loads(policy_text);validate_policy(policy)
     world=project(root,head)
     dense=None;graph_records=[]
     if vector_folder is not None:
@@ -79,7 +82,12 @@ def creation_packet(root, db, requirements, *, head, candidate_limit=80, vector_
         ids.add(rid)
         # Author intent and observed story are not interchangeable.
         role=req.get("role","Response")
-        if role not in ("Response","Prompt"):raise ValueError("Invalid role")
+        if role not in ("Response","Prompt","AuthorPolicy") or (role=="AuthorPolicy" and req["domain"]!="author_rule"):raise ValueError("Invalid role")
+        if role=="AuthorPolicy":
+            words=set(tokens(req["query"]))-STOP
+            rules=sorted((r for r in policy["rules"] if r["active"]),key=lambda r:(-len(words.intersection(tokens(r["id"]+" "+r["title"]+" "+r["directive"]))),r["id"]))
+            items.append({"requirement":req,"candidate_status":"AUTHOR_POLICY_CANDIDATES","policy_rules":rules[:20],"policy_sha256":digest(policy_text),"hits":[],"recent_canon_candidates":[],"r30_identity_candidates":[],"r28_world_candidates":[],"dense_candidates":[],"graph_candidates":[]})
+            continue
         result=fusion(db,req["query"],req.get("entity"),req.get("topic"),role,limit=candidate_limit)
         entity=req.get("entity")
         words=set(tokens(req["query"]))-STOP
@@ -162,6 +170,8 @@ def review_creation(root, head, requirements, reviewed):
     roles={m["source_name"]:[(role,start,start+len(lines)-1) for role,start,lines in sections(t)] for m,t in historical}
     # Closed episodes are narrative evidence, not user prompts.
     for e in entries:roles[e["id"]]=[("Response",1,len(narrative_evidence(e["text"]).splitlines()))]
+    policy_text=POLICY_PATH.read_text(encoding="utf-8");validate_policy(json.loads(policy_text))
+    bodies["AUTHOR_POLICY"]=policy_text;roles["AUTHOR_POLICY"]=[("AuthorPolicy",1,len(policy_text.splitlines()))]
     if not isinstance(reviewed,dict):raise ValueError("Invalid review mapping")
     reqmap={r["id"]:r for r in requirements}
     if not set(reviewed)<=set(reqmap):raise ValueError("Unknown review ID")
@@ -171,6 +181,7 @@ def review_creation(root, head, requirements, reviewed):
         source=r.get("source");lo=r.get("line_start");hi=r.get("line_end")
         if type(lo) is not int or type(hi) is not int:continue
         expected=reqmap[rid].get("role","Response")
+        if expected=="AuthorPolicy" and reqmap[rid]["domain"]!="author_rule":continue
         if any(role==expected and start<=lo<=hi<=end for role,start,end in roles.get(source,[])):
             valid[rid]=r
     result=coverage(requirements,valid,bodies)
