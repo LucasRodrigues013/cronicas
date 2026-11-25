@@ -1,0 +1,750 @@
+{
+  "schema": "worldroot-r33-request-v1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "delivery_id": "LVI-C08-PIV-D577-AUTHOR-SOURCE",
+  "head": {
+    "book": "Livro VI",
+    "book_closed": false,
+    "chapter": 8,
+    "closure_sha256": "a3f7f1a96de98e76dfa0db90f76731674cffd398af698b0948066bdc21237077",
+    "day": 576,
+    "drive_head_status": "NAO_SINCRONIZADO",
+    "engine_mode": "GITHUB_PRIVADO_SEM_OIDC",
+    "episode_id": "LVI-C08-PIII-D576-AUTHOR-SOURCE",
+    "hour": "23h14",
+    "location": "Torre do Criador (Lucas/Miren); Três Arcos, Campo Aurora, Halvern, Vale dos Ofícios Baixos, Renshar, Serevan",
+    "part": "III",
+    "previous_head_sha256": "8a696a1242dca86b045652bd988e7705754a3b6da9c96b4b4917712e60397f71",
+    "schema": "worldroot-git-canon-v1",
+    "sequence": 47,
+    "source_sha256": "15e0697babadc23f320f88956db607bfbcb217be1824c78a81e1a7e6a99420d1"
+  },
+  "choice_sha256": "2cc6fae439d3dd90594f56240176e6d3235b13f8304f34a148cc83b5b75f2a9a",
+  "requirements": [
+    {
+      "id": "mirenhair",
+      "domain": "identity",
+      "critical": true,
+      "query": "Cabelos escuros de Miren observados em cena íntima antiga, sem inferir outros traços."
+    },
+    {
+      "id": "couplevoice",
+      "domain": "relationship",
+      "critical": true,
+      "query": "Humor íntimo recíproco de Miren e Lucas: reclamação ao departamento ainda dormindo; referência para comparação, não copiar."
+    },
+    {
+      "id": "currentcouple",
+      "domain": "relationship",
+      "critical": true,
+      "query": "Miren e Lucas mantêm casamento, humor, iniciativa recíproca e pássaro de Ordan guardado."
+    },
+    {
+      "id": "guest",
+      "domain": "identity",
+      "critical": true,
+      "query": "Profissional de Halvern, cabelos grisalhos, caderno e bolsa; aceita visita voluntária."
+    },
+    {
+      "id": "arrival",
+      "domain": "location",
+      "critical": true,
+      "query": "Profissional chega e descansa em Três Arcos; visita e conversa previstas."
+    },
+    {
+      "id": "maelis",
+      "domain": "identity",
+      "critical": true,
+      "query": "Maelis atua com hospital e materiais de auxílio, respeita decisão dos profissionais locais."
+    },
+    {
+      "id": "institute",
+      "domain": "promise",
+      "critical": true,
+      "query": "Miren propôs jornada de conhecimento AERÚN com visitas, depoimentos e encontros privados."
+    },
+    {
+      "id": "railtest",
+      "domain": "event",
+      "critical": true,
+      "query": "Oito km percorridos por composição em ensaio; aprovação regular distinta."
+    },
+    {
+      "id": "railcargo",
+      "domain": "promise",
+      "critical": true,
+      "query": "Transportador propôs carga de teste D577 sujeita a condições de pagamento."
+    },
+    {
+      "id": "railmap",
+      "domain": "world",
+      "critical": true,
+      "query": "Campo Aurora além do traçado estudado; Lucas deseja solução bonita para travessia de água."
+    },
+    {
+      "id": "genese",
+      "domain": "power",
+      "critical": true,
+      "query": "GÊNESE materializou guia civil e composições; preservar plena capacidade."
+    },
+    {
+      "id": "halvern",
+      "domain": "event",
+      "critical": true,
+      "query": "Edrik representante e entendimento civil preliminar; nenhum tratado militar/ferroviário."
+    },
+    {
+      "id": "astra",
+      "domain": "identity",
+      "critical": true,
+      "query": "Astra trabalha com Miren para receber profissionais e comunica chegada da visitante."
+    },
+    {
+      "id": "letter",
+      "domain": "knowledge",
+      "critical": true,
+      "query": "Teren leva carta lacrada em custódia até Pedras Claras, Halvern; sem cruzar fronteira."
+    },
+    {
+      "id": "pigeon",
+      "domain": "inventory",
+      "critical": true,
+      "query": "Ordan presenteou Miren com pássaro de madeira e deseja fazer outro para irmã quando a encontrar."
+    },
+    {
+      "id": "yrda",
+      "domain": "event",
+      "critical": true,
+      "query": "Bressa achou destinatário Depósito do Terceiro Fole; método de união demonstrado em material moderno; amostra preservada."
+    },
+    {
+      "id": "yrdapromise",
+      "domain": "promise",
+      "critical": true,
+      "query": "Yrda emprestou invólucro sentimental, família fornecia vazios; promessa de devolver."
+    },
+    {
+      "id": "velkar",
+      "domain": "event",
+      "critical": true,
+      "query": "Primeiro detido libertado; Velkar ordena autorizações civis, Orelia prepara; ambição não abandonada."
+    },
+    {
+      "id": "naval",
+      "domain": "event",
+      "critical": true,
+      "query": "Piloto marcou duas áreas e aceita orientar busca sob condições; ilha não confirmada."
+    },
+    {
+      "id": "mirenvoice",
+      "domain": "identity",
+      "critical": true,
+      "query": "Miren recusa brincadeira de bancada no salão e decide receber profissional em mesa pequena."
+    },
+    {
+      "id": "lived",
+      "domain": "author_rule",
+      "critical": true,
+      "query": "Cotidiano e vivência sem quota.",
+      "role": "AuthorPolicy"
+    },
+    {
+      "id": "appearance",
+      "domain": "author_rule",
+      "critical": true,
+      "query": "Aparência concreta e apropriada, sustentada por fonte.",
+      "role": "AuthorPolicy"
+    },
+    {
+      "id": "relationships",
+      "domain": "author_rule",
+      "critical": true,
+      "query": "Intimidade não gráfica, reciprocidade e agência.",
+      "role": "AuthorPolicy"
+    },
+    {
+      "id": "cast",
+      "domain": "author_rule",
+      "critical": true,
+      "query": "Recuperar identidade e presença antes de reintroduzir elenco.",
+      "role": "AuthorPolicy"
+    },
+    {
+      "id": "wonder",
+      "domain": "author_rule",
+      "critical": true,
+      "query": "Maravilhamento e autonomia, sem nerf.",
+      "role": "AuthorPolicy"
+    },
+    {
+      "id": "rhythm",
+      "domain": "author_rule",
+      "critical": true,
+      "query": "Ritmo alternado e cinco partes, sem forçar quotas.",
+      "role": "AuthorPolicy"
+    },
+    {
+      "id": "design",
+      "domain": "author_rule",
+      "critical": true,
+      "query": "Cabeçalho, calendário, controles R34 e checkpoint.",
+      "role": "AuthorPolicy"
+    }
+  ],
+  "reviewed": {
+    "mirenhair": {
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "line_start": 382,
+      "line_end": 388,
+      "claim": "Cabelos escuros de Miren observados em cena íntima antiga, sem inferir outros traços.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "58a05f0fbcaec98424754d3c8a3fa294ef6955b3653be2b847410e0dd9d60454"
+    },
+    "couplevoice": {
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "line_start": 390,
+      "line_end": 412,
+      "claim": "Humor íntimo recíproco de Miren e Lucas: reclamação ao departamento ainda dormindo; referência para comparação, não copiar.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "6deaa37bab08598f7a9409cc6a3ca256bd4610374a2c80c9622bc85225cba8c4"
+    },
+    "currentcouple": {
+      "source": "LVI-C08-PIII-D576-AUTHOR-SOURCE",
+      "line_start": 632,
+      "line_end": 678,
+      "claim": "Miren e Lucas mantêm casamento, humor, iniciativa recíproca e pássaro de Ordan guardado.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "6e30e2da85987f8c6cce8f35533c78ebb00fa47671f4adf0a38cb5ed6db708c4"
+    },
+    "guest": {
+      "source": "LVI-C08-PIII-D576-AUTHOR-SOURCE",
+      "line_start": 326,
+      "line_end": 352,
+      "claim": "Profissional de Halvern, cabelos grisalhos, caderno e bolsa; aceita visita voluntária.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "58d2f57bf818633dff4e7953064da1e95d46c711857d1ab93fd97ac5a01b74c3"
+    },
+    "arrival": {
+      "source": "LVI-C08-PIII-D576-AUTHOR-SOURCE",
+      "line_start": 618,
+      "line_end": 630,
+      "claim": "Profissional chega e descansa em Três Arcos; visita e conversa previstas.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "14084421b2007acfbb27b11616db6fd6d9658c6b8e7d1b26b92dfede1efd0866"
+    },
+    "maelis": {
+      "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "line_start": 768,
+      "line_end": 786,
+      "claim": "Maelis atua com hospital e materiais de auxílio, respeita decisão dos profissionais locais.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "18e1bb444021c8811f81cf27ec47eafd11bf43b9a68b430074d5cefc41c3d683"
+    },
+    "institute": {
+      "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "line_start": 150,
+      "line_end": 184,
+      "claim": "Miren propôs jornada de conhecimento AERÚN com visitas, depoimentos e encontros privados.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "e4a660597c65e63b3550704101ec36bf6eadb512b0e7a92d66e165158a58c4a3"
+    },
+    "railtest": {
+      "source": "LVI-C08-PIII-D576-AUTHOR-SOURCE",
+      "line_start": 156,
+      "line_end": 224,
+      "claim": "Oito km percorridos por composição em ensaio; aprovação regular distinta.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "5c98467f68c2e2991bededde2fcc7a894fe1e252c23503feff4fa3a9000be624"
+    },
+    "railcargo": {
+      "source": "LVI-C08-PIII-D576-AUTHOR-SOURCE",
+      "line_start": 180,
+      "line_end": 208,
+      "claim": "Transportador propôs carga de teste D577 sujeita a condições de pagamento.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "cf2b6977653391f35a95eca8ce7833bd61e21d05466001e9f688e20be2cc03a1"
+    },
+    "railmap": {
+      "source": "LVI-C08-PIII-D576-AUTHOR-SOURCE",
+      "line_start": 246,
+      "line_end": 264,
+      "claim": "Campo Aurora além do traçado estudado; Lucas deseja solução bonita para travessia de água.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "148eaf5481c0bcf64aa438985f810252c94d6a3b75d2b895efe2ef3d2c1bfd94"
+    },
+    "genese": {
+      "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "line_start": 214,
+      "line_end": 246,
+      "claim": "GÊNESE materializou guia civil e composições; preservar plena capacidade.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "480da1794ea901ba98897833351b5899b3002b5da4b58bac2962dda20ffed0ee"
+    },
+    "halvern": {
+      "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "line_start": 94,
+      "line_end": 164,
+      "claim": "Edrik representante e entendimento civil preliminar; nenhum tratado militar/ferroviário.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "085a5d4c6b817a40035ede50240c053c3d11bc97a4ff7a1a02506b4df987bdb4"
+    },
+    "astra": {
+      "source": "LVI-C08-PIII-D576-AUTHOR-SOURCE",
+      "line_start": 550,
+      "line_end": 630,
+      "claim": "Astra trabalha com Miren para receber profissionais e comunica chegada da visitante.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "0078ad67a9f7428c4b69f9a05a713f02adffeb767761bda23411a536922e8ccc"
+    },
+    "letter": {
+      "source": "LVI-C08-PIII-D576-AUTHOR-SOURCE",
+      "line_start": 290,
+      "line_end": 324,
+      "claim": "Teren leva carta lacrada em custódia até Pedras Claras, Halvern; sem cruzar fronteira.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "a4a1d4b8c095d3941977ea8afa3d684223ef9e0ed569af252c7f2af45a3366bb"
+    },
+    "pigeon": {
+      "source": "LVI-C08-PIII-D576-AUTHOR-SOURCE",
+      "line_start": 584,
+      "line_end": 600,
+      "claim": "Ordan presenteou Miren com pássaro de madeira e deseja fazer outro para irmã quando a encontrar.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "700e03481e37f6342c92fd550b3794ddb181c3e3c9973bebd87c8585a409a618"
+    },
+    "yrda": {
+      "source": "LVI-C08-PIII-D576-AUTHOR-SOURCE",
+      "line_start": 358,
+      "line_end": 444,
+      "claim": "Bressa achou destinatário Depósito do Terceiro Fole; método de união demonstrado em material moderno; amostra preservada.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "dd78753b5764c09b5359ded8a915b84a205741f90d8375bce6053ba2bf020188"
+    },
+    "yrdapromise": {
+      "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "line_start": 686,
+      "line_end": 742,
+      "claim": "Yrda emprestou invólucro sentimental, família fornecia vazios; promessa de devolver.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "5457d9608ddbae1ec1a09aa05295092eed65875c2ee2f54c5f7b5b7c6382ef70"
+    },
+    "velkar": {
+      "source": "LVI-C08-PIII-D576-AUTHOR-SOURCE",
+      "line_start": 452,
+      "line_end": 506,
+      "claim": "Primeiro detido libertado; Velkar ordena autorizações civis, Orelia prepara; ambição não abandonada.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "23c6e518cb7e1779e3b0bad53f6b4aa013879b63dd9dd91ffbdd930a834182a3"
+    },
+    "naval": {
+      "source": "LVI-C08-PIII-D576-AUTHOR-SOURCE",
+      "line_start": 510,
+      "line_end": 544,
+      "claim": "Piloto marcou duas áreas e aceita orientar busca sob condições; ilha não confirmada.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "fe9bbebc1fde0fc1a99691b1d3910e0e332e10ae43867e3546f1d8dfddf8e45f"
+    },
+    "mirenvoice": {
+      "source": "LVI-C08-PIII-D576-AUTHOR-SOURCE",
+      "line_start": 596,
+      "line_end": 630,
+      "claim": "Miren recusa brincadeira de bancada no salão e decide receber profissional em mesa pequena.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "5f73506d024e5d70f8f1baea4602ebf002afd9a2524b1ae4df6aea6bc0c3f409"
+    },
+    "lived": {
+      "source": "AUTHOR_POLICY",
+      "line_start": 2155,
+      "line_end": 2157,
+      "claim": "Cotidiano e vivência sem quota.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "83e26d8188c306aef1c43332729303fce8e11cedc6fecd251e63701a5bc0a3c3"
+    },
+    "appearance": {
+      "source": "AUTHOR_POLICY",
+      "line_start": 2173,
+      "line_end": 2175,
+      "claim": "Aparência concreta e apropriada, sustentada por fonte.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "6d93fef05f2c43c3b78f6f4db38d09f30af31ed8e8910639055fca19f6b8ff9b"
+    },
+    "relationships": {
+      "source": "AUTHOR_POLICY",
+      "line_start": 2193,
+      "line_end": 2195,
+      "claim": "Intimidade não gráfica, reciprocidade e agência.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "fea75d43f2e62d114cd69d4f308cba8ad21b24454c88d4eecd17727bf121a71a"
+    },
+    "cast": {
+      "source": "AUTHOR_POLICY",
+      "line_start": 2213,
+      "line_end": 2215,
+      "claim": "Recuperar identidade e presença antes de reintroduzir elenco.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "55df5f7e06584baf518a039d8f02c186975a18afd73f4e3d51a58898095b991d"
+    },
+    "wonder": {
+      "source": "AUTHOR_POLICY",
+      "line_start": 2231,
+      "line_end": 2233,
+      "claim": "Maravilhamento e autonomia, sem nerf.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "0c9cc23c8d8d988108073e78516f727755d10245b652533b29991d80220728ba"
+    },
+    "rhythm": {
+      "source": "AUTHOR_POLICY",
+      "line_start": 2249,
+      "line_end": 2251,
+      "claim": "Ritmo alternado e cinco partes, sem forçar quotas.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "455798275a816e8f9b605df38ce5f0dfa0d8813cc0d467c990c8c5385893873f"
+    },
+    "design": {
+      "source": "AUTHOR_POLICY",
+      "line_start": 2321,
+      "line_end": 2323,
+      "claim": "Cabeçalho, calendário, controles R34 e checkpoint.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "695484c8c65b85c2a9856cb73a48056efb23a164b48236b970c797fd82601bde"
+    }
+  },
+  "domain_review": {
+    "identity": {
+      "applicable": true,
+      "reason": "Continuidade material: mirenhair, guest, maelis, astra, mirenvoice"
+    },
+    "relationship": {
+      "applicable": true,
+      "reason": "Continuidade material: couplevoice, currentcouple"
+    },
+    "location": {
+      "applicable": true,
+      "reason": "Continuidade material: arrival"
+    },
+    "knowledge": {
+      "applicable": true,
+      "reason": "Continuidade material: letter"
+    },
+    "inventory": {
+      "applicable": true,
+      "reason": "Continuidade material: pigeon"
+    },
+    "power": {
+      "applicable": true,
+      "reason": "Continuidade material: genese"
+    },
+    "world": {
+      "applicable": true,
+      "reason": "Continuidade material: railmap"
+    },
+    "event": {
+      "applicable": true,
+      "reason": "Continuidade material: railtest, halvern, yrda, velkar, naval"
+    },
+    "promise": {
+      "applicable": true,
+      "reason": "Continuidade material: institute, railcargo, yrdapromise"
+    },
+    "author_rule": {
+      "applicable": true,
+      "reason": "Continuidade material: lived, appearance, relationships, cast, wonder, rhythm, design"
+    }
+  },
+  "scene_plan": [
+    {
+      "scene": 1,
+      "purpose": "Manhã do casal, humor e detalhes físicos e vestuário com base histórica",
+      "ids": [
+        "mirenhair",
+        "couplevoice",
+        "currentcouple",
+        "lived",
+        "appearance",
+        "relationships"
+      ]
+    },
+    {
+      "scene": 2,
+      "purpose": "Maelis e Miren recebem visitante de Halvern, troca real no hospital",
+      "ids": [
+        "guest",
+        "arrival",
+        "maelis",
+        "institute",
+        "cast"
+      ]
+    },
+    {
+      "scene": 3,
+      "purpose": "Lucas e Forja vivem teste de carga e estudo da travessia",
+      "ids": [
+        "railtest",
+        "railcargo",
+        "railmap",
+        "genese",
+        "wonder"
+      ]
+    },
+    {
+      "scene": 4,
+      "purpose": "AERÚN e Lysa recebem depoimento e desenvolvem proposta concreta para conferência; Ordan permanece livre",
+      "ids": [
+        "halvern",
+        "astra",
+        "letter",
+        "pigeon"
+      ]
+    },
+    {
+      "scene": 5,
+      "purpose": "Bressa retorna a Yrda, devolve peça, pesquisa e tradição",
+      "ids": [
+        "yrda",
+        "yrdapromise"
+      ]
+    },
+    {
+      "scene": 6,
+      "purpose": "Renshar e Serevan: consequências autônomas sem telepatia",
+      "ids": [
+        "velkar",
+        "naval"
+      ]
+    },
+    {
+      "scene": 7,
+      "purpose": "Noite, relações, consequência do encontro e preparação para clímax",
+      "ids": [
+        "mirenvoice",
+        "rhythm",
+        "design"
+      ]
+    }
+  ],
+  "r34_intent": {
+    "schema": "worldroot-r34-intent-v1",
+    "dimensions": {
+      "daily_life": {
+        "rule": "P110",
+        "requirement_id": "lived",
+        "status": "planned",
+        "reason": "Café e brincadeira do casal antes do trabalho.",
+        "scenes": [
+          1
+        ]
+      },
+      "appearance": {
+        "rule": "P111",
+        "requirement_id": "appearance",
+        "status": "planned",
+        "reason": "Cabelos escuros verificados de Miren e escolha atual de roupa.",
+        "scenes": [
+          1
+        ]
+      },
+      "relationships": {
+        "rule": "P112",
+        "requirement_id": "relationships",
+        "status": "planned",
+        "reason": "Iniciativa recíproca e confiança sem descrição gráfica.",
+        "scenes": [
+          1
+        ]
+      },
+      "cast": {
+        "rule": "P113",
+        "requirement_id": "cast",
+        "status": "planned",
+        "reason": "Maelis e visitante retomam vínculo da missão anterior.",
+        "scenes": [
+          2
+        ]
+      },
+      "wonder": {
+        "rule": "P114",
+        "requirement_id": "wonder",
+        "status": "planned",
+        "reason": "Experiência de carga e infraestrutura como descoberta civil.",
+        "scenes": [
+          3
+        ]
+      },
+      "rhythm": {
+        "rule": "P115",
+        "requirement_id": "rhythm",
+        "status": "planned",
+        "reason": "Fecho íntimo e expectativa concreta sem resolver todos os arcos.",
+        "scenes": [
+          7
+        ]
+      },
+      "design": {
+        "rule": "P119",
+        "requirement_id": "design",
+        "status": "planned",
+        "reason": "Renderização oficial R34 com progressão visual e cinco escolhas.",
+        "scenes": [
+          7
+        ]
+      }
+    },
+    "characters": [
+      {
+        "name": "Miren",
+        "scenes": [
+          1,
+          2,
+          4,
+          7
+        ],
+        "fields": {
+          "appearance": {
+            "status": "sourced",
+            "reason": "Cabelos escuros observados em fonte narrativa antiga.",
+            "requirement_ids": [
+              "mirenhair"
+            ]
+          },
+          "voice": {
+            "status": "sourced",
+            "reason": "Humor firme e autonomia no Instituto.",
+            "requirement_ids": [
+              "mirenvoice"
+            ]
+          },
+          "relationship": {
+            "status": "sourced",
+            "reason": "Parceria afetiva recíproca com Lucas e casamento preservado.",
+            "requirement_ids": [
+              "couplevoice",
+              "currentcouple"
+            ]
+          },
+          "age": {
+            "status": "unknown",
+            "reason": "Idade numérica não recuperada; sem novo dado."
+          }
+        }
+      },
+      {
+        "name": "Lucas",
+        "scenes": [
+          1,
+          3,
+          7
+        ],
+        "fields": {
+          "appearance": {
+            "status": "not_material",
+            "reason": "Descrição física histórica não necessária para esta experiência."
+          },
+          "voice": {
+            "status": "unknown",
+            "reason": "Voz recuperada por diálogo compartilhado, sem ficha física nova."
+          },
+          "relationship": {
+            "status": "sourced",
+            "reason": "Casamento e cumplicidade preservados na cena.",
+            "requirement_ids": [
+              "currentcouple"
+            ]
+          },
+          "age": {
+            "status": "unknown",
+            "reason": "Idade numérica não afirmada nesta parte."
+          }
+        }
+      },
+      {
+        "name": "Visitante de Halvern",
+        "scenes": [
+          2,
+          4
+        ],
+        "fields": {
+          "appearance": {
+            "status": "sourced",
+            "reason": "Cabelos grisalhos e vestuário de viagem já testemunhados.",
+            "requirement_ids": [
+              "guest"
+            ]
+          },
+          "voice": {
+            "status": "sourced",
+            "reason": "Profissional prática, receosa de formalidades de corte.",
+            "requirement_ids": [
+              "guest"
+            ]
+          },
+          "relationship": {
+            "status": "not_material",
+            "reason": "Relações íntimas não relevantes para a visita."
+          },
+          "age": {
+            "status": "unknown",
+            "reason": "Idade precisa não foi revelada pela visitante."
+          }
+        }
+      },
+      {
+        "name": "Maelis",
+        "scenes": [
+          2
+        ],
+        "fields": {
+          "appearance": {
+            "status": "unknown",
+            "reason": "Traços físicos não recuperados nesta fonte, evitar invenção."
+          },
+          "voice": {
+            "status": "sourced",
+            "reason": "Respeita decisões locais e atua com profissionais de saúde.",
+            "requirement_ids": [
+              "maelis"
+            ]
+          },
+          "relationship": {
+            "status": "not_material",
+            "reason": "Nenhuma relação íntima necessária nesta cena."
+          },
+          "age": {
+            "status": "unknown",
+            "reason": "Idade numérica não foi recuperada."
+          }
+        }
+      },
+      {
+        "name": "Astra",
+        "scenes": [
+          4
+        ],
+        "fields": {
+          "appearance": {
+            "status": "unknown",
+            "reason": "Não atribuir novos traços físicos históricos sem fonte."
+          },
+          "voice": {
+            "status": "sourced",
+            "reason": "Trabalha com Miren e recebe visitante civil.",
+            "requirement_ids": [
+              "astra"
+            ]
+          },
+          "relationship": {
+            "status": "not_material",
+            "reason": "Relações afetivas não materiais neste encontro."
+          },
+          "age": {
+            "status": "unknown",
+            "reason": "Idade numérica não foi recuperada."
+          }
+        }
+      }
+    ],
+    "comparison": {
+      "requirement_id": "couplevoice",
+      "reason": "Comparar humor doméstico e intimidade com a cena antiga da arqueóloga sem copiar falas, preservando a reciprocidade."
+    }
+  }
+}
