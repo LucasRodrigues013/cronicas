@@ -181,6 +181,9 @@ def build_live_brief(head: dict, policy: dict, max_chars: int = 1700) -> dict:
     if all(rid in policies for rid in ("P106","P107","P108","P109")):
         lines.insert(4, "R31: recuperar 95% dos requisitos por criação e 100% críticos; uma rota principal, três secundárias de igual valor e ação livre; nenhuma domina.")
         selected.extend(rid for rid in ("P106","P107","P108","P109") if rid not in selected)
+    if all(rid in policies for rid in ("P110","P111","P112","P113","P114","P115")):
+        lines.insert(4, "R33: cotidiano, beleza adulta concreta, flerte e humor, romance recíproco, elenco histórico autônomo e assombro sem crise; sem quotas ou retcon.")
+        selected.extend(rid for rid in ("P110","P111","P112","P113","P114","P115") if rid not in selected)
     brief = "\n".join(lines)
     while len(brief) > max_chars and len(lines) > 4:
         lines.pop(-2)

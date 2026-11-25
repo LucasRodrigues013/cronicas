@@ -4,7 +4,7 @@ on:
     branches: ['worldroot/r31-deep-recovery']
     paths: ['worldroot/**','tests/**','audit/**','.github/workflows/r33-private-stress.yml']
   pull_request:
-    branches: ['worldroot/audit-r30-live-100']
+    branches: ['worldroot/audit-r30-live-100', 'main']
 permissions:
   contents: read
 concurrency:
