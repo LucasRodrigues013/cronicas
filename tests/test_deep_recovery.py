@@ -3,7 +3,7 @@ import tempfile
 import sqlite3
 from pathlib import Path
 from unittest.mock import patch
-from worldroot.deep_recovery import sections,windows,build,retrieve,norm
+from worldroot.deep_recovery import sections,windows,build,retrieve,norm,verify_manifest
 
 class DeepRecoveryTests(unittest.TestCase):
     def setUp(self):
@@ -51,5 +51,37 @@ class DeepRecoveryTests(unittest.TestCase):
         with patch("worldroot.deep_recovery.read_verified_sources",side_effect=ValueError("hash mismatch")):
             with self.assertRaises(ValueError): build(self.root,self.db)
         self.assertFalse(self.db.exists())
+
+    def test_invalid_geometry(self):
+        for width,stride in [(0,1),(1,2),(10,0),(101,1)]:
+            with self.assertRaises(ValueError): list(windows(self.body,width,stride))
+    def test_no_metadata_only_hits(self):
+        self.make()
+        self.assertEqual(retrieve(self.db,"appearance")["status"],"NOT_RECOVERED")
+    def test_stale_manifest_rejected(self):
+        self.make()
+        p=self.root/"history/sources/MANIFEST.json"
+        p.parent.mkdir(parents=True)
+        p.write_text('{"sources":[]}')
+        self.assertTrue(verify_manifest(self.root,self.db))
+        p.write_text('{"sources":[1]}')
+        with self.assertRaises(ValueError): verify_manifest(self.root,self.db)
+    def test_no_clobber(self):
+        self.make()
+        old=self.db.read_bytes()
+        with self.assertRaises(FileExistsError): self.make()
+        self.assertEqual(old,self.db.read_bytes())
+    def test_accent_invariance(self):
+        self.make()
+        a=retrieve(self.db,"Serís",role="Response")
+        b=retrieve(self.db,"SERIS",role="Response")
+        self.assertEqual([h["id"] for h in a["hits"]],[h["id"] for h in b["hits"]])
+    def test_strategy_validation(self):
+        self.make()
+        with self.assertRaises(ValueError): retrieve(self.db,"Miren",strategy="bad")
+    def test_ranking_no_duplicate_windows(self):
+        self.make()
+        a=retrieve(self.db,"Miren",role="Response")
+        self.assertEqual(len({h["id"] for h in a["hits"]}),len(a["hits"]))
 
 if __name__=="__main__": unittest.main()
