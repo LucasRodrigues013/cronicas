@@ -23,7 +23,7 @@ META = re.compile(
     r"n[aã]o era uma prova can[oô]nica|n[aã]o havia sido aprovado pelo autor)\b"
 )
 HEAD_PARTS = {"I", "II", "III", "IV", "V"}
-EDIT_RULES = ("P70", "P71", "P72", "P73", "P74", "P75", "P76", "P77", "P78", "P79", "P82", "P83", "P84", "P85", "P86", "P87", "P88")
+EDIT_RULES = ("P70", "P71", "P72", "P73", "P74", "P75", "P76", "P77", "P78", "P79", "P82", "P83", "P84", "P85", "P86", "P87", "P88", "P89", "P90", "P91", "P92", "P93", "P94", "P95", "P96", "P97", "P98")
 
 
 def _narrative(text: str) -> tuple[str, int]:
@@ -172,6 +172,7 @@ def build_live_brief(head: dict, policy: dict, max_chars: int = 1700) -> dict:
         "Remover linguagem de auditoria do narrador; bastidores ficam nos registros, não na prosa.",
         "Variar ação épica, assombro, cultura, relações e risco humano; não converter capítulo em relatório.",
         "R28: recuperar ativos, elenco e tramas; evitar duplicação, compressão e discursos repetidos. Especial singular; magia vivida, não quota.",
+        "R29: promessa/progresso/recompensa, aventura regional, arcos pessoais, legado emocional e poderes criativos; manter identidade e originalidade.",
         "Informação e deslocamentos só com evidência; planejamento não é fato narrado.",
     ]
     policies = {r.get("id"): r for r in policy.get("rules", []) if isinstance(r, dict) and r.get("active")}
