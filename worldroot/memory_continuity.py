@@ -4,7 +4,8 @@ import hashlib
 import json
 import re
 from pathlib import Path
-from .deep_recovery import retrieve, verify_manifest
+from .deep_recovery import retrieve, verify_manifest, tokens, STOP
+from .living_world import load_canonical
 from .history_index import read_verified_sources
 
 DOMAINS=("identity","relationship","location","knowledge","inventory","power","world","event","promise","author_rule")
@@ -29,12 +30,28 @@ def fusion(db, query, entity=None, topic=None, role=None, limit=20):
         if len(selected)==limit:break
     return {"hits":selected,"status":"CANDIDATES_ONLY" if selected else "NOT_RECOVERED","canon_changed":False}
 
+def recent_candidates(entries, query, limit=8):
+    terms=set(tokens(query))-STOP
+    if not terms:return []
+    hits=[]
+    for entry in entries:
+        lines=entry["text"].splitlines(keepends=True)
+        for i in range(0,len(lines),12):
+            anchor="".join(lines[i:i+24])
+            matched=terms.intersection(tokens(anchor))
+            if not matched:continue
+            hits.append({"source":entry["id"],"sequence":entry["sequence"],"day":entry["day"],"source_sha":entry["sha256"],"line_start":i+1,"line_end":min(i+24,len(lines)),"anchor":anchor,"anchor_sha":digest(anchor),"matched":len(matched)})
+    hits.sort(key=lambda h:(-h["matched"],-h["sequence"],h["line_start"]))
+    return hits[:limit]
+
 def creation_packet(root, db, requirements, *, head):
     """Retrieve separately for each material memory requirement, never one query for a whole episode."""
     root=Path(root)
     if json.loads((root/"canon/HEAD.json").read_text(encoding="utf-8"))!=head:
         raise ValueError("Stale HEAD")
     verify_manifest(root,db)
+    entries,warnings=load_canonical(root,head)
+    if warnings:raise ValueError("Incomplete closed episode projection")
     if not isinstance(requirements,list) or not 1<=len(requirements)<=80:raise ValueError("Requirements count")
     ids=set();items=[]
     for req in requirements:
@@ -45,8 +62,8 @@ def creation_packet(root, db, requirements, *, head):
         role=req.get("role","Response")
         if role not in ("Response","Prompt"):raise ValueError("Invalid role")
         result=fusion(db,req["query"],req.get("entity"),req.get("topic"),role,limit=20)
-        items.append({"requirement":req,"candidate_status":result["status"],"hits":result["hits"]})
-    return {"head":head,"items":items,"status":"REVIEW_REQUIRED","canon_changed":False,
+        items.append({"requirement":req,"candidate_status":result["status"],"hits":result["hits"],"recent_canon_candidates":recent_candidates(entries,req["query"]) if role=="Response" else []})
+    return {"head":head,"items":items,"closed_episodes":len(entries),"status":"REVIEW_REQUIRED","canon_changed":False,
             "note":"Candidate availability is not recall or proof; reconcile current state and reviewed claim."}
 
 def coverage(requirements, reviewed, sources):
