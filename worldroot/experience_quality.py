@@ -15,7 +15,7 @@ def render_choices(packet,episode_id):
     rows=['## AS CINCO PORTAS','<box gap={3}>']
     for o in packet["options"]:
         n=o["number"]
-        title=safe(o["title"]);promise=safe(o["promise"]);reward=safe(o["reward"]);risk=safe(o["risk"])
+        title=safe(o["title"]);title=("ESPECIAL — "+title) if n==4 and not title.upper().startswith("ESPECIAL") else title;promise=safe(o["promise"]);reward=safe(o["reward"]);risk=safe(o["risk"])
         prompt=json.dumps(choice_prompt(episode_id,n),ensure_ascii=False)
         rows.extend(['  <box border radius="lg" padding={3} gap={2}>',f'    **{n} — {title}**','',f'    {promise}','',f'    **Recompensa possível:** {reward}','',f'    **Risco:** {risk}','',f'    <button block color="secondary" variant="outline" onClick={{() => GenUI.issueNewTurn({prompt})}}>Escolher opção {n}</button>','  </box>'])
     before,after=choice_prompt(episode_id,5,"__FREE_TEXT__").split("__FREE_TEXT__")
