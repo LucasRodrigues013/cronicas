@@ -52,7 +52,7 @@ def recent_candidates(entries, query, limit=8):
     hits.sort(key=lambda h:(-h["matched"],-h["sequence"],h["line_start"]))
     return hits[:limit]
 
-def creation_packet(root, db, requirements, *, head, candidate_limit=80, vector_folder=None, graph_db=None):
+def creation_packet(root, db, requirements, *, head, candidate_limit=80, vector_folder=None, graph_db=None, deep=False):
     """Retrieve separately for each material memory requirement, never one query for a whole episode."""
     if type(candidate_limit) is not int or not 1<=candidate_limit<=80:raise ValueError("Invalid candidate limit")
     root=Path(root)
@@ -75,6 +75,8 @@ def creation_packet(root, db, requirements, *, head, candidate_limit=80, vector_
         with sqlite3.connect(Path(graph_db).resolve().as_uri()+"?mode=ro",uri=True) as c:
             if json.loads(c.execute("SELECT value FROM meta WHERE key='head'").fetchone()[0])!=head:raise ValueError("Stale graph HEAD")
             graph_records=[(domain,rid,json.loads(body)) for domain,rid,body in c.execute("SELECT domain,id,body FROM records WHERE domain IN ('dossiers','plots','assets')")]
+    from .curated_memory import build_cards,search_cards
+    cards=build_cards(root)
     ids=set();items=[]
     for req in requirements:
         rid=req["id"]
@@ -86,7 +88,7 @@ def creation_packet(root, db, requirements, *, head, candidate_limit=80, vector_
         if role=="AuthorPolicy":
             words=set(tokens(req["query"]))-STOP
             rules=sorted((r for r in policy["rules"] if r["active"]),key=lambda r:(-len(words.intersection(tokens(r["id"]+" "+r["title"]+" "+r["directive"]))),r["id"]))
-            items.append({"requirement":req,"candidate_status":"AUTHOR_POLICY_CANDIDATES","policy_rules":rules[:20],"policy_sha256":digest(policy_text),"hits":[],"recent_canon_candidates":[],"r30_identity_candidates":[],"r28_world_candidates":[],"dense_candidates":[],"graph_candidates":[]})
+            items.append({"requirement":req,"candidate_status":"AUTHOR_POLICY_CANDIDATES","policy_rules":rules[:20],"policy_sha256":digest(policy_text),"hits":[],"recent_canon_candidates":[],"r30_identity_candidates":[],"r28_world_candidates":[],"dense_candidates":[],"graph_candidates":[],"curated_candidates":[],"deep_candidates":[]})
             continue
         result=fusion(db,req["query"],req.get("entity"),req.get("topic"),role,limit=candidate_limit)
         entity=req.get("entity")
@@ -99,6 +101,8 @@ def creation_packet(root, db, requirements, *, head, candidate_limit=80, vector_
         graph_hits=[{"domain":domain,"id":rid,"record":record} for domain,rid,record in graph_records if (rid==entity or relevant(record))]
         items.append({"requirement":req,"candidate_status":result["status"],"hits":result["hits"],
                       "dense_candidates":dense.search(req["query"],role,candidate_limit) if dense is not None else [],"graph_candidates":graph_hits,
+                      "curated_candidates":search_cards(cards,req["query"],role,limit=5),
+                      "deep_candidates":dense.wide(req["query"],entity=entity,role=role,limit=400) if deep and dense is not None else [],
                       "recent_canon_candidates":recent_candidates(entries,req["query"]) if role=="Response" else [],
                       "r30_identity_candidates":identities,"r28_world_candidates":related})
     return {"head":head,"items":items,"closed_episodes":len(entries),"dense_enabled":dense is not None,"graph_enabled":graph_db is not None,"status":"REVIEW_REQUIRED","canon_changed":False,
@@ -192,7 +196,7 @@ def main(argv=None):
     p=argparse.ArgumentParser()
     p.add_argument("--archive-root",type=Path,required=True)
     sub=p.add_subparsers(dest="action",required=True)
-    a=sub.add_parser("prepare");a.add_argument("--db",type=Path,required=True);a.add_argument("--requirements",type=Path,required=True);a.add_argument("--candidate-limit",type=int,default=80);a.add_argument("--vector-folder",type=Path);a.add_argument("--graph-db",type=Path)
+    a=sub.add_parser("prepare");a.add_argument("--db",type=Path,required=True);a.add_argument("--requirements",type=Path,required=True);a.add_argument("--candidate-limit",type=int,default=80);a.add_argument("--vector-folder",type=Path);a.add_argument("--graph-db",type=Path);a.add_argument("--deep",action="store_true")
     b=sub.add_parser("review");b.add_argument("--requirements",type=Path,required=True);b.add_argument("--reviewed",type=Path,required=True)
     c=sub.add_parser("arcs");c.add_argument("--packet",type=Path,required=True)
     args=p.parse_args(argv)
@@ -201,7 +205,7 @@ def main(argv=None):
     else:
         head=load(args.archive_root/"canon/HEAD.json")
         requirements=load(args.requirements)
-        if args.action=="prepare":result=creation_packet(args.archive_root,args.db,requirements,head=head,candidate_limit=args.candidate_limit,vector_folder=args.vector_folder,graph_db=args.graph_db)
+        if args.action=="prepare":result=creation_packet(args.archive_root,args.db,requirements,head=head,candidate_limit=args.candidate_limit,vector_folder=args.vector_folder,graph_db=args.graph_db,deep=args.deep)
         else:result=review_creation(args.archive_root,head,requirements,load(args.reviewed))
     print(json.dumps(result,ensure_ascii=False,indent=2))
     return 0
