@@ -103,5 +103,76 @@ with tempfile.TemporaryDirectory() as d:
     except ValueError:pass
     else:raise AssertionError("Missing critical accepted")
     emit({"stage":"FAULT_RECOVERY","backup_integrity":True,"corrupt_db_rejected":True,"stale_vector_rejected":True,"parallel_preparations":len(out),"created":1,"idempotent":255,"conflicting_write_rejected":True,"critical_missing_rejected":True,"preparation_coverage":packet["memory"]["coverage"]})
+# Full prospective-contract rehearsal on a disposable COPY, never a new story.
+# Use the literal already-archived D574 prose solely as a regression fixture.
+from worldroot.r33_runtime import prepare_from_request
+from worldroot.history_index import read_verified_sources
+from worldroot.editorial_guard import POLICY_PATH
+from worldroot.presentation_guard import SCENE
+from worldroot.memory_graph import locate
+with tempfile.TemporaryDirectory() as d:
+    scratch=pathlib.Path(d)/"archive"
+    shutil.copytree(root,scratch,ignore=shutil.ignore_patterns(".git"))
+    ident="R33-REHEARSAL-NOT-CANON"
+    last=entries[-1];lines=last["text"].splitlines(keepends=True)
+    req=[];proof={}
+    def add(rid,domain,query,claim,source,lo,hi,body,role="Response"):
+        req.append({"id":rid,"domain":domain,"query":query,"critical":True,"role":role})
+        proof[rid]={"source":source,"line_start":lo,"line_end":hi,"anchor_sha":digest("".join(body.splitlines(keepends=True)[lo-1:hi])),"claim":claim,"status":"REVIEWED_SUPPORTED"}
+    # Literal D573 evidence for current continuity.
+    for rid,domain,q,claim,lo,hi in [
+        ("halvern","event","Halvern correspondência Renshar","A correspondência de Halvern circulou desde D569; Renshar caiu em D567.",60,64),
+        ("velkar","knowledge","Lucas Velkar nome","Lucas lê pela primeira vez o nome de Velkar Draen.",66,72),
+        ("rail","world","Naira viagem técnica","Naira autorizou a demonstração tripulada em velocidade reduzida.",150,156),
+        ("delegation","location","ARGOS Campo Aurora","O ARGOS chegou trazendo três visitantes.",588,598),
+        ("unknown","knowledge","Lucas técnica nome desconhecido","Lucas ainda não conhece o nome da técnica imperial.",344,354),
+        ("bressa","promise","Bressa selo remessas fabricante","O livro de entregas contém selo discrepante, sem autoria identificada.",558,566),
+        ("althea","event","Althea conferência fronteiras","Thalor decidiu participar; Althea ordenou vigilância e estoques, não guerra.",400,410),
+        ("miren","relationship","Miren Lucas mão pessoas","Miren segura a mão do marido e fala das pessoas trazidas.",815,826)
+    ]:add(rid,domain,q,claim,last["id"],lo,hi,last["text"])
+    _,historical=read_verified_sources(root);bodies={m["source_name"]:t for m,t in historical}
+    staged=json.loads(pathlib.Path("recovery/r32-additional-evidence.json").read_text())["records"]
+    for i,(domain,needle) in enumerate([("inventory","D1 equipamento"),("power","D210"),("identity","D318")]):
+        c=next(c for c in staged if needle in c["claim"])
+        body=bodies[c["source_name"]]
+        span=locate(body,c["anchor"])
+        if not span:raise AssertionError("Nonunique historical rehearsal anchor")
+        add("historic-"+str(i),domain,c["claim"],c["claim"],c["source_name"],span["line_start"],span["line_end"],body,c["role"])
+    policy=POLICY_PATH.read_text(encoding="utf-8");pl=policy.splitlines()
+    pos=next(i for i,l in enumerate(pl,1) if '"id": "P108"' in l)
+    add("author","author_rule","P108 quatro caminhos","Quatro caminhos de valor comparável, preservando ação livre.","AUTHOR_POLICY",pos,pos+5,policy,"AuthorPolicy")
+    domains={k:{"applicable":any(r["domain"]==k for r in req),"reason":"Real source-bound retrospective rehearsal, not a new narrative"} for k in DOMAINS}
+    draft=paths[-1].read_text()
+    split=draft.index("## AS CINCO PORTAS")
+    base=draft[:split]
+    n=len(SCENE.findall(base))
+    assert n>=1
+    ids=[r["id"] for r in req]
+    plan=[{"scene":i+1,"purpose":"Rehearsal of existing scene","ids":ids[i::n] or [ids[i%len(ids)]]} for i in range(n)]
+    request={"schema":"worldroot-r33-request-v1","project":"CRONICAS_DE_UM_NOVO_MUNDO","delivery_id":ident,"head":head,"choice_sha256":auth["choice_sha256"],"requirements":req,"reviewed":proof,"domain_review":domains,"scene_plan":plan}
+    persist(scratch/"requests"/(ident+".json"),request)
+    result=prepare_from_request(scratch,request)
+    assert result["result"]=="CREATED"
+    assert prepare_from_request(scratch,request)["result"]=="IDEMPOTENT"
+    # The choices are only fixture routes; they are never submitted to the canon.
+    route={"options":[{"number":i,"track":"main" if i==1 else "secondary","arc_id":"fixture-"+str(i),"title":"Caminho "+str(i),"promise":"Possibilidade de percurso "+str(i),"reward":"Recompensa própria "+str(i),"risk":"Consequência possível "+str(i),"next_link":"Frente "+str(i),"unselected_progress":"Outras frentes seguem causalidade","guaranteed_success":False,"combines_all":False} for i in range(1,5)],"free_action":True,"author_choice_recorded":False}
+    rendered=render_choices(route,ident)
+    prose=rendered["body_declaration"]+"\n"+base
+    full=prose+rendered["markup"]
+    payload={"delivery_id":ident,"prose":prose,"full_text":full,"choices":[{"number":i,"title":"Caminho "+str(i),"description":"Possibilidade de percurso "+str(i),"is_special":i==4,"is_free":i==5} for i in range(1,6)]}
+    payload["r32_review"]={"head":head,"prose_sha256":hashlib.sha256(prose.encode()).hexdigest(),"requirements":req,"reviewed":proof,"domain_review":domains,"scene_requirements":[{"scene":p["scene"],"ids":p["ids"]} for p in plan],"arc_packet":route,"editorial_parity_reviewed":True}
+    # Held explicitly: this is a contract rehearsal, not a fabricated editorial judgment.
+    payload["r33_review"]={"preparation_sha256":result["preparation_sha256"],"reviews":{k:{"status":"held","reason":"Fixture only; no independent literary judgment"} for k in REVIEWS}}
+    receipt=verify_submission(scratch,head,payload)
+    assert receipt["r32"]["memory"]["coverage"]==1
+    bad=json.loads(json.dumps(payload));bad["choices"][0]["description"]="Changed after preparation"
+    try:verify_submission(scratch,head,bad)
+    except ValueError:pass
+    else:raise AssertionError("Divergent choice accepted")
+    bad=json.loads(json.dumps(payload));bad["r33_review"]["reviews"].pop("continuity")
+    try:verify_submission(scratch,head,bad)
+    except ValueError:pass
+    else:raise AssertionError("Missing review accepted")
+    emit({"stage":"FULL_CONTRACT_REHEARSAL","requirements":len(req),"domains":sum(v["applicable"] for v in domains.values()),"scenes":n,"coverage":receipt["r32"]["memory"]["coverage"],"critical_missing":0,"reviews":len(REVIEWS),"idempotent":True,"changed_choice_rejected":True,"missing_review_rejected":True,"canon_changed":False,"semantic_certification":False})
 assert before==[hashfile(p) for p in paths]
 emit({"stage":"R33_READ_ONLY","head":head["day"],"unchanged":True,"semantic_certification":False})
