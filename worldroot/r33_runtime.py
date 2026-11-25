@@ -107,6 +107,7 @@ def verify_submission(root,head,payload):
     r=release_review(root,head,payload)
     extra={}
     if payload.get("metadata",{}).get("worldroot_revision")==34 or "r34_review" in payload:
+        if payload.get("metadata",{}).get("worldroot_revision")!=34:raise ValueError("R34 review requires revision 34 metadata")
         from .r34_experience import validate_intent,validate_delivery
         if "r34_intent" not in packet or packet["r34_intent"]!=request.get("r34_intent"):raise ValueError("R34 intent must be bound before prose")
         validate_intent(request)
@@ -126,6 +127,10 @@ def verify_history(root):
         if receipt.get("preparation_sha256")!=seal or receipt.get("request_sha256")!=digest(request) or receipt.get("source_head_sha256")!=digest(prep["head"]) or receipt.get("choice_sha256")!=prep["authority"]["choice_sha256"]:raise ValueError("Historic receipt mismatch")
         draft,manifest=verify_episode(root,ident)
         if receipt.get("source_sha256")!=manifest["original_readback_sha256"] or receipt.get("prose_sha256")!=hashlib.sha256(draft.prose.encode()).hexdigest():raise ValueError("Historic prose mismatch")
+        if "r34" in receipt:
+            inbox=read(root/"inbox"/(ident+".json"))
+            if inbox.get("metadata",{}).get("worldroot_revision")!=34 or receipt.get("r34_input_sha256")!=digest(inbox.get("r34_review")) or prep.get("r34_intent")!=request.get("r34_intent"):
+                raise ValueError("Historic R34 intent/review mismatch")
         count+=1
     return {"verified_r33_receipts":count,"canon_changed":False}
 

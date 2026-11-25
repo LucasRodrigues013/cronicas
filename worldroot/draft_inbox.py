@@ -263,6 +263,8 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
         previous_counts=previous_canonical_scene_counts(root, meta),
         archive_root=root)
     # R32 opt-in on staged branch. Preserve immutable old v3 drafts and their choices.
+    if "r34_review" in payload and meta.get("worldroot_revision")!=34:
+        raise GateError("R34 review requires revision 34 metadata")
     r33_declared = meta.get("worldroot_revision") in (33,34) or "r33_review" in payload or "r34_review" in payload
     r32_declared = meta.get("worldroot_revision")==32 or "r32_review" in payload or r33_declared
     if r32_declared:

@@ -238,7 +238,7 @@ def review(prose: str, root: Path, head: dict, full_text=None, cards=None, exper
     return {"status":"ADVISORY_ONLY","metrics":m,"notices":notes,
             "causality":causal_review(prose,root,head,cards),
             "experience_review":experience_cards(prose,root,head,experience),
-            "choice_contract":choice_review(full_text) if isinstance(full_text,str) else None,
+            "choice_contract":choice_review(full_text,revision=34 if "WORLDROOT R34" in full_text[:2000] else VERSION) if isinstance(full_text,str) else None,
             "literary_certification":False,"canon_changed":False}
 
 def receipt(prose,root,head,full_text=None,cards=None,experience=None):

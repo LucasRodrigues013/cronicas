@@ -13,3 +13,7 @@ Novo render_choices(packet,id,revision=34) gera cinco controles R34 com hierarqu
 
 ## Aceite
 Testes sintéticos de intenção ausente, dimensão colapsada, âncora errada, revisão faltante, oportunidade adiada, detalhe ancorado, escolha R34 e legado R30. Implantação exige main validada, atualização dos pins de story-archive e preflight real; se houver preparação R33 em trânsito, concluir com pin antigo ou tratar separadamente, não modificar bytes. R34 não certifica qualidade subjetiva. Grande Conferência e arco de Calderva preservados. 
+
+## Apresentação e identidade recuperável
+Use `render_opening(metadata, opening)` (worldroot.r34_experience). opening exige book_title, chapter_title, episode_title, epigraph, calendar ("Dia N · ..."), location, fronts; o cabeçalho tem indicador discreto de cinco partes, hierarquia e calendário. Incluir opening em r34_review e o resultado literal no início do full_text após a declaração de estado. A prova visual é estrutural, não screenshot. 
+Use `python -m worldroot.r34_experience --archive-root archive --character miren --character seris --character althea` para recuperar observações R30 e candidatos R31 com âncoras verificadas em fontes históricas, sem promover candidatos. Fichas devem manter conflitos e lacunas de idade, identidade, aparência e relações; ampliar conforme elenco focal e futuras cenas realmente narradas.

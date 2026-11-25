@@ -75,6 +75,66 @@ def validate_intent(request,policy_text=None):
     require(isinstance(reference,dict) and reference.get("requirement_id") in req and req[reference["requirement_id"]].get("role","Response")=="Response" and reference["requirement_id"] in reviewed and reason(reference.get("reason")),"R34 historical comparison source required")
     return {"dimensions":len(dims),"characters":len(cards),"status":"INTENT_STRUCTURE_CHECKED","semantic_certification":False}
 
+def render_opening(metadata,packet):
+    """A versioned, deterministic, prose-first visual opening for new episodes."""
+    from .experience_quality import safe
+    require(isinstance(packet,dict),"R34 opening packet missing")
+    fields=("book_title","chapter_title","episode_title","epigraph","calendar","location","fronts")
+    require(set(packet)==set(fields),"R34 opening fields incomplete")
+    p={k:safe(packet[k]) for k in fields}
+    part=metadata.get("part");chapter=metadata.get("chapter");day=metadata.get("day")
+    parts=("I","II","III","IV","V")
+    require(part in parts and type(chapter) is int and chapter>0 and type(day) is int and day>0,"R34 invalid episode metadata")
+    require(p["book_title"].casefold().startswith(str(metadata.get("book","")).casefold()+" — "),"R34 book title mismatch")
+    require(bool(re.match(r"^Dia "+str(day)+r"(?:\s*·|$)",p["calendar"],re.I)),"R34 calendar day mismatch")
+    index=parts.index(part)
+    progress="".join('    <box flex={1} height={5} radius="full" background="'+("#64748B" if n<=index else "surface-tertiary")+'"/>\n' for n in range(5)).rstrip()
+    return "\n".join([
+        '<box align="center" gap={2}>',
+        '  <caption>CRÔNICAS DE UM NOVO MUNDO · WORLDROOT R34</caption>',
+        '  <title size="lg" textAlign="center">'+p["book_title"]+'</title>',
+        '  <title size="lg" textAlign="center">CAPÍTULO '+str(chapter)+' — '+p["chapter_title"]+'</title>',
+        '  <caption>PARTE '+part+' DE V · DIA '+str(day)+'</caption>',
+        '  <title size="xl" textAlign="center">'+p["episode_title"]+'</title>',
+        '  <text italic textAlign="center" color="secondary">'+p["epigraph"]+'</text>',
+        '</box>',
+        '<box border radius="lg" padding={3} gap={2}>',
+        '  <caption>CALENDÁRIO DO HORIZONTE</caption>',
+        '  <row gap={1}>',progress,'  </row>',
+        '  <grid columns={2} gap={2}>',
+        '    <grid-item><caption>Calendário</caption>**'+p["calendar"]+'**</grid-item>',
+        '    <grid-item><caption>Progresso do capítulo</caption>**Parte '+part+' de V**</grid-item>',
+        '    <grid-item><caption>Local inicial</caption>**'+p["location"]+'**</grid-item>',
+        '    <grid-item><caption>Horizontes da parte</caption>'+p["fronts"]+'</grid-item>',
+        '  </grid>',
+        '</box>'])
+ 
+def identity_context(root,character_ids,head=None):
+    """Read-only merge of R30 source-matched observations and R31 literal candidates.
+    Keep source candidates separate; do not assert current traits or age."""
+    from pathlib import Path
+    from .literary_experience import source_registry,_historical_anchor
+    from .history_index import read_verified_sources
+    root=Path(root)
+    reg=source_registry(root,head)
+    _,raw=read_verified_sources(root)
+    sources={m["source_name"]:(m,t) for m,t in raw}
+    candidates=json.loads((Path(__file__).resolve().parent.parent/"recovery/r31-historical-candidates.json").read_text(encoding="utf-8"))
+    result=[]
+    people={p["id"]:p for p in reg["characters"]}
+    for ident in dict.fromkeys(character_ids):
+        rows=[]
+        for c in candidates["records"]:
+            if c.get("entity")!=ident or c.get("role")!="Response" or c.get("field") not in ("appearance","relationship"):continue
+            proof=_historical_anchor(sources,c)
+            rows.append({"field":c["field"],"claim":c["claim"],"proof":proof,"state":"LITERAL_CANDIDATE_NOT_CANON" if proof else "UNVERIFIED"})
+        old=people.get(ident)
+        obs=old["observations"] if old else []
+        result.append({"id":ident,"observations":obs,"candidates":rows,
+                       "missing_fields":[field for field in FIELDS if not any(o.get("proof") and o["field"]==field for o in obs) and not any(o["proof"] and o["field"]==field for o in rows)],
+                       "current_state_verified":False})
+    return {"head":reg["head"],"characters":result,"status":"REVIEW_CURRENT_STATE_AND_CONFLICTS","semantic_certification":False,"canon_changed":False}
+ 
 def scene_bodies(prose):
     matches=list(SCENE.finditer(prose))
     return {i+1:prose[m.start():matches[i+1].start() if i+1<len(matches) else len(prose)] for i,m in enumerate(matches)}
@@ -98,6 +158,8 @@ def validate_delivery(request,payload):
         require(isinstance(evidence,str) and len(evidence.split())>=4,"R34 literal evidence required: "+name)
         if name=="design":
             require(evidence in payload["full_text"] and "WORLDROOT R34" in payload["full_text"][:2000],"R34 design/header mismatch")
+            opening=render_opening(payload.get("metadata",{}),review.get("opening"))
+            require(opening in payload["full_text"][:len(opening)+400],"R34 rendered opening differs")
             check=presentation_preflight(payload["full_text"],min_scenes=1,min_named_turns=0)
             require(not check["errors"],"R34 visual structural regression")
         else:
@@ -115,3 +177,9 @@ def validate_delivery(request,payload):
     require(reason(review.get("comparison_result")),"R34 comparison requires editorial conclusion")
     require(review.get("no_forced_scenes") is True and review.get("no_unsupported_traits") is True,"R34 editorial boundary not reviewed")
     return {"schema":"worldroot-r34-intent-receipt-v1","dimensions":dims,"character_count":len(intent["characters"]),"comparison_result":review["comparison_result"],"signals":measure(payload["prose"]),"status":"EVIDENCE_STRUCTURE_CHECKED_HUMAN_REVIEW_REQUIRED","semantic_certification":False,"canon_changed":False}
+
+if __name__=="__main__":
+    import argparse
+    from pathlib import Path
+    p=argparse.ArgumentParser();p.add_argument("--archive-root",type=Path,required=True);p.add_argument("--character",action="append",required=True)
+    args=p.parse_args();print(json.dumps(identity_context(args.archive_root,args.character),ensure_ascii=False,indent=2))

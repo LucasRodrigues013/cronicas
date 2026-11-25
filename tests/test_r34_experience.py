@@ -1,6 +1,6 @@
 import copy,json,unittest
 from unittest.mock import patch
-from worldroot.r34_experience import DIMENSIONS,validate_intent,validate_delivery
+from worldroot.r34_experience import DIMENSIONS,validate_intent,validate_delivery,render_opening,identity_context
 from worldroot.editorial_guard import POLICY_PATH
 from worldroot.experience_quality import render_choices
 from worldroot.literary_experience import choice_prompt,choice_review
@@ -24,8 +24,10 @@ class R34Tests(unittest.TestCase):
         prose="## I — Uma manhã\nPessoa ajeitou os cabelos negros.\nPessoa tomou a mão do amigo."
         d={k:{"status":"applied","reason":"Este trecho mostra uma escolha narrativa.","scene":1,"evidence":"Pessoa tomou a mão do amigo."} for k in DIMENSIONS}
         d["appearance"].update(evidence="Pessoa ajeitou os cabelos negros.",concrete_detail="cabelos negros",character="Pessoa")
-        d["design"]["evidence"]="WORLDROOT R34 cabeçalho de teste"
-        return {"prose":prose,"full_text":"WORLDROOT R34 cabeçalho de teste\n"+prose,"r34_review":{"schema":"worldroot-r34-review-v1","dimensions":d,"comparison_result":"Comparação revela maior atenção à identidade.","no_forced_scenes":True,"no_unsupported_traits":True}}
+        metadata={"book":"Livro VI","chapter":8,"part":"III","day":576}
+        opening={"book_title":"LIVRO VI — AS COROAS PARTIDAS","chapter_title":"QUANDO O CONTINENTE DESPERTA","episode_title":"UMA MANHÃ","epigraph":"Uma nova manhã de teste.","calendar":"Dia 576 · Ano II","location":"Torre","fronts":"Três Arcos"}
+        d["design"]["evidence"]="CRÔNICAS DE UM NOVO MUNDO · WORLDROOT R34"
+        return {"metadata":metadata,"prose":prose,"full_text":render_opening(metadata,opening)+"\n"+prose,"r34_review":{"schema":"worldroot-r34-review-v1","opening":opening,"dimensions":d,"comparison_result":"Comparação revela maior atenção à identidade.","no_forced_scenes":True,"no_unsupported_traits":True}}
     def test_complete_intent(self):
         self.assertEqual(validate_intent(self.request())["dimensions"],7)
     def test_missing_appearance_rejected(self):
@@ -68,3 +70,21 @@ class R34Tests(unittest.TestCase):
         self.assertEqual(new["markup"].count("WORLDROOT R34"),5)
         self.assertEqual(new["markup"].count('button block color="secondary" variant="outline"'),4)
         self.assertIn("O que está em jogo",new["markup"])
+    def test_rendered_opening_rejects_changed_date(self):
+        p=self.payload();o=p["r34_review"]["opening"];o["calendar"]="Dia 577 · Ano II"
+        with self.assertRaises(ValueError):render_opening(p["metadata"],o)
+    def test_rendered_opening_rejects_markup_injection(self):
+        p=self.payload();p["r34_review"]["opening"]["epigraph"]="<button>invalid"
+        with self.assertRaises(ValueError):render_opening(p["metadata"],p["r34_review"]["opening"])
+    def test_rendered_opening_cannot_be_substituted(self):
+        p=self.payload();p["full_text"]=p["full_text"].replace("UMA MANHÃ","OUTRA MANHÃ")
+        with self.assertRaises(ValueError):validate_delivery(self.request(),p)
+    def test_identity_context_keeps_candidates_and_unknowns(self):
+        reg={"head":{"day":575},"characters":[{"id":"miren","observations":[{"field":"appearance","proof":{"line":1}}]}]}
+        with patch("worldroot.literary_experience.source_registry",return_value=reg),patch("worldroot.history_index.read_verified_sources",return_value=({},[])),patch("worldroot.literary_experience._historical_anchor",return_value={"line":2,"role":"Response"}):
+            result=identity_context(".",["miren","unknown"])
+        self.assertTrue(result["characters"][0]["candidates"])
+        self.assertTrue(all(x["state"]=="LITERAL_CANDIDATE_NOT_CANON" for x in result["characters"][0]["candidates"]))
+        self.assertIn("age",result["characters"][0]["missing_fields"])
+        self.assertFalse(result["characters"][0]["current_state_verified"])
+        self.assertIn("appearance",result["characters"][1]["missing_fields"])
