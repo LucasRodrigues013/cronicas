@@ -1,0 +1,830 @@
+{
+  "schema": "worldroot-r33-request-v1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "delivery_id": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+  "head": {
+    "book": "Livro VI",
+    "book_closed": false,
+    "chapter": 8,
+    "closure_sha256": "c77a91f444eb4fb8260aa7ce8e861b825aef0dd81b1632e2908bacb0c4ae901c",
+    "day": 577,
+    "drive_head_status": "NAO_SINCRONIZADO",
+    "engine_mode": "GITHUB_PRIVADO_SEM_OIDC",
+    "episode_id": "LVI-C08-PIV-D577-AUTHOR-SOURCE",
+    "hour": "22h36",
+    "location": "Torre do Criador (Lucas/Miren); Três Arcos, Eixo Aurora, AERÚN, Vale dos Ofícios Baixos, Renshar, Serevan",
+    "part": "IV",
+    "previous_head_sha256": "63d1e2635abfcbe7fb20e9d6cedbf0481c17428f6c290c023668858138709f60",
+    "schema": "worldroot-git-canon-v1",
+    "sequence": 48,
+    "source_sha256": "204fdbb5a6c9bc804a3103ed18ed9b34f8a0fa60dcd65e700e2a2725b069405a"
+  },
+  "choice_sha256": "497d5f4d8215b8ddfa74e432510dada7d86968bb50f6b0249312ed7620e2bf97",
+  "requirements": [
+    {
+      "id": "mirenhair",
+      "domain": "identity",
+      "critical": true,
+      "query": "Cabelos escuros de Miren confirmados na cena histórica."
+    },
+    {
+      "id": "couplevoice",
+      "domain": "relationship",
+      "critical": true,
+      "query": "Casal tem intimidade humorística e recíproca; referência de tom."
+    },
+    {
+      "id": "currentcouple",
+      "domain": "relationship",
+      "critical": true,
+      "query": "Casamento e paixão recíproca, lar na Torre; pássaro de Ordan preservado."
+    },
+    {
+      "id": "mirenvoice",
+      "domain": "identity",
+      "critical": true,
+      "query": "Miren direta, independente e brincalhona, escolhe roupas e rotina."
+    },
+    {
+      "id": "edrik",
+      "domain": "identity",
+      "critical": true,
+      "query": "Edrik Sovan representante civil de Halvern; Sella mensageira."
+    },
+    {
+      "id": "kael",
+      "domain": "identity",
+      "critical": true,
+      "query": "Kael assinou pela Cidade Livre; Edrik pelo próprio mandato civil; símbolos distintos."
+    },
+    {
+      "id": "thalthea",
+      "domain": "event",
+      "critical": true,
+      "query": "Althea decidiu enviar confirmação formal D573; carta em viagem, ratificação final de Thalor."
+    },
+    {
+      "id": "railtest",
+      "domain": "event",
+      "critical": true,
+      "query": "Carga experimental de farinha percorreu 8 km; pagamento de Garran combinado."
+    },
+    {
+      "id": "railmap",
+      "domain": "world",
+      "critical": true,
+      "query": "Maquete da travessia, apoios e preservação da corrente e acessos."
+    },
+    {
+      "id": "genese",
+      "domain": "power",
+      "critical": true,
+      "query": "GÊNESE materializou guia e estações; poder pleno."
+    },
+    {
+      "id": "bridge",
+      "domain": "inventory",
+      "critical": true,
+      "query": "Maquete da ponte já existe; não confundir com ponte física."
+    },
+    {
+      "id": "ilvarole",
+      "domain": "identity",
+      "critical": true,
+      "query": "Ilva atua em design, tecidos, artesãos e cultura, respeita autoria e ateliês."
+    },
+    {
+      "id": "ilvafriend",
+      "domain": "relationship",
+      "critical": true,
+      "query": "Amizade de Ilva e Miren, franqueza, humor, confiança e papel cultural."
+    },
+    {
+      "id": "astravoice",
+      "domain": "identity",
+      "critical": true,
+      "query": "Astra vice de Miren e pesquisadora; humor direto, sem dados físicos ou amorosos inventados."
+    },
+    {
+      "id": "guest",
+      "domain": "identity",
+      "critical": true,
+      "query": "Ivena, profissional de Halvern, cabelos grisalhos, recurso visual e oficina conjunta."
+    },
+    {
+      "id": "meeting",
+      "domain": "promise",
+      "critical": true,
+      "query": "Ivena confirmou participação da roda de escuta D578; Miren e Lysa convidam pessoas sem mandato falso."
+    },
+    {
+      "id": "maelis",
+      "domain": "identity",
+      "critical": true,
+      "query": "Maelis reconheceu técnica de comunicação de Ivena; oficina conjunta combinada."
+    },
+    {
+      "id": "aid",
+      "domain": "event",
+      "critical": true,
+      "query": "Entendimento preliminar civil assinado e auxílio aceito; não aliança militar/ferroviária."
+    },
+    {
+      "id": "letter",
+      "domain": "knowledge",
+      "critical": true,
+      "query": "Carta de Ordan partiu com Teren; chegada Pedras Claras não confirmada."
+    },
+    {
+      "id": "ordan",
+      "domain": "promise",
+      "critical": true,
+      "query": "Ordan oferece fabricar bancos e reparos com Ivena, não obrigação."
+    },
+    {
+      "id": "yrda",
+      "domain": "event",
+      "critical": true,
+      "query": "Amostra devolvida a Yrda, letra reconhecida, pista pátio inferior, medidas autorizadas."
+    },
+    {
+      "id": "velkar",
+      "domain": "event",
+      "critical": true,
+      "query": "Velkar aceitou piloto comercial limitado; nenhuma incorporação."
+    },
+    {
+      "id": "naval",
+      "domain": "location",
+      "critical": true,
+      "query": "Varkhess e Serina em reconhecimento costeiro com piloto; primeira área descartada; retornam."
+    },
+    {
+      "id": "lived",
+      "domain": "author_rule",
+      "critical": true,
+      "query": "Cotidiano e vivência sem quota.",
+      "role": "AuthorPolicy"
+    },
+    {
+      "id": "appearance",
+      "domain": "author_rule",
+      "critical": true,
+      "query": "Aparência concreta e apropriada, traços recuperados.",
+      "role": "AuthorPolicy"
+    },
+    {
+      "id": "relationships",
+      "domain": "author_rule",
+      "critical": true,
+      "query": "Paixão e intimidade sugerida não gráfica, iniciativa recíproca.",
+      "role": "AuthorPolicy"
+    },
+    {
+      "id": "cast",
+      "domain": "author_rule",
+      "critical": true,
+      "query": "Recuperação de Kael e Ilva por fontes.",
+      "role": "AuthorPolicy"
+    },
+    {
+      "id": "wonder",
+      "domain": "author_rule",
+      "critical": true,
+      "query": "Maravilhamento e autonomia, GÊNESE plena.",
+      "role": "AuthorPolicy"
+    },
+    {
+      "id": "rhythm",
+      "domain": "author_rule",
+      "critical": true,
+      "query": "Clímax conquistado, alternância sem burocracia repetitiva.",
+      "role": "AuthorPolicy"
+    },
+    {
+      "id": "design",
+      "domain": "author_rule",
+      "critical": true,
+      "query": "Cabeçalho e escolhas vigentes R34.",
+      "role": "AuthorPolicy"
+    }
+  ],
+  "reviewed": {
+    "mirenhair": {
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "line_start": 382,
+      "line_end": 388,
+      "claim": "Cabelos escuros de Miren confirmados na cena histórica.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "58a05f0fbcaec98424754d3c8a3fa294ef6955b3653be2b847410e0dd9d60454"
+    },
+    "couplevoice": {
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "line_start": 390,
+      "line_end": 412,
+      "claim": "Casal tem intimidade humorística e recíproca; referência de tom.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "6deaa37bab08598f7a9409cc6a3ca256bd4610374a2c80c9622bc85225cba8c4"
+    },
+    "currentcouple": {
+      "source": "LVI-C08-PIV-D577-AUTHOR-SOURCE",
+      "line_start": 617,
+      "line_end": 665,
+      "claim": "Casamento e paixão recíproca, lar na Torre; pássaro de Ordan preservado.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "93572a1e0d835ffb7f94ba8f0a35f62d064ffb8503ed6cc07361ffc2322dbe05"
+    },
+    "mirenvoice": {
+      "source": "LVI-C08-PIV-D577-AUTHOR-SOURCE",
+      "line_start": 31,
+      "line_end": 105,
+      "claim": "Miren direta, independente e brincalhona, escolhe roupas e rotina.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "46f3f25e61f906bd930483efe258af758995e4755013176276b0e72227fa59d8"
+    },
+    "edrik": {
+      "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "line_start": 94,
+      "line_end": 104,
+      "claim": "Edrik Sovan representante civil de Halvern; Sella mensageira.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "43bf302088b1e8838d2b9e7acb05209f228cb4e73e82aaddd8c570d1f0d49fb5"
+    },
+    "kael": {
+      "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "line_start": 132,
+      "line_end": 164,
+      "claim": "Kael assinou pela Cidade Livre; Edrik pelo próprio mandato civil; símbolos distintos.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "1f28de07246efa03a45c840e34aede5e41264f8ceb4fb478171f38ca814ff982"
+    },
+    "thalthea": {
+      "source": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+      "line_start": 380,
+      "line_end": 422,
+      "claim": "Althea decidiu enviar confirmação formal D573; carta em viagem, ratificação final de Thalor.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "7914d625f1613817049e3a57d3cb5712339474c0d80ba4fe88b50215e380d15d"
+    },
+    "railtest": {
+      "source": "LVI-C08-PIV-D577-AUTHOR-SOURCE",
+      "line_start": 187,
+      "line_end": 235,
+      "claim": "Carga experimental de farinha percorreu 8 km; pagamento de Garran combinado.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "620855e547b347b65786f4677308435eef83e255206e8d338d6d9e1fbeaa2296"
+    },
+    "railmap": {
+      "source": "LVI-C08-PIV-D577-AUTHOR-SOURCE",
+      "line_start": 240,
+      "line_end": 275,
+      "claim": "Maquete da travessia, apoios e preservação da corrente e acessos.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "abf7f7457c4357ebb092c7cff2009e4f28214454e6fd58682e3be56007aa6ccc"
+    },
+    "genese": {
+      "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "line_start": 214,
+      "line_end": 246,
+      "claim": "GÊNESE materializou guia e estações; poder pleno.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "480da1794ea901ba98897833351b5899b3002b5da4b58bac2962dda20ffed0ee"
+    },
+    "bridge": {
+      "source": "LVI-C08-PIV-D577-AUTHOR-SOURCE",
+      "line_start": 251,
+      "line_end": 265,
+      "claim": "Maquete da ponte já existe; não confundir com ponte física.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "b73bbd44f4d20437b2c43791947af653bf5a8407e110359ab2aa80e014494a9b"
+    },
+    "ilvarole": {
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "line_start": 6391,
+      "line_end": 6441,
+      "claim": "Ilva atua em design, tecidos, artesãos e cultura, respeita autoria e ateliês.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "30b60d8ee6c592b88cc2cc7d4ac5adb57c3742d3460338efbd5c392446773c86"
+    },
+    "ilvafriend": {
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "line_start": 89567,
+      "line_end": 89691,
+      "claim": "Amizade de Ilva e Miren, franqueza, humor, confiança e papel cultural.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "592f664abaa9472c6defede0b1508294c2e6ed4a42c6e60cd88864ae04a16ec6"
+    },
+    "astravoice": {
+      "source": "LVI-C08-PIV-D577-AUTHOR-SOURCE",
+      "line_start": 279,
+      "line_end": 311,
+      "claim": "Astra vice de Miren e pesquisadora; humor direto, sem dados físicos ou amorosos inventados.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "3d691f03bcaf154f5b8d9752dc81f21afb354f78def2db10286fbe4c482b552c"
+    },
+    "guest": {
+      "source": "LVI-C08-PIV-D577-AUTHOR-SOURCE",
+      "line_start": 111,
+      "line_end": 181,
+      "claim": "Ivena, profissional de Halvern, cabelos grisalhos, recurso visual e oficina conjunta.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "e9fd1edce24a0b97aababc64ede2a3bb885dac01f06566c77852d9a2bd2fa7fe"
+    },
+    "meeting": {
+      "source": "LVI-C08-PIV-D577-AUTHOR-SOURCE",
+      "line_start": 315,
+      "line_end": 357,
+      "claim": "Ivena confirmou participação da roda de escuta D578; Miren e Lysa convidam pessoas sem mandato falso.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "1a280c006c8419cd22e76334530f0930d3e7897d7b0750ebc18c79cb210097fa"
+    },
+    "maelis": {
+      "source": "LVI-C08-PIV-D577-AUTHOR-SOURCE",
+      "line_start": 137,
+      "line_end": 185,
+      "claim": "Maelis reconheceu técnica de comunicação de Ivena; oficina conjunta combinada.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "272d2af1ddae585c3ca09bdfd8dfe7259110f45f7f399fb12e54da28d0289c11"
+    },
+    "aid": {
+      "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "line_start": 132,
+      "line_end": 164,
+      "claim": "Entendimento preliminar civil assinado e auxílio aceito; não aliança militar/ferroviária.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "1f28de07246efa03a45c840e34aede5e41264f8ceb4fb478171f38ca814ff982"
+    },
+    "letter": {
+      "source": "LVI-C08-PIV-D577-AUTHOR-SOURCE",
+      "line_start": 553,
+      "line_end": 565,
+      "claim": "Carta de Ordan partiu com Teren; chegada Pedras Claras não confirmada.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "c093637b7f4a35d918c03b0dc78aedaad6f839b65742c867e793e494e2a98b6a"
+    },
+    "ordan": {
+      "source": "LVI-C08-PIV-D577-AUTHOR-SOURCE",
+      "line_start": 568,
+      "line_end": 615,
+      "claim": "Ordan oferece fabricar bancos e reparos com Ivena, não obrigação.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "9833a11506d9ef1d01271ca26f0fe41ad423bcaca755526ae1fc00fde6d5028e"
+    },
+    "yrda": {
+      "source": "LVI-C08-PIV-D577-AUTHOR-SOURCE",
+      "line_start": 367,
+      "line_end": 429,
+      "claim": "Amostra devolvida a Yrda, letra reconhecida, pista pátio inferior, medidas autorizadas.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "685d6dbd3eb9a9c2631675a8e83aff247877d9d1076ecebeafd9dbaf1ac58879"
+    },
+    "velkar": {
+      "source": "LVI-C08-PIV-D577-AUTHOR-SOURCE",
+      "line_start": 437,
+      "line_end": 505,
+      "claim": "Velkar aceitou piloto comercial limitado; nenhuma incorporação.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "2a4cee145243f5d2683dda1bbe18dd572247442017059dd4868ec4d4d6f6bff0"
+    },
+    "naval": {
+      "source": "LVI-C08-PIV-D577-AUTHOR-SOURCE",
+      "line_start": 507,
+      "line_end": 547,
+      "claim": "Varkhess e Serina em reconhecimento costeiro com piloto; primeira área descartada; retornam.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "b46ed26fdb135ce57541435dc48fde9a1b9696dd93fac0634f25cfff8f80ebfa"
+    },
+    "lived": {
+      "source": "AUTHOR_POLICY",
+      "line_start": 2155,
+      "line_end": 2157,
+      "claim": "Cotidiano e vivência sem quota.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "83e26d8188c306aef1c43332729303fce8e11cedc6fecd251e63701a5bc0a3c3"
+    },
+    "appearance": {
+      "source": "AUTHOR_POLICY",
+      "line_start": 2173,
+      "line_end": 2175,
+      "claim": "Aparência concreta e apropriada, traços recuperados.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "6d93fef05f2c43c3b78f6f4db38d09f30af31ed8e8910639055fca19f6b8ff9b"
+    },
+    "relationships": {
+      "source": "AUTHOR_POLICY",
+      "line_start": 2193,
+      "line_end": 2195,
+      "claim": "Paixão e intimidade sugerida não gráfica, iniciativa recíproca.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "fea75d43f2e62d114cd69d4f308cba8ad21b24454c88d4eecd17727bf121a71a"
+    },
+    "cast": {
+      "source": "AUTHOR_POLICY",
+      "line_start": 2213,
+      "line_end": 2215,
+      "claim": "Recuperação de Kael e Ilva por fontes.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "55df5f7e06584baf518a039d8f02c186975a18afd73f4e3d51a58898095b991d"
+    },
+    "wonder": {
+      "source": "AUTHOR_POLICY",
+      "line_start": 2231,
+      "line_end": 2233,
+      "claim": "Maravilhamento e autonomia, GÊNESE plena.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "0c9cc23c8d8d988108073e78516f727755d10245b652533b29991d80220728ba"
+    },
+    "rhythm": {
+      "source": "AUTHOR_POLICY",
+      "line_start": 2249,
+      "line_end": 2251,
+      "claim": "Clímax conquistado, alternância sem burocracia repetitiva.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "455798275a816e8f9b605df38ce5f0dfa0d8813cc0d467c990c8c5385893873f"
+    },
+    "design": {
+      "source": "AUTHOR_POLICY",
+      "line_start": 2321,
+      "line_end": 2323,
+      "claim": "Cabeçalho e escolhas vigentes R34.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "695484c8c65b85c2a9856cb73a48056efb23a164b48236b970c797fd82601bde"
+    }
+  },
+  "domain_review": {
+    "identity": {
+      "applicable": true,
+      "reason": "Continuidade material: mirenhair, mirenvoice, edrik, kael, ilvarole, astravoice, guest, maelis"
+    },
+    "relationship": {
+      "applicable": true,
+      "reason": "Continuidade material: couplevoice, currentcouple, ilvafriend"
+    },
+    "location": {
+      "applicable": true,
+      "reason": "Continuidade material: naval"
+    },
+    "knowledge": {
+      "applicable": true,
+      "reason": "Continuidade material: letter"
+    },
+    "inventory": {
+      "applicable": true,
+      "reason": "Continuidade material: bridge"
+    },
+    "power": {
+      "applicable": true,
+      "reason": "Continuidade material: genese"
+    },
+    "world": {
+      "applicable": true,
+      "reason": "Continuidade material: railmap"
+    },
+    "event": {
+      "applicable": true,
+      "reason": "Continuidade material: thalthea, railtest, aid, yrda, velkar"
+    },
+    "promise": {
+      "applicable": true,
+      "reason": "Continuidade material: meeting, ordan"
+    },
+    "author_rule": {
+      "applicable": true,
+      "reason": "Continuidade material: lived, appearance, relationships, cast, wonder, rhythm, design"
+    }
+  },
+  "scene_plan": [
+    {
+      "scene": 1,
+      "purpose": "Lucas e Miren, rotina e paixão adulta não gráfica; figurino",
+      "ids": [
+        "mirenhair",
+        "couplevoice",
+        "currentcouple",
+        "mirenvoice",
+        "lived",
+        "appearance"
+      ]
+    },
+    {
+      "scene": 2,
+      "purpose": "Kael e Lysa organizam retorno de Edrik, recebem comunicação com trânsito comprovado, abertura efetiva",
+      "ids": [
+        "edrik",
+        "kael",
+        "thalthea"
+      ]
+    },
+    {
+      "scene": 3,
+      "purpose": "Forja, travessia e conexão física à Base com terreno acordado e teste de ponta a ponta",
+      "ids": [
+        "railtest",
+        "railmap",
+        "genese",
+        "bridge",
+        "wonder"
+      ]
+    },
+    {
+      "scene": 4,
+      "purpose": "Ilva, Astra e Miren: figurinos da delegação, amigas, roupas íntimas como moda e diálogo amoroso, autonomia de Astra",
+      "ids": [
+        "ilvarole",
+        "ilvafriend",
+        "astravoice",
+        "relationships",
+        "cast"
+      ]
+    },
+    {
+      "scene": 5,
+      "purpose": "Abertura oficial da conferência, compromissos civis efetivos, oficina e auxílio em ação",
+      "ids": [
+        "guest",
+        "meeting",
+        "maelis",
+        "aid",
+        "letter",
+        "ordan"
+      ]
+    },
+    {
+      "scene": 6,
+      "purpose": "Frentes independentes: Renshar, montanhas e Serevan, avanço causal",
+      "ids": [
+        "yrda",
+        "velkar",
+        "naval"
+      ]
+    },
+    {
+      "scene": 7,
+      "purpose": "Fecho conquistado, experiência ferroviária e casal; próximos arcos",
+      "ids": [
+        "rhythm",
+        "design"
+      ]
+    }
+  ],
+  "r34_intent": {
+    "schema": "worldroot-r34-intent-v1",
+    "dimensions": {
+      "daily_life": {
+        "rule": "P110",
+        "requirement_id": "lived",
+        "status": "planned",
+        "reason": "Vida íntima e cotidiano de casal antes da ação.",
+        "scenes": [
+          1
+        ]
+      },
+      "appearance": {
+        "rule": "P111",
+        "requirement_id": "appearance",
+        "status": "planned",
+        "reason": "Cabelos escuros de Miren e roupa escolhida; aparência contextual.",
+        "scenes": [
+          1
+        ]
+      },
+      "relationships": {
+        "rule": "P112",
+        "requirement_id": "relationships",
+        "status": "planned",
+        "reason": "Amizade, moda íntima e conversa livre sobre futuro afetivo de Astra.",
+        "scenes": [
+          4
+        ]
+      },
+      "cast": {
+        "rule": "P113",
+        "requirement_id": "cast",
+        "status": "planned",
+        "reason": "Ilva retorna com papel cultural e amizade recuperados.",
+        "scenes": [
+          4
+        ]
+      },
+      "wonder": {
+        "rule": "P114",
+        "requirement_id": "wonder",
+        "status": "planned",
+        "reason": "Manifestação plena da ponte e guia, travessia real.",
+        "scenes": [
+          3
+        ]
+      },
+      "rhythm": {
+        "rule": "P115",
+        "requirement_id": "rhythm",
+        "status": "planned",
+        "reason": "Clímax e consequências reais, fecho do capítulo e vida íntima.",
+        "scenes": [
+          7
+        ]
+      },
+      "design": {
+        "rule": "P119",
+        "requirement_id": "design",
+        "status": "planned",
+        "reason": "Renderização R34 e quatro rotas de valor comparável.",
+        "scenes": [
+          7
+        ]
+      }
+    },
+    "characters": [
+      {
+        "name": "Miren",
+        "scenes": [
+          1,
+          2,
+          4,
+          5,
+          7
+        ],
+        "fields": {
+          "appearance": {
+            "status": "sourced",
+            "reason": "Cabelos escuros observados na fonte histórica.",
+            "requirement_ids": [
+              "mirenhair"
+            ]
+          },
+          "voice": {
+            "status": "sourced",
+            "reason": "Diretora independente, humor e provocação recíproca.",
+            "requirement_ids": [
+              "mirenvoice"
+            ]
+          },
+          "relationship": {
+            "status": "sourced",
+            "reason": "Casamento com Lucas e amizade com Ilva.",
+            "requirement_ids": [
+              "couplevoice",
+              "currentcouple",
+              "ilvafriend"
+            ]
+          },
+          "age": {
+            "status": "unknown",
+            "reason": "Idade numérica não recuperada, adulta casada."
+          }
+        }
+      },
+      {
+        "name": "Lucas",
+        "scenes": [
+          1,
+          3,
+          5,
+          7
+        ],
+        "fields": {
+          "appearance": {
+            "status": "not_material",
+            "reason": "Não inventar traços físicos históricos não recuperados."
+          },
+          "voice": {
+            "status": "unknown",
+            "reason": "Humor conhecido pela relação, sem ficha vocal completa."
+          },
+          "relationship": {
+            "status": "sourced",
+            "reason": "Casamento e cumplicidade adulta preservados.",
+            "requirement_ids": [
+              "currentcouple",
+              "couplevoice"
+            ]
+          },
+          "age": {
+            "status": "unknown",
+            "reason": "Idade exata não afirmada na narrativa."
+          }
+        }
+      },
+      {
+        "name": "Ilva",
+        "scenes": [
+          4
+        ],
+        "fields": {
+          "appearance": {
+            "status": "unknown",
+            "reason": "Não atribuir aparência histórica sem fonte."
+          },
+          "voice": {
+            "status": "sourced",
+            "reason": "Direção artística, cultura e autoria de artesãos.",
+            "requirement_ids": [
+              "ilvarole"
+            ]
+          },
+          "relationship": {
+            "status": "sourced",
+            "reason": "Amizade franca e solidária com Miren.",
+            "requirement_ids": [
+              "ilvafriend"
+            ]
+          },
+          "age": {
+            "status": "unknown",
+            "reason": "Idade exata não recuperada nesta revisão."
+          }
+        }
+      },
+      {
+        "name": "Astra",
+        "scenes": [
+          4,
+          5
+        ],
+        "fields": {
+          "appearance": {
+            "status": "unknown",
+            "reason": "Traços físicos históricos não recuperados."
+          },
+          "voice": {
+            "status": "sourced",
+            "reason": "Humor e pesquisa conforme interações já narradas.",
+            "requirement_ids": [
+              "astravoice"
+            ]
+          },
+          "relationship": {
+            "status": "unknown",
+            "reason": "Sem relação amorosa comprovada; conversa aberta sem par imposto."
+          },
+          "age": {
+            "status": "unknown",
+            "reason": "Idade numérica não recuperada; profissional adulta."
+          }
+        }
+      },
+      {
+        "name": "Kael",
+        "scenes": [
+          2,
+          5
+        ],
+        "fields": {
+          "appearance": {
+            "status": "unknown",
+            "reason": "Traços físicos não recuperados nesta revisão."
+          },
+          "voice": {
+            "status": "sourced",
+            "reason": "Atuação pública pela Cidade Livre confirmada.",
+            "requirement_ids": [
+              "kael"
+            ]
+          },
+          "relationship": {
+            "status": "not_material",
+            "reason": "Relação íntima não material à sessão oficial."
+          },
+          "age": {
+            "status": "unknown",
+            "reason": "Idade numérica não recuperada na fonte."
+          }
+        }
+      },
+      {
+        "name": "Ivena",
+        "scenes": [
+          5
+        ],
+        "fields": {
+          "appearance": {
+            "status": "sourced",
+            "reason": "Cabelos grisalhos e apresentação recente.",
+            "requirement_ids": [
+              "guest"
+            ]
+          },
+          "voice": {
+            "status": "sourced",
+            "reason": "Profissional prática com técnica visual própria.",
+            "requirement_ids": [
+              "guest"
+            ]
+          },
+          "relationship": {
+            "status": "not_material",
+            "reason": "Relação íntima não material à sessão."
+          },
+          "age": {
+            "status": "unknown",
+            "reason": "Idade precisa não revelada pela visitante."
+          }
+        }
+      }
+    ],
+    "comparison": {
+      "requirement_id": "ilvafriend",
+      "reason": "Recuperar franqueza e amizade de Ilva e Miren sem copiar falas, ampliando cotidiano e decisões autorais."
+    }
+  }
+}
