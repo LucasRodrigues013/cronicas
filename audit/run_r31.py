@@ -1,7 +1,7 @@
 """Private R31 audit: full source index, provenance, 100 retrieval probes, read-only."""
 import hashlib,json,pathlib,sqlite3,time,tempfile,statistics,sys,os
 from worldroot import deep_recovery as r31, history_index as hi
-from worldroot.memory_continuity import fusion
+from worldroot.memory_continuity import fusion, creation_packet, review_creation, digest as text_digest
 def lookup(db,q,entity=None,topic=None,role=None,limit=20,strategy='hybrid'):
     if strategy=='fusion':return fusion(db,q,entity,topic,role,limit)
     return r31.retrieve(db,q,entity,topic,role,limit,strategy)
@@ -130,6 +130,30 @@ with tempfile.TemporaryDirectory() as d:
                 rank=next((n for n,h in enumerate(result["hits"],1) if h["source"]==name and min(h["line_end"],hi_)-max(h["line_start"],lo)+1>=3),0)
                 ranks.append(rank)
         emit({"stage":"HELDOUT_REFERENCE_PROBES","strategy":strategy,"n":len(ranks),"hit_at_1":sum(r==1 for r in ranks),"hit_at_5":sum(0<r<=5 for r in ranks),"hit_at_20":sum(0<r<=20 for r in ranks),"hit_at_80":sum(r>0 for r in ranks) if strategy=="fusion" else None,"mrr":round(sum(1/r for r in ranks if r)/len(ranks),4),"limitation":"Distinct reference spans; not independent human evaluation."})
+    # Live per-creation smoke: historical, current canon and preserved editorial projections.
+    live=json.loads((root/"canon/HEAD.json").read_text())
+    requirements=[
+        {"id":"miren-identity","domain":"identity","critical":True,"query":"Miren cabelos postura","entity":"miren"},
+        {"id":"talis-promise","domain":"promise","critical":True,"query":"Talis inventário assinatura","entity":"talis"},
+        {"id":"railway-world","domain":"world","critical":False,"query":"Horizonte de Ferro Arcano"}
+    ]
+    pack=creation_packet(root,db,requirements,head=live,candidate_limit=20)
+    assert pack["closed_episodes"]==44 and len(pack["items"])==3
+    assert pack["items"][0]["r30_identity_candidates"]
+    assert pack["items"][1]["recent_canon_candidates"]
+    assert all(x["recent_canon_candidates"] for x in pack["items"])
+    emit({"stage":"CREATION_PACKET_SMOKE","requirements":len(requirements),"closed_episodes":pack["closed_episodes"],"candidate_counts":[{"history":len(x["hits"]),"recent":len(x["recent_canon_candidates"]),"identity":len(x["r30_identity_candidates"]),"world":len(x["r28_world_candidates"])} for x in pack["items"]],"semantic_certification":False})
+    # Literal authority/role verification on a known reference (not a retrieval score).
+    c,lo,hi_=gold[0]
+    anchor="".join(source_map[c["source_name"]].splitlines(keepends=True)[lo-1:hi_])
+    proof={"source":c["source_name"],"line_start":lo,"line_end":hi_,"anchor_sha":text_digest(anchor),"claim":c["claim"],"status":"REVIEWED_SUPPORTED"}
+    rr=[{"id":"proof","domain":"identity","critical":True,"role":c["role"]}]
+    confirmed=review_creation(root,live,rr,{"proof":proof})
+    assert confirmed["verified"]==1
+    rr[0]["role"]="Prompt" if c["role"]=="Response" else "Response"
+    rejected=review_creation(root,live,rr,{"proof":proof})
+    assert rejected["verified"]==0 and rejected["critical_missing"]==["proof"]
+    emit({"stage":"CREATION_SOURCE_GATE","valid_literal":confirmed["verified"],"wrong_role_rejected":rejected["role_rejected"],"semantic_certification":False})
     # Negative cases and stable repeated queries, not a claim of semantic abstention.
     for q in ("zzzzworldrootnonexistent123","qzxmissingentity987","nonexistentartifactzzx"):
         assert r31.retrieve(db,q)["status"]=="NOT_RECOVERED"
