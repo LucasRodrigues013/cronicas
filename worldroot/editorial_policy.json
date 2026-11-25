@@ -1,7 +1,7 @@
 {
   "schema": "worldroot-editorial-policy-v1",
   "project": "CRONICAS_DE_UM_NOVO_MUNDO",
-  "version": 14,
+  "version": 15,
   "reviewed_at": "2026-11-19",
   "approved_scope": "AUTHOR_APPROVED_EDITORIAL_DYNAMICS_NOT_NARRATED_CANON",
   "source_of_truth": "main/worldroot/editorial_policy.json",
@@ -1596,6 +1596,132 @@
       "directive": "Manter HEAD vivo Livro VI C01 PIII D539 21h08 como fonte; PIV D540 draft e Caedren com flag histórica. Novas regras e sementes não corrigem texto pretérito, não fecham episódio, não alteram HEAD/CONTEXT e não preaprovam fatos. O capítulo seguinte deve consultar as fontes reais e o contrato GitHub-only.",
       "evidence": [
         "S26"
+      ],
+      "active": true
+    },
+    {
+      "id": "P82",
+      "title": "Legado material e ciclo de criação",
+      "directive": "Antes de propor nova infraestrutura, consultar projeção R28 e fontes literais. Reutilizar ativos, preservar 19 defesas e Último Horizonte adiado; diferenciar proposta, protótipo, criação, teste, operação, evolução. Última referência não comprova uso; não inventar capacidades.",
+      "tags": [
+        "R28",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "AUTHOR_REQUEST_R28_2026-11-25"
+      ],
+      "active": true
+    },
+    {
+      "id": "P83",
+      "title": "Elenco histórico e resolução de entidades",
+      "directive": "Consultar índice de atividade e FTS histórico para personagens pouco explorados, promessas, vínculos e conquistas. Recuperar estado e presença por fonte; não confundir AERÚN instituto e guardião; aliases ambíguos exigem revisão. Não forçar reaparição ou retcon.",
+      "tags": [
+        "R28",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "AUTHOR_REQUEST_R28_2026-11-25"
+      ],
+      "active": true
+    },
+    {
+      "id": "P84",
+      "title": "Tramas vivas e recompensas intermediárias",
+      "directive": "Acompanhar pistas, hipóteses, última evolução, consequência e possíveis recompensas sem fechar mistérios por calendário. Uma descoberta parcial pode ser verdadeira sem atribuir autoria ou unir mistérios independentes.",
+      "tags": [
+        "R28",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "AUTHOR_REQUEST_R28_2026-11-25"
+      ],
+      "active": true
+    },
+    {
+      "id": "P85",
+      "title": "Profundidade, foco e variedade das cenas",
+      "directive": "Priorizar uma ou duas experiências centrais quando adequado; interlúdios apenas quando relevantes. Expandir desejo, resistência, ação vivida, virada e consequência; evitar compressão, fórmula café/reunião/criação/antagonista/noite e encerramentos que resumem tudo. Sem metas rígidas de palavras ou cenas.",
+      "tags": [
+        "R28",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "AUTHOR_REQUEST_R28_2026-11-25"
+      ],
+      "active": true
+    },
+    {
+      "id": "P86",
+      "title": "Autonomia vivida, humor e fantasia",
+      "directive": "Demonstrar autonomia por decisões, não repetir discursos de autorização e responsabilidade. Preservar Lucas forte, carismático, amoroso e GÊNESE plena; variar humor sem apagar Brannik/NÓX/Sistema. Viver magia, culturas, fauna, duelos, rituais e exploração em cenas, sem quotas.",
+      "tags": [
+        "R28",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "AUTHOR_REQUEST_R28_2026-11-25"
+      ],
+      "active": true
+    },
+    {
+      "id": "P87",
+      "title": "Especial com identidade própria",
+      "directive": "Escolha especial 4 deve oferecer experiência singular e significativa, não mera soma automática das opções 1–3. Manter cinco escolhas incluindo ação livre e clímax da Parte V conquistado; não predeterminar ação irreversível do autor.",
+      "tags": [
+        "R28",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "AUTHOR_REQUEST_R28_2026-11-25"
+      ],
+      "active": true
+    },
+    {
+      "id": "P88",
+      "title": "Planejamento C08 II–V condicionado ao mundo vivo",
+      "directive": "Consultar story-archive/planning/book-vi/c08-lived-world-r28-AUTHOR-DIRECTION.md. Entrega humanitária, investigação anã, evolução imperial e clímax diplomático são direções aprovadas, não fatos, datas fixas, resultados ou escolha autoral automática. Preservar HEAD e rascunho até escolha real.",
+      "tags": [
+        "R28",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "AUTHOR_REQUEST_R28_2026-11-25"
       ],
       "active": true
     }
