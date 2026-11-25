@@ -2,7 +2,7 @@
 from __future__ import annotations
 import hashlib,json,re,sqlite3
 from pathlib import Path
-from .deep_recovery import norm,sections
+from .deep_recovery import norm,sections,tokens
 from .history_index import read_verified_sources
 from .living_world import load_canonical,project
 from .literary_experience import source_registry
@@ -14,7 +14,7 @@ def locate(body,anchor):
     pos=body.index(anchor)
     return {"line_start":body[:pos].count("\n")+1,"line_end":body[:pos+len(anchor)].count("\n")+1,"anchor_sha":sha(anchor)}
 
-def build(root,staged):
+def build(root,staged,db=None):
     root=Path(root)
     head=json.loads((root/"canon/HEAD.json").read_text())
     entries,warnings=load_canonical(root,head)
@@ -84,9 +84,11 @@ def build(root,staged):
             edge(key,"event:"+ev,"EXPLICIT_KNOWLEDGE",{"acquired_day":k.get("acquired_day"),"clock":k.get("clock"),"visibility":k.get("visibility")})
     dangling=[e for e in edges if e["source"] not in nodes or e["target"] not in nodes]
     edges=[e for e in edges if e not in dangling]
+    if db is not None:enrich_dossiers(dossiers,db)
     for d in dossiers.values():
         known=set()
         for o in d["observations"]:
+            if o.get("status")!="R30_SOURCE_MATCH":continue
             f=o["field"]
             if "appearance" in f:known.add("appearance")
             if "voice" in f:known.add("voice")
@@ -96,7 +98,34 @@ def build(root,staged):
     # Event candidates remain ledger inputs, not computed quantities or asserted current ownership.
     inventory=[e for e in events if re.search(r"mochila|inventário|armadura|equipamento|armazen|transfer|consum|perdeu",e.get("summary_candidato",""),re.I)]
     power=[e for e in events if re.search(r"gênese|creation|autoridade|limiar|ruptura soberana",e.get("summary_candidato",""),re.I)]
-    return {"schema":"worldroot-r32-graph-v1","head":head,"nodes":list(nodes.values()),"edges":edges,"dossiers":dossiers,"historical_observations":observations,"events":events,"knowledge":knowledge,"inventory":{"historical":[o for o in observations if o["field"]=="inventory"],"events":inventory,"current_quantities":"UNKNOWN_UNTIL_RECONCILED"},"power":{"historical":[o for o in observations if o["field"]=="power"],"events":power,"current_ceiling":"NOT_INFERRED"},"relationships":[o for o in observations if o["field"]=="relationship"],"plots":world["plots"],"assets":world["assets"],"rejected_events":rejected,"unresolved_edges":len(dangling),"canon_changed":False,"semantic_certification":False}
+    for o in observations:
+        k=node(o["id"],"historical_candidate",o["field"])
+        person="character:"+o["entity"]
+        if person in nodes:edge(person,k,"HISTORICAL_REFERENCE_CANDIDATE",{"source":o["source"],"line_start":o["line_start"],"line_end":o["line_end"],"role":o["role"],"anchor_sha":o["anchor_sha"]})
+    # Typed history, without computing a current capacity or quantity from old benchmarks.
+    def select(entity,field,fragment):
+        return next((o for o in observations if o["entity"]==entity and o["field"]==field and fragment in o["claim"]),None)
+    power_history=[]
+    for day,metric,value,unit,fragment in [(137,"steady_flow",14,"relative_to_prior","14x"),(137,"accessible_reserve",5.4,"relative_to_prior","5,4x"),(210,"comparable_material_capacity",100,"relative_to_initial","D210"),(388,"comparable_operating_capacity",300,"relative_to_initial","D388"),(388,"accessible_dimensional_capacity",100,"relative_to_initial","D388")]:
+        proof=select("genese","power",fragment)
+        if proof:power_history.append({"day":day,"metric":metric,"value":value,"unit":unit,"proof":proof["id"],"status":"HISTORICAL_CANDIDATE_NOT_CURRENT_CAP"})
+    plan=json.loads((root/"planning/book-vi/r29-epic-narrative.json").read_text())
+    return {"schema":"worldroot-r32-graph-v1","head":head,"nodes":list(nodes.values()),"edges":edges,"dossiers":dossiers,"historical_observations":observations,"events":events,"knowledge":knowledge,"inventory":{"historical":[o for o in observations if o["field"]=="inventory"],"events":inventory,"current_quantities":"UNKNOWN_UNTIL_RECONCILED"},"power":{"historical":[o for o in observations if o["field"]=="power"],"events":power,"current_ceiling":"NOT_INFERRED","benchmarks":power_history},"relationships":[o for o in observations if o["field"]=="relationship"],"plots":world["plots"],"assets":world["assets"],"planning":{"status":"DIRECTION_NOT_CANON","arcs":plan["arcs"],"seeds":plan["seeds"],"promises":plan["promises"]},"rejected_events":rejected,"unresolved_edges":len(dangling),"canon_changed":False,"semantic_certification":False}
+
+def enrich_dossiers(dossiers,db):
+    """Exact-name candidate retrieval per field, never assigns nearby features."""
+    with sqlite3.connect(Path(db).resolve().as_uri()+"?mode=ro",uri=True) as c:
+        c.row_factory=sqlite3.Row
+        for d in dossiers.values():
+            aliases=[d["name"],*d["aliases"]]
+            terms=[tokens(a) for a in aliases if isinstance(a,str) and a.strip()]
+            expr="anchor : ("+" OR ".join('"'+(" ".join(t))+'"' for t in terms if t)+")"
+            d["candidate_evidence"]={}
+            if not terms:continue
+            for field,topic in (("appearance","appearance"),("voice","voice"),("relationships","relationship"),("history","event"),("inventory","inventory"),("power","power")):
+                rows=c.execute("SELECT e.source,e.role,e.line_start,e.line_end,e.anchor_sha,e.anchor FROM search JOIN evidence e ON e.id=search.rowid WHERE search MATCH ? AND e.role='Response' AND (' '||e.topics||' ') LIKE ? ORDER BY bm25(search),e.id LIMIT 6",(expr,"% "+topic+" %")).fetchall()
+                d["candidate_evidence"][field]=[dict(r) for r in rows]
+    return dossiers
 
 def write_graph(data,path):
     path=Path(path)
@@ -107,7 +136,7 @@ def write_graph(data,path):
         c.execute("PRAGMA foreign_keys=ON")
         c.executemany("INSERT INTO nodes VALUES(:id,:kind,:name)",data["nodes"])
         c.executemany("INSERT INTO edges VALUES(?,?,?,?)",[(e["source"],e["target"],e["kind"],json.dumps(e["proof"],ensure_ascii=False)) for e in data["edges"]])
-        for domain in ("dossiers","inventory","power","relationships","plots","assets","historical_observations","events","knowledge"):
+        for domain in ("dossiers","inventory","power","relationships","plots","assets","historical_observations","events","knowledge","planning"):
             obj=data[domain]
             items=obj.items() if isinstance(obj,dict) else enumerate(obj)
             c.executemany("INSERT INTO records VALUES(?,?,?)",[(domain,str(k),json.dumps(v,ensure_ascii=False)) for k,v in items])
