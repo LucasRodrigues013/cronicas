@@ -1,5 +1,5 @@
 """Private R31 audit: full source index, provenance, 100 retrieval probes, read-only."""
-import hashlib,json,pathlib,sqlite3,time,tempfile,statistics,sys
+import hashlib,json,pathlib,sqlite3,time,tempfile,statistics,sys,os
 from worldroot import deep_recovery as r31, history_index as hi
 root=pathlib.Path("archive")
 candidates=json.loads(pathlib.Path("recovery/r31-historical-candidates.json").read_text())["records"]
@@ -50,7 +50,8 @@ for i,c in enumerate(candidates):
     gold.append((c,a+offset,b+offset))
 emit({"stage":"SOURCE_PROVENANCE","sources":len(sources),"parts":sum(len(s["parts"]) for s in manifest["sources"]),"bytes":sum(s["utf8_bytes"] for s in manifest["sources"]),"candidate_anchors":len(gold)})
 with tempfile.TemporaryDirectory() as d:
-    db=pathlib.Path(d)/"r31.sqlite"
+    db=pathlib.Path(os.environ.get("R31_DB_PATH",str(pathlib.Path(d)/"r31.sqlite")))
+    db.parent.mkdir(parents=True,exist_ok=True)
     t=time.monotonic()
     report=r31.build(root,db)
     assert r31.verify_manifest(root,db)
