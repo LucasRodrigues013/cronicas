@@ -43,7 +43,7 @@ jobs:
       - name: Checkout pinned verified WORLDROOT main engine
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: 06ee3b5b56833ad48f6e90badb94c5a6d6236284
+          ref: 14ad99fffe78cfe51aea99d8ec20f57c49dc4b06
           path: engine
           persist-credentials: false
       - name: Python 3.12
@@ -58,7 +58,7 @@ jobs:
           python -m unittest discover -s tools -p 'test_private_git_readback.py' -v
           python -m unittest discover -s tools -p 'test_github_chapter_publisher.py' -v
           python -m unittest discover -s tools -p 'test_lvi_predelivery.py' -v
-      - name: Check real D538–D540 source and the ratified Livro VI canonical journal
+      - name: Check all original sources and current canonical journal
         env:
           PYTHONPATH: engine
         run: |
@@ -68,8 +68,33 @@ jobs:
       - name: Real read-only tests (NO invented choice or story mutation)
         run: |
           set -euo pipefail
-          python tools/worldroot_transition.py --archive-root . --episode-id LVI-C01-PIV-D540-AUTHOR-SOURCE --option 4 --expected-head LVI-C01-PIII-D539-AUTHOR-SOURCE --user-message 'CI_ONLY_NOT_A_REAL_AUTHOR_CHOICE'
-          python tools/worldroot_transition.py --archive-root . --episode-id LVI-C01-PIII-D539-AUTHOR-SOURCE --option 4 --expected-head LVI-C01-PIII-D539-AUTHOR-SOURCE --user-message 'CI_ONLY_NOT_A_REAL_AUTHOR_CHOICE'
+          python - <<'PY'
+          import json, sys
+          from pathlib import Path
+          sys.path.insert(0, str(Path("tools").resolve()))
+          from worldroot_transition import route, ArchiveInvalid
+          root = Path(".")
+          head = json.loads((root/"canon/HEAD.json").read_text())
+          eid = head["episode_id"]
+          choices = list((root/"choices"/eid).glob("option-*.json"))
+          if len(choices) != 1:
+              raise RuntimeError("Current HEAD must have exactly one real archived author choice for this QA")
+          choice = json.loads(choices[0].read_text())
+          assert choice["author_source"] == "USER_MESSAGE"
+          before = (root/"canon/HEAD.json").read_bytes()
+          args = (root, eid, choice["option"], choice.get("free_text", ""))
+          result = route(*args, expected_head=eid, user_message="CI_READ_ONLY_REPLAY_OF_EXISTING_CHOICE")
+          assert result["route"] == "ALREADY_CANONICAL_NAVIGATION_ONLY"
+          assert result["closes_canon"] is False
+          try:
+              route(*args, expected_head="STALE_CI_HEAD", user_message="CI_READ_ONLY_NEGATIVE_TEST")
+          except ArchiveInvalid as exc:
+              assert "Stale expected HEAD" in str(exc)
+          else:
+              raise AssertionError("Stale HEAD was accepted")
+          assert (root/"canon/HEAD.json").read_bytes() == before
+          print("LIVE_CANONICAL_NAVIGATION_AND_STALE_GUARD_VERIFIED:", eid)
+          PY
           python tools/worldroot_memory_delta.py --archive-root . --mode draft --episode-id LVI-C01-PIV-D540-AUTHOR-SOURCE
           python tools/worldroot_memory_delta.py --archive-root . --mode backfill --write
           python tools/worldroot_memory_delta.py --archive-root . --mode resume --write
