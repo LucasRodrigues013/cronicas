@@ -115,6 +115,74 @@ def source_registry(root: Path, head: dict | None=None) -> dict:
             "status":"REVIEW_REQUIRED" if any(not x["proof"] for p in people for x in p["observations"]) or any(not x["proof"] or (x.get("author_feedback") and not x["feedback_proof"]) for x in examples) else "SOURCE_MATCHES",
             "limitation":"Historical transcript observations are not universal knowledge or current state; preserve conflicts and unknowns."}
 
+def writer_brief(root: Path, character_ids=(), scene_ids=(), head=None) -> dict:
+    """Select relevant reviewed observations and literary examples; do not infer current state."""
+    reg=source_registry(root,head)
+    people={p["id"]:p for p in reg["characters"]}
+    examples={s["id"]:s for s in reg["scenes"]}
+    unknown=[f"character:{x}" for x in character_ids if x not in people]+[f"scene:{x}" for x in scene_ids if x not in examples]
+    selected_people=[people[x] for x in dict.fromkeys(character_ids) if x in people]
+    selected_examples=[examples[x] for x in dict.fromkeys(scene_ids) if x in examples]
+    unresolved=[p["id"] for p in selected_people if any(not o["proof"] for o in p["observations"])]
+    unresolved.extend(s["id"] for s in selected_examples if not s["proof"])
+    return {"head":reg["head"],"status":"RECOVER_BEFORE_ASSERTING" if unknown or unresolved else "EDITORIAL_CONTEXT",
+            "missing_ids":unknown,"unresolved":unresolved,"characters":selected_people,
+            "examples":selected_examples,"canon_changed":False,
+            "instructions":["Recover current location, knowledge, relationships and latest state separately from historical observations.",
+                            "Use physical features only when sourced and relevant; clothing and mood may change.",
+                            "Read examples for emotional effect, timing, sensory detail, agency and consequence, not as templates.",
+                            "Resolve material ambiguity before narrating; if unresolved, preserve the unknown."],
+            "limitation":"Explicit selection, not automatic relevance ranking or factual certification."}
+
+def compare(prose: str, root: Path, scene_ids, head=None) -> dict:
+    brief=writer_brief(root,(),scene_ids,head)
+    return {"status":brief["status"],"head":brief["head"],"draft_metrics":measure(prose),
+            "references":[{"id":s["id"],"title":s["title"],"why":s["why"],"metrics":s["comparison"],"proof":s["proof"]}
+                          for s in brief["examples"]],"missing_ids":brief["missing_ids"],"unresolved":brief["unresolved"],
+            "questions":["What changes for the characters through action rather than exposition?",
+                         "Do sensory details matter to the viewpoint and situation?",
+                         "Do voices, attraction and disagreement reflect the established relationships?",
+                         "Is the emotional or epic payoff earned by preceding events?"],
+            "literary_grade":None,"canon_changed":False}
+
+EXPERIENCE_DIMENSIONS={
+    "romance":("reciprocal_initiative","emotional_change","relationship_context"),
+    "sensory":("viewpoint","meaningful_detail","effect_on_experience"),
+    "emotion":("desire","resistance","emotional_turn","consequence"),
+    "voice":("speaker","individual_intent","distinct_expression"),
+    "epic":("setup","power_or_skill","witness_or_effect","lasting_consequence"),
+}
+
+def experience_cards(prose: str, root: Path, head: dict, packet=None) -> dict:
+    """Optional human/editorial review, not an inferred or mandatory emotion quota."""
+    if packet is None:
+        return {"status":"NOT_SUPPLIED","checked":0,"issues":[]}
+    if not isinstance(packet,dict) or packet.get("schema")!="worldroot-r30-experience-review-v1" or packet.get("source_episode_id")!=head.get("episode_id"):
+        return {"status":"REVIEW","checked":0,"issues":["Invalid or stale review packet"]}
+    cards=packet.get("cards")
+    if not isinstance(cards,list) or len(cards)>100:
+        return {"status":"REVIEW","checked":0,"issues":["Invalid review cards"]}
+    issues=[]
+    body=_prose(prose)
+    for i,c in enumerate(cards,1):
+        if not isinstance(c,dict) or c.get("dimension") not in EXPERIENCE_DIMENSIONS:
+            issues.append(f"Card {i}: unknown dimension");continue
+        dim=c["dimension"]
+        anchor=c.get("draft_anchor")
+        missing=[k for k in EXPERIENCE_DIMENSIONS[dim] if not isinstance(c.get(k),str) or not c[k].strip()]
+        if not isinstance(anchor,str) or not 12<=len(anchor.strip())<=2000 or anchor not in body:
+            missing.append("literal_draft_anchor")
+        if dim=="epic" and c.get("artificial_weakening") is not False:
+            missing.append("no_artificial_weakening")
+        if dim=="romance" and c.get("reciprocal_agency") is not True:
+            missing.append("reciprocal_agency")
+        if c.get("prior_source") is not None and not _literal_evidence(root,head,c["prior_source"]):
+            missing.append("verified_prior_source")
+        if missing:
+            issues.append(f"Card {i} ({dim}): "+", ".join(missing))
+    return {"status":"REVIEW" if issues else "ANCHORS_CHECKED","checked":len(cards),"issues":issues,
+            "semantic_certification":False}
+
 def choice_prompt(episode_id: str, option: int, free_text: str="") -> str:
     if not re.fullmatch(r"[A-Za-z0-9_-]{3,128}",episode_id) or type(option) is not int or option not in range(1,6):
         raise ValueError("Invalid episode/option")
@@ -155,7 +223,7 @@ def causal_review(prose: str, root: Path, head: dict, cards=None) -> dict:
     return {"status":"REVIEW" if issues else "ANCHORS_CHECKED","checked":len(cards),"issues":issues,
             "semantic_certification":False}
 
-def review(prose: str, root: Path, head: dict, full_text=None, cards=None) -> dict:
+def review(prose: str, root: Path, head: dict, full_text=None, cards=None, experience=None) -> dict:
     m=measure(prose)
     notes=[]
     if m["meta_phrases"]:
@@ -168,11 +236,12 @@ def review(prose: str, root: Path, head: dict, full_text=None, cards=None) -> di
                   "R30: inspect earned epic progression; never weaken GÊNESE or manufacture opposition to make a scene exciting."])
     return {"status":"ADVISORY_ONLY","metrics":m,"notices":notes,
             "causality":causal_review(prose,root,head,cards),
+            "experience_review":experience_cards(prose,root,head,experience),
             "choice_contract":choice_review(full_text) if isinstance(full_text,str) else None,
             "literary_certification":False,"canon_changed":False}
 
-def receipt(prose,root,head,full_text=None,cards=None):
-    try:return review(prose,root,head,full_text,cards)
+def receipt(prose,root,head,full_text=None,cards=None,experience=None):
+    try:return review(prose,root,head,full_text,cards,experience)
     except (ValueError,TypeError,OSError,KeyError) as exc:
         return {"status":"UNAVAILABLE","reason":str(exc),"canon_changed":False}
 
@@ -182,8 +251,13 @@ def main(argv=None):
     sub=p.add_subparsers(dest="action",required=True)
     sub.add_parser("registry")
     r=sub.add_parser("review");r.add_argument("--literal",type=Path,required=True)
+    b=sub.add_parser("brief");b.add_argument("--character",action="append",default=[]);b.add_argument("--scene",action="append",default=[])
+    c=sub.add_parser("compare");c.add_argument("--literal",type=Path,required=True);c.add_argument("--scene",action="append",required=True)
     a=p.parse_args(argv)
-    result=source_registry(a.archive_root) if a.action=="registry" else review(a.literal.read_text(encoding="utf-8"),a.archive_root,read_obj(a.archive_root/"canon/HEAD.json"))
+    if a.action=="registry":result=source_registry(a.archive_root)
+    elif a.action=="brief":result=writer_brief(a.archive_root,a.character,a.scene)
+    elif a.action=="compare":result=compare(a.literal.read_text(encoding="utf-8"),a.archive_root,a.scene)
+    else:result=review(a.literal.read_text(encoding="utf-8"),a.archive_root,read_obj(a.archive_root/"canon/HEAD.json"))
     print(json.dumps(result,ensure_ascii=False,indent=2))
     return 0
 if __name__=="__main__":
