@@ -32,12 +32,17 @@ def fusion(db, query, entity=None, topic=None, role=None, limit=20):
         if len(selected)==limit:break
     return {"hits":selected,"status":"CANDIDATES_ONLY" if selected else "NOT_RECOVERED","canon_changed":False}
 
+def narrative_evidence(text):
+    """Closed episodes include archived unchosen possibilities; never count them as narrated facts."""
+    match=re.search(r"(?mi)^##\s+(?:AS CINCO PORTAS|CINCO ESCOLHAS|ESCOLHAS)\b",text)
+    return text[:match.start()] if match else text
+
 def recent_candidates(entries, query, limit=8):
     terms=set(tokens(query))-STOP
     if not terms:return []
     hits=[]
     for entry in entries:
-        lines=entry["text"].splitlines(keepends=True)
+        lines=narrative_evidence(entry["text"]).splitlines(keepends=True)
         for i in range(0,len(lines),12):
             anchor="".join(lines[i:i+24])
             matched=terms.intersection(tokens(anchor))
@@ -156,7 +161,7 @@ def review_creation(root, head, requirements, reviewed):
     bodies.update({e["id"]:e["text"] for e in entries})
     roles={m["source_name"]:[(role,start,start+len(lines)-1) for role,start,lines in sections(t)] for m,t in historical}
     # Closed episodes are narrative evidence, not user prompts.
-    for e in entries:roles[e["id"]]=[("Response",1,len(e["text"].splitlines()))]
+    for e in entries:roles[e["id"]]=[("Response",1,len(narrative_evidence(e["text"]).splitlines()))]
     if not isinstance(reviewed,dict):raise ValueError("Invalid review mapping")
     reqmap={r["id"]:r for r in requirements}
     if not set(reviewed)<=set(reqmap):raise ValueError("Unknown review ID")
