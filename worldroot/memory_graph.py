@@ -4,7 +4,7 @@ import hashlib,json,re,sqlite3
 from pathlib import Path
 from .deep_recovery import norm,sections,tokens
 from .history_index import read_verified_sources
-from .living_world import load_canonical,project
+from .living_world import load_canonical,project,SPEAKER
 from .literary_experience import source_registry
 
 FIELDS=("appearance","voice","personality","relationships","location","knowledge","inventory","power","history")
@@ -56,7 +56,7 @@ def build(root,staged,db=None):
         record={"id":"historical:"+str(i+1),"entity":c["entity"],"field":c["field"],"claim":c["claim"],"role":c["role"],"source":c["source_name"],"line_start":lo,"line_end":hi,"anchor_sha":sha(c["anchor"]),"status":"LITERAL_CANDIDATE_NOT_CANON"}
         observations.append(record)
         if c["entity"] in ("miren","seris","althea","elyan","ciran"):
-            eid=c["entity"];d=dossiers.setdefault(eid,{"name":eid,"aliases":[],"observations":[],"unknown_fields":list(FIELDS),"status":"PARTIAL"})
+            eid=c["entity"];d=dossiers.setdefault(eid,{"name":{"seris":"Serís Daum","althea":"Althea","elyan":"Elyan","ciran":"Círan","miren":"Miren"}[eid],"aliases":[eid],"observations":[],"unknown_fields":list(FIELDS),"status":"PARTIAL"})
             node("character:"+eid,"character",d["name"])
             d["observations"].append(record)
     for row in world["assets"]+world["plots"]:
@@ -85,6 +85,20 @@ def build(root,staged,db=None):
     dangling=[e for e in edges if e["source"] not in nodes or e["target"] not in nodes]
     edges=[e for e in edges if e not in dangling]
     if db is not None:enrich_dossiers(dossiers,db)
+    aliases={norm(a) for d in dossiers.values() for a in [d["name"],*d["aliases"]]}
+    unregistered={}
+    for entry in entries:
+        for label in SPEAKER.findall(entry["text"]):
+            if norm(label) not in aliases:
+                q=unregistered.setdefault(label,{"label":label,"episodes":set(),"status":"SPEAKER_LABEL_NOT_RESOLVED_IDENTITY"})
+                q["episodes"].add(entry["id"])
+    speaker_candidates=[{**x,"episodes":sorted(x["episodes"])} for x in unregistered.values()]
+    for row in world["characters"]:
+        if row["id"] in dossiers:
+            dossiers[row["id"]]["last_dialogue_evidence"]=row.get("last_dialogue_evidence")
+            dossiers[row["id"]]["last_reference"]=row.get("last_reference")
+    for eid,d in dossiers.items():
+        d["explicit_knowledge_edges"]=[e["target"] for e in edges if e["source"]=="character:"+eid and e["kind"]=="EXPLICIT_KNOWLEDGE"]
     for d in dossiers.values():
         known=set()
         for o in d["observations"]:
@@ -110,7 +124,7 @@ def build(root,staged,db=None):
         proof=select("genese","power",fragment)
         if proof:power_history.append({"day":day,"metric":metric,"value":value,"unit":unit,"proof":proof["id"],"status":"HISTORICAL_CANDIDATE_NOT_CURRENT_CAP"})
     inventory_items=[]
-    for item,qty,fragment in [("Mochila dimensional",1,"D1 equipamento"),("Armadura regenerativa",1,"D1 equipamento"),("Acessos auxiliares à Matriz-Mãe",3,"Três acessos auxiliares")]:
+    for item,qty,fragment in [("Mochila dimensional",None,"D1 equipamento"),("Armadura regenerativa",None,"D1 equipamento"),("Acessos auxiliares à Matriz-Mãe",3,"Três acessos auxiliares")]:
         p=select("inventory","inventory",fragment)
         if p:inventory_items.append({"item":item,"observed_quantity":qty,"proof":p["id"],"current_quantity":None,"status":"HISTORICAL_OBSERVATION_NOT_CURRENT_BALANCE"})
     # Chronology is not causality. Explicit cross-event links remain separately labelled.
@@ -128,7 +142,7 @@ def build(root,staged,db=None):
                 if "character:"+target in nodes and (target=="lucas" and "Lucas" in o["claim"] or target=="seris" and "Serís" in o["claim"]):
                     edge("character:"+target,o["id"],"RELATIONAL_EVIDENCE_CANDIDATE",{"source":o["source"],"line_start":o["line_start"],"line_end":o["line_end"],"status":"HISTORICAL_NOT_CURRENT"})
     plan=json.loads((root/"planning/book-vi/r29-epic-narrative.json").read_text())
-    return {"schema":"worldroot-r32-graph-v1","head":head,"nodes":list(nodes.values()),"edges":edges,"dossiers":dossiers,"historical_observations":observations,"events":events,"knowledge":knowledge,"inventory":{"historical":[o for o in observations if o["field"]=="inventory"],"events":inventory,"current_quantities":"UNKNOWN_UNTIL_RECONCILED","items":inventory_items},"power":{"historical":[o for o in observations if o["field"]=="power"],"events":power,"current_ceiling":"NOT_INFERRED","benchmarks":power_history},"relationships":[o for o in observations if o["field"]=="relationship"],"plots":world["plots"],"assets":world["assets"],"planning":{"status":"DIRECTION_NOT_CANON","arcs":plan["arcs"],"seeds":plan["seeds"],"promises":plan["promises"]},"rejected_events":rejected,"unresolved_edges":len(dangling),"canon_changed":False,"semantic_certification":False}
+    return {"schema":"worldroot-r32-graph-v1","head":head,"nodes":list(nodes.values()),"edges":edges,"dossiers":dossiers,"historical_observations":observations,"events":events,"knowledge":knowledge,"inventory":{"historical":[o for o in observations if o["field"]=="inventory"],"events":inventory,"current_quantities":"UNKNOWN_UNTIL_RECONCILED","items":inventory_items},"power":{"historical":[o for o in observations if o["field"]=="power"],"events":power,"current_ceiling":"NOT_INFERRED","benchmarks":power_history},"relationships":[o for o in observations if o["field"]=="relationship"]+[{"entity":eid,**o} for eid,d in dossiers.items() for o in d["observations"] if "relationship" in o["field"] and o.get("status")=="R30_SOURCE_MATCH"],"unregistered_speaker_candidates":speaker_candidates,"plots":world["plots"],"assets":world["assets"],"planning":{"status":"DIRECTION_NOT_CANON","arcs":plan["arcs"],"seeds":plan["seeds"],"promises":plan["promises"]},"rejected_events":rejected,"unresolved_edges":len(dangling),"canon_changed":False,"semantic_certification":False}
 
 def enrich_dossiers(dossiers,db):
     """Exact-name candidate retrieval per field, never assigns nearby features."""
@@ -154,7 +168,7 @@ def write_graph(data,path):
         c.execute("PRAGMA foreign_keys=ON")
         c.executemany("INSERT INTO nodes VALUES(:id,:kind,:name)",data["nodes"])
         c.executemany("INSERT INTO edges VALUES(?,?,?,?)",[(e["source"],e["target"],e["kind"],json.dumps(e["proof"],ensure_ascii=False)) for e in data["edges"]])
-        for domain in ("dossiers","inventory","power","relationships","plots","assets","historical_observations","events","knowledge","planning"):
+        for domain in ("dossiers","inventory","power","relationships","plots","assets","historical_observations","events","knowledge","planning","unregistered_speaker_candidates"):
             obj=data[domain]
             items=obj.items() if isinstance(obj,dict) else enumerate(obj)
             c.executemany("INSERT INTO records VALUES(?,?,?)",[(domain,str(k),json.dumps(v,ensure_ascii=False)) for k,v in items])
