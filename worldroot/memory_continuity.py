@@ -4,8 +4,9 @@ import hashlib
 import json
 import re
 from pathlib import Path
-from .deep_recovery import retrieve, verify_manifest, tokens, STOP
+from .deep_recovery import retrieve, verify_manifest, tokens, STOP, sections
 from .living_world import load_canonical
+from .history_index import read_verified_sources
 from .history_index import read_verified_sources
 
 DOMAINS=("identity","relationship","location","knowledge","inventory","power","world","event","promise","author_rule")
@@ -114,3 +115,54 @@ def arc_review(packet):
             "questions":["Would each route be desirable without its number?","Are rewards and risks comparably meaningful, not identical?",
                          "Does every route advance a real arc and leave the others alive?","Does any path dominate by combining rewards?"],
             "semantic_certification":False,"canon_changed":False}
+
+def review_creation(root, head, requirements, reviewed):
+    """Check source authority and prompt/response boundaries before counting evidence.
+
+    A reviewer must still determine that the cited source supports the claim and
+    resolves current-state conflicts. This is not independent semantic grading.
+    """
+    root=Path(root)
+    if json.loads((root/"canon/HEAD.json").read_text(encoding="utf-8"))!=head:
+        raise ValueError("Stale HEAD")
+    _,historical=read_verified_sources(root)
+    bodies={m["source_name"]:t for m,t in historical}
+    entries,warnings=load_canonical(root,head)
+    if warnings:raise ValueError("Incomplete closed episode projection")
+    bodies.update({e["id"]:e["text"] for e in entries})
+    roles={m["source_name"]:[(role,start,start+len(lines)-1) for role,start,lines in sections(t)] for m,t in historical}
+    # Closed episodes are narrative evidence, not user prompts.
+    for e in entries:roles[e["id"]]=[("Response",1,len(e["text"].splitlines()))]
+    if not isinstance(reviewed,dict):raise ValueError("Invalid review mapping")
+    reqmap={r["id"]:r for r in requirements}
+    if not set(reviewed)<=set(reqmap):raise ValueError("Unknown review ID")
+    valid={}
+    for rid,r in reviewed.items():
+        if not isinstance(r,dict):continue
+        source=r.get("source");lo=r.get("line_start");hi=r.get("line_end")
+        if type(lo) is not int or type(hi) is not int:continue
+        expected=reqmap[rid].get("role","Response")
+        if any(role==expected and start<=lo<=hi<=end for role,start,end in roles.get(source,[])):
+            valid[rid]=r
+    result=coverage(requirements,valid,bodies)
+    return {**result,"head":head,"closed_episodes":len(entries),"verified_source_count":len(bodies),"role_rejected":sorted(set(reviewed)-set(valid))}
+
+def main(argv=None):
+    import argparse
+    p=argparse.ArgumentParser()
+    p.add_argument("--archive-root",type=Path,required=True)
+    sub=p.add_subparsers(dest="action",required=True)
+    a=sub.add_parser("prepare");a.add_argument("--db",type=Path,required=True);a.add_argument("--requirements",type=Path,required=True)
+    b=sub.add_parser("review");b.add_argument("--requirements",type=Path,required=True);b.add_argument("--reviewed",type=Path,required=True)
+    c=sub.add_parser("arcs");c.add_argument("--packet",type=Path,required=True)
+    args=p.parse_args(argv)
+    load=lambda f:json.loads(f.read_text(encoding="utf-8"))
+    if args.action=="arcs":result=arc_review(load(args.packet))
+    else:
+        head=load(args.archive_root/"canon/HEAD.json")
+        requirements=load(args.requirements)
+        if args.action=="prepare":result=creation_packet(args.archive_root,args.db,requirements,head=head)
+        else:result=review_creation(args.archive_root,head,requirements,load(args.reviewed))
+    print(json.dumps(result,ensure_ascii=False,indent=2))
+    return 0
+if __name__=="__main__":raise SystemExit(main())
