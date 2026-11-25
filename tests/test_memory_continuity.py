@@ -1,5 +1,5 @@
 import unittest
-from worldroot.memory_continuity import coverage,arc_review,digest
+from worldroot.memory_continuity import coverage,arc_review,digest,recent_candidates
 class TestMemoryContinuity(unittest.TestCase):
     def setUp(self):
         self.req=[{"id":str(i),"domain":"identity","critical":i==0} for i in range(20)]
@@ -41,4 +41,13 @@ class TestMemoryContinuity(unittest.TestCase):
     def test_no_duplicate_arcs(self):
         self.arc["options"][1]["arc_id"]="1"
         self.assertEqual(arc_review(self.arc)["status"],"REVIEW")
+    def test_recent_prefers_latest_when_equal(self):
+        entries=[{"id":"old","sequence":1,"day":529,"sha256":"a","text":"Miren visita a Torre.\n"},{"id":"new","sequence":2,"day":573,"sha256":"b","text":"Miren visita a Torre.\n"}]
+        self.assertEqual(recent_candidates(entries,"Miren Torre")[0]["source"],"new")
+    def test_recent_literal_anchor(self):
+        entries=[{"id":"new","sequence":2,"day":573,"sha256":"b","text":"Miren visita a Torre.\n"}]
+        result=recent_candidates(entries,"Miren")[0]
+        self.assertEqual(result["anchor_sha"],digest(entries[0]["text"]))
+        self.assertEqual((result["line_start"],result["line_end"]),(1,1))
 if __name__=="__main__":unittest.main()
+
