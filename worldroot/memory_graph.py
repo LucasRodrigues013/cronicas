@@ -109,8 +109,26 @@ def build(root,staged,db=None):
     for day,metric,value,unit,fragment in [(137,"steady_flow",14,"relative_to_prior","14x"),(137,"accessible_reserve",5.4,"relative_to_prior","5,4x"),(210,"comparable_material_capacity",100,"relative_to_initial","D210"),(388,"comparable_operating_capacity",300,"relative_to_initial","D388"),(388,"accessible_dimensional_capacity",100,"relative_to_initial","D388")]:
         proof=select("genese","power",fragment)
         if proof:power_history.append({"day":day,"metric":metric,"value":value,"unit":unit,"proof":proof["id"],"status":"HISTORICAL_CANDIDATE_NOT_CURRENT_CAP"})
+    inventory_items=[]
+    for item,qty,fragment in [("Mochila dimensional",1,"D1 equipamento"),("Armadura regenerativa",1,"D1 equipamento"),("Acessos auxiliares à Matriz-Mãe",3,"Três acessos auxiliares")]:
+        p=select("inventory","inventory",fragment)
+        if p:inventory_items.append({"item":item,"observed_quantity":qty,"proof":p["id"],"current_quantity":None,"status":"HISTORICAL_OBSERVATION_NOT_CURRENT_BALANCE"})
+    # Chronology is not causality. Explicit cross-event links remain separately labelled.
+    for previous,current in zip(entries,entries[1:]):
+        edge("episode:"+previous["id"],"episode:"+current["id"],"NEXT_CLOSED_EPISODE",{"previous_sequence":previous["sequence"],"sequence":current["sequence"],"sha256":current["sha256"]})
+    last=entries[-1]
+    if last["id"]=="LVI-C07-PV-D573-AUTHOR-SOURCE":
+        for a,b,reason in [(3,7,"Representation accepted travel, then arrived in Campo Aurora"),(7,8,"Arrived representation enabled preparatory meeting")]:
+            left="event:LVI-C07-PV-D573-E"+str(a).zfill(2);right="event:LVI-C07-PV-D573-E"+str(b).zfill(2)
+            if left in nodes and right in nodes:edge(left,right,"CAUSAL_CANDIDATE",{"episode":last["id"],"sha256":last["sha256"],"annotation":reason,"status":"EDITORIAL_REVIEW_REQUIRED"})
+    for o in observations:
+        if o["field"]!="relationship" or o["role"]!="Response":continue
+        if o["entity"]=="miren":
+            for target in ("lucas","seris"):
+                if "character:"+target in nodes and (target=="lucas" and "Lucas" in o["claim"] or target=="seris" and "Serís" in o["claim"]):
+                    edge("character:"+target,o["id"],"RELATIONAL_EVIDENCE_CANDIDATE",{"source":o["source"],"line_start":o["line_start"],"line_end":o["line_end"],"status":"HISTORICAL_NOT_CURRENT"})
     plan=json.loads((root/"planning/book-vi/r29-epic-narrative.json").read_text())
-    return {"schema":"worldroot-r32-graph-v1","head":head,"nodes":list(nodes.values()),"edges":edges,"dossiers":dossiers,"historical_observations":observations,"events":events,"knowledge":knowledge,"inventory":{"historical":[o for o in observations if o["field"]=="inventory"],"events":inventory,"current_quantities":"UNKNOWN_UNTIL_RECONCILED"},"power":{"historical":[o for o in observations if o["field"]=="power"],"events":power,"current_ceiling":"NOT_INFERRED","benchmarks":power_history},"relationships":[o for o in observations if o["field"]=="relationship"],"plots":world["plots"],"assets":world["assets"],"planning":{"status":"DIRECTION_NOT_CANON","arcs":plan["arcs"],"seeds":plan["seeds"],"promises":plan["promises"]},"rejected_events":rejected,"unresolved_edges":len(dangling),"canon_changed":False,"semantic_certification":False}
+    return {"schema":"worldroot-r32-graph-v1","head":head,"nodes":list(nodes.values()),"edges":edges,"dossiers":dossiers,"historical_observations":observations,"events":events,"knowledge":knowledge,"inventory":{"historical":[o for o in observations if o["field"]=="inventory"],"events":inventory,"current_quantities":"UNKNOWN_UNTIL_RECONCILED","items":inventory_items},"power":{"historical":[o for o in observations if o["field"]=="power"],"events":power,"current_ceiling":"NOT_INFERRED","benchmarks":power_history},"relationships":[o for o in observations if o["field"]=="relationship"],"plots":world["plots"],"assets":world["assets"],"planning":{"status":"DIRECTION_NOT_CANON","arcs":plan["arcs"],"seeds":plan["seeds"],"promises":plan["promises"]},"rejected_events":rejected,"unresolved_edges":len(dangling),"canon_changed":False,"semantic_certification":False}
 
 def enrich_dossiers(dossiers,db):
     """Exact-name candidate retrieval per field, never assigns nearby features."""
