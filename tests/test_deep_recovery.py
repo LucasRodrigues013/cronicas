@@ -84,4 +84,23 @@ class DeepRecoveryTests(unittest.TestCase):
         a=retrieve(self.db,"Miren",role="Response")
         self.assertEqual(len({h["id"] for h in a["hits"]}),len(a["hits"]))
 
+    def test_context_not_crossing_roles(self):
+        self.body="## Response:\nMiren é alta.\n"+"\n"*40+"## Prompt:\nSerís tem cabelos escuros.\n"
+        self.sources=({"sources":[]},[({"source_name":"synthetic.txt","sha256":"a"*64},self.body)])
+        self.make()
+        with sqlite3.connect(self.db) as c:
+            self.assertFalse(c.execute("SELECT COUNT(*) FROM evidence WHERE role='Prompt' AND near_entities LIKE '%miren%'").fetchone()[0])
+    def test_context_hint_is_not_fact(self):
+        self.make()
+        r=retrieve(self.db,"estatura",entity="miren",role="Response",strategy="contextual")
+        self.assertTrue(r["hits"])
+        self.assertTrue(r["context_hints_only"])
+        self.assertFalse(r["semantic_certification"])
+    def test_context_unknown(self):
+        self.make()
+        self.assertEqual(retrieve(self.db,"zzzznoentity123",strategy="contextual")["status"],"NOT_RECOVERED")
+    def test_context_respects_role(self):
+        self.make()
+        self.assertFalse(retrieve(self.db,"Apple Park",role="Response",strategy="contextual")["hits"])
+
 if __name__=="__main__": unittest.main()
