@@ -67,7 +67,7 @@ class GitHubREST:
                 return None
             if type(size) is int and len(data)!=size:
                 return None
-            if hashlib.sha1(b'blob '+str(len(data)).encode('ascii')+b'\\0'+data).hexdigest()!=sha:
+            if hashlib.sha1(b'blob '+str(len(data)).encode('ascii')+bytes([0])+data).hexdigest()!=sha:
                 return None
             return data
         body=decode_verified(result)
