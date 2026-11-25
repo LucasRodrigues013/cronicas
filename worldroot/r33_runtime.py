@@ -85,6 +85,8 @@ def verify_submission(root,head,payload):
     for key in ("requirements","reviewed","domain_review"):
         if r32.get(key)!=packet[key]:raise ValueError("Preparation changed: "+key)
     if r32.get("scene_requirements")!=[{"scene":p["scene"],"ids":p["ids"]} for p in packet["scene_plan"]]:raise ValueError("Scene mapping changed; prepare a fresh delivery ID before narration")
+    for option,stored in zip(r32["arc_packet"]["options"],payload["choices"][:4]):
+        if stored.get("description")!=option["promise"]:raise ValueError("Stored choice intent differs from displayed promise")
     reviews=review.get("reviews")
     if not isinstance(reviews,dict) or set(reviews)!=set(REVIEWS):raise ValueError("Review all eleven dimensions")
     prose=payload["prose"]
