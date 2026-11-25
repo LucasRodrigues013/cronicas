@@ -111,6 +111,16 @@ class DeltaTest(unittest.TestCase):
             c=canon_delta(self.root,self.eid,write=True)
             self.assertEqual(c["status"],"CANONICAL_MEMORY_VERIFIED")
             self.assertEqual(canon_delta(self.root,self.eid,write=True),c)
+            path=self.root/"memory/deltas"/(self.eid+".json")
+            original=path.read_bytes()
+            self.assertFalse(json.loads(original)["canonical_at_capture"])
+            self.assertEqual(draft_delta(self.root,self.eid,write=True),x)
+            self.assertEqual(path.read_bytes(),original)
+            damaged=json.loads(original)
+            damaged["source_bytes"]+=1
+            path.write_bytes(enc(damaged))
+            with self.assertRaisesRegex(ArchiveInvalid,"Immutable memory conflict"):
+                draft_delta(self.root,self.eid,write=True)
     def test_bad_literal_anchor_blocks_memory(self):
         p=self.root/"episodes"/self.eid/"review/eventos_revisados.json"
         j=json.loads(p.read_text())
