@@ -5,7 +5,8 @@ import json
 import re
 from pathlib import Path
 from .deep_recovery import retrieve, verify_manifest, tokens, STOP, sections
-from .living_world import load_canonical
+from .living_world import load_canonical, project
+from .literary_experience import source_registry
 from .history_index import read_verified_sources
 from .history_index import read_verified_sources
 
@@ -45,7 +46,7 @@ def recent_candidates(entries, query, limit=8):
     hits.sort(key=lambda h:(-h["matched"],-h["sequence"],h["line_start"]))
     return hits[:limit]
 
-def creation_packet(root, db, requirements, *, head, candidate_limit=20):
+def creation_packet(root, db, requirements, *, head, candidate_limit=80):
     """Retrieve separately for each material memory requirement, never one query for a whole episode."""
     if type(candidate_limit) is not int or not 1<=candidate_limit<=80:raise ValueError("Invalid candidate limit")
     root=Path(root)
@@ -55,6 +56,9 @@ def creation_packet(root, db, requirements, *, head, candidate_limit=20):
     entries,warnings=load_canonical(root,head)
     if warnings:raise ValueError("Incomplete closed episode projection")
     if not isinstance(requirements,list) or not 1<=len(requirements)<=80:raise ValueError("Requirements count")
+    # Existing R28/R30 projections are additional retrieval routes, not replaced.
+    registry=source_registry(root,head)
+    world=project(root,head)
     ids=set();items=[]
     for req in requirements:
         rid=req["id"]
@@ -64,7 +68,16 @@ def creation_packet(root, db, requirements, *, head, candidate_limit=20):
         role=req.get("role","Response")
         if role not in ("Response","Prompt"):raise ValueError("Invalid role")
         result=fusion(db,req["query"],req.get("entity"),req.get("topic"),role,limit=candidate_limit)
-        items.append({"requirement":req,"candidate_status":result["status"],"hits":result["hits"],"recent_canon_candidates":recent_candidates(entries,req["query"]) if role=="Response" else []})
+        entity=req.get("entity")
+        words=set(tokens(req["query"]))-STOP
+        def relevant(record):
+            names=[record.get("name",""),*record.get("aliases",[])]
+            return record.get("id")==entity or any(set(tokens(n)) and set(tokens(n)).issubset(words) for n in names)
+        identities=[p for p in registry["characters"] if relevant(p)]
+        related=[p for p in world["assets"]+world["plots"] if relevant(p)]
+        items.append({"requirement":req,"candidate_status":result["status"],"hits":result["hits"],
+                      "recent_canon_candidates":recent_candidates(entries,req["query"]) if role=="Response" else [],
+                      "r30_identity_candidates":identities,"r28_world_candidates":related})
     return {"head":head,"items":items,"closed_episodes":len(entries),"status":"REVIEW_REQUIRED","canon_changed":False,
             "note":"Candidate availability is not recall or proof; reconcile current state and reviewed claim."}
 
@@ -153,7 +166,7 @@ def main(argv=None):
     p=argparse.ArgumentParser()
     p.add_argument("--archive-root",type=Path,required=True)
     sub=p.add_subparsers(dest="action",required=True)
-    a=sub.add_parser("prepare");a.add_argument("--db",type=Path,required=True);a.add_argument("--requirements",type=Path,required=True);a.add_argument("--candidate-limit",type=int,default=20)
+    a=sub.add_parser("prepare");a.add_argument("--db",type=Path,required=True);a.add_argument("--requirements",type=Path,required=True);a.add_argument("--candidate-limit",type=int,default=80)
     b=sub.add_parser("review");b.add_argument("--requirements",type=Path,required=True);b.add_argument("--reviewed",type=Path,required=True)
     c=sub.add_parser("arcs");c.add_argument("--packet",type=Path,required=True)
     args=p.parse_args(argv)
