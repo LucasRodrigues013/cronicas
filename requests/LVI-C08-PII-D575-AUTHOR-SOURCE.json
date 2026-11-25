@@ -1,0 +1,436 @@
+{
+  "schema": "worldroot-r33-request-v1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "delivery_id": "LVI-C08-PII-D575-AUTHOR-SOURCE",
+  "head": {
+    "book": "Livro VI",
+    "book_closed": false,
+    "chapter": 8,
+    "closure_sha256": "6b544c6a646e6e808d95d8fc62645311a8cf1c18a0167d936792c566c73c1e62",
+    "day": 574,
+    "drive_head_status": "NAO_SINCRONIZADO",
+    "engine_mode": "GITHUB_PRIVADO_SEM_OIDC",
+    "episode_id": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+    "hour": "22h38",
+    "location": "Torre do Criador (Lucas/Miren); Três Arcos, AERÚN, Serevan, Renshar, Vale dos Ofícios Baixos",
+    "part": "I",
+    "previous_head_sha256": "98121ec7515deafda78345640a4ca7b85b42f3e2cdedd554b57ae95ac6c94de9",
+    "schema": "worldroot-git-canon-v1",
+    "sequence": 45,
+    "source_sha256": "d3a0c885eae310f11a5414c78817aeea0e758348610664a4062154aafe6da0b6"
+  },
+  "choice_sha256": "0e58c5cbe1c3da9471b98f1f4affe095f56abf485d6ef7f56a6e936af8226c63",
+  "requirements": [
+    {
+      "id": "couple",
+      "domain": "relationship",
+      "critical": true,
+      "query": "Lucas e Miren são casados; partilham café, humor e cumplicidade."
+    },
+    {
+      "id": "roles",
+      "domain": "identity",
+      "critical": true,
+      "query": "Edrik Sovan representa Halvern, Sella é mensageira, Ordan sobrevivente; Miren, Lysa, Kael, Astra e Varo estiveram na sessão."
+    },
+    {
+      "id": "aid",
+      "domain": "event",
+      "critical": true,
+      "query": "Entendimento preliminar de auxílio aceito por Edrik, não aliança militar nem ferroviária."
+    },
+    {
+      "id": "cargo",
+      "domain": "inventory",
+      "critical": true,
+      "query": "Maelis separou instrumentos, cobertores, iluminação e abrigos; Naira prepara voo sujeito a avaliação."
+    },
+    {
+      "id": "air",
+      "domain": "inventory",
+      "critical": true,
+      "query": "ARGOS ASCENDENTE tem ponte, centro de missão, decks e compartimentos modulares; carga e pessoas respeitam distribuição real."
+    },
+    {
+      "id": "aircrew",
+      "domain": "identity",
+      "critical": true,
+      "query": "Naira comandou o ARGOS ASCENDENTE em ensaio tripulado; Rumo acompanhou sistemas por escolha."
+    },
+    {
+      "id": "airlimit",
+      "domain": "world",
+      "critical": true,
+      "query": "100 ocupantes demonstrados em configuração local, oito tripulantes e 92 passageiros; outras configurações exigem avaliação."
+    },
+    {
+      "id": "letter",
+      "domain": "promise",
+      "critical": true,
+      "query": "Carta de Ordan segue separada por rota autorizada ainda incerta; marceneiro aceita visita à Forja, não emprego obrigatório."
+    },
+    {
+      "id": "rail",
+      "domain": "world",
+      "critical": true,
+      "query": "3,2 km de guia e duas estações civis, duas composições, pomar e passagem preservados; 33,2 km é estrada, travessia sensível fora da primeira etapa."
+    },
+    {
+      "id": "genese",
+      "domain": "power",
+      "critical": true,
+      "query": "GÊNESE materializou guia, estações e composições; não reduzir poder."
+    },
+    {
+      "id": "speed",
+      "domain": "knowledge",
+      "critical": true,
+      "query": "Naira registrou 80 km/h em ensaio sem passageiros e demonstração reduzida; Edrik não tem mandato ferroviário."
+    },
+    {
+      "id": "craft",
+      "domain": "identity",
+      "critical": true,
+      "query": "Ordan sabe marcenaria; Brannik e Dorek oferecem contato com Forja."
+    },
+    {
+      "id": "aidagency",
+      "domain": "promise",
+      "critical": true,
+      "query": "Recursos serão distribuídos pelos responsáveis de Halvern; correspondência não garante entrega à irmã."
+    },
+    {
+      "id": "empire",
+      "domain": "event",
+      "critical": true,
+      "query": "Velkar rompeu altar coercivo; Merovan preso, propostas e revisão de detidos em andamento, ambição imperial preservada."
+    },
+    {
+      "id": "imperialroles",
+      "domain": "location",
+      "critical": true,
+      "query": "Velkar, Orelia, Avelna, Lethira, Rhazek e Serakh estavam em Renshar."
+    },
+    {
+      "id": "naval",
+      "domain": "event",
+      "critical": true,
+      "query": "Varkhess, Serina e Morvek buscam desaparecidos, libertaram criatura e recuperaram navio; não conhecem todas as águas."
+    },
+    {
+      "id": "serevan",
+      "domain": "location",
+      "critical": true,
+      "query": "Formação retornou a Serevan; Morvek recebeu feridos, Serina entregou escama aos estudiosos."
+    },
+    {
+      "id": "mountain",
+      "domain": "event",
+      "critical": true,
+      "query": "Bressa obteve invólucro sem seis marcas, emprestado por Yrda; recibos da irmã no arquivo, carta ao AERÚN em trânsito."
+    },
+    {
+      "id": "nox",
+      "domain": "relationship",
+      "critical": true,
+      "query": "Lucas e Miren terminam dia na Torre; NÓX transmite mensagem de Brannik; Talis não localizada."
+    },
+    {
+      "id": "adult",
+      "domain": "author_rule",
+      "critical": true,
+      "query": "Romance adulto com iniciativa, humor e intimidade sugerida, não gráfica; traços históricos não inventados.",
+      "role": "AuthorPolicy"
+    },
+    {
+      "id": "wonder",
+      "domain": "author_rule",
+      "critical": true,
+      "query": "Maravilhamento, vida independente, GÊNESE plena, cinco partes e escolhas equilibradas.",
+      "role": "AuthorPolicy"
+    }
+  ],
+  "reviewed": {
+    "couple": {
+      "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "line_start": 24,
+      "line_end": 84,
+      "claim": "Lucas e Miren são casados; partilham café, humor e cumplicidade.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "10f0a2453bce3deff06208d2895b32a99693ead0a21b996c26a6a9d2eb7fff9e"
+    },
+    "roles": {
+      "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "line_start": 94,
+      "line_end": 150,
+      "claim": "Edrik Sovan representa Halvern, Sella é mensageira, Ordan sobrevivente; Miren, Lysa, Kael, Astra e Varo estiveram na sessão.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "f1688084009a6133858cacd9e6f6c204d55724c6ed67886dff1bbe6510a13637"
+    },
+    "aid": {
+      "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "line_start": 132,
+      "line_end": 164,
+      "claim": "Entendimento preliminar de auxílio aceito por Edrik, não aliança militar nem ferroviária.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "1f28de07246efa03a45c840e34aede5e41264f8ceb4fb478171f38ca814ff982"
+    },
+    "cargo": {
+      "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "line_start": 768,
+      "line_end": 786,
+      "claim": "Maelis separou instrumentos, cobertores, iluminação e abrigos; Naira prepara voo sujeito a avaliação.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "18e1bb444021c8811f81cf27ec47eafd11bf43b9a68b430074d5cefc41c3d683"
+    },
+    "air": {
+      "source": "LVI-C04-PIV-D557-AUTHOR-SOURCE",
+      "line_start": 333,
+      "line_end": 429,
+      "claim": "ARGOS ASCENDENTE tem ponte, centro de missão, decks e compartimentos modulares; carga e pessoas respeitam distribuição real.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "55ff491337720e132f2cde02b654d08ddd93772d17f7da42c7dd5314d08b46c7"
+    },
+    "aircrew": {
+      "source": "LVI-C04-PIV-D557-AUTHOR-SOURCE",
+      "line_start": 783,
+      "line_end": 829,
+      "claim": "Naira comandou o ARGOS ASCENDENTE em ensaio tripulado; Rumo acompanhou sistemas por escolha.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "c074517b22368d997fc851ec7c46a9073da7639b26342198f1e004c576117cba"
+    },
+    "airlimit": {
+      "source": "LVI-C04-PIV-D557-AUTHOR-SOURCE",
+      "line_start": 861,
+      "line_end": 895,
+      "claim": "100 ocupantes demonstrados em configuração local, oito tripulantes e 92 passageiros; outras configurações exigem avaliação.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "204d4daecb5f67abef07ca9e6c4eeb24cff91a632d7c6b64a81804d3a46a4a75"
+    },
+    "letter": {
+      "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "line_start": 788,
+      "line_end": 828,
+      "claim": "Carta de Ordan segue separada por rota autorizada ainda incerta; marceneiro aceita visita à Forja, não emprego obrigatório.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "6c2a6989bf3f44bde7a1926992bfc40997290c78cd0133f369d2a995768d995e"
+    },
+    "rail": {
+      "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "line_start": 192,
+      "line_end": 246,
+      "claim": "3,2 km de guia e duas estações civis, duas composições, pomar e passagem preservados; 33,2 km é estrada, travessia sensível fora da primeira etapa.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "43bdafe73fcadeddcb40e663b457a36dd0d66c1ce68cb7435340772b1075ad3b"
+    },
+    "genese": {
+      "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "line_start": 214,
+      "line_end": 246,
+      "claim": "GÊNESE materializou guia, estações e composições; não reduzir poder.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "480da1794ea901ba98897833351b5899b3002b5da4b58bac2962dda20ffed0ee"
+    },
+    "speed": {
+      "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "line_start": 250,
+      "line_end": 306,
+      "claim": "Naira registrou 80 km/h em ensaio sem passageiros e demonstração reduzida; Edrik não tem mandato ferroviário.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "1077c80d1eb313aa53f878b41ab04626df229ebd135fae947f9ddf42228f58f1"
+    },
+    "craft": {
+      "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "line_start": 800,
+      "line_end": 830,
+      "claim": "Ordan sabe marcenaria; Brannik e Dorek oferecem contato com Forja.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "b0661e44355571159001bfe2798201252e9dae371af036dbece6e16738f1b4f4"
+    },
+    "aidagency": {
+      "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "line_start": 772,
+      "line_end": 796,
+      "claim": "Recursos serão distribuídos pelos responsáveis de Halvern; correspondência não garante entrega à irmã.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "43339e3f1cd4bca52fde57812cb4a45770744df83b238aa9b0be339870cc6647"
+    },
+    "empire": {
+      "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "line_start": 528,
+      "line_end": 678,
+      "claim": "Velkar rompeu altar coercivo; Merovan preso, propostas e revisão de detidos em andamento, ambição imperial preservada.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "aa4c6044461603ea9b670284307b4238bb0d81c20c95fd2f3ac50c64d441c1e6"
+    },
+    "imperialroles": {
+      "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "line_start": 528,
+      "line_end": 582,
+      "claim": "Velkar, Orelia, Avelna, Lethira, Rhazek e Serakh estavam em Renshar.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "8182bcf7557db9dba730a4730e7044483bbcdb8776a7be0fa908bce8bc76c457"
+    },
+    "naval": {
+      "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "line_start": 378,
+      "line_end": 520,
+      "claim": "Varkhess, Serina e Morvek buscam desaparecidos, libertaram criatura e recuperaram navio; não conhecem todas as águas.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "396839fa744136932207a7ead862921fdeb7cac5662b88ca0dcc3857c263a9ad"
+    },
+    "serevan": {
+      "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "line_start": 840,
+      "line_end": 860,
+      "claim": "Formação retornou a Serevan; Morvek recebeu feridos, Serina entregou escama aos estudiosos.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "92912e8fefbc43eb5fc8bfa9c177cb2b51a5bcb3f9e7206b26ef55933e839ad0"
+    },
+    "mountain": {
+      "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "line_start": 686,
+      "line_end": 756,
+      "claim": "Bressa obteve invólucro sem seis marcas, emprestado por Yrda; recibos da irmã no arquivo, carta ao AERÚN em trânsito.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "1e4d2c4950cd8f3806cd98d3e244b03f88865f876c89feb0835ad15c47b32862"
+    },
+    "nox": {
+      "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "line_start": 874,
+      "line_end": 964,
+      "claim": "Lucas e Miren terminam dia na Torre; NÓX transmite mensagem de Brannik; Talis não localizada.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "1f66df5b110e85b7222b4f49ab757ef52f423cfd685e475c672ace1ae1e28e0b"
+    },
+    "adult": {
+      "source": "AUTHOR_POLICY",
+      "line_start": 2165,
+      "line_end": 2187,
+      "claim": "Romance adulto com iniciativa, humor e intimidade sugerida, não gráfica; traços históricos não inventados.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "6ff53900c3ec31ff0258800aa8d231a4799b3af1d6629e553f25d3e83a20788d"
+    },
+    "wonder": {
+      "source": "AUTHOR_POLICY",
+      "line_start": 2223,
+      "line_end": 2243,
+      "claim": "Maravilhamento, vida independente, GÊNESE plena, cinco partes e escolhas equilibradas.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "9b70be446439cc55163d7ab87e4ea89df1243c9482223770d6ba6edf74ba3737"
+    }
+  },
+  "domain_review": {
+    "identity": {
+      "applicable": true,
+      "reason": "Requisito material de continuidade: roles, aircrew, craft"
+    },
+    "relationship": {
+      "applicable": true,
+      "reason": "Requisito material de continuidade: couple, nox"
+    },
+    "location": {
+      "applicable": true,
+      "reason": "Requisito material de continuidade: imperialroles, serevan"
+    },
+    "knowledge": {
+      "applicable": true,
+      "reason": "Requisito material de continuidade: speed"
+    },
+    "inventory": {
+      "applicable": true,
+      "reason": "Requisito material de continuidade: cargo, air"
+    },
+    "power": {
+      "applicable": true,
+      "reason": "Requisito material de continuidade: genese"
+    },
+    "world": {
+      "applicable": true,
+      "reason": "Requisito material de continuidade: airlimit, rail"
+    },
+    "event": {
+      "applicable": true,
+      "reason": "Requisito material de continuidade: aid, empire, naval, mountain"
+    },
+    "promise": {
+      "applicable": true,
+      "reason": "Requisito material de continuidade: letter, aidagency"
+    },
+    "author_rule": {
+      "applicable": true,
+      "reason": "Requisito material de continuidade: adult, wonder"
+    }
+  },
+  "scene_plan": [
+    {
+      "scene": 1,
+      "purpose": "Manhã do casal, desejo e humor",
+      "ids": [
+        "couple",
+        "adult"
+      ]
+    },
+    {
+      "scene": 2,
+      "purpose": "Operação autônoma no Campo Aurora, partida do ARGOS",
+      "ids": [
+        "roles",
+        "aid",
+        "cargo",
+        "air",
+        "aircrew",
+        "airlimit",
+        "letter"
+      ]
+    },
+    {
+      "scene": 3,
+      "purpose": "Forja e expansão civil por GÊNESE, Ordan em visita",
+      "ids": [
+        "rail",
+        "genese",
+        "speed",
+        "craft"
+      ]
+    },
+    {
+      "scene": 4,
+      "purpose": "Entrega material em Halvern e encaminhamento civil autorizado, sem Lucas",
+      "ids": [
+        "aidagency"
+      ]
+    },
+    {
+      "scene": 5,
+      "purpose": "Renshar: consequência do altar e autonomia imperial",
+      "ids": [
+        "empire",
+        "imperialroles"
+      ]
+    },
+    {
+      "scene": 6,
+      "purpose": "Serevan: investigação e reconhecimento naval",
+      "ids": [
+        "naval",
+        "serevan"
+      ]
+    },
+    {
+      "scene": 7,
+      "purpose": "Montanhas: preservação de amostra e investigação de recibos",
+      "ids": [
+        "mountain"
+      ]
+    },
+    {
+      "scene": 8,
+      "purpose": "Três Arcos: retorno ao cotidiano, consequências e Miren",
+      "ids": [
+        "nox",
+        "wonder"
+      ]
+    }
+  ]
+}
