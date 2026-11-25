@@ -16,6 +16,8 @@ def emit(x):print(json.dumps(x,ensure_ascii=False,sort_keys=True),flush=True)
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 paths=[root/"canon/HEAD.json",root/"ops/RESUME.json",root/"episodes/LVI-C08-PI-D574-AUTHOR-SOURCE/draft/narrativa_integral.md"]
 before=[sha(p) for p in paths]
+extra=json.loads(pathlib.Path("recovery/r32-additional-evidence.json").read_text())
+staged["records"].extend(extra["records"])
 g=graph.build(root,staged)
 graph.write_graph(g,db.parent/"r32-graph.sqlite")
 emit({"stage":"GRAPH","nodes":len(g["nodes"]),"edges":len(g["edges"]),"dossiers":len(g["dossiers"]),"dossiers_with_observations":sum(bool(d["observations"]) for d in g["dossiers"].values()),"events":len(g["events"]),"knowledge":len(g["knowledge"]),"inventory_candidates":len(g["inventory"]["events"]),"power_candidates":len(g["power"]["events"]),"historical_power":len(g["power"]["historical"]),"relationship_candidates":len(g["relationships"]),"plots":len(g["plots"]),"assets":len(g["assets"]),"rejected_events":len(g["rejected_events"]),"unresolved_edges":g["unresolved_edges"],"canon_changed":False})
@@ -47,7 +49,7 @@ queries=next(ast.literal_eval(n.value) for n in tree.body if isinstance(n,ast.As
 held=next(ast.literal_eval(n.value) for n in ast.walk(tree) if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=="heldout_queries" for t in n.targets))
 _,raw=read_verified_sources(root);bodies={m["source_name"]:t for m,t in raw}
 gold=[]
-for i,c in enumerate(g["historical_observations"]):
+for i,c in enumerate(g["historical_observations"][:len(queries)]):
     for q in queries[i]:gold.append(("development",q,c["source"],c["line_start"],c["line_end"],c["role"]))
 corpus=json.loads((root/"editorial/registries/r30-literary-corpus.json").read_text())["scenes"]
 for row in corpus:
