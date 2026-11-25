@@ -1,0 +1,986 @@
+{
+  "schema": "worldroot-r28-editorial-seed-v1",
+  "scope": "INITIAL_CURATED_NOT_EXHAUSTIVE",
+  "canonical_boundary": "D573 C07 PV sequence 44; D574 draft excluded",
+  "note": "19 grouped defense projects plus deferred 20th; operational scope and tests are limited. Source anchors bind editorial annotations, not canon promotion. Later textual references require review.",
+  "assets": [
+    {
+      "id": "egide-dupla",
+      "name": "Égide Dupla",
+      "aliases": [
+        "Égide Interna",
+        "Égide do Horizonte",
+        "Égide Dupla"
+      ],
+      "state": "OPERATIONAL",
+      "group": "defense",
+      "capabilities": "Proteção urbano-rural invisível multicamada; física, energia e intrusão; passagem ambiental/civil preservada.",
+      "tests": "D554: projétil, pulso elemental e ilusão; D555: transição sem exposição; escudo emergencial em reserva.",
+      "source": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "A **Égide Interna** estava operacional."
+      },
+      "last_use": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "A **Égide do Horizonte** nasceu."
+      }
+    },
+    {
+      "id": "muralha-viva",
+      "name": "Muralha Viva",
+      "aliases": [],
+      "state": "OPERATIONAL",
+      "group": "defense",
+      "capabilities": "Reforço arcano-metálico regenerativo.",
+      "tests": "Operação narrada; limite máximo não medido.",
+      "source": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "A **Muralha Viva** acompanhou as estruturas existentes, reforçando-as com matéria arcano-metálica capaz de se recompor após danos. As portas da cidade permaneceram portas. Suas passagens não desapareceram quando o metal se moveu."
+      }
+    },
+    {
+      "id": "tridente-runico",
+      "name": "Tridente Rúnico",
+      "aliases": [],
+      "state": "TESTED",
+      "group": "defense",
+      "capabilities": "Torres terrestres com controle protegido e autorização humana; variante orbital não instalada.",
+      "tests": "Alvo inerte interceptado em ensaio; variante orbital apenas arquitetura avançada.",
+      "source": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "As coroas do **Tridente Rúnico** ergueram-se nas posições aprovadas para defesa perimetral."
+      },
+      "last_use": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "O alvo desapareceu dentro de uma implosão localizada, sem espalhar destroços sobre a região."
+      }
+    },
+    {
+      "id": "sol-feerico",
+      "name": "Sol Feérico",
+      "aliases": [],
+      "state": "OPERATIONAL",
+      "group": "defense",
+      "capabilities": "Defesa antiaérea de ameaças identificadas.",
+      "tests": "Sem inventar alcance ou taxa universal.",
+      "source": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "Nas plataformas mais altas, baterias **Sol Feérico** abriram pétalas de metal luminoso para interceptar ameaças aéreas confirmadas."
+      }
+    },
+    {
+      "id": "anel-cronos",
+      "name": "Anel de Cronos",
+      "aliases": [],
+      "state": "TESTED",
+      "group": "defense",
+      "capabilities": "Desaceleração e gravidade localizadas.",
+      "tests": "Engenho simulado imobilizado.",
+      "source": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "O **Anel de Cronos** criava pequenas zonas de alteração gravitacional e desaceleração para deter veículos simulados, com passagem de resgate livre."
+      },
+      "last_use": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "A máquina desacelerou até imobilizar-se, sem atingir os observadores."
+      }
+    },
+    {
+      "id": "raizes-pedra",
+      "name": "Raízes de Pedra",
+      "aliases": [],
+      "state": "OPERATIONAL",
+      "group": "defense",
+      "capabilities": "Detecção sísmica, contenção e reforço de fundações e túneis conhecidos.",
+      "tests": "Sem cobertura geográfica subterrânea ilimitada.",
+      "source": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "Sob as ruas, **Raízes de Pedra** formaram uma rede de detecção e contenção sísmica. Túneis e fundações receberam reforços onde a geografia era conhecida, sem declarar cavernas inexistentes em regiões que ninguém explorara."
+      }
+    },
+    {
+      "id": "ancoras-limiar",
+      "name": "Âncoras do Limiar",
+      "aliases": [],
+      "state": "OPERATIONAL",
+      "group": "defense",
+      "capabilities": "Proteção contra acessos dimensionais hostis, distinta da rede ancestral.",
+      "tests": "Não usa Coração de AERÚN.",
+      "source": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "Nas bordas do território, **Âncoras do Limiar** passaram a proteger acessos dimensionais contra invasões hostis. Seus mecanismos não reativaram a antiga rede dos Arquitetos; eram criações próprias e independentes de Lucas."
+      }
+    },
+    {
+      "id": "coracoes-reserva",
+      "name": "Corações de Reserva",
+      "aliases": [],
+      "state": "TESTED",
+      "group": "defense",
+      "capabilities": "Energia distribuída e isolamento local de falhas.",
+      "tests": "Isolamento físico demonstrado.",
+      "source": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "Nos centros de energia, **Corações de Reserva** distribuíram alimentação arcana entre setores, com isolamento físico demonstrado para falhas locais. Lucas não dependia deles para manter GÊNESE plena; a rede existia para que as pessoas não precisassem chamá-lo para acender cada luz."
+      }
+    },
+    {
+      "id": "oraculo-aurora",
+      "name": "Oráculo de Aurora",
+      "aliases": [],
+      "state": "TESTED",
+      "group": "defense",
+      "capabilities": "Probabilidades e alertas contestáveis, não previsão infalível.",
+      "tests": "Aviso de trajetória em ensaio.",
+      "source": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "O **Oráculo de Aurora** acompanhava padrões, probabilidades e sinais observados. Não lia todos os futuros; produzia hipóteses que os comandantes podiam contestar."
+      },
+      "last_use": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "O Oráculo avisou a trajetória provável com base nos sensores."
+      }
+    },
+    {
+      "id": "malha-dissipacao",
+      "name": "Malha de Dissipação",
+      "aliases": [],
+      "state": "TESTED",
+      "group": "defense",
+      "capabilities": "Contramágica seletiva, preservando canais legítimos.",
+      "tests": "Conjuração controlada interrompida; canal médico preservado.",
+      "source": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "Abaixo delas, a **Malha de Dissipação** foi conectada aos sensores de magia, destinada a interromper feitiços hostis identificados sem bloquear cura, estudo e práticas legítimas."
+      },
+      "last_use": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "O segundo ensaio testou a interrupção de um foco hostil desativado e isolado, sem projetar dano contra pessoas. A Malha desfez a conjuração de laboratório antes de sua conclusão."
+      }
+    },
+    {
+      "id": "veu-ruptura",
+      "name": "Véu de Ruptura",
+      "aliases": [],
+      "state": "TESTED",
+      "group": "defense",
+      "capabilities": "Contramedidas de dispositivos hostis, sem punição mental.",
+      "tests": "Foco hostil isolado desorganizado.",
+      "source": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "O **Véu de Ruptura** interrompia dispositivos hostis mediante contramedidas arcanas, não causando sofrimento mental a um mago apenas por tentar perceber a cidade."
+      },
+      "last_use": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "Em outro setor, o Véu de Ruptura desorganizou o foco hostil desativado de uma peça de demonstração, isolada por Sael."
+      }
+    },
+    {
+      "id": "veu-mil-horizontes",
+      "name": "Véu de Mil Horizontes",
+      "aliases": [],
+      "state": "OPERATIONAL",
+      "group": "defense",
+      "capabilities": "Camuflagem de recursos estratégicos sem desorientar rotas civis.",
+      "tests": "Sem declarar invisibilidade perfeita.",
+      "source": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "Ao redor das zonas militares, o **Véu de Mil Horizontes** permitiu que estruturas estratégicas se camuflassem sem enganar viajantes que precisassem encontrar os portões públicos."
+      }
+    },
+    {
+      "id": "canto-vigilia",
+      "name": "Canto de Vigília",
+      "aliases": [],
+      "state": "CREATED",
+      "group": "defense",
+      "capabilities": "Ressonância protetiva direcionada, sem ondas indiscriminadas.",
+      "tests": "Configuração narrada; demonstração específica não quantificada.",
+      "source": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "O **Canto de Vigília** permanecia numa configuração protetiva dirigida, sem ondas de pânico lançadas sobre bairros inteiros."
+      }
+    },
+    {
+      "id": "sentinelas-ebano",
+      "name": "Sentinelas de Ébano",
+      "aliases": [],
+      "state": "TESTED",
+      "group": "defense",
+      "capabilities": "Autômatos não conscientes de defesa, engenharia e resgate.",
+      "tests": "Transporte assistido de paciente simulado e remoção de escombros.",
+      "source": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "As primeiras **Sentinelas de Ébano** estavam em plataformas de resposta."
+      },
+      "last_use": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "A Sentinela ergueu a plataforma com precisão."
+      }
+    },
+    {
+      "id": "vaga-lumes-horizonte",
+      "name": "Vaga-lumes do Horizonte",
+      "aliases": [],
+      "state": "OPERATIONAL",
+      "group": "defense",
+      "capabilities": "Microfamiliares não conscientes de observação e proteção localizada.",
+      "tests": "Sem vigilância privada indiscriminada.",
+      "source": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "Pequenos pontos de luz saíram dos compartimentos de observação da Base e se espalharam pelos corredores autorizados. Eram os **Vaga-lumes do Horizonte**, microfamiliares não conscientes, capazes de observar alterações do ambiente, informar riscos e, quando necessário, compor barreiras de proteção."
+      }
+    },
+    {
+      "id": "portoes-verdade",
+      "name": "Portões da Verdade",
+      "aliases": [],
+      "state": "OPERATIONAL",
+      "group": "defense",
+      "capabilities": "Triagem de anomalias com revisão humana, sem julgamento moral por aura.",
+      "tests": "Passagem médica preservada.",
+      "source": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "Os **Portões da Verdade** receberam detecção de anomalias e revisão por pessoas responsáveis. Ninguém era condenado pela aura ou impedido de receber socorro porque o sistema apresentara uma dúvida."
+      }
+    },
+    {
+      "id": "circulos-socorro",
+      "name": "Círculos de Socorro",
+      "aliases": [],
+      "state": "OPERATIONAL",
+      "group": "defense",
+      "capabilities": "Transporte arcano em pontos conhecidos e protegidos, independente da rede ancestral.",
+      "tests": "Objeto, plataforma, voluntários e transferência clínica autorizada.",
+      "source": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "Dois círculos arcanos surgiram em recintos preparados, um na ala médica da Base e outro na rede de atendimento da cidade. A conexão foi estabelecida entre destinos conhecidos, protegidos e desocupados."
+      },
+      "last_use": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "**REVA —** A transferência ocorreu bem. Agora continuaremos o tratamento."
+      }
+    },
+    {
+      "id": "ceu-respirante",
+      "name": "Céu Respirante",
+      "aliases": [],
+      "state": "OPERATIONAL",
+      "group": "defense",
+      "capabilities": "Filtragem de contaminantes hostis identificados.",
+      "tests": "Sem alteração geral do clima.",
+      "source": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "O **Céu Respirante** começou a filtrar poluentes hostis identificados, sem eliminar o ar natural, os esporos inofensivos e os ciclos da região."
+      }
+    },
+    {
+      "id": "casa-abraca",
+      "name": "Casa que Abraça",
+      "aliases": [
+        "Casa que Abraça",
+        "abrigo"
+      ],
+      "state": "TESTED",
+      "group": "defense",
+      "capabilities": "Abrigo modular ventilado, água, iluminação, saída; nenhuma estase compulsória.",
+      "tests": "Demonstração e aprovação de Maelis; não inventar quantidade de bunkers.",
+      "source": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "Ao lado, uma equipe demonstrou a **Casa que Abraça**: uma estrutura cívica modular cujas paredes protegidas podiam criar um abrigo ventilado e acessível, com água, iluminação e passagem de saída. Não havia câmaras de estase obrigatórias; o uso médico avançado permanecia sob decisão clínica e consentimento."
+      },
+      "last_use": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "**MAELIS —** Esta eu aprovo para resposta civil. Não quero um lugar onde as pessoas fiquem presas ao medo de quem as protege."
+      }
+    },
+    {
+      "id": "ultimo-horizonte",
+      "name": "Último Horizonte",
+      "aliases": [
+        "Protocolo Último Horizonte"
+      ],
+      "state": "DEFERRED",
+      "group": "defense",
+      "capabilities": "Arsenal extremo não autorizado, não instalado.",
+      "tests": "Decisão explícita: não aprovado, não criado.",
+      "source": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "**LUCAS —** Temos a base. Temos os dois escudos. Temos torres, autômatos, sensores, transporte médico, abrigos e a capacidade de responder a ameaças sem deixar toda a cidade exposta. O Último Horizonte fica reservado para uma decisão futura. Não está aprovado. Não está instalado."
+      }
+    },
+    {
+      "id": "base-aurora",
+      "name": "Base Aurora",
+      "aliases": [
+        "Campo Aurora"
+      ],
+      "state": "OPERATIONAL",
+      "group": "legacy",
+      "capabilities": "Expansão do aeroporto existente, comando, socorro, hangares, Legião e logística.",
+      "tests": "D555: 24 km em reta, 33,2 km por estrada; não novo aeroporto.",
+      "source": {
+        "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+        "anchor": "A construção estava de pé."
+      }
+    },
+    {
+      "id": "torre-criador",
+      "name": "Torre do Criador",
+      "aliases": [],
+      "state": "OPERATIONAL",
+      "group": "legacy",
+      "capabilities": "Residência particular; 145 m, 22 pavimentos, três subsolos, automação não consciente.",
+      "tests": "96 autômatos privados; distinta da governança municipal.",
+      "source": {
+        "episode": "LVI-C01-PV-D541-AUTHOR-SOURCE",
+        "anchor": "**Conquistas narradas:** terreno particular adquirido e registrado legitimamente; Torre do Criador V3 materializada no Horizonte Aberto com 145 m, 22 pavimentos, três subsolos e 31.000 m² internos; Aerodoca do Impossível externa de 70 m e deck de 550 m², sem pousos; garagem com modelos da Terra recriados, Sala da Terra, Galeria do Caminho Compartilhado e oficinas; Rede Doméstica não consciente, conexão voluntária e reversível da armadura viva NÓX; 96 autômatos privados operacionais, sem alterar a Malha municipal; Lucas passa a ter sua residência pessoal no distrito."
+      }
+    },
+    {
+      "id": "horizonte-aberto",
+      "name": "Horizonte Aberto",
+      "aliases": [],
+      "state": "CREATED",
+      "group": "legacy",
+      "capabilities": "Distrito residencial criado; capacidade planejada 100 mil, não população.",
+      "tests": "Ocupação e equipes não automáticas.",
+      "source": {
+        "episode": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+        "anchor": "<text color=\"secondary\" size=\"xs\">Continuidade: Dia 539, 21h08. A Grande Casa dos Três Poderes e o Horizonte Aberto já existem; suas instituições e serviços ainda estão em implantação.</text>"
+      }
+    },
+    {
+      "id": "malha-aurora",
+      "name": "Malha Aurora",
+      "aliases": [
+        "Vértice"
+      ],
+      "state": "EVOLVED",
+      "group": "legacy",
+      "capabilities": "Coortes municipais 3600 anteriores e 1500 adicionais; não incluir Rumo/NÓX.",
+      "tests": "Contagem criada não prova utilização integral.",
+      "source": {
+        "episode": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+        "anchor": "**Fatos narrados:** 24 composições arcanas e 96 veículos coletivos criados; primeiros trajetos públicos supervisionados e implantação por etapas; expansão municipal da Costura de Dados com 6 núcleos, 24 repetidores e 60 quiosques; 1.500 novos autômatos técnicos funcionais, distintos dos 3.600 existentes e de Rumo; operação setorial de energia, água e manutenção; início do funcionamento das novas estruturas cívicas sem concentração de poder."
+      }
+    },
+    {
+      "id": "argos",
+      "name": "ARGOS ASCENDENTE",
+      "aliases": [
+        "ARGOS"
+      ],
+      "state": "OPERATIONAL",
+      "group": "legacy",
+      "capabilities": "86×72×19 m; 100 ocupantes demonstrados, Naira comanda.",
+      "tests": "D557: voo com 100; pico anterior não é cruzeiro.",
+      "source": {
+        "episode": "LVI-C04-PIV-D557-AUTHOR-SOURCE",
+        "anchor": "*Checkpoint: Dia 557, 21h42, Hangar do Primeiro Horizonte, Base Aurora. ARGOS original de 31,6 m por 27,4 m foi expandido mediante GÊNESE plena para ARGOS ASCENDENTE com 86 m de comprimento, 72 m de envergadura, 19 m de altura, dois decks e capacidade total demonstrada de 100 ocupantes (8 tripulantes e 92 passageiros); não é aeronave substituta sem legado. Hangar monumental de 190 × 170 m e 50 m de vão livre criado dentro do aeroporto Campo Aurora/complexo Base Aurora existente, com docas e teto retrátil. Testes reais de estrutura, sustentação, redundância, voo com tripulação e voo inaugural com cem ocupantes concluídos em corredor autorizado; Naira certificou prontidão para primeira missão dentro do envelope demonstrado, não velocidade de cruzeiro de 1.462 km/h nem autonomia transcontinental ilimitada. ASA LIVRE permanece sem voo livre; Rumo e NÓX independentes. Serakh recebeu relatório de Ithran através da cadeia legítima de mensageiros; Velkar, após entrega local e avaliação com Orelia, autorizou até 260 cascos como alocação estratégica condicional; ordens ainda viajam aos comandos, Varkhess não recebeu a ordem em cena e não é subordinado de Serakh. Lucas/Três Arcos não sabem da mobilização. Neris e Bressa ainda hospedadas após a chegada D556, Tharvek/Elyrien ausentes, primeira conferência não realizada. Maelis/Varo seguem no cuidado e vida; hospital ferido. Égides interna/externa ativas, Coração AERÚN selado, Último Horizonte não aprovado.*"
+      },
+      "last_use": {
+        "episode": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+        "anchor": "O ARGOS pousou trazendo três pessoas que naquela manhã jamais imaginaram estar tão longe de casa."
+      }
+    },
+    {
+      "id": "asa-livre",
+      "name": "ASA LIVRE",
+      "aliases": [],
+      "state": "PROTOTYPE",
+      "group": "legacy",
+      "capabilities": "Protótipo próprio cocriado com Rumo; voo livre não demonstrado.",
+      "tests": "Suspensão em berço de retenção D547; confirmar nova evolução.",
+      "source": {
+        "episode": "LVI-C02-PV-D546-D548-AUTHOR-SOURCE",
+        "anchor": "<text size=\"xs\" color=\"secondary\">O último HEAD validado é Livro VI, C02 Parte IV, Dia 545, sequência 18. ASA LIVRE — PROTÓTIPO 01 já existe fisicamente no P04 da Torre, mas só executou ensaios em suporte. Rumo é seu cocriador livre e ainda não aceitou a função de piloto de voo. ARGOS permanece no Campo Aurora após o voo 005; Aerodoca da Torre ainda sem pouso. Vesra Keth é conhecida pelo leitor, mas não identificada por Lucas ou pelos Sombras. A água do Vau do Cedro foi objeto de um pedido real de Iria no Dia 542, anterior à Torre; seu estado atual não foi verificado. A ponte anã e a árvore ancestral élfica foram perdidas no Dia 545; Tharvek, Elyrien e Neris preparam pedidos que ainda não chegaram a Três Arcos.</text>"
+      }
+    },
+    {
+      "id": "sete-caminhos-cedro",
+      "name": "Sete Caminhos do Cedro",
+      "aliases": [
+        "Jardineira do Cedro"
+      ],
+      "state": "OPERATIONAL",
+      "group": "legacy",
+      "capabilities": "Infraestrutura de proteção contra cheia, água e passagem de peixes.",
+      "tests": "D548 materializado com participação local.",
+      "source": {
+        "episode": "LVI-C02-PV-D546-D548-AUTHOR-SOURCE",
+        "anchor": "**SERA —** Sete Caminhos do Cedro."
+      }
+    },
+    {
+      "id": "ponte-retorno",
+      "name": "Ponte dos que Voltam",
+      "aliases": [],
+      "state": "OPERATIONAL",
+      "group": "legacy",
+      "capabilities": "Ponte criada com consentimento e engenharia anã.",
+      "tests": "D568 materialização; autoria do mecanismo antigo desconhecida.",
+      "source": {
+        "episode": "LVI-C06-PV-D568-AUTHOR-SOURCE",
+        "anchor": "**MENINA —** Ponte dos que Voltam."
+      },
+      "last_use": {
+        "episode": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+        "anchor": "Do lado de fora, a Ponte dos que Voltam recebia seus viajantes."
+      }
+    },
+    {
+      "id": "ferro-horizonte",
+      "name": "Horizonte de Ferro Arcano",
+      "aliases": [],
+      "state": "TESTED",
+      "group": "legacy",
+      "capabilities": "Guia técnica e primeira viagem tripulada D573; ferrovia civil D574 ainda rascunho.",
+      "tests": "900–1.200 km/h metas, não medição; D574 3,2 km não promover.",
+      "source": {
+        "episode": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+        "anchor": "<grid-item><caption>Horizonte de Ferro Arcano</caption>**Primeira viagem técnica tripulada concluída; terminal e guia ampliados; unidade de serviço física**</grid-item>"
+      },
+      "last_use": {
+        "episode": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+        "anchor": "Naquela manhã, pessoas haviam viajado dentro dele."
+      }
+    }
+  ],
+  "entities": [
+    {
+      "id": "lucas",
+      "name": "Lucas",
+      "aliases": [
+        "Lucas Rodrigues",
+        "Criador"
+      ],
+      "kind": "character"
+    },
+    {
+      "id": "miren",
+      "name": "Miren",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "varo",
+      "name": "Varo",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "kael",
+      "name": "Kael",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "lysa",
+      "name": "Lysa",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "nox",
+      "name": "NÓX",
+      "aliases": [
+        "NOX"
+      ],
+      "kind": "character"
+    },
+    {
+      "id": "sistema",
+      "name": "Sistema",
+      "aliases": [
+        "Sistema azul"
+      ],
+      "kind": "character"
+    },
+    {
+      "id": "rumo",
+      "name": "Rumo",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "kairon",
+      "name": "Káiron",
+      "aliases": [
+        "KAIRON"
+      ],
+      "kind": "character"
+    },
+    {
+      "id": "caedren",
+      "name": "Caedren",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "astra",
+      "name": "Astra",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "brannik",
+      "name": "Brannik",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "naira",
+      "name": "Naira",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "sael",
+      "name": "Sael",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "dorek",
+      "name": "Dorek",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "maelis",
+      "name": "Maelis",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "reva",
+      "name": "Reva",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "ysol",
+      "name": "Ysol",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "seron",
+      "name": "Seron",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "luren",
+      "name": "Luren",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "edric",
+      "name": "Edric",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "nixa",
+      "name": "Nixa",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "tavren",
+      "name": "Tavren",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "rhem",
+      "name": "Rhem",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "cirn",
+      "name": "Círan",
+      "aliases": [
+        "Ciran"
+      ],
+      "kind": "character"
+    },
+    {
+      "id": "thalor-althea",
+      "name": "Althea",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "thaeron",
+      "name": "Thaeron",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "iriel",
+      "name": "Iriel",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "talis",
+      "name": "Talis",
+      "aliases": [
+        "Talis Elvenar"
+      ],
+      "kind": "character"
+    },
+    {
+      "id": "tharvek",
+      "name": "Tharvek",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "bressa",
+      "name": "Bressa",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "elyrien",
+      "name": "Elyrien",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "niraven",
+      "name": "Níraven",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "virandor",
+      "name": "Virandor",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "elen",
+      "name": "Elen",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "neris",
+      "name": "Neris",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "velkar",
+      "name": "Velkar",
+      "aliases": [
+        "Velkar Draen"
+      ],
+      "kind": "character"
+    },
+    {
+      "id": "serakh",
+      "name": "Serakh",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "varkhess",
+      "name": "Varkhess",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "orelia",
+      "name": "Orelia",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "rhazek",
+      "name": "Rhazek",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "lethira",
+      "name": "Lethira",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "serina",
+      "name": "Serina",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "morvek",
+      "name": "Morvek",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "avelna",
+      "name": "Avelna",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "ithran",
+      "name": "Ithran",
+      "aliases": [
+        "Ithran Veyk"
+      ],
+      "kind": "character"
+    },
+    {
+      "id": "vesra",
+      "name": "Vesra",
+      "aliases": [
+        "Vesra Keth"
+      ],
+      "kind": "character"
+    },
+    {
+      "id": "nelo",
+      "name": "Nelo",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "maia",
+      "name": "Maia",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "ira",
+      "name": "Iria",
+      "aliases": [
+        "Íria"
+      ],
+      "kind": "character"
+    },
+    {
+      "id": "adela",
+      "name": "Adela",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "edran",
+      "name": "Edran Vael",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "enna",
+      "name": "Enna",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "veskan",
+      "name": "Veskan",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "lyra",
+      "name": "Lira Selen",
+      "aliases": [],
+      "kind": "character"
+    },
+    {
+      "id": "aerun-instituto",
+      "name": "Instituto AERÚN",
+      "aliases": [
+        "AERUN",
+        "AERÚN"
+      ],
+      "kind": "institution"
+    },
+    {
+      "id": "aerun-guardiao",
+      "name": "AERÚN Guardião das Marés",
+      "aliases": [
+        "AERÚN",
+        "AERUN"
+      ],
+      "kind": "character"
+    }
+  ],
+  "plots": [
+    {
+      "id": "halvern",
+      "name": "Primeira cooperação com Halvern",
+      "status": "OPEN",
+      "progress": "Representação chegou e sessão preparatória acordada; D574 acordo assinado em rascunho.",
+      "next_reward": "Entrega real, testemunhos e decisão dos postos; não impor aliança.",
+      "aliases": [
+        "Halvern",
+        "Ordan"
+      ],
+      "source": {
+        "episode": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+        "anchor": "<grid-item><caption>Conferência</caption>**Halvern presente no AERÚN; sessão preparatória acordada para D574**</grid-item>"
+      }
+    },
+    {
+      "id": "velkar",
+      "name": "Campanha das Nove Coroas",
+      "status": "OPEN",
+      "progress": "Renshar sob domínio, estrada liberada; Lucas recebeu nome e testemunhos.",
+      "next_reward": "Consequências políticas e militares reais, escolhas de povos, sem anular GÊNESE.",
+      "aliases": [
+        "Velkar",
+        "Renshar",
+        "Kheran"
+      ],
+      "source": {
+        "episode": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+        "anchor": "<text size=\"sm\">ARGOS saiu 11h36, pousou em Halvern 12h49 com autorização e inspeção visual; trouxe representante civil, mensageira e sobrevivente a Campo Aurora 18h11. Lucas construiu ponte de resgate, macas e abrigo; autoridade local recebeu a ponte. Thalor e Vale Anão decidiram participar, respostas ainda não recebidas por Três Arcos. Velkar liberou estrada sob controle imperial ao separar vínculos do aqueduto com Serakh e Lethira; acordo provisório aceito por um representante. Bressa encontrou livro de entregas, sem autoria provada. AERÚN recebe Halvern, sem plenária continental ou tratado assinado. GÊNESE plena, Torre lar, Base Aurora comando, Último Horizonte não criado, Talis desaparecida. Parte V encerra o capítulo literário, mas aguarda escolha seguinte para promoção canônica.</text>"
+      }
+    },
+    {
+      "id": "seis-marcas",
+      "name": "Seis Marcas / mecanismos anões",
+      "status": "OPEN",
+      "progress": "Discrepância de selo em remessas; autoria desconhecida.",
+      "next_reward": "Recompensa parcial: proveniência, fabricante ou método verificável; não ligar a Velkar sem prova.",
+      "aliases": [
+        "seis marcas",
+        "Bressa",
+        "Tharvek"
+      ],
+      "source": {
+        "episode": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+        "anchor": "**BRESSA —** Encontramos uma divergência nos registros. Hoje localizamos um livro de entregas preservado por uma família de antigos fornecedores. O selo discrepante aparece em mais de uma remessa, mas o livro não identifica quem acrescentou as peças às estruturas."
+      }
+    },
+    {
+      "id": "talis",
+      "name": "Busca de Talis",
+      "status": "OPEN",
+      "progress": "Assinatura em inventário, autenticação e localização pendentes.",
+      "next_reward": "Recuperar evidência documental, testemunha ou local real sem reencontro forçado.",
+      "aliases": [
+        "Talis"
+      ],
+      "source": {
+        "episode": "LVI-C05-PIII-D561-AUTHOR-SOURCE",
+        "anchor": "— O lançamento indica que uma pessoa identificada como Talis Elvenar solicitou consulta a um registro de intervalos e assinou o recebimento de uma cópia. Não diz que permaneceu aqui depois, nem para onde foi."
+      }
+    },
+    {
+      "id": "nira",
+      "name": "Níraven e os guardiões",
+      "status": "OPEN",
+      "progress": "Níraven é vida nova, Virandor retornou ao norte; origem não demonstrada.",
+      "next_reward": "Cultura e ecologia; guardiões autônomos.",
+      "aliases": [
+        "Níraven",
+        "Virandor"
+      ],
+      "source": {
+        "episode": "LVI-C06-PIII-D566-AUTHOR-SOURCE",
+        "anchor": "**AERÚN —** Virandor..."
+      }
+    },
+    {
+      "id": "ithran",
+      "name": "Consequências da Primeira Ferida",
+      "status": "OPEN",
+      "progress": "Vitória contra Ithran, feridas e recuperação persistem.",
+      "next_reward": "Justiça, vidas da Legião e dos civis; não reiniciar ferida.",
+      "aliases": [
+        "Ithran",
+        "Seron",
+        "Nelo"
+      ],
+      "source": {
+        "episode": "LVI-C03-PV-D553-AUTHOR-SOURCE",
+        "anchor": "<text size=\"xs\" color=\"secondary\">O Selo Oco está imobilizado no Passo dos Moinhos. O corredor humanitário e a cidade seguem protegidos. Ithran, Brum, Selen e Ilvar recuaram para o exterior; o nome do subgeneral não foi comprovado aos defensores. Os 300 fundadores continuam distribuídos em defesa, resgate e acompanhamento. Hospital e bairros feridos permanecem em atividade, sem cura emocional instantânea.</text>"
+      }
+    },
+    {
+      "id": "ferro",
+      "name": "Horizonte de Ferro Arcano",
+      "status": "OPEN",
+      "progress": "Primeiro percurso técnico; serviço público ainda não consolidado.",
+      "next_reward": "Viver a ferrovia, comércio e histórias de usuários sem saltar certificação.",
+      "aliases": [
+        "Horizonte de Ferro Arcano"
+      ],
+      "source": {
+        "episode": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+        "anchor": "<grid-item><caption>Horizonte de Ferro Arcano</caption>**Primeira viagem técnica tripulada concluída; terminal e guia ampliados; unidade de serviço física**</grid-item>"
+      }
+    },
+    {
+      "id": "conferencia",
+      "name": "Conferência Continental",
+      "status": "OPEN",
+      "progress": "Decisões soberanas ainda não recebidas; Halvern chegou.",
+      "next_reward": "Visitas e divergências, não plenária automática.",
+      "aliases": [
+        "Conferência",
+        "Halvern"
+      ],
+      "source": {
+        "episode": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+        "anchor": "<text size=\"sm\">ARGOS saiu 11h36, pousou em Halvern 12h49 com autorização e inspeção visual; trouxe representante civil, mensageira e sobrevivente a Campo Aurora 18h11. Lucas construiu ponte de resgate, macas e abrigo; autoridade local recebeu a ponte. Thalor e Vale Anão decidiram participar, respostas ainda não recebidas por Três Arcos. Velkar liberou estrada sob controle imperial ao separar vínculos do aqueduto com Serakh e Lethira; acordo provisório aceito por um representante. Bressa encontrou livro de entregas, sem autoria provada. AERÚN recebe Halvern, sem plenária continental ou tratado assinado. GÊNESE plena, Torre lar, Base Aurora comando, Último Horizonte não criado, Talis desaparecida. Parte V encerra o capítulo literário, mas aguarda escolha seguinte para promoção canônica.</text>"
+      }
+    },
+    {
+      "id": "asa",
+      "name": "ASA LIVRE e Rumo",
+      "status": "OPEN",
+      "progress": "Protótipo existente e interesse de Rumo; sem voo livre confirmado.",
+      "next_reward": "Retomar vontade própria, teste e aventura quando coerente.",
+      "aliases": [
+        "ASA LIVRE"
+      ],
+      "source": {
+        "episode": "LVI-C02-PV-D546-D548-AUTHOR-SOURCE",
+        "anchor": "<text size=\"xs\" color=\"secondary\">O último HEAD validado é Livro VI, C02 Parte IV, Dia 545, sequência 18. ASA LIVRE — PROTÓTIPO 01 já existe fisicamente no P04 da Torre, mas só executou ensaios em suporte. Rumo é seu cocriador livre e ainda não aceitou a função de piloto de voo. ARGOS permanece no Campo Aurora após o voo 005; Aerodoca da Torre ainda sem pouso. Vesra Keth é conhecida pelo leitor, mas não identificada por Lucas ou pelos Sombras. A água do Vau do Cedro foi objeto de um pedido real de Iria no Dia 542, anterior à Torre; seu estado atual não foi verificado. A ponte anã e a árvore ancestral élfica foram perdidas no Dia 545; Tharvek, Elyrien e Neris preparam pedidos que ainda não chegaram a Três Arcos.</text>"
+      }
+    },
+    {
+      "id": "mar",
+      "name": "Campanha marítima imperial",
+      "status": "OPEN",
+      "progress": "Alocação condicional, sem concentração automática.",
+      "next_reward": "Resgate, ilhas, criaturas, soberania marítima; D574 cena candidata.",
+      "aliases": [
+        "Varkhess",
+        "Serevan",
+        "260 cascos"
+      ],
+      "source": {
+        "episode": "LVI-C04-PIV-D557-AUTHOR-SOURCE",
+        "anchor": "*Checkpoint: Dia 557, 21h42, Hangar do Primeiro Horizonte, Base Aurora. ARGOS original de 31,6 m por 27,4 m foi expandido mediante GÊNESE plena para ARGOS ASCENDENTE com 86 m de comprimento, 72 m de envergadura, 19 m de altura, dois decks e capacidade total demonstrada de 100 ocupantes (8 tripulantes e 92 passageiros); não é aeronave substituta sem legado. Hangar monumental de 190 × 170 m e 50 m de vão livre criado dentro do aeroporto Campo Aurora/complexo Base Aurora existente, com docas e teto retrátil. Testes reais de estrutura, sustentação, redundância, voo com tripulação e voo inaugural com cem ocupantes concluídos em corredor autorizado; Naira certificou prontidão para primeira missão dentro do envelope demonstrado, não velocidade de cruzeiro de 1.462 km/h nem autonomia transcontinental ilimitada. ASA LIVRE permanece sem voo livre; Rumo e NÓX independentes. Serakh recebeu relatório de Ithran através da cadeia legítima de mensageiros; Velkar, após entrega local e avaliação com Orelia, autorizou até 260 cascos como alocação estratégica condicional; ordens ainda viajam aos comandos, Varkhess não recebeu a ordem em cena e não é subordinado de Serakh. Lucas/Três Arcos não sabem da mobilização. Neris e Bressa ainda hospedadas após a chegada D556, Tharvek/Elyrien ausentes, primeira conferência não realizada. Maelis/Varo seguem no cuidado e vida; hospital ferido. Égides interna/externa ativas, Coração AERÚN selado, Último Horizonte não aprovado.*"
+      }
+    }
+  ],
+  "unverified_seed_items": [
+    {
+      "id": "coracao-aerun",
+      "term": "Coração de Convergência selado",
+      "day": "d568"
+    },
+    {
+      "plot": "coracao",
+      "day": "d568",
+      "term": "Coração de Convergência selado"
+    }
+  ]
+}
