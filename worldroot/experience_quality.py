@@ -1,0 +1,29 @@
+"""R32 reader-facing choice design and qualitative comparison (advisory only)."""
+from __future__ import annotations
+import json,re
+from .memory_continuity import arc_review
+from .literary_experience import measure,choice_prompt
+from .presentation_guard import presentation_preflight
+CRITERIA=("continuity","causality","voice","appearance","sensory","relationships","emotion","epic","world_experience","visual_design","choice_parity")
+def safe(s):
+    if not isinstance(s,str) or not s.strip() or any(c in s for c in ("<",">","{","}","\n")):raise ValueError("Unsafe or empty display string")
+    return s.strip()
+def render_choices(packet,episode_id):
+    if arc_review(packet)["errors"]:raise ValueError("Invalid four-route packet")
+    if not re.fullmatch(r"[A-Za-z0-9_-]{3,128}",episode_id):raise ValueError("Invalid episode ID")
+    # Exact same visual hierarchy, size and button variant for all four.
+    rows=['{@body const [acaoLivre,setAcaoLivre]=DIL.useState("");}','## AS CINCO PORTAS','<box gap={3}>']
+    for o in packet["options"]:
+        n=o["number"]
+        title=safe(o["title"]);promise=safe(o["promise"]);reward=safe(o["reward"]);risk=safe(o["risk"])
+        prompt=json.dumps(choice_prompt(episode_id,n),ensure_ascii=False)
+        rows.extend(['  <box border radius="lg" padding={3} gap={2}>',f'    **{n} — {title}**','',f'    {promise}','',f'    **Recompensa possível:** {reward}','',f'    **Risco:** {risk}','',f'    <button block color="secondary" variant="outline" onClick={{() => GenUI.issueNewTurn({prompt})}}>Escolher opção {n}</button>','  </box>'])
+    free=json.dumps(choice_prompt(episode_id,5),ensure_ascii=False)
+    rows.extend(['  <box gap={2}>','    **5 — AÇÃO LIVRE**','    <textarea value={acaoLivre} onChange={setAcaoLivre} rows={3} placeholder="Descreva suas decisões..."/>',f'    <button color="secondary" variant="outline" disabled={{!acaoLivre.trim()}} onClick={{() => GenUI.issueNewTurn({free}+" Ação livre: "+acaoLivre.trim())}}>Confirmar ação livre</button>','  </box>','</box>'])
+    return "\n".join(rows)
+def compare_versions(a,b):
+    if not a.strip() or not b.strip():raise ValueError("Complete drafts required")
+    return {"criteria":list(CRITERIA),"A":{"signals":measure(a),"structure":presentation_preflight(a,min_scenes=1,min_named_turns=0)},"B":{"signals":measure(b),"structure":presentation_preflight(b,min_scenes=1,min_named_turns=0)},"human_preference":None,"literary_grade":None,"status":"BLIND_REVIEW_REQUIRED","canon_changed":False}
+def review_scores(scores):
+    if set(scores)!=set(CRITERIA) or any(type(v) not in (int,float) or not 1<=v<=10 for v in scores.values()):raise ValueError("Eleven reviewed scores required")
+    return {"mean":sum(scores.values())/len(scores),"scores":scores,"status":"REVIEWER_RATINGS_NOT_AUTOMATED"}
