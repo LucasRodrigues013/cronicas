@@ -94,6 +94,38 @@ with tempfile.TemporaryDirectory() as d:
                 if not rank:misses.append(f"{i+1:02d}-{j+1}")
         row={"strategy":strategy,"n":len(ranks),"hit_at_1":sum(r==1 for r in ranks),"hit_at_5":sum(0<r<=5 for r in ranks),"hit_at_10":sum(0<r<=10 for r in ranks),"hit_at_20":sum(r>0 for r in ranks),"mrr":round(sum(1/r for r in ranks if r)/len(ranks),4),"median_ms":round(statistics.median(durations)*1000,2),"p95_ms":round(sorted(durations)[94]*1000,2),"miss_ids":misses,"split_hit20":{k:[sum(r>0 for r in v),len(v)] for k,v in by_split.items()}}
         results.append(row);emit({"stage":"RETRIEVAL",**row})
+    # A separate historical reference set, not used to tune the preceding 100 probes.
+    # These are held out from this benchmark, not a blind author evaluation.
+    heldout_queries={
+        "origin":["nascimento Legião","primeiro dia trezentos","origem Criador acampamento"],
+        "festival":["Festival dos Trezentos","aniversário duzentos dias irmãos","celebração Legião"],
+        "kairon":["Kairon jardinagem","guerreiro planta ramo","mãos enormes tecido"],
+        "aeldric":["Aeldric primeira impressão","patriarca Vareth aparência","Criador esperava algo diferente"],
+        "aerun":["dragão observou Lucas","AERÚN companhia pessoas","guardião mar respeito poder"],
+        "observatorio":["Miren convite Observatório","encontro romântico carta vestido","Crista do Vento Claro convite"],
+        "romance":["Miren Lucas reclamação","arqueóloga departamento","Lucas brincadeira manhã"]
+    }
+    corpus=json.loads((root/"editorial/registries/r30-literary-corpus.json").read_text())["scenes"]
+    heldout=[]
+    for item in corpus:
+        if item["id"] not in heldout_queries:continue
+        proof=item["source"]
+        body=source_map[proof["source_name"]]
+        anchor=proof["anchor"]
+        assert body.count(anchor)==1
+        pos=body.index(anchor)
+        lo=body[:pos].count("\n")+1
+        hi_=lo+anchor.count("\n")
+        heldout.append((item["id"],proof["source_name"],lo,hi_,proof.get("role","Response")))
+    assert len(heldout)==7
+    for strategy in ("legacy","hybrid","contextual"):
+        ranks=[]
+        for key,name,lo,hi_,role in heldout:
+            for q in heldout_queries[key]:
+                result=r31.retrieve(db,q,role=role,limit=20,strategy=strategy)
+                rank=next((n for n,h in enumerate(result["hits"],1) if h["source"]==name and min(h["line_end"],hi_)-max(h["line_start"],lo)+1>=3),0)
+                ranks.append(rank)
+        emit({"stage":"HELDOUT_REFERENCE_PROBES","strategy":strategy,"n":len(ranks),"hit_at_1":sum(r==1 for r in ranks),"hit_at_5":sum(0<r<=5 for r in ranks),"hit_at_20":sum(r>0 for r in ranks),"mrr":round(sum(1/r for r in ranks if r)/len(ranks),4),"limitation":"Distinct reference spans; not independent human evaluation."})
     # Negative cases and stable repeated queries, not a claim of semantic abstention.
     for q in ("zzzzworldrootnonexistent123","qzxmissingentity987","nonexistentartifactzzx"):
         assert r31.retrieve(db,q)["status"]=="NOT_RECOVERED"
