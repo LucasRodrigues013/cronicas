@@ -25,6 +25,15 @@ jobs:
       - name: Full regression suite
         run: python -m unittest discover -s tests
       - name: Full historical index and retrieval evaluation
+        env:
+          R31_DB_PATH: ${{ runner.temp }}/r31-private/r31.sqlite
         run: PYTHONPATH=. python -u audit/run_r31.py
+      - name: Retain private verified projection
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: r31-private-sqlite
+          path: ${{ runner.temp }}/r31-private/r31.sqlite
+          retention-days: 7
+          if-no-files-found: error
       - name: Preserve R30 behavior on original corpus
         run: PYTHONPATH=. python -u audit/run_r30.py
