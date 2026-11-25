@@ -57,6 +57,10 @@ for row in corpus:
     for q in held[row["id"]]:gold.append(("additional",q,s["source_name"],span["line_start"],span["line_end"],s.get("role","Response")))
 start=time.monotonic();idx=DenseIndex(db)
 emit({"stage":"DENSE_BUILD","backend":"lsa","vectors":len(idx.rows),"dimension":idx.vectors.shape[1],"seconds":round(time.monotonic()-start,3)})
+idx.save_lsa(db.parent/"r32-lsa")
+reloaded=DenseIndex.load_lsa(db,db.parent/"r32-lsa")
+assert [h["id"] for h in idx.search("Miren",limit=20)]==[h["id"] for h in reloaded.search("Miren",limit=20)]
+emit({"stage":"DENSE_READBACK","same_top20":True})
 for strategy in ("dense","combined"):
     ranks={"development":[],"additional":[]};start=time.monotonic()
     for split,q,source,lo,hi,role in gold:
