@@ -1,7 +1,7 @@
 {
   "schema": "worldroot-editorial-policy-v1",
   "project": "CRONICAS_DE_UM_NOVO_MUNDO",
-  "version": 17,
+  "version": 19,
   "reviewed_at": "2026-11-25",
   "approved_scope": "AUTHOR_APPROVED_EDITORIAL_DYNAMICS_NOT_NARRATED_CANON",
   "source_of_truth": "main/worldroot/editorial_policy.json",
@@ -211,6 +211,22 @@
       "transcript_line": null,
       "quote": "façamos a proxima evolução, utilize e faça isso utilizando os dados pesquisados, analisados e verificados.",
       "reference": "story-archive/author-approvals/LVI-R30-LITERARY-EXPERIENCE-2026-11-25.json"
+    },
+    {
+      "id": "S30",
+      "kind": "AUTHOR_APPROVAL",
+      "at": "2026-11-25",
+      "transcript_line": null,
+      "quote": "Precisamos chegar em no mínimo 95% de recuperação de memória por criação pra não perder detalhes. Não apagar diretrizes antigas, nem oque já melhoramos, precisamos evoluir e não substituir. Queremos viver a história sem perder ela, e ver como conectar tudo isso ao futuro, é uma linha principal de narração e as secundárias. As 4 escolhas precisam ser igualmente notáveis e não somente a 4 boa, todas com caminhos incríveis e recompensas e riscos em casa iguais, mas uma seguiria a missão principal e as outras secundárias.",
+      "reference": "USER_MESSAGE_2026-11-25_R31_CONTINUITY"
+    },
+    {
+      "id": "S31",
+      "kind": "AUTHOR_APPROVAL",
+      "at": "2026-11-25",
+      "transcript_line": null,
+      "quote": "E também o que causa nos outros personagens, né? Não é só nela. Então é todos os outros juntos também",
+      "reference": "docs/r33-authorial-lived-anime-experience-20261125.md"
     }
   ],
   "rules": [
@@ -2052,6 +2068,190 @@
       "core": true,
       "evidence": [
         "S29"
+      ],
+      "active": true
+    },
+    {
+      "id": "P106",
+      "title": "Memória por criação",
+      "directive": "Definir requisitos de memória por cena/episódio antes de narrar; recuperar evidência histórica e estado atual, verificar pelo menos 95% dos requisitos e todos os críticos. Falta relevante exige recuperação ou revisão; não confundir referência candidata com fato ou qualidade literária.",
+      "tags": [
+        "R31",
+        "LIVRO_VI",
+        "CONTINUIDADE",
+        "QUALIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S30"
+      ],
+      "active": true
+    },
+    {
+      "id": "P107",
+      "title": "Linha principal e linhas secundárias vivas",
+      "directive": "Uma linha principal e arcos secundários autônomos com promessa, progresso, recompensa, consequência e vínculo futuro. Avançar frentes não escolhidas apenas por causalidade e tempo orgânico; não apagar, congelar ou forçar reencontro. Não transformar plano em cânone.",
+      "tags": [
+        "R31",
+        "LIVRO_VI",
+        "CONTINUIDADE",
+        "QUALIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S30"
+      ],
+      "active": true
+    },
+    {
+      "id": "P108",
+      "title": "Quatro caminhos igualmente notáveis",
+      "directive": "Complementa P87: quatro opções substanciais, uma principal e três secundárias, cada uma com riscos e recompensas comparavelmente significativos, consequências próprias e identidade singular. Nenhum número possui privilégio, a quarta não soma as outras. Preservar quinta ação livre e escolhas antigas.",
+      "tags": [
+        "R31",
+        "LIVRO_VI",
+        "CONTINUIDADE",
+        "QUALIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S30"
+      ],
+      "active": true
+    },
+    {
+      "id": "P109",
+      "title": "Experiência e continuidade sem substituição",
+      "directive": "Preservar todas as diretrizes vigentes, corpus e identidade das Crônicas; recuperar detalhes antes de escrever e aplicar beleza, cultura, romance, mistério e grandeza em prosa vivida. Bastidores técnicos não aparecem na ficção.",
+      "tags": [
+        "R31",
+        "LIVRO_VI",
+        "CONTINUIDADE",
+        "QUALIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S30"
+      ],
+      "active": true
+    },
+    {
+      "id": "P110",
+      "title": "Contraste e vida vivida",
+      "directive": "Entre grandes acontecimentos, mostrar refeições, festas, jogos, música, viagens, moda, amizades, descanso e pequenas dificuldades. Cenas podem existir pelo prazer de viver; sem quotas, interrupção artificial de urgências ou obrigação de toda cena render uma pista.",
+      "tags": [
+        "R33",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S31"
+      ],
+      "active": true
+    },
+    {
+      "id": "P111",
+      "title": "Presença física concreta e comédia adulta",
+      "directive": "Descrever adultos de modo direto e variado quando a aparência importar: seios grandes, quadris largos, nádegas volumosas, músculos, feições, roupas e postura, conforme fonte ou apresentação nova legítima. Permitir atração, flerte, duplo sentido, reações exageradas e constrangimento cômico sem atos sexuais gráficos, coerção, sexualização de menores ou redução da pessoa ao corpo. Não inventar traços históricos.",
+      "tags": [
+        "R33",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE",
+        "ROMANCE",
+        "MIREN"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S31"
+      ],
+      "active": true
+    },
+    {
+      "id": "P112",
+      "title": "Paixão e relações autônomas",
+      "directive": "Lucas e Miren têm desejo, atração, humor, ciúme circunstancial, iniciativa recíproca, intimidade sugerida e surpresas; preservar fidelidade, agência e confiança já construída, sem repetir Serís. Outros adultos também têm vida afetiva, voz e reações independentes; não presumir pares, sentimentos ou relações sem causa.",
+      "tags": [
+        "R33",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE",
+        "ROMANCE",
+        "MIREN"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S31"
+      ],
+      "active": true
+    },
+    {
+      "id": "P113",
+      "title": "Recuperação ativa do elenco histórico",
+      "directive": "Antes de reintroduzir Círan, Kael, Lysa, Varo e demais figuras, recuperar identidade, aliases, última presença, localização, relações, agenda e conhecimento comprovados. Resolver Varma/Elias e outros nomes ambíguos por fontes, não equiparar pessoas por palpite. Usar perspectivas paralelas, encontros e mensagens causais sem teleporte ou aparições obrigatórias.",
+      "tags": [
+        "R33",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S31"
+      ],
+      "active": true
+    },
+    {
+      "id": "P114",
+      "title": "Maravilhamento além da crise",
+      "directive": "Revisitar criaturas, lugares, invenções, tradições e culturas confirmados e descobrir novidades por lazer, curiosidade e convívio. Preservar GÊNESE plena e vitórias, sem adversários artificiais, nerf ou necessidade de Lucas solucionar tudo.",
+      "tags": [
+        "R33",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S31"
+      ],
+      "active": true
+    },
+    {
+      "id": "P115",
+      "title": "Continuidade afetiva e ritmo",
+      "directive": "Humor, flerte, amizade, beleza, vulnerabilidade e descoberta podem gerar vínculos e callbacks sem metas numéricas. Alternar leveza e drama, preservar cinco partes e clímax conquistado, quatro caminhos de valor comparável e ação livre. Não modificar escolhas antigas, rascunhos ou HEAD; bastidores fora da prosa.",
+      "tags": [
+        "R33",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S31"
       ],
       "active": true
     }

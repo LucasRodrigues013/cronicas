@@ -16,7 +16,8 @@ class EditorialMemoryTests(unittest.TestCase):
 
     def test_policy_is_versioned_scoped_and_evidence_linked(self):
         v = validate_policy(self.policy)
-        self.assertEqual(v["version"], 17)
+        self.assertEqual(v["version"], 19)
+        self.assertTrue({f"P{i:02d}" for i in range(1,116)}.issubset({r["id"] for r in self.policy["rules"]}))
         self.assertTrue({f"P{i}" for i in range(99,106)}.issubset({r["id"] for r in self.policy["rules"]}))
         self.assertTrue({f"P{i}" for i in range(89,99)}.issubset({r["id"] for r in self.policy["rules"]}))
         self.assertTrue({f"P{i}" for i in range(82,89)}.issubset({r["id"] for r in self.policy["rules"]}))
@@ -76,8 +77,16 @@ class EditorialMemoryTests(unittest.TestCase):
         result = compact_brief(self.policy, scene_tags=("MIREN", "ROMANCE"), max_chars=1750)
         self.assertLessEqual(len(result["text"]), 1900)
         self.assertIn("P06", result["selected_rule_ids"])
-        self.assertEqual(result["policy_version"], 17)
+        self.assertEqual(result["policy_version"], 19)
         self.assertNotIn("SOURCE_COUNT", result["text"])
+
+    def test_r33_lived_experience_live_brief(self):
+        head = dict(book="Livro VI", chapter=7, part="V", day=573, episode_id="fixture", sequence=44)
+        result = compact_brief(self.policy, head=head, max_chars=1750)
+        self.assertTrue({f"P{i}" for i in range(110,116)}.issubset(result["selected_rule_ids"]))
+        self.assertIn("beleza adulta concreta", result["text"])
+        self.assertIn("elenco histórico autônomo", result["text"])
+        self.assertFalse(result["canon_changed"])
 
     def test_images_are_structurally_rejected(self):
         for body in ("Uma cena.\n![lucas](abc.png)", "Texto <img src='foto'>", "data:image/png;base64,a"):

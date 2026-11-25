@@ -262,6 +262,37 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
         book_end_approval_verified=book_end_approval_verified, head=head,
         previous_counts=previous_canonical_scene_counts(root, meta),
         archive_root=root)
+    # R32 opt-in on staged branch. Preserve immutable old v3 drafts and their choices.
+    r33_declared = meta.get("worldroot_revision")==33 or "r33_review" in payload
+    r32_declared = meta.get("worldroot_revision")==32 or "r32_review" in payload or r33_declared
+    if r32_declared:
+        from .r32_release import release_review
+        input_sha=sha(_bytes(payload.get("r32_review")))
+        if existing_manifest.is_file():
+            receipt=load(root/"episodes"/episode_id/"review"/"memory_r32.json")
+            if receipt.get("review_input_sha256")!=input_sha or receipt.get("source_sha256")!=sha(payload["full_text"].encode("utf-8")):
+                raise ConflictError("Archived R32 memory review differs from repeated inbox")
+        else:
+            try:
+                receipt=release_review(root,head,payload)
+            except (ValueError,KeyError,TypeError) as exc:
+                raise GateError("R32 memory and arc review blocked: "+str(exc)[:250]) from None
+            receipt["review_input_sha256"]=input_sha
+            receipt["source_sha256"]=sha(payload["full_text"].encode("utf-8"))
+        review_files["memory_r32.json"]=_bytes(receipt)
+    if r33_declared:
+        from .r33_runtime import verify_submission
+        input_sha=sha(_bytes(payload.get("r33_review")))
+        if existing_manifest.is_file():
+            rr=load(root/"episodes"/episode_id/"review"/"preparation_r33.json")
+            if rr.get("review_input_sha256")!=input_sha or rr.get("source_sha256")!=sha(payload["full_text"].encode("utf-8")):
+                raise ConflictError("Archived R33 preparation differs")
+        else:
+            try:rr=verify_submission(root,head,payload)
+            except (ValueError,KeyError,TypeError,OSError) as exc:raise GateError("R33 preparation blocked: "+str(exc)[:250]) from None
+            rr["review_input_sha256"]=input_sha
+            rr["source_sha256"]=sha(payload["full_text"].encode("utf-8"))
+        review_files["preparation_r33.json"]=_bytes(rr)
     if existing_manifest.is_file():
         for name, body in files.items():
             existing = root / "episodes" / episode_id / "draft" / name
