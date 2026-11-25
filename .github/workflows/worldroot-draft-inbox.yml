@@ -27,7 +27,7 @@ jobs:
       - name: Checkout audited engine at immutable version, with C02 PV scoped exception
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: 047abd4692782cf3f026258fe686af9b4517d82c
+          ref: 14ad99fffe78cfe51aea99d8ec20f57c49dc4b06
           path: engine
           persist-credentials: false
       - name: Python 3.12
@@ -52,7 +52,7 @@ jobs:
       - name: Checkout trusted main code (pinned)
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: 047abd4692782cf3f026258fe686af9b4517d82c
+          ref: 14ad99fffe78cfe51aea99d8ec20f57c49dc4b06
           path: engine
           persist-credentials: false
       - name: Checkout private story archive data only
@@ -99,6 +99,10 @@ jobs:
                       raise GateError("R27 persisted source missing: "+"; ".join(check["errors"])[:240])
                   print("R27_LAST_COMPLETE_ARCHIVE_VERIFIED:", check["story_sha256"])
           else:
+              import json
+              submitted=json.loads(pending[0].read_text(encoding="utf-8"))
+              if submitted.get("metadata",{}).get("worldroot_revision") != 33:
+                  raise GateError("R33 declaration required for new inbox; archived episodes remain unchanged")
               receipt=archive_inbox(root,pending[0])
               if pending[0].stem.startswith("LVI-"):
                   import sys

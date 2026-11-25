@@ -2,10 +2,10 @@
   "schema": "worldroot-engine-publishing-policy-v1",
   "project": "CRONICAS_DE_UM_NOVO_MUNDO",
   "status": "APROVADO_PELO_AUTOR",
-  "approved_at": "2026-11-23",
-  "policy_revision": "R27",
+  "approved_at": "2026-11-25",
+  "policy_revision": "R33",
   "engine_code_branch": "main",
-  "engine_code_commit": "5785e8fd5873eae1cd75965428355d4e852e6568",
+  "engine_code_commit": "14ad99fffe78cfe51aea99d8ec20f57c49dc4b06",
   "canonical_head_rule": "canon/HEAD.json is a historical narrative checkpoint, never a dumping ground for engine policy; update only after real next author choice and canonical validation.",
   "source_of_truth": "story-archive/episodes/<ID>/draft/narrativa_integral.md plus immutable manifest + inbox + review + reader_receipt",
   "before_new_episode": {
@@ -13,7 +13,8 @@
     "required": true,
     "latest_unclosed_must_match_previous": true,
     "user_choice_for_previous": "If author chose, save real choice, wait for canon workflow and read back HEAD before writing next new inbox.",
-    "on_failure": "BLOCK_NARRATIVE_COMPLETION_AND_REPORT_NO_SAVE; never use editorial summary as substituted prose"
+    "on_failure": "BLOCK_NARRATIVE_COMPLETION_AND_REPORT_NO_SAVE; never use editorial summary as substituted prose",
+    "r33_preparation": "After actual closure, persist exact author-bound request in requests/<delivery_id>.json; workflow worldroot-r33-prepare publishes immutable preparations/<delivery_id>.json; re-fetch and verify before drafting. Never generate a choice for a request."
   },
   "for_each_episode": {
     "must_save_complete_text": true,
@@ -26,13 +27,16 @@
       "reviewed_character_knowledge",
       "character_preflight",
       "r25_reader_review",
-      "r26_fantasy_review"
+      "r26_fantasy_review",
+      "r32_review",
+      "r33_review"
     ],
     "longform_segments": "Use 2-6 production/EPISODE/segments/*.md for long text; immutable exact bytes; merely staging is not archived episode.",
     "write_endpoint": "Authenticated ChatGPT GitHub connector create_file/update_file for story-archive/inbox/EPISODE.json (not automagical).",
     "verified_archival": "Successful worldroot-draft-inbox action, archived narrative readback, SHA256 manifest, reader receipt, R14/R26 release gate and R27 handoff.",
     "no_finish_claim_without_verified_remote_readback": true,
-    "next_author_choice": "Only next actual USER_MESSAGE choice closes previous archived episode in canon and increments HEAD."
+    "next_author_choice": "Only next actual USER_MESSAGE choice closes previous archived episode in canon and increments HEAD.",
+    "r33_metadata": "New episodes use worldroot_revision=33; existing archived episodes remain unchanged. Preparation and submission are bound by SHA and choice."
   },
   "limits": {
     "automatic_chat_capture": false,
