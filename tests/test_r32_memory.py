@@ -14,7 +14,7 @@ class R32Tests(unittest.TestCase):
         self.assertIsNone(locate("abc","z"))
     def test_graph_integrity(self):
         data={"head":{"day":573},"nodes":[{"id":"a","kind":"character","name":"A"},{"id":"b","kind":"event","name":"B"}],"edges":[{"source":"a","target":"b","kind":"EXPLICIT_KNOWLEDGE","proof":{"day":573}}]}
-        for k in ("dossiers","inventory","power","relationships","plots","assets","historical_observations","events","knowledge","planning"):data[k]={}
+        for k in ("dossiers","inventory","power","relationships","plots","assets","historical_observations","events","knowledge","planning","unregistered_speaker_candidates"):data[k]={}
         with tempfile.TemporaryDirectory() as d:
             path=Path(d)/"graph.sqlite";write_graph(data,path)
             with sqlite3.connect(path) as c:
