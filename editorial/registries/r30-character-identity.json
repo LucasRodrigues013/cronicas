@@ -1,0 +1,411 @@
+{
+  "schema": "worldroot-r30-identity-v1",
+  "coverage": "INITIAL_SOURCE_BOUND_NOT_EXHAUSTIVE",
+  "note": "Não confundir observação histórica com estado presente. AERÚN dragão não é instituto. Campos desconhecidos não podem virar fatos. Recuperar novos traços com evidência antes de expandir.",
+  "characters": [
+    {
+      "id": "aeldric",
+      "name": "Aeldric Vareth",
+      "aliases": [
+        "AELDRIC VARETH",
+        "patriarca Vareth"
+      ],
+      "observations": [
+        {
+          "field": "appearance",
+          "value": "Cabelos escuros com prata nas têmporas, barba curta, maçãs salientes, traços firmes, olhos atentos quase felinos.",
+          "source": {
+            "source_name": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+            "anchor": "AELDRIC VARETH aproximou-se lentamente.\n\nEra um homem de presença notável.\n\nOs cabelos escuros, marcados por fios prateados nas têmporas, estavam penteados para trás. A barba curta contornava um rosto de traços firmes, maçãs salientes e olhos atentos, quase felinos.\n\nVestia um casaco azul profundo, com botões prateados e bordados discretos que indicavam sua posição.\n\nNão carregava espada.\n\nNem um cetro.",
+            "role": "Response",
+            "part_hint": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-005",
+            "line_in_part": 32029
+          }
+        },
+        {
+          "field": "voice_relationship",
+          "value": "Provocação séria, humor e respeito por Lucas; callback 'Esperava algo diferente'.",
+          "source": {
+            "source_name": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+            "anchor": "— LÁ VEM.\n\n— Esperava algo diferente.\n\nMIREN começou a rir.\n\nAELDRIC continuou:\n\n— Pensei que tivesse encontrado um homem capaz de fazer máquinas extraordinárias.\n\nUma pausa.\n\n— Mas estou começando a encontrar alguém que também entende por que não devemos permitir que uma única pessoa seja dona de todas elas.\n\nLUCAS ficou quieto.\n\nO patriarca estendeu a mão.\n\n— Isso pode ser mais valioso que qualquer invenção.\n\nO fundador apertou sua mão.",
+            "role": "Response",
+            "part_hint": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-006",
+            "line_in_part": 36816
+          }
+        }
+      ],
+      "unknown": [
+        "altura",
+        "cor dos olhos",
+        "perfume habitual",
+        "localização atual"
+      ],
+      "scope": "HISTORICAL_OBSERVATIONS_NOT_CURRENT_STATE"
+    },
+    {
+      "id": "kairon",
+      "name": "Káiron",
+      "aliases": [
+        "KAIRON",
+        "KÁIRON"
+      ],
+      "observations": [
+        {
+          "field": "appearance",
+          "value": "Estatura gigantesca, cabelos negros com reflexos prateados, olhos dourados.",
+          "source": {
+            "source_name": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+            "anchor": "Um homem gigantesco.\n\nCabelos negros com reflexos prateados.\n\nOlhos dourados.\n\nUma expressão que ele jamais esqueceria.\n\n...KÁIRON?",
+            "role": "Response",
+            "part_hint": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-005",
+            "line_in_part": 19112
+          }
+        },
+        {
+          "field": "gesture_interest",
+          "value": "Mãos enormes e cuidado delicado com plantas, na casa do Dia 528.",
+          "source": {
+            "source_name": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+            "anchor": "DIA 528 · 08h43\n\nTRÊS ARCOS - CASA DE KÁIRON\n\nKáiron estava ajoelhado diante de uma pequena planta.\n\nUma situação que teria causado considerável confusão entre aqueles que o conheciam apenas por sua força.\n\nSuas mãos eram enormes.\n\nCapazes de exercer uma potência absurda.\n\nMas naquele momento seguravam uma pequena tira de tecido utilizada para apoiar um ramo delicado.\n\nO problema era simples.\n\nO ramo havia crescido inclinado.\n\nE Káiron desejava ajudá-lo sem partir sua estrutura.\n\nTentou ajustar o suporte.\n\nParou.\n\nExaminou.",
+            "role": "Response",
+            "part_hint": "history/sources/06_DIA_497_A_528_FONTE_LITERAL.txt",
+            "line_in_part": 98512
+          }
+        }
+      ],
+      "unknown": [
+        "altura exata",
+        "voz",
+        "localização atual"
+      ],
+      "scope": "HISTORICAL_OBSERVATIONS_NOT_CURRENT_STATE"
+    },
+    {
+      "id": "miren",
+      "name": "Miren",
+      "aliases": [
+        "MIREN"
+      ],
+      "observations": [
+        {
+          "field": "appearance",
+          "value": "Cabelos escuros.",
+          "source": {
+            "source_name": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+            "anchor": "Lucas ficou alguns segundos observando a companheira.\n\nOs cabelos escuros de Miren escapavam do tecido, espalhados sobre a almofada. A claridade suave da manhã tocava sua pele. Havia uma tranquilidade rara naquele quarto, conquistada depois de dias de audiências, documentos, investigações e descobertas que pareciam produzir mais perguntas do que respostas.\n\nLucas sorriu.\n\nDepositou o pato sobre a mesa e aproximou-se da cama.\n\nLUCAS — Senhorita arqueóloga.",
+            "role": "Response",
+            "part_hint": "history/sources/04_DIA_457_A_469_FONTE_LITERAL.txt",
+            "line_in_part": 382
+          }
+        },
+        {
+          "field": "relationship_voice",
+          "value": "Humor íntimo recíproco com Lucas; arqueóloga, brincadeira do departamento que dorme.",
+          "source": {
+            "source_name": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+            "anchor": "LUCAS — Senhorita arqueóloga.\n\nNenhuma resposta.\n\nLUCAS — Doutora em fazer um homem extraordinariamente poderoso se sentir um completo idiota.\n\nMiren soltou uma risadinha abafada.\n\nLUCAS — Eu gostaria de registrar uma reclamação.\n\nMIREN — O departamento responsável ainda está dormindo.\n\nEle deitou ao lado dela.\n\nLUCAS — Nesse caso, vou aguardar atendimento.\n\nMiren abriu um olho.\n\nMIREN — Lucas...\n\nLUCAS — Sim, meu amor?",
+            "role": "Response",
+            "part_hint": "history/sources/04_DIA_457_A_469_FONTE_LITERAL.txt",
+            "line_in_part": 390
+          }
+        },
+        {
+          "field": "historical_clothing",
+          "value": "Vestido azul profundo com detalhes prata escolhido para o encontro D400; não traje permanente.",
+          "source": {
+            "source_name": "02_DIA_383_A_431_FONTE_LITERAL.txt",
+            "anchor": "DIA 400 · 19h12 · CRISTA DO VENTO CLARO, OBSERVATÓRIO DO CRIADOR\n\nMIREN recebeu o convite naquela tarde.\n\nNão havia assinatura.\n\nApenas uma pequena carta, entregue por uma pessoa de confiança.\n\nEsta noite, às dezenove horas, venha ao Observatório. Vista o que fizer você se sentir bonita. Alguém gostaria de lhe mostrar uma coisa.\n\nA arqueóloga reconheceu imediatamente a caligrafia.\n\nSorriu.\n\nDepois olhou para a janela.\n\n— ...Lucas.\n\nNão sabia exatamente o que ele preparara.\n\nMas agora compreendia por que estivera tão estranho durante o dia.\n\nEscolheu um vestido de tecido leve.\n\nAzul profundo, com detalhes discretos em prata.\n\nNão era um traje real.\n\nNem uma peça produzida para impressionar uma corte.",
+            "role": "Response",
+            "part_hint": "history/sources/02_DIA_383_A_431_FONTE_LITERAL.txt",
+            "line_in_part": 31509
+          }
+        }
+      ],
+      "unknown": [
+        "altura",
+        "cor dos olhos",
+        "perfume habitual"
+      ],
+      "scope": "HISTORICAL_OBSERVATIONS_NOT_CURRENT_STATE"
+    },
+    {
+      "id": "lucas",
+      "name": "Lucas Rodrigues",
+      "aliases": [
+        "LUCAS"
+      ],
+      "observations": [
+        {
+          "field": "relationship_voice",
+          "value": "Humor expansivo, vulnerabilidade e parceria com Miren; brincadeira da reclamação.",
+          "source": {
+            "source_name": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+            "anchor": "LUCAS — Senhorita arqueóloga.\n\nNenhuma resposta.\n\nLUCAS — Doutora em fazer um homem extraordinariamente poderoso se sentir um completo idiota.\n\nMiren soltou uma risadinha abafada.\n\nLUCAS — Eu gostaria de registrar uma reclamação.\n\nMIREN — O departamento responsável ainda está dormindo.\n\nEle deitou ao lado dela.\n\nLUCAS — Nesse caso, vou aguardar atendimento.\n\nMiren abriu um olho.\n\nMIREN — Lucas...\n\nLUCAS — Sim, meu amor?",
+            "role": "Response",
+            "part_hint": "history/sources/04_DIA_457_A_469_FONTE_LITERAL.txt",
+            "line_in_part": 390
+          }
+        },
+        {
+          "field": "values",
+          "value": "Responsabilidade pelas trezentas vidas e entusiasmo pelo mundo no início.",
+          "source": {
+            "source_name": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+            "anchor": "DIA 1 • FINAL DA TARDE • ACAMPAMENTO DA LEGIÃO\n\nAlguns homens desejam conquistar o mundo. Outros desejam descobrir seus segredos. Você começa a perceber que deseja algo muito mais difícil: construir um mundo onde pessoas diferentes possam escolher viver juntas.\n\nO sol desce lentamente atrás das colinas.\n\nDo alto de uma pequena elevação, você observa o acampamento improvisado. Trezentos homens nasceram da sua vontade, mas agora caminham, conversam, trabalham, sentem dor e possuem suas próprias perspectivas.\n\nVocê olha para suas mãos.\n\nHoras atrás, elas não seguravam nada.\n\nAgora, o destino de trezentas vidas está diretamente ligado às suas decisões.\n\nE uma pergunta continua incomodando:\n\nQuem me trouxe para cá?\n\nVocê não se lembra de ter pedido para nascer neste mundo. Não conhece suas leis, deuses, criaturas ou governantes.\n\nMas, apesar da incerteza, sente algo que há muito tempo não experimentava.\n\nEntusiasmo.\n\nUm mundo inteiro para descobrir. Castelos para conhecer. Montanhas que ninguém lhe mostrou. Civilizações, monstros, magia e possibilidades que antes só existiam em sua imaginação.\n\nE um sonho antigo.\n\nConstruir um reino extraordinário.",
+            "role": "Response",
+            "part_hint": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "line_in_part": 1255
+          }
+        },
+        {
+          "field": "friendship",
+          "value": "Escolhe ajudar os outros a construir; gesto percebido por Bressa.",
+          "source": {
+            "episode": "LVI-C06-PV-D568-AUTHOR-SOURCE",
+            "anchor": "**LUCAS —** E que talvez eu não precise ser o homem que constrói tudo.\n\nMiren levantou os olhos para ele.\n\nLucas sorriu.\n\n**LUCAS —** Às vezes posso ser só o amigo que ajuda outra pessoa a construir.\n\nBressa, que permanecera mais atrás, sentiu a frase de maneira diferente.\n\nPensou na ponte.\n\nNo vale.\n\nEm Tharvek.\n\nNa viagem de nove dias.\n\nE, pela primeira vez desde que deixara suas montanhas, acreditou que talvez estivesse prestes a retornar com algo melhor do que uma simples resposta.\n\n***"
+          }
+        }
+      ],
+      "unknown": [
+        "traços físicos permanentes a recuperar"
+      ],
+      "scope": "HISTORICAL_OBSERVATIONS_NOT_CURRENT_STATE"
+    },
+    {
+      "id": "varo",
+      "name": "Varo",
+      "aliases": [],
+      "observations": [
+        {
+          "field": "role_historical",
+          "value": "Assume busca pelos homens desaparecidos, Dia 1.",
+          "source": {
+            "source_name": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+            "anchor": "DIA 1 • 18H12 • ACAMPAMENTO DA LEGIÃO\n\nUma ordem pode vencer uma batalha. Uma boa decisão pode evitar a próxima.\n\nO sol desaparece atrás das montanhas, deixando uma faixa avermelhada sobre o vale. Uma névoa fina começa a subir do rio. Os homens da Legião acendem pequenos braseiros, protegendo as chamas do vento.\n\nVocê observa o acampamento.\n\nTrezentos guerreiros nasceram de sua vontade. Um cavaleiro negro agora compartilha suas ambições. Um comandante experiente acaba de escolher o próprio nome.\n\nMas três legionários continuam desaparecidos.\n\nE você está cansado demais para criar até mesmo uma espada sem arriscar desmaiar.\n\nVARO e KAEL aguardam sua decisão.\n\n— VARO, quero que você assuma pessoalmente a operação de busca. Discrição acima de velocidade. Não quero uma batalha por orgulho. Quero nossos homens de volta.\n\nO capitão bate o punho contra o peito.\n\n— Entendido.\n\nVocê se volta para KAEL.",
+            "role": "Response",
+            "part_hint": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "line_in_part": 1720
+          }
+        },
+        {
+          "field": "voice",
+          "value": "Delimita informações militares conhecidas e aponta o mapa no D573.",
+          "source": {
+            "episode": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+            "anchor": "A correspondência continha o boletim de Renshar encaminhado pelos postos de Halvern desde o Dia 569, acompanhado de uma carta de apresentação de suas autoridades. Passara por trocas de montaria e pela rede de estradas durante quatro dias.\n\nLysa aproximou a folha.\n\n**LYSA —** Temos confirmação de uma conquista. Renshar caiu no Dia 567. Testemunhas viram soldados do Dominato, portões destruídos e novas ordens de cobrança. Há relatos indiretos da presença pessoal do soberano imperial.\n\nLucas leu o nome.\n\n**LUCAS —** Velkar Draen.\n\nPronunciou-o devagar.\n\nNunca o ouvira antes.\n\nVaro apontou para o mapa incompleto.\n\n**VARO —** É a primeira informação nominal que recebemos sobre quem governa o Dominato. Ainda não temos um mapa confiável de suas forças, nem a extensão da campanha.\n\nMiren puxou uma cadeira."
+          }
+        }
+      ],
+      "unknown": [
+        "aparência",
+        "voz acústica",
+        "localização atual"
+      ],
+      "scope": "HISTORICAL_OBSERVATIONS_NOT_CURRENT_STATE"
+    },
+    {
+      "id": "kael",
+      "name": "Kael",
+      "aliases": [],
+      "observations": [
+        {
+          "field": "role_historical",
+          "value": "Aguarda decisões com Varo no primeiro acampamento.",
+          "source": {
+            "source_name": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+            "anchor": "DIA 1 • 18H12 • ACAMPAMENTO DA LEGIÃO\n\nUma ordem pode vencer uma batalha. Uma boa decisão pode evitar a próxima.\n\nO sol desaparece atrás das montanhas, deixando uma faixa avermelhada sobre o vale. Uma névoa fina começa a subir do rio. Os homens da Legião acendem pequenos braseiros, protegendo as chamas do vento.\n\nVocê observa o acampamento.\n\nTrezentos guerreiros nasceram de sua vontade. Um cavaleiro negro agora compartilha suas ambições. Um comandante experiente acaba de escolher o próprio nome.\n\nMas três legionários continuam desaparecidos.\n\nE você está cansado demais para criar até mesmo uma espada sem arriscar desmaiar.\n\nVARO e KAEL aguardam sua decisão.\n\n— VARO, quero que você assuma pessoalmente a operação de busca. Discrição acima de velocidade. Não quero uma batalha por orgulho. Quero nossos homens de volta.\n\nO capitão bate o punho contra o peito.\n\n— Entendido.\n\nVocê se volta para KAEL.",
+            "role": "Response",
+            "part_hint": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "line_in_part": 1720
+          }
+        }
+      ],
+      "unknown": [
+        "aparência",
+        "voz",
+        "estado atual a recuperar"
+      ],
+      "scope": "HISTORICAL_OBSERVATIONS_NOT_CURRENT_STATE"
+    },
+    {
+      "id": "lysa",
+      "name": "Lysa",
+      "aliases": [],
+      "observations": [
+        {
+          "field": "voice_role",
+          "value": "Apresenta evidências da conquista de Renshar com precisão D573.",
+          "source": {
+            "episode": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+            "anchor": "A correspondência continha o boletim de Renshar encaminhado pelos postos de Halvern desde o Dia 569, acompanhado de uma carta de apresentação de suas autoridades. Passara por trocas de montaria e pela rede de estradas durante quatro dias.\n\nLysa aproximou a folha.\n\n**LYSA —** Temos confirmação de uma conquista. Renshar caiu no Dia 567. Testemunhas viram soldados do Dominato, portões destruídos e novas ordens de cobrança. Há relatos indiretos da presença pessoal do soberano imperial.\n\nLucas leu o nome.\n\n**LUCAS —** Velkar Draen.\n\nPronunciou-o devagar.\n\nNunca o ouvira antes.\n\nVaro apontou para o mapa incompleto.\n\n**VARO —** É a primeira informação nominal que recebemos sobre quem governa o Dominato. Ainda não temos um mapa confiável de suas forças, nem a extensão da campanha.\n\nMiren puxou uma cadeira."
+          }
+        }
+      ],
+      "unknown": [
+        "aparência",
+        "voz acústica"
+      ],
+      "scope": "HISTORICAL_OBSERVATIONS_NOT_CURRENT_STATE"
+    },
+    {
+      "id": "bressa",
+      "name": "Bressa",
+      "aliases": [],
+      "observations": [
+        {
+          "field": "voice_behavior",
+          "value": "Engenheira que examina metal; resposta seca e bem-humorada ao cumprimento exagerado.",
+          "source": {
+            "episode": "LVI-C06-PV-D568-AUTHOR-SOURCE",
+            "anchor": "Sael trabalhava em um terminal lateral.\n\nBressa estava inclinada sobre uma peça de metal escuro, apoiada dentro de um compartimento transparente.\n\nHavia marcas profundas em sua superfície.\n\nAlgumas lembravam sulcos deixados por ferramentas.\n\nOutras não.\n\nQuando Bressa viu Lucas, endireitou-se.\n\n**BRESSA —** Bom dia.\n\n**LUCAS —** BOM DIA, MINHA QUERIDA ENGENHEIRA DAS MONTANHAS!\n\nEla ergueu uma sobrancelha.\n\n**BRESSA —** Você sempre cumprimenta as pessoas como se estivesse anunciando uma batalha?\n\n**LUCAS —** APENAS AS IMPORTANTES!"
+          }
+        }
+      ],
+      "unknown": [
+        "aparência permanente"
+      ],
+      "scope": "HISTORICAL_OBSERVATIONS_NOT_CURRENT_STATE"
+    },
+    {
+      "id": "brannik",
+      "name": "Brannik",
+      "aliases": [],
+      "observations": [
+        {
+          "field": "voice_behavior",
+          "value": "Exuberante; celebra viagem técnica com caneca vazia.",
+          "source": {
+            "episode": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+            "anchor": "O metal se estendeu pela paisagem como uma fita de prata. Suportes nasceram em sequência, encaixando-se sobre as bases indicadas pelos engenheiros. A guia ganhou um terminal técnico simples, uma cobertura e uma passagem protegida para embarque.\n\nO veículo completo do Dia 572 recebeu os componentes revisados para aquela extensão. Lucas manifestou ainda uma segunda unidade de serviço, destinada a transportar instrumentos e massas de ensaio.\n\nNaira examinou os registros antes de liberar as primeiras passagens desocupadas. A equipe verificou os percursos e as paradas. Dorek e Rumo acompanharam a nova sequência.\n\nDepois de concluídos os ensaios definidos para a manhã, Naira autorizou uma viagem de demonstração em velocidade reduzida com os técnicos voluntários.\n\nBrannik entrou primeiro.\n\nSentou-se.\n\nAjustou o encosto.\n\nErgueu uma caneca vazia, por determinação expressa de Dorek.\n\n**BRANNIK —** HOMENS! HOJE VIAJAMOS PARA O FUTURO!\n\nRumo sentou-se ao lado dele.\n\n**RUMO —** O futuro está no final do trecho técnico."
+          }
+        }
+      ],
+      "unknown": [
+        "aparência permanente"
+      ],
+      "scope": "HISTORICAL_OBSERVATIONS_NOT_CURRENT_STATE"
+    },
+    {
+      "id": "rumo",
+      "name": "Rumo",
+      "aliases": [],
+      "observations": [
+        {
+          "field": "voice_behavior",
+          "value": "Resposta literal e seca à metáfora do futuro de Brannik.",
+          "source": {
+            "episode": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+            "anchor": "O metal se estendeu pela paisagem como uma fita de prata. Suportes nasceram em sequência, encaixando-se sobre as bases indicadas pelos engenheiros. A guia ganhou um terminal técnico simples, uma cobertura e uma passagem protegida para embarque.\n\nO veículo completo do Dia 572 recebeu os componentes revisados para aquela extensão. Lucas manifestou ainda uma segunda unidade de serviço, destinada a transportar instrumentos e massas de ensaio.\n\nNaira examinou os registros antes de liberar as primeiras passagens desocupadas. A equipe verificou os percursos e as paradas. Dorek e Rumo acompanharam a nova sequência.\n\nDepois de concluídos os ensaios definidos para a manhã, Naira autorizou uma viagem de demonstração em velocidade reduzida com os técnicos voluntários.\n\nBrannik entrou primeiro.\n\nSentou-se.\n\nAjustou o encosto.\n\nErgueu uma caneca vazia, por determinação expressa de Dorek.\n\n**BRANNIK —** HOMENS! HOJE VIAJAMOS PARA O FUTURO!\n\nRumo sentou-se ao lado dele.\n\n**RUMO —** O futuro está no final do trecho técnico."
+          }
+        }
+      ],
+      "unknown": [
+        "forma física detalhada"
+      ],
+      "scope": "HISTORICAL_OBSERVATIONS_NOT_CURRENT_STATE"
+    },
+    {
+      "id": "naira",
+      "name": "Naira",
+      "aliases": [],
+      "observations": [
+        {
+          "field": "role_behavior",
+          "value": "Examina registros, autoriza demonstração após ensaios.",
+          "source": {
+            "episode": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+            "anchor": "O metal se estendeu pela paisagem como uma fita de prata. Suportes nasceram em sequência, encaixando-se sobre as bases indicadas pelos engenheiros. A guia ganhou um terminal técnico simples, uma cobertura e uma passagem protegida para embarque.\n\nO veículo completo do Dia 572 recebeu os componentes revisados para aquela extensão. Lucas manifestou ainda uma segunda unidade de serviço, destinada a transportar instrumentos e massas de ensaio.\n\nNaira examinou os registros antes de liberar as primeiras passagens desocupadas. A equipe verificou os percursos e as paradas. Dorek e Rumo acompanharam a nova sequência.\n\nDepois de concluídos os ensaios definidos para a manhã, Naira autorizou uma viagem de demonstração em velocidade reduzida com os técnicos voluntários.\n\nBrannik entrou primeiro.\n\nSentou-se.\n\nAjustou o encosto.\n\nErgueu uma caneca vazia, por determinação expressa de Dorek.\n\n**BRANNIK —** HOMENS! HOJE VIAJAMOS PARA O FUTURO!\n\nRumo sentou-se ao lado dele.\n\n**RUMO —** O futuro está no final do trecho técnico."
+          }
+        }
+      ],
+      "unknown": [
+        "aparência",
+        "voz acústica"
+      ],
+      "scope": "HISTORICAL_OBSERVATIONS_NOT_CURRENT_STATE"
+    },
+    {
+      "id": "seron",
+      "name": "Seron",
+      "aliases": [],
+      "observations": [
+        {
+          "field": "voice_behavior",
+          "value": "Humor com Edric e Reva mesmo na recuperação hospitalar.",
+          "source": {
+            "episode": "LVI-C03-PV-D553-AUTHOR-SOURCE",
+            "anchor": "**DIA 553 · 06h38 — HOSPITAL CIVIL, ALA DE OBSERVAÇÃO**\n\nEdric estava sentado com a perna apoiada quando Seron tentou persuadi-lo de que uma entorse não era motivo para tanto repouso.\n\nReva passou pela porta exatamente no momento errado.\n\n**REVA —** Seron, não dê conselhos médicos. Sua carreira como paciente já é suficientemente problemática.\n\n**SERON —** Eu estava oferecendo solidariedade.\n\n**EDRIC —** Parecia uma tentativa de fazer todo mundo sofrer junto.\n\nLuren riu baixo, tomando o cuidado de não forçar o tórax.\n\nMara o observou com uma expressão severa.\n\n**LUREN —** Estou sendo cuidadoso."
+          }
+        }
+      ],
+      "unknown": [
+        "aparência",
+        "estado atual de saúde"
+      ],
+      "scope": "HISTORICAL_OBSERVATIONS_NOT_CURRENT_STATE"
+    },
+    {
+      "id": "reva",
+      "name": "Reva",
+      "aliases": [],
+      "observations": [
+        {
+          "field": "voice_behavior",
+          "value": "Resposta médica bem-humorada e firme ao paciente Seron.",
+          "source": {
+            "episode": "LVI-C03-PV-D553-AUTHOR-SOURCE",
+            "anchor": "**DIA 553 · 06h38 — HOSPITAL CIVIL, ALA DE OBSERVAÇÃO**\n\nEdric estava sentado com a perna apoiada quando Seron tentou persuadi-lo de que uma entorse não era motivo para tanto repouso.\n\nReva passou pela porta exatamente no momento errado.\n\n**REVA —** Seron, não dê conselhos médicos. Sua carreira como paciente já é suficientemente problemática.\n\n**SERON —** Eu estava oferecendo solidariedade.\n\n**EDRIC —** Parecia uma tentativa de fazer todo mundo sofrer junto.\n\nLuren riu baixo, tomando o cuidado de não forçar o tórax.\n\nMara o observou com uma expressão severa.\n\n**LUREN —** Estou sendo cuidadoso."
+          }
+        }
+      ],
+      "unknown": [
+        "aparência"
+      ],
+      "scope": "HISTORICAL_OBSERVATIONS_NOT_CURRENT_STATE"
+    },
+    {
+      "id": "aerun-guardiao",
+      "name": "AERÚN (dragão)",
+      "aliases": [
+        "AERUN"
+      ],
+      "observations": [
+        {
+          "field": "behavior",
+          "value": "Observa as relações de Lucas, não apenas seu poder; D250.",
+          "source": {
+            "source_name": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+            "anchor": "DIA 250 · 07h41 | Golfo Exterior\n\nAERÚN observou LUCAS por muito tempo.\n\nNão apenas seu rosto.\n\nNem sua armadura.\n\nMas a maneira como permanecia ao lado de MIREN.\n\nComo procurava LIRA com os olhos, certificando-se de que ela não estivesse assustada.\n\nComo escutava as perguntas de ASTRA.\n\nComo sorria ao ver KÁIRON completamente maravilhado.\n\nO dragão havia conhecido pessoas poderosas.\n\nGovernantes que afirmavam possuir o direito divino sobre terras e mares.\n\nMagos que confundiam capacidade com sabedoria.",
+            "role": "Response",
+            "part_hint": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-005",
+            "line_in_part": 29817
+          }
+        }
+      ],
+      "unknown": [
+        "características adicionais",
+        "localização atual"
+      ],
+      "scope": "HISTORICAL_OBSERVATIONS_NOT_CURRENT_STATE"
+    },
+    {
+      "id": "niraven",
+      "name": "Níraven",
+      "aliases": [],
+      "observations": [
+        {
+          "field": "historical_manifestation",
+          "value": "Grande copa sobre montanhas; passagem de corrente de vida pela madeira.",
+          "source": {
+            "episode": "LVI-C06-PII-D565-AUTHOR-SOURCE",
+            "anchor": "O Sistema desapareceu.\n\nLucas permaneceu olhando a árvore.\n\nAo longe, sobre as montanhas, a grande copa de Níraven brilhou uma vez.\n\nNão como uma mensagem dirigida a ele.\n\nComo a passagem lenta de uma corrente de vida pela madeira.\n\nMas naquela mesma hora, na clareira da raiz antiga, algo ocorreu que nenhum dos hóspedes presenciou.\n\nA guardiã velha havia deixado o cordão verde sobre a madeira morta. As fibras ressecadas continuavam escuras, incapazes de voltar a ser a árvore que havia sido. Entre elas, porém, uma pequena gota de água condensou-se.\n\nDesceu pela cicatriz da raiz.\n\nEncontrou uma marca antiga sob a casca.\n\nE nela apareceu, por um único instante, um reflexo azul."
+          }
+        }
+      ],
+      "unknown": [
+        "estado posterior a recuperar"
+      ],
+      "scope": "HISTORICAL_OBSERVATIONS_NOT_CURRENT_STATE"
+    }
+  ]
+}
