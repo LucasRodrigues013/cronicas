@@ -263,7 +263,8 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
         previous_counts=previous_canonical_scene_counts(root, meta),
         archive_root=root)
     # R32 opt-in on staged branch. Preserve immutable old v3 drafts and their choices.
-    r32_declared = meta.get("worldroot_revision")==32 or "r32_review" in payload
+    r33_declared = meta.get("worldroot_revision")==33 or "r33_review" in payload
+    r32_declared = meta.get("worldroot_revision")==32 or "r32_review" in payload or r33_declared
     if r32_declared:
         from .r32_release import release_review
         input_sha=sha(_bytes(payload.get("r32_review")))
@@ -279,6 +280,19 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
             receipt["review_input_sha256"]=input_sha
             receipt["source_sha256"]=sha(payload["full_text"].encode("utf-8"))
         review_files["memory_r32.json"]=_bytes(receipt)
+    if r33_declared:
+        from .r33_runtime import verify_submission
+        input_sha=sha(_bytes(payload.get("r33_review")))
+        if existing_manifest.is_file():
+            rr=load(root/"episodes"/episode_id/"review"/"preparation_r33.json")
+            if rr.get("review_input_sha256")!=input_sha or rr.get("source_sha256")!=sha(payload["full_text"].encode("utf-8")):
+                raise ConflictError("Archived R33 preparation differs")
+        else:
+            try:rr=verify_submission(root,head,payload)
+            except (ValueError,KeyError,TypeError,OSError) as exc:raise GateError("R33 preparation blocked: "+str(exc)[:250]) from None
+            rr["review_input_sha256"]=input_sha
+            rr["source_sha256"]=sha(payload["full_text"].encode("utf-8"))
+        review_files["preparation_r33.json"]=_bytes(rr)
     if existing_manifest.is_file():
         for name, body in files.items():
             existing = root / "episodes" / episode_id / "draft" / name
