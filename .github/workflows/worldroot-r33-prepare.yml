@@ -1,0 +1,115 @@
+name: WORLDROOT R33 - immutable preparation
+on:
+  pull_request:
+    branches: [story-archive]
+    paths:
+      - '.github/workflows/worldroot-r33-prepare.yml'
+      - '.github/workflows/worldroot-draft-inbox.yml'
+      - '.github/workflows/git-canon-cycle.yml'
+      - 'ops/ENGINE_PUBLISHING_POLICY.json'
+  push:
+    branches: [story-archive]
+    paths:
+      - 'requests/*.json'
+      - '.github/workflows/worldroot-r33-prepare.yml'
+  workflow_dispatch:
+concurrency:
+  group: worldroot-story-write
+  cancel-in-progress: false
+permissions:
+  contents: read
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: 14ad99fffe78cfe51aea99d8ec20f57c49dc4b06
+          path: engine
+          persist-credentials: false
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: story-archive
+          path: archive
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Regression and immutable live state verification
+        env:
+          PYTHONPATH: engine
+        run: |
+          python -m unittest discover -s engine/tests -q
+          python -m worldroot.git_cycle verify --archive-root archive
+          python -m worldroot.r33_runtime --archive-root archive --verify-history
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from worldroot.turn_continuity import audit_turn_handoff
+          root=Path("archive")
+          head=json.loads((root/"canon/HEAD.json").read_text())
+          resume=json.loads((root/"ops/RESUME.json").read_text())
+          pending=resume.get("latest_unclosed_draft") or resume["canon_head"]
+          result=audit_turn_handoff(root,pending["episode_id"],expected_head_id=head["episode_id"])
+          if not result["ready"]:
+              raise RuntimeError("Unverified live handoff")
+          print("Live archive verified; no new choice or story written.")
+          PY
+  prepare:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/story-archive' && github.actor == 'LucasRodrigues013'
+    needs: preflight
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: 14ad99fffe78cfe51aea99d8ec20f57c49dc4b06
+          path: engine
+          persist-credentials: false
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: story-archive
+          path: archive
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Prepare exactly one genuine persisted request
+        env:
+          PYTHONPATH: engine
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from worldroot.r33_runtime import prepare_from_request,read
+          root=Path("archive")
+          pending=[p for p in sorted((root/"requests").glob("*.json")) if not (root/"preparations"/p.name).is_file()]
+          if len(pending)>1:
+              raise RuntimeError("Multiple unprepared requests; fail closed")
+          if not pending:
+              print("No new request; no write.")
+          else:
+              print(prepare_from_request(root,read(pending[0])))
+          PY
+      - name: Publish preparations only and verify remote commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ ! -d archive/preparations ]; then exit 0; fi
+          git -C archive add -- preparations/
+          if git -C archive diff --cached --quiet; then exit 0; fi
+          git -C archive config user.name "github-actions[bot]"
+          git -C archive config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C archive commit -m "worldroot: immutable R33 preparation"
+          expected_sha="$(git -C archive rev-parse HEAD)"
+          auth_header="$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)"
+          git -C archive -c "http.extraheader=AUTHORIZATION: basic $auth_header" push origin HEAD:refs/heads/story-archive
+          git -C archive -c "http.extraheader=AUTHORIZATION: basic $auth_header" fetch -q origin refs/heads/story-archive:refs/remotes/origin/story-archive
+          unset auth_header
+          test "$(git -C archive rev-parse refs/remotes/origin/story-archive)" = "$expected_sha"
+          echo "R33_PREPARATION_REMOTE_READBACK_VERIFIED: $expected_sha"
