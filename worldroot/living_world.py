@@ -11,6 +11,7 @@ import re
 import statistics
 import unicodedata
 from collections import Counter
+from functools import lru_cache
 from pathlib import Path
 
 from .history_index import search as search_history
@@ -140,8 +141,16 @@ def load_canonical(root: Path, head: dict) -> tuple[list[dict], list[str]]:
         warnings.append("Projection does not reach the supplied HEAD.")
     return entries,warnings
 
+@lru_cache(maxsize=128)
+def _normalized_body(text: str) -> str:
+    return normalize(literal_body(text))
+
+@lru_cache(maxsize=128)
+def _speaker_set(text: str) -> frozenset:
+    return frozenset(s for row in scene_rows(text) for s in row["speakers"])
+
 def match_reference(text: str, aliases: list[str]) -> bool:
-    body=normalize(literal_body(text))
+    body=_normalized_body(text)
     return any(re.search(r"(?<!\w)"+re.escape(normalize(a))+r"(?!\w)",body) for a in aliases if a.strip())
 
 def resolve_entities(seed: dict) -> dict:
@@ -197,9 +206,7 @@ def project(root: Path, head: dict | None = None) -> dict:
         refs=[e for e in entries if match_reference(e["text"],[row["name"],*row.get("aliases",[])])]
         appearances=[]
         for e in refs:
-            if any(normalize(row["name"]) in scene["speakers"] or
-                   any(normalize(a) in scene["speakers"] for a in row.get("aliases",[]))
-                   for scene in scene_rows(e["text"])):
+            if _speaker_set(e["text"]).intersection(normalize(a) for a in [row["name"],*row.get("aliases",[])]):
                 appearances.append(e)
         last=appearances[-1] if appearances else None
         activity.append({"id":row["id"],"name":row["name"],"last_dialogue_evidence":
