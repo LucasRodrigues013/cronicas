@@ -17,7 +17,7 @@ class EditorialMemoryTests(unittest.TestCase):
     def test_policy_is_versioned_scoped_and_evidence_linked(self):
         v = validate_policy(self.policy)
         self.assertEqual(v["version"], 19)
-        self.assertTrue({f"P{i}" for i in range(1,116)}.issubset({r["id"] for r in self.policy["rules"]}))
+        self.assertTrue({f"P{i:02d}" for i in range(1,116)}.issubset({r["id"] for r in self.policy["rules"]}))
         self.assertTrue({f"P{i}" for i in range(99,106)}.issubset({r["id"] for r in self.policy["rules"]}))
         self.assertTrue({f"P{i}" for i in range(89,99)}.issubset({r["id"] for r in self.policy["rules"]}))
         self.assertTrue({f"P{i}" for i in range(82,89)}.issubset({r["id"] for r in self.policy["rules"]}))
