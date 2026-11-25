@@ -1,6 +1,10 @@
 """Private R31 audit: full source index, provenance, 100 retrieval probes, read-only."""
 import hashlib,json,pathlib,sqlite3,time,tempfile,statistics,sys,os
 from worldroot import deep_recovery as r31, history_index as hi
+from worldroot.memory_continuity import fusion
+def lookup(db,q,entity=None,topic=None,role=None,limit=20,strategy='hybrid'):
+    if strategy=='fusion':return fusion(db,q,entity,topic,role,limit)
+    return r31.retrieve(db,q,entity,topic,role,limit,strategy)
 root=pathlib.Path("archive")
 candidates=json.loads(pathlib.Path("recovery/r31-historical-candidates.json").read_text())["records"]
 def digest(b):return hashlib.sha256(b).hexdigest()
@@ -75,7 +79,7 @@ with tempfile.TemporaryDirectory() as d:
             assert covered==set(range(1,len(lines)+1))
     emit({"stage":"SQLITE_FULL_INDEX","seconds":round(elapsed,3),"windows":counts,"lines":sum(len(t.splitlines()) for t in source_map.values()),"bytes":db.stat().st_size,"integrity":"ok","coverage":report["coverage"]})
     results=[]
-    for strategy in ("legacy","hybrid","contextual"):
+    for strategy in ("legacy","hybrid","contextual","fusion"):
         ranks=[]; durations=[]; misses=[];by_split={}
         for i,(c,lo,hi_) in enumerate(gold):
             for j,q in enumerate(queries[i]):
@@ -85,14 +89,14 @@ with tempfile.TemporaryDirectory() as d:
                 # Topic/entity metadata are hints, not ground truth; test unfiltered queries too.
                 # No answer synthesis is scored; target is a recovered span.
                 start=time.monotonic()
-                r=r31.retrieve(db,q,entity=entity if j%2==0 else None,role=c["role"],limit=20,strategy=strategy)
+                r=lookup(db,q,entity=entity if j%2==0 else None,role=c["role"],limit=80 if strategy=="fusion" else 20,strategy=strategy)
                 durations.append(time.monotonic()-start)
                 rank=next((n for n,h in enumerate(r["hits"],1) if h["source"]==c["source_name"] and min(h["line_end"],hi_)-max(h["line_start"],lo)+1>=min(3,hi_-lo+1)),0)
                 ranks.append(rank)
                 split="regression" if j<3 else "challenge"
                 by_split.setdefault(split,[]).append(rank)
                 if not rank:misses.append(f"{i+1:02d}-{j+1}")
-        row={"strategy":strategy,"n":len(ranks),"hit_at_1":sum(r==1 for r in ranks),"hit_at_5":sum(0<r<=5 for r in ranks),"hit_at_10":sum(0<r<=10 for r in ranks),"hit_at_20":sum(r>0 for r in ranks),"mrr":round(sum(1/r for r in ranks if r)/len(ranks),4),"median_ms":round(statistics.median(durations)*1000,2),"p95_ms":round(sorted(durations)[94]*1000,2),"miss_ids":misses,"split_hit20":{k:[sum(r>0 for r in v),len(v)] for k,v in by_split.items()}}
+        row={"strategy":strategy,"n":len(ranks),"hit_at_1":sum(r==1 for r in ranks),"hit_at_5":sum(0<r<=5 for r in ranks),"hit_at_10":sum(0<r<=10 for r in ranks),"hit_at_20":sum(0<r<=20 for r in ranks),"hit_at_80":sum(r>0 for r in ranks) if strategy=="fusion" else None,"mrr":round(sum(1/r for r in ranks if r)/len(ranks),4),"median_ms":round(statistics.median(durations)*1000,2),"p95_ms":round(sorted(durations)[94]*1000,2),"miss_ids":misses,"split_hit20":{k:[sum(0<r<=20 for r in v),len(v)] for k,v in by_split.items()}}
         results.append(row);emit({"stage":"RETRIEVAL",**row})
     # A separate historical reference set, not used to tune the preceding 100 probes.
     # These are held out from this benchmark, not a blind author evaluation.
@@ -118,14 +122,14 @@ with tempfile.TemporaryDirectory() as d:
         hi_=lo+anchor.count("\n")
         heldout.append((item["id"],proof["source_name"],lo,hi_,proof.get("role","Response")))
     assert len(heldout)==7
-    for strategy in ("legacy","hybrid","contextual"):
+    for strategy in ("legacy","hybrid","contextual","fusion"):
         ranks=[]
         for key,name,lo,hi_,role in heldout:
             for q in heldout_queries[key]:
-                result=r31.retrieve(db,q,role=role,limit=20,strategy=strategy)
+                result=lookup(db,q,role=role,limit=80 if strategy=="fusion" else 20,strategy=strategy)
                 rank=next((n for n,h in enumerate(result["hits"],1) if h["source"]==name and min(h["line_end"],hi_)-max(h["line_start"],lo)+1>=3),0)
                 ranks.append(rank)
-        emit({"stage":"HELDOUT_REFERENCE_PROBES","strategy":strategy,"n":len(ranks),"hit_at_1":sum(r==1 for r in ranks),"hit_at_5":sum(0<r<=5 for r in ranks),"hit_at_20":sum(r>0 for r in ranks),"mrr":round(sum(1/r for r in ranks if r)/len(ranks),4),"limitation":"Distinct reference spans; not independent human evaluation."})
+        emit({"stage":"HELDOUT_REFERENCE_PROBES","strategy":strategy,"n":len(ranks),"hit_at_1":sum(r==1 for r in ranks),"hit_at_5":sum(0<r<=5 for r in ranks),"hit_at_20":sum(0<r<=20 for r in ranks),"hit_at_80":sum(r>0 for r in ranks) if strategy=="fusion" else None,"mrr":round(sum(1/r for r in ranks if r)/len(ranks),4),"limitation":"Distinct reference spans; not independent human evaluation."})
     # Negative cases and stable repeated queries, not a claim of semantic abstention.
     for q in ("zzzzworldrootnonexistent123","qzxmissingentity987","nonexistentartifactzzx"):
         assert r31.retrieve(db,q)["status"]=="NOT_RECOVERED"
