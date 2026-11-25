@@ -16,7 +16,7 @@ from pathlib import Path
 from .history_index import read_verified_sources
 from .literary_experience import writer_brief
 
-SCHEMA = "worldroot-r31-deep-recovery-v2"
+SCHEMA = "worldroot-r31-deep-recovery-v3"
 ROLE = re.compile(r"^## (Prompt|Response):\s*$")
 DAY = re.compile(r"\bDIA\s+(\d{1,3})\b", re.I)
 TOPICS = {
@@ -78,6 +78,12 @@ def windows(body, width=18, stride=9):
             group = lines[i:i+width]
             yield role, start+i, start+i+len(group)-1, "".join(group)
 
+def contextual_windows(body, width=18, stride=9):
+    for role, start, lines in sections(body):
+        for i in range(0, len(lines), stride):
+            group = lines[i:i+width]
+            yield role,start,start+i,start+i+len(group)-1,"".join(group)
+
 def build(root, db):
     manifest, sources = read_verified_sources(Path(root))
     db = Path(db)
@@ -95,7 +101,8 @@ def build(root, db):
             CREATE TABLE meta(key TEXT PRIMARY KEY,value TEXT NOT NULL);
             CREATE TABLE evidence(id INTEGER PRIMARY KEY, source TEXT, source_sha TEXT,
               role TEXT, line_start INTEGER, line_end INTEGER, anchor TEXT, anchor_sha TEXT,
-              topics TEXT, entities TEXT);
+              topics TEXT, entities TEXT, section_start INTEGER, near_entities TEXT NOT NULL DEFAULT '');
+            CREATE INDEX evidence_location ON evidence(source,section_start,line_start);
             CREATE VIRTUAL TABLE search USING fts5(anchor, entities, topics,
               content='evidence',content_rowid='id',tokenize='unicode61 remove_diacritics 2');
             """)
@@ -104,14 +111,16 @@ def build(root, db):
             topic_patterns = {key: re.compile(p, re.I) for key,p in TOPICS.items()}
             for meta, body in sources:
                 count=0
-                for role, lo, hi, anchor in windows(body):
+                for role, section_start, lo, hi, anchor in contextual_windows(body):
                     nt=norm(anchor)
                     entities=[key for key, pattern in entity_patterns.items() if pattern.search(nt)]
                     topics=[key for key, pattern in topic_patterns.items() if pattern.search(anchor)]
-                    c.execute("INSERT INTO evidence(source,source_sha,role,line_start,line_end,anchor,anchor_sha,topics,entities) VALUES(?,?,?,?,?,?,?,?,?)",
-                              (meta["source_name"],meta["sha256"],role,lo,hi,anchor,_sha(anchor)," ".join(topics)," ".join(entities)))
+                    c.execute("INSERT INTO evidence(source,source_sha,role,line_start,line_end,anchor,anchor_sha,topics,entities,section_start) VALUES(?,?,?,?,?,?,?,?,?,?)",
+                              (meta["source_name"],meta["sha256"],role,lo,hi,anchor,_sha(anchor)," ".join(topics)," ".join(entities),section_start))
                     count+=1
                 stats.append({"source":meta["source_name"],"lines":len(body.splitlines()),"windows":count})
+            # Entity mentions in nearby windows are context hints only, never attributed facts.
+            c.execute("""WITH context AS (SELECT id,group_concat(entities,' ') OVER (PARTITION BY source,section_start ORDER BY line_start ROWS BETWEEN 4 PRECEDING AND 4 FOLLOWING) AS nearby FROM evidence) UPDATE evidence SET near_entities=(SELECT nearby FROM context WHERE context.id=evidence.id)""")
             c.execute("INSERT INTO search(search) VALUES('rebuild')")
             c.execute("INSERT INTO meta VALUES('schema',?)",(SCHEMA,))
             c.execute("INSERT INTO meta VALUES('manifest_sha',?)",(_sha(json.dumps(manifest,sort_keys=True,ensure_ascii=False)),))
@@ -124,6 +133,75 @@ def build(root, db):
     finally:
         temp.unlink(missing_ok=True)
 
+# Lexical expansion is domain-general, not a learned embedding or answer lookup.
+SYNONYM_GROUPS = (
+    "estatura altura alto alta altos altas esguia esguio",
+    "aparencia fisica fisico feicoes rosto cabelos olhos silhueta postura beleza elegante",
+    "roupa roupas traje trajes vestido vestimenta vestia tecido",
+    "ciume ciumes rival rivalidade seducao seduzir briga conflito",
+    "reconciliacao reconciliar desculpa desculpas confianca atitudes",
+    "resgate resgatado resgatados resgatamos recuperar recuperado libertar",
+    "ferido feridos ferimento ferimentos recuperacao",
+    "design desenho projeto arquitetura inspiracao inspirado inspirada",
+    "cidade cidade portuaria porto portos costeira litoral",
+    "bandeira bandeiras brasao simbolo cores identidade",
+    "capacidade potencia poder fluxo reserva crescimento",
+    "escama escamas dragao criatura anciao",
+    "inventario mochila bolsa bolsas armazenamento dimensao dimensional",
+    "ferramenta ferramentas utensilio utensilios instrumentos equipamento equipamentos",
+    "voz dialogo fala expressao respondeu perguntou",
+)
+STOP={"a","o","as","os","de","da","do","das","dos","e","em","que","qual","quem","como","quando","foi","era","um","uma","no","na","por","para","com"}
+def expand_groups(ts):
+    groups=[set(g.split()) for g in SYNONYM_GROUPS]
+    return {t:set().union(*(g for g in groups if t in g))-{t} for t in ts if any(t in g for g in groups)}
+
+def contextual_retrieve(db, query, entity=None, topic=None, role=None, limit=20):
+    terms=set(tokens(query))-STOP
+    if not terms: terms=set(tokens(query))
+    if not entity:
+        named=[k for k,aliases in ALIASES.items() if k not in ("inventory","legiao","lucas") and any(set(tokens(a)).issubset(terms) for a in aliases)]
+        if len(named)==1: entity=named[0]
+    expanded=expand_groups(terms)
+    terms_all=terms|set().union(*expanded.values())
+    def fts(ts):
+        return 'anchor : ('+' OR '.join('"'+t+'"' for t in sorted(ts))+')'
+    with sqlite3.connect(f"{Path(db).resolve().as_uri()}?mode=ro",uri=True) as c:
+        c.row_factory=sqlite3.Row
+        if c.execute("SELECT value FROM meta WHERE key='schema'").fetchone()[0]!=SCHEMA:
+            raise ValueError("Wrong projection schema")
+        sql="SELECT e.*,bm25(search) AS score FROM search JOIN evidence e ON e.id=search.rowid WHERE search MATCH ?"
+        filters=[]; params=[]
+        if role:filters.append("e.role=?");params.append(role)
+        if topic:filters.append("(' '||e.topics||' ') LIKE ?");params.append("% "+topic+" %")
+        base=sql+(" AND "+" AND ".join(filters) if filters else "")
+        candidates={}
+        for ts,restricted in ((terms,True),(terms_all,True),(terms,False)):
+            args=[fts(ts)]+params
+            stmt=base
+            if entity and restricted:
+                stmt+=" AND (' '||e.near_entities||' ') LIKE ?";args.append("% "+entity+" %")
+            stmt+=" ORDER BY score,e.source,e.line_start LIMIT 240"
+            for row in c.execute(stmt,args):
+                h=dict(row)
+                if h["id"] not in candidates:
+                    candidates[h["id"]]=h
+        def rank(h):
+            words=set(tokens(h["anchor"]))
+            direct=len(terms&words)
+            extra=sum(bool((expanded.get(t,set())&words)) for t in terms-words)
+            close=bool(entity and entity in h["near_entities"].split())
+            exact=bool(entity and entity in h["entities"].split())
+            return (-(direct+0.35*extra+0.75*close+0.10*exact),h["score"],h["source"],h["line_start"])
+        ordered=sorted(candidates.values(),key=rank)
+    selected=[]
+    for h in ordered:
+        if any(h["source"]==x["source"] and h["section_start"]==x["section_start"] and min(h["line_end"],x["line_end"])-max(h["line_start"],x["line_start"])+1>=9 for x in selected):
+            continue
+        selected.append(h)
+        if len(selected)==limit:break
+    return {"query":query,"hits":selected,"status":"CANDIDATES_ONLY" if selected else "NOT_RECOVERED","canon_changed":False,"semantic_certification":False,"context_hints_only":True}
+
 def retrieve(db, query, entity=None, topic=None, role=None, limit=20, strategy="hybrid"):
     if not query.strip() or not 1<=limit<=100:
         raise ValueError("Invalid query/limit")
@@ -133,11 +211,13 @@ def retrieve(db, query, entity=None, topic=None, role=None, limit=20, strategy="
         raise ValueError("Unknown topic")
     if role not in (None,"Prompt","Response","EXPORT_METADATA"):
         raise ValueError("Unknown role")
-    if strategy not in ("legacy", "hybrid"):
+    if strategy not in ("legacy", "hybrid", "contextual"):
         raise ValueError("Unknown strategy")
     ts=list(dict.fromkeys(tokens(query)))
     if not 1<=len(ts)<=24:
         raise ValueError("Invalid token count")
+    if strategy=="contextual":
+        return contextual_retrieve(db,query,entity,topic,role,limit)
     # Restrict matching to literal text, never synthetic entity/topic labels.
     expr=" OR ".join('"'+t+'"' for t in ts)
     if strategy=="hybrid":
@@ -204,11 +284,11 @@ def main(argv=None):
     p.add_argument("--db",type=Path,required=True)
     sub=p.add_subparsers(dest="action",required=True)
     sub.add_parser("build")
-    r=sub.add_parser("search");r.add_argument("query");r.add_argument("--entity");r.add_argument("--topic");r.add_argument("--role")
+    r=sub.add_parser("search");r.add_argument("query");r.add_argument("--entity");r.add_argument("--topic");r.add_argument("--role");r.add_argument("--strategy",choices=("legacy","hybrid","contextual"),default="hybrid")
     b=sub.add_parser("brief");b.add_argument("query");b.add_argument("--entity",action="append",default=[]);b.add_argument("--topic",action="append",default=[])
     a=p.parse_args(argv)
     if a.action=="build": result=build(a.archive_root,a.db)
-    elif a.action=="search": result=retrieve(a.db,a.query,a.entity,a.topic,a.role)
+    elif a.action=="search": result=retrieve(a.db,a.query,a.entity,a.topic,a.role,strategy=a.strategy)
     else: result=brief(a.archive_root,a.db,a.query,a.entity,a.topic)
     print(json.dumps(result,ensure_ascii=False,indent=2))
     return 0
