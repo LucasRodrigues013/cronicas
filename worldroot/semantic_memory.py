@@ -4,7 +4,7 @@ No story text is sent to a remote inference service. No model is fine-tuned on t
 from __future__ import annotations
 import sqlite3,hashlib,json
 from pathlib import Path
-from .deep_recovery import tokens,STOP
+from .deep_recovery import tokens,STOP,expand_groups,ALIASES
 from .memory_continuity import fusion
 
 class DenseIndex:
@@ -86,6 +86,41 @@ class DenseIndex:
                 if i>=len(arr):continue
                 h=arr[i]
                 if h["id"] in seen:continue
+                seen.add(h["id"]);out.append(h)
+                if len(out)==limit:return out
+        return out
+
+    def wide(self,query,entity=None,role=None,limit=400):
+        """Adaptive high-recall candidate pool. Not the context passed to the writer."""
+        if not 1<=limit<=400:raise ValueError("Wide pool limit")
+        initial=self.combined(query,entity,role,min(limit,160))
+        if len(initial)>=limit:return initial
+        terms=set(tokens(query))-STOP or set(tokens(query))
+        if not terms:return initial
+        if entity is None:
+            names=[k for k,aliases in ALIASES.items() if k not in ("lucas","inventory","legiao") and any(set(tokens(a)).issubset(terms) for a in aliases)]
+            if len(names)==1:entity=names[0]
+        extra=set().union(*expand_groups(terms).values())
+        paths=[]
+        def expr(ts,prefix=False):
+            return "anchor : ("+" OR ".join('"'+(t[:max(4,len(t)-2)] if prefix and len(t)>=6 else t)+'"'+("*" if prefix and len(t)>=6 else "") for t in sorted(ts))+")"
+        with sqlite3.connect(self.db.resolve().as_uri()+"?mode=ro",uri=True) as c:
+            c.row_factory=sqlite3.Row
+            for ts,prefix,restrict in ((terms,False,False),(terms,True,False),(terms|extra,False,False),(terms,True,True),(terms|extra,False,True)):
+                sql="SELECT e.id,e.source,e.role,e.line_start,e.line_end,e.anchor,e.anchor_sha,bm25(search) AS score FROM search JOIN evidence e ON e.id=search.rowid WHERE search MATCH ?"
+                args=[expr(ts,prefix)]
+                if role:sql+=" AND e.role=?";args.append(role)
+                if restrict and entity:sql+=" AND (' '||e.near_entities||' ') LIKE ?";args.append("% "+entity+" %")
+                if restrict and not entity:continue
+                sql+=" ORDER BY score,e.id LIMIT 500"
+                paths.append([dict(row) for row in c.execute(sql,args)])
+        out=list(initial);seen={h["id"] for h in initial}
+        for i in range(max((len(p) for p in paths),default=0)):
+            for p in paths:
+                if i>=len(p):continue
+                h=p[i]
+                if h["id"] in seen:continue
+                if any(h["source"]==x["source"] and h["role"]==x["role"] and min(h["line_end"],x["line_end"])-max(h["line_start"],x["line_start"])+1>=9 for x in out):continue
                 seen.add(h["id"]);out.append(h)
                 if len(out)==limit:return out
         return out
