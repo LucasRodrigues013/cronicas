@@ -16,7 +16,7 @@ class EditorialMemoryTests(unittest.TestCase):
 
     def test_policy_is_versioned_scoped_and_evidence_linked(self):
         v = validate_policy(self.policy)
-        self.assertEqual(v["version"], 17)
+        self.assertEqual(v["version"], 18)
         self.assertTrue({f"P{i}" for i in range(99,106)}.issubset({r["id"] for r in self.policy["rules"]}))
         self.assertTrue({f"P{i}" for i in range(89,99)}.issubset({r["id"] for r in self.policy["rules"]}))
         self.assertTrue({f"P{i}" for i in range(82,89)}.issubset({r["id"] for r in self.policy["rules"]}))
@@ -76,7 +76,7 @@ class EditorialMemoryTests(unittest.TestCase):
         result = compact_brief(self.policy, scene_tags=("MIREN", "ROMANCE"), max_chars=1750)
         self.assertLessEqual(len(result["text"]), 1900)
         self.assertIn("P06", result["selected_rule_ids"])
-        self.assertEqual(result["policy_version"], 17)
+        self.assertEqual(result["policy_version"], 18)
         self.assertNotIn("SOURCE_COUNT", result["text"])
 
     def test_images_are_structurally_rejected(self):
