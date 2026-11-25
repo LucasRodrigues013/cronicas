@@ -7,6 +7,8 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
+import tempfile
 import re
 import sqlite3
 import unicodedata
@@ -14,7 +16,7 @@ from pathlib import Path
 from .history_index import read_verified_sources
 from .literary_experience import writer_brief
 
-SCHEMA = "worldroot-r31-deep-recovery-v1"
+SCHEMA = "worldroot-r31-deep-recovery-v2"
 ROLE = re.compile(r"^## (Prompt|Response):\s*$")
 DAY = re.compile(r"\bDIA\s+(\d{1,3})\b", re.I)
 TOPICS = {
@@ -25,6 +27,8 @@ TOPICS = {
     "world": r"brasão|bandeira|arquitetura|distrito|capital|território|cidade|design|inspir|anel",
     "event": r"resgat|desaparecid|captur|batalha|vitória|derrota|ferid|viagem|chegou",
     "voice": r"gritou|sussur|respondeu|iron|humor|gargalh",
+    "sensory": r"cheir|aroma|perfume|textura|vento|luz|som|eco|frio|calor|sabor",
+    "epic": r"dragão|exército|maravilha|colossal|imens|batalha|assombro|horizonte|vitória",
 }
 ALIASES = {
     "miren": ("Miren",), "lucas": ("Lucas Rodrigues", "Lucas", "Criador"),
@@ -34,6 +38,12 @@ ALIASES = {
     "kairon": ("Káiron", "Kairon"), "aerun": ("AERÚN", "AERUN"),
     "calderva": ("Calderva",), "genese": ("GÊNESE", "CREATION"),
     "inventory": ("mochila dimensional", "Matriz-Mãe", "inventário"),
+    "elyan": ("Elyan",), "legiao": ("Legião", "Legionário", "legionários"),
+    "astra": ("Astra",), "lysa": ("Lysa",), "brannik": ("Brannik",),
+    "nox": ("NÓX", "NOX"), "caedren": ("Caedren",), "aeldric": ("Aeldric",),
+    "yra": ("Yra",), "talis": ("Talis",), "thaeron": ("Thaeron",),
+    "seron": ("Seron",), "naira": ("Naira",), "rumo": ("Rumo",),
+    "argos": ("ARGOS",), "leviata": ("LEVIATÃ", "Leviatã"),
 }
 
 def norm(s):
@@ -61,6 +71,8 @@ def sections(body):
 
 def windows(body, width=18, stride=9):
     """Overlapping windows never cross a prompt/response boundary."""
+    if not 1 <= stride <= width <= 100:
+        raise ValueError("Invalid window geometry")
     for role, start, lines in sections(body):
         for i in range(0, len(lines), stride):
             group = lines[i:i+width]
@@ -74,8 +86,11 @@ def build(root, db):
         raise ValueError("R31 projection must be outside archive")
     if db.exists():
         raise FileExistsError("Use a fresh projection path")
+    fd, temporary = tempfile.mkstemp(prefix=".r31-", suffix=".sqlite", dir=db.parent)
+    os.close(fd)
+    temp = Path(temporary)
     try:
-        with sqlite3.connect(db) as c:
+        with sqlite3.connect(temp) as c:
             c.executescript("""
             CREATE TABLE meta(key TEXT PRIMARY KEY,value TEXT NOT NULL);
             CREATE TABLE evidence(id INTEGER PRIMARY KEY, source TEXT, source_sha TEXT,
@@ -85,14 +100,14 @@ def build(root, db):
               content='evidence',content_rowid='id',tokenize='unicode61 remove_diacritics 2');
             """)
             stats=[]
+            entity_patterns = {key: re.compile(r"(?<!\w)(?:"+"|".join(re.escape(norm(a)) for a in aliases)+r")(?!\w)") for key, aliases in ALIASES.items()}
+            topic_patterns = {key: re.compile(p, re.I) for key,p in TOPICS.items()}
             for meta, body in sources:
                 count=0
                 for role, lo, hi, anchor in windows(body):
                     nt=norm(anchor)
-                    entities=[key for key, aliases in ALIASES.items()
-                              if any(re.search(r"(?<!\w)"+re.escape(norm(a))+r"(?!\w)", nt)
-                                     for a in aliases)]
-                    topics=[k for k,p in TOPICS.items() if re.search(p,anchor,re.I)]
+                    entities=[key for key, pattern in entity_patterns.items() if pattern.search(nt)]
+                    topics=[key for key, pattern in topic_patterns.items() if pattern.search(anchor)]
                     c.execute("INSERT INTO evidence(source,source_sha,role,line_start,line_end,anchor,anchor_sha,topics,entities) VALUES(?,?,?,?,?,?,?,?,?)",
                               (meta["source_name"],meta["sha256"],role,lo,hi,anchor,_sha(anchor)," ".join(topics)," ".join(entities)))
                     count+=1
@@ -103,12 +118,13 @@ def build(root, db):
             c.execute("INSERT INTO meta VALUES('coverage',?)",(json.dumps(stats),))
             if c.execute("PRAGMA quick_check").fetchone()[0]!="ok":
                 raise ValueError("Projection integrity failure")
+        # Atomic no-clobber publication; existing valid projection is never removed.
+        os.link(temp, db)
         return {"schema":SCHEMA,"coverage":stats,"canon_changed":False,"semantic_certification":False}
-    except BaseException:
-        db.unlink(missing_ok=True)
-        raise
+    finally:
+        temp.unlink(missing_ok=True)
 
-def retrieve(db, query, entity=None, topic=None, role=None, limit=20):
+def retrieve(db, query, entity=None, topic=None, role=None, limit=20, strategy="hybrid"):
     if not query.strip() or not 1<=limit<=100:
         raise ValueError("Invalid query/limit")
     if entity is not None and entity not in ALIASES:
@@ -117,10 +133,15 @@ def retrieve(db, query, entity=None, topic=None, role=None, limit=20):
         raise ValueError("Unknown topic")
     if role not in (None,"Prompt","Response","EXPORT_METADATA"):
         raise ValueError("Unknown role")
-    ts=tokens(query)
+    if strategy not in ("legacy", "hybrid"):
+        raise ValueError("Unknown strategy")
+    ts=list(dict.fromkeys(tokens(query)))
     if not 1<=len(ts)<=24:
         raise ValueError("Invalid token count")
+    # Restrict matching to literal text, never synthetic entity/topic labels.
     expr=" OR ".join('"'+t+'"' for t in ts)
+    if strategy=="hybrid":
+        expr="anchor : ("+expr+")"
     sql="SELECT e.*,bm25(search) AS score FROM search JOIN evidence e ON e.id=search.rowid WHERE search MATCH ?"
     args=[expr]
     for field,val in (("entities",entity),("topics",topic)):
@@ -129,18 +150,42 @@ def retrieve(db, query, entity=None, topic=None, role=None, limit=20):
             args.append("% "+val+" %")
     if role:
         sql+=" AND e.role=?";args.append(role)
-    sql+=" ORDER BY score,e.source,e.line_start LIMIT ?";args.append(limit)
+    sql+=" ORDER BY score,e.source,e.line_start LIMIT ?";args.append(limit if strategy=="legacy" else max(100,limit*5))
     with sqlite3.connect(f"{Path(db).resolve().as_uri()}?mode=ro",uri=True) as c:
         c.row_factory=sqlite3.Row
         if c.execute("SELECT value FROM meta WHERE key='schema'").fetchone()[0]!=SCHEMA:
             raise ValueError("Wrong projection schema")
         hits=[dict(r) for r in c.execute(sql,args)]
+    if strategy=="hybrid":
+        # Re-rank by literal query token coverage, then BM25. Avoid duplicate windows
+        # hiding distinct scenes. This is lexical retrieval, not an embedding model.
+        stop={"a","o","as","os","de","da","do","das","dos","e","em","que","qual","quem","como","quando","foi","era","um","uma","no","na","por","para","com"}
+        terms=set(ts)-stop or set(ts)
+        hits.sort(key=lambda h:(-len(terms.intersection(tokens(h["anchor"]))),h["score"],h["source"],h["line_start"]))
+        selected=[]
+        for h in hits:
+            if any(h["source"]==x["source"] and h["role"]==x["role"] and min(h["line_end"],x["line_end"])-max(h["line_start"],x["line_start"])+1>=9 for x in selected):
+                continue
+            selected.append(h)
+            if len(selected)==limit: break
+        hits=selected
     return {"query":query,"hits":hits,"status":"CANDIDATES_ONLY" if hits else "NOT_RECOVERED",
             "canon_changed":False,"semantic_certification":False}
 
+def verify_manifest(root, db):
+    manifest=json.loads((Path(root)/"history/sources/MANIFEST.json").read_text(encoding="utf-8"))
+    expected=_sha(json.dumps(manifest,sort_keys=True,ensure_ascii=False))
+    with sqlite3.connect(f"{Path(db).resolve().as_uri()}?mode=ro",uri=True) as c:
+        meta=dict(c.execute("SELECT key,value FROM meta"))
+        if meta.get("schema")!=SCHEMA or meta.get("manifest_sha")!=expected:
+            raise ValueError("Stale or incompatible R31 projection")
+    return True
+
 def brief(root, db, query, entities=(), topics=()):
     # Existing R30 observations remain in the writer context.
-    base=writer_brief(Path(root),character_ids=tuple(entities))
+    root=Path(root)
+    verify_manifest(root,db)
+    base=writer_brief(root,character_ids=tuple(entities))
     candidates=[]
     for ent in entities or (None,):
         for topic in topics or (None,):
