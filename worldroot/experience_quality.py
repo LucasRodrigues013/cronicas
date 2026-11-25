@@ -8,7 +8,8 @@ CRITERIA=("continuity","causality","voice","appearance","sensory","relationships
 def safe(s):
     if not isinstance(s,str) or not s.strip() or any(c in s for c in ("<",">","{","}","\n")):raise ValueError("Unsafe or empty display string")
     return s.strip()
-def render_choices(packet,episode_id):
+def render_choices(packet,episode_id,*,revision=30):
+    if revision not in (30,34):raise ValueError("Unsupported choice revision")
     if arc_review(packet)["errors"]:raise ValueError("Invalid four-route packet")
     if not re.fullmatch(r"[A-Za-z0-9_-]{3,128}",episode_id):raise ValueError("Invalid episode ID")
     # Exact same visual hierarchy, size and button variant for all four.
@@ -16,11 +17,15 @@ def render_choices(packet,episode_id):
     for o in packet["options"]:
         n=o["number"]
         title=safe(o["title"]);title=("ESPECIAL — "+title) if n==4 and not title.upper().startswith("ESPECIAL") else title;promise=safe(o["promise"]);reward=safe(o["reward"]);risk=safe(o["risk"])
-        prompt=json.dumps(choice_prompt(episode_id,n),ensure_ascii=False)
+        prompt=json.dumps(choice_prompt(episode_id,n,revision=revision),ensure_ascii=False)
         rows.extend(['  <box border radius="lg" padding={3} gap={2}>',f'    **{n} — {title}**','',f'    {promise}','',f'    **Recompensa possível:** {reward}','',f'    **Risco:** {risk}','',f'    <button block color="secondary" variant="outline" onClick={{() => GenUI.issueNewTurn({prompt})}}>Escolher opção {n}</button>','  </box>'])
-    before,after=choice_prompt(episode_id,5,"__FREE_TEXT__").split("__FREE_TEXT__")
+    before,after=choice_prompt(episode_id,5,"__FREE_TEXT__",revision=revision).split("__FREE_TEXT__")
     free=json.dumps(before,ensure_ascii=False)+"+acaoLivre.trim()+"+json.dumps(after,ensure_ascii=False)
     rows.extend(['  <box gap={2}>','    **5 — AÇÃO LIVRE**','    <textarea value={acaoLivre} onChange={setAcaoLivre} rows={3} placeholder="Descreva suas decisões..."/>',f'    <button color="secondary" variant="outline" disabled={{!acaoLivre.trim()}} onClick={{() => GenUI.issueNewTurn({free})}}>Confirmar ação livre</button>','  </box>','</box>'])
+    if revision==34:
+        rows[1]='<box gap={3}>'
+        rows.insert(1,'<caption>Quatro caminhos · consequências distintas · sua decisão</caption>')
+        rows=[line.replace("**Recompensa possível:**","**O que pode mudar:**").replace("**Risco:**","**O que está em jogo:**") for line in rows]
     return {"body_declaration":'{@body const [acaoLivre,setAcaoLivre]=DIL.useState("");}',"markup":"\n".join(rows)}
 def compare_versions(a,b):
     if not a.strip() or not b.strip():raise ValueError("Complete drafts required")

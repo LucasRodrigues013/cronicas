@@ -31,7 +31,7 @@ def release_review(root,head,payload):
     a=arc_review(review.get("arc_packet"))
     if a["errors"]:raise ValueError("R32 route contract: "+"; ".join(a["errors"]))
     if review.get("editorial_parity_reviewed") is not True:raise ValueError("Explicit editorial choice review required")
-    rendered=render_choices(review["arc_packet"],payload["delivery_id"])
+    rendered=render_choices(review["arc_packet"],payload["delivery_id"],revision=34 if payload.get("metadata",{}).get("worldroot_revision")==34 else 30)
     if rendered["markup"] not in text or not text.startswith(rendered["body_declaration"]):raise ValueError("Visible options differ from reviewed equal-style routes")
     choices=payload["choices"]
     for opt,c in zip(review["arc_packet"]["options"],choices[:4]):

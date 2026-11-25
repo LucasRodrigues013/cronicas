@@ -16,8 +16,8 @@ class EditorialMemoryTests(unittest.TestCase):
 
     def test_policy_is_versioned_scoped_and_evidence_linked(self):
         v = validate_policy(self.policy)
-        self.assertEqual(v["version"], 19)
-        self.assertTrue({f"P{i:02d}" for i in range(1,116)}.issubset({r["id"] for r in self.policy["rules"]}))
+        self.assertEqual(v["version"], 20)
+        self.assertTrue({f"P{i:02d}" for i in range(1,121)}.issubset({r["id"] for r in self.policy["rules"]}))
         self.assertTrue({f"P{i}" for i in range(99,106)}.issubset({r["id"] for r in self.policy["rules"]}))
         self.assertTrue({f"P{i}" for i in range(89,99)}.issubset({r["id"] for r in self.policy["rules"]}))
         self.assertTrue({f"P{i}" for i in range(82,89)}.issubset({r["id"] for r in self.policy["rules"]}))
@@ -77,7 +77,7 @@ class EditorialMemoryTests(unittest.TestCase):
         result = compact_brief(self.policy, scene_tags=("MIREN", "ROMANCE"), max_chars=1750)
         self.assertLessEqual(len(result["text"]), 1900)
         self.assertIn("P06", result["selected_rule_ids"])
-        self.assertEqual(result["policy_version"], 19)
+        self.assertEqual(result["policy_version"], 20)
         self.assertNotIn("SOURCE_COUNT", result["text"])
 
     def test_r33_lived_experience_live_brief(self):
