@@ -72,6 +72,9 @@ def prepare_from_request(root,request):
     ident=request["delivery_id"];check_id(ident)
     packet=preparation(root,request["head"],ident,request["requirements"],request["reviewed"],request["domain_review"],request["scene_plan"])
     if packet["authority"]["choice_sha256"]!=request.get("choice_sha256"):raise ValueError("Request choice differs")
+    packet.pop("preparation_sha256")
+    packet["request_sha256"]=digest(request)
+    packet["preparation_sha256"]=digest(packet)
     return {"result":persist(Path(root)/"preparations"/(ident+".json"),packet),"preparation_sha256":packet["preparation_sha256"],"delivery_id":ident,"canon_changed":False}
 def verify_submission(root,head,payload):
     ident=payload["delivery_id"];check_id(ident)
@@ -79,12 +82,15 @@ def verify_submission(root,head,payload):
     copy=dict(packet);recorded=copy.pop("preparation_sha256",None)
     if recorded!=digest(copy) or packet.get("delivery_id")!=ident or packet.get("head")!=head or packet.get("project")!="CRONICAS_DE_UM_NOVO_MUNDO":raise ValueError("Invalid or stale preparation")
     if author_context(root,head)!=packet["authority"]:raise ValueError("Changed source authority")
+    request=read(Path(root)/"requests"/(ident+".json"))
+    if digest(request)!=packet.get("request_sha256"):raise ValueError("Preparation request changed")
     review=payload.get("r33_review")
     if not isinstance(review,dict) or review.get("preparation_sha256")!=recorded:raise ValueError("Preparation not bound to submission")
     r32=payload["r32_review"]
     for key in ("requirements","reviewed","domain_review"):
         if r32.get(key)!=packet[key]:raise ValueError("Preparation changed: "+key)
-    if r32.get("scene_requirements")!=[{"scene":p["scene"],"ids":p["ids"]} for p in packet["scene_plan"]]:raise ValueError("Scene mapping changed; prepare a fresh delivery ID before narration")
+    if r32.get("scene_requirements")!=[{"scene":p["scene"],"ids":p["ids"]} for p in packet["scene_plan"]]:
+        if not isinstance(review.get("scene_plan_revision_reason"),str) or len(review["scene_plan_revision_reason"].split())<4:raise ValueError("Explain organic scene plan adjustment; requirements must remain intact")
     for option,stored in zip(r32["arc_packet"]["options"],payload["choices"][:4]):
         if stored.get("description")!=option["promise"]:raise ValueError("Stored choice intent differs from displayed promise")
     reviews=review.get("reviews")
