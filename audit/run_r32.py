@@ -103,12 +103,12 @@ idx.save_lsa(db.parent/"r32-lsa")
 reloaded=DenseIndex.load_lsa(db,db.parent/"r32-lsa")
 assert [h["id"] for h in idx.search("Miren",limit=20)]==[h["id"] for h in reloaded.search("Miren",limit=20)]
 emit({"stage":"DENSE_READBACK","same_top20":True})
-for strategy in ("dense","combined"):
+for strategy in ("dense","combined","wide"):
     ranks={"development":[],"additional":[]};start=time.monotonic()
     for split,q,source,lo,hi,role in gold:
-        hits=idx.search(q,role,80) if strategy=="dense" else idx.combined(q,role=role,limit=160)
+        hits=idx.search(q,role,80) if strategy=="dense" else (idx.combined(q,role=role,limit=160) if strategy=="combined" else idx.wide(q,role=role,limit=400))
         rank=next((i for i,h in enumerate(hits,1) if h["source"]==source and min(h["line_end"],hi)-max(h["line_start"],lo)+1>=min(3,hi-lo+1)),0)
         ranks[split].append(rank)
-    emit({"stage":"DENSE_EVAL","strategy":strategy,"seconds":round(time.monotonic()-start,3),"splits":{k:{"n":len(v),"hit20":sum(0<r<=20 for r in v),"hit80":sum(0<r<=80 for r in v),"hit160":sum(r>0 for r in v),"mrr":round(sum(1/r for r in v if r)/len(v),4)} for k,v in ranks.items()}})
+    emit({"stage":"DENSE_EVAL","strategy":strategy,"seconds":round(time.monotonic()-start,3),"splits":{k:{"n":len(v),"hit20":sum(0<r<=20 for r in v),"hit80":sum(0<r<=80 for r in v),"hit160":sum(0<r<=160 for r in v),"hit400":sum(r>0 for r in v) if strategy=="wide" else None,"mrr":round(sum(1/r for r in v if r)/len(v),4)} for k,v in ranks.items()}})
 assert before==[sha(p) for p in paths]
 emit({"stage":"R32_READ_ONLY","unchanged":True,"head":head["day"]})
