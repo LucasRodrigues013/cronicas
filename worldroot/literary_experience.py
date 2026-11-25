@@ -183,21 +183,22 @@ def experience_cards(prose: str, root: Path, head: dict, packet=None) -> dict:
     return {"status":"REVIEW" if issues else "ANCHORS_CHECKED","checked":len(cards),"issues":issues,
             "semantic_certification":False}
 
-def choice_prompt(episode_id: str, option: int, free_text: str="") -> str:
+def choice_prompt(episode_id: str, option: int, free_text: str="", *, revision=VERSION) -> str:
+    if revision not in (30,34):raise ValueError("Unsupported choice revision")
     if not re.fullmatch(r"[A-Za-z0-9_-]{3,128}",episode_id) or type(option) is not int or option not in range(1,6):
         raise ValueError("Invalid episode/option")
     if not isinstance(free_text,str) or len(free_text)>2048 or (option==5 and not free_text.strip()):
         raise ValueError("Invalid free action")
-    return f"WORLDROOT R{VERSION}: escolho opção {option} do episódio {episode_id}." + (
+    return f"WORLDROOT R{revision}: escolho opção {option} do episódio {episode_id}." + (
         " Ação livre/instrução adicional: "+free_text if free_text.strip() else "") + " Recuperar HEAD, RESUME e opção literal; registrar somente esta escolha real."
 
-def choice_review(full_text: str) -> dict:
+def choice_review(full_text: str, *, revision=VERSION) -> dict:
     cut=re.search(r"(?mi)^##\s+(?:AS CINCO PORTAS|ESCOLHAS|CINCO ESCOLHAS)",full_text)
     tail=full_text[cut.start():] if cut else ""
     versions=sorted(set(int(x) for x in VERSION_TAG.findall(tail)))
-    return {"versions":versions,"stale_versions":[v for v in versions if v!=VERSION],
+    return {"versions":versions,"stale_versions":[v for v in versions if v!=revision],
             "special_combination_signal":bool(SPECIAL_COMBINE.search(tail)),
-            "status":"REVIEW" if not versions or any(v!=VERSION for v in versions) or SPECIAL_COMBINE.search(tail) else "CURRENT_VERSION_SIGNAL",
+            "status":"REVIEW" if not versions or any(v!=revision for v in versions) or SPECIAL_COMBINE.search(tail) else "CURRENT_VERSION_SIGNAL",
             "legacy_preserved":True,"canon_changed":False}
 
 def causal_review(prose: str, root: Path, head: dict, cards=None) -> dict:
@@ -237,7 +238,7 @@ def review(prose: str, root: Path, head: dict, full_text=None, cards=None, exper
     return {"status":"ADVISORY_ONLY","metrics":m,"notices":notes,
             "causality":causal_review(prose,root,head,cards),
             "experience_review":experience_cards(prose,root,head,experience),
-            "choice_contract":choice_review(full_text) if isinstance(full_text,str) else None,
+            "choice_contract":choice_review(full_text,revision=34 if "WORLDROOT R34" in full_text[:2000] else VERSION) if isinstance(full_text,str) else None,
             "literary_certification":False,"canon_changed":False}
 
 def receipt(prose,root,head,full_text=None,cards=None,experience=None):

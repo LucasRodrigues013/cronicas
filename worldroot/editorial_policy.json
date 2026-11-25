@@ -1,7 +1,7 @@
 {
   "schema": "worldroot-editorial-policy-v1",
   "project": "CRONICAS_DE_UM_NOVO_MUNDO",
-  "version": 19,
+  "version": 20,
   "reviewed_at": "2026-11-25",
   "approved_scope": "AUTHOR_APPROVED_EDITORIAL_DYNAMICS_NOT_NARRATED_CANON",
   "source_of_truth": "main/worldroot/editorial_policy.json",
@@ -227,6 +227,14 @@
       "transcript_line": null,
       "quote": "E também o que causa nos outros personagens, né? Não é só nela. Então é todos os outros juntos também",
       "reference": "docs/r33-authorial-lived-anime-experience-20261125.md"
+    },
+    {
+      "id": "S32",
+      "kind": "AUTHOR_APPROVAL",
+      "at": "2026-11-25",
+      "transcript_line": null,
+      "quote": "Eu só senti que o design e também a questão da mulher +18 é falar de forma nua sobre peito, bunda, perna e assunto não apareceu.",
+      "reference": "docs/r34-living-character-experience.md"
     }
   ],
   "rules": [
@@ -2252,6 +2260,96 @@
       "core": true,
       "evidence": [
         "S31"
+      ],
+      "active": true
+    },
+    {
+      "id": "P116",
+      "title": "Cobertura da intenção autoral",
+      "directive": "Antes de escrever, revisar separadamente cotidiano, identidade física, relações adultas, elenco, maravilhamento, ritmo e design. Vincular cada dimensão a uma regra literal, requisito crítico e oportunidade ou adiamento justificado; cobertura de memória não equivale a satisfação estética.",
+      "tags": [
+        "R34",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S32"
+      ],
+      "active": true
+    },
+    {
+      "id": "P117",
+      "title": "Identidade individual com evidência",
+      "directive": "Para personagens focais recuperar fichas, aparência, idade quando pertinente, voz e vínculos. Usar detalhes físicos concretos em contexto, distinguir traço estável de roupa ou estado momentâneo, marcar lacunas e conflitos. Propostas novas não são fatos antigos. Não sexualizar menores ou idades incertas.",
+      "tags": [
+        "R34",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S32"
+      ],
+      "active": true
+    },
+    {
+      "id": "P118",
+      "title": "Revisão de oportunidades",
+      "directive": "Comparar plano e cenas reais; identificar oportunidade aplicada, naturalmente adiada ou perdida. Corrigir omissões relevantes antes de arquivar, sem forçar erotização, cenas, palavras, drama ou novos eventos; respeitar agência, reciprocidade e intimidade adulta não gráfica.",
+      "tags": [
+        "R34",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S32"
+      ],
+      "active": true
+    },
+    {
+      "id": "P119",
+      "title": "Design narrativo e escolhas vigentes",
+      "directive": "Preservar cabeçalho, calendário, cenas completas, checkpoint, prosa dominante, sem imagens por padrão; usar hierarquia clara e controles R34 vinculados à escolha literal para novos episódios. Manter quatro rotas equivalentes e ação livre, sem reescrever controles históricos.",
+      "tags": [
+        "R34",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S32"
+      ],
+      "active": true
+    },
+    {
+      "id": "P120",
+      "title": "Comparação literária rastreável",
+      "directive": "Comparar novos episódios a referências históricas pertinentes por identidade, ação, efeito emocional, visualidade e ritmo; registrar o que foi aplicado e lacunas. Âncoras e sinais estruturais são verificáveis, não certificam estética, consentimento ou semântica por si sós.",
+      "tags": [
+        "R34",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S32"
       ],
       "active": true
     }
