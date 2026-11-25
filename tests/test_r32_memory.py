@@ -1,4 +1,7 @@
-import unittest,tempfile,sqlite3
+import unittest,tempfile,sqlite3,hashlib
+from unittest.mock import patch
+from worldroot.r32_release import release_review
+from worldroot.memory_continuity import DOMAINS
 from pathlib import Path
 from worldroot.memory_graph import locate,write_graph
 from worldroot.experience_quality import render_choices,review_scores,CRITERIA
@@ -38,4 +41,29 @@ class R32Tests(unittest.TestCase):
         r=render_choices(self.packet(),"EP-001")
         self.assertEqual(r["markup"].count("EP-001"),5)
         self.assertNotIn("__FREE_TEXT__",r["markup"])
+    def payload(self):
+        packet=self.packet();rendered=render_choices(packet,"EP-001")
+        head={"day":573}
+        prose=rendered["body_declaration"]+"\n## I — A cena\n\nTexto."
+        payload={"delivery_id":"EP-001","prose":prose,"full_text":prose+"\n"+rendered["markup"],"choices":[{"number":i,"title":"Path "+str(i),"is_special":i==4,"is_free":i==5} for i in range(1,6)]}
+        payload["r32_review"]={"head":head,"prose_sha256":hashlib.sha256(prose.encode()).hexdigest(),"requirements":[{"id":"memory1","domain":"identity","critical":True,"query":"character identity"}],"domain_review":{k:{"applicable":k=="identity","reason":"reviewed"} for k in DOMAINS},"scene_requirements":[{"scene":1,"ids":["memory1"]}],"arc_packet":packet,"editorial_parity_reviewed":True,"reviewed":{}}
+        return head,payload
+    def test_release_rejects_low_coverage(self):
+        head,p=self.payload()
+        with patch("worldroot.r32_release.review_creation",return_value={"status":"RECOVER_BEFORE_RELEASE"}):
+            with self.assertRaises(ValueError):release_review(Path("."),head,p)
+    def test_release_accepts_structural_receipt(self):
+        head,p=self.payload()
+        with patch("worldroot.r32_release.review_creation",return_value={"status":"REVIEWED_EVIDENCE_THRESHOLD_MET"}):
+            self.assertFalse(release_review(Path("."),head,p)["semantic_certification"])
+    def test_release_rejects_changed_visible_options(self):
+        head,p=self.payload();p["full_text"]=p["full_text"].replace("Path 4","Different")
+        with self.assertRaises(ValueError):release_review(Path("."),head,p)
+    def test_release_rejects_unmapped_requirement(self):
+        head,p=self.payload();p["r32_review"]["scene_requirements"]=[]
+        with self.assertRaises(ValueError):release_review(Path("."),head,p)
+    def test_release_rejects_stale_head(self):
+        head,p=self.payload()
+        with self.assertRaises(ValueError):release_review(Path("."),{"day":574},p)
 if __name__=="__main__":unittest.main()
+
