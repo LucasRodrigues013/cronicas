@@ -1,4 +1,4 @@
-name: WORLDROOT R33 - immutable preparation
+name: WORLDROOT R34 - immutable preparation and author intent
 on:
   pull_request:
     branches: [story-archive]
@@ -25,7 +25,7 @@ jobs:
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
-          ref: 14ad99fffe78cfe51aea99d8ec20f57c49dc4b06
+          ref: 0676d0330ce809f086e482441bfc8f7e43f89037
           path: engine
           persist-credentials: false
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
@@ -66,7 +66,7 @@ jobs:
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
-          ref: 14ad99fffe78cfe51aea99d8ec20f57c49dc4b06
+          ref: 0676d0330ce809f086e482441bfc8f7e43f89037
           path: engine
           persist-credentials: false
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
@@ -92,7 +92,10 @@ jobs:
           if not pending:
               print("No new request; no write.")
           else:
-              print(prepare_from_request(root,read(pending[0])))
+              request=read(pending[0])
+              if "r34_intent" not in request:
+                  raise RuntimeError("R34 requires independent intent before preparation")
+              print(prepare_from_request(root,request))
           PY
       - name: Publish preparations only and verify remote commit
         env:
