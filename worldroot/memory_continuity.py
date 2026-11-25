@@ -9,6 +9,7 @@ from .living_world import load_canonical, project
 from .literary_experience import source_registry
 from .history_index import read_verified_sources
 import sqlite3
+from functools import lru_cache
 from .editorial_guard import POLICY_PATH,validate_policy
 
 DOMAINS=("identity","relationship","location","knowledge","inventory","power","world","event","promise","author_rule")
@@ -38,17 +39,24 @@ def narrative_evidence(text):
     match=re.search(r"(?mi)^##\s+(?:AS CINCO PORTAS|CINCO ESCOLHAS|ESCOLHAS)\b",text)
     return text[:match.start()] if match else text
 
+@lru_cache(maxsize=64)
+def _recent_windows(text):
+    lines=narrative_evidence(text).splitlines(keepends=True)
+    windows=[]
+    for i in range(0,len(lines),12):
+        anchor="".join(lines[i:i+24])
+        windows.append((i+1,min(i+24,len(lines)),anchor,digest(anchor),frozenset(tokens(anchor))))
+    return tuple(windows)
+
 def recent_candidates(entries, query, limit=8):
     terms=set(tokens(query))-STOP
     if not terms:return []
     hits=[]
     for entry in entries:
-        lines=narrative_evidence(entry["text"]).splitlines(keepends=True)
-        for i in range(0,len(lines),12):
-            anchor="".join(lines[i:i+24])
-            matched=terms.intersection(tokens(anchor))
+        for lo,hi,anchor,anchor_sha,words in _recent_windows(entry["text"]):
+            matched=terms.intersection(words)
             if not matched:continue
-            hits.append({"source":entry["id"],"sequence":entry["sequence"],"day":entry["day"],"source_sha":entry["sha256"],"line_start":i+1,"line_end":min(i+24,len(lines)),"anchor":anchor,"anchor_sha":digest(anchor),"matched":len(matched)})
+            hits.append({"source":entry["id"],"sequence":entry["sequence"],"day":entry["day"],"source_sha":entry["sha256"],"line_start":lo,"line_end":hi,"anchor":anchor,"anchor_sha":anchor_sha,"matched":len(matched)})
     hits.sort(key=lambda h:(-h["matched"],-h["sequence"],h["line_start"]))
     return hits[:limit]
 
