@@ -27,3 +27,11 @@ c=r30.choice_review(literal)
 emit({"test":"R30_OLD_CHOICE","result":c})
 emit({"test":"R30_HEAD_READONLY","unchanged":before==hashes(),"head_day":head["day"]})
 assert len(reports)==100 and before==hashes() and reg["status"]=="SOURCE_MATCHES"
+
+# Compare the published reference corpus with a real sample from the prior stress test.
+brief=r30.writer_brief(root,["aeldric","miren","lucas"],["aeldric","observatorio","romance"],head)
+comp=r30.compare(rows[0]["prose"],root,["origin","romance"],head)
+assert brief["status"]=="EDITORIAL_CONTEXT" and len(brief["characters"])==3 and len(brief["examples"])==3
+assert comp["status"]=="EDITORIAL_CONTEXT" and len(comp["references"])==2 and comp["literary_grade"] is None
+emit({"test":"R30_TARGETED_COMPARISON","characters":len(brief["characters"]),"references":len(brief["examples"]),"comparison_references":len(comp["references"]),"draft_words":comp["draft_metrics"]["words_approx"],"source_word_counts":[r["metrics"]["words_approx"] for r in comp["references"]],"status":comp["status"],"canon_changed":comp["canon_changed"]})
+assert before==hashes()
