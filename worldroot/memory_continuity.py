@@ -8,7 +8,7 @@ from .deep_recovery import retrieve, verify_manifest, tokens, STOP, sections
 from .living_world import load_canonical, project
 from .literary_experience import source_registry
 from .history_index import read_verified_sources
-from .history_index import read_verified_sources
+import sqlite3
 
 DOMAINS=("identity","relationship","location","knowledge","inventory","power","world","event","promise","author_rule")
 def digest(s):return hashlib.sha256(s.encode("utf-8")).hexdigest()
@@ -46,7 +46,7 @@ def recent_candidates(entries, query, limit=8):
     hits.sort(key=lambda h:(-h["matched"],-h["sequence"],h["line_start"]))
     return hits[:limit]
 
-def creation_packet(root, db, requirements, *, head, candidate_limit=80):
+def creation_packet(root, db, requirements, *, head, candidate_limit=80, vector_folder=None, graph_db=None):
     """Retrieve separately for each material memory requirement, never one query for a whole episode."""
     if type(candidate_limit) is not int or not 1<=candidate_limit<=80:raise ValueError("Invalid candidate limit")
     root=Path(root)
@@ -59,6 +59,14 @@ def creation_packet(root, db, requirements, *, head, candidate_limit=80):
     # Existing R28/R30 projections are additional retrieval routes, not replaced.
     registry=source_registry(root,head)
     world=project(root,head)
+    dense=None;graph_records=[]
+    if vector_folder is not None:
+        from .semantic_memory import DenseIndex
+        dense=DenseIndex.load_lsa(db,vector_folder)
+    if graph_db is not None:
+        with sqlite3.connect(Path(graph_db).resolve().as_uri()+"?mode=ro",uri=True) as c:
+            if json.loads(c.execute("SELECT value FROM meta WHERE key='head'").fetchone()[0])!=head:raise ValueError("Stale graph HEAD")
+            graph_records=[(domain,rid,json.loads(body)) for domain,rid,body in c.execute("SELECT domain,id,body FROM records WHERE domain IN ('dossiers','plots','assets')")]
     ids=set();items=[]
     for req in requirements:
         rid=req["id"]
@@ -75,10 +83,12 @@ def creation_packet(root, db, requirements, *, head, candidate_limit=80):
             return record.get("id")==entity or any(set(tokens(n)) and set(tokens(n)).issubset(words) for n in names)
         identities=[p for p in registry["characters"] if relevant(p)]
         related=[p for p in world["assets"]+world["plots"] if relevant(p)]
+        graph_hits=[{"domain":domain,"id":rid,"record":record} for domain,rid,record in graph_records if (rid==entity or relevant(record))]
         items.append({"requirement":req,"candidate_status":result["status"],"hits":result["hits"],
+                      "dense_candidates":dense.search(req["query"],role,candidate_limit) if dense is not None else [],"graph_candidates":graph_hits,
                       "recent_canon_candidates":recent_candidates(entries,req["query"]) if role=="Response" else [],
                       "r30_identity_candidates":identities,"r28_world_candidates":related})
-    return {"head":head,"items":items,"closed_episodes":len(entries),"status":"REVIEW_REQUIRED","canon_changed":False,
+    return {"head":head,"items":items,"closed_episodes":len(entries),"dense_enabled":dense is not None,"graph_enabled":graph_db is not None,"status":"REVIEW_REQUIRED","canon_changed":False,
             "note":"Candidate availability is not recall or proof; reconcile current state and reviewed claim."}
 
 def coverage(requirements, reviewed, sources):
@@ -166,7 +176,7 @@ def main(argv=None):
     p=argparse.ArgumentParser()
     p.add_argument("--archive-root",type=Path,required=True)
     sub=p.add_subparsers(dest="action",required=True)
-    a=sub.add_parser("prepare");a.add_argument("--db",type=Path,required=True);a.add_argument("--requirements",type=Path,required=True);a.add_argument("--candidate-limit",type=int,default=80)
+    a=sub.add_parser("prepare");a.add_argument("--db",type=Path,required=True);a.add_argument("--requirements",type=Path,required=True);a.add_argument("--candidate-limit",type=int,default=80);a.add_argument("--vector-folder",type=Path);a.add_argument("--graph-db",type=Path)
     b=sub.add_parser("review");b.add_argument("--requirements",type=Path,required=True);b.add_argument("--reviewed",type=Path,required=True)
     c=sub.add_parser("arcs");c.add_argument("--packet",type=Path,required=True)
     args=p.parse_args(argv)
@@ -175,7 +185,7 @@ def main(argv=None):
     else:
         head=load(args.archive_root/"canon/HEAD.json")
         requirements=load(args.requirements)
-        if args.action=="prepare":result=creation_packet(args.archive_root,args.db,requirements,head=head,candidate_limit=args.candidate_limit)
+        if args.action=="prepare":result=creation_packet(args.archive_root,args.db,requirements,head=head,candidate_limit=args.candidate_limit,vector_folder=args.vector_folder,graph_db=args.graph_db)
         else:result=review_creation(args.archive_root,head,requirements,load(args.reviewed))
     print(json.dumps(result,ensure_ascii=False,indent=2))
     return 0
