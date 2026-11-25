@@ -9,7 +9,7 @@ permissions:
 jobs:
   audit:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
@@ -54,3 +54,9 @@ jobs:
             ${{ runner.temp }}/r31-private/r32-lsa/
           retention-days: 7
           if-no-files-found: error
+      - name: R33 stress, authority and recovery gate
+        env:
+          R31_DB_PATH: ${{ runner.temp }}/r31-private/r31.sqlite
+          OPENBLAS_NUM_THREADS: '2'
+          OMP_NUM_THREADS: '2'
+        run: PYTHONPATH=. python -u audit/run_r33.py
