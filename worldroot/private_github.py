@@ -9,6 +9,7 @@ import base64
 import hashlib
 import json
 import os
+import re
 from urllib.error import HTTPError
 from urllib.parse import quote
 from urllib.request import Request, urlopen
@@ -51,9 +52,34 @@ class GitHubREST:
         suffix='/contents/'+quote(path,safe='/')+'?ref='+quote(self.branch,safe='')
         result=self._request('GET',suffix)
         if result is None:return None
-        if result.get('type')!='file' or result.get('encoding')!='base64':
-            raise GateError('GitHub returned a non-file or unsupported content format')
-        return {'bytes':base64.b64decode(result['content']),'sha':result['sha']}
+        if result.get('type')!='file':
+            raise GateError('GitHub returned a non-file')
+        sha=result.get('sha')
+        size=result.get('size')
+        if not isinstance(sha,str) or not re.fullmatch(r'[0-9a-f]{40}',sha):
+            raise GateError('Missing immutable Git blob identity')
+        def decode_verified(obj):
+            if not isinstance(obj,dict) or obj.get('encoding')!='base64':
+                return None
+            try:
+                data=base64.b64decode(''.join(obj.get('content','').split()),validate=True)
+            except (TypeError,ValueError,AttributeError):
+                return None
+            if type(size) is int and len(data)!=size:
+                return None
+            if hashlib.sha1(b'blob '+str(len(data)).encode('ascii')+bytes([0])+data).hexdigest()!=sha:
+                return None
+            return data
+        body=decode_verified(result)
+        if body is None:
+            # Empty/unsupported Contents response is not an absent file.
+            blob=self._request('GET','/git/blobs/'+sha)
+            if not isinstance(blob,dict) or blob.get('sha')!=sha:
+                raise GateError('Git blob fallback did not return expected identity')
+            body=decode_verified(blob)
+        if body is None:
+            raise GateError('Contents and blob recovery failed integrity verification')
+        return {'bytes':body,'sha':sha}
 
     def create(self, path: str, body: bytes):
         suffix='/contents/'+quote(path,safe='/')

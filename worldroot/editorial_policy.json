@@ -1,7 +1,7 @@
 {
   "schema": "worldroot-editorial-policy-v1",
   "project": "CRONICAS_DE_UM_NOVO_MUNDO",
-  "version": 16,
+  "version": 17,
   "reviewed_at": "2026-11-25",
   "approved_scope": "AUTHOR_APPROVED_EDITORIAL_DYNAMICS_NOT_NARRATED_CANON",
   "source_of_truth": "main/worldroot/editorial_policy.json",
@@ -203,6 +203,14 @@
       "transcript_line": null,
       "quote": "vamos criar a R29 então com todas as propostas enviadas e oque devemos começar a ter e nao devemos perder.",
       "reference": "story-archive/author-approvals/LVI-R29-EPIC-NARRATIVE-2026-11-25.json"
+    },
+    {
+      "id": "S29",
+      "kind": "AUTHOR_APPROVAL",
+      "at": "2026-11-25",
+      "transcript_line": null,
+      "quote": "façamos a proxima evolução, utilize e faça isso utilizando os dados pesquisados, analisados e verificados.",
+      "reference": "story-archive/author-approvals/LVI-R30-LITERARY-EXPERIENCE-2026-11-25.json"
     }
   ],
   "rules": [
@@ -1918,6 +1926,132 @@
       "core": true,
       "evidence": [
         "S28"
+      ],
+      "active": true
+    },
+    {
+      "id": "P99",
+      "title": "Recuperação histórica sem falsos negativos",
+      "directive": "Se resposta vazia, tamanho incompatível ou encoding não suportado, recuperar pelo blob identificado no manifesto, conferir integridade, distinguir AUSENTE de INDISPONÍVEL; interromper inferência em lacunas relevantes. Nunca promover transcrições históricas automaticamente.",
+      "tags": [
+        "R30",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S29"
+      ],
+      "active": true
+    },
+    {
+      "id": "P100",
+      "title": "Identidade física, vocal e sensorial",
+      "directive": "Consultar ficha com traços literais, voz, hábitos, relações e mudanças; distinguir permanentes de circunstanciais. Descrever rosto, expressão, postura, roupa, cheiro, som, toque, temperatura e ambiente quando significativos. Não preencher cor, altura ou perfume desconhecidos como fato.",
+      "tags": [
+        "R30",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S29"
+      ],
+      "active": true
+    },
+    {
+      "id": "P101",
+      "title": "Romance adulto e continuidade emocional",
+      "directive": "Lucas e Miren têm desejo recíproco, paixão, intimidade sensual não gráfica, conversas, brincadeiras, vulnerabilidade, iniciativa, divergências e escolhas próprias. Evitar beijo protocolar seguido de trabalho, regressão emocional e transformar Miren em acessório. Dar espaço a cenas completas e consequências.",
+      "tags": [
+        "R30",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S29"
+      ],
+      "active": true
+    },
+    {
+      "id": "P102",
+      "title": "Emoção do pequeno ao lendário",
+      "directive": "A emoção nasce de desejo, risco, vínculo e consequência; alternar cotidiano, aventura, perigo, alegria, medo, romance, assombro e clímax sem cotas ou escalada aleatória. GÊNESE plena; não fabricar fraqueza ou antagonistas para simular tensão.",
+      "tags": [
+        "R30",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S29"
+      ],
+      "active": true
+    },
+    {
+      "id": "P103",
+      "title": "Causalidade e vozes",
+      "directive": "Relacionar ações a causas e efeitos literais, conhecimento e deslocamentos comprovados; se dúvida material recuperar fonte antes de continuar. Personagens falam e agem com voz própria; preservar callbacks intencionais, humor e carisma sem fórmula.",
+      "tags": [
+        "R30",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S29"
+      ],
+      "active": true
+    },
+    {
+      "id": "P104",
+      "title": "Bastidores fora da ficção",
+      "directive": "Sinalizar linguagem editorial e explicações negativas recorrentes; não banir negações naturais nem eliminar limites reais. Revisar prosa antes de entrega, mantendo verificações e auditorias em bastidores. Sem nota automática de qualidade.",
+      "tags": [
+        "R30",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S29"
+      ],
+      "active": true
+    },
+    {
+      "id": "P105",
+      "title": "Regressão literária e escolha vigente",
+      "directive": "Consultar corpus R30 de cenas antigas e distinguir elogio literal do autor de seleção editorial. Comparar cenas novas por experiência, emoção, relações, magia e consequências, não por contagem. Novos controles usam R30 e ID literal; preservar texto e escolhas arquivados, interpretar comandos antigos pela versão vigente sem alterar seu sentido.",
+      "tags": [
+        "R30",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S29"
       ],
       "active": true
     }
