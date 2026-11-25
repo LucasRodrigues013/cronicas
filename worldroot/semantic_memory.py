@@ -35,7 +35,7 @@ class DenseIndex:
         if self.backend!="lsa":raise ValueError("Only LSA projection supported")
         folder=Path(folder);folder.mkdir(parents=True,exist_ok=False)
         self.np.savez_compressed(folder/"vectors.npz",vectors=self.vectors,components=self.components,idf=self.vectorizer.idf_,ids=self.np.asarray([r["id"] for r in self.rows]))
-        meta={"schema":"worldroot-lsa-v1","db_sha256":hashlib.sha256(self.db.read_bytes()).hexdigest(),"arrays_sha256":hashlib.sha256((folder/"vectors.npz").read_bytes()).hexdigest(),"vocabulary":self.vectorizer.vocabulary_}
+        meta={"schema":"worldroot-lsa-v1","db_sha256":hashlib.sha256(self.db.read_bytes()).hexdigest(),"arrays_sha256":hashlib.sha256((folder/"vectors.npz").read_bytes()).hexdigest(),"vocabulary":{k:int(v) for k,v in self.vectorizer.vocabulary_.items()}}
         (folder/"manifest.json").write_text(json.dumps(meta,sort_keys=True),encoding="utf-8")
 
     @classmethod
