@@ -445,6 +445,21 @@
         "episode": "LVI-C07-PV-D573-AUTHOR-SOURCE",
         "anchor": "Naquela manhã, pessoas haviam viajado dentro dele."
       }
+    },
+    {
+      "id": "coracao-aerun",
+      "name": "Coração de Convergência",
+      "aliases": [
+        "Coração de AERÚN"
+      ],
+      "state": "CREATED",
+      "group": "legacy",
+      "capabilities": "Artefato existente selado; não abrir por inferência.",
+      "tests": "Estado selado; natureza e funcionamento em investigação.",
+      "source": {
+        "episode": "LVI-C06-PV-D568-AUTHOR-SOURCE",
+        "anchor": "Talis desaparecida, Coração selado, Último Horizonte pendente"
+      }
     }
   ],
   "entities": [
@@ -452,8 +467,7 @@
       "id": "lucas",
       "name": "Lucas",
       "aliases": [
-        "Lucas Rodrigues",
-        "Criador"
+        "Lucas Rodrigues"
       ],
       "kind": "character"
     },
@@ -815,7 +829,7 @@
         "AERÚN",
         "AERUN"
       ],
-      "kind": "character"
+      "kind": "guardian"
     }
   ],
   "plots": [
@@ -969,18 +983,22 @@
         "episode": "LVI-C04-PIV-D557-AUTHOR-SOURCE",
         "anchor": "*Checkpoint: Dia 557, 21h42, Hangar do Primeiro Horizonte, Base Aurora. ARGOS original de 31,6 m por 27,4 m foi expandido mediante GÊNESE plena para ARGOS ASCENDENTE com 86 m de comprimento, 72 m de envergadura, 19 m de altura, dois decks e capacidade total demonstrada de 100 ocupantes (8 tripulantes e 92 passageiros); não é aeronave substituta sem legado. Hangar monumental de 190 × 170 m e 50 m de vão livre criado dentro do aeroporto Campo Aurora/complexo Base Aurora existente, com docas e teto retrátil. Testes reais de estrutura, sustentação, redundância, voo com tripulação e voo inaugural com cem ocupantes concluídos em corredor autorizado; Naira certificou prontidão para primeira missão dentro do envelope demonstrado, não velocidade de cruzeiro de 1.462 km/h nem autonomia transcontinental ilimitada. ASA LIVRE permanece sem voo livre; Rumo e NÓX independentes. Serakh recebeu relatório de Ithran através da cadeia legítima de mensageiros; Velkar, após entrega local e avaliação com Orelia, autorizou até 260 cascos como alocação estratégica condicional; ordens ainda viajam aos comandos, Varkhess não recebeu a ordem em cena e não é subordinado de Serakh. Lucas/Três Arcos não sabem da mobilização. Neris e Bressa ainda hospedadas após a chegada D556, Tharvek/Elyrien ausentes, primeira conferência não realizada. Maelis/Varo seguem no cuidado e vida; hospital ferido. Égides interna/externa ativas, Coração AERÚN selado, Último Horizonte não aprovado.*"
       }
-    }
-  ],
-  "unverified_seed_items": [
-    {
-      "id": "coracao-aerun",
-      "term": "Coração de Convergência selado",
-      "day": "d568"
     },
     {
-      "plot": "coracao",
-      "day": "d568",
-      "term": "Coração de Convergência selado"
+      "id": "coracao",
+      "name": "Coração de Convergência",
+      "status": "OPEN",
+      "progress": "Selado; investigação e hipóteses não equivalem a descoberta.",
+      "next_reward": "Descoberta intermediária independente, não abrir automaticamente.",
+      "aliases": [
+        "Coração de Convergência",
+        "Coração de AERÚN"
+      ],
+      "source": {
+        "episode": "LVI-C06-PV-D568-AUTHOR-SOURCE",
+        "anchor": "Talis desaparecida, Coração selado, Último Horizonte pendente"
+      }
     }
-  ]
+  ],
+  "unverified_seed_items": []
 }
