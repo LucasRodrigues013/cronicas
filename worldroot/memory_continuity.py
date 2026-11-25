@@ -45,8 +45,9 @@ def recent_candidates(entries, query, limit=8):
     hits.sort(key=lambda h:(-h["matched"],-h["sequence"],h["line_start"]))
     return hits[:limit]
 
-def creation_packet(root, db, requirements, *, head):
+def creation_packet(root, db, requirements, *, head, candidate_limit=20):
     """Retrieve separately for each material memory requirement, never one query for a whole episode."""
+    if type(candidate_limit) is not int or not 1<=candidate_limit<=80:raise ValueError("Invalid candidate limit")
     root=Path(root)
     if json.loads((root/"canon/HEAD.json").read_text(encoding="utf-8"))!=head:
         raise ValueError("Stale HEAD")
@@ -62,7 +63,7 @@ def creation_packet(root, db, requirements, *, head):
         # Author intent and observed story are not interchangeable.
         role=req.get("role","Response")
         if role not in ("Response","Prompt"):raise ValueError("Invalid role")
-        result=fusion(db,req["query"],req.get("entity"),req.get("topic"),role,limit=20)
+        result=fusion(db,req["query"],req.get("entity"),req.get("topic"),role,limit=candidate_limit)
         items.append({"requirement":req,"candidate_status":result["status"],"hits":result["hits"],"recent_canon_candidates":recent_candidates(entries,req["query"]) if role=="Response" else []})
     return {"head":head,"items":items,"closed_episodes":len(entries),"status":"REVIEW_REQUIRED","canon_changed":False,
             "note":"Candidate availability is not recall or proof; reconcile current state and reviewed claim."}
@@ -152,7 +153,7 @@ def main(argv=None):
     p=argparse.ArgumentParser()
     p.add_argument("--archive-root",type=Path,required=True)
     sub=p.add_subparsers(dest="action",required=True)
-    a=sub.add_parser("prepare");a.add_argument("--db",type=Path,required=True);a.add_argument("--requirements",type=Path,required=True)
+    a=sub.add_parser("prepare");a.add_argument("--db",type=Path,required=True);a.add_argument("--requirements",type=Path,required=True);a.add_argument("--candidate-limit",type=int,default=20)
     b=sub.add_parser("review");b.add_argument("--requirements",type=Path,required=True);b.add_argument("--reviewed",type=Path,required=True)
     c=sub.add_parser("arcs");c.add_argument("--packet",type=Path,required=True)
     args=p.parse_args(argv)
@@ -161,7 +162,7 @@ def main(argv=None):
     else:
         head=load(args.archive_root/"canon/HEAD.json")
         requirements=load(args.requirements)
-        if args.action=="prepare":result=creation_packet(args.archive_root,args.db,requirements,head=head)
+        if args.action=="prepare":result=creation_packet(args.archive_root,args.db,requirements,head=head,candidate_limit=args.candidate_limit)
         else:result=review_creation(args.archive_root,head,requirements,load(args.reviewed))
     print(json.dumps(result,ensure_ascii=False,indent=2))
     return 0
