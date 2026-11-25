@@ -21,6 +21,7 @@ from .semantic_gate import require_reviewed_event_evidence
 from .ledger import GateError, ConflictError
 from .editorial_guard import quick_preflight
 from .literary_revision import review_episode
+from .living_world import receipt as living_world_receipt
 from .reader_experience import (validate_reader_review, assess_experience,
                                 previous_canonical_scene_counts)
 from .narrative_director import validate_direction
@@ -287,6 +288,7 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
                 min_named_turns=0 if payload.get("schema") == "worldroot-draft-inbox-v3" else 5),
             "dynamic_scene_advisory": inspect_draft_dynamics(payload["prose"], payload["metadata"]),
             "literary_precision_advisory": review_episode(payload["prose"]),
+            "r28_living_world_advisory": living_world_receipt(payload["prose"], root, head),
             "r25_reader_experience": assess_experience(payload["prose"]),
             "r26_fantasy_review": (r26_assessment_summary(payload, head, root)
                                    if payload.get("schema") == "worldroot-draft-inbox-v3"
@@ -345,6 +347,7 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
                 min_scenes=1 if payload.get("schema") == "worldroot-draft-inbox-v3" else 3,
                 min_named_turns=0 if payload.get("schema") == "worldroot-draft-inbox-v3" else 5),
             "literary_precision_advisory": review_episode(payload["prose"]),
+            "r28_living_world_advisory": living_world_receipt(payload["prose"], root, head),
             "r25_reader_experience": assess_experience(payload["prose"]),
             "r26_fantasy_review": (r26_assessment_summary(payload, head, root)
                                    if payload.get("schema") == "worldroot-draft-inbox-v3"
