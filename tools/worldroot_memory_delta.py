@@ -102,7 +102,17 @@ def draft_delta(root:Path,eid:str,*,write=False)->dict:
     d=derive(root,eid)
     path=root/"memory/deltas"/(eid+".json")
     if write:
-        write_once(path,enc(d))
+        # Preserve the original draft capture after a later canonical closure.
+        # Only this temporal observation can legitimately differ on replay.
+        if path.exists():
+            previous=obj(path)
+            expected=dict(d)
+            if d["canonical_at_capture"] is True and previous.get("canonical_at_capture") is False:
+                expected["canonical_at_capture"]=False
+            if path.read_bytes()!=enc(expected):
+                raise ArchiveInvalid("Immutable memory conflict: "+str(path))
+        else:
+            write_once(path,enc(d))
     return {"episode_id":eid,"events":len(d["reviewed_events"]),
             "knowledge":len(d["reviewed_knowledge"]),
             "flags":d["continuity_flags"],"status":"VERIFIED_DRAFT_MEMORY",
