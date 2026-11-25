@@ -75,7 +75,7 @@ with tempfile.TemporaryDirectory() as d:
             assert covered==set(range(1,len(lines)+1))
     emit({"stage":"SQLITE_FULL_INDEX","seconds":round(elapsed,3),"windows":counts,"lines":sum(len(t.splitlines()) for t in source_map.values()),"bytes":db.stat().st_size,"integrity":"ok","coverage":report["coverage"]})
     results=[]
-    for strategy in ("legacy","hybrid"):
+    for strategy in ("legacy","hybrid","contextual"):
         ranks=[]; durations=[]; misses=[];by_split={}
         for i,(c,lo,hi_) in enumerate(gold):
             for j,q in enumerate(queries[i]):
@@ -103,3 +103,4 @@ with tempfile.TemporaryDirectory() as d:
     emit({"stage":"READ_ONLY","head_unchanged":True,"negative_cases":3,"accent_invariance":True,"semantic_certification":False,"literary_grade":None})
     # Do not claim a release when retrieval is weaker than the reference strategy.
     if results[1]["hit_at_20"]<results[0]["hit_at_20"]:sys.exit(2)
+    emit({"stage":"CONTEXTUAL_EXPERIMENT","hit20_delta":results[2]["hit_at_20"]-results[1]["hit_at_20"],"mrr_delta":round(results[2]["mrr"]-results[1]["mrr"],4),"default_strategy":"hybrid","release_blocked":True,"reason":"development benchmark; independent holdout required"})
