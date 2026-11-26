@@ -27,7 +27,7 @@ jobs:
       - name: Checkout audited engine at immutable version, with C02 PV scoped exception
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: 0e5f4bfc5f833b9681d9f4ec3b288dd36952d03b
+          ref: 9b34bc491275028fe32fff018b405ab94dcc5c8a
           path: engine
           persist-credentials: false
       - name: Python 3.12
@@ -52,7 +52,7 @@ jobs:
       - name: Checkout trusted main code (pinned)
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: 0e5f4bfc5f833b9681d9f4ec3b288dd36952d03b
+          ref: 9b34bc491275028fe32fff018b405ab94dcc5c8a
           path: engine
           persist-credentials: false
       - name: Checkout private story archive data only
