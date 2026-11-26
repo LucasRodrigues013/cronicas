@@ -8,7 +8,7 @@ from pathlib import Path
 REGISTRY="editorial/registries/universal-codex-design-d580-v1.json"
 SCHEMA="worldroot-codex-delta-v1"
 DOMAINS=("Personagens","Bestiário","Atlas mundial","Ambientes","Arsenal","Tecnologia","Magia e poderes","Organizações","Cultura e economia","História e mistérios")
-KINDS={"APPEARANCE","MOVE","ACQUIRE","TRANSFER","STORE","EQUIP","UNEQUIP","CONSUME","LOSE","USE_ITEM","LEARN","CAST","ATTRIBUTE","KNOW","RELATION"}
+KINDS={"APPEARANCE","MOVE","ACQUIRE","TRANSFER","STORE","EQUIP","UNEQUIP","CONSUME","LOSE","USE_ITEM","LEARN","CAST","ATTRIBUTE","KNOW","RELATION","ALIAS","REPORT","PENDING_OPEN","PENDING_RESOLVE","PENDING_ESCALATE"}
 ID=re.compile(r"^[A-Za-z0-9][A-Za-z0-9:_-]{0,127}$")
 def digest(value):
     return hashlib.sha256(json.dumps(value,sort_keys=True,ensure_ascii=False,separators=(",",":")).encode()).hexdigest()
@@ -66,6 +66,8 @@ def initialize(db):
     CREATE INDEX IF NOT EXISTS codex_events_entity ON codex_events(entity_id,sequence,ordinal);
     CREATE TABLE IF NOT EXISTS codex_state(entity_id TEXT NOT NULL REFERENCES records(id), field TEXT NOT NULL, value TEXT NOT NULL, event_id TEXT NOT NULL REFERENCES codex_events(event_id), PRIMARY KEY(entity_id,field));
     CREATE TABLE IF NOT EXISTS codex_episode(episode TEXT PRIMARY KEY, sequence INTEGER NOT NULL UNIQUE, source_sha TEXT NOT NULL, delta_sha TEXT NOT NULL);
+    CREATE TABLE IF NOT EXISTS codex_pending(pending_id TEXT PRIMARY KEY, entity_id TEXT REFERENCES records(id), category TEXT NOT NULL, status TEXT NOT NULL, body TEXT NOT NULL, episode TEXT NOT NULL, source_sha TEXT NOT NULL, line INTEGER NOT NULL, anchor TEXT NOT NULL, last_event TEXT REFERENCES codex_events(event_id));
+    CREATE INDEX IF NOT EXISTS codex_pending_entity ON codex_pending(entity_id,status);
     """)
 def jsonstr(x):return json.dumps(x,ensure_ascii=False,sort_keys=True,separators=(",",":"))
 def record_type(r):
@@ -81,12 +83,11 @@ def validate_delta(delta,prose,episode,day,existing_ids,spell_ids):
     if delta.get("prose_sha256")!=hashlib.sha256(prose.encode()).hexdigest():raise ValueError("Codex prose hash mismatch")
     if not isinstance(delta.get("events"),list) or not isinstance(delta.get("new_entities"),list) or not isinstance(delta.get("unresolved"),list):raise ValueError("Explicit events, new entities and unresolved required")
     ids=set(existing_ids)
-    names=set()
     for n in delta["new_entities"]:
         if not isinstance(n,dict):raise ValueError("Invalid new identity object")
         key=norm(n.get("name",""))
-        if not key or key in names:raise ValueError("Repeated new name requires identity resolution")
-        names.add(key)
+        if not key:raise ValueError("Missing identity name")
+        if not isinstance(n.get("aliases",[]),list) or any(not isinstance(a,str) or not norm(a) for a in n.get("aliases",[])):raise ValueError("Invalid aliases")
         ident=n.get("id")
         if not isinstance(ident,str) or not ID.fullmatch(ident) or ident.startswith("candidate:") or ident in ids or not isinstance(n.get("name"),str) or not n["name"].strip() or not n.get("domains") or not set(n["domains"])<=set(DOMAINS):raise ValueError("Invalid new identity")
         check_anchor(prose,n["line"],n["anchor"]);ids.add(ident)
@@ -106,6 +107,12 @@ def validate_delta(delta,prose,episode,day,existing_ids,spell_ids):
         if k=="RELATION" and (not isinstance(v,dict) or v.get("target_id") not in ids or not v.get("relation")):raise ValueError("Unknown relation target")
         if k in {"ATTRIBUTE","KNOW"} and (not isinstance(v,dict) or not v.get("field") or "value" not in v):raise ValueError("Missing typed value")
         if k=="ATTRIBUTE" and v["field"] in {"id","species","age","powers","inventory","location","knowledge","relationships"}:raise ValueError("Protected attribute: use specific event or author design")
+        if k=="ALIAS" and (not isinstance(v,dict) or not isinstance(v.get("alias"),str) or not norm(v["alias"])):raise ValueError("Invalid alias event")
+        if k=="REPORT" and (not isinstance(v,dict) or not isinstance(v.get("field"),str) or not v["field"].strip() or "value" not in v or not isinstance(v.get("reporter"),str) or not v["reporter"].strip() or (v.get("about_day") is not None and (type(v["about_day"]) is not int or not 1<=v["about_day"]<=day))):raise ValueError("Invalid unverified report")
+        if k.startswith("PENDING_"):
+            if not isinstance(v,dict) or not isinstance(v.get("pending_id"),str) or not ID.fullmatch(v["pending_id"]):raise ValueError("Invalid pending ID")
+            if k=="PENDING_OPEN" and (not isinstance(v.get("category"),str) or not v["category"].strip() or not isinstance(v.get("reason"),str) or not v["reason"].strip()):raise ValueError("Missing pending category or reason")
+            if k!="PENDING_OPEN" and (not isinstance(v.get("reason"),str) or not v["reason"].strip()):raise ValueError("Missing resolution or escalation reason")
     for u in delta["unresolved"]:
         if not isinstance(u,dict) or not isinstance(u.get("name"),str) or not u["name"].strip() or not isinstance(u.get("reason"),str) or not u["reason"].strip():raise ValueError("Invalid unresolved entity")
         check_anchor(prose,u["line"],u["anchor"])
@@ -123,6 +130,29 @@ def custody_at(db,item,day,clock=None):
     return {"holder":base["holder"],"owner":base["owner"],"location":base["location_id"],"state":base["state"],"source":base["evidence"]}
 def setstate(db,entity,field,value,event_id):
     db.execute("INSERT INTO codex_state VALUES(?,?,?,?) ON CONFLICT(entity_id,field) DO UPDATE SET value=excluded.value,event_id=excluded.event_id",(entity,field,jsonstr(value),event_id))
+def graph_rows(db,*,public=True):
+    rows=[json.loads(row[0]) for row in db.execute("SELECT body FROM records")]
+    by_id={r["id"]:r for r in rows}
+    sql="SELECT entity_id,body FROM codex_events WHERE kind='ALIAS' ORDER BY sequence,ordinal"
+    for ident,body in db.execute(sql):
+        event=json.loads(body)
+        if public and event["scope"]!="WORLD":continue
+        r=by_id[ident];alias=event["value"]["alias"]
+        if alias not in r.get("aliases",[]):r.setdefault("aliases",[]).append(alias)
+    return rows
+
+def check_identity_collision(rows,new):
+    matches={r["id"] for name in [new["name"],*new.get("aliases",[])] for r in aliases(rows,name) if r["id"]!=new["id"]}
+    if matches:
+        decision=new.get("identity_resolution",{})
+        if decision.get("kind")!="DISTINCT_HOMONYM" or not isinstance(decision.get("distinct_from"),list) or set(decision["distinct_from"])!=matches or not isinstance(decision.get("reason"),str) or not decision["reason"].strip():
+            raise ValueError("Name/alias collision: resolve existing ID or explicitly distinguish homonym")
+
+def save_unresolved(db,delta,source_sha):
+    for i,u in enumerate(delta["unresolved"]):
+        ident="candidate:"+delta["episode"]+":"+str(i)
+        db.execute("INSERT OR IGNORE INTO codex_pending VALUES(?,?,?,?,?,?,?,?,?,?)",(ident,None,"IDENTITY_UNRESOLVED","OPEN",jsonstr(u),delta["episode"],source_sha,u["line"],u["anchor"],None))
+
 def apply_delta(db,delta,prose,sequence,day,source_sha,spell_ids):
     """Only called with verified, closed episode. Immutable retry and atomic rollback."""
     episode=delta["episode"];ds=digest(delta)
@@ -130,6 +160,7 @@ def apply_delta(db,delta,prose,sequence,day,source_sha,spell_ids):
     if hashlib.sha256(prose.encode()).hexdigest()!=delta["prose_sha256"]:raise ValueError("Changed prose")
     if old:
         if old!=(sequence,source_sha,ds):raise ValueError("Changed closed Codex delta")
+        with db:save_unresolved(db,delta,source_sha)
         return "IDEMPOTENT"
     latest=db.execute("SELECT MAX(sequence) FROM codex_episode").fetchone()[0]
     if latest is not None and sequence<=latest:raise ValueError("Out-of-order Codex delta")
@@ -137,8 +168,13 @@ def apply_delta(db,delta,prose,sequence,day,source_sha,spell_ids):
     validate_delta(delta,prose,episode,day,ids,spell_ids)
     from .world_coherence import item_access, learned_in_registry
     with db:
+        rows=graph_rows(db,public=False)
         for n in delta["new_entities"]:
-            db.execute("INSERT INTO records VALUES(?,?,?)",(record_type(n),n["id"],jsonstr({**n,"aliases":n.get("aliases",[]),"scope":"NARRATED_IDENTITY_REVIEWED"})))
+            check_identity_collision(rows,n)
+            record={**n,"aliases":n.get("aliases",[]),"scope":"NARRATED_IDENTITY_REVIEWED"}
+            db.execute("INSERT INTO records VALUES(?,?,?)",(record_type(n),n["id"],jsonstr(record)))
+            rows.append(record)
+        save_unresolved(db,delta,source_sha)
         for i,e in enumerate(delta["events"]):
             eid=episode+":"+str(i);subject=e["entity_id"];kind=e["kind"];v=e["value"]
             db.execute("INSERT INTO codex_events VALUES(?,?,?,?,?,?,?,?,?,?,?,?)",(eid,episode,sequence,i,e["day"],e.get("clock"),subject,kind,jsonstr(e),source_sha,e["line"],e["anchor"]))
@@ -170,6 +206,32 @@ def apply_delta(db,delta,prose,sequence,day,source_sha,spell_ids):
             elif kind=="ATTRIBUTE":setstate(db,subject,"attribute:"+v["field"],v["value"],eid)
             elif kind=="KNOW":setstate(db,subject,"knowledge:"+v["field"],v["value"],eid)
             elif kind=="RELATION":setstate(db,subject,"relation:"+v["target_id"]+":"+v["relation"],v.get("value"),eid)
+            elif kind=="ALIAS":
+                row=next(r for r in graph_rows(db,public=False) if r["id"]==subject)
+                check_identity_collision(rows,{**row,"aliases":[v["alias"]],"identity_resolution":v.get("identity_resolution",{})})
+                row.setdefault("aliases",[]).append(v["alias"])
+                rows=[r if r["id"]!=subject else row for r in rows]
+            elif kind=="REPORT":
+                # Reports are evidence of testimony, never direct state mutations.
+                if v["field"]=="life_status" and v.get("about_day") is not None and v["value"] in ("ALIVE","DEAD"):
+                    for prior_id,prior_body in db.execute("SELECT event_id,body FROM codex_events WHERE entity_id=? AND kind='REPORT' AND event_id!=?",(subject,eid)):
+                        prior=json.loads(prior_body);p=prior["value"]
+                        if p.get("field")=="life_status" and p.get("about_day")==v["about_day"] and p.get("value") in ("ALIVE","DEAD") and p["value"]!=v["value"]:
+                            pid="report:"+episode+":"+str(i)
+                            body={"reason":"Incompatible unverified life-status reports","reports":[prior_id,eid],"scope":e["scope"]}
+                            db.execute("INSERT INTO codex_pending VALUES(?,?,?,?,?,?,?,?,?,?)",(pid,subject,"CONFLICT_CHRONOLOGY","REQUIRES_AUTHOR_REVIEW",jsonstr(body),episode,source_sha,e["line"],e["anchor"],eid))
+                            break
+            elif kind.startswith("PENDING_"):
+                pid=v["pending_id"]
+                old_pending=db.execute("SELECT entity_id,status,body FROM codex_pending WHERE pending_id=?",(pid,)).fetchone()
+                if kind=="PENDING_OPEN":
+                    if old_pending:raise ValueError("Pending ID already exists")
+                    db.execute("INSERT INTO codex_pending VALUES(?,?,?,?,?,?,?,?,?,?)",(pid,subject,v["category"],"OPEN",jsonstr({**v,"scope":e["scope"]}),episode,source_sha,e["line"],e["anchor"],eid))
+                else:
+                    if not old_pending or old_pending[0] not in (None,subject) or old_pending[1]=="RESOLVED":raise ValueError("Pending is missing, resolved or belongs to another entity")
+                    status="RESOLVED" if kind=="PENDING_RESOLVE" else "REQUIRES_AUTHOR_REVIEW"
+                    if old_pending[1]==status:raise ValueError("Repeated escalation without progress")
+                    db.execute("UPDATE codex_pending SET status=?,entity_id=?,last_event=? WHERE pending_id=?",(status,subject,eid,pid))
         db.execute("INSERT INTO codex_episode VALUES(?,?,?,?)",(episode,sequence,source_sha,ds))
     return "APPLIED"
 def _sync(root,db_path=None):
@@ -234,7 +296,7 @@ def bind_request(root,request):
             old=db.execute("SELECT value FROM meta WHERE key='head'").fetchone()
             seal=db.execute("SELECT value FROM meta WHERE key='registry_sha'").fetchone()
             if old and seal and json.loads(old[0])==request["head"] and seal[0]==sha:
-                rows=[json.loads(row[0]) for row in db.execute("SELECT body FROM records")]
+                rows=graph_rows(db)
     names=[x["name"] for x in request.get("r34_intent",{}).get("characters",[])]
     return {"registry_sha256":sha,"head":request["head"],"focal":[{"name":n,"ids":[r["id"] for r in aliases(rows,n,domain="Personagens")]} for n in names],"status":"REVIEW_REQUIRED","coherence_required":bool(data.get("coherence"))}
 def validate_submission(root,request,packet,payload):
@@ -247,7 +309,7 @@ def validate_submission(root,request,packet,payload):
         with sqlite3.connect(graph.resolve().as_uri()+"?mode=ro",uri=True) as db:
             meta=dict(db.execute("SELECT key,value FROM meta"))
             if json.loads(meta["head"])==request["head"] and meta["registry_sha"]==packet["universal_codex"]["registry_sha256"]:
-                rows=[json.loads(row[0]) for row in db.execute("SELECT body FROM records")]
+                rows=graph_rows(db)
                 ids.update(r["id"] for r in rows)
     spell_ids={s["id"] for s in data["arcane"]["index"]}|{"genese","CREATION_GENESE"}
     delta=payload.get("r33_review",{}).get("codex_delta")
@@ -301,10 +363,11 @@ def graph_candidates(root,query,entity=None):
             meta=dict(db.execute("SELECT key,value FROM meta"))
             head=json.loads((Path(root)/"canon/HEAD.json").read_text())
             if json.loads(meta["head"])==head and meta["registry_sha"]==sha:
-                rows=[json.loads(row[0]) for row in db.execute("SELECT body FROM records")]
+                rows=graph_rows(db)
                 states={}
                 possessions={}
-                for ident,field,v,event in db.execute("SELECT entity_id,field,value,event_id FROM codex_state"):
+                for ident,field,v,event,event_body in db.execute("SELECT s.entity_id,s.field,s.value,s.event_id,e.body FROM codex_state s JOIN codex_events e ON e.event_id=s.event_id"):
+                    if json.loads(event_body)["scope"]!="WORLD":continue
                     val=json.loads(v)
                     if not field.startswith("knowledge:"):states.setdefault(ident,{})[field]={"value":val,"event_id":event}
                     if field=="custody" and val.get("holder"):possessions.setdefault(val["holder"],[]).append({"item_id":ident,"custody":val,"event_id":event})
