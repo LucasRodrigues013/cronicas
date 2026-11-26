@@ -8,7 +8,7 @@ from pathlib import Path
 REGISTRY="editorial/registries/universal-codex-design-d580-v1.json"
 SCHEMA="worldroot-codex-delta-v1"
 DOMAINS=("Personagens","Bestiário","Atlas mundial","Ambientes","Arsenal","Tecnologia","Magia e poderes","Organizações","Cultura e economia","História e mistérios")
-KINDS={"APPEARANCE","MOVE","ACQUIRE","TRANSFER","STORE","EQUIP","UNEQUIP","CONSUME","LOSE","USE_ITEM","LEARN","CAST","ATTRIBUTE","KNOW","RELATION","ALIAS","REPORT","PENDING_OPEN","PENDING_RESOLVE","PENDING_ESCALATE"}
+KINDS={"APPEARANCE","MOVE","ACQUIRE","TRANSFER","STORE","EQUIP","UNEQUIP","CONSUME","LOSE","USE_ITEM","LEARN","CAST","ATTRIBUTE","KNOW","RELATION","ALIAS","REPORT","PENDING_OPEN","PENDING_RESOLVE","PENDING_ESCALATE","DEMONSTRATE"}
 ID=re.compile(r"^[A-Za-z0-9][A-Za-z0-9:_-]{0,127}$")
 def digest(value):
     return hashlib.sha256(json.dumps(value,sort_keys=True,ensure_ascii=False,separators=(",",":")).encode()).hexdigest()
@@ -107,12 +107,14 @@ def validate_delta(delta,prose,episode,day,existing_ids,spell_ids):
         if k=="RELATION" and (not isinstance(v,dict) or v.get("target_id") not in ids or not v.get("relation")):raise ValueError("Unknown relation target")
         if k in {"ATTRIBUTE","KNOW"} and (not isinstance(v,dict) or not v.get("field") or "value" not in v):raise ValueError("Missing typed value")
         if k=="ATTRIBUTE" and v["field"] in {"id","species","age","powers","inventory","location","knowledge","relationships"}:raise ValueError("Protected attribute: use specific event or author design")
+        if k=="DEMONSTRATE" and (not isinstance(v,dict) or v.get("capability_id") not in ids or not isinstance(v.get("method"),str) or not v["method"].strip() or not isinstance(v.get("observed_effect"),str) or not v["observed_effect"].strip()):raise ValueError("Missing evidenced capability demonstration")
         if k=="ALIAS" and (not isinstance(v,dict) or not isinstance(v.get("alias"),str) or not norm(v["alias"])):raise ValueError("Invalid alias event")
         if k=="REPORT" and (not isinstance(v,dict) or not isinstance(v.get("field"),str) or not v["field"].strip() or "value" not in v or not isinstance(v.get("reporter"),str) or not v["reporter"].strip() or (v.get("about_day") is not None and (type(v["about_day"]) is not int or not 1<=v["about_day"]<=day))):raise ValueError("Invalid unverified report")
         if k.startswith("PENDING_"):
             if not isinstance(v,dict) or not isinstance(v.get("pending_id"),str) or not ID.fullmatch(v["pending_id"]):raise ValueError("Invalid pending ID")
             if k=="PENDING_OPEN" and (not isinstance(v.get("category"),str) or not v["category"].strip() or not isinstance(v.get("reason"),str) or not v["reason"].strip()):raise ValueError("Missing pending category or reason")
             if k!="PENDING_OPEN" and (not isinstance(v.get("reason"),str) or not v["reason"].strip()):raise ValueError("Missing resolution or escalation reason")
+            if k=="PENDING_RESOLVE" and (not isinstance(v.get("resolved_by"),list) or not v["resolved_by"] or any(type(x) is not int or x<0 for x in v["resolved_by"])):raise ValueError("Pending resolution requires linked evidence events")
     for u in delta["unresolved"]:
         if not isinstance(u,dict) or not isinstance(u.get("name"),str) or not u["name"].strip() or not isinstance(u.get("reason"),str) or not u["reason"].strip():raise ValueError("Invalid unresolved entity")
         check_anchor(prose,u["line"],u["anchor"])
@@ -206,6 +208,12 @@ def apply_delta(db,delta,prose,sequence,day,source_sha,spell_ids):
             elif kind=="ATTRIBUTE":setstate(db,subject,"attribute:"+v["field"],v["value"],eid)
             elif kind=="KNOW":setstate(db,subject,"knowledge:"+v["field"],v["value"],eid)
             elif kind=="RELATION":setstate(db,subject,"relation:"+v["target_id"]+":"+v["relation"],v.get("value"),eid)
+            elif kind=="DEMONSTRATE":
+                cap=v["capability_id"]
+                capability=json.loads(db.execute("SELECT body FROM records WHERE id=?",(cap,)).fetchone()[0])
+                if "Magia e poderes" not in capability["domains"]:raise ValueError("Capability must resolve to magic/powers domain")
+                if cap=="genese" and subject!="lucas":raise ValueError("GÊNESE is Lucas's singular authority")
+                setstate(db,subject,"demonstrated:"+cap,{"method":v["method"],"observed_effect":v["observed_effect"],"episode":episode,"day":e["day"]},eid)
             elif kind=="ALIAS":
                 row=next(r for r in graph_rows(db,public=False) if r["id"]==subject)
                 check_identity_collision(rows,{"id":subject,"name":v["alias"],"aliases":[],"identity_resolution":v.get("identity_resolution",{})})
@@ -229,8 +237,18 @@ def apply_delta(db,delta,prose,sequence,day,source_sha,spell_ids):
                     db.execute("INSERT INTO codex_pending VALUES(?,?,?,?,?,?,?,?,?,?)",(pid,subject,v["category"],"OPEN",jsonstr({**v,"scope":e["scope"]}),episode,source_sha,e["line"],e["anchor"],eid))
                 else:
                     if not old_pending or old_pending[0] not in (None,subject) or old_pending[1]=="RESOLVED":raise ValueError("Pending is missing, resolved or belongs to another entity")
+                    if kind=="PENDING_RESOLVE":
+                        for j in v["resolved_by"]:
+                            if j>=i:raise ValueError("Resolution evidence must precede pending event")
+                            proof=delta["events"][j]
+                            if proof["entity_id"]!=subject or proof["kind"] not in {"ATTRIBUTE","APPEARANCE","MOVE","ALIAS","RELATION","DEMONSTRATE","LEARN","CAST","ACQUIRE","TRANSFER","STORE","USE_ITEM"}:raise ValueError("Resolution evidence does not identify this entity and a supported fact")
+                            if e["scope"]=="WORLD" and proof["scope"]!="WORLD":raise ValueError("Private evidence cannot resolve a public pending fact")
                     status="RESOLVED" if kind=="PENDING_RESOLVE" else "REQUIRES_AUTHOR_REVIEW"
                     if old_pending[1]==status:raise ValueError("Repeated escalation without progress")
+                    if kind=="PENDING_RESOLVE" and old_pending[1]=="REQUIRES_AUTHOR_REVIEW":
+                        # An explicit evidence event permits resolution but cannot prove the
+                        # semantic truth of the claim; author-reviewed closure still governs.
+                        if not v["reason"].strip():raise ValueError("Missing review disposition")
                     db.execute("UPDATE codex_pending SET status=?,entity_id=?,last_event=? WHERE pending_id=?",(status,subject,eid,pid))
         db.execute("INSERT INTO codex_episode VALUES(?,?,?,?)",(episode,sequence,source_sha,ds))
     return "APPLIED"
