@@ -1,0 +1,65 @@
+{
+  "schema": "worldroot-r36-book-ii-stage-b-draft-receipt-v1",
+  "book": 2,
+  "stage": "B",
+  "batch": 4,
+  "status": "DRAFT_ARCHIVED_PENDING_NATIVE_VALIDATION",
+  "last_official_checkpoint": "038a31ca116bfaa76d4a2f30b417906e46f61900",
+  "archive": {
+    "commit": "625afa955c64853bac94202fa5791a1c912d8332",
+    "path": "editorial/codex-staging/r36-book-ii-stage-b-batch-004-draft.json",
+    "blob": "0de8098ef25e798fb7f1e0b6dbb8fc6c433261cc",
+    "manifest_blob_unchanged": "a38a3d418a326549acfa2685ca8a060a140d7534",
+    "naming_blob_unchanged": "6ebdf85177be18ef6e6a50aaa3d6fdc694e7ed18"
+  },
+  "engine": "3170905db607f89004ed3d62a064dbb092922080",
+  "coverage": {
+    "official_records": 104,
+    "official_groups": 86,
+    "official_remaining": 157,
+    "total_records": 261,
+    "total_groups": 203,
+    "draft_ids": [
+      412,
+      426
+    ],
+    "draft_records": 15,
+    "draft_groups": 6,
+    "candidate_field_updates": 18,
+    "additional_observations": 10,
+    "author_directions": 2,
+    "independent_certification": false
+  },
+  "verification": {
+    "readback": true,
+    "archive_diff_only_draft_file": true,
+    "exact_anchors": 15,
+    "context_line_comparisons": 128,
+    "complete_groups": true,
+    "existing_profile_ids": 192,
+    "native_load_overlay": false,
+    "native_tests": false,
+    "full_source_digest_recomputed": false
+  },
+  "next_official": {
+    "ledger_id": 412,
+    "global_line": 72845,
+    "group": [
+      412,
+      413,
+      414,
+      415
+    ],
+    "action": "Validate stored draft against current manifest, apply candidate changes cumulatively, revalidate nominal registry against new character blob, run native load_overlay with real private files before official checkpoint."
+  },
+  "next_after_draft_validated": {
+    "ledger_id": 427,
+    "global_line": 74727,
+    "group": [
+      427
+    ]
+  },
+  "canon_changed": false,
+  "production_activated": false,
+  "production_hold": true
+}
