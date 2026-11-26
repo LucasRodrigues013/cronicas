@@ -87,6 +87,38 @@ def design_patch(card,proposal,review):
     new=json.loads(json.dumps(card,ensure_ascii=False));new["fields"][field]={"value":proposal["value"],"status":"COMPLETADO","scope":"EDITORIAL","origin":{"architect":SCHEMA,"proposal_sha256":stable(proposal),"review_sha256":stable(review),"basis_fields":basis,"previous":fields[field]},"justification":proposal["reason"],"checkpoint":fields[field].get("checkpoint")}
     validate_fields(new["fields"])
     return new
+
+def preparation_context(overlay,focal):
+    """Small editor-only task envelope; never expose secret/private values."""
+    cards=overlay["profiles"];results=[]
+    for f in focal:
+        ids=f["ids"]
+        status="IDENTITY_REVIEW" if len(ids)>1 else ("NEW_OR_ALIAS_REVIEW" if not ids else "RECOVER_PROFILE")
+        tasks=[]
+        for ident in ids:
+            if ident not in cards:continue
+            for task in field_tasks(cards[ident]):
+                if task["field"]=="knowledge" or cards[ident]["fields"][task["field"]].get("scope") in PRIVATE_SCOPES:continue
+                tasks.append({k:v for k,v in task.items() if k!="basis_fields"})
+        results.append({"name":f["name"],"ids":ids,"route":status,"tasks":tasks})
+    return {"schema":SCHEMA,"role":"ARQUITETO_EDITORIAL","policy":"docs/r35-arquiteto.md","focal":results,"require_semantic_review":True,"allow_prospective_design":True,"canon_promotion":False}
+
+def validate_legacy_recovery(row,review,text):
+    """Legacy source-role adjudication is distinct from canonical promotion.
+    Exact response context plus separate adjudication is required; model
+    semantic judgment is not proved by this structural validation.
+    """
+    if row.get("source_role")!="LEGACY_MIXED" or review.get("disposition")!="SUPPORTED_LEGACY" or review.get("candidate_id")!=row.get("id"):raise ValueError("Legacy recovery route required")
+    if row["source_sha256"]!=sha(text):raise ValueError("Stale source")
+    lines=text.splitlines();n=row["line"];start=review.get("context_start");end=review.get("context_end")
+    if type(start) is not int or type(end) is not int or not 1<=start<=n<=end<=len(lines) or lines[n-1]!=row["anchor"] or review.get("context")!="\n".join(lines[start-1:end]):raise ValueError("Legacy context mismatch")
+    if review.get("source_class")!="NARRATED_RESPONSE" or review.get("target_status")!="RECUPERADO" or not review.get("claim"):raise ValueError("Legacy sources cannot directly promote canon")
+    agents=[review.get(k) for k in ("extractor","role_reviewer","semantic_reviewer")]
+    if any(not isinstance(x,str) or not x.strip() for x in agents) or len(set(agents))!=3 or not str(review.get("reason","")).strip():raise ValueError("Separate role and semantic adjudication required")
+    if review.get("entity_id") not in row["candidates"] and not review.get("new_identity_candidate"):raise ValueError("Identity unresolved")
+    if any(x.strip()=="## Prompt:" for x in lines[start-1:end]):raise ValueError("Author prompt is not narrated evidence")
+    return {"candidate_id":row["id"],"review":review,"semantic_certification":False,"canon_changed":False,"status":"RECUPERADO_CANDIDATE"}
+
 def queue(root):
     """Read-only snapshot of current overlay gaps and archived speaker candidates.
     Historical exports stay mixed even when a line looks like a speaker.
@@ -100,7 +132,7 @@ def queue(root):
     tasks=[t for card in cards for t in field_tasks(card)]
     sources=[];candidates=[]
     for path in sorted((root/"history/sources").glob("*")):
-        if not path.is_file() or path.is_symlink():continue
+        if not path.is_file() or path.is_symlink() or not re.fullmatch(r"0[1-6]_.*\.txt(?:\.part-\d+)?",path.name):continue
         body=path.read_text(encoding="utf-8")
         rel=path.relative_to(root).as_posix();rows=discover(body,rel,"LEGACY_MIXED",cards)
         sources.append({"path":rel,"sha256":sha(body),"lines":len(body.splitlines()),"candidates":len(rows)})
@@ -118,7 +150,8 @@ def queue(root):
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument("--archive-root",required=True);p.add_argument("--output",required=True);a=p.parse_args()
     output=Path(a.output);root=Path(a.archive_root).resolve()
-    if output.resolve().is_relative_to(root/"canon"):raise ValueError("Queue cannot write canon")
-    result=queue(root);output.parent.mkdir(parents=True,exist_ok=True);output.write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding="utf-8")
+    if output.resolve().is_relative_to(root) and not output.resolve().is_relative_to(root/"editorial/codex-staging"):raise ValueError("Queue output inside archive must be staging only")
+    result=queue(root);output.parent.mkdir(parents=True,exist_ok=True);output.open("x",encoding="utf-8").close()
+    with output.open("w",encoding="utf-8") as stream:json.dump(result,stream,ensure_ascii=False,indent=2)
     print(json.dumps({"sources":len(result["sources"]),"field_tasks":len(result["field_tasks"]),"candidates":len(result["candidates"]),"semantic_certification":False}))
 if __name__=="__main__":main()

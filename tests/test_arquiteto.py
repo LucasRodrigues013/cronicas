@@ -1,5 +1,5 @@
 import unittest
-from worldroot.arquiteto import discover, field_tasks, validate_review, design_patch, stable
+from worldroot.arquiteto import discover, field_tasks, validate_review, design_patch, stable, preparation_context, validate_legacy_recovery
 
 class ArchitectTest(unittest.TestCase):
     def setUp(self):
@@ -38,3 +38,18 @@ class ArchitectTest(unittest.TestCase):
     def test_no_overwrite(self):
         card=self.card();card["fields"]["voice"]["status"]="CANONICO"
         with self.assertRaises(ValueError):design_patch(card,{"entity_id":"t1","field":"voice"},{})
+
+    def test_preparation_context(self):
+        card=self.card();card["fields"]["knowledge"]={**card["fields"]["location"],"scope":"AUTHOR_ONLY"}
+        result=preparation_context({"profiles":{"t1":card}},[{"name":"Tessa","ids":["t1"]},{"name":"unknown","ids":[]}])
+        self.assertEqual(result["focal"][0]["route"],"RECOVER_PROFILE")
+        self.assertEqual({t["field"] for t in result["focal"][0]["tasks"]},{"voice","location"})
+        self.assertEqual(result["focal"][1]["route"],"NEW_OR_ALIAS_REVIEW")
+        self.assertFalse(result["canon_promotion"])
+    def test_legacy_recovery_only_candidate(self):
+        body="## Response:\nTESSA — exemplo"
+        row=discover(body,"old","LEGACY_MIXED",self.cards)[0]
+        review={"candidate_id":row["id"],"disposition":"SUPPORTED_LEGACY","context_start":2,"context_end":2,"context":"TESSA — exemplo","source_class":"NARRATED_RESPONSE","target_status":"RECUPERADO","claim":"fixture","extractor":"e","role_reviewer":"r","semantic_reviewer":"s","reason":"fixture","entity_id":"t1"}
+        self.assertFalse(validate_legacy_recovery(row,review,body)["semantic_certification"])
+        for mod in ({"target_status":"CANONICO"},{"semantic_reviewer":"r"},{"context":"fake"}):
+            with self.assertRaises(ValueError):validate_legacy_recovery(row,{**review,**mod},body)

@@ -20,3 +20,6 @@ worldroot.arquiteto provides read-only source candidate and field task queue, st
 - https://www.w3.org/TR/prov-dm/ — source/activity/agent provenance, immutable references.
 - https://developers.openai.com/api/docs/guides/evaluation-best-practices — independent task-specific classification, adversarial and real-input evals.
 - https://learn.microsoft.com/en-us/azure/architecture/patterns/event-sourcing — immutable event journal, rebuildable projection, idempotent replay.
+
+## Preparation handoff
+The existing live_codex.bind_request now attaches a small ARQUITETO task envelope when an overlay is present, using focal IDs and field-gap routes only; private knowledge and scopes are excluded. This is an instruction/task packet, not an automatic model invocation. Legacy recovery has a separate structural gate requiring exact source context, source-role adjudication and independent semantic review; accepted legacy claims remain RECUPERADO candidates, never automatic canon. Queue output inside the archive is staging-only and existing files cannot be overwritten. Preexisting preparations must be regenerated after deployment when their bound packet changes, not silently rewritten.

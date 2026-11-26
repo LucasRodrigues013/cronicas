@@ -377,6 +377,8 @@ def bind_request(root,request):
     if overlay:
         from .natural_codex import CHAR_FIELDS,SYNC_SCHEMA
         result["natural_completion"]={"manifest_sha256":overlay["manifest_sha256"],"require_scene_sync":overlay["require_sync"],"schema":SYNC_SCHEMA,"new_character_fields":sorted(CHAR_FIELDS),"character_count":overlay["character_count"],"world_count":overlay["world_count"],"scope":"EDITORIAL_PROVISIONAL_NOT_CANON"}
+        from .arquiteto import preparation_context
+        result["arquiteto"]=preparation_context(overlay,result["focal"])
     return result
 def validate_submission(root,request,packet,payload):
     if packet.get("universal_codex") is None:return None
