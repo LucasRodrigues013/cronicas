@@ -1,0 +1,85 @@
+{
+  "schema": "worldroot-r36-b006-preflight-v1",
+  "status": "STRUCTURAL_PREFLIGHT_PASS_NATIVE_BLOCKED",
+  "base_checkpoint": "0f5dc88d5d8624f0d57d892a5bdec022cc0363ec",
+  "base_archive": "4d2bdb7444c785705e494c3d49cad8500af25a8a",
+  "engine": "3170905db607f89004ed3d62a064dbb092922080",
+  "original_draft_commit": "5bb5a85971c9f7f9b32eb301e081c2a3f4e6bfc4",
+  "first_native_gate_commit": "60ceecaa0700356451802ee861a8b2a4fd85b08f",
+  "first_native_run": 45909652470,
+  "native_attempts": [
+    {
+      "attempt": 1,
+      "job": 140214641704,
+      "conclusion": "failure",
+      "steps": 0,
+      "logs_available": false
+    },
+    {
+      "attempt": 2,
+      "job": 140214908187,
+      "conclusion": "failure",
+      "steps": 0,
+      "logs_available": false
+    }
+  ],
+  "native_blocker": "GitHub Actions did not start any job steps; cause not exposed by connector. No new native load_overlay, regression suite, or candidate artifact.",
+  "preflight": {
+    "original_draft_files_sha256_local": 3,
+    "compact_transfer_fingerprints": 3,
+    "verified_git_blobs": 9,
+    "records": 22,
+    "groups": 17,
+    "context_lines": 198,
+    "field_before_hashes": 25,
+    "original_nonblank_field_evidence": 187,
+    "revised_nonblank_field_evidence": 209,
+    "profiles": 192,
+    "fields": 5923,
+    "proposed_fields": 25,
+    "untargeted_fields": 5898,
+    "private_scope_fields_not_targeted": 40,
+    "all_protected_including_knowledge_not_targeted": 153,
+    "naming_roster_rows": 104,
+    "character_ids": 96,
+    "links": 25,
+    "precision_revised_fields": 11
+  },
+  "pending_extra_field": "Kairon age_chronological: D151 is narrated origin; no additional field added in the authorized 25-proposal review. Resolve exact age separately, no retroactive chronology.",
+  "future_packets": [
+    {
+      "ids": [
+        460,
+        520
+      ],
+      "records": 61,
+      "groups": 45,
+      "source_lines": [
+        82432,
+        105778
+      ],
+      "status": "UNREVIEWED_PACKET_PLAN"
+    },
+    {
+      "ids": [
+        521,
+        568
+      ],
+      "records": 48,
+      "groups": 41,
+      "source_lines": [
+        105779,
+        135469
+      ],
+      "status": "UNREVIEWED_PACKET_PLAN"
+    }
+  ],
+  "official_cursor_unchanged": {
+    "id": 438,
+    "line": 78909
+  },
+  "approval_required": true,
+  "production_hold": true,
+  "canon_changed": false,
+  "semantic_certification": false
+}

@@ -100,9 +100,12 @@ def main():
     need(ids==list(range(start,end+1)),"Incomplete group or ledger gap")
     need(chosen[0]["line"]==cp["next"]["global_line"]==delta["source_lines"][0],"Resume line mismatch")
     next_groups=[g for g in groups if g["original_ids"][0]>end]
-    need(bool(next_groups),"End-of-book requires separate closure gate")
-    nxt=next_groups[0]
-    need(delta["next"]=={"id":nxt["original_ids"][0],"line":nxt["line"]} and delta["source_lines"][1]==nxt["line"]-1,"Wrong next cursor")
+    if next_groups:
+        nxt=next_groups[0]
+        need(delta["next"]=={"id":nxt["original_ids"][0],"line":nxt["line"]} and delta["source_lines"][1]==nxt["line"]-1,"Wrong next cursor")
+    else:
+        need(end==inv["ledger"]["ids"][1] and delta["source_lines"][1]==inv["source"]["lines"][1],"Wrong end-of-book boundary")
+        need(delta["next"]=={"id":None,"line":None,"stage":"C_PENDING"},"End-of-book requires explicit separate closure gate")
     need([x[0] for x in reviews]==ids,"One adjudication per ledger record required")
     # Resolve ledger blob paths from Git's tree, not from chat attachments.
     ledger={}
