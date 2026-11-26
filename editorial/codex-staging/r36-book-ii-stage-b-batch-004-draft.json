@@ -1,0 +1,4232 @@
+{
+  "schema": "worldroot-r36-book-ii-stage-b-editorial-batch-v1",
+  "book": 2,
+  "stage": "B",
+  "batch": 4,
+  "status": "EDITORIAL_DRAFT_PENDING_NATIVE_VALIDATION_NO_COVERAGE_ADVANCE",
+  "parent_checkpoint": "038a31ca116bfaa76d4a2f30b417906e46f61900",
+  "base_archive": "e1ceb435a41e08da9232adcd51d70245d8beca5e",
+  "engine_commit": "3170905db607f89004ed3d62a064dbb092922080",
+  "base_registry_blobs": {
+    "base": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+    "characters": "3a26afdd1e784a9fc20db8efeebe851edef90ed0",
+    "world": "38ef6828e38bb716655ee48723e28e294a9f6bd1",
+    "naming": "6ebdf85177be18ef6e6a50aaa3d6fdc694e7ed18",
+    "head": "9b4e09682fc3148511d59e73ec56fdcda4e396e5",
+    "manifest": "a38a3d418a326549acfa2685ca8a060a140d7534"
+  },
+  "source": {
+    "name": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+    "sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+    "part": 2,
+    "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+    "global_to_local_line_offset": 40867,
+    "chapter_read": [
+      72801,
+      74703
+    ]
+  },
+  "ledger": [
+    {
+      "original_id": 412,
+      "entity_id": "canal-soberano",
+      "original_field": "powers",
+      "global_line": 72845,
+      "local_line": 31978,
+      "anchor": "Despertou o Canal Soberano de Gênese. Sua capacidade de condução aumentou quatorze vezes. Sua reserva operacional acessível tornou-se mais de cinco vezes maior. Ergueu uma imensa linha de muralhas e descobriu como iniciar conscientemente uma nova vida.",
+      "anchor_sha256": "15c42defcfa350e8b7949606a5997b47a6d2d67a898376b7a6fefbaa924ffefa",
+      "context": [
+        {
+          "line": 72841,
+          "text": "DIA 138  CASA DO JARDIM BRANCO · TRÊS ARCOS  UM DIA PARA VIVER"
+        },
+        {
+          "line": 72842,
+          "text": ""
+        },
+        {
+          "line": 72843,
+          "text": "No Dia 137, LUCAS realizou aquilo que parecera impossível durante meses."
+        },
+        {
+          "line": 72844,
+          "text": ""
+        },
+        {
+          "line": 72845,
+          "text": "Despertou o Canal Soberano de Gênese. Sua capacidade de condução aumentou quatorze vezes. Sua reserva operacional acessível tornou-se mais de cinco vezes maior. Ergueu uma imensa linha de muralhas e descobriu como iniciar conscientemente uma nova vida."
+        },
+        {
+          "line": 72846,
+          "text": ""
+        },
+        {
+          "line": 72847,
+          "text": "Mas, quando a oportunidade de criar essa vida finalmente surgiu, o fundador percebeu algo."
+        },
+        {
+          "line": 72848,
+          "text": ""
+        },
+        {
+          "line": 72849,
+          "text": "Não precisava fazê-lo naquele instante."
+        }
+      ],
+      "classification": "FATO_NARRADO",
+      "verdict": "Retrospectiva D137: fluxo 14×; valor preciso 5,4× no quadro D139. Não é nova evolução.",
+      "source_role": "NARRATIVE",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 413,
+      "entity_id": "canal-soberano",
+      "original_field": "architecture",
+      "global_line": 72845,
+      "local_line": 31978,
+      "anchor": "Despertou o Canal Soberano de Gênese. Sua capacidade de condução aumentou quatorze vezes. Sua reserva operacional acessível tornou-se mais de cinco vezes maior. Ergueu uma imensa linha de muralhas e descobriu como iniciar conscientemente uma nova vida.",
+      "anchor_sha256": "15c42defcfa350e8b7949606a5997b47a6d2d67a898376b7a6fefbaa924ffefa",
+      "context": [
+        {
+          "line": 72841,
+          "text": "DIA 138  CASA DO JARDIM BRANCO · TRÊS ARCOS  UM DIA PARA VIVER"
+        },
+        {
+          "line": 72842,
+          "text": ""
+        },
+        {
+          "line": 72843,
+          "text": "No Dia 137, LUCAS realizou aquilo que parecera impossível durante meses."
+        },
+        {
+          "line": 72844,
+          "text": ""
+        },
+        {
+          "line": 72845,
+          "text": "Despertou o Canal Soberano de Gênese. Sua capacidade de condução aumentou quatorze vezes. Sua reserva operacional acessível tornou-se mais de cinco vezes maior. Ergueu uma imensa linha de muralhas e descobriu como iniciar conscientemente uma nova vida."
+        },
+        {
+          "line": 72846,
+          "text": ""
+        },
+        {
+          "line": 72847,
+          "text": "Mas, quando a oportunidade de criar essa vida finalmente surgiu, o fundador percebeu algo."
+        },
+        {
+          "line": 72848,
+          "text": ""
+        },
+        {
+          "line": 72849,
+          "text": "Não precisava fazê-lo naquele instante."
+        }
+      ],
+      "classification": "ERRO_DE_CLASSIFICACAO",
+      "verdict": "Não descreve arquitetura física; confirma parâmetros funcionais.",
+      "source_role": "NARRATIVE",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 414,
+      "entity_id": "canal-soberano",
+      "original_field": "lifecycle",
+      "global_line": 72845,
+      "local_line": 31978,
+      "anchor": "Despertou o Canal Soberano de Gênese. Sua capacidade de condução aumentou quatorze vezes. Sua reserva operacional acessível tornou-se mais de cinco vezes maior. Ergueu uma imensa linha de muralhas e descobriu como iniciar conscientemente uma nova vida.",
+      "anchor_sha256": "15c42defcfa350e8b7949606a5997b47a6d2d67a898376b7a6fefbaa924ffefa",
+      "context": [
+        {
+          "line": 72841,
+          "text": "DIA 138  CASA DO JARDIM BRANCO · TRÊS ARCOS  UM DIA PARA VIVER"
+        },
+        {
+          "line": 72842,
+          "text": ""
+        },
+        {
+          "line": 72843,
+          "text": "No Dia 137, LUCAS realizou aquilo que parecera impossível durante meses."
+        },
+        {
+          "line": 72844,
+          "text": ""
+        },
+        {
+          "line": 72845,
+          "text": "Despertou o Canal Soberano de Gênese. Sua capacidade de condução aumentou quatorze vezes. Sua reserva operacional acessível tornou-se mais de cinco vezes maior. Ergueu uma imensa linha de muralhas e descobriu como iniciar conscientemente uma nova vida."
+        },
+        {
+          "line": 72846,
+          "text": ""
+        },
+        {
+          "line": 72847,
+          "text": "Mas, quando a oportunidade de criar essa vida finalmente surgiu, o fundador percebeu algo."
+        },
+        {
+          "line": 72848,
+          "text": ""
+        },
+        {
+          "line": 72849,
+          "text": "Não precisava fazê-lo naquele instante."
+        }
+      ],
+      "classification": "FATO_NARRADO",
+      "verdict": "Despertar D137; disponibilidade preservada no repouso D138.",
+      "source_role": "NARRATIVE",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 415,
+      "entity_id": "genese",
+      "original_field": "role",
+      "global_line": 72845,
+      "local_line": 31978,
+      "anchor": "Despertou o Canal Soberano de Gênese. Sua capacidade de condução aumentou quatorze vezes. Sua reserva operacional acessível tornou-se mais de cinco vezes maior. Ergueu uma imensa linha de muralhas e descobriu como iniciar conscientemente uma nova vida.",
+      "anchor_sha256": "15c42defcfa350e8b7949606a5997b47a6d2d67a898376b7a6fefbaa924ffefa",
+      "context": [
+        {
+          "line": 72841,
+          "text": "DIA 138  CASA DO JARDIM BRANCO · TRÊS ARCOS  UM DIA PARA VIVER"
+        },
+        {
+          "line": 72842,
+          "text": ""
+        },
+        {
+          "line": 72843,
+          "text": "No Dia 137, LUCAS realizou aquilo que parecera impossível durante meses."
+        },
+        {
+          "line": 72844,
+          "text": ""
+        },
+        {
+          "line": 72845,
+          "text": "Despertou o Canal Soberano de Gênese. Sua capacidade de condução aumentou quatorze vezes. Sua reserva operacional acessível tornou-se mais de cinco vezes maior. Ergueu uma imensa linha de muralhas e descobriu como iniciar conscientemente uma nova vida."
+        },
+        {
+          "line": 72846,
+          "text": ""
+        },
+        {
+          "line": 72847,
+          "text": "Mas, quando a oportunidade de criar essa vida finalmente surgiu, o fundador percebeu algo."
+        },
+        {
+          "line": 72848,
+          "text": ""
+        },
+        {
+          "line": 72849,
+          "text": "Não precisava fazê-lo naquele instante."
+        }
+      ],
+      "classification": "FATO_NARRADO",
+      "verdict": "GÊNESE permitiu erguer muralha e iniciar procedimento vital; nenhuma nova vida criada nesta passagem.",
+      "source_role": "NARRATIVE",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 416,
+      "entity_id": "ilva",
+      "original_field": "voice",
+      "global_line": 73633,
+      "local_line": 32766,
+      "anchor": "ILVA sorriu.",
+      "anchor_sha256": "17e3d0fc39638e372f53ec8e7c930ed1a8dcb9eb97e2f7d19d83c50469cc0092",
+      "context": [
+        {
+          "line": 73629,
+          "text": "— Um registro de aniversários?"
+        },
+        {
+          "line": 73630,
+          "text": ""
+        },
+        {
+          "line": 73631,
+          "text": "— Algo mais interessante. Um calendário de celebrações da cidade. Quem quiser poderá registrar o dia de nascimento ou uma data pessoal importante. Para os trezentos, poderemos reconhecer a data de origem comum, mas cada um deve ter liberdade para escolher como deseja comemorar."
+        },
+        {
+          "line": 73632,
+          "text": ""
+        },
+        {
+          "line": 73633,
+          "text": "ILVA sorriu."
+        },
+        {
+          "line": 73634,
+          "text": ""
+        },
+        {
+          "line": 73635,
+          "text": "— E ninguém precisará organizar uma festa enorme se não quiser."
+        },
+        {
+          "line": 73636,
+          "text": ""
+        },
+        {
+          "line": 73637,
+          "text": "MIREN assentiu."
+        }
+      ],
+      "classification": "ERRO_DE_CLASSIFICACAO",
+      "verdict": "Sorriso isolado não caracteriza voz; fala seguinte defende celebração voluntária.",
+      "source_role": "NARRATIVE",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 417,
+      "entity_id": "canal-soberano",
+      "original_field": "location",
+      "global_line": 73933,
+      "local_line": 33066,
+      "anchor": "O Canal Soberano permaneceu acessível.",
+      "anchor_sha256": "1c00dccf83bf0b61c9628becaf9e63acbd4304f65030806f60ce9223cd619989",
+      "context": [
+        {
+          "line": 73929,
+          "text": "Apenas o som da chuva leve que começava novamente a cair."
+        },
+        {
+          "line": 73930,
+          "text": ""
+        },
+        {
+          "line": 73931,
+          "text": "E, dentro dele, CREATION entrou num estado que nunca havia sido observado conscientemente."
+        },
+        {
+          "line": 73932,
+          "text": ""
+        },
+        {
+          "line": 73933,
+          "text": "O Canal Soberano permaneceu acessível."
+        },
+        {
+          "line": 73934,
+          "text": ""
+        },
+        {
+          "line": 73935,
+          "text": "A circulação de potência diminuiu."
+        },
+        {
+          "line": 73936,
+          "text": ""
+        },
+        {
+          "line": 73937,
+          "text": "O fluxo natural de recuperação começou a preencher a reserva."
+        }
+      ],
+      "classification": "ERRO_DE_CLASSIFICACAO",
+      "verdict": "Não é local geográfico: disponibilidade funcional durante repouso de baixo fluxo.",
+      "source_role": "NARRATIVE",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 418,
+      "entity_id": "circulacao-retorno",
+      "original_field": "location",
+      "global_line": 74155,
+      "local_line": 33288,
+      "anchor": "Permanece disponível: repouso com canal regulado e Circulação de Retorno integrada.",
+      "anchor_sha256": "f6ea4bb9fd43fe4fd806a7a726940fc27de0b74ce1678d072ddd472d3f65833b",
+      "context": [
+        {
+          "line": 74151,
+          "text": "A circulação superior pode permanecer em modo de recuperação de baixo fluxo durante repouso natural."
+        },
+        {
+          "line": 74152,
+          "text": ""
+        },
+        {
+          "line": 74153,
+          "text": "A reserva acessível recupera-se progressivamente até seu limite seguro, sem exigir condução máxima ou manifestação ativa."
+        },
+        {
+          "line": 74154,
+          "text": ""
+        },
+        {
+          "line": 74155,
+          "text": "Permanece disponível: repouso com canal regulado e Circulação de Retorno integrada."
+        },
+        {
+          "line": 74156,
+          "text": ""
+        },
+        {
+          "line": 74157,
+          "text": "Não permite: ultrapassar a capacidade máxima, recuperar instantaneamente qualquer gasto ou substituir indefinidamente sono, alimentação e recuperação física."
+        },
+        {
+          "line": 74158,
+          "text": ""
+        },
+        {
+          "line": 74159,
+          "text": "Primeira noite registrada com resultado expressivo. ASTRA ainda poderá acompanhar variações entre diferentes níveis de esforço."
+        }
+      ],
+      "classification": "ERRO_DE_CLASSIFICACAO",
+      "verdict": "Não é localização; integração de Circulação de Retorno ao repouso regulado e seus limites.",
+      "source_role": "NARRATIVE",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 419,
+      "entity_id": "maelis",
+      "original_field": "capabilities",
+      "global_line": 74532,
+      "local_line": 33665,
+      "anchor": "E MAELIS procurava garantir que o crescimento da cidade não superasse sua capacidade de atendimento.",
+      "anchor_sha256": "658e5e131acd07006918ca4c9ba53cf7a8a4df85e49110e2cfc401e805a9423c",
+      "context": [
+        {
+          "line": 74528,
+          "text": "BRANNIK iniciava o detalhamento do Armazém das Quatro Estações."
+        },
+        {
+          "line": 74529,
+          "text": ""
+        },
+        {
+          "line": 74530,
+          "text": "ASTRA investigava como expandir a Rede da Aurora de maneira economicamente viável."
+        },
+        {
+          "line": 74531,
+          "text": ""
+        },
+        {
+          "line": 74532,
+          "text": "E MAELIS procurava garantir que o crescimento da cidade não superasse sua capacidade de atendimento."
+        },
+        {
+          "line": 74533,
+          "text": ""
+        },
+        {
+          "line": 74534,
+          "text": "Ninguém esperara o fundador acordar para começar."
+        },
+        {
+          "line": 74535,
+          "text": ""
+        },
+        {
+          "line": 74536,
+          "text": "E, pela primeira vez, isso não parecia uma ameaça à importância de LUCAS."
+        }
+      ],
+      "classification": "FATO_NARRADO",
+      "verdict": "Maelis coordena prevenção e capacidade de atendimento; não prova novo poder médico.",
+      "source_role": "NARRATIVE",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 420,
+      "entity_id": "bandeira-cinzenta",
+      "original_field": "capabilities",
+      "global_line": 74699,
+      "local_line": 33832,
+      "anchor": "Vou conduzir os sete dias como uma operação coordenada: primeiro LUCAS cria a força de autômatos; depois os responsáveis ampliam água, alimentos, energia, irrigação e estradas, aproveitando a recuperação diária de Gênese. Em paralelo, VARO e SERON acompanham a ameaça da Bandeira Cinzenta e SAEL desenvolve os equipamentos da Legião. Ao final, teremos um levantamento territorial para responder concretamente se Três Arcos comporta 10 mil, 100 mil ou mais habitantes.",
+      "anchor_sha256": "d6eebf261b3a6e2ffa273663c07ee3521e23173e2fe066d24832ea0c62a6eb46",
+      "context": [
+        {
+          "line": 74696,
+          "text": "## Response:"
+        },
+        {
+          "line": 74697,
+          "text": "02/11/2026, 01:57:06 · gpt-6-thinking"
+        },
+        {
+          "line": 74698,
+          "text": ""
+        },
+        {
+          "line": 74699,
+          "text": "Vou conduzir os sete dias como uma operação coordenada: primeiro LUCAS cria a força de autômatos; depois os responsáveis ampliam água, alimentos, energia, irrigação e estradas, aproveitando a recuperação diária de Gênese. Em paralelo, VARO e SERON acompanham a ameaça da Bandeira Cinzenta e SAEL desenvolve os equipamentos da Legião. Ao final, teremos um levantamento territorial para responder concretamente se Três Arcos comporta 10 mil, 100 mil ou mais habitantes."
+        },
+        {
+          "line": 74700,
+          "text": ""
+        },
+        {
+          "line": 74701,
+          "text": "Estimando avanços rápidos"
+        },
+        {
+          "line": 74702,
+          "text": ""
+        },
+        {
+          "line": 74703,
+          "text": "Estou equilibrando protótipos, energia limitada e sistemas mecânicos. Uma semana pode render dezenas de autômatos, estradas internas, irrigação ampliada, água potável e expansão agrícola, mas preciso distinguir capacidade inicial de metas futuras."
+        }
+      ],
+      "classification": "ERRO_DE_CLASSIFICACAO",
+      "verdict": "Planejamento do narrador, não capacidade da Bandeira Cinzenta.",
+      "source_role": "ASSISTANT_PLANNING",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 421,
+      "entity_id": "bandeira-cinzenta",
+      "original_field": "architecture",
+      "global_line": 74699,
+      "local_line": 33832,
+      "anchor": "Vou conduzir os sete dias como uma operação coordenada: primeiro LUCAS cria a força de autômatos; depois os responsáveis ampliam água, alimentos, energia, irrigação e estradas, aproveitando a recuperação diária de Gênese. Em paralelo, VARO e SERON acompanham a ameaça da Bandeira Cinzenta e SAEL desenvolve os equipamentos da Legião. Ao final, teremos um levantamento territorial para responder concretamente se Três Arcos comporta 10 mil, 100 mil ou mais habitantes.",
+      "anchor_sha256": "d6eebf261b3a6e2ffa273663c07ee3521e23173e2fe066d24832ea0c62a6eb46",
+      "context": [
+        {
+          "line": 74696,
+          "text": "## Response:"
+        },
+        {
+          "line": 74697,
+          "text": "02/11/2026, 01:57:06 · gpt-6-thinking"
+        },
+        {
+          "line": 74698,
+          "text": ""
+        },
+        {
+          "line": 74699,
+          "text": "Vou conduzir os sete dias como uma operação coordenada: primeiro LUCAS cria a força de autômatos; depois os responsáveis ampliam água, alimentos, energia, irrigação e estradas, aproveitando a recuperação diária de Gênese. Em paralelo, VARO e SERON acompanham a ameaça da Bandeira Cinzenta e SAEL desenvolve os equipamentos da Legião. Ao final, teremos um levantamento territorial para responder concretamente se Três Arcos comporta 10 mil, 100 mil ou mais habitantes."
+        },
+        {
+          "line": 74700,
+          "text": ""
+        },
+        {
+          "line": 74701,
+          "text": "Estimando avanços rápidos"
+        },
+        {
+          "line": 74702,
+          "text": ""
+        },
+        {
+          "line": 74703,
+          "text": "Estou equilibrando protótipos, energia limitada e sistemas mecânicos. Uma semana pode render dezenas de autômatos, estradas internas, irrigação ampliada, água potável e expansão agrícola, mas preciso distinguir capacidade inicial de metas futuras."
+        }
+      ],
+      "classification": "ERRO_DE_CLASSIFICACAO",
+      "verdict": "Planejamento do narrador, não arquitetura da Bandeira Cinzenta.",
+      "source_role": "ASSISTANT_PLANNING",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 422,
+      "entity_id": "bandeira-cinzenta",
+      "original_field": "population",
+      "global_line": 74699,
+      "local_line": 33832,
+      "anchor": "Vou conduzir os sete dias como uma operação coordenada: primeiro LUCAS cria a força de autômatos; depois os responsáveis ampliam água, alimentos, energia, irrigação e estradas, aproveitando a recuperação diária de Gênese. Em paralelo, VARO e SERON acompanham a ameaça da Bandeira Cinzenta e SAEL desenvolve os equipamentos da Legião. Ao final, teremos um levantamento territorial para responder concretamente se Três Arcos comporta 10 mil, 100 mil ou mais habitantes.",
+      "anchor_sha256": "d6eebf261b3a6e2ffa273663c07ee3521e23173e2fe066d24832ea0c62a6eb46",
+      "context": [
+        {
+          "line": 74696,
+          "text": "## Response:"
+        },
+        {
+          "line": 74697,
+          "text": "02/11/2026, 01:57:06 · gpt-6-thinking"
+        },
+        {
+          "line": 74698,
+          "text": ""
+        },
+        {
+          "line": 74699,
+          "text": "Vou conduzir os sete dias como uma operação coordenada: primeiro LUCAS cria a força de autômatos; depois os responsáveis ampliam água, alimentos, energia, irrigação e estradas, aproveitando a recuperação diária de Gênese. Em paralelo, VARO e SERON acompanham a ameaça da Bandeira Cinzenta e SAEL desenvolve os equipamentos da Legião. Ao final, teremos um levantamento territorial para responder concretamente se Três Arcos comporta 10 mil, 100 mil ou mais habitantes."
+        },
+        {
+          "line": 74700,
+          "text": ""
+        },
+        {
+          "line": 74701,
+          "text": "Estimando avanços rápidos"
+        },
+        {
+          "line": 74702,
+          "text": ""
+        },
+        {
+          "line": 74703,
+          "text": "Estou equilibrando protótipos, energia limitada e sistemas mecânicos. Uma semana pode render dezenas de autômatos, estradas internas, irrigação ampliada, água potável e expansão agrícola, mas preciso distinguir capacidade inicial de metas futuras."
+        }
+      ],
+      "classification": "ERRO_DE_CLASSIFICACAO",
+      "verdict": "10 mil/100 mil referem-se a perguntas sobre Três Arcos, não população inimiga.",
+      "source_role": "ASSISTANT_PLANNING",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 423,
+      "entity_id": "sael",
+      "original_field": "powers",
+      "global_line": 74699,
+      "local_line": 33832,
+      "anchor": "Vou conduzir os sete dias como uma operação coordenada: primeiro LUCAS cria a força de autômatos; depois os responsáveis ampliam água, alimentos, energia, irrigação e estradas, aproveitando a recuperação diária de Gênese. Em paralelo, VARO e SERON acompanham a ameaça da Bandeira Cinzenta e SAEL desenvolve os equipamentos da Legião. Ao final, teremos um levantamento territorial para responder concretamente se Três Arcos comporta 10 mil, 100 mil ou mais habitantes.",
+      "anchor_sha256": "d6eebf261b3a6e2ffa273663c07ee3521e23173e2fe066d24832ea0c62a6eb46",
+      "context": [
+        {
+          "line": 74696,
+          "text": "## Response:"
+        },
+        {
+          "line": 74697,
+          "text": "02/11/2026, 01:57:06 · gpt-6-thinking"
+        },
+        {
+          "line": 74698,
+          "text": ""
+        },
+        {
+          "line": 74699,
+          "text": "Vou conduzir os sete dias como uma operação coordenada: primeiro LUCAS cria a força de autômatos; depois os responsáveis ampliam água, alimentos, energia, irrigação e estradas, aproveitando a recuperação diária de Gênese. Em paralelo, VARO e SERON acompanham a ameaça da Bandeira Cinzenta e SAEL desenvolve os equipamentos da Legião. Ao final, teremos um levantamento territorial para responder concretamente se Três Arcos comporta 10 mil, 100 mil ou mais habitantes."
+        },
+        {
+          "line": 74700,
+          "text": ""
+        },
+        {
+          "line": 74701,
+          "text": "Estimando avanços rápidos"
+        },
+        {
+          "line": 74702,
+          "text": ""
+        },
+        {
+          "line": 74703,
+          "text": "Estou equilibrando protótipos, energia limitada e sistemas mecânicos. Uma semana pode render dezenas de autômatos, estradas internas, irrigação ampliada, água potável e expansão agrícola, mas preciso distinguir capacidade inicial de metas futuras."
+        }
+      ],
+      "classification": "ERRO_DE_CLASSIFICACAO",
+      "verdict": "Planejamento, não poderes de Sael.",
+      "source_role": "ASSISTANT_PLANNING",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 424,
+      "entity_id": "sael",
+      "original_field": "capabilities",
+      "global_line": 74699,
+      "local_line": 33832,
+      "anchor": "Vou conduzir os sete dias como uma operação coordenada: primeiro LUCAS cria a força de autômatos; depois os responsáveis ampliam água, alimentos, energia, irrigação e estradas, aproveitando a recuperação diária de Gênese. Em paralelo, VARO e SERON acompanham a ameaça da Bandeira Cinzenta e SAEL desenvolve os equipamentos da Legião. Ao final, teremos um levantamento territorial para responder concretamente se Três Arcos comporta 10 mil, 100 mil ou mais habitantes.",
+      "anchor_sha256": "d6eebf261b3a6e2ffa273663c07ee3521e23173e2fe066d24832ea0c62a6eb46",
+      "context": [
+        {
+          "line": 74696,
+          "text": "## Response:"
+        },
+        {
+          "line": 74697,
+          "text": "02/11/2026, 01:57:06 · gpt-6-thinking"
+        },
+        {
+          "line": 74698,
+          "text": ""
+        },
+        {
+          "line": 74699,
+          "text": "Vou conduzir os sete dias como uma operação coordenada: primeiro LUCAS cria a força de autômatos; depois os responsáveis ampliam água, alimentos, energia, irrigação e estradas, aproveitando a recuperação diária de Gênese. Em paralelo, VARO e SERON acompanham a ameaça da Bandeira Cinzenta e SAEL desenvolve os equipamentos da Legião. Ao final, teremos um levantamento territorial para responder concretamente se Três Arcos comporta 10 mil, 100 mil ou mais habitantes."
+        },
+        {
+          "line": 74700,
+          "text": ""
+        },
+        {
+          "line": 74701,
+          "text": "Estimando avanços rápidos"
+        },
+        {
+          "line": 74702,
+          "text": ""
+        },
+        {
+          "line": 74703,
+          "text": "Estou equilibrando protótipos, energia limitada e sistemas mecânicos. Uma semana pode render dezenas de autômatos, estradas internas, irrigação ampliada, água potável e expansão agrícola, mas preciso distinguir capacidade inicial de metas futuras."
+        }
+      ],
+      "classification": "ERRO_DE_CLASSIFICACAO",
+      "verdict": "Planejamento, não capacidade nova ou entrega de equipamento por Sael.",
+      "source_role": "ASSISTANT_PLANNING",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 425,
+      "entity_id": "sael",
+      "original_field": "architecture",
+      "global_line": 74699,
+      "local_line": 33832,
+      "anchor": "Vou conduzir os sete dias como uma operação coordenada: primeiro LUCAS cria a força de autômatos; depois os responsáveis ampliam água, alimentos, energia, irrigação e estradas, aproveitando a recuperação diária de Gênese. Em paralelo, VARO e SERON acompanham a ameaça da Bandeira Cinzenta e SAEL desenvolve os equipamentos da Legião. Ao final, teremos um levantamento territorial para responder concretamente se Três Arcos comporta 10 mil, 100 mil ou mais habitantes.",
+      "anchor_sha256": "d6eebf261b3a6e2ffa273663c07ee3521e23173e2fe066d24832ea0c62a6eb46",
+      "context": [
+        {
+          "line": 74696,
+          "text": "## Response:"
+        },
+        {
+          "line": 74697,
+          "text": "02/11/2026, 01:57:06 · gpt-6-thinking"
+        },
+        {
+          "line": 74698,
+          "text": ""
+        },
+        {
+          "line": 74699,
+          "text": "Vou conduzir os sete dias como uma operação coordenada: primeiro LUCAS cria a força de autômatos; depois os responsáveis ampliam água, alimentos, energia, irrigação e estradas, aproveitando a recuperação diária de Gênese. Em paralelo, VARO e SERON acompanham a ameaça da Bandeira Cinzenta e SAEL desenvolve os equipamentos da Legião. Ao final, teremos um levantamento territorial para responder concretamente se Três Arcos comporta 10 mil, 100 mil ou mais habitantes."
+        },
+        {
+          "line": 74700,
+          "text": ""
+        },
+        {
+          "line": 74701,
+          "text": "Estimando avanços rápidos"
+        },
+        {
+          "line": 74702,
+          "text": ""
+        },
+        {
+          "line": 74703,
+          "text": "Estou equilibrando protótipos, energia limitada e sistemas mecânicos. Uma semana pode render dezenas de autômatos, estradas internas, irrigação ampliada, água potável e expansão agrícola, mas preciso distinguir capacidade inicial de metas futuras."
+        }
+      ],
+      "classification": "ERRO_DE_CLASSIFICACAO",
+      "verdict": "Planejamento, não arquitetura de Sael.",
+      "source_role": "ASSISTANT_PLANNING",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 426,
+      "entity_id": "sael",
+      "original_field": "population",
+      "global_line": 74699,
+      "local_line": 33832,
+      "anchor": "Vou conduzir os sete dias como uma operação coordenada: primeiro LUCAS cria a força de autômatos; depois os responsáveis ampliam água, alimentos, energia, irrigação e estradas, aproveitando a recuperação diária de Gênese. Em paralelo, VARO e SERON acompanham a ameaça da Bandeira Cinzenta e SAEL desenvolve os equipamentos da Legião. Ao final, teremos um levantamento territorial para responder concretamente se Três Arcos comporta 10 mil, 100 mil ou mais habitantes.",
+      "anchor_sha256": "d6eebf261b3a6e2ffa273663c07ee3521e23173e2fe066d24832ea0c62a6eb46",
+      "context": [
+        {
+          "line": 74696,
+          "text": "## Response:"
+        },
+        {
+          "line": 74697,
+          "text": "02/11/2026, 01:57:06 · gpt-6-thinking"
+        },
+        {
+          "line": 74698,
+          "text": ""
+        },
+        {
+          "line": 74699,
+          "text": "Vou conduzir os sete dias como uma operação coordenada: primeiro LUCAS cria a força de autômatos; depois os responsáveis ampliam água, alimentos, energia, irrigação e estradas, aproveitando a recuperação diária de Gênese. Em paralelo, VARO e SERON acompanham a ameaça da Bandeira Cinzenta e SAEL desenvolve os equipamentos da Legião. Ao final, teremos um levantamento territorial para responder concretamente se Três Arcos comporta 10 mil, 100 mil ou mais habitantes."
+        },
+        {
+          "line": 74700,
+          "text": ""
+        },
+        {
+          "line": 74701,
+          "text": "Estimando avanços rápidos"
+        },
+        {
+          "line": 74702,
+          "text": ""
+        },
+        {
+          "line": 74703,
+          "text": "Estou equilibrando protótipos, energia limitada e sistemas mecânicos. Uma semana pode render dezenas de autômatos, estradas internas, irrigação ampliada, água potável e expansão agrícola, mas preciso distinguir capacidade inicial de metas futuras."
+        }
+      ],
+      "classification": "ERRO_DE_CLASSIFICACAO",
+      "verdict": "Planejamento, não população relacionada a Sael.",
+      "source_role": "ASSISTANT_PLANNING",
+      "semantic_certified": false
+    }
+  ],
+  "changes": [
+    {
+      "entity_id": "canal-soberano",
+      "field": "capabilities",
+      "before": {
+        "value": "Não estabelecido nas fontes examinadas; recuperar antes de afirmar como fato.",
+        "status": "PENDENTE_FONTE",
+        "origin": {
+          "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+          "entity_id": "canal-soberano"
+        },
+        "justification": "Tratado estruturalmente, sem completar conteúdo sem base.",
+        "scope": "EDITORIAL",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+      },
+      "after": {
+        "value": "Livro II, D139 — Regime de Repouso Estável: canal acessível em fluxo reduzido e regulado durante repouso natural, com recuperação progressiva até limite seguro.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "canal-soberano"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 139,
+            "evidence": [
+              {
+                "line": 33066,
+                "global_line": 73933,
+                "anchor": "O Canal Soberano permaneceu acessível."
+              },
+              {
+                "line": 33068,
+                "global_line": 73935,
+                "anchor": "A circulação de potência diminuiu."
+              },
+              {
+                "line": 33070,
+                "global_line": 73937,
+                "anchor": "O fluxo natural de recuperação começou a preencher a reserva."
+              },
+              {
+                "line": 33108,
+                "global_line": 73975,
+                "anchor": "O canal superior não precisava permanecer ativo em sua capacidade máxima."
+              },
+              {
+                "line": 33110,
+                "global_line": 73977,
+                "anchor": "Estava disponível, mas com o fluxo de repouso reduzido."
+              },
+              {
+                "line": 33280,
+                "global_line": 74147,
+                "anchor": "Regime de Repouso Estável"
+              },
+              {
+                "line": 33284,
+                "global_line": 74151,
+                "anchor": "A circulação superior pode permanecer em modo de recuperação de baixo fluxo durante repouso natural."
+              },
+              {
+                "line": 33286,
+                "global_line": 74153,
+                "anchor": "A reserva acessível recupera-se progressivamente até seu limite seguro, sem exigir condução máxima ou manifestação ativa."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial candidata por fonte literal; não afirma estado atual além da cena.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "historical_observations": [
+          {
+            "batch": 4,
+            "book": 2,
+            "day": 139,
+            "value": "Regime de Repouso Estável: canal acessível em fluxo reduzido e regulado durante repouso natural, com recuperação progressiva até limite seguro.",
+            "origin_index": 1
+          }
+        ]
+      }
+    },
+    {
+      "entity_id": "canal-soberano",
+      "field": "demonstrations",
+      "before": {
+        "value": "Livro II, D137 — Ergueu a estrutura principal de um setor da segunda linha defensiva, ainda sujeito a inspeção e acabamento. Manifestou lotes de componentes de projetos conhecidos com matéria disponível.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "canal-soberano"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 137,
+            "evidence": [
+              {
+                "line": 31059,
+                "global_line": 71926,
+                "anchor": "A Circulação de Retorno permanecia ativa."
+              },
+              {
+                "line": 31063,
+                "global_line": 71930,
+                "anchor": "Estava permitindo que CREATION realizasse um projeto de grande escala com o mesmo princípio que aprendera a utilizar em pequenas ferramentas."
+              },
+              {
+                "line": 31075,
+                "global_line": 71942,
+                "anchor": "Diante de Três Arcos, um grande setor defensivo que até aquela manhã existia principalmente em desenhos agora possuía sua estrutura material erguida."
+              },
+              {
+                "line": 31077,
+                "global_line": 71944,
+                "anchor": "Ainda precisaria de inspeções, acabamentos, instalação de equipamentos e aprovação para uso pleno."
+              },
+              {
+                "line": 31375,
+                "global_line": 72242,
+                "anchor": "Ele conseguia organizar lotes inteiros de componentes conhecidos e manifestá-los com rapidez, desde que a matéria estivesse disponível e os projetos fossem compatíveis."
+              },
+              {
+                "line": 31377,
+                "global_line": 72244,
+                "anchor": "ASTRA observou os resultados da primeira sequência."
+              },
+              {
+                "line": 31389,
+                "global_line": 72256,
+                "anchor": "— Isso significa que nossa limitação principal começa a ser pesquisa, materiais e capacidade de testes. Não a fabricação básica."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial do Livro II por fonte literal datada.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "historical_observations": [
+          {
+            "batch": 3,
+            "book": 2,
+            "day": 137,
+            "value": "Ergueu a estrutura principal de um setor da segunda linha defensiva, ainda sujeito a inspeção e acabamento. Manifestou lotes de componentes de projetos conhecidos com matéria disponível.",
+            "origin_index": 1
+          }
+        ]
+      },
+      "after": {
+        "value": "Livro II, D137 — Ergueu a estrutura principal de um setor da segunda linha defensiva, ainda sujeito a inspeção e acabamento. Manifestou lotes de componentes de projetos conhecidos com matéria disponível.\n\nLivro II, D139 — Primeira observação da noite D138→139: reserva ampliada de 38% para 93%, sem manifestação ativa, fonte artificial de grande potência ou consumo da reserva de outra pessoa.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "canal-soberano"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 137,
+            "evidence": [
+              {
+                "line": 31059,
+                "global_line": 71926,
+                "anchor": "A Circulação de Retorno permanecia ativa."
+              },
+              {
+                "line": 31063,
+                "global_line": 71930,
+                "anchor": "Estava permitindo que CREATION realizasse um projeto de grande escala com o mesmo princípio que aprendera a utilizar em pequenas ferramentas."
+              },
+              {
+                "line": 31075,
+                "global_line": 71942,
+                "anchor": "Diante de Três Arcos, um grande setor defensivo que até aquela manhã existia principalmente em desenhos agora possuía sua estrutura material erguida."
+              },
+              {
+                "line": 31077,
+                "global_line": 71944,
+                "anchor": "Ainda precisaria de inspeções, acabamentos, instalação de equipamentos e aprovação para uso pleno."
+              },
+              {
+                "line": 31375,
+                "global_line": 72242,
+                "anchor": "Ele conseguia organizar lotes inteiros de componentes conhecidos e manifestá-los com rapidez, desde que a matéria estivesse disponível e os projetos fossem compatíveis."
+              },
+              {
+                "line": 31377,
+                "global_line": 72244,
+                "anchor": "ASTRA observou os resultados da primeira sequência."
+              },
+              {
+                "line": 31389,
+                "global_line": 72256,
+                "anchor": "— Isso significa que nossa limitação principal começa a ser pesquisa, materiais e capacidade de testes. Não a fabricação básica."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 139,
+            "evidence": [
+              {
+                "line": 33212,
+                "global_line": 74079,
+                "anchor": "PRIMEIRA OBSERVAÇÃO • NOITE DO DIA 138 PARA 139"
+              },
+              {
+                "line": 33216,
+                "global_line": 74083,
+                "anchor": "38%"
+              },
+              {
+                "line": 33222,
+                "global_line": 74089,
+                "anchor": "93%"
+              },
+              {
+                "line": 33230,
+                "global_line": 74097,
+                "anchor": "A recuperação ocorreu com fluxo reduzido, sem manifestação ativa, sem fonte artificial de grande potência e sem consumir a reserva de outra pessoa."
+              },
+              {
+                "line": 33232,
+                "global_line": 74099,
+                "anchor": "Percentuais relativos à reserva ampliada após o despertar. Não representam um aumento adicional da capacidade máxima."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial candidata por fonte literal; não afirma estado atual além da cena.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "historical_observations": [
+          {
+            "batch": 3,
+            "book": 2,
+            "day": 137,
+            "value": "Ergueu a estrutura principal de um setor da segunda linha defensiva, ainda sujeito a inspeção e acabamento. Manifestou lotes de componentes de projetos conhecidos com matéria disponível.",
+            "origin_index": 1
+          },
+          {
+            "batch": 4,
+            "book": 2,
+            "day": 139,
+            "value": "Primeira observação da noite D138→139: reserva ampliada de 38% para 93%, sem manifestação ativa, fonte artificial de grande potência ou consumo da reserva de outra pessoa.",
+            "origin_index": 2
+          }
+        ]
+      }
+    },
+    {
+      "entity_id": "canal-soberano",
+      "field": "limits",
+      "before": {
+        "value": "Livro II, D137 — Recuperação finita, matéria e custos continuam necessários. A reserva germinal excepcional do primeiro dia não foi restaurada.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "canal-soberano"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 137,
+            "evidence": [
+              {
+                "line": 30751,
+                "global_line": 71618,
+                "anchor": "Maior reserva operacional acessível, com recuperação natural ainda finita."
+              },
+              {
+                "line": 30753,
+                "global_line": 71620,
+                "anchor": "Circulação de Retorno I integrada à condução superior."
+              },
+              {
+                "line": 30755,
+                "global_line": 71622,
+                "anchor": "Manifestação Declarativa I preservada, inclusive para construções e construtos conhecidos."
+              },
+              {
+                "line": 30757,
+                "global_line": 71624,
+                "anchor": "Distinção fundamental: a reserva germinal excepcional do Dia 1 não foi restaurada. O novo canal amplia o acesso controlado à potência própria de CREATION, sem eliminar custos, matérias-primas ou o tempo de recuperação."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial do Livro II por fonte literal datada.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "historical_observations": [
+          {
+            "batch": 3,
+            "book": 2,
+            "day": 137,
+            "value": "Recuperação finita, matéria e custos continuam necessários. A reserva germinal excepcional do primeiro dia não foi restaurada.",
+            "origin_index": 1
+          }
+        ]
+      },
+      "after": {
+        "value": "Livro II, D137 — Recuperação finita, matéria e custos continuam necessários. A reserva germinal excepcional do primeiro dia não foi restaurada.\n\nLivro II, D139 — O repouso não ultrapassa capacidade máxima, não recupera instantaneamente qualquer gasto e não substitui sono, alimentação e recuperação física.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "canal-soberano"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 137,
+            "evidence": [
+              {
+                "line": 30751,
+                "global_line": 71618,
+                "anchor": "Maior reserva operacional acessível, com recuperação natural ainda finita."
+              },
+              {
+                "line": 30753,
+                "global_line": 71620,
+                "anchor": "Circulação de Retorno I integrada à condução superior."
+              },
+              {
+                "line": 30755,
+                "global_line": 71622,
+                "anchor": "Manifestação Declarativa I preservada, inclusive para construções e construtos conhecidos."
+              },
+              {
+                "line": 30757,
+                "global_line": 71624,
+                "anchor": "Distinção fundamental: a reserva germinal excepcional do Dia 1 não foi restaurada. O novo canal amplia o acesso controlado à potência própria de CREATION, sem eliminar custos, matérias-primas ou o tempo de recuperação."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 139,
+            "evidence": [
+              {
+                "line": 33244,
+                "global_line": 74111,
+                "anchor": "— Não criamos energia infinita. A recuperação continua dependendo da sua capacidade natural e do ritmo de repouso. Mas seu novo canal parece permitir que essa recuperação preencha muito melhor a reserva ampliada."
+              },
+              {
+                "line": 33286,
+                "global_line": 74153,
+                "anchor": "A reserva acessível recupera-se progressivamente até seu limite seguro, sem exigir condução máxima ou manifestação ativa."
+              },
+              {
+                "line": 33290,
+                "global_line": 74157,
+                "anchor": "Não permite: ultrapassar a capacidade máxima, recuperar instantaneamente qualquer gasto ou substituir indefinidamente sono, alimentação e recuperação física."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial candidata por fonte literal; não afirma estado atual além da cena.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "historical_observations": [
+          {
+            "batch": 3,
+            "book": 2,
+            "day": 137,
+            "value": "Recuperação finita, matéria e custos continuam necessários. A reserva germinal excepcional do primeiro dia não foi restaurada.",
+            "origin_index": 1
+          },
+          {
+            "batch": 4,
+            "book": 2,
+            "day": 139,
+            "value": "O repouso não ultrapassa capacidade máxima, não recupera instantaneamente qualquer gasto e não substitui sono, alimentação e recuperação física.",
+            "origin_index": 2
+          }
+        ]
+      }
+    },
+    {
+      "entity_id": "circulacao-retorno",
+      "field": "evolution",
+      "before": {
+        "value": "Não estabelecido nas fontes examinadas; recuperar antes de afirmar como fato.",
+        "status": "PENDENTE_FONTE",
+        "origin": {
+          "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+          "entity_id": "circulacao-retorno"
+        },
+        "justification": "Tratado estruturalmente, sem completar conteúdo sem base.",
+        "scope": "EDITORIAL",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+      },
+      "after": {
+        "value": "Livro II, D139 — Integração ao repouso com Canal Soberano regulado e recuperação natural; resultado não quantifica separadamente cada componente.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "circulacao-retorno"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 139,
+            "evidence": [
+              {
+                "line": 32962,
+                "global_line": 73829,
+                "anchor": "A Circulação de Retorno já demonstrara que CREATION podia fechar seus circuitos com eficiência."
+              },
+              {
+                "line": 32964,
+                "global_line": 73831,
+                "anchor": "O Canal Soberano oferecia uma passagem mais ampla."
+              },
+              {
+                "line": 32966,
+                "global_line": 73833,
+                "anchor": "E a recuperação natural acontecia mesmo quando LUCAS não utilizava conscientemente seu poder."
+              },
+              {
+                "line": 32968,
+                "global_line": 73835,
+                "anchor": "Talvez bastasse permitir que essas capacidades trabalhassem juntas durante o repouso."
+              },
+              {
+                "line": 33288,
+                "global_line": 74155,
+                "anchor": "Permanece disponível: repouso com canal regulado e Circulação de Retorno integrada."
+              },
+              {
+                "line": 33292,
+                "global_line": 74159,
+                "anchor": "Primeira noite registrada com resultado expressivo. ASTRA ainda poderá acompanhar variações entre diferentes níveis de esforço."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial candidata por fonte literal; não afirma estado atual além da cena.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "historical_observations": [
+          {
+            "batch": 4,
+            "book": 2,
+            "day": 139,
+            "value": "Integração ao repouso com Canal Soberano regulado e recuperação natural; resultado não quantifica separadamente cada componente.",
+            "origin_index": 1
+          }
+        ]
+      }
+    },
+    {
+      "entity_id": "matriz-germinal",
+      "field": "history",
+      "before": {
+        "value": "Livro II, D137 — No encerramento do D137, a primeira manifestação individual estava preparada. O círculo permaneceu vazio e a decisão pessoal de iniciar o nascimento ficou com Lucas.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "matriz-germinal"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 137,
+            "evidence": [
+              {
+                "line": 31621,
+                "global_line": 72488,
+                "anchor": "Nenhuma nova vida foi criada. A execução depende de uma decisão consciente do portador."
+              },
+              {
+                "line": 31877,
+                "global_line": 72744,
+                "anchor": "Os recursos necessários para uma primeira manifestação individual estavam preparados."
+              },
+              {
+                "line": 31879,
+                "global_line": 72746,
+                "anchor": "Mas nenhuma Centelha havia surgido ainda."
+              },
+              {
+                "line": 31883,
+                "global_line": 72750,
+                "anchor": "Nenhum corpo havia tomado forma."
+              },
+              {
+                "line": 31895,
+                "global_line": 72762,
+                "anchor": "— Você deseja iniciar a primeira Gênese consciente?"
+              },
+              {
+                "line": 31903,
+                "global_line": 72770,
+                "anchor": "A decisão agora é sua."
+              },
+              {
+                "line": 31914,
+                "global_line": 72781,
+                "anchor": "Matriz Germinal I disponível. Primeira criação consciente individual é viável, ainda não executada."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial do Livro II por fonte literal datada.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "historical_observations": [
+          {
+            "batch": 3,
+            "book": 2,
+            "day": 137,
+            "value": "No encerramento do D137, a primeira manifestação individual estava preparada. O círculo permaneceu vazio e a decisão pessoal de iniciar o nascimento ficou com Lucas.",
+            "origin_index": 1
+          }
+        ]
+      },
+      "after": {
+        "value": "Livro II, D137 — No encerramento do D137, a primeira manifestação individual estava preparada. O círculo permaneceu vazio e a decisão pessoal de iniciar o nascimento ficou com Lucas.\n\nLivro II, D139 — Lucas adiou a criação consciente no D138; no início do D139 a Matriz Germinal I permanecia disponível e nenhuma nova vida consciente havia sido criada por esse procedimento.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "matriz-germinal"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 137,
+            "evidence": [
+              {
+                "line": 31621,
+                "global_line": 72488,
+                "anchor": "Nenhuma nova vida foi criada. A execução depende de uma decisão consciente do portador."
+              },
+              {
+                "line": 31877,
+                "global_line": 72744,
+                "anchor": "Os recursos necessários para uma primeira manifestação individual estavam preparados."
+              },
+              {
+                "line": 31879,
+                "global_line": 72746,
+                "anchor": "Mas nenhuma Centelha havia surgido ainda."
+              },
+              {
+                "line": 31883,
+                "global_line": 72750,
+                "anchor": "Nenhum corpo havia tomado forma."
+              },
+              {
+                "line": 31895,
+                "global_line": 72762,
+                "anchor": "— Você deseja iniciar a primeira Gênese consciente?"
+              },
+              {
+                "line": 31903,
+                "global_line": 72770,
+                "anchor": "A decisão agora é sua."
+              },
+              {
+                "line": 31914,
+                "global_line": 72781,
+                "anchor": "Matriz Germinal I disponível. Primeira criação consciente individual é viável, ainda não executada."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 139,
+            "evidence": [
+              {
+                "line": 31980,
+                "global_line": 72847,
+                "anchor": "Mas, quando a oportunidade de criar essa vida finalmente surgiu, o fundador percebeu algo."
+              },
+              {
+                "line": 31982,
+                "global_line": 72849,
+                "anchor": "Não precisava fazê-lo naquele instante."
+              },
+              {
+                "line": 31984,
+                "global_line": 72851,
+                "anchor": "A Matriz Germinal continuaria disponível amanhã."
+              },
+              {
+                "line": 33785,
+                "global_line": 74652,
+                "anchor": "Matriz Germinal I"
+              },
+              {
+                "line": 33786,
+                "global_line": 74653,
+                "anchor": "Disponível; nenhuma nova vida consciente criada ainda"
+              },
+              {
+                "line": 33802,
+                "global_line": 74669,
+                "anchor": "A criação de uma nova vida consciente continua disponível, sem prazo de expiração. Ele poderá escolher esse momento quando desejar."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial candidata por fonte literal; não afirma estado atual além da cena.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "historical_observations": [
+          {
+            "batch": 3,
+            "book": 2,
+            "day": 137,
+            "value": "No encerramento do D137, a primeira manifestação individual estava preparada. O círculo permaneceu vazio e a decisão pessoal de iniciar o nascimento ficou com Lucas.",
+            "origin_index": 1
+          },
+          {
+            "batch": 4,
+            "book": 2,
+            "day": 139,
+            "value": "Lucas adiou a criação consciente no D138; no início do D139 a Matriz Germinal I permanecia disponível e nenhuma nova vida consciente havia sido criada por esse procedimento.",
+            "origin_index": 2
+          }
+        ]
+      }
+    },
+    {
+      "entity_id": "lucas",
+      "field": "magic_repertoire",
+      "before": {
+        "value": "Livro II, D137 — A progressão dos D131–137 integrou Manifestação Declarativa I, Circulação de Retorno I, Canal Soberano I e compartilhamento consentido. Ao fim do D137 podia iniciar uma manifestação vital individual.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "Criador e fundador",
+            "observations": 4,
+            "legacy_id": "R26-CHAR-01"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 137,
+            "evidence": [
+              {
+                "line": 22737,
+                "global_line": 63604,
+                "anchor": "Nova capacidade: Manifestação Declarativa I"
+              },
+              {
+                "line": 24442,
+                "global_line": 65309,
+                "anchor": "Circulação de Retorno I"
+              },
+              {
+                "line": 30747,
+                "global_line": 71614,
+                "anchor": "Acesso consciente a um canal superior de CREATION."
+              },
+              {
+                "line": 30753,
+                "global_line": 71620,
+                "anchor": "Circulação de Retorno I integrada à condução superior."
+              },
+              {
+                "line": 30755,
+                "global_line": 71622,
+                "anchor": "Manifestação Declarativa I preservada, inclusive para construções e construtos conhecidos."
+              },
+              {
+                "line": 31908,
+                "global_line": 72775,
+                "anchor": "Despertado. Fluxo sustentado demonstrado em aproximadamente 14× o patamar anterior; reserva operacional acessível de 5,4×."
+              },
+              {
+                "line": 31910,
+                "global_line": 72777,
+                "anchor": "Desbloqueada. Referências compartilhadas com consentimento individual, sem controle mental."
+              },
+              {
+                "line": 31914,
+                "global_line": 72781,
+                "anchor": "Matriz Germinal I disponível. Primeira criação consciente individual é viável, ainda não executada."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial do Livro II por fonte literal datada.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "historical_observations": [
+          {
+            "batch": 3,
+            "book": 2,
+            "day": 137,
+            "value": "A progressão dos D131–137 integrou Manifestação Declarativa I, Circulação de Retorno I, Canal Soberano I e compartilhamento consentido. Ao fim do D137 podia iniciar uma manifestação vital individual.",
+            "origin_index": 1
+          }
+        ]
+      },
+      "after": {
+        "value": "Livro II, D137 — A progressão dos D131–137 integrou Manifestação Declarativa I, Circulação de Retorno I, Canal Soberano I e compartilhamento consentido. Ao fim do D137 podia iniciar uma manifestação vital individual.\n\nLivro II, D139 — Regime de Repouso Estável observado na noite D138→139 (38% a 93%); integração de canal regulado e Circulação de Retorno, sem aumento adicional da capacidade máxima.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "Criador e fundador",
+            "observations": 4,
+            "legacy_id": "R26-CHAR-01"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 137,
+            "evidence": [
+              {
+                "line": 22737,
+                "global_line": 63604,
+                "anchor": "Nova capacidade: Manifestação Declarativa I"
+              },
+              {
+                "line": 24442,
+                "global_line": 65309,
+                "anchor": "Circulação de Retorno I"
+              },
+              {
+                "line": 30747,
+                "global_line": 71614,
+                "anchor": "Acesso consciente a um canal superior de CREATION."
+              },
+              {
+                "line": 30753,
+                "global_line": 71620,
+                "anchor": "Circulação de Retorno I integrada à condução superior."
+              },
+              {
+                "line": 30755,
+                "global_line": 71622,
+                "anchor": "Manifestação Declarativa I preservada, inclusive para construções e construtos conhecidos."
+              },
+              {
+                "line": 31908,
+                "global_line": 72775,
+                "anchor": "Despertado. Fluxo sustentado demonstrado em aproximadamente 14× o patamar anterior; reserva operacional acessível de 5,4×."
+              },
+              {
+                "line": 31910,
+                "global_line": 72777,
+                "anchor": "Desbloqueada. Referências compartilhadas com consentimento individual, sem controle mental."
+              },
+              {
+                "line": 31914,
+                "global_line": 72781,
+                "anchor": "Matriz Germinal I disponível. Primeira criação consciente individual é viável, ainda não executada."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 139,
+            "evidence": [
+              {
+                "line": 33212,
+                "global_line": 74079,
+                "anchor": "PRIMEIRA OBSERVAÇÃO • NOITE DO DIA 138 PARA 139"
+              },
+              {
+                "line": 33216,
+                "global_line": 74083,
+                "anchor": "38%"
+              },
+              {
+                "line": 33222,
+                "global_line": 74089,
+                "anchor": "93%"
+              },
+              {
+                "line": 33232,
+                "global_line": 74099,
+                "anchor": "Percentuais relativos à reserva ampliada após o despertar. Não representam um aumento adicional da capacidade máxima."
+              },
+              {
+                "line": 33278,
+                "global_line": 74145,
+                "anchor": "GÊNESE — CANAL SOBERANO I"
+              },
+              {
+                "line": 33280,
+                "global_line": 74147,
+                "anchor": "Regime de Repouso Estável"
+              },
+              {
+                "line": 33288,
+                "global_line": 74155,
+                "anchor": "Permanece disponível: repouso com canal regulado e Circulação de Retorno integrada."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial candidata por fonte literal; não afirma estado atual além da cena.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "historical_observations": [
+          {
+            "batch": 3,
+            "book": 2,
+            "day": 137,
+            "value": "A progressão dos D131–137 integrou Manifestação Declarativa I, Circulação de Retorno I, Canal Soberano I e compartilhamento consentido. Ao fim do D137 podia iniciar uma manifestação vital individual.",
+            "origin_index": 1
+          },
+          {
+            "batch": 4,
+            "book": 2,
+            "day": 139,
+            "value": "Regime de Repouso Estável observado na noite D138→139 (38% a 93%); integração de canal regulado e Circulação de Retorno, sem aumento adicional da capacidade máxima.",
+            "origin_index": 2
+          }
+        ]
+      }
+    },
+    {
+      "entity_id": "lucas",
+      "field": "history",
+      "before": {
+        "value": "Criou 300 vidas no início; participou do resgate de Elyan e assinou reconhecimento como representante fundador.",
+        "status": "RECUPERADO",
+        "origin": {
+          "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+          "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+          "book": 1,
+          "evidence": [
+            {
+              "line": 313,
+              "anchor": "Você criou trezentas vidas."
+            },
+            {
+              "line": 5699,
+              "anchor": "— Viemos buscar você."
+            },
+            {
+              "line": 5701,
+              "anchor": "Um soldado da Unidade Véu rompe as amarras."
+            },
+            {
+              "line": 38707,
+              "anchor": "A assinatura de LUCAS foi aposta como representante fundador da Legião, ao lado da assinatura de TAREK como representante dos moradores e das autoridades competentes que formalizavam o reconhecimento."
+            }
+          ]
+        },
+        "justification": "Recuperação autoral por evidência literal; não promove evento nem afirma estado atual além do último registro.",
+        "scope": "HISTORICAL_OBSERVATION"
+      },
+      "after": {
+        "value": "Criou 300 vidas no início; participou do resgate de Elyan e assinou reconhecimento como representante fundador.\n\nLivro II, D138 — Escolheu folga com Miren, deixou a armadura em casa, delegou prioridades civis e pagou pelas miniaturas de Círan e Varo.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 313,
+                "anchor": "Você criou trezentas vidas."
+              },
+              {
+                "line": 5699,
+                "anchor": "— Viemos buscar você."
+              },
+              {
+                "line": 5701,
+                "anchor": "Um soldado da Unidade Véu rompe as amarras."
+              },
+              {
+                "line": 38707,
+                "anchor": "A assinatura de LUCAS foi aposta como representante fundador da Legião, ao lado da assinatura de TAREK como representante dos moradores e das autoridades competentes que formalizavam o reconhecimento."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 138,
+            "evidence": [
+              {
+                "line": 31990,
+                "global_line": 72857,
+                "anchor": "Pela primeira vez desde sua chegada àquele mundo, LUCAS escolheu passar um dia inteiro sem tentar salvá-lo, conquistá-lo ou transformá-lo."
+              },
+              {
+                "line": 32106,
+                "global_line": 72973,
+                "anchor": "— Está bem. Sem armadura."
+              },
+              {
+                "line": 32334,
+                "global_line": 73201,
+                "anchor": "LYSA assentiu."
+              },
+              {
+                "line": 32384,
+                "global_line": 73251,
+                "anchor": "Sem armadura."
+              },
+              {
+                "line": 32438,
+                "global_line": 73305,
+                "anchor": "LUCAS comprou as duas miniaturas."
+              },
+              {
+                "line": 32446,
+                "global_line": 73313,
+                "anchor": "— Você trabalhou nelas. Quero pagar como qualquer outro cliente."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial candidata por fonte literal; não afirma estado atual além da cena.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "historical_observations": [
+          {
+            "batch": 4,
+            "book": 2,
+            "day": 138,
+            "value": "Escolheu folga com Miren, deixou a armadura em casa, delegou prioridades civis e pagou pelas miniaturas de Círan e Varo.",
+            "origin_index": 1
+          }
+        ]
+      }
+    },
+    {
+      "entity_id": "miren",
+      "field": "knowledge",
+      "before": {
+        "value": "Livro II, D117 — Traduziu a inscrição parcial do ponto auxiliar e delimitou o que ela permite concluir sobre condução energética.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "arqueóloga e pesquisadora",
+            "observations": 10,
+            "legacy_id": "R26-CHAR-02"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 117,
+            "evidence": [
+              {
+                "line": 13559,
+                "global_line": 54426,
+                "anchor": "MIREN se ajoelhou."
+              },
+              {
+                "line": 13565,
+                "global_line": 54432,
+                "anchor": "Ela começou a traduzir."
+              },
+              {
+                "line": 13573,
+                "global_line": 54440,
+                "anchor": "— Ponto auxiliar..."
+              },
+              {
+                "line": 13577,
+                "global_line": 54444,
+                "anchor": "— Condução não autorizada."
+              },
+              {
+                "line": 13585,
+                "global_line": 54452,
+                "anchor": "— A frase está incompleta. Parece indicar que este ponto não possui autoridade para iniciar condução energética."
+              },
+              {
+                "line": 13601,
+                "global_line": 54468,
+                "anchor": "— É uma possibilidade consistente com a inscrição."
+              },
+              {
+                "line": 13613,
+                "global_line": 54480,
+                "anchor": "Mas ainda não estava demonstrado que aquele ponto fora responsável pela ausência de resposta no incidente antigo."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial do Livro II por fonte literal datada.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "historical_observations": [
+          {
+            "batch": 3,
+            "book": 2,
+            "day": 117,
+            "value": "Traduziu a inscrição parcial do ponto auxiliar e delimitou o que ela permite concluir sobre condução energética.",
+            "origin_index": 1
+          }
+        ]
+      },
+      "after": {
+        "value": "Livro II, D117 — Traduziu a inscrição parcial do ponto auxiliar e delimitou o que ela permite concluir sobre condução energética.\n\nLivro II, D139 — Distinguiu largura do canal e fluxo efetivo, propôs recuperação natural regulada sem absorção indiscriminada de mana; observou e registrou recuperação noturna.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "arqueóloga e pesquisadora",
+            "observations": 10,
+            "legacy_id": "R26-CHAR-02"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 117,
+            "evidence": [
+              {
+                "line": 13559,
+                "global_line": 54426,
+                "anchor": "MIREN se ajoelhou."
+              },
+              {
+                "line": 13565,
+                "global_line": 54432,
+                "anchor": "Ela começou a traduzir."
+              },
+              {
+                "line": 13573,
+                "global_line": 54440,
+                "anchor": "— Ponto auxiliar..."
+              },
+              {
+                "line": 13577,
+                "global_line": 54444,
+                "anchor": "— Condução não autorizada."
+              },
+              {
+                "line": 13585,
+                "global_line": 54452,
+                "anchor": "— A frase está incompleta. Parece indicar que este ponto não possui autoridade para iniciar condução energética."
+              },
+              {
+                "line": 13601,
+                "global_line": 54468,
+                "anchor": "— É uma possibilidade consistente com a inscrição."
+              },
+              {
+                "line": 13613,
+                "global_line": 54480,
+                "anchor": "Mas ainda não estava demonstrado que aquele ponto fora responsável pela ausência de resposta no incidente antigo."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 139,
+            "evidence": [
+              {
+                "line": 32920,
+                "global_line": 73787,
+                "anchor": "— A imagem do rio é boa. Mas precisamos separar a largura do canal da quantidade de água que realmente passa por ele."
+              },
+              {
+                "line": 32940,
+                "global_line": 73807,
+                "anchor": "— O canal maior poderia permanecer acessível, mas o fluxo de repouso seria reduzido e regulado. Se a reserva chegasse ao limite seguro, a circulação de recuperação diminuiria."
+              },
+              {
+                "line": 32946,
+                "global_line": 73813,
+                "anchor": "— Sua recuperação natural já existe. O que queremos descobrir é se o novo domínio permite que ela alcance a reserva ampliada sem as perdas e os bloqueios anteriores."
+              },
+              {
+                "line": 32950,
+                "global_line": 73817,
+                "anchor": "— Não quero que você absorva indiscriminadamente mana de tudo ao redor. Não sabemos o que isso poderia causar."
+              },
+              {
+                "line": 32988,
+                "global_line": 73855,
+                "anchor": "— Podemos registrar a reserva agora e comparar pela manhã. Você simplesmente vai dormir."
+              },
+              {
+                "line": 33104,
+                "global_line": 73971,
+                "anchor": "Mas por um processo contínuo, de baixa intensidade, associado à recuperação natural do portador."
+              },
+              {
+                "line": 33134,
+                "global_line": 74001,
+                "anchor": "Apenas registrou o resultado."
+              },
+              {
+                "line": 33230,
+                "global_line": 74097,
+                "anchor": "A recuperação ocorreu com fluxo reduzido, sem manifestação ativa, sem fonte artificial de grande potência e sem consumir a reserva de outra pessoa."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial candidata por fonte literal; não afirma estado atual além da cena.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "historical_observations": [
+          {
+            "batch": 3,
+            "book": 2,
+            "day": 117,
+            "value": "Traduziu a inscrição parcial do ponto auxiliar e delimitou o que ela permite concluir sobre condução energética.",
+            "origin_index": 1
+          },
+          {
+            "batch": 4,
+            "book": 2,
+            "day": 139,
+            "value": "Distinguiu largura do canal e fluxo efetivo, propôs recuperação natural regulada sem absorção indiscriminada de mana; observou e registrou recuperação noturna.",
+            "origin_index": 2
+          }
+        ]
+      }
+    },
+    {
+      "entity_id": "miren",
+      "field": "history",
+      "before": {
+        "value": "Histórico ainda não consolidado; não fabricar biografia passada.",
+        "status": "PENDENTE_FONTE",
+        "origin": {
+          "policy": "C4 autorizado pelo autor em 2026-11-26",
+          "basis": "arqueóloga e pesquisadora",
+          "observations": 10,
+          "legacy_id": "R26-CHAR-02"
+        },
+        "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+        "scope": "EDITORIAL",
+        "valid_at": {
+          "day": 579,
+          "chapter": 9,
+          "part": "I"
+        }
+      },
+      "after": {
+        "value": "Livro II, D138 — Folga com Lucas: mercado, Cozinha dos Três Caminhos e livraria de Fen; defendeu descanso e autonomia sem transformar a folga em pesquisa.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "arqueóloga e pesquisadora",
+            "observations": 10,
+            "legacy_id": "R26-CHAR-02"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 138,
+            "evidence": [
+              {
+                "line": 32066,
+                "global_line": 72933,
+                "anchor": "— Você acabou de escolher livremente passar o dia comigo. Estou apenas respeitando sua decisão."
+              },
+              {
+                "line": 32380,
+                "global_line": 73247,
+                "anchor": "MIREN caminhava com os dedos entrelaçados aos de LUCAS."
+              },
+              {
+                "line": 32496,
+                "global_line": 73363,
+                "anchor": "HALDEN — COZINHA DOS TRÊS CAMINHOS."
+              },
+              {
+                "line": 32650,
+                "global_line": 73517,
+                "anchor": "14h11 | Pequena livraria de FEN"
+              },
+              {
+                "line": 32978,
+                "global_line": 73845,
+                "anchor": "— Hoje não vamos fazer um teste cansativo."
+              },
+              {
+                "line": 33330,
+                "global_line": 74197,
+                "anchor": "— Não quero que precise acontecer uma grande descoberta toda vez que decidirmos passar um dia juntos."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial candidata por fonte literal; não afirma estado atual além da cena.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "valid_at": {
+          "day": 579,
+          "chapter": 9,
+          "part": "I"
+        },
+        "historical_observations": [
+          {
+            "batch": 4,
+            "book": 2,
+            "day": 138,
+            "value": "Folga com Lucas: mercado, Cozinha dos Três Caminhos e livraria de Fen; defendeu descanso e autonomia sem transformar a folga em pesquisa.",
+            "origin_index": 1
+          }
+        ]
+      }
+    },
+    {
+      "entity_id": "ilva",
+      "field": "voice",
+      "before": {
+        "value": "Direta e bem-humorada nas negociações: no D103 ironizou a falta de conhecimento de costura dos administradores; no D106 brincou que cobraria o dobro de uma nova surpresa e lembrou Lucas que não precisava dar presentes para ser querido.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": [
+              103,
+              106
+            ],
+            "evidence": [
+              {
+                "line": 2101,
+                "global_line": 42968,
+                "anchor": "— Homens que administram cidades deveriam ser obrigados a aprender costura."
+              },
+              {
+                "line": 2986,
+                "global_line": 43853,
+                "anchor": "— Estão prontos para entrega, com alguns ajustes finais que faremos depois das provas de roupa. E quero que saiba que, se inventar outra surpresa envolvendo dez pessoas, vou cobrar o dobro."
+              },
+              {
+                "line": 3080,
+                "global_line": 43947,
+                "anchor": "— Você não precisa dar presentes para que essas pessoas gostem de você."
+              },
+              {
+                "line": 3088,
+                "global_line": 43955,
+                "anchor": "— Ótimo. Porque gostar de alguém não significa que você possa me pedir vinte roupas novas para amanhã."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento.",
+        "scope": "HISTORICAL_OBSERVATION"
+      },
+      "after": {
+        "value": "Direta e bem-humorada nas negociações: no D103 ironizou a falta de conhecimento de costura dos administradores; no D106 brincou que cobraria o dobro de uma nova surpresa e lembrou Lucas que não precisava dar presentes para ser querido.\n\nLivro II, D138 — Defendeu que ninguém fosse obrigado a organizar uma grande festa no calendário de celebrações.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": [
+              103,
+              106
+            ],
+            "evidence": [
+              {
+                "line": 2101,
+                "global_line": 42968,
+                "anchor": "— Homens que administram cidades deveriam ser obrigados a aprender costura."
+              },
+              {
+                "line": 2986,
+                "global_line": 43853,
+                "anchor": "— Estão prontos para entrega, com alguns ajustes finais que faremos depois das provas de roupa. E quero que saiba que, se inventar outra surpresa envolvendo dez pessoas, vou cobrar o dobro."
+              },
+              {
+                "line": 3080,
+                "global_line": 43947,
+                "anchor": "— Você não precisa dar presentes para que essas pessoas gostem de você."
+              },
+              {
+                "line": 3088,
+                "global_line": 43955,
+                "anchor": "— Ótimo. Porque gostar de alguém não significa que você possa me pedir vinte roupas novas para amanhã."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 138,
+            "evidence": [
+              {
+                "line": 32764,
+                "global_line": 73631,
+                "anchor": "— Algo mais interessante. Um calendário de celebrações da cidade. Quem quiser poderá registrar o dia de nascimento ou uma data pessoal importante. Para os trezentos, poderemos reconhecer a data de origem comum, mas cada um deve ter liberdade para escolher como deseja comemorar."
+              },
+              {
+                "line": 32766,
+                "global_line": 73633,
+                "anchor": "ILVA sorriu."
+              },
+              {
+                "line": 32768,
+                "global_line": 73635,
+                "anchor": "— E ninguém precisará organizar uma festa enorme se não quiser."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial candidata por fonte literal; não afirma estado atual além da cena.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "historical_observations": [
+          {
+            "batch": 4,
+            "book": 2,
+            "day": 138,
+            "value": "Defendeu que ninguém fosse obrigado a organizar uma grande festa no calendário de celebrações.",
+            "origin_index": 2
+          }
+        ]
+      }
+    },
+    {
+      "entity_id": "ilva",
+      "field": "history",
+      "before": {
+        "value": "Visitante associada a tecidos; posteriormente organizou reparos de roupas e recebeu pedidos regulares. D98: apresentou peças de tecido e reparos produzidos na cidade durante o Grande Festival. D103: recebeu encomenda privada de trajes cerimoniais na oficina de costura do mercado. D106: entregou peças com ajustes finais previstos e participou do jantar inaugural da Casa do Jardim Branco, para o qual também foram convidadas as ajudantes. D113: continuava recebendo encomendas.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 36018,
+                "anchor": "A mulher dos tecidos, ILVA, observou a oficina."
+              },
+              {
+                "line": 36022,
+                "anchor": "— Poderá negociar espaços e serviços conforme as autorizações e contratos disponíveis. Seu trabalho e seus bens continuarão sendo seus, respeitadas as obrigações acordadas."
+              },
+              {
+                "line": 40019,
+                "anchor": "ILVA organizava reparos de roupas e recebia seus primeiros pedidos regulares."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 98,
+            "evidence": [
+              {
+                "line": 675,
+                "global_line": 41542,
+                "anchor": "DIA 98 — 09h00 | Portões da Cidade Livre"
+              },
+              {
+                "line": 727,
+                "global_line": 41594,
+                "anchor": "Do outro lado da praça, ILVA apresentava peças de tecido e reparos produzidos na cidade."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": [
+              103,
+              106,
+              113
+            ],
+            "evidence": [
+              {
+                "line": 2053,
+                "global_line": 42920,
+                "anchor": "DIA 103 — 13h22 | Mercado da Cidade Livre"
+              },
+              {
+                "line": 2055,
+                "global_line": 42922,
+                "anchor": "LUCAS apareceu na oficina de costura de ILVA com uma expressão que a artesã considerou imediatamente suspeita."
+              },
+              {
+                "line": 2113,
+                "global_line": 42980,
+                "anchor": "O plano foi ajustado: ILVA prepararia mantos, casacos, túnicas e peças de cerimônia personalizadas, utilizando tecidos disponíveis e modelos que pudessem ser finalizados com segurança. Algumas roupas seriam entregues com ajustes posteriores."
+              },
+              {
+                "line": 2115,
+                "global_line": 42982,
+                "anchor": "Duas ajudantes seriam remuneradas pelo trabalho."
+              },
+              {
+                "line": 2145,
+                "global_line": 43012,
+                "anchor": "LUCAS explicou que a encomenda seria custeada por recursos pessoais documentados, sem utilização do fundo histórico de infraestrutura nem do orçamento da cidade."
+              },
+              {
+                "line": 2950,
+                "global_line": 43817,
+                "anchor": "DIA 106 — 11h08 | Oficina de ILVA"
+              },
+              {
+                "line": 2986,
+                "global_line": 43853,
+                "anchor": "— Estão prontos para entrega, com alguns ajustes finais que faremos depois das provas de roupa. E quero que saiba que, se inventar outra surpresa envolvendo dez pessoas, vou cobrar o dobro."
+              },
+              {
+                "line": 3382,
+                "global_line": 44249,
+                "anchor": "ILVA também estava presente."
+              },
+              {
+                "line": 3384,
+                "global_line": 44251,
+                "anchor": "LUCAS fizera questão de convidar a artesã e as ajudantes que haviam trabalhado na encomenda."
+              },
+              {
+                "line": 3480,
+                "global_line": 44347,
+                "anchor": "DIA 106 — 21h24 | Jardim da Casa do Jardim Branco"
+              },
+              {
+                "line": 8305,
+                "global_line": 49172,
+                "anchor": "O Grande Festival havia produzido um excedente operacional modesto. A cozinha de HALDEN começara a gerar receitas regulares. ILVA recebia encomendas. A oficina vendia alguns serviços a comerciantes externos."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento.",
+        "scope": "HISTORICAL_OBSERVATION"
+      },
+      "after": {
+        "value": "Visitante associada a tecidos; posteriormente organizou reparos de roupas e recebeu pedidos regulares. D98: apresentou peças de tecido e reparos produzidos na cidade durante o Grande Festival. D103: recebeu encomenda privada de trajes cerimoniais na oficina de costura do mercado. D106: entregou peças com ajustes finais previstos e participou do jantar inaugural da Casa do Jardim Branco, para o qual também foram convidadas as ajudantes. D113: continuava recebendo encomendas.\n\nLivro II, D139 — D138: confecção de capas discutida com Fen. D139: indicada para cartões e lembranças do calendário voluntário em preparação.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 36018,
+                "anchor": "A mulher dos tecidos, ILVA, observou a oficina."
+              },
+              {
+                "line": 36022,
+                "anchor": "— Poderá negociar espaços e serviços conforme as autorizações e contratos disponíveis. Seu trabalho e seus bens continuarão sendo seus, respeitadas as obrigações acordadas."
+              },
+              {
+                "line": 40019,
+                "anchor": "ILVA organizava reparos de roupas e recebia seus primeiros pedidos regulares."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 98,
+            "evidence": [
+              {
+                "line": 675,
+                "global_line": 41542,
+                "anchor": "DIA 98 — 09h00 | Portões da Cidade Livre"
+              },
+              {
+                "line": 727,
+                "global_line": 41594,
+                "anchor": "Do outro lado da praça, ILVA apresentava peças de tecido e reparos produzidos na cidade."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": [
+              103,
+              106,
+              113
+            ],
+            "evidence": [
+              {
+                "line": 2053,
+                "global_line": 42920,
+                "anchor": "DIA 103 — 13h22 | Mercado da Cidade Livre"
+              },
+              {
+                "line": 2055,
+                "global_line": 42922,
+                "anchor": "LUCAS apareceu na oficina de costura de ILVA com uma expressão que a artesã considerou imediatamente suspeita."
+              },
+              {
+                "line": 2113,
+                "global_line": 42980,
+                "anchor": "O plano foi ajustado: ILVA prepararia mantos, casacos, túnicas e peças de cerimônia personalizadas, utilizando tecidos disponíveis e modelos que pudessem ser finalizados com segurança. Algumas roupas seriam entregues com ajustes posteriores."
+              },
+              {
+                "line": 2115,
+                "global_line": 42982,
+                "anchor": "Duas ajudantes seriam remuneradas pelo trabalho."
+              },
+              {
+                "line": 2145,
+                "global_line": 43012,
+                "anchor": "LUCAS explicou que a encomenda seria custeada por recursos pessoais documentados, sem utilização do fundo histórico de infraestrutura nem do orçamento da cidade."
+              },
+              {
+                "line": 2950,
+                "global_line": 43817,
+                "anchor": "DIA 106 — 11h08 | Oficina de ILVA"
+              },
+              {
+                "line": 2986,
+                "global_line": 43853,
+                "anchor": "— Estão prontos para entrega, com alguns ajustes finais que faremos depois das provas de roupa. E quero que saiba que, se inventar outra surpresa envolvendo dez pessoas, vou cobrar o dobro."
+              },
+              {
+                "line": 3382,
+                "global_line": 44249,
+                "anchor": "ILVA também estava presente."
+              },
+              {
+                "line": 3384,
+                "global_line": 44251,
+                "anchor": "LUCAS fizera questão de convidar a artesã e as ajudantes que haviam trabalhado na encomenda."
+              },
+              {
+                "line": 3480,
+                "global_line": 44347,
+                "anchor": "DIA 106 — 21h24 | Jardim da Casa do Jardim Branco"
+              },
+              {
+                "line": 8305,
+                "global_line": 49172,
+                "anchor": "O Grande Festival havia produzido um excedente operacional modesto. A cozinha de HALDEN começara a gerar receitas regulares. ILVA recebia encomendas. A oficina vendia alguns serviços a comerciantes externos."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 139,
+            "evidence": [
+              {
+                "line": 32656,
+                "global_line": 73523,
+                "anchor": "FEN discutia com ILVA sobre a confecção de capas quando o casal entrou."
+              },
+              {
+                "line": 33589,
+                "global_line": 74456,
+                "anchor": "Havia uma sugestão de Calendário das Vidas de Três Arcos."
+              },
+              {
+                "line": 33591,
+                "global_line": 74458,
+                "anchor": "Cada pessoa poderia registrar voluntariamente uma data de nascimento, de chegada ou outra data significativa que desejasse celebrar."
+              },
+              {
+                "line": 33599,
+                "global_line": 74466,
+                "anchor": "ILVA ajudaria a organizar cartões e pequenas lembranças."
+              },
+              {
+                "line": 33793,
+                "global_line": 74660,
+                "anchor": "Calendário de Aniversários"
+              },
+              {
+                "line": 33794,
+                "global_line": 74661,
+                "anchor": "Proposta em preparação com FEN e participação voluntária"
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial candidata por fonte literal; não afirma estado atual além da cena.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "historical_observations": [
+          {
+            "batch": 4,
+            "book": 2,
+            "day": 139,
+            "value": "D138: confecção de capas discutida com Fen. D139: indicada para cartões e lembranças do calendário voluntário em preparação.",
+            "origin_index": 3
+          }
+        ]
+      }
+    },
+    {
+      "entity_id": "maelis",
+      "field": "history",
+      "before": {
+        "value": "Profissional de saúde proveniente de Veldon; aceitou contrato inicial e implementou registros básicos de atendimento.\n\nLivro II, D137 — No ataque do D129 transportava suprimentos com Elyan e protegeu um ferido. No D135 recebeu com Toran a tarefa de rever a retirada de pacientes. No D137 organizara uma equipe na Academia, mantendo a clínica principal aberta.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 39537,
+                "anchor": "Entre elas havia uma família de agricultores indicada por ESMARA, dois artesãos de madeira e uma profissional de saúde de Veldon chamada MAELIS REN."
+              },
+              {
+                "line": 39551,
+                "anchor": "Após a avaliação de suas referências e de sua experiência, MAELIS aceitou um contrato inicial para organizar atendimento básico, triagem, higiene clínica e encaminhamentos, respeitando os limites de seus conhecimentos e os recursos disponíveis."
+              },
+              {
+                "line": 40023,
+                "anchor": "MAELIS havia implementado um registro básico de atendimentos, condições de higiene e necessidades de encaminhamento."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 137,
+            "evidence": [
+              {
+                "line": 19716,
+                "global_line": 60583,
+                "anchor": "ELYAN estava ajudando MAELIS a transportar suprimentos quando ouviu os cavalos."
+              },
+              {
+                "line": 20170,
+                "global_line": 61037,
+                "anchor": "MAELIS estava atrás de uma porta, protegendo um homem ferido."
+              },
+              {
+                "line": 27189,
+                "global_line": 68056,
+                "anchor": "TORAN e MAELIS atualizariam os procedimentos de proteção e retirada de pacientes."
+              },
+              {
+                "line": 29903,
+                "global_line": 70770,
+                "anchor": "TORAN apresentou o esquema de atendimento médico."
+              },
+              {
+                "line": 29905,
+                "global_line": 70772,
+                "anchor": "MAELIS havia organizado uma equipe na Academia, mas a clínica principal permaneceria aberta."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação autoral por evidência literal; não promove evento nem afirma estado atual além do último registro.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "historical_observations": [
+          {
+            "batch": 3,
+            "book": 2,
+            "day": 137,
+            "value": "No ataque do D129 transportava suprimentos com Elyan e protegeu um ferido. No D135 recebeu com Toran a tarefa de rever a retirada de pacientes. No D137 organizara uma equipe na Academia, mantendo a clínica principal aberta.",
+            "origin_index": 1
+          }
+        ]
+      },
+      "after": {
+        "value": "Profissional de saúde proveniente de Veldon; aceitou contrato inicial e implementou registros básicos de atendimento.\n\nLivro II, D137 — No ataque do D129 transportava suprimentos com Elyan e protegeu um ferido. No D135 recebeu com Toran a tarefa de rever a retirada de pacientes. No D137 organizara uma equipe na Academia, mantendo a clínica principal aberta.\n\nLivro II, D139 — D138–139: defendeu água segura e saneamento; marcou pontos críticos e integrou primeira prioridade com Brannik e Néria, visando atendimento compatível com crescimento.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 39537,
+                "anchor": "Entre elas havia uma família de agricultores indicada por ESMARA, dois artesãos de madeira e uma profissional de saúde de Veldon chamada MAELIS REN."
+              },
+              {
+                "line": 39551,
+                "anchor": "Após a avaliação de suas referências e de sua experiência, MAELIS aceitou um contrato inicial para organizar atendimento básico, triagem, higiene clínica e encaminhamentos, respeitando os limites de seus conhecimentos e os recursos disponíveis."
+              },
+              {
+                "line": 40023,
+                "anchor": "MAELIS havia implementado um registro básico de atendimentos, condições de higiene e necessidades de encaminhamento."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 137,
+            "evidence": [
+              {
+                "line": 19716,
+                "global_line": 60583,
+                "anchor": "ELYAN estava ajudando MAELIS a transportar suprimentos quando ouviu os cavalos."
+              },
+              {
+                "line": 20170,
+                "global_line": 61037,
+                "anchor": "MAELIS estava atrás de uma porta, protegendo um homem ferido."
+              },
+              {
+                "line": 27189,
+                "global_line": 68056,
+                "anchor": "TORAN e MAELIS atualizariam os procedimentos de proteção e retirada de pacientes."
+              },
+              {
+                "line": 29903,
+                "global_line": 70770,
+                "anchor": "TORAN apresentou o esquema de atendimento médico."
+              },
+              {
+                "line": 29905,
+                "global_line": 70772,
+                "anchor": "MAELIS havia organizado uma equipe na Academia, mas a clínica principal permaneceria aberta."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 139,
+            "evidence": [
+              {
+                "line": 32272,
+                "global_line": 73139,
+                "anchor": "— Água segura e saneamento."
+              },
+              {
+                "line": 33356,
+                "global_line": 74223,
+                "anchor": "MAELIS acrescentara os pontos críticos de água e saneamento."
+              },
+              {
+                "line": 33422,
+                "global_line": 74289,
+                "anchor": "1 — Crítica"
+              },
+              {
+                "line": 33423,
+                "global_line": 74290,
+                "anchor": "Água potável, saneamento e reservatórios"
+              },
+              {
+                "line": 33424,
+                "global_line": 74291,
+                "anchor": "MAELIS, BRANNIK, NÉRIA"
+              },
+              {
+                "line": 33457,
+                "global_line": 74324,
+                "anchor": "— E água potável não pode ser sacrificada para irrigar mais terra."
+              },
+              {
+                "line": 33665,
+                "global_line": 74532,
+                "anchor": "E MAELIS procurava garantir que o crescimento da cidade não superasse sua capacidade de atendimento."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial candidata por fonte literal; não afirma estado atual além da cena.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "historical_observations": [
+          {
+            "batch": 3,
+            "book": 2,
+            "day": 137,
+            "value": "No ataque do D129 transportava suprimentos com Elyan e protegeu um ferido. No D135 recebeu com Toran a tarefa de rever a retirada de pacientes. No D137 organizara uma equipe na Academia, mantendo a clínica principal aberta.",
+            "origin_index": 1
+          },
+          {
+            "batch": 4,
+            "book": 2,
+            "day": 139,
+            "value": "D138–139: defendeu água segura e saneamento; marcou pontos críticos e integrou primeira prioridade com Brannik e Néria, visando atendimento compatível com crescimento.",
+            "origin_index": 2
+          }
+        ]
+      }
+    },
+    {
+      "entity_id": "chr-fen-registro",
+      "field": "history",
+      "before": {
+        "value": "Participou da formalização de registros individuais na Cidade Livre.",
+        "status": "RECUPERADO",
+        "origin": {
+          "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+          "blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+          "lines": [
+            4108,
+            4132
+          ],
+          "anchor": "FEN foi chamado para auxiliar.\n\nPoucos minutos depois, chegou carregando livros de registro.\n\n— Finalmente vamos formalizar o que venho pedindo há semanas!\n\nKAEL ergueu uma sobrancelha.\n\n— Você poderia começar sem parecer tão satisfeito por ter razão.\n\nFEN sorriu.\n\n— Mas isso retiraria metade da alegria do meu trabalho.\n\nVII — A primeira certidão de AUREL\n\nFEN preparou três documentos.\n\nNão utilizou automaticamente o nome de LUCAS como proprietário.\n\nNão registrou os recém-criados como ativos da Academia.\n\nE não atribuiu patentes militares.\n\nAs três pessoas foram registradas como indivíduos distintos.",
+          "authority": "LEGACY_LITERAL_READBACK",
+          "source_role": "LEGACY_MIXED_NARRATIVE_READBACK",
+          "historical_only": true
+        },
+        "justification": "Observação literal histórica revisada nesta sessão; sem afirmação sobre o estado atual, sujeita a revisão independente.",
+        "scope": "EDITORIAL",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+      },
+      "after": {
+        "value": "Participou da formalização de registros individuais na Cidade Livre.\n\nLivro II, D139 — D138: livraria provisória com livros, cadernos, pergaminhos, contos do vale, fábulas Uzgor e mapas. D139: apresentou Calendário das Vidas de Três Arcos; nome da data comum sujeito à consulta dos 300.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+            "blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+            "lines": [
+              4108,
+              4132
+            ],
+            "anchor": "FEN foi chamado para auxiliar.\n\nPoucos minutos depois, chegou carregando livros de registro.\n\n— Finalmente vamos formalizar o que venho pedindo há semanas!\n\nKAEL ergueu uma sobrancelha.\n\n— Você poderia começar sem parecer tão satisfeito por ter razão.\n\nFEN sorriu.\n\n— Mas isso retiraria metade da alegria do meu trabalho.\n\nVII — A primeira certidão de AUREL\n\nFEN preparou três documentos.\n\nNão utilizou automaticamente o nome de LUCAS como proprietário.\n\nNão registrou os recém-criados como ativos da Academia.\n\nE não atribuiu patentes militares.\n\nAs três pessoas foram registradas como indivíduos distintos.",
+            "authority": "LEGACY_LITERAL_READBACK",
+            "source_role": "LEGACY_MIXED_NARRATIVE_READBACK",
+            "historical_only": true
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 139,
+            "evidence": [
+              {
+                "line": 32650,
+                "global_line": 73517,
+                "anchor": "14h11 | Pequena livraria de FEN"
+              },
+              {
+                "line": 32652,
+                "global_line": 73519,
+                "anchor": "A loja ainda não possuía uma fachada definitiva."
+              },
+              {
+                "line": 32654,
+                "global_line": 73521,
+                "anchor": "Algumas prateleiras estavam presas provisoriamente às paredes, e uma mesa de madeira sustentava livros, cadernos e pergaminhos."
+              },
+              {
+                "line": 32670,
+                "global_line": 73537,
+                "anchor": "Havia contos do Vale de Arvendell, fábulas Uzgor e um livro de mapas ilustrados."
+              },
+              {
+                "line": 32792,
+                "global_line": 73659,
+                "anchor": "FEN sentou-se e começou a escrever uma proposta."
+              },
+              {
+                "line": 33589,
+                "global_line": 74456,
+                "anchor": "Havia uma sugestão de Calendário das Vidas de Três Arcos."
+              },
+              {
+                "line": 33591,
+                "global_line": 74458,
+                "anchor": "Cada pessoa poderia registrar voluntariamente uma data de nascimento, de chegada ou outra data significativa que desejasse celebrar."
+              },
+              {
+                "line": 33625,
+                "global_line": 74492,
+                "anchor": "— Poderíamos chamá-lo de Dia da Primeira Legião. Mas talvez os próprios trezentos queiram escolher."
+              },
+              {
+                "line": 33629,
+                "global_line": 74496,
+                "anchor": "— Então perguntem a eles."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial candidata por fonte literal; não afirma estado atual além da cena.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "historical_observations": [
+          {
+            "batch": 4,
+            "book": 2,
+            "day": 139,
+            "value": "D138: livraria provisória com livros, cadernos, pergaminhos, contos do vale, fábulas Uzgor e mapas. D139: apresentou Calendário das Vidas de Três Arcos; nome da data comum sujeito à consulta dos 300.",
+            "origin_index": 1
+          }
+        ]
+      }
+    },
+    {
+      "entity_id": "chr-halden-cozinheiro",
+      "field": "history",
+      "before": {
+        "value": "Legionário da Sentinela no início; posteriormente iniciou atividade remunerada de alimentação, sem hospedaria concluída.",
+        "status": "RECUPERADO",
+        "origin": {
+          "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+          "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+          "book": 1,
+          "evidence": [
+            {
+              "line": 31896,
+              "anchor": "Um legionário da Sentinela chamado HALDEN aguardava próximo à plataforma."
+            },
+            {
+              "line": 40013,
+              "anchor": "Perto dali, HALDEN preparava sua primeira refeição comunitária em instalações aprovadas para o serviço."
+            },
+            {
+              "line": 40017,
+              "anchor": "Mas havia iniciado uma atividade remunerada que poderia crescer."
+            }
+          ]
+        },
+        "justification": "Recuperação autoral por evidência literal; não promove evento nem afirma estado atual além do último registro.",
+        "scope": "HISTORICAL_OBSERVATION"
+      },
+      "after": {
+        "value": "Legionário da Sentinela no início; posteriormente iniciou atividade remunerada de alimentação, sem hospedaria concluída.\n\nLivro II, D138 — Cozinha dos Três Caminhos em instalação temporária, testando cardápio antes de espaço permanente; serviu carne com ervas, legumes, pão e doces ao casal.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 31896,
+                "anchor": "Um legionário da Sentinela chamado HALDEN aguardava próximo à plataforma."
+              },
+              {
+                "line": 40013,
+                "anchor": "Perto dali, HALDEN preparava sua primeira refeição comunitária em instalações aprovadas para o serviço."
+              },
+              {
+                "line": 40017,
+                "anchor": "Mas havia iniciado uma atividade remunerada que poderia crescer."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 138,
+            "evidence": [
+              {
+                "line": 32496,
+                "global_line": 73363,
+                "anchor": "HALDEN — COZINHA DOS TRÊS CAMINHOS."
+              },
+              {
+                "line": 32504,
+                "global_line": 73371,
+                "anchor": "— Uma versão temporária. Está testando o cardápio antes de assumir o espaço permanente."
+              },
+              {
+                "line": 32526,
+                "global_line": 73393,
+                "anchor": "O legionário estava usando um avental."
+              },
+              {
+                "line": 32580,
+                "global_line": 73447,
+                "anchor": "HALDEN trouxe uma preparação de carne com ervas, legumes e um pão recém-assado."
+              },
+              {
+                "line": 32608,
+                "global_line": 73475,
+                "anchor": "Poucos minutos depois, HALDEN apareceu com dois pequenos doces."
+              },
+              {
+                "line": 32610,
+                "global_line": 73477,
+                "anchor": "— Estes são por conta da casa."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial candidata por fonte literal; não afirma estado atual além da cena.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "historical_observations": [
+          {
+            "batch": 4,
+            "book": 2,
+            "day": 138,
+            "value": "Cozinha dos Três Caminhos em instalação temporária, testando cardápio antes de espaço permanente; serviu carne com ervas, legumes, pão e doces ao casal.",
+            "origin_index": 1
+          }
+        ]
+      }
+    },
+    {
+      "entity_id": "tres-arcos",
+      "field": "history",
+      "before": {
+        "value": "Relato sobre antiga fortificação; concessão experimental condicionada; reconhecimento formalizado e cidade existente ao fim.\n\nLivro II, D135 — A Rede da Aurora demonstrou alimentação coordenada para clínica, sinalização de emergência, monitoramento e controle de água, instrumentos da Academia e iluminação experimental da praça.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 7055,
+                "anchor": "— Os carregadores chamavam aquele lugar de Três Arcos. Muito antes de eu nascer, havia uma fortificação ali, construída para proteger uma passagem comercial."
+              },
+              {
+                "line": 28818,
+                "anchor": "— Autorizarei a concessão experimental da área externa delimitada, por noventa dias, sujeita às inspeções e às condições registradas. Poderão ampliar a presença operacional para cento e vinte integrantes, desde que a capacidade de abrigo, saneamento e abastecimento seja confirmada antes de cada transferência."
+              },
+              {
+                "line": 38707,
+                "anchor": "A assinatura de LUCAS foi aposta como representante fundador da Legião, ao lado da assinatura de TAREK como representante dos moradores e das autoridades competentes que formalizavam o reconhecimento."
+              },
+              {
+                "line": 38711,
+                "anchor": "ODRAN aplicou o selo."
+              },
+              {
+                "line": 40630,
+                "anchor": "Mas a Cidade Livre existia."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 135,
+            "evidence": [
+              {
+                "line": 26689,
+                "global_line": 67556,
+                "anchor": "A pequena roda hidráulica girou."
+              },
+              {
+                "line": 26693,
+                "global_line": 67560,
+                "anchor": "O captador solar já armazenara uma carga modesta nos acumuladores."
+              },
+              {
+                "line": 26695,
+                "global_line": 67562,
+                "anchor": "A contribuição ambiental permaneceu dentro dos limites seguros."
+              },
+              {
+                "line": 26711,
+                "global_line": 67578,
+                "anchor": "ATENDIMENTO DE SAÚDE — ALIMENTAÇÃO DISPONÍVEL."
+              },
+              {
+                "line": 26719,
+                "global_line": 67586,
+                "anchor": "COMUNICAÇÕES DE EMERGÊNCIA — RESERVA ATIVA."
+              },
+              {
+                "line": 26727,
+                "global_line": 67594,
+                "anchor": "ESTAÇÃO DE ÁGUA — MONITORAMENTO E CONTROLE ATIVOS."
+              },
+              {
+                "line": 26731,
+                "global_line": 67598,
+                "anchor": "Mas os instrumentos de monitoramento e uma válvula de controle de baixa potência estavam funcionando a partir da rede experimental."
+              },
+              {
+                "line": 26735,
+                "global_line": 67602,
+                "anchor": "ACADEMIA — INSTRUMENTOS DE PESQUISA DISPONÍVEIS."
+              },
+              {
+                "line": 26741,
+                "global_line": 67608,
+                "anchor": "PRAÇA DA PRIMEIRA LANÇA — ILUMINAÇÃO EXPERIMENTAL."
+              },
+              {
+                "line": 26751,
+                "global_line": 67618,
+                "anchor": "Mas, pela primeira vez, serviços de lugares diferentes da Cidade Livre recebiam energia de uma rede coordenada que não dependia de um único cristal nem da presença permanente de um mago."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação autoral por evidência literal; não promove evento nem afirma estado atual além do último registro.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "historical_observations": [
+          {
+            "batch": 3,
+            "book": 2,
+            "day": 135,
+            "value": "A Rede da Aurora demonstrou alimentação coordenada para clínica, sinalização de emergência, monitoramento e controle de água, instrumentos da Academia e iluminação experimental da praça.",
+            "origin_index": 1
+          }
+        ]
+      },
+      "after": {
+        "value": "Relato sobre antiga fortificação; concessão experimental condicionada; reconhecimento formalizado e cidade existente ao fim.\n\nLivro II, D135 — A Rede da Aurora demonstrou alimentação coordenada para clínica, sinalização de emergência, monitoramento e controle de água, instrumentos da Academia e iluminação experimental da praça.\n\nLivro II, D139 — Conselho elaborou plano integrado: água/saneamento e alimentação críticas; irrigação, Rede da Aurora e vias drenadas altas; moradias, defesa civil e acolhimento contínuos. Armazém das Quatro Estações em projeto.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 7055,
+                "anchor": "— Os carregadores chamavam aquele lugar de Três Arcos. Muito antes de eu nascer, havia uma fortificação ali, construída para proteger uma passagem comercial."
+              },
+              {
+                "line": 28818,
+                "anchor": "— Autorizarei a concessão experimental da área externa delimitada, por noventa dias, sujeita às inspeções e às condições registradas. Poderão ampliar a presença operacional para cento e vinte integrantes, desde que a capacidade de abrigo, saneamento e abastecimento seja confirmada antes de cada transferência."
+              },
+              {
+                "line": 38707,
+                "anchor": "A assinatura de LUCAS foi aposta como representante fundador da Legião, ao lado da assinatura de TAREK como representante dos moradores e das autoridades competentes que formalizavam o reconhecimento."
+              },
+              {
+                "line": 38711,
+                "anchor": "ODRAN aplicou o selo."
+              },
+              {
+                "line": 40630,
+                "anchor": "Mas a Cidade Livre existia."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 135,
+            "evidence": [
+              {
+                "line": 26689,
+                "global_line": 67556,
+                "anchor": "A pequena roda hidráulica girou."
+              },
+              {
+                "line": 26693,
+                "global_line": 67560,
+                "anchor": "O captador solar já armazenara uma carga modesta nos acumuladores."
+              },
+              {
+                "line": 26695,
+                "global_line": 67562,
+                "anchor": "A contribuição ambiental permaneceu dentro dos limites seguros."
+              },
+              {
+                "line": 26711,
+                "global_line": 67578,
+                "anchor": "ATENDIMENTO DE SAÚDE — ALIMENTAÇÃO DISPONÍVEL."
+              },
+              {
+                "line": 26719,
+                "global_line": 67586,
+                "anchor": "COMUNICAÇÕES DE EMERGÊNCIA — RESERVA ATIVA."
+              },
+              {
+                "line": 26727,
+                "global_line": 67594,
+                "anchor": "ESTAÇÃO DE ÁGUA — MONITORAMENTO E CONTROLE ATIVOS."
+              },
+              {
+                "line": 26731,
+                "global_line": 67598,
+                "anchor": "Mas os instrumentos de monitoramento e uma válvula de controle de baixa potência estavam funcionando a partir da rede experimental."
+              },
+              {
+                "line": 26735,
+                "global_line": 67602,
+                "anchor": "ACADEMIA — INSTRUMENTOS DE PESQUISA DISPONÍVEIS."
+              },
+              {
+                "line": 26741,
+                "global_line": 67608,
+                "anchor": "PRAÇA DA PRIMEIRA LANÇA — ILUMINAÇÃO EXPERIMENTAL."
+              },
+              {
+                "line": 26751,
+                "global_line": 67618,
+                "anchor": "Mas, pela primeira vez, serviços de lugares diferentes da Cidade Livre recebiam energia de uma rede coordenada que não dependia de um único cristal nem da presença permanente de um mago."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 139,
+            "evidence": [
+              {
+                "line": 33348,
+                "global_line": 74215,
+                "anchor": "A reunião técnica já havia acontecido naquela manhã."
+              },
+              {
+                "line": 33416,
+                "global_line": 74283,
+                "anchor": "Plano integrado de infraestrutura elaborado pelos responsáveis durante a folga de LUCAS"
+              },
+              {
+                "line": 33422,
+                "global_line": 74289,
+                "anchor": "1 — Crítica"
+              },
+              {
+                "line": 33426,
+                "global_line": 74293,
+                "anchor": "2 — Crítica"
+              },
+              {
+                "line": 33430,
+                "global_line": 74297,
+                "anchor": "3 — Alta"
+              },
+              {
+                "line": 33434,
+                "global_line": 74301,
+                "anchor": "4 — Alta"
+              },
+              {
+                "line": 33438,
+                "global_line": 74305,
+                "anchor": "5 — Alta"
+              },
+              {
+                "line": 33442,
+                "global_line": 74309,
+                "anchor": "6 — Contínua"
+              },
+              {
+                "line": 33521,
+                "global_line": 74388,
+                "anchor": "O projeto foi denominado provisoriamente Armazém das Quatro Estações."
+              },
+              {
+                "line": 33661,
+                "global_line": 74528,
+                "anchor": "BRANNIK iniciava o detalhamento do Armazém das Quatro Estações."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial candidata por fonte literal; não afirma estado atual além da cena.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "historical_observations": [
+          {
+            "batch": 3,
+            "book": 2,
+            "day": 135,
+            "value": "A Rede da Aurora demonstrou alimentação coordenada para clínica, sinalização de emergência, monitoramento e controle de água, instrumentos da Academia e iluminação experimental da praça.",
+            "origin_index": 1
+          },
+          {
+            "batch": 4,
+            "book": 2,
+            "day": 139,
+            "value": "Conselho elaborou plano integrado: água/saneamento e alimentação críticas; irrigação, Rede da Aurora e vias drenadas altas; moradias, defesa civil e acolhimento contínuos. Armazém das Quatro Estações em projeto.",
+            "origin_index": 2
+          }
+        ]
+      }
+    },
+    {
+      "entity_id": "tres-arcos",
+      "field": "culture",
+      "before": {
+        "value": "Não estabelecido nas fontes examinadas; recuperar antes de afirmar como fato.",
+        "status": "PENDENTE_FONTE",
+        "origin": {
+          "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+          "entity_id": "tres-arcos"
+        },
+        "justification": "Tratado estruturalmente, sem completar conteúdo sem base.",
+        "scope": "EDITORIAL",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+      },
+      "after": {
+        "value": "Livro II, D139 — Calendário das Vidas em preparação voluntária: nascimento, chegada ou outra data significativa; Dia 1 como origem comum dos 300 sem comemoração imposta; tradições humanas e Uzgor coexistem. Nome em consulta.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "tres-arcos"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 139,
+            "evidence": [
+              {
+                "line": 32794,
+                "global_line": 73661,
+                "anchor": "Não haveria obrigação de divulgar idade ou informações pessoais."
+              },
+              {
+                "line": 32796,
+                "global_line": 73663,
+                "anchor": "Nem uma regra dizendo que todos os trezentos deveriam celebrar da mesma maneira."
+              },
+              {
+                "line": 32798,
+                "global_line": 73665,
+                "anchor": "O Dia 1 poderia ser lembrado como o aniversário coletivo de origem da Primeira Legião."
+              },
+              {
+                "line": 32802,
+                "global_line": 73669,
+                "anchor": "KAEL, ASTRA e futuras pessoas originadas por Gênese teriam seus próprios registros."
+              },
+              {
+                "line": 32804,
+                "global_line": 73671,
+                "anchor": "E os moradores civis, humanos e Uzgor, continuariam utilizando suas tradições, que poderiam coexistir com novas celebrações compartilhadas."
+              },
+              {
+                "line": 33589,
+                "global_line": 74456,
+                "anchor": "Havia uma sugestão de Calendário das Vidas de Três Arcos."
+              },
+              {
+                "line": 33591,
+                "global_line": 74458,
+                "anchor": "Cada pessoa poderia registrar voluntariamente uma data de nascimento, de chegada ou outra data significativa que desejasse celebrar."
+              },
+              {
+                "line": 33593,
+                "global_line": 74460,
+                "anchor": "Os trezentos originais teriam o Dia 1 reconhecido como origem compartilhada, sem serem obrigados a adotar uma comemoração idêntica."
+              },
+              {
+                "line": 33595,
+                "global_line": 74462,
+                "anchor": "As datas de KAEL e ASTRA seriam distintas."
+              },
+              {
+                "line": 33607,
+                "global_line": 74474,
+                "anchor": "— GRAZHA também sugeriu incluir as datas tradicionais de celebração Uzgor, quando os próprios participantes desejarem compartilhá-las."
+              },
+              {
+                "line": 33625,
+                "global_line": 74492,
+                "anchor": "— Poderíamos chamá-lo de Dia da Primeira Legião. Mas talvez os próprios trezentos queiram escolher."
+              },
+              {
+                "line": 33629,
+                "global_line": 74496,
+                "anchor": "— Então perguntem a eles."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial candidata por fonte literal; não afirma estado atual além da cena.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "historical_observations": [
+          {
+            "batch": 4,
+            "book": 2,
+            "day": 139,
+            "value": "Calendário das Vidas em preparação voluntária: nascimento, chegada ou outra data significativa; Dia 1 como origem comum dos 300 sem comemoração imposta; tradições humanas e Uzgor coexistem. Nome em consulta.",
+            "origin_index": 1
+          }
+        ]
+      }
+    },
+    {
+      "entity_id": "tres-arcos",
+      "field": "economy",
+      "before": {
+        "value": "Livro II, D130 — Após a encomenda condicional de Dorven para adaptar uma carroça no D124, Selene intermediou no D130 um memorando preliminar de serviços técnicos e tarifas documentadas, com liberdade de fornecedor, sujeito a aprovações.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "tres-arcos"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 130,
+            "evidence": [
+              {
+                "line": 18746,
+                "global_line": 59613,
+                "anchor": "DORVEN confirmou a encomenda de uma adaptação comercial, sujeita à inspeção final."
+              },
+              {
+                "line": 18756,
+                "global_line": 59623,
+                "anchor": "BRANNIK também recebeu autorização para desenvolver a primeira linha de componentes modulares para carroças."
+              },
+              {
+                "line": 20700,
+                "global_line": 61567,
+                "anchor": "Mas aceitou discutir uma relação baseada em serviços documentados, contratos não exclusivos e procedimentos de contestação."
+              },
+              {
+                "line": 20702,
+                "global_line": 61569,
+                "anchor": "SELENE intermediou um memorando comercial preliminar, sujeito aos controles e às aprovações aplicáveis."
+              },
+              {
+                "line": 20704,
+                "global_line": 61571,
+                "anchor": "Ele estabelecia o caminho para um programa-piloto de serviços técnicos de Três Arcos, incluindo manutenção de equipamentos de transporte, testes de componentes de carroças e critérios transparentes de cobrança nas rotas envolvidas."
+              },
+              {
+                "line": 20706,
+                "global_line": 61573,
+                "anchor": "A cidade manteria o direito de negociar com outros fornecedores."
+              },
+              {
+                "line": 20708,
+                "global_line": 61575,
+                "anchor": "AUREN preservaria a possibilidade de receber por serviços reais de suas propriedades, desde que os custos fossem demonstrados."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial do Livro II por fonte literal datada.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "historical_observations": [
+          {
+            "batch": 3,
+            "book": 2,
+            "day": 130,
+            "value": "Após a encomenda condicional de Dorven para adaptar uma carroça no D124, Selene intermediou no D130 um memorando preliminar de serviços técnicos e tarifas documentadas, com liberdade de fornecedor, sujeito a aprovações.",
+            "origin_index": 1
+          }
+        ]
+      },
+      "after": {
+        "value": "Livro II, D130 — Após a encomenda condicional de Dorven para adaptar uma carroça no D124, Selene intermediou no D130 um memorando preliminar de serviços técnicos e tarifas documentadas, com liberdade de fornecedor, sujeito a aprovações.\n\nLivro II, D139 — D138–139: comércio cotidiano e empreendimentos temporários de Halden e Fen; estoque alimentar de cerca de 24 dias no planejamento, sem extrapolar para economia atual. Armazém frio isolado proposto por etapas, sem congelar toneladas com BMH-I experimental.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "tres-arcos"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 130,
+            "evidence": [
+              {
+                "line": 18746,
+                "global_line": 59613,
+                "anchor": "DORVEN confirmou a encomenda de uma adaptação comercial, sujeita à inspeção final."
+              },
+              {
+                "line": 18756,
+                "global_line": 59623,
+                "anchor": "BRANNIK também recebeu autorização para desenvolver a primeira linha de componentes modulares para carroças."
+              },
+              {
+                "line": 20700,
+                "global_line": 61567,
+                "anchor": "Mas aceitou discutir uma relação baseada em serviços documentados, contratos não exclusivos e procedimentos de contestação."
+              },
+              {
+                "line": 20702,
+                "global_line": 61569,
+                "anchor": "SELENE intermediou um memorando comercial preliminar, sujeito aos controles e às aprovações aplicáveis."
+              },
+              {
+                "line": 20704,
+                "global_line": 61571,
+                "anchor": "Ele estabelecia o caminho para um programa-piloto de serviços técnicos de Três Arcos, incluindo manutenção de equipamentos de transporte, testes de componentes de carroças e critérios transparentes de cobrança nas rotas envolvidas."
+              },
+              {
+                "line": 20706,
+                "global_line": 61573,
+                "anchor": "A cidade manteria o direito de negociar com outros fornecedores."
+              },
+              {
+                "line": 20708,
+                "global_line": 61575,
+                "anchor": "AUREN preservaria a possibilidade de receber por serviços reais de suas propriedades, desde que os custos fossem demonstrados."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 139,
+            "evidence": [
+              {
+                "line": 32370,
+                "global_line": 73237,
+                "anchor": "A rua estava movimentada."
+              },
+              {
+                "line": 32446,
+                "global_line": 73313,
+                "anchor": "— Você trabalhou nelas. Quero pagar como qualquer outro cliente."
+              },
+              {
+                "line": 32470,
+                "global_line": 73337,
+                "anchor": "Uma família Uzgor negociava ferramentas."
+              },
+              {
+                "line": 32504,
+                "global_line": 73371,
+                "anchor": "— Uma versão temporária. Está testando o cardápio antes de assumir o espaço permanente."
+              },
+              {
+                "line": 32652,
+                "global_line": 73519,
+                "anchor": "A loja ainda não possuía uma fachada definitiva."
+              },
+              {
+                "line": 33429,
+                "global_line": 74296,
+                "anchor": "Aumentar a segurança alimentar além da cobertura atual de cerca de 24 dias"
+              },
+              {
+                "line": 33483,
+                "global_line": 74350,
+                "anchor": "— Não vamos tentar congelar toneladas de alimentos utilizando uma BMH-I experimental."
+              },
+              {
+                "line": 33487,
+                "global_line": 74354,
+                "anchor": "— Primeiro criaremos um depósito frio bem isolado. Podemos combinar temperatura natural do subsolo, ventilação controlada, armazenamento adequado e módulos mágicos de resfriamento."
+              },
+              {
+                "line": 33521,
+                "global_line": 74388,
+                "anchor": "O projeto foi denominado provisoriamente Armazém das Quatro Estações."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial candidata por fonte literal; não afirma estado atual além da cena.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "historical_observations": [
+          {
+            "batch": 3,
+            "book": 2,
+            "day": 130,
+            "value": "Após a encomenda condicional de Dorven para adaptar uma carroça no D124, Selene intermediou no D130 um memorando preliminar de serviços técnicos e tarifas documentadas, com liberdade de fornecedor, sujeito a aprovações.",
+            "origin_index": 1
+          },
+          {
+            "batch": 4,
+            "book": 2,
+            "day": 139,
+            "value": "D138–139: comércio cotidiano e empreendimentos temporários de Halden e Fen; estoque alimentar de cerca de 24 dias no planejamento, sem extrapolar para economia atual. Armazém frio isolado proposto por etapas, sem congelar toneladas com BMH-I experimental.",
+            "origin_index": 2
+          }
+        ]
+      }
+    },
+    {
+      "entity_id": "legiao",
+      "field": "history",
+      "before": {
+        "value": "Origem, primeiro contrato civil, classificação inaugural e reconhecimento territorial.\n\nLivro II, D137 — No D136 a declaração de Lucas teve registro para os destacamentos de serviço. No D137 os 300 originais permaneciam vivos, distintos de Kael, Astra e futuros seres. Dez mil era meta de sociedade, sem incorporação automática de civis ou aliados.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 313,
+                "anchor": "Você criou trezentas vidas."
+              },
+              {
+                "line": 16206,
+                "anchor": "HADRIN conferiu o reparo e realizou o pagamento inicial combinado."
+              },
+              {
+                "line": 30567,
+                "anchor": "Classificação inaugural, baseada nas provas combinadas de duelo, defesa, mobilidade, terreno e cooperação. Não representa uma hierarquia absoluta de poder em todas as situações."
+              },
+              {
+                "line": 38707,
+                "anchor": "A assinatura de LUCAS foi aposta como representante fundador da Legião, ao lado da assinatura de TAREK como representante dos moradores e das autoridades competentes que formalizavam o reconhecimento."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 137,
+            "evidence": [
+              {
+                "line": 28794,
+                "global_line": 69661,
+                "anchor": "Nem todos os trezentos originais estavam presentes. As guarnições continuavam protegendo os postos externos, e VARO se recusara a abandonar a segurança apenas para formar uma multidão impressionante."
+              },
+              {
+                "line": 28796,
+                "global_line": 69663,
+                "anchor": "TAVREN organizou o registro e a transmissão posterior da declaração aos destacamentos ausentes."
+              },
+              {
+                "line": 28798,
+                "global_line": 69665,
+                "anchor": "Dos trezentos, os que estavam em Três Arcos compareceram conforme seus turnos. Os demais receberiam a mensagem integral por seus comandantes, com espaço para responder."
+              },
+              {
+                "line": 28800,
+                "global_line": 69667,
+                "anchor": "Na primeira fileira estavam VARO, CÍRAN, SERON, RHEM, TAVREN, DARIUS, MALREK, EDRIC, TORAN e SAEL."
+              },
+              {
+                "line": 29945,
+                "global_line": 70812,
+                "anchor": "— Nossa meta de dez mil integrantes continuará sendo um objetivo de sociedade, não um registro de soldados. Diferenciaremos os criados por Gênese, os integrantes voluntários da Legião, os moradores civis e os aliados."
+              },
+              {
+                "line": 31915,
+                "global_line": 72782,
+                "anchor": "Primeira Legião"
+              },
+              {
+                "line": 31916,
+                "global_line": 72783,
+                "anchor": "300 integrantes originais vivos; continuam distintos de KAEL, ASTRA e futuros seres."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação autoral por evidência literal; não promove evento nem afirma estado atual além do último registro.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "historical_observations": [
+          {
+            "batch": 3,
+            "book": 2,
+            "day": 137,
+            "value": "No D136 a declaração de Lucas teve registro para os destacamentos de serviço. No D137 os 300 originais permaneciam vivos, distintos de Kael, Astra e futuros seres. Dez mil era meta de sociedade, sem incorporação automática de civis ou aliados.",
+            "origin_index": 1
+          }
+        ]
+      },
+      "after": {
+        "value": "Origem, primeiro contrato civil, classificação inaugural e reconhecimento territorial.\n\nLivro II, D137 — No D136 a declaração de Lucas teve registro para os destacamentos de serviço. No D137 os 300 originais permaneciam vivos, distintos de Kael, Astra e futuros seres. Dez mil era meta de sociedade, sem incorporação automática de civis ou aliados.\n\nLivro II, D139 — Dia 1 proposto como origem coletiva dos 300 com liberdade de comemorar; datas de Kael e Astra distintas. Início D139: 300 originais vivos, com responsabilidades próprias; nome da celebração ainda não definido.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 313,
+                "anchor": "Você criou trezentas vidas."
+              },
+              {
+                "line": 16206,
+                "anchor": "HADRIN conferiu o reparo e realizou o pagamento inicial combinado."
+              },
+              {
+                "line": 30567,
+                "anchor": "Classificação inaugural, baseada nas provas combinadas de duelo, defesa, mobilidade, terreno e cooperação. Não representa uma hierarquia absoluta de poder em todas as situações."
+              },
+              {
+                "line": 38707,
+                "anchor": "A assinatura de LUCAS foi aposta como representante fundador da Legião, ao lado da assinatura de TAREK como representante dos moradores e das autoridades competentes que formalizavam o reconhecimento."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 137,
+            "evidence": [
+              {
+                "line": 28794,
+                "global_line": 69661,
+                "anchor": "Nem todos os trezentos originais estavam presentes. As guarnições continuavam protegendo os postos externos, e VARO se recusara a abandonar a segurança apenas para formar uma multidão impressionante."
+              },
+              {
+                "line": 28796,
+                "global_line": 69663,
+                "anchor": "TAVREN organizou o registro e a transmissão posterior da declaração aos destacamentos ausentes."
+              },
+              {
+                "line": 28798,
+                "global_line": 69665,
+                "anchor": "Dos trezentos, os que estavam em Três Arcos compareceram conforme seus turnos. Os demais receberiam a mensagem integral por seus comandantes, com espaço para responder."
+              },
+              {
+                "line": 28800,
+                "global_line": 69667,
+                "anchor": "Na primeira fileira estavam VARO, CÍRAN, SERON, RHEM, TAVREN, DARIUS, MALREK, EDRIC, TORAN e SAEL."
+              },
+              {
+                "line": 29945,
+                "global_line": 70812,
+                "anchor": "— Nossa meta de dez mil integrantes continuará sendo um objetivo de sociedade, não um registro de soldados. Diferenciaremos os criados por Gênese, os integrantes voluntários da Legião, os moradores civis e os aliados."
+              },
+              {
+                "line": 31915,
+                "global_line": 72782,
+                "anchor": "Primeira Legião"
+              },
+              {
+                "line": 31916,
+                "global_line": 72783,
+                "anchor": "300 integrantes originais vivos; continuam distintos de KAEL, ASTRA e futuros seres."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 139,
+            "evidence": [
+              {
+                "line": 32714,
+                "global_line": 73581,
+                "anchor": "VARO havia nascido no Dia 1."
+              },
+              {
+                "line": 32716,
+                "global_line": 73583,
+                "anchor": "Assim como os outros 299 da Primeira Geração."
+              },
+              {
+                "line": 32718,
+                "global_line": 73585,
+                "anchor": "KAEL e ASTRA possuíam datas de criação posteriores."
+              },
+              {
+                "line": 32798,
+                "global_line": 73665,
+                "anchor": "O Dia 1 poderia ser lembrado como o aniversário coletivo de origem da Primeira Legião."
+              },
+              {
+                "line": 32802,
+                "global_line": 73669,
+                "anchor": "KAEL, ASTRA e futuras pessoas originadas por Gênese teriam seus próprios registros."
+              },
+              {
+                "line": 33593,
+                "global_line": 74460,
+                "anchor": "Os trezentos originais teriam o Dia 1 reconhecido como origem compartilhada, sem serem obrigados a adotar uma comemoração idêntica."
+              },
+              {
+                "line": 33625,
+                "global_line": 74492,
+                "anchor": "— Poderíamos chamá-lo de Dia da Primeira Legião. Mas talvez os próprios trezentos queiram escolher."
+              },
+              {
+                "line": 33629,
+                "global_line": 74496,
+                "anchor": "— Então perguntem a eles."
+              },
+              {
+                "line": 33789,
+                "global_line": 74656,
+                "anchor": "Primeira Legião"
+              },
+              {
+                "line": 33790,
+                "global_line": 74657,
+                "anchor": "300 originais vivos, com responsabilidades próprias"
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial candidata por fonte literal; não afirma estado atual além da cena.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "historical_observations": [
+          {
+            "batch": 3,
+            "book": 2,
+            "day": 137,
+            "value": "No D136 a declaração de Lucas teve registro para os destacamentos de serviço. No D137 os 300 originais permaneciam vivos, distintos de Kael, Astra e futuros seres. Dez mil era meta de sociedade, sem incorporação automática de civis ou aliados.",
+            "origin_index": 1
+          },
+          {
+            "batch": 4,
+            "book": 2,
+            "day": 139,
+            "value": "Dia 1 proposto como origem coletiva dos 300 com liberdade de comemorar; datas de Kael e Astra distintas. Início D139: 300 originais vivos, com responsabilidades próprias; nome da celebração ainda não definido.",
+            "origin_index": 2
+          }
+        ]
+      }
+    }
+  ],
+  "discoveries": [
+    {
+      "classification": "FATO_NARRADO",
+      "summary": "Adiou a primeira criação consciente por Matriz Germinal e escolheu folga.",
+      "source": {
+        "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+        "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+        "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "book": 2,
+        "day": 138,
+        "evidence": [
+          {
+            "line": 31980,
+            "global_line": 72847,
+            "anchor": "Mas, quando a oportunidade de criar essa vida finalmente surgiu, o fundador percebeu algo."
+          },
+          {
+            "line": 31982,
+            "global_line": 72849,
+            "anchor": "Não precisava fazê-lo naquele instante."
+          },
+          {
+            "line": 31984,
+            "global_line": 72851,
+            "anchor": "A Matriz Germinal continuaria disponível amanhã."
+          },
+          {
+            "line": 31990,
+            "global_line": 72857,
+            "anchor": "Pela primeira vez desde sua chegada àquele mundo, LUCAS escolheu passar um dia inteiro sem tentar salvá-lo, conquistá-lo ou transformá-lo."
+          },
+          {
+            "line": 32110,
+            "global_line": 72977,
+            "anchor": "— Excelente."
+          }
+        ]
+      }
+    },
+    {
+      "classification": "FATO_NARRADO",
+      "summary": "Comprou miniaturas de Círan e Varo e recebeu cartão com árvore de Ina; custódia posterior não estabelecida.",
+      "source": {
+        "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+        "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+        "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "book": 2,
+        "day": 138,
+        "evidence": [
+          {
+            "line": 32438,
+            "global_line": 73305,
+            "anchor": "LUCAS comprou as duas miniaturas."
+          },
+          {
+            "line": 32446,
+            "global_line": 73313,
+            "anchor": "— Você trabalhou nelas. Quero pagar como qualquer outro cliente."
+          },
+          {
+            "line": 32808,
+            "global_line": 73675,
+            "anchor": "Entregou-lhe um cartão."
+          },
+          {
+            "line": 32810,
+            "global_line": 73677,
+            "anchor": "Havia uma pequena árvore desenhada."
+          },
+          {
+            "line": 32820,
+            "global_line": 73687,
+            "anchor": "— Porque vocês plantaram aquela árvore na casa nova. Minha mãe disse que, quando alguém planta uma árvore, está começando uma história que vai durar muito."
+          },
+          {
+            "line": 32824,
+            "global_line": 73691,
+            "anchor": "LUCAS recebeu o cartão com cuidado."
+          }
+        ]
+      }
+    },
+    {
+      "classification": "FATO_NARRADO",
+      "summary": "Ina perguntou aniversário de Varo e preparou cartão para amiga; sem ID estável de Ina nas 192 fichas, não fundir com Ira.",
+      "source": {
+        "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+        "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+        "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "book": 2,
+        "day": 138,
+        "evidence": [
+          {
+            "line": 32672,
+            "global_line": 73539,
+            "anchor": "Perto da janela, INA ajudava a organizar cartões."
+          },
+          {
+            "line": 32680,
+            "global_line": 73547,
+            "anchor": "— É para o aniversário da minha amiga."
+          },
+          {
+            "line": 32696,
+            "global_line": 73563,
+            "anchor": "— Quando é o aniversário de VARO?"
+          },
+          {
+            "line": 32708,
+            "global_line": 73575,
+            "anchor": "— Eu perguntei para ele outro dia. Mas disse que precisava pensar."
+          },
+          {
+            "line": 32808,
+            "global_line": 73675,
+            "anchor": "Entregou-lhe um cartão."
+          }
+        ]
+      }
+    },
+    {
+      "classification": "PROPOSTA",
+      "summary": "Calendário das Vidas voluntário e tradições Uzgor; nome da data comum sujeito à consulta.",
+      "source": {
+        "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+        "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+        "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "book": 2,
+        "day": 139,
+        "evidence": [
+          {
+            "line": 33589,
+            "global_line": 74456,
+            "anchor": "Havia uma sugestão de Calendário das Vidas de Três Arcos."
+          },
+          {
+            "line": 33591,
+            "global_line": 74458,
+            "anchor": "Cada pessoa poderia registrar voluntariamente uma data de nascimento, de chegada ou outra data significativa que desejasse celebrar."
+          },
+          {
+            "line": 33593,
+            "global_line": 74460,
+            "anchor": "Os trezentos originais teriam o Dia 1 reconhecido como origem compartilhada, sem serem obrigados a adotar uma comemoração idêntica."
+          },
+          {
+            "line": 33599,
+            "global_line": 74466,
+            "anchor": "ILVA ajudaria a organizar cartões e pequenas lembranças."
+          },
+          {
+            "line": 33607,
+            "global_line": 74474,
+            "anchor": "— GRAZHA também sugeriu incluir as datas tradicionais de celebração Uzgor, quando os próprios participantes desejarem compartilhá-las."
+          },
+          {
+            "line": 33625,
+            "global_line": 74492,
+            "anchor": "— Poderíamos chamá-lo de Dia da Primeira Legião. Mas talvez os próprios trezentos queiram escolher."
+          },
+          {
+            "line": 33629,
+            "global_line": 74496,
+            "anchor": "— Então perguntem a eles."
+          }
+        ]
+      }
+    },
+    {
+      "classification": "FATO_NARRADO",
+      "summary": "Regime de Repouso Estável: 38% a 93% na noite D138→139, sem aumento de capacidade máxima.",
+      "source": {
+        "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+        "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+        "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "book": 2,
+        "day": 139,
+        "evidence": [
+          {
+            "line": 33212,
+            "global_line": 74079,
+            "anchor": "PRIMEIRA OBSERVAÇÃO • NOITE DO DIA 138 PARA 139"
+          },
+          {
+            "line": 33216,
+            "global_line": 74083,
+            "anchor": "38%"
+          },
+          {
+            "line": 33222,
+            "global_line": 74089,
+            "anchor": "93%"
+          },
+          {
+            "line": 33230,
+            "global_line": 74097,
+            "anchor": "A recuperação ocorreu com fluxo reduzido, sem manifestação ativa, sem fonte artificial de grande potência e sem consumir a reserva de outra pessoa."
+          },
+          {
+            "line": 33232,
+            "global_line": 74099,
+            "anchor": "Percentuais relativos à reserva ampliada após o despertar. Não representam um aumento adicional da capacidade máxima."
+          },
+          {
+            "line": 33288,
+            "global_line": 74155,
+            "anchor": "Permanece disponível: repouso com canal regulado e Circulação de Retorno integrada."
+          },
+          {
+            "line": 33290,
+            "global_line": 74157,
+            "anchor": "Não permite: ultrapassar a capacidade máxima, recuperar instantaneamente qualquer gasto ou substituir indefinidamente sono, alimentação e recuperação física."
+          }
+        ]
+      }
+    },
+    {
+      "classification": "PROPOSTA",
+      "summary": "Plano integrado de água, alimentos, irrigação, energia, vias e moradias; não equivale a infraestrutura entregue.",
+      "source": {
+        "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+        "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+        "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "book": 2,
+        "day": 139,
+        "evidence": [
+          {
+            "line": 33416,
+            "global_line": 74283,
+            "anchor": "Plano integrado de infraestrutura elaborado pelos responsáveis durante a folga de LUCAS"
+          },
+          {
+            "line": 33423,
+            "global_line": 74290,
+            "anchor": "Água potável, saneamento e reservatórios"
+          },
+          {
+            "line": 33424,
+            "global_line": 74291,
+            "anchor": "MAELIS, BRANNIK, NÉRIA"
+          },
+          {
+            "line": 33427,
+            "global_line": 74294,
+            "anchor": "Estoques de alimentos e conservação"
+          },
+          {
+            "line": 33428,
+            "global_line": 74295,
+            "anchor": "ESMARA, HALDEN, LYSA"
+          },
+          {
+            "line": 33431,
+            "global_line": 74298,
+            "anchor": "Irrigação e expansão agrícola"
+          },
+          {
+            "line": 33432,
+            "global_line": 74299,
+            "anchor": "ESMARA, TAREK, especialistas Uzgor"
+          },
+          {
+            "line": 33435,
+            "global_line": 74302,
+            "anchor": "Expansão da Rede da Aurora"
+          },
+          {
+            "line": 33436,
+            "global_line": 74303,
+            "anchor": "ASTRA, MIREN, SAEL"
+          },
+          {
+            "line": 33439,
+            "global_line": 74306,
+            "anchor": "Estradas drenadas e pavimentação modular"
+          },
+          {
+            "line": 33440,
+            "global_line": 74307,
+            "anchor": "BRANNIK, NÉRIA, OREN"
+          },
+          {
+            "line": 33443,
+            "global_line": 74310,
+            "anchor": "Moradias, defesa civil e acolhimento"
+          },
+          {
+            "line": 33444,
+            "global_line": 74311,
+            "anchor": "KAEL, VARO, EDRIC, TAREK"
+          },
+          {
+            "line": 33521,
+            "global_line": 74388,
+            "anchor": "O projeto foi denominado provisoriamente Armazém das Quatro Estações."
+          },
+          {
+            "line": 33525,
+            "global_line": 74392,
+            "anchor": "Seria um centro de conservação que poderia evoluir para uma instalação refrigerada de grande capacidade, alimentada pela expansão da Rede da Aurora."
+          },
+          {
+            "line": 33535,
+            "global_line": 74402,
+            "anchor": "Pequenas comportas."
+          }
+        ]
+      }
+    },
+    {
+      "classification": "FATO_NARRADO",
+      "summary": "Seron verificava pontos de observação; Darius identificou mudança de deslocamento sem nova ofensiva confirmada; Varo e Sael trabalhavam em equipamentos.",
+      "source": {
+        "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+        "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+        "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "book": 2,
+        "day": 139,
+        "evidence": [
+          {
+            "line": 33647,
+            "global_line": 74514,
+            "anchor": "Na estrada oriental, SERON continuava verificando os pontos de observação utilizados pelos desconhecidos."
+          },
+          {
+            "line": 33649,
+            "global_line": 74516,
+            "anchor": "DARIUS havia identificado uma mudança no padrão de deslocamento dos suspeitos, mas ainda não existia confirmação de uma nova ofensiva."
+          },
+          {
+            "line": 33651,
+            "global_line": 74518,
+            "anchor": "VARO mantinha a defesa dos acessos e trabalhava com SAEL nos equipamentos da Primeira Legião."
+          }
+        ]
+      }
+    },
+    {
+      "classification": "FATO_NARRADO",
+      "summary": "Auren em Halvern avaliava benefícios comerciais possíveis, Kael avançava consultas constitucionais, Lysa revisava contratos e estoques; Esmara, Brannik, Astra e Maelis seguiam atividades.",
+      "source": {
+        "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+        "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+        "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "book": 2,
+        "day": 139,
+        "evidence": [
+          {
+            "line": 33653,
+            "global_line": 74520,
+            "anchor": "Em Halvern, AUREN avaliava os relatos sobre a velocidade das obras de Três Arcos e os possíveis benefícios comerciais de uma parceria com suas oficinas."
+          },
+          {
+            "line": 33655,
+            "global_line": 74522,
+            "anchor": "Na Cidade Livre, KAEL avançava nas consultas constitucionais."
+          },
+          {
+            "line": 33657,
+            "global_line": 74524,
+            "anchor": "LYSA revisava contratos e estoques."
+          },
+          {
+            "line": 33659,
+            "global_line": 74526,
+            "anchor": "ESMARA preparava o programa agrícola."
+          },
+          {
+            "line": 33661,
+            "global_line": 74528,
+            "anchor": "BRANNIK iniciava o detalhamento do Armazém das Quatro Estações."
+          },
+          {
+            "line": 33663,
+            "global_line": 74530,
+            "anchor": "ASTRA investigava como expandir a Rede da Aurora de maneira economicamente viável."
+          },
+          {
+            "line": 33665,
+            "global_line": 74532,
+            "anchor": "E MAELIS procurava garantir que o crescimento da cidade não superasse sua capacidade de atendimento."
+          }
+        ]
+      }
+    },
+    {
+      "classification": "ERRO_DE_CLASSIFICACAO",
+      "summary": "74699 é planejamento, não prova população, arquitetura ou poderes de Bandeira Cinzenta ou Sael.",
+      "source": {
+        "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+        "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+        "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "book": 2,
+        "day": null,
+        "evidence": [
+          {
+            "line": 33829,
+            "global_line": 74696,
+            "anchor": "## Response:"
+          },
+          {
+            "line": 33832,
+            "global_line": 74699,
+            "anchor": "Vou conduzir os sete dias como uma operação coordenada: primeiro LUCAS cria a força de autômatos; depois os responsáveis ampliam água, alimentos, energia, irrigação e estradas, aproveitando a recuperação diária de Gênese. Em paralelo, VARO e SERON acompanham a ameaça da Bandeira Cinzenta e SAEL desenvolve os equipamentos da Legião. Ao final, teremos um levantamento territorial para responder concretamente se Três Arcos comporta 10 mil, 100 mil ou mais habitantes."
+          },
+          {
+            "line": 33836,
+            "global_line": 74703,
+            "anchor": "Estou equilibrando protótipos, energia limitada e sistemas mecânicos. Uma semana pode render dezenas de autômatos, estradas internas, irrigação ampliada, água potável e expansão agrícola, mas preciso distinguir capacidade inicial de metas futuras."
+          }
+        ]
+      }
+    },
+    {
+      "classification": "DIVERGENCIA_DE_FONTE",
+      "summary": "Planejamento 26%→91%; resultado narrado 38%→93%. Prevalece quadro D139 como fato.",
+      "source": {
+        "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+        "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+        "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "book": 2,
+        "day": 139,
+        "evidence": [
+          {
+            "line": 31956,
+            "global_line": 72823,
+            "anchor": "Estou planejando o dia 138 com uma recuperação mensurável, elevando a reserva de 26% para 91% ao amanhecer, sem dependência externa. Em seguida, Lucas conduz uma conversa breve para priorizar alimentos, água, armazenamento, estradas, energia, defesa e celebrações pessoais."
+          },
+          {
+            "line": 33212,
+            "global_line": 74079,
+            "anchor": "PRIMEIRA OBSERVAÇÃO • NOITE DO DIA 138 PARA 139"
+          },
+          {
+            "line": 33216,
+            "global_line": 74083,
+            "anchor": "38%"
+          },
+          {
+            "line": 33222,
+            "global_line": 74089,
+            "anchor": "93%"
+          },
+          {
+            "line": 33230,
+            "global_line": 74097,
+            "anchor": "A recuperação ocorreu com fluxo reduzido, sem manifestação ativa, sem fonte artificial de grande potência e sem consumir a reserva de outra pessoa."
+          },
+          {
+            "line": 33232,
+            "global_line": 74099,
+            "anchor": "Percentuais relativos à reserva ampliada após o despertar. Não representam um aumento adicional da capacidade máxima."
+          }
+        ]
+      }
+    }
+  ],
+  "architect_discoveries": [],
+  "author_directions": [
+    {
+      "classification": "DECISAO_AUTORAL",
+      "summary": "Folga com Miren, recuperação pelo descanso, aniversários e prioridades civis.",
+      "source": {
+        "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+        "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+        "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "book": 2,
+        "day": null,
+        "evidence": [
+          {
+            "line": 31937,
+            "global_line": 72804,
+            "anchor": "Lucas passou pela maior revolução, e muitas coisas aconteceram, para ele também foi muita coisa, e agora decide tirar um dia de folga com miren, e aproveitar isso ao lado dela, se estamos seguros, precisamos descansar."
+          },
+          {
+            "line": 31939,
+            "global_line": 72806,
+            "anchor": "Com isso também miren apoiando o descanso de Lucas, ajuda a descobrir que dormir talvez agora seja a solução de aumentar a reserva de Lucas, onde ele deixa seu canal aberto pra encher, como um rio, estando calma e descansando, ele irá encher, e pela manhã poderá usar, e assim o ciclo permanecer."
+          },
+          {
+            "line": 31941,
+            "global_line": 72808,
+            "anchor": "Ele também gostaria de voltar a ideia do sistema de aniversários, e gostaria de pedir aos seus colegas para planejar e arquitetar aquilo que precisamos de imediato."
+          },
+          {
+            "line": 31943,
+            "global_line": 72810,
+            "anchor": "Um grande tipo de freezer pra guardar comida, um sistema e irrigação, ruas romanas ? Sistema de energia ? Oque seria prioridade ?"
+          }
+        ]
+      }
+    },
+    {
+      "classification": "DECISAO_AUTORAL",
+      "summary": "Sete dias coordenados, recuperação diária, vigilância, relatório de armas, autômatos e análise territorial; execução no trecho seguinte.",
+      "source": {
+        "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+        "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+        "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "book": 2,
+        "day": null,
+        "evidence": [
+          {
+            "line": 33821,
+            "global_line": 74688,
+            "anchor": "Realizar as 3 frentes com ação coordenada de uma semana e realmente termos super avanços. O tempo de 7 dias é para recuperação diária e com isso desenvolver todo dia o máximo possível."
+          },
+          {
+            "line": 33823,
+            "global_line": 74690,
+            "anchor": "Durante esse período precisamos estar atentos aos movimentos de guerra, e ter o relatório de construção das armas militares."
+          },
+          {
+            "line": 33825,
+            "global_line": 74692,
+            "anchor": "Lucas também verifica que fazer tudo sozinho não será possível, e decide no primeiro dia a criar autômatos que fariam todos o serviço muito mais fácil, rápido e exigiria menor custo de pessoas para as atividades físicas. E avançariam novamente anos, em dias…"
+          },
+          {
+            "line": 33827,
+            "global_line": 74694,
+            "anchor": "Me recapitular o tamanho da cidade e de como estamos, qual é o tamanho nosso comparado a outros ? Oque somos ? Minúsculos ? Temos local suficiente para evoluir para 10 mil ? 100 mil ? Um dia muito mais ?"
+          }
+        ]
+      }
+    }
+  ],
+  "counts": {
+    "reviewed_in_draft": 15,
+    "complete_groups_in_draft": 6,
+    "proposed_field_changes": 18,
+    "existing_entities": 11,
+    "context_line_comparisons": 128,
+    "additional_observations": 10,
+    "author_directions": 2,
+    "official_editorially_reviewed": 104,
+    "official_groups": 86,
+    "official_remaining": 157,
+    "independently_certified": 0
+  },
+  "verification": {
+    "exact_ledger_anchors": 15,
+    "original_context_lines_match": true,
+    "inventory_groups_match": true,
+    "inventory_anchor_digest_matches_ledger": true,
+    "source_blob_fetched_by_sha": true,
+    "computed_source_digest": false,
+    "stable_ids_existing": true,
+    "existing_profile_count": 192,
+    "naming_base_matches_current": true,
+    "head_read_by_pinned_blob": true,
+    "changes_are_staged_only": true,
+    "native_load_overlay_run": false,
+    "native_tests_run": false,
+    "reason": "Connector private blobs available; native Python executor or workflow dispatch unavailable in session. Do not promote before native load_overlay and naming revalidation."
+  },
+  "pending": {
+    "next_official": {
+      "ledger_id": 412,
+      "global_line": 72845,
+      "group": [
+        412,
+        413,
+        414,
+        415
+      ]
+    },
+    "next_after_validation": {
+      "ledger_id": 427,
+      "global_line": 74727,
+      "group": [
+        427
+      ]
+    },
+    "native_validation_required": true,
+    "identity_candidate": "Ina — preserve separate evidence; no automatic merge",
+    "production_hold": true
+  },
+  "canon_changed": false,
+  "production_activated": false
+}
