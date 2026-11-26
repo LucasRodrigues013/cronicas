@@ -1,0 +1,205 @@
+{
+  "schema": "worldroot-r36-book-i-e-f-substantive-addendum-v1",
+  "book": 1,
+  "source": {
+    "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+    "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+    "lines": [
+      1,
+      40845
+    ],
+    "narrative_days": [
+      1,
+      90
+    ],
+    "chapter_numbers": 38,
+    "raw_words": 171829,
+    "prompts": 44,
+    "responses": 44
+  },
+  "previous_handoff": "476becf131a794af21a7616d5ed5ad6d436311fc",
+  "status": "EDITORIAL_EVIDENCE_ADDENDUM_NOT_ADMITTED",
+  "corrections": [
+    {
+      "id": "LI-F-001",
+      "entity_id": "astra",
+      "field": "origin",
+      "prior": "E06 required full birth scene",
+      "historical_claim": "Criação de consciência única por CREATION, corpo materializado e primeiro batimento; nome Astra escolhido depois.",
+      "evidence": [
+        {
+          "line": 22832,
+          "text": "A matriz estava organizada ao redor de uma única consciência."
+        },
+        {
+          "line": 22856,
+          "text": "A luz se condensou."
+        },
+        {
+          "line": 22858,
+          "text": "Uma silhueta surgiu diante de você."
+        },
+        {
+          "line": 22860,
+          "text": "O corpo tomou forma."
+        },
+        {
+          "line": 22866,
+          "text": "O primeiro batimento cardíaco."
+        },
+        {
+          "line": 22882,
+          "text": "E uma mulher estava diante de você."
+        },
+        {
+          "line": 23030,
+          "text": "— ASTRA."
+        }
+      ],
+      "disposition": "HISTORICAL_CANDIDATE_CORROBORATED",
+      "scope": "BOOK_I_ONLY",
+      "current_state": false,
+      "canon_promotion": false,
+      "semantic_certification": false
+    },
+    {
+      "id": "LI-F-002",
+      "entity_id": "astra",
+      "field": "hair",
+      "prior": {
+        "value": "Loiro dourado, longo, liso com ondas nas pontas",
+        "status": "COMPLETADO",
+        "origin": {
+          "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+          "field": "hair",
+          "original_status": "EXISTING_PROSPECTIVE_VISUAL_DESIGN"
+        },
+        "justification": "Preservado do registro anterior; não transforma proposta em evento.",
+        "scope": "EDITORIAL",
+        "valid_at": {
+          "day": 579,
+          "chapter": 9,
+          "part": "I"
+        }
+      },
+      "historical_claim": "Na criação, Astra tinha cabelos escuros presos de maneira despretensiosa. A ficha D579 mantém design prospectivo loiro dourado; nenhuma mudança temporal inferida.",
+      "evidence": [
+        {
+          "line": 22884,
+          "text": "Alta, de postura naturalmente ereta, cabelos escuros presos de maneira despretensiosa e olhos cinzentos que imediatamente começaram a examinar o ambiente."
+        }
+      ],
+      "disposition": "HISTORICAL_DESIGN_CONFLICT_REVIEW_LATER_BOOKS",
+      "scope": "BOOK_I_HISTORICAL_VS_D579_EDITORIAL",
+      "current_state": false,
+      "canon_promotion": false,
+      "semantic_certification": false
+    },
+    {
+      "id": "LI-F-003",
+      "entity_id": "astra",
+      "field": "eyes",
+      "prior": {
+        "value": "Azul acinzentado",
+        "status": "COMPLETADO",
+        "origin": {
+          "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+          "field": "eyes",
+          "original_status": "EXISTING_PROSPECTIVE_VISUAL_DESIGN"
+        },
+        "justification": "Preservado do registro anterior; não transforma proposta em evento.",
+        "scope": "EDITORIAL",
+        "valid_at": {
+          "day": 579,
+          "chapter": 9,
+          "part": "I"
+        }
+      },
+      "historical_claim": "Olhos cinzentos na criação; ficha D579 azul acinzentado é design prospectivo, não prova de mudança.",
+      "evidence": [
+        {
+          "line": 22884,
+          "text": "Alta, de postura naturalmente ereta, cabelos escuros presos de maneira despretensiosa e olhos cinzentos que imediatamente começaram a examinar o ambiente."
+        }
+      ],
+      "disposition": "HISTORICAL_DESIGN_VARIATION_REVIEW_LATER_BOOKS",
+      "scope": "BOOK_I_HISTORICAL_VS_D579_EDITORIAL",
+      "current_state": false,
+      "canon_promotion": false,
+      "semantic_certification": false
+    },
+    {
+      "id": "LI-F-004",
+      "entity_id": "astra",
+      "field": "wardrobe",
+      "prior": {
+        "value": "Azul celeste, creme, lilás; casacos leves e roupa de laboratório",
+        "status": "COMPLETADO",
+        "origin": {
+          "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+          "field": "wardrobe",
+          "original_status": "EXISTING_PROSPECTIVE_VISUAL_DESIGN"
+        },
+        "justification": "Preservado do registro anterior; não transforma proposta em evento.",
+        "scope": "EDITORIAL",
+        "valid_at": {
+          "day": 579,
+          "chapter": 9,
+          "part": "I"
+        }
+      },
+      "historical_claim": "Roupas simples de viagem no nascimento, sem equipamentos extraordinários; não se opõe a vestuário posterior.",
+      "evidence": [
+        {
+          "line": 22886,
+          "text": "Vestia roupas simples de viagem — nada de artefatos ou equipamentos extraordinários."
+        }
+      ],
+      "disposition": "HISTORICAL_ONLY_NOT_CURRENT",
+      "scope": "BOOK_I_ONLY",
+      "current_state": false,
+      "canon_promotion": false,
+      "semantic_certification": false
+    },
+    {
+      "id": "LI-F-005",
+      "entity_id": "candidate:daren-book-i",
+      "field": "age_apparent",
+      "prior": "E01 linha 17670 incorreta, E02 corrigiu",
+      "historical_claim": "Rapaz de aproximadamente dezessete anos; idade aparente histórica, não cronológica confirmada; não fundir com Dárien.",
+      "evidence": [
+        {
+          "line": 17666,
+          "text": "Um dos moradores, rapaz de aproximadamente dezessete anos, observava a conversa a alguns passos."
+        },
+        {
+          "line": 17686,
+          "text": "— Meu nome é DAREN."
+        },
+        {
+          "line": 17700,
+          "text": "— Moro aqui há quatro invernos."
+        }
+      ],
+      "disposition": "CORRECTION_CONFIRMED",
+      "scope": "BOOK_I_ONLY",
+      "current_state": false,
+      "canon_promotion": false,
+      "semantic_certification": false
+    }
+  ],
+  "checks": {
+    "source_exact": true,
+    "dark_hair": true,
+    "prospective_blonde": true,
+    "first_heartbeat": true,
+    "daren_age": true
+  },
+  "limitations": [
+    "No independent semantic adjudication.",
+    "No active design change: retain original D579 provisional design until temporal reconciliation.",
+    "Do not equate birth appearance with present state."
+  ],
+  "canon_changed": false,
+  "production_activated": false
+}
