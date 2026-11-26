@@ -28,6 +28,12 @@
   },
   "notes": [
     "Manifest for R35 graph integration after homologation. Does not activate or alter HEAD. C4 prospective design subject to author veto and higher evidence.",
-    "V3 readback: 181 independent cards, no duplicate IDs, field provenance and scope structural checks pass. Production activation pending."
-  ]
+    "V3 readback: 181 independent cards, no duplicate IDs, field provenance and scope structural checks pass. Production activation pending.",
+    "Naming review is pinned for the R35 development engine, not a change to historical identity or production deployment. Unadmitted candidate rows remain staging-only."
+  ],
+  "naming_review": {
+    "path": "editorial/registries/r35-legacy-name-reconciliation-v1.json",
+    "git_blob": "67073758f619ed3fe3852b259518efca55b43619",
+    "scope": "EDITORIAL_PROPOSALS_ONLY"
+  }
 }
