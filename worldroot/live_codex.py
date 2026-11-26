@@ -8,7 +8,7 @@ from pathlib import Path
 REGISTRY="editorial/registries/universal-codex-design-d580-v1.json"
 SCHEMA="worldroot-codex-delta-v1"
 DOMAINS=("Personagens","Bestiário","Atlas mundial","Ambientes","Arsenal","Tecnologia","Magia e poderes","Organizações","Cultura e economia","História e mistérios")
-KINDS={"APPEARANCE","MOVE","ACQUIRE","TRANSFER","STORE","EQUIP","UNEQUIP","CONSUME","LOSE","LEARN","CAST","ATTRIBUTE","KNOW","RELATION"}
+KINDS={"APPEARANCE","MOVE","ACQUIRE","TRANSFER","STORE","EQUIP","UNEQUIP","CONSUME","LOSE","USE_ITEM","LEARN","CAST","ATTRIBUTE","KNOW","RELATION"}
 ID=re.compile(r"^[A-Za-z0-9][A-Za-z0-9:_-]{0,127}$")
 def digest(value):
     return hashlib.sha256(json.dumps(value,sort_keys=True,ensure_ascii=False,separators=(",",":")).encode()).hexdigest()
@@ -82,10 +82,12 @@ def validate_delta(delta,prose,episode,day,existing_ids,spell_ids):
         check_anchor(prose,e["line"],e["anchor"])
         k=e["kind"];v=e.get("value")
         if e.get("scope") not in ("WORLD","PRIVATE_CHARACTER","BACKSTAGE"):raise ValueError("Missing visibility")
+        if e.get("location_id") is not None and e["location_id"] not in ids:raise ValueError("Unknown event location")
         if k in {"MOVE","APPEARANCE"} and (not isinstance(v,dict) or v.get("location_id") not in ids):raise ValueError("Unknown location ID")
         if k in {"LEARN","CAST"} and (not isinstance(v,dict) or v.get("spell_id") not in spell_ids):raise ValueError("Unknown spell ID")
-        if k in {"ACQUIRE","TRANSFER","STORE","EQUIP","UNEQUIP","CONSUME","LOSE"} and (not isinstance(v,dict) or v.get("item_id") not in ids):raise ValueError("Unknown item instance")
+        if k in {"ACQUIRE","TRANSFER","STORE","EQUIP","UNEQUIP","CONSUME","LOSE","USE_ITEM"} and (not isinstance(v,dict) or v.get("item_id") not in ids):raise ValueError("Unknown item instance")
         if k=="TRANSFER" and v.get("to_id") not in ids:raise ValueError("Unknown recipient")
+        if k=="USE_ITEM" and (not isinstance(v.get("method"),str) or not v["method"].strip()):raise ValueError("Item use must describe method")
         if k=="STORE" and v.get("location_id") not in ids:raise ValueError("Unknown storage")
         if k=="RELATION" and (not isinstance(v,dict) or v.get("target_id") not in ids or not v.get("relation")):raise ValueError("Unknown relation target")
         if k in {"ATTRIBUTE","KNOW"} and (not isinstance(v,dict) or not v.get("field") or "value" not in v):raise ValueError("Missing typed value")
@@ -132,6 +134,8 @@ def apply_delta(db,delta,prose,sequence,day,source_sha,spell_ids):
                 holder=v["to_id"] if kind=="TRANSFER" else None if kind in ("STORE","CONSUME","LOSE") else subject
                 location=v.get("location_id") if kind=="STORE" else None
                 setstate(db,item,"custody",{"holder":holder,"location":location,"state":kind,"actor":subject},eid)
+            elif kind=="USE_ITEM":
+                setstate(db,subject,"last_item_use:"+v["item_id"],{"method":v["method"],"location":e.get("location_id"),"episode":episode,"day":e["day"]},eid)
             elif kind=="ATTRIBUTE":setstate(db,subject,"attribute:"+v["field"],v["value"],eid)
             elif kind=="KNOW":setstate(db,subject,"knowledge:"+v["field"],v["value"],eid)
             elif kind=="RELATION":setstate(db,subject,"relation:"+v["target_id"]+":"+v["relation"],v.get("value"),eid)
@@ -153,6 +157,10 @@ def _sync(root,db_path=None):
             seed(db,data);db.execute("INSERT OR REPLACE INTO meta VALUES('registry_sha',?)",(reg_sha,))
         spells={s["id"] for s in data["arcane"]["index"]}|{"genese","CREATION_GENESE"}
         closures=sorted((load(p) for p in (root/"canon/episodes").glob("*.json")),key=lambda c:c["sequence"])
+        if len(closures)!=head["sequence"]:raise ValueError("Incomplete canon journal")
+        closure_ids={c["episode_id"] for c in closures}
+        if any(row[0] not in closure_ids for row in db.execute("SELECT episode FROM codex_episode")):raise ValueError("Codex graph contains unclosed episode")
+        verified_deltas=set()
         for c in closures:
             eid=c["episode_id"];receipt_path=root/"episodes"/eid/"review/preparation_r33.json"
             if not receipt_path.is_file():continue
@@ -161,6 +169,8 @@ def _sync(root,db_path=None):
             draft,manifest=verify_episode(root,eid)
             if manifest["original_readback_sha256"]!=c["story_sha256"] or receipt.get("codex_delta_sha256")!=digest(delta) or receipt.get("prose_sha256")!=hashlib.sha256(draft.prose.encode()).hexdigest():raise ValueError("Codex source receipt mismatch")
             apply_delta(db,delta,draft.prose,c["sequence"],c["metadata"]["day"],c["story_sha256"],spells)
+            verified_deltas.add(eid)
+        if any(row[0] not in verified_deltas for row in db.execute("SELECT episode FROM codex_episode")):raise ValueError("Codex receipt missing")
         if db.execute("PRAGMA integrity_check").fetchone()[0]!="ok" or db.execute("PRAGMA foreign_key_check").fetchall():raise ValueError("Codex projection corrupt")
         with db:db.execute("INSERT OR REPLACE INTO meta VALUES('head',?)",(jsonstr(head),))
         return {"head":head,"registry_sha":reg_sha,"records":db.execute("SELECT count(*) FROM records").fetchone()[0],"events":db.execute("SELECT count(*) FROM codex_events").fetchone()[0],"scope":"CANDIDATES_PLUS_CLOSED_TYPED_EVENTS"}
@@ -223,7 +233,23 @@ def validate_submission(root,request,packet,payload):
     for f in packet["universal_codex"]["focal"]:
         if not set(f["ids"])&covered and norm(f["name"]) not in unresolved:
             raise ValueError("Focal character lacks Codex review: "+f["name"])
-    return {"codex_delta":delta,"codex_delta_sha256":digest(delta),"codex_registry_sha256":packet["universal_codex"]["registry_sha256"]}
+    # Preflight the same mutation transaction on a disposable projection.
+    with sqlite3.connect(":memory:") as test:
+        initialize(test)
+        seed(test,data)
+        test.commit()
+        if graph.is_file():
+            with sqlite3.connect(graph.resolve().as_uri()+"?mode=ro",uri=True) as src:
+                meta=dict(src.execute("SELECT key,value FROM meta"))
+                if json.loads(meta["head"])==request["head"] and meta["registry_sha"]==packet["universal_codex"]["registry_sha256"]:src.backup(test)
+        apply_delta(test,delta,payload["prose"],request["head"]["sequence"]+1,payload["metadata"]["day"],hashlib.sha256(payload["full_text"].encode()).hexdigest(),spell_ids)
+    # Non-dialogue mentions are candidates for semantic review, not appearances.
+    prose_norm=" "+norm(payload["prose"])+" "
+    mentions=[]
+    for r in rows:
+        if "Personagens" in r["domains"] and any(" "+norm(n)+" " in prose_norm for n in [r["name"],*r.get("aliases",[])] if len(norm(n))>=3):
+            mentions.append(r["id"])
+    return {"codex_delta":delta,"codex_delta_sha256":digest(delta),"codex_registry_sha256":packet["universal_codex"]["registry_sha256"],"codex_mention_candidates":mentions}
 
 def graph_candidates(root,query,entity=None):
     reg=load_registry(root)
