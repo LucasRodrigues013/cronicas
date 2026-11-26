@@ -190,6 +190,9 @@ def build_live_brief(head: dict, policy: dict, max_chars: int = 1700) -> dict:
     if all(rid in policies for rid in ("P121","P122","P123","P124","P125")):
         lines.insert(4, "R35: prosa 9–11k regular, 10–13k especial, 12–15k clímax; piso 8800/9500/11000, segmentos verificados, cenas vividas, pausas, reação e recompensa; sem resumo ou enchimento.")
         selected.extend(rid for rid in ("P121","P122","P123","P124","P125") if rid not in selected)
+    if all(rid in policies for rid in ("P126","P127","P128","P129","P130")):
+        lines.insert(4, "R35 refinada: cadência D568/D571, vozes e fichas com fonte, maravilhamento e reações, ação em vez de relatório, romance adulto orgânico. Piloto D579 não é história.")
+        selected.extend(rid for rid in ("P126","P127","P128","P129","P130") if rid not in selected)
     brief = "\n".join(lines)
     while len(brief) > max_chars and len(lines) > 4:
         lines.pop(-2)

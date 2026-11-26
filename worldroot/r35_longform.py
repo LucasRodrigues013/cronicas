@@ -135,6 +135,9 @@ def validate_plan(request,choice):
     require(isinstance(refs,list) and len(refs)>=2 and len(set(refs))==len(refs) and all(i in req and req[i].get("role","Response")=="Response" and i in request["reviewed"] for i in refs),"R35 compare two distinct evidence-backed narrative references")
     require(reason(plan.get("cadence_intent")) and reason(plan.get("adult_opportunity")) and reason(plan.get("epic_payoff")),"R35 editorial opportunities not articulated")
     validate_adult_plan(request,plan)
+    if "refinement" in plan:
+        from .r35_refinement import validate_refinement_plan
+        validate_refinement_plan(request)
     return {"profile":mode,"planned_words":total,"floor":floor,"target":[low,high],"scene_count":len(cards),"semantic_certification":False}
 def validate_delivery(root,request,payload,choice):
     review=payload.get("r35_review");require(isinstance(review,dict) and review.get("schema")=="worldroot-r35-review-v1","R35 release review missing")
@@ -179,4 +182,8 @@ def validate_delivery(root,request,payload,choice):
     for k,v in comparison.items():
         require(isinstance(v,dict) and v.get("reference_id") in plan["references"] and reason(v.get("assessment")) and v.get("result") in ("retained","improved","contextual_difference"),"R35 unresolved comparative regression: "+k)
     require(review.get("no_padding") is True and review.get("no_condensed_key_events") is True,"R35 review depth and repetition")
-    return {"schema":"worldroot-r35-longform-receipt-v1","volume":result,"segments":stage,"scene_reviews":len(rows),"opportunities":opportunities,"adult_focus":adult,"comparison":comparison,"semantic_certification":False,"canon_changed":False}
+    extra={}
+    if "refinement" in plan:
+        from .r35_refinement import validate_refinement_review
+        extra["refinement"]=validate_refinement_review(request,payload)
+    return {**extra,"schema":"worldroot-r35-longform-receipt-v1","volume":result,"segments":stage,"scene_reviews":len(rows),"opportunities":opportunities,"adult_focus":adult,"comparison":comparison,"semantic_certification":False,"canon_changed":False}
