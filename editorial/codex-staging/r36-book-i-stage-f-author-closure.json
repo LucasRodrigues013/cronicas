@@ -1,0 +1,90 @@
+{
+  "schema": "worldroot-r36-book-i-author-editorial-closure-v1",
+  "book": 1,
+  "stage": "F",
+  "status": "EDITORIAL_HOMOLOGATION_WITH_EXPLICIT_RESERVATIONS",
+  "decision": "CLOSE_BOOK_I_EDITORIAL_CYCLE_OPEN_BOOK_II_INVENTORY_ONLY_KEEP_PRODUCTION_HOLD",
+  "supersedes": {
+    "commit": "84a5116dfd8b2ca964f4473802e005c65fc2db06",
+    "blob": "15cadcee624c3c988e270194c1d3b39f6ee035aa"
+  },
+  "author_direction": {
+    "date": "2026-11-26",
+    "literal": "Sempre que voce recuperar algo do canone durante as revisões, va atualizando as fichas conforme o canone e ignorando qualquer coisa inventanda, isso vai preencher as lacunas e quando chegarmos ao final teremos oque precisamos e somente iremos completar aquilo que precisamos.",
+    "interpretation": "Authorize source-bound editorial profile corrections and operational transition to Book II historical inventory, not waiver or fabrication of independent certification, not canon journal promotion.",
+    "priority": [
+      "Explicit author decisions and literal narrated evidence",
+      "Dated source-bound historical observations",
+      "Unverified recollection and prospective design do not override evidence",
+      "Unknown fields pending until all historical books reviewed; complete only what is necessary."
+    ]
+  },
+  "archive": {
+    "commit": "ec942395bb20c00e64f9bcd7308dc8dced09f7c3",
+    "manifest_blob": "a8530a32396088b826d3d2fd43d5e3b901fdf872",
+    "character_overlay_blob": "295ac47860e9138f65d63b1d68c324d6b4e64cef",
+    "world_overlay_blob": "bcff40fc483464b26b4dbf81c7dee75efc6aeec8",
+    "naming_blob": "5276b2e92b6d580a52afcecd9661c4e28fc6a2d8",
+    "previous_archive": "34987b0771ec961b4a1c0c6cf203843b113dc000",
+    "files_changed": [
+      "editorial/registries/r35-legacy-name-reconciliation-v4.json",
+      "editorial/registries/r35-living-overlay-manifest-book-i-review.json",
+      "editorial/registries/r35-living-overlay-manifest.json",
+      "editorial/registries/r35-natural-completion-d579-v6.json",
+      "editorial/registries/r35-world-completion-d579-v4.json"
+    ]
+  },
+  "profile_revision": {
+    "commit": "e93d6da751491a571f72d8cdbbc415dd6bd74cda",
+    "blob": "ea137abcc48ada7971e882de423e8fb052ea15ac",
+    "existing_profiles": 192,
+    "revised_profiles": 17,
+    "field_changes": 52,
+    "candidate_profiles": 14,
+    "active_candidate_admissions": 0
+  },
+  "native": {
+    "run_id": 45897372433,
+    "job_id": 140174506004,
+    "workflow_commit": "ec3f24b2b2b723a100d2cf24281fcba9d3d938ef",
+    "profile_overlay": "PASS",
+    "regression_tests": 705,
+    "regression_status": "PASS",
+    "projection_records": 1256,
+    "projection_events": 0,
+    "replay_restore": true,
+    "independent_models": 0
+  },
+  "metrics": {
+    "ledger_targets": 307,
+    "contexts": 236,
+    "discovery_candidates": 142,
+    "roster": 38,
+    "observations": 74,
+    "graph_edges": 22,
+    "dimensions_represented": 30
+  },
+  "reservations": {
+    "independent_semantic_certified": 0,
+    "independent_targets_pending": 307,
+    "identity_candidates_pending_admission": 14,
+    "typed_events_admitted": 0,
+    "exhaustive_scene_coverage_not_certified": true,
+    "unreviewed_later_books_not_claimed": true,
+    "production_hold": true,
+    "canonical_head_unchanged": true
+  },
+  "next": {
+    "book": 2,
+    "stage": "A",
+    "scope": "Inventory and historical reconciliation only, canon-first rule inherited; revisit explicit reservations before final global homologation or production."
+  },
+  "checks": {
+    "main": true,
+    "engine": true,
+    "archive_only_editorial": true,
+    "manifest_validated": true
+  },
+  "canon_changed": false,
+  "production_activated": false
+}
