@@ -96,6 +96,7 @@ def validate_delivery(root,request,payload,choice):
     review=payload.get("r35_review");require(isinstance(review,dict) and review.get("schema")=="worldroot-r35-review-v1","R35 release review missing")
     plan=request["r35_plan"];meta=payload["metadata"]
     require(meta["part"]==plan["part"],"R35 mismatched part")
+    require(payload["full_text"].startswith(payload["prose"]),"R35 reader text must contain complete exact prose at start")
     result=volume_check(payload["prose"],meta["part"],choice["option"],choice.get("free_text",""))
     require(not result["issues"],"; ".join(result["issues"]))
     stage=verify_longform_segments(Path(root),payload["delivery_id"],payload)
