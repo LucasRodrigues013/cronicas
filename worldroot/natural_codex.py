@@ -114,7 +114,14 @@ def load_overlay(root, base_raw, base):
         if ident not in profiles or field not in profiles[ident]["fields"] or profiles[ident]["fields"][field]["status"] not in ("COMPLETADO","SEGREDO") or not str(v.get("reason","")).strip():
             raise ValueError("Veto is limited to provisional or secret editorial values")
         vetoes.setdefault(ident,set()).add(field)
-    return {"manifest_sha256":hashlib.sha256(raw).hexdigest(),
+    naming_review={}
+    if "naming_review" in m:
+        from .naming import validate_roster
+        spec=m["naming_review"];doc,blob=_read(root,spec["path"])
+        if git_blob(blob)!=spec["git_blob"] or doc.get("source_overlay_blob")!=m["character_overlay"]["git_blob"]:
+            raise ValueError("Naming roster content identity mismatch")
+        naming_review=validate_roster(doc,c["characters"],cp)
+    return {"naming_review":naming_review,"manifest_sha256":hashlib.sha256(raw).hexdigest(),
             "profiles":profiles,"aliases":aliases,"vetoes":vetoes,
             "links":w.get("links",[]),"base_ids":base_ids,
             "checkpoint":cp,"character_count":len(c["characters"]),

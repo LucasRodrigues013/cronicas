@@ -100,7 +100,12 @@ def preparation_context(overlay,focal):
             for task in field_tasks(cards[ident]):
                 if task["field"]=="knowledge" or cards[ident]["fields"][task["field"]].get("scope") in PRIVATE_SCOPES:continue
                 tasks.append({k:v for k,v in task.items() if k!="basis_fields"})
-        results.append({"name":f["name"],"ids":ids,"route":status,"tasks":tasks})
+        reviews=[]
+        for ident in ids:
+            r=overlay.get("naming_review",{}).get(ident)
+            if r and r["status"]=="PROSPECTIVE_CHOSEN_IDENTIFIER_NOT_HEREDITARY":
+                reviews.append({"id":ident,"existing_name":r["existing_name"],"proposal":r["proposed_full_name"],"status":r["status"],"activate_alias":False})
+        results.append({"name":f["name"],"ids":ids,"route":status,"tasks":tasks,"name_review":reviews})
     from .naming import policy_packet
     return {"schema":SCHEMA,"role":"ARQUITETO_EDITORIAL","policy":"docs/r35-arquiteto.md","focal":results,"require_semantic_review":True,"allow_prospective_design":True,"canon_promotion":False,"naming":policy_packet()}
 

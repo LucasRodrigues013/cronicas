@@ -1,5 +1,5 @@
 import unittest
-from worldroot.naming import propose,validate,catalog,policy_packet
+from worldroot.naming import propose,validate,catalog,policy_packet,validate_roster
 
 class NamingTest(unittest.TestCase):
     def card(self):
@@ -29,3 +29,12 @@ class NamingTest(unittest.TestCase):
         self.assertEqual(validate(c,[],{"thalor","tres-arcos"},{"species:human"})["culture_id"],"elfic")
         p["additional_kind"]="HOUSE"
         with self.assertRaises(ValueError):validate(c,[],{"thalor","tres-arcos"},{"species:human"})
+
+    def test_roster_no_automatic_alias(self):
+        cards=[{"id":"one","name":"Varo","aliases":["O Comandante"]}]
+        row={"id":"one","existing_name":"Varo","proposed_full_name":"Varo Avenor","action":"CHOSEN_NAME_PROPOSAL","status":"PROSPECTIVE_CHOSEN_IDENTIFIER_NOT_HEREDITARY","kinship_inferred":False,"activate_alias":False}
+        doc={"schema":"worldroot-r35-legacy-name-reconciliation-v1","authority":"AUTHOR_AUTHORIZED_PROSPECTIVE_STAGING","checkpoint":{"day":579,"sequence":50},"canon_changed":False,"roster":[row]}
+        cp=doc["checkpoint"]
+        self.assertEqual(validate_roster(doc,cards,cp)["one"]["proposed_full_name"],"Varo Avenor")
+        with self.assertRaises(ValueError):validate_roster({**doc,"roster":[{**row,"activate_alias":True}]},cards,cp)
+        with self.assertRaises(ValueError):validate_roster({**doc,"roster":[{**row,"proposed_full_name":"O Comandante"}]},cards,cp)

@@ -47,3 +47,27 @@ def validate(card,existing_rows=(),region_ids=(),species_ids=()):
     return p
 def policy_packet():
     return {"schema":SCHEMA,"culture_profiles":sorted(catalog()["profiles"]),"new_named_character_requires_full_identity":True,"preserve_legacy_names":True,"identity_is_not_name":True,"mononym_exceptions":sorted(EXCEPTIONS),"region_species_citizenship_separate":True}
+
+
+def validate_roster(document,characters,checkpoint):
+    """Bind private proposal roster to immutable character overlay; no aliases activated."""
+    if document.get("schema")!="worldroot-r35-legacy-name-reconciliation-v1" or document.get("authority")!="AUTHOR_AUTHORIZED_PROSPECTIVE_STAGING" or document.get("checkpoint")!={"day":checkpoint["day"],"sequence":checkpoint["sequence"]} or document.get("canon_changed") is not False:
+        raise ValueError("Name roster authority/checkpoint mismatch")
+    cards={c["id"]:c for c in characters}
+    occupied={norm(v) for c in characters for v in [c["name"],*c.get("aliases",[])]}
+    result={};seen=set()
+    for row in document["roster"]:
+        ident=row.get("id")
+        if not ident or ident in seen or row.get("activate_alias") is not False or row.get("kinship_inferred") is not False:raise ValueError("Unsafe/duplicate naming review")
+        seen.add(ident)
+        if ident not in cards:
+            if not ident.startswith("candidate:"):raise ValueError("Unlinked name roster ID")
+            continue  # separate staging candidates not admitted to the overlay
+        if row.get("existing_name")!=cards[ident]["name"]:raise ValueError("Legacy name mismatch")
+        proposal=row.get("proposed_full_name")
+        if proposal:
+            if not isinstance(proposal,str) or len(proposal.split())<2 or norm(proposal) in occupied or row.get("status")!="PROSPECTIVE_CHOSEN_IDENTIFIER_NOT_HEREDITARY":raise ValueError("Unsafe legacy name proposal")
+            occupied.add(norm(proposal))
+        result[ident]={"status":row["status"],"existing_name":row["existing_name"],"proposed_full_name":proposal,"action":row["action"],"activate_alias":False,"kinship_inferred":False}
+    if set(result)!=set(cards):raise ValueError("Incomplete legacy naming review")
+    return result
