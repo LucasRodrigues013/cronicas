@@ -10,12 +10,12 @@
   },
   "base_registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
   "character_overlay": {
-    "path": "editorial/registries/r35-natural-completion-d579-v6.json",
-    "git_blob": "295ac47860e9138f65d63b1d68c324d6b4e64cef"
+    "path": "editorial/registries/r35-natural-completion-d579-v7.json",
+    "git_blob": "f37cde9f292d72f002b4cd03995e7ae3df86be5b"
   },
   "world_overlay": {
-    "path": "editorial/registries/r35-world-completion-d579-v4.json",
-    "git_blob": "bcff40fc483464b26b4dbf81c7dee75efc6aeec8"
+    "path": "editorial/registries/r35-world-completion-d579-v5.json",
+    "git_blob": "d88490ba24bc41fd5cc2c64188e23978a937d9d2"
   },
   "vetoes": [],
   "rules": {
@@ -35,7 +35,8 @@
     "Naming review is pinned for the R35 development engine, not a change to historical identity or production deployment. Unadmitted candidate rows remain staging-only.",
     "V4/V2 restores early historical entities and links. No production activation; old manifest and blobs preserved in Git history.",
     "V5/V3: preserve private technical origins; enable Uzgor and Pedreira Oriental exact aliases in editorial retrieval only.",
-    "Author direction 2026-11-26: literal narrated evidence supersedes recollection/provisional design; preserve explicit author decisions, unknown fields remain pending until history is exhausted. No canon journal or production activation."
+    "Author direction 2026-11-26: literal narrated evidence supersedes recollection/provisional design; preserve explicit author decisions, unknown fields remain pending until history is exhausted. No canon journal or production activation.",
+    "Livro II, lote 001: seis campos de três fichas existentes atualizados cumulativamente; referências posteriores preservadas, sem promoção canônica."
   ],
   "naming_review": {
     "path": "editorial/registries/r35-legacy-name-reconciliation-v4.json",
@@ -48,5 +49,18 @@
     "profile_revision_blob": "ea137abcc48ada7971e882de423e8fb052ea15ac",
     "identity_candidates": "14 remain separately staged",
     "independent_certification": false
+  },
+  "book_ii_recovery": {
+    "stage": "B",
+    "batch": 1,
+    "review_commit": "8d59a5110100e22eedc3f6dd8402f614d6921a1a",
+    "review_blob": "f24b34d75fc6b9275c17ad44fc8825c90a7e2b30",
+    "reviewed_ids": [
+      308,
+      312
+    ],
+    "next_id": 313,
+    "independent_certification": false,
+    "production_hold": true
   }
 }
