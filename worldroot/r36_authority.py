@@ -38,6 +38,34 @@ def envelope(root, episode, approval, previous):
             "free_text":a["author_quote"],"approval_file":approval,
             "approval_sha256":g.sha(path.read_bytes()),"author_source":"USER_MESSAGE"}
 
+def refresh_resume(root):
+    """Regenerate the existing RESUME projection without executing archive code."""
+    root=Path(root);head=g.load(root/"canon/HEAD.json")
+    old=g.load(root/"ops/RESUME.json")
+    closure=g.load(root/"canon/episodes"/(head["episode_id"]+".json"))
+    if g.sha(g.canonical(closure))!=head["closure_sha256"]:
+        raise GateError("Resume closure mismatch")
+    pending=[]
+    for p in (root/"episodes").glob("*/draft/manifesto_imutavel.json"):
+        ident=p.parent.parent.name
+        if (root/"canon/episodes"/(ident+".json")).exists() or (root/"editorial/rejections"/(ident+".json")).exists():continue
+        # Preserve only existing active pending identities, never resurrect historical drafts.
+        if ident not in old.get("all_pending_draft_ids",[]):continue
+        draft,manifest=g.verify_episode(root,ident)
+        pending.append((ident,draft.metadata,manifest))
+    pending.sort(key=lambda x:(x[1]["day"],x[1]["chapter"],g.PARTS[x[1]["part"]]))
+    latest=pending[-1] if pending else None
+    data={**old,"canon_head":{k:head.get(k) for k in ("episode_id","sequence","book","chapter","part","day","hour","location","source_sha256","book_closed")},
+          "last_canon_journal_sha256":head["closure_sha256"],
+          "all_pending_draft_ids":[x[0] for x in pending],
+          "latest_unclosed_draft":None if latest is None else {"episode_id":latest[0],"book":latest[1]["book"],"chapter":latest[1]["chapter"],"part":latest[1]["part"],"day":latest[1]["day"],"source_path":"episodes/"+latest[0]+"/draft/narrativa_integral.md","source_sha256":latest[2]["original_readback_sha256"]}}
+    if closure.get("ratification_kind")==KIND:
+        later=continuation(root,head["episode_id"])
+        data["r36_continuation"]={"episode":head["episode_id"],"status":later["status"],"choice_sha256":g.sha(g.canonical(later["choice"])) if later["choice"] is not None else None}
+    else:data.pop("r36_continuation",None)
+    (root/"ops/RESUME.json").write_bytes(g.canonical(data))
+    return data
+
 def ratify(root, episode, approval):
     root=Path(root);g.check_id(episode)
     head=g.load(root/"canon/HEAD.json")
@@ -51,6 +79,7 @@ def ratify(root, episode, approval):
         chain=list(g._journal(root))
         if not chain or chain[-1][1]!=head:
             raise GateError("Journal HEAD mismatch")
+        refresh_resume(root)
         return {"status":"IDEMPOTENT","episode":episode,"sequence":c["sequence"]}
     if (root/"editorial/rejections"/(episode+".json")).exists():
         raise GateError("Rejected episode")
@@ -82,6 +111,9 @@ def ratify(root, episode, approval):
     target.write_bytes(g.canonical(closure))
     (root/"canon/HEAD.json").write_bytes(g.canonical(new))
     g.verify_db(root,new);g.write_context(root,new)
+    refresh_resume(root)
+    from .live_codex import sync
+    sync(root)
     return {"status":"RATIFIED","episode":episode,"sequence":new["sequence"],
             "events":len(events),"knowledge":len(knowledge),"continuation_choice":None}
 
