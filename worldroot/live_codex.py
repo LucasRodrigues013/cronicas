@@ -34,8 +34,17 @@ def load_registry(root):
         if closure["story_sha256"]!=e["source_sha256"] or manifest["original_readback_sha256"]!=e["source_sha256"]:raise ValueError("Historical item source mismatch")
         check_anchor(draft.prose,e["line_start"],e["trecho_literal"])
         if state["day"]!=draft.metadata["day"]:raise ValueError("Historical item day mismatch")
+    from .natural_codex import load_overlay
+    overlay=load_overlay(root,b,data)
+    if overlay is not None:
+        data["_natural_overlay"]=overlay
+        # Bind manifest and registry to the preparation; a changed manifest
+        # invalidates earlier preparation and triggers disposable rebuild.
+        return data,digest({"registry":hashlib.sha256(b).hexdigest(),"overlay":overlay["manifest_sha256"]})
     return data,hashlib.sha256(b).hexdigest()
 def all_records(data):
+    from .natural_codex import augment_record, extra_records
+    overlay=data.get("_natural_overlay")
     profiles={p["id"]:p for p in data["characters"]}
     verified=data["arcane"].get("verified_historical_magic",[])
     historical=data.get("coherence",{}).get("items",[])
@@ -44,7 +53,8 @@ def all_records(data):
         extra={}
         if r["id"]=="genese":
             extra={"aliases":[*r.get("aliases",[]),"CREATION_GENESE"],"special_authority":data["arcane"]["special_authorities"][0]}
-        yield {**r,"design":profiles.get(r["id"]),"research_links":[s for s in data["school_links"] if s["entity_id"]==r["id"]],"scope":"HISTORICAL_REVIEW_AND_PROSPECTIVE_DESIGN","verified_magic":[m for m in verified if m["entity_id"]==r["id"]],"historical_items":[m for m in historical if m["recipient"]==r["id"] or m["id"]==r["id"]],"last_observed_custody":custody.get(r["id"]),**extra}
+        yield augment_record({**r,"design":profiles.get(r["id"]),"research_links":[s for s in data["school_links"] if s["entity_id"]==r["id"]],"scope":"HISTORICAL_REVIEW_AND_PROSPECTIVE_DESIGN","verified_magic":[m for m in verified if m["entity_id"]==r["id"]],"historical_items":[m for m in historical if m["recipient"]==r["id"] or m["id"]==r["id"]],"last_observed_custody":custody.get(r["id"]),**extra},overlay)
+    yield from extra_records(overlay)
     for s in data["species"]:
         yield {**s,"aliases":[],"scope":"SPECIES_DESIGN_NOT_OBSERVED"}
     for s in data["arcane"]["schools"]:
@@ -134,6 +144,11 @@ def setstate(db,entity,field,value,event_id):
     db.execute("INSERT INTO codex_state VALUES(?,?,?,?) ON CONFLICT(entity_id,field) DO UPDATE SET value=excluded.value,event_id=excluded.event_id",(entity,field,jsonstr(value),event_id))
 def graph_rows(db,*,public=True):
     rows=[json.loads(row[0]) for row in db.execute("SELECT body FROM records")]
+    if public:
+        from .natural_codex import editorial_profile
+        for r in rows:
+            if isinstance(r.get("profile"),dict):
+                r["natural_profile"]=editorial_profile(r.pop("profile"))
     by_id={r["id"]:r for r in rows}
     sql="SELECT entity_id,body FROM codex_events WHERE kind='ALIAS' ORDER BY sequence,ordinal"
     for ident,body in db.execute(sql):
@@ -316,7 +331,12 @@ def bind_request(root,request):
             if old and seal and json.loads(old[0])==request["head"] and seal[0]==sha:
                 rows=graph_rows(db)
     names=[x["name"] for x in request.get("r34_intent",{}).get("characters",[])]
-    return {"registry_sha256":sha,"head":request["head"],"focal":[{"name":n,"ids":[r["id"] for r in aliases(rows,n,domain="Personagens")]} for n in names],"status":"REVIEW_REQUIRED","coherence_required":bool(data.get("coherence"))}
+    result={"registry_sha256":sha,"head":request["head"],"focal":[{"name":n,"ids":[r["id"] for r in aliases(rows,n,domain="Personagens")]} for n in names],"status":"REVIEW_REQUIRED","coherence_required":bool(data.get("coherence"))}
+    overlay=data.get("_natural_overlay")
+    if overlay:
+        from .natural_codex import CHAR_FIELDS,SYNC_SCHEMA
+        result["natural_completion"]={"manifest_sha256":overlay["manifest_sha256"],"require_scene_sync":overlay["require_sync"],"schema":SYNC_SCHEMA,"new_character_fields":sorted(CHAR_FIELDS),"character_count":overlay["character_count"],"world_count":overlay["world_count"],"scope":"EDITORIAL_PROVISIONAL_NOT_CANON"}
+    return result
 def validate_submission(root,request,packet,payload):
     if packet.get("universal_codex") is None:return None
     if bind_request(root,request)!=packet["universal_codex"]:raise ValueError("Codex changed after preparation")
@@ -339,6 +359,11 @@ def validate_submission(root,request,packet,payload):
         coherence=validate_interactions(payload["prose"],review,{r["id"]:r for r in rows+delta["new_entities"]})
     else:
         validate_delta(delta,payload["prose"],payload["delivery_id"],payload["metadata"]["day"],ids,spell_ids)
+    scene_sync=None
+    overlay=data.get("_natural_overlay")
+    if overlay and overlay["require_sync"]:
+        from .natural_codex import validate_scene_sync
+        scene_sync=validate_scene_sync(payload.get("r33_review",{}).get("codex_sync"),delta,payload["prose"],ids)
     # A literal mention is not necessarily a physical presence. Explicitly triage focal cast.
     covered={e["entity_id"] for e in delta["events"]}|{n["id"] for n in delta["new_entities"]}
     # Named dialogue is a candidate identity, not proof of physical location.
@@ -369,7 +394,11 @@ def validate_submission(root,request,packet,payload):
     for r in rows:
         if "Personagens" in r["domains"] and any(" "+norm(n)+" " in prose_norm for n in [r["name"],*r.get("aliases",[])] if len(norm(n))>=3):
             mentions.append(r["id"])
-    return {"codex_delta":delta,"codex_delta_sha256":digest(delta),"codex_registry_sha256":packet["universal_codex"]["registry_sha256"],"codex_mention_candidates":mentions,"world_coherence_result":coherence}
+    result={"codex_delta":delta,"codex_delta_sha256":digest(delta),"codex_registry_sha256":packet["universal_codex"]["registry_sha256"],"codex_mention_candidates":mentions,"world_coherence_result":coherence}
+    if scene_sync is not None:
+        raw_sync=payload["r33_review"]["codex_sync"]
+        result.update({"codex_sync":raw_sync,"codex_sync_sha256":digest(raw_sync),"codex_sync_result":scene_sync})
+    return result
 
 def graph_candidates(root,query,entity=None):
     reg=load_registry(root)
