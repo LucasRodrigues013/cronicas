@@ -263,9 +263,9 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
         previous_counts=previous_canonical_scene_counts(root, meta),
         archive_root=root)
     # R32 opt-in on staged branch. Preserve immutable old v3 drafts and their choices.
-    if "r34_review" in payload and meta.get("worldroot_revision")!=34:
+    if "r34_review" in payload and meta.get("worldroot_revision") not in (34,35):
         raise GateError("R34 review requires revision 34 metadata")
-    r33_declared = meta.get("worldroot_revision") in (33,34) or "r33_review" in payload or "r34_review" in payload
+    r33_declared = meta.get("worldroot_revision") in (33,34,35) or "r33_review" in payload or "r34_review" in payload or "r35_review" in payload
     r32_declared = meta.get("worldroot_revision")==32 or "r32_review" in payload or r33_declared
     if r32_declared:
         from .r32_release import release_review
@@ -285,18 +285,22 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
     if r33_declared:
         from .r33_runtime import verify_submission
         input_sha=sha(_bytes(payload.get("r33_review")))
-        r34_input_sha=sha(_bytes(payload.get("r34_review"))) if meta.get("worldroot_revision")==34 else None
+        r34_input_sha=sha(_bytes(payload.get("r34_review"))) if meta.get("worldroot_revision") in (34,35) else None
+        r35_input_sha=sha(_bytes(payload.get("r35_review"))) if meta.get("worldroot_revision")==35 else None
         if existing_manifest.is_file():
             rr=load(root/"episodes"/episode_id/"review"/"preparation_r33.json")
             if rr.get("review_input_sha256")!=input_sha or rr.get("source_sha256")!=sha(payload["full_text"].encode("utf-8")):
                 raise ConflictError("Archived R33 preparation differs")
             if r34_input_sha is not None and rr.get("r34_input_sha256")!=r34_input_sha:
                 raise ConflictError("Archived R34 review differs")
+            if r35_input_sha is not None and rr.get("r35_input_sha256")!=r35_input_sha:
+                raise ConflictError("Archived R35 review differs")
         else:
             try:rr=verify_submission(root,head,payload)
             except (ValueError,KeyError,TypeError,OSError) as exc:raise GateError("R33 preparation blocked: "+str(exc)[:250]) from None
             rr["review_input_sha256"]=input_sha
             if r34_input_sha is not None:rr["r34_input_sha256"]=r34_input_sha
+            if r35_input_sha is not None:rr["r35_input_sha256"]=r35_input_sha
             rr["source_sha256"]=sha(payload["full_text"].encode("utf-8"))
         review_files["preparation_r33.json"]=_bytes(rr)
     if existing_manifest.is_file():
