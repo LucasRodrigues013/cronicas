@@ -1,4 +1,4 @@
-name: WORLDROOT R34 - immutable preparation and author intent
+name: WORLDROOT R35 - immutable longform and real corpus regression
 on:
   pull_request:
     branches: [story-archive]
@@ -25,7 +25,7 @@ jobs:
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
-          ref: 0676d0330ce809f086e482441bfc8f7e43f89037
+          ref: 1d810a01724ff3a9ad96ac7a0c5c28474ab6ec15
           path: engine
           persist-credentials: false
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
@@ -43,6 +43,7 @@ jobs:
           python -m unittest discover -s engine/tests -q
           python -m worldroot.git_cycle verify --archive-root archive
           python -m worldroot.r33_runtime --archive-root archive --verify-history
+          python engine/audit/run_r35.py --archive-root archive
           python - <<'PY'
           import json
           from pathlib import Path
@@ -66,7 +67,7 @@ jobs:
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
-          ref: 0676d0330ce809f086e482441bfc8f7e43f89037
+          ref: 1d810a01724ff3a9ad96ac7a0c5c28474ab6ec15
           path: engine
           persist-credentials: false
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
@@ -93,8 +94,8 @@ jobs:
               print("No new request; no write.")
           else:
               request=read(pending[0])
-              if "r34_intent" not in request:
-                  raise RuntimeError("R34 requires independent intent before preparation")
+              if "r34_intent" not in request or "r35_plan" not in request:
+                  raise RuntimeError("R35 requires independent intent and longform plan before preparation")
               print(prepare_from_request(root,request))
           PY
       - name: Publish preparations only and verify remote commit
