@@ -21,14 +21,14 @@ class LiveCodexTests(unittest.TestCase):
     def apply(self,d,sequence=51):
         return apply_delta(self.db,d,self.prose,sequence,580,self.sha,{"spell"})
     def test_acquisition_storage_transfer_and_cast(self):
-        d=self.delta([self.event("APPEARANCE","lucas",1,{"location_id":"torre"}),self.event("ACQUIRE","lucas",2,{"item_id":"cajado-1"}),self.event("STORE","lucas",3,{"item_id":"cajado-1","location_id":"torre"}),self.event("ACQUIRE","miren",4,{"item_id":"cajado-1"}),self.event("CAST","miren",5,{"spell_id":"spell"})])
+        d=self.delta([self.event("APPEARANCE","lucas",1,{"location_id":"torre"}),self.event("ACQUIRE","lucas",2,{"item_id":"cajado-1"}),self.event("STORE","lucas",3,{"item_id":"cajado-1","location_id":"torre"}),{**self.event("ACQUIRE","miren",4,{"item_id":"cajado-1"}),"location_id":"torre"},self.event("LEARN","miren",5,{"spell_id":"spell","method":"explicit synthetic learning fixture"}),self.event("CAST","miren",5,{"spell_id":"spell"})])
         self.assertEqual(self.apply(d),"APPLIED")
         self.assertEqual(current(self.db,"cajado-1","custody")["holder"],"miren")
         self.assertEqual(current(self.db,"lucas","last_observed_location"),"torre")
         self.assertIsNotNone(current(self.db,"miren","last_cast:spell"))
-        self.assertIsNone(current(self.db,"miren","learned:spell"))
+        self.assertIsNotNone(current(self.db,"miren","learned:spell"))
         self.assertEqual(self.apply(d),"IDEMPOTENT")
-        self.assertEqual(self.db.execute("SELECT count(*) FROM codex_events").fetchone()[0],5)
+        self.assertEqual(self.db.execute("SELECT count(*) FROM codex_events").fetchone()[0],6)
     def test_custody_conflict_rolls_back(self):
         d=self.delta([self.event("ACQUIRE","lucas",2,{"item_id":"cajado-1"}),self.event("ACQUIRE","miren",4,{"item_id":"cajado-1"})])
         with self.assertRaises(ValueError):self.apply(d)
@@ -49,3 +49,24 @@ class LiveCodexTests(unittest.TestCase):
         self.assertEqual(len(aliases(rows,"AERUN")),2)
         self.assertEqual([r["id"] for r in aliases(rows,"AERUN",domain="Bestiário")],["aerun-guardiao"])
         self.assertEqual([r["id"] for r in aliases(rows,"AERUN",entity="aerun-instituto")],["aerun-instituto"])
+
+    def test_catalog_is_not_personal_repertoire(self):
+        with self.assertRaisesRegex(ValueError,"Unproven personal spell"):
+            self.apply(self.delta([self.event("CAST","miren",5,{"spell_id":"spell"})]))
+        self.assertEqual(self.db.execute("SELECT count(*) FROM codex_events").fetchone()[0],0)
+    def test_old_item_mention_is_not_access(self):
+        e=self.event("USE_ITEM","lucas",2,{"item_id":"cajado-1","method":"exame"})
+        with self.assertRaisesRegex(ValueError,"Item access"):
+            self.apply(self.delta([e]))
+    def test_stored_item_cannot_teleport(self):
+        d=self.delta([self.event("ACQUIRE","lucas",2,{"item_id":"cajado-1"}),self.event("STORE","lucas",3,{"item_id":"cajado-1","location_id":"torre"}),{**self.event("ACQUIRE","miren",4,{"item_id":"cajado-1"}),"location_id":"casa"}])
+        with self.assertRaisesRegex(ValueError,"actual location"):
+            self.apply(d)
+        self.assertIsNone(current(self.db,"cajado-1","custody"))
+    def test_storage_does_not_change_owner(self):
+        d=self.delta([self.event("ACQUIRE","lucas",2,{"item_id":"cajado-1","ownership_transfer":True}),self.event("STORE","lucas",3,{"item_id":"cajado-1","location_id":"torre"})])
+        self.apply(d)
+        v=current(self.db,"cajado-1","custody")
+        self.assertEqual(v["owner"],"lucas")
+        self.assertIsNone(v["holder"])
+        self.assertEqual(v["location"],"torre")
