@@ -379,6 +379,17 @@ def bind_request(root,request):
         result["natural_completion"]={"manifest_sha256":overlay["manifest_sha256"],"require_scene_sync":overlay["require_sync"],"schema":SYNC_SCHEMA,"new_character_fields":sorted(CHAR_FIELDS),"character_count":overlay["character_count"],"world_count":overlay["world_count"],"scope":"EDITORIAL_PROVISIONAL_NOT_CANON"}
         from .arquiteto import preparation_context
         result["arquiteto"]=preparation_context(overlay,result["focal"])
+        from .scene_context import build as stream_scenes,pending_fronts
+        if graph.is_file():
+            with sqlite3.connect(graph.resolve().as_uri()+"?mode=ro",uri=True) as db:
+                meta=dict(db.execute("SELECT key,value FROM meta"))
+                ready=meta.get("registry_sha")==sha and json.loads(meta.get("head","null"))==request["head"]
+                result["scene_context"]=stream_scenes(request,rows,overlay,db if ready else None)
+                result["world_fronts"]=pending_fronts(db if ready else None,request["head"]["day"])
+        else:
+            result["scene_context"]=stream_scenes(request,rows,overlay)
+            result["world_fronts"]=pending_fronts(None,request["head"]["day"])
+
     return result
 def validate_submission(root,request,packet,payload):
     if packet.get("universal_codex") is None:return None
