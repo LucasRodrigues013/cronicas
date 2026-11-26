@@ -81,5 +81,18 @@
   "approval_required": true,
   "production_hold": true,
   "canon_changed": false,
-  "semantic_certification": false
+  "semantic_certification": false,
+  "recovery_after_interruption": {
+    "run_id": 45909961498,
+    "job_id": 140215655381,
+    "conclusion": "failure",
+    "steps_reported": 0,
+    "logs_available": false,
+    "native_status": "NOT_VALIDATED",
+    "canonical_delta_path": "editorial/codex-staging/r36-book-ii-stage-b-b006-v2-native-delta-DRAFT.json",
+    "canonical_delta_blob": "58b5e04f9f5fc0001933772473ea697d740f29f0",
+    "official_archive": "4d2bdb7444c785705e494c3d49cad8500af25a8a",
+    "official_checkpoint": "0f5dc88d5d8624f0d57d892a5bdec022cc0363ec",
+    "recovery_duplicate_copies_removed": true
+  }
 }
