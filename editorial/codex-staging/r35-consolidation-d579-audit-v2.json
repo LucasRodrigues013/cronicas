@@ -1,0 +1,1065 @@
+{
+  "schema": "worldroot-r35-codex-consolidation-audit-v1",
+  "date": "2026-11-26",
+  "scope": "PRIVATE_EDITORIAL_STAGING_NO_CANON_PROMOTION",
+  "head": {
+    "day": 579,
+    "sequence": 50,
+    "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+  },
+  "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+  "counts": {
+    "records": 174,
+    "characters": 81,
+    "spell_proposals": 1020,
+    "species_design": 14,
+    "records_without_history_prior_or_asset_reference": 85,
+    "field_stats": {
+      "identity": {
+        "filled": 81,
+        "unknown": 0,
+        "statuses": {
+          "STAGING_IDENTITY": 81
+        }
+      },
+      "species": {
+        "filled": 4,
+        "unknown": 77,
+        "statuses": {
+          "HISTORICAL_R26_REVIEW": 4,
+          "UNKNOWN": 77
+        }
+      },
+      "lineage": {
+        "filled": 0,
+        "unknown": 81,
+        "statuses": {
+          "UNKNOWN": 81
+        }
+      },
+      "origin": {
+        "filled": 0,
+        "unknown": 81,
+        "statuses": {
+          "UNKNOWN": 81
+        }
+      },
+      "age_chronological": {
+        "filled": 0,
+        "unknown": 81,
+        "statuses": {
+          "UNKNOWN": 81
+        }
+      },
+      "age_biological": {
+        "filled": 17,
+        "unknown": 64,
+        "statuses": {
+          "UNKNOWN": 61,
+          "AUTHOR_DEFINED_D580_DESIGN": 17,
+          "NOT_ESTABLISHED_OR_APPLICABLE": 3
+        }
+      },
+      "age_apparent": {
+        "filled": 16,
+        "unknown": 65,
+        "statuses": {
+          "UNKNOWN": 65,
+          "PROSPECTIVE_GENERATED_DESIGN": 16
+        }
+      },
+      "age_experiential": {
+        "filled": 0,
+        "unknown": 81,
+        "statuses": {
+          "UNKNOWN": 81
+        }
+      },
+      "height_cm": {
+        "filled": 25,
+        "unknown": 56,
+        "statuses": {
+          "UNKNOWN": 56,
+          "EXISTING_PROSPECTIVE_VISUAL_DESIGN": 19,
+          "PROSPECTIVE_GENERATED_DESIGN": 6
+        }
+      },
+      "mass_kg": {
+        "filled": 0,
+        "unknown": 81,
+        "statuses": {
+          "UNKNOWN": 81
+        }
+      },
+      "body": {
+        "filled": 21,
+        "unknown": 60,
+        "statuses": {
+          "UNKNOWN": 60,
+          "EXISTING_PROSPECTIVE_VISUAL_DESIGN": 21
+        }
+      },
+      "face": {
+        "filled": 21,
+        "unknown": 60,
+        "statuses": {
+          "UNKNOWN": 60,
+          "EXISTING_PROSPECTIVE_VISUAL_DESIGN": 21
+        }
+      },
+      "hair": {
+        "filled": 22,
+        "unknown": 59,
+        "statuses": {
+          "UNKNOWN": 59,
+          "EXISTING_PROSPECTIVE_VISUAL_DESIGN": 21,
+          "HISTORICAL_LITERAL_REVIEW": 1
+        }
+      },
+      "eyes": {
+        "filled": 22,
+        "unknown": 59,
+        "statuses": {
+          "UNKNOWN": 59,
+          "EXISTING_PROSPECTIVE_VISUAL_DESIGN": 21,
+          "HISTORICAL_LITERAL_REVIEW": 1
+        }
+      },
+      "skin": {
+        "filled": 21,
+        "unknown": 60,
+        "statuses": {
+          "UNKNOWN": 60,
+          "EXISTING_PROSPECTIVE_VISUAL_DESIGN": 21
+        }
+      },
+      "voice": {
+        "filled": 14,
+        "unknown": 67,
+        "statuses": {
+          "PROSPECTIVE_DIRECTION": 14,
+          "UNKNOWN": 67
+        }
+      },
+      "gestures": {
+        "filled": 0,
+        "unknown": 81,
+        "statuses": {
+          "UNKNOWN": 81
+        }
+      },
+      "wardrobe": {
+        "filled": 21,
+        "unknown": 60,
+        "statuses": {
+          "UNKNOWN": 60,
+          "EXISTING_PROSPECTIVE_VISUAL_DESIGN": 21
+        }
+      },
+      "occupation": {
+        "filled": 30,
+        "unknown": 51,
+        "statuses": {
+          "LEGACY_SUMMARY_REVIEW": 21,
+          "UNKNOWN": 51,
+          "PROPOSED_OR_HISTORICAL_REVIEW": 9
+        }
+      },
+      "roles": {
+        "filled": 0,
+        "unknown": 81,
+        "statuses": {
+          "UNKNOWN": 81
+        }
+      },
+      "languages": {
+        "filled": 0,
+        "unknown": 81,
+        "statuses": {
+          "UNKNOWN": 81
+        }
+      },
+      "attributes": {
+        "filled": 0,
+        "unknown": 81,
+        "statuses": {
+          "UNKNOWN": 81
+        }
+      },
+      "skills": {
+        "filled": 0,
+        "unknown": 81,
+        "statuses": {
+          "UNKNOWN": 81
+        }
+      },
+      "proficiencies": {
+        "filled": 0,
+        "unknown": 81,
+        "statuses": {
+          "UNKNOWN": 81
+        }
+      },
+      "combat_style": {
+        "filled": 0,
+        "unknown": 81,
+        "statuses": {
+          "UNKNOWN": 81
+        }
+      },
+      "magic_repertoire": {
+        "filled": 1,
+        "unknown": 80,
+        "statuses": {
+          "UNKNOWN": 80,
+          "CANON_DEMONSTRATED_WITH_LITERAL_EVIDENCE": 1
+        }
+      },
+      "equipment": {
+        "filled": 0,
+        "unknown": 81,
+        "statuses": {
+          "UNKNOWN": 81
+        }
+      },
+      "inventory": {
+        "filled": 0,
+        "unknown": 81,
+        "statuses": {
+          "UNKNOWN": 81
+        }
+      },
+      "condition": {
+        "filled": 0,
+        "unknown": 81,
+        "statuses": {
+          "UNKNOWN": 81
+        }
+      },
+      "relationships": {
+        "filled": 0,
+        "unknown": 81,
+        "statuses": {
+          "UNKNOWN": 81
+        }
+      },
+      "goals": {
+        "filled": 0,
+        "unknown": 81,
+        "statuses": {
+          "UNKNOWN": 81
+        }
+      },
+      "values": {
+        "filled": 0,
+        "unknown": 81,
+        "statuses": {
+          "UNKNOWN": 81
+        }
+      },
+      "contradictions": {
+        "filled": 0,
+        "unknown": 81,
+        "statuses": {
+          "UNKNOWN": 81
+        }
+      },
+      "fears": {
+        "filled": 0,
+        "unknown": 81,
+        "statuses": {
+          "UNKNOWN": 81
+        }
+      },
+      "preferences": {
+        "filled": 0,
+        "unknown": 81,
+        "statuses": {
+          "UNKNOWN": 81
+        }
+      },
+      "knowledge": {
+        "filled": 0,
+        "unknown": 81,
+        "statuses": {
+          "UNKNOWN": 81
+        }
+      },
+      "location": {
+        "filled": 0,
+        "unknown": 81,
+        "statuses": {
+          "UNKNOWN": 81
+        }
+      },
+      "journey": {
+        "filled": 0,
+        "unknown": 81,
+        "statuses": {
+          "UNKNOWN": 81
+        }
+      },
+      "history": {
+        "filled": 0,
+        "unknown": 81,
+        "statuses": {
+          "UNKNOWN": 81
+        }
+      },
+      "visual_refs": {
+        "filled": 0,
+        "unknown": 81,
+        "statuses": {
+          "UNKNOWN": 81
+        }
+      },
+      "bust": {
+        "filled": 1,
+        "unknown": 0,
+        "statuses": {
+          "AUTHOR_APPROVED_VISUAL_DIRECTION_PROSPECTIVE": 1
+        }
+      }
+    },
+    "alias_collisions": [
+      [
+        "campo aurora",
+        [
+          "base-aurora",
+          "campo-aurora"
+        ]
+      ],
+      [
+        "asa livre",
+        [
+          "asa-livre",
+          "plot:asa"
+        ]
+      ],
+      [
+        "horizonte de ferro arcano",
+        [
+          "ferro-horizonte",
+          "plot:ferro"
+        ]
+      ],
+      [
+        "coracao de convergencia",
+        [
+          "coracao-aerun",
+          "plot:coracao"
+        ]
+      ],
+      [
+        "coracao de aerun",
+        [
+          "coracao-aerun",
+          "plot:coracao"
+        ]
+      ],
+      [
+        "seron",
+        [
+          "seron",
+          "plot:ithran"
+        ]
+      ],
+      [
+        "talis",
+        [
+          "talis",
+          "plot:talis"
+        ]
+      ],
+      [
+        "tharvek",
+        [
+          "tharvek",
+          "plot:seis-marcas"
+        ]
+      ],
+      [
+        "bressa",
+        [
+          "bressa",
+          "plot:seis-marcas"
+        ]
+      ],
+      [
+        "niraven",
+        [
+          "niraven",
+          "plot:nira"
+        ]
+      ],
+      [
+        "virandor",
+        [
+          "virandor",
+          "plot:nira"
+        ]
+      ],
+      [
+        "velkar",
+        [
+          "velkar",
+          "plot:velkar"
+        ]
+      ],
+      [
+        "varkhess",
+        [
+          "varkhess",
+          "plot:mar"
+        ]
+      ],
+      [
+        "ithran",
+        [
+          "ithran",
+          "plot:ithran"
+        ]
+      ],
+      [
+        "nelo",
+        [
+          "nelo",
+          "plot:ithran"
+        ]
+      ],
+      [
+        "aerun",
+        [
+          "aerun-instituto",
+          "aerun-guardiao"
+        ]
+      ],
+      [
+        "halvern",
+        [
+          "halvern-region",
+          "plot:halvern",
+          "plot:conferencia"
+        ]
+      ],
+      [
+        "renshar",
+        [
+          "renshar",
+          "plot:velkar"
+        ]
+      ],
+      [
+        "serevan",
+        [
+          "serevan",
+          "plot:mar"
+        ]
+      ],
+      [
+        "ordan",
+        [
+          "ordan",
+          "plot:halvern"
+        ]
+      ]
+    ],
+    "queue_stats": {
+      "existing_records": 136,
+      "seed_missing": 8,
+      "new_provisional_candidates": 23,
+      "total_review_rows": 167,
+      "source_attachment_observations": 56,
+      "prior_literal_observations": 34,
+      "queue_rows": 1747,
+      "queue_classes": {
+        "RESOLVE_BY_ENTITY_DOMAIN_AND_CONTEXT": 20,
+        "MATCH_CANDIDATE_REVIEW": 19,
+        "STRUCTURAL_LABEL_CANDIDATE": 132,
+        "NEEDS_CONTEXT": 1551,
+        "GENERIC_ROLE_NOT_GLOBAL_ID": 25
+      },
+      "visual_inspected": 18,
+      "visual_total": 92,
+      "candidate_contexts_not_reviewed": 9229,
+      "production_integration": false,
+      "structural_checks": {
+        "unique_ids": true,
+        "domain_membership": true,
+        "observations_have_attachment_episode_literal": true,
+        "all_queue_rows_preserved": true,
+        "all_prior_observations_preserved": true,
+        "no_canon_promotion": true,
+        "all_ten_domains_represented": true
+      }
+    }
+  },
+  "evidence_readback": {
+    "status": "27_EXACT_LINE_MATCHES",
+    "source_blobs": [
+      "7c01d3a2bebc056d3a6e41fb212f49128374b8dc",
+      "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+      "75906d2b8a2a780b530d8de07162f3d361e6886c",
+      "5c124e64906280891d55b0b8df8fdc8f2dbeb370",
+      "f0c2cb92e17a5b066392077187f009036fd29069",
+      "3449845d3854daa62af01333e4efd1a2c615b6a4",
+      "c85fce532302ad2852a383263c91bd30d407804b",
+      "dd2a5c918350a8a6549818b0c4ede19c7cf8c7dd",
+      "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+      "144cf93dc9b5b35f43de5930b26173b30152e5fd"
+    ],
+    "entries": [
+      {
+        "id": "item:lira-caderno-d305",
+        "field": "item_history",
+        "day": 305,
+        "blob": "7c01d3a2bebc056d3a6e41fb212f49128374b8dc",
+        "episode": "LEGACY-D305",
+        "line_start": 3118,
+        "line_end": 3138,
+        "status": "EXACT_LINE_MATCH"
+      },
+      {
+        "id": "item:lira-caderno-d305",
+        "field": "item_history",
+        "day": 305,
+        "blob": "7c01d3a2bebc056d3a6e41fb212f49128374b8dc",
+        "episode": "LEGACY-D305",
+        "line_start": 3164,
+        "line_end": 3176,
+        "status": "EXACT_LINE_MATCH"
+      },
+      {
+        "id": "item:lira-caderno-d305",
+        "field": "item_history",
+        "day": 309,
+        "blob": "7c01d3a2bebc056d3a6e41fb212f49128374b8dc",
+        "episode": "LEGACY-D309",
+        "line_start": 4902,
+        "line_end": 4932,
+        "status": "EXACT_LINE_MATCH"
+      },
+      {
+        "id": "item:vareth-placa-d253",
+        "field": "item_history",
+        "day": 253,
+        "blob": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "episode": "LEGACY-D253",
+        "line_start": 33111,
+        "line_end": 33141,
+        "status": "EXACT_LINE_MATCH"
+      },
+      {
+        "id": "item:iana-placa-d240",
+        "field": "item_history",
+        "day": 240,
+        "blob": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "episode": "LEGACY-D240",
+        "line_start": 24669,
+        "line_end": 24697,
+        "status": "EXACT_LINE_MATCH"
+      },
+      {
+        "id": "item:desenho-calderva-d366",
+        "field": "item_history",
+        "day": 366,
+        "blob": "7c01d3a2bebc056d3a6e41fb212f49128374b8dc",
+        "episode": "LEGACY-D366",
+        "line_start": 19196,
+        "line_end": 19244,
+        "status": "EXACT_LINE_MATCH"
+      },
+      {
+        "id": "item:caedren-bone-d393",
+        "field": "item_history",
+        "day": 393,
+        "blob": "75906d2b8a2a780b530d8de07162f3d361e6886c",
+        "episode": "LEGACY-D393",
+        "line_start": 21149,
+        "line_end": 21161,
+        "status": "EXACT_LINE_MATCH"
+      },
+      {
+        "id": "item:caedren-espada-observada",
+        "field": "item_history",
+        "day": 561,
+        "blob": "5c124e64906280891d55b0b8df8fdc8f2dbeb370",
+        "episode": "LVI-C05-PIII-D561-AUTHOR-SOURCE",
+        "line_start": 2131,
+        "line_end": 2131,
+        "status": "EXACT_LINE_MATCH"
+      },
+      {
+        "id": "item:argos-gravetos-d579",
+        "field": "item_history",
+        "day": 579,
+        "blob": "f0c2cb92e17a5b066392077187f009036fd29069",
+        "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "line_start": 1873,
+        "line_end": 1909,
+        "status": "EXACT_LINE_MATCH"
+      },
+      {
+        "id": "item:argos-gravetos-d579",
+        "field": "item_history",
+        "day": 579,
+        "blob": "f0c2cb92e17a5b066392077187f009036fd29069",
+        "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "line_start": 2005,
+        "line_end": 2029,
+        "status": "EXACT_LINE_MATCH"
+      },
+      {
+        "id": "item:argos-gravetos-d579",
+        "field": "item_history",
+        "day": 579,
+        "blob": "f0c2cb92e17a5b066392077187f009036fd29069",
+        "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "line_start": 2095,
+        "line_end": 2109,
+        "status": "EXACT_LINE_MATCH"
+      },
+      {
+        "id": "item:argos-gravetos-d579",
+        "field": "item_history",
+        "day": 579,
+        "blob": "f0c2cb92e17a5b066392077187f009036fd29069",
+        "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "line_start": 2261,
+        "line_end": 2281,
+        "status": "EXACT_LINE_MATCH"
+      },
+      {
+        "id": "kairon",
+        "field": "height_lower_bound_cm",
+        "day": 151,
+        "blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+        "episode": "LEGACY-D151",
+        "line_start": 39363,
+        "line_end": 39373,
+        "status": "EXACT_LINE_MATCH"
+      },
+      {
+        "id": "kairon",
+        "field": "seat_compatibility",
+        "day": 151,
+        "blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+        "episode": "LEGACY-D151",
+        "line_start": 39375,
+        "line_end": 39399,
+        "status": "EXACT_LINE_MATCH"
+      },
+      {
+        "id": "kairon",
+        "field": "physical_strength",
+        "day": 151,
+        "blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+        "episode": "LEGACY-D151",
+        "line_start": 39833,
+        "line_end": 39855,
+        "status": "EXACT_LINE_MATCH"
+      },
+      {
+        "id": "kairon",
+        "field": "physical_strength",
+        "day": 151,
+        "blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+        "episode": "LEGACY-D151",
+        "line_start": 39871,
+        "line_end": 39885,
+        "status": "EXACT_LINE_MATCH"
+      },
+      {
+        "id": "cirn",
+        "field": "combat_technique",
+        "day": 151,
+        "blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+        "episode": "LEGACY-D151",
+        "line_start": 39755,
+        "line_end": 39771,
+        "status": "EXACT_LINE_MATCH"
+      },
+      {
+        "id": "cirn",
+        "field": "combat_technique",
+        "day": 151,
+        "blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+        "episode": "LEGACY-D151",
+        "line_start": 39873,
+        "line_end": 39881,
+        "status": "EXACT_LINE_MATCH"
+      },
+      {
+        "id": "varo",
+        "field": "command",
+        "day": 151,
+        "blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+        "episode": "LEGACY-D151",
+        "line_start": 39873,
+        "line_end": 39881,
+        "status": "EXACT_LINE_MATCH"
+      },
+      {
+        "id": "caedren",
+        "field": "physical_strength",
+        "day": 526,
+        "blob": "c85fce532302ad2852a383263c91bd30d407804b",
+        "episode": "LEGACY-D526",
+        "line_start": 92671,
+        "line_end": 92701,
+        "status": "EXACT_LINE_MATCH"
+      },
+      {
+        "id": "caedren",
+        "field": "physical_strength",
+        "day": 526,
+        "blob": "c85fce532302ad2852a383263c91bd30d407804b",
+        "episode": "LEGACY-D526",
+        "line_start": 92723,
+        "line_end": 92733,
+        "status": "EXACT_LINE_MATCH"
+      },
+      {
+        "id": "thaeron",
+        "field": "demonstrated_capability",
+        "day": 560,
+        "blob": "dd2a5c918350a8a6549818b0c4ede19c7cf8c7dd",
+        "episode": "LVI-C05-PII-D560-AUTHOR-SOURCE",
+        "line_start": 942,
+        "line_end": 954,
+        "status": "EXACT_LINE_MATCH"
+      },
+      {
+        "id": "lucas",
+        "field": "age_historical",
+        "day": 227,
+        "blob": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "episode": "LEGACY-D227",
+        "line_start": 18142,
+        "line_end": 18154,
+        "status": "EXACT_LINE_MATCH"
+      },
+      {
+        "id": "lucas",
+        "field": "figurative_gift",
+        "day": 215,
+        "blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "episode": "LEGACY-D215",
+        "line_start": 45474,
+        "line_end": 45492,
+        "status": "EXACT_LINE_MATCH"
+      },
+      {
+        "id": "argos",
+        "field": "external_dimensions",
+        "day": 557,
+        "blob": "144cf93dc9b5b35f43de5930b26173b30152e5fd",
+        "episode": "LVI-C04-PIV-D557-AUTHOR-SOURCE",
+        "line_start": 51,
+        "line_end": 51,
+        "status": "EXACT_LINE_MATCH"
+      },
+      {
+        "id": "argos",
+        "field": "external_dimensions",
+        "day": 557,
+        "blob": "144cf93dc9b5b35f43de5930b26173b30152e5fd",
+        "episode": "LVI-C04-PIV-D557-AUTHOR-SOURCE",
+        "line_start": 271,
+        "line_end": 273,
+        "status": "EXACT_LINE_MATCH"
+      },
+      {
+        "id": "argos",
+        "field": "external_dimensions",
+        "day": 557,
+        "blob": "144cf93dc9b5b35f43de5930b26173b30152e5fd",
+        "episode": "LVI-C04-PIV-D557-AUTHOR-SOURCE",
+        "line_start": 755,
+        "line_end": 757,
+        "status": "EXACT_LINE_MATCH"
+      }
+    ],
+    "semantic_note": "Literal matching validates provenance, not all semantic attributions or contemporary state."
+  },
+  "recovery_candidates": [
+    {
+      "id": "torre-criador",
+      "field": "dimensions_at_creation",
+      "value": {
+        "height_m": 145,
+        "floors": 22,
+        "basements": 3,
+        "internal_area_m2": 31000
+      },
+      "scope": "WORLD",
+      "status": "SOURCE_READBACK_CANDIDATE_PENDING_FIELD_RECONCILIATION",
+      "evidence": {
+        "episode": "LVI-C01-PV-D541-AUTHOR-SOURCE",
+        "path": "episodes/LVI-C01-PV-D541-AUTHOR-SOURCE/draft/episode_draft.json",
+        "blob": "0ad779c450a5244d9dc4190e90e246234d8e529d",
+        "closure_sha256": "b669361e6490c9adfd789f9dac43e4f106ef08f05514693a21d0f4779671e5ff",
+        "line_start": 491,
+        "line_end": 497,
+        "anchor": "**Cento e quarenta e cinco metros.**\n\n**Vinte e dois pavimentos.**\n\n**Três subsolos.**\n\n**Trinta e um mil metros quadrados internos.**"
+      }
+    },
+    {
+      "id": "torre-criador",
+      "field": "aerodock_initial_state",
+      "value": {
+        "diameter_m": 70,
+        "landing_confirmed": false,
+        "status": "testing"
+      },
+      "scope": "WORLD",
+      "status": "SOURCE_READBACK_CANDIDATE_PENDING_FIELD_RECONCILIATION",
+      "evidence": {
+        "episode": "LVI-C01-PV-D541-AUTHOR-SOURCE",
+        "path": "episodes/LVI-C01-PV-D541-AUTHOR-SOURCE/draft/episode_draft.json",
+        "blob": "0ad779c450a5244d9dc4190e90e246234d8e529d",
+        "closure_sha256": "b669361e6490c9adfd789f9dac43e4f106ef08f05514693a21d0f4779671e5ff",
+        "line_start": 481,
+        "line_end": 481,
+        "anchor": "A oeste, um disco externo de setenta metros de diâmetro se estendeu por uma estrutura própria de sustentação: a **Aerodoca do Impossível**. Não era o deck social, nem uma pista pública, nem um pouso já realizado. Seus balizamentos permaneceram em estado de ensaio, à espera de verificação futura com Naira e a equipe de ARGOS."
+      }
+    },
+    {
+      "id": "torre-criador",
+      "field": "social_deck_area_m2",
+      "value": 550,
+      "scope": "WORLD",
+      "status": "SOURCE_READBACK_CANDIDATE_PENDING_FIELD_RECONCILIATION",
+      "evidence": {
+        "episode": "LVI-C01-PV-D541-AUTHOR-SOURCE",
+        "path": "episodes/LVI-C01-PV-D541-AUTHOR-SOURCE/draft/episode_draft.json",
+        "blob": "0ad779c450a5244d9dc4190e90e246234d8e529d",
+        "closure_sha256": "b669361e6490c9adfd789f9dac43e4f106ef08f05514693a21d0f4779671e5ff",
+        "line_start": 483,
+        "line_end": 483,
+        "anchor": "Mais abaixo, um deck paisagístico aberto de quinhentos e cinquenta metros quadrados abraçou a fachada, separado da área de operação aeronáutica."
+      }
+    },
+    {
+      "id": "torre-criador",
+      "field": "private_automata_created",
+      "value": 96,
+      "scope": "WORLD",
+      "status": "SOURCE_READBACK_CANDIDATE_PENDING_FIELD_RECONCILIATION",
+      "evidence": {
+        "episode": "LVI-C01-PV-D541-AUTHOR-SOURCE",
+        "path": "episodes/LVI-C01-PV-D541-AUTHOR-SOURCE/draft/episode_draft.json",
+        "blob": "0ad779c450a5244d9dc4190e90e246234d8e529d",
+        "closure_sha256": "b669361e6490c9adfd789f9dac43e4f106ef08f05514693a21d0f4779671e5ff",
+        "line_start": 1101,
+        "line_end": 1101,
+        "anchor": "Desta vez, não houve uma torre inteira emergindo do solo. Noventa e seis autômatos físicos especializados nasceram em seus espaços de manutenção: mensageiros de recepção, unidades de limpeza, reparadores, manipuladores de oficina, auxiliares de logística, arquivistas, jardineiros, apoios de saúde não clínicos, sentinelas de evacuação e guias de aerodoca."
+      }
+    },
+    {
+      "id": "renshar",
+      "field": "conquest_report_received",
+      "value": {
+        "fall_day": 567,
+        "reported_by": "lysa",
+        "sovereign_presence": "indirect reports"
+      },
+      "scope": "CHARACTER_KNOWLEDGE_NOT_WORLD_OMNISCIENCE",
+      "status": "SOURCE_READBACK_CANDIDATE_PENDING_FIELD_RECONCILIATION",
+      "evidence": {
+        "episode": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+        "path": "episodes/LVI-C07-PV-D573-AUTHOR-SOURCE/draft/episode_draft.json",
+        "blob": "c58b5bb35332aa22e8265bb5a7ca5d86550bf139",
+        "closure_sha256": "aa2efa60b399a48742acf837cacb46b616574f5945fee9afdafa183bccf72646",
+        "line_start": 64,
+        "line_end": 64,
+        "anchor": "**LYSA —** Temos confirmação de uma conquista. Renshar caiu no Dia 567. Testemunhas viram soldados do Dominato, portões destruídos e novas ordens de cobrança. Há relatos indiretos da presença pessoal do soberano imperial."
+      }
+    },
+    {
+      "id": "varo",
+      "field": "knowledge_at_d573",
+      "value": {
+        "ruler_name_received": true,
+        "forces_map_reliable": false,
+        "campaign_extent_known": false
+      },
+      "scope": "CHARACTER_KNOWLEDGE_NOT_WORLD_OMNISCIENCE",
+      "status": "SOURCE_READBACK_CANDIDATE_PENDING_FIELD_RECONCILIATION",
+      "evidence": {
+        "episode": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+        "path": "episodes/LVI-C07-PV-D573-AUTHOR-SOURCE/draft/episode_draft.json",
+        "blob": "c58b5bb35332aa22e8265bb5a7ca5d86550bf139",
+        "closure_sha256": "aa2efa60b399a48742acf837cacb46b616574f5945fee9afdafa183bccf72646",
+        "line_start": 76,
+        "line_end": 76,
+        "anchor": "**VARO —** É a primeira informação nominal que recebemos sobre quem governa o Dominato. Ainda não temos um mapa confiável de suas forças, nem a extensão da campanha."
+      }
+    },
+    {
+      "id": "astra",
+      "field": "role_at_d579",
+      "value": "vice-diretora do Instituto",
+      "scope": "WORLD",
+      "status": "SOURCE_READBACK_CANDIDATE_PENDING_FIELD_RECONCILIATION",
+      "evidence": {
+        "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "path": "episodes/LVI-C09-PI-D579-AUTHOR-SOURCE/draft/episode_draft.json",
+        "blob": "f0c2cb92e17a5b066392077187f009036fd29069",
+        "closure_sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926",
+        "line_start": 1167,
+        "line_end": 1175,
+        "anchor": "Ilva anotou um desenho para Astra.\n\nUma roupa dela.\n\nNão da vice-diretora do Instituto.\n\nNão da delegação.\n\nDela."
+      }
+    },
+    {
+      "id": "aerun-instituto",
+      "field": "session_and_cooperation",
+      "value": {
+        "first_work_session_after_opening": true,
+        "agreement_in_force": true,
+        "first_shipment_departed": true
+      },
+      "scope": "WORLD",
+      "status": "SOURCE_READBACK_CANDIDATE_PENDING_FIELD_RECONCILIATION",
+      "evidence": {
+        "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "path": "episodes/LVI-C09-PI-D579-AUTHOR-SOURCE/draft/episode_draft.json",
+        "blob": "f0c2cb92e17a5b066392077187f009036fd29069",
+        "closure_sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926",
+        "line_start": 1179,
+        "line_end": 1185,
+        "anchor": "**DIA 579 · 14h02 — AERÚN, AUDITÓRIO DAS NAÇÕES**\n\nQuando Miren e Astra voltaram ao Instituto, a primeira sessão de trabalho posterior à abertura já reunia profissionais dos serviços civis e representantes locais.\n\nKael estava junto à mesa central.\n\nO acordo do dia anterior não era mais uma proposta aguardando aprovação. O primeiro carregamento sob sua vigência havia partido, e os responsáveis pelos serviços discutiam os pedidos que seriam atendidos nas próximas viagens."
+      }
+    },
+    {
+      "id": "lysa",
+      "field": "letter_information_boundary",
+      "value": "custódia civil comunicada por canais apropriados; conteúdo e identidade da destinatária não públicos",
+      "scope": "PRIVATE_BOUNDARY",
+      "status": "SOURCE_READBACK_CANDIDATE_PENDING_FIELD_RECONCILIATION",
+      "evidence": {
+        "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "path": "episodes/LVI-C09-PI-D579-AUTHOR-SOURCE/draft/episode_draft.json",
+        "blob": "f0c2cb92e17a5b066392077187f009036fd29069",
+        "closure_sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926",
+        "line_start": 2007,
+        "line_end": 2007,
+        "anchor": "Os operadores receberam os materiais retornados, e Lysa encaminhou a confirmação das entregas, a cópia dos registros de cooperação e a informação sobre a custódia civil da carta pelos canais apropriados. O conteúdo do envelope e a identidade da destinatária não entraram na comunicação pública."
+      }
+    },
+    {
+      "id": "item:argos-gravetos-d579",
+      "field": "last_observed_storage",
+      "value": "prateleira perto da maquete da ponte, Torre do Criador",
+      "scope": "WORLD",
+      "status": "SOURCE_READBACK_CANDIDATE_PENDING_FIELD_RECONCILIATION",
+      "evidence": {
+        "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "path": "episodes/LVI-C09-PI-D579-AUTHOR-SOURCE/draft/episode_draft.json",
+        "blob": "f0c2cb92e17a5b066392077187f009036fd29069",
+        "closure_sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926",
+        "line_start": 2261,
+        "line_end": 2263,
+        "anchor": "**DIA 579 · 23h02 — TORRE DO CRIADOR**\n\nLucas colocou a pequena aeronave de gravetos sobre a prateleira, perto da maquete da ponte."
+      }
+    },
+    {
+      "id": "PENDING_D580",
+      "field": "olhos_criador",
+      "value": {
+        "units": 6,
+        "equivalent_baseline": true,
+        "designated": [
+          "Lucas",
+          "Miren",
+          "Astra",
+          "Varo",
+          "Kael",
+          "Lysa"
+        ]
+      },
+      "scope": "DRAFT_ONLY",
+      "status": "DRAFT_ONLY_NOT_CANON",
+      "evidence": {
+        "episode": "LVI-C09-PII-D580-AUTHOR-SOURCE",
+        "path": "episodes/LVI-C09-PII-D580-AUTHOR-SOURCE/draft/episode_draft.json",
+        "blob": "54b8b5a8bfc58eb71e5afec9abdb915142e55f5d",
+        "closure_sha256": null,
+        "line_start": 301,
+        "line_end": 315,
+        "anchor": "Lucas estendeu a mão esquerda.\n\nCinco outros pares nasceram ao redor do primeiro.\n\nNão eram cópias inferiores.\n\nNão havia uma versão mais poderosa reservada ao Criador.\n\nSeis armações iguais, seis conjuntos equivalentes de sensores, processamento, energia, armazenamento e conectividade. Cada uma poderia ser ajustada ao usuário e ao perfil de visualização desejado, sem alterar a capacidade básica.\n\nMiren aproximou-se.\n\n**MIREN —** Você fez seis.\n\n**LUCAS —** Um meu, um seu, um da Astra, um do Varo, um do Kael e um da Lysa."
+      }
+    },
+    {
+      "id": "PENDING_D580",
+      "field": "arcane_computers",
+      "value": {
+        "distributed_intended": 96,
+        "reserve": 12,
+        "total": 108
+      },
+      "scope": "DRAFT_ONLY",
+      "status": "DRAFT_ONLY_NOT_CANON",
+      "evidence": {
+        "episode": "LVI-C09-PII-D580-AUTHOR-SOURCE",
+        "path": "episodes/LVI-C09-PII-D580-AUTHOR-SOURCE/draft/episode_draft.json",
+        "blob": "54b8b5a8bfc58eb71e5afec9abdb915142e55f5d",
+        "closure_sha256": null,
+        "line_start": 663,
+        "line_end": 663,
+        "anchor": "A distribuição dos computadores avançou ao longo daquela manhã. Lucas criou noventa e seis terminais destinados aos pedidos identificados naquele primeiro levantamento, mais doze unidades de reserva para necessidades posteriores. Os responsáveis de cada setor assumiram a guarda e a instalação dos seus equipamentos."
+      }
+    },
+    {
+      "id": "PENDING_D580",
+      "field": "local_link",
+      "value": {
+        "two_terminals": true,
+        "local_only": true,
+        "disconnect_cache_flag": true
+      },
+      "scope": "DRAFT_ONLY",
+      "status": "DRAFT_ONLY_NOT_CANON",
+      "evidence": {
+        "episode": "LVI-C09-PII-D580-AUTHOR-SOURCE",
+        "path": "episodes/LVI-C09-PII-D580-AUTHOR-SOURCE/draft/episode_draft.json",
+        "blob": "54b8b5a8bfc58eb71e5afec9abdb915142e55f5d",
+        "closure_sha256": null,
+        "line_start": 1763,
+        "line_end": 1785,
+        "anchor": "Os responsáveis do Instituto autorizaram uma ligação de demonstração entre dois terminais próximos, utilizando um pequeno trecho de condutor cristalino instalado em uma canaleta existente. Nenhum setor de contenção do AERÚN seria conectado ao ensaio.\n\nGÊNESE manifestou o condutor e dois módulos de comunicação.\n\nDorek examinou as conexões.\n\nRumo ajudou voluntariamente na verificação da resposta.\n\nAstra criou um registro de exercício no primeiro terminal. Adela recebeu-o no segundo, alterou uma dimensão de teste e enviou a nova versão com a identificação de origem.\n\nLysa olhou para os dois visores.\n\nA atualização chegou em ambos sem que alguém transportasse uma folha.\n\nLucas retirou um dos módulos da conexão.\n\nO segundo terminal manteve a cópia armazenada e informou que a atualização não podia mais ser confirmada.\n\n**LYSA —** Isso é muito melhor do que simplesmente apagar a informação.\n\nAstra restabeleceu a ligação.\n\nO registro atualizado voltou a circular."
+      }
+    }
+  ],
+  "author_questions": {
+    "unresolved_numeric_age_ids": [
+      "talis",
+      "elyrien",
+      "avelna",
+      "enna"
+    ],
+    "do_not_repeat_approved_ages": true,
+    "other_approval_only_if_no_source": [
+      "Lucas exact current fictional age",
+      "prospective physical dimensions of central characters",
+      "authority for new world regions and lore",
+      "non-canonical spell catalog activation policy"
+    ]
+  },
+  "remaining": [
+    "Certify 9229 contexts individually; review remaining visual references; resolve 20 aliases in context; reconcile 23 provisional identities and four legacy profiles; populate character fields without inventions; integrate evidence-bound physical measurements; add scope-separated historical states and field-specific resolution checks; private close/replay/restore and deployment; Drive backup status remains legacy; do not close D580 for testing."
+  ],
+  "engine_pr": 74,
+  "engine_first_pass": {
+    "commit": "028673deffb18ca22944c1b096d447d8d5716017",
+    "tests": 629,
+    "run": 45870291400
+  },
+  "engine_second_pass": {
+    "commit": "a95af4cbf2ca0aa3f857471d92400aea766cdedf",
+    "status": "CI_PENDING_AT_RECORD_CREATION"
+  },
+  "no_new_story_events": true,
+  "canon_changed": false
+}
