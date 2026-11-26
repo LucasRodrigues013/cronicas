@@ -74,6 +74,8 @@ def initialize(db):
     CREATE TABLE IF NOT EXISTS records(domain TEXT NOT NULL,id TEXT PRIMARY KEY,body TEXT NOT NULL);
     CREATE TABLE IF NOT EXISTS codex_events(event_id TEXT PRIMARY KEY, episode TEXT NOT NULL, sequence INTEGER NOT NULL, ordinal INTEGER NOT NULL, day INTEGER NOT NULL, clock TEXT, entity_id TEXT NOT NULL REFERENCES records(id), kind TEXT NOT NULL, body TEXT NOT NULL, source_sha TEXT NOT NULL, line INTEGER NOT NULL, anchor TEXT NOT NULL, UNIQUE(episode,ordinal));
     CREATE INDEX IF NOT EXISTS codex_events_entity ON codex_events(entity_id,sequence,ordinal);
+    CREATE TABLE IF NOT EXISTS codex_event_entities(event_id TEXT NOT NULL REFERENCES codex_events(event_id), entity_id TEXT NOT NULL REFERENCES records(id), role TEXT NOT NULL, PRIMARY KEY(event_id,entity_id,role));
+    CREATE INDEX IF NOT EXISTS codex_event_entities_lookup ON codex_event_entities(entity_id,event_id);
     CREATE TABLE IF NOT EXISTS codex_state(entity_id TEXT NOT NULL REFERENCES records(id), field TEXT NOT NULL, value TEXT NOT NULL, event_id TEXT NOT NULL REFERENCES codex_events(event_id), PRIMARY KEY(entity_id,field));
     CREATE TABLE IF NOT EXISTS codex_episode(episode TEXT PRIMARY KEY, sequence INTEGER NOT NULL UNIQUE, source_sha TEXT NOT NULL, delta_sha TEXT NOT NULL);
     CREATE TABLE IF NOT EXISTS codex_pending(pending_id TEXT PRIMARY KEY, entity_id TEXT REFERENCES records(id), category TEXT NOT NULL, status TEXT NOT NULL, body TEXT NOT NULL, episode TEXT NOT NULL, source_sha TEXT NOT NULL, line INTEGER NOT NULL, anchor TEXT NOT NULL, last_event TEXT REFERENCES codex_events(event_id));
@@ -129,6 +131,41 @@ def validate_delta(delta,prose,episode,day,existing_ids,spell_ids):
         if not isinstance(u,dict) or not isinstance(u.get("name"),str) or not u["name"].strip() or not isinstance(u.get("reason"),str) or not u["reason"].strip():raise ValueError("Invalid unresolved entity")
         check_anchor(prose,u["line"],u["anchor"])
     return delta
+def index_event_entities(db,event_id,event):
+    """One immutable event, reverse-indexed by every typed participant."""
+    links=[(event["entity_id"],"SUBJECT")]
+    if event.get("location_id"):
+        links.append((event["location_id"],"LOCATION"))
+    value=event.get("value")
+    if isinstance(value,dict):
+        for field,role in (("location_id","LOCATION"),("item_id","ITEM"),("target_id","TARGET"),("to_id","RECIPIENT"),("spell_id","SPELL"),("capability_id","CAPABILITY")):
+            ident=value.get(field)
+            if isinstance(ident,str) and ident:
+                if field=="spell_id" and ident=="CREATION_GENESE":ident="genese"
+                links.append((ident,role))
+    for ident,role in set(links):
+        # Legacy receipts may reference a retired special alias not represented by
+        # a record; never fabricate an entity to satisfy the projection.
+        if db.execute("SELECT 1 FROM records WHERE id=?",(ident,)).fetchone():
+            db.execute("INSERT OR IGNORE INTO codex_event_entities VALUES(?,?,?)",(event_id,ident,role))
+
+def events_for_entity(db,ident,limit=20,public=True):
+    if type(limit) is not int or not 1<=limit<=100:
+        raise ValueError("Event lookup limit must be 1..100")
+    # Scope filter precedes LIMIT so private rows cannot crowd out visible history.
+    rows=db.execute("""SELECT e.event_id,e.episode,e.day,e.clock,e.kind,e.body,e.source_sha,e.line,
+      GROUP_CONCAT(x.role) FROM codex_event_entities x JOIN codex_events e ON e.event_id=x.event_id
+      WHERE x.entity_id=? GROUP BY e.event_id ORDER BY e.sequence DESC,e.ordinal DESC""",(ident,))
+    result=[]
+    for eid,episode,day,clock,kind,raw,sha,line,roles in rows:
+        event=json.loads(raw)
+        if public and event.get("scope")!="WORLD":continue
+        result.append({"event_id":eid,"episode":episode,"day":day,"clock":clock,"kind":kind,
+                       "subject":event["entity_id"],"roles":sorted(roles.split(",")),
+                       "source_sha":sha,"line":line,"scope":event.get("scope")})
+        if len(result)>=limit:break
+    return result
+
 def current(db,entity,field):
     row=db.execute("SELECT value FROM codex_state WHERE entity_id=? AND field=?",(entity,field)).fetchone()
     return json.loads(row[0]) if row else None
@@ -177,7 +214,10 @@ def apply_delta(db,delta,prose,sequence,day,source_sha,spell_ids):
     if hashlib.sha256(prose.encode()).hexdigest()!=delta["prose_sha256"]:raise ValueError("Changed prose")
     if old:
         if old!=(sequence,source_sha,ds):raise ValueError("Changed closed Codex delta")
-        with db:save_unresolved(db,delta,source_sha)
+        with db:
+            save_unresolved(db,delta,source_sha)
+            for event_id,body in db.execute("SELECT event_id,body FROM codex_events WHERE episode=?",(episode,)):
+                index_event_entities(db,event_id,json.loads(body))
         return "IDEMPOTENT"
     latest=db.execute("SELECT MAX(sequence) FROM codex_episode").fetchone()[0]
     if latest is not None and sequence<=latest:raise ValueError("Out-of-order Codex delta")
@@ -195,6 +235,7 @@ def apply_delta(db,delta,prose,sequence,day,source_sha,spell_ids):
         for i,e in enumerate(delta["events"]):
             eid=episode+":"+str(i);subject=e["entity_id"];kind=e["kind"];v=e["value"]
             db.execute("INSERT INTO codex_events VALUES(?,?,?,?,?,?,?,?,?,?,?,?)",(eid,episode,sequence,i,e["day"],e.get("clock"),subject,kind,jsonstr(e),source_sha,e["line"],e["anchor"]))
+            index_event_entities(db,eid,e)
             if kind in ("APPEARANCE","MOVE"):
                 prior=db.execute("SELECT e.day,e.clock FROM codex_state s JOIN codex_events e ON e.event_id=s.event_id WHERE s.entity_id=? AND s.field='last_observed_location'",(subject,)).fetchone()
                 if not prior or e["day"]>prior[0] or (e["day"]==prior[0] and (not prior[1] or (e.get("clock") and e["clock"]>=prior[1]))):
@@ -424,6 +465,8 @@ def graph_candidates(root,query,entity=None):
                         pending.setdefault(ident,[]).append({"pending_id":pid,"category":category,"status":status,"episode":episode,"line":line})
                 for r in rows:
                     if pending.get(r["id"]):r["pending_review"]=pending[r["id"]]
+                    history=events_for_entity(db,r["id"])
+                    if history:r["recent_cross_domain_events"]=history
                     r["closed_state"]=states.get(r["id"],{})
                     if possessions.get(r["id"]):r["observed_inventory"]=possessions[r["id"]]
     exact=aliases(rows,query,entity)
