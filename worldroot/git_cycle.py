@@ -674,6 +674,8 @@ def close(root: Path) -> dict:
     (root / "canon" / "HEAD.json").write_bytes(canonical(new_head))
     verify_db(root, new_head)
     write_context(root, new_head)
+    from .live_codex import sync as sync_codex
+    sync_codex(root)
     return {"result": "FECHADO_GITHUB", "episode_id": episode_id,
             "sequence": new_head["sequence"], "head_sha256": sha(canonical(new_head)),
             "events": len(events), "knowledge": len(kn), "drive_changed": False}
@@ -788,6 +790,8 @@ def restore(root: Path) -> dict:
             conn.close()
     verify_db(root, target)
     write_context(root, target)
+    from .live_codex import sync as sync_codex
+    sync_codex(root)
     return {"result": "RESTORED_FROM_IMMUTABLE_JOURNAL", "sequence": target["sequence"],
             "episodes": n, "drive_changed": False}
 
