@@ -1,0 +1,79 @@
+{
+  "schema": "worldroot-r36-increment-09-audit-receipt-v1",
+  "engine_commit": "0b4a55493b45f3f7669e28f1366695e687b3e332",
+  "previous_receipt": "4d122ccdb9235529b179a65fe70afab797dc401c",
+  "editorial_decisions_commit": "c5cff807191d96e77e5e990e145eedd1ac0943ec",
+  "archive_commit": "34987b0771ec961b4a1c0c6cf203843b113dc000",
+  "main_commit": "9b34bc491275028fe32fff018b405ab94dcc5c8a",
+  "runs": {
+    "r32_previous_pass": 45891930820,
+    "r33_previous_pass": 45891930757,
+    "regression_pass": 45892736384,
+    "authority_pass": 45892736448,
+    "operational_pass": 45892736360,
+    "r32_current_in_progress": 45892736509,
+    "r33_current_in_progress": 45892736456
+  },
+  "artifact": {
+    "id": 15152880178,
+    "size": 2724156,
+    "sha256": "561e090bbe5af78006809292186dba1965959cd23e090d8b40261b33a0a7b27e",
+    "expires": "2026-12-03T20:41:03Z",
+    "files": {
+      "identity-editorial-review.json": "ae7e6c8366381abeb1efbcf04353696c3818f9f6fab9259d086a40fe8301b713",
+      "pending-field-priority.json": "c20bbbd5e5e58a45821b44c146687c57f701134876e5611aa292506e1ddae692",
+      "operational-release-gate.json": "a8092d66587a5865ba844865a17d775a0b3222ab2263fab1c925dfd8804157ef",
+      "readiness-audit.json": "d1e4833429df1b325177704f98328d5f1d7609e6d1ec57e4fa0c5ad828064c9f"
+    }
+  },
+  "metrics": {
+    "tests": 704,
+    "adversarial_review_cases_blocked": 8,
+    "public_timeline_rows_checked": 27,
+    "original_contexts": 9229,
+    "jobs": 6368,
+    "event_packets": 776,
+    "production_events": 754,
+    "pending_d580_events": 22,
+    "ledger_links_verified": 2139,
+    "identity_groups": 188,
+    "editorial_referent_candidates": 81,
+    "closed_source_candidates": 78,
+    "pending_source_candidates": 3,
+    "held_identity_groups": 107,
+    "referent_candidates_by_id": {
+      "aerun-instituto": 79,
+      "aerun-guardiao": 1,
+      "candidate:tessa-maren": 1
+    },
+    "pending_fields": 3448,
+    "pending_fields_with_exact_ledger_matches": 141,
+    "profiles_with_exact_matches": 70,
+    "field_ledger_targets": 854,
+    "field_target_source_status": {
+      "CLOSED": 538,
+      "HISTORICAL_RESPONSE_UNREVIEWED": 301,
+      "PENDING_NOT_CLOSED": 15
+    },
+    "field_proposals": 12,
+    "no_exact_match_or_proposal": 3295,
+    "policy_rules": 130,
+    "policy_blob": "615151fc89228ddb222ea01613c23e977f8c418b",
+    "main_files": 191,
+    "main_files_unchanged": 186,
+    "main_files_removed": 0,
+    "main_legacy_test_files": 56,
+    "independent_models": 0,
+    "independent_semantic_certified": 0,
+    "canon_promotions": 0
+  },
+  "decision": "HOLD_PRODUCTION",
+  "limitations": [
+    "81 editorial referent candidates reviewed by single assistant; source binding checked, no automatic event participation or independent certification. 107 held.",
+    "12 field proposals are historical candidates, not current state or canon; no fields modified. Exact ledger matches are retrieval leads only.",
+    "Local Ollama unavailable and no alternative installed model runtime; no inference performed. Private model execution requires provisioned environment or independent reviewer.",
+    "R01–R35 structural preservation and regression evidence do not individually certify all functional and literary requirements.",
+    "Full ZIP integrity checked after download; receipt is persistent, ZIP in Actions temporary."
+  ],
+  "canon_changed": false
+}
