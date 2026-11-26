@@ -1,0 +1,82 @@
+{
+  "schema": "worldroot-r36-book-ii-stage-b-checkpoint-v1",
+  "book": 2,
+  "stage": "B",
+  "status": "PARTIAL_EDITORIAL_RECONCILIATION_ARCHIVED",
+  "previous_checkpoint": "ad738bef169ba70d073b7c6df7c38189c4e9c984",
+  "review": {
+    "commit": "82dfa671e34d6cacb6405f3a5e4ae61c13234017",
+    "blob": "b36851d0e6a65f275954067d1e49d146203e6c7d"
+  },
+  "archive": {
+    "commit": "4d2bdb7444c785705e494c3d49cad8500af25a8a",
+    "manifest_blob": "40fdab7409fcb0bba3b30a967ebab581e9def972",
+    "character_overlay": "34e0986611e2a4e69569e15c72bdb06127c7973d",
+    "world_overlay": "bee8c6f4cc02a56ba8109019e5076f81865bcee6",
+    "naming_overlay": "dcbafb8333a1ac088ec494067fe468fa7fa76f0d"
+  },
+  "counts": {
+    "targets_total": 261,
+    "editorially_reviewed": 130,
+    "remaining": 131,
+    "groups_reviewed": 100,
+    "groups_total": 203,
+    "fields_changed_this_batch": 29,
+    "field_updates_cumulative": 115,
+    "existing_entities_this_batch": 24,
+    "existing_profile_count": 192,
+    "independently_certified": 0,
+    "architect_observations_this_batch": 1,
+    "author_directions_this_batch": 1,
+    "additional_observations": 2
+  },
+  "verification": {
+    "native_test_engine": "3170905db607f89004ed3d62a064dbb092922080",
+    "native_tests_passed_same_session_unchanged_engine": 705,
+    "full_suite_run_for_b004_same_session": true,
+    "native_load_overlay_before_after": true,
+    "native_naming_revalidated": 96,
+    "links": 25,
+    "ledger_anchors_exact": 11,
+    "distinct_anchor_hashes_recomputed_native": 8,
+    "complete_groups_this_batch": 8,
+    "context_comparisons": 97,
+    "context_verification_mode": "connector against verified source part",
+    "field_evidence_count": 216,
+    "all_fields": 5923,
+    "unchanged_fields": 5894,
+    "protected_fields_unchanged": 40,
+    "stable_ids": true,
+    "field_diff_exact": true,
+    "aerun_distinct": true,
+    "remote_blob_match_local_native": 4,
+    "readback": true,
+    "narrative_head_blob": "9b4e09682fc3148511d59e73ec56fdcda4e396e5",
+    "corrections_before_publish": [
+      "Brannik: linha 76779 vazia corrigida para 76778",
+      "Maelis: liberacao sanitaria prevista por etapas, nao concluida"
+    ],
+    "warnings": [
+      "ResourceWarning de SQLite na suite B004; sem falhas; motor inalterado"
+    ]
+  },
+  "next": {
+    "ledger_id": 438,
+    "global_line": 78909,
+    "stage": "B",
+    "batch": 6,
+    "base_archive": "4d2bdb7444c785705e494c3d49cad8500af25a8a",
+    "first_group": [
+      438
+    ]
+  },
+  "reservations": {
+    "independent_certification_pending": true,
+    "book_i_reservations_inherited": true,
+    "production_hold": true,
+    "canonical_head_unchanged": true,
+    "unresolved_named_identity_and_infrastructure_candidates_separately_staged": true
+  },
+  "canon_changed": false,
+  "production_activated": false
+}
