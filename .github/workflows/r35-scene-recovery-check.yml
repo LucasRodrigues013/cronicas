@@ -63,3 +63,20 @@ jobs:
       - name: Full pinned R36 regression suite
         working-directory: r36
         run: timeout --signal=TERM --kill-after=5s 60s python -u -m unittest discover -s tests -v
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: bc4a32c80da7a1138e42598dd2f050562f7c58f6
+          path: revised-archive
+          persist-credentials: false
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: e93d6da751491a571f72d8cdbbc415dd6bd74cda
+          path: revised-staging
+          persist-credentials: false
+      - name: Native author canon-first profile overlay
+        env:
+          PYTHONPATH: r36
+        run: |
+          python audit/tools/r36_book_i_author_profiles_check.py revised-archive revised-staging
+          git -C revised-archive diff --exit-code
+          git -C revised-staging diff --exit-code
