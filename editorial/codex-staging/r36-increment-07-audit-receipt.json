@@ -1,0 +1,58 @@
+{
+  "schema": "worldroot-r36-increment-07-audit-receipt-v1",
+  "engine_commit": "78f790861e1421dac243bb95f6d4972e7ba36b83",
+  "archive_commit": "34987b0771ec961b4a1c0c6cf203843b113dc000",
+  "main_commit": "9b34bc491275028fe32fff018b405ab94dcc5c8a",
+  "ledger_commit": "bbda32f2d060a188a727b88f44346832f5ce32a4",
+  "runs": {
+    "r32_prior_pass": 45890725426,
+    "r33_prior_pass": 45890725528,
+    "regression_pass": 45891353264,
+    "authority_pass": 45891353307,
+    "reconciliation_pass": 45891353284,
+    "r32_final_started": 45891353086,
+    "r33_final_started": 45891353270
+  },
+  "artifact": {
+    "id": 15150839674,
+    "expires": "2026-12-03T20:29:33Z",
+    "size": 2635970,
+    "sha256": "5a51121577297e61961e4884ee31a33646261ed848b3a2b2bf1e5ac0748fadee",
+    "files": {
+      "event-candidates.json": "ee36202fceb457799b35dc302912e02701efb87b1aa08f647c3d464c05a0c1a6",
+      "event-link-audit.json": "f50938c8a7143b2adf5c1f28eb4b5cd3d51cc2abc90674ae270e6fa16a91ca4c",
+      "event-review-packets.json": "0e6f1d2245bf87578d635bdf033f5b6d9c0d8b09a5750b7e7998563ae0d73a5f",
+      "jobs.jsonl": "d0931c2a1f525f1af5c391178af3651bb4fcc1bcdbaeea0a6835b38a5bdb34e7",
+      "metrics.json": "bcf686efac06edc58213017fb8efc09c1f46353eaffb6bc6a044efd77f2abd66"
+    }
+  },
+  "metrics": {
+    "tests": 701,
+    "original_rows": 9229,
+    "original_jobs": 6368,
+    "events": 776,
+    "production_events": 754,
+    "disposable_d580_events": 22,
+    "ledger_links_verified": 2139,
+    "events_with_ledger_and_registry": 567,
+    "events_with_registry_mentions": 209,
+    "still_open_structurally": 0,
+    "registry_mention_groups": 4751,
+    "ambiguous_groups": 577,
+    "heading_anchor_windows_corrected": 161,
+    "semantic_certified": 0,
+    "canon_promotions": 0
+  },
+  "policy": {
+    "sha": "615151fc89228ddb222ea01613c23e977f8c418b",
+    "rules": 130,
+    "sources": 34
+  },
+  "limitations": [
+    "Candidate provenance and mentions do not certify semantic roles, attribution or state.",
+    "Two independent local model digests unavailable; zero automated independent semantic judgments.",
+    "Full R01–R35 individual functional equivalence still pending.",
+    "Full artifact downloaded and checked, but this receipt is not a persistent copy of the private ZIP."
+  ],
+  "canon_changed": false
+}
