@@ -1,0 +1,4598 @@
+{
+  "schema": "worldroot-r35-book-reconciliation-staging-v2",
+  "cycle": 1,
+  "stage": "B",
+  "status": "PARTIAL_TRIAGE_NOT_HOMOLOGATED",
+  "source": {
+    "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+    "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+    "lines": [
+      1,
+      40845
+    ],
+    "narrative_days": [
+      1,
+      90
+    ],
+    "chapter_numbers": 38,
+    "raw_words": 171829,
+    "prompts": 44,
+    "responses": 44
+  },
+  "previous_blob": "18e40721147d57657e9c44440c30eb031a50e7a8",
+  "registry_blobs": {
+    "characters": "616a569d4cbf9d5ba7bb5f58c9c287581f603a61",
+    "world": "789973c2a52e72827814c612465605483deb5d4a",
+    "names": "219e980fd557d10416c0b34aa118e425d921b4fb"
+  },
+  "ledger_review": [
+    {
+      "original_id": 1,
+      "entity_id": "sistema",
+      "field": "powers",
+      "line": 17,
+      "anchor_sha256": "713ae53ecf7b9fce20ff16fa8c819b508f04ce98fb92a5ce98fe939aafc7405f",
+      "verdict": "NON_NARRATIVE",
+      "note": "Preparação metatextual, não poder de SISTEMA.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 2,
+      "entity_id": "legiao",
+      "field": "role",
+      "line": 227,
+      "anchor_sha256": "00681f87aefa2702a416c1b0deab68458ebe2a6c03722055eb354db8cdf4418d",
+      "verdict": "SUMMARY_ONLY",
+      "note": "Recapitulação do conflito e do comando; buscar a cena.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 3,
+      "entity_id": "legiao",
+      "field": "powers",
+      "line": 227,
+      "anchor_sha256": "00681f87aefa2702a416c1b0deab68458ebe2a6c03722055eb354db8cdf4418d",
+      "verdict": "NOT_ATTRIBUTED",
+      "note": "Limitação mencionada é de CREATION, não da Legião.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 4,
+      "entity_id": "legiao",
+      "field": "capabilities",
+      "line": 227,
+      "anchor_sha256": "00681f87aefa2702a416c1b0deab68458ebe2a6c03722055eb354db8cdf4418d",
+      "verdict": "SUMMARY_ONLY",
+      "note": "Vitória recapitulada, sem demonstração independente nesta linha.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 5,
+      "entity_id": "legiao",
+      "field": "appearance",
+      "line": 301,
+      "anchor_sha256": "e8d550cfdc86c70bf3e5e9f4eaea198cbe347018bcadd96bf0551a05b0cab616",
+      "verdict": "NOT_ATTRIBUTED",
+      "note": "Armadura descrita pertence ao capitão, não à organização inteira.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 6,
+      "entity_id": "legiao",
+      "field": "role",
+      "line": 301,
+      "anchor_sha256": "e8d550cfdc86c70bf3e5e9f4eaea198cbe347018bcadd96bf0551a05b0cab616",
+      "verdict": "SUPPORTED_CANDIDATE",
+      "note": "A Legião possuía um capitão na cena inicial.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 7,
+      "entity_id": "bandeira-cinzenta",
+      "field": "powers",
+      "line": 555,
+      "anchor_sha256": "54f2226d444635b988de0c028a4d78d88e13354c551f54d4661182a048e2b425",
+      "verdict": "HYPOTHESIS",
+      "note": "Identidade do chifre e ligação com Bandeira Cinzenta incertas.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 8,
+      "entity_id": "bandeira-cinzenta",
+      "field": "behavior",
+      "line": 555,
+      "anchor_sha256": "54f2226d444635b988de0c028a4d78d88e13354c551f54d4661182a048e2b425",
+      "verdict": "HYPOTHESIS",
+      "note": "Reconhecimento avançado é uma possibilidade, não ação confirmada.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 9,
+      "entity_id": "legiao",
+      "field": "behavior",
+      "line": 570,
+      "anchor_sha256": "29501013bf130b3d4bab458cf21d725b1faef7a1cb5ed970fcf9c1289a1352c3",
+      "verdict": "NOT_ATTRIBUTED",
+      "note": "A Legião é objeto da observação, não sujeito.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 10,
+      "entity_id": "legiao",
+      "field": "behavior",
+      "line": 619,
+      "anchor_sha256": "9a5bf6b9a8795211fd9a403dfbf2af5c745b941ea5bc4fe15b9144c3da1cd1ac",
+      "verdict": "NON_NARRATIVE",
+      "note": "Alternativa 3 de ação, não execução.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 11,
+      "entity_id": "legiao",
+      "field": "population",
+      "line": 771,
+      "anchor_sha256": "d241e732eeaf691ecbdab55a0133dae8257ab160dde96781fa7bb210082407ce",
+      "verdict": "PROPOSAL_ONLY",
+      "note": "Proposta de formar rede de inteligência; não contagem de população.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 12,
+      "entity_id": "varo",
+      "field": "behavior",
+      "line": 1048,
+      "anchor_sha256": "0ff9d5766a3050083906b2de5395bc904717fcada85b1a59464aea16c0474690",
+      "verdict": "SUPPORTED_CANDIDATE",
+      "note": "Varo observa a reação de Lucas ao relatório.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 13,
+      "entity_id": "varo",
+      "field": "governance",
+      "line": 1183,
+      "anchor_sha256": "4989cd7f691e776603c38d397901e078eadba02f80853c082cd2c331df02b2a2",
+      "verdict": "HEADING_ONLY",
+      "note": "Título de seção; não estabelece estrutura de governo.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 14,
+      "entity_id": "legiao",
+      "field": "capabilities",
+      "line": 1187,
+      "anchor_sha256": "632242ca27f193d7d09208c08554227987924e787f796a8e1b4db24e287bbb73",
+      "verdict": "SUMMARY_ONLY",
+      "note": "Resumo tático de posição e vitória; requer cena.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 15,
+      "entity_id": "legiao",
+      "field": "location",
+      "line": 1201,
+      "anchor_sha256": "e4e6277c79961b80ac4004a038a34ad342772bb5721b54a15116a8c1ae6d7d5d",
+      "verdict": "SUPPORTED_CANDIDATE",
+      "note": "Legião repousava no campo mencionado; sem coordenada exata.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 16,
+      "entity_id": "kael",
+      "field": "lifecycle",
+      "line": 1239,
+      "anchor_sha256": "fb16ad9317b204e228ddb8ba1c353e5f4ffbb45009858fe5adf9bf18f4f726bb",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento da resposta; criação narrada deve ser buscada.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 17,
+      "entity_id": "varo",
+      "field": "behavior",
+      "line": 1323,
+      "anchor_sha256": "e2f0302424ce7a5642bda62ccb27afef03a40f12f34fe93bd67bc1af1f665a43",
+      "verdict": "NOT_ATTRIBUTED",
+      "note": "O orc observa Varo; ação não é de Varo.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 18,
+      "entity_id": "varo",
+      "field": "location",
+      "line": 1459,
+      "anchor_sha256": "fddff8b7eadaa0e76d6a04eb79a060b8116c9a512c7c7ae3fa546759f2c5838c",
+      "verdict": "NOT_ATTRIBUTED",
+      "note": "Varo observa um recém-chegado; sem local explícito.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 19,
+      "entity_id": "kael",
+      "field": "lifecycle",
+      "line": 1489,
+      "anchor_sha256": "c757a673519022e9c9e923e5e7f6e32df02c254426828b64ecbc5af1ab33fcbd",
+      "verdict": "SUMMARY_ONLY",
+      "note": "Registro de conclusão da criação de Kael, cavaleiro negro e assessor; cruzar cena.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 20,
+      "entity_id": "varo",
+      "field": "role",
+      "line": 1537,
+      "anchor_sha256": "eccb74eb9947518cc646c2deb9c6f887da6140ff0f8b8114bc709fe3d3813852",
+      "verdict": "SUPPORTED_CANDIDATE",
+      "note": "Varo identificado como comandante militar na relação de funções.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 21,
+      "entity_id": "varo",
+      "field": "location",
+      "line": 1569,
+      "anchor_sha256": "45d0a940a8cc4d6125e92c892d7fed322d003a8e3522f410e4815fb0f9e5a43e",
+      "verdict": "NOT_ATTRIBUTED",
+      "note": "O deslocamento é de outra pessoa, não mudança de localização de Varo.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 22,
+      "entity_id": "kael",
+      "field": "role",
+      "line": 1694,
+      "anchor_sha256": "46617d0be77f52acd109421599ecb8263928db65c2c79f552923d6cb585d3b5e",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento em primeira pessoa, não desempenho de Kael.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 23,
+      "entity_id": "varo",
+      "field": "capabilities",
+      "line": 1736,
+      "anchor_sha256": "8585b7793bee66726f1ed25d72177dc317498766f17320fa9b9241c97b210b79",
+      "verdict": "ORDER_ONLY",
+      "note": "Lucas ordena que Varo assuma busca discreta; não prova resultado.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 24,
+      "entity_id": "bandeira-cinzenta",
+      "field": "powers",
+      "line": 1744,
+      "anchor_sha256": "af94a4f99c3ce22917fdf835a848a9b5dee9387ec893f9a16ac1332846a9413d",
+      "verdict": "NOT_ATTRIBUTED",
+      "note": "Bandeira é assunto de investigação; limites do poder são de Lucas.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 25,
+      "entity_id": "kael",
+      "field": "role",
+      "line": 1816,
+      "anchor_sha256": "8323f5a60bd870f970e5a9f045e256afc49eaa1bb8a1477a4de0ec1015d13e65",
+      "verdict": "SUPPORTED_CANDIDATE",
+      "note": "Kael declara representar seu comandante durante a conversa.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 26,
+      "entity_id": "edran",
+      "field": "appearance",
+      "line": 1818,
+      "anchor_sha256": "ba9853d015b0b74d1f208b32ce9866297011babd5006049570d62cbd92313856",
+      "verdict": "NOT_ATTRIBUTED",
+      "note": "Armadura negra é do diplomata examinado por Edran.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 27,
+      "entity_id": "kael",
+      "field": "voice",
+      "line": 1834,
+      "anchor_sha256": "b7b10ce8a0e6c28ccfeba793a31ec1e78736bd1e1d5bb4c1fb3191b601fbaf40",
+      "verdict": "SUPPORTED_CANDIDATE",
+      "note": "Kael sorri discretamente naquela cena.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 28,
+      "entity_id": "arvendell",
+      "field": "governance",
+      "line": 1856,
+      "anchor_sha256": "792464135acbefeacab58d473db3d0c682e70f3cdf27880aef4d3a7bb61dbee4",
+      "verdict": "REPORT_ONLY",
+      "note": "Emissor identifica passagem Arvendell e descreve autoridades vizinhas.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 29,
+      "entity_id": "arvendell",
+      "field": "lifecycle",
+      "line": 1856,
+      "anchor_sha256": "792464135acbefeacab58d473db3d0c682e70f3cdf27880aef4d3a7bb61dbee4",
+      "verdict": "NOT_ATTRIBUTED",
+      "note": "Descrição geográfica não é ciclo de vida.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 30,
+      "entity_id": "thalor",
+      "field": "governance",
+      "line": 1856,
+      "anchor_sha256": "792464135acbefeacab58d473db3d0c682e70f3cdf27880aef4d3a7bb61dbee4",
+      "verdict": "REPORT_ONLY",
+      "note": "Influência do Marquesado de Thalor a oeste, segundo interlocutor.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 31,
+      "entity_id": "thalor",
+      "field": "lifecycle",
+      "line": 1856,
+      "anchor_sha256": "792464135acbefeacab58d473db3d0c682e70f3cdf27880aef4d3a7bb61dbee4",
+      "verdict": "NOT_ATTRIBUTED",
+      "note": "Descrição territorial não é ciclo de vida de Thalor.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 32,
+      "entity_id": "kael",
+      "field": "relationships",
+      "line": 1870,
+      "anchor_sha256": "f3154ac2e9d51e532f3a5495c5c6acca1d0dac0fa02e82675dbfc2bed5cfe57d",
+      "verdict": "NOT_ATTRIBUTED",
+      "note": "Percepção de precisão não demonstra relação interpessoal estável.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 33,
+      "entity_id": "kael",
+      "field": "voice",
+      "line": 1878,
+      "anchor_sha256": "8d17cee86663e764e99cbe75be46ffe47c560b6f01d26936d0dd7d071a47756a",
+      "verdict": "SUPPORTED_CANDIDATE",
+      "note": "Kael não sorri naquele momento; comportamento circunstancial.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 34,
+      "entity_id": "arvendell",
+      "field": "role",
+      "line": 1894,
+      "anchor_sha256": "b4199dde619ee5608ce0cb6b86f2a6234ab460e7b98392cddd28dcf1b0805e56",
+      "verdict": "REPORT_ONLY",
+      "note": "Condições declaradas para passagem e permanência; não concessão consumada.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 35,
+      "entity_id": "arvendell",
+      "field": "powers",
+      "line": 1894,
+      "anchor_sha256": "b4199dde619ee5608ce0cb6b86f2a6234ab460e7b98392cddd28dcf1b0805e56",
+      "verdict": "NOT_ATTRIBUTED",
+      "note": "Não demonstra poderes de Arvendell.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 36,
+      "entity_id": "arvendell",
+      "field": "governance",
+      "line": 1894,
+      "anchor_sha256": "b4199dde619ee5608ce0cb6b86f2a6234ab460e7b98392cddd28dcf1b0805e56",
+      "verdict": "REPORT_ONLY",
+      "note": "Autoridades locais devem ser consultadas, conforme interlocutor.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 37,
+      "entity_id": "legiao",
+      "field": "powers",
+      "line": 1904,
+      "anchor_sha256": "fdee203cd710eb79200af5d3bfd641d6237d857327a1b73a663b85acee1b4398",
+      "verdict": "HYPOTHESIS",
+      "note": "Possível futuro poder político, não autoridade já adquirida.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 38,
+      "entity_id": "bandeira-cinzenta",
+      "field": "location",
+      "line": 2058,
+      "anchor_sha256": "b4ade47f5273bada7c325cbf4f9b601caf6af0613a38818c8c528363ad3bbfa5",
+      "verdict": "HYPOTHESIS",
+      "note": "Vínculo entre agressores e Bandeira expressamente desconhecido.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 39,
+      "entity_id": "kael",
+      "field": "powers",
+      "line": 2066,
+      "anchor_sha256": "6ffc0c5101d830a5a0cff92da3a147929f775f6297f24f7ada05e10a4b09e61a",
+      "verdict": "NOT_ATTRIBUTED",
+      "note": "Avaliação de risco de retaliação; não poder de Kael.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 40,
+      "entity_id": "varo",
+      "field": "powers",
+      "line": 2154,
+      "anchor_sha256": "41cfe57344165bcc7dcb2d2ea955659ae4d2997b132772312e7d7bb35e294911",
+      "verdict": "NOT_ATTRIBUTED",
+      "note": "Desejo de realizar resgate, não demonstração de poder de Varo.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 41,
+      "entity_id": "kael",
+      "field": "powers",
+      "line": 2156,
+      "anchor_sha256": "d1e25ad763487cf9c5e6dccfc8f82c37b08fb12f9ff85656d2a025fd9fd1e347",
+      "verdict": "NOT_ATTRIBUTED",
+      "note": "Preferência diplomática de Kael, não poder.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 42,
+      "entity_id": "bandeira-cinzenta",
+      "field": "role",
+      "line": 2190,
+      "anchor_sha256": "5723d2dbbe89379c8ec0048ec80bf07495dad3ce7c82eeb373d311670d9521e6",
+      "verdict": "NON_NARRATIVE",
+      "note": "Nota de preparação editorial.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 43,
+      "entity_id": "bandeira-cinzenta",
+      "field": "governance",
+      "line": 2190,
+      "anchor_sha256": "5723d2dbbe89379c8ec0048ec80bf07495dad3ce7c82eeb373d311670d9521e6",
+      "verdict": "NON_NARRATIVE",
+      "note": "Nota de preparação editorial.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 44,
+      "entity_id": "kael",
+      "field": "governance",
+      "line": 2190,
+      "anchor_sha256": "5723d2dbbe89379c8ec0048ec80bf07495dad3ce7c82eeb373d311670d9521e6",
+      "verdict": "NON_NARRATIVE",
+      "note": "Nota de preparação editorial.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 45,
+      "entity_id": "edran",
+      "field": "role",
+      "line": 2190,
+      "anchor_sha256": "5723d2dbbe89379c8ec0048ec80bf07495dad3ce7c82eeb373d311670d9521e6",
+      "verdict": "NON_NARRATIVE",
+      "note": "Nota de preparação editorial.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 46,
+      "entity_id": "edran",
+      "field": "governance",
+      "line": 2190,
+      "anchor_sha256": "5723d2dbbe89379c8ec0048ec80bf07495dad3ce7c82eeb373d311670d9521e6",
+      "verdict": "NON_NARRATIVE",
+      "note": "Nota de preparação editorial.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 47,
+      "entity_id": "varo",
+      "field": "lifecycle",
+      "line": 2256,
+      "anchor_sha256": "3d7bcb47a25786c04425cdd37518b05d814daf54abf0ecadaab2f1033bf8ee91",
+      "verdict": "NOT_ATTRIBUTED",
+      "note": "Expressão facial de Varo, não ciclo de vida.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 48,
+      "entity_id": "kael",
+      "field": "behavior",
+      "line": 2290,
+      "anchor_sha256": "fa9f99059f9bfd7e0f1183214247ac522a77590417c2a8fd3566044d91d9e1bd",
+      "verdict": "SUPPORTED_CANDIDATE",
+      "note": "Kael observa em silêncio; Varo e dois legionários próximos.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 49,
+      "entity_id": "varo",
+      "field": "governance",
+      "line": 2350,
+      "anchor_sha256": "5ce343a305ea0320bd3c640a4625f6f4546756a450f4ba9831c73f2d6ae26dca",
+      "verdict": "ORDER_ONLY",
+      "note": "Condição proposta de subordinação militar a Varo; não prova aceitação.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 50,
+      "entity_id": "varo",
+      "field": "voice",
+      "line": 2400,
+      "anchor_sha256": "cb0e7ba1566993c4e3a0ebb8a1e5744a5067c5ff54f05a79ee990a4616f5f652",
+      "verdict": "SUPPORTED_CANDIDATE",
+      "note": "Varo esboça sorriso discreto na cena.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 51,
+      "entity_id": "kael",
+      "field": "appearance",
+      "line": 2488,
+      "anchor_sha256": "1453e946ea796c3c4a1f485c6a2667789ea2378ad3e23408d7e8e8036ed3b0e3",
+      "verdict": "NOT_ATTRIBUTED",
+      "note": "Olhos e ações são de interlocutor que observa Kael.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 52,
+      "entity_id": "kael",
+      "field": "behavior",
+      "line": 2488,
+      "anchor_sha256": "1453e946ea796c3c4a1f485c6a2667789ea2378ad3e23408d7e8e8036ed3b0e3",
+      "verdict": "NOT_ATTRIBUTED",
+      "note": "Kael é objeto de observação, não agente.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 53,
+      "entity_id": "edran",
+      "field": "appearance",
+      "line": 2524,
+      "anchor_sha256": "0ff625296a23589fe8c867265fbc13f2b2a2db1ab3ec657848402c5bf8444efd",
+      "verdict": "NOT_ATTRIBUTED",
+      "note": "Rosto examinado por Edran pertence ao interlocutor.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 54,
+      "entity_id": "thalor",
+      "field": "governance",
+      "line": 2526,
+      "anchor_sha256": "36c5e94899f50466a59b56b6f25aeb13c0c93fed0e34e4c8172c3e082e8e05ab",
+      "verdict": "REPORT_ONLY",
+      "note": "Edran descreve reivindicação territorial de Thalor, não domínio incontestado.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 55,
+      "entity_id": "edran",
+      "field": "role",
+      "line": 2587,
+      "anchor_sha256": "c5371c793b036a3bc73e98c678500f43661bb002f73a7d6d64c93ed7b6fee6a7",
+      "verdict": "NOT_ATTRIBUTED",
+      "note": "Observar capitão não estabelece função de Edran.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 56,
+      "entity_id": "edran",
+      "field": "behavior",
+      "line": 2587,
+      "anchor_sha256": "c5371c793b036a3bc73e98c678500f43661bb002f73a7d6d64c93ed7b6fee6a7",
+      "verdict": "SUPPORTED_CANDIDATE",
+      "note": "Edran observa o capitão na cena.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 57,
+      "entity_id": "edran",
+      "field": "behavior",
+      "line": 2625,
+      "anchor_sha256": "6b8cc3438e67a2c1d9a9c964ef2a07a13ceb51f96d05bb687f324ceda5231e15",
+      "verdict": "SUPPORTED_CANDIDATE",
+      "note": "Edran observa Lucas cuidadosamente na cena.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 58,
+      "entity_id": "thalor",
+      "field": "role",
+      "line": 2643,
+      "anchor_sha256": "9d9ed0b6126e4a4dda4835e9b04562bb8c34336bdaa7468b5933393206decb0e",
+      "verdict": "REPORT_ONLY",
+      "note": "Edran menciona ataques possíveis a caravanas; não fato comprovado.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 59,
+      "entity_id": "kael",
+      "field": "capabilities",
+      "line": 2888,
+      "anchor_sha256": "8230e42149e767e211c444bae37fce39a2ba1f7f028fe695a7e743550148003e",
+      "verdict": "NON_NARRATIVE",
+      "note": "Preparação de cena de testes; não capacidade demonstrada.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 60,
+      "entity_id": "kael",
+      "field": "appearance",
+      "line": 3022,
+      "anchor_sha256": "1eb2735e50e3f12e58a4b22e13f3754a3a4638f706437b53c0b4d86e66318e66",
+      "verdict": "SUPPORTED_CANDIDATE",
+      "note": "Kael arregala os olhos; não cor ou anatomia permanente.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 61,
+      "entity_id": "thalor",
+      "field": "appearance",
+      "line": 3066,
+      "anchor_sha256": "cbbc09e85bcfa8e36497f9b0f003092c593de76a7fa7ef8b8646e26ae4c13f1f",
+      "verdict": "NOT_ATTRIBUTED",
+      "note": "Aos olhos de Thalor é expressão figurada; não aparência.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 62,
+      "entity_id": "kael",
+      "field": "governance",
+      "line": 3458,
+      "anchor_sha256": "475ad2ff08cd541cda68dd9c918e4a92cae5f13a81fa06e2480024d3e69a76af",
+      "verdict": "ORDER_ONLY",
+      "note": "Distribuição futura de supervisão de informações a Kael.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 63,
+      "entity_id": "varo",
+      "field": "lifecycle",
+      "line": 3458,
+      "anchor_sha256": "475ad2ff08cd541cda68dd9c918e4a92cae5f13a81fa06e2480024d3e69a76af",
+      "verdict": "NOT_ATTRIBUTED",
+      "note": "Autoridade operacional futura de Varo, não ciclo de vida.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 64,
+      "entity_id": "sistema",
+      "field": "powers",
+      "line": 3655,
+      "anchor_sha256": "d42a92f2eda2e24609486f2d83374fd393f39a3ae2791d483dd6517c9a91aadf",
+      "verdict": "NON_NARRATIVE",
+      "note": "Nota de intenção editorial sobre sistema.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 65,
+      "entity_id": "sistema",
+      "field": "architecture",
+      "line": 3667,
+      "anchor_sha256": "33ffddcc3d31c45573a6d5332b9cc476e33aee2a1a79314199cb9cfb3ef4db62",
+      "verdict": "NON_NARRATIVE",
+      "note": "Nota de preparação editorial.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 66,
+      "entity_id": "kael",
+      "field": "location",
+      "line": 3687,
+      "anchor_sha256": "34ef3812ad4612c111545b43b5b081059fdb3a94aff182153433ff833667d3cb",
+      "verdict": "NOT_ATTRIBUTED",
+      "note": "Mochila e drone estão na mesa; localização de Kael não explicitada.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 67,
+      "entity_id": "thalor",
+      "field": "behavior",
+      "line": 3765,
+      "anchor_sha256": "cca00b7263187ca802c396cc04a5ce03e28c9a4ea6e08c43870b11b053d9848c",
+      "verdict": "REPORT_ONLY",
+      "note": "Aceitação futura de assentamento por Thalor não garantida.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 68,
+      "entity_id": "legiao",
+      "field": "governance",
+      "line": 3773,
+      "anchor_sha256": "a32653d15c4b28778b700de4753bbd02b64cacd5a14613f398c703c1d376bc20",
+      "verdict": "SUPPORTED_CANDIDATE",
+      "note": "Legião começa contato diplomático sem ameaça armada, segundo narração.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 69,
+      "entity_id": "varo",
+      "field": "appearance",
+      "line": 3877,
+      "anchor_sha256": "6fa02a0c9de1db133c724b6b71a33650750594a22ce368f676196c3ff366454c",
+      "verdict": "SUPPORTED_CANDIDATE",
+      "note": "Varo fica imóvel, olhando para Lucas; não traço anatômico.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 70,
+      "entity_id": "varo",
+      "field": "voice",
+      "line": 4041,
+      "anchor_sha256": "a721020b9f143f2a9180a066f788ec668af641484a08ce2e84bbb25f4c4343b1",
+      "verdict": "SUPPORTED_CANDIDATE",
+      "note": "Varo sorri naquela cena.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 71,
+      "entity_id": "varo",
+      "field": "appearance",
+      "line": 4079,
+      "anchor_sha256": "b72beaba09d6d4c2aab08e54c70d1771cfb9f31fd9fb0b33b52ad38462104573",
+      "verdict": "NOT_ATTRIBUTED",
+      "note": "Ferimentos e rosto descritos são do chefe orc.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 72,
+      "entity_id": "thalor",
+      "field": "behavior",
+      "line": 4482,
+      "anchor_sha256": "e376a59d5d454474cc61d2a029bbdbb98fa82776b80d5fb381f53a604161fbbf",
+      "verdict": "SUMMARY_ONLY",
+      "note": "Recapitulação de pedido formal enviado a Thalor.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 73,
+      "entity_id": "sistema",
+      "field": "behavior",
+      "line": 4482,
+      "anchor_sha256": "e376a59d5d454474cc61d2a029bbdbb98fa82776b80d5fb381f53a604161fbbf",
+      "verdict": "SUMMARY_ONLY",
+      "note": "Recapitulação de reaparecimento do Sistema.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 74,
+      "entity_id": "varo",
+      "field": "powers",
+      "line": 4506,
+      "anchor_sha256": "ee0eca0cbb260a6794700f27eee1067d741f850ea7bc1ad58f7b8737097aefd2",
+      "verdict": "NON_NARRATIVE",
+      "note": "Preparação decorrente de escolha, não poder de Varo.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 75,
+      "entity_id": "legiao",
+      "field": "appearance",
+      "line": 4506,
+      "anchor_sha256": "ee0eca0cbb260a6794700f27eee1067d741f850ea7bc1ad58f7b8737097aefd2",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento, não aparência da Legião.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 76,
+      "entity_id": "legiao",
+      "field": "lifecycle",
+      "line": 4506,
+      "anchor_sha256": "ee0eca0cbb260a6794700f27eee1067d741f850ea7bc1ad58f7b8737097aefd2",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento, não ciclo de vida da Legião.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 77,
+      "entity_id": "varo",
+      "field": "capabilities",
+      "line": 4510,
+      "anchor_sha256": "4bb369b1e863e805422986637f887e8d524fdb39fc221bc11b6da50b456693af",
+      "verdict": "NON_NARRATIVE",
+      "note": "Nota preparatória; leitura e limites necessitam cena.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 78,
+      "entity_id": "arvendell",
+      "field": "behavior",
+      "line": 4622,
+      "anchor_sha256": "204a6f91ac5b8840d49d56e81c2bef50f3cafa949f554b7bf5b8c9d875f9abbd",
+      "verdict": "NOT_ATTRIBUTED",
+      "note": "Lucas observa montanhas; Arvendell é lugar, não agente.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 79,
+      "entity_id": "lucas",
+      "field": "powers",
+      "line": 4676,
+      "anchor_sha256": "0aaaf38c957ed2dc0f5d1f11d06003e80e4fbd9c332986aedf5e37679c57d1ad",
+      "verdict": "HYPOTHESIS",
+      "note": "Potencial civilizacional e consequências da morte são especulativos.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 80,
+      "entity_id": "lucas",
+      "field": "lifecycle",
+      "line": 4676,
+      "anchor_sha256": "0aaaf38c957ed2dc0f5d1f11d06003e80e4fbd9c332986aedf5e37679c57d1ad",
+      "verdict": "HYPOTHESIS",
+      "note": "Consequências de morte de Lucas expressamente desconhecidas.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 81,
+      "entity_id": "legiao",
+      "field": "lifecycle",
+      "line": 4676,
+      "anchor_sha256": "0aaaf38c957ed2dc0f5d1f11d06003e80e4fbd9c332986aedf5e37679c57d1ad",
+      "verdict": "HYPOTHESIS",
+      "note": "Possível destruição da Legião não é fato.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 82,
+      "entity_id": "lucas",
+      "field": "lifecycle",
+      "line": 4740,
+      "anchor_sha256": "f9628a8aa126436d34ed11f58748f487b2a8565d83021eff1e71ea7e779376a1",
+      "verdict": "REPORT_ONLY",
+      "note": "Interlocutor afirma recuperação física de Lucas após esforço.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 83,
+      "entity_id": "legiao",
+      "field": "location",
+      "line": 4789,
+      "anchor_sha256": "a9a6b22376199cfe68c33b4c41157684934820d7035b7eb826594f73ab9be1e3",
+      "verdict": "NOT_ATTRIBUTED",
+      "note": "Comparação de custo de criação, não localização da Legião.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 84,
+      "entity_id": "lucas",
+      "field": "role",
+      "line": 5037,
+      "anchor_sha256": "58de6dbbbac92570c437c4e04741e993769390d6c447f8fcb329daec093e1e5c",
+      "verdict": "SUPPORTED_CANDIDATE",
+      "note": "Lucas listado no comando estratégico.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 85,
+      "entity_id": "varo",
+      "field": "role",
+      "line": 5039,
+      "anchor_sha256": "7967f2f217e2c87dac43d0a1fe0054730b33eb7c8df07c7f2697e0bb6a85e5b5",
+      "verdict": "SUPPORTED_CANDIDATE",
+      "note": "Varo listado no comando tático.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 86,
+      "entity_id": "lucas",
+      "field": "behavior",
+      "line": 5079,
+      "anchor_sha256": "18b3dfe475581b4065e11f8b368663027c27d9d78626c984be46b5d60d67b0b9",
+      "verdict": "NOT_ATTRIBUTED",
+      "note": "Lucas recebe convite para observar; não execução.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 87,
+      "entity_id": "lucas",
+      "field": "relationships",
+      "line": 5307,
+      "anchor_sha256": "95e00e6b38c65d5083bec73a8ec0556b144f4da9609641e0be966ebc9538ef40",
+      "verdict": "REPORT_ONLY",
+      "note": "Interlocutor fala de irmão vivo; identidade e relação exatas exigem contexto.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 88,
+      "entity_id": "lucas",
+      "field": "relationships",
+      "line": 5425,
+      "anchor_sha256": "9e05b43b6d03b0803f8be208f874cef0c6d0d8b20cf3b81546f06d4c7707e7db",
+      "verdict": "SUPPORTED_CANDIDATE",
+      "note": "Interlocutor declara parceria em combate com Lucas; não prova vínculo familiar.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 89,
+      "entity_id": "lucas",
+      "field": "behavior",
+      "line": 6155,
+      "anchor_sha256": "ae4a645024fd262d8954533144c413544bf8c1242712324d9f3ed180fe828b6d",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento editorial.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 90,
+      "entity_id": "lucas",
+      "field": "appearance",
+      "line": 6159,
+      "anchor_sha256": "ba2aec5473369e9887525d05c981550c1e7c343c64531e7d3ecfb02a1e218efd",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento editorial.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 91,
+      "entity_id": "arvendell",
+      "field": "location",
+      "line": 6179,
+      "anchor_sha256": "9e8c5f53aac97f76f9a0e2b80c364843ab485b652e33fc95875639628c4ce90d",
+      "verdict": "NOT_ATTRIBUTED",
+      "note": "Mapa de Arvendell está sobre mesa, não localização de Arvendell.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 92,
+      "entity_id": "kael",
+      "field": "capabilities",
+      "line": 6413,
+      "anchor_sha256": "6d4383e184a71d5b7cf7644700546e3ca06727b1266b06706c1f7e822eb4042f",
+      "verdict": "SUPPORTED_CANDIDATE",
+      "note": "Kael prepara três áreas para testar capacidades; resultados não demonstrados.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 93,
+      "entity_id": "lucas",
+      "field": "powers",
+      "line": 6417,
+      "anchor_sha256": "5dc9c26a656842db037878b7a747fd461a890e869bb74bdbf9a86902ce612dd6",
+      "verdict": "REPORT_ONLY",
+      "note": "Interlocutor propõe separar habilidades de Lucas em três sistemas.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 94,
+      "entity_id": "sistema",
+      "field": "appearance",
+      "line": 6443,
+      "anchor_sha256": "9cfeefcc81720a5c082e90ea8af61b23f6afb32273769a7a99f5dbd8abb40ef6",
+      "verdict": "NOT_ATTRIBUTED",
+      "note": "Risco percebido por Lucas; não aparência do Sistema.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 95,
+      "entity_id": "sistema",
+      "field": "relationships",
+      "line": 6817,
+      "anchor_sha256": "765f19e9973768deabe6137c1758de329eeec17fdf45adabf961be69067f045d",
+      "verdict": "SUPPORTED_CANDIDATE",
+      "note": "Narração indica que Sistema omite respostas; não relação pessoal específica.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 96,
+      "entity_id": "brannik",
+      "field": "lifecycle",
+      "line": 6891,
+      "anchor_sha256": "b09872842ed7925c4d58abe64d51e7f0fa83a682842fe4093b6e50cae6a0511f",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento de cena, não ciclo de vida de Brannik.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 97,
+      "entity_id": "thalor",
+      "field": "lifecycle",
+      "line": 6891,
+      "anchor_sha256": "b09872842ed7925c4d58abe64d51e7f0fa83a682842fe4093b6e50cae6a0511f",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento de negociação, não ciclo de vida de Thalor.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 98,
+      "entity_id": "brannik",
+      "field": "behavior",
+      "line": 7035,
+      "anchor_sha256": "dbb39418cba877f61f3106b4f39605b672c7d070e32fbe91ad099d29a36309bc",
+      "verdict": "SUPPORTED_CANDIDATE",
+      "note": "Brannik observa Lucas na cena.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 99,
+      "entity_id": "tres-arcos",
+      "field": "architecture",
+      "line": 7049,
+      "anchor_sha256": "6c5512d331ae0c21c05ed660dc8aaa77c31f8a75d0d4edb2b542e4f0cb5c2832",
+      "verdict": "HEADING_ONLY",
+      "note": "Título sobre ruínas; requer conteúdo narrado.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 100,
+      "entity_id": "tres-arcos",
+      "field": "architecture",
+      "line": 7055,
+      "anchor_sha256": "0bed0c8e8167685a6a878b736bb271c0dc08605f9689d75a5aa65a9267c78f1f",
+      "verdict": "REPORT_ONLY",
+      "note": "Interlocutor relata fortificação histórica de Três Arcos protegendo passagem comercial.",
+      "review_stage": "PRIOR_FIRST_PASS_RECHECKED_NOT_INDEPENDENT",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 101,
+      "entity_id": "tres-arcos",
+      "field": "lifecycle",
+      "line": 7055,
+      "anchor_sha256": "0bed0c8e8167685a6a878b736bb271c0dc08605f9689d75a5aa65a9267c78f1f",
+      "verdict": "REPORT_ONLY",
+      "note": "Informação relatada ou contextual; não confirmar campo sem revisão do emissor.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 102,
+      "entity_id": "varo",
+      "field": "relationships",
+      "line": 7103,
+      "anchor_sha256": "32d00cd452753bb59ca87ae2be45f9f52c43c937e9bde97366d70f82ce71c982",
+      "verdict": "HEADING_ONLY",
+      "note": "Título ou marcador; não demonstra fato.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 103,
+      "entity_id": "legiao",
+      "field": "governance",
+      "line": 7151,
+      "anchor_sha256": "079c2ad97cf67c533ad989e34698c2ae1fafc98de23271371675e607595a2268",
+      "verdict": "PROPOSAL_OR_ORDER",
+      "note": "Intenção, proposta ou ordem; não prova execução.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 104,
+      "entity_id": "kael",
+      "field": "location",
+      "line": 7291,
+      "anchor_sha256": "70690af511fff1e88ff19a300e0b6e3f0de50c7aec126a2ee7dc5808a4951c32",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 105,
+      "entity_id": "sistema",
+      "field": "appearance",
+      "line": 7321,
+      "anchor_sha256": "bf2622e35735d1fd587b49d0a3b2db76014f259abd6d5f535a6c20fc7093bb19",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 106,
+      "entity_id": "brannik",
+      "field": "behavior",
+      "line": 7408,
+      "anchor_sha256": "2e92b6f701988a3f7aa427d8dfdf3a22ebe5f2204051d5805c28f9da9866ddf3",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 107,
+      "entity_id": "edran",
+      "field": "relationships",
+      "line": 7546,
+      "anchor_sha256": "0a19bd52203a6f6815a64d2f990cd74c7805256eafd7ccac891df047dfd1ac70",
+      "verdict": "REPORT_ONLY",
+      "note": "Informação relatada ou contextual; não confirmar campo sem revisão do emissor.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 108,
+      "entity_id": "tres-arcos",
+      "field": "powers",
+      "line": 7550,
+      "anchor_sha256": "df9353d9b8e371ca7aa27d8cacdd54eceee94399f05b3daf061b6ddc9c135833",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 109,
+      "entity_id": "tres-arcos",
+      "field": "governance",
+      "line": 7550,
+      "anchor_sha256": "df9353d9b8e371ca7aa27d8cacdd54eceee94399f05b3daf061b6ddc9c135833",
+      "verdict": "REPORT_ONLY",
+      "note": "Informação relatada ou contextual; não confirmar campo sem revisão do emissor.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 110,
+      "entity_id": "thalor",
+      "field": "powers",
+      "line": 7550,
+      "anchor_sha256": "df9353d9b8e371ca7aa27d8cacdd54eceee94399f05b3daf061b6ddc9c135833",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 111,
+      "entity_id": "thalor",
+      "field": "architecture",
+      "line": 7550,
+      "anchor_sha256": "df9353d9b8e371ca7aa27d8cacdd54eceee94399f05b3daf061b6ddc9c135833",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 112,
+      "entity_id": "edran",
+      "field": "powers",
+      "line": 7550,
+      "anchor_sha256": "df9353d9b8e371ca7aa27d8cacdd54eceee94399f05b3daf061b6ddc9c135833",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 113,
+      "entity_id": "edran",
+      "field": "architecture",
+      "line": 7550,
+      "anchor_sha256": "df9353d9b8e371ca7aa27d8cacdd54eceee94399f05b3daf061b6ddc9c135833",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 114,
+      "entity_id": "edran",
+      "field": "governance",
+      "line": 7550,
+      "anchor_sha256": "df9353d9b8e371ca7aa27d8cacdd54eceee94399f05b3daf061b6ddc9c135833",
+      "verdict": "REPORT_ONLY",
+      "note": "Informação relatada ou contextual; não confirmar campo sem revisão do emissor.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 115,
+      "entity_id": "tres-arcos",
+      "field": "behavior",
+      "line": 7602,
+      "anchor_sha256": "8f2f42e6c1a8b1e2a2d6f45ea82985b47b212bc010b1947a8bf6022a9ae14f14",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 116,
+      "entity_id": "tres-arcos",
+      "field": "appearance",
+      "line": 7636,
+      "anchor_sha256": "fb9d46b0639c188858ac2619dbc95c954201261149813a88335992b76fbb0f5a",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 117,
+      "entity_id": "tres-arcos",
+      "field": "powers",
+      "line": 7636,
+      "anchor_sha256": "fb9d46b0639c188858ac2619dbc95c954201261149813a88335992b76fbb0f5a",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 118,
+      "entity_id": "tres-arcos",
+      "field": "capabilities",
+      "line": 7636,
+      "anchor_sha256": "fb9d46b0639c188858ac2619dbc95c954201261149813a88335992b76fbb0f5a",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 119,
+      "entity_id": "tres-arcos",
+      "field": "lifecycle",
+      "line": 7636,
+      "anchor_sha256": "fb9d46b0639c188858ac2619dbc95c954201261149813a88335992b76fbb0f5a",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 120,
+      "entity_id": "sistema",
+      "field": "capabilities",
+      "line": 7636,
+      "anchor_sha256": "fb9d46b0639c188858ac2619dbc95c954201261149813a88335992b76fbb0f5a",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 121,
+      "entity_id": "sistema",
+      "field": "architecture",
+      "line": 7636,
+      "anchor_sha256": "fb9d46b0639c188858ac2619dbc95c954201261149813a88335992b76fbb0f5a",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 122,
+      "entity_id": "sistema",
+      "field": "lifecycle",
+      "line": 7636,
+      "anchor_sha256": "fb9d46b0639c188858ac2619dbc95c954201261149813a88335992b76fbb0f5a",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 123,
+      "entity_id": "lysa",
+      "field": "powers",
+      "line": 7650,
+      "anchor_sha256": "c9740179ba218e25f23efbb9bd8093c4e8ec0b65cb82f6ba118110eff549c939",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 124,
+      "entity_id": "lysa",
+      "field": "behavior",
+      "line": 7650,
+      "anchor_sha256": "c9740179ba218e25f23efbb9bd8093c4e8ec0b65cb82f6ba118110eff549c939",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 125,
+      "entity_id": "tres-arcos",
+      "field": "appearance",
+      "line": 7660,
+      "anchor_sha256": "e5000d7cb34bab3dd9cae64b8e74be2047475d888c5e6a0019abfc7549e2dfd7",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 126,
+      "entity_id": "tres-arcos",
+      "field": "behavior",
+      "line": 7660,
+      "anchor_sha256": "e5000d7cb34bab3dd9cae64b8e74be2047475d888c5e6a0019abfc7549e2dfd7",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 127,
+      "entity_id": "brannik",
+      "field": "location",
+      "line": 7806,
+      "anchor_sha256": "eca3c9ff8a774658043a6209b9b54aee2d960881e4c4b2ba99f9cfc9f0de0c66",
+      "verdict": "REPORT_ONLY",
+      "note": "Informação relatada ou contextual; não confirmar campo sem revisão do emissor.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 128,
+      "entity_id": "thalor",
+      "field": "location",
+      "line": 7810,
+      "anchor_sha256": "297b882d79aa5dc0398e7071a6bd349b5111f7006e94720ad0ffa53c83f57d4e",
+      "verdict": "REPORT_ONLY",
+      "note": "Informação relatada ou contextual; não confirmar campo sem revisão do emissor.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 129,
+      "entity_id": "lysa",
+      "field": "voice",
+      "line": 7896,
+      "anchor_sha256": "24c7706699ac88e4e3fe4ea52cd5a6e06e7d4cd0773cb543c7b87381d29a4654",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 130,
+      "entity_id": "lysa",
+      "field": "capabilities",
+      "line": 7900,
+      "anchor_sha256": "5682eb1d4cc91e4f34be928e1c4a43c731dd11811818acfd456ff8600048b924",
+      "verdict": "REPORT_ONLY",
+      "note": "Informação relatada ou contextual; não confirmar campo sem revisão do emissor.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 131,
+      "entity_id": "lysa",
+      "field": "architecture",
+      "line": 7904,
+      "anchor_sha256": "f6034fa7eb8fb25aa6594e57fe7e6e5540a574a038dfe713132e7d090e8da956",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 132,
+      "entity_id": "sistema",
+      "field": "capabilities",
+      "line": 7952,
+      "anchor_sha256": "08cb33aba9e35d592333dd73fecd4e4a615e358bcb472bf4c81c54388a5953c3",
+      "verdict": "REPORT_ONLY",
+      "note": "Informação relatada ou contextual; não confirmar campo sem revisão do emissor.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 133,
+      "entity_id": "sistema",
+      "field": "lifecycle",
+      "line": 7952,
+      "anchor_sha256": "08cb33aba9e35d592333dd73fecd4e4a615e358bcb472bf4c81c54388a5953c3",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 134,
+      "entity_id": "sistema",
+      "field": "relationships",
+      "line": 8122,
+      "anchor_sha256": "d27097dfea25bf498cac4fa7e3d6d3ea1982e5b57b018d77c0b0e3d78bb265df",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 135,
+      "entity_id": "sistema",
+      "field": "behavior",
+      "line": 8204,
+      "anchor_sha256": "02af8364d955edea4c5a8bee8d77b937ea88f2580eface22eb6733d49be59eb2",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 136,
+      "entity_id": "brannik",
+      "field": "location",
+      "line": 8245,
+      "anchor_sha256": "e178099668cecdfdfaf6fd64eb832ee7e7a3fc3733ca1c4c787403389a2daf39",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 137,
+      "entity_id": "lucas",
+      "field": "role",
+      "line": 8299,
+      "anchor_sha256": "6c5032948e1ca71966caf701b7ee3af8a96ac0bc3893b625fdb7dd105aae02ac",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 138,
+      "entity_id": "tres-arcos",
+      "field": "population",
+      "line": 8323,
+      "anchor_sha256": "1a7a8cee077d13a5f80db03eb3d052427c09f32ac02c04499bcd7a8f3714a356",
+      "verdict": "REPORT_ONLY",
+      "note": "Informação relatada ou contextual; não confirmar campo sem revisão do emissor.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 139,
+      "entity_id": "lysa",
+      "field": "lifecycle",
+      "line": 8331,
+      "anchor_sha256": "b3b75046feb85cc866b8f3a95406b44d7a7c869c3753ffdd9d6666382ad631bc",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 140,
+      "entity_id": "tres-arcos",
+      "field": "population",
+      "line": 8367,
+      "anchor_sha256": "653d6013388ea166d54e4cce465ab8e7ed8d8cedae541a36840bb15c26715785",
+      "verdict": "PROPOSAL_OR_ORDER",
+      "note": "Intenção, proposta ou ordem; não prova execução.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 141,
+      "entity_id": "legiao",
+      "field": "architecture",
+      "line": 8367,
+      "anchor_sha256": "653d6013388ea166d54e4cce465ab8e7ed8d8cedae541a36840bb15c26715785",
+      "verdict": "PROPOSAL_OR_ORDER",
+      "note": "Intenção, proposta ou ordem; não prova execução.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 142,
+      "entity_id": "legiao",
+      "field": "population",
+      "line": 8367,
+      "anchor_sha256": "653d6013388ea166d54e4cce465ab8e7ed8d8cedae541a36840bb15c26715785",
+      "verdict": "PROPOSAL_OR_ORDER",
+      "note": "Intenção, proposta ou ordem; não prova execução.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 143,
+      "entity_id": "lucas",
+      "field": "architecture",
+      "line": 8395,
+      "anchor_sha256": "d9b378d246568915577961730df5bf6368a655470e1b1b6fda33bb31a6e8d4a3",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 144,
+      "entity_id": "lucas",
+      "field": "population",
+      "line": 8395,
+      "anchor_sha256": "d9b378d246568915577961730df5bf6368a655470e1b1b6fda33bb31a6e8d4a3",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 145,
+      "entity_id": "edran",
+      "field": "powers",
+      "line": 8409,
+      "anchor_sha256": "570bcedb5807870f1dc5f3efa1e96d674b92be51d344b7d46553aa195811d0b7",
+      "verdict": "PROPOSAL_OR_ORDER",
+      "note": "Intenção, proposta ou ordem; não prova execução.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 146,
+      "entity_id": "tres-arcos",
+      "field": "capabilities",
+      "line": 8453,
+      "anchor_sha256": "fe70c04c1b80b9264eec0affbc3125f07f23654369d93b95e629fa9fdfe1b735",
+      "verdict": "SUMMARY_ONLY",
+      "note": "Recapitulação; recuperar cena e separar atribuições.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 147,
+      "entity_id": "lysa",
+      "field": "powers",
+      "line": 8453,
+      "anchor_sha256": "fe70c04c1b80b9264eec0affbc3125f07f23654369d93b95e629fa9fdfe1b735",
+      "verdict": "SUMMARY_ONLY",
+      "note": "Recapitulação; recuperar cena e separar atribuições.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 148,
+      "entity_id": "lysa",
+      "field": "capabilities",
+      "line": 8453,
+      "anchor_sha256": "fe70c04c1b80b9264eec0affbc3125f07f23654369d93b95e629fa9fdfe1b735",
+      "verdict": "SUMMARY_ONLY",
+      "note": "Recapitulação; recuperar cena e separar atribuições.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 149,
+      "entity_id": "lysa",
+      "field": "architecture",
+      "line": 8453,
+      "anchor_sha256": "fe70c04c1b80b9264eec0affbc3125f07f23654369d93b95e629fa9fdfe1b735",
+      "verdict": "SUMMARY_ONLY",
+      "note": "Recapitulação; recuperar cena e separar atribuições.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 150,
+      "entity_id": "lysa",
+      "field": "population",
+      "line": 8453,
+      "anchor_sha256": "fe70c04c1b80b9264eec0affbc3125f07f23654369d93b95e629fa9fdfe1b735",
+      "verdict": "SUMMARY_ONLY",
+      "note": "Recapitulação; recuperar cena e separar atribuições.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 151,
+      "entity_id": "lysa",
+      "field": "behavior",
+      "line": 8453,
+      "anchor_sha256": "fe70c04c1b80b9264eec0affbc3125f07f23654369d93b95e629fa9fdfe1b735",
+      "verdict": "SUMMARY_ONLY",
+      "note": "Recapitulação; recuperar cena e separar atribuições.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 152,
+      "entity_id": "tres-arcos",
+      "field": "role",
+      "line": 8465,
+      "anchor_sha256": "056590485bae8cc14ad9e550195f7960ad2b4719a5274b9cadfbda1ac98665b3",
+      "verdict": "REPORT_ONLY",
+      "note": "Informação relatada ou contextual; não confirmar campo sem revisão do emissor.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 153,
+      "entity_id": "legiao",
+      "field": "relationships",
+      "line": 8573,
+      "anchor_sha256": "b5e4052e77c597195b46547b3ee30a074fae6037e0ee83a6d83be208d54367cf",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 154,
+      "entity_id": "lucas",
+      "field": "location",
+      "line": 8587,
+      "anchor_sha256": "81eae646c2412f623d3da8f9e164824fde86130df4ae3f2ecd7872768691ee0d",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 155,
+      "entity_id": "legiao",
+      "field": "architecture",
+      "line": 8659,
+      "anchor_sha256": "850dea8ae47e28d10522690582434b1076339fc8ed95dea86ced5a9735d0d2fc",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 156,
+      "entity_id": "thalor",
+      "field": "architecture",
+      "line": 8659,
+      "anchor_sha256": "850dea8ae47e28d10522690582434b1076339fc8ed95dea86ced5a9735d0d2fc",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 157,
+      "entity_id": "legiao",
+      "field": "voice",
+      "line": 8707,
+      "anchor_sha256": "da4d46a7963fe7da7a185bfb6637e5203333252ae0e0c98ef12ee9a063d33966",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 158,
+      "entity_id": "miren",
+      "field": "appearance",
+      "line": 9180,
+      "anchor_sha256": "6066cb674a44cf26eab7c6b1a98ae74bb2a03b52540b9b96e58d490f5c69e153",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 159,
+      "entity_id": "miren",
+      "field": "role",
+      "line": 9292,
+      "anchor_sha256": "0230e02b91579361f579f3c87c2442e95797326d7f1d3a98736c6b10393b3d9d",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 160,
+      "entity_id": "miren",
+      "field": "architecture",
+      "line": 9300,
+      "anchor_sha256": "cdf466d70a7f36ee0e2398eee378178679f6046d38f7220154cce67f7e15aca5",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 161,
+      "entity_id": "miren",
+      "field": "location",
+      "line": 9300,
+      "anchor_sha256": "cdf466d70a7f36ee0e2398eee378178679f6046d38f7220154cce67f7e15aca5",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 162,
+      "entity_id": "kael",
+      "field": "architecture",
+      "line": 9300,
+      "anchor_sha256": "cdf466d70a7f36ee0e2398eee378178679f6046d38f7220154cce67f7e15aca5",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 163,
+      "entity_id": "miren",
+      "field": "behavior",
+      "line": 9354,
+      "anchor_sha256": "9d00290bf3260956de24f30ee1febfabe7dd54b3d8d18affab360afde61a5bce",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 164,
+      "entity_id": "thalor",
+      "field": "population",
+      "line": 9364,
+      "anchor_sha256": "f0a90f7f0854edd78d271a3a6ac77c1865eedfc3d21570b1bd0443cefb5f3642",
+      "verdict": "REPORT_ONLY",
+      "note": "Informação relatada ou contextual; não confirmar campo sem revisão do emissor.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 165,
+      "entity_id": "miren",
+      "field": "appearance",
+      "line": 9386,
+      "anchor_sha256": "f9c7c66809b838c326f18780068fd3cd7e82704975987c88397c3e4fb112ed7a",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 166,
+      "entity_id": "thalor",
+      "field": "relationships",
+      "line": 9418,
+      "anchor_sha256": "9781fd791b396478b3d39c8aff677835e2ae6a16cdc4ead9a055e9f3e405d86e",
+      "verdict": "HEADING_ONLY",
+      "note": "Título ou marcador; não demonstra fato.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 167,
+      "entity_id": "miren",
+      "field": "behavior",
+      "line": 9474,
+      "anchor_sha256": "50f43a3bdbfbb52918edbb08c5d50192e8dd347b099f207f4967d158a0c768cc",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 168,
+      "entity_id": "miren",
+      "field": "architecture",
+      "line": 9512,
+      "anchor_sha256": "c838e6d111b44fad36160831465bd7669faf7d7e3c6e8720ad0bcf0c34ea8ca8",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 169,
+      "entity_id": "miren",
+      "field": "population",
+      "line": 9512,
+      "anchor_sha256": "c838e6d111b44fad36160831465bd7669faf7d7e3c6e8720ad0bcf0c34ea8ca8",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 170,
+      "entity_id": "miren",
+      "field": "population",
+      "line": 9520,
+      "anchor_sha256": "ab8600239970c1366f24b1236715090fcca6caae84d3101b161759c336f7fcc4",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 171,
+      "entity_id": "kael",
+      "field": "population",
+      "line": 9520,
+      "anchor_sha256": "ab8600239970c1366f24b1236715090fcca6caae84d3101b161759c336f7fcc4",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 172,
+      "entity_id": "lysa",
+      "field": "population",
+      "line": 9544,
+      "anchor_sha256": "3939fa3944b82ea2ed0c08346de03f6df21e2338e3bfeaf9c7803c2cd7efd87b",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 173,
+      "entity_id": "kael",
+      "field": "population",
+      "line": 9544,
+      "anchor_sha256": "3939fa3944b82ea2ed0c08346de03f6df21e2338e3bfeaf9c7803c2cd7efd87b",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 174,
+      "entity_id": "miren",
+      "field": "powers",
+      "line": 9554,
+      "anchor_sha256": "d3df05b66843f44939a95aba7ba4c8cd860d4fc0d1437e7aba48b887fbebddf4",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 175,
+      "entity_id": "miren",
+      "field": "capabilities",
+      "line": 9554,
+      "anchor_sha256": "d3df05b66843f44939a95aba7ba4c8cd860d4fc0d1437e7aba48b887fbebddf4",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 176,
+      "entity_id": "miren",
+      "field": "governance",
+      "line": 9554,
+      "anchor_sha256": "d3df05b66843f44939a95aba7ba4c8cd860d4fc0d1437e7aba48b887fbebddf4",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 177,
+      "entity_id": "miren",
+      "field": "lifecycle",
+      "line": 9554,
+      "anchor_sha256": "d3df05b66843f44939a95aba7ba4c8cd860d4fc0d1437e7aba48b887fbebddf4",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 178,
+      "entity_id": "miren",
+      "field": "voice",
+      "line": 9678,
+      "anchor_sha256": "7695264d9ade217474f4440e1e7c87d7c3e1ad7d2e82b5e283c239eaa24cc21e",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 179,
+      "entity_id": "tres-arcos",
+      "field": "governance",
+      "line": 10162,
+      "anchor_sha256": "8e946ef138882dd254773449c044da49e0b763c490a39a0cb16ac140487e7f3c",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 180,
+      "entity_id": "lucas",
+      "field": "capabilities",
+      "line": 10238,
+      "anchor_sha256": "377bfa082e66ba2fd02a655be2a87d836a28305fa52fea57038872b93390b4a0",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 181,
+      "entity_id": "miren",
+      "field": "role",
+      "line": 10302,
+      "anchor_sha256": "f6ff3b74908265a68c7933e53fde4b565cfd8434e3fdfab5797c9f37ded7a589",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 182,
+      "entity_id": "varo",
+      "field": "population",
+      "line": 10334,
+      "anchor_sha256": "5c1f6a6e8ba51b53a3091442c14d586f295a184d436feb68567b74571f01a9b2",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 183,
+      "entity_id": "sistema",
+      "field": "population",
+      "line": 10550,
+      "anchor_sha256": "7dbcaf76cc65763327e95178a25df53cfac075400f7a24c7e3b85cc61531287a",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 184,
+      "entity_id": "lucas",
+      "field": "population",
+      "line": 10550,
+      "anchor_sha256": "7dbcaf76cc65763327e95178a25df53cfac075400f7a24c7e3b85cc61531287a",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 185,
+      "entity_id": "miren",
+      "field": "lifecycle",
+      "line": 10693,
+      "anchor_sha256": "591acf9fa1bf9cb6a06be8b822e495a21ffec4d1e12e0a7906c2a3fe4dc0954b",
+      "verdict": "PROPOSAL_OR_ORDER",
+      "note": "Intenção, proposta ou ordem; não prova execução.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 186,
+      "entity_id": "miren",
+      "field": "location",
+      "line": 11458,
+      "anchor_sha256": "0362bbeb01e58ba749a09c52f71353c37b1021fe4386c700731c00b9b0d48204",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 187,
+      "entity_id": "thalor",
+      "field": "powers",
+      "line": 11636,
+      "anchor_sha256": "8fd7e7fc50ca3621cc2eb28169e9a2fac7ef762b4433bd28ce761df89d7c0d54",
+      "verdict": "REPORT_ONLY",
+      "note": "Informação relatada ou contextual; não confirmar campo sem revisão do emissor.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 188,
+      "entity_id": "varo",
+      "field": "architecture",
+      "line": 11694,
+      "anchor_sha256": "a96ec5841ac6780d3057ce3d92fbc7183a6d0ba70313574f496f5ea17fe5dd78",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 189,
+      "entity_id": "arvendell",
+      "field": "role",
+      "line": 12320,
+      "anchor_sha256": "de311bb40566bd1d22eb231ba47616fc11893b039380cde0c1c6af14a73a809f",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 190,
+      "entity_id": "arvendell",
+      "field": "appearance",
+      "line": 12346,
+      "anchor_sha256": "4fa85dc875b746281d4747bfe8f389fc10e23b3bc31cf2dcaeca06c4958d13e4",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 191,
+      "entity_id": "varo",
+      "field": "relationships",
+      "line": 12396,
+      "anchor_sha256": "45aea61a4eccec7dd3a40c3d96c15acfac2fa5bd92b55f916951a6a597cbaaef",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 192,
+      "entity_id": "miren",
+      "field": "capabilities",
+      "line": 12832,
+      "anchor_sha256": "0e4017ab7dd1795fb70d10e12865c40904d2dbc40764b0a811ca67a169c7b04c",
+      "verdict": "REPORT_ONLY",
+      "note": "Informação relatada ou contextual; não confirmar campo sem revisão do emissor.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 193,
+      "entity_id": "lucas",
+      "field": "capabilities",
+      "line": 12971,
+      "anchor_sha256": "0f992a2621312fc061bb360e0af1cf83ae103f9c3f0617ff3a8e4a5b1578498d",
+      "verdict": "PROPOSAL_OR_ORDER",
+      "note": "Intenção, proposta ou ordem; não prova execução.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 194,
+      "entity_id": "lucas",
+      "field": "location",
+      "line": 12971,
+      "anchor_sha256": "0f992a2621312fc061bb360e0af1cf83ae103f9c3f0617ff3a8e4a5b1578498d",
+      "verdict": "PROPOSAL_OR_ORDER",
+      "note": "Intenção, proposta ou ordem; não prova execução.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 195,
+      "entity_id": "tres-arcos",
+      "field": "location",
+      "line": 13029,
+      "anchor_sha256": "603236982621bdd350e4ec72f616f421411b3e59d84d168d1c0f25f280361990",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 196,
+      "entity_id": "lysa",
+      "field": "location",
+      "line": 13131,
+      "anchor_sha256": "387fdd024333acd9a4c00d0797ba713037575d1b0402c1104b4a94d5565fea01",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 197,
+      "entity_id": "lysa",
+      "field": "voice",
+      "line": 13145,
+      "anchor_sha256": "7c8946247d213859df2280b746f311056fd8f15601965d39af9915c126babf9a",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 198,
+      "entity_id": "thalor",
+      "field": "population",
+      "line": 13215,
+      "anchor_sha256": "1e75b6ca13c94aacec58b127ae43bbdb04c7c42a2feee3ec9eb363e8622a9400",
+      "verdict": "HYPOTHESIS",
+      "note": "Possibilidade expressa; não fato.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 199,
+      "entity_id": "brannik",
+      "field": "role",
+      "line": 13263,
+      "anchor_sha256": "6ab10d18bd469f4dae2e6a4d74b280fd8f7d6672b741564d3aae7875df0c0a39",
+      "verdict": "PROPOSAL_OR_ORDER",
+      "note": "Intenção, proposta ou ordem; não prova execução.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 200,
+      "entity_id": "lysa",
+      "field": "role",
+      "line": 13263,
+      "anchor_sha256": "6ab10d18bd469f4dae2e6a4d74b280fd8f7d6672b741564d3aae7875df0c0a39",
+      "verdict": "PROPOSAL_OR_ORDER",
+      "note": "Intenção, proposta ou ordem; não prova execução.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 201,
+      "entity_id": "tres-arcos",
+      "field": "location",
+      "line": 13779,
+      "anchor_sha256": "220956af0455fd8c41f81423f73dca6eb25bad2fda71599ed1ecce570255f6cf",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 202,
+      "entity_id": "kael",
+      "field": "architecture",
+      "line": 13881,
+      "anchor_sha256": "6ee902f584150ae2d1811538ec0f0e2180e47f5eb4baa122801eef9b0c0a02dd",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 203,
+      "entity_id": "tres-arcos",
+      "field": "role",
+      "line": 13911,
+      "anchor_sha256": "278385b295d62b02a41f0814609bb21555a873bff45fdc87b7cdbc9502c1c7c6",
+      "verdict": "PROPOSAL_OR_ORDER",
+      "note": "Intenção, proposta ou ordem; não prova execução.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 204,
+      "entity_id": "lysa",
+      "field": "role",
+      "line": 14213,
+      "anchor_sha256": "79ebf524b9109b32a2b787a0aac83e4e5d0c3782baf73b552e24a73391c63ab5",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 205,
+      "entity_id": "edran",
+      "field": "architecture",
+      "line": 14229,
+      "anchor_sha256": "2feece36c0f390d89d8c770083d4614b1a07632ddcd078d23cbd041c4a6c5204",
+      "verdict": "REPORT_ONLY",
+      "note": "Informação relatada ou contextual; não confirmar campo sem revisão do emissor.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 206,
+      "entity_id": "lysa",
+      "field": "appearance",
+      "line": 14589,
+      "anchor_sha256": "9a0e6420681fb027bd173b09dccf171c861b67636b0cb4ad265b0e584711725b",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 207,
+      "entity_id": "edran",
+      "field": "location",
+      "line": 14699,
+      "anchor_sha256": "2d972e5908ebda4585cbd52f69a4a3c6fae5586acec4d250d9cb7a9c919b2583",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 208,
+      "entity_id": "lysa",
+      "field": "location",
+      "line": 14831,
+      "anchor_sha256": "8cface23dd00b6e9c66ad6a0a0981f0f6fbcf956b754d7db5aaf91491eb04c09",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 209,
+      "entity_id": "thalor",
+      "field": "role",
+      "line": 14923,
+      "anchor_sha256": "229a1c93a11abb4424723e1208468a6cc477c973b3d57dcde00c2eb28ed4705b",
+      "verdict": "REPORT_ONLY",
+      "note": "Informação relatada ou contextual; não confirmar campo sem revisão do emissor.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 210,
+      "entity_id": "lysa",
+      "field": "appearance",
+      "line": 15151,
+      "anchor_sha256": "214d0c73b24661007c4cbac6370c1a412f0ce0d5e929c65f13db112fcbfbab29",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 211,
+      "entity_id": "arvendell",
+      "field": "location",
+      "line": 15760,
+      "anchor_sha256": "8326f4073d1adce32a5cb329720ea4854ba999bb32bf6693f14eacdcbbcd76f5",
+      "verdict": "SUMMARY_ONLY",
+      "note": "Recapitulação; recuperar cena e separar atribuições.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 212,
+      "entity_id": "miren",
+      "field": "powers",
+      "line": 15772,
+      "anchor_sha256": "7e2134aa73f01aae114229035ba709c990fe0588e9f76201e00526d8b39868e2",
+      "verdict": "HYPOTHESIS",
+      "note": "Possibilidade expressa; não fato.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 213,
+      "entity_id": "miren",
+      "field": "governance",
+      "line": 15810,
+      "anchor_sha256": "6998a95a35e0e07e56a3f928566964de6d2fbc1a7b62a9a9143f1394e82ff1d9",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 214,
+      "entity_id": "bandeira-cinzenta",
+      "field": "architecture",
+      "line": 15872,
+      "anchor_sha256": "3811f006b4572505f7592a129e51202b669f41cdd423405407ac56961aca48e1",
+      "verdict": "HYPOTHESIS",
+      "note": "Possibilidade expressa; não fato.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 215,
+      "entity_id": "brannik",
+      "field": "governance",
+      "line": 16412,
+      "anchor_sha256": "2de4f51fa54567d84247fe82689241b07480c1743aedab6645462231cafcc7f7",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 216,
+      "entity_id": "brannik",
+      "field": "governance",
+      "line": 16544,
+      "anchor_sha256": "77f6222847ffc39211eb1ba1fbdf60a2adf4f22b16e68eb2b891b01db99da241",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 217,
+      "entity_id": "lucas",
+      "field": "governance",
+      "line": 17368,
+      "anchor_sha256": "4cad0d9e333761f4b4a3d94f727feff805269de4d9fc87498dd47d17beeafef0",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 218,
+      "entity_id": "brannik",
+      "field": "voice",
+      "line": 17662,
+      "anchor_sha256": "b19b918b1602b9840960698e26f98bc0334a7070ac19c33c75ed9b80a70cbdb1",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 219,
+      "entity_id": "brannik",
+      "field": "appearance",
+      "line": 17696,
+      "anchor_sha256": "6db10807cc61e0f72adaabee6d75aea7295bad9266f0d6302ac39dd5c9aad9f5",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 220,
+      "entity_id": "miren",
+      "field": "voice",
+      "line": 17776,
+      "anchor_sha256": "92fed1fee60128e2b8387ea024917b36594e7f3e6ed5e8a80240b251ef557954",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 221,
+      "entity_id": "brannik",
+      "field": "population",
+      "line": 17890,
+      "anchor_sha256": "cd790a74e5310883c6052b42da61332b38a699e30c767b607d1ede884a36af37",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 222,
+      "entity_id": "brannik",
+      "field": "lifecycle",
+      "line": 17890,
+      "anchor_sha256": "cd790a74e5310883c6052b42da61332b38a699e30c767b607d1ede884a36af37",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 223,
+      "entity_id": "brannik",
+      "field": "capabilities",
+      "line": 18500,
+      "anchor_sha256": "eb95772879cf157ebbd2862bd19fa3481db0dd02fbba735c98bfeb11a61cd0d1",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 224,
+      "entity_id": "brannik",
+      "field": "voice",
+      "line": 18536,
+      "anchor_sha256": "b19b918b1602b9840960698e26f98bc0334a7070ac19c33c75ed9b80a70cbdb1",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 225,
+      "entity_id": "brannik",
+      "field": "appearance",
+      "line": 18558,
+      "anchor_sha256": "784b7056c49a2253a9656e53340f21f1c64e0f527663ef0b44f50b10a1289b85",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 226,
+      "entity_id": "arvendell",
+      "field": "architecture",
+      "line": 18935,
+      "anchor_sha256": "68e0cc816329bfdb32878fce5c3c2a9e7293a620ebce1072fad1a4a8cd44da04",
+      "verdict": "HEADING_ONLY",
+      "note": "Título ou marcador; não demonstra fato.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 227,
+      "entity_id": "bandeira-cinzenta",
+      "field": "capabilities",
+      "line": 20782,
+      "anchor_sha256": "a59deb06ec58b64148538ec2698a6bf0940bcd85fe2627e6184506643111df84",
+      "verdict": "SUMMARY_ONLY",
+      "note": "Recapitulação; recuperar cena e separar atribuições.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 228,
+      "entity_id": "arvendell",
+      "field": "architecture",
+      "line": 20877,
+      "anchor_sha256": "1b6435af9d8710a7769af0b7214ad7a5c5a1939e626476fd329d0f364bc4eec2",
+      "verdict": "HEADING_ONLY",
+      "note": "Título ou marcador; não demonstra fato.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 229,
+      "entity_id": "varo",
+      "field": "architecture",
+      "line": 21157,
+      "anchor_sha256": "cc81e4313ba27d4e3c837e278c7cf27f7003480e3b64eda5bf3c0dc743134c74",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 230,
+      "entity_id": "brannik",
+      "field": "architecture",
+      "line": 22124,
+      "anchor_sha256": "5774fe7416c391e53f0948381b9a3b47078c755164d771f389d91409ecc63c9b",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 231,
+      "entity_id": "astra",
+      "field": "lifecycle",
+      "line": 22298,
+      "anchor_sha256": "4a76db6b2559fc1d0f54000fd1736cce27ab30249fb55d7963ae4188ddf04c03",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 232,
+      "entity_id": "brannik",
+      "field": "powers",
+      "line": 22714,
+      "anchor_sha256": "b2441719beae99819b89f6dc2914e173b42c368fa79fa28321250bb20296a6c3",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 233,
+      "entity_id": "astra",
+      "field": "powers",
+      "line": 23250,
+      "anchor_sha256": "f3b343fd9feb380fe175d21a1c6f1b138577f85a6a33a72fbe8e31efe25a515d",
+      "verdict": "REPORT_ONLY",
+      "note": "Informação relatada ou contextual; não confirmar campo sem revisão do emissor.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 234,
+      "entity_id": "astra",
+      "field": "behavior",
+      "line": 23266,
+      "anchor_sha256": "13b71137fb750ead127f93a7038ac89f0db32b862ecdc60adbb99f664f418a73",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 235,
+      "entity_id": "astra",
+      "field": "behavior",
+      "line": 23286,
+      "anchor_sha256": "7b8ea5c8bd519a7784ab51bb2df48466ca2d0533d3a6fca3c45a4b8d6f87abc8",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 236,
+      "entity_id": "astra",
+      "field": "governance",
+      "line": 23790,
+      "anchor_sha256": "9a262735d285339ad57135e4353b8826e80aed7689408acc0a711451685f10db",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 237,
+      "entity_id": "astra",
+      "field": "lifecycle",
+      "line": 24042,
+      "anchor_sha256": "ea6f85434821bca198a33dce5a616845f893443402a66eb7b0c32fffcad03b2f",
+      "verdict": "SUMMARY_ONLY",
+      "note": "Recapitulação; recuperar cena e separar atribuições.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 238,
+      "entity_id": "astra",
+      "field": "architecture",
+      "line": 24050,
+      "anchor_sha256": "f310f6867651c1dd91722a12bc02a99d752ecd68cfe15c46054f6a114f91ce09",
+      "verdict": "SUMMARY_ONLY",
+      "note": "Recapitulação; recuperar cena e separar atribuições.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 239,
+      "entity_id": "astra",
+      "field": "population",
+      "line": 24050,
+      "anchor_sha256": "f310f6867651c1dd91722a12bc02a99d752ecd68cfe15c46054f6a114f91ce09",
+      "verdict": "SUMMARY_ONLY",
+      "note": "Recapitulação; recuperar cena e separar atribuições.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 240,
+      "entity_id": "brannik",
+      "field": "architecture",
+      "line": 24050,
+      "anchor_sha256": "f310f6867651c1dd91722a12bc02a99d752ecd68cfe15c46054f6a114f91ce09",
+      "verdict": "SUMMARY_ONLY",
+      "note": "Recapitulação; recuperar cena e separar atribuições.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 241,
+      "entity_id": "brannik",
+      "field": "population",
+      "line": 24050,
+      "anchor_sha256": "f310f6867651c1dd91722a12bc02a99d752ecd68cfe15c46054f6a114f91ce09",
+      "verdict": "SUMMARY_ONLY",
+      "note": "Recapitulação; recuperar cena e separar atribuições.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 242,
+      "entity_id": "astra",
+      "field": "powers",
+      "line": 24054,
+      "anchor_sha256": "7c9e2eb8c7889e5816e142fbf0fc5737a4fa5f3898e0ebc5d2cccdc0b54eded7",
+      "verdict": "SUMMARY_ONLY",
+      "note": "Recapitulação; recuperar cena e separar atribuições.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 243,
+      "entity_id": "astra",
+      "field": "population",
+      "line": 24060,
+      "anchor_sha256": "d6b65a500402f3d372cd4444b6ebbbda14f03d736f81f314dcf49604c45c4aa2",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 244,
+      "entity_id": "astra",
+      "field": "governance",
+      "line": 24060,
+      "anchor_sha256": "d6b65a500402f3d372cd4444b6ebbbda14f03d736f81f314dcf49604c45c4aa2",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 245,
+      "entity_id": "astra",
+      "field": "architecture",
+      "line": 24066,
+      "anchor_sha256": "0f241c58a0417bc5781768baae1f4d4273dba73b93fee7eb51e92f29ca536e41",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 246,
+      "entity_id": "astra",
+      "field": "location",
+      "line": 24066,
+      "anchor_sha256": "0f241c58a0417bc5781768baae1f4d4273dba73b93fee7eb51e92f29ca536e41",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 247,
+      "entity_id": "lucas",
+      "field": "architecture",
+      "line": 24100,
+      "anchor_sha256": "8ef39aeb3fabf260e389043d7b5d33a2ee2b0d4e847ebda84ac1ad297ef7a473",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 248,
+      "entity_id": "lucas",
+      "field": "governance",
+      "line": 24131,
+      "anchor_sha256": "2de31f6501a36baefe170e23a35e0cd942f3f91ae903a06bf367c2014b6af98c",
+      "verdict": "PROPOSAL_OR_ORDER",
+      "note": "Intenção, proposta ou ordem; não prova execução.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 249,
+      "entity_id": "astra",
+      "field": "capabilities",
+      "line": 24349,
+      "anchor_sha256": "2eb800693cc590270730c6305537dac7f8544c139f5586109ebe8cfe613475ef",
+      "verdict": "REPORT_ONLY",
+      "note": "Informação relatada ou contextual; não confirmar campo sem revisão do emissor.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 250,
+      "entity_id": "miren",
+      "field": "relationships",
+      "line": 24689,
+      "anchor_sha256": "75fb2e040f12255407f97c511d6a4baef913e116755b908ba61e0330c68c1044",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 251,
+      "entity_id": "astra",
+      "field": "location",
+      "line": 24989,
+      "anchor_sha256": "328e60929470b5b99c7f08a0cdf24ae48f752c73f4bb7b1b40f078beaa488fc4",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 252,
+      "entity_id": "astra",
+      "field": "voice",
+      "line": 25011,
+      "anchor_sha256": "4d7a99dfb3d0d562063596761a6222db4440da4304665c6f4d2044f756512cc0",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 253,
+      "entity_id": "lysa",
+      "field": "relationships",
+      "line": 25349,
+      "anchor_sha256": "f4edee4a52cbbe167af4c627297c6b8635149aaf9e68c46d9b29aec3ed312aa4",
+      "verdict": "REPORT_ONLY",
+      "note": "Informação relatada ou contextual; não confirmar campo sem revisão do emissor.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 254,
+      "entity_id": "lysa",
+      "field": "governance",
+      "line": 25349,
+      "anchor_sha256": "f4edee4a52cbbe167af4c627297c6b8635149aaf9e68c46d9b29aec3ed312aa4",
+      "verdict": "REPORT_ONLY",
+      "note": "Informação relatada ou contextual; não confirmar campo sem revisão do emissor.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 255,
+      "entity_id": "thalor",
+      "field": "capabilities",
+      "line": 25367,
+      "anchor_sha256": "a8be73b7e8cb1bea07467e9ac7c1f7f7f6234f76541735f84bcb4554eb522ac1",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 256,
+      "entity_id": "miren",
+      "field": "relationships",
+      "line": 25477,
+      "anchor_sha256": "b2f40a03b071d3c25c6b5dbe807f3496a27e57138899d54357960ce934b3427f",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 257,
+      "entity_id": "astra",
+      "field": "voice",
+      "line": 25883,
+      "anchor_sha256": "385c21fee85d37dc0836d0873e3427c52d8cd84e6c8ae5a0a000f5dc8de2526b",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 258,
+      "entity_id": "sistema",
+      "field": "governance",
+      "line": 25885,
+      "anchor_sha256": "561565a5ef562973831d1952a292f868ec9e5b6b6d2ae893a5827b0e9524c47a",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 259,
+      "entity_id": "lucas",
+      "field": "appearance",
+      "line": 26450,
+      "anchor_sha256": "a90faa26a9bf1b4145e37b1e8bdc5faa14aff08d853a90d97f99c807c3831df4",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 260,
+      "entity_id": "bandeira-cinzenta",
+      "field": "behavior",
+      "line": 26562,
+      "anchor_sha256": "3925f36f28ae8db694ad5ad2a328e4f383f4377baba14d57e407f4dc7db1baa0",
+      "verdict": "HYPOTHESIS",
+      "note": "Possibilidade expressa; não fato.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 261,
+      "entity_id": "astra",
+      "field": "appearance",
+      "line": 26877,
+      "anchor_sha256": "e043b8d1681bb9cf59217bc014fcaabca0989d5c9c0fd5276a5decdf65cd4b64",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 262,
+      "entity_id": "astra",
+      "field": "capabilities",
+      "line": 26877,
+      "anchor_sha256": "e043b8d1681bb9cf59217bc014fcaabca0989d5c9c0fd5276a5decdf65cd4b64",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 263,
+      "entity_id": "brannik",
+      "field": "powers",
+      "line": 26877,
+      "anchor_sha256": "e043b8d1681bb9cf59217bc014fcaabca0989d5c9c0fd5276a5decdf65cd4b64",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 264,
+      "entity_id": "brannik",
+      "field": "capabilities",
+      "line": 26877,
+      "anchor_sha256": "e043b8d1681bb9cf59217bc014fcaabca0989d5c9c0fd5276a5decdf65cd4b64",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 265,
+      "entity_id": "lucas",
+      "field": "voice",
+      "line": 27239,
+      "anchor_sha256": "a6d122a5a2d7bbae8babaa247dfee1ca21a698d26fa275809a5a938581776c0d",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 266,
+      "entity_id": "lucas",
+      "field": "voice",
+      "line": 27379,
+      "anchor_sha256": "256d45c3a52cafbaa39cc14b7c07b203173eab25f3c5a8dcdd3982551d4d70f0",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 267,
+      "entity_id": "legiao",
+      "field": "voice",
+      "line": 27575,
+      "anchor_sha256": "804ddec1cf9d8650b5da4816504c7fbac1065bc354d4cfaef69ed6badfe0be66",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 268,
+      "entity_id": "lysa",
+      "field": "governance",
+      "line": 28377,
+      "anchor_sha256": "794b90231fcb6d59a67d19b8ec8aa69bcbcb7b5ad4c6d636d60b06709e814324",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 269,
+      "entity_id": "brannik",
+      "field": "role",
+      "line": 28463,
+      "anchor_sha256": "01fe164e921f25145351b91294d362566956e2cea97c22a3491935bf0e77af58",
+      "verdict": "SUMMARY_ONLY",
+      "note": "Recapitulação; recuperar cena e separar atribuições.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 270,
+      "entity_id": "astra",
+      "field": "appearance",
+      "line": 28548,
+      "anchor_sha256": "368a3cca474260f69e6df7f3edc44ed6ab34a59684aa29c2a96f1f41f3d186d8",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 271,
+      "entity_id": "casa-abraca",
+      "field": "powers",
+      "line": 28818,
+      "anchor_sha256": "aad055deb489b43fc0930d38513883f8f7e66f71c28128b6e8c85c852f4aa7ba",
+      "verdict": "REPORT_ONLY",
+      "note": "Informação relatada ou contextual; não confirmar campo sem revisão do emissor.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 272,
+      "entity_id": "casa-abraca",
+      "field": "capabilities",
+      "line": 28818,
+      "anchor_sha256": "aad055deb489b43fc0930d38513883f8f7e66f71c28128b6e8c85c852f4aa7ba",
+      "verdict": "REPORT_ONLY",
+      "note": "Informação relatada ou contextual; não confirmar campo sem revisão do emissor.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 273,
+      "entity_id": "casa-abraca",
+      "field": "lifecycle",
+      "line": 28818,
+      "anchor_sha256": "aad055deb489b43fc0930d38513883f8f7e66f71c28128b6e8c85c852f4aa7ba",
+      "verdict": "REPORT_ONLY",
+      "note": "Informação relatada ou contextual; não confirmar campo sem revisão do emissor.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 274,
+      "entity_id": "sistema",
+      "field": "location",
+      "line": 29062,
+      "anchor_sha256": "fb0ecef51529ed41b8488dcdabc781159b688c41ba670090a9f357b83c9fd054",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 275,
+      "entity_id": "astra",
+      "field": "role",
+      "line": 29422,
+      "anchor_sha256": "2712c3cbc158c0df81c3ae5d2f47c5d77d6e146190fd3d0a0ed2114efcea54df",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 276,
+      "entity_id": "lysa",
+      "field": "lifecycle",
+      "line": 29991,
+      "anchor_sha256": "704bb208691eec389114b450f7dda7f223070dfeab1928ca6d586c287aaf6065",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 277,
+      "entity_id": "cirn",
+      "field": "behavior",
+      "line": 30371,
+      "anchor_sha256": "63a6c9f3590d6a089ff1acf847fa2fcb59565d0687784c523cd062376811710d",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 278,
+      "entity_id": "cirn",
+      "field": "behavior",
+      "line": 30469,
+      "anchor_sha256": "d5845b382e9098656d6ef7a88f932ac903e934f87b94a8a91511db27e9f2dbc9",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 279,
+      "entity_id": "cirn",
+      "field": "location",
+      "line": 30519,
+      "anchor_sha256": "edd1de83c7896141376f72475fe48592f5a133a7cf77b052c6f44e7ee941c759",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 280,
+      "entity_id": "cirn",
+      "field": "role",
+      "line": 30884,
+      "anchor_sha256": "f5fe3d6f3fcc6e98374b3647f5ac2e692bfbd7809ddd88ab34a1b0c0bee7ea1e",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 281,
+      "entity_id": "cirn",
+      "field": "capabilities",
+      "line": 31370,
+      "anchor_sha256": "3724e2058c2ead2e0ece853b2aac804669f28da9f0e81d01532252375a9d57dc",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 282,
+      "entity_id": "astra",
+      "field": "relationships",
+      "line": 31692,
+      "anchor_sha256": "0ab11afdbcb2cd683fd83254f1c61aa127e0ecb6de6904ef6b3dbcd1bfe4ea7f",
+      "verdict": "PROPOSAL_OR_ORDER",
+      "note": "Intenção, proposta ou ordem; não prova execução.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 283,
+      "entity_id": "cirn",
+      "field": "location",
+      "line": 31738,
+      "anchor_sha256": "9fbc00edc90d08bf1a71c40e6d6cef44f1255abb901699db788dbbe247b54e79",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 284,
+      "entity_id": "cirn",
+      "field": "role",
+      "line": 31764,
+      "anchor_sha256": "8173bd636730039ae1ae6bc3e11cf559b28fe1825fa976263d59d1e896df8544",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 285,
+      "entity_id": "cirn",
+      "field": "voice",
+      "line": 32048,
+      "anchor_sha256": "9e28314ecf3de19c04d7f0047b792707ca2ac244c91ee1b5f38b13902ee955ac",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 286,
+      "entity_id": "cirn",
+      "field": "voice",
+      "line": 32078,
+      "anchor_sha256": "666cbe1ab3aa5bad8956af8f1a7f8444c8e204b8853223055ec2b29bab947f0c",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 287,
+      "entity_id": "rhem",
+      "field": "behavior",
+      "line": 32556,
+      "anchor_sha256": "3f0ee03d60067d0c5e3230466297d84320540a05190a0e7c7c01e11707b70efd",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 288,
+      "entity_id": "tavren",
+      "field": "voice",
+      "line": 33403,
+      "anchor_sha256": "4c08eb0ca0cb69404f87c572ff335e318ba7bfe50a5faa486a28672beed5a7df",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 289,
+      "entity_id": "legiao",
+      "field": "relationships",
+      "line": 33491,
+      "anchor_sha256": "758e6e910d93dc1102de2681c36646c29809049fbd4c7731b675ff049f911e4c",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 290,
+      "entity_id": "rhem",
+      "field": "behavior",
+      "line": 33625,
+      "anchor_sha256": "58d1af5ea7874a7e6cfb1011dd283a086528d3b428607f0df70aa75220b87cb5",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 291,
+      "entity_id": "sistema",
+      "field": "location",
+      "line": 33675,
+      "anchor_sha256": "64db13f0800d21e6c5c579942d369c24fee3c8a222de15d1e1a5104c13900c28",
+      "verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "note": "Âncora não basta para atribuir o campo à entidade; requer contexto ou reclassificação.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 292,
+      "entity_id": "arvendell",
+      "field": "population",
+      "line": 33767,
+      "anchor_sha256": "0d90b50c7fc11c25b162d1d326d1357d3cd254845081a37f079025063a67c6d7",
+      "verdict": "REPORT_ONLY",
+      "note": "Informação relatada ou contextual; não confirmar campo sem revisão do emissor.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 293,
+      "entity_id": "rhem",
+      "field": "voice",
+      "line": 33840,
+      "anchor_sha256": "963f895b9a43749bd7d0c8e4d7331fe3a4529939c70d0b73ca6bfe342f5f6140",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 294,
+      "entity_id": "sistema",
+      "field": "governance",
+      "line": 34564,
+      "anchor_sha256": "710bf54fe3cd460f3d430b24f6d98734072b70bc7746add3ca02e60aa57e94a5",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 295,
+      "entity_id": "ilva",
+      "field": "behavior",
+      "line": 36018,
+      "anchor_sha256": "bb01d4360d43f61fef2f0acaff53428cf8cad7ac5f0c17bde52669ae9fa30130",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 296,
+      "entity_id": "thalor",
+      "field": "location",
+      "line": 36161,
+      "anchor_sha256": "5138f574d3685b995f6e86f3365db504e855515430c73b6d1490a3a2c7ce20b6",
+      "verdict": "REPORT_ONLY",
+      "note": "Informação relatada ou contextual; não confirmar campo sem revisão do emissor.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 297,
+      "entity_id": "edric",
+      "field": "governance",
+      "line": 37206,
+      "anchor_sha256": "dcf05752a56c130600009633592c57789dac7ed59843414af8481e8f252282a6",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 298,
+      "entity_id": "edran",
+      "field": "location",
+      "line": 38573,
+      "anchor_sha256": "61acc420a79bae7fdfefbd78f677dc61f3dee16534c7434a1432885db36f6d70",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 299,
+      "entity_id": "thalor",
+      "field": "capabilities",
+      "line": 38661,
+      "anchor_sha256": "affc25c97a8be8224af021a4c8e8dcd9d56eeab0eb86ea2785883930afd531d2",
+      "verdict": "REPORT_ONLY",
+      "note": "Informação relatada ou contextual; não confirmar campo sem revisão do emissor.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 300,
+      "entity_id": "bandeira-cinzenta",
+      "field": "governance",
+      "line": 39241,
+      "anchor_sha256": "ab96599a70a6a662aa3631c727f903c8872f9a47f9ccb87c49cb9aa50f2e6d24",
+      "verdict": "NON_NARRATIVE",
+      "note": "Planejamento ou alternativa, não ocorrência.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 301,
+      "entity_id": "lysa",
+      "field": "relationships",
+      "line": 39549,
+      "anchor_sha256": "8a3319e072117fcbaf9bf19bc12cfbfda3eab71e93700d5bd1b0bc2f90593fa0",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 302,
+      "entity_id": "bandeira-cinzenta",
+      "field": "location",
+      "line": 39805,
+      "anchor_sha256": "5f826194e25b75cc30bddb9d9ab39c11c460fa34654be261441d7774624a6f5f",
+      "verdict": "SCENE_CANDIDATE",
+      "note": "Ação ou observação contextual; não certificar traço permanente ou campo sem revisão.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 303,
+      "entity_id": "genese",
+      "field": "powers",
+      "line": 40438,
+      "anchor_sha256": "e7ee1a5a9a92c7e2ca811b3a461b1df479ce3d487f7504159092872da447b4f2",
+      "verdict": "HEADING_ONLY",
+      "note": "Título ou marcador; não demonstra fato.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 304,
+      "entity_id": "genese",
+      "field": "powers",
+      "line": 40789,
+      "anchor_sha256": "eb02a53a8f1f53aa047a506b3f99c6ba1ecc2e4bcb29ee4482b35ab4e55efd58",
+      "verdict": "SUMMARY_ONLY",
+      "note": "Recapitulação; recuperar cena e separar atribuições.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 305,
+      "entity_id": "veyra",
+      "field": "role",
+      "line": 40801,
+      "anchor_sha256": "a4cc0bc17a08830dd0b379382580c1ac8cb7a67843b4fc92b266f92a585f0002",
+      "verdict": "SUMMARY_ONLY",
+      "note": "Recapitulação; recuperar cena e separar atribuições.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 306,
+      "entity_id": "veyra",
+      "field": "governance",
+      "line": 40801,
+      "anchor_sha256": "a4cc0bc17a08830dd0b379382580c1ac8cb7a67843b4fc92b266f92a585f0002",
+      "verdict": "SUMMARY_ONLY",
+      "note": "Recapitulação; recuperar cena e separar atribuições.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    },
+    {
+      "original_id": 307,
+      "entity_id": "genese",
+      "field": "capabilities",
+      "line": 40813,
+      "anchor_sha256": "6ee563265a876eeaa032463218193908004c2c27bf60b777685f44e6ba8d0f5f",
+      "verdict": "SUMMARY_ONLY",
+      "note": "Recapitulação; recuperar cena e separar atribuições.",
+      "review_stage": "ETAPA_B_TRIAGE",
+      "canon_promotion": false
+    }
+  ],
+  "ledger_counts": {
+    "NON_NARRATIVE": 54,
+    "SUMMARY_ONLY": 25,
+    "NOT_ATTRIBUTED": 29,
+    "SUPPORTED_CANDIDATE": 21,
+    "HYPOTHESIS": 11,
+    "PROPOSAL_ONLY": 1,
+    "HEADING_ONLY": 7,
+    "ORDER_ONLY": 3,
+    "REPORT_ONLY": 36,
+    "PROPOSAL_OR_ORDER": 13,
+    "FIELD_OR_SUBJECT_INSUFFICIENT": 52,
+    "SCENE_CANDIDATE": 55
+  },
+  "previous_candidates_review": [
+    {
+      "id": "LI-C01-001",
+      "line": 982,
+      "exact": true,
+      "proposed_id": "varo",
+      "registry_match": true,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-002",
+      "line": 1812,
+      "exact": true,
+      "proposed_id": "edran",
+      "registry_match": true,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-003",
+      "line": 6747,
+      "exact": true,
+      "proposed_id": "brannik",
+      "registry_match": true,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-004",
+      "line": 7802,
+      "exact": true,
+      "proposed_id": "lysa",
+      "registry_match": true,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-005",
+      "line": 9132,
+      "exact": true,
+      "proposed_id": "miren",
+      "registry_match": true,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-006",
+      "line": 23030,
+      "exact": true,
+      "proposed_id": "astra",
+      "registry_match": true,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-007",
+      "line": 10258,
+      "exact": true,
+      "proposed_id": "candidate:tarek-book-i",
+      "registry_match": false,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-008",
+      "line": 31896,
+      "exact": true,
+      "proposed_id": "chr-halden-cozinheiro",
+      "registry_match": true,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-009",
+      "line": 36018,
+      "exact": true,
+      "proposed_id": "ilva",
+      "registry_match": true,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-010",
+      "line": 36024,
+      "exact": true,
+      "proposed_id": "chr-fen-registro",
+      "registry_match": true,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-011",
+      "line": 36010,
+      "exact": true,
+      "proposed_id": "candidate:mateo-book-i",
+      "registry_match": false,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-012",
+      "line": 30313,
+      "exact": true,
+      "proposed_id": "rhem",
+      "registry_match": true,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-013",
+      "line": 982,
+      "exact": true,
+      "proposed_id": "varo",
+      "registry_match": true,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-014",
+      "line": 7810,
+      "exact": true,
+      "proposed_id": "lysa",
+      "registry_match": true,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-015",
+      "line": 40805,
+      "exact": true,
+      "proposed_id": "lucas-miren",
+      "registry_match": false,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-016",
+      "line": 23036,
+      "exact": true,
+      "proposed_id": "astra",
+      "registry_match": true,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-017",
+      "line": 1812,
+      "exact": true,
+      "proposed_id": "thalor",
+      "registry_match": true,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-018",
+      "line": 40791,
+      "exact": true,
+      "proposed_id": "tres-arcos",
+      "registry_match": true,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-019",
+      "line": 1856,
+      "exact": true,
+      "proposed_id": "arvendell",
+      "registry_match": true,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-020",
+      "line": 329,
+      "exact": true,
+      "proposed_id": "orcs",
+      "registry_match": false,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-021",
+      "line": 7055,
+      "exact": true,
+      "proposed_id": "tres-arcos",
+      "registry_match": true,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-022",
+      "line": 335,
+      "exact": true,
+      "proposed_id": "orcs",
+      "registry_match": false,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-023",
+      "line": 30567,
+      "exact": true,
+      "proposed_id": "candidate:dez-primeira-lanca",
+      "registry_match": false,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-024",
+      "line": 40019,
+      "exact": true,
+      "proposed_id": "ilva",
+      "registry_match": true,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-025",
+      "line": 7059,
+      "exact": true,
+      "proposed_id": "aqueduto",
+      "registry_match": false,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-026",
+      "line": 40606,
+      "exact": true,
+      "proposed_id": "academia-tres-arcos",
+      "registry_match": true,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-027",
+      "line": 40458,
+      "exact": true,
+      "proposed_id": "genese",
+      "registry_match": true,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-028",
+      "line": 9160,
+      "exact": true,
+      "proposed_id": "miren-placa",
+      "registry_match": false,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-029",
+      "line": 36006,
+      "exact": true,
+      "proposed_id": "automato",
+      "registry_match": false,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-030",
+      "line": 313,
+      "exact": true,
+      "proposed_id": "legiao",
+      "registry_match": true,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-031",
+      "line": 40809,
+      "exact": true,
+      "proposed_id": "missao-inicial",
+      "registry_match": false,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-032",
+      "line": 329,
+      "exact": true,
+      "proposed_id": "legiao",
+      "registry_match": true,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-033",
+      "line": 40628,
+      "exact": true,
+      "proposed_id": "bandeira-cinzenta",
+      "registry_match": true,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-034",
+      "line": 36169,
+      "exact": true,
+      "proposed_id": "veyra",
+      "registry_match": true,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    },
+    {
+      "id": "LI-C01-035",
+      "line": 40803,
+      "exact": true,
+      "proposed_id": "coracao",
+      "registry_match": false,
+      "semantic_status": "SUMMARY_REQUIRES_DISTINCT_CORACAO_ID"
+    },
+    {
+      "id": "LI-C01-036",
+      "line": 40630,
+      "exact": true,
+      "proposed_id": "tres-arcos",
+      "registry_match": true,
+      "semantic_status": "CANDIDATE_RETAINED_NOT_PROMOTED"
+    }
+  ],
+  "additional_records": [
+    {
+      "id": "LI-C01-B-001",
+      "dimension": "personagens",
+      "entity_id": "chr-durghan-uzgor",
+      "line": 2296,
+      "anchor": "— Meu povo me chama de DURGHAN. Sou o chefe de guerra dos Uzgor.",
+      "interpretation": "Durghan se identifica como chefe de guerra Uzgor",
+      "registry_match": "EXACT_EXISTING_ID",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-002",
+      "dimension": "personagens",
+      "entity_id": "chr-grazha-uzgor",
+      "line": 20246,
+      "anchor": "GRAZHA observou sua armadura.",
+      "interpretation": "Grazha presente na conversa com emissários Uzgor",
+      "registry_match": "EXACT_EXISTING_ID",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-003",
+      "dimension": "personagens",
+      "entity_id": "chr-korr-uzgor",
+      "line": 20248,
+      "anchor": "KORR mantinha os braços cruzados.",
+      "interpretation": "Korr presente na mesma conversa",
+      "registry_match": "EXACT_EXISTING_ID",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-004",
+      "dimension": "personagens",
+      "entity_id": "candidate:neria-valmont",
+      "line": 21861,
+      "anchor": "— DAMA SELENE autorizou uma vistoria técnica preliminar das estruturas dos Três Arcos. A pessoa designada é NÉRIA VALMONT, engenheira de obras civis vinculada à administração de Halvern.",
+      "interpretation": "Néria Valmont designada engenheira de obras civis de Halvern",
+      "registry_match": "CANDIDATE_REQUIRES_RESOLUTION",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-005",
+      "dimension": "personagens",
+      "entity_id": "candidate:esmara",
+      "line": 21215,
+      "anchor": "Chamava-se ESMARA.",
+      "interpretation": "Esmara identificada; origem em Veldon na linha 21217",
+      "registry_match": "CANDIDATE_REQUIRES_RESOLUTION",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-006",
+      "dimension": "personagens",
+      "entity_id": "candidate:daren-book-i",
+      "line": 17686,
+      "anchor": "— Meu nome é DAREN.",
+      "interpretation": "Daren apresenta seu nome; não fundir com Daren de outros livros sem prova",
+      "registry_match": "CANDIDATE_REQUIRES_RESOLUTION",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-007",
+      "dimension": "personagens",
+      "entity_id": "candidate:selene-arvost",
+      "line": 14715,
+      "anchor": "A primeira era DAMA SELENE ARVOST, administradora territorial delegada pelo Marquesado para tratar de concessões provisórias, obras de recuperação e disputas administrativas.",
+      "interpretation": "Selene Arvost, administradora territorial delegada",
+      "registry_match": "CANDIDATE_REQUIRES_RESOLUTION",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-008",
+      "dimension": "personagens",
+      "entity_id": "candidate:auren-velcast",
+      "line": 14719,
+      "anchor": "O segundo era LORD AUREN VELCAST, representante de interesses comerciais relacionados às estradas e entrepostos do norte.",
+      "interpretation": "Auren Velcast, representante de interesses comerciais",
+      "registry_match": "CANDIDATE_REQUIRES_RESOLUTION",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-009",
+      "dimension": "personagens",
+      "entity_id": "maelis",
+      "line": 39537,
+      "anchor": "Entre elas havia uma família de agricultores indicada por ESMARA, dois artesãos de madeira e uma profissional de saúde de Veldon chamada MAELIS REN.",
+      "interpretation": "Maelis Ren de Veldon; conferir identidade com ficha existente",
+      "registry_match": "EXACT_EXISTING_ID",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-010",
+      "dimension": "personagens",
+      "entity_id": "chr-oren-legiao",
+      "line": 40610,
+      "anchor": "OREN ajudava BRANNIK a revisar as plantas de uma nova construção.",
+      "interpretation": "Oren ajuda Brannik a revisar plantas",
+      "registry_match": "EXACT_EXISTING_ID",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-011",
+      "dimension": "personagens",
+      "entity_id": "chr-elyan-legiao",
+      "line": 40612,
+      "anchor": "ELYAN conversava com alguns dos acolhidos vindos da pedreira.",
+      "interpretation": "Elyan conversa com acolhidos da pedreira",
+      "registry_match": "EXACT_EXISTING_ID",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-012",
+      "dimension": "personagens",
+      "entity_id": "candidate:odran",
+      "line": 38573,
+      "anchor": "O magistrado ODRAN chegou acompanhado de SELENE e EDRAN.",
+      "interpretation": "Odran, magistrado, chega com Selene e Edran",
+      "registry_match": "CANDIDATE_REQUIRES_RESOLUTION",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-013",
+      "dimension": "aparencia",
+      "entity_id": "candidate:selene-arvost",
+      "line": 14717,
+      "anchor": "Uma mulher de aproximadamente quarenta anos, cabelos escuros cuidadosamente presos, roupas sóbrias e expressão difícil de interpretar.",
+      "interpretation": "Aparência histórica, idade aproximada",
+      "registry_match": "CANDIDATE_REQUIRES_RESOLUTION",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-014",
+      "dimension": "aparencia",
+      "entity_id": "candidate:esmara",
+      "line": 21213,
+      "anchor": "Era uma mulher de aproximadamente quarenta e cinco anos, cabelos castanhos presos numa trança, rosto marcado pelo sol e mãos de quem passara boa parte da vida trabalhando na terra.",
+      "interpretation": "Aparência histórica, idade aproximada; nome na linha 21215",
+      "registry_match": "CANDIDATE_REQUIRES_RESOLUTION",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-015",
+      "dimension": "origem",
+      "entity_id": "candidate:esmara",
+      "line": 21217,
+      "anchor": "Viera da aldeia de VELDON depois de receber uma proposta de avaliação agrícola remunerada.",
+      "interpretation": "Vinda da aldeia de Veldon para avaliação remunerada",
+      "registry_match": "CANDIDATE_REQUIRES_RESOLUTION",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-016",
+      "dimension": "povos",
+      "entity_id": "org-uzgor",
+      "line": 2296,
+      "anchor": "— Meu povo me chama de DURGHAN. Sou o chefe de guerra dos Uzgor.",
+      "interpretation": "Clã Uzgor com liderança identificada",
+      "registry_match": "EXACT_EXISTING_ID",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-017",
+      "dimension": "povos",
+      "entity_id": "brannik",
+      "line": 20322,
+      "anchor": "O anão respondeu:",
+      "interpretation": "Brannik referido como anão; sujeito identificado na linha 20320",
+      "registry_match": "EXACT_EXISTING_ID",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-018",
+      "dimension": "biomas",
+      "entity_id": "arvendell",
+      "line": 994,
+      "anchor": "VARO seleciona uma elevação baixa, a sudoeste do campo de batalha, com acesso ao rio por uma trilha estreita.",
+      "interpretation": "Elevação baixa com acesso a rio por trilha; geografia local",
+      "registry_match": "EXACT_EXISTING_ID",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-019",
+      "dimension": "religioes",
+      "entity_id": "chr-oren-legiao",
+      "line": 30369,
+      "anchor": "— Pelos deuses...",
+      "interpretation": "Expressão Pelos deuses; não prova filiação religiosa; emissor na linha 30367",
+      "registry_match": "EXACT_EXISTING_ID",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-020",
+      "dimension": "criaturas-fauna",
+      "entity_id": "candidate:horse-unnamed",
+      "line": 5501,
+      "anchor": "Até que um dos cavalos se assusta.",
+      "interpretation": "Cavalo presente; sem nome, espécie fantástica ou ficha individual",
+      "registry_match": "CANDIDATE_REQUIRES_RESOLUTION",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-021",
+      "dimension": "flora-materiais",
+      "entity_id": "candidate:razhka",
+      "line": 20312,
+      "anchor": "— Uma raiz cultivada nas encostas rochosas. Cresce onde muitos grãos não prosperam. Nosso povo a utiliza quando precisa permanecer nas montanhas.",
+      "interpretation": "Raiz de encostas rochosas; nome na linha 20306, relato Uzgor, consumo humano não verificado",
+      "registry_match": "CANDIDATE_REQUIRES_RESOLUTION",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-022",
+      "dimension": "gastronomia-vestuario",
+      "entity_id": "candidate:razhka",
+      "line": 20318,
+      "anchor": "— Para nós, sim. Para vocês, não sei. Teriam de verificar.",
+      "interpretation": "Comestível para Uzgor segundo Grazha; segurança humana desconhecida",
+      "registry_match": "CANDIDATE_REQUIRES_RESOLUTION",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-023",
+      "dimension": "tradicoes",
+      "entity_id": "legiao",
+      "line": 27919,
+      "anchor": "O evento havia sido aprovado pelos representantes dos moradores, com participação voluntária. Os alimentos foram separados do orçamento comunitário e de contribuições destinadas à celebração, sem consumir as reservas essenciais dos feridos e das patrulhas.",
+      "interpretation": "Celebração voluntária aprovada pelos representantes",
+      "registry_match": "EXACT_EXISTING_ID",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-024",
+      "dimension": "arquitetura-artes",
+      "entity_id": "legiao",
+      "line": 28209,
+      "anchor": "Então começaram os primeiros acordes da canção composta durante a semana.",
+      "interpretation": "Canção composta na semana, executada em celebração",
+      "registry_match": "EXACT_EXISTING_ID",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-025",
+      "dimension": "arquitetura-artes",
+      "entity_id": "brannik",
+      "line": 27511,
+      "anchor": "BRANNIK, por sua vez, conhecia canções de trabalho de seu povo.",
+      "interpretation": "Canções de trabalho de seu povo; sem título ou origem regional comprovados",
+      "registry_match": "EXACT_EXISTING_ID",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-026",
+      "dimension": "costumes-instituicoes",
+      "entity_id": "maelis",
+      "line": 39551,
+      "anchor": "Após a avaliação de suas referências e de sua experiência, MAELIS aceitou um contrato inicial para organizar atendimento básico, triagem, higiene clínica e encaminhamentos, respeitando os limites de seus conhecimentos e os recursos disponíveis.",
+      "interpretation": "Contrato inicial de saúde; não hospital",
+      "registry_match": "EXACT_EXISTING_ID",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-027",
+      "dimension": "economia",
+      "entity_id": "chr-halden-cozinheiro",
+      "line": 40017,
+      "anchor": "Mas havia iniciado uma atividade remunerada que poderia crescer.",
+      "interpretation": "Atividade remunerada; hospedaria ainda inexistente",
+      "registry_match": "EXACT_EXISTING_ID",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-028",
+      "dimension": "economia",
+      "entity_id": "chr-fen-registro",
+      "line": 40021,
+      "anchor": "FEN auxiliava na formação do arquivo civil.",
+      "interpretation": "Auxilia formação do arquivo civil",
+      "registry_match": "EXACT_EXISTING_ID",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-029",
+      "dimension": "decisoes",
+      "entity_id": "tres-arcos",
+      "line": 38657,
+      "anchor": "— A Cidade Livre exercerá governo próprio sobre seus assuntos internos, administração, segurança local, contratos, tributos de sua competência e instituições civis, sujeitos aos direitos preservados no acordo.",
+      "interpretation": "Governo próprio interno nos limites do acordo",
+      "registry_match": "EXACT_EXISTING_ID",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-030",
+      "dimension": "relacionamentos",
+      "entity_id": "org-uzgor",
+      "line": 20300,
+      "anchor": "— Leis construídas por pessoas de diferentes povos. Não quero simplesmente obrigar os outros a aceitar costumes que desconhecem.",
+      "interpretation": "Lucas expressa intenção de leis construídas por diferentes povos; não prova adesão",
+      "registry_match": "EXACT_EXISTING_ID",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-031",
+      "dimension": "locais",
+      "entity_id": "tres-arcos",
+      "line": 8251,
+      "anchor": "Três imensos arcos de pedra dominam uma plataforma rochosa.",
+      "interpretation": "Três arcos de pedra sobre plataforma rochosa",
+      "registry_match": "EXACT_EXISTING_ID",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-032",
+      "dimension": "acontecimentos",
+      "entity_id": "tres-arcos",
+      "line": 38661,
+      "anchor": "— Thalor reconhece sua personalidade política distinta e sua capacidade de celebrar acordos próprios, sem transformá-la em vassala de um senhor local.",
+      "interpretation": "Reconhecimento da personalidade política distinta",
+      "registry_match": "EXACT_EXISTING_ID",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-033",
+      "dimension": "tecnologias",
+      "entity_id": "candidate:early-automaton",
+      "line": 36006,
+      "anchor": "OREN explicou o funcionamento do autômato, respeitando os limites de segurança.",
+      "interpretation": "Oren explica autômato; não confundir com Malha Aurora",
+      "registry_match": "CANDIDATE_REQUIRES_RESOLUTION",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-C01-B-034",
+      "dimension": "misterios",
+      "entity_id": "genese",
+      "line": 40454,
+      "anchor": "Conhecer e verificar âncoras independentes além de Três Arcos; compreender suas fontes de energia; desenvolver dispositivos de segurança e autorização; obter cooperação voluntária dos operadores envolvidos.",
+      "interpretation": "Requisitos históricos parcialmente identificados; não impor limites atuais",
+      "registry_match": "EXACT_EXISTING_ID",
+      "status": "EDITORIAL_CANDIDATE",
+      "canon_promotion": false
+    }
+  ],
+  "dimensions": {
+    "personagens": 23,
+    "aparencia": 3,
+    "personalidade-voz": 1,
+    "origem": 2,
+    "relacionamentos": 2,
+    "evolucao": 1,
+    "reinos": 1,
+    "cidades": 1,
+    "biomas": 1,
+    "rotas": 1,
+    "povos": 3,
+    "locais": 2,
+    "religioes": 1,
+    "idiomas-expressoes": 1,
+    "tradicoes": 2,
+    "gastronomia-vestuario": 2,
+    "arquitetura-artes": 3,
+    "costumes-instituicoes": 2,
+    "magias": 1,
+    "artefatos": 1,
+    "tecnologias": 2,
+    "criaturas-fauna": 1,
+    "flora-materiais": 1,
+    "criacoes": 1,
+    "acontecimentos": 2,
+    "guerras": 1,
+    "organizacoes": 1,
+    "economia": 3,
+    "misterios": 2,
+    "decisoes": 2
+  },
+  "chapter_index": [
+    {
+      "chapter": 1,
+      "markers": [
+        {
+          "line": 285,
+          "text": "Capítulo 1 — O preço da primeira vitória"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 2,
+      "markers": [
+        {
+          "line": 666,
+          "text": "Capítulo 2 — O conselho dos trezentos"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 3,
+      "markers": [
+        {
+          "line": 938,
+          "text": "Capítulo 3 — Uma vitória não constrói um reino"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 4,
+      "markers": [
+        {
+          "line": 1253,
+          "text": "Capítulo 4 - O sonho de um rei sem reino"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 5,
+      "markers": [
+        {
+          "line": 1656,
+          "text": "Capítulo 5 - Três decisões, um futuro"
+        },
+        {
+          "line": 1718,
+          "text": "Capítulo 5 — O peso de trezentas vidas"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 6,
+      "markers": [
+        {
+          "line": 2206,
+          "text": "Capítulo 6 — O juramento dos que não pertencem"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 7,
+      "markers": [
+        {
+          "line": 2898,
+          "text": "Capítulo 7 — A arma que não era uma espada"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 8,
+      "markers": [
+        {
+          "line": 3681,
+          "text": "Capítulo 8 - A Legião que escolheu existir"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 9,
+      "markers": [
+        {
+          "line": 4614,
+          "text": "Capítulo 9 — A ponta da lança"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 10,
+      "markers": [
+        {
+          "line": 5365,
+          "text": "Capítulo 10 — Nenhum irmão fica para trás"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 11,
+      "markers": [
+        {
+          "line": 6169,
+          "text": "Capítulo 11 — A forja de um verdadeiro líder"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 12,
+      "markers": [
+        {
+          "line": 6925,
+          "text": "Capítulo 12 — As fundações de uma nação"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 13,
+      "markers": [
+        {
+          "line": 7596,
+          "text": "Capítulo 13 — A decisão sobre Três Arcos"
+        },
+        {
+          "line": 7670,
+          "text": "Capítulo 13 - O coração da criação"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 14,
+      "markers": [
+        {
+          "line": 8635,
+          "text": "Capítulo 14 — O primeiro selo da Legião"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 15,
+      "markers": [
+        {
+          "line": 9564,
+          "text": "Capítulo 15 — Aqueles que construirão o impossível"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 16,
+      "markers": [
+        {
+          "line": 10657,
+          "text": "Capítulo 16 — O arquiteto de mil futuros"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 17,
+      "markers": [
+        {
+          "line": 11688,
+          "text": "Capítulo 17 — A escolha do primeiro Arquiteto"
+        },
+        {
+          "line": 11762,
+          "text": "Capítulo 17 — Aquele que não precisava criar do nada"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 18,
+      "markers": [
+        {
+          "line": 12959,
+          "text": "Capítulo 18 — O mundo pode ser reconstruído?"
+        },
+        {
+          "line": 13055,
+          "text": "Capítulo 18 — O mundo não espera por reis"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 19,
+      "markers": [
+        {
+          "line": 14341,
+          "text": "Capítulo 19 — O preço de um território"
+        },
+        {
+          "line": 14407,
+          "text": "Capítulo 19 — O peso de um nome"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 20,
+      "markers": [
+        {
+          "line": 15758,
+          "text": "Capítulo 20 — A cidade que ainda não existe"
+        },
+        {
+          "line": 15834,
+          "text": "Capítulo 20 — O milagre que não veio dos deuses"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 21,
+      "markers": [
+        {
+          "line": 17316,
+          "text": "Capítulo 21 — Os primeiros frutos da Legião"
+        },
+        {
+          "line": 17360,
+          "text": "Capítulo 21 — Dividir para conquistar"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 22,
+      "markers": [
+        {
+          "line": 18833,
+          "text": "Capítulo 22 — O próximo passo do Arquiteto"
+        },
+        {
+          "line": 18933,
+          "text": "Capítulo 22 — A Revolução dos Mil Pequenos Milagres"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 23,
+      "markers": [
+        {
+          "line": 20784,
+          "text": "Capítulo 23 — O primeiro grande projeto"
+        },
+        {
+          "line": 20875,
+          "text": "Capítulo 23 — A Legião dos Mil Talentos"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 24,
+      "markers": [
+        {
+          "line": 22114,
+          "text": "Capítulo 24 — Mentes que constroem impérios"
+        },
+        {
+          "line": 22308,
+          "text": "Capítulo 24 — O Nascimento da Mente Impossível"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 25,
+      "markers": [
+        {
+          "line": 24052,
+          "text": "Capítulo 25 — A primeira decisão de uma grande nação"
+        },
+        {
+          "line": 24137,
+          "text": "Capítulo 25 - O homem por trás da armadura"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 26,
+      "markers": [
+        {
+          "line": 25561,
+          "text": "Capítulo 26 - O que vem depois da felicidade?"
+        },
+        {
+          "line": 25793,
+          "text": "Capítulo 26 — O Protocolo de Ascensão"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 27,
+      "markers": [
+        {
+          "line": 26865,
+          "text": "Capítulo 27 — A primeira semana de poder"
+        },
+        {
+          "line": 26945,
+          "text": "Capítulo 27 — Um Reino Precisa de Alma"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 28,
+      "markers": [
+        {
+          "line": 28538,
+          "text": "Capítulo 28 — A civilização que aprende a crescer"
+        },
+        {
+          "line": 28654,
+          "text": "Capítulo 28 — Os sete dias que mudaram a Legião"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 29,
+      "markers": [
+        {
+          "line": 29925,
+          "text": "Capítulo 29 — O próximo salto do Arquiteto"
+        },
+        {
+          "line": 29975,
+          "text": "Capítulo 29 — Os Trezentos que Valem por um Exército"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 30,
+      "markers": [
+        {
+          "line": 31176,
+          "text": "Capítulo 30 — A arena que fará os reinos olhar"
+        },
+        {
+          "line": 31348,
+          "text": "CAPÍTULO 30"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 31,
+      "markers": [
+        {
+          "line": 32164,
+          "text": "CAPÍTULO 31 — Os Trezentos Filhos do Amanhã"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 32,
+      "markers": [
+        {
+          "line": 33093,
+          "text": "Capítulo 32 — O Sangue e a Promessa"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 33,
+      "markers": [
+        {
+          "line": 33986,
+          "text": "Capítulo 33 — O Coração e a Mulher que Escolheu Ficar"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 34,
+      "markers": [
+        {
+          "line": 35293,
+          "text": "Capítulo 34 — As três portas do Coração"
+        },
+        {
+          "line": 35339,
+          "text": "Capítulo 34 — A Terra Onde Nascerá uma Nação"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 35,
+      "markers": [
+        {
+          "line": 36592,
+          "text": "Capítulo 35 — A Carta, o Coliseu e o Segredo dos Arquitetos"
+        },
+        {
+          "line": 36642,
+          "text": "Capítulo 35 — Antes de Erguer a Coroa"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 36,
+      "markers": [
+        {
+          "line": 37807,
+          "text": "Capítulo 36 — O dia anterior à fundação"
+        },
+        {
+          "line": 37869,
+          "text": "Capítulo 36 — A Cidade que Nenhum Rei Possuirá"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 37,
+      "markers": [
+        {
+          "line": 39125,
+          "text": "Capítulo 37 — A primeira potência do novo mundo"
+        },
+        {
+          "line": 39255,
+          "text": "Capítulo 37 — Operação Grande Horizonte"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    },
+    {
+      "chapter": 38,
+      "markers": [
+        {
+          "line": 39947,
+          "text": "Capítulo 38 — O Último Dia da Primeira Era"
+        }
+      ],
+      "status": "MARKERS_ONLY_NOT_FULL_SEMANTIC_REVIEW"
+    }
+  ],
+  "checks": {
+    "ledger_exact": 307,
+    "ledger_unique": 307,
+    "previous_exact": 36,
+    "added_nonempty": true,
+    "added_unique": true,
+    "all_chapters": true,
+    "all_dimensions": true
+  },
+  "limitations": [
+    "Triagem dos 307 registros, não homologação semântica independente; 100 classificações anteriores preservadas e 207 novas triagens.",
+    "Cobertura por marcadores não comprova leitura integral de capítulos.",
+    "Candidatos não são fatos novos exclusivos; sem ativação de aliases nem integração no runtime.",
+    "Registros de cultura, espécie e origem não implicam parentesco ou identidade atual.",
+    "Nenhum avanço ao Livro II."
+  ],
+  "canon_changed": false
+}
