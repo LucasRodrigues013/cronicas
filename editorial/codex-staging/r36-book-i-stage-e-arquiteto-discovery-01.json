@@ -1,0 +1,3517 @@
+{
+  "schema": "worldroot-r36-book-i-arquiteto-editorial-discovery-v1",
+  "book": 1,
+  "stage": "E",
+  "lot": "E05",
+  "status": "DISCOVERY_EDITORIAL_PASS_COMPLETE_NOT_HOMOLOGATED",
+  "engine_commit": "19d4be7759ba7c0d68adad8eb969414f78caaef3",
+  "arquiteto_source": "worldroot/arquiteto.py",
+  "archive_pin": "2ddb6f5707ddd1b8d06f5dfe37d936f04802090c",
+  "source": {
+    "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+    "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+    "lines": [
+      1,
+      40845
+    ],
+    "narrative_days": [
+      1,
+      90
+    ],
+    "chapter_numbers": 38,
+    "raw_words": 171829,
+    "prompts": 44,
+    "responses": 44
+  },
+  "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+  "registry_blobs": {
+    "characters": "616a569d4cbf9d5ba7bb5f58c9c287581f603a61",
+    "world": "789973c2a52e72827814c612465605483deb5d4a",
+    "names": "219e980fd557d10416c0b34aa118e425d921b4fb"
+  },
+  "method": "Reproduction of existing ARQUITETO discover regex, normalization, profile aliases and stable SHA256 in available JS runtime; count matches historical native Actions 142. Single editorial review of candidate labels/context. Native validate_legacy_recovery not executed; separate role/semantic review is not impersonated.",
+  "reviewer": "ChatGPT editorial session",
+  "candidates": [
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 245,
+        "anchor": "CAMPANHA I — O DESPERTAR DO CRIADOR",
+        "name": "CAMPANHA I",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "1a136263491246a5c6232b1194317c1387322e853b8d1d1123b641f9556cee80"
+      },
+      "editorial": {
+        "source_class": "DOCUMENT_OR_SECTION_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de seção, registro, operação ou período, não pessoa nem nova identidade pelo padrão de fala.",
+        "entity_id": null,
+        "context_start": 244,
+        "context_end": 249,
+        "context": "\nCAMPANHA I — O DESPERTAR DO CRIADOR\n\nAs 25 imagens foram integradas à continuidade da nossa campanha. A partir de agora, suas decisões serão permanentes, o mundo evoluirá independentemente de você e nenhum resultado estará garantido.\n\nUma regra essencial já foi estabelecida pela própria história: CREATION não pode reescrever seu criador nem produzir reservas infinitas de energia. Seu poder crescerá com experiência, esforço e descobertas.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 257,
+        "anchor": "HABILIDADE ÚNICA — CREATION",
+        "name": "HABILIDADE ÚNICA",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "a8b2b5bb39b694911cd4a1fe9aaadc79cb598045146323b94703d6385a38b198"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 256,
+        "context_end": 261,
+        "context": "\nHABILIDADE ÚNICA — CREATION\n\nReservatório de criação (última leitura) ≈ 5%\n\nLegião criada",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 1024,
+        "anchor": "LEGIO — EFETIVO ATUAL (300 vivos)",
+        "name": "LEGIO",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "dc97b2ff643c6969e599d88481a4e19a1439b1cd4952bb49800afdf7473ebad1"
+      },
+      "editorial": {
+        "source_class": "DOCUMENT_OR_SECTION_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de seção, registro, operação ou período, não pessoa nem nova identidade pelo padrão de fala.",
+        "entity_id": null,
+        "context_start": 1023,
+        "context_end": 1028,
+        "context": "\nLEGIO — EFETIVO ATUAL (300 vivos)\n\nAptos, sem ferimentos relevantes\n\n275",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 1483,
+        "anchor": "SISTEMA - CREATION (Reserva crítica)",
+        "name": "SISTEMA",
+        "candidates": [
+          "sistema"
+        ],
+        "source_role": "LEGACY_MIXED",
+        "kind": "GENERIC_ROLE",
+        "id": "886fc875f2bad3f73d1694716fd1d5a9e65d73bced2029fdaea670a090eab616"
+      },
+      "editorial": {
+        "source_class": "SUMMARY",
+        "disposition": "MENTION_ONLY",
+        "reason": "Painel de reserva crítica do Sistema; estimativa histórica, não estado atual.",
+        "entity_id": "sistema",
+        "context_start": 1482,
+        "context_end": 1487,
+        "context": "\nSISTEMA - CREATION (Reserva crítica)\n\nReservatório de criação - estimativa atual\n\n≈ 1-2%",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 1537,
+        "anchor": "VARO - Comandante militar",
+        "name": "VARO",
+        "candidates": [
+          "varo"
+        ],
+        "source_role": "LEGACY_MIXED",
+        "kind": "KNOWN_CANDIDATE",
+        "id": "84eea300ac9728374b1879eac6819bcfed6545d19f50ef9e089515eb8d2882e2"
+      },
+      "editorial": {
+        "source_class": "SUMMARY",
+        "disposition": "MENTION_ONLY",
+        "reason": "Varo comandante militar no conselho informal, não instituição formal.",
+        "entity_id": "varo",
+        "context_start": 1536,
+        "context_end": 1541,
+        "context": "\nVARO - Comandante militar\n\nResponsável pela Legião, segurança, operações militares e logística inicial. Seu julgamento é conservador quando vidas estão em risco.\n\nKAEL - Assessor estratégico",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 1541,
+        "anchor": "KAEL - Assessor estratégico",
+        "name": "KAEL",
+        "candidates": [
+          "kael"
+        ],
+        "source_role": "LEGACY_MIXED",
+        "kind": "KNOWN_CANDIDATE",
+        "id": "1498d49081bb0412591554609117b7e4b5f0d8a0dbae12a722d809bcc7e45639"
+      },
+      "editorial": {
+        "source_class": "SUMMARY",
+        "disposition": "MENTION_ONLY",
+        "reason": "Kael assessor estratégico; não conhecimento automático do mundo.",
+        "entity_id": "kael",
+        "context_start": 1540,
+        "context_end": 1545,
+        "context": "\nKAEL - Assessor estratégico\n\nResponsável por apoiar negociações, investigar sistemas políticos, planejar instituições e questionar decisões. Ainda precisa adquirir experiência prática neste mundo.\n\nPor enquanto, vocês três formam um conselho informal. Nenhuma instituição foi oficialmente estabelecida e nenhum território foi reivindicado.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 2082,
+        "anchor": "LEGIO — PRIMEIRA NOITE (1 desaparecido)",
+        "name": "LEGIO",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "222dfcaf63e88373ac4b4ee919c131243345aa0e53119bb7853bc53b88964476"
+      },
+      "editorial": {
+        "source_class": "DOCUMENT_OR_SECTION_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de seção, registro, operação ou período, não pessoa nem nova identidade pelo padrão de fala.",
+        "entity_id": null,
+        "context_start": 2081,
+        "context_end": 2086,
+        "context": "\nLEGIO — PRIMEIRA NOITE (1 desaparecido)\n\nEfetivo criado\n\n300",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 2733,
+        "anchor": "SISTEMA — AUTOPERCEPÇÃO (Descoberta inicial)",
+        "name": "SISTEMA",
+        "candidates": [
+          "sistema"
+        ],
+        "source_role": "LEGACY_MIXED",
+        "kind": "GENERIC_ROLE",
+        "id": "4c072b3f7f7adac40662f2de5dce1c73f318dd20e38f4db4be998db868b58a4c"
+      },
+      "editorial": {
+        "source_class": "SUMMARY",
+        "disposition": "MENTION_ONLY",
+        "reason": "Painel de autopercepção, recuperar cena.",
+        "entity_id": "sistema",
+        "context_start": 2732,
+        "context_end": 2737,
+        "context": "\nSISTEMA — AUTOPERCEPÇÃO (Descoberta inicial)\n\nCapacidade observada: percepção do reservatório.\n\nVocê começa a distinguir o desgaste físico da energia disponível para CREATION e reconhece melhor os sinais de sobrecarga.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 3474,
+        "anchor": "KAEL — Inteligência e análise",
+        "name": "KAEL",
+        "candidates": [
+          "kael"
+        ],
+        "source_role": "LEGACY_MIXED",
+        "kind": "KNOWN_CANDIDATE",
+        "id": "cc79c1f751ce0d39c111761639d9db225a7aa2ef1386ad5ceac921c02f3e71e2"
+      },
+      "editorial": {
+        "source_class": "PLAN",
+        "disposition": "MENTION_ONLY",
+        "reason": "Funções de inteligência propostas, não todas realizadas.",
+        "entity_id": "kael",
+        "context_start": 3473,
+        "context_end": 3478,
+        "context": "\nKAEL — Inteligência e análise\n\nFunções iniciais\n\nObservação à distância e leitura de terreno.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 4281,
+        "anchor": "SYSTEM - PROGRESSÃO",
+        "name": "SYSTEM",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "944eb0ce350109f67554a4cab5c085c2544b3940b7fef5a2256ff5b404f217aa"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 4280,
+        "context_end": 4285,
+        "context": "\nSYSTEM - PROGRESSÃO\n\nA experiência foi registrada.\n\nO uso, a compreensão e o domínio da habilidade contribuem para seu crescimento. Vitórias militares não geram automaticamente novas reservas, níveis ou equipamentos.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 4371,
+        "anchor": "VARO - Respeito e preocupação",
+        "name": "VARO",
+        "candidates": [
+          "varo"
+        ],
+        "source_role": "LEGACY_MIXED",
+        "kind": "KNOWN_CANDIDATE",
+        "id": "a1ac571069082918b939bbda4574bf843747111e0ec3842272568d63522159b3"
+      },
+      "editorial": {
+        "source_class": "PRIVATE_CHARACTER_PERSPECTIVE",
+        "disposition": "MENTION_ONLY",
+        "reason": "Respeito e preocupação de Varo, não conhecimento de Lucas.",
+        "entity_id": "varo",
+        "context_start": 4370,
+        "context_end": 4375,
+        "context": "\nVARO - Respeito e preocupação\n\nEle nos ofereceu uma causa, mas faz promessas que nenhum comandante pode garantir. Preciso ajudá-lo a compreender que proteger os homens às vezes significa ordenar a retirada.\n\nVARO está disposto a segui-lo, mas teme sua tendência de assumir responsabilidades impossíveis.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 4377,
+        "anchor": "KAEL - Admiração e questionamento",
+        "name": "KAEL",
+        "candidates": [
+          "kael"
+        ],
+        "source_role": "LEGACY_MIXED",
+        "kind": "KNOWN_CANDIDATE",
+        "id": "a28034dc2bc124b16c12ed80a797294574b14d899b10ffb864984c8b16839c04"
+      },
+      "editorial": {
+        "source_class": "PRIVATE_CHARACTER_PERSPECTIVE",
+        "disposition": "MENTION_ONLY",
+        "reason": "Kael pensa instituições e autoridade distribuída, não fala pública.",
+        "entity_id": "kael",
+        "context_start": 4376,
+        "context_end": 4381,
+        "context": "\nKAEL - Admiração e questionamento\n\nEle deseja construir uma nação sem governar acima de todos. É uma ideia extraordinária. Mas o que acontecerá quando alguém discordar dele? Precisamos criar instituições que não dependam apenas de sua bondade.\n\nKAEL começa a planejar formas de distribuir autoridade e estabelecer leis duradouras.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 4383,
+        "anchor": "DURGHAN - Desconfiança e curiosidade",
+        "name": "DURGHAN",
+        "candidates": [
+          "chr-durghan-uzgor"
+        ],
+        "source_role": "LEGACY_MIXED",
+        "kind": "KNOWN_CANDIDATE",
+        "id": "73aa5f3ead1d9988e937db761a6c4cf41d40bd1319d12c01e7430209360b3430"
+      },
+      "editorial": {
+        "source_class": "PRIVATE_CHARACTER_PERSPECTIVE",
+        "disposition": "MENTION_ONLY",
+        "reason": "Desconfiança de Durghan, não aliança.",
+        "entity_id": "chr-durghan-uzgor",
+        "context_start": 4382,
+        "context_end": 4387,
+        "context": "\nDURGHAN - Desconfiança e curiosidade\n\nMatou muitos dos meus guerreiros. Depois me libertou. Ou é um tolo, ou é um tipo de chefe que nunca conheci. Se conseguir proteger até aqueles que não nasceram de seu poder, talvez mereça ser ouvido.\n\nDURGHAN ainda não acredita plenamente em seu projeto, mas já não o vê apenas como um inimigo.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 4389,
+        "anchor": "EDRAN VAEL - Cautela política",
+        "name": "EDRAN VAEL",
+        "candidates": [
+          "edran"
+        ],
+        "source_role": "LEGACY_MIXED",
+        "kind": "KNOWN_CANDIDATE",
+        "id": "75169e5bab500f4f653c5b9decdbd96f46519b04eb44b9ba6e246ac6eb6a49a5"
+      },
+      "editorial": {
+        "source_class": "PRIVATE_CHARACTER_PERSPECTIVE",
+        "disposition": "MENTION_ONLY",
+        "reason": "Cautela de Edran, não certeza pública.",
+        "entity_id": "edran",
+        "context_start": 4388,
+        "context_end": 4393,
+        "context": "\nEDRAN VAEL - Cautela política\n\nUm comandante desconhecido surge com trezentos guerreiros de elite, derrota uma horda e afirma não desejar conquistar nada. Talvez esteja falando a verdade. Mas meu dever é garantir que Halvern sobreviva caso esteja mentindo.\n\nEDRAN considera o contato diplomático útil, mas pretende informar seus superiores.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 4415,
+        "anchor": "PLANO DE QUARENTA E OITO HORAS - PROPOSTA DO CONSELHO",
+        "name": "PLANO DE QUARENTA E OITO HORAS",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "fa93d22d05c99349b027360a0680d8e5c2ef0cf5e633ab8e71225d882649f01e"
+      },
+      "editorial": {
+        "source_class": "PLAN_OR_DOCUMENT_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de projeto, plano, estudo ou encaminhamento, não nova identidade nem execução implícita.",
+        "entity_id": null,
+        "context_start": 4414,
+        "context_end": 4419,
+        "context": "\nPLANO DE QUARENTA E OITO HORAS - PROPOSTA DO CONSELHO\n\nFrente\nObjetivo\nSegurança",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 4768,
+        "anchor": "LUCAS — AVALIAÇÃO INICIAL (Em recuperação)",
+        "name": "LUCAS",
+        "candidates": [
+          "lucas"
+        ],
+        "source_role": "LEGACY_MIXED",
+        "kind": "KNOWN_CANDIDATE",
+        "id": "09fbfe2fe91ffe3e713546d1edbf0a0a337b534349caedc977c498a3feee76e0"
+      },
+      "editorial": {
+        "source_class": "SUMMARY",
+        "disposition": "MENTION_ONLY",
+        "reason": "Recuperação física histórica de Lucas.",
+        "entity_id": "lucas",
+        "context_start": 4767,
+        "context_end": 4772,
+        "context": "\nLUCAS — AVALIAÇÃO INICIAL (Em recuperação)\n\nCapacidade\nAvaliação\nForça física",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 4909,
+        "anchor": "CREATION — POSSÍVEL RESSONÂNCIA",
+        "name": "CREATION",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "e38fff5cafe2104da0b83a544284638bbd5849bdfb407722995a939580d88114"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 4908,
+        "context_end": 4913,
+        "context": "\nCREATION — POSSÍVEL RESSONÂNCIA\n\nDescoberta experimental: percepção sutil de proximidade durante testes com KAEL e VARO.\n\nNão demonstrado: rastreamento à distância, localização individual, comunicação telepática, percepção de vida ou morte e controle mental.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 5033,
+        "anchor": "OPERAÇÃO: IRMANDADE",
+        "name": "OPERAÇÃO",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "ca977518a7f89f7f623be1a22a856f59c2e48707c0e6d5a279bb11f95c103675"
+      },
+      "editorial": {
+        "source_class": "DOCUMENT_OR_SECTION_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de seção, registro, operação ou período, não pessoa nem nova identidade pelo padrão de fala.",
+        "entity_id": null,
+        "context_start": 5032,
+        "context_end": 5037,
+        "context": "\nOPERAÇÃO: IRMANDADE\n\nObjetivo prioritário Recuperar ELYAN\n\nComando estratégico Lucas",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 6043,
+        "anchor": "SYSTEM — REGISTRO DE ATIVIDADE",
+        "name": "SYSTEM",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "2f2ef24b754e704dccdd11419f67b965a82c69c72150f55031968ebfadc02f84"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 6042,
+        "context_end": 6047,
+        "context": "\nSYSTEM — REGISTRO DE ATIVIDADE\n\nEvento registrado: recuperação de um membro da Legião.\n\nExperiência prática registrada: comando sob pressão, combate defensivo e observação de magia externa.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 6051,
+        "anchor": "CREATION: em recuperação.",
+        "name": "CREATION",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "9488e6b2dd0aefb6d121d7a3d002622bc7048b63c5ccd1ab045d3129790662a8"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 6050,
+        "context_end": 6055,
+        "context": "\nCREATION: em recuperação.\n\nA vitória não removeu seus ferimentos nem restaurou automaticamente o reservatório mágico.\n\nVocê solta o ar lentamente.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 6571,
+        "anchor": "SYSTEM — REGISTRO DE APRENDIZAGEM",
+        "name": "SYSTEM",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "9bdb7f056ec455aaf45e4fed08b9021a902bcde6945dca9e79bfb4e4282bb7c4"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 6570,
+        "context_end": 6575,
+        "context": "\nSYSTEM — REGISTRO DE APRENDIZAGEM\n\nTreinamento físico e observação consciente de habilidades registrados.\n\nProgressão: em andamento.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 6613,
+        "anchor": "ARVENDELL — POSSÍVEIS CAMINHOS DE EXPANSÃO",
+        "name": "ARVENDELL",
+        "candidates": [
+          "arvendell"
+        ],
+        "source_role": "LEGACY_MIXED",
+        "kind": "KNOWN_CANDIDATE",
+        "id": "e0044e46b585bc95a1b07eb457959c7a1465b4e7d6d054ce6e1dd690ba7a0424"
+      },
+      "editorial": {
+        "source_class": "SUMMARY",
+        "disposition": "MENTION_ONLY",
+        "reason": "Cabeçalho geográfico de possibilidades.",
+        "entity_id": "arvendell",
+        "context_start": 6612,
+        "context_end": 6617,
+        "context": "\nARVENDELL — POSSÍVEIS CAMINHOS DE EXPANSÃO\n\nLocal\nOportunidade\nObstáculo",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 7351,
+        "anchor": "CADERNO DO CRIADOR — EXPERIMENTO 01",
+        "name": "CADERNO DO CRIADOR",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "5377aacb789f3ddb81039241eeab89cb1b50e53da62c860379d5b9f15ffdf08c"
+      },
+      "editorial": {
+        "source_class": "DOCUMENT_OR_SECTION_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de seção, registro, operação ou período, não pessoa nem nova identidade pelo padrão de fala.",
+        "entity_id": null,
+        "context_start": 7350,
+        "context_end": 7355,
+        "context": "\nCADERNO DO CRIADOR — EXPERIMENTO 01\n\nMaterialização de um rebite simples concluída\n\nSinais de sobrecarga reconhecidos antes de tentar",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 7391,
+        "anchor": "PLANO DE CONTINGÊNCIA — VARO",
+        "name": "PLANO DE CONTINGÊNCIA",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "14b0b31d0491fc839b66215ef97790c782bf0e65b94979180478a09b90ad11fe"
+      },
+      "editorial": {
+        "source_class": "PLAN_OR_DOCUMENT_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de projeto, plano, estudo ou encaminhamento, não nova identidade nem execução implícita.",
+        "entity_id": null,
+        "context_start": 7390,
+        "context_end": 7395,
+        "context": "\nPLANO DE CONTINGÊNCIA — VARO\n\nRota\nSituação\nProblema",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 7712,
+        "anchor": "LEGIO - PRIMEIRA ORGANIZAÇÃO (300 integrantes)",
+        "name": "LEGIO",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "14642cabdb0c52369a59ed4aeb1ff8052312c74de155e746c79f3e5b12f58a04"
+      },
+      "editorial": {
+        "source_class": "DOCUMENT_OR_SECTION_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de seção, registro, operação ou período, não pessoa nem nova identidade pelo padrão de fala.",
+        "entity_id": null,
+        "context_start": 7711,
+        "context_end": 7716,
+        "context": "\nLEGIO - PRIMEIRA ORGANIZAÇÃO (300 integrantes)\n\nUnidade\nEfetivo\nFunção principal",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 8104,
+        "anchor": "SYSTEM - CLASSIFICAÇÃO INCOMPLETA",
+        "name": "SYSTEM",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "094933c8336bc2f65a85ad76fc061ac2673245532d4bfdf1edc2aa187b8febd5"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 8103,
+        "context_end": 8108,
+        "context": "\nSYSTEM - CLASSIFICAÇÃO INCOMPLETA\n\nA criação de seres conscientes demonstra propriedades superiores à simples materialização de matéria inerte.\n\nIsso não comprova capacidade de criar livremente conhecimento verdadeiro, alterar leis naturais ou obter poder ilimitado.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 8206,
+        "anchor": "CADERNO DO CRIADOR - EXPERIMENTO 02",
+        "name": "CADERNO DO CRIADOR",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "7d45564214680a1874fba3f65ccce014d32ed1cdd52a5b93abe3136ac6c3bc8b"
+      },
+      "editorial": {
+        "source_class": "DOCUMENT_OR_SECTION_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de seção, registro, operação ou período, não pessoa nem nova identidade pelo padrão de fala.",
+        "entity_id": null,
+        "context_start": 8205,
+        "context_end": 8210,
+        "context": "\nCADERNO DO CRIADOR - EXPERIMENTO 02\n\nInvestigação\nResultado\nSensação de energia no ambiente",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 10022,
+        "anchor": "SYSTEM — NOVA COMPREENSÃO",
+        "name": "SYSTEM",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "815de04f2ef1e31084359e7a7e48487b3ffa431dec8caa16567033b86a98de2c"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 10021,
+        "context_end": 10026,
+        "context": "\nSYSTEM — NOVA COMPREENSÃO\n\nCREATION: Matriz de Referência — Estágio I\n\nO portador identificou uma forma de estabilizar mentalmente modelos de criação por observação direta.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 10024,
+        "anchor": "CREATION: Matriz de Referência — Estágio I",
+        "name": "CREATION",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "b2d035147c207de17716eb46392241eacc9522712ece3a9f097739729becd921"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 10023,
+        "context_end": 10028,
+        "context": "\nCREATION: Matriz de Referência — Estágio I\n\nO portador identificou uma forma de estabilizar mentalmente modelos de criação por observação direta.\n\nAplicação inicial: facilitar a repetição conceitual de estruturas simples já examinadas.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 10172,
+        "anchor": "PROJETO — A GRANDE REDE DE CONHECIMENTO",
+        "name": "PROJETO",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "25698912ed0dcc672d20b53b1220e1a6881f153ae7b2113f6a6c73e1a387cc77"
+      },
+      "editorial": {
+        "source_class": "PLAN_OR_DOCUMENT_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de projeto, plano, estudo ou encaminhamento, não nova identidade nem execução implícita.",
+        "entity_id": null,
+        "context_start": 10171,
+        "context_end": 10176,
+        "context": "\nPROJETO — A GRANDE REDE DE CONHECIMENTO\n\nPROPOSTA INICIAL DE KAEL\n\n1. Arquivo da Legião",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 10490,
+        "anchor": "SYSTEM — REGISTRO DE COMPREENSÃO",
+        "name": "SYSTEM",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "933c83fb855522750b8e0be5623dc89ad8e70357880fc9d26b5bd86a028deb03"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 10489,
+        "context_end": 10494,
+        "context": "\nSYSTEM — REGISTRO DE COMPREENSÃO\n\nTrês princípios identificados\n\nObservação — conhecimento da estrutura",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 10582,
+        "anchor": "ESTADO DA CAMPANHA — DIA 3, NOITE",
+        "name": "ESTADO DA CAMPANHA",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "05537a19ccf5726b9ef8ab9414b0e408c6a3226f206dcb7cd5ad62f3a48d1dc8"
+      },
+      "editorial": {
+        "source_class": "DOCUMENT_OR_SECTION_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de seção, registro, operação ou período, não pessoa nem nova identidade pelo padrão de fala.",
+        "entity_id": null,
+        "context_start": 10581,
+        "context_end": 10586,
+        "context": "\nESTADO DA CAMPANHA — DIA 3, NOITE\n\nFrente\nSituação\nLegião",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 11290,
+        "anchor": "CREATION — NOVO SUBSISTEMA",
+        "name": "CREATION",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "31b3e47412f3a08ee3308623461a7cf8e3299790ae73988ffa6c6f54851cb131"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 11289,
+        "context_end": 11294,
+        "context": "\nCREATION — NOVO SUBSISTEMA\n\nARQUIVO DE MATRIZES\n\nCapacidade desbloqueada: preservar referências estruturais de criações estudadas e estabilizadas.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 11516,
+        "anchor": "SYSTEM — RESSONÂNCIA DE PROJETO",
+        "name": "SYSTEM",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "6ea12dba115368787d2aea65b6362f3e48ffc64351dbef566da988d0134d15f1"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 11515,
+        "context_end": 11520,
+        "context": "\nSYSTEM — RESSONÂNCIA DE PROJETO\n\n(Manifestação inicial confirmada)\n\nProjeção Compartilhada — Estágio I",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 12474,
+        "anchor": "SYSTEM — ARQUITETURA DA CRIAÇÃO",
+        "name": "SYSTEM",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "08da0b3ea0021332a123a8f432c2c4fa217f6721cfa38aefc23c1d7a3acaec90"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 12473,
+        "context_end": 12478,
+        "context": "\nSYSTEM — ARQUITETURA DA CRIAÇÃO\n\nSINERGIA DE HABILIDADES CONFIRMADA\n\nArquivo de Matrizes + Projeção Compartilhada",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 12572,
+        "anchor": "SYSTEM — DIAGNÓSTICO PARCIAL",
+        "name": "SYSTEM",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "92d9a63a731dc28d04ab5e5981d53705998700add0f02376ac445faa50da73a7"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 12571,
+        "context_end": 12576,
+        "context": "\nSYSTEM — DIAGNÓSTICO PARCIAL\n\nReserva disponível: em recuperação.\n\nCapacidade máxima: alteração significativa não confirmada.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 12922,
+        "anchor": "CREATION — ARQUITETURA DA CRIAÇÃO",
+        "name": "CREATION",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "047c358e896e2cd90d3eefa3cf1988653a38f4cce9e9640de01d987696e26b3d"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 12921,
+        "context_end": 12926,
+        "context": "\nCREATION — ARQUITETURA DA CRIAÇÃO\n\nCapacidade\nEstado\nMaterialização do nada",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 13677,
+        "anchor": "CONVERSÃO DE MANA — PROJETO I: fonte externa, condução, estabilização e compatibilidade.",
+        "name": "CONVERSÃO DE MANA",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "3af550dcb0c52c665ca9682419580bbabfd62f2fdb406aa7296286086abe32e1"
+      },
+      "editorial": {
+        "source_class": "PLAN_OR_DOCUMENT_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de projeto, plano, estudo ou encaminhamento, não nova identidade nem execução implícita.",
+        "entity_id": null,
+        "context_start": 13676,
+        "context_end": 13681,
+        "context": "\nCONVERSÃO DE MANA — PROJETO I: fonte externa, condução, estabilização e compatibilidade.\n\nMIREN observou o título.\n\n— Esse projeto pode levar anos.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 13987,
+        "anchor": "CONSELHO DA LEGIÃO — RELATÓRIO DO DIA 4",
+        "name": "CONSELHO DA LEGIÃO",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "44a264971cf6daa4eb99576749dbd60c3ef0bf4fb27c53c53204d0fa21337951"
+      },
+      "editorial": {
+        "source_class": "DOCUMENT_OR_SECTION_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de seção, registro, operação ou período, não pessoa nem nova identidade pelo padrão de fala.",
+        "entity_id": null,
+        "context_start": 13986,
+        "context_end": 13991,
+        "context": "\nCONSELHO DA LEGIÃO — RELATÓRIO DO DIA 4\n\nFrente\nEstado\nPróxima necessidade",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 16094,
+        "anchor": "ARVENDELL — RELATÓRIO DE RECONHECIMENTO",
+        "name": "ARVENDELL",
+        "candidates": [
+          "arvendell"
+        ],
+        "source_role": "LEGACY_MIXED",
+        "kind": "KNOWN_CANDIDATE",
+        "id": "fadd0a6c0637522cceb2e2fc562f65170fd191f75c2acda0d7f860594de98ab5"
+      },
+      "editorial": {
+        "source_class": "SUMMARY",
+        "disposition": "MENTION_ONLY",
+        "reason": "Cabeçalho de reconhecimento de Arvendell.",
+        "entity_id": "arvendell",
+        "context_start": 16093,
+        "context_end": 16098,
+        "context": "\nARVENDELL — RELATÓRIO DE RECONHECIMENTO\n\nDireção\nInformações\nOportunidade ou risco",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 16486,
+        "anchor": "SYSTEM — MARCO COLETIVO",
+        "name": "SYSTEM",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "75dcbd5d1d2ba8275aa0317bbcd96e51123f67e0ab5369f638a13e756279876e"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 16485,
+        "context_end": 16490,
+        "context": "\nSYSTEM — MARCO COLETIVO\n\nPrimeira adesão voluntária externa registrada.\n\nBRANNIK aceitou participar da comunidade da Legião por decisão própria.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 17304,
+        "anchor": "CREATION — Progressão",
+        "name": "CREATION",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "91cb9d9de9a8e6064af4aa05f180eed10515c34d53463a5a2054b625915b58ed"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 17303,
+        "context_end": 17308,
+        "context": "\nCREATION — Progressão\n\nArquivo de Matrizes Estágio I\n\nReconfiguração Material Estágio I",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 18108,
+        "anchor": "MATRIZ AUTÔNOMA — ESTÁGIO I",
+        "name": "MATRIZ AUTÔNOMA",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "7bacf548670d55e50fb5a0b5b49e4664faf68d512f4d1343626199dec524792b"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 18107,
+        "context_end": 18112,
+        "context": "\nMATRIZ AUTÔNOMA — ESTÁGIO I\n\n(Nova manifestação confirmada)\n\nCREATION executou uma estrutura funcional que continuou operando temporariamente sem alimentação direta do portador.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 18676,
+        "anchor": "CONSELHO DA LEGIÃO — DIA 7 (Frentes em avanço)",
+        "name": "CONSELHO DA LEGIÃO",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "773e5c97aa5c3cfb1df7d554fb4c817e7ad5e318f5189a920c23da25025d62bc"
+      },
+      "editorial": {
+        "source_class": "DOCUMENT_OR_SECTION_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de seção, registro, operação ou período, não pessoa nem nova identidade pelo padrão de fala.",
+        "entity_id": null,
+        "context_start": 18675,
+        "context_end": 18680,
+        "context": "\nCONSELHO DA LEGIÃO — DIA 7 (Frentes em avanço)\n\nResponsável\nResultado do dia\nLUCAS e MIREN",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 20002,
+        "anchor": "MATRIZ-MÃE — ESTÁGIO I",
+        "name": "MATRIZ-MÃE",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "65da5e23b45b31b012bb48f561434571d3a694eb4329ce41450623742f25f1fd"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 20001,
+        "context_end": 20006,
+        "context": "\nMATRIZ-MÃE — ESTÁGIO I\n\nO portador isolou e reproduziu parcialmente uma função de uma criação encantada complexa, sem recriar seu núcleo original.\n\nCapacidades confirmadas",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 21611,
+        "anchor": "SYSTEM — ANÁLISE DE POSSIBILIDADE",
+        "name": "SYSTEM",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "705595d9a45576fc133e754134e1d0c8fa2e36f8015c705342c5ff31e18da017"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 21610,
+        "context_end": 21615,
+        "context": "\nSYSTEM — ANÁLISE DE POSSIBILIDADE\n\nCriação de entidade consciente especializada\n\nViável em princípio. Esforço elevado. O custo depende da complexidade física, cognitiva e das características pretendidas.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 21935,
+        "anchor": "PROJETO — AS MENTES DA LEGIÃO",
+        "name": "PROJETO",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "ad240bbee52c1bf6547ad07721228a4289b40703458e4ebacf3554f617bcd2fa"
+      },
+      "editorial": {
+        "source_class": "PLAN_OR_DOCUMENT_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de projeto, plano, estudo ou encaminhamento, não nova identidade nem execução implícita.",
+        "entity_id": null,
+        "context_start": 21934,
+        "context_end": 21939,
+        "context": "\nPROJETO — AS MENTES DA LEGIÃO\n\nAbaixo, três caminhos.\n\nO primeiro: recrutar.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 22159,
+        "anchor": "PROMPT MESTRE — O ARQUITETO DAS CIVILIZAÇÕES",
+        "name": "PROMPT MESTRE",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "da092a3f4ff2a50c5b7ab52b990e92844aa6adb00713d06e4296c80b386a56f9"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 22158,
+        "context_end": 22163,
+        "context": "\nPROMPT MESTRE — O ARQUITETO DAS CIVILIZAÇÕES\n\nCONCEITO DO PERSONAGEM\n\nCrie um personagem extraordinariamente inteligente, versátil e estratégico, capaz de integrar conhecimentos avançados de diversas áreas em um mundo medieval de fantasia e magia.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 22255,
+        "anchor": "INSTRUÇÕES PARA O SISTEMA — ECONOMIA DE TOKENS",
+        "name": "INSTRUÇÕES PARA O SISTEMA",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "b37e26f005e6ebaf38da0c97dc5242f58ebff695ba297fe5642f99a1fba84555"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 22254,
+        "context_end": 22259,
+        "context": "\nINSTRUÇÕES PARA O SISTEMA — ECONOMIA DE TOKENS\n\nCrie uma ficha inicial compacta, com identidade, origem, competências, personalidade, limitações e objetivo.\n\nPreserve os fatos e regras já estabelecidos; não reconstrua o contexto a cada turno.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 22279,
+        "anchor": "DIRETRIZ FINAL: desenvolva um personagem cuja verdadeira força seja transformar conhecimento em civilização, poder e influência. O mundo deve reagir às suas conquistas, seus erros e à velocidade excepcional de sua evolução.",
+        "name": "DIRETRIZ FINAL",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "5081230b94f302abfd9e81fe9cca40224f7320ee28bb67c63e64dcaeda3c30f2"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 22278,
+        "context_end": 22283,
+        "context": "\nDIRETRIZ FINAL: desenvolva um personagem cuja verdadeira força seja transformar conhecimento em civilização, poder e influência. O mundo deve reagir às suas conquistas, seus erros e à velocidade excepcional de sua evolução.\n\n## Response:\n01/11/2026, 09:25:15 · gpt-6-thinking\n",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 22680,
+        "anchor": "CREATION — PROJETO EM AVALIAÇÃO",
+        "name": "CREATION",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "056363f27824a8b0331a59543dabaca058514b1093d250885ea1aaed91f82d45"
+      },
+      "editorial": {
+        "source_class": "PLAN_OR_DOCUMENT_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de projeto, plano, estudo ou encaminhamento, não nova identidade nem execução implícita.",
+        "entity_id": null,
+        "context_start": 22679,
+        "context_end": 22684,
+        "context": "\nCREATION — PROJETO EM AVALIAÇÃO\n\nArquétipo: Arquiteto das Civilizações\n\nNúcleo: inteligência integrada, raciocínio sistêmico, aprendizado acelerado, criatividade e autonomia.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 23238,
+        "anchor": "SYSTEM — CRIAÇÃO CONSCIENTE CONFIRMADA",
+        "name": "SYSTEM",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "3917fd9778e92abd134ed809a3919925fcae9d00bff74d4d8498e78b66be85e0"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 23237,
+        "context_end": 23242,
+        "context": "\nSYSTEM — CRIAÇÃO CONSCIENTE CONFIRMADA\n\nASTRA — Arquiteta das Civilizações\n\nEntidade autônoma com inteligência interdisciplinar excepcional e fundamentos técnicos integrados.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 23240,
+        "anchor": "ASTRA — Arquiteta das Civilizações",
+        "name": "ASTRA",
+        "candidates": [
+          "astra"
+        ],
+        "source_role": "LEGACY_MIXED",
+        "kind": "KNOWN_CANDIDATE",
+        "id": "11736cc86acaaad673d67337ab65e8b4bc7ef35ebc222544a25f3d698e6e78fe"
+      },
+      "editorial": {
+        "source_class": "SUMMARY",
+        "disposition": "MENTION_ONLY",
+        "reason": "Astra, Arquiteta das Civilizações, não subsistema editorial ARQUITETO.",
+        "entity_id": "astra",
+        "context_start": 23239,
+        "context_end": 23244,
+        "context": "\nASTRA — Arquiteta das Civilizações\n\nEntidade autônoma com inteligência interdisciplinar excepcional e fundamentos técnicos integrados.\n\nNova técnica de formulação: Matriz Cognitiva Integrada — Estágio I.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 25343,
+        "anchor": "VARO - Respeito e responsabilidade",
+        "name": "VARO",
+        "candidates": [
+          "varo"
+        ],
+        "source_role": "LEGACY_MIXED",
+        "kind": "KNOWN_CANDIDATE",
+        "id": "734b52083aeb223c74dd6b24ddd6fe9ada7fcc17acb3d6401d9edc5be04e4f7a"
+      },
+      "editorial": {
+        "source_class": "PRIVATE_CHARACTER_PERSPECTIVE",
+        "disposition": "MENTION_ONLY",
+        "reason": "Varo: autonomia e responsabilidade.",
+        "entity_id": "varo",
+        "context_start": 25342,
+        "context_end": 25347,
+        "context": "\nVARO - Respeito e responsabilidade\n\nConfia profundamente em LUCAS, mas teme que sua pressa em ficar poderoso o coloque em risco. Tem orgulho dos legionários e começa a enxergá-los como pessoas por quem é responsável, não apenas soldados. Seu desejo é construir uma força que consiga proteger a cidade mesmo sem a presença do Criador.\n\nKAEL - Admiração e preocupação",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 25347,
+        "anchor": "KAEL - Admiração e preocupação",
+        "name": "KAEL",
+        "candidates": [
+          "kael"
+        ],
+        "source_role": "LEGACY_MIXED",
+        "kind": "KNOWN_CANDIDATE",
+        "id": "86a20f7eac7dfe9ce56f40d21905cff76830bf0161583fda996d2a3e74945588"
+      },
+      "editorial": {
+        "source_class": "PRIVATE_CHARACTER_PERSPECTIVE",
+        "disposition": "MENTION_ONLY",
+        "reason": "Kael: parceria intelectual com Lysa, não romance.",
+        "entity_id": "kael",
+        "context_start": 25346,
+        "context_end": 25351,
+        "context": "\nKAEL - Admiração e preocupação\n\nVê em LUCAS um fundador raro, capaz de confiar autoridade real a seus companheiros. Está orgulhoso da autonomia conquistada, mas preocupado com a tendência de LUCAS a assumir riscos sozinho. Sua parceria intelectual com LYSA está se aprofundando, assim como sua identidade independente.\n\nLYSA - Confiança conquistada",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 25351,
+        "anchor": "LYSA - Confiança conquistada",
+        "name": "LYSA",
+        "candidates": [
+          "lysa"
+        ],
+        "source_role": "LEGACY_MIXED",
+        "kind": "KNOWN_CANDIDATE",
+        "id": "5807783ff4c8f57c55bebfefae8b954c4039e32e70a2618b392b1bfe1be86953"
+      },
+      "editorial": {
+        "source_class": "PRIVATE_CHARACTER_PERSPECTIVE",
+        "disposition": "MENTION_ONLY",
+        "reason": "Lysa: confiança e amizade com Kael.",
+        "entity_id": "lysa",
+        "context_start": 25350,
+        "context_end": 25355,
+        "context": "\nLYSA - Confiança conquistada\n\nNão considera LUCAS infalível. Respeita seu compromisso com a liberdade e começa a confiar que suas promessas não são apenas retórica. Ainda valoriza sua independência e condições profissionais. Está construindo uma amizade real com KAEL e encontrando um propósito nos projetos administrativos.\n\nMIREN - Curiosidade e afeto nascente",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 25355,
+        "anchor": "MIREN - Curiosidade e afeto nascente",
+        "name": "MIREN",
+        "candidates": [
+          "miren"
+        ],
+        "source_role": "LEGACY_MIXED",
+        "kind": "KNOWN_CANDIDATE",
+        "id": "2c135df2adb23fb1de16b77fa18c6e4eb45f77f3bb3602d7c639b14aa8f3caba"
+      },
+      "editorial": {
+        "source_class": "PRIVATE_CHARACTER_PERSPECTIVE",
+        "disposition": "MENTION_ONLY",
+        "reason": "Miren: afeto nascente, sem compromisso definitivo naquele momento.",
+        "entity_id": "miren",
+        "context_start": 25354,
+        "context_end": 25359,
+        "context": "\nMIREN - Curiosidade e afeto nascente\n\nInicialmente via LUCAS como um possível perigo ligado às Descidas Azuis. Agora reconhece sua sensibilidade e seu desejo de proteger vidas. Gosta de conversar com ele e começa a permitir uma aproximação pessoal. Ainda guarda segredos e não assumiu qualquer compromisso romântico ou político definitivo.\n\nBRANNIK - Lealdade escolhida",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 25359,
+        "anchor": "BRANNIK - Lealdade escolhida",
+        "name": "BRANNIK",
+        "candidates": [
+          "brannik"
+        ],
+        "source_role": "LEGACY_MIXED",
+        "kind": "KNOWN_CANDIDATE",
+        "id": "5efc661af8f4943c838a167bf5ca189bf70bb9831ed5a9c7e420fa672a87c812"
+      },
+      "editorial": {
+        "source_class": "PRIVATE_CHARACTER_PERSPECTIVE",
+        "disposition": "MENTION_ONLY",
+        "reason": "Brannik: adesão voluntária e ensino.",
+        "entity_id": "brannik",
+        "context_start": 25358,
+        "context_end": 25363,
+        "context": "\nBRANNIK - Lealdade escolhida\n\nConsidera LUCAS um homem ambicioso, às vezes excessivamente otimista, mas genuinamente comprometido em construir. Foi o primeiro integrante externo voluntário da Legião. Seu maior orgulho é ensinar OREN e os moradores, e sua prioridade é transformar a oficina numa instituição duradoura.\n\nASTRA - Independência e pertencimento",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 25363,
+        "anchor": "ASTRA - Independência e pertencimento",
+        "name": "ASTRA",
+        "candidates": [
+          "astra"
+        ],
+        "source_role": "LEGACY_MIXED",
+        "kind": "KNOWN_CANDIDATE",
+        "id": "12be4eb25875325387facdc09888f93baf6e35475ce722a242a82e0443dfc720"
+      },
+      "editorial": {
+        "source_class": "PRIVATE_CHARACTER_PERSPECTIVE",
+        "disposition": "MENTION_ONLY",
+        "reason": "Astra: autonomia, não propriedade de Lucas.",
+        "entity_id": "astra",
+        "context_start": 25362,
+        "context_end": 25367,
+        "context": "\nASTRA - Independência e pertencimento\n\nTem enorme curiosidade sobre LUCAS e sobre o mundo, mas não o considera dono de sua existência. Reconhece o risco que ele assumiu ao criá-la. Escolheu participar da Legião porque encontrou um projeto que corresponde às suas próprias ambições intelectuais. Deseja ser reconhecida pelo trabalho, não apenas por ser uma criação extraordinária.\n\nOREN encontra satisfação crescente na construção. DAREN descobre que pode aprender um ofício ao lado de antigos soldados. ESMARA está interessada no potencial agrícola, mas continua exigente quanto aos resultados. NÉRIA respeita a capacidade técnica emergente da Legião, embora permaneça vinculada a Thalor. TAREK começou a confiar em algumas pessoas da Legião, sem abandonar seu papel de proteger os moradores.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 25395,
+        "anchor": "CREATION: LUCAS tornou-se Arquiteto Iniciante, desenvolveu matrizes reutilizáveis, reconfiguração material, projeção colaborativa, alimentação externa experimental e módulos auxiliares da mochila. A criação de ASTRA reduziu drasticamente sua reserva disponível para grandes manifestações.",
+        "name": "CREATION",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "3d66f457f2b8e05c60b9fe8962bbf9f920056675acbb049b3681231373ef620b"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 25394,
+        "context_end": 25399,
+        "context": "\nCREATION: LUCAS tornou-se Arquiteto Iniciante, desenvolveu matrizes reutilizáveis, reconfiguração material, projeção colaborativa, alimentação externa experimental e módulos auxiliares da mochila. A criação de ASTRA reduziu drasticamente sua reserva disponível para grandes manifestações.\n\nCivilização: a Oficina da Primeira Pedra iniciou suas atividades; a Academia dos Fundadores está em organização. Há um autômato de trabalho experimental, projetos agrícolas iniciais e contratos comerciais, mas ainda não existe autossuficiência.\n\nPolítica: Thalor reconheceu a Legião como interlocutora independente e autorizou a continuidade condicionada de seus projetos. A propriedade e autonomia definitiva dos Três Arcos permanecem em negociação.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 25590,
+        "anchor": "PROTOCOLO DE ASCENSÃO — LUCAS",
+        "name": "PROTOCOLO DE ASCENSÃO",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "76c07ca64af07ed53e7311774c1befbca7ca754956208586ec36d925ee973255"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 25589,
+        "context_end": 25594,
+        "context": "\nPROTOCOLO DE ASCENSÃO — LUCAS\n\nOrdem de transformação da campanha a partir de agora\n\nATENÇÃO, SISTEMA/NARRADOR: esta é uma diretriz permanente de evolução narrativa, estratégica e pessoal do protagonista. Não é um pedido para reiniciar a história ou conceder poderes gratuitos.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 25606,
+        "anchor": "PODER PESSOAL: expandir conhecimentos mágicos, capacidade de combate, domínio de CREATION, controle energético, compreensão da armadura viva e descobertas de habilidades extraordinárias.",
+        "name": "PODER PESSOAL",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "262f2926189515606add2a4a0621928e5fd271bd18be10b6aac7b4a907ecb46e"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 25605,
+        "context_end": 25610,
+        "context": "\nPODER PESSOAL: expandir conhecimentos mágicos, capacidade de combate, domínio de CREATION, controle energético, compreensão da armadura viva e descobertas de habilidades extraordinárias.\n\nPODER CIVILIZACIONAL: transformar os recursos e seguidores existentes em uma organização capaz de produzir, pesquisar, construir, ensinar, comercializar e sustentar sua própria expansão.\n\nPODER ESTRATÉGICO: conquistar inteligência, iniciativa diplomática, domínio territorial, vantagens defensivas, alianças e capacidade de neutralizar ameaças sem depender constantemente de ações individuais.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 25608,
+        "anchor": "PODER CIVILIZACIONAL: transformar os recursos e seguidores existentes em uma organização capaz de produzir, pesquisar, construir, ensinar, comercializar e sustentar sua própria expansão.",
+        "name": "PODER CIVILIZACIONAL",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "814cd2618c62346201ec63c1e2920521cb5f36f58361ed5c1bea715fe067483c"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 25607,
+        "context_end": 25612,
+        "context": "\nPODER CIVILIZACIONAL: transformar os recursos e seguidores existentes em uma organização capaz de produzir, pesquisar, construir, ensinar, comercializar e sustentar sua própria expansão.\n\nPODER ESTRATÉGICO: conquistar inteligência, iniciativa diplomática, domínio territorial, vantagens defensivas, alianças e capacidade de neutralizar ameaças sem depender constantemente de ações individuais.\n\nNão concentre todos os avanços em uma única dimensão.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 25610,
+        "anchor": "PODER ESTRATÉGICO: conquistar inteligência, iniciativa diplomática, domínio territorial, vantagens defensivas, alianças e capacidade de neutralizar ameaças sem depender constantemente de ações individuais.",
+        "name": "PODER ESTRATÉGICO",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "7c06fd76772a4de5e2cd790044f69ba173e2fcac7ef14143d4fa19007683530c"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 25609,
+        "context_end": 25614,
+        "context": "\nPODER ESTRATÉGICO: conquistar inteligência, iniciativa diplomática, domínio territorial, vantagens defensivas, alianças e capacidade de neutralizar ameaças sem depender constantemente de ações individuais.\n\nNão concentre todos os avanços em uma única dimensão.\n\nEVOLUÇÃO ACELERADA SEM FACILIDADES ARTIFICIAIS",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 25642,
+        "anchor": "ORDENS IMEDIATAS — EXECUTAR AGORA",
+        "name": "ORDENS IMEDIATAS",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "d484a52cf857e3e4ce3cb8ecc735d09df5f2c9e922932c7ce35bb5501e90cd47"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 25641,
+        "context_end": 25646,
+        "context": "\nORDENS IMEDIATAS — EXECUTAR AGORA\n\nORDEM I — FUNDAÇÃO DO CONSELHO OPERACIONAL\n\nReunir VARO, KAEL, LYSA, NÉRIA, ASTRA e os especialistas disponíveis.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 25644,
+        "anchor": "ORDEM I — FUNDAÇÃO DO CONSELHO OPERACIONAL",
+        "name": "ORDEM I",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "0ec64f3841b8597ca40fafe80bfbcd651da1e75c722ec6e090bdedfe06fcd35b"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 25643,
+        "context_end": 25648,
+        "context": "\nORDEM I — FUNDAÇÃO DO CONSELHO OPERACIONAL\n\nReunir VARO, KAEL, LYSA, NÉRIA, ASTRA e os especialistas disponíveis.\n\nEstabelecer responsáveis pelas seguintes frentes:",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 25666,
+        "anchor": "ORDEM II — PROGRAMA DE DESENVOLVIMENTO DE LUCAS",
+        "name": "ORDEM II",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "15bd68aac9665cb71d37a8b28cb1c9f0ebbd5019e06cca89086673102fbb6644"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 25665,
+        "context_end": 25670,
+        "context": "\nORDEM II — PROGRAMA DE DESENVOLVIMENTO DE LUCAS\n\nEstabelecer um programa intensivo e sustentável de aprimoramento pessoal.\n\nPrioridades:",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 25690,
+        "anchor": "ORDEM III — PROJETO PRIMEIRA CIDADE",
+        "name": "ORDEM III",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "3f13d519e683b033172e25dc7da6012824936e2723c577632cdb540b29050fff"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 25689,
+        "context_end": 25694,
+        "context": "\nORDEM III — PROJETO PRIMEIRA CIDADE\n\nPreparar um plano territorial para Três Arcos/Ruínas do Norte, condicionado à conclusão das negociações e à segurança dos habitantes.\n\nO plano deve aproveitar topografia, água, rotas, recursos naturais e estruturas existentes.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 25700,
+        "anchor": "ORDEM IV — FORMAÇÃO DA PRIMEIRA ACADEMIA",
+        "name": "ORDEM IV",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "d84be8e0df99758d98e055c6de338e2e33e08aaf5764394c38115ff9ce4aac95"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 25699,
+        "context_end": 25704,
+        "context": "\nORDEM IV — FORMAÇÃO DA PRIMEIRA ACADEMIA\n\nOrganizar a transferência de conhecimentos de LUCAS para pessoas capazes de reproduzi-los e aprimorá-los.\n\nIniciar por engenharia básica, saneamento, agricultura, medicina preventiva, logística, matemática aplicada e pesquisa mágica.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 25708,
+        "anchor": "ORDEM V — INTELIGÊNCIA E ANTECIPAÇÃO",
+        "name": "ORDEM V",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "adc59200338045a11408d43cd69029d5c5c40f918de554f116bc6304573ec582"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 25707,
+        "context_end": 25712,
+        "context": "\nORDEM V — INTELIGÊNCIA E ANTECIPAÇÃO\n\nCriar uma estrutura de reconhecimento e análise de ameaças.\n\nIdentificar interesses das facções, recursos estratégicos, vulnerabilidades territoriais, oportunidades diplomáticas e sinais de movimentações inimigas.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 25720,
+        "anchor": "PRIMEIRAS 48 HORAS: organização das equipes, diagnóstico real de recursos, responsabilidades, planos de defesa, primeiras pesquisas e evolução pessoal inicial.",
+        "name": "PRIMEIRAS 48 HORAS",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "2237db722550c9ff1a1c1644e31126421296c44ed5518588696776dd11c7d21f"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 25719,
+        "context_end": 25724,
+        "context": "\nPRIMEIRAS 48 HORAS: organização das equipes, diagnóstico real de recursos, responsabilidades, planos de defesa, primeiras pesquisas e evolução pessoal inicial.\n\nPRIMEIROS 7 DIAS: entregar progressos demonstráveis em pesquisa, treinamento, diplomacia, infraestrutura e abastecimento.\n\nPRIMEIROS 30 DIAS: consolidar os projetos viáveis, expandir a capacidade produtiva e demonstrar avanços substanciais de poder e influência.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 25722,
+        "anchor": "PRIMEIROS 7 DIAS: entregar progressos demonstráveis em pesquisa, treinamento, diplomacia, infraestrutura e abastecimento.",
+        "name": "PRIMEIROS 7 DIAS",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "5ef7ee9921a244c52853aedfc5ebcdf29e49ac7c7adad23e7b73afaf69907533"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 25721,
+        "context_end": 25726,
+        "context": "\nPRIMEIROS 7 DIAS: entregar progressos demonstráveis em pesquisa, treinamento, diplomacia, infraestrutura e abastecimento.\n\nPRIMEIROS 30 DIAS: consolidar os projetos viáveis, expandir a capacidade produtiva e demonstrar avanços substanciais de poder e influência.\n\nEsses são horizontes de planejamento, não garantias artificiais. Simule tempo, recursos, imprevistos e resultados coerentemente.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 25724,
+        "anchor": "PRIMEIROS 30 DIAS: consolidar os projetos viáveis, expandir a capacidade produtiva e demonstrar avanços substanciais de poder e influência.",
+        "name": "PRIMEIROS 30 DIAS",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "e796efd99a7aa9d6e0d67db6015d4e2bb02628fb6657cf1c06e1741954fea6d5"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 25723,
+        "context_end": 25728,
+        "context": "\nPRIMEIROS 30 DIAS: consolidar os projetos viáveis, expandir a capacidade produtiva e demonstrar avanços substanciais de poder e influência.\n\nEsses são horizontes de planejamento, não garantias artificiais. Simule tempo, recursos, imprevistos e resultados coerentemente.\n\nPermita saltos temporais quando LUCAS decidir aguardar a execução de projetos.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 25891,
+        "anchor": "CONSELHO OPERACIONAL — PRIMEIRA ESTRUTURA",
+        "name": "CONSELHO OPERACIONAL",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "31f01c8751efc98c8e6af47d37ead58387807287048b3183d87c3803a3a3c464"
+      },
+      "editorial": {
+        "source_class": "PLAN_OR_DOCUMENT_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de projeto, plano, estudo ou encaminhamento, não nova identidade nem execução implícita.",
+        "entity_id": null,
+        "context_start": 25890,
+        "context_end": 25895,
+        "context": "\nCONSELHO OPERACIONAL — PRIMEIRA ESTRUTURA\n\nFrente\nLiderança\nDefesa e treinamento",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 26418,
+        "anchor": "SYSTEM — EVOLUÇÃO DE EQUIPAMENTO",
+        "name": "SYSTEM",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "9c341e3bd1d5694556205f830f319bb7223bbd76bfe9b599769597b36826ed05"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 26417,
+        "context_end": 26422,
+        "context": "\nSYSTEM — EVOLUÇÃO DE EQUIPAMENTO\n\nArmadura do Criador: Impulso Assistido — Estágio I\n\nA armadura executou uma ação breve de mobilidade aprimorada utilizando energia armazenada num módulo externo compatível.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 26787,
+        "anchor": "CREATION: reserva pessoal ainda em recuperação. Nenhum aumento permanente de capacidade máxima confirmado.",
+        "name": "CREATION",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "f3d2df2719f3e66310791216b2ba2796adf52466eb1dfda6d1fd298f85d797e7"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 26786,
+        "context_end": 26791,
+        "context": "\nCREATION: reserva pessoal ainda em recuperação. Nenhum aumento permanente de capacidade máxima confirmado.\n\nArmadura: novo recurso de mobilidade breve, limitado pela carga externa.\n\nTrês Arcos: 60 legionários transferidos, 240 permanecem no acampamento original. A autorização continua provisória, sem soberania ou propriedade concedida.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 27579,
+        "anchor": "DIAS 16 A 19 — Três Arcos e Arvendell",
+        "name": "DIAS 16 A 19",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "4c9e9a6d59d901ed5eb26f46e1de8d372af313f07bd9e65ff8f08bbaeb0e459d"
+      },
+      "editorial": {
+        "source_class": "DOCUMENT_OR_SECTION_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de seção, registro, operação ou período, não pessoa nem nova identidade pelo padrão de fala.",
+        "entity_id": null,
+        "context_start": 27578,
+        "context_end": 27583,
+        "context": "\nDIAS 16 A 19 — Três Arcos e Arvendell\n\nEnquanto as primeiras canções eram ensaiadas, as frentes operacionais continuaram trabalhando.\n\nO progresso não foi uniforme.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 27851,
+        "anchor": "SYSTEM — DOMÍNIO DE EQUIPAMENTO APRIMORADO",
+        "name": "SYSTEM",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "74334c2afaaeff820f01b540f00cb2694e8cf88a13d19d47fb131f5df461f099"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 27850,
+        "context_end": 27855,
+        "context": "\nSYSTEM — DOMÍNIO DE EQUIPAMENTO APRIMORADO\n\nImpulso Assistido — Estágio II\n\nO portador demonstrou utilização mais eficiente de energia externa em deslocamentos coordenados com técnica corporal.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 28459,
+        "anchor": "CRÔNICAS DA LEGIÃO — VOLUME I",
+        "name": "CRÔNICAS DA LEGIÃO",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "0fd7fbc192422c77239dc7ec88751fe9660dc36b6c6118e6b990d9854b037a11"
+      },
+      "editorial": {
+        "source_class": "DOCUMENT_OR_SECTION_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de seção, registro, operação ou período, não pessoa nem nova identidade pelo padrão de fala.",
+        "entity_id": null,
+        "context_start": 28458,
+        "context_end": 28463,
+        "context": "\nCRÔNICAS DA LEGIÃO — VOLUME I\n\n— O que é isso? — perguntou LUCAS.\n\n— Nossas primeiras histórias — respondeu o conselheiro. — O resgate de ELYAN, a fundação da oficina, a chegada de BRANNIK, a primeira assembleia e alguns relatos pessoais que seus autores concordaram em compartilhar.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 28656,
+        "anchor": "DIAS 21–27  TRÊS ARCOS • ARVENDELL",
+        "name": "DIAS 21",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "7a4eff452dbddafd1203506f1fb3607dce9b4cd031d40042c3aff477065c95c8"
+      },
+      "editorial": {
+        "source_class": "DOCUMENT_OR_SECTION_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de seção, registro, operação ou período, não pessoa nem nova identidade pelo padrão de fala.",
+        "entity_id": null,
+        "context_start": 28655,
+        "context_end": 28660,
+        "context": "\nDIAS 21–27  TRÊS ARCOS • ARVENDELL\n\nUm reino pode levar séculos para nascer. Mas existem semanas em que as decisões de alguns homens mudam o destino de milhares.\n\nE LUCAS estava prestes a descobrir que o maior salto de poder não viria de uma nova criação.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 28996,
+        "anchor": "SYSTEM — EVOLUÇÃO CONFIRMADA",
+        "name": "SYSTEM",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "ea08e600789607c95b881f2d3b0d73f11d00edcaedf11cd6d452c4107ad3aab0"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 28995,
+        "context_end": 29000,
+        "context": "\nSYSTEM — EVOLUÇÃO CONFIRMADA\n\nREFLUXO COMPATÍVEL — ESTÁGIO I\n\nCREATION recebeu uma pequena quantidade de energia convertida externamente, com compatibilidade parcial demonstrada em testes controlados.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 28998,
+        "anchor": "REFLUXO COMPATÍVEL — ESTÁGIO I",
+        "name": "REFLUXO COMPATÍVEL",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "0d2ae1acfc45553f40a3bc67a19f4fc98034b14168866b50c314e207cbec60b4"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 28997,
+        "context_end": 29002,
+        "context": "\nREFLUXO COMPATÍVEL — ESTÁGIO I\n\nCREATION recebeu uma pequena quantidade de energia convertida externamente, com compatibilidade parcial demonstrada em testes controlados.\n\nNova capacidade: recuperação assistida limitada da reserva pessoal a partir de uma fonte externa estabilizada.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 29642,
+        "anchor": "SYSTEM — INTEGRAÇÃO DE COMBATE",
+        "name": "SYSTEM",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "9373e548e0520881de02b952eb470ee9d7d790bf4e4c6ad246d578d836e98055"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 29641,
+        "context_end": 29646,
+        "context": "\nSYSTEM — INTEGRAÇÃO DE COMBATE\n\nTraçado de Combate — Estágio I\n\nAplicação coordenada de leitura do terreno, Reconfiguração Material e Impulso Assistido.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 29977,
+        "anchor": "DIAS 28–34  PRIMEIRO TORNEIO DA LEGIÃO",
+        "name": "DIAS 28",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "4874454009c2df622731cadbb35bcb1f23fba268a33f8170beb5bc2e5998043a"
+      },
+      "editorial": {
+        "source_class": "DOCUMENT_OR_SECTION_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de seção, registro, operação ou período, não pessoa nem nova identidade pelo padrão de fala.",
+        "entity_id": null,
+        "context_start": 29976,
+        "context_end": 29981,
+        "context": "\nDIAS 28–34  PRIMEIRO TORNEIO DA LEGIÃO\n\nUm rei pode reunir dez mil soldados e ainda temer um único herói.\n\nLUCAS possuía trezentos.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 30117,
+        "anchor": "PROJETO — PRIMEIRA LANÇA",
+        "name": "PROJETO",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "cdbbd0a68fe9fa5878a87d0062ad28479bc0b095cdc45f7622436784e745592d"
+      },
+      "editorial": {
+        "source_class": "PLAN_OR_DOCUMENT_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de projeto, plano, estudo ou encaminhamento, não nova identidade nem execução implícita.",
+        "entity_id": null,
+        "context_start": 30116,
+        "context_end": 30121,
+        "context": "\nPROJETO — PRIMEIRA LANÇA\n\nTORNEIO INTERNO • COMPETIÇÃO SUPERVISIONADA\n\nObjetivo: identificar dez destaques de combate, desenvolver talentos, melhorar a doutrina e criar uma tradição militar da Legião.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 30151,
+        "anchor": "DIAS 28–30 | Três Arcos e Arvendell",
+        "name": "DIAS 28",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "6b571c158c69501c13c39a7cdcae453141012081bf9efb2288986c9020cfd957"
+      },
+      "editorial": {
+        "source_class": "DOCUMENT_OR_SECTION_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de seção, registro, operação ou período, não pessoa nem nova identidade pelo padrão de fala.",
+        "entity_id": null,
+        "context_start": 30150,
+        "context_end": 30155,
+        "context": "\nDIAS 28–30 | Três Arcos e Arvendell\n\nLUCAS não interrompeu a construção da comunidade para organizar o torneio.\n\nPela primeira vez, a estrutura do Conselho demonstrou toda a sua utilidade.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 30844,
+        "anchor": "SYSTEM — EVOLUÇÃO DE DOMÍNIO",
+        "name": "SYSTEM",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "a8134c08d106face7130b4e92776badf692f9b2a79a3f70535f014eb5ac589cf"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 30843,
+        "context_end": 30848,
+        "context": "\nSYSTEM — EVOLUÇÃO DE DOMÍNIO\n\nTraçado de Combate — Estágio II\n\nMelhor integração entre antecipação, Reconfiguração Material e movimentos assistidos da armadura.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 30904,
+        "anchor": "CAPACIDADE MILITAR — AVALIAÇÃO INTERNA",
+        "name": "CAPACIDADE MILITAR",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "a7c8d7b9770fec29807dd648d5bb1abb1cf850daaa8012e1848a5732c42c1e29"
+      },
+      "editorial": {
+        "source_class": "DOCUMENT_OR_SECTION_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de seção, registro, operação ou período, não pessoa nem nova identidade pelo padrão de fala.",
+        "entity_id": null,
+        "context_start": 30903,
+        "context_end": 30908,
+        "context": "\nCAPACIDADE MILITAR — AVALIAÇÃO INTERNA\n\nContexto\nO que foi demonstrado\nBatalha contra Uzgor",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 31203,
+        "anchor": "DIRETRIZ MESTRE — A ASCENSÃO DOS 300",
+        "name": "DIRETRIZ MESTRE",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "a4c179fb9b3afd7380fe6c5b67c277ac3b8017226bc232e446eab80fb7bdf928"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 31202,
+        "context_end": 31207,
+        "context": "\nDIRETRIZ MESTRE — A ASCENSÃO DOS 300\n\nNovo arco: O nascimento do Criador\n\nA partir do ponto atual da campanha, quero iniciar a maior transformação narrativa desde a chegada de LUCAS a este mundo.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 31219,
+        "anchor": "PRIMEIRA ORDEM — CONHECER MINHA LEGIÃO",
+        "name": "PRIMEIRA ORDEM",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "33434793c11f590598e03509140e52d420dee66b43cb5c5d09ee1d2f8f8be23b"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 31218,
+        "context_end": 31223,
+        "context": "\nPRIMEIRA ORDEM — CONHECER MINHA LEGIÃO\n\nLUCAS determina a realização de uma assembleia de fundação.\n\nAs posições de Arvendell e Três Arcos devem continuar protegidas. Organize a participação presencial ou escalonada dos legionários, sem exigir uma reunião fisicamente impossível.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 31235,
+        "anchor": "SEGUNDA ORDEM — O DESPERTAR DOS 300",
+        "name": "SEGUNDA ORDEM",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "9a6576338ea555dda362a0f4d599c0a5aa96718abdd6a2d5a545742bf5cb5b47"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 31234,
+        "context_end": 31239,
+        "context": "\nSEGUNDA ORDEM — O DESPERTAR DOS 300\n\nVARO receberá a missão de desenvolver uma Legião capaz de operar independentemente de LUCAS.\n\nOs dez campeões serão avaliados como possíveis instrutores, especialistas, comandantes ou exploradores, conforme suas capacidades demonstradas, sem pressupor que todos desejem liderar.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 31253,
+        "anchor": "TERCEIRA ORDEM — FUNDAÇÃO DE UMA CIVILIZAÇÃO",
+        "name": "TERCEIRA ORDEM",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "6ed75b66a06ad249681cf8f6a6d1f87d06b581c4bc17dd72cd3d6853b311dc76"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 31252,
+        "context_end": 31257,
+        "context": "\nTERCEIRA ORDEM — FUNDAÇÃO DE UMA CIVILIZAÇÃO\n\nKAEL e LYSA deverão preparar, juntamente com os representantes relevantes, os fundamentos políticos, comerciais e institucionais de nossa futura sociedade.\n\nTrês Arcos será nosso primeiro grande projeto, respeitando as condições da concessão de 90 dias.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 31267,
+        "anchor": "QUARTA ORDEM — REVELAR A GRANDEZA DO MUNDO",
+        "name": "QUARTA ORDEM",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "b44502306d312f770968f2037d7d2c61577d62a006d3df0c2fd49323790ac4a1"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 31266,
+        "context_end": 31271,
+        "context": "\nQUARTA ORDEM — REVELAR A GRANDEZA DO MUNDO\n\nLUCAS determina a criação do primeiro projeto cartográfico e diplomático de alcance mundial.\n\nReunir informações confiáveis sobre continentes, mares, impérios, civilizações, espécies inteligentes, organizações mágicas, tecnologias, religiões, rotas comerciais e regiões ainda desconhecidas.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 31283,
+        "anchor": "QUINTA ORDEM — A PRIMEIRA GRANDE DEMONSTRAÇÃO",
+        "name": "QUINTA ORDEM",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "8be90bfc4648b1c51a5115eb8c33189687d9046e5430f30dfae35934b0b20eb3"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 31282,
+        "context_end": 31287,
+        "context": "\nQUINTA ORDEM — A PRIMEIRA GRANDE DEMONSTRAÇÃO\n\nConstrua, a partir dos conflitos e oportunidades já existentes, uma situação significativa na qual a Legião possa demonstrar a evolução conquistada.\n\nO feito deve possuir consequências reais e ser reconhecido por testemunhas externas.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 31299,
+        "anchor": "SEXTA ORDEM — O SIGNIFICADO DE “O CRIADOR”",
+        "name": "SEXTA ORDEM",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "3eb804da1e32e9643f1d427757a66b7a12af5e8ba9f7d0af06c82aaaf379d17a"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 31298,
+        "context_end": 31303,
+        "context": "\nSEXTA ORDEM — O SIGNIFICADO DE “O CRIADOR”\n\nLUCAS não deseja ser um rei tradicional ou conquistar povos pela força.\n\nEle deseja construir um futuro que não existia.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 31315,
+        "anchor": "SÉTIMA ORDEM — NOVO RITMO",
+        "name": "SÉTIMA ORDEM",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "8d4bf2c2d94b29a51e7c77c472b779782204128c8d114b1012b4eab46377a35d"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 31314,
+        "context_end": 31319,
+        "context": "\nSÉTIMA ORDEM — NOVO RITMO\n\nEsta mudança deve produzir acontecimentos relevantes nos próximos capítulos, sem ficar presa a incontáveis reuniões e planejamentos.\n\nA execução de projetos delegados continua paralelamente à vida pessoal de LUCAS.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 31346,
+        "anchor": "REINCARNATED WITH AN OP SKILL — LIVRO I",
+        "name": "REINCARNATED WITH AN OP SKILL",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "3d14b10dffc10a6189fd8d6785303b90a75afaed8896caf94df86cb5612852ca"
+      },
+      "editorial": {
+        "source_class": "DOCUMENT_OR_SECTION_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de seção, registro, operação ou período, não pessoa nem nova identidade pelo padrão de fala.",
+        "entity_id": null,
+        "context_start": 31345,
+        "context_end": 31350,
+        "context": "\nREINCARNATED WITH AN OP SKILL — LIVRO I\n\nCAPÍTULO 30\n\nO nascimento do Criador",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 31474,
+        "anchor": "ASSEMBLEIA DOS 300 — FUNDAÇÃO DA IRMANDADE",
+        "name": "ASSEMBLEIA DOS 300",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "a0cba508f74bb59627f620068c3437c72673d264f1d9beb6384a1e01682c5f30"
+      },
+      "editorial": {
+        "source_class": "PLAN_OR_DOCUMENT_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de projeto, plano, estudo ou encaminhamento, não nova identidade nem execução implícita.",
+        "entity_id": null,
+        "context_start": 31473,
+        "context_end": 31478,
+        "context": "\nASSEMBLEIA DOS 300 — FUNDAÇÃO DA IRMANDADE\n\nVARO examinou a proposta.\n\n— Uma assembleia com todos os homens?",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 31600,
+        "anchor": "ATLAS DO MUNDO CONHECIDO — VOLUME ZERO",
+        "name": "ATLAS DO MUNDO CONHECIDO",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "c5c0716426dece188f4f7b51a80fad399a1e1c60c206bf31e189b035abb021c0"
+      },
+      "editorial": {
+        "source_class": "DOCUMENT_OR_SECTION_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de seção, registro, operação ou período, não pessoa nem nova identidade pelo padrão de fala.",
+        "entity_id": null,
+        "context_start": 31599,
+        "context_end": 31604,
+        "context": "\nATLAS DO MUNDO CONHECIDO — VOLUME ZERO\n\nKAEL examinou a capa.\n\n— Por que volume zero?",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 32128,
+        "anchor": "CÍRAN: “Se eu superar até os maiores guerreiros, continuarei sendo respeitado?”",
+        "name": "CÍRAN",
+        "candidates": [
+          "cirn"
+        ],
+        "source_role": "LEGACY_MIXED",
+        "kind": "KNOWN_CANDIDATE",
+        "id": "fdab2ffd8d35a1f19da1740b12511a0c60503f9a1b2a41d83909d84c4d7b043f"
+      },
+      "editorial": {
+        "source_class": "SUMMARY",
+        "disposition": "MENTION_ONLY",
+        "reason": "Pergunta de Círan antes de escolhas, não decisão.",
+        "entity_id": "cirn",
+        "context_start": 32127,
+        "context_end": 32132,
+        "context": "\nCÍRAN: “Se eu superar até os maiores guerreiros, continuarei sendo respeitado?”\n\nHALDEN: “Se eu deixar de ser soldado, ainda farei parte da Legião?”\n\nVocê pode responder livremente às duas perguntas e definir o tom da Assembleia. Se preferir escolher a direção da cena, existem três caminhos:",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 32130,
+        "anchor": "HALDEN: “Se eu deixar de ser soldado, ainda farei parte da Legião?”",
+        "name": "HALDEN",
+        "candidates": [
+          "chr-halden-cozinheiro"
+        ],
+        "source_role": "LEGACY_MIXED",
+        "kind": "KNOWN_CANDIDATE",
+        "id": "65348d20f682e39328bb03861cfd9629d92e47d7a5ae4ed078774631cb0dc9f8"
+      },
+      "editorial": {
+        "source_class": "SUMMARY",
+        "disposition": "MENTION_ONLY",
+        "reason": "Pergunta de Halden, não saída consumada.",
+        "entity_id": "chr-halden-cozinheiro",
+        "context_start": 32129,
+        "context_end": 32134,
+        "context": "\nHALDEN: “Se eu deixar de ser soldado, ainda farei parte da Legião?”\n\nVocê pode responder livremente às duas perguntas e definir o tom da Assembleia. Se preferir escolher a direção da cena, existem três caminhos:\n\n[Escolher direção]",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 32798,
+        "anchor": "ÂNCORA COLETIVA — OBSERVAÇÃO",
+        "name": "ÂNCORA COLETIVA",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "cdcd643e3bdda9f148678310a97d5ab0aef8c6f333c83871c865ac3a2ed4fa93"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 32797,
+        "context_end": 32802,
+        "context": "\nÂNCORA COLETIVA — OBSERVAÇÃO\n\nVÍNCULO DA IRMANDADE\n\nRessonância espontânea detectada.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 33651,
+        "anchor": "ÂNCORA COLETIVA — REGISTRO DE MARCO",
+        "name": "ÂNCORA COLETIVA",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "2aa68771352d87d78b4451cf47bc837d31896544bd11489fedfc677d268b9eb4"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 33650,
+        "context_end": 33655,
+        "context": "\nÂNCORA COLETIVA — REGISTRO DE MARCO\n\nCAMINHOS DA IRMANDADE\n\nUma manifestação de identidade coletiva foi registrada.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 33771,
+        "anchor": "ASSEMBLEIA DOS 300 — PRIMEIROS ENCAMINHAMENTOS",
+        "name": "ASSEMBLEIA DOS 300",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "5814483f6f4f23535a2f2f7e5ffe45743fc20976fc21e5d159adb3c8b72bdb20"
+      },
+      "editorial": {
+        "source_class": "PLAN_OR_DOCUMENT_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de projeto, plano, estudo ou encaminhamento, não nova identidade nem execução implícita.",
+        "entity_id": null,
+        "context_start": 33770,
+        "context_end": 33775,
+        "context": "\nASSEMBLEIA DOS 300 — PRIMEIROS ENCAMINHAMENTOS\n\nProposta\nResponsáveis pela preparação\nCaminhos de carreira militar e civil",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 33988,
+        "anchor": "DIAS 35–36  TRÊS ARCOS, ARVENDELL (OS SEGREDOS DO SISTEMA)",
+        "name": "DIAS 35",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "d4337da461205076222788dd763b8981300388e1d0ee0eb9c8a4f73caae92307"
+      },
+      "editorial": {
+        "source_class": "DOCUMENT_OR_SECTION_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de seção, registro, operação ou período, não pessoa nem nova identidade pelo padrão de fala.",
+        "entity_id": null,
+        "context_start": 33987,
+        "context_end": 33992,
+        "context": "\nDIAS 35–36  TRÊS ARCOS, ARVENDELL (OS SEGREDOS DO SISTEMA)\n\nHavia um coração adormecido sob as ruínas.\n\nHavia um Sistema que conhecia o nome de LUCAS antes que ele compreendesse o próprio poder.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 34530,
+        "anchor": "SYSTEM — CONSULTA DE ORIGEM",
+        "name": "SYSTEM",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "39af38008f241aa99c93ec352dc19dbc54eff0ca2f629adb8d214b2ebe502108"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 34529,
+        "context_end": 34534,
+        "context": "\nSYSTEM — CONSULTA DE ORIGEM\n\nMissão classificada como objetivo de desenvolvimento do portador.\n\nAutor original: informação indisponível.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 34816,
+        "anchor": "SYSTEM — HERANÇA PRÉVIA",
+        "name": "SYSTEM",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "f56fddc7532b623b643e65f3417c837a1cc0953389f40e04ea14a03f7e307f8f"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 34815,
+        "context_end": 34820,
+        "context": "\nSYSTEM — HERANÇA PRÉVIA\n\nNÓ DE OBSERVAÇÃO • TRÊS ARCOS\n\nCORAÇÃO DE CONVERGÊNCIA",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 35341,
+        "anchor": "DIAS 37–43  TRÊS ARCOS • ARVENDELL • HALVERN",
+        "name": "DIAS 37",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "4f7223d97bfcd2c26bbb7cd04024738d412a8388e244003bd933ae0dbf52c6da"
+      },
+      "editorial": {
+        "source_class": "DOCUMENT_OR_SECTION_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de seção, registro, operação ou período, não pessoa nem nova identidade pelo padrão de fala.",
+        "entity_id": null,
+        "context_start": 35340,
+        "context_end": 35345,
+        "context": "\nDIAS 37–43  TRÊS ARCOS • ARVENDELL • HALVERN\n\nUm exército pode ocupar uma fortaleza em uma única noite.\n\nUma nação, porém, precisa de algo muito mais difícil de conquistar.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 35475,
+        "anchor": "PLANO DE FUNDAÇÃO — VERSÃO 1",
+        "name": "PLANO DE FUNDAÇÃO",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "d98d810090dddb0f7c9e8b95941f1620f6b15510ba64dd7410c595ef79068fd0"
+      },
+      "editorial": {
+        "source_class": "PLAN_OR_DOCUMENT_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de projeto, plano, estudo ou encaminhamento, não nova identidade nem execução implícita.",
+        "entity_id": null,
+        "context_start": 35474,
+        "context_end": 35479,
+        "context": "\nPLANO DE FUNDAÇÃO — VERSÃO 1\n\n<svg viewBox=\"0 0 340 216\" width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\"><rect width=\"340\" height=\"216\" rx=\"12\" fill=\"#F3F0E8\" /><path d=\"M0 60 Q78 31 137 75 T340 57\" fill=\"none\" stroke=\"#9AB9C6\" stroke-width=\"15\" opacity=\".8\" /><path d=\"M0 60 Q78 31 137 75 T340 57\" fill=\"none\" stroke=\"#D7E7E9\" stroke-width=\"5\" /><path d=\"M11 178 L88 127 L165 161 L232 126 L337 153\" fill=\"none\" stroke=\"#B9AB90\" stroke-width=\"12\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M11 178 L88 127 L165 161 L232 126 L337 153\" fill=\"none\" stroke=\"#E7D7B8\" stroke-width=\"6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><rect x=\"30\" y=\"92\" width=\"73\" height=\"49\" rx=\"7\" fill=\"#E2D9C7\" stroke=\"#998C79\" /><rect x=\"121\" y=\"103\" width=\"72\" height=\"39\" rx=\"7\" fill=\"#D6E0E8\" stroke=\"#55768D\" /><rect x=\"211\" y=\"86\" width=\"89\" height=\"49\" rx=\"7\" fill=\"#DBE5D7\" stroke=\"#849978\" /><ellipse cx=\"260\" cy=\"178\" rx=\"54\" ry=\"26\" fill=\"#EDE0CB\" stroke=\"#AC8A5B\" stroke-width=\"2\" stroke-dasharray=\"5 4\" /><rect x=\"34\" y=\"154\" width=\"65\" height=\"34\" rx=\"6\" fill=\"#EBDECC\" stroke=\"#B5A087\" /><g fill=\"#2C4250\" font-size=\"10\" text-anchor=\"middle\" font-weight=\"600\"><text x=\"66\" y=\"113\">Moradias</text><text x=\"66\" y=\"125\">existentes</text><text x=\"157\" y=\"118\">Oficinas</text><text x=\"157\" y=\"130\">e academia</text><text x=\"256\" y=\"108\">Canteiros</text><text x=\"256\" y=\"120\">agrícolas</text><text x=\"260\" y=\"178\">Futura arena</text><text x=\"260\" y=\"190\" font-weight=\"400\">em avaliação</text><text x=\"66\" y=\"174\">Depósitos</text></g><text x=\"14\" y=\"18\" font-size=\"10\" fill=\"#687D87\">Água e drenagem — zona de proteção</text><path d=\"M305 20 L305 36 M305 20 L300 29 M305 20 L310 29\" stroke=\"#647781\" stroke-width=\"1.5\" fill=\"none\" /><text x=\"305\" y=\"14\" font-size=\"9\" text-anchor=\"middle\" fill=\"#647781\">N</text></svg>\n\nEsquema conceitual, não topográfico ou cadastral. A localização final de novas obras depende de levantamento e autorização.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 35724,
+        "anchor": "SYSTEM — MISSÃO ATUALIZADA",
+        "name": "SYSTEM",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "fcc1f7898d958bedfac63832e83c9e419e83ea8671894296b7d80edfd911db27"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 35723,
+        "context_end": 35728,
+        "context": "\nSYSTEM — MISSÃO ATUALIZADA\n\nOs Três Princípios dos Arquitetos\n\nObservação — registro de isolamento localizado (Confirmado)",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 36114,
+        "anchor": "ESTUDO DE IMPLANTAÇÃO — NÃO CONSTRUÍDO",
+        "name": "ESTUDO DE IMPLANTAÇÃO",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "cc89104fdcc266203002e9f31adfa29fc5e89d97dd89bcdef5e4deaa86525b26"
+      },
+      "editorial": {
+        "source_class": "PLAN_OR_DOCUMENT_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de projeto, plano, estudo ou encaminhamento, não nova identidade nem execução implícita.",
+        "entity_id": null,
+        "context_start": 36113,
+        "context_end": 36118,
+        "context": "\nESTUDO DE IMPLANTAÇÃO — NÃO CONSTRUÍDO\n\nEtapa\nEntrega prevista\nI",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 36301,
+        "anchor": "SYSTEM — APERFEIÇOAMENTO DE CONTROLE",
+        "name": "SYSTEM",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "0d9b86d79c69895586d286b3ad41e4d59c00cb4dd4132fee195d0f1d15785a7f"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 36300,
+        "context_end": 36305,
+        "context": "\nSYSTEM — APERFEIÇOAMENTO DE CONTROLE\n\nRefluxo Compatível I — Fluxo Estabilizado\n\nDesenvolvimento confirmado: maior estabilidade no recebimento de pequenas transferências externas em condições controladas.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 36644,
+        "anchor": "DIAS 43–52  TRÊS ARCOS • ARVENDELL • HALVERN",
+        "name": "DIAS 43",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "7286857cc685b22a4523ef0884d416ff893287573ae74ca3b0da7125e68ffa24"
+      },
+      "editorial": {
+        "source_class": "DOCUMENT_OR_SECTION_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de seção, registro, operação ou período, não pessoa nem nova identidade pelo padrão de fala.",
+        "entity_id": null,
+        "context_start": 36643,
+        "context_end": 36648,
+        "context": "\nDIAS 43–52  TRÊS ARCOS • ARVENDELL • HALVERN\n\nUma cidade não fracassa apenas quando seus muros caem.\n\nÀs vezes, fracassa quando seus fundadores confundem esperança com preparação.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 36752,
+        "anchor": "VARO — “Ainda não sabemos defender uma nação”",
+        "name": "VARO",
+        "candidates": [
+          "varo"
+        ],
+        "source_role": "LEGACY_MIXED",
+        "kind": "KNOWN_CANDIDATE",
+        "id": "0b295e91b93fa5c25db9b014931d5aec3ee07b2dcd9468d859086967bdc1e395"
+      },
+      "editorial": {
+        "source_class": "NARRATED_RESPONSE",
+        "disposition": "MENTION_ONLY",
+        "reason": "Título da intervenção de Varo sobre defesa.",
+        "entity_id": "varo",
+        "context_start": 36751,
+        "context_end": 36756,
+        "context": "\nVARO — “Ainda não sabemos defender uma nação”\n\nO capitão levantou-se.\n\n— Somos uma Legião extraordinária. Não retiro uma palavra disso.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 36796,
+        "anchor": "LYSA — “Temos uma economia. Ainda não temos sustentabilidade”",
+        "name": "LYSA",
+        "candidates": [
+          "lysa"
+        ],
+        "source_role": "LEGACY_MIXED",
+        "kind": "KNOWN_CANDIDATE",
+        "id": "9ce87329cfe2fde57c28d24c43006caf2368561630ee32275e4b6cf57db3364b"
+      },
+      "editorial": {
+        "source_class": "NARRATED_RESPONSE",
+        "disposition": "MENTION_ONLY",
+        "reason": "Título da intervenção de Lysa sobre sustentabilidade.",
+        "entity_id": "lysa",
+        "context_start": 36795,
+        "context_end": 36800,
+        "context": "\nLYSA — “Temos uma economia. Ainda não temos sustentabilidade”\n\nLYSA colocou os registros financeiros sobre a mesa.\n\n— Nosso principal problema não é falta absoluta de recursos.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 36840,
+        "anchor": "BRANNIK — “Uma cidade precisa funcionar antes de impressionar”",
+        "name": "BRANNIK",
+        "candidates": [
+          "brannik"
+        ],
+        "source_role": "LEGACY_MIXED",
+        "kind": "KNOWN_CANDIDATE",
+        "id": "2f6accf3cf0fb3e2674913cc091d3fa89f15f043a89a3642f0af649c68d0c9d2"
+      },
+      "editorial": {
+        "source_class": "NARRATED_RESPONSE",
+        "disposition": "MENTION_ONLY",
+        "reason": "Título da intervenção de Brannik sobre funcionamento urbano.",
+        "entity_id": "brannik",
+        "context_start": 36839,
+        "context_end": 36844,
+        "context": "\nBRANNIK — “Uma cidade precisa funcionar antes de impressionar”\n\nO anão colocou sobre a mesa o desenho do Coliseu.\n\nDepois o virou.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 36876,
+        "anchor": "KAEL — “Temos legitimidade crescente. Não temos soberania”",
+        "name": "KAEL",
+        "candidates": [
+          "kael"
+        ],
+        "source_role": "LEGACY_MIXED",
+        "kind": "KNOWN_CANDIDATE",
+        "id": "99200f3f3f899cc3d6b26a6fc5092f3dd6473697b0e66808bfe31127d9853a78"
+      },
+      "editorial": {
+        "source_class": "NARRATED_RESPONSE",
+        "disposition": "MENTION_ONLY",
+        "reason": "Título da intervenção de Kael: legitimidade não soberania.",
+        "entity_id": "kael",
+        "context_start": 36875,
+        "context_end": 36880,
+        "context": "\nKAEL — “Temos legitimidade crescente. Não temos soberania”\n\nKAEL abriu os documentos de Thalor.\n\n— Este talvez seja nosso problema político mais importante.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 36910,
+        "anchor": "MIREN — “O Coração pode ser nossa maior vantagem ou nosso maior erro”",
+        "name": "MIREN",
+        "candidates": [
+          "miren"
+        ],
+        "source_role": "LEGACY_MIXED",
+        "kind": "KNOWN_CANDIDATE",
+        "id": "574a81b721dcc7fff8c9b5fb3f5aa483307f0ae99e1e779a0efb1542527d1701"
+      },
+      "editorial": {
+        "source_class": "NARRATED_RESPONSE",
+        "disposition": "MENTION_ONLY",
+        "reason": "Título da intervenção de Miren: Coração em avaliação.",
+        "entity_id": "miren",
+        "context_start": 36909,
+        "context_end": 36914,
+        "context": "\nMIREN — “O Coração pode ser nossa maior vantagem ou nosso maior erro”\n\nMIREN permaneceu sentada por alguns instantes.\n\nDepois se levantou.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 36938,
+        "anchor": "TAREK — “Precisamos saber se a cidade também será nossa”",
+        "name": "TAREK",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "d3a319d0cac847f42ea98dc5c52f6c25d5c0b3282853a40835576f7c7d5208d5"
+      },
+      "editorial": {
+        "source_class": "NARRATED_RESPONSE",
+        "disposition": "NEW_ID_CANDIDATE",
+        "reason": "Tarek, representante dos moradores; corroborado em E01, não admitir automaticamente.",
+        "entity_id": "candidate:tarek-book-i",
+        "context_start": 36937,
+        "context_end": 36942,
+        "context": "\nTAREK — “Precisamos saber se a cidade também será nossa”\n\nO representante dos moradores pediu a palavra.\n\n— Todos vocês falam sobre construir uma grande nação.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 37316,
+        "anchor": "DIAS 47–51 | Três Arcos",
+        "name": "DIAS 47",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "c364615cb791727c9bd5045ec36dde9edab5760a1cc07e3309a82e1e127be299"
+      },
+      "editorial": {
+        "source_class": "DOCUMENT_OR_SECTION_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de seção, registro, operação ou período, não pessoa nem nova identidade pelo padrão de fala.",
+        "entity_id": null,
+        "context_start": 37315,
+        "context_end": 37320,
+        "context": "\nDIAS 47–51 | Três Arcos\n\nEnquanto VARO preparava a Legião, o Projeto Primeira Cidade avançou.\n\nBRANNIK, NÉRIA, ASTRA, ESMARA e LYSA organizaram uma sequência de obras compatível com os recursos disponíveis.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 37500,
+        "anchor": "SYSTEM — PRINCÍPIO DA FORMA",
+        "name": "SYSTEM",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "eed5b998a47ffca32393de4b0302e5a4677439f2cf67f2edd0c17395798d6c24"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 37499,
+        "context_end": 37504,
+        "context": "\nSYSTEM — PRINCÍPIO DA FORMA\n\nNovo conhecimento confirmado: a antiga rede possuía mecanismos de isolamento destinados a limitar falhas entre setores.\n\nAplicação prática: desenvolvimento de dispositivos de interrupção independentes para os módulos da Legião.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 37867,
+        "anchor": "REINCARNATED WITH AN OP SKILL — LIVRO I",
+        "name": "REINCARNATED WITH AN OP SKILL",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "3a3749c52c444855d9b8483047c74a4f5e35bfbe51873320c37afea5765ef50d"
+      },
+      "editorial": {
+        "source_class": "DOCUMENT_OR_SECTION_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de seção, registro, operação ou período, não pessoa nem nova identidade pelo padrão de fala.",
+        "entity_id": null,
+        "context_start": 37866,
+        "context_end": 37871,
+        "context": "\nREINCARNATED WITH AN OP SKILL — LIVRO I\n\nCapítulo 36 — A Cidade que Nenhum Rei Possuirá\n\nDIA 52 • 19h28  TRÊS ARCOS",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 38439,
+        "anchor": "CONSULTA DOS MORADORES — RECONSTITUIÇÃO DA CIDADE LIVRE",
+        "name": "CONSULTA DOS MORADORES",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "6b066c0ed31ad341132a06d2d26593ada9390293fff99e2c06a20088d5d2095a"
+      },
+      "editorial": {
+        "source_class": "PLAN_OR_DOCUMENT_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de projeto, plano, estudo ou encaminhamento, não nova identidade nem execução implícita.",
+        "entity_id": null,
+        "context_start": 38438,
+        "context_end": 38443,
+        "context": "\nCONSULTA DOS MORADORES — RECONSTITUIÇÃO DA CIDADE LIVRE\n\nA favor\n\n16",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 38874,
+        "anchor": "SYSTEM — MARCO HISTÓRICO",
+        "name": "SYSTEM",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "795fa6c6a4d7e22fcd3484ca619aafcd15d8e8bdfaaa468f646c00d13b1239c3"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 38873,
+        "context_end": 38878,
+        "context": "\nSYSTEM — MARCO HISTÓRICO\n\nRECONHECIMENTO TERRITORIAL\n\nA PRIMEIRA CIDADE LIVRE",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 38910,
+        "anchor": "SYSTEM — RESSONÂNCIA HISTÓRICA",
+        "name": "SYSTEM",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "dbbd6c8225eb2ff251b747eeafb0d41878e15583110d566e02c428c4f3650a8e"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 38909,
+        "context_end": 38914,
+        "context": "\nSYSTEM — RESSONÂNCIA HISTÓRICA\n\nO nome político das Três Passagens foi reconhecido nos registros do Nó de Observação.\n\nCorrespondência documental detectada: o estatuto reconstituído possui referências compatíveis com parte da terminologia dos antigos Arquitetos.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 39152,
+        "anchor": "ORDEM SUPREMA — OPERAÇÃO GRANDE HORIZONTE",
+        "name": "ORDEM SUPREMA",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "4afc297ba6105f030e985c0344f48cee50d47f746fa8d89464136a7807faaaa0"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 39151,
+        "context_end": 39156,
+        "context": "\nORDEM SUPREMA — OPERAÇÃO GRANDE HORIZONTE\n\nDestinatários: VARO, KAEL, ASTRA, os dez campeões e o conselho da Cidade Livre de Três Arcos.\n\nA partir deste momento, declaro o início de uma nova etapa de nossa história.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 39160,
+        "anchor": "PRIMEIRA DETERMINAÇÃO — A NAÇÃO DOS POVOS LIVRES",
+        "name": "PRIMEIRA DETERMINAÇÃO",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "b95d628a872fc153b25d6a87260dc2a4e7f2a8ce3a2adadf4e467cf00b9fe55d"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 39159,
+        "context_end": 39164,
+        "context": "\nPRIMEIRA DETERMINAÇÃO — A NAÇÃO DOS POVOS LIVRES\n\nQuero estabelecer um projeto de acolhimento e integração de novos habitantes, independentemente de raça ou origem, respeitando as leis e os compromissos já firmados.\n\nPrecisamos de famílias, agricultores, engenheiros, médicos, comerciantes, pesquisadores, navegadores e pessoas com diferentes talentos.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 39168,
+        "anchor": "SEGUNDA DETERMINAÇÃO — A GRANDE EVOLUÇÃO",
+        "name": "SEGUNDA DETERMINAÇÃO",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "37838636e5598560e81bc2cb575f848a71ee14703f7227f0c43869c20444d936"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 39167,
+        "context_end": 39172,
+        "context": "\nSEGUNDA DETERMINAÇÃO — A GRANDE EVOLUÇÃO\n\nVARO deverá estudar a evolução individual e coletiva dos 300 legionários. Quero que cada um tenha oportunidade de desenvolver seus próprios talentos e ambições.\n\nOs campeões deverão formar novos especialistas. Nossos conhecimentos precisam se multiplicar.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 39176,
+        "anchor": "TERCEIRA DETERMINAÇÃO — O CORAÇÃO DE CONVERGÊNCIA",
+        "name": "TERCEIRA DETERMINAÇÃO",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "d290de4c202d0c8b6c836439dd67ca061a7591e57b0601c83f4f30798ca46121"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 39175,
+        "context_end": 39180,
+        "context": "\nTERCEIRA DETERMINAÇÃO — O CORAÇÃO DE CONVERGÊNCIA\n\nASTRA e os especialistas autorizados deverão investigar o núcleo sem romper seus selos de segurança.\n\nDeterminem, por meios não invasivos, sua origem, capacidades comprovadas, histórico da falha, riscos e possíveis conexões com outras estruturas antigas.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 39188,
+        "anchor": "QUARTA DETERMINAÇÃO — A CARTOGRAFIA DO MUNDO",
+        "name": "QUARTA DETERMINAÇÃO",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "f4bc7f0a7ef0a46ef804c09a79cfcbcdb0923eb156e0512214450aea9d16f0ef"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 39187,
+        "context_end": 39192,
+        "context": "\nQUARTA DETERMINAÇÃO — A CARTOGRAFIA DO MUNDO\n\nKAEL deverá organizar a aquisição de mapas, relatos de viajantes, conhecimentos marítimos e informações diplomáticas.\n\nQuero conhecer os grandes continentes, mares, impérios, povos, centros de conhecimento e regiões desconhecidas.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 39196,
+        "anchor": "QUINTA DETERMINAÇÃO — O LEGADO DO CRIADOR",
+        "name": "QUINTA DETERMINAÇÃO",
+        "candidates": [],
+        "source_role": "AUTHOR_DIRECTION",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "9a015d82bead3916c9ef3db2f6f2ebaf6cd93e97109d74f70992c04f166aa63a"
+      },
+      "editorial": {
+        "source_class": "AUTHOR_DIRECTION",
+        "disposition": "NOT_ENTITY",
+        "reason": "Cabeçalho de comando autoral, não pessoa ou evento narrado.",
+        "entity_id": null,
+        "context_start": 39195,
+        "context_end": 39200,
+        "context": "\nQUINTA DETERMINAÇÃO — O LEGADO DO CRIADOR\n\nQuero conhecer pessoalmente os integrantes da Legião e permitir que seus interesses individuais influenciem o desenvolvimento de nossa nação.\n\nNão desejo ser conhecido apenas como aquele que criou 300 guerreiros.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 39257,
+        "anchor": "DIAS 57–75  CIDADE LIVRE DE TRÊS ARCOS (PENÚLTIMO CAPÍTULO)",
+        "name": "DIAS 57",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "bd3f984fd9430bedafb52334ac78178ee5dd4a920f2ad88277954e76d90f4184"
+      },
+      "editorial": {
+        "source_class": "DOCUMENT_OR_SECTION_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de seção, registro, operação ou período, não pessoa nem nova identidade pelo padrão de fala.",
+        "entity_id": null,
+        "context_start": 39256,
+        "context_end": 39261,
+        "context": "\nDIAS 57–75  CIDADE LIVRE DE TRÊS ARCOS (PENÚLTIMO CAPÍTULO)\n\nNo primeiro dia, LUCAS criou trezentos guerreiros para sobreviver.\n\nNo quinquagésimo sexto, ajudou a fundar uma Cidade Livre.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 39419,
+        "anchor": "ASSEMBLEIA DOS 300 — PRIMEIRO RESULTADO",
+        "name": "ASSEMBLEIA DOS 300",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "410f78545507f576b8bf595fb5f5634e4f03c46c226292c83f294100016b56ba"
+      },
+      "editorial": {
+        "source_class": "PLAN_OR_DOCUMENT_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de projeto, plano, estudo ou encaminhamento, não nova identidade nem execução implícita.",
+        "entity_id": null,
+        "context_start": 39418,
+        "context_end": 39423,
+        "context": "\nASSEMBLEIA DOS 300 — PRIMEIRO RESULTADO\n\nTodos os 300 legionários originais tiveram uma oportunidade de manifestação, presencialmente ou por registro em seus destacamentos. Nenhuma escolha profissional ou pessoal foi imposta.\n\nEncaminhamentos aprovados para execução: formação voluntária, avaliação individual de aptidões, direito de apresentar propostas, mecanismos internos de recurso e programa progressivo de transição para funções civis.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 39435,
+        "anchor": "PROGRAMA DE DESENVOLVIMENTO INDIVIDUAL — PRIMEIRA LANÇA.",
+        "name": "PROGRAMA DE DESENVOLVIMENTO INDIVIDUAL",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "dd16581de569a73e6a84e3dd20075eb228293760fb4f0bbaf1783fc256996317"
+      },
+      "editorial": {
+        "source_class": "PLAN_OR_DOCUMENT_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de projeto, plano, estudo ou encaminhamento, não nova identidade nem execução implícita.",
+        "entity_id": null,
+        "context_start": 39434,
+        "context_end": 39439,
+        "context": "\nPROGRAMA DE DESENVOLVIMENTO INDIVIDUAL — PRIMEIRA LANÇA.\n\nCÍRAN examinou a primeira página.\n\n— Não vejo meu nome numa lista de comandantes.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 39949,
+        "anchor": "DIAS 76–90  FINAL DO LIVRO I",
+        "name": "DIAS 76",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "81aeb8c61f33e00c2aac2c743c6c11b7cb269a60a2693e6816b51780759f2f61"
+      },
+      "editorial": {
+        "source_class": "DOCUMENT_OR_SECTION_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de seção, registro, operação ou período, não pessoa nem nova identidade pelo padrão de fala.",
+        "entity_id": null,
+        "context_start": 39948,
+        "context_end": 39953,
+        "context": "\nDIAS 76–90  FINAL DO LIVRO I\n\nHá vitórias que terminam uma guerra.\n\nOutras encerram uma vida inteira de incerteza.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 40367,
+        "anchor": "SYSTEM — MISSÃO MUNDIAL",
+        "name": "SYSTEM",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "3866b87ef8a30e79eb432d2c2f1f7d383d9e048509e255cbf678a2fe9e5de200"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 40366,
+        "context_end": 40371,
+        "context": "\nSYSTEM — MISSÃO MUNDIAL\n\nMARCO DE FUNDAÇÃO RECONHECIDO\n\nUM LUGAR PARA PERTENCER",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 40432,
+        "anchor": "SYSTEM — POTENCIAL DE CREATION",
+        "name": "SYSTEM",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "af575792def2c5ae9e594eed1ec868e335a8a461120426f6eedd4d3f9a1970da"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 40431,
+        "context_end": 40436,
+        "context": "\nSYSTEM — POTENCIAL DE CREATION\n\nREGISTRO DE HORIZONTE • ACESSO RESTRITO\n\nCAMINHO SUPERIOR IDENTIFICADO",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 40438,
+        "anchor": "CREATION — GÊNESE DE HORIZONTE",
+        "name": "CREATION",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "9f6cf9ffabaab9247644a646f052f37004eae627759fe504e42babb23fac803a"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 40437,
+        "context_end": 40442,
+        "context": "\nCREATION — GÊNESE DE HORIZONTE\n\nUma manifestação de escala civilizacional tornou-se teoricamente acessível ao portador.\n\nCapacidade potencial de projetar e materializar sistemas complexos de infraestrutura em grande escala, mediante redes de energia, matéria existente, matrizes verificadas e operação coordenada.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 40542,
+        "anchor": "VÍNCULO DA IRMANDADE — NOVO CAMINHO",
+        "name": "VÍNCULO DA IRMANDADE",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "3b22d4fe8ebb5c98e2a8658817283b69a81feac5e49587d3d2c18400b309aa30"
+      },
+      "editorial": {
+        "source_class": "SYSTEM_OR_POWER_HEADING",
+        "disposition": "MENTION_ONLY",
+        "reason": "Rótulo de painel ou conceito de progressão, não identidade nova nem comprovação isolada de poder.",
+        "entity_id": null,
+        "context_start": 40541,
+        "context_end": 40546,
+        "context": "\nVÍNCULO DA IRMANDADE — NOVO CAMINHO\n\nAs Trezentas Sementes\n\nA âncora original reúne trezentas consciências distintas. Seu desenvolvimento individual poderá produzir novos padrões de aprendizado, cooperação e especialização.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 40648,
+        "anchor": "ATLAS DO GRANDE HORIZONTE — VOLUME I",
+        "name": "ATLAS DO GRANDE HORIZONTE",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "5e86b2156adc67ea92f4cacd572dfc28c7cebc08a19372b781652a564a88371d"
+      },
+      "editorial": {
+        "source_class": "DOCUMENT_OR_SECTION_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de seção, registro, operação ou período, não pessoa nem nova identidade pelo padrão de fala.",
+        "entity_id": null,
+        "context_start": 40647,
+        "context_end": 40652,
+        "context": "\nATLAS DO GRANDE HORIZONTE — VOLUME I\n\nO outro trazia o título:\n\nOS ARQUITETOS — REGISTROS DE TRÊS ARCOS",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 40652,
+        "anchor": "OS ARQUITETOS — REGISTROS DE TRÊS ARCOS",
+        "name": "OS ARQUITETOS",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "9055720831fcca6ad07749189a3555710058962f48ea7d4a572e1a2201710242"
+      },
+      "editorial": {
+        "source_class": "PLAN_OR_DOCUMENT_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de projeto, plano, estudo ou encaminhamento, não nova identidade nem execução implícita.",
+        "entity_id": null,
+        "context_start": 40651,
+        "context_end": 40656,
+        "context": "\nOS ARQUITETOS — REGISTROS DE TRÊS ARCOS\n\nMIREN observou o vale.\n\n— Acho que agora temos duas histórias para contar.",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    },
+    {
+      "candidate": {
+        "source_id": "book-i-d001-d090",
+        "source_sha256": "d284c4b53f13aaae10ce000eb3d417d7bc562683cd63c72dbd3567256e6d65cc",
+        "line": 40845,
+        "anchor": "FIM DO LIVRO I — O DESPERTAR DO CRIADOR",
+        "name": "FIM DO LIVRO I",
+        "candidates": [],
+        "source_role": "LEGACY_MIXED",
+        "kind": "NEW_NAME_CANDIDATE",
+        "id": "4c50fbaa9fd0ced5bd7fb1fb09ceb7172c233302b03f15801bef1d8cc6daf5c2"
+      },
+      "editorial": {
+        "source_class": "DOCUMENT_OR_SECTION_HEADING",
+        "disposition": "NOT_ENTITY",
+        "reason": "Título de seção, registro, operação ou período, não pessoa nem nova identidade pelo padrão de fala.",
+        "entity_id": null,
+        "context_start": 40844,
+        "context_end": 40845,
+        "context": "\nFIM DO LIVRO I — O DESPERTAR DO CRIADOR",
+        "canon_promotion": false,
+        "semantic_certification": false
+      }
+    }
+  ],
+  "counts": {
+    "NOT_ENTITY": 73,
+    "MENTION_ONLY": 68,
+    "NEW_ID_CANDIDATE": 1
+  },
+  "checks": {
+    "sha256_known_vector": true,
+    "candidates142": true,
+    "unique_ids": true,
+    "exact_anchors": true,
+    "all_192_profiles": true,
+    "all_disposed": true,
+    "author_no_admission": true,
+    "all_no_promotion": true
+  },
+  "limitations": [
+    "Speaker-shaped discovery is not exhaustive named-entity extraction; 14 identities and historical profile data tracked separately.",
+    "No legacy admission, no independent review, no active overlay writes."
+  ],
+  "canon_changed": false,
+  "production_activated": false
+}
