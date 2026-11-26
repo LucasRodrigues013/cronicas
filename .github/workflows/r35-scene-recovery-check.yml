@@ -1,9 +1,15 @@
 name: R35 private scene and recovery integration
 on:
+  pull_request:
+    branches: [story-archive]
+    paths:
+      - 'tools/r36_book_i_native_homologation_check.py'
+      - '.github/workflows/r35-scene-recovery-check.yml'
   push:
     branches: [audit/universal-codex-d580]
     paths:
       - 'tools/r35_scene_recovery_check.py'
+      - 'tools/r36_book_i_native_homologation_check.py'
       - '.github/workflows/r35-scene-recovery-check.yml'
 permissions:
   contents: read
@@ -14,6 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
           path: audit
           persist-credentials: false
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
