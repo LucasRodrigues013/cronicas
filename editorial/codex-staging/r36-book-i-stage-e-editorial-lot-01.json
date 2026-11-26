@@ -1,0 +1,812 @@
+{
+  "schema": "worldroot-r36-book-i-stage-e-editorial-lot-v1",
+  "book": 1,
+  "stage": "E",
+  "lot": "E01",
+  "status": "PARTIAL_EDITORIAL_REVIEW_NOT_HOMOLOGATED",
+  "engine_commit": "19d4be7759ba7c0d68adad8eb969414f78caaef3",
+  "handoff_commit": "9a17eb1a341e1748f60d7a172d40fffdb1a428c2",
+  "source": {
+    "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+    "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+    "lines": [
+      1,
+      40845
+    ],
+    "narrative_days": [
+      1,
+      90
+    ],
+    "chapter_numbers": 38,
+    "raw_words": 171829,
+    "prompts": 44,
+    "responses": 44
+  },
+  "previous_blobs": [
+    "18e40721147d57657e9c44440c30eb031a50e7a8",
+    "0b404989f34e3387242d247f8f846edeac5a3ce9",
+    "43c5db1808e4a03b7fa3df2c38fe8236c01b0c16",
+    "607a4a9de98c1315759bba98fc189b9bcf2ea484"
+  ],
+  "ledger_batch_blobs": [
+    "67438fee543879e52413a6c6fd27a2926b8e171e",
+    "4b2bf8be702b485f209db92333cd953dd13e3932",
+    "c4bee2d294595752e4aec12703e8642f38e138e9",
+    "03a60a972d5d09c3d50ee5ce4d2637ba8be51e1a"
+  ],
+  "prior_runtime": {
+    "run": 45887241154,
+    "job": 140140877633,
+    "semantic_certification": false,
+    "projection_events": 0
+  },
+  "reviewer": {
+    "executor": "ChatGPT current editorial session",
+    "independent_models": 0,
+    "local_endpoint_unavailable": true
+  },
+  "identity_reviews": [
+    {
+      "id": "candidate:tarek-book-i",
+      "prior_name": "Tarek",
+      "proposed_display_name": "Tarek",
+      "prior_anchor_line": 10258,
+      "prior_anchor_exact": true,
+      "source_role": "NARRATED",
+      "claim": "Organiza alimentos e manutenção do abrigo conforme apresentação de Miren; narrador descreve homem de aproximadamente 50 anos, cabelos grisalhos e mãos marcadas pelo trabalho; depois assina como representante dos moradores.",
+      "evidence": [
+        {
+          "line": 10256,
+          "text": "MIREN permanece de pé ao lado de um homem de aproximadamente cinquenta anos, com cabelos grisalhos e mãos marcadas pelo trabalho."
+        },
+        {
+          "line": 10258,
+          "text": "— Este é TAREK — apresenta ela. — Organiza a distribuição de alimentos e a manutenção do abrigo."
+        },
+        {
+          "line": 38707,
+          "text": "A assinatura de LUCAS foi aposta como representante fundador da Legião, ao lado da assinatura de TAREK como representante dos moradores e das autoridades competentes que formalizavam o reconhecimento."
+        }
+      ],
+      "status": "EDITORIAL_CONTEXT_REVIEWED_SECOND_REVIEW_PENDING",
+      "canon_promotion": false,
+      "current_state": false
+    },
+    {
+      "id": "candidate:ina-book-i",
+      "prior_name": "Ina",
+      "proposed_display_name": "Ina",
+      "prior_anchor_line": 13349,
+      "prior_anchor_exact": true,
+      "source_role": "NARRATED",
+      "claim": "Menina que se apresenta como Ina, carrega água; afirma que sua mãe precisa subir escadas repetidamente. Não inferir idade numérica, nome materno ou parentesco adicional.",
+      "evidence": [
+        {
+          "line": 13323,
+          "text": "Uma menina de cabelos escuros carregava dois pequenos recipientes."
+        },
+        {
+          "line": 13349,
+          "text": "— Meu nome é INA."
+        },
+        {
+          "line": 13355,
+          "text": "— Se conseguir, minha mãe vai parar de subir a escada tantas vezes."
+        }
+      ],
+      "status": "EDITORIAL_CONTEXT_REVIEWED_SECOND_REVIEW_PENDING",
+      "canon_promotion": false,
+      "current_state": false
+    },
+    {
+      "id": "candidate:selene-arvost",
+      "prior_name": "Selene Arvost",
+      "proposed_display_name": "Selene Arvost",
+      "prior_anchor_line": 14715,
+      "prior_anchor_exact": true,
+      "source_role": "NARRATED",
+      "claim": "Dama e administradora territorial delegada pelo Marquesado; cerca de 40 anos, cabelos escuros presos, roupas sóbrias; acompanha magistrado na cena posterior.",
+      "evidence": [
+        {
+          "line": 14715,
+          "text": "A primeira era DAMA SELENE ARVOST, administradora territorial delegada pelo Marquesado para tratar de concessões provisórias, obras de recuperação e disputas administrativas."
+        },
+        {
+          "line": 14717,
+          "text": "Uma mulher de aproximadamente quarenta anos, cabelos escuros cuidadosamente presos, roupas sóbrias e expressão difícil de interpretar."
+        },
+        {
+          "line": 38573,
+          "text": "O magistrado ODRAN chegou acompanhado de SELENE e EDRAN."
+        }
+      ],
+      "status": "EDITORIAL_CONTEXT_REVIEWED_SECOND_REVIEW_PENDING",
+      "canon_promotion": false,
+      "current_state": false
+    },
+    {
+      "id": "candidate:auren-velcast",
+      "prior_name": "Auren Velcast",
+      "proposed_display_name": "Auren Velcast",
+      "prior_anchor_line": 14719,
+      "prior_anchor_exact": true,
+      "source_role": "NARRATED",
+      "claim": "Lorde representante de casa menor com interesses comerciais no norte; sem autoridade unilateral sobre Três Arcos. Não confundir com outros Auren.",
+      "evidence": [
+        {
+          "line": 13777,
+          "text": "O homem chamou-se LORD AUREN VELCAST, representante de uma casa menor que possuía interesses nas rotas comerciais do norte."
+        },
+        {
+          "line": 14719,
+          "text": "O segundo era LORD AUREN VELCAST, representante de interesses comerciais relacionados às estradas e entrepostos do norte."
+        },
+        {
+          "line": 14721,
+          "text": "Mais jovem do que SELENE, vestia tecidos caros, utilizava anéis de metal polido e possuía o olhar atento de alguém habituado a calcular vantagens."
+        },
+        {
+          "line": 38653,
+          "text": "— O território delimitado no anexo não será considerado feudo de LORD AUREN nem será administrado como dependência ordinária de Halvern."
+        }
+      ],
+      "status": "EDITORIAL_CONTEXT_REVIEWED_SECOND_REVIEW_PENDING",
+      "canon_promotion": false,
+      "current_state": false
+    },
+    {
+      "id": "candidate:hadrin-fell",
+      "prior_name": "Hadrin Fell",
+      "proposed_display_name": "Hadrin Fell",
+      "prior_anchor_line": 16172,
+      "prior_anchor_exact": true,
+      "source_role": "NARRATED",
+      "claim": "Comerciante de duas carroças; verifica reparo e paga valor inicial acordado; reencontra Lysa para discutir fornecimento. Contrato civil de reparo concluído, fornecimento posterior não automaticamente concluído.",
+      "evidence": [
+        {
+          "line": 16172,
+          "text": "Um pequeno comerciante chamado HADRIN FELL, proprietário de duas carroças de abastecimento, procurou o posto de contato da Legião."
+        },
+        {
+          "line": 16206,
+          "text": "HADRIN conferiu o reparo e realizou o pagamento inicial combinado."
+        },
+        {
+          "line": 18274,
+          "text": "LYSA estava sentada diante de HADRIN FELL, o comerciante cuja carroça havia sido reparada pela Legião."
+        }
+      ],
+      "status": "EDITORIAL_CONTEXT_REVIEWED_SECOND_REVIEW_PENDING",
+      "canon_promotion": false,
+      "current_state": false
+    },
+    {
+      "id": "candidate:daren-book-i",
+      "prior_name": "Daren",
+      "proposed_display_name": "Daren",
+      "prior_anchor_line": 17686,
+      "prior_anchor_exact": true,
+      "source_role": "NARRATED",
+      "claim": "Jovem morador, aproximadamente 17 anos na apresentação; identifica exposição à chuva e declara morar ali há quatro invernos. Não fundir com Dárien.",
+      "evidence": [
+        {
+          "line": 17670,
+          "text": "— Quer ver os desenhos?"
+        },
+        {
+          "line": 17686,
+          "text": "— Meu nome é DAREN."
+        },
+        {
+          "line": 17700,
+          "text": "— Moro aqui há quatro invernos."
+        }
+      ],
+      "status": "EDITORIAL_CONTEXT_REVIEWED_SECOND_REVIEW_PENDING",
+      "canon_promotion": false,
+      "current_state": false
+    },
+    {
+      "id": "candidate:esmara",
+      "prior_name": "Esmara",
+      "proposed_display_name": "Esmara",
+      "prior_anchor_line": 21215,
+      "prior_anchor_exact": true,
+      "source_role": "NARRATED",
+      "claim": "Especialista agrícola de Veldon, cerca de 45 anos, cabelos castanhos em trança, rosto marcado pelo sol e mãos de trabalho rural; Tarek já a conhece; posteriormente entrega plano agrícola.",
+      "evidence": [
+        {
+          "line": 21213,
+          "text": "Era uma mulher de aproximadamente quarenta e cinco anos, cabelos castanhos presos numa trança, rosto marcado pelo sol e mãos de quem passara boa parte da vida trabalhando na terra."
+        },
+        {
+          "line": 21215,
+          "text": "Chamava-se ESMARA."
+        },
+        {
+          "line": 21217,
+          "text": "Viera da aldeia de VELDON depois de receber uma proposta de avaliação agrícola remunerada."
+        },
+        {
+          "line": 21219,
+          "text": "TAREK já a conhecia."
+        },
+        {
+          "line": 40343,
+          "text": "ESMARA entregou o plano de produção agrícola da próxima estação."
+        }
+      ],
+      "status": "EDITORIAL_CONTEXT_REVIEWED_SECOND_REVIEW_PENDING",
+      "canon_promotion": false,
+      "current_state": false
+    },
+    {
+      "id": "candidate:neria-valmont",
+      "prior_name": "Néria Valmont",
+      "proposed_display_name": "Néria Valmont",
+      "prior_anchor_line": 21861,
+      "prior_anchor_exact": true,
+      "source_role": "REPORT_AND_NARRATED",
+      "claim": "Lysa relata designação para vistoria civil e experiência em pontes/drenagem/obras; inspeção posterior é narrada. Não transformar previsão de contratação permanente em realização.",
+      "evidence": [
+        {
+          "line": 21861,
+          "text": "— DAMA SELENE autorizou uma vistoria técnica preliminar das estruturas dos Três Arcos. A pessoa designada é NÉRIA VALMONT, engenheira de obras civis vinculada à administração de Halvern."
+        },
+        {
+          "line": 21867,
+          "text": "— Possui experiência em pontes, drenagem e planejamento de obras públicas — respondeu LYSA. — Mas ainda não sabemos se possui disponibilidade ou interesse em trabalhar permanentemente conosco."
+        },
+        {
+          "line": 39979,
+          "text": "NÉRIA havia inspecionado as partes estruturais antes da liberação."
+        }
+      ],
+      "status": "EDITORIAL_CONTEXT_REVIEWED_SECOND_REVIEW_PENDING",
+      "canon_promotion": false,
+      "current_state": false
+    },
+    {
+      "id": "candidate:darius-book-i",
+      "prior_name": "Darius",
+      "proposed_display_name": "Darius",
+      "prior_anchor_line": 30594,
+      "prior_anchor_exact": true,
+      "source_role": "NARRATED",
+      "claim": "6º na classificação inaugural dos Dez da Primeira Lança, Véu, discrição e precisão; reservado em cena; prefere infiltração e observação sem unidade própria. Ranking contextual, não escala absoluta.",
+      "evidence": [
+        {
+          "line": 30594,
+          "text": "DARIUS"
+        },
+        {
+          "line": 30595,
+          "text": "Véu"
+        },
+        {
+          "line": 30596,
+          "text": "Discrição e precisão"
+        },
+        {
+          "line": 33407,
+          "text": "DARIUS, muito mais reservado, murmurou:"
+        },
+        {
+          "line": 39455,
+          "text": "DARIUS preferiu especializar-se em infiltração e observação, sem assumir uma unidade própria."
+        }
+      ],
+      "status": "EDITORIAL_CONTEXT_REVIEWED_SECOND_REVIEW_PENDING",
+      "canon_promotion": false,
+      "current_state": false
+    },
+    {
+      "id": "candidate:malrek-book-i",
+      "prior_name": "Malrek",
+      "proposed_display_name": "Malrek",
+      "prior_anchor_line": 30598,
+      "prior_anchor_exact": true,
+      "source_role": "NARRATED",
+      "claim": "7º na classificação inaugural, Martelo, combate de choque e adaptação; defende treinamento ofensivo; demonstra interesse em choque e proteção de estruturas.",
+      "evidence": [
+        {
+          "line": 30598,
+          "text": "MALREK"
+        },
+        {
+          "line": 30599,
+          "text": "Martelo"
+        },
+        {
+          "line": 30600,
+          "text": "Combate de choque e adaptação"
+        },
+        {
+          "line": 33435,
+          "text": "MALREK defendia treinamento ofensivo mais intenso."
+        },
+        {
+          "line": 39457,
+          "text": "MALREK demonstrou interesse em treinamento de combate de choque e proteção de estruturas."
+        }
+      ],
+      "status": "EDITORIAL_CONTEXT_REVIEWED_SECOND_REVIEW_PENDING",
+      "canon_promotion": false,
+      "current_state": false
+    },
+    {
+      "id": "candidate:toran-book-i",
+      "prior_name": "Toran",
+      "proposed_display_name": "Toran",
+      "prior_anchor_line": 30606,
+      "prior_anchor_exact": true,
+      "source_role": "NARRATED",
+      "claim": "9º na classificação inaugural, Reserva, proteção e resgate sob pressão; separa equipes de atendimento e transporte no exercício; pede formação em resgate.",
+      "evidence": [
+        {
+          "line": 30606,
+          "text": "TORAN"
+        },
+        {
+          "line": 30607,
+          "text": "Reserva"
+        },
+        {
+          "line": 30608,
+          "text": "Proteção e resgate sob pressão"
+        },
+        {
+          "line": 37248,
+          "text": "TORAN separou as equipes de atendimento e transporte para evitar concentração num único ponto."
+        },
+        {
+          "line": 39461,
+          "text": "TORAN pediu formação em resgate, transporte de feridos e organização de abrigos."
+        }
+      ],
+      "status": "EDITORIAL_CONTEXT_REVIEWED_SECOND_REVIEW_PENDING",
+      "canon_promotion": false,
+      "current_state": false
+    },
+    {
+      "id": "candidate:mateo-book-i",
+      "prior_name": "Mateo",
+      "proposed_display_name": "Mateo",
+      "prior_anchor_line": 36010,
+      "prior_anchor_exact": true,
+      "source_role": "NARRATED",
+      "claim": "Artesão visitante; pergunta sobre obrigação de servir ao exército e pede tempo para avaliar proposta. Não afirmar instalação, emprego ou filiação.",
+      "evidence": [
+        {
+          "line": 36010,
+          "text": "Um dos artesãos, MATEO, perguntou:"
+        },
+        {
+          "line": 36012,
+          "text": "— Se eu me instalar aqui, terei de trabalhar para o exército?"
+        },
+        {
+          "line": 36036,
+          "text": "MATEO pediu tempo para avaliar uma proposta de trabalho."
+        }
+      ],
+      "status": "EDITORIAL_CONTEXT_REVIEWED_SECOND_REVIEW_PENDING",
+      "canon_promotion": false,
+      "current_state": false
+    },
+    {
+      "id": "candidate:elira-voss",
+      "prior_name": "Elira Voss",
+      "proposed_display_name": "Elira Voss",
+      "prior_anchor_line": 37072,
+      "prior_anchor_exact": true,
+      "source_role": "NARRATED",
+      "claim": "Maga de Thalor, observadora contratada por Kael via Edran; defesa, ocultação e perturbação da percepção; sem acesso às matrizes secretas nem comando sobre legionários.",
+      "evidence": [
+        {
+          "line": 37068,
+          "text": "Por intermédio de EDRAN, KAEL contratara dois veteranos militares de Thalor para acompanhar a atividade como observadores independentes."
+        },
+        {
+          "line": 37072,
+          "text": "A outra era ELIRA VOSS, uma maga especializada em técnicas defensivas, ocultação e perturbação de percepção."
+        },
+        {
+          "line": 37074,
+          "text": "Nenhum dos dois recebera acesso às matrizes secretas da Legião."
+        },
+        {
+          "line": 37078,
+          "text": "Apenas avaliariam a resposta das unidades a problemas inesperados, dentro de regras previamente acordadas."
+        },
+        {
+          "line": 37232,
+          "text": "MAREK e ELIRA aceitaram acompanhar a repetição, desta vez alterando o cenário para impedir que a Legião simplesmente decorasse o exercício anterior."
+        }
+      ],
+      "status": "EDITORIAL_CONTEXT_REVIEWED_SECOND_REVIEW_PENDING",
+      "canon_promotion": false,
+      "current_state": false
+    },
+    {
+      "id": "candidate:odran",
+      "prior_name": "Odran",
+      "proposed_display_name": "Odran Vell",
+      "prior_anchor_line": 38573,
+      "prior_anchor_exact": true,
+      "source_role": "NARRATED",
+      "claim": "Nome completo explicitamente documentado na linha 38221; magistrado da instância superior de Thalor, examina conflito territorial, exige reconciliação contábil antes de disponibilizar recursos e aplica selo.",
+      "evidence": [
+        {
+          "line": 38221,
+          "text": "Também participava MAGISTRADO ODRAN VELL, representante da instância superior de Thalor encarregada de examinar o conflito territorial. Sua visita já estava prevista para avaliar a proposta recebida no Dia 52; a descoberta documental mudara radicalmente a pauta."
+        },
+        {
+          "line": 38573,
+          "text": "O magistrado ODRAN chegou acompanhado de SELENE e EDRAN."
+        },
+        {
+          "line": 38597,
+          "text": "— Sim — respondeu ODRAN. — O montante final ainda depende de reconciliação contábil. Não autorizarei que o tratem como dinheiro disponível antes disso."
+        },
+        {
+          "line": 38711,
+          "text": "ODRAN aplicou o selo."
+        }
+      ],
+      "status": "EDITORIAL_CONTEXT_REVIEWED_SECOND_REVIEW_PENDING",
+      "canon_promotion": false,
+      "current_state": false
+    }
+  ],
+  "ledger_reviews": [
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 7055,
+      "anchor_sha256": "0bed0c8e8167685a6a878b736bb271c0dc08605f9689d75a5aa65a9267c78f1f",
+      "anchor": "— Os carregadores chamavam aquele lugar de Três Arcos. Muito antes de eu nascer, havia uma fortificação ali, construída para proteger uma passagem comercial.",
+      "source_role": "REPORT",
+      "decisions": [
+        {
+          "original_id": 100,
+          "entity_id": "tres-arcos",
+          "field": "architecture",
+          "prior_verdict": "REPORT_ONLY",
+          "verdict": "REPORT_ONLY",
+          "reason": "Brannik relata fortificação e passagem comercial; não é observação direta da arquitetura.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 101,
+          "entity_id": "tres-arcos",
+          "field": "lifecycle",
+          "prior_verdict": "REPORT_ONLY",
+          "verdict": "REPORT_ONLY",
+          "reason": "Relato de carregadores e passado anterior ao nascimento de Brannik; não comprova sozinho ciclo de vida da fortificação.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 7103,
+      "anchor_sha256": "32d00cd452753bb59ca87ae2be45f9f52c43c937e9bde97366d70f82ce71c982",
+      "anchor": "A resposta de VARO",
+      "source_role": "META",
+      "decisions": [
+        {
+          "original_id": 102,
+          "entity_id": "varo",
+          "field": "relationships",
+          "prior_verdict": "HEADING_ONLY",
+          "verdict": "NON_NARRATIVE",
+          "reason": "O título de seção não estabelece relacionamento de Varo.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 7151,
+      "anchor_sha256": "079c2ad97cf67c533ad989e34698c2ae1fafc98de23271371675e607595a2268",
+      "anchor": "CONSELHO DA LEGIÃO (Estrutura proposta)",
+      "source_role": "PLAN",
+      "decisions": [
+        {
+          "original_id": 103,
+          "entity_id": "legiao",
+          "field": "governance",
+          "prior_verdict": "PROPOSAL_OR_ORDER",
+          "verdict": "NON_NARRATIVE",
+          "reason": "A expressão Estrutura proposta impede tratar a composição como conselho constituído.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 7291,
+      "anchor_sha256": "70690af511fff1e88ff19a300e0b6e3f0de50c7aec126a2ee7dc5808a4951c32",
+      "anchor": "A criação de KAEL consumiu o que restava.",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 104,
+          "entity_id": "kael",
+          "field": "location",
+          "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Consumo de reserva na criação de Kael não informa sua localização.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 7321,
+      "anchor_sha256": "bf2622e35735d1fd587b49d0a3b2db76014f259abd6d5f535a6c20fc7093bb19",
+      "anchor": "A percepção do Sistema não apresenta o mesmo alerta intenso que surgiu diante da ideia de criar uma nova armadura.",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 105,
+          "entity_id": "sistema",
+          "field": "appearance",
+          "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Percepção e alerta do Sistema não descrevem aparência física.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 7408,
+      "anchor_sha256": "2e92b6f701988a3f7aa427d8dfdf3a22ebe5f2204051d5805c28f9da9866ddf3",
+      "anchor": "Enquanto isso, KAEL passou parte da madrugada examinando os registros comerciais e conversando com BRANNIK.",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 106,
+          "entity_id": "brannik",
+          "field": "behavior",
+          "prior_verdict": "SCENE_CANDIDATE",
+          "verdict": "SUPPORTED",
+          "reason": "Interação histórica específica narrada, sem inferir traço estável de personalidade.",
+          "claim": "Brannik conversou com Kael durante parte da madrugada.",
+          "evidence": "Enquanto isso, KAEL passou parte da madrugada examinando os registros comerciais e conversando com BRANNIK.",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 7546,
+      "anchor_sha256": "0a19bd52203a6f6815a64d2f990cd74c7805256eafd7ccac891df047dfd1ac70",
+      "anchor": "— Comandante! O tenente EDRAN enviou uma resposta.",
+      "source_role": "REPORT",
+      "decisions": [
+        {
+          "original_id": 107,
+          "entity_id": "edran",
+          "field": "relationships",
+          "prior_verdict": "REPORT_ONLY",
+          "verdict": "REPORT_ONLY",
+          "reason": "Mensageiro informa recebimento de resposta de Edran, não demonstra uma relação pessoal estável.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 7550,
+      "anchor_sha256": "df9353d9b8e371ca7aa27d8cacdd54eceee94399f05b3daf061b6ddc9c135833",
+      "anchor": "A mensagem informa que EDRAN poderá encontrar seus representantes naquela manhã para uma conversa preliminar sobre permanência e trânsito. Ele ainda não está autorizado a conceder Três Arcos, mas concorda em encaminhar uma proposta formal às autoridades de Thalor.",
+      "source_role": "REPORT",
+      "decisions": [
+        {
+          "original_id": 108,
+          "entity_id": "tres-arcos",
+          "field": "powers",
+          "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Mensagem sobre negociação de Três Arcos não atribui poderes ao local.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 109,
+          "entity_id": "tres-arcos",
+          "field": "governance",
+          "prior_verdict": "REPORT_ONLY",
+          "verdict": "REPORT_ONLY",
+          "reason": "Mensagem indica que Edran ainda não possui autorização para conceder Três Arcos; não comprova concessão.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 110,
+          "entity_id": "thalor",
+          "field": "powers",
+          "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Autoridades de Thalor são citadas como destinatárias da proposta, não como detentoras de poderes mágicos.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 111,
+          "entity_id": "thalor",
+          "field": "architecture",
+          "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "A mensagem não descreve arquitetura de Thalor.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 112,
+          "entity_id": "edran",
+          "field": "powers",
+          "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Mensagem trata de autorização administrativa de Edran, não de seus poderes.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 113,
+          "entity_id": "edran",
+          "field": "architecture",
+          "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "A mensagem não descreve arquitetura atribuível a Edran.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 114,
+          "entity_id": "edran",
+          "field": "governance",
+          "prior_verdict": "REPORT_ONLY",
+          "verdict": "REPORT_ONLY",
+          "reason": "O limite de autoridade de Edran é conteúdo de mensagem, não ato formal de concessão.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    }
+  ],
+  "typed_event_candidates": [
+    {
+      "type": "civil_contract_completed",
+      "line": 16206,
+      "subject_ids": [
+        "candidate:hadrin-fell",
+        "legiao"
+      ],
+      "description": "Hadrin conferiu o reparo e realizou o pagamento inicial combinado.",
+      "scope": "BOOK_I_HISTORICAL",
+      "evidence": "HADRIN conferiu o reparo e realizou o pagamento inicial combinado.",
+      "status": "TYPED_EDITORIAL_CANDIDATE_NOT_ADMITTED",
+      "canon_promotion": false
+    },
+    {
+      "type": "territorial_recognition_signature",
+      "line": 38707,
+      "subject_ids": [
+        "lucas",
+        "candidate:tarek-book-i"
+      ],
+      "description": "Assinaturas de Lucas como representante fundador da Legião e Tarek como representante dos moradores; constituição definitiva ainda pendente.",
+      "scope": "BOOK_I_HISTORICAL",
+      "evidence": "A assinatura de LUCAS foi aposta como representante fundador da Legião, ao lado da assinatura de TAREK como representante dos moradores e das autoridades competentes que formalizavam o reconhecimento.",
+      "status": "TYPED_EDITORIAL_CANDIDATE_NOT_ADMITTED",
+      "canon_promotion": false
+    },
+    {
+      "type": "exercise_rescue_reorganization",
+      "line": 37248,
+      "subject_ids": [
+        "candidate:toran-book-i"
+      ],
+      "description": "Toran separou as equipes de atendimento e transporte durante avaliação militar, não combate real.",
+      "scope": "BOOK_I_HISTORICAL",
+      "evidence": "TORAN separou as equipes de atendimento e transporte para evitar concentração num único ponto.",
+      "status": "TYPED_EDITORIAL_CANDIDATE_NOT_ADMITTED",
+      "canon_promotion": false
+    }
+  ],
+  "checks": {
+    "ledger_307_unique": true,
+    "ledger_236_groups": true,
+    "all_ledger_anchors_exact": true,
+    "selected_complete": true,
+    "selected_groups_complete": true,
+    "identity_14_unique": true,
+    "identity_anchors_exact": true,
+    "all_evidence_in_book": true,
+    "supported_only_narrated": true,
+    "odran_full_name": true,
+    "no_aerun_literal": true,
+    "no_tessa_literal": true,
+    "no_campo_base_aurora_literal": true
+  },
+  "limitations": [
+    "Single real editorial pass; no independent semantic certification. Existing native queue contract consulted; this is editorial staging, not a semantic_local result or typed runtime admission.",
+    "Historical claims only; no current-state projection. No automated promotion.",
+    "AERÚN, Tessa, Campo Aurora/Base Aurora: no literal matches within Book I source boundary; keep prior author rules, apply on later relevant material.",
+    "No full review of 142 discovery candidates, 22 graph edges, all 30 dimensions, all 192 profiles or all global pending fields/events. No fresh runtime suite or replay performed."
+  ],
+  "checkpoint": {
+    "book": 1,
+    "stage": "E",
+    "completed_editorial_ledger_ids": [
+      100,
+      114
+    ],
+    "completed_grouped_contexts": 8,
+    "remaining_first_editorial_lot_target_ids": [
+      [
+        1,
+        99
+      ],
+      [
+        115,
+        307
+      ]
+    ],
+    "remaining_grouped_contexts": 228,
+    "identities_context_reviewed": 14,
+    "identities_pending_independent_or_authoritative_admission": 14,
+    "semantic_certified": 0,
+    "typed_events_admitted": 0,
+    "next": "Continue at IDs 115 onward in complete source-line groups; then 1–99, reconcile 142 discoveries and historical graph, verify complete typed admission and runtime recovery. Do not advance Book II until homologation."
+  },
+  "canon_changed": false,
+  "production_activated": false
+}
