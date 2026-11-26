@@ -1,6 +1,6 @@
 {
   "schema": "worldroot-r36-b006-preflight-v1",
-  "status": "STRUCTURAL_PREFLIGHT_PASS_NATIVE_CANDIDATE_VALIDATED_NOT_APPROVED",
+  "status": "STRUCTURAL_PREFLIGHT_PASS_NATIVE_CANDIDATE_AUTHOR_APPROVED_INCORPORATION_PENDING",
   "base_checkpoint": "0f5dc88d5d8624f0d57d892a5bdec022cc0363ec",
   "base_archive": "4d2bdb7444c785705e494c3d49cad8500af25a8a",
   "engine": "3170905db607f89004ed3d62a064dbb092922080",
@@ -198,6 +198,47 @@
         },
         "original_manifest_scope": "Execution workspace. The source preflight is preserved at source_preflight_commit. The execution trace, script and candidate registries remain local. Use sha256sum --ignore-missing -c SHA256SUMS in the evidence directory to check the four transferred payloads."
       }
+    }
+  },
+  "author_approval": {
+    "status": "GRANTED_B006_ONLY",
+    "date": "2026-11-26",
+    "source": "Explicit author instruction in project conversation",
+    "instruction": "MEGABRAIN, aprovo formalmente o B006. Execute a incorporação controlada das 25 alterações homologadas, verificando os hashes candidatos, preservando a política Free-Only e o bloqueio geral de produção. Registre as evidências e não avance a narrativa.",
+    "approved_review_commit": "a02158c04b5e301fab7fd0ca57fb5a668693f935",
+    "approved_fields": 25,
+    "approved_ids": [
+      438,
+      459
+    ],
+    "native_receipt_sha256": "bdd554b4dfd809359a22dcbb37f96d65eb3d0989bac067d7d805f9fdf9f07756",
+    "scope": "Editorial incorporation of exact validated B006 candidate only; not global production activation, semantic certification, or narrative advancement",
+    "b006_author_approval_required": false,
+    "production_approval_required": true,
+    "production_hold": true,
+    "incorporation": {
+      "status": "BLOCKED_PENDING_EXACT_CANDIDATE_TRANSFER",
+      "candidate_blobs_remote_lookup": "All four candidate Git blob lookups returned HTTP 404; originals retained in Codex execution workspace according to consolidated evidence",
+      "expected_blobs": {
+        "editorial/registries/r35-natural-completion-d579-v12.json": "13a2600d69e2fe494a864fd999b29506c1f4207d",
+        "editorial/registries/r35-world-completion-d579-v10.json": "0b4f1c5fb89ae38b17ed1c31822b80f4fd33c410",
+        "editorial/registries/r35-legacy-name-reconciliation-v8.json": "95bd091b980b4f19007c79dc7b9e7116ec4e7d1d",
+        "editorial/registries/r35-living-overlay-manifest.json": "5bd6021c32f8d41a554998615078e4136acdda84"
+      },
+      "base_archive": "4d2bdb7444c785705e494c3d49cad8500af25a8a",
+      "base_checkpoint": "0f5dc88d5d8624f0d57d892a5bdec022cc0363ec",
+      "official_cursor_unchanged": {
+        "id": 438,
+        "line": 78909
+      },
+      "next_cursor_after_successful_incorporation": {
+        "id": 460,
+        "line": 82432
+      },
+      "no_hosted_actions": true,
+      "canon_changed": false,
+      "production_activated": false,
+      "approval_required_flag_note": "Legacy top-level approval_required retained as a safety gate until controlled incorporation is complete; explicit B006 author approval is granted in this record."
     }
   }
 }
