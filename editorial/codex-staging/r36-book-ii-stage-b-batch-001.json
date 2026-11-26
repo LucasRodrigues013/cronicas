@@ -1,0 +1,2864 @@
+{
+  "schema": "worldroot-r36-book-ii-stage-b-editorial-batch-v1",
+  "book": 2,
+  "stage": "B",
+  "status": "AUTHOR_AUTHORIZED_EDITORIAL_PROFILE_REVISION_PENDING_INDEPENDENT_CERTIFICATION",
+  "parent_checkpoint": "9fde3fff5d487e99488361bbb287be5c7ce2bb39",
+  "base_archive": "ec942395bb20c00e64f9bcd7308dc8dced09f7c3",
+  "base_registry_blobs": {
+    "characters": "295ac47860e9138f65d63b1d68c324d6b4e64cef",
+    "world": "bcff40fc483464b26b4dbf81c7dee75efc6aeec8"
+  },
+  "source": {
+    "name": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+    "sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+    "part": 2,
+    "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+    "global_to_local_line_offset": 40867
+  },
+  "ledger": [
+    {
+      "original_id": 308,
+      "entity_id": "astra",
+      "original_field": "role",
+      "global_line": 40965,
+      "local_line": 98,
+      "anchor": "KAEL desenvolveu a diplomacia e a estratégia; BRANNIK tornou-se o primeiro integrante não criado por CREATION a aderir voluntariamente; LYSA estruturou a administração; ASTRA surgiu posteriormente como pesquisadora autônoma. MIREN ajudou LUCAS a compreender a magia antiga — e os dois construíram uma relação amorosa.",
+      "anchor_sha256": "84943bac8379ac085feaf71567c3a622c45ead74f99d6b4974771b9ac96cfc55",
+      "verdict": "CONFIRMED_RECAP_NOT_NEW_EVENT",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 309,
+      "entity_id": "genese",
+      "original_field": "capabilities",
+      "global_line": 40983,
+      "local_line": 116,
+      "anchor": "A missão Um Lugar para Pertencer foi concluída. LUCAS recebeu a Matriz de Fundação I e descobriu o potencial da Gênese de Horizonte, uma capacidade muito maior de CREATION, ainda inacessível. Para compreendê-la, precisará encontrar âncoras antigas além do vale. A Legião conserva seus 300 integrantes originais vivos.",
+      "anchor_sha256": "7750cbd01df01af57780c310fea00a51fb85d3e5f5d06f1447a96cbe2af68262",
+      "verdict": "CONFIRMED_POTENTIAL_NOT_MANIFESTED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 310,
+      "entity_id": "genese",
+      "original_field": "lifecycle",
+      "global_line": 40983,
+      "local_line": 116,
+      "anchor": "A missão Um Lugar para Pertencer foi concluída. LUCAS recebeu a Matriz de Fundação I e descobriu o potencial da Gênese de Horizonte, uma capacidade muito maior de CREATION, ainda inacessível. Para compreendê-la, precisará encontrar âncoras antigas além do vale. A Legião conserva seus 300 integrantes originais vivos.",
+      "anchor_sha256": "7750cbd01df01af57780c310fea00a51fb85d3e5f5d06f1447a96cbe2af68262",
+      "verdict": "CONFIRMED_HISTORICAL_LIFECYCLE_NOT_CURRENT",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 311,
+      "entity_id": "astra",
+      "original_field": "relationships",
+      "global_line": 41125,
+      "local_line": 258,
+      "anchor": "ASTRA não forneceu a resposta.",
+      "anchor_sha256": "122d4220fbffaa52bcf0076bad2e127547bd37dc6b67072a5c62cf6a7fd45bd0",
+      "verdict": "RECLASSIFIED_PEDAGOGY_NOT_RELATIONSHIP",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 312,
+      "entity_id": "ilva",
+      "original_field": "architecture",
+      "global_line": 41594,
+      "local_line": 727,
+      "anchor": "Do outro lado da praça, ILVA apresentava peças de tecido e reparos produzidos na cidade.",
+      "anchor_sha256": "06563363c0874f251659049659108b86a84fee9cab130dff2a0fdee8cad1b0c1",
+      "verdict": "RECLASSIFIED_TEXTILE_ACTIVITY_NOT_ARCHITECTURE",
+      "semantic_certified": false
+    }
+  ],
+  "changes": [
+    {
+      "entity_id": "astra",
+      "field": "occupation",
+      "before": {
+        "value": "Pesquisadora; vice-diretora do Instituto AERÚN no D579.",
+        "status": "RECUPERADO",
+        "origin": {
+          "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+          "git_blob": "f0c2cb92e17a5b066392077187f009036fd29069",
+          "source_sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926",
+          "day": 579,
+          "evidence": [
+            {
+              "line": 1089,
+              "anchor": "**ASTRA —** Vocês fazem pesquisa todos os dias."
+            },
+            {
+              "line": 1095,
+              "anchor": "**ASTRA —** Ah. Então realmente fazemos o mesmo trabalho."
+            },
+            {
+              "line": 1171,
+              "anchor": "Não da vice-diretora do Instituto."
+            },
+            {
+              "line": 1181,
+              "anchor": "Quando Miren e Astra voltaram ao Instituto, a primeira sessão de trabalho posterior à abertura já reunia profissionais dos serviços civis e representantes locais."
+            },
+            {
+              "line": 1197,
+              "anchor": "Astra propôs uma forma de identificar os pedidos sem incluir dados pessoais de pacientes."
+            }
+          ]
+        },
+        "justification": "Recuperação autoral por evidência literal; não promove evento nem afirma estado atual além do último registro.",
+        "scope": "HISTORICAL_OBSERVATION"
+      },
+      "after": {
+        "value": "Pesquisadora autônoma (recapitulação do Livro I); no D91 ensinava na Academia; vice-diretora do Instituto AERÚN no D579.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+            "git_blob": "f0c2cb92e17a5b066392077187f009036fd29069",
+            "source_sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926",
+            "day": 579,
+            "evidence": [
+              {
+                "line": 1089,
+                "anchor": "**ASTRA —** Vocês fazem pesquisa todos os dias."
+              },
+              {
+                "line": 1095,
+                "anchor": "**ASTRA —** Ah. Então realmente fazemos o mesmo trabalho."
+              },
+              {
+                "line": 1171,
+                "anchor": "Não da vice-diretora do Instituto."
+              },
+              {
+                "line": 1181,
+                "anchor": "Quando Miren e Astra voltaram ao Instituto, a primeira sessão de trabalho posterior à abertura já reunia profissionais dos serviços civis e representantes locais."
+              },
+              {
+                "line": 1197,
+                "anchor": "Astra propôs uma forma de identificar os pedidos sem incluir dados pessoais de pacientes."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 91,
+            "evidence": [
+              {
+                "line": 98,
+                "global_line": 40965,
+                "anchor": "KAEL desenvolveu a diplomacia e a estratégia; BRANNIK tornou-se o primeiro integrante não criado por CREATION a aderir voluntariamente; LYSA estruturou a administração; ASTRA surgiu posteriormente como pesquisadora autônoma. MIREN ajudou LUCAS a compreender a magia antiga — e os dois construíram uma relação amorosa."
+              },
+              {
+                "line": 250,
+                "global_line": 41117,
+                "anchor": "Mais adiante, LUCAS encontrou ASTRA diante de uma turma da Academia."
+              },
+              {
+                "line": 272,
+                "global_line": 41139,
+                "anchor": "— Excelente. Agora consegue explicar aos demais?"
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por evidência literal; observação histórica delimitada, sem substituir estado posterior ou promover evento.",
+        "scope": "HISTORICAL_OBSERVATION"
+      }
+    },
+    {
+      "entity_id": "astra",
+      "field": "skills",
+      "before": {
+        "value": "Fundamentos interdisciplinares, capacidade de relacionar princípios técnicos, declarada pela própria Astra; orientou estudos e, no D579, propôs identificar pedidos sem dados pessoais de pacientes.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 22930,
+                "anchor": "— Arquitetura. Agricultura. Administração. Magia. Medicina. Navegação. Estratégia."
+              },
+              {
+                "line": 22972,
+                "anchor": "— Sei falar sua língua. Consigo compreender princípios técnicos e relacionar disciplinas. Possuo conhecimentos que não aprendi por experiência pessoal, mas consigo organizá-los e avaliar suas aplicações."
+              },
+              {
+                "line": 29422,
+                "anchor": "Porque, enquanto os dois aproveitavam a manhã, KAEL já havia iniciado sua reunião administrativa, LYSA conferia entregas, ASTRA orientava os estudos e VARO comandava a troca de patrulhas."
+              }
+            ]
+          },
+          {
+            "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+            "git_blob": "f0c2cb92e17a5b066392077187f009036fd29069",
+            "source_sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926",
+            "day": 579,
+            "evidence": [
+              {
+                "line": 1197,
+                "anchor": "Astra propôs uma forma de identificar os pedidos sem incluir dados pessoais de pacientes."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação autoral por evidência literal; não promove evento nem afirma estado atual além do último registro.",
+        "scope": "HISTORICAL_OBSERVATION"
+      },
+      "after": {
+        "value": "Fundamentos interdisciplinares, capacidade de relacionar princípios técnicos, declarada pela própria Astra; orientou estudos e, no D579, propôs identificar pedidos sem dados pessoais de pacientes. No D91, ensinou cálculo de distribuição de suprimentos por perguntas, autocorreção e explicação pelos aprendizes.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 22930,
+                "anchor": "— Arquitetura. Agricultura. Administração. Magia. Medicina. Navegação. Estratégia."
+              },
+              {
+                "line": 22972,
+                "anchor": "— Sei falar sua língua. Consigo compreender princípios técnicos e relacionar disciplinas. Possuo conhecimentos que não aprendi por experiência pessoal, mas consigo organizá-los e avaliar suas aplicações."
+              },
+              {
+                "line": 29422,
+                "anchor": "Porque, enquanto os dois aproveitavam a manhã, KAEL já havia iniciado sua reunião administrativa, LYSA conferia entregas, ASTRA orientava os estudos e VARO comandava a troca de patrulhas."
+              }
+            ]
+          },
+          {
+            "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+            "git_blob": "f0c2cb92e17a5b066392077187f009036fd29069",
+            "source_sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926",
+            "day": 579,
+            "evidence": [
+              {
+                "line": 1197,
+                "anchor": "Astra propôs uma forma de identificar os pedidos sem incluir dados pessoais de pacientes."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 91,
+            "evidence": [
+              {
+                "line": 250,
+                "global_line": 41117,
+                "anchor": "Mais adiante, LUCAS encontrou ASTRA diante de uma turma da Academia."
+              },
+              {
+                "line": 252,
+                "global_line": 41119,
+                "anchor": "Na lousa havia um problema simples de distribuição de alimentos."
+              },
+              {
+                "line": 254,
+                "global_line": 41121,
+                "anchor": "Ela havia pedido aos alunos que calculassem quanto tempo os suprimentos durariam diante de diferentes ritmos de consumo."
+              },
+              {
+                "line": 258,
+                "global_line": 41125,
+                "anchor": "ASTRA não forneceu a resposta."
+              },
+              {
+                "line": 262,
+                "global_line": 41129,
+                "anchor": "— Qual parte do raciocínio você considera correta?"
+              },
+              {
+                "line": 266,
+                "global_line": 41133,
+                "anchor": "Refez o cálculo."
+              },
+              {
+                "line": 268,
+                "global_line": 41135,
+                "anchor": "Encontrou o erro."
+              },
+              {
+                "line": 272,
+                "global_line": 41139,
+                "anchor": "— Excelente. Agora consegue explicar aos demais?"
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por evidência literal; observação histórica delimitada, sem substituir estado posterior ou promover evento.",
+        "scope": "HISTORICAL_OBSERVATION"
+      }
+    },
+    {
+      "entity_id": "astra",
+      "field": "history",
+      "before": {
+        "value": "Dia 10: criação consciente, escolha do nome, autonomia e fundamentos interdisciplinares. Orientou estudos no Livro I. Dia 579: vice-diretora do Instituto AERÚN, participou da escolha de roupa pessoal e da sessão de trabalho com Miren e Kael.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 22832,
+                "anchor": "A matriz estava organizada ao redor de uma única consciência."
+              },
+              {
+                "line": 22866,
+                "anchor": "O primeiro batimento cardíaco."
+              },
+              {
+                "line": 23030,
+                "anchor": "— ASTRA."
+              },
+              {
+                "line": 23036,
+                "anchor": "— Gosto da ideia de orientação pelas estrelas. Navegação, descoberta, referências que existem mesmo quando alguém desconhece o caminho."
+              },
+              {
+                "line": 22972,
+                "anchor": "— Sei falar sua língua. Consigo compreender princípios técnicos e relacionar disciplinas. Possuo conhecimentos que não aprendi por experiência pessoal, mas consigo organizá-los e avaliar suas aplicações."
+              },
+              {
+                "line": 22994,
+                "anchor": "— Então não vou fingir possuir experiências que não vivi."
+              },
+              {
+                "line": 29422,
+                "anchor": "Porque, enquanto os dois aproveitavam a manhã, KAEL já havia iniciado sua reunião administrativa, LYSA conferia entregas, ASTRA orientava os estudos e VARO comandava a troca de patrulhas."
+              }
+            ]
+          },
+          {
+            "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+            "git_blob": "f0c2cb92e17a5b066392077187f009036fd29069",
+            "source_sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926",
+            "day": 579,
+            "evidence": [
+              {
+                "line": 1167,
+                "anchor": "Ilva anotou um desenho para Astra."
+              },
+              {
+                "line": 1171,
+                "anchor": "Não da vice-diretora do Instituto."
+              },
+              {
+                "line": 1181,
+                "anchor": "Quando Miren e Astra voltaram ao Instituto, a primeira sessão de trabalho posterior à abertura já reunia profissionais dos serviços civis e representantes locais."
+              },
+              {
+                "line": 1197,
+                "anchor": "Astra propôs uma forma de identificar os pedidos sem incluir dados pessoais de pacientes."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação autoral por evidência literal; não promove evento nem afirma estado atual além do último registro.",
+        "scope": "HISTORICAL_OBSERVATION"
+      },
+      "after": {
+        "value": "Dia 10: criação consciente, escolha do nome, autonomia e fundamentos interdisciplinares. Orientou estudos no Livro I. Dia 579: vice-diretora do Instituto AERÚN, participou da escolha de roupa pessoal e da sessão de trabalho com Miren e Kael. D91: conduziu aula na Academia sem interrompê-la para prestar homenagem ao Criador.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 22832,
+                "anchor": "A matriz estava organizada ao redor de uma única consciência."
+              },
+              {
+                "line": 22866,
+                "anchor": "O primeiro batimento cardíaco."
+              },
+              {
+                "line": 23030,
+                "anchor": "— ASTRA."
+              },
+              {
+                "line": 23036,
+                "anchor": "— Gosto da ideia de orientação pelas estrelas. Navegação, descoberta, referências que existem mesmo quando alguém desconhece o caminho."
+              },
+              {
+                "line": 22972,
+                "anchor": "— Sei falar sua língua. Consigo compreender princípios técnicos e relacionar disciplinas. Possuo conhecimentos que não aprendi por experiência pessoal, mas consigo organizá-los e avaliar suas aplicações."
+              },
+              {
+                "line": 22994,
+                "anchor": "— Então não vou fingir possuir experiências que não vivi."
+              },
+              {
+                "line": 29422,
+                "anchor": "Porque, enquanto os dois aproveitavam a manhã, KAEL já havia iniciado sua reunião administrativa, LYSA conferia entregas, ASTRA orientava os estudos e VARO comandava a troca de patrulhas."
+              }
+            ]
+          },
+          {
+            "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+            "git_blob": "f0c2cb92e17a5b066392077187f009036fd29069",
+            "source_sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926",
+            "day": 579,
+            "evidence": [
+              {
+                "line": 1167,
+                "anchor": "Ilva anotou um desenho para Astra."
+              },
+              {
+                "line": 1171,
+                "anchor": "Não da vice-diretora do Instituto."
+              },
+              {
+                "line": 1181,
+                "anchor": "Quando Miren e Astra voltaram ao Instituto, a primeira sessão de trabalho posterior à abertura já reunia profissionais dos serviços civis e representantes locais."
+              },
+              {
+                "line": 1197,
+                "anchor": "Astra propôs uma forma de identificar os pedidos sem incluir dados pessoais de pacientes."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 91,
+            "evidence": [
+              {
+                "line": 250,
+                "global_line": 41117,
+                "anchor": "Mais adiante, LUCAS encontrou ASTRA diante de uma turma da Academia."
+              },
+              {
+                "line": 278,
+                "global_line": 41145,
+                "anchor": "Mas não interrompeu a aula para prestar homenagem ao Criador."
+              },
+              {
+                "line": 280,
+                "global_line": 41147,
+                "anchor": "Apenas fez um pequeno sinal com a cabeça."
+              },
+              {
+                "line": 282,
+                "global_line": 41149,
+                "anchor": "Depois voltou aos alunos."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por evidência literal; observação histórica delimitada, sem substituir estado posterior ou promover evento.",
+        "scope": "HISTORICAL_OBSERVATION"
+      }
+    },
+    {
+      "entity_id": "ilva",
+      "field": "occupation",
+      "before": {
+        "value": "artesã de vestuário",
+        "status": "COMPLETADO",
+        "origin": {
+          "policy": "C4 autorizado pelo autor em 2026-11-26",
+          "basis": "artesã de vestuário",
+          "observations": 1,
+          "legacy_id": null
+        },
+        "justification": "Papel de trabalho derivado da identidade e contextos disponíveis; revisão se surgir fonte melhor.",
+        "scope": "PROVISIONAL_CONTINUITY",
+        "valid_at": {
+          "day": 579,
+          "chapter": 9,
+          "part": "I"
+        }
+      },
+      "after": {
+        "value": "Atividade têxtil e reparos de roupas documentados no Livro I; no D98 apresentou tecidos e reparos produzidos em Três Arcos durante o Grande Festival.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 98,
+            "evidence": [
+              {
+                "line": 675,
+                "global_line": 41542,
+                "anchor": "DIA 98 — 09h00 | Portões da Cidade Livre"
+              },
+              {
+                "line": 727,
+                "global_line": 41594,
+                "anchor": "Do outro lado da praça, ILVA apresentava peças de tecido e reparos produzidos na cidade."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por evidência literal; observação histórica delimitada, sem substituir estado posterior ou promover evento.",
+        "scope": "HISTORICAL_OBSERVATION"
+      }
+    },
+    {
+      "entity_id": "ilva",
+      "field": "history",
+      "before": {
+        "value": "Visitante associada a tecidos; posteriormente organizou reparos de roupas e recebeu pedidos regulares.",
+        "status": "RECUPERADO",
+        "origin": {
+          "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+          "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+          "book": 1,
+          "evidence": [
+            {
+              "line": 36018,
+              "anchor": "A mulher dos tecidos, ILVA, observou a oficina."
+            },
+            {
+              "line": 36022,
+              "anchor": "— Poderá negociar espaços e serviços conforme as autorizações e contratos disponíveis. Seu trabalho e seus bens continuarão sendo seus, respeitadas as obrigações acordadas."
+            },
+            {
+              "line": 40019,
+              "anchor": "ILVA organizava reparos de roupas e recebia seus primeiros pedidos regulares."
+            }
+          ]
+        },
+        "justification": "Recuperação autoral por evidência literal; não promove evento nem afirma estado atual além do último registro.",
+        "scope": "HISTORICAL_OBSERVATION"
+      },
+      "after": {
+        "value": "Visitante associada a tecidos; posteriormente organizou reparos de roupas e recebeu pedidos regulares. D98: apresentou peças de tecido e reparos produzidos na cidade durante o Grande Festival.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 36018,
+                "anchor": "A mulher dos tecidos, ILVA, observou a oficina."
+              },
+              {
+                "line": 36022,
+                "anchor": "— Poderá negociar espaços e serviços conforme as autorizações e contratos disponíveis. Seu trabalho e seus bens continuarão sendo seus, respeitadas as obrigações acordadas."
+              },
+              {
+                "line": 40019,
+                "anchor": "ILVA organizava reparos de roupas e recebia seus primeiros pedidos regulares."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 98,
+            "evidence": [
+              {
+                "line": 675,
+                "global_line": 41542,
+                "anchor": "DIA 98 — 09h00 | Portões da Cidade Livre"
+              },
+              {
+                "line": 727,
+                "global_line": 41594,
+                "anchor": "Do outro lado da praça, ILVA apresentava peças de tecido e reparos produzidos na cidade."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por evidência literal; observação histórica delimitada, sem substituir estado posterior ou promover evento.",
+        "scope": "HISTORICAL_OBSERVATION"
+      }
+    },
+    {
+      "entity_id": "genese",
+      "field": "history",
+      "before": {
+        "value": "Não estabelecido nas fontes examinadas; recuperar antes de afirmar como fato.",
+        "status": "PENDENTE_FONTE",
+        "origin": {
+          "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+          "entity_id": "genese"
+        },
+        "justification": "Tratado estruturalmente, sem completar conteúdo sem base.",
+        "scope": "EDITORIAL",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+      },
+      "after": {
+        "value": "Recapitulação de abertura do Livro II confirma: no D90, a missão Um Lugar para Pertencer fora concluída, Lucas recebera Matriz de Fundação I e o potencial da Gênese de Horizonte permanecia inacessível; compreensão exigia encontrar âncoras antigas além do vale. Não constitui nova aquisição no D91 nem limite posterior.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "genese"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 90,
+            "evidence": [
+              {
+                "line": 114,
+                "global_line": 40981,
+                "anchor": "O despertar do Criador — Dia 90"
+              },
+              {
+                "line": 116,
+                "global_line": 40983,
+                "anchor": "A missão Um Lugar para Pertencer foi concluída. LUCAS recebeu a Matriz de Fundação I e descobriu o potencial da Gênese de Horizonte, uma capacidade muito maior de CREATION, ainda inacessível. Para compreendê-la, precisará encontrar âncoras antigas além do vale. A Legião conserva seus 300 integrantes originais vivos."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por evidência literal; observação histórica delimitada, sem substituir estado posterior ou promover evento.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+      }
+    }
+  ],
+  "existing_profiles": [
+    {
+      "id": "astra",
+      "name": "Astra",
+      "fields": {
+        "identity": {
+          "value": "Astra",
+          "status": "RECUPERADO",
+          "origin": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 23030,
+                "anchor": "— ASTRA."
+              },
+              {
+                "line": 23036,
+                "anchor": "— Gosto da ideia de orientação pelas estrelas. Navegação, descoberta, referências que existem mesmo quando alguém desconhece o caminho."
+              }
+            ]
+          },
+          "justification": "Recuperação autoral por evidência literal; não promove evento nem afirma estado atual além do último registro.",
+          "scope": "HISTORICAL_OBSERVATION"
+        },
+        "age_biological": {
+          "value": 27,
+          "status": "COMPLETADO",
+          "origin": {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "field": "age_biological",
+            "original_status": "AUTHOR_DEFINED_D580_DESIGN"
+          },
+          "justification": "Preservado do registro anterior; não transforma proposta em evento.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "height_cm": {
+          "value": "Não estabelecido por fonte literal revisada; recuperar antes de completar.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "AUTHOR_CANON_FIRST_2026-11-26",
+            "previous_status": "COMPLETADO",
+            "previous_registry_blob": "616a569d4cbf9d5ba7bb5f58c9c287581f603a61"
+          },
+          "justification": "Preenchimento prospectivo sem fonte literal retirado da ficha de continuidade por decisão autoral.",
+          "scope": "EDITORIAL"
+        },
+        "body": {
+          "value": "Alta, postura naturalmente ereta na primeira descrição; medidas corporais não confirmadas.",
+          "status": "RECUPERADO",
+          "origin": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 22884,
+                "anchor": "Alta, de postura naturalmente ereta, cabelos escuros presos de maneira despretensiosa e olhos cinzentos que imediatamente começaram a examinar o ambiente."
+              }
+            ]
+          },
+          "justification": "Recuperação autoral por evidência literal; não promove evento nem afirma estado atual além do último registro.",
+          "scope": "HISTORICAL_OBSERVATION"
+        },
+        "face": {
+          "value": "Não estabelecido por fonte literal revisada; recuperar antes de completar.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "AUTHOR_CANON_FIRST_2026-11-26",
+            "previous_status": "COMPLETADO",
+            "previous_registry_blob": "616a569d4cbf9d5ba7bb5f58c9c287581f603a61"
+          },
+          "justification": "Preenchimento prospectivo sem fonte literal retirado da ficha de continuidade por decisão autoral.",
+          "scope": "EDITORIAL"
+        },
+        "hair": {
+          "value": "Cabelos escuros, presos de maneira despretensiosa na criação. Última cor comprovada nesta revisão; não há alteração narrada identificada.",
+          "status": "RECUPERADO",
+          "origin": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 22884,
+                "anchor": "Alta, de postura naturalmente ereta, cabelos escuros presos de maneira despretensiosa e olhos cinzentos que imediatamente começaram a examinar o ambiente."
+              }
+            ]
+          },
+          "justification": "Recuperação autoral por evidência literal; não promove evento nem afirma estado atual além do último registro.",
+          "scope": "HISTORICAL_OBSERVATION"
+        },
+        "eyes": {
+          "value": "Cinzentos, conforme descrição original da criação; alteração posterior não comprovada.",
+          "status": "RECUPERADO",
+          "origin": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 22884,
+                "anchor": "Alta, de postura naturalmente ereta, cabelos escuros presos de maneira despretensiosa e olhos cinzentos que imediatamente começaram a examinar o ambiente."
+              }
+            ]
+          },
+          "justification": "Recuperação autoral por evidência literal; não promove evento nem afirma estado atual além do último registro.",
+          "scope": "HISTORICAL_OBSERVATION"
+        },
+        "skin": {
+          "value": "Não estabelecido por fonte literal revisada; recuperar antes de completar.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "AUTHOR_CANON_FIRST_2026-11-26",
+            "previous_status": "COMPLETADO",
+            "previous_registry_blob": "616a569d4cbf9d5ba7bb5f58c9c287581f603a61"
+          },
+          "justification": "Preenchimento prospectivo sem fonte literal retirado da ficha de continuidade por decisão autoral.",
+          "scope": "EDITORIAL"
+        },
+        "wardrobe": {
+          "value": "Na criação, roupas simples de viagem, sem artefatos extraordinários. No D579 escolheu experimentar tecido de outra cor para roupa pessoal; cor exata não informada.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+              "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+              "book": 1,
+              "evidence": [
+                {
+                  "line": 22886,
+                  "anchor": "Vestia roupas simples de viagem — nada de artefatos ou equipamentos extraordinários."
+                }
+              ]
+            },
+            {
+              "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+              "git_blob": "f0c2cb92e17a5b066392077187f009036fd29069",
+              "source_sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926",
+              "day": 579,
+              "evidence": [
+                {
+                  "line": 1109,
+                  "anchor": "Astra examinava uma amostra de tecido de cor diferente das peças oficiais."
+                },
+                {
+                  "line": 1119,
+                  "anchor": "Astra colocou a amostra diante do espelho."
+                },
+                {
+                  "line": 1121,
+                  "anchor": "**ASTRA —** Em uma roupa para sair. Uma roupa que não tenha bolsos suficientes para guardar seis instrumentos."
+                },
+                {
+                  "line": 1157,
+                  "anchor": "**ASTRA —** Então quero experimentar esta cor."
+                },
+                {
+                  "line": 1167,
+                  "anchor": "Ilva anotou um desenho para Astra."
+                }
+              ]
+            }
+          ],
+          "justification": "Recuperação autoral por evidência literal; não promove evento nem afirma estado atual além do último registro.",
+          "scope": "HISTORICAL_OBSERVATION"
+        },
+        "occupation": {
+          "value": "Pesquisadora autônoma (recapitulação do Livro I); no D91 ensinava na Academia; vice-diretora do Instituto AERÚN no D579.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+              "git_blob": "f0c2cb92e17a5b066392077187f009036fd29069",
+              "source_sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926",
+              "day": 579,
+              "evidence": [
+                {
+                  "line": 1089,
+                  "anchor": "**ASTRA —** Vocês fazem pesquisa todos os dias."
+                },
+                {
+                  "line": 1095,
+                  "anchor": "**ASTRA —** Ah. Então realmente fazemos o mesmo trabalho."
+                },
+                {
+                  "line": 1171,
+                  "anchor": "Não da vice-diretora do Instituto."
+                },
+                {
+                  "line": 1181,
+                  "anchor": "Quando Miren e Astra voltaram ao Instituto, a primeira sessão de trabalho posterior à abertura já reunia profissionais dos serviços civis e representantes locais."
+                },
+                {
+                  "line": 1197,
+                  "anchor": "Astra propôs uma forma de identificar os pedidos sem incluir dados pessoais de pacientes."
+                }
+              ]
+            },
+            {
+              "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+              "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "book": 2,
+              "day": 91,
+              "evidence": [
+                {
+                  "line": 98,
+                  "global_line": 40965,
+                  "anchor": "KAEL desenvolveu a diplomacia e a estratégia; BRANNIK tornou-se o primeiro integrante não criado por CREATION a aderir voluntariamente; LYSA estruturou a administração; ASTRA surgiu posteriormente como pesquisadora autônoma. MIREN ajudou LUCAS a compreender a magia antiga — e os dois construíram uma relação amorosa."
+                },
+                {
+                  "line": 250,
+                  "global_line": 41117,
+                  "anchor": "Mais adiante, LUCAS encontrou ASTRA diante de uma turma da Academia."
+                },
+                {
+                  "line": 272,
+                  "global_line": 41139,
+                  "anchor": "— Excelente. Agora consegue explicar aos demais?"
+                }
+              ]
+            }
+          ],
+          "justification": "Recuperação editorial cumulativa por evidência literal; observação histórica delimitada, sem substituir estado posterior ou promover evento.",
+          "scope": "HISTORICAL_OBSERVATION"
+        },
+        "roles": {
+          "value": "Vice-diretora do Instituto",
+          "status": "CANONICO",
+          "origin": {
+            "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+            "path": "episodes/LVI-C09-PI-D579-AUTHOR-SOURCE/draft/episode_draft.json",
+            "blob": "f0c2cb92e17a5b066392077187f009036fd29069",
+            "story_sha": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926",
+            "line": 1171,
+            "anchor": "Não da vice-diretora do Instituto."
+          },
+          "justification": "Leitura contextual; não generalizar como estado atual.",
+          "scope": "HISTORICAL_OBSERVATION",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "relationships": {
+          "value": "Escolheu colaborar voluntariamente; no D579 compartilhou momentos de amizade com Miren e Ilva, sem vínculo romântico presumido.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+              "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+              "book": 1,
+              "evidence": [
+                {
+                  "line": 24042,
+                  "anchor": "Avanços confirmados: ASTRA nasceu de uma criação consciente de alto custo e escolheu colaborar com a Legião. Seu perfil reúne inteligência interdisciplinar excepcional, fundamentos amplos e autonomia; suas competências práticas precisarão ser verificadas e aprofundadas com os especialistas locais."
+                }
+              ]
+            },
+            {
+              "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+              "git_blob": "f0c2cb92e17a5b066392077187f009036fd29069",
+              "source_sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926",
+              "day": 579,
+              "evidence": [
+                {
+                  "line": 1109,
+                  "anchor": "Astra examinava uma amostra de tecido de cor diferente das peças oficiais."
+                },
+                {
+                  "line": 1127,
+                  "anchor": "Astra virou-se."
+                },
+                {
+                  "line": 1141,
+                  "anchor": "**ASTRA —** Obrigada."
+                },
+                {
+                  "line": 1167,
+                  "anchor": "Ilva anotou um desenho para Astra."
+                }
+              ]
+            }
+          ],
+          "justification": "Recuperação autoral por evidência literal; não promove evento nem afirma estado atual além do último registro.",
+          "scope": "HISTORICAL_OBSERVATION"
+        },
+        "voice": {
+          "value": "Na criação, fez perguntas diretas sobre a saúde de Lucas e distinguiu conhecimento de experiência. No D579, brincou com Ilva sobre pesquisa e roupas.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+              "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+              "book": 1,
+              "evidence": [
+                {
+                  "line": 22898,
+                  "anchor": "— Você está prestes a desmaiar?"
+                },
+                {
+                  "line": 22972,
+                  "anchor": "— Sei falar sua língua. Consigo compreender princípios técnicos e relacionar disciplinas. Possuo conhecimentos que não aprendi por experiência pessoal, mas consigo organizá-los e avaliar suas aplicações."
+                },
+                {
+                  "line": 22994,
+                  "anchor": "— Então não vou fingir possuir experiências que não vivi."
+                }
+              ]
+            },
+            {
+              "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+              "git_blob": "f0c2cb92e17a5b066392077187f009036fd29069",
+              "source_sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926",
+              "day": 579,
+              "evidence": [
+                {
+                  "line": 1095,
+                  "anchor": "**ASTRA —** Ah. Então realmente fazemos o mesmo trabalho."
+                },
+                {
+                  "line": 1129,
+                  "anchor": "**ASTRA —** Não começa."
+                },
+                {
+                  "line": 1133,
+                  "anchor": "**ASTRA —** Sua expressão disse."
+                }
+              ]
+            }
+          ],
+          "justification": "Recuperação autoral por evidência literal; não promove evento nem afirma estado atual além do último registro.",
+          "scope": "HISTORICAL_OBSERVATION"
+        },
+        "skills": {
+          "value": "Fundamentos interdisciplinares, capacidade de relacionar princípios técnicos, declarada pela própria Astra; orientou estudos e, no D579, propôs identificar pedidos sem dados pessoais de pacientes. No D91, ensinou cálculo de distribuição de suprimentos por perguntas, autocorreção e explicação pelos aprendizes.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+              "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+              "book": 1,
+              "evidence": [
+                {
+                  "line": 22930,
+                  "anchor": "— Arquitetura. Agricultura. Administração. Magia. Medicina. Navegação. Estratégia."
+                },
+                {
+                  "line": 22972,
+                  "anchor": "— Sei falar sua língua. Consigo compreender princípios técnicos e relacionar disciplinas. Possuo conhecimentos que não aprendi por experiência pessoal, mas consigo organizá-los e avaliar suas aplicações."
+                },
+                {
+                  "line": 29422,
+                  "anchor": "Porque, enquanto os dois aproveitavam a manhã, KAEL já havia iniciado sua reunião administrativa, LYSA conferia entregas, ASTRA orientava os estudos e VARO comandava a troca de patrulhas."
+                }
+              ]
+            },
+            {
+              "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+              "git_blob": "f0c2cb92e17a5b066392077187f009036fd29069",
+              "source_sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926",
+              "day": 579,
+              "evidence": [
+                {
+                  "line": 1197,
+                  "anchor": "Astra propôs uma forma de identificar os pedidos sem incluir dados pessoais de pacientes."
+                }
+              ]
+            },
+            {
+              "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+              "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "book": 2,
+              "day": 91,
+              "evidence": [
+                {
+                  "line": 250,
+                  "global_line": 41117,
+                  "anchor": "Mais adiante, LUCAS encontrou ASTRA diante de uma turma da Academia."
+                },
+                {
+                  "line": 252,
+                  "global_line": 41119,
+                  "anchor": "Na lousa havia um problema simples de distribuição de alimentos."
+                },
+                {
+                  "line": 254,
+                  "global_line": 41121,
+                  "anchor": "Ela havia pedido aos alunos que calculassem quanto tempo os suprimentos durariam diante de diferentes ritmos de consumo."
+                },
+                {
+                  "line": 258,
+                  "global_line": 41125,
+                  "anchor": "ASTRA não forneceu a resposta."
+                },
+                {
+                  "line": 262,
+                  "global_line": 41129,
+                  "anchor": "— Qual parte do raciocínio você considera correta?"
+                },
+                {
+                  "line": 266,
+                  "global_line": 41133,
+                  "anchor": "Refez o cálculo."
+                },
+                {
+                  "line": 268,
+                  "global_line": 41135,
+                  "anchor": "Encontrou o erro."
+                },
+                {
+                  "line": 272,
+                  "global_line": 41139,
+                  "anchor": "— Excelente. Agora consegue explicar aos demais?"
+                }
+              ]
+            }
+          ],
+          "justification": "Recuperação editorial cumulativa por evidência literal; observação histórica delimitada, sem substituir estado posterior ou promover evento.",
+          "scope": "HISTORICAL_OBSERVATION"
+        },
+        "location": {
+          "value": "Última presença fechada localizada: jardins externos da Casa do Jardim Branco, Três Arcos, Dia 579 às 21h16; não presumir residência ou posição posterior.",
+          "status": "RECUPERADO",
+          "origin": {
+            "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+            "git_blob": "f0c2cb92e17a5b066392077187f009036fd29069",
+            "source_sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926",
+            "day": 579,
+            "evidence": [
+              {
+                "line": 2095,
+                "anchor": "**DIA 579 · 21h16 — TRÊS ARCOS, CASA DO JARDIM BRANCO, JARDINS EXTERNOS**"
+              },
+              {
+                "line": 2097,
+                "anchor": "Miren recebeu a mensagem do retorno enquanto ainda conversava com Astra no Instituto."
+              },
+              {
+                "line": 2111,
+                "anchor": "Astra olhou para a cena."
+              },
+              {
+                "line": 2209,
+                "anchor": "Astra fez duas perguntas sobre as folhas utilizadas por Ivena."
+              },
+              {
+                "line": 2239,
+                "anchor": "Astra falava sobre roupas que não tivessem bolsos demais."
+              }
+            ]
+          },
+          "justification": "Recuperação autoral por evidência literal; não promove evento nem afirma estado atual além do último registro.",
+          "scope": "HISTORICAL_OBSERVATION"
+        },
+        "goals": {
+          "value": "Na criação demonstrou interesse em aprender com o conselho; no D579 escolheu roupa pessoal para sair, não apenas para trabalhar.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+              "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+              "book": 1,
+              "evidence": [
+                {
+                  "line": 23790,
+                  "anchor": "ASTRA indicou os membros do conselho."
+                },
+                {
+                  "line": 23794,
+                  "anchor": "Você estendeu a mão."
+                }
+              ]
+            },
+            {
+              "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+              "git_blob": "f0c2cb92e17a5b066392077187f009036fd29069",
+              "source_sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926",
+              "day": 579,
+              "evidence": [
+                {
+                  "line": 1121,
+                  "anchor": "**ASTRA —** Em uma roupa para sair. Uma roupa que não tenha bolsos suficientes para guardar seis instrumentos."
+                },
+                {
+                  "line": 1157,
+                  "anchor": "**ASTRA —** Então quero experimentar esta cor."
+                },
+                {
+                  "line": 1167,
+                  "anchor": "Ilva anotou um desenho para Astra."
+                }
+              ]
+            }
+          ],
+          "justification": "Recuperação autoral por evidência literal; não promove evento nem afirma estado atual além do último registro.",
+          "scope": "HISTORICAL_OBSERVATION"
+        },
+        "values": {
+          "value": "Autonomia e honestidade sobre o que sabe: afirmou que não fingiria possuir experiências não vividas.",
+          "status": "RECUPERADO",
+          "origin": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 22994,
+                "anchor": "— Então não vou fingir possuir experiências que não vivi."
+              },
+              {
+                "line": 23286,
+                "anchor": "ASTRA observou você por vários segundos."
+              }
+            ]
+          },
+          "justification": "Recuperação autoral por evidência literal; não promove evento nem afirma estado atual além do último registro.",
+          "scope": "HISTORICAL_OBSERVATION"
+        },
+        "fears": {
+          "value": "Não estabelecido por fonte literal revisada; recuperar antes de completar.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "AUTHOR_CANON_FIRST_2026-11-26",
+            "previous_status": "COMPLETADO",
+            "previous_registry_blob": "616a569d4cbf9d5ba7bb5f58c9c287581f603a61"
+          },
+          "justification": "Preenchimento prospectivo sem fonte literal retirado da ficha de continuidade por decisão autoral.",
+          "scope": "EDITORIAL"
+        },
+        "gestures": {
+          "value": "Não estabelecido por fonte literal revisada; recuperar antes de completar.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "AUTHOR_CANON_FIRST_2026-11-26",
+            "previous_status": "COMPLETADO",
+            "previous_registry_blob": "616a569d4cbf9d5ba7bb5f58c9c287581f603a61"
+          },
+          "justification": "Preenchimento prospectivo sem fonte literal retirado da ficha de continuidade por decisão autoral.",
+          "scope": "EDITORIAL"
+        },
+        "contradictions": {
+          "value": "Não estabelecido por fonte literal revisada; recuperar antes de completar.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "AUTHOR_CANON_FIRST_2026-11-26",
+            "previous_status": "COMPLETADO",
+            "previous_registry_blob": "616a569d4cbf9d5ba7bb5f58c9c287581f603a61"
+          },
+          "justification": "Preenchimento prospectivo sem fonte literal retirado da ficha de continuidade por decisão autoral.",
+          "scope": "EDITORIAL"
+        },
+        "preferences": {
+          "value": "Não estabelecido por fonte literal revisada; recuperar antes de completar.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "AUTHOR_CANON_FIRST_2026-11-26",
+            "previous_status": "COMPLETADO",
+            "previous_registry_blob": "616a569d4cbf9d5ba7bb5f58c9c287581f603a61"
+          },
+          "justification": "Preenchimento prospectivo sem fonte literal retirado da ficha de continuidade por decisão autoral.",
+          "scope": "EDITORIAL"
+        },
+        "attributes": {
+          "value": "Não estabelecido por fonte literal revisada; recuperar antes de completar.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "AUTHOR_CANON_FIRST_2026-11-26",
+            "previous_status": "COMPLETADO",
+            "previous_registry_blob": "616a569d4cbf9d5ba7bb5f58c9c287581f603a61"
+          },
+          "justification": "Preenchimento prospectivo sem fonte literal retirado da ficha de continuidade por decisão autoral.",
+          "scope": "EDITORIAL"
+        },
+        "proficiencies": {
+          "value": "Não estabelecido por fonte literal revisada; recuperar antes de completar.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "AUTHOR_CANON_FIRST_2026-11-26",
+            "previous_status": "COMPLETADO",
+            "previous_registry_blob": "616a569d4cbf9d5ba7bb5f58c9c287581f603a61"
+          },
+          "justification": "Preenchimento prospectivo sem fonte literal retirado da ficha de continuidade por decisão autoral.",
+          "scope": "EDITORIAL"
+        },
+        "combat_style": {
+          "value": "Não estabelecido por fonte literal revisada; recuperar antes de completar.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "AUTHOR_CANON_FIRST_2026-11-26",
+            "previous_status": "COMPLETADO",
+            "previous_registry_blob": "616a569d4cbf9d5ba7bb5f58c9c287581f603a61"
+          },
+          "justification": "Preenchimento prospectivo sem fonte literal retirado da ficha de continuidade por decisão autoral.",
+          "scope": "EDITORIAL"
+        },
+        "species": {
+          "value": "Espécie não confirmada pelas fontes examinadas; não inferir pelo nome.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "pesquisadora e vice-direção do Instituto",
+            "observations": 1,
+            "legacy_id": "R26-CHAR-11"
+          },
+          "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "lineage": {
+          "value": "Linhagem específica não estabelecida.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "pesquisadora e vice-direção do Instituto",
+            "observations": 1,
+            "legacy_id": "R26-CHAR-11"
+          },
+          "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "origin": {
+          "value": "Criada por Lucas mediante CREATION, em uma única consciência materializada no Dia 10; escolheu seu próprio nome.",
+          "status": "RECUPERADO",
+          "origin": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 22310,
+                "anchor": "DIA 10 — 05h38 | Acampamento da Legião, Arvendell"
+              },
+              {
+                "line": 22810,
+                "anchor": "O reservatório de CREATION começou a diminuir."
+              },
+              {
+                "line": 22832,
+                "anchor": "A matriz estava organizada ao redor de uma única consciência."
+              },
+              {
+                "line": 22856,
+                "anchor": "A luz se condensou."
+              },
+              {
+                "line": 22860,
+                "anchor": "O corpo tomou forma."
+              },
+              {
+                "line": 22866,
+                "anchor": "O primeiro batimento cardíaco."
+              },
+              {
+                "line": 22882,
+                "anchor": "E uma mulher estava diante de você."
+              },
+              {
+                "line": 23030,
+                "anchor": "— ASTRA."
+              },
+              {
+                "line": 23036,
+                "anchor": "— Gosto da ideia de orientação pelas estrelas. Navegação, descoberta, referências que existem mesmo quando alguém desconhece o caminho."
+              }
+            ]
+          },
+          "justification": "Recuperação autoral por evidência literal; não promove evento nem afirma estado atual além do último registro.",
+          "scope": "HISTORICAL_OBSERVATION"
+        },
+        "age_chronological": {
+          "value": "Criada no Dia 10; não confundir tempo desde a criação com idade biológica ou aparente.",
+          "status": "RECUPERADO",
+          "origin": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 22310,
+                "anchor": "DIA 10 — 05h38 | Acampamento da Legião, Arvendell"
+              },
+              {
+                "line": 22866,
+                "anchor": "O primeiro batimento cardíaco."
+              },
+              {
+                "line": 22882,
+                "anchor": "E uma mulher estava diante de você."
+              }
+            ]
+          },
+          "justification": "Recuperação autoral por evidência literal; não promove evento nem afirma estado atual além do último registro.",
+          "scope": "HISTORICAL_OBSERVATION"
+        },
+        "age_apparent": {
+          "value": "Aparência etária não estabelecida; respeitar caracterização e idade explícita.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "pesquisadora e vice-direção do Instituto",
+            "observations": 1,
+            "legacy_id": "R26-CHAR-11"
+          },
+          "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "age_experiential": {
+          "value": "Experiência qualitativa vinculada ao ofício; duração exata não comprovada.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "pesquisadora e vice-direção do Instituto",
+            "observations": 1,
+            "legacy_id": "R26-CHAR-11"
+          },
+          "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "mass_kg": {
+          "value": "Massa numérica não estabelecida; não assumir compatibilidade física.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "pesquisadora e vice-direção do Instituto",
+            "observations": 1,
+            "legacy_id": "R26-CHAR-11"
+          },
+          "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "languages": {
+          "value": "Na criação afirmou falar a língua de Lucas; repertório adicional não comprovado.",
+          "status": "RECUPERADO",
+          "origin": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 22972,
+                "anchor": "— Sei falar sua língua. Consigo compreender princípios técnicos e relacionar disciplinas. Possuo conhecimentos que não aprendi por experiência pessoal, mas consigo organizá-los e avaliar suas aplicações."
+              }
+            ]
+          },
+          "justification": "Recuperação autoral por evidência literal; não promove evento nem afirma estado atual além do último registro.",
+          "scope": "HISTORICAL_OBSERVATION"
+        },
+        "magic_repertoire": {
+          "value": "Nenhuma nova magia concedida; catálogo não equivale a aprendizado.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "pesquisadora e vice-direção do Instituto",
+            "observations": 1,
+            "legacy_id": "R26-CHAR-11"
+          },
+          "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "equipment": {
+          "value": "Equipamento pessoal atual não confirmado; verificar última custódia.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "pesquisadora e vice-direção do Instituto",
+            "observations": 1,
+            "legacy_id": "R26-CHAR-11"
+          },
+          "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "inventory": {
+          "value": "Inventário atual não confirmado; não materializar por menção.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "pesquisadora e vice-direção do Instituto",
+            "observations": 1,
+            "legacy_id": "R26-CHAR-11"
+          },
+          "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "condition": {
+          "value": "Condição atual não confirmada; não curar ou ferir retroativamente.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "pesquisadora e vice-direção do Instituto",
+            "observations": 1,
+            "legacy_id": "R26-CHAR-11"
+          },
+          "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "knowledge": {
+          "value": "Na criação declarou possuir fundamentos técnicos sem experiências vividas; não pressupor conhecimento atual, onisciência nem acesso ao Sistema.",
+          "status": "RECUPERADO",
+          "origin": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 22972,
+                "anchor": "— Sei falar sua língua. Consigo compreender princípios técnicos e relacionar disciplinas. Possuo conhecimentos que não aprendi por experiência pessoal, mas consigo organizá-los e avaliar suas aplicações."
+              },
+              {
+                "line": 22994,
+                "anchor": "— Então não vou fingir possuir experiências que não vivi."
+              },
+              {
+                "line": 23250,
+                "anchor": "Limites: ASTRA não possui experiência vivida anterior, conhecimento automático de fatos locais nem acesso ao Sistema de LUCAS. Sua autonomia é independente, e suas habilidades precisarão ser exercitadas e verificadas."
+              }
+            ]
+          },
+          "justification": "Recuperação autoral por evidência literal; não promove evento nem afirma estado atual além do último registro.",
+          "scope": "PRIVATE_BOUNDARY"
+        },
+        "journey": {
+          "value": "Percurso completo não consolidado; nenhum teletransporte presumido.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "pesquisadora e vice-direção do Instituto",
+            "observations": 1,
+            "legacy_id": "R26-CHAR-11"
+          },
+          "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "history": {
+          "value": "Dia 10: criação consciente, escolha do nome, autonomia e fundamentos interdisciplinares. Orientou estudos no Livro I. Dia 579: vice-diretora do Instituto AERÚN, participou da escolha de roupa pessoal e da sessão de trabalho com Miren e Kael. D91: conduziu aula na Academia sem interrompê-la para prestar homenagem ao Criador.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+              "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+              "book": 1,
+              "evidence": [
+                {
+                  "line": 22832,
+                  "anchor": "A matriz estava organizada ao redor de uma única consciência."
+                },
+                {
+                  "line": 22866,
+                  "anchor": "O primeiro batimento cardíaco."
+                },
+                {
+                  "line": 23030,
+                  "anchor": "— ASTRA."
+                },
+                {
+                  "line": 23036,
+                  "anchor": "— Gosto da ideia de orientação pelas estrelas. Navegação, descoberta, referências que existem mesmo quando alguém desconhece o caminho."
+                },
+                {
+                  "line": 22972,
+                  "anchor": "— Sei falar sua língua. Consigo compreender princípios técnicos e relacionar disciplinas. Possuo conhecimentos que não aprendi por experiência pessoal, mas consigo organizá-los e avaliar suas aplicações."
+                },
+                {
+                  "line": 22994,
+                  "anchor": "— Então não vou fingir possuir experiências que não vivi."
+                },
+                {
+                  "line": 29422,
+                  "anchor": "Porque, enquanto os dois aproveitavam a manhã, KAEL já havia iniciado sua reunião administrativa, LYSA conferia entregas, ASTRA orientava os estudos e VARO comandava a troca de patrulhas."
+                }
+              ]
+            },
+            {
+              "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+              "git_blob": "f0c2cb92e17a5b066392077187f009036fd29069",
+              "source_sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926",
+              "day": 579,
+              "evidence": [
+                {
+                  "line": 1167,
+                  "anchor": "Ilva anotou um desenho para Astra."
+                },
+                {
+                  "line": 1171,
+                  "anchor": "Não da vice-diretora do Instituto."
+                },
+                {
+                  "line": 1181,
+                  "anchor": "Quando Miren e Astra voltaram ao Instituto, a primeira sessão de trabalho posterior à abertura já reunia profissionais dos serviços civis e representantes locais."
+                },
+                {
+                  "line": 1197,
+                  "anchor": "Astra propôs uma forma de identificar os pedidos sem incluir dados pessoais de pacientes."
+                }
+              ]
+            },
+            {
+              "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+              "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "book": 2,
+              "day": 91,
+              "evidence": [
+                {
+                  "line": 250,
+                  "global_line": 41117,
+                  "anchor": "Mais adiante, LUCAS encontrou ASTRA diante de uma turma da Academia."
+                },
+                {
+                  "line": 278,
+                  "global_line": 41145,
+                  "anchor": "Mas não interrompeu a aula para prestar homenagem ao Criador."
+                },
+                {
+                  "line": 280,
+                  "global_line": 41147,
+                  "anchor": "Apenas fez um pequeno sinal com a cabeça."
+                },
+                {
+                  "line": 282,
+                  "global_line": 41149,
+                  "anchor": "Depois voltou aos alunos."
+                }
+              ]
+            }
+          ],
+          "justification": "Recuperação editorial cumulativa por evidência literal; observação histórica delimitada, sem substituir estado posterior ou promover evento.",
+          "scope": "HISTORICAL_OBSERVATION"
+        },
+        "visual_refs": {
+          "value": "Referências visuais ainda não vinculadas ou revisadas.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "pesquisadora e vice-direção do Instituto",
+            "observations": 1,
+            "legacy_id": "R26-CHAR-11"
+          },
+          "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "arcane_study_plan": {
+          "value": "Direção de estudo prospectiva anterior, não repertório de magia comprovado; reavaliar a partir de ensaios narrados.",
+          "status": "PENDENTE_FONTE",
+          "scope": "EDITORIAL",
+          "origin": {
+            "policy": "AUTHOR_CANON_FIRST_2026-11-26",
+            "previous_registry_blob": "616a569d4cbf9d5ba7bb5f58c9c287581f603a61"
+          },
+          "justification": "Não transformar sugestão de escola em aprendizado ou fato."
+        }
+      },
+      "trace": {
+        "field_count": 41,
+        "structural_completeness": 100,
+        "substantive_completeness": 46.34,
+        "composition": {
+          "RECUPERADO": 17,
+          "COMPLETADO": 1,
+          "PENDENTE_FONTE": 22,
+          "CANONICO": 1
+        },
+        "observations": [
+          {
+            "field": "role",
+            "value": "Vice-diretora do Instituto",
+            "origin": {
+              "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+              "path": "episodes/LVI-C09-PI-D579-AUTHOR-SOURCE/draft/episode_draft.json",
+              "blob": "f0c2cb92e17a5b066392077187f009036fd29069",
+              "story_sha": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926",
+              "line": 1171,
+              "anchor": "Não da vice-diretora do Instituto."
+            },
+            "status": "CANONICO",
+            "qualification": "literal lido em episódio fechado; afirmação limitada ao dia"
+          }
+        ],
+        "external_refs": [],
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "canon_provisional_vetoable": true,
+        "book_i_reconciliation": "AUTHOR_AUTHORIZED_RECOVERED_NOT_INDEPENDENTLY_CERTIFIED"
+      },
+      "narrative_design": {
+        "status": "PENDENTE_FONTE",
+        "scope": "EDITORIAL",
+        "note": "Não usar design especulativo como verdade; reconstruir com cenas comprovadas.",
+        "source": "AUTHOR_CANON_FIRST_2026-11-26"
+      }
+    },
+    {
+      "id": "ilva",
+      "name": "Ilva",
+      "fields": {
+        "identity": {
+          "value": "Ilva",
+          "status": "RECUPERADO",
+          "origin": {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "field": "identity",
+            "original_status": "STAGING_IDENTITY"
+          },
+          "justification": "Preservado do registro anterior; não transforma proposta em evento.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "age_biological": {
+          "value": 31,
+          "status": "COMPLETADO",
+          "origin": {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "field": "age_biological",
+            "original_status": "AUTHOR_DEFINED_D580_DESIGN"
+          },
+          "justification": "Preservado do registro anterior; não transforma proposta em evento.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "height_cm": {
+          "value": 169,
+          "status": "COMPLETADO",
+          "origin": {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "field": "height_cm",
+            "original_status": "EXISTING_PROSPECTIVE_VISUAL_DESIGN"
+          },
+          "justification": "Preservado do registro anterior; não transforma proposta em evento.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "body": {
+          "value": "Proporcional, cintura marcada, braços ativos, pernas firmes",
+          "status": "COMPLETADO",
+          "origin": {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "field": "body",
+            "original_status": "EXISTING_PROSPECTIVE_VISUAL_DESIGN"
+          },
+          "justification": "Preservado do registro anterior; não transforma proposta em evento.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "face": {
+          "value": "Traços finos, maçãs definidas, sorriso enviesado",
+          "status": "COMPLETADO",
+          "origin": {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "field": "face",
+            "original_status": "EXISTING_PROSPECTIVE_VISUAL_DESIGN"
+          },
+          "justification": "Preservado do registro anterior; não transforma proposta em evento.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "hair": {
+          "value": "Castanho muito escuro, trança apertada; solto ondulado",
+          "status": "COMPLETADO",
+          "origin": {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "field": "hair",
+            "original_status": "EXISTING_PROSPECTIVE_VISUAL_DESIGN"
+          },
+          "justification": "Preservado do registro anterior; não transforma proposta em evento.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "eyes": {
+          "value": "Mel",
+          "status": "COMPLETADO",
+          "origin": {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "field": "eyes",
+            "original_status": "EXISTING_PROSPECTIVE_VISUAL_DESIGN"
+          },
+          "justification": "Preservado do registro anterior; não transforma proposta em evento.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "skin": {
+          "value": "Clara dourada",
+          "status": "COMPLETADO",
+          "origin": {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "field": "skin",
+            "original_status": "EXISTING_PROSPECTIVE_VISUAL_DESIGN"
+          },
+          "justification": "Preservado do registro anterior; não transforma proposta em evento.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "wardrobe": {
+          "value": "Terracota, vinho e creme; avental de costura e peças autorais",
+          "status": "COMPLETADO",
+          "origin": {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "field": "wardrobe",
+            "original_status": "EXISTING_PROSPECTIVE_VISUAL_DESIGN"
+          },
+          "justification": "Preservado do registro anterior; não transforma proposta em evento.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "skills": {
+          "value": "Ajuste de vestuário para mobilidade e elegância",
+          "status": "CANONICO",
+          "origin": {
+            "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+            "path": "episodes/LVI-C09-PI-D579-AUTHOR-SOURCE/draft/episode_draft.json",
+            "blob": "f0c2cb92e17a5b066392077187f009036fd29069",
+            "story_sha": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926",
+            "line": 1065,
+            "anchor": "Havia uma versão da peça que havia usado na abertura. Ilva ajustara a estrutura do tecido para dar liberdade de movimento, mantendo a linha elegante da cintura. Uma das artesãs mostrou como a capa curta poderia ser presa e removida sem deslocar o restante do traje."
+          },
+          "justification": "Leitura contextual; não generalizar como estado atual.",
+          "scope": "HISTORICAL_OBSERVATION",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "occupation": {
+          "value": "Atividade têxtil e reparos de roupas documentados no Livro I; no D98 apresentou tecidos e reparos produzidos em Três Arcos durante o Grande Festival.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "policy": "C4 autorizado pelo autor em 2026-11-26",
+              "basis": "artesã de vestuário",
+              "observations": 1,
+              "legacy_id": null
+            },
+            {
+              "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+              "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "book": 2,
+              "day": 98,
+              "evidence": [
+                {
+                  "line": 675,
+                  "global_line": 41542,
+                  "anchor": "DIA 98 — 09h00 | Portões da Cidade Livre"
+                },
+                {
+                  "line": 727,
+                  "global_line": 41594,
+                  "anchor": "Do outro lado da praça, ILVA apresentava peças de tecido e reparos produzidos na cidade."
+                }
+              ]
+            }
+          ],
+          "justification": "Recuperação editorial cumulativa por evidência literal; observação histórica delimitada, sem substituir estado posterior ou promover evento.",
+          "scope": "HISTORICAL_OBSERVATION"
+        },
+        "roles": {
+          "value": "artesã de vestuário",
+          "status": "COMPLETADO",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          "justification": "Função narrativa prospectiva; não constitui cargo histórico adicional.",
+          "scope": "PROVISIONAL_CONTINUITY",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "voice": {
+          "value": "criativa, direta e espirituosa",
+          "status": "COMPLETADO",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          "justification": "Direção individual de voz, sem fabricar fala anterior.",
+          "scope": "PROVISIONAL_CONTINUITY",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "goals": {
+          "value": "produzir roupas que expressem quem as usa",
+          "status": "COMPLETADO",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          "justification": "Objetivo de continuidade compatível com o papel; não é missão já aceita.",
+          "scope": "PROVISIONAL_CONTINUITY",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "values": {
+          "value": "individualidade e liberdade de movimento",
+          "status": "COMPLETADO",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          "justification": "Orientação comportamental compatível com o papel.",
+          "scope": "PROVISIONAL_CONTINUITY",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "fears": {
+          "value": "criação virar imposição",
+          "status": "COMPLETADO",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          "justification": "Tensão pessoal prospectiva, não trauma histórico inventado.",
+          "scope": "PROVISIONAL_CONTINUITY",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "gestures": {
+          "value": "comparar tecidos e propor ajustes",
+          "status": "COMPLETADO",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          "justification": "Marca de atuação prospectiva, sem inventar cena antiga.",
+          "scope": "PROVISIONAL_CONTINUITY",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "contradictions": {
+          "value": "Equilibrar produzir roupas que expressem quem as usa com criação virar imposição.",
+          "status": "COMPLETADO",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          "justification": "Tensão dramática de design, não conflito factual.",
+          "scope": "PROVISIONAL_CONTINUITY",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "preferences": {
+          "value": "ateliê e relações pessoais",
+          "status": "COMPLETADO",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          "justification": "Área de interesse ou desenvolvimento futuro, sem posse ou domínio presumidos.",
+          "scope": "PROVISIONAL_CONTINUITY",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "attributes": {
+          "value": "individualidade e liberdade de movimento; criativa, direta e espirituosa.",
+          "status": "COMPLETADO",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          "justification": "Atributos qualitativos, não estatística de poder.",
+          "scope": "PROVISIONAL_CONTINUITY",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "proficiencies": {
+          "value": "Priorizar competências ligadas a artesã de vestuário, com grau a estabelecer em cena.",
+          "status": "COMPLETADO",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          "justification": "Não atribui graduação de habilidade retroativa.",
+          "scope": "PROVISIONAL_CONTINUITY",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "combat_style": {
+          "value": "Sem estilo de combate presumido; reagir conforme capacidades verificadas e função.",
+          "status": "COMPLETADO",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          "justification": "Não cria treinamento, arma, magia ou vitória.",
+          "scope": "PROVISIONAL_CONTINUITY",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "species": {
+          "value": "Espécie não confirmada pelas fontes examinadas; não inferir pelo nome.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "lineage": {
+          "value": "Linhagem específica não estabelecida.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "origin": {
+          "value": "Origem geográfica não estabelecida; não criar cidade natal retroativa.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "age_chronological": {
+          "value": "Nascimento/criação e idade cronológica exatos ainda não verificados.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "age_apparent": {
+          "value": "Aparência etária não estabelecida; respeitar caracterização e idade explícita.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "age_experiential": {
+          "value": "Experiência qualitativa vinculada ao ofício; duração exata não comprovada.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "mass_kg": {
+          "value": "Massa numérica não estabelecida; não assumir compatibilidade física.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "languages": {
+          "value": "Repertório linguístico não confirmado; não atribuir fluência automaticamente.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "magic_repertoire": {
+          "value": "Nenhuma nova magia concedida; catálogo não equivale a aprendizado.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "equipment": {
+          "value": "Equipamento pessoal atual não confirmado; verificar última custódia.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "inventory": {
+          "value": "Inventário atual não confirmado; não materializar por menção.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "condition": {
+          "value": "Condição atual não confirmada; não curar ou ferir retroativamente.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "relationships": {
+          "value": "Vínculos específicos pendentes de recuperação; não inventar parentesco ou romance.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "knowledge": {
+          "value": "Conhecimento atual delimitado por cenas observadas; não conceder informação de bastidor.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "location": {
+          "value": "Localização atual não confirmada; recuperar última observação e deslocamento.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "journey": {
+          "value": "Percurso completo não consolidado; nenhum teletransporte presumido.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        },
+        "history": {
+          "value": "Visitante associada a tecidos; posteriormente organizou reparos de roupas e recebeu pedidos regulares. D98: apresentou peças de tecido e reparos produzidos na cidade durante o Grande Festival.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+              "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+              "book": 1,
+              "evidence": [
+                {
+                  "line": 36018,
+                  "anchor": "A mulher dos tecidos, ILVA, observou a oficina."
+                },
+                {
+                  "line": 36022,
+                  "anchor": "— Poderá negociar espaços e serviços conforme as autorizações e contratos disponíveis. Seu trabalho e seus bens continuarão sendo seus, respeitadas as obrigações acordadas."
+                },
+                {
+                  "line": 40019,
+                  "anchor": "ILVA organizava reparos de roupas e recebia seus primeiros pedidos regulares."
+                }
+              ]
+            },
+            {
+              "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+              "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "book": 2,
+              "day": 98,
+              "evidence": [
+                {
+                  "line": 675,
+                  "global_line": 41542,
+                  "anchor": "DIA 98 — 09h00 | Portões da Cidade Livre"
+                },
+                {
+                  "line": 727,
+                  "global_line": 41594,
+                  "anchor": "Do outro lado da praça, ILVA apresentava peças de tecido e reparos produzidos na cidade."
+                }
+              ]
+            }
+          ],
+          "justification": "Recuperação editorial cumulativa por evidência literal; observação histórica delimitada, sem substituir estado posterior ou promover evento.",
+          "scope": "HISTORICAL_OBSERVATION"
+        },
+        "visual_refs": {
+          "value": "Referências visuais ainda não vinculadas ou revisadas.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+          "scope": "EDITORIAL",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        }
+      },
+      "trace": {
+        "field_count": 40,
+        "structural_completeness": 100,
+        "substantive_completeness": 57.5,
+        "composition": {
+          "RECUPERADO": 2,
+          "COMPLETADO": 20,
+          "CANONICO": 1,
+          "PENDENTE_FONTE": 17
+        },
+        "observations": [
+          {
+            "field": "skill",
+            "value": "Ajuste de vestuário para mobilidade e elegância",
+            "origin": {
+              "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+              "path": "episodes/LVI-C09-PI-D579-AUTHOR-SOURCE/draft/episode_draft.json",
+              "blob": "f0c2cb92e17a5b066392077187f009036fd29069",
+              "story_sha": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926",
+              "line": 1065,
+              "anchor": "Havia uma versão da peça que havia usado na abertura. Ilva ajustara a estrutura do tecido para dar liberdade de movimento, mantendo a linha elegante da cintura. Uma das artesãs mostrou como a capa curta poderia ser presa e removida sem deslocar o restante do traje."
+            },
+            "status": "CANONICO",
+            "qualification": "literal lido em episódio fechado; afirmação limitada ao dia"
+          }
+        ],
+        "external_refs": [],
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "canon_provisional_vetoable": true,
+        "book_i_reconciliation": "AUTHOR_AUTHORIZED_RECOVERED_NOT_INDEPENDENTLY_CERTIFIED"
+      },
+      "narrative_design": {
+        "voice": "criativa, direta e espirituosa",
+        "goal": "produzir roupas que expressem quem as usa",
+        "values": "individualidade e liberdade de movimento",
+        "tension": "criação virar imposição",
+        "gesture": "comparar tecidos e propor ajustes",
+        "arc_direction": "ateliê e relações pessoais",
+        "status": "COMPLETADO",
+        "scope": "PROVISIONAL_CONTINUITY"
+      }
+    },
+    {
+      "id": "genese",
+      "name": "GÊNESE",
+      "domains": [
+        "Magia e poderes"
+      ],
+      "fields": {
+        "identity": {
+          "value": "GÊNESE",
+          "status": "RECUPERADO",
+          "origin": {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "genese"
+          },
+          "justification": "ID existente preservado.",
+          "scope": "EDITORIAL",
+          "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+        },
+        "aliases": {
+          "value": [
+            "Autoridade do Criador",
+            "GÊNESE",
+            "genese"
+          ],
+          "status": "RECUPERADO",
+          "origin": {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "genese"
+          },
+          "justification": "Valor preservado com status original STAGING_REGISTRY; revisar contexto antes de usar como atual.",
+          "scope": "EDITORIAL",
+          "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+        },
+        "domains": {
+          "value": [
+            "Magia e poderes"
+          ],
+          "status": "RECUPERADO",
+          "origin": {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "genese"
+          },
+          "justification": "Classificação multidomínio preservada.",
+          "scope": "EDITORIAL",
+          "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+        },
+        "source_history": {
+          "value": {
+            "attachment_observations": 0,
+            "prior_literal_observations": 3
+          },
+          "status": "RECUPERADO",
+          "origin": {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "genese"
+          },
+          "justification": "Valor preservado com status original HISTORICAL_REVIEW; revisar contexto antes de usar como atual.",
+          "scope": "EDITORIAL",
+          "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+        },
+        "visual_refs": {
+          "value": [],
+          "status": "RECUPERADO",
+          "origin": {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "genese"
+          },
+          "justification": "Valor preservado com status original INVENTORY_LINKS_NOT_FACTS; revisar contexto antes de usar como atual.",
+          "scope": "EDITORIAL",
+          "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+        },
+        "design_direction": {
+          "value": "Autoridade singular de Lucas",
+          "status": "COMPLETADO",
+          "origin": {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "genese",
+            "author_authorization": "C4"
+          },
+          "justification": "Direção de continuidade; não cria fato histórico.",
+          "scope": "EDITORIAL",
+          "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+        },
+        "coherence_rules": {
+          "value": "Fora da escala comum; preservar capacidades demonstradas e não criar custo/nerf por conveniência.",
+          "status": "COMPLETADO",
+          "origin": {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "genese",
+            "author_authorization": "C4"
+          },
+          "justification": "Direção de uso e validação; não atribui poder, propriedade ou dimensão nova.",
+          "scope": "EDITORIAL",
+          "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+        },
+        "status": {
+          "value": "Não estabelecido nas fontes examinadas; recuperar antes de afirmar como fato.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "genese"
+          },
+          "justification": "Tratado estruturalmente, sem completar conteúdo sem base.",
+          "scope": "EDITORIAL",
+          "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+        },
+        "first_observed": {
+          "value": "Não estabelecido nas fontes examinadas; recuperar antes de afirmar como fato.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "genese"
+          },
+          "justification": "Tratado estruturalmente, sem completar conteúdo sem base.",
+          "scope": "EDITORIAL",
+          "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+        },
+        "last_observed": {
+          "value": "Não estabelecido nas fontes examinadas; recuperar antes de afirmar como fato.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "genese"
+          },
+          "justification": "Tratado estruturalmente, sem completar conteúdo sem base.",
+          "scope": "EDITORIAL",
+          "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+        },
+        "conflicts": {
+          "value": "Não estabelecido nas fontes examinadas; recuperar antes de afirmar como fato.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "genese"
+          },
+          "justification": "Tratado estruturalmente, sem completar conteúdo sem base.",
+          "scope": "EDITORIAL",
+          "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+        },
+        "origin": {
+          "value": "Não estabelecido nas fontes examinadas; recuperar antes de afirmar como fato.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "genese"
+          },
+          "justification": "Tratado estruturalmente, sem completar conteúdo sem base.",
+          "scope": "EDITORIAL",
+          "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+        },
+        "capabilities": {
+          "value": "Potencial civilizacional identificado no registro restrito; não manifestação realizada.",
+          "status": "RECUPERADO",
+          "origin": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 40438,
+                "anchor": "CREATION — GÊNESE DE HORIZONTE"
+              },
+              {
+                "line": 40440,
+                "anchor": "Uma manifestação de escala civilizacional tornou-se teoricamente acessível ao portador."
+              },
+              {
+                "line": 40442,
+                "anchor": "Capacidade potencial de projetar e materializar sistemas complexos de infraestrutura em grande escala, mediante redes de energia, matéria existente, matrizes verificadas e operação coordenada."
+              }
+            ]
+          },
+          "justification": "Recuperação autoral por evidência literal; não promove evento nem afirma estado atual além do último registro.",
+          "scope": "PRIVATE_BOUNDARY"
+        },
+        "limits": {
+          "value": "Condições e limites descritos no D90; escopo histórico, sem impor nerf posterior.",
+          "status": "RECUPERADO",
+          "origin": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 40454,
+                "anchor": "Conhecer e verificar âncoras independentes além de Três Arcos; compreender suas fontes de energia; desenvolver dispositivos de segurança e autorização; obter cooperação voluntária dos operadores envolvidos."
+              },
+              {
+                "line": 40456,
+                "anchor": "Restrições permanentes conhecidas: não cria mana infinita, não substitui materiais e trabalho sem custo, não concede controle sobre pessoas e não transforma legitimidade política em poder mágico."
+              },
+              {
+                "line": 40458,
+                "anchor": "Ainda não existe um procedimento completo de ativação. A capacidade superior não pode ser utilizada em Três Arcos nas condições atuais."
+              }
+            ]
+          },
+          "justification": "Recuperação autoral por evidência literal; não promove evento nem afirma estado atual além do último registro.",
+          "scope": "PRIVATE_BOUNDARY"
+        },
+        "demonstrations": {
+          "value": "Não estabelecido nas fontes examinadas; recuperar antes de afirmar como fato.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "genese"
+          },
+          "justification": "Tratado estruturalmente, sem completar conteúdo sem base.",
+          "scope": "EDITORIAL",
+          "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+        },
+        "evolution": {
+          "value": "Gênese de Horizonte identificada, inacessível na época até requisitos externos.",
+          "status": "RECUPERADO",
+          "origin": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 40438,
+                "anchor": "CREATION — GÊNESE DE HORIZONTE"
+              },
+              {
+                "line": 40789,
+                "anchor": "Gênese de Horizonte identificada, mas inacessível até cumprir requisitos externos"
+              }
+            ]
+          },
+          "justification": "Recuperação autoral por evidência literal; não promove evento nem afirma estado atual além do último registro.",
+          "scope": "PRIVATE_BOUNDARY"
+        },
+        "history": {
+          "value": "Recapitulação de abertura do Livro II confirma: no D90, a missão Um Lugar para Pertencer fora concluída, Lucas recebera Matriz de Fundação I e o potencial da Gênese de Horizonte permanecia inacessível; compreensão exigia encontrar âncoras antigas além do vale. Não constitui nova aquisição no D91 nem limite posterior.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+              "entity_id": "genese"
+            },
+            {
+              "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+              "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "book": 2,
+              "day": 90,
+              "evidence": [
+                {
+                  "line": 114,
+                  "global_line": 40981,
+                  "anchor": "O despertar do Criador — Dia 90"
+                },
+                {
+                  "line": 116,
+                  "global_line": 40983,
+                  "anchor": "A missão Um Lugar para Pertencer foi concluída. LUCAS recebeu a Matriz de Fundação I e descobriu o potencial da Gênese de Horizonte, uma capacidade muito maior de CREATION, ainda inacessível. Para compreendê-la, precisará encontrar âncoras antigas além do vale. A Legião conserva seus 300 integrantes originais vivos."
+                }
+              ]
+            }
+          ],
+          "justification": "Recuperação editorial cumulativa por evidência literal; observação histórica delimitada, sem substituir estado posterior ou promover evento.",
+          "scope": "HISTORICAL_OBSERVATION",
+          "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+        },
+        "learning": {
+          "value": "Não estabelecido nas fontes examinadas; recuperar antes de afirmar como fato.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "genese"
+          },
+          "justification": "Tratado estruturalmente, sem completar conteúdo sem base.",
+          "scope": "EDITORIAL",
+          "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+        },
+        "mastery": {
+          "value": "Não estabelecido nas fontes examinadas; recuperar antes de afirmar como fato.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "genese"
+          },
+          "justification": "Tratado estruturalmente, sem completar conteúdo sem base.",
+          "scope": "EDITORIAL",
+          "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+        },
+        "catalogue": {
+          "value": "Não estabelecido nas fontes examinadas; recuperar antes de afirmar como fato.",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "genese"
+          },
+          "justification": "Tratado estruturalmente, sem completar conteúdo sem base.",
+          "scope": "EDITORIAL",
+          "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+        }
+      },
+      "trace": {
+        "composition": {
+          "RECUPERADO": 8,
+          "COMPLETADO": 2,
+          "PENDENTE_FONTE": 10
+        },
+        "field_count": 20,
+        "structural_completeness": 100,
+        "substantive_completeness": 50,
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "source_history": [],
+        "reference_candidates": [],
+        "book_i_reconciliation": "AUTHOR_AUTHORIZED_RECOVERED_NOT_INDEPENDENTLY_CERTIFIED"
+      }
+    }
+  ],
+  "historical_observations": [
+    {
+      "day": 91,
+      "entity": "astra",
+      "type": "teaching",
+      "evidence": {
+        "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+        "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+        "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "book": 2,
+        "day": 91,
+        "evidence": [
+          {
+            "line": 250,
+            "global_line": 41117,
+            "anchor": "Mais adiante, LUCAS encontrou ASTRA diante de uma turma da Academia."
+          },
+          {
+            "line": 258,
+            "global_line": 41125,
+            "anchor": "ASTRA não forneceu a resposta."
+          },
+          {
+            "line": 272,
+            "global_line": 41139,
+            "anchor": "— Excelente. Agora consegue explicar aos demais?"
+          },
+          {
+            "line": 278,
+            "global_line": 41145,
+            "anchor": "Mas não interrompeu a aula para prestar homenagem ao Criador."
+          }
+        ]
+      }
+    },
+    {
+      "day": 98,
+      "entity": "ilva",
+      "type": "textile_showcase",
+      "evidence": {
+        "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+        "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+        "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "book": 2,
+        "day": 98,
+        "evidence": [
+          {
+            "line": 675,
+            "global_line": 41542,
+            "anchor": "DIA 98 — 09h00 | Portões da Cidade Livre"
+          },
+          {
+            "line": 727,
+            "global_line": 41594,
+            "anchor": "Do outro lado da praça, ILVA apresentava peças de tecido e reparos produzidos na cidade."
+          }
+        ]
+      }
+    }
+  ],
+  "architect_discoveries": [],
+  "checks": {
+    "five_ledger_anchors_exact": true,
+    "complete_target_groups": 4,
+    "unique_ids_preserved": true,
+    "existing_fields_preserved": true,
+    "independent_certification": false
+  },
+  "counts": {
+    "editorially_reviewed": 5,
+    "groups": 4,
+    "fields_changed": 6,
+    "existing_entities": 3,
+    "remaining": 256,
+    "independently_certified": 0
+  },
+  "next": {
+    "ledger_id": 313,
+    "global_line": 42104
+  },
+  "canon_changed": false,
+  "production_activated": false
+}
