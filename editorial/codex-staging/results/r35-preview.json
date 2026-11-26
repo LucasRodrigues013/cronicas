@@ -115,9 +115,7 @@
           "unresolved_fields": [
             "appearance",
             "age",
-            "voice",
             "personality",
-            "relationships",
             "role",
             "origin",
             "location",
@@ -127,7 +125,10 @@
             "history"
           ],
           "visual_conflicts": [],
-          "visual_refs": []
+          "visual_refs": [
+            "file_000000005080820ea6b76c9f88facacc",
+            "file_000000006bec820eabf7b4363b60f809"
+          ]
         }
       ]
     },
@@ -431,9 +432,7 @@
           "sources": [],
           "unresolved_fields": [
             "age",
-            "voice",
             "personality",
-            "relationships",
             "role",
             "origin",
             "location",
@@ -453,6 +452,10 @@
             }
           ],
           "visual_refs": [
+            "file_00000000c790820ebf02548949f48f7d",
+            "file_0000000077c8820e880b87aaff0eeb0b",
+            "file_000000005080820ea6b76c9f88facacc",
+            "file_000000006bec820eabf7b4363b60f809",
             "file_0000000061c4820ea9f7e09591ee2bbc"
           ]
         }
@@ -533,6 +536,9 @@
           ],
           "visual_conflicts": [],
           "visual_refs": [
+            "file_00000000c790820ebf02548949f48f7d",
+            "file_0000000077c8820e880b87aaff0eeb0b",
+            "file_000000006bec820eabf7b4363b60f809",
             "file_0000000061c4820ea9f7e09591ee2bbc"
           ]
         }
@@ -755,7 +761,11 @@
             "history"
           ],
           "visual_conflicts": [],
-          "visual_refs": []
+          "visual_refs": [
+            "file_00000000c790820ebf02548949f48f7d",
+            "file_0000000077c8820e880b87aaff0eeb0b",
+            "file_000000006bec820eabf7b4363b60f809"
+          ]
         }
       ]
     },
@@ -819,7 +829,6 @@
             "voice",
             "personality",
             "relationships",
-            "role",
             "origin",
             "location",
             "knowledge",
@@ -828,7 +837,9 @@
             "history"
           ],
           "visual_conflicts": [],
-          "visual_refs": []
+          "visual_refs": [
+            "file_000000006bec820eabf7b4363b60f809"
+          ]
         }
       ]
     }
