@@ -339,9 +339,11 @@ def _sync(root,db_path=None):
             apply_delta(db,delta,draft.prose,c["sequence"],c["metadata"]["day"],c["story_sha256"],spells)
             verified_deltas.add(eid)
         if any(row[0] not in verified_deltas for row in db.execute("SELECT episode FROM codex_episode")):raise ValueError("Codex receipt missing")
+        from .r36_temporal import rebuild as rebuild_temporal
+        with db: temporal=rebuild_temporal(db,closures)
         if db.execute("PRAGMA integrity_check").fetchone()[0]!="ok" or db.execute("PRAGMA foreign_key_check").fetchall():raise ValueError("Codex projection corrupt")
         with db:db.execute("INSERT OR REPLACE INTO meta VALUES('head',?)",(jsonstr(head),))
-        return {"head":head,"registry_sha":reg_sha,"records":db.execute("SELECT count(*) FROM records").fetchone()[0],"events":db.execute("SELECT count(*) FROM codex_events").fetchone()[0],"scope":"CANDIDATES_PLUS_CLOSED_TYPED_EVENTS"}
+        return {"head":head,"registry_sha":reg_sha,"records":db.execute("SELECT count(*) FROM records").fetchone()[0],"events":db.execute("SELECT count(*) FROM codex_events").fetchone()[0],"scope":"CANDIDATES_PLUS_CLOSED_TYPED_EVENTS","temporal":temporal}
 def sync(root,db_path=None):
     """Build or update on a disposable copy; publish graph atomically after checks."""
     root=Path(root);reg=load_registry(root)

@@ -32,11 +32,14 @@ def temporal_events(root,day,clock=None,limit=50):
         return [dict(x) for x in db.execute(sql,params)]
 
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument("command",choices=["status","ratify","choose-status","restore","timeline"]);p.add_argument("--archive-root",type=Path,required=True);p.add_argument("--episode");p.add_argument("--approval");p.add_argument("--day",type=int);p.add_argument("--clock");a=p.parse_args()
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument("command",choices=["status","ratify","choose-status","restore","timeline","entity-timeline"]);p.add_argument("--archive-root",type=Path,required=True);p.add_argument("--episode");p.add_argument("--approval");p.add_argument("--day",type=int);p.add_argument("--clock");p.add_argument("--entity");a=p.parse_args()
     if a.command=="status":out=status(a.archive_root)
     elif a.command=="ratify":out=ratify(a.archive_root,a.episode,a.approval)
     elif a.command=="choose-status":out=continuation(a.archive_root,a.episode)
     elif a.command=="restore":out=g.restore(a.archive_root)
+    elif a.command=="entity-timeline":
+        from .r36_temporal import query
+        out=query(a.archive_root,a.entity,a.day,a.clock)
     else:out=temporal_events(a.archive_root,a.day,a.clock)
     print(json.dumps(out,ensure_ascii=False))
 if __name__=="__main__":main()

@@ -39,8 +39,19 @@ with tempfile.TemporaryDirectory() as tmp:
     assert digest(closure)==seal
     (folder/"option-2.json").write_bytes(g.canonical({**fixture,"option":2}))
     reject(lambda:continuation(root,episode));(folder/"option-2.json").unlink()
+    import sqlite3
+    from worldroot.r36_temporal import coverage,query
+    with sqlite3.connect(root/"canon/codex.sqlite") as graph:
+        cov=coverage(graph)
+        assert graph.execute("SELECT count(*) FROM r36_canon_event WHERE episode=?",(episode,)).fetchone()[0]==22
+        assert graph.execute("SELECT count(*) FROM r36_canon_event WHERE day=581").fetchone()[0]==0
+        assert graph.execute("SELECT count(*) FROM r36_canon_event").fetchone()[0]==cov["canonical_events"]
+    assert all(x["day"]<=580 for x in query(root,"lucas",580,"22h37")["history"])
     replay=g.restore(root);assert replay["sequence"]==51 and digest(closure)==seal
     assert g.load(root/"canon/HEAD.json")==head
+    with sqlite3.connect(root/"canon/codex.sqlite") as graph:
+        assert coverage(graph)==cov
+    print(json.dumps({"r36_temporal":cov,"d580_indexed":22,"restore":True}))
     timeline=temporal_events(root,580,"22h37")
     assert all(x["day"]<=580 for x in timeline)
     assert all(x["day"]<580 or x["hour"] is not None and x["hour"]<="22h37" for x in timeline)
