@@ -54,7 +54,10 @@ jobs:
           assert sum(p["group"]=="principal" for p in registry["profiles"])==12
           assert sum(p["group"]=="secundária" for p in registry["profiles"])==9
           bodies=source_bodies(registry)
-          assert "AUTHOR_DESIGN:lyra:age" in bodies and "AUTHOR_DESIGN:astra:age" not in bodies
+          approved={p["id"] for p in registry["profiles"] if p["age"]["status"]=="AUTHOR_DEFINED"}
+          assert approved=={"miren","astra","lyra","thalor-althea","ilva","maelis","lysa","serenna","yra","seris","naira","bressa","adela","serina","orelia","reva","ivena"}
+          assert {s.split(":")[1] for s in bodies if s.endswith(":age")}==approved
+          assert all("AUTHOR_DESIGN:"+n+":age" not in bodies for n in ("elyrien","avelna","talis","enna"))
           assert "sem sardas" in bodies["AUTHOR_DESIGN:miren:appearance"]
           req={"r34_intent":{"characters":[{"name":"Miren"},{"name":"Lira"},{"name":"Lysa"}]}}
           packet={"character_design":bind_request(root,req)}
@@ -70,7 +73,7 @@ jobs:
                   reviewed[rid]={k:item[k] for k in ("source","line_start","line_end","anchor_sha")}
                   reviewed[rid].update(status="REVIEWED_SUPPORTED",claim="Verified author visual design source, not historical assertion.")
           report=review_creation(root,head,requirements,reviewed)
-          assert report["verified"]==len(requirements)==23
+          assert report["verified"]==len(requirements)==38
           print(json.dumps({"female_dossiers":21,"design_evidence_verified":report["verified"],"registry_sha256":registry["sha256"],"focal_binding_verified":True,"canon_changed":False}))
           PY
           python engine/audit/run_r35.py --archive-root archive
