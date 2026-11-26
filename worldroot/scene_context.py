@@ -50,7 +50,14 @@ def build(request,rows,overlay=None,db=None):
         for key,ids in candidates(scene.get("purpose",""),aliases):
             if len(ids)==1:
                 if ids[0] not in direct:direct.append(ids[0])
-            elif not set(ids).intersection(direct):ambiguous.append({"mention":key,"ids":ids})
+            elif not set(ids).intersection(direct):
+                # A place can share an alias with its plot label. A unique atlas
+                # record may be retrieved locally without resolving a plot as a place.
+                atlas=[i for i in ids if "Atlas mundial" in by_id[i]["domains"]]
+                other=[i for i in ids if i not in atlas]
+                if len(atlas)==1 and other and all(set(by_id[i]["domains"])=={"História e mistérios"} for i in other):
+                    if atlas[0] not in direct:direct.append(atlas[0])
+                else:ambiguous.append({"mention":key,"ids":ids})
         for f in request.get("r34_intent",{}).get("characters",[]):
             if number not in f.get("scenes",[]):continue
             ids=aliases.get(norm(f["name"]),set())

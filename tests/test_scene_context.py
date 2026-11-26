@@ -22,3 +22,13 @@ class SceneContextTests(unittest.TestCase):
         self.assertTrue(build(req,self.rows)["scenes"][0]["needs_targeted_recovery"])
         with self.assertRaises(ValueError):build({**req,"world_scope":[{"scene":1,"ids":["missing"]}]},self.rows)
         self.assertEqual(pending_fronts(None,579)["status"],"GRAPH_NOT_READY")
+
+    def test_place_plot_alias_is_not_a_place_collision(self):
+        rows=self.rows+[{"id":"plot-halvern","name":"Trama de Halvern","aliases":["Halvern"],"domains":["História e mistérios"]}]
+        result=build({"scene_plan":[{"scene":1,"purpose":"Halvern"}]},rows)["scenes"][0]
+        self.assertEqual(result["direct_ids"],["other"])
+        self.assertEqual(result["ambiguities"],[])
+        rows.append({"id":"other2","name":"Outra Halvern","aliases":["Halvern"],"domains":["Atlas mundial"]})
+        result=build({"scene_plan":[{"scene":1,"purpose":"Halvern"}]},rows)["scenes"][0]
+        self.assertEqual(result["direct_ids"],[])
+        self.assertTrue(result["ambiguities"])
