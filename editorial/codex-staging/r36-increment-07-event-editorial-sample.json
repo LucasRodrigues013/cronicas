@@ -1,0 +1,140 @@
+{
+  "schema": "worldroot-r36-event-editorial-sample-v1",
+  "archive_commit": "34987b0771ec961b4a1c0c6cf203843b113dc000",
+  "engine_commit": "2eb5c4cacb90b57f2ac0ca1b1e1e57defd8daccc",
+  "source_path": "episodes/LVI-C09-PI-D579-AUTHOR-SOURCE/draft/narrativa_integral.md",
+  "source_status": "CLOSED",
+  "method": "Single ChatGPT editorial evaluation against bounded original source ranges; partial means additional evidence required, not contradiction. No independent certification, no state writes.",
+  "semantic_certification": false,
+  "canon_promotion": false,
+  "rows": [
+    {
+      "range": [
+        60,
+        95
+      ],
+      "verdict": "SUPPORTED_CANDIDATE",
+      "entities": [
+        "Lucas",
+        "Miren"
+      ],
+      "claim": "Miren guarda o bilhete pessoal entre as páginas de um livro; passeio futuro sem data; não registrar viagem realizada.",
+      "event_id": "LVI-C09-PI-D579-E01",
+      "source": {
+        "line": 75,
+        "literal_anchor": "*Passagem para um passeio de trem com meu amor. Sem data de validade.*",
+        "sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926"
+      },
+      "visibility": "PRIVADO_PERSONAGEM"
+    },
+    {
+      "range": [
+        342,
+        380
+      ],
+      "verdict": "PARTIAL",
+      "entities": [
+        "Garran",
+        "Campo Aurora"
+      ],
+      "claim": "Entrega civil concluída e carga transferida para transporte terrestre; trecho não comprova remuneração, requer contexto anterior.",
+      "event_id": "LVI-C09-PI-D579-E02",
+      "source": {
+        "line": 365,
+        "literal_anchor": "A entrega de Garran e de seus vizinhos estava concluída.",
+        "sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926"
+      },
+      "visibility": "PUBLICO"
+    },
+    {
+      "range": [
+        530,
+        568
+      ],
+      "verdict": "PARTIAL",
+      "entities": [
+        "ARGOS",
+        "Halvern",
+        "Naira",
+        "Lucas",
+        "Ivena",
+        "Ordan"
+      ],
+      "claim": "Pouso às 09h32 confirmado; trecho não enumera materiais nem autorização da missão completa.",
+      "event_id": "LVI-C09-PI-D579-E03",
+      "source": {
+        "line": 547,
+        "literal_anchor": "Às 09h32, o ARGOS tocou o solo do posto civil de Halvern.",
+        "sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926"
+      },
+      "visibility": "PRIVADO_PERSONAGEM"
+    },
+    {
+      "range": [
+        740,
+        785
+      ],
+      "verdict": "PARTIAL",
+      "entities": [
+        "Lucas",
+        "GÊNESE",
+        "Lessa",
+        "Brannik",
+        "Dorek",
+        "Ivena"
+      ],
+      "claim": "Criação de cobertura, drenagem e bancos autorizada e narrada; verificação efetiva em uso requer trecho posterior.",
+      "event_id": "LVI-C09-PI-D579-E04",
+      "source": {
+        "line": 757,
+        "literal_anchor": "**GÊNESE — AUTORIDADE DO CRIADOR.**",
+        "sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926"
+      },
+      "visibility": "PUBLICO"
+    },
+    {
+      "range": [
+        825,
+        855
+      ],
+      "verdict": "SUPPORTED_CANDIDATE",
+      "entities": [
+        "Lucas",
+        "Ivena",
+        "Ordan",
+        "Dorek",
+        "Brannik"
+      ],
+      "claim": "Dois protótipos entregues e desenho compartilhado para fabricação local; não implica produção em série.",
+      "event_id": "LVI-C09-PI-D579-E05",
+      "source": {
+        "line": 843,
+        "literal_anchor": "Depois entregou as duas bancadas.",
+        "sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926"
+      },
+      "visibility": "PRIVADO_PERSONAGEM"
+    },
+    {
+      "range": [
+        905,
+        955
+      ],
+      "verdict": "PARTIAL",
+      "entities": [
+        "Teren",
+        "Osvan",
+        "Ordan",
+        "Halvern",
+        "Renshar"
+      ],
+      "claim": "Entrega anterior D578, carta lacrada e consulta de rota D579 confirmadas; não registrar entrega ao destinatário nem autorização de rota.",
+      "event_id": "LVI-C09-PI-D579-E07",
+      "source": {
+        "line": 927,
+        "literal_anchor": "O envelope de Ordan fora separado conforme as condições que acompanhavam a custódia.",
+        "sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926"
+      },
+      "visibility": "BASTIDORES"
+    }
+  ]
+}
