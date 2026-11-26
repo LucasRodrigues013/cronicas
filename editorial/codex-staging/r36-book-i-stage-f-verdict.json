@@ -1,0 +1,150 @@
+{
+  "schema": "worldroot-r36-book-i-stage-f-verdict-v1",
+  "book": 1,
+  "stage": "F",
+  "status": "TECHNICAL_VALIDATION_PASS_SEMANTIC_HOMOLOGATION_HOLD",
+  "decision": "HOLD_BOOK_II_AND_PRODUCTION",
+  "engine_commit": "19d4be7759ba7c0d68adad8eb969414f78caaef3",
+  "previous_handoff": {
+    "commit": "476becf131a794af21a7616d5ed5ad6d436311fc",
+    "blob": "99327f0a3e57bfb615876871f6ee4ca8afc5f372"
+  },
+  "source": {
+    "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+    "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+    "lines": [
+      1,
+      40845
+    ],
+    "narrative_days": [
+      1,
+      90
+    ],
+    "chapter_numbers": 38,
+    "raw_words": 171829,
+    "prompts": 44,
+    "responses": 44
+  },
+  "metrics": {
+    "ledger_targets": 307,
+    "ledger_grouped_jobs": 236,
+    "editorial_targets_reviewed": 307,
+    "editorial_jobs_reviewed": 236,
+    "verdict_counts": {
+      "NON_NARRATIVE": 119,
+      "PARTIAL": 23,
+      "HYPOTHESIS": 14,
+      "NOT_ATTRIBUTED": 80,
+      "SUPPORTED": 32,
+      "REPORT_ONLY": 39
+    },
+    "arquiteto_candidates": 142,
+    "arquiteto_dispositions": {
+      "NOT_ENTITY": 73,
+      "MENTION_ONLY": 68,
+      "NEW_ID_CANDIDATE": 1
+    },
+    "roster": 38,
+    "existing_ids": 24,
+    "new_id_candidates": 14,
+    "inherited_observations": 74,
+    "graph_edges": 22,
+    "field_proposals": 26,
+    "dimension_groups_represented": 30,
+    "independent_models": 0,
+    "semantic_certified": 0,
+    "typed_events_admitted": 0,
+    "canon_promotions": 0
+  },
+  "native_validation": {
+    "run_id": 45896349329,
+    "job_id": 140171088439,
+    "workflow_commit": "6b6562a60f239e3016189c3b2a4180bd9c6a89fa",
+    "first_native_run_id": 45896205100,
+    "first_native_job_id": 140170619202,
+    "script_commit": "360c0030bcd360336c2669331cb434a13e580084",
+    "result": {
+      "book_i_native_stage_e": "PASS",
+      "jobs": 236,
+      "targets": 307,
+      "native_arquiteto_candidates": 142,
+      "field_proposals_checked": 26,
+      "native_rejections": 3,
+      "projection_replay_restore": true,
+      "projection_records": 1256,
+      "projection_events": 0,
+      "local_inference": {
+        "status": "UNAVAILABLE",
+        "error_type": "URLError",
+        "distinct_local_digests": 0,
+        "inference_executed": false
+      },
+      "independent_semantic_certified": 0,
+      "new_typed_events_admitted": 0,
+      "canon_changed": false
+    },
+    "regression": {
+      "tests": 705,
+      "status": "PASS",
+      "literal_log": "2026-11-26T21:11:38.2077605Z Ran 705 tests in 9.556s"
+    },
+    "job_conclusion": "success",
+    "review_branch": "audit/universal-codex-d580",
+    "draft_pr": 73
+  },
+  "new_evidence": [
+    {
+      "path": "editorial/codex-staging/r36-book-i-stage-f-substantive-addendum.json",
+      "commit": "fb6d5cf837adf603f2f42d086b69356993610b06",
+      "blob": "b85ec7e9ff9e7f53da58b90768a48a1c536077a2"
+    },
+    {
+      "path": "editorial/codex-staging/r36-book-i-semantic-local-jobs.jsonl",
+      "commit": "bc77cbefd581c659c8b284c327d4f6159097536b",
+      "blob": "7fd4241529863400340029a93a520f0144a76690",
+      "jobs": 236,
+      "targets": 307
+    }
+  ],
+  "checks": {
+    "native_pass": true,
+    "native_exact_coverage": true,
+    "native_projection_restore": true,
+    "native_rejections": true,
+    "full_regression": true,
+    "no_fake_independence": true,
+    "no_unreviewed_events": true,
+    "main_unchanged": true,
+    "engine_unchanged": true,
+    "staging_only": true
+  },
+  "gate": {
+    "editorial_reconciliation": "PASS_KNOWN_INVENTORY",
+    "native_structural_validation": "PASS",
+    "native_regression": "PASS",
+    "independent_semantic_review": "UNAVAILABLE",
+    "legacy_admission": "PENDING",
+    "new_typed_event_admission": "PENDING",
+    "substantive_completeness": "NOT_CERTIFIED_EXHAUSTIVE",
+    "book_ii": "NOT_STARTED"
+  },
+  "checkpoint": {
+    "next": "Run existing semantic_local on exported 236 sealed jobs with two genuinely distinct verified local model digests. Reconcile disagreements and historical design conflicts; separately review ARQUITETO legacy source role and semantic evidence; admit only through authorized existing gates, test new projection, issue superseding F verdict. Book II not released.",
+    "editorial_targets_remaining": 0,
+    "native_targets_remaining": 0,
+    "independent_targets_pending": 307,
+    "identity_admissions_pending": 14,
+    "field_proposals_pending": 26,
+    "independent_models": 0,
+    "semantic_certified": 0,
+    "typed_events_admitted": 0
+  },
+  "limitations": [
+    "A positive structural test does not certify semantic truth, independent review, or exhaustive coverage of all narrative scenes.",
+    "Both current local and CI environments lack a verified private model pair; no cloud or fake independent reviewer substituted.",
+    "Replay has 1256 records and zero typed projection events; no newly admitted historical event.",
+    "The dedicated script and existing workflow were modified only on audit/universal-codex-d580, draft PR 73, never merged."
+  ],
+  "canon_changed": false,
+  "production_activated": false
+}
