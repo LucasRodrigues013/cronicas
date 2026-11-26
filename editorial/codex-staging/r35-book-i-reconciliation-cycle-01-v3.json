@@ -1,0 +1,5505 @@
+{
+  "schema": "worldroot-r35-book-i-reconstruction-v3",
+  "status": "PARTIAL_EDITORIAL_GRAPH_NOT_HOMOLOGATED",
+  "cycle": 1,
+  "stage": "C",
+  "previous_blob": "0b404989f34e3387242d247f8f846edeac5a3ce9",
+  "source": {
+    "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+    "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+    "lines": [
+      1,
+      40845
+    ],
+    "narrative_days": [
+      1,
+      90
+    ],
+    "chapter_numbers": 38,
+    "raw_words": 171829,
+    "prompts": 44,
+    "responses": 44
+  },
+  "registry_blobs": {
+    "characters": "616a569d4cbf9d5ba7bb5f58c9c287581f603a61",
+    "world": "789973c2a52e72827814c612465605483deb5d4a",
+    "names": "219e980fd557d10416c0b34aa118e425d921b4fb"
+  },
+  "dimensions_inherited": {
+    "personagens": 23,
+    "aparencia": 3,
+    "personalidade-voz": 1,
+    "origem": 2,
+    "relacionamentos": 2,
+    "evolucao": 1,
+    "reinos": 1,
+    "cidades": 1,
+    "biomas": 1,
+    "rotas": 1,
+    "povos": 3,
+    "locais": 2,
+    "religioes": 1,
+    "idiomas-expressoes": 1,
+    "tradicoes": 2,
+    "gastronomia-vestuario": 2,
+    "arquitetura-artes": 3,
+    "costumes-instituicoes": 2,
+    "magias": 1,
+    "artefatos": 1,
+    "tecnologias": 2,
+    "criaturas-fauna": 1,
+    "flora-materiais": 1,
+    "criacoes": 1,
+    "acontecimentos": 2,
+    "guerras": 1,
+    "organizacoes": 1,
+    "economia": 3,
+    "misterios": 2,
+    "decisoes": 2
+  },
+  "roster": [
+    {
+      "id": "lucas",
+      "name": "Lucas Rodrigues",
+      "line": 9136,
+      "anchor": "— Lucas Rodrigues.",
+      "registry_match": true,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "varo",
+      "name": "Varo",
+      "line": 982,
+      "anchor": "— Entretanto, tenho pensamentos meus. E gostaria de ser chamado de VARO.",
+      "registry_match": true,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "kael",
+      "name": "Kael",
+      "line": 1453,
+      "anchor": "KAEL. Acho que me chamarei KAEL.",
+      "registry_match": true,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "edran",
+      "name": "Edran Vael",
+      "line": 1812,
+      "anchor": "— Sou EDRAN VAEL, tenente da Vigia de Halvern, a serviço do Marquesado de Thalor.",
+      "registry_match": true,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "chr-durghan-uzgor",
+      "name": "Durghan",
+      "line": 2296,
+      "anchor": "— Meu povo me chama de DURGHAN. Sou o chefe de guerra dos Uzgor.",
+      "registry_match": true,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "chr-oren-legiao",
+      "name": "Oren",
+      "line": 4007,
+      "anchor": "OREN.",
+      "registry_match": true,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "chr-elyan-legiao",
+      "name": "Elyan",
+      "line": 5459,
+      "anchor": "— ELYAN continua na segunda carroça, capitão.",
+      "registry_match": true,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "brannik",
+      "name": "Brannik",
+      "line": 6747,
+      "anchor": "— BRANNIK. Sou pedreiro. Já fui supervisor de uma pequena equipe de extração.",
+      "registry_match": true,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "lysa",
+      "name": "Lysa Varen",
+      "line": 7802,
+      "anchor": "Meu nome é LYSA VAREN.",
+      "registry_match": true,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "seron",
+      "name": "Seron",
+      "line": 8267,
+      "anchor": "O capitão da patrulha, SERON, utiliza o binóculo e identifica pelo menos nove indivíduos em diferentes pontos das ruínas. Alguns parecem adultos armados com ferramentas ou arcos simples. Outros são menores, possivelmente crianças.",
+      "registry_match": true,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "miren",
+      "name": "Miren",
+      "line": 9132,
+      "anchor": "— Meu nome é MIREN — diz ela.",
+      "registry_match": true,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "candidate:tarek-book-i",
+      "name": "Tarek",
+      "line": 10258,
+      "anchor": "— Este é TAREK — apresenta ela. — Organiza a distribuição de alimentos e a manutenção do abrigo.",
+      "registry_match": false,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "candidate:ina-book-i",
+      "name": "Ina",
+      "line": 13349,
+      "anchor": "— Meu nome é INA.",
+      "registry_match": false,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "candidate:selene-arvost",
+      "name": "Selene Arvost",
+      "line": 14715,
+      "anchor": "A primeira era DAMA SELENE ARVOST, administradora territorial delegada pelo Marquesado para tratar de concessões provisórias, obras de recuperação e disputas administrativas.",
+      "registry_match": false,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "candidate:auren-velcast",
+      "name": "Auren Velcast",
+      "line": 14719,
+      "anchor": "O segundo era LORD AUREN VELCAST, representante de interesses comerciais relacionados às estradas e entrepostos do norte.",
+      "registry_match": false,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "candidate:hadrin-fell",
+      "name": "Hadrin Fell",
+      "line": 16172,
+      "anchor": "Um pequeno comerciante chamado HADRIN FELL, proprietário de duas carroças de abastecimento, procurou o posto de contato da Legião.",
+      "registry_match": false,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "candidate:daren-book-i",
+      "name": "Daren",
+      "line": 17686,
+      "anchor": "— Meu nome é DAREN.",
+      "registry_match": false,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "chr-grazha-uzgor",
+      "name": "Grazha",
+      "line": 20246,
+      "anchor": "GRAZHA observou sua armadura.",
+      "registry_match": true,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "chr-korr-uzgor",
+      "name": "Korr",
+      "line": 20248,
+      "anchor": "KORR mantinha os braços cruzados.",
+      "registry_match": true,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "candidate:esmara",
+      "name": "Esmara",
+      "line": 21215,
+      "anchor": "Chamava-se ESMARA.",
+      "registry_match": false,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "candidate:neria-valmont",
+      "name": "Néria Valmont",
+      "line": 21861,
+      "anchor": "— DAMA SELENE autorizou uma vistoria técnica preliminar das estruturas dos Três Arcos. A pessoa designada é NÉRIA VALMONT, engenheira de obras civis vinculada à administração de Halvern.",
+      "registry_match": false,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "astra",
+      "name": "Astra",
+      "line": 23030,
+      "anchor": "— ASTRA.",
+      "registry_match": true,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "rhem",
+      "name": "Rhem",
+      "line": 30311,
+      "anchor": "No primeiro dia, um legionário chamado RHEM, do Bastião, enfrentou um adversário conhecido por seus ataques velozes.",
+      "registry_match": true,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "cirn",
+      "name": "Círan",
+      "line": 30351,
+      "anchor": "No segundo dia, CÍRAN, da Lança Rubra, tornou-se o centro das atenções.",
+      "registry_match": true,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "tavren",
+      "name": "Tavren",
+      "line": 30590,
+      "anchor": "TAVREN",
+      "registry_match": true,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "candidate:darius-book-i",
+      "name": "Darius",
+      "line": 30594,
+      "anchor": "DARIUS",
+      "registry_match": false,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "candidate:malrek-book-i",
+      "name": "Malrek",
+      "line": 30598,
+      "anchor": "MALREK",
+      "registry_match": false,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "edric",
+      "name": "Edric",
+      "line": 30602,
+      "anchor": "EDRIC",
+      "registry_match": true,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "candidate:toran-book-i",
+      "name": "Toran",
+      "line": 30606,
+      "anchor": "TORAN",
+      "registry_match": false,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "sael",
+      "name": "Sael",
+      "line": 30610,
+      "anchor": "SAEL",
+      "registry_match": true,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "chr-halden-cozinheiro",
+      "name": "Halden",
+      "line": 31896,
+      "anchor": "Um legionário da Sentinela chamado HALDEN aguardava próximo à plataforma.",
+      "registry_match": true,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "candidate:mateo-book-i",
+      "name": "Mateo",
+      "line": 36010,
+      "anchor": "Um dos artesãos, MATEO, perguntou:",
+      "registry_match": false,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "ilva",
+      "name": "Ilva",
+      "line": 36018,
+      "anchor": "A mulher dos tecidos, ILVA, observou a oficina.",
+      "registry_match": true,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "chr-fen-registro",
+      "name": "Fen",
+      "line": 36024,
+      "anchor": "O escrivão, FEN, fez outra pergunta.",
+      "registry_match": true,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "chr-marek-solen",
+      "name": "Marek Solen",
+      "line": 37070,
+      "anchor": "Um deles era CAPITÃO MAREK SOLEN, experiente em proteção de comboios.",
+      "registry_match": true,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "candidate:elira-voss",
+      "name": "Elira Voss",
+      "line": 37072,
+      "anchor": "A outra era ELIRA VOSS, uma maga especializada em técnicas defensivas, ocultação e perturbação de percepção.",
+      "registry_match": false,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "candidate:odran",
+      "name": "Odran",
+      "line": 38573,
+      "anchor": "O magistrado ODRAN chegou acompanhado de SELENE e EDRAN.",
+      "registry_match": false,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    },
+    {
+      "id": "maelis",
+      "name": "Maelis Ren",
+      "line": 39537,
+      "anchor": "Entre elas havia uma família de agricultores indicada por ESMARA, dois artesãos de madeira e uma profissional de saúde de Veldon chamada MAELIS REN.",
+      "registry_match": true,
+      "status": "HISTORICAL_IDENTITY_CANDIDATE"
+    }
+  ],
+  "chapter_index": [
+    {
+      "chapter": 1,
+      "start": 285,
+      "end": 665,
+      "title": "Capítulo 1 — O preço da primeira vitória",
+      "sections": [],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 2,
+      "start": 666,
+      "end": 937,
+      "title": "Capítulo 2 — O conselho dos trezentos",
+      "sections": [
+        {
+          "line": 668,
+          "anchor": "PRIMEIRO DIA • APÓS A BATALHA • VALE DESCONHECIDO"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 3,
+      "start": 938,
+      "end": 1252,
+      "title": "Capítulo 3 — Uma vitória não constrói um reino",
+      "sections": [
+        {
+          "line": 940,
+          "anchor": "DIA 1 • VALE DESCONHECIDO • DUAS HORAS APÓS O COMBATE"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 4,
+      "start": 1253,
+      "end": 1655,
+      "title": "Capítulo 4 - O sonho de um rei sem reino",
+      "sections": [
+        {
+          "line": 1255,
+          "anchor": "DIA 1 • FINAL DA TARDE • ACAMPAMENTO DA LEGIÃO"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 5,
+      "start": 1718,
+      "end": 2205,
+      "title": "Capítulo 5 — O peso de trezentas vidas",
+      "sections": [
+        {
+          "line": 1720,
+          "anchor": "DIA 1 • 18H12 • ACAMPAMENTO DA LEGIÃO"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 6,
+      "start": 2206,
+      "end": 2897,
+      "title": "Capítulo 6 — O juramento dos que não pertencem",
+      "sections": [
+        {
+          "line": 2208,
+          "anchor": "DIA 1 • 22H06 • ACAMPAMENTO DE ARVENDELL"
+        },
+        {
+          "line": 2274,
+          "anchor": "I — O homem que derrotou os orcs conversa com seu chefe"
+        },
+        {
+          "line": 2476,
+          "anchor": "II — A primeira negociação com Thalor"
+        },
+        {
+          "line": 2657,
+          "anchor": "III — O segredo da armadura"
+        },
+        {
+          "line": 2757,
+          "anchor": "IV — O relatório da primeira noite"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 7,
+      "start": 2898,
+      "end": 3680,
+      "title": "Capítulo 7 — A arma que não era uma espada",
+      "sections": [
+        {
+          "line": 2900,
+          "anchor": "DIA 2 • 00H17 • ACAMPAMENTO DE ARVENDELL"
+        },
+        {
+          "line": 2996,
+          "anchor": "I — O experimento da riqueza"
+        },
+        {
+          "line": 3076,
+          "anchor": "II — O conhecimento de outro mundo"
+        },
+        {
+          "line": 3196,
+          "anchor": "III — O primeiro voo"
+        },
+        {
+          "line": 3318,
+          "anchor": "IV — A memória do outro mundo"
+        },
+        {
+          "line": 3450,
+          "anchor": "V — Nasce a Unidade Véu"
+        },
+        {
+          "line": 3530,
+          "anchor": "VI — A notícia que muda a madrugada"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 8,
+      "start": 3681,
+      "end": 4613,
+      "title": "Capítulo 8 - A Legião que escolheu existir",
+      "sections": [
+        {
+          "line": 3683,
+          "anchor": "DIA 2 • 02H04 • VALE DE ARVENDELL"
+        },
+        {
+          "line": 3841,
+          "anchor": "I - O discurso da Legião"
+        },
+        {
+          "line": 4073,
+          "anchor": "II - O orc que não se ajoelhou"
+        },
+        {
+          "line": 4195,
+          "anchor": "III - O Sistema finalmente responde"
+        },
+        {
+          "line": 4367,
+          "anchor": "IV - O que realmente pensam sobre você"
+        },
+        {
+          "line": 4399,
+          "anchor": "V - A primeira madrugada da nova Legião"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 9,
+      "start": 4614,
+      "end": 5364,
+      "title": "Capítulo 9 — A ponta da lança",
+      "sections": [
+        {
+          "line": 4616,
+          "anchor": "DIA 2 • 05H07 • ACAMPAMENTO DE ARVENDELL"
+        },
+        {
+          "line": 4686,
+          "anchor": "I — Quanto vale a armadura do Criador?"
+        },
+        {
+          "line": 4809,
+          "anchor": "II — O vínculo das trezentas vidas"
+        },
+        {
+          "line": 4929,
+          "anchor": "III — As ordens para KAEL"
+        },
+        {
+          "line": 4983,
+          "anchor": "IV — O pequeno grupo que enfrentará o desconhecido"
+        },
+        {
+          "line": 5047,
+          "anchor": "V — A estrada dos que desapareceram"
+        },
+        {
+          "line": 5187,
+          "anchor": "VI — O inimigo que ainda não conhecemos"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 10,
+      "start": 5365,
+      "end": 6168,
+      "title": "Capítulo 10 — Nenhum irmão fica para trás",
+      "sections": [
+        {
+          "line": 5367,
+          "anchor": "DIA 2 • 07H58 • PEDREIRA ORIENTAL DE ARVENDELL"
+        },
+        {
+          "line": 5371,
+          "anchor": "I — A ordem do comandante"
+        },
+        {
+          "line": 5427,
+          "anchor": "II — A estrada da pedreira"
+        },
+        {
+          "line": 5491,
+          "anchor": "III — O primeiro erro"
+        },
+        {
+          "line": 5579,
+          "anchor": "IV — O homem da pedra azul"
+        },
+        {
+          "line": 5655,
+          "anchor": "V — O resgate"
+        },
+        {
+          "line": 5769,
+          "anchor": "VI — A retirada não é uma vitória completa"
+        },
+        {
+          "line": 5847,
+          "anchor": "VII — O retorno dos dez"
+        },
+        {
+          "line": 5967,
+          "anchor": "VIII — O relatório de VARO"
+        },
+        {
+          "line": 6035,
+          "anchor": "IX — O Sistema permanece silencioso"
+        },
+        {
+          "line": 6067,
+          "anchor": "X — O conselho apresenta os próximos caminhos"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 11,
+      "start": 6169,
+      "end": 6924,
+      "title": "Capítulo 11 — A forja de um verdadeiro líder",
+      "sections": [
+        {
+          "line": 6171,
+          "anchor": "DIA 2 • 13H47 • ACAMPAMENTO DE ARVENDELL"
+        },
+        {
+          "line": 6175,
+          "anchor": "I — O peso da própria fraqueza"
+        },
+        {
+          "line": 6243,
+          "anchor": "II — O mestre encontra seu professor"
+        },
+        {
+          "line": 6409,
+          "anchor": "III — Os três mistérios do Criador"
+        },
+        {
+          "line": 6599,
+          "anchor": "IV — Como conquistar nosso lugar neste mundo?"
+        },
+        {
+          "line": 6683,
+          "anchor": "V — Uma notícia que não esperávamos"
+        },
+        {
+          "line": 6777,
+          "anchor": "VI — O conselho da noite"
+        },
+        {
+          "line": 6827,
+          "anchor": "DIA 2 — 19H02 (Consolidação)"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 12,
+      "start": 6925,
+      "end": 7595,
+      "title": "Capítulo 12 — As fundações de uma nação",
+      "sections": [
+        {
+          "line": 6927,
+          "anchor": "DIA 2 • 19H26 • ACAMPAMENTO DE ARVENDELL"
+        },
+        {
+          "line": 6971,
+          "anchor": "I — A reunião que mudará nossas prioridades"
+        },
+        {
+          "line": 7049,
+          "anchor": "II — As ruínas dos Três Arcos"
+        },
+        {
+          "line": 7131,
+          "anchor": "III — As cadeiras vazias do conselho"
+        },
+        {
+          "line": 7265,
+          "anchor": "IV — A experiência do Criador"
+        },
+        {
+          "line": 7379,
+          "anchor": "V — O trabalho que acontece enquanto você dorme"
+        },
+        {
+          "line": 7381,
+          "anchor": "DIA 3 • 05H52 • ARVENDELL"
+        },
+        {
+          "line": 7428,
+          "anchor": "VI — A primeira notícia dos Três Arcos"
+        },
+        {
+          "line": 7502,
+          "anchor": "VII — A primeira proposta aos nobres"
+        },
+        {
+          "line": 7504,
+          "anchor": "DIA 3 • 08H17 • TENDA DO CONSELHO"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 13,
+      "start": 7670,
+      "end": 8634,
+      "title": "Capítulo 13 - O coração da criação",
+      "sections": [
+        {
+          "line": 7672,
+          "anchor": "DIA 3 • 09H14 • VALE DE ARVENDELL"
+        },
+        {
+          "line": 7710,
+          "anchor": "I - Os dez destacamentos da Legião"
+        },
+        {
+          "line": 7717,
+          "anchor": "I - Muralha"
+        },
+        {
+          "line": 7720,
+          "anchor": "II - Bastião"
+        },
+        {
+          "line": 7723,
+          "anchor": "III - Sentinela"
+        },
+        {
+          "line": 7726,
+          "anchor": "IV - Lança Rubra"
+        },
+        {
+          "line": 7729,
+          "anchor": "V - Tempestade"
+        },
+        {
+          "line": 7732,
+          "anchor": "VI - Martelo"
+        },
+        {
+          "line": 7735,
+          "anchor": "VII - Olho"
+        },
+        {
+          "line": 7738,
+          "anchor": "VIII - Véu"
+        },
+        {
+          "line": 7741,
+          "anchor": "IX - Forja"
+        },
+        {
+          "line": 7744,
+          "anchor": "X - Reserva"
+        },
+        {
+          "line": 7776,
+          "anchor": "II - A mulher que ninguém havia escutado"
+        },
+        {
+          "line": 7930,
+          "anchor": "III - A meditação no campo"
+        },
+        {
+          "line": 7932,
+          "anchor": "DIA 3 • 10H16 • PRADO AO NORTE DE ARVENDELL"
+        },
+        {
+          "line": 8064,
+          "anchor": "IV - A pergunta que o Sistema não quer responder"
+        },
+        {
+          "line": 8154,
+          "anchor": "V - O segredo da recuperação"
+        },
+        {
+          "line": 8239,
+          "anchor": "VI - O primeiro contato com Três Arcos"
+        },
+        {
+          "line": 8241,
+          "anchor": "DIA 3 • 12H43 • RUÍNAS DO NORTE"
+        },
+        {
+          "line": 8325,
+          "anchor": "VII - KAEL encontra a primeira barreira política"
+        },
+        {
+          "line": 8385,
+          "anchor": "VIII - O conselho apresenta o futuro"
+        },
+        {
+          "line": 8459,
+          "anchor": "IX - A proposta inesperada"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 14,
+      "start": 8635,
+      "end": 9563,
+      "title": "Capítulo 14 — O primeiro selo da Legião",
+      "sections": [
+        {
+          "line": 8637,
+          "anchor": "DIA 3 • 14H41 • ACAMPAMENTO DE ARVENDELL"
+        },
+        {
+          "line": 8695,
+          "anchor": "I — A carta que faz a Legião existir"
+        },
+        {
+          "line": 8750,
+          "anchor": "II — O primeiro carimbo"
+        },
+        {
+          "line": 8920,
+          "anchor": "III — As ordens antes da partida"
+        },
+        {
+          "line": 8990,
+          "anchor": "IV — O caminho para Três Arcos"
+        },
+        {
+          "line": 8992,
+          "anchor": "DIA 3 • 16H12"
+        },
+        {
+          "line": 9060,
+          "anchor": "V — Os moradores dos Três Arcos"
+        },
+        {
+          "line": 9178,
+          "anchor": "VI — O discurso que define o futuro"
+        },
+        {
+          "line": 9280,
+          "anchor": "VII — O primeiro choque com o mistério"
+        },
+        {
+          "line": 9418,
+          "anchor": "VIII — A resposta de Thalor"
+        },
+        {
+          "line": 9494,
+          "anchor": "DIA 3 • 18H02"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 15,
+      "start": 9564,
+      "end": 10656,
+      "title": "Capítulo 15 — Aqueles que construirão o impossível",
+      "sections": [
+        {
+          "line": 9566,
+          "anchor": "DIA 3 • 18H14 • RUÍNAS DOS TRÊS ARCOS"
+        },
+        {
+          "line": 9570,
+          "anchor": "I — A confiança que não nasce de uma ordem"
+        },
+        {
+          "line": 9686,
+          "anchor": "II — A proposta de MIREN"
+        },
+        {
+          "line": 9780,
+          "anchor": "III — A primeira lição sobre mana"
+        },
+        {
+          "line": 9892,
+          "anchor": "IV — A diferença entre criar e compreender"
+        },
+        {
+          "line": 10122,
+          "anchor": "V — O plano de conhecimento de KAEL"
+        },
+        {
+          "line": 10124,
+          "anchor": "DIA 3 • 20H06 • PÁTIO DOS TRÊS ARCOS"
+        },
+        {
+          "line": 10246,
+          "anchor": "VI — A primeira assembleia dos Três Arcos"
+        },
+        {
+          "line": 10350,
+          "anchor": "VII — O verdadeiro significado dos três círculos"
+        },
+        {
+          "line": 10544,
+          "anchor": "VIII — Relatório ao fim do terceiro dia"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 16,
+      "start": 10657,
+      "end": 11687,
+      "title": "Capítulo 16 — O arquiteto de mil futuros",
+      "sections": [
+        {
+          "line": 10659,
+          "anchor": "DIA 3 • 22H31 • ACAMPAMENTO DE ARVENDELL"
+        },
+        {
+          "line": 10663,
+          "anchor": "I — Três dias para mudar tudo"
+        },
+        {
+          "line": 10780,
+          "anchor": "II — A mochila e a armadura"
+        },
+        {
+          "line": 10944,
+          "anchor": "III — Dormir sem deixar de aprender"
+        },
+        {
+          "line": 11114,
+          "anchor": "IV — A descoberta que fez MIREN perder a fala"
+        },
+        {
+          "line": 11116,
+          "anchor": "DIA 4 • 07H26 • CAMPO DE ESTUDOS DA LEGIÃO"
+        },
+        {
+          "line": 11380,
+          "anchor": "V — O vínculo que ninguém esperava"
+        },
+        {
+          "line": 11548,
+          "anchor": "VI — Uma notícia dos Três Arcos"
+        },
+        {
+          "line": 11550,
+          "anchor": "DIA 4 • 10H42 • ACAMPAMENTO"
+        },
+        {
+          "line": 11654,
+          "anchor": "DIA 4 — 10H42 (Evolução confirmada)"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 17,
+      "start": 11762,
+      "end": 12958,
+      "title": "Capítulo 17 — Aquele que não precisava criar do nada",
+      "sections": [
+        {
+          "line": 11764,
+          "anchor": "DIA 4 • 11H06 • OFICINA PROVISÓRIA DA LEGIÃO"
+        },
+        {
+          "line": 11768,
+          "anchor": "I — A pergunta que ninguém havia feito"
+        },
+        {
+          "line": 11872,
+          "anchor": "II — A experiência da dobradiça"
+        },
+        {
+          "line": 12094,
+          "anchor": "III — O teste que poderia ter destruído a descoberta"
+        },
+        {
+          "line": 12186,
+          "anchor": "IV — A descoberta mais perigosa não estava no metal"
+        },
+        {
+          "line": 12340,
+          "anchor": "V — A primeira mesa de guerra da Legião"
+        },
+        {
+          "line": 12504,
+          "anchor": "VI — O reservatório não era o que você pensava"
+        },
+        {
+          "line": 12640,
+          "anchor": "VII — O que KAEL descobriu enquanto você aprendia"
+        },
+        {
+          "line": 12752,
+          "anchor": "VIII — A primeira consequência da descoberta"
+        },
+        {
+          "line": 12816,
+          "anchor": "IX — A mensagem dos Três Arcos"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 18,
+      "start": 13055,
+      "end": 14340,
+      "title": "Capítulo 18 — O mundo não espera por reis",
+      "sections": [
+        {
+          "line": 13057,
+          "anchor": "DIA 4 — 17h09 | Acampamento de Arvendell"
+        },
+        {
+          "line": 13065,
+          "anchor": "I — A pergunta que nenhum comandante deveria esquecer"
+        },
+        {
+          "line": 13177,
+          "anchor": "II — O verdadeiro estado da Legião"
+        },
+        {
+          "line": 13249,
+          "anchor": "III — Uma ordem diferente de todas as anteriores"
+        },
+        {
+          "line": 13305,
+          "anchor": "IV — A obra que ninguém pediu para um rei"
+        },
+        {
+          "line": 13307,
+          "anchor": "DIA 4 — 18h24 | Três Arcos"
+        },
+        {
+          "line": 13419,
+          "anchor": "V — A primeira construção conjunta"
+        },
+        {
+          "line": 13565,
+          "anchor": "VI — A mana dentro das pedras"
+        },
+        {
+          "line": 13725,
+          "anchor": "VII — O mundo continua se movendo"
+        },
+        {
+          "line": 13727,
+          "anchor": "DIA 4 — 20h38 | Estrada de Halvern"
+        },
+        {
+          "line": 13787,
+          "anchor": "DIA 4 — 21h02 | Encostas orientais"
+        },
+        {
+          "line": 13833,
+          "anchor": "DIA 4 — 21h19 | Pedreira oriental"
+        },
+        {
+          "line": 13877,
+          "anchor": "VIII — O preço de uma promessa"
+        },
+        {
+          "line": 13879,
+          "anchor": "DIA 4 — 22h14 | Acampamento da Legião"
+        },
+        {
+          "line": 14033,
+          "anchor": "IX — Sob os astros de um mundo desconhecido"
+        },
+        {
+          "line": 14035,
+          "anchor": "DIA 4 — 23h46 | Tenda de LUCAS"
+        },
+        {
+          "line": 14201,
+          "anchor": "X — O convite dos nobres"
+        },
+        {
+          "line": 14203,
+          "anchor": "DIA 5 — 07h18 | Acampamento de Arvendell"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 19,
+      "start": 14407,
+      "end": 15757,
+      "title": "Capítulo 19 — O peso de um nome",
+      "sections": [
+        {
+          "line": 14409,
+          "anchor": "DIA 5 — 08h06 | Acampamento de Arvendell"
+        },
+        {
+          "line": 14413,
+          "anchor": "I — O verdadeiro tamanho da Legião"
+        },
+        {
+          "line": 14577,
+          "anchor": "II — O conselho antes dos nobres"
+        },
+        {
+          "line": 14645,
+          "anchor": "III — O salão de Halvern"
+        },
+        {
+          "line": 14759,
+          "anchor": "IV — Trezentos homens e uma reputação"
+        },
+        {
+          "line": 14911,
+          "anchor": "V — KAEL assume a mesa"
+        },
+        {
+          "line": 15003,
+          "anchor": "VI — O poder reservado ao comandante"
+        },
+        {
+          "line": 15115,
+          "anchor": "VII — O preço exigido por Thalor"
+        },
+        {
+          "line": 15289,
+          "anchor": "VIII — A última pergunta de SELENE"
+        },
+        {
+          "line": 15355,
+          "anchor": "IX — A vitória de KAEL e LYSA"
+        },
+        {
+          "line": 15451,
+          "anchor": "X — O que ninguém disse durante a audiência"
+        },
+        {
+          "line": 15527,
+          "anchor": "XI — Um nome que começa a viajar"
+        },
+        {
+          "line": 15529,
+          "anchor": "DIA 5 — 19h26 | Acampamento de Arvendell"
+        },
+        {
+          "line": 15625,
+          "anchor": "XII — A descoberta que muda as prioridades"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 20,
+      "start": 15834,
+      "end": 17315,
+      "title": "Capítulo 20 — O milagre que não veio dos deuses",
+      "sections": [
+        {
+          "line": 15836,
+          "anchor": "DIA 6 — 05h42 | Acampamento de Arvendell"
+        },
+        {
+          "line": 15844,
+          "anchor": "I — O medo de perder tudo"
+        },
+        {
+          "line": 15900,
+          "anchor": "II — A primeira reunião de governo"
+        },
+        {
+          "line": 16000,
+          "anchor": "III — O nome da Legião terá valor"
+        },
+        {
+          "line": 16084,
+          "anchor": "IV — O mundo ao redor"
+        },
+        {
+          "line": 16166,
+          "anchor": "V — A primeira missão remunerada"
+        },
+        {
+          "line": 16252,
+          "anchor": "VI — Vinte e seis pessoas não são uma propriedade"
+        },
+        {
+          "line": 16254,
+          "anchor": "DIA 6 — 13h42 | Pátio dos Três Arcos"
+        },
+        {
+          "line": 16408,
+          "anchor": "VII — O que significa pertencer?"
+        },
+        {
+          "line": 16536,
+          "anchor": "VIII — O Coração de Convergência"
+        },
+        {
+          "line": 16538,
+          "anchor": "DIA 6 — 19h18 | Câmara antiga dos Três Arcos"
+        },
+        {
+          "line": 16740,
+          "anchor": "IX — O menor dos milagres"
+        },
+        {
+          "line": 17050,
+          "anchor": "X — O Coração ainda dorme"
+        },
+        {
+          "line": 17202,
+          "anchor": "XI — O milagre que você realmente precisava"
+        },
+        {
+          "line": 17204,
+          "anchor": "DIA 6 — 22h13 | Encosta dos Três Arcos"
+        },
+        {
+          "line": 17282,
+          "anchor": "DIA 6 • 22H13 (Avanço decisivo)"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 21,
+      "start": 17360,
+      "end": 18832,
+      "title": "Capítulo 21 — Dividir para conquistar",
+      "sections": [
+        {
+          "line": 17362,
+          "anchor": "DIA 7 — 06h12 | Acampamento de Arvendell"
+        },
+        {
+          "line": 17366,
+          "anchor": "I — A reunião dos fundadores"
+        },
+        {
+          "line": 17504,
+          "anchor": "II — O conselho aprende a trabalhar sem seu criador"
+        },
+        {
+          "line": 17624,
+          "anchor": "III — BRANNIK e a oficina dos que constroem"
+        },
+        {
+          "line": 17746,
+          "anchor": "IV — O homem que queria despertar um coração"
+        },
+        {
+          "line": 17918,
+          "anchor": "V — A terceira função de CREATION"
+        },
+        {
+          "line": 18164,
+          "anchor": "VI — A estrada que não precisou conhecer uma batalha"
+        },
+        {
+          "line": 18270,
+          "anchor": "VII — LYSA e o preço da independência"
+        },
+        {
+          "line": 18394,
+          "anchor": "VIII — A primeira oficina"
+        },
+        {
+          "line": 18496,
+          "anchor": "IX — O coração não pertence apenas a LUCAS"
+        },
+        {
+          "line": 18628,
+          "anchor": "X — O relatório que nenhum rei deveria temer"
+        },
+        {
+          "line": 18630,
+          "anchor": "DIA 7 — 19h44 | Conselho da Legião"
+        },
+        {
+          "line": 18769,
+          "anchor": "XI — Aquilo que se aproxima"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 22,
+      "start": 18933,
+      "end": 20783,
+      "title": "Capítulo 22 — A Revolução dos Mil Pequenos Milagres",
+      "sections": [
+        {
+          "line": 18935,
+          "anchor": "DIA 8 — 06h17 | Três Arcos, Vale de Arvendell"
+        },
+        {
+          "line": 18943,
+          "anchor": "I — O problema que uma espada não resolve"
+        },
+        {
+          "line": 19023,
+          "anchor": "II — Três frentes, uma única visão"
+        },
+        {
+          "line": 19136,
+          "anchor": "III — Os orcs que vieram sem armas"
+        },
+        {
+          "line": 19250,
+          "anchor": "IV — O primeiro campo da futura nação"
+        },
+        {
+          "line": 19316,
+          "anchor": "V — O primeiro trabalhador que não precisava respirar"
+        },
+        {
+          "line": 19578,
+          "anchor": "VI — O segredo escondido nas costuras"
+        },
+        {
+          "line": 19710,
+          "anchor": "VII — O nascimento da segunda mochila"
+        },
+        {
+          "line": 19896,
+          "anchor": "VIII — A reviravolta que ninguém esperava"
+        },
+        {
+          "line": 20106,
+          "anchor": "IX — A armadura responde"
+        },
+        {
+          "line": 20240,
+          "anchor": "X — Os filhos de Uzgor e a primeira colheita"
+        },
+        {
+          "line": 20242,
+          "anchor": "DIA 8 — 17h12 | Pátio dos Três Arcos"
+        },
+        {
+          "line": 20412,
+          "anchor": "XI — A primeira grande reunião da Legião"
+        },
+        {
+          "line": 20414,
+          "anchor": "DIA 8 — 20h16 | Acampamento de Arvendell"
+        },
+        {
+          "line": 20518,
+          "anchor": "XII — O verdadeiro salto de poder"
+        },
+        {
+          "line": 20684,
+          "anchor": "XIII — O mundo começa a temer o futuro"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 23,
+      "start": 20875,
+      "end": 22113,
+      "title": "Capítulo 23 — A Legião dos Mil Talentos",
+      "sections": [
+        {
+          "line": 20877,
+          "anchor": "DIA 9 — 06h08 | Três Arcos, Vale de Arvendell"
+        },
+        {
+          "line": 20885,
+          "anchor": "I — A decisão que mudaria a Legião"
+        },
+        {
+          "line": 21025,
+          "anchor": "II — O primeiro plano de desenvolvimento"
+        },
+        {
+          "line": 21207,
+          "anchor": "III — A mulher que não se impressionou com os golens"
+        },
+        {
+          "line": 21379,
+          "anchor": "IV — A proposta que ninguém esperava"
+        },
+        {
+          "line": 21523,
+          "anchor": "V — A pergunta proibida"
+        },
+        {
+          "line": 21525,
+          "anchor": "DIA 9 — 16h18 | Encosta silenciosa, ao norte dos Três Arcos"
+        },
+        {
+          "line": 21705,
+          "anchor": "VI — Uma cidade não precisa nascer pronta"
+        },
+        {
+          "line": 21839,
+          "anchor": "VII — A resposta que chegou de Halvern"
+        },
+        {
+          "line": 21919,
+          "anchor": "VIII — O segredo que LUCAS não contou a ninguém"
+        },
+        {
+          "line": 22029,
+          "anchor": "IX — O mundo percebe o que está nascendo"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 24,
+      "start": 22308,
+      "end": 24051,
+      "title": "Capítulo 24 — O Nascimento da Mente Impossível",
+      "sections": [
+        {
+          "line": 22310,
+          "anchor": "DIA 10 — 05h38 | Acampamento da Legião, Arvendell"
+        },
+        {
+          "line": 22320,
+          "anchor": "I — As ordens de um homem que não podia mais esperar"
+        },
+        {
+          "line": 22474,
+          "anchor": "II — A pergunta que mudou o projeto"
+        },
+        {
+          "line": 22626,
+          "anchor": "III — O Projeto do Arquiteto das Civilizações"
+        },
+        {
+          "line": 22796,
+          "anchor": "IV — A mulher que nasceu de uma pergunta"
+        },
+        {
+          "line": 23136,
+          "anchor": "V — O primeiro pensamento de ASTRA"
+        },
+        {
+          "line": 23322,
+          "anchor": "VI — A reunião que fez KAEL esquecer suas próprias anotações"
+        },
+        {
+          "line": 23458,
+          "anchor": "VII — A engenheira de Thalor"
+        },
+        {
+          "line": 23662,
+          "anchor": "VIII — A primeira decisão de ASTRA"
+        },
+        {
+          "line": 23810,
+          "anchor": "IX — O preço do salto"
+        },
+        {
+          "line": 23812,
+          "anchor": "DIA 10 — 17h46 | Campo de treino"
+        },
+        {
+          "line": 23918,
+          "anchor": "X — A carta de NÉRIA"
+        },
+        {
+          "line": 23920,
+          "anchor": "DIA 10 — 20h18 | Conselho da Legião"
+        },
+        {
+          "line": 24004,
+          "anchor": "XI — O mundo responde"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 25,
+      "start": 24137,
+      "end": 25560,
+      "title": "Capítulo 25 - O homem por trás da armadura",
+      "sections": [
+        {
+          "line": 24139,
+          "anchor": "DIA 11 - 06h43 | Acampamento de Arvendell"
+        },
+        {
+          "line": 24149,
+          "anchor": "I - Um rei cercado de pessoas"
+        },
+        {
+          "line": 24273,
+          "anchor": "II - A conversa com KAEL"
+        },
+        {
+          "line": 24413,
+          "anchor": "III - Quem ama aquilo que foi criado?"
+        },
+        {
+          "line": 24505,
+          "anchor": "IV - Uma proposta que MIREN não esperava"
+        },
+        {
+          "line": 24641,
+          "anchor": "V - A mulher que guardava as ruínas"
+        },
+        {
+          "line": 24795,
+          "anchor": "VI - Será que pessoas criadas conseguem amar?"
+        },
+        {
+          "line": 24921,
+          "anchor": "VII - Enquanto LUCAS vivia, a Legião continuava crescendo"
+        },
+        {
+          "line": 25063,
+          "anchor": "VIII - Um momento que não pertencia à Legião"
+        },
+        {
+          "line": 25221,
+          "anchor": "IX - O homem que voltou diferente"
+        },
+        {
+          "line": 25339,
+          "anchor": "X - Como estão os personagens de verdade?"
+        },
+        {
+          "line": 25371,
+          "anchor": "XI - O que aconteceu com a Legião até agora?"
+        },
+        {
+          "line": 25407,
+          "anchor": "XII - Uma última conversa sob as estrelas"
+        },
+        {
+          "line": 25409,
+          "anchor": "DIA 11 - 23h08 | Acampamento da Legião"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 26,
+      "start": 25793,
+      "end": 26864,
+      "title": "Capítulo 26 — O Protocolo de Ascensão",
+      "sections": [
+        {
+          "line": 25795,
+          "anchor": "DIA 12 — 05h47 | Acampamento de Arvendell"
+        },
+        {
+          "line": 25839,
+          "anchor": "I — O conselho que governará antes de existir um reino"
+        },
+        {
+          "line": 25968,
+          "anchor": "II — A pergunta de ASTRA"
+        },
+        {
+          "line": 26058,
+          "anchor": "III — A cidade recebe seus primeiros construtores"
+        },
+        {
+          "line": 26060,
+          "anchor": "DIA 12 — 11h46 | Três Arcos"
+        },
+        {
+          "line": 26148,
+          "anchor": "IV — A experiência que finalmente mudou a força de LUCAS"
+        },
+        {
+          "line": 26150,
+          "anchor": "DIA 13 — 09h12 | Oficina da Primeira Pedra"
+        },
+        {
+          "line": 26444,
+          "anchor": "V — A descoberta de ASTRA"
+        },
+        {
+          "line": 26446,
+          "anchor": "DIA 13 — 14h28 | Conselho Operacional"
+        },
+        {
+          "line": 26542,
+          "anchor": "VI — O mapa dos adversários"
+        },
+        {
+          "line": 26544,
+          "anchor": "DIA 13 — 18h06 | Tenda Militar"
+        },
+        {
+          "line": 26640,
+          "anchor": "VII — Uma noite que LUCAS não precisou sacrificar"
+        },
+        {
+          "line": 26642,
+          "anchor": "DIA 13 — 20h19 | Jardim das Pedras Brancas"
+        },
+        {
+          "line": 26764,
+          "anchor": "VIII — As primeiras 48 horas de ascensão"
+        },
+        {
+          "line": 26766,
+          "anchor": "DIA 13 — 22h04 | Relatório consolidado"
+        },
+        {
+          "line": 26803,
+          "anchor": "IX — A notícia que surpreendeu ASTRA"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 27,
+      "start": 26945,
+      "end": 28537,
+      "title": "Capítulo 27 — Um Reino Precisa de Alma",
+      "sections": [
+        {
+          "line": 26947,
+          "anchor": "DIA 14 — 06h24 | Três Arcos, Vale de Arvendell"
+        },
+        {
+          "line": 26995,
+          "anchor": "I — O conhecimento de outro mundo"
+        },
+        {
+          "line": 27073,
+          "anchor": "II — A aula que surpreendeu ASTRA"
+        },
+        {
+          "line": 27163,
+          "anchor": "III — O que acontece quando um legionário desobedece?"
+        },
+        {
+          "line": 27245,
+          "anchor": "IV — A Legião também precisa aprender a descansar"
+        },
+        {
+          "line": 27247,
+          "anchor": "DIA 14 — 13h26 | Conselho Operacional"
+        },
+        {
+          "line": 27347,
+          "anchor": "V — O segredo da pólvora e das estrelas"
+        },
+        {
+          "line": 27349,
+          "anchor": "DIA 15 — 09h41 | Primeira sessão reservada do Arquivo das Duas Eras"
+        },
+        {
+          "line": 27493,
+          "anchor": "VI — A primeira canção da Legião"
+        },
+        {
+          "line": 27495,
+          "anchor": "DIA 17 — 18h12 | Oficina da Primeira Pedra"
+        },
+        {
+          "line": 27577,
+          "anchor": "VII — Sete dias para deixar de ser apenas um exército"
+        },
+        {
+          "line": 27699,
+          "anchor": "VIII — O primeiro avanço de combate que realmente assustou VARO"
+        },
+        {
+          "line": 27701,
+          "anchor": "DIA 18 — 07h04 | Campo de treinamento"
+        },
+        {
+          "line": 27879,
+          "anchor": "IX — A Festa da Primeira Pedra"
+        },
+        {
+          "line": 27881,
+          "anchor": "DIA 19 — 17h36 | Pátio externo dos Três Arcos"
+        },
+        {
+          "line": 27991,
+          "anchor": "X — Histórias de guerra, histórias de amor"
+        },
+        {
+          "line": 28099,
+          "anchor": "XI — A noite em que a Legião ganhou estrelas"
+        },
+        {
+          "line": 28243,
+          "anchor": "XII — A primeira noite de LUCAS e MIREN como algo mais"
+        },
+        {
+          "line": 28357,
+          "anchor": "XIII — O primeiro dia depois da festa"
+        },
+        {
+          "line": 28359,
+          "anchor": "DIA 20 — 08h12 | Conselho dos Fundadores"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 28,
+      "start": 28654,
+      "end": 29924,
+      "title": "Capítulo 28 — Os sete dias que mudaram a Legião",
+      "sections": [
+        {
+          "line": 28664,
+          "anchor": "I — O primeiro dia de uma nova era"
+        },
+        {
+          "line": 28666,
+          "anchor": "DIA 21 — 05h56 | Campo de treinamento"
+        },
+        {
+          "line": 28756,
+          "anchor": "II — A cidade cresce enquanto o comandante aprende"
+        },
+        {
+          "line": 28758,
+          "anchor": "DIA 21 — 11h08 | Três Arcos"
+        },
+        {
+          "line": 28844,
+          "anchor": "III — A primeira descoberta de LUCAS: o reservatório não era uma prisão"
+        },
+        {
+          "line": 28846,
+          "anchor": "DIA 22 — 09h31 | Laboratório da Primeira Pedra"
+        },
+        {
+          "line": 29058,
+          "anchor": "IV — Um território que começa a funcionar"
+        },
+        {
+          "line": 29092,
+          "anchor": "V — A primeira vitória da inteligência"
+        },
+        {
+          "line": 29094,
+          "anchor": "DIA 24 — 15h09 | Sala de mapas"
+        },
+        {
+          "line": 29174,
+          "anchor": "VI — MIREN e o peso de amar alguém extraordinário"
+        },
+        {
+          "line": 29176,
+          "anchor": "DIA 25 — 21h32 | Jardim das Pedras Brancas"
+        },
+        {
+          "line": 29340,
+          "anchor": "DIA 26 — 07h18 | Casa de MIREN"
+        },
+        {
+          "line": 29426,
+          "anchor": "VII — O primeiro combate do Arquiteto"
+        },
+        {
+          "line": 29428,
+          "anchor": "DIA 27 — 08h42 | Campo de treinamento da Legião"
+        },
+        {
+          "line": 29682,
+          "anchor": "VIII — O Conselho apresenta uma nova Legião"
+        },
+        {
+          "line": 29684,
+          "anchor": "DIA 27 — 19h16 | Três Arcos"
+        },
+        {
+          "line": 29851,
+          "anchor": "DIA 27 — 23h41 | Terraço dos Três Arcos"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 29,
+      "start": 29975,
+      "end": 31175,
+      "title": "Capítulo 29 — Os Trezentos que Valem por um Exército",
+      "sections": [
+        {
+          "line": 29985,
+          "anchor": "I — A pergunta que mudou o Conselho"
+        },
+        {
+          "line": 29987,
+          "anchor": "DIA 28 — 07h14 | Salão da Primeira Pedra"
+        },
+        {
+          "line": 30149,
+          "anchor": "II — As três frentes não param"
+        },
+        {
+          "line": 30187,
+          "anchor": "III — Quanto vale um legionário?"
+        },
+        {
+          "line": 30189,
+          "anchor": "DIA 30 — 14h32 | Campo de treinamento"
+        },
+        {
+          "line": 30267,
+          "anchor": "IV — A arena de pedra e os nomes que ninguém conhecia"
+        },
+        {
+          "line": 30269,
+          "anchor": "DIA 31 — 08h00 | Campo da Primeira Lança"
+        },
+        {
+          "line": 30451,
+          "anchor": "V — A final: o capitão contra a tempestade"
+        },
+        {
+          "line": 30453,
+          "anchor": "DIA 33 — 16h47 | Arena central"
+        },
+        {
+          "line": 30565,
+          "anchor": "VI — Os Dez da Primeira Lança"
+        },
+        {
+          "line": 30692,
+          "anchor": "VII — O dia em que LUCAS enfrentou um campeão"
+        },
+        {
+          "line": 30694,
+          "anchor": "DIA 34 — 08h36 | Arena da Primeira Lança"
+        },
+        {
+          "line": 30888,
+          "anchor": "VIII — Quanto valem trezentos legionários?"
+        },
+        {
+          "line": 30890,
+          "anchor": "DIA 34 — 13h06 | Conselho Estratégico"
+        },
+        {
+          "line": 30977,
+          "anchor": "IX — O primeiro reconhecimento do mundo exterior"
+        },
+        {
+          "line": 31025,
+          "anchor": "X — O orgulho de MIREN"
+        },
+        {
+          "line": 31027,
+          "anchor": "DIA 34 — 21h22 | Terraço dos Três Arcos"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 30,
+      "start": 31348,
+      "end": 32163,
+      "title": "CAPÍTULO 30",
+      "sections": [
+        {
+          "line": 31356,
+          "anchor": "I — O homem que perdeu para sua própria criação"
+        },
+        {
+          "line": 31456,
+          "anchor": "II — Uma ordem que surpreendeu VARO"
+        },
+        {
+          "line": 31458,
+          "anchor": "DIA 35 — 06h31 | Salão do Conselho Operacional"
+        },
+        {
+          "line": 31594,
+          "anchor": "III — O primeiro mundo que ainda não conhecemos"
+        },
+        {
+          "line": 31670,
+          "anchor": "IV — A pergunta que CREATION ainda não respondeu"
+        },
+        {
+          "line": 31718,
+          "anchor": "V — Antes da Assembleia: os homens por trás dos campeões"
+        },
+        {
+          "line": 31720,
+          "anchor": "DIA 35 • 09H14 • PÁTIO DA PRIMEIRA PEDRA"
+        },
+        {
+          "line": 31828,
+          "anchor": "VI — Um legionário que não desejava ser campeão"
+        },
+        {
+          "line": 31892,
+          "anchor": "VII — O homem que não sabia se era livre"
+        },
+        {
+          "line": 31954,
+          "anchor": "VIII — A abertura da Assembleia dos 300"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 31,
+      "start": 32164,
+      "end": 33092,
+      "title": "CAPÍTULO 31 — Os Trezentos Filhos do Amanhã",
+      "sections": [
+        {
+          "line": 32166,
+          "anchor": "DIA 35 • 10h38  TRÊS ARCOS (A ASCENSÃO DOS 300)"
+        },
+        {
+          "line": 32176,
+          "anchor": "I — A resposta do Criador"
+        },
+        {
+          "line": 32356,
+          "anchor": "II — O silêncio de trezentas vidas"
+        },
+        {
+          "line": 32440,
+          "anchor": "III — O legionário que desejava uma vida diferente"
+        },
+        {
+          "line": 32544,
+          "anchor": "IV — A primeira discordância"
+        },
+        {
+          "line": 32612,
+          "anchor": "V — A voz que veio de fora da Legião"
+        },
+        {
+          "line": 32676,
+          "anchor": "VI — A reação de VARO"
+        },
+        {
+          "line": 32746,
+          "anchor": "VII — O Vínculo que ninguém conseguiu ordenar"
+        },
+        {
+          "line": 32846,
+          "anchor": "VIII — A primeira decisão que pertence aos trezentos"
+        },
+        {
+          "line": 32912,
+          "anchor": "Dia 35 • Três Arcos"
+        },
+        {
+          "line": 32931,
+          "anchor": "IX — A pergunta que ninguém ousou fazer antes"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 32,
+      "start": 33093,
+      "end": 33985,
+      "title": "Capítulo 32 — O Sangue e a Promessa",
+      "sections": [
+        {
+          "line": 33095,
+          "anchor": "Dia 35 • 11h34  Três Arcos, Vale de Arvendell"
+        },
+        {
+          "line": 33103,
+          "anchor": "I — O Criador também precisa de uma família"
+        },
+        {
+          "line": 33191,
+          "anchor": "II — A pergunta que nenhum rei havia feito"
+        },
+        {
+          "line": 33295,
+          "anchor": "III — Dez campeões. Dez maneiras de compreender a força."
+        },
+        {
+          "line": 33453,
+          "anchor": "IV — Um futuro que ultrapassa a espada"
+        },
+        {
+          "line": 33529,
+          "anchor": "V — A pergunta de TAREK não foi esquecida"
+        },
+        {
+          "line": 33603,
+          "anchor": "VI — O primeiro sinal da Ascensão"
+        },
+        {
+          "line": 33687,
+          "anchor": "VII — O primeiro pedido de um pai"
+        },
+        {
+          "line": 33763,
+          "anchor": "VIII — A assembleia começa a produzir decisões"
+        },
+        {
+          "line": 33794,
+          "anchor": "IX — Depois do discurso"
+        },
+        {
+          "line": 33890,
+          "anchor": "X — A pergunta de MIREN"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 33,
+      "start": 33986,
+      "end": 35292,
+      "title": "Capítulo 33 — O Coração e a Mulher que Escolheu Ficar",
+      "sections": [
+        {
+          "line": 33996,
+          "anchor": "I — Um fundador que aprende a se afastar"
+        },
+        {
+          "line": 33998,
+          "anchor": "Dia 35 — 14h18 | Salão do Conselho"
+        },
+        {
+          "line": 34090,
+          "anchor": "II — A mulher que ele não queria apenas ao seu lado"
+        },
+        {
+          "line": 34304,
+          "anchor": "III — Um dia para descobrir quem eram antes do mundo exigir tudo"
+        },
+        {
+          "line": 34394,
+          "anchor": "IV — O Sistema possui missões. Mas quem estabeleceu os objetivos?"
+        },
+        {
+          "line": 34396,
+          "anchor": "Dia 36 — 08h17 | Casa de MIREN"
+        },
+        {
+          "line": 34568,
+          "anchor": "V — O caminho que não aparecia nos mapas"
+        },
+        {
+          "line": 34724,
+          "anchor": "VI — O primeiro segredo verdadeiro do Coração"
+        },
+        {
+          "line": 34880,
+          "anchor": "VII — Uma fundadora que não precisa de uma coroa"
+        },
+        {
+          "line": 34882,
+          "anchor": "Dia 36 — 15h38 | Jardim das Pedras Brancas"
+        },
+        {
+          "line": 35028,
+          "anchor": "VIII — Os relatórios que chegaram sem interromper o dia"
+        },
+        {
+          "line": 35030,
+          "anchor": "Dia 36 — 18h26 | Salão do Conselho"
+        },
+        {
+          "line": 35040,
+          "anchor": "DIA 36 • ATUALIZAÇÃO OPERACIONAL"
+        },
+        {
+          "line": 35105,
+          "anchor": "IX — As missões do Sistema"
+        },
+        {
+          "line": 35171,
+          "anchor": "X — Um futuro que os dois poderão escolher"
+        },
+        {
+          "line": 35173,
+          "anchor": "Dia 36 — 22h14 | Casa de MIREN"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 34,
+      "start": 35339,
+      "end": 36591,
+      "title": "Capítulo 34 — A Terra Onde Nascerá uma Nação",
+      "sections": [
+        {
+          "line": 35353,
+          "anchor": "I — A ordem que iniciou a fundação"
+        },
+        {
+          "line": 35355,
+          "anchor": "DIA 37 — 06h18 | Salão do Conselho"
+        },
+        {
+          "line": 35459,
+          "anchor": "II — O projeto da primeira capital"
+        },
+        {
+          "line": 35461,
+          "anchor": "DIA 37 — 14h40 | Oficina da Primeira Pedra"
+        },
+        {
+          "line": 35520,
+          "anchor": "III — O coração não estava adormecido. Estava isolado."
+        },
+        {
+          "line": 35522,
+          "anchor": "DIA 38 — 09h12 | Galeria inferior dos Três Arcos"
+        },
+        {
+          "line": 35644,
+          "anchor": "IV — A primeira memória dos Arquitetos"
+        },
+        {
+          "line": 35646,
+          "anchor": "DIA 39 — 11h04 | Câmara de Observação"
+        },
+        {
+          "line": 35754,
+          "anchor": "V — O dia em que Thalor precisou levar a Legião a sério"
+        },
+        {
+          "line": 35756,
+          "anchor": "DIA 40 — 13h36 | Câmara Administrativa de Halvern"
+        },
+        {
+          "line": 35890,
+          "anchor": "VI — A vitória que não precisou de uma espada"
+        },
+        {
+          "line": 35892,
+          "anchor": "DIA 41 — 08h22 | Estrada de Halvern"
+        },
+        {
+          "line": 35984,
+          "anchor": "VII — Os primeiros cidadãos que escolheram chegar"
+        },
+        {
+          "line": 35986,
+          "anchor": "DIA 42 — 10h08 | Três Arcos"
+        },
+        {
+          "line": 36066,
+          "anchor": "VIII — A primeira pedra da arena"
+        },
+        {
+          "line": 36068,
+          "anchor": "DIA 42 — 16h19 | Terreno em avaliação"
+        },
+        {
+          "line": 36149,
+          "anchor": "IX — O primeiro passo para descobrir a verdadeira escala do mundo"
+        },
+        {
+          "line": 36151,
+          "anchor": "DIA 43 — 07h44 | Sala de Mapas"
+        },
+        {
+          "line": 36221,
+          "anchor": "X — A descoberta que aproximou LUCAS do domínio de CREATION"
+        },
+        {
+          "line": 36223,
+          "anchor": "DIA 43 — 11h26 | Oficina de Matrizes"
+        },
+        {
+          "line": 36337,
+          "anchor": "XI — O primeiro documento de uma nação que ainda não existe"
+        },
+        {
+          "line": 36339,
+          "anchor": "DIA 43 — 18h09 | Conselho de Três Arcos"
+        },
+        {
+          "line": 36439,
+          "anchor": "XII — MIREN, o fundador e a promessa de uma vida"
+        },
+        {
+          "line": 36441,
+          "anchor": "DIA 43 — 22h17 | Terraço dos Três Arcos"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 35,
+      "start": 36642,
+      "end": 37806,
+      "title": "Capítulo 35 — Antes de Erguer a Coroa",
+      "sections": [
+        {
+          "line": 36652,
+          "anchor": "I — O dia em que o Criador interrompeu o próprio sonho"
+        },
+        {
+          "line": 36654,
+          "anchor": "Dia 43 — 18h42 | Salão do Conselho"
+        },
+        {
+          "line": 36750,
+          "anchor": "II — As verdades que ninguém queria esconder"
+        },
+        {
+          "line": 36972,
+          "anchor": "III — O parecer de ASTRA"
+        },
+        {
+          "line": 37058,
+          "anchor": "IV — A batalha que a Legião precisava perder"
+        },
+        {
+          "line": 37060,
+          "anchor": "DIA 46 — 08h15 | Estrada entre Arvendell e Três Arcos"
+        },
+        {
+          "line": 37196,
+          "anchor": "DIA 46 — 20h03"
+        },
+        {
+          "line": 37226,
+          "anchor": "V — O segundo exercício"
+        },
+        {
+          "line": 37228,
+          "anchor": "DIA 49 — 09h28 | Três Arcos"
+        },
+        {
+          "line": 37314,
+          "anchor": "VI — A cidade que deixou de existir apenas no papel"
+        },
+        {
+          "line": 37362,
+          "anchor": "VII — A arena ganha sua primeira forma"
+        },
+        {
+          "line": 37364,
+          "anchor": "DIA 50 — 15h16 | Terreno autorizado para obras preliminares"
+        },
+        {
+          "line": 37434,
+          "anchor": "VIII — A última descoberta antes da fundação"
+        },
+        {
+          "line": 37436,
+          "anchor": "DIA 51 — 10h42 | Câmara de Observação"
+        },
+        {
+          "line": 37522,
+          "anchor": "IX — MIREN e o homem que teme perder tudo"
+        },
+        {
+          "line": 37524,
+          "anchor": "DIA 51 — 21h18 | Jardim das Pedras Brancas"
+        },
+        {
+          "line": 37612,
+          "anchor": "X — A proposta que mudou o destino de Três Arcos"
+        },
+        {
+          "line": 37614,
+          "anchor": "DIA 52 — 16h03 | Salão do Conselho"
+        },
+        {
+          "line": 37769,
+          "anchor": "XI — O momento que exige uma escolha"
+        },
+        {
+          "line": 37771,
+          "anchor": "DIA 52 — 19h28 | Salão do Conselho"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 36,
+      "start": 37869,
+      "end": 39124,
+      "title": "Capítulo 36 — A Cidade que Nenhum Rei Possuirá",
+      "sections": [
+        {
+          "line": 37871,
+          "anchor": "DIA 52 • 19h28  TRÊS ARCOS"
+        },
+        {
+          "line": 37883,
+          "anchor": "I — Não construiremos uma nação para depois entregá-la"
+        },
+        {
+          "line": 37953,
+          "anchor": "II — O que realmente faria Thalor reconhecer uma Cidade Livre?"
+        },
+        {
+          "line": 38035,
+          "anchor": "III — A descoberta que não deveria existir"
+        },
+        {
+          "line": 38037,
+          "anchor": "DIA 53 — 08h16 | Arquivo de Halvern"
+        },
+        {
+          "line": 38129,
+          "anchor": "IV — A vantagem que nenhuma espada poderia conquistar"
+        },
+        {
+          "line": 38131,
+          "anchor": "DIA 53 — 16h40 | Salão do Conselho"
+        },
+        {
+          "line": 38213,
+          "anchor": "V — Uma proposta que ninguém poderia chamar de submissão"
+        },
+        {
+          "line": 38215,
+          "anchor": "DIA 54 — 09h20 | Câmara Administrativa de Halvern"
+        },
+        {
+          "line": 38313,
+          "anchor": "VI — O preço que não seria pago em sangue"
+        },
+        {
+          "line": 38387,
+          "anchor": "VII — O que os moradores realmente escolheram"
+        },
+        {
+          "line": 38389,
+          "anchor": "DIA 55 — 10h04 | Três Arcos"
+        },
+        {
+          "line": 38483,
+          "anchor": "VIII — O último obstáculo de AUREN"
+        },
+        {
+          "line": 38485,
+          "anchor": "DIA 56 — 08h40 | Câmara de Halvern"
+        },
+        {
+          "line": 38569,
+          "anchor": "IX — O presente do mundo"
+        },
+        {
+          "line": 38571,
+          "anchor": "DIA 56 — 15h07 | Câmara das Três Passagens"
+        },
+        {
+          "line": 38641,
+          "anchor": "X — O reconhecimento"
+        },
+        {
+          "line": 38719,
+          "anchor": "DIA 56 • RECONHECIMENTO DE THALOR"
+        },
+        {
+          "line": 38746,
+          "anchor": "XI — Pela primeira vez, eles tinham um país"
+        },
+        {
+          "line": 38748,
+          "anchor": "DIA 56 — 19h32 | Três Arcos"
+        },
+        {
+          "line": 38814,
+          "anchor": "DIA 56 — A CIDADE LIVRE"
+        },
+        {
+          "line": 38868,
+          "anchor": "XII — O Sistema reconhece uma conquista"
+        },
+        {
+          "line": 38932,
+          "anchor": "XIII — A promessa que um dia será cobrada"
+        },
+        {
+          "line": 38934,
+          "anchor": "DIA 57 — 08h11 | Arquivo da Cidade Livre"
+        },
+        {
+          "line": 39010,
+          "anchor": "XIV — MIREN e a primeira noite de liberdade"
+        },
+        {
+          "line": 39012,
+          "anchor": "DIA 57 — 21h09 | Terraço dos Três Arcos"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 37,
+      "start": 39255,
+      "end": 39946,
+      "title": "Capítulo 37 — Operação Grande Horizonte",
+      "sections": [
+        {
+          "line": 39267,
+          "anchor": "I — A Assembleia dos 300"
+        },
+        {
+          "line": 39269,
+          "anchor": "DIA 57 — 08h00 | Pátio da Primeira Pedra"
+        },
+        {
+          "line": 39427,
+          "anchor": "II — O Projeto dos Trezentos Destinos"
+        },
+        {
+          "line": 39429,
+          "anchor": "DIA 61 — 09h17 | Academia dos Fundadores"
+        },
+        {
+          "line": 39527,
+          "anchor": "III — Os primeiros habitantes que não vieram lutar"
+        },
+        {
+          "line": 39529,
+          "anchor": "DIA 65 — 11h08 | Portões da Cidade Livre"
+        },
+        {
+          "line": 39581,
+          "anchor": "IV — O mundo não esperou pela Legião"
+        },
+        {
+          "line": 39583,
+          "anchor": "DIA 68 — 16h42 | Sala de Mapas"
+        },
+        {
+          "line": 39663,
+          "anchor": "V — A primeira dívida da liberdade"
+        },
+        {
+          "line": 39665,
+          "anchor": "DIA 71 — 05h23 | Estrada Oriental"
+        },
+        {
+          "line": 39811,
+          "anchor": "VI — O poder dos trezentos aparece onde LUCAS não está"
+        },
+        {
+          "line": 39813,
+          "anchor": "DIA 74 — 17h06 | Conselho da Cidade Livre"
+        },
+        {
+          "line": 39891,
+          "anchor": "VII — A carta que veio do mar"
+        },
+        {
+          "line": 39893,
+          "anchor": "DIA 75 — 09h41 | Sala do Atlas"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    },
+    {
+      "chapter": 38,
+      "start": 39947,
+      "end": 40845,
+      "title": "Capítulo 38 — O Último Dia da Primeira Era",
+      "sections": [
+        {
+          "line": 39959,
+          "anchor": "I — A cidade deixa de ser um acampamento"
+        },
+        {
+          "line": 39961,
+          "anchor": "DIA 79 — 07h10 | Três Arcos"
+        },
+        {
+          "line": 40031,
+          "anchor": "II — O primeiro passo do Coliseu"
+        },
+        {
+          "line": 40033,
+          "anchor": "DIA 83 — 16h24 | Arena da Primeira Lança"
+        },
+        {
+          "line": 40107,
+          "anchor": "III — A noite em que o abastecimento foi colocado à prova"
+        },
+        {
+          "line": 40109,
+          "anchor": "DIA 85 — 23h18 | Depósito Central"
+        },
+        {
+          "line": 40171,
+          "anchor": "IV — O último encontro dos fundadores"
+        },
+        {
+          "line": 40173,
+          "anchor": "DIA 88 — 18h37 | Casa dos Primeiros Caminhos"
+        },
+        {
+          "line": 40261,
+          "anchor": "V — O diagnóstico de MIREN"
+        },
+        {
+          "line": 40263,
+          "anchor": "DIA 89 — 09h11 | Câmara de Observação"
+        },
+        {
+          "line": 40317,
+          "anchor": "VI — A missão que nasceu no primeiro dia"
+        },
+        {
+          "line": 40319,
+          "anchor": "DIA 89 — 18h06 | Conselho da Cidade Livre"
+        },
+        {
+          "line": 40416,
+          "anchor": "VII — O verdadeiro potencial de CREATION"
+        },
+        {
+          "line": 40508,
+          "anchor": "VIII — A reviravolta dos trezentos"
+        },
+        {
+          "line": 40592,
+          "anchor": "IX — O último pôr do sol do Livro I"
+        },
+        {
+          "line": 40594,
+          "anchor": "DIA 90 — 18h42 | Terraço da Cidade Livre"
+        },
+        {
+          "line": 40694,
+          "anchor": "X — Em algum lugar além do mar..."
+        },
+        {
+          "line": 40696,
+          "anchor": "DIA 90 — NOITE | REGIÃO MARÍTIMA DE VEYRA"
+        }
+      ],
+      "status": "DOCUMENTARY_INDEX_NOT_SCENE_CERTIFICATION"
+    }
+  ],
+  "graph_edges": [
+    {
+      "id": "LI-E1",
+      "from": "varo",
+      "to": "legiao",
+      "relation": "commands",
+      "line": 1537,
+      "anchor": "VARO - Comandante militar",
+      "context": [
+        "O conselho provisório",
+        "",
+        "VARO - Comandante militar",
+        "",
+        "Responsável pela Legião, segurança, operações militares e logística inicial. Seu julgamento é conservador quando vidas estão em risco.",
+        ""
+      ],
+      "status": "EDITORIAL_CANDIDATE",
+      "scope": "BOOK_I_HISTORICAL",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-E2",
+      "from": "kael",
+      "to": "lucas",
+      "relation": "represents",
+      "line": 1816,
+      "anchor": "— KAEL. Represento nosso comandante.",
+      "context": [
+        "KAEL inclina a cabeça.",
+        "",
+        "— KAEL. Represento nosso comandante.",
+        "",
+        "EDRAN examina a armadura negra do diplomata.",
+        ""
+      ],
+      "status": "EDITORIAL_CANDIDATE",
+      "scope": "BOOK_I_HISTORICAL",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-E3",
+      "from": "edran",
+      "to": "thalor",
+      "relation": "serves",
+      "line": 1812,
+      "anchor": "— Sou EDRAN VAEL, tenente da Vigia de Halvern, a serviço do Marquesado de Thalor.",
+      "context": [
+        "No tecido azul preso à sua lança, brilha a torre dourada.",
+        "",
+        "— Sou EDRAN VAEL, tenente da Vigia de Halvern, a serviço do Marquesado de Thalor.",
+        "",
+        "KAEL inclina a cabeça.",
+        ""
+      ],
+      "status": "EDITORIAL_CANDIDATE",
+      "scope": "BOOK_I_HISTORICAL",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-E4",
+      "from": "chr-durghan-uzgor",
+      "to": "org-uzgor",
+      "relation": "war_chief",
+      "line": 2296,
+      "anchor": "— Meu povo me chama de DURGHAN. Sou o chefe de guerra dos Uzgor.",
+      "context": [
+        "O orc abre a boca, exibindo as presas amareladas.",
+        "",
+        "— Meu povo me chama de DURGHAN. Sou o chefe de guerra dos Uzgor.",
+        "",
+        "— Então, DURGHAN, vou lhe fazer uma proposta.",
+        ""
+      ],
+      "status": "EDITORIAL_CANDIDATE",
+      "scope": "BOOK_I_HISTORICAL",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-E5",
+      "from": "legiao",
+      "to": "chr-durghan-uzgor",
+      "relation": "truce_release",
+      "line": 4181,
+      "anchor": "KAEL anota que o chefe Uzgor está livre sob trégua, mas ainda não é subordinado da Legião. DURGHAN solicita passagem segura para procurar os sobreviventes de seu clã, sem recuperar suas armas de guerra por enquanto.",
+      "context": [
+        "Consequência imediata",
+        "",
+        "KAEL anota que o chefe Uzgor está livre sob trégua, mas ainda não é subordinado da Legião. DURGHAN solicita passagem segura para procurar os sobreviventes de seu clã, sem recuperar suas armas de guerra por enquanto.",
+        "",
+        "VARO recomenda uma escolta até o limite do acampamento, tanto para proteger DURGHAN de possíveis represálias quanto para proteger seus legionários de qualquer provocação.",
+        ""
+      ],
+      "status": "EDITORIAL_CANDIDATE",
+      "scope": "BOOK_I_HISTORICAL",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-E6",
+      "from": "lucas",
+      "to": "chr-elyan-legiao",
+      "relation": "rescue",
+      "line": 5699,
+      "anchor": "— Viemos buscar você.",
+      "context": [
+        "Você puxa a cobertura.",
+        "",
+        "— Viemos buscar você.",
+        "",
+        "Um soldado da Unidade Véu rompe as amarras.",
+        ""
+      ],
+      "status": "EDITORIAL_CANDIDATE",
+      "scope": "BOOK_I_HISTORICAL",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-E7",
+      "from": "candidate:ina-book-i",
+      "to": "candidate:aqueduct",
+      "relation": "water_need",
+      "line": 13355,
+      "anchor": "— Se conseguir, minha mãe vai parar de subir a escada tantas vezes.",
+      "context": [
+        "Ela levantou os recipientes.",
+        "",
+        "— Se conseguir, minha mãe vai parar de subir a escada tantas vezes.",
+        "",
+        "Então saiu correndo.",
+        ""
+      ],
+      "status": "EDITORIAL_CANDIDATE",
+      "scope": "BOOK_I_HISTORICAL",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-E8",
+      "from": "brannik",
+      "to": "candidate:aqueduct",
+      "relation": "repair_supervision",
+      "line": 13423,
+      "anchor": "BRANNIK orientou o isolamento do trecho.",
+      "context": [
+        "19h06 | Canal inferior",
+        "",
+        "BRANNIK orientou o isolamento do trecho.",
+        "",
+        "OREN ajudou a preparar ferramentas e suportes.",
+        ""
+      ],
+      "status": "EDITORIAL_CANDIDATE",
+      "scope": "BOOK_I_HISTORICAL",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-E9",
+      "from": "candidate:esmara",
+      "to": "candidate:veldon",
+      "relation": "origin",
+      "line": 21217,
+      "anchor": "Viera da aldeia de VELDON depois de receber uma proposta de avaliação agrícola remunerada.",
+      "context": [
+        "Chamava-se ESMARA.",
+        "",
+        "Viera da aldeia de VELDON depois de receber uma proposta de avaliação agrícola remunerada.",
+        "",
+        "TAREK já a conhecia.",
+        ""
+      ],
+      "status": "EDITORIAL_CANDIDATE",
+      "scope": "BOOK_I_HISTORICAL",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-E10",
+      "from": "candidate:neria-valmont",
+      "to": "halvern-region",
+      "relation": "civil_engineer",
+      "line": 21861,
+      "anchor": "— DAMA SELENE autorizou uma vistoria técnica preliminar das estruturas dos Três Arcos. A pessoa designada é NÉRIA VALMONT, engenheira de obras civis vinculada à administração de Halvern.",
+      "context": [
+        "LYSA respondeu:",
+        "",
+        "— DAMA SELENE autorizou uma vistoria técnica preliminar das estruturas dos Três Arcos. A pessoa designada é NÉRIA VALMONT, engenheira de obras civis vinculada à administração de Halvern.",
+        "",
+        "Você se sentou.",
+        ""
+      ],
+      "status": "EDITORIAL_CANDIDATE",
+      "scope": "BOOK_I_HISTORICAL",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-E11",
+      "from": "candidate:selene-arvost",
+      "to": "thalor",
+      "relation": "delegated_administration",
+      "line": 14715,
+      "anchor": "A primeira era DAMA SELENE ARVOST, administradora territorial delegada pelo Marquesado para tratar de concessões provisórias, obras de recuperação e disputas administrativas.",
+      "context": [
+        "Apresentou então os demais participantes.",
+        "",
+        "A primeira era DAMA SELENE ARVOST, administradora territorial delegada pelo Marquesado para tratar de concessões provisórias, obras de recuperação e disputas administrativas.",
+        "",
+        "Uma mulher de aproximadamente quarenta anos, cabelos escuros cuidadosamente presos, roupas sóbrias e expressão difícil de interpretar.",
+        ""
+      ],
+      "status": "EDITORIAL_CANDIDATE",
+      "scope": "BOOK_I_HISTORICAL",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-E12",
+      "from": "candidate:auren-velcast",
+      "to": "candidate:northern-trade-routes",
+      "relation": "commercial_interests",
+      "line": 14719,
+      "anchor": "O segundo era LORD AUREN VELCAST, representante de interesses comerciais relacionados às estradas e entrepostos do norte.",
+      "context": [
+        "Uma mulher de aproximadamente quarenta anos, cabelos escuros cuidadosamente presos, roupas sóbrias e expressão difícil de interpretar.",
+        "",
+        "O segundo era LORD AUREN VELCAST, representante de interesses comerciais relacionados às estradas e entrepostos do norte.",
+        "",
+        "Mais jovem do que SELENE, vestia tecidos caros, utilizava anéis de metal polido e possuía o olhar atento de alguém habituado a calcular vantagens.",
+        ""
+      ],
+      "status": "EDITORIAL_CANDIDATE",
+      "scope": "BOOK_I_HISTORICAL",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-E13",
+      "from": "chr-grazha-uzgor",
+      "to": "candidate:razhka",
+      "relation": "reports_cultivation",
+      "line": 20312,
+      "anchor": "— Uma raiz cultivada nas encostas rochosas. Cresce onde muitos grãos não prosperam. Nosso povo a utiliza quando precisa permanecer nas montanhas.",
+      "context": [
+        "— O quê?",
+        "",
+        "— Uma raiz cultivada nas encostas rochosas. Cresce onde muitos grãos não prosperam. Nosso povo a utiliza quando precisa permanecer nas montanhas.",
+        "",
+        "Seu interesse aumentou.",
+        ""
+      ],
+      "status": "EDITORIAL_CANDIDATE",
+      "scope": "BOOK_I_HISTORICAL",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-E14",
+      "from": "brannik",
+      "to": "legiao",
+      "relation": "shares_work_songs",
+      "line": 27511,
+      "anchor": "BRANNIK, por sua vez, conhecia canções de trabalho de seu povo.",
+      "context": [
+        "KAEL suspeitava que o capitão apenas não quisesse.",
+        "",
+        "BRANNIK, por sua vez, conhecia canções de trabalho de seu povo.",
+        "",
+        "Quando começou a cantar uma delas, batendo uma ferramenta contra uma placa de metal para marcar o ritmo, vários moradores se aproximaram.",
+        ""
+      ],
+      "status": "EDITORIAL_CANDIDATE",
+      "scope": "BOOK_I_HISTORICAL",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-E15",
+      "from": "legiao",
+      "to": "candidate:festa-primeira-pedra",
+      "relation": "celebration",
+      "line": 27919,
+      "anchor": "O evento havia sido aprovado pelos representantes dos moradores, com participação voluntária. Os alimentos foram separados do orçamento comunitário e de contribuições destinadas à celebração, sem consumir as reservas essenciais dos feridos e das patrulhas.",
+      "context": [
+        "LUCAS começou a rir.",
+        "",
+        "O evento havia sido aprovado pelos representantes dos moradores, com participação voluntária. Os alimentos foram separados do orçamento comunitário e de contribuições destinadas à celebração, sem consumir as reservas essenciais dos feridos e das patrulhas.",
+        "",
+        "Nem todos os trezentos legionários puderam participar presencialmente.",
+        ""
+      ],
+      "status": "EDITORIAL_CANDIDATE",
+      "scope": "BOOK_I_HISTORICAL",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-E16",
+      "from": "candidate:selene-arvost",
+      "to": "tres-arcos",
+      "relation": "conditional_concession",
+      "line": 28818,
+      "anchor": "— Autorizarei a concessão experimental da área externa delimitada, por noventa dias, sujeita às inspeções e às condições registradas. Poderão ampliar a presença operacional para cento e vinte integrantes, desde que a capacidade de abrigo, saneamento e abastecimento seja confirmada antes de cada transferência.",
+      "context": [
+        "SELENE continuou:",
+        "",
+        "— Autorizarei a concessão experimental da área externa delimitada, por noventa dias, sujeita às inspeções e às condições registradas. Poderão ampliar a presença operacional para cento e vinte integrantes, desde que a capacidade de abrigo, saneamento e abastecimento seja confirmada antes de cada transferência.",
+        "",
+        "KAEL não sorriu imediatamente.",
+        ""
+      ],
+      "status": "EDITORIAL_CANDIDATE",
+      "scope": "BOOK_I_HISTORICAL",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-E17",
+      "from": "thalor",
+      "to": "tres-arcos",
+      "relation": "recognizes",
+      "line": 38661,
+      "anchor": "— Thalor reconhece sua personalidade política distinta e sua capacidade de celebrar acordos próprios, sem transformá-la em vassala de um senhor local.",
+      "context": [
+        "LYSA apertou os dedos sobre o caderno.",
+        "",
+        "— Thalor reconhece sua personalidade política distinta e sua capacidade de celebrar acordos próprios, sem transformá-la em vassala de um senhor local.",
+        "",
+        "O magistrado fez uma pausa.",
+        ""
+      ],
+      "status": "EDITORIAL_CANDIDATE",
+      "scope": "BOOK_I_HISTORICAL",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-E18",
+      "from": "candidate:tarek-book-i",
+      "to": "tres-arcos",
+      "relation": "signs_as_resident_representative",
+      "line": 38707,
+      "anchor": "A assinatura de LUCAS foi aposta como representante fundador da Legião, ao lado da assinatura de TAREK como representante dos moradores e das autoridades competentes que formalizavam o reconhecimento.",
+      "context": [
+        "Sem vender o destino da Legião.",
+        "",
+        "A assinatura de LUCAS foi aposta como representante fundador da Legião, ao lado da assinatura de TAREK como representante dos moradores e das autoridades competentes que formalizavam o reconhecimento.",
+        "",
+        "A constituição definitiva permaneceria para deliberação posterior, inclusive nas sessões ainda pendentes da Assembleia dos 300.",
+        ""
+      ],
+      "status": "EDITORIAL_CANDIDATE",
+      "scope": "BOOK_I_HISTORICAL",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-E19",
+      "from": "maelis",
+      "to": "tres-arcos",
+      "relation": "health_contract",
+      "line": 39551,
+      "anchor": "Após a avaliação de suas referências e de sua experiência, MAELIS aceitou um contrato inicial para organizar atendimento básico, triagem, higiene clínica e encaminhamentos, respeitando os limites de seus conhecimentos e os recursos disponíveis.",
+      "context": [
+        "A resposta agradou a LYSA.",
+        "",
+        "Após a avaliação de suas referências e de sua experiência, MAELIS aceitou um contrato inicial para organizar atendimento básico, triagem, higiene clínica e encaminhamentos, respeitando os limites de seus conhecimentos e os recursos disponíveis.",
+        "",
+        "Não havia hospital.",
+        ""
+      ],
+      "status": "EDITORIAL_CANDIDATE",
+      "scope": "BOOK_I_HISTORICAL",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-E20",
+      "from": "veyra",
+      "to": "tres-arcos",
+      "relation": "commercial_map_offer",
+      "line": 39903,
+      "anchor": "Era uma oferta comercial de acesso a mapas mais completos, mediante pagamento e identificação dos futuros exploradores.",
+      "context": [
+        "Não era uma proposta de aliança.",
+        "",
+        "Era uma oferta comercial de acesso a mapas mais completos, mediante pagamento e identificação dos futuros exploradores.",
+        "",
+        "Mas havia algo que chamou a atenção de MIREN quando examinou uma cópia do documento.",
+        ""
+      ],
+      "status": "EDITORIAL_CANDIDATE",
+      "scope": "BOOK_I_HISTORICAL",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-E21",
+      "from": "genese",
+      "to": "candidate:genese-horizonte",
+      "relation": "historical_potential",
+      "line": 40438,
+      "anchor": "CREATION — GÊNESE DE HORIZONTE",
+      "context": [
+        "CAMINHO SUPERIOR IDENTIFICADO",
+        "",
+        "CREATION — GÊNESE DE HORIZONTE",
+        "",
+        "Uma manifestação de escala civilizacional tornou-se teoricamente acessível ao portador.",
+        ""
+      ],
+      "status": "EDITORIAL_CANDIDATE",
+      "scope": "BOOK_I_HISTORICAL",
+      "canon_promotion": false
+    },
+    {
+      "id": "LI-E22",
+      "from": "lucas",
+      "to": "miren",
+      "relation": "relationship_deepens",
+      "line": 40805,
+      "anchor": "Relação entre LUCAS e MIREN aprofundada; legionários desenvolvem identidades e futuros próprios",
+      "context": [
+        "Núcleo selado; isolamento, rede e âncoras exteriores parcialmente compreendidos",
+        "Família e vínculos",
+        "Relação entre LUCAS e MIREN aprofundada; legionários desenvolvem identidades e futuros próprios",
+        "",
+        "Livro I — Concluído",
+        ""
+      ],
+      "status": "EDITORIAL_CANDIDATE",
+      "scope": "BOOK_I_HISTORICAL",
+      "canon_promotion": false
+    }
+  ],
+  "ledger_independent_structural_review": [
+    {
+      "original_id": 1,
+      "line": 17,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 2,
+      "line": 227,
+      "exact": true,
+      "prior_verdict": "SUMMARY_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 3,
+      "line": 227,
+      "exact": true,
+      "prior_verdict": "NOT_ATTRIBUTED",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 4,
+      "line": 227,
+      "exact": true,
+      "prior_verdict": "SUMMARY_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 5,
+      "line": 301,
+      "exact": true,
+      "prior_verdict": "NOT_ATTRIBUTED",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 6,
+      "line": 301,
+      "exact": true,
+      "prior_verdict": "SUPPORTED_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 7,
+      "line": 555,
+      "exact": true,
+      "prior_verdict": "HYPOTHESIS",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 8,
+      "line": 555,
+      "exact": true,
+      "prior_verdict": "HYPOTHESIS",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 9,
+      "line": 570,
+      "exact": true,
+      "prior_verdict": "NOT_ATTRIBUTED",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 10,
+      "line": 619,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 11,
+      "line": 771,
+      "exact": true,
+      "prior_verdict": "PROPOSAL_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 12,
+      "line": 1048,
+      "exact": true,
+      "prior_verdict": "SUPPORTED_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 13,
+      "line": 1183,
+      "exact": true,
+      "prior_verdict": "HEADING_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 14,
+      "line": 1187,
+      "exact": true,
+      "prior_verdict": "SUMMARY_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 15,
+      "line": 1201,
+      "exact": true,
+      "prior_verdict": "SUPPORTED_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 16,
+      "line": 1239,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 17,
+      "line": 1323,
+      "exact": true,
+      "prior_verdict": "NOT_ATTRIBUTED",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 18,
+      "line": 1459,
+      "exact": true,
+      "prior_verdict": "NOT_ATTRIBUTED",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 19,
+      "line": 1489,
+      "exact": true,
+      "prior_verdict": "SUMMARY_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 20,
+      "line": 1537,
+      "exact": true,
+      "prior_verdict": "SUPPORTED_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 21,
+      "line": 1569,
+      "exact": true,
+      "prior_verdict": "NOT_ATTRIBUTED",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 22,
+      "line": 1694,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 23,
+      "line": 1736,
+      "exact": true,
+      "prior_verdict": "ORDER_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 24,
+      "line": 1744,
+      "exact": true,
+      "prior_verdict": "NOT_ATTRIBUTED",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 25,
+      "line": 1816,
+      "exact": true,
+      "prior_verdict": "SUPPORTED_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 26,
+      "line": 1818,
+      "exact": true,
+      "prior_verdict": "NOT_ATTRIBUTED",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 27,
+      "line": 1834,
+      "exact": true,
+      "prior_verdict": "SUPPORTED_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 28,
+      "line": 1856,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 29,
+      "line": 1856,
+      "exact": true,
+      "prior_verdict": "NOT_ATTRIBUTED",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 30,
+      "line": 1856,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 31,
+      "line": 1856,
+      "exact": true,
+      "prior_verdict": "NOT_ATTRIBUTED",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 32,
+      "line": 1870,
+      "exact": true,
+      "prior_verdict": "NOT_ATTRIBUTED",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 33,
+      "line": 1878,
+      "exact": true,
+      "prior_verdict": "SUPPORTED_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 34,
+      "line": 1894,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 35,
+      "line": 1894,
+      "exact": true,
+      "prior_verdict": "NOT_ATTRIBUTED",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 36,
+      "line": 1894,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 37,
+      "line": 1904,
+      "exact": true,
+      "prior_verdict": "HYPOTHESIS",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 38,
+      "line": 2058,
+      "exact": true,
+      "prior_verdict": "HYPOTHESIS",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 39,
+      "line": 2066,
+      "exact": true,
+      "prior_verdict": "NOT_ATTRIBUTED",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 40,
+      "line": 2154,
+      "exact": true,
+      "prior_verdict": "NOT_ATTRIBUTED",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 41,
+      "line": 2156,
+      "exact": true,
+      "prior_verdict": "NOT_ATTRIBUTED",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 42,
+      "line": 2190,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 43,
+      "line": 2190,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 44,
+      "line": 2190,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 45,
+      "line": 2190,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 46,
+      "line": 2190,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 47,
+      "line": 2256,
+      "exact": true,
+      "prior_verdict": "NOT_ATTRIBUTED",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 48,
+      "line": 2290,
+      "exact": true,
+      "prior_verdict": "SUPPORTED_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 49,
+      "line": 2350,
+      "exact": true,
+      "prior_verdict": "ORDER_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 50,
+      "line": 2400,
+      "exact": true,
+      "prior_verdict": "SUPPORTED_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 51,
+      "line": 2488,
+      "exact": true,
+      "prior_verdict": "NOT_ATTRIBUTED",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 52,
+      "line": 2488,
+      "exact": true,
+      "prior_verdict": "NOT_ATTRIBUTED",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 53,
+      "line": 2524,
+      "exact": true,
+      "prior_verdict": "NOT_ATTRIBUTED",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 54,
+      "line": 2526,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 55,
+      "line": 2587,
+      "exact": true,
+      "prior_verdict": "NOT_ATTRIBUTED",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 56,
+      "line": 2587,
+      "exact": true,
+      "prior_verdict": "SUPPORTED_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 57,
+      "line": 2625,
+      "exact": true,
+      "prior_verdict": "SUPPORTED_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 58,
+      "line": 2643,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 59,
+      "line": 2888,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 60,
+      "line": 3022,
+      "exact": true,
+      "prior_verdict": "SUPPORTED_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 61,
+      "line": 3066,
+      "exact": true,
+      "prior_verdict": "NOT_ATTRIBUTED",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 62,
+      "line": 3458,
+      "exact": true,
+      "prior_verdict": "ORDER_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 63,
+      "line": 3458,
+      "exact": true,
+      "prior_verdict": "NOT_ATTRIBUTED",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 64,
+      "line": 3655,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 65,
+      "line": 3667,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 66,
+      "line": 3687,
+      "exact": true,
+      "prior_verdict": "NOT_ATTRIBUTED",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 67,
+      "line": 3765,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 68,
+      "line": 3773,
+      "exact": true,
+      "prior_verdict": "SUPPORTED_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 69,
+      "line": 3877,
+      "exact": true,
+      "prior_verdict": "SUPPORTED_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 70,
+      "line": 4041,
+      "exact": true,
+      "prior_verdict": "SUPPORTED_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 71,
+      "line": 4079,
+      "exact": true,
+      "prior_verdict": "NOT_ATTRIBUTED",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 72,
+      "line": 4482,
+      "exact": true,
+      "prior_verdict": "SUMMARY_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 73,
+      "line": 4482,
+      "exact": true,
+      "prior_verdict": "SUMMARY_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 74,
+      "line": 4506,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 75,
+      "line": 4506,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 76,
+      "line": 4506,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 77,
+      "line": 4510,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 78,
+      "line": 4622,
+      "exact": true,
+      "prior_verdict": "NOT_ATTRIBUTED",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 79,
+      "line": 4676,
+      "exact": true,
+      "prior_verdict": "HYPOTHESIS",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 80,
+      "line": 4676,
+      "exact": true,
+      "prior_verdict": "HYPOTHESIS",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 81,
+      "line": 4676,
+      "exact": true,
+      "prior_verdict": "HYPOTHESIS",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 82,
+      "line": 4740,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 83,
+      "line": 4789,
+      "exact": true,
+      "prior_verdict": "NOT_ATTRIBUTED",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 84,
+      "line": 5037,
+      "exact": true,
+      "prior_verdict": "SUPPORTED_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 85,
+      "line": 5039,
+      "exact": true,
+      "prior_verdict": "SUPPORTED_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 86,
+      "line": 5079,
+      "exact": true,
+      "prior_verdict": "NOT_ATTRIBUTED",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 87,
+      "line": 5307,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 88,
+      "line": 5425,
+      "exact": true,
+      "prior_verdict": "SUPPORTED_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 89,
+      "line": 6155,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 90,
+      "line": 6159,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 91,
+      "line": 6179,
+      "exact": true,
+      "prior_verdict": "NOT_ATTRIBUTED",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 92,
+      "line": 6413,
+      "exact": true,
+      "prior_verdict": "SUPPORTED_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 93,
+      "line": 6417,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 94,
+      "line": 6443,
+      "exact": true,
+      "prior_verdict": "NOT_ATTRIBUTED",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 95,
+      "line": 6817,
+      "exact": true,
+      "prior_verdict": "SUPPORTED_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 96,
+      "line": 6891,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 97,
+      "line": 6891,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 98,
+      "line": 7035,
+      "exact": true,
+      "prior_verdict": "SUPPORTED_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 99,
+      "line": 7049,
+      "exact": true,
+      "prior_verdict": "HEADING_ONLY",
+      "independent_rule_check": "HEADING_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 100,
+      "line": 7055,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 101,
+      "line": 7055,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 102,
+      "line": 7103,
+      "exact": true,
+      "prior_verdict": "HEADING_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 103,
+      "line": 7151,
+      "exact": true,
+      "prior_verdict": "PROPOSAL_OR_ORDER",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 104,
+      "line": 7291,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 105,
+      "line": 7321,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 106,
+      "line": 7408,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 107,
+      "line": 7546,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 108,
+      "line": 7550,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 109,
+      "line": 7550,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 110,
+      "line": 7550,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 111,
+      "line": 7550,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 112,
+      "line": 7550,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 113,
+      "line": 7550,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 114,
+      "line": 7550,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 115,
+      "line": 7602,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 116,
+      "line": 7636,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 117,
+      "line": 7636,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 118,
+      "line": 7636,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 119,
+      "line": 7636,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 120,
+      "line": 7636,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 121,
+      "line": 7636,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 122,
+      "line": 7636,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 123,
+      "line": 7650,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 124,
+      "line": 7650,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 125,
+      "line": 7660,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 126,
+      "line": 7660,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 127,
+      "line": 7806,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 128,
+      "line": 7810,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 129,
+      "line": 7896,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 130,
+      "line": 7900,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 131,
+      "line": 7904,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 132,
+      "line": 7952,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 133,
+      "line": 7952,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 134,
+      "line": 8122,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 135,
+      "line": 8204,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 136,
+      "line": 8245,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 137,
+      "line": 8299,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 138,
+      "line": 8323,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 139,
+      "line": 8331,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 140,
+      "line": 8367,
+      "exact": true,
+      "prior_verdict": "PROPOSAL_OR_ORDER",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 141,
+      "line": 8367,
+      "exact": true,
+      "prior_verdict": "PROPOSAL_OR_ORDER",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 142,
+      "line": 8367,
+      "exact": true,
+      "prior_verdict": "PROPOSAL_OR_ORDER",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 143,
+      "line": 8395,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 144,
+      "line": 8395,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 145,
+      "line": 8409,
+      "exact": true,
+      "prior_verdict": "PROPOSAL_OR_ORDER",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 146,
+      "line": 8453,
+      "exact": true,
+      "prior_verdict": "SUMMARY_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 147,
+      "line": 8453,
+      "exact": true,
+      "prior_verdict": "SUMMARY_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 148,
+      "line": 8453,
+      "exact": true,
+      "prior_verdict": "SUMMARY_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 149,
+      "line": 8453,
+      "exact": true,
+      "prior_verdict": "SUMMARY_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 150,
+      "line": 8453,
+      "exact": true,
+      "prior_verdict": "SUMMARY_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 151,
+      "line": 8453,
+      "exact": true,
+      "prior_verdict": "SUMMARY_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 152,
+      "line": 8465,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 153,
+      "line": 8573,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 154,
+      "line": 8587,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 155,
+      "line": 8659,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 156,
+      "line": 8659,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 157,
+      "line": 8707,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 158,
+      "line": 9180,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 159,
+      "line": 9292,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 160,
+      "line": 9300,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 161,
+      "line": 9300,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 162,
+      "line": 9300,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 163,
+      "line": 9354,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 164,
+      "line": 9364,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 165,
+      "line": 9386,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 166,
+      "line": 9418,
+      "exact": true,
+      "prior_verdict": "HEADING_ONLY",
+      "independent_rule_check": "HEADING_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 167,
+      "line": 9474,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 168,
+      "line": 9512,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 169,
+      "line": 9512,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 170,
+      "line": 9520,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 171,
+      "line": 9520,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 172,
+      "line": 9544,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 173,
+      "line": 9544,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 174,
+      "line": 9554,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 175,
+      "line": 9554,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 176,
+      "line": 9554,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 177,
+      "line": 9554,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 178,
+      "line": 9678,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 179,
+      "line": 10162,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 180,
+      "line": 10238,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 181,
+      "line": 10302,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 182,
+      "line": 10334,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 183,
+      "line": 10550,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 184,
+      "line": 10550,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 185,
+      "line": 10693,
+      "exact": true,
+      "prior_verdict": "PROPOSAL_OR_ORDER",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 186,
+      "line": 11458,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 187,
+      "line": 11636,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 188,
+      "line": 11694,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 189,
+      "line": 12320,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 190,
+      "line": 12346,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 191,
+      "line": 12396,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 192,
+      "line": 12832,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 193,
+      "line": 12971,
+      "exact": true,
+      "prior_verdict": "PROPOSAL_OR_ORDER",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 194,
+      "line": 12971,
+      "exact": true,
+      "prior_verdict": "PROPOSAL_OR_ORDER",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 195,
+      "line": 13029,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 196,
+      "line": 13131,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 197,
+      "line": 13145,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 198,
+      "line": 13215,
+      "exact": true,
+      "prior_verdict": "HYPOTHESIS",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 199,
+      "line": 13263,
+      "exact": true,
+      "prior_verdict": "PROPOSAL_OR_ORDER",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 200,
+      "line": 13263,
+      "exact": true,
+      "prior_verdict": "PROPOSAL_OR_ORDER",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 201,
+      "line": 13779,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 202,
+      "line": 13881,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 203,
+      "line": 13911,
+      "exact": true,
+      "prior_verdict": "PROPOSAL_OR_ORDER",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 204,
+      "line": 14213,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 205,
+      "line": 14229,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 206,
+      "line": 14589,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 207,
+      "line": 14699,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 208,
+      "line": 14831,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 209,
+      "line": 14923,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 210,
+      "line": 15151,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 211,
+      "line": 15760,
+      "exact": true,
+      "prior_verdict": "SUMMARY_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 212,
+      "line": 15772,
+      "exact": true,
+      "prior_verdict": "HYPOTHESIS",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 213,
+      "line": 15810,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 214,
+      "line": 15872,
+      "exact": true,
+      "prior_verdict": "HYPOTHESIS",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 215,
+      "line": 16412,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 216,
+      "line": 16544,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 217,
+      "line": 17368,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 218,
+      "line": 17662,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 219,
+      "line": 17696,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 220,
+      "line": 17776,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 221,
+      "line": 17890,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 222,
+      "line": 17890,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 223,
+      "line": 18500,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 224,
+      "line": 18536,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 225,
+      "line": 18558,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 226,
+      "line": 18935,
+      "exact": true,
+      "prior_verdict": "HEADING_ONLY",
+      "independent_rule_check": "HEADING_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 227,
+      "line": 20782,
+      "exact": true,
+      "prior_verdict": "SUMMARY_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 228,
+      "line": 20877,
+      "exact": true,
+      "prior_verdict": "HEADING_ONLY",
+      "independent_rule_check": "HEADING_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 229,
+      "line": 21157,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 230,
+      "line": 22124,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 231,
+      "line": 22298,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 232,
+      "line": 22714,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 233,
+      "line": 23250,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 234,
+      "line": 23266,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 235,
+      "line": 23286,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 236,
+      "line": 23790,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 237,
+      "line": 24042,
+      "exact": true,
+      "prior_verdict": "SUMMARY_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 238,
+      "line": 24050,
+      "exact": true,
+      "prior_verdict": "SUMMARY_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 239,
+      "line": 24050,
+      "exact": true,
+      "prior_verdict": "SUMMARY_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 240,
+      "line": 24050,
+      "exact": true,
+      "prior_verdict": "SUMMARY_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 241,
+      "line": 24050,
+      "exact": true,
+      "prior_verdict": "SUMMARY_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 242,
+      "line": 24054,
+      "exact": true,
+      "prior_verdict": "SUMMARY_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 243,
+      "line": 24060,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 244,
+      "line": 24060,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 245,
+      "line": 24066,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 246,
+      "line": 24066,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 247,
+      "line": 24100,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 248,
+      "line": 24131,
+      "exact": true,
+      "prior_verdict": "PROPOSAL_OR_ORDER",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 249,
+      "line": 24349,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 250,
+      "line": 24689,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 251,
+      "line": 24989,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 252,
+      "line": 25011,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 253,
+      "line": 25349,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 254,
+      "line": 25349,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 255,
+      "line": 25367,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 256,
+      "line": 25477,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 257,
+      "line": 25883,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 258,
+      "line": 25885,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 259,
+      "line": 26450,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 260,
+      "line": 26562,
+      "exact": true,
+      "prior_verdict": "HYPOTHESIS",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 261,
+      "line": 26877,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 262,
+      "line": 26877,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 263,
+      "line": 26877,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 264,
+      "line": 26877,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 265,
+      "line": 27239,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 266,
+      "line": 27379,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 267,
+      "line": 27575,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 268,
+      "line": 28377,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 269,
+      "line": 28463,
+      "exact": true,
+      "prior_verdict": "SUMMARY_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 270,
+      "line": 28548,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 271,
+      "line": 28818,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 272,
+      "line": 28818,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 273,
+      "line": 28818,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 274,
+      "line": 29062,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 275,
+      "line": 29422,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 276,
+      "line": 29991,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 277,
+      "line": 30371,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 278,
+      "line": 30469,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 279,
+      "line": 30519,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 280,
+      "line": 30884,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 281,
+      "line": 31370,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 282,
+      "line": 31692,
+      "exact": true,
+      "prior_verdict": "PROPOSAL_OR_ORDER",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 283,
+      "line": 31738,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 284,
+      "line": 31764,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 285,
+      "line": 32048,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 286,
+      "line": 32078,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 287,
+      "line": 32556,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 288,
+      "line": 33403,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 289,
+      "line": 33491,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 290,
+      "line": 33625,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 291,
+      "line": 33675,
+      "exact": true,
+      "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 292,
+      "line": 33767,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 293,
+      "line": 33840,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 294,
+      "line": 34564,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 295,
+      "line": 36018,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 296,
+      "line": 36161,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 297,
+      "line": 37206,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 298,
+      "line": 38573,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 299,
+      "line": 38661,
+      "exact": true,
+      "prior_verdict": "REPORT_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 300,
+      "line": 39241,
+      "exact": true,
+      "prior_verdict": "NON_NARRATIVE",
+      "independent_rule_check": "META_OR_OPTION_SIGNAL",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 301,
+      "line": 39549,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 302,
+      "line": 39805,
+      "exact": true,
+      "prior_verdict": "SCENE_CANDIDATE",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 303,
+      "line": 40438,
+      "exact": true,
+      "prior_verdict": "HEADING_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 304,
+      "line": 40789,
+      "exact": true,
+      "prior_verdict": "SUMMARY_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 305,
+      "line": 40801,
+      "exact": true,
+      "prior_verdict": "SUMMARY_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 306,
+      "line": 40801,
+      "exact": true,
+      "prior_verdict": "SUMMARY_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 307,
+      "line": 40813,
+      "exact": true,
+      "prior_verdict": "SUMMARY_ONLY",
+      "independent_rule_check": "CONTEXT_REVIEW_REQUIRED",
+      "semantic_certified": false
+    }
+  ],
+  "retrieval_tests": [
+    {
+      "question": "Durghan",
+      "expected_relation": "war_chief",
+      "returned": [
+        "LI-E4"
+      ],
+      "pass": true,
+      "test_kind": "LOCAL_GRAPH_EXACT_LOOKUP_NOT_RUNTIME"
+    },
+    {
+      "question": "Edran",
+      "expected_relation": "serves",
+      "returned": [
+        "LI-E3"
+      ],
+      "pass": true,
+      "test_kind": "LOCAL_GRAPH_EXACT_LOOKUP_NOT_RUNTIME"
+    },
+    {
+      "question": "Razhka",
+      "expected_relation": "reports_cultivation",
+      "returned": [
+        "LI-E13"
+      ],
+      "pass": true,
+      "test_kind": "LOCAL_GRAPH_EXACT_LOOKUP_NOT_RUNTIME"
+    },
+    {
+      "question": "Veldon",
+      "expected_relation": "origin",
+      "returned": [
+        "LI-E9"
+      ],
+      "pass": true,
+      "test_kind": "LOCAL_GRAPH_EXACT_LOOKUP_NOT_RUNTIME"
+    },
+    {
+      "question": "Reconhecimento",
+      "expected_relation": "recognizes",
+      "returned": [
+        "LI-E17"
+      ],
+      "pass": true,
+      "test_kind": "LOCAL_GRAPH_EXACT_LOOKUP_NOT_RUNTIME"
+    },
+    {
+      "question": "Veyra",
+      "expected_relation": "commercial_map_offer",
+      "returned": [
+        "LI-E20"
+      ],
+      "pass": true,
+      "test_kind": "LOCAL_GRAPH_EXACT_LOOKUP_NOT_RUNTIME"
+    },
+    {
+      "question": "Gênese",
+      "expected_relation": "historical_potential",
+      "returned": [
+        "LI-E21"
+      ],
+      "pass": true,
+      "test_kind": "LOCAL_GRAPH_EXACT_LOOKUP_NOT_RUNTIME"
+    },
+    {
+      "question": "Saúde",
+      "expected_relation": "health_contract",
+      "returned": [
+        "LI-E19"
+      ],
+      "pass": true,
+      "test_kind": "LOCAL_GRAPH_EXACT_LOOKUP_NOT_RUNTIME"
+    }
+  ],
+  "checks": {
+    "ledger_exact": 307,
+    "roster_unique": 38,
+    "chapter_count": 38,
+    "sections": 457,
+    "edge_nonempty": true,
+    "tests_passed": 8
+  },
+  "limitations": [
+    "38 named identities sampled; not exhaustive.",
+    "Independent rule-based screening is not independent semantic adjudication.",
+    "Chapter section markers are not certified events.",
+    "Graph edges require semantic admission and runtime integration; local retrieval tests are not engine tests.",
+    "No canon promotion."
+  ],
+  "canon_changed": false
+}
