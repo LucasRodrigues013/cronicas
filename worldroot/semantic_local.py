@@ -68,7 +68,13 @@ def run(jobs_path,out,model_a,model_b,limit=None,api=local_api):
         for line in stream:
             job=verify_job(json.loads(line));jid=job["job_id"];dest=out/(jid+".json")
             if dest.exists():
-                saved=json.loads(dest.read_text());reconcile(job,saved["first"],saved["second"]);continue
+                saved=json.loads(dest.read_text())
+                first,second=saved["first"],saved["second"]
+                if (first.get("executor"),first.get("model_revision"),second.get("executor"),second.get("model_revision"))!=("local-A",a,"local-B",b):
+                    raise ValueError("Saved review executor/model binding changed")
+                if reconcile(job,first,second)!=saved.get("reconciliation"):
+                    raise ValueError("Saved reconciliation changed")
+                continue
             if limit is not None and processed+failed>=limit:break
             try:
                 first_path=out/(jid+".first.json")
