@@ -82,13 +82,42 @@ def validate_interactions(prose,review,records):
         if status=="ADAPTED":
             check_anchor(prose,c["adaptation_line"],c["adaptation_anchor"])
         if status=="SUPPORTED" and kind in ("PASSAGE","SEAT","VEHICLE","COMBAT"):
-            # Existing records do not yet contain homologated physical/channel measurements.
-            # Fail closed on quantitative feasibility until matching approved fields exist.
-            if not c.get("evidence_refs") or not isinstance(c["evidence_refs"],list):raise ValueError("Compatibility or combat requires reviewed evidence references")
-            refs=c["evidence_refs"]
-            valid=set()
-            for ident in (c["actor"],c["target"]):
-                for fact in records[ident].get("coherence_facts",[]):
-                    if fact.get("evidence"):valid.add(ident+":"+fact["field"])
-            if not all(isinstance(r,str) and r in valid for r in refs):raise ValueError("Unbound compatibility evidence")
+            actor=records[c["actor"]];target=records[c["target"]]
+            # Quantitative input comes from separately homologated source-bound fields,
+            # never from values supplied by this scene.
+            def measurements(record,field):
+                entry=record.get(field,{})
+                if entry.get("status") not in ("AUTHOR_DEFINED","EVIDENCE_VERIFIED") or not entry.get("evidence"):return {}
+                return entry.get("value",{})
+            if kind in ("PASSAGE","VEHICLE"):
+                result=passage(measurements(actor,"body_measurements"),measurements(target,"opening_measurements"),c.get("posture","upright"))
+            elif kind=="SEAT":
+                result=seating(measurements(actor,"body_measurements"),measurements(target,"seat_measurements"))
+            else:
+                channel=c.get("channel")
+                ability=c.get("ability_id")
+                if ability in ("genese","CREATION_GENESE"):
+                    if c["actor"]!="lucas":raise ValueError("GÊNESE belongs to Lucas")
+                    # Special authority is not numerically ranked or forced to fail.
+                    result={"status":"POSSIBLE_NOT_GUARANTEED"}
+                else:
+                    a=measurements(actor,"combat_channels").get(channel,{})
+                    d=measurements(target,"combat_channels").get(channel,{})
+                    proof=ability in a.get("verified_capabilities",[]) or learned_in_registry(actor,ability)
+                    if c.get("access") is True:check_anchor(prose,c["access_line"],c["access_anchor"])
+                    result=combat(a.get("attack_grade"),d.get("defense_grade"),channel=channel,access=c.get("access"),ability_proven=proof)
+            if result["status"] not in ("POSSIBLE","POSSIBLE_NOT_GUARANTEED"):
+                raise ValueError("Unsupported success: "+result.get("reason",result["status"]))
+        if status=="SUPPORTED" and kind=="TOUCH":
+            actor=records[c["actor"]];target=records[c["target"]]
+            # Claimed attributes are compared to the bound profile. A general
+            # affectionate touch need not invent a measured body attribute.
+            claims=c.get("attribute_claims",[])
+            if not isinstance(claims,list):raise ValueError("Invalid attribute claims")
+            for claim in claims:
+                ident=claim.get("entity_id")
+                if ident not in (c["actor"],c["target"]):raise ValueError("Attribute owner mismatch")
+                field=records[ident].get("design",{}).get("fields",{}).get(claim.get("field"),{})
+                if field.get("value")!=claim.get("value") or field.get("status") not in ("AUTHOR_APPROVED_VISUAL_DIRECTION_PROSPECTIVE","AUTHOR_DEFINED_D580_DESIGN","EXISTING_PROSPECTIVE_VISUAL_DESIGN"):
+                    raise ValueError("Unverified or contradicted character attribute")
     return {"reviewed_interactions":len(checks),"semantic_certification":False}
