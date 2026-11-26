@@ -20,6 +20,17 @@ def author_context(root,head):
     ident=head["episode_id"];check_id(ident)
     closure=read(root/"canon/episodes"/(ident+".json"))
     if closure.get("episode_id")!=ident or digest(closure)!=head.get("closure_sha256"):raise ValueError("Closure mismatch")
+    if closure.get("ratification_kind")=="R36_EXPLICIT_RATIFICATION_NO_CONTINUATION":
+        from .r36_authority import continuation
+        from .git_cycle import _journal
+        chain=list(_journal(root))
+        if not chain or chain[-1][1]!=head:raise ValueError("Journal HEAD mismatch")
+        later=continuation(root,ident)
+        if later["choice"] is None:raise ValueError("Explicit continuation choice required")
+        choice=later["choice"]
+        draft,manifest=verify_episode(root,ident)
+        if manifest["original_readback_sha256"]!=head.get("source_sha256"):raise ValueError("Draft source mismatch")
+        return {"choice":choice,"choice_sha256":digest(choice),"menu_sha256":sha((root/"episodes"/ident/"draft/opcoes.json").read_bytes()),"closure_sha256":digest(closure),"policy_sha256":sha(POLICY_PATH.read_bytes())}
     option=closure.get("chosen_option")
     if type(option) is not int or option not in range(1,6):raise ValueError("Explicit normal choice required; exceptional ratifications use legacy flow")
     path=root/"choices"/ident/f"option-{option}.json"
