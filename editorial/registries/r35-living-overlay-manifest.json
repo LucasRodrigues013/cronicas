@@ -10,12 +10,12 @@
   },
   "base_registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
   "character_overlay": {
-    "path": "editorial/registries/r35-natural-completion-d579-v8.json",
-    "git_blob": "fae56891a239931e70a29db5bf7490be6d3c0e20"
+    "path": "editorial/registries/r35-natural-completion-d579-v9.json",
+    "git_blob": "3a26afdd1e784a9fc20db8efeebe851edef90ed0"
   },
   "world_overlay": {
-    "path": "editorial/registries/r35-world-completion-d579-v6.json",
-    "git_blob": "59516fee8cadf786379a6b48d3be007030f89f7a"
+    "path": "editorial/registries/r35-world-completion-d579-v7.json",
+    "git_blob": "38ef6828e38bb716655ee48723e28e294a9f6bd1"
   },
   "vetoes": [],
   "rules": {
@@ -37,7 +37,8 @@
     "V5/V3: preserve private technical origins; enable Uzgor and Pedreira Oriental exact aliases in editorial retrieval only.",
     "Author direction 2026-11-26: literal narrated evidence supersedes recollection/provisional design; preserve explicit author decisions, unknown fields remain pending until history is exhausted. No canon journal or production activation.",
     "Livro II, lote 001: seis campos de três fichas existentes atualizados cumulativamente; referências posteriores preservadas, sem promoção canônica.",
-    "Livro II lote 002: 27 campos de 9 fichas existentes atualizados; três observações dos Arquitetos preservadas no lote de revisão; sem promoção canônica."
+    "Livro II lote 002: 27 campos de 9 fichas existentes atualizados; três observações dos Arquitetos preservadas no lote de revisão; sem promoção canônica.",
+    "Livro II, lote 003: D115–137. Revisão editorial de 69 registros em 52 grupos completos, com 35 campos de 23 fichas existentes atualizados."
   ],
   "naming_review": {
     "path": "editorial/registries/r35-legacy-name-reconciliation-v4.json",
@@ -53,28 +54,41 @@
   },
   "book_ii_recovery": {
     "stage": "B",
-    "batch": 2,
-    "review_commit": "51b4ea13372d4ae507b81103c69e3798650e9077",
-    "review_blob": "cae6b42a092acabeacd2a71eb00e32f6e71d1b25",
+    "batch": 3,
+    "review_commit": "c50455440add01f8db184ae9aaab902f2712d8af",
+    "review_blob": "a2bda126f4d5d24e24d54d76df1765103d6d27a0",
     "reviewed_ids": [
       308,
-      342
+      411
     ],
-    "next_id": 343,
+    "next_id": 412,
     "independent_certification": false,
     "production_hold": true,
     "previous_batch": {
       "stage": "B",
-      "batch": 1,
-      "review_commit": "8d59a5110100e22eedc3f6dd8402f614d6921a1a",
-      "review_blob": "f24b34d75fc6b9275c17ad44fc8825c90a7e2b30",
+      "batch": 2,
+      "review_commit": "51b4ea13372d4ae507b81103c69e3798650e9077",
+      "review_blob": "cae6b42a092acabeacd2a71eb00e32f6e71d1b25",
       "reviewed_ids": [
         308,
-        312
+        342
       ],
-      "next_id": 313,
+      "next_id": 343,
       "independent_certification": false,
-      "production_hold": true
+      "production_hold": true,
+      "previous_batch": {
+        "stage": "B",
+        "batch": 1,
+        "review_commit": "8d59a5110100e22eedc3f6dd8402f614d6921a1a",
+        "review_blob": "f24b34d75fc6b9275c17ad44fc8825c90a7e2b30",
+        "reviewed_ids": [
+          308,
+          312
+        ],
+        "next_id": 313,
+        "independent_certification": false,
+        "production_hold": true
+      }
     }
   }
 }
