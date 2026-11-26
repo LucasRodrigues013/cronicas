@@ -111,7 +111,13 @@ def creation_packet(root, db, requirements, *, head, candidate_limit=80, vector_
             return record.get("id")==entity or any(set(tokens(n)) and set(tokens(n)).issubset(words) for n in names)
         identities=[p for p in registry["characters"] if relevant(p)]
         related=[p for p in world["assets"]+world["plots"] if relevant(p)]
-        graph_hits=[{"domain":domain,"id":rid,"record":record} for domain,rid,record in graph_records if (rid==entity or relevant(record))]
+        graph_hits=[{"domain":domain,"id":rid,"record":record} for domain,rid,record in graph_records if (rid==entity if entity else relevant(record))]
+        from .live_codex import graph_candidates as live_codex_candidates, record_type as live_record_type
+        if role=="Response":
+            candidates=live_codex_candidates(root,req["query"],entity)
+            live_ids={r["id"] for r in candidates}
+            graph_hits=[r for r in graph_hits if r["id"] not in live_ids]
+            graph_hits.extend({"domain":live_record_type(r),"id":r["id"],"record":r} for r in candidates)
         items.append({"requirement":req,"candidate_status":result["status"],"hits":result["hits"],
                       "dense_candidates":dense.search(req["query"],role,candidate_limit) if dense is not None else [],"graph_candidates":graph_hits,
                       "curated_candidates":search_cards(cards,req["query"],role,limit=5),
