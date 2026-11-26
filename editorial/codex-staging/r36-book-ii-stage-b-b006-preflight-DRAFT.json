@@ -1,6 +1,6 @@
 {
   "schema": "worldroot-r36-b006-preflight-v1",
-  "status": "STRUCTURAL_PREFLIGHT_PASS_NATIVE_BLOCKED",
+  "status": "STRUCTURAL_PREFLIGHT_PASS_NATIVE_CANDIDATE_VALIDATED_NOT_APPROVED",
   "base_checkpoint": "0f5dc88d5d8624f0d57d892a5bdec022cc0363ec",
   "base_archive": "4d2bdb7444c785705e494c3d49cad8500af25a8a",
   "engine": "3170905db607f89004ed3d62a064dbb092922080",
@@ -23,7 +23,7 @@
       "logs_available": false
     }
   ],
-  "native_blocker": "GitHub Actions did not start any job steps; cause not exposed by connector. No new native load_overlay, regression suite, or candidate artifact.",
+  "native_blocker": null,
   "preflight": {
     "original_draft_files_sha256_local": 3,
     "compact_transfer_fingerprints": 3,
@@ -127,7 +127,7 @@
     "production_hold": true
   },
   "free_only_execution": {
-    "status": "CONFIGURED_LOCAL_EXECUTION_PENDING",
+    "status": "LOCAL_EXECUTION_PASS",
     "policy": "FREE_ONLY_NO_PAID_SERVICES_NO_OVERAGE_NO_SPENDING_LIMIT_INCREASE",
     "primary": "Direct local Git + Python 3.12 + SQLite; no GitHub Actions dependency",
     "optional": "Manual workflow on dedicated authorized self-hosted linux x64 worldroot-free-local runner only; not registered or dispatched by this change; workflow_dispatch availability depends on default branch configuration",
@@ -160,9 +160,44 @@
       "printf 'Candidate and regression evidence: %s\\n' \"$work\""
     ],
     "receipt_contract": "Native receipt + review evidence + full successful regression log + clean checkout verification required; keep private locally, no publication or automatic canon update",
-    "current_blocker": "Current chat container has Git/Python 3.13 but no Python 3.12 or direct GitHub DNS/network access; authenticated connector provides repository API but no local checkout execution.",
-    "native_status": "NOT_VALIDATED",
+    "current_blocker": null,
+    "native_status": "NATIVE_CANDIDATE_VALIDATED_NOT_APPROVED",
     "approval_required": true,
-    "production_hold": true
+    "production_hold": true,
+    "result": {
+      "source_preflight_commit": "49a576a47fd16fbd5a110021ef3eaab3cfdf9d7a",
+      "exit_code": 0,
+      "python": "3.12.14",
+      "sqlite": "3.53.1",
+      "regression": {
+        "tests": 705,
+        "elapsed_seconds": 9.385,
+        "status": "OK"
+      },
+      "sqlite_replay": {
+        "idempotent": true,
+        "backup_restore_integrity_check": "ok",
+        "dump_match": true,
+        "restored_replay_match": true,
+        "projection_records": 1256,
+        "projection_events": 0
+      },
+      "integrity": {
+        "worktrees_clean": true,
+        "candidate_blobs_verified": 4,
+        "original_manifest_entries_verified": 11
+      },
+      "evidence": {
+        "directory": "editorial/codex-staging/r36-book-ii-stage-b-b006-local-evidence",
+        "sha256": {
+          "SHA256SUMS": "a26dcbf94cdba9911a1d16e7a28b9818cff7ebf253e1f5226696b657a07f97a4",
+          "regression.log": "13ceb4cf669145d2dd21920fe96047304308a7d486a1973d35a0f1ce3b216765",
+          "integrity-receipt.json": "62c8b3b169b3eff2f90aeaad2b8d55cfc317b8e6c6e272c3cb71282c9fd5fd86",
+          "candidate/native-receipt.json": "bdd554b4dfd809359a22dcbb37f96d65eb3d0989bac067d7d805f9fdf9f07756",
+          "candidate/review-evidence.json": "2b10a97e8054c6ed7f606d52ab561af04a01eefe977b370642ce75547734f96b"
+        },
+        "original_manifest_scope": "Execution workspace. The source preflight is preserved at source_preflight_commit. The execution trace, script and candidate registries remain local. Use sha256sum --ignore-missing -c SHA256SUMS in the evidence directory to check the four transferred payloads."
+      }
+    }
   }
 }

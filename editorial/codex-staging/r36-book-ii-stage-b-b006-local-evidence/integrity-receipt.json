@@ -1,0 +1,41 @@
+{
+  "preflight": "49a576a47fd16fbd5a110021ef3eaab3cfdf9d7a",
+  "branch": "review/r36-b006-native-gate",
+  "python": "3.12.14",
+  "sqlite": "3.53.1",
+  "local_validation_exit_code": 0,
+  "worktrees": {
+    "audit": {
+      "head": "dd3b402df162bb0ff84b948db845d18c132f1b55",
+      "clean": true
+    },
+    "engine": {
+      "head": "3170905db607f89004ed3d62a064dbb092922080",
+      "clean": true
+    },
+    "archive": {
+      "head": "4d2bdb7444c785705e494c3d49cad8500af25a8a",
+      "clean": true
+    },
+    "checkpoint": {
+      "head": "0f5dc88d5d8624f0d57d892a5bdec022cc0363ec",
+      "clean": true
+    }
+  },
+  "verified_candidate_blobs": {
+    "editorial/registries/r35-natural-completion-d579-v12.json": "13a2600d69e2fe494a864fd999b29506c1f4207d",
+    "editorial/registries/r35-world-completion-d579-v10.json": "0b4f1c5fb89ae38b17ed1c31822b80f4fd33c410",
+    "editorial/registries/r35-legacy-name-reconciliation-v8.json": "95bd091b980b4f19007c79dc7b9e7116ec4e7d1d",
+    "editorial/registries/r35-living-overlay-manifest.json": "5bd6021c32f8d41a554998615078e4136acdda84"
+  },
+  "regression": {
+    "tests": 705,
+    "elapsed_seconds": 9.385,
+    "status": "OK"
+  },
+  "review_evidence_counts": {
+    "changes": 25,
+    "adjudications": 22,
+    "additional": 6
+  }
+}
