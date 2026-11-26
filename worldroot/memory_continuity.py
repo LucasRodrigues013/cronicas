@@ -72,6 +72,8 @@ def creation_packet(root, db, requirements, *, head, candidate_limit=80, vector_
     if not isinstance(requirements,list) or not 1<=len(requirements)<=80:raise ValueError("Requirements count")
     # Existing R28/R30 projections are additional retrieval routes, not replaced.
     registry=source_registry(root,head)
+    from .character_design import load_design,candidate_sources
+    design=load_design(root)
     policy_text=POLICY_PATH.read_text(encoding="utf-8")
     policy=json.loads(policy_text);validate_policy(policy)
     world=project(root,head)
@@ -92,7 +94,10 @@ def creation_packet(root, db, requirements, *, head, candidate_limit=80, vector_
         ids.add(rid)
         # Author intent and observed story are not interchangeable.
         role=req.get("role","Response")
-        if role not in ("Response","Prompt","AuthorPolicy") or (role=="AuthorPolicy" and req["domain"]!="author_rule"):raise ValueError("Invalid role")
+        if role not in ("Response","Prompt","AuthorPolicy","AuthorDesign") or (role=="AuthorPolicy" and req["domain"]!="author_rule") or (role=="AuthorDesign" and req["domain"]!="identity"):raise ValueError("Invalid role")
+        if role=="AuthorDesign":
+            items.append({"requirement":req,"candidate_status":"AUTHOR_DESIGN_CANDIDATES","author_design_candidates":candidate_sources(design,req["query"],req.get("entity")),"hits":[],"recent_canon_candidates":[],"r30_identity_candidates":[],"r28_world_candidates":[],"dense_candidates":[],"graph_candidates":[],"curated_candidates":[],"deep_candidates":[]})
+            continue
         if role=="AuthorPolicy":
             words=set(tokens(req["query"]))-STOP
             rules=sorted((r for r in policy["rules"] if r["active"]),key=lambda r:(-len(words.intersection(tokens(r["id"]+" "+r["title"]+" "+r["directive"]))),r["id"]))
@@ -112,7 +117,7 @@ def creation_packet(root, db, requirements, *, head, candidate_limit=80, vector_
                       "curated_candidates":search_cards(cards,req["query"],role,limit=5),
                       "deep_candidates":dense.wide(req["query"],entity=entity,role=role,limit=400) if deep and dense is not None else [],
                       "recent_canon_candidates":recent_candidates(entries,req["query"]) if role=="Response" else [],
-                      "r30_identity_candidates":identities,"r28_world_candidates":related})
+                      "r30_identity_candidates":identities,"r28_world_candidates":related,"author_design_candidates":candidate_sources(design,req["query"],req.get("entity")) if role=="Response" and req["domain"]=="identity" else []})
     return {"head":head,"items":items,"closed_episodes":len(entries),"dense_enabled":dense is not None,"graph_enabled":graph_db is not None,"status":"REVIEW_REQUIRED","canon_changed":False,
             "note":"Candidate availability is not recall or proof; reconcile current state and reviewed claim."}
 
@@ -184,6 +189,10 @@ def review_creation(root, head, requirements, reviewed):
     for e in entries:roles[e["id"]]=[("Response",1,len(narrative_evidence(e["text"]).splitlines()))]
     policy_text=POLICY_PATH.read_text(encoding="utf-8");validate_policy(json.loads(policy_text))
     bodies["AUTHOR_POLICY"]=policy_text;roles["AUTHOR_POLICY"]=[("AuthorPolicy",1,len(policy_text.splitlines()))]
+    from .character_design import load_design,source_bodies,valid_requirement
+    design=load_design(root)
+    for key,body in source_bodies(design).items():
+        bodies[key]=body;roles[key]=[("AuthorDesign",1,len(body.splitlines()))]
     if not isinstance(reviewed,dict):raise ValueError("Invalid review mapping")
     reqmap={r["id"]:r for r in requirements}
     if not set(reviewed)<=set(reqmap):raise ValueError("Unknown review ID")
@@ -194,6 +203,7 @@ def review_creation(root, head, requirements, reviewed):
         if type(lo) is not int or type(hi) is not int:continue
         expected=reqmap[rid].get("role","Response")
         if expected=="AuthorPolicy" and reqmap[rid]["domain"]!="author_rule":continue
+        if expected=="AuthorDesign" and not valid_requirement(reqmap[rid],r,design):continue
         if any(role==expected and start<=lo<=hi<=end for role,start,end in roles.get(source,[])):
             valid[rid]=r
     result=coverage(requirements,valid,bodies)

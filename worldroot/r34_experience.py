@@ -39,6 +39,7 @@ def validate_intent(request,policy_text=None):
     require(isinstance(intent,dict) and intent.get("schema")=="worldroot-r34-intent-v1","R34 intent missing")
     dims=intent.get("dimensions")
     require(isinstance(dims,dict) and set(dims)==set(DIMENSIONS),"R34 review all independent intent dimensions")
+    from .character_design import design_requirement_matches_card
     req={x["id"]:x for x in request["requirements"]}
     reviewed=request["reviewed"]
     scenes={x["scene"]:set(x["ids"]) for x in request["scene_plan"]}
@@ -68,7 +69,7 @@ def validate_intent(request,policy_text=None):
             require(isinstance(v,dict) and v.get("status") in ("sourced","unknown","not_material") and reason(v.get("reason")),"R34 character field missing")
             if v["status"]=="sourced":
                 ids=v.get("requirement_ids")
-                require(isinstance(ids,list) and bool(ids) and all(req.get(i,{}).get("domain")==DOMAINS[field] and req.get(i,{}).get("role","Response")=="Response" and i in reviewed and any(i in scenes[n] for n in sc) for i in ids),"R34 character source not mapped")
+                require(isinstance(ids,list) and bool(ids) and all(req.get(i,{}).get("domain")==DOMAINS[field] and (req.get(i,{}).get("role","Response")=="Response" or (field in ("appearance","age") and req.get(i,{}).get("role")=="AuthorDesign" and design_requirement_matches_card(req[i],reviewed.get(i,{}),c["name"],field))) and i in reviewed and any(i in scenes[n] for n in sc) for i in ids),"R34 character source not mapped")
             else:require(not v.get("requirement_ids"),"R34 unresolved field cannot claim sources")
     if dims["appearance"]["status"]=="planned":require(bool(cards),"R34 appearance needs focal character cards")
     reference=intent.get("comparison")
@@ -121,6 +122,8 @@ def identity_context(root,character_ids,head=None):
     _,raw=read_verified_sources(root)
     sources={m["source_name"]:(m,t) for m,t in raw}
     candidates=json.loads((Path(__file__).resolve().parent.parent/"recovery/r31-historical-candidates.json").read_text(encoding="utf-8"))
+    from .character_design import load_design,candidate_sources
+    design=load_design(root)
     result=[]
     people={p["id"]:p for p in reg["characters"]}
     for ident in dict.fromkeys(character_ids):
@@ -131,7 +134,7 @@ def identity_context(root,character_ids,head=None):
             rows.append({"field":c["field"],"claim":c["claim"],"proof":proof,"state":"LITERAL_CANDIDATE_NOT_CANON" if proof else "UNVERIFIED"})
         old=people.get(ident)
         obs=old["observations"] if old else []
-        result.append({"id":ident,"observations":obs,"candidates":rows,
+        result.append({"id":ident,"observations":obs,"candidates":rows,"author_design":candidate_sources(design,ident,ident),
                        "missing_fields":[field for field in FIELDS if not any(o.get("proof") and o["field"]==field for o in obs) and not any(o["proof"] and o["field"]==field for o in rows)],
                        "current_state_verified":False})
     return {"head":reg["head"],"characters":result,"status":"REVIEW_CURRENT_STATE_AND_CONFLICTS","semantic_certification":False,"canon_changed":False}

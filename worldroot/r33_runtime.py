@@ -82,6 +82,9 @@ def prepare_from_request(root,request):
         if "r34_intent" not in packet:raise ValueError("R35 requires R34 intent")
         packet["r35_plan"]=request["r35_plan"]
         packet["r35_plan_structure"]=validate_plan(request,packet["authority"]["choice"])
+    from .character_design import bind_request
+    design=bind_request(root,request)
+    if design is not None:packet["character_design"]=design
     packet.pop("preparation_sha256")
     packet["request_sha256"]=digest(request)
     packet["preparation_sha256"]=digest(packet)
@@ -109,8 +112,11 @@ def verify_submission(root,head,payload):
     for k,v in reviews.items():
         if not isinstance(v,dict) or v.get("status") not in ("applied","held") or not isinstance(v.get("reason"),str) or len(v["reason"].split())<4:raise ValueError("Invalid literary review: "+k)
         if v["status"]=="applied" and (not isinstance(v.get("evidence"),str) or len(v["evidence"].split())<4 or v["evidence"] not in prose):raise ValueError("Missing literal literary evidence: "+k)
+    from .character_design import verify_binding
+    design=verify_binding(root,request,packet)
     r=release_review(root,head,payload)
     extra={}
+    if design is not None:extra["character_design_sha256"]=design["sha256"]
     if payload.get("metadata",{}).get("worldroot_revision") in (34,35) or "r34_review" in payload:
         if payload.get("metadata",{}).get("worldroot_revision") not in (34,35):raise ValueError("R34 review requires revision 34 or 35 metadata")
         from .r34_experience import validate_intent,validate_delivery
@@ -147,6 +153,7 @@ def verify_history(root):
             inbox=read(root/"inbox"/(ident+".json"))
             if inbox.get("metadata",{}).get("worldroot_revision")!=35 or receipt.get("r35_input_sha256")!=digest(inbox.get("r35_review")) or prep.get("r35_plan")!=request.get("r35_plan") or not verify_longform_segments(root,ident,inbox)["verified"]:
                 raise ValueError("Historic R35 plan/review/segments mismatch")
+        if "character_design" in prep and receipt.get("character_design_sha256")!=prep["character_design"]["sha256"]:raise ValueError("Historic character design binding mismatch")
         count+=1
     return {"verified_r33_receipts":count,"canon_changed":False}
 
