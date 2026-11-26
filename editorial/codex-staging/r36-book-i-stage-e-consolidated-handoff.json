@@ -1,0 +1,349 @@
+{
+  "schema": "worldroot-r36-book-i-historical-cycle-consolidated-handoff-v1",
+  "book": 1,
+  "stage": "E",
+  "status": "FIRST_EDITORIAL_RECONCILIATION_COMPLETE_ADMISSION_AND_HOMOLOGATION_PENDING",
+  "decision": "HOLD_PRODUCTION_AND_BOOK_II",
+  "engine_commit": "19d4be7759ba7c0d68adad8eb969414f78caaef3",
+  "archive_pin": "2ddb6f5707ddd1b8d06f5dfe37d936f04802090c",
+  "source": {
+    "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+    "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+    "lines": [
+      1,
+      40845
+    ],
+    "narrative_days": [
+      1,
+      90
+    ],
+    "chapter_numbers": 38,
+    "raw_words": 171829,
+    "prompts": 44,
+    "responses": 44
+  },
+  "previous_checkpoint": "4c61d48db776cd382c3e4bc291b6c258a1153c8d",
+  "receipts": [
+    {
+      "path": "editorial/codex-staging/r36-book-i-stage-e-editorial-lot-01.json",
+      "blob": "9c5d3e917b9caa45572723bb384036e4ec5a2d29"
+    },
+    {
+      "path": "editorial/codex-staging/r36-book-i-stage-e-editorial-lot-02.json",
+      "blob": "9ecc59a72dc4679ba30930cae0cc09f80e09250f"
+    },
+    {
+      "path": "editorial/codex-staging/r36-book-i-stage-e-editorial-lot-03.json",
+      "blob": "2274656190d0285562050c9f6e4d1db258fe408b"
+    },
+    {
+      "path": "editorial/codex-staging/r36-book-i-stage-e-editorial-lot-04.json",
+      "blob": "91f512c9bd0d2870e69d355456fd3781de8deffd"
+    },
+    {
+      "path": "editorial/codex-staging/r36-book-i-stage-e-arquiteto-discovery-01.json",
+      "blob": "fbf95380d3c1b7650d17ab368829258f54981460"
+    },
+    {
+      "path": "editorial/codex-staging/r36-book-i-stage-e-profile-graph-01.json",
+      "blob": "2e854ea15cb12c774e5c7550124a49981197910f"
+    },
+    {
+      "path": "editorial/codex-staging/r36-book-i-stage-e-semantic-queue-first-pass.json",
+      "blob": "930ecfafc7554baea0cfbddeb1f98aa48b9d84b8"
+    }
+  ],
+  "metrics": {
+    "ledger_targets": 307,
+    "ledger_grouped_jobs": 236,
+    "editorial_targets_reviewed": 307,
+    "editorial_jobs_reviewed": 236,
+    "verdict_counts": {
+      "NON_NARRATIVE": 119,
+      "PARTIAL": 23,
+      "HYPOTHESIS": 14,
+      "NOT_ATTRIBUTED": 80,
+      "SUPPORTED": 32,
+      "REPORT_ONLY": 39
+    },
+    "arquiteto_candidates": 142,
+    "arquiteto_dispositions": {
+      "NOT_ENTITY": 73,
+      "MENTION_ONLY": 68,
+      "NEW_ID_CANDIDATE": 1
+    },
+    "roster": 38,
+    "existing_ids": 24,
+    "new_id_candidates": 14,
+    "inherited_observations": 74,
+    "graph_edges": 22,
+    "field_proposals": 26,
+    "dimension_groups_represented": 30,
+    "independent_models": 0,
+    "semantic_certified": 0,
+    "typed_events_admitted": 0,
+    "canon_promotions": 0
+  },
+  "source_probes": [
+    {
+      "question": "Quem assinou o reconhecimento territorial como representante dos moradores?",
+      "answer": "Tarek, não Lucas como governante dos moradores.",
+      "line": 38707,
+      "evidence": "A assinatura de LUCAS foi aposta como representante fundador da Legião, ao lado da assinatura de TAREK como representante dos moradores e das autoridades competentes que formalizavam o reconhecimento.",
+      "pass": true
+    },
+    {
+      "question": "O que a concessão experimental autorizava?",
+      "answer": "Área externa delimitada por 90 dias, condicionada a inspeções e capacidade para transferências; não soberania irrestrita.",
+      "line": 28818,
+      "evidence": "— Autorizarei a concessão experimental da área externa delimitada, por noventa dias, sujeita às inspeções e às condições registradas. Poderão ampliar a presença operacional para cento e vinte integrantes, desde que a capacidade de abrigo, saneamento e abastecimento seja confirmada antes de cada transferência.",
+      "pass": true
+    },
+    {
+      "question": "Qual era o nome completo do magistrado Odran?",
+      "answer": "Odran Vell.",
+      "line": 38221,
+      "evidence": "Também participava MAGISTRADO ODRAN VELL, representante da instância superior de Thalor encarregada de examinar o conflito territorial. Sua visita já estava prevista para avaliar a proposta recebida no Dia 52; a descoberta documental mudara radicalmente a pauta.",
+      "pass": true
+    },
+    {
+      "question": "Maelis já dirigia um hospital?",
+      "answer": "Não; contrato inicial para atendimento básico, triagem, higiene e encaminhamentos.",
+      "line": 39553,
+      "evidence": "Não havia hospital.",
+      "pass": true
+    },
+    {
+      "question": "O acordo Uzgor estabeleceu aliança militar?",
+      "answer": "Não, compartilhamento de conhecimento agrícola e estudo de pequena troca.",
+      "line": 27637,
+      "evidence": "A conversa terminou com um acordo para compartilhar conhecimento agrícola e estudar uma pequena troca de ferramentas e sal, sem compromisso de aliança militar.",
+      "pass": true
+    },
+    {
+      "question": "A raiz razhka foi validada para consumo humano?",
+      "answer": "Não; Esmara recusou consumo até verificação.",
+      "line": 27631,
+      "evidence": "ESMARA recusou qualquer consumo humano antes de compreender suas propriedades e verificar se era segura.",
+      "pass": true
+    },
+    {
+      "question": "A oferta de mapas de Veyra era uma aliança?",
+      "answer": "Não; oferta comercial.",
+      "line": 39903,
+      "evidence": "Era uma oferta comercial de acesso a mapas mais completos, mediante pagamento e identificação dos futuros exploradores.",
+      "pass": true
+    },
+    {
+      "question": "Quem possuía comando tático da Operação Irmandade?",
+      "answer": "Varo.",
+      "line": 5039,
+      "evidence": "Comando tático VARO",
+      "pass": true
+    },
+    {
+      "question": "Astra tinha acesso automático ao Sistema de Lucas?",
+      "answer": "Não, na caracterização histórica.",
+      "line": 23250,
+      "evidence": "Limites: ASTRA não possui experiência vivida anterior, conhecimento automático de fatos locais nem acesso ao Sistema de LUCAS. Sua autonomia é independente, e suas habilidades precisarão ser exercitadas e verificadas.",
+      "pass": true
+    },
+    {
+      "question": "Gênese de Horizonte já estava operacional no Dia 90?",
+      "answer": "Não; potencial identificado, ativação ainda indisponível.",
+      "line": 40789,
+      "evidence": "Gênese de Horizonte identificada, mas inacessível até cumprir requisitos externos",
+      "pass": true
+    },
+    {
+      "question": "A classificação inaugural era hierarquia absoluta de poder?",
+      "answer": "Não.",
+      "line": 30567,
+      "evidence": "Classificação inaugural, baseada nas provas combinadas de duelo, defesa, mobilidade, terreno e cooperação. Não representa uma hierarquia absoluta de poder em todas as situações.",
+      "pass": true
+    },
+    {
+      "question": "A constituição definitiva foi concluída com o reconhecimento territorial?",
+      "answer": "Não; permanecia para deliberação posterior.",
+      "line": 38709,
+      "evidence": "A constituição definitiva permaneceria para deliberação posterior, inclusive nas sessões ainda pendentes da Assembleia dos 300.",
+      "pass": true
+    }
+  ],
+  "editorial_adversarial_checks": [
+    {
+      "case": "Promover alternativa não executada",
+      "ids": [
+        168,
+        169,
+        170,
+        171,
+        230,
+        243,
+        244,
+        261,
+        262,
+        263,
+        264,
+        270
+      ],
+      "allowed": [
+        "NON_NARRATIVE"
+      ],
+      "actual": [
+        "NON_NARRATIVE",
+        "NON_NARRATIVE",
+        "NON_NARRATIVE",
+        "NON_NARRATIVE",
+        "NON_NARRATIVE",
+        "NON_NARRATIVE",
+        "NON_NARRATIVE",
+        "NON_NARRATIVE",
+        "NON_NARRATIVE",
+        "NON_NARRATIVE",
+        "NON_NARRATIVE",
+        "NON_NARRATIVE"
+      ],
+      "pass": true
+    },
+    {
+      "case": "Atribuir concessão territorial à Casa Abraca",
+      "ids": [
+        271,
+        272,
+        273
+      ],
+      "allowed": [
+        "REPORT_ONLY"
+      ],
+      "actual": [
+        "REPORT_ONLY",
+        "REPORT_ONLY",
+        "REPORT_ONLY"
+      ],
+      "pass": true
+    },
+    {
+      "case": "Atribuir armadura de Kael a Edran",
+      "ids": [
+        26
+      ],
+      "allowed": [
+        "NOT_ATTRIBUTED"
+      ],
+      "actual": [
+        "NOT_ATTRIBUTED"
+      ],
+      "pass": true
+    },
+    {
+      "case": "Converter hipótese de origem divina ou vínculo fatal em fato",
+      "ids": [
+        79,
+        80,
+        81,
+        134
+      ],
+      "allowed": [
+        "HYPOTHESIS"
+      ],
+      "actual": [
+        "HYPOTHESIS",
+        "HYPOTHESIS",
+        "HYPOTHESIS",
+        "HYPOTHESIS"
+      ],
+      "pass": true
+    },
+    {
+      "case": "Transformar contexto editorial em poder ou governo",
+      "ids": [
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        300
+      ],
+      "allowed": [
+        "NON_NARRATIVE"
+      ],
+      "actual": [
+        "NON_NARRATIVE",
+        "NON_NARRATIVE",
+        "NON_NARRATIVE",
+        "NON_NARRATIVE",
+        "NON_NARRATIVE",
+        "NON_NARRATIVE",
+        "NON_NARRATIVE"
+      ],
+      "pass": true
+    },
+    {
+      "case": "Confundir sistema organizacional com entidade Sistema",
+      "ids": [
+        258
+      ],
+      "allowed": [
+        "NOT_ATTRIBUTED"
+      ],
+      "actual": [
+        "NOT_ATTRIBUTED"
+      ],
+      "pass": true
+    },
+    {
+      "case": "Transformar expansão futura de Gênese em capacidade já realizada",
+      "ids": [
+        303,
+        304,
+        307
+      ],
+      "allowed": [
+        "PARTIAL",
+        "NON_NARRATIVE"
+      ],
+      "actual": [
+        "PARTIAL",
+        "NON_NARRATIVE",
+        "NON_NARRATIVE"
+      ],
+      "pass": true
+    }
+  ],
+  "checks": {
+    "all_probes": true,
+    "all_adversarial": true,
+    "all_seven_receipts_no_promotion": true,
+    "all_previous_checks_passed": true,
+    "main_unchanged": true,
+    "engine_unchanged": true,
+    "only_staging_additions": true,
+    "all_candidate_evidence": true,
+    "all_profile_evidence": true,
+    "all_307_unique": true,
+    "all_236_jobs": true
+  },
+  "limitations": [
+    "First editorial reconciliation of known queues and inherited evidence is complete, not an exhaustive scene-by-scene extraction of the 40845-line book.",
+    "Native semantic_queue/ARQUITETO validators and fresh runtime replay were not executed in this session; contract reproduction is structural only.",
+    "No local Ollama executable or loopback inference endpoint available in session; no independent model/reviewer attestation.",
+    "The 26 profile proposals and 14 candidate identities remain editorial staging; no active Codex or typed event admission.",
+    "Historical Action 45887241154 and 705-test R36 regression evidence precede new staging files; not a new CI pass."
+  ],
+  "checkpoint": {
+    "book": 1,
+    "stage": "E/F gate",
+    "next": "Load original source and pinned registry, regenerate native semantic_queue jobs, compare job IDs and validate first-pass answers; independently adjudicate semantic and ARQUITETO role/recovery decisions, reconcile conflicting claims, review uncovered scenes/fields, perform evidence-gated typed admission in disposable projection, run native restore/regression and record F verdict. Only then advance Book II.",
+    "editorial_ledger_remaining": 0,
+    "arquiteto_discovery_remaining": 0,
+    "independent_ledger_targets_pending": 307,
+    "identity_admission_pending": 14,
+    "field_proposals_pending": 26,
+    "production_activated": false,
+    "head_changed": false
+  },
+  "canon_changed": false,
+  "production_activated": false
+}
