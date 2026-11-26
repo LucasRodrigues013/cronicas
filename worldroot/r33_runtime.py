@@ -85,6 +85,9 @@ def prepare_from_request(root,request):
     from .character_design import bind_request
     design=bind_request(root,request)
     if design is not None:packet["character_design"]=design
+    from .live_codex import bind_request as bind_codex
+    codex=bind_codex(root,request)
+    if codex is not None:packet["universal_codex"]=codex
     packet.pop("preparation_sha256")
     packet["request_sha256"]=digest(request)
     packet["preparation_sha256"]=digest(packet)
@@ -116,6 +119,9 @@ def verify_submission(root,head,payload):
     design=verify_binding(root,request,packet)
     r=release_review(root,head,payload)
     extra={}
+    from .live_codex import validate_submission as validate_codex_submission
+    codex=validate_codex_submission(root,request,packet,payload)
+    if codex is not None:extra.update(codex)
     if design is not None:extra["character_design_sha256"]=design["sha256"]
     if payload.get("metadata",{}).get("worldroot_revision") in (34,35) or "r34_review" in payload:
         if payload.get("metadata",{}).get("worldroot_revision") not in (34,35):raise ValueError("R34 review requires revision 34 or 35 metadata")
