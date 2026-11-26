@@ -1,0 +1,120 @@
+{
+  "schema": "worldroot-r36-native-validation-attempt-v1",
+  "book": 2,
+  "stage": "B",
+  "batch": 4,
+  "status": "BLOCKED_NATIVE_RUNNER_NO_PROMOTION",
+  "previous_official_checkpoint": "038a31ca116bfaa76d4a2f30b417906e46f61900",
+  "official_audit_branch_head": "25cb2568cde8d46d1ccc66f2495bddb73dd3ce7f",
+  "archive_head": "625afa955c64853bac94202fa5791a1c912d8332",
+  "engine": "3170905db607f89004ed3d62a064dbb092922080",
+  "draft": {
+    "path": "editorial/codex-staging/r36-book-ii-stage-b-batch-004-draft.json",
+    "blob": "0de8098ef25e798fb7f1e0b6dbb8fc6c433261cc",
+    "records": [
+      412,
+      426
+    ],
+    "groups": 6,
+    "candidate_field_updates": 18,
+    "discoveries": 10,
+    "author_directions": 2
+  },
+  "validation": {
+    "mode": "connector-backed deterministic verification in memory; not native Python certification",
+    "source": {
+      "bytes": 6823025,
+      "sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "sha256_recomputed": true,
+      "parts_git_sha1_recomputed": 6,
+      "parts_matching": 6,
+      "algorithm_abc_selftests": true
+    },
+    "ledger": {
+      "exact_anchors": 15,
+      "context_comparisons": 128,
+      "additional_evidence_comparisons": 200,
+      "groups_exact": true
+    },
+    "candidate_diff": {
+      "fields_total": 5923,
+      "changed_exactly": 18,
+      "unchanged": 5905,
+      "protected_fields_unchanged": 40,
+      "profiles": 192,
+      "base_ids_preserved": 174,
+      "links": 25,
+      "aerun_entities_unchanged_distinct": true
+    },
+    "naming": {
+      "existing_names_checked": 96,
+      "roster_rows": 104,
+      "proposal_collision_check_js": true,
+      "reference_matches_existing_overlay": true,
+      "roster_not_modified": true,
+      "native_revalidation_pending": true
+    },
+    "head": {
+      "day": 579,
+      "sequence": 50,
+      "unchanged": true
+    },
+    "native": {
+      "workflow_commit": "89edae4c8c400dc84d7dbf24b545512e11edb177",
+      "workflow_blob": "2ae694ce1d0c66f26fd6f52b2d2323e55a654da2",
+      "run_id": 45905693449,
+      "attempts": [
+        {
+          "attempt": 1,
+          "job_id": 140201749936,
+          "conclusion": "failure",
+          "steps_returned": 0
+        },
+        {
+          "attempt": 2,
+          "job_id": 140202010566,
+          "conclusion": "failure",
+          "steps_returned": 0
+        }
+      ],
+      "first_job_logs_unavailable": "404 BlobNotFound",
+      "root_cause": "Not established; job did not report executed steps",
+      "load_overlay_run_confirmed": false,
+      "native_unit_tests_confirmed": false
+    }
+  },
+  "coverage": {
+    "official_reviewed": 104,
+    "official_groups": 86,
+    "official_remaining": 157,
+    "after_successful_promotion_only": {
+      "reviewed": 119,
+      "groups": 92,
+      "remaining": 142
+    }
+  },
+  "next": {
+    "official": {
+      "ledger_id": 412,
+      "global_line": 72845,
+      "group": [
+        412,
+        413,
+        414,
+        415
+      ]
+    },
+    "action": "Run pinned isolated workflow successfully or execute the same native checks in authenticated Codex checkout. Verify logs and exact candidate blobs before promotion; then archive official checkpoint and resume B005.",
+    "after_validation": {
+      "ledger_id": 427,
+      "global_line": 74727,
+      "group": [
+        427
+      ]
+    }
+  },
+  "canon_changed": false,
+  "production_activated": false,
+  "production_hold": true,
+  "semantic_certification": false
+}
