@@ -1,0 +1,125 @@
+{
+  "schema": "worldroot-r36-author-naming-and-book-cycle-handoff-v1",
+  "engine_commit": "19d4be7759ba7c0d68adad8eb969414f78caaef3",
+  "editorial_review_commit": "a41cae7aa8f51148e24cdce59da9256d8d502826",
+  "previous_receipt": "4a9e3bfb6cf91972050cce2cb570b21dcc1f59e8",
+  "archive_commit": "34987b0771ec961b4a1c0c6cf203843b113dc000",
+  "main_commit": "9b34bc491275028fe32fff018b405ab94dcc5c8a",
+  "author_direction": {
+    "institute": {
+      "id": "aerun-instituto",
+      "display": "Instituto AERÚN"
+    },
+    "dragon": {
+      "id": "aerun-guardiao",
+      "display": "dragão AERÚN"
+    },
+    "historical_sources": "IMMUTABLE",
+    "homonyms": "PRESERVE_DISTINCT_IDS_AND_REVIEW_EACH_MENTION",
+    "no_new_architecture": true
+  },
+  "metrics": {
+    "tests": 705,
+    "identity_groups": 188,
+    "editorial_candidates": 86,
+    "held": 102,
+    "institute": 83,
+    "dragon": 2,
+    "tessa_maren": 1,
+    "aerun_held": 29,
+    "campo_base_held": 73,
+    "explicit_aerun_candidate_groups": 6,
+    "aerun_context_required_groups": 108,
+    "ledger_scan": {
+      "jobs_examined": 6368,
+      "jobs_mentioning_aerun": 265,
+      "targets_in_matching_jobs": 514,
+      "source_count": 48,
+      "unique_source_lines": 250,
+      "explicit_institute_jobs": 24,
+      "context_required_jobs": 241,
+      "method": "Local read-only scan of Inc09 verified jobs.jsonl, same conservative literal regex; not semantic judgment."
+    },
+    "independent_models": 0,
+    "semantic_certified": 0,
+    "canon_promotions": 0
+  },
+  "runs": {
+    "inc09_r32_pass": 45892736509,
+    "inc09_r33_pass": 45892736456,
+    "current_regression_pass": 45893892385,
+    "current_authority_pass": 45893892406,
+    "current_private_reconciliation_pass": 45893892331,
+    "current_r32_in_progress": 45893892335,
+    "current_r33_in_progress": 45893892353
+  },
+  "artifact": {
+    "id": 15152836797,
+    "expires": "2026-12-03T20:50:49Z",
+    "size": 2726686
+  },
+  "historical_cycle": {
+    "book": 1,
+    "stage": "E",
+    "status": "PARTIAL_RUNTIME_VERIFIED_NOT_HOMOLOGATED",
+    "source": {
+      "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+      "git_blob": "d64d5db0e33a1c0a6a6d14a8be44709a3bbac2",
+      "lines": [
+        1,
+        40845
+      ],
+      "days": [
+        1,
+        90
+      ],
+      "chapters": 38,
+      "raw_words": 171829
+    },
+    "preserved_versions": [
+      {
+        "version": 1,
+        "blob": "18e40721147d57657e9c44440c30eb031a50e7a8"
+      },
+      {
+        "version": 2,
+        "blob": "0b404989f34e3387242d247f8f846edeac5a3ce9"
+      },
+      {
+        "version": 3,
+        "blob": "43c5db1808e4a03b7fa3df2c38fe8236c01b0c16"
+      },
+      {
+        "version": 4,
+        "blob": "607a4a9de98c1315759bba98fc189b9bcf2ea484"
+      }
+    ],
+    "stage_e_run": 45887241154,
+    "stage_e_engine_commit": "e1ebc09789ce5af6ce2ba1989ced75a8f2994363",
+    "stage_e_job": 140140877633,
+    "stage_e_archive_pin": "2ddb6f5707ddd1b8d06f5dfe37d936f04802090c",
+    "ledger_ids": [
+      1,
+      307
+    ],
+    "ledger_targets": 307,
+    "grouped_jobs": 236,
+    "discovery_candidates": 142,
+    "roster": 38,
+    "sections": 457,
+    "graph_edges": 22,
+    "identity_candidates": 14,
+    "projection_replay_restore": true,
+    "projection_events": 0,
+    "semantic_certification": false,
+    "next": "Finish stage E semantic adjudication and typed admission before Book II; retain prior evidence and use existing auditor."
+  },
+  "limitations": [
+    "No independent model available; lexical hints and editorial decisions are not semantic certification.",
+    "Future preparation rule applies after D580 and does not alter archived preparations.",
+    "Changed local semantic prompt is bound to new resume manifest; keep prior receipts, do not silently mix old and new prompt results.",
+    "No source rewriting, no production activation, no D581."
+  ],
+  "decision": "HOLD_PRODUCTION_RESUME_BOOK_I_STAGE_E",
+  "canon_changed": false
+}
