@@ -407,6 +407,15 @@ def validate_submission(root,request,packet,payload):
     if overlay and overlay["require_sync"]:
         from .natural_codex import validate_scene_sync
         scene_sync=validate_scene_sync(payload.get("r33_review",{}).get("codex_sync"),delta,payload["prose"],ids)
+    if overlay and packet["universal_codex"].get("arquiteto",{}).get("naming"):
+        from .naming import validate as validate_name_identity
+        new_rows=delta["new_entities"]
+        combined=rows+new_rows
+        regions={r["id"] for r in combined if "Atlas mundial" in r.get("domains",[])}
+        species={s["id"] for s in data["species"]}
+        for card in new_rows:
+            if "Personagens" in card["domains"]:
+                validate_name_identity(card,combined,regions,species)
     # A literal mention is not necessarily a physical presence. Explicitly triage focal cast.
     covered={e["entity_id"] for e in delta["events"]}|{n["id"] for n in delta["new_entities"]}
     # Named dialogue is a candidate identity, not proof of physical location.

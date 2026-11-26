@@ -101,7 +101,8 @@ def preparation_context(overlay,focal):
                 if task["field"]=="knowledge" or cards[ident]["fields"][task["field"]].get("scope") in PRIVATE_SCOPES:continue
                 tasks.append({k:v for k,v in task.items() if k!="basis_fields"})
         results.append({"name":f["name"],"ids":ids,"route":status,"tasks":tasks})
-    return {"schema":SCHEMA,"role":"ARQUITETO_EDITORIAL","policy":"docs/r35-arquiteto.md","focal":results,"require_semantic_review":True,"allow_prospective_design":True,"canon_promotion":False}
+    from .naming import policy_packet
+    return {"schema":SCHEMA,"role":"ARQUITETO_EDITORIAL","policy":"docs/r35-arquiteto.md","focal":results,"require_semantic_review":True,"allow_prospective_design":True,"canon_promotion":False,"naming":policy_packet()}
 
 def validate_legacy_recovery(row,review,text):
     """Legacy source-role adjudication is distinct from canonical promotion.
