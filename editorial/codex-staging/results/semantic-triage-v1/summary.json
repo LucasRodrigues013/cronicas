@@ -1,0 +1,179 @@
+{
+  "schema": "worldroot-r35-semantic-triage-v1",
+  "original_db_sha256": "b1c870b474f067eaf990d0daba7b41ef2b04423e52b44505ab7a56ca6c59744c",
+  "ledger_summary_sha256": "1cc5c9a8b45bd380772c584f587b3c02e44c2ad18622559550d502ad8c35888c",
+  "labels_sha256": "73223cbde959a6a15db604db94fb38bd17ad299fa02de2d2a763f592d2802ad6",
+  "total": 9229,
+  "machine_routed": 9229,
+  "manual_first_pass": 100,
+  "independent_semantic_review": 0,
+  "training_anchor_groups": 78,
+  "evaluation": "leave-one-anchor-group-out; all labels from first historical lot; not independent or representative held-out source validation",
+  "accuracy_against_first_pass": 0.46,
+  "confusion": [
+    {
+      "truth": "HEADING_ONLY",
+      "prediction": "ORDER_ONLY",
+      "n": 1
+    },
+    {
+      "truth": "HEADING_ONLY",
+      "prediction": "REPORT_ONLY",
+      "n": 1
+    },
+    {
+      "truth": "HYPOTHESIS",
+      "prediction": "HYPOTHESIS",
+      "n": 2
+    },
+    {
+      "truth": "HYPOTHESIS",
+      "prediction": "NOT_ATTRIBUTED",
+      "n": 4
+    },
+    {
+      "truth": "HYPOTHESIS",
+      "prediction": "SUPPORTED_CANDIDATE",
+      "n": 1
+    },
+    {
+      "truth": "NON_NARRATIVE",
+      "prediction": "NON_NARRATIVE",
+      "n": 15
+    },
+    {
+      "truth": "NON_NARRATIVE",
+      "prediction": "NOT_ATTRIBUTED",
+      "n": 4
+    },
+    {
+      "truth": "NON_NARRATIVE",
+      "prediction": "SUPPORTED_CANDIDATE",
+      "n": 1
+    },
+    {
+      "truth": "NOT_ATTRIBUTED",
+      "prediction": "HYPOTHESIS",
+      "n": 1
+    },
+    {
+      "truth": "NOT_ATTRIBUTED",
+      "prediction": "NON_NARRATIVE",
+      "n": 3
+    },
+    {
+      "truth": "NOT_ATTRIBUTED",
+      "prediction": "NOT_ATTRIBUTED",
+      "n": 11
+    },
+    {
+      "truth": "NOT_ATTRIBUTED",
+      "prediction": "REPORT_ONLY",
+      "n": 2
+    },
+    {
+      "truth": "NOT_ATTRIBUTED",
+      "prediction": "SUPPORTED_CANDIDATE",
+      "n": 12
+    },
+    {
+      "truth": "ORDER_ONLY",
+      "prediction": "HEADING_ONLY",
+      "n": 2
+    },
+    {
+      "truth": "ORDER_ONLY",
+      "prediction": "NON_NARRATIVE",
+      "n": 1
+    },
+    {
+      "truth": "PROPOSAL_ONLY",
+      "prediction": "NON_NARRATIVE",
+      "n": 1
+    },
+    {
+      "truth": "REPORT_ONLY",
+      "prediction": "HEADING_ONLY",
+      "n": 1
+    },
+    {
+      "truth": "REPORT_ONLY",
+      "prediction": "HYPOTHESIS",
+      "n": 1
+    },
+    {
+      "truth": "REPORT_ONLY",
+      "prediction": "NOT_ATTRIBUTED",
+      "n": 2
+    },
+    {
+      "truth": "REPORT_ONLY",
+      "prediction": "REPORT_ONLY",
+      "n": 4
+    },
+    {
+      "truth": "REPORT_ONLY",
+      "prediction": "SUPPORTED_CANDIDATE",
+      "n": 3
+    },
+    {
+      "truth": "SUMMARY_ONLY",
+      "prediction": "NON_NARRATIVE",
+      "n": 4
+    },
+    {
+      "truth": "SUMMARY_ONLY",
+      "prediction": "NOT_ATTRIBUTED",
+      "n": 1
+    },
+    {
+      "truth": "SUMMARY_ONLY",
+      "prediction": "SUPPORTED_CANDIDATE",
+      "n": 1
+    },
+    {
+      "truth": "SUPPORTED_CANDIDATE",
+      "prediction": "HYPOTHESIS",
+      "n": 1
+    },
+    {
+      "truth": "SUPPORTED_CANDIDATE",
+      "prediction": "NOT_ATTRIBUTED",
+      "n": 5
+    },
+    {
+      "truth": "SUPPORTED_CANDIDATE",
+      "prediction": "SUMMARY_ONLY",
+      "n": 1
+    },
+    {
+      "truth": "SUPPORTED_CANDIDATE",
+      "prediction": "SUPPORTED_CANDIDATE",
+      "n": 14
+    }
+  ],
+  "routes": {
+    "POSSIBLE_EDITORIAL_METATEXT": 92,
+    "ENTITY_FIELD_ATTRIBUTION_REVIEW": 5380,
+    "MODALITY_REVIEW": 2621,
+    "NEEDS_WIDER_CONTEXT": 879,
+    "REPORT_ATTRIBUTION_REVIEW": 106,
+    "POSSIBLE_HEADING_OR_OPTION": 6,
+    "DRAFT_ISOLATED": 145
+  },
+  "ml_suggestions": {
+    "NON_NARRATIVE": 908,
+    "SUMMARY_ONLY": 178,
+    "NOT_ATTRIBUTED": 3255,
+    "HYPOTHESIS": 361,
+    "PROPOSAL_ONLY": 74,
+    "SUPPORTED_CANDIDATE": 3028,
+    "HEADING_ONLY": 945,
+    "ORDER_ONLY": 99,
+    "REPORT_ONLY": 381
+  },
+  "seconds": 2.121,
+  "backend": "offline TF-IDF + weighted 5-nearest-neighbor",
+  "automatic_canon_promotion": false,
+  "note": "Predictions merely prioritize human/model semantic interpretation; confidence is not calibrated probability. Never substitute for claim entailment."
+}

@@ -1,0 +1,44 @@
+name: R35 offline semantic triage
+on:
+  push:
+    branches: [audit/universal-codex-d580]
+    paths:
+      - 'tools/r35_semantic_triage.py'
+      - '.github/workflows/r35-semantic-triage.yml'
+permissions:
+  contents: write
+concurrency:
+  group: r35-semantic-triage
+  cancel-in-progress: false
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          path: audit
+          persist-credentials: false
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: d47deed2a459ed014b77aa098600793425c83ccb
+          path: labels
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Run offline ML routing and grouped evaluation
+        run: |
+          python audit/tools/r35_semantic_triage.py audit labels/editorial/codex-staging/r35-arquiteto-semantic-lot-001.json
+          git -C audit diff --exit-code -- canon episodes history editorial/codex-staging/results/codex.sqlite editorial/codex-staging/results/exact-context-ledger-v1
+      - name: Publish private routing only
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git -C audit add -- editorial/codex-staging/results/semantic-triage-v1/
+          git -C audit config user.name "github-actions[bot]"
+          git -C audit config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C audit commit -m "audit: offline ML route all 9229 original contexts, no semantic promotion"
+          auth_header="$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)"
+          git -C audit -c "http.extraheader=AUTHORIZATION: basic $auth_header" push origin HEAD:refs/heads/audit/universal-codex-d580

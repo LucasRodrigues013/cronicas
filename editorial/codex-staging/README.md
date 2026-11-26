@@ -1,0 +1,2 @@
+# Universal Codex — pré-R36
+Staging isolated from main and story-archive. Full verified history scan and closed/pending projection. Lexical matches are candidate context, never attributed facts. Visual metadata is separate from narrative; only five sheets visually inspected. Existing R35 unchanged. Build results contain catalog, unresolved candidate queue, SQLite FTS, audit and read-only R35 focal preview. Production evolution only after semantic review, conflict resolution, and separate approval. No author choice or narrative created.

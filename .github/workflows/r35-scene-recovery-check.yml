@@ -1,0 +1,82 @@
+name: R35 private scene and recovery integration
+on:
+  pull_request:
+    branches: [story-archive]
+    paths:
+      - 'tools/r36_book_i_native_homologation_check.py'
+      - '.github/workflows/r35-scene-recovery-check.yml'
+  push:
+    branches: [audit/universal-codex-d580]
+    paths:
+      - 'tools/r35_scene_recovery_check.py'
+      - 'tools/r36_book_i_native_homologation_check.py'
+      - '.github/workflows/r35-scene-recovery-check.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          path: audit
+          persist-credentials: false
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: 2ddb6f5707ddd1b8d06f5dfe37d936f04802090c
+          path: archive
+          persist-credentials: false
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: 01a44ba424dc3b3434229b0f69c35a066cdf1da7
+          path: engine
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Source readback, exact identities, bounded scene packet, semantic jobs
+        env:
+          PYTHONPATH: engine
+        run: |
+          python audit/tools/r35_scene_recovery_check.py archive audit
+          git -C archive diff --exit-code
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: 19d4be7759ba7c0d68adad8eb969414f78caaef3
+          path: r36
+          persist-credentials: false
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: 476becf131a794af21a7616d5ed5ad6d436311fc
+          path: staging
+          persist-credentials: false
+      - name: Book I native R36 E/F gate
+        env:
+          PYTHONPATH: r36
+        run: |
+          python audit/tools/r36_book_i_native_homologation_check.py archive audit staging
+          git -C archive diff --exit-code
+          git -C r36 diff --exit-code
+          git -C staging diff --exit-code
+      - name: Full pinned R36 regression suite
+        working-directory: r36
+        run: timeout --signal=TERM --kill-after=5s 60s python -u -m unittest discover -s tests -v
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: bc4a32c80da7a1138e42598dd2f050562f7c58f6
+          path: revised-archive
+          persist-credentials: false
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: e93d6da751491a571f72d8cdbbc415dd6bd74cda
+          path: revised-staging
+          persist-credentials: false
+      - name: Native author canon-first profile overlay
+        env:
+          PYTHONPATH: r36
+        run: |
+          python audit/tools/r36_book_i_author_profiles_check.py revised-archive revised-staging
+          git -C revised-archive diff --exit-code
+          git -C revised-staging diff --exit-code

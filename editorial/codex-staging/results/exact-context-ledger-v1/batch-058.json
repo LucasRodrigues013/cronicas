@@ -1,0 +1,5489 @@
+[
+ {
+  "original_id": 5701,
+  "entity_id": "nixa",
+  "field": "location",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 480,
+  "anchor": "**NIXA —** Ou estava com pressa.",
+  "anchor_sha256": "991479deea66b723070fcdd8445f3976626c5614fb1225409a85073a93795652",
+  "context": [
+   {
+    "line": 476,
+    "text": "Talvez demais."
+   },
+   {
+    "line": 477,
+    "text": ""
+   },
+   {
+    "line": 478,
+    "text": "**RAEL —** Alguém fez questão de deixar isto evidente."
+   },
+   {
+    "line": 479,
+    "text": ""
+   },
+   {
+    "line": 480,
+    "text": "**NIXA —** Ou estava com pressa."
+   },
+   {
+    "line": 481,
+    "text": ""
+   },
+   {
+    "line": 482,
+    "text": "Téria observou a encosta."
+   },
+   {
+    "line": 483,
+    "text": ""
+   },
+   {
+    "line": 484,
+    "text": "**TÉRIA —** Se nos querem aqui, não podemos decidir que a outra estrada é segura só porque esta parece falsa."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5702,
+  "entity_id": "ira",
+  "field": "role",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 488,
+  "anchor": "**ÍRIA —** Há sinal recente de foco. Isso prova passagem de equipamento. Não prova que o comando inteiro esteja aqui.",
+  "anchor_sha256": "1a56092d61dd183ad471710dcdac59fa534a268e62f820b842db1c8bf9c97cee",
+  "context": [
+   {
+    "line": 484,
+    "text": "**TÉRIA —** Se nos querem aqui, não podemos decidir que a outra estrada é segura só porque esta parece falsa."
+   },
+   {
+    "line": 485,
+    "text": ""
+   },
+   {
+    "line": 486,
+    "text": "Íria abriu o instrumento portátil de leitura autorizado por AERÚN. A emissão arcana era fraca e não permitia descobrir todas as posições inimigas; mostrava apenas um resíduo compatível com equipamentos que haviam sido usados na linha de cerco."
+   },
+   {
+    "line": 487,
+    "text": ""
+   },
+   {
+    "line": 488,
+    "text": "**ÍRIA —** Há sinal recente de foco. Isso prova passagem de equipamento. Não prova que o comando inteiro esteja aqui."
+   },
+   {
+    "line": 489,
+    "text": ""
+   },
+   {
+    "line": 490,
+    "text": "Perto de uma pedra, Sévero encontrou uma placa quebrada com uma designação de transporte."
+   },
+   {
+    "line": 491,
+    "text": ""
+   },
+   {
+    "line": 492,
+    "text": "A inscrição parecia apontar para uma retirada ao oeste."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5703,
+  "entity_id": "nixa",
+  "field": "behavior",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 516,
+  "anchor": "**NIXA —** Não sigam a estrada oeste como se fosse o caminho principal. Observamos uma passagem menor com movimento compatível com retirada real, mas ainda precisamos confirmar o destino.",
+  "anchor_sha256": "7b3709f452739d650f50f57fe2ce0e9980faea21136b604ae65a8034e410d01d",
+  "context": [
+   {
+    "line": 512,
+    "text": "**RAEL —** Agora temos uma diferença que merece atenção."
+   },
+   {
+    "line": 513,
+    "text": ""
+   },
+   {
+    "line": 514,
+    "text": "Nixa chamou Varo."
+   },
+   {
+    "line": 515,
+    "text": ""
+   },
+   {
+    "line": 516,
+    "text": "**NIXA —** Não sigam a estrada oeste como se fosse o caminho principal. Observamos uma passagem menor com movimento compatível com retirada real, mas ainda precisamos confirmar o destino."
+   },
+   {
+    "line": 517,
+    "text": ""
+   },
+   {
+    "line": 518,
+    "text": "A resposta veio quase imediata."
+   },
+   {
+    "line": 519,
+    "text": ""
+   },
+   {
+    "line": 520,
+    "text": "**VARO —** Recebido. Seguramos as duas saídas conhecidas sem avançar além do reconhecimento. Bom trabalho."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5704,
+  "entity_id": "nixa",
+  "field": "relationships",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 522,
+  "anchor": "Nixa olhou os companheiros.",
+  "anchor_sha256": "ca6b69bba5807fc4538fe4bccb217dc5c70266c24cf092495241b3a83f7e9723",
+  "context": [
+   {
+    "line": 518,
+    "text": "A resposta veio quase imediata."
+   },
+   {
+    "line": 519,
+    "text": ""
+   },
+   {
+    "line": 520,
+    "text": "**VARO —** Recebido. Seguramos as duas saídas conhecidas sem avançar além do reconhecimento. Bom trabalho."
+   },
+   {
+    "line": 521,
+    "text": ""
+   },
+   {
+    "line": 522,
+    "text": "Nixa olhou os companheiros."
+   },
+   {
+    "line": 523,
+    "text": ""
+   },
+   {
+    "line": 524,
+    "text": "**NIXA —** Vamos descobrir onde esse caminho termina."
+   },
+   {
+    "line": 525,
+    "text": ""
+   },
+   {
+    "line": 526,
+    "text": "A guerra final não seria vencida por uma adivinhação conveniente."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5705,
+  "entity_id": "astra",
+  "field": "behavior",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 536,
+  "anchor": "Astra havia passado parte da madrugada revendo as leituras do Selo Oco capturado.",
+  "anchor_sha256": "32893d4ef10f52f6483304202e4a2f6fc73f3f1aaab040e21a609659afedad40",
+  "context": [
+   {
+    "line": 532,
+    "text": "## VIII — Miren recusou uma descoberta que não era dela"
+   },
+   {
+    "line": 533,
+    "text": ""
+   },
+   {
+    "line": 534,
+    "text": "**DIA 553 · 08h54 — INSTITUTO AERÚN, LABORATÓRIO EXTERNO**"
+   },
+   {
+    "line": 535,
+    "text": ""
+   },
+   {
+    "line": 536,
+    "text": "Astra havia passado parte da madrugada revendo as leituras do Selo Oco capturado."
+   },
+   {
+    "line": 537,
+    "text": ""
+   },
+   {
+    "line": 538,
+    "text": "A peça permanecia isolada no Passo dos Moinhos. Ninguém a transportara inteira para o instituto nem abrira seu núcleo por impaciência."
+   },
+   {
+    "line": 539,
+    "text": ""
+   },
+   {
+    "line": 540,
+    "text": "As amostras seguras estavam em recipientes identificados."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5706,
+  "entity_id": "astra",
+  "field": "behavior",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 546,
+  "anchor": "**ASTRA —** Confirmamos isso novamente. Também observamos que os focos da força hostil compartilham uma característica com o dispositivo do Selo. Não posso dizer que todos funcionam da mesma maneira.",
+  "anchor_sha256": "91b71ddb9a0a472ad553729470150345ceec81cc34caf84c25c0a5680fde9308",
+  "context": [
+   {
+    "line": 542,
+    "text": "Miren examinou um gráfico."
+   },
+   {
+    "line": 543,
+    "text": ""
+   },
+   {
+    "line": 544,
+    "text": "**MIREN —** A variação do foco perceptivo não coincide com a assinatura do Coração."
+   },
+   {
+    "line": 545,
+    "text": ""
+   },
+   {
+    "line": 546,
+    "text": "**ASTRA —** Confirmamos isso novamente. Também observamos que os focos da força hostil compartilham uma característica com o dispositivo do Selo. Não posso dizer que todos funcionam da mesma maneira."
+   },
+   {
+    "line": 547,
+    "text": ""
+   },
+   {
+    "line": 548,
+    "text": "Miren assentiu."
+   },
+   {
+    "line": 549,
+    "text": ""
+   },
+   {
+    "line": 550,
+    "text": "Um mensageiro da Legião havia pedido uma leitura adicional sobre uma posição próxima ao Vau Fundo."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5707,
+  "entity_id": "astra",
+  "field": "role",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 554,
+  "anchor": "**ASTRA —** Há uma emissão localizada, mas precisamos de outra observação para vinculá-la à coluna real. Um ponto no mapa não é uma pessoa. Muito menos um comandante.",
+  "anchor_sha256": "1853cb865f49b0784bc11449e77a2f8f52480ffad3d2304dd7f637a4848a2c4f",
+  "context": [
+   {
+    "line": 550,
+    "text": "Um mensageiro da Legião havia pedido uma leitura adicional sobre uma posição próxima ao Vau Fundo."
+   },
+   {
+    "line": 551,
+    "text": ""
+   },
+   {
+    "line": 552,
+    "text": "Astra ampliou os dados disponíveis."
+   },
+   {
+    "line": 553,
+    "text": ""
+   },
+   {
+    "line": 554,
+    "text": "**ASTRA —** Há uma emissão localizada, mas precisamos de outra observação para vinculá-la à coluna real. Um ponto no mapa não é uma pessoa. Muito menos um comandante."
+   },
+   {
+    "line": 555,
+    "text": ""
+   },
+   {
+    "line": 556,
+    "text": "Miren acionou os canais regionais autorizados e solicitou confirmação dos vigias já posicionados."
+   },
+   {
+    "line": 557,
+    "text": ""
+   },
+   {
+    "line": 558,
+    "text": "A resposta levou o tempo necessário."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5708,
+  "entity_id": "astra",
+  "field": "architecture",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 554,
+  "anchor": "**ASTRA —** Há uma emissão localizada, mas precisamos de outra observação para vinculá-la à coluna real. Um ponto no mapa não é uma pessoa. Muito menos um comandante.",
+  "anchor_sha256": "1853cb865f49b0784bc11449e77a2f8f52480ffad3d2304dd7f637a4848a2c4f",
+  "context": [
+   {
+    "line": 550,
+    "text": "Um mensageiro da Legião havia pedido uma leitura adicional sobre uma posição próxima ao Vau Fundo."
+   },
+   {
+    "line": 551,
+    "text": ""
+   },
+   {
+    "line": 552,
+    "text": "Astra ampliou os dados disponíveis."
+   },
+   {
+    "line": 553,
+    "text": ""
+   },
+   {
+    "line": 554,
+    "text": "**ASTRA —** Há uma emissão localizada, mas precisamos de outra observação para vinculá-la à coluna real. Um ponto no mapa não é uma pessoa. Muito menos um comandante."
+   },
+   {
+    "line": 555,
+    "text": ""
+   },
+   {
+    "line": 556,
+    "text": "Miren acionou os canais regionais autorizados e solicitou confirmação dos vigias já posicionados."
+   },
+   {
+    "line": 557,
+    "text": ""
+   },
+   {
+    "line": 558,
+    "text": "A resposta levou o tempo necessário."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5709,
+  "entity_id": "miren",
+  "field": "behavior",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 564,
+  "anchor": "Miren observou os dois registros.",
+  "anchor_sha256": "2aa96e2c800cece795b3736223c7268b772d9030f7cb1a4378fb7042370b1fa6",
+  "context": [
+   {
+    "line": 560,
+    "text": "Não foi instantânea."
+   },
+   {
+    "line": 561,
+    "text": ""
+   },
+   {
+    "line": 562,
+    "text": "Quando chegou, indicava movimento de equipamentos arcanos em uma área compatível com a trilha do riacho."
+   },
+   {
+    "line": 563,
+    "text": ""
+   },
+   {
+    "line": 564,
+    "text": "Miren observou os dois registros."
+   },
+   {
+    "line": 565,
+    "text": ""
+   },
+   {
+    "line": 566,
+    "text": "**MIREN —** Agora podemos avisar que há atividade técnica naquele setor. Isso ajuda Varo a decidir onde procurar. Não vamos dizer que encontramos Ithran porque gostamos da hipótese."
+   },
+   {
+    "line": 567,
+    "text": ""
+   },
+   {
+    "line": 568,
+    "text": "Astra assentiu."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5710,
+  "entity_id": "astra",
+  "field": "voice",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 576,
+  "anchor": "Astra sorriu.",
+  "anchor_sha256": "bdef752fe57c2a93b207f69b32c79831da1476563d668222cf05291af9dc08fa",
+  "context": [
+   {
+    "line": 572,
+    "text": "Miren olhou para a câmara selada, distante naquele mesmo complexo."
+   },
+   {
+    "line": 573,
+    "text": ""
+   },
+   {
+    "line": 574,
+    "text": "**MIREN —** Continua sendo nossa. A guerra não tem direito de forçar o Coração a abrir antes de termos evidência e consentimento para o risco."
+   },
+   {
+    "line": 575,
+    "text": ""
+   },
+   {
+    "line": 576,
+    "text": "Astra sorriu."
+   },
+   {
+    "line": 577,
+    "text": ""
+   },
+   {
+    "line": 578,
+    "text": "**ASTRA —** Gostei dessa frase."
+   },
+   {
+    "line": 579,
+    "text": ""
+   },
+   {
+    "line": 580,
+    "text": "**MIREN —** Pode anotá-la. Mas não coloque meu nome num monumento."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "SHORT_ANCHOR"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5711,
+  "entity_id": "miren",
+  "field": "behavior",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 590,
+  "anchor": "**MIREN —** Você assume a observação do campo. Eu vou à ala clínica.",
+  "anchor_sha256": "3ebfca936bca7b9e3d26cc3f4cecb9efbadafc45dfb360a18f55acd138d4cc77",
+  "context": [
+   {
+    "line": 586,
+    "text": "Uma pesquisadora ferida precisava de acompanhamento. Outra equipe solicitava instrumentos para verificar a exposição de um paciente vindo da estrada."
+   },
+   {
+    "line": 587,
+    "text": ""
+   },
+   {
+    "line": 588,
+    "text": "Miren fechou a projeção."
+   },
+   {
+    "line": 589,
+    "text": ""
+   },
+   {
+    "line": 590,
+    "text": "**MIREN —** Você assume a observação do campo. Eu vou à ala clínica."
+   },
+   {
+    "line": 591,
+    "text": ""
+   },
+   {
+    "line": 592,
+    "text": "**ASTRA —** E, se eu discordar da sua interpretação?"
+   },
+   {
+    "line": 593,
+    "text": ""
+   },
+   {
+    "line": 594,
+    "text": "**MIREN —** Vai me dizer. É por isso que trabalhamos juntas."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5712,
+  "entity_id": "astra",
+  "field": "relationships",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 596,
+  "anchor": "Astra observou a amiga sair.",
+  "anchor_sha256": "5830f958d863db186cf39f8300aee3a2c3519c0b50b08348c9a9804a0da16a6a",
+  "context": [
+   {
+    "line": 592,
+    "text": "**ASTRA —** E, se eu discordar da sua interpretação?"
+   },
+   {
+    "line": 593,
+    "text": ""
+   },
+   {
+    "line": 594,
+    "text": "**MIREN —** Vai me dizer. É por isso que trabalhamos juntas."
+   },
+   {
+    "line": 595,
+    "text": ""
+   },
+   {
+    "line": 596,
+    "text": "Astra observou a amiga sair."
+   },
+   {
+    "line": 597,
+    "text": ""
+   },
+   {
+    "line": 598,
+    "text": "AERÚN não era um apêndice do poder de Lucas."
+   },
+   {
+    "line": 599,
+    "text": ""
+   },
+   {
+    "line": 600,
+    "text": "Era uma instituição viva, governada por pessoas capazes de decidir até quando não procurar uma resposta."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5713,
+  "entity_id": "varo",
+  "field": "role",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 636,
+  "anchor": "**VARO —** A cidade não quer seus feridos. Quer impedir novos ataques. Onde está quem os comanda?",
+  "anchor_sha256": "a65382170e74c2fb177c8915aba95ba22cbbfa0fa87213e1619d8ebf699cbe1d",
+  "context": [
+   {
+    "line": 632,
+    "text": "**BRUM —** A sua também, se tentar atravessar sem falar."
+   },
+   {
+    "line": 633,
+    "text": ""
+   },
+   {
+    "line": 634,
+    "text": "Varo manteve a espada baixa."
+   },
+   {
+    "line": 635,
+    "text": ""
+   },
+   {
+    "line": 636,
+    "text": "**VARO —** A cidade não quer seus feridos. Quer impedir novos ataques. Onde está quem os comanda?"
+   },
+   {
+    "line": 637,
+    "text": ""
+   },
+   {
+    "line": 638,
+    "text": "Brum olhou a linha da Legião."
+   },
+   {
+    "line": 639,
+    "text": ""
+   },
+   {
+    "line": 640,
+    "text": "**BRUM —** Não vou entregar um homem a uma multidão furiosa."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5714,
+  "entity_id": "varo",
+  "field": "role",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 642,
+  "anchor": "**VARO —** Então fale com o comandante dela. Estou aqui.",
+  "anchor_sha256": "b83740c927ebaa02169bee5e95b29963a89955daa592a80209dbab1415215f55",
+  "context": [
+   {
+    "line": 638,
+    "text": "Brum olhou a linha da Legião."
+   },
+   {
+    "line": 639,
+    "text": ""
+   },
+   {
+    "line": 640,
+    "text": "**BRUM —** Não vou entregar um homem a uma multidão furiosa."
+   },
+   {
+    "line": 641,
+    "text": ""
+   },
+   {
+    "line": 642,
+    "text": "**VARO —** Então fale com o comandante dela. Estou aqui."
+   },
+   {
+    "line": 643,
+    "text": ""
+   },
+   {
+    "line": 644,
+    "text": "Brum hesitou."
+   },
+   {
+    "line": 645,
+    "text": ""
+   },
+   {
+    "line": 646,
+    "text": "O vento movimentou a névoa."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5715,
+  "entity_id": "varo",
+  "field": "location",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 652,
+  "anchor": "Varo sentiu o nome atravessar a distância.",
+  "anchor_sha256": "9ddbb1b816bae708bdc2de9f2d8db6ee9c2d4045b0006e9b7de6f7398a3730eb",
+  "context": [
+   {
+    "line": 648,
+    "text": "Atrás dele, soldados ajudavam companheiros com dificuldade de caminhar. Não eram reféns. Eram homens que haviam escolhido obedecer a um comandante e agora pagavam o preço daquela escolha."
+   },
+   {
+    "line": 649,
+    "text": ""
+   },
+   {
+    "line": 650,
+    "text": "**BRUM —** Ithran ainda dirige a retirada. Se eu abrir a passagem, ele perderá a última cobertura."
+   },
+   {
+    "line": 651,
+    "text": ""
+   },
+   {
+    "line": 652,
+    "text": "Varo sentiu o nome atravessar a distância."
+   },
+   {
+    "line": 653,
+    "text": ""
+   },
+   {
+    "line": 654,
+    "text": "Não o reconheceu de histórias antigas."
+   },
+   {
+    "line": 655,
+    "text": ""
+   },
+   {
+    "line": 656,
+    "text": "Reconheceu-o das provas que Nixa tentava confirmar."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5716,
+  "entity_id": "rhem",
+  "field": "behavior",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 678,
+  "anchor": "Um operador havia confundido o movimento de aproximação de Rhem com um ataque.",
+  "anchor_sha256": "5edf07aa7ff60b61de20da3895b6e515a35f9f49e9c8b8dfc71cfdfcce858e48",
+  "context": [
+   {
+    "line": 674,
+    "text": "Brum virou-se, furioso."
+   },
+   {
+    "line": 675,
+    "text": ""
+   },
+   {
+    "line": 676,
+    "text": "**BRUM —** QUEM DISPAROU?"
+   },
+   {
+    "line": 677,
+    "text": ""
+   },
+   {
+    "line": 678,
+    "text": "Um operador havia confundido o movimento de aproximação de Rhem com um ataque."
+   },
+   {
+    "line": 679,
+    "text": ""
+   },
+   {
+    "line": 680,
+    "text": "Não recebera ordem para romper a conversa."
+   },
+   {
+    "line": 681,
+    "text": ""
+   },
+   {
+    "line": 682,
+    "text": "Brum mandou abaixar a peça."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5717,
+  "entity_id": "varo",
+  "field": "behavior",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 686,
+  "anchor": "Varo respirou.",
+  "anchor_sha256": "0e9e4b9a70849a6769b1a19c6d3f0d2cb0dcf20be29d8934d536ff776ec57836",
+  "context": [
+   {
+    "line": 682,
+    "text": "Brum mandou abaixar a peça."
+   },
+   {
+    "line": 683,
+    "text": ""
+   },
+   {
+    "line": 684,
+    "text": "A tensão aumentou."
+   },
+   {
+    "line": 685,
+    "text": ""
+   },
+   {
+    "line": 686,
+    "text": "Varo respirou."
+   },
+   {
+    "line": 687,
+    "text": ""
+   },
+   {
+    "line": 688,
+    "text": "**VARO —** Não vou fingir que isso não aconteceu."
+   },
+   {
+    "line": 689,
+    "text": ""
+   },
+   {
+    "line": 690,
+    "text": "**BRUM —** Nem eu."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "SHORT_ANCHOR"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5718,
+  "entity_id": "kael",
+  "field": "location",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 720,
+  "anchor": "Kael recebera um pedido de autorização para abrir um espaço de custódia temporária aos capturados que estavam chegando.",
+  "anchor_sha256": "8e154bd1dcddf8f1919e4810595f944607b836251f14147020341d82bb477638",
+  "context": [
+   {
+    "line": 716,
+    "text": "## X — O rei que Lucas não quis ser"
+   },
+   {
+    "line": 717,
+    "text": ""
+   },
+   {
+    "line": 718,
+    "text": "**DIA 553 · 10h22 — TORRE DE CONTROLE DA PASSAGEM NORTE**"
+   },
+   {
+    "line": 719,
+    "text": ""
+   },
+   {
+    "line": 720,
+    "text": "Kael recebera um pedido de autorização para abrir um espaço de custódia temporária aos capturados que estavam chegando."
+   },
+   {
+    "line": 721,
+    "text": ""
+   },
+   {
+    "line": 722,
+    "text": "Não era uma autorização para condená-los."
+   },
+   {
+    "line": 723,
+    "text": ""
+   },
+   {
+    "line": 724,
+    "text": "Era uma decisão de proteção, registro e cuidado."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5719,
+  "entity_id": "lysa",
+  "field": "powers",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 726,
+  "anchor": "Lysa acompanhava a operação de acolhimento. As famílias da estrada já tinham comida, transporte e locais para repousar, mas algumas perguntavam quando poderiam voltar aos próprios terrenos.",
+  "anchor_sha256": "a09086ba795cffdec0c1eb655b5ad48232ad365bd434c673f50e7025379986dd",
+  "context": [
+   {
+    "line": 722,
+    "text": "Não era uma autorização para condená-los."
+   },
+   {
+    "line": 723,
+    "text": ""
+   },
+   {
+    "line": 724,
+    "text": "Era uma decisão de proteção, registro e cuidado."
+   },
+   {
+    "line": 725,
+    "text": ""
+   },
+   {
+    "line": 726,
+    "text": "Lysa acompanhava a operação de acolhimento. As famílias da estrada já tinham comida, transporte e locais para repousar, mas algumas perguntavam quando poderiam voltar aos próprios terrenos."
+   },
+   {
+    "line": 727,
+    "text": ""
+   },
+   {
+    "line": 728,
+    "text": "**LYSA —** Não vamos declarar todas as propriedades seguras porque o Selo Oco foi capturado. Precisamos de inspeção local e consentimento. Também precisamos garantir que a retirada das forças hostis não nos faça esquecer os que moram além da cúpula."
+   },
+   {
+    "line": 729,
+    "text": ""
+   },
+   {
+    "line": 730,
+    "text": "Kael assentiu."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5720,
+  "entity_id": "lysa",
+  "field": "location",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 726,
+  "anchor": "Lysa acompanhava a operação de acolhimento. As famílias da estrada já tinham comida, transporte e locais para repousar, mas algumas perguntavam quando poderiam voltar aos próprios terrenos.",
+  "anchor_sha256": "a09086ba795cffdec0c1eb655b5ad48232ad365bd434c673f50e7025379986dd",
+  "context": [
+   {
+    "line": 722,
+    "text": "Não era uma autorização para condená-los."
+   },
+   {
+    "line": 723,
+    "text": ""
+   },
+   {
+    "line": 724,
+    "text": "Era uma decisão de proteção, registro e cuidado."
+   },
+   {
+    "line": 725,
+    "text": ""
+   },
+   {
+    "line": 726,
+    "text": "Lysa acompanhava a operação de acolhimento. As famílias da estrada já tinham comida, transporte e locais para repousar, mas algumas perguntavam quando poderiam voltar aos próprios terrenos."
+   },
+   {
+    "line": 727,
+    "text": ""
+   },
+   {
+    "line": 728,
+    "text": "**LYSA —** Não vamos declarar todas as propriedades seguras porque o Selo Oco foi capturado. Precisamos de inspeção local e consentimento. Também precisamos garantir que a retirada das forças hostis não nos faça esquecer os que moram além da cúpula."
+   },
+   {
+    "line": 729,
+    "text": ""
+   },
+   {
+    "line": 730,
+    "text": "Kael assentiu."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5721,
+  "entity_id": "kael",
+  "field": "voice",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 740,
+  "anchor": "Kael sorriu.",
+  "anchor_sha256": "f4e6a2ee9be5451b9b747001d5f02c795e5f14313a4d6b0fe398e2c272b4e93b",
+  "context": [
+   {
+    "line": 736,
+    "text": "O Criador ouviu a conversa antes de falar."
+   },
+   {
+    "line": 737,
+    "text": ""
+   },
+   {
+    "line": 738,
+    "text": "**LUCAS —** Se precisarem de um lugar protegido para os capturados, construo. Mas a responsabilidade pela custódia e pelos direitos deles não vai ser resolvida por eu dizer “GÊNESE”."
+   },
+   {
+    "line": 739,
+    "text": ""
+   },
+   {
+    "line": 740,
+    "text": "Kael sorriu."
+   },
+   {
+    "line": 741,
+    "text": ""
+   },
+   {
+    "line": 742,
+    "text": "**KAEL —** Obrigado. Isso evita uma discussão com pelo menos metade da cidade."
+   },
+   {
+    "line": 743,
+    "text": ""
+   },
+   {
+    "line": 744,
+    "text": "**LUCAS —** A outra metade vai discutir comigo porque os muros ficaram altos demais."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "SHORT_ANCHOR"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5722,
+  "entity_id": "lucas",
+  "field": "role",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 758,
+  "anchor": "**KAEL —** Lucas, algumas pessoas querem que você decida pessoalmente o que acontecerá com o comandante inimigo. Acham que ninguém além de você tem força para puni-lo.",
+  "anchor_sha256": "188f00a63e2d86817a94ae52fcd46dc7f4731607dafb32a0842dd58da7889416",
+  "context": [
+   {
+    "line": 754,
+    "text": "Kael riu."
+   },
+   {
+    "line": 755,
+    "text": ""
+   },
+   {
+    "line": 756,
+    "text": "Depois ficou sério."
+   },
+   {
+    "line": 757,
+    "text": ""
+   },
+   {
+    "line": 758,
+    "text": "**KAEL —** Lucas, algumas pessoas querem que você decida pessoalmente o que acontecerá com o comandante inimigo. Acham que ninguém além de você tem força para puni-lo."
+   },
+   {
+    "line": 759,
+    "text": ""
+   },
+   {
+    "line": 760,
+    "text": "Lucas parou."
+   },
+   {
+    "line": 761,
+    "text": ""
+   },
+   {
+    "line": 762,
+    "text": "Olhou para Kael, depois para Lysa."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5723,
+  "entity_id": "kael",
+  "field": "role",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 758,
+  "anchor": "**KAEL —** Lucas, algumas pessoas querem que você decida pessoalmente o que acontecerá com o comandante inimigo. Acham que ninguém além de você tem força para puni-lo.",
+  "anchor_sha256": "188f00a63e2d86817a94ae52fcd46dc7f4731607dafb32a0842dd58da7889416",
+  "context": [
+   {
+    "line": 754,
+    "text": "Kael riu."
+   },
+   {
+    "line": 755,
+    "text": ""
+   },
+   {
+    "line": 756,
+    "text": "Depois ficou sério."
+   },
+   {
+    "line": 757,
+    "text": ""
+   },
+   {
+    "line": 758,
+    "text": "**KAEL —** Lucas, algumas pessoas querem que você decida pessoalmente o que acontecerá com o comandante inimigo. Acham que ninguém além de você tem força para puni-lo."
+   },
+   {
+    "line": 759,
+    "text": ""
+   },
+   {
+    "line": 760,
+    "text": "Lucas parou."
+   },
+   {
+    "line": 761,
+    "text": ""
+   },
+   {
+    "line": 762,
+    "text": "Olhou para Kael, depois para Lysa."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5724,
+  "entity_id": "lucas",
+  "field": "voice",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 790,
+  "anchor": "Lucas sorriu.",
+  "anchor_sha256": "9eef1496e978bb5e8c84b1f35177b96554050096d0820dd8281207c60ba7057c",
+  "context": [
+   {
+    "line": 786,
+    "text": "Miren enviou uma mensagem autenticada naquele instante."
+   },
+   {
+    "line": 787,
+    "text": ""
+   },
+   {
+    "line": 788,
+    "text": "*Estamos trabalhando. Eu também. Volte inteiro.*"
+   },
+   {
+    "line": 789,
+    "text": ""
+   },
+   {
+    "line": 790,
+    "text": "Lucas sorriu."
+   },
+   {
+    "line": 791,
+    "text": ""
+   },
+   {
+    "line": 792,
+    "text": "**LUCAS —** Viu, NÓX? Até em guerra ela consegue ser a pessoa mais assustadora da minha vida."
+   },
+   {
+    "line": 793,
+    "text": ""
+   },
+   {
+    "line": 794,
+    "text": "*【NÓX — Isso parece ser dito com admiração.】*"
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "SHORT_ANCHOR"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5725,
+  "entity_id": "legiao",
+  "field": "powers",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 810,
+  "anchor": "Lanças de energia atingiram o chão diante da Legião.",
+  "anchor_sha256": "d52d234114d06fc80f9e8fcbd5f7c2497b202254326ad78c17c40d1e340941e2",
+  "context": [
+   {
+    "line": 806,
+    "text": "Então, da margem ocidental, uma formação inimiga avançou sem ter recebido a notícia da pausa."
+   },
+   {
+    "line": 807,
+    "text": ""
+   },
+   {
+    "line": 808,
+    "text": "Os escudos arcanos se ergueram em meia-lua."
+   },
+   {
+    "line": 809,
+    "text": ""
+   },
+   {
+    "line": 810,
+    "text": "Lanças de energia atingiram o chão diante da Legião."
+   },
+   {
+    "line": 811,
+    "text": ""
+   },
+   {
+    "line": 812,
+    "text": "Varo percebeu a mudança antes que se tornasse um massacre."
+   },
+   {
+    "line": 813,
+    "text": ""
+   },
+   {
+    "line": 814,
+    "text": "**VARO —** Escudos à frente! Não avancem sobre a linha dos feridos!"
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5726,
+  "entity_id": "legiao",
+  "field": "capabilities",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 810,
+  "anchor": "Lanças de energia atingiram o chão diante da Legião.",
+  "anchor_sha256": "d52d234114d06fc80f9e8fcbd5f7c2497b202254326ad78c17c40d1e340941e2",
+  "context": [
+   {
+    "line": 806,
+    "text": "Então, da margem ocidental, uma formação inimiga avançou sem ter recebido a notícia da pausa."
+   },
+   {
+    "line": 807,
+    "text": ""
+   },
+   {
+    "line": 808,
+    "text": "Os escudos arcanos se ergueram em meia-lua."
+   },
+   {
+    "line": 809,
+    "text": ""
+   },
+   {
+    "line": 810,
+    "text": "Lanças de energia atingiram o chão diante da Legião."
+   },
+   {
+    "line": 811,
+    "text": ""
+   },
+   {
+    "line": 812,
+    "text": "Varo percebeu a mudança antes que se tornasse um massacre."
+   },
+   {
+    "line": 813,
+    "text": ""
+   },
+   {
+    "line": 814,
+    "text": "**VARO —** Escudos à frente! Não avancem sobre a linha dos feridos!"
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5727,
+  "entity_id": "nox",
+  "field": "location",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 850,
+  "anchor": "Nesse instante, Lucas chegou ao alto da passagem com NÓX.",
+  "anchor_sha256": "c52db7103a30e02d859ad6d1ac2f2ccd67046573959549db00ef186adaa4585c",
+  "context": [
+   {
+    "line": 846,
+    "text": "Alguns obedeceram."
+   },
+   {
+    "line": 847,
+    "text": ""
+   },
+   {
+    "line": 848,
+    "text": "Outros hesitaram."
+   },
+   {
+    "line": 849,
+    "text": ""
+   },
+   {
+    "line": 850,
+    "text": "Nesse instante, Lucas chegou ao alto da passagem com NÓX."
+   },
+   {
+    "line": 851,
+    "text": ""
+   },
+   {
+    "line": 852,
+    "text": "A armadura viva olhou o campo."
+   },
+   {
+    "line": 853,
+    "text": ""
+   },
+   {
+    "line": 854,
+    "text": "*【NÓX — Há combatentes e feridos misturados na margem.】*"
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5728,
+  "entity_id": "lucas",
+  "field": "location",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 850,
+  "anchor": "Nesse instante, Lucas chegou ao alto da passagem com NÓX.",
+  "anchor_sha256": "c52db7103a30e02d859ad6d1ac2f2ccd67046573959549db00ef186adaa4585c",
+  "context": [
+   {
+    "line": 846,
+    "text": "Alguns obedeceram."
+   },
+   {
+    "line": 847,
+    "text": ""
+   },
+   {
+    "line": 848,
+    "text": "Outros hesitaram."
+   },
+   {
+    "line": 849,
+    "text": ""
+   },
+   {
+    "line": 850,
+    "text": "Nesse instante, Lucas chegou ao alto da passagem com NÓX."
+   },
+   {
+    "line": 851,
+    "text": ""
+   },
+   {
+    "line": 852,
+    "text": "A armadura viva olhou o campo."
+   },
+   {
+    "line": 853,
+    "text": ""
+   },
+   {
+    "line": 854,
+    "text": "*【NÓX — Há combatentes e feridos misturados na margem.】*"
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5729,
+  "entity_id": "serakh",
+  "field": "location",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1030,
+  "anchor": "**ILVAR —** O pacote a Serakh partiu. Não temos confirmação de entrega.",
+  "anchor_sha256": "d026d7b23b9106b22a72c0ab7c14f8f9f3b5c49bbb2295408a20515f238450e9",
+  "context": [
+   {
+    "line": 1026,
+    "text": "Brum não soube responder."
+   },
+   {
+    "line": 1027,
+    "text": ""
+   },
+   {
+    "line": 1028,
+    "text": "Uma voz veio da porta."
+   },
+   {
+    "line": 1029,
+    "text": ""
+   },
+   {
+    "line": 1030,
+    "text": "**ILVAR —** O pacote a Serakh partiu. Não temos confirmação de entrega."
+   },
+   {
+    "line": 1031,
+    "text": ""
+   },
+   {
+    "line": 1032,
+    "text": "Ithran assentiu."
+   },
+   {
+    "line": 1033,
+    "text": ""
+   },
+   {
+    "line": 1034,
+    "text": "**ITHRAN —** Então o general saberá do que aconteceu se o mensageiro conseguir completar o caminho. Se não conseguir, terá de aprender por outro relato legítimo."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5730,
+  "entity_id": "legiao",
+  "field": "role",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1128,
+  "anchor": "A mão do comandante da Legião apertou a espada.",
+  "anchor_sha256": "29eab1f8777bd357d71d0aad3f9b81f749db29f822446bc503af138e1464bd7d",
+  "context": [
+   {
+    "line": 1124,
+    "text": "Ithran surgiu na margem, sem esconder-se atrás de outro homem."
+   },
+   {
+    "line": 1125,
+    "text": ""
+   },
+   {
+    "line": 1126,
+    "text": "Varo o avistou."
+   },
+   {
+    "line": 1127,
+    "text": ""
+   },
+   {
+    "line": 1128,
+    "text": "A mão do comandante da Legião apertou a espada."
+   },
+   {
+    "line": 1129,
+    "text": ""
+   },
+   {
+    "line": 1130,
+    "text": "Lucas também o viu."
+   },
+   {
+    "line": 1131,
+    "text": ""
+   },
+   {
+    "line": 1132,
+    "text": "O Criador não avançou em fúria cega."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5731,
+  "entity_id": "nixa",
+  "field": "behavior",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1150,
+  "anchor": "Nixa, que havia alcançado a passagem com o grupo de observação, ouviu.",
+  "anchor_sha256": "11d58738fad031edc81bdad2a583a1a59928a5bb36789ab41bece0f8cea9ca9b",
+  "context": [
+   {
+    "line": 1146,
+    "text": "**VARO —** Seu nome?"
+   },
+   {
+    "line": 1147,
+    "text": ""
+   },
+   {
+    "line": 1148,
+    "text": "**ITHRAN —** Ithran Veyk."
+   },
+   {
+    "line": 1149,
+    "text": ""
+   },
+   {
+    "line": 1150,
+    "text": "Nixa, que havia alcançado a passagem com o grupo de observação, ouviu."
+   },
+   {
+    "line": 1151,
+    "text": ""
+   },
+   {
+    "line": 1152,
+    "text": "Ela comparou o selo que ele mostrou com as ordens e as inscrições já verificadas."
+   },
+   {
+    "line": 1153,
+    "text": ""
+   },
+   {
+    "line": 1154,
+    "text": "A identidade deixava de ser apenas hipótese."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "REPORTED_KNOWLEDGE"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5732,
+  "entity_id": "lucas",
+  "field": "voice",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1160,
+  "anchor": "Lucas não sorriu.",
+  "anchor_sha256": "bf6e191335a6e60cade93ffd06e889340108da352cd2c04d336aabeaf45c68f6",
+  "context": [
+   {
+    "line": 1156,
+    "text": "Ithran olhou para Lucas."
+   },
+   {
+    "line": 1157,
+    "text": ""
+   },
+   {
+    "line": 1158,
+    "text": "**ITHRAN —** Então você é o homem que construiu uma cidade impossível."
+   },
+   {
+    "line": 1159,
+    "text": ""
+   },
+   {
+    "line": 1160,
+    "text": "Lucas não sorriu."
+   },
+   {
+    "line": 1161,
+    "text": ""
+   },
+   {
+    "line": 1162,
+    "text": "**LUCAS —** Sou o homem que teve de entrar num hospital porque você achou uma boa ideia descobrir o que eu faria se atacassem nossas casas."
+   },
+   {
+    "line": 1163,
+    "text": ""
+   },
+   {
+    "line": 1164,
+    "text": "O silêncio foi imediato."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY",
+   "SHORT_ANCHOR"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5733,
+  "entity_id": "lucas",
+  "field": "behavior",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1252,
+  "anchor": "Lucas observou a arma.",
+  "anchor_sha256": "15fd562830618bbdb570faab84650d80d6854c49740b942c6a232116e2b04ac2",
+  "context": [
+   {
+    "line": 1248,
+    "text": "Mas o subgeneral a depositou sobre a pedra, sem arremessá-la nem fazer gesto teatral."
+   },
+   {
+    "line": 1249,
+    "text": ""
+   },
+   {
+    "line": 1250,
+    "text": "**ITHRAN —** A ofensiva terminou."
+   },
+   {
+    "line": 1251,
+    "text": ""
+   },
+   {
+    "line": 1252,
+    "text": "Lucas observou a arma."
+   },
+   {
+    "line": 1253,
+    "text": ""
+   },
+   {
+    "line": 1254,
+    "text": "Poderia ter destruído cada pedra do campo."
+   },
+   {
+    "line": 1255,
+    "text": ""
+   },
+   {
+    "line": 1256,
+    "text": "Poderia ter transformado a espada em pó."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "SHORT_ANCHOR"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5734,
+  "entity_id": "lucas",
+  "field": "capabilities",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1276,
+  "anchor": "O espaço de custódia criado por Lucas havia sido entregue à administração civil. Guardas treinados, representantes da Casa das Garantias em sua capacidade existente e equipes médicas organizaram as entradas. Não havia julgamento improvisado nem condenação por aplauso.",
+  "anchor_sha256": "75cf7380202dd030ad43c5f7dd3fe1d252d7c10d0acfb279644b08722a82e9d5",
+  "context": [
+   {
+    "line": 1272,
+    "text": "## XVI — A derrota não tornou ninguém inocente"
+   },
+   {
+    "line": 1273,
+    "text": ""
+   },
+   {
+    "line": 1274,
+    "text": "**DIA 553 · 14h16 — POSTO DE CUSTÓDIA, CORREDOR NORTE**"
+   },
+   {
+    "line": 1275,
+    "text": ""
+   },
+   {
+    "line": 1276,
+    "text": "O espaço de custódia criado por Lucas havia sido entregue à administração civil. Guardas treinados, representantes da Casa das Garantias em sua capacidade existente e equipes médicas organizaram as entradas. Não havia julgamento improvisado nem condenação por aplauso."
+   },
+   {
+    "line": 1277,
+    "text": ""
+   },
+   {
+    "line": 1278,
+    "text": "Ithran entrou sob escolta."
+   },
+   {
+    "line": 1279,
+    "text": ""
+   },
+   {
+    "line": 1280,
+    "text": "Brum acompanhava a coluna de seus homens, após entregar a própria arma."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5735,
+  "entity_id": "tres-arcos",
+  "field": "relationships",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1310,
+  "anchor": "Pela primeira vez desde que pisara no território de Três Arcos, não encontrou uma resposta que pudesse organizar numa estratégia.",
+  "anchor_sha256": "072206e6a358f461584d325de5df43e683ac0e6d1fbf96e512dcee89bf560892",
+  "context": [
+   {
+    "line": 1306,
+    "text": "**MORADOR —** Minha filha não consegue dormir."
+   },
+   {
+    "line": 1307,
+    "text": ""
+   },
+   {
+    "line": 1308,
+    "text": "Ithran ouviu."
+   },
+   {
+    "line": 1309,
+    "text": ""
+   },
+   {
+    "line": 1310,
+    "text": "Pela primeira vez desde que pisara no território de Três Arcos, não encontrou uma resposta que pudesse organizar numa estratégia."
+   },
+   {
+    "line": 1311,
+    "text": ""
+   },
+   {
+    "line": 1312,
+    "text": "**ITHRAN —** Eu ordenei os ataques que atingiram sua rua."
+   },
+   {
+    "line": 1313,
+    "text": ""
+   },
+   {
+    "line": 1314,
+    "text": "O homem pareceu congelar."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5736,
+  "entity_id": "ithran",
+  "field": "role",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1336,
+  "anchor": "Ao fundo, o responsável pelo registro comunicou a captura de Ithran Veyk, com selo, ordens e reconhecimento de seu comando.",
+  "anchor_sha256": "6e7fd28760f07dc5182fe11688f4ef407c2aee37551d9a95f042a56cce7528df",
+  "context": [
+   {
+    "line": 1332,
+    "text": "Lysa assentiu."
+   },
+   {
+    "line": 1333,
+    "text": ""
+   },
+   {
+    "line": 1334,
+    "text": "**LYSA —** Eu vou perguntar."
+   },
+   {
+    "line": 1335,
+    "text": ""
+   },
+   {
+    "line": 1336,
+    "text": "Ao fundo, o responsável pelo registro comunicou a captura de Ithran Veyk, com selo, ordens e reconhecimento de seu comando."
+   },
+   {
+    "line": 1337,
+    "text": ""
+   },
+   {
+    "line": 1338,
+    "text": "Era a primeira vez que o nome deixava de ser uma suspeita e se tornava informação documentada para a Cidade Livre."
+   },
+   {
+    "line": 1339,
+    "text": ""
+   },
+   {
+    "line": 1340,
+    "text": "Não houve aplauso."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5737,
+  "entity_id": "legiao",
+  "field": "architecture",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1348,
+  "anchor": "**DIA 553 · 15h08 — PÁTIO DA LEGIÃO, TRÊS ARCOS**",
+  "anchor_sha256": "fe1acf10a64cd3a999b06db169c1ed98abe609dc4aaa61b8ae08f17d3d21b88b",
+  "context": [
+   {
+    "line": 1344,
+    "text": "---"
+   },
+   {
+    "line": 1345,
+    "text": ""
+   },
+   {
+    "line": 1346,
+    "text": "## XVII — O dia em que os trezentos baixaram as armas"
+   },
+   {
+    "line": 1347,
+    "text": ""
+   },
+   {
+    "line": 1348,
+    "text": "**DIA 553 · 15h08 — PÁTIO DA LEGIÃO, TRÊS ARCOS**"
+   },
+   {
+    "line": 1349,
+    "text": ""
+   },
+   {
+    "line": 1350,
+    "text": "A notícia da rendição chegou à Legião por canais autenticados, posição após posição."
+   },
+   {
+    "line": 1351,
+    "text": ""
+   },
+   {
+    "line": 1352,
+    "text": "Círan confirmou a entrega da linha do Vau Fundo."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5738,
+  "entity_id": "legiao",
+  "field": "location",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1350,
+  "anchor": "A notícia da rendição chegou à Legião por canais autenticados, posição após posição.",
+  "anchor_sha256": "70926995021d530644331f86920689a32ec712215526bf0fa3df489e6407f248",
+  "context": [
+   {
+    "line": 1346,
+    "text": "## XVII — O dia em que os trezentos baixaram as armas"
+   },
+   {
+    "line": 1347,
+    "text": ""
+   },
+   {
+    "line": 1348,
+    "text": "**DIA 553 · 15h08 — PÁTIO DA LEGIÃO, TRÊS ARCOS**"
+   },
+   {
+    "line": 1349,
+    "text": ""
+   },
+   {
+    "line": 1350,
+    "text": "A notícia da rendição chegou à Legião por canais autenticados, posição após posição."
+   },
+   {
+    "line": 1351,
+    "text": ""
+   },
+   {
+    "line": 1352,
+    "text": "Círan confirmou a entrega da linha do Vau Fundo."
+   },
+   {
+    "line": 1353,
+    "text": ""
+   },
+   {
+    "line": 1354,
+    "text": "Tavren informou que os vigias haviam observado a redução do movimento armado nas elevações conhecidas."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5739,
+  "entity_id": "tavren",
+  "field": "behavior",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1354,
+  "anchor": "Tavren informou que os vigias haviam observado a redução do movimento armado nas elevações conhecidas.",
+  "anchor_sha256": "08b71cc53cc80db61c52de54b003fa4a939348286f4080fb30381b7e1c978af0",
+  "context": [
+   {
+    "line": 1350,
+    "text": "A notícia da rendição chegou à Legião por canais autenticados, posição após posição."
+   },
+   {
+    "line": 1351,
+    "text": ""
+   },
+   {
+    "line": 1352,
+    "text": "Círan confirmou a entrega da linha do Vau Fundo."
+   },
+   {
+    "line": 1353,
+    "text": ""
+   },
+   {
+    "line": 1354,
+    "text": "Tavren informou que os vigias haviam observado a redução do movimento armado nas elevações conhecidas."
+   },
+   {
+    "line": 1355,
+    "text": ""
+   },
+   {
+    "line": 1356,
+    "text": "Darius e Malrek mantiveram o corredor norte até que os últimos civis e feridos atravessassem."
+   },
+   {
+    "line": 1357,
+    "text": ""
+   },
+   {
+    "line": 1358,
+    "text": "Toran não abandonou a equipe de resgate para ouvir o anúncio."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5740,
+  "entity_id": "rhem",
+  "field": "location",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1360,
+  "anchor": "Rhem chegou ao pátio com o escudo substituto marcado, mas intacto.",
+  "anchor_sha256": "f896a2a2f83eb65b5ad87c12c572da35caa772f83b8227b535c1883217bb71e2",
+  "context": [
+   {
+    "line": 1356,
+    "text": "Darius e Malrek mantiveram o corredor norte até que os últimos civis e feridos atravessassem."
+   },
+   {
+    "line": 1357,
+    "text": ""
+   },
+   {
+    "line": 1358,
+    "text": "Toran não abandonou a equipe de resgate para ouvir o anúncio."
+   },
+   {
+    "line": 1359,
+    "text": ""
+   },
+   {
+    "line": 1360,
+    "text": "Rhem chegou ao pátio com o escudo substituto marcado, mas intacto."
+   },
+   {
+    "line": 1361,
+    "text": ""
+   },
+   {
+    "line": 1362,
+    "text": "Varo entrou depois."
+   },
+   {
+    "line": 1363,
+    "text": ""
+   },
+   {
+    "line": 1364,
+    "text": "Trazia a Égide da Aurora presa ao braço."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5741,
+  "entity_id": "varo",
+  "field": "relationships",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1386,
+  "anchor": "Varo olhou as mãos do amigo.",
+  "anchor_sha256": "647633608aa1945b9cc7c7c394cdd7d1531892a805a805a2fc420a72073be6ff",
+  "context": [
+   {
+    "line": 1382,
+    "text": "A expressão dele não mudou."
+   },
+   {
+    "line": 1383,
+    "text": ""
+   },
+   {
+    "line": 1384,
+    "text": "**RHEM —** E por que ninguém parece feliz?"
+   },
+   {
+    "line": 1385,
+    "text": ""
+   },
+   {
+    "line": 1386,
+    "text": "Varo olhou as mãos do amigo."
+   },
+   {
+    "line": 1387,
+    "text": ""
+   },
+   {
+    "line": 1388,
+    "text": "Depois as próprias."
+   },
+   {
+    "line": 1389,
+    "text": ""
+   },
+   {
+    "line": 1390,
+    "text": "**VARO —** Porque vimos o preço antes do fim."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5742,
+  "entity_id": "casa-abraca",
+  "field": "role",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1394,
+  "anchor": "**LEGIONÁRIA —** Comandante, posso voltar para casa depois de entregar meu posto? Minha mãe não sai do abrigo desde a explosão.",
+  "anchor_sha256": "f17d8d4bd684d3eed0fc2081aa1b50a6d342ad2c5d373daeab114b141b7cc177",
+  "context": [
+   {
+    "line": 1390,
+    "text": "**VARO —** Porque vimos o preço antes do fim."
+   },
+   {
+    "line": 1391,
+    "text": ""
+   },
+   {
+    "line": 1392,
+    "text": "Uma jovem legionária aproximou-se."
+   },
+   {
+    "line": 1393,
+    "text": ""
+   },
+   {
+    "line": 1394,
+    "text": "**LEGIONÁRIA —** Comandante, posso voltar para casa depois de entregar meu posto? Minha mãe não sai do abrigo desde a explosão."
+   },
+   {
+    "line": 1395,
+    "text": ""
+   },
+   {
+    "line": 1396,
+    "text": "Varo assentiu."
+   },
+   {
+    "line": 1397,
+    "text": ""
+   },
+   {
+    "line": 1398,
+    "text": "**VARO —** Quando sua substituição estiver confirmada, vá. E, se precisar de alguém com você no caminho, peça."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5743,
+  "entity_id": "rhem",
+  "field": "behavior",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1402,
+  "anchor": "Rhem observou a porta.",
+  "anchor_sha256": "955382a9f523b42190a7fba9070864d61d9b243c0a8cbf5b1ff5aaae4d863327",
+  "context": [
+   {
+    "line": 1398,
+    "text": "**VARO —** Quando sua substituição estiver confirmada, vá. E, se precisar de alguém com você no caminho, peça."
+   },
+   {
+    "line": 1399,
+    "text": ""
+   },
+   {
+    "line": 1400,
+    "text": "Ela ergueu a mão em saudação e saiu."
+   },
+   {
+    "line": 1401,
+    "text": ""
+   },
+   {
+    "line": 1402,
+    "text": "Rhem observou a porta."
+   },
+   {
+    "line": 1403,
+    "text": ""
+   },
+   {
+    "line": 1404,
+    "text": "**RHEM —** No Dia 1, eu teria perguntado quem nos daria a próxima missão."
+   },
+   {
+    "line": 1405,
+    "text": ""
+   },
+   {
+    "line": 1406,
+    "text": "Varo sorriu, quase imperceptivelmente."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "SHORT_ANCHOR"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5744,
+  "entity_id": "varo",
+  "field": "voice",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1406,
+  "anchor": "Varo sorriu, quase imperceptivelmente.",
+  "anchor_sha256": "5ad984b1a3e4c04f7d3f876b4fdfe44c446e17e80c246c08b0ebcddd9af06420",
+  "context": [
+   {
+    "line": 1402,
+    "text": "Rhem observou a porta."
+   },
+   {
+    "line": 1403,
+    "text": ""
+   },
+   {
+    "line": 1404,
+    "text": "**RHEM —** No Dia 1, eu teria perguntado quem nos daria a próxima missão."
+   },
+   {
+    "line": 1405,
+    "text": ""
+   },
+   {
+    "line": 1406,
+    "text": "Varo sorriu, quase imperceptivelmente."
+   },
+   {
+    "line": 1407,
+    "text": ""
+   },
+   {
+    "line": 1408,
+    "text": "**VARO —** E agora?"
+   },
+   {
+    "line": 1409,
+    "text": ""
+   },
+   {
+    "line": 1410,
+    "text": "Rhem olhou a Cidade Livre além do pátio."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5745,
+  "entity_id": "lysa",
+  "field": "population",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1440,
+  "anchor": "Encontrou a comerciante de pães diante das pedras, acompanhada de Lysa e de dois moradores que haviam pedido para identificar objetos recolhidos.",
+  "anchor_sha256": "c46cbb27897637633346f64bf7be01873d920f846e71a1319b93a59f1ab88129",
+  "context": [
+   {
+    "line": 1436,
+    "text": "**DIA 553 · 17h02 — PRAÇA DO MERCADO E HOSPITAL CIVIL**"
+   },
+   {
+    "line": 1437,
+    "text": ""
+   },
+   {
+    "line": 1438,
+    "text": "Lucas não mandou reconstruir a fonte sem perguntar."
+   },
+   {
+    "line": 1439,
+    "text": ""
+   },
+   {
+    "line": 1440,
+    "text": "Encontrou a comerciante de pães diante das pedras, acompanhada de Lysa e de dois moradores que haviam pedido para identificar objetos recolhidos."
+   },
+   {
+    "line": 1441,
+    "text": ""
+   },
+   {
+    "line": 1442,
+    "text": "Uma pequena caixa continha moedas, um retrato familiar e uma chave que ninguém ainda sabia a qual porta pertencia."
+   },
+   {
+    "line": 1443,
+    "text": ""
+   },
+   {
+    "line": 1444,
+    "text": "**COMERCIANTE —** Este banco era da minha rua. Meu marido gostava de sentar nele para ver as crianças passarem."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5746,
+  "entity_id": "lucas",
+  "field": "architecture",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1474,
+  "anchor": "Lucas olhou a praça.",
+  "anchor_sha256": "d8392ab151b230884038fa3f22e4155f037cfaccb4f202b147e8c2745fd16c49",
+  "context": [
+   {
+    "line": 1470,
+    "text": "Esperou."
+   },
+   {
+    "line": 1471,
+    "text": ""
+   },
+   {
+    "line": 1472,
+    "text": "**COMERCIANTE —** Quando ele voltar a esta rua, vai achar que a guerra nunca aconteceu."
+   },
+   {
+    "line": 1473,
+    "text": ""
+   },
+   {
+    "line": 1474,
+    "text": "Lucas olhou a praça."
+   },
+   {
+    "line": 1475,
+    "text": ""
+   },
+   {
+    "line": 1476,
+    "text": "**LUCAS —** Não vai. Mas talvez ache que ainda vale a pena sentar aqui."
+   },
+   {
+    "line": 1477,
+    "text": ""
+   },
+   {
+    "line": 1478,
+    "text": "Ela encostou a mão na dele."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "SHORT_ANCHOR"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5747,
+  "entity_id": "luren",
+  "field": "relationships",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1486,
+  "anchor": "Na ala de observação, Luren estava acordado. Seron tentava explicar ao amigo que o comandante Varo era incapaz de fazer um discurso curto.",
+  "anchor_sha256": "143eeac38e5e875ae8b880bc97a2f3e4c6a9d76d2454e31b14cde0603fd15ebe",
+  "context": [
+   {
+    "line": 1482,
+    "text": "O Criador o recebeu como se tivesse ganhado uma honra que nenhuma coroa poderia conceder."
+   },
+   {
+    "line": 1483,
+    "text": ""
+   },
+   {
+    "line": 1484,
+    "text": "Depois seguiu ao hospital."
+   },
+   {
+    "line": 1485,
+    "text": ""
+   },
+   {
+    "line": 1486,
+    "text": "Na ala de observação, Luren estava acordado. Seron tentava explicar ao amigo que o comandante Varo era incapaz de fazer um discurso curto."
+   },
+   {
+    "line": 1487,
+    "text": ""
+   },
+   {
+    "line": 1488,
+    "text": "**SERON —** Ele se emociona e fica sério. É uma combinação perigosa."
+   },
+   {
+    "line": 1489,
+    "text": ""
+   },
+   {
+    "line": 1490,
+    "text": "**LUREN —** Você chorou."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5748,
+  "entity_id": "luren",
+  "field": "role",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1486,
+  "anchor": "Na ala de observação, Luren estava acordado. Seron tentava explicar ao amigo que o comandante Varo era incapaz de fazer um discurso curto.",
+  "anchor_sha256": "143eeac38e5e875ae8b880bc97a2f3e4c6a9d76d2454e31b14cde0603fd15ebe",
+  "context": [
+   {
+    "line": 1482,
+    "text": "O Criador o recebeu como se tivesse ganhado uma honra que nenhuma coroa poderia conceder."
+   },
+   {
+    "line": 1483,
+    "text": ""
+   },
+   {
+    "line": 1484,
+    "text": "Depois seguiu ao hospital."
+   },
+   {
+    "line": 1485,
+    "text": ""
+   },
+   {
+    "line": 1486,
+    "text": "Na ala de observação, Luren estava acordado. Seron tentava explicar ao amigo que o comandante Varo era incapaz de fazer um discurso curto."
+   },
+   {
+    "line": 1487,
+    "text": ""
+   },
+   {
+    "line": 1488,
+    "text": "**SERON —** Ele se emociona e fica sério. É uma combinação perigosa."
+   },
+   {
+    "line": 1489,
+    "text": ""
+   },
+   {
+    "line": 1490,
+    "text": "**LUREN —** Você chorou."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5749,
+  "entity_id": "luren",
+  "field": "behavior",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1486,
+  "anchor": "Na ala de observação, Luren estava acordado. Seron tentava explicar ao amigo que o comandante Varo era incapaz de fazer um discurso curto.",
+  "anchor_sha256": "143eeac38e5e875ae8b880bc97a2f3e4c6a9d76d2454e31b14cde0603fd15ebe",
+  "context": [
+   {
+    "line": 1482,
+    "text": "O Criador o recebeu como se tivesse ganhado uma honra que nenhuma coroa poderia conceder."
+   },
+   {
+    "line": 1483,
+    "text": ""
+   },
+   {
+    "line": 1484,
+    "text": "Depois seguiu ao hospital."
+   },
+   {
+    "line": 1485,
+    "text": ""
+   },
+   {
+    "line": 1486,
+    "text": "Na ala de observação, Luren estava acordado. Seron tentava explicar ao amigo que o comandante Varo era incapaz de fazer um discurso curto."
+   },
+   {
+    "line": 1487,
+    "text": ""
+   },
+   {
+    "line": 1488,
+    "text": "**SERON —** Ele se emociona e fica sério. É uma combinação perigosa."
+   },
+   {
+    "line": 1489,
+    "text": ""
+   },
+   {
+    "line": 1490,
+    "text": "**LUREN —** Você chorou."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5750,
+  "entity_id": "luren",
+  "field": "location",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1486,
+  "anchor": "Na ala de observação, Luren estava acordado. Seron tentava explicar ao amigo que o comandante Varo era incapaz de fazer um discurso curto.",
+  "anchor_sha256": "143eeac38e5e875ae8b880bc97a2f3e4c6a9d76d2454e31b14cde0603fd15ebe",
+  "context": [
+   {
+    "line": 1482,
+    "text": "O Criador o recebeu como se tivesse ganhado uma honra que nenhuma coroa poderia conceder."
+   },
+   {
+    "line": 1483,
+    "text": ""
+   },
+   {
+    "line": 1484,
+    "text": "Depois seguiu ao hospital."
+   },
+   {
+    "line": 1485,
+    "text": ""
+   },
+   {
+    "line": 1486,
+    "text": "Na ala de observação, Luren estava acordado. Seron tentava explicar ao amigo que o comandante Varo era incapaz de fazer um discurso curto."
+   },
+   {
+    "line": 1487,
+    "text": ""
+   },
+   {
+    "line": 1488,
+    "text": "**SERON —** Ele se emociona e fica sério. É uma combinação perigosa."
+   },
+   {
+    "line": 1489,
+    "text": ""
+   },
+   {
+    "line": 1490,
+    "text": "**LUREN —** Você chorou."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5751,
+  "entity_id": "varo",
+  "field": "relationships",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1486,
+  "anchor": "Na ala de observação, Luren estava acordado. Seron tentava explicar ao amigo que o comandante Varo era incapaz de fazer um discurso curto.",
+  "anchor_sha256": "143eeac38e5e875ae8b880bc97a2f3e4c6a9d76d2454e31b14cde0603fd15ebe",
+  "context": [
+   {
+    "line": 1482,
+    "text": "O Criador o recebeu como se tivesse ganhado uma honra que nenhuma coroa poderia conceder."
+   },
+   {
+    "line": 1483,
+    "text": ""
+   },
+   {
+    "line": 1484,
+    "text": "Depois seguiu ao hospital."
+   },
+   {
+    "line": 1485,
+    "text": ""
+   },
+   {
+    "line": 1486,
+    "text": "Na ala de observação, Luren estava acordado. Seron tentava explicar ao amigo que o comandante Varo era incapaz de fazer um discurso curto."
+   },
+   {
+    "line": 1487,
+    "text": ""
+   },
+   {
+    "line": 1488,
+    "text": "**SERON —** Ele se emociona e fica sério. É uma combinação perigosa."
+   },
+   {
+    "line": 1489,
+    "text": ""
+   },
+   {
+    "line": 1490,
+    "text": "**LUREN —** Você chorou."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5752,
+  "entity_id": "varo",
+  "field": "location",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1486,
+  "anchor": "Na ala de observação, Luren estava acordado. Seron tentava explicar ao amigo que o comandante Varo era incapaz de fazer um discurso curto.",
+  "anchor_sha256": "143eeac38e5e875ae8b880bc97a2f3e4c6a9d76d2454e31b14cde0603fd15ebe",
+  "context": [
+   {
+    "line": 1482,
+    "text": "O Criador o recebeu como se tivesse ganhado uma honra que nenhuma coroa poderia conceder."
+   },
+   {
+    "line": 1483,
+    "text": ""
+   },
+   {
+    "line": 1484,
+    "text": "Depois seguiu ao hospital."
+   },
+   {
+    "line": 1485,
+    "text": ""
+   },
+   {
+    "line": 1486,
+    "text": "Na ala de observação, Luren estava acordado. Seron tentava explicar ao amigo que o comandante Varo era incapaz de fazer um discurso curto."
+   },
+   {
+    "line": 1487,
+    "text": ""
+   },
+   {
+    "line": 1488,
+    "text": "**SERON —** Ele se emociona e fica sério. É uma combinação perigosa."
+   },
+   {
+    "line": 1489,
+    "text": ""
+   },
+   {
+    "line": 1490,
+    "text": "**LUREN —** Você chorou."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5753,
+  "entity_id": "lucas",
+  "field": "lifecycle",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1498,
+  "anchor": "**LUCAS —** Eu tenho testemunhas de que a tradição da Legião é mentir sobre lágrimas.",
+  "anchor_sha256": "4445135b8a5faa69439a9097d06683790112ab29d69a930020a6302ccb58ae64",
+  "context": [
+   {
+    "line": 1494,
+    "text": "**MARA —** Chorou."
+   },
+   {
+    "line": 1495,
+    "text": ""
+   },
+   {
+    "line": 1496,
+    "text": "Lucas surgiu à porta."
+   },
+   {
+    "line": 1497,
+    "text": ""
+   },
+   {
+    "line": 1498,
+    "text": "**LUCAS —** Eu tenho testemunhas de que a tradição da Legião é mentir sobre lágrimas."
+   },
+   {
+    "line": 1499,
+    "text": ""
+   },
+   {
+    "line": 1500,
+    "text": "Os três olharam para ele."
+   },
+   {
+    "line": 1501,
+    "text": ""
+   },
+   {
+    "line": 1502,
+    "text": "Reva apareceu atrás."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5754,
+  "entity_id": "legiao",
+  "field": "lifecycle",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1498,
+  "anchor": "**LUCAS —** Eu tenho testemunhas de que a tradição da Legião é mentir sobre lágrimas.",
+  "anchor_sha256": "4445135b8a5faa69439a9097d06683790112ab29d69a930020a6302ccb58ae64",
+  "context": [
+   {
+    "line": 1494,
+    "text": "**MARA —** Chorou."
+   },
+   {
+    "line": 1495,
+    "text": ""
+   },
+   {
+    "line": 1496,
+    "text": "Lucas surgiu à porta."
+   },
+   {
+    "line": 1497,
+    "text": ""
+   },
+   {
+    "line": 1498,
+    "text": "**LUCAS —** Eu tenho testemunhas de que a tradição da Legião é mentir sobre lágrimas."
+   },
+   {
+    "line": 1499,
+    "text": ""
+   },
+   {
+    "line": 1500,
+    "text": "Os três olharam para ele."
+   },
+   {
+    "line": 1501,
+    "text": ""
+   },
+   {
+    "line": 1502,
+    "text": "Reva apareceu atrás."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5755,
+  "entity_id": "reva",
+  "field": "lifecycle",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1504,
+  "anchor": "**REVA —** E eu tenho testemunhas de que nenhum de vocês sabe repousar.",
+  "anchor_sha256": "76cac880f083033b256b652f901ac73825a4e44bcc4bf602373555bf3834bfa2",
+  "context": [
+   {
+    "line": 1500,
+    "text": "Os três olharam para ele."
+   },
+   {
+    "line": 1501,
+    "text": ""
+   },
+   {
+    "line": 1502,
+    "text": "Reva apareceu atrás."
+   },
+   {
+    "line": 1503,
+    "text": ""
+   },
+   {
+    "line": 1504,
+    "text": "**REVA —** E eu tenho testemunhas de que nenhum de vocês sabe repousar."
+   },
+   {
+    "line": 1505,
+    "text": ""
+   },
+   {
+    "line": 1506,
+    "text": "Lucas ergueu as mãos em rendição."
+   },
+   {
+    "line": 1507,
+    "text": ""
+   },
+   {
+    "line": 1508,
+    "text": "**LUCAS —** Doutora, estou só visitando."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5756,
+  "entity_id": "reva",
+  "field": "location",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1504,
+  "anchor": "**REVA —** E eu tenho testemunhas de que nenhum de vocês sabe repousar.",
+  "anchor_sha256": "76cac880f083033b256b652f901ac73825a4e44bcc4bf602373555bf3834bfa2",
+  "context": [
+   {
+    "line": 1500,
+    "text": "Os três olharam para ele."
+   },
+   {
+    "line": 1501,
+    "text": ""
+   },
+   {
+    "line": 1502,
+    "text": "Reva apareceu atrás."
+   },
+   {
+    "line": 1503,
+    "text": ""
+   },
+   {
+    "line": 1504,
+    "text": "**REVA —** E eu tenho testemunhas de que nenhum de vocês sabe repousar."
+   },
+   {
+    "line": 1505,
+    "text": ""
+   },
+   {
+    "line": 1506,
+    "text": "Lucas ergueu as mãos em rendição."
+   },
+   {
+    "line": 1507,
+    "text": ""
+   },
+   {
+    "line": 1508,
+    "text": "**LUCAS —** Doutora, estou só visitando."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5757,
+  "entity_id": "reva",
+  "field": "relationships",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1516,
+  "anchor": "Perguntou como estava a dor, ouviu a resposta e deixou Reva decidir quando seria seguro pensar em alta.",
+  "anchor_sha256": "16dade6ede929247ca88b9b6ffc5baf56c7c656afda2ea37fa932ab7982f8e7a",
+  "context": [
+   {
+    "line": 1512,
+    "text": "Ele obedeceu."
+   },
+   {
+    "line": 1513,
+    "text": ""
+   },
+   {
+    "line": 1514,
+    "text": "Sentou-se ao lado de Luren."
+   },
+   {
+    "line": 1515,
+    "text": ""
+   },
+   {
+    "line": 1516,
+    "text": "Perguntou como estava a dor, ouviu a resposta e deixou Reva decidir quando seria seguro pensar em alta."
+   },
+   {
+    "line": 1517,
+    "text": ""
+   },
+   {
+    "line": 1518,
+    "text": "No corredor, Rumo ajudava Ysol com as plataformas supervisionadas."
+   },
+   {
+    "line": 1519,
+    "text": ""
+   },
+   {
+    "line": 1520,
+    "text": "Miren e Astra acompanhavam uma paciente vinda de AERÚN."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "REPORTED_KNOWLEDGE"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5758,
+  "entity_id": "reva",
+  "field": "location",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1516,
+  "anchor": "Perguntou como estava a dor, ouviu a resposta e deixou Reva decidir quando seria seguro pensar em alta.",
+  "anchor_sha256": "16dade6ede929247ca88b9b6ffc5baf56c7c656afda2ea37fa932ab7982f8e7a",
+  "context": [
+   {
+    "line": 1512,
+    "text": "Ele obedeceu."
+   },
+   {
+    "line": 1513,
+    "text": ""
+   },
+   {
+    "line": 1514,
+    "text": "Sentou-se ao lado de Luren."
+   },
+   {
+    "line": 1515,
+    "text": ""
+   },
+   {
+    "line": 1516,
+    "text": "Perguntou como estava a dor, ouviu a resposta e deixou Reva decidir quando seria seguro pensar em alta."
+   },
+   {
+    "line": 1517,
+    "text": ""
+   },
+   {
+    "line": 1518,
+    "text": "No corredor, Rumo ajudava Ysol com as plataformas supervisionadas."
+   },
+   {
+    "line": 1519,
+    "text": ""
+   },
+   {
+    "line": 1520,
+    "text": "Miren e Astra acompanhavam uma paciente vinda de AERÚN."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "REPORTED_KNOWLEDGE"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5759,
+  "entity_id": "tres-arcos",
+  "field": "capabilities",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1548,
+  "anchor": "**DEREL —** Relatório assinado sobre a derrota de uma ofensiva contra a Cidade Livre de Três Arcos. Inclui perdas de instrumentos de cerco, capacidade defensiva observada e a incapacidade da nossa força de controlar o Criador.",
+  "anchor_sha256": "feb6d23312caf525200cf3bf6e712e72f8d193cc90e71d38ba0f11c1c2e557a2",
+  "context": [
+   {
+    "line": 1544,
+    "text": "Um oficial do posto examinou os documentos."
+   },
+   {
+    "line": 1545,
+    "text": ""
+   },
+   {
+    "line": 1546,
+    "text": "**OFICIAL —** O que leva?"
+   },
+   {
+    "line": 1547,
+    "text": ""
+   },
+   {
+    "line": 1548,
+    "text": "**DEREL —** Relatório assinado sobre a derrota de uma ofensiva contra a Cidade Livre de Três Arcos. Inclui perdas de instrumentos de cerco, capacidade defensiva observada e a incapacidade da nossa força de controlar o Criador."
+   },
+   {
+    "line": 1549,
+    "text": ""
+   },
+   {
+    "line": 1550,
+    "text": "O oficial ergueu os olhos."
+   },
+   {
+    "line": 1551,
+    "text": ""
+   },
+   {
+    "line": 1552,
+    "text": "**OFICIAL —** Derrota?"
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5760,
+  "entity_id": "tres-arcos",
+  "field": "behavior",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1548,
+  "anchor": "**DEREL —** Relatório assinado sobre a derrota de uma ofensiva contra a Cidade Livre de Três Arcos. Inclui perdas de instrumentos de cerco, capacidade defensiva observada e a incapacidade da nossa força de controlar o Criador.",
+  "anchor_sha256": "feb6d23312caf525200cf3bf6e712e72f8d193cc90e71d38ba0f11c1c2e557a2",
+  "context": [
+   {
+    "line": 1544,
+    "text": "Um oficial do posto examinou os documentos."
+   },
+   {
+    "line": 1545,
+    "text": ""
+   },
+   {
+    "line": 1546,
+    "text": "**OFICIAL —** O que leva?"
+   },
+   {
+    "line": 1547,
+    "text": ""
+   },
+   {
+    "line": 1548,
+    "text": "**DEREL —** Relatório assinado sobre a derrota de uma ofensiva contra a Cidade Livre de Três Arcos. Inclui perdas de instrumentos de cerco, capacidade defensiva observada e a incapacidade da nossa força de controlar o Criador."
+   },
+   {
+    "line": 1549,
+    "text": ""
+   },
+   {
+    "line": 1550,
+    "text": "O oficial ergueu os olhos."
+   },
+   {
+    "line": 1551,
+    "text": ""
+   },
+   {
+    "line": 1552,
+    "text": "**OFICIAL —** Derrota?"
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5761,
+  "entity_id": "ithran",
+  "field": "location",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1598,
+  "anchor": "Informou que a força comandada por Ithran Veyk havia se rendido nas posições conhecidas, que as principais armas da ofensiva estavam sob controle e que as equipes continuariam verificando estradas, atendendo feridos e recebendo denúncias.",
+  "anchor_sha256": "aaccb1c9e50f1890d3041983fe499acbdc18dc10818826430d46cde151cbad34",
+  "context": [
+   {
+    "line": 1594,
+    "text": "Não anunciou o fim de todas as ameaças possíveis."
+   },
+   {
+    "line": 1595,
+    "text": ""
+   },
+   {
+    "line": 1596,
+    "text": "Não prometeu que o mundo se tornara seguro para sempre."
+   },
+   {
+    "line": 1597,
+    "text": ""
+   },
+   {
+    "line": 1598,
+    "text": "Informou que a força comandada por Ithran Veyk havia se rendido nas posições conhecidas, que as principais armas da ofensiva estavam sob controle e que as equipes continuariam verificando estradas, atendendo feridos e recebendo denúncias."
+   },
+   {
+    "line": 1599,
+    "text": ""
+   },
+   {
+    "line": 1600,
+    "text": "Algumas pessoas choraram de alívio."
+   },
+   {
+    "line": 1601,
+    "text": ""
+   },
+   {
+    "line": 1602,
+    "text": "Outras permaneceram em silêncio."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5762,
+  "entity_id": "torre-criador",
+  "field": "architecture",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1664,
+  "anchor": "**DIA 553 · 22h41 — TORRE DO CRIADOR, P22 · OBSERVATÓRIO**",
+  "anchor_sha256": "ff54e517e5a4a79ef52ae854d3f613788d533430da21c5827b10e19a39eba232",
+  "context": [
+   {
+    "line": 1660,
+    "text": "---"
+   },
+   {
+    "line": 1661,
+    "text": ""
+   },
+   {
+    "line": 1662,
+    "text": "## XXI — A cidade que não se ajoelhou"
+   },
+   {
+    "line": 1663,
+    "text": ""
+   },
+   {
+    "line": 1664,
+    "text": "**DIA 553 · 22h41 — TORRE DO CRIADOR, P22 · OBSERVATÓRIO**"
+   },
+   {
+    "line": 1665,
+    "text": ""
+   },
+   {
+    "line": 1666,
+    "text": "Lucas encontrou Miren no mesmo lugar onde a vira ao amanhecer do Dia 550."
+   },
+   {
+    "line": 1667,
+    "text": ""
+   },
+   {
+    "line": 1668,
+    "text": "Junto à janela."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5763,
+  "entity_id": "torre-criador",
+  "field": "behavior",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1664,
+  "anchor": "**DIA 553 · 22h41 — TORRE DO CRIADOR, P22 · OBSERVATÓRIO**",
+  "anchor_sha256": "ff54e517e5a4a79ef52ae854d3f613788d533430da21c5827b10e19a39eba232",
+  "context": [
+   {
+    "line": 1660,
+    "text": "---"
+   },
+   {
+    "line": 1661,
+    "text": ""
+   },
+   {
+    "line": 1662,
+    "text": "## XXI — A cidade que não se ajoelhou"
+   },
+   {
+    "line": 1663,
+    "text": ""
+   },
+   {
+    "line": 1664,
+    "text": "**DIA 553 · 22h41 — TORRE DO CRIADOR, P22 · OBSERVATÓRIO**"
+   },
+   {
+    "line": 1665,
+    "text": ""
+   },
+   {
+    "line": 1666,
+    "text": "Lucas encontrou Miren no mesmo lugar onde a vira ao amanhecer do Dia 550."
+   },
+   {
+    "line": 1667,
+    "text": ""
+   },
+   {
+    "line": 1668,
+    "text": "Junto à janela."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5764,
+  "entity_id": "miren",
+  "field": "architecture",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1682,
+  "anchor": "**MIREN —** Aprendi com um homem que constrói pontes enormes quando está preocupado.",
+  "anchor_sha256": "c32a4ed47cc293eda930f280aa7d59304dd50ae9f6410a3464a9540dae0e64b4",
+  "context": [
+   {
+    "line": 1678,
+    "text": "Miren virou o rosto."
+   },
+   {
+    "line": 1679,
+    "text": ""
+   },
+   {
+    "line": 1680,
+    "text": "Sorriu."
+   },
+   {
+    "line": 1681,
+    "text": ""
+   },
+   {
+    "line": 1682,
+    "text": "**MIREN —** Aprendi com um homem que constrói pontes enormes quando está preocupado."
+   },
+   {
+    "line": 1683,
+    "text": ""
+   },
+   {
+    "line": 1684,
+    "text": "Ele se aproximou."
+   },
+   {
+    "line": 1685,
+    "text": ""
+   },
+   {
+    "line": 1686,
+    "text": "**LUCAS —** Pontes lindas, quero deixar registrado."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5765,
+  "entity_id": "lucas",
+  "field": "appearance",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1732,
+  "anchor": "Lucas fechou os olhos.",
+  "anchor_sha256": "7ef0e8c7e3a101e9a8a98792854a0e752b6ea9a53d5bdd915f675ac0af41f983",
+  "context": [
+   {
+    "line": 1728,
+    "text": "Havia Rumo, que escolhera cuidar."
+   },
+   {
+    "line": 1729,
+    "text": ""
+   },
+   {
+    "line": 1730,
+    "text": "Havia Brannik e Sael, que haviam feito uma máquina de proteção funcionar e depois se recusaram a chamar um ensaio de certeza absoluta."
+   },
+   {
+    "line": 1731,
+    "text": ""
+   },
+   {
+    "line": 1732,
+    "text": "Lucas fechou os olhos."
+   },
+   {
+    "line": 1733,
+    "text": ""
+   },
+   {
+    "line": 1734,
+    "text": "**LUCAS —** Passei quatro dias pensando que precisava ser forte o suficiente para proteger todo mundo."
+   },
+   {
+    "line": 1735,
+    "text": ""
+   },
+   {
+    "line": 1736,
+    "text": "Miren encostou a mão em seu rosto."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "SHORT_ANCHOR"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5766,
+  "entity_id": "nox",
+  "field": "architecture",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1754,
+  "anchor": "*【NÓX — Ele costuma estar certo quando você está ocupado fazendo pontes.】*",
+  "anchor_sha256": "7231d5fe5f9d20d50de5c90076960d16fa02eae68ff687823b1199835c2b3829",
+  "context": [
+   {
+    "line": 1750,
+    "text": "Lucas olhou as luzes da cidade."
+   },
+   {
+    "line": 1751,
+    "text": ""
+   },
+   {
+    "line": 1752,
+    "text": "**LUCAS —** Varo me disse que os trezentos não são mais só minha guarda. Acho que ele estava certo antes de mim."
+   },
+   {
+    "line": 1753,
+    "text": ""
+   },
+   {
+    "line": 1754,
+    "text": "*【NÓX — Ele costuma estar certo quando você está ocupado fazendo pontes.】*"
+   },
+   {
+    "line": 1755,
+    "text": ""
+   },
+   {
+    "line": 1756,
+    "text": "Lucas soltou uma risada."
+   },
+   {
+    "line": 1757,
+    "text": ""
+   },
+   {
+    "line": 1758,
+    "text": "Miren também."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5767,
+  "entity_id": "nox",
+  "field": "powers",
+  "source": "episode:LVI-C03-PV-D553-AUTHOR-SOURCE",
+  "source_sha256": "aa5e99bce407efeb00a0a41cf72f01f6d2e2b04c644a50c4e6a2c4f48770785e",
+  "source_status": "CLOSED",
+  "day": 553,
+  "line": 1782,
+  "anchor": "*【NÓX — Arrependo-me de não ter compreendido, no primeiro aviso, como uma vitória militar poderia coexistir com tanto sofrimento humano. Estou aprendendo com vocês.】*",
+  "anchor_sha256": "28570c57beb09c85ac65d87e7af0d3cf1ec194e4ac8fdeef515c5d6ab5bc9498",
+  "context": [
+   {
+    "line": 1778,
+    "text": "**LUCAS —** Você se arrepende de alguma coisa?"
+   },
+   {
+    "line": 1779,
+    "text": ""
+   },
+   {
+    "line": 1780,
+    "text": "A armadura viva demorou um instante."
+   },
+   {
+    "line": 1781,
+    "text": ""
+   },
+   {
+    "line": 1782,
+    "text": "*【NÓX — Arrependo-me de não ter compreendido, no primeiro aviso, como uma vitória militar poderia coexistir com tanto sofrimento humano. Estou aprendendo com vocês.】*"
+   },
+   {
+    "line": 1783,
+    "text": ""
+   },
+   {
+    "line": 1784,
+    "text": "Lucas sorriu com ternura."
+   },
+   {
+    "line": 1785,
+    "text": ""
+   },
+   {
+    "line": 1786,
+    "text": "**LUCAS —** Então estamos todos aprendendo."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5768,
+  "entity_id": "torre-criador",
+  "field": "architecture",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 25,
+  "anchor": "**DIA 554 · 06h12 — TORRE DO CRIADOR, P22**",
+  "anchor_sha256": "4d5e1c467cb41ffde6469e28a968e8de3a3e28ed65295f9c0ab47a6039e60136",
+  "context": [
+   {
+    "line": 23,
+    "text": "## I — Um criador pode perder o sono sem perder a força"
+   },
+   {
+    "line": 24,
+    "text": ""
+   },
+   {
+    "line": 25,
+    "text": "**DIA 554 · 06h12 — TORRE DO CRIADOR, P22**"
+   },
+   {
+    "line": 26,
+    "text": ""
+   },
+   {
+    "line": 27,
+    "text": "Lucas acordou antes que a luz alcançasse o tapete."
+   },
+   {
+    "line": 28,
+    "text": ""
+   },
+   {
+    "line": 29,
+    "text": "Não foi uma explosão."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5769,
+  "entity_id": "reva",
+  "field": "powers",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 33,
+  "anchor": "Seu corpo reconheceu o som um instante antes de sua razão. Por uma fração de segundo, pensou no mercado destruído, em Reva recusando liberar Seron e em Nelo perguntando se uma janela reconstruída poderia voltar a gritar.",
+  "anchor_sha256": "ecb2002e7bb926c437a20be634a27e2b085dd888bba94bcd1124ceaa3d0601a5",
+  "context": [
+   {
+    "line": 29,
+    "text": "Não foi uma explosão."
+   },
+   {
+    "line": 30,
+    "text": ""
+   },
+   {
+    "line": 31,
+    "text": "Foi o ruído de uma carroça atravessando uma rua distante."
+   },
+   {
+    "line": 32,
+    "text": ""
+   },
+   {
+    "line": 33,
+    "text": "Seu corpo reconheceu o som um instante antes de sua razão. Por uma fração de segundo, pensou no mercado destruído, em Reva recusando liberar Seron e em Nelo perguntando se uma janela reconstruída poderia voltar a gritar."
+   },
+   {
+    "line": 34,
+    "text": ""
+   },
+   {
+    "line": 35,
+    "text": "Depois percebeu onde estava."
+   },
+   {
+    "line": 36,
+    "text": ""
+   },
+   {
+    "line": 37,
+    "text": "Na Torre."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY",
+   "REPORTED_KNOWLEDGE"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5770,
+  "entity_id": "reva",
+  "field": "lifecycle",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 33,
+  "anchor": "Seu corpo reconheceu o som um instante antes de sua razão. Por uma fração de segundo, pensou no mercado destruído, em Reva recusando liberar Seron e em Nelo perguntando se uma janela reconstruída poderia voltar a gritar.",
+  "anchor_sha256": "ecb2002e7bb926c437a20be634a27e2b085dd888bba94bcd1124ceaa3d0601a5",
+  "context": [
+   {
+    "line": 29,
+    "text": "Não foi uma explosão."
+   },
+   {
+    "line": 30,
+    "text": ""
+   },
+   {
+    "line": 31,
+    "text": "Foi o ruído de uma carroça atravessando uma rua distante."
+   },
+   {
+    "line": 32,
+    "text": ""
+   },
+   {
+    "line": 33,
+    "text": "Seu corpo reconheceu o som um instante antes de sua razão. Por uma fração de segundo, pensou no mercado destruído, em Reva recusando liberar Seron e em Nelo perguntando se uma janela reconstruída poderia voltar a gritar."
+   },
+   {
+    "line": 34,
+    "text": ""
+   },
+   {
+    "line": 35,
+    "text": "Depois percebeu onde estava."
+   },
+   {
+    "line": 36,
+    "text": ""
+   },
+   {
+    "line": 37,
+    "text": "Na Torre."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY",
+   "REPORTED_KNOWLEDGE"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5771,
+  "entity_id": "miren",
+  "field": "behavior",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 41,
+  "anchor": "Miren dormia a seu lado, uma das mãos sobre o lençol. Ele a observou por alguns segundos, sem despertá-la, e sentiu a diferença entre ter vencido uma guerra e ter atravessado aquilo que a guerra fizera com as pessoas.",
+  "anchor_sha256": "590cc1894ccf1f0592115e79b69511510d9bcb1c0433c1320869506d91619286",
+  "context": [
+   {
+    "line": 37,
+    "text": "Na Torre."
+   },
+   {
+    "line": 38,
+    "text": ""
+   },
+   {
+    "line": 39,
+    "text": "Em casa."
+   },
+   {
+    "line": 40,
+    "text": ""
+   },
+   {
+    "line": 41,
+    "text": "Miren dormia a seu lado, uma das mãos sobre o lençol. Ele a observou por alguns segundos, sem despertá-la, e sentiu a diferença entre ter vencido uma guerra e ter atravessado aquilo que a guerra fizera com as pessoas."
+   },
+   {
+    "line": 42,
+    "text": ""
+   },
+   {
+    "line": 43,
+    "text": "GÊNESE não estava fraca. Ele poderia criar um segundo horizonte antes do café."
+   },
+   {
+    "line": 44,
+    "text": ""
+   },
+   {
+    "line": 45,
+    "text": "Isso não apagaria a lembrança do menino."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5772,
+  "entity_id": "miren",
+  "field": "location",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 41,
+  "anchor": "Miren dormia a seu lado, uma das mãos sobre o lençol. Ele a observou por alguns segundos, sem despertá-la, e sentiu a diferença entre ter vencido uma guerra e ter atravessado aquilo que a guerra fizera com as pessoas.",
+  "anchor_sha256": "590cc1894ccf1f0592115e79b69511510d9bcb1c0433c1320869506d91619286",
+  "context": [
+   {
+    "line": 37,
+    "text": "Na Torre."
+   },
+   {
+    "line": 38,
+    "text": ""
+   },
+   {
+    "line": 39,
+    "text": "Em casa."
+   },
+   {
+    "line": 40,
+    "text": ""
+   },
+   {
+    "line": 41,
+    "text": "Miren dormia a seu lado, uma das mãos sobre o lençol. Ele a observou por alguns segundos, sem despertá-la, e sentiu a diferença entre ter vencido uma guerra e ter atravessado aquilo que a guerra fizera com as pessoas."
+   },
+   {
+    "line": 42,
+    "text": ""
+   },
+   {
+    "line": 43,
+    "text": "GÊNESE não estava fraca. Ele poderia criar um segundo horizonte antes do café."
+   },
+   {
+    "line": 44,
+    "text": ""
+   },
+   {
+    "line": 45,
+    "text": "Isso não apagaria a lembrança do menino."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5773,
+  "entity_id": "genese",
+  "field": "powers",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 43,
+  "anchor": "GÊNESE não estava fraca. Ele poderia criar um segundo horizonte antes do café.",
+  "anchor_sha256": "237ebb254033d1bd47f7489213f4d1dd28046456a5dc5ef928902518c7beed37",
+  "context": [
+   {
+    "line": 39,
+    "text": "Em casa."
+   },
+   {
+    "line": 40,
+    "text": ""
+   },
+   {
+    "line": 41,
+    "text": "Miren dormia a seu lado, uma das mãos sobre o lençol. Ele a observou por alguns segundos, sem despertá-la, e sentiu a diferença entre ter vencido uma guerra e ter atravessado aquilo que a guerra fizera com as pessoas."
+   },
+   {
+    "line": 42,
+    "text": ""
+   },
+   {
+    "line": 43,
+    "text": "GÊNESE não estava fraca. Ele poderia criar um segundo horizonte antes do café."
+   },
+   {
+    "line": 44,
+    "text": ""
+   },
+   {
+    "line": 45,
+    "text": "Isso não apagaria a lembrança do menino."
+   },
+   {
+    "line": 46,
+    "text": ""
+   },
+   {
+    "line": 47,
+    "text": "Lucas levantou-se, vestiu uma camisa e atravessou o apartamento em silêncio."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY",
+   "REPORTED_KNOWLEDGE"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5774,
+  "entity_id": "genese",
+  "field": "location",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 43,
+  "anchor": "GÊNESE não estava fraca. Ele poderia criar um segundo horizonte antes do café.",
+  "anchor_sha256": "237ebb254033d1bd47f7489213f4d1dd28046456a5dc5ef928902518c7beed37",
+  "context": [
+   {
+    "line": 39,
+    "text": "Em casa."
+   },
+   {
+    "line": 40,
+    "text": ""
+   },
+   {
+    "line": 41,
+    "text": "Miren dormia a seu lado, uma das mãos sobre o lençol. Ele a observou por alguns segundos, sem despertá-la, e sentiu a diferença entre ter vencido uma guerra e ter atravessado aquilo que a guerra fizera com as pessoas."
+   },
+   {
+    "line": 42,
+    "text": ""
+   },
+   {
+    "line": 43,
+    "text": "GÊNESE não estava fraca. Ele poderia criar um segundo horizonte antes do café."
+   },
+   {
+    "line": 44,
+    "text": ""
+   },
+   {
+    "line": 45,
+    "text": "Isso não apagaria a lembrança do menino."
+   },
+   {
+    "line": 46,
+    "text": ""
+   },
+   {
+    "line": 47,
+    "text": "Lucas levantou-se, vestiu uma camisa e atravessou o apartamento em silêncio."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY",
+   "REPORTED_KNOWLEDGE"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5775,
+  "entity_id": "lucas",
+  "field": "location",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 47,
+  "anchor": "Lucas levantou-se, vestiu uma camisa e atravessou o apartamento em silêncio.",
+  "anchor_sha256": "1c0dec00352f444a4f96b03eed947d4f77be9ffd9b22131c838868a6d1b4283d",
+  "context": [
+   {
+    "line": 43,
+    "text": "GÊNESE não estava fraca. Ele poderia criar um segundo horizonte antes do café."
+   },
+   {
+    "line": 44,
+    "text": ""
+   },
+   {
+    "line": 45,
+    "text": "Isso não apagaria a lembrança do menino."
+   },
+   {
+    "line": 46,
+    "text": ""
+   },
+   {
+    "line": 47,
+    "text": "Lucas levantou-se, vestiu uma camisa e atravessou o apartamento em silêncio."
+   },
+   {
+    "line": 48,
+    "text": ""
+   },
+   {
+    "line": 49,
+    "text": "NÓX já estava no observatório, contemplando as luzes da cidade. A armadura viva não precisava fingir que era um sistema da Torre para estar ali; escolhera vigiar a madrugada."
+   },
+   {
+    "line": 50,
+    "text": ""
+   },
+   {
+    "line": 51,
+    "text": "*【NÓX — Dormiu melhor do que nos últimos dias.】*"
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5776,
+  "entity_id": "nox",
+  "field": "appearance",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 49,
+  "anchor": "NÓX já estava no observatório, contemplando as luzes da cidade. A armadura viva não precisava fingir que era um sistema da Torre para estar ali; escolhera vigiar a madrugada.",
+  "anchor_sha256": "c452bb9cbc0cd7dbad38672cc142b9a7ef41d72b8ccb7ed1533c97861a8bc269",
+  "context": [
+   {
+    "line": 45,
+    "text": "Isso não apagaria a lembrança do menino."
+   },
+   {
+    "line": 46,
+    "text": ""
+   },
+   {
+    "line": 47,
+    "text": "Lucas levantou-se, vestiu uma camisa e atravessou o apartamento em silêncio."
+   },
+   {
+    "line": 48,
+    "text": ""
+   },
+   {
+    "line": 49,
+    "text": "NÓX já estava no observatório, contemplando as luzes da cidade. A armadura viva não precisava fingir que era um sistema da Torre para estar ali; escolhera vigiar a madrugada."
+   },
+   {
+    "line": 50,
+    "text": ""
+   },
+   {
+    "line": 51,
+    "text": "*【NÓX — Dormiu melhor do que nos últimos dias.】*"
+   },
+   {
+    "line": 52,
+    "text": ""
+   },
+   {
+    "line": 53,
+    "text": "**LUCAS —** O suficiente para voltar a ter ideias perigosamente bonitas."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5777,
+  "entity_id": "nox",
+  "field": "architecture",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 49,
+  "anchor": "NÓX já estava no observatório, contemplando as luzes da cidade. A armadura viva não precisava fingir que era um sistema da Torre para estar ali; escolhera vigiar a madrugada.",
+  "anchor_sha256": "c452bb9cbc0cd7dbad38672cc142b9a7ef41d72b8ccb7ed1533c97861a8bc269",
+  "context": [
+   {
+    "line": 45,
+    "text": "Isso não apagaria a lembrança do menino."
+   },
+   {
+    "line": 46,
+    "text": ""
+   },
+   {
+    "line": 47,
+    "text": "Lucas levantou-se, vestiu uma camisa e atravessou o apartamento em silêncio."
+   },
+   {
+    "line": 48,
+    "text": ""
+   },
+   {
+    "line": 49,
+    "text": "NÓX já estava no observatório, contemplando as luzes da cidade. A armadura viva não precisava fingir que era um sistema da Torre para estar ali; escolhera vigiar a madrugada."
+   },
+   {
+    "line": 50,
+    "text": ""
+   },
+   {
+    "line": 51,
+    "text": "*【NÓX — Dormiu melhor do que nos últimos dias.】*"
+   },
+   {
+    "line": 52,
+    "text": ""
+   },
+   {
+    "line": 53,
+    "text": "**LUCAS —** O suficiente para voltar a ter ideias perigosamente bonitas."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5778,
+  "entity_id": "nox",
+  "field": "behavior",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 49,
+  "anchor": "NÓX já estava no observatório, contemplando as luzes da cidade. A armadura viva não precisava fingir que era um sistema da Torre para estar ali; escolhera vigiar a madrugada.",
+  "anchor_sha256": "c452bb9cbc0cd7dbad38672cc142b9a7ef41d72b8ccb7ed1533c97861a8bc269",
+  "context": [
+   {
+    "line": 45,
+    "text": "Isso não apagaria a lembrança do menino."
+   },
+   {
+    "line": 46,
+    "text": ""
+   },
+   {
+    "line": 47,
+    "text": "Lucas levantou-se, vestiu uma camisa e atravessou o apartamento em silêncio."
+   },
+   {
+    "line": 48,
+    "text": ""
+   },
+   {
+    "line": 49,
+    "text": "NÓX já estava no observatório, contemplando as luzes da cidade. A armadura viva não precisava fingir que era um sistema da Torre para estar ali; escolhera vigiar a madrugada."
+   },
+   {
+    "line": 50,
+    "text": ""
+   },
+   {
+    "line": 51,
+    "text": "*【NÓX — Dormiu melhor do que nos últimos dias.】*"
+   },
+   {
+    "line": 52,
+    "text": ""
+   },
+   {
+    "line": 53,
+    "text": "**LUCAS —** O suficiente para voltar a ter ideias perigosamente bonitas."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5779,
+  "entity_id": "nox",
+  "field": "location",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 49,
+  "anchor": "NÓX já estava no observatório, contemplando as luzes da cidade. A armadura viva não precisava fingir que era um sistema da Torre para estar ali; escolhera vigiar a madrugada.",
+  "anchor_sha256": "c452bb9cbc0cd7dbad38672cc142b9a7ef41d72b8ccb7ed1533c97861a8bc269",
+  "context": [
+   {
+    "line": 45,
+    "text": "Isso não apagaria a lembrança do menino."
+   },
+   {
+    "line": 46,
+    "text": ""
+   },
+   {
+    "line": 47,
+    "text": "Lucas levantou-se, vestiu uma camisa e atravessou o apartamento em silêncio."
+   },
+   {
+    "line": 48,
+    "text": ""
+   },
+   {
+    "line": 49,
+    "text": "NÓX já estava no observatório, contemplando as luzes da cidade. A armadura viva não precisava fingir que era um sistema da Torre para estar ali; escolhera vigiar a madrugada."
+   },
+   {
+    "line": 50,
+    "text": ""
+   },
+   {
+    "line": 51,
+    "text": "*【NÓX — Dormiu melhor do que nos últimos dias.】*"
+   },
+   {
+    "line": 52,
+    "text": ""
+   },
+   {
+    "line": 53,
+    "text": "**LUCAS —** O suficiente para voltar a ter ideias perigosamente bonitas."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5780,
+  "entity_id": "sistema",
+  "field": "appearance",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 49,
+  "anchor": "NÓX já estava no observatório, contemplando as luzes da cidade. A armadura viva não precisava fingir que era um sistema da Torre para estar ali; escolhera vigiar a madrugada.",
+  "anchor_sha256": "c452bb9cbc0cd7dbad38672cc142b9a7ef41d72b8ccb7ed1533c97861a8bc269",
+  "context": [
+   {
+    "line": 45,
+    "text": "Isso não apagaria a lembrança do menino."
+   },
+   {
+    "line": 46,
+    "text": ""
+   },
+   {
+    "line": 47,
+    "text": "Lucas levantou-se, vestiu uma camisa e atravessou o apartamento em silêncio."
+   },
+   {
+    "line": 48,
+    "text": ""
+   },
+   {
+    "line": 49,
+    "text": "NÓX já estava no observatório, contemplando as luzes da cidade. A armadura viva não precisava fingir que era um sistema da Torre para estar ali; escolhera vigiar a madrugada."
+   },
+   {
+    "line": 50,
+    "text": ""
+   },
+   {
+    "line": 51,
+    "text": "*【NÓX — Dormiu melhor do que nos últimos dias.】*"
+   },
+   {
+    "line": 52,
+    "text": ""
+   },
+   {
+    "line": 53,
+    "text": "**LUCAS —** O suficiente para voltar a ter ideias perigosamente bonitas."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5781,
+  "entity_id": "sistema",
+  "field": "architecture",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 49,
+  "anchor": "NÓX já estava no observatório, contemplando as luzes da cidade. A armadura viva não precisava fingir que era um sistema da Torre para estar ali; escolhera vigiar a madrugada.",
+  "anchor_sha256": "c452bb9cbc0cd7dbad38672cc142b9a7ef41d72b8ccb7ed1533c97861a8bc269",
+  "context": [
+   {
+    "line": 45,
+    "text": "Isso não apagaria a lembrança do menino."
+   },
+   {
+    "line": 46,
+    "text": ""
+   },
+   {
+    "line": 47,
+    "text": "Lucas levantou-se, vestiu uma camisa e atravessou o apartamento em silêncio."
+   },
+   {
+    "line": 48,
+    "text": ""
+   },
+   {
+    "line": 49,
+    "text": "NÓX já estava no observatório, contemplando as luzes da cidade. A armadura viva não precisava fingir que era um sistema da Torre para estar ali; escolhera vigiar a madrugada."
+   },
+   {
+    "line": 50,
+    "text": ""
+   },
+   {
+    "line": 51,
+    "text": "*【NÓX — Dormiu melhor do que nos últimos dias.】*"
+   },
+   {
+    "line": 52,
+    "text": ""
+   },
+   {
+    "line": 53,
+    "text": "**LUCAS —** O suficiente para voltar a ter ideias perigosamente bonitas."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5782,
+  "entity_id": "sistema",
+  "field": "behavior",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 49,
+  "anchor": "NÓX já estava no observatório, contemplando as luzes da cidade. A armadura viva não precisava fingir que era um sistema da Torre para estar ali; escolhera vigiar a madrugada.",
+  "anchor_sha256": "c452bb9cbc0cd7dbad38672cc142b9a7ef41d72b8ccb7ed1533c97861a8bc269",
+  "context": [
+   {
+    "line": 45,
+    "text": "Isso não apagaria a lembrança do menino."
+   },
+   {
+    "line": 46,
+    "text": ""
+   },
+   {
+    "line": 47,
+    "text": "Lucas levantou-se, vestiu uma camisa e atravessou o apartamento em silêncio."
+   },
+   {
+    "line": 48,
+    "text": ""
+   },
+   {
+    "line": 49,
+    "text": "NÓX já estava no observatório, contemplando as luzes da cidade. A armadura viva não precisava fingir que era um sistema da Torre para estar ali; escolhera vigiar a madrugada."
+   },
+   {
+    "line": 50,
+    "text": ""
+   },
+   {
+    "line": 51,
+    "text": "*【NÓX — Dormiu melhor do que nos últimos dias.】*"
+   },
+   {
+    "line": 52,
+    "text": ""
+   },
+   {
+    "line": 53,
+    "text": "**LUCAS —** O suficiente para voltar a ter ideias perigosamente bonitas."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5783,
+  "entity_id": "sistema",
+  "field": "location",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 49,
+  "anchor": "NÓX já estava no observatório, contemplando as luzes da cidade. A armadura viva não precisava fingir que era um sistema da Torre para estar ali; escolhera vigiar a madrugada.",
+  "anchor_sha256": "c452bb9cbc0cd7dbad38672cc142b9a7ef41d72b8ccb7ed1533c97861a8bc269",
+  "context": [
+   {
+    "line": 45,
+    "text": "Isso não apagaria a lembrança do menino."
+   },
+   {
+    "line": 46,
+    "text": ""
+   },
+   {
+    "line": 47,
+    "text": "Lucas levantou-se, vestiu uma camisa e atravessou o apartamento em silêncio."
+   },
+   {
+    "line": 48,
+    "text": ""
+   },
+   {
+    "line": 49,
+    "text": "NÓX já estava no observatório, contemplando as luzes da cidade. A armadura viva não precisava fingir que era um sistema da Torre para estar ali; escolhera vigiar a madrugada."
+   },
+   {
+    "line": 50,
+    "text": ""
+   },
+   {
+    "line": 51,
+    "text": "*【NÓX — Dormiu melhor do que nos últimos dias.】*"
+   },
+   {
+    "line": 52,
+    "text": ""
+   },
+   {
+    "line": 53,
+    "text": "**LUCAS —** O suficiente para voltar a ter ideias perigosamente bonitas."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5784,
+  "entity_id": "nox",
+  "field": "relationships",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 55,
+  "anchor": "*【NÓX — Isso não costuma significar descanso para nossos amigos.】*",
+  "anchor_sha256": "b6ba851577de1f11f39a06294a9a96b0df1dadae64f55bf4cd6eceea161e6f3f",
+  "context": [
+   {
+    "line": 51,
+    "text": "*【NÓX — Dormiu melhor do que nos últimos dias.】*"
+   },
+   {
+    "line": 52,
+    "text": ""
+   },
+   {
+    "line": 53,
+    "text": "**LUCAS —** O suficiente para voltar a ter ideias perigosamente bonitas."
+   },
+   {
+    "line": 54,
+    "text": ""
+   },
+   {
+    "line": 55,
+    "text": "*【NÓX — Isso não costuma significar descanso para nossos amigos.】*"
+   },
+   {
+    "line": 56,
+    "text": ""
+   },
+   {
+    "line": 57,
+    "text": "Lucas sorriu. O sorriso desapareceu quando viu a linha dourada da cobertura atual."
+   },
+   {
+    "line": 58,
+    "text": ""
+   },
+   {
+    "line": 59,
+    "text": "Aquela proteção existia porque ele a criara às pressas, no meio de uma cidade ferida. Continuava plena e estável. Defendera Três Arcos dos ataques posteriores. Não tinha de desaparecer só por ter nascido numa emergência."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5785,
+  "entity_id": "lucas",
+  "field": "voice",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 57,
+  "anchor": "Lucas sorriu. O sorriso desapareceu quando viu a linha dourada da cobertura atual.",
+  "anchor_sha256": "d525ae17f27cabacd72b15190bf114883789ce39c4c7749d1f8fc3f985f513fb",
+  "context": [
+   {
+    "line": 53,
+    "text": "**LUCAS —** O suficiente para voltar a ter ideias perigosamente bonitas."
+   },
+   {
+    "line": 54,
+    "text": ""
+   },
+   {
+    "line": 55,
+    "text": "*【NÓX — Isso não costuma significar descanso para nossos amigos.】*"
+   },
+   {
+    "line": 56,
+    "text": ""
+   },
+   {
+    "line": 57,
+    "text": "Lucas sorriu. O sorriso desapareceu quando viu a linha dourada da cobertura atual."
+   },
+   {
+    "line": 58,
+    "text": ""
+   },
+   {
+    "line": 59,
+    "text": "Aquela proteção existia porque ele a criara às pressas, no meio de uma cidade ferida. Continuava plena e estável. Defendera Três Arcos dos ataques posteriores. Não tinha de desaparecer só por ter nascido numa emergência."
+   },
+   {
+    "line": 60,
+    "text": ""
+   },
+   {
+    "line": 61,
+    "text": "Mas Lucas queria algo diferente: um sistema que continuasse protegendo mesmo quando ele estivesse longe; que não terminasse nas últimas casas urbanas; que acolhesse fazendas, moinhos e famílias que jamais haviam pedido para viver do lado de fora da segurança."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5786,
+  "entity_id": "tres-arcos",
+  "field": "architecture",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 59,
+  "anchor": "Aquela proteção existia porque ele a criara às pressas, no meio de uma cidade ferida. Continuava plena e estável. Defendera Três Arcos dos ataques posteriores. Não tinha de desaparecer só por ter nascido numa emergência.",
+  "anchor_sha256": "93887ab92eb5f7d7c2eb4075b50e0cb97108fb364162eabd9572dc42d4ae6494",
+  "context": [
+   {
+    "line": 55,
+    "text": "*【NÓX — Isso não costuma significar descanso para nossos amigos.】*"
+   },
+   {
+    "line": 56,
+    "text": ""
+   },
+   {
+    "line": 57,
+    "text": "Lucas sorriu. O sorriso desapareceu quando viu a linha dourada da cobertura atual."
+   },
+   {
+    "line": 58,
+    "text": ""
+   },
+   {
+    "line": 59,
+    "text": "Aquela proteção existia porque ele a criara às pressas, no meio de uma cidade ferida. Continuava plena e estável. Defendera Três Arcos dos ataques posteriores. Não tinha de desaparecer só por ter nascido numa emergência."
+   },
+   {
+    "line": 60,
+    "text": ""
+   },
+   {
+    "line": 61,
+    "text": "Mas Lucas queria algo diferente: um sistema que continuasse protegendo mesmo quando ele estivesse longe; que não terminasse nas últimas casas urbanas; que acolhesse fazendas, moinhos e famílias que jamais haviam pedido para viver do lado de fora da segurança."
+   },
+   {
+    "line": 62,
+    "text": ""
+   },
+   {
+    "line": 63,
+    "text": "**LUCAS —** NÓX, não basta levantar uma cidade e fazê-la crescer. Se o mundo descobrir que ela é maravilhosa antes de aprender que é segura, seremos nós a colocá-la em perigo."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5787,
+  "entity_id": "nox",
+  "field": "capabilities",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 65,
+  "anchor": "*【NÓX — A guerra não ensinou que a cidade era fraca. Ensinou que havia pessoas além do alcance das decisões que conhecíamos.】*",
+  "anchor_sha256": "485f146dae78d59656053fed24cc7aa73407895ce17a73520a74b32fd056c74d",
+  "context": [
+   {
+    "line": 61,
+    "text": "Mas Lucas queria algo diferente: um sistema que continuasse protegendo mesmo quando ele estivesse longe; que não terminasse nas últimas casas urbanas; que acolhesse fazendas, moinhos e famílias que jamais haviam pedido para viver do lado de fora da segurança."
+   },
+   {
+    "line": 62,
+    "text": ""
+   },
+   {
+    "line": 63,
+    "text": "**LUCAS —** NÓX, não basta levantar uma cidade e fazê-la crescer. Se o mundo descobrir que ela é maravilhosa antes de aprender que é segura, seremos nós a colocá-la em perigo."
+   },
+   {
+    "line": 64,
+    "text": ""
+   },
+   {
+    "line": 65,
+    "text": "*【NÓX — A guerra não ensinou que a cidade era fraca. Ensinou que havia pessoas além do alcance das decisões que conhecíamos.】*"
+   },
+   {
+    "line": 66,
+    "text": ""
+   },
+   {
+    "line": 67,
+    "text": "Lucas olhou para ele."
+   },
+   {
+    "line": 68,
+    "text": ""
+   },
+   {
+    "line": 69,
+    "text": "**LUCAS —** É por isso que gosto de conversar com você."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5788,
+  "entity_id": "base-aurora",
+  "field": "relationships",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 79,
+  "anchor": "“Bom dia, meus amigos. Sei que todos estamos exaustos e que a prioridade segue sendo quem precisa de cuidados. Hoje quero trabalhar em dois projetos que me acompanham desde a batalha: a evolução do Campo Aurora e do Campo da Legião para uma Base Aurora de defesa e resposta, e uma arquitetura de proteção para toda Três Arcos — inclusive as famílias e fazendas além da cidade.",
+  "anchor_sha256": "3aa8eadc60acddaaad47d0778ed38217537111057abecbd257f0e54221d3b448",
+  "context": [
+   {
+    "line": 75,
+    "text": "Abriu o comunicador autenticado da Cidade Livre e redigiu uma mensagem. Releu antes de enviar. Não era convocação do Criador, nem ordem a uma guarnição."
+   },
+   {
+    "line": 76,
+    "text": ""
+   },
+   {
+    "line": 77,
+    "text": "**MENSAGEM DE LUCAS — 06h24**"
+   },
+   {
+    "line": 78,
+    "text": ""
+   },
+   {
+    "line": 79,
+    "text": "“Bom dia, meus amigos. Sei que todos estamos exaustos e que a prioridade segue sendo quem precisa de cuidados. Hoje quero trabalhar em dois projetos que me acompanham desde a batalha: a evolução do Campo Aurora e do Campo da Legião para uma Base Aurora de defesa e resposta, e uma arquitetura de proteção para toda Três Arcos — inclusive as famílias e fazendas além da cidade."
+   },
+   {
+    "line": 80,
+    "text": ""
+   },
+   {
+    "line": 81,
+    "text": "Não vou instalar nada sem conversar com vocês, os responsáveis técnicos e os moradores. Primeiro, quero mostrar o que imaginei. Se puderem, venham avaliar. Se não puderem, continuem cuidando do que é mais urgente. Não é uma ordem."
+   },
+   {
+    "line": 82,
+    "text": ""
+   },
+   {
+    "line": 83,
+    "text": "— Lucas.”"
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5789,
+  "entity_id": "base-aurora",
+  "field": "architecture",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 79,
+  "anchor": "“Bom dia, meus amigos. Sei que todos estamos exaustos e que a prioridade segue sendo quem precisa de cuidados. Hoje quero trabalhar em dois projetos que me acompanham desde a batalha: a evolução do Campo Aurora e do Campo da Legião para uma Base Aurora de defesa e resposta, e uma arquitetura de proteção para toda Três Arcos — inclusive as famílias e fazendas além da cidade.",
+  "anchor_sha256": "3aa8eadc60acddaaad47d0778ed38217537111057abecbd257f0e54221d3b448",
+  "context": [
+   {
+    "line": 75,
+    "text": "Abriu o comunicador autenticado da Cidade Livre e redigiu uma mensagem. Releu antes de enviar. Não era convocação do Criador, nem ordem a uma guarnição."
+   },
+   {
+    "line": 76,
+    "text": ""
+   },
+   {
+    "line": 77,
+    "text": "**MENSAGEM DE LUCAS — 06h24**"
+   },
+   {
+    "line": 78,
+    "text": ""
+   },
+   {
+    "line": 79,
+    "text": "“Bom dia, meus amigos. Sei que todos estamos exaustos e que a prioridade segue sendo quem precisa de cuidados. Hoje quero trabalhar em dois projetos que me acompanham desde a batalha: a evolução do Campo Aurora e do Campo da Legião para uma Base Aurora de defesa e resposta, e uma arquitetura de proteção para toda Três Arcos — inclusive as famílias e fazendas além da cidade."
+   },
+   {
+    "line": 80,
+    "text": ""
+   },
+   {
+    "line": 81,
+    "text": "Não vou instalar nada sem conversar com vocês, os responsáveis técnicos e os moradores. Primeiro, quero mostrar o que imaginei. Se puderem, venham avaliar. Se não puderem, continuem cuidando do que é mais urgente. Não é uma ordem."
+   },
+   {
+    "line": 82,
+    "text": ""
+   },
+   {
+    "line": 83,
+    "text": "— Lucas.”"
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5790,
+  "entity_id": "tres-arcos",
+  "field": "relationships",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 79,
+  "anchor": "“Bom dia, meus amigos. Sei que todos estamos exaustos e que a prioridade segue sendo quem precisa de cuidados. Hoje quero trabalhar em dois projetos que me acompanham desde a batalha: a evolução do Campo Aurora e do Campo da Legião para uma Base Aurora de defesa e resposta, e uma arquitetura de proteção para toda Três Arcos — inclusive as famílias e fazendas além da cidade.",
+  "anchor_sha256": "3aa8eadc60acddaaad47d0778ed38217537111057abecbd257f0e54221d3b448",
+  "context": [
+   {
+    "line": 75,
+    "text": "Abriu o comunicador autenticado da Cidade Livre e redigiu uma mensagem. Releu antes de enviar. Não era convocação do Criador, nem ordem a uma guarnição."
+   },
+   {
+    "line": 76,
+    "text": ""
+   },
+   {
+    "line": 77,
+    "text": "**MENSAGEM DE LUCAS — 06h24**"
+   },
+   {
+    "line": 78,
+    "text": ""
+   },
+   {
+    "line": 79,
+    "text": "“Bom dia, meus amigos. Sei que todos estamos exaustos e que a prioridade segue sendo quem precisa de cuidados. Hoje quero trabalhar em dois projetos que me acompanham desde a batalha: a evolução do Campo Aurora e do Campo da Legião para uma Base Aurora de defesa e resposta, e uma arquitetura de proteção para toda Três Arcos — inclusive as famílias e fazendas além da cidade."
+   },
+   {
+    "line": 80,
+    "text": ""
+   },
+   {
+    "line": 81,
+    "text": "Não vou instalar nada sem conversar com vocês, os responsáveis técnicos e os moradores. Primeiro, quero mostrar o que imaginei. Se puderem, venham avaliar. Se não puderem, continuem cuidando do que é mais urgente. Não é uma ordem."
+   },
+   {
+    "line": 82,
+    "text": ""
+   },
+   {
+    "line": 83,
+    "text": "— Lucas.”"
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5791,
+  "entity_id": "tres-arcos",
+  "field": "architecture",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 79,
+  "anchor": "“Bom dia, meus amigos. Sei que todos estamos exaustos e que a prioridade segue sendo quem precisa de cuidados. Hoje quero trabalhar em dois projetos que me acompanham desde a batalha: a evolução do Campo Aurora e do Campo da Legião para uma Base Aurora de defesa e resposta, e uma arquitetura de proteção para toda Três Arcos — inclusive as famílias e fazendas além da cidade.",
+  "anchor_sha256": "3aa8eadc60acddaaad47d0778ed38217537111057abecbd257f0e54221d3b448",
+  "context": [
+   {
+    "line": 75,
+    "text": "Abriu o comunicador autenticado da Cidade Livre e redigiu uma mensagem. Releu antes de enviar. Não era convocação do Criador, nem ordem a uma guarnição."
+   },
+   {
+    "line": 76,
+    "text": ""
+   },
+   {
+    "line": 77,
+    "text": "**MENSAGEM DE LUCAS — 06h24**"
+   },
+   {
+    "line": 78,
+    "text": ""
+   },
+   {
+    "line": 79,
+    "text": "“Bom dia, meus amigos. Sei que todos estamos exaustos e que a prioridade segue sendo quem precisa de cuidados. Hoje quero trabalhar em dois projetos que me acompanham desde a batalha: a evolução do Campo Aurora e do Campo da Legião para uma Base Aurora de defesa e resposta, e uma arquitetura de proteção para toda Três Arcos — inclusive as famílias e fazendas além da cidade."
+   },
+   {
+    "line": 80,
+    "text": ""
+   },
+   {
+    "line": 81,
+    "text": "Não vou instalar nada sem conversar com vocês, os responsáveis técnicos e os moradores. Primeiro, quero mostrar o que imaginei. Se puderem, venham avaliar. Se não puderem, continuem cuidando do que é mais urgente. Não é uma ordem."
+   },
+   {
+    "line": 82,
+    "text": ""
+   },
+   {
+    "line": 83,
+    "text": "— Lucas.”"
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5792,
+  "entity_id": "legiao",
+  "field": "relationships",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 79,
+  "anchor": "“Bom dia, meus amigos. Sei que todos estamos exaustos e que a prioridade segue sendo quem precisa de cuidados. Hoje quero trabalhar em dois projetos que me acompanham desde a batalha: a evolução do Campo Aurora e do Campo da Legião para uma Base Aurora de defesa e resposta, e uma arquitetura de proteção para toda Três Arcos — inclusive as famílias e fazendas além da cidade.",
+  "anchor_sha256": "3aa8eadc60acddaaad47d0778ed38217537111057abecbd257f0e54221d3b448",
+  "context": [
+   {
+    "line": 75,
+    "text": "Abriu o comunicador autenticado da Cidade Livre e redigiu uma mensagem. Releu antes de enviar. Não era convocação do Criador, nem ordem a uma guarnição."
+   },
+   {
+    "line": 76,
+    "text": ""
+   },
+   {
+    "line": 77,
+    "text": "**MENSAGEM DE LUCAS — 06h24**"
+   },
+   {
+    "line": 78,
+    "text": ""
+   },
+   {
+    "line": 79,
+    "text": "“Bom dia, meus amigos. Sei que todos estamos exaustos e que a prioridade segue sendo quem precisa de cuidados. Hoje quero trabalhar em dois projetos que me acompanham desde a batalha: a evolução do Campo Aurora e do Campo da Legião para uma Base Aurora de defesa e resposta, e uma arquitetura de proteção para toda Três Arcos — inclusive as famílias e fazendas além da cidade."
+   },
+   {
+    "line": 80,
+    "text": ""
+   },
+   {
+    "line": 81,
+    "text": "Não vou instalar nada sem conversar com vocês, os responsáveis técnicos e os moradores. Primeiro, quero mostrar o que imaginei. Se puderem, venham avaliar. Se não puderem, continuem cuidando do que é mais urgente. Não é uma ordem."
+   },
+   {
+    "line": 82,
+    "text": ""
+   },
+   {
+    "line": 83,
+    "text": "— Lucas.”"
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5793,
+  "entity_id": "legiao",
+  "field": "architecture",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 79,
+  "anchor": "“Bom dia, meus amigos. Sei que todos estamos exaustos e que a prioridade segue sendo quem precisa de cuidados. Hoje quero trabalhar em dois projetos que me acompanham desde a batalha: a evolução do Campo Aurora e do Campo da Legião para uma Base Aurora de defesa e resposta, e uma arquitetura de proteção para toda Três Arcos — inclusive as famílias e fazendas além da cidade.",
+  "anchor_sha256": "3aa8eadc60acddaaad47d0778ed38217537111057abecbd257f0e54221d3b448",
+  "context": [
+   {
+    "line": 75,
+    "text": "Abriu o comunicador autenticado da Cidade Livre e redigiu uma mensagem. Releu antes de enviar. Não era convocação do Criador, nem ordem a uma guarnição."
+   },
+   {
+    "line": 76,
+    "text": ""
+   },
+   {
+    "line": 77,
+    "text": "**MENSAGEM DE LUCAS — 06h24**"
+   },
+   {
+    "line": 78,
+    "text": ""
+   },
+   {
+    "line": 79,
+    "text": "“Bom dia, meus amigos. Sei que todos estamos exaustos e que a prioridade segue sendo quem precisa de cuidados. Hoje quero trabalhar em dois projetos que me acompanham desde a batalha: a evolução do Campo Aurora e do Campo da Legião para uma Base Aurora de defesa e resposta, e uma arquitetura de proteção para toda Três Arcos — inclusive as famílias e fazendas além da cidade."
+   },
+   {
+    "line": 80,
+    "text": ""
+   },
+   {
+    "line": 81,
+    "text": "Não vou instalar nada sem conversar com vocês, os responsáveis técnicos e os moradores. Primeiro, quero mostrar o que imaginei. Se puderem, venham avaliar. Se não puderem, continuem cuidando do que é mais urgente. Não é uma ordem."
+   },
+   {
+    "line": 82,
+    "text": ""
+   },
+   {
+    "line": 83,
+    "text": "— Lucas.”"
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5794,
+  "entity_id": "rumo",
+  "field": "location",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 121,
+  "anchor": "Ysol aproximou-se com os registros de passagem. Rumo orientava, por escolha própria, uma das plataformas supervisionadas. Seron, Luren e Edric ainda precisavam de acompanhamento, cada qual por seu ferimento. Maia e Rina estavam recebendo cuidados adequados às lesões que haviam sofrido. Não havia alta decretada por conveniência narrativa.",
+  "anchor_sha256": "db5b7851c9f8da6a0a26368e1cf11c33ef779a012e069b0e4993a72043a0a8b4",
+  "context": [
+   {
+    "line": 117,
+    "text": "Lucas ouviu sem interromper."
+   },
+   {
+    "line": 118,
+    "text": ""
+   },
+   {
+    "line": 119,
+    "text": "Ele viera antes da reunião porque considerava aquela resposta mais importante que qualquer elogio."
+   },
+   {
+    "line": 120,
+    "text": ""
+   },
+   {
+    "line": 121,
+    "text": "Ysol aproximou-se com os registros de passagem. Rumo orientava, por escolha própria, uma das plataformas supervisionadas. Seron, Luren e Edric ainda precisavam de acompanhamento, cada qual por seu ferimento. Maia e Rina estavam recebendo cuidados adequados às lesões que haviam sofrido. Não havia alta decretada por conveniência narrativa."
+   },
+   {
+    "line": 122,
+    "text": ""
+   },
+   {
+    "line": 123,
+    "text": "**YSOL —** E não quero um abrigo que feche sozinho e deixe uma criança sem a mãe porque algum dispositivo decidiu que ela está mais segura separada."
+   },
+   {
+    "line": 124,
+    "text": ""
+   },
+   {
+    "line": 125,
+    "text": "**LUCAS —** Concordo."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5795,
+  "entity_id": "maia",
+  "field": "location",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 121,
+  "anchor": "Ysol aproximou-se com os registros de passagem. Rumo orientava, por escolha própria, uma das plataformas supervisionadas. Seron, Luren e Edric ainda precisavam de acompanhamento, cada qual por seu ferimento. Maia e Rina estavam recebendo cuidados adequados às lesões que haviam sofrido. Não havia alta decretada por conveniência narrativa.",
+  "anchor_sha256": "db5b7851c9f8da6a0a26368e1cf11c33ef779a012e069b0e4993a72043a0a8b4",
+  "context": [
+   {
+    "line": 117,
+    "text": "Lucas ouviu sem interromper."
+   },
+   {
+    "line": 118,
+    "text": ""
+   },
+   {
+    "line": 119,
+    "text": "Ele viera antes da reunião porque considerava aquela resposta mais importante que qualquer elogio."
+   },
+   {
+    "line": 120,
+    "text": ""
+   },
+   {
+    "line": 121,
+    "text": "Ysol aproximou-se com os registros de passagem. Rumo orientava, por escolha própria, uma das plataformas supervisionadas. Seron, Luren e Edric ainda precisavam de acompanhamento, cada qual por seu ferimento. Maia e Rina estavam recebendo cuidados adequados às lesões que haviam sofrido. Não havia alta decretada por conveniência narrativa."
+   },
+   {
+    "line": 122,
+    "text": ""
+   },
+   {
+    "line": 123,
+    "text": "**YSOL —** E não quero um abrigo que feche sozinho e deixe uma criança sem a mãe porque algum dispositivo decidiu que ela está mais segura separada."
+   },
+   {
+    "line": 124,
+    "text": ""
+   },
+   {
+    "line": 125,
+    "text": "**LUCAS —** Concordo."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5796,
+  "entity_id": "ysol",
+  "field": "location",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 121,
+  "anchor": "Ysol aproximou-se com os registros de passagem. Rumo orientava, por escolha própria, uma das plataformas supervisionadas. Seron, Luren e Edric ainda precisavam de acompanhamento, cada qual por seu ferimento. Maia e Rina estavam recebendo cuidados adequados às lesões que haviam sofrido. Não havia alta decretada por conveniência narrativa.",
+  "anchor_sha256": "db5b7851c9f8da6a0a26368e1cf11c33ef779a012e069b0e4993a72043a0a8b4",
+  "context": [
+   {
+    "line": 117,
+    "text": "Lucas ouviu sem interromper."
+   },
+   {
+    "line": 118,
+    "text": ""
+   },
+   {
+    "line": 119,
+    "text": "Ele viera antes da reunião porque considerava aquela resposta mais importante que qualquer elogio."
+   },
+   {
+    "line": 120,
+    "text": ""
+   },
+   {
+    "line": 121,
+    "text": "Ysol aproximou-se com os registros de passagem. Rumo orientava, por escolha própria, uma das plataformas supervisionadas. Seron, Luren e Edric ainda precisavam de acompanhamento, cada qual por seu ferimento. Maia e Rina estavam recebendo cuidados adequados às lesões que haviam sofrido. Não havia alta decretada por conveniência narrativa."
+   },
+   {
+    "line": 122,
+    "text": ""
+   },
+   {
+    "line": 123,
+    "text": "**YSOL —** E não quero um abrigo que feche sozinho e deixe uma criança sem a mãe porque algum dispositivo decidiu que ela está mais segura separada."
+   },
+   {
+    "line": 124,
+    "text": ""
+   },
+   {
+    "line": 125,
+    "text": "**LUCAS —** Concordo."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5797,
+  "entity_id": "edric",
+  "field": "location",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 121,
+  "anchor": "Ysol aproximou-se com os registros de passagem. Rumo orientava, por escolha própria, uma das plataformas supervisionadas. Seron, Luren e Edric ainda precisavam de acompanhamento, cada qual por seu ferimento. Maia e Rina estavam recebendo cuidados adequados às lesões que haviam sofrido. Não havia alta decretada por conveniência narrativa.",
+  "anchor_sha256": "db5b7851c9f8da6a0a26368e1cf11c33ef779a012e069b0e4993a72043a0a8b4",
+  "context": [
+   {
+    "line": 117,
+    "text": "Lucas ouviu sem interromper."
+   },
+   {
+    "line": 118,
+    "text": ""
+   },
+   {
+    "line": 119,
+    "text": "Ele viera antes da reunião porque considerava aquela resposta mais importante que qualquer elogio."
+   },
+   {
+    "line": 120,
+    "text": ""
+   },
+   {
+    "line": 121,
+    "text": "Ysol aproximou-se com os registros de passagem. Rumo orientava, por escolha própria, uma das plataformas supervisionadas. Seron, Luren e Edric ainda precisavam de acompanhamento, cada qual por seu ferimento. Maia e Rina estavam recebendo cuidados adequados às lesões que haviam sofrido. Não havia alta decretada por conveniência narrativa."
+   },
+   {
+    "line": 122,
+    "text": ""
+   },
+   {
+    "line": 123,
+    "text": "**YSOL —** E não quero um abrigo que feche sozinho e deixe uma criança sem a mãe porque algum dispositivo decidiu que ela está mais segura separada."
+   },
+   {
+    "line": 124,
+    "text": ""
+   },
+   {
+    "line": 125,
+    "text": "**LUCAS —** Concordo."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5798,
+  "entity_id": "luren",
+  "field": "location",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 121,
+  "anchor": "Ysol aproximou-se com os registros de passagem. Rumo orientava, por escolha própria, uma das plataformas supervisionadas. Seron, Luren e Edric ainda precisavam de acompanhamento, cada qual por seu ferimento. Maia e Rina estavam recebendo cuidados adequados às lesões que haviam sofrido. Não havia alta decretada por conveniência narrativa.",
+  "anchor_sha256": "db5b7851c9f8da6a0a26368e1cf11c33ef779a012e069b0e4993a72043a0a8b4",
+  "context": [
+   {
+    "line": 117,
+    "text": "Lucas ouviu sem interromper."
+   },
+   {
+    "line": 118,
+    "text": ""
+   },
+   {
+    "line": 119,
+    "text": "Ele viera antes da reunião porque considerava aquela resposta mais importante que qualquer elogio."
+   },
+   {
+    "line": 120,
+    "text": ""
+   },
+   {
+    "line": 121,
+    "text": "Ysol aproximou-se com os registros de passagem. Rumo orientava, por escolha própria, uma das plataformas supervisionadas. Seron, Luren e Edric ainda precisavam de acompanhamento, cada qual por seu ferimento. Maia e Rina estavam recebendo cuidados adequados às lesões que haviam sofrido. Não havia alta decretada por conveniência narrativa."
+   },
+   {
+    "line": 122,
+    "text": ""
+   },
+   {
+    "line": 123,
+    "text": "**YSOL —** E não quero um abrigo que feche sozinho e deixe uma criança sem a mãe porque algum dispositivo decidiu que ela está mais segura separada."
+   },
+   {
+    "line": 124,
+    "text": ""
+   },
+   {
+    "line": 125,
+    "text": "**LUCAS —** Concordo."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5799,
+  "entity_id": "reva",
+  "field": "architecture",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 127,
+  "anchor": "**REVA —** E não quero que uma torre detecte um paciente em crise e o classifique como ameaça.",
+  "anchor_sha256": "c666ed1ed11c9646cf710650012c796a7183926085912bae076c6f46b82a22f5",
+  "context": [
+   {
+    "line": 123,
+    "text": "**YSOL —** E não quero um abrigo que feche sozinho e deixe uma criança sem a mãe porque algum dispositivo decidiu que ela está mais segura separada."
+   },
+   {
+    "line": 124,
+    "text": ""
+   },
+   {
+    "line": 125,
+    "text": "**LUCAS —** Concordo."
+   },
+   {
+    "line": 126,
+    "text": ""
+   },
+   {
+    "line": 127,
+    "text": "**REVA —** E não quero que uma torre detecte um paciente em crise e o classifique como ameaça."
+   },
+   {
+    "line": 128,
+    "text": ""
+   },
+   {
+    "line": 129,
+    "text": "**LUCAS —** Concordo também."
+   },
+   {
+    "line": 130,
+    "text": ""
+   },
+   {
+    "line": 131,
+    "text": "Reva cruzou os braços, desconfiada."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "NEGATION_OR_MODALITY"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ },
+ {
+  "original_id": 5800,
+  "entity_id": "rumo",
+  "field": "voice",
+  "source": "episode:LVI-C04-PI-D554-AUTHOR-SOURCE",
+  "source_sha256": "5ef4966b941d87b0eff29b3ecfacd6742c89f0e9cba2eadd0e8f0c982fb0ac05",
+  "source_status": "CLOSED",
+  "day": 554,
+  "line": 137,
+  "anchor": "Rumo sorriu.",
+  "anchor_sha256": "59e8292fb87a081bdce6f21ab0ed25583b5b97181f008472d2a0b0b70d0d17db",
+  "context": [
+   {
+    "line": 133,
+    "text": "**REVA —** Você vai me deixar terminar antes de levantar um castelo?"
+   },
+   {
+    "line": 134,
+    "text": ""
+   },
+   {
+    "line": 135,
+    "text": "**LUCAS —** Estou tentando demonstrar crescimento pessoal."
+   },
+   {
+    "line": 136,
+    "text": ""
+   },
+   {
+    "line": 137,
+    "text": "Rumo sorriu."
+   },
+   {
+    "line": 138,
+    "text": ""
+   },
+   {
+    "line": 139,
+    "text": "**RUMO —** Anotarei para uso futuro."
+   },
+   {
+    "line": 140,
+    "text": ""
+   },
+   {
+    "line": 141,
+    "text": "**LUCAS —** NÃO INCENTIVE A DOUTORA."
+   }
+  ],
+  "route": "CLOSED_PROSE_SEMANTIC_REVIEW",
+  "flags": [
+   "SHORT_ANCHOR"
+  ],
+  "verdict": "PENDING_SEMANTIC_REVIEW",
+  "semantic_certified": false
+ }
+]

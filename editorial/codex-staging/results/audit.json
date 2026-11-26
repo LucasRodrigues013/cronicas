@@ -1,0 +1,147 @@
+{
+  "sources": 57,
+  "historical_sources": 6,
+  "historical_parts": 11,
+  "historical_bytes": 13928807,
+  "closed_episodes": 50,
+  "pending_episodes": 1,
+  "scan_lines": 699963,
+  "records": 144,
+  "categories": {
+    "asset": 30,
+    "character": 72,
+    "entity": 1,
+    "institution": 3,
+    "guardian": 1,
+    "city": 2,
+    "territory": 4,
+    "kingdom": 1,
+    "city_or_territory": 2,
+    "region": 1,
+    "location": 1,
+    "sea": 1,
+    "building": 4,
+    "archaeological_site": 1,
+    "infrastructure": 1,
+    "organization": 3,
+    "power": 5,
+    "plot": 11
+  },
+  "candidate_contexts": 10352,
+  "source_matched_observations": 155,
+  "mentions": 143537,
+  "unresolved_speaker_names": 538,
+  "unresolved_scene_location_names": 1034,
+  "image_metadata": 92,
+  "images_visually_inspected": 18,
+  "alias_collisions": {
+    "campo aurora": [
+      "base-aurora",
+      "campo-aurora"
+    ],
+    "asa livre": [
+      "asa-livre",
+      "plot:asa"
+    ],
+    "horizonte de ferro arcano": [
+      "ferro-horizonte",
+      "plot:ferro"
+    ],
+    "coracao de aerun": [
+      "coracao-aerun",
+      "plot:coracao"
+    ],
+    "coracao de convergencia": [
+      "coracao-aerun",
+      "plot:coracao"
+    ],
+    "seron": [
+      "plot:ithran",
+      "seron"
+    ],
+    "talis": [
+      "plot:talis",
+      "talis"
+    ],
+    "tharvek": [
+      "plot:seis-marcas",
+      "tharvek"
+    ],
+    "bressa": [
+      "bressa",
+      "plot:seis-marcas"
+    ],
+    "niraven": [
+      "niraven",
+      "plot:nira"
+    ],
+    "virandor": [
+      "plot:nira",
+      "virandor"
+    ],
+    "velkar": [
+      "plot:velkar",
+      "velkar"
+    ],
+    "varkhess": [
+      "plot:mar",
+      "varkhess"
+    ],
+    "ithran": [
+      "ithran",
+      "plot:ithran"
+    ],
+    "nelo": [
+      "nelo",
+      "plot:ithran"
+    ],
+    "aerun": [
+      "aerun-guardiao",
+      "aerun-instituto"
+    ],
+    "halvern": [
+      "halvern-region",
+      "plot:conferencia",
+      "plot:halvern"
+    ],
+    "renshar": [
+      "plot:velkar",
+      "renshar"
+    ],
+    "serevan": [
+      "plot:mar",
+      "serevan"
+    ],
+    "ordan": [
+      "ordan",
+      "plot:halvern"
+    ]
+  },
+  "fts_integrity": true,
+  "incremental_pending_idempotence": true,
+  "changed_source_rejected": true,
+  "stale_head_rejected": true,
+  "r35_preview": {
+    "Lucas": "unique",
+    "Miren": "unique",
+    "Astra": "unique",
+    "Dorek": "unique",
+    "Brannik": "unique",
+    "Lysa": "unique",
+    "Kael": "unique"
+  },
+  "head_unchanged": true,
+  "semantic_certification": false,
+  "existing_r35_graph_retrieval_test": {
+    "probe-kairon": [
+      "kairon"
+    ],
+    "probe-argos": [
+      "argos"
+    ],
+    "probe-orven": [
+      "orven"
+    ]
+  },
+  "production_integration": false
+}
