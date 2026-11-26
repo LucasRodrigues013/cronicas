@@ -88,6 +88,10 @@ def run(root,ledger,out,expected=9229):
         all_links=reconcile_events(all_closures,rows)
         from .r36_contextual import expand,metrics as context_metrics
         packets=expand(all_closures,rows,sources,all_links)
+        from .live_codex import load_registry,all_records
+        from .r36_contextual import audit_and_enrich
+        registry,registry_sha=load_registry(root)
+        enriched,enrichment=audit_and_enrich(packets,rows,sources,list(all_records(registry)))
     out.mkdir(parents=True,exist_ok=False)
     counts=Counter(r["route"] for r in all_links)
     tasks=list(jobs(rows))
@@ -99,7 +103,8 @@ def run(root,ledger,out,expected=9229):
        "event_routes":dict(counts),"candidate_row_links":sum(len(r["candidate_ids"]) for r in all_links),
        "independently_reviewed":0,"canon_promotions":0,"semantic_certification":False}
     metrics["contextual"]=context_metrics(packets)
-    for name,obj in (("event-candidates.json",all_links),("event-review-packets.json",packets),("metrics.json",metrics)):
+    metrics["enrichment"]={**enrichment,"registry_sha256":registry_sha}
+    for name,obj in (("event-candidates.json",all_links),("event-review-packets.json",packets),("event-link-audit.json",enriched),("metrics.json",metrics)):
         (out/name).write_text(json.dumps(obj,ensure_ascii=False,sort_keys=True),encoding="utf-8")
     with (out/"jobs.jsonl").open("x",encoding="utf-8") as f:
         for j in tasks:f.write(json.dumps(j,ensure_ascii=False,separators=(",",":"))+"\n")

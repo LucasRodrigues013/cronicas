@@ -40,3 +40,72 @@ def expand(closures,rows,sources,baseline,radius=32):
 def metrics(packets):
     routes=Counter(p["route"] for p in packets)
     return {"event_packets":len(packets),"routes":dict(routes),"exact_links_preserved":sum(r["match"]=="EXACT_BASELINE" for p in packets for r in p["candidate_rows"]),"context_links":sum(r["match"]=="CONTEXT_ONLY" for p in packets for r in p["candidate_rows"]),"semantic_certified":0,"canon_promotions":0}
+
+def audit_and_enrich(packets,rows,sources,records):
+    """Revalidate every ledger link and recover registered mentions. Never assign roles."""
+    from .live_codex import norm
+    by={r["original_id"]:r for r in rows}
+    if len(by)!=len(rows):raise ValueError("Duplicate historical ID")
+    names=defaultdict(set);known={}
+    for r in records:
+        ident=r["id"]
+        if ident in known:raise ValueError("Duplicate registry identity")
+        known[ident]=r.get("scope","UNKNOWN")
+        # Exclude unobserved spell catalogue and school proposals from historical mention matching.
+        if known[ident] in ("GRIMOIRE_PROPOSAL_NOT_PERSONAL_REPERTOIRE","TRADITION_DESIGN_NOT_OBSERVED"):continue
+        for name in [r["name"],*r.get("aliases",[])]:
+            key=norm(name)
+            if len(key)>=3:names[key].add(ident)
+    import re
+    pattern=re.compile(r"(?<!\w)(?:"+"|".join(re.escape(k) for k in sorted(names,key=lambda x:(-len(x),x)))+r")(?!\w)") if names else None
+    def matches(text):
+        # Lookahead on token starts avoids suppressing shorter overlapping aliases.
+        if not pattern:return set()
+        t=norm(text);found=set()
+        for m in re.finditer(r"(?<!\w)\w",t):
+            match=pattern.match(t,m.start())
+            if match:found.add(match.group())
+        return found
+    result=[];seen=set();count=Counter()
+    for p in packets:
+        ident=p["event_id"]
+        if ident in seen or seal({k:v for k,v in p.items() if k!="packet_sha256"})!=p["packet_sha256"]:raise ValueError("Invalid event packet")
+        seen.add(ident);key="episode:"+p["episode"];digest,lines,status=sources[key]
+        if p["source_sha256"]!=digest or p["source_status"]!=status:raise ValueError("Changed source")
+        n=p["line"]
+        if not 1<=n<=len(lines) or p["anchor"] not in lines[n-1]:raise ValueError("Changed event anchor")
+        context=p["context"];line_ids=[x["line"] for x in context]
+        if not line_ids or line_ids!=list(range(line_ids[0],line_ids[-1]+1)) or n not in line_ids:raise ValueError("Invalid context window")
+        if any(not 1<=x["line"]<=len(lines) or lines[x["line"]-1]!=x["text"] for x in context):raise ValueError("Changed event context")
+        checked=set()
+        for c in p["candidate_rows"]:
+            rid=c["original_id"];r=by.get(rid)
+            if rid in checked or r is None:raise ValueError("Missing or duplicate candidate")
+            checked.add(rid)
+            if r["source"]!=key or r["source_sha256"]!=digest or r["line"] not in line_ids or any(r[k]!=c[k] for k in ("entity_id","field","line","anchor_sha256")) or c["distance"]!=abs(n-r["line"]):raise ValueError("Candidate provenance mismatch")
+            exact=r["line"]==n and p["anchor"] in r["anchor"]
+            if c["match"]!=("EXACT_BASELINE" if exact else "CONTEXT_ONLY"):raise ValueError("Candidate classification mismatch")
+            count["ledger_links_verified"]+=1
+            if r["entity_id"] not in known:count["ledger_links_unknown_registry_id"]+=1
+        summary=matches(p["summary_candidate"]);anchor=matches(p["anchor"]);mentions=defaultdict(list)
+        for x in context:
+            for name in matches(x["text"]):mentions[name].append(x["line"])
+        candidates=[]
+        for name in sorted(summary|set(mentions)):
+            ids=sorted(names[name]);locations=mentions.get(name,[])
+            # A mention in the event summary is not source evidence.
+            tier="ANCHOR" if name in anchor else "SUMMARY_AND_CONTEXT" if name in summary and locations else "CONTEXT_ONLY" if locations else "SUMMARY_ONLY"
+            candidates.append({"normalized_alias":name,"candidate_ids":ids,"scopes":[known[i] for i in ids],"source_lines":locations,"tier":tier,"ambiguous":len(ids)>1})
+            count["registry_mention_groups"]+=1
+            if len(ids)>1:count["ambiguous_mention_groups"]+=1
+        source_candidates=[c for c in candidates if c["source_lines"]]
+        if not checked:
+            count["previously_open_events"]+=1
+            if source_candidates:count["open_events_with_source_mentions"]+=1
+            else:count["still_open_events"]+=1
+        route="LEDGER_AND_REGISTRY_REVIEW" if checked else "REGISTRY_MENTION_REVIEW" if source_candidates else "OPEN_ENTITY_REVIEW_REQUIRED"
+        value={"event_id":ident,"packet_sha256":p["packet_sha256"],"source_sha256":digest,"source_status":status,"visibility":p["visibility"],"ledger_links_verified":len(checked),"registry_mentions":candidates,"route":route,"semantic_certification":False,"canon_promotion":False}
+        result.append({**value,"receipt_sha256":seal(value)})
+    count["events_audited"]=len(result)
+    count["semantic_certified"]=0;count["canon_promotions"]=0
+    return result,dict(count)
