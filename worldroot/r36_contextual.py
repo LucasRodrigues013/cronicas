@@ -124,6 +124,26 @@ def audit_and_enrich(packets,rows,sources,records):
             count["previously_open_events"]+=1
             if source_candidates:count["open_events_with_source_mentions"]+=1
             else:count["still_open_events"]+=1
+        # Plot IDs index editorial fronts, not competing individual identities.
+        # Preserve the original group and all IDs; classification is only a
+        # routing decision, never proof that the remaining identity acted.
+        for candidate in candidates:
+            ids=candidate["candidate_ids"]
+            entities=[i for i in ids if not i.startswith("plot:")]
+            plots=[i for i in ids if i.startswith("plot:")]
+            candidate["entity_candidate_ids"]=entities
+            candidate["plot_reference_ids"]=plots
+            if len(entities)>1:
+                candidate["identity_route"]="MULTIPLE_ENTITY_IDS_REVIEW_REQUIRED"
+                count["multiple_entity_groups"]+=1
+            elif len(entities)==1 and plots:
+                candidate["identity_route"]="ENTITY_AND_PLOT_DISTINCT_REVIEW_REQUIRED"
+                count["entity_plot_groups"]+=1
+            elif len(entities)==1:
+                candidate["identity_route"]="SINGLE_ENTITY_CANDIDATE"
+            else:
+                candidate["identity_route"]="PLOT_REFERENCE_ONLY"
+            if candidate["ambiguous"] and not entities:count["multiple_plot_only_groups"]+=1
         count["registry_mention_groups"]+=len(candidates)
         count["ambiguous_mention_groups"]+=sum(x["ambiguous"] for x in candidates)
         route="LEDGER_AND_REGISTRY_REVIEW" if checked else "REGISTRY_MENTION_REVIEW" if source_candidates else "OPEN_ENTITY_REVIEW_REQUIRED"

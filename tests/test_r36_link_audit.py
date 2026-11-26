@@ -46,3 +46,19 @@ class LinkAuditTest(unittest.TestCase):
         self.assertEqual(m["open_events_with_source_mentions"],1)
         self.assertEqual([x["candidate_ids"] for x in a[0]["registry_mentions"]],[["Lucas"]])
         self.assertEqual(a[0]["registry_mentions"][0]["source_lines"],[6])
+
+    def test_plot_alias_is_not_another_person(self):
+        p,r,s,d=self.fixture()
+        d=[x for x in d if x["id"]!="varo2"]+[{"id":"plot:varo","name":"Varo","scope":"EDITORIAL"}]
+        a,m=audit_and_enrich(p,r,s,d)
+        v=next(x for x in a[0]["registry_mentions"] if x["normalized_alias"]=="varo")
+        self.assertEqual(v["entity_candidate_ids"],["varo"])
+        self.assertEqual(v["plot_reference_ids"],["plot:varo"])
+        self.assertTrue(v["ambiguous"])
+        self.assertEqual(m["entity_plot_groups"],1)
+        self.assertFalse(a[0]["semantic_certification"])
+    def test_homonym_remains_unresolved(self):
+        a,m=audit_and_enrich(*self.fixture())
+        v=next(x for x in a[0]["registry_mentions"] if x["normalized_alias"]=="varo")
+        self.assertEqual(v["identity_route"],"MULTIPLE_ENTITY_IDS_REVIEW_REQUIRED")
+        self.assertEqual(m["multiple_entity_groups"],1)
