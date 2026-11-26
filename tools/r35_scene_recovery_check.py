@@ -33,3 +33,30 @@ with tempfile.TemporaryDirectory() as tmp:
     result=export(audit/"editorial/codex-staging/results/exact-context-ledger-v1",Path(tmp)/"jobs.jsonl")
     assert result["targets"]==9229
 print(json.dumps({"head":head["day"],"registry_sha":seal,"characters":overlay["character_count"],"world_records":overlay["world_count"],"source_recall_cases":len(pack["cases"]),"exact_source_anchors":checked,"global_records":len(rows),"scene_counts":[len(x["records"]) for x in s],"registry_load_ms":load_ms,"four_scene_packet_ms_mean_25":scene_ms,"semantic_jobs":result,"scope":"REAL_PRIVATE_ARCHIVE_READ_ONLY; structural and source tests, not independent semantic certification"},ensure_ascii=False))
+
+
+# Book I Stage D: real historical source and Arquiteto runtime smoke tests.
+from worldroot.arquiteto import discover, validate_legacy_recovery
+from worldroot.history_index import search
+book_source=(root/"history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001").read_text(encoding="utf-8")
+book="\n".join(book_source.split("\n")[:40845])
+assert "FIM DO LIVRO I" in book.splitlines()[-1]
+profiles=list(overlay["profiles"].values())
+candidates=discover(book,"book-i-d001-d090","LEGACY_MIXED",profiles)
+assert candidates and all(1<=x["line"]<=40845 for x in candidates)
+assert all(book.splitlines()[x["line"]-1]==x["anchor"] for x in candidates)
+assert len({x["id"] for x in candidates})==len(candidates)
+try:
+    validate_legacy_recovery(candidates[0],{},book)
+except ValueError:
+    pass
+else:
+    raise AssertionError("Unreviewed legacy candidate unexpectedly admitted")
+cases=[("razhka Grazha",8),("Néria Valmont",10),("Hadrin Fell",6),("Elira Voss",46),("Selene Arvost",5)]
+recall=[]
+for term,day in cases:
+    result=search(root,term,limit=10,role="ASSISTANT_RESPONSE",day_hint=day)
+    hits=[h for h in result["hits"] if h["line_start"]<=40845 and h["file_name"]=="01_DIA_001_A_383_FONTE_LITERAL.txt"]
+    assert hits, term
+    recall.append({"query":term,"book_i_hits":len(hits)})
+print(json.dumps({"book_i_runtime":"PASS","candidates":len(candidates),"legacy_gate_rejects_unreviewed":True,"historical_recall":recall,"canon_changed":False,"semantic_certification":False},ensure_ascii=False))
