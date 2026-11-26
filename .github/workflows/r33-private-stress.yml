@@ -15,10 +15,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:
-      R31_DB_PATH: ${{ runner.temp }}/r33-private/r31.sqlite
       OPENBLAS_NUM_THREADS: '2'
       OMP_NUM_THREADS: '2'
     steps:
+      - name: Set runner-local audit path
+        run: echo "R31_DB_PATH=$RUNNER_TEMP/r33-private/r31.sqlite" >> "$GITHUB_ENV"
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           persist-credentials: false
