@@ -1,6 +1,6 @@
 import json,tempfile,unittest,copy
 from pathlib import Path
-from worldroot.character_design import REGISTRY,IDS,load_design,source_bodies,candidate_sources,selected_design,bind_request,verify_binding,valid_requirement
+from worldroot.character_design import REGISTRY,IDS,load_design,source_bodies,candidate_sources,selected_design,bind_request,verify_binding,valid_requirement,design_requirement_matches_card
 class CharacterDesignTests(unittest.TestCase):
     def setup(self,root):
         rows=[]
@@ -49,3 +49,9 @@ class CharacterDesignTests(unittest.TestCase):
             root=Path(d);self.setup(root);r=candidate_sources(load_design(root),"Lira idade")
             self.assertEqual(len(r),1);self.assertEqual(len(r[0]["sources"]),2)
             self.assertTrue(all(s["role"]=="AuthorDesign" for s in r[0]["sources"]))
+    def test_no_cross_character_age_binding(self):
+        req={"entity":"lyra","design_field":"age"}
+        review={"source":"AUTHOR_DESIGN:lyra:age"}
+        self.assertTrue(design_requirement_matches_card(req,review,"Lira Selen Vareth","age"))
+        self.assertFalse(design_requirement_matches_card(req,review,"Lysa","age"))
+        self.assertFalse(design_requirement_matches_card(req,review,"Lira","appearance"))

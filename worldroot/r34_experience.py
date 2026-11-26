@@ -39,6 +39,7 @@ def validate_intent(request,policy_text=None):
     require(isinstance(intent,dict) and intent.get("schema")=="worldroot-r34-intent-v1","R34 intent missing")
     dims=intent.get("dimensions")
     require(isinstance(dims,dict) and set(dims)==set(DIMENSIONS),"R34 review all independent intent dimensions")
+    from .character_design import design_requirement_matches_card
     req={x["id"]:x for x in request["requirements"]}
     reviewed=request["reviewed"]
     scenes={x["scene"]:set(x["ids"]) for x in request["scene_plan"]}
@@ -68,7 +69,7 @@ def validate_intent(request,policy_text=None):
             require(isinstance(v,dict) and v.get("status") in ("sourced","unknown","not_material") and reason(v.get("reason")),"R34 character field missing")
             if v["status"]=="sourced":
                 ids=v.get("requirement_ids")
-                require(isinstance(ids,list) and bool(ids) and all(req.get(i,{}).get("domain")==DOMAINS[field] and (req.get(i,{}).get("role","Response")=="Response" or (field in ("appearance","age") and req.get(i,{}).get("role")=="AuthorDesign" and req.get(i,{}).get("design_field")==field)) and i in reviewed and any(i in scenes[n] for n in sc) for i in ids),"R34 character source not mapped")
+                require(isinstance(ids,list) and bool(ids) and all(req.get(i,{}).get("domain")==DOMAINS[field] and (req.get(i,{}).get("role","Response")=="Response" or (field in ("appearance","age") and req.get(i,{}).get("role")=="AuthorDesign" and design_requirement_matches_card(req[i],reviewed.get(i,{}),c["name"],field))) and i in reviewed and any(i in scenes[n] for n in sc) for i in ids),"R34 character source not mapped")
             else:require(not v.get("requirement_ids"),"R34 unresolved field cannot claim sources")
     if dims["appearance"]["status"]=="planned":require(bool(cards),"R34 appearance needs focal character cards")
     reference=intent.get("comparison")

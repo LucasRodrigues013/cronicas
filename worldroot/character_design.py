@@ -57,7 +57,12 @@ def valid_requirement(req,review,data):
     if data is None or req.get("domain")!="identity" or req.get("role")!="AuthorDesign":return False
     field=req.get("design_field")
     if field not in ("appearance","age"):return False
-    return any(review.get("source")=="AUTHOR_DESIGN:"+p["id"]+":"+field and matches(p,req.get("query",""),req.get("entity")) and (not req.get("entity") or req["entity"]==p["id"]) for p in data["profiles"])
+    return any(review.get("source")=="AUTHOR_DESIGN:"+p["id"]+":"+field and req.get("entity")==p["id"] for p in data["profiles"])
+def design_requirement_matches_card(req,review,name,field):
+    ident=req.get("entity")
+    if ident not in IDS or req.get("design_field")!=field or review.get("source")!="AUTHOR_DESIGN:"+ident+":"+field:return False
+    names=[ident,*ALIASES.get(ident,[])]
+    return norm(name) in {norm(n) for n in names}
 def bind_request(root,request):
     names=[c["name"] for c in request.get("r34_intent",{}).get("characters",[])]
     return selected_design(root,names)
