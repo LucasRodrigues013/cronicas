@@ -88,16 +88,16 @@ class CodexEvolutionTests(unittest.TestCase):
         self.apply(p,[self.ev("PENDING_OPEN","lucas",p,{"pending_id":"p-origin","category":"ATTRIBUTE_UNKNOWN","reason":"origem desconhecida"})])
         self.assertEqual(self.pending("p-origin")[0],"OPEN")
         q="O viajante revelou sua origem."
-        self.apply(q,[self.ev("PENDING_RESOLVE","lucas",q,{"pending_id":"p-origin","reason":"origem explicitada no cenário"})])
+        self.apply(q,[self.ev("ATTRIBUTE","lucas",q,{"field":"origin","value":"origem declarada no cenário"}),self.ev("PENDING_RESOLVE","lucas",q,{"pending_id":"p-origin","reason":"origem explicitada no cenário","resolved_by":[0]})])
         self.assertEqual(self.pending("p-origin")[0],"RESOLVED")
         self.assertEqual(self.db.execute("SELECT anchor FROM codex_pending WHERE pending_id='p-origin'").fetchone()[0],p)
-        self.assertEqual(self.db.execute("SELECT count(*) FROM codex_events").fetchone()[0],2)
+        self.assertEqual(self.db.execute("SELECT count(*) FROM codex_events").fetchone()[0],3)
 
     def test_pending_wrong_subject_rolls_back(self):
         p="Origem desconhecida."
         self.apply(p,[self.ev("PENDING_OPEN","lucas",p,{"pending_id":"p","category":"UNKNOWN","reason":"fixture"})])
         with self.assertRaisesRegex(ValueError,"another entity"):
-            self.apply(p,[self.ev("PENDING_RESOLVE","miren",p,{"pending_id":"p","reason":"wrong subject"})])
+            self.apply(p,[self.ev("PENDING_RESOLVE","miren",p,{"pending_id":"p","reason":"wrong subject","resolved_by":[0]})])
         self.assertEqual(self.pending("p")[0],"OPEN")
 
     def test_unresolved_persisted_and_retry_idempotent(self):
@@ -145,6 +145,59 @@ class CodexEvolutionTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,"Literal evidence mismatch"):
             self.apply(p,[e])
         self.assertIsNone(self.pending("p"))
+
+    def test_false_resolution_without_evidence_rejected(self):
+        p="A origem não é conhecida."
+        self.apply(p,[self.ev("PENDING_OPEN","lucas",p,{"pending_id":"p","category":"UNKNOWN","reason":"origem"})])
+        with self.assertRaisesRegex(ValueError,"linked evidence"):
+            self.apply(p,[self.ev("PENDING_RESOLVE","lucas",p,{"pending_id":"p","reason":"guess"})])
+        self.assertEqual(self.pending("p")[0],"OPEN")
+
+    def test_resolution_cannot_reference_future_event(self):
+        p="Uma descoberta."
+        self.apply(p,[self.ev("PENDING_OPEN","lucas",p,{"pending_id":"p","category":"UNKNOWN","reason":"fixture"})])
+        with self.assertRaisesRegex(ValueError,"precede"):
+            self.apply(p,[self.ev("PENDING_RESOLVE","lucas",p,{"pending_id":"p","reason":"future","resolved_by":[1]}),self.ev("ATTRIBUTE","lucas",p,{"field":"origin","value":"test"})])
+        self.assertEqual(self.pending("p")[0],"OPEN")
+
+    def test_private_fact_cannot_resolve_public_pending(self):
+        p="Uma descoberta reservada."
+        self.apply(p,[self.ev("PENDING_OPEN","lucas",p,{"pending_id":"p","category":"UNKNOWN","reason":"fixture"})])
+        with self.assertRaisesRegex(ValueError,"Private evidence"):
+            self.apply(p,[self.ev("ATTRIBUTE","lucas",p,{"field":"origin","value":"test"},scope="BACKSTAGE"),self.ev("PENDING_RESOLVE","lucas",p,{"pending_id":"p","reason":"private","resolved_by":[0]})])
+        self.assertEqual(self.pending("p")[0],"OPEN")
+
+    def test_synthetic_origin_power_and_technology_evolve_without_overwrite(self):
+        p="Um viajante encontrou um planador construído com sucatas e vapor."
+        n=self.new("planador","Planador","Tecnologia",p)
+        self.apply(p,[self.ev("PENDING_OPEN","lucas",p,{"pending_id":"origins","category":"UNKNOWN","reason":"origem e dom"}),self.ev("ATTRIBUTE","planador",p,{"field":"original_construction","value":"sucatas e vapor"})],new=[n])
+        q="O viajante nasceu nas montanhas de Sal e mostrou a centelha de pedra, endurecendo metal ao toque para reforçar o chassi."
+        power=self.new("stone-spark","Centelha de pedra","Magia e poderes",q)
+        evs=[self.ev("ATTRIBUTE","lucas",q,{"field":"origin","value":"montanhas de Sal"}),self.ev("DEMONSTRATE","lucas",q,{"capability_id":"stone-spark","method":"toque","observed_effect":"endurece metal"}),self.ev("ATTRIBUTE","planador",q,{"field":"reinforcement","value":"chassi reforçado por centelha de pedra"}),self.ev("PENDING_RESOLVE","lucas",q,{"pending_id":"origins","reason":"origem e efeito explicitados","resolved_by":[0,1]})]
+        self.apply(q,evs,new=[power])
+        self.assertEqual(self.pending("origins")[0],"RESOLVED")
+        self.assertEqual(current(self.db,"planador","attribute:original_construction"),"sucatas e vapor")
+        self.assertEqual(current(self.db,"lucas","demonstrated:stone-spark")["observed_effect"],"endurece metal")
+        self.assertIsNone(current(self.db,"lucas","learned:stone-spark"))
+
+    def test_demonstration_does_not_grant_ability_to_another_character(self):
+        p="Uma técnica foi demonstrada."
+        self.seed("skill","Habilidade",["Magia e poderes"]);self.db.commit()
+        self.apply(p,[self.ev("DEMONSTRATE","lucas",p,{"capability_id":"skill","method":"observação","observed_effect":"resultado localizado"})])
+        self.assertIsNone(current(self.db,"miren","demonstrated:skill"))
+        self.assertIsNone(current(self.db,"lucas","learned:skill"))
+
+    def test_non_power_domain_rejected_for_demonstration(self):
+        p="Uma cadeira foi mencionada."
+        self.seed("chair","Cadeira",["Ambientes"]);self.db.commit()
+        with self.assertRaisesRegex(ValueError,"magic/powers domain"):
+            self.apply(p,[self.ev("DEMONSTRATE","lucas",p,{"capability_id":"chair","method":"observar","observed_effect":"fixture"})])
+
+    def test_genese_remains_singular_on_demonstration(self):
+        p="GÊNESE."
+        self.seed("genese","GÊNESE",["Magia e poderes"]);self.db.commit()
+        with self.assertRaisesRegex(ValueError,"singular"):
+            self.apply(p,[self.ev("DEMONSTRATE","miren",p,{"capability_id":"genese","method":"fixture","observed_effect":"fixture"})])
 
     # Literal historical snippets supplied by the project, projected into scratch DB only.
     def test_canon_tessa_homonym_d519(self):
