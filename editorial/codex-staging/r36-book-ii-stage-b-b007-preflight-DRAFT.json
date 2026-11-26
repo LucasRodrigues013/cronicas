@@ -1,0 +1,76 @@
+{
+  "schema": "worldroot-r36-b007-preflight-v1",
+  "status": "STRUCTURAL_PREFLIGHT_PASS_NATIVE_PENDING",
+  "base_checkpoint": "c760388d567011ef9b152e2323c8ed94d06f62d1",
+  "base_archive": "bd94ce02c705904b0ad9a562bc8edce3e3039f77",
+  "engine": "3170905db607f89004ed3d62a064dbb092922080",
+  "review_branch": "review/r36-b007-native-gate",
+  "review_parent": "f08c6584eaa323ccdd960c4f4905544fc704380d",
+  "inventory_blob": "3c3d3f6fd26f63a90a08d00f9291b68c8e4a2d55",
+  "ledger_blobs": [
+    "11a271c9612d33cfb249190928f8d9a06a980158",
+    "96ebb393cb2e95975cb81948e78519c46da7b9f0"
+  ],
+  "source": {
+    "name": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+    "full_sha256_expected": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+    "read_source_parts": [
+      "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+      "3449845d3854daa62af01333e4efd1a2c615b6a4",
+      "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b"
+    ],
+    "exact_anchor_hashes_verified": 61,
+    "exact_context_comparisons": 540,
+    "whole_source_hash_verification": "PENDING_NATIVE"
+  },
+  "coverage": {
+    "ids": [
+      460,
+      520
+    ],
+    "groups": 45,
+    "records": 61,
+    "source_lines": [
+      82432,
+      105778
+    ],
+    "proposed_fields": 19,
+    "entities": 14,
+    "additional": 8,
+    "profiles": 192,
+    "total_fields": 5923,
+    "untargeted_fields": 5904,
+    "protected_fields_not_targeted": 153,
+    "private_scope_fields_not_targeted": 40,
+    "expected_names": 96,
+    "expected_links": 25
+  },
+  "delta_hashes": {
+    "rows": "eb99ea56489e2007bd5ee60c89e9e5a229e509e364524071815f1546678246d4",
+    "reviews": "9b74691a1994828d3c532ea1b90d531325bae60ab175e20134764a70c3a71baa",
+    "additional": "e8522bfd58e218cdb52df65273d575e06495760540d58c5fde4dca99b7c10965"
+  },
+  "free_only_execution": {
+    "policy": "FREE_ONLY_NO_PAID_SERVICES_NO_OVERAGE_NO_SPENDING_LIMIT_INCREASE",
+    "native_status": "NOT_VALIDATED",
+    "runbook_commit": "c760388d567011ef9b152e2323c8ed94d06f62d1",
+    "runbook": "docs/r36-historical-review-free-only.md",
+    "script": "tools/r36_free_only_historical_review.sh",
+    "workflow_risk_review": "Prior B006 branch has open PR #76 to main; main has broad pull_request hosted tests. Isolated B007 branch without PR avoids that trigger; review branch workflows checked, no applicable push or create events for B007. Repository-level Cursor exclusion documented at B006 checkpoint; no new hosted run or PR authorized.",
+    "no_hosted_actions": true,
+    "local_evidence_required": true
+  },
+  "official_cursor_unchanged": {
+    "id": 460,
+    "line": 82432
+  },
+  "next_cursor_after_approved_incorporation": {
+    "id": 521,
+    "line": 105779
+  },
+  "approval_required": true,
+  "production_hold": true,
+  "canon_changed": false,
+  "production_activated": false,
+  "semantic_certification": false
+}

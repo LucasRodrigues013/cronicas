@@ -1,17 +1,17 @@
 {
   "schema": "worldroot-r36-native-review-request-v1",
   "engine": "3170905db607f89004ed3d62a064dbb092922080",
-  "archive": "4d2bdb7444c785705e494c3d49cad8500af25a8a",
-  "checkpoint": "0f5dc88d5d8624f0d57d892a5bdec022cc0363ec",
-  "checkpoint_path": "editorial/codex-staging/r36-book-ii-stage-b-checkpoint-005.json",
-  "checkpoint_blob": "6f505b6be0e4c42fc741e9c680d4d303138b0191",
+  "archive": "bd94ce02c705904b0ad9a562bc8edce3e3039f77",
+  "checkpoint": "c760388d567011ef9b152e2323c8ed94d06f62d1",
+  "checkpoint_path": "editorial/codex-staging/r36-book-ii-stage-b-checkpoint-006.json",
+  "checkpoint_blob": "d0bb4e04ec47da114adffcf9d53ba2affe731d33",
   "inventory_path": "editorial/codex-staging/r36-book-ii-stage-a-inventory.json",
   "inventory_blob": "3c3d3f6fd26f63a90a08d00f9291b68c8e4a2d55",
-  "delta_path": "editorial/codex-staging/r36-book-ii-stage-b-b006-v2-native-delta-DRAFT.json",
-  "expected_rows_sha256": "69a1ca2af1131558dd9445089fcb03e3e5fdc98ba0276e8734b9b67da5abee68",
-  "expected_reviews_sha256": "f0230b409d124add13c57856fe7675f631e7b5fe5fcae22ef44216512ccc41ea",
-  "expected_additional_sha256": "4d7154ccc6979b49e12410162dea0ad2b4cc7c782b51e033c12a7e3f053bf8f1",
-  "expected_changes": 25,
+  "delta_path": "editorial/codex-staging/r36-book-ii-stage-b-b007-native-delta-DRAFT.json",
+  "expected_rows_sha256": "eb99ea56489e2007bd5ee60c89e9e5a229e509e364524071815f1546678246d4",
+  "expected_reviews_sha256": "9b74691a1994828d3c532ea1b90d531325bae60ab175e20134764a70c3a71baa",
+  "expected_additional_sha256": "e8522bfd58e218cdb52df65273d575e06495760540d58c5fde4dca99b7c10965",
+  "expected_changes": 19,
   "expected_profiles": 192,
   "expected_fields": 5923,
   "expected_names": 96,
@@ -21,15 +21,10 @@
   "expected_day": 579,
   "expected_sequence": 50,
   "candidate_versions": {
-    "character_overlay": 12,
-    "world_overlay": 10,
-    "naming_review": 8
+    "character_overlay": 13,
+    "world_overlay": 11,
+    "naming_review": 9
   },
   "mode": "READ_ONLY_CANDIDATE",
-  "production_hold": true,
-  "native_retry": {
-    "resume_commit": "e14eb15d824ac0cdf5a861db7eeb454286caa446",
-    "previous_run": 45909961498,
-    "reason": "Retry native candidate gate from exact resumed review HEAD; no editorial or production changes"
-  }
+  "production_hold": true
 }
