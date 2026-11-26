@@ -26,5 +26,10 @@
     "naming_review": 8
   },
   "mode": "READ_ONLY_CANDIDATE",
-  "production_hold": true
+  "production_hold": true,
+  "native_retry": {
+    "resume_commit": "e14eb15d824ac0cdf5a861db7eeb454286caa446",
+    "previous_run": 45909961498,
+    "reason": "Retry native candidate gate from exact resumed review HEAD; no editorial or production changes"
+  }
 }
