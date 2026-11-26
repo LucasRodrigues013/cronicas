@@ -18,7 +18,14 @@
     "r34_intent": "New persisted R33-compatible requests must include r34_intent with seven distinct policy-backed dimensions, focal character fields, historical comparison and contextual opportunity mapping. No forced scenes or unsupported physical traits.",
     "r35_plan": "Persist immutable R33-compatible request with r34_intent and r35_plan: real profile, scene budgets, lived beats, two references, separate adult opportunities; verify prep before prose.",
     "r35_refinement": "Required r35_plan.refinement: five contextual axes with historical reference and scene mapping; source recovery for each focal character; docs/r35-literary-refinement.md.",
-    "female_character_design": "R35 automatically retrieves and binds focal dossiers from editorial/registries/female-character-design-d580-v2.json, with registry SHA. Separate AuthorDesign evidence from historical Response; verify age, conflicts, current location and agency. Fiches do not authorize attendance or events."
+    "female_character_design": "R35 automatically retrieves and binds focal dossiers from editorial/registries/female-character-design-d580-v2.json, with registry SHA. Separate AuthorDesign evidence from historical Response; verify age, conflicts, current location and agency. Fiches do not authorize attendance or events.",
+    "universal_codex": {
+      "required_editorial_review": true,
+      "registry": "editorial/registries/universal-codex-design-d580-v1.json",
+      "approved_age_registry": "editorial/registries/female-character-design-d580-v2.json",
+      "rule": "Resolve focal identities, aliases, domain, origin, last evidenced location, possessions, powers, relationships, chronology and knowledge visibility against exact source before prose. Distinguish prospective design from historical evidence; do not assign a spell solely from a school link. Unknown remains explicit; approved age design is not retroactive biography.",
+      "runtime_status": "ASSISTED_REQUIRED; automated candidate in PR #74, no engine pin change or automatic execution claim"
+    }
   },
   "for_each_episode": {
     "must_save_complete_text": true,
@@ -47,7 +54,12 @@
     "r34_metadata": "Historical R34 remains immutable; R35 retains r34_intent and review.",
     "r35_metadata": "New episodes revision=35. Hard floor real prose: regular 8800, special 9500, finale 11000. Exception only explicit literal author choice line. R35 requires exact final segment receipts and visible reader text, scene/quality/opportunity review, versioned choices and header. No retroactive changes.",
     "r35_refinement": "Required r35_review.refinement: concrete comparative review with two distinct narrative moments per axis; cadence signal contextual, not a line quota; avoid padding and forced conflict or romance. Prior archived episodes unaffected.",
-    "female_character_design": "For newly prepared episodes, keep the immutable focal design binding and verify its SHA before release; do not substitute illustrations or proposal ages for canonical facts."
+    "female_character_design": "For newly prepared episodes, keep the immutable focal design binding and verify its SHA before release; do not substitute illustrations or proposal ages for canonical facts.",
+    "universal_codex": {
+      "required_editorial_review": true,
+      "rule": "Review all appearing entities including silent actors, distinguish mentions from presence, register new identities and changes with exact episode/line/anchor/hash, track physical item custody and location independently of ownership, and separate learned/cast/mentioned magic. Draft candidates do not enter closed state until author choice and canonical validation. Preserve unresolved ambiguities. Keep evidence-based incremental deltas in proposed r33_review.codex_delta when engine deployment is validated; until then perform assisted review without altering immutable old receipts.",
+      "prototype_status": "PR #74 code; PR #75 private audit. Rebuild graph from latest approved registry and verify production before pinning."
+    }
   },
   "limits": {
     "automatic_chat_capture": false,
