@@ -1,0 +1,54 @@
+name: Private universal Codex verification
+on:
+  pull_request:
+    branches: [story-archive]
+    paths:
+      - 'editorial/codex-staging/audit_live_codex.py'
+      - '.github/workflows/r35-live-codex-audit.yml'
+  push:
+    branches: [audit/r35-live-codex-d580]
+    paths:
+      - 'editorial/codex-staging/audit_live_codex.py'
+      - '.github/workflows/r35-live-codex-audit.yml'
+permissions:
+  contents: write
+concurrency:
+  group: r35-live-codex-audit
+  cancel-in-progress: false
+jobs:
+  verify:
+    if: github.ref == 'refs/heads/audit/r35-live-codex-d580' || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.head.ref == 'audit/r35-live-codex-d580')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          path: archive
+          persist-credentials: false
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: 838ae03337a0ea0921c6039ba0bea5fe30c5b7c5
+          path: engine
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Verify private archive, source anchors and real Codex projection
+        env:
+          PYTHONPATH: engine
+        run: |
+          python archive/editorial/codex-staging/audit_live_codex.py archive
+          git -C archive diff --exit-code -- canon/HEAD.json canon/episodes episodes choices inbox requests preparations ops
+      - name: Publish verified audit projection on isolated branch only
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git -C archive add -- canon/codex.sqlite editorial/codex-staging/results/live-codex-audit-d580.json
+          git -C archive diff --cached --quiet && exit 0
+          git -C archive config user.name "github-actions[bot]"
+          git -C archive config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C archive commit -m "audit: materialize verified private universal Codex graph"
+          auth_header="$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)"
+          git -C archive -c "http.extraheader=AUTHORIZATION: basic $auth_header" push origin HEAD:refs/heads/audit/r35-live-codex-d580
