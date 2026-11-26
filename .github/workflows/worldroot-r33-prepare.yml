@@ -1,4 +1,4 @@
-name: WORLDROOT R35 - immutable longform and real corpus regression
+name: WORLDROOT R35 - literary refinement and real corpus regression
 on:
   pull_request:
     branches: [story-archive]
@@ -25,7 +25,7 @@ jobs:
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
-          ref: 1d810a01724ff3a9ad96ac7a0c5c28474ab6ec15
+          ref: 0e5f4bfc5f833b9681d9f4ec3b288dd36952d03b
           path: engine
           persist-credentials: false
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
@@ -44,6 +44,25 @@ jobs:
           python -m worldroot.git_cycle verify --archive-root archive
           python -m worldroot.r33_runtime --archive-root archive --verify-history
           python engine/audit/run_r35.py --archive-root archive
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from worldroot.git_cycle import verify_episode
+          from worldroot.r35_refinement import rhythm_signals
+          root=Path("archive")
+          refs=["LVI-C06-PV-D568-AUTHOR-SOURCE","LVI-C07-PIII-D571-AUTHOR-SOURCE","LVI-C08-PV-D578-AUTHOR-SOURCE"]
+          out={}
+          for ident in refs:
+              draft,_=verify_episode(root,ident)
+              out[ident]=rhythm_signals(draft.prose)
+          assert out[refs[0]]["cadence_review_signal"]=="CONTEXTUAL_REVIEW"
+          assert out[refs[1]]["cadence_review_signal"]=="CONTEXTUAL_REVIEW"
+          assert out[refs[2]]["cadence_review_signal"]=="REVIEW_COMPRESSION"
+          assert not (root/"episodes/LVI-C09-PI-D579-TESTE-R35").exists()
+          assert not (root/"requests/LVI-C09-PI-D579-TESTE-R35.json").exists()
+          assert not (root/"inbox/LVI-C09-PI-D579-TESTE-R35.json").exists()
+          print(json.dumps({"refinement_read_only":out,"pilot_not_in_production":True},ensure_ascii=False))
+          PY
           python - <<'PY'
           import json
           from pathlib import Path
@@ -67,7 +86,7 @@ jobs:
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
-          ref: 1d810a01724ff3a9ad96ac7a0c5c28474ab6ec15
+          ref: 0e5f4bfc5f833b9681d9f4ec3b288dd36952d03b
           path: engine
           persist-credentials: false
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
@@ -94,8 +113,8 @@ jobs:
               print("No new request; no write.")
           else:
               request=read(pending[0])
-              if "r34_intent" not in request or "r35_plan" not in request:
-                  raise RuntimeError("R35 requires independent intent and longform plan before preparation")
+              if "r34_intent" not in request or "r35_plan" not in request or "refinement" not in request["r35_plan"]:
+                  raise RuntimeError("R35 requires independent intent, longform plan and literary refinement before preparation")
               print(prepare_from_request(root,request))
           PY
       - name: Publish preparations only and verify remote commit
