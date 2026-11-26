@@ -113,5 +113,17 @@
     "delta_blob": "58b5e04f9f5fc0001933772473ea697d740f29f0",
     "approval_required": true,
     "production_hold": true
+  },
+  "billing_diagnosis": {
+    "status": "CONFIRMED_BILLING_OR_SPENDING_LIMIT_BLOCK",
+    "source": "Author-provided screenshot of GitHub Actions run 45909961498 job verify annotations, 2026-11-26",
+    "annotation": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+    "specific_billing_condition": "UNCONFIRMED",
+    "cost_policy": "FREE_ONLY_NO_PAID_SERVICES_NO_OVERAGE_NO_SPENDING_LIMIT_INCREASE",
+    "hosted_runner_retry": "HOLD_PENDING_FREE_EXECUTION_PATH",
+    "preferred_execution": "Use existing native validator and full pinned regression suite on authorized local Python/Git environment; no hosted runner required",
+    "native_status": "NOT_VALIDATED",
+    "approval_required": true,
+    "production_hold": true
   }
 }
