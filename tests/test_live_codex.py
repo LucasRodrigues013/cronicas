@@ -1,7 +1,7 @@
 import hashlib
 import sqlite3
 import unittest
-from worldroot.live_codex import initialize, apply_delta, current, aliases, jsonstr, SCHEMA
+from worldroot.live_codex import initialize, apply_delta, current, aliases, jsonstr, SCHEMA, custody_at
 
 class LiveCodexTests(unittest.TestCase):
     def setUp(self):
@@ -70,3 +70,19 @@ class LiveCodexTests(unittest.TestCase):
         self.assertEqual(v["owner"],"lucas")
         self.assertIsNone(v["holder"])
         self.assertEqual(v["location"],"torre")
+
+    def test_verified_baseline_custody_respects_date_and_location(self):
+        row={"id":"cajado-1","name":"Cajado","domains":["Arsenal"],"last_observed_custody":{"holder":None,"owner":"lucas","location_id":"torre","state":"STORE","day":579,"clock":"23h02","evidence":{"anchor":"synthetic baseline"}}}
+        self.db.execute("UPDATE records SET body=? WHERE id=?",(jsonstr(row),"cajado-1"));self.db.commit()
+        self.assertIsNone(custody_at(self.db,"cajado-1",579,"22h00"))
+        self.assertEqual(custody_at(self.db,"cajado-1",580)["location"],"torre")
+        use={**self.event("USE_ITEM","lucas",2,{"item_id":"cajado-1","method":"exame"}),"location_id":"casa"}
+        with self.assertRaisesRegex(ValueError,"Item access"):
+            self.apply(self.delta([use]))
+        use["location_id"]="torre"
+        self.assertEqual(self.apply(self.delta([use])),"APPLIED")
+    def test_consumed_instance_cannot_reappear(self):
+        d=self.delta([self.event("ACQUIRE","lucas",2,{"item_id":"cajado-1"}),self.event("CONSUME","lucas",3,{"item_id":"cajado-1"}),self.event("ACQUIRE","lucas",4,{"item_id":"cajado-1"})])
+        with self.assertRaisesRegex(ValueError,"Consumed instance"):
+            self.apply(d)
+        self.assertIsNone(current(self.db,"cajado-1","custody"))
