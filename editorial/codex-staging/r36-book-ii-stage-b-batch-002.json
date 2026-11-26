@@ -1,0 +1,2862 @@
+{
+  "schema": "worldroot-r36-book-ii-stage-b-editorial-batch-v1",
+  "book": 2,
+  "stage": "B",
+  "batch": 2,
+  "status": "AUTHOR_AUTHORIZED_EDITORIAL_PROFILE_REVISION_PENDING_INDEPENDENT_CERTIFICATION",
+  "parent_checkpoint": "ec04b0a53623f4a1d75a06127d569084439919ab",
+  "base_archive": "4bf28bd9b2b46c0bb5a4daec735e01469dc52991",
+  "base_registry_blobs": {
+    "characters": "f37cde9f292d72f002b4cd03995e7ae3df86be5b",
+    "world": "d88490ba24bc41fd5cc2c64188e23978a937d9d2"
+  },
+  "source": {
+    "name": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+    "sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+    "part": 2,
+    "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+    "global_to_local_line_offset": 40867
+  },
+  "ledger": [
+    {
+      "original_id": 313,
+      "entity_id": "veyra",
+      "original_field": "powers",
+      "global_line": 42104,
+      "local_line": 1237,
+      "anchor": "Um comerciante que trabalhava com rotas ligadas a Veyra trouxera uma cópia de uma carta marítima, incompleta, mas com referências documentais que poderiam ser verificadas.",
+      "anchor_sha256": "4f671fdad59ae04c6fcc93a7e1850017555a20d196a52a745e5524f79473f166",
+      "verdict": "RECLASSIFIED_ROUTE_AND_DOCUMENT_NOT_POWER",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 314,
+      "entity_id": "edran",
+      "original_field": "capabilities",
+      "global_line": 42154,
+      "local_line": 1287,
+      "anchor": "EDRAN e os observadores de Thalor conheciam sua capacidade administrativa.",
+      "anchor_sha256": "167f4cc5c03a1ba2e76a3554bcb9850250fabc0b3e311237a1aa2a3665ff4dc2",
+      "verdict": "RECLASSIFIED_DIPLOMATIC_KNOWLEDGE_NOT_PERSONAL_CAPABILITY",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 315,
+      "entity_id": "ilva",
+      "original_field": "appearance",
+      "global_line": 42926,
+      "local_line": 2059,
+      "anchor": "ILVA ergueu os olhos.",
+      "anchor_sha256": "e80fee5b4ed1fc0cd8fff9ffe8d8da0662266ee67d71135a3419eaa4e9f760b1",
+      "verdict": "RECLASSIFIED_WORKSHOP_CONTEXT_NOT_APPEARANCE",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 316,
+      "entity_id": "ilva",
+      "original_field": "location",
+      "global_line": 42956,
+      "local_line": 2089,
+      "anchor": "ILVA permaneceu em silêncio.",
+      "anchor_sha256": "352a3b5ff3a69b255a1433b3752efd99bc8e7b077ad335e5661303892dfd643f",
+      "verdict": "RECLASSIFIED_NEGOTIATION_NOT_LOCATION_ONLY",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 317,
+      "entity_id": "ilva",
+      "original_field": "appearance",
+      "global_line": 42980,
+      "local_line": 2113,
+      "anchor": "O plano foi ajustado: ILVA prepararia mantos, casacos, túnicas e peças de cerimônia personalizadas, utilizando tecidos disponíveis e modelos que pudessem ser finalizados com segurança. Algumas roupas seriam entregues com ajustes posteriores.",
+      "anchor_sha256": "08e4c02c95676058ccf4da62eba0a788b32bbdd9ef5f65656c6f1b145bda726c",
+      "verdict": "RECLASSIFIED_TAILORING_PLAN_NOT_APPEARANCE",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 318,
+      "entity_id": "ilva",
+      "original_field": "behavior",
+      "global_line": 42994,
+      "local_line": 2127,
+      "anchor": "ILVA prendeu a respiração para não rir.",
+      "anchor_sha256": "38c1de6d4975a89b9b5c0374a2d191c6ca81de225f17e9429e1489ef06fedb3b",
+      "verdict": "CONTEXTUAL_HUMOR_NOT_PERMANENT_TRAIT",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 319,
+      "entity_id": "cirn",
+      "original_field": "powers",
+      "global_line": 43076,
+      "local_line": 2209,
+      "anchor": "— Excelente. Nosso fundador sobreviveu a orcs, magias antigas e combates contra CÍRAN. Quase foi derrotado por uma tábua.",
+      "anchor_sha256": "bd66bd262f037236a49aa98478a89626fdd81c06a7e40d9661bd41b2cf4a31ef",
+      "verdict": "RECAP_PRIOR_COMBAT_NOT_NEW_POWER",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 320,
+      "entity_id": "edric",
+      "original_field": "appearance",
+      "global_line": 43198,
+      "local_line": 2331,
+      "anchor": "EDRIC, que participava da reunião, ergueu os olhos.",
+      "anchor_sha256": "83f138b4cc7b97d6f7dbdb15951bb6c90a7a3915a33b22420bfcbe5e09a2aceb",
+      "verdict": "RECLASSIFIED_COUNCIL_PARTICIPATION_NOT_APPEARANCE",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 321,
+      "entity_id": "edric",
+      "original_field": "appearance",
+      "global_line": 43875,
+      "local_line": 3008,
+      "anchor": "EDRIC receberia um manto formal de linhas simples, acompanhado de uma túnica resistente.",
+      "anchor_sha256": "7489648ae2cba8913bc7ed5f63e1c59bc855a273303833504c5e2bed131ac9b3",
+      "verdict": "GARMENT_INTENDED_NOT_PHYSICAL_APPEARANCE",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 322,
+      "entity_id": "ilva",
+      "original_field": "voice",
+      "global_line": 43903,
+      "local_line": 3036,
+      "anchor": "ILVA sorriu.",
+      "anchor_sha256": "17e3d0fc39638e372f53ec8e7c930ed1a8dcb9eb97e2f7d19d83c50469cc0092",
+      "verdict": "CONTEXTUAL_DIALOGUE_NOT_VOICE_FROM_SMILE",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 323,
+      "entity_id": "ilva",
+      "original_field": "location",
+      "global_line": 43927,
+      "local_line": 3060,
+      "anchor": "ILVA permaneceu em silêncio.",
+      "anchor_sha256": "352a3b5ff3a69b255a1433b3752efd99bc8e7b077ad335e5661303892dfd643f",
+      "verdict": "CONTEXTUAL_DIALOGUE_NOT_LOCATION_ONLY",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 324,
+      "entity_id": "ilva",
+      "original_field": "architecture",
+      "global_line": 44033,
+      "local_line": 3166,
+      "anchor": "E a de ILVA, que entrava no salão carregando uma pequena caixa.",
+      "anchor_sha256": "1ae437b5ee9c2fedcfeacb97b2ccd016700d50b9fbab06fcf8c630e0675c0cf1",
+      "verdict": "EVENT_PARTICIPATION_NOT_ARCHITECTURE",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 325,
+      "entity_id": "casa-jardim-branco",
+      "original_field": "architecture",
+      "global_line": 44087,
+      "local_line": 3220,
+      "anchor": "DIA 106 — 19h38 | Casa do Jardim Branco",
+      "anchor_sha256": "1a543e70ea51e558dfe0dd847031ea633d0b5867d41a46a7d6d4042ded9beb9a",
+      "verdict": "CONFIRMED_HOUSE_ARCHITECTURE_FROM_CONTEXT",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 326,
+      "entity_id": "casa-jardim-branco",
+      "original_field": "architecture",
+      "global_line": 44347,
+      "local_line": 3480,
+      "anchor": "DIA 106 — 21h24 | Jardim da Casa do Jardim Branco",
+      "anchor_sha256": "257117cf85b0d043dfa1512aaa2c9a471e3d8e5d7c81eed5d5c03d656caceed6",
+      "verdict": "CONFIRMED_GARDEN_EVENT_NOT_NEW_CONSTRUCTION",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 327,
+      "entity_id": "edric",
+      "original_field": "location",
+      "global_line": 44839,
+      "local_line": 3972,
+      "anchor": "EDRIC estava responsável pela segurança urbana.",
+      "anchor_sha256": "35e17cffc33a0c7b9f2fb54a406897d349f6df3bd84c49d890f39026ff2e5cb2",
+      "verdict": "RECLASSIFIED_HISTORICAL_ROLE_NOT_LOCATION",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 328,
+      "entity_id": "cirn",
+      "original_field": "architecture",
+      "global_line": 45777,
+      "local_line": 4910,
+      "anchor": "Na troca seguinte, CÍRAN antecipou a cobertura, alterou a distância e marcou um ponto.",
+      "anchor_sha256": "22605037a95d7cef3a6f61b61d126c928d551c87900aeb8b035727778eabbb79",
+      "verdict": "RECLASSIFIED_DUEL_TECHNIQUE_NOT_ARCHITECTURE",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 329,
+      "entity_id": "genese",
+      "original_field": "lifecycle",
+      "global_line": 46456,
+      "local_line": 5589,
+      "anchor": "Produção ilimitada de matéria ou energia; criação repetida de grandes grupos conscientes sem risco; construção instantânea de cidades inteiras; utilização do Coração selado; ativação de autômatos antigos não examinados; Gênese de Horizonte.",
+      "anchor_sha256": "5f6fa8e9df71031e453b0502f7c9a259e1225c2c5fd8df09a5684892d1a962fd",
+      "verdict": "HISTORICAL_LIMIT_NOT_PRESENT_POWER_CAP",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 330,
+      "entity_id": "rhem",
+      "original_field": "appearance",
+      "global_line": 47142,
+      "local_line": 6275,
+      "anchor": "RHEM respondeu sem levantar os olhos:",
+      "anchor_sha256": "55d41f2d9b3278655a3b31af560439ca1c2d009021687e11189c25b94607d105",
+      "verdict": "RECLASSIFIED_DIALOGUE_NOT_APPEARANCE",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 331,
+      "entity_id": "cirn",
+      "original_field": "lifecycle",
+      "global_line": 47236,
+      "local_line": 6369,
+      "anchor": "CÍRAN franziu a testa.",
+      "anchor_sha256": "cee284b3cec2c2dcd7e267840e6abf1aa29aa3b27a3bd4a1d75e81f8074d3ef1",
+      "verdict": "CONTEXTUAL_TRAINING_REACTION_NOT_LIFECYCLE",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 332,
+      "entity_id": "cirn",
+      "original_field": "lifecycle",
+      "global_line": 48042,
+      "local_line": 7175,
+      "anchor": "CÍRAN protestou:",
+      "anchor_sha256": "ce570de2a3d9187ac0a21b12d7ddb7a40824fee6d08738032f6c872d7a84ca93",
+      "verdict": "RECLASSIFIED_TRAINING_MOTIVATION_NOT_LIFECYCLE",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 333,
+      "entity_id": "varo",
+      "original_field": "population",
+      "global_line": 49088,
+      "local_line": 8221,
+      "anchor": "Vou manter a história concentrada nos Dias 113 e 114, com as três frentes avançando em paralelo: os arquivos de TESSA, o autômato e o domínio de CREATION. Também vou acompanhar VARO, KAEL, LYSA e os moradores fora do laboratório — incluindo economia, disputas políticas e movimentos de outros povos — para que o mundo continue vivendo mesmo quando LUCAS não está presente.",
+      "anchor_sha256": "6df48b88f7d014ee9e14b35abca04f13bf8730a0fe345040b2d872931677699c",
+      "verdict": "NON_NARRATIVE_RESPONSE_PLAN_AUTHOR_DIRECTION_SEPARATED",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 334,
+      "entity_id": "ilva",
+      "original_field": "lifecycle",
+      "global_line": 49172,
+      "local_line": 8305,
+      "anchor": "O Grande Festival havia produzido um excedente operacional modesto. A cozinha de HALDEN começara a gerar receitas regulares. ILVA recebia encomendas. A oficina vendia alguns serviços a comerciantes externos.",
+      "anchor_sha256": "f19913364c948454ab0ee9f5320d5810d6b277602b8f899f1d987a1455903943",
+      "verdict": "RECLASSIFIED_ECONOMIC_ACTIVITY_NOT_LIFECYCLE",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 335,
+      "entity_id": "edran",
+      "original_field": "voice",
+      "global_line": 49286,
+      "local_line": 8419,
+      "anchor": "EDRAN sorriu discretamente.",
+      "anchor_sha256": "66937b6269fd3f70f0d3e1207178c42faf98405b776fe9c0befd37f50a8baa9a",
+      "verdict": "RECLASSIFIED_DIPLOMATIC_MISSION_NOT_VOICE_FROM_SMILE",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 336,
+      "entity_id": "edric",
+      "original_field": "role",
+      "global_line": 49400,
+      "local_line": 8533,
+      "anchor": "EDRIC comandava a proteção dos acessos.",
+      "anchor_sha256": "67cffc6834673679fe9aa4343b0de86636b097aeff6e7b7a97c588b62f1b13f3",
+      "verdict": "CONFIRMED_TRAINING_COMMAND_ROLE",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 337,
+      "entity_id": "edric",
+      "original_field": "behavior",
+      "global_line": 49438,
+      "local_line": 8571,
+      "anchor": "EDRIC observou a movimentação.",
+      "anchor_sha256": "a89987aca0829729cd0f3a283bdad9d5fb93e3df85d2685f2b6e63829d1f710d",
+      "verdict": "CONFIRMED_AUTONOMOUS_TRAINING_ACTION",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 338,
+      "entity_id": "edric",
+      "original_field": "lifecycle",
+      "global_line": 49488,
+      "local_line": 8621,
+      "anchor": "EDRIC franziu a testa.",
+      "anchor_sha256": "180b90d29bda92d35bebddfd340d0094bef0f8c233be0e832f7fd5f70a2b75da",
+      "verdict": "RECLASSIFIED_ACCOUNTABILITY_NOT_LIFECYCLE",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 339,
+      "entity_id": "maelis",
+      "original_field": "behavior",
+      "global_line": 49650,
+      "local_line": 8783,
+      "anchor": "MAELIS organizava um caderno de observações sobre saúde e higiene.",
+      "anchor_sha256": "3e2a35dd1894944d2b7fb54064fb7c8b55dc44b254b3ff4200fa839642ef2e60",
+      "verdict": "RECLASSIFIED_HEALTH_RESEARCH_NOT_GENERIC_BEHAVIOR",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 340,
+      "entity_id": "cirn",
+      "original_field": "governance",
+      "global_line": 49862,
+      "local_line": 8995,
+      "anchor": "Era a mesma promessa feita por CÍRAN durante a Assembleia.",
+      "anchor_sha256": "986e0dfbcd4ec97c9f31ea95b0f8d77c7e1e8f24f806085ff3676758a0966f4f",
+      "verdict": "RECAP_PRIOR_PROMISE_NOT_GOVERNANCE",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 341,
+      "entity_id": "sistema",
+      "original_field": "role",
+      "global_line": 50022,
+      "local_line": 9155,
+      "anchor": "O isolamento podia não ter ocorrido apenas porque uma engenheira tomou uma decisão corajosa. Talvez existisse um sistema de responsabilidades distribuídas, e uma parte dele tivesse deixado de funcionar no momento mais perigoso.",
+      "anchor_sha256": "2a8894d138bccd15dd92bd46d6372fa3ac58209eacf6293c53ca32c26bdd8fe3",
+      "verdict": "FALSE_ENTITY_MATCH_GENERIC_SYSTEM_ARCHITECT_DISCOVERY",
+      "semantic_certified": false
+    },
+    {
+      "original_id": 342,
+      "entity_id": "maelis",
+      "original_field": "voice",
+      "global_line": 50592,
+      "local_line": 9725,
+      "anchor": "MAELIS sorriu.",
+      "anchor_sha256": "be533c87440d83d265b991a487800a0812019647221978efcc9a30999fc4f306",
+      "verdict": "RECLASSIFIED_PUBLIC_HEALTH_VALUES_NOT_VOICE_FROM_SMILE",
+      "semantic_certified": false
+    }
+  ],
+  "changes": [
+    {
+      "entity_id": "veyra",
+      "field": "history",
+      "before": {
+        "value": "Não estabelecido nas fontes examinadas; recuperar antes de afirmar como fato.",
+        "status": "PENDENTE_FONTE",
+        "origin": {
+          "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+          "entity_id": "veyra"
+        },
+        "justification": "Tratado estruturalmente, sem completar conteúdo sem base.",
+        "scope": "EDITORIAL",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+      },
+      "after": {
+        "value": "D101: comerciante de rotas ligadas a Veyra forneceu a Seron cópia incompleta de carta marítima com referências verificáveis e símbolo semelhante ao do Coração. Rotas ligavam interior de Thalor a intermediários de Veyra; nenhuma embarcação reservada, distância da possível âncora e atribuição aos Arquitetos desconhecidas.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "veyra"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 101,
+            "evidence": [
+              {
+                "line": 1219,
+                "global_line": 42086,
+                "anchor": "DIA 101 — 08h34 | Sala do Atlas"
+              },
+              {
+                "line": 1235,
+                "global_line": 42102,
+                "anchor": "E SERON havia conseguido algo particularmente importante."
+              },
+              {
+                "line": 1237,
+                "global_line": 42104,
+                "anchor": "Um comerciante que trabalhava com rotas ligadas a Veyra trouxera uma cópia de uma carta marítima, incompleta, mas com referências documentais que poderiam ser verificadas."
+              },
+              {
+                "line": 1239,
+                "global_line": 42106,
+                "anchor": "Numa das margens havia o mesmo tipo de símbolo observado anteriormente nos estudos do Coração."
+              },
+              {
+                "line": 1247,
+                "global_line": 42114,
+                "anchor": "— Ainda não sabemos se é realmente um símbolo dos Arquitetos."
+              },
+              {
+                "line": 1251,
+                "global_line": 42118,
+                "anchor": "— Mas agora temos uma origem documental e um contato comercial que podemos procurar novamente."
+              },
+              {
+                "line": 1265,
+                "global_line": 42132,
+                "anchor": "O comerciante também mencionara uma oportunidade: algumas caravanas preparavam novas viagens pelas rotas comerciais que conectavam o interior de Thalor aos intermediários de Veyra."
+              },
+              {
+                "line": 1269,
+                "global_line": 42136,
+                "anchor": "Nenhuma embarcação havia sido reservada."
+              },
+              {
+                "line": 1271,
+                "global_line": 42138,
+                "anchor": "Ninguém conhecia ainda a distância marítima necessária para alcançar uma suposta âncora exterior."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+      }
+    },
+    {
+      "entity_id": "edran",
+      "field": "history",
+      "before": {
+        "value": "Histórico ainda não consolidado; não fabricar biografia passada.",
+        "status": "PENDENTE_FONTE",
+        "origin": {
+          "policy": "C4 autorizado pelo autor em 2026-11-26",
+          "basis": "companheiro histórico Edran Vael",
+          "observations": 0,
+          "legacy_id": null
+        },
+        "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+        "scope": "EDITORIAL",
+        "valid_at": {
+          "day": 579,
+          "chapter": 9,
+          "part": "I"
+        }
+      },
+      "after": {
+        "value": "D101: Edran e observadores de Thalor conheciam a capacidade administrativa da Cidade Livre. D113: como emissário de Thalor, levou carta de Dama Selene a Kael solicitando reunião sobre obrigações de passagem.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "companheiro histórico Edran Vael",
+            "observations": 0,
+            "legacy_id": null
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": [
+              101,
+              113
+            ],
+            "evidence": [
+              {
+                "line": 1219,
+                "global_line": 42086,
+                "anchor": "DIA 101 — 08h34 | Sala do Atlas"
+              },
+              {
+                "line": 1287,
+                "global_line": 42154,
+                "anchor": "EDRAN e os observadores de Thalor conheciam sua capacidade administrativa."
+              },
+              {
+                "line": 8255,
+                "global_line": 49122,
+                "anchor": "DIA 113 • 05h52 • DEPÓSITO DO MERCADO"
+              },
+              {
+                "line": 8409,
+                "global_line": 49276,
+                "anchor": "KAEL já estava trabalhando quando EDRAN chegou."
+              },
+              {
+                "line": 8411,
+                "global_line": 49278,
+                "anchor": "O emissário de Thalor trazia uma carta com o selo de DAMA SELENE."
+              },
+              {
+                "line": 8425,
+                "global_line": 49292,
+                "anchor": "— SELENE solicita uma reunião sobre as obrigações de passagem da Cidade Livre."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento.",
+        "scope": "HISTORICAL_OBSERVATION"
+      }
+    },
+    {
+      "entity_id": "edran",
+      "field": "roles",
+      "before": {
+        "value": "Tenente da Vigia de Halvern na primeira apresentação; interlocutor legítimo de Thalor",
+        "status": "RECUPERADO",
+        "origin": {
+          "blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+          "segment": "001",
+          "line_start": 1812,
+          "line_end": 1812,
+          "anchor": "— Sou EDRAN VAEL, tenente da Vigia de Halvern, a serviço do Marquesado de Thalor.",
+          "authority": "LEGACY_LITERAL_READBACK"
+        },
+        "justification": "Preserva papel e autoridade histórica.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "valid_at": {
+          "day": 579,
+          "chapter": 9,
+          "part": "I"
+        },
+        "previous": {
+          "value": "companheiro histórico Edran Vael",
+          "status": "COMPLETADO",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "companheiro histórico Edran Vael",
+            "observations": 0,
+            "legacy_id": null
+          },
+          "justification": "Função narrativa prospectiva; não constitui cargo histórico adicional.",
+          "scope": "PROVISIONAL_CONTINUITY",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        }
+      },
+      "after": {
+        "value": "Tenente da Vigia de Halvern na primeira apresentação; interlocutor legítimo de Thalor No D113 atuava como emissário de Thalor, entregando solicitação de Selene a Kael; não implica promoção de patente.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "segment": "001",
+            "line_start": 1812,
+            "line_end": 1812,
+            "anchor": "— Sou EDRAN VAEL, tenente da Vigia de Halvern, a serviço do Marquesado de Thalor.",
+            "authority": "LEGACY_LITERAL_READBACK"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 113,
+            "evidence": [
+              {
+                "line": 8409,
+                "global_line": 49276,
+                "anchor": "KAEL já estava trabalhando quando EDRAN chegou."
+              },
+              {
+                "line": 8411,
+                "global_line": 49278,
+                "anchor": "O emissário de Thalor trazia uma carta com o selo de DAMA SELENE."
+              },
+              {
+                "line": 8425,
+                "global_line": 49292,
+                "anchor": "— SELENE solicita uma reunião sobre as obrigações de passagem da Cidade Livre."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "previous": {
+          "value": "companheiro histórico Edran Vael",
+          "status": "COMPLETADO",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "companheiro histórico Edran Vael",
+            "observations": 0,
+            "legacy_id": null
+          },
+          "justification": "Função narrativa prospectiva; não constitui cargo histórico adicional.",
+          "scope": "PROVISIONAL_CONTINUITY",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        }
+      }
+    },
+    {
+      "entity_id": "ilva",
+      "field": "history",
+      "before": {
+        "value": "Visitante associada a tecidos; posteriormente organizou reparos de roupas e recebeu pedidos regulares. D98: apresentou peças de tecido e reparos produzidos na cidade durante o Grande Festival.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 36018,
+                "anchor": "A mulher dos tecidos, ILVA, observou a oficina."
+              },
+              {
+                "line": 36022,
+                "anchor": "— Poderá negociar espaços e serviços conforme as autorizações e contratos disponíveis. Seu trabalho e seus bens continuarão sendo seus, respeitadas as obrigações acordadas."
+              },
+              {
+                "line": 40019,
+                "anchor": "ILVA organizava reparos de roupas e recebia seus primeiros pedidos regulares."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 98,
+            "evidence": [
+              {
+                "line": 675,
+                "global_line": 41542,
+                "anchor": "DIA 98 — 09h00 | Portões da Cidade Livre"
+              },
+              {
+                "line": 727,
+                "global_line": 41594,
+                "anchor": "Do outro lado da praça, ILVA apresentava peças de tecido e reparos produzidos na cidade."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por evidência literal; observação histórica delimitada, sem substituir estado posterior ou promover evento.",
+        "scope": "HISTORICAL_OBSERVATION"
+      },
+      "after": {
+        "value": "Visitante associada a tecidos; posteriormente organizou reparos de roupas e recebeu pedidos regulares. D98: apresentou peças de tecido e reparos produzidos na cidade durante o Grande Festival. D103: recebeu encomenda privada de trajes cerimoniais na oficina de costura do mercado. D106: entregou peças com ajustes finais previstos e participou do jantar inaugural da Casa do Jardim Branco, para o qual também foram convidadas as ajudantes. D113: continuava recebendo encomendas.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 36018,
+                "anchor": "A mulher dos tecidos, ILVA, observou a oficina."
+              },
+              {
+                "line": 36022,
+                "anchor": "— Poderá negociar espaços e serviços conforme as autorizações e contratos disponíveis. Seu trabalho e seus bens continuarão sendo seus, respeitadas as obrigações acordadas."
+              },
+              {
+                "line": 40019,
+                "anchor": "ILVA organizava reparos de roupas e recebia seus primeiros pedidos regulares."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 98,
+            "evidence": [
+              {
+                "line": 675,
+                "global_line": 41542,
+                "anchor": "DIA 98 — 09h00 | Portões da Cidade Livre"
+              },
+              {
+                "line": 727,
+                "global_line": 41594,
+                "anchor": "Do outro lado da praça, ILVA apresentava peças de tecido e reparos produzidos na cidade."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": [
+              103,
+              106,
+              113
+            ],
+            "evidence": [
+              {
+                "line": 2053,
+                "global_line": 42920,
+                "anchor": "DIA 103 — 13h22 | Mercado da Cidade Livre"
+              },
+              {
+                "line": 2055,
+                "global_line": 42922,
+                "anchor": "LUCAS apareceu na oficina de costura de ILVA com uma expressão que a artesã considerou imediatamente suspeita."
+              },
+              {
+                "line": 2113,
+                "global_line": 42980,
+                "anchor": "O plano foi ajustado: ILVA prepararia mantos, casacos, túnicas e peças de cerimônia personalizadas, utilizando tecidos disponíveis e modelos que pudessem ser finalizados com segurança. Algumas roupas seriam entregues com ajustes posteriores."
+              },
+              {
+                "line": 2115,
+                "global_line": 42982,
+                "anchor": "Duas ajudantes seriam remuneradas pelo trabalho."
+              },
+              {
+                "line": 2145,
+                "global_line": 43012,
+                "anchor": "LUCAS explicou que a encomenda seria custeada por recursos pessoais documentados, sem utilização do fundo histórico de infraestrutura nem do orçamento da cidade."
+              },
+              {
+                "line": 2950,
+                "global_line": 43817,
+                "anchor": "DIA 106 — 11h08 | Oficina de ILVA"
+              },
+              {
+                "line": 2986,
+                "global_line": 43853,
+                "anchor": "— Estão prontos para entrega, com alguns ajustes finais que faremos depois das provas de roupa. E quero que saiba que, se inventar outra surpresa envolvendo dez pessoas, vou cobrar o dobro."
+              },
+              {
+                "line": 3382,
+                "global_line": 44249,
+                "anchor": "ILVA também estava presente."
+              },
+              {
+                "line": 3384,
+                "global_line": 44251,
+                "anchor": "LUCAS fizera questão de convidar a artesã e as ajudantes que haviam trabalhado na encomenda."
+              },
+              {
+                "line": 3480,
+                "global_line": 44347,
+                "anchor": "DIA 106 — 21h24 | Jardim da Casa do Jardim Branco"
+              },
+              {
+                "line": 8305,
+                "global_line": 49172,
+                "anchor": "O Grande Festival havia produzido um excedente operacional modesto. A cozinha de HALDEN começara a gerar receitas regulares. ILVA recebia encomendas. A oficina vendia alguns serviços a comerciantes externos."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento.",
+        "scope": "HISTORICAL_OBSERVATION"
+      }
+    },
+    {
+      "entity_id": "ilva",
+      "field": "roles",
+      "before": {
+        "value": "artesã de vestuário",
+        "status": "COMPLETADO",
+        "origin": {
+          "policy": "C4 autorizado pelo autor em 2026-11-26",
+          "basis": "artesã de vestuário",
+          "observations": 1,
+          "legacy_id": null
+        },
+        "justification": "Função narrativa prospectiva; não constitui cargo histórico adicional.",
+        "scope": "PROVISIONAL_CONTINUITY",
+        "valid_at": {
+          "day": 579,
+          "chapter": 9,
+          "part": "I"
+        }
+      },
+      "after": {
+        "value": "Artesã de vestuário; no D103 planejou encomenda de mantos, casacos, túnicas e peças de cerimônia com duas ajudantes remuneradas.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 103,
+            "evidence": [
+              {
+                "line": 2055,
+                "global_line": 42922,
+                "anchor": "LUCAS apareceu na oficina de costura de ILVA com uma expressão que a artesã considerou imediatamente suspeita."
+              },
+              {
+                "line": 2107,
+                "global_line": 42974,
+                "anchor": "— Precisarei de ajudantes, tecidos, medidas e tempo. Não vou entregar dez peças elaboradas de um dia para o outro."
+              },
+              {
+                "line": 2113,
+                "global_line": 42980,
+                "anchor": "O plano foi ajustado: ILVA prepararia mantos, casacos, túnicas e peças de cerimônia personalizadas, utilizando tecidos disponíveis e modelos que pudessem ser finalizados com segurança. Algumas roupas seriam entregues com ajustes posteriores."
+              },
+              {
+                "line": 2115,
+                "global_line": 42982,
+                "anchor": "Duas ajudantes seriam remuneradas pelo trabalho."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento.",
+        "scope": "HISTORICAL_OBSERVATION"
+      }
+    },
+    {
+      "entity_id": "ilva",
+      "field": "skills",
+      "before": {
+        "value": "Ajuste de vestuário para mobilidade e elegância",
+        "status": "CANONICO",
+        "origin": {
+          "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+          "path": "episodes/LVI-C09-PI-D579-AUTHOR-SOURCE/draft/episode_draft.json",
+          "blob": "f0c2cb92e17a5b066392077187f009036fd29069",
+          "story_sha": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926",
+          "line": 1065,
+          "anchor": "Havia uma versão da peça que havia usado na abertura. Ilva ajustara a estrutura do tecido para dar liberdade de movimento, mantendo a linha elegante da cintura. Uma das artesãs mostrou como a capa curta poderia ser presa e removida sem deslocar o restante do traje."
+        },
+        "justification": "Leitura contextual; não generalizar como estado atual.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "valid_at": {
+          "day": 579,
+          "chapter": 9,
+          "part": "I"
+        }
+      },
+      "after": {
+        "value": "Ajuste de vestuário para mobilidade e elegância No D103–106 ajustou planejamento a tecidos, medidas, tempo e ajudantes; preparou trajes personalizados para o Conselho e vestido de Miren concebido para liberdade de movimento.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+            "path": "episodes/LVI-C09-PI-D579-AUTHOR-SOURCE/draft/episode_draft.json",
+            "blob": "f0c2cb92e17a5b066392077187f009036fd29069",
+            "story_sha": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926",
+            "line": 1065,
+            "anchor": "Havia uma versão da peça que havia usado na abertura. Ilva ajustara a estrutura do tecido para dar liberdade de movimento, mantendo a linha elegante da cintura. Uma das artesãs mostrou como a capa curta poderia ser presa e removida sem deslocar o restante do traje."
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": [
+              103,
+              106
+            ],
+            "evidence": [
+              {
+                "line": 2107,
+                "global_line": 42974,
+                "anchor": "— Precisarei de ajudantes, tecidos, medidas e tempo. Não vou entregar dez peças elaboradas de um dia para o outro."
+              },
+              {
+                "line": 2113,
+                "global_line": 42980,
+                "anchor": "O plano foi ajustado: ILVA prepararia mantos, casacos, túnicas e peças de cerimônia personalizadas, utilizando tecidos disponíveis e modelos que pudessem ser finalizados com segurança. Algumas roupas seriam entregues com ajustes posteriores."
+              },
+              {
+                "line": 2986,
+                "global_line": 43853,
+                "anchor": "— Estão prontos para entrega, com alguns ajustes finais que faremos depois das provas de roupa. E quero que saiba que, se inventar outra surpresa envolvendo dez pessoas, vou cobrar o dobro."
+              },
+              {
+                "line": 3018,
+                "global_line": 43885,
+                "anchor": "Um vestido azul profundo, com detalhes prateados."
+              },
+              {
+                "line": 3030,
+                "global_line": 43897,
+                "anchor": "— Ajudantes e eu pensamos bastante nesta peça. Ela gosta de roupas que permitam movimento. Não faria sentido entregar-lhe algo bonito que ela não quisesse vestir."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento.",
+        "scope": "HISTORICAL_OBSERVATION"
+      }
+    },
+    {
+      "entity_id": "ilva",
+      "field": "voice",
+      "before": {
+        "value": "criativa, direta e espirituosa",
+        "status": "COMPLETADO",
+        "origin": {
+          "policy": "C4 autorizado pelo autor em 2026-11-26",
+          "basis": "artesã de vestuário",
+          "observations": 1,
+          "legacy_id": null
+        },
+        "justification": "Direção individual de voz, sem fabricar fala anterior.",
+        "scope": "PROVISIONAL_CONTINUITY",
+        "valid_at": {
+          "day": 579,
+          "chapter": 9,
+          "part": "I"
+        }
+      },
+      "after": {
+        "value": "Direta e bem-humorada nas negociações: no D103 ironizou a falta de conhecimento de costura dos administradores; no D106 brincou que cobraria o dobro de uma nova surpresa e lembrou Lucas que não precisava dar presentes para ser querido.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": [
+              103,
+              106
+            ],
+            "evidence": [
+              {
+                "line": 2101,
+                "global_line": 42968,
+                "anchor": "— Homens que administram cidades deveriam ser obrigados a aprender costura."
+              },
+              {
+                "line": 2986,
+                "global_line": 43853,
+                "anchor": "— Estão prontos para entrega, com alguns ajustes finais que faremos depois das provas de roupa. E quero que saiba que, se inventar outra surpresa envolvendo dez pessoas, vou cobrar o dobro."
+              },
+              {
+                "line": 3080,
+                "global_line": 43947,
+                "anchor": "— Você não precisa dar presentes para que essas pessoas gostem de você."
+              },
+              {
+                "line": 3088,
+                "global_line": 43955,
+                "anchor": "— Ótimo. Porque gostar de alguém não significa que você possa me pedir vinte roupas novas para amanhã."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento.",
+        "scope": "HISTORICAL_OBSERVATION"
+      }
+    },
+    {
+      "entity_id": "ilva",
+      "field": "values",
+      "before": {
+        "value": "individualidade e liberdade de movimento",
+        "status": "COMPLETADO",
+        "origin": {
+          "policy": "C4 autorizado pelo autor em 2026-11-26",
+          "basis": "artesã de vestuário",
+          "observations": 1,
+          "legacy_id": null
+        },
+        "justification": "Orientação comportamental compatível com o papel.",
+        "scope": "PROVISIONAL_CONTINUITY",
+        "valid_at": {
+          "day": 579,
+          "chapter": 9,
+          "part": "I"
+        }
+      },
+      "after": {
+        "value": "Em D103–106 defendeu prazos factíveis, trabalho remunerado e roupas que a pessoa desejasse vestir, com liberdade de movimento; não inferir valores não expressos.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "artesã de vestuário",
+            "observations": 1,
+            "legacy_id": null
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": [
+              103,
+              106
+            ],
+            "evidence": [
+              {
+                "line": 2107,
+                "global_line": 42974,
+                "anchor": "— Precisarei de ajudantes, tecidos, medidas e tempo. Não vou entregar dez peças elaboradas de um dia para o outro."
+              },
+              {
+                "line": 2115,
+                "global_line": 42982,
+                "anchor": "Duas ajudantes seriam remuneradas pelo trabalho."
+              },
+              {
+                "line": 3030,
+                "global_line": 43897,
+                "anchor": "— Ajudantes e eu pensamos bastante nesta peça. Ela gosta de roupas que permitam movimento. Não faria sentido entregar-lhe algo bonito que ela não quisesse vestir."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento.",
+        "scope": "HISTORICAL_OBSERVATION"
+      }
+    },
+    {
+      "entity_id": "cirn",
+      "field": "history",
+      "before": {
+        "value": "Histórico ainda não consolidado; não fabricar biografia passada.",
+        "status": "PENDENTE_FONTE",
+        "origin": {
+          "policy": "C4 autorizado pelo autor em 2026-11-26",
+          "basis": "defensor e combatente",
+          "observations": 0,
+          "legacy_id": null
+        },
+        "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+        "scope": "EDITORIAL",
+        "valid_at": {
+          "day": 579,
+          "chapter": 9,
+          "part": "I"
+        }
+      },
+      "after": {
+        "value": "D104: Brannik recordou combates anteriores de Lucas contra Círan, sem especificar resultados. D108: Círan venceu duelo de treinamento contra Lucas. D111–112: participou de exercícios de matrizes condicionadas; reconheceu analogia com sequências de espada e desejou prolongar o treino. D113: narrativa recordou sua promessa anterior na Assembleia de conhecer, aprender e voltar para casa.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "defensor e combatente",
+            "observations": 0,
+            "legacy_id": null
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": [
+              104,
+              108,
+              111,
+              112,
+              113
+            ],
+            "evidence": [
+              {
+                "line": 2209,
+                "global_line": 43076,
+                "anchor": "— Excelente. Nosso fundador sobreviveu a orcs, magias antigas e combates contra CÍRAN. Quase foi derrotado por uma tábua."
+              },
+              {
+                "line": 4730,
+                "global_line": 45597,
+                "anchor": "DIA 108 — 06h12 | Arena da Primeira Lança"
+              },
+              {
+                "line": 4910,
+                "global_line": 45777,
+                "anchor": "Na troca seguinte, CÍRAN antecipou a cobertura, alterou a distância e marcou um ponto."
+              },
+              {
+                "line": 4914,
+                "global_line": 45781,
+                "anchor": "O resultado final favoreceu o campeão."
+              },
+              {
+                "line": 6231,
+                "global_line": 47098,
+                "anchor": "CÍRAN ergueu a cabeça."
+              },
+              {
+                "line": 6233,
+                "global_line": 47100,
+                "anchor": "— Isso também acontece com sequências de espada."
+              },
+              {
+                "line": 6371,
+                "global_line": 47238,
+                "anchor": "— Mas ele não concluiu."
+              },
+              {
+                "line": 7161,
+                "global_line": 48028,
+                "anchor": "— E eu quero saber se isso significa que terei um adversário mais difícil amanhã."
+              },
+              {
+                "line": 7177,
+                "global_line": 48044,
+                "anchor": "— Mas nós poderíamos continuar..."
+              },
+              {
+                "line": 8995,
+                "global_line": 49862,
+                "anchor": "Era a mesma promessa feita por CÍRAN durante a Assembleia."
+              },
+              {
+                "line": 8997,
+                "global_line": 49864,
+                "anchor": "Conhecer."
+              },
+              {
+                "line": 8999,
+                "global_line": 49866,
+                "anchor": "Aprender."
+              },
+              {
+                "line": 9001,
+                "global_line": 49868,
+                "anchor": "Voltar para casa."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento.",
+        "scope": "HISTORICAL_OBSERVATION"
+      }
+    },
+    {
+      "entity_id": "cirn",
+      "field": "combat_style",
+      "before": {
+        "value": "Atuação coerente com experiência e condição demonstradas; priorizar leitura de terreno e limites verificáveis.",
+        "status": "COMPLETADO",
+        "origin": {
+          "policy": "C4 autorizado pelo autor em 2026-11-26",
+          "basis": "defensor e combatente",
+          "observations": 0,
+          "legacy_id": null
+        },
+        "justification": "Não cria treinamento, arma, magia ou vitória.",
+        "scope": "PROVISIONAL_CONTINUITY",
+        "valid_at": {
+          "day": 579,
+          "chapter": 9,
+          "part": "I"
+        }
+      },
+      "after": {
+        "value": "No duelo D108, empregou antecipação de cobertura, alteração de distância e marcação de pontos; o resultado favoreceu Círan naquela sessão, não estabelece superioridade permanente.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "defensor e combatente",
+            "observations": 0,
+            "legacy_id": null
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 108,
+            "evidence": [
+              {
+                "line": 4730,
+                "global_line": 45597,
+                "anchor": "DIA 108 — 06h12 | Arena da Primeira Lança"
+              },
+              {
+                "line": 4904,
+                "global_line": 45771,
+                "anchor": "CÍRAN ergueu a espada."
+              },
+              {
+                "line": 4910,
+                "global_line": 45777,
+                "anchor": "Na troca seguinte, CÍRAN antecipou a cobertura, alterou a distância e marcou um ponto."
+              },
+              {
+                "line": 4912,
+                "global_line": 45779,
+                "anchor": "Depois outro."
+              },
+              {
+                "line": 4914,
+                "global_line": 45781,
+                "anchor": "O resultado final favoreceu o campeão."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento.",
+        "scope": "HISTORICAL_OBSERVATION"
+      }
+    },
+    {
+      "entity_id": "cirn",
+      "field": "skills",
+      "before": {
+        "value": "A desenvolver/mostrar em cena: treino e evolução de combate.",
+        "status": "COMPLETADO",
+        "origin": {
+          "policy": "C4 autorizado pelo autor em 2026-11-26",
+          "basis": "defensor e combatente",
+          "observations": 0,
+          "legacy_id": null
+        },
+        "justification": "Direção de desenvolvimento; não concede técnica ou domínio demonstrado.",
+        "scope": "PROVISIONAL_CONTINUITY",
+        "valid_at": {
+          "day": 579,
+          "chapter": 9,
+          "part": "I"
+        }
+      },
+      "after": {
+        "value": "Sequências de espada reconhecidas pelo próprio Círan e adaptação de distância e cobertura demonstrada no duelo D108.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "defensor e combatente",
+            "observations": 0,
+            "legacy_id": null
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": [
+              108,
+              111
+            ],
+            "evidence": [
+              {
+                "line": 4910,
+                "global_line": 45777,
+                "anchor": "Na troca seguinte, CÍRAN antecipou a cobertura, alterou a distância e marcou um ponto."
+              },
+              {
+                "line": 6231,
+                "global_line": 47098,
+                "anchor": "CÍRAN ergueu a cabeça."
+              },
+              {
+                "line": 6233,
+                "global_line": 47100,
+                "anchor": "— Isso também acontece com sequências de espada."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento.",
+        "scope": "HISTORICAL_OBSERVATION"
+      }
+    },
+    {
+      "entity_id": "cirn",
+      "field": "goals",
+      "before": {
+        "value": "aprimorar técnica e transmitir experiência",
+        "status": "COMPLETADO",
+        "origin": {
+          "policy": "C4 autorizado pelo autor em 2026-11-26",
+          "basis": "defensor e combatente",
+          "observations": 0,
+          "legacy_id": null
+        },
+        "justification": "Objetivo de continuidade compatível com o papel; não é missão já aceita.",
+        "scope": "PROVISIONAL_CONTINUITY",
+        "valid_at": {
+          "day": 579,
+          "chapter": 9,
+          "part": "I"
+        }
+      },
+      "after": {
+        "value": "No D112 desejava um adversário mais difícil e continuar o treino; D113 recorda promessa anterior de conhecer, aprender e voltar para casa.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "defensor e combatente",
+            "observations": 0,
+            "legacy_id": null
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": [
+              112,
+              113
+            ],
+            "evidence": [
+              {
+                "line": 7161,
+                "global_line": 48028,
+                "anchor": "— E eu quero saber se isso significa que terei um adversário mais difícil amanhã."
+              },
+              {
+                "line": 7177,
+                "global_line": 48044,
+                "anchor": "— Mas nós poderíamos continuar..."
+              },
+              {
+                "line": 8995,
+                "global_line": 49862,
+                "anchor": "Era a mesma promessa feita por CÍRAN durante a Assembleia."
+              },
+              {
+                "line": 8997,
+                "global_line": 49864,
+                "anchor": "Conhecer."
+              },
+              {
+                "line": 8999,
+                "global_line": 49866,
+                "anchor": "Aprender."
+              },
+              {
+                "line": 9001,
+                "global_line": 49868,
+                "anchor": "Voltar para casa."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento.",
+        "scope": "HISTORICAL_OBSERVATION"
+      }
+    },
+    {
+      "entity_id": "cirn",
+      "field": "voice",
+      "before": {
+        "value": "Determinação, responsabilidade e autonomia",
+        "status": "COMPLETADO",
+        "origin": {
+          "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+          "field": "voice",
+          "original_status": "PROSPECTIVE_DIRECTION"
+        },
+        "justification": "Preservado do registro anterior; não transforma proposta em evento.",
+        "scope": "EDITORIAL",
+        "valid_at": {
+          "day": 579,
+          "chapter": 9,
+          "part": "I"
+        }
+      },
+      "after": {
+        "value": "No D111–112 demonstrou humor competitivo e entusiasmo por desafios: brincou que haviam transformado combate em aula e protestou pelo encerramento do treino.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "field": "voice",
+            "original_status": "PROSPECTIVE_DIRECTION"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": [
+              111,
+              112
+            ],
+            "evidence": [
+              {
+                "line": 6271,
+                "global_line": 47138,
+                "anchor": "CÍRAN soltou um suspiro teatral."
+              },
+              {
+                "line": 6273,
+                "global_line": 47140,
+                "anchor": "— Vocês transformaram combate em aula."
+              },
+              {
+                "line": 7175,
+                "global_line": 48042,
+                "anchor": "CÍRAN protestou:"
+              },
+              {
+                "line": 7177,
+                "global_line": 48044,
+                "anchor": "— Mas nós poderíamos continuar..."
+              },
+              {
+                "line": 7185,
+                "global_line": 48052,
+                "anchor": "— Vocês realmente estão formando uma conspiração para impedir meus melhores treinos."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento.",
+        "scope": "HISTORICAL_OBSERVATION"
+      }
+    },
+    {
+      "entity_id": "edric",
+      "field": "occupation",
+      "before": {
+        "value": "personagem ligado ao círculo de Seron",
+        "status": "COMPLETADO",
+        "origin": {
+          "policy": "C4 autorizado pelo autor em 2026-11-26",
+          "basis": "personagem ligado ao círculo de Seron",
+          "observations": 0,
+          "legacy_id": null
+        },
+        "justification": "Papel de trabalho derivado da identidade e contextos disponíveis; revisão se surgir fonte melhor.",
+        "scope": "PROVISIONAL_CONTINUITY",
+        "valid_at": {
+          "day": 579,
+          "chapter": 9,
+          "part": "I"
+        }
+      },
+      "after": {
+        "value": "Responsável pela segurança urbana cotidiana na cadeia operacional provisória da Cidade Livre, D104; não presume função atual.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "personagem ligado ao círculo de Seron",
+            "observations": 0,
+            "legacy_id": null
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 104,
+            "evidence": [
+              {
+                "line": 2477,
+                "global_line": 43344,
+                "anchor": "DIA 104 • DISTRIBUIÇÃO DE RESPONSABILIDADES"
+              },
+              {
+                "line": 2487,
+                "global_line": 43354,
+                "anchor": "Segurança urbana cotidiana"
+              },
+              {
+                "line": 2488,
+                "global_line": 43355,
+                "anchor": "EDRIC, sob normas civis e coordenação defensiva"
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento.",
+        "scope": "HISTORICAL_OBSERVATION"
+      }
+    },
+    {
+      "entity_id": "edric",
+      "field": "roles",
+      "before": {
+        "value": "Acompanhava dois guardas civis em treinamento; distinto da organização militar de Varo",
+        "status": "RECUPERADO",
+        "origin": {
+          "blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+          "archive_segment": "002",
+          "lines": [
+            4321,
+            4325
+          ],
+          "anchor": "Em outra sala, MAELIS ensinava noções de higiene, reconhecimento de situações de urgência e procedimentos de encaminhamento.\n\nMais adiante, EDRIC acompanhava dois guardas civis em treinamento, enquanto VARO trabalhava com os oficiais militares.\n\nNão eram a mesma organização.",
+          "authority": "LEGACY_LITERAL_READBACK"
+        },
+        "justification": "Leitura literal da fonte legada; manter referência temporal, não presumir estado atual.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "valid_at": {
+          "archive_segment": "002",
+          "observed_day": null,
+          "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+        },
+        "previous": {
+          "value": "personagem ligado ao círculo de Seron",
+          "status": "COMPLETADO",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "personagem ligado ao círculo de Seron",
+            "observations": 0,
+            "legacy_id": null
+          },
+          "justification": "Função narrativa prospectiva; não constitui cargo histórico adicional.",
+          "scope": "PROVISIONAL_CONTINUITY",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        }
+      },
+      "after": {
+        "value": "Acompanhava dois guardas civis em treinamento; distinto da organização militar de Varo D104: segurança urbana cotidiana sob normas civis e coordenação defensiva; D106: responsabilidade em funcionamento; D113: proteção dos acessos durante exercício de retirada em Arvendell.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "archive_segment": "002",
+            "lines": [
+              4321,
+              4325
+            ],
+            "anchor": "Em outra sala, MAELIS ensinava noções de higiene, reconhecimento de situações de urgência e procedimentos de encaminhamento.\n\nMais adiante, EDRIC acompanhava dois guardas civis em treinamento, enquanto VARO trabalhava com os oficiais militares.\n\nNão eram a mesma organização.",
+            "authority": "LEGACY_LITERAL_READBACK"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": [
+              104,
+              106,
+              113
+            ],
+            "evidence": [
+              {
+                "line": 2487,
+                "global_line": 43354,
+                "anchor": "Segurança urbana cotidiana"
+              },
+              {
+                "line": 2488,
+                "global_line": 43355,
+                "anchor": "EDRIC, sob normas civis e coordenação defensiva"
+              },
+              {
+                "line": 3972,
+                "global_line": 44839,
+                "anchor": "EDRIC estava responsável pela segurança urbana."
+              },
+              {
+                "line": 8525,
+                "global_line": 49392,
+                "anchor": "07h36 • ACAMPAMENTO DE ARVENDELL"
+              },
+              {
+                "line": 8533,
+                "global_line": 49400,
+                "anchor": "EDRIC comandava a proteção dos acessos."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "previous": {
+          "value": "personagem ligado ao círculo de Seron",
+          "status": "COMPLETADO",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "personagem ligado ao círculo de Seron",
+            "observations": 0,
+            "legacy_id": null
+          },
+          "justification": "Função narrativa prospectiva; não constitui cargo histórico adicional.",
+          "scope": "PROVISIONAL_CONTINUITY",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        }
+      }
+    },
+    {
+      "entity_id": "edric",
+      "field": "history",
+      "before": {
+        "value": "Histórico ainda não consolidado; não fabricar biografia passada.",
+        "status": "PENDENTE_FONTE",
+        "origin": {
+          "policy": "C4 autorizado pelo autor em 2026-11-26",
+          "basis": "personagem ligado ao círculo de Seron",
+          "observations": 0,
+          "legacy_id": null
+        },
+        "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo.",
+        "scope": "EDITORIAL",
+        "valid_at": {
+          "day": 579,
+          "chapter": 9,
+          "part": "I"
+        }
+      },
+      "after": {
+        "value": "D104: participou do Conselho que consolidou a distribuição provisória de responsabilidades. D106: foi destinado a receber manto formal e túnica resistente; uso não comprovado por esse trecho. D113: comandou proteção dos acessos em exercício de retirada, reorganizou grupo sem ordem direta de Varo e assumiu sua parcela da falha de coordenação.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "personagem ligado ao círculo de Seron",
+            "observations": 0,
+            "legacy_id": null
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": [
+              104,
+              106,
+              113
+            ],
+            "evidence": [
+              {
+                "line": 2325,
+                "global_line": 43192,
+                "anchor": "DIA 104 — 13h16 | Conselho da Cidade Livre"
+              },
+              {
+                "line": 2331,
+                "global_line": 43198,
+                "anchor": "EDRIC, que participava da reunião, ergueu os olhos."
+              },
+              {
+                "line": 2488,
+                "global_line": 43355,
+                "anchor": "EDRIC, sob normas civis e coordenação defensiva"
+              },
+              {
+                "line": 3008,
+                "global_line": 43875,
+                "anchor": "EDRIC receberia um manto formal de linhas simples, acompanhado de uma túnica resistente."
+              },
+              {
+                "line": 8533,
+                "global_line": 49400,
+                "anchor": "EDRIC comandava a proteção dos acessos."
+              },
+              {
+                "line": 8575,
+                "global_line": 49442,
+                "anchor": "Então reorganizou seu próprio grupo."
+              },
+              {
+                "line": 8577,
+                "global_line": 49444,
+                "anchor": "Não estava seguindo uma instrução direta de VARO."
+              },
+              {
+                "line": 8597,
+                "global_line": 49464,
+                "anchor": "— Interpretei a movimentação de RHEM como uma tentativa de proteger o corredor norte. Reforcei aquele acesso, mas isso atrasou minha equipe."
+              },
+              {
+                "line": 8609,
+                "global_line": 49476,
+                "anchor": "— Minha."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento.",
+        "scope": "HISTORICAL_OBSERVATION"
+      }
+    },
+    {
+      "entity_id": "edric",
+      "field": "wardrobe",
+      "before": {
+        "value": "Vestuário adequado ao ofício e ao clima da cena; funcional, com detalhes individualizados quando apresentados.",
+        "status": "COMPLETADO",
+        "origin": {
+          "policy": "C4 autorizado pelo autor em 2026-11-26",
+          "basis": "personagem ligado ao círculo de Seron",
+          "observations": 0,
+          "legacy_id": null
+        },
+        "justification": "Direção de design prospectiva, não propriedade de peças específicas.",
+        "scope": "PROVISIONAL_CONTINUITY",
+        "valid_at": {
+          "day": 579,
+          "chapter": 9,
+          "part": "I"
+        }
+      },
+      "after": {
+        "value": "No D106, Ilva apresentou manto formal de linhas simples e túnica resistente destinados a Edric; não presumir uso ou posse posterior.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "personagem ligado ao círculo de Seron",
+            "observations": 0,
+            "legacy_id": null
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 106,
+            "evidence": [
+              {
+                "line": 2950,
+                "global_line": 43817,
+                "anchor": "DIA 106 — 11h08 | Oficina de ILVA"
+              },
+              {
+                "line": 3008,
+                "global_line": 43875,
+                "anchor": "EDRIC receberia um manto formal de linhas simples, acompanhado de uma túnica resistente."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento.",
+        "scope": "HISTORICAL_OBSERVATION"
+      }
+    },
+    {
+      "entity_id": "edric",
+      "field": "skills",
+      "before": {
+        "value": "Acompanhamento de treinamento de guardas civis, observado historicamente",
+        "status": "RECUPERADO",
+        "origin": {
+          "blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+          "archive_segment": "002",
+          "lines": [
+            4323,
+            4325
+          ],
+          "anchor": "Mais adiante, EDRIC acompanhava dois guardas civis em treinamento, enquanto VARO trabalhava com os oficiais militares.\n\nNão eram a mesma organização.",
+          "authority": "LEGACY_LITERAL_READBACK"
+        },
+        "justification": "Leitura literal da fonte legada; manter referência temporal, não presumir estado atual.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "valid_at": {
+          "archive_segment": "002",
+          "observed_day": null,
+          "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+        },
+        "previous": {
+          "value": "A desenvolver/mostrar em cena: reconciliação de papel histórico.",
+          "status": "COMPLETADO",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "personagem ligado ao círculo de Seron",
+            "observations": 0,
+            "legacy_id": null
+          },
+          "justification": "Direção de desenvolvimento; não concede técnica ou domínio demonstrado.",
+          "scope": "PROVISIONAL_CONTINUITY",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        }
+      },
+      "after": {
+        "value": "Acompanhamento de treinamento de guardas civis, observado historicamente No D113 comandou a proteção de acessos, reorganizou seu grupo com procedimentos aprendidos e identificou erro de coordenação no exercício de retirada.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "archive_segment": "002",
+            "lines": [
+              4323,
+              4325
+            ],
+            "anchor": "Mais adiante, EDRIC acompanhava dois guardas civis em treinamento, enquanto VARO trabalhava com os oficiais militares.\n\nNão eram a mesma organização.",
+            "authority": "LEGACY_LITERAL_READBACK"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 113,
+            "evidence": [
+              {
+                "line": 8525,
+                "global_line": 49392,
+                "anchor": "07h36 • ACAMPAMENTO DE ARVENDELL"
+              },
+              {
+                "line": 8533,
+                "global_line": 49400,
+                "anchor": "EDRIC comandava a proteção dos acessos."
+              },
+              {
+                "line": 8575,
+                "global_line": 49442,
+                "anchor": "Então reorganizou seu próprio grupo."
+              },
+              {
+                "line": 8579,
+                "global_line": 49446,
+                "anchor": "Estava utilizando os procedimentos aprendidos depois da derrota no exercício anterior."
+              },
+              {
+                "line": 8597,
+                "global_line": 49464,
+                "anchor": "— Interpretei a movimentação de RHEM como uma tentativa de proteger o corredor norte. Reforcei aquele acesso, mas isso atrasou minha equipe."
+              },
+              {
+                "line": 8609,
+                "global_line": 49476,
+                "anchor": "— Minha."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "previous": {
+          "value": "A desenvolver/mostrar em cena: reconciliação de papel histórico.",
+          "status": "COMPLETADO",
+          "origin": {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "personagem ligado ao círculo de Seron",
+            "observations": 0,
+            "legacy_id": null
+          },
+          "justification": "Direção de desenvolvimento; não concede técnica ou domínio demonstrado.",
+          "scope": "PROVISIONAL_CONTINUITY",
+          "valid_at": {
+            "day": 579,
+            "chapter": 9,
+            "part": "I"
+          }
+        }
+      }
+    },
+    {
+      "entity_id": "rhem",
+      "field": "skills",
+      "before": {
+        "value": "A desenvolver/mostrar em cena: trajetória individual da Legião.",
+        "status": "COMPLETADO",
+        "origin": {
+          "policy": "C4 autorizado pelo autor em 2026-11-26",
+          "basis": "companheiro histórico",
+          "observations": 0,
+          "legacy_id": null
+        },
+        "justification": "Direção de desenvolvimento; não concede técnica ou domínio demonstrado.",
+        "scope": "PROVISIONAL_CONTINUITY",
+        "valid_at": {
+          "day": 579,
+          "chapter": 9,
+          "part": "I"
+        }
+      },
+      "after": {
+        "value": "No D108 acompanhou treinamento e ressaltou a importância de detectar falhas antes de combate real. D113 coordenou defesa em exercício de retirada, verificou rota alternativa diante de informações contraditórias e reconheceu que podia comunicar melhor sua intenção.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "companheiro histórico",
+            "observations": 0,
+            "legacy_id": null
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": [
+              108,
+              113
+            ],
+            "evidence": [
+              {
+                "line": 4750,
+                "global_line": 45617,
+                "anchor": "RHEM acompanhava o exercício."
+              },
+              {
+                "line": 4768,
+                "global_line": 45635,
+                "anchor": "— É melhor descobrir aqui do que numa batalha real."
+              },
+              {
+                "line": 8535,
+                "global_line": 49402,
+                "anchor": "RHEM coordenava a defesa."
+              },
+              {
+                "line": 8565,
+                "global_line": 49432,
+                "anchor": "— Não vamos apostar a retirada inteira numa informação não confirmada."
+              },
+              {
+                "line": 8569,
+                "global_line": 49436,
+                "anchor": "— Verifiquem o caminho alternativo. O restante mantém a proteção."
+              },
+              {
+                "line": 8613,
+                "global_line": 49480,
+                "anchor": "— Parcialmente. Eu poderia ter transmitido minha intenção de maneira mais clara."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento.",
+        "scope": "HISTORICAL_OBSERVATION"
+      }
+    },
+    {
+      "entity_id": "rhem",
+      "field": "voice",
+      "before": {
+        "value": "direto e atento ao coletivo",
+        "status": "COMPLETADO",
+        "origin": {
+          "policy": "C4 autorizado pelo autor em 2026-11-26",
+          "basis": "companheiro histórico",
+          "observations": 0,
+          "legacy_id": null
+        },
+        "justification": "Direção individual de voz, sem fabricar fala anterior.",
+        "scope": "PROVISIONAL_CONTINUITY",
+        "valid_at": {
+          "day": 579,
+          "chapter": 9,
+          "part": "I"
+        }
+      },
+      "after": {
+        "value": "D111: respondeu com humor seco à queixa de Círan sobre transformar combate em aula.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "companheiro histórico",
+            "observations": 0,
+            "legacy_id": null
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 111,
+            "evidence": [
+              {
+                "line": 6273,
+                "global_line": 47140,
+                "anchor": "— Vocês transformaram combate em aula."
+              },
+              {
+                "line": 6275,
+                "global_line": 47142,
+                "anchor": "RHEM respondeu sem levantar os olhos:"
+              },
+              {
+                "line": 6277,
+                "global_line": 47144,
+                "anchor": "— Talvez por isso você continue tentando acertar o comandante enquanto ele pensa."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento.",
+        "scope": "HISTORICAL_OBSERVATION"
+      }
+    },
+    {
+      "entity_id": "rhem",
+      "field": "history",
+      "before": {
+        "value": "Rhem, integrante do Bastião, participou do torneio inaugural; classificação contextual: defesa e resistência.",
+        "status": "RECUPERADO",
+        "origin": {
+          "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+          "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+          "book": 1,
+          "evidence": [
+            {
+              "line": 30311,
+              "anchor": "No primeiro dia, um legionário chamado RHEM, do Bastião, enfrentou um adversário conhecido por seus ataques velozes."
+            },
+            {
+              "line": 30313,
+              "anchor": "RHEM era largo, silencioso e possuía a expressão permanentemente cansada de alguém que não gostava de conversar antes do almoço."
+            },
+            {
+              "line": 30586,
+              "anchor": "RHEM"
+            },
+            {
+              "line": 30587,
+              "anchor": "Bastião"
+            },
+            {
+              "line": 30588,
+              "anchor": "Defesa e resistência"
+            }
+          ]
+        },
+        "justification": "Recuperação autoral por evidência literal; não promove evento nem afirma estado atual além do último registro.",
+        "scope": "HISTORICAL_OBSERVATION"
+      },
+      "after": {
+        "value": "Rhem, integrante do Bastião, participou do torneio inaugural; classificação contextual: defesa e resistência. D113: coordenou a defesa no exercício de retirada em Arvendell; assumiu responsabilidade parcial pela falha de comunicação com Edric.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 30311,
+                "anchor": "No primeiro dia, um legionário chamado RHEM, do Bastião, enfrentou um adversário conhecido por seus ataques velozes."
+              },
+              {
+                "line": 30313,
+                "anchor": "RHEM era largo, silencioso e possuía a expressão permanentemente cansada de alguém que não gostava de conversar antes do almoço."
+              },
+              {
+                "line": 30586,
+                "anchor": "RHEM"
+              },
+              {
+                "line": 30587,
+                "anchor": "Bastião"
+              },
+              {
+                "line": 30588,
+                "anchor": "Defesa e resistência"
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 113,
+            "evidence": [
+              {
+                "line": 8525,
+                "global_line": 49392,
+                "anchor": "07h36 • ACAMPAMENTO DE ARVENDELL"
+              },
+              {
+                "line": 8535,
+                "global_line": 49402,
+                "anchor": "RHEM coordenava a defesa."
+              },
+              {
+                "line": 8611,
+                "global_line": 49478,
+                "anchor": "RHEM respondeu:"
+              },
+              {
+                "line": 8613,
+                "global_line": 49480,
+                "anchor": "— Parcialmente. Eu poderia ter transmitido minha intenção de maneira mais clara."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento.",
+        "scope": "HISTORICAL_OBSERVATION"
+      }
+    },
+    {
+      "entity_id": "maelis",
+      "field": "skills",
+      "before": {
+        "value": "Cuidado, coordenação e coragem",
+        "status": "RECUPERADO",
+        "origin": {
+          "legacy_id": "R26-CHAR-24",
+          "blob": "24967910a0cf46be663c2ce091327caf99208b7d"
+        },
+        "justification": "Resumo legado preservado; leitura literal necessária para afirmação atual.",
+        "scope": "HISTORICAL_SUMMARY",
+        "valid_at": {
+          "day": 579,
+          "chapter": 9,
+          "part": "I"
+        }
+      },
+      "after": {
+        "value": "Cuidado, coordenação e coragem D113 organizou observações sobre saúde e higiene para pesquisa interdisciplinar. D114 apresentou relatório sobre triagem, higiene, atendimento básico e encaminhamento; distinguiu interesse de Elyan em acolhimento de habilitação médica.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "legacy_id": "R26-CHAR-24",
+            "blob": "24967910a0cf46be663c2ce091327caf99208b7d"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": [
+              113,
+              114
+            ],
+            "evidence": [
+              {
+                "line": 8773,
+                "global_line": 49640,
+                "anchor": "DIA 113 • 10h46 • CASA DOS PRIMEIROS CAMINHOS"
+              },
+              {
+                "line": 8783,
+                "global_line": 49650,
+                "anchor": "MAELIS organizava um caderno de observações sobre saúde e higiene."
+              },
+              {
+                "line": 9437,
+                "global_line": 50304,
+                "anchor": "DIA 114 • 11h32 • SALÃO DO CONSELHO"
+              },
+              {
+                "line": 9689,
+                "global_line": 50556,
+                "anchor": "MAELIS apresentou o relatório de saúde."
+              },
+              {
+                "line": 9693,
+                "global_line": 50560,
+                "anchor": "A Cidade Livre possuía procedimentos de triagem, higiene e atendimento básico."
+              },
+              {
+                "line": 9695,
+                "global_line": 50562,
+                "anchor": "Mas ainda precisava de mais profissionais, medicamentos e um sistema estável de encaminhamento para situações graves."
+              },
+              {
+                "line": 9707,
+                "global_line": 50574,
+                "anchor": "— Ele demonstra interesse genuíno em trabalhar com recuperação e acolhimento. Mas isso não significa que esteja qualificado para realizar procedimentos médicos."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento.",
+        "scope": "HISTORICAL_OBSERVATION"
+      }
+    },
+    {
+      "entity_id": "maelis",
+      "field": "values",
+      "before": {
+        "value": "dignidade e competência",
+        "status": "COMPLETADO",
+        "origin": {
+          "policy": "C4 autorizado pelo autor em 2026-11-26",
+          "basis": "liderança de saúde",
+          "observations": 0,
+          "legacy_id": "R26-CHAR-24"
+        },
+        "justification": "Orientação comportamental compatível com o papel.",
+        "scope": "PROVISIONAL_CONTINUITY",
+        "valid_at": {
+          "day": 579,
+          "chapter": 9,
+          "part": "I"
+        }
+      },
+      "after": {
+        "value": "D114 explicitou visão de saúde como água segura, alimentação, saneamento e condições dignas; reconheceu contribuição de instalações seguras e defendeu formação de Elyan sem presumir qualificação médica.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "liderança de saúde",
+            "observations": 0,
+            "legacy_id": "R26-CHAR-24"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 114,
+            "evidence": [
+              {
+                "line": 9707,
+                "global_line": 50574,
+                "anchor": "— Ele demonstra interesse genuíno em trabalhar com recuperação e acolhimento. Mas isso não significa que esteja qualificado para realizar procedimentos médicos."
+              },
+              {
+                "line": 9715,
+                "global_line": 50582,
+                "anchor": "— É exatamente o que pretendo."
+              },
+              {
+                "line": 9719,
+                "global_line": 50586,
+                "anchor": "— Também quero que a comunidade compreenda uma coisa: saúde não é apenas tratar alguém depois que adoece. É garantir água segura, alimentação, saneamento e condições de vida dignas."
+              },
+              {
+                "line": 9727,
+                "global_line": 50594,
+                "anchor": "— Quando constrói instalações seguras, sim."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento.",
+        "scope": "HISTORICAL_OBSERVATION"
+      }
+    },
+    {
+      "entity_id": "casa-jardim-branco",
+      "field": "architecture",
+      "before": {
+        "value": "Não estabelecido nas fontes examinadas; recuperar antes de afirmar como fato.",
+        "status": "PENDENTE_FONTE",
+        "origin": {
+          "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+          "entity_id": "casa-jardim-branco"
+        },
+        "justification": "Tratado estruturalmente, sem completar conteúdo sem base.",
+        "scope": "EDITORIAL",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+      },
+      "after": {
+        "value": "D105–106: residência reformada com cobertura de entrada de madeira, janela junto ao jardim, pequena árvore local recém-plantada, lamparinas comuns e cristais de luz de baixa potência inspecionados por Miren; sala e área externa acomodaram mesas no jantar. Não projetar dimensões ou configuração posteriores a partir desta descrição.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "casa-jardim-branco"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": [
+              105,
+              106
+            ],
+            "evidence": [
+              {
+                "line": 2746,
+                "global_line": 43613,
+                "anchor": "DIA 105 — 17h56 | Jardim da nova residência"
+              },
+              {
+                "line": 2750,
+                "global_line": 43617,
+                "anchor": "OREN estava sobre uma pequena escada, ajustando a última peça da cobertura da entrada."
+              },
+              {
+                "line": 2880,
+                "global_line": 43747,
+                "anchor": "Naquela mesma tarde, MIREN apareceu com uma pequena muda."
+              },
+              {
+                "line": 2886,
+                "global_line": 43753,
+                "anchor": "Era uma espécie local adequada ao jardim, escolhida após orientação de ESMARA."
+              },
+              {
+                "line": 2888,
+                "global_line": 43755,
+                "anchor": "LUCAS a encontrou ajoelhada perto da janela."
+              },
+              {
+                "line": 3220,
+                "global_line": 44087,
+                "anchor": "DIA 106 — 19h38 | Casa do Jardim Branco"
+              },
+              {
+                "line": 3224,
+                "global_line": 44091,
+                "anchor": "A casa estava iluminada por lamparinas comuns e pequenos cristais de luz de baixa potência, instalados e inspecionados por MIREN."
+              },
+              {
+                "line": 3228,
+                "global_line": 44095,
+                "anchor": "A pequena árvore recém-plantada permanecia próxima à janela."
+              },
+              {
+                "line": 3230,
+                "global_line": 44097,
+                "anchor": "Uma mesa grande ocupava parte da sala."
+              },
+              {
+                "line": 3232,
+                "global_line": 44099,
+                "anchor": "Outras duas haviam sido colocadas na área externa, permitindo que todos se sentassem confortavelmente sem ultrapassar a capacidade da casa."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+      }
+    },
+    {
+      "entity_id": "casa-jardim-branco",
+      "field": "history",
+      "before": {
+        "value": "Não estabelecido nas fontes examinadas; recuperar antes de afirmar como fato.",
+        "status": "PENDENTE_FONTE",
+        "origin": {
+          "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+          "entity_id": "casa-jardim-branco"
+        },
+        "justification": "Tratado estruturalmente, sem completar conteúdo sem base.",
+        "scope": "EDITORIAL",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+      },
+      "after": {
+        "value": "D105: Lucas corrigiu peça da cobertura com serrote sob supervisão de Brannik; Lucas e Miren plantaram árvore local orientada por Esmara. D106 às 19h38: primeira festa na residência; Halden foi remunerado pela comida. Às 21h24, convidados conversavam no jardim.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "casa-jardim-branco"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": [
+              105,
+              106
+            ],
+            "evidence": [
+              {
+                "line": 2842,
+                "global_line": 43709,
+                "anchor": "E foi assim que, na tarde anterior à conclusão da reforma, o portador de CREATION passou quase meia hora corrigindo uma peça de madeira sob a supervisão de um anão extremamente irritado."
+              },
+              {
+                "line": 2880,
+                "global_line": 43747,
+                "anchor": "Naquela mesma tarde, MIREN apareceu com uma pequena muda."
+              },
+              {
+                "line": 2886,
+                "global_line": 43753,
+                "anchor": "Era uma espécie local adequada ao jardim, escolhida após orientação de ESMARA."
+              },
+              {
+                "line": 2902,
+                "global_line": 43769,
+                "anchor": "— Vamos plantar juntos?"
+              },
+              {
+                "line": 2908,
+                "global_line": 43775,
+                "anchor": "Os dois trabalharam em silêncio durante alguns minutos."
+              },
+              {
+                "line": 2940,
+                "global_line": 43807,
+                "anchor": "A casa estava praticamente pronta."
+              },
+              {
+                "line": 3218,
+                "global_line": 44085,
+                "anchor": "X — A primeira festa na casa de LUCAS e MIREN"
+              },
+              {
+                "line": 3220,
+                "global_line": 44087,
+                "anchor": "DIA 106 — 19h38 | Casa do Jardim Branco"
+              },
+              {
+                "line": 3234,
+                "global_line": 44101,
+                "anchor": "A comida fora preparada com a ajuda de HALDEN, remunerado pelo serviço."
+              },
+              {
+                "line": 3480,
+                "global_line": 44347,
+                "anchor": "DIA 106 — 21h24 | Jardim da Casa do Jardim Branco"
+              },
+              {
+                "line": 3486,
+                "global_line": 44353,
+                "anchor": "LYSA e ILVA conversavam sobre a possibilidade de ampliar a produção de roupas da cidade."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+      }
+    },
+    {
+      "entity_id": "genese",
+      "field": "limits",
+      "before": {
+        "value": "Condições e limites descritos no D90; escopo histórico, sem impor nerf posterior.",
+        "status": "RECUPERADO",
+        "origin": {
+          "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+          "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+          "book": 1,
+          "evidence": [
+            {
+              "line": 40454,
+              "anchor": "Conhecer e verificar âncoras independentes além de Três Arcos; compreender suas fontes de energia; desenvolver dispositivos de segurança e autorização; obter cooperação voluntária dos operadores envolvidos."
+            },
+            {
+              "line": 40456,
+              "anchor": "Restrições permanentes conhecidas: não cria mana infinita, não substitui materiais e trabalho sem custo, não concede controle sobre pessoas e não transforma legitimidade política em poder mágico."
+            },
+            {
+              "line": 40458,
+              "anchor": "Ainda não existe um procedimento completo de ativação. A capacidade superior não pode ser utilizada em Três Arcos nas condições atuais."
+            }
+          ]
+        },
+        "justification": "Recuperação autoral por evidência literal; não promove evento nem afirma estado atual além do último registro.",
+        "scope": "PRIVATE_BOUNDARY"
+      },
+      "after": {
+        "value": "Condições e limites descritos no D90; escopo histórico, sem impor nerf posterior. D110: Gênese de Horizonte ainda indisponível; reserva de CREATION finita e esforços excepcionais podiam provocar exaustão. Registro histórico de CREATION anterior à evolução de GÊNESE, sem impor custo ou nerf posterior.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+            "book": 1,
+            "evidence": [
+              {
+                "line": 40454,
+                "anchor": "Conhecer e verificar âncoras independentes além de Três Arcos; compreender suas fontes de energia; desenvolver dispositivos de segurança e autorização; obter cooperação voluntária dos operadores envolvidos."
+              },
+              {
+                "line": 40456,
+                "anchor": "Restrições permanentes conhecidas: não cria mana infinita, não substitui materiais e trabalho sem custo, não concede controle sobre pessoas e não transforma legitimidade política em poder mágico."
+              },
+              {
+                "line": 40458,
+                "anchor": "Ainda não existe um procedimento completo de ativação. A capacidade superior não pode ser utilizada em Três Arcos nas condições atuais."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 110,
+            "evidence": [
+              {
+                "line": 5577,
+                "global_line": 46444,
+                "anchor": "CREATION — Capacidade prática no Dia 110"
+              },
+              {
+                "line": 5587,
+                "global_line": 46454,
+                "anchor": "Capacidades ainda indisponíveis ou inseguras"
+              },
+              {
+                "line": 5589,
+                "global_line": 46456,
+                "anchor": "Produção ilimitada de matéria ou energia; criação repetida de grandes grupos conscientes sem risco; construção instantânea de cidades inteiras; utilização do Coração selado; ativação de autômatos antigos não examinados; Gênese de Horizonte."
+              },
+              {
+                "line": 5591,
+                "global_line": 46458,
+                "anchor": "Estado energético: LUCAS já não está na condição crítica que se seguiu à criação de ASTRA. Sua reserva continua finita, sem medição confiável em unidades absolutas; esforços excepcionais ainda podem provocar exaustão severa."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento.",
+        "scope": "HISTORICAL_OBSERVATION"
+      }
+    },
+    {
+      "entity_id": "genese",
+      "field": "history",
+      "before": {
+        "value": "Recapitulação de abertura do Livro II confirma: no D90, a missão Um Lugar para Pertencer fora concluída, Lucas recebera Matriz de Fundação I e o potencial da Gênese de Horizonte permanecia inacessível; compreensão exigia encontrar âncoras antigas além do vale. Não constitui nova aquisição no D91 nem limite posterior.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "genese"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 90,
+            "evidence": [
+              {
+                "line": 114,
+                "global_line": 40981,
+                "anchor": "O despertar do Criador — Dia 90"
+              },
+              {
+                "line": 116,
+                "global_line": 40983,
+                "anchor": "A missão Um Lugar para Pertencer foi concluída. LUCAS recebeu a Matriz de Fundação I e descobriu o potencial da Gênese de Horizonte, uma capacidade muito maior de CREATION, ainda inacessível. Para compreendê-la, precisará encontrar âncoras antigas além do vale. A Legião conserva seus 300 integrantes originais vivos."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por evidência literal; observação histórica delimitada, sem substituir estado posterior ou promover evento.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+      },
+      "after": {
+        "value": "Recapitulação de abertura do Livro II confirma: no D90, a missão Um Lugar para Pertencer fora concluída, Lucas recebera Matriz de Fundação I e o potencial da Gênese de Horizonte permanecia inacessível; compreensão exigia encontrar âncoras antigas além do vale. Não constitui nova aquisição no D91 nem limite posterior. D110: inventário diferenciou aplicações demonstradas de CREATION (formas reutilizáveis, pequenas reconfigurações, apoio à manutenção e prototipagem), aplicações em desenvolvimento e capacidades ainda indisponíveis/inseguras, inclusive Gênese de Horizonte. D111: equipe testou sequência condicionada e interrompeu terceira etapa diante de fissura incompatível; não constitui domínio pleno.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "genese"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 90,
+            "evidence": [
+              {
+                "line": 114,
+                "global_line": 40981,
+                "anchor": "O despertar do Criador — Dia 90"
+              },
+              {
+                "line": 116,
+                "global_line": 40983,
+                "anchor": "A missão Um Lugar para Pertencer foi concluída. LUCAS recebeu a Matriz de Fundação I e descobriu o potencial da Gênese de Horizonte, uma capacidade muito maior de CREATION, ainda inacessível. Para compreendê-la, precisará encontrar âncoras antigas além do vale. A Legião conserva seus 300 integrantes originais vivos."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": [
+              110,
+              111
+            ],
+            "evidence": [
+              {
+                "line": 5577,
+                "global_line": 46444,
+                "anchor": "CREATION — Capacidade prática no Dia 110"
+              },
+              {
+                "line": 5581,
+                "global_line": 46448,
+                "anchor": "Modelar projetos com especialistas; registrar formas reutilizáveis; reconfigurar pequenas quantidades de matéria adequada; preparar obstáculos e apoios simples; utilizar dispositivos externos com energia limitada; contribuir para manutenção, prototipagem e treinamento."
+              },
+              {
+                "line": 5585,
+                "global_line": 46452,
+                "anchor": "Sequências pré-configuradas mais complexas, recuperação assistida de energia mais eficiente, equipamentos modulares, melhoria dos autômatos, criação de componentes especiais com custos controlados e matrizes de infraestrutura de maior escala."
+              },
+              {
+                "line": 5589,
+                "global_line": 46456,
+                "anchor": "Produção ilimitada de matéria ou energia; criação repetida de grandes grupos conscientes sem risco; construção instantânea de cidades inteiras; utilização do Coração selado; ativação de autômatos antigos não examinados; Gênese de Horizonte."
+              },
+              {
+                "line": 6247,
+                "global_line": 47114,
+                "anchor": "— Podemos preparar três projetos, mas ativar apenas um de cada vez. O próximo seria selecionado a partir do resultado do anterior."
+              },
+              {
+                "line": 6257,
+                "global_line": 47124,
+                "anchor": "— E cada etapa precisa ter uma condição de interrupção. Se o material não for adequado, o Sistema não deverá ser utilizado como desculpa para forçar a manifestação."
+              },
+              {
+                "line": 6359,
+                "global_line": 47226,
+                "anchor": "A pedra selecionada possuía uma fissura que não aparecia no desenho."
+              },
+              {
+                "line": 6361,
+                "global_line": 47228,
+                "anchor": "A Matriz de Referência reconheceu uma incompatibilidade."
+              },
+              {
+                "line": 6363,
+                "global_line": 47230,
+                "anchor": "LUCAS interrompeu."
+              },
+              {
+                "line": 6387,
+                "global_line": 47254,
+                "anchor": "— Estamos — respondeu ASTRA. — Mas ainda não demonstramos domínio suficiente para utilizar a sequência em condições imprevisíveis."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+      }
+    }
+  ],
+  "architect_discoveries": [
+    {
+      "id": "book-ii-d101-veyra-letter",
+      "day": 101,
+      "observation": "Carta marítima incompleta e símbolo de três estruturas conectadas; origem comercial rastreável.",
+      "uncertainty": "Atribuição aos Arquitetos, destino e distância desconhecidos.",
+      "source": {
+        "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+        "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+        "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "book": 2,
+        "day": 101,
+        "evidence": [
+          {
+            "line": 1237,
+            "global_line": 42104,
+            "anchor": "Um comerciante que trabalhava com rotas ligadas a Veyra trouxera uma cópia de uma carta marítima, incompleta, mas com referências documentais que poderiam ser verificadas."
+          },
+          {
+            "line": 1239,
+            "global_line": 42106,
+            "anchor": "Numa das margens havia o mesmo tipo de símbolo observado anteriormente nos estudos do Coração."
+          },
+          {
+            "line": 1241,
+            "global_line": 42108,
+            "anchor": "Três estruturas conectadas por linhas."
+          },
+          {
+            "line": 1247,
+            "global_line": 42114,
+            "anchor": "— Ainda não sabemos se é realmente um símbolo dos Arquitetos."
+          },
+          {
+            "line": 1251,
+            "global_line": 42118,
+            "anchor": "— Mas agora temos uma origem documental e um contato comercial que podemos procurar novamente."
+          },
+          {
+            "line": 1269,
+            "global_line": 42136,
+            "anchor": "Nenhuma embarcação havia sido reservada."
+          },
+          {
+            "line": 1271,
+            "global_line": 42138,
+            "anchor": "Ninguém conhecia ainda a distância marítima necessária para alcançar uma suposta âncora exterior."
+          }
+        ]
+      }
+    },
+    {
+      "id": "book-ii-d113-local-protection",
+      "day": 113,
+      "observation": "Memória do autômato: isolamento residencial solicitado; autorização secundária ausente; comando de continuidade pendente; proteção local executada.",
+      "uncertainty": "Responsabilidade distribuída é hipótese; não demonstrada sabotagem, culpa ou causa completa.",
+      "source": {
+        "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+        "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+        "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "book": 2,
+        "day": 113,
+        "evidence": [
+          {
+            "line": 9087,
+            "global_line": 49954,
+            "anchor": "SETOR RESIDENCIAL — ISOLAMENTO SOLICITADO."
+          },
+          {
+            "line": 9091,
+            "global_line": 49958,
+            "anchor": "AUTORIZAÇÃO SECUNDÁRIA — AUSENTE."
+          },
+          {
+            "line": 9101,
+            "global_line": 49968,
+            "anchor": "COMANDO DE CONTINUIDADE — PENDENTE."
+          },
+          {
+            "line": 9107,
+            "global_line": 49974,
+            "anchor": "PROTEÇÃO LOCAL — EXECUTADA."
+          },
+          {
+            "line": 9119,
+            "global_line": 49986,
+            "anchor": "— Pode indicar que uma segunda pessoa, estação ou processo deveria confirmar determinada operação."
+          },
+          {
+            "line": 9123,
+            "global_line": 49990,
+            "anchor": "“A autorização de condução não pertence a um único portador.”"
+          },
+          {
+            "line": 9137,
+            "global_line": 50004,
+            "anchor": "— Um equipamento falhou. Uma mensagem não chegou. Um operador estava ausente. Não precisamos assumir que alguém tentou provocar um desastre."
+          },
+          {
+            "line": 9155,
+            "global_line": 50022,
+            "anchor": "O isolamento podia não ter ocorrido apenas porque uma engenheira tomou uma decisão corajosa. Talvez existisse um sistema de responsabilidades distribuídas, e uma parte dele tivesse deixado de funcionar no momento mais perigoso."
+          },
+          {
+            "line": 9159,
+            "global_line": 50026,
+            "anchor": "Não atribuiu culpa."
+          },
+          {
+            "line": 9161,
+            "global_line": 50028,
+            "anchor": "Não declarou sabotagem."
+          }
+        ]
+      }
+    },
+    {
+      "id": "book-ii-d113-preservation-destination",
+      "day": 113,
+      "observation": "Registro de continuidade incompleto, destino de preservação não confirmado; símbolo semelhante à carta de Veyra.",
+      "uncertainty": "Arquivo das Marés é hipótese; não há prova de envio, recepção ou preservação efetiva.",
+      "source": {
+        "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+        "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+        "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "book": 2,
+        "day": 113,
+        "evidence": [
+          {
+            "line": 9171,
+            "global_line": 50038,
+            "anchor": "— Registro de continuidade... cópia incompleta."
+          },
+          {
+            "line": 9175,
+            "global_line": 50042,
+            "anchor": "DESTINO DE PRESERVAÇÃO — NÃO CONFIRMADO."
+          },
+          {
+            "line": 9183,
+            "global_line": 50050,
+            "anchor": "— O Arquivo das Marés?"
+          },
+          {
+            "line": 9187,
+            "global_line": 50054,
+            "anchor": "— Talvez. Mas o identificador deste registro está parcialmente danificado."
+          },
+          {
+            "line": 9191,
+            "global_line": 50058,
+            "anchor": "Três linhas conectadas a um círculo."
+          },
+          {
+            "line": 9193,
+            "global_line": 50060,
+            "anchor": "Era semelhante ao símbolo encontrado nas cartas antigas associadas a Veyra."
+          },
+          {
+            "line": 9205,
+            "global_line": 50072,
+            "anchor": "— Temos uma indicação consistente de que alguns registros foram destinados a uma instalação externa de preservação."
+          },
+          {
+            "line": 9211,
+            "global_line": 50078,
+            "anchor": "— Sim — respondeu ASTRA. — Mas não sabemos se foi enviada, recebida ou preservada com sucesso."
+          },
+          {
+            "line": 9215,
+            "global_line": 50082,
+            "anchor": "DESTINO NÃO CONFIRMADO."
+          }
+        ]
+      }
+    }
+  ],
+  "author_directions": [
+    {
+      "source": {
+        "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+        "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+        "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "book": 2,
+        "day": null,
+        "evidence": [
+          {
+            "line": 8216,
+            "global_line": 49083,
+            "anchor": "Também como estão os outros ? Como está a cidade ? Economia ? Política ? Não vejo envolvimento mais deles, queria entender e saber oque tá havendo tbm. Passamos tempo focado aqui, mas o mundo ainda se move…"
+          }
+        ]
+      },
+      "direction": "Manter mundo, economia, política e demais personagens ativos fora do foco de Lucas; não converter plano do assistente em evento."
+    }
+  ],
+  "counts": {
+    "editorially_reviewed": 30,
+    "groups": 30,
+    "fields_changed": 27,
+    "existing_entities": 9,
+    "remaining": 226,
+    "independently_certified": 0
+  },
+  "next": {
+    "ledger_id": 343,
+    "global_line": 51433
+  },
+  "canon_changed": false,
+  "production_activated": false
+}
