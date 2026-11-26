@@ -1,0 +1,905 @@
+{
+  "schema": "worldroot-universal-dossier-coverage-audit-v1",
+  "date": "2026-11-26",
+  "status": "AUDITED_BASELINE_NOT_EXHAUSTIVE",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "engine": "9b34bc491275028fe32fff018b405ab94dcc5c8a",
+  "head": {
+    "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+    "sequence": 50,
+    "pending": "LVI-C09-PII-D580-AUTHOR-SOURCE"
+  },
+  "source_refs": [
+    {
+      "path": "editorial/registries/r28-living-world.json",
+      "blob": "5b628e9ec9aa99504909561c61ac898fdb7dfbde"
+    },
+    {
+      "path": "editorial/registries/r30-character-identity.json",
+      "blob": "024ca8bd576f2bfbd56b21c85706903239798452"
+    },
+    {
+      "path": "editorial/registries/female-character-design-d580-v2.json",
+      "blob": "6f7a041d459a9fb34db42c6dec9408dc2c4c4d6a"
+    },
+    {
+      "path": "canon/HEAD.json",
+      "blob": "9b4e09682fc3148511d59e73ec56fdcda4e396e5"
+    },
+    {
+      "path": "ops/RESUME.json",
+      "blob": "f58b7bc89eaffa29e6d3db717c7d304c66d9ad87"
+    },
+    {
+      "path": "ops/ENGINE_PUBLISHING_POLICY.json",
+      "blob": "862926d75e959455a57dc104877a2deedd8ba089"
+    }
+  ],
+  "coverage": {
+    "world_entities": 57,
+    "world_characters": 55,
+    "identity_registry": 15,
+    "identity_observations": 22,
+    "female_design": 21,
+    "distinct_identity_ids": 63,
+    "assets": 30,
+    "plots": 11,
+    "exhaustive": false
+  },
+  "identities": [
+    {
+      "id": "lucas",
+      "name": "Lucas",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [
+        "Lucas Rodrigues"
+      ],
+      "identity_observations": 3,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "miren",
+      "name": "Miren",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "identity_observations": 3,
+      "visual_design": true,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "varo",
+      "name": "Varo",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "identity_observations": 2,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "kael",
+      "name": "Kael",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "identity_observations": 1,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "lysa",
+      "name": "Lysa",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "identity_observations": 1,
+      "visual_design": true,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "nox",
+      "name": "NÓX",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [
+        "NOX"
+      ],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "sistema",
+      "name": "Sistema",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [
+        "Sistema azul"
+      ],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "rumo",
+      "name": "Rumo",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "identity_observations": 1,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "kairon",
+      "name": "Káiron",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [
+        "KAIRON"
+      ],
+      "identity_observations": 2,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "caedren",
+      "name": "Caedren",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "astra",
+      "name": "Astra",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "visual_design": true,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "brannik",
+      "name": "Brannik",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "identity_observations": 1,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "naira",
+      "name": "Naira",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "identity_observations": 1,
+      "visual_design": true,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "sael",
+      "name": "Sael",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "dorek",
+      "name": "Dorek",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "maelis",
+      "name": "Maelis",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "visual_design": true,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "reva",
+      "name": "Reva",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "identity_observations": 1,
+      "visual_design": true,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "ysol",
+      "name": "Ysol",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "seron",
+      "name": "Seron",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "identity_observations": 1,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "luren",
+      "name": "Luren",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "edric",
+      "name": "Edric",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "nixa",
+      "name": "Nixa",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "tavren",
+      "name": "Tavren",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "rhem",
+      "name": "Rhem",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "cirn",
+      "name": "Círan",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [
+        "Ciran"
+      ],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "thalor-althea",
+      "name": "Althea",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "visual_design": true,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "thaeron",
+      "name": "Thaeron",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "iriel",
+      "name": "Iriel",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "talis",
+      "name": "Talis",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [
+        "Talis Elvenar"
+      ],
+      "visual_design": true,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "tharvek",
+      "name": "Tharvek",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "bressa",
+      "name": "Bressa",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "identity_observations": 1,
+      "visual_design": true,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "elyrien",
+      "name": "Elyrien",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "visual_design": true,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "niraven",
+      "name": "Níraven",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "identity_observations": 1,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "virandor",
+      "name": "Virandor",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "elen",
+      "name": "Elen",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "neris",
+      "name": "Neris",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "velkar",
+      "name": "Velkar",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [
+        "Velkar Draen"
+      ],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "serakh",
+      "name": "Serakh",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "varkhess",
+      "name": "Varkhess",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "orelia",
+      "name": "Orelia",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "visual_design": true,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "rhazek",
+      "name": "Rhazek",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "lethira",
+      "name": "Lethira",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "serina",
+      "name": "Serina",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "visual_design": true,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "morvek",
+      "name": "Morvek",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "avelna",
+      "name": "Avelna",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "visual_design": true,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "ithran",
+      "name": "Ithran",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [
+        "Ithran Veyk"
+      ],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "vesra",
+      "name": "Vesra",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [
+        "Vesra Keth"
+      ],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "nelo",
+      "name": "Nelo",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "maia",
+      "name": "Maia",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "ira",
+      "name": "Iria",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [
+        "Íria"
+      ],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "adela",
+      "name": "Adela",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "visual_design": true,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "edran",
+      "name": "Edran Vael",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "enna",
+      "name": "Enna",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "visual_design": true,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "veskan",
+      "name": "Veskan",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "lyra",
+      "name": "Lira Selen",
+      "kind": "character",
+      "world_seed": true,
+      "aliases": [],
+      "visual_design": true,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "aerun-instituto",
+      "name": "Instituto AERÚN",
+      "kind": "institution",
+      "world_seed": true,
+      "aliases": [
+        "AERUN",
+        "AERÚN"
+      ],
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "aerun-guardiao",
+      "name": "AERÚN Guardião das Marés",
+      "kind": "guardian",
+      "world_seed": true,
+      "aliases": [
+        "AERÚN",
+        "AERUN"
+      ],
+      "identity_observations": 1,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "aeldric",
+      "name": "Aeldric Vareth",
+      "kind": "IDENTITY_ONLY_REVIEW_TYPE",
+      "aliases": [
+        "AELDRIC VARETH",
+        "patriarca Vareth"
+      ],
+      "identity_observations": 2,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "ilva",
+      "name": "Ilva",
+      "kind": "character",
+      "aliases": [],
+      "visual_design": true,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "serenna",
+      "name": "Serenna Vareth",
+      "kind": "character",
+      "aliases": [],
+      "visual_design": true,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "yra",
+      "name": "Yra",
+      "kind": "character",
+      "aliases": [],
+      "visual_design": true,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "seris",
+      "name": "Serís Daum",
+      "kind": "character",
+      "aliases": [],
+      "visual_design": true,
+      "needs_universal_dossier_review": true
+    },
+    {
+      "id": "ivena",
+      "name": "Ivena",
+      "kind": "character",
+      "aliases": [],
+      "visual_design": true,
+      "needs_universal_dossier_review": true
+    }
+  ],
+  "assets": [
+    {
+      "id": "egide-dupla",
+      "name": "Égide Dupla",
+      "seed_state": "OPERATIONAL",
+      "source_episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "muralha-viva",
+      "name": "Muralha Viva",
+      "seed_state": "OPERATIONAL",
+      "source_episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "tridente-runico",
+      "name": "Tridente Rúnico",
+      "seed_state": "TESTED",
+      "source_episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "sol-feerico",
+      "name": "Sol Feérico",
+      "seed_state": "OPERATIONAL",
+      "source_episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "anel-cronos",
+      "name": "Anel de Cronos",
+      "seed_state": "TESTED",
+      "source_episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "raizes-pedra",
+      "name": "Raízes de Pedra",
+      "seed_state": "OPERATIONAL",
+      "source_episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "ancoras-limiar",
+      "name": "Âncoras do Limiar",
+      "seed_state": "OPERATIONAL",
+      "source_episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "coracoes-reserva",
+      "name": "Corações de Reserva",
+      "seed_state": "TESTED",
+      "source_episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "oraculo-aurora",
+      "name": "Oráculo de Aurora",
+      "seed_state": "TESTED",
+      "source_episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "malha-dissipacao",
+      "name": "Malha de Dissipação",
+      "seed_state": "TESTED",
+      "source_episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "veu-ruptura",
+      "name": "Véu de Ruptura",
+      "seed_state": "TESTED",
+      "source_episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "veu-mil-horizontes",
+      "name": "Véu de Mil Horizontes",
+      "seed_state": "OPERATIONAL",
+      "source_episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "canto-vigilia",
+      "name": "Canto de Vigília",
+      "seed_state": "CREATED",
+      "source_episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "sentinelas-ebano",
+      "name": "Sentinelas de Ébano",
+      "seed_state": "TESTED",
+      "source_episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "vaga-lumes-horizonte",
+      "name": "Vaga-lumes do Horizonte",
+      "seed_state": "OPERATIONAL",
+      "source_episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "portoes-verdade",
+      "name": "Portões da Verdade",
+      "seed_state": "OPERATIONAL",
+      "source_episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "circulos-socorro",
+      "name": "Círculos de Socorro",
+      "seed_state": "OPERATIONAL",
+      "source_episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "ceu-respirante",
+      "name": "Céu Respirante",
+      "seed_state": "OPERATIONAL",
+      "source_episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "casa-abraca",
+      "name": "Casa que Abraça",
+      "seed_state": "TESTED",
+      "source_episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "ultimo-horizonte",
+      "name": "Último Horizonte",
+      "seed_state": "DEFERRED",
+      "source_episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "base-aurora",
+      "name": "Base Aurora",
+      "seed_state": "OPERATIONAL",
+      "source_episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "torre-criador",
+      "name": "Torre do Criador",
+      "seed_state": "OPERATIONAL",
+      "source_episode": "LVI-C01-PV-D541-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "horizonte-aberto",
+      "name": "Horizonte Aberto",
+      "seed_state": "CREATED",
+      "source_episode": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "malha-aurora",
+      "name": "Malha Aurora",
+      "seed_state": "EVOLVED",
+      "source_episode": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "argos",
+      "name": "ARGOS ASCENDENTE",
+      "seed_state": "OPERATIONAL",
+      "source_episode": "LVI-C04-PIV-D557-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "asa-livre",
+      "name": "ASA LIVRE",
+      "seed_state": "PROTOTYPE",
+      "source_episode": "LVI-C02-PV-D546-D548-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "sete-caminhos-cedro",
+      "name": "Sete Caminhos do Cedro",
+      "seed_state": "OPERATIONAL",
+      "source_episode": "LVI-C02-PV-D546-D548-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "ponte-retorno",
+      "name": "Ponte dos que Voltam",
+      "seed_state": "OPERATIONAL",
+      "source_episode": "LVI-C06-PV-D568-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "ferro-horizonte",
+      "name": "Horizonte de Ferro Arcano",
+      "seed_state": "TESTED",
+      "source_episode": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "coracao-aerun",
+      "name": "Coração de Convergência",
+      "seed_state": "CREATED",
+      "source_episode": "LVI-C06-PV-D568-AUTHOR-SOURCE",
+      "requires_current_state_review": true
+    }
+  ],
+  "plots": [
+    {
+      "id": "halvern",
+      "name": "Primeira cooperação com Halvern",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "velkar",
+      "name": "Campanha das Nove Coroas",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "seis-marcas",
+      "name": "Seis Marcas / mecanismos anões",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "talis",
+      "name": "Busca de Talis",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "nira",
+      "name": "Níraven e os guardiões",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "ithran",
+      "name": "Consequências da Primeira Ferida",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "ferro",
+      "name": "Horizonte de Ferro Arcano",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "conferencia",
+      "name": "Conferência Continental",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "asa",
+      "name": "ASA LIVRE e Rumo",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "mar",
+      "name": "Campanha marítima imperial",
+      "requires_current_state_review": true
+    },
+    {
+      "id": "coracao",
+      "name": "Coração de Convergência",
+      "requires_current_state_review": true
+    }
+  ],
+  "findings": [
+    "git_cycle.py clean_db/apply_closure_db persists episodes, events, npc_knowledge, receipts and HEAD; no universal entity/trait tables.",
+    "living_world.py project scans closed prose for existing seeds; inventory_exhaustive false; mentions are not current status.",
+    "literary_experience.py source_registry verifies prewritten R30 observations; does not extract new traits.",
+    "character_design.py load_design hardcodes 21 female profiles; focal preparation integration works only for this set.",
+    "deep_recovery.py build indexes verified historical source windows outside archive; search is not an automatically reviewed dossier.",
+    "No universal reviewed entity delta pipeline across character, creature, location, organization, asset, power and lore domains verified."
+  ],
+  "proposed_next_version": {
+    "name": "R36 — Universal Living Codex",
+    "status": "PROPOSED_NOT_IMPLEMENTED",
+    "requirements": [
+      "Generalized stable IDs and alias collision handling; typed dossiers for all material entities, including 300 legionaries individually only where supported, not invent names.",
+      "Backfill historical sources and verified closed episodes; distinguish author design, explicit narrative, candidate, contradicted, unknown and current state; exclude discarded test.",
+      "Mandatory reviewed entity observations/deltas on future inbox; bind exact literal anchors and visibility; new discoveries enter candidate/review queue, no silent canon promotion.",
+      "Project approved deltas at real choice closure into rebuildable indexed catalog; pending draft separately visible; preserve HEAD, historical sources and all R35 guards.",
+      "Provide retrieval by names, aliases, category, location, event and as-of day, auto-bind relevant dossiers before writing; no universal knowledge leakage.",
+      "Track completeness per entity and field; never imply all names, species, places and items captured before evidence-based audit; include real historical replay, duplicate/alias, rollback, stale source and incremental tests."
+    ],
+    "no_new_episode": true
+  },
+  "canon_changed": false
+}
