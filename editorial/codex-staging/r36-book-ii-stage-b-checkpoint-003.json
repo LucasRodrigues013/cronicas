@@ -1,0 +1,72 @@
+{
+  "schema": "worldroot-r36-book-ii-stage-b-checkpoint-v1",
+  "book": 2,
+  "stage": "B",
+  "status": "PARTIAL_EDITORIAL_RECONCILIATION_ARCHIVED",
+  "previous_checkpoint": "a95dfabab4912b08613319b99471b060e6c1c85f",
+  "review": {
+    "commit": "c50455440add01f8db184ae9aaab902f2712d8af",
+    "blob": "a2bda126f4d5d24e24d54d76df1765103d6d27a0"
+  },
+  "archive": {
+    "commit": "46ac2ea02a23600728ad24ac5a349e6388b4b04c",
+    "manifest_blob": "b5522200cd7293d792983ff58dd1e92ff04b8703",
+    "character_overlay": "3a26afdd1e784a9fc20db8efeebe851edef90ed0",
+    "world_overlay": "38ef6828e38bb716655ee48723e28e294a9f6bd1"
+  },
+  "counts": {
+    "targets_total": 261,
+    "editorially_reviewed": 104,
+    "remaining": 157,
+    "groups_reviewed": 86,
+    "groups_total": 203,
+    "fields_changed_this_batch": 35,
+    "field_updates_cumulative": 68,
+    "existing_entities_this_batch": 23,
+    "existing_profile_count": 192,
+    "independently_certified": 0,
+    "architect_observations_this_batch": 5,
+    "author_directions_this_batch": 8
+  },
+  "verification": {
+    "ledger_anchors_exact": 69,
+    "complete_groups_this_batch": 52,
+    "all_original_context_lines_verified": true,
+    "source_part_git_hash_verified": true,
+    "readback": true,
+    "field_diff_exact": true,
+    "stable_ids": true,
+    "book_i_closure_blob": "1c88caac84b4c533fe4710f3b2974879842bb8db",
+    "narrative_head_blob": "9b4e09682fc3148511d59e73ec56fdcda4e396e5",
+    "native_test_engine": "19d4be7759ba7c0d68adad8eb969414f78caaef3",
+    "native_test_modules": [
+      "reconciliation",
+      "contextual",
+      "link_audit",
+      "temporal"
+    ],
+    "native_tests_passed": 26,
+    "full_suite_run": false
+  },
+  "next": {
+    "ledger_id": 412,
+    "global_line": 72845,
+    "stage": "B",
+    "batch": 4,
+    "base_archive": "46ac2ea02a23600728ad24ac5a349e6388b4b04c",
+    "first_group": [
+      412,
+      413,
+      414,
+      415
+    ]
+  },
+  "reservations": {
+    "independent_certification_pending": true,
+    "book_i_reservations_inherited": true,
+    "production_hold": true,
+    "canonical_head_unchanged": true
+  },
+  "canon_changed": false,
+  "production_activated": false
+}
