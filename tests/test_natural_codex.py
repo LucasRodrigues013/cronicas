@@ -144,3 +144,41 @@ class NaturalCodexTests(unittest.TestCase):
         sync={"schema":SYNC_SCHEMA,"scenes":[{"start_line":1,"end_line":1,"mentions":[],"event_ordinals":[],"cross_checks":[],"hooks":[]}]}
         with self.assertRaisesRegex(ValueError,"complete Codex profile"):
             validate_scene_sync(sync,{"new_entities":[{"id":"new","domains":["Personagens"]}],"events":[]},"New.",set())
+
+    def test_typed_event_visible_from_all_affected_entities(self):
+        from worldroot.live_codex import apply_delta, events_for_entity, SCHEMA
+        prose="One gave the tool to Two in Town."
+        sha=hashlib.sha256(prose.encode()).hexdigest()
+        with sqlite3.connect(":memory:") as db:
+            initialize(db)
+            for ident,domain in (("one","dossiers"),("two","dossiers"),("tool","assets"),("town","assets")):
+                db.execute("INSERT INTO records VALUES(?,?,?)",(domain,ident,jsonstr({"id":ident,"name":ident,"domains":["Personagens"] if domain=="dossiers" else ["Arsenal"],"aliases":[]})))
+            db.commit()
+            events=[
+                {"kind":"ACQUIRE","entity_id":"one","day":1,"scope":"WORLD","line":1,"anchor":prose,"value":{"item_id":"tool","ownership_transfer":True}},
+                {"kind":"TRANSFER","entity_id":"one","day":1,"scope":"WORLD","line":1,"anchor":prose,"location_id":"town","value":{"item_id":"tool","to_id":"two","ownership_transfer":True}}]
+            delta={"schema":SCHEMA,"episode":"fixture","prose_sha256":sha,"events":events,"new_entities":[],"unresolved":[]}
+            apply_delta(db,delta,prose,1,1,sha,set())
+            for ident in ("one","two","tool","town"):
+                self.assertEqual(events_for_entity(db,ident)[0]["event_id"],"fixture:1")
+            self.assertEqual(events_for_entity(db,"two")[0]["roles"],["RECIPIENT"])
+            self.assertEqual(db.execute("SELECT count(*) FROM codex_events").fetchone()[0],2)
+            db.execute("DELETE FROM codex_event_entities")
+            db.commit()
+            self.assertEqual(apply_delta(db,delta,prose,1,1,sha,set()),"IDEMPOTENT")
+            self.assertEqual(events_for_entity(db,"town")[0]["event_id"],"fixture:1")
+
+    def test_cross_entity_event_does_not_leak_private_scope(self):
+        from worldroot.live_codex import apply_delta, events_for_entity, SCHEMA
+        prose="One privately told Two."
+        sha=hashlib.sha256(prose.encode()).hexdigest()
+        with sqlite3.connect(":memory:") as db:
+            initialize(db)
+            for ident in ("one","two"):
+                db.execute("INSERT INTO records VALUES(?,?,?)",("dossiers",ident,jsonstr({"id":ident,"name":ident,"domains":["Personagens"],"aliases":[]})))
+            db.commit()
+            e={"kind":"RELATION","entity_id":"one","day":1,"scope":"PRIVATE_CHARACTER","line":1,"anchor":prose,"value":{"target_id":"two","relation":"CONFIDENCE","value":"secret"}}
+            delta={"schema":SCHEMA,"episode":"fixture","prose_sha256":sha,"events":[e],"new_entities":[],"unresolved":[]}
+            apply_delta(db,delta,prose,1,1,sha,set())
+            self.assertEqual(events_for_entity(db,"two"),[])
+            self.assertEqual(events_for_entity(db,"two",public=False)[0]["roles"],["TARGET"])
