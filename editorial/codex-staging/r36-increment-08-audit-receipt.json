@@ -1,0 +1,89 @@
+{
+  "schema": "worldroot-r36-increment-08-audit-receipt-v1",
+  "engine_commit": "d1180b0930dcd6f78e3daa70555d9ef75ce53cbf",
+  "previous_receipt": "4daedb8d73ee89a17f8fa1d97bd869bab878d8ca",
+  "archive_commit": "34987b0771ec961b4a1c0c6cf203843b113dc000",
+  "main_commit": "9b34bc491275028fe32fff018b405ab94dcc5c8a",
+  "runs": [
+    {
+      "id": 45891930821,
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 45891930741,
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 45891930738,
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 45891930820,
+      "status": "in_progress",
+      "conclusion": null
+    },
+    {
+      "id": 45891930757,
+      "status": "in_progress",
+      "conclusion": null
+    }
+  ],
+  "artifact": {
+    "id": 15151294027,
+    "sha256": "61e9f1de1ed359b168a8d81098b1c6d45803b2730994977ba4022086e4e012bb",
+    "readiness_sha256": "d1e4833429df1b325177704f98328d5f1d7609e6d1ec57e4fa0c5ad828064c9f",
+    "expires": "2026-12-03T20:34:08Z"
+  },
+  "metrics": {
+    "tests": 703,
+    "original_contexts": 9229,
+    "review_jobs": 6368,
+    "event_packets": 776,
+    "ledger_links_verified": 2139,
+    "ambiguities_preserved": 577,
+    "entity_plot_groups": 389,
+    "multiple_entity_groups": 188,
+    "profiles": 192,
+    "fields": 5923,
+    "field_statuses": {
+      "RECUPERADO": 846,
+      "COMPLETADO": 1546,
+      "PENDENTE_FONTE": 3448,
+      "CANONICO": 30,
+      "SEGREDO": 33,
+      "NAO_APLICAVEL": 18,
+      "DEDUZIDO": 2
+    },
+    "editorial_sample": {
+      "commit": "5be244d0f2490beab0169dbdf1897f3f26b20cac",
+      "targets": 14,
+      "supported_candidate": 4,
+      "partial": 5,
+      "not_attributed": 5
+    },
+    "policy_rules": 130,
+    "policy_sources": 34,
+    "policy_blob": "615151fc89228ddb222ea01613c23e977f8c418b",
+    "retrospective_hit1": 6,
+    "hit5": 8,
+    "hit20": 10,
+    "corpus_parts": 40,
+    "short_parts_detected": 7,
+    "d579_words": 10557,
+    "d580_words": 10803,
+    "independent_models": 0,
+    "semantic_certified": 0,
+    "canon_promotions": 0
+  },
+  "decision": "HOLD_PRODUCTION",
+  "limitations": [
+    "Policy metadata, references and hash checked; individual editorial performance across all R01-R35 not certified.",
+    "Plot/entity routing is not semantic identity resolution.",
+    "Editorial sample is single-review and no canon promotion.",
+    "No independent model available. No D581 or production activation."
+  ],
+  "canon_changed": false
+}
