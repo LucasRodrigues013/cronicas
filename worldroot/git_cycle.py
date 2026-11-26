@@ -551,6 +551,10 @@ def _closure(root, episode_id, head, choice, draft, events, kn):
     }
     if choice.get("schema") == "worldroot-author-retro-ratification-v1":
         payload["ratification_kind"] = "VERBATIM_AUTHOR_RETRO_RATIFICATION_20261119"
+    if choice.get("schema") == "worldroot-r36-ratification-envelope-v1":
+        payload["ratification_kind"] = "R36_EXPLICIT_RATIFICATION_NO_CONTINUATION"
+        payload["approval_file"] = choice["approval_file"]
+        payload["continuation_pending_at_closure"] = True
     if draft.book_closed:
         payload["book_closed"] = True
     return payload
@@ -711,6 +715,9 @@ def _journal(root: Path):
         if clos.get("ratification_kind") == "VERBATIM_AUTHOR_RETRO_RATIFICATION_20261119":
             from .retro_ratify import author_ratification_choice
             choice = author_ratification_choice(root, clos["episode_id"])
+        elif clos.get("ratification_kind") == "R36_EXPLICIT_RATIFICATION_NO_CONTINUATION":
+            from .r36_authority import envelope
+            choice = envelope(root, clos["episode_id"], clos["approval_file"], current)
         elif opts == 0 and clos.get("book_closed") is True:
             from .book_finalizer import author_finale_choice
             choice = author_finale_choice(root, clos["episode_id"])
