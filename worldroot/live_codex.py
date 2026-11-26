@@ -27,11 +27,14 @@ def load_registry(root):
 def all_records(data):
     profiles={p["id"]:p for p in data["characters"]}
     for r in data["records"]:
-        yield {**r,"design":profiles.get(r["id"]),"research_links":[s for s in data["school_links"] if s["entity_id"]==r["id"]],"scope":"HISTORICAL_REVIEW_AND_PROSPECTIVE_DESIGN"}
+        extra={}
+        if r["id"]=="genese":
+            extra={"aliases":[*r.get("aliases",[]),"CREATION_GENESE"],"special_authority":data["arcane"]["special_authorities"][0]}
+        yield {**r,"design":profiles.get(r["id"]),"research_links":[s for s in data["school_links"] if s["entity_id"]==r["id"]],"scope":"HISTORICAL_REVIEW_AND_PROSPECTIVE_DESIGN",**extra}
     for s in data["species"]:
         yield {**s,"aliases":[],"scope":"SPECIES_DESIGN_NOT_OBSERVED"}
-    for s in data["arcane"]["special_authorities"]:
-        yield {"id":s["id"],"name":s["nome"],"aliases":[],"domains":["Magia e poderes"],"scope":"SPECIAL_AUTHORITY_NOT_ORDINARY_SPELL","definition":s}
+    for s in data["arcane"]["schools"]:
+        yield {**s,"aliases":[],"domains":["Magia e poderes"],"scope":"TRADITION_DESIGN_NOT_OBSERVED"}
     for s in data["arcane"]["index"]:
         yield {**s,"aliases":[],"domains":["Magia e poderes"],"scope":"GRIMOIRE_PROPOSAL_NOT_PERSONAL_REPERTOIRE"}
 def aliases(rows,name,entity=None,domain=None):
@@ -119,7 +122,8 @@ def apply_delta(db,delta,prose,sequence,day,source_sha,spell_ids):
                 if not prior or e["day"]>prior[0] or (e["day"]==prior[0] and (not prior[1] or (e.get("clock") and e["clock"]>=prior[1]))):
                     setstate(db,subject,"last_observed_location",v["location_id"],eid)
             elif kind in ("LEARN","CAST"):
-                setstate(db,subject,("learned:" if kind=="LEARN" else "last_cast:")+v["spell_id"],{"episode":episode,"day":e["day"]},eid)
+                spell="genese" if v["spell_id"]=="CREATION_GENESE" else v["spell_id"]
+                setstate(db,subject,("learned:" if kind=="LEARN" else "last_cast:")+spell,{"episode":episode,"day":e["day"]},eid)
             elif kind in {"ACQUIRE","TRANSFER","STORE","EQUIP","UNEQUIP","CONSUME","LOSE"}:
                 item=v["item_id"];custody=current(db,item,"custody")
                 if custody and custody.get("holder") not in (None,subject) and kind!="ACQUIRE":raise ValueError("Custody contradiction")
@@ -147,7 +151,7 @@ def _sync(root,db_path=None):
         if old and old[0]!=reg_sha:raise ValueError("Registry changed; rebuild graph from verified sources")
         with db:
             seed(db,data);db.execute("INSERT OR REPLACE INTO meta VALUES('registry_sha',?)",(reg_sha,))
-        spells={s["id"] for s in data["arcane"]["index"]+data["arcane"]["special_authorities"]}
+        spells={s["id"] for s in data["arcane"]["index"]}|{"genese","CREATION_GENESE"}
         closures=sorted((load(p) for p in (root/"canon/episodes").glob("*.json")),key=lambda c:c["sequence"])
         for c in closures:
             eid=c["episode_id"];receipt_path=root/"episodes"/eid/"review/preparation_r33.json"
@@ -202,11 +206,19 @@ def validate_submission(root,request,packet,payload):
         with sqlite3.connect(graph.resolve().as_uri()+"?mode=ro",uri=True) as db:
             meta=dict(db.execute("SELECT key,value FROM meta"))
             if json.loads(meta["head"])==request["head"] and meta["registry_sha"]==packet["universal_codex"]["registry_sha256"]:ids.update(r[0] for r in db.execute("SELECT id FROM records"))
-    spell_ids={s["id"] for s in data["arcane"]["index"]+data["arcane"]["special_authorities"]}
+    spell_ids={s["id"] for s in data["arcane"]["index"]}|{"genese","CREATION_GENESE"}
     delta=payload.get("r33_review",{}).get("codex_delta")
     validate_delta(delta,payload["prose"],payload["delivery_id"],payload["metadata"]["day"],ids,spell_ids)
     # A literal mention is not necessarily a physical presence. Explicitly triage focal cast.
     covered={e["entity_id"] for e in delta["events"]}|{n["id"] for n in delta["new_entities"]}
+    # Named dialogue is a candidate identity, not proof of physical location.
+    # Do not silently discard unfamiliar names; require a disposition or a new entity.
+    speakers=set(re.findall(r"(?m)^\s*\*\*([A-ZÀ-ÖØ-Þ][A-ZÀ-ÖØ-Þ0-9 '\-’]{1,44})\s*[—–-]\*\*\s+",payload["prose"]))
+    reviewed_names={norm(n["name"]) for n in delta["new_entities"]}|{norm(u["name"]) for u in delta["unresolved"]}
+    for name in speakers:
+        matches=aliases(rows,name,domain="Personagens")
+        if not ({r["id"] for r in matches}&covered) and norm(name) not in reviewed_names:
+            raise ValueError("Named speaker lacks Codex disposition: "+name)
     unresolved={norm(u["name"]) for u in delta["unresolved"]}
     for f in packet["universal_codex"]["focal"]:
         if not set(f["ids"])&covered and norm(f["name"]) not in unresolved:
@@ -224,10 +236,21 @@ def graph_candidates(root,query,entity=None):
             head=json.loads((Path(root)/"canon/HEAD.json").read_text())
             if json.loads(meta["head"])==head and meta["registry_sha"]==sha:
                 rows=[json.loads(row[0]) for row in db.execute("SELECT body FROM records")]
+                states={}
+                possessions={}
+                for ident,field,v,event in db.execute("SELECT entity_id,field,value,event_id FROM codex_state"):
+                    val=json.loads(v)
+                    if not field.startswith("knowledge:"):states.setdefault(ident,{})[field]={"value":val,"event_id":event}
+                    if field=="custody" and val.get("holder"):possessions.setdefault(val["holder"],[]).append({"item_id":ident,"custody":val,"event_id":event})
                 for r in rows:
-                    r["closed_state"]={field:{"value":json.loads(v),"event_id":event} for field,v,event in db.execute("SELECT field,value,event_id FROM codex_state WHERE entity_id=? AND field=?",(r["id"],)) if not field.startswith("knowledge:")}
+                    r["closed_state"]=states.get(r["id"],{})
+                    if possessions.get(r["id"]):r["observed_inventory"]=possessions[r["id"]]
     exact=aliases(rows,query,entity)
-    if exact or entity:return exact
+    if exact or entity:
+        from .r26_magic_catalog import get_spell
+        for r in exact:
+            if r.get("scope")=="GRIMOIRE_PROPOSAL_NOT_PERSONAL_REPERTOIRE":r["definition"]=get_spell(r["id"])
+        return exact
     words=set(norm(query).split())
     return [r for r in rows if set(norm(r["name"]).split()) and set(norm(r["name"]).split())<=words][:80]
 if __name__=="__main__":
