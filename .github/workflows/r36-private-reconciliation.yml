@@ -2,7 +2,7 @@ name: R36 private historical reconciliation
 on:
   push:
     branches: ['worldroot/r36-unified-living-engine']
-    paths: ['worldroot/r36_reconciliation.py','worldroot/semantic_local.py','audit/run_r36_reconciliation.py','tests/test_r36_reconciliation.py','.github/workflows/r36-private-reconciliation.yml']
+    paths: ['worldroot/r36_reconciliation.py','worldroot/r36_contextual.py','tests/test_r36_contextual.py','worldroot/semantic_local.py','audit/run_r36_reconciliation.py','tests/test_r36_reconciliation.py','.github/workflows/r36-private-reconciliation.yml']
 permissions:
   contents: read
 jobs:
@@ -28,6 +28,8 @@ jobs:
           python-version: '3.12'
       - name: All regression tests
         run: python -m unittest discover -s tests -q
+      - name: Check independent local executor availability (no inference)
+        run: python -c 'import json; from worldroot.semantic_local import availability; print(json.dumps(availability()))'
       - name: Verify exact historical sources and reconcile event candidates
         run: |
           PYTHONPATH=. python audit/run_r36_reconciliation.py archive ledger/editorial/codex-staging/results/exact-context-ledger-v1 "$RUNNER_TEMP/r36-reconciliation"

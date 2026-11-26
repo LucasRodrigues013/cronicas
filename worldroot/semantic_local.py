@@ -20,7 +20,19 @@ def revision(model,api=local_api):
     rows=[m for m in api("/api/tags")["models"] if m.get("name")==model or m.get("model")==model]
     if len(rows)!=1 or not re.fullmatch(r"(?:sha256:)?[0-9a-f]{64}",rows[0].get("digest","")):raise ValueError("Install/pin an explicit local model first")
     if "cloud" in str(rows[0].get("details",{})).casefold() or rows[0].get("remote_model"):raise ValueError("Remote model forbidden")
-    return rows[0]["digest"]
+    return rows[0]["digest"].removeprefix("sha256:")
+def availability(api=local_api):
+    """Read-only probe; do not download, call inference or expose model names."""
+    try: rows=api("/api/tags")["models"]
+    except Exception as e:return {"status":"UNAVAILABLE","error_type":type(e).__name__,"distinct_local_digests":0,"inference_executed":False}
+    digests=set()
+    for row in rows:
+        name=row.get("name") or row.get("model")
+        if not isinstance(name,str):continue
+        try:digests.add(revision(name,api))
+        except (ValueError,KeyError,TypeError):continue
+    return {"status":"MODELS_PRESENT_NOT_CERTIFIED" if len(digests)>=2 else "INSUFFICIENT_LOCAL_MODELS","distinct_local_digests":len(digests),"inference_executed":False}
+
 def response_schema(job):
     props={"original_id":{"type":"integer","enum":[t["original_id"] for t in job["targets"]]},"entity_id":{"type":"string"},"field":{"type":"string"},"verdict":{"type":"string","enum":sorted(VERDICTS)},"reason":{"type":"string"},"claim":{"type":"string"},"evidence":{"type":"string"},"current_state":{"type":"boolean","enum":[False]}}
     item={"type":"object","properties":props,"required":list(props),"additionalProperties":False}

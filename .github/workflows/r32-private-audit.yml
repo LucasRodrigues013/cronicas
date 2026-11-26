@@ -1,5 +1,8 @@
 name: WORLDROOT R32 focused private audit
 on:
+  push:
+    branches: ['worldroot/r36-unified-living-engine']
+    paths: ['worldroot/**','tests/**','audit/**','.github/workflows/r32-private-audit.yml']
   pull_request:
     branches: ['worldroot/audit-r30-live-100']
     paths:

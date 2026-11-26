@@ -84,7 +84,10 @@ def run(root,ledger,out,expected=9229):
     with tempfile.TemporaryDirectory() as t:
         copy=Path(t)/"archive";shutil.copytree(root,copy,ignore=shutil.ignore_patterns(".git"))
         ratify(copy,"LVI-C09-PII-D580-AUTHOR-SOURCE","LVI-C09-PII-D580-RATIFICATION-20261126.json")
-        all_links=reconcile_events([g.load(p) for p in (copy/"canon/episodes").glob("*.json")],rows)
+        all_closures=[g.load(p) for p in (copy/"canon/episodes").glob("*.json")]
+        all_links=reconcile_events(all_closures,rows)
+        from .r36_contextual import expand,metrics as context_metrics
+        packets=expand(all_closures,rows,sources,all_links)
     out.mkdir(parents=True,exist_ok=False)
     counts=Counter(r["route"] for r in all_links)
     tasks=list(jobs(rows))
@@ -95,7 +98,8 @@ def run(root,ledger,out,expected=9229):
        "jobs":len(tasks),"targets":targets,"production_events":len(links),"disposable_events":len(all_links),
        "event_routes":dict(counts),"candidate_row_links":sum(len(r["candidate_ids"]) for r in all_links),
        "independently_reviewed":0,"canon_promotions":0,"semantic_certification":False}
-    for name,obj in (("event-candidates.json",all_links),("metrics.json",metrics)):
+    metrics["contextual"]=context_metrics(packets)
+    for name,obj in (("event-candidates.json",all_links),("event-review-packets.json",packets),("metrics.json",metrics)):
         (out/name).write_text(json.dumps(obj,ensure_ascii=False,sort_keys=True),encoding="utf-8")
     with (out/"jobs.jsonl").open("x",encoding="utf-8") as f:
         for j in tasks:f.write(json.dumps(j,ensure_ascii=False,separators=(",",":"))+"\n")

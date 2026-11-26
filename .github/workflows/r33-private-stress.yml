@@ -1,7 +1,7 @@
 name: WORLDROOT R33 stress and reliability
 on:
   push:
-    branches: ['worldroot/r31-deep-recovery']
+    branches: ['worldroot/r31-deep-recovery', 'worldroot/r36-unified-living-engine']
     paths: ['worldroot/**','tests/**','audit/**','.github/workflows/r33-private-stress.yml']
   pull_request:
     branches: ['worldroot/audit-r30-live-100', 'main']
