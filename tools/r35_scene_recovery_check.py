@@ -26,6 +26,7 @@ assert "chr-durghan-uzgor" in s[0]["direct_ids"]
 assert "place-pedreira-oriental-arvendell" in s[1]["direct_ids"]
 assert "chr-elion-genese" in s[2]["direct_ids"]
 assert "chr-durghan-uzgor" not in {x["id"] for x in s[3]["records"]}
+assert "halvern-region" in s[3]["direct_ids"], s[3]["ambiguities"]
 assert all(len(x["records"])<=24 for x in s)
 elion=next(x for x in s[2]["records"] if x["id"]=="chr-elion-genese");assert "origin" not in elion["profile"]
 with tempfile.TemporaryDirectory() as tmp:
