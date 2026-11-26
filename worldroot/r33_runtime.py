@@ -77,6 +77,11 @@ def prepare_from_request(root,request):
         from .r34_experience import validate_intent
         packet["r34_intent"] = request["r34_intent"]
         packet["r34_intent_structure"] = validate_intent(request)
+    if "r35_plan" in request:
+        from .r35_longform import validate_plan
+        if "r34_intent" not in packet:raise ValueError("R35 requires R34 intent")
+        packet["r35_plan"]=request["r35_plan"]
+        packet["r35_plan_structure"]=validate_plan(request,packet["authority"]["choice"])
     packet.pop("preparation_sha256")
     packet["request_sha256"]=digest(request)
     packet["preparation_sha256"]=digest(packet)
@@ -106,13 +111,19 @@ def verify_submission(root,head,payload):
         if v["status"]=="applied" and (not isinstance(v.get("evidence"),str) or len(v["evidence"].split())<4 or v["evidence"] not in prose):raise ValueError("Missing literal literary evidence: "+k)
     r=release_review(root,head,payload)
     extra={}
-    if payload.get("metadata",{}).get("worldroot_revision")==34 or "r34_review" in payload:
-        if payload.get("metadata",{}).get("worldroot_revision")!=34:raise ValueError("R34 review requires revision 34 metadata")
+    if payload.get("metadata",{}).get("worldroot_revision") in (34,35) or "r34_review" in payload:
+        if payload.get("metadata",{}).get("worldroot_revision") not in (34,35):raise ValueError("R34 review requires revision 34 or 35 metadata")
         from .r34_experience import validate_intent,validate_delivery
         if "r34_intent" not in packet or packet["r34_intent"]!=request.get("r34_intent"):raise ValueError("R34 intent must be bound before prose")
         validate_intent(request)
         extra["r34"] = validate_delivery(request,payload)
     elif "r34_intent" in packet:raise ValueError("R34 preparation requires R34 delivery")
+    if payload.get("metadata",{}).get("worldroot_revision")==35 or "r35_review" in payload:
+        from .r35_longform import validate_plan,validate_delivery
+        if payload.get("metadata",{}).get("worldroot_revision")!=35 or "r35_plan" not in packet or packet["r35_plan"]!=request.get("r35_plan"):raise ValueError("R35 plan must be bound before prose")
+        validate_plan(request,packet["authority"]["choice"])
+        extra["r35"]=validate_delivery(root,request,payload,packet["authority"]["choice"])
+    elif "r35_plan" in packet:raise ValueError("R35 preparation requires R35 delivery")
     return {**extra,"schema":"worldroot-r33-receipt-v1","preparation_sha256":recorded,"request_sha256":packet["request_sha256"],"source_head_sha256":digest(head),"choice_sha256":packet["authority"]["choice_sha256"],"prose_sha256":hashlib.sha256(prose.encode()).hexdigest(),"r32":r,"reviews":reviews,"canon_changed":False,"semantic_certification":False}
 def verify_history(root):
     """Read back archived R33 receipts, their requests, preparations and immutable prose.
@@ -129,8 +140,13 @@ def verify_history(root):
         if receipt.get("source_sha256")!=manifest["original_readback_sha256"] or receipt.get("prose_sha256")!=hashlib.sha256(draft.prose.encode()).hexdigest():raise ValueError("Historic prose mismatch")
         if "r34" in receipt:
             inbox=read(root/"inbox"/(ident+".json"))
-            if inbox.get("metadata",{}).get("worldroot_revision")!=34 or receipt.get("r34_input_sha256")!=digest(inbox.get("r34_review")) or prep.get("r34_intent")!=request.get("r34_intent"):
+            if inbox.get("metadata",{}).get("worldroot_revision") not in (34,35) or receipt.get("r34_input_sha256")!=digest(inbox.get("r34_review")) or prep.get("r34_intent")!=request.get("r34_intent"):
                 raise ValueError("Historic R34 intent/review mismatch")
+        if "r35" in receipt:
+            from .longform_segments import verify_longform_segments
+            inbox=read(root/"inbox"/(ident+".json"))
+            if inbox.get("metadata",{}).get("worldroot_revision")!=35 or receipt.get("r35_input_sha256")!=digest(inbox.get("r35_review")) or prep.get("r35_plan")!=request.get("r35_plan") or not verify_longform_segments(root,ident,inbox)["verified"]:
+                raise ValueError("Historic R35 plan/review/segments mismatch")
         count+=1
     return {"verified_r33_receipts":count,"canon_changed":False}
 

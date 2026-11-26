@@ -184,7 +184,7 @@ def experience_cards(prose: str, root: Path, head: dict, packet=None) -> dict:
             "semantic_certification":False}
 
 def choice_prompt(episode_id: str, option: int, free_text: str="", *, revision=VERSION) -> str:
-    if revision not in (30,34):raise ValueError("Unsupported choice revision")
+    if revision not in (30,34,35):raise ValueError("Unsupported choice revision")
     if not re.fullmatch(r"[A-Za-z0-9_-]{3,128}",episode_id) or type(option) is not int or option not in range(1,6):
         raise ValueError("Invalid episode/option")
     if not isinstance(free_text,str) or len(free_text)>2048 or (option==5 and not free_text.strip()):
@@ -238,7 +238,7 @@ def review(prose: str, root: Path, head: dict, full_text=None, cards=None, exper
     return {"status":"ADVISORY_ONLY","metrics":m,"notices":notes,
             "causality":causal_review(prose,root,head,cards),
             "experience_review":experience_cards(prose,root,head,experience),
-            "choice_contract":choice_review(full_text,revision=34 if "WORLDROOT R34" in full_text[:2000] else VERSION) if isinstance(full_text,str) else None,
+            "choice_contract":choice_review(full_text,revision=35 if "WORLDROOT R35" in full_text[:2000] else 34 if "WORLDROOT R34" in full_text[:2000] else VERSION) if isinstance(full_text,str) else None,
             "literary_certification":False,"canon_changed":False}
 
 def receipt(prose,root,head,full_text=None,cards=None,experience=None):

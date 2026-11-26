@@ -83,6 +83,7 @@ def render_opening(metadata,packet):
     require(set(packet)==set(fields),"R34 opening fields incomplete")
     p={k:safe(packet[k]) for k in fields}
     part=metadata.get("part");chapter=metadata.get("chapter");day=metadata.get("day")
+    version=35 if metadata.get("worldroot_revision")==35 else 34
     parts=("I","II","III","IV","V")
     require(part in parts and type(chapter) is int and chapter>0 and type(day) is int and day>0,"R34 invalid episode metadata")
     require(p["book_title"].casefold().startswith(str(metadata.get("book","")).casefold()+" — "),"R34 book title mismatch")
@@ -91,7 +92,7 @@ def render_opening(metadata,packet):
     progress="".join('    <box flex={1} height={5} radius="full" background="'+("#64748B" if n<=index else "surface-tertiary")+'"/>\n' for n in range(5)).rstrip()
     return "\n".join([
         '<box align="center" gap={2}>',
-        '  <caption>CRÔNICAS DE UM NOVO MUNDO · WORLDROOT R34</caption>',
+        '  <caption>CRÔNICAS DE UM NOVO MUNDO · WORLDROOT R'+str(version)+'</caption>',
         '  <title size="lg" textAlign="center">'+p["book_title"]+'</title>',
         '  <title size="lg" textAlign="center">CAPÍTULO '+str(chapter)+' — '+p["chapter_title"]+'</title>',
         '  <caption>PARTE '+part+' DE V · DIA '+str(day)+'</caption>',
@@ -157,7 +158,7 @@ def validate_delivery(request,payload):
         evidence=d.get("evidence")
         require(isinstance(evidence,str) and len(evidence.split())>=4,"R34 literal evidence required: "+name)
         if name=="design":
-            require(evidence in payload["full_text"] and "WORLDROOT R34" in payload["full_text"][:2000],"R34 design/header mismatch")
+            require(evidence in payload["full_text"] and ("WORLDROOT R35" if payload.get("metadata",{}).get("worldroot_revision")==35 else "WORLDROOT R34") in payload["full_text"][:2000],"R34/R35 design/header mismatch")
             opening=render_opening(payload.get("metadata",{}),review.get("opening"))
             require(opening in payload["full_text"][:len(opening)+400],"R34 rendered opening differs")
             check=presentation_preflight(payload["full_text"],min_scenes=1,min_named_turns=0)

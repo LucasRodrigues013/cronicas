@@ -1,7 +1,7 @@
 {
   "schema": "worldroot-editorial-policy-v1",
   "project": "CRONICAS_DE_UM_NOVO_MUNDO",
-  "version": 20,
+  "version": 21,
   "reviewed_at": "2026-11-25",
   "approved_scope": "AUTHOR_APPROVED_EDITORIAL_DYNAMICS_NOT_NARRATED_CANON",
   "source_of_truth": "main/worldroot/editorial_policy.json",
@@ -235,6 +235,14 @@
       "transcript_line": null,
       "quote": "Eu só senti que o design e também a questão da mulher +18 é falar de forma nua sobre peito, bunda, perna e assunto não apareceu.",
       "reference": "docs/r34-living-character-experience.md"
+    },
+    {
+      "id": "S33",
+      "kind": "AUTHOR_APPROVAL",
+      "at": "2026-11-25",
+      "transcript_line": null,
+      "quote": "A gente precisa voltar a ter qualidade narrativa igual ela tava. A gente corrigiu umas coisas e perdeu muitas outras. A gente não pode ter isso.",
+      "reference": "docs/r35-longform-restoration.md"
     }
   ],
   "rules": [
@@ -2350,6 +2358,96 @@
       "core": true,
       "evidence": [
         "S32"
+      ],
+      "active": true
+    },
+    {
+      "id": "P121",
+      "title": "Restaurar profundidade narrativa",
+      "directive": "Partes regulares: objetivo 9–11 mil palavras de prosa real, mínimo 8800; especial 10–13 mil, mínimo 9500; Parte V 12–15 mil, mínimo 11000. A exceção curta exige autorização explícita do autor vinculada à escolha real. Não contar interface, títulos, nomes de falantes ou repetição; não criar enchimento.",
+      "tags": [
+        "R35",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S33"
+      ],
+      "active": true
+    },
+    {
+      "id": "P122",
+      "title": "Produção longa segmentada",
+      "directive": "Planejar orçamento por cena e composição em 2–6 segmentos finais verificáveis, preservar ordem e texto integral. Escrever, revisar e expandir antes de congelar os segmentos; arquivar apenas episódio completo, nunca prometer escrita futura ou substituir por resumo.",
+      "tags": [
+        "R35",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S33"
+      ],
+      "active": true
+    },
+    {
+      "id": "P123",
+      "title": "Cenas vividas e cadência",
+      "directive": "Desenvolver experiência, ação, reação e mudança ou repouso significativo em cada cena, conforme contexto. Variar diálogos, parágrafos, pausas, perspectivas, sentidos e ritmo. Não impor conflito, quantidade de cenas ou frases; respeitar vitórias e GÊNESE plena.",
+      "tags": [
+        "R35",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S33"
+      ],
+      "active": true
+    },
+    {
+      "id": "P124",
+      "title": "Recompensas e relações em profundidade",
+      "directive": "Tratar emoção, beleza, identidade física concreta de adultos, humor, flertes, intimidade não gráfica, amizades e maravilhamento com relevância própria. Planejar e revisar oportunidades com mais de um momento concreto, sem reduzir a pessoa a um detalhe ou forçar erotização; preservar idades, agência, fidelidade e continuidade. Parte V entrega clímax, reação e consequência sem antecipar tramas.",
+      "tags": [
+        "R35",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S33"
+      ],
+      "active": true
+    },
+    {
+      "id": "P125",
+      "title": "Regressão literária real",
+      "directive": "Comparar com episódios históricos pertinentes e com o padrão anterior à contração. Testar corpus completo em modo somente leitura, medir volume, cadência e repetição, revisar pares por emoção, identidade, aventura e efeito. A aprovação estrutural não certifica qualidade artística; registrar limitações e não alterar episódios, escolhas ou HEAD antigos.",
+      "tags": [
+        "R35",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S33"
       ],
       "active": true
     }

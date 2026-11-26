@@ -9,7 +9,7 @@ def safe(s):
     if not isinstance(s,str) or not s.strip() or any(c in s for c in ("<",">","{","}","\n")):raise ValueError("Unsafe or empty display string")
     return s.strip()
 def render_choices(packet,episode_id,*,revision=30):
-    if revision not in (30,34):raise ValueError("Unsupported choice revision")
+    if revision not in (30,34,35):raise ValueError("Unsupported choice revision")
     if arc_review(packet)["errors"]:raise ValueError("Invalid four-route packet")
     if not re.fullmatch(r"[A-Za-z0-9_-]{3,128}",episode_id):raise ValueError("Invalid episode ID")
     # Exact same visual hierarchy, size and button variant for all four.
@@ -22,7 +22,7 @@ def render_choices(packet,episode_id,*,revision=30):
     before,after=choice_prompt(episode_id,5,"__FREE_TEXT__",revision=revision).split("__FREE_TEXT__")
     free=json.dumps(before,ensure_ascii=False)+"+acaoLivre.trim()+"+json.dumps(after,ensure_ascii=False)
     rows.extend(['  <box gap={2}>','    **5 — AÇÃO LIVRE**','    <textarea value={acaoLivre} onChange={setAcaoLivre} rows={3} placeholder="Descreva suas decisões..."/>',f'    <button color="secondary" variant="outline" disabled={{!acaoLivre.trim()}} onClick={{() => GenUI.issueNewTurn({free})}}>Confirmar ação livre</button>','  </box>','</box>'])
-    if revision==34:
+    if revision in (34,35):
         rows[1]='<box gap={3}>'
         rows.insert(1,'<caption>Quatro caminhos · consequências distintas · sua decisão</caption>')
         rows=[line.replace("**Recompensa possível:**","**O que pode mudar:**").replace("**Risco:**","**O que está em jogo:**") for line in rows]
