@@ -1,0 +1,1922 @@
+{
+  "schema": "worldroot-r36-book-i-stage-e-editorial-lot-v1",
+  "book": 1,
+  "stage": "E",
+  "lot": "E04",
+  "status": "LEDGER_EDITORIAL_PASS_COMPLETE_NOT_HOMOLOGATED",
+  "engine_commit": "19d4be7759ba7c0d68adad8eb969414f78caaef3",
+  "previous_lot": {
+    "commit": "98bfcbd8222010291761050dba2ddb897a7677b0",
+    "blob": "2274656190d0285562050c9f6e4d1db258fe408b"
+  },
+  "source": {
+    "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+    "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+    "lines": [
+      1,
+      40845
+    ],
+    "narrative_days": [
+      1,
+      90
+    ],
+    "chapter_numbers": 38,
+    "raw_words": 171829,
+    "prompts": 44,
+    "responses": 44
+  },
+  "ledger_batch_blob": "67438fee543879e52413a6c6fd27a2926b8e171e",
+  "reviewer": {
+    "executor": "ChatGPT current editorial session",
+    "independent_models": 0
+  },
+  "ledger_reviews": [
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 17,
+      "anchor": "Vou pesquisar o universo de Reincarnated With an OP Skill e preparar a base do nosso RPG: mundo, sistema de poderes, limites, consequências e personagens que terão vontade própria. Vou preservar o que você já criou quando enviar os próximos dados, sem reiniciar a história à força.",
+      "anchor_sha256": "713ae53ecf7b9fce20ff16fa8c819b508f04ce98fb92a5ce98fe939aafc7405f",
+      "source_role": "META",
+      "decisions": [
+        {
+          "original_id": 1,
+          "entity_id": "sistema",
+          "field": "powers",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Preparação e resumo de retomada do RPG, não manifestação do Sistema ou capacidades da Legião.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 227,
+      "anchor": "Agora temos as 25 imagens e o ponto exato de continuidade: o chefe orc foi capturado vivo, sua legião venceu o confronto inicial e o capitão aguarda uma decisão sobre perseguir os sobreviventes. Vou consolidar também as limitações já reveladas da habilidade CREATION — especialmente a impossibilidade de criar energia infinita — e retomar a história daí, sem reescrever suas escolhas.",
+      "anchor_sha256": "00681f87aefa2702a416c1b0deab68458ebe2a6c03722055eb354db8cdf4418d",
+      "source_role": "META",
+      "decisions": [
+        {
+          "original_id": 2,
+          "entity_id": "legiao",
+          "field": "role",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Preparação e resumo de retomada do RPG, não manifestação do Sistema ou capacidades da Legião.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 3,
+          "entity_id": "legiao",
+          "field": "powers",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Preparação e resumo de retomada do RPG, não manifestação do Sistema ou capacidades da Legião.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 4,
+          "entity_id": "legiao",
+          "field": "capabilities",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Preparação e resumo de retomada do RPG, não manifestação do Sistema ou capacidades da Legião.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 301,
+      "anchor": "O capitão da sua legião, cuja armadura escura está coberta de sangue esverdeado, aproxima-se. A crista transversal de seu elmo balança suavemente com o vento.",
+      "anchor_sha256": "e8d550cfdc86c70bf3e5e9f4eaea198cbe347018bcadd96bf0551a05b0cab616",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 5,
+          "entity_id": "legiao",
+          "field": "appearance",
+          "verdict": "PARTIAL",
+          "reason": "Armadura escura ensanguentada e crista do elmo descrevem o capitão, não todos os legionários.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 6,
+          "entity_id": "legiao",
+          "field": "role",
+          "verdict": "PARTIAL",
+          "reason": "Narrador identifica capitão da Legião na cena, sem descrever função da organização.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 555,
+      "anchor": "— E aquele chifre pode não ser orc. Pode ser reconhecimento avançado dessa tal Bandeira Cinzenta… ou de algum poder local reagindo ao combate.",
+      "anchor_sha256": "54f2226d444635b988de0c028a4d78d88e13354c551f54d4661182a048e2b425",
+      "source_role": "HYPOTHESIS",
+      "decisions": [
+        {
+          "original_id": 7,
+          "entity_id": "bandeira-cinzenta",
+          "field": "powers",
+          "verdict": "HYPOTHESIS",
+          "reason": "Possível identificação do chifre com Bandeira Cinzenta; não demonstra poderes ou comportamento da organização.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 8,
+          "entity_id": "bandeira-cinzenta",
+          "field": "behavior",
+          "verdict": "HYPOTHESIS",
+          "reason": "Possível identificação do chifre com Bandeira Cinzenta; não demonstra poderes ou comportamento da organização.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 570,
+      "anchor": "Observando a Legião.",
+      "anchor_sha256": "29501013bf130b3d4bab458cf21d725b1faef7a1cb5ed970fcf9c1289a1352c3",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 9,
+          "entity_id": "legiao",
+          "field": "behavior",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Observadores são sujeitos da ação; Legião é objeto observado.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 619,
+      "anchor": "Mandar a Legião formar uma linha monumental visível para os cavaleiros e fazer o chefe orc se ajoelhar diante de você publicamente. Depois, ordenar que o capitão convoque os observadores a descerem e falarem sob seus termos.",
+      "anchor_sha256": "9a5bf6b9a8795211fd9a403dfbf2af5c745b941ea5bc4fe15b9144c3da1cd1ac",
+      "source_role": "OPTION",
+      "decisions": [
+        {
+          "original_id": 10,
+          "entity_id": "legiao",
+          "field": "behavior",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Alternativa radical ainda não realizada.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 771,
+      "anchor": "— Precisaremos de quatro coisas: observadores, informantes, mensageiros e alguém para analisar as informações. Inicialmente, podemos fazer tudo isso dentro da Legião. No futuro, precisaremos de comerciantes, viajantes, moradores e pessoas que tenham motivos para conversar conosco.",
+      "anchor_sha256": "d241e732eeaf691ecbdab55a0133dae8257ab160dde96781fa7bb210082407ce",
+      "source_role": "PLAN",
+      "decisions": [
+        {
+          "original_id": 11,
+          "entity_id": "legiao",
+          "field": "population",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Proposta de rede de inteligência, não número de pessoas.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 1048,
+      "anchor": "VARO observa sua reação ao relatório.",
+      "anchor_sha256": "0ff9d5766a3050083906b2de5395bc904717fcada85b1a59464aea16c0474690",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 12,
+          "entity_id": "varo",
+          "field": "behavior",
+          "verdict": "SUPPORTED",
+          "reason": "Varo observou a reação de Lucas ao relatório.",
+          "claim": "Varo observou a reação de Lucas ao relatório.",
+          "evidence": "VARO observa sua reação ao relatório.",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 1183,
+      "anchor": "Conselho estratégico de VARO",
+      "anchor_sha256": "4989cd7f691e776603c38d397901e078eadba02f80853c082cd2c331df02b2a2",
+      "source_role": "META",
+      "decisions": [
+        {
+          "original_id": 13,
+          "entity_id": "varo",
+          "field": "governance",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Cabeçalho não comprova atribuição de governo.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 1187,
+      "anchor": "Pontos favoráveis: a Legião continua numericamente preservada, controla uma posição defensiva e demonstrou capacidade de derrotar uma força orc superior em número.",
+      "anchor_sha256": "632242ca27f193d7d09208c08554227987924e787f796a8e1b4db24e287bbb73",
+      "source_role": "SUMMARY",
+      "decisions": [
+        {
+          "original_id": 14,
+          "entity_id": "legiao",
+          "field": "capabilities",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Avaliação estratégica histórica da força, não nova capacidade comprovada pela âncora.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 1201,
+      "anchor": "Ele olha para o campo onde a Legião repousa.",
+      "anchor_sha256": "e4e6277c79961b80ac4004a038a34ad342772bb5721b54a15116a8c1ae6d7d5d",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 15,
+          "entity_id": "legiao",
+          "field": "location",
+          "verdict": "PARTIAL",
+          "reason": "Campo observado onde a Legião repousa; não localização atual ou coordenadas.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 1239,
+      "anchor": "Estou continuando a narrativa com consequências imediatas: a criação gera Kael, consome quase toda a reserva, deixa o conjurador incapacitado e altera a tensão diplomática. Também vou preservar incertezas sobre orcs, humanos, patrulheiros e alianças, sem decidir tudo antecipadamente.",
+      "anchor_sha256": "fb16ad9317b204e228ddb8ba1c353e5f4ffbb45009858fe5adf9bf18f4f726bb",
+      "source_role": "META",
+      "decisions": [
+        {
+          "original_id": 16,
+          "entity_id": "kael",
+          "field": "lifecycle",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Preparação da criação de Kael, não cena executada.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 1323,
+      "anchor": "O orc observa VARO e os soldados atrás dele.",
+      "anchor_sha256": "e2f0302424ce7a5642bda62ccb27afef03a40f12f34fe93bd67bc1af1f665a43",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 17,
+          "entity_id": "varo",
+          "field": "behavior",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Orc observa Varo; não comportamento de Varo.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 1459,
+      "anchor": "VARO observa o recém-chegado com interesse.",
+      "anchor_sha256": "fddff8b7eadaa0e76d6a04eb79a060b8116c9a512c7c7ae3fa546759f2c5838c",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 18,
+          "entity_id": "varo",
+          "field": "location",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Varo observa recém-chegado, sem local explícito.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 1489,
+      "anchor": "Criação concluída: KAEL, cavaleiro negro e assessor estratégico.",
+      "anchor_sha256": "c757a673519022e9c9e923e5e7f6e32df02c254426828b64ecbc5af1ab33fcbd",
+      "source_role": "SUMMARY",
+      "decisions": [
+        {
+          "original_id": 19,
+          "entity_id": "kael",
+          "field": "lifecycle",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Quadro de criação concluída, necessita cena de nascimento para admissão.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 1537,
+      "anchor": "VARO - Comandante militar",
+      "anchor_sha256": "eccb74eb9947518cc646c2deb9c6f887da6140ff0f8b8114bc709fe3d3813852",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 20,
+          "entity_id": "varo",
+          "field": "role",
+          "verdict": "PARTIAL",
+          "reason": "Ficha provisória identifica Varo como comandante militar; escopo e cronologia precisam ser preservados.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 1569,
+      "anchor": "VARO o recebe antes que chegue à mesa.",
+      "anchor_sha256": "45d0a940a8cc4d6125e92c892d7fed322d003a8e3522f410e4815fb0f9e5a43e",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 21,
+          "entity_id": "varo",
+          "field": "location",
+          "verdict": "PARTIAL",
+          "reason": "Varo recebeu soldado antes da mesa, sem local geográfico explícito.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 1694,
+      "anchor": "Estou dividindo a operação: lidero pessoalmente a busca, deixo o acampamento sob comando de um oficial confiável e mantenho KAEL encontrando o emissário a distância segura. Não revelarei nossa fragilidade nem tratarei o contato como aliança.",
+      "anchor_sha256": "46617d0be77f52acd109421599ecb8263928db65c2c79f552923d6cb585d3b5e",
+      "source_role": "META",
+      "decisions": [
+        {
+          "original_id": 22,
+          "entity_id": "kael",
+          "field": "role",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Preparação do plano de operação, não papel executado.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 1736,
+      "anchor": "— VARO, quero que você assuma pessoalmente a operação de busca. Discrição acima de velocidade. Não quero uma batalha por orgulho. Quero nossos homens de volta.",
+      "anchor_sha256": "8585b7793bee66726f1ed25d72177dc317498766f17320fa9b9241c97b210b79",
+      "source_role": "PLAN",
+      "decisions": [
+        {
+          "original_id": 23,
+          "entity_id": "varo",
+          "field": "capabilities",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Ordem para Varo conduzir busca, não capacidade verificada pela execução.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 1744,
+      "anchor": "— Você conduzirá a conversa com o emissário. Descubra quem representa, onde estamos e o que sabe sobre a Bandeira Cinzenta. Não revele minha condição física, os limites do meu poder ou nossa intenção de estabelecer uma nação. Ainda não.",
+      "anchor_sha256": "af94a4f99c3ce22917fdf835a848a9b5dee9387ec893f9a16ac1332846a9413d",
+      "source_role": "PLAN",
+      "decisions": [
+        {
+          "original_id": 24,
+          "entity_id": "bandeira-cinzenta",
+          "field": "powers",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Ordem de investigação e proteção de segredo, não poderes da Bandeira.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 1816,
+      "anchor": "— KAEL. Represento nosso comandante.",
+      "anchor_sha256": "8323f5a60bd870f970e5a9f045e256afc49eaa1bb8a1477a4de0ec1015d13e65",
+      "source_role": "REPORT",
+      "decisions": [
+        {
+          "original_id": 25,
+          "entity_id": "kael",
+          "field": "role",
+          "verdict": "REPORT_ONLY",
+          "reason": "Kael se apresenta como representante de seu comandante; autorrelato de função.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 1818,
+      "anchor": "EDRAN examina a armadura negra do diplomata.",
+      "anchor_sha256": "ba9853d015b0b74d1f208b32ce9866297011babd5006049570d62cbd92313856",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 26,
+          "entity_id": "edran",
+          "field": "appearance",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Armadura pertence ao diplomata Kael, não a Edran.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 1834,
+      "anchor": "KAEL sorri discretamente.",
+      "anchor_sha256": "b7b10ce8a0e6c28ccfeba793a31ec1e78736bd1e1d5bb4c1fb3191b601fbaf40",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 27,
+          "entity_id": "kael",
+          "field": "voice",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Sorriso não descreve voz.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 1856,
+      "anchor": "— Esta passagem é conhecida como Arvendell. Ao oeste ficam as terras sob influência do Marquesado de Thalor. Ao norte, antigas fortificações abandonadas. A leste, estradas de mineração e territórios onde nossa autoridade é contestada.",
+      "anchor_sha256": "792464135acbefeacab58d473db3d0c682e70f3cdf27880aef4d3a7bb61dbee4",
+      "source_role": "REPORT",
+      "decisions": [
+        {
+          "original_id": 28,
+          "entity_id": "arvendell",
+          "field": "governance",
+          "verdict": "REPORT_ONLY",
+          "reason": "Edran apresenta mapa e reivindicações regionais; relato de geografia e autoridade contestada, não comprova ciclo de vida dos lugares.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 29,
+          "entity_id": "arvendell",
+          "field": "lifecycle",
+          "verdict": "REPORT_ONLY",
+          "reason": "Edran apresenta mapa e reivindicações regionais; relato de geografia e autoridade contestada, não comprova ciclo de vida dos lugares.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 30,
+          "entity_id": "thalor",
+          "field": "governance",
+          "verdict": "REPORT_ONLY",
+          "reason": "Edran apresenta mapa e reivindicações regionais; relato de geografia e autoridade contestada, não comprova ciclo de vida dos lugares.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 31,
+          "entity_id": "thalor",
+          "field": "lifecycle",
+          "verdict": "REPORT_ONLY",
+          "reason": "Edran apresenta mapa e reivindicações regionais; relato de geografia e autoridade contestada, não comprova ciclo de vida dos lugares.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 1870,
+      "anchor": "KAEL percebe a precisão da resposta.",
+      "anchor_sha256": "f3154ac2e9d51e532f3a5495c5c6acca1d0dac0fa02e82675dbfc2bed5cfe57d",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 32,
+          "entity_id": "kael",
+          "field": "relationships",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Perceber precisão de resposta não define relação pessoal.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 1878,
+      "anchor": "KAEL não sorri dessa vez.",
+      "anchor_sha256": "8d17cee86663e764e99cbe75be46ffe47c560b6f01d26936d0dd7d071a47756a",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 33,
+          "entity_id": "kael",
+          "field": "voice",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Ausência de sorriso não define voz.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 1894,
+      "anchor": "— Nosso comandante aceitará discutir passagem e permanência temporária. Mas vocês não poderão construir uma fortaleza ou reivindicar Arvendell sem negociar com as autoridades locais.",
+      "anchor_sha256": "b4199dde619ee5608ce0cb6b86f2a6234ab460e7b98392cddd28dcf1b0805e56",
+      "source_role": "REPORT",
+      "decisions": [
+        {
+          "original_id": 34,
+          "entity_id": "arvendell",
+          "field": "role",
+          "verdict": "REPORT_ONLY",
+          "reason": "Edran relata condições para permanência, sem conceder reivindicação de Arvendell; não poderes.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 35,
+          "entity_id": "arvendell",
+          "field": "powers",
+          "verdict": "REPORT_ONLY",
+          "reason": "Edran relata condições para permanência, sem conceder reivindicação de Arvendell; não poderes.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 36,
+          "entity_id": "arvendell",
+          "field": "governance",
+          "verdict": "REPORT_ONLY",
+          "reason": "Edran relata condições para permanência, sem conceder reivindicação de Arvendell; não poderes.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 1904,
+      "anchor": "É a primeira vez que um estrangeiro reconhece abertamente que sua pequena Legião poderia, um dia, tornar-se um poder político.",
+      "anchor_sha256": "fdee203cd710eb79200af5d3bfd641d6237d857327a1b73a663b85acee1b4398",
+      "source_role": "HYPOTHESIS",
+      "decisions": [
+        {
+          "original_id": 37,
+          "entity_id": "legiao",
+          "field": "powers",
+          "verdict": "HYPOTHESIS",
+          "reason": "Potencial político futuro não é poder mágico ou soberania já realizada.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 2058,
+      "anchor": "— Os agressores estavam equipados para enfrentar tropas blindadas. Não sabemos se possuem ligação com a Bandeira Cinzenta.",
+      "anchor_sha256": "b4ade47f5273bada7c325cbf4f9b601caf6af0613a38818c8c528363ad3bbfa5",
+      "source_role": "REPORT",
+      "decisions": [
+        {
+          "original_id": 38,
+          "entity_id": "bandeira-cinzenta",
+          "field": "location",
+          "verdict": "REPORT_ONLY",
+          "reason": "Relato de agressão e vínculo expressamente não confirmado, não localização da Bandeira.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 2066,
+      "anchor": "— E isso significa — acrescenta KAEL — que uma retaliação imediata poderia atingir pessoas que não têm relação com o ataque.",
+      "anchor_sha256": "6ffc0c5101d830a5a0cff92da3a147929f775f6297f24f7ada05e10a4b09e61a",
+      "source_role": "HYPOTHESIS",
+      "decisions": [
+        {
+          "original_id": 39,
+          "entity_id": "kael",
+          "field": "powers",
+          "verdict": "HYPOTHESIS",
+          "reason": "Kael prevê possível retaliação indevida, não poder próprio.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 2154,
+      "anchor": "VARO deseja localizar a carroça e estabelecer se uma operação de resgate é viável. Ele considera perigoso permanecer inativo enquanto um legionário pode estar em poder de desconhecidos.",
+      "anchor_sha256": "41cfe57344165bcc7dcb2d2ea955659ae4d2997b132772312e7d7bb35e294911",
+      "source_role": "PLAN",
+      "decisions": [
+        {
+          "original_id": 40,
+          "entity_id": "varo",
+          "field": "powers",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Recomendações estratégicas do conselho, não poderes de Varo ou Kael.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 2156,
+      "anchor": "KAEL considera indispensável manter aberto o contato com a Vigia de Halvern. Um mapa confiável, informações sobre os responsáveis pela pedreira e possíveis canais de negociação poderiam salvar vidas sem necessidade de combate.",
+      "anchor_sha256": "d1e25ad763487cf9c5e6dccfc8f82c37b08fb12f9ff85656d2a025fd9fd1e347",
+      "source_role": "PLAN",
+      "decisions": [
+        {
+          "original_id": 41,
+          "entity_id": "kael",
+          "field": "powers",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Recomendações estratégicas do conselho, não poderes de Varo ou Kael.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 2190,
+      "anchor": "Estou tornando a proposta de Edran limitada e plausível: acampamento provisório por 48 horas, sem soberania ou patrulhas armadas. Também estou mantendo a conspiração da Bandeira Cinzenta ambígua e a recuperação de Kael gradual, sem recarga instantânea.",
+      "anchor_sha256": "5723d2dbbe89379c8ec0048ec80bf07495dad3ce7c82eeb373d311670d9521e6",
+      "source_role": "META",
+      "decisions": [
+        {
+          "original_id": 42,
+          "entity_id": "bandeira-cinzenta",
+          "field": "role",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Preparação editorial de permanência e ameaça ambígua, não papéis ou governo efetivamente constituídos.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 43,
+          "entity_id": "bandeira-cinzenta",
+          "field": "governance",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Preparação editorial de permanência e ameaça ambígua, não papéis ou governo efetivamente constituídos.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 44,
+          "entity_id": "kael",
+          "field": "governance",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Preparação editorial de permanência e ameaça ambígua, não papéis ou governo efetivamente constituídos.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 45,
+          "entity_id": "edran",
+          "field": "role",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Preparação editorial de permanência e ameaça ambígua, não papéis ou governo efetivamente constituídos.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 46,
+          "entity_id": "edran",
+          "field": "governance",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Preparação editorial de permanência e ameaça ambígua, não papéis ou governo efetivamente constituídos.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 2256,
+      "anchor": "VARO franze a testa.",
+      "anchor_sha256": "3d7bcb47a25786c04425cdd37518b05d814daf54abf0ecadaab2f1033bf8ee91",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 47,
+          "entity_id": "varo",
+          "field": "lifecycle",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Franzir a testa não é ciclo de vida.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 2290,
+      "anchor": "Dois legionários permanecem próximos. VARO está ao seu lado. KAEL observa em silêncio.",
+      "anchor_sha256": "fa9f99059f9bfd7e0f1183214247ac522a77590417c2a8fd3566044d91d9e1bd",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 48,
+          "entity_id": "kael",
+          "field": "behavior",
+          "verdict": "SUPPORTED",
+          "reason": "Kael observou em silêncio durante conversa com prisioneiro.",
+          "claim": "Kael observou em silêncio durante conversa com prisioneiro.",
+          "evidence": "Dois legionários permanecem próximos. VARO está ao seu lado. KAEL observa em silêncio.",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 2350,
+      "anchor": "— Se aceitar, responderá a mim e à autoridade militar de VARO. Não haverá saques, massacres de civis nem ataques contra nossos aliados. Traição deliberada terá consequências.",
+      "anchor_sha256": "5ce343a305ea0320bd3c640a4625f6f4546756a450f4ba9831c73f2d6ae26dca",
+      "source_role": "PLAN",
+      "decisions": [
+        {
+          "original_id": 49,
+          "entity_id": "varo",
+          "field": "governance",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Condições propostas para adesão, não subordinação já consumada.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 2400,
+      "anchor": "Até VARO deixa escapar um discreto sorriso.",
+      "anchor_sha256": "cb0e7ba1566993c4e3a0ebb8a1e5744a5067c5ff54f05a79ee990a4616f5f652",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 50,
+          "entity_id": "varo",
+          "field": "voice",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Sorriso não é voz.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 2488,
+      "anchor": "Seus olhos percorrem o ambiente. Ele observa o mapa improvisado, os registros de efetivo, as armas empilhadas e a presença de KAEL.",
+      "anchor_sha256": "1453e946ea796c3c4a1f485c6a2667789ea2378ad3e23408d7e8e8036ed3b0e3",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 51,
+          "entity_id": "kael",
+          "field": "appearance",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Edran observa o ambiente e Kael; não aparência ou comportamento de Kael.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 52,
+          "entity_id": "kael",
+          "field": "behavior",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Edran observa o ambiente e Kael; não aparência ou comportamento de Kael.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 2524,
+      "anchor": "EDRAN examina seu rosto antes de responder.",
+      "anchor_sha256": "0ff625296a23589fe8c867265fbc13f2b2a2db1ab3ec657848402c5bf8444efd",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 53,
+          "entity_id": "edran",
+          "field": "appearance",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Edran examina rosto de Lucas, não descrição de Edran.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 2526,
+      "anchor": "— Estamos na passagem de Arvendell. O Marquesado de Thalor reivindica autoridade sobre a estrada ocidental, seus postos de cobrança e determinadas terras próximas ao rio.",
+      "anchor_sha256": "36c5e94899f50466a59b56b6f25aeb13c0c93fed0e34e4c8172c3e082e8e05ab",
+      "source_role": "REPORT",
+      "decisions": [
+        {
+          "original_id": 54,
+          "entity_id": "thalor",
+          "field": "governance",
+          "verdict": "REPORT_ONLY",
+          "reason": "Edran relata reivindicação de Thalor sobre estrada, postos e terras; não soberania universal.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 2587,
+      "anchor": "EDRAN observa o capitão.",
+      "anchor_sha256": "c5371c793b036a3bc73e98c678500f43661bb002f73a7d6d64c93ed7b6fee6a7",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 55,
+          "entity_id": "edran",
+          "field": "role",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Observar capitão não define função.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 56,
+          "entity_id": "edran",
+          "field": "behavior",
+          "verdict": "SUPPORTED",
+          "reason": "Edran observou o capitão nessa interação.",
+          "claim": "Edran observou o capitão nessa interação.",
+          "evidence": "EDRAN observa o capitão.",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 2625,
+      "anchor": "EDRAN observa você cuidadosamente.",
+      "anchor_sha256": "6b8cc3438e67a2c1d9a9c964ef2a07a13ceb51f96d05bb687f324ceda5231e15",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 57,
+          "entity_id": "edran",
+          "field": "behavior",
+          "verdict": "SUPPORTED",
+          "reason": "Edran observou Lucas cuidadosamente nessa conversa.",
+          "claim": "Edran observou Lucas cuidadosamente nessa conversa.",
+          "evidence": "EDRAN observa você cuidadosamente.",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 2643,
+      "anchor": "— Seu prisioneiro comandou homens que podem ter atacado caravanas de Thalor — diz EDRAN. — Se pretende acolhê-los, terá de responder também às famílias que perderam parentes.",
+      "anchor_sha256": "9d9ed0b6126e4a4dda4835e9b04562bb8c34336bdaa7468b5933393206decb0e",
+      "source_role": "REPORT",
+      "decisions": [
+        {
+          "original_id": 58,
+          "entity_id": "thalor",
+          "field": "role",
+          "verdict": "REPORT_ONLY",
+          "reason": "Edran menciona possível ataque a caravanas, não comprova culpa ou função de Thalor.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 2888,
+      "anchor": "Estou preparando a cena em que Kael testa moedas, ferramentas modernas e um pequeno drone de reconhecimento. Cada avanço funciona parcialmente, mas exige energia, aprendizado e escolhas; a mochila ajuda na missão sem resolver tudo automaticamente.",
+      "anchor_sha256": "8230e42149e767e211c444bae37fce39a2ba1f7f028fe695a7e743550148003e",
+      "source_role": "META",
+      "decisions": [
+        {
+          "original_id": 59,
+          "entity_id": "kael",
+          "field": "capabilities",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Planejamento de testes, não capacidade realizada.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 3022,
+      "anchor": "KAEL arregala os olhos.",
+      "anchor_sha256": "1eb2735e50e3f12e58a4b22e13f3754a3a4638f706437b53c0b4d86e66318e66",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 60,
+          "entity_id": "kael",
+          "field": "appearance",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Arregalar olhos é reação momentânea, não aparência estável.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 3066,
+      "anchor": "— Além disso, multiplicar moedas oficiais pode nos transformar em falsificadores aos olhos de Thalor. Mesmo que consigamos produzir riqueza, precisaremos de uma maneira legítima de introduzi-la na economia.",
+      "anchor_sha256": "cbbc09e85bcfa8e36497f9b0f003092c593de76a7fa7ef8b8646e26ae4c13f1f",
+      "source_role": "HYPOTHESIS",
+      "decisions": [
+        {
+          "original_id": 61,
+          "entity_id": "thalor",
+          "field": "appearance",
+          "verdict": "HYPOTHESIS",
+          "reason": "Possível consequência jurídica da duplicação monetária, não aparência de Thalor.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 3458,
+      "anchor": "KAEL supervisionará a análise das informações, enquanto VARO manterá a autoridade operacional.",
+      "anchor_sha256": "475ad2ff08cd541cda68dd9c918e4a92cae5f13a81fa06e2480024d3e69a76af",
+      "source_role": "PLAN",
+      "decisions": [
+        {
+          "original_id": 62,
+          "entity_id": "kael",
+          "field": "governance",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Atribuições anunciadas de análise e comando, não mudança de ciclo de vida.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 63,
+          "entity_id": "varo",
+          "field": "lifecycle",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Atribuições anunciadas de análise e comando, não mudança de ciclo de vida.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 3655,
+      "anchor": "Estou evitando recompensas automáticas e mantendo o sistema enigmático: talvez registre o primeiro vínculo social autônomo, sem conceder níveis ou poderes. Um status incompleto pode criar tensão e preparar consequências narrativas, enquanto a cena enfatiza a reunião dos guerreiros.",
+      "anchor_sha256": "d42a92f2eda2e24609486f2d83374fd393f39a3ae2791d483dd6517c9a91aadf",
+      "source_role": "META",
+      "decisions": [
+        {
+          "original_id": 64,
+          "entity_id": "sistema",
+          "field": "powers",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Planejamento do retorno do Sistema, não manifestação realizada.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 3667,
+      "anchor": "Estou transformando o retorno do sistema em um marco discreto: registros de feitos, uma recompensa funcional limitada e uma missão de fundação, sem níveis numéricos, experiência automática ou controle sobre os aliados.",
+      "anchor_sha256": "33ffddcc3d31c45573a6d5332b9cc476e33aee2a1a79314199cb9cfb3ef4db62",
+      "source_role": "META",
+      "decisions": [
+        {
+          "original_id": 65,
+          "entity_id": "sistema",
+          "field": "architecture",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Planejamento do retorno do Sistema, não manifestação realizada.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 3687,
+      "anchor": "A mochila dimensional repousa sobre a mesa, ao lado do drone que desafiou tudo aquilo que VARO e KAEL acreditavam conhecer sobre o mundo.",
+      "anchor_sha256": "34ef3812ad4612c111545b43b5b081059fdb3a94aff182153433ff833667d3cb",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 66,
+          "entity_id": "kael",
+          "field": "location",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Mochila e drone sobre mesa não localizam Kael diretamente.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 3765,
+      "anchor": "Só uma observação: aceitar as quarenta e oito horas não significa que Thalor aceitará nosso assentamento. E solicitar o retorno de EDRAN não garante que seja ele quem venha negociar.",
+      "anchor_sha256": "cca00b7263187ca802c396cc04a5ce03e28c9a4ea6e08c43870b11b053d9848c",
+      "source_role": "REPORT",
+      "decisions": [
+        {
+          "original_id": 67,
+          "entity_id": "thalor",
+          "field": "behavior",
+          "verdict": "REPORT_ONLY",
+          "reason": "Observação diplomática de que autorização temporária não garante assentamento nem representante futuro.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 3773,
+      "anchor": "Pela primeira vez, a Legião começa a estabelecer relações com outra autoridade sem ameaçá-la com suas armas.",
+      "anchor_sha256": "a32653d15c4b28778b700de4753bbd02b64cacd5a14613f398c703c1d376bc20",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 68,
+          "entity_id": "legiao",
+          "field": "governance",
+          "verdict": "PARTIAL",
+          "reason": "Narrador caracteriza início de relação pacífica com autoridade, não novo governo formal.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 3877,
+      "anchor": "VARO permanece imóvel, embora seus olhos estejam fixos em você.",
+      "anchor_sha256": "6fa02a0c9de1db133c724b6b71a33650750594a22ce368f676196c3ff366454c",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 69,
+          "entity_id": "varo",
+          "field": "appearance",
+          "verdict": "PARTIAL",
+          "reason": "Olhos fixos em Lucas são postura momentânea, não descrição física.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 4041,
+      "anchor": "VARO sorri.",
+      "anchor_sha256": "a721020b9f143f2a9180a066f788ec668af641484a08ce2e84bbb25f4c4343b1",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 70,
+          "entity_id": "varo",
+          "field": "voice",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Sorriso não define voz.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 4079,
+      "anchor": "O enorme chefe orc aparece acompanhado de VARO e dois legionários. Seus ferimentos foram tratados, mas seu rosto permanece endurecido.",
+      "anchor_sha256": "b72beaba09d6d4c2aab08e54c70d1771cfb9f31fd9fb0b33b52ad38462104573",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 71,
+          "entity_id": "varo",
+          "field": "appearance",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Ferimentos e rosto endurecido descrevem Durghan, não Varo.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 4482,
+      "anchor": "Avanços desta madrugada: identidade coletiva da Legião estabelecida; DURGHAN libertado sob trégua; pedido formal enviado a Thalor; Sistema reapareceu; Unidade Véu em reconhecimento.",
+      "anchor_sha256": "e376a59d5d454474cc61d2a029bbdbb98fa82776b80d5fb381f53a604161fbbf",
+      "source_role": "SUMMARY",
+      "decisions": [
+        {
+          "original_id": 72,
+          "entity_id": "thalor",
+          "field": "behavior",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Quadro de avanços: pedido enviado a Thalor e Sistema reaparece; não prova reação do reino nem capacidade adicional.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 73,
+          "entity_id": "sistema",
+          "field": "behavior",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Quadro de avanços: pedido enviado a Thalor e Sistema reaparece; não prova reação do reino nem capacidade adicional.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 4506,
+      "anchor": "Sua decisão muda o plano: você vai à frente da operação, com VARO e a Unidade Véu; KAEL ficará responsável por preparar a posição da Legião para as negociações das próximas 48 horas. Antes de partirem, vamos testar o que sua armadura realmente permite e se existe algum vínculo capaz de ajudar a localizar ELYAN — sem transformar uma esperança em poder confirmado.",
+      "anchor_sha256": "ee0eca0cbb260a6794700f27eee1067d741f850ea7bc1ad58f7b8737097aefd2",
+      "source_role": "META",
+      "decisions": [
+        {
+          "original_id": 74,
+          "entity_id": "varo",
+          "field": "powers",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Preparação de missão e testes; não poderes, aparência ou ciclo de vida confirmados.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 75,
+          "entity_id": "legiao",
+          "field": "appearance",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Preparação de missão e testes; não poderes, aparência ou ciclo de vida confirmados.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 76,
+          "entity_id": "legiao",
+          "field": "lifecycle",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Preparação de missão e testes; não poderes, aparência ou ciclo de vida confirmados.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 4510,
+      "anchor": "Estou retomando às 05h12, com energia crítica, armadura regenerativa e oito integrantes do Véu preparados. A leitura de VARO confirma custo muito menor que o da Legião; não há superforça garantida nem rastreamento mágico preciso, apenas uma possível ressonância emocional fraca.",
+      "anchor_sha256": "4bb369b1e863e805422986637f887e8d524fdb39fc221bc11b6da50b456693af",
+      "source_role": "META",
+      "decisions": [
+        {
+          "original_id": 77,
+          "entity_id": "varo",
+          "field": "capabilities",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Preparação de missão e testes; não poderes, aparência ou ciclo de vida confirmados.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 4622,
+      "anchor": "Você está diante de sua tenda, observando as montanhas escuras que cercam Arvendell.",
+      "anchor_sha256": "204a6f91ac5b8840d49d56e81c2bef50f3cafa949f554b7bf5b8c9d875f9abbd",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 78,
+          "entity_id": "arvendell",
+          "field": "behavior",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Lucas observa montanhas de Arvendell, não comportamento do lugar.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 4676,
+      "anchor": "— Seu poder pode transformar nossa civilização, Lucas. Mas ainda não sabemos se sua morte destruiria a Legião, interromperia nossas criações ou causaria alguma consequência pior.",
+      "anchor_sha256": "0aaaf38c957ed2dc0f5d1f11d06003e80e4fbd9c332986aedf5e37679c57d1ad",
+      "source_role": "HYPOTHESIS",
+      "decisions": [
+        {
+          "original_id": 79,
+          "entity_id": "lucas",
+          "field": "powers",
+          "verdict": "HYPOTHESIS",
+          "reason": "Kael afirma que consequência da morte de Lucas para criações ainda é desconhecida; não estabelecer vínculo fatal.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 80,
+          "entity_id": "lucas",
+          "field": "lifecycle",
+          "verdict": "HYPOTHESIS",
+          "reason": "Kael afirma que consequência da morte de Lucas para criações ainda é desconhecida; não estabelecer vínculo fatal.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 81,
+          "entity_id": "legiao",
+          "field": "lifecycle",
+          "verdict": "HYPOTHESIS",
+          "reason": "Kael afirma que consequência da morte de Lucas para criações ainda é desconhecida; não estabelecer vínculo fatal.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 4740,
+      "anchor": "— O problema não são apenas seus músculos, Lucas. Seu corpo ainda está recuperando o esforço das criações.",
+      "anchor_sha256": "f9628a8aa126436d34ed11f58748f487b2a8565d83021eff1e71ea7e779376a1",
+      "source_role": "REPORT",
+      "decisions": [
+        {
+          "original_id": 82,
+          "entity_id": "lucas",
+          "field": "lifecycle",
+          "verdict": "REPORT_ONLY",
+          "reason": "Avaliação em diálogo de recuperação física de Lucas; temporal, não limite atual.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 4789,
+      "anchor": "A criação da armadura custou grande parte da reserva que restava após a Legião, mas não consumiu energia equivalente à criação dos trezentos guerreiros.",
+      "anchor_sha256": "a9a6b22376199cfe68c33b4c41157684934820d7035b7eb826594f73ab9be1e3",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 83,
+          "entity_id": "legiao",
+          "field": "location",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Custo energético relativo da armadura não localiza Legião.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 5037,
+      "anchor": "Comando estratégico Lucas",
+      "anchor_sha256": "58de6dbbbac92570c437c4e04741e993769390d6c447f8fcb329daec093e1e5c",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 84,
+          "entity_id": "lucas",
+          "field": "role",
+          "verdict": "PARTIAL",
+          "reason": "Quadro operacional atribui comando estratégico a Lucas e tático a Varo na Operação Irmandade; não cargo universal.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 5039,
+      "anchor": "Comando tático VARO",
+      "anchor_sha256": "7967f2f217e2c87dac43d0a1fe0054730b33eb7c8df07c7f2697e0bb6a85e5b5",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 85,
+          "entity_id": "varo",
+          "field": "role",
+          "verdict": "PARTIAL",
+          "reason": "Quadro operacional atribui comando estratégico a Lucas e tático a Varo na Operação Irmandade; não cargo universal.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 5079,
+      "anchor": "— Lucas. Venha observar.",
+      "anchor_sha256": "18b3dfe475581b4065e11f8b368663027c27d9d78626c984be46b5d60d67b0b9",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 86,
+          "entity_id": "lucas",
+          "field": "behavior",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Varo solicita observação; âncora não descreve comportamento de Lucas.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 5307,
+      "anchor": "— Lucas. Agora sabemos que nosso irmão está vivo. Esta é nossa primeira vitória da manhã.",
+      "anchor_sha256": "95e00e6b38c65d5083bec73a8ec0556b144f4da9609641e0be966ebc9538ef40",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 87,
+          "entity_id": "lucas",
+          "field": "relationships",
+          "verdict": "SUPPORTED",
+          "reason": "Varo reconheceu Elyan como irmão diante de Lucas e afirmou que estava vivo, sem transformar fala em confirmação independente.",
+          "claim": "Varo reconheceu Elyan como irmão diante de Lucas e afirmou que estava vivo, sem transformar fala em confirmação independente.",
+          "evidence": "— Lucas. Agora sabemos que nosso irmão está vivo. Esta é nossa primeira vitória da manhã.",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 5425,
+      "anchor": "— Hoje lutaremos como companheiros, Lucas. Não como criador e criação.",
+      "anchor_sha256": "9e05b43b6d03b0803f8be208f874cef0c6d0d8b20cf3b81546f06d4c7707e7db",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 88,
+          "entity_id": "lucas",
+          "field": "relationships",
+          "verdict": "SUPPORTED",
+          "reason": "Varo declarou a Lucas que lutariam como companheiros, não como criador e criação.",
+          "claim": "Varo declarou a Lucas que lutariam como companheiros, não como criador e criação.",
+          "evidence": "— Hoje lutaremos como companheiros, Lucas. Não como criador e criação.",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 6155,
+      "anchor": "Estou avançando a tarde com treinamento controlado, recuperação parcial e análise do território. Lucas está aprendendo limites reais, enquanto Varo e Kael transformam observações em doutrina provisória, sem resolver automaticamente os próximos conflitos.",
+      "anchor_sha256": "ae4a645024fd262d8954533144c413544bf8c1242712324d9f3ed180fe828b6d",
+      "source_role": "META",
+      "decisions": [
+        {
+          "original_id": 89,
+          "entity_id": "lucas",
+          "field": "behavior",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Preparação editorial da tarde, não comportamento ou aparência vivida.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 6159,
+      "anchor": "Estou transformando a recuperação de Lucas em progresso gradual: treinamento técnico com Varo, observação da armadura e organização da legião. Também introduzo informações provisórias dos resgatados, mantendo mistérios, riscos e decisões abertas.",
+      "anchor_sha256": "ba2aec5473369e9887525d05c981550c1e7c343c64531e7d3ecfb02a1e218efd",
+      "source_role": "META",
+      "decisions": [
+        {
+          "original_id": 90,
+          "entity_id": "lucas",
+          "field": "appearance",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Preparação editorial da tarde, não comportamento ou aparência vivida.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 6179,
+      "anchor": "Sobre a mesa repousam os documentos recuperados da pedreira, um mapa incompleto de Arvendell e sua mochila dimensional.",
+      "anchor_sha256": "9e8c5f53aac97f76f9a0e2b80c364843ab485b652e33fc95875639628c4ce90d",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 91,
+          "entity_id": "arvendell",
+          "field": "location",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Mapa incompleto sobre mesa não fixa localização territorial.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 6413,
+      "anchor": "KAEL prepara três áreas de teste, cada uma dedicada a uma de suas capacidades.",
+      "anchor_sha256": "6d4383e184a71d5b7cf7644700546e3ca06727b1266b06706c1f7e822eb4042f",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 92,
+          "entity_id": "kael",
+          "field": "capabilities",
+          "verdict": "SUPPORTED",
+          "reason": "Kael preparou três áreas de teste para capacidades de Lucas.",
+          "claim": "Kael preparou três áreas de teste para capacidades de Lucas.",
+          "evidence": "KAEL prepara três áreas de teste, cada uma dedicada a uma de suas capacidades.",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 6417,
+      "anchor": "— Lucas, vamos separar suas habilidades em três sistemas diferentes — explica.",
+      "anchor_sha256": "5dc9c26a656842db037878b7a747fd461a890e869bb74bdbf9a86902ce612dd6",
+      "source_role": "REPORT",
+      "decisions": [
+        {
+          "original_id": 93,
+          "entity_id": "lucas",
+          "field": "powers",
+          "verdict": "REPORT_ONLY",
+          "reason": "Kael propõe separar três sistemas de habilidades, não prova poderes específicos.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 6443,
+      "anchor": "Mas, quando imagina criar uma nova armadura, a percepção adquirida com o Sistema produz imediatamente uma sensação de risco elevado.",
+      "anchor_sha256": "9cfeefcc81720a5c082e90ea8af61b23f6afb32273769a7a99f5dbd8abb40ef6",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 94,
+          "entity_id": "sistema",
+          "field": "appearance",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Sensação de risco mediada pelo Sistema não descreve aparência.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 6817,
+      "anchor": "O Sistema continua escondendo respostas.",
+      "anchor_sha256": "765f19e9973768deabe6137c1758de329eeec17fdf45adabf961be69067f045d",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 95,
+          "entity_id": "sistema",
+          "field": "relationships",
+          "verdict": "PARTIAL",
+          "reason": "Narrador caracteriza ausência de respostas; não comprova intenção oculta ou vínculo divino.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 6891,
+      "anchor": "Vou continuar a partir da noite do segundo dia, antes da nova negociação com Thalor. VARO vai preparar uma retirada segura, KAEL vai investigar a situação legal das ruínas com BRANNIK, e você começará a testar os limites do CREATION sem comprometer sua recuperação.",
+      "anchor_sha256": "b09872842ed7925c4d58abe64d51e7f0fa83a682842fe4093b6e50cae6a0511f",
+      "source_role": "META",
+      "decisions": [
+        {
+          "original_id": 96,
+          "entity_id": "brannik",
+          "field": "lifecycle",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Preparação de retirada e negociação, não ciclo de vida.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 97,
+          "entity_id": "thalor",
+          "field": "lifecycle",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Preparação de retirada e negociação, não ciclo de vida.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 7035,
+      "anchor": "BRANNIK observa você.",
+      "anchor_sha256": "dbb39418cba877f61f3106b4f39605b672c7d070e32fbe91ad099d29a36309bc",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 98,
+          "entity_id": "brannik",
+          "field": "behavior",
+          "verdict": "SUPPORTED",
+          "reason": "Brannik observou Lucas durante a conversa.",
+          "claim": "Brannik observou Lucas durante a conversa.",
+          "evidence": "BRANNIK observa você.",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 7049,
+      "anchor": "II — As ruínas dos Três Arcos",
+      "anchor_sha256": "6c5512d331ae0c21c05ed660dc8aaa77c31f8a75d0d4edb2b542e4f0cb5c2832",
+      "source_role": "META",
+      "decisions": [
+        {
+          "original_id": 99,
+          "entity_id": "tres-arcos",
+          "field": "architecture",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Título de seção não descreve arquitetura; recuperar relato subsequente de Brannik.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "all99": true,
+    "unique": true,
+    "literal": true,
+    "supported": true,
+    "historical_only": true,
+    "expected_groups": true
+  },
+  "limitations": [
+    "Single editorial review, not independent inference or runtime admission.",
+    "Role and field review uses source anchors and surrounding original ledger context; partial claims require broader source before admission."
+  ],
+  "checkpoint": {
+    "editorial_ids": [
+      [
+        1,
+        307
+      ]
+    ],
+    "targets": 307,
+    "contexts": 236,
+    "remaining_ids": [],
+    "semantic_certified": 0,
+    "typed_events_admitted": 0,
+    "next": "Reconcile discovery candidates, historical graph and existing admission gate; obtain independent review."
+  },
+  "canon_changed": false,
+  "production_activated": false
+}
