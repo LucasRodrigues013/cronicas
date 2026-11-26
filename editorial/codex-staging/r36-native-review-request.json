@@ -1,0 +1,30 @@
+{
+  "schema": "worldroot-r36-native-review-request-v1",
+  "engine": "3170905db607f89004ed3d62a064dbb092922080",
+  "archive": "4d2bdb7444c785705e494c3d49cad8500af25a8a",
+  "checkpoint": "0f5dc88d5d8624f0d57d892a5bdec022cc0363ec",
+  "checkpoint_path": "editorial/codex-staging/r36-book-ii-stage-b-checkpoint-005.json",
+  "checkpoint_blob": "6f505b6be0e4c42fc741e9c680d4d303138b0191",
+  "inventory_path": "editorial/codex-staging/r36-book-ii-stage-a-inventory.json",
+  "inventory_blob": "3c3d3f6fd26f63a90a08d00f9291b68c8e4a2d55",
+  "delta_path": "editorial/codex-staging/r36-book-ii-stage-b-b006-native-delta-DRAFT.json",
+  "expected_rows_sha256": "4f374215d22386e58cdcf30dde1ef162f60d87672db10165ad01f366b2728ed0",
+  "expected_reviews_sha256": "80cea642160f77026d86c31f3032a76f26074bb4d1e9b8c0228f3cc5462a34c1",
+  "expected_additional_sha256": "4d7154ccc6979b49e12410162dea0ad2b4cc7c782b51e033c12a7e3f053bf8f1",
+  "expected_changes": 25,
+  "expected_profiles": 192,
+  "expected_fields": 5923,
+  "expected_names": 96,
+  "expected_links": 25,
+  "expected_private_fields": 40,
+  "expected_head_blob": "9b4e09682fc3148511d59e73ec56fdcda4e396e5",
+  "expected_day": 579,
+  "expected_sequence": 50,
+  "candidate_versions": {
+    "character_overlay": 12,
+    "world_overlay": 10,
+    "naming_review": 8
+  },
+  "mode": "READ_ONLY_CANDIDATE",
+  "production_hold": true
+}
