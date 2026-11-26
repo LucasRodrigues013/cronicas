@@ -1,0 +1,50 @@
+{
+  "schema": "worldroot-r36-book-ii-stage-b-checkpoint-v1",
+  "book": 2,
+  "stage": "B",
+  "status": "PARTIAL_EDITORIAL_RECONCILIATION_ARCHIVED",
+  "previous_checkpoint": "9fde3fff5d487e99488361bbb287be5c7ce2bb39",
+  "review": {
+    "commit": "8d59a5110100e22eedc3f6dd8402f614d6921a1a",
+    "blob": "f24b34d75fc6b9275c17ad44fc8825c90a7e2b30"
+  },
+  "archive": {
+    "commit": "4bf28bd9b2b46c0bb5a4daec735e01469dc52991",
+    "manifest_blob": "64a9d823f404c7a9bde113478b0c279c6f9e008d",
+    "character_overlay": "f37cde9f292d72f002b4cd03995e7ae3df86be5b",
+    "world_overlay": "d88490ba24bc41fd5cc2c64188e23978a937d9d2"
+  },
+  "counts": {
+    "targets_total": 261,
+    "editorially_reviewed": 5,
+    "remaining": 256,
+    "groups_reviewed": 4,
+    "groups_total": 203,
+    "fields_changed": 6,
+    "existing_entities": 3,
+    "existing_profile_count": 192,
+    "independently_certified": 0
+  },
+  "verification": {
+    "ledger_anchors_exact": 5,
+    "readback": true,
+    "field_diff_exact": true,
+    "stable_ids": true,
+    "book_i_closure_preserved": true,
+    "native_regression_tests_not_run": true
+  },
+  "next": {
+    "ledger_id": 313,
+    "global_line": 42104,
+    "stage": "B",
+    "base_archive": "4bf28bd9b2b46c0bb5a4daec735e01469dc52991"
+  },
+  "reservations": {
+    "independent_certification_pending": true,
+    "book_i_reservations_inherited": true,
+    "production_hold": true,
+    "canonical_head_unchanged": true
+  },
+  "canon_changed": false,
+  "production_activated": false
+}
