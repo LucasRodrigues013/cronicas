@@ -94,5 +94,24 @@
     "official_archive": "4d2bdb7444c785705e494c3d49cad8500af25a8a",
     "official_checkpoint": "0f5dc88d5d8624f0d57d892a5bdec022cc0363ec",
     "recovery_duplicate_copies_removed": true
+  },
+  "native_retry_from_exact_resume": {
+    "resume_commit": "e14eb15d824ac0cdf5a861db7eeb454286caa446",
+    "trigger_commit": "61e27f83c4337533b0eb40ea2bbe6b2e6eced4a0",
+    "run_id": 45910704106,
+    "job_id": 140218085025,
+    "conclusion": "failure",
+    "elapsed_seconds": 4,
+    "steps_reported": 0,
+    "artifacts": 0,
+    "logs_error": "HTTP 404 BlobNotFound",
+    "check_annotations": "not accessible via connector",
+    "native_status": "NOT_VALIDATED",
+    "root_cause": "UNCONFIRMED; failure before any reported job step",
+    "workflow_blob": "dfb788811561c5cc12cbe32f3ea816d6dca93885",
+    "validator_blob": "a00c5982b5f77eb177b6201015470da3446f9761",
+    "delta_blob": "58b5e04f9f5fc0001933772473ea697d740f29f0",
+    "approval_required": true,
+    "production_hold": true
   }
 }
