@@ -10,12 +10,12 @@
   },
   "base_registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
   "character_overlay": {
-    "path": "editorial/registries/r35-natural-completion-d579-v3.json",
-    "git_blob": "f7a2d1c972134dbd879f392b6ec1b06177b453a4"
+    "path": "editorial/registries/r35-natural-completion-d579-v4.json",
+    "git_blob": "5d8e3a41f3b79279da696321e2eeadc2418b6956"
   },
   "world_overlay": {
-    "path": "editorial/registries/r35-world-completion-d579-v1.json",
-    "git_blob": "faed835480bdfc61cd703ac9778e7075cc5b289b"
+    "path": "editorial/registries/r35-world-completion-d579-v2.json",
+    "git_blob": "ffda95945d747c345d4fddacec80b75112743bdb"
   },
   "vetoes": [],
   "rules": {
@@ -29,11 +29,12 @@
   "notes": [
     "Manifest for R35 graph integration after homologation. Does not activate or alter HEAD. C4 prospective design subject to author veto and higher evidence.",
     "V3 readback: 181 independent cards, no duplicate IDs, field provenance and scope structural checks pass. Production activation pending.",
-    "Naming review is pinned for the R35 development engine, not a change to historical identity or production deployment. Unadmitted candidate rows remain staging-only."
+    "Naming review is pinned for the R35 development engine, not a change to historical identity or production deployment. Unadmitted candidate rows remain staging-only.",
+    "V4/V2 restores early historical entities and links. No production activation; old manifest and blobs preserved in Git history."
   ],
   "naming_review": {
-    "path": "editorial/registries/r35-legacy-name-reconciliation-v1.json",
-    "git_blob": "67073758f619ed3fe3852b259518efca55b43619",
+    "path": "editorial/registries/r35-legacy-name-reconciliation-v2.json",
+    "git_blob": "8a42f3239ff7be1d70fcf5a7c59dbaa5ef195ae2",
     "scope": "EDITORIAL_PROPOSALS_ONLY"
   }
 }

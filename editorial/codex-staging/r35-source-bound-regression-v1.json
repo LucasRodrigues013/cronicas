@@ -1,0 +1,209 @@
+{
+  "schema": "worldroot-r35-source-bound-regression-v1",
+  "checkpoint": {
+    "day": 579,
+    "sequence": 50
+  },
+  "source_policy": "Exact literal source; first-pass historical recovery, no current-state inference or independent certification",
+  "cases": [
+    {
+      "id": "orc_name",
+      "question": "Quem foi o orc que Lucas libertou?",
+      "answer": "Durghan, chefe de guerra do clã Uzgor; libertado sob trégua, não jurou lealdade",
+      "sources": [
+        {
+          "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+          "blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+          "lines": [
+            2294,
+            2298
+          ],
+          "anchor": "O orc abre a boca, exibindo as presas amareladas.\n\n— Meu povo me chama de DURGHAN. Sou o chefe de guerra dos Uzgor.\n\n— Então, DURGHAN, vou lhe fazer uma proposta.",
+          "authority": "LEGACY_LITERAL_READBACK",
+          "source_role": "LEGACY_MIXED_NARRATIVE_READBACK",
+          "historical_only": true
+        },
+        {
+          "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+          "blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+          "lines": [
+            4181,
+            4185
+          ],
+          "anchor": "KAEL anota que o chefe Uzgor está livre sob trégua, mas ainda não é subordinado da Legião. DURGHAN solicita passagem segura para procurar os sobreviventes de seu clã, sem recuperar suas armas de guerra por enquanto.\n\nVARO recomenda uma escolta até o limite do acampamento, tanto para proteger DURGHAN de possíveis represálias quanto para proteger seus legionários de qualquer provocação.\n\nOREN observa a cena com expressão incerta.",
+          "authority": "LEGACY_LITERAL_READBACK",
+          "source_role": "LEGACY_MIXED_NARRATIVE_READBACK",
+          "historical_only": true
+        }
+      ]
+    },
+    {
+      "id": "orc_population",
+      "question": "O que aconteceu com os Uzgor?",
+      "answer": "D4 Durghan reuniu parte dos sobreviventes e enviou dois observadores, Grazha e Korr; situação atual não certificada",
+      "sources": [
+        {
+          "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+          "blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+          "lines": [
+            13787,
+            13830
+          ],
+          "anchor": "DIA 4 — 21h02 | Encostas orientais\n\nLonge dali, DURGHAN caminhava entre os restos de um acampamento orc.\n\nHavia encontrado sobreviventes do clã Uzgor.\n\nNão todos.\n\nAlguns tinham fugido para além das montanhas.\n\nOutros estavam feridos.\n\nUma velha orc o recebeu com uma pergunta amarga:\n\n— Você voltou sem vitória?\n\nDURGHAN demorou a responder.\n\n— Voltei com uma possibilidade.\n\nA velha cuspiu no chão.\n\n— Possibilidades não alimentam crianças.\n\nEle olhou para as pequenas figuras reunidas perto de uma fogueira.\n\nLembrou-se de LUCAS.\n\nDa promessa de leis iguais.\n\nDa maneira como aquele humano libertara seu inimigo diante de trezentos guerreiros.\n\n— Eu sei — respondeu DURGHAN.\n\nEntão tomou uma decisão própria.\n\nNão marcharia para a Legião.\n\nNão juraria lealdade em nome de seu povo.\n\nMas enviaria dois observadores desarmados para verificar se o comandante humano realmente tratava os necessitados como havia prometido.\n\nDURGHAN ainda não confiava plenamente em LUCAS.\n",
+          "authority": "LEGACY_LITERAL_READBACK",
+          "source_role": "LEGACY_MIXED_NARRATIVE_READBACK",
+          "historical_only": true
+        },
+        {
+          "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+          "blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+          "lines": [
+            19146,
+            19180
+          ],
+          "anchor": "Os orcs aguardavam numa pequena clareira.\n\nUm era alto e magro, mais jovem do que DURGHAN, com uma cicatriz atravessando a orelha esquerda.\n\nA outra era uma mulher orc de ombros largos, cabelos grisalhos trançados e uma expressão que indicava pouca paciência para formalidades.\n\nVARO manteve a distância.\n\n— Sou VARO, capitão da Legião.\n\nA mulher respondeu:\n\n— GRAZHA, do clã Uzgor.\n\nApontou para o companheiro.\n\n— Este é KORR.\n\nVARO assentiu.\n\n— DURGHAN enviou vocês?\n\n— Sim.\n\n— Ele está vivo?\n\nGRAZHA estreitou os olhos.\n\n— Está. E encontrou parte do nosso povo.\n\nVARO percebeu o peso da resposta.\n\n— Quantos?\n\n— Ainda estamos reunindo sobreviventes. Não darei um número enquanto não souber quem conseguiu escapar das montanhas.",
+          "authority": "LEGACY_LITERAL_READBACK",
+          "source_role": "LEGACY_MIXED_NARRATIVE_READBACK",
+          "historical_only": true
+        }
+      ]
+    },
+    {
+      "id": "halvern",
+      "question": "Onde Lucas foi negociar?",
+      "answer": "Sede administrativa de Halvern, com estandarte de Thalor",
+      "sources": [
+        {
+          "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+          "blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+          "lines": [
+            14645,
+            14659
+          ],
+          "anchor": "III — O salão de Halvern\n\n13h47 | Sede administrativa de Halvern\n\nO edifício não era um palácio.\n\nEra uma fortificação administrativa construída sobre uma elevação, com paredes de pedra clara, janelas estreitas e uma torre central de observação.\n\nO estandarte de Thalor — azul, com uma torre dourada — tremulava sobre a entrada.\n\nDois guardas examinaram os documentos da delegação.\n\nAo reconhecerem o selo da Legião, trocaram um olhar.\n\nUm deles murmurou:",
+          "authority": "LEGACY_LITERAL_READBACK",
+          "source_role": "LEGACY_MIXED_NARRATIVE_READBACK",
+          "historical_only": true
+        }
+      ]
+    },
+    {
+      "id": "pedreira",
+      "question": "Onde ocorreu o resgate de Elyan?",
+      "answer": "Pedreira Oriental de Arvendell, D2",
+      "sources": [
+        {
+          "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+          "blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+          "lines": [
+            5365,
+            5385
+          ],
+          "anchor": "Capítulo 10 — Nenhum irmão fica para trás\n\nDIA 2 • 07H58 • PEDREIRA ORIENTAL DE ARVENDELL\n\nNaquele dia, você descobriria que coragem não significa ausência de medo. E que uma vitória pode custar muito mais do que parece.\n\nI — A ordem do comandante\n\nVocê observa ELYAN sendo conduzido até a carroça.\n\nAs correntes prendem seus pulsos. Sua capa carmesim foi rasgada e um dos guardas o empurra violentamente contra a madeira.\n\nSua primeira reação é avançar.\n\nVARO segura seu ombro.\n\n— Lucas. Olhe para mim.\n\nVocê se vira, irritado.\n\n— Ele está ali, VARO!",
+          "authority": "LEGACY_LITERAL_READBACK",
+          "source_role": "LEGACY_MIXED_NARRATIVE_READBACK",
+          "historical_only": true
+        },
+        {
+          "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+          "blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+          "lines": [
+            5799,
+            5799
+          ],
+          "anchor": "Agora, caminhando entre as pedras com ELYAN apoiado em um legionário, compreende a dimensão daquela escolha.",
+          "authority": "LEGACY_LITERAL_READBACK",
+          "source_role": "LEGACY_MIXED_NARRATIVE_READBACK",
+          "historical_only": true
+        },
+        {
+          "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+          "blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+          "lines": [
+            6989,
+            6989
+          ],
+          "anchor": "— Com tudo. Nós vencemos, resgatamos ELYAN e começamos a construir uma irmandade. Mas estamos expostos. Se um exército vier do leste e outro bloquear a estrada ocidental, ficaremos presos entre eles.",
+          "authority": "LEGACY_LITERAL_READBACK",
+          "source_role": "LEGACY_MIXED_NARRATIVE_READBACK",
+          "historical_only": true
+        }
+      ]
+    },
+    {
+      "id": "ruinas",
+      "question": "O que havia nas ruínas de Três Arcos?",
+      "answer": "Antiga fortificação comercial, aqueduto e cisternas relatados por Brannik",
+      "sources": [
+        {
+          "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+          "blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+          "lines": [
+            7049,
+            7072
+          ],
+          "anchor": "II — As ruínas dos Três Arcos\n\nBRANNIK coloca um pedaço de carvão sobre o mapa.\n\nDesenha três estruturas alongadas, uma encosta rochosa e uma estrada estreita.\n\n— Os carregadores chamavam aquele lugar de Três Arcos. Muito antes de eu nascer, havia uma fortificação ali, construída para proteger uma passagem comercial.\n\nEle desenha uma linha curva.\n\n— Existe um antigo aqueduto, ou o que resta dele. A água vinha de uma nascente nas montanhas e alimentava cisternas dentro das muralhas.\n\nVocê se inclina.\n\n— Ainda funciona?\n\n— Não sei. Quando passei pela região, anos atrás, parte das canalizações estava destruída. Mas algumas câmaras de pedra permaneciam intactas.\n\nVARO parece interessado.\n\n— Uma posição elevada, passagem controlada e reservatórios de água...\n\nBRANNIK ergue um dedo.\n",
+          "authority": "LEGACY_LITERAL_READBACK",
+          "source_role": "LEGACY_MIXED_NARRATIVE_READBACK",
+          "historical_only": true
+        }
+      ]
+    },
+    {
+      "id": "birth_identity",
+      "question": "Como registrar pessoas nascidas por Gênese?",
+      "answer": "Nome, data, local e registro próprio; origem técnica confidencial, liberdade e direito de escolher nome; não há denominação coletiva adicional confirmada nas fontes examinadas",
+      "sources": [
+        {
+          "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+          "blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+          "lines": [
+            4072,
+            4106
+          ],
+          "anchor": "— Quero que cada pessoa nascida por Gênese receba sua certidão como qualquer outra pessoa. Nome, data, local de nascimento e registro próprio.\n\nAUREL ergueu a mão.\n\n— E se eu escolher outro nome no futuro?\n\nKAEL sorriu.\n\n— Poderá solicitar uma alteração conforme as regras civis, preservando o histórico necessário para identificar você corretamente.\n\nAUREL pareceu satisfeito.\n\nELION perguntou:\n\n— Precisamos registrar que fomos criados por CREATION?\n\nO conselheiro pensou antes de responder.\n\n— Nosso arquivo técnico de origem já contém essa informação porque é relevante para compreender seu nascimento. Mas ela não precisa aparecer em toda identificação pública.\n\nLUCAS assentiu imediatamente.\n\n— Exatamente. Não quero uma marca que diga a todos quem foi criado e quem não foi.\n\nKAEL observou o fundador.\n\n— Concordo.\n\nMIREN acrescentou:\n\n— Ninguém deveria precisar revelar a própria origem para comprar pão, estudar ou caminhar pela cidade.\n\nO conselheiro pegou uma folha.\n\n— Então vamos separar o registro civil dos estudos de Gênese.",
+          "authority": "LEGACY_LITERAL_READBACK",
+          "source_role": "LEGACY_MIXED_NARRATIVE_READBACK",
+          "historical_only": true
+        },
+        {
+          "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+          "blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+          "lines": [
+            4134,
+            4172
+          ],
+          "anchor": "Registro Civil de Nascimento\n\nCIDADE LIVRE DE TRÊS ARCOS · REGISTROS INICIAIS\n\nNome\nAUREL\nData de nascimento\nDia 168 do calendário da Cidade Livre\nLocal\nCâmara de Origem, Academia dos Fundadores, Três Arcos\nCondição civil\nPessoa livre, registrada como residente da Cidade Livre\nRegistro técnico\nReferência confidencial ao arquivo de Gênese, sem exposição na identificação cotidiana\n\nSEGUNDO REGISTRO\n\nNAIRA\n\nNascimento: Dia 168\n\nTERCEIRO REGISTRO\n\nELION\n\nNascimento: Dia 168\n\nAs certidões serão individualizadas, numeradas no cadastro oficial e assinadas pelo responsável do Registro Civil. A definição constitucional de cidadania permanece em consulta; os direitos fundamentais das três pessoas não dependem dessa futura deliberação.\n\nFEN entregou a primeira certidão a AUREL.\n\nO novo engenheiro examinou o papel.\n\nVirou-o.\n\nDepois perguntou:\n\n— E isso significa que sou oficialmente alguém daqui?\n",
+          "authority": "LEGACY_LITERAL_READBACK",
+          "source_role": "LEGACY_MIXED_NARRATIVE_READBACK",
+          "historical_only": true
+        },
+        {
+          "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+          "blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+          "lines": [
+            39515,
+            39539
+          ],
+          "anchor": "IX - O primeiro nome\n\nDepois de receber roupas adequadas e descansar durante a avaliação inicial, o recém-nascido foi convidado a escolher como gostaria de ser chamado.\n\nASTRA explicou que não precisava decidir imediatamente.\n\nVARO ofereceu alguns exemplos de nomes da região.\n\nMIREN contou que muitas pessoas escolhiam nomes por significado, tradição ou simplesmente porque gostavam de como soavam.\n\nO homem ouviu atentamente.\n\nDepois repetiu algumas palavras, experimentando seus sons.\n\nPor fim, parou.\n\nKÁIRON.\n\nLUCAS ergueu os olhos.\n\nO homem repetiu:\n\nGostaria de ser chamado de KÁIRON.\n\nMIREN sorriu.",
+          "authority": "LEGACY_LITERAL_READBACK",
+          "source_role": "LEGACY_MIXED_NARRATIVE_READBACK",
+          "historical_only": true
+        },
+        {
+          "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+          "blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+          "lines": [
+            22055,
+            22095
+          ],
+          "anchor": "— Aprendi a confiar nele. Aprendi a discordar. Aprendi a proteger pessoas que não existiam quando fui criado.\n\nSua voz tornou-se firme.\n\n— E aprendi que minha vida não pertence exclusivamente àquele que lhe deu origem.\n\nASTRA assentiu.\n\n— Concordo.\n\nVARO voltou-se para LUCAS.\n\n— Não considero isso uma diminuição do que você fez.\n\nEle colocou a mão sobre o peito.\n\n— Considero uma parte da grandeza daquilo que nos deu.\n\nO silêncio permaneceu.\n\nCÍRAN se aproximou.\n\n— Bem, eu também tenho uma opinião.\n\nVARO suspirou.\n\n— Naturalmente.\n\nO campeão sorriu.\n\n— Se algum dia surgirem outros como nós, quero que saibam desde o primeiro momento que não precisam passar a vida inteira sendo cópias dos trezentos.\n\nSERON assentiu.\n\n— E que poderão escolher caminhos que ainda não conhecemos.\n\nASTRA observou LUCAS.\n\nPela primeira vez, a investigação sobre CREATION deixara de ser apenas uma pesquisa de poder.\n\nEra uma pergunta sobre o nascimento de uma nova forma de povo.",
+          "authority": "LEGACY_LITERAL_READBACK",
+          "source_role": "LEGACY_MIXED_NARRATIVE_READBACK",
+          "historical_only": true
+        }
+      ]
+    }
+  ],
+  "canon_changed": false
+}
