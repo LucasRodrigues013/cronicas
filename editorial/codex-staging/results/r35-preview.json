@@ -1,0 +1,837 @@
+{
+  "scope": "candidate_only",
+  "head": {
+    "book": "Livro VI",
+    "book_closed": false,
+    "chapter": 9,
+    "closure_sha256": "9a6519869169a24bded6d06961756d9f44634642f59a0326682d45273ce9bfa8",
+    "day": 579,
+    "drive_head_status": "NAO_SINCRONIZADO",
+    "engine_mode": "GITHUB_PRIVADO_SEM_OIDC",
+    "episode_id": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+    "hour": "23h02",
+    "location": "Torre do Criador (Lucas/Miren); Três Arcos, Campo Aurora, Halvern, Pedras Claras, Renshar, Vale dos Ofícios Baixos, Serevan",
+    "part": "I",
+    "previous_head_sha256": "aaf68abf12c99e8af565c37448f656484fc6abae8dd000e8f5c398b922d70af6",
+    "schema": "worldroot-git-canon-v1",
+    "sequence": 50,
+    "source_sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926"
+  },
+  "characters": {
+    "Lucas": {
+      "resolution": "unique",
+      "records": [
+        {
+          "aliases": [
+            "LUCAS",
+            "Lucas",
+            "Lucas Rodrigues",
+            "lucas"
+          ],
+          "completeness": "PARTIAL_REVIEW_REQUIRED",
+          "id": "lucas",
+          "kind": "character",
+          "name": "Lucas",
+          "observations": [
+            {
+              "field": "relationship_voice",
+              "proof": {
+                "line": 390,
+                "role": "Response",
+                "sha256": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+                "source_name": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+                "status": "LITERAL_MATCH_NOT_CANON_CERTIFICATION"
+              },
+              "source": {
+                "anchor": "LUCAS — Senhorita arqueóloga.\n\nNenhuma resposta.\n\nLUCAS — Doutora em fazer um homem extraordinariamente poderoso se sentir um completo idiota.\n\nMiren soltou uma risadinha abafada.\n\nLUCAS — Eu gostaria de registrar uma reclamação.\n\nMIREN — O departamento responsável ainda está dormindo.\n\nEle deitou ao lado dela.\n\nLUCAS — Nesse caso, vou aguardar atendimento.\n\nMiren abriu um olho.\n\nMIREN — Lucas...\n\nLUCAS — Sim, meu amor?",
+                "line_in_part": 390,
+                "part_hint": "history/sources/04_DIA_457_A_469_FONTE_LITERAL.txt",
+                "role": "Response",
+                "source_name": "04_DIA_457_A_469_FONTE_LITERAL.txt"
+              },
+              "state": "SOURCE_MATCH",
+              "value": "Humor expansivo, vulnerabilidade e parceria com Miren; brincadeira da reclamação."
+            },
+            {
+              "field": "values",
+              "proof": {
+                "line": 1255,
+                "role": "Response",
+                "sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+                "source_name": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+                "status": "LITERAL_MATCH_NOT_CANON_CERTIFICATION"
+              },
+              "source": {
+                "anchor": "DIA 1 • FINAL DA TARDE • ACAMPAMENTO DA LEGIÃO\n\nAlguns homens desejam conquistar o mundo. Outros desejam descobrir seus segredos. Você começa a perceber que deseja algo muito mais difícil: construir um mundo onde pessoas diferentes possam escolher viver juntas.\n\nO sol desce lentamente atrás das colinas.\n\nDo alto de uma pequena elevação, você observa o acampamento improvisado. Trezentos homens nasceram da sua vontade, mas agora caminham, conversam, trabalham, sentem dor e possuem suas próprias perspectivas.\n\nVocê olha para suas mãos.\n\nHoras atrás, elas não seguravam nada.\n\nAgora, o destino de trezentas vidas está diretamente ligado às suas decisões.\n\nE uma pergunta continua incomodando:\n\nQuem me trouxe para cá?\n\nVocê não se lembra de ter pedido para nascer neste mundo. Não conhece suas leis, deuses, criaturas ou governantes.\n\nMas, apesar da incerteza, sente algo que há muito tempo não experimentava.\n\nEntusiasmo.\n\nUm mundo inteiro para descobrir. Castelos para conhecer. Montanhas que ninguém lhe mostrou. Civilizações, monstros, magia e possibilidades que antes só existiam em sua imaginação.\n\nE um sonho antigo.\n\nConstruir um reino extraordinário.",
+                "line_in_part": 1255,
+                "part_hint": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+                "role": "Response",
+                "source_name": "01_DIA_001_A_383_FONTE_LITERAL.txt"
+              },
+              "state": "SOURCE_MATCH",
+              "value": "Responsabilidade pelas trezentas vidas e entusiasmo pelo mundo no início."
+            },
+            {
+              "field": "friendship",
+              "proof": {
+                "anchor": "**LUCAS —** E que talvez eu não precise ser o homem que constrói tudo.\n\nMiren levantou os olhos para ele.\n\nLucas sorriu.\n\n**LUCAS —** Às vezes posso ser só o amigo que ajuda outra pessoa a construir.\n\nBressa, que permanecera mais atrás, sentiu a frase de maneira diferente.\n\nPensou na ponte.\n\nNo vale.\n\nEm Tharvek.\n\nNa viagem de nove dias.\n\nE, pela primeira vez desde que deixara suas montanhas, acreditou que talvez estivesse prestes a retornar com algo melhor do que uma simples resposta.\n\n***",
+                "episode": "LVI-C06-PV-D568-AUTHOR-SOURCE",
+                "line": 1080,
+                "scope": "PRIOR_LITERAL_NOT_UNIVERSAL_KNOWLEDGE",
+                "sequence": 39,
+                "sha256": "c178b87337d668bb44d0a369de3a1615bf3bf2d823987812bd1a2591b28b93a4"
+              },
+              "source": {
+                "anchor": "**LUCAS —** E que talvez eu não precise ser o homem que constrói tudo.\n\nMiren levantou os olhos para ele.\n\nLucas sorriu.\n\n**LUCAS —** Às vezes posso ser só o amigo que ajuda outra pessoa a construir.\n\nBressa, que permanecera mais atrás, sentiu a frase de maneira diferente.\n\nPensou na ponte.\n\nNo vale.\n\nEm Tharvek.\n\nNa viagem de nove dias.\n\nE, pela primeira vez desde que deixara suas montanhas, acreditou que talvez estivesse prestes a retornar com algo melhor do que uma simples resposta.\n\n***",
+                "episode": "LVI-C06-PV-D568-AUTHOR-SOURCE"
+              },
+              "state": "SOURCE_MATCH",
+              "value": "Escolhe ajudar os outros a construir; gesto percebido por Bressa."
+            }
+          ],
+          "registry_identity": {
+            "aliases": [
+              "Lucas Rodrigues"
+            ],
+            "id": "lucas",
+            "kind": "character",
+            "name": "Lucas"
+          },
+          "required_fields": [
+            "appearance",
+            "age",
+            "voice",
+            "personality",
+            "relationships",
+            "role",
+            "origin",
+            "location",
+            "knowledge",
+            "powers",
+            "inventory",
+            "history"
+          ],
+          "sources": [],
+          "unresolved_fields": [
+            "appearance",
+            "age",
+            "voice",
+            "personality",
+            "relationships",
+            "role",
+            "origin",
+            "location",
+            "knowledge",
+            "powers",
+            "inventory",
+            "history"
+          ],
+          "visual_conflicts": [],
+          "visual_refs": []
+        }
+      ]
+    },
+    "Miren": {
+      "resolution": "unique",
+      "records": [
+        {
+          "aliases": [
+            "MIREN",
+            "Miren",
+            "miren"
+          ],
+          "author_design": {
+            "age": {
+              "status": "ADULT_CONFIRMED_NUMERIC_DESIGN_PROPOSAL",
+              "years": 29
+            },
+            "age_safety": "Apenas Lira tem idade numérica explicitamente definida; Miren adulta conforme narrativa. Demais idades numéricas são propostas até conciliação/ratificação; não usar como prova de adultez. Sem sexualização de idade incerta. Efeitos são orientações, não acontecimentos.",
+            "beach_planning": "prevista",
+            "build": "Alta e esguia, cintura definida, curvas harmoniosas, pernas longas e torneadas",
+            "bust": "Busto grande, cheio, naturalmente arredondado, sem implantes",
+            "design_status": "AUTHOR_APPROVED_VISUAL_DIRECTION_PROSPECTIVE",
+            "effect_on_others": "Beleza exótica; Lucas demonstra admiração e afeto, amigos reconhecem sua inteligência; não presumir atração de terceiros.",
+            "eyes": "Verde-avelã",
+            "face": "Oval, maçãs finas, nariz delicado, lábios definidos",
+            "group": "principal",
+            "hair": "Castanho-escuro, longo, ondas suaves, sem coloração ruiva dominante",
+            "height_cm": 174,
+            "hips": "Quadris proporcionais, contorno suave e cintura bem marcada.",
+            "historical_observations": [
+              {
+                "field": "hair_color",
+                "source": {
+                  "line_end": 37273,
+                  "line_start": 37269,
+                  "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-005",
+                  "role": "Response"
+                },
+                "status": "LITERAL_HISTORICAL_OBSERVATION",
+                "value": "Castanho; também descrito como escuro."
+              },
+              {
+                "field": "hair_length",
+                "source": {
+                  "line_end": 6544,
+                  "line_start": 6540,
+                  "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-006",
+                  "role": "Response"
+                },
+                "status": "LITERAL_HISTORICAL_OBSERVATION",
+                "value": "Cai sobre os ombros."
+              },
+              {
+                "field": "hair_texture",
+                "source": {
+                  "line_end": 37273,
+                  "line_start": 37269,
+                  "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-005",
+                  "role": "Response"
+                },
+                "status": "LITERAL_HISTORICAL_OBSERVATION",
+                "value": "Levemente ondulado ao despertar; estado contextual."
+              },
+              {
+                "field": "build",
+                "source": {
+                  "line_end": 9136,
+                  "line_start": 9090,
+                  "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+                  "role": "Response"
+                },
+                "status": "LITERAL_HISTORICAL_OBSERVATION",
+                "value": "Alta, esguia, postura firme e olhos atentos."
+              },
+              {
+                "field": "clothing",
+                "source": {
+                  "line_end": 41,
+                  "line_start": 35,
+                  "path": "episodes/LVI-C08-PIV-D577-AUTHOR-SOURCE/draft/narrativa_integral.md",
+                  "role": "Response"
+                },
+                "status": "LITERAL_HISTORICAL_OBSERVATION",
+                "value": "Vestido verde profundo ajustado à cintura; botas confortáveis (D577)."
+              },
+              {
+                "field": "adult_context",
+                "source": {
+                  "line_end": 707,
+                  "line_start": 697,
+                  "path": "episodes/LVI-C08-PV-D578-AUTHOR-SOURCE/draft/narrativa_integral.md",
+                  "role": "Response"
+                },
+                "status": "LITERAL_HISTORICAL_OBSERVATION",
+                "value": "A narrativa descreve Lucas e Miren como dois adultos; idade numérica desconhecida."
+              }
+            ],
+            "id": "miren",
+            "legs": "Longas, torneadas e firmes.",
+            "name": "Miren",
+            "role_and_presence": "Arqueóloga; inteligência, humor íntimo e autonomia; esposa de Lucas",
+            "skin": "Clara, sem sardas",
+            "visual_inspiration": "Marina Ruy Barbosa: elegância e traços expressivos; manter castanho histórico",
+            "wardrobe": "Azul profundo, prata, verde floresta; vestido fluido e botas de pesquisa"
+          },
+          "completeness": "PARTIAL_REVIEW_REQUIRED",
+          "id": "miren",
+          "kind": "character",
+          "name": "Miren",
+          "observations": [
+            {
+              "field": "appearance",
+              "proof": {
+                "line": 382,
+                "role": "Response",
+                "sha256": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+                "source_name": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+                "status": "LITERAL_MATCH_NOT_CANON_CERTIFICATION"
+              },
+              "source": {
+                "anchor": "Lucas ficou alguns segundos observando a companheira.\n\nOs cabelos escuros de Miren escapavam do tecido, espalhados sobre a almofada. A claridade suave da manhã tocava sua pele. Havia uma tranquilidade rara naquele quarto, conquistada depois de dias de audiências, documentos, investigações e descobertas que pareciam produzir mais perguntas do que respostas.\n\nLucas sorriu.\n\nDepositou o pato sobre a mesa e aproximou-se da cama.\n\nLUCAS — Senhorita arqueóloga.",
+                "line_in_part": 382,
+                "part_hint": "history/sources/04_DIA_457_A_469_FONTE_LITERAL.txt",
+                "role": "Response",
+                "source_name": "04_DIA_457_A_469_FONTE_LITERAL.txt"
+              },
+              "state": "SOURCE_MATCH",
+              "value": "Cabelos escuros."
+            },
+            {
+              "field": "relationship_voice",
+              "proof": {
+                "line": 390,
+                "role": "Response",
+                "sha256": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+                "source_name": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+                "status": "LITERAL_MATCH_NOT_CANON_CERTIFICATION"
+              },
+              "source": {
+                "anchor": "LUCAS — Senhorita arqueóloga.\n\nNenhuma resposta.\n\nLUCAS — Doutora em fazer um homem extraordinariamente poderoso se sentir um completo idiota.\n\nMiren soltou uma risadinha abafada.\n\nLUCAS — Eu gostaria de registrar uma reclamação.\n\nMIREN — O departamento responsável ainda está dormindo.\n\nEle deitou ao lado dela.\n\nLUCAS — Nesse caso, vou aguardar atendimento.\n\nMiren abriu um olho.\n\nMIREN — Lucas...\n\nLUCAS — Sim, meu amor?",
+                "line_in_part": 390,
+                "part_hint": "history/sources/04_DIA_457_A_469_FONTE_LITERAL.txt",
+                "role": "Response",
+                "source_name": "04_DIA_457_A_469_FONTE_LITERAL.txt"
+              },
+              "state": "SOURCE_MATCH",
+              "value": "Humor íntimo recíproco com Lucas; arqueóloga, brincadeira do departamento que dorme."
+            },
+            {
+              "field": "historical_clothing",
+              "proof": {
+                "line": 31509,
+                "role": "Response",
+                "sha256": "468635338ce16b22fb9216589ea6c572597d313da70cae7b9e9c08b5689afb81",
+                "source_name": "02_DIA_383_A_431_FONTE_LITERAL.txt",
+                "status": "LITERAL_MATCH_NOT_CANON_CERTIFICATION"
+              },
+              "source": {
+                "anchor": "DIA 400 · 19h12 · CRISTA DO VENTO CLARO, OBSERVATÓRIO DO CRIADOR\n\nMIREN recebeu o convite naquela tarde.\n\nNão havia assinatura.\n\nApenas uma pequena carta, entregue por uma pessoa de confiança.\n\nEsta noite, às dezenove horas, venha ao Observatório. Vista o que fizer você se sentir bonita. Alguém gostaria de lhe mostrar uma coisa.\n\nA arqueóloga reconheceu imediatamente a caligrafia.\n\nSorriu.\n\nDepois olhou para a janela.\n\n— ...Lucas.\n\nNão sabia exatamente o que ele preparara.\n\nMas agora compreendia por que estivera tão estranho durante o dia.\n\nEscolheu um vestido de tecido leve.\n\nAzul profundo, com detalhes discretos em prata.\n\nNão era um traje real.\n\nNem uma peça produzida para impressionar uma corte.",
+                "line_in_part": 31509,
+                "part_hint": "history/sources/02_DIA_383_A_431_FONTE_LITERAL.txt",
+                "role": "Response",
+                "source_name": "02_DIA_383_A_431_FONTE_LITERAL.txt"
+              },
+              "state": "SOURCE_MATCH",
+              "value": "Vestido azul profundo com detalhes prata escolhido para o encontro D400; não traje permanente."
+            },
+            {
+              "field": "appearance",
+              "proof": {
+                "line": 9090,
+                "role": "Response",
+                "sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+                "source_name": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+                "status": "LITERAL_MATCH_NOT_CANON_CERTIFICATION"
+              },
+              "source": {
+                "anchor": "— Aqui.\n\nOs homens se espalham sem alarde. Escudos baixos. Lâminas embainhadas. Postura alerta, não agressiva.\n\nVocê, KAEL e apenas quatro acompanhantes avançam.\n\nUm deles carrega uma haste branca simples — não rendição, mas sinal claro de que vieram conversar.\n\nDo alto de uma parede interna, a mulher encapuzada reaparece.\n\nDessa vez você a vê com mais clareza.\n\nEla é alta, esguia, de postura firme. O capuz lança sombra sobre o rosto, mas não esconde os olhos atentos demais para alguém comum. Há algo nela que não combina com refugiados desorganizados. Não exatamente nobreza. Não exatamente miséria.\n\nPresença.\n\nEla olha diretamente para você.\n\n— Então você veio.\n\nVocê para alguns passos antes do primeiro arco.\n\n— Eu disse que viria.\n\n— Veio com menos homens do que eu esperava.\n\n— Porque vim ouvir antes de pedir.\n\nEla observa KAEL.\n\n— E ele?\n\n— Meu conselheiro. KAEL.\n\nKAEL faz uma leve reverência.\n\n— Viemos em paz e com respeito aos moradores.\n\nEla desce lentamente por uma escada lateral de pedra.\n\nQuando chega ao pátio quebrado, você percebe que ela não está armada de forma visível. Mas isso não significa ausência de perigo. Pessoas perigosas nem sempre usam espada na cintura.\n\n— Meu nome é MIREN — diz ela.\n\nVocê registra o nome.\n\n— Lucas Rodrigues.",
+                "blob_sha": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+                "claim": "Alta, esguia, postura firme, olhos atentos",
+                "entity": "miren",
+                "field": "appearance",
+                "part_lines": [
+                  9090,
+                  9136
+                ],
+                "part_path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+                "role": "Response",
+                "source_name": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+                "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+                "status": "LITERAL_CANDIDATE_NOT_CANON"
+              },
+              "state": "LITERAL_CANDIDATE_NOT_CANON",
+              "value": "Alta, esguia, postura firme, olhos atentos"
+            },
+            {
+              "field": "relationship",
+              "proof": {
+                "line": 264398,
+                "role": "Response",
+                "sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+                "source_name": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+                "status": "LITERAL_MATCH_NOT_CANON_CERTIFICATION"
+              },
+              "source": {
+                "anchor": "Ela respirou fundo.\n\n— Fiquei com ciúmes de SERÍS.\n\nO fundador permaneceu quieto.\n\n— Não gostei de ver você impressionado com ela.",
+                "blob_sha": "7c01d3a2bebc056d3a6e41fb212f49128374b8dc",
+                "claim": "Ciúmes de Serís expressamente reconhecidos por Miren",
+                "entity": "miren",
+                "field": "relationship",
+                "part_lines": [
+                  11512,
+                  11518
+                ],
+                "part_path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-006",
+                "role": "Response",
+                "source_name": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+                "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+                "status": "LITERAL_CANDIDATE_NOT_CANON"
+              },
+              "state": "LITERAL_CANDIDATE_NOT_CANON",
+              "value": "Ciúmes de Serís expressamente reconhecidos por Miren"
+            },
+            {
+              "field": "relationship",
+              "proof": {
+                "line": 261217,
+                "role": "Prompt",
+                "sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+                "source_name": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+                "status": "LITERAL_MATCH_NOT_CANON_CERTIFICATION"
+              },
+              "source": {
+                "anchor": "Vamos de escolha 4, faremos os 3 ultimos capitulos do livro 3, então vamos fazer uma sequencia incrivel de finalização e precisamos de um real momento de antgonista apos a festa que mude todo o cenario e de a gente uma grande força para iniciarmos o livro 4. Alem disso, SERÍS DAUM agora intensifica oque sua sedução, e começa usar roupas de verão, mostrar decotes a lucas, e tambem começar a ver se seduz a propria miren a sua causa, afinal ela sabe oque quer, lucas é fiel a miren, mas fica muito impressionado com o corpo e peitos firmes e grandes, comos e fosse uma grande modelo famosa com aquela roupa, e acabamos com a primeira briga do casal e reconciliação futura, e a miren com ciumes. Alem disso, deixa tambem as outras mulheres com ciumes. Precisamos tambem de lucas indo a forja a escondido, ir ate a forja matriz, tocar ela pra entender, e com isso perceber que consegue evoluir suas maiores criações a niveis maiores, agora que entende tudo e depois de todos poderes, e começa receber os segundos niveis de criation, onde nao e mais so sobre criar, mas evoluir a novos niveis que ele mesmo desconhe,e fazer peças com ajustes quase perfeitos agora. E vamos fazer os 3 ultimos incriveis, espetaculares e gigantes, encerrando o ano e começando uma nova grande trama e aventura.",
+                "blob_sha": "7c01d3a2bebc056d3a6e41fb212f49128374b8dc",
+                "claim": "Direção autoral: primeira briga, Lucas fiel, sedução estratégica de Serís",
+                "entity": "miren",
+                "field": "relationship",
+                "part_lines": [
+                  8331,
+                  8331
+                ],
+                "part_path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-006",
+                "role": "Prompt",
+                "source_name": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+                "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+                "status": "LITERAL_CANDIDATE_NOT_CANON"
+              },
+              "state": "LITERAL_CANDIDATE_NOT_CANON",
+              "value": "Direção autoral: primeira briga, Lucas fiel, sedução estratégica de Serís"
+            },
+            {
+              "field": "relationship",
+              "proof": {
+                "line": 263184,
+                "role": "Response",
+                "sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+                "source_name": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+                "status": "LITERAL_MATCH_NOT_CANON_CERTIFICATION"
+              },
+              "source": {
+                "anchor": "Dormiam na mesma casa.\n\nMas ainda não haviam conseguido voltar a falar sobre tudo que acontecera naquela noite.\n\nE LUCAS estava começando a entender que pedir desculpas era apenas o primeiro passo.\n\nReconstruir confiança exigia tempo e atitudes.\n\nVI — O homem que sabia esperar",
+                "blob_sha": "7c01d3a2bebc056d3a6e41fb212f49128374b8dc",
+                "claim": "Reconstruir confiança exigia tempo e atitudes",
+                "entity": "miren",
+                "field": "relationship",
+                "part_lines": [
+                  10298,
+                  10306
+                ],
+                "part_path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-006",
+                "role": "Response",
+                "source_name": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+                "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+                "status": "LITERAL_CANDIDATE_NOT_CANON"
+              },
+              "state": "LITERAL_CANDIDATE_NOT_CANON",
+              "value": "Reconstruir confiança exigia tempo e atitudes"
+            }
+          ],
+          "registry_identity": {
+            "aliases": [],
+            "id": "miren",
+            "kind": "character",
+            "name": "Miren"
+          },
+          "required_fields": [
+            "appearance",
+            "age",
+            "voice",
+            "personality",
+            "relationships",
+            "role",
+            "origin",
+            "location",
+            "knowledge",
+            "powers",
+            "inventory",
+            "history"
+          ],
+          "sources": [],
+          "unresolved_fields": [
+            "age",
+            "voice",
+            "personality",
+            "relationships",
+            "role",
+            "origin",
+            "location",
+            "knowledge",
+            "powers",
+            "inventory",
+            "history"
+          ],
+          "visual_conflicts": [
+            {
+              "author_resolution": "Clara, sem sardas, v2",
+              "entity": "miren",
+              "field": "skin",
+              "visual_claims": [
+                "sardas"
+              ]
+            }
+          ],
+          "visual_refs": [
+            "file_0000000061c4820ea9f7e09591ee2bbc"
+          ]
+        }
+      ]
+    },
+    "Astra": {
+      "resolution": "unique",
+      "records": [
+        {
+          "aliases": [
+            "Astra",
+            "astra"
+          ],
+          "author_design": {
+            "age": {
+              "status": "DESIGN_PROPOSAL_PENDING_HISTORICAL_CONCILIATION",
+              "years": 27
+            },
+            "age_safety": "Apenas Lira tem idade numérica explicitamente definida; Miren adulta conforme narrativa. Demais idades numéricas são propostas até conciliação/ratificação; não usar como prova de adultez. Sem sexualização de idade incerta. Efeitos são orientações, não acontecimentos.",
+            "beach_planning": "prevista",
+            "build": "Longilínea, cintura discreta, quadris suaves, pernas longas",
+            "bust": "Busto médio, proporcional",
+            "design_status": "AUTHOR_APPROVED_VISUAL_DIRECTION_PROSPECTIVE",
+            "effect_on_others": "Entusiasmo contagiante e humor que aproxima colegas; interesse afetivo somente quando surgir.",
+            "eyes": "Azul acinzentado",
+            "face": "Alongado, maçãs suaves, sorriso expressivo, franja opcional",
+            "group": "principal",
+            "hair": "Loiro dourado, longo, liso com ondas nas pontas",
+            "height_cm": 179,
+            "hips": "Suaves, proporcionais à silhueta.",
+            "historical_observations": [],
+            "id": "astra",
+            "legs": "Longas e esguias.",
+            "name": "Astra",
+            "role_and_presence": "Pesquisadora; curiosidade, rigor e humor espontâneo",
+            "skin": "Clara",
+            "visual_inspiration": "Taylor Swift: silhueta alta e expressividade",
+            "wardrobe": "Azul celeste, creme, lilás; casacos leves e roupa de laboratório"
+          },
+          "completeness": "PARTIAL_REVIEW_REQUIRED",
+          "id": "astra",
+          "kind": "character",
+          "name": "Astra",
+          "observations": [],
+          "registry_identity": {
+            "aliases": [],
+            "id": "astra",
+            "kind": "character",
+            "name": "Astra"
+          },
+          "required_fields": [
+            "appearance",
+            "age",
+            "voice",
+            "personality",
+            "relationships",
+            "role",
+            "origin",
+            "location",
+            "knowledge",
+            "powers",
+            "inventory",
+            "history"
+          ],
+          "sources": [],
+          "unresolved_fields": [
+            "age",
+            "voice",
+            "personality",
+            "relationships",
+            "role",
+            "origin",
+            "location",
+            "knowledge",
+            "powers",
+            "inventory",
+            "history"
+          ],
+          "visual_conflicts": [],
+          "visual_refs": [
+            "file_0000000061c4820ea9f7e09591ee2bbc"
+          ]
+        }
+      ]
+    },
+    "Dorek": {
+      "resolution": "unique",
+      "records": [
+        {
+          "aliases": [
+            "Dorek",
+            "dorek"
+          ],
+          "completeness": "PARTIAL_REVIEW_REQUIRED",
+          "id": "dorek",
+          "kind": "character",
+          "name": "Dorek",
+          "observations": [],
+          "registry_identity": {
+            "aliases": [],
+            "id": "dorek",
+            "kind": "character",
+            "name": "Dorek"
+          },
+          "required_fields": [
+            "appearance",
+            "age",
+            "voice",
+            "personality",
+            "relationships",
+            "role",
+            "origin",
+            "location",
+            "knowledge",
+            "powers",
+            "inventory",
+            "history"
+          ],
+          "sources": [],
+          "unresolved_fields": [
+            "appearance",
+            "age",
+            "voice",
+            "personality",
+            "relationships",
+            "role",
+            "origin",
+            "location",
+            "knowledge",
+            "powers",
+            "inventory",
+            "history"
+          ],
+          "visual_conflicts": [],
+          "visual_refs": []
+        }
+      ]
+    },
+    "Brannik": {
+      "resolution": "unique",
+      "records": [
+        {
+          "aliases": [
+            "Brannik",
+            "brannik"
+          ],
+          "completeness": "PARTIAL_REVIEW_REQUIRED",
+          "id": "brannik",
+          "kind": "character",
+          "name": "Brannik",
+          "observations": [
+            {
+              "field": "voice_behavior",
+              "proof": {
+                "anchor": "O metal se estendeu pela paisagem como uma fita de prata. Suportes nasceram em sequência, encaixando-se sobre as bases indicadas pelos engenheiros. A guia ganhou um terminal técnico simples, uma cobertura e uma passagem protegida para embarque.\n\nO veículo completo do Dia 572 recebeu os componentes revisados para aquela extensão. Lucas manifestou ainda uma segunda unidade de serviço, destinada a transportar instrumentos e massas de ensaio.\n\nNaira examinou os registros antes de liberar as primeiras passagens desocupadas. A equipe verificou os percursos e as paradas. Dorek e Rumo acompanharam a nova sequência.\n\nDepois de concluídos os ensaios definidos para a manhã, Naira autorizou uma viagem de demonstração em velocidade reduzida com os técnicos voluntários.\n\nBrannik entrou primeiro.\n\nSentou-se.\n\nAjustou o encosto.\n\nErgueu uma caneca vazia, por determinação expressa de Dorek.\n\n**BRANNIK —** HOMENS! HOJE VIAJAMOS PARA O FUTURO!\n\nRumo sentou-se ao lado dele.\n\n**RUMO —** O futuro está no final do trecho técnico.",
+                "episode": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+                "line": 150,
+                "scope": "PRIOR_LITERAL_NOT_UNIVERSAL_KNOWLEDGE",
+                "sequence": 44,
+                "sha256": "aa2efa60b399a48742acf837cacb46b616574f5945fee9afdafa183bccf72646"
+              },
+              "source": {
+                "anchor": "O metal se estendeu pela paisagem como uma fita de prata. Suportes nasceram em sequência, encaixando-se sobre as bases indicadas pelos engenheiros. A guia ganhou um terminal técnico simples, uma cobertura e uma passagem protegida para embarque.\n\nO veículo completo do Dia 572 recebeu os componentes revisados para aquela extensão. Lucas manifestou ainda uma segunda unidade de serviço, destinada a transportar instrumentos e massas de ensaio.\n\nNaira examinou os registros antes de liberar as primeiras passagens desocupadas. A equipe verificou os percursos e as paradas. Dorek e Rumo acompanharam a nova sequência.\n\nDepois de concluídos os ensaios definidos para a manhã, Naira autorizou uma viagem de demonstração em velocidade reduzida com os técnicos voluntários.\n\nBrannik entrou primeiro.\n\nSentou-se.\n\nAjustou o encosto.\n\nErgueu uma caneca vazia, por determinação expressa de Dorek.\n\n**BRANNIK —** HOMENS! HOJE VIAJAMOS PARA O FUTURO!\n\nRumo sentou-se ao lado dele.\n\n**RUMO —** O futuro está no final do trecho técnico.",
+                "episode": "LVI-C07-PV-D573-AUTHOR-SOURCE"
+              },
+              "state": "SOURCE_MATCH",
+              "value": "Exuberante; celebra viagem técnica com caneca vazia."
+            }
+          ],
+          "registry_identity": {
+            "aliases": [],
+            "id": "brannik",
+            "kind": "character",
+            "name": "Brannik"
+          },
+          "required_fields": [
+            "appearance",
+            "age",
+            "voice",
+            "personality",
+            "relationships",
+            "role",
+            "origin",
+            "location",
+            "knowledge",
+            "powers",
+            "inventory",
+            "history"
+          ],
+          "sources": [],
+          "unresolved_fields": [
+            "appearance",
+            "age",
+            "voice",
+            "personality",
+            "relationships",
+            "role",
+            "origin",
+            "location",
+            "knowledge",
+            "powers",
+            "inventory",
+            "history"
+          ],
+          "visual_conflicts": [],
+          "visual_refs": []
+        }
+      ]
+    },
+    "Lysa": {
+      "resolution": "unique",
+      "records": [
+        {
+          "aliases": [
+            "Lysa",
+            "lysa",
+            "Lisa"
+          ],
+          "author_design": {
+            "age": {
+              "status": "DESIGN_PROPOSAL_PENDING_HISTORICAL_CONCILIATION",
+              "years": 30
+            },
+            "age_safety": "Apenas Lira tem idade numérica explicitamente definida; Miren adulta conforme narrativa. Demais idades numéricas são propostas até conciliação/ratificação; não usar como prova de adultez. Sem sexualização de idade incerta. Efeitos são orientações, não acontecimentos.",
+            "beach_planning": "prevista",
+            "build": "Longilínea, ombros alinhados, cintura definida, pernas longas",
+            "bust": "Busto médio",
+            "design_status": "AUTHOR_APPROVED_VISUAL_DIRECTION_PROSPECTIVE",
+            "effect_on_others": "Precisão e autocontrole inspiram confiança; humor contido com o círculo próximo.",
+            "eyes": "Verde musgo",
+            "face": "Oval, sobrancelhas marcantes, nariz reto, feições refinadas",
+            "group": "principal",
+            "hair": "Castanho-escuro, longo, liso; coque no trabalho",
+            "height_cm": 176,
+            "hips": "Discretos e proporcionais.",
+            "historical_observations": [],
+            "id": "lysa",
+            "legs": "Longas e bem alinhadas.",
+            "name": "Lysa",
+            "role_and_presence": "Administração e diplomacia; precisão e humor contido",
+            "skin": "Oliva clara",
+            "visual_inspiration": "Taylor Hill: traços definidos e postura",
+            "wardrobe": "Grafite, vinho, branco; alfaiataria e broche discreto"
+          },
+          "completeness": "PARTIAL_REVIEW_REQUIRED",
+          "id": "lysa",
+          "kind": "character",
+          "name": "Lysa",
+          "observations": [
+            {
+              "field": "voice_role",
+              "proof": {
+                "anchor": "A correspondência continha o boletim de Renshar encaminhado pelos postos de Halvern desde o Dia 569, acompanhado de uma carta de apresentação de suas autoridades. Passara por trocas de montaria e pela rede de estradas durante quatro dias.\n\nLysa aproximou a folha.\n\n**LYSA —** Temos confirmação de uma conquista. Renshar caiu no Dia 567. Testemunhas viram soldados do Dominato, portões destruídos e novas ordens de cobrança. Há relatos indiretos da presença pessoal do soberano imperial.\n\nLucas leu o nome.\n\n**LUCAS —** Velkar Draen.\n\nPronunciou-o devagar.\n\nNunca o ouvira antes.\n\nVaro apontou para o mapa incompleto.\n\n**VARO —** É a primeira informação nominal que recebemos sobre quem governa o Dominato. Ainda não temos um mapa confiável de suas forças, nem a extensão da campanha.\n\nMiren puxou uma cadeira.",
+                "episode": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+                "line": 60,
+                "scope": "PRIOR_LITERAL_NOT_UNIVERSAL_KNOWLEDGE",
+                "sequence": 44,
+                "sha256": "aa2efa60b399a48742acf837cacb46b616574f5945fee9afdafa183bccf72646"
+              },
+              "source": {
+                "anchor": "A correspondência continha o boletim de Renshar encaminhado pelos postos de Halvern desde o Dia 569, acompanhado de uma carta de apresentação de suas autoridades. Passara por trocas de montaria e pela rede de estradas durante quatro dias.\n\nLysa aproximou a folha.\n\n**LYSA —** Temos confirmação de uma conquista. Renshar caiu no Dia 567. Testemunhas viram soldados do Dominato, portões destruídos e novas ordens de cobrança. Há relatos indiretos da presença pessoal do soberano imperial.\n\nLucas leu o nome.\n\n**LUCAS —** Velkar Draen.\n\nPronunciou-o devagar.\n\nNunca o ouvira antes.\n\nVaro apontou para o mapa incompleto.\n\n**VARO —** É a primeira informação nominal que recebemos sobre quem governa o Dominato. Ainda não temos um mapa confiável de suas forças, nem a extensão da campanha.\n\nMiren puxou uma cadeira.",
+                "episode": "LVI-C07-PV-D573-AUTHOR-SOURCE"
+              },
+              "state": "SOURCE_MATCH",
+              "value": "Apresenta evidências da conquista de Renshar com precisão D573."
+            }
+          ],
+          "registry_identity": {
+            "aliases": [],
+            "id": "lysa",
+            "kind": "character",
+            "name": "Lysa"
+          },
+          "required_fields": [
+            "appearance",
+            "age",
+            "voice",
+            "personality",
+            "relationships",
+            "role",
+            "origin",
+            "location",
+            "knowledge",
+            "powers",
+            "inventory",
+            "history"
+          ],
+          "sources": [],
+          "unresolved_fields": [
+            "age",
+            "voice",
+            "personality",
+            "relationships",
+            "role",
+            "origin",
+            "location",
+            "knowledge",
+            "powers",
+            "inventory",
+            "history"
+          ],
+          "visual_conflicts": [],
+          "visual_refs": []
+        }
+      ]
+    },
+    "Kael": {
+      "resolution": "unique",
+      "records": [
+        {
+          "aliases": [
+            "Kael",
+            "kael"
+          ],
+          "completeness": "PARTIAL_REVIEW_REQUIRED",
+          "id": "kael",
+          "kind": "character",
+          "name": "Kael",
+          "observations": [
+            {
+              "field": "role_historical",
+              "proof": {
+                "line": 1720,
+                "role": "Response",
+                "sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+                "source_name": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+                "status": "LITERAL_MATCH_NOT_CANON_CERTIFICATION"
+              },
+              "source": {
+                "anchor": "DIA 1 • 18H12 • ACAMPAMENTO DA LEGIÃO\n\nUma ordem pode vencer uma batalha. Uma boa decisão pode evitar a próxima.\n\nO sol desaparece atrás das montanhas, deixando uma faixa avermelhada sobre o vale. Uma névoa fina começa a subir do rio. Os homens da Legião acendem pequenos braseiros, protegendo as chamas do vento.\n\nVocê observa o acampamento.\n\nTrezentos guerreiros nasceram de sua vontade. Um cavaleiro negro agora compartilha suas ambições. Um comandante experiente acaba de escolher o próprio nome.\n\nMas três legionários continuam desaparecidos.\n\nE você está cansado demais para criar até mesmo uma espada sem arriscar desmaiar.\n\nVARO e KAEL aguardam sua decisão.\n\n— VARO, quero que você assuma pessoalmente a operação de busca. Discrição acima de velocidade. Não quero uma batalha por orgulho. Quero nossos homens de volta.\n\nO capitão bate o punho contra o peito.\n\n— Entendido.\n\nVocê se volta para KAEL.",
+                "line_in_part": 1720,
+                "part_hint": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+                "role": "Response",
+                "source_name": "01_DIA_001_A_383_FONTE_LITERAL.txt"
+              },
+              "state": "SOURCE_MATCH",
+              "value": "Aguarda decisões com Varo no primeiro acampamento."
+            }
+          ],
+          "registry_identity": {
+            "aliases": [],
+            "id": "kael",
+            "kind": "character",
+            "name": "Kael"
+          },
+          "required_fields": [
+            "appearance",
+            "age",
+            "voice",
+            "personality",
+            "relationships",
+            "role",
+            "origin",
+            "location",
+            "knowledge",
+            "powers",
+            "inventory",
+            "history"
+          ],
+          "sources": [],
+          "unresolved_fields": [
+            "appearance",
+            "age",
+            "voice",
+            "personality",
+            "relationships",
+            "role",
+            "origin",
+            "location",
+            "knowledge",
+            "powers",
+            "inventory",
+            "history"
+          ],
+          "visual_conflicts": [],
+          "visual_refs": []
+        }
+      ]
+    }
+  },
+  "canon_changed": false
+}
