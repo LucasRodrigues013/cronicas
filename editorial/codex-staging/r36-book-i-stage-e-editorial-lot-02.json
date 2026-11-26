@@ -1,0 +1,643 @@
+{
+  "schema": "worldroot-r36-book-i-stage-e-editorial-lot-v1",
+  "book": 1,
+  "stage": "E",
+  "lot": "E02",
+  "status": "PARTIAL_EDITORIAL_REVIEW_NOT_HOMOLOGATED",
+  "engine_commit": "19d4be7759ba7c0d68adad8eb969414f78caaef3",
+  "previous_lot": {
+    "commit": "1fa72802ff5bb73454d499dd648aa125fa13b4bb",
+    "blob": "9c5d3e917b9caa45572723bb384036e4ec5a2d29"
+  },
+  "source": {
+    "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+    "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+    "lines": [
+      1,
+      40845
+    ],
+    "narrative_days": [
+      1,
+      90
+    ],
+    "chapter_numbers": 38,
+    "raw_words": 171829,
+    "prompts": 44,
+    "responses": 44
+  },
+  "ledger_batch_blob": "4b2bf8be702b485f209db92333cd953dd13e3932",
+  "reviewer": {
+    "executor": "ChatGPT current editorial session",
+    "independent_models": 0,
+    "local_endpoint_unavailable": true
+  },
+  "ledger_reviews": [
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 7602,
+      "anchor": "Em uma sala distante, dentro das próprias ruínas dos Três Arcos, uma pessoa encapuzada observa a chama de uma pequena fogueira.",
+      "anchor_sha256": "8f2f42e6c1a8b1e2a2d6f45ea82985b47b212bc010b1947a8bf6022a9ae14f14",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 115,
+          "entity_id": "tres-arcos",
+          "field": "behavior",
+          "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Cena paralela reservada: há pessoa encapuzada nas ruínas e pergaminho com símbolo apagado. Não é comportamento do local; Lucas não recebe automaticamente o conhecimento.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 7636,
+      "anchor": "Vou dividir este capítulo entre a missão diplomática aos Três Arcos, a nova organização dos dez destacamentos e seu experimento de meditação. Também vamos finalmente conhecer a mulher resgatada da pedreira. O teste poderá revelar algo sobre a mana e o Sistema, mas não vou presumir que a armadura esteja viva ou que seja possível absorver energia ilimitada.",
+      "anchor_sha256": "fb9d46b0639c188858ac2619dbc95c954201261149813a88335992b76fbb0f5a",
+      "source_role": "META",
+      "decisions": [
+        {
+          "original_id": 116,
+          "entity_id": "tres-arcos",
+          "field": "appearance",
+          "prior_verdict": "NON_NARRATIVE",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Planejamento da resposta; não descreve aparência do local.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 117,
+          "entity_id": "tres-arcos",
+          "field": "powers",
+          "prior_verdict": "NON_NARRATIVE",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Planejamento de missão, não atribuição de poderes a Três Arcos.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 118,
+          "entity_id": "tres-arcos",
+          "field": "capabilities",
+          "prior_verdict": "NON_NARRATIVE",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Planejamento da resposta, não capacidade comprovada de Três Arcos.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 119,
+          "entity_id": "tres-arcos",
+          "field": "lifecycle",
+          "prior_verdict": "NON_NARRATIVE",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Plano de visita não é mudança histórica do local.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 120,
+          "entity_id": "sistema",
+          "field": "capabilities",
+          "prior_verdict": "NON_NARRATIVE",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Teste planejado, não capacidade comprovada do Sistema.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 121,
+          "entity_id": "sistema",
+          "field": "architecture",
+          "prior_verdict": "NON_NARRATIVE",
+          "verdict": "NON_NARRATIVE",
+          "reason": "A proposta de teste não descreve arquitetura do Sistema.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 122,
+          "entity_id": "sistema",
+          "field": "lifecycle",
+          "prior_verdict": "NON_NARRATIVE",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Não indica mudança de estado ou ciclo de vida do Sistema.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 7650,
+      "anchor": "Estou tratando a ilustração como conceitual, não canônica, e ajustando números, cronologia e funções. Lysa será importante por conhecimentos civis e regionais, enquanto a meditação revelará apenas sinais observáveis, não uma confirmação definitiva da magia.",
+      "anchor_sha256": "c9740179ba218e25f23efbb9bd8093c4e8ec0b65cb82f6ba118110eff549c939",
+      "source_role": "META",
+      "decisions": [
+        {
+          "original_id": 123,
+          "entity_id": "lysa",
+          "field": "powers",
+          "prior_verdict": "NON_NARRATIVE",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Comentário de preparação da narrativa; não atribuir magia a Lysa.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 124,
+          "entity_id": "lysa",
+          "field": "behavior",
+          "prior_verdict": "NON_NARRATIVE",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Comentário editorial não estabelece comportamento vivido de Lysa.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 7660,
+      "anchor": "Estou mantendo a arte como referência visual, não registro factual. A meditação confirma apenas uma reação física observável da armadura; a origem permanece incerta, e o encontro em Três Arcos exige poucos emissários, cautela e respeito aos ocupantes.",
+      "anchor_sha256": "e5000d7cb34bab3dd9cae64b8e74be2047475d888c5e6a0019abfc7549e2dfd7",
+      "source_role": "META",
+      "decisions": [
+        {
+          "original_id": 125,
+          "entity_id": "tres-arcos",
+          "field": "appearance",
+          "prior_verdict": "NON_NARRATIVE",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Comentário sobre imagem de referência e preparação, não descrição visual canônica.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 126,
+          "entity_id": "tres-arcos",
+          "field": "behavior",
+          "prior_verdict": "NON_NARRATIVE",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Plano para encontro cauteloso, não comportamento do local.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 7806,
+      "anchor": "Lembro que estava com BRANNIK na carroça. Como foi parar naquela pedreira?",
+      "anchor_sha256": "eca3c9ff8a774658043a6209b9b54aee2d960881e4c4b2ba99f9cfc9f0de0c66",
+      "source_role": "REPORT",
+      "decisions": [
+        {
+          "original_id": 127,
+          "entity_id": "brannik",
+          "field": "location",
+          "prior_verdict": "REPORT_ONLY",
+          "verdict": "REPORT_ONLY",
+          "reason": "Lucas lembra de Brannik na carroça ao interrogar Lysa; é recordação em diálogo, não localização presente.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 7810,
+      "anchor": "Trabalhava registrando mercadorias para caravanas que atravessavam as rotas de Thalor. Sei ler contratos, conferir pesos e identificar alguns selos comerciais.",
+      "anchor_sha256": "297b882d79aa5dc0398e7071a6bd349b5111f7006e94720ad0ffa53c83f57d4e",
+      "source_role": "REPORT",
+      "decisions": [
+        {
+          "original_id": 128,
+          "entity_id": "thalor",
+          "field": "location",
+          "prior_verdict": "REPORT_ONLY",
+          "verdict": "REPORT_ONLY",
+          "reason": "Lysa relata ter trabalhado com caravanas nas rotas de Thalor; não delimita fronteiras ou coordenadas.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 7896,
+      "anchor": "LYSA não sorri.",
+      "anchor_sha256": "24c7706699ac88e4e3fe4ea52cd5a6e06e7d4cd0773cb543c7b87381d29a4654",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 129,
+          "entity_id": "lysa",
+          "field": "voice",
+          "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Não sorrir é comportamento facial naquele instante, não característica de voz.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 7900,
+      "anchor": "LYSA não está destinada a se tornar uma figura importante apenas por ter sido resgatada. Mas possui capacidades que a Legião realmente precisa, e a decisão de utilizá-las será dela.",
+      "anchor_sha256": "5682eb1d4cc91e4f34be928e1c4a43c731dd11811818acfd456ff8600048b924",
+      "source_role": "META",
+      "decisions": [
+        {
+          "original_id": 130,
+          "entity_id": "lysa",
+          "field": "capabilities",
+          "prior_verdict": "REPORT_ONLY",
+          "verdict": "NON_NARRATIVE",
+          "reason": "Comentário narratorial sobre desenvolvimento e autonomia; não enumera capacidades concretas. Recuperar competências da fala em 7810 como autorrelato, sem convertê-lo em fato testado.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 7904,
+      "anchor": "LYSA, você conhece os Três Arcos?",
+      "anchor_sha256": "f6034fa7eb8fb25aa6594e57fe7e6e5540a574a038dfe713132e7d090e8da956",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 131,
+          "entity_id": "lysa",
+          "field": "architecture",
+          "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Pergunta de Lucas sobre Três Arcos dirigida a Lysa; não atribui arquitetura a ela.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 7952,
+      "anchor": "O homem da pedreira utilizou uma pedra azul para produzir energia. O Sistema conhece minhas criações. Minha armadura recupera meu corpo.",
+      "anchor_sha256": "08cb33aba9e35d592333dd73fecd4e4a615e358bcb472bf4c81c54388a5953c3",
+      "source_role": "HYPOTHESIS",
+      "decisions": [
+        {
+          "original_id": 132,
+          "entity_id": "sistema",
+          "field": "capabilities",
+          "prior_verdict": "REPORT_ONLY",
+          "verdict": "HYPOTHESIS",
+          "reason": "Reflexão de Lucas sobre o conhecimento do Sistema e eventual fonte comum de energia; não prova capacidade universal.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 133,
+          "entity_id": "sistema",
+          "field": "lifecycle",
+          "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+          "verdict": "HYPOTHESIS",
+          "reason": "A origem comum é pergunta não respondida; não comprova ciclo de vida do Sistema.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 8122,
+      "anchor": "Sistema, se algum deus me trouxe aqui, por que não me deu as respostas necessárias?",
+      "anchor_sha256": "d27097dfea25bf498cac4fa7e3d6d3ea1982e5b57b018d77c0b0e3d78bb265df",
+      "source_role": "HYPOTHESIS",
+      "decisions": [
+        {
+          "original_id": 134,
+          "entity_id": "sistema",
+          "field": "relationships",
+          "prior_verdict": "FIELD_OR_SUBJECT_INSUFFICIENT",
+          "verdict": "HYPOTHESIS",
+          "reason": "Lucas formula pergunta sobre possível deus responsável por sua chegada. A falta de resposta não confirma relação divina.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 8204,
+      "anchor": "O Sistema registra sua observação.",
+      "anchor_sha256": "02af8364d955edea4c5a8bee8d77b937ea88f2580eface22eb6733d49be59eb2",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 135,
+          "entity_id": "sistema",
+          "field": "behavior",
+          "prior_verdict": "SCENE_CANDIDATE",
+          "verdict": "SUPPORTED",
+          "reason": "Ação específica narrada.",
+          "claim": "O Sistema registrou uma observação de Lucas durante o experimento.",
+          "evidence": "O Sistema registra sua observação.",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 8245,
+      "anchor": "Seis legionários, acompanhados voluntariamente por BRANNIK, chegaram a uma elevação de onde podiam observar as ruínas.",
+      "anchor_sha256": "e178099668cecdfdfaf6fd64eb832ee7e7a3fc3733ca1c4c787403389a2daf39",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 136,
+          "entity_id": "brannik",
+          "field": "location",
+          "prior_verdict": "SCENE_CANDIDATE",
+          "verdict": "SUPPORTED",
+          "reason": "Deslocamento histórico voluntário com seis legionários; não representa posição atual.",
+          "claim": "Brannik chegou a uma elevação com vista para as ruínas no Dia 3.",
+          "evidence": "Seis legionários, acompanhados voluntariamente por BRANNIK, chegaram a uma elevação de onde podiam observar as ruínas.",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 8299,
+      "anchor": "Nosso comandante, Lucas Rodrigues.",
+      "anchor_sha256": "6c5032948e1ca71966caf701b7ee3af8a96ac0bc3893b625fdb7dd105aae02ac",
+      "source_role": "REPORT",
+      "decisions": [
+        {
+          "original_id": 137,
+          "entity_id": "lucas",
+          "field": "role",
+          "prior_verdict": "SCENE_CANDIDATE",
+          "verdict": "REPORT_ONLY",
+          "reason": "A equipe identifica Lucas Rodrigues como seu comandante; não equivale a título político ou soberania.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 8323,
+      "anchor": "Três Arcos possui moradores, água aparentemente acessível e estruturas recuperáveis. Mas não é uma terra desocupada à espera de um dono.",
+      "anchor_sha256": "1a7a8cee077d13a5f80db03eb3d052427c09f32ac02c04499bcd7a8f3714a356",
+      "source_role": "REPORT",
+      "decisions": [
+        {
+          "original_id": 138,
+          "entity_id": "tres-arcos",
+          "field": "population",
+          "prior_verdict": "REPORT_ONLY",
+          "verdict": "REPORT_ONLY",
+          "reason": "Relatório de reconhecimento informa ocupação de Três Arcos; não informa quantidade de habitantes nem propriedade concedida.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 8331,
+      "anchor": "LYSA o acompanha como testemunha e consultora voluntária, sem assumir ainda um cargo permanente na Legião.",
+      "anchor_sha256": "b3b75046feb85cc866b8f3a95406b44d7a7c869c3753ffdd9d6666382ad631bc",
+      "source_role": "NARRATED",
+      "decisions": [
+        {
+          "original_id": 139,
+          "entity_id": "lysa",
+          "field": "lifecycle",
+          "prior_verdict": "SCENE_CANDIDATE",
+          "verdict": "SUPPORTED",
+          "reason": "Estado histórico explícito: atuação voluntária sem cargo permanente, não inferir que se tornou efetiva na mesma cena.",
+          "claim": "Lysa acompanhou Kael como testemunha e consultora voluntária, ainda sem cargo permanente na Legião.",
+          "evidence": "LYSA o acompanha como testemunha e consultora voluntária, sem assumir ainda um cargo permanente na Legião.",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    },
+    {
+      "source": "history:01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+      "line": 8367,
+      "anchor": "Posso solicitar uma análise formal dos direitos sobre Três Arcos e levar ao meu superior uma proposta de recuperação das estruturas. Mas precisarei de garantias de que sua Legião não expulsará os moradores existentes.",
+      "anchor_sha256": "653d6013388ea166d54e4cce465ab8e7ed8d8cedae541a36840bb15c26715785",
+      "source_role": "PLAN",
+      "decisions": [
+        {
+          "original_id": 140,
+          "entity_id": "tres-arcos",
+          "field": "population",
+          "prior_verdict": "PROPOSAL_OR_ORDER",
+          "verdict": "REPORT_ONLY",
+          "reason": "Edran propõe análise e exige garantias de não expulsão; não estabelece número de habitantes nem aprovação territorial.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 141,
+          "entity_id": "legiao",
+          "field": "architecture",
+          "prior_verdict": "PROPOSAL_OR_ORDER",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Proposta de recuperação não demonstra arquitetura própria da Legião nem obra realizada.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        },
+        {
+          "original_id": 142,
+          "entity_id": "legiao",
+          "field": "population",
+          "prior_verdict": "PROPOSAL_OR_ORDER",
+          "verdict": "NOT_ATTRIBUTED",
+          "reason": "Garantia de não expulsar moradores não é contagem populacional da Legião.",
+          "claim": "",
+          "evidence": "",
+          "current_state": false,
+          "canon_promotion": false
+        }
+      ]
+    }
+  ],
+  "identity_evidence_addenda": [
+    {
+      "id": "candidate:daren-book-i",
+      "corrected_evidence": [
+        {
+          "line": 17666,
+          "text": "Um dos moradores, rapaz de aproximadamente dezessete anos, observava a conversa a alguns passos."
+        }
+      ],
+      "reason": "Completar ancoragem do dado de idade aproximada afirmado em E01; evidência anterior 17670 é convite a ver desenhos, não a idade."
+    },
+    {
+      "id": "candidate:darius-book-i",
+      "corrected_evidence": [
+        {
+          "line": 30593,
+          "text": "6"
+        }
+      ],
+      "reason": "Número de classificação inaugural."
+    },
+    {
+      "id": "candidate:malrek-book-i",
+      "corrected_evidence": [
+        {
+          "line": 30597,
+          "text": "7"
+        }
+      ],
+      "reason": "Número de classificação inaugural."
+    },
+    {
+      "id": "candidate:toran-book-i",
+      "corrected_evidence": [
+        {
+          "line": 30605,
+          "text": "9"
+        }
+      ],
+      "reason": "Número de classificação inaugural."
+    }
+  ],
+  "private_observation_candidate": {
+    "source_line": 7602,
+    "anchor": "Em uma sala distante, dentro das próprias ruínas dos Três Arcos, uma pessoa encapuzada observa a chama de uma pequena fogueira.",
+    "related_line": 7604,
+    "related_evidence": "Sobre a mesa de pedra há um pergaminho antigo, marcado por um símbolo quase apagado.",
+    "scope": "NARRATOR_PRIVATE_SCENE",
+    "claim": "Pessoa encapuzada observa chama nas ruínas; pergaminho antigo com símbolo quase apagado sobre mesa.",
+    "known_by_lucas": false,
+    "knowledge_note": "Não há evidência neste contexto de que Lucas testemunhou ou foi informado; não afirmar conhecimento futuro.",
+    "status": "EDITORIAL_CANDIDATE_NOT_ADMITTED",
+    "canon_promotion": false
+  },
+  "checks": {
+    "all_28": true,
+    "group_complete": true,
+    "literal_exact": true,
+    "roles_consistent": true,
+    "supported_source": true,
+    "no_overlap": true,
+    "daren_age_anchor": true,
+    "rank_anchors": true,
+    "private_knowledge_not_promoted": true
+  },
+  "limitations": [
+    "Single real editorial pass; no independent semantic certification. Existing native queue contract consulted; this is editorial staging, not a semantic_local result or typed runtime admission.",
+    "Historical claims only; no current-state projection. No automated promotion.",
+    "AERÚN, Tessa, Campo Aurora/Base Aurora: no literal matches within Book I source boundary; keep prior author rules, apply on later relevant material.",
+    "No full review of 142 discovery candidates, 22 graph edges, all 30 dimensions, all 192 profiles or all global pending fields/events. No fresh runtime suite or replay performed."
+  ],
+  "checkpoint": {
+    "book": 1,
+    "stage": "E",
+    "editorial_ledger_ids_reviewed_cumulative": [
+      [
+        100,
+        142
+      ]
+    ],
+    "editorial_targets_reviewed_cumulative": 43,
+    "editorial_contexts_reviewed_cumulative": 25,
+    "remaining_first_editorial_lot_target_ids": [
+      [
+        1,
+        99
+      ],
+      [
+        143,
+        307
+      ]
+    ],
+    "remaining_grouped_contexts": 211,
+    "identities_context_reviewed": 14,
+    "identities_pending_independent_or_authoritative_admission": 14,
+    "semantic_certified": 0,
+    "typed_events_admitted": 0,
+    "next": "Continue at 143 in complete context groups, then 1–99; preserve E01/E02 and prior triage. Reconcile discovery candidates, graph and substantive dimensions; use existing admission and runtime gates."
+  },
+  "canon_changed": false,
+  "production_activated": false
+}
