@@ -5,7 +5,7 @@
   "approved_at": "2026-11-25",
   "policy_revision": "R35",
   "engine_code_branch": "main",
-  "engine_code_commit": "1d810a01724ff3a9ad96ac7a0c5c28474ab6ec15",
+  "engine_code_commit": "0e5f4bfc5f833b9681d9f4ec3b288dd36952d03b",
   "canonical_head_rule": "canon/HEAD.json is a historical narrative checkpoint, never a dumping ground for engine policy; update only after real next author choice and canonical validation.",
   "source_of_truth": "story-archive/episodes/<ID>/draft/narrativa_integral.md plus immutable manifest + inbox + review + reader_receipt",
   "before_new_episode": {
@@ -16,7 +16,8 @@
     "on_failure": "BLOCK_NARRATIVE_COMPLETION_AND_REPORT_NO_SAVE; never use editorial summary as substituted prose",
     "r33_preparation": "After actual closure, persist exact author-bound request in requests/<delivery_id>.json; workflow worldroot-r33-prepare publishes immutable preparations/<delivery_id>.json; re-fetch and verify before drafting. Never generate a choice for a request.",
     "r34_intent": "New persisted R33-compatible requests must include r34_intent with seven distinct policy-backed dimensions, focal character fields, historical comparison and contextual opportunity mapping. No forced scenes or unsupported physical traits.",
-    "r35_plan": "Persist immutable R33-compatible request with r34_intent and r35_plan: real profile, scene budgets, lived beats, two references, separate adult opportunities; verify prep before prose."
+    "r35_plan": "Persist immutable R33-compatible request with r34_intent and r35_plan: real profile, scene budgets, lived beats, two references, separate adult opportunities; verify prep before prose.",
+    "r35_refinement": "Required r35_plan.refinement: five contextual axes with historical reference and scene mapping; source recovery for each focal character; docs/r35-literary-refinement.md."
   },
   "for_each_episode": {
     "must_save_complete_text": true,
@@ -43,7 +44,8 @@
     "next_author_choice": "Only next actual USER_MESSAGE choice closes previous archived episode in canon and increments HEAD.",
     "r33_metadata": "R33 archived episodes remain unchanged and independently verifiable; R34 retains R33 request/preparation and review bindings.",
     "r34_metadata": "Historical R34 remains immutable; R35 retains r34_intent and review.",
-    "r35_metadata": "New episodes revision=35. Hard floor real prose: regular 8800, special 9500, finale 11000. Exception only explicit literal author choice line. R35 requires exact final segment receipts and visible reader text, scene/quality/opportunity review, versioned choices and header. No retroactive changes."
+    "r35_metadata": "New episodes revision=35. Hard floor real prose: regular 8800, special 9500, finale 11000. Exception only explicit literal author choice line. R35 requires exact final segment receipts and visible reader text, scene/quality/opportunity review, versioned choices and header. No retroactive changes.",
+    "r35_refinement": "Required r35_review.refinement: concrete comparative review with two distinct narrative moments per axis; cadence signal contextual, not a line quota; avoid padding and forced conflict or romance. Prior archived episodes unaffected."
   },
   "limits": {
     "automatic_chat_capture": false,
@@ -59,5 +61,7 @@
     "latest_archived_sha256": "c178b87337d668bb44d0a369de3a1615bf3bf2d823987812bd1a2591b28b93a4",
     "chapter_6_all_five_parts_archived": true
   },
-  "scope": "PROCEDURAL_ONLY_NO_NARRATIVE_CHANGE"
+  "scope": "PROCEDURAL_ONLY_NO_NARRATIVE_CHANGE",
+  "policy_refinement": "R35-refinement-v1",
+  "noncanonical_test_exclusion": "LVI-C09-PI-D579-TESTE-R35 is a discarded experiment, never a narrative authority, choice, episode, character profile or continuity source. Retain editorial lessons only. Resume from actual D578 choice."
 }
