@@ -1,0 +1,45 @@
+{
+  "approval_commit": "f08c6584eaa323ccdd960c4f4905544fc704380d",
+  "base_archive": "4d2bdb7444c785705e494c3d49cad8500af25a8a",
+  "base_checkpoint": "0f5dc88d5d8624f0d57d892a5bdec022cc0363ec",
+  "engine": "3170905db607f89004ed3d62a064dbb092922080",
+  "files": {
+    "editorial/registries/r35-natural-completion-d579-v12.json": {
+      "sha256": "2aac3130d4e07ad8815d15dcafd9bb7ab45d6a6224605bfad6a097a787807efb",
+      "git_blob": "13a2600d69e2fe494a864fd999b29506c1f4207d"
+    },
+    "editorial/registries/r35-world-completion-d579-v10.json": {
+      "sha256": "e2e194521f96315d8d3e7025f7680b53cff07e9cb12a1f582562738259b8af8c",
+      "git_blob": "0b4f1c5fb89ae38b17ed1c31822b80f4fd33c410"
+    },
+    "editorial/registries/r35-legacy-name-reconciliation-v8.json": {
+      "sha256": "0660cc0a33f559b5ac38d094b2ca65cf77528c3879bb6c54f23573c1af42c830",
+      "git_blob": "95bd091b980b4f19007c79dc7b9e7116ec4e7d1d"
+    },
+    "editorial/registries/r35-living-overlay-manifest.json": {
+      "sha256": "013d84f1a9a4b8ec895178aeec5cf148bcfbba01bf811000535c813f7beda40c",
+      "git_blob": "5bd6021c32f8d41a554998615078e4136acdda84"
+    }
+  },
+  "approved_fields": 25,
+  "unchanged_fields": 5898,
+  "protected_fields_unchanged": 153,
+  "profiles": 192,
+  "names": 96,
+  "links": 25,
+  "records": 22,
+  "groups": 17,
+  "native_regression_reused": 705,
+  "replay": {
+    "records": 1256,
+    "events": 0,
+    "integrity_check": "ok",
+    "idempotent": true,
+    "restore_matches": true
+  },
+  "narrative_head_blob": "9b4e09682fc3148511d59e73ec56fdcda4e396e5",
+  "canon_changed": false,
+  "production_activated": false,
+  "production_hold": true,
+  "status": "LOCAL_VERIFICATION_PASS"
+}

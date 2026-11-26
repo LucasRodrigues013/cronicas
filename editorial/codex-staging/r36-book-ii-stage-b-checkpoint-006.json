@@ -1,0 +1,106 @@
+{
+  "schema": "worldroot-r36-book-ii-stage-b-checkpoint-v1",
+  "book": 2,
+  "stage": "B",
+  "batch": 6,
+  "status": "PARTIAL_EDITORIAL_RECONCILIATION_ARCHIVED",
+  "previous_checkpoint": "0f5dc88d5d8624f0d57d892a5bdec022cc0363ec",
+  "review": {
+    "commit": "a02158c04b5e301fab7fd0ca57fb5a668693f935",
+    "author_approval_commit": "f08c6584eaa323ccdd960c4f4905544fc704380d",
+    "author_approval_preflight_path": "editorial/codex-staging/r36-book-ii-stage-b-b006-preflight-DRAFT.json",
+    "author_approval_preflight_sha256": "26db73cb9829e7bd6a1c6cfeed358e8110da242be667b3b2100441d30334282f",
+    "approved_ids": [
+      438,
+      459
+    ],
+    "native_receipt_sha256": "bdd554b4dfd809359a22dcbb37f96d65eb3d0989bac067d7d805f9fdf9f07756"
+  },
+  "archive": {
+    "commit": "bd94ce02c705904b0ad9a562bc8edce3e3039f77",
+    "parent": "4d2bdb7444c785705e494c3d49cad8500af25a8a",
+    "manifest_blob": "5bd6021c32f8d41a554998615078e4136acdda84",
+    "character_overlay": "13a2600d69e2fe494a864fd999b29506c1f4207d",
+    "world_overlay": "0b4f1c5fb89ae38b17ed1c31822b80f4fd33c410",
+    "naming_overlay": "95bd091b980b4f19007c79dc7b9e7116ec4e7d1d",
+    "files": {
+      "editorial/registries/r35-natural-completion-d579-v12.json": {
+        "sha256": "2aac3130d4e07ad8815d15dcafd9bb7ab45d6a6224605bfad6a097a787807efb",
+        "git_blob": "13a2600d69e2fe494a864fd999b29506c1f4207d"
+      },
+      "editorial/registries/r35-world-completion-d579-v10.json": {
+        "sha256": "e2e194521f96315d8d3e7025f7680b53cff07e9cb12a1f582562738259b8af8c",
+        "git_blob": "0b4f1c5fb89ae38b17ed1c31822b80f4fd33c410"
+      },
+      "editorial/registries/r35-legacy-name-reconciliation-v8.json": {
+        "sha256": "0660cc0a33f559b5ac38d094b2ca65cf77528c3879bb6c54f23573c1af42c830",
+        "git_blob": "95bd091b980b4f19007c79dc7b9e7116ec4e7d1d"
+      },
+      "editorial/registries/r35-living-overlay-manifest.json": {
+        "sha256": "013d84f1a9a4b8ec895178aeec5cf148bcfbba01bf811000535c813f7beda40c",
+        "git_blob": "5bd6021c32f8d41a554998615078e4136acdda84"
+      }
+    },
+    "remote_readback_verified": true
+  },
+  "counts": {
+    "targets_total": 261,
+    "editorially_reviewed": 152,
+    "remaining": 109,
+    "groups_reviewed": 117,
+    "groups_total": 203,
+    "fields_changed_this_batch": 25,
+    "field_updates_cumulative": 140,
+    "existing_entities_this_batch": 11,
+    "existing_profile_count": 192,
+    "independently_certified": 0,
+    "additional_observations": 6
+  },
+  "verification": {
+    "local_incorporation_audit_sha256": "08e4ac8e5cf6688911921df4e77f2ad596baa2498fa7ec99850a557b52a6fe00",
+    "native_test_engine": "3170905db607f89004ed3d62a064dbb092922080",
+    "native_tests_passed_reused": 705,
+    "native_load_overlay_before_after": true,
+    "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+    "source_part_git_hashes_verified": 6,
+    "context_comparisons": 198,
+    "all_fields": 5923,
+    "unchanged_fields": 5898,
+    "all_protected_fields_unchanged": 153,
+    "private_scope_fields_unchanged": 40,
+    "names": 96,
+    "links": 25,
+    "narrative_head_blob": "9b4e09682fc3148511d59e73ec56fdcda4e396e5",
+    "sqlite": {
+      "records": 1256,
+      "events": 0,
+      "integrity_check": "ok",
+      "idempotent": true,
+      "restore_matches": true
+    },
+    "local_incorporation_audit_path": "editorial/codex-staging/r36-book-ii-stage-b-b006-incorporation-audit.json",
+    "remote_git_tree": "bd94ce02c705904b0ad9a562bc8edce3e3039f77",
+    "cursor_integration_access": "Repository exclusion confirmed by author before push",
+    "hosted_actions_dispatched": false
+  },
+  "reservations": {
+    "independent_certification_pending": true,
+    "book_i_reservations_inherited": true,
+    "production_hold": true,
+    "canonical_head_unchanged": true,
+    "unresolved_named_identity_and_infrastructure_candidates_separately_staged": true
+  },
+  "canon_changed": false,
+  "production_activated": false,
+  "next": {
+    "ledger_id": 460,
+    "global_line": 82432,
+    "stage": "B",
+    "batch": 7,
+    "base_archive": "bd94ce02c705904b0ad9a562bc8edce3e3039f77",
+    "first_group": [
+      460
+    ]
+  },
+  "free_only_runbook": "docs/r36-historical-review-free-only.md"
+}
