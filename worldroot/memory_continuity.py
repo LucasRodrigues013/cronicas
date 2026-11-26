@@ -22,7 +22,14 @@ def fusion(db, query, entity=None, topic=None, role=None, limit=20):
     for strategy,ent,top in (("legacy",entity,topic),("hybrid",entity,topic),
                             ("contextual",entity,topic),("contextual",None,topic),
                             ("hybrid",None,None)):
-        result=retrieve(db,query,ent,top,role,limit=80,strategy=strategy)
+        try:
+            result=retrieve(db,query,ent,top,role,limit=80,strategy=strategy)
+        except ValueError as exc:
+            # The historical index has a frozen alias vocabulary; a newer Codex ID
+            # may still have literal evidence. Skip only unsupported entity filters.
+            if ent is not None and str(exc)=="Unknown entity":
+                continue
+            raise
         for rank,h in enumerate(result["hits"],1):
             key=h["id"];hits[key]=h;scores[key]=scores.get(key,0)+1/(60+rank)
     ordered=sorted(hits,key=lambda k:(-scores[k],k))
