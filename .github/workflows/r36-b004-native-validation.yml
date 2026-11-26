@@ -1,0 +1,136 @@
+name: R36 B004 native validation (private, disposable)
+on:
+  push:
+    branches: ['audit/r36-b004-native-validation']
+    paths: ['.github/workflows/r36-b004-native-validation.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: '3170905db607f89004ed3d62a064dbb092922080'
+          persist-credentials: false
+          path: engine
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: '625afa955c64853bac94202fa5791a1c912d8332'
+          persist-credentials: false
+          path: archive
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Native tests
+        working-directory: engine
+        run: python -m unittest discover -s tests -q
+      - name: Validate actual private archive and candidate in disposable copy
+        working-directory: engine
+        env:
+          PYTHONPATH: .
+        run: |
+          python - <<'PY'
+          import copy, hashlib, json, shutil, tempfile
+          from pathlib import Path
+          from worldroot.natural_codex import MANIFEST, PRIVATE_SCOPES, git_blob, load_overlay
+          root = Path('../archive').resolve()
+          reg = 'editorial/registries/'
+          draft = root / 'editorial/codex-staging/r36-book-ii-stage-b-batch-004-draft.json'
+          assert git_blob(draft.read_bytes()) == '0de8098ef25e798fb7f1e0b6dbb8fc6c433261cc'
+          d = json.loads(draft.read_bytes())
+          m = json.loads((root / MANIFEST).read_bytes())
+          head = (root / 'canon/HEAD.json').read_bytes()
+          base_raw = (root / (reg+'universal-codex-design-d580-v1.json')).read_bytes()
+          base = json.loads(base_raw)
+          assert git_blob(head) == d['base_registry_blobs']['head']
+          assert git_blob((root/MANIFEST).read_bytes()) == d['base_registry_blobs']['manifest']
+          assert json.loads(head)['day'] == 579
+          assert git_blob(base_raw) == d['base_registry_blobs']['base']
+          assert m['book_ii_recovery']['next_id'] == 412
+          assert m['book_ii_recovery']['production_hold']
+          old = load_overlay(root,base_raw,base)
+          assert old and len(old['profiles']) == 192
+          srcdir = root/'history/sources'
+          parts = sorted(srcdir.glob(d['source']['name']+'.part-*'))
+          assert len(parts) == 6
+          assert hashlib.sha256(b''.join(p.read_bytes() for p in parts)).hexdigest() == d['source']['sha256']
+          raw = parts[1].read_bytes()
+          assert git_blob(raw) == d['source']['git_blob']
+          lines = raw.decode('utf-8').split('\n')
+          off = d['source']['global_to_local_line_offset']
+          assert [r['original_id'] for r in d['ledger']] == list(range(412,427))
+          groups = {}
+          comparisons = 0
+          for r in d['ledger']:
+              assert r['local_line'] == r['global_line']-off
+              assert lines[r['local_line']-1] == r['anchor']
+              assert hashlib.sha256(r['anchor'].encode()).hexdigest() == r['anchor_sha256']
+              groups.setdefault(r['global_line'],[]).append(r['original_id'])
+              for c in r['context']:
+                  assert lines[c['line']-off-1] == c['text']
+                  comparisons += 1
+          assert list(groups.values()) == [[412,413,414,415],[416],[417],[418],[419],[420,421,422,423,424,425,426]]
+          def source_check(x):
+              assert x['path'] == 'history/sources/'+parts[1].name
+              assert x['git_blob'] == d['source']['git_blob']
+              assert x['source_sha256'] == d['source']['sha256']
+              for e in x['evidence']:
+                  assert e['global_line'] == e['line']+off
+                  assert lines[e['line']-1] == e['anchor']
+          for item in d['discoveries']+d['author_directions']:
+              source_check(item['source'])
+          assert len(d['changes']) == 18
+          keys = ('character_overlay','world_overlay','naming_review')
+          docs = {k:json.loads((root/m[k]['path']).read_bytes()) for k in keys}
+          orig = copy.deepcopy(docs)
+          rows = docs['character_overlay']['characters']+docs['world_overlay']['records']
+          profiles = {p['id']:p for p in rows}
+          assert len(profiles) == len(rows) == 192
+          changed = set()
+          for ch in d['changes']:
+              key = ch['entity_id'],ch['field']
+              assert key not in changed
+              changed.add(key)
+              f = profiles[key[0]]['fields']
+              assert f[key[1]] == ch['before']
+              assert f[key[1]]['status'] != 'SEGREDO'
+              assert f[key[1]].get('scope') not in PRIVATE_SCOPES
+              assert ch['after']['scope'] == 'HISTORICAL_OBSERVATION'
+              assert ch['after']['status'] == 'RECUPERADO'
+              source_check(ch['after']['origin'][-1])
+              f[key[1]] = copy.deepcopy(ch['after'])
+          expected = copy.deepcopy(orig)
+          ep = {p['id']:p for p in expected['character_overlay']['characters']+expected['world_overlay']['records']}
+          for ch in d['changes']:
+              ep[ch['entity_id']]['fields'][ch['field']] = ch['after']
+          assert docs == expected
+          assert profiles['aerun-instituto'] != profiles['aerun-guardiao']
+          paths = {'character_overlay':reg+'r35-natural-completion-d579-v10.json','world_overlay':reg+'r35-world-completion-d579-v8.json','naming_review':reg+'r35-legacy-name-reconciliation-v6.json'}
+          def encode(x):
+              return (json.dumps(x,ensure_ascii=False,indent=2)+'\n').encode()
+          with tempfile.TemporaryDirectory() as t:
+              dst = Path(t)/'archive'
+              shutil.copytree(root,dst,ignore=shutil.ignore_patterns('.git'))
+              for k in keys:
+                  if k == 'naming_review':
+                      docs[k]['source_overlay_blob'] = m['character_overlay']['git_blob']
+                  raw = encode(docs[k])
+                  (dst/paths[k]).write_bytes(raw)
+                  m[k]['path'] = paths[k]
+                  m[k]['git_blob'] = git_blob(raw)
+              assert docs['naming_review']['roster'] == orig['naming_review']['roster']
+              (dst/MANIFEST).write_bytes(encode(m))
+              result = load_overlay(dst,base_raw,base)
+              assert result and set(result['profiles']) == set(old['profiles'])
+              assert result['profiles'] == profiles
+              assert result['aliases'] == old['aliases'] and result['links'] == old['links']
+              assert result['naming_review'] == old['naming_review']
+              assert (dst/'canon/HEAD.json').read_bytes() == head
+              print(json.dumps({'status':'NATIVE_VALIDATION_PASS','draft_blob':git_blob(draft.read_bytes()),'source_sha256_verified':True,'records':15,'groups':6,'context_comparisons':comparisons,'fields':len(changed),'profiles':len(profiles),'character_count':result['character_count'],'world_count':result['world_count'],'links':len(result['links']),'naming_revalidated':True,'candidate_blobs':{k:m[k]['git_blob'] for k in keys},'production_changed':False,'semantic_certification':False}))
+          assert (root/'canon/HEAD.json').read_bytes() == head
+          PY
+          git -C ../archive diff --exit-code
+          test -z "$(git -C ../archive status --porcelain)"
