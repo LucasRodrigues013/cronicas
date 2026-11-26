@@ -1,0 +1,245 @@
+{
+  "schema": "worldroot-r35-book-i-stage-d-receipt-v4",
+  "status": "PARTIAL_RUNTIME_VERIFIED_NOT_HOMOLOGATED",
+  "cycle": 1,
+  "stage": "D",
+  "previous_blobs": [
+    "18e40721147d57657e9c44440c30eb031a50e7a8",
+    "0b404989f34e3387242d247f8f846edeac5a3ce9",
+    "43c5db1808e4a03b7fa3df2c38fe8236c01b0c16"
+  ],
+  "source": {
+    "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+    "git_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+    "lines": [
+      1,
+      40845
+    ],
+    "narrative_days": [
+      1,
+      90
+    ],
+    "chapter_numbers": 38,
+    "raw_words": 171829,
+    "prompts": 44,
+    "responses": 44
+  },
+  "identity_candidates": [
+    {
+      "id": "candidate:tarek-book-i",
+      "name": "Tarek",
+      "line": 10258,
+      "anchor": "— Este é TAREK — apresenta ela. — Organiza a distribuição de alimentos e a manutenção do abrigo.",
+      "status": "IDENTITY_CANDIDATE_NOT_ADMITTED",
+      "exact_base_name_alias_matches": 0,
+      "requires_independent_semantic_review": true
+    },
+    {
+      "id": "candidate:ina-book-i",
+      "name": "Ina",
+      "line": 13349,
+      "anchor": "— Meu nome é INA.",
+      "status": "IDENTITY_CANDIDATE_NOT_ADMITTED",
+      "exact_base_name_alias_matches": 0,
+      "requires_independent_semantic_review": true
+    },
+    {
+      "id": "candidate:selene-arvost",
+      "name": "Selene Arvost",
+      "line": 14715,
+      "anchor": "A primeira era DAMA SELENE ARVOST, administradora territorial delegada pelo Marquesado para tratar de concessões provisórias, obras de recuperação e disputas administrativas.",
+      "status": "IDENTITY_CANDIDATE_NOT_ADMITTED",
+      "exact_base_name_alias_matches": 0,
+      "requires_independent_semantic_review": true
+    },
+    {
+      "id": "candidate:auren-velcast",
+      "name": "Auren Velcast",
+      "line": 14719,
+      "anchor": "O segundo era LORD AUREN VELCAST, representante de interesses comerciais relacionados às estradas e entrepostos do norte.",
+      "status": "IDENTITY_CANDIDATE_NOT_ADMITTED",
+      "exact_base_name_alias_matches": 0,
+      "requires_independent_semantic_review": true
+    },
+    {
+      "id": "candidate:hadrin-fell",
+      "name": "Hadrin Fell",
+      "line": 16172,
+      "anchor": "Um pequeno comerciante chamado HADRIN FELL, proprietário de duas carroças de abastecimento, procurou o posto de contato da Legião.",
+      "status": "IDENTITY_CANDIDATE_NOT_ADMITTED",
+      "exact_base_name_alias_matches": 0,
+      "requires_independent_semantic_review": true
+    },
+    {
+      "id": "candidate:daren-book-i",
+      "name": "Daren",
+      "line": 17686,
+      "anchor": "— Meu nome é DAREN.",
+      "status": "IDENTITY_CANDIDATE_NOT_ADMITTED",
+      "exact_base_name_alias_matches": 0,
+      "requires_independent_semantic_review": true
+    },
+    {
+      "id": "candidate:esmara",
+      "name": "Esmara",
+      "line": 21215,
+      "anchor": "Chamava-se ESMARA.",
+      "status": "IDENTITY_CANDIDATE_NOT_ADMITTED",
+      "exact_base_name_alias_matches": 0,
+      "requires_independent_semantic_review": true
+    },
+    {
+      "id": "candidate:neria-valmont",
+      "name": "Néria Valmont",
+      "line": 21861,
+      "anchor": "— DAMA SELENE autorizou uma vistoria técnica preliminar das estruturas dos Três Arcos. A pessoa designada é NÉRIA VALMONT, engenheira de obras civis vinculada à administração de Halvern.",
+      "status": "IDENTITY_CANDIDATE_NOT_ADMITTED",
+      "exact_base_name_alias_matches": 0,
+      "requires_independent_semantic_review": true
+    },
+    {
+      "id": "candidate:darius-book-i",
+      "name": "Darius",
+      "line": 30594,
+      "anchor": "DARIUS",
+      "status": "IDENTITY_CANDIDATE_NOT_ADMITTED",
+      "exact_base_name_alias_matches": 0,
+      "requires_independent_semantic_review": true
+    },
+    {
+      "id": "candidate:malrek-book-i",
+      "name": "Malrek",
+      "line": 30598,
+      "anchor": "MALREK",
+      "status": "IDENTITY_CANDIDATE_NOT_ADMITTED",
+      "exact_base_name_alias_matches": 0,
+      "requires_independent_semantic_review": true
+    },
+    {
+      "id": "candidate:toran-book-i",
+      "name": "Toran",
+      "line": 30606,
+      "anchor": "TORAN",
+      "status": "IDENTITY_CANDIDATE_NOT_ADMITTED",
+      "exact_base_name_alias_matches": 0,
+      "requires_independent_semantic_review": true
+    },
+    {
+      "id": "candidate:mateo-book-i",
+      "name": "Mateo",
+      "line": 36010,
+      "anchor": "Um dos artesãos, MATEO, perguntou:",
+      "status": "IDENTITY_CANDIDATE_NOT_ADMITTED",
+      "exact_base_name_alias_matches": 0,
+      "requires_independent_semantic_review": true
+    },
+    {
+      "id": "candidate:elira-voss",
+      "name": "Elira Voss",
+      "line": 37072,
+      "anchor": "A outra era ELIRA VOSS, uma maga especializada em técnicas defensivas, ocultação e perturbação de percepção.",
+      "status": "IDENTITY_CANDIDATE_NOT_ADMITTED",
+      "exact_base_name_alias_matches": 0,
+      "requires_independent_semantic_review": true
+    },
+    {
+      "id": "candidate:odran",
+      "name": "Odran",
+      "line": 38573,
+      "anchor": "O magistrado ODRAN chegou acompanhado de SELENE e EDRAN.",
+      "status": "IDENTITY_CANDIDATE_NOT_ADMITTED",
+      "exact_base_name_alias_matches": 0,
+      "requires_independent_semantic_review": true
+    }
+  ],
+  "additional_observations": [
+    {
+      "line": 26616,
+      "id": "chr-grazha-uzgor",
+      "dimension": "economia",
+      "claim": "Proposta de troca; não execução",
+      "anchor": "— Também temos notícias dos Uzgor. GRAZHA está disposta a discutir uma troca inicial de ferramentas e sal por conhecimento agrícola, amostras da raiz razhka e apoio em rotas de montanha.",
+      "status": "HISTORICAL_CANDIDATE"
+    },
+    {
+      "line": 27629,
+      "id": "chr-grazha-uzgor",
+      "dimension": "flora-materiais",
+      "claim": "Entrega de amostras de razhka",
+      "anchor": "GRAZHA trouxe amostras da raiz razhka, acompanhadas de informações sobre seu cultivo tradicional.",
+      "status": "HISTORICAL_CANDIDATE"
+    },
+    {
+      "line": 27631,
+      "id": "candidate:esmara",
+      "dimension": "gastronomia-vestuario",
+      "claim": "Recusa de consumo humano até verificação",
+      "anchor": "ESMARA recusou qualquer consumo humano antes de compreender suas propriedades e verificar se era segura.",
+      "status": "HISTORICAL_CANDIDATE"
+    },
+    {
+      "line": 27637,
+      "id": "org-uzgor",
+      "dimension": "relacionamentos",
+      "claim": "Acordo de conhecimento agrícola, sem aliança militar",
+      "anchor": "A conversa terminou com um acordo para compartilhar conhecimento agrícola e estudar uma pequena troca de ferramentas e sal, sem compromisso de aliança militar.",
+      "status": "HISTORICAL_CANDIDATE"
+    }
+  ],
+  "engine": {
+    "pr": 74,
+    "head": "793f4f7aefcdce98b09be79ea98534b8ccedc081",
+    "status": "OPEN_NOT_MERGED",
+    "tested_private_engine": "01a44ba424dc3b3434229b0f69c35a066cdf1da7",
+    "tested_archive": "2ddb6f5707ddd1b8d06f5dfe37d936f04802090c"
+  },
+  "runs": {
+    "synthetic": {
+      "id": 45883407908,
+      "conclusion": "success"
+    },
+    "private_r32": {
+      "id": 45883400674,
+      "conclusion": "failure",
+      "cause": "UNKNOWN"
+    },
+    "private_r33": {
+      "id": 45883402168,
+      "conclusion": "failure",
+      "cause": "UNKNOWN"
+    },
+    "historical_fts": {
+      "id": 45886685904,
+      "conclusion": "success",
+      "result_blob": "fadc43ac78b0add7c3d3102e41ec0b8f98d5db42"
+    },
+    "private_runtime": {
+      "id": 45886755861,
+      "job": 140139247080,
+      "conclusion": "success",
+      "script_commit": "74be346ad75330b941f0930b3ab92cdac2907aaf",
+      "candidate_count": 142,
+      "queries": {
+        "razhka Grazha": 3,
+        "Néria Valmont": 9,
+        "Hadrin Fell": 2,
+        "Elira Voss": 1,
+        "Selene Arvost": 1
+      },
+      "legacy_gate_rejects_unreviewed": true,
+      "registry_load_ms": 84.29,
+      "four_scene_packet_ms_mean_25": 3.6,
+      "global_records": 1256,
+      "semantic_jobs": 6368,
+      "semantic_targets": 9229
+    }
+  },
+  "limitations": [
+    "No independent semantic adjudicator executed; no legacy admissions.",
+    "No exhaustive reading or identity completeness certification.",
+    "No production overlay activation or merge.",
+    "Runtime smoke test uses pinned earlier engine and archive, not V4.",
+    "No private replay/restore certification of new book dataset."
+  ],
+  "canon_changed": false
+}
