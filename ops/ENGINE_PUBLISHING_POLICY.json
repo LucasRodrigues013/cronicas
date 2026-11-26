@@ -5,7 +5,7 @@
   "approved_at": "2026-11-25",
   "policy_revision": "R35",
   "engine_code_branch": "main",
-  "engine_code_commit": "0e5f4bfc5f833b9681d9f4ec3b288dd36952d03b",
+  "engine_code_commit": "9b34bc491275028fe32fff018b405ab94dcc5c8a",
   "canonical_head_rule": "canon/HEAD.json is a historical narrative checkpoint, never a dumping ground for engine policy; update only after real next author choice and canonical validation.",
   "source_of_truth": "story-archive/episodes/<ID>/draft/narrativa_integral.md plus immutable manifest + inbox + review + reader_receipt",
   "before_new_episode": {
@@ -17,7 +17,8 @@
     "r33_preparation": "After actual closure, persist exact author-bound request in requests/<delivery_id>.json; workflow worldroot-r33-prepare publishes immutable preparations/<delivery_id>.json; re-fetch and verify before drafting. Never generate a choice for a request.",
     "r34_intent": "New persisted R33-compatible requests must include r34_intent with seven distinct policy-backed dimensions, focal character fields, historical comparison and contextual opportunity mapping. No forced scenes or unsupported physical traits.",
     "r35_plan": "Persist immutable R33-compatible request with r34_intent and r35_plan: real profile, scene budgets, lived beats, two references, separate adult opportunities; verify prep before prose.",
-    "r35_refinement": "Required r35_plan.refinement: five contextual axes with historical reference and scene mapping; source recovery for each focal character; docs/r35-literary-refinement.md."
+    "r35_refinement": "Required r35_plan.refinement: five contextual axes with historical reference and scene mapping; source recovery for each focal character; docs/r35-literary-refinement.md.",
+    "female_character_design": "R35 automatically retrieves and binds focal dossiers from editorial/registries/female-character-design-d580-v2.json, with registry SHA. Separate AuthorDesign evidence from historical Response; verify age, conflicts, current location and agency. Fiches do not authorize attendance or events."
   },
   "for_each_episode": {
     "must_save_complete_text": true,
@@ -45,7 +46,8 @@
     "r33_metadata": "R33 archived episodes remain unchanged and independently verifiable; R34 retains R33 request/preparation and review bindings.",
     "r34_metadata": "Historical R34 remains immutable; R35 retains r34_intent and review.",
     "r35_metadata": "New episodes revision=35. Hard floor real prose: regular 8800, special 9500, finale 11000. Exception only explicit literal author choice line. R35 requires exact final segment receipts and visible reader text, scene/quality/opportunity review, versioned choices and header. No retroactive changes.",
-    "r35_refinement": "Required r35_review.refinement: concrete comparative review with two distinct narrative moments per axis; cadence signal contextual, not a line quota; avoid padding and forced conflict or romance. Prior archived episodes unaffected."
+    "r35_refinement": "Required r35_review.refinement: concrete comparative review with two distinct narrative moments per axis; cadence signal contextual, not a line quota; avoid padding and forced conflict or romance. Prior archived episodes unaffected.",
+    "female_character_design": "For newly prepared episodes, keep the immutable focal design binding and verify its SHA before release; do not substitute illustrations or proposal ages for canonical facts."
   },
   "limits": {
     "automatic_chat_capture": false,
