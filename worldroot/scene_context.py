@@ -8,7 +8,7 @@ from .live_codex import norm,events_for_entity
 SCHEMA="worldroot-r35-scene-context-v1"
 MAX_RECORDS=24
 MAX_EVENTS=4
-PROFILE_FIELDS=("identity","species","origin","occupation","voice","body","appearance","relationships","goals","values","condition","location","equipment","inventory","magic_repertoire")
+PROFILE_FIELDS=("identity","species","origin","occupation","voice","body","appearance","relationships","goals","values","condition","location","equipment","inventory","magic_repertoire","history","geography","governance","population","culture","economy","connections","capabilities","limits","lifecycle","dimensions","owner","holder","version")
 def index(rows):
     by_id={r["id"]:r for r in rows}
     aliases={}

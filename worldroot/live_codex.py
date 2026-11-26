@@ -124,6 +124,7 @@ def validate_delta(delta,prose,episode,day,existing_ids,spell_ids):
         if k=="REPORT" and (not isinstance(v,dict) or not isinstance(v.get("field"),str) or not v["field"].strip() or "value" not in v or not isinstance(v.get("reporter"),str) or not v["reporter"].strip() or (v.get("about_day") is not None and (type(v["about_day"]) is not int or not 1<=v["about_day"]<=day))):raise ValueError("Invalid unverified report")
         if k.startswith("PENDING_"):
             if not isinstance(v,dict) or not isinstance(v.get("pending_id"),str) or not ID.fullmatch(v["pending_id"]):raise ValueError("Invalid pending ID")
+            if "due_day" in v and (type(v["due_day"]) is not int or v["due_day"]<e["day"]):raise ValueError("Invalid pending due day")
             if k=="PENDING_OPEN" and (not isinstance(v.get("category"),str) or not v["category"].strip() or not isinstance(v.get("reason"),str) or not v["reason"].strip()):raise ValueError("Missing pending category or reason")
             if k!="PENDING_OPEN" and (not isinstance(v.get("reason"),str) or not v["reason"].strip()):raise ValueError("Missing resolution or escalation reason")
             if k=="PENDING_RESOLVE" and (not isinstance(v.get("resolved_by"),list) or not v["resolved_by"] or any(type(x) is not int or x<0 for x in v["resolved_by"])):raise ValueError("Pending resolution requires linked evidence events")
