@@ -1,7 +1,7 @@
 {
   "schema": "worldroot-editorial-policy-v1",
   "project": "CRONICAS_DE_UM_NOVO_MUNDO",
-  "version": 21,
+  "version": 22,
   "reviewed_at": "2026-11-25",
   "approved_scope": "AUTHOR_APPROVED_EDITORIAL_DYNAMICS_NOT_NARRATED_CANON",
   "source_of_truth": "main/worldroot/editorial_policy.json",
@@ -243,6 +243,14 @@
       "transcript_line": null,
       "quote": "A gente precisa voltar a ter qualidade narrativa igual ela tava. A gente corrigiu umas coisas e perdeu muitas outras. A gente não pode ter isso.",
       "reference": "docs/r35-longform-restoration.md"
+    },
+    {
+      "id": "S34",
+      "kind": "AUTHOR_APPROVAL",
+      "at": "2026-11-25",
+      "transcript_line": null,
+      "quote": "Faça a aprimoria que você recomendou nos pontos, e com isso vou continuar depois a história e desconsertar o teste feito. Mas estamos chegando lá.",
+      "reference": "docs/r35-literary-refinement.md"
     }
   ],
   "rules": [
@@ -2448,6 +2456,96 @@
       "core": true,
       "evidence": [
         "S33"
+      ],
+      "active": true
+    },
+    {
+      "id": "P126",
+      "title": "Cadência cinematográfica sem fragmentação artificial",
+      "directive": "Recuperar a respiração das cenas de D568 e D571: alternar silêncio, ação, reação, frases e parágrafos de extensões variadas; usar sinais de densidade como comparação, nunca quota de linhas. Revisar transições compactadas e humor repetido antes de congelar segmentos.",
+      "tags": [
+        "R35",
+        "REFINAMENTO",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S34"
+      ],
+      "active": true
+    },
+    {
+      "id": "P127",
+      "title": "Identidade e voz com profundidade",
+      "directive": "Recuperar referências literais distintas de personagens focais, inclusive elenco além do casal quando relevante. Diferenciar traços estáveis, figurino, voz, gestos, desejos, relações e conhecimento; identificar lacunas sem inventar fatos antigos. Adultos confirmados: beleza concreta, atração recíproca e conversas francas não gráficas quando orgânicas, sem impor pares ou cenas.",
+      "tags": [
+        "R35",
+        "REFINAMENTO",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S34"
+      ],
+      "active": true
+    },
+    {
+      "id": "P128",
+      "title": "Maravilhamento e recompensa vividos",
+      "directive": "Dar às aventuras, descobertas, criações e conquistas desenvolvimento sensorial, iniciativa, descoberta e reação dos envolvidos; preservar GÊNESE plena e vitórias. Alternar tensão e alegria, sem fabricar perigo para fazer férias ou cenas cotidianas parecerem épicas.",
+      "tags": [
+        "R35",
+        "REFINAMENTO",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S34"
+      ],
+      "active": true
+    },
+    {
+      "id": "P129",
+      "title": "Ação em vez de relatório",
+      "directive": "Converter explicações administrativas em acontecimentos observáveis, dilemas humanos, escolhas, diálogo com vozes distintas e consequências. Conservar informações indispensáveis e a autonomia das frentes paralelas; evitar discursos explicativos duplicados e reduzir humor de bordão.",
+      "tags": [
+        "R35",
+        "REFINAMENTO",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S34"
+      ],
+      "active": true
+    },
+    {
+      "id": "P130",
+      "title": "Comparação editorial concreta",
+      "directive": "Revisar cada dimensão com referências históricas e momentos literais, explicando diferenças de contexto e lacunas. O alvo autoral 9+ é avaliação qualitativa, não pontuação certificada pelo motor. O piloto D579 é teste isolado descartado como continuidade: nunca usar como fato, escolha, ficha, memória narrativa ou fonte canônica; preservar apenas aprendizado editorial.",
+      "tags": [
+        "R35",
+        "REFINAMENTO",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "core": true,
+      "evidence": [
+        "S34"
       ],
       "active": true
     }

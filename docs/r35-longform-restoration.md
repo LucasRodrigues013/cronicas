@@ -20,3 +20,6 @@ Synthetic tests + real archived corpus replay read-only; seven D572–D578 short
 
 ## Adult opportunities — R35 separate from generic affection
 r35_plan.adult_focus explicitly reviews body_identity, adult_conversation and reciprocal_attraction (planned/held, reason, characters, scenes; planned requires named R34 character cards with sourced age evidence and adulthood_reviewed=true). Held uses empty characters/scenes and justified natural context. r35_review.adult_focus has matching keys, status applied/held and assessment; applied requires two distinct scene/character-bound moments, evidence and effect, plus non_graphic_and_agency_reviewed=true. Body_identity also supplies field in BODY_FIELDS and literal detail; hair/eyes alone do not meet this opportunity. Clothing fit, stature, build and other relevant physical details can be used, never invented as historical. A held planned opportunity needs changed_context. No mandated erotic scenes or explicit sex; age evidence and contextual editorial interpretation are still human responsibilities. 
+
+## Refinamento pós-piloto (política v22)
+Para novas partes, aplicar também `docs/r35-literary-refinement.md`. R35 mantém os mesmos pisos e recibos; `r35_plan.refinement` e `r35_review.refinement` aperfeiçoam a comparação, sem quota de frases ou cenas. O piloto D579 não é fonte canônica.
