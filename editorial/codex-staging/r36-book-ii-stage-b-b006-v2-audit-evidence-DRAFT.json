@@ -1,0 +1,133 @@
+{
+  "schema": "worldroot-r36-incremental-review-evidence-v1",
+  "status": "PREFLIGHT_PASS_NATIVE_BLOCKED_AUTHOR_APPROVAL_REQUIRED",
+  "official": {
+    "engine": "3170905db607f89004ed3d62a064dbb092922080",
+    "archive": "4d2bdb7444c785705e494c3d49cad8500af25a8a",
+    "checkpoint": "0f5dc88d5d8624f0d57d892a5bdec022cc0363ec",
+    "head_blob": "9b4e09682fc3148511d59e73ec56fdcda4e396e5",
+    "day": 579,
+    "sequence": 50,
+    "reviewed_records": 130,
+    "reviewed_groups": 100,
+    "cumulative_field_updates": 115,
+    "next_id": 438,
+    "next_line": 78909
+  },
+  "staging": {
+    "branch": "review/r36-b006-native-gate",
+    "gate_commit": "60ceecaa0700356451802ee861a8b2a4fd85b08f",
+    "v2_commit": "5e8b0194b14c6239a1fe734a70f86af6bd2dd972",
+    "v2_blob": "58b5e04f9f5fc0001933772473ea697d740f29f0",
+    "request_blob": "25c8c41dffe4392701679ef8886e3eca0e831848",
+    "precision_corrections_blob": "a8a8c8bd8e399a8d48d084338dc130ca132f4e92",
+    "files_changed_before_receipt": 7
+  },
+  "historical_native_reference": {
+    "run_id": 45897372433,
+    "conclusion": "success",
+    "scope": "Book I only; not new B006 validation"
+  },
+  "native_attempts": [
+    {
+      "run": 45909652470,
+      "attempt": 1,
+      "job": 140214641704,
+      "conclusion": "failure",
+      "steps": 0,
+      "logs": false,
+      "artifacts": 0
+    },
+    {
+      "run": 45909652470,
+      "attempt": 2,
+      "job": 140214908187,
+      "conclusion": "failure",
+      "steps": 0,
+      "logs": false,
+      "artifacts": 0
+    },
+    {
+      "run": 45909961498,
+      "attempt": 1,
+      "job": 140215655381,
+      "conclusion": "failure",
+      "steps": 0,
+      "logs": false,
+      "artifacts": 0
+    }
+  ],
+  "blocker": "GitHub Actions accepted pushes and generated runs; jobs failed before any recorded step. Cause not returned by connector. Similar no-step failures observed for B004 runner and engine workflow. Do not infer billing/quota without evidence.",
+  "preflight": {
+    "mode": "Python local on recovered draft plus connector readback/hash and JavaScript dry-run against actual official registry blobs; not native load_overlay",
+    "local_original_package_files_verified": 3,
+    "source_parts_verified": 6,
+    "full_source_bytes": 6823025,
+    "full_source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+    "v2_rows_sha256": "69a1ca2af1131558dd9445089fcb03e3e5fdc98ba0276e8734b9b67da5abee68",
+    "v2_reviews_sha256": "f0230b409d124add13c57856fe7675f631e7b5fe5fcae22ef44216512ccc41ea",
+    "additional_sha256": "4d7154ccc6979b49e12410162dea0ad2b4cc7c782b51e033c12a7e3f053bf8f1",
+    "records": 22,
+    "groups": 17,
+    "contexts": 198,
+    "field_evidence": 209,
+    "field_hashes_before": 25,
+    "precision_revised_fields": 11,
+    "changed_fields_in_memory": 25,
+    "unchanged_fields_in_memory": 5898,
+    "fields_total": 5923,
+    "private_scope_fields_unchanged": 40,
+    "private_plus_knowledge_fields_unchanged": 153,
+    "profiles_preserved": 192,
+    "names_structurally_checked": 96,
+    "unadmitted_candidates_preserved": 8,
+    "links_preserved": 25,
+    "official_refs_rechecked": true
+  },
+  "pending": {
+    "native_load_overlay_before_after": true,
+    "native_nominal_rebind": true,
+    "native_regression_suite": true,
+    "native_replay_restore": true,
+    "author_approval": true,
+    "publication": true,
+    "independent_semantic_certification": true
+  },
+  "if_approved_after_native_pass": {
+    "reviewed_records": 152,
+    "reviewed_groups": 117,
+    "cumulative_field_updates": 140,
+    "next_id": 460,
+    "next_line": 82432
+  },
+  "future_unreviewed_packets": [
+    {
+      "ids": [
+        460,
+        520
+      ],
+      "records": 61,
+      "groups": 45,
+      "lines": [
+        82432,
+        105778
+      ]
+    },
+    {
+      "ids": [
+        521,
+        568
+      ],
+      "records": 48,
+      "groups": 41,
+      "lines": [
+        105779,
+        135469
+      ]
+    }
+  ],
+  "author_decisions_preserved": true,
+  "canon_changed": false,
+  "production_activated": false,
+  "production_hold": true
+}
