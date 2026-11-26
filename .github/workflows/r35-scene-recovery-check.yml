@@ -60,3 +60,6 @@ jobs:
           git -C archive diff --exit-code
           git -C r36 diff --exit-code
           git -C staging diff --exit-code
+      - name: Full pinned R36 regression suite
+        working-directory: r36
+        run: timeout --signal=TERM --kill-after=5s 60s python -u -m unittest discover -s tests -v
