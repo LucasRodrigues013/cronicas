@@ -2,7 +2,7 @@ name: R36 private historical reconciliation
 on:
   push:
     branches: ['worldroot/r36-unified-living-engine']
-    paths: ['worldroot/r36_reconciliation.py','worldroot/r36_contextual.py','tests/test_r36_contextual.py','tests/test_r36_link_audit.py','worldroot/semantic_local.py','audit/run_r36_reconciliation.py','tests/test_r36_reconciliation.py','.github/workflows/r36-private-reconciliation.yml']
+    paths: ['worldroot/r36_reconciliation.py','worldroot/r36_contextual.py','tests/test_r36_contextual.py','tests/test_r36_link_audit.py','worldroot/semantic_local.py','worldroot/semantic_queue.py','tests/test_semantic_queue.py','audit/run_r36_reconciliation.py','tests/test_r36_reconciliation.py','.github/workflows/r36-private-reconciliation.yml']
 permissions:
   contents: read
 jobs:
@@ -23,6 +23,11 @@ jobs:
           ref: 'bbda32f2d060a188a727b88f44346832f5ce32a4'
           path: ledger
           persist-credentials: false
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: 'c5cff807191d96e77e5e990e145eedd1ac0943ec'
+          path: editorial-review
+          persist-credentials: false
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
         with:
           python-version: '3.12'
@@ -32,9 +37,10 @@ jobs:
         run: python -c 'import json; from worldroot.semantic_local import availability; print(json.dumps(availability()))'
       - name: Verify exact historical sources and reconcile event candidates
         run: |
-          PYTHONPATH=. python audit/run_r36_reconciliation.py archive ledger/editorial/codex-staging/results/exact-context-ledger-v1 "$RUNNER_TEMP/r36-reconciliation"
+          PYTHONPATH=. python audit/run_r36_reconciliation.py archive ledger/editorial/codex-staging/results/exact-context-ledger-v1 "$RUNNER_TEMP/r36-reconciliation" editorial-review/editorial/codex-staging/r36-increment-09-editorial-decisions.json
           git -C archive diff --exit-code
           git -C ledger diff --exit-code
+          git -C editorial-review diff --exit-code
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: r36-private-reconciliation-staging

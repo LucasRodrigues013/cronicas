@@ -67,3 +67,82 @@ report={"policy":policy_report,"profiles":profile_report,"retrospective":retrosp
 assert before==[hashlib.sha256(p.read_bytes()).hexdigest() for p in protected]
 (out/"readiness-audit.json").write_text(json.dumps(report,ensure_ascii=False,sort_keys=True),encoding="utf-8")
 print(json.dumps({"r36_readiness":{"policy":{k:v for k,v in policy_report.items() if k!="rules"},"profiles":profile_report,"retrieval":{k:v for k,v in retrospective.items() if k!="rows"},"corpus":{"episodes":literary["episodes"],"short_parts_detected":literary["short_parts_detected"],"source_files_verified":literary["source_files_verified"],"pre_break_mean":literary["pre_break_mean"],"r34_mean":literary["r34_mean"]},"latest":[{"episode":x["episode"],"status":x["source_status"],"words":x["volume"]["words"],"floor":x["volume"]["floor"],"volume_status":x["volume"]["status"],"presentation_status":x["presentation_status"]} for x in latest],"semantic_certification":False,"canon_changed":False}},ensure_ascii=False))
+
+# Operational review of the existing ambiguity and field backlog, private staging only.
+from worldroot.semantic_queue import seal,validate
+from worldroot.semantic_local import verify_job
+from worldroot.live_codex import norm
+from worldroot.r36_reconciliation import sha
+from copy import deepcopy
+from collections import defaultdict
+review=load(Path(sys.argv[4]))
+assert review["canon_promotion"] is False and review["semantic_certification"] is False
+packets={p["event_id"]:p for p in load(out/"event-review-packets.json")}
+link_audit=load(out/"event-link-audit.json")
+group={(x["event_id"],m["normalized_alias"]):m for x in link_audit for m in x["registry_mentions"] if len(m["entity_candidate_ids"])>1}
+assert len(group)==188
+source_cache={}
+def literal(event_id,line):
+    p=packets[event_id]
+    if p["episode"] not in source_cache:
+        d,m=verify_episode(root,p["episode"])
+        assert m["original_readback_sha256"]==p["source_sha256"]
+        source_cache[p["episode"]]=d.full_text.splitlines()
+    lines=source_cache[p["episode"]]
+    assert type(line) is int and 1<=line<=len(lines)
+    return p,lines[line-1]
+selected={}
+for r in review["decisions"]:
+    key=(r["event_id"],r["alias"]);m=group[key]
+    p,line=literal(r["event_id"],r["line"])
+    assert key not in selected and r["selected_id"] in m["entity_candidate_ids"]
+    assert " "+r["alias"]+" " in " "+norm(line)+" "
+    # Full-name evidence in same packet may be earlier than the alias match.
+    assert abs(p["line"]-r["line"])<=64
+    selected[key]={**r,"source_sha256":p["source_sha256"],"source_status":p["source_status"],"visibility":p["visibility"],"evidence_sha256":sha(line)}
+ambiguities=[]
+for key,m in group.items():
+    p=packets[key[0]];r=selected.get(key)
+    reason="Campo e Base Aurora preservados como registros distintos; a expressão compartilhada não comprova qual nível da instalação é referido." if key[1]=="campo aurora" else "Evidência insuficiente neste lote para atribuir o referente."
+    ambiguities.append({"event_id":key[0],"alias":key[1],"candidate_ids":m["entity_candidate_ids"],"source_lines":m["source_lines"],"source_sha256":p["source_sha256"],"source_status":p["source_status"],"visibility":p["visibility"],"review":r,"disposition":"EDITORIAL_REFERENT_CANDIDATE" if r else "HELD_IDENTITY_REVIEW", "reason":r["reason"] if r else reason,"canon_promotion":False,"semantic_certification":False})
+# Exact field names only; no inferred alias mappings or projection writes.
+pending={(i,k) for i,p in overlay["profiles"].items() for k,v in p["fields"].items() if v["status"]=="PENDENTE_FONTE"}
+assert len(pending)==3448
+jobs_by_field=defaultdict(list);jobs_all=[]
+for line in (out/"jobs.jsonl").read_text(encoding="utf-8").splitlines():
+    j=verify_job(json.loads(line));jobs_all.append(j)
+    for t in j["targets"]:
+        key=(t["entity_id"],t["field"])
+        if key in pending:jobs_by_field[key].append({"job_id":j["job_id"],"original_id":t["original_id"],"source_status":j["source_status"]})
+proposals={}
+for r in review["fields"]:
+    key=(r["entity_id"],r["field"])
+    assert key in pending and key not in proposals
+    p,line=literal(r["event_id"],r["line"])
+    assert p["source_status"]=="CLOSED" and abs(p["line"]-r["line"])<=64
+    proposals[key]={**r,"source_sha256":p["source_sha256"],"source_status":p["source_status"],"visibility":p["visibility"],"evidence_sha256":sha(line),"current_state":False,"canon_promotion":False}
+field_queue=[{"entity_id":i,"field":k,"ledger_candidates":jobs_by_field.get((i,k),[]),"proposal":proposals.get((i,k)),"status":"EDITORIAL_CANDIDATE" if (i,k) in proposals else "EXACT_LEDGER_CANDIDATES" if (i,k) in jobs_by_field else "NO_EXACT_FIELD_MATCH","canon_promotion":False} for i,k in sorted(pending)]
+# Real source-bound adversarial validator calls, not simulated inference.
+j=next(x for x in jobs_all if x["source_status"]=="CLOSED" and len(x["targets"])==1)
+target=j["targets"][0]
+base={"job_id":j["job_id"],"executor":"ADVERSARIAL_FIXTURE","model_revision":"FIXTURE_NOT_MODEL","source_role":"UNCERTAIN","role_reason":"Fixture only, not a semantic judgment","decisions":[{**target,"verdict":"UNKNOWN","reason":"Fixture only","claim":"","evidence":"","current_state":False}]}
+validate(j,base)
+attacks=[("current_state_string",{"current_state":"true"}),("current_state_integer",{"current_state":1}),("current_state_null",{"current_state":None}),("null_reason",{"reason":None}),("wrong_entity",{"entity_id":"UNKNOWN_ID"}),("wrong_field",{"field":"UNKNOWN_FIELD"}),("wrong_id",{"original_id":True}),("unsupported_claim",{"verdict":"SUPPORTED","claim":"invented","evidence":"not in source"})]
+blocked=[]
+for name,patch in attacks:
+    bad=deepcopy(base);bad["decisions"][0].update(patch)
+    try:validate(j,bad)
+    except ValueError:blocked.append(name)
+    else:raise AssertionError("Adversarial review accepted: "+name)
+# Public timeline excludes private/backstage events and the unclosed D580.
+from worldroot.r36_core import temporal_events
+with __import__("sqlite3").connect((root/"canon/state.sqlite").resolve().as_uri()+"?mode=ro",uri=True) as db:
+    public_ids={x[0] for x in db.execute("SELECT event_id FROM events WHERE visibility='PUBLICO'")}
+public=temporal_events(root,580,limit=200)
+assert public and all(x["event_id"] in public_ids and x["day"]<=579 for x in public)
+# Audit the existing release gates; independent semantic review remains unavailable.
+operational={"identity_groups":len(ambiguities),"editorial_referent_candidates":len(selected),"held_identity_groups":len(group)-len(selected),"referent_candidates_by_id":dict(Counter(r["selected_id"] for r in selected.values())),"pending_fields":len(pending),"pending_fields_with_exact_ledger_matches":len(jobs_by_field),"field_ledger_targets":sum(len(v) for v in jobs_by_field.values()),"field_proposals":len(proposals),"pending_fields_without_exact_ledger_match":len(pending)-len(jobs_by_field),"adversarial_review_cases_blocked":len(blocked),"public_timeline_rows_checked":len(public),"release_decision":"HOLD_PRODUCTION","independent_semantic_certified":0,"canon_promotions":0}
+for name,obj in (("identity-editorial-review.json",ambiguities),("pending-field-priority.json",field_queue),("operational-release-gate.json",operational)):
+    (out/name).write_text(json.dumps(obj,ensure_ascii=False,sort_keys=True),encoding="utf-8")
+assert before==[hashlib.sha256(p.read_bytes()).hexdigest() for p in protected]
+print(json.dumps({"r36_operational":operational},ensure_ascii=False))
