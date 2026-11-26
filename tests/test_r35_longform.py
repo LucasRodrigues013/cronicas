@@ -1,6 +1,6 @@
 import copy,hashlib,tempfile,unittest
 from pathlib import Path
-from worldroot.r35_longform import (metrics,profile,volume_check,validate_plan,validate_delivery,FOCUS,COMPARE,PROFILES)
+from worldroot.r35_longform import (metrics,profile,volume_check,validate_plan,validate_delivery,FOCUS,COMPARE,PROFILES,ADULT_FOCUS,validate_adult_plan,validate_adult_delivery)
 from worldroot.r34_experience import render_opening
 from worldroot.literary_experience import choice_prompt
 from worldroot.experience_quality import render_choices
@@ -12,7 +12,7 @@ def long_prose(n=650):
         f"Pessoa {i} encontrou um caminho diferente para conversar com seus amigos enquanto observava o jardim e esperava." for i in range(n))+"\n\n**FIM DA PARTE I.**\n"
 def plan():
     cards=[{"scene":1,"word_budget":10000,"experience":"Os amigos exploram um lugar novo.","reaction":"Cada um reage de modo individual.","payoff":"O passeio ganha um significado pessoal.","focus":list(FOCUS)}]
-    return {"delivery_id":"LVI-C09-PI-D579-AUTHOR-SOURCE","scene_plan":[{"scene":1}],"requirements":[{"id":"a"},{"id":"b"}],"reviewed":{"a":{},"b":{}},"r34_intent":{"dimensions":{k:{"scenes":[1]} for k in FOCUS}},"r35_plan":{"schema":"worldroot-r35-plan-v1","part":"I","profile":"special","scene_cards":cards,"references":["a","b"],"cadence_intent":"Alternar pausas e falas com naturalidade.","adult_opportunity":"Recuperar idades e vínculos quando pertinentes.","epic_payoff":"Mostrar resultados antes da reação coletiva."}}
+    return {"delivery_id":"LVI-C09-PI-D579-AUTHOR-SOURCE","scene_plan":[{"scene":1}],"requirements":[{"id":"a"},{"id":"b"}],"reviewed":{"a":{},"b":{}},"r34_intent":{"dimensions":{k:{"scenes":[1]} for k in FOCUS}},"r35_plan":{"schema":"worldroot-r35-plan-v1","part":"I","profile":"special","scene_cards":cards,"references":["a","b"],"cadence_intent":"Alternar pausas e falas com naturalidade.","adult_opportunity":"Recuperar idades e vínculos quando pertinentes.","epic_payoff":"Mostrar resultados antes da reação coletiva.","adult_focus":{k:{"status":"held","reason":"O ensaio sintético não representa personagens adultos.","characters":[],"scenes":[]} for k in ADULT_FOCUS}}}
 class R35Tests(unittest.TestCase):
     def test_profile_prioritizes_finale(self):
         self.assertEqual(profile("V",4),"finale")
@@ -60,7 +60,7 @@ class R35Tests(unittest.TestCase):
             path=f"production/{id}/segments/{i:02d}.md";target=root/path;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(s.encode())
             stages.append({"part":i,"path":path,"sha256":hashlib.sha256(s.encode()).hexdigest()})
         assessment="A revisão contextual compara ação e consequência."
-        review={"schema":"worldroot-r35-review-v1","scenes":[{"scene":1,"planned_scene":1,"beats":dict(zip(("experience","reaction","payoff"),paragraphs[:3])),"assessment":assessment}],"opportunities":{k:{"status":"applied","assessment":assessment,"moments":[{"scene":1,"evidence":paragraphs[3],"effect":assessment},{"scene":1,"evidence":paragraphs[4],"effect":assessment}]} for k in FOCUS},"comparison":{k:{"reference_id":"a","assessment":assessment,"result":"retained"} for k in COMPARE},"no_padding":True,"no_condensed_key_events":True}
+        review={"schema":"worldroot-r35-review-v1","scenes":[{"scene":1,"planned_scene":1,"beats":dict(zip(("experience","reaction","payoff"),paragraphs[:3])),"assessment":assessment}],"opportunities":{k:{"status":"applied","assessment":assessment,"moments":[{"scene":1,"evidence":paragraphs[3],"effect":assessment},{"scene":1,"evidence":paragraphs[4],"effect":assessment}]} for k in FOCUS},"comparison":{k:{"reference_id":"a","assessment":assessment,"result":"retained"} for k in COMPARE},"no_padding":True,"no_condensed_key_events":True,"adult_focus":{k:{"status":"held","assessment":assessment,"context":"O ensaio sintético não contém relações adultas."} for k in ADULT_FOCUS}}
         return req,{"metadata":{"part":"I","worldroot_revision":35},"delivery_id":id,"prose":text,"full_text":text+"\nUI","longform_segments":stages,"r34_review":{"dimensions":{k:{"status":"applied"} for k in FOCUS}},"r35_review":review}
     def test_real_segment_files_full_contract(self):
         with tempfile.TemporaryDirectory() as d:
@@ -99,3 +99,16 @@ class R35Tests(unittest.TestCase):
         opening={"book_title":"LIVRO VI — TESTE","chapter_title":"TESTE","episode_title":"TESTE","epigraph":"Teste","calendar":"Dia 579 · Ano II","location":"Local","fronts":"Frentes"}
         self.assertIn("WORLDROOT R35",render_opening(meta,opening))
         meta["worldroot_revision"]=34;self.assertIn("WORLDROOT R34",render_opening(meta,opening))
+    def test_adult_opportunity_requires_source_not_assumption(self):
+        r=plan();r["r35_plan"]["adult_focus"]["body_identity"]={"status":"planned","reason":"A prova de figurinos permite uma descrição concreta.","characters":["Pessoa"],"scenes":[1],"adulthood_reviewed":True}
+        with self.assertRaisesRegex(ValueError,"confirm adulthood"):validate_adult_plan(r,r["r35_plan"])
+    def test_adult_body_cannot_be_only_hair(self):
+        r=plan()["r35_plan"];r["adult_focus"]["body_identity"]={"status":"planned","reason":"A prova de figurinos permite uma descrição concreta.","characters":["Pessoa"],"scenes":[1]}
+        text="Pessoa tinha cabelos escuros e longos. Pessoa examinou os próprios cabelos no espelho."
+        review={"adult_focus":{k:{"status":"held","assessment":"O contexto exige uma revisão editorial.","context":"O momento não comporta esta oportunidade."} for k in ADULT_FOCUS}}
+        review["adult_focus"]["body_identity"]={"status":"applied","assessment":"A descrição precisa ser fisicamente concreta.","non_graphic_and_agency_reviewed":True,"moments":[{"scene":1,"character":"Pessoa","evidence":e,"field":"hair","detail":"cabelos","effect":"O detalhe ajuda a reconhecer a pessoa."} for e in text.split(". ") if e]}
+        with self.assertRaisesRegex(ValueError,"bodily identity"):validate_adult_delivery(r,review,{1:text})
+    def test_adult_plan_not_silently_held(self):
+        r=plan()["r35_plan"];r["adult_focus"]["adult_conversation"]={"status":"planned","characters":["Pessoa"],"scenes":[1]}
+        review={"adult_focus":{k:{"status":"held","assessment":"O contexto exige uma revisão editorial.","context":"O momento não comporta esta oportunidade."} for k in ADULT_FOCUS}}
+        with self.assertRaisesRegex(ValueError,"opportunity lost"):validate_adult_delivery(r,review,{1:"Uma cena."})

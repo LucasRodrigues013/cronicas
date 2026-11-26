@@ -15,6 +15,8 @@ SPEAKER=re.compile(r"^\s*(?:\*\*)?[A-ZÀ-Ÿ][A-ZÀ-Ÿ .'-]{1,36}\s+[—–-](?:\
 CLOCK=re.compile(r"^\s*(?:\*\*)?DIA\s+\d+",re.I)
 FOCUS=("daily_life","appearance","relationships","cast","wonder","rhythm")
 COMPARE=("cadence","emotion","adventure","character","design")
+ADULT_FOCUS=("body_identity","adult_conversation","reciprocal_attraction")
+BODY_FIELDS=("build","height","legs","chest","hips","body_shape","musculature","outfit_fit","other_physical_trait")
 PROFILES={"regular":(8800,9000,11000),"special":(9500,10000,13000),"finale":(11000,12000,15000)}
 EXCEPTION=re.compile(r"(?im)^AUTORIZO PARTE CURTA:\s*(\S[^\n]+)$")
 def profile(part,option):
@@ -65,6 +67,47 @@ def volume_check(prose,part,option,author_text=""):
     if m["words"]<floor and not allowed:issues.append("R35_DEPTH: expand lived scenes to "+str(floor)+" real prose words; no filler")
     if m["duplicate_word_share"]>=.08:issues.append("R35_PADDING: repeated paragraphs inflate prose; revise")
     return {**m,"profile":mode,"floor":floor,"target":[low,high],"exception_authorized":allowed,"issues":issues,"status":"REVISE" if issues else "STRUCTURAL_VOLUME_OK","semantic_certification":False}
+def validate_adult_plan(request,plan):
+    focus=plan.get("adult_focus")
+    require(isinstance(focus,dict) and set(focus)==set(ADULT_FOCUS),"R35 separate body, adult conversation and attraction planning")
+    cards={c["name"]:c for c in request["r34_intent"].get("characters",[])}
+    scenes={x["scene"] for x in request["scene_plan"]}
+    for k,d in focus.items():
+        require(isinstance(d,dict) and d.get("status") in ("planned","held") and reason(d.get("reason")),"R35 invalid adult opportunity: "+k)
+        names=d.get("characters");where=d.get("scenes")
+        require(isinstance(names,list) and isinstance(where,list) and len(set(names))==len(names) and all(type(n) is int and n in scenes for n in where),"R35 invalid adult context")
+        if d["status"]=="planned":
+            require(bool(names) and bool(where),"R35 adult scene needs named eligible characters")
+            for name in names:
+                card=cards.get(name,{})
+                age=card.get("fields",{}).get("age",{})
+                require(age.get("status")=="sourced" and bool(age.get("requirement_ids")) and set(where)&set(card.get("scenes",[])),"R35 confirm adulthood with reviewed narrative evidence before adult portrayal")
+            require(d.get("adulthood_reviewed") is True,"R35 age/agency editorial review")
+        else:require(not names and not where,"R35 held adult opportunity must not introduce a scene")
+def validate_adult_delivery(plan,review,actual):
+    data=review.get("adult_focus")
+    require(isinstance(data,dict) and set(data)==set(ADULT_FOCUS),"R35 independent adult focus review required")
+    for k,v in data.items():
+        expected=plan["adult_focus"][k]
+        require(isinstance(v,dict) and v.get("status") in ("applied","held") and reason(v.get("assessment")),"R35 invalid adult delivery review")
+        if v["status"]=="held":
+            require(not v.get("moments") and reason(v.get("context")),"R35 explain natural adult deferral")
+            if expected["status"]=="planned":require(reason(v.get("changed_context")),"R35 planned adult opportunity lost")
+            continue
+        require(expected["status"]=="planned","R35 unplanned adult opportunity requires new verified preparation")
+        moments=v.get("moments")
+        require(isinstance(moments,list) and len(moments)>=2,"R35 adult scene requires developed moments, not a single detail")
+        seen=set()
+        for m in moments:
+            n=m.get("scene");e=m.get("evidence")
+            require(type(n) is int and n in actual and (n in expected["scenes"] or reason(v.get("changed_context"))) and m.get("character") in expected["characters"] and isinstance(e,str) and len(WORD.findall(e))>=4 and e in actual[n] and e not in seen and reason(m.get("effect")),"R35 adult moment not bound to scene/character")
+            if k=="body_identity":
+                detail=m.get("detail")
+                require(m.get("field") in BODY_FIELDS and isinstance(detail,str) and len(detail.strip())>=3 and detail in e,"R35 concrete bodily identity not satisfied by hair/eyes alone")
+            seen.add(e)
+        require(v.get("non_graphic_and_agency_reviewed") is True,"R35 adult portrayal boundary not reviewed")
+    return data
+
 def validate_plan(request,choice):
     plan=request.get("r35_plan");require(isinstance(plan,dict) and plan.get("schema")=="worldroot-r35-plan-v1","R35 longform plan missing")
     part=plan.get("part");mode=profile(part,choice["option"])
@@ -91,6 +134,7 @@ def validate_plan(request,choice):
     refs=plan.get("references");req={r["id"]:r for r in request["requirements"]}
     require(isinstance(refs,list) and len(refs)>=2 and len(set(refs))==len(refs) and all(i in req and req[i].get("role","Response")=="Response" and i in request["reviewed"] for i in refs),"R35 compare two distinct evidence-backed narrative references")
     require(reason(plan.get("cadence_intent")) and reason(plan.get("adult_opportunity")) and reason(plan.get("epic_payoff")),"R35 editorial opportunities not articulated")
+    validate_adult_plan(request,plan)
     return {"profile":mode,"planned_words":total,"floor":floor,"target":[low,high],"scene_count":len(cards),"semantic_certification":False}
 def validate_delivery(root,request,payload,choice):
     review=payload.get("r35_review");require(isinstance(review,dict) and review.get("schema")=="worldroot-r35-review-v1","R35 release review missing")
@@ -129,9 +173,10 @@ def validate_delivery(root,request,payload,choice):
                 literals.append(m["evidence"])
             require(len(set(literals))==len(literals) and all(not (a in b or b in a) for i,a in enumerate(literals) for b in literals[i+1:]),"R35 repeated opportunity evidence: "+k)
         else:require(not v.get("moments") and reason(v.get("context")),"R35 justified natural deferral required")
+    adult=validate_adult_delivery(plan,review,actual)
     comparison=review.get("comparison")
     require(isinstance(comparison,dict) and set(comparison)==set(COMPARE),"R35 review comparative dimensions")
     for k,v in comparison.items():
         require(isinstance(v,dict) and v.get("reference_id") in plan["references"] and reason(v.get("assessment")) and v.get("result") in ("retained","improved","contextual_difference"),"R35 unresolved comparative regression: "+k)
     require(review.get("no_padding") is True and review.get("no_condensed_key_events") is True,"R35 review depth and repetition")
-    return {"schema":"worldroot-r35-longform-receipt-v1","volume":result,"segments":stage,"scene_reviews":len(rows),"opportunities":opportunities,"comparison":comparison,"semantic_certification":False,"canon_changed":False}
+    return {"schema":"worldroot-r35-longform-receipt-v1","volume":result,"segments":stage,"scene_reviews":len(rows),"opportunities":opportunities,"adult_focus":adult,"comparison":comparison,"semantic_certification":False,"canon_changed":False}
