@@ -35,3 +35,14 @@ class LinkAuditTest(unittest.TestCase):
         p,r,s,d=self.fixture();p[0]["candidate_rows"]=[];self.reseal(p[0])
         a,m=audit_and_enrich(p,r,s,[d[2]])
         self.assertEqual(m["still_open_events"],1)
+
+    def test_heading_anchor_uses_next_scene_not_previous(self):
+        lines=["Miren ficou atrás.","## XXV — retorno","","**DIA 548 · 16h19 — ESTRADA**","","Lucas retornava.","---","Varo chegou."]
+        p={"event_id":"e","episode":"e","source_sha256":"s","source_status":"CLOSED","visibility":"PRIVADO_PERSONAGEM","line":2,"anchor":lines[1],"summary_candidate":"Lucas retornava","context":[{"line":1,"text":lines[0]},{"line":2,"text":lines[1]},{"line":3,"text":lines[2]}],"candidate_rows":[]}
+        p["packet_sha256"]=seal(p)
+        rec=[{"id":i,"name":i,"scope":"EDITORIAL"} for i in ("Lucas","Miren","Varo")]
+        a,m=audit_and_enrich([p],[],{"episode:e":("s",lines,"CLOSED")},rec)
+        self.assertEqual(m["heading_anchor_windows_corrected"],1)
+        self.assertEqual(m["open_events_with_source_mentions"],1)
+        self.assertEqual([x["candidate_ids"] for x in a[0]["registry_mentions"]],[["Lucas"]])
+        self.assertEqual(a[0]["registry_mentions"][0]["source_lines"],[6])

@@ -96,13 +96,36 @@ def audit_and_enrich(packets,rows,sources,records):
             # A mention in the event summary is not source evidence.
             tier="ANCHOR" if name in anchor else "SUMMARY_AND_CONTEXT" if name in summary and locations else "CONTEXT_ONLY" if locations else "SUMMARY_ONLY"
             candidates.append({"normalized_alias":name,"candidate_ids":ids,"scopes":[known[i] for i in ids],"source_lines":locations,"tier":tier,"ambiguous":len(ids)>1})
-            count["registry_mention_groups"]+=1
-            if len(ids)>1:count["ambiguous_mention_groups"]+=1
         source_candidates=[c for c in candidates if c["source_lines"]]
+        # A chapter/scene heading may itself be the immutable event anchor.
+        # R06 bounded windows can then contain the preceding scene and stop
+        # at the immediately following day/time marker. Do not use that
+        # previous scene for entity recovery; inspect the actual next scene.
+        if not checked and lines[n-1].strip().startswith(("## ","# ")):
+            mentions=defaultdict(list)
+            hi=min(len(lines),n+32)
+            day_header_seen=False;body_seen=False
+            for i in range(n,hi+1):
+                t=lines[i-1].strip()
+                if i>n and (t.startswith(("## ","# ")) or t in ("---","***")):break
+                if i>n and t.startswith(("**DIA ","**Dia ")):
+                    if day_header_seen or body_seen:break
+                    day_header_seen=True
+                elif i>n and t:body_seen=True
+                for name in matches(lines[i-1]):mentions[name].append(i)
+            candidates=[]
+            for name in sorted(summary|set(mentions)):
+                ids=sorted(names[name]);locations=mentions.get(name,[])
+                tier="ANCHOR" if name in anchor else "SUMMARY_AND_CONTEXT" if name in summary and locations else "CONTEXT_ONLY" if locations else "SUMMARY_ONLY"
+                candidates.append({"normalized_alias":name,"candidate_ids":ids,"scopes":[known[i] for i in ids],"source_lines":locations,"tier":tier,"ambiguous":len(ids)>1})
+            source_candidates=[c for c in candidates if c["source_lines"]]
+            count["heading_anchor_windows_corrected"]+=1
         if not checked:
             count["previously_open_events"]+=1
             if source_candidates:count["open_events_with_source_mentions"]+=1
             else:count["still_open_events"]+=1
+        count["registry_mention_groups"]+=len(candidates)
+        count["ambiguous_mention_groups"]+=sum(x["ambiguous"] for x in candidates)
         route="LEDGER_AND_REGISTRY_REVIEW" if checked else "REGISTRY_MENTION_REVIEW" if source_candidates else "OPEN_ENTITY_REVIEW_REQUIRED"
         value={"event_id":ident,"packet_sha256":p["packet_sha256"],"source_sha256":digest,"source_status":status,"visibility":p["visibility"],"ledger_links_verified":len(checked),"registry_mentions":candidates,"route":route,"semantic_certification":False,"canon_promotion":False}
         result.append({**value,"receipt_sha256":seal(value)})
