@@ -5,7 +5,7 @@ from __future__ import annotations
 import argparse,json,re,os,tempfile
 from pathlib import Path
 from urllib.request import Request,build_opener,ProxyHandler,HTTPRedirectHandler
-from .semantic_queue import ROLES,VERDICTS,seal,validate,reconcile
+from .semantic_queue import ROLES,VERDICTS,seal,validate,reconcile,AUTHOR_REFERENCE_GUIDANCE
 
 class NoRedirect(HTTPRedirectHandler):
     def redirect_request(self,*args,**kwargs):raise ValueError("Local inference must not redirect")
@@ -51,6 +51,7 @@ def review_job(job,model,digest,executor,api=local_api):
             "SUPPORTED requer claim curto, evidence literalmente contido no contexto e source_role NARRATED. "
             "Não afirme estado atual, não invente fatos, não atribua poderes por mera menção. Retorne JSON válido. "
             "Os campos claim/evidence devem ser vazios se não houver afirmação sustentada.")
+    prompt+=" "+AUTHOR_REFERENCE_GUIDANCE
     body={"model":model,"messages":[{"role":"system","content":prompt},{"role":"user","content":json.dumps(job,ensure_ascii=False)}],"stream":False,"format":response_schema(job),"options":{"temperature":0},"keep_alive":"10m"}
     result=api("/api/chat",body)
     if result.get("done") is False:raise ValueError("Incomplete model response")
@@ -70,7 +71,7 @@ def run(jobs_path,out,model_a,model_b,limit=None,api=local_api):
     a=revision(model_a,api);b=revision(model_b,api)
     if a==b:raise ValueError("Two different local model digests required")
     out=Path(out);out.mkdir(parents=True,exist_ok=True)
-    binding={"schema":"worldroot-local-semantic-run-v1","model_a":model_a,"model_b":model_b,"digest_a":a,"digest_b":b,"jobs_sha256":__import__("hashlib").sha256(Path(jobs_path).read_bytes()).hexdigest()}
+    binding={"schema":"worldroot-local-semantic-run-v1","model_a":model_a,"model_b":model_b,"digest_a":a,"digest_b":b,"jobs_sha256":__import__("hashlib").sha256(Path(jobs_path).read_bytes()).hexdigest(),"author_reference_guidance_sha256":seal(AUTHOR_REFERENCE_GUIDANCE)}
     manifest=out/"run.json"
     if manifest.exists():
         if json.loads(manifest.read_text())!=binding:raise ValueError("Resume model/job binding changed")

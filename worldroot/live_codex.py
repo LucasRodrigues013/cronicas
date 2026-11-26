@@ -376,6 +376,10 @@ def bind_request(root,request):
                 rows=graph_rows(db)
     names=[x["name"] for x in request.get("r34_intent",{}).get("characters",[])]
     result={"registry_sha256":sha,"head":request["head"],"focal":[{"name":n,"ids":[r["id"] for r in aliases(rows,n,domain="Personagens")]} for n in names],"status":"REVIEW_REQUIRED","coherence_required":bool(data.get("coherence"))}
+    # Future preparations only: never invalidate historical immutable packets.
+    if request["head"]["day"]>=580 and {"aerun-instituto","aerun-guardiao"}<={r["id"] for r in rows}:
+        from .semantic_queue import AUTHOR_REFERENCE_NAMES,AUTHOR_REFERENCE_GUIDANCE
+        result["author_reference_names"]={"display_names":AUTHOR_REFERENCE_NAMES,"guidance":AUTHOR_REFERENCE_GUIDANCE,"scope":"FUTURE_NARRATION_EDITORIAL_NOT_CANON"}
     overlay=data.get("_natural_overlay")
     if overlay:
         from .natural_codex import CHAR_FIELDS,SYNC_SCHEMA

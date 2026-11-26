@@ -26,3 +26,16 @@ class QueueTest(unittest.TestCase):
             with self.subTest(key=key,value=value),self.assertRaises(ValueError):validate(j,bad)
         bad=deepcopy(good);bad["role_reason"]=None
         with self.assertRaises(ValueError):validate(j,bad)
+
+    def test_author_aerun_distinct_referents(self):
+        from worldroot.semantic_queue import aerun_reference_hint,AUTHOR_REFERENCE_NAMES
+        cases=[
+            ("Instituto AERÚN abriu seus laboratórios.",["aerun-instituto"]),
+            ("AERÚN ergueu o focinho entre as correntes.",["aerun-guardiao"]),
+            ("O dragão AERÚN observou o Instituto AERÚN.",["aerun-instituto","aerun-guardiao"]),
+            ("O Coração de AERÚN continuava selado.",[]),
+            ("AERÚN não estava ali.",[]),
+            ("Miren examinou o documento de AERÚN.",[])]
+        for line,ids in cases:
+            with self.subTest(line=line):self.assertEqual(aerun_reference_hint(line)["candidate_ids"],ids)
+        self.assertEqual( len(set(AUTHOR_REFERENCE_NAMES.values())),2)

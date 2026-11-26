@@ -44,6 +44,7 @@ def metrics(packets):
 def audit_and_enrich(packets,rows,sources,records):
     """Revalidate every ledger link and recover registered mentions. Never assign roles."""
     from .live_codex import norm
+    from .semantic_queue import aerun_reference_hint
     by={r["original_id"]:r for r in rows}
     if len(by)!=len(rows):raise ValueError("Duplicate historical ID")
     names=defaultdict(set);known={}
@@ -131,6 +132,13 @@ def audit_and_enrich(packets,rows,sources,records):
             ids=candidate["candidate_ids"]
             entities=[i for i in ids if not i.startswith("plot:")]
             plots=[i for i in ids if i.startswith("plot:")]
+            if candidate["normalized_alias"]=="aerun" and {"aerun-instituto","aerun-guardiao"}<=set(entities):
+                hints=[{"line":i,**aerun_reference_hint(lines[i-1])} for i in candidate["source_lines"]]
+                candidate["author_reference_hints"]=hints
+                explicit={x for h in hints for x in h["candidate_ids"]}
+                if len(explicit)==1:count["aerun_explicit_candidate_groups"]+=1
+                elif len(explicit)>1:count["aerun_mixed_candidate_groups"]+=1
+                else:count["aerun_context_required_groups"]+=1
             candidate["entity_candidate_ids"]=entities
             candidate["plot_reference_ids"]=plots
             if len(entities)>1:

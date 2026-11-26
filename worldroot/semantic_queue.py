@@ -68,3 +68,32 @@ def main():
     already=[r["original_id"] for r in read(a.completed_first_pass)["rows"]] if a.completed_first_pass else []
     print(json.dumps(export(a.ledger,a.output,already)))
 if __name__=="__main__":main()
+
+# Explicit author naming direction, 2026-11-26. Display names are not historical
+# source replacements; IDs, aliases and provenance remain immutable.
+AUTHOR_REFERENCE_NAMES={
+    "aerun-instituto":"Instituto AERÚN",
+    "aerun-guardiao":"dragão AERÚN",
+}
+AUTHOR_REFERENCE_GUIDANCE=(
+    "Na nova narração, nomeie a organização de pesquisa como Instituto AERÚN e "
+    "a criatura como dragão AERÚN (Guardião das Marés). Pesquisa, direção, "
+    "laboratórios e equipe são do Instituto; movimento corporal, escamas, "
+    "focinho, nado e ações animais pertencem ao dragão apenas quando sustentados "
+    "pelo trecho. O Coração de AERÚN é referência a artefato, não anatomia. "
+    "Não confunda menção, metáfora, relatório ou conhecimento com presença. "
+    "Se os dois aparecem, resolva cada menção separadamente. Homônimos conservam "
+    "IDs distintos; não invente sobrenomes nem parentesco. Campo e Base Aurora "
+    "não se fundem por alias compartilhado. Preserve a fonte literal e suas datas."
+)
+def aerun_reference_hint(text):
+    """Conservative literal cue; no classification of an event or canon state."""
+    import re
+    from .live_codex import norm
+    s=norm(text)
+    if not re.search(r"\baerun\b",s):return {"route":"NO_AERUN_MENTION","candidate_ids":[]}
+    institution=bool(re.search(r"\b(?:instituto aerun|aerun instituto)\b",s))
+    dragon=bool(re.search(r"\b(?:dragao aerun|aerun dragao|aerun guardiao das mares|aerun (?:abriu os olhos|ergueu (?:a cabeca|o focinho)|nadou|bateu as asas))\b",s))
+    ids=[i for i,match in (("aerun-instituto",institution),("aerun-guardiao",dragon)) if match]
+    route="EXPLICIT_REFERENT_CANDIDATE" if len(ids)==1 else "MIXED_REFERENTS_REVIEW_REQUIRED" if ids else "CONTEXTUAL_REVIEW_REQUIRED"
+    return {"route":route,"candidate_ids":ids,"semantic_certification":False}

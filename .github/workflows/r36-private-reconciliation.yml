@@ -25,7 +25,7 @@ jobs:
           persist-credentials: false
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
-          ref: 'c5cff807191d96e77e5e990e145eedd1ac0943ec'
+          ref: 'a41cae7aa8f51148e24cdce59da9256d8d502826'
           path: editorial-review
           persist-credentials: false
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
@@ -37,7 +37,7 @@ jobs:
         run: python -c 'import json; from worldroot.semantic_local import availability; print(json.dumps(availability()))'
       - name: Verify exact historical sources and reconcile event candidates
         run: |
-          PYTHONPATH=. python audit/run_r36_reconciliation.py archive ledger/editorial/codex-staging/results/exact-context-ledger-v1 "$RUNNER_TEMP/r36-reconciliation" editorial-review/editorial/codex-staging/r36-increment-09-editorial-decisions.json
+          PYTHONPATH=. python audit/run_r36_reconciliation.py archive ledger/editorial/codex-staging/results/exact-context-ledger-v1 "$RUNNER_TEMP/r36-reconciliation" editorial-review/editorial/codex-staging/r36-aerun-author-review.json
           git -C archive diff --exit-code
           git -C ledger diff --exit-code
           git -C editorial-review diff --exit-code
