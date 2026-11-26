@@ -125,5 +125,44 @@
     "native_status": "NOT_VALIDATED",
     "approval_required": true,
     "production_hold": true
+  },
+  "free_only_execution": {
+    "status": "CONFIGURED_LOCAL_EXECUTION_PENDING",
+    "policy": "FREE_ONLY_NO_PAID_SERVICES_NO_OVERAGE_NO_SPENDING_LIMIT_INCREASE",
+    "primary": "Direct local Git + Python 3.12 + SQLite; no GitHub Actions dependency",
+    "optional": "Manual workflow on dedicated authorized self-hosted linux x64 worldroot-free-local runner only; not registered or dispatched by this change; workflow_dispatch availability depends on default branch configuration",
+    "workflow_commit": "dd3b402df162bb0ff84b948db845d18c132f1b55",
+    "workflow_blob": "2b378550e2c512d2fa0d84758c443d3d15742856",
+    "hosted_runner": false,
+    "push_trigger": false,
+    "remote_artifact_upload": false,
+    "local_prerequisites": [
+      "Authenticated Git read access to private repository",
+      "Git, Python 3.12, SQLite stdlib and GNU timeout; Bash/Linux or WSL",
+      "Disposable local workspace outside synchronized or public folders"
+    ],
+    "local_commands": [
+      "set -euo pipefail",
+      "python3.12 -c 'import sys, sqlite3; assert sys.version_info[:2] == (3, 12)'",
+      "work=$(mktemp -d)",
+      "cd \"$work\"",
+      "git clone --no-checkout --single-branch --branch review/r36-b006-native-gate https://github.com/LucasRodrigues013/cronicas.git repo",
+      "git -C repo fetch origin 3170905db607f89004ed3d62a064dbb092922080 4d2bdb7444c785705e494c3d49cad8500af25a8a 0f5dc88d5d8624f0d57d892a5bdec022cc0363ec",
+      "git -C repo worktree add --detach \"$work/audit\" dd3b402df162bb0ff84b948db845d18c132f1b55",
+      "git -C repo worktree add --detach \"$work/engine\" 3170905db607f89004ed3d62a064dbb092922080",
+      "git -C repo worktree add --detach \"$work/archive\" 4d2bdb7444c785705e494c3d49cad8500af25a8a",
+      "git -C repo worktree add --detach \"$work/checkpoint\" 0f5dc88d5d8624f0d57d892a5bdec022cc0363ec",
+      "export PYTHONDONTWRITEBYTECODE=1",
+      "PYTHONPATH=\"$work/engine\" python3.12 \"$work/audit/tools/r36_incremental_historical_review.py\" \"$work/audit\" \"$work/archive\" \"$work/engine\" \"$work/checkpoint\" \"$work/candidate\"",
+      "(cd \"$work/engine\" && timeout --signal=TERM --kill-after=5s 120s python3.12 -u -m unittest discover -s tests -v) 2>&1 | tee \"$work/regression.log\"",
+      "for p in audit archive checkpoint engine; do test -z \"$(git -C \"$work/$p\" status --porcelain)\"; done",
+      "test -s \"$work/candidate/native-receipt.json\" && test -s \"$work/candidate/review-evidence.json\"",
+      "printf 'Candidate and regression evidence: %s\\n' \"$work\""
+    ],
+    "receipt_contract": "Native receipt + review evidence + full successful regression log + clean checkout verification required; keep private locally, no publication or automatic canon update",
+    "current_blocker": "Current chat container has Git/Python 3.13 but no Python 3.12 or direct GitHub DNS/network access; authenticated connector provides repository API but no local checkout execution.",
+    "native_status": "NOT_VALIDATED",
+    "approval_required": true,
+    "production_hold": true
   }
 }
