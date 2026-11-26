@@ -248,16 +248,44 @@
       "file_id": "file_00000000f730820eb58af9d870ad8226",
       "library_file_id": "libfile_3627b592af2c81918d12b88315a21b43",
       "path": "/Cronicas de um novo Mundo/Atlas Worldroot: Cidades e Maravilhas.png",
-      "review_status": "METADATA_ONLY_PENDING_REVIEW",
-      "authority": "ILLUSTRATION_NOT_NARRATIVE_FACT"
+      "review_status": "VISUALLY_INSPECTED",
+      "authority": "ILLUSTRATION_NOT_NARRATIVE_FACT",
+      "entities": [
+        "torre-criador",
+        "base-aurora",
+        "tres-arcos",
+        "aerun-instituto",
+        "casa-tres-poderes",
+        "argos",
+        "horizonte-aberto",
+        "hz-1",
+        "academia-tres-arcos",
+        "casa-jardim-branco"
+      ],
+      "notes": "Prancha rotulada D529. Torre ~1200 m/108 níveis, ARGOS ~420 m/118 m, cidade ~62000 habitantes; números e existência da torre no D529 não ratificados. Conservar somente referência de estilo e localizar prova textual."
     },
     {
       "name": "Crônicas de um Novo Mundo: Worldroot(1).png",
       "file_id": "file_000000005918820e84e7dae621ebdfe3",
       "library_file_id": "libfile_4e95315710a08191b3b818cec6baa104",
       "path": "/Cronicas de um novo Mundo/Crônicas de um Novo Mundo: Worldroot(1).png",
-      "review_status": "METADATA_ONLY_PENDING_REVIEW",
-      "authority": "ILLUSTRATION_NOT_NARRATIVE_FACT"
+      "review_status": "VISUALLY_INSPECTED",
+      "authority": "ILLUSTRATION_NOT_NARRATIVE_FACT",
+      "entities": [
+        "torre-criador",
+        "base-aurora",
+        "tres-arcos",
+        "aerun-instituto",
+        "casa-tres-poderes",
+        "argos",
+        "horizonte-aberto",
+        "casa-jardim-branco",
+        "forja-aurora",
+        "observatorio-criador",
+        "rumo",
+        "nox"
+      ],
+      "notes": "Prancha rotulada com Torre 145 m/22 pisos/3 subsolos D541, ARGOS original 31,6 x 27,4 m, observatório D171. Corroboração visual não substitui fonte literal. Distinguir Torre de centro de governo e ARGOS original de ASCENDENTE."
     },
     {
       "name": "Crônicas de um Novo Mundo: Dez Maravilhas.png",
@@ -301,8 +329,21 @@
       "file_id": "file_00000000c4b8820e9cd2cda718ee48a0",
       "library_file_id": "libfile_a5152061a6908191b86b9db9047b885f",
       "path": "/Cronicas de um novo Mundo/Atlas Worldroot: Construções de um Novo Mundo.png",
-      "review_status": "METADATA_ONLY_PENDING_REVIEW",
-      "authority": "ILLUSTRATION_NOT_NARRATIVE_FACT"
+      "review_status": "VISUALLY_INSPECTED",
+      "authority": "ILLUSTRATION_NOT_NARRATIVE_FACT",
+      "entities": [
+        "torre-criador",
+        "base-aurora",
+        "tres-arcos",
+        "aerun-instituto",
+        "casa-tres-poderes",
+        "argos",
+        "horizonte-aberto",
+        "academia-tres-arcos",
+        "malha-aurora",
+        "casa-jardim-branco"
+      ],
+      "notes": "Prancha rotulada após D529: Torre 1280 m/120 níveis, ARGOS 420 x 128 x 86 m, Três Arcos ~48000 habitantes; conflitantes ou sem prova. Não importar rede global, capacidades, dimensões ou status de construção."
     },
     {
       "name": "Atlas Visual de Worldroot: Além das Últimas Estradas.png",
@@ -943,6 +984,33 @@
         "Praia no quadro"
       ],
       "resolution": "Participação possível, não confirmada"
+    },
+    {
+      "entity": "torre-criador",
+      "field": "height_and_floors",
+      "visual_claims": [
+        "~1200 m / 108 níveis",
+        "1280 m / 120 níveis"
+      ],
+      "resolution": "Sem promoção; verificar texto D541 e evolução posterior."
+    },
+    {
+      "entity": "tres-arcos",
+      "field": "population",
+      "visual_claims": [
+        "~62000",
+        "~48000"
+      ],
+      "resolution": "Sem promoção; localizar censo por data."
+    },
+    {
+      "entity": "argos",
+      "field": "dimensions",
+      "visual_claims": [
+        "420 x 118 m",
+        "420 x 128 x 86 m"
+      ],
+      "resolution": "Sem promoção; separar versões com fonte literal."
     }
   ]
 }
