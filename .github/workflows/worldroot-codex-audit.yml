@@ -1,5 +1,10 @@
 name: WORLDROOT universal codex staging audit
 on:
+  pull_request:
+    branches: [story-archive]
+    paths:
+      - 'editorial/codex-staging/**'
+      - '.github/workflows/worldroot-codex-audit.yml'
   push:
     branches: [audit/universal-codex-d580]
     paths:
@@ -12,13 +17,13 @@ concurrency:
   cancel-in-progress: false
 jobs:
   audit:
-    if: github.ref == 'refs/heads/audit/universal-codex-d580'
+    if: github.ref == 'refs/heads/audit/universal-codex-d580' || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.head.ref == 'audit/universal-codex-d580')
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
-          ref: ${{ github.sha }}
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
           path: archive
           persist-credentials: false
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
