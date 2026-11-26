@@ -1,0 +1,32 @@
+{
+  "schema": "worldroot-r35-living-overlay-manifest-v1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "status": "AUTHOR_AUTHORIZED_PROVISIONAL_DESIGN_STAGING",
+  "checkpoint": {
+    "day": 579,
+    "sequence": 50,
+    "episode_id": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+    "source_sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926"
+  },
+  "base_registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+  "character_overlay": {
+    "path": "editorial/registries/r35-natural-completion-d579-v2.json",
+    "git_blob": "ef584d95944ec66f6a28efbf6e4788bb4a9943f3"
+  },
+  "world_overlay": {
+    "path": "editorial/registries/r35-world-completion-d579-v1.json",
+    "git_blob": "faed835480bdfc61cd703ac9778e7075cc5b289b"
+  },
+  "vetoes": [],
+  "rules": {
+    "no_automatic_canon_promotion": true,
+    "author_secrets_not_general_retrieval": true,
+    "stable_ids": true,
+    "require_new_character_profile": true,
+    "require_scene_sync": true,
+    "scope_separation": true
+  },
+  "notes": [
+    "Manifest for R35 graph integration after homologation. Does not activate or alter HEAD. C4 prospective design subject to author veto and higher evidence."
+  ]
+}
