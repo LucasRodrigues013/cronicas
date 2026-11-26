@@ -53,3 +53,23 @@ class ArchitectTest(unittest.TestCase):
         self.assertFalse(validate_legacy_recovery(row,review,body)["semantic_certification"])
         for mod in ({"target_status":"CANONICO"},{"semantic_reviewer":"r"},{"context":"fake"}):
             with self.assertRaises(ValueError):validate_legacy_recovery(row,{**review,**mod},body)
+
+
+    def test_legacy_alias_gap_recovery(self):
+        from unittest.mock import patch
+        from worldroot.memory_continuity import fusion
+        calls=[]
+        def retrieve(db,query,entity,topic,role,limit,strategy):
+            calls.append(entity)
+            if entity is not None:
+                raise ValueError("Unknown entity")
+            return {"hits":[{"id":1,"source":"fixture","role":"Response","line_start":1,"line_end":9}]}
+        with patch("worldroot.memory_continuity.retrieve",side_effect=retrieve):
+            out=fusion(None,"Orven",entity="orven",role="Response")
+        self.assertEqual(out["status"],"CANDIDATES_ONLY")
+        self.assertEqual(out["hits"][0]["id"],1)
+        self.assertFalse(out["canon_changed"])
+        self.assertIn(None,calls)
+        with patch("worldroot.memory_continuity.retrieve",side_effect=ValueError("Unknown topic")):
+            with self.assertRaisesRegex(ValueError,"Unknown topic"):
+                fusion(None,"Orven",entity="orven")
