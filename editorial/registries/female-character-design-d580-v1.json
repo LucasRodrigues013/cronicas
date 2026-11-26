@@ -1,0 +1,811 @@
+{
+  "schema": "worldroot-female-character-design-v1",
+  "status": "AUTHOR_DIRECTION_AND_REVIEWABLE_DESIGN",
+  "date": "2026-11-26",
+  "source_inventory": {
+    "path": "editorial/registries/female-visual-inventory-d580.json",
+    "blob": "8d60e406c244322ed117c4d52e42545d5c3825d8"
+  },
+  "author_approved": [
+    {
+      "id": "lyra",
+      "field": "age_years",
+      "value": 18,
+      "source": "Lira vai ter 18 anos",
+      "scope": "current character design; no retroactive date calculations"
+    },
+    {
+      "id": "miren",
+      "field": "bust",
+      "value": "grande e natural",
+      "source": "previous explicit author direction"
+    }
+  ],
+  "notes": [
+    "All other numerical ages and heights are proposals, not recovered historical facts; reconcile before adoption.",
+    "Distinct fictional identities; celebrity references are broad aesthetic cues, not likeness or personal measurements.",
+    "No invented historical events. No discarded pilot facts. No automatic runtime integration or historical rewrite."
+  ],
+  "profiles": [
+    {
+      "id": "miren",
+      "name": "Miren",
+      "age": {
+        "years": 29,
+        "status": "DESIGN_PROPOSAL_PENDING_HISTORICAL_CONCILIATION"
+      },
+      "height_cm": 174,
+      "hair": "Castanho-escuro com reflexos acobreados, longo abaixo dos ombros, ondas suaves",
+      "eyes": "Verde-avelã",
+      "skin": "Clara, sardas discretas",
+      "face": "Oval, maçãs finas, nariz delicado, lábios definidos",
+      "build": "Esguia de curvas marcantes, ombros delicados, cintura definida, quadris proporcionais, pernas longas",
+      "bust": "Busto grande, cheio, naturalmente arredondado, sem implantes",
+      "wardrobe": "Azul profundo, prata, verde floresta; vestido fluido e botas de pesquisa",
+      "role_and_presence": "Arqueóloga; inteligência, humor íntimo e autonomia; esposa de Lucas",
+      "visual_inspiration": "Marina Ruy Barbosa: elegância e traços expressivos; manter castanho histórico",
+      "historical_observations": [
+        {
+          "field": "hair_color",
+          "value": "Castanho; também descrito como escuro.",
+          "source": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-005",
+            "line_start": 37269,
+            "line_end": 37273,
+            "role": "Response"
+          },
+          "status": "LITERAL_HISTORICAL_OBSERVATION"
+        },
+        {
+          "field": "hair_length",
+          "value": "Cai sobre os ombros.",
+          "source": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-006",
+            "line_start": 6540,
+            "line_end": 6544,
+            "role": "Response"
+          },
+          "status": "LITERAL_HISTORICAL_OBSERVATION"
+        },
+        {
+          "field": "hair_texture",
+          "value": "Levemente ondulado ao despertar; estado contextual.",
+          "source": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-005",
+            "line_start": 37269,
+            "line_end": 37273,
+            "role": "Response"
+          },
+          "status": "LITERAL_HISTORICAL_OBSERVATION"
+        },
+        {
+          "field": "build",
+          "value": "Alta, esguia, postura firme e olhos atentos.",
+          "source": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+            "line_start": 9090,
+            "line_end": 9136,
+            "role": "Response"
+          },
+          "status": "LITERAL_HISTORICAL_OBSERVATION"
+        },
+        {
+          "field": "clothing",
+          "value": "Vestido verde profundo ajustado à cintura; botas confortáveis (D577).",
+          "source": {
+            "path": "episodes/LVI-C08-PIV-D577-AUTHOR-SOURCE/draft/narrativa_integral.md",
+            "line_start": 35,
+            "line_end": 41,
+            "role": "Response"
+          },
+          "status": "LITERAL_HISTORICAL_OBSERVATION"
+        },
+        {
+          "field": "adult_context",
+          "value": "A narrativa descreve Lucas e Miren como dois adultos; idade numérica desconhecida.",
+          "source": {
+            "path": "episodes/LVI-C08-PV-D578-AUTHOR-SOURCE/draft/narrativa_integral.md",
+            "line_start": 697,
+            "line_end": 707,
+            "role": "Response"
+          },
+          "status": "LITERAL_HISTORICAL_OBSERVATION"
+        }
+      ],
+      "design_status": "CREATIVE_PROPOSAL_REVIEWABLE",
+      "age_safety": "No sexualized portrayal of unresolved ages; Lira adult by author direction but nonsexual portrait. All visual reference designs are original, clothed, not real-person likeness reproductions."
+    },
+    {
+      "id": "astra",
+      "name": "Astra",
+      "age": {
+        "years": 27,
+        "status": "DESIGN_PROPOSAL_PENDING_HISTORICAL_CONCILIATION"
+      },
+      "height_cm": 179,
+      "hair": "Loiro dourado, longo, liso com ondas nas pontas",
+      "eyes": "Azul acinzentado",
+      "skin": "Clara",
+      "face": "Alongado, maçãs suaves, sorriso expressivo, franja opcional",
+      "build": "Longilínea, cintura discreta, quadris suaves, pernas longas",
+      "bust": "Busto médio, proporcional",
+      "wardrobe": "Azul celeste, creme, lilás; casacos leves e roupa de laboratório",
+      "role_and_presence": "Pesquisadora; curiosidade, rigor e humor espontâneo",
+      "visual_inspiration": "Taylor Swift: silhueta alta e expressividade",
+      "historical_observations": [],
+      "design_status": "CREATIVE_PROPOSAL_REVIEWABLE",
+      "age_safety": "No sexualized portrayal of unresolved ages; Lira adult by author direction but nonsexual portrait. All visual reference designs are original, clothed, not real-person likeness reproductions."
+    },
+    {
+      "id": "lyra",
+      "name": "Lira Selen Vareth",
+      "age": {
+        "years": 18,
+        "status": "AUTHOR_DEFINED"
+      },
+      "height_cm": 157,
+      "hair": "Castanho-escuro, longo, liso, fita azul ou rabo alto",
+      "eyes": "Castanho escuro",
+      "skin": "Clara de subtom dourado",
+      "face": "Oval pequeno, olhos grandes, sobrancelhas arqueadas, sorriso delicado",
+      "build": "Baixa, esguia, postura leve e ágil; proporções naturais",
+      "bust": "Não detalhar anatomia íntima; design não sexualizado",
+      "wardrobe": "Verde-água, pérola, azul; roupas de navegação e vestido leve",
+      "role_and_presence": "Lira Selen Vareth; filha de Aeldric e Serenna; navegação e autonomia",
+      "visual_inspiration": "Ariana Grande: delicadeza facial e penteados; personagem original",
+      "historical_observations": [
+        {
+          "field": "hair",
+          "value": "Escuro; fita azul prendendo mechas atrás da orelha na ocasião.",
+          "source": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-005",
+            "line_start": 34816,
+            "line_end": 34824,
+            "role": "Response"
+          },
+          "status": "LITERAL_HISTORICAL_OBSERVATION"
+        },
+        {
+          "field": "clothing",
+          "value": "Vestido verde-água, contextual.",
+          "source": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-005",
+            "line_start": 34816,
+            "line_end": 34824,
+            "role": "Response"
+          },
+          "status": "LITERAL_HISTORICAL_OBSERVATION"
+        }
+      ],
+      "design_status": "CREATIVE_PROPOSAL_REVIEWABLE",
+      "age_safety": "No sexualized portrayal of unresolved ages; Lira adult by author direction but nonsexual portrait. All visual reference designs are original, clothed, not real-person likeness reproductions."
+    },
+    {
+      "id": "thalor-althea",
+      "name": "Althea",
+      "age": {
+        "years": 34,
+        "status": "DESIGN_PROPOSAL_PENDING_HISTORICAL_CONCILIATION"
+      },
+      "height_cm": 178,
+      "hair": "Loiro mel, longo e volumoso",
+      "eyes": "Azul safira",
+      "skin": "Clara",
+      "face": "Oval, maçãs altas, feições clássicas, sorriso contido",
+      "build": "Alta, curvilínea, cintura marcada, quadris amplos e pernas torneadas",
+      "bust": "Busto volumoso, proporcional à constituição",
+      "wardrobe": "Azul real, ouro, marfim; vestidos de corte e manto",
+      "role_and_presence": "Rainha de Thalor; autoridade e elegância",
+      "visual_inspiration": "Kate Upton: presença clássica e silhueta curvilínea",
+      "historical_observations": [
+        {
+          "field": "hair",
+          "value": "Loiro.",
+          "source": {
+            "path": "history/sources/02_DIA_383_A_431_FONTE_LITERAL.txt",
+            "line_start": 28027,
+            "line_end": 28039,
+            "role": "Response"
+          },
+          "status": "LITERAL_HISTORICAL_OBSERVATION"
+        },
+        {
+          "field": "height_build",
+          "value": "Alta; postura refinada e elegante.",
+          "source": {
+            "path": "history/sources/02_DIA_383_A_431_FONTE_LITERAL.txt",
+            "line_start": 28027,
+            "line_end": 28039,
+            "role": "Response"
+          },
+          "status": "LITERAL_HISTORICAL_OBSERVATION"
+        },
+        {
+          "field": "beauty",
+          "value": "Beleza impressionante segundo a narrativa.",
+          "source": {
+            "path": "history/sources/02_DIA_383_A_431_FONTE_LITERAL.txt",
+            "line_start": 28027,
+            "line_end": 28039,
+            "role": "Response"
+          },
+          "status": "LITERAL_HISTORICAL_OBSERVATION"
+        },
+        {
+          "field": "clothing",
+          "value": "Vestido azul profundo, contextual.",
+          "source": {
+            "path": "history/sources/02_DIA_383_A_431_FONTE_LITERAL.txt",
+            "line_start": 28027,
+            "line_end": 28039,
+            "role": "Response"
+          },
+          "status": "LITERAL_HISTORICAL_OBSERVATION"
+        }
+      ],
+      "design_status": "CREATIVE_PROPOSAL_REVIEWABLE",
+      "age_safety": "No sexualized portrayal of unresolved ages; Lira adult by author direction but nonsexual portrait. All visual reference designs are original, clothed, not real-person likeness reproductions."
+    },
+    {
+      "id": "ilva",
+      "name": "Ilva",
+      "age": {
+        "years": 31,
+        "status": "DESIGN_PROPOSAL_PENDING_HISTORICAL_CONCILIATION"
+      },
+      "height_cm": 169,
+      "hair": "Castanho muito escuro, trança apertada; solto ondulado",
+      "eyes": "Mel",
+      "skin": "Clara dourada",
+      "face": "Traços finos, maçãs definidas, sorriso enviesado",
+      "build": "Proporcional, cintura marcada, braços ativos, pernas firmes",
+      "bust": "Busto médio",
+      "wardrobe": "Terracota, vinho e creme; avental de costura e peças autorais",
+      "role_and_presence": "Artesã têxtil; humor seco e criatividade",
+      "visual_inspiration": "Margot Robbie: sorriso, expressividade e charme; cabelo histórico escuro",
+      "historical_observations": [
+        {
+          "field": "hair",
+          "value": "Escuro, trança apertada.",
+          "source": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-005",
+            "line_start": 48762,
+            "line_end": 48770,
+            "role": "Response"
+          },
+          "status": "LITERAL_HISTORICAL_OBSERVATION"
+        },
+        {
+          "field": "face",
+          "value": "Traços finos; olhos atentos, cor não informada.",
+          "source": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-005",
+            "line_start": 48762,
+            "line_end": 48770,
+            "role": "Response"
+          },
+          "status": "LITERAL_HISTORICAL_OBSERVATION"
+        }
+      ],
+      "design_status": "CREATIVE_PROPOSAL_REVIEWABLE",
+      "age_safety": "No sexualized portrayal of unresolved ages; Lira adult by author direction but nonsexual portrait. All visual reference designs are original, clothed, not real-person likeness reproductions."
+    },
+    {
+      "id": "maelis",
+      "name": "Maelis",
+      "age": {
+        "years": 32,
+        "status": "DESIGN_PROPOSAL_PENDING_HISTORICAL_CONCILIATION"
+      },
+      "height_cm": 170,
+      "hair": "Castanho quase negro, longo, ondas suaves",
+      "eyes": "Verde-acinzentado",
+      "skin": "Clara",
+      "face": "Maçãs pronunciadas, olhos amendoados, feições marcantes",
+      "build": "Equilibrada, cintura definida, quadris suaves, postura serena",
+      "bust": "Busto médio a cheio",
+      "wardrobe": "Esmeralda, marfim, azul petróleo; trajes de saúde e vestidos simples",
+      "role_and_presence": "Saúde e acolhimento; firmeza compassiva",
+      "visual_inspiration": "Megan Fox: intensidade do olhar e elegância escura",
+      "historical_observations": [],
+      "design_status": "CREATIVE_PROPOSAL_REVIEWABLE",
+      "age_safety": "No sexualized portrayal of unresolved ages; Lira adult by author direction but nonsexual portrait. All visual reference designs are original, clothed, not real-person likeness reproductions."
+    },
+    {
+      "id": "lysa",
+      "name": "Lysa",
+      "age": {
+        "years": 30,
+        "status": "DESIGN_PROPOSAL_PENDING_HISTORICAL_CONCILIATION"
+      },
+      "height_cm": 176,
+      "hair": "Castanho-escuro, longo, liso; coque no trabalho",
+      "eyes": "Verde musgo",
+      "skin": "Oliva clara",
+      "face": "Oval, sobrancelhas marcantes, nariz reto, feições refinadas",
+      "build": "Longilínea, ombros alinhados, cintura definida, pernas longas",
+      "bust": "Busto médio",
+      "wardrobe": "Grafite, vinho, branco; alfaiataria e broche discreto",
+      "role_and_presence": "Administração e diplomacia; precisão e humor contido",
+      "visual_inspiration": "Taylor Hill: traços definidos e postura",
+      "historical_observations": [],
+      "design_status": "CREATIVE_PROPOSAL_REVIEWABLE",
+      "age_safety": "No sexualized portrayal of unresolved ages; Lira adult by author direction but nonsexual portrait. All visual reference designs are original, clothed, not real-person likeness reproductions."
+    },
+    {
+      "id": "elyrien",
+      "name": "Elyrien",
+      "age": {
+        "years": null,
+        "status": "UNRESOLVED"
+      },
+      "height_cm": 180,
+      "hair": "Loiro claro com nuances prateadas, longo",
+      "eyes": "Azul esverdeado",
+      "skin": "Clara luminosa",
+      "face": "Oval amplo, maçãs suaves, orelhas élficas, olhar sereno",
+      "build": "Alta, longilínea, movimentos fluidos",
+      "bust": "Não definido; idade cronológica e maturidade élfica a verificar",
+      "wardrobe": "Verde profundo, prata, marfim; manto de folhas bordadas",
+      "role_and_presence": "Soberana élfica; autoridade serena",
+      "visual_inspiration": "Jennifer Lawrence: feições naturais; adaptação élfica",
+      "historical_observations": [
+        {
+          "field": "hair",
+          "value": "Claros, descem sobre o manto.",
+          "source": {
+            "path": "episodes/LVI-C06-PIV-D567-AUTHOR-SOURCE/draft/narrativa_integral.md",
+            "line_start": 474,
+            "line_end": 480,
+            "role": "Response"
+          },
+          "status": "LITERAL_HISTORICAL_OBSERVATION"
+        },
+        {
+          "field": "clothing",
+          "value": "Manto verde-escuro bordado com folhas prateadas, contextual.",
+          "source": {
+            "path": "episodes/LVI-C06-PIV-D567-AUTHOR-SOURCE/draft/narrativa_integral.md",
+            "line_start": 474,
+            "line_end": 480,
+            "role": "Response"
+          },
+          "status": "LITERAL_HISTORICAL_OBSERVATION"
+        }
+      ],
+      "design_status": "CREATIVE_PROPOSAL_REVIEWABLE",
+      "age_safety": "No sexualized portrayal of unresolved ages; Lira adult by author direction but nonsexual portrait. All visual reference designs are original, clothed, not real-person likeness reproductions."
+    },
+    {
+      "id": "serenna",
+      "name": "Serenna Vareth",
+      "age": {
+        "years": 45,
+        "status": "DESIGN_PROPOSAL_PENDING_HISTORICAL_CONCILIATION"
+      },
+      "height_cm": 168,
+      "hair": "Castanho-escuro, preso em coque elegante",
+      "eyes": "Azul acinzentado",
+      "skin": "Clara dourada",
+      "face": "Oval delicado, olhos penetrantes, semelhança familiar com Lira",
+      "build": "Proporções equilibradas, postura ereta, cintura natural",
+      "bust": "Busto médio a cheio",
+      "wardrobe": "Azul marinho, ameixa, pérola; alfaiataria marítima refinada",
+      "role_and_presence": "Mãe de Lira; determinação e autoridade silenciosa",
+      "visual_inspiration": "Linha familiar Vareth, maturidade e elegância",
+      "historical_observations": [
+        {
+          "field": "hair",
+          "value": "Escuro, cuidadosamente preso.",
+          "source": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-005",
+            "line_start": 31211,
+            "line_end": 31219,
+            "role": "Response"
+          },
+          "status": "LITERAL_HISTORICAL_OBSERVATION"
+        },
+        {
+          "field": "eyes",
+          "value": "Claros, penetrantes; tonalidade não definida.",
+          "source": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-005",
+            "line_start": 31211,
+            "line_end": 31219,
+            "role": "Response"
+          },
+          "status": "LITERAL_HISTORICAL_OBSERVATION"
+        },
+        {
+          "field": "posture",
+          "value": "Presença firme, comanda sem erguer a voz.",
+          "source": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-005",
+            "line_start": 31211,
+            "line_end": 31219,
+            "role": "Response"
+          },
+          "status": "LITERAL_HISTORICAL_OBSERVATION"
+        }
+      ],
+      "design_status": "CREATIVE_PROPOSAL_REVIEWABLE",
+      "age_safety": "No sexualized portrayal of unresolved ages; Lira adult by author direction but nonsexual portrait. All visual reference designs are original, clothed, not real-person likeness reproductions."
+    },
+    {
+      "id": "yra",
+      "name": "Yra",
+      "age": {
+        "years": 28,
+        "status": "DESIGN_PROPOSAL_PENDING_HISTORICAL_CONCILIATION"
+      },
+      "height_cm": 172,
+      "hair": "Castanho-escuro, trança curta",
+      "eyes": "Verde claro",
+      "skin": "Bronzeada",
+      "face": "Traços firmes, cicatriz fina na sobrancelha esquerda",
+      "build": "Atlética, ombros fortes, quadris proporcionais, pernas musculosas",
+      "bust": "Busto médio",
+      "wardrobe": "Verde mar, couro castanho, azul; jaqueta de navegação",
+      "role_and_presence": "Navegadora; humor provocador; vínculo histórico com Círan",
+      "visual_inspiration": "Original; manter cicatriz, olhos e pele recuperados",
+      "historical_observations": [
+        {
+          "field": "hair",
+          "value": "Castanho-escuro, trança curta.",
+          "source": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-005",
+            "line_start": 37791,
+            "line_end": 37799,
+            "role": "Response"
+          },
+          "status": "LITERAL_HISTORICAL_OBSERVATION"
+        },
+        {
+          "field": "eyes",
+          "value": "Verdes claros.",
+          "source": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-005",
+            "line_start": 37791,
+            "line_end": 37799,
+            "role": "Response"
+          },
+          "status": "LITERAL_HISTORICAL_OBSERVATION"
+        },
+        {
+          "field": "skin",
+          "value": "Bronzeada.",
+          "source": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-005",
+            "line_start": 37791,
+            "line_end": 37799,
+            "role": "Response"
+          },
+          "status": "LITERAL_HISTORICAL_OBSERVATION"
+        },
+        {
+          "field": "mark",
+          "value": "Cicatriz fina junto à sobrancelha esquerda.",
+          "source": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-005",
+            "line_start": 37791,
+            "line_end": 37799,
+            "role": "Response"
+          },
+          "status": "LITERAL_HISTORICAL_OBSERVATION"
+        },
+        {
+          "field": "expression",
+          "value": "Expressão severa e olhos divertidos em interação com Círan.",
+          "source": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-005",
+            "line_start": 45347,
+            "line_end": 45353,
+            "role": "Response"
+          },
+          "status": "LITERAL_HISTORICAL_OBSERVATION"
+        }
+      ],
+      "design_status": "CREATIVE_PROPOSAL_REVIEWABLE",
+      "age_safety": "No sexualized portrayal of unresolved ages; Lira adult by author direction but nonsexual portrait. All visual reference designs are original, clothed, not real-person likeness reproductions."
+    },
+    {
+      "id": "seris",
+      "name": "Serís Daum",
+      "age": {
+        "years": 35,
+        "status": "DESIGN_PROPOSAL_PENDING_HISTORICAL_CONCILIATION"
+      },
+      "height_cm": 171,
+      "hair": "Negro, corte na altura do queixo",
+      "eyes": "Cinza aço",
+      "skin": "Clara",
+      "face": "Simetria facial marcante, olhos seguros, boca definida",
+      "build": "Curvilínea, cintura marcada, quadris amplos, pernas proporcionais",
+      "bust": "Busto grande e firme, direção autoral recuperada",
+      "wardrobe": "Azul petróleo, vinho, prata; roupas de corte impecável",
+      "role_and_presence": "Comerciante e estrategista; charme deliberado e competência",
+      "visual_inspiration": "Referência autoral de estética exuberante; design original sem reproduzir pessoa real",
+      "historical_observations": [
+        {
+          "field": "hair_color_length",
+          "value": "Negro, cortado na altura do queixo.",
+          "source": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-006",
+            "line_start": 8542,
+            "line_end": 8554,
+            "role": "Response"
+          },
+          "status": "LITERAL_HISTORICAL_OBSERVATION"
+        },
+        {
+          "field": "eyes",
+          "value": "Cinzentos.",
+          "source": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-006",
+            "line_start": 14936,
+            "line_end": 14942,
+            "role": "Response"
+          },
+          "status": "LITERAL_HISTORICAL_OBSERVATION"
+        },
+        {
+          "field": "face",
+          "value": "Rosto de simetria impressionante.",
+          "source": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-006",
+            "line_start": 8542,
+            "line_end": 8554,
+            "role": "Response"
+          },
+          "status": "LITERAL_HISTORICAL_OBSERVATION"
+        },
+        {
+          "field": "clothing",
+          "value": "Traje de verão azul-petróleo com cintura marcada e decote generoso; joia prateada; contextual.",
+          "source": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-006",
+            "line_start": 8542,
+            "line_end": 8554,
+            "role": "Response"
+          },
+          "status": "LITERAL_HISTORICAL_OBSERVATION"
+        },
+        {
+          "field": "bust",
+          "value": "Seios grandes e firmes; comparação com modelo famosa na direção autoral, não medidas confirmadas.",
+          "source": {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-006",
+            "line_start": 8331,
+            "line_end": 8331,
+            "role": "Prompt"
+          },
+          "status": "AUTHOR_DIRECTION_RECOVERED"
+        }
+      ],
+      "design_status": "CREATIVE_PROPOSAL_REVIEWABLE",
+      "age_safety": "No sexualized portrayal of unresolved ages; Lira adult by author direction but nonsexual portrait. All visual reference designs are original, clothed, not real-person likeness reproductions."
+    },
+    {
+      "id": "naira",
+      "name": "Naira",
+      "age": {
+        "years": 29,
+        "status": "DESIGN_PROPOSAL_PENDING_HISTORICAL_CONCILIATION"
+      },
+      "height_cm": 169,
+      "hair": "Castanho muito escuro, longo, rabo baixo",
+      "eyes": "Mel escuro",
+      "skin": "Oliva",
+      "face": "Feições fortes, olhos expressivos, sorriso franco",
+      "build": "Atlética e curvilínea, braços fortes, cintura definida, pernas firmes",
+      "bust": "Busto cheio, proporcional",
+      "wardrobe": "Grafite, âmbar, azul; uniforme operacional e botas",
+      "role_and_presence": "Operações e segurança; rigor e pragmatismo",
+      "visual_inspiration": "Referência autoral de silhueta atlética e curvilínea; design original",
+      "historical_observations": [],
+      "design_status": "CREATIVE_PROPOSAL_REVIEWABLE",
+      "age_safety": "No sexualized portrayal of unresolved ages; Lira adult by author direction but nonsexual portrait. All visual reference designs are original, clothed, not real-person likeness reproductions."
+    },
+    {
+      "id": "bressa",
+      "name": "Bressa",
+      "age": {
+        "years": 35,
+        "status": "DESIGN_PROPOSAL_PENDING_HISTORICAL_CONCILIATION"
+      },
+      "height_cm": 166,
+      "hair": "Castanho acobreado, preso em trança lateral",
+      "eyes": "Âmbar",
+      "skin": "Morena clara, sardas",
+      "face": "Rosto angular, nariz marcado, sorriso raro",
+      "build": "Compacta, robusta, braços e pernas fortes",
+      "bust": "Busto médio",
+      "wardrobe": "Ferrugem, couro, cinza; avental de engenheira",
+      "role_and_presence": "Engenheira das montanhas; humor direto",
+      "visual_inspiration": "Original",
+      "historical_observations": [],
+      "design_status": "CREATIVE_PROPOSAL_REVIEWABLE",
+      "age_safety": "No sexualized portrayal of unresolved ages; Lira adult by author direction but nonsexual portrait. All visual reference designs are original, clothed, not real-person likeness reproductions."
+    },
+    {
+      "id": "adela",
+      "name": "Adela",
+      "age": {
+        "years": 30,
+        "status": "DESIGN_PROPOSAL_PENDING_HISTORICAL_CONCILIATION"
+      },
+      "height_cm": 167,
+      "hair": "Castanho médio, na altura dos ombros",
+      "eyes": "Castanho dourado",
+      "skin": "Clara morena",
+      "face": "Rosto triangular suave, sorriso prático",
+      "build": "Esguia, movimentos ágeis, pernas firmes",
+      "bust": "Busto médio",
+      "wardrobe": "Azul ferroviário, creme, cobre; uniforme funcional",
+      "role_and_presence": "Desenvolvimento ferroviário; competência",
+      "visual_inspiration": "Original",
+      "historical_observations": [],
+      "design_status": "CREATIVE_PROPOSAL_REVIEWABLE",
+      "age_safety": "No sexualized portrayal of unresolved ages; Lira adult by author direction but nonsexual portrait. All visual reference designs are original, clothed, not real-person likeness reproductions."
+    },
+    {
+      "id": "serina",
+      "name": "Serina",
+      "age": {
+        "years": 33,
+        "status": "DESIGN_PROPOSAL_PENDING_HISTORICAL_CONCILIATION"
+      },
+      "height_cm": 173,
+      "hair": "Negro ondulado, longo, preso no mar",
+      "eyes": "Verde acinzentado",
+      "skin": "Morena dourada",
+      "face": "Maçãs altas, olhar tranquilo",
+      "build": "Atlética longilínea, postura equilibrada",
+      "bust": "Busto médio",
+      "wardrobe": "Azul oceano, branco e prata; traje de navegação",
+      "role_and_presence": "Exploração marítima; disciplina e curiosidade",
+      "visual_inspiration": "Original",
+      "historical_observations": [],
+      "design_status": "CREATIVE_PROPOSAL_REVIEWABLE",
+      "age_safety": "No sexualized portrayal of unresolved ages; Lira adult by author direction but nonsexual portrait. All visual reference designs are original, clothed, not real-person likeness reproductions."
+    },
+    {
+      "id": "orelia",
+      "name": "Orelia",
+      "age": {
+        "years": 38,
+        "status": "DESIGN_PROPOSAL_PENDING_HISTORICAL_CONCILIATION"
+      },
+      "height_cm": 170,
+      "hair": "Castanho profundo, coque baixo",
+      "eyes": "Castanho escuro",
+      "skin": "Oliva clara",
+      "face": "Rosto retangular suave, feições precisas",
+      "build": "Estrutura média, postura ereta",
+      "bust": "Busto médio",
+      "wardrobe": "Carvão, borgonha, bronze; alfaiataria administrativa",
+      "role_and_presence": "Administração e negociações; controle e precisão",
+      "visual_inspiration": "Original",
+      "historical_observations": [],
+      "design_status": "CREATIVE_PROPOSAL_REVIEWABLE",
+      "age_safety": "No sexualized portrayal of unresolved ages; Lira adult by author direction but nonsexual portrait. All visual reference designs are original, clothed, not real-person likeness reproductions."
+    },
+    {
+      "id": "avelna",
+      "name": "Avelna",
+      "age": {
+        "years": null,
+        "status": "UNRESOLVED"
+      },
+      "height_cm": 172,
+      "hair": "Castanho escuro, liso, preso",
+      "eyes": "Cinza verde",
+      "skin": "Clara",
+      "face": "Feições angulares, olhar reservado",
+      "build": "Longilínea, postura firme",
+      "bust": "Não definido até verificação de idade e papel",
+      "wardrobe": "Cinza, verde escuro, bronze; traje discreto",
+      "role_and_presence": "Núcleo do Dominato; preservar papel histórico",
+      "visual_inspiration": "Original; identidade e idade a verificar",
+      "historical_observations": [],
+      "design_status": "CREATIVE_PROPOSAL_REVIEWABLE",
+      "age_safety": "No sexualized portrayal of unresolved ages; Lira adult by author direction but nonsexual portrait. All visual reference designs are original, clothed, not real-person likeness reproductions."
+    },
+    {
+      "id": "talis",
+      "name": "Talis",
+      "age": {
+        "years": null,
+        "status": "UNRESOLVED"
+      },
+      "height_cm": null,
+      "hair": "Castanho escuro, comprimento médio",
+      "eyes": "Avelã",
+      "skin": "Clara",
+      "face": "Feições delicadas, expressão atenta",
+      "build": "Constituição não definida",
+      "bust": "Não definido",
+      "wardrobe": "Creme, azul cinza; roupas discretas",
+      "role_and_presence": "Talis Elvenar; trama de desaparecimento; não inferir paradeiro",
+      "visual_inspiration": "Original provisório, idade e identidade a verificar",
+      "historical_observations": [],
+      "design_status": "CREATIVE_PROPOSAL_REVIEWABLE",
+      "age_safety": "No sexualized portrayal of unresolved ages; Lira adult by author direction but nonsexual portrait. All visual reference designs are original, clothed, not real-person likeness reproductions."
+    },
+    {
+      "id": "enna",
+      "name": "Enna",
+      "age": {
+        "years": null,
+        "status": "UNRESOLVED"
+      },
+      "height_cm": null,
+      "hair": "Castanho, penteado simples",
+      "eyes": "Castanho",
+      "skin": "Morena clara",
+      "face": "Rosto suave, sorriso aberto",
+      "build": "Constituição não definida",
+      "bust": "Não definido",
+      "wardrobe": "Verde suave, creme; roupas simples",
+      "role_and_presence": "Núcleo histórico de Calderva; recuperar papel e idade",
+      "visual_inspiration": "Original provisório, idade e identidade a verificar",
+      "historical_observations": [],
+      "design_status": "CREATIVE_PROPOSAL_REVIEWABLE",
+      "age_safety": "No sexualized portrayal of unresolved ages; Lira adult by author direction but nonsexual portrait. All visual reference designs are original, clothed, not real-person likeness reproductions."
+    },
+    {
+      "id": "reva",
+      "name": "Reva",
+      "age": {
+        "years": 36,
+        "status": "DESIGN_PROPOSAL_PENDING_HISTORICAL_CONCILIATION"
+      },
+      "height_cm": 165,
+      "hair": "Castanho escuro, curto ou coque prático",
+      "eyes": "Castanho",
+      "skin": "Morena",
+      "face": "Rosto arredondado, olhos vivos",
+      "build": "Estrutura média, movimentos seguros",
+      "bust": "Busto médio",
+      "wardrobe": "Verde sálvia, marfim; uniforme de saúde",
+      "role_and_presence": "Profissional de saúde; humor firme",
+      "visual_inspiration": "Original",
+      "historical_observations": [],
+      "design_status": "CREATIVE_PROPOSAL_REVIEWABLE",
+      "age_safety": "No sexualized portrayal of unresolved ages; Lira adult by author direction but nonsexual portrait. All visual reference designs are original, clothed, not real-person likeness reproductions."
+    },
+    {
+      "id": "ivena",
+      "name": "Ivena",
+      "age": {
+        "years": 62,
+        "status": "DESIGN_PROPOSAL_PENDING_HISTORICAL_CONCILIATION"
+      },
+      "height_cm": 163,
+      "hair": "Grisalho, preso de maneira prática",
+      "eyes": "Castanho claro",
+      "skin": "Clara, linhas de expressão",
+      "face": "Rosto oval maduro, olhar observador",
+      "build": "Estrutura média, postura prática",
+      "bust": "Não definido",
+      "wardrobe": "Azul acinzentado, bege; casaco e caderno",
+      "role_and_presence": "Profissional de saúde de Halvern; comunicação visual",
+      "visual_inspiration": "Original; cabelo grisalho histórico",
+      "historical_observations": [
+        {
+          "field": "hair",
+          "value": "Grisalhos, presos de maneira prática.",
+          "source": {
+            "path": "episodes/LVI-C08-PIV-D577-AUTHOR-SOURCE/draft/narrativa_integral.md",
+            "line_start": 111,
+            "line_end": 115,
+            "role": "Response"
+          },
+          "status": "LITERAL_HISTORICAL_OBSERVATION"
+        }
+      ],
+      "design_status": "CREATIVE_PROPOSAL_REVIEWABLE",
+      "age_safety": "No sexualized portrayal of unresolved ages; Lira adult by author direction but nonsexual portrait. All visual reference designs are original, clothed, not real-person likeness reproductions."
+    }
+  ]
+}
