@@ -1,0 +1,80 @@
+{
+  "schema": "worldroot-r36-book-ii-stage-b-checkpoint-v1",
+  "book": 2,
+  "stage": "B",
+  "status": "PARTIAL_EDITORIAL_RECONCILIATION_ARCHIVED",
+  "previous_checkpoint": "038a31ca116bfaa76d4a2f30b417906e46f61900",
+  "review": {
+    "commit": "625afa955c64853bac94202fa5791a1c912d8332",
+    "blob": "0de8098ef25e798fb7f1e0b6dbb8fc6c433261cc",
+    "draft_promoted_by_native_validation": true
+  },
+  "archive": {
+    "commit": "fa5e43f73cead0ed482696fece073a810a45f220",
+    "manifest_blob": "ffef0fac620396afbc42c0ccb3429584d1728f41",
+    "character_overlay": "df7de8b29c2ea055fca4eae7f3f11b9b6df9dbd7",
+    "world_overlay": "a8235811e82a2e0ae9c1e62e4ec0c3050c1f6740",
+    "naming_overlay": "3ec66d8d7aa067f052b85c750d739d3a40539aaa"
+  },
+  "counts": {
+    "targets_total": 261,
+    "editorially_reviewed": 119,
+    "remaining": 142,
+    "groups_reviewed": 92,
+    "groups_total": 203,
+    "fields_changed_this_batch": 18,
+    "field_updates_cumulative": 86,
+    "existing_entities_this_batch": 11,
+    "existing_profile_count": 192,
+    "independently_certified": 0,
+    "architect_observations_this_batch": 0,
+    "author_directions_this_batch": 2,
+    "additional_observations": 10
+  },
+  "verification": {
+    "native_test_engine": "3170905db607f89004ed3d62a064dbb092922080",
+    "native_tests_passed": 705,
+    "full_suite_run": true,
+    "native_load_overlay_before_after": true,
+    "native_naming_revalidated": 96,
+    "links": 25,
+    "source_bytes": 6823025,
+    "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+    "source_part_git_hashes_verified": 6,
+    "ledger_anchors_exact": 15,
+    "complete_groups_this_batch": 6,
+    "context_comparisons": 128,
+    "additional_evidence_comparisons": 200,
+    "all_fields": 5923,
+    "unchanged_fields": 5905,
+    "protected_fields_unchanged": 40,
+    "stable_ids": true,
+    "field_diff_exact": true,
+    "aerun_distinct": true,
+    "remote_blob_match_local_native": 4,
+    "readback": true,
+    "source": "User supplied exact commit ZIP snapshots; local Python 3.13 native run; archive commit diff only four registry files",
+    "warnings": [
+      "ResourceWarning: unclosed SQLite connections; suite passed, not repaired outside scope"
+    ],
+    "narrative_head_blob": "9b4e09682fc3148511d59e73ec56fdcda4e396e5"
+  },
+  "next": {
+    "ledger_id": 427,
+    "global_line": 74727,
+    "stage": "B",
+    "batch": 5,
+    "base_archive": "fa5e43f73cead0ed482696fece073a810a45f220",
+    "first_group": [
+      427
+    ]
+  },
+  "reservations": {
+    "independent_certification_pending": true,
+    "book_i_reservations_inherited": true,
+    "production_hold": true,
+    "canonical_head_unchanged": true
+  },
+  "canon_changed": false,
+  "production_activated": false
+}
