@@ -1,0 +1,1310 @@
+{
+  "schema": "worldroot-r33-request-v1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "delivery_id": "LVI-C09-PII-D580-AUTHOR-SOURCE",
+  "head": {
+    "book": "Livro VI",
+    "book_closed": false,
+    "chapter": 9,
+    "closure_sha256": "9a6519869169a24bded6d06961756d9f44634642f59a0326682d45273ce9bfa8",
+    "day": 579,
+    "drive_head_status": "NAO_SINCRONIZADO",
+    "engine_mode": "GITHUB_PRIVADO_SEM_OIDC",
+    "episode_id": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+    "hour": "23h02",
+    "location": "Torre do Criador (Lucas/Miren); Três Arcos, Campo Aurora, Halvern, Pedras Claras, Renshar, Vale dos Ofícios Baixos, Serevan",
+    "part": "I",
+    "previous_head_sha256": "aaf68abf12c99e8af565c37448f656484fc6abae8dd000e8f5c398b922d70af6",
+    "schema": "worldroot-git-canon-v1",
+    "sequence": 50,
+    "source_sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926"
+  },
+  "choice_sha256": "28e69d6c763c609ac7fb14e174f28fcc1bb13bb4180c9b10c92dcbcda9551c8a",
+  "requirements": [
+    {
+      "id": "couple",
+      "domain": "relationship",
+      "critical": true,
+      "query": "Lucas e Miren mantêm afeto, humor, confiança e vida privada na Torre."
+    },
+    {
+      "id": "mirenlook",
+      "domain": "identity",
+      "critical": true,
+      "query": "Miren cabelos escuros e humor doméstico com Lucas."
+    },
+    {
+      "id": "cadence",
+      "domain": "identity",
+      "critical": true,
+      "query": "Referência histórica de diálogo cotidiano, Lucas expansivo e Miren independente."
+    },
+    {
+      "id": "rail",
+      "domain": "world",
+      "critical": true,
+      "query": "31,6 km físicos, ponte e terminal civil; ensaio completo realizado."
+    },
+    {
+      "id": "train",
+      "domain": "inventory",
+      "critical": true,
+      "query": "Primeira viagem controlada concluída; Naira e operadores, bancos de Ordan."
+    },
+    {
+      "id": "garran",
+      "domain": "identity",
+      "critical": true,
+      "query": "Garran transportador, ensaio de farinha e remuneração pela sua etapa."
+    },
+    {
+      "id": "citizen",
+      "domain": "event",
+      "critical": true,
+      "query": "Referência de escuta real a moradores, Kael e Lucas, pomar e viagem."
+    },
+    {
+      "id": "argos",
+      "domain": "inventory",
+      "critical": true,
+      "query": "ARGOS ASCENDENTE existente, nave e convívio de tripulação; respeitar configuração."
+    },
+    {
+      "id": "edrik",
+      "domain": "identity",
+      "critical": true,
+      "query": "Edrik Sovan representante civil, Sella mensageira, Ordan sobrevivente."
+    },
+    {
+      "id": "flight",
+      "domain": "event",
+      "critical": true,
+      "query": "Naira realizou missão Halvern D578, entregou bancos e trouxe Edrik e Sella."
+    },
+    {
+      "id": "cooperation",
+      "domain": "promise",
+      "critical": true,
+      "query": "Acordo civil em vigor: materiais solicitados, autonomia, intercâmbio e Campo Aurora executa missões."
+    },
+    {
+      "id": "ivena",
+      "domain": "identity",
+      "critical": true,
+      "query": "Ivena profissional, cabelos grisalhos e técnica visual; Maelis acolhe."
+    },
+    {
+      "id": "maelis",
+      "domain": "identity",
+      "critical": true,
+      "query": "Oficina Ivena/Maelis realizada, folhas adaptadas, viagem de materiais prevista."
+    },
+    {
+      "id": "genese",
+      "domain": "power",
+      "critical": true,
+      "query": "GÊNESE plena e criação material de ponte e corredor, energia independente."
+    },
+    {
+      "id": "friend",
+      "domain": "relationship",
+      "critical": true,
+      "query": "Referência de Lucas ajudar outras pessoas a construir, respeitando autonomia."
+    },
+    {
+      "id": "custody",
+      "domain": "knowledge",
+      "critical": true,
+      "query": "Teren conduz carta lacrada de Ordan a Pedras Claras; autorização civil e limite de fronteira."
+    },
+    {
+      "id": "letterpromise",
+      "domain": "promise",
+      "critical": true,
+      "query": "Ordan autorizou envio civil condicionado à segurança da irmã."
+    },
+    {
+      "id": "conference",
+      "domain": "event",
+      "critical": true,
+      "query": "Conferência aberta, representantes autorizados; Thalor confirma via carta, plenária D585."
+    },
+    {
+      "id": "fashion",
+      "domain": "inventory",
+      "critical": true,
+      "query": "Ilva recebeu encomenda dos trajes de Três Arcos, primeiras peças ajustadas."
+    },
+    {
+      "id": "ilva",
+      "domain": "relationship",
+      "critical": true,
+      "query": "Ilva e Miren amigas; cultura, franqueza, humor e acolhimento."
+    },
+    {
+      "id": "astra",
+      "domain": "identity",
+      "critical": true,
+      "query": "Astra fala com humor e autonomia de expectativas afetivas, sem par definido."
+    },
+    {
+      "id": "ordan",
+      "domain": "identity",
+      "critical": true,
+      "query": "Ordan marceneiro, irmã em Renshar, carta e escolha de segurança."
+    },
+    {
+      "id": "ordangift",
+      "domain": "inventory",
+      "critical": true,
+      "query": "Ordan fez pássaro de madeira para Miren; fará outro quando achar irmã."
+    },
+    {
+      "id": "lysa",
+      "domain": "identity",
+      "critical": true,
+      "query": "Lysa verifica correspondência, Kael autoriza, autonomia dos representantes."
+    },
+    {
+      "id": "velkar",
+      "domain": "event",
+      "critical": true,
+      "query": "Segunda comunidade observa piloto comercial de Renshar; não adesão."
+    },
+    {
+      "id": "bressa",
+      "domain": "event",
+      "critical": true,
+      "query": "Bressa e Tharvek chegam pátio inferior; consulta e inspeção autorizadas."
+    },
+    {
+      "id": "sea",
+      "domain": "location",
+      "critical": true,
+      "query": "Varkhess, Serina, Morvek em Serevan; próxima busca autorizada, não realizada."
+    },
+    {
+      "id": "kael",
+      "domain": "identity",
+      "critical": true,
+      "query": "Kael assina pela Cidade Livre, Lysa preserva mandatos."
+    },
+    {
+      "id": "departure",
+      "domain": "promise",
+      "critical": true,
+      "query": "Folhas de comunicação visual podem viajar amanhã, oficina efetiva."
+    },
+    {
+      "id": "night",
+      "domain": "relationship",
+      "critical": true,
+      "query": "Fecho conjugal, Talis e carta em aberto, Torre é lar."
+    },
+    {
+      "id": "lived",
+      "domain": "author_rule",
+      "critical": true,
+      "query": "Vida vivida e lazer sem quotas.",
+      "role": "AuthorPolicy"
+    },
+    {
+      "id": "appearance",
+      "domain": "author_rule",
+      "critical": true,
+      "query": "Aparência concreta contextual sem traços não comprovados.",
+      "role": "AuthorPolicy"
+    },
+    {
+      "id": "relationships",
+      "domain": "author_rule",
+      "critical": true,
+      "query": "Vínculos autônomos, afeto e não presumir pares.",
+      "role": "AuthorPolicy"
+    },
+    {
+      "id": "cast",
+      "domain": "author_rule",
+      "critical": true,
+      "query": "Recuperar elenco e localização por fontes.",
+      "role": "AuthorPolicy"
+    },
+    {
+      "id": "wonder",
+      "domain": "author_rule",
+      "critical": true,
+      "query": "Maravilhamento, culturas e GÊNESE plena.",
+      "role": "AuthorPolicy"
+    },
+    {
+      "id": "rhythm",
+      "domain": "author_rule",
+      "critical": true,
+      "query": "Ritmo, consequências e cinco escolhas.",
+      "role": "AuthorPolicy"
+    },
+    {
+      "id": "design",
+      "domain": "author_rule",
+      "critical": true,
+      "query": "Design narrativo e escolhas versionadas.",
+      "role": "AuthorPolicy"
+    },
+    {
+      "id": "actualrail",
+      "domain": "event",
+      "critical": true,
+      "query": "Carga remunerada efetiva D579; transferência ao Campo Aurora."
+    },
+    {
+      "id": "latestcivil",
+      "domain": "event",
+      "critical": true,
+      "query": "Kael autorizou próximo carregamento, separação já encaminhada."
+    },
+    {
+      "id": "actualcustody",
+      "domain": "knowledge",
+      "critical": true,
+      "query": "Recibo físico de Pedras Claras confirmado; envelope não chegou a Renshar."
+    },
+    {
+      "id": "currentlocations",
+      "domain": "location",
+      "critical": true,
+      "query": "Ivena e Edrik permanecem em Halvern; Sella retorna."
+    },
+    {
+      "id": "networklimits",
+      "domain": "world",
+      "critical": true,
+      "query": "NÓX e Rumo independentes; sistemas distribuídos não conscientes; não presumir conexão remota."
+    },
+    {
+      "id": "forjaprecision",
+      "domain": "identity",
+      "critical": true,
+      "query": "Dorek busca repetibilidade, Brannik entusiasmo, ensaio de precisão com sensores."
+    },
+    {
+      "id": "thalorroute",
+      "domain": "world",
+      "critical": true,
+      "query": "Posto de Thalor e Edris Valeh, pouso e visita somente mediante autorização local; rota conhecida."
+    },
+    {
+      "id": "lastnight",
+      "domain": "relationship",
+      "critical": true,
+      "query": "Presente ARGOS de gravetos, bilhete de passeio preservado, casal e conversa sobre cooperação."
+    },
+    {
+      "id": "lysaaction",
+      "domain": "identity",
+      "critical": true,
+      "query": "Lysa e Kael tratam resultados de cooperação e Naira decide configuração."
+    }
+  ],
+  "reviewed": {
+    "couple": {
+      "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+      "line_start": 679,
+      "line_end": 710,
+      "claim": "Lucas e Miren mantêm afeto, humor, confiança e vida privada na Torre.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "575285fa22f34dfd1b889370e1fd5a8130f38e92215a87f93a898893f0a86af9"
+    },
+    "mirenlook": {
+      "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+      "line_start": 31,
+      "line_end": 65,
+      "claim": "Miren cabelos escuros e humor doméstico com Lucas.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "af1f67663685ef97e641eb3ac9bff33c8c9c8cfd188a6a492df9cc3c67439b29"
+    },
+    "cadence": {
+      "source": "LVI-C06-PV-D568-AUTHOR-SOURCE",
+      "line_start": 44,
+      "line_end": 204,
+      "claim": "Referência histórica de diálogo cotidiano, Lucas expansivo e Miren independente.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "5829a036738211ca7ff56231e714d1a8554dd35a3ba67eb4b8e98130ce87c1e8"
+    },
+    "rail": {
+      "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+      "line_start": 171,
+      "line_end": 255,
+      "claim": "31,6 km físicos, ponte e terminal civil; ensaio completo realizado.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "e48b406a5974583effc92b526a8e17e667ab1b8cce4a830f2ae842f3fcd16080"
+    },
+    "train": {
+      "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+      "line_start": 609,
+      "line_end": 663,
+      "claim": "Primeira viagem controlada concluída; Naira e operadores, bancos de Ordan.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "1d49d945dd24f4ada43b68115a7eb944e9542fb5e47dd391fe2ea9ebd8b44c10"
+    },
+    "garran": {
+      "source": "LVI-C08-PIV-D577-AUTHOR-SOURCE",
+      "line_start": 191,
+      "line_end": 235,
+      "claim": "Garran transportador, ensaio de farinha e remuneração pela sua etapa.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "df381e859e40bf8761f6bf5e205f13525dd9bbab2ef0e6c706a38a6533aac1e3"
+    },
+    "citizen": {
+      "source": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+      "line_start": 215,
+      "line_end": 277,
+      "claim": "Referência de escuta real a moradores, Kael e Lucas, pomar e viagem.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "c8663ae6a4c89303adba94d859d3d121cf335cb86871559fa79feb140234d473"
+    },
+    "argos": {
+      "source": "LVI-C04-PIV-D557-AUTHOR-SOURCE",
+      "line_start": 333,
+      "line_end": 429,
+      "claim": "ARGOS ASCENDENTE existente, nave e convívio de tripulação; respeitar configuração.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "55ff491337720e132f2cde02b654d08ddd93772d17f7da42c7dd5314d08b46c7"
+    },
+    "edrik": {
+      "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "line_start": 94,
+      "line_end": 104,
+      "claim": "Edrik Sovan representante civil, Sella mensageira, Ordan sobrevivente.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "43bf302088b1e8838d2b9e7acb05209f228cb4e73e82aaddd8c570d1f0d49fb5"
+    },
+    "flight": {
+      "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+      "line_start": 137,
+      "line_end": 161,
+      "claim": "Naira realizou missão Halvern D578, entregou bancos e trouxe Edrik e Sella.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "c4754a2b15a23306c53de68abed8af8cfe3b9b9421f9ed595a64ffe32051dee3"
+    },
+    "cooperation": {
+      "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+      "line_start": 459,
+      "line_end": 503,
+      "claim": "Acordo civil em vigor: materiais solicitados, autonomia, intercâmbio e Campo Aurora executa missões.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "d86a7f471e2bcb8cf1cab3c7872fea0af06b9361ae96d347ae423877b2b3bcab"
+    },
+    "ivena": {
+      "source": "LVI-C08-PIV-D577-AUTHOR-SOURCE",
+      "line_start": 111,
+      "line_end": 185,
+      "claim": "Ivena profissional, cabelos grisalhos e técnica visual; Maelis acolhe.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "ea2d4deb8c3e68f04944cc51c29fd8b21e00fc24baa228a7f26ffbb6184cffef"
+    },
+    "maelis": {
+      "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+      "line_start": 439,
+      "line_end": 457,
+      "claim": "Oficina Ivena/Maelis realizada, folhas adaptadas, viagem de materiais prevista.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "9be923719636d769587203d34f81da5ac8b6d90cf6a01efc28c10ab241c67bce"
+    },
+    "genese": {
+      "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+      "line_start": 201,
+      "line_end": 249,
+      "claim": "GÊNESE plena e criação material de ponte e corredor, energia independente.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "378db5104dade1d40538bd265f68db60c6a705d255f58dc8287f44bfd9f378f0"
+    },
+    "friend": {
+      "source": "LVI-C06-PV-D568-AUTHOR-SOURCE",
+      "line_start": 1060,
+      "line_end": 1110,
+      "claim": "Referência de Lucas ajudar outras pessoas a construir, respeitando autonomia.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "c3530c8f1ef286e42473488ad5ad3f1fcc389c8cd29e40c1a466fdd07dc836d5"
+    },
+    "custody": {
+      "source": "LVI-C08-PIII-D576-AUTHOR-SOURCE",
+      "line_start": 290,
+      "line_end": 322,
+      "claim": "Teren conduz carta lacrada de Ordan a Pedras Claras; autorização civil e limite de fronteira.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "782c2e6a761f84436246fd74ba7a9118a8263fb1f3aec0cab1786e511589ae76"
+    },
+    "letterpromise": {
+      "source": "LVI-C08-PIII-D576-AUTHOR-SOURCE",
+      "line_start": 70,
+      "line_end": 96,
+      "claim": "Ordan autorizou envio civil condicionado à segurança da irmã.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "105855b937635b0d9855c0f435624d141068732cff67e88fa89ad7060ef9b03c"
+    },
+    "conference": {
+      "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+      "line_start": 395,
+      "line_end": 437,
+      "claim": "Conferência aberta, representantes autorizados; Thalor confirma via carta, plenária D585.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "01594df1b9edde8f976c541620b4289952cc44e16e962a2dfba105ed5180735e"
+    },
+    "fashion": {
+      "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+      "line_start": 259,
+      "line_end": 291,
+      "claim": "Ilva recebeu encomenda dos trajes de Três Arcos, primeiras peças ajustadas.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "154de5b2477cd4f311fcc361c3fcf7256d464579afc0cd62ee1bba973d59e762"
+    },
+    "ilva": {
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "line_start": 89567,
+      "line_end": 89691,
+      "claim": "Ilva e Miren amigas; cultura, franqueza, humor e acolhimento.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "592f664abaa9472c6defede0b1508294c2e6ed4a42c6e60cd88864ae04a16ec6"
+    },
+    "astra": {
+      "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+      "line_start": 343,
+      "line_end": 385,
+      "claim": "Astra fala com humor e autonomia de expectativas afetivas, sem par definido.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "5c6b457c378fbb80721106a3af73b74318ee8dbd4c1aaef80a484777cb55812e"
+    },
+    "ordan": {
+      "source": "LVI-C08-PIII-D576-AUTHOR-SOURCE",
+      "line_start": 54,
+      "line_end": 96,
+      "claim": "Ordan marceneiro, irmã em Renshar, carta e escolha de segurança.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "43d4f271a79d97fe609550b71681cbfafbd2a3362a3d0153176a6a7717a0f289"
+    },
+    "ordangift": {
+      "source": "LVI-C08-PIII-D576-AUTHOR-SOURCE",
+      "line_start": 584,
+      "line_end": 600,
+      "claim": "Ordan fez pássaro de madeira para Miren; fará outro quando achar irmã.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "700e03481e37f6342c92fd550b3794ddb181c3e3c9973bebd87c8585a409a618"
+    },
+    "lysa": {
+      "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+      "line_start": 105,
+      "line_end": 135,
+      "claim": "Lysa verifica correspondência, Kael autoriza, autonomia dos representantes.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "f7af1e30e2edd2530e656983b7a7c757c86584934513e922d376e701983f03f9"
+    },
+    "velkar": {
+      "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+      "line_start": 539,
+      "line_end": 563,
+      "claim": "Segunda comunidade observa piloto comercial de Renshar; não adesão.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "e6d1f298cab8619c5c0fbf22ee49d4bef2e668476d9bffbe55023367933dfc7e"
+    },
+    "bressa": {
+      "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+      "line_start": 567,
+      "line_end": 583,
+      "claim": "Bressa e Tharvek chegam pátio inferior; consulta e inspeção autorizadas.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "ba1c960006a5dd7e74ca7d110696e6da84252143df0658d3d60cd51194e86276"
+    },
+    "sea": {
+      "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+      "line_start": 587,
+      "line_end": 603,
+      "claim": "Varkhess, Serina, Morvek em Serevan; próxima busca autorizada, não realizada.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "c2d251defc049b9cd35259e6b339bfc7df7298d048e2f9b4e2e1cc122d9ba6cd"
+    },
+    "kael": {
+      "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "line_start": 132,
+      "line_end": 164,
+      "claim": "Kael assina pela Cidade Livre, Lysa preserva mandatos.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "1f28de07246efa03a45c840e34aede5e41264f8ceb4fb478171f38ca814ff982"
+    },
+    "departure": {
+      "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+      "line_start": 439,
+      "line_end": 457,
+      "claim": "Folhas de comunicação visual podem viajar amanhã, oficina efetiva.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "9be923719636d769587203d34f81da5ac8b6d90cf6a01efc28c10ab241c67bce"
+    },
+    "night": {
+      "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+      "line_start": 679,
+      "line_end": 725,
+      "claim": "Fecho conjugal, Talis e carta em aberto, Torre é lar.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "aa96db122eb6ef0466909ec58f9d46e5bce6898d7750038549e339771509a3df"
+    },
+    "lived": {
+      "source": "AUTHOR_POLICY",
+      "line_start": 2171,
+      "line_end": 2173,
+      "claim": "Vida vivida e lazer sem quotas.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "83e26d8188c306aef1c43332729303fce8e11cedc6fecd251e63701a5bc0a3c3"
+    },
+    "appearance": {
+      "source": "AUTHOR_POLICY",
+      "line_start": 2189,
+      "line_end": 2191,
+      "claim": "Aparência concreta contextual sem traços não comprovados.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "6d93fef05f2c43c3b78f6f4db38d09f30af31ed8e8910639055fca19f6b8ff9b"
+    },
+    "relationships": {
+      "source": "AUTHOR_POLICY",
+      "line_start": 2209,
+      "line_end": 2211,
+      "claim": "Vínculos autônomos, afeto e não presumir pares.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "fea75d43f2e62d114cd69d4f308cba8ad21b24454c88d4eecd17727bf121a71a"
+    },
+    "cast": {
+      "source": "AUTHOR_POLICY",
+      "line_start": 2229,
+      "line_end": 2231,
+      "claim": "Recuperar elenco e localização por fontes.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "55df5f7e06584baf518a039d8f02c186975a18afd73f4e3d51a58898095b991d"
+    },
+    "wonder": {
+      "source": "AUTHOR_POLICY",
+      "line_start": 2247,
+      "line_end": 2249,
+      "claim": "Maravilhamento, culturas e GÊNESE plena.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "0c9cc23c8d8d988108073e78516f727755d10245b652533b29991d80220728ba"
+    },
+    "rhythm": {
+      "source": "AUTHOR_POLICY",
+      "line_start": 2265,
+      "line_end": 2267,
+      "claim": "Ritmo, consequências e cinco escolhas.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "455798275a816e8f9b605df38ce5f0dfa0d8813cc0d467c990c8c5385893873f"
+    },
+    "design": {
+      "source": "AUTHOR_POLICY",
+      "line_start": 2337,
+      "line_end": 2339,
+      "claim": "Design narrativo e escolhas versionadas.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "695484c8c65b85c2a9856cb73a48056efb23a164b48236b970c797fd82601bde"
+    },
+    "actualrail": {
+      "source": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+      "line_start": 345,
+      "line_end": 375,
+      "claim": "Carga remunerada efetiva D579; transferência ao Campo Aurora.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "d1a76768dc46ada4ce09791687c7de3072a87474ec7cc16a31556262d22c8cab"
+    },
+    "latestcivil": {
+      "source": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+      "line_start": 1179,
+      "line_end": 1221,
+      "claim": "Kael autorizou próximo carregamento, separação já encaminhada.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "1e48812d2e6d99ab1b33017c8623632d3ccc5abcb3fa6ebb456409591d4b1ebd"
+    },
+    "actualcustody": {
+      "source": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+      "line_start": 1243,
+      "line_end": 1297,
+      "claim": "Recibo físico de Pedras Claras confirmado; envelope não chegou a Renshar.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "956bff3acf0cc0f4b24f20b462e619b21647ebbf81c93371bdf666ca3642c1a4"
+    },
+    "currentlocations": {
+      "source": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+      "line_start": 1839,
+      "line_end": 1875,
+      "claim": "Ivena e Edrik permanecem em Halvern; Sella retorna.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "915e289f41c7c7b8b79d1d0f33380ae21a64106a034f02b3e1279a387f91c371"
+    },
+    "networklimits": {
+      "source": "LVI-C07-PII-D570-AUTHOR-SOURCE",
+      "line_start": 1948,
+      "line_end": 1974,
+      "claim": "NÓX e Rumo independentes; sistemas distribuídos não conscientes; não presumir conexão remota.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "9a514f19488e2d742ce6e6f3002210502b8c37133568b8462392b47b6dbc431b"
+    },
+    "forjaprecision": {
+      "source": "LVI-C07-PII-D570-AUTHOR-SOURCE",
+      "line_start": 872,
+      "line_end": 920,
+      "claim": "Dorek busca repetibilidade, Brannik entusiasmo, ensaio de precisão com sensores.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "8d212859cb8c17792f8c9670f65078556de5e3425b445ad75bb2bbc81a3bd549"
+    },
+    "thalorroute": {
+      "source": "LVI-C04-PV-D558-AUTHOR-SOURCE",
+      "line_start": 596,
+      "line_end": 648,
+      "claim": "Posto de Thalor e Edris Valeh, pouso e visita somente mediante autorização local; rota conhecida.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "9e3e66e9737cabb1acf1aeb3ca7300027328b0737aacd7e53ccfbddb943555fa"
+    },
+    "lastnight": {
+      "source": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+      "line_start": 2261,
+      "line_end": 2363,
+      "claim": "Presente ARGOS de gravetos, bilhete de passeio preservado, casal e conversa sobre cooperação.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "1f9790a4c1662a7da955532a9d368f281cf291c4c6f6e7c23bdd0f81bd1b84bc"
+    },
+    "lysaaction": {
+      "source": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+      "line_start": 2005,
+      "line_end": 2041,
+      "claim": "Lysa e Kael tratam resultados de cooperação e Naira decide configuração.",
+      "status": "REVIEWED_SUPPORTED",
+      "anchor_sha": "cbfeaf17b27bee25bc66f3e29242952b6f4d3ccdead8b13ac2297193e08518e4"
+    }
+  },
+  "domain_review": {
+    "identity": {
+      "applicable": true,
+      "reason": "Continuidade material: mirenlook, cadence, garran, edrik, ivena, maelis, astra, ordan, lysa, kael"
+    },
+    "relationship": {
+      "applicable": true,
+      "reason": "Continuidade material: couple, friend, ilva, night"
+    },
+    "location": {
+      "applicable": true,
+      "reason": "Continuidade material: sea"
+    },
+    "knowledge": {
+      "applicable": true,
+      "reason": "Continuidade material: custody"
+    },
+    "inventory": {
+      "applicable": true,
+      "reason": "Continuidade material: train, argos, fashion, ordangift"
+    },
+    "power": {
+      "applicable": true,
+      "reason": "Continuidade material: genese"
+    },
+    "world": {
+      "applicable": true,
+      "reason": "Continuidade material: rail"
+    },
+    "event": {
+      "applicable": true,
+      "reason": "Continuidade material: citizen, flight, conference, velkar, bressa"
+    },
+    "promise": {
+      "applicable": true,
+      "reason": "Continuidade material: cooperation, letterpromise, departure"
+    },
+    "author_rule": {
+      "applicable": true,
+      "reason": "Continuidade material: lived, appearance, relationships, cast, wonder, rhythm, design"
+    }
+  },
+  "scene_plan": [
+    {
+      "scene": 1,
+      "purpose": "Torre: Lucas e Miren, humor, presente preservado, problema de informações; NÓX coopera voluntariamente.",
+      "ids": [
+        "couple",
+        "mirenlook",
+        "cadence",
+        "ordangift",
+        "lived",
+        "appearance",
+        "lastnight"
+      ]
+    },
+    {
+      "scene": 2,
+      "purpose": "Forja/AERÚN: discussão criativa, GÊNESE manifesta seis pares idênticos e computadores não conscientes; sensores e dados locais demonstrados.",
+      "ids": [
+        "genese",
+        "astra",
+        "wonder",
+        "networklimits"
+      ]
+    },
+    {
+      "scene": 3,
+      "purpose": "Forja: coleção completa especializada e computadores, medição real, diagnóstico e correção de peça, reação dos artesãos.",
+      "ids": [
+        "friend",
+        "cast",
+        "forjaprecision"
+      ]
+    },
+    {
+      "scene": 4,
+      "purpose": "Gabinete: Lysa e Kael recebem terminais, digitam dados reais, detectam divergência, executam ajuste orçamentário autorizado; implantação nos serviços.",
+      "ids": [
+        "lysa",
+        "lysaaction"
+      ]
+    },
+    {
+      "scene": 5,
+      "purpose": "Campo Aurora, Sombras e serviços: distribuição operacional e compartimentada; chegada plausível de representantes de Thalor via posto autorizado ou missão efetiva; Halvern mantém Edrik/Ivena.",
+      "ids": [
+        "rail",
+        "train",
+        "garran",
+        "argos",
+        "edrik",
+        "flight",
+        "ivena",
+        "maelis",
+        "departure",
+        "actualrail",
+        "currentlocations",
+        "thalorroute"
+      ]
+    },
+    {
+      "scene": 6,
+      "purpose": "Conferência: concepção coletiva e criação da Mesa dos Horizontes, negociação concreta com mandato e resultado executivo, não mera reunião; dados e lacunas visíveis.",
+      "ids": [
+        "citizen",
+        "cooperation",
+        "conference",
+        "fashion",
+        "ilva",
+        "kael",
+        "rhythm",
+        "latestcivil"
+      ]
+    },
+    {
+      "scene": 7,
+      "purpose": "Frentes independentes e uso local: Pedras Claras, Renshar, Vale, Serevan, progressos sem conhecimento indevido; rede em ação.",
+      "ids": [
+        "custody",
+        "letterpromise",
+        "ordan",
+        "velkar",
+        "bressa",
+        "sea",
+        "actualcustody"
+      ]
+    },
+    {
+      "scene": 8,
+      "purpose": "Fim do dia: teste de conexão local e ideia de expansão física e descentralizada, Lucas/Miren e amizades, revolução sem salto de calendário.",
+      "ids": [
+        "night",
+        "relationships",
+        "design"
+      ]
+    }
+  ],
+  "r34_intent": {
+    "schema": "worldroot-r34-intent-v1",
+    "dimensions": {
+      "daily_life": {
+        "rule": "P110",
+        "requirement_id": "lived",
+        "status": "planned",
+        "reason": "Torre: Lucas e Miren, humor, presente preservado, problema de informações; NÓX coopera voluntariamente.",
+        "scenes": [
+          1
+        ]
+      },
+      "appearance": {
+        "rule": "P111",
+        "requirement_id": "appearance",
+        "status": "planned",
+        "reason": "Torre: Lucas e Miren, humor, presente preservado, problema de informações; NÓX coopera voluntariamente.",
+        "scenes": [
+          1
+        ]
+      },
+      "relationships": {
+        "rule": "P112",
+        "requirement_id": "relationships",
+        "status": "planned",
+        "reason": "Fim do dia: teste de conexão local e ideia de expansão física e descentralizada, Lucas/Miren e amizades, revolução sem salto de calendário.",
+        "scenes": [
+          8
+        ]
+      },
+      "cast": {
+        "rule": "P113",
+        "requirement_id": "cast",
+        "status": "planned",
+        "reason": "Forja: coleção completa especializada e computadores, medição real, diagnóstico e correção de peça, reação dos artesãos.",
+        "scenes": [
+          3
+        ]
+      },
+      "wonder": {
+        "rule": "P114",
+        "requirement_id": "wonder",
+        "status": "planned",
+        "reason": "Forja/AERÚN: discussão criativa, GÊNESE manifesta seis pares idênticos e computadores não conscientes; sensores e dados locais demonstrados.",
+        "scenes": [
+          2
+        ]
+      },
+      "rhythm": {
+        "rule": "P115",
+        "requirement_id": "rhythm",
+        "status": "planned",
+        "reason": "Conferência: concepção coletiva e criação da Mesa dos Horizontes, negociação concreta com mandato e resultado executivo, não mera reunião; dados e lacunas visíveis.",
+        "scenes": [
+          6
+        ]
+      },
+      "design": {
+        "rule": "P119",
+        "requirement_id": "design",
+        "status": "planned",
+        "reason": "Fim do dia: teste de conexão local e ideia de expansão física e descentralizada, Lucas/Miren e amizades, revolução sem salto de calendário.",
+        "scenes": [
+          8
+        ]
+      }
+    },
+    "characters": [
+      {
+        "name": "Lucas",
+        "scenes": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8
+        ],
+        "fields": {
+          "appearance": {
+            "status": "not_material",
+            "reason": "Vestuário contextual, sem inventar traços históricos."
+          },
+          "voice": {
+            "status": "sourced",
+            "reason": "Humor e entusiasmo criativo, gentil e forte.",
+            "requirement_ids": [
+              "cadence"
+            ]
+          },
+          "relationship": {
+            "status": "sourced",
+            "reason": "Casamento e bilhete de passeio preservados.",
+            "requirement_ids": [
+              "couple",
+              "lastnight"
+            ]
+          },
+          "age": {
+            "status": "unknown",
+            "reason": "Idade narrativa explícita não recuperada nesta revisão."
+          }
+        }
+      },
+      {
+        "name": "Miren",
+        "scenes": [
+          1,
+          2,
+          6,
+          8
+        ],
+        "fields": {
+          "appearance": {
+            "status": "sourced",
+            "reason": "Cabelos escuros confirmados, roupa contextual.",
+            "requirement_ids": [
+              "mirenlook"
+            ]
+          },
+          "voice": {
+            "status": "sourced",
+            "reason": "Humor próprio e autonomia de pesquisadora.",
+            "requirement_ids": [
+              "cadence"
+            ]
+          },
+          "relationship": {
+            "status": "sourced",
+            "reason": "Casamento e parceria, bilhete preservado.",
+            "requirement_ids": [
+              "couple",
+              "lastnight"
+            ]
+          },
+          "age": {
+            "status": "unknown",
+            "reason": "Idade narrativa explícita não recuperada nesta revisão."
+          }
+        }
+      },
+      {
+        "name": "Astra",
+        "scenes": [
+          2,
+          3,
+          6
+        ],
+        "fields": {
+          "appearance": {
+            "status": "unknown",
+            "reason": "Traços históricos não recuperados nesta revisão."
+          },
+          "voice": {
+            "status": "sourced",
+            "reason": "Rigor, humor e autonomia da pesquisadora.",
+            "requirement_ids": [
+              "astra"
+            ]
+          },
+          "relationship": {
+            "status": "unknown",
+            "reason": "Nenhum pretendente comprovado, manter autonomia."
+          },
+          "age": {
+            "status": "unknown",
+            "reason": "Idade narrativa explícita não recuperada nesta revisão."
+          }
+        }
+      },
+      {
+        "name": "Dorek",
+        "scenes": [
+          3
+        ],
+        "fields": {
+          "appearance": {
+            "status": "unknown",
+            "reason": "Traços históricos não recuperados nesta revisão."
+          },
+          "voice": {
+            "status": "sourced",
+            "reason": "Precisão, repetibilidade, ceticismo técnico e humor.",
+            "requirement_ids": [
+              "forjaprecision"
+            ]
+          },
+          "relationship": {
+            "status": "not_material",
+            "reason": "Relações íntimas não materiais nesta cena."
+          },
+          "age": {
+            "status": "unknown",
+            "reason": "Idade narrativa explícita não recuperada nesta revisão."
+          }
+        }
+      },
+      {
+        "name": "Brannik",
+        "scenes": [
+          3
+        ],
+        "fields": {
+          "appearance": {
+            "status": "unknown",
+            "reason": "Traços históricos não recuperados nesta revisão."
+          },
+          "voice": {
+            "status": "sourced",
+            "reason": "Entusiasmo, voz forte e criatividade da Forja.",
+            "requirement_ids": [
+              "forjaprecision"
+            ]
+          },
+          "relationship": {
+            "status": "not_material",
+            "reason": "Relações íntimas não materiais nesta cena."
+          },
+          "age": {
+            "status": "unknown",
+            "reason": "Idade narrativa explícita não recuperada nesta revisão."
+          }
+        }
+      },
+      {
+        "name": "Lysa",
+        "scenes": [
+          4,
+          6,
+          8
+        ],
+        "fields": {
+          "appearance": {
+            "status": "unknown",
+            "reason": "Traços históricos não recuperados nesta revisão."
+          },
+          "voice": {
+            "status": "sourced",
+            "reason": "Prática, competente em finanças e autoridade civil.",
+            "requirement_ids": [
+              "lysaaction",
+              "lysa"
+            ]
+          },
+          "relationship": {
+            "status": "not_material",
+            "reason": "Relações íntimas não materiais nesta cena."
+          },
+          "age": {
+            "status": "unknown",
+            "reason": "Idade narrativa explícita não recuperada nesta revisão."
+          }
+        }
+      },
+      {
+        "name": "Kael",
+        "scenes": [
+          4,
+          6,
+          8
+        ],
+        "fields": {
+          "appearance": {
+            "status": "unknown",
+            "reason": "Traços históricos não recuperados nesta revisão."
+          },
+          "voice": {
+            "status": "sourced",
+            "reason": "Autoridade da Cidade Livre, mandato e pragmatismo.",
+            "requirement_ids": [
+              "kael"
+            ]
+          },
+          "relationship": {
+            "status": "not_material",
+            "reason": "Relações íntimas não materiais nesta cena."
+          },
+          "age": {
+            "status": "unknown",
+            "reason": "Idade narrativa explícita não recuperada nesta revisão."
+          }
+        }
+      }
+    ],
+    "comparison": {
+      "requirement_id": "cadence",
+      "reason": "Recuperar ritmo e humor de D568, sem copiar, com descoberta e uso vivido."
+    }
+  },
+  "r35_plan": {
+    "schema": "worldroot-r35-plan-v1",
+    "part": "II",
+    "profile": "regular",
+    "scene_cards": [
+      {
+        "scene": 1,
+        "word_budget": 950,
+        "experience": "Torre: Lucas e Miren, humor, presente preservado, problema de informações; NÓX coopera voluntariamente.",
+        "reaction": "Casal converte curiosidade em ideia, sem perder humor.",
+        "payoff": "Problema central estabelecido e parceria viva.",
+        "focus": [
+          "daily_life",
+          "appearance"
+        ]
+      },
+      {
+        "scene": 2,
+        "word_budget": 1450,
+        "experience": "Forja/AERÚN: discussão criativa, GÊNESE manifesta seis pares idênticos e computadores não conscientes; sensores e dados locais demonstrados.",
+        "reaction": "Amigos questionam e experimentam seis pares iguais, criação sensorial.",
+        "payoff": "Seis pares pessoais idênticos e primeira geração materializados.",
+        "focus": [
+          "wonder"
+        ]
+      },
+      {
+        "scene": 3,
+        "word_budget": 1250,
+        "experience": "Forja: coleção completa especializada e computadores, medição real, diagnóstico e correção de peça, reação dos artesãos.",
+        "reaction": "Mestres vivem descoberta de defeito e correção concreta.",
+        "payoff": "Coleção completa distribuída, erro medido e corrigido.",
+        "focus": [
+          "cast"
+        ]
+      },
+      {
+        "scene": 4,
+        "word_budget": 1450,
+        "experience": "Gabinete: Lysa e Kael recebem terminais, digitam dados reais, detectam divergência, executam ajuste orçamentário autorizado; implantação nos serviços.",
+        "reaction": "Lysa verifica cálculo antes de confiar, gabinete executa mudança.",
+        "payoff": "Terminais usados e ajuste real verificado.",
+        "focus": []
+      },
+      {
+        "scene": 5,
+        "word_budget": 1300,
+        "experience": "Campo Aurora, Sombras e serviços: distribuição operacional e compartimentada; chegada plausível de representantes de Thalor via posto autorizado ou missão efetiva; Halvern mantém Edrik/Ivena.",
+        "reaction": "Operadores usam terminais, representantes chegam legitimamente.",
+        "payoff": "Distribuição funcional e transporte ou recepção efetiva.",
+        "focus": []
+      },
+      {
+        "scene": 6,
+        "word_budget": 1600,
+        "experience": "Conferência: concepção coletiva e criação da Mesa dos Horizontes, negociação concreta com mandato e resultado executivo, não mera reunião; dados e lacunas visíveis.",
+        "reaction": "Representantes verificam dados, discutem e assinam ato dentro dos mandatos.",
+        "payoff": "Mesa materializada e decisão continental executiva real.",
+        "focus": [
+          "rhythm"
+        ]
+      },
+      {
+        "scene": 7,
+        "word_budget": 850,
+        "experience": "Frentes independentes e uso local: Pedras Claras, Renshar, Vale, Serevan, progressos sem conhecimento indevido; rede em ação.",
+        "reaction": "Pessoas remotas agem segundo o que sabem, não recebem telepatia.",
+        "payoff": "Avanços independentes preservados sem regressão.",
+        "focus": []
+      },
+      {
+        "scene": 8,
+        "word_budget": 1000,
+        "experience": "Fim do dia: teste de conexão local e ideia de expansão física e descentralizada, Lucas/Miren e amizades, revolução sem salto de calendário.",
+        "reaction": "Amigos celebram e escolhem primeiro desenho de conexão futura.",
+        "payoff": "Primeiro enlace local demonstrado, expansão futura proposta.",
+        "focus": [
+          "relationships"
+        ]
+      }
+    ],
+    "references": [
+      "cadence",
+      "citizen",
+      "friend",
+      "forjaprecision"
+    ],
+    "cadence_intent": "Cenas inteiras com ação, reação, consequências e pausas, sem encurtar clímax tecnológico.",
+    "adult_opportunity": "Afetividade cotidiana, roupas contextuais, oportunidades adultas específicas mantidas em espera por idade explícita não recuperada.",
+    "epic_payoff": "Revolução tecnológica materializada e usada: seis pares idênticos, coleção Forja, terminais, Mesa e ato continental, ideia de expansão.",
+    "adult_focus": {
+      "body_identity": {
+        "status": "held",
+        "reason": "Evidência explícita de idade adulta não recuperada para esta parte; manter afeto cotidiano não sexualizado e roupas práticas, sem forçar oportunidades.",
+        "characters": [],
+        "scenes": []
+      },
+      "adult_conversation": {
+        "status": "held",
+        "reason": "Evidência explícita de idade adulta não recuperada para esta parte; manter afeto cotidiano não sexualizado e roupas práticas, sem forçar oportunidades.",
+        "characters": [],
+        "scenes": []
+      },
+      "reciprocal_attraction": {
+        "status": "held",
+        "reason": "Evidência explícita de idade adulta não recuperada para esta parte; manter afeto cotidiano não sexualizado e roupas práticas, sem forçar oportunidades.",
+        "characters": [],
+        "scenes": []
+      }
+    },
+    "refinement": {
+      "schema": "worldroot-r35-refinement-v1",
+      "axes": {
+        "cadence": {
+          "aim": "Alternar humor, ação, descoberta, negociação, pausa e retorno.",
+          "reference_id": "cadence",
+          "scenes": [
+            1,
+            3,
+            8
+          ]
+        },
+        "voice_identity": {
+          "aim": "Recuperar contraste de Dorek, Brannik, Lysa e pesquisadores.",
+          "reference_id": "forjaprecision",
+          "scenes": [
+            3,
+            4,
+            6
+          ]
+        },
+        "emotion_adult": {
+          "aim": "Afeto cotidiano e confiança dos amigos, sem sexualização forçada.",
+          "reference_id": "cadence",
+          "scenes": [
+            1,
+            8
+          ]
+        },
+        "wonder_payoff": {
+          "aim": "Dar criação grandiosa e efeitos técnicos observáveis, não lista de especificações.",
+          "reference_id": "friend",
+          "scenes": [
+            2,
+            3,
+            6
+          ]
+        },
+        "exposition": {
+          "aim": "Substituir preparação por uso real e decisão diplomática executiva.",
+          "reference_id": "citizen",
+          "scenes": [
+            4,
+            5,
+            6
+          ]
+        }
+      },
+      "identity_recovery": [
+        {
+          "character": "Lucas",
+          "source_review": "Fontes canônicas ligadas às fichas: voice cadence; relationship couple, lastnight. Lacunas não promovidas.",
+          "voice_direction": "Humor e entusiasmo criativo, gentil e forte.; conservar iniciativa própria e reação causal.",
+          "trait_gaps": "appearance: Vestuário contextual, sem inventar traços históricos.; age: Idade narrativa explícita não recuperada nesta revisão."
+        },
+        {
+          "character": "Miren",
+          "source_review": "Fontes canônicas ligadas às fichas: appearance mirenlook; voice cadence; relationship couple, lastnight. Lacunas não promovidas.",
+          "voice_direction": "Humor próprio e autonomia de pesquisadora.; conservar iniciativa própria e reação causal.",
+          "trait_gaps": "age: Idade narrativa explícita não recuperada nesta revisão."
+        },
+        {
+          "character": "Astra",
+          "source_review": "Fontes canônicas ligadas às fichas: voice astra. Lacunas não promovidas.",
+          "voice_direction": "Rigor, humor e autonomia da pesquisadora.; conservar iniciativa própria e reação causal.",
+          "trait_gaps": "appearance: Traços históricos não recuperados nesta revisão.; relationship: Nenhum pretendente comprovado, manter autonomia.; age: Idade narrativa explícita não recuperada nesta revisão."
+        },
+        {
+          "character": "Dorek",
+          "source_review": "Fontes canônicas ligadas às fichas: voice forjaprecision. Lacunas não promovidas.",
+          "voice_direction": "Precisão, repetibilidade, ceticismo técnico e humor.; conservar iniciativa própria e reação causal.",
+          "trait_gaps": "appearance: Traços históricos não recuperados nesta revisão.; relationship: Relações íntimas não materiais nesta cena.; age: Idade narrativa explícita não recuperada nesta revisão."
+        },
+        {
+          "character": "Brannik",
+          "source_review": "Fontes canônicas ligadas às fichas: voice forjaprecision. Lacunas não promovidas.",
+          "voice_direction": "Entusiasmo, voz forte e criatividade da Forja.; conservar iniciativa própria e reação causal.",
+          "trait_gaps": "appearance: Traços históricos não recuperados nesta revisão.; relationship: Relações íntimas não materiais nesta cena.; age: Idade narrativa explícita não recuperada nesta revisão."
+        },
+        {
+          "character": "Lysa",
+          "source_review": "Fontes canônicas ligadas às fichas: voice lysaaction, lysa. Lacunas não promovidas.",
+          "voice_direction": "Prática, competente em finanças e autoridade civil.; conservar iniciativa própria e reação causal.",
+          "trait_gaps": "appearance: Traços históricos não recuperados nesta revisão.; relationship: Relações íntimas não materiais nesta cena.; age: Idade narrativa explícita não recuperada nesta revisão."
+        },
+        {
+          "character": "Kael",
+          "source_review": "Fontes canônicas ligadas às fichas: voice kael. Lacunas não promovidas.",
+          "voice_direction": "Autoridade da Cidade Livre, mandato e pragmatismo.; conservar iniciativa própria e reação causal.",
+          "trait_gaps": "appearance: Traços históricos não recuperados nesta revisão.; relationship: Relações íntimas não materiais nesta cena.; age: Idade narrativa explícita não recuperada nesta revisão."
+        }
+      ]
+    }
+  }
+}
