@@ -60,3 +60,32 @@ for term,day in cases:
     assert hits, term
     recall.append({"query":term,"book_i_hits":len(hits)})
 print(json.dumps({"book_i_runtime":"PASS","candidates":len(candidates),"legacy_gate_rejects_unreviewed":True,"historical_recall":recall,"canon_changed":False,"semantic_certification":False},ensure_ascii=False))
+
+
+# Book I Stage E: original ledger grouping and disposable projection replay/restore.
+from worldroot.semantic_queue import jobs
+from worldroot.live_codex import sync
+import sqlite3
+ledger_dir=audit/"editorial/codex-staging/results/exact-context-ledger-v1"
+book_rows=[r for p in sorted(ledger_dir.glob("batch-*.json")) for r in json.loads(p.read_text()) if r["source"]=="history:01_DIA_001_A_383_FONTE_LITERAL.txt" and r["line"]<=40845]
+assert len(book_rows)==307 and {r["original_id"] for r in book_rows}==set(range(1,308))
+queue=list(jobs(book_rows))
+assert sum(len(j["targets"]) for j in queue)==307 and len(queue)==236
+assert all(book.splitlines()[r["line"]-1]==r["anchor"] for r in book_rows)
+overlap=set(r["line"] for r in book_rows)&set(r["line"] for r in candidates)
+def protected():
+    return {p:hashlib.sha256((root/p).read_bytes()).hexdigest() for p in ("canon/HEAD.json","ops/RESUME.json","history/sources/MANIFEST.json","editorial/registries/r35-living-overlay-manifest.json")}
+before=protected()
+with tempfile.TemporaryDirectory() as tmp:
+    folder=Path(tmp); graph=folder/"graph.sqlite"; restored=folder/"restore.sqlite"
+    first=sync(root,graph); second=sync(root,graph)
+    assert first==second and first["head"]==head
+    with sqlite3.connect(graph) as db, sqlite3.connect(restored) as dst:
+        assert db.execute("PRAGMA integrity_check").fetchone()[0]=="ok"
+        db.backup(dst)
+        assert dst.execute("PRAGMA integrity_check").fetchone()[0]=="ok"
+        assert list(db.iterdump())==list(dst.iterdump())
+    third=sync(root,restored)
+    assert third==first
+assert protected()==before
+print(json.dumps({"book_i_stage_e":"PASS","ledger_targets":len(book_rows),"grouped_jobs":len(queue),"discovery_candidates":len(candidates),"overlapping_source_lines":len(overlap),"projection_replay_restore":True,"projection_records":first["records"],"projection_events":first["events"],"canon_changed":False,"semantic_certification":False},ensure_ascii=False))
