@@ -1,0 +1,52 @@
+{
+  "schema": "worldroot-r35-living-overlay-manifest-v1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "status": "AUTHOR_AUTHORIZED_PROVISIONAL_DESIGN_STAGING",
+  "checkpoint": {
+    "day": 579,
+    "sequence": 50,
+    "episode_id": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+    "source_sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926"
+  },
+  "base_registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+  "character_overlay": {
+    "path": "editorial/registries/r35-natural-completion-d579-v6.json",
+    "git_blob": "295ac47860e9138f65d63b1d68c324d6b4e64cef"
+  },
+  "world_overlay": {
+    "path": "editorial/registries/r35-world-completion-d579-v4.json",
+    "git_blob": "bcff40fc483464b26b4dbf81c7dee75efc6aeec8"
+  },
+  "vetoes": [],
+  "rules": {
+    "no_automatic_canon_promotion": true,
+    "author_secrets_not_general_retrieval": true,
+    "stable_ids": true,
+    "require_new_character_profile": true,
+    "require_scene_sync": true,
+    "scope_separation": true,
+    "canon_first_historical_recovery": true,
+    "no_invented_historical_fields": true,
+    "preserve_author_explicit_decisions": true
+  },
+  "notes": [
+    "Manifest for R35 graph integration after homologation. Does not activate or alter HEAD. C4 prospective design subject to author veto and higher evidence.",
+    "V3 readback: 181 independent cards, no duplicate IDs, field provenance and scope structural checks pass. Production activation pending.",
+    "Naming review is pinned for the R35 development engine, not a change to historical identity or production deployment. Unadmitted candidate rows remain staging-only.",
+    "V4/V2 restores early historical entities and links. No production activation; old manifest and blobs preserved in Git history.",
+    "V5/V3: preserve private technical origins; enable Uzgor and Pedreira Oriental exact aliases in editorial retrieval only.",
+    "Author direction 2026-11-26: literal narrated evidence supersedes recollection/provisional design; preserve explicit author decisions, unknown fields remain pending until history is exhausted. No canon journal or production activation."
+  ],
+  "naming_review": {
+    "path": "editorial/registries/r35-legacy-name-reconciliation-v4.json",
+    "git_blob": "5276b2e92b6d580a52afcecd9661c4e28fc6a2d8",
+    "scope": "EDITORIAL_PROPOSALS_ONLY"
+  },
+  "author_recovery": {
+    "book": 1,
+    "profile_revision_commit": "e93d6da751491a571f72d8cdbbc415dd6bd74cda",
+    "profile_revision_blob": "ea137abcc48ada7971e882de423e8fb052ea15ac",
+    "identity_candidates": "14 remain separately staged",
+    "independent_certification": false
+  }
+}
