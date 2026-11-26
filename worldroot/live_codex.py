@@ -26,11 +26,13 @@ def load_registry(root):
     return data,hashlib.sha256(b).hexdigest()
 def all_records(data):
     profiles={p["id"]:p for p in data["characters"]}
+    verified=data["arcane"].get("verified_historical_magic",[])
+    historical=data.get("coherence",{}).get("items",[])
     for r in data["records"]:
         extra={}
         if r["id"]=="genese":
             extra={"aliases":[*r.get("aliases",[]),"CREATION_GENESE"],"special_authority":data["arcane"]["special_authorities"][0]}
-        yield {**r,"design":profiles.get(r["id"]),"research_links":[s for s in data["school_links"] if s["entity_id"]==r["id"]],"scope":"HISTORICAL_REVIEW_AND_PROSPECTIVE_DESIGN",**extra}
+        yield {**r,"design":profiles.get(r["id"]),"research_links":[s for s in data["school_links"] if s["entity_id"]==r["id"]],"scope":"HISTORICAL_REVIEW_AND_PROSPECTIVE_DESIGN","verified_magic":[m for m in verified if m["entity_id"]==r["id"]],"historical_items":[m for m in historical if m["recipient"]==r["id"] or m["id"]==r["id"]],**extra}
     for s in data["species"]:
         yield {**s,"aliases":[],"scope":"SPECIES_DESIGN_NOT_OBSERVED"}
     for s in data["arcane"]["schools"]:
@@ -113,6 +115,7 @@ def apply_delta(db,delta,prose,sequence,day,source_sha,spell_ids):
     if latest is not None and sequence<=latest:raise ValueError("Out-of-order Codex delta")
     ids={r[0] for r in db.execute("SELECT id FROM records")}
     validate_delta(delta,prose,episode,day,ids,spell_ids)
+    from .world_coherence import item_access, learned_in_registry
     with db:
         for n in delta["new_entities"]:
             db.execute("INSERT INTO records VALUES(?,?,?)",(record_type(n),n["id"],jsonstr({**n,"aliases":n.get("aliases",[]),"scope":"NARRATED_IDENTITY_REVIEWED"})))
@@ -125,16 +128,24 @@ def apply_delta(db,delta,prose,sequence,day,source_sha,spell_ids):
                     setstate(db,subject,"last_observed_location",v["location_id"],eid)
             elif kind in ("LEARN","CAST"):
                 spell="genese" if v["spell_id"]=="CREATION_GENESE" else v["spell_id"]
+                record=json.loads(db.execute("SELECT body FROM records WHERE id=?",(subject,)).fetchone()[0])
+                if spell=="genese" and subject!="lucas":raise ValueError("GÊNESE is Lucas's singular authority")
+                if kind=="LEARN" and spell!="genese" and (not isinstance(v.get("method"),str) or not v["method"].strip()):raise ValueError("Learning requires explicit acquisition method")
+                if kind=="CAST" and spell!="genese" and not (current(db,subject,"learned:"+spell) or current(db,subject,"last_cast:"+spell) or learned_in_registry(record,spell)):raise ValueError("Unproven personal spell acquisition")
                 setstate(db,subject,("learned:" if kind=="LEARN" else "last_cast:")+spell,{"episode":episode,"day":e["day"]},eid)
             elif kind in {"ACQUIRE","TRANSFER","STORE","EQUIP","UNEQUIP","CONSUME","LOSE"}:
                 item=v["item_id"];custody=current(db,item,"custody")
-                if custody and custody.get("holder") not in (None,subject) and kind!="ACQUIRE":raise ValueError("Custody contradiction")
-                if custody and custody.get("state") in ("CONSUME","LOSE") and kind not in ("ACQUIRE",):raise ValueError("Unavailable item")
+                if custody and custody.get("state")=="CONSUME":raise ValueError("Consumed instance cannot reappear")
+                if kind!="ACQUIRE" and not item_access(custody,subject,e.get("location_id")):raise ValueError("Item access not proven")
+                if kind=="ACQUIRE" and custody and custody.get("state")=="STORE" and custody.get("location")!=e.get("location_id"):raise ValueError("Stored item must be retrieved at actual location")
                 if kind=="ACQUIRE" and custody and custody.get("holder") not in (None,subject):raise ValueError("Acquisition contradicts existing holder; transfer required")
                 holder=v["to_id"] if kind=="TRANSFER" else None if kind in ("STORE","CONSUME","LOSE") else subject
                 location=v.get("location_id") if kind=="STORE" else None
-                setstate(db,item,"custody",{"holder":holder,"location":location,"state":kind,"actor":subject},eid)
+                owner=(custody or {}).get("owner")
+                if v.get("ownership_transfer") is True and kind in ("ACQUIRE","TRANSFER"):owner=v.get("to_id",subject) if kind=="TRANSFER" else subject
+                setstate(db,item,"custody",{"holder":holder,"owner":owner,"location":location,"state":kind,"actor":subject},eid)
             elif kind=="USE_ITEM":
+                if not item_access(current(db,v["item_id"],"custody"),subject,e.get("location_id")):raise ValueError("Item access not proven")
                 setstate(db,subject,"last_item_use:"+v["item_id"],{"method":v["method"],"location":e.get("location_id"),"episode":episode,"day":e["day"]},eid)
             elif kind=="ATTRIBUTE":setstate(db,subject,"attribute:"+v["field"],v["value"],eid)
             elif kind=="KNOW":setstate(db,subject,"knowledge:"+v["field"],v["value"],eid)
@@ -205,7 +216,7 @@ def bind_request(root,request):
             if old and seal and json.loads(old[0])==request["head"] and seal[0]==sha:
                 rows=[json.loads(row[0]) for row in db.execute("SELECT body FROM records")]
     names=[x["name"] for x in request.get("r34_intent",{}).get("characters",[])]
-    return {"registry_sha256":sha,"head":request["head"],"focal":[{"name":n,"ids":[r["id"] for r in aliases(rows,n,domain="Personagens")]} for n in names],"status":"REVIEW_REQUIRED"}
+    return {"registry_sha256":sha,"head":request["head"],"focal":[{"name":n,"ids":[r["id"] for r in aliases(rows,n,domain="Personagens")]} for n in names],"status":"REVIEW_REQUIRED","coherence_required":bool(data.get("coherence"))}
 def validate_submission(root,request,packet,payload):
     if packet.get("universal_codex") is None:return None
     if bind_request(root,request)!=packet["universal_codex"]:raise ValueError("Codex changed after preparation")
@@ -218,6 +229,11 @@ def validate_submission(root,request,packet,payload):
             if json.loads(meta["head"])==request["head"] and meta["registry_sha"]==packet["universal_codex"]["registry_sha256"]:ids.update(r[0] for r in db.execute("SELECT id FROM records"))
     spell_ids={s["id"] for s in data["arcane"]["index"]}|{"genese","CREATION_GENESE"}
     delta=payload.get("r33_review",{}).get("codex_delta")
+    coherence=None
+    if packet["universal_codex"].get("coherence_required"):
+        from .world_coherence import validate_interactions
+        review=payload.get("r33_review",{}).get("world_coherence")
+        coherence=validate_interactions(payload["prose"],review,{r["id"]:r for r in rows})
     validate_delta(delta,payload["prose"],payload["delivery_id"],payload["metadata"]["day"],ids,spell_ids)
     # A literal mention is not necessarily a physical presence. Explicitly triage focal cast.
     covered={e["entity_id"] for e in delta["events"]}|{n["id"] for n in delta["new_entities"]}
@@ -249,7 +265,7 @@ def validate_submission(root,request,packet,payload):
     for r in rows:
         if "Personagens" in r["domains"] and any(" "+norm(n)+" " in prose_norm for n in [r["name"],*r.get("aliases",[])] if len(norm(n))>=3):
             mentions.append(r["id"])
-    return {"codex_delta":delta,"codex_delta_sha256":digest(delta),"codex_registry_sha256":packet["universal_codex"]["registry_sha256"],"codex_mention_candidates":mentions}
+    return {"codex_delta":delta,"codex_delta_sha256":digest(delta),"codex_registry_sha256":packet["universal_codex"]["registry_sha256"],"codex_mention_candidates":mentions,"world_coherence_result":coherence}
 
 def graph_candidates(root,query,entity=None):
     reg=load_registry(root)
