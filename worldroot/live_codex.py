@@ -208,7 +208,7 @@ def apply_delta(db,delta,prose,sequence,day,source_sha,spell_ids):
             elif kind=="RELATION":setstate(db,subject,"relation:"+v["target_id"]+":"+v["relation"],v.get("value"),eid)
             elif kind=="ALIAS":
                 row=next(r for r in graph_rows(db,public=False) if r["id"]==subject)
-                check_identity_collision(rows,{**row,"aliases":[v["alias"]],"identity_resolution":v.get("identity_resolution",{})})
+                check_identity_collision(rows,{"id":subject,"name":v["alias"],"aliases":[],"identity_resolution":v.get("identity_resolution",{})})
                 row.setdefault("aliases",[]).append(v["alias"])
                 rows=[r if r["id"]!=subject else row for r in rows]
             elif kind=="REPORT":
@@ -218,7 +218,7 @@ def apply_delta(db,delta,prose,sequence,day,source_sha,spell_ids):
                         prior=json.loads(prior_body);p=prior["value"]
                         if p.get("field")=="life_status" and p.get("about_day")==v["about_day"] and p.get("value") in ("ALIVE","DEAD") and p["value"]!=v["value"]:
                             pid="report:"+episode+":"+str(i)
-                            body={"reason":"Incompatible unverified life-status reports","reports":[prior_id,eid],"scope":e["scope"]}
+                            body={"reason":"Incompatible unverified life-status reports","reports":[prior_id,eid],"scope":"WORLD" if prior["scope"]==e["scope"]=="WORLD" else "BACKSTAGE"}
                             db.execute("INSERT INTO codex_pending VALUES(?,?,?,?,?,?,?,?,?,?)",(pid,subject,"CONFLICT_CHRONOLOGY","REQUIRES_AUTHOR_REVIEW",jsonstr(body),episode,source_sha,e["line"],e["anchor"],eid))
                             break
             elif kind.startswith("PENDING_"):
@@ -371,7 +371,12 @@ def graph_candidates(root,query,entity=None):
                     val=json.loads(v)
                     if not field.startswith("knowledge:"):states.setdefault(ident,{})[field]={"value":val,"event_id":event}
                     if field=="custody" and val.get("holder"):possessions.setdefault(val["holder"],[]).append({"item_id":ident,"custody":val,"event_id":event})
+                pending={}
+                for pid,ident,category,status,body,episode,line in db.execute("SELECT pending_id,entity_id,category,status,body,episode,line FROM codex_pending WHERE entity_id IS NOT NULL"):
+                    if json.loads(body).get("scope")=="WORLD":
+                        pending.setdefault(ident,[]).append({"pending_id":pid,"category":category,"status":status,"episode":episode,"line":line})
                 for r in rows:
+                    if pending.get(r["id"]):r["pending_review"]=pending[r["id"]]
                     r["closed_state"]=states.get(r["id"],{})
                     if possessions.get(r["id"]):r["observed_inventory"]=possessions[r["id"]]
     exact=aliases(rows,query,entity)
