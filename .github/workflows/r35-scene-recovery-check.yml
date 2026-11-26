@@ -35,3 +35,21 @@ jobs:
         run: |
           python audit/tools/r35_scene_recovery_check.py archive audit
           git -C archive diff --exit-code
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: 19d4be7759ba7c0d68adad8eb969414f78caaef3
+          path: r36
+          persist-credentials: false
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: 476becf131a794af21a7616d5ed5ad6d436311fc
+          path: staging
+          persist-credentials: false
+      - name: Book I native R36 E/F gate
+        env:
+          PYTHONPATH: r36
+        run: |
+          python audit/tools/r36_book_i_native_homologation_check.py archive audit staging
+          git -C archive diff --exit-code
+          git -C r36 diff --exit-code
+          git -C staging diff --exit-code
