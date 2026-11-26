@@ -1,6 +1,6 @@
 # Universal Codex review — D580 (staging only)
  
-Reviewed source: `editorial/codex-staging/universal-review-d580-v1.json`, blob `99d387f513d9aec8ffabc7d069bbe592b43114ce`; 164 review rows (136 original, 8 missing seeds, 20 provisional identity candidates), 53 attachment-linked historical observations, 34 preserved prior literal observations, 1,747 queue rows triaged without semantic certification. 18/92 visual files inspected in inventory. HEAD D579 sequence 50, D580 draft. Source readback via Git blob because Contents returned empty content. All six structural checks passed in the readback. No canon promotion, no draft closure, no production changes.
+Reviewed source: `editorial/codex-staging/universal-review-d580-v1.json`, blob `83d46cabda140a5ddb278b1edd4c1eb2d1631c0f`; 167 review rows (136 original, 8 missing seeds, 23 provisional identity candidates), 56 attachment-linked historical observations, 34 preserved prior literal observations, 1,747 queue rows triaged without semantic certification. 18/92 visual files inspected in inventory. HEAD D579 sequence 50, D580 draft. Source readback via Git blob because Contents returned empty content. All seven structural checks passed in the readback. No canon promotion, no draft closure, no production changes.
 
 ## Field resolution
 - Preserve existing IDs. candidate:* keys are provisional only; reconcile against aliases and complete sources before assigning permanent IDs.
@@ -22,9 +22,9 @@ The existing build.py scan() is an audit ingestion routine: unchanged source+sta
 {
   "existing_records": 136,
   "seed_missing": 8,
-  "new_provisional_candidates": 20,
-  "total_review_rows": 164,
-  "source_attachment_observations": 53,
+  "new_provisional_candidates": 23,
+  "total_review_rows": 167,
+  "source_attachment_observations": 56,
   "prior_literal_observations": 34,
   "queue_rows": 1747,
   "queue_classes": {
@@ -44,8 +44,9 @@ The existing build.py scan() is an audit ingestion routine: unchanged source+sta
     "observations_have_attachment_episode_literal": true,
     "all_queue_rows_preserved": true,
     "all_prior_observations_preserved": true,
-    "no_canon_promotion": true
+    "no_canon_promotion": true,
+    "all_ten_domains_represented": true
   }
 }
- 
-HEAD comparison against live story-archive during this readback: identical. Domain classification counts (multi-domain): {"Arsenal":21,"Tecnologia":32,"Ambientes":15,"Personagens":81,"História e mistérios":14,"Organizações":6,"Bestiário":5,"Atlas mundial":23,"Magia e poderes":5}.
+
+HEAD comparison against live story-archive during prior readback: identical. Domain classification counts (multi-domain): {"Arsenal":21,"Tecnologia":32,"Ambientes":15,"Personagens":81,"História e mistérios":14,"Organizações":6,"Bestiário":5,"Atlas mundial":23,"Magia e poderes":5,"Cultura e economia":3}.
