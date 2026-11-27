@@ -1,0 +1,81 @@
+{
+  "schema": "worldroot-r36-controlled-incorporation-v1",
+  "status": "EXACT_APPROVED_CANDIDATE_ARCHIVED",
+  "approval_commit": "ebfe9ef2d6a6604c2bf05d7583707308d7c767bd",
+  "validated_run": 45918475529,
+  "transfer_run": 45919601447,
+  "base_archive": "96012cea0072e60cb401186a1bdc901fb11bb85b",
+  "archive_commit": "db53de0f7f58acc12da2c706dbeff5745cd83206",
+  "base_checkpoint": "a84c799f43088e82e0af033aa1b387d82c9934fc",
+  "engine": "46c40e18d3e0f4fbcafc025ae9d08b91ca6e6417",
+  "files": {
+    "editorial/registries/r35-natural-completion-d579-v14.json": {
+      "sha256": "50fe68c1d870cbe792b0c2ead717b1e7f3d32b5bd4083ed4598b0cb7fd3f94f2",
+      "git_blob": "db6190d652c35e87ad8c6f670de077e3b13b816e"
+    },
+    "editorial/registries/r35-world-completion-d579-v12.json": {
+      "sha256": "2bffcc1316945c7bdb4bb08593950bbd0af46cd7a271fd6d8d8bf9c72270b53e",
+      "git_blob": "7eabe936795808d65a6a2f8c12a742475a9a3605"
+    },
+    "editorial/registries/r35-legacy-name-reconciliation-v10.json": {
+      "sha256": "ad918bfe874149035ff0bd078d926a1c3758337ec3193f125eca6c7b71c47d0f",
+      "git_blob": "baffe1ae35556394a8cbdc788197e741b88e269f"
+    },
+    "editorial/registries/r35-living-overlay-manifest.json": {
+      "sha256": "c1364cddd2b76bdc83ce4df35305b7dceaed19fc652fb46a5ed20ea9f18b3330",
+      "git_blob": "02525c88956350aebfc2ef4d05e039b784593c75"
+    }
+  },
+  "approved_fields": 18,
+  "unchanged_fields": 5905,
+  "protected_fields_unchanged": 153,
+  "private_scope_fields_unchanged": 40,
+  "profiles": 192,
+  "names": 96,
+  "links": 25,
+  "records": 48,
+  "groups": 41,
+  "contexts": 432,
+  "regression": {
+    "tests": 706,
+    "status": "OK"
+  },
+  "evidence": {
+    "path": "editorial/codex-staging/r36-book-ii-stage-b-b008-transfer-evidence",
+    "sha256": {
+      "author-approval.json": "97902565fff7cf3a48cc18b7ac5a6810c7c5712b9ec2563da7c7826f965e0a56",
+      "regression.log": "cf5a149ae5d98ac18b905e29058a2254d6c8e57c25b13db8360fe196a626e498",
+      "review-evidence.json": "206d34acd6c5b87e072503269c5d14a80d1e29d56ce25d39e72f27e91288fad3",
+      "native-receipt.json": "4290fac5478025a059c67251beba1f1983194b0c84445ca9d703aa8c7cf0aac3"
+    },
+    "original_hashes": {
+      "candidate/native-receipt.json": "4290fac5478025a059c67251beba1f1983194b0c84445ca9d703aa8c7cf0aac3",
+      "candidate/registries/r35-legacy-name-reconciliation-v10.json": "ad918bfe874149035ff0bd078d926a1c3758337ec3193f125eca6c7b71c47d0f",
+      "candidate/registries/r35-living-overlay-manifest.json": "c1364cddd2b76bdc83ce4df35305b7dceaed19fc652fb46a5ed20ea9f18b3330",
+      "candidate/registries/r35-natural-completion-d579-v14.json": "50fe68c1d870cbe792b0c2ead717b1e7f3d32b5bd4083ed4598b0cb7fd3f94f2",
+      "candidate/registries/r35-world-completion-d579-v12.json": "2bffcc1316945c7bdb4bb08593950bbd0af46cd7a271fd6d8d8bf9c72270b53e",
+      "candidate/review-evidence.json": "206d34acd6c5b87e072503269c5d14a80d1e29d56ce25d39e72f27e91288fad3",
+      "regression.log": "e3c983bb82f8a796d5946f8c72c89c7cf0f2ccf425ec5eb66b4b0303ccd48ae3"
+    },
+    "regression_log_note": "Regenerated log timing may differ; exact native/review and four candidate SHA256 hashes match original."
+  },
+  "replay": {
+    "records": 1256,
+    "events": 0,
+    "integrity_check": "ok",
+    "idempotent": true,
+    "restore_matches": true
+  },
+  "narrative_head_blob": "9b4e09682fc3148511d59e73ec56fdcda4e396e5",
+  "remote_readback_verified": true,
+  "production_hold": true,
+  "canon_changed": false,
+  "production_activated": false,
+  "semantic_certification": false,
+  "free_only": {
+    "runner": "ubuntu-24.04",
+    "repository_public": true,
+    "artifact_upload": false,
+    "paid_services_authorized": false
+  }
+}

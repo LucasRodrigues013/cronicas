@@ -1,0 +1,39 @@
+{
+  "status": "NATIVE_CANDIDATE_VALIDATED_NOT_APPROVED",
+  "base_checkpoint": "a84c799f43088e82e0af033aa1b387d82c9934fc",
+  "base_archive": "96012cea0072e60cb401186a1bdc901fb11bb85b",
+  "engine": "46c40e18d3e0f4fbcafc025ae9d08b91ca6e6417",
+  "records": 48,
+  "groups": 41,
+  "contexts_verified": 432,
+  "source_part_hashes": 6,
+  "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+  "fields": 5923,
+  "changed_fields": 18,
+  "unchanged_fields": 5905,
+  "profiles": 192,
+  "private_scope_fields_unchanged": 40,
+  "all_protected_fields_unchanged": 153,
+  "naming_count": 96,
+  "links": 25,
+  "native_load_overlay_before_after": true,
+  "projection_records": 1256,
+  "projection_events": 0,
+  "replay_restore": true,
+  "candidate_blobs": {
+    "editorial/registries/r35-natural-completion-d579-v14.json": "db6190d652c35e87ad8c6f670de077e3b13b816e",
+    "editorial/registries/r35-world-completion-d579-v12.json": "7eabe936795808d65a6a2f8c12a742475a9a3605",
+    "editorial/registries/r35-legacy-name-reconciliation-v10.json": "baffe1ae35556394a8cbdc788197e741b88e269f",
+    "editorial/registries/r35-living-overlay-manifest.json": "02525c88956350aebfc2ef4d05e039b784593c75"
+  },
+  "next": {
+    "id": null,
+    "line": null,
+    "stage": "C_PENDING"
+  },
+  "future_packets": [],
+  "canon_changed": false,
+  "production_activated": false,
+  "semantic_certification": false,
+  "approval_required": true
+}

@@ -1,0 +1,118 @@
+{
+  "schema": "worldroot-r36-book-ii-stage-b-checkpoint-v1",
+  "book": 2,
+  "stage": "B",
+  "batch": 8,
+  "status": "STAGE_B_EDITORIAL_RECONCILIATION_COMPLETE_C_PENDING",
+  "previous_checkpoint": "a84c799f43088e82e0af033aa1b387d82c9934fc",
+  "review": {
+    "commit": "017b155104689408f0472ddc721611d533d7bc41",
+    "author_approval_commit": "ebfe9ef2d6a6604c2bf05d7583707308d7c767bd",
+    "author_approval_preflight_path": "editorial/codex-staging/r36-book-ii-stage-b-b008-preflight-DRAFT.json",
+    "author_approval_preflight_blob": "120c3f1ea1c68e6d2404cb3d3221093c1dde4f35",
+    "approved_ids": [
+      521,
+      568
+    ],
+    "native_receipt_sha256": "4290fac5478025a059c67251beba1f1983194b0c84445ca9d703aa8c7cf0aac3",
+    "validation_run": 45918475529,
+    "transfer_run": 45919601447
+  },
+  "archive": {
+    "commit": "db53de0f7f58acc12da2c706dbeff5745cd83206",
+    "parent": "96012cea0072e60cb401186a1bdc901fb11bb85b",
+    "manifest_blob": "02525c88956350aebfc2ef4d05e039b784593c75",
+    "character_overlay": "db6190d652c35e87ad8c6f670de077e3b13b816e",
+    "world_overlay": "7eabe936795808d65a6a2f8c12a742475a9a3605",
+    "naming_overlay": "baffe1ae35556394a8cbdc788197e741b88e269f",
+    "files": {
+      "editorial/registries/r35-natural-completion-d579-v14.json": {
+        "sha256": "50fe68c1d870cbe792b0c2ead717b1e7f3d32b5bd4083ed4598b0cb7fd3f94f2",
+        "git_blob": "db6190d652c35e87ad8c6f670de077e3b13b816e"
+      },
+      "editorial/registries/r35-world-completion-d579-v12.json": {
+        "sha256": "2bffcc1316945c7bdb4bb08593950bbd0af46cd7a271fd6d8d8bf9c72270b53e",
+        "git_blob": "7eabe936795808d65a6a2f8c12a742475a9a3605"
+      },
+      "editorial/registries/r35-legacy-name-reconciliation-v10.json": {
+        "sha256": "ad918bfe874149035ff0bd078d926a1c3758337ec3193f125eca6c7b71c47d0f",
+        "git_blob": "baffe1ae35556394a8cbdc788197e741b88e269f"
+      },
+      "editorial/registries/r35-living-overlay-manifest.json": {
+        "sha256": "c1364cddd2b76bdc83ce4df35305b7dceaed19fc652fb46a5ed20ea9f18b3330",
+        "git_blob": "02525c88956350aebfc2ef4d05e039b784593c75"
+      }
+    },
+    "remote_readback_verified": true
+  },
+  "counts": {
+    "targets_total": 261,
+    "editorially_reviewed": 261,
+    "remaining": 0,
+    "groups_reviewed": 203,
+    "groups_total": 203,
+    "fields_changed_this_batch": 18,
+    "field_updates_cumulative": 177,
+    "existing_entities_this_batch": 10,
+    "existing_profile_count": 192,
+    "independently_certified": 0,
+    "additional_observations": 8
+  },
+  "verification": {
+    "native_test_engine": "46c40e18d3e0f4fbcafc025ae9d08b91ca6e6417",
+    "native_tests_passed": 706,
+    "native_load_overlay_before_after": true,
+    "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+    "source_part_git_hashes_verified": 6,
+    "context_comparisons": 432,
+    "all_fields": 5923,
+    "unchanged_fields": 5905,
+    "all_protected_fields_unchanged": 153,
+    "private_scope_fields_unchanged": 40,
+    "names": 96,
+    "links": 25,
+    "narrative_head_blob": "9b4e09682fc3148511d59e73ec56fdcda4e396e5",
+    "sqlite": {
+      "records": 1256,
+      "events": 0,
+      "integrity_check": "ok",
+      "idempotent": true,
+      "restore_matches": true
+    },
+    "incorporation_audit_path": "editorial/codex-staging/r36-book-ii-stage-b-b008-incorporation-audit.json",
+    "remote_git_commit": "db53de0f7f58acc12da2c706dbeff5745cd83206",
+    "hosted_actions_dispatched": true,
+    "public_standard_runner": true,
+    "paid_artifact_upload": false
+  },
+  "reservations": {
+    "independent_certification_pending": true,
+    "book_i_reservations_inherited": true,
+    "production_hold": true,
+    "canonical_head_unchanged": true,
+    "unresolved_named_identity_and_infrastructure_candidates_separately_staged": true
+  },
+  "canon_changed": false,
+  "production_activated": false,
+  "next": {
+    "ledger_id": null,
+    "global_line": null,
+    "stage": "C_PENDING",
+    "batch": null,
+    "base_archive": "db53de0f7f58acc12da2c706dbeff5745cd83206"
+  },
+  "free_only_runbook": "docs/r36-historical-review-free-only.md",
+  "approved_development_engine": "46c40e18d3e0f4fbcafc025ae9d08b91ca6e6417",
+  "public_free_only": {
+    "primary": "GitHub Actions standard public runner",
+    "fallback": "docs/r36-historical-review-free-only.md",
+    "production_hold": true,
+    "no_paid_services": true
+  },
+  "semantic_certification": false,
+  "stage_c": {
+    "status": "STARTED_STRUCTURAL_ENTRY_ONLY",
+    "independent_certification_pending": true,
+    "production_hold": true
+  }
+}

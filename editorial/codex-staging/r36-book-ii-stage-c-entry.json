@@ -1,0 +1,31 @@
+{
+  "schema": "worldroot-r36-book-ii-stage-c-entry-v1",
+  "book": 2,
+  "stage": "C",
+  "status": "STARTED_STRUCTURAL_ENTRY_ONLY",
+  "stage_b_checkpoint_path": "editorial/codex-staging/r36-book-ii-stage-b-checkpoint-008.json",
+  "stage_b_checkpoint_sha256": "b5b1cad993722fd25119a2863d365b6e86e8e718974805a2f1cfd7381ee5337f",
+  "archive_commit": "db53de0f7f58acc12da2c706dbeff5745cd83206",
+  "engine": "46c40e18d3e0f4fbcafc025ae9d08b91ca6e6417",
+  "inventory_blob": "3c3d3f6fd26f63a90a08d00f9291b68c8e4a2d55",
+  "records": 261,
+  "groups": 203,
+  "cumulative_field_updates": 177,
+  "structural_checks": {
+    "inventory_unique_contiguous": true,
+    "archive_remote_readback": true,
+    "candidate_hashes_match": true,
+    "narrative_head_unchanged": true
+  },
+  "pending": [
+    "independent semantic review of all adjudications and historical observations",
+    "cross-batch continuity and identities, aliases, vetoes, knowledge scope and unresolved candidates",
+    "verify closure against original source and record independent certification or reservations"
+  ],
+  "independently_certified": 0,
+  "semantic_certification": false,
+  "production_hold": true,
+  "production_activated": false,
+  "canon_changed": false,
+  "free_only": true
+}
