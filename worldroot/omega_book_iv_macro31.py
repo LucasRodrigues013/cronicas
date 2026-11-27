@@ -315,7 +315,40 @@ def verify_macro35_start(root,archive):
     require(cp["production_gate"]=="HOLD" and not cp["canon_changed"] and not cp["official_checkpoint_changed"] and not cp["semantic_certification"] and not cp["macro_complete"],"gate")
     return {**result,"status":"PASS_NATIVE_MACRO_0035_PARTIAL","authority_counts":dict(Counter(x["authority"] for x in allr)),"visibility_counts":dict(Counter(x["visibility"] for x in allr)),"next_line":22414,"macro_complete":False,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False,"prior_cycle_release":"PASS_STAGING_ONLY","prior_cycle_review_blob":c0["cycle_review_blob"]}
 
+
+def verify_macro35_close(root,archive):
+    from collections import Counter
+    root=Path(root); archive=Path(archive)
+    prior=verify_macro35_start(root,archive)
+    c0=read(root,ROOT+"recovery-checkpoint-0035-partial-01-validated.json","e10b5d3eb10453eb8a4329b9c06a8972caf7a33f")
+    require(prior["next_line"]==c0["next_line"]==22414 and c0["native_validation"]=="PASS","prior checkpoint")
+    opening=read(root,c0["receipt_path"],c0["receipt_blob"],c0["receipt_sha256"])
+    cp=read(root,ROOT+"recovery-checkpoint-0035-closure-pending.json","a406730d2fa7d4a5e9c0d9a7b2f554b0862f78d2")
+    r=read(root,cp["receipt_path"],"77050dadfec1d00e5366b675432525d60b0c56cf",cp["receipt_sha256"])
+    q=read(root,"audit/omega008-c/bulk-macro-queue.json","e5a5f9e358d20acf8559f6313c2da24b64665f48")["macros"]; m=q[34]
+    require(r["previous_checkpoint_blob"]==cp["previous_checkpoint_blob"]=="e10b5d3eb10453eb8a4329b9c06a8972caf7a33f" and r["release_blob"]==cp["release_blob"]==c0["release_blob"],"checkpoint chain")
+    require(r["previous_macro_id"]==m["previous_macro"] and r["official_unit_seal"]==m["unit_seal"] and cp["next_macro"]==q[35],"queue chain")
+    source=SourceCache(archive,read(archive,"history/sources/MANIFEST.json","2048141263f66151230119af9b0ee51796ac846b")).get(m["source"])
+    review=read(root,c0["cycle_review_path"],c0["cycle_review_blob"])
+    ids=[x["id"] for g in review["macros"] for entry in g["receipts"] for x in read(root,entry["path"],entry["blob"])["records"]]
+    new=validate_receipt(r,m,source,r["project"],ARCHIVE,previous_ids=ids+[x["id"] for x in opening["records"]],expected_range=[22414,30641])
+    allr=opening["records"]+r["records"]; allc=opening["coverage"]+r["coverage"]
+    combined=dict(r,range=[20428,30641],records=allr,coverage=allc,axis_coverage={"assessed":list(range(1,31)),"represented":sorted({i for x in allr for i in x["axes"]})})
+    result=validate_receipt(combined,m,source,r["project"],ARCHIVE,previous_ids=ids)
+    require(new["lines"]==8228 and new["records"]==new["coverage"]==cp["records"]==38,"new counts")
+    require(result["lines"]==10214 and result["records"]==cp["macro_records"]==58,"macro counts")
+    require(cp["staging_records"]==c0["staging_records"]+new["records"] and cp["book_counts"]["IV"]==c0["book_counts"]["IV"]+new["records"],"staging counts")
+    require(all(x["book"]=="IV" and x["chapter_hint"]==11 and x["day"] in range(393,400) for x in allr),"scope")
+    require(all((x["evidence"]["role"]=="Prompt")==(x["authority"]=="AUTHOR_DIRECTION_NOT_EVENT") for x in allr),"author separation")
+    require(all(x["visibility"].startswith("READER_ONLY") for x in r["records"] if x["type"] in ("variant","reader_scene")),"reader/variant isolation")
+    require(all(x["authority"]=="NARRATOR_PROPOSED_BRANCH_NOT_EVENT" for x in allr if x["type"]=="transition_options"),"option separation")
+    require(source[0][25104]=="## Prompt:" and "futebol já foi apresentado" in source[0][25107] and "substitui integralmente" in source[0][25152],"author revision")
+    require("trezentas vezes" in source[0][27478] and "OBSERVAÇÃO EXTERNA."==source[0][30128],"power and antagonist anchors")
+    require(cp["next_line"]==r["next_line"]==q[35]["start"]==30642 and q[35]["previous_macro"]==m["id"],"next cursor")
+    require(cp["native_validation"]=="PENDING" and cp["production_gate"]=="HOLD" and not cp["canon_changed"] and not cp["official_checkpoint_changed"] and not cp["semantic_certification"] and not cp["promotion"],"gate")
+    return {**result,"status":"PASS_NATIVE_MACRO_0035_COMPLETE","new_records":new["records"],"new_lines":8228,"next_line":30642,"macro_complete":True,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False,"authority_counts":dict(Counter(x["authority"] for x in allr)),"visibility_counts":dict(Counter(x["visibility"] for x in allr))}
+
 def main():
     p=argparse.ArgumentParser();p.add_argument("--engine-root",default=".");p.add_argument("--archive-root",required=True)
-    a=p.parse_args();print(json.dumps(verify_macro35_start(a.engine_root,a.archive_root),sort_keys=True))
+    a=p.parse_args();print(json.dumps(verify_macro35_close(a.engine_root,a.archive_root),sort_keys=True))
 if __name__=="__main__":main()
