@@ -72,5 +72,18 @@
   "production_hold": true,
   "canon_changed": false,
   "production_activated": false,
-  "semantic_certification": false
+  "semantic_certification": false,
+  "public_free_only_execution": {
+    "status": "HOSTED_STANDARD_GATE_CONFIGURED_PENDING_EXECUTION",
+    "author_direction": "Author changed repository to public and requested restoration of automation, 2026-11-26",
+    "visibility_verified": "public",
+    "runner": "ubuntu-24.04",
+    "permissions": "contents: read",
+    "push_branch": "review/r36-b007-native-gate",
+    "storage": "No Actions artifacts or cache; receipt and checksums in job log/summary only; regenerate exact candidate bytes for incorporation after approval",
+    "fallback": "Existing local free-only runbook remains available",
+    "production_hold": true,
+    "approval_required": true,
+    "public_log_notice": "Only technical receipts and test logs; do not emit raw profile or source content intentionally. Prior confidentiality flags remain logical narrative boundaries, not repository access control."
+  }
 }
