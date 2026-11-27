@@ -6,6 +6,7 @@ on:
       - 'worldroot/omega_hybrid_receipt.py'
       - 'tests/test_omega_hybrid_receipt.py'
       - 'worldroot/omega_book_iv_handoff.py'
+      - 'worldroot/omega_book_iv_partial.py'
       - 'tests/test_omega_book_iv_handoff.py'
       - '.github/workflows/omega-hybrid-book-iii.yml'
 permissions:
@@ -47,6 +48,8 @@ jobs:
           python-version: '3.12'
       - name: Verify pinned archive and emit only aggregate results
         run: python -m worldroot.omega_book_iv_handoff --archive-root isolated-archive
+      - name: Verify first Book IV receipt
+        run: python -m worldroot.omega_book_iv_partial --archive-root isolated-archive
       - name: Remove ephemeral archive
         if: always()
         run: rm -rf isolated-archive
