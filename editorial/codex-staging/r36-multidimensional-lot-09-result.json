@@ -1,0 +1,1519 @@
+{
+  "schema": "worldroot-r36-semantic-lot-09-result-v1",
+  "base": "52df4efa6ff8ad1f1eb855df0241ab6bf13180a9",
+  "archive": "db53de0f7f58acc12da2c706dbeff5745cd83206",
+  "head_day": 579,
+  "sequence": 50,
+  "scope": "AUTHOR_ONLY",
+  "status": "AUTHOR_GATE_PENDING",
+  "production_hold": true,
+  "canon_changed": false,
+  "semantic_certification": false,
+  "input_sha256": "a54a163ad7cd5e402a2edca383b17200ab93b783428b9e6cb803648952c1d641",
+  "lot08_sha256": "0aa9937c924c486c384bd735618942b3476eaa29d629867f9c63f0caa365b581",
+  "lot07_sha256": "21c995eecd942ad9fc68baae6a054125fb53fd19bbcd618680bea1b045f6bc92",
+  "historical_source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+  "counts": {
+    "new_distinct_pending_fields": 50,
+    "official_fields": 17,
+    "candidate_fields": 33,
+    "distinct_targets": 28,
+    "pending_baseline": 3897,
+    "prior_distinct_pending_proposals": 55,
+    "pending_without_proposal_after_lot09": 3792,
+    "conflict_guards": 1,
+    "literal_checks": 175,
+    "canon_fields_promoted": 0
+  },
+  "observations": [
+    {
+      "id": "varo",
+      "field": "origin",
+      "value": "Criação de Lucas; Varo declara ter sido criado para comandar a força militar, sem memória de infância ou vida anterior.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 978,
+          "anchor": "— Quando despertei neste mundo, eu sabia lutar. Sabia comandar. Sabia interpretar uma formação militar. Mas não possuo lembranças de uma infância ou de uma vida anterior.",
+          "anchor_sha256": "9b3fe9302a6e8a20bc609031005c1192a6f26a09e985eae40b46bb412a4f186b"
+        },
+        {
+          "line": 982,
+          "anchor": "— Entretanto, tenho pensamentos meus. E gostaria de ser chamado de VARO.",
+          "anchor_sha256": "01e00feebcb9da0bf24de16f520de8875e3c6ec51eba71499bb8a3292e533273"
+        },
+        {
+          "line": 4031,
+          "anchor": "Eu fui criado para comandar uma força militar. Mas hoje recebi um motivo para protegê-la que vai além da minha própria origem.",
+          "anchor_sha256": "f27606af55b2aade2dc91e170a9347ce9f7c8f259800e7356bc608468e69e845"
+        }
+      ],
+      "valid_at": "D001–D002",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "varo",
+      "field": "age_experiential",
+      "value": "No primeiro despertar já sabia lutar, comandar e interpretar formação; não recordava infância ou vida anterior. Não equivale a idade biológica.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 978,
+          "anchor": "— Quando despertei neste mundo, eu sabia lutar. Sabia comandar. Sabia interpretar uma formação militar. Mas não possuo lembranças de uma infância ou de uma vida anterior.",
+          "anchor_sha256": "9b3fe9302a6e8a20bc609031005c1192a6f26a09e985eae40b46bb412a4f186b"
+        }
+      ],
+      "valid_at": "D001",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "varo",
+      "field": "journey",
+      "value": "Selecionou primeiro acampamento a sudoeste do campo de batalha, com acesso ao rio; acompanhou delegação em preparativos para Halvern.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 994,
+          "anchor": "VARO seleciona uma elevação baixa, a sudoeste do campo de batalha, com acesso ao rio por uma trilha estreita.",
+          "anchor_sha256": "2851d94a5a429d0238957bf8c60fcd1dafac703c3c2c3618ab5d4eaa68c42334"
+        },
+        {
+          "line": 14579,
+          "anchor": "10h24 | Preparativos para Halvern",
+          "anchor_sha256": "1876923f8d978544d332597035e4a516900be56e9f738648903c405bd5105ac2"
+        },
+        {
+          "line": 14591,
+          "anchor": "VARO acompanhava a delegação com uma escolta reduzida.",
+          "anchor_sha256": "1025d21d7a71b287c86f673f8130732705c54c7a0684ecddf695a18a5c699fea"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "lucas",
+      "field": "knowledge",
+      "value": "No D001 desconhecia quem o trouxera, leis, deuses, criaturas e governantes locais; não perpetuar como estado presente.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 1255,
+          "anchor": "DIA 1 • FINAL DA TARDE • ACAMPAMENTO DA LEGIÃO",
+          "anchor_sha256": "de08ed6baefd6a1011bbf86171b8b7aca56c00769b3d456a23d1090c3cc80399"
+        },
+        {
+          "line": 1271,
+          "anchor": "Quem me trouxe para cá?",
+          "anchor_sha256": "792b9184f51b3eefe69b614372cfddfb187959aef99df20c893012dee6753aa8"
+        },
+        {
+          "line": 1273,
+          "anchor": "Você não se lembra de ter pedido para nascer neste mundo. Não conhece suas leis, deuses, criaturas ou governantes.",
+          "anchor_sha256": "1670f4751addc36d040cf29c1f234678be104ebc534dd51d2d0b8db317764c62"
+        }
+      ],
+      "valid_at": "D001",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "miren",
+      "field": "inventory",
+      "value": "No primeiro encontro portava placa azul escura antiga com três círculos cortados por linha vertical, pendurada ao pescoço; posse atual não comprovada.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 9132,
+          "anchor": "— Meu nome é MIREN — diz ela.",
+          "anchor_sha256": "befc04b13d2a7cce8c0e4ccfc9853e0a94532384715b16f654b3fc57f335f169"
+        },
+        {
+          "line": 9160,
+          "anchor": "Ela tira do bolso o pequeno objeto pendurado ao pescoço — uma placa azul escura, antiga, com o mesmo símbolo dos três círculos cortados pela linha vertical.",
+          "anchor_sha256": "2abfee4e1d5c4465f81bc4a4faeb07d588a8a79d39a136f6a303010179fff443"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "lysa",
+      "field": "inventory",
+      "value": "Nos preparativos de Halvern levava uma pasta com documentos; posse contextual, não inventário atual.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 14579,
+          "anchor": "10h24 | Preparativos para Halvern",
+          "anchor_sha256": "1876923f8d978544d332597035e4a516900be56e9f738648903c405bd5105ac2"
+        },
+        {
+          "line": 14589,
+          "anchor": "LYSA carregava uma pasta com os documentos e vestia roupas simples, adequadas a uma representante administrativa.",
+          "anchor_sha256": "9a0e6420681fb027bd173b09dccf171c861b67636b0cb4ad265b0e584711725b"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "lysa",
+      "field": "journey",
+      "value": "Participou da delegação nos preparativos para Halvern; não prova chegada por si só.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 14579,
+          "anchor": "10h24 | Preparativos para Halvern",
+          "anchor_sha256": "1876923f8d978544d332597035e4a516900be56e9f738648903c405bd5105ac2"
+        },
+        {
+          "line": 14581,
+          "anchor": "A delegação saiu do acampamento sem demonstrações extravagantes.",
+          "anchor_sha256": "fbcdb89f81dc7f3374f1abba994505909c1a940091be594745065e2b5312be3d"
+        },
+        {
+          "line": 14589,
+          "anchor": "LYSA carregava uma pasta com os documentos e vestia roupas simples, adequadas a uma representante administrativa.",
+          "anchor_sha256": "9a0e6420681fb027bd173b09dccf171c861b67636b0cb4ad265b0e584711725b"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "kael",
+      "field": "journey",
+      "value": "Integrava delegação para Halvern, com armadura de cavaleiro negro sem elmo na partida.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 14579,
+          "anchor": "10h24 | Preparativos para Halvern",
+          "anchor_sha256": "1876923f8d978544d332597035e4a516900be56e9f738648903c405bd5105ac2"
+        },
+        {
+          "line": 14581,
+          "anchor": "A delegação saiu do acampamento sem demonstrações extravagantes.",
+          "anchor_sha256": "fbcdb89f81dc7f3374f1abba994505909c1a940091be594745065e2b5312be3d"
+        },
+        {
+          "line": 14587,
+          "anchor": "KAEL vestia sua armadura de cavaleiro negro, porém sem elmo.",
+          "anchor_sha256": "9e38e0e4e379d91cab5b9a24a7c58cc3f9d11b737d687d5955b3efe726164a7a"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "chr-oren-legiao",
+      "field": "occupation",
+      "value": "Participava da engenharia com Brannik; aprendizagem de medição de vigas, não mestre qualificado.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 19114,
+          "anchor": "OREN, ao lado de BRANNIK, ergueu a mão.",
+          "anchor_sha256": "d44dd14c380037acd967d338b6f015fa6e0e4cd42fe7f4b0cde33691cd3e9721"
+        },
+        {
+          "line": 19120,
+          "anchor": "— Você já participa.",
+          "anchor_sha256": "db5d9a33cd13a16d3df9b8584ac584adfa0bc6d4f68f823c9e340f64b2b4da6c"
+        },
+        {
+          "line": 19126,
+          "anchor": "— Só falta aprender a medir uma viga sem perder a régua.",
+          "anchor_sha256": "2dc6bc22508d7f25bcbd44e16bff06e6bef14736add24f540d423b817e204294"
+        },
+        {
+          "line": 19130,
+          "anchor": "— Uma vez foi suficiente para medir uma parede errada.",
+          "anchor_sha256": "954fc9248529b3e680e6543d68438c38c6feb093a12cbe13543739b895664178"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "chr-oren-legiao",
+      "field": "relationships",
+      "value": "Elyan, irmão de patrulha, foi o primeiro a perguntar como Oren desejava ser chamado; não parentesco biológico.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 3997,
+          "anchor": "Mas antes quero ajudar a trazer ELYAN de volta.",
+          "anchor_sha256": "33afc13dc0befe18e2ae1cd6d0240b182e8f6519668107d3250cc755688af38d"
+        },
+        {
+          "line": 4003,
+          "anchor": "O irmão capturado, comandante. Da nossa patrulha oriental. Ele foi o primeiro a perguntar como eu gostaria de ser chamado.",
+          "anchor_sha256": "0ce2e470fb6915b4a8c16eda49eb9901a372cec83940969fe757ee1c7e144eb3"
+        },
+        {
+          "line": 4007,
+          "anchor": "OREN.",
+          "anchor_sha256": "731ef4903e12c2bcf13e235be1bbe435bf2da71e0fae1706ea06da57cbddbc1a"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "chr-elyan-legiao",
+      "field": "relationships",
+      "value": "Oren refere-se a Elyan como irmão capturado da patrulha oriental, que lhe perguntou o nome; vínculo de Legião, não sangue.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 3997,
+          "anchor": "Mas antes quero ajudar a trazer ELYAN de volta.",
+          "anchor_sha256": "33afc13dc0befe18e2ae1cd6d0240b182e8f6519668107d3250cc755688af38d"
+        },
+        {
+          "line": 4003,
+          "anchor": "O irmão capturado, comandante. Da nossa patrulha oriental. Ele foi o primeiro a perguntar como eu gostaria de ser chamado.",
+          "anchor_sha256": "0ce2e470fb6915b4a8c16eda49eb9901a372cec83940969fe757ee1c7e144eb3"
+        },
+        {
+          "line": 4007,
+          "anchor": "OREN.",
+          "anchor_sha256": "731ef4903e12c2bcf13e235be1bbe435bf2da71e0fae1706ea06da57cbddbc1a"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "chr-elyan-legiao",
+      "field": "location",
+      "value": "Capturado enquanto integrava patrulha oriental; não se deduz cativeiro atual.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 3997,
+          "anchor": "Mas antes quero ajudar a trazer ELYAN de volta.",
+          "anchor_sha256": "33afc13dc0befe18e2ae1cd6d0240b182e8f6519668107d3250cc755688af38d"
+        },
+        {
+          "line": 4003,
+          "anchor": "O irmão capturado, comandante. Da nossa patrulha oriental. Ele foi o primeiro a perguntar como eu gostaria de ser chamado.",
+          "anchor_sha256": "0ce2e470fb6915b4a8c16eda49eb9901a372cec83940969fe757ee1c7e144eb3"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "chr-grazha-uzgor",
+      "field": "location",
+      "value": "Recebida por Varo na estrada sul de Arvendell, clareira, como emissária.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 19136,
+          "anchor": "III — Os orcs que vieram sem armas",
+          "anchor_sha256": "23b68cf6e152653f5519f9e243409beb738a72f4b2c5f971ac3ff6f49413cdad"
+        },
+        {
+          "line": 19138,
+          "anchor": "08h19 | Estrada sul de Arvendell",
+          "anchor_sha256": "f1865fbedda0d170cdc2d94ca9ba4767c79b9204b0d54ea32608091b56d1dd72"
+        },
+        {
+          "line": 19140,
+          "anchor": "VARO saiu para receber os dois emissários do clã Uzgor.",
+          "anchor_sha256": "9509f443f067327a16c96193f7bd4a0a0115d3addf1619b410f72a278a9cc83d"
+        },
+        {
+          "line": 19146,
+          "anchor": "Os orcs aguardavam numa pequena clareira.",
+          "anchor_sha256": "2c2c80d202db6a5e451a37c65a1c07d18b27b91fea48e8d15b5b1bf846838cc3"
+        },
+        {
+          "line": 19158,
+          "anchor": "— GRAZHA, do clã Uzgor.",
+          "anchor_sha256": "a07e7182d33b23cddf9ad7c5211adc56c08bfdb5b2f31f64f496059a35f370fc"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "chr-grazha-uzgor",
+      "field": "knowledge",
+      "value": "Sabia por Durghan da promessa de não perseguir civis; confirmou que ele vivia e reunia sobreviventes, recusou quantificar sem evidência.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 19158,
+          "anchor": "— GRAZHA, do clã Uzgor.",
+          "anchor_sha256": "a07e7182d33b23cddf9ad7c5211adc56c08bfdb5b2f31f64f496059a35f370fc"
+        },
+        {
+          "line": 19174,
+          "anchor": "— Está. E encontrou parte do nosso povo.",
+          "anchor_sha256": "21e7d652704a4a0c125bef2c97fc1395cce2e1b0dc853830cba4b4889f6999bb"
+        },
+        {
+          "line": 19180,
+          "anchor": "— Ainda estamos reunindo sobreviventes. Não darei um número enquanto não souber quem conseguiu escapar das montanhas.",
+          "anchor_sha256": "37d7e8ad789702a21e6452dea67972350ec756504d69a861bbee7379b38470db"
+        },
+        {
+          "line": 19188,
+          "anchor": "— DURGHAN disse que seu comandante prometeu não perseguir os civis do nosso clã.",
+          "anchor_sha256": "c602502279710882bb94c181d1cfd93aaec4e3cd9bfef8252e4b3090467574a0"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "chr-grazha-uzgor",
+      "field": "roles",
+      "value": "Emissária do clã Uzgor enviada por Durghan; não juramento de obediência.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 19140,
+          "anchor": "VARO saiu para receber os dois emissários do clã Uzgor.",
+          "anchor_sha256": "9509f443f067327a16c96193f7bd4a0a0115d3addf1619b410f72a278a9cc83d"
+        },
+        {
+          "line": 19158,
+          "anchor": "— GRAZHA, do clã Uzgor.",
+          "anchor_sha256": "a07e7182d33b23cddf9ad7c5211adc56c08bfdb5b2f31f64f496059a35f370fc"
+        },
+        {
+          "line": 19166,
+          "anchor": "— DURGHAN enviou vocês?",
+          "anchor_sha256": "c11647e4081d602241dcbbe0b822da13ca8fc2f982e269117ac010c4db877ebd"
+        },
+        {
+          "line": 19168,
+          "anchor": "— Sim.",
+          "anchor_sha256": "47c7fb5c502472a8b4ce6cd0df335df5ab561345b5e05d208005f6a9568e9848"
+        },
+        {
+          "line": 19228,
+          "anchor": "— Temos feridos. Temos fome. Não viemos jurar obediência, VARO. Viemos descobrir se a promessa do seu comandante vale alguma coisa.",
+          "anchor_sha256": "45e97bc85f7e71467bad8451735049d784d04d6a8cfbc3ec1edd71b12f12ffbd"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "chr-korr-uzgor",
+      "field": "location",
+      "value": "Emissário encontrado na estrada sul de Arvendell, numa clareira.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 19138,
+          "anchor": "08h19 | Estrada sul de Arvendell",
+          "anchor_sha256": "f1865fbedda0d170cdc2d94ca9ba4767c79b9204b0d54ea32608091b56d1dd72"
+        },
+        {
+          "line": 19140,
+          "anchor": "VARO saiu para receber os dois emissários do clã Uzgor.",
+          "anchor_sha256": "9509f443f067327a16c96193f7bd4a0a0115d3addf1619b410f72a278a9cc83d"
+        },
+        {
+          "line": 19146,
+          "anchor": "Os orcs aguardavam numa pequena clareira.",
+          "anchor_sha256": "2c2c80d202db6a5e451a37c65a1c07d18b27b91fea48e8d15b5b1bf846838cc3"
+        },
+        {
+          "line": 19162,
+          "anchor": "— Este é KORR.",
+          "anchor_sha256": "33529a06759b6b3422f4ea8a8f8546f654e467271c608523c92a9bb4897267e3"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "chr-korr-uzgor",
+      "field": "roles",
+      "value": "Emissário Uzgor enviado por Durghan juntamente com Grazha.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 19140,
+          "anchor": "VARO saiu para receber os dois emissários do clã Uzgor.",
+          "anchor_sha256": "9509f443f067327a16c96193f7bd4a0a0115d3addf1619b410f72a278a9cc83d"
+        },
+        {
+          "line": 19158,
+          "anchor": "— GRAZHA, do clã Uzgor.",
+          "anchor_sha256": "a07e7182d33b23cddf9ad7c5211adc56c08bfdb5b2f31f64f496059a35f370fc"
+        },
+        {
+          "line": 19162,
+          "anchor": "— Este é KORR.",
+          "anchor_sha256": "33529a06759b6b3422f4ea8a8f8546f654e467271c608523c92a9bb4897267e3"
+        },
+        {
+          "line": 19166,
+          "anchor": "— DURGHAN enviou vocês?",
+          "anchor_sha256": "c11647e4081d602241dcbbe0b822da13ca8fc2f982e269117ac010c4db877ebd"
+        },
+        {
+          "line": 19168,
+          "anchor": "— Sim.",
+          "anchor_sha256": "47c7fb5c502472a8b4ce6cd0df335df5ab561345b5e05d208005f6a9568e9848"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:tarek",
+      "field": "goals",
+      "value": "Quer garantias de voz e direitos civis para os moradores, sem cidadãos de segunda categoria.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 36938,
+          "anchor": "TAREK — “Precisamos saber se a cidade também será nossa”",
+          "anchor_sha256": "225dd92ed877201fb9bc4b5f75f2c5e07d856797a6894669edbef74afed9b0a6"
+        },
+        {
+          "line": 36940,
+          "anchor": "O representante dos moradores pediu a palavra.",
+          "anchor_sha256": "7482c767f35d171978ab735ee6f774d381453085b684092718a212c14884a6f8"
+        },
+        {
+          "line": 36946,
+          "anchor": "— Mas ainda não existe um acordo definitivo sobre quem terá voz nela.",
+          "anchor_sha256": "7d850ebfdde58523ee9c69174ef44070070eb5492285c5365fdf06b8bd21fe29"
+        },
+        {
+          "line": 36954,
+          "anchor": "— Mas os moradores também precisam ter garantias.",
+          "anchor_sha256": "00ac2a9d52901930032c48ae2b75e4fbe53a871049aa98a0faae89cdd76afa6a"
+        },
+        {
+          "line": 36960,
+          "anchor": "— Se nossa comunidade concordar em participar desse projeto, não quero que seus filhos sejam cidadãos de segunda categoria.",
+          "anchor_sha256": "f615e0775e5035ab6b18d13c6c492c035b123d5f3f8c514801732feacab30897"
+        },
+        {
+          "line": 36968,
+          "anchor": "— Então precisamos conhecê-la antes de aprová-la.",
+          "anchor_sha256": "d2c391f3c7fbc20848c578f6330c7e1b55d027ad182f8bdc6215665f48d90093"
+        }
+      ],
+      "valid_at": "D043",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:tarek",
+      "field": "values",
+      "value": "Participação e aprovação informada da Carta pela comunidade.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 36954,
+          "anchor": "— Mas os moradores também precisam ter garantias.",
+          "anchor_sha256": "00ac2a9d52901930032c48ae2b75e4fbe53a871049aa98a0faae89cdd76afa6a"
+        },
+        {
+          "line": 36960,
+          "anchor": "— Se nossa comunidade concordar em participar desse projeto, não quero que seus filhos sejam cidadãos de segunda categoria.",
+          "anchor_sha256": "f615e0775e5035ab6b18d13c6c492c035b123d5f3f8c514801732feacab30897"
+        },
+        {
+          "line": 36968,
+          "anchor": "— Então precisamos conhecê-la antes de aprová-la.",
+          "anchor_sha256": "d2c391f3c7fbc20848c578f6330c7e1b55d027ad182f8bdc6215665f48d90093"
+        }
+      ],
+      "valid_at": "D043",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:tarek",
+      "field": "knowledge",
+      "value": "Conhecia registros da Assembleia dos 300 e discussões de liberdade, profissões e direitos; não se presume acesso total.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 36948,
+          "anchor": "Ele apontou para os registros da Assembleia dos 300.",
+          "anchor_sha256": "d19da9f4ef54149b975cbbb3e994146b500f913fa4aadb733c9bcda7080e5d02"
+        },
+        {
+          "line": 36950,
+          "anchor": "— Seus legionários começaram a discutir liberdade, profissões e direitos. Isso é importante.",
+          "anchor_sha256": "644d29a3e552a6e8b2d1eaed924b2905d174526be8f76b279469ffe69918f584"
+        }
+      ],
+      "valid_at": "D043",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:esmara",
+      "field": "skills",
+      "value": "Apresentou resultados de testes de solo para adequação de culturas e colheitas de ciclo curto.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 50510,
+          "anchor": "ESMARA — O alimento não cresce na velocidade de CREATION",
+          "anchor_sha256": "d7d306bf7e2d3ed1a5bfffb716551a0b3d028cbadd6496e3c05cc1cc80aa7780"
+        },
+        {
+          "line": 50512,
+          "anchor": "ESMARA apresentou os resultados dos canteiros.",
+          "anchor_sha256": "4d9fdecdeb9a7bc3caa70353c9cc7bfa8629e1d351fc802dfc785a0665e9001f"
+        },
+        {
+          "line": 50516,
+          "anchor": "Os testes de solo permitiram identificar áreas mais adequadas a determinadas culturas.",
+          "anchor_sha256": "6b0cb5a789bcfeb183fa65185a782ef861c13c3deb5525f509ba2621eb162ea1"
+        },
+        {
+          "line": 50518,
+          "anchor": "Algumas colheitas de ciclo curto haviam sido concluídas.",
+          "anchor_sha256": "36e2511104de7c93fb18d5b888b16e5deaaafd709604834123d3436753b1cc46"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:esmara",
+      "field": "knowledge",
+      "value": "Reconheceu necessidade de tempo, água, ferramentas e trabalhadores; conhecimento Uzgor de plantas e terrenos diferentes.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 50530,
+          "anchor": "— Tempo. Água. Ferramentas. Trabalhadores preparados. E decisões que respeitem o solo.",
+          "anchor_sha256": "b0fa549257c48a38939b257b60e55e0c9509f22bd502c6c44330333618fcbba0"
+        },
+        {
+          "line": 50534,
+          "anchor": "— Você pode criar uma semente. Mas isso não significa que uma árvore dará frutos amanhã.",
+          "anchor_sha256": "7de61fbc7ac1a91891c9e10e7b86dadd93ca7a95578ae3dc4077c20d8643166f"
+        },
+        {
+          "line": 50542,
+          "anchor": "— Também precisamos negociar com GRAZHA e os Uzgor. Eles conhecem plantas e técnicas adequadas a terrenos diferentes dos nossos.",
+          "anchor_sha256": "cfeae6a72d49d12d526820b2749bc1bb5b9e838e9f8d4a1dff86896f45c6ff2c"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:esmara",
+      "field": "goals",
+      "value": "Negociar com Grazha e Uzgor sobre conhecimentos agrícolas, sem presumir contrato concluído.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 50542,
+          "anchor": "— Também precisamos negociar com GRAZHA e os Uzgor. Eles conhecem plantas e técnicas adequadas a terrenos diferentes dos nossos.",
+          "anchor_sha256": "cfeae6a72d49d12d526820b2749bc1bb5b9e838e9f8d4a1dff86896f45c6ff2c"
+        },
+        {
+          "line": 50546,
+          "anchor": "— A proposta comercial ainda depende de verificar os produtos, definir preços justos e avaliar a segurança alimentar das espécies que não conhecemos.",
+          "anchor_sha256": "880c5de0c451dc85b9f2a21c0253598cd91c55a9814f4ba429dd90894ae7d3ac"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:toran",
+      "field": "roles",
+      "value": "Integrava Reserva e foi reconhecido entre os Dez da Primeira Lança por proteção e resgate sob pressão; não mudança automática de patente.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 30606,
+          "anchor": "TORAN",
+          "anchor_sha256": "432d7a51fb2834de41d3751a24f22d6f344a28dcec90d677663371e604ce1b9f"
+        },
+        {
+          "line": 30607,
+          "anchor": "Reserva",
+          "anchor_sha256": "781c3bf8cece75e175bfce63c61f9505f7ef4d06bc500ee5caff0e3e2c646a7c"
+        },
+        {
+          "line": 30608,
+          "anchor": "Proteção e resgate sob pressão",
+          "anchor_sha256": "67e61558bb7bff1df230c96bd836f39de97a5a5cbf5c660f16b96ccc1e4ea60f"
+        },
+        {
+          "line": 30616,
+          "anchor": "Os Dez da Primeira Lança",
+          "anchor_sha256": "f3fa3e4969f788a4765a01a66716b007f3a19bccea8dc606b6fb75f697abf549"
+        },
+        {
+          "line": 30620,
+          "anchor": "Os resultados não alteram automaticamente patentes. Outros legionários poderão superar esses participantes em torneios futuros ou em missões de especialidade.",
+          "anchor_sha256": "5fde787668c066bc3407a5c0533ab759eb176623a21f8328178dd2f9bd3a1416"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:toran",
+      "field": "skills",
+      "value": "Destaque em proteção e resgate sob pressão; não qualificação médica.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 30606,
+          "anchor": "TORAN",
+          "anchor_sha256": "432d7a51fb2834de41d3751a24f22d6f344a28dcec90d677663371e604ce1b9f"
+        },
+        {
+          "line": 30608,
+          "anchor": "Proteção e resgate sob pressão",
+          "anchor_sha256": "67e61558bb7bff1df230c96bd836f39de97a5a5cbf5c660f16b96ccc1e4ea60f"
+        },
+        {
+          "line": 78243,
+          "anchor": "— Sua mãe foi muito generosa. Mas hoje minha tarefa é levar você até alguém que sabe mais sobre febre do que eu.",
+          "anchor_sha256": "36683030fd9b90f1b37237f7892a26f0da8f8d0cdf09d96efe7052d3f8d8ee75"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:toran",
+      "field": "knowledge",
+      "value": "Sabia reconhecer que a febre precisava de profissional com mais conhecimento e encaminhou Nina à Casa de Atendimento.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 78243,
+          "anchor": "— Sua mãe foi muito generosa. Mas hoje minha tarefa é levar você até alguém que sabe mais sobre febre do que eu.",
+          "anchor_sha256": "36683030fd9b90f1b37237f7892a26f0da8f8d0cdf09d96efe7052d3f8d8ee75"
+        },
+        {
+          "line": 78255,
+          "anchor": "E os dois caminharam até a Casa de Atendimento.",
+          "anchor_sha256": "133b508a2eb87af665f7c3a410f5510bdd04a848de50100dbd898fd874ee2588"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:nina",
+      "field": "journey",
+      "value": "Chegou em grupo procedente de Halvern, atendida por Toran e encaminhada à Casa de Atendimento; sem fixar destino permanente.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 78193,
+          "anchor": "— Viemos de Halvern. Alguns querem vender mercadorias. Outros gostariam de solicitar residência.",
+          "anchor_sha256": "b4982b65a490aae522c6883a17377d512ae78d70c6080eab52d5f651b557dc1f"
+        },
+        {
+          "line": 78201,
+          "anchor": "— Minha filha está com febre desde ontem.",
+          "anchor_sha256": "24efdad7a7a2879960549c9ab28892b7f9adbf1bfe16b3fe0bdf8c2f53dc35ba"
+        },
+        {
+          "line": 78217,
+          "anchor": "— NINA.",
+          "anchor_sha256": "687fb7e38143905b77ff2e839eb84f6fee65098403beb10a78b4590de236209e"
+        },
+        {
+          "line": 78255,
+          "anchor": "E os dois caminharam até a Casa de Atendimento.",
+          "anchor_sha256": "133b508a2eb87af665f7c3a410f5510bdd04a848de50100dbd898fd874ee2588"
+        },
+        {
+          "line": 78259,
+          "anchor": "Mas uma família que acabara de atravessar as estradas de Thalor encontrou uma cidade que sabia recebê-la sem esperar ordens de seu fundador.",
+          "anchor_sha256": "bd919c9b4ff5bb9c27adef551c42d92cafa9d27a8f8c35b8580aa406e15b18c2"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:nina",
+      "field": "knowledge",
+      "value": "A mãe lhe dissera que os trezentos eram os melhores soldados; testemunho familiar, não classificação objetiva.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 78217,
+          "anchor": "— NINA.",
+          "anchor_sha256": "687fb7e38143905b77ff2e839eb84f6fee65098403beb10a78b4590de236209e"
+        },
+        {
+          "line": 78235,
+          "anchor": "NINA franziu a testa.",
+          "anchor_sha256": "5fffc9da1cb869ee68634fda10041846023b2f1428aee14c9238493f07e497d4"
+        },
+        {
+          "line": 78237,
+          "anchor": "— Minha mãe disse que vocês são os melhores soldados do mundo.",
+          "anchor_sha256": "36f106e0d3eb73bf48fd9f4362a28b6fc088ac607e1d830511977241b2b81556"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:nina",
+      "field": "age_apparent",
+      "value": "Menina/criança; sem idade numérica.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 78199,
+          "anchor": "A mulher com a criança ergueu discretamente a mão.",
+          "anchor_sha256": "0439e492687b358218bbfa4b4288a58c32c1d29f16e104a60ab305584a610d61"
+        },
+        {
+          "line": 78201,
+          "anchor": "— Minha filha está com febre desde ontem.",
+          "anchor_sha256": "24efdad7a7a2879960549c9ab28892b7f9adbf1bfe16b3fe0bdf8c2f53dc35ba"
+        },
+        {
+          "line": 78213,
+          "anchor": "Abaixou-se diante da menina.",
+          "anchor_sha256": "9bc9579b1416432f3cbb85bc241420a39571047298aaa575dafb2d3f399128f6"
+        },
+        {
+          "line": 78217,
+          "anchor": "— NINA.",
+          "anchor_sha256": "687fb7e38143905b77ff2e839eb84f6fee65098403beb10a78b4590de236209e"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:nina",
+      "field": "location",
+      "value": "Na recepção do grupo vindo de Halvern e depois na Casa de Atendimento; localização histórica.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 78193,
+          "anchor": "— Viemos de Halvern. Alguns querem vender mercadorias. Outros gostariam de solicitar residência.",
+          "anchor_sha256": "b4982b65a490aae522c6883a17377d512ae78d70c6080eab52d5f651b557dc1f"
+        },
+        {
+          "line": 78217,
+          "anchor": "— NINA.",
+          "anchor_sha256": "687fb7e38143905b77ff2e839eb84f6fee65098403beb10a78b4590de236209e"
+        },
+        {
+          "line": 78255,
+          "anchor": "E os dois caminharam até a Casa de Atendimento.",
+          "anchor_sha256": "133b508a2eb87af665f7c3a410f5510bdd04a848de50100dbd898fd874ee2588"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:tomren-vale",
+      "field": "occupation",
+      "value": "Imediato da Bruma Clara na apresentação da tripulação.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 169296,
+          "anchor": "07h16 | Pouso das Sete Cordas — Embarcação Bruma Clara",
+          "anchor_sha256": "70e4cea0e5fd8614830f6a800fd02e2accd8a3870e36ec3aa67257900d305a59"
+        },
+        {
+          "line": 169320,
+          "anchor": "MAIRA apresentou a tripulação.",
+          "anchor_sha256": "d5ee8f044d37fbecca54104949520ed338c9380b17942072b0314778fdfd5476"
+        },
+        {
+          "line": 169322,
+          "anchor": "O imediato, TOMREN VALE, era um homem de cabelos grisalhos e uma expressão que parecia desconfiar até de dias ensolarados.",
+          "anchor_sha256": "3e750ac376b2dd0ff9733c6aecb8d5762fdb3d5eb2722725f9fabbc229a1c760"
+        }
+      ],
+      "valid_at": "D211",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:tomren-vale",
+      "field": "location",
+      "value": "Bruma Clara no Pouso das Sete Cordas, Seral, na apresentação.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 169100,
+          "anchor": "DIA 211  05h52  POUSO DAS SETE CORDAS · SERAL",
+          "anchor_sha256": "4acdea41b609b1c7e275b06757a4c0197524d33b4eb8c7768667d57a551c4fad"
+        },
+        {
+          "line": 169296,
+          "anchor": "07h16 | Pouso das Sete Cordas — Embarcação Bruma Clara",
+          "anchor_sha256": "70e4cea0e5fd8614830f6a800fd02e2accd8a3870e36ec3aa67257900d305a59"
+        },
+        {
+          "line": 169322,
+          "anchor": "O imediato, TOMREN VALE, era um homem de cabelos grisalhos e uma expressão que parecia desconfiar até de dias ensolarados.",
+          "anchor_sha256": "3e750ac376b2dd0ff9733c6aecb8d5762fdb3d5eb2722725f9fabbc229a1c760"
+        }
+      ],
+      "valid_at": "D211",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:selia-nar",
+      "field": "occupation",
+      "value": "Navegadora de corrente da tripulação da Bruma Clara.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 169296,
+          "anchor": "07h16 | Pouso das Sete Cordas — Embarcação Bruma Clara",
+          "anchor_sha256": "70e4cea0e5fd8614830f6a800fd02e2accd8a3870e36ec3aa67257900d305a59"
+        },
+        {
+          "line": 169320,
+          "anchor": "MAIRA apresentou a tripulação.",
+          "anchor_sha256": "d5ee8f044d37fbecca54104949520ed338c9380b17942072b0314778fdfd5476"
+        },
+        {
+          "line": 169324,
+          "anchor": "A navegadora de corrente, SÉLIA NAR, usava pequenos anéis de cobre nos dedos e carregava uma vara curta gravada com sinais arcanos.",
+          "anchor_sha256": "a4d8227f467af4763d58b6b448bb4031ab87782d64c8560052eef3bd50e9a881"
+        }
+      ],
+      "valid_at": "D211",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:selia-nar",
+      "field": "location",
+      "value": "Bruma Clara no Pouso das Sete Cordas, Seral, na apresentação.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 169100,
+          "anchor": "DIA 211  05h52  POUSO DAS SETE CORDAS · SERAL",
+          "anchor_sha256": "4acdea41b609b1c7e275b06757a4c0197524d33b4eb8c7768667d57a551c4fad"
+        },
+        {
+          "line": 169296,
+          "anchor": "07h16 | Pouso das Sete Cordas — Embarcação Bruma Clara",
+          "anchor_sha256": "70e4cea0e5fd8614830f6a800fd02e2accd8a3870e36ec3aa67257900d305a59"
+        },
+        {
+          "line": 169324,
+          "anchor": "A navegadora de corrente, SÉLIA NAR, usava pequenos anéis de cobre nos dedos e carregava uma vara curta gravada com sinais arcanos.",
+          "anchor_sha256": "a4d8227f467af4763d58b6b448bb4031ab87782d64c8560052eef3bd50e9a881"
+        }
+      ],
+      "valid_at": "D211",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:navel-ardon",
+      "field": "occupation",
+      "value": "Piloto costeiro e comandante da própria embarcação Falcão da Espuma, por declaração pessoal.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 178803,
+          "anchor": "— LUCAS, conheça NÁVEL ARDON.",
+          "anchor_sha256": "279004054c3c7342a37fddcf010826ff7b2dd78e884de5ecdec3db1e035cec9d"
+        },
+        {
+          "line": 178813,
+          "anchor": "— Piloto costeiro. E comandante da minha própria embarcação.",
+          "anchor_sha256": "42592659a6441eb25b80d3c865b751f3e8636505adfa0e29055af05a38e16a60"
+        },
+        {
+          "line": 178819,
+          "anchor": "— Falcão da Espuma.",
+          "anchor_sha256": "6b70872fe273908647564be88560fed64738f211fe6711777235f1dc52c45387"
+        }
+      ],
+      "valid_at": "D214",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:navel-ardon",
+      "field": "location",
+      "value": "Encontrado no contexto do Entreposto da Maré Baixa, baixo Seral; não posição atual.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 178417,
+          "anchor": "DIA 214  05h28  ENTREPOSTO DA MARÉ BAIXA · BAIXO SERAL",
+          "anchor_sha256": "1d892b98dd7ecdb0d79e5cc2c03f77d4cf4445d7e6b02058d40a35cb8c61df08"
+        },
+        {
+          "line": 178803,
+          "anchor": "— LUCAS, conheça NÁVEL ARDON.",
+          "anchor_sha256": "279004054c3c7342a37fddcf010826ff7b2dd78e884de5ecdec3db1e035cec9d"
+        }
+      ],
+      "valid_at": "D214",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:yra-beldon",
+      "field": "occupation",
+      "value": "Navegadora de marés na tripulação de Nável.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 178915,
+          "anchor": "YRA BELDON, navegadora de marés, possuía cabelos vermelhos presos numa trança e uma tatuagem azul que contornava o antebraço.",
+          "anchor_sha256": "4175e8533fce9f22d208fc3945421cce3ef308653a9a101c1ac2a1780e693c1b"
+        },
+        {
+          "line": 178923,
+          "anchor": "A navegação costeira seria responsabilidade de NÁVEL e de seus profissionais.",
+          "anchor_sha256": "26411ff3b6ccd1048780626b2c79192f9450d55ac1521dac4b425aa83a5c874f"
+        }
+      ],
+      "valid_at": "D214",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:yra-beldon",
+      "field": "knowledge",
+      "value": "Reconheceu o título de Criador ao encontrar Lucas; não implica conhecer poderes privados.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 178925,
+          "anchor": "YRA examinou LUCAS.",
+          "anchor_sha256": "5d5d8a2594504a1565e688144fd75c4305c6596cc577e536e4397c39d12a25c4"
+        },
+        {
+          "line": 178927,
+          "anchor": "— Então você é o Criador.",
+          "anchor_sha256": "605c96b9f266b86384d7f4e60a40a038e8ec5a57a08e2e9bdafc4a47c9069fb6"
+        },
+        {
+          "line": 178931,
+          "anchor": "— Sou LUCAS.",
+          "anchor_sha256": "01cd7e89ea57e2ffd6b5c781cf8c1e56fb68c3932d3c0e5559b888b9076d0ba0"
+        }
+      ],
+      "valid_at": "D214",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:maira-kest",
+      "field": "occupation",
+      "value": "Capitã ligada à Bruma Clara; mantém compromissos no baixo Seral.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 169336,
+          "anchor": "— MAIRA!",
+          "anchor_sha256": "8c02ab8aedf0d80784e77064f7949bc36bd20ceeae171c7d726d3cc0c1b4a1a4"
+        },
+        {
+          "line": 169338,
+          "anchor": "A capitã olhou para ele.",
+          "anchor_sha256": "67f813ef6222d73582851f43c7861c117be04299386247bc8c7fd47e4034686a"
+        },
+        {
+          "line": 178921,
+          "anchor": "MAIRA permaneceria responsável por seus compromissos no baixo Seral. Poderia acompanhar parte das tratativas e manter contato com NÁVEL, mas não abandonaria indefinidamente a Bruma Clara nem sua tripulação.",
+          "anchor_sha256": "f12de4d8fd523e7177845c40e814764c9f32f6c5cbe600abf60d487e23eac4c0"
+        }
+      ],
+      "valid_at": "D211–D214",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:maira-kest",
+      "field": "relationships",
+      "value": "Mantém contato possível com Nável, sem abandonar a Bruma Clara nem sua tripulação.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 178921,
+          "anchor": "MAIRA permaneceria responsável por seus compromissos no baixo Seral. Poderia acompanhar parte das tratativas e manter contato com NÁVEL, mas não abandonaria indefinidamente a Bruma Clara nem sua tripulação.",
+          "anchor_sha256": "f12de4d8fd523e7177845c40e814764c9f32f6c5cbe600abf60d487e23eac4c0"
+        },
+        {
+          "line": 178923,
+          "anchor": "A navegação costeira seria responsabilidade de NÁVEL e de seus profissionais.",
+          "anchor_sha256": "26411ff3b6ccd1048780626b2c79192f9450d55ac1521dac4b425aa83a5c874f"
+        }
+      ],
+      "valid_at": "D214",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "legacy-reconnaissance-drone",
+      "field": "unattested_details",
+      "value": "No teste câmera, controle e propulsão funcionaram a curta distância por minutos; alcance, bateria e ruído ainda exigiam testes.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 3266,
+          "anchor": "O pequeno drone decola com um zumbido agudo.",
+          "anchor_sha256": "6e160790849e90cde181289df8df1b2a2c36efa0dcb0c43f83cb0218521ea766"
+        },
+        {
+          "line": 3274,
+          "anchor": "Na tela do controlador, surge uma imagem do acampamento vista de cima.",
+          "anchor_sha256": "5136b5c8b9287084ac7aeb84c8518eb8e962afc165be7de3a862e91ac50c4fe4"
+        },
+        {
+          "line": 3296,
+          "anchor": "— Mas o ruído poderá denunciá-lo. E a bateria, o alcance e a câmera precisam ser testados antes de uma missão real.",
+          "anchor_sha256": "3c05eb861342db4b447d744d5cc510d2edacd374df741f98dd27eba336c0b002"
+        },
+        {
+          "line": 3298,
+          "anchor": "O aparelho permanece em voo por alguns minutos.",
+          "anchor_sha256": "b4e8d9de2aed3f7a3d61c34fe87909a131820eefe03279b8f619482a3851a17b"
+        },
+        {
+          "line": 3300,
+          "anchor": "O teste confirma que câmera, controle e propulsão funcionam a curta distância.",
+          "anchor_sha256": "df357590e9601307baa87d5dca33e709832a087da656d74b72e23dce2b81cee2"
+        }
+      ],
+      "valid_at": "D002",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "marco-sete",
+      "field": "unattested_details",
+      "value": "Marco fisicamente confirmado, mas posição original, deslocamento e rota indicada não demonstrados.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 147163,
+          "anchor": "— SETE.",
+          "anchor_sha256": "cc52567181269bcf53e2d8f3ca7e3b13847d76ae5ff24758417d509145f18c5b"
+        },
+        {
+          "line": 147171,
+          "anchor": "— Temos nosso primeiro ponto de correspondência física.",
+          "anchor_sha256": "bd5fb65717af5c961a95af66b728569f14695913c75a2b0674e7a190de114c37"
+        },
+        {
+          "line": 147193,
+          "anchor": "— O marco é real.",
+          "anchor_sha256": "938f081d740c36773069cffbc1c58ab6de3b0c2e3d3adaa822b7e6e69154c2d1"
+        },
+        {
+          "line": 147197,
+          "anchor": "— Mas ainda precisamos verificar se está no local original, se foi deslocado e qual rota efetivamente indicava.",
+          "anchor_sha256": "f7e3c975e764950bae65bf5433f7a0fde2b231f0ca2d09d4ab3a84b8a7fc4176"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "veias-do-alto",
+      "field": "unattested_details",
+      "value": "Fenômenos mágicos naturais usados por navegadores de outra tradição; não há relação histórica demonstrada com via suspensa física dos antigos.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 160681,
+          "anchor": "A via suspensa dos antigos era uma infraestrutura física de transporte de carga.",
+          "anchor_sha256": "4d8d0411bfeb02db369cb5a47beb16243fbc9601c5c7ccf9bcd9ba3877d077c2"
+        },
+        {
+          "line": 160683,
+          "anchor": "As Veias do Alto eram fenômenos mágicos naturais utilizados por navegadores de outra tradição.",
+          "anchor_sha256": "b24c89062c7880e247e3ba1c4a9b581e4dedc008dd88e2fff3766fe355e8403b"
+        },
+        {
+          "line": 160685,
+          "anchor": "Nenhuma relação histórica entre as duas havia sido demonstrada.",
+          "anchor_sha256": "2d96a0d9e98cd5b6d044b118a62cb73f238dc04b911c8dab94fedc7a3f604e5f"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "jardim-errante",
+      "field": "unattested_details",
+      "value": "Embarcação pequena de pesquisa e transporte, não frota oceânica; exige materiais, navegação, energia, tripulação e condições apropriadas.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 160085,
+          "anchor": "A capitã explicou que sua gente utilizava rotas aéreas sazonais entre regiões montanhosas.",
+          "anchor_sha256": "0c17e05ce98daa2a5425ccd2d8b16d2855c1adb510219b1bb86d2dc253eba5dd"
+        },
+        {
+          "line": 160091,
+          "anchor": "Havia necessidades de materiais específicos, conhecimentos de navegação, energia armazenada, tripulações treinadas e condições atmosféricas apropriadas.",
+          "anchor_sha256": "d8a4861ee68161cb41c486fb8f9c6635021d37c9c4bce9df8cf6dd71901db111"
+        },
+        {
+          "line": 160093,
+          "anchor": "O Jardim Errante era uma pequena embarcação de pesquisa e transporte.",
+          "anchor_sha256": "a04b6a0b10a26d796dd52978aa61494567fd02867616effbdafc03f2fd10eefd"
+        },
+        {
+          "line": 160095,
+          "anchor": "Não representava uma frota capaz de atravessar livremente todos os oceanos.",
+          "anchor_sha256": "52b547c06b90a7d4631974d8f5073a8a531c49f57f309a8871c85e0c01d2c6ff"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "ibis-01",
+      "field": "unattested_details",
+      "value": "Nome sugerido por Miren; primeiro ensaio com aparelho preso ao sistema de segurança, não prova voo livre.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 146842,
+          "anchor": "— E se chamássemos de Íbis?",
+          "anchor_sha256": "c232db1eb9b95c7caf77fb282f6246552b83d24b1481657bf6b21ef3bb7f5ab8"
+        },
+        {
+          "line": 146850,
+          "anchor": "— Então teremos o ÍBIS-01.",
+          "anchor_sha256": "09382451dd09477c0f56e921ec088794bcf13dc6521a6f0de0719a3a696fad39"
+        },
+        {
+          "line": 146860,
+          "anchor": "O primeiro ensaio ocorreu com o aparelho preso a um sistema de segurança.",
+          "anchor_sha256": "7439767834c24ed767cfdb8094eaaa25646e6158d7fb817faa548734cc0c362e"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "bruma-clara",
+      "field": "unattested_details",
+      "value": "Casco largo, dois níveis de carga, cabine protegida; velas auxiliares, manobras de corrente e equipamentos próprios do Seral; não navio de alto-mar.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 169298,
+          "anchor": "A Bruma Clara não era uma embarcação pequena.",
+          "anchor_sha256": "dab16b2a86f0e5e3c723f4b8f54d2e600d7baf63b0e67f108a669ab3cdfa3737"
+        },
+        {
+          "line": 169300,
+          "anchor": "Também não era um navio de alto-mar.",
+          "anchor_sha256": "65442437244d02be0e45e564d8bd2ffb8bc8e4012051f4931a5f8e4badd3a0c5"
+        },
+        {
+          "line": 169302,
+          "anchor": "Possuía casco largo, dois níveis de carga, uma cabine protegida e mecanismos desenvolvidos especificamente para navegar nos trechos comerciais do Seral.",
+          "anchor_sha256": "53e8294dbeec449ad14167133147397676cdd1e26267cef20188aa6a78fef3f5"
+        },
+        {
+          "line": 169304,
+          "anchor": "Sua propulsão combinava velas auxiliares, manobras de corrente e equipamentos apropriados às águas que percorria.",
+          "anchor_sha256": "920809401e64738dc8324032d4c21ef0e885d91106a38d6b86a60b22c6519477"
+        },
+        {
+          "line": 169306,
+          "anchor": "Nas laterais, símbolos pintados representavam as comunidades que participavam de sua manutenção.",
+          "anchor_sha256": "4bfe83f0c2d49bde40d47bd84130d615a5c3275e4a5a65985be3746c12e16326"
+        }
+      ],
+      "valid_at": "D211",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "povos-do-alto",
+      "field": "unattested_details",
+      "value": "Uso de rotas aéreas sazonais entre regiões montanhosas; nem toda comunidade possui aeronaves, construção depende de condições e competências específicas.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 160085,
+          "anchor": "A capitã explicou que sua gente utilizava rotas aéreas sazonais entre regiões montanhosas.",
+          "anchor_sha256": "0c17e05ce98daa2a5425ccd2d8b16d2855c1adb510219b1bb86d2dc253eba5dd"
+        },
+        {
+          "line": 160087,
+          "anchor": "Nem toda comunidade possuía embarcações voadoras.",
+          "anchor_sha256": "ab52dc84be66c6b95565d6ba105435030697e698d2e3a27ee7f4c1281cc651a9"
+        },
+        {
+          "line": 160089,
+          "anchor": "Nem qualquer pessoa podia construir uma.",
+          "anchor_sha256": "d6084ebf6199533aa521491ce1f71cc0bdb9b978c0651e6fad9aafa60ecc5d17"
+        },
+        {
+          "line": 160091,
+          "anchor": "Havia necessidades de materiais específicos, conhecimentos de navegação, energia armazenada, tripulações treinadas e condições atmosféricas apropriadas.",
+          "anchor_sha256": "d8a4861ee68161cb41c486fb8f9c6635021d37c9c4bce9df8cf6dd71901db111"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "manta-tempestade",
+      "field": "unattested_details",
+      "value": "Corpo alongado, asas membranosas quase transparentes, dorso como pedra úmida, filamentos luminosos na cauda; sem equiparar a dragão ou ave.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 147333,
+          "anchor": "Uma criatura de corpo alongado e asas membranosas, quase transparentes.",
+          "anchor_sha256": "115ecd82df6bcc1ff06b3c43565e551ba592bd856bc1ffc016306e7375eaa147"
+        },
+        {
+          "line": 147335,
+          "anchor": "Seu dorso refletia a luz como pedra úmida.",
+          "anchor_sha256": "ab20acfdd19bc6f8ffcc632758697f48119d6b6d91edcb4ebefbfb97b04e36b3"
+        },
+        {
+          "line": 147337,
+          "anchor": "Longos filamentos luminosos saíam da cauda.",
+          "anchor_sha256": "cc82292b41198e1e47c74dcd3790be9531621fda81386f19c320cc2579261a32"
+        },
+        {
+          "line": 147339,
+          "anchor": "Ela não possuía o corpo típico dos dragões das histórias de LUCAS.",
+          "anchor_sha256": "37fc220633610b1dfbc4521d9d8952067a1ce959f9b608efe754a6ae6dd3ae53"
+        },
+        {
+          "line": 147341,
+          "anchor": "Nem parecia uma ave comum.",
+          "anchor_sha256": "4e9d88aecda1076e705cfe033feb0e5cce68b247bfcc3b8c76ba5b6a25039d47"
+        },
+        {
+          "line": 147343,
+          "anchor": "Seu movimento lembrava uma grande arraia deslizando pelo ar.",
+          "anchor_sha256": "2f43ba4b2469a3f2937535f452c18a781bccabd4a328d3a6265983387d9a14fd"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "instalacao-suspensao-cargas",
+      "field": "unattested_details",
+      "value": "Três estruturas metálicas entre rochas do outro lado de garganta; Íbis localizado abaixo com asa parcialmente dobrada, não demonstra funcionamento das estruturas.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 154006,
+          "anchor": "Abaixo deles havia uma garganta profunda.",
+          "anchor_sha256": "5c53e97ba6c3639b8f13580b699d181d20b782f155184190507b30a65822ebf6"
+        },
+        {
+          "line": 154008,
+          "anchor": "Do outro lado, três estruturas metálicas surgiam entre rochas.",
+          "anchor_sha256": "bf52c5c955d5cdfb4e0d1d4b6a4383dd9d0680d8338284f7df969bc0d5d42c53"
+        },
+        {
+          "line": 154010,
+          "anchor": "E, numa área aberta mais abaixo, o ÍBIS permanecia inclinado sobre o terreno.",
+          "anchor_sha256": "aef3865c4f820f08511e78ac7e5788889a585c873d30324557ebcf0ef52e1de8"
+        },
+        {
+          "line": 154012,
+          "anchor": "Uma das asas estava parcialmente dobrada.",
+          "anchor_sha256": "ca4f2be1a180a0764f36789dea83086c2525ed4d92c36848df4b6a2f0ea65e12"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "kairon-resgate-manta",
+      "field": "unattested_details",
+      "value": "Filhote preso por membrana a cabo corroído; manta maior circulava sem atacar; rajadas perigosas. Lucas interpretou tentativa de alcançar o filhote, Seron qualificou como aparência.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 154268,
+          "anchor": "Uma criatura jovem, semelhante às mantas adultas.",
+          "anchor_sha256": "dbf4a5a7ace1aff05f62a29dd7166fbf2fba617a5e8c7f9f33e5dc7d183e6445"
+        },
+        {
+          "line": 154270,
+          "anchor": "Estava presa entre duas estruturas antigas, com parte de uma membrana enroscada num cabo corroído.",
+          "anchor_sha256": "a0d00ae4312964a81f0f5b0e86b4076e81703e4e48b6fdd2f70458b8feba95a4"
+        },
+        {
+          "line": 154274,
+          "anchor": "Não atacava.",
+          "anchor_sha256": "1daa87f6febda889c7cda1be310419387b1f6219eae59edfbb32c4d9e5140f86"
+        },
+        {
+          "line": 154276,
+          "anchor": "Mas suas passagens provocavam rajadas que tornavam a encosta ainda mais perigosa.",
+          "anchor_sha256": "be9e068d4f31f684eb6b632003a3a96cec26d9df5a4ffbabe29086f283f57666"
+        },
+        {
+          "line": 154282,
+          "anchor": "— Ela está tentando alcançar o filhote.",
+          "anchor_sha256": "334871d9a51828a53477b33daf52b082153af23b0931fdb89a7f89aa245779c0"
+        },
+        {
+          "line": 154286,
+          "anchor": "— Parece.",
+          "anchor_sha256": "5a225edc6e98475f9de197511dfe32b83ae82864a97bd0c6e4ab8c6844551bb9"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "chr-korr-uzgor",
+      "field": "hair",
+      "value": "Não descrito no encontro; não usar grisalhos trançados, que pertencem a Grazha.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 19148,
+          "anchor": "Um era alto e magro, mais jovem do que DURGHAN, com uma cicatriz atravessando a orelha esquerda.",
+          "anchor_sha256": "b66efa2ecb5621b72adbeda72e86b3fbf9a2e7af6ae96394828e5cb8f7a98022"
+        },
+        {
+          "line": 19150,
+          "anchor": "A outra era uma mulher orc de ombros largos, cabelos grisalhos trançados e uma expressão que indicava pouca paciência para formalidades.",
+          "anchor_sha256": "76e15baf0b5c3d7855fe01f04a8521378328db44916a98e3b4a258a29a346076"
+        },
+        {
+          "line": 19158,
+          "anchor": "— GRAZHA, do clã Uzgor.",
+          "anchor_sha256": "a07e7182d33b23cddf9ad7c5211adc56c08bfdb5b2f31f64f496059a35f370fc"
+        },
+        {
+          "line": 19162,
+          "anchor": "— Este é KORR.",
+          "anchor_sha256": "33529a06759b6b3422f4ea8a8f8546f654e467271c608523c92a9bb4897267e3"
+        }
+      ],
+      "valid_at": null,
+      "kind": "CONFLICT_ONLY",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    }
+  ]
+}
