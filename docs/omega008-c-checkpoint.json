@@ -2,7 +2,7 @@
   "schema": "worldroot-omega008-c-checkpoint-v1",
   "project": "CRONICAS_DE_UM_NOVO_MUNDO",
   "protocol": "OMEGA-008 C",
-  "status": "HISTORICAL_INTAKE_MACRO_0020_RECOVERED_FINAL_REVIEW_DEFERRED",
+  "status": "HISTORICAL_INTAKE_MACRO_0021_RECOVERED_FINAL_REVIEW_DEFERRED",
   "engine_base": "b7ba937bcaeac185f3ac46bc93e8e1a2fe516b49",
   "source_archive": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
   "branch": "review/omega-cycle-1",
@@ -251,7 +251,8 @@
     "Book III macro 0017 grouped recovery complete D204–206; industrial autonomy, Espelhamento Referenciado I, Kael/Lysa, Varo/Maelis, three missing rescued. Preserve D199 quarantine and local temporal modalities.",
     "Book III macro 0018 grouped recovery D206–210 complete; first naval Aurora test, travel documents, Jardim Errante/KHELEN and Veias do Alto, Encadeamento Matricial I (D208 demonstrated, D209 partial), Marco VIII and Cais das Raízes; D210 Gênese 100x/crystal author directive not yet demonstrated within cut; visual gaps and D199 quarantine preserved.",
     "Book III macro 0019 grouped recovery D210–213: ~100x comparable Gênese demonstrated, Memória do Horizonte prototype, Maira first meeting, Calderva arc, Elen Ross, Lastro/Márlo/Vesperal, archive rescue and open Alvorada Cinzenta confrontation. Preserve reader-only, legal/identity uncertainty, D199 quarantine and author directives; independent review pending.",
-    "Book III macro 0020 grouped recovery D213–215 complete; first open ocean, Falcão da Espuma, Calderva and Casa da Maré, Lira provisional name and Elo do Horizonte I experimental (Ivo receives but delivery unconfirmed), civic aid, Quinto Arco temporary protection, nine arcs local independent signaling. Vesperal/Lastro evidence and reader perspectives separated. No dungeon confirmed. D199 quarantine unchanged."
+    "Book III macro 0020 grouped recovery D213–215 complete; first open ocean, Falcão da Espuma, Calderva and Casa da Maré, Lira provisional name and Elo do Horizonte I experimental (Ivo receives but delivery unconfirmed), civic aid, Quinto Arco temporary protection, nine arcs local independent signaling. Vesperal/Lastro evidence and reader perspectives separated. No dungeon confirmed. D199 quarantine unchanged.",
+    "Book III macro 0021 D215–217: Elo I urban relative tracking, Lira/Enna rescue, Veskan custody, Ivo injury, Carta das Nove Marés/Concordata dos Faróis, Taren/Ressaca clues, paternal affection without adoption, System humor, Draevor/Nysara fleet reader-only. Author future events separated. Literal physical line 196031 joined across parts 004/005. D199 quarantine preserved."
   ],
   "next": {
     "stage": 1,
@@ -261,16 +262,16 @@
     "start_line": 1217,
     "end_rule": "through next complete narrative choice boundary, bounded by complexity",
     "checkpoint": "docs/omega008-c-checkpoint.json",
-    "action": "Active bulk.recovery_cursor=186395; continue Book III macro 0021 through 196617, D215 chapter 15 Quinto Arco civic network response, dialogue open. Preserve Lira identity and Elo I pending delivery; no canon or motor changes."
+    "action": "Active bulk.recovery_cursor=196618; continue Book III macro 0022 through 206661, D217 chapter 18 Doca das Redes Velhas, Navel evaluating reconnaissance. Physical source part 005 logical offset 196030. No canon or motor changes."
   },
   "canon_changed": false,
   "stage00_complete": false,
   "book_complete": false,
   "overall_complete": false,
   "previous_checkpoint": {
-    "commit": "d843c93314ff7398415f1cbd3d32f3974650949f",
-    "blob": "034ac06755cc9729e8c323142b6e006bb2a27fa9",
-    "sha256_utf8": "5e1e3a4380310e18769d043ebcee02e83279db5fc9ff6064afb61f520d64fdb5"
+    "commit": "e5d9cf52a357ea70b10ad2d037dcc1c0ec4ccb57",
+    "blob": "f48a5e6b6a18d3bab6f91cc1d15b52e54d314afb",
+    "sha256_utf8": "26db8f52290cfa8b7a8ed269c44f3a06767a461e7e64953e699e57aafe5788e9"
   },
   "lots": [
     {
@@ -362,7 +363,7 @@
       "records": 21,
       "next_review_line": 1680
     },
-    "semantic_cursor": 186395,
+    "semantic_cursor": 196618,
     "semantic_pilot_complete": true,
     "independent_review": false,
     "semantic_pilot_scope": "CONTROLLER_GROUPED_REVIEW_NOT_EXHAUSTIVE_OR_INDEPENDENT",
@@ -425,26 +426,26 @@
         30
       ],
       "book_hint": "III",
-      "end": 196617,
-      "id": "24d8ff8c2e2192a43463c455cb4f61904a664470de81a6967c0ecdc611624aa3",
-      "lines": 10223,
+      "end": 206661,
+      "id": "5a46669d5d3fd0516aebb491b5979ddc5aa3e72b033a2994f962e7a78ab6037c",
+      "lines": 10044,
       "order_scope": "SOURCE_ORDER_NOT_EVENT_TIME",
-      "previous_macro": "9cf2f2513bb23cdae6aff2d3230fcbfaf37d67b1278a29e92a9de368d2337577",
+      "previous_macro": "24d8ff8c2e2192a43463c455cb4f61904a664470de81a6967c0ecdc611624aa3",
       "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
-      "start": 186395,
+      "start": 196618,
       "status": "PENDING",
-      "unit_seal": "688aef1ed26b1de9b48bf3101094efb3322c7687cd80cc2b067739a918f12399",
-      "units": 39
+      "unit_seal": "df74dab1d1022de560890ff6868fd231ede4364311ad2f009d4caa2a12c72263",
+      "units": 36
     },
     "open_boundary": {
       "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
-      "after_line": 186394,
-      "next_line": 186395,
-      "day": 215,
-      "chapter": 15,
-      "reason": "18h09 Quinto Arco, civic network illuminated by residents, Miren addresses Lucas; dialogue open."
+      "after_line": 196617,
+      "next_line": 196618,
+      "day": 217,
+      "chapter": 18,
+      "reason": "11h03 Doca das Redes Velhas, Nável evaluating reconnaissance of Ressaca; fleet approaches in reader-only scene."
     },
-    "recovery_cursor": 186395,
+    "recovery_cursor": 196618,
     "native_validated_through": 11227,
     "recovery_policy": {
       "mode": "RECOVER_FIRST_REVIEW_AT_CURRENT_DAY",
@@ -715,6 +716,20 @@
         "day_start": 213,
         "day_end": 215,
         "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
+      },
+      {
+        "macro_id": "24d8ff8c2e2192a43463c455cb4f61904a664470de81a6967c0ecdc611624aa3",
+        "path": "audit/omega008-c/bulk-semantic-macro-0021.json",
+        "sha256_utf8": "df2606e567139e260b57343fabeb4cd85fa735a9b23626e2b3893a0a747835b9",
+        "range": [
+          186395,
+          196617
+        ],
+        "records": 68,
+        "sections": 9,
+        "day_start": 215,
+        "day_end": 217,
+        "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
       }
     ],
     "recovered_macro_ids": [
@@ -737,9 +752,10 @@
       "92a6e42e95c314278d1e3f88328283e9b602edc040d123ded9e42d1321d0cf8e",
       "3627080a2dcd1d901f480a8df65321c3d0bf4235c5e467fc2aad554a31e0abae",
       "2f9381267f4b1ce7a753b18c6ab9f83171e82e7e68259ccb1d46a964704aad7f",
-      "9cf2f2513bb23cdae6aff2d3230fcbfaf37d67b1278a29e92a9de368d2337577"
+      "9cf2f2513bb23cdae6aff2d3230fcbfaf37d67b1278a29e92a9de368d2337577",
+      "24d8ff8c2e2192a43463c455cb4f61904a664470de81a6967c0ecdc611624aa3"
     ],
-    "total_candidates_recovered": 1515,
+    "total_candidates_recovered": 1583,
     "book_I_intake": {
       "range": [
         1,
@@ -752,18 +768,19 @@
       "canon_promoted": false
     },
     "last_recovery_readback": {
-      "macro": "0020",
-      "receipt_commit": "5db6416c813580ddb4f53eae3e981b6c0ceb4599",
-      "receipt_blob": "ea521e6be795168d20ce205bb640f2752204ac34",
-      "receipt_sha256_utf8": "3b4074c64f7db2d43026d5cfe9d07d8151033707202d9c46b3893ac6ec01ce4e",
-      "anchors_verified": 55,
-      "coverage_spans_verified": 5,
+      "macro": "0021",
+      "receipt_commit": "037c3eb499f1ba54a0c977fee92026bf5adc00fc",
+      "receipt_blob": "f5c0cf8706c0336b8906bd68c33cb421dfe85ed0",
+      "receipt_sha256_utf8": "df2606e567139e260b57343fabeb4cd85fa735a9b23626e2b3893a0a747835b9",
+      "anchors_verified": 68,
+      "coverage_spans_verified": 9,
       "receipt_diff_files": [
-        "audit/omega008-c/bulk-semantic-macro-0020.json"
+        "audit/omega008-c/bulk-semantic-macro-0021.json"
       ],
       "prior_candidate_files_unchanged_by_patch": true,
       "native_semantic_validation": "DEFERRED",
-      "independent_review": false
+      "independent_review": false,
+      "physical_boundary_join_verified": true
     }
   }
 }
