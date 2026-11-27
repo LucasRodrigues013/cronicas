@@ -110,7 +110,52 @@ def verify_macro32_close(root,archive):
     require(cp["production_gate"]=="HOLD" and not cp["canon_changed"] and not cp["official_checkpoint_changed"] and not cp["semantic_certification"],"gate")
     return {**result,"status":"PASS_NATIVE_MACRO_0032_COMPLETE","new_records":new["records"],"new_lines":new["lines"],"authority_counts":dict(Counter(x["authority"] for x in allr)),"visibility_counts":dict(Counter(x["visibility"] for x in allr)),"next_line":1,"next_source":q[32]["source"],"macro_complete":True,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False}
 
+def verify_macro33_start(root,archive):
+    from collections import Counter
+    from .omega_turbo_recovery import anchor
+    root=Path(root); archive=Path(archive)
+    prior=verify_macro32_close(root,archive)
+    c0=read(root,ROOT+"recovery-checkpoint-0032-validated.json","f6e04bad6a9d7fe846eafae99f0cee71e79c3d5b")
+    require(prior["macro_complete"] and c0["native_validation"]=="PASS" and c0["next_line"]==1,"macro32 validated gate")
+    cp=read(root,ROOT+"recovery-checkpoint-0033-partial-01.json","b6dabcf8e746dbdea32081eb4a651f42c125114c")
+    r=read(root,cp["receipt_path"],"cc61ce1a59318eb92224ef34c3ffc8e12021ace8",cp["receipt_sha256"])
+    q=read(root,"audit/omega008-c/bulk-macro-queue.json","e5a5f9e358d20acf8559f6313c2da24b64665f48")["macros"]
+    m=q[32]
+    require(r["previous_checkpoint_blob"]==cp["previous_checkpoint_blob"]=="f6e04bad6a9d7fe846eafae99f0cee71e79c3d5b" and r["release_blob"]==c0["release_blob"]==cp["release_blob"],"checkpoint chain")
+    require(c0["next_macro"]==m and c0["next_source"]==cp["source"]==r["source"]==m["source"] and r["previous_macro_id"]==q[31]["id"] and r["official_unit_seal"]==m["unit_seal"],"queue chain")
+    source=SourceCache(archive,read(archive,"history/sources/MANIFEST.json","2048141263f66151230119af9b0ee51796ac846b")).get(m["source"])
+    require(len(source[0])==85803 and r["source_sha256"]==source[3] and r["range"]==[1,2413] and r["macro_range"]==[1,10229],"source geometry")
+    # The original core validator accepts Prompt/Response only. Verify the exact
+    # leading Metadata span separately, then use the unmodified validator for
+    # every remaining line. Do not turn export-header data into a narrative event.
+    header=r["records"][0]; e=header["evidence"]; cov=r["coverage"][0]
+    require(header["type"]=="metadata" and header["authority"]=="METADATA_NOT_EVENT" and header["promotion"] is False and not header["entities"] and header["visibility"]=="EDITORIAL_ONLY_NO_CHARACTER_INJECTION","header authority")
+    require(e["source"]==m["source"] and e["source_sha256_manifest"]==source[3] and (e["line_start"],e["line_end"],e["role"])==(1,8,"Metadata"),"header scope")
+    require(set(source[1][:8])=={"Metadata"} and source[1][8]=="Prompt" and anchor(source,1,8)==e["span_sha256_utf8"],"header hash and roles")
+    require(e["blob_sha1"] in {p[2] for p in source[2] if p[0]<=8 and p[1]>=1},"header provenance")
+    require(cov["start"]==1 and cov["end"]==8 and cov["role"]=="Metadata" and cov["span_sha256_utf8"]==e["span_sha256_utf8"] and cov["record_ids"]==[header["id"]] and cov["disposition"]=="NON_NARRATIVE_EXPORT_HEADER","header coverage")
+    prev1=read(root,ROOT+"partial-macro-0032-01.json")
+    prev2=read(root,c0["receipt_path"],c0["receipt_blob"],c0["receipt_sha256"])
+    ids=[x["id"] for x in prev1["records"]+prev2["records"]]
+    require(header["id"] not in ids and header["axes"]==[29,30],"header identity")
+    rr=r["records"][1:]
+    sub=dict(r,range=[9,2413],records=rr,coverage=r["coverage"][1:],axis_coverage={"assessed":list(range(1,31)),"represented":sorted({a for x in rr for a in x["axes"]})})
+    result=validate_receipt(sub,m,source,r["project"],ARCHIVE,previous_ids=ids+[header["id"]],expected_range=[9,2413])
+    allr=r["records"]; represented=sorted({a for x in allr for a in x["axes"]})
+    require(r["axis_coverage"]=={"assessed":list(range(1,31)),"represented":represented},"axis ledger")
+    require(len(allr)==len(r["coverage"])==cp["records"]==result["records"]+1==29 and result["lines"]+8==2413,"partial counts")
+    require(all(x["book"]=="IV" and x["chapter_hint"]==10 and x["day"] in range(383,387) and x["promotion"] is False for x in allr),"scope")
+    require(all((x["evidence"]["role"]=="Prompt")==(x["authority"]=="AUTHOR_DIRECTION_NOT_EVENT") for x in allr),"author separation")
+    require(all(x["authority"]=="METADATA_NOT_EVENT" for x in allr if x["type"]=="metadata"),"metadata separation")
+    require(all(x["visibility"].startswith("READER_ONLY") for x in allr if x["type"]=="reader_scene"),"reader isolation")
+    require(all(x["authority"]=="NARRATOR_PROPOSED_BRANCH_NOT_EVENT" for x in allr if x["type"]=="transition_options"),"teaser separation")
+    require(all(source[0][i-1]=="## Prompt:" for i in (9,2154,2159)) and all(source[0][i-1]=="## Response:" for i in (18,2164)),"role boundaries")
+    require(source[0][2412]=="Mas o SISTEMA falou primeiro." and source[0][2413]=="" and source[0][2414].startswith("— E, antes que pergunte"),"continuation")
+    require(cp["next_line"]==r["next_line"]==2414 and cp["staging_records"]==c0["staging_records"]+29==2392 and cp["book_counts"]["IV"]==270 and cp["completed_macros"]==32,"checkpoint")
+    require(cp["production_gate"]=="HOLD" and not cp["canon_changed"] and not cp["official_checkpoint_changed"] and not cp["semantic_certification"] and not cp["macro_complete"],"gate")
+    return {**result,"status":"PASS_NATIVE_MACRO_0033_PARTIAL","lines":2413,"records":29,"coverage":29,"header_metadata_lines":8,"axes_represented":represented,"authority_counts":dict(Counter(x["authority"] for x in allr)),"visibility_counts":dict(Counter(x["visibility"] for x in allr)),"next_line":2414,"macro_complete":False,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False}
+
 def main():
     p=argparse.ArgumentParser();p.add_argument("--engine-root",default=".");p.add_argument("--archive-root",required=True)
-    a=p.parse_args();print(json.dumps(verify_macro32_close(a.engine_root,a.archive_root),sort_keys=True))
+    a=p.parse_args();print(json.dumps(verify_macro33_start(a.engine_root,a.archive_root),sort_keys=True))
 if __name__=="__main__":main()
