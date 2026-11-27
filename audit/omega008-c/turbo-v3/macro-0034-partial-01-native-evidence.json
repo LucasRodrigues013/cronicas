@@ -1,0 +1,75 @@
+{
+  "schema": "OMEGA_NATIVE_MACRO_0034_PARTIAL_EVIDENCE_V1",
+  "validated_commit": "e37c81726a51e22a2907715c114b09daa0ded992",
+  "run_id": 46070762426,
+  "jobs": {
+    "native_staging": 140746884080,
+    "literal_authorized_public": 140746883799
+  },
+  "native_validation": "PASS",
+  "targeted_regression": {
+    "passed": 47,
+    "total": 47,
+    "suites": [
+      14,
+      11,
+      12,
+      10
+    ]
+  },
+  "source_custody": {
+    "drive_text_sha256_matches_pinned_manifest": true,
+    "github_native_archive_verified": true
+  },
+  "metrics": {
+    "status": "PASS_NATIVE_MACRO_0034_PARTIAL",
+    "lines": 2184,
+    "records": 20,
+    "coverage": 20,
+    "axes_assessed": 30,
+    "axes_represented": [
+      1,
+      2,
+      3,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "authority_counts": {
+      "AUTHOR_DIRECTION_NOT_EVENT": 1,
+      "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED": 16,
+      "METADATA_NOT_EVENT": 2,
+      "NARRATOR_PROPOSED_BRANCH_NOT_EVENT": 1
+    },
+    "visibility_counts": {
+      "EDITORIAL_ONLY_NO_CHARACTER_INJECTION": 19,
+      "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION": 1
+    },
+    "next_line": 12414,
+    "macro_complete": false,
+    "production_gate": "HOLD",
+    "canon_changed": false,
+    "semantic_certification": false
+  },
+  "independent_review": false,
+  "cycle_consolidated_review": "PENDING_AT_MACRO_0034_CLOSURE"
+}
