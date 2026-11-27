@@ -2,7 +2,7 @@
   "schema": "worldroot-omega008-c-checkpoint-v1",
   "project": "CRONICAS_DE_UM_NOVO_MUNDO",
   "protocol": "OMEGA-008 C",
-  "status": "HISTORICAL_INTAKE_MACRO_0006_RECOVERED_FINAL_REVIEW_DEFERRED",
+  "status": "HISTORICAL_INTAKE_MACRO_0007_RECOVERED_FINAL_REVIEW_DEFERRED",
   "engine_base": "b7ba937bcaeac185f3ac46bc93e8e1a2fe516b49",
   "source_archive": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
   "branch": "review/omega-cycle-1",
@@ -237,7 +237,8 @@
     "Generalize receipt wrapper to future macro chain without regenerating original queue",
     "Global semantic reconciliation, registry integration/homologation and regression review deferred until all historical intake through D579; local unresolved labels preserved.",
     "Book I grouped intake complete through 40848; independent semantic review, chronology/assembly inconsistencies, entity resolution and native validation deferred; do not homologate.",
-    "Book II macro 0006 grouped recovery complete; image-only export, opening chapter/day discrepancies, provisional identities and D114 open scene preserved for review."
+    "Book II macro 0006 grouped recovery complete; image-only export, opening chapter/day discrepancies, provisional identities and D114 open scene preserved for review.",
+    "Book II macro 0007 grouped recovery complete; historical equipment limits, chapter-title discrepancies, local identities, ancient causality and D129 incomplete confrontation deferred."
   ],
   "next": {
     "stage": 1,
@@ -247,16 +248,16 @@
     "start_line": 1217,
     "end_rule": "through next complete narrative choice boundary, bounded by complexity",
     "checkpoint": "docs/omega008-c-checkpoint.json",
-    "action": "Active bulk.recovery_cursor=50885; continue original Book II macro through 61067. Preserve prior receipts and dated states; global reconciliation and homologation deferred through D579. No canon or motor changes."
+    "action": "Active bulk.recovery_cursor=61068; continue Book II macro through 71264, D129 open confrontation. Preserve prior receipts and dated states; global reconciliation and homologation deferred through D579. No canon or motor changes."
   },
   "canon_changed": false,
   "stage00_complete": false,
   "book_complete": false,
   "overall_complete": false,
   "previous_checkpoint": {
-    "commit": "14eeb44b1d08ab72bba5e3720723d95df44a6e3f",
-    "blob": "32307c48b6481b195bc0dabe407de9e0ee605f28",
-    "sha256_utf8": "0e2f3e5293acc98deb8c3c16ad51c330fff02f13f6fa2497958f9a9e3f20634f"
+    "commit": "f62fe82353c707b665cd939ec2596d0c2d5d2b45",
+    "blob": "bd504563609a4ab2641f601a82546b20499e5c68",
+    "sha256_utf8": "535aa16d5efb9659fbc580bbb75b7a00d23fc3682518ce34b52bb4b26409f915"
   },
   "lots": [
     {
@@ -348,7 +349,7 @@
       "records": 21,
       "next_review_line": 1680
     },
-    "semantic_cursor": 50885,
+    "semantic_cursor": 61068,
     "semantic_pilot_complete": true,
     "independent_review": false,
     "semantic_pilot_scope": "CONTROLLER_GROUPED_REVIEW_NOT_EXHAUSTIVE_OR_INDEPENDENT",
@@ -411,26 +412,26 @@
         30
       ],
       "book_hint": "II",
-      "end": 61067,
-      "id": "29fa77614249d5fda8ff40e5811d7faf73f36b1f5c9dc8722b1a8f535f6ca515",
-      "lines": 10183,
+      "end": 71264,
+      "id": "99752b7d305bff49a659b72f6caa82fde87e0bb782d4a108f54d079c5b1eba7b",
+      "lines": 10197,
       "order_scope": "SOURCE_ORDER_NOT_EVENT_TIME",
-      "previous_macro": "55414ed6f8499255d0370289adbe11db1114461d04046302dcaec0e273edfe42",
+      "previous_macro": "29fa77614249d5fda8ff40e5811d7faf73f36b1f5c9dc8722b1a8f535f6ca515",
       "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
-      "start": 50885,
+      "start": 61068,
       "status": "PENDING",
-      "unit_seal": "21cc61d6f9eccfe8f45639a47a4c6f58730b1206ce00fa7a57cf046ce7f8fec7",
+      "unit_seal": "313dc1e18416b487124632c9775b72148ce0974f69de2f1772973dcebd87c7eb",
       "units": 40
     },
     "open_boundary": {
       "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
-      "after_line": 50884,
-      "next_line": 50885,
-      "day": 114,
-      "chapter": 6,
-      "reason": "Academy hydraulic bench scene continues; no ending inferred."
+      "after_line": 61067,
+      "next_line": 61068,
+      "day": 129,
+      "chapter": 10,
+      "reason": "Elyan hostage and Lucas decision in progress; system notification unread; no ending inferred."
     },
-    "recovery_cursor": 50885,
+    "recovery_cursor": 61068,
     "native_validated_through": 11227,
     "recovery_policy": {
       "mode": "RECOVER_FIRST_REVIEW_AT_CURRENT_DAY",
@@ -505,6 +506,20 @@
         "day_start": 90,
         "day_end": 114,
         "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
+      },
+      {
+        "macro_id": "29fa77614249d5fda8ff40e5811d7faf73f36b1f5c9dc8722b1a8f535f6ca515",
+        "path": "audit/omega008-c/bulk-semantic-macro-0007.json",
+        "sha256_utf8": "d096473cd1d13dc9b8291640b3b137282d0b5aaf0a8254f4185a9a6fa8ac313e",
+        "range": [
+          50885,
+          61067
+        ],
+        "records": 95,
+        "sections": 9,
+        "day_start": 114,
+        "day_end": 129,
+        "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
       }
     ],
     "recovered_macro_ids": [
@@ -513,9 +528,10 @@
       "54ce428c4d8d4b2ea51529da9382214c0aba5a2ef79f2fb7cd13009ff19471ce",
       "32292340061ec3ff301afa88dd0d3485c7cbb4fd06371e083c30769f1994a233",
       "b28e40324f20345140f37e1b2791929ee153895c02e09f74cdb6e38f3a792411",
-      "55414ed6f8499255d0370289adbe11db1114461d04046302dcaec0e273edfe42"
+      "55414ed6f8499255d0370289adbe11db1114461d04046302dcaec0e273edfe42",
+      "29fa77614249d5fda8ff40e5811d7faf73f36b1f5c9dc8722b1a8f535f6ca515"
     ],
-    "total_candidates_recovered": 575,
+    "total_candidates_recovered": 670,
     "book_I_intake": {
       "range": [
         1,
