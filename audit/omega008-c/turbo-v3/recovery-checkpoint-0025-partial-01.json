@@ -1,0 +1,47 @@
+{
+  "schema": "OMEGA_TURBO_V3_PARTIAL_RECOVERY_CHECKPOINT_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "archive_head": {
+    "day": 579,
+    "sequence": 50,
+    "blob": "9b4e09682fc3148511d59e73ec56fdcda4e396e5",
+    "pending": "LVI-C09-PII-D580-AUTHOR-SOURCE"
+  },
+  "previous": {
+    "path": "audit/omega008-c/turbo-v3/recovery-checkpoint-0024.json",
+    "git_blob": "8b1c87bbef8bc5031c78113ec72b9a48b5b6a767",
+    "commit": "eeba4a979360a605d814abc2ce877b27b99738f7"
+  },
+  "receipt": {
+    "path": "audit/omega008-c/turbo-v3/partial-macro-0025-01.json",
+    "git_blob": "b58cf20bb7b245ad10a5e9840b5c3a9746f330aa",
+    "sha256": "f87b677455c1ef9a56d1260336ff9d808f1cbe13ddf63c7525a23abf313737c0",
+    "commit": "d9b9348d1874ada523b7adcc945e3fa91de2495f"
+  },
+  "macro": 25,
+  "macro_complete": false,
+  "macro_range": [
+    227182,
+    237425
+  ],
+  "recovered_range": [
+    227182,
+    230448
+  ],
+  "next_line": 230449,
+  "day": 254,
+  "chapter": 26,
+  "completed_macros_including_staging": 24,
+  "candidates_completed_macros": 1778,
+  "partial_candidates": 30,
+  "total_including_partial": 1808,
+  "official_cursor": 206662,
+  "official_macros": 22,
+  "official_checkpoint_changed": false,
+  "canon_changed": false,
+  "gate": "HOLD_OFFICIAL_CHECKPOINT_PENDING_INDEPENDENT_SEMANTIC_HOMOLOGATION_AND_NATIVE_REGRESSION",
+  "status": "PARTIAL_RECOVERY_CHECKPOINT",
+  "semantic_certification": false,
+  "independent_review": false
+}
