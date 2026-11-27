@@ -3,10 +3,10 @@ import argparse,json
 from pathlib import Path
 from .omega_hybrid_receipt import ROOT, ARCHIVE, read
 from .omega_turbo_recovery import SourceCache, validate_receipt, require
-from .omega_book_iv_macro30 import verify_close
+from .omega_book_iv_macro30 import verify_close as verify_macro30_close
 def verify_start(root,archive):
     root=Path(root);archive=Path(archive)
-    prior=verify_close(root,archive)
+    prior=verify_macro30_close(root,archive)
     cp0=read(root,ROOT+"recovery-checkpoint-0030-validated.json","9965a1ce58bf6bcc24411c82e83e91927022b515")
     require(prior["macro_complete"] and cp0["native_validation"]=="PASS" and cp0["next_line"]==279002,"previous gate")
     cp=read(root,ROOT+"recovery-checkpoint-0031-partial-01.json")
