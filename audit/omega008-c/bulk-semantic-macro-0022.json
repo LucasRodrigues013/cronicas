@@ -1,0 +1,4017 @@
+{
+  "schema": "worldroot-omega008-c-chronological-recovery-v1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "macro_id": "5a46669d5d3fd0516aebb491b5979ddc5aa3e72b033a2994f962e7a78ab6037c",
+  "previous_macro_id": "24d8ff8c2e2192a43463c455cb4f61904a664470de81a6967c0ecdc611624aa3",
+  "previous_receipt": {
+    "path": "audit/omega008-c/bulk-semantic-macro-0021.json",
+    "sha256_utf8": "df2606e567139e260b57343fabeb4cd85fa735a9b23626e2b3893a0a747835b9"
+  },
+  "base_checkpoint_sha256": "923c27195bdd07bec065998dff297d6a6400d2871f44665c41a4c32786196ade",
+  "range": [
+    196618,
+    206661
+  ],
+  "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+  "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+  "source_blob_parts": [
+    "0e9c025f5d9167321d2dc9a512b655a438d197d8"
+  ],
+  "logical_line_offset": 196030,
+  "records": [
+    {
+      "id": "O8C-B22-001",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 18,
+      "type": "exploration",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        16,
+        17,
+        19,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "navel-ardon",
+        "yra-beldon",
+        "selda-moran",
+        "tilo"
+      ],
+      "summary": "Doca Redes Velhas: jurisdição Ressaca ainda precisa verificação; Tilo, menino encaracolado, relata muitas velas vistas por vigia. Nável identifica formação não comercial comum, Yra bandeiras desconhecidas; Selda comunica autoridades. Hostilidade inicialmente desconhecida.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 196618,
+        "line_end": 196728,
+        "role": "Response",
+        "span_sha256_utf8": "0dc7c15c9ba586c9c7c55f8705c4ecfab5a0ef2b5c47538e2693b675e0eb3ccf"
+      }
+    },
+    {
+      "id": "O8C-B22-002",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 18,
+      "type": "relationship",
+      "axes": [
+        1,
+        3,
+        5,
+        7,
+        8,
+        9,
+        10,
+        16,
+        25,
+        30
+      ],
+      "entities": [
+        "tilo",
+        "lucas",
+        "miren",
+        "lira",
+        "navel-ardon"
+      ],
+      "summary": "Tilo conhece arco dourado por relato da mãe, abraça Lucas e sugere criar quando alguém precisar. Miren e Lira observam carinho por crianças; reconhecimento Ressaca suspenso por chegada naval.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 196729,
+        "line_end": 196834,
+        "role": "Response",
+        "span_sha256_utf8": "daa4ef12f1d1f43a49b9fde0d1433aea1ad50e88969f54dcb11b6dc445bad573"
+      }
+    },
+    {
+      "id": "O8C-B22-003",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 18,
+      "type": "system",
+      "axes": [
+        1,
+        11,
+        12,
+        23,
+        25,
+        26,
+        28,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "sistema"
+      ],
+      "summary": "Sistema distingue formação observada de hostilidade não confirmada; não sabe intenções antecipadamente, brinca com baleias e Brannik e indefere pedido de parar piadas.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 196835,
+        "line_end": 196866,
+        "role": "Response",
+        "span_sha256_utf8": "20b0a9aa926d873ef7517b2a1a6fa7914fa9074c41a29cf07e8612b29a3f52ac"
+      }
+    },
+    {
+      "id": "O8C-B22-004",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 18,
+      "type": "conflict",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        11,
+        16,
+        19,
+        20,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "draevor-vhal",
+        "dasha-renn",
+        "selda-moran",
+        "adelia-vern",
+        "lira"
+      ],
+      "summary": "13h18 Draevor Vhal anuncia-se por projeção marítima de névoa, reivindica proteção/autoridade portuária sem soberania comprovada, exige entrega coercitiva de Lira e ameaça até próximo sinal. Selda contesta legitimidade, Adélia conhece reputação.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 196867,
+        "line_end": 197008,
+        "role": "Response",
+        "span_sha256_utf8": "a2edf8b04a0a696bfb852fc7c41410517c3db5ff4e55bc27e83a59ddf409849f"
+      }
+    },
+    {
+      "id": "O8C-B22-005",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 18,
+      "type": "relationship",
+      "axes": [
+        1,
+        3,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        19,
+        23,
+        25,
+        26,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "lira",
+        "sistema"
+      ],
+      "summary": "Lucas reage com calma e raiva, assegura que Lira não pertence a ninguém, abraça-a com Miren e oferece ajuda sem negar agência; responsabilidade da agressão é de Draevor. Sistema indica reservas ainda abaixo de repouso, indignação não gera energia.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 197009,
+        "line_end": 197222,
+        "role": "Response",
+        "span_sha256_utf8": "cc8e66f6597fdaa6d2ed37f0cd8ffa899607925a13147b75ae272af32ff920b1"
+      }
+    },
+    {
+      "id": "O8C-B22-006",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 18,
+      "type": "institution",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        15,
+        16,
+        19,
+        23,
+        25,
+        27
+      ],
+      "entities": [
+        "revan-tor",
+        "selda-moran",
+        "navel-ardon",
+        "yra-beldon",
+        "dasha-renn",
+        "oren-falst",
+        "lucas"
+      ],
+      "summary": "14h02 Torre Administrativa: comandante Révan Tor coordena defesa portuária sob sua autoridade; equipes municipais mantêm comando, Lucas oferece reforços e apoio, Nável/Yra navegação, Dasha sinais, Oren estrutura, Selda abrigos. Liderança sem usurpação.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 197223,
+        "line_end": 197376,
+        "role": "Response",
+        "span_sha256_utf8": "b774289f46e81bad8dbd408369e857dc0d4fcc83ec9a4d2bc2a5a8be48cf5c01"
+      }
+    },
+    {
+      "id": "O8C-B22-007",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 18,
+      "type": "technology",
+      "axes": [
+        1,
+        3,
+        7,
+        11,
+        12,
+        14,
+        15,
+        16,
+        17,
+        19,
+        25,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "oren-falst",
+        "revan-tor",
+        "miren"
+      ],
+      "summary": "Identificação do Bastião da Gaivota Negra, fortificação desativada com torre danificada e fundações a verificar; ideia de defesa costeira/observação e controle humano, sem arma letal autônoma. Ainda sem autorização de transformação nem funcionamento.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 197377,
+        "line_end": 197504,
+        "role": "Response",
+        "span_sha256_utf8": "e70a7085ecfdcbc3310f180658f438c957300f9ebfb282e9e0d475e00636dfb9"
+      }
+    },
+    {
+      "id": "O8C-B22-008",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 18,
+      "type": "combat",
+      "axes": [
+        1,
+        3,
+        7,
+        11,
+        16,
+        19,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "draevor-vhal",
+        "nysara-velt",
+        "revan-tor",
+        "selda-moran",
+        "dasha-renn",
+        "sistema"
+      ],
+      "summary": "15h17 ofensiva hostil confirmada contra plataforma costeira; Nysara discorda de risco civil. Alerta cívico dos Arcos ativado, artilharia arcana de longo alcance observada, alcance/cadência/reservas desconhecidos; novo impacto na Galeria dos Pescadores.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 197505,
+        "line_end": 197688,
+        "role": "Response",
+        "span_sha256_utf8": "6be9cb718c53bdec2ff690a9cbde19b7e8dbfdecf3739ac9ee7c4b2534c1c4e4"
+      }
+    },
+    {
+      "id": "O8C-B22-009",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 18,
+      "type": "rescue",
+      "axes": [
+        1,
+        3,
+        7,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        24,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "selda-moran"
+      ],
+      "summary": "15h24 Galeria dos Pescadores: cobertura histórica, mosaico e bancas parcialmente destruídos. Lucas chega por vias terrestres com armadura viva, Miren identifica risco secundário e profissionais orientam escoramento modular finito; não voo/teletransporte.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 197689,
+        "line_end": 197836,
+        "role": "Response",
+        "span_sha256_utf8": "48da0358e6a99246f320d759b4422e1f5db67ca6526efd8bd5cd070f15eb4399"
+      }
+    },
+    {
+      "id": "O8C-B22-010",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 18,
+      "type": "rescue",
+      "axes": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        10,
+        17,
+        18,
+        24,
+        25,
+        30
+      ],
+      "entities": [
+        "nila",
+        "lucas",
+        "miren"
+      ],
+      "summary": "Nila, menina com boneca e cabelos cobertos de poeira, retirada com socorristas e reencontra mãe; segunda criança resgatada, feridos atendidos e identificação verificada. Lucas recorda desejo de filha. Armazéns atingidos, depósito de cordas em fogo; danos não anulados.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 197837,
+        "line_end": 197946,
+        "role": "Response",
+        "span_sha256_utf8": "8f4324a92b3894fad63e745eec3ccceff30deb2d8c2a2fb2bb6e6e3fed404f94"
+      }
+    },
+    {
+      "id": "O8C-B22-011",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 18,
+      "type": "character",
+      "axes": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        10,
+        18,
+        19,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "lira",
+        "celle-varin",
+        "miren",
+        "adelia-vern",
+        "selda-moran"
+      ],
+      "summary": "16h09 Lira auxilia registro de abrigos e encaminhamento de vítimas apesar de medo; propõe usar conhecimento de códigos marítimos para contestar reivindicações, com Adélia/Selda. Não responsável pela agressão.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 197947,
+        "line_end": 198090,
+        "role": "Response",
+        "span_sha256_utf8": "902cf62a172147758b3279010b51f68e70b1a2a88ea1fdc917943ce73133fe0e"
+      }
+    },
+    {
+      "id": "O8C-B22-012",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 18,
+      "type": "relationship",
+      "axes": [
+        1,
+        3,
+        7,
+        8,
+        9,
+        10,
+        25,
+        30
+      ],
+      "entities": [
+        "lira",
+        "miren",
+        "lucas"
+      ],
+      "summary": "Miren acolhe Lira; jovem relata pai ocupado por responsabilidades e valoriza cuidado cotidiano de Lucas. Afeto quase paternal, sem substituir família. Ambas seguem orientação de abrigo diante de impacto próximo.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 198091,
+        "line_end": 198220,
+        "role": "Response",
+        "span_sha256_utf8": "51659631270c40601cc9f8c67611b20192e76ed83c5a14b2e1cc17dfc1583ce3"
+      }
+    },
+    {
+      "id": "O8C-B22-013",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 18,
+      "type": "reader-perspectives",
+      "axes": [
+        1,
+        3,
+        4,
+        7,
+        11,
+        16,
+        19,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "draevor-vhal",
+        "nysara-velt"
+      ],
+      "summary": "16h32 Nysara alerta instabilidade das correntes e riscos à própria frota, Draevor insiste descarga coercitiva; magia marítima produz onda elevada artificial, não oceano ilimitado. Informação de bastidores não injetada nos personagens.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 198221,
+        "line_end": 198366,
+        "role": "Response",
+        "span_sha256_utf8": "1840b0bfdf87c8d0935f62107e1f95196c78141351df7f22b8ac980cf919ff47"
+      }
+    },
+    {
+      "id": "O8C-B22-014",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 18,
+      "type": "power",
+      "axes": [
+        1,
+        3,
+        7,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        24,
+        25,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "dasha-renn",
+        "oren-falst",
+        "selda-moran",
+        "sistema"
+      ],
+      "summary": "Defesa hidráulica cooperativa: reforços temporários em apoios conhecidos e passagens de alívio, contramagia/orientação local, evacuação. Onda parcialmente desviada, Porto Antigo e armazéns alagados, ponte de madeira arrancada, reservas reduzidas; Sistema reconhece vidas protegidas e recebe agradecimento.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 198367,
+        "line_end": 198610,
+        "role": "Response",
+        "span_sha256_utf8": "ca7b156a771abad32c1b2aaf0fff36adefae501f1676dff4c55d9b825ecf15c6"
+      }
+    },
+    {
+      "id": "O8C-B22-015",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 18,
+      "type": "society",
+      "axes": [
+        1,
+        3,
+        5,
+        7,
+        8,
+        9,
+        10,
+        14,
+        18,
+        19,
+        25,
+        30
+      ],
+      "entities": [
+        "tilo",
+        "lucas",
+        "miren"
+      ],
+      "summary": "18h07 Tilo reencontrado com pais presentes na região, brinquedo com mastro/vela danificados; Lucas repara mastro com pouco material, trabalhadora conserta vela. Moradores distribuem pão, reaproveitam madeira e atendem feridos, sinais cívicos ativos.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 198615,
+        "line_end": 198782,
+        "role": "Response",
+        "span_sha256_utf8": "04ae9a38baf2f8a39b08c2c1a665bd77cbbbf2ff22995e828b84d8641c2fcb5c"
+      }
+    },
+    {
+      "id": "O8C-B22-016",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 18,
+      "type": "institution",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        11,
+        12,
+        14,
+        15,
+        16,
+        17,
+        19,
+        20,
+        23,
+        25,
+        27
+      ],
+      "entities": [
+        "revan-tor",
+        "oren-falst",
+        "dasha-renn",
+        "selda-moran",
+        "lucas",
+        "miren"
+      ],
+      "summary": "19h02 coordenação relata danos e famílias deslocadas, feridos, nenhuma morte confirmada apenas nos setores verificados. Révan autoriza estudo emergencial do Bastião público; armamento condicionado a avaliação, comando e segurança. Não soberania.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 198783,
+        "line_end": 199014,
+        "role": "Response",
+        "span_sha256_utf8": "2f7c6ac4cd855ecc6b3ab62d50d3ee871fde4e869e198cacf62f5833eeb773d6"
+      }
+    },
+    {
+      "id": "O8C-B22-017",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 18,
+      "type": "system",
+      "axes": [
+        1,
+        7,
+        11,
+        12,
+        14,
+        15,
+        25,
+        28,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "sistema"
+      ],
+      "summary": "Projeto Aurora — Defesa de Calderva / Bastião Gaivota Negra. Sistema registra aplicabilidade Manifestação Declarativa I, Encadeamento Matricial I e materiais conhecidos; exige energia, operadores, comunicações e desligamento. Armamento ainda não demonstrado; lema Nenhum fica para trás.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 199015,
+        "line_end": 199100,
+        "role": "Response",
+        "span_sha256_utf8": "4bb4ed83ba8e9a7a935021d7e9e6ba472f315de44ee52ef3588a2c96afa0ebf3"
+      }
+    },
+    {
+      "id": "O8C-B22-018",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 18,
+      "type": "reader-perspectives",
+      "axes": [
+        1,
+        3,
+        4,
+        7,
+        19,
+        20,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "draevor-vhal",
+        "nysara-velt",
+        "lira"
+      ],
+      "summary": "20h16 Draevor decide recuperar Lira clandestinamente enquanto Lucas ocupado; Nysara alerta consequências familiares/diplomáticas, um capitão recusa participar. Frota começa a dividir-se; não sequestro já concluído.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 199101,
+        "line_end": 199226,
+        "role": "Response",
+        "span_sha256_utf8": "3cdb237c9c762206ce2ca4f705e4c7d4cfd94680e58549e6b241fc5b6adbbde8"
+      }
+    },
+    {
+      "id": "O8C-B22-019",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 18,
+      "type": "relationship",
+      "axes": [
+        1,
+        3,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        18,
+        25,
+        30
+      ],
+      "entities": [
+        "lira",
+        "lucas",
+        "miren",
+        "celle-varin",
+        "sistema"
+      ],
+      "summary": "20h42 refeição Casa da Maré, Lucas cansado pergunta se Lira comeu, ela o abraça, família afetiva sem contrato. Lira retém decisão de utilizar Elo; reciprocidade sobre medo. Sistema confirma confiança sem submissão e recebe agradecimento.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 199227,
+        "line_end": 199576,
+        "role": "Response",
+        "span_sha256_utf8": "8a2411ae0523a62115c1c45f6174cd68f7b85e810ce7c8bac615b319702978f0"
+      }
+    },
+    {
+      "id": "O8C-B22-020",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 18,
+      "type": "conflict",
+      "axes": [
+        1,
+        3,
+        7,
+        8,
+        9,
+        10,
+        15,
+        16,
+        19,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "draevor-vhal",
+        "lucas",
+        "miren",
+        "lira"
+      ],
+      "summary": "21h18 terceiro ultimato: exige Lira e saída de Lucas, ameaça estruturas dos Nove Arcos. Lucas escolhe defesa com engenharia e equipes, sem resposta indiscriminada. Torre ainda não construída, sem munição infinita.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 199577,
+        "line_end": 199762,
+        "role": "Response",
+        "span_sha256_utf8": "bb1cc6790ecb624ba1763e8f7de4f364783a12c3921745eabf21a3d8e50aa11c"
+      }
+    },
+    {
+      "id": "O8C-B22-021",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 18,
+      "type": "closure",
+      "axes": [
+        1,
+        3,
+        9,
+        11,
+        12,
+        16,
+        17,
+        19,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "lira",
+        "draevor-vhal",
+        "nysara-velt"
+      ],
+      "summary": "D217 21h34: frota 11 combate e 3 auxiliares, guerra iniciada, danos reais, vítimas sem morte confirmada nos setores avaliados; Lira livre sob proteção, estudo Bastião autorizado. Três Arcos autônoma, 300 vivos, Coração isolado, Leviatã projeto. Capítulo 18 fechado.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 199763,
+        "line_end": 199851,
+        "role": "Response",
+        "span_sha256_utf8": "6140c6c1771d684b1f428341de40edc83932c5905925140a01185e0fda1ef2f2"
+      }
+    },
+    {
+      "id": "O8C-B22-022",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "editorial",
+      "axes": [
+        1,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        19,
+        23,
+        24,
+        25,
+        26,
+        28,
+        29,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "lira"
+      ],
+      "summary": "Autor escolhe 4 Ira Serena do Criador, continuidade D217 sem salto, defesa e sequestro ao longo 19/20, liderança local, humor e ação, feridos sem mortes de personagens, decisões definitivas reservadas, três escolhas + quarta especial.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 199852,
+        "line_end": 199856,
+        "role": "Prompt",
+        "span_sha256_utf8": "75559ae3f2f0f7d48e4dad78f15463094d3da9cfbb4b4bc571ae55b8cda25aa1"
+      }
+    },
+    {
+      "id": "O8C-B22-023",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "relationship",
+      "axes": [
+        1,
+        3,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        25,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren"
+      ],
+      "summary": "21h34 Sétimo Arco: casal admite medo, conversa sobre filhos futuros e compromisso de preservar vida/segurança da obra; Miren exige interromper se condições inseguras, Lucas promete cooperação.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 199872,
+        "line_end": 200021,
+        "role": "Response",
+        "span_sha256_utf8": "b197a50b87c98dacc2a962997016f61a02979bcff0cac4cd499c8f53a162a2b8"
+      }
+    },
+    {
+      "id": "O8C-B22-024",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "system",
+      "axes": [
+        1,
+        7,
+        11,
+        12,
+        14,
+        15,
+        25,
+        28,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "sistema",
+        "oren-falst"
+      ],
+      "summary": "Sistema confirma conceito não construído, reservas abaixo de repouso, estoques limitados e humor sobre projetos monumentais classificados pequenos.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 200022,
+        "line_end": 200073,
+        "role": "Response",
+        "span_sha256_utf8": "25e47624348796a3500af3923b975cdf4322708e4554eea248ba470cf4966672"
+      }
+    },
+    {
+      "id": "O8C-B22-025",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "geography",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        15,
+        16,
+        17,
+        19,
+        21,
+        25,
+        27
+      ],
+      "entities": [
+        "oren-falst",
+        "revan-tor",
+        "dasha-renn",
+        "miren",
+        "lucas"
+      ],
+      "summary": "21h52 Bastião circular em promontório, séculos de história, três plataformas e torre negra parcialmente destruída. Norte comprometida, central instável, condutores isolados, sul promissora. Sem fonte mágica conveniente. Inspeção de ruína, não dungeon explorada. Comando humano e parada independente acordados.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 200074,
+        "line_end": 200259,
+        "role": "Response",
+        "span_sha256_utf8": "16ac04b0c0b488fb18d8430bab7fd137cf6577e0a142cb0416c0808553fca464"
+      }
+    },
+    {
+      "id": "O8C-B22-026",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "technology",
+      "axes": [
+        1,
+        3,
+        7,
+        11,
+        12,
+        14,
+        15,
+        17,
+        25,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "oren-falst",
+        "miren"
+      ],
+      "summary": "Plataforma sul recebe reforços limitados verificados; Gênese produz componentes detalhados com material preparado, equipe exige inspeção de detalhes não especificados conscientemente. Fortaleza não inteiramente restaurada.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 200260,
+        "line_end": 200335,
+        "role": "Response",
+        "span_sha256_utf8": "025c3fa29da2b0975a00c4d1ce32c86995d1f26101d9558dd25f44c8099c36a8"
+      }
+    },
+    {
+      "id": "O8C-B22-027",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "character",
+      "axes": [
+        1,
+        3,
+        4,
+        5,
+        7,
+        8,
+        11,
+        12,
+        15,
+        19,
+        25
+      ],
+      "entities": [
+        "oren-falst",
+        "dasha-renn",
+        "revan-tor",
+        "jared-vossan",
+        "kelra-dom"
+      ],
+      "summary": "22h23 Oren relata ter sido casado 37 anos; Dasha usa cristais de emergência finitos, reserva para comunicação/desativação. Jared Vossan operador veterano, Kelra Dom identificação naval; não presumem hostilidade por bandeira.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 200336,
+        "line_end": 200453,
+        "role": "Response",
+        "span_sha256_utf8": "e25cdf7b25cfd49ff421acbff16021f477cf758515d6746eb1ebe176781800b0"
+      }
+    },
+    {
+      "id": "O8C-B22-028",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "technology",
+      "axes": [
+        1,
+        3,
+        7,
+        11,
+        12,
+        13,
+        14,
+        15,
+        19,
+        25,
+        27,
+        28
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "dasha-renn",
+        "kelra-dom",
+        "revan-tor",
+        "sistema"
+      ],
+      "summary": "Mesa de projeção Aurora costeira parcial, atualizada por observações, distingue estimativas e sinais perdidos; sem mapa onisciente. Integração matricial, operação manual, energia separada e manutenção local. Um módulo inicialmente.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 200456,
+        "line_end": 200567,
+        "role": "Response",
+        "span_sha256_utf8": "0d33c484dbc8030415f3cfc4caf8d30d2db6bb7ef0be715dd078a5087b477fef"
+      }
+    },
+    {
+      "id": "O8C-B22-029",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "technology",
+      "axes": [
+        1,
+        3,
+        7,
+        11,
+        12,
+        14,
+        15,
+        19,
+        24,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "oren-falst",
+        "dasha-renn",
+        "revan-tor",
+        "jared-vossan",
+        "kelra-dom",
+        "miren"
+      ],
+      "summary": "Primeira montagem híbrida de artilharia arcana Aurora, sob operadores e autorização Révan, parada independente da projeção, recursos finitos. Ainda não operacional antes dos ensaios; conquista compartilhada.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 200568,
+        "line_end": 200669,
+        "role": "Response",
+        "span_sha256_utf8": "be32f30d8f8eebe3792bdb2d15754a556d3ee91f1d47ab24b049d9a103c509a0"
+      }
+    },
+    {
+      "id": "O8C-B22-030",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "reader-perspectives",
+      "axes": [
+        1,
+        3,
+        4,
+        5,
+        7,
+        19,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "draevor-vhal",
+        "nysara-velt",
+        "orvan-dell"
+      ],
+      "summary": "22h51 Nysara recusa magia de marés contra fundações dos Arcos; Draevor observa atividade no Bastião, considera alvo. Orvan Dell, capitão, questiona continuidade das ordens; nenhum desertou formalmente.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 200670,
+        "line_end": 200817,
+        "role": "Response",
+        "span_sha256_utf8": "797ef317027e0f5f0a7c8496f0a08fdb133cccd506a0864262361d6feafd473d"
+      }
+    },
+    {
+      "id": "O8C-B22-031",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "reader-perspectives",
+      "axes": [
+        1,
+        3,
+        4,
+        5,
+        7,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "mathren-kell",
+        "draevor-vhal",
+        "lira",
+        "miren"
+      ],
+      "summary": "Mathren Kell lidera grupo clandestino de seis figuras, missão de levar Lira viva; conhece risco representado por Miren e não sabe do Elo. Não atribuir este conhecimento aos protagonistas.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 200818,
+        "line_end": 200865,
+        "role": "Response",
+        "span_sha256_utf8": "7a303ac6b1b790ffa22e7c41ac50a3548e2a22bb9c5df01b2e858acff685f838"
+      }
+    },
+    {
+      "id": "O8C-B22-032",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "technology",
+      "axes": [
+        1,
+        3,
+        7,
+        11,
+        12,
+        14,
+        15,
+        25,
+        27,
+        28
+      ],
+      "entities": [
+        "jared-vossan",
+        "kelra-dom",
+        "oren-falst",
+        "revan-tor",
+        "miren",
+        "dasha-renn",
+        "lucas",
+        "sistema"
+      ],
+      "summary": "23h12 primeiro ensaio sem descarga interrompido corretamente por proteção, diferença entre componente e condições de energia. Equipe troca por conjunto conhecido; falha segura preservada, Sistema reconhece resultado.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 200866,
+        "line_end": 200991,
+        "role": "Response",
+        "span_sha256_utf8": "58380f84952d426c99f0d4f63623b98dd048fa899f5ab35b7226eb19b77c1d8e"
+      }
+    },
+    {
+      "id": "O8C-B22-033",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "technology",
+      "axes": [
+        1,
+        3,
+        7,
+        11,
+        12,
+        14,
+        15,
+        24,
+        25,
+        27,
+        28
+      ],
+      "entities": [
+        "jared-vossan",
+        "kelra-dom",
+        "revan-tor",
+        "dasha-renn",
+        "oren-falst",
+        "lucas",
+        "miren",
+        "sistema"
+      ],
+      "summary": "Segundo ensaio corrigido e descarga experimental em área isolada aprovados. Marco Módulo Aurora I: emissão direcional comprovada em teste, operação humana e parada independente demonstradas; energia finita, continuidade não demonstrada. Frota se reorganiza.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 200992,
+        "line_end": 201187,
+        "role": "Response",
+        "span_sha256_utf8": "aaa9a62326aaf10408d2cf34a9318e3769084927791ebd17432d8a4de4cf6455"
+      }
+    },
+    {
+      "id": "O8C-B22-034",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "combat",
+      "axes": [
+        1,
+        3,
+        7,
+        8,
+        11,
+        12,
+        14,
+        15,
+        19,
+        24,
+        25,
+        30
+      ],
+      "entities": [
+        "revan-tor",
+        "kelra-dom",
+        "jared-vossan",
+        "lucas",
+        "miren",
+        "oren-falst"
+      ],
+      "summary": "23h27 primeira resposta defensiva real autorizada por Révan, Jared opera, Lucas apoia. Frase autoral realizada: Se querem brincar, vamos ver quem pega mais pesado. Descarga hostil interrompida, casco inimigo flutua e recua para avaliação; tripulação sem condição verificada.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 201188,
+        "line_end": 201387,
+        "role": "Response",
+        "span_sha256_utf8": "3755fc611d2812d4d46dcd89e7c097eeccb8859fcf45c507c249d6f4d8321ba5"
+      }
+    },
+    {
+      "id": "O8C-B22-035",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "conflict",
+      "axes": [
+        1,
+        3,
+        7,
+        12,
+        19,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "revan-tor"
+      ],
+      "summary": "Vitória parcial, não fim da guerra; módulo precisa reavaliação e recursos, frota reorganiza e alerta de movimento suspeito perto dos abrigos.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 201388,
+        "line_end": 201449,
+        "role": "Response",
+        "span_sha256_utf8": "9c9472d7585c7a691bfdca8f867da8912d0e8aca398d90dc45afefc734da80a2"
+      }
+    },
+    {
+      "id": "O8C-B22-036",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "relationship",
+      "axes": [
+        1,
+        3,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        19,
+        23,
+        25,
+        27,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "dasha-renn",
+        "selda-moran",
+        "revan-tor"
+      ],
+      "summary": "23h38 ameaças simultâneas: documentos suspeitos de transferência e nova concentração do Trono de Sal. Miren escolhe ir com Dasha/agentes ao abrigo, Lucas permanece na defesa com Révan; confiança e beijo, delegar não abandonar.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 201450,
+        "line_end": 201653,
+        "role": "Response",
+        "span_sha256_utf8": "972635af51e35f9fb085358bad14ec040b3467e448134236792a586ed67b6e53"
+      }
+    },
+    {
+      "id": "O8C-B22-037",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "investigation",
+      "axes": [
+        1,
+        3,
+        4,
+        7,
+        11,
+        15,
+        19,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "selda-moran",
+        "mathren-kell",
+        "miren",
+        "dasha-renn",
+        "lira",
+        "celle-varin"
+      ],
+      "summary": "23h47 Selda detecta responsável incompatível em autorização médica; Miren e Dasha verificam marca arcana recente, indício não prova isolada. Mathren tenta sair, identificação exigida.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 201654,
+        "line_end": 201811,
+        "role": "Response",
+        "span_sha256_utf8": "29c5489f2d37b81f842f66ce2b88bddd448a13cf507a76eb5fea02a44f2800d6"
+      }
+    },
+    {
+      "id": "O8C-B22-038",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "combat",
+      "axes": [
+        1,
+        3,
+        7,
+        11,
+        12,
+        15,
+        19,
+        23,
+        24,
+        25
+      ],
+      "entities": [
+        "mathren-kell",
+        "selda-moran",
+        "miren",
+        "dasha-renn"
+      ],
+      "summary": "Encantamento de desorientação visual/sonora no abrigo; Miren e Dasha interrompem parte da ilusão com magia própria e referências locais, Guarda contém infiltrados. Sem imunidade universal.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 201812,
+        "line_end": 201903,
+        "role": "Response",
+        "span_sha256_utf8": "742b00b68fcb2a8356a30735a7fe2aad73c1cd2f98a87ebc6c9ba0e05bc8b2d3"
+      }
+    },
+    {
+      "id": "O8C-B22-039",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "combat",
+      "axes": [
+        1,
+        3,
+        7,
+        9,
+        10,
+        11,
+        12,
+        15,
+        19,
+        23,
+        24,
+        25,
+        27
+      ],
+      "entities": [
+        "mathren-kell",
+        "miren",
+        "dasha-renn",
+        "selda-moran",
+        "lira",
+        "celle-varin"
+      ],
+      "summary": "Outro grupo entra no abrigo com conhecimento prévio da disposição; origem do vazamento não confirmada. Miren protege Lira/Celle por barreira prateada, Dasha apoia, agentes avançam. Lira resiste e protege Celle.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 201904,
+        "line_end": 202025,
+        "role": "Response",
+        "span_sha256_utf8": "cc5b88786378ddbb3e34b7f1fed77ddbce7957367a4c9f88e4eabcec75cda2cf"
+      }
+    },
+    {
+      "id": "O8C-B22-040",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "rescue",
+      "axes": [
+        1,
+        3,
+        7,
+        9,
+        10,
+        11,
+        12,
+        15,
+        17,
+        19,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "lira",
+        "miren",
+        "dasha-renn",
+        "selda-moran",
+        "mathren-kell"
+      ],
+      "summary": "Bombardeio danifica corredor com pacientes; Lira pede que Miren salve pessoas. Miren sustenta teto temporariamente por magia própria, não reconstrói pedra, Dasha e Guarda apoiam. Mathren captura Lira consciente e resistente, retirada por barco. Não falha por falta de agência de Miren.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 202026,
+        "line_end": 202247,
+        "role": "Response",
+        "span_sha256_utf8": "e3fd07559aebfbaaf519c50e008cdd0c29ca7a9526c39f378c41187faa3c06c4"
+      }
+    },
+    {
+      "id": "O8C-B22-041",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "consequence",
+      "axes": [
+        1,
+        3,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        19,
+        23,
+        24,
+        25,
+        27
+      ],
+      "entities": [
+        "miren",
+        "lira",
+        "dasha-renn",
+        "selda-moran"
+      ],
+      "summary": "Último paciente retirado antes de queda parcial do teto; Miren exausta com lesão leve no braço, agentes com ferimentos leves, dois invasores detidos. Elo ainda responde, possibilidade de busca, destino não confirmado.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 202248,
+        "line_end": 202339,
+        "role": "Response",
+        "span_sha256_utf8": "99ff41ae93bcb6edd3445622e4f7b425a4d1627b4d53eee7d94a1cb221c53242"
+      }
+    },
+    {
+      "id": "O8C-B22-042",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "combat",
+      "axes": [
+        1,
+        3,
+        7,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        19,
+        24,
+        25,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "revan-tor",
+        "oren-falst",
+        "kelra-dom",
+        "jared-vossan",
+        "sistema"
+      ],
+      "summary": "23h52 encosta/galeria manutenção atingidas, comunicação parcial interrompida, sustentação danificada, alimentação insuficiente para repetir disparo. Révan prioriza retirada e proteção, Sistema alerta energia finita.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 202340,
+        "line_end": 202489,
+        "role": "Response",
+        "span_sha256_utf8": "c84dce8b69d9de961bf62856c13463d8b96d05f444b2c7fc76fe4b11c6c3047e"
+      }
+    },
+    {
+      "id": "O8C-B22-043",
+      "day": 217,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "consequence",
+      "axes": [
+        1,
+        3,
+        7,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        17,
+        19,
+        24,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "revan-tor",
+        "oren-falst",
+        "miren",
+        "jared-vossan",
+        "kelra-dom"
+      ],
+      "summary": "Reforços nas passagens permitem retirada de operadores antes de impacto; torre lateral cai em área interditada. Lucas cai de joelho, consciente, reservas muito reduzidas; Aurora I indisponível, parada independente preservada. Miren informa captura de Lira.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 202490,
+        "line_end": 202687,
+        "role": "Response",
+        "span_sha256_utf8": "16d017bcf7a5b2711b85373544cb8bc77b8ad283cb47b48aea7fca03e7013e8e"
+      }
+    },
+    {
+      "id": "O8C-B22-044",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "system",
+      "axes": [
+        1,
+        3,
+        7,
+        9,
+        10,
+        11,
+        12,
+        23,
+        25,
+        26,
+        28
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "sistema"
+      ],
+      "summary": "00h06 D218 Lucas confirma Miren e Celle vivas, raiva intensa mas evita manifestação indiscriminada. Sistema alerta intenção, energia insuficiente e localização/navio não confirmados. Lucas escolhe precisão e cooperação.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 202688,
+        "line_end": 202811,
+        "role": "Response",
+        "span_sha256_utf8": "a2a1e889dc3bcb94b1c7ff243e3bae2680e7f0401fc8900f2c2cb37e2d5ba376"
+      }
+    },
+    {
+      "id": "O8C-B22-045",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "relationship",
+      "axes": [
+        1,
+        3,
+        7,
+        8,
+        9,
+        10,
+        12,
+        19,
+        25,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "oren-falst",
+        "revan-tor"
+      ],
+      "summary": "Elo fraco ainda detectável, Miren aceita atendimento; casal reafirma amor. Lucas retorna pelos caminhos seguros, Révan mantém defesa e Oren garante torre desligada até avaliação, abraço e pedido de buscar a menina.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 202812,
+        "line_end": 202947,
+        "role": "Response",
+        "span_sha256_utf8": "808a3d5a65f7ed41679ccbff10e910ecb8a2a2e68d6b91994aed293779941298"
+      }
+    },
+    {
+      "id": "O8C-B22-046",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "reader-perspectives",
+      "axes": [
+        1,
+        3,
+        4,
+        5,
+        7,
+        9,
+        10,
+        13,
+        16,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "lira",
+        "mathren-kell"
+      ],
+      "summary": "00h19 Lira em embarcação Mathren, escoriação e contenção arcana, consciente; mantém núcleo ativo por escolha, observa mundo e questiona autoridade. Trono de Sal identificado pelo leitor, não protagonistas.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 202948,
+        "line_end": 203127,
+        "role": "Response",
+        "span_sha256_utf8": "3d8a47229e59f415c1f4640625983ea5d2d0f3de866eb4bcf8728acee40caa9a"
+      }
+    },
+    {
+      "id": "O8C-B22-047",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "reader-perspectives",
+      "axes": [
+        1,
+        3,
+        4,
+        7,
+        9,
+        10,
+        13,
+        19,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "nysara-velt",
+        "lira",
+        "mathren-kell",
+        "draevor-vhal"
+      ],
+      "summary": "00h27 Nysara manda retirar contenções e providenciar água/atendimento; Lira recusa assinatura coercitiva, mantida em cabine trancada e vigiada, pede preservação de informações sobre desaparecidos. Draevor quer garantir concessões. Cativeiro permanece.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 203128,
+        "line_end": 203335,
+        "role": "Response",
+        "span_sha256_utf8": "0e49c570cb48f63084a9cd3961bca58f5dc55b096850104ca596c1224cd8ec75"
+      }
+    },
+    {
+      "id": "O8C-B22-048",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "relationship",
+      "axes": [
+        1,
+        3,
+        7,
+        8,
+        9,
+        10,
+        25,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "celle-varin",
+        "oren-falst"
+      ],
+      "summary": "00h41 Casa da Maré, ferimento braço Miren atendido; Lucas abraça sem culpá-la, reconhece que salvou pacientes e reafirma Nenhum fica para trás. Celle/Oren observam liderança por confiança.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 203336,
+        "line_end": 203459,
+        "role": "Response",
+        "span_sha256_utf8": "f9d1c4734a599687abad2bfcf0c2d5ca17da6b971025c6221acd9f22e6b06674"
+      }
+    },
+    {
+      "id": "O8C-B22-049",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "mission",
+      "axes": [
+        1,
+        3,
+        7,
+        11,
+        12,
+        13,
+        15,
+        16,
+        19,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "selda-moran",
+        "navel-ardon",
+        "yra-beldon",
+        "oren-falst"
+      ],
+      "summary": "Elo aponta aproximadamente águas exteriores, testemunhos de fuga convergem, navio exato desconhecido. Nável/Yra estudam maré/risco; Lucas cogita uso de embarcação hostil sem impor risco ao Falcão da Espuma e tripulação civil.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 203460,
+        "line_end": 203589,
+        "role": "Response",
+        "span_sha256_utf8": "7368d23c7ba54f21119f76d1c8f51119cc771c65d1181bee9894362739b214a6"
+      }
+    },
+    {
+      "id": "O8C-B22-050",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "system",
+      "axes": [
+        1,
+        3,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        19,
+        25,
+        28,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "sistema"
+      ],
+      "summary": "Sistema registra desaparecimento forçado, sinal intermitente, recursos reduzidos, ideia arriscada de resgate naval; diálogo solidário De nada. Traga-a de volta. Lucas preserva comando local e participação voluntária de Miren.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 203590,
+        "line_end": 203733,
+        "role": "Response",
+        "span_sha256_utf8": "5c16f4d4fc71fa34ee0ad9d5919bfd69eedaeddbece74fd9349eb060342b7ca9"
+      }
+    },
+    {
+      "id": "O8C-B22-051",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "reader-perspectives",
+      "axes": [
+        1,
+        3,
+        4,
+        7,
+        9,
+        10,
+        13,
+        19,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "nysara-velt",
+        "orvan-dell",
+        "lira",
+        "draevor-vhal"
+      ],
+      "summary": "00h58 Nysara/Orvan consideram alternativa para preservar tripulações sem rendição ou aliança imediata. Lira mantém núcleo, memoriza referências, deseja ver Leviatã; protagonistas ainda não têm navio nem destino confirmado.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 203734,
+        "line_end": 203869,
+        "role": "Response",
+        "span_sha256_utf8": "5ed45e501174c1d71684cd70971b95b135edabccd464188e168407a043694d8a"
+      }
+    },
+    {
+      "id": "O8C-B22-052",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 19,
+      "type": "closure",
+      "axes": [
+        1,
+        3,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        19,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "lira",
+        "draevor-vhal",
+        "nysara-velt",
+        "orvan-dell"
+      ],
+      "summary": "01h03 D218: Aurora I comprovado e danificado/indisponível, conhecimento registrado permanece; Lira viva no Trono de Sal apenas leitor sabe, Miren ferida atendida, suspeita de vazamento a apurar. Draevor ainda comanda, sem deserção formal, Ressaca/Taren pendentes, 300 vivos e Coração isolado. Capítulo 19 encerrado.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 203870,
+        "line_end": 203956,
+        "role": "Response",
+        "span_sha256_utf8": "ce26b49d289e183c9d0bee56851e673a76d5c2a9b302a69d33cb87f678174489"
+      }
+    },
+    {
+      "id": "O8C-B22-053",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 20,
+      "type": "editorial",
+      "axes": [
+        1,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        16,
+        19,
+        23,
+        24,
+        25,
+        26,
+        28,
+        29,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "lira"
+      ],
+      "summary": "Autor escolhe 4 Criador contra Trono de Sal, resgate decisivo e confronto, sem salto D218. Mantém autonomia da cidade, personagens, romance e afeto, custos, humor e promessas políticas reservadas; três opções + quarta especial. Não confundir planejamento com desfecho narrado.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 203957,
+        "line_end": 203961,
+        "role": "Prompt",
+        "span_sha256_utf8": "585ee2a29b3ad2a482adf0dd3e20aefadcf00e485a27eaa3d88b0dcecaad151c"
+      }
+    },
+    {
+      "id": "O8C-B22-054",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 20,
+      "type": "relationship",
+      "axes": [
+        1,
+        3,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        25,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "navel-ardon",
+        "yra-beldon",
+        "selda-moran",
+        "oren-falst",
+        "celle-varin"
+      ],
+      "summary": "01h03 reunião Casa da Maré; Lucas exausto, distraído, admite medo de não chegar a tempo e não ser pai de Lira; aceita água, ajuda e concentração. Circulação e retorno já conhecidos auxiliam recuperação lenta, não restauração instantânea.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 203985,
+        "line_end": 204188,
+        "role": "Response",
+        "span_sha256_utf8": "84073e68d3ceb9113c70f2881641cc9ee73d7d5781c29ed9fbb470b2e6024ed2"
+      }
+    },
+    {
+      "id": "O8C-B22-055",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 20,
+      "type": "mission",
+      "axes": [
+        1,
+        3,
+        7,
+        11,
+        12,
+        13,
+        15,
+        16,
+        19,
+        25,
+        27,
+        28,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "navel-ardon",
+        "yra-beldon",
+        "selda-moran",
+        "oren-falst",
+        "sistema"
+      ],
+      "summary": "Resgate público conjunto, defesa local mantida, piloto decide navegação, Elo não GPS, recursos comprovados, Oren fica em Calderva. Sistema elogia reunião de especialistas, não novo desbloqueio.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 204189,
+        "line_end": 204324,
+        "role": "Response",
+        "span_sha256_utf8": "4ba78e148b3a789a0c0a9f554e6331722e1bbb10f63bf345eefe7dea9ec57666"
+      }
+    },
+    {
+      "id": "O8C-B22-056",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 20,
+      "type": "mission",
+      "axes": [
+        1,
+        3,
+        7,
+        15,
+        16,
+        19,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "selda-moran",
+        "navel-ardon",
+        "yra-beldon",
+        "lucas"
+      ],
+      "summary": "Guarda informa escuna auxiliar hostil encalhada no Canal Pedras Baixas, marinheiros feridos pedem auxílio, propulsão falhou e participação clandestina suspeita. Possibilidade de uso condicionada à confirmação.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 204325,
+        "line_end": 204396,
+        "role": "Response",
+        "span_sha256_utf8": "cb57f6c12d4e2718adec97e6781050352640492aef60cd5115e8c66cc58d3e19"
+      }
+    },
+    {
+      "id": "O8C-B22-057",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 20,
+      "type": "character",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        9,
+        15,
+        16,
+        19,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "harek-vossen",
+        "corvo-das-brumas",
+        "selda-moran",
+        "lucas",
+        "miren"
+      ],
+      "summary": "01h26 Corvo das Brumas, casco escuro reforçado, duas velas, propulsão auxiliar inativa. Capitão Harek Vossen, faixa no braço, dois feridos; Guarda identifica e atende sem resistência. Harek afirma ter abandonado ofensiva contra civis e nega participação direta na captura; depoimento a verificar.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 204397,
+        "line_end": 204536,
+        "role": "Response",
+        "span_sha256_utf8": "714e5697e5c6e36bb4070abb6bbeca7e24749d037ebf60919707bf92a5ca5f9a"
+      }
+    },
+    {
+      "id": "O8C-B22-058",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 20,
+      "type": "institution",
+      "axes": [
+        1,
+        3,
+        7,
+        9,
+        15,
+        16,
+        19,
+        20,
+        23,
+        25,
+        27
+      ],
+      "entities": [
+        "harek-vossen",
+        "navel-ardon",
+        "yra-beldon",
+        "selda-moran",
+        "lucas"
+      ],
+      "summary": "Embarcação sob verificação formal, não posse pessoal de Lucas. Cooperação não extingue responsabilidade de Harek; tripulação voluntária, Nável navegação condicionada a liberação/inspeção. Elo segue fraco. Sem aquisição definitiva.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 204537,
+        "line_end": 204698,
+        "role": "Response",
+        "span_sha256_utf8": "e93c2583dc3ed5ef80499c861ab80ac7f72396eb06f0ef628d58a52d3ea4ffe8"
+      }
+    },
+    {
+      "id": "O8C-B22-059",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 20,
+      "type": "technology",
+      "axes": [
+        1,
+        3,
+        7,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        25,
+        27,
+        28
+      ],
+      "entities": [
+        "harek-vossen",
+        "lucas",
+        "miren",
+        "navel-ardon",
+        "yra-beldon",
+        "sistema"
+      ],
+      "summary": "01h51 reparação limitada da propulsão auxiliar, inspeção e peça conhecida de Gênese mais matriz simples Aurora, teste sem carga bem-sucedido, reservas finitas. Conhecimento naval indispensável; capacidade oceânica depende casco/mar/equipe.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 204699,
+        "line_end": 204882,
+        "role": "Response",
+        "span_sha256_utf8": "88b074e0fb3a0880c785c6a3fa7fc97c168f8d2ebdd3e42637e86f4fbdb14ae3"
+      }
+    },
+    {
+      "id": "O8C-B22-060",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 20,
+      "type": "institution",
+      "axes": [
+        1,
+        3,
+        7,
+        15,
+        16,
+        19,
+        23,
+        25,
+        27
+      ],
+      "entities": [
+        "selda-moran",
+        "harek-vossen",
+        "navel-ardon",
+        "yra-beldon"
+      ],
+      "summary": "Inspeção permite missão limitada e monitorada; autorização emergencial específica de busca/resgate em embarcação apreendida, não ataque irrestrito. Nável navega, Yra cartas, Harek apoio, três marinheiros voluntários e dois agentes; feridos ficam em Calderva.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 204883,
+        "line_end": 204942,
+        "role": "Response",
+        "span_sha256_utf8": "b4646dfb463ffa8b6a2bba7a93d06b196537ebe4293bf20159c4ac27bbe0d4a1"
+      }
+    },
+    {
+      "id": "O8C-B22-061",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 20,
+      "type": "relationship",
+      "axes": [
+        1,
+        3,
+        7,
+        8,
+        9,
+        10,
+        16,
+        18,
+        25,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "celle-varin",
+        "oren-falst",
+        "navel-ardon"
+      ],
+      "summary": "Celle entrega comida, Oren pede retorno com pessoas e não destruição do navio; abraço e humor. Corvo desencalhado e parte; casal reconhece vínculo familiar afetivo com Lira, Révan continua defesa.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 204943,
+        "line_end": 205098,
+        "role": "Response",
+        "span_sha256_utf8": "b7fc7948d968b3ee1dc310c35e1872b887fb89b4f45e48ed3fbfb76d1b36ea81"
+      }
+    },
+    {
+      "id": "O8C-B22-062",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 20,
+      "type": "exploration",
+      "axes": [
+        1,
+        3,
+        7,
+        13,
+        15,
+        16,
+        19,
+        23,
+        25,
+        27
+      ],
+      "entities": [
+        "corvo-das-brumas",
+        "harek-vossen",
+        "navel-ardon",
+        "yra-beldon",
+        "miren",
+        "lucas"
+      ],
+      "summary": "02h23 região exterior da frota: identificação da escuna e explicação verdadeira de avaria/feridos permitem aguardar entre auxiliares sem confronto, não livre acesso ao navio principal. Nável mantém comando de navegação.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 205099,
+        "line_end": 205232,
+        "role": "Response",
+        "span_sha256_utf8": "cbeefaaf299651bc5e56c3ebe8012a0853f094adf4db97df522dbd61c575b197"
+      }
+    },
+    {
+      "id": "O8C-B22-063",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 20,
+      "type": "artifact",
+      "axes": [
+        1,
+        3,
+        7,
+        8,
+        9,
+        11,
+        13,
+        15,
+        16,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "yra-beldon",
+        "harek-vossen",
+        "sistema"
+      ],
+      "summary": "Elo melhora com distância e múltiplas leituras, converge região do Trono de Sal sem identificar sala/pessoa com certeza. Lucas admira navio e deseja Leviatã maior, apenas plano. Sistema separa localização aproximada de autorização de ataque.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 205233,
+        "line_end": 205416,
+        "role": "Response",
+        "span_sha256_utf8": "4f2d4237d5f3203c4feecae4f2700707873cc310d2fa568f1c530c486d910e21"
+      }
+    },
+    {
+      "id": "O8C-B22-064",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 20,
+      "type": "conflict",
+      "axes": [
+        1,
+        3,
+        7,
+        15,
+        16,
+        19,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "harek-vossen",
+        "navel-ardon",
+        "yra-beldon",
+        "lucas",
+        "miren",
+        "vento-de-orvan"
+      ],
+      "summary": "Frota muda prontidão, sinais do Vento de Orvan solicitam suspensão ofensiva até revisão. Harek interpreta, surge possibilidade de capitães discordantes.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 205417,
+        "line_end": 205524,
+        "role": "Response",
+        "span_sha256_utf8": "dd7b9b08df571a3bef2e70ecadbacd635e725878ebf5f3c2ae28177f397dda9e"
+      }
+    },
+    {
+      "id": "O8C-B22-065",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 20,
+      "type": "reader-perspectives",
+      "axes": [
+        1,
+        3,
+        4,
+        7,
+        19,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "draevor-vhal",
+        "nysara-velt",
+        "orvan-dell"
+      ],
+      "summary": "02h39 Nysara recusa alimentar matriz instável para novo bombardeio, Draevor a dispensa e restringe movimentos. Orvan e outros dois capitães questionam ordens; frota ainda perigosa.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 205525,
+        "line_end": 205648,
+        "role": "Response",
+        "span_sha256_utf8": "56c063548bc77092f168b3f1afdb5d7ff9fb9f8f0e03e4889d78706d401f76d7"
+      }
+    },
+    {
+      "id": "O8C-B22-066",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 20,
+      "type": "reader-perspectives",
+      "axes": [
+        1,
+        3,
+        4,
+        5,
+        7,
+        9,
+        10,
+        13,
+        19,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "seva-norn",
+        "lira",
+        "nysara-velt"
+      ],
+      "summary": "02h44 Seva Norn tripulante leva água/pão, irmão vive em Calderva, teme abandonar serviço. Entrega mensagem de Nysara sobre pessoas a bordo que não concordam com prisão, sem fuga prometida. Lira mantém Elo.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 205649,
+        "line_end": 205774,
+        "role": "Response",
+        "span_sha256_utf8": "b4f5ec50e48bef4dbb1bc97dbd6d45a7cca25725f8e1be7b0b0bbeac82330a95"
+      }
+    },
+    {
+      "id": "O8C-B22-067",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 20,
+      "type": "diplomacy",
+      "axes": [
+        1,
+        3,
+        4,
+        7,
+        13,
+        16,
+        19,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "orvan-dell",
+        "harek-vossen",
+        "lucas",
+        "miren"
+      ],
+      "summary": "02h53 Orvan, comandante Vento de Orvan, comunica-se, afirma não atacar bairros novamente; confirma transferência ao navio principal, segunda fonte junto ao Elo, sem sala específica. Ajuda condicionada à proteção de vidas, não submissão da tripulação.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 205775,
+        "line_end": 205986,
+        "role": "Response",
+        "span_sha256_utf8": "e682aa0219704611df67a8b7340d185f5f9edb5f07e30abfd1883f7d18ad8c5a"
+      }
+    },
+    {
+      "id": "O8C-B22-068",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 20,
+      "type": "institution",
+      "axes": [
+        1,
+        3,
+        7,
+        11,
+        19,
+        23,
+        25,
+        26,
+        27,
+        28
+      ],
+      "entities": [
+        "orvan-dell",
+        "nysara-velt",
+        "lucas",
+        "miren",
+        "sistema"
+      ],
+      "summary": "Orvan informa afastamento/restrição de Nysara, ordena suspender novos bombardeios e contata dois capitães. Cooperação potencial entre independentes, primeiro rompimento público de obediência absoluta; não comando de Lucas sobre Orvan nem aliança total.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 205987,
+        "line_end": 206056,
+        "role": "Response",
+        "span_sha256_utf8": "dd6186297a61521c4a483e400187f3dfbb6c0a8d977b0ed74c24c6197a8c41cb"
+      }
+    },
+    {
+      "id": "O8C-B22-069",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 20,
+      "type": "technology",
+      "axes": [
+        1,
+        3,
+        7,
+        8,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        25,
+        27,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "navel-ardon",
+        "yra-beldon",
+        "harek-vossen",
+        "orvan-dell",
+        "sistema"
+      ],
+      "summary": "03h11 projeto de acesso modular temporário entre embarcações condicionado a proximidade/estabilidade e apoios físicos, ainda não construído. Materiais e energia reduzidos, papéis divididos: Miren análise/Elo, pilotos navegação, Harek conhecimento naval, Orvan suspensão, Lucas proteção.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 206057,
+        "line_end": 206246,
+        "role": "Response",
+        "span_sha256_utf8": "a51d3761cacec039834f68b089072c2fcee9294dccab3e22c5f0d08a5857115a"
+      }
+    },
+    {
+      "id": "O8C-B22-070",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 20,
+      "type": "conflict",
+      "axes": [
+        1,
+        3,
+        7,
+        11,
+        12,
+        16,
+        19,
+        22,
+        23,
+        24,
+        25,
+        27
+      ],
+      "entities": [
+        "draevor-vhal",
+        "miren",
+        "yra-beldon",
+        "harek-vossen"
+      ],
+      "summary": "03h28 magia militar de correntes provoca onda e ameaça auxiliares; Draevor insiste sem supervisão Nysara. Serpente visual é forma de água, não criatura viva (bestiário negativo, não registrar espécie).",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 206247,
+        "line_end": 206344,
+        "role": "Response",
+        "span_sha256_utf8": "fdf6d10b90048f716ed7ad46b6693323d462cfbc8a8f91c68b55a2d82ea68ff3"
+      }
+    },
+    {
+      "id": "O8C-B22-071",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 20,
+      "type": "rescue",
+      "axes": [
+        1,
+        3,
+        7,
+        8,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        24,
+        25,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "navel-ardon",
+        "yra-beldon",
+        "harek-vossen",
+        "orvan-dell"
+      ],
+      "summary": "Corvo atravessa região menos intensa com proteção modular limitada e apoio de Miren, Nável/Yra navegam, Harek auxilia marinheiro. Orvan protege auxiliar, Lucas considera resgate condicionado a sobrevivência própria; não anula oceano nem ponte construída.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 206345,
+        "line_end": 206532,
+        "role": "Response",
+        "span_sha256_utf8": "ddea0c0d02a79948429804e4ba0775a2bd71861a55c612210864a0b8317c3050"
+      }
+    },
+    {
+      "id": "O8C-B22-072",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 20,
+      "type": "reader-perspectives",
+      "axes": [
+        1,
+        3,
+        4,
+        7,
+        11,
+        15,
+        19,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "entities": [
+        "nysara-velt",
+        "draevor-vhal",
+        "lucas",
+        "miren",
+        "sistema"
+      ],
+      "summary": "Nysara sai da restrição com ajuda de marinheiros, interrompe alimentação secundária via estação de segurança, contrafase azul reduz perturbação. Miren observa magia marítima independente, não confirma identidade à distância. Draevor não derrotado, capitães escolhem lados.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 206535,
+        "line_end": 206648,
+        "role": "Response",
+        "span_sha256_utf8": "546d440b1659ddd8ae6a54795a525b926de4831579e6c89398e5c474641b5ad2"
+      }
+    },
+    {
+      "id": "O8C-B22-073",
+      "day": 218,
+      "book": "III",
+      "chapter_hint": 20,
+      "type": "exploration",
+      "axes": [
+        1,
+        3,
+        7,
+        16,
+        23,
+        25,
+        27
+      ],
+      "entities": [
+        "navel-ardon",
+        "yra-beldon"
+      ],
+      "summary": "03h49 tempestade artificial perde intensidade, embarcações recuperam estabilidade, Nável observa e Yra examina mapa. Cena aberta, aproximação ao Trono de Sal, ponte/resgate final ainda não realizados no intervalo.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 206649,
+        "line_end": 206661,
+        "role": "Response",
+        "span_sha256_utf8": "ffc2c3a41b0729c40cdc17fe3d935e87ed0dc92add90de76c5aa1dd54fa55e69"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "start": 196618,
+      "end": 199851,
+      "role": "Response",
+      "disposition": "CONTINUATION_FROM_PREVIOUS_MACRO",
+      "span_sha256_utf8": "c90ae15557116bc649c087185c9ff6a173421b3697dd9c93543932ea5f071052",
+      "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+      "record_ids": [
+        "O8C-B22-001",
+        "O8C-B22-002",
+        "O8C-B22-003",
+        "O8C-B22-004",
+        "O8C-B22-005",
+        "O8C-B22-006",
+        "O8C-B22-007",
+        "O8C-B22-008",
+        "O8C-B22-009",
+        "O8C-B22-010",
+        "O8C-B22-011",
+        "O8C-B22-012",
+        "O8C-B22-013",
+        "O8C-B22-014",
+        "O8C-B22-015",
+        "O8C-B22-016",
+        "O8C-B22-017",
+        "O8C-B22-018",
+        "O8C-B22-019",
+        "O8C-B22-020",
+        "O8C-B22-021"
+      ]
+    },
+    {
+      "start": 199852,
+      "end": 199856,
+      "role": "Prompt",
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE",
+      "span_sha256_utf8": "75559ae3f2f0f7d48e4dad78f15463094d3da9cfbb4b4bc571ae55b8cda25aa1",
+      "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+      "record_ids": [
+        "O8C-B22-022"
+      ]
+    },
+    {
+      "start": 199857,
+      "end": 203956,
+      "role": "Response",
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE",
+      "span_sha256_utf8": "f73157e77bba1908289a8ed7e77c0a6c7d70ee664d028d599e82205844eb02f9",
+      "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+      "record_ids": [
+        "O8C-B22-023",
+        "O8C-B22-024",
+        "O8C-B22-025",
+        "O8C-B22-026",
+        "O8C-B22-027",
+        "O8C-B22-028",
+        "O8C-B22-029",
+        "O8C-B22-030",
+        "O8C-B22-031",
+        "O8C-B22-032",
+        "O8C-B22-033",
+        "O8C-B22-034",
+        "O8C-B22-035",
+        "O8C-B22-036",
+        "O8C-B22-037",
+        "O8C-B22-038",
+        "O8C-B22-039",
+        "O8C-B22-040",
+        "O8C-B22-041",
+        "O8C-B22-042",
+        "O8C-B22-043",
+        "O8C-B22-044",
+        "O8C-B22-045",
+        "O8C-B22-046",
+        "O8C-B22-047",
+        "O8C-B22-048",
+        "O8C-B22-049",
+        "O8C-B22-050",
+        "O8C-B22-051",
+        "O8C-B22-052"
+      ]
+    },
+    {
+      "start": 203957,
+      "end": 203961,
+      "role": "Prompt",
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE",
+      "span_sha256_utf8": "585ee2a29b3ad2a482adf0dd3e20aefadcf00e485a27eaa3d88b0dcecaad151c",
+      "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+      "record_ids": [
+        "O8C-B22-053"
+      ]
+    },
+    {
+      "start": 203962,
+      "end": 206661,
+      "role": "Response",
+      "disposition": "OPEN_AT_MACRO_END",
+      "span_sha256_utf8": "24cb470def22275cacf32a0c7db7493a42bb1e9330474f1c7a4e30852fddf501",
+      "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+      "record_ids": [
+        "O8C-B22-054",
+        "O8C-B22-055",
+        "O8C-B22-056",
+        "O8C-B22-057",
+        "O8C-B22-058",
+        "O8C-B22-059",
+        "O8C-B22-060",
+        "O8C-B22-061",
+        "O8C-B22-062",
+        "O8C-B22-063",
+        "O8C-B22-064",
+        "O8C-B22-065",
+        "O8C-B22-066",
+        "O8C-B22-067",
+        "O8C-B22-068",
+        "O8C-B22-069",
+        "O8C-B22-070",
+        "O8C-B22-071",
+        "O8C-B22-072",
+        "O8C-B22-073"
+      ]
+    }
+  ],
+  "axis_coverage": {
+    "assessed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "represented": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "unrepresented": [
+      6
+    ],
+    "note": "30 eixos avaliados; eixo 21 contexto de ruína/inspeção, não dungeon concluída; eixo 22 exclusão explícita de criatura na forma de serpente de água, não espécie nova; eixo 29 diretrizes autorais distintas de acontecimentos. Agrupado, não exaustivo."
+  },
+  "continuity": {
+    "from": {
+      "day": 217,
+      "chapter": 18,
+      "line": 196618,
+      "open_response": true,
+      "book": "III"
+    },
+    "to": {
+      "day": 218,
+      "chapter": 20,
+      "line": 206662,
+      "open_response": true,
+      "next_macro_id": "e6317664d92178ba8f6d99b93ba3df39669420ac9630a35175509605849fe736",
+      "book": "III"
+    }
+  },
+  "historical_state_transitions": [
+    {
+      "day": 217,
+      "subject": "exploration",
+      "state": "Doca Redes Velhas: jurisdição Ressaca ainda precisa verificação; Tilo, menino encaracolado, relata muitas velas vistas por vigia. Nável identifica formação não comercial comum, Yra bandeiras desconhecidas; Selda comunica autoridades. Hostilidade inicialmente desconhecida.",
+      "evidence": {
+        "record_id": "O8C-B22-001",
+        "line_start": 196618,
+        "line_end": 196728,
+        "span_sha256_utf8": "0dc7c15c9ba586c9c7c55f8705c4ecfab5a0ef2b5c47538e2693b675e0eb3ccf"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "relationship",
+      "state": "Tilo conhece arco dourado por relato da mãe, abraça Lucas e sugere criar quando alguém precisar. Miren e Lira observam carinho por crianças; reconhecimento Ressaca suspenso por chegada naval.",
+      "evidence": {
+        "record_id": "O8C-B22-002",
+        "line_start": 196729,
+        "line_end": 196834,
+        "span_sha256_utf8": "daa4ef12f1d1f43a49b9fde0d1433aea1ad50e88969f54dcb11b6dc445bad573"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "system",
+      "state": "Sistema distingue formação observada de hostilidade não confirmada; não sabe intenções antecipadamente, brinca com baleias e Brannik e indefere pedido de parar piadas.",
+      "evidence": {
+        "record_id": "O8C-B22-003",
+        "line_start": 196835,
+        "line_end": 196866,
+        "span_sha256_utf8": "20b0a9aa926d873ef7517b2a1a6fa7914fa9074c41a29cf07e8612b29a3f52ac"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "conflict",
+      "state": "13h18 Draevor Vhal anuncia-se por projeção marítima de névoa, reivindica proteção/autoridade portuária sem soberania comprovada, exige entrega coercitiva de Lira e ameaça até próximo sinal. Selda contesta legitimidade, Adélia conhece reputação.",
+      "evidence": {
+        "record_id": "O8C-B22-004",
+        "line_start": 196867,
+        "line_end": 197008,
+        "span_sha256_utf8": "a2edf8b04a0a696bfb852fc7c41410517c3db5ff4e55bc27e83a59ddf409849f"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "relationship",
+      "state": "Lucas reage com calma e raiva, assegura que Lira não pertence a ninguém, abraça-a com Miren e oferece ajuda sem negar agência; responsabilidade da agressão é de Draevor. Sistema indica reservas ainda abaixo de repouso, indignação não gera energia.",
+      "evidence": {
+        "record_id": "O8C-B22-005",
+        "line_start": 197009,
+        "line_end": 197222,
+        "span_sha256_utf8": "cc8e66f6597fdaa6d2ed37f0cd8ffa899607925a13147b75ae272af32ff920b1"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "institution",
+      "state": "14h02 Torre Administrativa: comandante Révan Tor coordena defesa portuária sob sua autoridade; equipes municipais mantêm comando, Lucas oferece reforços e apoio, Nável/Yra navegação, Dasha sinais, Oren estrutura, Selda abrigos. Liderança sem usurpação.",
+      "evidence": {
+        "record_id": "O8C-B22-006",
+        "line_start": 197223,
+        "line_end": 197376,
+        "span_sha256_utf8": "b774289f46e81bad8dbd408369e857dc0d4fcc83ec9a4d2bc2a5a8be48cf5c01"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "technology",
+      "state": "Identificação do Bastião da Gaivota Negra, fortificação desativada com torre danificada e fundações a verificar; ideia de defesa costeira/observação e controle humano, sem arma letal autônoma. Ainda sem autorização de transformação nem funcionamento.",
+      "evidence": {
+        "record_id": "O8C-B22-007",
+        "line_start": 197377,
+        "line_end": 197504,
+        "span_sha256_utf8": "e70a7085ecfdcbc3310f180658f438c957300f9ebfb282e9e0d475e00636dfb9"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "combat",
+      "state": "15h17 ofensiva hostil confirmada contra plataforma costeira; Nysara discorda de risco civil. Alerta cívico dos Arcos ativado, artilharia arcana de longo alcance observada, alcance/cadência/reservas desconhecidos; novo impacto na Galeria dos Pescadores.",
+      "evidence": {
+        "record_id": "O8C-B22-008",
+        "line_start": 197505,
+        "line_end": 197688,
+        "span_sha256_utf8": "6be9cb718c53bdec2ff690a9cbde19b7e8dbfdecf3739ac9ee7c4b2534c1c4e4"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "rescue",
+      "state": "15h24 Galeria dos Pescadores: cobertura histórica, mosaico e bancas parcialmente destruídos. Lucas chega por vias terrestres com armadura viva, Miren identifica risco secundário e profissionais orientam escoramento modular finito; não voo/teletransporte.",
+      "evidence": {
+        "record_id": "O8C-B22-009",
+        "line_start": 197689,
+        "line_end": 197836,
+        "span_sha256_utf8": "48da0358e6a99246f320d759b4422e1f5db67ca6526efd8bd5cd070f15eb4399"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "rescue",
+      "state": "Nila, menina com boneca e cabelos cobertos de poeira, retirada com socorristas e reencontra mãe; segunda criança resgatada, feridos atendidos e identificação verificada. Lucas recorda desejo de filha. Armazéns atingidos, depósito de cordas em fogo; danos não anulados.",
+      "evidence": {
+        "record_id": "O8C-B22-010",
+        "line_start": 197837,
+        "line_end": 197946,
+        "span_sha256_utf8": "8f4324a92b3894fad63e745eec3ccceff30deb2d8c2a2fb2bb6e6e3fed404f94"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "character",
+      "state": "16h09 Lira auxilia registro de abrigos e encaminhamento de vítimas apesar de medo; propõe usar conhecimento de códigos marítimos para contestar reivindicações, com Adélia/Selda. Não responsável pela agressão.",
+      "evidence": {
+        "record_id": "O8C-B22-011",
+        "line_start": 197947,
+        "line_end": 198090,
+        "span_sha256_utf8": "902cf62a172147758b3279010b51f68e70b1a2a88ea1fdc917943ce73133fe0e"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "relationship",
+      "state": "Miren acolhe Lira; jovem relata pai ocupado por responsabilidades e valoriza cuidado cotidiano de Lucas. Afeto quase paternal, sem substituir família. Ambas seguem orientação de abrigo diante de impacto próximo.",
+      "evidence": {
+        "record_id": "O8C-B22-012",
+        "line_start": 198091,
+        "line_end": 198220,
+        "span_sha256_utf8": "51659631270c40601cc9f8c67611b20192e76ed83c5a14b2e1cc17dfc1583ce3"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "power",
+      "state": "Defesa hidráulica cooperativa: reforços temporários em apoios conhecidos e passagens de alívio, contramagia/orientação local, evacuação. Onda parcialmente desviada, Porto Antigo e armazéns alagados, ponte de madeira arrancada, reservas reduzidas; Sistema reconhece vidas protegidas e recebe agradecimento.",
+      "evidence": {
+        "record_id": "O8C-B22-014",
+        "line_start": 198367,
+        "line_end": 198610,
+        "span_sha256_utf8": "ca7b156a771abad32c1b2aaf0fff36adefae501f1676dff4c55d9b825ecf15c6"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "society",
+      "state": "18h07 Tilo reencontrado com pais presentes na região, brinquedo com mastro/vela danificados; Lucas repara mastro com pouco material, trabalhadora conserta vela. Moradores distribuem pão, reaproveitam madeira e atendem feridos, sinais cívicos ativos.",
+      "evidence": {
+        "record_id": "O8C-B22-015",
+        "line_start": 198615,
+        "line_end": 198782,
+        "span_sha256_utf8": "04ae9a38baf2f8a39b08c2c1a665bd77cbbbf2ff22995e828b84d8641c2fcb5c"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "institution",
+      "state": "19h02 coordenação relata danos e famílias deslocadas, feridos, nenhuma morte confirmada apenas nos setores verificados. Révan autoriza estudo emergencial do Bastião público; armamento condicionado a avaliação, comando e segurança. Não soberania.",
+      "evidence": {
+        "record_id": "O8C-B22-016",
+        "line_start": 198783,
+        "line_end": 199014,
+        "span_sha256_utf8": "2f7c6ac4cd855ecc6b3ab62d50d3ee871fde4e869e198cacf62f5833eeb773d6"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "system",
+      "state": "Projeto Aurora — Defesa de Calderva / Bastião Gaivota Negra. Sistema registra aplicabilidade Manifestação Declarativa I, Encadeamento Matricial I e materiais conhecidos; exige energia, operadores, comunicações e desligamento. Armamento ainda não demonstrado; lema Nenhum fica para trás.",
+      "evidence": {
+        "record_id": "O8C-B22-017",
+        "line_start": 199015,
+        "line_end": 199100,
+        "span_sha256_utf8": "4bb4ed83ba8e9a7a935021d7e9e6ba472f315de44ee52ef3588a2c96afa0ebf3"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "relationship",
+      "state": "20h42 refeição Casa da Maré, Lucas cansado pergunta se Lira comeu, ela o abraça, família afetiva sem contrato. Lira retém decisão de utilizar Elo; reciprocidade sobre medo. Sistema confirma confiança sem submissão e recebe agradecimento.",
+      "evidence": {
+        "record_id": "O8C-B22-019",
+        "line_start": 199227,
+        "line_end": 199576,
+        "span_sha256_utf8": "8a2411ae0523a62115c1c45f6174cd68f7b85e810ce7c8bac615b319702978f0"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "conflict",
+      "state": "21h18 terceiro ultimato: exige Lira e saída de Lucas, ameaça estruturas dos Nove Arcos. Lucas escolhe defesa com engenharia e equipes, sem resposta indiscriminada. Torre ainda não construída, sem munição infinita.",
+      "evidence": {
+        "record_id": "O8C-B22-020",
+        "line_start": 199577,
+        "line_end": 199762,
+        "span_sha256_utf8": "bb1cc6790ecb624ba1763e8f7de4f364783a12c3921745eabf21a3d8e50aa11c"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "relationship",
+      "state": "21h34 Sétimo Arco: casal admite medo, conversa sobre filhos futuros e compromisso de preservar vida/segurança da obra; Miren exige interromper se condições inseguras, Lucas promete cooperação.",
+      "evidence": {
+        "record_id": "O8C-B22-023",
+        "line_start": 199872,
+        "line_end": 200021,
+        "span_sha256_utf8": "b197a50b87c98dacc2a962997016f61a02979bcff0cac4cd499c8f53a162a2b8"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "system",
+      "state": "Sistema confirma conceito não construído, reservas abaixo de repouso, estoques limitados e humor sobre projetos monumentais classificados pequenos.",
+      "evidence": {
+        "record_id": "O8C-B22-024",
+        "line_start": 200022,
+        "line_end": 200073,
+        "span_sha256_utf8": "25e47624348796a3500af3923b975cdf4322708e4554eea248ba470cf4966672"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "geography",
+      "state": "21h52 Bastião circular em promontório, séculos de história, três plataformas e torre negra parcialmente destruída. Norte comprometida, central instável, condutores isolados, sul promissora. Sem fonte mágica conveniente. Inspeção de ruína, não dungeon explorada. Comando humano e parada independente acordados.",
+      "evidence": {
+        "record_id": "O8C-B22-025",
+        "line_start": 200074,
+        "line_end": 200259,
+        "span_sha256_utf8": "16ac04b0c0b488fb18d8430bab7fd137cf6577e0a142cb0416c0808553fca464"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "technology",
+      "state": "Plataforma sul recebe reforços limitados verificados; Gênese produz componentes detalhados com material preparado, equipe exige inspeção de detalhes não especificados conscientemente. Fortaleza não inteiramente restaurada.",
+      "evidence": {
+        "record_id": "O8C-B22-026",
+        "line_start": 200260,
+        "line_end": 200335,
+        "span_sha256_utf8": "025c3fa29da2b0975a00c4d1ce32c86995d1f26101d9558dd25f44c8099c36a8"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "character",
+      "state": "22h23 Oren relata ter sido casado 37 anos; Dasha usa cristais de emergência finitos, reserva para comunicação/desativação. Jared Vossan operador veterano, Kelra Dom identificação naval; não presumem hostilidade por bandeira.",
+      "evidence": {
+        "record_id": "O8C-B22-027",
+        "line_start": 200336,
+        "line_end": 200453,
+        "span_sha256_utf8": "e25cdf7b25cfd49ff421acbff16021f477cf758515d6746eb1ebe176781800b0"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "technology",
+      "state": "Mesa de projeção Aurora costeira parcial, atualizada por observações, distingue estimativas e sinais perdidos; sem mapa onisciente. Integração matricial, operação manual, energia separada e manutenção local. Um módulo inicialmente.",
+      "evidence": {
+        "record_id": "O8C-B22-028",
+        "line_start": 200456,
+        "line_end": 200567,
+        "span_sha256_utf8": "0d33c484dbc8030415f3cfc4caf8d30d2db6bb7ef0be715dd078a5087b477fef"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "technology",
+      "state": "Primeira montagem híbrida de artilharia arcana Aurora, sob operadores e autorização Révan, parada independente da projeção, recursos finitos. Ainda não operacional antes dos ensaios; conquista compartilhada.",
+      "evidence": {
+        "record_id": "O8C-B22-029",
+        "line_start": 200568,
+        "line_end": 200669,
+        "span_sha256_utf8": "be32f30d8f8eebe3792bdb2d15754a556d3ee91f1d47ab24b049d9a103c509a0"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "technology",
+      "state": "23h12 primeiro ensaio sem descarga interrompido corretamente por proteção, diferença entre componente e condições de energia. Equipe troca por conjunto conhecido; falha segura preservada, Sistema reconhece resultado.",
+      "evidence": {
+        "record_id": "O8C-B22-032",
+        "line_start": 200866,
+        "line_end": 200991,
+        "span_sha256_utf8": "58380f84952d426c99f0d4f63623b98dd048fa899f5ab35b7226eb19b77c1d8e"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "technology",
+      "state": "Segundo ensaio corrigido e descarga experimental em área isolada aprovados. Marco Módulo Aurora I: emissão direcional comprovada em teste, operação humana e parada independente demonstradas; energia finita, continuidade não demonstrada. Frota se reorganiza.",
+      "evidence": {
+        "record_id": "O8C-B22-033",
+        "line_start": 200992,
+        "line_end": 201187,
+        "span_sha256_utf8": "aaa9a62326aaf10408d2cf34a9318e3769084927791ebd17432d8a4de4cf6455"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "combat",
+      "state": "23h27 primeira resposta defensiva real autorizada por Révan, Jared opera, Lucas apoia. Frase autoral realizada: Se querem brincar, vamos ver quem pega mais pesado. Descarga hostil interrompida, casco inimigo flutua e recua para avaliação; tripulação sem condição verificada.",
+      "evidence": {
+        "record_id": "O8C-B22-034",
+        "line_start": 201188,
+        "line_end": 201387,
+        "span_sha256_utf8": "3755fc611d2812d4d46dcd89e7c097eeccb8859fcf45c507c249d6f4d8321ba5"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "conflict",
+      "state": "Vitória parcial, não fim da guerra; módulo precisa reavaliação e recursos, frota reorganiza e alerta de movimento suspeito perto dos abrigos.",
+      "evidence": {
+        "record_id": "O8C-B22-035",
+        "line_start": 201388,
+        "line_end": 201449,
+        "span_sha256_utf8": "9c9472d7585c7a691bfdca8f867da8912d0e8aca398d90dc45afefc734da80a2"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "relationship",
+      "state": "23h38 ameaças simultâneas: documentos suspeitos de transferência e nova concentração do Trono de Sal. Miren escolhe ir com Dasha/agentes ao abrigo, Lucas permanece na defesa com Révan; confiança e beijo, delegar não abandonar.",
+      "evidence": {
+        "record_id": "O8C-B22-036",
+        "line_start": 201450,
+        "line_end": 201653,
+        "span_sha256_utf8": "972635af51e35f9fb085358bad14ec040b3467e448134236792a586ed67b6e53"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "investigation",
+      "state": "23h47 Selda detecta responsável incompatível em autorização médica; Miren e Dasha verificam marca arcana recente, indício não prova isolada. Mathren tenta sair, identificação exigida.",
+      "evidence": {
+        "record_id": "O8C-B22-037",
+        "line_start": 201654,
+        "line_end": 201811,
+        "span_sha256_utf8": "29c5489f2d37b81f842f66ce2b88bddd448a13cf507a76eb5fea02a44f2800d6"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "combat",
+      "state": "Encantamento de desorientação visual/sonora no abrigo; Miren e Dasha interrompem parte da ilusão com magia própria e referências locais, Guarda contém infiltrados. Sem imunidade universal.",
+      "evidence": {
+        "record_id": "O8C-B22-038",
+        "line_start": 201812,
+        "line_end": 201903,
+        "span_sha256_utf8": "742b00b68fcb2a8356a30735a7fe2aad73c1cd2f98a87ebc6c9ba0e05bc8b2d3"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "combat",
+      "state": "Outro grupo entra no abrigo com conhecimento prévio da disposição; origem do vazamento não confirmada. Miren protege Lira/Celle por barreira prateada, Dasha apoia, agentes avançam. Lira resiste e protege Celle.",
+      "evidence": {
+        "record_id": "O8C-B22-039",
+        "line_start": 201904,
+        "line_end": 202025,
+        "span_sha256_utf8": "cc5b88786378ddbb3e34b7f1fed77ddbce7957367a4c9f88e4eabcec75cda2cf"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "rescue",
+      "state": "Bombardeio danifica corredor com pacientes; Lira pede que Miren salve pessoas. Miren sustenta teto temporariamente por magia própria, não reconstrói pedra, Dasha e Guarda apoiam. Mathren captura Lira consciente e resistente, retirada por barco. Não falha por falta de agência de Miren.",
+      "evidence": {
+        "record_id": "O8C-B22-040",
+        "line_start": 202026,
+        "line_end": 202247,
+        "span_sha256_utf8": "e3fd07559aebfbaaf519c50e008cdd0c29ca7a9526c39f378c41187faa3c06c4"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "consequence",
+      "state": "Último paciente retirado antes de queda parcial do teto; Miren exausta com lesão leve no braço, agentes com ferimentos leves, dois invasores detidos. Elo ainda responde, possibilidade de busca, destino não confirmado.",
+      "evidence": {
+        "record_id": "O8C-B22-041",
+        "line_start": 202248,
+        "line_end": 202339,
+        "span_sha256_utf8": "99ff41ae93bcb6edd3445622e4f7b425a4d1627b4d53eee7d94a1cb221c53242"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "combat",
+      "state": "23h52 encosta/galeria manutenção atingidas, comunicação parcial interrompida, sustentação danificada, alimentação insuficiente para repetir disparo. Révan prioriza retirada e proteção, Sistema alerta energia finita.",
+      "evidence": {
+        "record_id": "O8C-B22-042",
+        "line_start": 202340,
+        "line_end": 202489,
+        "span_sha256_utf8": "c84dce8b69d9de961bf62856c13463d8b96d05f444b2c7fc76fe4b11c6c3047e"
+      }
+    },
+    {
+      "day": 217,
+      "subject": "consequence",
+      "state": "Reforços nas passagens permitem retirada de operadores antes de impacto; torre lateral cai em área interditada. Lucas cai de joelho, consciente, reservas muito reduzidas; Aurora I indisponível, parada independente preservada. Miren informa captura de Lira.",
+      "evidence": {
+        "record_id": "O8C-B22-043",
+        "line_start": 202490,
+        "line_end": 202687,
+        "span_sha256_utf8": "16d017bcf7a5b2711b85373544cb8bc77b8ad283cb47b48aea7fca03e7013e8e"
+      }
+    },
+    {
+      "day": 218,
+      "subject": "system",
+      "state": "00h06 D218 Lucas confirma Miren e Celle vivas, raiva intensa mas evita manifestação indiscriminada. Sistema alerta intenção, energia insuficiente e localização/navio não confirmados. Lucas escolhe precisão e cooperação.",
+      "evidence": {
+        "record_id": "O8C-B22-044",
+        "line_start": 202688,
+        "line_end": 202811,
+        "span_sha256_utf8": "a2a1e889dc3bcb94b1c7ff243e3bae2680e7f0401fc8900f2c2cb37e2d5ba376"
+      }
+    },
+    {
+      "day": 218,
+      "subject": "relationship",
+      "state": "Elo fraco ainda detectável, Miren aceita atendimento; casal reafirma amor. Lucas retorna pelos caminhos seguros, Révan mantém defesa e Oren garante torre desligada até avaliação, abraço e pedido de buscar a menina.",
+      "evidence": {
+        "record_id": "O8C-B22-045",
+        "line_start": 202812,
+        "line_end": 202947,
+        "span_sha256_utf8": "808a3d5a65f7ed41679ccbff10e910ecb8a2a2e68d6b91994aed293779941298"
+      }
+    },
+    {
+      "day": 218,
+      "subject": "relationship",
+      "state": "00h41 Casa da Maré, ferimento braço Miren atendido; Lucas abraça sem culpá-la, reconhece que salvou pacientes e reafirma Nenhum fica para trás. Celle/Oren observam liderança por confiança.",
+      "evidence": {
+        "record_id": "O8C-B22-048",
+        "line_start": 203336,
+        "line_end": 203459,
+        "span_sha256_utf8": "f9d1c4734a599687abad2bfcf0c2d5ca17da6b971025c6221acd9f22e6b06674"
+      }
+    },
+    {
+      "day": 218,
+      "subject": "mission",
+      "state": "Elo aponta aproximadamente águas exteriores, testemunhos de fuga convergem, navio exato desconhecido. Nável/Yra estudam maré/risco; Lucas cogita uso de embarcação hostil sem impor risco ao Falcão da Espuma e tripulação civil.",
+      "evidence": {
+        "record_id": "O8C-B22-049",
+        "line_start": 203460,
+        "line_end": 203589,
+        "span_sha256_utf8": "7368d23c7ba54f21119f76d1c8f51119cc771c65d1181bee9894362739b214a6"
+      }
+    },
+    {
+      "day": 218,
+      "subject": "system",
+      "state": "Sistema registra desaparecimento forçado, sinal intermitente, recursos reduzidos, ideia arriscada de resgate naval; diálogo solidário De nada. Traga-a de volta. Lucas preserva comando local e participação voluntária de Miren.",
+      "evidence": {
+        "record_id": "O8C-B22-050",
+        "line_start": 203590,
+        "line_end": 203733,
+        "span_sha256_utf8": "5c16f4d4fc71fa34ee0ad9d5919bfd69eedaeddbece74fd9349eb060342b7ca9"
+      }
+    },
+    {
+      "day": 218,
+      "subject": "relationship",
+      "state": "01h03 reunião Casa da Maré; Lucas exausto, distraído, admite medo de não chegar a tempo e não ser pai de Lira; aceita água, ajuda e concentração. Circulação e retorno já conhecidos auxiliam recuperação lenta, não restauração instantânea.",
+      "evidence": {
+        "record_id": "O8C-B22-054",
+        "line_start": 203985,
+        "line_end": 204188,
+        "span_sha256_utf8": "84073e68d3ceb9113c70f2881641cc9ee73d7d5781c29ed9fbb470b2e6024ed2"
+      }
+    },
+    {
+      "day": 218,
+      "subject": "mission",
+      "state": "Resgate público conjunto, defesa local mantida, piloto decide navegação, Elo não GPS, recursos comprovados, Oren fica em Calderva. Sistema elogia reunião de especialistas, não novo desbloqueio.",
+      "evidence": {
+        "record_id": "O8C-B22-055",
+        "line_start": 204189,
+        "line_end": 204324,
+        "span_sha256_utf8": "4ba78e148b3a789a0c0a9f554e6331722e1bbb10f63bf345eefe7dea9ec57666"
+      }
+    },
+    {
+      "day": 218,
+      "subject": "mission",
+      "state": "Guarda informa escuna auxiliar hostil encalhada no Canal Pedras Baixas, marinheiros feridos pedem auxílio, propulsão falhou e participação clandestina suspeita. Possibilidade de uso condicionada à confirmação.",
+      "evidence": {
+        "record_id": "O8C-B22-056",
+        "line_start": 204325,
+        "line_end": 204396,
+        "span_sha256_utf8": "cb57f6c12d4e2718adec97e6781050352640492aef60cd5115e8c66cc58d3e19"
+      }
+    },
+    {
+      "day": 218,
+      "subject": "character",
+      "state": "01h26 Corvo das Brumas, casco escuro reforçado, duas velas, propulsão auxiliar inativa. Capitão Harek Vossen, faixa no braço, dois feridos; Guarda identifica e atende sem resistência. Harek afirma ter abandonado ofensiva contra civis e nega participação direta na captura; depoimento a verificar.",
+      "evidence": {
+        "record_id": "O8C-B22-057",
+        "line_start": 204397,
+        "line_end": 204536,
+        "span_sha256_utf8": "714e5697e5c6e36bb4070abb6bbeca7e24749d037ebf60919707bf92a5ca5f9a"
+      }
+    },
+    {
+      "day": 218,
+      "subject": "institution",
+      "state": "Embarcação sob verificação formal, não posse pessoal de Lucas. Cooperação não extingue responsabilidade de Harek; tripulação voluntária, Nável navegação condicionada a liberação/inspeção. Elo segue fraco. Sem aquisição definitiva.",
+      "evidence": {
+        "record_id": "O8C-B22-058",
+        "line_start": 204537,
+        "line_end": 204698,
+        "span_sha256_utf8": "e93c2583dc3ed5ef80499c861ab80ac7f72396eb06f0ef628d58a52d3ea4ffe8"
+      }
+    },
+    {
+      "day": 218,
+      "subject": "technology",
+      "state": "01h51 reparação limitada da propulsão auxiliar, inspeção e peça conhecida de Gênese mais matriz simples Aurora, teste sem carga bem-sucedido, reservas finitas. Conhecimento naval indispensável; capacidade oceânica depende casco/mar/equipe.",
+      "evidence": {
+        "record_id": "O8C-B22-059",
+        "line_start": 204699,
+        "line_end": 204882,
+        "span_sha256_utf8": "88b074e0fb3a0880c785c6a3fa7fc97c168f8d2ebdd3e42637e86f4fbdb14ae3"
+      }
+    },
+    {
+      "day": 218,
+      "subject": "institution",
+      "state": "Inspeção permite missão limitada e monitorada; autorização emergencial específica de busca/resgate em embarcação apreendida, não ataque irrestrito. Nável navega, Yra cartas, Harek apoio, três marinheiros voluntários e dois agentes; feridos ficam em Calderva.",
+      "evidence": {
+        "record_id": "O8C-B22-060",
+        "line_start": 204883,
+        "line_end": 204942,
+        "span_sha256_utf8": "b4646dfb463ffa8b6a2bba7a93d06b196537ebe4293bf20159c4ac27bbe0d4a1"
+      }
+    },
+    {
+      "day": 218,
+      "subject": "relationship",
+      "state": "Celle entrega comida, Oren pede retorno com pessoas e não destruição do navio; abraço e humor. Corvo desencalhado e parte; casal reconhece vínculo familiar afetivo com Lira, Révan continua defesa.",
+      "evidence": {
+        "record_id": "O8C-B22-061",
+        "line_start": 204943,
+        "line_end": 205098,
+        "span_sha256_utf8": "b7fc7948d968b3ee1dc310c35e1872b887fb89b4f45e48ed3fbfb76d1b36ea81"
+      }
+    },
+    {
+      "day": 218,
+      "subject": "exploration",
+      "state": "02h23 região exterior da frota: identificação da escuna e explicação verdadeira de avaria/feridos permitem aguardar entre auxiliares sem confronto, não livre acesso ao navio principal. Nável mantém comando de navegação.",
+      "evidence": {
+        "record_id": "O8C-B22-062",
+        "line_start": 205099,
+        "line_end": 205232,
+        "span_sha256_utf8": "cbeefaaf299651bc5e56c3ebe8012a0853f094adf4db97df522dbd61c575b197"
+      }
+    },
+    {
+      "day": 218,
+      "subject": "artifact",
+      "state": "Elo melhora com distância e múltiplas leituras, converge região do Trono de Sal sem identificar sala/pessoa com certeza. Lucas admira navio e deseja Leviatã maior, apenas plano. Sistema separa localização aproximada de autorização de ataque.",
+      "evidence": {
+        "record_id": "O8C-B22-063",
+        "line_start": 205233,
+        "line_end": 205416,
+        "span_sha256_utf8": "4f2d4237d5f3203c4feecae4f2700707873cc310d2fa568f1c530c486d910e21"
+      }
+    },
+    {
+      "day": 218,
+      "subject": "conflict",
+      "state": "Frota muda prontidão, sinais do Vento de Orvan solicitam suspensão ofensiva até revisão. Harek interpreta, surge possibilidade de capitães discordantes.",
+      "evidence": {
+        "record_id": "O8C-B22-064",
+        "line_start": 205417,
+        "line_end": 205524,
+        "span_sha256_utf8": "dd7b9b08df571a3bef2e70ecadbacd635e725878ebf5f3c2ae28177f397dda9e"
+      }
+    },
+    {
+      "day": 218,
+      "subject": "diplomacy",
+      "state": "02h53 Orvan, comandante Vento de Orvan, comunica-se, afirma não atacar bairros novamente; confirma transferência ao navio principal, segunda fonte junto ao Elo, sem sala específica. Ajuda condicionada à proteção de vidas, não submissão da tripulação.",
+      "evidence": {
+        "record_id": "O8C-B22-067",
+        "line_start": 205775,
+        "line_end": 205986,
+        "span_sha256_utf8": "e682aa0219704611df67a8b7340d185f5f9edb5f07e30abfd1883f7d18ad8c5a"
+      }
+    },
+    {
+      "day": 218,
+      "subject": "institution",
+      "state": "Orvan informa afastamento/restrição de Nysara, ordena suspender novos bombardeios e contata dois capitães. Cooperação potencial entre independentes, primeiro rompimento público de obediência absoluta; não comando de Lucas sobre Orvan nem aliança total.",
+      "evidence": {
+        "record_id": "O8C-B22-068",
+        "line_start": 205987,
+        "line_end": 206056,
+        "span_sha256_utf8": "dd6186297a61521c4a483e400187f3dfbb6c0a8d977b0ed74c24c6197a8c41cb"
+      }
+    },
+    {
+      "day": 218,
+      "subject": "technology",
+      "state": "03h11 projeto de acesso modular temporário entre embarcações condicionado a proximidade/estabilidade e apoios físicos, ainda não construído. Materiais e energia reduzidos, papéis divididos: Miren análise/Elo, pilotos navegação, Harek conhecimento naval, Orvan suspensão, Lucas proteção.",
+      "evidence": {
+        "record_id": "O8C-B22-069",
+        "line_start": 206057,
+        "line_end": 206246,
+        "span_sha256_utf8": "a51d3761cacec039834f68b089072c2fcee9294dccab3e22c5f0d08a5857115a"
+      }
+    },
+    {
+      "day": 218,
+      "subject": "conflict",
+      "state": "03h28 magia militar de correntes provoca onda e ameaça auxiliares; Draevor insiste sem supervisão Nysara. Serpente visual é forma de água, não criatura viva (bestiário negativo, não registrar espécie).",
+      "evidence": {
+        "record_id": "O8C-B22-070",
+        "line_start": 206247,
+        "line_end": 206344,
+        "span_sha256_utf8": "fdf6d10b90048f716ed7ad46b6693323d462cfbc8a8f91c68b55a2d82ea68ff3"
+      }
+    },
+    {
+      "day": 218,
+      "subject": "rescue",
+      "state": "Corvo atravessa região menos intensa com proteção modular limitada e apoio de Miren, Nável/Yra navegam, Harek auxilia marinheiro. Orvan protege auxiliar, Lucas considera resgate condicionado a sobrevivência própria; não anula oceano nem ponte construída.",
+      "evidence": {
+        "record_id": "O8C-B22-071",
+        "line_start": 206345,
+        "line_end": 206532,
+        "span_sha256_utf8": "ddea0c0d02a79948429804e4ba0775a2bd71861a55c612210864a0b8317c3050"
+      }
+    },
+    {
+      "day": 218,
+      "subject": "exploration",
+      "state": "03h49 tempestade artificial perde intensidade, embarcações recuperam estabilidade, Nável observa e Yra examina mapa. Cena aberta, aproximação ao Trono de Sal, ponte/resgate final ainda não realizados no intervalo.",
+      "evidence": {
+        "record_id": "O8C-B22-073",
+        "line_start": 206649,
+        "line_end": 206661,
+        "span_sha256_utf8": "ffc2c3a41b0729c40cdc17fe3d935e87ed0dc92add90de76c5aa1dd54fa55e69"
+      }
+    }
+  ],
+  "deferred_review": [
+    {
+      "issue": "Aurora I testado e utilizado sob comando humano, falha segura preservada e indisponível após danos; Bastião público, não Torre residencial do Criador nem poder pessoal novo.",
+      "action": "Manter história técnica e limites temporais sem generalizar para estado posterior."
+    },
+    {
+      "issue": "Lira sequestrada viva, resgate final não narrado ainda; afeto paterno não adoção/filiação, Miren salvou pacientes e ferimento atendido. Identidade familiar ainda não revelada.",
+      "action": "Preservar agência, conhecimento por perspectiva e continuidade."
+    },
+    {
+      "issue": "Frota 11 combate + 3 auxiliares, Orvan cooperação independente, Nysara recusa e corte de alimentação, Harek depoimento a verificar. Draevor não derrotado.",
+      "action": "Não inferir captura final, rendição, aquisição naval ou transferência de soberania."
+    },
+    {
+      "issue": "Ressaca/Taren e vazamento do abrigo pendentes; nenhuma morte confirmada apenas em setores verificados, não ausência global comprovada.",
+      "action": "Preservar incertezas e D199 O8C-B14-038."
+    }
+  ],
+  "review_policy": {
+    "mode": "RECOVER_FIRST_REVIEW_AT_CURRENT_DAY",
+    "user_authorized": true,
+    "description": "Recover and append historical data in chronological source order, track evolving facts and preserve previous states; defer global reconciliation, refactors, semantic deduplication, final regression suite and canon promotion until historical intake reaches D579. Minimal per-write source, role, range, hash and readback safeguards remain.",
+    "no_current_story_action": true
+  },
+  "verification": {
+    "source_anchor_count": 73,
+    "section_count": 5,
+    "source_ranges_contiguous": true,
+    "prior_receipt_hash_verified": true,
+    "prior_candidates_checkpoint_count": 1583,
+    "prior_candidate_files_unchanged_by_patch": false,
+    "queue_hash_verified": true,
+    "checkpoint_hash_verified": true,
+    "role_integrity": true,
+    "unique_ids": true,
+    "previous_span_anchor_verified": true,
+    "controller_review_not_exhaustive": true,
+    "native_semantic_receipt_validation": "DEFERRED_FOR_NEW_FORMAT",
+    "independent_review": false,
+    "source_hashes_manifest_previously_verified_not_recomputed": true
+  },
+  "canon_changed": false,
+  "semantic_certification": false,
+  "promotion": false,
+  "next_line": 206662
+}
