@@ -71,6 +71,17 @@ class RecoveryTests(unittest.TestCase):
         self.invoke();p=self.root/"out"/"local-A.json";x=json.loads(p.read_text())
         x["payload"]["review"]["receipt"]["confidence"]=.99;p.write_text(json.dumps(x))
         with self.assertRaises(ValueError):self.invoke()
+    def test_deleted_attempt_journal(self):
+        self.invoke()
+        (self.root/"out"/"local-A.attempt-1.json").unlink()
+        with self.assertRaises(ValueError):self.invoke()
+        self.assertEqual(self.calls,["a","b"])
+    def test_tampered_attempt_journal(self):
+        self.invoke()
+        p=self.root/"out"/"local-B.attempt-1.json"
+        x=json.loads(p.read_text());x["payload"]["attempt"]=2;p.write_text(json.dumps(x))
+        with self.assertRaises(ValueError):self.invoke()
+        self.assertEqual(self.calls,["a","b"])
     def test_cross_slot_replay(self):
         self.invoke();p=self.root/"out"/"local-B.json";p.write_bytes((self.root/"out"/"local-A.json").read_bytes())
         with self.assertRaises(ValueError):self.invoke()
