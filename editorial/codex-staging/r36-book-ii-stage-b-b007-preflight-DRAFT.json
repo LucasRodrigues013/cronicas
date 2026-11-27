@@ -1,6 +1,6 @@
 {
   "schema": "worldroot-r36-b007-preflight-v1",
-  "status": "STRUCTURAL_PREFLIGHT_PASS_NATIVE_CANDIDATE_VALIDATED_NOT_APPROVED",
+  "status": "NATIVE_CANDIDATE_AUTHOR_APPROVED_INCORPORATION_PENDING",
   "base_checkpoint": "c760388d567011ef9b152e2323c8ed94d06f62d1",
   "base_archive": "bd94ce02c705904b0ad9a562bc8edce3e3039f77",
   "engine": "46c40e18d3e0f4fbcafc025ae9d08b91ca6e6417",
@@ -207,5 +207,23 @@
       "production_hold": true,
       "approval_required": true
     }
+  },
+  "author_approval": {
+    "status": "GRANTED_B007_AND_SQLITE_COMPATIBILITY_ONLY",
+    "date": "2026-11-26",
+    "instruction": "MEGABRAIN, aprovo o B007 e a correção de compatibilidade SQLite homologada. Execute a incorporação controlada, automatize as etapas autorizadas pelo GitHub Actions gratuito, preserve os hashes, registre o checkpoint e prepare o B008. Não avance a narrativa nem libere a produção.",
+    "approved_review_commit": "3219b11cf78fdd341a19173ff51ca7c5d0e43d10",
+    "validated_commit": "c9902dc23a3778058c49e8d35a7db406fb6bc5cc",
+    "engine": "46c40e18d3e0f4fbcafc025ae9d08b91ca6e6417",
+    "native_receipt_sha256": "b062cfcaced88ca834c4fa984ea3032e255f0b02df605c223871800e76a046d4",
+    "approved_ids": [
+      460,
+      520
+    ],
+    "approved_fields": 19,
+    "incorporation_status": "PENDING_EXACT_HASH_TRANSFER",
+    "production_hold": true,
+    "production_approval_required": true,
+    "semantic_certification": false
   }
 }
