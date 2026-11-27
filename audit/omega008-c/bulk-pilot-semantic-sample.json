@@ -1,0 +1,746 @@
+{
+  "schema": "worldroot-omega008-c-bulk-semantic-sample-v1",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "macro_id": "f55497c946b79e7d953e7321721d7441fbed288e7764403cb97b3ff2152342c8",
+  "reviewed_sample_range": [
+    1217,
+    1679
+  ],
+  "sample_scope": "Coherent initial response and author choice; not full macrolot and not independent.",
+  "records": [
+    {
+      "id": "O8C-BULK-P1-S001",
+      "type": "choice",
+      "authority": "AUTHOR_REQUEST_OR_CHOICE",
+      "axes": [
+        9,
+        10,
+        14,
+        18,
+        19,
+        26,
+        28,
+        29
+      ],
+      "entities": [
+        "lucas",
+        "varo"
+      ],
+      "summary": "Autor define projeto de convivência entre povos e criações, investigação da origem do protagonista e criação de um conselheiro político/estratégico; intenção, não execução.",
+      "day": 1,
+      "book": "I",
+      "chapter_hint": 4,
+      "verification": "CONTROLLER_REVIEWED_DEVELOPMENT_SAMPLE_NOT_FULL_MACRO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 1220,
+        "line_end": 1222,
+        "role": "Prompt",
+        "span_sha256_utf8": "d6edeae8493492062c049ae9440263297e854fa13183e7470b047dd82f2196ae"
+      }
+    },
+    {
+      "id": "O8C-BULK-P1-S002",
+      "type": "state",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "axes": [
+        1,
+        2,
+        9,
+        10,
+        18,
+        19,
+        26
+      ],
+      "entities": [
+        "lucas",
+        "legiao"
+      ],
+      "summary": "D1 fim da tarde, acampamento; entusiasmo e responsabilidade pelas 300 vidas, sonho multirracial e origem ainda desconhecida.",
+      "day": 1,
+      "book": "I",
+      "chapter_hint": 4,
+      "verification": "CONTROLLER_REVIEWED_DEVELOPMENT_SAMPLE_NOT_FULL_MACRO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 1255,
+        "line_end": 1287,
+        "role": "Response",
+        "span_sha256_utf8": "a143fdff528b258fbe69197931134a85c5493495fd46245ac2df505d803ddc14"
+      }
+    },
+    {
+      "id": "O8C-BULK-P1-S003",
+      "type": "relation",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "axes": [
+        7,
+        8,
+        9,
+        19,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "varo"
+      ],
+      "summary": "Lucas pretende dividir responsabilidades; Varo distingue criação de seguidores de conquista de confiança.",
+      "day": 1,
+      "book": "I",
+      "chapter_hint": 4,
+      "verification": "CONTROLLER_REVIEWED_DEVELOPMENT_SAMPLE_NOT_FULL_MACRO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 1289,
+        "line_end": 1299,
+        "role": "Response",
+        "span_sha256_utf8": "024fb3b0610a5bbacb86351314674620b2402b0d7e6f28db6ca0b3e076aff769"
+      }
+    },
+    {
+      "id": "O8C-BULK-P1-S004",
+      "type": "event",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "axes": [
+        3,
+        9,
+        24
+      ],
+      "entities": [
+        "lucas",
+        "chefe-orc-sem-nome"
+      ],
+      "summary": "Prisioneiro recebe água com amarras parcialmente afrouxadas, sob custódia.",
+      "day": 1,
+      "book": "I",
+      "chapter_hint": 4,
+      "verification": "CONTROLLER_REVIEWED_DEVELOPMENT_SAMPLE_NOT_FULL_MACRO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 1303,
+        "line_end": 1307,
+        "role": "Response",
+        "span_sha256_utf8": "2cec6b5560638780c06320b5cdce37c8bd07c71eef2644377b4ba559b6eec96d"
+      }
+    },
+    {
+      "id": "O8C-BULK-P1-S005",
+      "type": "knowledge",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "axes": [
+        4,
+        6,
+        18,
+        19,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "chefe-orc-sem-nome"
+      ],
+      "summary": "Lucas afirma não ser humano deste mundo, sem comprovar outra espécie; orc reconhece aparência humana e reage com desconfiança à proposta de convivência.",
+      "day": 1,
+      "book": "I",
+      "chapter_hint": 4,
+      "verification": "CONTROLLER_REVIEWED_DEVELOPMENT_SAMPLE_NOT_FULL_MACRO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 1309,
+        "line_end": 1325,
+        "role": "Response",
+        "span_sha256_utf8": "63178b3c15fd00da1d7032f31aa85f3e9cfbe784ea5353be96a43b108908411f"
+      }
+    },
+    {
+      "id": "O8C-BULK-P1-S006",
+      "type": "report",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "axes": [
+        23,
+        24,
+        27
+      ],
+      "entities": [
+        "varo",
+        "chefe-orc-sem-nome"
+      ],
+      "summary": "Chefe atribui hostilidade à percepção de ameaça e admite intenção de atravessar à força; relato de parte interessada, não verificação independente.",
+      "day": 1,
+      "book": "I",
+      "chapter_hint": 4,
+      "verification": "CONTROLLER_REVIEWED_DEVELOPMENT_SAMPLE_NOT_FULL_MACRO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 1329,
+        "line_end": 1343,
+        "role": "Response",
+        "span_sha256_utf8": "c72504213e82852fa50419d86b38a71ef97e810e383378cde04c30ff92321533"
+      }
+    },
+    {
+      "id": "O8C-BULK-P1-S007",
+      "type": "report",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "axes": [
+        15,
+        18,
+        19,
+        20,
+        23,
+        24,
+        27
+      ],
+      "entities": [
+        "chefe-orc-sem-nome",
+        "bandeira-cinzenta",
+        "varo"
+      ],
+      "summary": "Prisioneiro descreve divisão política/religiosa humana, alegações sobre conquistas e máquinas de fogo da Bandeira Cinzenta e admite saques pelo próprio clã; acusação externa não corroborada.",
+      "day": 1,
+      "book": "I",
+      "chapter_hint": 4,
+      "verification": "CONTROLLER_REVIEWED_DEVELOPMENT_SAMPLE_NOT_FULL_MACRO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 1345,
+        "line_end": 1371,
+        "role": "Response",
+        "span_sha256_utf8": "23470feac4be8fe69d0f4c6234ca436b2f26d992a3131551b84dcd418a218efe"
+      }
+    },
+    {
+      "id": "O8C-BULK-P1-S008",
+      "type": "plan",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "axes": [
+        7,
+        11,
+        12,
+        14,
+        19,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "varo"
+      ],
+      "summary": "Varo alerta sobre reserva crítica e impossibilidade de presumir memórias verdadeiras de mundo desconhecido; Lucas busca capacidade de questionar, não onisciência.",
+      "day": 1,
+      "book": "I",
+      "chapter_hint": 4,
+      "verification": "CONTROLLER_REVIEWED_DEVELOPMENT_SAMPLE_NOT_FULL_MACRO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 1373,
+        "line_end": 1397,
+        "role": "Response",
+        "span_sha256_utf8": "3f65c5230b28a658dc1f1398226e96dc4292819b0ad26de2e03940fcb10acaf8"
+      }
+    },
+    {
+      "id": "O8C-BULK-P1-S009",
+      "type": "event",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "axes": [
+        3,
+        11,
+        12,
+        14
+      ],
+      "entities": [
+        "lucas",
+        "kael"
+      ],
+      "summary": "Lucas realiza segunda criação pessoal, com dor e esforço, produzindo figura masculina em manifestação azul localizada.",
+      "day": 1,
+      "book": "I",
+      "chapter_hint": 4,
+      "verification": "CONTROLLER_REVIEWED_DEVELOPMENT_SAMPLE_NOT_FULL_MACRO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 1399,
+        "line_end": 1423,
+        "role": "Response",
+        "span_sha256_utf8": "22466bdfe307f33c627178c45abced2281a4cc3e027678032a549ea738fad0ec"
+      }
+    },
+    {
+      "id": "O8C-BULK-P1-S010",
+      "type": "appearance",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "axes": [
+        4,
+        6,
+        13
+      ],
+      "entities": [
+        "kael"
+      ],
+      "summary": "Kael tem aparência jovem, alto, cabelos escuros com mechas prateadas e armadura negra mais leve com detalhes de prata; idade real e espécie não comprovadas.",
+      "day": 1,
+      "book": "I",
+      "chapter_hint": 4,
+      "verification": "CONTROLLER_REVIEWED_DEVELOPMENT_SAMPLE_NOT_FULL_MACRO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 1421,
+        "line_end": 1425,
+        "role": "Response",
+        "span_sha256_utf8": "b29238a9dbb7022a32c1d9d9faa42fc58e4b7c442a6158fed98eeba7d1bd0a11"
+      }
+    },
+    {
+      "id": "O8C-BULK-P1-S011",
+      "type": "identity",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "axes": [
+        4,
+        5,
+        7,
+        8,
+        11,
+        14,
+        19,
+        27
+      ],
+      "entities": [
+        "kael",
+        "lucas",
+        "varo"
+      ],
+      "summary": "Kael escolhe o próprio nome, reconhece seu criador e declara aptidões de análise, argumentação, organização e diplomacia, sem conhecer o mundo nem garantir infalibilidade.",
+      "day": 1,
+      "book": "I",
+      "chapter_hint": 4,
+      "verification": "CONTROLLER_REVIEWED_DEVELOPMENT_SAMPLE_NOT_FULL_MACRO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 1439,
+        "line_end": 1457,
+        "role": "Response",
+        "span_sha256_utf8": "53b3831c821b7dee05f93a4ba61892a1c4cce0390e93442a6b64c82730ef666d"
+      }
+    },
+    {
+      "id": "O8C-BULK-P1-S012",
+      "type": "relation",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "axes": [
+        7,
+        8,
+        9,
+        10,
+        19,
+        30
+      ],
+      "entities": [
+        "kael",
+        "varo",
+        "lucas"
+      ],
+      "summary": "Primeira troca bem-humorada entre Varo e Kael sobre política e ausência de leis; Lucas ri, Varo inicialmente não.",
+      "day": 1,
+      "book": "I",
+      "chapter_hint": 4,
+      "verification": "CONTROLLER_REVIEWED_DEVELOPMENT_SAMPLE_NOT_FULL_MACRO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 1459,
+        "line_end": 1471,
+        "role": "Response",
+        "span_sha256_utf8": "226bfb941d8d099ed3efb29bea51a5067c0849e5ecce7699c5240d190d302bdf"
+      }
+    },
+    {
+      "id": "O8C-BULK-P1-S013",
+      "type": "power",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "axes": [
+        11,
+        12,
+        13,
+        14,
+        24,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "varo"
+      ],
+      "summary": "Criação reduz reserva estimada a 1–2%; fraqueza e apoio de Varo; armadura atua fisicamente sem repor energia gasta; risco de colapso atribuído ao painel histórico.",
+      "day": 1,
+      "book": "I",
+      "chapter_hint": 4,
+      "verification": "CONTROLLER_REVIEWED_DEVELOPMENT_SAMPLE_NOT_FULL_MACRO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 1473,
+        "line_end": 1493,
+        "role": "Response",
+        "span_sha256_utf8": "7084fa6f5931b39798516a9d2ec77bafd6672737499b0a78444a46ecbe98256a"
+      }
+    },
+    {
+      "id": "O8C-BULK-P1-S014",
+      "type": "relation",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "axes": [
+        7,
+        8,
+        9,
+        10,
+        14,
+        29
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "varo"
+      ],
+      "summary": "Kael recomenda não resolver tudo criando pessoas, Varo concorda; Lucas acolhe divergência de ambos.",
+      "day": 1,
+      "book": "I",
+      "chapter_hint": 4,
+      "verification": "CONTROLLER_REVIEWED_DEVELOPMENT_SAMPLE_NOT_FULL_MACRO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 1495,
+        "line_end": 1503,
+        "role": "Response",
+        "span_sha256_utf8": "fd573e3b3d0f7570307a245d9ee358291c023b7682400bdebd6842ab1bd86562"
+      }
+    },
+    {
+      "id": "O8C-BULK-P1-S015",
+      "type": "organization",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "axes": [
+        7,
+        9,
+        18,
+        19,
+        20,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael"
+      ],
+      "summary": "Conselho informal de três: Varo em defesa/logística, Kael em negociação e instituições; direitos/deveres são propostas futuras, sem território reivindicado nem instituição oficial.",
+      "day": 1,
+      "book": "I",
+      "chapter_hint": 4,
+      "verification": "CONTROLLER_REVIEWED_DEVELOPMENT_SAMPLE_NOT_FULL_MACRO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 1505,
+        "line_end": 1545,
+        "role": "Response",
+        "span_sha256_utf8": "3a918c03b8b7d77535a2163e960c14fbcee7abffb183d2ef6f35ae4ac88c7513"
+      }
+    },
+    {
+      "id": "O8C-BULK-P1-S016",
+      "type": "question",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "axes": [
+        9,
+        18,
+        19,
+        26,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "kael"
+      ],
+      "summary": "Kael suscita conflito de justiça entre grupos com motivos legítimos de desconfiança; pergunta ainda sem resposta.",
+      "day": 1,
+      "book": "I",
+      "chapter_hint": 4,
+      "verification": "CONTROLLER_REVIEWED_DEVELOPMENT_SAMPLE_NOT_FULL_MACRO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 1547,
+        "line_end": 1551,
+        "role": "Response",
+        "span_sha256_utf8": "88cf9487554c60f164daa952dbe98c9da7c6898e81b393bc0706a0e9ca04c619"
+      }
+    },
+    {
+      "id": "O8C-BULK-P1-S017",
+      "type": "event",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "axes": [
+        3,
+        13,
+        23,
+        24,
+        26,
+        27
+      ],
+      "entities": [
+        "varo",
+        "legiao",
+        "patrulha-oriental"
+      ],
+      "summary": "Um batedor retorna ferido, relata homens armados, seis ou mais, e carroça não identificada; três companheiros separados ainda desaparecidos, sem morte observada.",
+      "day": 1,
+      "book": "I",
+      "chapter_hint": 4,
+      "verification": "CONTROLLER_REVIEWED_DEVELOPMENT_SAMPLE_NOT_FULL_MACRO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 1553,
+        "line_end": 1597,
+        "role": "Response",
+        "span_sha256_utf8": "c7d9cfaa535a2f760a0dbc9b7293deb4c26b638b6188166288e57d9bf2f129fa"
+      }
+    },
+    {
+      "id": "O8C-BULK-P1-S018",
+      "type": "knowledge",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "axes": [
+        7,
+        23,
+        24,
+        26,
+        27
+      ],
+      "entities": [
+        "kael",
+        "varo",
+        "patrulha-oriental"
+      ],
+      "summary": "Conselheiros separam informação confirmada de hipóteses sobre ataque, posto ou emboscada; três homens expostos.",
+      "day": 1,
+      "book": "I",
+      "chapter_hint": 4,
+      "verification": "CONTROLLER_REVIEWED_DEVELOPMENT_SAMPLE_NOT_FULL_MACRO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 1599,
+        "line_end": 1611,
+        "role": "Response",
+        "span_sha256_utf8": "a8a4dc98c1e0d6bf0bb3e79e6aa2c5a8f3775f587ecee33f93a506968b721cfb"
+      }
+    },
+    {
+      "id": "O8C-BULK-P1-S019",
+      "type": "state",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "axes": [
+        3,
+        10,
+        11,
+        19,
+        23,
+        26
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "varo",
+        "mensageiro-cavaleiro-sem-nome"
+      ],
+      "summary": "Emissário ainda aguarda, inquieto após manifestação; Lucas exausto, três homens desaparecidos; necessidade de delegar.",
+      "day": 1,
+      "book": "I",
+      "chapter_hint": 4,
+      "verification": "CONTROLLER_REVIEWED_DEVELOPMENT_SAMPLE_NOT_FULL_MACRO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 1613,
+        "line_end": 1629,
+        "role": "Response",
+        "span_sha256_utf8": "b952b16f89b1b44a715056088dcb0bba07b8567e7beec752e3d34989e61e5659"
+      }
+    },
+    {
+      "id": "O8C-BULK-P1-S020",
+      "type": "state",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "axes": [
+        1,
+        3,
+        11,
+        12,
+        19,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "legiao",
+        "kael",
+        "chefe-orc-sem-nome"
+      ],
+      "summary": "Painel mantém 300 vivos na última contagem, não nova contagem; 1 batedor retornou, 3 sem contato, Kael criado, reino ainda não fundado.",
+      "day": 1,
+      "book": "I",
+      "chapter_hint": 4,
+      "verification": "CONTROLLER_REVIEWED_DEVELOPMENT_SAMPLE_NOT_FULL_MACRO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 1631,
+        "line_end": 1654,
+        "role": "Response",
+        "span_sha256_utf8": "9ca083c3997f0fbf7c0b644fc29c07b5de8d194d14b3f6b18997304ebac6c85f"
+      }
+    },
+    {
+      "id": "O8C-BULK-P1-S021",
+      "type": "pending",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "axes": [
+        1,
+        19,
+        25,
+        26,
+        28,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael"
+      ],
+      "summary": "Fecho oferece busca controlada e diplomacia, sem execução; título de capítulo 5 aparece na mesma resposta, com numeração repetida na resposta seguinte (fronteira editorial a revisar).",
+      "day": 1,
+      "book": "I",
+      "chapter_hint": 5,
+      "verification": "CONTROLLER_REVIEWED_DEVELOPMENT_SAMPLE_NOT_FULL_MACRO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 1656,
+        "line_end": 1678,
+        "role": "Response",
+        "span_sha256_utf8": "bb8727b2d8873d9fa86d10af9b0d8cfb6fd47470c9c108b00aa422d98366daa0"
+      }
+    }
+  ],
+  "known_registry_ids": [
+    "lucas",
+    "varo",
+    "kael",
+    "legiao",
+    "bandeira-cinzenta"
+  ],
+  "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+  "semantic_cursor_unchanged": 1217,
+  "next_sample_work_start": 1680,
+  "notes": [
+    "Do not infer unknown species, biological age, actual death or identity from testimony.",
+    "Preserve duplicate chapter 5 marker as editorial anomaly.",
+    "Existing lots remain unchanged."
+  ],
+  "canon_changed": false,
+  "independent_review": false
+}
