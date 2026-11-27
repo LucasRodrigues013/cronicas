@@ -1,0 +1,3653 @@
+{
+  "schema": "worldroot-r36-semantic-lot-07-v1",
+  "base": "51e2f3b263cf8ffbf8e0c9b82a8476e1e584d26e",
+  "archive": "db53de0f7f58acc12da2c706dbeff5745cd83206",
+  "scope": "AUTHOR_ONLY",
+  "status": "AUTHOR_GATE_PENDING",
+  "production_hold": true,
+  "canon_changed": false,
+  "production_activated": false,
+  "semantic_certification": false,
+  "head_day": 579,
+  "sequence": 50,
+  "policy": "Contextual proposals only; no identity merges, global aliases, promotion, current-state inference or lexical reindex. All observations require native literal readback and author gate.",
+  "prior_counts": {
+    "logical_sources": 57,
+    "closed_receipts": 50,
+    "lines": 712265,
+    "profiles": 192,
+    "profiles_with_name_hits": 171,
+    "unresolved_speaker_labels": 158
+  },
+  "prior_candidate_validation": {
+    "04-native-candidates": {
+      "cards": 14,
+      "recovered": 67,
+      "pending": 125,
+      "anchor_checks": 183
+    },
+    "05-discoveries": {
+      "cards": 10,
+      "recovered": 20,
+      "pending": 380,
+      "anchor_checks": 24
+    }
+  },
+  "observations": [
+    {
+      "id": "candidate:tarek",
+      "field": "age_apparent",
+      "value": "Aproximadamente 50 anos na apresentação; não idade cronológica.",
+      "source": "D001-D383",
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 10256,
+          "anchor": "MIREN permanece de pé ao lado de um homem de aproximadamente cinquenta anos, com cabelos grisalhos e mãos marcadas pelo trabalho."
+        },
+        {
+          "line": 10258,
+          "anchor": "— Este é TAREK — apresenta ela. — Organiza a distribuição de alimentos e a manutenção do abrigo."
+        }
+      ]
+    },
+    {
+      "id": "candidate:tarek",
+      "field": "hair",
+      "value": "Grisalhos na apresentação.",
+      "source": "D001-D383",
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 10256,
+          "anchor": "MIREN permanece de pé ao lado de um homem de aproximadamente cinquenta anos, com cabelos grisalhos e mãos marcadas pelo trabalho."
+        },
+        {
+          "line": 10258,
+          "anchor": "— Este é TAREK — apresenta ela. — Organiza a distribuição de alimentos e a manutenção do abrigo."
+        }
+      ]
+    },
+    {
+      "id": "candidate:tarek",
+      "field": "occupation",
+      "value": "Organizava distribuição de alimentos e manutenção do abrigo.",
+      "source": "D001-D383",
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 10258,
+          "anchor": "— Este é TAREK — apresenta ela. — Organiza a distribuição de alimentos e a manutenção do abrigo."
+        }
+      ]
+    },
+    {
+      "id": "candidate:esmara",
+      "field": "age_apparent",
+      "value": "Aproximadamente 45 anos na apresentação.",
+      "source": "D001-D383",
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 21213,
+          "anchor": "Era uma mulher de aproximadamente quarenta e cinco anos, cabelos castanhos presos numa trança, rosto marcado pelo sol e mãos de quem passara boa parte da vida trabalhando na terra."
+        },
+        {
+          "line": 21215,
+          "anchor": "Chamava-se ESMARA."
+        }
+      ]
+    },
+    {
+      "id": "candidate:esmara",
+      "field": "hair",
+      "value": "Castanhos presos numa trança na apresentação.",
+      "source": "D001-D383",
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 21213,
+          "anchor": "Era uma mulher de aproximadamente quarenta e cinco anos, cabelos castanhos presos numa trança, rosto marcado pelo sol e mãos de quem passara boa parte da vida trabalhando na terra."
+        },
+        {
+          "line": 21215,
+          "anchor": "Chamava-se ESMARA."
+        }
+      ]
+    },
+    {
+      "id": "candidate:esmara",
+      "field": "face",
+      "value": "Rosto marcado pelo sol na apresentação.",
+      "source": "D001-D383",
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 21213,
+          "anchor": "Era uma mulher de aproximadamente quarenta e cinco anos, cabelos castanhos presos numa trança, rosto marcado pelo sol e mãos de quem passara boa parte da vida trabalhando na terra."
+        },
+        {
+          "line": 21215,
+          "anchor": "Chamava-se ESMARA."
+        }
+      ]
+    },
+    {
+      "id": "candidate:esmara",
+      "field": "origin",
+      "value": "Veio da aldeia de Veldon; cidade natal não comprovada.",
+      "source": "D001-D383",
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 21217,
+          "anchor": "Viera da aldeia de VELDON depois de receber uma proposta de avaliação agrícola remunerada."
+        }
+      ]
+    },
+    {
+      "id": "candidate:esmara",
+      "field": "occupation",
+      "value": "Especialista agrícola contratada inicialmente para estudo remunerado, sem ingresso automático na Legião.",
+      "source": "D001-D383",
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 21895,
+          "anchor": "— E ESMARA aceitou uma contratação inicial remunerada para desenvolver o estudo agrícola. Não aceitou ainda ingressar na comunidade da Legião, mas deseja continuar trabalhando conosco."
+        }
+      ]
+    },
+    {
+      "id": "candidate:esmara",
+      "field": "values",
+      "value": "Recusou consumo humano antes de verificar segurança e propriedades da raiz apresentada.",
+      "source": "D001-D383",
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 27629,
+          "anchor": "GRAZHA trouxe amostras da raiz razhka, acompanhadas de informações sobre seu cultivo tradicional."
+        },
+        {
+          "line": 27631,
+          "anchor": "ESMARA recusou qualquer consumo humano antes de compreender suas propriedades e verificar se era segura."
+        }
+      ]
+    },
+    {
+      "id": "edran",
+      "field": "hair",
+      "value": "Castanhos presos na nuca na primeira apresentação.",
+      "source": "D001-D383",
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 1808,
+          "anchor": "Um deles é um homem de aproximadamente quarenta anos, cabelos castanhos presos na nuca e uma cicatriz que atravessa a sobrancelha direita. Sua armadura não é tão impressionante quanto as dos seus soldados, mas revela manutenção cuidadosa."
+        },
+        {
+          "line": 1812,
+          "anchor": "— Sou EDRAN VAEL, tenente da Vigia de Halvern, a serviço do Marquesado de Thalor."
+        }
+      ]
+    },
+    {
+      "id": "edran",
+      "field": "face",
+      "value": "Cicatriz atravessava a sobrancelha direita na primeira apresentação.",
+      "source": "D001-D383",
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 1808,
+          "anchor": "Um deles é um homem de aproximadamente quarenta anos, cabelos castanhos presos na nuca e uma cicatriz que atravessa a sobrancelha direita. Sua armadura não é tão impressionante quanto as dos seus soldados, mas revela manutenção cuidadosa."
+        },
+        {
+          "line": 1812,
+          "anchor": "— Sou EDRAN VAEL, tenente da Vigia de Halvern, a serviço do Marquesado de Thalor."
+        }
+      ]
+    },
+    {
+      "id": "edran",
+      "field": "age_apparent",
+      "value": "Aproximadamente 40 anos na primeira apresentação; contraste temporal com estimativa editorial 52, não sobrescrever automaticamente.",
+      "source": "D001-D383",
+      "valid_at": null,
+      "kind": "TEMPORAL_DESIGN_CONFLICT",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 1808,
+          "anchor": "Um deles é um homem de aproximadamente quarenta anos, cabelos castanhos presos na nuca e uma cicatriz que atravessa a sobrancelha direita. Sua armadura não é tão impressionante quanto as dos seus soldados, mas revela manutenção cuidadosa."
+        },
+        {
+          "line": 1812,
+          "anchor": "— Sou EDRAN VAEL, tenente da Vigia de Halvern, a serviço do Marquesado de Thalor."
+        }
+      ]
+    },
+    {
+      "id": "edran",
+      "field": "equipment",
+      "value": "Armadura cuidada e lança com tecido azul e torre dourada na primeira apresentação, sem inferência de custódia atual.",
+      "source": "D001-D383",
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 1808,
+          "anchor": "Um deles é um homem de aproximadamente quarenta anos, cabelos castanhos presos na nuca e uma cicatriz que atravessa a sobrancelha direita. Sua armadura não é tão impressionante quanto as dos seus soldados, mas revela manutenção cuidadosa."
+        },
+        {
+          "line": 1810,
+          "anchor": "No tecido azul preso à sua lança, brilha a torre dourada."
+        },
+        {
+          "line": 1812,
+          "anchor": "— Sou EDRAN VAEL, tenente da Vigia de Halvern, a serviço do Marquesado de Thalor."
+        }
+      ]
+    },
+    {
+      "id": "nixa",
+      "field": "skills",
+      "value": "Aptidão para investigação, reconstrução de acontecimentos, identificação de contradições e formulação de hipóteses; aptidão não equivale a experiência.",
+      "source": "D001-D383",
+      "valid_at": "D178",
+      "kind": "HISTORICAL_OBSERVATION",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 108093,
+          "anchor": "Escolheu chamar-se NIXA VEL."
+        },
+        {
+          "line": 108095,
+          "anchor": "Possuía aptidão extraordinária para investigação, reconstrução de acontecimentos, identificação de contradições e formulação de hipóteses."
+        }
+      ]
+    },
+    {
+      "id": "nixa",
+      "field": "values",
+      "value": "Declara buscar o que realmente aconteceu, não fabricar culpa.",
+      "source": "D001-D383",
+      "valid_at": "D178",
+      "kind": "HISTORICAL_OBSERVATION",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 108093,
+          "anchor": "Escolheu chamar-se NIXA VEL."
+        },
+        {
+          "line": 108099,
+          "anchor": "— Quero descobrir o que aconteceu de verdade. Não quero aprender a fazer uma pessoa parecer culpada."
+        }
+      ]
+    },
+    {
+      "id": "ira",
+      "field": "skills",
+      "value": "Aptidão de Íria Nemar para percepção arcana, análise de encantamentos, contenção e interferências; prática necessária.",
+      "source": "D001-D383",
+      "valid_at": "D178",
+      "kind": "HISTORICAL_OBSERVATION",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 108189,
+          "anchor": "Escolheu o nome ÍRIA NEMAR."
+        },
+        {
+          "line": 108191,
+          "anchor": "Sua matriz possuía grande aptidão para percepção arcana, análise de encantamentos, contenção e compreensão de interferências mágicas."
+        },
+        {
+          "line": 108193,
+          "anchor": "Mas suas capacidades precisariam de prática e estudo."
+        }
+      ]
+    },
+    {
+      "id": "ira",
+      "field": "knowledge",
+      "value": "Na origem não sabia neutralizar qualquer magia nem ler pensamentos. Não transferir à caravaneira Iria.",
+      "source": "D001-D383",
+      "valid_at": "D178",
+      "kind": "HISTORICAL_OBSERVATION",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 108189,
+          "anchor": "Escolheu o nome ÍRIA NEMAR."
+        },
+        {
+          "line": 108195,
+          "anchor": "Ela ainda não sabia neutralizar qualquer magia."
+        },
+        {
+          "line": 108197,
+          "anchor": "Nem podia ler pensamentos."
+        }
+      ]
+    },
+    {
+      "id": "rhem",
+      "field": "goals",
+      "value": "Segundo registro de Varo, desejava defesa e formação; não nomeação automática.",
+      "source": "D001-D383",
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 35085,
+          "anchor": "“Os dez campeões não demonstraram interesse uniforme em assumir funções de liderança. Recomendo avaliação individual antes de qualquer nomeação. SERON deseja desenvolver exploração; CÍRAN, instrução ofensiva; RHEM, defesa e formação. Os demais serão consultados.”"
+        }
+      ]
+    },
+    {
+      "id": "rhem",
+      "field": "location",
+      "value": "Coordenação defensiva em Três Arcos durante ausência de Varo; observação histórica, não D579.",
+      "source": "D001-D383",
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 87370,
+          "anchor": "VARO havia organizado a proteção da expedição e deixado RHEM responsável pela coordenação defensiva de Três Arcos durante sua ausência."
+        }
+      ]
+    },
+    {
+      "id": "rhem",
+      "field": "values",
+      "value": "Preservar Primeira Legião e treinar especialidades distintas.",
+      "source": "D001-D383",
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 124129,
+          "anchor": "RHEM apresentou a proposta de reorganização."
+        },
+        {
+          "line": 124131,
+          "anchor": "— Não quero desmontar a Primeira Legião — explicou. — Quero que nossas especialidades sejam reconhecidas e treinadas de maneira mais consistente."
+        }
+      ]
+    },
+    {
+      "id": "candidate:toran",
+      "field": "body",
+      "value": "Descrito como homem enorme em encontro com Nina; sem altura numérica.",
+      "source": "D001-D383",
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 78219,
+          "anchor": "— Prazer, NINA. Eu sou TORAN."
+        },
+        {
+          "line": 78221,
+          "anchor": "A menina observou o homem enorme."
+        }
+      ]
+    },
+    {
+      "id": "candidate:nina",
+      "field": "identity",
+      "value": "Nina, menina que responde ao atendimento de Toran; não unificar com outras crianças.",
+      "source": "D001-D383",
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 78215,
+          "anchor": "— Como você se chama?"
+        },
+        {
+          "line": 78217,
+          "anchor": "— NINA."
+        },
+        {
+          "line": 78219,
+          "anchor": "— Prazer, NINA. Eu sou TORAN."
+        }
+      ]
+    },
+    {
+      "id": "plot:halvern",
+      "field": "history",
+      "value": "Primeiro contato diplomático documentado: Edran se identifica como tenente a serviço de Thalor; Kael representa seu comandante. Não equivale a tratado.",
+      "source": "D001-D383",
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 1812,
+          "anchor": "— Sou EDRAN VAEL, tenente da Vigia de Halvern, a serviço do Marquesado de Thalor."
+        },
+        {
+          "line": 1816,
+          "anchor": "— KAEL. Represento nosso comandante."
+        }
+      ]
+    },
+    {
+      "id": "chr-tessa-municipal",
+      "field": "identity",
+      "value": "Tessa, responsável por recebimento e movimentação de suprimentos municipais; não pesquisadora. Rótulo editorial não é nome literal.",
+      "source": "history/sources/06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "valid_at": null,
+      "kind": "NOMINAL_MISMATCH",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 32439,
+          "anchor": "Era uma mulher chamada Tessa, responsável por uma das frentes municipais de recebimento e movimentação de suprimentos, convidada por Téria para avaliar a futura logística do campus."
+        }
+      ]
+    },
+    {
+      "id": "item:lira-caderno-d305",
+      "field": "history",
+      "value": "Caderno entregue por Lira a Lucas; o caderno observado D309 não pode ser automaticamente identificado com o mesmo objeto.",
+      "source": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-006",
+      "valid_at": "D305",
+      "kind": "DESCRIPTIVE_ITEM_ANCHOR",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 3118,
+          "anchor": "A jovem retirou um pequeno caderno da bolsa."
+        },
+        {
+          "line": 3164,
+          "anchor": "— Queria guardar as coisas que conheci aqui."
+        }
+      ]
+    },
+    {
+      "id": "item:vareth-placa-d253",
+      "field": "history",
+      "value": "Pequena placa com símbolo das Quatro Correntes; agradecimento, não pagamento.",
+      "source": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-005",
+      "valid_at": "D253",
+      "kind": "DESCRIPTIVE_ITEM_ANCHOR",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 33111,
+          "anchor": "AELDRIC assentiu."
+        },
+        {
+          "line": 33121,
+          "anchor": "Nela estava representado o símbolo das Quatro Correntes."
+        }
+      ]
+    },
+    {
+      "id": "item:iana-placa-d240",
+      "field": "history",
+      "value": "Placa de bronze histórica entregue por Iana, sem presumir transferência definitiva de propriedade.",
+      "source": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-005",
+      "valid_at": "D240",
+      "kind": "DESCRIPTIVE_ITEM_ANCHOR",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 24669,
+          "anchor": "Foi então que IANA abriu uma caixa antiga."
+        },
+        {
+          "line": 24671,
+          "anchor": "Retirou uma pequena placa de bronze."
+        }
+      ]
+    },
+    {
+      "id": "item:desenho-calderva-d366",
+      "field": "history",
+      "value": "Desenho de duas cidades destinado a Lira; Lucas aceita levar, não recebe como presente pessoal.",
+      "source": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-006",
+      "valid_at": "D366",
+      "kind": "DESCRIPTIVE_ITEM_ANCHOR",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 19196,
+          "anchor": "A criança mostrou um pequeno desenho."
+        },
+        {
+          "line": 19210,
+          "anchor": "A menina sorriu."
+        }
+      ]
+    },
+    {
+      "id": "item:caedren-bone-d393",
+      "field": "history",
+      "value": "Boné azul-escuro trazido por Thaeron, não confundir com outro boné posterior.",
+      "source": "history/sources/02_DIA_383_A_431_FONTE_LITERAL.txt",
+      "valid_at": "D393",
+      "kind": "DESCRIPTIVE_ITEM_ANCHOR",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 21149,
+          "anchor": "Antes de partir, o herói ergueu um pequeno boné azul-escuro."
+        },
+        {
+          "line": 21151,
+          "anchor": "O presente que THAERON trouxera de Três Arcos."
+        }
+      ]
+    },
+    {
+      "id": "item:caedren-espada-observada",
+      "field": "history",
+      "value": "Espada gasta junto ao leito de Caedren D561; não identificar automaticamente com espada D393.",
+      "source": "LVI-C05-PIII-D561-AUTHOR-SOURCE",
+      "valid_at": "D561",
+      "kind": "DESCRIPTIVE_ITEM_ANCHOR",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 2131,
+          "anchor": "Na estrada, Caedren dormia numa hospedaria pequena, com a espada gasta junto ao leito e duas cartas seguindo por caminhos diferentes. Não sabia que Lucas perguntara por ele naquele dia."
+        }
+      ]
+    },
+    {
+      "id": "item:argos-gravetos-d579",
+      "field": "history",
+      "value": "Pequeno ARGOS de gravetos oferecido pela criança; guardado na prateleira da Torre, sem inferir galeria.",
+      "source": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+      "valid_at": "D579",
+      "kind": "DESCRIPTIVE_ITEM_ANCHOR",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 1875,
+          "anchor": "A criança trazia seu pequeno ARGOS de gravetos."
+        },
+        {
+          "line": 2263,
+          "anchor": "Lucas colocou a pequena aeronave de gravetos sobre a prateleira, perto da maquete da ponte."
+        }
+      ]
+    },
+    {
+      "id": "coracao-aerun",
+      "field": "history",
+      "value": "No trecho histórico citado, Coração de AERÚN ainda não existia e não era fonte de energia atual; não retroagir a ativação.",
+      "source": "history/sources/06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "valid_at": null,
+      "kind": "TEMPORAL_ALIAS_OBSERVATION",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 10701,
+          "anchor": "O Coração de AERÚN ainda não existe e não deve ser tratado como fonte atual de energia."
+        }
+      ]
+    },
+    {
+      "id": "plot:coracao",
+      "field": "history",
+      "value": "Mesmo trecho contextual da trama, não fundir ID tecnológico com ID de arco.",
+      "source": "history/sources/06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "valid_at": null,
+      "kind": "TEMPORAL_ALIAS_OBSERVATION",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 10701,
+          "anchor": "O Coração de AERÚN ainda não existe e não deve ser tratado como fonte atual de energia."
+        }
+      ]
+    }
+  ],
+  "label_triage": {
+    "comerciante": {
+      "count": 25,
+      "first_source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "first_line": 782,
+      "first_anchor_sha256": "d1515a5efbdca6f344680f4e0a7458aca4cc3bfc3e56d1e68c487b1fa7e69ec4",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "atendente": {
+      "count": 4,
+      "first_source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "first_line": 1338,
+      "first_anchor_sha256": "09119565ca69b37def57ae5ed4eeab1e81f8c64166b0c2594a51a88e38fdeb75",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "artesão": {
+      "count": 7,
+      "first_source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "first_line": 1520,
+      "first_anchor_sha256": "ccbcf5bc9867c8092ccb7920a9f8dc1ad90815c78347b22fea00ad0f30ba7dff",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "pesquisadora": {
+      "count": 14,
+      "first_source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "first_line": 1600,
+      "first_anchor_sha256": "3ce33c3d9d243c2f2d9e30ac73bd1aa9eb7163ca49e499a6c54559392fd59c94",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "colega": {
+      "count": 2,
+      "first_source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "first_line": 1648,
+      "first_anchor_sha256": "113652f09098b417d0f694c5c0bfd173242312e8f58cfcda9c52115150e5befb",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "senhora": {
+      "count": 28,
+      "first_source": "LV-C15-PIV-D530-AUTHOR-SOURCE",
+      "first_line": 260,
+      "first_anchor_sha256": "424293cfe3419dd5c3e829be31e9ef85e70e75e16795b6977cac18d31c97d929",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "tessa": {
+      "count": 3,
+      "first_source": "LV-C15-PIV-D530-AUTHOR-SOURCE",
+      "first_line": 568,
+      "first_anchor_sha256": "9e9cd8dbda3808c33ea66c4bdd4cbfc3f94698c0bb58564f6e47236ac3b14c91",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "CONTEXTUAL_PROPOSAL",
+      "semantic_resolution": false,
+      "activate_alias": false,
+      "proposal": {
+        "target": "candidate:tessa-maren",
+        "source": "LV-C15-PIV-D530-AUTHOR-SOURCE",
+        "anchors": [
+          {
+            "line": 558,
+            "anchor": "Do outro lado de Três Arcos, numa oficina menos barulhenta, Beren Tol e Tessa Maren também trabalhavam."
+          },
+          {
+            "line": 568,
+            "anchor": "**TESSA —** Melhor. Mas ainda quero testar o movimento de alguém mudando de posição, não só uma carga parada."
+          }
+        ],
+        "reason": "Tessa Maren nesta cena; não Tessa municipal, Arin ou Morven.",
+        "valid_at": "D530",
+        "action": "SCENE_ONLY_BINDING",
+        "status": "AUTHOR_GATE_PENDING",
+        "scope": "AUTHOR_ONLY",
+        "activate_alias": false
+      }
+    },
+    "beren": {
+      "count": 3,
+      "first_source": "LV-C15-PIV-D530-AUTHOR-SOURCE",
+      "first_line": 570,
+      "first_anchor_sha256": "e18764cc72f22dae3cc3410bd3f8c9004d13f1a25e6aa0483d7c775e0b34afde",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "CONTEXTUAL_PROPOSAL",
+      "semantic_resolution": false,
+      "activate_alias": false,
+      "proposal": {
+        "target": "candidate:beren-tol",
+        "source": "LV-C15-PIV-D530-AUTHOR-SOURCE",
+        "anchors": [
+          {
+            "line": 558,
+            "anchor": "Do outro lado de Três Arcos, numa oficina menos barulhenta, Beren Tol e Tessa Maren também trabalhavam."
+          },
+          {
+            "line": 570,
+            "anchor": "**BEREN —** Concordo."
+          }
+        ],
+        "reason": "Beren Tol nesta oficina.",
+        "valid_at": "D530",
+        "action": "SCENE_ONLY_BINDING",
+        "status": "AUTHOR_GATE_PENDING",
+        "scope": "AUTHOR_ONLY",
+        "activate_alias": false
+      }
+    },
+    "nela": {
+      "count": 3,
+      "first_source": "LV-C15-PIV-D530-AUTHOR-SOURCE",
+      "first_line": 634,
+      "first_anchor_sha256": "49925fb4ee9608cc861157011ea98c70206b88bf909559b1f67d526d61c388b6",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "CONTEXTUAL_PROPOSAL",
+      "semantic_resolution": false,
+      "activate_alias": false,
+      "proposal": {
+        "target": "candidate:nela-r36",
+        "source": "LV-C15-PIV-D530-AUTHOR-SOURCE",
+        "anchors": [
+          {
+            "line": 630,
+            "anchor": "Nela e Timo."
+          },
+          {
+            "line": 634,
+            "anchor": "**NELA —** Lucas! Olha!"
+          }
+        ],
+        "reason": "Nome atestado, sem sobrenome ou vínculo familiar inferido.",
+        "valid_at": "D530",
+        "action": "NEW_ID_CANDIDATE",
+        "status": "AUTHOR_GATE_PENDING",
+        "scope": "AUTHOR_ONLY",
+        "activate_alias": false
+      }
+    },
+    "timo": {
+      "count": 2,
+      "first_source": "LV-C15-PIV-D530-AUTHOR-SOURCE",
+      "first_line": 636,
+      "first_anchor_sha256": "7fbc76bfbd1a7c08a11349b6ef04fc10bd8439d33d0bbc92a7fec615032ba857",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "CONTEXTUAL_PROPOSAL",
+      "semantic_resolution": false,
+      "activate_alias": false,
+      "proposal": {
+        "target": "candidate:timo-r36",
+        "source": "LV-C15-PIV-D530-AUTHOR-SOURCE",
+        "anchors": [
+          {
+            "line": 630,
+            "anchor": "Nela e Timo."
+          },
+          {
+            "line": 636,
+            "anchor": "**TIMO —** Consertamos a parte que estava puxando para o lado!"
+          }
+        ],
+        "reason": "Nome atestado, sem fusão com Nela.",
+        "valid_at": "D530",
+        "action": "NEW_ID_CANDIDATE",
+        "status": "AUTHOR_GATE_PENDING",
+        "scope": "AUTHOR_ONLY",
+        "activate_alias": false
+      }
+    },
+    "vértice": {
+      "count": 53,
+      "first_source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+      "first_line": 302,
+      "first_anchor_sha256": "a86a13a14402c8c4a89659ce8cf487540f587347a2fe9774963848124553ae8e",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "CONTEXTUAL_PROPOSAL",
+      "semantic_resolution": false,
+      "activate_alias": false,
+      "proposal": {
+        "target": "candidate:vertice-r36",
+        "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+        "anchors": [
+          {
+            "line": 298,
+            "anchor": "**LUCAS —** Seu nome será Vértice."
+          },
+          {
+            "line": 304,
+            "anchor": "**LUCAS —** Coordenar a ativação e o funcionamento técnico da Malha Aurora. Quero que todos os 3.600 possam trabalhar de verdade. Você vai liderar ensaios, organizar tarefas, integrar registros e apontar problemas. Mas não pode tomar para si as decisões das pessoas e instituições. E não vai mandar na Legião."
+          }
+        ],
+        "reason": "Autômato distinto de Rumo; coordenação técnica, não comando civil/militar.",
+        "valid_at": "D531",
+        "action": "NEW_ID_CANDIDATE",
+        "status": "AUTHOR_GATE_PENDING",
+        "scope": "AUTHOR_ONLY",
+        "activate_alias": false
+      }
+    },
+    "emon": {
+      "count": 1,
+      "first_source": "LV-C16-PI-D532-AUTHOR-SOURCE",
+      "first_line": 748,
+      "first_anchor_sha256": "492069eb5afea331d942fac3bd0ae75929e1bc362e718d1cc79e04adb867a664",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "CONTEXTUAL_PROPOSAL",
+      "semantic_resolution": false,
+      "activate_alias": false,
+      "proposal": {
+        "target": "candidate:emon-r36",
+        "source": "LV-C16-PI-D532-AUTHOR-SOURCE",
+        "anchors": [
+          {
+            "line": 746,
+            "anchor": "No terminal da Forja, Kael observava um trabalhador chamado Emon demonstrar a dificuldade de transportar duas peças de reparo por um corredor estreito."
+          }
+        ],
+        "reason": "Trabalhador identificado por nome.",
+        "valid_at": "D532",
+        "action": "NEW_ID_CANDIDATE",
+        "status": "AUTHOR_GATE_PENDING",
+        "scope": "AUTHOR_ONLY",
+        "activate_alias": false
+      }
+    },
+    "menino": {
+      "count": 14,
+      "first_source": "LV-C16-PII-D533-AUTHOR-SOURCE",
+      "first_line": 110,
+      "first_anchor_sha256": "187c435e411b69a3066aca3def479ea9a2a3571164810cd46c2f03167777942c",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "menina": {
+      "count": 51,
+      "first_source": "LV-C16-PII-D533-AUTHOR-SOURCE",
+      "first_line": 128,
+      "first_anchor_sha256": "7917703abf4c185ea239e982b13f916d8db53d93607ab5877492e7fd6fd38868",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "homem da forja": {
+      "count": 2,
+      "first_source": "LV-C16-PII-D533-AUTHOR-SOURCE",
+      "first_line": 658,
+      "first_anchor_sha256": "447da1f344ad26c722d2e5ae96a4645f9b2151315416aee7b2c9b05a37b66ba8",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "técnica": {
+      "count": 5,
+      "first_source": "LV-C16-PII-D533-AUTHOR-SOURCE",
+      "first_line": 764,
+      "first_anchor_sha256": "c303faa02aa00991c6289a560001212672d1c100f31e6aff58d43217e1800953",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "renn": {
+      "count": 8,
+      "first_source": "LV-C16-PII-D533-AUTHOR-SOURCE",
+      "first_line": 778,
+      "first_anchor_sha256": "ca0a1d2fe97a3485a58bea384be7ec4d460d46249ecb2a4fac729a46cd790cdc",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "CONTEXTUAL_PROPOSAL",
+      "semantic_resolution": false,
+      "activate_alias": false,
+      "proposal": {
+        "target": "candidate:renn-r36",
+        "source": "LV-C16-PII-D533-AUTHOR-SOURCE",
+        "anchors": [
+          {
+            "line": 774,
+            "anchor": "O jovem se chamava Renn."
+          },
+          {
+            "line": 776,
+            "anchor": "Ele contou que ainda desconfiava dos autômatos novos."
+          }
+        ],
+        "reason": "Nome e reação contextual; sem idade numérica.",
+        "valid_at": "D533",
+        "action": "NEW_ID_CANDIDATE",
+        "status": "AUTHOR_GATE_PENDING",
+        "scope": "AUTHOR_ONLY",
+        "activate_alias": false
+      }
+    },
+    "responsável da forja": {
+      "count": 2,
+      "first_source": "LV-C16-PII-D533-AUTHOR-SOURCE",
+      "first_line": 942,
+      "first_anchor_sha256": "84dd8eb00d3daffeb670c0184fdf4df2dfed2ce718b7becb4958f14a5551e8b8",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "ivenna": {
+      "count": 11,
+      "first_source": "LV-C16-PIII-D534-AUTHOR-SOURCE",
+      "first_line": 522,
+      "first_anchor_sha256": "e81dda0f60ec3cc9ba4b27fe366dc98850e01a8d3228d573cb00ce0617099b80",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "CONTEXTUAL_PROPOSAL",
+      "semantic_resolution": false,
+      "activate_alias": false,
+      "proposal": {
+        "target": "candidate:ivenna-r36",
+        "source": "LV-C16-PIII-D534-AUTHOR-SOURCE",
+        "anchors": [
+          {
+            "line": 520,
+            "anchor": "Perto da parede, uma jovem aprendiz segurava uma das peças de ensaio. Chamava-se **Ivenna**. Não parecia especialmente impressionada com a presença de Lucas."
+          }
+        ],
+        "reason": "Aprendiz; não Ivena por semelhança gráfica.",
+        "valid_at": "D534",
+        "action": "NEW_ID_CANDIDATE",
+        "status": "AUTHOR_GATE_PENDING",
+        "scope": "AUTHOR_ONLY",
+        "activate_alias": false
+      }
+    },
+    "mulher": {
+      "count": 21,
+      "first_source": "LV-C16-PIII-D534-AUTHOR-SOURCE",
+      "first_line": 638,
+      "first_anchor_sha256": "c57a7f6bc8d36150f500d3df881ade2a192258d40a0136675248df426caab56a",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "ajudante": {
+      "count": 24,
+      "first_source": "LV-C16-PIV-D537-AUTHOR-SOURCE",
+      "first_line": 136,
+      "first_anchor_sha256": "5dfe988f141a75ea3c26e18fbf73aa6e4989954d3c63654b928a7e6c9a264e42",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "criança": {
+      "count": 35,
+      "first_source": "LV-C16-PV-D537-AUTHOR-SOURCE",
+      "first_line": 713,
+      "first_anchor_sha256": "1f470df738978baae04dc4f16141884d1a8cfed1b41818734edf700fdac91c4a",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "homem na multidão": {
+      "count": 1,
+      "first_source": "LV-C16-PV-D537-AUTHOR-SOURCE",
+      "first_line": 998,
+      "first_anchor_sha256": "bcdcd3fd49cb6253592bd2c2d2c2abf838006c8a0fe2ea8214d8b7d9a4016af7",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "outra criança": {
+      "count": 1,
+      "first_source": "LV-C16-PV-D537-AUTHOR-SOURCE",
+      "first_line": 1004,
+      "first_anchor_sha256": "3c48883f9f95477f8c572b6f2d35aa91f95c74488afa4abe7777146f4536f7c1",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "moradores": {
+      "count": 1,
+      "first_source": "LV-C16-PV-D537-AUTHOR-SOURCE",
+      "first_line": 1452,
+      "first_anchor_sha256": "1db091d34d918875159f6872912fa5a07811cff19d6e7bcba37482d9ed64ffc8",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "dália": {
+      "count": 21,
+      "first_source": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+      "first_line": 155,
+      "first_anchor_sha256": "763142a76daa92e2d48709e3ae64576a08027350763615d7981297d6098d172c",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "CONTEXTUAL_PROPOSAL",
+      "semantic_resolution": false,
+      "activate_alias": false,
+      "proposal": {
+        "target": "candidate:dalia-r36",
+        "source": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+        "anchors": [
+          {
+            "line": 153,
+            "anchor": "A velha Dália surgiu da entrada do mercado coberto, trazendo um embrulho de pão."
+          }
+        ],
+        "reason": "Nome e observação de idade qualitativa; sem biografia presumida.",
+        "valid_at": "D540",
+        "action": "NEW_ID_CANDIDATE",
+        "status": "AUTHOR_GATE_PENDING",
+        "scope": "AUTHOR_ONLY",
+        "activate_alias": false
+      }
+    },
+    "salma": {
+      "count": 4,
+      "first_source": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+      "first_line": 417,
+      "first_anchor_sha256": "5782c9dac7d2f35bd825e9b7b27b8afb2ac81d48f8cebb5fe2f7c2153638ca29",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "CONTEXTUAL_PROPOSAL",
+      "semantic_resolution": false,
+      "activate_alias": false,
+      "proposal": {
+        "target": "candidate:salma-r36",
+        "source": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+        "anchors": [
+          {
+            "line": 413,
+            "anchor": "Foi Salma quem subiu primeiro, empurrando o carrinho pelo mesmo caminho em que, dois dias antes, as rodas costumavam prender nas pedras. Atrás dela vinham Dália, dois trabalhadores das oficinas, uma senhora com uma bengala e o menino que preferia dragões."
+          }
+        ],
+        "reason": "Nome e participação observada, sem profissão presumida.",
+        "valid_at": "D540",
+        "action": "NEW_ID_CANDIDATE",
+        "status": "AUTHOR_GATE_PENDING",
+        "scope": "AUTHOR_ONLY",
+        "activate_alias": false
+      }
+    },
+    "representante": {
+      "count": 12,
+      "first_source": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+      "first_line": 657,
+      "first_anchor_sha256": "7a18fc918d0968d681655707a737c9970028c78d4326edbcd7996f154e3e2666",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "morador": {
+      "count": 5,
+      "first_source": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+      "first_line": 675,
+      "first_anchor_sha256": "19aaabd3294403522e5a31f25bef7cea44a5f67905e411f3502df3b99bed04e1",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "rapaz": {
+      "count": 3,
+      "first_source": "LVI-C01-PV-D541-AUTHOR-SOURCE",
+      "first_line": 271,
+      "first_anchor_sha256": "0422e1cc70398339667e0dce03ea586982b7c22ff5049205cb8bd8ea6fcb9108",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "pai": {
+      "count": 3,
+      "first_source": "LVI-C01-PV-D541-AUTHOR-SOURCE",
+      "first_line": 403,
+      "first_anchor_sha256": "1904d2c19f3cab024af4cd52be586895999c299d38e8d08e264804c2a47d15f5",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "viajante": {
+      "count": 2,
+      "first_source": "LVI-C01-PV-D541-AUTHOR-SOURCE",
+      "first_line": 807,
+      "first_anchor_sha256": "715d97550cb33f14a892fdcd99ccacd5b05849086ad8e878096df7fd94101c85",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "pedreiro": {
+      "count": 6,
+      "first_source": "LVI-C01-PV-D541-AUTHOR-SOURCE",
+      "first_line": 1293,
+      "first_anchor_sha256": "3405d34d3dd3b2ac76551f1c7b4c659273ae6ea8d873287df6270fc0a04443d0",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "guarda": {
+      "count": 24,
+      "first_source": "LVI-C01-PV-D541-AUTHOR-SOURCE",
+      "first_line": 1319,
+      "first_anchor_sha256": "701a5e83e97845c1216472dda149e4206a0ad3d55ea4184413ab58a01b0a18df",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "tratadora": {
+      "count": 1,
+      "first_source": "LVI-C02-PI-D542-AUTHOR-SOURCE",
+      "first_line": 391,
+      "first_anchor_sha256": "f0f481da718e477e8d13c722cbad46cb93dda6574be2819a79a8e27282911812",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "homem": {
+      "count": 17,
+      "first_source": "LVI-C02-PI-D542-AUTHOR-SOURCE",
+      "first_line": 433,
+      "first_anchor_sha256": "61f837c0a8c869ef4507884d1ccbee1dc6cf682914341e32e19f64a9dc13d4d0",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "funcionária": {
+      "count": 12,
+      "first_source": "LVI-C02-PI-D542-AUTHOR-SOURCE",
+      "first_line": 615,
+      "first_anchor_sha256": "8052a2860145e71b53fb506e1acd4d4f7472163af3b29975b2ba58b0ad703386",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "corven": {
+      "count": 29,
+      "first_source": "LVI-C02-PI-D542-AUTHOR-SOURCE",
+      "first_line": 617,
+      "first_anchor_sha256": "a6e2ed8f7498ff017b75dcad695c8114c2cb4b7b4b3bd9ff59c02be1f68a27b2",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "NAMED_OR_AMBIGUOUS_PENDING",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "voz": {
+      "count": 2,
+      "first_source": "LVI-C02-PI-D542-AUTHOR-SOURCE",
+      "first_line": 653,
+      "first_anchor_sha256": "c52a7d48d6de317322541a29af2e7ae0dbc9ece21e0d69ac70f0ad5448e9ce59",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "guardião": {
+      "count": 39,
+      "first_source": "LVI-C02-PI-D542-AUTHOR-SOURCE",
+      "first_line": 947,
+      "first_anchor_sha256": "b97255a78ca3953f3d286208721def50bc686d3d0fefbaf673de06d314b2c6c1",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "jardineiro": {
+      "count": 2,
+      "first_source": "LVI-C02-PII-D543-AUTHOR-SOURCE",
+      "first_line": 73,
+      "first_anchor_sha256": "d529405d2d468f48beb2c6765023cadac84dbfa01bba289a7c6aab9511443569",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "padeiro": {
+      "count": 1,
+      "first_source": "LVI-C02-PII-D543-AUTHOR-SOURCE",
+      "first_line": 85,
+      "first_anchor_sha256": "e07fcf7fd773583ae8e7ffc653b60aba7c30644210f04c1b332213f0345cc872",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "outro": {
+      "count": 1,
+      "first_source": "LVI-C02-PII-D543-AUTHOR-SOURCE",
+      "first_line": 87,
+      "first_anchor_sha256": "062c352626c5d409b13c07295e8a62cce2b0468131a981da5e6bcee1d594a371",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "garoto": {
+      "count": 3,
+      "first_source": "LVI-C02-PII-D543-AUTHOR-SOURCE",
+      "first_line": 93,
+      "first_anchor_sha256": "5e3062316188e3d87bb30c83b9e9702b7f29792b6387a18481f179ca86b6da56",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "íria": {
+      "count": 16,
+      "first_source": "LVI-C02-PII-D543-AUTHOR-SOURCE",
+      "first_line": 629,
+      "first_anchor_sha256": "d729731c30ba6f2e71b820540ee77fedba58c0b2e358f7c50e4aa4905270592f",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "CONTEXTUAL_PROPOSAL",
+      "semantic_resolution": false,
+      "activate_alias": false,
+      "proposal": {
+        "target": "ira",
+        "source": "LVI-C02-PII-D543-AUTHOR-SOURCE",
+        "anchors": [
+          {
+            "line": 627,
+            "anchor": "Íria Nemar apareceu pouco depois, trazendo um relatório de uma inspeção local. A semelhança de seu nome com o da caravaneira Iria, recém-chegada, era apenas uma coincidência; eram duas mulheres diferentes, com vidas diferentes."
+          }
+        ],
+        "reason": "Separação literal entre Íria Nemar e Iria caravaneira; ID histórico ira mantido.",
+        "valid_at": "D543",
+        "action": "EXPLICIT_IDENTITY_SEPARATION",
+        "status": "AUTHOR_GATE_PENDING",
+        "scope": "AUTHOR_ONLY",
+        "activate_alias": false
+      }
+    },
+    "agressor": {
+      "count": 2,
+      "first_source": "LVI-C02-PII-D543-AUTHOR-SOURCE",
+      "first_line": 735,
+      "first_anchor_sha256": "2aaebb5a6f6d97387060126acb353bfb5082d2cfdc1f313098704f39999f8c1d",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "segundo homem": {
+      "count": 2,
+      "first_source": "LVI-C02-PII-D543-AUTHOR-SOURCE",
+      "first_line": 1293,
+      "first_anchor_sha256": "92f8979a1584a92385b26c8d95553a522c381e47af94eb6f0efe1c6201b02392",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "mãe": {
+      "count": 7,
+      "first_source": "LVI-C02-PII-D543-AUTHOR-SOURCE",
+      "first_line": 1339,
+      "first_anchor_sha256": "59bbf74b5e673bfdf53956f8c3e8aefe9a856bb7be9c4406d33ed4d191f8d769",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "atacante": {
+      "count": 2,
+      "first_source": "LVI-C02-PII-D543-AUTHOR-SOURCE",
+      "first_line": 1349,
+      "first_anchor_sha256": "2b9791d78179fb8e50dc94a06b39bac43309eb3df16d163d50fccddd9e9a4f2d",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "mensageira": {
+      "count": 8,
+      "first_source": "LVI-C02-PII-D543-AUTHOR-SOURCE",
+      "first_line": 1683,
+      "first_anchor_sha256": "28c35a28eb57e902f93456e4a6b7ae46c6c16e58f248f2efb640dd57a1ba50a1",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "maera": {
+      "count": 13,
+      "first_source": "LVI-C02-PIII-D544-AUTHOR-SOURCE",
+      "first_line": 533,
+      "first_anchor_sha256": "b6343ab7f0859e9146cced0612f6409778c89cfbb22aad25c515098bcfcb357d",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "CONTEXTUAL_PROPOSAL",
+      "semantic_resolution": false,
+      "activate_alias": false,
+      "proposal": {
+        "target": "candidate:maera-venn-r36",
+        "source": "LVI-C02-PIII-D544-AUTHOR-SOURCE",
+        "anchors": [
+          {
+            "line": 531,
+            "anchor": "Chamava-se **Maera Venn**, mediadora que atuava em litígios entre ofícios e famílias de Três Arcos. Sua experiência era real, mas não a transformava automaticamente em magistrada superior do novo poder judicial."
+          }
+        ],
+        "reason": "Mediadora; não magistrada por inferência nem Mara Venn.",
+        "valid_at": "D544",
+        "action": "NEW_ID_CANDIDATE",
+        "status": "AUTHOR_GATE_PENDING",
+        "scope": "AUTHOR_ONLY",
+        "activate_alias": false
+      }
+    },
+    "jovem": {
+      "count": 11,
+      "first_source": "LVI-C02-PIII-D544-AUTHOR-SOURCE",
+      "first_line": 739,
+      "first_anchor_sha256": "7a02f75928575904be1ad3aca994f39b3bd2b40460b158a78e3d475dfb629819",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "primeiro homem": {
+      "count": 2,
+      "first_source": "LVI-C02-PIII-D544-AUTHOR-SOURCE",
+      "first_line": 773,
+      "first_anchor_sha256": "758b0c61e3d5f718a6f08c2b6d467fb3290ef41879019b319e6e7c3a9b47dcf5",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "segundo": {
+      "count": 2,
+      "first_source": "LVI-C02-PIII-D544-AUTHOR-SOURCE",
+      "first_line": 775,
+      "first_anchor_sha256": "2329be83afcca2b122a86c99b01b8e1cd6a5cb385dfd23b014a870e2ca18f60a",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "mensageiro": {
+      "count": 21,
+      "first_source": "LVI-C02-PIII-D544-AUTHOR-SOURCE",
+      "first_line": 1125,
+      "first_anchor_sha256": "004c72f22bbda3f610446d3c322baec18c4b4d55b6401e918fd070e4e13a4cbc",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "oficial": {
+      "count": 24,
+      "first_source": "LVI-C02-PIII-D544-AUTHOR-SOURCE",
+      "first_line": 1133,
+      "first_anchor_sha256": "dafe23fa3e14df26d2c57c1c325b1d3bde649bbb984e86d982b239dc361b9045",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "legionário": {
+      "count": 3,
+      "first_source": "LVI-C02-PIII-D544-AUTHOR-SOURCE",
+      "first_line": 1269,
+      "first_anchor_sha256": "21e9801f41d312bb67268264b9e43dc525e9bb7a7e02009b6379d1c0b9261764",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "conselheira": {
+      "count": 5,
+      "first_source": "LVI-C02-PIII-D544-AUTHOR-SOURCE",
+      "first_line": 1839,
+      "first_anchor_sha256": "8674d031ede18b606c76d59feacf60eb88b1b57ca1a7baabe875fd7d96ec4d7c",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "tratador": {
+      "count": 5,
+      "first_source": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+      "first_line": 611,
+      "first_anchor_sha256": "6b30a58680025e7aa358cf05171f02f1ea4f39b7574e10e37e5b00d92ad2f0e9",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "engenheira": {
+      "count": 12,
+      "first_source": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+      "first_line": 1759,
+      "first_anchor_sha256": "be6c2984015752f4d4d8433451683d398a0f7bb447ab8d8d3748481f8d451bed",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "primeiro vigia": {
+      "count": 2,
+      "first_source": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+      "first_line": 1877,
+      "first_anchor_sha256": "4d7c827744e02286c319797d77de44f321eee8a5aee0f709d6d136b6346cb592",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "segundo vigia": {
+      "count": 1,
+      "first_source": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+      "first_line": 1879,
+      "first_anchor_sha256": "99eaf92167b37e0e0f4bc555b4b38bf3ad91cbe9253311dd4eaf13141b1e63a5",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "orla": {
+      "count": 26,
+      "first_source": "LVI-C02-PV-D546-D548-AUTHOR-SOURCE",
+      "first_line": 192,
+      "first_anchor_sha256": "90c12ae18033dda5deb523505d54b50237276cc8fcd5058514fd4fb5c19441e2",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "CONTEXTUAL_PROPOSAL",
+      "semantic_resolution": false,
+      "activate_alias": false,
+      "proposal": {
+        "target": "candidate:orla-fen-r36",
+        "source": "LVI-C02-PV-D546-D548-AUTHOR-SOURCE",
+        "anchors": [
+          {
+            "line": 190,
+            "anchor": "Chamava-se **Orla Fen**, engenheira de águas e pontes civis que prestava serviços às rotas e canais de Três Arcos. Não havia sido inventada para ser amiga íntima de Lucas desde sempre; Iria conversara com responsáveis pelo pedido e conseguira sua indicação naquela manhã."
+          }
+        ],
+        "reason": "Engenheira civil; amizade pregressa não presumida.",
+        "valid_at": "D546-D548",
+        "action": "NEW_ID_CANDIDATE",
+        "status": "AUTHOR_GATE_PENDING",
+        "scope": "AUTHOR_ONLY",
+        "activate_alias": false
+      }
+    },
+    "artesã": {
+      "count": 2,
+      "first_source": "LVI-C02-PV-D546-D548-AUTHOR-SOURCE",
+      "first_line": 360,
+      "first_anchor_sha256": "c212f7af49b4f87a4196d21a02874e151c290596ad4f2cc235a3f675d717ce29",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "intermediário": {
+      "count": 2,
+      "first_source": "LVI-C02-PV-D546-D548-AUTHOR-SOURCE",
+      "first_line": 390,
+      "first_anchor_sha256": "e9dc9a76b8eef56d62a69b0b5fddb863a3630a4d8eb0c401020157fc7093457a",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "belan": {
+      "count": 3,
+      "first_source": "LVI-C02-PV-D546-D548-AUTHOR-SOURCE",
+      "first_line": 592,
+      "first_anchor_sha256": "90a2b88af3f77f770c8a8963a83bde3c52cf56ae9d7498b64cb6996ce83e4b5f",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "NAMED_OR_AMBIGUOUS_PENDING",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "ferreiro": {
+      "count": 1,
+      "first_source": "LVI-C02-PV-D546-D548-AUTHOR-SOURCE",
+      "first_line": 726,
+      "first_anchor_sha256": "69b9676c41bd973140d826745ae9a151f48cc9cc45e1d1245f48f11270bf7c05",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "cartógrafa": {
+      "count": 8,
+      "first_source": "LVI-C02-PV-D546-D548-AUTHOR-SOURCE",
+      "first_line": 910,
+      "first_anchor_sha256": "4c1fe9740f3751cabe04b319732e1d27f87037ff37fa4716dfae3465b0d21afa",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "servidor": {
+      "count": 1,
+      "first_source": "LVI-C02-PV-D546-D548-AUTHOR-SOURCE",
+      "first_line": 1018,
+      "first_anchor_sha256": "6dd05f195b1dab74e113c0c9f5e42a768376d5e2ed056d4de1a9c6ebf288fa25",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "estalajadeiro": {
+      "count": 3,
+      "first_source": "LVI-C02-PV-D546-D548-AUTHOR-SOURCE",
+      "first_line": 1292,
+      "first_anchor_sha256": "a4d3c8a322772d3479dbbe2ba1d796e66f8eeb803f81281bd42f5dbb726dc6fa",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "idosa": {
+      "count": 2,
+      "first_source": "LVI-C02-PV-D546-D548-AUTHOR-SOURCE",
+      "first_line": 1554,
+      "first_anchor_sha256": "f3630592b85baf6fb1759cbf12f07c3738e42911c5d33b14495e8822ddb06fab",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "noren": {
+      "count": 10,
+      "first_source": "LVI-C02-PV-D546-D548-AUTHOR-SOURCE",
+      "first_line": 1576,
+      "first_anchor_sha256": "77bdd978e4b4d1446163b475b845c0eccdbbf9d349667a8a4db4dadc25aa5186",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "CONTEXTUAL_PROPOSAL",
+      "semantic_resolution": false,
+      "activate_alias": false,
+      "proposal": {
+        "target": "candidate:noren-r36",
+        "source": "LVI-C02-PV-D546-D548-AUTHOR-SOURCE",
+        "anchors": [
+          {
+            "line": 1574,
+            "anchor": "Tinha olhos muito parecidos com os da irmã."
+          },
+          {
+            "line": 1576,
+            "anchor": "**NOREN —** IRIA!"
+          }
+        ],
+        "reason": "Reencontro com Iria caravaneira; sem vínculo com Íria Nemar.",
+        "valid_at": "D546-D548",
+        "action": "NEW_ID_CANDIDATE",
+        "status": "AUTHOR_GATE_PENDING",
+        "scope": "AUTHOR_ONLY",
+        "activate_alias": false
+      }
+    },
+    "sera": {
+      "count": 10,
+      "first_source": "LVI-C02-PV-D546-D548-AUTHOR-SOURCE",
+      "first_line": 1840,
+      "first_anchor_sha256": "00654dcebf7c64f1899f853709abe258448d34d8918de50cf407d6d3d7768ec8",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "NAMED_OR_AMBIGUOUS_PENDING",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "proprietário": {
+      "count": 4,
+      "first_source": "LVI-C02-PV-D546-D548-AUTHOR-SOURCE",
+      "first_line": 2072,
+      "first_anchor_sha256": "06cc19f1605f5ac1ecbb7d1bfabaa4e1a02dcfe7a13755ae760dc3b66fbad89c",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "assistente": {
+      "count": 8,
+      "first_source": "LVI-C02-PV-D546-D548-AUTHOR-SOURCE",
+      "first_line": 2812,
+      "first_anchor_sha256": "d3cb34f1c1baffd1d80271728d0ae3e79be516183ec1933b1858bf711bb945f9",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "autômato": {
+      "count": 1,
+      "first_source": "LVI-C03-PI-D549-AUTHOR-SOURCE",
+      "first_line": 191,
+      "first_anchor_sha256": "36129385aa574e167fe0760c60b3b7baecc5435736a931f7db15ae494e0f300a",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "socorrista": {
+      "count": 3,
+      "first_source": "LVI-C03-PI-D549-AUTHOR-SOURCE",
+      "first_line": 343,
+      "first_anchor_sha256": "ba894cd939bf7c4eb4c6be8d4fe2dcc9b3f779a637d434d1a95417c8562df52e",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "soldado": {
+      "count": 5,
+      "first_source": "LVI-C03-PI-D549-AUTHOR-SOURCE",
+      "first_line": 401,
+      "first_anchor_sha256": "831fc7b321fdc1f9c4138e81da8e1332dc797bd1d9b108a2644bc7c38bfb6be8",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "legionária": {
+      "count": 7,
+      "first_source": "LVI-C03-PI-D549-AUTHOR-SOURCE",
+      "first_line": 441,
+      "first_anchor_sha256": "bfe9f2687c44595e166cc3aafeaa30902d239b62e6577f8ae97bf555b1498ef6",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "médico": {
+      "count": 1,
+      "first_source": "LVI-C03-PI-D549-AUTHOR-SOURCE",
+      "first_line": 543,
+      "first_anchor_sha256": "a495e94a928e0fe1c22e710191bfd53e11bd2263fe3e33ba03a2aac06e14fc6f",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "funcionário": {
+      "count": 3,
+      "first_source": "LVI-C03-PI-D549-AUTHOR-SOURCE",
+      "first_line": 553,
+      "first_anchor_sha256": "6680ef6dbbd7e680ff5283cbc8246a30ef6e7fab7f5250dcac22d0a365761f3b",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "selen": {
+      "count": 39,
+      "first_source": "LVI-C03-PI-D549-AUTHOR-SOURCE",
+      "first_line": 781,
+      "first_anchor_sha256": "9e8b264b306550b8ca317797207ff312ce979fab074d119549ea06f9be7d9e7b",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "CONTEXTUAL_PROPOSAL",
+      "semantic_resolution": false,
+      "activate_alias": false,
+      "proposal": {
+        "target": "candidate:selen-korr-r36",
+        "source": "LVI-C03-PI-D549-AUTHOR-SOURCE",
+        "anchors": [
+          {
+            "line": 777,
+            "anchor": "A mulher à sua esquerda, **Selen Korr**, recolheu uma placa de leitura."
+          },
+          {
+            "line": 779,
+            "anchor": "Selen era uma especialista de combate arcano; conhecia procedimentos de guerra, mas ainda não conhecia Lucas pessoalmente. Fora designada para estudar a reação defensiva da cidade, não para adivinhar os pensamentos de todos os seus habitantes."
+          }
+        ],
+        "reason": "Especialista em combate arcano; conhecimento restrito.",
+        "valid_at": "D549",
+        "action": "NEW_ID_CANDIDATE",
+        "status": "AUTHOR_GATE_PENDING",
+        "scope": "AUTHOR_ONLY",
+        "activate_alias": false
+      }
+    },
+    "brum": {
+      "count": 55,
+      "first_source": "LVI-C03-PI-D549-AUTHOR-SOURCE",
+      "first_line": 787,
+      "first_anchor_sha256": "7609db7839368a007ad3720d64d86a12c1b046ec7098efa96c5678ad0397bc14",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "CONTEXTUAL_PROPOSAL",
+      "semantic_resolution": false,
+      "activate_alias": false,
+      "proposal": {
+        "target": "candidate:brum-vass-r36",
+        "source": "LVI-C03-PI-D549-AUTHOR-SOURCE",
+        "anchors": [
+          {
+            "line": 785,
+            "anchor": "Um homem de braços pesados, **Brum Vass**, respondeu."
+          }
+        ],
+        "reason": "Identidade nominal contextual; não atribuir patente.",
+        "valid_at": "D549",
+        "action": "NEW_ID_CANDIDATE",
+        "status": "AUTHOR_GATE_PENDING",
+        "scope": "AUTHOR_ONLY",
+        "activate_alias": false
+      }
+    },
+    "ilvar": {
+      "count": 22,
+      "first_source": "LVI-C03-PI-D549-AUTHOR-SOURCE",
+      "first_line": 793,
+      "first_anchor_sha256": "45f71cd75f2377a3c66def8901ae8b119cfdd92802ec586981ad76f7b194bb8b",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "CONTEXTUAL_PROPOSAL",
+      "semantic_resolution": false,
+      "activate_alias": false,
+      "proposal": {
+        "target": "candidate:ilvar-reth-r36",
+        "source": "LVI-C03-PI-D549-AUTHOR-SOURCE",
+        "anchors": [
+          {
+            "line": 791,
+            "anchor": "Um terceiro oficial, **Ilvar Reth**, mantinha o livro de mensageiros aberto."
+          }
+        ],
+        "reason": "Oficial; não presumir patente específica.",
+        "valid_at": "D549",
+        "action": "NEW_ID_CANDIDATE",
+        "status": "AUTHOR_GATE_PENDING",
+        "scope": "AUTHOR_ONLY",
+        "activate_alias": false
+      }
+    },
+    "médica": {
+      "count": 7,
+      "first_source": "LVI-C03-PI-D549-AUTHOR-SOURCE",
+      "first_line": 1393,
+      "first_anchor_sha256": "aed728dbdee93c892e1c9442ff907964c1bd27e9e44181de7dd2b46acd7e4f1a",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "trabalhador": {
+      "count": 10,
+      "first_source": "LVI-C03-PI-D549-AUTHOR-SOURCE",
+      "first_line": 2073,
+      "first_anchor_sha256": "dd46e7cb16a70858264b08be33b165d82e2a78ecc41984a9063b80175a3aa33c",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "patrulha norte": {
+      "count": 1,
+      "first_source": "LVI-C03-PII-D550-AUTHOR-SOURCE",
+      "first_line": 106,
+      "first_anchor_sha256": "90c1dc56e697810b9cad1941d05f24944e024390781a82a8e63e7eea017b325b",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "rina": {
+      "count": 2,
+      "first_source": "LVI-C03-PII-D550-AUTHOR-SOURCE",
+      "first_line": 1076,
+      "first_anchor_sha256": "97859938aa96211f389c97aac8f501da3ba37f6fdd9d4e59a8d1fb27014578dd",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "CONTEXTUAL_PROPOSAL",
+      "semantic_resolution": false,
+      "activate_alias": false,
+      "proposal": {
+        "target": "candidate:rina-r36",
+        "source": "LVI-C03-PII-D550-AUTHOR-SOURCE",
+        "anchors": [
+          {
+            "line": 1066,
+            "anchor": "Rina."
+          },
+          {
+            "line": 1068,
+            "anchor": "Estava ferida na perna, mas consciente."
+          },
+          {
+            "line": 1664,
+            "anchor": "**ENA —** ...Rina?"
+          },
+          {
+            "line": 1668,
+            "anchor": "**RINA —** Oi."
+          }
+        ],
+        "reason": "Condição histórica D550 e reencontro; sem estado atual inferido.",
+        "valid_at": "D550",
+        "action": "NEW_ID_CANDIDATE",
+        "status": "AUTHOR_GATE_PENDING",
+        "scope": "AUTHOR_ONLY",
+        "activate_alias": false
+      }
+    },
+    "pai de nelo": {
+      "count": 1,
+      "first_source": "LVI-C03-PII-D550-AUTHOR-SOURCE",
+      "first_line": 1232,
+      "first_anchor_sha256": "16558929cf622bde37f0324861ea96f4a5f135ec8ef170675328767cb2051769",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "ena": {
+      "count": 1,
+      "first_source": "LVI-C03-PII-D550-AUTHOR-SOURCE",
+      "first_line": 1664,
+      "first_anchor_sha256": "32d73b9b5dc3449e4112a5de352b606eb710d06b20b30dbbe93a09d3e3911d95",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "CONTEXTUAL_PROPOSAL",
+      "semantic_resolution": false,
+      "activate_alias": false,
+      "proposal": {
+        "target": "candidate:ena-r36",
+        "source": "LVI-C03-PII-D550-AUTHOR-SOURCE",
+        "anchors": [
+          {
+            "line": 1654,
+            "anchor": "Do outro lado da galeria, Ena aguardava."
+          },
+          {
+            "line": 1656,
+            "anchor": "A menina que procurara a irmã desde cedo."
+          },
+          {
+            "line": 1660,
+            "anchor": "Ao lado dele estava Rina, apoiada em uma muleta adequada à perna ferida."
+          }
+        ],
+        "reason": "Irmã de Rina na cena; não inferir sobrenome.",
+        "valid_at": "D550",
+        "action": "NEW_ID_CANDIDATE",
+        "status": "AUTHOR_GATE_PENDING",
+        "scope": "AUTHOR_ONLY",
+        "activate_alias": false
+      }
+    },
+    "mara": {
+      "count": 31,
+      "first_source": "LVI-C03-PIII-D551-AUTHOR-SOURCE",
+      "first_line": 31,
+      "first_anchor_sha256": "86f1e156483e9d330ac59635b99e2a54b824860e3e6f5de265fbb7a0019cd824",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "NAMED_OR_AMBIGUOUS_PENDING",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "darius": {
+      "count": 1,
+      "first_source": "LVI-C03-PIII-D551-AUTHOR-SOURCE",
+      "first_line": 235,
+      "first_anchor_sha256": "778aeadbe4fcecb851cac8b188fa1f4e2e5af3ffda0cb77bd2de837604f5e102",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "NAMED_OR_AMBIGUOUS_PENDING",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "malrek": {
+      "count": 1,
+      "first_source": "LVI-C03-PIII-D551-AUTHOR-SOURCE",
+      "first_line": 237,
+      "first_anchor_sha256": "039c4bfe981a375342686c9f1ed969389b4c60fd8eb9fd3841aef3b896108ae5",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "NAMED_OR_AMBIGUOUS_PENDING",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "toran": {
+      "count": 12,
+      "first_source": "LVI-C03-PIII-D551-AUTHOR-SOURCE",
+      "first_line": 247,
+      "first_anchor_sha256": "cae9989c7c207b1c8969a313ca4b2b0a821a1acbbe852e8734fcae2a8c42990d",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "CONTEXTUAL_PROPOSAL",
+      "semantic_resolution": false,
+      "activate_alias": false,
+      "proposal": {
+        "target": "candidate:toran",
+        "source": "LVI-C03-PIII-D551-AUTHOR-SOURCE",
+        "anchors": [
+          {
+            "line": 245,
+            "anchor": "Toran abriu um mapa da área hospitalar."
+          },
+          {
+            "line": 247,
+            "anchor": "**TORAN —** Há um pátio protegido junto às novas alas de atendimento. Os feridos que os médicos liberarem podem participar sem sair da área clínica. Os demais chegam pelos acessos internos. O encontro dura apenas o necessário."
+          }
+        ],
+        "reason": "Compatível com candidato de resgate; manter vínculo como proposta contextual.",
+        "valid_at": "D551",
+        "action": "SCENE_ONLY_BINDING",
+        "status": "AUTHOR_GATE_PENDING",
+        "scope": "AUTHOR_ONLY",
+        "activate_alias": false
+      }
+    },
+    "operador": {
+      "count": 4,
+      "first_source": "LVI-C03-PIII-D551-AUTHOR-SOURCE",
+      "first_line": 891,
+      "first_anchor_sha256": "4b80d3fd3292fb9d68571c8f8827c5e8b3026aaab542811cfcbe209950ed6a71",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "subordinado": {
+      "count": 2,
+      "first_source": "LVI-C03-PIII-D551-AUTHOR-SOURCE",
+      "first_line": 1507,
+      "first_anchor_sha256": "3c581e14ae5c92b42e8e9f95c806c696be3bb92d3112c2376c9d34cf0942dcca",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "voz de miren": {
+      "count": 1,
+      "first_source": "LVI-C03-PIII-D551-AUTHOR-SOURCE",
+      "first_line": 1525,
+      "first_anchor_sha256": "23cb4619a9b6a56e7e7edffb9f5a3a0eb307ffe3d9b9de23f166afc8129b9a9f",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "CONTEXTUAL_PROPOSAL",
+      "semantic_resolution": false,
+      "activate_alias": false,
+      "proposal": {
+        "target": null,
+        "source": "LVI-C03-PIII-D551-AUTHOR-SOURCE",
+        "anchors": [
+          {
+            "line": 1521,
+            "anchor": "Mas o foco, já ativado para testar uma aproximação de reconhecimento, alcançou o limite de uma passagem onde Lucas e NÓX examinavam um resíduo hostil isolado."
+          },
+          {
+            "line": 1525,
+            "anchor": "**VOZ DE MIREN —** Lucas. Venha sozinho."
+          }
+        ],
+        "reason": "Voz simulada por foco hostil; não fala da Miren real.",
+        "valid_at": "D551",
+        "action": "NOT_PERSON_IDENTITY",
+        "status": "AUTHOR_GATE_PENDING",
+        "scope": "AUTHOR_ONLY",
+        "activate_alias": false
+      }
+    },
+    "velho": {
+      "count": 2,
+      "first_source": "LVI-C03-PIV-D552-AUTHOR-SOURCE",
+      "first_line": 521,
+      "first_anchor_sha256": "a02587a01f821c5da06ae60981d968e8c12fdd7ab04cb6bea771247feb452bd7",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "filho": {
+      "count": 1,
+      "first_source": "LVI-C03-PIV-D552-AUTHOR-SOURCE",
+      "first_line": 1223,
+      "first_anchor_sha256": "bdb2a53e2bc811b2b0064192fd2ab34d17106c7a06fd68e04fb93f41c2b691a3",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "derel": {
+      "count": 4,
+      "first_source": "LVI-C03-PV-D553-AUTHOR-SOURCE",
+      "first_line": 152,
+      "first_anchor_sha256": "012457b86c0c5e14e341b2df69e614d39c4f227693698a618a95a3db4c28cf43",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "CONTEXTUAL_PROPOSAL",
+      "semantic_resolution": false,
+      "activate_alias": false,
+      "proposal": {
+        "target": "candidate:derel-r36",
+        "source": "LVI-C03-PV-D553-AUTHOR-SOURCE",
+        "anchors": [
+          {
+            "line": 142,
+            "anchor": "O homem escolhido para levar o relato era um corredor de campanha chamado Derel, veterano de travessias difíceis, sem dom de desaparecer ou cortar continentes."
+          }
+        ],
+        "reason": "Corredor de campanha, sem capacidade extraordinária inferida.",
+        "valid_at": "D553",
+        "action": "NEW_ID_CANDIDATE",
+        "status": "AUTHOR_GATE_PENDING",
+        "scope": "AUTHOR_ONLY",
+        "activate_alias": false
+      }
+    },
+    "capitão hostil": {
+      "count": 1,
+      "first_source": "LVI-C03-PV-D553-AUTHOR-SOURCE",
+      "first_line": 1114,
+      "first_anchor_sha256": "c4326ddee67adb4c74d88dd139448f9b235eb522715d4e38fa720227e026b1e3",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "moradora": {
+      "count": 5,
+      "first_source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "first_line": 875,
+      "first_anchor_sha256": "cb73fd6ecf91ea226f7e2d7506e0568f9b0c0601ed3a3e23e875a4f29ccb819d",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "fazendeira": {
+      "count": 7,
+      "first_source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "first_line": 1049,
+      "first_anchor_sha256": "9c2cd201e6d4f1fab838125fb1aefd2d2b2cd18fb0555c4e7ad795b2f9315d83",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "companheira de neris": {
+      "count": 1,
+      "first_source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "first_line": 1125,
+      "first_anchor_sha256": "173d008dfd57149f64deb8fe365d3ab0a5ae620d529fc86c9c74e6108fe7a1a0",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "companheira": {
+      "count": 1,
+      "first_source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "first_line": 1131,
+      "first_anchor_sha256": "b9473e5f27ecd1a3e5eae68cc4219834a8e85f6daeac6201806d2501ef93467b",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "condutor": {
+      "count": 6,
+      "first_source": "LVI-C04-PIII-D556-AUTHOR-SOURCE",
+      "first_line": 188,
+      "first_anchor_sha256": "6494537f668a4c3d378cd32b240203d0fee2992478451922a3e93a016fb84157",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "acolhedora": {
+      "count": 1,
+      "first_source": "LVI-C04-PIII-D556-AUTHOR-SOURCE",
+      "first_line": 286,
+      "first_anchor_sha256": "ff4660ef4321470b55aff3cfc766651f1805d939cf48cdeee6a428fec1940c7b",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "filha": {
+      "count": 4,
+      "first_source": "LVI-C04-PV-D558-AUTHOR-SOURCE",
+      "first_line": 194,
+      "first_anchor_sha256": "b0686c6c41fb7169134cc11f71bcf1a3854d7f8300ee991a0d99f108ebac5f9a",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "edris": {
+      "count": 21,
+      "first_source": "LVI-C04-PV-D558-AUTHOR-SOURCE",
+      "first_line": 406,
+      "first_anchor_sha256": "b8bc1f6718891b8bf3e10346e6514bc65bbff37d06736f00f2a69e8be9a74a45",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "CONTEXTUAL_PROPOSAL",
+      "semantic_resolution": false,
+      "activate_alias": false,
+      "proposal": {
+        "target": "candidate:edris-valeh-r36",
+        "source": "LVI-C04-PV-D558-AUTHOR-SOURCE",
+        "anchors": [
+          {
+            "line": 398,
+            "anchor": "A capitã **Edris Valeh**, da guarda de estrada de Thalor, observava uma frente de chuva subir pelas colinas."
+          }
+        ],
+        "reason": "Capitã da guarda de estrada de Thalor, não Edran nem Edric.",
+        "valid_at": "D558",
+        "action": "NEW_ID_CANDIDATE",
+        "status": "AUTHOR_GATE_PENDING",
+        "scope": "AUTHOR_ONLY",
+        "activate_alias": false
+      }
+    },
+    "vigia": {
+      "count": 1,
+      "first_source": "LVI-C04-PV-D558-AUTHOR-SOURCE",
+      "first_line": 426,
+      "first_anchor_sha256": "c29bddfa59bd779d253ebc6b403f1ea63862f80663c6e9fd5f44d2249df01580",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "dena": {
+      "count": 1,
+      "first_source": "LVI-C04-PV-D558-AUTHOR-SOURCE",
+      "first_line": 568,
+      "first_anchor_sha256": "f346ac35847ffe5a217e1ccfa8d297cdd648fb4c647baadc9ab0d996c04efbce",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "CONTEXTUAL_PROPOSAL",
+      "semantic_resolution": false,
+      "activate_alias": false,
+      "proposal": {
+        "target": "candidate:dena-r36",
+        "source": "LVI-C04-PV-D558-AUTHOR-SOURCE",
+        "anchors": [
+          {
+            "line": 566,
+            "anchor": "A velha Dena aproximou-se com o menino agarrado à cintura."
+          }
+        ],
+        "reason": "Nome e idade qualitativa; parentesco não demonstrado.",
+        "valid_at": "D558",
+        "action": "NEW_ID_CANDIDATE",
+        "status": "AUTHOR_GATE_PENDING",
+        "scope": "AUTHOR_ONLY",
+        "activate_alias": false
+      }
+    },
+    "médica de bordo": {
+      "count": 1,
+      "first_source": "LVI-C04-PV-D558-AUTHOR-SOURCE",
+      "first_line": 672,
+      "first_anchor_sha256": "f0782c777734df862bd02f4e233369f6c6541198ecac739c7fcabc9f3328eb9e",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "conselheiro": {
+      "count": 16,
+      "first_source": "LVI-C04-PV-D558-AUTHOR-SOURCE",
+      "first_line": 872,
+      "first_anchor_sha256": "91a3bb8fd5d23c4828125ec0c127c7a575efff6d211574ca69620e7b3d354fd0",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "guardiã": {
+      "count": 2,
+      "first_source": "LVI-C05-PII-D560-AUTHOR-SOURCE",
+      "first_line": 1420,
+      "first_anchor_sha256": "11817a09a8d8c2959d3164b452594491a347e01cdf35a6d8423c48c00cfc7bb3",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "serael": {
+      "count": 24,
+      "first_source": "LVI-C06-PI-D564-AUTHOR-SOURCE",
+      "first_line": 169,
+      "first_anchor_sha256": "b56e96d968484f2b10302093f52f343678d5208f46958db4b0b6208b809aa266",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "NAMED_OR_AMBIGUOUS_PENDING",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "ilven": {
+      "count": 12,
+      "first_source": "LVI-C06-PI-D564-AUTHOR-SOURCE",
+      "first_line": 173,
+      "first_anchor_sha256": "6b1a690822c0b7579347534d6b43c67de134567335399b51f37c4e9dc4636d97",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "NAMED_OR_AMBIGUOUS_PENDING",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "teren": {
+      "count": 10,
+      "first_source": "LVI-C06-PI-D564-AUTHOR-SOURCE",
+      "first_line": 589,
+      "first_anchor_sha256": "2d21a6556c5106055d48dc2cae49c94c058f1b0d5bd3cb8a84baa991792fa38d",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "NAMED_OR_AMBIGUOUS_PENDING",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "alaine": {
+      "count": 5,
+      "first_source": "LVI-C06-PI-D564-AUTHOR-SOURCE",
+      "first_line": 593,
+      "first_anchor_sha256": "d13b25942780e3df3b7dd86602886d9e435c9fd3d1615a6a0a33f9030b20d906",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "NAMED_OR_AMBIGUOUS_PENDING",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "isolde": {
+      "count": 10,
+      "first_source": "LVI-C06-PI-D564-AUTHOR-SOURCE",
+      "first_line": 1347,
+      "first_anchor_sha256": "bef6e11019dbc81298a8227a488e8c5302d5a7d6a3293ca1b26efca8a0e62782",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "NAMED_OR_AMBIGUOUS_PENDING",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "guardiã velha": {
+      "count": 17,
+      "first_source": "LVI-C06-PII-D565-AUTHOR-SOURCE",
+      "first_line": 520,
+      "first_anchor_sha256": "0990d3c219dd0be7b0276fddaed5284166e08a021b2106c98e3bf20f72125d1d",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "guardião das águas": {
+      "count": 1,
+      "first_source": "LVI-C06-PII-D565-AUTHOR-SOURCE",
+      "first_line": 556,
+      "first_anchor_sha256": "6151f01bdfa0551d3afe071ea4a07b04a729007d394b7180578e05dadb42c9f7",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "aerún": {
+      "count": 2,
+      "first_source": "LVI-C06-PIII-D566-AUTHOR-SOURCE",
+      "first_line": 57,
+      "first_anchor_sha256": "74cda4c93de183cf3ee194dfbc73f0b5e658a324fe11265cbf55916cd5cf853d",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "CONTEXTUAL_PROPOSAL",
+      "semantic_resolution": false,
+      "activate_alias": false,
+      "proposal": {
+        "target": "aerun-guardiao",
+        "source": "LVI-C06-PIII-D566-AUTHOR-SOURCE",
+        "anchors": [
+          {
+            "line": 51,
+            "anchor": "O dragão ergueu a cabeça."
+          },
+          {
+            "line": 55,
+            "anchor": "AERÚN permaneceu imóvel por um longo momento."
+          },
+          {
+            "line": 57,
+            "anchor": "**AERÚN —** ...Então aconteceu."
+          }
+        ],
+        "reason": "Dragão nesta cena, jamais Instituto AERÚN.",
+        "valid_at": "D566",
+        "action": "EXPLICIT_IDENTITY_SEPARATION",
+        "status": "AUTHOR_GATE_PENDING",
+        "scope": "AUTHOR_ONLY",
+        "activate_alias": false
+      }
+    },
+    "controle": {
+      "count": 4,
+      "first_source": "LVI-C06-PV-D568-AUTHOR-SOURCE",
+      "first_line": 232,
+      "first_anchor_sha256": "4f47c48935f4e4dbb80d02e4ad9b0c2610af6aebeab96d565743ca70ea5b6287",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "engenheiro": {
+      "count": 4,
+      "first_source": "LVI-C06-PV-D568-AUTHOR-SOURCE",
+      "first_line": 1174,
+      "first_anchor_sha256": "086831e77156642d9a324d05bf276771361472a92dbdb13e21d2bce803d301e4",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "capitão": {
+      "count": 7,
+      "first_source": "LVI-C06-PV-D568-AUTHOR-SOURCE",
+      "first_line": 1670,
+      "first_anchor_sha256": "877bd0477fac5321d31f77952402b117d1144735f58b9d3dcb9a6a6791a2054b",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "iressa": {
+      "count": 22,
+      "first_source": "LVI-C07-PI-D569-R2-AUTHOR-SOURCE",
+      "first_line": 595,
+      "first_anchor_sha256": "918ec5826e12d1cf32490321e5257a67d930c2e6ebb4e52e90925361c008bfb5",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "CONTEXTUAL_PROPOSAL",
+      "semantic_resolution": false,
+      "activate_alias": false,
+      "proposal": {
+        "target": "candidate:iressa-veyn-r36",
+        "source": "LVI-C07-PI-D569-R2-AUTHOR-SOURCE",
+        "anchors": [
+          {
+            "line": 591,
+            "anchor": "**VELKAR —** Iressa Veyn."
+          },
+          {
+            "line": 595,
+            "anchor": "**IRESSA —** Sei quem é você."
+          }
+        ],
+        "reason": "Nome completo atestado na interação; sem inferência de filiação.",
+        "valid_at": "D569",
+        "action": "NEW_ID_CANDIDATE",
+        "status": "AUTHOR_GATE_PENDING",
+        "scope": "AUTHOR_ONLY",
+        "activate_alias": false
+      }
+    },
+    "mago": {
+      "count": 1,
+      "first_source": "LVI-C07-PI-D569-R2-AUTHOR-SOURCE",
+      "first_line": 869,
+      "first_anchor_sha256": "20c52ef0856e8a627c6c2a0aa921c147f62373dbe59504c4639f7f79fa571704",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "capitã": {
+      "count": 21,
+      "first_source": "LVI-C07-PI-D569-R2-AUTHOR-SOURCE",
+      "first_line": 1124,
+      "first_anchor_sha256": "287753f85cee2eaef90b745e755d357a602d41b9232e64656966371b8325d03a",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "carroceiro": {
+      "count": 7,
+      "first_source": "LVI-C07-PI-D569-R2-AUTHOR-SOURCE",
+      "first_line": 1606,
+      "first_anchor_sha256": "bc7ba9287d685300744aacacac7eeb06a1cf786c4e9126762f6e279824fbd5a4",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "estudante": {
+      "count": 11,
+      "first_source": "LVI-C07-PI-D569-R2-AUTHOR-SOURCE",
+      "first_line": 1983,
+      "first_anchor_sha256": "ec1a363291cf8e35abe642ba8bda90f70487680dfac77a901a7b862fb4104739",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "feirante": {
+      "count": 4,
+      "first_source": "LVI-C07-PII-D570-AUTHOR-SOURCE",
+      "first_line": 630,
+      "first_anchor_sha256": "2e36f1cf445c50cfce3e569dff83090bfe1cc69a7f9b08325a8bb75b67174bb3",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "idoso": {
+      "count": 10,
+      "first_source": "LVI-C07-PII-D570-AUTHOR-SOURCE",
+      "first_line": 778,
+      "first_anchor_sha256": "8450af27c44263aa545b33c7584ea049dfab034a2ef727f5ea38d47708d9cbe6",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "administrador": {
+      "count": 3,
+      "first_source": "LVI-C07-PII-D570-AUTHOR-SOURCE",
+      "first_line": 2233,
+      "first_anchor_sha256": "37dc9d47c93b99a7e52c06f99a4137b8cb459a2cc84439ebb6fc88c90865cd56",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "comandante": {
+      "count": 4,
+      "first_source": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+      "first_line": 513,
+      "first_anchor_sha256": "7b4f4992640c4011657c6b41e205e396d99b33a3a380b404fb7f2352567d93eb",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "coordenadora": {
+      "count": 4,
+      "first_source": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+      "first_line": 708,
+      "first_anchor_sha256": "ca62fdcc3993f82eb87101422ecce0bc82aa4cd4b4981a760693d4764ab076c7",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "mara venn": {
+      "count": 1,
+      "first_source": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+      "first_line": 1451,
+      "first_anchor_sha256": "2ed2fc16aec7ecd51d44c07ed0a60c66457a20b16041fb7df035c7fc65179be8",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "NAMED_OR_AMBIGUOUS_PENDING",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "companheiro": {
+      "count": 1,
+      "first_source": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+      "first_line": 1589,
+      "first_anchor_sha256": "9bf5b76eaf1d11b594516c8c946affa875578d43f54a110fc27f40221df96dc1",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "aprendiz": {
+      "count": 5,
+      "first_source": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+      "first_line": 1996,
+      "first_anchor_sha256": "94bf55499c20e3325bb93012be4ea24fae4ba2c5c1168d44e9e3ae4e6bda4247",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "cavaleiro": {
+      "count": 1,
+      "first_source": "LVI-C07-PIV-D572-AUTHOR-SOURCE",
+      "first_line": 364,
+      "first_anchor_sha256": "890f1ae6e06b45ec7d95c923d7c9de7f4d8e53a8f13d9672eab77938cdb22fe0",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "sobrevivente": {
+      "count": 6,
+      "first_source": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+      "first_line": 346,
+      "first_anchor_sha256": "f41ee9683c99d175a47bbf5d303ff37187e100008a58e79d1fcd411ffb9b4547",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "mestre": {
+      "count": 3,
+      "first_source": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+      "first_line": 552,
+      "first_anchor_sha256": "0e5e39e2d6cb747a25e0c909d4c1c70c096c19de6806dce5f5efdf6d1358e376",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "marinheiro": {
+      "count": 1,
+      "first_source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "first_line": 448,
+      "first_anchor_sha256": "1b3cbc90be2fc2c0fd78d1595c82dae606cb8e63398f1c81bbc87b3f69293484",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "yrda": {
+      "count": 12,
+      "first_source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "first_line": 696,
+      "first_anchor_sha256": "eb516ff13aa0bbfaccf4d4c66e0b196205ce39d9a658b7a09cdece01b83be0c3",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "NAMED_OR_AMBIGUOUS_PENDING",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "estudioso": {
+      "count": 1,
+      "first_source": "LVI-C08-PII-D575-AUTHOR-SOURCE",
+      "first_line": 406,
+      "first_anchor_sha256": "7ab040541c79bb7107a0dda52a8540bb24dc89e0b7cad7c834aaa5515f2fd504",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "arquivista": {
+      "count": 3,
+      "first_source": "LVI-C08-PII-D575-AUTHOR-SOURCE",
+      "first_line": 480,
+      "first_anchor_sha256": "beb9b2197ebd6e14922c165a5e2cb82e7d93fbfac5a0ebe31f696fe191c704ac",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "transportador": {
+      "count": 5,
+      "first_source": "LVI-C08-PIII-D576-AUTHOR-SOURCE",
+      "first_line": 186,
+      "first_anchor_sha256": "562405a09c607021bb2f61bc8bb7df6634358afc5dbccc376deecf89df4f4d02",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "curandeira": {
+      "count": 3,
+      "first_source": "LVI-C08-PIII-D576-AUTHOR-SOURCE",
+      "first_line": 328,
+      "first_anchor_sha256": "166dd6347fc37a5460eef3214f171a61a1b8df30155c0013f0c47573b0e9df33",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "piloto": {
+      "count": 7,
+      "first_source": "LVI-C08-PIII-D576-AUTHOR-SOURCE",
+      "first_line": 518,
+      "first_anchor_sha256": "31412f4448754a2c7fc98adfd3f3f2acaf5dd544775c0224f6003051d18894dc",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "visitante": {
+      "count": 1,
+      "first_source": "LVI-C08-PIV-D577-AUTHOR-SOURCE",
+      "first_line": 117,
+      "first_anchor_sha256": "6015d55966b5662b20d6ebe17c5e6447a40d77cd63c343b74aa09c0cb05be8ee",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "paciente": {
+      "count": 1,
+      "first_source": "LVI-C08-PIV-D577-AUTHOR-SOURCE",
+      "first_line": 139,
+      "first_anchor_sha256": "abbe1dfa557bcf9d28a3ed5938914bc35dafe6c19eec9f87a30dba57f2088c2f",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "garran": {
+      "count": 8,
+      "first_source": "LVI-C08-PIV-D577-AUTHOR-SOURCE",
+      "first_line": 223,
+      "first_anchor_sha256": "526cb105f959e35452e6da99576508dd441723c6700f1cb9861c9cbcdd657c3e",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "NAMED_OR_AMBIGUOUS_PENDING",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "mercador": {
+      "count": 1,
+      "first_source": "LVI-C08-PIV-D577-AUTHOR-SOURCE",
+      "first_line": 447,
+      "first_anchor_sha256": "e666badc3d296afa123e6ee15d56fbdd9b4c5e20a056227d2d194b4a90b3ffbb",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "responsável": {
+      "count": 2,
+      "first_source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+      "first_line": 149,
+      "first_anchor_sha256": "c49ccea394a0e8dda72f5eb660ecd551559fe9b7cd61ae778a229a6c3ad32a5b",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "transportadora": {
+      "count": 5,
+      "first_source": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+      "first_line": 219,
+      "first_anchor_sha256": "dc0f8b3049a763bfaf031857cd9af9a29022948b4e81b957a522a285419258d3",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "lessa": {
+      "count": 8,
+      "first_source": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+      "first_line": 679,
+      "first_anchor_sha256": "3224e1431bbdd4687f3afca8ef5d11d0df9ef77bbc9ff48732aadc6bc6020562",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "NAMED_OR_AMBIGUOUS_PENDING",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "osvan": {
+      "count": 6,
+      "first_source": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+      "first_line": 939,
+      "first_anchor_sha256": "e1e6d971b89bd521313e3d894a128d90988c298f2fa005b76755d51ecc437887",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "NAMED_OR_AMBIGUOUS_PENDING",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "cozinheira": {
+      "count": 2,
+      "first_source": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+      "first_line": 1451,
+      "first_anchor_sha256": "48fe32469c648a1b1a038648c312caf4acf4847a5199b82e8552eba470d83e83",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    },
+    "trabalhadora": {
+      "count": 1,
+      "first_source": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+      "first_line": 2057,
+      "first_anchor_sha256": "eb6dd4aeab3caa02a9988504214780adaed8fe4e232c52579291ac77cdb92a0c",
+      "status": "UNRESOLVED_LEXICAL_LABEL",
+      "triage": "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID",
+      "semantic_resolution": false,
+      "activate_alias": false
+    }
+  },
+  "zero_hit_triage": [
+    {
+      "id": "chr-tessa-municipal",
+      "status": "LITERAL_PROPOSAL_PENDING",
+      "classification": "QUALIFIED_HOMONYM",
+      "identity_merge": false
+    },
+    {
+      "id": "ferro-horizonte",
+      "status": "PENDENTE_FONTE",
+      "classification": "ALIAS_OR_COLLISION_PENDING",
+      "identity_merge": false
+    },
+    {
+      "id": "coracao-aerun",
+      "status": "LITERAL_PROPOSAL_PENDING",
+      "classification": "ALIAS_OR_COLLISION_PENDING",
+      "identity_merge": false
+    },
+    {
+      "id": "plot:halvern",
+      "status": "LITERAL_PROPOSAL_PENDING",
+      "classification": "EDITORIAL_PLOT_LABEL",
+      "identity_merge": false
+    },
+    {
+      "id": "plot:velkar",
+      "status": "PENDENTE_FONTE",
+      "classification": "EDITORIAL_PLOT_LABEL",
+      "identity_merge": false
+    },
+    {
+      "id": "plot:seis-marcas",
+      "status": "PENDENTE_FONTE",
+      "classification": "EDITORIAL_PLOT_LABEL",
+      "identity_merge": false
+    },
+    {
+      "id": "plot:nira",
+      "status": "PENDENTE_FONTE",
+      "classification": "EDITORIAL_PLOT_LABEL",
+      "identity_merge": false
+    },
+    {
+      "id": "plot:ithran",
+      "status": "PENDENTE_FONTE",
+      "classification": "EDITORIAL_PLOT_LABEL",
+      "identity_merge": false
+    },
+    {
+      "id": "plot:ferro",
+      "status": "PENDENTE_FONTE",
+      "classification": "EDITORIAL_PLOT_LABEL",
+      "identity_merge": false
+    },
+    {
+      "id": "plot:asa",
+      "status": "PENDENTE_FONTE",
+      "classification": "EDITORIAL_PLOT_LABEL",
+      "identity_merge": false
+    },
+    {
+      "id": "plot:mar",
+      "status": "PENDENTE_FONTE",
+      "classification": "EDITORIAL_PLOT_LABEL",
+      "identity_merge": false
+    },
+    {
+      "id": "plot:coracao",
+      "status": "LITERAL_PROPOSAL_PENDING",
+      "classification": "EDITORIAL_PLOT_LABEL",
+      "identity_merge": false
+    },
+    {
+      "id": "candidate:academia-projeto-pessoas",
+      "status": "PENDENTE_FONTE",
+      "classification": "EDITORIAL_DESCRIPTION",
+      "identity_merge": false
+    },
+    {
+      "id": "candidate:ceramica-fornos-baixos",
+      "status": "PENDENTE_FONTE",
+      "classification": "EDITORIAL_DESCRIPTION",
+      "identity_merge": false
+    },
+    {
+      "id": "item:lira-caderno-d305",
+      "status": "LITERAL_PROPOSAL_PENDING",
+      "classification": "DESCRIPTIVE_ITEM_LABEL",
+      "identity_merge": false
+    },
+    {
+      "id": "item:vareth-placa-d253",
+      "status": "LITERAL_PROPOSAL_PENDING",
+      "classification": "DESCRIPTIVE_ITEM_LABEL",
+      "identity_merge": false
+    },
+    {
+      "id": "item:iana-placa-d240",
+      "status": "LITERAL_PROPOSAL_PENDING",
+      "classification": "DESCRIPTIVE_ITEM_LABEL",
+      "identity_merge": false
+    },
+    {
+      "id": "item:desenho-calderva-d366",
+      "status": "LITERAL_PROPOSAL_PENDING",
+      "classification": "DESCRIPTIVE_ITEM_LABEL",
+      "identity_merge": false
+    },
+    {
+      "id": "item:caedren-bone-d393",
+      "status": "LITERAL_PROPOSAL_PENDING",
+      "classification": "DESCRIPTIVE_ITEM_LABEL",
+      "identity_merge": false
+    },
+    {
+      "id": "item:caedren-espada-observada",
+      "status": "LITERAL_PROPOSAL_PENDING",
+      "classification": "DESCRIPTIVE_ITEM_LABEL",
+      "identity_merge": false
+    },
+    {
+      "id": "item:argos-gravetos-d579",
+      "status": "LITERAL_PROPOSAL_PENDING",
+      "classification": "DESCRIPTIVE_ITEM_LABEL",
+      "identity_merge": false
+    }
+  ],
+  "profile_review_inventory": [
+    {
+      "id": "lucas",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "miren",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "varo",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "kael",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "lysa",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "nox",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "sistema",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "rumo",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "kairon",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "caedren",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "astra",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "brannik",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "naira",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "sael",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "dorek",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "maelis",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "reva",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "ysol",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "seron",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "luren",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "edric",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "nixa",
+      "status": "TARGETED_PROPOSAL_PENDING"
+    },
+    {
+      "id": "tavren",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "rhem",
+      "status": "TARGETED_PROPOSAL_PENDING"
+    },
+    {
+      "id": "cirn",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "thalor-althea",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "thaeron",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "iriel",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "talis",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "tharvek",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "bressa",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "elyrien",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "virandor",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "elen",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "neris",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "velkar",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "serakh",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "varkhess",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "orelia",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "rhazek",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "lethira",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "serina",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "morvek",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "avelna",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "ithran",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "vesra",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "nelo",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "maia",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "ira",
+      "status": "TARGETED_PROPOSAL_PENDING"
+    },
+    {
+      "id": "adela",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "edran",
+      "status": "TARGETED_PROPOSAL_PENDING"
+    },
+    {
+      "id": "enna",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "veskan",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "lyra",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "aeldric",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "ilva",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "serenna",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "yra",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "seris",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "ivena",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "ordan",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "edrik",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "sella",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "merovan",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "vessa",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "aurel",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "seyra",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "rael",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "eren",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "hedra",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "orven",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "nemi",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "candidate:tessa-maren",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "candidate:beren-tol",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "candidate:sarela",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "candidate:nemia",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "candidate:aida",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "candidate:teria",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "candidate:aliria",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "candidate:darien",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "candidate:severo",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "chr-tessa-arin",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "chr-tessa-morven",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "chr-tessa-municipal",
+      "status": "TARGETED_PROPOSAL_PENDING"
+    },
+    {
+      "id": "chr-marek-solen",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "chr-ferran-dosk",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "chr-loris-marinheiro",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "chr-veskan-rohl",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "chr-durghan-uzgor",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "chr-grazha-uzgor",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "chr-korr-uzgor",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "chr-elyan-legiao",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "chr-oren-legiao",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "chr-elion-genese",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "chr-fen-registro",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "chr-halden-cozinheiro",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "egide-dupla",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "muralha-viva",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "tridente-runico",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "sol-feerico",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "anel-cronos",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "raizes-pedra",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "ancoras-limiar",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "coracoes-reserva",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "oraculo-aurora",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "malha-dissipacao",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "veu-ruptura",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "veu-mil-horizontes",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "canto-vigilia",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "sentinelas-ebano",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "vaga-lumes-horizonte",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "portoes-verdade",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "circulos-socorro",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "ceu-respirante",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "casa-abraca",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "ultimo-horizonte",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "base-aurora",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "torre-criador",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "horizonte-aberto",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "malha-aurora",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "argos",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "asa-livre",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "sete-caminhos-cedro",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "ponte-retorno",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "ferro-horizonte",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "coracao-aerun",
+      "status": "TARGETED_PROPOSAL_PENDING"
+    },
+    {
+      "id": "niraven",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "aerun-instituto",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "aerun-guardiao",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "tres-arcos",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "arvendell",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "thalor",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "halvern-region",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "calderva",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "renshar",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "serevan",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "seral",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "veyra",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "vale-oficios",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "pedras-claras",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "golfo-exterior",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "casa-tres-poderes",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "casa-jardim-branco",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "forja-aurora",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "observatorio-criador",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "academia-tres-arcos",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "academia-horizonte",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "hz-1",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "campo-aurora",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "legiao",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "dominato",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "bandeira-cinzenta",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "genese",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "canal-soberano",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "circulacao-retorno",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "convergencia-voluntaria",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "matriz-germinal",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "plot:halvern",
+      "status": "TARGETED_PROPOSAL_PENDING"
+    },
+    {
+      "id": "plot:velkar",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "plot:seis-marcas",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "plot:talis",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "plot:nira",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "plot:ithran",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "plot:ferro",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "plot:conferencia",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "plot:asa",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "plot:mar",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "plot:coracao",
+      "status": "TARGETED_PROPOSAL_PENDING"
+    },
+    {
+      "id": "candidate:velarios",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "candidate:cafe-egua",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "candidate:segunda-feira-egua",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "candidate:casa-horizontes",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "candidate:observatorio-dimensional",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "candidate:varandas-altas",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "candidate:varzea-fornos-baixos",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "candidate:cabelos-de-luz",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "candidate:passos-criador",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "candidate:pedras-assobiam",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "candidate:academia-projeto-pessoas",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "candidate:ceramica-fornos-baixos",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "candidate:lema-nenhum-fica-para-tras",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "candidate:caderno-historias-vivendo",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "item:lira-caderno-d305",
+      "status": "TARGETED_PROPOSAL_PENDING"
+    },
+    {
+      "id": "item:vareth-placa-d253",
+      "status": "TARGETED_PROPOSAL_PENDING"
+    },
+    {
+      "id": "item:iana-placa-d240",
+      "status": "TARGETED_PROPOSAL_PENDING"
+    },
+    {
+      "id": "item:desenho-calderva-d366",
+      "status": "TARGETED_PROPOSAL_PENDING"
+    },
+    {
+      "id": "item:caedren-bone-d393",
+      "status": "TARGETED_PROPOSAL_PENDING"
+    },
+    {
+      "id": "item:caedren-espada-observada",
+      "status": "TARGETED_PROPOSAL_PENDING"
+    },
+    {
+      "id": "item:argos-gravetos-d579",
+      "status": "TARGETED_PROPOSAL_PENDING"
+    },
+    {
+      "id": "org-uzgor",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "place-pedreira-oriental-arvendell",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "place-camara-origem",
+      "status": "SEMANTIC_REVIEW_PENDING"
+    }
+  ],
+  "counts": {
+    "observations": 33,
+    "targets": 19,
+    "labels": 158,
+    "contextual_label_proposals": 26,
+    "zero_hit_proposals": 11
+  }
+}
