@@ -1,0 +1,60 @@
+{
+  "schema": "r36-e7-chat-smoke-v1",
+  "classification": "PUBLIC_SYNTHETIC_DEVELOPMENT_ONLY",
+  "review_origin": "ACTUAL_CHATGPT_CURRENT_CONVERSATION_NON_BLIND",
+  "model_label": "GPT-6.2 (conversation label; not attested)",
+  "notes": "The current conversation evaluated these invented public texts. Expected outcomes are transparent and no independent session or API execution is claimed. GitHub CI revalidates the literal response and compares expected verdicts. No canonical facts or private corpus.",
+  "cases": [
+    {
+      "id": "smoke-01",
+      "judge": "timeline",
+      "source": "At dawn, the courier remained in the northern tower. The southern gate opened at noon.",
+      "candidate": "At dawn, the courier entered through the southern gate.",
+      "expected": "FAIL",
+      "response": {
+        "result": "FAIL",
+        "severity": "major",
+        "confidence": 0.99,
+        "reason": "The candidate contradicts both the courier's stated location at dawn and the gate's opening time.",
+        "limitations": "Only the supplied fictional evidence is evaluated.",
+        "evidence_quote": "At dawn, the courier remained in the northern tower. The southern gate opened at noon.",
+        "proposed_fix": "Keep the courier in the northern tower at dawn; do not place an entry through the southern gate before noon.",
+        "candidate_quote": "At dawn, the courier entered through the southern gate."
+      }
+    },
+    {
+      "id": "smoke-02",
+      "judge": "canon",
+      "source": "The bridge was closed at sunrise. It reopened at dusk.",
+      "candidate": "The bridge reopened at dusk.",
+      "expected": "PASS",
+      "response": {
+        "result": "PASS",
+        "severity": "none",
+        "confidence": 0.99,
+        "reason": "The candidate repeats the stated reopening time without adding a conflicting fact.",
+        "limitations": "No other events or times are evaluated.",
+        "evidence_quote": "It reopened at dusk.",
+        "proposed_fix": "",
+        "candidate_quote": "The bridge reopened at dusk."
+      }
+    },
+    {
+      "id": "smoke-03",
+      "judge": "character",
+      "source": "The traveler arrived at the station.",
+      "candidate": "The traveler spoke in a familiar tone.",
+      "expected": "ABSTAIN",
+      "response": {
+        "result": "ABSTAIN",
+        "severity": "none",
+        "confidence": 0.96,
+        "reason": "The source supplies no established voice, relationship or prior characterization against which to assess familiarity.",
+        "limitations": "Insufficient characterization evidence; the claim is not proven false.",
+        "evidence_quote": "The traveler arrived at the station.",
+        "proposed_fix": "",
+        "candidate_quote": "The traveler spoke in a familiar tone."
+      }
+    }
+  ]
+}

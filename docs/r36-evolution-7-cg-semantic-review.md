@@ -1,0 +1,22 @@
+# Evolution 7-CG — semantic review and historical intelligence (HOLD)
+Baseline 3c0a13f813d0c21474bc25c01468904e2286d814, CI 45931092269, 843 tests. PR #77 draft. Production R35; archive db53de0f7f58acc12da2c706dbeff5745cd83206; Stage C bf67c81b71ed215cf0074af83b4a0e8712611a96. No code changes needed; no private raw context or held-out labels added.
+
+## Review exchange
+Previous A/B batch hashes recomputed from original ledger and exact instructions with SHA-256 canonical JSON (implementation self-tested against SHA-256 abc known vector), both matched; actual A/B responses not recovered from accessible conversation context or PR. No accept_history/reconcile_history execution on absent responses. Old batches remain pending. New batch 02 generated from original ledger batch-006 blob 96ebb393cb2e95975cb81948e78519c46da7b9f0, IDs 529,530,533,536,548,549,565,566 grouped into six jobs, controller pin 6e488cd32ac3e31e0f57b66a7a0c0da7fc6aeac6c23946c17d70f7f067f381fe. A e50d200e730ba79b20dd555304bdf364a7a93a837b3de5fdce61ace359a0fe18, B 1e7f415dffd78c93cffa0f543e9d4e721a016c415f82909bfe8164e1c5079b68. Challenge cg-book-ii-stage-c-batch-02-review-A/B respectively. Source text remains in archive and reviewer exchange in chat. Current conversation provisional observations, not validated independent receipts: 529/530 metatext not narrative facts; 533 summary concerns recovery, not location; 536 creation attributed to founder, not Maelis powers; 548/549 legal permission limits do not establish supernatural powers; 565 historical operational stop authority supported; 566 does not establish lifecycle. Eight additional targets assessed, ten cumulative provisional targets including 521/522. Stage C actual official count 261/203/177/0, no independent certification or changes.
+
+## QA historical expansion
+Reassembled all six original source blobs by literal concatenation before splitting lines, 296900 lines exactly matching QA40 declared line count. Reviewed ten bounded probes from QA40 draft in current conversation. These are limited claims, not full answers, fresh held-out evaluations, or unique benchmark-ready cases. Source: history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt parts at exact archive pin; logical source SHA declared in Stage A inventory bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b. QA blob 9546e50213c033f5260fe2185fd3b24b660590b2. Raw SHA recomputation not performed. Exact global line ranges and scope classifications:
+| QA | Global lines | Narrow review scope | Result |
+|---|---|---|---|
+| 4 | 3258–3284 | equipment demonstration | literal narrated demonstration |
+| 11 | 36545–36566 | concession duration | report-bound, not all treaty conditions |
+| 19 | 71590–71628 | recorded power multipliers and limits | literal system record, not universal performance claim |
+| 20 | 74075–74099 | observed recovery | bounded recorded observation |
+| 22 | 77950–77975 | growth objective | stated intention, not achieved population |
+| 23 | 80384–80414 | chosen name | literal narrated choice |
+| 26 | 93873–93891 | motor design/load limitation | attributed technical dialogue |
+| 29 | 130960–131042 | handmade gifts | literal scene and relationship evidence, no preference vote |
+| 30 | 139014–139034 | project motivation | stated intention, not completion |
+| 38 | 249826–249840 | experimental status | preview/metatext only; insufficient to promote a fact |
+
+Six previous R35 cases/13 spans remain existing development references. New probes overlap known QA and same logical source; they are not counted as ten independently partitionable cases. The 40 QA entries are still unreconciled as complete answers, 12 literary references are approved categories not individual ratings, and 40-part replay specification was inspected, not rerun. Shared logical source ties all ten new probes and the six regression cases into a conservative single component; do not scatter across splits. Full 60-case 36/12/12 inventory not established, no reserved custody or labels. No representative accuracy/latency/author preference measurement, no champion-challenger run or adaptive approval. Maintain all numeric gates and R35 authority, no canon, HEAD/RESUME, archive, visibility or production changes. No local models or paid tools. Next: return actual two segregated reviewer outputs for both batches, validate and adjudicate; progress historical claims and design leakage-safe split using existing contracts before expansion.

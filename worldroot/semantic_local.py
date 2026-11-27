@@ -9,12 +9,16 @@ from .semantic_queue import ROLES,VERDICTS,seal,validate,reconcile,AUTHOR_REFERE
 
 class NoRedirect(HTTPRedirectHandler):
     def redirect_request(self,*args,**kwargs):raise ValueError("Local inference must not redirect")
-def local_api(path,payload=None,timeout=180):
+def local_api(path,payload=None,timeout=180,max_response_bytes=None):
     if path not in ("/api/tags","/api/chat"):raise ValueError("Unknown local endpoint")
     # Disable environment proxies, forbid redirects; loopback only.
     req=Request("http://127.0.0.1:11434"+path,data=json.dumps(payload,ensure_ascii=False).encode() if payload is not None else None,headers={"Content-Type":"application/json"})
     with build_opener(ProxyHandler({}),NoRedirect()).open(req,timeout=timeout) as r:
-        return json.loads(r.read())
+        if max_response_bytes is None:return json.loads(r.read())
+        if type(max_response_bytes) is not int or max_response_bytes<=0:raise ValueError("Invalid response budget")
+        raw=r.read(max_response_bytes+1)
+        if len(raw)>max_response_bytes:raise ValueError("Local response exceeds byte budget")
+        return json.loads(raw)
 def revision(model,api=local_api):
     if "cloud" in model.casefold():raise ValueError("Cloud models forbidden")
     rows=[m for m in api("/api/tags")["models"] if m.get("name")==model or m.get("model")==model]
