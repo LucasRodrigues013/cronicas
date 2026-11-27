@@ -3,7 +3,7 @@
   "status": "STRUCTURAL_PREFLIGHT_PASS_NATIVE_PENDING",
   "base_checkpoint": "c760388d567011ef9b152e2323c8ed94d06f62d1",
   "base_archive": "bd94ce02c705904b0ad9a562bc8edce3e3039f77",
-  "engine": "3170905db607f89004ed3d62a064dbb092922080",
+  "engine": "46c40e18d3e0f4fbcafc025ae9d08b91ca6e6417",
   "review_branch": "review/r36-b007-native-gate",
   "review_parent": "f08c6584eaa323ccdd960c4f4905544fc704380d",
   "inventory_blob": "3c3d3f6fd26f63a90a08d00f9291b68c8e4a2d55",
@@ -74,7 +74,7 @@
   "production_activated": false,
   "semantic_certification": false,
   "public_free_only_execution": {
-    "status": "HOSTED_STANDARD_GATE_CONFIGURED_PENDING_EXECUTION",
+    "status": "COMPATIBILITY_CANDIDATE_PENDING_FULL_REGRESSION",
     "author_direction": "Author changed repository to public and requested restoration of automation, 2026-11-26",
     "visibility_verified": "public",
     "runner": "ubuntu-24.04",
@@ -84,6 +84,39 @@
     "fallback": "Existing local free-only runbook remains available",
     "production_hold": true,
     "approval_required": true,
-    "public_log_notice": "Only technical receipts and test logs; do not emit raw profile or source content intentionally. Prior confidentiality flags remain logical narrative boundaries, not repository access control."
+    "public_log_notice": "Only technical receipts and test logs; do not emit raw profile or source content intentionally. Prior confidentiality flags remain logical narrative boundaries, not repository access control.",
+    "previous_native_run": {
+      "id": 45914868042,
+      "job": 140231553073,
+      "engine": "3170905db607f89004ed3d62a064dbb092922080",
+      "native": "PASS",
+      "regression": "FAIL",
+      "tests": 705,
+      "errors": 14,
+      "seconds": 9.108,
+      "error": "sqlite3.IntegrityError: NOT NULL constraint failed: evidence.near_entities",
+      "receipt_status": "NATIVE_CANDIDATE_VALIDATED_NOT_APPROVED",
+      "candidate_blobs": {
+        "editorial/registries/r35-natural-completion-d579-v13.json": "c88d6d794ec09738eb53e25facb2f0a615fad9b0",
+        "editorial/registries/r35-world-completion-d579-v11.json": "6c350853f98450cb5befa332999166b8fb65993f",
+        "editorial/registries/r35-legacy-name-reconciliation-v9.json": "e38a2c0f88b40270d3cd79b92ba387140fb6901f",
+        "editorial/registries/r35-living-overlay-manifest.json": "7cb8d4df26842be2dbe479de367f5f6043c949c8"
+      }
+    },
+    "engine_compatibility_candidate": {
+      "parent": "3170905db607f89004ed3d62a064dbb092922080",
+      "commit": "46c40e18d3e0f4fbcafc025ae9d08b91ca6e6417",
+      "branch": "review/r36-engine-sqlite-compat",
+      "reason": "Normalize empty entity windows without changing token membership or section boundaries; SQLite 3.46.1 changelog documents empty-string window group_concat issue. Local SQL fixture passed with empty contexts and separate sections; full hosted regression pending.",
+      "source": "https://www.sqlite.org/releaselog/3_46_1.html",
+      "files": [
+        "worldroot/deep_recovery.py",
+        "tests/test_deep_recovery.py"
+      ],
+      "expected_tests": 706,
+      "editorial_delta_rows_unchanged": true,
+      "production_activation": false
+    },
+    "supersedes_prior_hosted_runner_prohibition_for_verified_public_standard_runner_only": true
   }
 }
