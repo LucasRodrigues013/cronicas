@@ -1,0 +1,2701 @@
+{
+  "schema": "worldroot-r36-multidimensional-structural-inventory-v1",
+  "archive": "db53de0f7f58acc12da2c706dbeff5745cd83206",
+  "production_hold": true,
+  "canon_changed": false,
+  "semantic_certification": false,
+  "policy": {
+    "days": [
+      1,
+      579
+    ],
+    "books": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "dimensions": [
+      "character",
+      "world",
+      "technology",
+      "journey",
+      "archaeology",
+      "event"
+    ],
+    "native_fields": 40,
+    "preserve_prior_changes": 229,
+    "author_gate": true
+  },
+  "counts": {
+    "profiles": 192,
+    "characters": 96,
+    "world": 96,
+    "total_fields": 5923,
+    "missing_native": 0,
+    "duplicates": 0,
+    "structural_issues": 0,
+    "field_status": {
+      "RECUPERADO": 933,
+      "COMPLETADO": 1516,
+      "PENDENTE_FONTE": 3392,
+      "CANONICO": 29,
+      "SEGREDO": 33,
+      "NAO_APLICAVEL": 18,
+      "DEDUZIDO": 2
+    },
+    "closed_episodes": 50,
+    "raw_source_blobs": 11,
+    "links": 25
+  },
+  "source_inventory": [
+    {
+      "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-001",
+      "blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+      "bytes": 1179648
+    },
+    {
+      "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+      "blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+      "bytes": 1179648
+    },
+    {
+      "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+      "blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+      "bytes": 1179648
+    },
+    {
+      "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-004",
+      "blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+      "bytes": 1179648
+    },
+    {
+      "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-005",
+      "blob": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+      "bytes": 1179648
+    },
+    {
+      "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-006",
+      "blob": "7c01d3a2bebc056d3a6e41fb212f49128374b8dc",
+      "bytes": 924785
+    },
+    {
+      "path": "history/sources/02_DIA_383_A_431_FONTE_LITERAL.txt",
+      "blob": "75906d2b8a2a780b530d8de07162f3d361e6886c",
+      "bytes": 1720637
+    },
+    {
+      "path": "history/sources/03_DIA_431_A_457_FONTE_LITERAL.txt",
+      "blob": "70a558a9df54fbe129b4f8d17dee61a1a8db22a9",
+      "bytes": 724105
+    },
+    {
+      "path": "history/sources/04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "blob": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+      "bytes": 1720345
+    },
+    {
+      "path": "history/sources/05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "blob": "9bbabb594f59900820073d1ffd9ea4f90d1e39ae",
+      "bytes": 637439
+    },
+    {
+      "path": "history/sources/06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "blob": "c85fce532302ad2852a383263c91bd30d407804b",
+      "bytes": 2303256
+    }
+  ],
+  "closed_episode_inventory": [
+    {
+      "episode": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "receipt_blob": "35cb9b5a5c72bf49648e18954b5dd7ba3b6cd410",
+      "source_path": "episodes/LV-C15-PII-D529-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "caaed9f3fcb7d8fd3d82eae2a26e3ca9d99482ae"
+    },
+    {
+      "episode": "LV-C15-PIII-D529-AUTHOR-SOURCE",
+      "receipt_blob": "f6e14452c149afa9426b6ea1df81f4b26f163f21",
+      "source_path": "episodes/LV-C15-PIII-D529-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "5f9caf904017b5c0de2c5ff012760363ddaf8bf1"
+    },
+    {
+      "episode": "LV-C15-PIV-D530-AUTHOR-SOURCE",
+      "receipt_blob": "4953cd729d8c560e9a2bc6fc37725a61a4787816",
+      "source_path": "episodes/LV-C15-PIV-D530-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "5a3b09a246e82f3595954fcde56be12fffb37c2c"
+    },
+    {
+      "episode": "LV-C15-PV-D531-AUTHOR-SOURCE",
+      "receipt_blob": "b2f94286e5fdb0696f831d967baca9eae3d5ab17",
+      "source_path": "episodes/LV-C15-PV-D531-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "46d921cbdd7be67b0c94a3d21504d0d2fabe60bb"
+    },
+    {
+      "episode": "LV-C16-PI-D532-AUTHOR-SOURCE",
+      "receipt_blob": "bb4029f02f447c2312bcfa460c76b16de49d9cfc",
+      "source_path": "episodes/LV-C16-PI-D532-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "59cd11a151e7993cba957e14ffa139da63f451cb"
+    },
+    {
+      "episode": "LV-C16-PII-D533-AUTHOR-SOURCE",
+      "receipt_blob": "0c254ea9f1fbc65b4da32487cb1db3cd434da469",
+      "source_path": "episodes/LV-C16-PII-D533-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "b459ecb36bb3744d51751b7a81f8aed56dd61a9c"
+    },
+    {
+      "episode": "LV-C16-PIII-D534-AUTHOR-SOURCE",
+      "receipt_blob": "d62b926db0fa14ac5639b03366849999cce46f9b",
+      "source_path": "episodes/LV-C16-PIII-D534-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "b99076069c0bffb38f6421eb089ece5d61710c9e"
+    },
+    {
+      "episode": "LV-C16-PIV-D537-AUTHOR-SOURCE",
+      "receipt_blob": "fe50d178ac02bccdc407c49429dc3cf015788ae3",
+      "source_path": "episodes/LV-C16-PIV-D537-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "9c5246423529188f0b23c7c21608d5b6c8024779"
+    },
+    {
+      "episode": "LV-C16-PV-D537-AUTHOR-SOURCE",
+      "receipt_blob": "ac12a6336ba876d1ed42f11bec855d6245f1d0b5",
+      "source_path": "episodes/LV-C16-PV-D537-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "b75bb7d5769cc3a6e78ab6790674d7c9015710b8"
+    },
+    {
+      "episode": "LVI-C01-PI-D538-REAUTHORIZED-R2-AUTHOR-SOURCE",
+      "receipt_blob": "45697d143232f3f481ff99354e0fe88361a0d3ed",
+      "source_path": "episodes/LVI-C01-PI-D538-REAUTHORIZED-R2-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "d5c53df85803165d9cb076d02549a947f3ec9707"
+    },
+    {
+      "episode": "LVI-C01-PII-D538-AUTHOR-SOURCE",
+      "receipt_blob": "ea04a7bde138d52c6a8f22991b79ae91cf6a0719",
+      "source_path": "episodes/LVI-C01-PII-D538-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "1fa9fe4cb63f72e54589922b88f5d7517bbed28d"
+    },
+    {
+      "episode": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+      "receipt_blob": "8956682d1b5be0c882487aab9f14c73404171fc4",
+      "source_path": "episodes/LVI-C01-PIII-D539-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "f3569f6759ca492665b4aae613a6f442d58270d6"
+    },
+    {
+      "episode": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+      "receipt_blob": "6e2de6f8aba558de87fc7dc1933719ce9608149a",
+      "source_path": "episodes/LVI-C01-PIV-D540-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "ec04c4f337acaa42704bbad0b5807f59ab1a3df9"
+    },
+    {
+      "episode": "LVI-C01-PV-D541-AUTHOR-SOURCE",
+      "receipt_blob": "6777e19f971a74ab0a6fc999a566e46e9d7533ba",
+      "source_path": "episodes/LVI-C01-PV-D541-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "5240838052e58c40bbcb7070234a03c864ba95a2"
+    },
+    {
+      "episode": "LVI-C02-PI-D542-AUTHOR-SOURCE",
+      "receipt_blob": "010c0d2392eaa28fa7192a9c56031916f26de2bb",
+      "source_path": "episodes/LVI-C02-PI-D542-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "23f73332ec4b2cae84419a7077310029cfca93d7"
+    },
+    {
+      "episode": "LVI-C02-PII-D543-AUTHOR-SOURCE",
+      "receipt_blob": "edcf8adaac06d4f0e88ff1efd093eecb3c806ef7",
+      "source_path": "episodes/LVI-C02-PII-D543-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "4978a25b3ea89919e6c4b8785d3e15789d5053e9"
+    },
+    {
+      "episode": "LVI-C02-PIII-D544-AUTHOR-SOURCE",
+      "receipt_blob": "37179943af93e2310cbc6865e4070eb2764866d6",
+      "source_path": "episodes/LVI-C02-PIII-D544-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "c32450dd8e19e83aea736e4f41948b285ce0ac4a"
+    },
+    {
+      "episode": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+      "receipt_blob": "fb9e3664aa5a2c0c3aefb282493ffcdf38bcc191",
+      "source_path": "episodes/LVI-C02-PIV-D545-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "021484f272e1e2fb7893d3475743628a98ac1a5e"
+    },
+    {
+      "episode": "LVI-C02-PV-D546-D548-AUTHOR-SOURCE",
+      "receipt_blob": "d18edbb5b7014681bd80ddc0955e3a30e9b3efbe",
+      "source_path": "episodes/LVI-C02-PV-D546-D548-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "dc37c0af6a296d6441fdac76d49e4fc6efb8665c"
+    },
+    {
+      "episode": "LVI-C03-PI-D549-AUTHOR-SOURCE",
+      "receipt_blob": "9d101f260fa7270cbb657e3e62ea0e00636cee7a",
+      "source_path": "episodes/LVI-C03-PI-D549-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "2e4be4a9a4f0bdaee0559ec88b954cd3bf6b66f3"
+    },
+    {
+      "episode": "LVI-C03-PII-D550-AUTHOR-SOURCE",
+      "receipt_blob": "0c5f43edcbf260900887a89336967044b05052f1",
+      "source_path": "episodes/LVI-C03-PII-D550-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "2523c8d0afcc29b1ace7c2439570ae9a7f44eb9f"
+    },
+    {
+      "episode": "LVI-C03-PIII-D551-AUTHOR-SOURCE",
+      "receipt_blob": "fabf3ca28f9546d3ca716f5327665e49e41d0b97",
+      "source_path": "episodes/LVI-C03-PIII-D551-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "47d41bef54ad62c35aeea776127513ab5b65c347"
+    },
+    {
+      "episode": "LVI-C03-PIV-D552-AUTHOR-SOURCE",
+      "receipt_blob": "370c8fa438a1501da1fb897023ca0ba6a532abf1",
+      "source_path": "episodes/LVI-C03-PIV-D552-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "d7381d02abae8609970feedeb560e72c4105c72b"
+    },
+    {
+      "episode": "LVI-C03-PV-D553-AUTHOR-SOURCE",
+      "receipt_blob": "c1dc2c53106cc844c866c1993e8be9761fadc436",
+      "source_path": "episodes/LVI-C03-PV-D553-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "0a171b6ad77d567b039f7c437c9d8bb246da7b57"
+    },
+    {
+      "episode": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "receipt_blob": "4552205299bbb122b3fb1737831d727a00e9dc8f",
+      "source_path": "episodes/LVI-C04-PI-D554-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "7ccf7fdd133f782c0b9f27ede86009a3e81c2aa6"
+    },
+    {
+      "episode": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "receipt_blob": "01b88045753c9eda62b92bcdbcde881d4feb7bf7",
+      "source_path": "episodes/LVI-C04-PII-D555-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "20e59f30cc024214ef54563ef9eb65454d513236"
+    },
+    {
+      "episode": "LVI-C04-PIII-D556-AUTHOR-SOURCE",
+      "receipt_blob": "8cd0e1b7091acf8735e4a53dcdf36d17852d85bf",
+      "source_path": "episodes/LVI-C04-PIII-D556-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "91d896bae18e1b92bb80547ba7aed20780461fb6"
+    },
+    {
+      "episode": "LVI-C04-PIV-D557-AUTHOR-SOURCE",
+      "receipt_blob": "5ea7419626db3183592c76d7a2bd7e1d79a012b6",
+      "source_path": "episodes/LVI-C04-PIV-D557-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "12c483d7ebf31c01ee3792a04a81490ac71bff5c"
+    },
+    {
+      "episode": "LVI-C04-PV-D558-AUTHOR-SOURCE",
+      "receipt_blob": "5f983d7eb0d628fd9992595014c3ce0857cf0fd6",
+      "source_path": "episodes/LVI-C04-PV-D558-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "931e2509a9c2c6918cf6c77d4410387da272ca59"
+    },
+    {
+      "episode": "LVI-C05-PI-D559-R2-AUTHOR-SOURCE",
+      "receipt_blob": "3a042db3069395d7e41cab7e84a06373475464fa",
+      "source_path": "episodes/LVI-C05-PI-D559-R2-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "16a1578103d4f4b6ce0fc972fb325c8697305a5a"
+    },
+    {
+      "episode": "LVI-C05-PII-D560-AUTHOR-SOURCE",
+      "receipt_blob": "f7ecb9cf17dceaeb81e2042331377d0750abfe36",
+      "source_path": "episodes/LVI-C05-PII-D560-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "ad0e33803ac63870f7988f7ddc67eb84d056ec22"
+    },
+    {
+      "episode": "LVI-C05-PIII-D561-AUTHOR-SOURCE",
+      "receipt_blob": "872f337eb2f9656fd24e31c70df4abb183d17df3",
+      "source_path": "episodes/LVI-C05-PIII-D561-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "30e800e3c2dceddaad27fac2591216fd0ab242a5"
+    },
+    {
+      "episode": "LVI-C05-PIV-D562-AUTHOR-SOURCE",
+      "receipt_blob": "894085fd8821c03a12e53d504694d718453ee8b4",
+      "source_path": "episodes/LVI-C05-PIV-D562-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "34f0e92551355d67311c967a9349a044047b346d"
+    },
+    {
+      "episode": "LVI-C05-PV-D563-AUTHOR-SOURCE",
+      "receipt_blob": "9c305237a4f9f2b791bfdc7bb233becc4890d134",
+      "source_path": "episodes/LVI-C05-PV-D563-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "3ae489500b546537e0e4e141fc9659f793937aae"
+    },
+    {
+      "episode": "LVI-C06-PI-D564-AUTHOR-SOURCE",
+      "receipt_blob": "08039c8b024a5652fe3e1526ccf8e80e66829c0f",
+      "source_path": "episodes/LVI-C06-PI-D564-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "a09bac330bee3c2ee2552d66d637f5a3e613376c"
+    },
+    {
+      "episode": "LVI-C06-PII-D565-AUTHOR-SOURCE",
+      "receipt_blob": "439bbafcb7ee92c0e138b6e9139dfdf756e7c9eb",
+      "source_path": "episodes/LVI-C06-PII-D565-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "f79d0f14e7e8c0d8a1f034481348c9e00afdae0c"
+    },
+    {
+      "episode": "LVI-C06-PIII-D566-AUTHOR-SOURCE",
+      "receipt_blob": "c4df89affb74bdd0c7fc980b8cb9a3b4c402eab0",
+      "source_path": "episodes/LVI-C06-PIII-D566-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "a6eb653245d8d9b53557afe4a60c8b11262d57dc"
+    },
+    {
+      "episode": "LVI-C06-PIV-D567-AUTHOR-SOURCE",
+      "receipt_blob": "3b97647b2acac99c19111e3565eab4f1746da431",
+      "source_path": "episodes/LVI-C06-PIV-D567-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "ef7179bc718038e982c88fc4f56b0b5ab5ffbc41"
+    },
+    {
+      "episode": "LVI-C06-PV-D568-AUTHOR-SOURCE",
+      "receipt_blob": "6d776efa822f95da878d694c91e9fcf080939cf0",
+      "source_path": "episodes/LVI-C06-PV-D568-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "7112e9abdd8c8059f65a3aa6e23c6ab2299ca699"
+    },
+    {
+      "episode": "LVI-C07-PI-D569-R2-AUTHOR-SOURCE",
+      "receipt_blob": "3fd10557feba02e99ab94aa5e6cb644cfee91ca1",
+      "source_path": "episodes/LVI-C07-PI-D569-R2-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "ae8456740e3a2e2f8481f6590c2c169380c19a41"
+    },
+    {
+      "episode": "LVI-C07-PII-D570-AUTHOR-SOURCE",
+      "receipt_blob": "a5a38bc2aeca5a8b67af4fc3f80213b502b6e82f",
+      "source_path": "episodes/LVI-C07-PII-D570-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "917fcf0fec0f9e6aa2e9e8ee7a8be5b28e706b0a"
+    },
+    {
+      "episode": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+      "receipt_blob": "8d7f6a3e60d504b97e22f34d92af169037f9baff",
+      "source_path": "episodes/LVI-C07-PIII-D571-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "6c9a48b5c7c1f4ad3fdd17a385435e5a230be334"
+    },
+    {
+      "episode": "LVI-C07-PIV-D572-AUTHOR-SOURCE",
+      "receipt_blob": "46d13e2146af0be336ab1c3070aaf3d75aea9339",
+      "source_path": "episodes/LVI-C07-PIV-D572-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "4fee87e87f7d11fb0e9e881f7599305be4d77782"
+    },
+    {
+      "episode": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+      "receipt_blob": "d5f1b3be9557acaff7aa0884438a4ec69dcb2a7e",
+      "source_path": "episodes/LVI-C07-PV-D573-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "93afd644479e7b6b5780aafa97789ba2f0d010b7"
+    },
+    {
+      "episode": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "receipt_blob": "868c1cabe1905b32f8b295c3435ede69e44fa8b7",
+      "source_path": "episodes/LVI-C08-PI-D574-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "4a55d1b5f78d2ccdfdad5695a72ab0c3c58dc43c"
+    },
+    {
+      "episode": "LVI-C08-PII-D575-AUTHOR-SOURCE",
+      "receipt_blob": "c952656f7792d2ff42da8730d9be8c55d77fdb7a",
+      "source_path": "episodes/LVI-C08-PII-D575-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "37e5c8d6fd54bc422524ba66122e2e424e49d892"
+    },
+    {
+      "episode": "LVI-C08-PIII-D576-AUTHOR-SOURCE",
+      "receipt_blob": "4ee5f5d512e9b36805f46347414a227c136948b9",
+      "source_path": "episodes/LVI-C08-PIII-D576-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "abb6693272c4478e83bb071f5de7b8b8004101b7"
+    },
+    {
+      "episode": "LVI-C08-PIV-D577-AUTHOR-SOURCE",
+      "receipt_blob": "13ac958b8eb50b2dd2bc6e9e5247971a2c488f3a",
+      "source_path": "episodes/LVI-C08-PIV-D577-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "c1664db82d7340fdabb2fe97529b518dd8c9e240"
+    },
+    {
+      "episode": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+      "receipt_blob": "bdc1d0718629ced6ab5932b3c5d65cd158194011",
+      "source_path": "episodes/LVI-C08-PV-D578-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "f76077f699aa4fe231a0f78e80a9288c2e3c6106"
+    },
+    {
+      "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+      "receipt_blob": "687e0515763105921f04f3b4d9df8e16799e6fb9",
+      "source_path": "episodes/LVI-C09-PI-D579-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "source_blob": "f4d525cba99dd7d275dc0cb2c45612df96a956b4"
+    }
+  ],
+  "registry_path": "editorial/registries/universal-codex-design-d580-v1.json",
+  "profiles": [
+    {
+      "id": "lucas",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 11,
+        "COMPLETADO": 19,
+        "PENDENTE_FONTE": 10
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "miren",
+      "domain": "character",
+      "fields": 42,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 12,
+        "COMPLETADO": 17,
+        "PENDENTE_FONTE": 13
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "varo",
+      "domain": "character",
+      "fields": 41,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 10,
+        "COMPLETADO": 17,
+        "CANONICO": 1,
+        "PENDENTE_FONTE": 12,
+        "SEGREDO": 1
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "kael",
+      "domain": "character",
+      "fields": 41,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 8,
+        "COMPLETADO": 19,
+        "PENDENTE_FONTE": 13,
+        "SEGREDO": 1
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "lysa",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 7,
+        "COMPLETADO": 18,
+        "CANONICO": 1,
+        "PENDENTE_FONTE": 14
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "nox",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "COMPLETADO": 13,
+        "PENDENTE_FONTE": 15,
+        "NAO_APLICAVEL": 6
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "sistema",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 7,
+        "COMPLETADO": 13,
+        "PENDENTE_FONTE": 14,
+        "NAO_APLICAVEL": 6
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "rumo",
+      "domain": "character",
+      "fields": 41,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 7,
+        "COMPLETADO": 14,
+        "PENDENTE_FONTE": 14,
+        "NAO_APLICAVEL": 6
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "kairon",
+      "domain": "character",
+      "fields": 41,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 10,
+        "COMPLETADO": 15,
+        "PENDENTE_FONTE": 15,
+        "SEGREDO": 1
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "caedren",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "COMPLETADO": 20,
+        "PENDENTE_FONTE": 15
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "astra",
+      "domain": "character",
+      "fields": 41,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 17,
+        "COMPLETADO": 1,
+        "PENDENTE_FONTE": 22,
+        "CANONICO": 1
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "brannik",
+      "domain": "character",
+      "fields": 42,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 9,
+        "COMPLETADO": 19,
+        "PENDENTE_FONTE": 13,
+        "SEGREDO": 1
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "naira",
+      "domain": "character",
+      "fields": 41,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "COMPLETADO": 19,
+        "PENDENTE_FONTE": 16
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "sael",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 2,
+        "CANONICO": 1,
+        "COMPLETADO": 21,
+        "PENDENTE_FONTE": 16
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "dorek",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 2,
+        "COMPLETADO": 20,
+        "CANONICO": 1,
+        "PENDENTE_FONTE": 17
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "maelis",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 8,
+        "COMPLETADO": 17,
+        "PENDENTE_FONTE": 15
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "reva",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 2,
+        "COMPLETADO": 19,
+        "CANONICO": 1,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "ysol",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 1,
+        "CANONICO": 1,
+        "COMPLETADO": 17,
+        "PENDENTE_FONTE": 21
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "seron",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 4,
+        "CANONICO": 1,
+        "COMPLETADO": 17,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "luren",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 1,
+        "CANONICO": 1,
+        "COMPLETADO": 16,
+        "PENDENTE_FONTE": 22
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "edric",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 7,
+        "COMPLETADO": 14,
+        "PENDENTE_FONTE": 19
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "nixa",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "COMPLETADO": 13,
+        "PENDENTE_FONTE": 21
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "tavren",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 3,
+        "COMPLETADO": 17,
+        "DEDUZIDO": 1,
+        "PENDENTE_FONTE": 17,
+        "SEGREDO": 2
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "rhem",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "COMPLETADO": 15,
+        "DEDUZIDO": 1,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "cirn",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 8,
+        "COMPLETADO": 14,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "thalor-althea",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "COMPLETADO": 18,
+        "PENDENTE_FONTE": 16
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "thaeron",
+      "domain": "character",
+      "fields": 41,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "COMPLETADO": 21,
+        "PENDENTE_FONTE": 15
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "iriel",
+      "domain": "character",
+      "fields": 41,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "COMPLETADO": 16,
+        "PENDENTE_FONTE": 19
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "talis",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "COMPLETADO": 16,
+        "SEGREDO": 6,
+        "PENDENTE_FONTE": 13
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "tharvek",
+      "domain": "character",
+      "fields": 41,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "COMPLETADO": 21,
+        "PENDENTE_FONTE": 14
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "bressa",
+      "domain": "character",
+      "fields": 41,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 2,
+        "COMPLETADO": 21,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "elyrien",
+      "domain": "character",
+      "fields": 41,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 8,
+        "COMPLETADO": 18,
+        "PENDENTE_FONTE": 15
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "virandor",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 1,
+        "COMPLETADO": 16,
+        "PENDENTE_FONTE": 23
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "elen",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 1,
+        "COMPLETADO": 16,
+        "PENDENTE_FONTE": 21,
+        "SEGREDO": 2
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "neris",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "COMPLETADO": 13,
+        "PENDENTE_FONTE": 21
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "velkar",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "COMPLETADO": 15,
+        "PENDENTE_FONTE": 20
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "serakh",
+      "domain": "character",
+      "fields": 41,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "COMPLETADO": 16,
+        "PENDENTE_FONTE": 20
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "varkhess",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 1,
+        "CANONICO": 1,
+        "COMPLETADO": 18,
+        "PENDENTE_FONTE": 20
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "orelia",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 1,
+        "COMPLETADO": 20,
+        "CANONICO": 1,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "rhazek",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 1,
+        "CANONICO": 1,
+        "COMPLETADO": 17,
+        "PENDENTE_FONTE": 21
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "lethira",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 1,
+        "CANONICO": 1,
+        "COMPLETADO": 17,
+        "PENDENTE_FONTE": 21
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "serina",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 1,
+        "COMPLETADO": 20,
+        "CANONICO": 1,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "morvek",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 1,
+        "CANONICO": 1,
+        "COMPLETADO": 17,
+        "PENDENTE_FONTE": 21
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "avelna",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 1,
+        "COMPLETADO": 19,
+        "CANONICO": 1,
+        "PENDENTE_FONTE": 19
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "ithran",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "COMPLETADO": 17,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "vesra",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 1,
+        "COMPLETADO": 16,
+        "PENDENTE_FONTE": 21,
+        "SEGREDO": 2
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "nelo",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 1,
+        "COMPLETADO": 16,
+        "PENDENTE_FONTE": 23
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "maia",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 1,
+        "COMPLETADO": 16,
+        "PENDENTE_FONTE": 21,
+        "SEGREDO": 2
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "ira",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 1,
+        "CANONICO": 1,
+        "COMPLETADO": 15,
+        "PENDENTE_FONTE": 23
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "adela",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 1,
+        "COMPLETADO": 20,
+        "CANONICO": 1,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "edran",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "COMPLETADO": 14,
+        "PENDENTE_FONTE": 21
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "enna",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 1,
+        "COMPLETADO": 19,
+        "PENDENTE_FONTE": 20
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "veskan",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 2,
+        "COMPLETADO": 16,
+        "PENDENTE_FONTE": 22
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "lyra",
+      "domain": "character",
+      "fields": 41,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 1,
+        "COMPLETADO": 22,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "aeldric",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 3,
+        "COMPLETADO": 17,
+        "PENDENTE_FONTE": 20
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "ilva",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 7,
+        "COMPLETADO": 16,
+        "PENDENTE_FONTE": 17
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "serenna",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 1,
+        "COMPLETADO": 21,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "yra",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 4,
+        "COMPLETADO": 18,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "seris",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "COMPLETADO": 16,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "ivena",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 1,
+        "COMPLETADO": 20,
+        "CANONICO": 1,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "ordan",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 1,
+        "CANONICO": 1,
+        "COMPLETADO": 17,
+        "PENDENTE_FONTE": 21
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "edrik",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 1,
+        "CANONICO": 1,
+        "COMPLETADO": 17,
+        "PENDENTE_FONTE": 21
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "sella",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 1,
+        "CANONICO": 1,
+        "COMPLETADO": 17,
+        "PENDENTE_FONTE": 21
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "merovan",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 1,
+        "COMPLETADO": 16,
+        "PENDENTE_FONTE": 21,
+        "SEGREDO": 2
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "vessa",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 3,
+        "COMPLETADO": 17,
+        "PENDENTE_FONTE": 20
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "aurel",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 2,
+        "COMPLETADO": 18,
+        "PENDENTE_FONTE": 20
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "seyra",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 1,
+        "COMPLETADO": 16,
+        "PENDENTE_FONTE": 21,
+        "SEGREDO": 2
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "rael",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 2,
+        "COMPLETADO": 17,
+        "PENDENTE_FONTE": 21
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "eren",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 2,
+        "COMPLETADO": 18,
+        "PENDENTE_FONTE": 20
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "hedra",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 1,
+        "COMPLETADO": 16,
+        "PENDENTE_FONTE": 21,
+        "SEGREDO": 2
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "orven",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 2,
+        "COMPLETADO": 17,
+        "PENDENTE_FONTE": 21
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "nemi",
+      "domain": "character",
+      "fields": 41,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 4,
+        "COMPLETADO": 16,
+        "PENDENTE_FONTE": 18,
+        "SEGREDO": 3
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "candidate:tessa-maren",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 2,
+        "COMPLETADO": 17,
+        "PENDENTE_FONTE": 21
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "candidate:beren-tol",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 2,
+        "COMPLETADO": 17,
+        "PENDENTE_FONTE": 21
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "candidate:sarela",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 3,
+        "COMPLETADO": 15,
+        "PENDENTE_FONTE": 22
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "candidate:nemia",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 1,
+        "COMPLETADO": 16,
+        "PENDENTE_FONTE": 21,
+        "SEGREDO": 2
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "candidate:aida",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 1,
+        "COMPLETADO": 18,
+        "PENDENTE_FONTE": 21
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "candidate:teria",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 3,
+        "COMPLETADO": 17,
+        "PENDENTE_FONTE": 20
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "candidate:aliria",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "COMPLETADO": 16,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "candidate:darien",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 3,
+        "COMPLETADO": 17,
+        "PENDENTE_FONTE": 20
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "candidate:severo",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 3,
+        "COMPLETADO": 17,
+        "PENDENTE_FONTE": 20
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "chr-tessa-arin",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 4,
+        "PENDENTE_FONTE": 31,
+        "COMPLETADO": 5
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "chr-tessa-morven",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "PENDENTE_FONTE": 27,
+        "COMPLETADO": 8
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "chr-tessa-municipal",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 4,
+        "PENDENTE_FONTE": 28,
+        "COMPLETADO": 8
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "chr-marek-solen",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 4,
+        "PENDENTE_FONTE": 28,
+        "COMPLETADO": 8
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "chr-ferran-dosk",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "PENDENTE_FONTE": 27,
+        "COMPLETADO": 8
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "chr-loris-marinheiro",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "PENDENTE_FONTE": 30,
+        "COMPLETADO": 5
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "chr-veskan-rohl",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 4,
+        "PENDENTE_FONTE": 31,
+        "COMPLETADO": 5
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "chr-durghan-uzgor",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "COMPLETADO": 6,
+        "PENDENTE_FONTE": 29
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "chr-grazha-uzgor",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 7,
+        "COMPLETADO": 6,
+        "PENDENTE_FONTE": 27
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "chr-korr-uzgor",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "COMPLETADO": 5,
+        "PENDENTE_FONTE": 29
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "chr-elyan-legiao",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 3,
+        "PENDENTE_FONTE": 32,
+        "COMPLETADO": 5
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "chr-oren-legiao",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 4,
+        "PENDENTE_FONTE": 31,
+        "COMPLETADO": 5
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "chr-elion-genese",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 3,
+        "PENDENTE_FONTE": 32,
+        "COMPLETADO": 5
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "chr-fen-registro",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 3,
+        "PENDENTE_FONTE": 32,
+        "COMPLETADO": 5
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "chr-halden-cozinheiro",
+      "domain": "character",
+      "fields": 40,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 4,
+        "PENDENTE_FONTE": 31,
+        "COMPLETADO": 5
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "egide-dupla",
+      "domain": "world",
+      "fields": 24,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "muralha-viva",
+      "domain": "world",
+      "fields": 24,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "tridente-runico",
+      "domain": "world",
+      "fields": 24,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "sol-feerico",
+      "domain": "world",
+      "fields": 24,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "anel-cronos",
+      "domain": "world",
+      "fields": 24,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "raizes-pedra",
+      "domain": "world",
+      "fields": 24,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "ancoras-limiar",
+      "domain": "world",
+      "fields": 24,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "coracoes-reserva",
+      "domain": "world",
+      "fields": 24,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "oraculo-aurora",
+      "domain": "world",
+      "fields": 24,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "malha-dissipacao",
+      "domain": "world",
+      "fields": 24,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "veu-ruptura",
+      "domain": "world",
+      "fields": 24,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "veu-mil-horizontes",
+      "domain": "world",
+      "fields": 24,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "canto-vigilia",
+      "domain": "world",
+      "fields": 24,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "sentinelas-ebano",
+      "domain": "world",
+      "fields": 24,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "vaga-lumes-horizonte",
+      "domain": "world",
+      "fields": 24,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "portoes-verdade",
+      "domain": "world",
+      "fields": 24,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "circulos-socorro",
+      "domain": "world",
+      "fields": 24,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "ceu-respirante",
+      "domain": "world",
+      "fields": 24,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "casa-abraca",
+      "domain": "world",
+      "fields": 24,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "ultimo-horizonte",
+      "domain": "world",
+      "fields": 26,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "COMPLETADO": 2,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "base-aurora",
+      "domain": "world",
+      "fields": 27,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "COMPLETADO": 2,
+        "PENDENTE_FONTE": 19
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "torre-criador",
+      "domain": "world",
+      "fields": 31,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "CANONICO": 4,
+        "COMPLETADO": 2,
+        "PENDENTE_FONTE": 19
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "horizonte-aberto",
+      "domain": "world",
+      "fields": 25,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 19
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "malha-aurora",
+      "domain": "world",
+      "fields": 24,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 7,
+        "COMPLETADO": 2,
+        "PENDENTE_FONTE": 15
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "argos",
+      "domain": "world",
+      "fields": 26,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 9,
+        "COMPLETADO": 2,
+        "PENDENTE_FONTE": 15
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "asa-livre",
+      "domain": "world",
+      "fields": 24,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "COMPLETADO": 2,
+        "PENDENTE_FONTE": 16
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "sete-caminhos-cedro",
+      "domain": "world",
+      "fields": 25,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 19
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "ponte-retorno",
+      "domain": "world",
+      "fields": 25,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 19
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "ferro-horizonte",
+      "domain": "world",
+      "fields": 22,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 16
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "coracao-aerun",
+      "domain": "world",
+      "fields": 22,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 16
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "niraven",
+      "domain": "world",
+      "fields": 15,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "PENDENTE_FONTE": 10
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "aerun-instituto",
+      "domain": "world",
+      "fields": 21,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "CANONICO": 1,
+        "COMPLETADO": 2,
+        "PENDENTE_FONTE": 12
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "aerun-guardiao",
+      "domain": "world",
+      "fields": 26,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "COMPLETADO": 2,
+        "PENDENTE_FONTE": 19
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "tres-arcos",
+      "domain": "world",
+      "fields": 21,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 12,
+        "COMPLETADO": 2,
+        "PENDENTE_FONTE": 7
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "arvendell",
+      "domain": "world",
+      "fields": 19,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 7,
+        "PENDENTE_FONTE": 12
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "thalor",
+      "domain": "world",
+      "fields": 19,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "PENDENTE_FONTE": 14
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "halvern-region",
+      "domain": "world",
+      "fields": 19,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "PENDENTE_FONTE": 14
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "calderva",
+      "domain": "world",
+      "fields": 19,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "PENDENTE_FONTE": 14
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "renshar",
+      "domain": "world",
+      "fields": 22,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "CANONICO": 1,
+        "COMPLETADO": 2,
+        "PENDENTE_FONTE": 14
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "serevan",
+      "domain": "world",
+      "fields": 19,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "PENDENTE_FONTE": 14
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "seral",
+      "domain": "world",
+      "fields": 19,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "PENDENTE_FONTE": 14
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "veyra",
+      "domain": "world",
+      "fields": 19,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 7,
+        "PENDENTE_FONTE": 12
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "vale-oficios",
+      "domain": "world",
+      "fields": 19,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "PENDENTE_FONTE": 14
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "pedras-claras",
+      "domain": "world",
+      "fields": 19,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "PENDENTE_FONTE": 14
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "golfo-exterior",
+      "domain": "world",
+      "fields": 19,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "PENDENTE_FONTE": 14
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "casa-tres-poderes",
+      "domain": "world",
+      "fields": 27,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "PENDENTE_FONTE": 22
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "casa-jardim-branco",
+      "domain": "world",
+      "fields": 29,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 8,
+        "COMPLETADO": 2,
+        "PENDENTE_FONTE": 19
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "forja-aurora",
+      "domain": "world",
+      "fields": 27,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "PENDENTE_FONTE": 22
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "observatorio-criador",
+      "domain": "world",
+      "fields": 29,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 7,
+        "COMPLETADO": 2,
+        "PENDENTE_FONTE": 20
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "academia-tres-arcos",
+      "domain": "world",
+      "fields": 17,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "PENDENTE_FONTE": 12
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "academia-horizonte",
+      "domain": "world",
+      "fields": 17,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "PENDENTE_FONTE": 12
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "hz-1",
+      "domain": "world",
+      "fields": 29,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "COMPLETADO": 2,
+        "PENDENTE_FONTE": 21
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "campo-aurora",
+      "domain": "world",
+      "fields": 29,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "COMPLETADO": 2,
+        "PENDENTE_FONTE": 22
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "legiao",
+      "domain": "world",
+      "fields": 19,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 10,
+        "COMPLETADO": 2,
+        "PENDENTE_FONTE": 7
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "dominato",
+      "domain": "world",
+      "fields": 19,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "COMPLETADO": 2,
+        "PENDENTE_FONTE": 12
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "bandeira-cinzenta",
+      "domain": "world",
+      "fields": 17,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 11
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "genese",
+      "domain": "world",
+      "fields": 20,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 9,
+        "COMPLETADO": 2,
+        "PENDENTE_FONTE": 9
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "canal-soberano",
+      "domain": "world",
+      "fields": 18,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 9,
+        "PENDENTE_FONTE": 9
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "circulacao-retorno",
+      "domain": "world",
+      "fields": 18,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 8,
+        "PENDENTE_FONTE": 10
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "convergencia-voluntaria",
+      "domain": "world",
+      "fields": 18,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 12
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "matriz-germinal",
+      "domain": "world",
+      "fields": 18,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 7,
+        "PENDENTE_FONTE": 11
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "plot:halvern",
+      "domain": "world",
+      "fields": 15,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "PENDENTE_FONTE": 10
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "plot:velkar",
+      "domain": "world",
+      "fields": 15,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "PENDENTE_FONTE": 10
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "plot:seis-marcas",
+      "domain": "world",
+      "fields": 17,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "COMPLETADO": 2,
+        "PENDENTE_FONTE": 10
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "plot:talis",
+      "domain": "world",
+      "fields": 17,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "COMPLETADO": 2,
+        "SEGREDO": 4,
+        "PENDENTE_FONTE": 6
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "plot:nira",
+      "domain": "world",
+      "fields": 15,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "PENDENTE_FONTE": 10
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "plot:ithran",
+      "domain": "world",
+      "fields": 15,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "PENDENTE_FONTE": 10
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "plot:ferro",
+      "domain": "world",
+      "fields": 15,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "PENDENTE_FONTE": 10
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "plot:conferencia",
+      "domain": "world",
+      "fields": 15,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "PENDENTE_FONTE": 10
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "plot:asa",
+      "domain": "world",
+      "fields": 15,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "PENDENTE_FONTE": 10
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "plot:mar",
+      "domain": "world",
+      "fields": 15,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "PENDENTE_FONTE": 10
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "plot:coracao",
+      "domain": "world",
+      "fields": 15,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "PENDENTE_FONTE": 10
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "candidate:velarios",
+      "domain": "world",
+      "fields": 26,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 8,
+        "COMPLETADO": 2,
+        "PENDENTE_FONTE": 16
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "candidate:cafe-egua",
+      "domain": "world",
+      "fields": 24,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "candidate:segunda-feira-egua",
+      "domain": "world",
+      "fields": 24,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "candidate:casa-horizontes",
+      "domain": "world",
+      "fields": 30,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 7,
+        "COMPLETADO": 2,
+        "PENDENTE_FONTE": 21
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "candidate:observatorio-dimensional",
+      "domain": "world",
+      "fields": 29,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "COMPLETADO": 2,
+        "PENDENTE_FONTE": 22
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "candidate:varandas-altas",
+      "domain": "world",
+      "fields": 20,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 14
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "candidate:varzea-fornos-baixos",
+      "domain": "world",
+      "fields": 20,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 14
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "candidate:cabelos-de-luz",
+      "domain": "world",
+      "fields": 26,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "COMPLETADO": 2,
+        "PENDENTE_FONTE": 18
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "candidate:passos-criador",
+      "domain": "world",
+      "fields": 27,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "PENDENTE_FONTE": 21
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "candidate:pedras-assobiam",
+      "domain": "world",
+      "fields": 25,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "COMPLETADO": 2,
+        "PENDENTE_FONTE": 17
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "candidate:academia-projeto-pessoas",
+      "domain": "world",
+      "fields": 17,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "COMPLETADO": 2,
+        "PENDENTE_FONTE": 9
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "candidate:ceramica-fornos-baixos",
+      "domain": "world",
+      "fields": 19,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 4,
+        "COMPLETADO": 2,
+        "PENDENTE_FONTE": 13
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "candidate:lema-nenhum-fica-para-tras",
+      "domain": "world",
+      "fields": 19,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 4,
+        "COMPLETADO": 2,
+        "PENDENTE_FONTE": 13
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "candidate:caderno-historias-vivendo",
+      "domain": "world",
+      "fields": 19,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 4,
+        "COMPLETADO": 2,
+        "PENDENTE_FONTE": 13
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "item:lira-caderno-d305",
+      "domain": "world",
+      "fields": 19,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 3,
+        "PENDENTE_FONTE": 16
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "item:vareth-placa-d253",
+      "domain": "world",
+      "fields": 19,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 3,
+        "PENDENTE_FONTE": 16
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "item:iana-placa-d240",
+      "domain": "world",
+      "fields": 19,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 3,
+        "PENDENTE_FONTE": 16
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "item:desenho-calderva-d366",
+      "domain": "world",
+      "fields": 19,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 3,
+        "PENDENTE_FONTE": 16
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "item:caedren-bone-d393",
+      "domain": "world",
+      "fields": 19,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 3,
+        "PENDENTE_FONTE": 16
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "item:caedren-espada-observada",
+      "domain": "world",
+      "fields": 19,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 3,
+        "PENDENTE_FONTE": 16
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "item:argos-gravetos-d579",
+      "domain": "world",
+      "fields": 21,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 6,
+        "CANONICO": 1,
+        "PENDENTE_FONTE": 14
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "org-uzgor",
+      "domain": "world",
+      "fields": 19,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 7,
+        "PENDENTE_FONTE": 11,
+        "COMPLETADO": 1
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "place-pedreira-oriental-arvendell",
+      "domain": "world",
+      "fields": 19,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "PENDENTE_FONTE": 14
+      },
+      "semantic_review": "PENDING"
+    },
+    {
+      "id": "place-camara-origem",
+      "domain": "world",
+      "fields": 19,
+      "missing_native": [],
+      "status_counts": {
+        "RECUPERADO": 5,
+        "PENDENTE_FONTE": 14
+      },
+      "semantic_review": "PENDING"
+    }
+  ],
+  "issues": [],
+  "duplicates": [],
+  "remaining_semantic_profiles": 192
+}
