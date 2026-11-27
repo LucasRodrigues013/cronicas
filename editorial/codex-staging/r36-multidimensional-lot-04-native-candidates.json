@@ -1,0 +1,3511 @@
+{
+  "schema": "worldroot-r36-native-candidate-profiles-v2",
+  "base_requested": "1ac501c9928d600c52bde12e1f87cb4fa839effd",
+  "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+  "policy": {
+    "days": [
+      1,
+      579
+    ],
+    "books": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "native_character_fields": 40,
+    "production_hold": true,
+    "preserve_prior_changes": 229
+  },
+  "characters": [
+    {
+      "id": "saira-venn",
+      "name": "Saira Venn",
+      "fields": {
+        "identity": {
+          "value": "Saira Venn",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 159883,
+              "anchor": "— SAIRA VENN. Capitã do Jardim Errante."
+            }
+          ],
+          "justification": "Evidência histórica; não estabelece estado atual.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "species": {
+          "value": "Humana",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 159949,
+              "anchor": "SAIRA era humana."
+            }
+          ],
+          "justification": "Evidência histórica; não estabelece estado atual.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "lineage": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "origin": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "age_chronological": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "age_biological": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "age_apparent": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "age_experiential": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "height_cm": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "mass_kg": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "body": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "face": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "hair": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "eyes": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "skin": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "voice": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "gestures": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "wardrobe": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "occupation": {
+          "value": "Capitã do Jardim Errante",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 159883,
+              "anchor": "— SAIRA VENN. Capitã do Jardim Errante."
+            }
+          ],
+          "justification": "Evidência histórica; não estabelece estado atual.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "roles": {
+          "value": "Capitã do Jardim Errante.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 159883,
+              "anchor": "— SAIRA VENN. Capitã do Jardim Errante.",
+              "day_heading": 208,
+              "scene_heading_line": 159269,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "languages": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "attributes": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "skills": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "proficiencies": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "combat_style": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "magic_repertoire": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "equipment": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "inventory": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "condition": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "relationships": {
+          "value": "D208: primeiro contato com Lucas e troca de perguntas sobre suportes e voo.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 159883,
+              "anchor": "— SAIRA VENN. Capitã do Jardim Errante.",
+              "day_heading": 208,
+              "scene_heading_line": 159269,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 159885,
+              "anchor": "LUCAS apertou sua mão.",
+              "day_heading": 208,
+              "scene_heading_line": 159269,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 159889,
+              "anchor": "— E, se você não se importar, gostaria de saber como conseguiu fazer aqueles suportes.",
+              "day_heading": 208,
+              "scene_heading_line": 159269,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 159893,
+              "anchor": "— Eu gostaria de saber como conseguiu fazer um navio voar.",
+              "day_heading": 208,
+              "scene_heading_line": 159269,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 159899,
+              "anchor": "— Então acho que vamos ter uma conversa muito interessante.",
+              "day_heading": 208,
+              "scene_heading_line": 159269,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "goals": {
+          "value": "Na viagem observada, levar sementes e mudas a comunidades afetadas por ventos; não abandonar a carga.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160159,
+              "anchor": "— Algumas. Mas nesta viagem estávamos levando sementes e mudas para comunidades que perderam parte de suas plantações durante uma temporada de ventos violentos.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160175,
+              "anchor": "— Então você entende por que eu não queria abandonar minha carga.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "values": {
+          "value": "Recusa relatar lugares não visitados como descobertas próprias.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160107,
+              "anchor": "— Alguns. Com embarcações e métodos diferentes. Mas não vou contar histórias de lugares onde nunca estive como se fossem minhas descobertas.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "contradictions": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "fears": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "preferences": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "knowledge": {
+          "value": "Reconhece rotas e correntes aéreas; não conhece a origem integral da magia do céu.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 160029,
+              "anchor": "— Essa é uma pergunta que nossos estudiosos discutem há muitas gerações. Sabemos reconhecer e utilizar certas correntes, armazenar parte de sua energia e medir quando as reservas estão diminuindo."
+            },
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 160033,
+              "anchor": "— Não afirmo conhecer a origem de toda a magia do céu."
+            },
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 160555,
+              "anchor": "— Estas são algumas rotas que conhecemos nas cordilheiras. Não atravessamos qualquer lugar. Navegamos onde as Veias do Alto oferecem condições suficientes para nossas embarcações."
+            }
+          ],
+          "justification": "Evidência histórica; não estabelece estado atual.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "location": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "journey": {
+          "value": "Navega em rotas reconhecidas das cordilheiras; não afirma acesso irrestrito.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160555,
+              "anchor": "— Estas são algumas rotas que conhecemos nas cordilheiras. Não atravessamos qualquer lugar. Navegamos onde as Veias do Alto oferecem condições suficientes para nossas embarcações.",
+              "day_heading": 208,
+              "scene_heading_line": 160473,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "history": {
+          "value": "D208: apresenta-se a Lucas e conduz visitantes à parte central da embarcação.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 159883,
+              "anchor": "— SAIRA VENN. Capitã do Jardim Errante.",
+              "day_heading": 208,
+              "scene_heading_line": 159269,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 159991,
+              "anchor": "SAIRA conduziu os visitantes até a parte central do navio.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "visual_refs": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        }
+      },
+      "status": "AUTHOR_GATE_PENDING",
+      "added_fields": [
+        "roles",
+        "relationships",
+        "goals",
+        "history",
+        "journey",
+        "values"
+      ],
+      "source_candidate_id": "saira-venn",
+      "identity_resolution": "NO_MERGE",
+      "canon_changed": false
+    },
+    {
+      "id": "doru",
+      "name": "Doru",
+      "fields": {
+        "identity": {
+          "value": "Doru; sobrenome desconhecido. Khelen é o povo.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 159951,
+              "anchor": "Um dos navegadores, DORU, pertencia aos KHELEN, um povo cujos corpos apresentavam formações minerais naturais. Suas marcas cristalinas não eram armaduras, implantes nem efeitos de CREATION."
+            },
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 160223,
+              "anchor": "O gigante apontou para os cristais das têmporas do KHELEN."
+            }
+          ],
+          "justification": "Evidência histórica; não estabelece estado atual.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "species": {
+          "value": "Pertence ao povo Khelen",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 159951,
+              "anchor": "Um dos navegadores, DORU, pertencia aos KHELEN, um povo cujos corpos apresentavam formações minerais naturais. Suas marcas cristalinas não eram armaduras, implantes nem efeitos de CREATION."
+            }
+          ],
+          "justification": "Evidência histórica; não estabelece estado atual.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "lineage": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "origin": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "age_chronological": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "age_biological": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "age_apparent": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "age_experiential": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "height_cm": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "mass_kg": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "body": {
+          "value": "Formações minerais naturais, incluindo cristais nas têmporas.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 159951,
+              "anchor": "Um dos navegadores, DORU, pertencia aos KHELEN, um povo cujos corpos apresentavam formações minerais naturais. Suas marcas cristalinas não eram armaduras, implantes nem efeitos de CREATION."
+            },
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 160223,
+              "anchor": "O gigante apontou para os cristais das têmporas do KHELEN."
+            }
+          ],
+          "justification": "Evidência histórica; não estabelece estado atual.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "face": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "hair": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "eyes": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "skin": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "voice": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "gestures": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "wardrobe": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "occupation": {
+          "value": "Navegador do Jardim Errante",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 159951,
+              "anchor": "Um dos navegadores, DORU, pertencia aos KHELEN, um povo cujos corpos apresentavam formações minerais naturais. Suas marcas cristalinas não eram armaduras, implantes nem efeitos de CREATION."
+            }
+          ],
+          "justification": "Evidência histórica; não estabelece estado atual.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "roles": {
+          "value": "Navegador da tripulação do Jardim Errante.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 159951,
+              "anchor": "Um dos navegadores, DORU, pertencia aos KHELEN, um povo cujos corpos apresentavam formações minerais naturais. Suas marcas cristalinas não eram armaduras, implantes nem efeitos de CREATION.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "languages": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "attributes": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "skills": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "proficiencies": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "combat_style": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "magic_repertoire": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "equipment": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "inventory": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "condition": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "relationships": {
+          "value": "Interage com Naira sobre o casco e Káiron sobre cristais e armadura.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 159977,
+              "anchor": "O KHELEN observou a engenheira.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 159979,
+              "anchor": "— Então foi você quem disse a ele como não destruir nosso casco?",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 159987,
+              "anchor": "— Gosto de você.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160221,
+              "anchor": "KÁIRON estava conversando com DORU.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160223,
+              "anchor": "O gigante apontou para os cristais das têmporas do KHELEN.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160239,
+              "anchor": "Depois apontou para sua armadura.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "goals": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "values": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "contradictions": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "fears": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "preferences": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "knowledge": {
+          "value": "Relata crescimento lento e possibilidade de aparar cristais por profissionais.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 160229,
+              "anchor": "— Lentamente. E podem ser aparados por profissionais quando necessário."
+            },
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 160235,
+              "anchor": "— Depende do cuidado."
+            }
+          ],
+          "justification": "Evidência histórica; não estabelece estado atual.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "location": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "journey": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "history": {
+          "value": "D208: examina suportes manifestados, pergunta sobre CREATION e explica manutenção de cristais.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 159961,
+              "anchor": "DORU examinava os suportes manifestados.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 159967,
+              "anchor": "— Você consegue fazer metal aparecer?",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160229,
+              "anchor": "— Lentamente. E podem ser aparados por profissionais quando necessário.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "visual_refs": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        }
+      },
+      "status": "AUTHOR_GATE_PENDING",
+      "added_fields": [
+        "roles",
+        "relationships",
+        "history"
+      ],
+      "source_candidate_id": "doru-khelen",
+      "identity_resolution": "PENDING_AUTHOR_LINK; KHELEN is people, not surname",
+      "canon_changed": false
+    },
+    {
+      "id": "nuri-arva",
+      "name": "Núri Arva",
+      "fields": {
+        "identity": {
+          "value": "Núri Arva",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 159953,
+              "anchor": "Outra tripulante, NÚRI ARVA, era uma botânica de pele bronzeada e cabelos presos em longas tranças com pequenas sementes entrelaçadas."
+            }
+          ],
+          "justification": "Evidência histórica; não estabelece estado atual.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "species": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "lineage": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "origin": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "age_chronological": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "age_biological": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "age_apparent": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "age_experiential": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "height_cm": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "mass_kg": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "body": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "face": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "hair": {
+          "value": "Longas tranças com pequenas sementes entrelaçadas.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 159953,
+              "anchor": "Outra tripulante, NÚRI ARVA, era uma botânica de pele bronzeada e cabelos presos em longas tranças com pequenas sementes entrelaçadas."
+            }
+          ],
+          "justification": "Evidência histórica; não estabelece estado atual.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "eyes": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "skin": {
+          "value": "Bronzeada",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 159953,
+              "anchor": "Outra tripulante, NÚRI ARVA, era uma botânica de pele bronzeada e cabelos presos em longas tranças com pequenas sementes entrelaçadas."
+            }
+          ],
+          "justification": "Evidência histórica; não estabelece estado atual.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "voice": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "gestures": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "wardrobe": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "occupation": {
+          "value": "Botânica",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 159953,
+              "anchor": "Outra tripulante, NÚRI ARVA, era uma botânica de pele bronzeada e cabelos presos em longas tranças com pequenas sementes entrelaçadas."
+            }
+          ],
+          "justification": "Evidência histórica; não estabelece estado atual.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "roles": {
+          "value": "Botânica da tripulação do Jardim Errante.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 159953,
+              "anchor": "Outra tripulante, NÚRI ARVA, era uma botânica de pele bronzeada e cabelos presos em longas tranças com pequenas sementes entrelaçadas.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "languages": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "attributes": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "skills": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "proficiencies": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "combat_style": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "magic_repertoire": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "equipment": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "inventory": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "condition": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "relationships": {
+          "value": "Conversa com Miren e Káiron sobre sementes e pesquisa.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160137,
+              "anchor": "KÁIRON aproximou-se.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160141,
+              "anchor": "— Não exatamente. É uma espécie que cresce em determinadas encostas mágicas. Suas sementes podem permanecer suspensas quando encontram condições específicas.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160145,
+              "anchor": "— E vocês as transportam para pesquisa?",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160147,
+              "anchor": "NÚRI assentiu.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "goals": {
+          "value": "Pesquisa, preservação e cultivo autorizado; levar plantas a pessoas que aguardam.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160149,
+              "anchor": "— Pesquisa, preservação e cultivo autorizado.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160169,
+              "anchor": "— Mas temos pessoas esperando por essas plantas.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "values": {
+          "value": "Afirma que espécies exigem adaptação e cuidados, sem prometer soluções mágicas universais.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160165,
+              "anchor": "— Não são presentes mágicos que resolverão todos os problemas. Algumas espécies não se adaptam. Outras exigem cuidados específicos.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "contradictions": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "fears": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "preferences": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "knowledge": {
+          "value": "Pesquisa, preservação e cultivo autorizado; sementes suspensas sob condições específicas.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 160141,
+              "anchor": "— Não exatamente. É uma espécie que cresce em determinadas encostas mágicas. Suas sementes podem permanecer suspensas quando encontram condições específicas."
+            },
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 160149,
+              "anchor": "— Pesquisa, preservação e cultivo autorizado."
+            },
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 160165,
+              "anchor": "— Não são presentes mágicos que resolverão todos os problemas. Algumas espécies não se adaptam. Outras exigem cuidados específicos."
+            }
+          ],
+          "justification": "Evidência histórica; não estabelece estado atual.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "location": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "journey": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "history": {
+          "value": "D208: explica a reação das sementes ao ambiente e limites de adaptação.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160135,
+              "anchor": "— Está reagindo ao ambiente desta caixa.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160141,
+              "anchor": "— Não exatamente. É uma espécie que cresce em determinadas encostas mágicas. Suas sementes podem permanecer suspensas quando encontram condições específicas.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160165,
+              "anchor": "— Não são presentes mágicos que resolverão todos os problemas. Algumas espécies não se adaptam. Outras exigem cuidados específicos.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "visual_refs": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        }
+      },
+      "status": "AUTHOR_GATE_PENDING",
+      "added_fields": [
+        "roles",
+        "goals",
+        "history",
+        "relationships",
+        "values"
+      ],
+      "source_candidate_id": "nuri-arva",
+      "identity_resolution": "NO_MERGE",
+      "canon_changed": false
+    }
+  ],
+  "records": [
+    {
+      "id": "jardim-errante",
+      "domain": "technology",
+      "name": "jardim-errante",
+      "domains": [
+        "technology"
+      ],
+      "status": "AUTHOR_GATE_PENDING",
+      "fields": {
+        "category": {
+          "value": "Pequena embarcação de pesquisa e transporte.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160093,
+              "anchor": "O Jardim Errante era uma pequena embarcação de pesquisa e transporte.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "crew": {
+          "value": "Saira Venn, humana e capitã; Doru, navegador Khelen; Núri Arva, botânica; dois aprendizes sem nomes estabelecidos.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 159883,
+              "anchor": "— SAIRA VENN. Capitã do Jardim Errante.",
+              "day_heading": 208,
+              "scene_heading_line": 159269,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 159949,
+              "anchor": "SAIRA era humana.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 159951,
+              "anchor": "Um dos navegadores, DORU, pertencia aos KHELEN, um povo cujos corpos apresentavam formações minerais naturais. Suas marcas cristalinas não eram armaduras, implantes nem efeitos de CREATION.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 159953,
+              "anchor": "Outra tripulante, NÚRI ARVA, era uma botânica de pele bronzeada e cabelos presos em longas tranças com pequenas sementes entrelaçadas.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 159955,
+              "anchor": "E havia dois jovens aprendizes, responsáveis pelas velas e pelos instrumentos de orientação.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "architecture": {
+          "value": "Canteiros protegidos, vasos em suportes móveis, três elementos âmbar sob cobertura.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 159913,
+              "anchor": "O convés possuía pequenos canteiros protegidos.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 159919,
+              "anchor": "E vasos pendurados em suportes que acompanhavam o movimento do casco.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 159993,
+              "anchor": "Sob uma cobertura protegida havia três grandes elementos âmbar.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "capabilities": {
+          "value": "Correntes altas transportam; câmaras regulam sustentação; agulha indica fluxos reconhecidos.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160009,
+              "anchor": "— As correntes altas nos transportam.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160013,
+              "anchor": "— Estas câmaras ajudam a regular nossa sustentação. Precisam de preparação e manutenção. Não conseguem manter a embarcação voando indefinidamente fora das condições apropriadas.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160051,
+              "anchor": "— Isto é uma agulha de corrente. Não aponta simplesmente para o norte. Ajuda a indicar a direção de determinados fluxos aéreos que conseguimos reconhecer.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "limits": {
+          "value": "Depende de preparação, manutenção, recursos, tripulação treinada e condições atmosféricas; não voo indefinido nem frota oceânica.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160013,
+              "anchor": "— Estas câmaras ajudam a regular nossa sustentação. Precisam de preparação e manutenção. Não conseguem manter a embarcação voando indefinidamente fora das condições apropriadas.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160091,
+              "anchor": "Havia necessidades de materiais específicos, conhecimentos de navegação, energia armazenada, tripulações treinadas e condições atmosféricas apropriadas.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160095,
+              "anchor": "Não representava uma frota capaz de atravessar livremente todos os oceanos.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "mission": {
+          "value": "Transportar sementes e mudas a comunidades afetadas por ventos.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160159,
+              "anchor": "— Algumas. Mas nesta viagem estávamos levando sementes e mudas para comunidades que perderam parte de suas plantações durante uma temporada de ventos violentos.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "history": {
+          "value": "D208: primeiro navio voador conhecido por Lucas; independente do Criador.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160183,
+              "anchor": "O primeiro navio voador que LUCAS conhecera não era um navio de guerra.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160191,
+              "anchor": "E não dependia da vontade do Criador para existir.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "current_location": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "current_status": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "unattested_details": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        }
+      },
+      "canon_changed": false
+    },
+    {
+      "id": "veias-do-alto",
+      "domain": "world",
+      "name": "veias-do-alto",
+      "domains": [
+        "world"
+      ],
+      "status": "AUTHOR_GATE_PENDING",
+      "fields": {
+        "nature": {
+          "value": "Fenômenos mágicos naturais utilizados por navegadores de outra tradição.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160683,
+              "anchor": "As Veias do Alto eram fenômenos mágicos naturais utilizados por navegadores de outra tradição.",
+              "day_heading": 208,
+              "scene_heading_line": 160473,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "use": {
+          "value": "Correntes de navegação condicionada; relatos de reconhecimento e armazenamento parcial de energia.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160009,
+              "anchor": "— As correntes altas nos transportam.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160029,
+              "anchor": "— Essa é uma pergunta que nossos estudiosos discutem há muitas gerações. Sabemos reconhecer e utilizar certas correntes, armazenar parte de sua energia e medir quando as reservas estão diminuindo.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160555,
+              "anchor": "— Estas são algumas rotas que conhecemos nas cordilheiras. Não atravessamos qualquer lugar. Navegamos onde as Veias do Alto oferecem condições suficientes para nossas embarcações.",
+              "day_heading": 208,
+              "scene_heading_line": 160473,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "limits": {
+          "value": "Origem integral desconhecida; relação histórica com infraestrutura antiga não demonstrada.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160033,
+              "anchor": "— Não afirmo conhecer a origem de toda a magia do céu.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160685,
+              "anchor": "Nenhuma relação histórica entre as duas havia sido demonstrada.",
+              "day_heading": 208,
+              "scene_heading_line": 160473,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "current_location": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "current_status": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "unattested_details": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        }
+      },
+      "canon_changed": false
+    },
+    {
+      "id": "manta-tempestade",
+      "domain": "world",
+      "name": "manta-tempestade",
+      "domains": [
+        "world"
+      ],
+      "status": "AUTHOR_GATE_PENDING",
+      "fields": {
+        "appearance": {
+          "value": "Corpo alongado, asas membranosas quase transparentes, dorso como pedra úmida, filamentos luminosos na cauda.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 147333,
+              "anchor": "Uma criatura de corpo alongado e asas membranosas, quase transparentes.",
+              "day_heading": 204,
+              "scene_heading_line": 147289,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 147335,
+              "anchor": "Seu dorso refletia a luz como pedra úmida.",
+              "day_heading": 204,
+              "scene_heading_line": 147289,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 147337,
+              "anchor": "Longos filamentos luminosos saíam da cauda.",
+              "day_heading": 204,
+              "scene_heading_line": 147289,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D204"
+        },
+        "movement": {
+          "value": "Desliza pelo ar como arraia.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 147343,
+              "anchor": "Seu movimento lembrava uma grande arraia deslizando pelo ar.",
+              "day_heading": 204,
+              "scene_heading_line": 147289,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D204"
+        },
+        "phenomena": {
+          "value": "Descargas azuis observadas nas asas durante curvas.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 147345,
+              "anchor": "E, a cada curva, pequenas descargas azuis percorriam suas asas.",
+              "day_heading": 204,
+              "scene_heading_line": 147289,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D204"
+        },
+        "limits": {
+          "value": "Perturbação arcana observada; causa não estabelecida.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 147369,
+              "anchor": "— Há uma perturbação arcana no ar. Mas não sei se está sendo produzida pelas criaturas ou pelo ambiente.",
+              "day_heading": 204,
+              "scene_heading_line": 147289,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D204"
+        },
+        "history": {
+          "value": "D204: observação; D206: jovem libertada e reencontro com adulta; sem captura, domesticação ou morte. Não presume mesmas identidades individuais entre cenas.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 147291,
+              "anchor": "Foi KÁIRON quem ouviu primeiro.",
+              "day_heading": 204,
+              "scene_heading_line": 147289,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 154270,
+              "anchor": "Estava presa entre duas estruturas antigas, com parte de uma membrana enroscada num cabo corroído.",
+              "day_heading": 206,
+              "scene_heading_line": 153972,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 154448,
+              "anchor": "KÁIRON recebeu parte do impacto sobre a armadura.",
+              "day_heading": 206,
+              "scene_heading_line": 154364,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 155929,
+              "anchor": "Uma jovem manta de tempestade foi libertada e reencontrou a adulta. Não houve captura, domesticação nem morte.",
+              "day_heading": 206,
+              "scene_heading_line": null,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "current_location": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "current_status": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "unattested_details": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        }
+      },
+      "canon_changed": false
+    },
+    {
+      "id": "bruma-clara",
+      "domain": "technology",
+      "name": "bruma-clara",
+      "domains": [
+        "technology"
+      ],
+      "status": "AUTHOR_GATE_PENDING",
+      "fields": {
+        "category": {
+          "value": "Embarcação fluvial, não navio de alto-mar.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 169298,
+              "anchor": "A Bruma Clara não era uma embarcação pequena.",
+              "day_heading": 211,
+              "scene_heading_line": 169296,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 169300,
+              "anchor": "Também não era um navio de alto-mar.",
+              "day_heading": 211,
+              "scene_heading_line": 169296,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D211"
+        },
+        "architecture": {
+          "value": "Casco largo, dois níveis de carga, cabine protegida, mecanismos fluviais; símbolos de comunidades mantenedoras.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 169302,
+              "anchor": "Possuía casco largo, dois níveis de carga, uma cabine protegida e mecanismos desenvolvidos especificamente para navegar nos trechos comerciais do Seral.",
+              "day_heading": 211,
+              "scene_heading_line": 169296,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 169306,
+              "anchor": "Nas laterais, símbolos pintados representavam as comunidades que participavam de sua manutenção.",
+              "day_heading": 211,
+              "scene_heading_line": 169296,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D211"
+        },
+        "propulsion": {
+          "value": "Velas auxiliares, manobras de corrente e equipamentos apropriados.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 169304,
+              "anchor": "Sua propulsão combinava velas auxiliares, manobras de corrente e equipamentos apropriados às águas que percorria.",
+              "day_heading": 211,
+              "scene_heading_line": 169296,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D211"
+        },
+        "crew": {
+          "value": "Maira, Tomren Vale (imediato), Sélia Nar (navegadora), marinheiros, operadores e dois responsáveis pela manutenção.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 169320,
+              "anchor": "MAIRA apresentou a tripulação.",
+              "day_heading": 211,
+              "scene_heading_line": 169296,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 169322,
+              "anchor": "O imediato, TOMREN VALE, era um homem de cabelos grisalhos e uma expressão que parecia desconfiar até de dias ensolarados.",
+              "day_heading": 211,
+              "scene_heading_line": 169296,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 169324,
+              "anchor": "A navegadora de corrente, SÉLIA NAR, usava pequenos anéis de cobre nos dedos e carregava uma vara curta gravada com sinais arcanos.",
+              "day_heading": 211,
+              "scene_heading_line": 169296,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 169326,
+              "anchor": "Havia também marinheiros, operadores de carga e duas pessoas responsáveis pela manutenção.",
+              "day_heading": 211,
+              "scene_heading_line": 169296,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D211"
+        },
+        "governance": {
+          "value": "Tripulantes com funções definidas; não devem obediência a Lucas.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 169328,
+              "anchor": "Nenhum deles devia obediência a LUCAS.",
+              "day_heading": 211,
+              "scene_heading_line": 169296,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 169330,
+              "anchor": "Todos tinham funções definidas.",
+              "day_heading": 211,
+              "scene_heading_line": 169296,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D211"
+        },
+        "current_location": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "current_status": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "unattested_details": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        }
+      },
+      "canon_changed": false
+    },
+    {
+      "id": "ibis-01",
+      "domain": "technology",
+      "name": "ibis-01",
+      "domains": [
+        "technology"
+      ],
+      "status": "AUTHOR_GATE_PENDING",
+      "fields": {
+        "history": {
+          "value": "D204: designação ÍBIS-01; D205: missão abortada, pouso brusco na encosta, sinal limitado e asa aparentemente danificada; D206: aparelho recuperado com registros de voo.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 146850,
+              "anchor": "— Então teremos o ÍBIS-01.",
+              "day_heading": 204,
+              "scene_heading_line": 146774,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 151045,
+              "anchor": "— Abortando reconhecimento. Retorno.",
+              "day_heading": 205,
+              "scene_heading_line": 150789,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 151063,
+              "anchor": "E pousou bruscamente numa região aberta da encosta, antes de alcançar a área de recuperação inicialmente prevista.",
+              "day_heading": 205,
+              "scene_heading_line": 150789,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 151073,
+              "anchor": "— Está imóvel. Ainda recebemos uma referência limitada.",
+              "day_heading": 205,
+              "scene_heading_line": 150789,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 151083,
+              "anchor": "Uma asa parecia danificada.",
+              "day_heading": 205,
+              "scene_heading_line": 150789,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 153754,
+              "anchor": "O ÍBIS-01 continuava imóvel numa encosta acima do antigo Marco Sete.",
+              "day_heading": 206,
+              "scene_heading_line": 153752,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 154716,
+              "anchor": "A expedição retornou com o ÍBIS recuperado, os registros de voo preservados, a confirmação de uma antiga instalação de suspensão de cargas e a experiência extraordinária de ter ajudado uma criatura mágica sem capturá-la.",
+              "day_heading": 206,
+              "scene_heading_line": 154364,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "current_location": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "current_status": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "unattested_details": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "identity": {
+          "value": "ÍBIS-01; aparelho distinto do drone inicial.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 146850,
+              "anchor": "— Então teremos o ÍBIS-01.",
+              "day_heading": 204,
+              "scene_heading_line": 146774,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 151091,
+              "anchor": "— Já é uma melhoria em relação ao primeiro drone que perdi.",
+              "day_heading": 205,
+              "scene_heading_line": 150789,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "architecture": {
+          "value": "Planador experimental de reconhecimento com asas abertas, estabilização arcana e transmissão de imagens em teste.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 146788,
+              "anchor": "Não era igual ao drone de seu antigo mundo.",
+              "day_heading": 204,
+              "scene_heading_line": 146774,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 146790,
+              "anchor": "A equipe optara por reaproveitar um pequeno planador experimental de reconhecimento, com superfícies de controle e componentes mecânicos que já conhecia. Um conjunto arcano de estabilização seria testado, assim como uma pequena transmissão de imagens.",
+              "day_heading": 204,
+              "scene_heading_line": 146774,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D204"
+        },
+        "limits": {
+          "value": "Dados insuficientes para identificar estruturas com precisão; retorno decidido diante de queda da comunicação.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 151017,
+              "anchor": "— Mas não temos precisão suficiente para afirmar que é o mesmo ponto.",
+              "day_heading": 205,
+              "scene_heading_line": 150789,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 151035,
+              "anchor": "— A qualidade de comunicação está caindo!",
+              "day_heading": 205,
+              "scene_heading_line": 150789,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 151045,
+              "anchor": "— Abortando reconhecimento. Retorno.",
+              "day_heading": 205,
+              "scene_heading_line": 150789,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D205"
+        }
+      },
+      "canon_changed": false
+    },
+    {
+      "id": "marco-sete",
+      "domain": "archaeology",
+      "name": "marco-sete",
+      "domains": [
+        "archaeology"
+      ],
+      "status": "AUTHOR_GATE_PENDING",
+      "fields": {
+        "history": {
+          "value": "D204: primeira correspondência física de marca de carta antiga; obra construída.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 147171,
+              "anchor": "— Temos nosso primeiro ponto de correspondência física.",
+              "day_heading": 204,
+              "scene_heading_line": 147041,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 147281,
+              "anchor": "Mas, pela primeira vez, aquela linha deixara de ser apenas tinta num documento antigo.",
+              "day_heading": 204,
+              "scene_heading_line": 147041,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 147283,
+              "anchor": "Era uma obra que alguém havia construído.",
+              "day_heading": 204,
+              "scene_heading_line": 147041,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D204"
+        },
+        "current_location": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "current_status": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "unattested_details": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        }
+      },
+      "canon_changed": false
+    },
+    {
+      "id": "instalacao-suspensao-cargas",
+      "domain": "archaeology",
+      "name": "instalacao-suspensao-cargas",
+      "domains": [
+        "archaeology"
+      ],
+      "status": "AUTHOR_GATE_PENDING",
+      "fields": {
+        "architecture": {
+          "value": "Três estruturas metálicas entre rochas.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 154008,
+              "anchor": "Do outro lado, três estruturas metálicas surgiam entre rochas.",
+              "day_heading": 206,
+              "scene_heading_line": 153972,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D206"
+        },
+        "function": {
+          "value": "Infraestrutura física elevada para movimentação de carga.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 154728,
+              "anchor": "Havia realmente existido infraestrutura elevada para movimentação de cargas.",
+              "day_heading": 206,
+              "scene_heading_line": 154364,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160681,
+              "anchor": "A via suspensa dos antigos era uma infraestrutura física de transporte de carga.",
+              "day_heading": 208,
+              "scene_heading_line": 160473,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "limits": {
+          "value": "Relação histórica com Veias do Alto não demonstrada.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160685,
+              "anchor": "Nenhuma relação histórica entre as duas havia sido demonstrada.",
+              "day_heading": 208,
+              "scene_heading_line": 160473,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "current_location": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "current_status": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "unattested_details": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        }
+      },
+      "canon_changed": false
+    },
+    {
+      "id": "kairon-resgate-manta",
+      "domain": "event",
+      "name": "kairon-resgate-manta",
+      "domains": [
+        "event"
+      ],
+      "status": "AUTHOR_GATE_PENDING",
+      "fields": {
+        "history": {
+          "value": "D206: jovem presa em cabo; Seron lança corda de segurança; Káiron alcança a criatura e recebe parte do impacto sobre armadura; jovem libertada e reunida à adulta.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 154270,
+              "anchor": "Estava presa entre duas estruturas antigas, com parte de uma membrana enroscada num cabo corroído.",
+              "day_heading": 206,
+              "scene_heading_line": 153972,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 154366,
+              "anchor": "O cabo se rompeu.",
+              "day_heading": 206,
+              "scene_heading_line": 154364,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 154378,
+              "anchor": "SERON lançou a corda de segurança para ele.",
+              "day_heading": 206,
+              "scene_heading_line": 154364,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 154442,
+              "anchor": "E KÁIRON, protegido pelo conjunto, alcançou a criatura menor.",
+              "day_heading": 206,
+              "scene_heading_line": 154364,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 154448,
+              "anchor": "KÁIRON recebeu parte do impacto sobre a armadura.",
+              "day_heading": 206,
+              "scene_heading_line": 154364,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 155929,
+              "anchor": "Uma jovem manta de tempestade foi libertada e reencontrou a adulta. Não houve captura, domesticação nem morte.",
+              "day_heading": 206,
+              "scene_heading_line": null,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D206"
+        },
+        "current_location": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "current_status": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "unattested_details": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        }
+      },
+      "canon_changed": false
+    },
+    {
+      "id": "povos-do-alto",
+      "domain": "world",
+      "name": "povos-do-alto",
+      "domains": [
+        "world"
+      ],
+      "status": "AUTHOR_GATE_PENDING",
+      "fields": {
+        "navigation": {
+          "value": "Rotas aéreas sazonais entre montanhas; métodos diversos; nem toda comunidade possui aeronaves.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160085,
+              "anchor": "A capitã explicou que sua gente utilizava rotas aéreas sazonais entre regiões montanhosas.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160087,
+              "anchor": "Nem toda comunidade possuía embarcações voadoras.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160091,
+              "anchor": "Havia necessidades de materiais específicos, conhecimentos de navegação, energia armazenada, tripulações treinadas e condições atmosféricas apropriadas.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160107,
+              "anchor": "— Alguns. Com embarcações e métodos diferentes. Mas não vou contar histórias de lugares onde nunca estive como se fossem minhas descobertas.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "knowledge": {
+          "value": "Relato sobre reconhecimento, uso e armazenamento parcial de correntes; origem integral desconhecida.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160029,
+              "anchor": "— Essa é uma pergunta que nossos estudiosos discutem há muitas gerações. Sabemos reconhecer e utilizar certas correntes, armazenar parte de sua energia e medir quando as reservas estão diminuindo.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160033,
+              "anchor": "— Não afirmo conhecer a origem de toda a magia do céu.",
+              "day_heading": 208,
+              "scene_heading_line": 159903,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "trade": {
+          "value": "Pouso das Quatro Sementes, entreposto de altitude para reparos, abrigo e trocas (relato).",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 160651,
+              "anchor": "— Os viajantes das alturas chamam este lugar de Pouso das Quatro Sementes. É um entreposto de altitude utilizado para reparos, abrigo e trocas entre grupos diferentes.",
+              "day_heading": 208,
+              "scene_heading_line": 160473,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "current_location": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "current_status": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "unattested_details": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        }
+      },
+      "canon_changed": false
+    },
+    {
+      "id": "legacy-reconnaissance-drone",
+      "domain": "technology",
+      "name": "legacy-reconnaissance-drone",
+      "domains": [
+        "technology"
+      ],
+      "status": "AUTHOR_GATE_PENDING",
+      "fields": {
+        "history": {
+          "value": "D002: drone com bateria/controlador testado e perdido no resgate de Elyan; D004 narrador registra aparelho encontrado; D169 personagens ainda não confirmavam recolhimento; D172 peça compatível é pista; D173 Lucas relata peças em mãos inimigas; D204–205 reconhecimento é reavaliado. Estado atual e acesso a dados desconhecidos.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 3266,
+              "anchor": "O pequeno drone decola com um zumbido agudo.",
+              "day_heading": 2,
+              "scene_heading_line": null,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 3304,
+              "anchor": "Você pousa o drone cuidadosamente.",
+              "day_heading": 2,
+              "scene_heading_line": null,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 3486,
+              "anchor": "Equipamentos confirmados para testes: um binóculo moderno, um GPS sem posicionamento funcional e um drone de reconhecimento com uma bateria e controlador.",
+              "day_heading": 2,
+              "scene_heading_line": null,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 5117,
+              "anchor": "O drone sobe entre as árvores.",
+              "day_heading": 2,
+              "scene_heading_line": null,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 5899,
+              "anchor": "— Perdemos o drone. Tivemos feridos. Encontramos magia inimiga. E descobrimos que nossa armadura não resolve todos os problemas.",
+              "day_heading": 2,
+              "scene_heading_line": null,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 13843,
+              "anchor": "O drone perdido no resgate de ELYAN havia sido encontrado perto da encosta.",
+              "day_heading": 4,
+              "scene_heading_line": null,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 93748,
+              "anchor": "A retirada da pedreira terminara com ELYAN vivo, dois outros civis libertados, sete feridos entre os participantes da operação e a perda do drone de reconhecimento.",
+              "day_heading": 169,
+              "scene_heading_line": 93696,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 93764,
+              "anchor": "— Nunca confirmamos que alguém recolheu o drone.",
+              "day_heading": 169,
+              "scene_heading_line": 93696,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 100196,
+              "anchor": "— É do drone.",
+              "day_heading": 1,
+              "scene_heading_line": 100158,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 100882,
+              "anchor": "O ataque revelou que os adversários conseguem coordenar ameaças mágicas e tentativas de sabotagem. A peça compatível com o antigo drone também passou a ser uma pista concreta, embora sua trajetória e o grau de acesso dos inimigos à tecnologia ainda precisem ser comprovados.",
+              "day_heading": 1,
+              "scene_heading_line": 100790,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 106213,
+              "anchor": "— Entraram no nosso distrito industrial. Conseguiram inserir um dispositivo de sabotagem numa obra pública. Encontramos peças do antigo drone nas mãos dos inimigos.",
+              "day_heading": 173,
+              "scene_heading_line": null,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 145696,
+              "anchor": "— O dispositivo de orientação que retirou da mochila nos primeiros dias. O drone que se perdeu. Os sistemas de reconhecimento que tentou utilizar antes de possuirmos uma infraestrutura própria.",
+              "day_heading": 204,
+              "scene_heading_line": 145674,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 151091,
+              "anchor": "— Já é uma melhoria em relação ao primeiro drone que perdi.",
+              "day_heading": 205,
+              "scene_heading_line": 150789,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "current_location": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "current_status": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "unattested_details": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "knowledge_boundary": {
+          "value": "D004 narrador registra aparelho encontrado; D169 Seron diz não terem confirmação de recolhimento; D172 peça compatível não comprova trajetória nem acesso integral; D173 relato de Lucas sobre peças. Não igualar conhecimento de personagem e narrador.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 13843,
+              "anchor": "O drone perdido no resgate de ELYAN havia sido encontrado perto da encosta.",
+              "day_heading": 4,
+              "scene_heading_line": null,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 93764,
+              "anchor": "— Nunca confirmamos que alguém recolheu o drone.",
+              "day_heading": 169,
+              "scene_heading_line": 93696,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 100882,
+              "anchor": "O ataque revelou que os adversários conseguem coordenar ameaças mágicas e tentativas de sabotagem. A peça compatível com o antigo drone também passou a ser uma pista concreta, embora sua trajetória e o grau de acesso dos inimigos à tecnologia ainda precisem ser comprovados.",
+              "day_heading": 1,
+              "scene_heading_line": 100790,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 106213,
+              "anchor": "— Entraram no nosso distrito industrial. Conseguiram inserir um dispositivo de sabotagem numa obra pública. Encontramos peças do antigo drone nas mãos dos inimigos.",
+              "day_heading": 173,
+              "scene_heading_line": null,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "distinct_from_ibis": {
+          "value": "Lucas compara ÍBIS ao primeiro drone perdido, evidenciando aparelhos distintos.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 151091,
+              "anchor": "— Já é uma melhoria em relação ao primeiro drone que perdi.",
+              "day_heading": 205,
+              "scene_heading_line": 150789,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D205"
+        }
+      },
+      "canon_changed": false
+    },
+    {
+      "id": "calderva-journey-candidate",
+      "domain": "journey",
+      "name": "calderva-journey-candidate",
+      "domains": [
+        "journey"
+      ],
+      "status": "AUTHOR_GATE_PENDING",
+      "fields": {
+        "history": {
+          "value": "D211 operação fluvial Bruma Clara; D212–213 rota se aproxima da costa; D214 necessidade de rota legítima e condições costeiras. Não fundir a chegada posterior da comitiva com a viagem inicial.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 169298,
+              "anchor": "A Bruma Clara não era uma embarcação pequena.",
+              "day_heading": 211,
+              "scene_heading_line": 169296,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 169302,
+              "anchor": "Possuía casco largo, dois níveis de carga, uma cabine protegida e mecanismos desenvolvidos especificamente para navegar nos trechos comerciais do Seral.",
+              "day_heading": 211,
+              "scene_heading_line": 169296,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 169304,
+              "anchor": "Sua propulsão combinava velas auxiliares, manobras de corrente e equipamentos apropriados às águas que percorria.",
+              "day_heading": 211,
+              "scene_heading_line": 169296,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 174111,
+              "anchor": "— Não quero chegar a Calderva achando que posso resolver tudo apenas porque possuo CREATION.",
+              "day_heading": 212,
+              "scene_heading_line": 174065,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 174940,
+              "anchor": "— E, se queremos chegar a Calderva, precisamos conhecer o caminho, os portos intermediários e quem realmente controla cada passagem.",
+              "day_heading": 213,
+              "scene_heading_line": 174870,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 175422,
+              "anchor": "— Se chegarem a Calderva, procurem a Casa da Maré.",
+              "day_heading": 213,
+              "scene_heading_line": 175340,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 178138,
+              "anchor": "— Então, quando chegarmos a Calderva, quero que estejamos preparados para descobrir coisas que talvez não gostemos.",
+              "day_heading": 213,
+              "scene_heading_line": 177892,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 178721,
+              "anchor": "— Se quiserem conhecer Calderva, podem tentar fazê-lo por uma rota legítima. Se encontrarem pessoas em perigo, poderão ajudar dentro das condições concretas e das regras aplicáveis.",
+              "day_heading": 214,
+              "scene_heading_line": 178619,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 179063,
+              "anchor": "Não prometeu chegar imediatamente a Calderva.",
+              "day_heading": 214,
+              "scene_heading_line": 178859,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 186976,
+              "anchor": "E, pela primeira vez desde que chegaram a Calderva, LUCAS não sentia necessidade de olhar para todos os lados procurando uma ameaça.",
+              "day_heading": 215,
+              "scene_heading_line": 186688,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 212992,
+              "anchor": "As equipes partiram. O que acontecerá quando finalmente chegarem a Calderva ainda dependerá das condições da viagem e das escolhas das duas cidades.",
+              "day_heading": 226,
+              "scene_heading_line": null,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 214336,
+              "anchor": "Estamos tentando chegar a Calderva, não reconstruir todas as estradas do continente.",
+              "day_heading": 229,
+              "scene_heading_line": null,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 214702,
+              "anchor": "Quando chegaram à estrada superior, encontraram os primeiros guardas de Calderva acompanhando representantes da comitiva.",
+              "day_heading": 232,
+              "scene_heading_line": null,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 216981,
+              "anchor": "Chegou a Calderva com KAEL, LYSA, BRANNIK, ASTRA, AUREL, NAIRA, SÉVERO, profissionais, comerciantes e equipamentos selecionados.",
+              "day_heading": 238,
+              "scene_heading_line": null,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "current_location": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "current_status": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "unattested_details": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "r36-multidimensional-lot-04"
+          },
+          "justification": "Não estabelecido pelas fontes selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "route": {
+          "value": "D210 Pouso das Sete Cordas e encontro com Maira; D211 Bruma Clara; D214 Falcão da Espuma deixa águas protegidas e chega ao Golfo de Calderva e Doca das Redes Velhas às 19h03.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 168834,
+              "anchor": "LUCAS e MIREN chegaram ao Pouso das Sete Cordas com ILARA VOSS. Primeiro encontro pessoal com MAIRA KEST realizado.",
+              "day_heading": 210,
+              "scene_heading_line": 168721,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 169296,
+              "anchor": "07h16 | Pouso das Sete Cordas — Embarcação Bruma Clara",
+              "day_heading": 211,
+              "scene_heading_line": 169296,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 179091,
+              "anchor": "E o Falcão da Espuma deixou as águas protegidas do entreposto.",
+              "day_heading": 214,
+              "scene_heading_line": 178859,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 180805,
+              "anchor": "18h16 | Aproximação exterior do Golfo de Calderva",
+              "day_heading": 214,
+              "scene_heading_line": 180805,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 180833,
+              "anchor": "Calderva apareceu entre o mar e as montanhas.",
+              "day_heading": 214,
+              "scene_heading_line": 180805,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 181123,
+              "anchor": "19h03 | Doca das Redes Velhas — Calderva",
+              "day_heading": 214,
+              "scene_heading_line": 181123,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 181125,
+              "anchor": "O Falcão da Espuma aproximou-se de um atracadouro exterior indicado pelos pilotos locais.",
+              "day_heading": 214,
+              "scene_heading_line": 181123,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 181145,
+              "anchor": "E autorizaram a atracação na área destinada à assistência.",
+              "day_heading": 214,
+              "scene_heading_line": 181123,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "governance": {
+          "value": "Guarda não autoriza perseguição fora da jurisdição; entrada pelo cais após documentação e autorização.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 178711,
+              "anchor": "— Antes de continuarem, quero deixar algo claro. Vocês foram decisivos na proteção da mensageira ontem. Mas isso não significa que a Guarda possa autorizar uma perseguição armada em águas de outra jurisdição.",
+              "day_heading": 214,
+              "scene_heading_line": 178619,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 178721,
+              "anchor": "— Se quiserem conhecer Calderva, podem tentar fazê-lo por uma rota legítima. Se encontrarem pessoas em perigo, poderão ajudar dentro das condições concretas e das regras aplicáveis.",
+              "day_heading": 214,
+              "scene_heading_line": 178619,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 181133,
+              "anchor": "NÁVEL identificou seu navio.",
+              "day_heading": 214,
+              "scene_heading_line": 181123,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 181135,
+              "anchor": "Apresentou as informações de chegada.",
+              "day_heading": 214,
+              "scene_heading_line": 181123,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 181143,
+              "anchor": "Registraram a ocorrência.",
+              "day_heading": 214,
+              "scene_heading_line": 181123,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 181145,
+              "anchor": "E autorizaram a atracação na área destinada à assistência.",
+              "day_heading": 214,
+              "scene_heading_line": 181123,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D214"
+        },
+        "participants": {
+          "value": "Lucas e Miren chegam ao Pouso com Ilara; Maira conduz etapa fluvial; Nável comanda e Yra verifica referências costeiras.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 168834,
+              "anchor": "LUCAS e MIREN chegaram ao Pouso das Sete Cordas com ILARA VOSS. Primeiro encontro pessoal com MAIRA KEST realizado.",
+              "day_heading": 210,
+              "scene_heading_line": 168721,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 169210,
+              "anchor": "— Hoje vamos acompanhar parte de uma operação real — explicou. — Temos mercadorias a transportar, um posto de orientação a verificar e gente esperando por entregas.",
+              "day_heading": 211,
+              "scene_heading_line": 169136,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 180811,
+              "anchor": "NÁVEL permanecia ao comando.",
+              "day_heading": 214,
+              "scene_heading_line": 180805,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            },
+            {
+              "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+              "line": 180813,
+              "anchor": "YRA verificava as referências da passagem.",
+              "day_heading": 214,
+              "scene_heading_line": 180805,
+              "role": "UNADJUDICATED",
+              "scope": "AUTHOR_ONLY"
+            }
+          ],
+          "justification": "Proposta histórica baseada nas passagens literais; não estabelece estado atual nem promoção canônica.",
+          "scope": "AUTHOR_ONLY"
+        }
+      },
+      "canon_changed": false
+    }
+  ],
+  "identity_reviews": [
+    {
+      "candidate": "doru-khelen",
+      "native_candidate": "doru",
+      "decision": "PENDING_AUTHOR_LINK; Khelen is people, not surname",
+      "evidence": [
+        {
+          "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+          "line": 159951,
+          "anchor": "Um dos navegadores, DORU, pertencia aos KHELEN, um povo cujos corpos apresentavam formações minerais naturais. Suas marcas cristalinas não eram armaduras, implantes nem efeitos de CREATION.",
+          "day_heading": 208,
+          "scene_heading_line": 159903,
+          "role": "UNADJUDICATED",
+          "scope": "AUTHOR_ONLY"
+        }
+      ]
+    }
+  ],
+  "canon_changed": false,
+  "production_activated": false,
+  "semantic_certification": false
+}
