@@ -155,7 +155,41 @@ def verify_macro33_start(root,archive):
     require(cp["production_gate"]=="HOLD" and not cp["canon_changed"] and not cp["official_checkpoint_changed"] and not cp["semantic_certification"] and not cp["macro_complete"],"gate")
     return {**result,"status":"PASS_NATIVE_MACRO_0033_PARTIAL","lines":2413,"records":29,"coverage":29,"header_metadata_lines":8,"axes_represented":represented,"authority_counts":dict(Counter(x["authority"] for x in allr)),"visibility_counts":dict(Counter(x["visibility"] for x in allr)),"next_line":2414,"macro_complete":False,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False}
 
+def verify_macro33_close(root,archive):
+    from collections import Counter
+    root=Path(root); archive=Path(archive)
+    prior=verify_macro33_start(root,archive)
+    c0=read(root,ROOT+"recovery-checkpoint-0033-partial-01-validated.json","ded055d72640efb92eb74e88fdc60e5882e076c7")
+    require(prior["next_line"]==c0["next_line"]==2414 and c0["native_validation"]=="PASS","prior gate")
+    opening=read(root,c0["receipt_path"],c0["receipt_blob"],c0["receipt_sha256"])
+    cp=read(root,ROOT+"recovery-checkpoint-0033-closure-pending.json","d3f686b52bf52c7653a175fb6fd8195efdb141e8")
+    r=read(root,cp["receipt_path"],"14f2d9d312302c47cde543e7d3fb3c27ef361e26",cp["receipt_sha256"])
+    q=read(root,"audit/omega008-c/bulk-macro-queue.json","e5a5f9e358d20acf8559f6313c2da24b64665f48")["macros"]
+    m=q[32]
+    require(r["previous_checkpoint_blob"]==cp["previous_checkpoint_blob"]=="ded055d72640efb92eb74e88fdc60e5882e076c7" and r["release_blob"]==cp["release_blob"]==c0["release_blob"],"chain")
+    require(r["previous_macro_id"]==q[31]["id"] and r["official_unit_seal"]==m["unit_seal"] and cp["next_macro"]==q[33],"queue")
+    source=SourceCache(archive,read(archive,"history/sources/MANIFEST.json","2048141263f66151230119af9b0ee51796ac846b")).get(m["source"])
+    new=validate_receipt(r,m,source,r["project"],ARCHIVE,previous_ids=[x["id"] for x in opening["records"]],expected_range=[2414,10229])
+    # Header 1–8 already independently verified by verify_macro33_start.
+    allr=opening["records"]+r["records"]; allc=opening["coverage"]+r["coverage"]
+    rr=allr[1:]
+    combined=dict(r,range=[9,10229],records=rr,coverage=allc[1:],axis_coverage={"assessed":list(range(1,31)),"represented":sorted({i for x in rr for i in x["axes"]})})
+    result=validate_receipt(combined,m,source,r["project"],ARCHIVE,expected_range=[9,10229])
+    require(new["lines"]==7816 and new["records"]==new["coverage"]==cp["records"]==51,"new counts")
+    require(result["lines"]+8==10229 and result["records"]+1==result["coverage"]+1==cp["macro_records"]==80,"macro counts")
+    require(len({x["id"] for x in allr})==80 and all(x["book"]=="IV" and x["chapter_hint"]==10 and x["day"] in range(383,389) for x in allr),"scope")
+    require(all((x["evidence"]["role"]=="Prompt")==(x["authority"]=="AUTHOR_DIRECTION_NOT_EVENT") for x in allr),"author separation")
+    require(all(x["visibility"].startswith("READER_ONLY") for x in allr if x["type"]=="reader_scene"),"reader isolation")
+    require(all(x["authority"]=="METADATA_NOT_EVENT" for x in allr if x["type"]=="metadata"),"metadata separation")
+    require(all(x["authority"]=="NARRATOR_PROPOSED_BRANCH_NOT_EVENT" for x in allr if x["type"]=="transition_options"),"teaser separation")
+    require(source[0][9358]=="300×" and source[0][9512]=="100×" and source[0][9354]=="100×","power reference")
+    require(source[0][10229]=="" and source[0][10230]=="LUCAS observou os recipientes.","literal continuation")
+    require(cp["next_line"]==r["next_line"]==q[33]["start"]==10230 and q[33]["previous_macro"]==m["id"] and q[33]["source"]==m["source"],"next queue")
+    require(cp["staging_records"]==c0["staging_records"]+51==2443 and cp["book_counts"]["IV"]==321 and cp["completed_macros"]==32,"staging counts")
+    require(cp["production_gate"]=="HOLD" and not cp["canon_changed"] and not cp["official_checkpoint_changed"] and not cp["semantic_certification"],"gate")
+    return {**result,"status":"PASS_NATIVE_MACRO_0033_COMPLETE","lines":10229,"records":80,"coverage":80,"header_metadata_lines":8,"new_records":51,"new_lines":7816,"axes_represented":sorted({i for x in allr for i in x["axes"]}),"authority_counts":dict(Counter(x["authority"] for x in allr)),"visibility_counts":dict(Counter(x["visibility"] for x in allr)),"next_line":10230,"macro_complete":True,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False}
+
 def main():
     p=argparse.ArgumentParser();p.add_argument("--engine-root",default=".");p.add_argument("--archive-root",required=True)
-    a=p.parse_args();print(json.dumps(verify_macro33_start(a.engine_root,a.archive_root),sort_keys=True))
+    a=p.parse_args();print(json.dumps(verify_macro33_close(a.engine_root,a.archive_root),sort_keys=True))
 if __name__=="__main__":main()
