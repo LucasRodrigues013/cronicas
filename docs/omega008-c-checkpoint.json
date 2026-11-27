@@ -2,7 +2,7 @@
   "schema": "worldroot-omega008-c-checkpoint-v1",
   "project": "CRONICAS_DE_UM_NOVO_MUNDO",
   "protocol": "OMEGA-008 C",
-  "status": "HISTORICAL_INTAKE_MACRO_0019_RECOVERED_FINAL_REVIEW_DEFERRED",
+  "status": "HISTORICAL_INTAKE_MACRO_0020_RECOVERED_FINAL_REVIEW_DEFERRED",
   "engine_base": "b7ba937bcaeac185f3ac46bc93e8e1a2fe516b49",
   "source_archive": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
   "branch": "review/omega-cycle-1",
@@ -250,7 +250,8 @@
     "Book III macro 0016 grouped recovery complete; D201-D204 Horizonte Aberto, Leviatã, conditional port and maritime research, voluntary 10k horizon, first véu-de-rio, Aurel/Naira gradual romance. Source parts 003/004 join inside line 140991 verified; new evidence shape pending native review; D199 quarantine retained.",
     "Book III macro 0017 grouped recovery complete D204–206; industrial autonomy, Espelhamento Referenciado I, Kael/Lysa, Varo/Maelis, three missing rescued. Preserve D199 quarantine and local temporal modalities.",
     "Book III macro 0018 grouped recovery D206–210 complete; first naval Aurora test, travel documents, Jardim Errante/KHELEN and Veias do Alto, Encadeamento Matricial I (D208 demonstrated, D209 partial), Marco VIII and Cais das Raízes; D210 Gênese 100x/crystal author directive not yet demonstrated within cut; visual gaps and D199 quarantine preserved.",
-    "Book III macro 0019 grouped recovery D210–213: ~100x comparable Gênese demonstrated, Memória do Horizonte prototype, Maira first meeting, Calderva arc, Elen Ross, Lastro/Márlo/Vesperal, archive rescue and open Alvorada Cinzenta confrontation. Preserve reader-only, legal/identity uncertainty, D199 quarantine and author directives; independent review pending."
+    "Book III macro 0019 grouped recovery D210–213: ~100x comparable Gênese demonstrated, Memória do Horizonte prototype, Maira first meeting, Calderva arc, Elen Ross, Lastro/Márlo/Vesperal, archive rescue and open Alvorada Cinzenta confrontation. Preserve reader-only, legal/identity uncertainty, D199 quarantine and author directives; independent review pending.",
+    "Book III macro 0020 grouped recovery D213–215 complete; first open ocean, Falcão da Espuma, Calderva and Casa da Maré, Lira provisional name and Elo do Horizonte I experimental (Ivo receives but delivery unconfirmed), civic aid, Quinto Arco temporary protection, nine arcs local independent signaling. Vesperal/Lastro evidence and reader perspectives separated. No dungeon confirmed. D199 quarantine unchanged."
   ],
   "next": {
     "stage": 1,
@@ -260,16 +261,16 @@
     "start_line": 1217,
     "end_rule": "through next complete narrative choice boundary, bounded by complexity",
     "checkpoint": "docs/omega008-c-checkpoint.json",
-    "action": "Active bulk.recovery_cursor=176299; continue Book III macro 0020 through 186394, D213 confrontation at Passagem das Duas Margens. Preserve dated states and no premature rescue or canon changes."
+    "action": "Active bulk.recovery_cursor=186395; continue Book III macro 0021 through 196617, D215 chapter 15 Quinto Arco civic network response, dialogue open. Preserve Lira identity and Elo I pending delivery; no canon or motor changes."
   },
   "canon_changed": false,
   "stage00_complete": false,
   "book_complete": false,
   "overall_complete": false,
   "previous_checkpoint": {
-    "commit": "a94f6a29af7f519982877195bac82fcca8173204",
-    "blob": "a71cfb01ea94357756affd5af4d6e23907f927c0",
-    "sha256_utf8": "b056bb81ec593e0024c0a131eb7ce9e4a217f3c2a02a362ddba70d4fdb5f2b67"
+    "commit": "d843c93314ff7398415f1cbd3d32f3974650949f",
+    "blob": "034ac06755cc9729e8c323142b6e006bb2a27fa9",
+    "sha256_utf8": "5e1e3a4380310e18769d043ebcee02e83279db5fc9ff6064afb61f520d64fdb5"
   },
   "lots": [
     {
@@ -361,7 +362,7 @@
       "records": 21,
       "next_review_line": 1680
     },
-    "semantic_cursor": 176299,
+    "semantic_cursor": 186395,
     "semantic_pilot_complete": true,
     "independent_review": false,
     "semantic_pilot_scope": "CONTROLLER_GROUPED_REVIEW_NOT_EXHAUSTIVE_OR_INDEPENDENT",
@@ -412,6 +413,7 @@
         18,
         19,
         20,
+        21,
         22,
         23,
         24,
@@ -423,26 +425,26 @@
         30
       ],
       "book_hint": "III",
-      "end": 186394,
-      "id": "9cf2f2513bb23cdae6aff2d3230fcbfaf37d67b1278a29e92a9de368d2337577",
-      "lines": 10096,
+      "end": 196617,
+      "id": "24d8ff8c2e2192a43463c455cb4f61904a664470de81a6967c0ecdc611624aa3",
+      "lines": 10223,
       "order_scope": "SOURCE_ORDER_NOT_EVENT_TIME",
-      "previous_macro": "2f9381267f4b1ce7a753b18c6ab9f83171e82e7e68259ccb1d46a964704aad7f",
+      "previous_macro": "9cf2f2513bb23cdae6aff2d3230fcbfaf37d67b1278a29e92a9de368d2337577",
       "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
-      "start": 176299,
+      "start": 186395,
       "status": "PENDING",
-      "unit_seal": "06bbfcbfbdf908f83a3d3c1401f841f39f8200f7625542b2d6f1f73842c0a92a",
-      "units": 36
+      "unit_seal": "688aef1ed26b1de9b48bf3101094efb3322c7687cd80cc2b067739a918f12399",
+      "units": 39
     },
     "open_boundary": {
       "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
-      "after_line": 176298,
-      "next_line": 176299,
-      "day": 213,
-      "chapter": 13,
-      "reason": "14h07 Passagem das Duas Margens: Miren identifies nearby interference source, Alvorada Cinzenta confrontation open."
+      "after_line": 186394,
+      "next_line": 186395,
+      "day": 215,
+      "chapter": 15,
+      "reason": "18h09 Quinto Arco, civic network illuminated by residents, Miren addresses Lucas; dialogue open."
     },
-    "recovery_cursor": 176299,
+    "recovery_cursor": 186395,
     "native_validated_through": 11227,
     "recovery_policy": {
       "mode": "RECOVER_FIRST_REVIEW_AT_CURRENT_DAY",
@@ -699,6 +701,20 @@
         "day_start": 210,
         "day_end": 213,
         "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
+      },
+      {
+        "macro_id": "9cf2f2513bb23cdae6aff2d3230fcbfaf37d67b1278a29e92a9de368d2337577",
+        "path": "audit/omega008-c/bulk-semantic-macro-0020.json",
+        "sha256_utf8": "3b4074c64f7db2d43026d5cfe9d07d8151033707202d9c46b3893ac6ec01ce4e",
+        "range": [
+          176299,
+          186394
+        ],
+        "records": 55,
+        "sections": 5,
+        "day_start": 213,
+        "day_end": 215,
+        "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
       }
     ],
     "recovered_macro_ids": [
@@ -720,9 +736,10 @@
       "d1340817b6c7970dc27635a5582c87abe68ae864b50914f17a8a60016245af21",
       "92a6e42e95c314278d1e3f88328283e9b602edc040d123ded9e42d1321d0cf8e",
       "3627080a2dcd1d901f480a8df65321c3d0bf4235c5e467fc2aad554a31e0abae",
-      "2f9381267f4b1ce7a753b18c6ab9f83171e82e7e68259ccb1d46a964704aad7f"
+      "2f9381267f4b1ce7a753b18c6ab9f83171e82e7e68259ccb1d46a964704aad7f",
+      "9cf2f2513bb23cdae6aff2d3230fcbfaf37d67b1278a29e92a9de368d2337577"
     ],
-    "total_candidates_recovered": 1460,
+    "total_candidates_recovered": 1515,
     "book_I_intake": {
       "range": [
         1,
@@ -735,14 +752,14 @@
       "canon_promoted": false
     },
     "last_recovery_readback": {
-      "macro": "0019",
-      "receipt_commit": "79b3f139b5cf900c530e522546d5998875e03750",
-      "receipt_blob": "5886f4689a58d55de5a79638907feecc44939a82",
-      "receipt_sha256_utf8": "0ba9e73cbbee8751ec3f65c7e283172acc8a12e22d1fd9921b20a58b6fe811e3",
-      "anchors_verified": 60,
-      "coverage_spans_verified": 7,
+      "macro": "0020",
+      "receipt_commit": "5db6416c813580ddb4f53eae3e981b6c0ceb4599",
+      "receipt_blob": "ea521e6be795168d20ce205bb640f2752204ac34",
+      "receipt_sha256_utf8": "3b4074c64f7db2d43026d5cfe9d07d8151033707202d9c46b3893ac6ec01ce4e",
+      "anchors_verified": 55,
+      "coverage_spans_verified": 5,
       "receipt_diff_files": [
-        "audit/omega008-c/bulk-semantic-macro-0019.json"
+        "audit/omega008-c/bulk-semantic-macro-0020.json"
       ],
       "prior_candidate_files_unchanged_by_patch": true,
       "native_semantic_validation": "DEFERRED",
