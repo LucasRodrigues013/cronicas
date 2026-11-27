@@ -193,12 +193,51 @@ def build_live_brief(head: dict, policy: dict, max_chars: int = 1700) -> dict:
     if all(rid in policies for rid in ("P126","P127","P128","P129","P130")):
         lines.insert(4, "R35 refinada: cadência D568/D571, vozes e fichas com fonte, maravilhamento e reações, ação em vez de relatório, romance adulto orgânico. Piloto D579 não é história.")
         selected.extend(rid for rid in ("P126","P127","P128","P129","P130") if rid not in selected)
-    brief = "\n".join(lines)
-    while len(brief) > max_chars and len(lines) > 4:
-        lines.pop(-2)
-        brief = "\n".join(lines)
-    if len(brief) > max_chars:
-        raise ValueError("Live brief cannot fit required identity and evidence")
-    return {"text": brief, "policy_version": policy.get("version"),
-            "selected_rule_ids": selected, "mode": "LIVE_HEAD_GROUNDED",
+    # Explicit mapping from each retained cue to partial rule representation.
+    # These cues are not equivalent to full directives or generation evidence.
+    from .editorial_guard import context_coverage, fit_context_blocks
+    prefixes = (
+        ("Preservar CREATION", ("P06","P07","P08","P36")),
+        ("Priorizar cenas", ("P02","P28","P85","P123")),
+        ("Voz de Lucas", ("P04","P35","P127")),
+        ("Remover linguagem", ("P104","P129")),
+        ("Variar ação", ("P09","P13","P42","P74","P76")),
+        ("R28:", ("P82","P83","P84","P85","P86","P87")),
+        ("R29:", ("P89","P90","P91","P93","P96","P97")),
+        ("R30:", ("P99","P100","P101","P102","P103","P104","P105")),
+        ("R31:", ("P106","P107","P108","P109")),
+        ("R33:", ("P110","P111","P112","P113","P114","P115")),
+        ("R34:", ("P116","P117","P118","P119","P120")),
+        ("R35:", ("P121","P122","P123","P124","P125")),
+        ("R35 refinada:", ("P126","P127","P128","P129","P130")),
+        ("Informação e deslocamentos", ("P15","P33","P68","P81")),
+    )
+    planned = []
+    for line in lines:
+        ids = next((ids for prefix, ids in prefixes if line.startswith(prefix)), ())
+        planned.append((line, ids, "SUMMARY_CUE"))
+    # Preserve the identity, full-power/agency cue and authority boundary.
+    # Prioritize lived narrative and voice alongside the newer R35/R33 cues.
+    required = (0, 1, 2, 3, len(lines)-1)
+    priority_prefixes = ("Voz de Lucas", "Priorizar cenas", "R35 refinada:",
+                         "R35:", "R34:", "R33:", "R31:", "Variar ação")
+    priority = [i for prefix in priority_prefixes for i,line in enumerate(lines)
+                if line.startswith(prefix)]
+    priority.extend(range(len(lines)))
+    rendered = fit_context_blocks(lines, required, priority, max_chars)
+    # At larger budgets, actual policy text can supplement the cues. Do not
+    # auto-inject historical opening directives into a live continuation.
+    for rid in ("P01","P19","P08","P04","P06","P07"):
+        if rid not in policies:
+            continue
+        sentence = rid + ": " + policies[rid]["directive"]
+        planned.append((sentence, (rid,), "LITERAL"))
+        trial = rendered[:-1] + [sentence, rendered[-1]]
+        if len("\n".join(trial)) <= max_chars:
+            rendered = trial
+    coverage = context_coverage(policy, selected, planned, rendered, max_chars)
+    return {"text": "\n".join(rendered), "policy_version": policy.get("version"),
+            "selected_rule_ids": selected,
+            "selected_rule_ids_semantics": "LEGACY_CANDIDATES_NOT_APPLICATION",
+            "coverage": coverage, "mode": "LIVE_HEAD_GROUNDED",
             "canon_changed": False}

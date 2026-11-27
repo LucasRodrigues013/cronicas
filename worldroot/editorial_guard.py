@@ -68,6 +68,61 @@ def load_policy(path: Path | None = None) -> dict:
     return data
 
 
+def context_coverage(policy, selected, planned, rendered, budget):
+    """Evidence of text representation only; never a semantic application receipt.
+
+    Each planned block carries an explicit conservative mapping. Summary cues
+    may represent only part of a rule; only an exact directive is literal.
+    Legacy selection remains routing metadata for existing callers.
+    """
+    active = {r["id"]: r for r in policy["rules"] if r["active"]}
+    rendered_set = set(rendered)
+    literal, summary, omitted, blocks = set(), set(), set(), []
+    for line, ids, level in planned:
+        ids = set(ids) & set(active)
+        if level == "LITERAL":
+            ids = {rid for rid in ids if line == rid + ": " + active[rid]["directive"]}
+        if not ids:
+            continue
+        if line not in rendered_set:
+            omitted.update(ids)
+            continue
+        (literal if level == "LITERAL" else summary).update(ids)
+        blocks.append({"text": line, "rule_ids": sorted(ids), "level": level})
+    represented = literal | summary
+    text = "\n".join(rendered)
+    if len(text) > budget:
+        raise ValueError("Editorial context exceeds declared budget")
+    return {
+        "active_rule_ids": sorted(active),
+        "legacy_selected_rule_ids": list(selected),
+        "literal_rule_ids": sorted(literal),
+        "summary_rule_ids": sorted(summary),
+        "represented_rule_ids": sorted(represented),
+        "represented_blocks": blocks,
+        "omitted_budget_rule_ids": sorted(omitted - represented),
+        "unrepresented_rule_ids": sorted(set(active) - represented),
+        "unrepresented_selected_rule_ids": sorted(set(selected) - represented),
+        "evaluated_rule_ids": [],
+        "application_certified": False,
+        "rendered_chars": len(text), "budget_chars": budget,
+    }
+
+
+def fit_context_blocks(lines, mandatory, priorities, budget):
+    """Fit complete blocks without silently discarding mandatory authority."""
+    chosen = set(mandatory)
+    def render(ids):
+        return [line for i, line in enumerate(lines) if i in ids]
+    if len("\n".join(render(chosen))) > budget:
+        raise ValueError("Editorial context cannot fit required identity and authority")
+    for i in priorities:
+        candidate = chosen | {i}
+        if len("\n".join(render(candidate))) <= budget:
+            chosen = candidate
+    return render(chosen)
+
+
 def compact_brief(policy: dict, scene_tags=(), max_chars: int = 1750, *, head: dict | None = None) -> dict:
     """Stable small prompt context; no retrieval of 296,900-line historical transcript."""
     validate_policy(policy)
@@ -103,19 +158,36 @@ def compact_brief(policy: dict, scene_tags=(), max_chars: int = 1750, *, head: d
     prioritized = ("P57", "P58", "P59", "P60", "P61", "P62", "P63", "P64", "P53", "P54", "P55", "P56", "P49", "P50", "P51", "P52", "P43", "P44", "P45", "P46", "P47", "P48", "P35", "P36", "P37", "P38", "P39", "P40", "P41", "P42", "P31", "P32", "P33", "P34", "P26", "P27", "P28", "P29", "P30")
     available = {r["id"] for r in active}
     selected = [rid for rid in prioritized if rid in available]
+    footer = "Texto literal > resumos; planejamento não vira cânone; confirmação externa exige recibo."
+    summary_ids = [
+        (), ("P43","P44"), ("P53",), ("P54","P59","P56"),
+        ("P55",), ("P57",), ("P58",), ("P60",), ("P61",), ("P62",),
+        ("P63",), ("P28","P29","P30"),
+    ]
+    planned = [(line, ids, "SUMMARY_CUE") for line, ids in zip(lines, summary_ids)]
+    planned.append((footer, ("P15","P33","P64"), "SUMMARY_CUE"))
+    # Keep the legacy opening advisory and the lived-story/authority cues.
+    # Small budgets no longer silently exceed the caller's limit.
+    base = lines + [footer]
+    rendered = fit_context_blocks(base, (0, len(lines)-1, len(base)-1),
+                                  range(len(base)), max_chars)
     for rule in scored:
         if rule["id"] in selected:
             continue
         if not rule["core"] and not tags.intersection(rule["tags"]):
             continue
         sentence = rule["id"] + ": " + rule["directive"]
-        if len("\n".join(lines + [sentence])) > max_chars:
+        planned.append((sentence, (rule["id"],), "LITERAL"))
+        trial = rendered[:-1] + [sentence, footer]
+        if len("\n".join(trial)) > max_chars:
             continue
-        lines.append(sentence)
+        rendered = trial
         selected.append(rule["id"])
-    lines.append("Texto literal > resumos; planejamento não vira cânone; confirmação externa exige recibo.")
-    return {"text": "\n".join(lines), "selected_rule_ids": selected,
-            "policy_version": policy["version"], "truncated_to_budget": len(selected) < len(active)}
+    coverage = context_coverage(policy, selected, planned, rendered, max_chars)
+    return {"text": "\n".join(rendered), "selected_rule_ids": selected,
+            "selected_rule_ids_semantics": "LEGACY_CANDIDATES_NOT_APPLICATION",
+            "coverage": coverage, "policy_version": policy["version"],
+            "truncated_to_budget": bool(coverage["unrepresented_rule_ids"])}
 
 
 def quick_preflight(prose: str, *, policy: dict | None = None, scene_tags=(), head: dict | None = None) -> dict:
@@ -143,7 +215,12 @@ def quick_preflight(prose: str, *, policy: dict | None = None, scene_tags=(), he
     selected = compact_brief(policy, scene_tags=scene_tags, max_chars=900, head=head)
     return {"status": "BLOQUEADO" if errors else ("REVISAR" if notices else "OK"),
             "errors": errors, "notices": notices, "words": words,
-            "policy_version": policy["version"], "consulted_rules": selected["selected_rule_ids"],
+            "policy_version": policy["version"],
+            "consulted_rules": selected["coverage"]["represented_rule_ids"],
+            "legacy_selected_rule_ids": selected["selected_rule_ids"],
+            "editorial_context_coverage": selected["coverage"],
+            "evaluated_rule_ids": ["P01"] if any(r["id"] == "P01" and r["active"] for r in policy["rules"]) else [],
+            "generation_evaluated": False,
             "editorial_brief_mode": selected.get("mode", "LEGACY_STATIC_NO_HEAD"),
             "literary_review": literary,
             "semantic_certification": False, "canon_changed": False,
