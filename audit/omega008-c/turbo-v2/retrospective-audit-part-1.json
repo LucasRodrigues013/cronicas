@@ -1,0 +1,485 @@
+{
+  "schema": "OMEGA_TURBO_V2_RETROSPECTIVE_AUDIT_PART",
+  "part": 1,
+  "base": "97679a36b0a9cff33ee231c844c018e49658dc8f",
+  "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+  "official_checkpoint_sha256": "1b92a806c9415fb70b95e1d5ed1ee0670585c5c2bb75b4a4d400ea5a182e6c5c",
+  "files": 8,
+  "records": 575,
+  "record_anchors_verified": 575,
+  "coverage_spans_verified": 87,
+  "axis_counts": [
+    {
+      "axis": 1,
+      "records": 69
+    },
+    {
+      "axis": 2,
+      "records": 274
+    },
+    {
+      "axis": 3,
+      "records": 204
+    },
+    {
+      "axis": 4,
+      "records": 71
+    },
+    {
+      "axis": 5,
+      "records": 41
+    },
+    {
+      "axis": 6,
+      "records": 35
+    },
+    {
+      "axis": 7,
+      "records": 248
+    },
+    {
+      "axis": 8,
+      "records": 136
+    },
+    {
+      "axis": 9,
+      "records": 196
+    },
+    {
+      "axis": 10,
+      "records": 122
+    },
+    {
+      "axis": 11,
+      "records": 197
+    },
+    {
+      "axis": 12,
+      "records": 152
+    },
+    {
+      "axis": 13,
+      "records": 109
+    },
+    {
+      "axis": 14,
+      "records": 107
+    },
+    {
+      "axis": 15,
+      "records": 167
+    },
+    {
+      "axis": 16,
+      "records": 123
+    },
+    {
+      "axis": 17,
+      "records": 105
+    },
+    {
+      "axis": 18,
+      "records": 105
+    },
+    {
+      "axis": 19,
+      "records": 346
+    },
+    {
+      "axis": 20,
+      "records": 193
+    },
+    {
+      "axis": 21,
+      "records": 58
+    },
+    {
+      "axis": 22,
+      "records": 14
+    },
+    {
+      "axis": 23,
+      "records": 83
+    },
+    {
+      "axis": 24,
+      "records": 112
+    },
+    {
+      "axis": 25,
+      "records": 306
+    },
+    {
+      "axis": 26,
+      "records": 116
+    },
+    {
+      "axis": 27,
+      "records": 324
+    },
+    {
+      "axis": 28,
+      "records": 83
+    },
+    {
+      "axis": 29,
+      "records": 59
+    },
+    {
+      "axis": 30,
+      "records": 67
+    }
+  ],
+  "receipt_results": [
+    {
+      "path": "audit/omega008-c/book-I/lote-0001.json",
+      "hash_ok": true,
+      "records": 26,
+      "anchors_verified": 26,
+      "coverage_spans": 0,
+      "represented": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18,
+        19,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "issues": [
+        "O8C-LI-0001-001:prompt_authority",
+        "O8C-LI-0001-013:prompt_authority",
+        "O8C-LI-0001-015:prompt_authority",
+        "O8C-LI-0001-026:prompt_authority"
+      ]
+    },
+    {
+      "path": "audit/omega008-c/book-I/lote-0002.json",
+      "hash_ok": true,
+      "records": 32,
+      "anchors_verified": 32,
+      "coverage_spans": 0,
+      "represented": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "issues": [
+        "O8C-LI-0002-015:prompt_authority"
+      ]
+    },
+    {
+      "path": "audit/omega008-c/bulk-pilot-semantic-sample.json",
+      "hash_ok": true,
+      "records": 21,
+      "anchors_verified": 21,
+      "coverage_spans": 0,
+      "represented": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        18,
+        19,
+        20,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "issues": [
+        "O8C-BULK-P1-S001:prompt_authority"
+      ]
+    },
+    {
+      "path": "audit/omega008-c/bulk-semantic-macro-0002.json",
+      "hash_ok": true,
+      "records": 125,
+      "anchors_verified": 125,
+      "coverage_spans": 26,
+      "represented": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "issues": []
+    },
+    {
+      "path": "audit/omega008-c/bulk-semantic-macro-0003.json",
+      "hash_ok": true,
+      "records": 90,
+      "anchors_verified": 90,
+      "coverage_spans": 15,
+      "represented": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "issues": []
+    },
+    {
+      "path": "audit/omega008-c/bulk-semantic-macro-0004.json",
+      "hash_ok": true,
+      "records": 110,
+      "anchors_verified": 110,
+      "coverage_spans": 17,
+      "represented": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "issues": []
+    },
+    {
+      "path": "audit/omega008-c/bulk-semantic-macro-0005.json",
+      "hash_ok": true,
+      "records": 86,
+      "anchors_verified": 86,
+      "coverage_spans": 15,
+      "represented": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "issues": []
+    },
+    {
+      "path": "audit/omega008-c/bulk-semantic-macro-0006.json",
+      "hash_ok": true,
+      "records": 85,
+      "anchors_verified": 85,
+      "coverage_spans": 14,
+      "represented": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "issues": []
+    }
+  ],
+  "issues": [
+    {
+      "path": "audit/omega008-c/book-I/lote-0001.json",
+      "issue": "O8C-LI-0001-001:prompt_authority"
+    },
+    {
+      "path": "audit/omega008-c/book-I/lote-0001.json",
+      "issue": "O8C-LI-0001-013:prompt_authority"
+    },
+    {
+      "path": "audit/omega008-c/book-I/lote-0001.json",
+      "issue": "O8C-LI-0001-015:prompt_authority"
+    },
+    {
+      "path": "audit/omega008-c/book-I/lote-0001.json",
+      "issue": "O8C-LI-0001-026:prompt_authority"
+    },
+    {
+      "path": "audit/omega008-c/book-I/lote-0002.json",
+      "issue": "O8C-LI-0002-015:prompt_authority"
+    },
+    {
+      "path": "audit/omega008-c/bulk-pilot-semantic-sample.json",
+      "issue": "O8C-BULK-P1-S001:prompt_authority"
+    }
+  ],
+  "lexical_axis6_review_candidates": [],
+  "semantic_recall_validated": false,
+  "independent_review": false,
+  "canon_changed": false
+}
