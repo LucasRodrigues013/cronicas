@@ -2,10 +2,10 @@
   "schema": "worldroot-engine-publishing-policy-v1",
   "project": "CRONICAS_DE_UM_NOVO_MUNDO",
   "status": "APROVADO_PELO_AUTOR",
-  "approved_at": "2026-11-25",
-  "policy_revision": "R35",
+  "approved_at": "2026-11-27",
+  "policy_revision": "R36",
   "engine_code_branch": "main",
-  "engine_code_commit": "9b34bc491275028fe32fff018b405ab94dcc5c8a",
+  "engine_code_commit": "3b612087a112ec008e5622af3cd076d6fe79ddff",
   "canonical_head_rule": "canon/HEAD.json is a historical narrative checkpoint, never a dumping ground for engine policy; update only after real next author choice and canonical validation.",
   "source_of_truth": "story-archive/episodes/<ID>/draft/narrativa_integral.md plus immutable manifest + inbox + review + reader_receipt",
   "before_new_episode": {
@@ -24,10 +24,10 @@
       "registry": "editorial/registries/universal-codex-design-d580-v1.json",
       "approved_age_registry": "editorial/registries/female-character-design-d580-v2.json",
       "rule": "Resolve focal identities, aliases, domain, origin, last evidenced location, possessions, powers, relationships, chronology and knowledge visibility against exact source before prose. Distinguish prospective design from historical evidence; do not assign a spell solely from a school link. Unknown remains explicit; approved age design is not retroactive biography.",
-      "runtime_status": "ASSISTED_REQUIRED; automated candidate in PR #74, no engine pin change or automatic execution claim"
+      "runtime_status": "R36_CODE_PINNED; SOURCE_BOUND_REVIEW_REQUIRED; no independent semantic certification"
     },
     "world_coherence": {
-      "status": "REQUIRED_ASSISTED_REVIEW_AUTOMATED_PR_74",
+      "status": "R36_CODE_PINNED; REQUIRED_REVIEW",
       "registry": "editorial/registries/universal-codex-design-d580-v1.json#coherence",
       "rule": "Cross-check actor identity, age/design authority, relative capabilities, acquired spell, item identity and custody, time, travel, location and actual environmental dimensions. World and bodies remain independent and must interact causally. No arbitrary stat/rank, body reshaping, teleporting objects, unearned spell or victory. Unknowns require compatible neutral description, deliberate adaptation, evidenced development, or explicit hold. Keep GÊNESE outside ordinary combat grade.",
       "measurements": "Prospective design numbers and fictional test fixtures do not overwrite historical anatomy or buildings. Confirm load, opening, seat, access and posture if physically material. Do not derive internal vehicle clearances from external envelope."
@@ -64,12 +64,13 @@
     "universal_codex": {
       "required_editorial_review": true,
       "rule": "Review all appearing entities including silent actors, distinguish mentions from presence, register new identities and changes with exact episode/line/anchor/hash, track physical item custody and location independently of ownership, and separate learned/cast/mentioned magic. Draft candidates do not enter closed state until author choice and canonical validation. Preserve unresolved ambiguities. Keep evidence-based incremental deltas in proposed r33_review.codex_delta when engine deployment is validated; until then perform assisted review without altering immutable old receipts.",
-      "prototype_status": "PR #74 code; PR #75 private audit. Rebuild graph from latest approved registry and verify production before pinning."
+      "prototype_status": "R36 candidate promoted by explicit exception; retain codex_delta and world_coherence validation; no automatic fact promotion; verify actual preparation and receipt"
     },
     "world_coherence": {
-      "status": "REQUIRED_ASSISTED_REVIEW_AUTOMATED_PR_74",
+      "status": "R36_CODE_PINNED; REQUIRED_REVIEW",
       "rule": "Review each material cross-entity interaction, not only new facts: named magic must have individual prior or narrated acquisition; unnamed skills use demonstrated capability and conditions; distinguish inventory ownership, possession, storage, transfer, use and loss. Use channel-specific evidence for combat, context, technique, terrain and consequences; no predetermined win. Update literal records and preserve temporal cutoffs. Tests and quantitative grades are editorial backstage, not reader-facing game statistics."
-    }
+    },
+    "r36_metadata": "R36 Evolution 7 is operational code revision; retain metadata.worldroot_revision=35, R35 longform/refinement and all prior contracts; when universal_codex bound, submit source-bound codex_delta, world_coherence and codex_sync as required by exact pinned engine. No automatic evaluation, no inferred author choice."
   },
   "limits": {
     "automatic_chat_capture": false,
@@ -87,5 +88,27 @@
   },
   "scope": "PROCEDURAL_ONLY_NO_NARRATIVE_CHANGE",
   "policy_refinement": "R35-refinement-v1",
-  "noncanonical_test_exclusion": "LVI-C09-PI-D579-TESTE-R35 is a discarded experiment, never a narrative authority, choice, episode, character profile or continuity source. Retain editorial lessons only. Resume from actual D578 choice."
+  "noncanonical_test_exclusion": "LVI-C09-PI-D579-TESTE-R35 is a discarded experiment, never a narrative authority, choice, episode, character profile or continuity source. Retain editorial lessons only. Resume from actual D578 choice.",
+  "production_release": {
+    "name": "R36 Evolution 7",
+    "mode": "AUTHOR_AUTHORIZED_EXCEPTIONAL_CONTROLLED_RELEASE",
+    "author_approval": "USER_MESSAGE_2026-11-27",
+    "homologation": "LEVEL_7_CG_NOT_CERTIFIED",
+    "full_gate_criteria_preserved": true,
+    "engine_baseline": "b33ec164334a29cd20486d185e59822d9a321170",
+    "rollback_commit": "9b34bc491275028fe32fff018b405ab94dcc5c8a",
+    "rollback_branch": "rollback/r35-before-r36-evolution-7",
+    "editorial_policy_version": 22,
+    "editorial_rules": 130,
+    "episode_metadata_revision": 35,
+    "free_only": true,
+    "automatic_adaptive_promotion": false,
+    "ratification_authorized": false,
+    "canonical_head_change_authorized": false,
+    "reserved_evaluation": "HOLD",
+    "stage_c": "HOLD_INDEPENDENT_ADJUDICATION",
+    "release_validation": "PUBLIC_CODE_CI_AND_CONFIG_READBACK; LIVE_NARRATIVE_REPLAY_NOT_CERTIFIED",
+    "authorization_scope": "ENGINE_ONLY",
+    "configuration_push_does_not_trigger_narrative_workflows": true
+  }
 }

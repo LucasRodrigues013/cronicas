@@ -5,8 +5,6 @@ on:
     branches: [story-archive]
     paths:
       - 'inbox/*.json'
-      - '.github/workflows/worldroot-draft-inbox.yml'
-      - 'ops/ENGINE_PUBLISHING_POLICY.json'
   workflow_dispatch:
 
 concurrency:
@@ -27,7 +25,7 @@ jobs:
       - name: Checkout audited engine at immutable version, with C02 PV scoped exception
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: 9b34bc491275028fe32fff018b405ab94dcc5c8a
+          ref: 3b612087a112ec008e5622af3cd076d6fe79ddff
           path: engine
           persist-credentials: false
       - name: Python 3.12
@@ -52,7 +50,7 @@ jobs:
       - name: Checkout trusted main code (pinned)
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: 9b34bc491275028fe32fff018b405ab94dcc5c8a
+          ref: 3b612087a112ec008e5622af3cd076d6fe79ddff
           path: engine
           persist-credentials: false
       - name: Checkout private story archive data only
