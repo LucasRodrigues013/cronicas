@@ -1,0 +1,3057 @@
+{
+  "schema": "worldroot-omega008-c-chronological-recovery-v1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "macro_id": "9cf2f2513bb23cdae6aff2d3230fcbfaf37d67b1278a29e92a9de368d2337577",
+  "previous_macro_id": "2f9381267f4b1ce7a753b18c6ab9f83171e82e7e68259ccb1d46a964704aad7f",
+  "previous_receipt": {
+    "path": "audit/omega008-c/bulk-semantic-macro-0019.json",
+    "sha256_utf8": "0ba9e73cbbee8751ec3f65c7e283172acc8a12e22d1fd9921b20a58b6fe811e3"
+  },
+  "base_checkpoint_sha256": "5e1e3a4380310e18769d043ebcee02e83279db5fc9ff6064afb61f520d64fdb5",
+  "range": [
+    176299,
+    186394
+  ],
+  "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+  "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+  "source_blob_parts": [
+    "94dfd877863a539b1a904cc23c4dd6540dd0426d"
+  ],
+  "logical_line_offset": 140990,
+  "records": [
+    {
+      "id": "O8C-B20-001",
+      "day": 213,
+      "book": "III",
+      "chapter_hint": 13,
+      "type": "power",
+      "axes": [
+        1,
+        3,
+        11,
+        12,
+        13,
+        14,
+        15,
+        24,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "maira-kest"
+      ],
+      "summary": "Confronto Alvorada Cinzenta: painéis temporários interligados a partir de matéria da mochila protegem tripulação de projéteis, rapidez e estabilidade acima dos primeiros meses, consumo finito. Não afunda adversário.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 176299,
+        "line_end": 176373,
+        "role": "Response",
+        "span_sha256_utf8": "06773ff70751e38752e63084a32c79dd57defaa41c5c0ac165e0b84a7d62f2b6"
+      }
+    },
+    {
+      "id": "O8C-B20-002",
+      "day": 213,
+      "book": "III",
+      "chapter_hint": 13,
+      "type": "combat",
+      "axes": [
+        1,
+        3,
+        4,
+        7,
+        11,
+        12,
+        14,
+        15,
+        24,
+        25,
+        27
+      ],
+      "entities": [
+        "miren",
+        "selia",
+        "maira-kest",
+        "tomren",
+        "lucas"
+      ],
+      "summary": "Miren identifica condução ativa da interferência fluvial, contrafase limitada com Sélia desfaz referência adversária; Lucas sinaliza passagem, Maira/Tomren coordenam apoio. Agressores recuam, sem perseguição, painel deformado.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 176374,
+        "line_end": 176542,
+        "role": "Response",
+        "span_sha256_utf8": "50e57ba9e56d457930392f6ec81465eb467d1e583a4312030e0c1b2b34fae530"
+      }
+    },
+    {
+      "id": "O8C-B20-003",
+      "day": 213,
+      "book": "III",
+      "chapter_hint": 13,
+      "type": "rescue",
+      "axes": [
+        1,
+        3,
+        7,
+        9,
+        10,
+        13,
+        24,
+        25
+      ],
+      "entities": [
+        "maira-kest",
+        "miren",
+        "lucas"
+      ],
+      "summary": "Mensageira protegida passa à Bruma Clara, cilindro de cobre preservado; marinheiro ferido consciente e atendido. Miren exausta sem ferimento, casal se abraça; não novo poder.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 176544,
+        "line_end": 176647,
+        "role": "Response",
+        "span_sha256_utf8": "2f61f658d3364c18f3b954fc103dae88f252f69be11a6ea9d0624b2b02555b57"
+      }
+    },
+    {
+      "id": "O8C-B20-004",
+      "day": 213,
+      "book": "III",
+      "chapter_hint": 13,
+      "type": "investigation",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        13,
+        19,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "tessa-morven",
+        "tessa-arin",
+        "maira-kest",
+        "miren"
+      ],
+      "summary": "15h38 Tessa Morven mensageira, sem parentesco conhecido com Tessa Arin. Cilindro destinado à inspeção Maré Baixa não aberto por Maira. Aviso autorizado: duas Vesperais incompatíveis em horários/locais, possível identidade duplicada ou fraude; ordem anterior não autenticada.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 176648,
+        "line_end": 176764,
+        "role": "Response",
+        "span_sha256_utf8": "8144ea445904ece52618baf8154f514b4e195ab8cc38adbc172e2b4a75c0e747"
+      }
+    },
+    {
+      "id": "O8C-B20-005",
+      "day": 213,
+      "book": "III",
+      "chapter_hint": 13,
+      "type": "investigation",
+      "axes": [
+        1,
+        3,
+        7,
+        9,
+        10,
+        19,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "tessa-morven",
+        "maira-kest",
+        "miren",
+        "lucas"
+      ],
+      "summary": "Colega de Tessa desapareceu semanas atrás após aviso semelhante, trabalhou seis anos com ela; fuga ou captura desconhecida. Maira escolhe acompanhar Alvorada sob condições; alteração de identificação durante transbordo é pista, não prova.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 176765,
+        "line_end": 176883,
+        "role": "Response",
+        "span_sha256_utf8": "e17835bf4873194cf7c72c6ed6e01d85166b9fc38c07b65779a543363c4526be"
+      }
+    },
+    {
+      "id": "O8C-B20-006",
+      "day": 213,
+      "book": "III",
+      "chapter_hint": 13,
+      "type": "geography",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        9,
+        10,
+        16,
+        17,
+        18,
+        19,
+        25,
+        27
+      ],
+      "entities": [
+        "junna-arel",
+        "tessa-morven",
+        "maira-kest",
+        "lucas",
+        "miren"
+      ],
+      "summary": "17h26 Entreposto da Maré Baixa: torre clara, níveis da água, canais salobros; primeiro cheiro de sal, não oceano aberto. Junna Arel grisalha de trança longa recebe cilindro formalmente e organiza confronto de registros/testemunhos; ferido encaminhado.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 176884,
+        "line_end": 177135,
+        "role": "Response",
+        "span_sha256_utf8": "fd489c8878fb28f573f3f98d34691a8e00ae9fd2643586a290ac5297bdf6d48d"
+      }
+    },
+    {
+      "id": "O8C-B20-007",
+      "day": 213,
+      "book": "III",
+      "chapter_hint": 13,
+      "type": "investigation",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        15,
+        19,
+        20,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "junna-arel",
+        "maira-kest",
+        "miren",
+        "marlo-dessen"
+      ],
+      "summary": "18h34 Sala Marcas Navais: registros de entrada e características de cascos divergem; agente associado à Companhia do Lastro apresentou autorização, não Márlo diretamente. Distinguir operações legítimas de fraude.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 177136,
+        "line_end": 177235,
+        "role": "Response",
+        "span_sha256_utf8": "f5c59e874cace4ec589ec7aca5079dd01af8f41897b229651aff13785416a9ce"
+      }
+    },
+    {
+      "id": "O8C-B20-008",
+      "day": 213,
+      "book": "III",
+      "chapter_hint": 13,
+      "type": "artifact",
+      "axes": [
+        1,
+        3,
+        11,
+        13,
+        14,
+        15,
+        19,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "junna-arel",
+        "lucas",
+        "miren"
+      ],
+      "summary": "Memória do Horizonte registra projeção de reproduções autorizadas de páginas, não substitui originais. Campo autoridade de garantia da carga reservada com selo e número anômalos, referência Calderva e sistema marítimo antigo; não prova identidade do escoltado nem autenticidade. Junna preserva documentação.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 177236,
+        "line_end": 177440,
+        "role": "Response",
+        "span_sha256_utf8": "60ff964981f3135f466a0cda9933ea0a446e8fbe4cc386896a31c01ee1531d1e"
+      }
+    },
+    {
+      "id": "O8C-B20-009",
+      "day": 213,
+      "book": "III",
+      "chapter_hint": 13,
+      "type": "reader-perspectives",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        9,
+        10,
+        16,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "prisioneira",
+        "guarda"
+      ],
+      "summary": "19h27 Ala das Cartas: jovem recebe notícia de água distribuída, desenha passagens, ouve preparação de transferência; guarda admite injustiça, aceita levar bilhete à Casa da Maré sem prometer entrega. Identidade ainda desconhecida.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 177442,
+        "line_end": 177681,
+        "role": "Response",
+        "span_sha256_utf8": "85e39de2b772c68f7b67a7f11f6f49080d843834e3f9a42f2083df19d2c2e834"
+      }
+    },
+    {
+      "id": "O8C-B20-010",
+      "day": 213,
+      "book": "III",
+      "chapter_hint": 13,
+      "type": "reader-perspectives",
+      "axes": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        19,
+        20,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "marlo-dessen"
+      ],
+      "summary": "Márlo, comerciante de documentos, recebe notícia de correspondência entregue e Criador no Seral; procura determinar objetivo antes de reagir. Não inicia guerra nem nova arma.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 177682,
+        "line_end": 177757,
+        "role": "Response",
+        "span_sha256_utf8": "952cf9bbc5ed7827e1766ba1b755bba1a26b4a9e03ac1f747e59754797b1ad1f"
+      }
+    },
+    {
+      "id": "O8C-B20-011",
+      "day": 213,
+      "book": "III",
+      "chapter_hint": 13,
+      "type": "exploration",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        16,
+        17,
+        18,
+        25
+      ],
+      "entities": [
+        "kairon",
+        "rael",
+        "eria-calen",
+        "darius",
+        "seron",
+        "naira"
+      ],
+      "summary": "20h11 Lumeira: registra duas rotas, superior promissora para cargas, casa sobre raízes adaptadas; Éria conhece moradora (tia), interesse em visitar Três Arcos, Káiron e Rael compartilham constelações, autonomia.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 177758,
+        "line_end": 177889,
+        "role": "Response",
+        "span_sha256_utf8": "396dce71e023fbbdfb0287b64775e625af3c7223be5217c32d7d3c1b8b20fcc6"
+      }
+    },
+    {
+      "id": "O8C-B20-012",
+      "day": 213,
+      "book": "III",
+      "chapter_hint": 13,
+      "type": "relationship",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        13,
+        14,
+        16,
+        25,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren"
+      ],
+      "summary": "21h07 Terraço dos Pilotos: registro autorizado no cristal usando torre, marcas de nível, rocha e canais, projeção aproximada; não localização global. Saudade dos amigos, Leviatã como transporte de pessoas/conhecimento; Miren deseja varanda no laboratório.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 177890,
+        "line_end": 178165,
+        "role": "Response",
+        "span_sha256_utf8": "2d260534119cadb02fed74885f4555dc0167594cec56a0c828993051d9da3963"
+      }
+    },
+    {
+      "id": "O8C-B20-013",
+      "day": 213,
+      "book": "III",
+      "chapter_hint": 13,
+      "type": "reader-perspectives",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "celle-varin",
+        "oren-falst",
+        "prisioneira"
+      ],
+      "summary": "22h18 Casa da Maré: Celle recebe embrulho com pão e bilhete sobre custódia na Ala das Cartas; prepara confirmação prudente com moradores. Duas investigações independentes convergem, Lucas/Miren ainda ignoram.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 178166,
+        "line_end": 178297,
+        "role": "Response",
+        "span_sha256_utf8": "9bdf16783bb2d9bafd48e449040a195e0dfe3c4e855db980dc4a152630e1ea9e"
+      }
+    },
+    {
+      "id": "O8C-B20-014",
+      "day": 213,
+      "book": "III",
+      "chapter_hint": 13,
+      "type": "closure",
+      "axes": [
+        1,
+        3,
+        9,
+        11,
+        12,
+        16,
+        19,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "maira-kest",
+        "tessa-morven"
+      ],
+      "summary": "Fechamento D213: resgate confirmado, duplicidade Vesperal em investigação, marés alcançadas, frente terrestre autônoma, 300 originais vivos; sem visita a Calderva, porto ou localização definitiva. Capítulo 13 encerrado.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 178298,
+        "line_end": 178386,
+        "role": "Response",
+        "span_sha256_utf8": "72f84e7cf9552f8f77b4d17c47f8f358dce96065190f2fd55eb851f604835dfa"
+      }
+    },
+    {
+      "id": "O8C-B20-015",
+      "day": 214,
+      "book": "III",
+      "chapter_hint": 14,
+      "type": "editorial",
+      "axes": [
+        28,
+        29,
+        30
+      ],
+      "entities": [],
+      "summary": "Autor escolhe opção 4 e pede continuar. Não ação diegética.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 178387,
+        "line_end": 178393,
+        "role": "Prompt",
+        "span_sha256_utf8": "d8d026acdbb10f852bf1a7ab92123b8052516fb436245373c6028bd95fa813d6"
+      }
+    },
+    {
+      "id": "O8C-B20-016",
+      "day": 214,
+      "book": "III",
+      "chapter_hint": 14,
+      "type": "relationship",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        13,
+        16,
+        25,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren"
+      ],
+      "summary": "05h28 Hospedaria dos Pilotos: sal lembra Terra; Lucas não quer trocar família/cidade por mundo antigo. Documento experimental de viagem e desejo de trazer amigos ao oceano.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 178409,
+        "line_end": 178616,
+        "role": "Response",
+        "span_sha256_utf8": "b4c45cbba0c77c86a19490ef987e09d78be68e45b5bbd201484be7db6c69952d"
+      }
+    },
+    {
+      "id": "O8C-B20-017",
+      "day": 214,
+      "book": "III",
+      "chapter_hint": 14,
+      "type": "diplomacy",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        16,
+        19,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "junna-arel",
+        "maira-kest",
+        "tomren",
+        "navel-ardon"
+      ],
+      "summary": "06h41 Junna confirma inconsistência parcial dos cascos fluvial e costeiro, transferência possível, escoltado não identificado. Sem autorização de perseguição armada. Nável Ardon, piloto costeiro, cabelos pretos/brancos, pele marcada pelo sol e cicatriz na sobrancelha, comanda Falcão da Espuma.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 178617,
+        "line_end": 178856,
+        "role": "Response",
+        "span_sha256_utf8": "753d4168189fb0796d473ea1ea3418762787c8a124a07e5e63c1f0ecb937dd78"
+      }
+    },
+    {
+      "id": "O8C-B20-018",
+      "day": 214,
+      "book": "III",
+      "chapter_hint": 14,
+      "type": "technology",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        13,
+        15,
+        16,
+        18,
+        25
+      ],
+      "entities": [
+        "navel-ardon",
+        "yra-beldon",
+        "ferran-dosk",
+        "loris",
+        "maira-kest"
+      ],
+      "summary": "08h12 Falcão da Espuma: veleiro de trabalho de dois mastros, casco reforçado, proa alta. Yra navegadora de marés ruiva/trança/tatuagem azul; Ferran manutenção, Loris sinais/velas. Régua de maré arcana usa minerais e observação, não previsão perfeita. Maira mantém Bruma Clara; 08h47 partida autorizada por Nável.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 178857,
+        "line_end": 179092,
+        "role": "Response",
+        "span_sha256_utf8": "94d438f49259af38c3eace28b9cb59577145f8cfa5134b57756c6771bbd4a107"
+      }
+    },
+    {
+      "id": "O8C-B20-019",
+      "day": 214,
+      "book": "III",
+      "chapter_hint": 14,
+      "type": "exploration",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        11,
+        16,
+        25,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "navel-ardon"
+      ],
+      "summary": "10h19 primeira visão do oceano aberto após promontórios. Lucas e Miren celebram; Gênese responsiva, ele decide admirar sem manifestar. Miren nunca viu mar daquela forma.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 179093,
+        "line_end": 179304,
+        "role": "Response",
+        "span_sha256_utf8": "8899d7219f44b4065156027a4874c890fa8f164d16b6194212405f8f514ded0e"
+      }
+    },
+    {
+      "id": "O8C-B20-020",
+      "day": 214,
+      "book": "III",
+      "chapter_hint": 14,
+      "type": "bestiary",
+      "axes": [
+        1,
+        3,
+        6,
+        7,
+        10,
+        11,
+        16,
+        22,
+        25,
+        30
+      ],
+      "entities": [
+        "yra-beldon",
+        "navel-ardon",
+        "lucas",
+        "miren"
+      ],
+      "summary": "Três Cantoras do Abismo Claro observadas, corpo escuro maior que veleiro, marcas luminosas, nadadeiras, canto grave com magia. Risco por proximidade, normalmente não confrontam; comunicação não compreendida. Leviatã imaginado como cidade navegante, não construído.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 179305,
+        "line_end": 179460,
+        "role": "Response",
+        "span_sha256_utf8": "b2906fadaf0ec3aba6ae5c8b45c049e706ab844c026da7c61dbb21fd0730ccdd"
+      }
+    },
+    {
+      "id": "O8C-B20-021",
+      "day": 214,
+      "book": "III",
+      "chapter_hint": 14,
+      "type": "bestiary",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        11,
+        13,
+        15,
+        16,
+        18,
+        22,
+        25,
+        27
+      ],
+      "entities": [
+        "yra-beldon",
+        "navel-ardon",
+        "lucas",
+        "miren"
+      ],
+      "summary": "11h43 Pilares Brancos, Jardins da Maré: minerais e organismos luminosos expostos pelo recuo da água, conchas, plantas e seres semelhantes a estrelas; referência auxiliar de pilotos. Cristal registra condição visível com permissão, não carta validada/profundidade.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 179461,
+        "line_end": 179630,
+        "role": "Response",
+        "span_sha256_utf8": "3f24d2cf8d713e7ccb34a9d62a156652a7e9b4c00e025a29b30048365c172683"
+      }
+    },
+    {
+      "id": "O8C-B20-022",
+      "day": 214,
+      "book": "III",
+      "chapter_hint": 14,
+      "type": "infrastructure",
+      "axes": [
+        1,
+        3,
+        7,
+        15,
+        16,
+        17,
+        19,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "ferran-dosk",
+        "yra-beldon",
+        "navel-ardon",
+        "miren",
+        "lucas"
+      ],
+      "summary": "Marco de sinalização danificado, refletor quebrado e corrente removida; sem atividade arcana ativa detectada à distância. Registro e aviso aos responsáveis, sem reforma não autorizada.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 179631,
+        "line_end": 179722,
+        "role": "Response",
+        "span_sha256_utf8": "dfe9f4deea221a50253c999ee1879b25b2fa249d1b8d4bed8ebc87ddb9012eac"
+      }
+    },
+    {
+      "id": "O8C-B20-023",
+      "day": 214,
+      "book": "III",
+      "chapter_hint": 14,
+      "type": "combat",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        16,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "navel-ardon",
+        "yra-beldon",
+        "loris",
+        "lucas",
+        "miren"
+      ],
+      "summary": "13h26 Enseada do Sino Partido: barco escuro sem bandeira identificável exige recuperação privada; pescadores pedem socorro. Nável escolhe assistência; vínculo Lastro não comprovado. Ataque e interferência ameaçam tripulação.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 179723,
+        "line_end": 179944,
+        "role": "Response",
+        "span_sha256_utf8": "9d71785955fadc48dcb9bd268e97c2e33c9343435f7055545939c99e7f7b488a"
+      }
+    },
+    {
+      "id": "O8C-B20-024",
+      "day": 214,
+      "book": "III",
+      "chapter_hint": 14,
+      "type": "combat",
+      "axes": [
+        1,
+        3,
+        7,
+        11,
+        12,
+        13,
+        14,
+        15,
+        24,
+        25,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "navel-ardon",
+        "ferran-dosk",
+        "miren",
+        "yra-beldon"
+      ],
+      "summary": "Encadeamento Matricial I cria painéis fixados com autorização técnica, impacto deforma metal e transmite esforço. Miren/Yra identificam fluxo estável fora da perturbação, Nável manobra; não controle total da corrente.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 179945,
+        "line_end": 180106,
+        "role": "Response",
+        "span_sha256_utf8": "683747c97afd78b965d0cf3bebc99a63d313ffe7b27f0b9260e3c03998c577bb"
+      }
+    },
+    {
+      "id": "O8C-B20-025",
+      "day": 214,
+      "book": "III",
+      "chapter_hint": 14,
+      "type": "rescue",
+      "axes": [
+        1,
+        3,
+        4,
+        7,
+        11,
+        12,
+        13,
+        14,
+        15,
+        24,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "ferran-dosk",
+        "navel-ardon",
+        "yra-beldon"
+      ],
+      "summary": "Plataforma flutuante e tirante de apoio ajustadas pela equipe permitem salvar três pescadores; um ferimento significativo na perna, outros contusões/exaustão. Barco perdido, agressores recuam, sem captura ou perseguição.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 180107,
+        "line_end": 180320,
+        "role": "Response",
+        "span_sha256_utf8": "f7cdefd6b38b8ae991813594a90c4204a187b8b9f45747a20ed34b567e972b3c"
+      }
+    },
+    {
+      "id": "O8C-B20-026",
+      "day": 214,
+      "book": "III",
+      "chapter_hint": 14,
+      "type": "power",
+      "axes": [
+        1,
+        3,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        24,
+        25,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "navel-ardon",
+        "ferran-dosk"
+      ],
+      "summary": "Sistema registra Arquitetura Protetiva Modular: combinação de capacidades existentes, proteção/resgate sob supervisão, matéria e energia finitas, danos e esforço no casco. Não novo poder independente. Primeira experiência marítima real.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 180321,
+        "line_end": 180454,
+        "role": "Response",
+        "span_sha256_utf8": "31453fa1233191145c344a621759df5431d950a525a62e65e8b02023275552fd"
+      }
+    },
+    {
+      "id": "O8C-B20-027",
+      "day": 214,
+      "book": "III",
+      "chapter_hint": 14,
+      "type": "character",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        18,
+        20,
+        23,
+        25,
+        27
+      ],
+      "entities": [
+        "talya-feren",
+        "miren",
+        "lucas"
+      ],
+      "summary": "15h04 Talya Feren, cerca de 30 anos, cabelos castanhos, pele ao sol, cicatriz queixo; barco era do pai ferido. Relata taxas de proteção e âncora incompleta semelhante (não idêntica confirmada), autorizações de pesca legítimas.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 180455,
+        "line_end": 180616,
+        "role": "Response",
+        "span_sha256_utf8": "753f496a75068de51d22c91059d96164b3e4eebe129c371d36d251dd662f6bc0"
+      }
+    },
+    {
+      "id": "O8C-B20-028",
+      "day": 214,
+      "book": "III",
+      "chapter_hint": 14,
+      "type": "investigation",
+      "axes": [
+        1,
+        3,
+        4,
+        5,
+        7,
+        9,
+        16,
+        19,
+        20,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "teo",
+        "talya-feren",
+        "oren-falst"
+      ],
+      "summary": "Teo, irmão de Talya, viu nome Vesperal pintado sobre outro em ancoradouro exterior, nome anterior desconhecido; cobranças depois da intenção de denunciar. Família do Bairro das Correntes, Oren ensinou pai a reparar barco. Talya oferece contato com moradores.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 180617,
+        "line_end": 180802,
+        "role": "Response",
+        "span_sha256_utf8": "a5c53c9d2e690b9336f1ea986b5cf2e6cc86541027d06099e5cc590a4242b316"
+      }
+    },
+    {
+      "id": "O8C-B20-029",
+      "day": 214,
+      "book": "III",
+      "chapter_hint": 14,
+      "type": "geography",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        9,
+        10,
+        16,
+        17,
+        18,
+        19,
+        20,
+        25,
+        26,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "talya-feren",
+        "navel-ardon"
+      ],
+      "summary": "18h16 Golfo de Calderva: cidade grande entre mar/montanhas, muralhas, canais, nove pontes monumentais, torres cobre, armazéns, docas e estaleiros vivos apesar de deterioração. Farol da Coroa apagado, lente escura, custo alegado; causa ainda não verificada.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 180803,
+        "line_end": 181120,
+        "role": "Response",
+        "span_sha256_utf8": "9ee87e474958f677d4eefdebf9bd7e1e6ca2967e5eaa799d79888155046d14d6"
+      }
+    },
+    {
+      "id": "O8C-B20-030",
+      "day": 214,
+      "book": "III",
+      "chapter_hint": 14,
+      "type": "institution",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        9,
+        10,
+        13,
+        16,
+        19,
+        20,
+        25,
+        27
+      ],
+      "entities": [
+        "navel-ardon",
+        "lucas",
+        "miren",
+        "talya-feren",
+        "teo"
+      ],
+      "summary": "19h03 Doca das Redes Velhas: chegada formal, ocorrência e resgatados registrados, autorização de atracação. Documento de Três Arcos não automaticamente reconhecido, identidade confirmada por procedimentos locais. Pai atendido; Nável/Ferran inspecionam danos/custos.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 181121,
+        "line_end": 181294,
+        "role": "Response",
+        "span_sha256_utf8": "6dd9fc46b051f173822d0c250d7538fbc902abd5119b7acd7f3adf0a602fb21c"
+      }
+    },
+    {
+      "id": "O8C-B20-031",
+      "day": 214,
+      "book": "III",
+      "chapter_hint": 14,
+      "type": "character",
+      "axes": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        15,
+        16,
+        17,
+        18,
+        20,
+        25
+      ],
+      "entities": [
+        "oren-falst",
+        "talya-feren",
+        "lucas",
+        "miren"
+      ],
+      "summary": "Bairro Correntes: comércio, amuletos, música, avisos de cobrança e homens armados. Oren Falst, construtor idoso e mentor naval, acolhe Talya e discute com Lucas esforços de propulsão em casco de madeira; nenhuma encomenda/estaleiro firmado.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 181295,
+        "line_end": 181610,
+        "role": "Response",
+        "span_sha256_utf8": "09b3a884a1c0bf68d444dc13364276662bce1600db659d6c23a0b836f3a29b1d"
+      }
+    },
+    {
+      "id": "O8C-B20-032",
+      "day": 214,
+      "book": "III",
+      "chapter_hint": 14,
+      "type": "investigation",
+      "axes": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        16,
+        19,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "celle-varin",
+        "oren-falst",
+        "elen-ross",
+        "lucas",
+        "miren"
+      ],
+      "summary": "Celle Varin (capa marrom, grisalha) conhece viajantes na oficina; Elen Ross viva, acolhida Pouso Sete Cordas, registros preservados. Celle relata bilhete da Ala das Cartas; localização provável, identidade desconhecida.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 181611,
+        "line_end": 181798,
+        "role": "Response",
+        "span_sha256_utf8": "d06aa26031f2f4b08c8a1d1c833881c44006d9b078749a2d287a73551780733c"
+      }
+    },
+    {
+      "id": "O8C-B20-033",
+      "day": 214,
+      "book": "III",
+      "chapter_hint": 14,
+      "type": "society",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        9,
+        10,
+        13,
+        16,
+        17,
+        18,
+        19,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "celle-varin",
+        "oren-falst",
+        "lucas",
+        "miren",
+        "elen-ross"
+      ],
+      "summary": "20h37 Escada Três Lanternas, porta azul e ponte confirmam desenho do pai de Elen. Casa da Maré mantém nomes de desaparecidos, lema Nenhum fica para trás. Celle recusa divulgação detalhada da localização; bilhete examinado passivamente, não prova identidade. Cooperam sem invasão.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 181799,
+        "line_end": 182146,
+        "role": "Response",
+        "span_sha256_utf8": "31e82269b3a0a216dd9afcad2f506143baaae75604bce30048e60a3fcd840822"
+      }
+    },
+    {
+      "id": "O8C-B20-034",
+      "day": 214,
+      "book": "III",
+      "chapter_hint": 14,
+      "type": "reader-perspectives",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "prisioneira",
+        "guarda"
+      ],
+      "summary": "21h16 prisioneira com marca na sobrancelha ouve confirmação do bilhete entregue, notícia de pescadores vivos, ordem de transferência sem destino. Não quer liberdade à custa da família do guarda; deseja agir na própria libertação.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 182147,
+        "line_end": 182310,
+        "role": "Response",
+        "span_sha256_utf8": "2beb2ad57ce2651ca9b4f57610889e90dc9acdcac39e1958d844e41a9085b279"
+      }
+    },
+    {
+      "id": "O8C-B20-035",
+      "day": 214,
+      "book": "III",
+      "chapter_hint": 14,
+      "type": "relationship",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        16,
+        18,
+        25,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren"
+      ],
+      "summary": "22h03 Ponte Sétimo Arco: casal observa vida noturna e reconhece identidade marítima própria de Calderva, sem copiar Três Arcos nem impor dono. Beijo e esperança apesar do medo.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 182311,
+        "line_end": 182482,
+        "role": "Response",
+        "span_sha256_utf8": "2ce61c62fae578336b6b24b4c7db48c6212ff05c36a08512ac53b3d5536dedea"
+      }
+    },
+    {
+      "id": "O8C-B20-036",
+      "day": 214,
+      "book": "III",
+      "chapter_hint": 14,
+      "type": "reader-perspectives",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        19,
+        20,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "marlo-dessen"
+      ],
+      "summary": "22h31 escritório Lastro: Márlo recebe relato da chegada, pescadores vivos, busca descobrir contatos e intenção de Lucas. Interesses comerciais criminosos e possíveis disputas, não exército sobrenatural.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 182483,
+        "line_end": 182560,
+        "role": "Response",
+        "span_sha256_utf8": "73babc7a058ed783ff7836ded6d96dedf84e0e34b86e2e30cef17d4449baea38"
+      }
+    },
+    {
+      "id": "O8C-B20-037",
+      "day": 214,
+      "book": "III",
+      "chapter_hint": 14,
+      "type": "industry",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        14,
+        15,
+        19,
+        20,
+        25
+      ],
+      "entities": [
+        "brannik",
+        "lina-orest",
+        "aurel",
+        "kael",
+        "lysa",
+        "varo",
+        "maelis"
+      ],
+      "summary": "22h48 Forja monta e confere conjunto modular com componentes aprovados e referências físicas, sem Lucas. Repetibilidade/segunda bancada pendentes. Kael/Lysa mantêm gestão; Varo/Maelis conversam e dão as mãos; 300 vivos, Coração isolado.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 182561,
+        "line_end": 182708,
+        "role": "Response",
+        "span_sha256_utf8": "da2a8620b21458c8f0433b265edecff6bbaf07200ccdc89ae92be202177961a7"
+      }
+    },
+    {
+      "id": "O8C-B20-038",
+      "day": 214,
+      "book": "III",
+      "chapter_hint": 14,
+      "type": "closure",
+      "axes": [
+        1,
+        3,
+        9,
+        11,
+        12,
+        16,
+        17,
+        19,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren"
+      ],
+      "summary": "Fecho D214 23h02: Calderva alcançada legitimamente, três vivos e barco perdido, Farol apagado, prisioneira não identificada, nenhum direito territorial ou estaleiro confirmado. Coração isolado/Unidade C dormente; capítulo 14 encerrado.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 182709,
+        "line_end": 182789,
+        "role": "Response",
+        "span_sha256_utf8": "5ab0e11f7cdbbdee7646605cd7c97e43b2955557ff579d4b184015361d608ad7"
+      }
+    },
+    {
+      "id": "O8C-B20-039",
+      "day": 215,
+      "book": "III",
+      "chapter_hint": 15,
+      "type": "editorial",
+      "axes": [
+        1,
+        7,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        18,
+        25,
+        26,
+        28,
+        29,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren"
+      ],
+      "summary": "Autor combina 4 e 2; ajuda cotidiana e respeito conquistado, rastreador arcano, relacionamento aprofundado, ação e poderes extravagantes compatíveis com capacidades. Pedido não equivale a evento.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 182790,
+        "line_end": 182794,
+        "role": "Prompt",
+        "span_sha256_utf8": "c869ad2712205d678d469819d1394c5a6c70726e73cc704ad1eef891bb40a13f"
+      }
+    },
+    {
+      "id": "O8C-B20-040",
+      "day": 215,
+      "book": "III",
+      "chapter_hint": 15,
+      "type": "relationship",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        16,
+        18,
+        25,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren"
+      ],
+      "summary": "06h12 Hospedaria Âncora Azul: acordam juntos, observam bomba quebrada; escolhem explorar e ajudar sem dívida nem substituir trabalhadores. Café/humor, não projeto civilizacional imposto.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 182824,
+        "line_end": 183069,
+        "role": "Response",
+        "span_sha256_utf8": "ce730f60db354f6aea897306099fca1583790da92b35d106f54fabe0398c186c"
+      }
+    },
+    {
+      "id": "O8C-B20-041",
+      "day": 215,
+      "book": "III",
+      "chapter_hint": 15,
+      "type": "society",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        12,
+        14,
+        15,
+        18,
+        19,
+        25
+      ],
+      "entities": [
+        "mara-velin",
+        "hedran",
+        "lucas",
+        "miren"
+      ],
+      "summary": "07h24 Praça Poço Antigo: Mara trança escura, Hedran manutenção; com autorização, Lucas manifesta peça de transmissão conhecida a partir de material equivalente, Hedran testa e instala, bomba volta a fornecer água. Sem cobrança; manutenção/qualidade ainda responsabilidade local.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 183070,
+        "line_end": 183435,
+        "role": "Response",
+        "span_sha256_utf8": "c1cd82a21d876ff9d8933ab2ea092c211aa33b0510e00c37d87bc57563aa90eb"
+      }
+    },
+    {
+      "id": "O8C-B20-042",
+      "day": 215,
+      "book": "III",
+      "chapter_hint": 15,
+      "type": "industry",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        12,
+        14,
+        15,
+        18,
+        20,
+        25
+      ],
+      "entities": [
+        "berion-tal",
+        "hedran",
+        "lucas",
+        "miren"
+      ],
+      "summary": "09h16 Rua Calafates: Bérion Tal ruivo, artesão, rejeita caridade. Reproduz engrenagem com autorização, corrige alinhamento e apoio com equipe; máquina corta madeira em ensaio, trabalho de dois aprendizes preservado, sem venda de máquina.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 183436,
+        "line_end": 183699,
+        "role": "Response",
+        "span_sha256_utf8": "37f5d16137582019a0de9cbb2d98d291ce1ab2e80a1021419434fe6c422f5d88"
+      }
+    },
+    {
+      "id": "O8C-B20-043",
+      "day": 215,
+      "book": "III",
+      "chapter_hint": 15,
+      "type": "health",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        18,
+        19,
+        25
+      ],
+      "entities": [
+        "celle-varin",
+        "esme-raven",
+        "jona",
+        "lucas",
+        "miren"
+      ],
+      "summary": "10h38 Casa Saúde Santa Velha: Esme Raven, médica grisalha, examina arranhões de Lucas. Sem medicamento não validado. Articulação de equipamento de elevação substituída e verificada, uso supervisionado. Jona aprendiz de carpintaria em reabilitação da perna, sonha oficina; ferramentas adaptadas apenas proposta.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 183700,
+        "line_end": 184045,
+        "role": "Response",
+        "span_sha256_utf8": "b2a9c90c8b29b2ba8133ae8a8470bc33ac3753a32b0b6e0dbb4b372ceac3d165"
+      }
+    },
+    {
+      "id": "O8C-B20-044",
+      "day": 215,
+      "book": "III",
+      "chapter_hint": 15,
+      "type": "investigation",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        16,
+        17,
+        19,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "adelia-vern",
+        "celle-varin",
+        "lucas",
+        "miren"
+      ],
+      "summary": "12h17 Arquivo Histórico: Adélia Vern possui responsabilidade parcial por coleções e autorização de inspeção inferior; planta municipal da Ala, ventilação e canais de água. Administração portuária contestada; áreas restritas não autorizadas. Propõe consultoria técnica.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 184046,
+        "line_end": 184283,
+        "role": "Response",
+        "span_sha256_utf8": "3e385475fd8c7fe857ba320fb531da8b134b6a0b75a2d0d6659cef6425a3c843"
+      }
+    },
+    {
+      "id": "O8C-B20-045",
+      "day": 215,
+      "book": "III",
+      "chapter_hint": 15,
+      "type": "investigation",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        11,
+        15,
+        16,
+        17,
+        19,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "adelia-vern",
+        "miren",
+        "lucas"
+      ],
+      "summary": "14h06 galeria de conservação: ingresso autorizado, antigos canais acústicos/avisos testados sem energizar infraestrutura; com planta e ressonância identifica derivação possível, sinal discreto de chamada recebe resposta. Não mapa secreto nem entrada em cela.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 184284,
+        "line_end": 184515,
+        "role": "Response",
+        "span_sha256_utf8": "e8084d88e12e8712a4acfea8b8101afbff899b88c4c9a99a08ace07d9ac4a6de"
+      }
+    },
+    {
+      "id": "O8C-B20-046",
+      "day": 215,
+      "book": "III",
+      "chapter_hint": 15,
+      "type": "character",
+      "axes": [
+        1,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        16,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "lira",
+        "lucas",
+        "miren",
+        "adelia-vern"
+      ],
+      "summary": "Voz feminina jovem e cansada confirma custódia, sem ferimento grave autodeclarado, outras movimentações sem prova de outros cativos. Pede ser chamada LIRA por enquanto; não identidade completa. Recebe alimento/água, teme, não confia plenamente; Lucas/Miren respeitam recusa de interrogatório.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 184516,
+        "line_end": 184799,
+        "role": "Response",
+        "span_sha256_utf8": "883a826293b7c72aa6a102659d0ce257ccf7db2b236d280eafd24c490e424783"
+      }
+    },
+    {
+      "id": "O8C-B20-047",
+      "day": 215,
+      "book": "III",
+      "chapter_hint": 15,
+      "type": "relationship",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "lira",
+        "lucas",
+        "miren"
+      ],
+      "summary": "14h49 Lira não quer privilégio sobre outros desaparecidos; ouve lema. Relata transferência sem data/destino. Aceita tentar artefato ocultável e desligável, consentimento revogável; alcance desconhecido. Sem entrega concluída.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 184800,
+        "line_end": 185091,
+        "role": "Response",
+        "span_sha256_utf8": "66bed032798ef4540734e53a20ee43bcb2d6cd67e7ae9597a7e4986472b847fa"
+      }
+    },
+    {
+      "id": "O8C-B20-048",
+      "day": 215,
+      "book": "III",
+      "chapter_hint": 15,
+      "type": "artifact",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        11,
+        12,
+        13,
+        14,
+        15,
+        25,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "lira"
+      ],
+      "summary": "15h31 pátio: dois núcleos cristalinos relacionados, botão/receptor e interrupção física; CREATION manifesta camadas mais detalhadas que especificação, esforço moderado/consumo. Ensaio curto detecta direção relativa; parede enfraquece e isolamento interrompe; sem nome, rosto, posição exata ou vigilância global.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 185092,
+        "line_end": 185317,
+        "role": "Response",
+        "span_sha256_utf8": "a3f8b32c2c247d6fc93cf488ecbc639057f9bd1ffb3d2b89e217cc551aef1a59"
+      }
+    },
+    {
+      "id": "O8C-B20-049",
+      "day": 215,
+      "book": "III",
+      "chapter_hint": 15,
+      "type": "character",
+      "axes": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        13,
+        19,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "ivo-narel",
+        "adelia-vern",
+        "lucas",
+        "miren",
+        "lira"
+      ],
+      "summary": "Ivo Narel, guarda de cabelo escuro/cicatriz junto à orelha e filha, procura pesquisadores por pedido de Lira. Aceita apresentar botão em entrega sob sua responsabilidade se seguro; objeto fica com Ivo. Não entregue, não ativado, não confirmado que Ivo é o mesmo guarda em todos os trechos além do relato.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 185318,
+        "line_end": 185511,
+        "role": "Response",
+        "span_sha256_utf8": "2a7e8f9eb5fc62e7b2306386b66e941521526743e2efcd6d615bdfff73f453a5"
+      }
+    },
+    {
+      "id": "O8C-B20-050",
+      "day": 215,
+      "book": "III",
+      "chapter_hint": 15,
+      "type": "power",
+      "axes": [
+        1,
+        3,
+        11,
+        12,
+        13,
+        14,
+        15,
+        25,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "lira"
+      ],
+      "summary": "Sistema Elo do Horizonte I: aplicação experimental CREATION+ressonância matricial, direção curta demonstrada, desligamento físico, interferência/isolamento/dano/energia limitam. Sem localização global, interior ou pessoa sem dispositivo; teste fora do pátio pendente e consentido.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 185512,
+        "line_end": 185525,
+        "role": "Response",
+        "span_sha256_utf8": "8e37a598e8ddb7eab25eafd6451ea3f3006e85de7aee682e0d9fd6e334fa1083"
+      }
+    },
+    {
+      "id": "O8C-B20-051",
+      "day": 215,
+      "book": "III",
+      "chapter_hint": 15,
+      "type": "crisis",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        11,
+        12,
+        14,
+        15,
+        16,
+        17,
+        24,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "oren-falst"
+      ],
+      "summary": "16h52 Quinto Arco Canal Oficinas: comporta sob interferência, barcaça carregada ameaça fundação, moradores em risco. Lucas ativa armadura viva, cria passagens de evacuação temporárias, Oren identifica apoios seguros; moradores executam evacuação própria.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 185526,
+        "line_end": 185763,
+        "role": "Response",
+        "span_sha256_utf8": "1e1bdc6aeb0020110a40577455555d6d0594341e5bb8bc80c53a84546117cc4b"
+      }
+    },
+    {
+      "id": "O8C-B20-052",
+      "day": 215,
+      "book": "III",
+      "chapter_hint": 15,
+      "type": "power",
+      "axes": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11,
+        15,
+        19,
+        23,
+        24,
+        25,
+        27
+      ],
+      "entities": [
+        "dasha-renn",
+        "miren"
+      ],
+      "summary": "Dasha Renn, cabelos brancos/trança/roupas azuis, responsável por águas internas. Identifica referência falsa com Miren, que usa própria análise treinada, não Sistema de Lucas. Contrafase limitada contra injeção externa; autoria não estabelecida.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 185764,
+        "line_end": 185831,
+        "role": "Response",
+        "span_sha256_utf8": "bb3dc7c6cf2a3abaed45cf09a33a1638ef5eeecd543fb7882abbb2c822dff32e"
+      }
+    },
+    {
+      "id": "O8C-B20-053",
+      "day": 215,
+      "book": "III",
+      "chapter_hint": 15,
+      "type": "rescue",
+      "axes": [
+        1,
+        3,
+        7,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        24,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "oren-falst",
+        "miren",
+        "dasha-renn"
+      ],
+      "summary": "Arco dourado temporário de dezenas de componentes, braços arqueados e módulos flutuantes, materiais da mochila e recuperáveis; Oren e operadores distribuem esforço e estabilizam barcaça sem choque na ponte. Miren/Dasha restauram controles, responsáveis fecham gradualmente. Duas pessoas feridas, nenhuma morte constatada, danos e investigação.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 185832,
+        "line_end": 186097,
+        "role": "Response",
+        "span_sha256_utf8": "25c116435be12283eda2125d0f5fb502a9cb015c0452665a69a4b1f043174354"
+      }
+    },
+    {
+      "id": "O8C-B20-054",
+      "day": 215,
+      "book": "III",
+      "chapter_hint": 15,
+      "type": "relationship",
+      "axes": [
+        1,
+        3,
+        7,
+        8,
+        9,
+        10,
+        15,
+        18,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "oren-falst",
+        "miren"
+      ],
+      "summary": "Oren emocionado com ação colaborativa quer conhecer Brannik. Não nova habilidade automática; tradição própria de Calderva prestes a ser revelada.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 186098,
+        "line_end": 186155,
+        "role": "Response",
+        "span_sha256_utf8": "b4f9dfcadf8710ec1060d54d695426447a9e481f2787aec2b48539c1c001720f"
+      }
+    },
+    {
+      "id": "O8C-B20-055",
+      "day": 215,
+      "book": "III",
+      "chapter_hint": 15,
+      "type": "culture",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        10,
+        11,
+        15,
+        16,
+        17,
+        18,
+        19,
+        25,
+        27,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "dasha-renn",
+        "oren-falst"
+      ],
+      "summary": "18h09 Lucas cansado após parcela importante da reserva, água e descanso. Dasha ativa sino/matriz cívica do Quinto Arco, demais oito respondem por responsáveis locais, luz azul/dourada e canção; rede distribuída independente da Gênese, não tecnologia dos Arquitetos confirmada. Cena aberta com Miren.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+        "line_start": 186156,
+        "line_end": 186394,
+        "role": "Response",
+        "span_sha256_utf8": "e0c8240b70de482ed7354336680168ee0443c8767480bc93f2abff8da038a072"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "start": 176299,
+      "end": 178386,
+      "role": "Response",
+      "disposition": "CONTINUATION_FROM_PREVIOUS_MACRO",
+      "span_sha256_utf8": "7a7e9bb0527f21e38c2975a5a79d250c27b0f123dd55bb2749dc2cbd303c7381",
+      "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+      "record_ids": [
+        "O8C-B20-001",
+        "O8C-B20-002",
+        "O8C-B20-003",
+        "O8C-B20-004",
+        "O8C-B20-005",
+        "O8C-B20-006",
+        "O8C-B20-007",
+        "O8C-B20-008",
+        "O8C-B20-009",
+        "O8C-B20-010",
+        "O8C-B20-011",
+        "O8C-B20-012",
+        "O8C-B20-013",
+        "O8C-B20-014"
+      ]
+    },
+    {
+      "start": 178387,
+      "end": 178393,
+      "role": "Prompt",
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE",
+      "span_sha256_utf8": "d8d026acdbb10f852bf1a7ab92123b8052516fb436245373c6028bd95fa813d6",
+      "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+      "record_ids": [
+        "O8C-B20-015"
+      ]
+    },
+    {
+      "start": 178394,
+      "end": 182789,
+      "role": "Response",
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE",
+      "span_sha256_utf8": "e6c3a0b35e48571bf491735cb215da7de711689feeed68548af36e828ab0261d",
+      "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+      "record_ids": [
+        "O8C-B20-016",
+        "O8C-B20-017",
+        "O8C-B20-018",
+        "O8C-B20-019",
+        "O8C-B20-020",
+        "O8C-B20-021",
+        "O8C-B20-022",
+        "O8C-B20-023",
+        "O8C-B20-024",
+        "O8C-B20-025",
+        "O8C-B20-026",
+        "O8C-B20-027",
+        "O8C-B20-028",
+        "O8C-B20-029",
+        "O8C-B20-030",
+        "O8C-B20-031",
+        "O8C-B20-032",
+        "O8C-B20-033",
+        "O8C-B20-034",
+        "O8C-B20-035",
+        "O8C-B20-036",
+        "O8C-B20-037",
+        "O8C-B20-038"
+      ]
+    },
+    {
+      "start": 182790,
+      "end": 182794,
+      "role": "Prompt",
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE",
+      "span_sha256_utf8": "c869ad2712205d678d469819d1394c5a6c70726e73cc704ad1eef891bb40a13f",
+      "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+      "record_ids": [
+        "O8C-B20-039"
+      ]
+    },
+    {
+      "start": 182795,
+      "end": 186394,
+      "role": "Response",
+      "disposition": "OPEN_AT_MACRO_END",
+      "span_sha256_utf8": "9fb92b1e5554bafad3e0f3a8b5159ce21b7e44f72df91e860281efeb26cd77e2",
+      "blob_sha1": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+      "record_ids": [
+        "O8C-B20-040",
+        "O8C-B20-041",
+        "O8C-B20-042",
+        "O8C-B20-043",
+        "O8C-B20-044",
+        "O8C-B20-045",
+        "O8C-B20-046",
+        "O8C-B20-047",
+        "O8C-B20-048",
+        "O8C-B20-049",
+        "O8C-B20-050",
+        "O8C-B20-051",
+        "O8C-B20-052",
+        "O8C-B20-053",
+        "O8C-B20-054",
+        "O8C-B20-055"
+      ]
+    }
+  ],
+  "axis_coverage": {
+    "assessed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "represented": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "unrepresented": [
+      21
+    ],
+    "note": "Avaliação dos 30 eixos, incluindo diretrizes autorais separadas; eixo 21 nenhuma exploração de dungeon comprovada, conforme fila; edifícios históricos e galerias de conservação não classificados como dungeon. Planejamentos do assistente não são fatos. Agrupado, não exaustivo."
+  },
+  "continuity": {
+    "from": {
+      "day": 213,
+      "chapter": 13,
+      "line": 176299,
+      "open_response": true,
+      "book": "III"
+    },
+    "to": {
+      "day": 215,
+      "chapter": 15,
+      "line": 186395,
+      "open_response": true,
+      "next_macro_id": "24d8ff8c2e2192a43463c455cb4f61904a664470de81a6967c0ecdc611624aa3",
+      "book": "III"
+    }
+  },
+  "historical_state_transitions": [
+    {
+      "day": 213,
+      "subject": "power",
+      "state": "Confronto Alvorada Cinzenta: painéis temporários interligados a partir de matéria da mochila protegem tripulação de projéteis, rapidez e estabilidade acima dos primeiros meses, consumo finito. Não afunda adversário.",
+      "evidence": {
+        "record_id": "O8C-B20-001",
+        "line_start": 176299,
+        "line_end": 176373,
+        "span_sha256_utf8": "06773ff70751e38752e63084a32c79dd57defaa41c5c0ac165e0b84a7d62f2b6"
+      }
+    },
+    {
+      "day": 213,
+      "subject": "combat",
+      "state": "Miren identifica condução ativa da interferência fluvial, contrafase limitada com Sélia desfaz referência adversária; Lucas sinaliza passagem, Maira/Tomren coordenam apoio. Agressores recuam, sem perseguição, painel deformado.",
+      "evidence": {
+        "record_id": "O8C-B20-002",
+        "line_start": 176374,
+        "line_end": 176542,
+        "span_sha256_utf8": "50e57ba9e56d457930392f6ec81465eb467d1e583a4312030e0c1b2b34fae530"
+      }
+    },
+    {
+      "day": 213,
+      "subject": "rescue",
+      "state": "Mensageira protegida passa à Bruma Clara, cilindro de cobre preservado; marinheiro ferido consciente e atendido. Miren exausta sem ferimento, casal se abraça; não novo poder.",
+      "evidence": {
+        "record_id": "O8C-B20-003",
+        "line_start": 176544,
+        "line_end": 176647,
+        "span_sha256_utf8": "2f61f658d3364c18f3b954fc103dae88f252f69be11a6ea9d0624b2b02555b57"
+      }
+    },
+    {
+      "day": 213,
+      "subject": "investigation",
+      "state": "15h38 Tessa Morven mensageira, sem parentesco conhecido com Tessa Arin. Cilindro destinado à inspeção Maré Baixa não aberto por Maira. Aviso autorizado: duas Vesperais incompatíveis em horários/locais, possível identidade duplicada ou fraude; ordem anterior não autenticada.",
+      "evidence": {
+        "record_id": "O8C-B20-004",
+        "line_start": 176648,
+        "line_end": 176764,
+        "span_sha256_utf8": "8144ea445904ece52618baf8154f514b4e195ab8cc38adbc172e2b4a75c0e747"
+      }
+    },
+    {
+      "day": 213,
+      "subject": "investigation",
+      "state": "Colega de Tessa desapareceu semanas atrás após aviso semelhante, trabalhou seis anos com ela; fuga ou captura desconhecida. Maira escolhe acompanhar Alvorada sob condições; alteração de identificação durante transbordo é pista, não prova.",
+      "evidence": {
+        "record_id": "O8C-B20-005",
+        "line_start": 176765,
+        "line_end": 176883,
+        "span_sha256_utf8": "e17835bf4873194cf7c72c6ed6e01d85166b9fc38c07b65779a543363c4526be"
+      }
+    },
+    {
+      "day": 213,
+      "subject": "geography",
+      "state": "17h26 Entreposto da Maré Baixa: torre clara, níveis da água, canais salobros; primeiro cheiro de sal, não oceano aberto. Junna Arel grisalha de trança longa recebe cilindro formalmente e organiza confronto de registros/testemunhos; ferido encaminhado.",
+      "evidence": {
+        "record_id": "O8C-B20-006",
+        "line_start": 176884,
+        "line_end": 177135,
+        "span_sha256_utf8": "fd489c8878fb28f573f3f98d34691a8e00ae9fd2643586a290ac5297bdf6d48d"
+      }
+    },
+    {
+      "day": 213,
+      "subject": "investigation",
+      "state": "18h34 Sala Marcas Navais: registros de entrada e características de cascos divergem; agente associado à Companhia do Lastro apresentou autorização, não Márlo diretamente. Distinguir operações legítimas de fraude.",
+      "evidence": {
+        "record_id": "O8C-B20-007",
+        "line_start": 177136,
+        "line_end": 177235,
+        "span_sha256_utf8": "f5c59e874cace4ec589ec7aca5079dd01af8f41897b229651aff13785416a9ce"
+      }
+    },
+    {
+      "day": 213,
+      "subject": "artifact",
+      "state": "Memória do Horizonte registra projeção de reproduções autorizadas de páginas, não substitui originais. Campo autoridade de garantia da carga reservada com selo e número anômalos, referência Calderva e sistema marítimo antigo; não prova identidade do escoltado nem autenticidade. Junna preserva documentação.",
+      "evidence": {
+        "record_id": "O8C-B20-008",
+        "line_start": 177236,
+        "line_end": 177440,
+        "span_sha256_utf8": "60ff964981f3135f466a0cda9933ea0a446e8fbe4cc386896a31c01ee1531d1e"
+      }
+    },
+    {
+      "day": 213,
+      "subject": "exploration",
+      "state": "20h11 Lumeira: registra duas rotas, superior promissora para cargas, casa sobre raízes adaptadas; Éria conhece moradora (tia), interesse em visitar Três Arcos, Káiron e Rael compartilham constelações, autonomia.",
+      "evidence": {
+        "record_id": "O8C-B20-011",
+        "line_start": 177758,
+        "line_end": 177889,
+        "span_sha256_utf8": "396dce71e023fbbdfb0287b64775e625af3c7223be5217c32d7d3c1b8b20fcc6"
+      }
+    },
+    {
+      "day": 213,
+      "subject": "relationship",
+      "state": "21h07 Terraço dos Pilotos: registro autorizado no cristal usando torre, marcas de nível, rocha e canais, projeção aproximada; não localização global. Saudade dos amigos, Leviatã como transporte de pessoas/conhecimento; Miren deseja varanda no laboratório.",
+      "evidence": {
+        "record_id": "O8C-B20-012",
+        "line_start": 177890,
+        "line_end": 178165,
+        "span_sha256_utf8": "2d260534119cadb02fed74885f4555dc0167594cec56a0c828993051d9da3963"
+      }
+    },
+    {
+      "day": 214,
+      "subject": "relationship",
+      "state": "05h28 Hospedaria dos Pilotos: sal lembra Terra; Lucas não quer trocar família/cidade por mundo antigo. Documento experimental de viagem e desejo de trazer amigos ao oceano.",
+      "evidence": {
+        "record_id": "O8C-B20-016",
+        "line_start": 178409,
+        "line_end": 178616,
+        "span_sha256_utf8": "b4c45cbba0c77c86a19490ef987e09d78be68e45b5bbd201484be7db6c69952d"
+      }
+    },
+    {
+      "day": 214,
+      "subject": "diplomacy",
+      "state": "06h41 Junna confirma inconsistência parcial dos cascos fluvial e costeiro, transferência possível, escoltado não identificado. Sem autorização de perseguição armada. Nável Ardon, piloto costeiro, cabelos pretos/brancos, pele marcada pelo sol e cicatriz na sobrancelha, comanda Falcão da Espuma.",
+      "evidence": {
+        "record_id": "O8C-B20-017",
+        "line_start": 178617,
+        "line_end": 178856,
+        "span_sha256_utf8": "753d4168189fb0796d473ea1ea3418762787c8a124a07e5e63c1f0ecb937dd78"
+      }
+    },
+    {
+      "day": 214,
+      "subject": "technology",
+      "state": "08h12 Falcão da Espuma: veleiro de trabalho de dois mastros, casco reforçado, proa alta. Yra navegadora de marés ruiva/trança/tatuagem azul; Ferran manutenção, Loris sinais/velas. Régua de maré arcana usa minerais e observação, não previsão perfeita. Maira mantém Bruma Clara; 08h47 partida autorizada por Nável.",
+      "evidence": {
+        "record_id": "O8C-B20-018",
+        "line_start": 178857,
+        "line_end": 179092,
+        "span_sha256_utf8": "94d438f49259af38c3eace28b9cb59577145f8cfa5134b57756c6771bbd4a107"
+      }
+    },
+    {
+      "day": 214,
+      "subject": "exploration",
+      "state": "10h19 primeira visão do oceano aberto após promontórios. Lucas e Miren celebram; Gênese responsiva, ele decide admirar sem manifestar. Miren nunca viu mar daquela forma.",
+      "evidence": {
+        "record_id": "O8C-B20-019",
+        "line_start": 179093,
+        "line_end": 179304,
+        "span_sha256_utf8": "8899d7219f44b4065156027a4874c890fa8f164d16b6194212405f8f514ded0e"
+      }
+    },
+    {
+      "day": 214,
+      "subject": "bestiary",
+      "state": "Três Cantoras do Abismo Claro observadas, corpo escuro maior que veleiro, marcas luminosas, nadadeiras, canto grave com magia. Risco por proximidade, normalmente não confrontam; comunicação não compreendida. Leviatã imaginado como cidade navegante, não construído.",
+      "evidence": {
+        "record_id": "O8C-B20-020",
+        "line_start": 179305,
+        "line_end": 179460,
+        "span_sha256_utf8": "b2906fadaf0ec3aba6ae5c8b45c049e706ab844c026da7c61dbb21fd0730ccdd"
+      }
+    },
+    {
+      "day": 214,
+      "subject": "bestiary",
+      "state": "11h43 Pilares Brancos, Jardins da Maré: minerais e organismos luminosos expostos pelo recuo da água, conchas, plantas e seres semelhantes a estrelas; referência auxiliar de pilotos. Cristal registra condição visível com permissão, não carta validada/profundidade.",
+      "evidence": {
+        "record_id": "O8C-B20-021",
+        "line_start": 179461,
+        "line_end": 179630,
+        "span_sha256_utf8": "3f24d2cf8d713e7ccb34a9d62a156652a7e9b4c00e025a29b30048365c172683"
+      }
+    },
+    {
+      "day": 214,
+      "subject": "infrastructure",
+      "state": "Marco de sinalização danificado, refletor quebrado e corrente removida; sem atividade arcana ativa detectada à distância. Registro e aviso aos responsáveis, sem reforma não autorizada.",
+      "evidence": {
+        "record_id": "O8C-B20-022",
+        "line_start": 179631,
+        "line_end": 179722,
+        "span_sha256_utf8": "dfe9f4deea221a50253c999ee1879b25b2fa249d1b8d4bed8ebc87ddb9012eac"
+      }
+    },
+    {
+      "day": 214,
+      "subject": "combat",
+      "state": "13h26 Enseada do Sino Partido: barco escuro sem bandeira identificável exige recuperação privada; pescadores pedem socorro. Nável escolhe assistência; vínculo Lastro não comprovado. Ataque e interferência ameaçam tripulação.",
+      "evidence": {
+        "record_id": "O8C-B20-023",
+        "line_start": 179723,
+        "line_end": 179944,
+        "span_sha256_utf8": "9d71785955fadc48dcb9bd268e97c2e33c9343435f7055545939c99e7f7b488a"
+      }
+    },
+    {
+      "day": 214,
+      "subject": "combat",
+      "state": "Encadeamento Matricial I cria painéis fixados com autorização técnica, impacto deforma metal e transmite esforço. Miren/Yra identificam fluxo estável fora da perturbação, Nável manobra; não controle total da corrente.",
+      "evidence": {
+        "record_id": "O8C-B20-024",
+        "line_start": 179945,
+        "line_end": 180106,
+        "span_sha256_utf8": "683747c97afd78b965d0cf3bebc99a63d313ffe7b27f0b9260e3c03998c577bb"
+      }
+    },
+    {
+      "day": 214,
+      "subject": "rescue",
+      "state": "Plataforma flutuante e tirante de apoio ajustadas pela equipe permitem salvar três pescadores; um ferimento significativo na perna, outros contusões/exaustão. Barco perdido, agressores recuam, sem captura ou perseguição.",
+      "evidence": {
+        "record_id": "O8C-B20-025",
+        "line_start": 180107,
+        "line_end": 180320,
+        "span_sha256_utf8": "f7cdefd6b38b8ae991813594a90c4204a187b8b9f45747a20ed34b567e972b3c"
+      }
+    },
+    {
+      "day": 214,
+      "subject": "power",
+      "state": "Sistema registra Arquitetura Protetiva Modular: combinação de capacidades existentes, proteção/resgate sob supervisão, matéria e energia finitas, danos e esforço no casco. Não novo poder independente. Primeira experiência marítima real.",
+      "evidence": {
+        "record_id": "O8C-B20-026",
+        "line_start": 180321,
+        "line_end": 180454,
+        "span_sha256_utf8": "31453fa1233191145c344a621759df5431d950a525a62e65e8b02023275552fd"
+      }
+    },
+    {
+      "day": 214,
+      "subject": "character",
+      "state": "15h04 Talya Feren, cerca de 30 anos, cabelos castanhos, pele ao sol, cicatriz queixo; barco era do pai ferido. Relata taxas de proteção e âncora incompleta semelhante (não idêntica confirmada), autorizações de pesca legítimas.",
+      "evidence": {
+        "record_id": "O8C-B20-027",
+        "line_start": 180455,
+        "line_end": 180616,
+        "span_sha256_utf8": "753f496a75068de51d22c91059d96164b3e4eebe129c371d36d251dd662f6bc0"
+      }
+    },
+    {
+      "day": 214,
+      "subject": "investigation",
+      "state": "Teo, irmão de Talya, viu nome Vesperal pintado sobre outro em ancoradouro exterior, nome anterior desconhecido; cobranças depois da intenção de denunciar. Família do Bairro das Correntes, Oren ensinou pai a reparar barco. Talya oferece contato com moradores.",
+      "evidence": {
+        "record_id": "O8C-B20-028",
+        "line_start": 180617,
+        "line_end": 180802,
+        "span_sha256_utf8": "a5c53c9d2e690b9336f1ea986b5cf2e6cc86541027d06099e5cc590a4242b316"
+      }
+    },
+    {
+      "day": 214,
+      "subject": "geography",
+      "state": "18h16 Golfo de Calderva: cidade grande entre mar/montanhas, muralhas, canais, nove pontes monumentais, torres cobre, armazéns, docas e estaleiros vivos apesar de deterioração. Farol da Coroa apagado, lente escura, custo alegado; causa ainda não verificada.",
+      "evidence": {
+        "record_id": "O8C-B20-029",
+        "line_start": 180803,
+        "line_end": 181120,
+        "span_sha256_utf8": "9ee87e474958f677d4eefdebf9bd7e1e6ca2967e5eaa799d79888155046d14d6"
+      }
+    },
+    {
+      "day": 214,
+      "subject": "institution",
+      "state": "19h03 Doca das Redes Velhas: chegada formal, ocorrência e resgatados registrados, autorização de atracação. Documento de Três Arcos não automaticamente reconhecido, identidade confirmada por procedimentos locais. Pai atendido; Nável/Ferran inspecionam danos/custos.",
+      "evidence": {
+        "record_id": "O8C-B20-030",
+        "line_start": 181121,
+        "line_end": 181294,
+        "span_sha256_utf8": "6dd9fc46b051f173822d0c250d7538fbc902abd5119b7acd7f3adf0a602fb21c"
+      }
+    },
+    {
+      "day": 214,
+      "subject": "character",
+      "state": "Bairro Correntes: comércio, amuletos, música, avisos de cobrança e homens armados. Oren Falst, construtor idoso e mentor naval, acolhe Talya e discute com Lucas esforços de propulsão em casco de madeira; nenhuma encomenda/estaleiro firmado.",
+      "evidence": {
+        "record_id": "O8C-B20-031",
+        "line_start": 181295,
+        "line_end": 181610,
+        "span_sha256_utf8": "09b3a884a1c0bf68d444dc13364276662bce1600db659d6c23a0b836f3a29b1d"
+      }
+    },
+    {
+      "day": 214,
+      "subject": "investigation",
+      "state": "Celle Varin (capa marrom, grisalha) conhece viajantes na oficina; Elen Ross viva, acolhida Pouso Sete Cordas, registros preservados. Celle relata bilhete da Ala das Cartas; localização provável, identidade desconhecida.",
+      "evidence": {
+        "record_id": "O8C-B20-032",
+        "line_start": 181611,
+        "line_end": 181798,
+        "span_sha256_utf8": "d06aa26031f2f4b08c8a1d1c833881c44006d9b078749a2d287a73551780733c"
+      }
+    },
+    {
+      "day": 214,
+      "subject": "society",
+      "state": "20h37 Escada Três Lanternas, porta azul e ponte confirmam desenho do pai de Elen. Casa da Maré mantém nomes de desaparecidos, lema Nenhum fica para trás. Celle recusa divulgação detalhada da localização; bilhete examinado passivamente, não prova identidade. Cooperam sem invasão.",
+      "evidence": {
+        "record_id": "O8C-B20-033",
+        "line_start": 181799,
+        "line_end": 182146,
+        "span_sha256_utf8": "31e82269b3a0a216dd9afcad2f506143baaae75604bce30048e60a3fcd840822"
+      }
+    },
+    {
+      "day": 214,
+      "subject": "relationship",
+      "state": "22h03 Ponte Sétimo Arco: casal observa vida noturna e reconhece identidade marítima própria de Calderva, sem copiar Três Arcos nem impor dono. Beijo e esperança apesar do medo.",
+      "evidence": {
+        "record_id": "O8C-B20-035",
+        "line_start": 182311,
+        "line_end": 182482,
+        "span_sha256_utf8": "2ce61c62fae578336b6b24b4c7db48c6212ff05c36a08512ac53b3d5536dedea"
+      }
+    },
+    {
+      "day": 214,
+      "subject": "industry",
+      "state": "22h48 Forja monta e confere conjunto modular com componentes aprovados e referências físicas, sem Lucas. Repetibilidade/segunda bancada pendentes. Kael/Lysa mantêm gestão; Varo/Maelis conversam e dão as mãos; 300 vivos, Coração isolado.",
+      "evidence": {
+        "record_id": "O8C-B20-037",
+        "line_start": 182561,
+        "line_end": 182708,
+        "span_sha256_utf8": "da2a8620b21458c8f0433b265edecff6bbaf07200ccdc89ae92be202177961a7"
+      }
+    },
+    {
+      "day": 215,
+      "subject": "relationship",
+      "state": "06h12 Hospedaria Âncora Azul: acordam juntos, observam bomba quebrada; escolhem explorar e ajudar sem dívida nem substituir trabalhadores. Café/humor, não projeto civilizacional imposto.",
+      "evidence": {
+        "record_id": "O8C-B20-040",
+        "line_start": 182824,
+        "line_end": 183069,
+        "span_sha256_utf8": "ce730f60db354f6aea897306099fca1583790da92b35d106f54fabe0398c186c"
+      }
+    },
+    {
+      "day": 215,
+      "subject": "society",
+      "state": "07h24 Praça Poço Antigo: Mara trança escura, Hedran manutenção; com autorização, Lucas manifesta peça de transmissão conhecida a partir de material equivalente, Hedran testa e instala, bomba volta a fornecer água. Sem cobrança; manutenção/qualidade ainda responsabilidade local.",
+      "evidence": {
+        "record_id": "O8C-B20-041",
+        "line_start": 183070,
+        "line_end": 183435,
+        "span_sha256_utf8": "c1cd82a21d876ff9d8933ab2ea092c211aa33b0510e00c37d87bc57563aa90eb"
+      }
+    },
+    {
+      "day": 215,
+      "subject": "industry",
+      "state": "09h16 Rua Calafates: Bérion Tal ruivo, artesão, rejeita caridade. Reproduz engrenagem com autorização, corrige alinhamento e apoio com equipe; máquina corta madeira em ensaio, trabalho de dois aprendizes preservado, sem venda de máquina.",
+      "evidence": {
+        "record_id": "O8C-B20-042",
+        "line_start": 183436,
+        "line_end": 183699,
+        "span_sha256_utf8": "37f5d16137582019a0de9cbb2d98d291ce1ab2e80a1021419434fe6c422f5d88"
+      }
+    },
+    {
+      "day": 215,
+      "subject": "health",
+      "state": "10h38 Casa Saúde Santa Velha: Esme Raven, médica grisalha, examina arranhões de Lucas. Sem medicamento não validado. Articulação de equipamento de elevação substituída e verificada, uso supervisionado. Jona aprendiz de carpintaria em reabilitação da perna, sonha oficina; ferramentas adaptadas apenas proposta.",
+      "evidence": {
+        "record_id": "O8C-B20-043",
+        "line_start": 183700,
+        "line_end": 184045,
+        "span_sha256_utf8": "b2a9c90c8b29b2ba8133ae8a8470bc33ac3753a32b0b6e0dbb4b372ceac3d165"
+      }
+    },
+    {
+      "day": 215,
+      "subject": "investigation",
+      "state": "12h17 Arquivo Histórico: Adélia Vern possui responsabilidade parcial por coleções e autorização de inspeção inferior; planta municipal da Ala, ventilação e canais de água. Administração portuária contestada; áreas restritas não autorizadas. Propõe consultoria técnica.",
+      "evidence": {
+        "record_id": "O8C-B20-044",
+        "line_start": 184046,
+        "line_end": 184283,
+        "span_sha256_utf8": "3e385475fd8c7fe857ba320fb531da8b134b6a0b75a2d0d6659cef6425a3c843"
+      }
+    },
+    {
+      "day": 215,
+      "subject": "investigation",
+      "state": "14h06 galeria de conservação: ingresso autorizado, antigos canais acústicos/avisos testados sem energizar infraestrutura; com planta e ressonância identifica derivação possível, sinal discreto de chamada recebe resposta. Não mapa secreto nem entrada em cela.",
+      "evidence": {
+        "record_id": "O8C-B20-045",
+        "line_start": 184284,
+        "line_end": 184515,
+        "span_sha256_utf8": "e8084d88e12e8712a4acfea8b8101afbff899b88c4c9a99a08ace07d9ac4a6de"
+      }
+    },
+    {
+      "day": 215,
+      "subject": "character",
+      "state": "Voz feminina jovem e cansada confirma custódia, sem ferimento grave autodeclarado, outras movimentações sem prova de outros cativos. Pede ser chamada LIRA por enquanto; não identidade completa. Recebe alimento/água, teme, não confia plenamente; Lucas/Miren respeitam recusa de interrogatório.",
+      "evidence": {
+        "record_id": "O8C-B20-046",
+        "line_start": 184516,
+        "line_end": 184799,
+        "span_sha256_utf8": "883a826293b7c72aa6a102659d0ce257ccf7db2b236d280eafd24c490e424783"
+      }
+    },
+    {
+      "day": 215,
+      "subject": "relationship",
+      "state": "14h49 Lira não quer privilégio sobre outros desaparecidos; ouve lema. Relata transferência sem data/destino. Aceita tentar artefato ocultável e desligável, consentimento revogável; alcance desconhecido. Sem entrega concluída.",
+      "evidence": {
+        "record_id": "O8C-B20-047",
+        "line_start": 184800,
+        "line_end": 185091,
+        "span_sha256_utf8": "66bed032798ef4540734e53a20ee43bcb2d6cd67e7ae9597a7e4986472b847fa"
+      }
+    },
+    {
+      "day": 215,
+      "subject": "artifact",
+      "state": "15h31 pátio: dois núcleos cristalinos relacionados, botão/receptor e interrupção física; CREATION manifesta camadas mais detalhadas que especificação, esforço moderado/consumo. Ensaio curto detecta direção relativa; parede enfraquece e isolamento interrompe; sem nome, rosto, posição exata ou vigilância global.",
+      "evidence": {
+        "record_id": "O8C-B20-048",
+        "line_start": 185092,
+        "line_end": 185317,
+        "span_sha256_utf8": "a3f8b32c2c247d6fc93cf488ecbc639057f9bd1ffb3d2b89e217cc551aef1a59"
+      }
+    },
+    {
+      "day": 215,
+      "subject": "character",
+      "state": "Ivo Narel, guarda de cabelo escuro/cicatriz junto à orelha e filha, procura pesquisadores por pedido de Lira. Aceita apresentar botão em entrega sob sua responsabilidade se seguro; objeto fica com Ivo. Não entregue, não ativado, não confirmado que Ivo é o mesmo guarda em todos os trechos além do relato.",
+      "evidence": {
+        "record_id": "O8C-B20-049",
+        "line_start": 185318,
+        "line_end": 185511,
+        "span_sha256_utf8": "2a7e8f9eb5fc62e7b2306386b66e941521526743e2efcd6d615bdfff73f453a5"
+      }
+    },
+    {
+      "day": 215,
+      "subject": "power",
+      "state": "Sistema Elo do Horizonte I: aplicação experimental CREATION+ressonância matricial, direção curta demonstrada, desligamento físico, interferência/isolamento/dano/energia limitam. Sem localização global, interior ou pessoa sem dispositivo; teste fora do pátio pendente e consentido.",
+      "evidence": {
+        "record_id": "O8C-B20-050",
+        "line_start": 185512,
+        "line_end": 185525,
+        "span_sha256_utf8": "8e37a598e8ddb7eab25eafd6451ea3f3006e85de7aee682e0d9fd6e334fa1083"
+      }
+    },
+    {
+      "day": 215,
+      "subject": "crisis",
+      "state": "16h52 Quinto Arco Canal Oficinas: comporta sob interferência, barcaça carregada ameaça fundação, moradores em risco. Lucas ativa armadura viva, cria passagens de evacuação temporárias, Oren identifica apoios seguros; moradores executam evacuação própria.",
+      "evidence": {
+        "record_id": "O8C-B20-051",
+        "line_start": 185526,
+        "line_end": 185763,
+        "span_sha256_utf8": "1e1bdc6aeb0020110a40577455555d6d0594341e5bb8bc80c53a84546117cc4b"
+      }
+    },
+    {
+      "day": 215,
+      "subject": "power",
+      "state": "Dasha Renn, cabelos brancos/trança/roupas azuis, responsável por águas internas. Identifica referência falsa com Miren, que usa própria análise treinada, não Sistema de Lucas. Contrafase limitada contra injeção externa; autoria não estabelecida.",
+      "evidence": {
+        "record_id": "O8C-B20-052",
+        "line_start": 185764,
+        "line_end": 185831,
+        "span_sha256_utf8": "bb3dc7c6cf2a3abaed45cf09a33a1638ef5eeecd543fb7882abbb2c822dff32e"
+      }
+    },
+    {
+      "day": 215,
+      "subject": "rescue",
+      "state": "Arco dourado temporário de dezenas de componentes, braços arqueados e módulos flutuantes, materiais da mochila e recuperáveis; Oren e operadores distribuem esforço e estabilizam barcaça sem choque na ponte. Miren/Dasha restauram controles, responsáveis fecham gradualmente. Duas pessoas feridas, nenhuma morte constatada, danos e investigação.",
+      "evidence": {
+        "record_id": "O8C-B20-053",
+        "line_start": 185832,
+        "line_end": 186097,
+        "span_sha256_utf8": "25c116435be12283eda2125d0f5fb502a9cb015c0452665a69a4b1f043174354"
+      }
+    },
+    {
+      "day": 215,
+      "subject": "relationship",
+      "state": "Oren emocionado com ação colaborativa quer conhecer Brannik. Não nova habilidade automática; tradição própria de Calderva prestes a ser revelada.",
+      "evidence": {
+        "record_id": "O8C-B20-054",
+        "line_start": 186098,
+        "line_end": 186155,
+        "span_sha256_utf8": "b4f9dfcadf8710ec1060d54d695426447a9e481f2787aec2b48539c1c001720f"
+      }
+    },
+    {
+      "day": 215,
+      "subject": "culture",
+      "state": "18h09 Lucas cansado após parcela importante da reserva, água e descanso. Dasha ativa sino/matriz cívica do Quinto Arco, demais oito respondem por responsáveis locais, luz azul/dourada e canção; rede distribuída independente da Gênese, não tecnologia dos Arquitetos confirmada. Cena aberta com Miren.",
+      "evidence": {
+        "record_id": "O8C-B20-055",
+        "line_start": 186156,
+        "line_end": 186394,
+        "span_sha256_utf8": "e0c8240b70de482ed7354336680168ee0443c8767480bc93f2abff8da038a072"
+      }
+    }
+  ],
+  "deferred_review": [
+    {
+      "issue": "Vesperal duplicada, selo antigo, suspeitas Lastro, testemunhos de Tessa/Teo/Talya: não concluir autoria ou identidade da pessoa escoltada.",
+      "action": "Conservar fontes e hipóteses distintas; reconciliação posterior."
+    },
+    {
+      "issue": "Lira nome provisório, Ivo recebe Elo I mas entrega/ativação não comprovadas. Tessa Morven distinta de Tessa Arin. Prisioneira/guarda em cenas restritas.",
+      "action": "Preservar identidade em aberto e conhecimento por perspectiva."
+    },
+    {
+      "issue": "Arquitetura Protetiva Modular aplicação de poderes existentes; Elo do Horizonte I experimental, sem rastreamento global; arco dourado temporário. D215 nove arcos rede cívica local, sem confirmação de vínculo com Arquitetos.",
+      "action": "Registrar estado temporal; não reduzir poder futuro nem ampliar por inferência."
+    },
+    {
+      "issue": "Calderva cidade independente, Farol apagado, Leviatã e Porto do Horizonte ainda projetos; D199 quarentena O8C-B14-038 preservada.",
+      "action": "Não promover candidatos nem alterar cânone; revisão global D579."
+    }
+  ],
+  "review_policy": {
+    "mode": "RECOVER_FIRST_REVIEW_AT_CURRENT_DAY",
+    "user_authorized": true,
+    "description": "Recover and append historical data in chronological source order, track evolving facts and preserve previous states; defer global reconciliation, refactors, semantic deduplication, final regression suite and canon promotion until historical intake reaches D579. Minimal per-write source, role, range, hash and readback safeguards remain.",
+    "no_current_story_action": true
+  },
+  "verification": {
+    "source_anchor_count": 55,
+    "section_count": 5,
+    "source_ranges_contiguous": true,
+    "prior_receipt_hash_verified": true,
+    "prior_candidates_checkpoint_count": 1460,
+    "prior_candidate_files_unchanged_by_patch": false,
+    "queue_hash_verified": true,
+    "checkpoint_hash_verified": true,
+    "role_integrity": true,
+    "unique_ids": true,
+    "previous_span_anchor_verified": true,
+    "controller_review_not_exhaustive": true,
+    "native_semantic_receipt_validation": "DEFERRED_FOR_NEW_FORMAT",
+    "independent_review": false,
+    "source_hashes_manifest_previously_verified_not_recomputed": true
+  },
+  "canon_changed": false,
+  "semantic_certification": false,
+  "promotion": false,
+  "next_line": 186395
+}
