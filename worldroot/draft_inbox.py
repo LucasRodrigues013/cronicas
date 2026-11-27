@@ -324,6 +324,7 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
                 "preparation_sha256": rr["preparation_sha256"],
                 "receipt_sha256": rr["editorial"]["receipt_sha256"],
                 "review_sha256": sha(_bytes(rr)),
+                "memory_review_sha256": sha(review_files["memory_r32.json"]),
             }
             files["manifesto_imutavel.json"] = _bytes(manifest)
     if existing_manifest.is_file():

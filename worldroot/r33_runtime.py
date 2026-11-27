@@ -41,6 +41,22 @@ def author_context(root,head):
     if manifest["original_readback_sha256"]!=head.get("source_sha256"):raise ValueError("Draft source mismatch")
     return {"choice":choice,"choice_sha256":digest(choice),"menu_sha256":sha((root/"episodes"/ident/"draft/opcoes.json").read_bytes()),"closure_sha256":digest(closure),"policy_sha256":sha(POLICY_PATH.read_bytes())}
 EDITORIAL_BUDGET = 1700
+MANDATORY_CONTEXT_IDS = frozenset(("P01","P19","P08","P36","P15","P33","P68","P121","P122"))
+
+
+def require_editorial_coverage(receipt):
+    # Representation is only a cue, not proof of application.
+    coverage = receipt.get("coverage", {})
+    if not MANDATORY_CONTEXT_IDS <= set(coverage.get("represented_rule_ids", ())):
+        raise ValueError("Mandatory editorial context absent from preparation")
+
+
+def require_current_contract(request):
+    """R36 production retains metadata 35 and v22 refinements; historical readback is separate."""
+    plan = request.get("r35_plan")
+    if (not isinstance(request.get("r34_intent"), dict) or not isinstance(plan, dict)
+            or not isinstance(plan.get("refinement"), dict)):
+        raise ValueError("New preparation requires R34 intent, R35 plan and v22 refinement")
 
 
 def preparation_required(root, ident, payload=None):
@@ -52,7 +68,8 @@ def preparation_required(root, ident, payload=None):
     if any(p.exists() or p.is_symlink() for p in paths):
         return True
     payload = payload or {}
-    return (payload.get("metadata", {}).get("worldroot_revision") in (33,34,35)
+    meta = payload.get("metadata")
+    return ((isinstance(meta, dict) and meta.get("worldroot_revision") in (33,34,35))
             or any(k in payload for k in ("r33_review","r34_review","r35_review")))
 
 
@@ -84,6 +101,7 @@ def verify_preparation_editorial(packet, payload, head, *, historical=False):
     else:
         result = verify_editorial_receipt(receipt, head, load_policy(), pin,
                                           expected_budget=EDITORIAL_BUDGET)
+    require_editorial_coverage(receipt)
     return {**result, "receipt_sha256": pin}
 
 
@@ -109,6 +127,7 @@ def preparation(root,head,delivery_id,requirements,reviewed,domain_review,scene_
     if report["status"]!="REVIEWED_EVIDENCE_THRESHOLD_MET":raise ValueError("Memory threshold or critical evidence failed")
     result={"schema":"worldroot-r33-preparation-v1","project":"CRONICAS_DE_UM_NOVO_MUNDO","delivery_id":delivery_id,"head":head,"authority":auth,"requirements":requirements,"reviewed":reviewed,"domain_review":domain_review,"scene_plan":scene_plan,"memory":report,"canon_changed":False,"semantic_certification":False}
     editorial = prepare_editorial_receipt(head, load_policy(), EDITORIAL_BUDGET)
+    require_editorial_coverage(editorial)
     result["editorial_receipt"] = editorial
     result["editorial_receipt_sha256"] = editorial["receipt_sha256"]
     result["preparation_sha256"]=digest(result)
@@ -133,6 +152,7 @@ def prepare_from_request(root,request):
     if request.get("schema")!="worldroot-r33-request-v1" or request.get("project")!="CRONICAS_DE_UM_NOVO_MUNDO":raise ValueError("Invalid request/project")
     ident=request["delivery_id"];check_id(ident)
     if read(Path(root)/"requests"/(ident+".json"))!=request:raise ValueError("Request must be persisted before preparation")
+    require_current_contract(request)
     packet=preparation(root,request["head"],ident,request["requirements"],request["reviewed"],request["domain_review"],request["scene_plan"])
     if packet["authority"]["choice_sha256"]!=request.get("choice_sha256"):raise ValueError("Request choice differs")
     if "r34_intent" in request:
@@ -162,6 +182,12 @@ def verify_submission(root,head,payload):
     if author_context(root,head)!=packet["authority"]:raise ValueError("Changed source authority")
     request=read(Path(root)/"requests"/(ident+".json"))
     if digest(request)!=packet.get("request_sha256"):raise ValueError("Preparation request changed")
+    require_current_contract(request)
+    if (packet.get("r34_intent") != request["r34_intent"]
+            or packet.get("r35_plan") != request["r35_plan"]
+            or payload.get("metadata", {}).get("worldroot_revision") != 35
+            or not all(isinstance(payload.get(k), dict) for k in ("r32_review","r34_review","r35_review"))):
+        raise ValueError("Prepared R35 submission cannot omit reviews or downgrade")
     review=payload.get("r33_review")
     if not isinstance(review,dict) or review.get("preparation_sha256")!=recorded:raise ValueError("Preparation not bound to submission")
     editorial = verify_preparation_editorial(packet, payload, head)
@@ -181,7 +207,7 @@ def verify_submission(root,head,payload):
     from .character_design import verify_binding
     design=verify_binding(root,request,packet)
     r=release_review(root,head,payload)
-    extra={"editorial": editorial}
+    extra={"editorial": editorial,"submission_sha256":digest(payload)}
     from .live_codex import validate_submission as validate_codex_submission
     codex=validate_codex_submission(root,request,packet,payload)
     if codex is not None:extra.update(codex)
@@ -230,12 +256,25 @@ def verify_archived_preparation(root, ident, payload=None, *, current_head=None)
         if current_head is not None and current_head != prep["head"]:
             raise ValueError("Stale editorial source HEAD")
         editorial = verify_preparation_editorial(prep, inbox, prep["head"], historical=True)
+        require_current_contract(request)
+        memory = read(root/"episodes"/ident/"review/memory_r32.json")
+        memory_body = dict(memory)
+        memory_input = memory_body.pop("review_input_sha256", None)
+        memory_source = memory_body.pop("source_sha256", None)
+        if (memory_input != digest(inbox.get("r32_review"))
+                or memory_source != manifest["original_readback_sha256"]
+                or memory_body != receipt.get("r32")):
+            raise ValueError("Archived R32 preparation review binding mismatch")
         expected_marker = {"preparation_sha256": seal,
                            "receipt_sha256": editorial["receipt_sha256"],
-                           "review_sha256": digest(receipt)}
+                           "review_sha256": digest(receipt),
+                           "memory_review_sha256": digest(memory)}
         if (marker != expected_marker or receipt.get("editorial") != editorial
                 or receipt.get("review_input_sha256") != digest(inbox.get("r33_review"))
+                or receipt.get("submission_sha256") != digest(inbox)
                 or draft.metadata != inbox.get("metadata")
+                or draft.prose != inbox.get("prose")
+                or draft.full_text != inbox.get("full_text")
                 or ("r34_intent" in prep and "r34" not in receipt)
                 or ("r35_plan" in prep and "r35" not in receipt)):
             raise ValueError("Archived editorial preparation binding mismatch")

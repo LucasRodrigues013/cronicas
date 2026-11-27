@@ -176,8 +176,10 @@ def build_live_brief(head: dict, policy: dict, max_chars: int = 1700) -> dict:
         "R30: fichas e corpus, romance adulto não gráfico, sentidos, vozes e emoção; causalidade, bastidores fora da prosa, escolhas R30.",
         "Informação e deslocamentos só com evidência; planejamento não é fato narrado.",
     ]
+    lines.insert(4, "SEM IMAGENS: cabeçalho, calendário, hora/local, checkpoint e cinco escolhas com controles funcionais; preflight UX01–UX12.")
     policies = {r.get("id"): r for r in policy.get("rules", []) if isinstance(r, dict) and r.get("active")}
     selected = [rid for rid in EDIT_RULES if rid in policies]
+    selected.extend(rid for rid in ("P01","P19") if rid in policies and rid not in selected)
     if all(rid in policies for rid in ("P106","P107","P108","P109")):
         lines.insert(4, "R31: recuperar 95% dos requisitos por criação e 100% críticos; uma rota principal, três secundárias de igual valor e ação livre; nenhuma domina.")
         selected.extend(rid for rid in ("P106","P107","P108","P109") if rid not in selected)
@@ -199,12 +201,13 @@ def build_live_brief(head: dict, policy: dict, max_chars: int = 1700) -> dict:
     prefixes = (
         ("Preservar CREATION", ("P06","P07","P08","P36")),
         ("Priorizar cenas", ("P02","P28","P85","P123")),
-        ("Voz de Lucas", ("P04","P35","P127")),
+        ("Voz de Lucas", ("P04","P35")),
+        ("SEM IMAGENS:", ("P01","P19")),
         ("Remover linguagem", ("P104","P129")),
         ("Variar ação", ("P09","P13","P42","P74","P76")),
         ("R28:", ("P82","P83","P84","P85","P86","P87")),
         ("R29:", ("P89","P90","P91","P93","P96","P97")),
-        ("R30:", ("P99","P100","P101","P102","P103","P104","P105")),
+        ("R30:", ("P100","P101","P102","P103","P104","P105")),
         ("R31:", ("P106","P107","P108","P109")),
         ("R33:", ("P110","P111","P112","P113","P114","P115")),
         ("R34:", ("P116","P117","P118","P119","P120")),
@@ -219,7 +222,7 @@ def build_live_brief(head: dict, policy: dict, max_chars: int = 1700) -> dict:
     # Preserve the identity, full-power/agency cue and authority boundary.
     # Prioritize lived narrative and voice alongside the newer R35/R33 cues.
     required = (0, 1, 2, 3, len(lines)-1)
-    priority_prefixes = ("Voz de Lucas", "Priorizar cenas", "R35 refinada:",
+    priority_prefixes = ("SEM IMAGENS:", "Voz de Lucas", "Priorizar cenas", "R35 refinada:",
                          "R35:", "R34:", "R33:", "R31:", "Variar ação")
     priority = [i for prefix in priority_prefixes for i,line in enumerate(lines)
                 if line.startswith(prefix)]

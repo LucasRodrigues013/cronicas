@@ -134,6 +134,12 @@ class ProductionEditorialIntegration(unittest.TestCase):
         with patch.object(runtime, "load_policy", side_effect=AssertionError("Do not replay current policy")):
             self.assertEqual(runtime.verify_history(self.root)["verified_r33_receipts"], 1)
         self.assertEqual(self.prep_path.read_bytes(), before)
+        altered = copy.deepcopy(payload)
+        altered["editorial_tags"] = ["ALTERED"]
+        self.inbox_path.write_bytes(canonical(altered))
+        with self.assertRaises((ValueError, GateError)):
+            runtime.verify_history(self.root)
+        self.inbox_path.write_bytes(canonical(payload))
         sidecar = self.root/"episodes"/self.ident/"review/preparation_r33.json"
         sidecar.unlink()
         with self.assertRaises((ValueError, GateError)):
