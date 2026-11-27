@@ -1,0 +1,975 @@
+{
+  "schema": "r36-book-iii-candidate-delta-v1",
+  "status": "DRAFT_PENDING_NATIVE_VALIDATION_AND_AUTHOR_APPROVAL",
+  "base_archive": "db53de0f7f58acc12da2c706dbeff5745cd83206",
+  "base_registry_blobs": [
+    "7eabe936795808d65a6a2f8c12a742475a9a3605",
+    "db6190d652c35e87ad8c6f670de077e3b13b816e"
+  ],
+  "b001_delta": [
+    {
+      "registry": "world",
+      "id": "seral",
+      "field": "history",
+      "before": {
+        "value": "Não estabelecido nas fontes examinadas; recuperar antes de afirmar como fato.",
+        "status": "PENDENTE_FONTE",
+        "origin": {
+          "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+          "entity_id": "seral"
+        },
+        "justification": "Tratado estruturalmente, sem completar conteúdo sem base.",
+        "scope": "EDITORIAL",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+      },
+      "after": {
+        "value": "Não estabelecido nas fontes examinadas; recuperar antes de afirmar como fato.",
+        "status": "PENDENTE_FONTE",
+        "origin": {
+          "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+          "entity_id": "seral"
+        },
+        "justification": "Tratado estruturalmente, sem completar conteúdo sem base.",
+        "scope": "EDITORIAL",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "historical_observations": [
+          {
+            "book": 3,
+            "value": "No início do Livro III, mapas comerciais sugeriam conexão costeira, sem rota navegável confirmada; entreposto fluvial narrado com localização desconhecida de Três Arcos; D209 ligação à rede sustentada por relatos e cartas parciais.",
+            "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+            "scope": "HISTORICAL_OBSERVATION",
+            "evidence": [
+              {
+                "id": 569,
+                "line": 135881,
+                "anchor_sha256": "6588750467f30b781cd919c7e17d2d422e0e3ad29ca172a0fdab10a7a2ff5939",
+                "anchor": "— E sabemos se o Seral chega ao mar?"
+              },
+              {
+                "id": 572,
+                "line": 137985,
+                "anchor_sha256": "94cea8b51bf88f9e3fd5b2d11ebff6793b9e63799f135f382367b07981068c89",
+                "anchor": "22h06 | Entreposto fluvial de Seral — localização ainda desconhecida de Três Arcos"
+              },
+              {
+                "id": 579,
+                "line": 139328,
+                "anchor_sha256": "f81aea5cac90ee094929a781387bc10f414d85ef617d85c8d7ccb2a83e05f69d",
+                "anchor": "— E sabemos que há atividade marítima associada a essa referência. Não sabemos se uma embarcação poderia sair diretamente do Seral e chegar até lá."
+              },
+              {
+                "id": 598,
+                "line": 164550,
+                "anchor_sha256": "da949936e7b6f2c90e48965b1ee7dfc045d806f27cbb0115c0be4540dbeeb481",
+                "anchor": "Os marcos VII e VIII e o povoado foram observados diretamente. A continuação rumo à rede do Seral é sustentada por informações comerciais locais e cartas parciais, ainda não por um levantamento completo da expedição."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "registry": "characters",
+      "id": "naira",
+      "field": "history",
+      "before": {
+        "value": "Histórico ainda não consolidado; não fabricar biografia passada.\n\nLivro II, D168–169 — Naira nasceu na criação simultânea com Aurel e Elion no D168, após a qual Lucas desbloqueou Gênese Coordenada I; escolheu o próprio nome. Pessoa livre, não ferramenta ou soldado compulsório. Expressou curiosidade por água e drenagem, interesse em conhecer engenheiros e estação de água; D169 aceitou convite para estudos de projeto ao lado de profissionais, sem responsabilidade exclusiva. Não retroage seu cargo posterior de comandante de ARGOS.\n\nLivro II, D200 — No festival recebeu de Lucas uma pequena escultura de madeira representando três canais de água convergindo num jardim, com inscrição que homenageava sua contribuição à água e à vida. Recordaram o primeiro projeto de drenagem. Não inferir custódia atual ou nova obra executada.",
+        "status": "PENDENTE_FONTE",
+        "origin": [
+          {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "comandante de ARGOS",
+            "observations": 1,
+            "legacy_id": "R26-CHAR-18"
+          },
+          {
+            "book": 2,
+            "batch": 7,
+            "day": 168,
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "evidence": [
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 2791,
+                "global_line": 91343,
+                "anchor": "— A água daquela estrutura flui por gravidade?"
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 2799,
+                "global_line": 91351,
+                "anchor": "— E por que não existe uma segunda passagem de inspeção?"
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 2869,
+                "global_line": 91421,
+                "anchor": "A segunda ouviu as sugestões de MIREN, mas preferiu uma palavra curta que considerou bonita."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 2871,
+                "global_line": 91423,
+                "anchor": "NAIRA."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 3139,
+                "global_line": 91691,
+                "anchor": "O futuro da Cidade Livre acabara de ganhar três novos habitantes."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 3141,
+                "global_line": 91693,
+                "anchor": "Não três ferramentas."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 3143,
+                "global_line": 91695,
+                "anchor": "Não três soldados."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 3145,
+                "global_line": 91697,
+                "anchor": "Três pessoas."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 3159,
+                "global_line": 91711,
+                "anchor": "Gênese Coordenada I: desbloqueada permanentemente após a criação simultânea de AUREL, NAIRA e ELION."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 3163,
+                "global_line": 91715,
+                "anchor": "Novas vidas: KAEL, ASTRA, KÁIRON e agora os três recém-criados são existências distintas, posteriores à Primeira Geração."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 3433,
+                "global_line": 91985,
+                "anchor": "NAIRA observou um canal lateral de drenagem."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 3449,
+                "global_line": 92001,
+                "anchor": "— Gostaria de conhecê-los."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 3839,
+                "global_line": 92391,
+                "anchor": "— Significa que ninguém deverá exigir que vocês comecem a trabalhar sem antes terem a oportunidade de entender onde estão."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 3843,
+                "global_line": 92395,
+                "anchor": "— Mas eu gostaria de conhecer a estação de água amanhã."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 6161,
+                "global_line": 94713,
+                "anchor": "— Então gostaria que participassem dos estudos de projeto. Não como responsáveis únicos, mas ao lado de profissionais que conhecem os materiais e o terreno."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 6165,
+                "global_line": 94717,
+                "anchor": "— Gostaria muito."
+              }
+            ]
+          },
+          {
+            "book": 2,
+            "batch": 8,
+            "day": 200,
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "evidence": [
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 44162,
+                "global_line": 132714,
+                "anchor": "NAIRA recebeu uma pequena peça esculpida representando três canais de água encontrando-se num jardim."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 44164,
+                "global_line": 132716,
+                "anchor": "NAIRA — ONDE A ÁGUA CHEGA, A VIDA ENCONTRA CAMINHO."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 44166,
+                "global_line": 132718,
+                "anchor": "Ela passou os dedos sobre a madeira."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 44168,
+                "global_line": 132720,
+                "anchor": "— Você se lembrou do primeiro projeto de drenagem?"
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 44172,
+                "global_line": 132724,
+                "anchor": "— Lembro de você explicando que não adianta construir uma cidade bonita se ela alaga na primeira chuva."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 44176,
+                "global_line": 132728,
+                "anchor": "— E continuo certa."
+              }
+            ]
+          }
+        ],
+        "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo. | Lote B007: observação histórica datada, sem afirmar estado atual. | Lote B008: observação histórica datada, sem afirmar estado atual.",
+        "scope": "EDITORIAL",
+        "valid_at": {
+          "day": 579,
+          "chapter": 9,
+          "part": "I"
+        },
+        "historical_observations": [
+          {
+            "batch": 7,
+            "book": 2,
+            "day": 168,
+            "value": "Livro II, D168–169 — Naira nasceu na criação simultânea com Aurel e Elion no D168, após a qual Lucas desbloqueou Gênese Coordenada I; escolheu o próprio nome. Pessoa livre, não ferramenta ou soldado compulsório. Expressou curiosidade por água e drenagem, interesse em conhecer engenheiros e estação de água; D169 aceitou convite para estudos de projeto ao lado de profissionais, sem responsabilidade exclusiva. Não retroage seu cargo posterior de comandante de ARGOS.",
+            "origin_index": 1
+          },
+          {
+            "batch": 8,
+            "book": 2,
+            "day": 200,
+            "value": "Livro II, D200 — No festival recebeu de Lucas uma pequena escultura de madeira representando três canais de água convergindo num jardim, com inscrição que homenageava sua contribuição à água e à vida. Recordaram o primeiro projeto de drenagem. Não inferir custódia atual ou nova obra executada.",
+            "origin_index": 2
+          }
+        ]
+      },
+      "after": {
+        "value": "Histórico ainda não consolidado; não fabricar biografia passada.\n\nLivro II, D168–169 — Naira nasceu na criação simultânea com Aurel e Elion no D168, após a qual Lucas desbloqueou Gênese Coordenada I; escolheu o próprio nome. Pessoa livre, não ferramenta ou soldado compulsório. Expressou curiosidade por água e drenagem, interesse em conhecer engenheiros e estação de água; D169 aceitou convite para estudos de projeto ao lado de profissionais, sem responsabilidade exclusiva. Não retroage seu cargo posterior de comandante de ARGOS.\n\nLivro II, D200 — No festival recebeu de Lucas uma pequena escultura de madeira representando três canais de água convergindo num jardim, com inscrição que homenageava sua contribuição à água e à vida. Recordaram o primeiro projeto de drenagem. Não inferir custódia atual ou nova obra executada.",
+        "status": "PENDENTE_FONTE",
+        "origin": [
+          {
+            "policy": "C4 autorizado pelo autor em 2026-11-26",
+            "basis": "comandante de ARGOS",
+            "observations": 1,
+            "legacy_id": "R26-CHAR-18"
+          },
+          {
+            "book": 2,
+            "batch": 7,
+            "day": 168,
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "evidence": [
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 2791,
+                "global_line": 91343,
+                "anchor": "— A água daquela estrutura flui por gravidade?"
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 2799,
+                "global_line": 91351,
+                "anchor": "— E por que não existe uma segunda passagem de inspeção?"
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 2869,
+                "global_line": 91421,
+                "anchor": "A segunda ouviu as sugestões de MIREN, mas preferiu uma palavra curta que considerou bonita."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 2871,
+                "global_line": 91423,
+                "anchor": "NAIRA."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 3139,
+                "global_line": 91691,
+                "anchor": "O futuro da Cidade Livre acabara de ganhar três novos habitantes."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 3141,
+                "global_line": 91693,
+                "anchor": "Não três ferramentas."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 3143,
+                "global_line": 91695,
+                "anchor": "Não três soldados."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 3145,
+                "global_line": 91697,
+                "anchor": "Três pessoas."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 3159,
+                "global_line": 91711,
+                "anchor": "Gênese Coordenada I: desbloqueada permanentemente após a criação simultânea de AUREL, NAIRA e ELION."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 3163,
+                "global_line": 91715,
+                "anchor": "Novas vidas: KAEL, ASTRA, KÁIRON e agora os três recém-criados são existências distintas, posteriores à Primeira Geração."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 3433,
+                "global_line": 91985,
+                "anchor": "NAIRA observou um canal lateral de drenagem."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 3449,
+                "global_line": 92001,
+                "anchor": "— Gostaria de conhecê-los."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 3839,
+                "global_line": 92391,
+                "anchor": "— Significa que ninguém deverá exigir que vocês comecem a trabalhar sem antes terem a oportunidade de entender onde estão."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 3843,
+                "global_line": 92395,
+                "anchor": "— Mas eu gostaria de conhecer a estação de água amanhã."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 6161,
+                "global_line": 94713,
+                "anchor": "— Então gostaria que participassem dos estudos de projeto. Não como responsáveis únicos, mas ao lado de profissionais que conhecem os materiais e o terreno."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 6165,
+                "global_line": 94717,
+                "anchor": "— Gostaria muito."
+              }
+            ]
+          },
+          {
+            "book": 2,
+            "batch": 8,
+            "day": 200,
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "evidence": [
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 44162,
+                "global_line": 132714,
+                "anchor": "NAIRA recebeu uma pequena peça esculpida representando três canais de água encontrando-se num jardim."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 44164,
+                "global_line": 132716,
+                "anchor": "NAIRA — ONDE A ÁGUA CHEGA, A VIDA ENCONTRA CAMINHO."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 44166,
+                "global_line": 132718,
+                "anchor": "Ela passou os dedos sobre a madeira."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 44168,
+                "global_line": 132720,
+                "anchor": "— Você se lembrou do primeiro projeto de drenagem?"
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 44172,
+                "global_line": 132724,
+                "anchor": "— Lembro de você explicando que não adianta construir uma cidade bonita se ela alaga na primeira chuva."
+              },
+              {
+                "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-003",
+                "git_blob": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+                "line": 44176,
+                "global_line": 132728,
+                "anchor": "— E continuo certa."
+              }
+            ]
+          }
+        ],
+        "justification": "Campo tratado e explícito, mas não certificado como fato nem completamento substantivo. | Lote B007: observação histórica datada, sem afirmar estado atual. | Lote B008: observação histórica datada, sem afirmar estado atual.",
+        "scope": "EDITORIAL",
+        "valid_at": {
+          "day": 579,
+          "chapter": 9,
+          "part": "I"
+        },
+        "historical_observations": [
+          {
+            "batch": 7,
+            "book": 2,
+            "day": 168,
+            "value": "Livro II, D168–169 — Naira nasceu na criação simultânea com Aurel e Elion no D168, após a qual Lucas desbloqueou Gênese Coordenada I; escolheu o próprio nome. Pessoa livre, não ferramenta ou soldado compulsório. Expressou curiosidade por água e drenagem, interesse em conhecer engenheiros e estação de água; D169 aceitou convite para estudos de projeto ao lado de profissionais, sem responsabilidade exclusiva. Não retroage seu cargo posterior de comandante de ARGOS.",
+            "origin_index": 1
+          },
+          {
+            "batch": 8,
+            "book": 2,
+            "day": 200,
+            "value": "Livro II, D200 — No festival recebeu de Lucas uma pequena escultura de madeira representando três canais de água convergindo num jardim, com inscrição que homenageava sua contribuição à água e à vida. Recordaram o primeiro projeto de drenagem. Não inferir custódia atual ou nova obra executada.",
+            "origin_index": 2
+          },
+          {
+            "book": 3,
+            "value": "No projeto Leviatã, Naira orientou levantamentos portuários e coordenou estudos técnicos com engenheiros; não retroage comando de ARGOS.",
+            "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+            "scope": "HISTORICAL_OBSERVATION",
+            "evidence": [
+              {
+                "id": 570,
+                "line": 135991,
+                "anchor_sha256": "017b19b630f70a692a78c39becbc802d8412495dfb9b35be4a59bdcee7625d76",
+                "anchor": "Conclusão de NAIRA: Três Arcos ainda não sabe a distância navegável até o mar aberto. Pode existir conexão por um rio maior, mas é preciso levantar seu curso, profundidade, quedas, sazonalidade, direitos de passagem e acesso costeiro antes de escolher o local de um grande porto."
+              },
+              {
+                "id": 581,
+                "line": 141790,
+                "anchor_sha256": "238812d327e8888662639bddb040646d61f5170f53bedd019967106be0e79fe1",
+                "anchor": "— KAEL coordena os assuntos institucionais. LYSA, a parte econômica. NAIRA e os engenheiros, os estudos técnicos. SERON e RAEL, o levantamento geográfico. ASTRA e MIREN, a pesquisa científica."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "registry": "characters",
+      "id": "naira",
+      "field": "relationships",
+      "before": {
+        "value": "Lucas e Rumo, tripulação sob comando dela",
+        "status": "RECUPERADO",
+        "origin": {
+          "legacy_id": "R26-CHAR-18",
+          "blob": "24967910a0cf46be663c2ce091327caf99208b7d"
+        },
+        "justification": "Resumo legado preservado; leitura literal necessária para afirmação atual.",
+        "scope": "HISTORICAL_SUMMARY",
+        "valid_at": {
+          "day": 579,
+          "chapter": 9,
+          "part": "I"
+        }
+      },
+      "after": {
+        "value": "Lucas e Rumo, tripulação sob comando dela",
+        "status": "RECUPERADO",
+        "origin": {
+          "legacy_id": "R26-CHAR-18",
+          "blob": "24967910a0cf46be663c2ce091327caf99208b7d"
+        },
+        "justification": "Resumo legado preservado; leitura literal necessária para afirmação atual.",
+        "scope": "HISTORICAL_SUMMARY",
+        "valid_at": {
+          "day": 579,
+          "chapter": 9,
+          "part": "I"
+        },
+        "historical_observations": [
+          {
+            "book": 3,
+            "value": "Observação histórica: Aurel e Naira estavam de mãos dadas no jardim; não estabelece vínculo formal.",
+            "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+            "scope": "HISTORICAL_OBSERVATION",
+            "evidence": [
+              {
+                "id": 583,
+                "line": 142722,
+                "anchor_sha256": "3c55fdff63bfcfec09c3346176f658b05246fd5f05e7f570d6828de15197e615",
+                "anchor": "Depois AUREL e NAIRA, que ainda estavam de mãos dadas."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "registry": "world",
+      "id": "veyra",
+      "field": "history",
+      "before": {
+        "value": "D101: comerciante de rotas ligadas a Veyra forneceu a Seron cópia incompleta de carta marítima com referências verificáveis e símbolo semelhante ao do Coração. Rotas ligavam interior de Thalor a intermediários de Veyra; nenhuma embarcação reservada, distância da possível âncora e atribuição aos Arquitetos desconhecidas.\n\nLivro II, D145 — Encerramento D145 menciona estudiosos de Veyra buscando respostas sobre os Arquitetos; nenhuma descoberta, identidade de pesquisador ou aliança confirmada.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "veyra"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 101,
+            "evidence": [
+              {
+                "line": 1219,
+                "global_line": 42086,
+                "anchor": "DIA 101 — 08h34 | Sala do Atlas"
+              },
+              {
+                "line": 1235,
+                "global_line": 42102,
+                "anchor": "E SERON havia conseguido algo particularmente importante."
+              },
+              {
+                "line": 1237,
+                "global_line": 42104,
+                "anchor": "Um comerciante que trabalhava com rotas ligadas a Veyra trouxera uma cópia de uma carta marítima, incompleta, mas com referências documentais que poderiam ser verificadas."
+              },
+              {
+                "line": 1239,
+                "global_line": 42106,
+                "anchor": "Numa das margens havia o mesmo tipo de símbolo observado anteriormente nos estudos do Coração."
+              },
+              {
+                "line": 1247,
+                "global_line": 42114,
+                "anchor": "— Ainda não sabemos se é realmente um símbolo dos Arquitetos."
+              },
+              {
+                "line": 1251,
+                "global_line": 42118,
+                "anchor": "— Mas agora temos uma origem documental e um contato comercial que podemos procurar novamente."
+              },
+              {
+                "line": 1265,
+                "global_line": 42132,
+                "anchor": "O comerciante também mencionara uma oportunidade: algumas caravanas preparavam novas viagens pelas rotas comerciais que conectavam o interior de Thalor aos intermediários de Veyra."
+              },
+              {
+                "line": 1269,
+                "global_line": 42136,
+                "anchor": "Nenhuma embarcação havia sido reservada."
+              },
+              {
+                "line": 1271,
+                "global_line": 42138,
+                "anchor": "Ninguém conhecia ainda a distância marítima necessária para alcançar uma suposta âncora exterior."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 145,
+            "evidence": [
+              {
+                "line": 36324,
+                "global_line": 77191,
+                "anchor": "Os estudiosos de Veyra procuravam respostas sobre os Arquitetos."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento. | Lote B005: observacao historica datada; nao afirma estado atual.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "historical_observations": [
+          {
+            "batch": 5,
+            "book": 2,
+            "day": 145,
+            "value": "Encerramento D145 menciona estudiosos de Veyra buscando respostas sobre os Arquitetos; nenhuma descoberta, identidade de pesquisador ou aliança confirmada.",
+            "origin_index": 2
+          }
+        ]
+      },
+      "after": {
+        "value": "D101: comerciante de rotas ligadas a Veyra forneceu a Seron cópia incompleta de carta marítima com referências verificáveis e símbolo semelhante ao do Coração. Rotas ligavam interior de Thalor a intermediários de Veyra; nenhuma embarcação reservada, distância da possível âncora e atribuição aos Arquitetos desconhecidas.\n\nLivro II, D145 — Encerramento D145 menciona estudiosos de Veyra buscando respostas sobre os Arquitetos; nenhuma descoberta, identidade de pesquisador ou aliança confirmada.",
+        "status": "RECUPERADO",
+        "origin": [
+          {
+            "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+            "entity_id": "veyra"
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 101,
+            "evidence": [
+              {
+                "line": 1219,
+                "global_line": 42086,
+                "anchor": "DIA 101 — 08h34 | Sala do Atlas"
+              },
+              {
+                "line": 1235,
+                "global_line": 42102,
+                "anchor": "E SERON havia conseguido algo particularmente importante."
+              },
+              {
+                "line": 1237,
+                "global_line": 42104,
+                "anchor": "Um comerciante que trabalhava com rotas ligadas a Veyra trouxera uma cópia de uma carta marítima, incompleta, mas com referências documentais que poderiam ser verificadas."
+              },
+              {
+                "line": 1239,
+                "global_line": 42106,
+                "anchor": "Numa das margens havia o mesmo tipo de símbolo observado anteriormente nos estudos do Coração."
+              },
+              {
+                "line": 1247,
+                "global_line": 42114,
+                "anchor": "— Ainda não sabemos se é realmente um símbolo dos Arquitetos."
+              },
+              {
+                "line": 1251,
+                "global_line": 42118,
+                "anchor": "— Mas agora temos uma origem documental e um contato comercial que podemos procurar novamente."
+              },
+              {
+                "line": 1265,
+                "global_line": 42132,
+                "anchor": "O comerciante também mencionara uma oportunidade: algumas caravanas preparavam novas viagens pelas rotas comerciais que conectavam o interior de Thalor aos intermediários de Veyra."
+              },
+              {
+                "line": 1269,
+                "global_line": 42136,
+                "anchor": "Nenhuma embarcação havia sido reservada."
+              },
+              {
+                "line": 1271,
+                "global_line": 42138,
+                "anchor": "Ninguém conhecia ainda a distância marítima necessária para alcançar uma suposta âncora exterior."
+              }
+            ]
+          },
+          {
+            "path": "history/sources/01_DIA_001_A_383_FONTE_LITERAL.txt.part-002",
+            "git_blob": "3449845d3854daa62af01333e4efd1a2c615b6a4",
+            "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+            "book": 2,
+            "day": 145,
+            "evidence": [
+              {
+                "line": 36324,
+                "global_line": 77191,
+                "anchor": "Os estudiosos de Veyra procuravam respostas sobre os Arquitetos."
+              }
+            ]
+          }
+        ],
+        "justification": "Recuperação editorial cumulativa por fonte literal. Preserva cronologia, distinção de proposta e realização, e informações posteriores; não é promoção de evento. | Lote B005: observacao historica datada; nao afirma estado atual.",
+        "scope": "HISTORICAL_OBSERVATION",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "historical_observations": [
+          {
+            "batch": 5,
+            "book": 2,
+            "day": 145,
+            "value": "Encerramento D145 menciona estudiosos de Veyra buscando respostas sobre os Arquitetos; nenhuma descoberta, identidade de pesquisador ou aliança confirmada.",
+            "origin_index": 2
+          },
+          {
+            "book": 3,
+            "value": "No Livro III, Veyra já possuía estruturas portuárias e atividade marítima antes do Leviatã.",
+            "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+            "scope": "HISTORICAL_OBSERVATION",
+            "evidence": [
+              {
+                "id": 580,
+                "line": 140687,
+                "anchor_sha256": "17362754019312c3dd453250208fc297f671821c7cdfc12e58aede344e3a68c3",
+                "anchor": "Veyra era um lugar vivo muito antes de alguém em Três Arcos pensar em construir o Leviatã."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "registry": "world",
+      "id": "horizonte-aberto",
+      "field": "history",
+      "before": {
+        "value": "Não estabelecido nas fontes examinadas; recuperar antes de afirmar como fato.",
+        "status": "PENDENTE_FONTE",
+        "origin": {
+          "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+          "entity_id": "horizonte-aberto"
+        },
+        "justification": "Tratado estruturalmente, sem completar conteúdo sem base.",
+        "scope": "EDITORIAL",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+      },
+      "after": {
+        "value": "Não estabelecido nas fontes examinadas; recuperar antes de afirmar como fato.",
+        "status": "PENDENTE_FONTE",
+        "origin": {
+          "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+          "entity_id": "horizonte-aberto"
+        },
+        "justification": "Tratado estruturalmente, sem completar conteúdo sem base.",
+        "scope": "EDITORIAL",
+        "checkpoint": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "historical_observations": [
+          {
+            "book": 3,
+            "value": "Comunicação além das muralhas era requisito; rede de repetidores proposta, não concluída.",
+            "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+            "scope": "HISTORICAL_OBSERVATION",
+            "evidence": [
+              {
+                "id": 586,
+                "line": 145740,
+                "anchor_sha256": "a96e494e998edfc101c704cc91dbb443be64cdb8a54a9e19a99afeaf9f961669",
+                "anchor": "— Mas o Programa Horizonte Aberto exige comunicação para além das muralhas."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "b002_reviews": [
+    {
+      "id": 599,
+      "line": 165327,
+      "anchor_sha256": "3613678ac6e5f312eb67357a55f28673da8c64d49f80aa61ce727cbed57bb722",
+      "finding": "Estrada antiga, não Casa que Abraça; homologação pendente."
+    },
+    {
+      "id": 600,
+      "line": 167091,
+      "anchor_sha256": "d7adfffb1649b45d7bdef47c3f4883b28466a73caeab62be9892eae70547e30f",
+      "finding": "Hipótese de Miren sobre refinamento de Lucas, não capacidade nova de Tavren."
+    },
+    {
+      "id": 601,
+      "line": 169448,
+      "anchor_sha256": "0262bb5b66a72fa6f835d60191571ff863c2709f2d0f7f1d2a959ec4b3c6d226",
+      "finding": "Relato incompleto de Maira sobre direitos e instituições; não conhecimento universal."
+    },
+    {
+      "id": 602,
+      "line": 170398,
+      "anchor_sha256": "a5706d7ab35163d89209510d157facfd269a736c32bc7fa4d6002f701c9f045b",
+      "finding": "Gesto momentâneo."
+    },
+    {
+      "id": 603,
+      "line": 170596,
+      "anchor_sha256": "d0816a5e40dded1ad9100932d52238044e4a9232ffd3452c4ce0d9b875559311",
+      "finding": "Nove Arcos conectam distritos sobre canais antigos."
+    },
+    {
+      "id": 604,
+      "line": 170596,
+      "anchor_sha256": "d0816a5e40dded1ad9100932d52238044e4a9232ffd3452c4ce0d9b875559311",
+      "finding": "Duplicata, não ciclo de vida."
+    },
+    {
+      "id": 605,
+      "line": 170596,
+      "anchor_sha256": "d0816a5e40dded1ad9100932d52238044e4a9232ffd3452c4ce0d9b875559311",
+      "finding": "Duplicata; sem coordenadas."
+    },
+    {
+      "id": 606,
+      "line": 170788,
+      "anchor_sha256": "c8ab50f48e97f77725ef7f08050e3d3e5738cc378cd94b8ff56aadb016c5c7f7",
+      "finding": "Elen permaneceu no Pouso por escolha, proteção possível."
+    },
+    {
+      "id": 607,
+      "line": 170892,
+      "anchor_sha256": "c06716efaf466dbefca6c3e9d6a36b201e15b6ed5316106b93f75003570efd6e",
+      "finding": "Prioridade proposta, não proteção concluída."
+    },
+    {
+      "id": 608,
+      "line": 171040,
+      "anchor_sha256": "e6d066408c00e14c6fafa7e8f3a0c35adcf7854f11e101faa86783f6fa2d577a",
+      "finding": "Intenção de Lucas, não poder de Calderva."
+    },
+    {
+      "id": 609,
+      "line": 171040,
+      "anchor_sha256": "e6d066408c00e14c6fafa7e8f3a0c35adcf7854f11e101faa86783f6fa2d577a",
+      "finding": "Intenção, não população."
+    },
+    {
+      "id": 610,
+      "line": 171649,
+      "anchor_sha256": "8b3b91877b166202501cad206b4278f7e9432ddd6bedf5705f7f3b2c87a59a5e",
+      "finding": "Planejamento excluído."
+    },
+    {
+      "id": 611,
+      "line": 171649,
+      "anchor_sha256": "8b3b91877b166202501cad206b4278f7e9432ddd6bedf5705f7f3b2c87a59a5e",
+      "finding": "Planejamento excluído."
+    },
+    {
+      "id": 612,
+      "line": 172071,
+      "anchor_sha256": "b67d6ecc0191f68e41b27d24c01afa64021c80e7f3503dc829e33c5a134001b6",
+      "finding": "Cena de Elen Ross na Casa de Atendimento; cicatriz no pescoço observada."
+    },
+    {
+      "id": 613,
+      "line": 172117,
+      "anchor_sha256": "aadef666d0c082ce1a7e0f95211e700b1de51ba663ef866b5607ffb45d5ab13f",
+      "finding": "Respiração momentânea."
+    },
+    {
+      "id": 614,
+      "line": 172179,
+      "anchor_sha256": "d801539f14dded83de4ea278264feed077274a3f6c6db0e326c537ed50f3247f",
+      "finding": "Gesto, não aparência."
+    },
+    {
+      "id": 615,
+      "line": 172197,
+      "anchor_sha256": "f0f98479303c6c495172ad1607cfe1b52dc8fad10039bf805986653402d3d4ad",
+      "finding": "Sorriso não voz; Elen rejeita generalização criminal sobre Calderva."
+    },
+    {
+      "id": 616,
+      "line": 172313,
+      "anchor_sha256": "d801539f14dded83de4ea278264feed077274a3f6c6db0e326c537ed50f3247f",
+      "finding": "Gesto repetido."
+    },
+    {
+      "id": 617,
+      "line": 173901,
+      "anchor_sha256": "ab769fd450f232dca85f90e657db6cf080c56ff242384c69988ace9ca0f2cece",
+      "finding": "Relato de Elen sobre tradição de construtores, não fato universal."
+    },
+    {
+      "id": 618,
+      "line": 174111,
+      "anchor_sha256": "8ba0ce14061bed0f53836236c514368f2a5816e0779480ef958e5dceb458e390",
+      "finding": "Intenção de Lucas, não localização."
+    },
+    {
+      "id": 619,
+      "line": 174157,
+      "anchor_sha256": "cef0bfeaa69cdacddd5a991fef6b35bd1bb89f07bb85ceb61f106e2b3d8e2acb",
+      "finding": "Canal de correspondência possível, não censo."
+    },
+    {
+      "id": 620,
+      "line": 174197,
+      "anchor_sha256": "b2b6c0c937b2420b52762232c4901395e390ca69a339ccbf9942c8e0253b8cf3",
+      "finding": "Lucas observa mapa, não comportamento da cidade."
+    },
+    {
+      "id": 621,
+      "line": 174239,
+      "anchor_sha256": "69bc37bbd42b6d562a8db34543f5b18b42a422ee49ab76d7f5a8845f7f115f73",
+      "finding": "Bairro dos Nove Arcos narrado."
+    },
+    {
+      "id": 622,
+      "line": 174409,
+      "anchor_sha256": "3d3636409f45bc2d87be8d7db254af75f1ce45f2cb2ee1736c283eca6befca77",
+      "finding": "Relato histórico vago de Oren, identidade não confirmada."
+    },
+    {
+      "id": 623,
+      "line": 174738,
+      "anchor_sha256": "5c9d851fd1c7b67bd0ab14bffcc5c496790e12bed86f0d6fa0b48730973c79ce",
+      "finding": "Autonomia de Elen como testemunha; procedimentos institucionais."
+    },
+    {
+      "id": 624,
+      "line": 175356,
+      "anchor_sha256": "c149254fbe84ee5023b4fd17563568c67479c214ca0f6a44528452680ff008c3",
+      "finding": "Sorriso momentâneo."
+    },
+    {
+      "id": 625,
+      "line": 178403,
+      "anchor_sha256": "bb4104403daa1b6fa803f2d8c35625560b51a6bc9c4a4289ab13e68df94abf2f",
+      "finding": "Planejamento excluído."
+    }
+  ],
+  "checks": {
+    "delta_fields": 5,
+    "unique_fields": 5,
+    "old_values_preserved": true,
+    "contiguous": true,
+    "native_tests_run": false
+  },
+  "next_id": 626,
+  "production_hold": true,
+  "free_only": true,
+  "canon_changed": false
+}
