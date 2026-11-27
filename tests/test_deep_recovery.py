@@ -103,4 +103,14 @@ class DeepRecoveryTests(unittest.TestCase):
         self.make()
         self.assertFalse(retrieve(self.db,"Apple Park",role="Response",strategy="contextual")["hits"])
 
+    def test_empty_entity_context_portable(self):
+        self.make()
+        with sqlite3.connect(self.db) as c:
+            rows=c.execute("SELECT role,near_entities FROM evidence ORDER BY id").fetchall()
+            self.assertEqual(rows[0],("EXPORT_METADATA",""))
+            self.assertTrue(all("\x00" not in value for _,value in rows))
+            self.assertIn("miren",next(value for role,value in rows if role=="Response").split())
+            self.assertNotIn("aerun",next(value for role,value in rows if role=="Response").split())
+            self.assertEqual(c.execute("SELECT COUNT(*) FROM evidence WHERE near_entities IS NULL").fetchone()[0],0)
+
 if __name__=="__main__": unittest.main()

@@ -120,7 +120,9 @@ def build(root, db):
                     count+=1
                 stats.append({"source":meta["source_name"],"lines":len(body.splitlines()),"windows":count})
             # Entity mentions in nearby windows are context hints only, never attributed facts.
-            c.execute("""WITH context AS (SELECT id,group_concat(entities,' ') OVER (PARTITION BY source,section_start ORDER BY line_start ROWS BETWEEN 4 PRECEDING AND 4 FOLLOWING) AS nearby FROM evidence) UPDATE evidence SET near_entities=(SELECT nearby FROM context WHERE context.id=evidence.id)""")
+            # Skip empty entity tokens and normalize an empty aggregate across SQLite versions.
+            # Older window group_concat implementations may return NULL or a NUL for empty strings.
+            c.execute("""WITH context AS (SELECT id,COALESCE(group_concat(NULLIF(entities,''),' ') OVER (PARTITION BY source,section_start ORDER BY line_start ROWS BETWEEN 4 PRECEDING AND 4 FOLLOWING),'') AS nearby FROM evidence) UPDATE evidence SET near_entities=(SELECT nearby FROM context WHERE context.id=evidence.id)""")
             c.execute("INSERT INTO search(search) VALUES('rebuild')")
             c.execute("INSERT INTO meta VALUES('schema',?)",(SCHEMA,))
             c.execute("INSERT INTO meta VALUES('manifest_sha',?)",(_sha(json.dumps(manifest,sort_keys=True,ensure_ascii=False)),))
