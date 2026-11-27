@@ -51,6 +51,21 @@ def write_record(path,purpose,payload,key):
 def exists(path):
     return path.exists() or path.is_symlink()
 
+def journal_checkpoint(out):
+    """Digest inventory only, no private text. Caller holds the latest pin externally.
+    Use under the existing writer lock. Not proof of external custody.
+    """
+    names=["run.json"]+[slot+suffix for slot in ("local-A","local-B")
+          for suffix in (".json",*(f".attempt-{i}.json" for i in range(1,ATTEMPTS+1)))]
+    return {name:seal(read_record(out/name)) for name in names if exists(out/name)}
+
+def check_checkpoint(out,checkpoint,expected_sha):
+    require(isinstance(checkpoint,dict) and digest(expected_sha) and seal(checkpoint)==expected_sha,
+            "Invalid external checkpoint pin")
+    current=journal_checkpoint(out)
+    require(all(name in current and current[name]==value for name,value in checkpoint.items()),
+            "Journal rollback or alteration detected")
+
 def _bounded_api(path,payload=None):
     return local.local_api(path,payload,timeout=120 if path=="/api/chat" else 5,max_response_bytes=512_000)
 
@@ -72,7 +87,7 @@ def validate_saved(record,binding,p,prov,slot):
     return v
 
 def run(root,out,judge,candidate,authority,scope,authority_key,receipt_key,
-        model_a,model_b,pin_a,pin_b,run_nonce,generator_digest=None,api=_bounded_api):
+        model_a,model_b,pin_a,pin_b,run_nonce,generator_digest=None,api=_bounded_api,expected_checkpoint=None,checkpoint_sha=None):
     keycheck(authority_key);keycheck(receipt_key)
     require(authority_key!=receipt_key,"Separate authority and receipt keys required")
     approved=verify(authority,"source-authority",authority_key)
@@ -98,6 +113,12 @@ def run(root,out,judge,candidate,authority,scope,authority_key,receipt_key,
     finally:os.close(fd)
     calls=0
     try:
+        require((expected_checkpoint is None)==(checkpoint_sha is None),"Checkpoint and pin required together")
+        if expected_checkpoint is not None:check_checkpoint(out,expected_checkpoint,checkpoint_sha)
+        def finish(payload):
+            checkpoint=journal_checkpoint(out)
+            return {**payload,"checkpoint":checkpoint,"checkpoint_sha256":seal(checkpoint),
+                    "external_checkpoint_checked":expected_checkpoint is not None}
         path=out/"run.json"
         if exists(path):verify(read_record(path),"run-binding",receipt_key,binding)
         else:write_record(path,"run-binding",binding,receipt_key)
@@ -118,7 +139,7 @@ def run(root,out,judge,candidate,authority,scope,authority_key,receipt_key,
                 reviews[slot]=validate_saved(saved,binding,p,prov,slot)
                 continue
             if attempt_count==ATTEMPTS:
-                return {"status":"ATTEMPT_LIMIT","run_id":rid,"slot":slot,"new_review_attempts":calls,"production_hold":True,"semantic_certification":False}
+                return finish({"status":"ATTEMPT_LIMIT","run_id":rid,"slot":slot,"new_review_attempts":calls,"production_hold":True,"semantic_certification":False})
             # Check both expected pins before each new call; no inference if they changed.
             for m in binding["models"].values():
                 require(local.revision(m["name"],api)==m["digest"],"Expected model pin mismatch")
@@ -131,16 +152,20 @@ def run(root,out,judge,candidate,authority,scope,authority_key,receipt_key,
                 reviews[slot]=validate_saved(saved,binding,p,prov,slot)
                 write_record(dest,"review-receipt",saved,receipt_key)
             except Exception as e:
-                return {"status":"REVIEW_FAILED","run_id":rid,"slot":slot,"error_type":type(e).__name__,
-                        "new_review_attempts":calls,"production_hold":True,"semantic_certification":False}
+                return finish({"status":"REVIEW_FAILED","run_id":rid,"slot":slot,"error_type":type(e).__name__,
+                        "new_review_attempts":calls,"production_hold":True,"semantic_certification":False})
         a,b=(reviews[s]["receipt"] for s in ("local-A","local-B"))
         require(a["session_id"]!=b["session_id"],"Reused session")
         agrees=(a["result"],a["severity"])==(b["result"],b["severity"])
-        return {"status":"LOCAL_RECEIPTS_AUTHENTICATED","run_id":rid,"new_review_attempts":calls,
+        return finish({"status":"LOCAL_RECEIPTS_AUTHENTICATED","run_id":rid,"new_review_attempts":calls,
                 "result":a["result"] if agrees else "INCONCLUSIVE","agreement":agrees,
                 "transport":binding["transport"],"local_custody_authenticated":True,
                 "execution_attestation_verified":False,"independence_verified":False,
-                "semantic_certification":False,"production_hold":True}
+                "semantic_certification":False,"production_hold":True,
+                "receipt_metrics":{"review_count":2,"elapsed_ns_total":sum(v["elapsed_ns"] for v in reviews.values()),
+                 "context_text_bytes":prov["context_text_bytes"],"source_count":len(p["sources"]),
+                 "cited_source_count":len(set(a["sources_consulted"])|set(b["sources_consulted"])),
+                 "receipt_hashes":[reviews[s]["receipt_sha256"] for s in ("local-A","local-B")]}})
     finally:lock.unlink()
 
 def read_key(path):

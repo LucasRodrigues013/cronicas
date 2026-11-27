@@ -101,6 +101,69 @@ class RecoveryTests(unittest.TestCase):
     def test_in_git(self):
         (self.root/".git").mkdir()
         with self.assertRaises(ValueError):self.invoke()
+    def test_external_checkpoint_detects_whole_slot_rollback(self):
+        self.fail_b=True
+        v=self.invoke()
+        (self.root/"out"/"local-B.attempt-1.json").unlink()
+        self.fail_b=False
+        with self.assertRaises(ValueError):
+            self.invoke(expected_checkpoint=v["checkpoint"],checkpoint_sha=v["checkpoint_sha256"])
+        self.assertEqual(self.calls,["a","b"])
+    def test_external_checkpoint_allows_extension(self):
+        self.fail_b=True
+        v=self.invoke()
+        self.fail_b=False
+        w=self.invoke(expected_checkpoint=v["checkpoint"],checkpoint_sha=v["checkpoint_sha256"])
+        self.assertTrue(w["external_checkpoint_checked"])
+        self.assertEqual(w["receipt_metrics"]["review_count"],2)
+        self.assertEqual(self.calls,["a","b","b"])
+    def test_wrong_checkpoint_pin(self):
+        with self.assertRaises(ValueError):self.invoke(expected_checkpoint={},checkpoint_sha="0"*64)
+        self.assertEqual(self.calls,[])
+    def operational(self,**kw):
+        from worldroot.r36_operational import run_case
+        from worldroot.r36_benchmark import validate_inventory
+        row={"id":"fixture","category":"memory","family":"fixture","episodes":["e1"],"entities":["n1"],
+             "source_pins":[self.man["sources"][0]["raw_sha256"]],"split":"development","severity":"major"}
+        inventory=[row]
+        params=dict(inventory=inventory,inventory_sha=validate_inventory(inventory,exact=False)["inventory_sha256"],
+                    case_id="fixture",prompt="What happened?",preparation_sha="c"*64,policy_sha="d"*64,summary_key=b"c"*32,
+                    root=self.root,out=self.root/"out",judge="canon",candidate="A stayed home.",authority=self.auth,
+                    scope=self.scope,authority_key=self.ka,receipt_key=self.kb,model_a="a",model_b="b",
+                    pin_a="a"*64,pin_b="b"*64,run_nonce="synthetic-test-nonce",api=self.api)
+        params.update(kw);return run_case(**params)
+    def test_operational_chain(self):
+        from worldroot.r36_operational import longitudinal
+        v=self.operational()
+        p=t.verify(v,"operational-summary",b"c"*32)
+        self.assertFalse(p["generation_executed"])
+        self.assertFalse(p["feedback_eligible"])
+        s=longitudinal([v],b"c"*32,[("fixture","canon")],p["binding"]["inventory_sha"],"d"*64,"fixture")
+        self.assertEqual(s["outcomes"],{"PASS":1})
+        self.assertEqual(s["transports"],{"INJECTED_TEST":1})
+        self.assertIsNone(s["accuracy"])
+        self.assertFalse(s["historical_certification"])
+    def test_operational_reserved_block(self):
+        from worldroot.r36_benchmark import validate_inventory
+        row={"id":"fixture","category":"memory","family":"fixture","episodes":["e1"],"entities":["n1"],
+             "source_pins":[self.man["sources"][0]["raw_sha256"]],"split":"reserved","severity":"major"}
+        with self.assertRaises(ValueError):self.operational(inventory=[row],inventory_sha=validate_inventory([row],exact=False)["inventory_sha256"])
+        self.assertEqual(self.calls,[])
+    def test_operational_pin_mismatch(self):
+        with self.assertRaises(ValueError):self.operational(inventory_sha="0"*64)
+        self.assertEqual(self.calls,[])
+    def test_operational_source_mismatch(self):
+        from worldroot.r36_benchmark import validate_inventory
+        row={"id":"fixture","category":"memory","family":"fixture","episodes":["e1"],"entities":["n1"],
+             "source_pins":["0"*64],"split":"development","severity":"major"}
+        with self.assertRaises(ValueError):self.operational(inventory=[row],inventory_sha=validate_inventory([row],exact=False)["inventory_sha256"])
+        self.assertEqual(self.calls,[])
+    def test_longitudinal_tamper_and_order(self):
+        from worldroot.r36_operational import longitudinal
+        v=self.operational();p=v["payload"];pin=p["binding"]["inventory_sha"]
+        with self.assertRaises(ValueError):longitudinal([v],b"c"*32,[("other","canon")],pin,"d"*64,"fixture")
+        p["result"]["result"]="FAIL"
+        with self.assertRaises(ValueError):longitudinal([v],b"c"*32,[("fixture","canon")],pin,"d"*64,"fixture")
     def test_no_model_self_review(self):
         with self.assertRaises(ValueError):self.invoke(generator_digest="a"*64)
 
