@@ -4,17 +4,17 @@ on:
     branches: [review/r36-multidimensional-d001-d579]
     paths: ['.github/workflows/r36-multidimensional-audit.yml']
 permissions:
-  contents: read
+  contents: write
 jobs:
   verify:
-    if: github.event.repository.private == false
+    if: github.event.repository.private == false && github.ref == 'refs/heads/review/r36-multidimensional-d001-d579'
     runs-on: ubuntu-24.04
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           path: engine
-          persist-credentials: false
+          persist-credentials: true
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           ref: db53de0f7f58acc12da2c706dbeff5745cd83206
@@ -66,3 +66,24 @@ jobs:
         run: |
           git -C engine diff --exit-code
           git -C archive diff --exit-code
+      - name: Verify expanded candidates and index all closed sources
+        env:
+          PYTHONPATH: engine
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: python -m worldroot.r36_corpus_audit archive engine/editorial/codex-staging
+      - name: Persist only staging corpus report with readback
+        working-directory: engine
+        run: |
+          set -euo pipefail
+          p=editorial/codex-staging/r36-multidimensional-lot-06-corpus-index.json
+          test "$(git status --porcelain)" = "?? $p"
+          test "$(git ls-remote origin refs/heads/review/r36-multidimensional-d001-d579 | cut -f1)" = "$(git rev-parse HEAD)"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- "$p"
+          git commit -m 'R36: persist full corpus lexical index and native validation receipt [skip ci]'
+          git push origin HEAD:refs/heads/review/r36-multidimensional-d001-d579
+          git fetch origin refs/heads/review/r36-multidimensional-d001-d579
+          test "$(git rev-parse HEAD)" = "$(git rev-parse FETCH_HEAD)"
+          test "$(git show FETCH_HEAD:$p | sha256sum | cut -d' ' -f1)" = "$(sha256sum "$p" | cut -d' ' -f1)"
+          echo "R36_READBACK $(git rev-parse HEAD)"
