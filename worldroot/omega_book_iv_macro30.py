@@ -32,7 +32,7 @@ def verify_close(root,archive):
     require(all(x["visibility"].startswith("RESTRICTED") for x in allr if x["type"]=="reserved"),"reserved isolation")
     require(all((x["evidence"]["role"]=="Prompt")== (x["authority"]=="AUTHOR_DIRECTION_NOT_EVENT") for x in allr),"author separation")
     require(source[0][273095]=="CAPÍTULO 2 — A MARCHA DOS TREZENTOS" and source[0][276624]=="CAPÍTULO 3 — A CANÇÃO DOS QUE NÃO FICAM PARA TRÁS","literal chapter titles")
-    require(source[0][273397]=="2.918" and source[0][273355]=="1.142" and 146+64+90==300,"census/mobilization")
+    require(source[0][273397]=="2.918" and source[0][273355]=="1.142 residentes." and 146+64+90==300,"census/mobilization")
     require(q[30]["start"]==279002 and q[30]["previous_macro"]==m["id"] and cp["production_gate"]=="HOLD","next gate")
     return {**result,"status":"PASS_NATIVE_MACRO_0030_COMPLETE","new_records":metrics["records"],"new_lines":5958,"authority_counts":dict(Counter(x["authority"] for x in allr)),"visibility_counts":dict(Counter(x["visibility"] for x in allr)),"next_line":279002,"macro_complete":True,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False}
 def main():
