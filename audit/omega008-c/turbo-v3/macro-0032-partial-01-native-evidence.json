@@ -1,0 +1,46 @@
+{
+  "schema": "OMEGA_NATIVE_MACRO_0032_PARTIAL_EVIDENCE_V1",
+  "validated_commit": "4c51a857229b4f8df11d9ef47486e043a29f0cec",
+  "run_id": 46057915005,
+  "jobs": {
+    "native_staging": 140704804616,
+    "literal_authorized_public": 140704804982
+  },
+  "native_validation": "PASS",
+  "targeted_regression": {
+    "passed": 47,
+    "total": 47,
+    "suites": [
+      14,
+      11,
+      12,
+      10
+    ]
+  },
+  "metrics": {
+    "status": "PASS_NATIVE_MACRO_0032_PARTIAL",
+    "axes_assessed": 30,
+    "axes_represented": [
+      2,
+      3,
+      7,
+      11,
+      12,
+      13,
+      15,
+      19,
+      25,
+      26,
+      27
+    ],
+    "canon_changed": false,
+    "coverage": 2,
+    "lines": 169,
+    "macro_complete": false,
+    "next_line": 289314,
+    "production_gate": "HOLD",
+    "records": 2,
+    "semantic_certification": false
+  },
+  "independent_review": false
+}
