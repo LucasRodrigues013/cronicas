@@ -56,7 +56,29 @@ def verify_close(root,archive):
     require(cp["staging_records"]==c0["staging_records"]+78==2300 and cp["book_counts"]["IV"]==178 and cp["completed_macros"]==30,"staging totals")
     require(cp["production_gate"]=="HOLD" and not cp["canon_changed"] and not cp["official_checkpoint_changed"] and not cp["semantic_certification"],"gate")
     return {**result,"status":"PASS_NATIVE_MACRO_0031_COMPLETE","new_records":new["records"],"new_lines":new["lines"],"authority_counts":dict(Counter(x["authority"] for x in allr)),"visibility_counts":dict(Counter(x["visibility"] for x in allr)),"next_line":289145,"macro_complete":True,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False}
+def verify_macro32_start(root,archive):
+    root=Path(root); archive=Path(archive)
+    prior=verify_close(root,archive)
+    c0=read(root,ROOT+"recovery-checkpoint-0031-validated.json","94d41c66a771ff76b3ef1e3c2f8b72764b5e9410")
+    require(prior["macro_complete"] and c0["native_validation"]=="PASS" and c0["next_line"]==289145,"macro31 validated gate")
+    cp=read(root,ROOT+"recovery-checkpoint-0032-partial-01.json","6a0e6ec0fa369755458adc67035102a8e0ebe2e6")
+    r=read(root,cp["receipt_path"],"4eb7d142f6b28e7e45ec854b143959ab07eccfd0",cp["receipt_sha256"])
+    q=read(root,"audit/omega008-c/bulk-macro-queue.json","e5a5f9e358d20acf8559f6313c2da24b64665f48")["macros"]
+    m=q[31]
+    require(r["previous_checkpoint_blob"]==cp["previous_checkpoint_blob"]=="94d41c66a771ff76b3ef1e3c2f8b72764b5e9410" and r["release_blob"]==c0["release_blob"]==cp["release_blob"],"checkpoint chain")
+    require(c0["next_macro"]==m and r["previous_macro_id"]==q[30]["id"] and r["official_unit_seal"]==m["unit_seal"],"queue chain")
+    source=SourceCache(archive,read(archive,"history/sources/MANIFEST.json","2048141263f66151230119af9b0ee51796ac846b")).get(m["source"])
+    p1=read(root,ROOT+"partial-macro-0031-01.json")
+    p2=read(root,c0["receipt_path"],c0["receipt_blob"],c0["receipt_sha256"])
+    metrics=validate_receipt(r,m,source,r["project"],ARCHIVE,previous_ids=[x["id"] for x in p1["records"]+p2["records"]],expected_range=[289145,289313])
+    require(metrics["records"]==metrics["coverage"]==cp["records"]==2 and metrics["lines"]==169,"counts")
+    require(all(x["book"]=="IV" and x["day"]==374 and x["chapter_hint"]==6 and x["authority"]=="HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED" for x in r["records"]),"scope")
+    require(source[0][289313]=="A matriz foi acionada.","next literal line")
+    require(cp["next_line"]==r["next_line"]==289314 and cp["staging_records"]==c0["staging_records"]+2==2302 and cp["book_counts"]["IV"]==180 and cp["completed_macros"]==31,"checkpoint")
+    require(cp["production_gate"]=="HOLD" and not cp["canon_changed"] and not cp["official_checkpoint_changed"] and not cp["semantic_certification"] and not cp["macro_complete"],"gate")
+    return {**metrics,"status":"PASS_NATIVE_MACRO_0032_PARTIAL","next_line":289314,"macro_complete":False,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False}
+
 def main():
     p=argparse.ArgumentParser();p.add_argument("--engine-root",default=".");p.add_argument("--archive-root",required=True)
-    a=p.parse_args();print(json.dumps(verify_close(a.engine_root,a.archive_root),sort_keys=True))
+    a=p.parse_args();print(json.dumps(verify_macro32_start(a.engine_root,a.archive_root),sort_keys=True))
 if __name__=="__main__":main()
