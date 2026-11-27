@@ -59,3 +59,11 @@ def preflight(root,payload):
     return {"schema":"worldroot-omega-controller-preflight-v1","status":"READY_FOR_NATIVE_ARCHIVE" if all(r["ok"] for r in results) else "REVISE_BEFORE_ARCHIVE",
         "checks":results,"failed":[r["stage"] for r in results if not r["ok"]],"payload_sha256":digest(payload),
         "elapsed_seconds":round(time.perf_counter()-started,6),"release_allowed":False,"semantic_certification":False,"canon_changed":False}
+
+
+def main():
+    import argparse,json
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument("--archive-root",type=Path,required=True);p.add_argument("--payload",type=Path,required=True)
+    args=p.parse_args();r=preflight(args.archive_root,load(args.payload))
+    print(json.dumps(r,ensure_ascii=False,indent=2));return 1 if r["failed"] else 0
+if __name__=="__main__":raise SystemExit(main())

@@ -4,7 +4,7 @@ separate; exact names are candidate retrieval, not semantic entity resolution.
 No inferred event time, physical presence, age, ownership or character knowledge.
 """
 from __future__ import annotations
-import hashlib,json,re,sqlite3
+import argparse,hashlib,json,os,re,sqlite3,tempfile
 from collections import Counter
 from pathlib import Path
 from .git_cycle import load,verify_db,verify_episode,canonical
@@ -61,7 +61,9 @@ def rebuild(root,db):
     """Call on a disposable, synced Codex only; exact source identity verified.
     Transcript Response is unreviewed and must never be exposed as world facts.
     """
-    root=Path(root)
+    root=Path(root).resolve()
+    graph_file=next((r[2] for r in db.execute("PRAGMA database_list") if r[1]=="main"),"")
+    if graph_file and Path(graph_file).resolve().is_relative_to(root):raise ValueError("Recovery projection must remain outside the source archive")
     head=load(root/"canon/HEAD.json");verify_db(root,head)
     reg=load_registry(root)
     meta=dict(db.execute("SELECT key,value FROM meta"))
@@ -119,3 +121,86 @@ def lookup(db,name,*,limit=30):
         "SELECT source_kind,source_id,source_sha,role,line,anchor_sha,candidates,disposition,speaker_label FROM omega_source_mention WHERE mention=? ORDER BY CASE source_kind WHEN 'CLOSED_PROSE' THEN 0 ELSE 1 END,source_id DESC,line DESC LIMIT ?",(key,limit))]
     event_refs=[dict(event_id=e,candidates=json.loads(c),disposition=d) for e,c,d in db.execute("SELECT event_id,candidates,disposition FROM omega_event_candidate WHERE mention=? ORDER BY event_id LIMIT ?",(key,limit))]
     return {"name":name,"counts":counts,"references":refs,"public_event_candidates":event_refs,"scope":"EDITORIAL_CANDIDATES_NOT_FACTS","semantic_certification":False}
+
+
+class SourceReader:
+    """Editorial readback of exact source lines; never supplies character knowledge.
+    Refuse forged hashes, unclosed episodes, and mismatched transcript roles.
+    """
+    def __init__(self,root):
+        self.root=Path(root).resolve()
+        self.head=load(self.root/"canon/HEAD.json");verify_db(self.root,self.head)
+        self.closed={c["episode_id"]:c for c in (load(p) for p in (self.root/"canon/episodes").glob("*.json"))}
+        if len(self.closed)!=self.head["sequence"]:raise ValueError("Incomplete closure journal")
+        self._transcripts=None;self._episodes={}
+    def read(self,ref):
+        n=ref["line"];source=ref["source_id"];kind=ref["source_kind"];role=ref["role"]
+        if type(n) is not int or n<1:raise ValueError("Invalid source line")
+        if kind=="CLOSED_PROSE":
+            if source not in self.closed or role!="CLOSED_NARRATIVE":raise ValueError("Unclosed or invalid narrative reference")
+            c=self.closed[source]
+            if source not in self._episodes:
+                d,m=verify_episode(self.root,source)
+                if m["original_readback_sha256"]!=c["story_sha256"]:raise ValueError("Closed source mismatch")
+                self._episodes[source]=d.prose.splitlines(keepends=True)
+            lines=self._episodes[source]
+            if n>len(lines) or ref["source_sha"]!=c["story_sha256"]:raise ValueError("Closed source hash or range mismatch")
+            anchor=lines[n-1]
+        elif kind=="TRANSCRIPT":
+            if self._transcripts is None:
+                _,verified=read_verified_sources(self.root)
+                self._transcripts={m["source_name"]:(m,b) for m,b in verified}
+            if source not in self._transcripts or role not in ("Prompt","Response"):raise ValueError("Invalid transcript reference")
+            m,b=self._transcripts[source]
+            if m["sha256"]!=ref["source_sha"]:raise ValueError("Transcript source hash mismatch")
+            anchor=None
+            for actual,start,lines in sections(b):
+                if start<=n<start+len(lines):
+                    if actual!=role:raise ValueError("Transcript role mismatch")
+                    anchor=lines[n-start];break
+            if anchor is None:raise ValueError("Transcript line out of range")
+        else:raise ValueError("Unknown source kind")
+        if sha(anchor)!=ref["anchor_sha"]:raise ValueError("Source anchor hash mismatch")
+        return {**ref,"literal":anchor,"scope":"EDITORIAL_SOURCE_READBACK_NOT_CHARACTER_KNOWLEDGE","semantic_certification":False}
+
+def build_projection(root,destination):
+    """Create a new derived DB outside the archive, no clobber, atomically."""
+    from .live_codex import sync
+    root=Path(root).resolve();destination=Path(destination)
+    if destination.resolve().is_relative_to(root) or destination.exists() or destination.is_symlink():
+        raise ValueError("Use a new projection outside the archive")
+    destination.parent.mkdir(parents=True,exist_ok=True)
+    with tempfile.TemporaryDirectory(prefix=".omega-recovery-",dir=destination.parent) as tmp:
+        candidate=Path(tmp)/"graph.sqlite";sync(root,candidate)
+        with sqlite3.connect(candidate) as db:
+            result=rebuild(root,db)
+            if db.execute("PRAGMA integrity_check").fetchone()[0]!="ok":raise ValueError("Projection integrity failure")
+        os.link(candidate,destination)
+    return result
+
+def query_projection(root,path,name,limit=30,readback=False):
+    root=Path(root).resolve();path=Path(path)
+    if not path.is_file() or path.is_symlink():raise ValueError("Projection not available")
+    head=load(root/"canon/HEAD.json");verify_db(root,head)
+    reg=load_registry(root)
+    with sqlite3.connect(path.resolve().as_uri()+"?mode=ro",uri=True) as db:
+        raw=db.execute("SELECT value FROM meta WHERE key='omega_historical_recovery'").fetchone()
+        if not raw:raise ValueError("Missing historical recovery seal")
+        seal=json.loads(raw[0])
+        from .history_index import MANIFEST
+        if seal.get("schema")!=SCHEMA or seal.get("head")!=head or not reg or seal.get("registry_sha")!=reg[1] or seal.get("source_manifest_sha")!=hashlib.sha256(canonical(load(root/MANIFEST))).hexdigest():raise ValueError("Stale historical recovery")
+        result=lookup(db,name,limit=limit)
+        if readback:
+            reader=SourceReader(root)
+            result["references"]=[reader.read(r) for r in result["references"]]
+    return result
+
+def main():
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument("--archive-root",type=Path,required=True)
+    subs=p.add_subparsers(dest="action",required=True)
+    b=subs.add_parser("build");b.add_argument("--output",type=Path,required=True)
+    q=subs.add_parser("query");q.add_argument("--graph",type=Path,required=True);q.add_argument("--name",required=True);q.add_argument("--limit",type=int,default=30);q.add_argument("--readback",action="store_true")
+    a=p.parse_args()
+    result=build_projection(a.archive_root,a.output) if a.action=="build" else query_projection(a.archive_root,a.graph,a.name,a.limit,a.readback)
+    print(json.dumps(result,ensure_ascii=False,indent=2))
+if __name__=="__main__":main()
