@@ -153,6 +153,13 @@ def queue(root):
         sources.append({"episode":episode,"sha256":sha(body),"lines":len(body.splitlines()),"candidates":len(rows)})
         candidates.extend(rows)
     return {"schema":SCHEMA,"registry_sha256":reg,"checkpoint":overlay["checkpoint"],"sources":sources,"field_tasks":tasks,"candidates":candidates,"semantic_certification":False,"canon_changed":False}
+def complementary_queue(text, source_id, book, cards):
+    """Read-only scene inventory and existing ARQUITETO speaker discovery."""
+    from .complementary_recovery import scenes
+    return {"scenes": scenes(text, book, source_id),
+            "candidates": discover(text, source_id, "LEGACY_MIXED", cards),
+            "semantic_certification": False, "canon_changed": False}
+
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument("--archive-root",required=True);p.add_argument("--output",required=True);a=p.parse_args()
     output=Path(a.output);root=Path(a.archive_root).resolve()
