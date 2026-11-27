@@ -448,7 +448,43 @@ def verify_macro37_close(root,archive):
     require(cp["native_validation"]=="PENDING" and cp["production_gate"]=="HOLD" and not cp["canon_changed"] and not cp["official_checkpoint_changed"] and not cp["semantic_certification"] and not cp["promotion"],"gate")
     return {**result,"status":"PASS_NATIVE_MACRO_0037_COMPLETE","next_line":50790,"macro_complete":True,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False,"authority_counts":dict(Counter(x["authority"] for x in allr)),"visibility_counts":dict(Counter(x["visibility"] for x in allr))}
 
+
+def verify_macro38_close(root,archive):
+    from collections import Counter
+    root=Path(root); archive=Path(archive)
+    prior=verify_macro37_close(root,archive)
+    c0=read(root,ROOT+"recovery-checkpoint-0037-validated.json","a54ff516aac010f9208b9e4a9b1c01d8ec636cf8")
+    require(prior["macro_complete"] and prior["next_line"]==c0["next_line"]==50790 and c0["native_validation"]=="PASS","prior checkpoint")
+    cp=read(root,ROOT+"recovery-checkpoint-0038-closure-pending.json","7efb86b5e7af073abd1e4ba5b535f858b4bc1658")
+    r=read(root,cp["receipt_path"],"740c2efeb819adbbda9683d3542f773d53b536f0",cp["receipt_sha256"])
+    q=read(root,"audit/omega008-c/bulk-macro-queue.json","e5a5f9e358d20acf8559f6313c2da24b64665f48")["macros"];m=q[37]
+    require(c0["next_macro"]==m and cp["next_macro"]==q[38] and r["previous_macro_id"]==q[36]["id"] and r["official_unit_seal"]==m["unit_seal"],"queue chain")
+    require(r["previous_checkpoint_blob"]==cp["previous_checkpoint_blob"]=="a54ff516aac010f9208b9e4a9b1c01d8ec636cf8" and r["release_blob"]==cp["release_blob"]==c0["release_blob"],"checkpoint chain")
+    source=SourceCache(archive,read(archive,"history/sources/MANIFEST.json","2048141263f66151230119af9b0ee51796ac846b")).get(m["source"])
+    review=read(root,c0["cycle_review_path"],c0["cycle_review_blob"])
+    ids=[x["id"] for g in review["macros"] for entry in g["receipts"] for x in read(root,entry["path"],entry["blob"])["records"]]
+    for name in ("partial-macro-0035-01.json","partial-macro-0035-02.json","partial-macro-0036-01.json","partial-macro-0036-02.json","partial-macro-0037-01.json"):
+        ids.extend(x["id"] for x in read(root,ROOT+name)["records"])
+    result=validate_receipt(r,m,source,r["project"],ARCHIVE,previous_ids=ids)
+    allr=r["records"]
+    require(result["lines"]==10132 and result["records"]==result["coverage"]==cp["records"]==50,"counts")
+    require(cp["staging_records"]==c0["staging_records"]+50==2717 and cp["book_counts"]["IV"]==595,"staging counts")
+    require(cp["session_new_lines"]==prior["lines"]+result["lines"]==20158 and cp["session_new_records"]==prior["records"]+result["records"]==98,"session counts")
+    require(all(x["book"]=="IV" and x["chapter_hint"]==13 and x["day"] in range(414,421) for x in allr),"scope")
+    require(all((x["evidence"]["role"]=="Prompt")==(x["authority"]=="AUTHOR_DIRECTION_NOT_EVENT") for x in allr),"author separation")
+    require(all(x["visibility"].startswith("READER_ONLY") for x in allr if x["type"]=="reader_scene") and all(x["visibility"].startswith("RESTRICTED") for x in allr if x["type"]=="knowledge"),"private boundary")
+    require(all(x["authority"]=="METADATA_NOT_EVENT" for x in allr if x["type"]=="metadata") and all(x["authority"]=="NARRATOR_PROPOSED_BRANCH_NOT_EVENT" for x in allr if x["type"]=="transition_options"),"non-event separation")
+    require("referência estática" in source[0][53774] and "não o reconheceu" in source[0][53856],"Farol and identity")
+    require("Aceitava o prazo" in source[0][54926] and "agenda da rainha" in source[0][54930],"diplomacy date separation")
+    require("MIREN lhe dera" in source[0][55106] and "Hoje fui feliz" in source[0][59578] and "pato de borracha" in source[0][59578],"open discrepancies")
+    require("Outro azul-claro" in source[0][55964] and "casamento" in source[0][57020] and "se ela quiser" in source[0][57112] and "sequer havia sido convidada" in source[0][57372],"duck and private marriage")
+    require("diferenças entre a resposta de orientação" in source[0][58562] and "verificações locais foram concluídas" in source[0][60574] and "convidado civil" in source[0][60576] and "continuava desconhecida" in source[0][60586],"ARGOS and invitation gate")
+    require(source[0][60920]=="CAEDREN acompanhou." and 21 not in result["axes_represented"],"source boundary and axis restraint")
+    require(cp["next_line"]==r["next_line"]==q[38]["start"]==60922 and q[38]["previous_macro"]==m["id"],"next cursor")
+    require(cp["native_validation"]=="PENDING" and cp["production_gate"]=="HOLD" and not cp["canon_changed"] and not cp["official_checkpoint_changed"] and not cp["semantic_certification"] and not cp["promotion"],"gate")
+    return {**result,"status":"PASS_NATIVE_MACRO_0038_COMPLETE","session_new_lines":20158,"session_new_records":98,"next_line":60922,"macro_complete":True,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False,"authority_counts":dict(Counter(x["authority"] for x in allr)),"visibility_counts":dict(Counter(x["visibility"] for x in allr))}
+
 def main():
     p=argparse.ArgumentParser();p.add_argument("--engine-root",default=".");p.add_argument("--archive-root",required=True)
-    a=p.parse_args();print(json.dumps(verify_macro37_close(a.engine_root,a.archive_root),sort_keys=True))
+    a=p.parse_args();print(json.dumps(verify_macro38_close(a.engine_root,a.archive_root),sort_keys=True))
 if __name__=="__main__":main()
