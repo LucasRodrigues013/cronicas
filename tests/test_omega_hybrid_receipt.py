@@ -33,6 +33,16 @@ class HybridTests(unittest.TestCase):
     def test_bad_anchor(self):
         self.r["records"][0]["evidence"]["span_sha256_utf8"]="0"*64
         with self.assertRaises(ValueError):self.run_check()
+    def test_explicit_join_without_single_primary(self):
+        self.source=(self.source[0],self.source[1],((1,1,"blob"),(2,3,"other")),"src")
+        self.r["records"][0]["evidence"].update(blob_sha1=None,source_blob_sha1s=["blob","other"])
+        self.r["metadata"][0]["evidence"]["blob_sha1"]="other"
+        self.run_check()
+        self.r["records"][0]["evidence"]["source_blob_sha1s"]=["blob"]
+        with self.assertRaises(ValueError):self.run_check()
+    def test_null_primary_single_part_rejected(self):
+        self.r["records"][0]["evidence"].update(blob_sha1=None,source_blob_sha1s=["blob"])
+        with self.assertRaises(ValueError):self.run_check()
     def test_bad_physical_blob(self):
         self.r["records"][0]["evidence"]["blob_sha1"]="other"
         with self.assertRaises(ValueError):self.run_check()

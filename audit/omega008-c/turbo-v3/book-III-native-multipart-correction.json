@@ -1,0 +1,22 @@
+{
+  "schema": "OMEGA_NATIVE_PROVENANCE_RECONCILIATION_V1",
+  "failed_run": 46049450652,
+  "failed_job": 140676827106,
+  "failed_commit": "6fac6ae5ee4c6b41eb7f2a1aab3c182765a53284",
+  "record": "O8C-B27-037",
+  "receipt_blob": "35724a7a980c8ebfcd221cbbec162d0d12d1fdb7",
+  "range": [
+    252828,
+    252927
+  ],
+  "primary": null,
+  "actual_parts": [
+    "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+    "7c01d3a2bebc056d3a6e41fb212f49128374b8dc"
+  ],
+  "anchor_sha256": "05d0f2bb87528e9e3f4609dc5d02598044f5575f3e0a9c5bfab2ab9c1639b450",
+  "finding": "Exact explicit multiple physical blobs; no single principal blob. Adapter compatibility defect, no receipt rewrite.",
+  "correction": "Accept null only on explicit exact multipart V3 list; reject null single-part or mismatched lists. Native rerun required.",
+  "promotion": false,
+  "canon_changed": false
+}

@@ -59,7 +59,13 @@ def span(e, lo, hi, role, digest, bounds, source=None):
         if e is not None:
             actual={p[2] for p in source[2] if p[0]<=hi and p[1]>=lo}
             given=e.get("blob_sha1_parts",e.get("source_blob_sha1s",[e["blob_sha1"]]))
-            require(e["blob_sha1"] in actual and set(given)==actual, "physical provenance")
+            primary=e["blob_sha1"]
+            # A joined literal span can have no single principal physical blob.
+            # Only accept null for an explicitly enumerated exact multi-part span.
+            require(isinstance(given,list) and len(given)==len(set(given)) and set(given)==actual
+                    and (primary in actual or (primary is None and len(actual)>1
+                         and "source_blob_sha1s" in e and "blob_sha1_parts" not in e)),
+                    "physical provenance")
 
 
 def validate_macro(receipt, macro, number, correction, overlay_rows, source=None):
