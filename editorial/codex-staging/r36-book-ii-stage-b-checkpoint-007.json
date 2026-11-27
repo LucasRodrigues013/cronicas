@@ -1,0 +1,151 @@
+{
+  "schema": "worldroot-r36-book-ii-stage-b-checkpoint-v1",
+  "book": 2,
+  "stage": "B",
+  "batch": 7,
+  "status": "PARTIAL_EDITORIAL_RECONCILIATION_ARCHIVED",
+  "previous_checkpoint": "c760388d567011ef9b152e2323c8ed94d06f62d1",
+  "review": {
+    "commit": "3219b11cf78fdd341a19173ff51ca7c5d0e43d10",
+    "author_approval_commit": "b69911bec741365c3cde0eff0c256faf0fef0ba4",
+    "author_approval_preflight_path": "editorial/codex-staging/r36-book-ii-stage-b-b007-preflight-DRAFT.json",
+    "author_approval_preflight_blob": "43c72add8a3e3fca4573dc048056f3a66dba2279",
+    "approved_ids": [
+      460,
+      520
+    ],
+    "native_receipt_sha256": "b062cfcaced88ca834c4fa984ea3032e255f0b02df605c223871800e76a046d4",
+    "validation_run": 45915067003,
+    "transfer_run": 45916296999,
+    "transfer_commit": "d4bfc92aae5546fc417ea5c9d0173b72ee7c3d3f"
+  },
+  "archive": {
+    "commit": "96012cea0072e60cb401186a1bdc901fb11bb85b",
+    "parent": "bd94ce02c705904b0ad9a562bc8edce3e3039f77",
+    "manifest_blob": "abccc25d11c400dd59b58d4bc055278885eec4f9",
+    "character_overlay": "c88d6d794ec09738eb53e25facb2f0a615fad9b0",
+    "world_overlay": "6c350853f98450cb5befa332999166b8fb65993f",
+    "naming_overlay": "e38a2c0f88b40270d3cd79b92ba387140fb6901f",
+    "files": {
+      "editorial/registries/r35-legacy-name-reconciliation-v9.json": {
+        "sha256": "278433e8c69c7f96347eb6613fef4d782df8768cb3ba74041fa95f9171c8aeb7",
+        "git_blob": "e38a2c0f88b40270d3cd79b92ba387140fb6901f"
+      },
+      "editorial/registries/r35-living-overlay-manifest.json": {
+        "sha256": "e6feb28a8d17100b443386084519335831c48c37e8cce1df92b04593946503cd",
+        "git_blob": "abccc25d11c400dd59b58d4bc055278885eec4f9"
+      },
+      "editorial/registries/r35-natural-completion-d579-v13.json": {
+        "sha256": "4d7f4d715a3a1223d4bb7373c17dc5d9e073799f1b6a1f03b5c41fae12bdfcdf",
+        "git_blob": "c88d6d794ec09738eb53e25facb2f0a615fad9b0"
+      },
+      "editorial/registries/r35-world-completion-d579-v11.json": {
+        "sha256": "e38ff4b9f955c2d9739f6eb10f8df7ed0fbea8b3caff4f1003a394ae1db7f03c",
+        "git_blob": "6c350853f98450cb5befa332999166b8fb65993f"
+      }
+    },
+    "remote_readback_verified": true
+  },
+  "counts": {
+    "targets_total": 261,
+    "editorially_reviewed": 213,
+    "remaining": 48,
+    "groups_reviewed": 162,
+    "groups_total": 203,
+    "fields_changed_this_batch": 19,
+    "field_updates_cumulative": 159,
+    "existing_entities_this_batch": 14,
+    "existing_profile_count": 192,
+    "independently_certified": 0,
+    "additional_observations": 8
+  },
+  "verification": {
+    "native_test_engine": "46c40e18d3e0f4fbcafc025ae9d08b91ca6e6417",
+    "native_tests_passed": 706,
+    "native_load_overlay_before_after": true,
+    "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+    "source_part_git_hashes_verified": 6,
+    "context_comparisons": 540,
+    "all_fields": 5923,
+    "unchanged_fields": 5904,
+    "all_protected_fields_unchanged": 153,
+    "private_scope_fields_unchanged": 40,
+    "names": 96,
+    "links": 25,
+    "narrative_head_blob": "9b4e09682fc3148511d59e73ec56fdcda4e396e5",
+    "sqlite": {
+      "records": 1256,
+      "events": 0,
+      "integrity_check": "ok",
+      "idempotent": true,
+      "restore_matches": true
+    },
+    "incorporation_audit_path": "editorial/codex-staging/r36-book-ii-stage-b-b007-incorporation-audit.json",
+    "remote_git_commit": "96012cea0072e60cb401186a1bdc901fb11bb85b",
+    "hosted_actions_dispatched": true,
+    "public_standard_runner": true,
+    "paid_artifact_upload": false
+  },
+  "reservations": {
+    "independent_certification_pending": true,
+    "book_i_reservations_inherited": true,
+    "production_hold": true,
+    "canonical_head_unchanged": true,
+    "unresolved_named_identity_and_infrastructure_candidates_separately_staged": true
+  },
+  "canon_changed": false,
+  "production_activated": false,
+  "next": {
+    "ledger_id": 521,
+    "global_line": 105779,
+    "stage": "B",
+    "batch": 8,
+    "base_archive": "96012cea0072e60cb401186a1bdc901fb11bb85b",
+    "first_group": [
+      521
+    ]
+  },
+  "free_only_runbook": "docs/r36-historical-review-free-only.md",
+  "approved_development_engine": "46c40e18d3e0f4fbcafc025ae9d08b91ca6e6417",
+  "public_free_only": {
+    "primary": "GitHub Actions standard public runner",
+    "fallback": "docs/r36-historical-review-free-only.md",
+    "production_hold": true,
+    "no_paid_services": true
+  },
+  "next_packet": {
+    "status": "SOURCE_PACKET_PREPARED_SEMANTIC_REVIEW_PENDING",
+    "ids": [
+      521,
+      568
+    ],
+    "groups": 41,
+    "records": 48,
+    "source_lines": [
+      105779,
+      135469
+    ],
+    "context_comparisons": 432,
+    "context_mismatches": 0,
+    "ledger_blob": "96ebb393cb2e95975cb81948e78519c46da7b9f0",
+    "source_parts_verified_for_context": [
+      "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+      "3449845d3854daa62af01333e4efd1a2c615b6a4",
+      "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+      "94dfd877863a539b1a904cc23c4dd6540dd0426d"
+    ],
+    "next_after_b008": {
+      "id": null,
+      "line": null,
+      "stage": "C_PENDING"
+    },
+    "editorial_focus": [
+      "Nixa identity and supervised investigation",
+      "Iria vs Ira identity disambiguation",
+      "Rhem operational authority and events",
+      "new lives and voluntary integration",
+      "metaphor and non-entity matches"
+    ],
+    "no_candidate_fields_approved": true
+  }
+}
