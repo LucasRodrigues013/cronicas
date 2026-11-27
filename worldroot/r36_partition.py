@@ -2,7 +2,20 @@
 from collections import Counter
 from .r36_benchmark import FIELDS,TARGETS,SPLITS,validate_inventory,require
 
-def feasibility(rows):
+def feasibility(rows, *, development_ids=None):
+    """Check structural split capacity with optional fixed development cases.
+
+    The caller supplies IDs of all known/exposed cases. A connected component
+    containing any such case may only be assigned to development. Omission of
+    the argument preserves the legacy unconstrained capacity check; neither
+    mode authenticates source lineage or reserved custody.
+    """
+    if development_ids is not None:
+        require(isinstance(development_ids,list) and all(
+            isinstance(x,str) and bool(x) and x==x.strip() for x in development_ids
+        ),"Invalid fixed development IDs")
+        require(len(set(development_ids))==len(development_ids),"Duplicate fixed development ID")
+    fixed=set(development_ids or [])
     require(isinstance(rows,list) and 0<len(rows)<=60,"Pilot inventory must contain 1..60 cases")
     parent=list(range(len(rows)));owners={};ids=set()
     def find(i):
@@ -17,13 +30,17 @@ def feasibility(rows):
               *(("entity",e) for e in r["entities"]),*(("source",e) for e in r["source_pins"])]
         for tag in tags:
             j=owners.setdefault(tag,i);parent[find(i)]=find(j)
-    sizes=sorted(Counter(find(i) for i in range(len(rows))).values(),reverse=True)
+    require(fixed<=ids,"Unknown fixed development ID")
+    counts=Counter(find(i) for i in range(len(rows)))
+    forced={find(i) for i,r in enumerate(rows) if r["id"] in fixed}
+    components=sorted(((size,root in forced) for root,size in counts.items()),reverse=True)
+    sizes=[size for size,_ in components]
     # Exact bounded dynamic programming: state is counts in dev/val/reserved.
     reachable={(0,0,0)};limits=tuple(SPLITS.values())
-    for size in sizes:
+    for size,development_only in components:
         nxt=set()
         for state in reachable:
-            for k in range(3):
+            for k in ((0,) if development_only else range(3)):
                 v=list(state);v[k]+=size
                 if v[k]<=limits[k]:nxt.add(tuple(v))
         reachable=nxt
