@@ -12,6 +12,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   stress:
+    if: github.event.repository.private == true
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:

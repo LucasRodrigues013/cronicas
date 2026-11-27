@@ -42,7 +42,7 @@ def paired_metrics(experiment,champion,challenger):
         require(set(data)==set(experiment["common"]["case_ids"]),"Missing or extra paired cases")
         return data
     a,b=collect(champion),collect(challenger)
-    require(all(a[k]["input_sha"]==b[k]["input_sha"] and a[k]["expected"]==b[k]["expected"] for k in a),"Non-equivalent case inputs")
+    require(all(a[k]["input_sha"]==b[k]["input_sha"] and a[k]["expected"]==b[k]["expected"] and a[k]["author_total"]==b[k]["author_total"] for k in a),"Non-equivalent case inputs")
     def ratio(n,d):return n/d if d else None
     def totals(data):
         v=list(data.values());n=len(v)

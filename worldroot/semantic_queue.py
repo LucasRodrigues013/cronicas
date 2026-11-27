@@ -21,10 +21,11 @@ def jobs(rows,already=()):
         if ident not in done:groups[(r["source"],r["line"],r["anchor_sha256"])].append(r)
     for key,group in sorted(groups.items()):
         first=group[0]
-        if any(r["context"]!=first["context"] or r["source_sha256"]!=first["source_sha256"] for r in group):raise ValueError("Conflicting repeated context")
+        if any(any(r.get(k)!=first.get(k) for k in ("context","source_sha256","source_status","day","anchor")) for r in group):raise ValueError("Conflicting repeated context")
         value={"schema":SCHEMA,"source":first["source"],"source_sha256":first["source_sha256"],"source_status":first["source_status"],"day":first.get("day"),"line":first["line"],"anchor":first["anchor"],"anchor_sha256":first["anchor_sha256"],"context":first["context"],"targets":[{"original_id":r["original_id"],"entity_id":r["entity_id"],"field":r["field"]} for r in sorted(group,key=lambda x:x["original_id"])]}
         yield {"job_id":seal(value),**value}
 def validate(job,answer):
+    if not isinstance(job,dict) or job.get("schema")!=SCHEMA or job.get("job_id")!=seal({k:v for k,v in job.items() if k!="job_id"}):raise ValueError("Invalid semantic job seal")
     if not isinstance(answer,dict):raise ValueError("Invalid review object")
     if answer.get("job_id")!=job["job_id"] or not isinstance(answer.get("executor"),str) or not answer["executor"].strip() or not isinstance(answer.get("model_revision"),str) or not answer["model_revision"].strip():raise ValueError("Review identity required")
     if answer.get("source_role") not in ROLES or not isinstance(answer.get("role_reason"),str) or not answer["role_reason"].strip():raise ValueError("Explicit source role required")
