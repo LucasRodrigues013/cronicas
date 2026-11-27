@@ -32,3 +32,25 @@ class OmegaMutationTests(unittest.TestCase):
                 self.assertIn("AssertionError: ValueError not raised",run.stderr)
                 self.assertNotIn("ERROR:",run.stderr)
                 self.assertNotIn("ImportError",run.stderr)
+
+class OmegaEditorialMutationTests(unittest.TestCase):
+    def test_two_editorial_mutants(self):
+        mutations=[
+            ("editorial_guard.py","represented = literal | summary","represented = literal | summary | set(selected)","test_live_budget_and_omission"),
+            ("literary_revision.py","required = (0, 1, 2, 3, len(lines)-1)","required = (0, 1, 2, 3)","test_live_identity_and_authority_fail_closed"),
+        ]
+        for filename,needle,replacement,method in mutations:
+            with self.subTest(mutation=method),tempfile.TemporaryDirectory() as directory:
+                root=Path(directory)
+                shutil.copytree(ROOT/"worldroot",root/"worldroot",ignore=shutil.ignore_patterns("__pycache__"))
+                shutil.copy2(ROOT/"tests/test_omega_editorial_coverage.py",root/"test_omega_editorial_coverage.py")
+                path=root/"worldroot"/filename
+                source=path.read_text(encoding="utf-8")
+                self.assertEqual(source.count(needle),1)
+                path.write_text(source.replace(needle,replacement),encoding="utf-8")
+                env={**os.environ,"PYTHONPATH":str(root)}
+                run=subprocess.run([sys.executable,"-m","unittest","test_omega_editorial_coverage.OmegaEditorialCoverage."+method],cwd=root,env=env,capture_output=True,text=True,timeout=15)
+                self.assertEqual(run.returncode,1,run.stderr)
+                self.assertIn("FAIL:",run.stderr)
+                self.assertNotIn("ERROR:",run.stderr)
+                self.assertNotIn("ImportError",run.stderr)

@@ -145,6 +145,17 @@ def audit_release(root: Path, episode_id: str) -> dict:
         "prose_words_approx": prose_words,
         "longform_target_status": (depth.get("status") if "depth" in locals() else None),
         "lived_narrative_advisory": lived_advisory,
+        "editorial_readback_diagnostic": ({
+            "mode": literary["editorial_brief_mode"],
+            "represented_rule_ids": literary["consulted_rules"],
+            "literal_rule_ids": literary["editorial_context_coverage"]["literal_rule_ids"],
+            "summary_rule_ids": literary["editorial_context_coverage"]["summary_rule_ids"],
+            "omitted_budget_rule_ids": literary["editorial_context_coverage"]["omitted_budget_rule_ids"],
+            "evaluated_rule_ids": literary["evaluated_rule_ids"],
+            "generation_evaluated": False,
+            "scope": "READBACK_PREFLIGHT_ONLY_NOT_GENERATION_CONTEXT",
+            "semantic_certification": False,
+        } if "literary" in locals() else None),
         "r25_contract": ("ENFORCED" if "inbox" in locals() and isinstance(inbox, dict)
                          and inbox.get("schema") in ("worldroot-draft-inbox-v2", "worldroot-draft-inbox-v3")
                          else "LEGACY_READBACK_NO_RETROACTIVE_REJECTION"),

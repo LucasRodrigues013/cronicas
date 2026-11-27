@@ -62,6 +62,19 @@ class ReaderDeliveryGateTest(unittest.TestCase):
         self.assertEqual(receipt["prose_words_approx"], 10000)
         self.assertFalse(receipt["canon_changed"])
 
+    def test_omega_editorial_diagnostic_is_readback_not_generation(self):
+        self.archive_synthetic()
+        with patch("worldroot.delivery_gate.presentation_preflight", return_value={"errors": []}):
+            receipt = audit_release(self.root, ID)
+        self.assertTrue(receipt["release_allowed"], receipt)
+        c = receipt["editorial_readback_diagnostic"]
+        self.assertEqual(c["scope"], "READBACK_PREFLIGHT_ONLY_NOT_GENERATION_CONTEXT")
+        self.assertEqual(set(c["represented_rule_ids"]), set(c["literal_rule_ids"]) | set(c["summary_rule_ids"]))
+        self.assertEqual(c["evaluated_rule_ids"], ["P01"])
+        self.assertFalse(c["generation_evaluated"])
+        self.assertFalse(c["semantic_certification"])
+        self.assertFalse(receipt["canon_changed"])
+
     def test_rejected_original_never_passes_release_gate(self):
         self.archive_synthetic()
         marker = self.root / "editorial" / "rejections" / (ID + ".json")

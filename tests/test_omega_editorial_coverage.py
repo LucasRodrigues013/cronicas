@@ -76,3 +76,9 @@ class OmegaEditorialCoverage(unittest.TestCase):
         for phrase in ("D579","fixture","GÊNESE","planejamento não é fato narrado"):
             self.assertIn(phrase,b["text"])
         self.assertNotIn("D538",b["text"])
+
+    def test_coverage_diagnostics_across_budgets(self):
+        for budget in (550,900,1750,4000):
+            b=build_live_brief(HEAD,self.policy,budget)
+            c=self.verify_coverage(b,budget)
+            print("OMEGA02_CONTEXT",budget,"chars",c["rendered_chars"],"legacy",len(b["selected_rule_ids"]),"represented",len(c["represented_rule_ids"]),"literal",len(c["literal_rule_ids"]),"summary",len(c["summary_rule_ids"]),"omitted_budget",len(c["omitted_budget_rule_ids"]),"unrepresented",len(c["unrepresented_rule_ids"]))
