@@ -10,12 +10,12 @@
   },
   "base_registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
   "character_overlay": {
-    "path": "editorial/registries/r35-natural-completion-d579-v13.json",
-    "git_blob": "c88d6d794ec09738eb53e25facb2f0a615fad9b0"
+    "path": "editorial/registries/r35-natural-completion-d579-v14.json",
+    "git_blob": "db6190d652c35e87ad8c6f670de077e3b13b816e"
   },
   "world_overlay": {
-    "path": "editorial/registries/r35-world-completion-d579-v11.json",
-    "git_blob": "6c350853f98450cb5befa332999166b8fb65993f"
+    "path": "editorial/registries/r35-world-completion-d579-v12.json",
+    "git_blob": "7eabe936795808d65a6a2f8c12a742475a9a3605"
   },
   "vetoes": [],
   "rules": {
@@ -43,8 +43,8 @@
     "Livro II, lote 005: 11 registros, oito grupos, 29 campos; Sete Auroras e transicao autoral, sem promocao canonica."
   ],
   "naming_review": {
-    "path": "editorial/registries/r35-legacy-name-reconciliation-v9.json",
-    "git_blob": "e38a2c0f88b40270d3cd79b92ba387140fb6901f",
+    "path": "editorial/registries/r35-legacy-name-reconciliation-v10.json",
+    "git_blob": "baffe1ae35556394a8cbdc788197e741b88e269f",
     "scope": "EDITORIAL_PROPOSALS_ONLY"
   },
   "author_recovery": {
@@ -120,14 +120,14 @@
     }
   },
   "pending_historical_review": {
-    "batch": 7,
+    "batch": 8,
     "ids": [
-      460,
-      520
+      521,
+      568
     ],
     "status": "CANDIDATE_ONLY_AUTHOR_APPROVAL_REQUIRED",
-    "base_checkpoint": "c760388d567011ef9b152e2323c8ed94d06f62d1",
-    "delta_sha256": "898dc94613ba623842f4999779dfb4ca22099122e5960844d20e41ab75aa21dc",
+    "base_checkpoint": "a84c799f43088e82e0af033aa1b387d82c9934fc",
+    "delta_sha256": "01e251abb4c1f4cebfd0904bac7dc2eea87f2fae5592bda0e35f2117b4442c03",
     "production_hold": true
   }
 }
