@@ -1,0 +1,72 @@
+{
+  "schema": "OMEGA_BOOK_IV_CYCLE_RECOVERY_RELEASE_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "parent": "cee4e9de1f5f24f9dc55b81b9ddc38e3ad1e0c66",
+  "previous_checkpoint_blob": "b07ffd8d3f0ba2f969d7c20bd0a6bc5d343d1c65",
+  "authority": "Author explicitly authorizes public execution, finalizing cycle and starting Book IV; recovery staging only.",
+  "native": {
+    "run": 46049622344,
+    "literal_job": 140677407512,
+    "staging_job": 140677407926,
+    "conclusions": "success",
+    "logs_readback": true,
+    "tests": {
+      "hybrid": 14,
+      "turbo": 11,
+      "codex": 12,
+      "handoff": 10,
+      "total": 47,
+      "failed": 0
+    },
+    "literal_native_reverified": true,
+    "registry_ids_native_checked": true,
+    "records": 886,
+    "coverage": 395,
+    "axes": 30,
+    "metadata": 11,
+    "registry": {
+      "ids": 1238,
+      "keys": 211,
+      "single": 46,
+      "ambiguous": 4,
+      "unmatched": 161
+    },
+    "sqlite_staging": 886,
+    "typed_events": 0,
+    "canonical_records": 0
+  },
+  "cycle_review": {
+    "status": "ACCEPTED_FOR_STAGED_RECOVERY_CONTINUATION",
+    "controls": 45,
+    "preserved": 36,
+    "corrected": 1,
+    "open_without_inference": 8,
+    "semantic_claim_level_recall": "NOT_MEASURED",
+    "typed_projection": "DEFERRED_GLOBAL_D579",
+    "independent_review": "DEFERRED_GLOBAL_D579",
+    "full_regression": "DEFERRED_GLOBAL_D579"
+  },
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "archive_head": {
+    "day": 579,
+    "sequence": 50,
+    "blob": "9b4e09682fc3148511d59e73ec56fdcda4e396e5",
+    "pending": "LVI-C09-PII-D580-AUTHOR-SOURCE"
+  },
+  "recovery_gate": "AUTHORIZED_STAGING_ONLY",
+  "next_macro": 30,
+  "range": [
+    268704,
+    279001
+  ],
+  "next_line": 268704,
+  "macro30_status": "AUTHORIZED_NOT_STARTED",
+  "book_IV": "OS MARES DO MUNDO ESQUECIDO",
+  "production_gate": "HOLD",
+  "official_checkpoint_changed": false,
+  "canon_changed": false,
+  "promotion": false,
+  "semantic_certification": false,
+  "global_release": false,
+  "conditions": "Preserve open identity and nomenclature controls; do not inject reader-only knowledge, promote candidates or invent source. Per-lot review and five-lot/book-boundary cycle. Independent global semantic homologation and full native regression plus verified typed projection at D579."
+}
