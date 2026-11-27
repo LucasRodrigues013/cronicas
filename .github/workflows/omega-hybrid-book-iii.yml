@@ -8,6 +8,7 @@ on:
       - 'worldroot/omega_book_iv_handoff.py'
       - 'worldroot/omega_book_iv_partial.py'
       - 'worldroot/omega_book_iv_continuation.py'
+      - 'worldroot/omega_book_iv_macro30.py'
       - 'tests/test_omega_book_iv_handoff.py'
       - '.github/workflows/omega-hybrid-book-iii.yml'
 permissions:
@@ -53,6 +54,8 @@ jobs:
         run: python -m worldroot.omega_book_iv_partial --archive-root isolated-archive
       - name: Verify Book IV chapter one continuation
         run: python -m worldroot.omega_book_iv_continuation --archive-root isolated-archive
+      - name: Verify complete Book IV macro 0030
+        run: python -m worldroot.omega_book_iv_macro30 --archive-root isolated-archive
       - name: Remove ephemeral archive
         if: always()
         run: rm -rf isolated-archive
