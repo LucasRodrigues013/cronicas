@@ -1,0 +1,52 @@
+{
+  "status": "NATIVE_CANDIDATE_VALIDATED_NOT_APPROVED",
+  "base_checkpoint": "c760388d567011ef9b152e2323c8ed94d06f62d1",
+  "base_archive": "bd94ce02c705904b0ad9a562bc8edce3e3039f77",
+  "engine": "46c40e18d3e0f4fbcafc025ae9d08b91ca6e6417",
+  "records": 61,
+  "groups": 45,
+  "contexts_verified": 540,
+  "source_part_hashes": 6,
+  "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+  "fields": 5923,
+  "changed_fields": 19,
+  "unchanged_fields": 5904,
+  "profiles": 192,
+  "private_scope_fields_unchanged": 40,
+  "all_protected_fields_unchanged": 153,
+  "naming_count": 96,
+  "links": 25,
+  "native_load_overlay_before_after": true,
+  "projection_records": 1256,
+  "projection_events": 0,
+  "replay_restore": true,
+  "candidate_blobs": {
+    "editorial/registries/r35-natural-completion-d579-v13.json": "c88d6d794ec09738eb53e25facb2f0a615fad9b0",
+    "editorial/registries/r35-world-completion-d579-v11.json": "6c350853f98450cb5befa332999166b8fb65993f",
+    "editorial/registries/r35-legacy-name-reconciliation-v9.json": "e38a2c0f88b40270d3cd79b92ba387140fb6901f",
+    "editorial/registries/r35-living-overlay-manifest.json": "abccc25d11c400dd59b58d4bc055278885eec4f9"
+  },
+  "next": {
+    "id": 521,
+    "line": 105779
+  },
+  "future_packets": [
+    {
+      "ids": [
+        521,
+        568
+      ],
+      "records": 48,
+      "groups": 41,
+      "source_lines": [
+        105779,
+        135469
+      ],
+      "status": "UNREVIEWED_PACKET_PLAN"
+    }
+  ],
+  "canon_changed": false,
+  "production_activated": false,
+  "semantic_certification": false,
+  "approval_required": true
+}
