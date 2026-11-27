@@ -1,0 +1,75 @@
+{
+  "schema": "worldroot-r36-book-iii-b001-preliminary-review-v1",
+  "status": "PRELIMINARY_CONTEXT_REVIEW_NOT_INCORPORATED",
+  "inventory_blob": "7053421f9ddd7e7884e851c85350bd79b4054c98",
+  "ledger_blob": "96ebb393cb2e95975cb81948e78519c46da7b9f0",
+  "records": [
+    {
+      "id": 569,
+      "line": 135881,
+      "anchor_sha256": "6588750467f30b781cd919c7e17d2d422e0e3ad29ca172a0fdab10a7a2ff5939",
+      "entity": "seral",
+      "field": "location",
+      "classification": "HISTORICAL_UNCERTAINTY",
+      "finding": "Lucas pergunta; mapas comerciais sugerem região costeira, não confirmam conexão navegável.",
+      "semantic_certified": false
+    },
+    {
+      "id": 570,
+      "line": 135991,
+      "anchor_sha256": "017b19b630f70a692a78c39becbc802d8412495dfb9b35be4a59bdcee7625d76",
+      "entity": "naira",
+      "field": "architecture",
+      "classification": "HISTORICAL_KNOWLEDGE",
+      "finding": "Naira identifica levantamentos necessários antes de escolher porto; não prova localização nem obra concluída.",
+      "semantic_certified": false
+    },
+    {
+      "id": 571,
+      "line": 136071,
+      "anchor_sha256": "42dd39484c75e06d6d0ac94a2352cdfebc5ff3ce5253c9d7699a0692e9d57d9e",
+      "entity": "naira",
+      "field": "appearance",
+      "classification": "NO_APPEARANCE_FACT",
+      "finding": "Gesto momentâneo; diálogo demonstra orientação sobre compromissos de projeto, não aparência física.",
+      "semantic_certified": false
+    },
+    {
+      "id": 572,
+      "line": 137985,
+      "anchor_sha256": "94cea8b51bf88f9e3fd5b2d11ebff6793b9e63799f135f382367b07981068c89",
+      "entity": "seral",
+      "field": "architecture",
+      "classification": "NARRATOR_ONLY_LOCATION",
+      "finding": "Entreposto fluvial de Seral existe na cena; localização desconhecida de Três Arcos.",
+      "semantic_certified": false
+    },
+    {
+      "id": 573,
+      "line": 138368,
+      "anchor_sha256": "302cceb4d112b7739e1855c24c6f1bf377ec669c8de31c08bce6c26698306750",
+      "entity": "seral",
+      "field": "powers",
+      "classification": "MISCLASSIFIED_POWER",
+      "finding": "Informação prática de Maira Kest não constitui poder; conhecimento ainda não disponível aos cartógrafos.",
+      "semantic_certified": false
+    },
+    {
+      "id": 574,
+      "line": 138368,
+      "anchor_sha256": "302cceb4d112b7739e1855c24c6f1bf377ec669c8de31c08bce6c26698306750",
+      "entity": "seral",
+      "field": "architecture",
+      "classification": "DUPLICATE_CONTEXT_NO_ARCHITECTURE_FACT",
+      "finding": "Mesmo contexto de 573; não confirma infraestrutura nem ligação do ramal ao rio ou porto.",
+      "semantic_certified": false
+    }
+  ],
+  "source_full_read_pending": true,
+  "registry_comparison_pending": true,
+  "field_updates": 0,
+  "production_hold": true,
+  "free_only": true,
+  "canon_changed": false,
+  "next": "Complete literal source and registry comparison; finalize Stage A before incorporation."
+}
