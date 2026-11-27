@@ -2,7 +2,7 @@
   "schema": "worldroot-r36-book-iii-stage-a-inventory-v1",
   "book": 3,
   "stage": "A",
-  "status": "SOURCE_BOUND_LEDGER_INVENTORY_STARTED",
+  "status": "STAGE_A_STRUCTURAL_INVENTORY_COMPLETE",
   "previous_closure": "1de1bda7da335797ce8169f39e0866c78f10ea1c",
   "source": {
     "name": "01_DIA_001_A_383_FONTE_LITERAL.txt",
@@ -15,7 +15,14 @@
     "next_book_day": 366,
     "end_anchor": "FIM DO LIVRO III — O PRIMEIRO HORIZONTE",
     "next_anchor": "LIVRO IV — OS MARES DO MUNDO ESQUECIDO",
-    "boundary_method": "Book II inventory start marker; Book III end literal part 006 local line 15770 plus offset 252886 confirmed by 38 exact ledger anchor matches; full source reread pending"
+    "boundary_method": "Book II inventory start marker; Book III end literal part 006 local line 15770 plus offset 252886 confirmed by 38 exact ledger anchor matches; full source reread pending",
+    "verification": {
+      "parts_recovered": 6,
+      "exact_anchor_matches": 215,
+      "chapter_numbers": 36,
+      "full_source_lines": 296900,
+      "method": "Git blob retrieval and concatenation; exact line comparison; no independent semantic certification or fresh cryptographic digest"
+    }
   },
   "ledger": {
     "ids": [
