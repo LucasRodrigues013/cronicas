@@ -1,0 +1,48 @@
+{
+  "schema": "OMEGA_TURBO_V3_RECOVERY_CHECKPOINT_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "archive_head": {
+    "day": 579,
+    "sequence": 50,
+    "blob": "9b4e09682fc3148511d59e73ec56fdcda4e396e5",
+    "pending": "LVI-C09-PII-D580-AUTHOR-SOURCE"
+  },
+  "base_official_checkpoint": "1b92a806c9415fb70b95e1d5ed1ee0670585c5c2bb75b4a4d400ea5a182e6c5c",
+  "official_cursor": 206662,
+  "official_macros": 22,
+  "previous": {
+    "path": "audit/omega008-c/turbo-v3/recovery-checkpoint-0023.json",
+    "git_blob": "c9e40e064477d530f30f37eb364af4cc71d0946c",
+    "commit": "b18f8bf682dff698ee4dfa1e5896418f53dd08bd"
+  },
+  "macro": 24,
+  "macro_completed_editorial_intake": true,
+  "receipt": {
+    "path": "audit/omega008-c/turbo-v2/pilot-macro-0024.json",
+    "sha256": "fa19454c3170bc451b3e95173842bea9da0e466e8d11d1b493c019add670afc1",
+    "commit": "a4d2e66698fa74d8bdef0a65fc8d4658494a48be"
+  },
+  "pilot_checkpoint": {
+    "path": "audit/omega008-c/turbo-v2/pilot-checkpoint-0024.json",
+    "git_blob": "32c4e89cd081853a9d7875c1156a55f28d3e541c"
+  },
+  "handoff": {
+    "path": "audit/omega008-c/turbo-v3/handoff-0023-0024.json",
+    "git_blob": "04c33de78a882fc5694350f98d6c439dfed701d2",
+    "commit": "f7597932377ff4b6eb30e6749bb8311678cc54e9"
+  },
+  "recovery_cursor": 227182,
+  "recovered_macros_including_staging": 24,
+  "candidate_total_including_staging": 1778,
+  "day": 251,
+  "chapter": 25,
+  "next_macro_id": "ff9b14042728612d832175caaaa63520a23f5f132b2f5e2888a20b99ffcf18e7",
+  "status": "RECOVERY_CHECKPOINT_COMMITTED_STAGING_ONLY",
+  "review_policy": "Retain global reconciliation at D579; per-cycle local semantic review, critical scope and identity checks, append-only corrections proposed; independent certification remains gated.",
+  "gate": "HOLD_OFFICIAL_CHECKPOINT_PENDING_INDEPENDENT_SEMANTIC_HOMOLOGATION_AND_NATIVE_REGRESSION",
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "independent_review": false,
+  "semantic_certification": false
+}
