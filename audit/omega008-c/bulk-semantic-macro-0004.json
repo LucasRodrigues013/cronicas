@@ -1,0 +1,4612 @@
+{
+  "schema": "worldroot-omega008-c-chronological-recovery-v1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "macro_id": "32292340061ec3ff301afa88dd0d3485c7cbb4fd06371e083c30769f1994a233",
+  "previous_macro_id": "54ce428c4d8d4b2ea51529da9382214c0aba5a2ef79f2fb7cd13009ff19471ce",
+  "previous_receipt": {
+    "path": "audit/omega008-c/bulk-semantic-macro-0003.json",
+    "sha256_utf8": "c7d9288f4275c495052bd068bf93a5cfcd84cc62a477f3184063fbdb04243e5c"
+  },
+  "base_checkpoint_sha256": "bc07d8203f602925dfc7261eb603831e2bad82fbc20b2d73a3c329d15ef9c219",
+  "range": [
+    21442,
+    31642
+  ],
+  "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+  "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+  "records": [
+    {
+      "id": "O8C-B4-001",
+      "day": 9,
+      "book": "I",
+      "chapter_hint": 23,
+      "type": "delegation",
+      "axes": [
+        3,
+        7,
+        15,
+        19,
+        20,
+        24,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "lysa",
+        "brannik",
+        "esmara",
+        "varo"
+      ],
+      "summary": "Kael busca arquiteto e referências; Lysa prepara remuneração de Esmara independente de adesão; Brannik prossegue oficina/testes com consentimento; Varo programa treino.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 21443,
+        "line_end": 21521,
+        "role": "Response",
+        "span_sha256_utf8": "3155ff631d72fa0e35393e3ef998ffeba9c11802d04849e3ca80c2fd76320b85"
+      }
+    },
+    {
+      "id": "O8C-B4-002",
+      "day": 9,
+      "book": "I",
+      "chapter_hint": 23,
+      "type": "power",
+      "axes": [
+        2,
+        11,
+        12,
+        14,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "sistema"
+      ],
+      "summary": "Avaliação privada de criação consciente especializada: possível em princípio, configuração multidisciplinar completa excede reserva segura; não executada; sem consumo significativo, sem conhecimento local automático.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 21525,
+        "line_end": 21635,
+        "role": "Response",
+        "span_sha256_utf8": "79b8313708651bf204838e457c989ed871af2fb3fbbd884130c80b7405ea8bcc"
+      }
+    },
+    {
+      "id": "O8C-B4-003",
+      "day": 9,
+      "book": "I",
+      "chapter_hint": 23,
+      "type": "reflection",
+      "axes": [
+        7,
+        9,
+        11,
+        14,
+        15,
+        19,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "varo"
+      ],
+      "summary": "Lucas compara crescimento de Kael e Varo, considera especialização, formação e biblioteca de projetos sem implantar memórias; não decide criação.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 21635,
+        "line_end": 21703,
+        "role": "Response",
+        "span_sha256_utf8": "5ab916e85da1ea81607dcc581d9abd59074288fe406899864226d0f741470633"
+      }
+    },
+    {
+      "id": "O8C-B4-004",
+      "day": 9,
+      "book": "I",
+      "chapter_hint": 23,
+      "type": "plan",
+      "axes": [
+        3,
+        7,
+        9,
+        15,
+        17,
+        19,
+        20,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "brannik",
+        "esmara",
+        "oren"
+      ],
+      "summary": "Oren sugere depósitos elevados sem bloquear drenagem; quatro canteiros de teste, caminho próprio para máquina, componentes padronizados. Modelagem de horta, oficina e depósito.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 21707,
+        "line_end": 21838,
+        "role": "Response",
+        "span_sha256_utf8": "a481b753622eaf62a9a4fded8a7b92c8dc7767e4b21da0d84ff51b0567864f8f"
+      }
+    },
+    {
+      "id": "O8C-B4-005",
+      "day": 9,
+      "book": "I",
+      "chapter_hint": 23,
+      "type": "report",
+      "axes": [
+        3,
+        4,
+        5,
+        16,
+        17,
+        19,
+        20,
+        25
+      ],
+      "entities": [
+        "neria-valmont",
+        "selene-arvost",
+        "esmara",
+        "kael",
+        "lysa",
+        "lucas"
+      ],
+      "summary": "Selene designa Néria Valmont, engenheira civil de Halvern com experiência em pontes, drenagem e obras públicas, para vistoria D10; sem vínculo com Legião. Esmara aceita contratação inicial remunerada, não adesão.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 21841,
+        "line_end": 21917,
+        "role": "Response",
+        "span_sha256_utf8": "5537e98c0586ce54da1fb78609f962931e70a2ff3493f20f7686fc3e5d842de6"
+      }
+    },
+    {
+      "id": "O8C-B4-006",
+      "day": 9,
+      "book": "I",
+      "chapter_hint": 23,
+      "type": "private-reflection",
+      "axes": [
+        7,
+        9,
+        11,
+        12,
+        14,
+        19,
+        25,
+        27
+      ],
+      "entities": [
+        "lucas"
+      ],
+      "summary": "Projeto particular As Mentes da Legião: recrutar, formar e criar quando viável; inteligência integrada, autonomia, não substituir pessoas; ainda não divulgado.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 21921,
+        "line_end": 22027,
+        "role": "Response",
+        "span_sha256_utf8": "9354d23e6c86968ee877151d184e45101f0cf19a1ee4ff51062385112c5b1b13"
+      }
+    },
+    {
+      "id": "O8C-B4-007",
+      "day": 9,
+      "book": "I",
+      "chapter_hint": 23,
+      "type": "reader-only",
+      "axes": [
+        3,
+        19,
+        20,
+        23,
+        26,
+        27
+      ],
+      "entities": [
+        "bandeira-cinzenta",
+        "durghan",
+        "grazha",
+        "neria-valmont"
+      ],
+      "summary": "Interlúdio adversário reconhece desenvolvimento civil como ameaça crescente; Uzgor discute trocas, Néria prepara vistoria. Painel D9 mantém 300 originais, Brannik externo, uma máquina, nenhum novo criado.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 22029,
+        "line_end": 22112,
+        "role": "Response",
+        "span_sha256_utf8": "541ee241403dec6195c17c2aaabad4cc90d403da3c6e2b4512e92479f2157f27"
+      }
+    },
+    {
+      "id": "O8C-B4-008",
+      "day": 10,
+      "book": "I",
+      "chapter_hint": 24,
+      "type": "choice",
+      "axes": [
+        7,
+        9,
+        11,
+        12,
+        14,
+        15,
+        16,
+        17,
+        19,
+        20,
+        24,
+        25,
+        28,
+        29
+      ],
+      "entities": [
+        "lucas",
+        "astra"
+      ],
+      "summary": "Autor combina recrutamento, academia e criação arriscada de inteligência interdisciplinar: arquitetura/civil, agronomia/ambiente, gestão/logística, magia, saúde, navegação, estratégia; personalidade curiosa, carismática, pragmática, falível, aprendizado e causalidade.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 22153,
+        "line_end": 22254,
+        "role": "Prompt",
+        "span_sha256_utf8": "f60e41345b378c2dde58a0a10d6af606faa129185b8e4ebacbc6592227b2f0cf"
+      }
+    },
+    {
+      "id": "O8C-B4-009",
+      "day": 10,
+      "book": "I",
+      "chapter_hint": 24,
+      "type": "editorial",
+      "axes": [
+        28,
+        29,
+        30
+      ],
+      "entities": [
+        "lucas"
+      ],
+      "summary": "Diretrizes históricas: fichas compactas, registrar alterações, cenas e consequências, economia de repetição, três escolhas e comandos livres, imagens somente quando pedidas; preservar imersão.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 22255,
+        "line_end": 22279,
+        "role": "Prompt",
+        "span_sha256_utf8": "b74aa59313f27088f85c17c0ef088314e68f9682908756ed4e33205eb9ea7d72"
+      }
+    },
+    {
+      "id": "O8C-B4-010",
+      "day": 10,
+      "book": "I",
+      "chapter_hint": 24,
+      "type": "delegation",
+      "axes": [
+        2,
+        3,
+        7,
+        9,
+        19,
+        20,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "lysa",
+        "varo",
+        "brannik",
+        "neria-valmont"
+      ],
+      "summary": "D10 faltam cerca de 2 dias de autorização; delega vistoria, alternativa de retirada, recrutamento, irrigação/saneamento e treino. Academia dos Fundadores nomeada, sucessores e registros.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 22310,
+        "line_end": 22470,
+        "role": "Response",
+        "span_sha256_utf8": "8408d7b479189f3562996dac7e932a466a2045d0637af9f51e69aa73759886af"
+      }
+    },
+    {
+      "id": "O8C-B4-011",
+      "day": 10,
+      "book": "I",
+      "chapter_hint": 24,
+      "type": "hypothesis",
+      "axes": [
+        7,
+        11,
+        12,
+        14,
+        15,
+        27
+      ],
+      "entities": [
+        "lucas"
+      ],
+      "summary": "Sete domínios conectados por inteligência integrada, em vez de sete carreiras fictícias; curiosidade, prudência, humor, discordância, vontade própria.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 22476,
+        "line_end": 22624,
+        "role": "Response",
+        "span_sha256_utf8": "4689a066cab0abb90820895e0414e1bacdb3db13c09dfd9e1403a5445ca145b9"
+      }
+    },
+    {
+      "id": "O8C-B4-012",
+      "day": 10,
+      "book": "I",
+      "chapter_hint": 24,
+      "type": "experiment",
+      "axes": [
+        11,
+        12,
+        14,
+        25,
+        27
+      ],
+      "entities": [
+        "lucas"
+      ],
+      "summary": "Matriz cognitiva modular avaliada: custo ainda elevado, reduzido ao retirar artefatos, poderes próprios, memórias e autoridade; fundamentos interligados, conhecimentos locais a aprender.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 22626,
+        "line_end": 22794,
+        "role": "Response",
+        "span_sha256_utf8": "81730cd33d8feb9b587efac903301afaa4070b3306cfe4bb7c077434ee6103d2"
+      }
+    },
+    {
+      "id": "O8C-B4-013",
+      "day": 10,
+      "book": "I",
+      "chapter_hint": 24,
+      "type": "creation",
+      "axes": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        11,
+        12,
+        14,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "astra"
+      ],
+      "summary": "07h24 nasce mulher adulta, alta, postura ereta, cabelos escuros presos, olhos cinzentos, roupas simples de viagem; Lucas quase desmaia, reserva drasticamente reduzida. Ela oferece água, questiona risco, sem lembrança de infância nem experiência local.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 22798,
+        "line_end": 22994,
+        "role": "Response",
+        "span_sha256_utf8": "ca5b122ab56185165db0a1a206d6ff2c4556097face383166c4e1cfb0c242a42"
+      }
+    },
+    {
+      "id": "O8C-B4-014",
+      "day": 10,
+      "book": "I",
+      "chapter_hint": 24,
+      "type": "identity",
+      "axes": [
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        19,
+        27
+      ],
+      "entities": [
+        "astra",
+        "lucas"
+      ],
+      "summary": "Escolhe nome Astra pela orientação pelas estrelas; não aceita ser criada para concordar. Lucas explica Legião, território, escassez e Coração; ela divide problema em sobrevivência semanal, assentamento e civilização.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 22998,
+        "line_end": 23134,
+        "role": "Response",
+        "span_sha256_utf8": "cd1957914052c4bf5ab85a37b4f124eeccca2bababcb9dfe08fd2a95d87f6acf"
+      }
+    },
+    {
+      "id": "O8C-B4-015",
+      "day": 10,
+      "book": "I",
+      "chapter_hint": 24,
+      "type": "knowledge",
+      "axes": [
+        7,
+        8,
+        15,
+        16,
+        17,
+        19,
+        20,
+        24,
+        27
+      ],
+      "entities": [
+        "astra",
+        "lucas",
+        "esmara",
+        "miren",
+        "varo"
+      ],
+      "summary": "Astra propõe estudar rio/navegação, rotas alternativas, saneamento e agricultura; entende princípios mágicos mas não leis locais, respeita comando de Varo, não reivindica autoridade.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 23138,
+        "line_end": 23234,
+        "role": "Response",
+        "span_sha256_utf8": "2946aad4af37377b45730da2aa785c0fe607be59c47904c80de4c861d75a51f8"
+      }
+    },
+    {
+      "id": "O8C-B4-016",
+      "day": 10,
+      "book": "I",
+      "chapter_hint": 24,
+      "type": "power",
+      "axes": [
+        11,
+        12,
+        14,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "astra",
+        "sistema"
+      ],
+      "summary": "Sistema confirma Astra Arquiteta das Civilizações, Matriz Cognitiva Integrada I, reserva crítica; sem Sistema próprio de Lucas, experiência vivida anterior, conhecimento automático local ou alimentação vital permanente.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 23238,
+        "line_end": 23254,
+        "role": "Response",
+        "span_sha256_utf8": "86fe33e720bfcb38e044973c8a1c850d1dd8ae0c6eb34c29bd5011da0de9e299"
+      }
+    },
+    {
+      "id": "O8C-B4-017",
+      "day": 10,
+      "book": "I",
+      "chapter_hint": 24,
+      "type": "relation",
+      "axes": [
+        7,
+        8,
+        9,
+        10,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "astra"
+      ],
+      "summary": "Lucas garante liberdade mesmo se Astra recusar Legião; ela quer conhecer pessoas antes de cargo.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 23256,
+        "line_end": 23320,
+        "role": "Response",
+        "span_sha256_utf8": "7d6b99577a64d46e9e5347fd4d09c05393744386cc4fe87f652bea8148b1c892"
+      }
+    },
+    {
+      "id": "O8C-B4-018",
+      "day": 10,
+      "book": "I",
+      "chapter_hint": 24,
+      "type": "relation",
+      "axes": [
+        2,
+        7,
+        8,
+        9,
+        10,
+        19,
+        25
+      ],
+      "entities": [
+        "kael",
+        "lysa",
+        "astra",
+        "lucas"
+      ],
+      "summary": "Kael repreende criação de alto risco em segredo, Lucas aceita; Astra pergunta sobre riscos, abastecimento e cadeia de responsabilidades; Lysa simpatiza.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 23324,
+        "line_end": 23456,
+        "role": "Response",
+        "span_sha256_utf8": "b7de3dd6ddeac1de231ac6a740d9ffd6c8a542af23625edebc0df02214c416c2"
+      }
+    },
+    {
+      "id": "O8C-B4-019",
+      "day": 10,
+      "book": "I",
+      "chapter_hint": 24,
+      "type": "event",
+      "axes": [
+        2,
+        3,
+        4,
+        7,
+        15,
+        17,
+        19,
+        27
+      ],
+      "entities": [
+        "neria-valmont",
+        "brannik",
+        "oren",
+        "esmara",
+        "astra",
+        "lucas",
+        "kael"
+      ],
+      "summary": "Néria chega com 2 assistentes e guardas; aqueduto integral não aprovado, torre rachada interditada. Astra propõe medir fissuras, zonas de trabalho/ocupação; Néria usa projeção colaborativa, avalia viabilidade parcial.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 23460,
+        "line_end": 23660,
+        "role": "Response",
+        "span_sha256_utf8": "b5ee6312c6a50c4320c9b85816db48df07e1ccbf13afd67ed3971f2c659cab29"
+      }
+    },
+    {
+      "id": "O8C-B4-020",
+      "day": 10,
+      "book": "I",
+      "chapter_hint": 24,
+      "type": "agreement",
+      "axes": [
+        2,
+        3,
+        7,
+        8,
+        9,
+        19,
+        20,
+        25
+      ],
+      "entities": [
+        "astra",
+        "kael",
+        "lysa",
+        "brannik",
+        "esmara",
+        "miren",
+        "lucas"
+      ],
+      "summary": "Astra escolhe integrar conhecimentos sem substituir especialistas, aceita colaborar livremente; propõe três horizontes de desenvolvimento e direito a discordar.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 23664,
+        "line_end": 23808,
+        "role": "Response",
+        "span_sha256_utf8": "181d2f28319d1aa1287c5b2bb94182ccd6f26cf3ee796fa9440ad4d8b5718c37"
+      }
+    },
+    {
+      "id": "O8C-B4-021",
+      "day": 10,
+      "book": "I",
+      "chapter_hint": 24,
+      "type": "training",
+      "axes": [
+        2,
+        7,
+        9,
+        11,
+        13,
+        24,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "varo"
+      ],
+      "summary": "Treino sem peitoral, defesa e postura, interrompido por fadiga; Varo recomenda não criar outra vida sem recuperar reserva e garantir segurança.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 23812,
+        "line_end": 23916,
+        "role": "Response",
+        "span_sha256_utf8": "4209f3fb7aa768e880411333f5947adcb8acd77673a05b4a59879a3c05534d32"
+      }
+    },
+    {
+      "id": "O8C-B4-022",
+      "day": 10,
+      "book": "I",
+      "chapter_hint": 24,
+      "type": "state",
+      "axes": [
+        2,
+        3,
+        17,
+        19,
+        20,
+        25,
+        27
+      ],
+      "entities": [
+        "neria-valmont",
+        "kael",
+        "lysa",
+        "astra",
+        "brannik",
+        "esmara",
+        "miren"
+      ],
+      "summary": "Relatório favorável a estudar ocupação por etapas, restrições mantidas; academia inicia por oficinas e aulas sem prédio completo.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 23920,
+        "line_end": 24004,
+        "role": "Response",
+        "span_sha256_utf8": "35cbadb74e4be6cfe2223b1378983137cda12aea4593d99286434c1ad718fcd2"
+      }
+    },
+    {
+      "id": "O8C-B4-023",
+      "day": 10,
+      "book": "I",
+      "chapter_hint": 24,
+      "type": "reader-only",
+      "axes": [
+        19,
+        20,
+        23,
+        27
+      ],
+      "entities": [
+        "neria-valmont",
+        "selene-arvost",
+        "auren-velcast"
+      ],
+      "summary": "Néria recomenda avaliação séria da organização; Selene convoca Kael e limita intervenção comercial de Auren. Cena externa.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 24006,
+        "line_end": 24038,
+        "role": "Response",
+        "span_sha256_utf8": "5a52b23d1e56c88a4fdf1dc22ee43f7d4e867e6d9e36982c7b6ec48564045a27"
+      }
+    },
+    {
+      "id": "O8C-B4-024",
+      "day": 10,
+      "book": "I",
+      "chapter_hint": 24,
+      "type": "state",
+      "axes": [
+        1,
+        3,
+        11,
+        14,
+        19,
+        27
+      ],
+      "entities": [
+        "legiao",
+        "lucas",
+        "astra",
+        "kael",
+        "brannik"
+      ],
+      "summary": "300 originais, Kael e Astra criações adicionais, Brannik externo voluntário; 26 moradores parceiros; reserva muito reduzida. Contagem histórica não corrigida.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 24040,
+        "line_end": 24050,
+        "role": "Response",
+        "span_sha256_utf8": "ad76c43c55066d02e6f77c9478cc809e08b65983204a0124fc732ae9360d495b"
+      }
+    },
+    {
+      "id": "O8C-B4-025",
+      "day": 10,
+      "book": "I",
+      "chapter_hint": 24,
+      "type": "reader-only",
+      "axes": [
+        7,
+        8,
+        10,
+        17,
+        19,
+        30
+      ],
+      "entities": [
+        "astra"
+      ],
+      "summary": "Astra escreve reflexão sobre cidade capaz de continuar crescendo e ri sozinha; pensamento privado.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 24066,
+        "line_end": 24084,
+        "role": "Response",
+        "span_sha256_utf8": "7710c8a840f029bea7b3101b0d656b93b02d11f26dc21aa93fd8b5ae1f67313b"
+      }
+    },
+    {
+      "id": "O8C-B4-026",
+      "day": 11,
+      "book": "I",
+      "chapter_hint": 25,
+      "type": "choice",
+      "axes": [
+        9,
+        10,
+        19,
+        28,
+        29
+      ],
+      "entities": [
+        "lucas",
+        "miren"
+      ],
+      "summary": "Autor pede situação e visão dos personagens, descanso pessoal de Lucas com Miren enquanto conselho executa ações 1/2; solicita imagens naquele turno.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 24089,
+        "line_end": 24093,
+        "role": "Prompt",
+        "span_sha256_utf8": "a283bdd51bbc46649eb554460ea1b81e225fb62fca2434b08e798ba6878aaa0c"
+      }
+    },
+    {
+      "id": "O8C-B4-027",
+      "day": 11,
+      "book": "I",
+      "chapter_hint": 25,
+      "type": "export-gap",
+      "axes": [
+        28,
+        29,
+        30
+      ],
+      "entities": [],
+      "summary": "Resposta contém apenas metadados/preparação de imagem; não há narrativa textual recuperável nesse bloco. Não inventar conteúdo visual.",
+      "authority": "EXPORT_METADATA_NOT_NARRATIVE",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 24095,
+        "line_end": 24105,
+        "role": "Response",
+        "span_sha256_utf8": "249d3d9887906af01479e78258d15570df240dd284180513f6dd689a8777f021"
+      }
+    },
+    {
+      "id": "O8C-B4-028",
+      "day": 11,
+      "book": "I",
+      "chapter_hint": 25,
+      "type": "editorial",
+      "axes": [
+        28,
+        29,
+        30
+      ],
+      "entities": [],
+      "summary": "Autor reclama de ausência da história e reduz prioridade de imagens; preservar narrativa como entrega principal.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 24109,
+        "line_end": 24110,
+        "role": "Prompt",
+        "span_sha256_utf8": "852724cdd8cadf19905cfaf8b5e22d01594197033ddeb0cfbfef7484759c6f98"
+      }
+    },
+    {
+      "id": "O8C-B4-029",
+      "day": 11,
+      "book": "I",
+      "chapter_hint": 25,
+      "type": "reflection",
+      "axes": [
+        1,
+        2,
+        7,
+        9,
+        10,
+        13,
+        19,
+        29
+      ],
+      "entities": [
+        "lucas",
+        "oren",
+        "daren"
+      ],
+      "summary": "Lucas sente solidão apesar de cercado por companheiros, veste roupas simples, vê vidas independentes e humor entre aprendizes; CREATION ainda em recuperação.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 24127,
+        "line_end": 24271,
+        "role": "Response",
+        "span_sha256_utf8": "8dc1a951ce907c2184e5ab45e0bf6d4a39ce57fbaa2236e46fd950391a3f9b91"
+      }
+    },
+    {
+      "id": "O8C-B4-030",
+      "day": 11,
+      "book": "I",
+      "chapter_hint": 25,
+      "type": "delegation",
+      "axes": [
+        2,
+        7,
+        8,
+        9,
+        10,
+        19,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "lysa",
+        "varo",
+        "astra",
+        "neria-valmont"
+      ],
+      "summary": "Conselho aprova dia pessoal, mantém negociação/segurança e autonomia; Kael pergunta como amigo, não apenas sobre saúde.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 24275,
+        "line_end": 24411,
+        "role": "Response",
+        "span_sha256_utf8": "b71eacd01da92e79f12150fd9f205d3785b9fbc3cd11f0d861201185e5be7732"
+      }
+    },
+    {
+      "id": "O8C-B4-031",
+      "day": 11,
+      "book": "I",
+      "chapter_hint": 25,
+      "type": "reflection",
+      "axes": [
+        7,
+        9,
+        10,
+        14,
+        26,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael",
+        "astra",
+        "miren",
+        "lysa"
+      ],
+      "summary": "Lucas questiona capacidade de amar de criações e sua própria solidão; afeto de Varo, admiração Kael/Lysa e curiosidade Astra são observações, não prova de natureza da consciência.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 24415,
+        "line_end": 24505,
+        "role": "Response",
+        "span_sha256_utf8": "1a9716b474873aeb2f53a7937eb1bfa0e32557d1519dece33a0a38080b1dba5f"
+      }
+    },
+    {
+      "id": "O8C-B4-032",
+      "day": 11,
+      "book": "I",
+      "chapter_hint": 25,
+      "type": "relation",
+      "axes": [
+        2,
+        7,
+        8,
+        9,
+        10,
+        16,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "miren"
+      ],
+      "summary": "Miren aceita passeio sem pesquisa, Sistema ou engenharia; Jardim das Pedras Brancas, antiga trilha dos moleiros, lago alimentado pela nascente.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 24507,
+        "line_end": 24639,
+        "role": "Response",
+        "span_sha256_utf8": "2fa11caf48118d3ade4174dbe3b40a172057ff2f1ac992a2f2e3cf746f79afb6"
+      }
+    },
+    {
+      "id": "O8C-B4-033",
+      "day": 11,
+      "book": "I",
+      "chapter_hint": 25,
+      "type": "world-character",
+      "axes": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        16,
+        17,
+        18,
+        22,
+        26,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "miren"
+      ],
+      "summary": "Jardim com pedras claras, folhas de reflexos prateados, flores azuladas e insetos luminosos, antigo uso em festival de primavera. Lucas associa projeto a perda do lar; Miren sente falta de pessoas ausentes, gosta de descobertas, ensinar, livros e dias sem exigência.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 24643,
+        "line_end": 24793,
+        "role": "Response",
+        "span_sha256_utf8": "c5125290bdaeeccc61f893526f7430f3d781c5e79b4babb9ac915cacd7481fcd"
+      }
+    },
+    {
+      "id": "O8C-B4-034",
+      "day": 11,
+      "book": "I",
+      "chapter_hint": 25,
+      "type": "relation",
+      "axes": [
+        7,
+        8,
+        9,
+        10,
+        14,
+        27,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "kael",
+        "varo",
+        "astra"
+      ],
+      "summary": "Miren considera afetos das criações relevantes pela autonomia e experiência, sem garantir natureza idêntica; conversa e humor aproximam ambos.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 24797,
+        "line_end": 24919,
+        "role": "Response",
+        "span_sha256_utf8": "eb9dfd213cf8a088f853eabe97921b8b76956b06ae66b72d45af2c3ca3c4a370"
+      }
+    },
+    {
+      "id": "O8C-B4-035",
+      "day": 11,
+      "book": "I",
+      "chapter_hint": 25,
+      "type": "agreement",
+      "axes": [
+        2,
+        3,
+        16,
+        17,
+        19,
+        20,
+        25,
+        27
+      ],
+      "entities": [
+        "kael",
+        "lysa",
+        "astra",
+        "neria-valmont",
+        "selene-arvost",
+        "varo"
+      ],
+      "summary": "Selene permite até 60 em zona externa após inspeção e concordância local; obras/logística/segurança imediata, sem guarnição definitiva; extensão do acampamento 14 dias a partir do vencimento, cláusulas escritas, não concessão final.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 24923,
+        "line_end": 25013,
+        "role": "Response",
+        "span_sha256_utf8": "8612cc9c2f94f29c629f61ce9492a328671031bb942b1cf79650cee33c130858"
+      }
+    },
+    {
+      "id": "O8C-B4-036",
+      "day": 11,
+      "book": "I",
+      "chapter_hint": 25,
+      "type": "event",
+      "axes": [
+        2,
+        3,
+        7,
+        9,
+        15,
+        17,
+        19
+      ],
+      "entities": [
+        "brannik",
+        "esmara",
+        "oren",
+        "daren",
+        "tarek"
+      ],
+      "summary": "Oficina/canteiros avançam sem Lucas; via firme para golem evita compactação, manutenção frequente, Tarek traz pão.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 25015,
+        "line_end": 25061,
+        "role": "Response",
+        "span_sha256_utf8": "8bd072c0c5b0457ce1e8dea3de276f089e1772b6be99ff3d867aa53756956c11"
+      }
+    },
+    {
+      "id": "O8C-B4-037",
+      "day": 11,
+      "book": "I",
+      "chapter_hint": 25,
+      "type": "relation",
+      "axes": [
+        2,
+        7,
+        8,
+        9,
+        10,
+        18,
+        25,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren"
+      ],
+      "summary": "Passeio, refeição e memórias da Terra; interesse recíproco expresso, primeiro gesto de mãos dadas, acordo de descobrir relação sem pressa; sem compromisso definitivo.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 25065,
+        "line_end": 25221,
+        "role": "Response",
+        "span_sha256_utf8": "c8e8453c770bfd1f04d40f8c36916a174beb89da60a5cf7dc77c0c7f98c915a3"
+      }
+    },
+    {
+      "id": "O8C-B4-038",
+      "day": 11,
+      "book": "I",
+      "chapter_hint": 25,
+      "type": "relation",
+      "axes": [
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        19,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "lysa",
+        "astra"
+      ],
+      "summary": "Conselho entrega autorização conquistada sem Criador; Lucas abraça companheiros com reciprocidade, Astra percebe relações sem documento.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 25223,
+        "line_end": 25337,
+        "role": "Response",
+        "span_sha256_utf8": "3862b17dc3a2254068cd61537a2fb3dac12f8ea6c4607d7831cda357ecce7f6e"
+      }
+    },
+    {
+      "id": "O8C-B4-039",
+      "day": 11,
+      "book": "I",
+      "chapter_hint": 25,
+      "type": "character-state",
+      "axes": [
+        1,
+        4,
+        7,
+        8,
+        9,
+        10,
+        19,
+        25,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael",
+        "lysa",
+        "miren",
+        "brannik",
+        "astra",
+        "oren",
+        "daren",
+        "esmara",
+        "neria-valmont",
+        "tarek",
+        "grazha",
+        "korr",
+        "durghan"
+      ],
+      "summary": "Painel: Varo respeito e preocupação, Kael autonomia/amizade Lysa, Lysa confiança sem perder independência, Miren afeto e segredos, Brannik lealdade escolhida, Astra trabalho/identidade próprios; demais interesses e limites. 300 originais, 1 externo, 60 autorizáveis, 14 dias adicionais.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 25339,
+        "line_end": 25405,
+        "role": "Response",
+        "span_sha256_utf8": "a004a8a5640cb813e2770f5f3637a1e91af53722be03e30632afb6bf3c77a308"
+      }
+    },
+    {
+      "id": "O8C-B4-040",
+      "day": 11,
+      "book": "I",
+      "chapter_hint": 25,
+      "type": "relation",
+      "axes": [
+        2,
+        7,
+        8,
+        9,
+        10,
+        25,
+        30
+      ],
+      "entities": [
+        "kael",
+        "lucas"
+      ],
+      "summary": "Conversa de amigo à noite: Kael percebe que gosta de negociar, aprender e conviver por vontade própria; deseja vida própria; chá e humor, Varo verifica descanso.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 25409,
+        "line_end": 25559,
+        "role": "Response",
+        "span_sha256_utf8": "8f647256502d8d7f3b2be218bf09475eeae9f0e7e03fd631aaceb53c5c8f92a3"
+      }
+    },
+    {
+      "id": "O8C-B4-041",
+      "day": 11,
+      "book": "I",
+      "chapter_hint": 25,
+      "type": "reader-only",
+      "axes": [
+        7,
+        9,
+        10,
+        27
+      ],
+      "entities": [
+        "miren"
+      ],
+      "summary": "Miren pensa no futuro e sorri ao recordar passeio; perspectiva privada.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 25575,
+        "line_end": 25585,
+        "role": "Response",
+        "span_sha256_utf8": "0e5b38a39dc3cdffc990a86e450a9ba7172831d33fd3622f2e368f2a93495e0a"
+      }
+    },
+    {
+      "id": "O8C-B4-042",
+      "day": 12,
+      "book": "I",
+      "chapter_hint": 26,
+      "type": "editorial",
+      "axes": [
+        11,
+        12,
+        15,
+        19,
+        23,
+        24,
+        25,
+        28,
+        29,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "astra"
+      ],
+      "summary": "Protocolo de Ascensão: progresso pessoal, civilizacional e estratégico em paralelo; overpower causal, evitar bloqueios repetidos e reinício de problemas; delegação real e resultados.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 25590,
+        "line_end": 25640,
+        "role": "Prompt",
+        "span_sha256_utf8": "fadf53fed1ff289667954ccd1f97de80408ee453aaa3e17b16d2a77b7a1df5a9"
+      }
+    },
+    {
+      "id": "O8C-B4-043",
+      "day": 12,
+      "book": "I",
+      "chapter_hint": 26,
+      "type": "choice",
+      "axes": [
+        11,
+        12,
+        13,
+        15,
+        16,
+        17,
+        19,
+        20,
+        23,
+        24,
+        25,
+        28
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael",
+        "lysa",
+        "astra",
+        "miren"
+      ],
+      "summary": "Ordens históricas: Conselho Operacional, treinamento/energia/armadura, Primeira Cidade, academia, inteligência antecipatória e investigação Bandeira Cinzenta. Não presumir território ou capacidades.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 25642,
+        "line_end": 25716,
+        "role": "Prompt",
+        "span_sha256_utf8": "36519574bfe2cb5c321cefbedce8f0a6d85e68990f6412ba97fdce1550466a8b"
+      }
+    },
+    {
+      "id": "O8C-B4-044",
+      "day": 12,
+      "book": "I",
+      "chapter_hint": 26,
+      "type": "editorial",
+      "axes": [
+        1,
+        2,
+        9,
+        10,
+        25,
+        28,
+        29,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren"
+      ],
+      "summary": "Horizontes 48h/7d/30d como metas; saltos quando escolhidos, rotinas resumidas e cenas decisivas profundas, vitórias duradouras, afeto/humor, três opções/comando livre, sem imagens não pedidas, balanço breve confirmado/previsão/desconhecido.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 25718,
+        "line_end": 25784,
+        "role": "Prompt",
+        "span_sha256_utf8": "74165caf7452babea10b1d3460d81cc9ba5cf5f37eb4b881c5c98d6b5edb595d"
+      }
+    },
+    {
+      "id": "O8C-B4-045",
+      "day": 12,
+      "book": "I",
+      "chapter_hint": 26,
+      "type": "organization",
+      "axes": [
+        2,
+        3,
+        7,
+        9,
+        19,
+        20,
+        24,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "seron",
+        "kael",
+        "lysa",
+        "esmara",
+        "astra",
+        "brannik",
+        "miren",
+        "neria-valmont"
+      ],
+      "summary": "Conselho Operacional instituído: Varo/Seron defesa/intel; Kael/Lysa território; Esmara/Astra agricultura; Brannik/Astra engenharia, Néria consultora Thalor; Miren/Astra pesquisa/ensino; Lysa/Kael comércio/admin. Medicina clínica vaga. Autonomia com limites, sem criação consciente arriscada.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 25795,
+        "line_end": 25966,
+        "role": "Response",
+        "span_sha256_utf8": "31771f4d555766c5e57e7c5a183e9c36148d187ceabd49e65ebc5453f2453d69"
+      }
+    },
+    {
+      "id": "O8C-B4-046",
+      "day": 12,
+      "book": "I",
+      "chapter_hint": 26,
+      "type": "plan",
+      "axes": [
+        11,
+        12,
+        13,
+        15,
+        19,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "astra",
+        "miren"
+      ],
+      "summary": "Separar concepção, materialização, manutenção, recuperação. Pesquisas em eficiência, condução, armadura e recuperação natural; hipótese de reserva externa recarregável.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 25970,
+        "line_end": 26056,
+        "role": "Response",
+        "span_sha256_utf8": "7fb5b7fc08b62a8935518320e96aa64591425945fb172a09553409c3f96f1fa9"
+      }
+    },
+    {
+      "id": "O8C-B4-047",
+      "day": 12,
+      "book": "I",
+      "chapter_hint": 26,
+      "type": "event",
+      "axes": [
+        2,
+        3,
+        16,
+        17,
+        19,
+        20,
+        25
+      ],
+      "entities": [
+        "kael",
+        "astra",
+        "neria-valmont",
+        "tarek",
+        "brannik",
+        "esmara",
+        "oren",
+        "legiao"
+      ],
+      "summary": "Após inspeção e consentimento escrito, 13h20 transferidos 60 originais (30 Forja,20 Sentinela,10 Reserva); 10 tendas, depósito, triagem, posto e latrina, passagem local e água protegidas.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 26060,
+        "line_end": 26146,
+        "role": "Response",
+        "span_sha256_utf8": "7d7fa30c5ca3738316ba2670afd0efdd1e4e374016abca32648bb6fdd4fc8e70"
+      }
+    },
+    {
+      "id": "O8C-B4-048",
+      "day": 13,
+      "book": "I",
+      "chapter_hint": 26,
+      "type": "technology",
+      "axes": [
+        2,
+        3,
+        11,
+        12,
+        13,
+        14,
+        15,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "astra",
+        "varo",
+        "brannik"
+      ],
+      "summary": "Cristal carregado em 43 min por fluxo residual, perdas; encaixe removível no peitoral. Comparação de movimentos mostra suporte breve melhor, autonomia baixa.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 26150,
+        "line_end": 26288,
+        "role": "Response",
+        "span_sha256_utf8": "4f36234db414fad724b6dc6d643a6becb691b35915f4e69c9ca19bb9d10e33a0"
+      }
+    },
+    {
+      "id": "O8C-B4-049",
+      "day": 13,
+      "book": "I",
+      "chapter_hint": 26,
+      "type": "power",
+      "axes": [
+        3,
+        11,
+        12,
+        13,
+        15,
+        24,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "miren",
+        "astra",
+        "sistema"
+      ],
+      "summary": "Primeiro deslocamento assistido evita golpe anunciado, quase perde equilíbrio; Sistema Impulso Assistido I, carga externa finita, sem ganho permanente ou consciência.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 26292,
+        "line_end": 26432,
+        "role": "Response",
+        "span_sha256_utf8": "633e56a7c7eb6539560c96b9ad2565f4b59117836e50c63a377f4361ffd7429e"
+      }
+    },
+    {
+      "id": "O8C-B4-050",
+      "day": 13,
+      "book": "I",
+      "chapter_hint": 26,
+      "type": "plan",
+      "axes": [
+        11,
+        12,
+        14,
+        15,
+        17,
+        19,
+        20,
+        25
+      ],
+      "entities": [
+        "astra",
+        "brannik",
+        "miren",
+        "kael",
+        "lucas",
+        "oren",
+        "lysa"
+      ],
+      "summary": "Astra propõe família de módulos armazenamento/regulação/condução/interrupção e fabricação convencional; pesquisa autorizada, aplicação em residências só após testes.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 26446,
+        "line_end": 26540,
+        "role": "Response",
+        "span_sha256_utf8": "7a245b21c592a9a279d2e9b9ea15f1ce9b3ef83e1780edc30126ae22badb7c99"
+      }
+    },
+    {
+      "id": "O8C-B4-051",
+      "day": 13,
+      "book": "I",
+      "chapter_hint": 26,
+      "type": "report",
+      "axes": [
+        2,
+        16,
+        19,
+        20,
+        23,
+        24,
+        25,
+        27
+      ],
+      "entities": [
+        "varo",
+        "seron",
+        "kael",
+        "lysa",
+        "astra",
+        "grazha"
+      ],
+      "summary": "Primeiro quadro de inteligência Olho/Véu/comerciantes; conjurador não localizado, vínculos comerciais parciais, vedadas ofensivas por rumores. Grazha oferece troca sal/ferramentas por razhka e conhecimento.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 26544,
+        "line_end": 26638,
+        "role": "Response",
+        "span_sha256_utf8": "b169c2e077d0670fc93d657c803460d0cabf08bd5ba6a3c32fd2330b0876804f"
+      }
+    },
+    {
+      "id": "O8C-B4-052",
+      "day": 13,
+      "book": "I",
+      "chapter_hint": 26,
+      "type": "relation",
+      "axes": [
+        2,
+        7,
+        8,
+        9,
+        10,
+        25,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "ina",
+        "brannik"
+      ],
+      "summary": "Segundo encontro no Jardim; Miren admite desejar participar do novo futuro, aproximação pessoal e primeiro beijo breve; sem Sistema. Ina quer ponte ornamental.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 26642,
+        "line_end": 26762,
+        "role": "Response",
+        "span_sha256_utf8": "13d08364f73220c3e5e123dd2fd825150a8caac460cd7cd9d6db8e3d189c8430"
+      }
+    },
+    {
+      "id": "O8C-B4-053",
+      "day": 13,
+      "book": "I",
+      "chapter_hint": 26,
+      "type": "state",
+      "axes": [
+        1,
+        2,
+        3,
+        11,
+        12,
+        13,
+        19,
+        20,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "legiao"
+      ],
+      "summary": "48h: 60 Três Arcos/240 Arvendell, Conselho instituído, Impulso I, inventário e contratos, academia inicial, medicina vaga; sem soberania, reserva máxima não aumentada comprovadamente.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 26766,
+        "line_end": 26801,
+        "role": "Response",
+        "span_sha256_utf8": "8fd74a86a198955bf338aa7aef15cb4b5c6ff908370140afdd8cc0e5537d560f"
+      }
+    },
+    {
+      "id": "O8C-B4-054",
+      "day": 14,
+      "book": "I",
+      "chapter_hint": 26,
+      "type": "relation",
+      "axes": [
+        1,
+        2,
+        7,
+        9,
+        19,
+        20,
+        25
+      ],
+      "entities": [
+        "astra",
+        "kael"
+      ],
+      "summary": "Astra registra paralelismo de decisões sem Lucas; reconhece crescimento coletivo limitado por sustento, segurança e administração.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 26805,
+        "line_end": 26901,
+        "role": "Response",
+        "span_sha256_utf8": "d594d1450a1a97edfb1732cf2ec90cdff3dcd43a0c81cc3fee4c317cfe38f018"
+      }
+    },
+    {
+      "id": "O8C-B4-055",
+      "day": 14,
+      "book": "I",
+      "chapter_hint": 27,
+      "type": "choice",
+      "axes": [
+        9,
+        15,
+        18,
+        19,
+        20,
+        25,
+        28,
+        29,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren"
+      ],
+      "summary": "Autor escolhe 2 e 1, difundir conhecimento Terra em sessão reservada, desenvolver vida interna, leis, entretenimento, festas, calendário, folgas, música, hino, histórias e livros; pede primeiro evento.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 26906,
+        "line_end": 26924,
+        "role": "Prompt",
+        "span_sha256_utf8": "41edcf7fa63c622f43d95570a4219013041b8682ab5927d4533d8bf91d3d46b5"
+      }
+    },
+    {
+      "id": "O8C-B4-056",
+      "day": 14,
+      "book": "I",
+      "chapter_hint": 27,
+      "type": "organization",
+      "axes": [
+        2,
+        3,
+        7,
+        8,
+        15,
+        18,
+        19,
+        20,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "astra",
+        "miren",
+        "varo",
+        "lysa",
+        "brannik",
+        "esmara"
+      ],
+      "summary": "Arquivo das Duas Eras criado como projeto; distinguir memória, técnica, hipótese, saber Terra e magia local. Primeira sessão saneamento, higiene, biblioteca, matemática, contabilidade, padronização, manutenção; não replicar Terra indiscriminadamente.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 26947,
+        "line_end": 27161,
+        "role": "Response",
+        "span_sha256_utf8": "839c1754c7c59d2f42437b4bc34cfa2609252c114d01c80da5b775480a84d603"
+      }
+    },
+    {
+      "id": "O8C-B4-057",
+      "day": 14,
+      "book": "I",
+      "chapter_hint": 27,
+      "type": "law-proposal",
+      "axes": [
+        7,
+        9,
+        18,
+        19,
+        25,
+        27
+      ],
+      "entities": [
+        "varo",
+        "lucas",
+        "kael",
+        "lysa",
+        "astra",
+        "miren",
+        "grazha"
+      ],
+      "summary": "Carta Provisória em discussão: disciplina militar separada de civil, acusação registrada, defesa, revisão imparcial, igualdade entre povos, sem punição humilhante; competência de Thalor preservada.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 27165,
+        "line_end": 27243,
+        "role": "Response",
+        "span_sha256_utf8": "ca8d2b4e75c5acca62658460f8d05f0bf0442f2f86f31b0c5697039559f94c22"
+      }
+    },
+    {
+      "id": "O8C-B4-058",
+      "day": 14,
+      "book": "I",
+      "chapter_hint": 27,
+      "type": "culture",
+      "axes": [
+        2,
+        7,
+        8,
+        18,
+        19,
+        20,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "varo",
+        "lysa",
+        "astra",
+        "brannik",
+        "esmara",
+        "miren",
+        "grazha"
+      ],
+      "summary": "Calendário interno sete dias, revezamentos, descanso compensatório, jornada/pausas/remuneração; Dia Fundação futuro, Memória, Noite Histórias, festas sazonais e respeito Uzgor; Festa Primeira Pedra escolhida.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 27247,
+        "line_end": 27345,
+        "role": "Response",
+        "span_sha256_utf8": "452720e1db64c05ddfaafdafffd0d1878cd29d9c2f85e0b510280513830986a0"
+      }
+    },
+    {
+      "id": "O8C-B4-059",
+      "day": 15,
+      "book": "I",
+      "chapter_hint": 27,
+      "type": "knowledge",
+      "axes": [
+        2,
+        11,
+        12,
+        15,
+        18,
+        19,
+        25,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "varo",
+        "lysa",
+        "astra",
+        "miren",
+        "brannik"
+      ],
+      "summary": "Sessão restrita sobre tecnologia e espetáculo da Terra; equipe não desenvolve pólvora, escolhe projeções luminosas mágicas controladas, com custos e inspeção. Conhecimento não público.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 27349,
+        "line_end": 27455,
+        "role": "Response",
+        "span_sha256_utf8": "11097c487b206779b18d393d411a4bb87d01a58836e75de974351394ac1f4502"
+      }
+    },
+    {
+      "id": "O8C-B4-060",
+      "day": "15–17",
+      "book": "I",
+      "chapter_hint": 27,
+      "type": "creation",
+      "axes": [
+        3,
+        11,
+        12,
+        14,
+        15,
+        18,
+        27
+      ],
+      "entities": [
+        "miren",
+        "astra",
+        "brannik",
+        "oren",
+        "daren",
+        "lucas",
+        "varo"
+      ],
+      "summary": "Projeto Estrelas da Legião: testes luminosos, terceira tentativa quase 2 min de figuras, fonte externa limitada; estrutura e painéis montados, sem grande materialização.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 27457,
+        "line_end": 27493,
+        "role": "Response",
+        "span_sha256_utf8": "2a620fa9a0320eb928fdb3fa3d6701a0a49e082cb095a7501c6d9fab947dc90d"
+      }
+    },
+    {
+      "id": "O8C-B4-061",
+      "day": 17,
+      "book": "I",
+      "chapter_hint": 27,
+      "type": "culture",
+      "axes": [
+        2,
+        3,
+        7,
+        8,
+        9,
+        18,
+        19,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael",
+        "brannik",
+        "oren",
+        "daren",
+        "ina",
+        "esmara",
+        "grazha",
+        "astra",
+        "miren"
+      ],
+      "summary": "Música espontânea anã/orc e local; hino provisório Onde Erguemos o Amanhã, celebra cuidado, união e lar, não apenas guerra; comunidade pode modificar.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 27495,
+        "line_end": 27575,
+        "role": "Response",
+        "span_sha256_utf8": "48add3f5088b3a1c83910598ed01de853a85106f2d7053a7d75899a934384384"
+      }
+    },
+    {
+      "id": "O8C-B4-062",
+      "day": "16–19",
+      "book": "I",
+      "chapter_hint": 27,
+      "type": "technology",
+      "axes": [
+        3,
+        15,
+        17,
+        19,
+        20
+      ],
+      "entities": [
+        "brannik",
+        "oren",
+        "daren",
+        "astra"
+      ],
+      "summary": "Três bancadas madeira/metal/matrizes; Oren registros, Daren aulas; golem reformado e caminho firme, 3 ciclos supervisionados em um dia, manutenção documentada.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 27579,
+        "line_end": 27615,
+        "role": "Response",
+        "span_sha256_utf8": "f92b818c6d69d34b20f8bd4d9ad82ffdb7128b6a64b6eabf5ac4cb1bdabf0364"
+      }
+    },
+    {
+      "id": "O8C-B4-063",
+      "day": "16–19",
+      "book": "I",
+      "chapter_hint": 27,
+      "type": "economy",
+      "axes": [
+        3,
+        15,
+        16,
+        18,
+        20,
+        22,
+        27
+      ],
+      "entities": [
+        "esmara",
+        "grazha"
+      ],
+      "summary": "Quatro canteiros iniciados, canaleta convencional, sementes locais; amostras razhka e saber Uzgor, consumo humano ainda não validado, troca limitada em estudo.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 27617,
+        "line_end": 27638,
+        "role": "Response",
+        "span_sha256_utf8": "d4a0675754c9c7bafd080f2807323a2ce0054824b5f0966dd13eb42d818db1d8"
+      }
+    },
+    {
+      "id": "O8C-B4-064",
+      "day": "16–19",
+      "book": "I",
+      "chapter_hint": 27,
+      "type": "economy",
+      "axes": [
+        7,
+        9,
+        18,
+        19,
+        20,
+        25
+      ],
+      "entities": [
+        "lysa",
+        "kael",
+        "varo",
+        "legiao"
+      ],
+      "summary": "Mercado comunitário periódico proposto, talhares/trocas, depósitos essenciais protegidos; 2 legionários pedem manutenção, outro registros/cartografia; transições sujeitas prontidão.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 27639,
+        "line_end": 27663,
+        "role": "Response",
+        "span_sha256_utf8": "8381ea008e13a45798e7324a3a718f331d852ace5d5bf63f0cae176fdf69d3d1"
+      }
+    },
+    {
+      "id": "O8C-B4-065",
+      "day": "16–19",
+      "book": "I",
+      "chapter_hint": 27,
+      "type": "organization",
+      "axes": [
+        3,
+        15,
+        18,
+        19,
+        20,
+        27
+      ],
+      "entities": [
+        "brannik",
+        "esmara",
+        "lysa",
+        "miren",
+        "astra",
+        "lucas",
+        "legiao"
+      ],
+      "summary": "Academia usa sala emprestada, aulas de ofícios, solo, estoque, matemática e magia segura; 15 participantes em pelo menos uma aula, não especialistas.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 27665,
+        "line_end": 27697,
+        "role": "Response",
+        "span_sha256_utf8": "80f721c40b5594328785e54984627fe56fcad0d3571fada5c4210a3d06d88eaf"
+      }
+    },
+    {
+      "id": "O8C-B4-066",
+      "day": 18,
+      "book": "I",
+      "chapter_hint": 27,
+      "type": "power",
+      "axes": [
+        2,
+        3,
+        7,
+        9,
+        11,
+        12,
+        13,
+        24,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "miren",
+        "astra",
+        "oren",
+        "sistema"
+      ],
+      "summary": "Treino sem módulo e depois assistido; Lucas marca toque controlado em Varo pela primeira vez. Impulso Assistido II, coordenação e menor desperdício, carga ainda pequena.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 27701,
+        "line_end": 27877,
+        "role": "Response",
+        "span_sha256_utf8": "3474ec8cb56bd503cc433ac65ac38223954c1333dd3da16bba6a77487bde784b"
+      }
+    },
+    {
+      "id": "O8C-B4-067",
+      "day": 19,
+      "book": "I",
+      "chapter_hint": 27,
+      "type": "culture",
+      "axes": [
+        2,
+        3,
+        9,
+        10,
+        17,
+        18,
+        19,
+        20
+      ],
+      "entities": [
+        "lucas",
+        "brannik",
+        "kael",
+        "lysa",
+        "esmara",
+        "oren",
+        "daren",
+        "ina",
+        "tarek"
+      ],
+      "summary": "Festa Primeira Pedra no pátio com mesas, tecidos, exposição, celebração voluntária e orçamento reservado; 60 locais e demais em turnos; Tarek reconhece benefício sem adesão definitiva.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 27881,
+        "line_end": 27990,
+        "role": "Response",
+        "span_sha256_utf8": "46a552746437cc39feb8c705ad41513c487c3a5e17b6a09ee914958de84d6fd8"
+      }
+    },
+    {
+      "id": "O8C-B4-068",
+      "day": 19,
+      "book": "I",
+      "chapter_hint": 27,
+      "type": "relation",
+      "axes": [
+        7,
+        8,
+        9,
+        10,
+        18,
+        25,
+        30
+      ],
+      "entities": [
+        "elyan",
+        "oren",
+        "varo",
+        "lucas",
+        "kael",
+        "lysa",
+        "astra"
+      ],
+      "summary": "Elyan relata medo de abandono e significado do resgate; histórias de amor e humor; Kael/Lysa brincam, Astra aprende valor de viver sem estudar tudo.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 27993,
+        "line_end": 28098,
+        "role": "Response",
+        "span_sha256_utf8": "fb711f411f515c594ce0a61fc7e783ebcc0a2a5e48fae3716e3e37084dbd4349"
+      }
+    },
+    {
+      "id": "O8C-B4-069",
+      "day": 19,
+      "book": "I",
+      "chapter_hint": 27,
+      "type": "event",
+      "axes": [
+        2,
+        3,
+        6,
+        9,
+        10,
+        11,
+        13,
+        15,
+        18,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "astra",
+        "brannik",
+        "varo",
+        "ina",
+        "tarek",
+        "grazha",
+        "kael"
+      ],
+      "summary": "Miren vestido escuro com detalhes violetas e pingente azul; 12 figuras luminosas representam casa, pedra, ponte e selo; poucos minutos, hino cantado coletivamente.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 28101,
+        "line_end": 28242,
+        "role": "Response",
+        "span_sha256_utf8": "d2f80d87925aa3e658b3b3ab01871036e5a28d92127ada85f98785d276fe49d8"
+      }
+    },
+    {
+      "id": "O8C-B4-070",
+      "day": 19,
+      "book": "I",
+      "chapter_hint": 27,
+      "type": "relation",
+      "axes": [
+        7,
+        8,
+        9,
+        10,
+        25,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren"
+      ],
+      "summary": "Miren admite gostar dele e medo de perda; pede promessa de viver o futuro que constrói, Lucas aceita tentar; beijo sem pressa.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 28245,
+        "line_end": 28355,
+        "role": "Response",
+        "span_sha256_utf8": "f49b555eba866aebdefa9795cedd8af2ae71507a65ac2b11f73d0f41e4654755"
+      }
+    },
+    {
+      "id": "O8C-B4-071",
+      "day": 20,
+      "book": "I",
+      "chapter_hint": 27,
+      "type": "law-culture",
+      "axes": [
+        2,
+        3,
+        7,
+        9,
+        18,
+        19,
+        20,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael",
+        "lysa",
+        "astra"
+      ],
+      "summary": "Carta Provisória de Vida Comunitária aprovada internamente, garantias, disciplina proporcional, queixas, descanso e cultura; moradores discutem versão voluntária; Festa anual proposta, Fundação aguarda assentamento.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 28359,
+        "line_end": 28454,
+        "role": "Response",
+        "span_sha256_utf8": "bedb55e6888d111071863476451bd195b5d0b07f994eb8ecadc881108d6301d9"
+      }
+    },
+    {
+      "id": "O8C-B4-072",
+      "day": 20,
+      "book": "I",
+      "chapter_hint": 27,
+      "type": "artifact",
+      "axes": [
+        3,
+        9,
+        10,
+        13,
+        18,
+        19,
+        30
+      ],
+      "entities": [
+        "kael",
+        "lucas",
+        "ina",
+        "astra",
+        "varo"
+      ],
+      "summary": "Crônicas da Legião Volume I entregue: resgate, oficina, Brannik, assembleia e histórias consentidas, desenho de Ina abre livro.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 28455,
+        "line_end": 28509,
+        "role": "Response",
+        "span_sha256_utf8": "ce2eaa494b61bf85a9bc975f5cb5bb137b2ac5722d38124603d7d908d9347ec9"
+      }
+    },
+    {
+      "id": "O8C-B4-073",
+      "day": 20,
+      "book": "I",
+      "chapter_hint": 27,
+      "type": "state",
+      "axes": [
+        1,
+        3,
+        11,
+        12,
+        15,
+        19,
+        20,
+        25
+      ],
+      "entities": [
+        "legiao",
+        "lucas"
+      ],
+      "summary": "D20: 300 vivos, 60/240; Impulso II, oficina, canteiros, academia, hino provisório, mercado, carta interna. Autossuficiência e concessão ainda pendentes.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 28511,
+        "line_end": 28536,
+        "role": "Response",
+        "span_sha256_utf8": "6e45508a94ebaa287ea4039f300edf79ac327a4c955d7e7b878649e9e761ec21"
+      }
+    },
+    {
+      "id": "O8C-B4-074",
+      "day": 20,
+      "book": "I",
+      "chapter_hint": 27,
+      "type": "relation",
+      "axes": [
+        7,
+        9,
+        10,
+        18,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "kael",
+        "lysa",
+        "astra",
+        "brannik",
+        "legiao"
+      ],
+      "summary": "Vida comunitária espontânea: jogo de madeira, canções, lenda anã e histórias familiares; Lucas reconhece presente a proteger.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 28556,
+        "line_end": 28610,
+        "role": "Response",
+        "span_sha256_utf8": "0fdde5204fd6fbd3cfbdd729f9885c59d17262989c51f2936340acb399696db3"
+      }
+    },
+    {
+      "id": "O8C-B4-075",
+      "day": 21,
+      "book": "I",
+      "chapter_hint": 28,
+      "type": "editorial",
+      "axes": [
+        9,
+        10,
+        28,
+        29,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren"
+      ],
+      "summary": "Autor escolhe opção 1, solicita design narrativo visual/interativo e maior profundidade do romance adulto. Registrar preferência, sem tratar como fato narrativo.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 28615,
+        "line_end": 28619,
+        "role": "Prompt",
+        "span_sha256_utf8": "270b63ded84bfdb3f8c2cc3635eecf724255f4801d1d5b2c2cf4fc7c8520b6a1"
+      }
+    },
+    {
+      "id": "O8C-B4-076",
+      "day": 21,
+      "book": "I",
+      "chapter_hint": 28,
+      "type": "training",
+      "axes": [
+        2,
+        7,
+        11,
+        24
+      ],
+      "entities": [
+        "lucas",
+        "varo"
+      ],
+      "summary": "Lucas aprende leitura corporal e antecipação, evita golpe sem magia; tempo certo em vez de velocidade constante.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 28666,
+        "line_end": 28754,
+        "role": "Response",
+        "span_sha256_utf8": "5e197d8f581257e5827cb28a98559d0a748b396ba6b10589bd17a70464b8c186"
+      }
+    },
+    {
+      "id": "O8C-B4-077",
+      "day": "21–23",
+      "book": "I",
+      "chapter_hint": 28,
+      "type": "agreement",
+      "axes": [
+        2,
+        3,
+        16,
+        17,
+        19,
+        20,
+        25,
+        27
+      ],
+      "entities": [
+        "kael",
+        "lysa",
+        "astra",
+        "neria-valmont",
+        "tarek",
+        "selene-arvost",
+        "auren-velcast"
+      ],
+      "summary": "D21 Selene autoriza concessão experimental 90 dias, área externa, até 120 condicionados a abrigo/saneamento/abastecimento. Vigora dois dias depois com vistoria e concordância; sem soberania/propriedade/controle da estrada.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 28758,
+        "line_end": 28843,
+        "role": "Response",
+        "span_sha256_utf8": "45e97c44d66c8d23d09d8d7cbeabb42e901f757d8c0dee1f3ca064d8a9659610"
+      }
+    },
+    {
+      "id": "O8C-B4-078",
+      "day": "22–27",
+      "book": "I",
+      "chapter_hint": 28,
+      "type": "power",
+      "axes": [
+        2,
+        3,
+        11,
+        12,
+        14,
+        15,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "astra",
+        "miren",
+        "sistema"
+      ],
+      "summary": "Regulador converte pulsos pequenos, após falhas, transferência experimental estável. Refluxo Compatível I confirmado e repetido nos dias seguintes, recuperação pessoal assistida limitada, perdas e fonte necessária, sem aumento máximo.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 28846,
+        "line_end": 29057,
+        "role": "Response",
+        "span_sha256_utf8": "a49d9294b59105c678e732b787327e2db4db982595a90bcdb925e0b57d4bf3c5"
+      }
+    },
+    {
+      "id": "O8C-B4-079",
+      "day": "23–25",
+      "book": "I",
+      "chapter_hint": 28,
+      "type": "state",
+      "axes": [
+        1,
+        3,
+        15,
+        16,
+        17,
+        19,
+        20,
+        25
+      ],
+      "entities": [
+        "brannik",
+        "neria-valmont",
+        "esmara",
+        "lysa",
+        "kael",
+        "legiao"
+      ],
+      "summary": "120 instalados e 180 restantes; germinação de quatro canteiros, 24 alunos regulares, 12 dias de cobertura planejada com entregas futuras; texto relata extensão transitória adicional de 30 dias, preservar sem resolver.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 29060,
+        "line_end": 29090,
+        "role": "Response",
+        "span_sha256_utf8": "ff14f5f085581f4e2526776a41b8f6bb6212bad71234e75b650a07c984e798a4"
+      }
+    },
+    {
+      "id": "O8C-B4-080",
+      "day": 24,
+      "book": "I",
+      "chapter_hint": 28,
+      "type": "event",
+      "axes": [
+        2,
+        3,
+        16,
+        19,
+        20,
+        23,
+        24,
+        27
+      ],
+      "entities": [
+        "varo",
+        "seron",
+        "kael",
+        "astra",
+        "lucas",
+        "edran"
+      ],
+      "summary": "Rota de cargas vinculada parcialmente à pedreira, sem atribuição completa à Bandeira; medidas de reconhecimento e comunicação protegem caravana, entrega chega sem combate.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 29094,
+        "line_end": 29173,
+        "role": "Response",
+        "span_sha256_utf8": "92ddfd00812e5b488f0cc2bade7d3efa8984c82095af5e8c79c85737f578c85c"
+      }
+    },
+    {
+      "id": "O8C-B4-081",
+      "day": 25,
+      "book": "I",
+      "chapter_hint": 28,
+      "type": "relation",
+      "axes": [
+        2,
+        7,
+        8,
+        9,
+        10,
+        17,
+        25,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren"
+      ],
+      "summary": "Miren explicita necessidade de autonomia, estudos e presença pessoal; ambos escolhem intimidade e passam noite juntos na casa de pedra de Miren, sem promessas definitivas.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 29176,
+        "line_end": 29338,
+        "role": "Response",
+        "span_sha256_utf8": "dc12bfbc9d48d382d11d451b3ac1ba7bb922718f061df78b9770c7077058c7a2"
+      }
+    },
+    {
+      "id": "O8C-B4-082",
+      "day": 26,
+      "book": "I",
+      "chapter_hint": 28,
+      "type": "relation",
+      "axes": [
+        2,
+        7,
+        8,
+        9,
+        10,
+        25,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "kael",
+        "lysa",
+        "astra",
+        "varo"
+      ],
+      "summary": "Manhã de chá e humor, ambos expressam estar se apaixonando e preferem descobrir vivendo; conselho trabalha em paralelo.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 29340,
+        "line_end": 29424,
+        "role": "Response",
+        "span_sha256_utf8": "3167208c7a655f600b403960feec81b13e2f3663c5f913852217c9f57a26d4d9"
+      }
+    },
+    {
+      "id": "O8C-B4-083",
+      "day": 27,
+      "book": "I",
+      "chapter_hint": 28,
+      "type": "power",
+      "axes": [
+        2,
+        3,
+        7,
+        11,
+        12,
+        13,
+        24,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "astra",
+        "miren",
+        "oren",
+        "sistema"
+      ],
+      "summary": "Exercício três contra um: reconfiguração limitada e impulso alcançam estandarte, vitória 1/3, adversários adaptam-se; Traçado de Combate I confirmado.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 29428,
+        "line_end": 29654,
+        "role": "Response",
+        "span_sha256_utf8": "18fd3fe2ce825dc5e7bb9daf1225601d26d24d3d5cbcdb1eb7ad21edc4e28ab5"
+      }
+    },
+    {
+      "id": "O8C-B4-084",
+      "day": 27,
+      "book": "I",
+      "chapter_hint": 28,
+      "type": "state",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        9,
+        11,
+        12,
+        15,
+        17,
+        19,
+        20,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "legiao",
+        "kael",
+        "lysa",
+        "astra",
+        "miren",
+        "brannik",
+        "varo"
+      ],
+      "summary": "Conselho em área coberta nova; 300 vivos 120/180, concessão 90 dias, 24 alunos, 12 dias cobertura planejada, Refluxo I, Traçado I, Impulso II. Coração selado, economia não autossuficiente.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 29656,
+        "line_end": 29847,
+        "role": "Response",
+        "span_sha256_utf8": "6d47aaaa69936fe4ca33b30f74e1be3742191ee53886dafc8f139cf1c2dffd4f"
+      }
+    },
+    {
+      "id": "O8C-B4-085",
+      "day": 27,
+      "book": "I",
+      "chapter_hint": 28,
+      "type": "relation",
+      "axes": [
+        2,
+        7,
+        8,
+        9,
+        10,
+        25,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren"
+      ],
+      "summary": "Terraço, ambos reconhecem crescimento e direito de aproveitar vida, futuro sem pressa.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 29851,
+        "line_end": 29923,
+        "role": "Response",
+        "span_sha256_utf8": "815b7cb1ec479c55822669080b1b86e71d6f93678f92315ee6f17b5b23d95e33"
+      }
+    },
+    {
+      "id": "O8C-B4-086",
+      "day": 28,
+      "book": "I",
+      "chapter_hint": 29,
+      "type": "choice",
+      "axes": [
+        7,
+        19,
+        20,
+        24,
+        25,
+        28,
+        29
+      ],
+      "entities": [
+        "lucas"
+      ],
+      "summary": "Autor combina frentes e propõe torneio interno para dez melhores e futura arena pública, reputação e prevenção de guerras.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 29936,
+        "line_end": 29938,
+        "role": "Prompt",
+        "span_sha256_utf8": "212a56a8a60db302b2c32c8bcbf461bb8df0a3df462d4cffc2547825f404ede6"
+      }
+    },
+    {
+      "id": "O8C-B4-087",
+      "day": 28,
+      "book": "I",
+      "chapter_hint": 29,
+      "type": "organization",
+      "axes": [
+        2,
+        3,
+        7,
+        15,
+        17,
+        19,
+        20,
+        24,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael",
+        "lysa",
+        "astra",
+        "brannik",
+        "miren"
+      ],
+      "summary": "Projeto Primeira Lança aprovado: duelo/defesa/mobilidade/terreno/equipe/decisão, árbitros, proteções, participação voluntária e prontidão; Varo compete, arena pública depende autorização.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 29987,
+        "line_end": 30147,
+        "role": "Response",
+        "span_sha256_utf8": "2a9506ccb7351779e26c73a77a4f4985bbed4e0d369d8d22766677cf79944372"
+      }
+    },
+    {
+      "id": "O8C-B4-088",
+      "day": "28–30",
+      "book": "I",
+      "chapter_hint": 29,
+      "type": "state",
+      "axes": [
+        3,
+        15,
+        17,
+        19,
+        20,
+        25
+      ],
+      "entities": [
+        "kael",
+        "lysa",
+        "esmara",
+        "brannik",
+        "astra",
+        "miren"
+      ],
+      "summary": "Concessão vigente, relatório Thalor, dois trechos de cultivo adicionais, reposição de golem, dois serviços pagos, entrega grãos recebida e outra futura, aulas regulares.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 30151,
+        "line_end": 30185,
+        "role": "Response",
+        "span_sha256_utf8": "86ee5919366baddc195b353799b82045ea1c09af35b60aec0806e821564b89b2"
+      }
+    },
+    {
+      "id": "O8C-B4-089",
+      "day": 30,
+      "book": "I",
+      "chapter_hint": 29,
+      "type": "training",
+      "axes": [
+        2,
+        3,
+        7,
+        19,
+        24,
+        27
+      ],
+      "entities": [
+        "varo",
+        "lucas",
+        "legiao"
+      ],
+      "summary": "12 contra 36 legionários em exercício com restrições à equipe maior: vitória menor em uma de três tentativas; não equivalência universal de 1 para 3.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 30189,
+        "line_end": 30265,
+        "role": "Response",
+        "span_sha256_utf8": "f5f0bdce220415aee8c290568bcf0b7f26754205f670ea31cabc7c07f9188c4a"
+      }
+    },
+    {
+      "id": "O8C-B4-090",
+      "day": 31,
+      "book": "I",
+      "chapter_hint": 29,
+      "type": "event",
+      "axes": [
+        2,
+        3,
+        17,
+        19,
+        24,
+        25
+      ],
+      "entities": [
+        "brannik",
+        "varo",
+        "astra",
+        "legiao"
+      ],
+      "summary": "Arena provisória quatro áreas, 216 competem voluntariamente, 84 em serviço/recuperação/recusa; árbitros de Varo independentes das suas provas; moradores convidados, sem público irrestrito.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 30269,
+        "line_end": 30307,
+        "role": "Response",
+        "span_sha256_utf8": "605cac9657febb96d50fa88deef95b551277458571890d236a71b64c04e34dfe"
+      }
+    },
+    {
+      "id": "O8C-B4-091",
+      "day": "31–33",
+      "book": "I",
+      "chapter_hint": 29,
+      "type": "identity",
+      "axes": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        24
+      ],
+      "entities": [
+        "rhem",
+        "varo",
+        "lucas"
+      ],
+      "summary": "Rhem Bastião, largo, silencioso, aspecto cansado; defesa, escudo, resistência e controle.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 30309,
+        "line_end": 30347,
+        "role": "Response",
+        "span_sha256_utf8": "6e7684f548746348764afebd94548ebe589ea60f7bdc86c81989403aaa52dec7"
+      }
+    },
+    {
+      "id": "O8C-B4-092",
+      "day": "31–33",
+      "book": "I",
+      "chapter_hint": 29,
+      "type": "identity",
+      "axes": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        24
+      ],
+      "entities": [
+        "ciran",
+        "lucas",
+        "varo"
+      ],
+      "summary": "Círan Lança Rubra, alto, cabelos escuros presos, preciso; velocidade, mudança de ritmo e pressão. Lucas pede aprendizado e dispensa ajoelhar.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 30351,
+        "line_end": 30419,
+        "role": "Response",
+        "span_sha256_utf8": "f6664f2575eee577ae0fe0dd266a2cebd3094d18920d9d3af1f489ddbe86d14e"
+      }
+    },
+    {
+      "id": "O8C-B4-093",
+      "day": "31–33",
+      "book": "I",
+      "chapter_hint": 29,
+      "type": "identity",
+      "axes": [
+        4,
+        5,
+        7,
+        24,
+        27
+      ],
+      "entities": [
+        "seron",
+        "astra",
+        "varo",
+        "lucas"
+      ],
+      "summary": "Seron Olho destaca-se em reconhecimento e terreno, menor força física e perde pontos em duelos abertos; excelência depende missão.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 30421,
+        "line_end": 30449,
+        "role": "Response",
+        "span_sha256_utf8": "73cead0beb8114158ce113812dcfb8e9e6d8fd63413508a730661f0990a411ae"
+      }
+    },
+    {
+      "id": "O8C-B4-094",
+      "day": 33,
+      "book": "I",
+      "chapter_hint": 29,
+      "type": "combat",
+      "axes": [
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        24
+      ],
+      "entities": [
+        "varo",
+        "ciran",
+        "lucas",
+        "miren",
+        "kael"
+      ],
+      "summary": "Final Varo/Círan, capitão vence marcação decisiva pelo controle do espaço; Círan aceita resultado e rivalidade saudável.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 30453,
+        "line_end": 30563,
+        "role": "Response",
+        "span_sha256_utf8": "f9ce5339022f5b8e43cbdcdcc829a01eb325d56060083f9ab24ef67f3ffe1bb8"
+      }
+    },
+    {
+      "id": "O8C-B4-095",
+      "day": 33,
+      "book": "I",
+      "chapter_hint": 29,
+      "type": "ranking",
+      "axes": [
+        4,
+        5,
+        19,
+        24,
+        27
+      ],
+      "entities": [
+        "varo",
+        "ciran",
+        "seron",
+        "rhem"
+      ],
+      "summary": "Classificação combinada: 1 Varo comando/Muralha, 2 Círan Lança Rubra, 3 Seron Olho, 4 Rhem Bastião; não hierarquia absoluta.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 30567,
+        "line_end": 30588,
+        "role": "Response",
+        "span_sha256_utf8": "049a4183bb2d745a02e12af8a36308133996345efadddb48f765a75c808c4b04"
+      }
+    },
+    {
+      "id": "O8C-B4-096",
+      "day": 33,
+      "book": "I",
+      "chapter_hint": 29,
+      "type": "ranking",
+      "axes": [
+        4,
+        5,
+        19,
+        24,
+        27
+      ],
+      "entities": [
+        "tavren",
+        "darius",
+        "malrek",
+        "edric",
+        "toran",
+        "sael"
+      ],
+      "summary": "5 Tavren Tempestade (mobilidade/reação), 6 Darius Véu (discrição/precisão), 7 Malrek Martelo (choque/adaptação), 8 Edric Sentinela (perímetro), 9 Toran Reserva (proteção/resgate), 10 Sael Forja (força/técnica/improviso).",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 30589,
+        "line_end": 30612,
+        "role": "Response",
+        "span_sha256_utf8": "28b40fd62ad6d79dc77ca82c6faeb54e46a614b3bd5ef24159ace0eb43aff4f6"
+      }
+    },
+    {
+      "id": "O8C-B4-097",
+      "day": 33,
+      "book": "I",
+      "chapter_hint": 29,
+      "type": "organization",
+      "axes": [
+        3,
+        7,
+        9,
+        19,
+        24,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "ciran",
+        "seron",
+        "rhem",
+        "legiao"
+      ],
+      "summary": "Os Dez da Primeira Lança reconhecidos; formar instrutores, não promoção automática de patente; Lucas quer aprender com campeões e multiplicar talentos.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 30614,
+        "line_end": 30690,
+        "role": "Response",
+        "span_sha256_utf8": "b3c1eb2b5b150db33cc7b1566a26698d91c1eb4039a06b3431035e08eaecdfc5"
+      }
+    },
+    {
+      "id": "O8C-B4-098",
+      "day": 34,
+      "book": "I",
+      "chapter_hint": 29,
+      "type": "combat",
+      "axes": [
+        2,
+        3,
+        11,
+        12,
+        13,
+        24,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "ciran",
+        "varo",
+        "astra",
+        "miren"
+      ],
+      "summary": "Círan vence treino 3–1; Lucas marca um ponto usando reconfiguração e impulso, perde diante de adaptação. Dois módulos externos adicionais construídos naquela semana.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 30694,
+        "line_end": 30816,
+        "role": "Response",
+        "span_sha256_utf8": "a7e629d35f1e457052a924fb5ded3fd264a7110e9c6742f6bcdae9594f081f15"
+      }
+    },
+    {
+      "id": "O8C-B4-099",
+      "day": 34,
+      "book": "I",
+      "chapter_hint": 29,
+      "type": "power",
+      "axes": [
+        7,
+        9,
+        11,
+        12,
+        13,
+        24,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "ciran",
+        "varo",
+        "astra",
+        "sistema"
+      ],
+      "summary": "Traçado de Combate II, melhor coordenação e aproveitamento, sem domínio de múltiplos elites ou defesa comprovada de magia avançada.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 30818,
+        "line_end": 30886,
+        "role": "Response",
+        "span_sha256_utf8": "3103e40edef3d602a0222baa31b9c149d2f2b5adf628e23ca3a3569056c47a68"
+      }
+    },
+    {
+      "id": "O8C-B4-100",
+      "day": 34,
+      "book": "I",
+      "chapter_hint": 29,
+      "type": "assessment",
+      "axes": [
+        2,
+        19,
+        20,
+        23,
+        24,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael",
+        "astra",
+        "lysa",
+        "brannik"
+      ],
+      "summary": "Avaliação de força distingue vitória Uzgor, exercícios, especialidades e guerra de cerco desconhecida; sem multiplicador fixo. Arena futura precisa viabilidade e controle de informação.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 30890,
+        "line_end": 30975,
+        "role": "Response",
+        "span_sha256_utf8": "64e0b1f76492458ea1b02cdfe0139b3dd1052f576a6d81a5a3ed9b5e53a2e1c8"
+      }
+    },
+    {
+      "id": "O8C-B4-101",
+      "day": 34,
+      "book": "I",
+      "chapter_hint": 29,
+      "type": "report",
+      "axes": [
+        3,
+        16,
+        19,
+        20,
+        23,
+        27
+      ],
+      "entities": [
+        "edran",
+        "kael",
+        "lucas",
+        "lysa",
+        "varo",
+        "astra"
+      ],
+      "summary": "Edran relata rumores do torneio em Halvern, pergunta sobre demonstração pública; alegações exageradas não comprovadas.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 30979,
+        "line_end": 31024,
+        "role": "Response",
+        "span_sha256_utf8": "9fa7852b6515d10eddb1ff595b0e923cd167437958edaf27095cd751da24826d"
+      }
+    },
+    {
+      "id": "O8C-B4-102",
+      "day": 34,
+      "book": "I",
+      "chapter_hint": 29,
+      "type": "relation",
+      "axes": [
+        2,
+        7,
+        8,
+        9,
+        10,
+        25,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren"
+      ],
+      "summary": "Miren orgulha-se de Lucas transformar campeões em professores, não guarda exclusiva; afeto não depende de poder.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 31027,
+        "line_end": 31139,
+        "role": "Response",
+        "span_sha256_utf8": "9fea3244b28b9c2232836ef7c329cb91e3ce761b1fa71e9b6d5429277fe45638"
+      }
+    },
+    {
+      "id": "O8C-B4-103",
+      "day": 34,
+      "book": "I",
+      "chapter_hint": 29,
+      "type": "state",
+      "axes": [
+        1,
+        3,
+        11,
+        12,
+        19,
+        20,
+        24,
+        25
+      ],
+      "entities": [
+        "legiao",
+        "lucas"
+      ],
+      "summary": "300 vivos, 10 campeões, primeiro torneio concluído, Traçado II, reputação regional e novos módulos; agricultura/economia em andamento.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 31141,
+        "line_end": 31174,
+        "role": "Response",
+        "span_sha256_utf8": "88a6d90622f4f12e4cfe4144d3ddc02d08c6948d9a01cad19480f6503179d29c"
+      }
+    },
+    {
+      "id": "O8C-B4-104",
+      "day": 34,
+      "book": "I",
+      "chapter_hint": 30,
+      "type": "editorial",
+      "axes": [
+        1,
+        11,
+        12,
+        19,
+        24,
+        28,
+        29
+      ],
+      "entities": [
+        "lucas",
+        "legiao"
+      ],
+      "summary": "Diretriz Ascensão dos 300: preserve D34, 120/180, 90 dias, dez campeões, poderes e vínculos, sem retroatividade.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 31203,
+        "line_end": 31217,
+        "role": "Prompt",
+        "span_sha256_utf8": "70de9cbc3cd23a6dd06f5705d2f6ea5e1b6eb5e6f530c026f1c6cfa2b5ae2e1b"
+      }
+    },
+    {
+      "id": "O8C-B4-105",
+      "day": 35,
+      "book": "I",
+      "chapter_hint": 30,
+      "type": "choice",
+      "axes": [
+        4,
+        7,
+        9,
+        11,
+        12,
+        14,
+        19,
+        24,
+        25,
+        28
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "astra",
+        "miren",
+        "legiao"
+      ],
+      "summary": "Assembleia escalonada, conhecer indivíduos, consentimento, autonomia, investigar potencial e afinidades; menções autorais Vínculo da Irmandade e Árvore de Evolução parcial são referências para pesquisa, não novos desbloqueios.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 31219,
+        "line_end": 31251,
+        "role": "Prompt",
+        "span_sha256_utf8": "15f17036861ab7d0cf97f31dd8ae741e6cdeeac05e453ac7b84d64599f2fc7ef"
+      }
+    },
+    {
+      "id": "O8C-B4-106",
+      "day": 35,
+      "book": "I",
+      "chapter_hint": 30,
+      "type": "choice",
+      "axes": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        26,
+        27,
+        28
+      ],
+      "entities": [
+        "kael",
+        "lysa",
+        "lucas",
+        "edran"
+      ],
+      "summary": "Fundação multicultural, saúde, ensino, comércio e liberdade; atlas de continentes, mares, povos, religiões, tecnologias, rotas, expedições futuras; distinguir fatos, relatos, lendas e hipóteses.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 31253,
+        "line_end": 31281,
+        "role": "Prompt",
+        "span_sha256_utf8": "0a0425853bffdbacccfe742ae47197f6d860b98dbdd1394e05522f1d8d01d0f2"
+      }
+    },
+    {
+      "id": "O8C-B4-107",
+      "day": 35,
+      "book": "I",
+      "chapter_hint": 30,
+      "type": "editorial",
+      "axes": [
+        7,
+        9,
+        19,
+        23,
+        24,
+        25,
+        28,
+        29,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "legiao"
+      ],
+      "summary": "Demonstração independente da Legião com consequências; título Criador por reconhecimento espontâneo, sem idolatria; ritmo ágil e cenas emocionais; não avançar assembleia automaticamente nem decidir falas autorais.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 31283,
+        "line_end": 31341,
+        "role": "Prompt",
+        "span_sha256_utf8": "6cef51bcc04f706ecc1a29ca44f58f87a544c1e8927e77b8e6d0d5afcd11b28b"
+      }
+    },
+    {
+      "id": "O8C-B4-108",
+      "day": 34,
+      "book": "I",
+      "chapter_hint": 30,
+      "type": "reflection",
+      "axes": [
+        1,
+        2,
+        7,
+        9,
+        10,
+        19,
+        24
+      ],
+      "entities": [
+        "lucas",
+        "ciran",
+        "rhem",
+        "seron",
+        "legiao"
+      ],
+      "summary": "Retorna D34 21h48 após derrota; Lucas percebe rivalidades e vidas autônomas, convoca conselho para conhecer pessoas além das funções.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 31352,
+        "line_end": 31454,
+        "role": "Response",
+        "span_sha256_utf8": "be3eec138befe254774be018b4f1a40ac6267ef538e25dc9db83727b35fe3ebe"
+      }
+    },
+    {
+      "id": "O8C-B4-109",
+      "day": 35,
+      "book": "I",
+      "chapter_hint": 30,
+      "type": "organization",
+      "axes": [
+        2,
+        3,
+        7,
+        9,
+        18,
+        19,
+        20,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael",
+        "lysa",
+        "astra",
+        "miren",
+        "brannik",
+        "oren",
+        "legiao"
+      ],
+      "summary": "Assembleia dos 300 — Fundação da Irmandade; sessões escalonadas, direitos, descanso, remuneração, recurso, mudança de função e eventual saída; lealdade por convicção, não imposição de CREATION.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 31458,
+        "line_end": 31592,
+        "role": "Response",
+        "span_sha256_utf8": "8b72fe2d7da2c144f21d35d4014667b03911f0517247d62364e094680c10bb85"
+      }
+    },
+    {
+      "id": "O8C-B4-110",
+      "day": 35,
+      "book": "I",
+      "chapter_hint": 30,
+      "type": "project-open",
+      "axes": [
+        3,
+        15,
+        16,
+        18,
+        19,
+        20,
+        26,
+        27
+      ],
+      "entities": [
+        "astra",
+        "kael",
+        "lysa",
+        "varo",
+        "seron",
+        "edran"
+      ],
+      "summary": "Atlas do Mundo Conhecido Volume Zero, mapa parcial de Arvendell/Halvern/Três Arcos/pedreira/rio; quatro graus de evidência (observação, documento, testemunho, lenda); busca legal de mapas/rotas, reconhecimento próximo. Cena continua.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 31596,
+        "line_end": 31642,
+        "role": "Response",
+        "span_sha256_utf8": "6ebde6962951bdd08ee44e8614ca5a7db15ed9574165f34e72b48d81ee455826"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "start": 21442,
+      "end": 22149,
+      "role": "Response",
+      "span_sha256_utf8": "513b26e1e7f39f6eca1f7dd228156ee502ad95ab698da84e7ff3dd1a92a60caf",
+      "record_ids": [
+        "O8C-B4-001",
+        "O8C-B4-002",
+        "O8C-B4-003",
+        "O8C-B4-004",
+        "O8C-B4-005",
+        "O8C-B4-006",
+        "O8C-B4-007"
+      ],
+      "disposition": "CONTINUATION_FROM_PRIOR_MACRO"
+    },
+    {
+      "start": 22150,
+      "end": 22280,
+      "role": "Prompt",
+      "span_sha256_utf8": "274c260e5d2ebf526f4a8c4f0be225874edf0ae812d1e4814b934f295250f39a",
+      "record_ids": [
+        "O8C-B4-008",
+        "O8C-B4-009"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 22281,
+      "end": 24085,
+      "role": "Response",
+      "span_sha256_utf8": "4d44333a30ab4dede0c050e08b5391c29ac36567addd84d4dae16abe7584c854",
+      "record_ids": [
+        "O8C-B4-010",
+        "O8C-B4-011",
+        "O8C-B4-012",
+        "O8C-B4-013",
+        "O8C-B4-014",
+        "O8C-B4-015",
+        "O8C-B4-016",
+        "O8C-B4-017",
+        "O8C-B4-018",
+        "O8C-B4-019",
+        "O8C-B4-020",
+        "O8C-B4-021",
+        "O8C-B4-022",
+        "O8C-B4-023",
+        "O8C-B4-024",
+        "O8C-B4-025"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 24086,
+      "end": 24094,
+      "role": "Prompt",
+      "span_sha256_utf8": "a88aa77822187d4ed7b69d2603e7c436bb7e3fe046ce00b42a475fb059c6f5ea",
+      "record_ids": [
+        "O8C-B4-026"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 24095,
+      "end": 24105,
+      "role": "Response",
+      "span_sha256_utf8": "249d3d9887906af01479e78258d15570df240dd284180513f6dd689a8777f021",
+      "record_ids": [
+        "O8C-B4-027"
+      ],
+      "disposition": "EXPORT_METADATA_NO_NARRATIVE"
+    },
+    {
+      "start": 24106,
+      "end": 24111,
+      "role": "Prompt",
+      "span_sha256_utf8": "a03c3c90797f6457e036413fb25167ea983b502b7711601f5461ddae154b9dfa",
+      "record_ids": [
+        "O8C-B4-028"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 24112,
+      "end": 25586,
+      "role": "Response",
+      "span_sha256_utf8": "c682068f075b91e72406ef7d963e855ede0e5f2994fcb35753bb39d68dccf0c1",
+      "record_ids": [
+        "O8C-B4-029",
+        "O8C-B4-030",
+        "O8C-B4-031",
+        "O8C-B4-032",
+        "O8C-B4-033",
+        "O8C-B4-034",
+        "O8C-B4-035",
+        "O8C-B4-036",
+        "O8C-B4-037",
+        "O8C-B4-038",
+        "O8C-B4-039",
+        "O8C-B4-040",
+        "O8C-B4-041"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 25587,
+      "end": 25785,
+      "role": "Prompt",
+      "span_sha256_utf8": "e586fa596af458d8e11f95ea258c55e37b0665be7d2a57cc1666b8bea24db9f2",
+      "record_ids": [
+        "O8C-B4-042",
+        "O8C-B4-043",
+        "O8C-B4-044"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 25786,
+      "end": 26902,
+      "role": "Response",
+      "span_sha256_utf8": "76bf9079e38b9c8182ef7ffcdbe0d96d70e96aae44701981f4f5e5fd9508bf82",
+      "record_ids": [
+        "O8C-B4-045",
+        "O8C-B4-046",
+        "O8C-B4-047",
+        "O8C-B4-048",
+        "O8C-B4-049",
+        "O8C-B4-050",
+        "O8C-B4-051",
+        "O8C-B4-052",
+        "O8C-B4-053",
+        "O8C-B4-054"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 26903,
+      "end": 26925,
+      "role": "Prompt",
+      "span_sha256_utf8": "46d2cc0bbfd907ee9c6610546ba7d812bcaab2d8a1607853ad1a34672e6c7ee8",
+      "record_ids": [
+        "O8C-B4-055"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 26926,
+      "end": 28611,
+      "role": "Response",
+      "span_sha256_utf8": "c540d0c57881fc3880dc507c41e7d127c6c08632e1a0c935834643e7cf23f8d1",
+      "record_ids": [
+        "O8C-B4-056",
+        "O8C-B4-057",
+        "O8C-B4-058",
+        "O8C-B4-059",
+        "O8C-B4-060",
+        "O8C-B4-061",
+        "O8C-B4-062",
+        "O8C-B4-063",
+        "O8C-B4-064",
+        "O8C-B4-065",
+        "O8C-B4-066",
+        "O8C-B4-067",
+        "O8C-B4-068",
+        "O8C-B4-069",
+        "O8C-B4-070",
+        "O8C-B4-071",
+        "O8C-B4-072",
+        "O8C-B4-073",
+        "O8C-B4-074"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 28612,
+      "end": 28620,
+      "role": "Prompt",
+      "span_sha256_utf8": "b789eb01da10d2c053529e7d53d3d65545a983c0e8dee33366e96220ad12268a",
+      "record_ids": [
+        "O8C-B4-075"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 28621,
+      "end": 29932,
+      "role": "Response",
+      "span_sha256_utf8": "fecf85f3314a817ae42a0ccffe7a30b6f3c6fccd143dc7e61221c901fa68bd66",
+      "record_ids": [
+        "O8C-B4-076",
+        "O8C-B4-077",
+        "O8C-B4-078",
+        "O8C-B4-079",
+        "O8C-B4-080",
+        "O8C-B4-081",
+        "O8C-B4-082",
+        "O8C-B4-083",
+        "O8C-B4-084",
+        "O8C-B4-085"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 29933,
+      "end": 29939,
+      "role": "Prompt",
+      "span_sha256_utf8": "4ee8e651b1f31df3c9353d08ffc093c726ce87b24d9998968acb2974bb8bd759",
+      "record_ids": [
+        "O8C-B4-086"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 29940,
+      "end": 31199,
+      "role": "Response",
+      "span_sha256_utf8": "d162b4515e204061b55666fd2819fb2de828a6d06b7b57defac249f91df70d5f",
+      "record_ids": [
+        "O8C-B4-087",
+        "O8C-B4-088",
+        "O8C-B4-089",
+        "O8C-B4-090",
+        "O8C-B4-091",
+        "O8C-B4-092",
+        "O8C-B4-093",
+        "O8C-B4-094",
+        "O8C-B4-095",
+        "O8C-B4-096",
+        "O8C-B4-097",
+        "O8C-B4-098",
+        "O8C-B4-099",
+        "O8C-B4-100",
+        "O8C-B4-101",
+        "O8C-B4-102",
+        "O8C-B4-103"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 31200,
+      "end": 31342,
+      "role": "Prompt",
+      "span_sha256_utf8": "c499f9f98c3c90249f0c9e249b10afe1bc675d65234e9589131feebe976cd81f",
+      "record_ids": [
+        "O8C-B4-104",
+        "O8C-B4-105",
+        "O8C-B4-106",
+        "O8C-B4-107"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 31343,
+      "end": 31642,
+      "role": "Response",
+      "span_sha256_utf8": "4781db7128faa601d5cb81757882806d3a456c38fe7bb2b892670c0c120ccafb",
+      "record_ids": [
+        "O8C-B4-108",
+        "O8C-B4-109",
+        "O8C-B4-110"
+      ],
+      "disposition": "OPEN_AT_MACRO_END"
+    }
+  ],
+  "axis_coverage": {
+    "assessed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "represented": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "unrepresented": [],
+    "note": "Tags indicate relevance, not confirmed existence of dungeon or species."
+  },
+  "continuity": {
+    "from": {
+      "day": 9,
+      "chapter": 23,
+      "line": 21442
+    },
+    "to": {
+      "day": 35,
+      "chapter": 30,
+      "line": 31643,
+      "open_response": true
+    }
+  },
+  "historical_state_transitions": [
+    {
+      "day": 10,
+      "subject": "astra",
+      "state": "created, autonomous, joins voluntarily; Matriz Cognitiva Integrada I"
+    },
+    {
+      "day": 11,
+      "subject": "territory",
+      "state": "60 authorized conditionally; 14 days extension"
+    },
+    {
+      "day": 12,
+      "subject": "legiao",
+      "state": "60/240; Conselho Operacional"
+    },
+    {
+      "day": 13,
+      "subject": "armor",
+      "state": "Impulso Assistido I"
+    },
+    {
+      "day": 18,
+      "subject": "armor",
+      "state": "Impulso Assistido II"
+    },
+    {
+      "day": 19,
+      "subject": "culture",
+      "state": "Festa Primeira Pedra"
+    },
+    {
+      "day": 20,
+      "subject": "culture",
+      "state": "Carta interna, Crônicas da Legião I"
+    },
+    {
+      "day": 23,
+      "subject": "territory",
+      "state": "90-day concession effective, up to 120"
+    },
+    {
+      "day": "22–27",
+      "subject": "creation",
+      "state": "Refluxo Compatível I"
+    },
+    {
+      "day": 27,
+      "subject": "legiao",
+      "state": "120/180, 24 students; Traçado I"
+    },
+    {
+      "day": 33,
+      "subject": "legiao",
+      "state": "Dez da Primeira Lança"
+    },
+    {
+      "day": 34,
+      "subject": "creation",
+      "state": "Traçado II"
+    },
+    {
+      "day": 35,
+      "subject": "legiao",
+      "state": "assembly and atlas initiated, not concluded"
+    }
+  ],
+  "deferred_review": [
+    {
+      "issue": "D23–25 extra 30 days stated in narrative; planning preface mentioned 21 days",
+      "action": "preserve narrative and flag preface difference, no adjudication"
+    },
+    {
+      "issue": "D34 return to earlier hour after D35 author directions; nonmonotonic narrative time",
+      "action": "source order and day separate"
+    },
+    {
+      "issue": "Image-only response text absent",
+      "action": "do not infer visual content; review archive artifact if available at final"
+    },
+    {
+      "issue": "Chapter labels and evolving historical editorial preferences",
+      "action": "defer consolidation; no policy v22 change"
+    }
+  ],
+  "review_policy": {
+    "mode": "RECOVER_FIRST_REVIEW_AT_CURRENT_DAY",
+    "user_authorized": true,
+    "description": "Recover and append historical data in chronological source order, track evolving facts and preserve previous states; defer global reconciliation, refactors, semantic deduplication, final regression suite and canon promotion until historical intake reaches D579. Minimal per-write source, role, range, hash and readback safeguards remain.",
+    "no_current_story_action": true
+  },
+  "verification": {
+    "source_anchor_count": 110,
+    "section_count": 17,
+    "source_ranges_contiguous": true,
+    "prior_receipt_hash_verified": true,
+    "queue_hash_verified": true,
+    "controller_review_not_exhaustive": true,
+    "native_semantic_receipt_validation": "DEFERRED_FOR_NEW_FORMAT",
+    "independent_review": false
+  },
+  "canon_changed": false,
+  "semantic_certification": false,
+  "promotion": false,
+  "next_line": 31643
+}
