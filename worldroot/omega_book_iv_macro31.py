@@ -348,7 +348,38 @@ def verify_macro35_close(root,archive):
     require(cp["native_validation"]=="PENDING" and cp["production_gate"]=="HOLD" and not cp["canon_changed"] and not cp["official_checkpoint_changed"] and not cp["semantic_certification"] and not cp["promotion"],"gate")
     return {**result,"status":"PASS_NATIVE_MACRO_0035_COMPLETE","new_records":new["records"],"new_lines":8228,"next_line":30642,"macro_complete":True,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False,"authority_counts":dict(Counter(x["authority"] for x in allr)),"visibility_counts":dict(Counter(x["visibility"] for x in allr))}
 
+
+def verify_macro36_start(root,archive):
+    from collections import Counter
+    root=Path(root); archive=Path(archive)
+    prior=verify_macro35_close(root,archive)
+    c0=read(root,ROOT+"recovery-checkpoint-0035-validated.json","4cf6dbe88aaf3689627e8cb5f8d2de2e8bbe03e5")
+    require(prior["macro_complete"] and prior["next_line"]==c0["next_line"]==30642 and c0["native_validation"]=="PASS","prior validated checkpoint")
+    cp=read(root,ROOT+"recovery-checkpoint-0036-partial-01.json","2ff961ff24ad4c1f43985c22c5a92776a614ed44")
+    r=read(root,cp["receipt_path"],"c853ff4a4cb7a5a76a967486e6192bbc9df457bc",cp["receipt_sha256"])
+    q=read(root,"audit/omega008-c/bulk-macro-queue.json","e5a5f9e358d20acf8559f6313c2da24b64665f48")["macros"]; m=q[35]
+    require(c0["next_macro"]==cp["next_macro"]==m and r["previous_macro_id"]==q[34]["id"] and r["official_unit_seal"]==m["unit_seal"],"queue chain")
+    require(r["previous_checkpoint_blob"]==cp["previous_checkpoint_blob"]=="4cf6dbe88aaf3689627e8cb5f8d2de2e8bbe03e5" and r["release_blob"]==cp["release_blob"]==c0["release_blob"],"checkpoint chain")
+    source=SourceCache(archive,read(archive,"history/sources/MANIFEST.json","2048141263f66151230119af9b0ee51796ac846b")).get(m["source"])
+    review=read(root,c0["cycle_review_path"],c0["cycle_review_blob"])
+    ids=[x["id"] for g in review["macros"] for entry in g["receipts"] for x in read(root,entry["path"],entry["blob"])["records"]]
+    for name in ("partial-macro-0035-01.json","partial-macro-0035-02.json"):
+        ids.extend(x["id"] for x in read(root,ROOT+name)["records"])
+    result=validate_receipt(r,m,source,r["project"],ARCHIVE,previous_ids=ids,expected_range=[30642,32413])
+    allr=r["records"]
+    require(result["lines"]==1772 and result["records"]==result["coverage"]==cp["records"]==9,"counts")
+    require(cp["staging_records"]==c0["staging_records"]+9==2580 and cp["book_counts"]["IV"]==458 and cp["completed_macros"]==35,"staging counts")
+    require(all(x["book"]=="IV" and x["chapter_hint"]==11 and x["day"] in (399,400) for x in allr),"scope")
+    require(all(x["evidence"]["role"]=="Response" for x in allr),"roles")
+    require(all(x["visibility"].startswith("READER_ONLY") for x in allr if x["type"]=="reader_scene") and all(x["visibility"].startswith("RESTRICTED") for x in allr if x["type"]=="knowledge"),"private boundary")
+    require(all(x["authority"]=="METADATA_NOT_EVENT" for x in allr if x["type"]=="metadata"),"metadata")
+    require("Se Eu Souber Voltar" in source[0][31852] and "As Mãos Que Me Trouxeram" in source[0][32202],"distinct songs")
+    require(source[0][32412]=="— AGORA SENTEM, PORQUE A COMIDA ESTÁ ESFRIANDO!" and source[0][32413]=="","literal boundary")
+    require(cp["next_line"]==r["next_line"]==32414 and not cp["macro_complete"] and cp["native_validation"]=="PENDING","partial checkpoint")
+    require(cp["production_gate"]=="HOLD" and not cp["canon_changed"] and not cp["official_checkpoint_changed"] and not cp["semantic_certification"] and not cp["promotion"],"gate")
+    return {**result,"status":"PASS_NATIVE_MACRO_0036_PARTIAL","session_new_lines":10000,"session_new_records":47,"next_line":32414,"macro_complete":False,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False,"authority_counts":dict(Counter(x["authority"] for x in allr)),"visibility_counts":dict(Counter(x["visibility"] for x in allr))}
+
 def main():
     p=argparse.ArgumentParser();p.add_argument("--engine-root",default=".");p.add_argument("--archive-root",required=True)
-    a=p.parse_args();print(json.dumps(verify_macro35_close(a.engine_root,a.archive_root),sort_keys=True))
+    a=p.parse_args();print(json.dumps(verify_macro36_start(a.engine_root,a.archive_root),sort_keys=True))
 if __name__=="__main__":main()
