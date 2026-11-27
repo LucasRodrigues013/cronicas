@@ -1,0 +1,762 @@
+{
+  "schema": "OMEGA_HYBRID_MACRO_0025_CHECKPOINT_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "archive_head": {
+    "day": 579,
+    "sequence": 50,
+    "blob": "9b4e09682fc3148511d59e73ec56fdcda4e396e5",
+    "pending": "LVI-C09-PII-D580-AUTHOR-SOURCE"
+  },
+  "policy_ref": {
+    "path": "audit/omega008-c/turbo-v3/hybrid-approved-baseline.json",
+    "blob": "30358c0192d501d4d9995b355b1106a35aa9a832",
+    "commit": "7676794e93b6ee0e2cc6cb0088e6945dcae0ae58"
+  },
+  "previous": {
+    "path": "audit/omega008-c/turbo-v3/hybrid-cycle-zero-checkpoint.json",
+    "git_blob": "2dd242907b11d185107fe942ce81b40b0623d22c",
+    "commit": "f4b45d81169eb872a213b9749216fe885ec60508"
+  },
+  "receipt": {
+    "path": "audit/omega008-c/turbo-v3/macro-0025-complete.json",
+    "git_blob": "d512cbf56ca3a0562df2dc98da0e24c857101634",
+    "sha256": "d3181e3fc7b26d94e29d69c1a5a71f02c4e458fd2a5bd836f60555376a551213",
+    "commit": "02b91b17e3a6efebe438c21b989cc3956cdcb2c2"
+  },
+  "macro": 25,
+  "macro_complete": true,
+  "status": "RECOVERY_COMPLETE_STAGING_LOCAL_REVIEW_DONE_GLOBAL_HOMOLOGATION_PENDING",
+  "macro_records": 80,
+  "new_candidates_this_turn": 50,
+  "completed_macros_including_staging": 25,
+  "official_macros": 22,
+  "official_candidates": 1656,
+  "staging_candidates": 1858,
+  "book_counts": {
+    "I": 490,
+    "II": 746,
+    "III": 622
+  },
+  "book_III_lines": 101955,
+  "book_III_total_lines": 133233,
+  "book_III_completed_macros": 10,
+  "book_III_total_macros": 14,
+  "source_lines_recovered": 237425,
+  "macro_range": [
+    227182,
+    237425
+  ],
+  "next_line": 237426,
+  "day": 265,
+  "chapter": 27,
+  "next_macro": {
+    "id": "2e22ed63d11469a836697e462f32cffbb03f255251eba1c3bfcc79cefff9ffee",
+    "number": 26,
+    "start": 237426,
+    "status": "NOT_STARTED"
+  },
+  "axis_coverage": {
+    "assessed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "represented": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "unrepresented": [
+      21
+    ],
+    "method": "Manual grouped semantic relevance tags, not exhaustive recall; axis 21 not artificially filled; farol/estaleiro heritage does not establish dungeon.",
+    "scope": "Author requests separate; metadata excluded."
+  },
+  "local_conflicts": [
+    {
+      "id": "B25-LIMIAR-001",
+      "status": "OPEN_NOMENCLATURE_CONFLICT_PRESERVE_PRIOR_POWER",
+      "records": [
+        "O8C-B9-003",
+        "O8C-B25-077"
+      ],
+      "detail": "D137 Segundo Limiar awakened; D264 same phrase in final evaluation. Do not overwrite, downgrade, or infer third threshold. New Restituição Referenciada I explicitly demonstrated and Leitura Matricial I named independently.",
+      "source_lines": [
+        237117,
+        237139,
+        237141
+      ]
+    },
+    {
+      "id": "B25-SCOPE-001",
+      "status": "EDITORIAL_GUARD",
+      "record": "O8C-B25-051",
+      "detail": "Book in unknown hands is reader-only subclaim; only documentary existence known to investigators."
+    },
+    {
+      "id": "B25-PRIVATE-001",
+      "status": "EDITORIAL_GUARD",
+      "record": "O8C-B25-031",
+      "detail": "Aeldric's private note about public library unnoticed by others; no character injection."
+    },
+    {
+      "id": "B25-DATE-001",
+      "status": "SOURCE_AMBIGUITY_NO_INVENTED_DATE",
+      "detail": "D260 header and 'manhã seguinte à descoberta' retained as source phrasing; no inferred D261 bath."
+    },
+    {
+      "id": "B25-RECOVERY-001",
+      "status": "AUTHOR_WISH_NOT_COMPLETED",
+      "detail": "D264 Varo improves, not unrestricted release; author prompt requesting full recovery cannot supersede source."
+    }
+  ],
+  "entity_lookup": {
+    "iana": [
+      "O8C-B25-001",
+      "O8C-B25-016",
+      "O8C-B25-021",
+      "O8C-B25-034",
+      "O8C-B25-037",
+      "O8C-B25-038",
+      "O8C-B25-053",
+      "O8C-B25-055",
+      "O8C-B25-057",
+      "O8C-B25-074",
+      "O8C-B25-075",
+      "O8C-B25-078"
+    ],
+    "brannik": [
+      "O8C-B25-001",
+      "O8C-B25-015",
+      "O8C-B25-023",
+      "O8C-B25-037"
+    ],
+    "aurel": [
+      "O8C-B25-001",
+      "O8C-B25-021",
+      "O8C-B25-038",
+      "O8C-B25-053",
+      "O8C-B25-055",
+      "O8C-B25-058",
+      "O8C-B25-072",
+      "O8C-B25-073",
+      "O8C-B25-074",
+      "O8C-B25-076",
+      "O8C-B25-077",
+      "O8C-B25-078"
+    ],
+    "naira": [
+      "O8C-B25-001",
+      "O8C-B25-021",
+      "O8C-B25-038",
+      "O8C-B25-053",
+      "O8C-B25-055",
+      "O8C-B25-058",
+      "O8C-B25-061",
+      "O8C-B25-072",
+      "O8C-B25-073",
+      "O8C-B25-076",
+      "O8C-B25-078"
+    ],
+    "lucas": [
+      "O8C-B25-001",
+      "O8C-B25-004",
+      "O8C-B25-007",
+      "O8C-B25-009",
+      "O8C-B25-010",
+      "O8C-B25-011",
+      "O8C-B25-012",
+      "O8C-B25-013",
+      "O8C-B25-014",
+      "O8C-B25-015",
+      "O8C-B25-016",
+      "O8C-B25-018",
+      "O8C-B25-019",
+      "O8C-B25-020",
+      "O8C-B25-022",
+      "O8C-B25-024",
+      "O8C-B25-025",
+      "O8C-B25-026",
+      "O8C-B25-028",
+      "O8C-B25-029",
+      "O8C-B25-030",
+      "O8C-B25-031",
+      "O8C-B25-033",
+      "O8C-B25-034",
+      "O8C-B25-036",
+      "O8C-B25-037",
+      "O8C-B25-038",
+      "O8C-B25-039",
+      "O8C-B25-043",
+      "O8C-B25-044",
+      "O8C-B25-045",
+      "O8C-B25-046",
+      "O8C-B25-048",
+      "O8C-B25-049",
+      "O8C-B25-052",
+      "O8C-B25-053",
+      "O8C-B25-054",
+      "O8C-B25-055",
+      "O8C-B25-057",
+      "O8C-B25-058",
+      "O8C-B25-059",
+      "O8C-B25-060",
+      "O8C-B25-061",
+      "O8C-B25-062",
+      "O8C-B25-063",
+      "O8C-B25-069",
+      "O8C-B25-070",
+      "O8C-B25-072",
+      "O8C-B25-073",
+      "O8C-B25-074",
+      "O8C-B25-075",
+      "O8C-B25-076",
+      "O8C-B25-077",
+      "O8C-B25-078"
+    ],
+    "serenna": [
+      "O8C-B25-002",
+      "O8C-B25-003",
+      "O8C-B25-006",
+      "O8C-B25-008",
+      "O8C-B25-011",
+      "O8C-B25-012",
+      "O8C-B25-013",
+      "O8C-B25-014",
+      "O8C-B25-017",
+      "O8C-B25-018",
+      "O8C-B25-019",
+      "O8C-B25-020",
+      "O8C-B25-025",
+      "O8C-B25-029",
+      "O8C-B25-030",
+      "O8C-B25-031",
+      "O8C-B25-032",
+      "O8C-B25-033",
+      "O8C-B25-035",
+      "O8C-B25-036",
+      "O8C-B25-043",
+      "O8C-B25-044",
+      "O8C-B25-045",
+      "O8C-B25-046",
+      "O8C-B25-051"
+    ],
+    "aeldric": [
+      "O8C-B25-002",
+      "O8C-B25-003",
+      "O8C-B25-006",
+      "O8C-B25-008",
+      "O8C-B25-010",
+      "O8C-B25-011",
+      "O8C-B25-012",
+      "O8C-B25-013",
+      "O8C-B25-014",
+      "O8C-B25-015",
+      "O8C-B25-016",
+      "O8C-B25-017",
+      "O8C-B25-018",
+      "O8C-B25-019",
+      "O8C-B25-020",
+      "O8C-B25-021",
+      "O8C-B25-022",
+      "O8C-B25-024",
+      "O8C-B25-025",
+      "O8C-B25-026",
+      "O8C-B25-028",
+      "O8C-B25-029",
+      "O8C-B25-030",
+      "O8C-B25-031",
+      "O8C-B25-032",
+      "O8C-B25-033",
+      "O8C-B25-034",
+      "O8C-B25-036",
+      "O8C-B25-037",
+      "O8C-B25-039",
+      "O8C-B25-043",
+      "O8C-B25-044",
+      "O8C-B25-045",
+      "O8C-B25-051",
+      "O8C-B25-053",
+      "O8C-B25-057",
+      "O8C-B25-060",
+      "O8C-B25-062",
+      "O8C-B25-074"
+    ],
+    "lira": [
+      "O8C-B25-003",
+      "O8C-B25-007",
+      "O8C-B25-008",
+      "O8C-B25-009",
+      "O8C-B25-011",
+      "O8C-B25-012",
+      "O8C-B25-017",
+      "O8C-B25-018",
+      "O8C-B25-019",
+      "O8C-B25-020",
+      "O8C-B25-024",
+      "O8C-B25-026",
+      "O8C-B25-029",
+      "O8C-B25-030",
+      "O8C-B25-032",
+      "O8C-B25-033",
+      "O8C-B25-036",
+      "O8C-B25-043",
+      "O8C-B25-044",
+      "O8C-B25-045",
+      "O8C-B25-046",
+      "O8C-B25-051",
+      "O8C-B25-052",
+      "O8C-B25-062",
+      "O8C-B25-063",
+      "O8C-B25-064"
+    ],
+    "taren": [
+      "O8C-B25-004",
+      "O8C-B25-022",
+      "O8C-B25-027",
+      "O8C-B25-029",
+      "O8C-B25-030",
+      "O8C-B25-044",
+      "O8C-B25-049",
+      "O8C-B25-050",
+      "O8C-B25-051"
+    ],
+    "nysara": [
+      "O8C-B25-004",
+      "O8C-B25-037",
+      "O8C-B25-049",
+      "O8C-B25-063"
+    ],
+    "selda": [
+      "O8C-B25-004",
+      "O8C-B25-006",
+      "O8C-B25-034",
+      "O8C-B25-041",
+      "O8C-B25-049",
+      "O8C-B25-066",
+      "O8C-B25-076"
+    ],
+    "seron": [
+      "O8C-B25-004",
+      "O8C-B25-049",
+      "O8C-B25-063",
+      "O8C-B25-064"
+    ],
+    "rael": [
+      "O8C-B25-004",
+      "O8C-B25-022",
+      "O8C-B25-043",
+      "O8C-B25-044",
+      "O8C-B25-049",
+      "O8C-B25-063",
+      "O8C-B25-064"
+    ],
+    "miren": [
+      "O8C-B25-004",
+      "O8C-B25-007",
+      "O8C-B25-009",
+      "O8C-B25-010",
+      "O8C-B25-011",
+      "O8C-B25-012",
+      "O8C-B25-013",
+      "O8C-B25-014",
+      "O8C-B25-018",
+      "O8C-B25-019",
+      "O8C-B25-020",
+      "O8C-B25-022",
+      "O8C-B25-025",
+      "O8C-B25-026",
+      "O8C-B25-029",
+      "O8C-B25-030",
+      "O8C-B25-031",
+      "O8C-B25-032",
+      "O8C-B25-033",
+      "O8C-B25-035",
+      "O8C-B25-036",
+      "O8C-B25-037",
+      "O8C-B25-039",
+      "O8C-B25-043",
+      "O8C-B25-044",
+      "O8C-B25-045",
+      "O8C-B25-046",
+      "O8C-B25-048",
+      "O8C-B25-049",
+      "O8C-B25-052",
+      "O8C-B25-053",
+      "O8C-B25-054",
+      "O8C-B25-055",
+      "O8C-B25-058",
+      "O8C-B25-059",
+      "O8C-B25-060",
+      "O8C-B25-061",
+      "O8C-B25-062",
+      "O8C-B25-063",
+      "O8C-B25-064",
+      "O8C-B25-069",
+      "O8C-B25-070",
+      "O8C-B25-072",
+      "O8C-B25-073",
+      "O8C-B25-074",
+      "O8C-B25-075",
+      "O8C-B25-076",
+      "O8C-B25-077",
+      "O8C-B25-078"
+    ],
+    "navel": [
+      "O8C-B25-004",
+      "O8C-B25-006",
+      "O8C-B25-022",
+      "O8C-B25-037",
+      "O8C-B25-038",
+      "O8C-B25-043",
+      "O8C-B25-044",
+      "O8C-B25-046",
+      "O8C-B25-063",
+      "O8C-B25-064"
+    ],
+    "varo": [
+      "O8C-B25-004",
+      "O8C-B25-010",
+      "O8C-B25-029",
+      "O8C-B25-045",
+      "O8C-B25-051",
+      "O8C-B25-052",
+      "O8C-B25-053",
+      "O8C-B25-066",
+      "O8C-B25-068",
+      "O8C-B25-069",
+      "O8C-B25-070",
+      "O8C-B25-071",
+      "O8C-B25-075"
+    ],
+    "maelis": [
+      "O8C-B25-004",
+      "O8C-B25-035",
+      "O8C-B25-045",
+      "O8C-B25-053",
+      "O8C-B25-069",
+      "O8C-B25-075",
+      "O8C-B25-076"
+    ],
+    "kael": [
+      "O8C-B25-004",
+      "O8C-B25-011",
+      "O8C-B25-015",
+      "O8C-B25-019",
+      "O8C-B25-023",
+      "O8C-B25-025",
+      "O8C-B25-034",
+      "O8C-B25-049",
+      "O8C-B25-053",
+      "O8C-B25-055",
+      "O8C-B25-057",
+      "O8C-B25-060",
+      "O8C-B25-074"
+    ],
+    "lysa": [
+      "O8C-B25-004",
+      "O8C-B25-011",
+      "O8C-B25-015",
+      "O8C-B25-019",
+      "O8C-B25-025",
+      "O8C-B25-031",
+      "O8C-B25-034",
+      "O8C-B25-039",
+      "O8C-B25-053",
+      "O8C-B25-055",
+      "O8C-B25-057",
+      "O8C-B25-060",
+      "O8C-B25-074"
+    ],
+    "marlo": [
+      "O8C-B25-005",
+      "O8C-B25-027",
+      "O8C-B25-029",
+      "O8C-B25-030",
+      "O8C-B25-040",
+      "O8C-B25-042",
+      "O8C-B25-049",
+      "O8C-B25-051"
+    ],
+    "celle": [
+      "O8C-B25-006",
+      "O8C-B25-007",
+      "O8C-B25-034",
+      "O8C-B25-057"
+    ],
+    "yra": [
+      "O8C-B25-006",
+      "O8C-B25-037",
+      "O8C-B25-056",
+      "O8C-B25-063",
+      "O8C-B25-064",
+      "O8C-B25-066",
+      "O8C-B25-067",
+      "O8C-B25-068",
+      "O8C-B25-069",
+      "O8C-B25-070",
+      "O8C-B25-071"
+    ],
+    "kairon": [
+      "O8C-B25-007",
+      "O8C-B25-045",
+      "O8C-B25-046"
+    ],
+    "eloren": [
+      "O8C-B25-008"
+    ],
+    "ciran": [
+      "O8C-B25-010",
+      "O8C-B25-045",
+      "O8C-B25-046",
+      "O8C-B25-052",
+      "O8C-B25-056",
+      "O8C-B25-066",
+      "O8C-B25-067",
+      "O8C-B25-068",
+      "O8C-B25-069",
+      "O8C-B25-070",
+      "O8C-B25-071"
+    ],
+    "mara": [
+      "O8C-B25-013",
+      "O8C-B25-055",
+      "O8C-B25-058",
+      "O8C-B25-059",
+      "O8C-B25-072",
+      "O8C-B25-073",
+      "O8C-B25-075",
+      "O8C-B25-076"
+    ],
+    "tilo": [
+      "O8C-B25-014"
+    ],
+    "oren": [
+      "O8C-B25-015",
+      "O8C-B25-034",
+      "O8C-B25-037"
+    ],
+    "astra": [
+      "O8C-B25-020",
+      "O8C-B25-021",
+      "O8C-B25-023",
+      "O8C-B25-037",
+      "O8C-B25-038",
+      "O8C-B25-055",
+      "O8C-B25-057",
+      "O8C-B25-058",
+      "O8C-B25-059",
+      "O8C-B25-072",
+      "O8C-B25-073",
+      "O8C-B25-074",
+      "O8C-B25-076",
+      "O8C-B25-077",
+      "O8C-B25-078"
+    ],
+    "adelia": [
+      "O8C-B25-021",
+      "O8C-B25-034",
+      "O8C-B25-040",
+      "O8C-B25-041",
+      "O8C-B25-047",
+      "O8C-B25-049"
+    ],
+    "severo": [
+      "O8C-B25-021",
+      "O8C-B25-022",
+      "O8C-B25-034",
+      "O8C-B25-040",
+      "O8C-B25-041",
+      "O8C-B25-047",
+      "O8C-B25-049"
+    ],
+    "hadriel": [
+      "O8C-B25-021"
+    ],
+    "ilva": [
+      "O8C-B25-023"
+    ],
+    "fen": [
+      "O8C-B25-023",
+      "O8C-B25-080"
+    ],
+    "tarek": [
+      "O8C-B25-023"
+    ],
+    "lina": [
+      "O8C-B25-023",
+      "O8C-B25-080"
+    ],
+    "sael": [
+      "O8C-B25-023",
+      "O8C-B25-080"
+    ],
+    "aerun": [
+      "O8C-B25-028",
+      "O8C-B25-029",
+      "O8C-B25-030",
+      "O8C-B25-051"
+    ],
+    "legiao": [
+      "O8C-B25-029",
+      "O8C-B25-051"
+    ],
+    "maron": [
+      "O8C-B25-034",
+      "O8C-B25-057",
+      "O8C-B25-074"
+    ],
+    "hesta": [
+      "O8C-B25-035"
+    ],
+    "dasha": [
+      "O8C-B25-037"
+    ],
+    "elian": [
+      "O8C-B25-038"
+    ],
+    "vessa": [
+      "O8C-B25-040",
+      "O8C-B25-041",
+      "O8C-B25-047"
+    ],
+    "mareth": [
+      "O8C-B25-054",
+      "O8C-B25-055",
+      "O8C-B25-058",
+      "O8C-B25-059",
+      "O8C-B25-072",
+      "O8C-B25-073",
+      "O8C-B25-075",
+      "O8C-B25-076",
+      "O8C-B25-077",
+      "O8C-B25-078"
+    ],
+    "toran": [
+      "O8C-B25-066",
+      "O8C-B25-067",
+      "O8C-B25-068",
+      "O8C-B25-069"
+    ],
+    "rhem": [
+      "O8C-B25-066"
+    ]
+  },
+  "checks": {
+    "scope": "Connector-side receipt/metadata/continuity tests after readback; native Python and independent evaluator not executed",
+    "results": [
+      {
+        "name": "Original partial preserved byte-equivalent record objects",
+        "pass": true
+      },
+      {
+        "name": "Receipt and queue match",
+        "pass": true
+      },
+      {
+        "name": "All candidate IDs unique",
+        "pass": true
+      },
+      {
+        "name": "Coverage contiguous exactly 10244 lines",
+        "pass": true
+      },
+      {
+        "name": "Every candidate mapped once, in source interval",
+        "pass": true
+      },
+      {
+        "name": "Author directions not diegetic",
+        "pass": true
+      },
+      {
+        "name": "All candidate scope restrictions and no promotion",
+        "pass": true
+      },
+      {
+        "name": "Axis overlay covers original partial records and aggregate",
+        "pass": true
+      },
+      {
+        "name": "No dungeon claim inserted",
+        "pass": true
+      },
+      {
+        "name": "Prior threshold retained with unresolved conflict",
+        "pass": true
+      },
+      {
+        "name": "Reader scope guards recorded",
+        "pass": true
+      },
+      {
+        "name": "Next queue boundary only, no macro 26 processed",
+        "pass": true
+      },
+      {
+        "name": "Official checkpoint and canon remain unchanged",
+        "pass": true
+      }
+    ]
+  },
+  "next_cycle_trigger": "macro 29 / Book III completion",
+  "gate": "HOLD_OFFICIAL_CHECKPOINT_PENDING_INDEPENDENT_SEMANTIC_HOMOLOGATION_AND_NATIVE_REGRESSION",
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "semantic_certification": false,
+  "independent_review": false
+}
