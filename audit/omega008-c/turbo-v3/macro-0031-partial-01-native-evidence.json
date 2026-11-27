@@ -1,0 +1,32 @@
+{
+  "schema": "OMEGA_BOOK_IV_MACRO_0031_NATIVE_PARTIAL_READBACK_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "validated_commit": "ba8337f26e60a2b7930b4941588b309a4f34beff",
+  "prior_pending_checkpoint_blob": "009bf752a3b6dde32621d57ac62afaca23329e3f",
+  "receipt_blob": "d4f8b3cb9636ba3df8d25cca48fff7c562f6645a",
+  "receipt_sha256": "cbefc378d6bc54641218fb83bb0dc31318043ad406be7bddb85d58fb40b0354a",
+  "previous_checkpoint_blob": "9965a1ce58bf6bcc24411c82e83e91927022b515",
+  "release_blob": "1ea9d60a58ecf00a368f0e33631164fc7cbe0051",
+  "workflow": {
+    "id": 46053928762,
+    "job": 140691715819,
+    "conclusion": "success",
+    "logs_readback": true
+  },
+  "native": {
+    "status": "PASS_NATIVE_MACRO_0031_PARTIAL",
+    "records": 3,
+    "coverage": 3,
+    "lines": 312,
+    "axes_assessed": 30,
+    "axes_represented": 16,
+    "next_line": 279314,
+    "macro_complete": false
+  },
+  "macro0030": "PASS_NATIVE_MACRO_0030_COMPLETE",
+  "targeted_tests": "47/47",
+  "promotion": false,
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "production_gate": "HOLD"
+}
