@@ -1,0 +1,53 @@
+{
+  "schema": "OMEGA_BOOK_IV_MACRO_0030_NATIVE_CLOSURE_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "validated_commit": "1a825a17678443bfe5956dd3bf95dc7d060af2b9",
+  "prior_pending_checkpoint_blob": "53258f1c756a135d5ce039baf9ecd104c67e4169",
+  "receipt_blob": "594c22a34f22dc80817ee9bd68b34537b356a374",
+  "receipt_sha256": "c05417477296bfdfe86853d9f425d7a5b1cf52c1616829a2ea2812786df8ab9e",
+  "prior_receipts": [
+    "e0cf64d9739ea7d5e79daab2200172b8b054c1bb",
+    "896189d6f6c4d2271240d15ecdd90a395cd38682"
+  ],
+  "release_blob": "1ea9d60a58ecf00a368f0e33631164fc7cbe0051",
+  "workflow": {
+    "id": 46053772272,
+    "job": 140691211821,
+    "conclusion": "success",
+    "logs_readback": true
+  },
+  "failed_attempt": {
+    "id": 46053698532,
+    "job": 140690968463,
+    "reason": "Literal census assertion omitted word residentes and punctuation; source and receipt unchanged; corrected test to exact line."
+  },
+  "native": {
+    "status": "PASS_NATIVE_MACRO_0030_COMPLETE",
+    "records": 97,
+    "coverage": 97,
+    "lines": 10298,
+    "axes_assessed": 30,
+    "axes_represented": 29,
+    "new_records": 53,
+    "new_lines": 5958,
+    "authority_counts": {
+      "AUTHOR_DIRECTION_NOT_EVENT": 3,
+      "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED": 86,
+      "METADATA_NOT_EVENT": 6,
+      "NARRATOR_PROPOSED_BRANCH_NOT_EVENT": 2
+    },
+    "visibility_counts": {
+      "EDITORIAL_ONLY_NO_CHARACTER_INJECTION": 86,
+      "READER_ONLY_NO_CHARACTER_INJECTION": 10,
+      "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION": 1
+    },
+    "next_line": 279002,
+    "macro_complete": true
+  },
+  "targeted_tests": "47/47",
+  "semantic_recall": "NOT_MEASURED",
+  "promotion": false,
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "production_gate": "HOLD"
+}
