@@ -1,0 +1,247 @@
+{
+  "schema": "OMEGA_TURBO_V2_APPEND_ONLY_AXIS_CORRECTIONS",
+  "base": "97679a36b0a9cff33ee231c844c018e49658dc8f",
+  "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+  "corrections": [
+    {
+      "macro": "0018",
+      "original_receipt_sha256": "a4cf8191c7c829cab6f3c41843e5a4ce0fd6cde203e2e3568f4fab53324281da",
+      "operation": "CORRECT_AGGREGATE_AXIS_LEDGER",
+      "represented_all_records": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "unrepresented_all_records": [],
+      "narrative_scope_caveat": "24 aparece em diretriz de autor; não prova novo combate. 29 consta em diretrizes e metadados, não acontecimento diegético. Preservar nota original de escopo narrativo.",
+      "evidence_records": [
+        {
+          "id": "O8C-B18-004",
+          "role": "Prompt",
+          "anchor": "5b2481295795ac0e9c3e8fe93af5b579a01e07f6e963fc35426091c6b5eac796",
+          "axes": [
+            29
+          ]
+        },
+        {
+          "id": "O8C-B18-018",
+          "role": "Prompt",
+          "anchor": "e532dcedc8761ee0968d84d8f95c776dcdea5e6c842dac287ce63ccda9e3065c",
+          "axes": [
+            24,
+            29
+          ]
+        },
+        {
+          "id": "O8C-B18-036",
+          "role": "Prompt",
+          "anchor": "02b2dd6375a81b8e7913aa9015861088f1edc70b3dbaf4eaff3496316bf78eec",
+          "axes": [
+            29
+          ]
+        },
+        {
+          "id": "O8C-B18-037",
+          "role": "Response",
+          "anchor": "3bfd7514a96b3adf7d0922afdda77caff466dfaf6c05145e7ce9cdb4342e7a80",
+          "axes": [
+            29
+          ]
+        },
+        {
+          "id": "O8C-B18-038",
+          "role": "Prompt",
+          "anchor": "d0e0a9fc8310af4ca4bdfee53bbcd186115d0e7ab01f85c804bcbdfa1316d73b",
+          "axes": [
+            29
+          ]
+        },
+        {
+          "id": "O8C-B18-057",
+          "role": "Prompt",
+          "anchor": "eb0d91049d41ff9675da03d0fd2d213264414756c0f4480c50e88c89b23dcb24",
+          "axes": [
+            29
+          ]
+        },
+        {
+          "id": "O8C-B18-058",
+          "role": "Response",
+          "anchor": "8325275a369cb6f5b46e5227d7102b8a699660d12d374b48a281015e8835d2f6",
+          "axes": [
+            29
+          ]
+        },
+        {
+          "id": "O8C-B18-059",
+          "role": "Prompt",
+          "anchor": "f127468879843a6045cfd489a6c776f52b7bab13193b0926a25958bc6fe1f481",
+          "axes": [
+            29
+          ]
+        },
+        {
+          "id": "O8C-B18-060",
+          "role": "Response",
+          "anchor": "ccd5ebc0eddd9d10ec138cecc5617d8d5a925e5acdde4c790d2f97dc28e510ed",
+          "axes": [
+            29
+          ]
+        },
+        {
+          "id": "O8C-B18-061",
+          "role": "Prompt",
+          "anchor": "47d7b795e891cd971cabd10d88b8767fc1356cd83871d9e1ecd03218e50dcef8",
+          "axes": [
+            29
+          ]
+        }
+      ]
+    },
+    {
+      "macro": "0022",
+      "original_receipt_sha256": "e05d427c43a7281e3f7667fd0db46b7814f17306f1a22f2f06ed4ffaf95c2049",
+      "operation": "RECLASSIFY_AXES_WITH_SOURCE_EVIDENCE",
+      "records": [
+        {
+          "record_id": "O8C-B22-001",
+          "operation": "ADD_AXIS",
+          "axis": 6,
+          "reason": "Tilo, cabelo encaracolado.",
+          "evidence": {
+            "line_start": 196641,
+            "line_end": 196641,
+            "span_sha256_utf8": "fc6234afa5860dfd138767f06da97b56103190627ecc8ab7699b30a30fd5c2ce",
+            "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+            "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8"
+          },
+          "original_anchor_sha256": "0dc7c15c9ba586c9c7c55f8705c4ecfab5a0ef2b5c47538e2693b675e0eb3ccf",
+          "original_visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION"
+        },
+        {
+          "record_id": "O8C-B22-010",
+          "operation": "ADD_AXIS",
+          "axis": 6,
+          "reason": "Nila, cabelo coberto de poeira; estado temporário.",
+          "evidence": {
+            "line_start": 197847,
+            "line_end": 197847,
+            "span_sha256_utf8": "4af2e951a4feec5e31d14de9d5e02dd600f8e483be0ed25b3a16094c809355da",
+            "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+            "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8"
+          },
+          "original_anchor_sha256": "8f4324a92b3894fad63e745eec3ccceff30deb2d8c2a2fb2bb6e6e3fed404f94",
+          "original_visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION"
+        },
+        {
+          "record_id": "O8C-B22-046",
+          "operation": "ADD_AXIS",
+          "axis": 6,
+          "reason": "Lira, escoriação facial e cabelos desarrumados; condição temporária, preserva visibilidade original.",
+          "evidence": {
+            "line_start": 202956,
+            "line_end": 202958,
+            "span_sha256_utf8": "ef158ec7c5b30bd56aff62cd7e983f0535fdfc978373af00ef2092f6fa3d4ef1",
+            "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+            "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8"
+          },
+          "original_anchor_sha256": "3d8a47229e59f415c1f4640625983ea5d2d0f3de866eb4bcf8728acee40caa9a",
+          "original_visibility": "READER_ONLY_NO_CHARACTER_INJECTION"
+        },
+        {
+          "record_id": "O8C-B22-057",
+          "operation": "ADD_AXIS",
+          "axis": 6,
+          "reason": "Harek, faixa no braço direito; aparência circunstancial, não traço permanente.",
+          "evidence": {
+            "line_start": 204445,
+            "line_end": 204445,
+            "span_sha256_utf8": "a3b3df73c230e9e9d47aababca5eafcfbc0eb494c93fac3372852a05513773fb",
+            "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+            "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8"
+          },
+          "original_anchor_sha256": "714e5697e5c6e36bb4070abb6bbeca7e24749d037ebf60919707bf92a5ca5f9a",
+          "original_visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION"
+        }
+      ],
+      "represented_all_records": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "unrepresented_all_records": []
+    }
+  ],
+  "legacy_authority": {
+    "accepted_alias": "AUTHOR_REQUEST_OR_CHOICE",
+    "normalized_meaning": "AUTHOR_DIRECTION_NOT_EVENT",
+    "records": [
+      "O8C-LI-0001-001",
+      "O8C-LI-0001-013",
+      "O8C-LI-0001-015",
+      "O8C-LI-0001-026",
+      "O8C-LI-0002-015",
+      "O8C-BULK-P1-S001"
+    ],
+    "promotion": false,
+    "disposition": "COMPATIBILITY_FALSE_POSITIVE_NOT_CANON_VIOLATION"
+  },
+  "application": "STAGING_OVERLAY_ONLY_ORIGINAL_RECEIPTS_UNCHANGED_NOT_APPLIED_TO_OFFICIAL_LEDGER",
+  "canon_changed": false,
+  "semantic_certification": false,
+  "independent_review": false
+}
