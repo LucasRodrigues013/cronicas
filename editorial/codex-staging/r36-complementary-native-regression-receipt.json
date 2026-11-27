@@ -1,0 +1,16 @@
+{
+  "schema": "r36-native-regression-receipt-v1",
+  "tested_commit": "62558d9e90852992c684a35c129cd70f6b6fb1a6",
+  "run": 45921727398,
+  "job": 140253769920,
+  "tests": 708,
+  "conclusion": "success",
+  "log_excerpt": [
+    "2026-11-27T01:17:39.4116504Z test_gate_and_dedup (test_complementary_recovery.ComplementaryTests.test_gate_and_dedup) ... ok",
+    "2026-11-27T01:17:39.4117182Z test_partition (test_complementary_recovery.ComplementaryTests.test_partition) ... ok",
+    "2026-11-27T01:17:57.9690687Z Ran 708 tests in 18.785s",
+    "2026-11-27T01:17:57.9691332Z OK"
+  ],
+  "scope": "unit regression only; not archive or semantic certification",
+  "production_hold": true
+}
