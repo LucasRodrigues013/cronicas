@@ -35,7 +35,7 @@ OPEN={"book_title":"LIVRO VI — AS COROAS PARTIDAS","chapter_title":"O QUE OS C
 BEATS=[
 ("uma névoa espessa havia subido das regiões baixas","Miren soltou uma risada tão repentina","A ferramenta que junta esses pedaços"), # overridden literal below
 ("Era diferente da luz das lâmpadas da Forja.","Seis pares idênticos dos Olhos do Criador repousavam em estojos individuais sobre a bancada.","A peça não precisava ser refeita."),
-("Varo chegou alguns minutos depois.","Prefiro enxergar uma pessoa antes de enxergar informações sobre ela.","A caixa passou."),
+("Varo chegou alguns minutos depois.","Prefiro enxergar uma pessoa antes de enxergar informações sobre ela.","O trabalhador retirou as alças removíveis conforme a orientação do responsável"),
 ("Lysa escolheu os documentos de uma remessa civil.","Não eram dois materiais.","Agora podemos confirmar a remessa sem manter duas reservas para a mesma coisa."),
 ("A GÊNESE manifestou a Mesa dos Horizontes diante das representações.","O visitante de Thalor aproximou-se devagar.","Kael assinou o compromisso de fornecimento das informações autorizadas pela Cidade Livre."),
 ("A carta lacrada de Ordan continuava sob a responsabilidade do posto.","Acredito que precisam poder sair.","As seis marcas ainda não tinham sido encontradas naquela construção."),
