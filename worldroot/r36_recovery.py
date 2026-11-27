@@ -104,10 +104,6 @@ def run(root,out,judge,candidate,authority,scope,authority_key,receipt_key,
         reviews={}
         for slot,model in binding["models"].items():
             dest=out/(slot+".json")
-            if exists(dest):
-                saved=verify(read_record(dest),"review-receipt",receipt_key)
-                reviews[slot]=validate_saved(saved,binding,p,prov,slot)
-                continue
             # A durable attempt is consumed before calling. No automatic retry in this invocation.
             attempt_count=0
             for i in range(1,ATTEMPTS+1):
@@ -116,6 +112,11 @@ def run(root,out,judge,candidate,authority,scope,authority_key,receipt_key,
                     verify(read_record(marker),"attempt",receipt_key,{"run_id":rid,"slot":slot,"attempt":i})
                     require(i==attempt_count+1,"Noncontiguous attempt journal")
                     attempt_count+=1
+            if exists(dest):
+                require(attempt_count>0,"Receipt missing attempt journal")
+                saved=verify(read_record(dest),"review-receipt",receipt_key)
+                reviews[slot]=validate_saved(saved,binding,p,prov,slot)
+                continue
             if attempt_count==ATTEMPTS:
                 return {"status":"ATTEMPT_LIMIT","run_id":rid,"slot":slot,"new_review_attempts":calls,"production_hold":True,"semantic_certification":False}
             # Check both expected pins before each new call; no inference if they changed.

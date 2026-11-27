@@ -5,7 +5,7 @@ import json
 from .r36_evaluation import HEX
 
 VERSION = "r36-e7-local-auth-v1"
-PURPOSES = {"source-authority","run-binding","attempt","review-receipt","human-review"}
+PURPOSES = {"source-authority","run-binding","attempt","review-receipt","human-review","feedback-observation","feedback-proposal","feedback-event","feedback-approval"}
 def require(ok,msg):
     if not ok: raise ValueError(msg)
 def digest(x):
