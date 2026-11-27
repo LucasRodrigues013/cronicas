@@ -2,7 +2,7 @@
   "schema": "worldroot-omega008-c-checkpoint-v1",
   "project": "CRONICAS_DE_UM_NOVO_MUNDO",
   "protocol": "OMEGA-008 C",
-  "status": "HISTORICAL_INTAKE_MACRO_0021_RECOVERED_FINAL_REVIEW_DEFERRED",
+  "status": "HISTORICAL_INTAKE_MACRO_0022_RECOVERED_FINAL_REVIEW_DEFERRED",
   "engine_base": "b7ba937bcaeac185f3ac46bc93e8e1a2fe516b49",
   "source_archive": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
   "branch": "review/omega-cycle-1",
@@ -252,7 +252,8 @@
     "Book III macro 0018 grouped recovery D206–210 complete; first naval Aurora test, travel documents, Jardim Errante/KHELEN and Veias do Alto, Encadeamento Matricial I (D208 demonstrated, D209 partial), Marco VIII and Cais das Raízes; D210 Gênese 100x/crystal author directive not yet demonstrated within cut; visual gaps and D199 quarantine preserved.",
     "Book III macro 0019 grouped recovery D210–213: ~100x comparable Gênese demonstrated, Memória do Horizonte prototype, Maira first meeting, Calderva arc, Elen Ross, Lastro/Márlo/Vesperal, archive rescue and open Alvorada Cinzenta confrontation. Preserve reader-only, legal/identity uncertainty, D199 quarantine and author directives; independent review pending.",
     "Book III macro 0020 grouped recovery D213–215 complete; first open ocean, Falcão da Espuma, Calderva and Casa da Maré, Lira provisional name and Elo do Horizonte I experimental (Ivo receives but delivery unconfirmed), civic aid, Quinto Arco temporary protection, nine arcs local independent signaling. Vesperal/Lastro evidence and reader perspectives separated. No dungeon confirmed. D199 quarantine unchanged.",
-    "Book III macro 0021 D215–217: Elo I urban relative tracking, Lira/Enna rescue, Veskan custody, Ivo injury, Carta das Nove Marés/Concordata dos Faróis, Taren/Ressaca clues, paternal affection without adoption, System humor, Draevor/Nysara fleet reader-only. Author future events separated. Literal physical line 196031 joined across parts 004/005. D199 quarantine preserved."
+    "Book III macro 0021 D215–217: Elo I urban relative tracking, Lira/Enna rescue, Veskan custody, Ivo injury, Carta das Nove Marés/Concordata dos Faróis, Taren/Ressaca clues, paternal affection without adoption, System humor, Draevor/Nysara fleet reader-only. Author future events separated. Literal physical line 196031 joined across parts 004/005. D199 quarantine preserved.",
+    "Book III macro 0022 D217–218: Calderva war, Gaivota Negra Aurora I test and defensive use, subsequent damage and unavailable status; Lira kidnapped alive, Miren protected patients, Corvo das Brumas repaired and authorized for limited rescue, Orvan independent suspension, Nysara interrupts hostile magic. Final rescue and Draevor outcome not yet narrated. 30 axes assessed, axis 6 absent. D199 quarantine preserved."
   ],
   "next": {
     "stage": 1,
@@ -262,16 +263,16 @@
     "start_line": 1217,
     "end_rule": "through next complete narrative choice boundary, bounded by complexity",
     "checkpoint": "docs/omega008-c-checkpoint.json",
-    "action": "Active bulk.recovery_cursor=196618; continue Book III macro 0022 through 206661, D217 chapter 18 Doca das Redes Velhas, Navel evaluating reconnaissance. Physical source part 005 logical offset 196030. No canon or motor changes."
+    "action": "Active bulk.recovery_cursor=206662; continue Book III macro 0023 through 216932, D218 chapter 20 03h49 Golfo Exterior, approach to Trono de Sal. Physical source part 005 logical offset 196030. No canon or motor changes."
   },
   "canon_changed": false,
   "stage00_complete": false,
   "book_complete": false,
   "overall_complete": false,
   "previous_checkpoint": {
-    "commit": "e5d9cf52a357ea70b10ad2d037dcc1c0ec4ccb57",
-    "blob": "f48a5e6b6a18d3bab6f91cc1d15b52e54d314afb",
-    "sha256_utf8": "26db8f52290cfa8b7a8ed269c44f3a06767a461e7e64953e699e57aafe5788e9"
+    "commit": "7e62a71da3860ed77135430c9b9c8af6c03f000e",
+    "blob": "89fae4b02dd5ecae72977c830b25ddc2b39ad4de",
+    "sha256_utf8": "923c27195bdd07bec065998dff297d6a6400d2871f44665c41a4c32786196ade"
   },
   "lots": [
     {
@@ -363,7 +364,7 @@
       "records": 21,
       "next_review_line": 1680
     },
-    "semantic_cursor": 196618,
+    "semantic_cursor": 206662,
     "semantic_pilot_complete": true,
     "independent_review": false,
     "semantic_pilot_scope": "CONTROLLER_GROUPED_REVIEW_NOT_EXHAUSTIVE_OR_INDEPENDENT",
@@ -426,26 +427,26 @@
         30
       ],
       "book_hint": "III",
-      "end": 206661,
-      "id": "5a46669d5d3fd0516aebb491b5979ddc5aa3e72b033a2994f962e7a78ab6037c",
-      "lines": 10044,
+      "end": 216932,
+      "id": "e6317664d92178ba8f6d99b93ba3df39669420ac9630a35175509605849fe736",
+      "lines": 10271,
       "order_scope": "SOURCE_ORDER_NOT_EVENT_TIME",
-      "previous_macro": "24d8ff8c2e2192a43463c455cb4f61904a664470de81a6967c0ecdc611624aa3",
+      "previous_macro": "5a46669d5d3fd0516aebb491b5979ddc5aa3e72b033a2994f962e7a78ab6037c",
       "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
-      "start": 196618,
+      "start": 206662,
       "status": "PENDING",
-      "unit_seal": "df74dab1d1022de560890ff6868fd231ede4364311ad2f009d4caa2a12c72263",
-      "units": 36
+      "unit_seal": "964932648b1ca60b816ace6fcdbd2230ad93ea5bd63ac5ea7e96fd0ba0706970",
+      "units": 37
     },
     "open_boundary": {
       "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
-      "after_line": 196617,
-      "next_line": 196618,
-      "day": 217,
-      "chapter": 18,
-      "reason": "11h03 Doca das Redes Velhas, Nável evaluating reconnaissance of Ressaca; fleet approaches in reader-only scene."
+      "after_line": 206661,
+      "next_line": 206662,
+      "day": 218,
+      "chapter": 20,
+      "reason": "03h49 Golfo Exterior, Nável and Yra assessing stability after artificial storm weakens; final rescue not yet narrated."
     },
-    "recovery_cursor": 196618,
+    "recovery_cursor": 206662,
     "native_validated_through": 11227,
     "recovery_policy": {
       "mode": "RECOVER_FIRST_REVIEW_AT_CURRENT_DAY",
@@ -730,6 +731,20 @@
         "day_start": 215,
         "day_end": 217,
         "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
+      },
+      {
+        "macro_id": "5a46669d5d3fd0516aebb491b5979ddc5aa3e72b033a2994f962e7a78ab6037c",
+        "path": "audit/omega008-c/bulk-semantic-macro-0022.json",
+        "sha256_utf8": "e05d427c43a7281e3f7667fd0db46b7814f17306f1a22f2f06ed4ffaf95c2049",
+        "range": [
+          196618,
+          206661
+        ],
+        "records": 73,
+        "sections": 5,
+        "day_start": 217,
+        "day_end": 218,
+        "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
       }
     ],
     "recovered_macro_ids": [
@@ -753,9 +768,10 @@
       "3627080a2dcd1d901f480a8df65321c3d0bf4235c5e467fc2aad554a31e0abae",
       "2f9381267f4b1ce7a753b18c6ab9f83171e82e7e68259ccb1d46a964704aad7f",
       "9cf2f2513bb23cdae6aff2d3230fcbfaf37d67b1278a29e92a9de368d2337577",
-      "24d8ff8c2e2192a43463c455cb4f61904a664470de81a6967c0ecdc611624aa3"
+      "24d8ff8c2e2192a43463c455cb4f61904a664470de81a6967c0ecdc611624aa3",
+      "5a46669d5d3fd0516aebb491b5979ddc5aa3e72b033a2994f962e7a78ab6037c"
     ],
-    "total_candidates_recovered": 1583,
+    "total_candidates_recovered": 1656,
     "book_I_intake": {
       "range": [
         1,
@@ -768,19 +784,18 @@
       "canon_promoted": false
     },
     "last_recovery_readback": {
-      "macro": "0021",
-      "receipt_commit": "037c3eb499f1ba54a0c977fee92026bf5adc00fc",
-      "receipt_blob": "f5c0cf8706c0336b8906bd68c33cb421dfe85ed0",
-      "receipt_sha256_utf8": "df2606e567139e260b57343fabeb4cd85fa735a9b23626e2b3893a0a747835b9",
-      "anchors_verified": 68,
-      "coverage_spans_verified": 9,
+      "macro": "0022",
+      "receipt_commit": "3f03df2d44370c8e5b034e8682ef7a36553370b8",
+      "receipt_blob": "aa635893fdc739ef00e83295458950281e8000ef",
+      "receipt_sha256_utf8": "e05d427c43a7281e3f7667fd0db46b7814f17306f1a22f2f06ed4ffaf95c2049",
+      "anchors_verified": 73,
+      "coverage_spans_verified": 5,
       "receipt_diff_files": [
-        "audit/omega008-c/bulk-semantic-macro-0021.json"
+        "audit/omega008-c/bulk-semantic-macro-0022.json"
       ],
       "prior_candidate_files_unchanged_by_patch": true,
       "native_semantic_validation": "DEFERRED",
-      "independent_review": false,
-      "physical_boundary_join_verified": true
+      "independent_review": false
     }
   }
 }
