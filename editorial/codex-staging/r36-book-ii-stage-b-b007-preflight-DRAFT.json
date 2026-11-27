@@ -1,6 +1,6 @@
 {
   "schema": "worldroot-r36-b007-preflight-v1",
-  "status": "NATIVE_CANDIDATE_AUTHOR_APPROVED_INCORPORATION_PENDING",
+  "status": "AUTHOR_APPROVED_NATIVE_CANDIDATE_INCORPORATED",
   "base_checkpoint": "c760388d567011ef9b152e2323c8ed94d06f62d1",
   "base_archive": "bd94ce02c705904b0ad9a562bc8edce3e3039f77",
   "engine": "46c40e18d3e0f4fbcafc025ae9d08b91ca6e6417",
@@ -60,21 +60,17 @@
     "no_hosted_actions": true,
     "local_evidence_required": true
   },
-  "official_cursor_unchanged": {
-    "id": 460,
-    "line": 82432
-  },
   "next_cursor_after_approved_incorporation": {
     "id": 521,
     "line": 105779
   },
-  "approval_required": true,
+  "approval_required": false,
   "production_hold": true,
   "canon_changed": false,
   "production_activated": false,
   "semantic_certification": false,
   "public_free_only_execution": {
-    "status": "NATIVE_CANDIDATE_VALIDATED_NOT_APPROVED",
+    "status": "INCORPORATION_COMPLETE_PRODUCTION_HOLD",
     "author_direction": "Author changed repository to public and requested restoration of automation, 2026-11-26",
     "visibility_verified": "public",
     "runner": "ubuntu-24.04",
@@ -206,7 +202,8 @@
       "evidence_storage": "Receipt and hashes persisted in this preflight; original detailed evidence and candidate files need deterministic regeneration before incorporation. Logs accessible from completed public workflow; no artifact upload.",
       "production_hold": true,
       "approval_required": true
-    }
+    },
+    "transfer_permissions_retired": true
   },
   "author_approval": {
     "status": "GRANTED_B007_AND_SQLITE_COMPATIBILITY_ONLY",
@@ -221,9 +218,22 @@
       520
     ],
     "approved_fields": 19,
-    "incorporation_status": "PENDING_EXACT_HASH_TRANSFER",
+    "incorporation_status": "COMPLETED_REMOTE_READBACK_VERIFIED",
     "production_hold": true,
     "production_approval_required": true,
-    "semantic_certification": false
+    "semantic_certification": false,
+    "archive_commit": "96012cea0072e60cb401186a1bdc901fb11bb85b",
+    "checkpoint_commit": "a84c799f43088e82e0af033aa1b387d82c9934fc",
+    "transfer_run": 45916296999,
+    "transfer_commit": "d4bfc92aae5546fc417ea5c9d0173b72ee7c3d3f",
+    "b007_approval_required": false
+  },
+  "official_cursor_unchanged_at_review": {
+    "id": 460,
+    "line": 82432
+  },
+  "official_cursor_after_incorporation": {
+    "id": 521,
+    "line": 105779
   }
 }
