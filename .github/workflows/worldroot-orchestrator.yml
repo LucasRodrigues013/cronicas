@@ -43,6 +43,7 @@ jobs:
           fi
 
   verify-story-archive:
+    if: github.event.repository.private == true
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -68,6 +69,7 @@ jobs:
 
   report-gates:
     needs: [validate-engine, verify-story-archive]
+    if: always() && needs.validate-engine.result == 'success' && (needs.verify-story-archive.result == 'success' || needs.verify-story-archive.result == 'skipped')
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -75,6 +77,6 @@ jobs:
       - name: Explain verification boundary
         shell: bash
         run: |
-          echo 'WORLDROOT audit passed: code regression and immutable archive integrity.'
+          echo 'WORLDROOT code audit passed; archive audit result: ${{ needs.verify-story-archive.result }}.'
           echo 'This job does NOT close an episode, update Drive, promote events, or advance the canonical HEAD.'
           echo 'Production closure remains blocked until OIDC, durable SQLite checkpoint, Base/Atlas readback and editorial approval.'
