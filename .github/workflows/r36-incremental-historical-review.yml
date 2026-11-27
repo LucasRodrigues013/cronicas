@@ -92,7 +92,7 @@ jobs:
               assert subprocess.check_output(['git','hash-object','--no-filters',str(p)],text=True).strip()==expected
               files.append(p)
           log=Path('regression.log').read_text()
-          m=re.search(r'^Ran (\d+) tests? in ([\d.]+)s,log,re.M)
+          m=re.search(r'^Ran (\d+) tests? in ([\d.]+)s$',log,re.M)
           assert m and int(m[1])>0 and log.strip().endswith('OK')
           receipt={'status':'PASS_CANDIDATE_ONLY','tests':int(m[1]),'seconds':float(m[2]),'native_receipt':d,'sha256':{str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in files},'production_hold':True,'approval_required':True,'artifact_upload':False}
           line=json.dumps(receipt,ensure_ascii=False,sort_keys=True)
