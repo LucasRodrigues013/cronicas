@@ -1,0 +1,264 @@
+{
+  "schema": "OMEGA_HYBRID_CYCLE_ZERO_SEMANTIC_OVERLAY_V1",
+  "base": "7676794e93b6ee0e2cc6cb0088e6945dcae0ae58",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "scope": "SELECTED_CRITICAL_CLAIMS_BOOKS_I_II_III_THROUGH_D254",
+  "method": "Controller compared actual literal source excerpts from pinned blobs (parts 1-3 and part 5) against grouped candidates; append-only semantic overlays. Not full-corpus semantic certification.",
+  "source_blobs": [
+    "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+    "3449845d3854daa62af01333e4efd1a2c615b6a4",
+    "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+    "0e9c025f5d9167321d2dc9a512b655a438d197d8"
+  ],
+  "corrections": [
+    {
+      "id": "O8C-B24-008",
+      "field": "summary",
+      "replacement": "Quarto Arco: Lucas recusa colônia/cópia, preserva bandeiras e história; pacto ou federação é possibilidade futura, não transferência; responsabilidades fiscais e autonomia. Lucas deseja que o Leviatã seja construído por pessoas das duas cidades; navio ainda não construído.",
+      "reason": "Original grouped summary 'Leviatã construído conjuntamente' ambiguous about tense. Source line 218199 explicitly expresses a wish.",
+      "source_lines": [
+        218143,
+        218163,
+        218177,
+        218199,
+        218209
+      ],
+      "original_summary": "Quarto Arco: Lucas recusa colônia/cópia, preserva bandeiras e história; pacto ou federação é possibilidade futura, não transferência; responsabilidades fiscais e autonomia; Leviatã construído conjuntamente.",
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 218085,
+        "line_end": 218302,
+        "role": "Response",
+        "span_sha256_utf8": "e65493d3e5e13b9a197ef03400437bc566dc6f0503fa996a4fb9db62509413bf"
+      },
+      "promotion": false
+    },
+    {
+      "id": "O8C-B25-022",
+      "field": "summary",
+      "replacement": "Marca histórica de correntes de retorno adiciona referência independente para Ressaca, sem posição exata ou vínculo comprovado com desaparecimento. Taren Voss e possíveis vítimas continuam procurados. Aeldric manifesta desejo de identificar e analisar legitimamente os registros familiares; Sévero propõe preparar solicitação formal e preservar a procedência das cópias. Solicitação não confirmada como concluída.",
+      "reason": "Distinguish expressed intention from authorization or execution of a formal request.",
+      "source_lines": [
+        229559,
+        229563,
+        229583,
+        229607,
+        229611
+      ],
+      "original_summary": "Marca histórica de correntes de retorno adiciona referência independente para Ressaca, sem posição exata ou vínculo comprovado com desaparecimento. Taren Voss e possíveis vítimas continuam procurados; Aeldric autoriza identificar registros legitimamente via solicitação formal.",
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 229511,
+        "line_end": 229658,
+        "role": "Response",
+        "span_sha256_utf8": "bebf1a6e14293a0d6e33c693197681c4fc4cf325e431469a8e117fb7e545e4a4"
+      },
+      "promotion": false
+    },
+    {
+      "id": "O8C-B22-052",
+      "field": "claim_scope_overlay",
+      "replacement": {
+        "reader_only": [
+          "Lira viva no Trono de Sal: somente leitor sabe neste ponto da fonte",
+          "Draevor acredita que recuperar Lira lhe devolverá poder sobre acordos marítimos"
+        ],
+        "editorial_other": [
+          "Aurora I demonstrado, danificado e indisponível",
+          "suspeita de vazamento a apurar",
+          "Taren desaparecido; 300 originais vivos; Coração isolado; Leviatã em projeto"
+        ]
+      },
+      "reason": "A mixed closing summary must never inject a reader-only subclaim into characters.",
+      "source_lines": [
+        203882,
+        203892,
+        203895,
+        203899,
+        203905,
+        203909,
+        203915
+      ],
+      "original_summary": "01h03 D218: Aurora I comprovado e danificado/indisponível, conhecimento registrado permanece; Lira viva no Trono de Sal apenas leitor sabe, Miren ferida atendida, suspeita de vazamento a apurar. Draevor ainda comanda, sem deserção formal, Ressaca/Taren pendentes, 300 vivos e Coração isolado. Capítulo 19 encerrado.",
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+        "line_start": 203870,
+        "line_end": 203956,
+        "role": "Response",
+        "span_sha256_utf8": "ce26b49d289e183c9d0bee56851e673a76d5c2a9b302a69d33cb87f678174489"
+      },
+      "promotion": false
+    }
+  ],
+  "chains": [
+    {
+      "subject": "Três Arcos / Calderva",
+      "evidence_ids": [
+        "O8C-B5-029",
+        "O8C-B5-063",
+        "O8C-B25-029"
+      ],
+      "source_lines": [
+        [
+          35079
+        ],
+        [
+          38647,
+          38653,
+          38657,
+          38665,
+          38742,
+          38744
+        ],
+        [
+          230412,
+          230434
+        ]
+      ],
+      "disposition": "D36 concessão experimental -> D56 reconhecimento delimitado por Thalor. D254 Calderva não transferida; nunca aplicar soberania de uma cidade à outra.",
+      "status": "LOCAL_RECONCILED_CONTROLLER"
+    },
+    {
+      "subject": "GÊNESE / CREATION",
+      "evidence_ids": [
+        "O8C-B9-003",
+        "O8C-B15-026",
+        "O8C-B22-052"
+      ],
+      "source_lines": [
+        [
+          71594,
+          71596,
+          71602,
+          71608,
+          71618,
+          71620,
+          71622,
+          71624
+        ],
+        [
+          135415
+        ],
+        [
+          203917
+        ]
+      ],
+      "disposition": "Segundo Limiar e Canal Soberano I preservados; 14x fluxo e 5,4x reserva relativa, reserva inaugural não restaurada. Danos a equipamento não revogam conhecimento ou poder adquirido. Não extrapolar estado D254 ou D579 sem evidência.",
+      "status": "LOCAL_RECONCILED_CONTROLLER"
+    },
+    {
+      "subject": "300 originais e autonomia",
+      "evidence_ids": [
+        "O8C-B5-029",
+        "O8C-B15-026",
+        "O8C-B22-052",
+        "O8C-B25-029"
+      ],
+      "source_lines": [
+        [
+          35044,
+          35050,
+          35056
+        ],
+        [
+          135406,
+          135421
+        ],
+        [
+          203905
+        ],
+        [
+          230410
+        ]
+      ],
+      "disposition": "300 originais vivos nas observações verificadas, 120/180 distribuição histórica D36 apenas; Varo em recuperação D218/D254. Não converter em população total ou localização atual.",
+      "status": "LOCAL_RECONCILED_CONTROLLER"
+    },
+    {
+      "subject": "Miren / objetos e vínculo",
+      "evidence_ids": [
+        "O8C-B15-020"
+      ],
+      "source_lines": [
+        [
+          134366,
+          134412,
+          134428,
+          134486,
+          134500
+        ]
+      ],
+      "disposition": "Colar e carta entregues a Miren, chave de cômodo entregue por Miren a Lucas. Registrar custódia no evento, não inventário atual, sem presumir nova condição civil.",
+      "status": "LOCAL_RECONCILED_CONTROLLER"
+    },
+    {
+      "subject": "Casa Vareth / fundo / Leviatã",
+      "evidence_ids": [
+        "O8C-B24-008",
+        "O8C-B25-029"
+      ],
+      "source_lines": [
+        [
+          218199
+        ],
+        [
+          230398,
+          230399,
+          230412
+        ]
+      ],
+      "disposition": "Um fundo de 160m (28/12/120) condicionado, sem nova soma nem caixa disponível. Navio conceitual/experimental; participação das duas cidades desejada, sem obra concluída.",
+      "status": "LOCAL_RECONCILED_CONTROLLER"
+    },
+    {
+      "subject": "Taren / Ressaca / conhecimento privado",
+      "evidence_ids": [
+        "O8C-B22-052",
+        "O8C-B25-029"
+      ],
+      "source_lines": [
+        [
+          203909,
+          203915
+        ],
+        [
+          230404
+        ]
+      ],
+      "disposition": "Pistas históricas crescem, localização exata e destino não confirmados. Preservar escopo exclusivo do leitor em subclaims do fecho D218.",
+      "status": "LOCAL_RECONCILED_CONTROLLER"
+    },
+    {
+      "subject": "AERÚN",
+      "evidence_ids": [
+        "O8C-B25-029"
+      ],
+      "source_lines": [
+        [
+          230407,
+          230408
+        ]
+      ],
+      "disposition": "Encontro histórico com dragão; relação com origem de Gênese não esclarecida. Aplicar regra R36 dragão distinto de Instituto AERÚN.",
+      "status": "LOCAL_RECONCILED_CONTROLLER"
+    }
+  ],
+  "open": [
+    "Independent semantic review of all 1808 candidates and omitted claims not completed.",
+    "Macro 25 partial 30 candidates require full axis classification at macro completion.",
+    "Native tests and Codex projection not run.",
+    "Existing V2 corrections must be applied by eventual retrieval consumer; no runtime integration asserted."
+  ],
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "independent_review": false,
+  "semantic_certification": false,
+  "next_line": 230449
+}
