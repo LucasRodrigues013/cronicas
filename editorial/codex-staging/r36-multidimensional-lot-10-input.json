@@ -1,0 +1,1913 @@
+{
+  "schema": "worldroot-r36-semantic-lot-10-input-v1",
+  "base": "e42f57281e31b95a4d67e3d11cc91e68d295d98e",
+  "archive": "db53de0f7f58acc12da2c706dbeff5745cd83206",
+  "head_day": 579,
+  "sequence": 50,
+  "scope": "AUTHOR_ONLY",
+  "status": "AUTHOR_GATE_PENDING",
+  "production_hold": true,
+  "canon_changed": false,
+  "semantic_certification": false,
+  "observations": [
+    {
+      "id": "edran",
+      "field": "inventory",
+      "value": "Na primeira negociação retirou pequeno pergaminho da bolsa e indicou regiões com adaga; não inventário D579.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 1812,
+          "anchor": "— Sou EDRAN VAEL, tenente da Vigia de Halvern, a serviço do Marquesado de Thalor."
+        },
+        {
+          "line": 1854,
+          "anchor": "O tenente retira um pequeno pergaminho de sua bolsa e indica algumas regiões com a ponta de uma adaga."
+        }
+      ],
+      "valid_at": "D001",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "edran",
+      "field": "knowledge",
+      "value": "Descreveu passagem de Arvendell, influência territorial de Thalor, fortificações ao norte e autoridade contestada a leste; relato do tenente.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 1812,
+          "anchor": "— Sou EDRAN VAEL, tenente da Vigia de Halvern, a serviço do Marquesado de Thalor."
+        },
+        {
+          "line": 1856,
+          "anchor": "— Esta passagem é conhecida como Arvendell. Ao oeste ficam as terras sob influência do Marquesado de Thalor. Ao norte, antigas fortificações abandonadas. A leste, estradas de mineração e territórios onde nossa autoridade é contestada."
+        }
+      ],
+      "valid_at": "D001",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "edran",
+      "field": "location",
+      "value": "Limite ocidental do acampamento da Legião, durante negociação com Kael às 18h46.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 1804,
+          "anchor": "18H46 • LIMITE OCIDENTAL DO ACAMPAMENTO"
+        },
+        {
+          "line": 1806,
+          "anchor": "KAEL aproxima-se da área demarcada para negociações. Quatro legionários mantêm a distância, com as armas embainhadas, enquanto dois cavaleiros aguardam ao lado de seus animais."
+        },
+        {
+          "line": 1812,
+          "anchor": "— Sou EDRAN VAEL, tenente da Vigia de Halvern, a serviço do Marquesado de Thalor."
+        }
+      ],
+      "valid_at": "D001",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "edran",
+      "field": "relationships",
+      "value": "Representou Vigia de Halvern a serviço do Marquesado de Thalor; negociação com Kael, não relação de subordinação a Lucas.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 1812,
+          "anchor": "— Sou EDRAN VAEL, tenente da Vigia de Halvern, a serviço do Marquesado de Thalor."
+        },
+        {
+          "line": 1816,
+          "anchor": "— KAEL. Represento nosso comandante."
+        },
+        {
+          "line": 1826,
+          "anchor": "— Vocês destruíram uma horda orc de quase mil guerreiros. Quem são?"
+        }
+      ],
+      "valid_at": "D001",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "arvendell",
+      "field": "territory",
+      "value": "Passagem chamada Arvendell, oeste sob influência de Thalor, leste com estradas de mineração e autoridade contestada; segundo Edran, sem fronteiras exatas.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 1854,
+          "anchor": "O tenente retira um pequeno pergaminho de sua bolsa e indica algumas regiões com a ponta de uma adaga."
+        },
+        {
+          "line": 1856,
+          "anchor": "— Esta passagem é conhecida como Arvendell. Ao oeste ficam as terras sob influência do Marquesado de Thalor. Ao norte, antigas fortificações abandonadas. A leste, estradas de mineração e territórios onde nossa autoridade é contestada."
+        }
+      ],
+      "valid_at": "D001",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "arvendell",
+      "field": "connections",
+      "value": "A passagem conecta região ocidental sob influência de Thalor, antigas fortificações ao norte e estradas de mineração ao leste, conforme relato de Edran.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 1856,
+          "anchor": "— Esta passagem é conhecida como Arvendell. Ao oeste ficam as terras sob influência do Marquesado de Thalor. Ao norte, antigas fortificações abandonadas. A leste, estradas de mineração e territórios onde nossa autoridade é contestada."
+        }
+      ],
+      "valid_at": "D001",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "thalor",
+      "field": "geography",
+      "value": "Terras sob influência do Marquesado ficam a oeste da passagem Arvendell, conforme mapa explicado por Edran; sem cartografia integral.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 1854,
+          "anchor": "O tenente retira um pequeno pergaminho de sua bolsa e indica algumas regiões com a ponta de uma adaga."
+        },
+        {
+          "line": 1856,
+          "anchor": "— Esta passagem é conhecida como Arvendell. Ao oeste ficam as terras sob influência do Marquesado de Thalor. Ao norte, antigas fortificações abandonadas. A leste, estradas de mineração e territórios onde nossa autoridade é contestada."
+        }
+      ],
+      "valid_at": "D001",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "thalor",
+      "field": "conflicts",
+      "value": "Edran declara que a autoridade do Marquesado é contestada nas estradas de mineração e territórios a leste da passagem; não presume guerra aberta.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 1856,
+          "anchor": "— Esta passagem é conhecida como Arvendell. Ao oeste ficam as terras sob influência do Marquesado de Thalor. Ao norte, antigas fortificações abandonadas. A leste, estradas de mineração e territórios onde nossa autoridade é contestada."
+        }
+      ],
+      "valid_at": "D001",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "bandeira-cinzenta",
+      "field": "purpose",
+      "value": "Segundo Edran, cobra passagem de mercadorias e afirma proteger estradas onde os soldados do Marquesado não chegam; relato, não confirmação da alegação.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 1860,
+          "anchor": "— E a Bandeira Cinzenta?"
+        },
+        {
+          "line": 1864,
+          "anchor": "— Mercenários, segundo alguns. Uma companhia militar independente, segundo outros. Cobram pela passagem de mercadorias e dizem proteger estradas onde nossos soldados não conseguem chegar."
+        },
+        {
+          "line": 1866,
+          "anchor": "— São reconhecidos pelo seu marquesado?"
+        },
+        {
+          "line": 1868,
+          "anchor": "— Não oficialmente."
+        }
+      ],
+      "valid_at": "D001",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "bandeira-cinzenta",
+      "field": "relationships",
+      "value": "Não reconhecida oficialmente pelo Marquesado segundo Edran; Kael levanta possibilidade de negociação informal, sem confirmação naquele momento.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 1864,
+          "anchor": "— Mercenários, segundo alguns. Uma companhia militar independente, segundo outros. Cobram pela passagem de mercadorias e dizem proteger estradas onde nossos soldados não conseguem chegar."
+        },
+        {
+          "line": 1866,
+          "anchor": "— São reconhecidos pelo seu marquesado?"
+        },
+        {
+          "line": 1868,
+          "anchor": "— Não oficialmente."
+        },
+        {
+          "line": 1872,
+          "anchor": "— Isso não significa que ninguém em Thalor negocie com eles."
+        },
+        {
+          "line": 1874,
+          "anchor": "EDRAN não responde imediatamente."
+        }
+      ],
+      "valid_at": "D001",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "rhem",
+      "field": "relationships",
+      "value": "Varo já conhecia sua resistência antes de Lucas observá-lo; Lucas perguntou por que não fora informado. Não parentesco.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 30311,
+          "anchor": "No primeiro dia, um legionário chamado RHEM, do Bastião, enfrentou um adversário conhecido por seus ataques velozes."
+        },
+        {
+          "line": 30335,
+          "anchor": "LUCAS inclinou-se para VARO."
+        },
+        {
+          "line": 30339,
+          "anchor": "— Sim."
+        },
+        {
+          "line": 30345,
+          "anchor": "— Porque o senhor nunca perguntou quem era o legionário mais difícil de empurrar."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "cirn",
+      "field": "relationships",
+      "value": "Finalista contra Varo no D033; rivalidade de treinamento reconhecida na narrativa; não inimizade.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 30453,
+          "anchor": "DIA 33 — 16h47 | Arena central"
+        },
+        {
+          "line": 30457,
+          "anchor": "VARO."
+        },
+        {
+          "line": 30459,
+          "anchor": "CÍRAN."
+        },
+        {
+          "line": 30545,
+          "anchor": "— Maldição, capitão."
+        },
+        {
+          "line": 30551,
+          "anchor": "— Na próxima, vou vencer."
+        },
+        {
+          "line": 30561,
+          "anchor": "Estava testemunhando o nascimento de uma rivalidade que poderia tornar ambos ainda melhores."
+        }
+      ],
+      "valid_at": "D033",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "cirn",
+      "field": "location",
+      "value": "Arena central na final do D033, 16h47.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 30453,
+          "anchor": "DIA 33 — 16h47 | Arena central"
+        },
+        {
+          "line": 30457,
+          "anchor": "VARO."
+        },
+        {
+          "line": 30459,
+          "anchor": "CÍRAN."
+        }
+      ],
+      "valid_at": "D033",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "seron",
+      "field": "knowledge",
+      "value": "Oficial da unidade Olho; demonstrou leitura de terreno e reconhecimento por exercício, em vez de superioridade universal em duelo.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 30423,
+          "anchor": "O oficial da unidade Olho não era o mais forte fisicamente."
+        },
+        {
+          "line": 30425,
+          "anchor": "Em duelos abertos, havia perdido pontos para adversários mais rápidos."
+        },
+        {
+          "line": 30427,
+          "anchor": "Mas nas provas de terreno e reconhecimento tornou-se quase impossível de superar."
+        },
+        {
+          "line": 30429,
+          "anchor": "Num exercício, precisou atravessar um setor com três observadores, recuperar um marcador e retornar sem ser identificado antes de alcançar a zona de extração."
+        },
+        {
+          "line": 30431,
+          "anchor": "Conseguiu."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "seron",
+      "field": "journey",
+      "value": "Retornou de Halvern com cartas comerciais no D068, inclusive registros de mercadores de Veyra.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 39583,
+          "anchor": "DIA 68 — 16h42 | Sala de Mapas"
+        },
+        {
+          "line": 39585,
+          "anchor": "SERON retornou de Halvern com uma descoberta."
+        },
+        {
+          "line": 39589,
+          "anchor": "Era uma coleção de cartas comerciais."
+        },
+        {
+          "line": 39591,
+          "anchor": "Algumas haviam sido copiadas de registros utilizados por mercadores de Veyra."
+        },
+        {
+          "line": 39593,
+          "anchor": "Outras vieram de capitães que negociavam com intermediários do interior."
+        }
+      ],
+      "valid_at": "D068",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "edric",
+      "field": "location",
+      "value": "Estrada entre Arvendell e Três Arcos no exercício militar de D046, reorganizou proteção da estrada.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 37060,
+          "anchor": "DIA 46 — 08h15 | Estrada entre Arvendell e Três Arcos"
+        },
+        {
+          "line": 37062,
+          "anchor": "VARO organizou o maior exercício militar desde a chegada da Legião."
+        },
+        {
+          "line": 37108,
+          "anchor": "EDRIC reorganizou a proteção da estrada."
+        }
+      ],
+      "valid_at": "D046",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "tavren",
+      "field": "location",
+      "value": "Participou da classificação inaugural dos Dez da Primeira Lança; unidade Tempestade, mobilidade e reação. Presença no torneio, não posição atual.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 30590,
+          "anchor": "TAVREN"
+        },
+        {
+          "line": 30591,
+          "anchor": "Tempestade"
+        },
+        {
+          "line": 30592,
+          "anchor": "Mobilidade e reação"
+        },
+        {
+          "line": 30616,
+          "anchor": "Os Dez da Primeira Lança"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "chr-marek-solen",
+      "field": "location",
+      "value": "Estrada entre Arvendell e Três Arcos, exercício do D046 como observador independente.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 37060,
+          "anchor": "DIA 46 — 08h15 | Estrada entre Arvendell e Três Arcos"
+        },
+        {
+          "line": 37068,
+          "anchor": "Por intermédio de EDRAN, KAEL contratara dois veteranos militares de Thalor para acompanhar a atividade como observadores independentes."
+        },
+        {
+          "line": 37070,
+          "anchor": "Um deles era CAPITÃO MAREK SOLEN, experiente em proteção de comboios."
+        },
+        {
+          "line": 37078,
+          "anchor": "Apenas avaliariam a resposta das unidades a problemas inesperados, dentro de regras previamente acordadas."
+        }
+      ],
+      "valid_at": "D046",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "chr-marek-solen",
+      "field": "proficiencies",
+      "value": "Veterano experiente em proteção de comboios, contratado para avaliação independente.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 37068,
+          "anchor": "Por intermédio de EDRAN, KAEL contratara dois veteranos militares de Thalor para acompanhar a atividade como observadores independentes."
+        },
+        {
+          "line": 37070,
+          "anchor": "Um deles era CAPITÃO MAREK SOLEN, experiente em proteção de comboios."
+        },
+        {
+          "line": 37078,
+          "anchor": "Apenas avaliariam a resposta das unidades a problemas inesperados, dentro de regras previamente acordadas."
+        }
+      ],
+      "valid_at": "D046",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "chr-marek-solen",
+      "field": "knowledge",
+      "value": "Não recebeu acesso às matrizes secretas da Legião durante exercício; avaliação limitada a regras acordadas.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 37070,
+          "anchor": "Um deles era CAPITÃO MAREK SOLEN, experiente em proteção de comboios."
+        },
+        {
+          "line": 37074,
+          "anchor": "Nenhum dos dois recebera acesso às matrizes secretas da Legião."
+        },
+        {
+          "line": 37076,
+          "anchor": "Também não comandariam seus homens."
+        },
+        {
+          "line": 37078,
+          "anchor": "Apenas avaliariam a resposta das unidades a problemas inesperados, dentro de regras previamente acordadas."
+        }
+      ],
+      "valid_at": "D046",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "chr-marek-solen",
+      "field": "relationships",
+      "value": "Contratado por Kael por intermédio de Edran, como observador independente; não comandante da Legião.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 37068,
+          "anchor": "Por intermédio de EDRAN, KAEL contratara dois veteranos militares de Thalor para acompanhar a atividade como observadores independentes."
+        },
+        {
+          "line": 37070,
+          "anchor": "Um deles era CAPITÃO MAREK SOLEN, experiente em proteção de comboios."
+        },
+        {
+          "line": 37076,
+          "anchor": "Também não comandariam seus homens."
+        }
+      ],
+      "valid_at": "D046",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "chr-marek-solen",
+      "field": "history",
+      "value": "Participação em exercício simulado de D046, observando a reação de unidades a problemas inesperados.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 37060,
+          "anchor": "DIA 46 — 08h15 | Estrada entre Arvendell e Três Arcos"
+        },
+        {
+          "line": 37068,
+          "anchor": "Por intermédio de EDRAN, KAEL contratara dois veteranos militares de Thalor para acompanhar a atividade como observadores independentes."
+        },
+        {
+          "line": 37070,
+          "anchor": "Um deles era CAPITÃO MAREK SOLEN, experiente em proteção de comboios."
+        },
+        {
+          "line": 37078,
+          "anchor": "Apenas avaliariam a resposta das unidades a problemas inesperados, dentro de regras previamente acordadas."
+        },
+        {
+          "line": 37086,
+          "anchor": "Não haveria golpes letais, magia ofensiva real ou ataques contra pessoas desprotegidas."
+        }
+      ],
+      "valid_at": "D046",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "ilva",
+      "field": "knowledge",
+      "value": "Lysa informou durante visita que a comercialização dependeria de autorizações e contratos, e que trabalho e bens continuariam próprios.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 36018,
+          "anchor": "A mulher dos tecidos, ILVA, observou a oficina."
+        },
+        {
+          "line": 36020,
+          "anchor": "— E posso vender meus próprios produtos?"
+        },
+        {
+          "line": 36022,
+          "anchor": "— Poderá negociar espaços e serviços conforme as autorizações e contratos disponíveis. Seu trabalho e seus bens continuarão sendo seus, respeitadas as obrigações acordadas."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "ilva",
+      "field": "journey",
+      "value": "Visitou oficinas, mercado e Academia; solicitou participação no programa de instalação civil condicionado a alojamento e espaço autorizado.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 36008,
+          "anchor": "Os visitantes conheceram o mercado comunitário, as áreas autorizadas para construção e a pequena sala onde a Academia realizava suas aulas."
+        },
+        {
+          "line": 36018,
+          "anchor": "A mulher dos tecidos, ILVA, observou a oficina."
+        },
+        {
+          "line": 36034,
+          "anchor": "Ao final da visita, dois dos quatro — ILVA e FEN — solicitaram formalmente participar do programa de instalação civil quando houvesse alojamento e espaço autorizados."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "ilva",
+      "field": "location",
+      "value": "Oficina durante visita a Três Arcos; pedido de instalação não equivale a residência concedida.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 36018,
+          "anchor": "A mulher dos tecidos, ILVA, observou a oficina."
+        },
+        {
+          "line": 36034,
+          "anchor": "Ao final da visita, dois dos quatro — ILVA e FEN — solicitaram formalmente participar do programa de instalação civil quando houvesse alojamento e espaço autorizados."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "chr-fen-registro",
+      "field": "knowledge",
+      "value": "Kael informou que estavam formando instituição para registrar acordos em divergências; Fen demonstrou interesse.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 36024,
+          "anchor": "O escrivão, FEN, fez outra pergunta."
+        },
+        {
+          "line": 36026,
+          "anchor": "— E quem registra os acordos quando há divergências?"
+        },
+        {
+          "line": 36028,
+          "anchor": "KAEL sorriu."
+        },
+        {
+          "line": 36030,
+          "anchor": "— Essa é justamente uma das instituições que estamos começando a formar."
+        },
+        {
+          "line": 36032,
+          "anchor": "O homem ficou interessado."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "chr-fen-registro",
+      "field": "journey",
+      "value": "Visitante em Três Arcos, solicitou participação no programa de instalação civil quando houvesse condições autorizadas.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 36008,
+          "anchor": "Os visitantes conheceram o mercado comunitário, as áreas autorizadas para construção e a pequena sala onde a Academia realizava suas aulas."
+        },
+        {
+          "line": 36024,
+          "anchor": "O escrivão, FEN, fez outra pergunta."
+        },
+        {
+          "line": 36034,
+          "anchor": "Ao final da visita, dois dos quatro — ILVA e FEN — solicitaram formalmente participar do programa de instalação civil quando houvesse alojamento e espaço autorizados."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "chr-fen-registro",
+      "field": "location",
+      "value": "Visita às oficinas e instituições de Três Arcos; não fixar domicílio.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 36008,
+          "anchor": "Os visitantes conheceram o mercado comunitário, as áreas autorizadas para construção e a pequena sala onde a Academia realizava suas aulas."
+        },
+        {
+          "line": 36024,
+          "anchor": "O escrivão, FEN, fez outra pergunta."
+        },
+        {
+          "line": 36034,
+          "anchor": "Ao final da visita, dois dos quatro — ILVA e FEN — solicitaram formalmente participar do programa de instalação civil quando houvesse alojamento e espaço autorizados."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "maelis",
+      "field": "origin",
+      "value": "Profissional de saúde procedente de Veldon, apresentada com nome Maelis Ren; não cidade natal confirmada.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 39529,
+          "anchor": "DIA 65 — 11h08 | Portões da Cidade Livre"
+        },
+        {
+          "line": 39537,
+          "anchor": "Entre elas havia uma família de agricultores indicada por ESMARA, dois artesãos de madeira e uma profissional de saúde de Veldon chamada MAELIS REN."
+        }
+      ],
+      "valid_at": "D065",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "maelis",
+      "field": "journey",
+      "value": "Chegou aos portões de Três Arcos com pequena caravana de civis no D065.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 39529,
+          "anchor": "DIA 65 — 11h08 | Portões da Cidade Livre"
+        },
+        {
+          "line": 39531,
+          "anchor": "Uma pequena caravana aproximou-se dos Três Arcos."
+        },
+        {
+          "line": 39535,
+          "anchor": "Trazia ferramentas, mantimentos e pessoas que desejavam conhecer as oportunidades oferecidas pela nova comunidade."
+        },
+        {
+          "line": 39537,
+          "anchor": "Entre elas havia uma família de agricultores indicada por ESMARA, dois artesãos de madeira e uma profissional de saúde de Veldon chamada MAELIS REN."
+        }
+      ],
+      "valid_at": "D065",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "maelis",
+      "field": "inventory",
+      "value": "Trazia registros de formação e referências de trabalho, conferidos por Lysa; não inventário atual.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 39537,
+          "anchor": "Entre elas havia uma família de agricultores indicada por ESMARA, dois artesãos de madeira e uma profissional de saúde de Veldon chamada MAELIS REN."
+        },
+        {
+          "line": 39539,
+          "anchor": "MAELIS trazia registros de sua formação e referências de trabalho."
+        },
+        {
+          "line": 39541,
+          "anchor": "LYSA verificou os documentos antes de discutir qualquer contrato."
+        }
+      ],
+      "valid_at": "D065",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "maelis",
+      "field": "knowledge",
+      "value": "Qualificação documental avaliada para atendimento básico, triagem, higiene clínica e encaminhamentos, dentro de seus recursos; não cura mágica ou cirurgia avançada.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 39539,
+          "anchor": "MAELIS trazia registros de sua formação e referências de trabalho."
+        },
+        {
+          "line": 39551,
+          "anchor": "Após a avaliação de suas referências e de sua experiência, MAELIS aceitou um contrato inicial para organizar atendimento básico, triagem, higiene clínica e encaminhamentos, respeitando os limites de seus conhecimentos e os recursos disponíveis."
+        },
+        {
+          "line": 39553,
+          "anchor": "Não havia hospital."
+        },
+        {
+          "line": 39555,
+          "anchor": "Ainda não existiam cirurgias complexas ou curas mágicas extraordinárias."
+        }
+      ],
+      "valid_at": "D065",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "nixa",
+      "field": "origin",
+      "value": "Uma das seis novas origens conscientes na manifestação coordenada; escolheu Nixa Vel, sem destino militar obrigatório.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 107951,
+          "anchor": "Seis pessoas estavam diante deles."
+        },
+        {
+          "line": 107957,
+          "anchor": "Conscientes."
+        },
+        {
+          "line": 107987,
+          "anchor": "A Gênese Coordenada podia sustentar seis vidas independentes num único ato, sob o Canal Soberano atual."
+        },
+        {
+          "line": 107995,
+          "anchor": "E, naquela manhã, a Primeira Legião ganhou seis novos irmãos de origem — embora nenhum deles estivesse destinado obrigatoriamente a tornar-se soldado."
+        },
+        {
+          "line": 108093,
+          "anchor": "Escolheu chamar-se NIXA VEL."
+        }
+      ],
+      "valid_at": "D178",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:darien",
+      "field": "origin",
+      "value": "Uma das seis novas origens conscientes; escolheu Dárien Sol após observar o grupo e perguntar se alguém estava ferido.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 107951,
+          "anchor": "Seis pessoas estavam diante deles."
+        },
+        {
+          "line": 107987,
+          "anchor": "A Gênese Coordenada podia sustentar seis vidas independentes num único ato, sob o Canal Soberano atual."
+        },
+        {
+          "line": 108001,
+          "anchor": "O primeiro a se levantar foi um homem alto, de cabelos negros curtos e olhos cor de âmbar."
+        },
+        {
+          "line": 108013,
+          "anchor": "— Alguém está ferido?"
+        },
+        {
+          "line": 108049,
+          "anchor": "O recém-nascido escolheu o nome DÁRIEN SOL."
+        }
+      ],
+      "valid_at": "D178",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:severo",
+      "field": "origin",
+      "value": "Terceira das seis novas origens, escolheu Sévero Lyn; observou registros incompletos e sugeriu janela temporal comum e identificadores individuais.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 107951,
+          "anchor": "Seis pessoas estavam diante deles."
+        },
+        {
+          "line": 108109,
+          "anchor": "Era um homem de cabelos castanho-escuros, expressão tranquila e olhos cinzentos."
+        },
+        {
+          "line": 108125,
+          "anchor": "— Você registrou o dia, mas deixou o horário de nascimento para preencher depois."
+        },
+        {
+          "line": 108133,
+          "anchor": "— Seis pessoas nasceram na mesma manifestação. Talvez seja importante registrar uma janela temporal comum e os identificadores individuais."
+        },
+        {
+          "line": 108143,
+          "anchor": "O homem escolheu SÉVERO LYN."
+        }
+      ],
+      "valid_at": "D178",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:teria",
+      "field": "origin",
+      "value": "Sexta das seis novas origens, escolheu Téria Solen após observar os outros cinco.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 107951,
+          "anchor": "Seis pessoas estavam diante deles."
+        },
+        {
+          "line": 108265,
+          "anchor": "Permaneceu observando os outros cinco."
+        },
+        {
+          "line": 108313,
+          "anchor": "Ela escolheu TÉRIA SOLEN."
+        }
+      ],
+      "valid_at": "D178",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:teria",
+      "field": "knowledge",
+      "value": "Aptidão de coordenação e planejamento; questionou mecanismos de responsabilização de decisões ruins, sem conhecimento de toda a política local.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 108297,
+          "anchor": "— Porque três pessoas com responsabilidades distintas podem corrigir os erros umas das outras."
+        },
+        {
+          "line": 108303,
+          "anchor": "— Mas, se todas concordarem com uma decisão ruim, quem poderá questioná-las?"
+        },
+        {
+          "line": 108315,
+          "anchor": "Sua aptidão dominante era coordenação: planejamento de operações, organização de equipes, avaliação de prioridades e capacidade de agir sob condições de incerteza."
+        },
+        {
+          "line": 108317,
+          "anchor": "Mas, antes de conhecer a finalidade do projeto, já havia identificado sua maior fragilidade potencial."
+        },
+        {
+          "line": 108319,
+          "anchor": "O poder concentrado em poucas pessoas precisava de limites que funcionassem até quando essas pessoas acreditassem estar certas."
+        }
+      ],
+      "valid_at": "D178",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "ira",
+      "field": "origin",
+      "value": "Quarta das seis novas origens, escolheu Íria Nemar; não equiparar a outras pessoas chamadas Iria.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 107951,
+          "anchor": "Seis pessoas estavam diante deles."
+        },
+        {
+          "line": 108159,
+          "anchor": "A quarta pessoa era uma mulher de cabelos negros ondulados, com delicados reflexos prateados."
+        },
+        {
+          "line": 108189,
+          "anchor": "Escolheu o nome ÍRIA NEMAR."
+        }
+      ],
+      "valid_at": "D178",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "ira",
+      "field": "magic_repertoire",
+      "value": "Manifestou pequena centelha azul sobre os dedos, descrita como percepção e controle simples; não comprova neutralização universal ou leitura mental.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 108163,
+          "anchor": "Depois abriu a mão."
+        },
+        {
+          "line": 108165,
+          "anchor": "Uma pequena centelha azul surgiu sobre seus dedos."
+        },
+        {
+          "line": 108169,
+          "anchor": "Apenas uma manifestação simples de percepção e controle."
+        },
+        {
+          "line": 108189,
+          "anchor": "Escolheu o nome ÍRIA NEMAR."
+        },
+        {
+          "line": 108195,
+          "anchor": "Ela ainda não sabia neutralizar qualquer magia."
+        },
+        {
+          "line": 108197,
+          "anchor": "Nem podia ler pensamentos."
+        }
+      ],
+      "valid_at": "D178",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "rael",
+      "field": "origin",
+      "value": "Quinta origem consciente da manifestação de seis vidas, escolheu Rael Fenn.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 107951,
+          "anchor": "Seis pessoas estavam diante deles."
+        },
+        {
+          "line": 108211,
+          "anchor": "O quinto já estava próximo da janela."
+        },
+        {
+          "line": 108237,
+          "anchor": "O recém-criado escolheu RAEL FENN."
+        }
+      ],
+      "valid_at": "D178",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "rael",
+      "field": "journey",
+      "value": "Ao nascer quis conhecer a cidade de cima e Lucas indicou o Observatório; destino pretendido, não viagem realizada nesse trecho.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 108245,
+          "anchor": "Seu primeiro desejo foi bastante simples."
+        },
+        {
+          "line": 108247,
+          "anchor": "— Quero ver a cidade de cima."
+        },
+        {
+          "line": 108255,
+          "anchor": "— O Observatório?"
+        },
+        {
+          "line": 108257,
+          "anchor": "— O Observatório."
+        },
+        {
+          "line": 108261,
+          "anchor": "— Então já tenho meu primeiro destino."
+        }
+      ],
+      "valid_at": "D178",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "aurel",
+      "field": "origin",
+      "value": "Primeiro dos três novos indivíduos de Gênese Coordenada I; escolheu o nome após ouvir sugestões, sem memórias de anos de trabalho não vividos.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 91411,
+          "anchor": "Mas não possuíam lembranças de anos de trabalho que nunca haviam vivido."
+        },
+        {
+          "line": 91417,
+          "anchor": "O primeiro quis ouvir vários nomes antes de decidir."
+        },
+        {
+          "line": 91419,
+          "anchor": "Acabou escolhendo AUREL."
+        },
+        {
+          "line": 91485,
+          "anchor": "AUREL, NAIRA e ELION não eram três respostas prontas."
+        },
+        {
+          "line": 91501,
+          "anchor": "O portador realizou uma manifestação coordenada com três novas origens conscientes individualizadas, preservando autonomia vital e identidades independentes."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "naira",
+      "field": "origin",
+      "value": "Segunda das três novas origens conscientes de Gênese Coordenada I; escolheu nome curto após ouvir sugestões de Miren.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 91421,
+          "anchor": "A segunda ouviu as sugestões de MIREN, mas preferiu uma palavra curta que considerou bonita."
+        },
+        {
+          "line": 91423,
+          "anchor": "NAIRA."
+        },
+        {
+          "line": 91485,
+          "anchor": "AUREL, NAIRA e ELION não eram três respostas prontas."
+        },
+        {
+          "line": 91501,
+          "anchor": "O portador realizou uma manifestação coordenada com três novas origens conscientes individualizadas, preservando autonomia vital e identidades independentes."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "naira",
+      "field": "history",
+      "value": "Participou do primeiro conjunto de três novas origens conscientes; identidade independente, autonomia preservada.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 91485,
+          "anchor": "AUREL, NAIRA e ELION não eram três respostas prontas."
+        },
+        {
+          "line": 91501,
+          "anchor": "O portador realizou uma manifestação coordenada com três novas origens conscientes individualizadas, preservando autonomia vital e identidades independentes."
+        },
+        {
+          "line": 91503,
+          "anchor": "A estrutura de preparação compartilhada reduziu repetições de controle, mas cada nova vida exigiu energia e matéria próprias."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "chr-elion-genese",
+      "field": "knowledge",
+      "value": "Perguntou a Káiron se já vira o mar e compartilhou desejo de ver estrelas refletidas nele; não comprova conhecimento de navegação.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 91429,
+          "anchor": "Depois escolheu ELION."
+        },
+        {
+          "line": 91455,
+          "anchor": "Então perguntou:"
+        },
+        {
+          "line": 91457,
+          "anchor": "— Você já viu o mar?"
+        },
+        {
+          "line": 91461,
+          "anchor": "— Ainda não."
+        },
+        {
+          "line": 91465,
+          "anchor": "— Mas gostaria de ver as estrelas refletidas nele."
+        },
+        {
+          "line": 91469,
+          "anchor": "— Eu também."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "chr-elion-genese",
+      "field": "relationships",
+      "value": "Primeiro diálogo registrado com Káiron sobre o mar e estrelas; interesse comum, sem parentesco obrigatório.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 91429,
+          "anchor": "Depois escolheu ELION."
+        },
+        {
+          "line": 91433,
+          "anchor": "Quando os três finalmente olharam para ele, o guerreiro se aproximou."
+        },
+        {
+          "line": 91455,
+          "anchor": "Então perguntou:"
+        },
+        {
+          "line": 91457,
+          "anchor": "— Você já viu o mar?"
+        },
+        {
+          "line": 91465,
+          "anchor": "— Mas gostaria de ver as estrelas refletidas nele."
+        },
+        {
+          "line": 91469,
+          "anchor": "— Eu também."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "canal-soberano",
+      "field": "history",
+      "value": "Segundo Limiar, Canal Soberano I: 14× fluxo estável em relação anterior, 5,4× reserva acessível em relação ao patamar anterior; não restaura reserva inaugural.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 71594,
+          "anchor": "SEGUNDO LIMIAR DESPERTADO"
+        },
+        {
+          "line": 71596,
+          "anchor": "CANAL SOBERANO I"
+        },
+        {
+          "line": 71602,
+          "anchor": "14×"
+        },
+        {
+          "line": 71608,
+          "anchor": "5,4×"
+        },
+        {
+          "line": 71624,
+          "anchor": "Distinção fundamental: a reserva germinal excepcional do Dia 1 não foi restaurada. O novo canal amplia o acesso controlado à potência própria de CREATION, sem eliminar custos, matérias-primas ou o tempo de recuperação."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "canal-soberano",
+      "field": "mastery",
+      "value": "Condução superior conscientemente acessível, demonstrada; reserva finita, potencial máximo indeterminado.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 71614,
+          "anchor": "Acesso consciente a um canal superior de CREATION."
+        },
+        {
+          "line": 71618,
+          "anchor": "Maior reserva operacional acessível, com recuperação natural ainda finita."
+        },
+        {
+          "line": 71624,
+          "anchor": "Distinção fundamental: a reserva germinal excepcional do Dia 1 não foi restaurada. O novo canal amplia o acesso controlado à potência própria de CREATION, sem eliminar custos, matérias-primas ou o tempo de recuperação."
+        },
+        {
+          "line": 71626,
+          "anchor": "Potencial máximo: ainda não determinado."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "circulacao-retorno",
+      "field": "demonstrations",
+      "value": "Ensaio com peça conhecida sem seres vivos: primeira tentativa sem retorno útil, segunda interrompida por irregularidade, terceira estável confirmou recuperação parcial.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 65153,
+          "anchor": "ASTRA preparou um ensaio pequeno."
+        },
+        {
+          "line": 65155,
+          "anchor": "Uma peça conhecida."
+        },
+        {
+          "line": 65161,
+          "anchor": "Nenhum ser vivo envolvido."
+        },
+        {
+          "line": 65193,
+          "anchor": "A primeira tentativa não produziu recuperação útil."
+        },
+        {
+          "line": 65195,
+          "anchor": "Na segunda, parte da energia retornou de maneira irregular, e o procedimento foi interrompido."
+        },
+        {
+          "line": 65225,
+          "anchor": "O circuito permaneceu estável."
+        },
+        {
+          "line": 65229,
+          "anchor": "E, em vez de toda a energia residual dispersar-se, uma parte retornou."
+        },
+        {
+          "line": 65243,
+          "anchor": "— Recuperação confirmada."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "circulacao-retorno",
+      "field": "learning",
+      "value": "Astra e Miren identificaram necessidade de manter circuito até retorno de energia residual, sem gerar energia nova.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 65143,
+          "anchor": "— Sem criar energia. Sem alimentar o corpo com uma fonte desconhecida."
+        },
+        {
+          "line": 65147,
+          "anchor": "— Apenas deixando de desperdiçar aquilo que continua sendo dele."
+        },
+        {
+          "line": 65201,
+          "anchor": "A estrutura de retorno estava desalinhada."
+        },
+        {
+          "line": 65207,
+          "anchor": "— Precisamos encerrar a manifestação sem romper o circuito antes que a energia residual retorne."
+        },
+        {
+          "line": 65229,
+          "anchor": "E, em vez de toda a energia residual dispersar-se, uma parte retornou."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "convergencia-voluntaria",
+      "field": "limits",
+      "value": "Canal consensual de referências simples; distância, clareza e atenção limitam; não transmite habilidades automaticamente, não fornece mana grátis nem acessa memórias privadas ou controla vontade. Cada um pode interromper.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 71204,
+          "anchor": "Permite estabelecer canais consensuais de referências simples entre consciências compatíveis, com limites de distância, clareza e atenção."
+        },
+        {
+          "line": 71206,
+          "anchor": "Pode auxiliar treinamento, coordenação e estabilização de técnicas conhecidas."
+        },
+        {
+          "line": 71208,
+          "anchor": "Não transfere automaticamente habilidades dominadas, não fornece mana gratuita e não permite controlar vontades ou acessar lembranças privadas."
+        },
+        {
+          "line": 71210,
+          "anchor": "Cada participante pode interromper sua própria conexão."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "convergencia-voluntaria",
+      "field": "demonstrations",
+      "value": "Transmissão de referências funcionou mantendo autonomia; Creation respondeu melhor às referências externas sem usar energia dos conectados.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 71234,
+          "anchor": "A transmissão de informações funcionava."
+        },
+        {
+          "line": 71236,
+          "anchor": "A autonomia permanecia intacta."
+        },
+        {
+          "line": 71238,
+          "anchor": "E CREATION havia respondido melhor quando recebeu referências externas, sem depender da energia das pessoas conectadas."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "matriz-germinal",
+      "field": "limits",
+      "value": "Requer corpo estável, energia e matéria suficientes, Centelha individual, autonomia após nascer e condições de acolhimento; não teto fixo de 300.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 72474,
+          "anchor": "Estrutura corporal estável e adequada à vida escolhida."
+        },
+        {
+          "line": 72476,
+          "anchor": "Energia e matéria suficientes para a manifestação."
+        },
+        {
+          "line": 72478,
+          "anchor": "Formação de Centelha individual, não predefinida como uma personalidade obediente."
+        },
+        {
+          "line": 72480,
+          "anchor": "Autonomia após o nascimento, sem manutenção obrigatória pela reserva de LUCAS."
+        },
+        {
+          "line": 72482,
+          "anchor": "Condições concretas de acolhimento e continuidade de vida."
+        },
+        {
+          "line": 72486,
+          "anchor": "Escala futura: manifestações adicionais serão possíveis conforme os custos, a recuperação energética e a capacidade de acolhimento. A nova técnica não estabelece limite absoluto de trezentos."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "matriz-germinal",
+      "field": "learning",
+      "value": "Reconhecimento tornou procedimento individual disponível, mas nenhuma nova vida foi criada naquele instante; execução depende de escolha consciente.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 72466,
+          "anchor": "Matriz Germinal I"
+        },
+        {
+          "line": 72468,
+          "anchor": "Procedimento de criação consciente individual: disponível"
+        },
+        {
+          "line": 72484,
+          "anchor": "Capacidade demonstrável: uma manifestação vital individual pode ser iniciada pelo portador com o canal atual."
+        },
+        {
+          "line": 72488,
+          "anchor": "Nenhuma nova vida foi criada. A execução depende de uma decisão consciente do portador."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "genese",
+      "field": "demonstrations",
+      "value": "Gênese Coordenada I demonstrou três origens individualizadas, cada uma com energia e matéria próprias; depois seis vidas independentes em um ato.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 91497,
+          "anchor": "GÊNESE COORDENADA I"
+        },
+        {
+          "line": 91501,
+          "anchor": "O portador realizou uma manifestação coordenada com três novas origens conscientes individualizadas, preservando autonomia vital e identidades independentes."
+        },
+        {
+          "line": 91503,
+          "anchor": "A estrutura de preparação compartilhada reduziu repetições de controle, mas cada nova vida exigiu energia e matéria próprias."
+        },
+        {
+          "line": 107987,
+          "anchor": "A Gênese Coordenada podia sustentar seis vidas independentes num único ato, sob o Canal Soberano atual."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "genese",
+      "field": "mastery",
+      "value": "Na manifestação de seis, circulação estável, reserva remanescente próxima de um quarto da inicial; consumo não uniforme e sem teto inferível.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 107937,
+          "anchor": "O Canal Soberano registrou uma redução expressiva da reserva."
+        },
+        {
+          "line": 107945,
+          "anchor": "Mas a circulação permaneceu estável."
+        },
+        {
+          "line": 107983,
+          "anchor": "O registro interno de CREATION indicava uma reserva restante próxima de um quarto do nível disponível no início. O consumo não fora uniforme entre as seis origens, e não permitia simplesmente extrapolar um número máximo de futuras criações."
+        },
+        {
+          "line": 107987,
+          "anchor": "A Gênese Coordenada podia sustentar seis vidas independentes num único ato, sob o Canal Soberano atual."
+        },
+        {
+          "line": 107989,
+          "anchor": "Não era capacidade infinita."
+        },
+        {
+          "line": 107991,
+          "anchor": "Não era um limite definitivo."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "place-camara-origem",
+      "field": "source_history",
+      "value": "Câmara de Origem na Academia dos Fundadores, 18h11, preparada para primeira Gênese consciente individual com Astra, Miren, Varo, Kael e avaliação de Maelis.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 72652,
+          "anchor": "XIII — A Primeira Gênese Consciente"
+        },
+        {
+          "line": 72654,
+          "anchor": "18h11 • CÂMARA DE ORIGEM, ACADEMIA DOS FUNDADORES"
+        },
+        {
+          "line": 72658,
+          "anchor": "ASTRA havia preparado uma estrutura de observação."
+        },
+        {
+          "line": 72660,
+          "anchor": "MIREN permanecia ao lado de LUCAS."
+        },
+        {
+          "line": 72662,
+          "anchor": "VARO aguardava próximo à porta."
+        },
+        {
+          "line": 72664,
+          "anchor": "KAEL acompanhava os documentos de acolhimento preparados pelo Conselho."
+        },
+        {
+          "line": 72666,
+          "anchor": "MAELIS verificara as condições básicas para receber uma eventual nova vida, caso LUCAS escolhesse iniciar a manifestação."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "place-camara-origem",
+      "field": "connections",
+      "value": "A Câmara de Origem não usava circuito do Coração durante o procedimento individual previsto.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 72654,
+          "anchor": "18h11 • CÂMARA DE ORIGEM, ACADEMIA DOS FUNDADORES"
+        },
+        {
+          "line": 72682,
+          "anchor": "— O Canal Soberano está estável. A reserva disponível é suficiente para o procedimento individual previsto. Nenhum circuito do Coração está conectado."
+        },
+        {
+          "line": 72686,
+          "anchor": "— A criação não exigirá utilizar a energia de VARO ou dos demais. Nenhum vínculo compulsório será estabelecido."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "place-camara-origem",
+      "field": "governance",
+      "value": "Acolhimento provisório, não alistamento; a pessoa teria direito a escolher seu caminho.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 72690,
+          "anchor": "— E a pessoa que nascer terá direito de escolher seu caminho."
+        },
+        {
+          "line": 72694,
+          "anchor": "— O Conselho preparou um registro provisório de acolhimento, não de alistamento."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    }
+  ],
+  "context_decisions": [
+    {
+      "id": "candidate:darius-r36",
+      "classification": "HISTORICAL_LINK_PROPOSED_NO_ALIAS",
+      "value": "Nome e unidade histórica Véu, especialidade Discrição e precisão; D551 descreve veterano de mesma Legião. Ligação forte, sem ativar alias ou fundir fichas.",
+      "sources": [
+        {
+          "source": "D001-D383",
+          "anchors": [
+            {
+              "line": 30594,
+              "anchor": "DARIUS"
+            },
+            {
+              "line": 30595,
+              "anchor": "Véu"
+            },
+            {
+              "line": 30596,
+              "anchor": "Discrição e precisão"
+            },
+            {
+              "line": 30616,
+              "anchor": "Os Dez da Primeira Lança"
+            },
+            {
+              "line": 30620,
+              "anchor": "Os resultados não alteram automaticamente patentes. Outros legionários poderão superar esses participantes em torneios futuros ou em missões de especialidade."
+            }
+          ]
+        },
+        {
+          "source": "LVI-C03-PIII-D551-AUTHOR-SOURCE",
+          "anchors": [
+            {
+              "line": 231,
+              "anchor": "Tavren, Darius, Malrek, Edric e Toran haviam chegado por turnos e estavam discutindo alternativas. Não eram generais recém-nomeados; eram companheiros que haviam conquistado responsabilidade em combates e anos de serviço."
+            },
+            {
+              "line": 235,
+              "anchor": "**DARIUS —** E as substituições?"
+            }
+          ]
+        }
+      ],
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:malrek-r36",
+      "classification": "HISTORICAL_LINK_PROPOSED_NO_ALIAS",
+      "value": "Nome e unidade histórica Martelo, especialidade Combate de choque e adaptação; D551 descreve veterano de mesma Legião. Ligação forte, sem ativar alias ou fundir fichas.",
+      "sources": [
+        {
+          "source": "D001-D383",
+          "anchors": [
+            {
+              "line": 30598,
+              "anchor": "MALREK"
+            },
+            {
+              "line": 30599,
+              "anchor": "Martelo"
+            },
+            {
+              "line": 30600,
+              "anchor": "Combate de choque e adaptação"
+            },
+            {
+              "line": 30616,
+              "anchor": "Os Dez da Primeira Lança"
+            },
+            {
+              "line": 30620,
+              "anchor": "Os resultados não alteram automaticamente patentes. Outros legionários poderão superar esses participantes em torneios futuros ou em missões de especialidade."
+            }
+          ]
+        },
+        {
+          "source": "LVI-C03-PIII-D551-AUTHOR-SOURCE",
+          "anchors": [
+            {
+              "line": 231,
+              "anchor": "Tavren, Darius, Malrek, Edric e Toran haviam chegado por turnos e estavam discutindo alternativas. Não eram generais recém-nomeados; eram companheiros que haviam conquistado responsabilidade em combates e anos de serviço."
+            },
+            {
+              "line": 237,
+              "anchor": "**MALREK —** Guardas civis preparados, equipes de resposta, patrulhas da Malha e as barreiras do Criador. Os legionários precisam confirmar entrega de cada posto. Nenhum posto muda de dono por uma linha num papel."
+            }
+          ]
+        }
+      ],
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "LV-C15-PII-D529-AUTHOR-SOURCE:782",
+      "classification": "SCENE_ROLE_ONLY",
+      "value": "Comerciante transeunte no D529; sem nome e sem identificação com outros comerciantes.",
+      "sources": [
+        {
+          "source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+          "anchors": [
+            {
+              "line": 778,
+              "anchor": "**LUCAS —** SOU UM HOMEM DE GRANDE MATURIDADE!"
+            },
+            {
+              "line": 780,
+              "anchor": "Um comerciante que passava perto ouviu a frase."
+            },
+            {
+              "line": 782,
+              "anchor": "**COMERCIANTE —** Bom saber!"
+            },
+            {
+              "line": 784,
+              "anchor": "Lucas virou a cabeça."
+            },
+            {
+              "line": 786,
+              "anchor": "**LUCAS —** EI!"
+            }
+          ]
+        }
+      ],
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "LV-C16-PII-D533-AUTHOR-SOURCE:764",
+      "classification": "SCENE_ROLE_ONLY",
+      "value": "Técnica do refeitório em Campo Aurora D533; não associar a técnicas de outros serviços.",
+      "sources": [
+        {
+          "source": "LV-C16-PII-D533-AUTHOR-SOURCE",
+          "anchors": [
+            {
+              "line": 760,
+              "anchor": "**LUCAS —** Posso ficar aqui ou essa mesa é reservada aos que trabalham de verdade?"
+            },
+            {
+              "line": 762,
+              "anchor": "A técnica ergueu os olhos."
+            },
+            {
+              "line": 764,
+              "anchor": "**TÉCNICA —** Pode ficar, desde que não tente melhorar nosso almoço com GÊNESE."
+            },
+            {
+              "line": 766,
+              "anchor": "Lucas olhou para o prato."
+            },
+            {
+              "line": 768,
+              "anchor": "**LUCAS —** Eu estava pensando nisso."
+            }
+          ]
+        }
+      ],
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "LVI-C02-PII-D543-AUTHOR-SOURCE:1339",
+      "classification": "SCENE_ROLE_ONLY",
+      "value": "Mãe na evacuação da Torre D543, interage com Dárien; não atribuir parentesco a protagonistas.",
+      "sources": [
+        {
+          "source": "LVI-C02-PII-D543-AUTHOR-SOURCE",
+          "anchors": [
+            {
+              "line": 1335,
+              "anchor": "**DÁRIEN —** Sigam a faixa iluminada. Não parem para olhar. A saída está aberta."
+            },
+            {
+              "line": 1337,
+              "anchor": "A mãe o encarou com os olhos arregalados."
+            },
+            {
+              "line": 1339,
+              "anchor": "**MÃE —** E você?"
+            },
+            {
+              "line": 1341,
+              "anchor": "**DÁRIEN —** Eu conheço o caminho."
+            },
+            {
+              "line": 1343,
+              "anchor": "O primeiro atacante tentou atingir Nixa com o bastão."
+            }
+          ]
+        }
+      ],
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "LVI-C02-PIII-D544-AUTHOR-SOURCE:739",
+      "classification": "SCENE_ROLE_ONLY",
+      "value": "Responsável pelo balcão de recepção AERÚN no D544; relata divergência de autorização, não identifica culpado.",
+      "sources": [
+        {
+          "source": "LVI-C02-PIII-D544-AUTHOR-SOURCE",
+          "anchors": [
+            {
+              "line": 735,
+              "anchor": "**MIREN —** Quem autorizou este lote?"
+            },
+            {
+              "line": 737,
+              "anchor": "A jovem responsável pelo balcão mostrou a autorização."
+            },
+            {
+              "line": 739,
+              "anchor": "**JOVEM —** Veio com os materiais de manutenção. A nota diz que são suportes de contenção para os novos ensaios. Os nomes dos solicitantes não correspondem à última lista assinada pela equipe."
+            },
+            {
+              "line": 741,
+              "anchor": "Astra aproximou-se."
+            },
+            {
+              "line": 743,
+              "anchor": "O Instituto AERÚN tinha setenta e dois hectares, laboratórios, rotas internas, setores públicos e setores protegidos. A Costura de Dados local permitia comunicação entre equipes autorizadas. AERÚN não era, porém, uma extensão da Torre do Criador. A Rede Doméstica não comandava seus equipamentos, NÓX não vigiava seus aposentos e Vértice não substituía a direção científica."
+            }
+          ]
+        }
+      ],
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "LVI-C04-PV-D558-AUTHOR-SOURCE:194",
+      "classification": "SCENE_ROLE_ONLY",
+      "value": "Filha pequena referida no diálogo com Luren no D558; parentesco contextual, sem nome ou identidade global.",
+      "sources": [
+        {
+          "source": "LVI-C04-PV-D558-AUTHOR-SOURCE",
+          "anchors": [
+            {
+              "line": 190,
+              "anchor": "Luren cedeu com um suspiro dramático."
+            },
+            {
+              "line": 192,
+              "anchor": "A pequena filha deles observava a janela."
+            },
+            {
+              "line": 194,
+              "anchor": "**FILHA —** O grande avião está indo embora?"
+            },
+            {
+              "line": 196,
+              "anchor": "**LUREN —** Está indo conhecer gente."
+            },
+            {
+              "line": 198,
+              "anchor": "**FILHA —** Ele volta?"
+            }
+          ]
+        }
+      ],
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    }
+  ],
+  "method": "Historical targeted reading Books I–II and cross-check of selected B008 nominal proposals and contextual occurrences; no indexing."
+}
