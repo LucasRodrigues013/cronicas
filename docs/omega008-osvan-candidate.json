@@ -1,0 +1,89 @@
+{
+  "schema": "worldroot-omega008-recovery-candidate-v1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "status": "EVIDENCE_REVIEWED_CANDIDATE_NOT_PROMOTED",
+  "proposed_id": "osvan",
+  "name": "Osvan",
+  "source_archive": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "source_episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+  "source_sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926",
+  "fields": {
+    "identity": {
+      "value": "Osvan, responsável civil do posto de Pedras Claras",
+      "evidence": [
+        {
+          "line": 925,
+          "anchor": "Na tarde anterior, Teren entregara a correspondência ao responsável civil, um homem chamado Osvan, que examinara a autorização e registrara o recebimento da bolsa."
+        }
+      ]
+    },
+    "last_observed_location": {
+      "value": "Halvern, Pedras Claras",
+      "day": 579,
+      "clock": "11h47",
+      "scope": "LAST_OBSERVATION_NOT_CURRENT_LOCATION",
+      "evidence": [
+        {
+          "line": 911,
+          "anchor": "**DIA 579 · 11h47 — HALVERN, PEDRAS CLARAS**"
+        },
+        {
+          "line": 931,
+          "anchor": "Naquela manhã, Osvan havia solicitado que Teren permanecesse por algumas horas, enquanto avaliava quais correspondências poderiam seguir por uma rota próxima à fronteira."
+        }
+      ]
+    },
+    "custody": {
+      "value": "Envelope de Ordan permanece lacrado sob custódia do posto; Osvan não autoriza seu envio ainda.",
+      "evidence": [
+        {
+          "line": 925,
+          "anchor": "Na tarde anterior, Teren entregara a correspondência ao responsável civil, um homem chamado Osvan, que examinara a autorização e registrara o recebimento da bolsa."
+        },
+        {
+          "line": 927,
+          "anchor": "O envelope de Ordan fora separado conforme as condições que acompanhavam a custódia."
+        },
+        {
+          "line": 929,
+          "anchor": "Continuava lacrado."
+        },
+        {
+          "line": 983,
+          "anchor": "**OSVAN —** A consulta vai seguir com a próxima correspondência comercial autorizada. A carta não."
+        }
+      ]
+    },
+    "observed_voice": {
+      "value": "Fala objetiva e procedimental; nesta cena distingue relatos comerciais de autorização e protege a confidencialidade do remetente.",
+      "scope": "SCENE_OBSERVATION_NOT_FIXED_PERSONALITY",
+      "evidence": [
+        {
+          "line": 951,
+          "anchor": "**OSVAN —** Há um contato civil do outro lado. Trabalha com correspondência de comerciantes. Mas o último registro que temos não estabelece que possa levar uma mensagem familiar a uma pessoa específica sem apresentá-la à fiscalização."
+        },
+        {
+          "line": 961,
+          "anchor": "**OSVAN —** Podemos enviar uma consulta sobre as condições gerais da rota. Sem nome de destinatário, sem descrição da família, sem conteúdo."
+        }
+      ]
+    }
+  },
+  "unknown": [
+    "idade exata",
+    "aparência",
+    "espécie",
+    "família",
+    "poderes",
+    "histórico anterior não explicitamente narrado",
+    "localização após D579",
+    "resposta à consulta"
+  ],
+  "not_claimed": [
+    "carta chegou à irmã de Ordan",
+    "Osvan tem vínculo com o Dominato",
+    "Osvan possui o envelope como propriedade pessoal"
+  ],
+  "canon_changed": false,
+  "semantic_certification": false
+}
