@@ -2,7 +2,7 @@
   "schema": "worldroot-omega008-c-checkpoint-v1",
   "project": "CRONICAS_DE_UM_NOVO_MUNDO",
   "protocol": "OMEGA-008 C",
-  "status": "HISTORICAL_INTAKE_MACRO_0011_RECOVERED_FINAL_REVIEW_DEFERRED",
+  "status": "HISTORICAL_INTAKE_MACRO_0012_RECOVERED_FINAL_REVIEW_DEFERRED",
   "engine_base": "b7ba937bcaeac185f3ac46bc93e8e1a2fe516b49",
   "source_archive": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
   "branch": "review/omega-cycle-1",
@@ -242,7 +242,8 @@
     "Book II macro 0008 grouped recovery complete; repeated D131 directive, overlapping chronology, historical power nomenclature/counts, and D137 open awakening deferred.",
     "Book II macro 0009 grouped recovery complete; planning versus narrated numbers, D139 overlap, provisional Carta, KÁIRON separate from originals, axis 21 absent and D153 open boundary deferred.",
     "Book II macro 0010 grouped recovery complete; image-only export, D167 night timestamp overlap, provisional civic/institutional states, three disappeared, ancient network unknowns and D168 open third new life scene deferred.",
-    "Book II macro 0011 grouped recovery complete; D168 identity and coordinated Genesis, D169 provisional civil registration and industrial/Coliseum capacity, D171 Observatory, D172 reader-only threat and drone provenance, D173 experimental defense and open tower project deferred."
+    "Book II macro 0011 grouped recovery complete; D168 identity and coordinated Genesis, D169 provisional civil registration and industrial/Coliseum capacity, D171 Observatory, D172 reader-only threat and drone provenance, D173 experimental defense and open tower project deferred.",
+    "Book II macro 0012 grouped recovery complete; D173 Coliseu fire and Véspera rescue, D176 Eldren Voss testimony and Tecelã alias, D178 six new individuals once only, protected Sombras affiliation, integrated Aurora prototype and open cost discussion deferred."
   ],
   "next": {
     "stage": 1,
@@ -252,16 +253,16 @@
     "start_line": 1217,
     "end_rule": "through next complete narrative choice boundary, bounded by complexity",
     "checkpoint": "docs/omega008-c-checkpoint.json",
-    "action": "Active bulk.recovery_cursor=101561; continue Book II macro 0012 through 111838, D173 open experimental tower project. Preserve prior receipts and dated states; global reconciliation and homologation deferred through D579. No canon or motor changes."
+    "action": "Active bulk.recovery_cursor=111839; continue Book II macro 0013 through 121894, D178 open Academy cost discussion. Preserve prior receipts and dated states; global reconciliation and homologation deferred through D579. No canon or motor changes."
   },
   "canon_changed": false,
   "stage00_complete": false,
   "book_complete": false,
   "overall_complete": false,
   "previous_checkpoint": {
-    "commit": "4b69df4d2d0f1b6331b07b3fa2f5c2019abae4b6",
-    "blob": "7fb1b54fd63a307fae1669275de0cd2087103eae",
-    "sha256_utf8": "d12c891ad7d6fdd99f67383f0628e35c7c33ccba46b4314e49601ce85efdd2b3"
+    "commit": "2bad2b45e4c3ad7b4c63f23e8e87edeb98d13f7f",
+    "blob": "c08665691cc5bd9cffe847cbc7291eb63e41abd5",
+    "sha256_utf8": "ae3b76bb86c86059b763b56167632e0a519e90c32c0675ad94a222986116e8a6"
   },
   "lots": [
     {
@@ -353,7 +354,7 @@
       "records": 21,
       "next_review_line": 1680
     },
-    "semantic_cursor": 101561,
+    "semantic_cursor": 111839,
     "semantic_pilot_complete": true,
     "independent_review": false,
     "semantic_pilot_scope": "CONTROLLER_GROUPED_REVIEW_NOT_EXHAUSTIVE_OR_INDEPENDENT",
@@ -416,26 +417,26 @@
         30
       ],
       "book_hint": "II",
-      "end": 111838,
-      "id": "70066e9929724fb649c6425c4269c6cad7fde6396a8d3600a4a2d4f66cff06ca",
-      "lines": 10278,
+      "end": 121894,
+      "id": "874c1734717af63a3f05c72a8f75701a9771563f5c49f1ecf470bfe1b4c39985",
+      "lines": 10056,
       "order_scope": "SOURCE_ORDER_NOT_EVENT_TIME",
-      "previous_macro": "954f567fedc039eabf88693fe23a4a935a4f21a8585ed5c4a4d97e3c6d35b90e",
+      "previous_macro": "70066e9929724fb649c6425c4269c6cad7fde6396a8d3600a4a2d4f66cff06ca",
       "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
-      "start": 101561,
+      "start": 111839,
       "status": "PENDING",
-      "unit_seal": "619c4f56c5c3339acff5c136673ce9f62ba745de876f80174134c2cfa02a5707",
-      "units": 40
+      "unit_seal": "b8f7df0d8c11e2be18b63eb35962f3d1f6575cff4f1d0da4f16e6213ceb981b9",
+      "units": 36
     },
     "open_boundary": {
       "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
-      "after_line": 101560,
-      "next_line": 101561,
-      "day": 173,
-      "chapter": 27,
-      "reason": "Lucas has drafted the Towers of Vigilance project and assigned possible specialist responsibilities; experimental core manifestation begins only in following lines. Do not presume tower commissioned, Coliseum sabotage or mobilization."
+      "after_line": 111838,
+      "next_line": 111839,
+      "day": 178,
+      "chapter": 31,
+      "reason": "15h17 Academy planning: Lysa refuses immediate approval of all motor/observation projects; Aurel replies, Lysa looks up. No budget priority or resolution yet recovered."
     },
-    "recovery_cursor": 101561,
+    "recovery_cursor": 111839,
     "native_validated_through": 11227,
     "recovery_policy": {
       "mode": "RECOVER_FIRST_REVIEW_AT_CURRENT_DAY",
@@ -580,6 +581,20 @@
         "day_start": 168,
         "day_end": 173,
         "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
+      },
+      {
+        "macro_id": "70066e9929724fb649c6425c4269c6cad7fde6396a8d3600a4a2d4f66cff06ca",
+        "path": "audit/omega008-c/bulk-semantic-macro-0012.json",
+        "sha256_utf8": "1056b1fe820079fb0085ce32617df7108aac74ecaf52064ea0baa2f9ba8eacca",
+        "range": [
+          101561,
+          111838
+        ],
+        "records": 77,
+        "sections": 9,
+        "day_start": 173,
+        "day_end": 178,
+        "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
       }
     ],
     "recovered_macro_ids": [
@@ -593,9 +608,10 @@
       "99752b7d305bff49a659b72f6caa82fde87e0bb782d4a108f54d079c5b1eba7b",
       "31975c3bbb1d593dcacc6041d70e46cb47f033c8c6ed41daa6fc6c6e0014b4fb",
       "bc776efc00ffae66b6428052f9795e42ccac5196ea3a108811c035d1567c24c2",
-      "954f567fedc039eabf88693fe23a4a935a4f21a8585ed5c4a4d97e3c6d35b90e"
+      "954f567fedc039eabf88693fe23a4a935a4f21a8585ed5c4a4d97e3c6d35b90e",
+      "70066e9929724fb649c6425c4269c6cad7fde6396a8d3600a4a2d4f66cff06ca"
     ],
-    "total_candidates_recovered": 1019,
+    "total_candidates_recovered": 1096,
     "book_I_intake": {
       "range": [
         1,
