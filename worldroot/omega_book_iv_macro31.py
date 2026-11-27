@@ -379,7 +379,43 @@ def verify_macro36_start(root,archive):
     require(cp["production_gate"]=="HOLD" and not cp["canon_changed"] and not cp["official_checkpoint_changed"] and not cp["semantic_certification"] and not cp["promotion"],"gate")
     return {**result,"status":"PASS_NATIVE_MACRO_0036_PARTIAL","session_new_lines":10000,"session_new_records":47,"next_line":32414,"macro_complete":False,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False,"authority_counts":dict(Counter(x["authority"] for x in allr)),"visibility_counts":dict(Counter(x["visibility"] for x in allr))}
 
+
+def verify_macro36_close(root,archive):
+    from collections import Counter
+    root=Path(root); archive=Path(archive)
+    prior=verify_macro36_start(root,archive)
+    c0=read(root,ROOT+"recovery-checkpoint-0036-partial-01-validated.json","e13d94a207cd3d3d18ef9fa5e9bb87af71e35f08")
+    require(prior["next_line"]==c0["next_line"]==32414 and c0["native_validation"]=="PASS","prior validated checkpoint")
+    opening=read(root,c0["receipt_path"],c0["receipt_blob"],c0["receipt_sha256"])
+    cp=read(root,ROOT+"recovery-checkpoint-0036-closure-pending.json","70b076c3f3017224143cf3fe303d3ec8532c47b3")
+    r=read(root,cp["receipt_path"],"4d9faa2f2b308f43b90aeea357a391d79a7e82c9",cp["receipt_sha256"])
+    q=read(root,"audit/omega008-c/bulk-macro-queue.json","e5a5f9e358d20acf8559f6313c2da24b64665f48")["macros"]; m=q[35]
+    require(c0["next_macro"]==m and cp["next_macro"]==q[36] and r["previous_macro_id"]==q[34]["id"] and r["official_unit_seal"]==m["unit_seal"],"queue chain")
+    require(r["previous_checkpoint_blob"]==cp["previous_checkpoint_blob"]=="e13d94a207cd3d3d18ef9fa5e9bb87af71e35f08" and r["release_blob"]==cp["release_blob"]==c0["release_blob"],"checkpoint chain")
+    source=SourceCache(archive,read(archive,"history/sources/MANIFEST.json","2048141263f66151230119af9b0ee51796ac846b")).get(m["source"])
+    review=read(root,c0["cycle_review_path"],c0["cycle_review_blob"])
+    ids=[x["id"] for g in review["macros"] for entry in g["receipts"] for x in read(root,entry["path"],entry["blob"])["records"]]
+    for name in ("partial-macro-0035-01.json","partial-macro-0035-02.json"):
+        ids.extend(x["id"] for x in read(root,ROOT+name)["records"])
+    new=validate_receipt(r,m,source,r["project"],ARCHIVE,previous_ids=ids+[x["id"] for x in opening["records"]],expected_range=[32414,40763])
+    allr=opening["records"]+r["records"]; allc=opening["coverage"]+r["coverage"]
+    combined=dict(r,range=[30642,40763],records=allr,coverage=allc,axis_coverage={"assessed":list(range(1,31)),"represented":sorted({i for x in allr for i in x["axes"]})})
+    result=validate_receipt(combined,m,source,r["project"],ARCHIVE,previous_ids=ids)
+    require(new["lines"]==8350 and new["records"]==new["coverage"]==cp["records"]==39,"new counts")
+    require(result["lines"]==10122 and result["records"]==cp["macro_records"]==48,"macro counts")
+    require(cp["staging_records"]==c0["staging_records"]+39==2619 and cp["book_counts"]["IV"]==497 and cp["completed_macros"]==36,"staging counts")
+    require(all(x["book"]=="IV" and x["chapter_hint"] in (11,12) and x["day"] in range(399,408) for x in allr),"scope")
+    require(all((x["evidence"]["role"]=="Prompt")==(x["authority"]=="AUTHOR_DIRECTION_NOT_EVENT") for x in allr),"author separation")
+    require(all(x["visibility"].startswith("READER_ONLY") for x in allr if x["type"]=="reader_scene") and all(x["visibility"].startswith("RESTRICTED") for x in allr if x["type"]=="knowledge"),"private boundary")
+    require(all(x["authority"]=="METADATA_NOT_EVENT" for x in allr if x["type"]=="metadata") and all(x["authority"]=="NARRATOR_PROPOSED_BRANCH_NOT_EVENT" for x in allr if x["type"]=="transition_options"),"non-event separation")
+    require(source[0][36734]=="Pouco acima de um metro." and "CAEDREN chegou" in source[0][37144] and "não associou" in source[0][37712],"ARGOS and identity anchors")
+    require(source[0][38306]=="FIM DO CAPÍTULO 11" and source[0][38358]=="## Prompt:" and source[0][38363]=="## Response:" and source[0][38352].startswith("4. ESPECIAL"),"chapter and option anchors")
+    require("TALIS ELVENAR" in source[0][39186] and "não chegou" in source[0][39340],"Talis and diplomacy anchors")
+    require(cp["next_line"]==r["next_line"]==q[36]["start"]==40764 and q[36]["previous_macro"]==m["id"],"next cursor")
+    require(cp["native_validation"]=="PENDING" and cp["production_gate"]=="HOLD" and not cp["canon_changed"] and not cp["official_checkpoint_changed"] and not cp["semantic_certification"] and not cp["promotion"],"gate")
+    return {**result,"status":"PASS_NATIVE_MACRO_0036_COMPLETE","new_records":new["records"],"new_lines":8350,"session_new_lines":18350,"session_new_records":86,"next_line":40764,"macro_complete":True,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False,"authority_counts":dict(Counter(x["authority"] for x in allr)),"visibility_counts":dict(Counter(x["visibility"] for x in allr))}
+
 def main():
     p=argparse.ArgumentParser();p.add_argument("--engine-root",default=".");p.add_argument("--archive-root",required=True)
-    a=p.parse_args();print(json.dumps(verify_macro36_start(a.engine_root,a.archive_root),sort_keys=True))
+    a=p.parse_args();print(json.dumps(verify_macro36_close(a.engine_root,a.archive_root),sort_keys=True))
 if __name__=="__main__":main()
