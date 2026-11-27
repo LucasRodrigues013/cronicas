@@ -48,11 +48,12 @@ def registry_matches(registry,candidates):
     for row in rows:
         for name in [row["id"],row["name"],*row.get("aliases",[])]:
             idx[norm(name)].add(row["id"])
-    keys=set(); counts=Counter()
+    keys=set(); normalized={}; counts=Counter()
     for c in candidates:
         key=norm(c["raw_key"])
-        require(key and key not in keys and c["promotion"] is False,"candidate authority")
-        keys.add(key)
+        raw=c["raw_key"]
+        require(key and raw not in keys and c["promotion"] is False,"candidate authority")
+        keys.add(raw)
         given=c["candidate_ids"]
         require(len(given)==len(set(given)) and set(given)<=ids and set(given)==idx[key],
                 "candidate lexical drift")
@@ -60,6 +61,9 @@ def registry_matches(registry,candidates):
                 "AMBIGUOUS_KEEP_UNRESOLVED" if len(given)>1 else "SINGLE_LEXICAL_CANDIDATE_NOT_CONFIRMED")
         require(c["status"]==status,
                 "candidate disposition")
+        signature=(frozenset(given),c["status"])
+        require(key not in normalized or normalized[key]==signature,"conflicting normalized alias")
+        normalized[key]=signature
         counts["unmatched" if not given else "single" if len(given)==1 else "ambiguous"]+=1
     return {"registry_ids":len(ids),"candidate_keys":len(keys),**dict(counts)}
 

@@ -32,6 +32,11 @@ class BookIVHandoffTests(unittest.TestCase):
     def test_promotion(self):
         self.c[0]["promotion"]=True
         with self.assertRaises(ValueError):registry_matches(self.registry,self.c)
+    def test_distinct_raw_aliases_preserved(self):
+        self.registry["records"]=[{"id":"a","name":"Três Arcos"}]
+        self.c=[{"raw_key":k,"candidate_ids":["a"],"status":"SINGLE_LEXICAL_CANDIDATE_NOT_CONFIRMED","promotion":False}
+                for k in ("tres-arcos","tres_arcos")]
+        self.assertEqual(registry_matches(self.registry,self.c)["candidate_keys"],2)
     def test_duplicate_key(self):
         self.c.append(copy.deepcopy(self.c[0]))
         with self.assertRaises(ValueError):registry_matches(self.registry,self.c)

@@ -1,0 +1,21 @@
+{
+  "schema": "OMEGA_NATIVE_REGISTRY_ALIAS_RECONCILIATION_V1",
+  "failed_run": 46049543738,
+  "failed_job": 140677144887,
+  "failed_commit": "a67cde2689fac22c3c8e59db5fb23c75665264b1",
+  "raw_keys": 211,
+  "normalized_keys": 210,
+  "collision": {
+    "keys": [
+      "tres-arcos",
+      "tres_arcos"
+    ],
+    "candidate_ids": [
+      "tres-arcos"
+    ],
+    "status": "SINGLE_LEXICAL_CANDIDATE_NOT_CONFIRMED"
+  },
+  "finding": "Two distinct raw aliases share one normalized spelling and identical candidate IDs. Preserve both raw keys, require consistent mapping and reject exact duplicate raw keys.",
+  "promotion": false,
+  "canon_changed": false
+}
