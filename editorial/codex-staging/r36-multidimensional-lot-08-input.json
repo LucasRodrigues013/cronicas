@@ -1,0 +1,1396 @@
+{
+  "schema": "worldroot-r36-semantic-lot-08-input-v1",
+  "base": "05a9bde61a9d60c79a9a4efc0cbe1cbebc246508",
+  "archive": "db53de0f7f58acc12da2c706dbeff5745cd83206",
+  "head_day": 579,
+  "sequence": 50,
+  "production_hold": true,
+  "canon_changed": false,
+  "production_activated": false,
+  "semantic_certification": false,
+  "scope": "AUTHOR_ONLY",
+  "status": "AUTHOR_GATE_PENDING",
+  "nominal_proposals": [
+    {
+      "label": "corven",
+      "target": "candidate:corven-dall-r36",
+      "reason": "Corven Dall, contratado para obtenção de informação; identidade do cliente final não conhecida no contrato. Não conceder a informação privada a protagonistas.",
+      "source": "LVI-C02-PI-D542-AUTHOR-SOURCE",
+      "first_line": 617,
+      "anchors": [
+        {
+          "line": 195,
+          "anchor": "O homem que se apresentava como Corven Dall não acreditava em milagres."
+        },
+        {
+          "line": 211,
+          "anchor": "Corven tinha viajado até Três Arcos antes da torre existir. O objetivo de sua visita não nascera de uma notícia impossível que cruzara continentes em poucas horas. Uma pessoa ligada ao comércio de instrumentos e patentes contratara seus serviços semanas antes, por uma cadeia de contatos que não identificava no contrato o destinatário final da informação."
+        }
+      ],
+      "action": "NEW_ID_CANDIDATE",
+      "activate_alias": false,
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "label": "belan",
+      "target": "candidate:belan-r36",
+      "reason": "Técnico voluntário de campo, condução e manutenção, sem subordinação automática.",
+      "source": "LVI-C02-PV-D546-D548-AUTHOR-SOURCE",
+      "first_line": 592,
+      "anchors": [
+        {
+          "line": 460,
+          "anchor": "Iria havia conferido a carga e a segurança dos bancos. Orla guardara os instrumentos de água em estojos fixos. Um técnico voluntário de campo, **Belan**, juntara-se à equipe para condução e manutenção. Não fora convocado por uma ordem do Criador; aceitara o serviço depois de examinar rota e equipamentos."
+        }
+      ],
+      "action": "NEW_ID_CANDIDATE",
+      "activate_alias": false,
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "label": "sera",
+      "target": "candidate:sera-vau-r36",
+      "reason": "Mulher de Vau do Cedro que perdeu parte da horta; sem sobrenome ou parentesco inferido.",
+      "source": "LVI-C02-PV-D546-D548-AUTHOR-SOURCE",
+      "first_line": 1840,
+      "anchors": [
+        {
+          "line": 1816,
+          "anchor": "**DIA 547 · 11h08 — VAU DO CEDRO, TERRAÇOS DE IRRIGAÇÃO**"
+        },
+        {
+          "line": 1820,
+          "anchor": "Foi desenhado por uma mulher que perdera parte da horta."
+        },
+        {
+          "line": 1822,
+          "anchor": "Chamava-se **Sera**."
+        }
+      ],
+      "action": "NEW_ID_CANDIDATE",
+      "activate_alias": false,
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "label": "mara",
+      "target": "candidate:mara-luren-context-r36",
+      "reason": "Mara ao lado de Luren no hospital; não há sobrenome comprovado nesta cena; não equiparar a Mara Venn ou Mara Vellen.",
+      "source": "LVI-C03-PIII-D551-AUTHOR-SOURCE",
+      "first_line": 31,
+      "anchors": [
+        {
+          "line": 27,
+          "anchor": "A primeira coisa que Luren ouviu ao despertar foi o arrastar de uma cadeira."
+        },
+        {
+          "line": 31,
+          "anchor": "**MARA —** Não levante."
+        },
+        {
+          "line": 39,
+          "anchor": "Mara fechou os olhos."
+        }
+      ],
+      "action": "SCENE_IDENTITY_UNRESOLVED_GLOBALLY",
+      "activate_alias": false,
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "label": "darius",
+      "target": "candidate:darius-r36",
+      "reason": "Companheiro veterano da Legião; não general recém-nomeado; ligação histórica adicional abaixo.",
+      "source": "LVI-C03-PIII-D551-AUTHOR-SOURCE",
+      "first_line": 235,
+      "anchors": [
+        {
+          "line": 231,
+          "anchor": "Tavren, Darius, Malrek, Edric e Toran haviam chegado por turnos e estavam discutindo alternativas. Não eram generais recém-nomeados; eram companheiros que haviam conquistado responsabilidade em combates e anos de serviço."
+        },
+        {
+          "line": 235,
+          "anchor": "**DARIUS —** E as substituições?"
+        }
+      ],
+      "action": "NEW_ID_CANDIDATE",
+      "activate_alias": false,
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "label": "malrek",
+      "target": "candidate:malrek-r36",
+      "reason": "Companheiro veterano, distinto de Darius; não general recém-nomeado.",
+      "source": "LVI-C03-PIII-D551-AUTHOR-SOURCE",
+      "first_line": 237,
+      "anchors": [
+        {
+          "line": 231,
+          "anchor": "Tavren, Darius, Malrek, Edric e Toran haviam chegado por turnos e estavam discutindo alternativas. Não eram generais recém-nomeados; eram companheiros que haviam conquistado responsabilidade em combates e anos de serviço."
+        },
+        {
+          "line": 237,
+          "anchor": "**MALREK —** Guardas civis preparados, equipes de resposta, patrulhas da Malha e as barreiras do Criador. Os legionários precisam confirmar entrega de cada posto. Nenhum posto muda de dono por uma linha num papel."
+        }
+      ],
+      "action": "NEW_ID_CANDIDATE",
+      "activate_alias": false,
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "label": "serael",
+      "target": "candidate:serael-r36",
+      "reason": "Nome em aldeia élfica, participa da observação e proteção das ilhas; não inferir espécie só pelo lugar.",
+      "source": "LVI-C06-PI-D564-AUTHOR-SOURCE",
+      "first_line": 169,
+      "anchors": [
+        {
+          "line": 165,
+          "anchor": "**DIA 564 · 07h43 — PÁTIO DO RIO CLARO, ALDEIA ÉLFICA**"
+        },
+        {
+          "line": 167,
+          "anchor": "Serael tinha uma cesta de folhas nas mãos e a expressão de alguém que acabara de discutir com uma árvore."
+        },
+        {
+          "line": 189,
+          "anchor": "Serael fez o sinal antigo dos guardiões, tocando dois dedos na própria testa."
+        }
+      ],
+      "action": "NEW_ID_CANDIDATE",
+      "activate_alias": false,
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "label": "ilven",
+      "target": "candidate:ilven-r36",
+      "reason": "Pessoa nomeada em Naeryn; acompanha rotas de animais e raízes; sem patente.",
+      "source": "LVI-C06-PI-D564-AUTHOR-SOURCE",
+      "first_line": 173,
+      "anchors": [
+        {
+          "line": 171,
+          "anchor": "Ilven se aproximou do pequeno sino que pendia sobre a passagem."
+        },
+        {
+          "line": 883,
+          "anchor": "Alaine e Ilven permaneceram perto das plataformas, acompanhando as raízes e as rotas dos animais. Serael escolheu ficar junto das ilhas de desova. Nenhum deles precisou ser levado pela vontade do visitante."
+        }
+      ],
+      "action": "NEW_ID_CANDIDATE",
+      "activate_alias": false,
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "label": "teren",
+      "target": "candidate:teren-naeryn-r36",
+      "reason": "Rapaz que carrega ovos em Naeryn. Não equiparar ao transportador Teren D579 sem ligação literal.",
+      "source": "LVI-C06-PI-D564-AUTHOR-SOURCE",
+      "first_line": 589,
+      "anchors": [
+        {
+          "line": 583,
+          "anchor": "Vestia o manto curto dos guardiões locais e caminhava com dificuldade, segurando um bastão de madeira escura. Atrás dela, um rapaz carregava uma cesta de ovos envoltos em folhas úmidas. As duas pessoas não estavam feridas. Tentavam apenas atravessar antes que a ponte se fechasse completamente."
+        },
+        {
+          "line": 585,
+          "anchor": "**ILVEN —** Teren! Alaine! Esperem!"
+        },
+        {
+          "line": 589,
+          "anchor": "**TEREN —** Ilven! A passagem do leste mudou de direção. Não conseguimos chegar à saída antiga."
+        }
+      ],
+      "action": "SCENE_IDENTITY_UNRESOLVED_GLOBALLY",
+      "activate_alias": false,
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "label": "alaine",
+      "target": "candidate:alaine-r36",
+      "reason": "Mulher com manto de guardiões, bastão e dificuldade de marcha nesta cena; não diagnóstico.",
+      "source": "LVI-C06-PI-D564-AUTHOR-SOURCE",
+      "first_line": 593,
+      "anchors": [
+        {
+          "line": 583,
+          "anchor": "Vestia o manto curto dos guardiões locais e caminhava com dificuldade, segurando um bastão de madeira escura. Atrás dela, um rapaz carregava uma cesta de ovos envoltos em folhas úmidas. As duas pessoas não estavam feridas. Tentavam apenas atravessar antes que a ponte se fechasse completamente."
+        },
+        {
+          "line": 591,
+          "anchor": "A mulher — Alaine — aproximou-se do centro da ponte."
+        }
+      ],
+      "action": "NEW_ID_CANDIDATE",
+      "activate_alias": false,
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "label": "isolde",
+      "target": "candidate:isolde-r36",
+      "reason": "Isolde observada com Althea no palácio; não inferir cargo, espécie ou parentesco.",
+      "source": "LVI-C06-PI-D564-AUTHOR-SOURCE",
+      "first_line": 1347,
+      "anchors": [
+        {
+          "line": 1337,
+          "anchor": "**DIA 564 · 19h24 — THALOR, PALÁCIO DAS GALERIAS AZUIS**"
+        },
+        {
+          "line": 1339,
+          "anchor": "Althea encontrou Isolde diante de uma mesa coberta de pequenos pássaros de papel."
+        }
+      ],
+      "action": "NEW_ID_CANDIDATE",
+      "activate_alias": false,
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "label": "mara venn",
+      "target": "candidate:mara-venn-r36",
+      "reason": "Nome completo e cicatriz na cena da ponte; não fundir com Maera Venn, Mara Vellen ou Mara de Luren.",
+      "source": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+      "first_line": 1451,
+      "anchors": [
+        {
+          "line": 1447,
+          "anchor": "A mulher à frente do grupo ergueu um bastão de metal escuro."
+        },
+        {
+          "line": 1449,
+          "anchor": "Seu rosto tinha uma cicatriz atravessando a sobrancelha."
+        },
+        {
+          "line": 1451,
+          "anchor": "**MARA VENN —** Descarreguem os grãos destinados aos povoados. Deixaremos os feridos e os medicamentos passarem."
+        }
+      ],
+      "action": "NEW_ID_CANDIDATE",
+      "activate_alias": false,
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "label": "yrda",
+      "target": "candidate:yrda-r36",
+      "reason": "Mestra, antiga proprietária da oficina; conserta ferramentas; origem das marcas não presumida.",
+      "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "first_line": 696,
+      "anchors": [
+        {
+          "line": 690,
+          "anchor": "O livro de entregas encontrado no dia anterior conduziu os investigadores a uma oficina desativada. Sua antiga proprietária, a mestra Yrda, ainda vivia numa casa próxima, onde consertava ferramentas para os vizinhos."
+        },
+        {
+          "line": 696,
+          "anchor": "**YRDA —** Conheço esse acabamento. Minha família fabricava os invólucros."
+        }
+      ],
+      "action": "NEW_ID_CANDIDATE",
+      "activate_alias": false,
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "label": "garran",
+      "target": "candidate:garran-r36",
+      "reason": "Participante do ensaio de transporte, acompanha carga de fornecedores e remuneração; sem sobrenome.",
+      "source": "LVI-C08-PIV-D577-AUTHOR-SOURCE",
+      "first_line": 223,
+      "anchors": [
+        {
+          "line": 215,
+          "anchor": "A equipe pesou os sacos, separou uma parte para o ensaio e acomodou a carga na configuração permitida pelos operadores. Garran acompanhou o embarque, conferindo as marcas de seus fornecedores."
+        },
+        {
+          "line": 223,
+          "anchor": "**GARRAN —** Então os produtos podem seguir na máquina e eu continuo recebendo pelo que faço antes e depois dela."
+        }
+      ],
+      "action": "NEW_ID_CANDIDATE",
+      "activate_alias": false,
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "label": "lessa",
+      "target": "candidate:lessa-r36",
+      "reason": "Responsável pela organização dos espaços de espera do posto.",
+      "source": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+      "first_line": 679,
+      "anchors": [
+        {
+          "line": 675,
+          "anchor": "Ela se apresentou como Lessa, responsável pela organização dos espaços de espera naquele posto."
+        }
+      ],
+      "action": "NEW_ID_CANDIDATE",
+      "activate_alias": false,
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "label": "osvan",
+      "target": "candidate:osvan-r36",
+      "reason": "Responsável civil que registrou correspondência; conteúdo não atribuído a quem não o conhece.",
+      "source": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+      "first_line": 939,
+      "anchors": [
+        {
+          "line": 925,
+          "anchor": "Na tarde anterior, Teren entregara a correspondência ao responsável civil, um homem chamado Osvan, que examinara a autorização e registrara o recebimento da bolsa."
+        },
+        {
+          "line": 939,
+          "anchor": "**OSVAN —** Sobre a chegada, sim. O mensageiro que leva os recibos de retorno saiu ontem ao anoitecer. Deve alcançar o posto de origem por revezamento, se não houver impedimento."
+        }
+      ],
+      "action": "NEW_ID_CANDIDATE",
+      "activate_alias": false,
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    }
+  ],
+  "observations": [
+    {
+      "id": "ferro-horizonte",
+      "field": "history",
+      "value": "D574: primeiro trecho civil, duas estações reais; ensaios sem passageiros e demonstração de parada. Nome literal em negrito/maiúsculas; sem inferir toda rede pronta.",
+      "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 244,
+          "anchor": "**HORIZONTE DE FERRO ARCANO**"
+        },
+        {
+          "line": 246,
+          "anchor": "A cidade acabava de ganhar duas estações reais e o primeiro trecho civil de sua futura ferrovia."
+        },
+        {
+          "line": 254,
+          "anchor": "Os responsáveis pela ferrovia haviam passado as horas seguintes percorrendo o novo trecho, repetindo as partidas sem passageiros, verificando a integração com os terminais e demonstrando a parada de emergência. Os veículos reproduziam a arquitetura de controle que Naira e Dorek haviam desenvolvido na Base, agora adaptada à extensão maior."
+        }
+      ],
+      "valid_at": "D574",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "plot:ferro",
+      "field": "history",
+      "value": "D571: estudo/experimentos privados e apoio inicial, não ferrovia pronta. D574 construção posterior em outro registro.",
+      "source": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 2528,
+          "anchor": "**LYSA —** O Horizonte de Ferro Arcano é uma ideia de Lucas com experimentos privados e apoio inicial para estudos. Nenhuma cidade além de Três Arcos recebeu a proposta, e nenhuma estrada foi construída."
+        }
+      ],
+      "valid_at": "D571",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "ferro-horizonte",
+      "field": "dimensions",
+      "value": "D578: rota ferroviária medida 31,6 km; estrada 33,2 km, não mesma métrica.",
+      "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 183,
+          "anchor": "A rota ferroviária medida no terreno somava 31,6 quilômetros, distinta dos 33,2 quilômetros da estrada."
+        },
+        {
+          "line": 253,
+          "anchor": "O Horizonte de Ferro Arcano chegava ao Campo Aurora."
+        }
+      ],
+      "valid_at": "D578",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "plot:velkar",
+      "field": "history",
+      "value": "D569: Velkar trata de tratados, abastecimento, estradas e proteção; recusa não equivale a fraqueza, objetivo de identificar reações. Não afirmar conquista consumada nem título literal da trama.",
+      "source": "LVI-C07-PI-D569-R2-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 2682,
+          "anchor": "**ORELIA —** Tratados, abastecimento, estradas, proteção."
+        },
+        {
+          "line": 2684,
+          "anchor": "**VELKAR —** Sim. E, quando recusarem, não confundam a recusa com fraqueza. Às vezes uma coroa prefere perder ouro a perder liberdade."
+        }
+      ],
+      "valid_at": "D569",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "plot:seis-marcas",
+      "field": "history",
+      "value": "D571: seis marcas nas réplicas; padrão reproduzível e vibrações compatíveis com falha; responsável desconhecido; semelhança com Vélath não prova origem.",
+      "source": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 646,
+          "anchor": "As réplicas da peça anã repousavam sob proteção. Seis marcas pequenas apareciam numa das superfícies, interrompidas por um espaço vazio."
+        },
+        {
+          "line": 648,
+          "anchor": "**ASTRA —** O padrão continua reproduzível. A alteração provocou vibrações acumulativas capazes de explicar a falha estrutural da passagem antiga. Não conhecemos o responsável."
+        },
+        {
+          "line": 654,
+          "anchor": "**ASTRA —** Continua sendo semelhança. Uma das pesquisadoras conseguiu demonstrar que, quando se alteram as proporções, o padrão também aparece em outros mecanismos sem qualquer relação conhecida com o observatório."
+        }
+      ],
+      "valid_at": "D571",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "plot:nira",
+      "field": "history",
+      "value": "D566: Virandor relata sua contribuição e Níraven encontra caminho para água. Guardião das Marés percebe continuidade, não vê pouso de Virandor. Conhecimentos separados.",
+      "source": "LVI-C06-PIII-D566-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 1583,
+          "anchor": "**VIRANDOR —** Ofereci à terra uma nota que ela conhece. Foi Níraven quem encontrou o caminho para que a água chegasse às sementes."
+        },
+        {
+          "line": 1916,
+          "anchor": "O Guardião das Marés não viu Virandor pousar diante de Níraven. Percebeu a continuidade da nova presença nas águas que alcançavam as raízes distantes, reconhecendo que o nascimento não fora um único pulso breve. A vida continuava."
+        }
+      ],
+      "valid_at": "D566",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "plot:ithran",
+      "field": "history",
+      "value": "D549: Ithran exige medida de intervalo, não disponível; Selen confirma resposta material, não localização do Criador. Informação hostil restrita à cena.",
+      "source": "LVI-C03-PI-D549-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 771,
+          "anchor": "**ITHRAN —** Quanto tempo entre a primeira ruptura e a barreira?"
+        },
+        {
+          "line": 773,
+          "anchor": "**MENSAGEIRO —** Não tenho medição exata."
+        },
+        {
+          "line": 781,
+          "anchor": "**SELEN —** Temos confirmação de resposta material extraordinária. Não sabemos se o Criador estava na parada ou em outro ponto."
+        }
+      ],
+      "valid_at": "D549",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "plot:asa",
+      "field": "history",
+      "value": "D545: Rumo escreve o próprio nome como autor de ideia, não assinatura de posse. Projeto ASA LIVRE compartilhado.",
+      "source": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 573,
+          "anchor": "E, pela primeira vez, escreveu o próprio nome na folha."
+        },
+        {
+          "line": 575,
+          "anchor": "Não como assinatura de posse."
+        },
+        {
+          "line": 577,
+          "anchor": "Como autor de uma ideia."
+        },
+        {
+          "line": 579,
+          "anchor": "**ASA LIVRE — LUCAS & RUMO.**"
+        }
+      ],
+      "valid_at": "D545",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "plot:mar",
+      "field": "history",
+      "value": "D563: autorização de até 260 navios para campanha futura; não força reunida, pronta ou navegando; dependências materiais persistem.",
+      "source": "LVI-C05-PV-D563-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 1077,
+          "anchor": "Serina apresentou os números registrados pelos estaleiros, mas destacou imediatamente que eram dados preliminares e não uma força navegando reunida."
+        },
+        {
+          "line": 1079,
+          "anchor": "— Os demais dependem de manutenção, tripulação, mantimentos e autorização de deslocamento. E mesmo os prontos não estão concentrados num único porto."
+        },
+        {
+          "line": 1083,
+          "anchor": "O decreto de Velkar autorizava alocar até duzentos e sessenta navios para a futura campanha."
+        }
+      ],
+      "valid_at": "D563",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:ceramica-fornos-baixos",
+      "field": "history",
+      "value": "Sarela mostra forno em funcionamento; vasos, placas vitrificadas, recipientes e peças hidráulicas, algumas iridescentes. Não presumir fórmula ou origem exclusiva.",
+      "source": "history/sources/04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "anchors": [
+        {
+          "line": 22651,
+          "anchor": "Às 12h46, quando a chuva diminuiu, Sarela convidou os viajantes para conhecer um dos fornos que continuava funcionando."
+        },
+        {
+          "line": 22657,
+          "anchor": "Havia vasos de cerâmica, placas vitrificadas, recipientes de armazenamento e pequenas peças utilizadas em mecanismos hidráulicos."
+        },
+        {
+          "line": 22659,
+          "anchor": "Algumas possuíam superfícies iridescentes."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "lysa",
+      "field": "knowledge",
+      "value": "No primeiro contato: leitura de contratos, pesos e alguns selos comerciais; conhece parte dos pagamentos locais, não autoridade do marquesado.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 7802,
+          "anchor": "Meu nome é LYSA VAREN."
+        },
+        {
+          "line": 7810,
+          "anchor": "Trabalhava registrando mercadorias para caravanas que atravessavam as rotas de Thalor. Sei ler contratos, conferir pesos e identificar alguns selos comerciais."
+        },
+        {
+          "line": 7816,
+          "anchor": "Parte deles. Não sou uma autoridade do marquesado, se é isso que quer saber."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "lysa",
+      "field": "occupation",
+      "value": "Antes do contato com Lucas registrava mercadorias para caravanas de Thalor; observação histórica.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 7802,
+          "anchor": "Meu nome é LYSA VAREN."
+        },
+        {
+          "line": 7810,
+          "anchor": "Trabalhava registrando mercadorias para caravanas que atravessavam as rotas de Thalor. Sei ler contratos, conferir pesos e identificar alguns selos comerciais."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "miren",
+      "field": "knowledge",
+      "value": "Primeiro contato: inferiu que Lucas não era local e ouviu sua explicação limitada; não prova conhecer integralmente Terra/Gênese.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 9132,
+          "anchor": "— Meu nome é MIREN — diz ela."
+        },
+        {
+          "line": 9142,
+          "anchor": "— Você não é daqui — ela diz."
+        },
+        {
+          "line": 9150,
+          "anchor": "— Não sou deste mundo do modo como vocês entendem “ser daqui”."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "kael",
+      "field": "knowledge",
+      "value": "Ao nascer, declarava raciocínio e compreensão de estruturas de poder, mas desconhecia localização e governo destas terras.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 1437,
+          "anchor": "Sua criação acaba de nascer e já parece estar avaliando a situação."
+        },
+        {
+          "line": 1443,
+          "anchor": "Tenho capacidade de pensar, argumentar, organizar hipóteses e compreender estruturas de poder. Mas não sei onde estamos, nem quem governa estas terras."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "kael",
+      "field": "equipment",
+      "value": "Na manifestação inicial, armadura negra mais leve que a legionária, gravada com prata; não custódia atual.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 1421,
+          "anchor": "Dentro dela, surge um homem."
+        },
+        {
+          "line": 1423,
+          "anchor": "Alto, de aparência jovem, cabelos escuros com mechas prateadas. Usa uma armadura negra mais leve que a dos legionários, gravada com detalhes discretos de prata."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "cirn",
+      "field": "roles",
+      "value": "Instrução de espada, sem ter solicitado comando.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 39439,
+          "anchor": "— Não vejo meu nome numa lista de comandantes."
+        },
+        {
+          "line": 39443,
+          "anchor": "— Porque você não pediu para comandar."
+        },
+        {
+          "line": 39451,
+          "anchor": "— Quero que você ensine técnicas de espada. SERON desenvolverá cartografia e reconhecimento. RHEM trabalhará com defesa e formação. Os outros receberão responsabilidades conforme aptidão e interesse."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "seron",
+      "field": "roles",
+      "value": "Varo atribui desenvolvimento de cartografia e reconhecimento, não promoção implícita.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 39451,
+          "anchor": "— Quero que você ensine técnicas de espada. SERON desenvolverá cartografia e reconhecimento. RHEM trabalhará com defesa e formação. Os outros receberão responsabilidades conforme aptidão e interesse."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "tavren",
+      "field": "goals",
+      "value": "Aceitou estudar mobilidade e mensageria.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 39453,
+          "anchor": "TAVREN aceitou estudar mobilidade e mensageria."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "edric",
+      "field": "goals",
+      "value": "Desejava aperfeiçoar segurança urbana.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 39459,
+          "anchor": "EDRIC desejava aperfeiçoar a segurança urbana."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "sael",
+      "field": "goals",
+      "value": "Preferiu desenvolver equipamentos e manutenção ao lado de Brannik.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 39463,
+          "anchor": "SAEL preferiu trabalhar ao lado de BRANNIK, desenvolvendo equipamentos e técnicas de manutenção."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "sael",
+      "field": "relationships",
+      "value": "Colaboração escolhida com Brannik em equipamentos e manutenção; não obediência compulsória.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 39463,
+          "anchor": "SAEL preferiu trabalhar ao lado de BRANNIK, desenvolvendo equipamentos e técnicas de manutenção."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:toran",
+      "field": "goals",
+      "value": "Pediu formação em resgate, transporte de feridos e organização de abrigos.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 39461,
+          "anchor": "TORAN pediu formação em resgate, transporte de feridos e organização de abrigos."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:toran",
+      "field": "relationships",
+      "value": "Atendimento a Nina, apresentação recíproca; não inferir parentesco.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 78217,
+          "anchor": "— NINA."
+        },
+        {
+          "line": 78219,
+          "anchor": "— Prazer, NINA. Eu sou TORAN."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:nina",
+      "field": "relationships",
+      "value": "Atendida por Toran; perguntou se fazia parte dos trezentos, sem parentesco inferido.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 78219,
+          "anchor": "— Prazer, NINA. Eu sou TORAN."
+        },
+        {
+          "line": 78223,
+          "anchor": "— Você é um dos trezentos?"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:tarek",
+      "field": "body",
+      "value": "Mãos marcadas pelo trabalho na primeira apresentação.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 10256,
+          "anchor": "MIREN permanece de pé ao lado de um homem de aproximadamente cinquenta anos, com cabelos grisalhos e mãos marcadas pelo trabalho."
+        },
+        {
+          "line": 10258,
+          "anchor": "— Este é TAREK — apresenta ela. — Organiza a distribuição de alimentos e a manutenção do abrigo."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:esmara",
+      "field": "body",
+      "value": "Mãos marcadas pelo trabalho na terra; não medida corporal.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 21213,
+          "anchor": "Era uma mulher de aproximadamente quarenta e cinco anos, cabelos castanhos presos numa trança, rosto marcado pelo sol e mãos de quem passara boa parte da vida trabalhando na terra."
+        },
+        {
+          "line": 21215,
+          "anchor": "Chamava-se ESMARA."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:esmara",
+      "field": "relationships",
+      "value": "Tarek já a conhecia e agradeceu sua vinda, sem parentesco presumido.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 21215,
+          "anchor": "Chamava-se ESMARA."
+        },
+        {
+          "line": 21219,
+          "anchor": "TAREK já a conhecia."
+        },
+        {
+          "line": 21221,
+          "anchor": "— ESMARA! Obrigado por vir."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:tomren-vale",
+      "field": "hair",
+      "value": "Grisalhos na apresentação.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 169322,
+          "anchor": "O imediato, TOMREN VALE, era um homem de cabelos grisalhos e uma expressão que parecia desconfiar até de dias ensolarados."
+        }
+      ],
+      "valid_at": "D211",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:tomren-vale",
+      "field": "face",
+      "value": "Expressão descrita como desconfiada na apresentação, não traço permanente comprovado.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 169322,
+          "anchor": "O imediato, TOMREN VALE, era um homem de cabelos grisalhos e uma expressão que parecia desconfiar até de dias ensolarados."
+        }
+      ],
+      "valid_at": "D211",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:selia-nar",
+      "field": "equipment",
+      "value": "Vara curta gravada com sinais arcanos; uso e custódia atual não inferidos.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 169324,
+          "anchor": "A navegadora de corrente, SÉLIA NAR, usava pequenos anéis de cobre nos dedos e carregava uma vara curta gravada com sinais arcanos."
+        }
+      ],
+      "valid_at": "D211",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:selia-nar",
+      "field": "wardrobe",
+      "value": "Pequenos anéis de cobre nos dedos na apresentação.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 169324,
+          "anchor": "A navegadora de corrente, SÉLIA NAR, usava pequenos anéis de cobre nos dedos e carregava uma vara curta gravada com sinais arcanos."
+        }
+      ],
+      "valid_at": "D211",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:navel-ardon",
+      "field": "body",
+      "value": "Força firme associada a trabalho com cordas, lemes e esforço físico, sem atributo numérico.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 178803,
+          "anchor": "— LUCAS, conheça NÁVEL ARDON."
+        },
+        {
+          "line": 178809,
+          "anchor": "NÁVEL possuía a força firme de alguém acostumado a cordas, lemes e trabalho pesado."
+        }
+      ],
+      "valid_at": "D214",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:yra-beldon",
+      "field": "hair",
+      "value": "Vermelhos presos em trança na apresentação.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 178915,
+          "anchor": "YRA BELDON, navegadora de marés, possuía cabelos vermelhos presos numa trança e uma tatuagem azul que contornava o antebraço."
+        }
+      ],
+      "valid_at": "D214",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:yra-beldon",
+      "field": "skin",
+      "value": "Tatuagem azul contornava antebraço; sem inferir cor de pele.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 178915,
+          "anchor": "YRA BELDON, navegadora de marés, possuía cabelos vermelhos presos numa trança e uma tatuagem azul que contornava o antebraço."
+        }
+      ],
+      "valid_at": "D214",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "chr-ferran-dosk",
+      "field": "body",
+      "value": "Braços enormes na apresentação; sem medidas.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 178917,
+          "anchor": "FERRAN DOSK, mestre de manutenção, tinha braços enormes e uma paciência aparentemente infinita."
+        }
+      ],
+      "valid_at": "D214",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "chr-loris-marinheiro",
+      "field": "roles",
+      "value": "Cuidava dos sinais e velas auxiliares da tripulação de Nável.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 178919,
+          "anchor": "E LORIS, um jovem marinheiro, cuidava dos sinais e das velas auxiliares."
+        }
+      ],
+      "valid_at": "D214",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:maira-kest",
+      "field": "location",
+      "value": "D214: permanece responsável por compromissos no baixo Seral, sem abandonar indefinidamente Bruma Clara; não localização D579.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 178921,
+          "anchor": "MAIRA permaneceria responsável por seus compromissos no baixo Seral. Poderia acompanhar parte das tratativas e manter contato com NÁVEL, mas não abandonaria indefinidamente a Bruma Clara nem sua tripulação."
+        }
+      ],
+      "valid_at": "D214",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:ilara-voss",
+      "field": "occupation",
+      "value": "Barqueira, conforme apresentação narrativa.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 169252,
+          "anchor": "Era ILARA VOSS."
+        },
+        {
+          "line": 169254,
+          "anchor": "A barqueira aproximou-se carregando uma caneca."
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "saira-venn",
+      "field": "gestures",
+      "value": "Estendeu a mão, sorriu e pediu explicação sobre os suportes no encontro D208.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 159881,
+          "anchor": "Estendeu a mão."
+        },
+        {
+          "line": 159883,
+          "anchor": "— SAIRA VENN. Capitã do Jardim Errante."
+        },
+        {
+          "line": 159887,
+          "anchor": "Ela sorriu."
+        }
+      ],
+      "valid_at": "D208",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "doru",
+      "field": "location",
+      "value": "D208: tripulante/navegador do Jardim Errante na apresentação, sem localização atual.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 159951,
+          "anchor": "Um dos navegadores, DORU, pertencia aos KHELEN, um povo cujos corpos apresentavam formações minerais naturais. Suas marcas cristalinas não eram armaduras, implantes nem efeitos de CREATION."
+        }
+      ],
+      "valid_at": "D208",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "nuri-arva",
+      "field": "location",
+      "value": "D208: tripulante do Jardim Errante no encontro, sem localização atual.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 159953,
+          "anchor": "Outra tripulante, NÚRI ARVA, era uma botânica de pele bronzeada e cabelos presos em longas tranças com pequenas sementes entrelaçadas."
+        }
+      ],
+      "valid_at": "D208",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "nixa",
+      "field": "hair",
+      "value": "Acobreados na manifestação de D178, não cor atual presumida.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 108057,
+          "anchor": "A segunda pessoa levantou-se quase imediatamente depois."
+        },
+        {
+          "line": 108059,
+          "anchor": "Era uma mulher de cabelos acobreados, olhos verde-escuros e um sorriso que parecia conter uma pergunta."
+        },
+        {
+          "line": 108093,
+          "anchor": "Escolheu chamar-se NIXA VEL."
+        }
+      ],
+      "valid_at": "D178",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "nixa",
+      "field": "eyes",
+      "value": "Verde-escuros na manifestação original.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 108059,
+          "anchor": "Era uma mulher de cabelos acobreados, olhos verde-escuros e um sorriso que parecia conter uma pergunta."
+        },
+        {
+          "line": 108093,
+          "anchor": "Escolheu chamar-se NIXA VEL."
+        }
+      ],
+      "valid_at": "D178",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "ira",
+      "field": "hair",
+      "value": "Negros ondulados, reflexos prateados na quarta manifestação, Íria Nemar.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 108159,
+          "anchor": "A quarta pessoa era uma mulher de cabelos negros ondulados, com delicados reflexos prateados."
+        },
+        {
+          "line": 108189,
+          "anchor": "Escolheu o nome ÍRIA NEMAR."
+        }
+      ],
+      "valid_at": "D178",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "ira",
+      "field": "goals",
+      "value": "Queria estudar magia sem obrigação de tornar-se soldado.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 108201,
+          "anchor": "— Existem escolas onde ensinam magia sem exigir que você se torne um soldado?"
+        },
+        {
+          "line": 108209,
+          "anchor": "— Excelente. Quero estudar."
+        }
+      ],
+      "valid_at": "D178",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "rael",
+      "field": "knowledge",
+      "value": "Na origem possuía aptidão para reconhecimento e orientação, mas não invisibilidade nem conhecimento de estradas não percorridas.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 108237,
+          "anchor": "O recém-criado escolheu RAEL FENN."
+        },
+        {
+          "line": 108239,
+          "anchor": "Possuía aptidão para reconhecimento, orientação, movimentação discreta, leitura de terreno e observação ambiental."
+        },
+        {
+          "line": 108241,
+          "anchor": "Mas não nascera invisível."
+        },
+        {
+          "line": 108243,
+          "anchor": "Nem conhecia estradas que nunca percorrera."
+        }
+      ],
+      "valid_at": "D178",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "rael",
+      "field": "skin",
+      "value": "Pequenas sardas naturais na quinta manifestação, Rael Fenn.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 108213,
+          "anchor": "Era um homem de cabelos claros, pele marcada por pequenas sardas naturais e olhos castanhos atentos."
+        },
+        {
+          "line": 108237,
+          "anchor": "O recém-criado escolheu RAEL FENN."
+        }
+      ],
+      "valid_at": "D178",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:severo",
+      "field": "knowledge",
+      "value": "Aptidão documental, rastreabilidade, contabilidade, contratos, arquivos e inconsistências; não conhecimento universal.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 108143,
+          "anchor": "O homem escolheu SÉVERO LYN."
+        },
+        {
+          "line": 108145,
+          "anchor": "Sua aptidão estava relacionada a documentos, rastreabilidade, padrões contábeis, arquivos, contratos e detecção de inconsistências."
+        }
+      ],
+      "valid_at": "D178",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "candidate:darien",
+      "field": "skills",
+      "value": "Aptidão inicial para proteção, percepção de riscos, resistência e emergências; não experiência automática.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 108049,
+          "anchor": "O recém-nascido escolheu o nome DÁRIEN SOL."
+        },
+        {
+          "line": 108051,
+          "anchor": "Sua aptidão dominante era proteção: percepção de riscos, defesa de pessoas, resistência física elevada e leitura rápida de situações de emergência."
+        }
+      ],
+      "valid_at": "D178",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    }
+  ],
+  "new_candidate_observations": [
+    {
+      "id": "candidate:darius-r36",
+      "field": "roles",
+      "value": "Darius preferiu infiltração e observação, sem unidade própria; não general automático.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 39455,
+          "anchor": "DARIUS preferiu especializar-se em infiltração e observação, sem assumir uma unidade própria."
+        }
+      ],
+      "valid_at": null,
+      "kind": "CANDIDATE_IDENTITY_CONTEXT",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY"
+    },
+    {
+      "id": "candidate:malrek-r36",
+      "field": "goals",
+      "value": "Malrek demonstrou interesse em combate de choque e proteção de estruturas.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 39457,
+          "anchor": "MALREK demonstrou interesse em treinamento de combate de choque e proteção de estruturas."
+        }
+      ],
+      "valid_at": null,
+      "kind": "CANDIDATE_IDENTITY_CONTEXT",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY"
+    },
+    {
+      "id": "candidate:mara-vellen-r36",
+      "field": "identity",
+      "value": "Mara Vellen, oleira, viajou com filha adolescente por aluguel caro em Halvern; não equiparar a Mara Venn nem Mara de Luren.",
+      "source": "D001-D383",
+      "anchors": [
+        {
+          "line": 77823,
+          "anchor": "Na sala do Conselho, uma mulher de cabelos grisalhos falava com LYSA."
+        },
+        {
+          "line": 77825,
+          "anchor": "Chamava-se MARA VELLEN."
+        },
+        {
+          "line": 77827,
+          "anchor": "Era oleira."
+        },
+        {
+          "line": 77829,
+          "anchor": "Havia viajado com sua filha adolescente depois que o aluguel de sua oficina em Halvern se tornara caro demais."
+        }
+      ],
+      "valid_at": null,
+      "kind": "CANDIDATE_IDENTITY_CONTEXT",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY"
+    }
+  ],
+  "policy": "Only staging. No global aliases, no identity merges, no retrospective current-state inference, no auto promotion. Context packets are retrieval aids, not certified facts."
+}

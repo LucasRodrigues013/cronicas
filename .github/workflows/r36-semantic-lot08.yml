@@ -1,0 +1,92 @@
+name: R36 lot 08 targeted semantic gate
+on:
+  push:
+    branches: [review/r36-multidimensional-d001-d579]
+    paths: ['.github/workflows/r36-semantic-lot08.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    if: github.event.repository.private == false && github.ref == 'refs/heads/review/r36-multidimensional-d001-d579'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          path: engine
+          persist-credentials: true
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: db53de0f7f58acc12da2c706dbeff5745cd83206
+          path: archive
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Native candidate and pinned B008 integrity
+        env:
+          PYTHONPATH: engine
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: |
+          python - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          from worldroot.natural_codex import CHAR_FIELDS, validate_fields, git_blob
+          from worldroot.r36_multidimensional import verify_candidate_batch, verify_protected_profiles
+          ar=Path('archive')
+          stage=Path('engine/editorial/codex-staging')
+          doc=json.loads((stage/'r36-multidimensional-lot-01.json').read_bytes())
+          source=b''.join(p.read_bytes() for p in sorted((ar/'history/sources').glob('01*.part-*')))
+          assert hashlib.sha256(source).hexdigest()=='bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b'
+          print('candidate',verify_candidate_batch(doc,source.decode('utf-8')))
+          pins={
+            'r35-natural-completion-d579-v14.json':('db6190d652c35e87ad8c6f670de077e3b13b816e','50fe68c1d870cbe792b0c2ead717b1e7f3d32b5bd4083ed4598b0cb7fd3f94f2'),
+            'r35-world-completion-d579-v12.json':('7eabe936795808d65a6a2f8c12a742475a9a3605','2bffcc1316945c7bdb4bb08593950bbd0af46cd7a271fd6d8d8bf9c72270b53e'),
+            'r35-legacy-name-reconciliation-v10.json':('baffe1ae35556394a8cbdc788197e741b88e269f','ad918bfe874149035ff0bd078d926a1c3758337ec3193f125eca6c7b71c47d0f'),
+            'r35-living-overlay-manifest.json':('02525c88956350aebfc2ef4d05e039b784593c75','c1364cddd2b76bdc83ce4df35305b7dceaed19fc652fb46a5ed20ea9f18b3330')}
+          reg=ar/'editorial/registries'
+          for name,(blob,sha) in pins.items():
+              raw=(reg/name).read_bytes()
+              assert git_blob(raw)==blob and hashlib.sha256(raw).hexdigest()==sha
+          assert git_blob((ar/'canon/HEAD.json').read_bytes())=='9b4e09682fc3148511d59e73ec56fdcda4e396e5'
+          c=json.loads((reg/'r35-natural-completion-d579-v14.json').read_bytes())['characters']
+          w=json.loads((reg/'r35-world-completion-d579-v12.json').read_bytes())['records']
+          for r in c: validate_fields(r['fields'],CHAR_FIELDS)
+          for r in w: validate_fields(r['fields'])
+          assert len(c+w)==192 and len({r['id'] for r in c+w})==192
+          assert sum(len(r['fields']) for r in c+w)==5923
+          print('B008 pinned hashes and 192 native profiles PASS; no promotion')
+          PY
+      - name: Full synthetic native regression
+        working-directory: engine
+        env:
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: python -m unittest discover -s tests -v
+      - name: Confirm read-only trees
+        run: |
+          git -C engine diff --exit-code
+          git -C archive diff --exit-code
+      - name: Targeted semantic recovery and native literal validation
+        env:
+          PYTHONPATH: engine
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: python engine/audit/verify_r36_semantic_lot08.py
+      - name: Persist only staging result and verify readback
+        working-directory: engine
+        run: |
+          set -euo pipefail
+          p=editorial/codex-staging/r36-multidimensional-lot-08-result.json
+          test "$(git status --porcelain)" = "?? $p"
+          git -C ../archive diff --exit-code
+          test -z "$(git -C ../archive status --porcelain)"
+          test "$(git ls-remote origin refs/heads/review/r36-multidimensional-d001-d579 | cut -f1)" = "$(git rev-parse HEAD)"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- "$p"
+          git commit -m 'R36 lot 08: persist targeted semantic result and native evidence [skip ci]'
+          git push origin HEAD:refs/heads/review/r36-multidimensional-d001-d579
+          git fetch origin refs/heads/review/r36-multidimensional-d001-d579
+          test "$(git rev-parse HEAD)" = "$(git rev-parse FETCH_HEAD)"
+          test "$(git show FETCH_HEAD:$p | sha256sum | cut -d' ' -f1)" = "$(sha256sum "$p" | cut -d' ' -f1)"
+          echo "R36_READBACK $(git rev-parse HEAD)"
+          sha256sum "$p"
