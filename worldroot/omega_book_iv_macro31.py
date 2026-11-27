@@ -415,7 +415,40 @@ def verify_macro36_close(root,archive):
     require(cp["native_validation"]=="PENDING" and cp["production_gate"]=="HOLD" and not cp["canon_changed"] and not cp["official_checkpoint_changed"] and not cp["semantic_certification"] and not cp["promotion"],"gate")
     return {**result,"status":"PASS_NATIVE_MACRO_0036_COMPLETE","new_records":new["records"],"new_lines":8350,"session_new_lines":18350,"session_new_records":86,"next_line":40764,"macro_complete":True,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False,"authority_counts":dict(Counter(x["authority"] for x in allr)),"visibility_counts":dict(Counter(x["visibility"] for x in allr))}
 
+
+def verify_macro37_close(root,archive):
+    from collections import Counter
+    root=Path(root); archive=Path(archive)
+    prior=verify_macro36_close(root,archive)
+    c0=read(root,ROOT+"recovery-checkpoint-0036-validated.json","36b684b9e232d651c2699f5f86610539d08698fe")
+    require(prior["macro_complete"] and prior["next_line"]==c0["next_line"]==40764 and c0["native_validation"]=="PASS","prior checkpoint")
+    cp=read(root,ROOT+"recovery-checkpoint-0037-closure-pending.json","a2c5d831e561f09321123fa5a7f24b4140b25157")
+    r=read(root,cp["receipt_path"],"8fe4504e3d81643f2fe7a2b1008ce9097e4de4f6",cp["receipt_sha256"])
+    q=read(root,"audit/omega008-c/bulk-macro-queue.json","e5a5f9e358d20acf8559f6313c2da24b64665f48")["macros"];m=q[36]
+    require(c0["next_macro"]==m and cp["next_macro"]==q[37] and r["previous_macro_id"]==q[35]["id"] and r["official_unit_seal"]==m["unit_seal"],"queue chain")
+    require(r["previous_checkpoint_blob"]==cp["previous_checkpoint_blob"]=="36b684b9e232d651c2699f5f86610539d08698fe" and r["release_blob"]==cp["release_blob"]==c0["release_blob"],"checkpoint chain")
+    source=SourceCache(archive,read(archive,"history/sources/MANIFEST.json","2048141263f66151230119af9b0ee51796ac846b")).get(m["source"])
+    review=read(root,c0["cycle_review_path"],c0["cycle_review_blob"])
+    ids=[x["id"] for g in review["macros"] for entry in g["receipts"] for x in read(root,entry["path"],entry["blob"])["records"]]
+    for name in ("partial-macro-0035-01.json","partial-macro-0035-02.json","partial-macro-0036-01.json","partial-macro-0036-02.json"):
+        ids.extend(x["id"] for x in read(root,ROOT+name)["records"])
+    result=validate_receipt(r,m,source,r["project"],ARCHIVE,previous_ids=ids)
+    allr=r["records"]
+    require(result["lines"]==10026 and result["records"]==result["coverage"]==cp["records"]==48,"counts")
+    require(cp["staging_records"]==c0["staging_records"]+48==2667 and cp["book_counts"]["IV"]==545,"staging counts")
+    require(all(x["book"]=="IV" and x["chapter_hint"] in (12,13) and x["day"] in range(407,415) for x in allr),"scope")
+    require(all((x["evidence"]["role"]=="Prompt")==(x["authority"]=="AUTHOR_DIRECTION_NOT_EVENT") for x in allr),"author separation")
+    require(all(x["visibility"].startswith("READER_ONLY") for x in allr if x["type"]=="reader_scene") and all(x["visibility"].startswith("RESTRICTED") for x in allr if x["type"]=="knowledge"),"private boundary")
+    require(all(x["authority"]=="METADATA_NOT_EVENT" for x in allr if x["type"]=="metadata") and all(x["authority"]=="NARRATOR_PROPOSED_BRANCH_NOT_EVENT" for x in allr if x["type"]=="transition_options"),"non-event separation")
+    require(source[0][42098]=="## Prompt:" and "ir para o capítulo 13" in source[0][42101] and "sem inventar acontecimentos" in source[0][42110],"author chapter exception")
+    require("Nenhuma das duas sabia" in source[0][44620] and "ainda não decidi" in source[0][45076],"identity and consent")
+    require(source[0][47362]=="ESTÚDIO DOS HORIZONTES" and "Sem Coroa, Sem Correntes" in source[0][47532] and "Gravidade Zero" in source[0][50073],"studio and songs")
+    require("Não porque fosse o hino cívico" in source[0][47696] and "TREZENTAS VEZES" in source[0][49342],"music status and power")
+    require(cp["next_line"]==r["next_line"]==q[37]["start"]==50790 and q[37]["previous_macro"]==m["id"],"next cursor")
+    require(cp["native_validation"]=="PENDING" and cp["production_gate"]=="HOLD" and not cp["canon_changed"] and not cp["official_checkpoint_changed"] and not cp["semantic_certification"] and not cp["promotion"],"gate")
+    return {**result,"status":"PASS_NATIVE_MACRO_0037_COMPLETE","next_line":50790,"macro_complete":True,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False,"authority_counts":dict(Counter(x["authority"] for x in allr)),"visibility_counts":dict(Counter(x["visibility"] for x in allr))}
+
 def main():
     p=argparse.ArgumentParser();p.add_argument("--engine-root",default=".");p.add_argument("--archive-root",required=True)
-    a=p.parse_args();print(json.dumps(verify_macro36_close(a.engine_root,a.archive_root),sort_keys=True))
+    a=p.parse_args();print(json.dumps(verify_macro37_close(a.engine_root,a.archive_root),sort_keys=True))
 if __name__=="__main__":main()
