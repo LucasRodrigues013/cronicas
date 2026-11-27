@@ -2,7 +2,7 @@
   "schema": "worldroot-omega008-c-checkpoint-v1",
   "project": "CRONICAS_DE_UM_NOVO_MUNDO",
   "protocol": "OMEGA-008 C",
-  "status": "FIRST_LOT_REVIEWED_INVENTORY_MACRO_PENDING_FULL_AUDIT",
+  "status": "LOT_0002_REVIEWED_CANDIDATE",
   "engine_base": "b7ba937bcaeac185f3ac46bc93e8e1a2fe516b49",
   "source_archive": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
   "branch": "review/omega-cycle-1",
@@ -20,7 +20,14 @@
   "baseline": {
     "regression_documented": 901,
     "release_documented": "15/15",
-    "not_reexecuted": true
+    "not_reexecuted": false,
+    "verified_commit": "9b98c2261c0e604193e9f753dafadf75b9a59dc5",
+    "run": 45992428818,
+    "job": 140483351781,
+    "tests": 901,
+    "seconds": 14.864,
+    "aggregate_run": 45992428792,
+    "aggregate_result": "9 PASS / 1 FAIL: Missing Codex delta (known historic submission incompatibility)"
   },
   "inventory": {
     "manifest_blob": "2048141263f66151230119af9b0ee51796ac846b",
@@ -69,7 +76,17 @@
         "sha256": "9e09d84f6c80de7c81fbf3b4f3aa6edf4fc649801c80d25247668ba1c61b8ecd",
         "lines": 101429
       }
-    ]
+    ],
+    "source_raw_sha256_verified_by_ci": {
+      "commit": "9b98c2261c0e604193e9f753dafadf75b9a59dc5",
+      "run": 45992428792,
+      "job": 140483351530,
+      "logical_sources": 6,
+      "git_parts": 11,
+      "lines": 611011,
+      "bytes": 13928807,
+      "status": "PASS"
+    }
   },
   "boundaries": [
     {
@@ -115,21 +132,27 @@
         "source": 1,
         "line": 135471
       },
-      "end_candidate": {
-        "source": 1,
-        "line": 268700
-      },
+      "end_candidate": null,
       "evidence": [
         135525,
         268630,
         268656,
-        268662
-      ]
+        268662,
+        268702,
+        268704
+      ],
+      "end": {
+        "source": 1,
+        "line": 268703
+      }
     },
     {
       "book": "IV",
       "days": "366–439",
-      "start": "source 1 after Livro III closing/selection; exact role boundary pending",
+      "start": {
+        "source": 1,
+        "line": 268704
+      },
       "end": {
         "source": 3,
         "line": 8935
@@ -137,7 +160,10 @@
       "evidence": [
         268662,
         8904,
-        8939
+        8939,
+        268704,
+        268740,
+        268750
       ]
     },
     {
@@ -162,58 +188,84 @@
       "end_episode": "LVI-C09-PI-D579-AUTHOR-SOURCE"
     }
   ],
-  "boundary_scope": "macro inventory; chapter/part coverage and exact III/IV role boundary pending; D201 shared; source filenames not authority",
+  "boundary_scope": "macro message boundaries located; chapter/part coverage audit remains pending; D201 shared; filenames not authority",
   "stage": 1,
   "book": "I",
-  "lot_reviewed": 1,
+  "lot_reviewed": 2,
   "range_reviewed": [
     1,
-    640
+    1216
   ],
-  "last_verified_line": 640,
-  "records_candidate": 26,
-  "records_controller_reviewed": 26,
+  "last_verified_line": 1216,
+  "records_candidate": 58,
+  "records_controller_reviewed": 58,
   "records_promoted": 0,
   "independent_reviewed": 0,
-  "conflicts_open": 1,
-  "conflicts_resolved": 0,
-  "lot_path": "audit/omega008-c/book-I/lote-0001.json",
-  "lot_sha256_utf8": "ed9931aac2bf59d4512107d8b1b18adabb45163485760bcaba34d1fd49d29d10",
+  "conflicts_open": 0,
+  "conflicts_resolved": 1,
+  "lot_path": "audit/omega008-c/book-I/lote-0002.json",
+  "lot_sha256_utf8": "bd2748790f503adf27203a3a8a7c527583810c7b7f302ee3202201485317e61c",
   "tests": {
-    "sha256_known_vectors": 2,
+    "previous_lot_sha256": true,
+    "previous_checkpoint_blob": true,
+    "previous_anchors": 26,
+    "new_anchors": 32,
+    "role_integrity": true,
     "unique_ids": true,
-    "role_range_integrity": 26,
-    "span_hash_readback": 26,
-    "negative_modified_anchor_rejected": true,
+    "existing_ids_verified": 4,
+    "personnel_arithmetic": true,
     "next_role_boundary": true,
-    "full_source_raw_sha256_recomputed": false,
-    "python_regression": "NOT_RUN_IN_CONTROLLER"
+    "source_hashes_verified_by_previous_commit_ci": true,
+    "native_regression_previous_commit": "901/901",
+    "aggregate_previous_commit": "9 PASS, 1 FAIL: Missing Codex delta"
   },
-  "elapsed_preparation_ms": 891,
+  "elapsed_preparation_ms": 1840,
   "visibility": "PUBLIC_REPOSITORY: derived public-safe metadata only; no private corpus or reserved answers",
   "pending": [
-    "Original image evidence unavailable from literal transcript",
-    "Resolve captain identity against subsequent scenes and existing registry",
-    "Resolve casualties and initial power limitations against later evidence",
-    "Determine if provisional prologue/geography ever incorporated",
-    "Cross-check provisional entity labels against graph before promotion",
-    "Exact III/IV role boundary",
-    "Full chapter/part map",
-    "Cross-check registry and historical review queue",
-    "Native regression and independent review"
+    "Original image evidence unavailable",
+    "Provisional prologue/geography incorporation unresolved",
+    "Unresolved entity labels require later scene evidence",
+    "Eastern patrol fate and messenger identity unknown at D1 cutoff",
+    "Book chapter/part audit incomplete",
+    "Independent review and native integration pending"
   ],
   "next": {
     "stage": 1,
     "book": "I",
-    "lot": 2,
+    "lot": 3,
     "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
-    "start_line": 641,
-    "end_rule": "through next complete author/narrative choice boundary, bounded by complexity",
+    "start_line": 1217,
+    "end_rule": "through next complete narrative choice boundary, bounded by complexity",
     "checkpoint": "docs/omega008-c-checkpoint.json",
-    "action": "Read checkpoint and lot, verify hash and refs, resume at global line 641; review chapter 2 and selected response; do not repeat lot 1."
+    "action": "Verify checkpoint and both lot hashes; recover author choice and chapter 4 (Kael creation, diplomatic context, patrol), crosscheck Codex, audit and persist."
   },
   "canon_changed": false,
   "stage00_complete": false,
   "book_complete": false,
-  "overall_complete": false
+  "overall_complete": false,
+  "previous_checkpoint": {
+    "commit": "9b98c2261c0e604193e9f753dafadf75b9a59dc5",
+    "blob": "d600e28c51ab96af3347575b974536711a9dceb6",
+    "sha256_utf8": "03a17cf869ec42a340156672b5291bcc82125edcf62cc24f56ba526e3c3ad3c3"
+  },
+  "lots": [
+    {
+      "path": "audit/omega008-c/book-I/lote-0001.json",
+      "sha256_utf8": "ed9931aac2bf59d4512107d8b1b18adabb45163485760bcaba34d1fd49d29d10",
+      "range": [
+        1,
+        640
+      ],
+      "records": 26
+    },
+    {
+      "path": "audit/omega008-c/book-I/lote-0002.json",
+      "sha256_utf8": "bd2748790f503adf27203a3a8a7c527583810c7b7f302ee3202201485317e61c",
+      "range": [
+        641,
+        1216
+      ],
+      "records": 32
+    }
+  ]
 }
