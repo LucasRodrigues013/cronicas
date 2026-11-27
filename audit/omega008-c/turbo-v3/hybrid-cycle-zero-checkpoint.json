@@ -1,0 +1,106 @@
+{
+  "schema": "OMEGA_HYBRID_CYCLE_ZERO_HANDOFF_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "archive_head": {
+    "day": 579,
+    "sequence": 50,
+    "blob": "9b4e09682fc3148511d59e73ec56fdcda4e396e5",
+    "pending": "LVI-C09-PII-D580-AUTHOR-SOURCE"
+  },
+  "policy_ref": {
+    "path": "audit/omega008-c/turbo-v3/hybrid-approved-baseline.json",
+    "blob": "30358c0192d501d4d9995b355b1106a35aa9a832",
+    "commit": "7676794e93b6ee0e2cc6cb0088e6945dcae0ae58"
+  },
+  "overlay_ref": {
+    "path": "audit/omega008-c/turbo-v3/hybrid-cycle-zero-semantic-overlay.json",
+    "blob": "aeea06b6eff459ce7b365eafd2e968df321e1dc0",
+    "commit": "9facf1b14ee61b51c61346ef555bba2ca98035d8"
+  },
+  "previous_recovery_checkpoint": {
+    "path": "audit/omega008-c/turbo-v3/recovery-checkpoint-0025-partial-01.json",
+    "blob": "6e03dfb357b41e0e7a57dbc56d975fb0472e794d",
+    "commit": "af30fac0de1d71de49f916ca9fd0dbef2cf2a546"
+  },
+  "baseline": {
+    "completed_macros": 24,
+    "official_macros": 22,
+    "partial_macro": 25,
+    "official_records": 1656,
+    "staged_records": 1778,
+    "partial_records": 30,
+    "total_records": 1808,
+    "books": {
+      "I": 490,
+      "II": 746,
+      "III": 572
+    },
+    "next_line": 230449,
+    "source_order": true
+  },
+  "validation": {
+    "scope": "Connector-side transient overlay simulation; not native motor execution",
+    "checks": [
+      {
+        "name": "baseline and partial checkpoint agree",
+        "pass": true
+      },
+      {
+        "name": "source and archive pins agree",
+        "pass": true
+      },
+      {
+        "name": "source record IDs and evidence preserved",
+        "pass": true
+      },
+      {
+        "name": "only authorized editorial fields",
+        "pass": true
+      },
+      {
+        "name": "non-mutating projection preserves original record count, IDs, authority, visibility and source",
+        "pass": true
+      },
+      {
+        "name": "reader-only mixed claims explicitly separated",
+        "pass": true
+      },
+      {
+        "name": "Leviathan future state preserved",
+        "pass": true
+      },
+      {
+        "name": "formal request pending",
+        "pass": true
+      },
+      {
+        "name": "canonical and independent authority denied",
+        "pass": true
+      }
+    ],
+    "original_records_preserved": true
+  },
+  "cycle_zero": {
+    "status": "CONSOLIDATED_STRUCTURAL_BASELINE_AND_TARGETED_SEMANTIC_RECONCILIATION",
+    "global_independent_homologation": "PENDING",
+    "local_exhaustive_claim_review": "NOT_COMPLETE",
+    "full_native_regression": "NOT_RUN",
+    "codex_runtime_overlay": "NOT_IMPLEMENTED_OR_VERIFIED"
+  },
+  "next": {
+    "macro": 25,
+    "next_line": 230449,
+    "day": 254,
+    "chapter": 26,
+    "remaining_lines": 6977,
+    "mode": "MANUAL_ONE_MACRO_AT_A_TIME",
+    "after_each": "source checks, critical reconciliation, append-only corrections, checkpoint and readback; no next lot until current closed",
+    "next_cycle_trigger": "finish macro 29 / Book III boundary, whichever first"
+  },
+  "gate": "HOLD_OFFICIAL_CHECKPOINT_PENDING_INDEPENDENT_SEMANTIC_HOMOLOGATION_AND_NATIVE_REGRESSION",
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "semantic_certification": false,
+  "independent_review": false
+}
