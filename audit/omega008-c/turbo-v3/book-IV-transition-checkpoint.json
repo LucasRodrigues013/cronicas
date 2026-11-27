@@ -1,0 +1,55 @@
+{
+  "schema": "OMEGA_BOOK_IV_TRANSITION_CHECKPOINT_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "previous_checkpoint_blob": "322f816cad6e4e829760c1ec49406a2c43abcbc7",
+  "validated_commit": "6c2b5240cdffdc0d1b5601e3f3e3d6e7dd8ed9d6",
+  "handoff_path": "audit/omega008-c/turbo-v3/book-IV-prepared-handoff.json",
+  "evidence_path": "audit/omega008-c/turbo-v3/book-IV-preflight-evidence.json",
+  "state": "BOOK_IV_HANDOFF_PREPARED_NATIVE_PREFLIGHT_PASS_CUSTODY_HOLD",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "archive_head": {
+    "day": 579,
+    "sequence": 50,
+    "blob": "9b4e09682fc3148511d59e73ec56fdcda4e396e5",
+    "pending": "LVI-C09-PII-D580-AUTHOR-SOURCE"
+  },
+  "staging_records": 2122,
+  "official_records": 1656,
+  "book_counts": {
+    "I": 490,
+    "II": 746,
+    "III": 886
+  },
+  "book_III_intake_complete": true,
+  "book_III_semantic_homologation_complete": false,
+  "book_III_native_staging": "PASS",
+  "targeted_regression": "44/44",
+  "connector_full_source_sha256": "PASS",
+  "connector_registry_lexical": "PASS",
+  "native_literal": "NOT_RUN_CUSTODY_GUARD",
+  "native_registry": "NOT_RUN_CUSTODY_GUARD",
+  "typed_projection": "NOT_RUN",
+  "cycle_gate_review": "PENDING",
+  "global_independent_review": "PENDING_AT_D579",
+  "global_regression": "PENDING_AT_D579",
+  "macro": 29,
+  "cursor": 268704,
+  "next_macro": 30,
+  "next_macro_status": "NOT_STARTED",
+  "next_book": {
+    "title": "OS MARES DO MUNDO ESQUECIDO",
+    "first": 30,
+    "last": 42,
+    "macros": 13,
+    "planned_lines": 122935,
+    "first_range": [
+      268704,
+      279001
+    ]
+  },
+  "gate": "HOLD",
+  "production": "HOLD",
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "next_action": "Run isolated preflight: python -m worldroot.omega_book_iv_handoff --engine-root . --archive-root <pinned-isolated-archive>. Require READY_FOR_MANUAL_GATE_REVIEW and inspect remaining semantic/identity controls. No lot 0030 recovery before explicit gate decision. Global release remains gated through D579."
+}

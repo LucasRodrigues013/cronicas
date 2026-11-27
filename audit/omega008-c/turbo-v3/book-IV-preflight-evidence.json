@@ -1,0 +1,98 @@
+{
+  "schema": "OMEGA_BOOK_IV_PREFLIGHT_EVIDENCE_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "validated_commit": "6c2b5240cdffdc0d1b5601e3f3e3d6e7dd8ed9d6",
+  "handoff_blob": "204945a4d65c99a978aa0ffd31e7abd43ae5ce7e",
+  "previous_checkpoint_blob": "322f816cad6e4e829760c1ec49406a2c43abcbc7",
+  "workflow": {
+    "run": 46049029910,
+    "job": 140675441698,
+    "conclusion": "success",
+    "logs_readback": true,
+    "tests": {
+      "hybrid": 12,
+      "turbo": 11,
+      "codex": 12,
+      "handoff": 9,
+      "total": 44,
+      "failed": 0
+    },
+    "private_job": {
+      "id": 140675442959,
+      "conclusion": "skipped",
+      "reason": "public repository custody guard"
+    }
+  },
+  "native_preflight": {
+    "state": "PREFLIGHT_PREPARED_CUSTODY_HOLD",
+    "book": "IV",
+    "records": 886,
+    "coverage": 395,
+    "effective_axes": 30,
+    "control_dispositions": {
+      "CORRECTED_IN_OVERLAY": 1,
+      "PRESERVE_EXISTING_GUARD": 36,
+      "PRESERVE_OPEN_NO_INFERENCE": 8
+    },
+    "sqlite_staging": 886,
+    "typed_events": 0,
+    "registry_native": null,
+    "scope": {
+      "first": 30,
+      "last": 42,
+      "macros": 13,
+      "lines": 122935,
+      "sources": 3,
+      "first_range": [
+        268704,
+        279001
+      ],
+      "first_unit_count": 38,
+      "first_unit_seal": "5d3f3d907c57198054c9283ad94cf6c494f1d42b3e7d0b392b0c21e4eb2a78a1",
+      "first_id": "9860a957824d4b29700a03180af5af5f641a40d0bd5d6d71cb865db1fffa4002"
+    },
+    "macro30_started": false,
+    "recovery_authorized": false,
+    "canon_changed": false,
+    "official_checkpoint_changed": false,
+    "production_gate": "HOLD"
+  },
+  "source_connector": {
+    "executor": "GitHub connector JS; not native Python",
+    "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+    "sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+    "sha256_match": true,
+    "bytes": 6823025,
+    "lines": 296900,
+    "parts": 6,
+    "git_sha1_match": 6,
+    "bytes_match": 6,
+    "hash_self_tests": [
+      "SHA256 abc",
+      "SHA1 abc"
+    ]
+  },
+  "registry_connector": {
+    "executor": "GitHub connector JS; pinned base registry",
+    "blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+    "ids": 1238,
+    "base_records": 174,
+    "species": 14,
+    "schools": 30,
+    "spells": 1020,
+    "unique": 1238,
+    "keys": 211,
+    "single": 46,
+    "ambiguous": 4,
+    "unmatched": 161,
+    "invalid_ids": 0,
+    "lexical_drift": 0,
+    "promotion": false
+  },
+  "limits": [
+    "Public repository: raw archive/registry native job remains guarded.",
+    "Local git ls-remote failed DNS; no archive mounted, exact-name Library search returned no results.",
+    "Connector-level SHA-256 and lexical comparison are not native isolated execution or independent semantic certification.",
+    "No new source corpus, no new labels or narrative content; all original receipts and control records retained."
+  ]
+}
