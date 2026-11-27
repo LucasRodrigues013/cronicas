@@ -1,0 +1,2946 @@
+{
+  "schema": "worldroot-r36-semantic-lot-11-result-v1",
+  "base": "182a8c1ed41bebc045e3cb3f7eb67dd7b72fce83",
+  "archive": "db53de0f7f58acc12da2c706dbeff5745cd83206",
+  "head_day": 579,
+  "sequence": 50,
+  "scope": "AUTHOR_ONLY",
+  "status": "AUTHOR_GATE_PENDING",
+  "production_hold": true,
+  "canon_changed": false,
+  "semantic_certification": false,
+  "input_sha256": "2984e47cd3e8936f02333a9278c098200068b1d777fc883ae027b5de78673dee",
+  "lot10_sha256": "98e2dcd05936f8b9d60f5d550018e7f4cad6f1ed1be903216b157a17efdacd2a",
+  "lot09_sha256": "d27e1419c4608893aac646703addc1d95f1dda10e5e837651001e1e30b392a35",
+  "lot08_sha256": "0aa9937c924c486c384bd735618942b3476eaa29d629867f9c63f0caa365b581",
+  "lot07_sha256": "21c995eecd942ad9fc68baae6a054125fb53fd19bbcd618680bea1b045f6bc92",
+  "counts": {
+    "new_distinct_pending_fields": 100,
+    "official_fields": 100,
+    "candidate_fields": 0,
+    "distinct_targets": 36,
+    "pending_baseline": 3897,
+    "prior_distinct_pending_proposals": 164,
+    "pending_without_proposal_after_lot11": 3633,
+    "conflict_guards": 7,
+    "literal_checks": 319,
+    "canon_fields_promoted": 0
+  },
+  "observations": [
+    {
+      "id": "thalor-althea",
+      "field": "knowledge",
+      "value": "A carta real registra relatos sobre organização, leis comuns e ausência de pretensão à coroa; não conhecimento irrestrito de Lucas.",
+      "source": "history/sources/02_DIA_383_A_431_FONTE_LITERAL.txt",
+      "anchors": [
+        {
+          "line": 13607,
+          "anchor": "Sob a autoridade de Sua Majestade, a Rainha ALTHEA",
+          "anchor_sha256": "adf1e1310435a369d20cdb857fe81b296d950edde25bb504aa698bdff935f488"
+        },
+        {
+          "line": 13611,
+          "anchor": "Há algum tempo acompanhamos relatos acerca da comunidade estabelecida sob os Três Arcos, de sua organização singular e dos compromissos assumidos com os habitantes de suas terras.",
+          "anchor_sha256": "bf0ff45fcdbd1a453a652d11341c6e9128b23b288e2d1f7675bc9ca0befce8bf"
+        },
+        {
+          "line": 13613,
+          "anchor": "Recebemos informações de que pessoas de origens distintas encontraram ali condições para viver sob leis comuns, preservando suas diferenças e responsabilidades.",
+          "anchor_sha256": "e4ca5793f6a166a3be47535c9a5344f5f8d38b4cd0c3ddea78ca244d6a4b6567"
+        },
+        {
+          "line": 13615,
+          "anchor": "Também fomos informados de que seu fundador, embora disponha de capacidades incomuns, não reivindicou para si uma coroa.",
+          "anchor_sha256": "5383aa5dec9da55cfec102be235d3e778771673859ae60d55091d20ce397333f"
+        }
+      ],
+      "valid_at": "D390",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "thalor-althea",
+      "field": "history",
+      "value": "Correspondência autenticada aberta por Kael em Três Arcos às 12h31; convite à audiência em data negociada, sem revogar acordos.",
+      "source": "history/sources/02_DIA_383_A_431_FONTE_LITERAL.txt",
+      "anchors": [
+        {
+          "line": 13593,
+          "anchor": "DIA 390 · 12h31 · TRÊS ARCOS, GABINETE DE ADMINISTRAÇÃO",
+          "anchor_sha256": "5005c9dd3757970231789e621cc3b6d544daf9c8333c9d77754a3e8b08d1a85d"
+        },
+        {
+          "line": 13597,
+          "anchor": "KAEL desenrolou o documento.",
+          "anchor_sha256": "e52ac9ba9803d04b6a4c7e6fe22fdf91bb1be12cfd9f3e61e9644d129faa82a0"
+        },
+        {
+          "line": 13601,
+          "anchor": "O papel possuía marcas discretas de autenticação.",
+          "anchor_sha256": "ae3fe37a12b27c8738dc5e9bb5bf1e39594af1394f24d33d70d11e27fd4606e6"
+        },
+        {
+          "line": 13621,
+          "anchor": "Não se trata de revogação dos acordos anteriormente celebrados, nem de convocação militar, nem de imposição de nova sujeição.",
+          "anchor_sha256": "99aae053e6b471602c7ba46db26e321af39e2d47911c2a25934f7e2b7b5d199f"
+        },
+        {
+          "line": 13623,
+          "anchor": "Trata-se de um convite para uma audiência perante a Coroa, em data a ser estabelecida por entendimento entre nossas representações.",
+          "anchor_sha256": "8b5621b7adc1be5bc8bd60bb92fb194475f446ddf675f76fa5b1c5e9536c1ef5"
+        }
+      ],
+      "valid_at": "D390",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "thalor",
+      "field": "governance",
+      "value": "Casa Real e Rainha Althea emitem convite diplomático sob selo; participação da representação livre e sem sujeição adicional.",
+      "source": "history/sources/02_DIA_383_A_431_FONTE_LITERAL.txt",
+      "anchors": [
+        {
+          "line": 13605,
+          "anchor": "CORRESPONDÊNCIA DA CASA REAL DE THALOR",
+          "anchor_sha256": "b73f2155d46d0620ff76d330130a87f8fdf47d7a7191a41234f129a1166c3629"
+        },
+        {
+          "line": 13607,
+          "anchor": "Sob a autoridade de Sua Majestade, a Rainha ALTHEA",
+          "anchor_sha256": "adf1e1310435a369d20cdb857fe81b296d950edde25bb504aa698bdff935f488"
+        },
+        {
+          "line": 13621,
+          "anchor": "Não se trata de revogação dos acordos anteriormente celebrados, nem de convocação militar, nem de imposição de nova sujeição.",
+          "anchor_sha256": "99aae053e6b471602c7ba46db26e321af39e2d47911c2a25934f7e2b7b5d199f"
+        },
+        {
+          "line": 13623,
+          "anchor": "Trata-se de um convite para uma audiência perante a Coroa, em data a ser estabelecida por entendimento entre nossas representações.",
+          "anchor_sha256": "8b5621b7adc1be5bc8bd60bb92fb194475f446ddf675f76fa5b1c5e9536c1ef5"
+        },
+        {
+          "line": 13625,
+          "anchor": "Serão bem-vindos o fundador, sua companheira, caso deseje acompanhá-lo, e representantes que a própria Cidade Livre considere apropriados.",
+          "anchor_sha256": "ec13c7530e93b0ce22c7641a008b76d69ad6d52a1baaea3fd138c2c9f7405a2f"
+        },
+        {
+          "line": 13635,
+          "anchor": "Rainha de Thalor",
+          "anchor_sha256": "515d17839614f204f61a351066a8d71110e3c2c9e785665ff859222968da61b7"
+        }
+      ],
+      "valid_at": "D390",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "thalor",
+      "field": "history",
+      "value": "Convite formal à Cidade Livre reconhecida para tratar comércio, conhecimento, direitos antigos e relações territoriais.",
+      "source": "history/sources/02_DIA_383_A_431_FONTE_LITERAL.txt",
+      "anchors": [
+        {
+          "line": 13619,
+          "anchor": "A Casa Real deseja conhecer diretamente aqueles que transformaram uma antiga região de passagem numa Cidade Livre reconhecida.",
+          "anchor_sha256": "3f716cda4404e35e84eea73a263a94b2cdf41855eb23d24e1d006b2c4b70a472"
+        },
+        {
+          "line": 13623,
+          "anchor": "Trata-se de um convite para uma audiência perante a Coroa, em data a ser estabelecida por entendimento entre nossas representações.",
+          "anchor_sha256": "8b5621b7adc1be5bc8bd60bb92fb194475f446ddf675f76fa5b1c5e9536c1ef5"
+        },
+        {
+          "line": 13627,
+          "anchor": "Há questões sobre comércio, conhecimento, direitos antigos e o futuro das relações entre nossos territórios que merecem ser tratadas pessoalmente.",
+          "anchor_sha256": "44e2bcf4c7ff3f7219434cb223a56179ab8543e9c87f12b55e9a5e2a9df8cb74"
+        }
+      ],
+      "valid_at": "D390",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "vessa",
+      "field": "knowledge",
+      "value": "Especialista em registrar itinerários, trocar informações entre viajantes e interpretar sistemas tradicionais de memória e segurança dos trajetos.",
+      "source": "history/sources/03_DIA_431_A_457_FONTE_LITERAL.txt",
+      "anchors": [
+        {
+          "line": 9700,
+          "anchor": "A mulher se chamava Vessa.",
+          "anchor_sha256": "56a746d09d66233164ecab6b33c7133f50f915933d27b362096e74695c84bc28"
+        },
+        {
+          "line": 9702,
+          "anchor": "Era uma viajante especializada em registrar trajetos de caravanas. Não possuía nenhum cargo na corte de Thalor, não representava uma casa nobre e demonstrava pouco interesse em adquirir prestígio político.",
+          "anchor_sha256": "29ae67d6ca0de5241ec34a96b7a7e5eeafb817cdfd5bcea238e254c293391765"
+        },
+        {
+          "line": 9706,
+          "anchor": "Registrava caminhos.",
+          "anchor_sha256": "15a7eeb2d8561808af1405fbeb41a4a6344e62e4fb498a0b53ffc71a413985ae"
+        },
+        {
+          "line": 9708,
+          "anchor": "Trocava informações com outros viajantes.",
+          "anchor_sha256": "862a2042c05bda2cae5078751832476a3a1e7ca7bd9f4cb2e2d8a017517f9337"
+        },
+        {
+          "line": 11172,
+          "anchor": "VESSA — Em parte. Algumas tradições utilizam esses sistemas para lembrar caminhos. Outras, para ensinar a reconhecer quando um percurso deixa de ser seguro.",
+          "anchor_sha256": "d6750cbc3bc97865f1070c5e11083c509f3ae02290ecdced08e501b3e31fbf16"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "vessa",
+      "field": "inventory",
+      "value": "Recipiente de materiais com fios, cuja ordem de guarda era relevante para diagnosticar danos; não inventário atual.",
+      "source": "history/sources/03_DIA_431_A_457_FONTE_LITERAL.txt",
+      "anchors": [
+        {
+          "line": 9712,
+          "anchor": "Lucas descobriu isso quando tentou ajudá-la a retirar uma caixa da carroça.",
+          "anchor_sha256": "b6a3e2a98bb10ed0995425456ee3ff10fbb7f3cc791f11a21562545237d604cf"
+        },
+        {
+          "line": 9718,
+          "anchor": "VESSA — Preciso saber quais partes estão danificadas. Se levantar tudo ao mesmo tempo, vou perder a ordem em que foram guardadas.",
+          "anchor_sha256": "ec542bfb8212d15f71abdb023f61a9cf4ce9509cc9b294b048aef034df58ffd8"
+        },
+        {
+          "line": 9732,
+          "anchor": "Astra, que acompanhara a conversa, aproximou-se imediatamente quando Vessa abriu o primeiro recipiente.",
+          "anchor_sha256": "cda75f1f9adeb297e42a2cf7a4fc9cd70b780b9ccdd9b344ac394fa0172f9b76"
+        },
+        {
+          "line": 9740,
+          "anchor": "Havia fios.",
+          "anchor_sha256": "ab620397e5f952806b7841dbd916086db767665a54981032642872ce7a412221"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "vessa",
+      "field": "relationships",
+      "value": "Apresentou Miren, Astra e Lucas ao mestre Eren; não representa corte ou casa nobre.",
+      "source": "history/sources/03_DIA_431_A_457_FONTE_LITERAL.txt",
+      "anchors": [
+        {
+          "line": 9702,
+          "anchor": "Era uma viajante especializada em registrar trajetos de caravanas. Não possuía nenhum cargo na corte de Thalor, não representava uma casa nobre e demonstrava pouco interesse em adquirir prestígio político.",
+          "anchor_sha256": "29ae67d6ca0de5241ec34a96b7a7e5eeafb817cdfd5bcea238e254c293391765"
+        },
+        {
+          "line": 11178,
+          "anchor": "A viajante chamou o homem idoso.",
+          "anchor_sha256": "d7cca5ecf1ba4ba6116a82acdad17ecd3ab5354fe6842adf929b538c64bb8c0f"
+        },
+        {
+          "line": 11180,
+          "anchor": "VESSA — Mestre Eren, estas são as pesquisadoras de quem falei. Miren e Astra. E este é Lucas.",
+          "anchor_sha256": "7671db9168ed14b9e353959f1d29a3c2495263f49213a4f3a76d4cd25eb1dcb8"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "eren",
+      "field": "age_apparent",
+      "value": "Descrito como homem idoso no encontro com Vessa e pesquisadores; sem idade numérica.",
+      "source": "history/sources/03_DIA_431_A_457_FONTE_LITERAL.txt",
+      "anchors": [
+        {
+          "line": 11178,
+          "anchor": "A viajante chamou o homem idoso.",
+          "anchor_sha256": "d7cca5ecf1ba4ba6116a82acdad17ecd3ab5354fe6842adf929b538c64bb8c0f"
+        },
+        {
+          "line": 11180,
+          "anchor": "VESSA — Mestre Eren, estas são as pesquisadoras de quem falei. Miren e Astra. E este é Lucas.",
+          "anchor_sha256": "7671db9168ed14b9e353959f1d29a3c2495263f49213a4f3a76d4cd25eb1dcb8"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "eren",
+      "field": "knowledge",
+      "value": "Reconheceu Lucas pelo episódio da carroça e afirmou que três animais se assustaram.",
+      "source": "history/sources/03_DIA_431_A_457_FONTE_LITERAL.txt",
+      "anchors": [
+        {
+          "line": 11180,
+          "anchor": "VESSA — Mestre Eren, estas são as pesquisadoras de quem falei. Miren e Astra. E este é Lucas.",
+          "anchor_sha256": "7671db9168ed14b9e353959f1d29a3c2495263f49213a4f3a76d4cd25eb1dcb8"
+        },
+        {
+          "line": 11186,
+          "anchor": "EREN — Você é o homem da carroça.",
+          "anchor_sha256": "ad904d801a00123c6cbdd71bbf986ad1daa0b61349aedbcc0c6270067d283a05"
+        },
+        {
+          "line": 11194,
+          "anchor": "EREN — Você assustou três dos nossos animais.",
+          "anchor_sha256": "960ff18d556f4789bf46c358fcb6095cdcad192dc798adf5767d11a9382ccbf1"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "eren",
+      "field": "relationships",
+      "value": "Chamado mestre Eren por Vessa, que o apresentou a Miren, Astra e Lucas.",
+      "source": "history/sources/03_DIA_431_A_457_FONTE_LITERAL.txt",
+      "anchors": [
+        {
+          "line": 11178,
+          "anchor": "A viajante chamou o homem idoso.",
+          "anchor_sha256": "d7cca5ecf1ba4ba6116a82acdad17ecd3ab5354fe6842adf929b538c64bb8c0f"
+        },
+        {
+          "line": 11180,
+          "anchor": "VESSA — Mestre Eren, estas são as pesquisadoras de quem falei. Miren e Astra. E este é Lucas.",
+          "anchor_sha256": "7671db9168ed14b9e353959f1d29a3c2495263f49213a4f3a76d4cd25eb1dcb8"
+        }
+      ],
+      "valid_at": null,
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "luren",
+      "field": "equipment",
+      "value": "Couraça removida durante atendimento hospitalar; não indica perda definitiva do equipamento.",
+      "source": "LVI-C03-PIII-D551-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 25,
+          "anchor": "**DIA 551 · 05h19 — HOSPITAL CIVIL, ALA DE OBSERVAÇÃO**",
+          "anchor_sha256": "aad5e119b0fe6a91b7ea3f90738f5df6921cf0731caaa5dd85e05dae5205043d"
+        },
+        {
+          "line": 35,
+          "anchor": "O mundo tinha o cheiro limpo dos corredores novos e um latejar desagradável sob as costelas. A couraça já não estava em seu corpo. No lugar dela havia faixas, proteção clínica e a mão de uma mulher segurando a sua.",
+          "anchor_sha256": "d127563eec3881313af4f23e3d86df3a8021c79e0f0eba532b2ca4dfc63ada69"
+        }
+      ],
+      "valid_at": "D551",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "luren",
+      "field": "history",
+      "value": "Despertou hospitalizado, consciente, orientado e com necessidade de permanecer em observação após lesão torácica.",
+      "source": "LVI-C03-PIII-D551-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 25,
+          "anchor": "**DIA 551 · 05h19 — HOSPITAL CIVIL, ALA DE OBSERVAÇÃO**",
+          "anchor_sha256": "aad5e119b0fe6a91b7ea3f90738f5df6921cf0731caaa5dd85e05dae5205043d"
+        },
+        {
+          "line": 27,
+          "anchor": "A primeira coisa que Luren ouviu ao despertar foi o arrastar de uma cadeira.",
+          "anchor_sha256": "5d8d7fec5820134c5c65e94dd24327944200ded40a9ffcf2ef60763c5feb39c0"
+        },
+        {
+          "line": 35,
+          "anchor": "O mundo tinha o cheiro limpo dos corredores novos e um latejar desagradável sob as costelas. A couraça já não estava em seu corpo. No lugar dela havia faixas, proteção clínica e a mão de uma mulher segurando a sua.",
+          "anchor_sha256": "d127563eec3881313af4f23e3d86df3a8021c79e0f0eba532b2ca4dfc63ada69"
+        },
+        {
+          "line": 77,
+          "anchor": "Reva examinou Luren. Confirmou que continuava consciente, orientado, sem piora aparente da respiração e que ainda precisaria permanecer em observação. Não prometeu alta.",
+          "anchor_sha256": "bb44e351d809a90a191ad1273f5b88a565f1e64247578c0433d330d0b5b753e8"
+        }
+      ],
+      "valid_at": "D551",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "luren",
+      "field": "location",
+      "value": "Hospital Civil, ala de observação às 05h19.",
+      "source": "LVI-C03-PIII-D551-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 25,
+          "anchor": "**DIA 551 · 05h19 — HOSPITAL CIVIL, ALA DE OBSERVAÇÃO**",
+          "anchor_sha256": "aad5e119b0fe6a91b7ea3f90738f5df6921cf0731caaa5dd85e05dae5205043d"
+        },
+        {
+          "line": 27,
+          "anchor": "A primeira coisa que Luren ouviu ao despertar foi o arrastar de uma cadeira.",
+          "anchor_sha256": "5d8d7fec5820134c5c65e94dd24327944200ded40a9ffcf2ef60763c5feb39c0"
+        }
+      ],
+      "valid_at": "D551",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "luren",
+      "field": "knowledge",
+      "value": "Mara informou que a família passou e que o comandante confirmou o resgate.",
+      "source": "LVI-C03-PIII-D551-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 43,
+          "anchor": "**LUREN —** Tinha uma família na estrada.",
+          "anchor_sha256": "5191ec42989b9b61438043f974cbd81cd2d95e1e5fa21b42d6464d2b5ffe9e79"
+        },
+        {
+          "line": 45,
+          "anchor": "**MARA —** Eles passaram. O comandante confirmou. Você ajudou a manter a linha enquanto tiravam as pessoas de lá.",
+          "anchor_sha256": "5de893fca982eb8f9ef2efe68cface1144fadff8c57749ada6bda938140a7dbe"
+        }
+      ],
+      "valid_at": "D551",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "luren",
+      "field": "relationships",
+      "value": "Mara acompanhava sua recuperação e a pequena filha deles estava presente; não atribuir sobrenome a Mara.",
+      "source": "LVI-C04-PV-D558-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 180,
+          "anchor": "No Hospital Civil, Reva examinou Luren, cuja recuperação do tórax prosseguia. Ele podia conversar mais do que nos primeiros dias, mas a vontade de voltar ao serviço ainda não constituía alta médica.",
+          "anchor_sha256": "89aedbbcd3848f151655b85c5cef208da1b82ef4bc7a0c166563d998858d1894"
+        },
+        {
+          "line": 186,
+          "anchor": "Mara segurou a mão dele.",
+          "anchor_sha256": "25303770d9694af527903813d02db11f9cbe553dfcc7dd1493c68dbf1abc2ba4"
+        },
+        {
+          "line": 188,
+          "anchor": "**MARA —** Nem uma frota inteira vai me convencer a deixar você fingir que não dói.",
+          "anchor_sha256": "ad1605205c89db5f5ed8046014294722a38aa15ba91fe2b0807ad8acf5cb67b8"
+        },
+        {
+          "line": 192,
+          "anchor": "A pequena filha deles observava a janela.",
+          "anchor_sha256": "04a93d9333e2248161af47fe808a9931a303edab915da73aac53f1364db68336"
+        },
+        {
+          "line": 194,
+          "anchor": "**FILHA —** O grande avião está indo embora?",
+          "anchor_sha256": "b0686c6c41fb7169134cc11f71bcf1a3854d7f8300ee991a0d99f108ebac5f9a"
+        }
+      ],
+      "valid_at": "D558",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "reva",
+      "field": "history",
+      "value": "Examinou Luren, verificou consciência, orientação e respiração; manteve observação sem alta.",
+      "source": "LVI-C03-PIII-D551-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 67,
+          "anchor": "A doutora Reva apareceu entre as cortinas.",
+          "anchor_sha256": "2138621974ade2f6f2fef3092b74c8cad661cb679f7f4ba88e0a44d0c89f928d"
+        },
+        {
+          "line": 69,
+          "anchor": "**REVA —** Isso serve para os dois. Um não vai rir até machucar o tórax e o outro não vai usar esse braço como se fosse novo. Eu gostaria de trabalhar com pessoas que tenham algum respeito pelos próprios ossos.",
+          "anchor_sha256": "9e566f0c91401f6a123a96e0645b5c8651d43bcef27430b5f087e270f2418f82"
+        },
+        {
+          "line": 77,
+          "anchor": "Reva examinou Luren. Confirmou que continuava consciente, orientado, sem piora aparente da respiração e que ainda precisaria permanecer em observação. Não prometeu alta.",
+          "anchor_sha256": "bb44e351d809a90a191ad1273f5b88a565f1e64247578c0433d330d0b5b753e8"
+        }
+      ],
+      "valid_at": "D551",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "reva",
+      "field": "location",
+      "value": "Hospital Civil, ala de observação, atendendo Luren e Seron.",
+      "source": "LVI-C03-PIII-D551-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 25,
+          "anchor": "**DIA 551 · 05h19 — HOSPITAL CIVIL, ALA DE OBSERVAÇÃO**",
+          "anchor_sha256": "aad5e119b0fe6a91b7ea3f90738f5df6921cf0731caaa5dd85e05dae5205043d"
+        },
+        {
+          "line": 59,
+          "anchor": "Na cama vizinha, Seron ergueu a cabeça do travesseiro.",
+          "anchor_sha256": "db7ebb3d1ee12c54dd9f65b63da2e5bda7658b4c9e656b68c156c05c002c987c"
+        },
+        {
+          "line": 67,
+          "anchor": "A doutora Reva apareceu entre as cortinas.",
+          "anchor_sha256": "2138621974ade2f6f2fef3092b74c8cad661cb679f7f4ba88e0a44d0c89f928d"
+        },
+        {
+          "line": 69,
+          "anchor": "**REVA —** Isso serve para os dois. Um não vai rir até machucar o tórax e o outro não vai usar esse braço como se fosse novo. Eu gostaria de trabalhar com pessoas que tenham algum respeito pelos próprios ossos.",
+          "anchor_sha256": "9e566f0c91401f6a123a96e0645b5c8651d43bcef27430b5f087e270f2418f82"
+        }
+      ],
+      "valid_at": "D551",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "reva",
+      "field": "knowledge",
+      "value": "Identificou necessidade de preservar tórax de Luren e braço imobilizado de Seron; sem alta prometida.",
+      "source": "LVI-C03-PIII-D551-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 61,
+          "anchor": "O braço que fora ferido na Forja estava imobilizado.",
+          "anchor_sha256": "6869b44cd4ac8e4e21d2ff1088d0cd771f42c3e43aee5ae27f9422b4a3e8d1f9"
+        },
+        {
+          "line": 69,
+          "anchor": "**REVA —** Isso serve para os dois. Um não vai rir até machucar o tórax e o outro não vai usar esse braço como se fosse novo. Eu gostaria de trabalhar com pessoas que tenham algum respeito pelos próprios ossos.",
+          "anchor_sha256": "9e566f0c91401f6a123a96e0645b5c8651d43bcef27430b5f087e270f2418f82"
+        },
+        {
+          "line": 77,
+          "anchor": "Reva examinou Luren. Confirmou que continuava consciente, orientado, sem piora aparente da respiração e que ainda precisaria permanecer em observação. Não prometeu alta.",
+          "anchor_sha256": "bb44e351d809a90a191ad1273f5b88a565f1e64247578c0433d330d0b5b753e8"
+        }
+      ],
+      "valid_at": "D551",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "seron",
+      "field": "location",
+      "value": "Leito vizinho de Luren na ala de observação, com braço imobilizado.",
+      "source": "LVI-C03-PIII-D551-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 25,
+          "anchor": "**DIA 551 · 05h19 — HOSPITAL CIVIL, ALA DE OBSERVAÇÃO**",
+          "anchor_sha256": "aad5e119b0fe6a91b7ea3f90738f5df6921cf0731caaa5dd85e05dae5205043d"
+        },
+        {
+          "line": 59,
+          "anchor": "Na cama vizinha, Seron ergueu a cabeça do travesseiro.",
+          "anchor_sha256": "db7ebb3d1ee12c54dd9f65b63da2e5bda7658b4c9e656b68c156c05c002c987c"
+        },
+        {
+          "line": 61,
+          "anchor": "O braço que fora ferido na Forja estava imobilizado.",
+          "anchor_sha256": "6869b44cd4ac8e4e21d2ff1088d0cd771f42c3e43aee5ae27f9422b4a3e8d1f9"
+        }
+      ],
+      "valid_at": "D551",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "rhem",
+      "field": "inventory",
+      "value": "Escudo substituto revisado em reunião no pátio da Legião; posse naquele momento.",
+      "source": "LVI-C03-PIII-D551-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 217,
+          "anchor": "**DIA 551 · 06h48 — PÁTIO DE APOIO DA LEGIÃO**",
+          "anchor_sha256": "caa908c1cc03d15221b5f4578b9680a2453b2922b7ae4626537e4db71fdcb188"
+        },
+        {
+          "line": 229,
+          "anchor": "Círan estava diante de uma mesa com registros de posições verificados. Rhem permanecia ao lado dele, com um escudo substituto revisado na mão.",
+          "anchor_sha256": "33dda29cbfc3eb37e39f68fe5f026812308821ce4a0aa79feee6219ef2b74aea"
+        }
+      ],
+      "valid_at": "D551",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "tavren",
+      "field": "knowledge",
+      "value": "Propôs separar os movimentos de chegada à reunião em quatro grupos para manter segurança.",
+      "source": "LVI-C03-PIII-D551-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 217,
+          "anchor": "**DIA 551 · 06h48 — PÁTIO DE APOIO DA LEGIÃO**",
+          "anchor_sha256": "caa908c1cc03d15221b5f4578b9680a2453b2922b7ae4626537e4db71fdcb188"
+        },
+        {
+          "line": 231,
+          "anchor": "Tavren, Darius, Malrek, Edric e Toran haviam chegado por turnos e estavam discutindo alternativas. Não eram generais recém-nomeados; eram companheiros que haviam conquistado responsabilidade em combates e anos de serviço.",
+          "anchor_sha256": "c2279dec1c9e85db3cd5efa040646d40244f60405445f4580e26ebded4cc192a"
+        },
+        {
+          "line": 233,
+          "anchor": "**TAVREN —** Podemos separar quatro movimentos de chegada. Não precisa vir ninguém pela mesma rua.",
+          "anchor_sha256": "8ec7b6713ec1a63419d63e20b69db5705d47ebfb447874fbc7dd65b7b778260b"
+        }
+      ],
+      "valid_at": "D551",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "bressa",
+      "field": "history",
+      "value": "Trabalhou com Brannik e Sael na peça de ponte anã em isolamento.",
+      "source": "LVI-C04-PV-D558-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 166,
+          "anchor": "**DIA 558 · 06h54 — BASE AURORA E TRÊS ARCOS**",
+          "anchor_sha256": "98f87af89bdb7d153df96a8fba28b37caa3b1a340c741cc7da3ff0c216f36f7b"
+        },
+        {
+          "line": 174,
+          "anchor": "Na Forja, Brannik e Sael voltaram a trabalhar com Bressa; uma das mesas projetava a peça da ponte anã em isolamento, sem permitir que ela se conectasse a nada fora do recinto.",
+          "anchor_sha256": "5bf3fd61759eed4c4d94aca3cb1ee98586b18c1392fd3c08f9a2e9e0670c7772"
+        }
+      ],
+      "valid_at": "D558",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "bressa",
+      "field": "location",
+      "value": "Forja em Três Arcos, investigando a peça isolada enquanto ARGOS partia.",
+      "source": "LVI-C04-PV-D558-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 166,
+          "anchor": "**DIA 558 · 06h54 — BASE AURORA E TRÊS ARCOS**",
+          "anchor_sha256": "98f87af89bdb7d153df96a8fba28b37caa3b1a340c741cc7da3ff0c216f36f7b"
+        },
+        {
+          "line": 174,
+          "anchor": "Na Forja, Brannik e Sael voltaram a trabalhar com Bressa; uma das mesas projetava a peça da ponte anã em isolamento, sem permitir que ela se conectasse a nada fora do recinto.",
+          "anchor_sha256": "5bf3fd61759eed4c4d94aca3cb1ee98586b18c1392fd3c08f9a2e9e0670c7772"
+        }
+      ],
+      "valid_at": "D558",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "bressa",
+      "field": "relationships",
+      "value": "Colaboração experimental com Brannik e Sael.",
+      "source": "LVI-C04-PV-D558-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 174,
+          "anchor": "Na Forja, Brannik e Sael voltaram a trabalhar com Bressa; uma das mesas projetava a peça da ponte anã em isolamento, sem permitir que ela se conectasse a nada fora do recinto.",
+          "anchor_sha256": "5bf3fd61759eed4c4d94aca3cb1ee98586b18c1392fd3c08f9a2e9e0670c7772"
+        }
+      ],
+      "valid_at": "D558",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "neris",
+      "field": "history",
+      "value": "Astra registrou a guarda de fragmento élfico de Neris; amostras permaneciam separadas e a ressonância comum era questão em aberto.",
+      "source": "LVI-C04-PV-D558-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 174,
+          "anchor": "Na Forja, Brannik e Sael voltaram a trabalhar com Bressa; uma das mesas projetava a peça da ponte anã em isolamento, sem permitir que ela se conectasse a nada fora do recinto.",
+          "anchor_sha256": "5bf3fd61759eed4c4d94aca3cb1ee98586b18c1392fd3c08f9a2e9e0670c7772"
+        },
+        {
+          "line": 176,
+          "anchor": "No AERÚN, Astra registrou a guarda do fragmento élfico de Neris. As duas amostras permaneciam separadas. A ressonância comum observada no Dia 556 continuava sendo uma pergunta, não a assinatura confirmada de um inimigo.",
+          "anchor_sha256": "7777cf6a64db4682e5f0a8b2e706c61b3b366540df1081ceb322ad79a46e08b1"
+        }
+      ],
+      "valid_at": "D558",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "egide-dupla",
+      "field": "tests",
+      "value": "Propôs-se ensaio isolado de fragmento, com instrumentos e observadores; expressamente não certificava arquitetura inteira.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 839,
+          "anchor": "**LUCAS —** Um fragmento da Égide Dupla, numa área isolada, com instrumentos e observadores. O escudo atual da cidade permanece inteiro. Nenhum civil será usado como cobaia.",
+          "anchor_sha256": "9341ba2a79ab2625ace88c101cc20e8fdb40895cb0e0ff3e481fa00565695b82"
+        },
+        {
+          "line": 843,
+          "anchor": "**ASTRA —** Um teste delimitado, então. Não uma certificação de toda a arquitetura.",
+          "anchor_sha256": "38d026ea694a870f5d4add4eaac3e767e7c86738b2c8867f4bae0abaeec8963a"
+        },
+        {
+          "line": 845,
+          "anchor": "**SAEL —** Com instrumentos que registrem o que de fato aconteceu.",
+          "anchor_sha256": "58e366960698dfc3a7d94ff5605f49888af983631ea7ed41de3d8dd2a44b7ace"
+        },
+        {
+          "line": 847,
+          "anchor": "**VARO —** E com segurança de campo.",
+          "anchor_sha256": "0d892381cc6f2b35fe9c78ec96c6cd3ed0bad0e6a517462d2c1eddcdfee31486"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "muralha-viva",
+      "field": "design",
+      "value": "Projeto de superfície arcano-metálica capaz de recompor-se, adaptada a defesas existentes; não mercúrio tóxico.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 513,
+          "anchor": "A muralha projetada apareceu como uma extensão das defesas existentes, nunca como substituição da cidade sem estudo.",
+          "anchor_sha256": "ff7aba272561881769a1a1dfe2ca28cb85d61d5a8642ededab50dfd7977f3f27"
+        },
+        {
+          "line": 515,
+          "anchor": "A primeira tecnologia chamava-se **Muralha Viva**: uma superfície arcano-metálica capaz de absorver impactos, dispersar forças hostis e recuperar sua forma. Não era mercúrio verdadeiro correndo por rios; era uma matéria criada por GÊNESE, concebida para não envenenar o solo nem destruir as próprias fundações.",
+          "anchor_sha256": "8fffb57ae28babff3ce3e9f5a7ee1f3f366723aaab87ee77d0a2c1a19c8f3d69"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "muralha-viva",
+      "field": "material",
+      "value": "Matéria criada por GÊNESE para não envenenar solo ou destruir fundações, distinta de mercúrio verdadeiro.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 515,
+          "anchor": "A primeira tecnologia chamava-se **Muralha Viva**: uma superfície arcano-metálica capaz de absorver impactos, dispersar forças hostis e recuperar sua forma. Não era mercúrio verdadeiro correndo por rios; era uma matéria criada por GÊNESE, concebida para não envenenar o solo nem destruir as próprias fundações.",
+          "anchor_sha256": "8fffb57ae28babff3ce3e9f5a7ee1f3f366723aaab87ee77d0a2c1a19c8f3d69"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "muralha-viva",
+      "field": "history",
+      "value": "Reforço arcano-metálico implantado ao longo da muralha existente, preservando portas e passagens.",
+      "source": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 578,
+          "anchor": "**DIA 555 · 10h56 — PERÍMETRO DE TRÊS ARCOS**",
+          "anchor_sha256": "94431ce7e42c7245e57b46c51f44ce28438f697703ce39015426cd0e92ef9af1"
+        },
+        {
+          "line": 586,
+          "anchor": "A **Muralha Viva** acompanhou as estruturas existentes, reforçando-as com matéria arcano-metálica capaz de se recompor após danos. As portas da cidade permaneceram portas. Suas passagens não desapareceram quando o metal se moveu.",
+          "anchor_sha256": "c17646e9275ab27e483658b8d64db0bbd9ca0cdab059d3306fdead523635af3d"
+        }
+      ],
+      "valid_at": "D555",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "muralha-viva",
+      "field": "limits",
+      "value": "Portas e passagens permanecem livres; recomposição não transforma a cidade em recinto sem saída.",
+      "source": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 586,
+          "anchor": "A **Muralha Viva** acompanhou as estruturas existentes, reforçando-as com matéria arcano-metálica capaz de se recompor após danos. As portas da cidade permaneceram portas. Suas passagens não desapareceram quando o metal se moveu.",
+          "anchor_sha256": "c17646e9275ab27e483658b8d64db0bbd9ca0cdab059d3306fdead523635af3d"
+        }
+      ],
+      "valid_at": "D555",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "tridente-runico",
+      "field": "limits",
+      "value": "Disparos dependem de identificação; rede orbital é apenas possibilidade futura, não testada.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 519,
+          "anchor": "**LUCAS —** Estas seriam as torres do **Tridente Rúnico**. A artilharia terrestre teria alcance e poder que o continente não conhece. Quero armas de precisão para impedir que engenhos como o Selo Oco se aproximem da cidade. O comando poderá operar de salas protegidas, pela rede, sem colocar soldados expostos em cada parapeito.",
+          "anchor_sha256": "cc64afed7b5dd64e7f48646a5cb07b075d8fe1887fb5fa331f83e9c1d6928324"
+        },
+        {
+          "line": 523,
+          "anchor": "**VARO —** Elas não podem tratar toda pessoa vista fora da muralha como inimigo.",
+          "anchor_sha256": "5c9201c9cd1a35258b6f686ee0ae2cd9168efea53861ad6abbe9d68b14852af0"
+        },
+        {
+          "line": 527,
+          "anchor": "**LUCAS —** Capacidade de neutralização extrema, sim. Disparo sem identificação, não. A cidade tem estradas, camponeses e viajantes.",
+          "anchor_sha256": "f12170484b08d863e949cd4ae7acf1a4c2862a990d9db1512b34878ebc45864e"
+        },
+        {
+          "line": 535,
+          "anchor": "**LUCAS —** Estou falando de uma possibilidade futura. Posso conceber a estrutura com GÊNESE, mas não vou fingir que já existe uma rede orbital testada, com controle e segurança. Hoje estamos olhando a ideia.",
+          "anchor_sha256": "c36f41afa74599a56b936d04b038d1060494f1b343c9dd4c1815dd53c7e85b0a"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "tridente-runico",
+      "field": "history",
+      "value": "Torres erguidas em posições aprovadas no perímetro, com câmaras protegidas de controle.",
+      "source": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 578,
+          "anchor": "**DIA 555 · 10h56 — PERÍMETRO DE TRÊS ARCOS**",
+          "anchor_sha256": "94431ce7e42c7245e57b46c51f44ce28438f697703ce39015426cd0e92ef9af1"
+        },
+        {
+          "line": 584,
+          "anchor": "Cada uma possuía uma base de absorção de impacto, canais de energia e uma câmara de controle que não exigia deixar operadores expostos sobre os parapeitos.",
+          "anchor_sha256": "6b8e8b62c96b4ac8830e7979c4f88e43929cc73ef58e8548c8c901cc2450f9d2"
+        },
+        {
+          "line": 588,
+          "anchor": "As coroas do **Tridente Rúnico** ergueram-se nas posições aprovadas para defesa perimetral.",
+          "anchor_sha256": "ec0d081e09f02c0f5829758de66b62ed45a6916deddec814a2b34f3965dfd09e"
+        }
+      ],
+      "valid_at": "D555",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "tridente-runico",
+      "field": "location",
+      "value": "Perímetro de Três Arcos, posições aprovadas.",
+      "source": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 578,
+          "anchor": "**DIA 555 · 10h56 — PERÍMETRO DE TRÊS ARCOS**",
+          "anchor_sha256": "94431ce7e42c7245e57b46c51f44ce28438f697703ce39015426cd0e92ef9af1"
+        },
+        {
+          "line": 588,
+          "anchor": "As coroas do **Tridente Rúnico** ergueram-se nas posições aprovadas para defesa perimetral.",
+          "anchor_sha256": "ec0d081e09f02c0f5829758de66b62ed45a6916deddec814a2b34f3965dfd09e"
+        }
+      ],
+      "valid_at": "D555",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "sol-feerico",
+      "field": "design",
+      "value": "Baterias antiaéreas de energia solar e magia de fogo, para ameaças identificadas.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 537,
+          "anchor": "A seguir vieram as baterias **Sol Feérico**: torres antiaéreas que reuniriam energia solar e magia de fogo para interceptar ameaças voadoras identificadas, sem transformar cada ave, aeronave civil ou criatura desconhecida em alvo automático.",
+          "anchor_sha256": "1a0830633f491ac7d2a09da5baef336cd6a04ebfe8fb1c9807bc6de46fdffaca"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "sol-feerico",
+      "field": "limits",
+      "value": "Não classificar automaticamente aves, aeronaves civis ou criaturas desconhecidas; confirmação humana.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 537,
+          "anchor": "A seguir vieram as baterias **Sol Feérico**: torres antiaéreas que reuniriam energia solar e magia de fogo para interceptar ameaças voadoras identificadas, sem transformar cada ave, aeronave civil ou criatura desconhecida em alvo automático.",
+          "anchor_sha256": "1a0830633f491ac7d2a09da5baef336cd6a04ebfe8fb1c9807bc6de46fdffaca"
+        },
+        {
+          "line": 541,
+          "anchor": "**ASTRA —** Precisaremos de confirmação humana, especialmente diante de formas de vida que não conhecemos.",
+          "anchor_sha256": "19aff24a12f250b214642b88cbc82178be6f0d8096077714e6502f14affb36db"
+        },
+        {
+          "line": 543,
+          "anchor": "**LUCAS —** Concordo. E um modo de inutilizar uma máquina sem atravessá-la com um disparo, quando houver possibilidade.",
+          "anchor_sha256": "27f9155e453c53c86e2a049e437beb4bb03122b0d15dea3213361c31e09fdd29"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "sol-feerico",
+      "field": "history",
+      "value": "Baterias implantadas nas plataformas superiores para ameaças aéreas confirmadas.",
+      "source": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 578,
+          "anchor": "**DIA 555 · 10h56 — PERÍMETRO DE TRÊS ARCOS**",
+          "anchor_sha256": "94431ce7e42c7245e57b46c51f44ce28438f697703ce39015426cd0e92ef9af1"
+        },
+        {
+          "line": 592,
+          "anchor": "Nas plataformas mais altas, baterias **Sol Feérico** abriram pétalas de metal luminoso para interceptar ameaças aéreas confirmadas.",
+          "anchor_sha256": "15e72b140dc4320eaa2655a2c579470a80ee4b5db3e36b47c33204633e441220"
+        }
+      ],
+      "valid_at": "D555",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "anel-cronos",
+      "field": "design",
+      "value": "Campos localizados de gravidade e desaceleração temporal concebidos para engenhos de cerco.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 545,
+          "anchor": "A última prancha daquela sequência abriu um círculo ao redor das muralhas: o **Anel de Cronos**, campos localizados de gravidade e desaceleração temporal pensados para deter engenhos de cerco, não para aprisionar indiscriminadamente grupos inteiros.",
+          "anchor_sha256": "15061825061c44e3f8d837e1eebc41c3609b031c2a08643266305f86b422668d"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "anel-cronos",
+      "field": "limits",
+      "value": "Não aprisionar indiscriminadamente; manter rotas de rendição e retirada.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 545,
+          "anchor": "A última prancha daquela sequência abriu um círculo ao redor das muralhas: o **Anel de Cronos**, campos localizados de gravidade e desaceleração temporal pensados para deter engenhos de cerco, não para aprisionar indiscriminadamente grupos inteiros.",
+          "anchor_sha256": "15061825061c44e3f8d837e1eebc41c3609b031c2a08643266305f86b422668d"
+        },
+        {
+          "line": 547,
+          "anchor": "**VARO —** Quero rotas de rendição e retirada até nessas zonas.",
+          "anchor_sha256": "1f885e3de04022c7e8c838752d4e1324a7d948f5593b385331a6471d6527d9ae"
+        },
+        {
+          "line": 549,
+          "anchor": "**LUCAS —** Teremos.",
+          "anchor_sha256": "1dda7f67c9c97a983695e73d241222f1709d8fde7914d574f5e1bd011cc3891e"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "anel-cronos",
+      "field": "tests",
+      "value": "Em arena sem pessoas ou animais expostos, desacelerou engenho inerte até parar; área selecionada por Varo.",
+      "source": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 852,
+          "anchor": "**DIA 555 · 14h06 — ZONA DE ENSAIO DA BASE AURORA**",
+          "anchor_sha256": "295943e224e8cd855cd166c908b47b641794fd3f63f6870bb8beb85ea7512152"
+        },
+        {
+          "line": 856,
+          "anchor": "O cenário de teste surgia apenas depois de confirmada a ausência de pessoas e animais dentro da área controlada. O sistema não escolheria sozinho um inimigo em território civil.",
+          "anchor_sha256": "2de246f40141a5ee32851e1aec1105d7e64bbd3e589bf76f34b7a3a0e91796b0"
+        },
+        {
+          "line": 864,
+          "anchor": "O **Anel de Cronos** criava pequenas zonas de alteração gravitacional e desaceleração para deter veículos simulados, com passagem de resgate livre.",
+          "anchor_sha256": "d5bb137fd7f469a104e619ecfefc47cb55a4137698de1fb593d80f99902dd0c5"
+        },
+        {
+          "line": 874,
+          "anchor": "Varo escolheu a área de intercepção.",
+          "anchor_sha256": "4a9250983efb2b5e3c2de6bcd3d488fe67d6ebfa794eb6116c7ce7349c25b7ad"
+        },
+        {
+          "line": 876,
+          "anchor": "O Anel de Cronos se abriu sob o engenho de teste.",
+          "anchor_sha256": "055f39b73a35e883f7fbebb5aa3d43795ed44b3bb4107b58bfcecabcac576822"
+        },
+        {
+          "line": 878,
+          "anchor": "A máquina desacelerou até imobilizar-se, sem atingir os observadores.",
+          "anchor_sha256": "053570871976a28b508b09ee2b42ff85bb811c3be9965d22932de48a86ea85e5"
+        }
+      ],
+      "valid_at": "D555",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "raizes-pedra",
+      "field": "design",
+      "value": "Observação sísmica, contenção e isolamento subterrâneo; magma era hipótese sujeita a estudo geológico, não implantação.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 567,
+          "anchor": "Linhas prateadas acompanharam fundações, aquíferos e túneis representados somente onde levantamentos existiam. Nos setores desconhecidos, a projeção mostrava espaços vazios, sem fingir cartografia que ninguém fizera.",
+          "anchor_sha256": "b86bcd680ac73c19062a428e4e46a8ebba2ea5217051601bf75ba941926c5096"
+        },
+        {
+          "line": 571,
+          "anchor": "Surgiu o projeto **Raízes de Pedra**: observação sísmica, contenção de cavidades perigosas, barreiras de matéria regenerativa e isolamento de ameaças subterrâneas. Lucas também desenhara possibilidades extremas envolvendo calor magmático em zonas exteriores, mas separara essa hipótese como uma alternativa que exigiria estudo geológico rigoroso, jamais despejo de magma sob casas habitadas.",
+          "anchor_sha256": "0ed52fc7377c3af05e33ecc452a757709dc611df6468c5fd535962e14a2c9097"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "raizes-pedra",
+      "field": "history",
+      "value": "Rede sísmica e reforço de túneis e fundações apenas em geografia conhecida.",
+      "source": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 800,
+          "anchor": "**DIA 555 · 13h09 — TRÊS ARCOS, BASE AURORA E SUBSOLO**",
+          "anchor_sha256": "2ee7f4088a6442470820395d0dea15ae51e22c28cf4995c2f7d5ab49674c0cbc"
+        },
+        {
+          "line": 810,
+          "anchor": "Sob as ruas, **Raízes de Pedra** formaram uma rede de detecção e contenção sísmica. Túneis e fundações receberam reforços onde a geografia era conhecida, sem declarar cavernas inexistentes em regiões que ninguém explorara.",
+          "anchor_sha256": "988a93e22448b53449b4a3ab4653bdfe0c4c773901217086edbd2027a8c84ee5"
+        }
+      ],
+      "valid_at": "D555",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "raizes-pedra",
+      "field": "limits",
+      "value": "Não declarar cavernas nem reforços em regiões não exploradas.",
+      "source": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 810,
+          "anchor": "Sob as ruas, **Raízes de Pedra** formaram uma rede de detecção e contenção sísmica. Túneis e fundações receberam reforços onde a geografia era conhecida, sem declarar cavernas inexistentes em regiões que ninguém explorara.",
+          "anchor_sha256": "988a93e22448b53449b4a3ab4653bdfe0c4c773901217086edbd2027a8c84ee5"
+        }
+      ],
+      "valid_at": "D555",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "ancoras-limiar",
+      "field": "design",
+      "value": "Projeto próprio de proteção contra acessos dimensionais hostis, distinto da rede ancestral e dos futuros portais consentidos.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 581,
+          "anchor": "Em seguida vieram as **Âncoras do Limiar**: estruturas capazes de negar fendas hostis, invocações não autorizadas e atalhos planares para dentro de setores protegidos.",
+          "anchor_sha256": "a4caf15a25c7141404ba3813402efe50e4e0f13e4bfe3f3adbc86a5c52fffcb1"
+        },
+        {
+          "line": 585,
+          "anchor": "**ASTRA —** Isso precisa ser distinguido da antiga rede dos Arquitetos. Também não significa que tenhamos descoberto como ela funciona.",
+          "anchor_sha256": "414c2945283c12ddf3f8ace05f7d2cdd91e669bad1d118236d7a32d07b307bc9"
+        },
+        {
+          "line": 587,
+          "anchor": "**LUCAS —** Perfeitamente. Estes seriam mecanismos meus, criados do zero. Os futuros Portais do Horizonte, se os desenvolvermos, são outro assunto: transporte consentido, não uma porta de invasão.",
+          "anchor_sha256": "cdef2f62e34550b26aec6f49ac4261ec8cc806c3860cb3d799e6b35bdf58c271"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "ancoras-limiar",
+      "field": "limits",
+      "value": "Preservar pesquisa legítima em zonas com protocolos institucionais.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 591,
+          "anchor": "**MIREN —** Quero que nenhuma âncora interfira em pesquisa legítima só porque o laboratório está estudando uma anomalia.",
+          "anchor_sha256": "1af146ad22cffec8d161ff9de02612f3951cf89af291347940dd3d3a848e6bd4"
+        },
+        {
+          "line": 593,
+          "anchor": "Lucas alterou a projeção, acrescentando zonas de pesquisa com protocolos próprios.",
+          "anchor_sha256": "52de7528184fb1ee19884eaddcc402481b342da3ad7535639915bde206c84b83"
+        },
+        {
+          "line": 595,
+          "anchor": "**LUCAS —** Autorização institucional, sem abrir brechas para ataques externos.",
+          "anchor_sha256": "6b1db378f222136bba8577ed6c24a8f37cffcd9c83d0fe6cef3f4d7981c83db7"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "ancoras-limiar",
+      "field": "history",
+      "value": "Proteção dimensional implantada nas bordas do território sem reativar a rede dos Arquitetos.",
+      "source": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 800,
+          "anchor": "**DIA 555 · 13h09 — TRÊS ARCOS, BASE AURORA E SUBSOLO**",
+          "anchor_sha256": "2ee7f4088a6442470820395d0dea15ae51e22c28cf4995c2f7d5ab49674c0cbc"
+        },
+        {
+          "line": 812,
+          "anchor": "Nas bordas do território, **Âncoras do Limiar** passaram a proteger acessos dimensionais contra invasões hostis. Seus mecanismos não reativaram a antiga rede dos Arquitetos; eram criações próprias e independentes de Lucas.",
+          "anchor_sha256": "1978cfdd14f8ff25e38606077d6a7ab9e9253b525c08c6a18ec4ead4864cb2df"
+        }
+      ],
+      "valid_at": "D555",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "coracoes-reserva",
+      "field": "design",
+      "value": "Unidades de energia arcana distribuída, com compartimentos isoláveis.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 597,
+          "anchor": "No centro subterrâneo surgiu a proposta **Corações de Reserva**: unidades de energia arcana distribuída, com compartimentos que poderiam se isolar em caso de falha. A GÊNESE plena de Lucas não dependeria delas; sua função seria permitir que sistemas autônomos continuassem trabalhando sem solicitar a presença do Criador a cada instante.",
+          "anchor_sha256": "23b6f1f704b01838a886bb99ad7fcfd67cfeddde9a5722705fde4d84e3b7d840"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "coracoes-reserva",
+      "field": "limits",
+      "value": "GÊNESE de Lucas independe das unidades; isolamento físico precede evacuação dimensional não verificada.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 597,
+          "anchor": "No centro subterrâneo surgiu a proposta **Corações de Reserva**: unidades de energia arcana distribuída, com compartimentos que poderiam se isolar em caso de falha. A GÊNESE plena de Lucas não dependeria delas; sua função seria permitir que sistemas autônomos continuassem trabalhando sem solicitar a presença do Criador a cada instante.",
+          "anchor_sha256": "23b6f1f704b01838a886bb99ad7fcfd67cfeddde9a5722705fde4d84e3b7d840"
+        },
+        {
+          "line": 599,
+          "anchor": "**MIREN —** Não vamos chamar a evacuação dimensional de um núcleo de “segura” antes de saber para onde ele iria.",
+          "anchor_sha256": "9145dd9e1d17a5a32ca0da23b78cff2a9817d7d68e112f5e9b39faf1d4d2b411"
+        },
+        {
+          "line": 601,
+          "anchor": "**LUCAS —** Certo. Isolamento físico primeiro. Outras opções, só quando forem verificadas.",
+          "anchor_sha256": "bf178fae0db9e4917bc978d6ba263db9a2cf1a0b897490729f3ac462b0203b11"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "coracoes-reserva",
+      "field": "history",
+      "value": "Alimentação distribuída entre setores com isolamento físico demonstrado para falhas locais.",
+      "source": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 800,
+          "anchor": "**DIA 555 · 13h09 — TRÊS ARCOS, BASE AURORA E SUBSOLO**",
+          "anchor_sha256": "2ee7f4088a6442470820395d0dea15ae51e22c28cf4995c2f7d5ab49674c0cbc"
+        },
+        {
+          "line": 816,
+          "anchor": "Nos centros de energia, **Corações de Reserva** distribuíram alimentação arcana entre setores, com isolamento físico demonstrado para falhas locais. Lucas não dependia deles para manter GÊNESE plena; a rede existia para que as pessoas não precisassem chamá-lo para acender cada luz.",
+          "anchor_sha256": "f0c909237de5831c2e1241dff6807dd51018b65bc84afc67bd876191a55e69b2"
+        }
+      ],
+      "valid_at": "D555",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "coracoes-reserva",
+      "field": "tests",
+      "value": "Demonstração de isolamento físico em falhas locais, sem prova de evacuação dimensional.",
+      "source": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 816,
+          "anchor": "Nos centros de energia, **Corações de Reserva** distribuíram alimentação arcana entre setores, com isolamento físico demonstrado para falhas locais. Lucas não dependia deles para manter GÊNESE plena; a rede existia para que as pessoas não precisassem chamá-lo para acender cada luz.",
+          "anchor_sha256": "f0c909237de5831c2e1241dff6807dd51018b65bc84afc67bd876191a55e69b2"
+        }
+      ],
+      "valid_at": "D555",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "oraculo-aurora",
+      "field": "design",
+      "value": "Rede não consciente de máquinas, observadores e registros para apoio, não substituição, de comandantes.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 625,
+          "anchor": "Era uma rede de máquinas não conscientes, observadores, registros e canais de comunicação verificáveis, capazes de apoiar comandantes sem substituí-los.",
+          "anchor_sha256": "cdc0f19f802cac40cbd0c98c665376cdda874364fbc5895b3b33c64fe2792efa"
+        },
+        {
+          "line": 627,
+          "anchor": "O primeiro sistema chamava-se **Oráculo de Aurora**.",
+          "anchor_sha256": "7f197724c299a723e27c6f9236cfd898f8905f1142d0a4d5207fea0ad508d9db"
+        },
+        {
+          "line": 629,
+          "anchor": "Na projeção, mapas mostravam probabilidades de movimento, leituras arcanas, condições climáticas e padrões observados. Havia possibilidades de integração com videntes voluntários, jamais mantidos em estase compulsória. Mesmo uma leitura extraordinária não seria tratada como uma visão infalível de todos os futuros.",
+          "anchor_sha256": "990d292d15533c99c6eaa7459ab1452aaebba53790203b3e6775ca6a11831535"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "oraculo-aurora",
+      "field": "limits",
+      "value": "Probabilidades não infalíveis; videntes voluntários; alerta não autoriza execução.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 629,
+          "anchor": "Na projeção, mapas mostravam probabilidades de movimento, leituras arcanas, condições climáticas e padrões observados. Havia possibilidades de integração com videntes voluntários, jamais mantidos em estase compulsória. Mesmo uma leitura extraordinária não seria tratada como uma visão infalível de todos os futuros.",
+          "anchor_sha256": "990d292d15533c99c6eaa7459ab1452aaebba53790203b3e6775ca6a11831535"
+        },
+        {
+          "line": 633,
+          "anchor": "**SÉVERO —** Se um aparelho disser que uma rua estará sob ataque amanhã e nenhuma testemunha confirmar, o que acontecerá?",
+          "anchor_sha256": "51642e9324ad86ec74908478e9cf6c86c5050840f56d7bfbb2213a9d5bc72787"
+        },
+        {
+          "line": 635,
+          "anchor": "**LUCAS —** Ele alertará. Não ordenará uma execução.",
+          "anchor_sha256": "6b7b9f1afd8c45ca1893a6d816440b03bb6c41bb1a343b670fd3bfde68510567"
+        },
+        {
+          "line": 637,
+          "anchor": "**VARO —** E o comandante decidirá como proteger sem provocar pânico desnecessário.",
+          "anchor_sha256": "0edc47c9eec0f03f21b2f6a258314a406dcdc3cd3dc4af74034a0fed68ee419a"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "oraculo-aurora",
+      "field": "tests",
+      "value": "Indicou trajetória provável de engenho inerte; Tavren confirmou e Varo decidiu a área.",
+      "source": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 852,
+          "anchor": "**DIA 555 · 14h06 — ZONA DE ENSAIO DA BASE AURORA**",
+          "anchor_sha256": "295943e224e8cd855cd166c908b47b641794fd3f63f6870bb8beb85ea7512152"
+        },
+        {
+          "line": 860,
+          "anchor": "O **Oráculo de Aurora** acompanhava padrões, probabilidades e sinais observados. Não lia todos os futuros; produzia hipóteses que os comandantes podiam contestar.",
+          "anchor_sha256": "43c0aa309c2ad42bd5bb824f04a4295dbb0c9516bb1fbdf2195eb29c23353ba5"
+        },
+        {
+          "line": 868,
+          "anchor": "Uma estrutura de cerco inerte avançou sobre a arena.",
+          "anchor_sha256": "6e8e31e8736685534d33d4fb247f03b534f4f504a2c5998ac78c9e426d75b1e9"
+        },
+        {
+          "line": 870,
+          "anchor": "O Oráculo avisou a trajetória provável com base nos sensores.",
+          "anchor_sha256": "c08185da9ccd1d81bac4e7bacd4d8be2caa4723299590d613fd54513d6833ba9"
+        },
+        {
+          "line": 872,
+          "anchor": "Tavren confirmou.",
+          "anchor_sha256": "f6704d76c051c2347363cbc6fabee132226ca5ac63beb4ca3ba32e2ec74a10cf"
+        },
+        {
+          "line": 874,
+          "anchor": "Varo escolheu a área de intercepção.",
+          "anchor_sha256": "4a9250983efb2b5e3c2de6bcd3d488fe67d6ebfa794eb6116c7ce7349c25b7ad"
+        }
+      ],
+      "valid_at": "D555",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "malha-dissipacao",
+      "field": "design",
+      "value": "Sensores e torres de contramágica para perceber e desfazer feitiços hostis.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 639,
+          "anchor": "Logo surgiu a **Malha de Dissipação**: sensores e torres de contramágica destinados a perceber e desfazer estruturas hostis de feitiços no espaço protegido, sem interromper curas, artes ou práticas religiosas legítimas.",
+          "anchor_sha256": "f5a64227ea12d8febaaa2dd8e906f7a8d9ce85eb5464b9da05cb2d15b6049a63"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "malha-dissipacao",
+      "field": "limits",
+      "value": "Não interromper curas, artes ou práticas religiosas legítimas.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 639,
+          "anchor": "Logo surgiu a **Malha de Dissipação**: sensores e torres de contramágica destinados a perceber e desfazer estruturas hostis de feitiços no espaço protegido, sem interromper curas, artes ou práticas religiosas legítimas.",
+          "anchor_sha256": "f5a64227ea12d8febaaa2dd8e906f7a8d9ce85eb5464b9da05cb2d15b6049a63"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "malha-dissipacao",
+      "field": "history",
+      "value": "Conectada aos sensores de magia durante implantação perimetral.",
+      "source": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 578,
+          "anchor": "**DIA 555 · 10h56 — PERÍMETRO DE TRÊS ARCOS**",
+          "anchor_sha256": "94431ce7e42c7245e57b46c51f44ce28438f697703ce39015426cd0e92ef9af1"
+        },
+        {
+          "line": 590,
+          "anchor": "Abaixo delas, a **Malha de Dissipação** foi conectada aos sensores de magia, destinada a interromper feitiços hostis identificados sem bloquear cura, estudo e práticas legítimas.",
+          "anchor_sha256": "3a59f5411a60abeda8af7f52758476713c9dfe096cf6beb167e96a5a51f3067c"
+        }
+      ],
+      "valid_at": "D555",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "veu-ruptura",
+      "field": "limits",
+      "value": "Retirada expressa de sofrimento mental punitivo; não causar dor a quem apenas tenta perceber a cidade.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 641,
+          "anchor": "A terceira proposta era o **Véu de Ruptura**, uma contramedida de guerra arcana capaz de desorganizar a orientação de máquinas hostis e neutralizar focos de ataque. Lucas eliminou da versão a ideia de provocar sofrimento mental como forma de punição.",
+          "anchor_sha256": "751d0877259eb17b419355a814dd9ec0529f75d15bff0533c9324bd04975e67e"
+        },
+        {
+          "line": 645,
+          "anchor": "**NIXA —** Quero ferramentas para impedir um inimigo de nos atingir. Não uma desculpa para causar dor em alguém que apenas tentou perceber a cidade.",
+          "anchor_sha256": "fe025c32bf85b1ba4091e976c2f2eee84c8a4a1aa35bd18df1c3242e9e0c814b"
+        },
+        {
+          "line": 647,
+          "anchor": "Lucas concordou.",
+          "anchor_sha256": "5cf3f67608303048c235a047c2ad2a79dc7307d9401bc0d794170fe1562610da"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "veu-ruptura",
+      "field": "tests",
+      "value": "Desorganizou foco hostil desativado de peça de demonstração isolada por Sael.",
+      "source": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 852,
+          "anchor": "**DIA 555 · 14h06 — ZONA DE ENSAIO DA BASE AURORA**",
+          "anchor_sha256": "295943e224e8cd855cd166c908b47b641794fd3f63f6870bb8beb85ea7512152"
+        },
+        {
+          "line": 862,
+          "anchor": "O **Véu de Ruptura** interrompia dispositivos hostis mediante contramedidas arcanas, não causando sofrimento mental a um mago apenas por tentar perceber a cidade.",
+          "anchor_sha256": "122517cca0ae7c5d80d48e82ad3c4ed8b90899f6d8b3cb9db82c1ffa0bb87aa3"
+        },
+        {
+          "line": 880,
+          "anchor": "Em outro setor, o Véu de Ruptura desorganizou o foco hostil desativado de uma peça de demonstração, isolada por Sael.",
+          "anchor_sha256": "fdcd7c5cbf450a1a7d7aa13785de0b984a53f5c998467a28314e396f8a8c5bd8"
+        }
+      ],
+      "valid_at": "D555",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "veu-mil-horizontes",
+      "field": "design",
+      "value": "Camuflagem ilusória e holográfica de recursos militares, com alvos falsos longe de pessoas.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 649,
+          "anchor": "A projeção seguinte mostrou o **Véu de Mil Horizontes**: camuflagem ilusória e holográfica para ocultar recursos militares e criar alvos falsos longe de pessoas, sem desorientar rotas civis.",
+          "anchor_sha256": "13e8680bf24a09d71a4d5e1fe352e396105b0151748b7d30770e6d345098eee8"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "veu-mil-horizontes",
+      "field": "history",
+      "value": "Camuflagem instalada em zonas militares sem enganar viajantes rumo aos portões públicos.",
+      "source": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 800,
+          "anchor": "**DIA 555 · 13h09 — TRÊS ARCOS, BASE AURORA E SUBSOLO**",
+          "anchor_sha256": "2ee7f4088a6442470820395d0dea15ae51e22c28cf4995c2f7d5ab49674c0cbc"
+        },
+        {
+          "line": 814,
+          "anchor": "Ao redor das zonas militares, o **Véu de Mil Horizontes** permitiu que estruturas estratégicas se camuflassem sem enganar viajantes que precisassem encontrar os portões públicos.",
+          "anchor_sha256": "a557d969dcdd43ddc0bfb8ce4089ab1ba861dc5e657f36376d748bdffdb2780c"
+        }
+      ],
+      "valid_at": "D555",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "veu-mil-horizontes",
+      "field": "limits",
+      "value": "Preservar orientação de viajantes e rotas civis.",
+      "source": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 814,
+          "anchor": "Ao redor das zonas militares, o **Véu de Mil Horizontes** permitiu que estruturas estratégicas se camuflassem sem enganar viajantes que precisassem encontrar os portões públicos.",
+          "anchor_sha256": "a557d969dcdd43ddc0bfb8ce4089ab1ba861dc5e657f36376d748bdffdb2780c"
+        }
+      ],
+      "valid_at": "D555",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "canto-vigilia",
+      "field": "design",
+      "value": "Ressonância sônica e psíquica dirigida a ações hostis; interromper funcionamento quando ameaçar inocentes.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 651,
+          "anchor": "A última dessa série era o **Canto de Vigília**: ressonância sônica e psíquica direcionada à interrupção de ações hostis, com interrupção de funcionamento quando ameaçasse moradores ou civis inocentes.",
+          "anchor_sha256": "e295a4d78127827ac76c2cb1c93abb044bec65d3790b8ca544fb2dd359c147d2"
+        },
+        {
+          "line": 655,
+          "anchor": "**ASTRA —** Gostaria de estudar os limites dessas assinaturas de maneira separada. O eco de Selen era um exemplo de percepção manipulada; não podemos usar uma defesa psicológica sem saber o que causa.",
+          "anchor_sha256": "09ed332b7e886e11f70c9ac049919f699bef490f1d8519c60df08f32b5a8d97b"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "canto-vigilia",
+      "field": "limits",
+      "value": "Configuração protetiva dirigida, sem ondas de pânico sobre bairros inteiros.",
+      "source": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 852,
+          "anchor": "**DIA 555 · 14h06 — ZONA DE ENSAIO DA BASE AURORA**",
+          "anchor_sha256": "295943e224e8cd855cd166c908b47b641794fd3f63f6870bb8beb85ea7512152"
+        },
+        {
+          "line": 866,
+          "anchor": "O **Canto de Vigília** permanecia numa configuração protetiva dirigida, sem ondas de pânico lançadas sobre bairros inteiros.",
+          "anchor_sha256": "dfb3b7e51d9388267137cf491d57288007b522350fc6fa591ff1227b261f3df9"
+        }
+      ],
+      "valid_at": "D555",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "sentinelas-ebano",
+      "field": "design",
+      "value": "Autômatos de matéria escura, sem consciência, distintos de legionários e de NÓX.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 679,
+          "anchor": "Sob plataformas de defesa surgiram grandes autômatos de matéria escura, com couraças móveis e braços capazes de carregar equipamentos de resgate ou enfrentar engenhos hostis.",
+          "anchor_sha256": "397f9293be2a038c30e47d91e8e49d8f891ad96e0a80124dee03d5ec6efc4e2a"
+        },
+        {
+          "line": 681,
+          "anchor": "**LUCAS —** **Sentinelas de Ébano**. Não são legionários artificiais nem cópias de NÓX. São máquinas sem consciência, criadas para intervir em áreas perigosas, carregar escombros, montar barreiras e, se necessário, deter uma máquina inimiga.",
+          "anchor_sha256": "f9e703c11061698e628e6353535270320dd6ffb2cde135aba19b17b89ac8b4e8"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "sentinelas-ebano",
+      "field": "limits",
+      "value": "Se projeto adquirir vontade própria, terá autonomia; não aprisionar almas ou espíritos.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 683,
+          "anchor": "**RUMO —** E se algum projeto futuro desenvolver vontade própria?",
+          "anchor_sha256": "815baa373888db0384ff28e8303a461691fd2de04e50a621286d6adba056d057"
+        },
+        {
+          "line": 687,
+          "anchor": "**LUCAS —** Então não será mais uma coisa. Terá o direito de escolher. Não vou amarrar almas ou espíritos para fazer soldados.",
+          "anchor_sha256": "84ddd9641c3a1eb07f1f539fb8948b76b60c99ee696f85c8d6ba6d69961fa494"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "sentinelas-ebano",
+      "field": "tests",
+      "value": "Retirada de escombros e transporte de suprimentos em ensaio; plataforma com voluntário movida após confirmação clínica, sem decisão médica autônoma.",
+      "source": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 926,
+          "anchor": "As primeiras **Sentinelas de Ébano** estavam em plataformas de resposta.",
+          "anchor_sha256": "6737938b3dceb7b64508319e9bfebde17af10c83882ff171001922e9eb2e7ec7"
+        },
+        {
+          "line": 930,
+          "anchor": "A missão inicial não foi combate.",
+          "anchor_sha256": "8fb5a17b159ff33c0bf3e2cb1be073ca4a49c148f508dab011cca37a639499d3"
+        },
+        {
+          "line": 932,
+          "anchor": "Foi retirar escombros de um setor de ensaio e transportar suprimentos para a equipe médica.",
+          "anchor_sha256": "e9e52617d126c93edf898d07ef6a180a03aa294fc72ff49da24cce68c60ff5dd"
+        },
+        {
+          "line": 936,
+          "anchor": "Uma unidade recebeu a instrução de mover uma plataforma onde um voluntário representava um paciente. Antes de agir, solicitou confirmação da equipe médica.",
+          "anchor_sha256": "1f9f88f12e376b6283ca19340b968948d1a15d0330237e238135e47c063cd221"
+        },
+        {
+          "line": 938,
+          "anchor": "Maelis aprovou o procedimento de demonstração.",
+          "anchor_sha256": "e57fd5660d3c4cbc605efd34b685212a179312cadc819374894ac13215ed36b7"
+        },
+        {
+          "line": 940,
+          "anchor": "A Sentinela ergueu a plataforma com precisão.",
+          "anchor_sha256": "bbf66e954c5a30ce7134d6829ec0e9ac44407b95e221d2498c8f86b7e6570cc7"
+        },
+        {
+          "line": 942,
+          "anchor": "Não tomou decisões clínicas.",
+          "anchor_sha256": "dcc6d68b77a890330ed6a6c5e7263d4ec210f5c7f66461fea27d08f81defc0c1"
+        },
+        {
+          "line": 944,
+          "anchor": "Não decidiu onde o “paciente” deveria ser levado.",
+          "anchor_sha256": "e2537f1540879d54e3581b33a0d386e3d5f186f6629defa641ad2428326ad727"
+        },
+        {
+          "line": 946,
+          "anchor": "Executou uma tarefa de auxílio.",
+          "anchor_sha256": "0cc34c9811fdf3845d4cef1a19192fdebf9586494689e056610158ab5f854a56"
+        }
+      ],
+      "valid_at": "D555",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "vaga-lumes-horizonte",
+      "field": "design",
+      "value": "Microfamiliares mecano-arcanos para observação de risco ambiental e barreiras locais.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 701,
+          "anchor": "O projeto **Vaga-lumes do Horizonte** concebia milhares de microfamiliares mecano-arcanos para observar aproximações hostis, medir condições ambientais e formar barreiras locais quando necessário. Não eram uma mente-colmeia escravizada. Não entrariam nas casas para espiar conversas.",
+          "anchor_sha256": "a6a1b5ca9841a8b8c8494aa5e5e3563218066baf677b3fbc0fad7d50a5b1c388"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "vaga-lumes-horizonte",
+      "field": "limits",
+      "value": "Zonas privadas e observação apenas autorizada; não espionar conversas domiciliares.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 701,
+          "anchor": "O projeto **Vaga-lumes do Horizonte** concebia milhares de microfamiliares mecano-arcanos para observar aproximações hostis, medir condições ambientais e formar barreiras locais quando necessário. Não eram uma mente-colmeia escravizada. Não entrariam nas casas para espiar conversas.",
+          "anchor_sha256": "a6a1b5ca9841a8b8c8494aa5e5e3563218066baf677b3fbc0fad7d50a5b1c388"
+        },
+        {
+          "line": 703,
+          "anchor": "**LYSA —** Quero uma garantia de que a cidade não terá um enxame ouvindo cada cidadão por padrão.",
+          "anchor_sha256": "1044472eed7ac7f2e7eadb388f88c027ae6f495d53b73f52da09fd189e89d179"
+        },
+        {
+          "line": 705,
+          "anchor": "**LUCAS —** Teremos zonas privadas. A observação será direcionada a riscos e espaços autorizados. Não preciso vigiar a vida de todo mundo para protegê-la.",
+          "anchor_sha256": "19a4ac2a046b11738339ac1c7f4775c2d547d81578d106f161856bcdcaa92b38"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "vaga-lumes-horizonte",
+      "field": "history",
+      "value": "Microfamiliares não conscientes saíram dos compartimentos da Base e percorreram corredores autorizados.",
+      "source": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 800,
+          "anchor": "**DIA 555 · 13h09 — TRÊS ARCOS, BASE AURORA E SUBSOLO**",
+          "anchor_sha256": "2ee7f4088a6442470820395d0dea15ae51e22c28cf4995c2f7d5ab49674c0cbc"
+        },
+        {
+          "line": 806,
+          "anchor": "Pequenos pontos de luz saíram dos compartimentos de observação da Base e se espalharam pelos corredores autorizados. Eram os **Vaga-lumes do Horizonte**, microfamiliares não conscientes, capazes de observar alterações do ambiente, informar riscos e, quando necessário, compor barreiras de proteção.",
+          "anchor_sha256": "caa1c72ee91a8003f5082c4220dd269d9f2e0c94961ddf6ee532f1aeccef6fb9"
+        },
+        {
+          "line": 808,
+          "anchor": "Não entravam em quartos para ouvir conversas. Não seguiam crianças por curiosidade.",
+          "anchor_sha256": "ec6cc1754583b17a518ce3a976e011d09620378164fe17dee6ad5e7516198a82"
+        }
+      ],
+      "valid_at": "D555",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "portoes-verdade",
+      "field": "design",
+      "value": "Triagem de anomalias verificáveis e tentativas de infiltração, com revisão humana.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 707,
+          "anchor": "Em seguida vieram os **Portões da Verdade**: estruturas de triagem contra disfarces perigosos, objetos arcanos agressivos e tentativas comprovadas de infiltração. Lucas inicialmente projetara leitura de aura, identidade e manifestações de magia; o grupo exigiu que a ferramenta não fingisse conhecer a essência moral ou a alma de uma pessoa.",
+          "anchor_sha256": "ccf3906ea3330ee5e7292cf3fa30b656d373406dcda3453daa825b4bdd3ca817"
+        },
+        {
+          "line": 709,
+          "anchor": "**KAEL —** Nenhuma máquina decide que alguém é culpado porque sua aura é diferente.",
+          "anchor_sha256": "24ae8086f772a54691443e5f0ba4ca81d8a74902a6d55cbc35ea963d11bdb100"
+        },
+        {
+          "line": 711,
+          "anchor": "**LUCAS —** Então ela sinalizará anomalias verificáveis e pedirá análise. Sem julgamento automático.",
+          "anchor_sha256": "14f4d45402a642b424c380750992cb7febb7408c4a64c231d6c851abbd3c3c4e"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "portoes-verdade",
+      "field": "limits",
+      "value": "Sem julgamento moral automático pela aura e com passagem para emergência hospitalar.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 709,
+          "anchor": "**KAEL —** Nenhuma máquina decide que alguém é culpado porque sua aura é diferente.",
+          "anchor_sha256": "24ae8086f772a54691443e5f0ba4ca81d8a74902a6d55cbc35ea963d11bdb100"
+        },
+        {
+          "line": 711,
+          "anchor": "**LUCAS —** Então ela sinalizará anomalias verificáveis e pedirá análise. Sem julgamento automático.",
+          "anchor_sha256": "14f4d45402a642b424c380750992cb7febb7408c4a64c231d6c851abbd3c3c4e"
+        },
+        {
+          "line": 715,
+          "anchor": "**VARO —** E com passagem de emergência para quem precisa de hospital.",
+          "anchor_sha256": "3de29f5b2d03a64b1a39f291d94b1eeb230ad21c23f1a3c45fb29c277fa9f041"
+        },
+        {
+          "line": 719,
+          "anchor": "**REVA —** E sem bloquear a entrada de alguém em agonia enquanto se discute a cor da aura.",
+          "anchor_sha256": "1877dac82062271ee69acb073d3e0d36b0f58441fc7cbcf6a5fb6f61a85b501d"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "portoes-verdade",
+      "field": "history",
+      "value": "Detecção de anomalias implantada com revisão humana e preservação do acesso a socorro.",
+      "source": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 800,
+          "anchor": "**DIA 555 · 13h09 — TRÊS ARCOS, BASE AURORA E SUBSOLO**",
+          "anchor_sha256": "2ee7f4088a6442470820395d0dea15ae51e22c28cf4995c2f7d5ab49674c0cbc"
+        },
+        {
+          "line": 818,
+          "anchor": "Os **Portões da Verdade** receberam detecção de anomalias e revisão por pessoas responsáveis. Ninguém era condenado pela aura ou impedido de receber socorro porque o sistema apresentara uma dúvida.",
+          "anchor_sha256": "501792a37849ad1af58088e74b46e420a156be63b973f957d1c8be0f326bc2ec"
+        }
+      ],
+      "valid_at": "D555",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "circulos-socorro",
+      "field": "design",
+      "value": "Proposta de rede de transporte interno arcano para equipe médica, provisões e pessoas consentindo.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 749,
+          "anchor": "O primeiro projeto, **Círculos de Socorro**, propunha uma futura rede de transporte interno arcano para equipes médicas, provisões e pessoas que aceitassem atravessar. Não havia ainda círculos funcionais em toda a cidade. Sua criação seria um desenvolvimento próprio, separado da rede ancestral e dos futuros Portais do Horizonte, com testes e regras de acesso antes de qualquer operação pública.",
+          "anchor_sha256": "0729743a0298bf727c939e90585bd7d8a8f8e3ddcad7057598dc53ce424f9113"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "circulos-socorro",
+      "field": "limits",
+      "value": "Sem círculos funcionais em toda cidade naquele momento; testes de acesso e chegada segura necessários.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 749,
+          "anchor": "O primeiro projeto, **Círculos de Socorro**, propunha uma futura rede de transporte interno arcano para equipes médicas, provisões e pessoas que aceitassem atravessar. Não havia ainda círculos funcionais em toda a cidade. Sua criação seria um desenvolvimento próprio, separado da rede ancestral e dos futuros Portais do Horizonte, com testes e regras de acesso antes de qualquer operação pública.",
+          "anchor_sha256": "0729743a0298bf727c939e90585bd7d8a8f8e3ddcad7057598dc53ce424f9113"
+        },
+        {
+          "line": 753,
+          "anchor": "**YSOL —** Se isso um dia permitir que uma equipe alcance um ferido sem atravessar uma rua em chamas, será extraordinário. Mas precisamos garantir que a chegada não aconteça numa sala ocupada.",
+          "anchor_sha256": "ddae1d489caa27f37474077ca986105eb5179bd8001df2ae24d79d61671f0234"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "ceu-respirante",
+      "field": "design",
+      "value": "Purificação de contaminantes hostis, não transmutação de todo organismo nem destruição do clima.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 757,
+          "anchor": "O segundo, **Céu Respirante**, concebia purificação do ar contra nuvens tóxicas, esporos perigosos e contaminantes de origem arcana, protegendo o ar que os moradores realmente respiravam. Não transmutaria automaticamente todo organismo do ambiente nem destruiria o clima.",
+          "anchor_sha256": "32bc9325c185bc9e264fc9b4a295683ad488afd24eb9c63f749a925214f4d15c"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "ceu-respirante",
+      "field": "history",
+      "value": "Iniciou filtragem de poluentes hostis identificados sem eliminar ar natural, esporos inofensivos e ciclos regionais.",
+      "source": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 800,
+          "anchor": "**DIA 555 · 13h09 — TRÊS ARCOS, BASE AURORA E SUBSOLO**",
+          "anchor_sha256": "2ee7f4088a6442470820395d0dea15ae51e22c28cf4995c2f7d5ab49674c0cbc"
+        },
+        {
+          "line": 820,
+          "anchor": "O **Céu Respirante** começou a filtrar poluentes hostis identificados, sem eliminar o ar natural, os esporos inofensivos e os ciclos da região.",
+          "anchor_sha256": "d1c3bb9021442a60a8f242558b6870284e789d106809f4c0a7e42e14edee1b8c"
+        }
+      ],
+      "valid_at": "D555",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "casa-abraca",
+      "field": "design",
+      "value": "Estrutura de abrigo adaptável com alimento, ventilação, comunicação e saída.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 759,
+          "anchor": "O terceiro era **Casa que Abraça**.",
+          "anchor_sha256": "bd9ff1acc7d5f1042047a88d5fbcb1f47830adfc2911e67c2128bfd1acfaa7b6"
+        },
+        {
+          "line": 761,
+          "anchor": "Edifícios poderiam adaptar estruturas de proteção, criar áreas de abrigo, oferecer alimento, ventilação, comunicação e caminhos de saída quando houvesse perigo. As câmaras de estase temporal, se algum dia aprovadas, seriam uma alternativa clínica excepcional e consentida, jamais um depósito compulsório de moradores.",
+          "anchor_sha256": "f1a0290f3baacbfcb162d260d8b6c2913b7a0eadbaed1548231bc79e8510b489"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "casa-abraca",
+      "field": "limits",
+      "value": "Estase temporal apenas alternativa clínica excepcional, consentida e se aprovada.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 761,
+          "anchor": "Edifícios poderiam adaptar estruturas de proteção, criar áreas de abrigo, oferecer alimento, ventilação, comunicação e caminhos de saída quando houvesse perigo. As câmaras de estase temporal, se algum dia aprovadas, seriam uma alternativa clínica excepcional e consentida, jamais um depósito compulsório de moradores.",
+          "anchor_sha256": "f1a0290f3baacbfcb162d260d8b6c2913b7a0eadbaed1548231bc79e8510b489"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "casa-abraca",
+      "field": "tests",
+      "value": "Equipe demonstrou abrigo modular acessível, ventilado, com água, iluminação e saída; Maelis aprovou resposta civil.",
+      "source": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 960,
+          "anchor": "Ao lado, uma equipe demonstrou a **Casa que Abraça**: uma estrutura cívica modular cujas paredes protegidas podiam criar um abrigo ventilado e acessível, com água, iluminação e passagem de saída. Não havia câmaras de estase obrigatórias; o uso médico avançado permanecia sob decisão clínica e consentimento.",
+          "anchor_sha256": "c8f93ae18c2a3c9a774c314928a6d07a4e76669c5ff6256930969661073da365"
+        },
+        {
+          "line": 964,
+          "anchor": "**MAELIS —** Esta eu aprovo para resposta civil. Não quero um lugar onde as pessoas fiquem presas ao medo de quem as protege.",
+          "anchor_sha256": "600fbb3f140bce1c54aecb3326ee47ceba846765db94f75f3298efb020f89868"
+        }
+      ],
+      "valid_at": "D555",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "ultimo-horizonte",
+      "field": "design",
+      "value": "Conceito de contingência para ameaças extraordinárias, sem autorização de emprego.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 801,
+          "anchor": "Chamava-se **Último Horizonte**.",
+          "anchor_sha256": "d7f7f54a54c2def19c18b62e7f33dca90b9538f300a7e5ad893f501d0502132b"
+        },
+        {
+          "line": 803,
+          "anchor": "Era o conceito de relíquias de defesa de escala extraordinária, capazes, em sua formulação mais extrema, de deter entidades colossais, chuvas de destruição ou ameaças que escapassem aos sistemas comuns. Lucas podia imaginar e criar coisas tão absurdas quanto meteoros desviados e singularidades contidas; não confundiria a possibilidade de criação com uma autorização para utilizá-las perto de vidas inocentes.",
+          "anchor_sha256": "9fff5daa69ea53185a312cb8f1d85a27b1915362210cd54468f05483f1318831"
+        },
+        {
+          "line": 805,
+          "anchor": "**LUCAS —** Quero que exista uma última resposta para coisas que não conseguimos deter de outro modo. Mas não quero uma máquina com poder para decidir sozinha que o mundo acabou.",
+          "anchor_sha256": "ad1a5eb12aae726448de338dd528e3ba69f391f3cfe0fe0647417c956a2d0b26"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "ultimo-horizonte",
+      "field": "limits",
+      "value": "Não delegar decisão extrema a máquina nem confundir possibilidade de criação com autorização.",
+      "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 803,
+          "anchor": "Era o conceito de relíquias de defesa de escala extraordinária, capazes, em sua formulação mais extrema, de deter entidades colossais, chuvas de destruição ou ameaças que escapassem aos sistemas comuns. Lucas podia imaginar e criar coisas tão absurdas quanto meteoros desviados e singularidades contidas; não confundiria a possibilidade de criação com uma autorização para utilizá-las perto de vidas inocentes.",
+          "anchor_sha256": "9fff5daa69ea53185a312cb8f1d85a27b1915362210cd54468f05483f1318831"
+        },
+        {
+          "line": 805,
+          "anchor": "**LUCAS —** Quero que exista uma última resposta para coisas que não conseguimos deter de outro modo. Mas não quero uma máquina com poder para decidir sozinha que o mundo acabou.",
+          "anchor_sha256": "ad1a5eb12aae726448de338dd528e3ba69f391f3cfe0fe0647417c956a2d0b26"
+        },
+        {
+          "line": 809,
+          "anchor": "**VARO —** Eu também não.",
+          "anchor_sha256": "136d9ea12055de9e31884223f84aef5d441f7f3c5e2f564307a3152affe7ddec"
+        }
+      ],
+      "valid_at": "D554",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "base-aurora",
+      "field": "history",
+      "value": "Ampliação material preservou árvores, acessos e fluxo de água; hangares cresceram e campo de pouso separou usos.",
+      "source": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 254,
+          "anchor": "**DIA 555 · 07h31 — CAMPO AURORA**",
+          "anchor_sha256": "93100cfa49d41dae83230b2581285390c3233cac4a8c5cbc1484655ff8989243"
+        },
+        {
+          "line": 260,
+          "anchor": "As árvores que deveriam permanecer ali não foram esmagadas. As vias de acesso continuaram abertas. O fluxo de água existente foi preservado, e os jardins nasceram nas zonas destinadas a eles.",
+          "anchor_sha256": "fe871b08ab210d3cfa605f51523cfe89e6cbe244465b7e2834349143f795820a"
+        },
+        {
+          "line": 264,
+          "anchor": "Fundações profundas surgiram como raízes de pedra, cada uma no lugar que a projeção validada indicava. Colunas se ergueram em silêncio. Plataformas de metal arcano emergiram debaixo de estruturas que precisavam de reforço sem sequer deslocá-las.",
+          "anchor_sha256": "92317ad93df69ff9992955696db77dbacbc76ea2963e88ebffa1f83710e5ea53"
+        },
+        {
+          "line": 270,
+          "anchor": "A antiga linha dos hangares não desapareceu.",
+          "anchor_sha256": "55c33a1ea3a1f489328997ffb6a60eb2876816f2c96918a00565e9a01527a9c7"
+        },
+        {
+          "line": 274,
+          "anchor": "Portas monumentais envolveram as instalações existentes, preservando espaços de trabalho e criando saídas técnicas independentes. A área de ARGOS recebeu uma nova cobertura, um corredor de serviço e plataformas de manutenção próprias. O campo de pouso foi ampliado com zonas separadas para operação militar, transporte civil e socorro; nenhuma capacidade aérea nova foi proclamada certificada sem voar.",
+          "anchor_sha256": "9301553603da465b62233453d2a5dff3270b6bcbbf93bee6189207f425f8a510"
+        }
+      ],
+      "valid_at": "D555",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "base-aurora",
+      "field": "limits",
+      "value": "Ampliação física não certifica capacidade aérea nova sem voo.",
+      "source": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 274,
+          "anchor": "Portas monumentais envolveram as instalações existentes, preservando espaços de trabalho e criando saídas técnicas independentes. A área de ARGOS recebeu uma nova cobertura, um corredor de serviço e plataformas de manutenção próprias. O campo de pouso foi ampliado com zonas separadas para operação militar, transporte civil e socorro; nenhuma capacidade aérea nova foi proclamada certificada sem voar.",
+          "anchor_sha256": "9301553603da465b62233453d2a5dff3270b6bcbbf93bee6189207f425f8a510"
+        }
+      ],
+      "valid_at": "D555",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "argos",
+      "field": "history",
+      "value": "Primeiro pouso estrangeiro temporário expressamente autorizado por Edris Valeh, após socorro.",
+      "source": "LVI-C04-PV-D558-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 596,
+          "anchor": "## X — O primeiro pouso além de Três Arcos",
+          "anchor_sha256": "ff76f6256a39d9b3aee42a33adcd318ce254a943cb3c3ea6fb72bd204612e056"
+        },
+        {
+          "line": 602,
+          "anchor": "A área era utilizada para apoio de caravanas e podia ser isolada dos caminhos de uso imediato. Ela não possuía autoridade para entregar um aeroporto permanente à Cidade Livre, mas podia autorizar uma aterrissagem temporária de emergência e recepção, agora que sabia quem chegara e o que ocorrera na estrada.",
+          "anchor_sha256": "e3ced19dd1f812df5238481bfb5141980613c55244f27079dd824c8e2a6dc272"
+        },
+        {
+          "line": 616,
+          "anchor": "**NAIRA —** Capitã, não vamos sobrevoar suas fortificações nem nos aproximar da capital sem autorização. Solicito pouso no espaço que indicar. Posso apresentar o manifesto e o perfil de segurança.",
+          "anchor_sha256": "c996f51237f0fddb7300af2f01d722464c6d4915e6fad3554c2608b460dfb367"
+        },
+        {
+          "line": 622,
+          "anchor": "**EDRIS —** Autorizo um pouso de visita neste terreno. Guardas manterão circulação livre para as caravanas. Nenhuma arma da aeronave será acionada. E, se minha rainha disser não, vocês respeitarão a resposta.",
+          "anchor_sha256": "1891024bb878081410170a894268614f400ecb7021eeee2ed123376e58beba66"
+        },
+        {
+          "line": 634,
+          "anchor": "O conjunto de pouso tocou a plataforma.",
+          "anchor_sha256": "1c36f8e668c57e8c0e017dd8896c03f92c25983da2c13ca67291d1ef105b0782"
+        }
+      ],
+      "valid_at": "D558",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "argos",
+      "field": "tests",
+      "value": "Naira confirmou perfil concluído: voo, espera controlada, pouso autorizado e apoio; sem autonomia continental ilimitada.",
+      "source": "LVI-C04-PV-D558-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 1064,
+          "anchor": "As luzes azuis da aeronave refletiam nos recipientes de água do posto. Guardas de Thalor mantinham suas rondas. Os técnicos de Naira verificavam a nave após o primeiro pouso fora da região da Cidade Livre, sem declarar uma autonomia continental ilimitada só porque haviam chegado a uma fronteira conhecida.",
+          "anchor_sha256": "126ade701bdd09c36b50060900e0f4eb7dc138a3c03f59d9636c7ad9c8e7dfc1"
+        },
+        {
+          "line": 1068,
+          "anchor": "**NAIRA —** O perfil de hoje foi concluído com segurança. Voo até uma região estrangeira conhecida, espera controlada, pouso autorizado e operações de apoio. A próxima rota depende da autorização da corte e da avaliação de autonomia para o trecho planejado.",
+          "anchor_sha256": "a2aaa4b4a63617532cd81d8da8cfc3bcc440da5e132737ca9846e0422cea6c11"
+        }
+      ],
+      "valid_at": "D558",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "argos",
+      "field": "limits",
+      "value": "Próxima rota depende de autorização da corte e avaliação de autonomia; comando de Naira.",
+      "source": "LVI-C04-PV-D558-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 544,
+          "anchor": "Lucas desceu do ARGOS envolvido por NÓX, que escolhera integrar-se à armadura viva naquela ação. A aeronave permaneceu sob comando independente de Naira, pairando no corredor autorizado.",
+          "anchor_sha256": "4f1c64b928d8b1a572e6e695ae0f477e0a48cb3ab6ec793cf0bb2d101d18334e"
+        },
+        {
+          "line": 616,
+          "anchor": "**NAIRA —** Capitã, não vamos sobrevoar suas fortificações nem nos aproximar da capital sem autorização. Solicito pouso no espaço que indicar. Posso apresentar o manifesto e o perfil de segurança.",
+          "anchor_sha256": "c996f51237f0fddb7300af2f01d722464c6d4915e6fad3554c2608b460dfb367"
+        },
+        {
+          "line": 622,
+          "anchor": "**EDRIS —** Autorizo um pouso de visita neste terreno. Guardas manterão circulação livre para as caravanas. Nenhuma arma da aeronave será acionada. E, se minha rainha disser não, vocês respeitarão a resposta.",
+          "anchor_sha256": "1891024bb878081410170a894268614f400ecb7021eeee2ed123376e58beba66"
+        },
+        {
+          "line": 1068,
+          "anchor": "**NAIRA —** O perfil de hoje foi concluído com segurança. Voo até uma região estrangeira conhecida, espera controlada, pouso autorizado e operações de apoio. A próxima rota depende da autorização da corte e da avaliação de autonomia para o trecho planejado.",
+          "anchor_sha256": "a2aaa4b4a63617532cd81d8da8cfc3bcc440da5e132737ca9846e0422cea6c11"
+        }
+      ],
+      "valid_at": "D558",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "virandor",
+      "field": "eyes",
+      "value": "Olho com anéis verde profundo, cobre escuro e âmbar; descrição narrativa sem conversão em medida.",
+      "source": "LVI-C06-PIII-D566-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 99,
+          "anchor": "Um olho se abriu.",
+          "anchor_sha256": "61587a6fdd20bfe6bf26902ddc17f01ff46a39cc8f3c61db86e567031bf81b02"
+        },
+        {
+          "line": 101,
+          "anchor": "Era grande o suficiente para que uma casa coubesse entre suas pálpebras.",
+          "anchor_sha256": "8260f1bf7071b2c78a8dc125d0a7da11d69900c565a24bc7f11e5583c1259851"
+        },
+        {
+          "line": 103,
+          "anchor": "A pupila, estreita e vertical, contraiu-se diante da luz que penetrava por uma fenda de rocha. Ao redor dela havia anéis de verde profundo, cobre escuro e âmbar vivo, como se estações inteiras tivessem sido depositadas uma sobre a outra.",
+          "anchor_sha256": "8f1a38634493d738c7c255d010091fdc1a44c053dc145b78690ff7e0038739ce"
+        }
+      ],
+      "valid_at": "D566",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "virandor",
+      "field": "skin",
+      "value": "Placas dorsais com bosques reais, escamas bronze, verde escuro, veios de cobre e placas de pedra viva.",
+      "source": "LVI-C06-PIII-D566-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 137,
+          "anchor": "Havia pequenos bosques sobre suas placas dorsais. Arbustos de raízes entrelaçadas, pedras cobertas de líquen e ninhos abandonados de aves que haviam construído suas casas sem jamais compreender sobre o que estavam pousadas. A vegetação não era ilusão. Crescera ali durante a longa quietude do guardião, acompanhando o movimento quase imperceptível de sua respiração.",
+          "anchor_sha256": "631a9305ddf7202510596ef2965909b39b04b9d226399249b7c31e6c037def8f"
+        },
+        {
+          "line": 139,
+          "anchor": "O corpo que se ergueu sob a montanha tinha a forma ancestral de um dragão.",
+          "anchor_sha256": "51a2ce7d4672ce4a10bfcd3406a797a8f2aafc57eb464d824667b4d085fb4e53"
+        },
+        {
+          "line": 147,
+          "anchor": "Duas asas imensas, recolhidas junto aos flancos, cujas membranas lembravam superfícies de folhas vistas de muito perto — não verdes e finas, mas compostas de camadas translúcidas de âmbar, jade escuro, veios minerais e tecidos vivos capazes de sustentar o peso de uma criatura gigantesca.",
+          "anchor_sha256": "68620eaed54946e459859bfa377b3372c9d749cffb5875e1e33364f7b793c54a"
+        },
+        {
+          "line": 149,
+          "anchor": "As escamas do peito eram de bronze antigo, atravessadas por fendas onde circulava uma luminosidade suave. Sobre os ombros, placas de pedra viva se sobrepunham como muralhas naturais. Nos flancos, o verde tornava-se tão escuro que parecia negro, até que o sol revelava linhas de cobre enterradas sob a superfície.",
+          "anchor_sha256": "85e650a94a5e1f1a784772f468fa6e49c12175eb79458edbf1043ad63f38b7bf"
+        }
+      ],
+      "valid_at": "D566",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "virandor",
+      "field": "species",
+      "value": "Forma ancestral de dragão, quatro membros, chifres ramificados, cauda e duas asas.",
+      "source": "LVI-C06-PIII-D566-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 139,
+          "anchor": "O corpo que se ergueu sob a montanha tinha a forma ancestral de um dragão.",
+          "anchor_sha256": "51a2ce7d4672ce4a10bfcd3406a797a8f2aafc57eb464d824667b4d085fb4e53"
+        },
+        {
+          "line": 141,
+          "anchor": "Quatro membros de proporções impossíveis.",
+          "anchor_sha256": "27e52a706e97218f0f31cdfe1f7f18f62ceb0ba11cec6d9652f6db7fa8d37a3e"
+        },
+        {
+          "line": 143,
+          "anchor": "Um pescoço longo, poderoso, sustentando uma cabeça de chifres ramificados.",
+          "anchor_sha256": "d1936fb297602266069c8aae36a4d5137e6b23adc4f89cec80ba6a5836f79707"
+        },
+        {
+          "line": 145,
+          "anchor": "Uma cauda que se estendia por trás das encostas como a curva de um rio.",
+          "anchor_sha256": "b2483c31bacf6e0dee58a6761a9cf5e5fb7cd7894af0d1696c838d676c0b6f5d"
+        },
+        {
+          "line": 147,
+          "anchor": "Duas asas imensas, recolhidas junto aos flancos, cujas membranas lembravam superfícies de folhas vistas de muito perto — não verdes e finas, mas compostas de camadas translúcidas de âmbar, jade escuro, veios minerais e tecidos vivos capazes de sustentar o peso de uma criatura gigantesca.",
+          "anchor_sha256": "68620eaed54946e459859bfa377b3372c9d749cffb5875e1e33364f7b793c54a"
+        }
+      ],
+      "valid_at": "D566",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "virandor",
+      "field": "journey",
+      "value": "Em voo sobre Cordilheiras do Sul às 04h18, após despertar no dia anterior.",
+      "source": "LVI-C06-PIII-D566-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 123,
+          "anchor": "Virandor, o Guardião das Florestas e Protetor do Mundo Vivo, ergueu-se depois de uma longa quietude.",
+          "anchor_sha256": "4aa7b8bbf8ec1cbc647424b969fb857e25297571a360dacb3d8435b4b6095a65"
+        },
+        {
+          "line": 125,
+          "anchor": "A montanha começara a se mover. Virandor recordava aquele despertar enquanto, agora, no começo do novo dia, já atravessava em voo as cordilheiras do sul.",
+          "anchor_sha256": "acf0129836f6069e03538db4dc417e9376e100bccc06099a5db80e0945216a9c"
+        },
+        {
+          "line": 131,
+          "anchor": "**DIA 566 · 04h18 — CORDILHEIRAS DO SUL, O VOO DE VIRANDOR**",
+          "anchor_sha256": "1151ee290611c783793c356f2cbbc28b240df8ee3a4505a956ed00f128cb18b0"
+        },
+        {
+          "line": 133,
+          "anchor": "Quando Virandor se levantara, na tarde anterior, as árvores que cresciam sobre suas costas não tinham caído.",
+          "anchor_sha256": "ed602a6ec01846de54e3774a47cebd0ff4101c478d9b46c5823094b2f9b25460"
+        }
+      ],
+      "valid_at": "D566",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "virandor",
+      "field": "knowledge",
+      "value": "Reconheceu sinal do homem por descrição anterior de AERÚN; não conhecimento universal.",
+      "source": "LVI-C06-PIII-D566-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 111,
+          "anchor": "E reconheceu, nela, alguma coisa que não pertencia a nenhuma árvore antiga daquele continente.",
+          "anchor_sha256": "0050086cd647217eff2c773d649dbd1169ad3a23eda6763c87bbca6412e01d38"
+        },
+        {
+          "line": 113,
+          "anchor": "Algo que AERÚN lhe descrevera, uma vez, com uma cautela incomum para quem conhecia os oceanos.",
+          "anchor_sha256": "1b089d79b91de4d52f7535412e3dbc4a0d5f6330520aefd8663e99e6c43327f7"
+        },
+        {
+          "line": 115,
+          "anchor": "**VIRANDOR —** ...O homem.",
+          "anchor_sha256": "f2451f4193ac6bda81066426568682f4c5f0d5eb3353d7e9b1ada07c5eea7ad7"
+        }
+      ],
+      "valid_at": "D566",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "virandor",
+      "field": "relationships",
+      "value": "Antigo conhecido de AERÚN guardião; lembrança e nome não constituíram convocação.",
+      "source": "LVI-C06-PIII-D566-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 65,
+          "anchor": "Lembrou-se de uma conversa anterior.",
+          "anchor_sha256": "d988c42f8a6e4d82aa3cceb8fc93e5ad59d7a2cb3fccff621aa920a8bd3a6472"
+        },
+        {
+          "line": 67,
+          "anchor": "De outro guardião que sempre preferira a companhia de montanhas à de reis.",
+          "anchor_sha256": "f7f9d93b84cdc677c78b2e4cb19e9a52b5be522b0a190c1d65816f23325c1441"
+        },
+        {
+          "line": 69,
+          "anchor": "**AERÚN —** Virandor...",
+          "anchor_sha256": "4bec9f47044af4a54501ab6361b4fc9d0b4f8110962b4008f29cff74c8865e51"
+        },
+        {
+          "line": 71,
+          "anchor": "Não foi um chamado que arrastasse o outro dragão para ali.",
+          "anchor_sha256": "2accec6d71f9b4fc9f6bd80a5dfe45f50623e53c38e5f450f577bbefe32fc38e"
+        },
+        {
+          "line": 73,
+          "anchor": "Foi o nome de um velho conhecido, pronunciado dentro do mar.",
+          "anchor_sha256": "e528a569ab460aa7b3578ccd2c32673fcd98db2cdb6ce12aa4440e851c72f745"
+        }
+      ],
+      "valid_at": "D566",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "virandor",
+      "field": "magic_repertoire",
+      "value": "Solo firmou-se sob pata; névoa dourada semelhante a pólen umedeceu encosta sem alcançar campos de animais.",
+      "source": "LVI-C06-PIII-D566-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 159,
+          "anchor": "Quando deslocou uma pata, o chão sob ela se firmou, transformando-se numa plataforma de pedra resistente antes que o peso a tocasse. Ele conhecia profundamente a terra que protegia e não precisava devastá-la para caminhar.",
+          "anchor_sha256": "6bc38e73f6196fa4fe68e50aeadcd69ebcf9effaabfbcbe35c644a3635f4413d"
+        },
+        {
+          "line": 173,
+          "anchor": "O ar entrou por narinas recortadas na parte superior do focinho, tão amplas que pareciam cavernas. Primeiro houve apenas o som do vento aproximando-se. Depois um murmúrio grave, como o de inúmeras árvores balançando durante uma tempestade. Por fim, a respiração desceu por seu peito, e a floresta inteira respondeu com uma vibração leve.",
+          "anchor_sha256": "b67a5abfb4978e5d40f4c4d655e252c5d9260168a38b5121276953873effde20"
+        },
+        {
+          "line": 175,
+          "anchor": "Ele expirou.",
+          "anchor_sha256": "34f66879007acac08e6224e6c7c579c756a31c1dbd6aab56c6bfe78e9c16f9ca"
+        },
+        {
+          "line": 177,
+          "anchor": "Não saiu fogo.",
+          "anchor_sha256": "03a1fa19b5b6566941eac496e212299df36e09a70573a0e446292f5de5a787c3"
+        },
+        {
+          "line": 179,
+          "anchor": "Uma névoa dourada derramou-se de suas narinas, carregada de pequenos pontos luminosos que lembravam pólen. A névoa tocou uma encosta nua, depositou umidade na pedra e desapareceu antes de alcançar os campos onde animais descansavam.",
+          "anchor_sha256": "4ce30b65db0c034914ab4e75a709017f167c55a1f1244e5241c8f0813884f235"
+        }
+      ],
+      "valid_at": "D566",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "aerun-guardiao",
+      "field": "species",
+      "value": "Dragão guardião observado na água, distinto do instituto homônimo.",
+      "source": "LVI-C06-PIII-D566-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 51,
+          "anchor": "O dragão ergueu a cabeça.",
+          "anchor_sha256": "a420c262ad7619cc9b07ee57bc94731934fd9f117d6ed1c0e9907f41d5873ecf"
+        },
+        {
+          "line": 53,
+          "anchor": "Seus movimentos deslocaram a água em ondas suaves que correram pelos cânions profundos. Criaturas adormecidas despertaram entre rochas, confundidas pelo deslocamento do velho guardião.",
+          "anchor_sha256": "a79f3cc3f733d5db5445a065eeca3c794576fa41dbc6b43d9b151e7fefa7f9fe"
+        },
+        {
+          "line": 57,
+          "anchor": "**AERÚN —** ...Então aconteceu.",
+          "anchor_sha256": "74cda4c93de183cf3ee194dfbc73f0b5e658a324fe11265cbf55916cd5cf853d"
+        }
+      ],
+      "valid_at": "D566",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "aerun-guardiao",
+      "field": "location",
+      "value": "Em águas profundas na cena; sem coordenadas.",
+      "source": "LVI-C06-PIII-D566-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 51,
+          "anchor": "O dragão ergueu a cabeça.",
+          "anchor_sha256": "a420c262ad7619cc9b07ee57bc94731934fd9f117d6ed1c0e9907f41d5873ecf"
+        },
+        {
+          "line": 53,
+          "anchor": "Seus movimentos deslocaram a água em ondas suaves que correram pelos cânions profundos. Criaturas adormecidas despertaram entre rochas, confundidas pelo deslocamento do velho guardião.",
+          "anchor_sha256": "a79f3cc3f733d5db5445a065eeca3c794576fa41dbc6b43d9b151e7fefa7f9fe"
+        },
+        {
+          "line": 59,
+          "anchor": "Sua voz percorreu a água como uma corrente que não precisava de superfície para existir.",
+          "anchor_sha256": "4b68fecb71d0c7aa2947d98f83037254976279443aefb3f4231e0ea8cfc65f5d"
+        },
+        {
+          "line": 73,
+          "anchor": "Foi o nome de um velho conhecido, pronunciado dentro do mar.",
+          "anchor_sha256": "e528a569ab460aa7b3578ccd2c32673fcd98db2cdb6ce12aa4440e851c72f745"
+        }
+      ],
+      "valid_at": "D566",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "aerun-guardiao",
+      "field": "relationships",
+      "value": "Conhecido antigo de Virandor; pronunciou nome sem convocá-lo.",
+      "source": "LVI-C06-PIII-D566-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 65,
+          "anchor": "Lembrou-se de uma conversa anterior.",
+          "anchor_sha256": "d988c42f8a6e4d82aa3cceb8fc93e5ad59d7a2cb3fccff621aa920a8bd3a6472"
+        },
+        {
+          "line": 67,
+          "anchor": "De outro guardião que sempre preferira a companhia de montanhas à de reis.",
+          "anchor_sha256": "f7f9d93b84cdc677c78b2e4cb19e9a52b5be522b0a190c1d65816f23325c1441"
+        },
+        {
+          "line": 69,
+          "anchor": "**AERÚN —** Virandor...",
+          "anchor_sha256": "4bec9f47044af4a54501ab6361b4fc9d0b4f8110962b4008f29cff74c8865e51"
+        },
+        {
+          "line": 71,
+          "anchor": "Não foi um chamado que arrastasse o outro dragão para ali.",
+          "anchor_sha256": "2accec6d71f9b4fc9f6bd80a5dfe45f50623e53c38e5f450f577bbefe32fc38e"
+        },
+        {
+          "line": 73,
+          "anchor": "Foi o nome de um velho conhecido, pronunciado dentro do mar.",
+          "anchor_sha256": "e528a569ab460aa7b3578ccd2c32673fcd98db2cdb6ce12aa4440e851c72f745"
+        }
+      ],
+      "valid_at": "D566",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "aerun-guardiao",
+      "field": "limits",
+      "value": "Percebeu novo nascimento e marca da Autoridade, não mapa da floresta nem quem escolheu plantio.",
+      "source": "LVI-C06-PIII-D566-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 61,
+          "anchor": "Aquela sensação não lhe oferecia um mapa da floresta. Ele não viu Lucas abraçando a raiz, nem soube quem escolhera o lugar do plantio. Reconheceu apenas dois acontecimentos ligados: **uma vida nova, de escala extraordinária, e a marca incomparável da Autoridade que conhecera em um homem**.",
+          "anchor_sha256": "3474a59b03e0ea1c3e6681b0ff2d0859b83f0bf0989d91d002e9dc76aad434ea"
+        }
+      ],
+      "valid_at": "D566",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "niraven",
+      "field": "events",
+      "value": "Elyrien informou abertura noturna de caminho natural, verificado por guardiões ao amanhecer.",
+      "source": "LVI-C06-PIII-D566-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 305,
+          "anchor": "**ELYRIEN —** Níraven abriu um caminho esta noite. Os guardiões verificaram suas primeiras curvas ao amanhecer. Podemos subir sem danificar a casca, desde que não tentemos arrancar nada do que está crescendo.",
+          "anchor_sha256": "dff2a863f1f3658a982cd8a281c5b754f66e1f98a817f82d48185d982104e628"
+        },
+        {
+          "line": 307,
+          "anchor": "No tronco gigantesco havia uma passarela natural de raízes que serpenteava em direção à copa. Em certos pontos a madeira formava degraus largos. Em outros, uma escada de folhas rígidas se abria suavemente sobre uma curva do tronco. Não fora feita para receber multidões; era o primeiro caminho que a árvore oferecera às pessoas do vale.",
+          "anchor_sha256": "0c3ffd9148aa7f7c4e4b4d3d4332d6a720f0acb0de5bb70dcbfac767f9012d6f"
+        }
+      ],
+      "valid_at": "D566",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "niraven",
+      "field": "dependencies",
+      "value": "Acesso condicionado a não arrancar o crescimento; primeiro caminho não feito para multidões.",
+      "source": "LVI-C06-PIII-D566-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 305,
+          "anchor": "**ELYRIEN —** Níraven abriu um caminho esta noite. Os guardiões verificaram suas primeiras curvas ao amanhecer. Podemos subir sem danificar a casca, desde que não tentemos arrancar nada do que está crescendo.",
+          "anchor_sha256": "dff2a863f1f3658a982cd8a281c5b754f66e1f98a817f82d48185d982104e628"
+        },
+        {
+          "line": 307,
+          "anchor": "No tronco gigantesco havia uma passarela natural de raízes que serpenteava em direção à copa. Em certos pontos a madeira formava degraus largos. Em outros, uma escada de folhas rígidas se abria suavemente sobre uma curva do tronco. Não fora feita para receber multidões; era o primeiro caminho que a árvore oferecera às pessoas do vale.",
+          "anchor_sha256": "0c3ffd9148aa7f7c4e4b4d3d4332d6a720f0acb0de5bb70dcbfac767f9012d6f"
+        }
+      ],
+      "valid_at": "D566",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "niraven",
+      "field": "knowledge",
+      "value": "Guardiões percebem nascimento de modos diferentes; nem todos sabem o que nasceu.",
+      "source": "LVI-C06-PIII-D566-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 85,
+          "anchor": "Um nascimento.",
+          "anchor_sha256": "4a2cad05b0b5917e7c7f7f8dc14b302e300a641f129da2986fc2db506e680384"
+        },
+        {
+          "line": 87,
+          "anchor": "Era como reconhecer, na própria natureza, uma nota que não existia no dia anterior. Cada guardião a percebia por aquilo que lhe era mais íntimo: marés, pedra, gelo, raízes, vento, estações. Nem todos sabiam o que havia nascido. Nem todos se interessaram da mesma maneira. Alguns permaneceram onde estavam, convencidos de que as vidas novas deveriam descobrir o mundo sem espectadores antigos reunidos ao redor delas.",
+          "anchor_sha256": "5bb31b28d073d2e108d30b094fb8b48702c18a5b18ff3b9410ce238b007769b7"
+        }
+      ],
+      "valid_at": "D566",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "niraven",
+      "field": "participants",
+      "value": "Na base, Elyrien, Neris, Serael, Ilven, Elen e Rumo; Naira compareceu com instrumento.",
+      "source": "LVI-C06-PIII-D566-AUTHOR-SOURCE",
+      "anchors": [
+        {
+          "line": 291,
+          "anchor": "Na base da grande árvore, Elyrien esperava acompanhada de Neris, Serael, Ilven e Elen. Rumo já estava ali, com o estojo de sua semente alada preso ao cinto. Ele não se separara da lembrança que recolhera em Vélath e agora observava como a nova árvore deixava passar as correntes de ar.",
+          "anchor_sha256": "c11a8a770a1bbcd040e49305ffee527889b786e02b78cbc3bd6e315e94510b9d"
+        },
+        {
+          "line": 293,
+          "anchor": "Lysa havia escolhido permanecer na aldeia para conversar com famílias que desejavam compreender como seriam preservadas as rotas e os cuidados com a nova guardiã. Naira, depois de confiar a tripulação do ARGOS às verificações habituais na Campina dos Ventos Baixos, viera com um instrumento simples de observação e a determinação de não anunciar alturas que não medira.",
+          "anchor_sha256": "e645ff423531554101ae909860b958c71eb58668226d7911c218d56857c9185f"
+        }
+      ],
+      "valid_at": "D566",
+      "kind": "HISTORICAL_OBSERVATION",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING"
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "mara-luren-identity",
+      "classification": "CONFLICT_GUARD",
+      "decision": "Mara é companheira de Luren e mãe da filha observada; não fundir com outras Maras sem evidência nominal.",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING",
+      "sources": [
+        {
+          "source": "LVI-C03-PIII-D551-AUTHOR-SOURCE",
+          "anchors": [
+            {
+              "line": 31,
+              "anchor": "**MARA —** Não levante.",
+              "anchor_sha256": "86f1e156483e9d330ac59635b99e2a54b824860e3e6f5de265fbb7a0019cd824"
+            },
+            {
+              "line": 35,
+              "anchor": "O mundo tinha o cheiro limpo dos corredores novos e um latejar desagradável sob as costelas. A couraça já não estava em seu corpo. No lugar dela havia faixas, proteção clínica e a mão de uma mulher segurando a sua.",
+              "anchor_sha256": "d127563eec3881313af4f23e3d86df3a8021c79e0f0eba532b2ca4dfc63ada69"
+            },
+            {
+              "line": 109,
+              "anchor": "Foi Mara quem apertou a mão do companheiro.",
+              "anchor_sha256": "640837a89124bf2e91cd8173c069c8b78a6de8b85e2f686cb7e14ca28411b349"
+            }
+          ]
+        },
+        {
+          "source": "LVI-C04-PV-D558-AUTHOR-SOURCE",
+          "anchors": [
+            {
+              "line": 186,
+              "anchor": "Mara segurou a mão dele.",
+              "anchor_sha256": "25303770d9694af527903813d02db11f9cbe553dfcc7dd1493c68dbf1abc2ba4"
+            },
+            {
+              "line": 188,
+              "anchor": "**MARA —** Nem uma frota inteira vai me convencer a deixar você fingir que não dói.",
+              "anchor_sha256": "ad1605205c89db5f5ed8046014294722a38aa15ba91fe2b0807ad8acf5cb67b8"
+            },
+            {
+              "line": 192,
+              "anchor": "A pequena filha deles observava a janela.",
+              "anchor_sha256": "04a93d9333e2248161af47fe808a9931a303edab915da73aac53f1364db68336"
+            },
+            {
+              "line": 194,
+              "anchor": "**FILHA —** O grande avião está indo embora?",
+              "anchor_sha256": "b0686c6c41fb7169134cc11f71bcf1a3854d7f8300ee991a0d99f108ebac5f9a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ithran-restricted",
+      "classification": "CONFLICT_GUARD",
+      "decision": "Identidade e deliberações de Ithran pertencem à cena adversária, não aos defensores; não promover a conhecimento de protagonistas.",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING",
+      "sources": [
+        {
+          "source": "LVI-C03-PIII-D551-AUTHOR-SOURCE",
+          "anchors": [
+            {
+              "line": 18,
+              "anchor": "  <text size=\"xs\" color=\"secondary\">GÊNESE plenamente disponível. Ithran ainda comanda remanescentes fora da cidade e não foi identificado com prova pelos defensores. Os 300 fundadores estão distribuídos. AERÚN mantém o Coração selado; Neris e a engenheira anã seguem em viagem, Tharvek e Elyrien continuam em seus territórios.</text>",
+              "anchor_sha256": "230219dc98643a9b6ad4114a1a919859b1287c60a59b39fdda474fee699cca65"
+            },
+            {
+              "line": 387,
+              "anchor": "Ithran estava diante do mapa.",
+              "anchor_sha256": "46042ce73b51c6fe87982407248a6bae3e86b10f3d0f687fd8bdee9f0016449c"
+            },
+            {
+              "line": 407,
+              "anchor": "Ithran ficou imóvel.",
+              "anchor_sha256": "2e9683b26b2f9dc62fffaeff6c5deafa784bb72904f3fc03bb126bbbde00f2f1"
+            },
+            {
+              "line": 411,
+              "anchor": "**ITHRAN —** Nossos objetivos continuam fora de alcance. Não localizamos os emissários, não penetramos AERÚN e não neutralizamos o Criador. Se avançarmos sobre a cidade outra vez, perderemos a expedição sem obter nada.",
+              "anchor_sha256": "2cda1b393ad440faa3ffb735ebda01881f8536ee10264f07b295e260162ebd63"
+            },
+            {
+              "line": 429,
+              "anchor": "Ithran pediu detalhes.",
+              "anchor_sha256": "051d383e091ff3e79734f45a19cf05cc80521fa2038bceba740256485dc7f766"
+            },
+            {
+              "line": 435,
+              "anchor": "**ITHRAN —** Quero uma identificação legítima antes de declarar que encontramos qualquer delegação. E mantenha uma saída para nossos feridos.",
+              "anchor_sha256": "fd0f9e522f03b58d91f9d70b4f6d066c3230b098ad3c43fcf3fb14dc97561be8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aerun-homonym",
+      "classification": "CONFLICT_GUARD",
+      "decision": "AERÚN guardião dragão e AERÚN instituição científica são entidades distintas; não cruzar percepção com custódia de amostras.",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING",
+      "sources": [
+        {
+          "source": "LVI-C06-PIII-D566-AUTHOR-SOURCE",
+          "anchors": [
+            {
+              "line": 51,
+              "anchor": "O dragão ergueu a cabeça.",
+              "anchor_sha256": "a420c262ad7619cc9b07ee57bc94731934fd9f117d6ed1c0e9907f41d5873ecf"
+            },
+            {
+              "line": 53,
+              "anchor": "Seus movimentos deslocaram a água em ondas suaves que correram pelos cânions profundos. Criaturas adormecidas despertaram entre rochas, confundidas pelo deslocamento do velho guardião.",
+              "anchor_sha256": "a79f3cc3f733d5db5445a065eeca3c794576fa41dbc6b43d9b151e7fefa7f9fe"
+            },
+            {
+              "line": 57,
+              "anchor": "**AERÚN —** ...Então aconteceu.",
+              "anchor_sha256": "74cda4c93de183cf3ee194dfbc73f0b5e658a324fe11265cbf55916cd5cf853d"
+            },
+            {
+              "line": 61,
+              "anchor": "Aquela sensação não lhe oferecia um mapa da floresta. Ele não viu Lucas abraçando a raiz, nem soube quem escolhera o lugar do plantio. Reconheceu apenas dois acontecimentos ligados: **uma vida nova, de escala extraordinária, e a marca incomparável da Autoridade que conhecera em um homem**.",
+              "anchor_sha256": "3474a59b03e0ea1c3e6681b0ff2d0859b83f0bf0989d91d002e9dc76aad434ea"
+            }
+          ]
+        },
+        {
+          "source": "LVI-C04-PV-D558-AUTHOR-SOURCE",
+          "anchors": [
+            {
+              "line": 176,
+              "anchor": "No AERÚN, Astra registrou a guarda do fragmento élfico de Neris. As duas amostras permaneciam separadas. A ressonância comum observada no Dia 556 continuava sendo uma pergunta, não a assinatura confirmada de um inimigo.",
+              "anchor_sha256": "7777cf6a64db4682e5f0a8b2e706c61b3b366540df1081ceb322ad79a46e08b1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "design-vs-deployment",
+      "classification": "CONFLICT_GUARD",
+      "decision": "Projetos D554 não equivalem a operação; implantação física e demonstração delimitada D555 não validam toda capacidade.",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING",
+      "sources": [
+        {
+          "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+          "anchors": [
+            {
+              "line": 515,
+              "anchor": "A primeira tecnologia chamava-se **Muralha Viva**: uma superfície arcano-metálica capaz de absorver impactos, dispersar forças hostis e recuperar sua forma. Não era mercúrio verdadeiro correndo por rios; era uma matéria criada por GÊNESE, concebida para não envenenar o solo nem destruir as próprias fundações.",
+              "anchor_sha256": "8fffb57ae28babff3ce3e9f5a7ee1f3f366723aaab87ee77d0a2c1a19c8f3d69"
+            },
+            {
+              "line": 519,
+              "anchor": "**LUCAS —** Estas seriam as torres do **Tridente Rúnico**. A artilharia terrestre teria alcance e poder que o continente não conhece. Quero armas de precisão para impedir que engenhos como o Selo Oco se aproximem da cidade. O comando poderá operar de salas protegidas, pela rede, sem colocar soldados expostos em cada parapeito.",
+              "anchor_sha256": "cc64afed7b5dd64e7f48646a5cb07b075d8fe1887fb5fa331f83e9c1d6928324"
+            },
+            {
+              "line": 535,
+              "anchor": "**LUCAS —** Estou falando de uma possibilidade futura. Posso conceber a estrutura com GÊNESE, mas não vou fingir que já existe uma rede orbital testada, com controle e segurança. Hoje estamos olhando a ideia.",
+              "anchor_sha256": "c36f41afa74599a56b936d04b038d1060494f1b343c9dd4c1815dd53c7e85b0a"
+            },
+            {
+              "line": 839,
+              "anchor": "**LUCAS —** Um fragmento da Égide Dupla, numa área isolada, com instrumentos e observadores. O escudo atual da cidade permanece inteiro. Nenhum civil será usado como cobaia.",
+              "anchor_sha256": "9341ba2a79ab2625ace88c101cc20e8fdb40895cb0e0ff3e481fa00565695b82"
+            },
+            {
+              "line": 843,
+              "anchor": "**ASTRA —** Um teste delimitado, então. Não uma certificação de toda a arquitetura.",
+              "anchor_sha256": "38d026ea694a870f5d4add4eaac3e767e7c86738b2c8867f4bae0abaeec8963a"
+            }
+          ]
+        },
+        {
+          "source": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+          "anchors": [
+            {
+              "line": 586,
+              "anchor": "A **Muralha Viva** acompanhou as estruturas existentes, reforçando-as com matéria arcano-metálica capaz de se recompor após danos. As portas da cidade permaneceram portas. Suas passagens não desapareceram quando o metal se moveu.",
+              "anchor_sha256": "c17646e9275ab27e483658b8d64db0bbd9ca0cdab059d3306fdead523635af3d"
+            },
+            {
+              "line": 588,
+              "anchor": "As coroas do **Tridente Rúnico** ergueram-se nas posições aprovadas para defesa perimetral.",
+              "anchor_sha256": "ec0d081e09f02c0f5829758de66b62ed45a6916deddec814a2b34f3965dfd09e"
+            },
+            {
+              "line": 594,
+              "anchor": "Varo acompanhou o primeiro ensaio no setor isolado que Sael e Astra haviam preparado.",
+              "anchor_sha256": "555bda626389f618a42d6566c4abaf676023f9e8ddd36a4792566b62ab40ebe0"
+            },
+            {
+              "line": 596,
+              "anchor": "Um alvo inerte de cerco, criado apenas para o teste, foi lançado sobre uma trajetória segura. Nenhum civil ou animal estava na linha de disparo.",
+              "anchor_sha256": "ee57e936ea8224567cadaaff724a384d9e0cfa1afed6fdaa7cd516e51f201ccd"
+            },
+            {
+              "line": 602,
+              "anchor": "Varo autorizou.",
+              "anchor_sha256": "1a78d06428c8b84510fe62c29553a5f0ad12b18a8c2a8d999d4298a4d3998de2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "argos-authority",
+      "classification": "CONFLICT_GUARD",
+      "decision": "Pouso temporário local não significa aeroporto permanente nem autorização da corte; Naira mantém comando.",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING",
+      "sources": [
+        {
+          "source": "LVI-C04-PV-D558-AUTHOR-SOURCE",
+          "anchors": [
+            {
+              "line": 544,
+              "anchor": "Lucas desceu do ARGOS envolvido por NÓX, que escolhera integrar-se à armadura viva naquela ação. A aeronave permaneceu sob comando independente de Naira, pairando no corredor autorizado.",
+              "anchor_sha256": "4f1c64b928d8b1a572e6e695ae0f477e0a48cb3ab6ec793cf0bb2d101d18334e"
+            },
+            {
+              "line": 602,
+              "anchor": "A área era utilizada para apoio de caravanas e podia ser isolada dos caminhos de uso imediato. Ela não possuía autoridade para entregar um aeroporto permanente à Cidade Livre, mas podia autorizar uma aterrissagem temporária de emergência e recepção, agora que sabia quem chegara e o que ocorrera na estrada.",
+              "anchor_sha256": "e3ced19dd1f812df5238481bfb5141980613c55244f27079dd824c8e2a6dc272"
+            },
+            {
+              "line": 616,
+              "anchor": "**NAIRA —** Capitã, não vamos sobrevoar suas fortificações nem nos aproximar da capital sem autorização. Solicito pouso no espaço que indicar. Posso apresentar o manifesto e o perfil de segurança.",
+              "anchor_sha256": "c996f51237f0fddb7300af2f01d722464c6d4915e6fad3554c2608b460dfb367"
+            },
+            {
+              "line": 622,
+              "anchor": "**EDRIS —** Autorizo um pouso de visita neste terreno. Guardas manterão circulação livre para as caravanas. Nenhuma arma da aeronave será acionada. E, se minha rainha disser não, vocês respeitarão a resposta.",
+              "anchor_sha256": "1891024bb878081410170a894268614f400ecb7021eeee2ed123376e58beba66"
+            },
+            {
+              "line": 1068,
+              "anchor": "**NAIRA —** O perfil de hoje foi concluído com segurança. Voo até uma região estrangeira conhecida, espera controlada, pouso autorizado e operações de apoio. A próxima rota depende da autorização da corte e da avaliação de autonomia para o trecho planejado.",
+              "anchor_sha256": "a2aaa4b4a63617532cd81d8da8cfc3bcc440da5e132737ca9846e0422cea6c11"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "virandor-knowledge",
+      "classification": "CONFLICT_GUARD",
+      "decision": "Reconhecimento por relato de AERÚN e percepção de guardiões não constituem onisciência.",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING",
+      "sources": [
+        {
+          "source": "LVI-C06-PIII-D566-AUTHOR-SOURCE",
+          "anchors": [
+            {
+              "line": 61,
+              "anchor": "Aquela sensação não lhe oferecia um mapa da floresta. Ele não viu Lucas abraçando a raiz, nem soube quem escolhera o lugar do plantio. Reconheceu apenas dois acontecimentos ligados: **uma vida nova, de escala extraordinária, e a marca incomparável da Autoridade que conhecera em um homem**.",
+              "anchor_sha256": "3474a59b03e0ea1c3e6681b0ff2d0859b83f0bf0989d91d002e9dc76aad434ea"
+            },
+            {
+              "line": 87,
+              "anchor": "Era como reconhecer, na própria natureza, uma nota que não existia no dia anterior. Cada guardião a percebia por aquilo que lhe era mais íntimo: marés, pedra, gelo, raízes, vento, estações. Nem todos sabiam o que havia nascido. Nem todos se interessaram da mesma maneira. Alguns permaneceram onde estavam, convencidos de que as vidas novas deveriam descobrir o mundo sem espectadores antigos reunidos ao redor delas.",
+              "anchor_sha256": "5bb31b28d073d2e108d30b094fb8b48702c18a5b18ff3b9410ce238b007769b7"
+            },
+            {
+              "line": 111,
+              "anchor": "E reconheceu, nela, alguma coisa que não pertencia a nenhuma árvore antiga daquele continente.",
+              "anchor_sha256": "0050086cd647217eff2c773d649dbd1169ad3a23eda6763c87bbca6412e01d38"
+            },
+            {
+              "line": 113,
+              "anchor": "Algo que AERÚN lhe descrevera, uma vez, com uma cautela incomum para quem conhecia os oceanos.",
+              "anchor_sha256": "1b089d79b91de4d52f7535412e3dbc4a0d5f6330520aefd8663e99e6c43327f7"
+            },
+            {
+              "line": 115,
+              "anchor": "**VIRANDOR —** ...O homem.",
+              "anchor_sha256": "f2451f4193ac6bda81066426568682f4c5f0d5eb3353d7e9b1ada07c5eea7ad7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ancoras-archaeology",
+      "classification": "CONFLICT_GUARD",
+      "decision": "Criações de Lucas não reativam rede antiga; pesquisa legítima continua independente.",
+      "scope": "AUTHOR_ONLY",
+      "status": "AUTHOR_GATE_PENDING",
+      "sources": [
+        {
+          "source": "LVI-C04-PI-D554-AUTHOR-SOURCE",
+          "anchors": [
+            {
+              "line": 581,
+              "anchor": "Em seguida vieram as **Âncoras do Limiar**: estruturas capazes de negar fendas hostis, invocações não autorizadas e atalhos planares para dentro de setores protegidos.",
+              "anchor_sha256": "a4caf15a25c7141404ba3813402efe50e4e0f13e4bfe3f3adbc86a5c52fffcb1"
+            },
+            {
+              "line": 585,
+              "anchor": "**ASTRA —** Isso precisa ser distinguido da antiga rede dos Arquitetos. Também não significa que tenhamos descoberto como ela funciona.",
+              "anchor_sha256": "414c2945283c12ddf3f8ace05f7d2cdd91e669bad1d118236d7a32d07b307bc9"
+            },
+            {
+              "line": 587,
+              "anchor": "**LUCAS —** Perfeitamente. Estes seriam mecanismos meus, criados do zero. Os futuros Portais do Horizonte, se os desenvolvermos, são outro assunto: transporte consentido, não uma porta de invasão.",
+              "anchor_sha256": "cdef2f62e34550b26aec6f49ac4261ec8cc806c3860cb3d799e6b35bdf58c271"
+            },
+            {
+              "line": 591,
+              "anchor": "**MIREN —** Quero que nenhuma âncora interfira em pesquisa legítima só porque o laboratório está estudando uma anomalia.",
+              "anchor_sha256": "1af146ad22cffec8d161ff9de02612f3951cf89af291347940dd3d3a848e6bd4"
+            }
+          ]
+        },
+        {
+          "source": "LVI-C04-PII-D555-AUTHOR-SOURCE",
+          "anchors": [
+            {
+              "line": 812,
+              "anchor": "Nas bordas do território, **Âncoras do Limiar** passaram a proteger acessos dimensionais contra invasões hostis. Seus mecanismos não reativaram a antiga rede dos Arquitetos; eram criações próprias e independentes de Lucas.",
+              "anchor_sha256": "1978cfdd14f8ff25e38606077d6a7ab9e9253b525c08c6a18ec4ead4864cb2df"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
