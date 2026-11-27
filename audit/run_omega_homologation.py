@@ -30,7 +30,7 @@ def measure(name, func):
         result = func()
         row = {"stage": name, "status": "PASS", **result}
     except Exception as exc:
-        row = {"stage": name, "status": "FAIL", "error_type": type(exc).__name__}
+        row = {"stage": name, "status": "FAIL", "error_type": type(exc).__name__, "reason_code": next((s for s in ("Missing Codex delta","Missing coherence review","Scene Codex Sync required","Codex changed after preparation","Editorial preparation receipt") if s in str(exc)), "UNCLASSIFIED_VALIDATION_ERROR")}
     row["elapsed_seconds"] = round(time.perf_counter()-t, 6)
     print(json.dumps(row, sort_keys=True), flush=True)
     return row
