@@ -217,7 +217,73 @@ def verify_macro34_start(root,archive):
     require(cp["production_gate"]=="HOLD" and not cp["canon_changed"] and not cp["official_checkpoint_changed"] and not cp["semantic_certification"] and not cp["macro_complete"],"gate")
     return {**result,"status":"PASS_NATIVE_MACRO_0034_PARTIAL","authority_counts":dict(Counter(x["authority"] for x in allr)),"visibility_counts":dict(Counter(x["visibility"] for x in allr)),"next_line":12414,"macro_complete":False,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False}
 
+def verify_macro34_close(root,archive):
+    from collections import Counter
+    root=Path(root); archive=Path(archive)
+    prior=verify_macro34_start(root,archive)
+    c0=read(root,ROOT+"recovery-checkpoint-0034-partial-01-validated.json","59de9e77c58e7dbb717007629a14e8b1b4e75e19")
+    require(prior["next_line"]==c0["next_line"]==12414 and c0["native_validation"]=="PASS","prior gate")
+    opening=read(root,c0["receipt_path"],c0["receipt_blob"],c0["receipt_sha256"])
+    cp=read(root,ROOT+"recovery-checkpoint-0034-closure-pending.json","15a517b48aa2749995012602a7597ebdeb201dac")
+    r=read(root,cp["receipt_path"],"b91bd09a544849ab065b114e3295a1c946354a5e",cp["receipt_sha256"])
+    q=read(root,"audit/omega008-c/bulk-macro-queue.json","e5a5f9e358d20acf8559f6313c2da24b64665f48")["macros"]
+    m=q[33]
+    require(r["previous_checkpoint_blob"]==cp["previous_checkpoint_blob"]=="59de9e77c58e7dbb717007629a14e8b1b4e75e19" and r["release_blob"]==cp["release_blob"]==c0["release_blob"],"chain")
+    require(r["previous_macro_id"]==q[32]["id"] and r["official_unit_seal"]==m["unit_seal"] and cp["next_macro"]==q[34],"queue")
+    source=SourceCache(archive,read(archive,"history/sources/MANIFEST.json","2048141263f66151230119af9b0ee51796ac846b")).get(m["source"])
+    new=validate_receipt(r,m,source,r["project"],ARCHIVE,previous_ids=[x["id"] for x in opening["records"]],expected_range=[12414,20427])
+    allr=opening["records"]+r["records"]; allc=opening["coverage"]+r["coverage"]
+    combined=dict(r,range=[10230,20427],records=allr,coverage=allc,axis_coverage={"assessed":list(range(1,31)),"represented":sorted({i for x in allr for i in x["axes"]})})
+    result=validate_receipt(combined,m,source,r["project"],ARCHIVE)
+    require(new["lines"]==8014 and new["records"]==new["coverage"]==cp["records"]==50,"new counts")
+    require(result["lines"]==10198 and result["records"]==result["coverage"]==cp["macro_records"]==70,"macro counts")
+    require(len({x["id"] for x in allr})==70 and all(x["book"]=="IV" and x["chapter_hint"] in (10,11) and x["day"] in range(388,394) for x in allr),"scope")
+    require(all((x["evidence"]["role"]=="Prompt")==(x["authority"]=="AUTHOR_DIRECTION_NOT_EVENT") for x in allr),"author separation")
+    require(all(x["visibility"].startswith("READER_ONLY") for x in allr if x["type"]=="reader_scene"),"reader isolation")
+    require(all(x["visibility"].startswith("RESTRICTED") for x in allr if x["type"]=="knowledge"),"private knowledge")
+    require(all(x["authority"]=="METADATA_NOT_EVENT" for x in allr if x["type"]=="metadata"),"metadata separation")
+    require(all(x["authority"]=="NARRATOR_PROPOSED_BRANCH_NOT_EVENT" for x in allr if x["type"]=="transition_options"),"teaser separation")
+    require(source[0][14548]=="CAEDREN." and source[0][18322]=="## Prompt:" and "cinco arcos" in source[0][18325] and "Dia 423" in source[0][17714],"literal narrative anchors")
+    require(source[0][20427]=="" and source[0][20428]=="— Vamos fazer isso direito.","literal continuation")
+    require(cp["next_line"]==r["next_line"]==q[34]["start"]==20428 and q[34]["previous_macro"]==m["id"],"next queue")
+    require(cp["staging_records"]==c0["staging_records"]+50==2513 and cp["book_counts"]["IV"]==391 and cp["completed_macros"]==33,"staging counts")
+    require(cp["production_gate"]=="HOLD" and not cp["canon_changed"] and not cp["official_checkpoint_changed"] and not cp["semantic_certification"],"gate")
+    return {**result,"status":"PASS_NATIVE_MACRO_0034_COMPLETE","new_records":50,"new_lines":8014,"next_line":20428,"macro_complete":True,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False}
+
+def verify_cycle_30_34(root,archive):
+    from collections import Counter
+    root=Path(root); archive=Path(archive)
+    prior=verify_macro34_close(root,archive)
+    require(prior["macro_complete"],"closure")
+    review=read(root,ROOT+"cycle-0030-0034-consolidated-review-pending.json","8f7c55cf13a36a5ba07821f4e2cfbb96fdc06de4")
+    q=read(root,"audit/omega008-c/bulk-macro-queue.json","e5a5f9e358d20acf8559f6313c2da24b64665f48")["macros"]
+    allr=[]; total=0
+    for i,g in enumerate(review["macros"],30):
+        m=q[i-1]; cursor=m["start"]; group=[]
+        require(g["macro"]==i,"cycle order")
+        for entry in g["receipts"]:
+            r=read(root,entry["path"],entry["blob"])
+            require(r["range"]==entry["range"] and r["range"][0]==cursor and r["macro_id"]==m["id"] and r["source"]==m["source"],"cycle range")
+            cursor=r["range"][1]+1;group.extend(r["records"])
+        axes=sorted({a for x in group for a in x["axes"]})
+        require(cursor==m["end"]+1 and g["lines"]==m["lines"] and g["records"]==len(group),"cycle coverage")
+        require(g["axes_represented"]==axes and g["axes_unrepresented"]==sorted(set(range(1,31))-set(axes)),"axis report")
+        total+=g["lines"];allr.extend(group)
+    axes=sorted({a for x in allr for a in x["axes"]}); ids={x["id"] for x in allr}
+    t=review["totals"]
+    require(total==t["lines"]==48624 and len(allr)==len(ids)==t["records"]==t["unique_ids"]==391 and axes==t["axes_represented"]==list(range(1,31)),"cycle totals")
+    require(t["authority_counts"]==dict(Counter(x["authority"] for x in allr)) and t["visibility_counts"]==dict(Counter(x["visibility"] for x in allr)),"cycle authority ledger")
+    require(all(x["promotion"] is False for x in allr),"no promotion")
+    require(all(x["visibility"].startswith("READER_ONLY") for x in allr if x["type"]=="reader_scene"),"reader boundary")
+    require(all(x["visibility"].startswith("RESTRICTED") for x in allr if x["type"]=="reserved"),"reserved boundary")
+    cache=SourceCache(archive,read(archive,"history/sources/MANIFEST.json","2048141263f66151230119af9b0ee51796ac846b"))
+    s1=cache.get(q[31]["source"])[0]; s2=cache.get(q[32]["source"])[0]
+    require("O menino" in s1[291357] and "sua mãe" in s1[291357] and "MARA" in s1[291367] and "O homem observava" in s2[4948],"Tilo conflict preserved")
+    require("300×"==s2[9358] and "100×"==s2[9512] and "100×"==s2[9354],"power anchors")
+    require(review["checks"]["production_gate"]=="HOLD" and review["checks"]["semantic_exhaustive"] is False and review["checks"]["independent_review"] is False,"review scope")
+    return {**prior,"status":"PASS_NATIVE_CYCLE_0030_0034","cycle_lines":total,"cycle_records":len(allr),"cycle_unique_ids":len(ids),"cycle_axes_represented":axes,"cycle_authority_counts":t["authority_counts"],"cycle_visibility_counts":t["visibility_counts"],"cycle_review":"PASS_STAGING_ONLY","tilo_resolution":"UNRESOLVED_NO_MERGE","macro33_axes_represented":29}
+
 def main():
     p=argparse.ArgumentParser();p.add_argument("--engine-root",default=".");p.add_argument("--archive-root",required=True)
-    a=p.parse_args();print(json.dumps(verify_macro34_start(a.engine_root,a.archive_root),sort_keys=True))
+    a=p.parse_args();print(json.dumps(verify_cycle_30_34(a.engine_root,a.archive_root),sort_keys=True))
 if __name__=="__main__":main()
