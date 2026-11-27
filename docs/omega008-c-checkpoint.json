@@ -2,7 +2,7 @@
   "schema": "worldroot-omega008-c-checkpoint-v1",
   "project": "CRONICAS_DE_UM_NOVO_MUNDO",
   "protocol": "OMEGA-008 C",
-  "status": "HISTORICAL_INTAKE_MACRO_0015_RECOVERED_FINAL_REVIEW_DEFERRED",
+  "status": "HISTORICAL_INTAKE_MACRO_0016_RECOVERED_FINAL_REVIEW_DEFERRED",
   "engine_base": "b7ba937bcaeac185f3ac46bc93e8e1a2fe516b49",
   "source_archive": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
   "branch": "review/omega-cycle-1",
@@ -246,7 +246,8 @@
     "Book II macro 0012 grouped recovery complete; D173 Coliseu fire and Véspera rescue, D176 Eldren Voss testimony and Tecelã alias, D178 six new individuals once only, protected Sombras affiliation, integrated Aurora prototype and open cost discussion deferred.",
     "Book II macro 0013 grouped recovery complete; D178-D179 integration and Aurora tests, D180 Miren disclosure and bridge injuries, D181 first limited Sombras operation and open voice imitation scene deferred.",
     "Book II macro 0014 grouped recovery complete; D181 Helion rescue, D184 Riacho liberation, D197 Aurora phase I, D199 competing continuation quarantined and overlapping source times deferred, D200 gift scene open.",
-    "Book II macro 0015 grouped recovery complete; D200 festival, gifts, D201 education and archival research; D199 conflict quarantine unchanged. Next literal author prompt closes Book II and opens Book III."
+    "Book II macro 0015 grouped recovery complete; D200 festival, gifts, D201 education and archival research; D199 conflict quarantine unchanged. Next literal author prompt closes Book II and opens Book III.",
+    "Book III macro 0016 grouped recovery complete; D201-D204 Horizonte Aberto, Leviatã, conditional port and maritime research, voluntary 10k horizon, first véu-de-rio, Aurel/Naira gradual romance. Source parts 003/004 join inside line 140991 verified; new evidence shape pending native review; D199 quarantine retained."
   ],
   "next": {
     "stage": 1,
@@ -256,16 +257,16 @@
     "start_line": 1217,
     "end_rule": "through next complete narrative choice boundary, bounded by complexity",
     "checkpoint": "docs/omega008-c-checkpoint.json",
-    "action": "Active bulk.recovery_cursor=135471; continue Book III macro 0016 through 145521, author closes Book II and requests port/naval exploration. Preserve prior receipts and dated states; global reconciliation and homologation deferred through D579. No canon or motor changes."
+    "action": "Active bulk.recovery_cursor=145522; continue Book III macro 0017 through 155786, D204 open economic council scene; copying and ancient navigation evidence must be confirmed in source, not inferred from author request. Preserve prior receipts and dated states; global reconciliation and homologation deferred through D579. No canon or motor changes."
   },
   "canon_changed": false,
   "stage00_complete": false,
   "book_complete": false,
   "overall_complete": false,
   "previous_checkpoint": {
-    "commit": "56473ad74d34fe8273a0894ddbc005f4bfd97a6b",
-    "blob": "a5282aee727cd026e4b5536c23aa9e30da5fcea5",
-    "sha256_utf8": "4d8c5561913206acb698c8f21b0305286e078de01081fcd2703d66a078fe89c6"
+    "commit": "0f72465fc482eff400ab9956ed9893fca3d4c7b6",
+    "blob": "5586b1b1ab3a70a0ea8baef1dac40948aefabed3",
+    "sha256_utf8": "ad7dd625533639d9ef9dc030769d86971ee50171e8966bb8725532ff0953316c"
   },
   "lots": [
     {
@@ -357,7 +358,7 @@
       "records": 21,
       "next_review_line": 1680
     },
-    "semantic_cursor": 135471,
+    "semantic_cursor": 145522,
     "semantic_pilot_complete": true,
     "independent_review": false,
     "semantic_pilot_scope": "CONTROLLER_GROUPED_REVIEW_NOT_EXHAUSTIVE_OR_INDEPENDENT",
@@ -420,26 +421,26 @@
         30
       ],
       "book_hint": "III",
-      "end": 145521,
-      "id": "d1340817b6c7970dc27635a5582c87abe68ae864b50914f17a8a60016245af21",
-      "lines": 10051,
+      "end": 155786,
+      "id": "92a6e42e95c314278d1e3f88328283e9b602edc040d123ded9e42d1321d0cf8e",
+      "lines": 10265,
       "order_scope": "SOURCE_ORDER_NOT_EVENT_TIME",
-      "previous_macro": "f1804400cd289274037ad50a1f2f1d7ecaa560b87674011e99de9776333ae13f",
+      "previous_macro": "d1340817b6c7970dc27635a5582c87abe68ae864b50914f17a8a60016245af21",
       "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
-      "start": 135471,
+      "start": 145522,
       "status": "PENDING",
-      "unit_seal": "1d4862d9839b53301da2d4659763f61f429d816d6ccdb6adbb68ae54768cb3ed",
+      "unit_seal": "beafd58f0db5eff789e6207082a6ce7c6acf23b42a82e54865d6384191b08209",
       "units": 38
     },
     "open_boundary": {
       "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
-      "after_line": 135470,
-      "next_line": 135471,
-      "day": 201,
-      "chapter": 37,
-      "reason": "End of Book II response; next source begins author prompt explicitly closing Book II and opening Book III with port and expedition project. No new event inferred."
+      "after_line": 145521,
+      "next_line": 145522,
+      "day": 204,
+      "chapter": 4,
+      "reason": "07h17 Gabinete Econômico, Lucas postpones noble hearing until corridor data, asks territorial competencies and interlocutors. Scene open before next decision."
     },
-    "recovery_cursor": 135471,
+    "recovery_cursor": 145522,
     "native_validated_through": 11227,
     "recovery_policy": {
       "mode": "RECOVER_FIRST_REVIEW_AT_CURRENT_DAY",
@@ -640,6 +641,20 @@
         "day_start": 200,
         "day_end": 201,
         "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
+      },
+      {
+        "macro_id": "d1340817b6c7970dc27635a5582c87abe68ae864b50914f17a8a60016245af21",
+        "path": "audit/omega008-c/bulk-semantic-macro-0016.json",
+        "sha256_utf8": "358cdd184a50833af5b8a52f6c2869dabd1f0e47a49926517cc0eb87eca1f5e3",
+        "range": [
+          135471,
+          145521
+        ],
+        "records": 53,
+        "sections": 10,
+        "day_start": 201,
+        "day_end": 204,
+        "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
       }
     ],
     "recovered_macro_ids": [
@@ -657,9 +672,10 @@
       "70066e9929724fb649c6425c4269c6cad7fde6396a8d3600a4a2d4f66cff06ca",
       "874c1734717af63a3f05c72a8f75701a9771563f5c49f1ecf470bfe1b4c39985",
       "b2c6faa567bc2ab6b074d304df6eb0919a65ef14db4f01cc8de34e73e653f792",
-      "f1804400cd289274037ad50a1f2f1d7ecaa560b87674011e99de9776333ae13f"
+      "f1804400cd289274037ad50a1f2f1d7ecaa560b87674011e99de9776333ae13f",
+      "d1340817b6c7970dc27635a5582c87abe68ae864b50914f17a8a60016245af21"
     ],
-    "total_candidates_recovered": 1236,
+    "total_candidates_recovered": 1289,
     "book_I_intake": {
       "range": [
         1,
