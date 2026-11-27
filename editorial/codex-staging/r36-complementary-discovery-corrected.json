@@ -1,0 +1,237 @@
+{
+  "schema": "r36-complementary-discovery-v1",
+  "status": "CORRECTED_DISCOVERY_REGISTER_NOT_EXHAUSTIVE",
+  "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+  "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+  "source_offset": 140990,
+  "base_checkpoint": "68ed909c5752abcec99aa7d726d94251d31eac0e",
+  "candidates": [
+    {
+      "id": "jardim-errante",
+      "domain": "technology",
+      "day": 208,
+      "description": "Embarcação de pesquisa e transporte; capitã Saira; Veias do Alto; dimensões desconhecidas.",
+      "evidence": [
+        {
+          "line": 159883,
+          "text": "— SAIRA VENN. Capitã do Jardim Errante."
+        },
+        {
+          "line": 160021,
+          "text": "— Chamamos de Veias do Alto."
+        },
+        {
+          "line": 160093,
+          "text": "O Jardim Errante era uma pequena embarcação de pesquisa e transporte."
+        }
+      ],
+      "status": "CANDIDATE_REQUIRES_FULL_PROFILE_AND_AUTHOR_GATE"
+    },
+    {
+      "id": "saira-venn",
+      "domain": "character",
+      "day": 208,
+      "description": "Capitã humana; autonomia e conhecimento de navegação aérea.",
+      "evidence": [
+        {
+          "line": 159883,
+          "text": "— SAIRA VENN. Capitã do Jardim Errante."
+        },
+        {
+          "line": 160093,
+          "text": "O Jardim Errante era uma pequena embarcação de pesquisa e transporte."
+        }
+      ],
+      "status": "CANDIDATE_REQUIRES_FULL_PROFILE_AND_AUTHOR_GATE"
+    },
+    {
+      "id": "doru-khelen",
+      "domain": "character",
+      "day": 208,
+      "description": "Navegador Khelen; formações minerais naturais.",
+      "evidence": [
+        {
+          "line": 159951,
+          "text": "Um dos navegadores, DORU, pertencia aos KHELEN, um povo cujos corpos apresentavam formações minerais naturais. Suas marcas cristalinas não eram armaduras, implantes nem efeitos de CREATION."
+        }
+      ],
+      "status": "CANDIDATE_REQUIRES_FULL_PROFILE_AND_AUTHOR_GATE"
+    },
+    {
+      "id": "nuri-arva",
+      "domain": "character",
+      "day": 208,
+      "description": "Botânica; pele bronzeada, tranças com sementes.",
+      "evidence": [
+        {
+          "line": 159953,
+          "text": "Outra tripulante, NÚRI ARVA, era uma botânica de pele bronzeada e cabelos presos em longas tranças com pequenas sementes entrelaçadas."
+        }
+      ],
+      "status": "CANDIDATE_REQUIRES_FULL_PROFILE_AND_AUTHOR_GATE"
+    },
+    {
+      "id": "veias-do-alto",
+      "domain": "world",
+      "day": 208,
+      "description": "Correntes mágicas naturais utilizadas por navegadores; origem integral desconhecida.",
+      "evidence": [
+        {
+          "line": 160021,
+          "text": "— Chamamos de Veias do Alto."
+        },
+        {
+          "line": 160683,
+          "text": "As Veias do Alto eram fenômenos mágicos naturais utilizados por navegadores de outra tradição."
+        }
+      ],
+      "status": "CANDIDATE_REQUIRES_FULL_PROFILE_AND_AUTHOR_GATE"
+    },
+    {
+      "id": "manta-tempestade",
+      "domain": "fauna",
+      "day": 206,
+      "description": "Manta jovem presa e libertada; sem captura, domesticação ou morte.",
+      "evidence": [
+        {
+          "line": 154226,
+          "text": "E uma das mantas de tempestade apareceu acima da encosta."
+        },
+        {
+          "line": 154268,
+          "text": "Uma criatura jovem, semelhante às mantas adultas."
+        },
+        {
+          "line": 154270,
+          "text": "Estava presa entre duas estruturas antigas, com parte de uma membrana enroscada num cabo corroído."
+        },
+        {
+          "line": 155929,
+          "text": "Uma jovem manta de tempestade foi libertada e reencontrou a adulta. Não houve captura, domesticação nem morte."
+        }
+      ],
+      "status": "CANDIDATE_REQUIRES_FULL_PROFILE_AND_AUTHOR_GATE"
+    },
+    {
+      "id": "ibis-01",
+      "domain": "technology",
+      "day": 206,
+      "description": "Aparelho recuperado com registros de voo preservados.",
+      "evidence": [
+        {
+          "line": 153754,
+          "text": "O ÍBIS-01 continuava imóvel numa encosta acima do antigo Marco Sete."
+        },
+        {
+          "line": 154716,
+          "text": "A expedição retornou com o ÍBIS recuperado, os registros de voo preservados, a confirmação de uma antiga instalação de suspensão de cargas e a experiência extraordinária de ter ajudado uma criatura mágica sem capturá-la."
+        }
+      ],
+      "status": "CANDIDATE_REQUIRES_FULL_PROFILE_AND_AUTHOR_GATE"
+    },
+    {
+      "id": "instalacao-suspensao-cargas",
+      "domain": "archaeology",
+      "day": 206,
+      "description": "Instalação elevada de suspensão de cargas, distinta do Marco Sete; rede maior não comprovada.",
+      "evidence": [
+        {
+          "line": 154008,
+          "text": "Do outro lado, três estruturas metálicas surgiam entre rochas."
+        },
+        {
+          "line": 154716,
+          "text": "A expedição retornou com o ÍBIS recuperado, os registros de voo preservados, a confirmação de uma antiga instalação de suspensão de cargas e a experiência extraordinária de ter ajudado uma criatura mágica sem capturá-la."
+        },
+        {
+          "line": 154728,
+          "text": "Havia realmente existido infraestrutura elevada para movimentação de cargas."
+        }
+      ],
+      "status": "CANDIDATE_REQUIRES_FULL_PROFILE_AND_AUTHOR_GATE"
+    },
+    {
+      "id": "kairon-resgate-manta",
+      "domain": "event",
+      "day": 206,
+      "description": "Resgate coletivo com participação direta de Káiron; não confundir com observação D204.",
+      "evidence": [
+        {
+          "line": 154442,
+          "text": "E KÁIRON, protegido pelo conjunto, alcançou a criatura menor."
+        },
+        {
+          "line": 154448,
+          "text": "KÁIRON recebeu parte do impacto sobre a armadura."
+        },
+        {
+          "line": 154716,
+          "text": "A expedição retornou com o ÍBIS recuperado, os registros de voo preservados, a confirmação de uma antiga instalação de suspensão de cargas e a experiência extraordinária de ter ajudado uma criatura mágica sem capturá-la."
+        },
+        {
+          "line": 155929,
+          "text": "Uma jovem manta de tempestade foi libertada e reencontrou a adulta. Não houve captura, domesticação nem morte."
+        }
+      ],
+      "status": "CANDIDATE_REQUIRES_FULL_PROFILE_AND_AUTHOR_GATE"
+    },
+    {
+      "id": "marco-sete",
+      "domain": "archaeology",
+      "day": 204,
+      "description": "Marco físico VII, correspondência com carta antiga; posição original e rota completa não confirmadas.",
+      "evidence": [
+        {
+          "line": 147171,
+          "text": "— Temos nosso primeiro ponto de correspondência física."
+        },
+        {
+          "line": 146696,
+          "text": "MARCO DE REFERÊNCIA — SETOR SETE."
+        }
+      ],
+      "status": "CANDIDATE_REQUIRES_FULL_PROFILE_AND_AUTHOR_GATE"
+    }
+  ],
+  "coverage_policy": {
+    "books": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "domains": [
+      "character",
+      "world",
+      "technology",
+      "journey",
+      "archaeology",
+      "event"
+    ],
+    "preserve_prior": true,
+    "require_scene_inventory": true,
+    "require_source_spans": true,
+    "distinguish_planning_from_events": true,
+    "require_registry_crosscheck": true,
+    "author_gate": true
+  },
+  "pending": [
+    "complete journey",
+    "old drone chronology",
+    "Povos do Alto profile",
+    "full profile fields and exact evidence review",
+    "books I-II complementary scan",
+    "native regression"
+  ],
+  "checks": {
+    "unique_ids": true,
+    "exact_literal_matches": true,
+    "reference_count": 24
+  },
+  "production_hold": true,
+  "canon_changed": false,
+  "free_only": true,
+  "previous_blob": "b33c7878291e6108a6b31ecc554f7ab8245b20f7"
+}
