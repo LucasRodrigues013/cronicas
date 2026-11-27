@@ -29,8 +29,8 @@ jobs:
           python -m unittest discover -s tests -p 'test_omega_book_iv_handoff.py' -q
       - name: Public-safe aggregate staging audit (no archive checkout)
         run: python -m worldroot.omega_book_iv_handoff
-  literal-private-only:
-    if: github.event.repository.private == true
+  literal-authorized-public:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/review/omega-turbo-v3'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -45,4 +45,8 @@ jobs:
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
         with:
           python-version: '3.12'
-      - run: python -m worldroot.omega_book_iv_handoff --archive-root isolated-archive
+      - name: Verify pinned archive and emit only aggregate results
+        run: python -m worldroot.omega_book_iv_handoff --archive-root isolated-archive
+      - name: Remove ephemeral archive
+        if: always()
+        run: rm -rf isolated-archive
