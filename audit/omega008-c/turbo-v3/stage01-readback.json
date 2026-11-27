@@ -1,0 +1,107 @@
+{
+  "schema": "OMEGA_TURBO_V3_STAGE01_READBACK",
+  "base": "49b30d02d95ef03afbb4686e7edc951a9b44d4ea",
+  "branch": "review/omega-turbo-v3",
+  "official_checkpoint_base": "97679a36b0a9cff33ee231c844c018e49658dc8f",
+  "official_checkpoint_sha256": "1b92a806c9415fb70b95e1d5ed1ee0670585c5c2bb75b4a4d400ea5a182e6c5c",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "archive_head": {
+    "day": 579,
+    "sequence": 50,
+    "pending": "LVI-C09-PII-D580-AUTHOR-SOURCE"
+  },
+  "official_cursor": 206662,
+  "staged_cursor": 227182,
+  "official_macro_count": 22,
+  "staged_macro_count": 24,
+  "official_candidates": 1656,
+  "additional_staged_candidates": 122,
+  "queue_count": 116,
+  "readback": {
+    "method": "Connector-side UTF-8 SHA-256 recalculation from pinned source blob; SHA-256 implementation checked against abc test vector; record role, range, authority, visibility, coverage membership, IDs and represented-axis ledger checked.",
+    "source_blob": "0e9c025f5d9167321d2dc9a512b655a438d197d8",
+    "logical_line_offset": 196030,
+    "macros": [
+      {
+        "macro": "0023",
+        "records": 56,
+        "anchors_match": 56,
+        "roles_match": 56,
+        "coverage_hashes_match": 5,
+        "range": [
+          206662,
+          216932
+        ],
+        "receipt_sha256": "e19a76ce1ffdb2a125853409134454adb63314120343b101279475edf9d3f703",
+        "checkpoint_sha256": "88ac27105f87b1c6d7d18d3129274f63346c50224eb74b203174d1a4783fd612",
+        "receipt_hash_matches": true,
+        "unrepresented_axes": [
+          21
+        ]
+      },
+      {
+        "macro": "0024",
+        "records": 66,
+        "anchors_match": 66,
+        "roles_match": 66,
+        "coverage_hashes_match": 7,
+        "range": [
+          216933,
+          227181
+        ],
+        "receipt_sha256": "fa19454c3170bc451b3e95173842bea9da0e466e8d11d1b493c019add670afc1",
+        "checkpoint_sha256": "84d675182d40b392ab5579c04426f34ad7dddee2e3ebef9d27686d6f89a3e7f2",
+        "receipt_hash_matches": true,
+        "unrepresented_axes": []
+      }
+    ],
+    "duplicate_ids_between_pilot_macros": 0,
+    "observed_check_failures": 0,
+    "whole_source_hash_recomputed_this_turn": false
+  },
+  "semantic_sample": {
+    "ids": [
+      "O8C-B23-001",
+      "O8C-B23-014",
+      "O8C-B23-027",
+      "O8C-B24-001",
+      "O8C-B24-014",
+      "O8C-B24-040",
+      "O8C-B24-066"
+    ],
+    "scope": "Nonrandom controller spot check against original excerpts; summary main assertions supported; not full recall assessment, not independent homologation."
+  },
+  "implementation": {
+    "module": "worldroot/omega_turbo_v3.py",
+    "module_blob": "8a48c97ec2d7cc4b145c9436d9cf56b340edd0da",
+    "module_commit": "170a1c6fd7ee621279912edd3a6aaa177d7b2701",
+    "tests": "tests/test_omega_turbo_v3.py",
+    "test_blob": "de47cb94a6925fb9bacfa6ec96b60a5991c86916",
+    "test_commit": "6bf5434f57c5e908173c267504e887c2f1ebaf0d",
+    "local_unit_tests_passed": 5,
+    "local_unit_tests_total": 5,
+    "github_readback_identical_to_tested_blobs": true,
+    "full_native_regression": "NOT_RUN",
+    "real_corpus_python_benchmark": "NOT_RUN",
+    "semantic_throughput": "NOT_MEASURED",
+    "scope": "Read-only single-macro adaptive window planner, reuses V2 SourceCache interface. Risk hints are heuristic, not semantic classification. No persistent cache, orchestration integration, semantic workers or release gate implemented."
+  },
+  "next_macro": {
+    "number": 25,
+    "id": "ff9b14042728612d832175caaaa63520a23f5f132b2f5e2888a20b99ffcf18e7",
+    "range": [
+      227182,
+      237425
+    ],
+    "lines": 10244,
+    "official_queue_units": 37,
+    "unit_seal": "80793ae2c2f993685c1f98767ebbbe456059a612802463393a6a68979a9ce662",
+    "status": "PENDING_NOT_EXTRACTED"
+  },
+  "policy": "Preserve recover-first policy and V2 HOLD. Do not conflate staging checkpoint with official checkpoint or canonical HEAD. Incremental candidate intake only; global reconciliation deferred until D579. Before replacing V2, benchmark same real corpus with identical source pin and semantic acceptance rubric; report time, tokens, precision/recall on independently adjudicated sample, coverage, and cost. No gain claimed yet.",
+  "release_gate": "HOLD_OFFICIAL_CHECKPOINT_PENDING_INDEPENDENT_SEMANTIC_HOMOLOGATION_AND_NATIVE_REGRESSION",
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "independent_review": false,
+  "semantic_certification": false
+}
