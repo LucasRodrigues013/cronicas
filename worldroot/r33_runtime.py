@@ -5,7 +5,8 @@ from __future__ import annotations
 import json,hashlib,os,tempfile,re
 from pathlib import Path
 from .git_cycle import canonical,sha,check_id,verify_episode
-from .editorial_guard import POLICY_PATH
+from .editorial_guard import POLICY_PATH, load_policy
+from .editorial_receipt import prepare_editorial_receipt, verify_editorial_receipt, _digest as editorial_digest
 from .memory_continuity import DOMAINS,review_creation
 from .r32_release import release_review
 
@@ -39,6 +40,53 @@ def author_context(root,head):
     draft,manifest=verify_episode(root,ident)
     if manifest["original_readback_sha256"]!=head.get("source_sha256"):raise ValueError("Draft source mismatch")
     return {"choice":choice,"choice_sha256":digest(choice),"menu_sha256":sha((root/"episodes"/ident/"draft/opcoes.json").read_bytes()),"closure_sha256":digest(closure),"policy_sha256":sha(POLICY_PATH.read_bytes())}
+EDITORIAL_BUDGET = 1700
+
+
+def preparation_required(root, ident, payload=None):
+    """Persisted preparation/request/receipt outranks opt-in inbox fields."""
+    check_id(ident)
+    root = Path(root)
+    paths = (root/"requests"/(ident+".json"), root/"preparations"/(ident+".json"),
+             root/"episodes"/ident/"review/preparation_r33.json")
+    if any(p.exists() or p.is_symlink() for p in paths):
+        return True
+    payload = payload or {}
+    return (payload.get("metadata", {}).get("worldroot_revision") in (33,34,35)
+            or any(k in payload for k in ("r33_review","r34_review","r35_review")))
+
+
+def verify_preparation_editorial(packet, payload, head, *, historical=False):
+    """Verify a trusted preparation pin, not a receipt supplied by the inbox."""
+    receipt = packet.get("editorial_receipt")
+    pin = packet.get("editorial_receipt_sha256")
+    review = payload.get("r33_review")
+    revision = 35 if "r35_plan" in packet else 34 if "r34_intent" in packet else 33
+    if (packet.get("head") != head or not isinstance(receipt, dict)
+            or not isinstance(pin, str) or not isinstance(review, dict)
+            or review.get("preparation_sha256") != packet.get("preparation_sha256")
+            or review.get("editorial_receipt_sha256") != pin
+            or payload.get("metadata", {}).get("worldroot_revision") != revision):
+        raise ValueError("Editorial preparation receipt missing, stale or downgraded")
+    if historical:
+        # Historical bytes are checked against their immutable pin, not
+        # regenerated with a later policy or renderer.
+        body = dict(receipt)
+        seal = body.pop("receipt_sha256", None)
+        if (seal != pin or editorial_digest(body) != pin
+                or receipt.get("schema") != "worldroot-editorial-receipt-v1"
+                or receipt.get("head_sha256") != editorial_digest(head)
+                or receipt.get("budget_chars") != EDITORIAL_BUDGET
+                or receipt.get("semantic_certification") is not False):
+            raise ValueError("Historic editorial preparation receipt mismatch")
+        result = {"integrity_verified": True, "semantic_certification": False,
+                  "generation_evaluated": False}
+    else:
+        result = verify_editorial_receipt(receipt, head, load_policy(), pin,
+                                          expected_budget=EDITORIAL_BUDGET)
+    return {**result, "receipt_sha256": pin}
+
+
 def preparation(root,head,delivery_id,requirements,reviewed,domain_review,scene_plan):
     check_id(delivery_id)
     if delivery_id==head["episode_id"]:raise ValueError("Cannot prepare already closed episode")
@@ -60,6 +108,9 @@ def preparation(root,head,delivery_id,requirements,reviewed,domain_review,scene_
     report=review_creation(root,head,requirements,reviewed)
     if report["status"]!="REVIEWED_EVIDENCE_THRESHOLD_MET":raise ValueError("Memory threshold or critical evidence failed")
     result={"schema":"worldroot-r33-preparation-v1","project":"CRONICAS_DE_UM_NOVO_MUNDO","delivery_id":delivery_id,"head":head,"authority":auth,"requirements":requirements,"reviewed":reviewed,"domain_review":domain_review,"scene_plan":scene_plan,"memory":report,"canon_changed":False,"semantic_certification":False}
+    editorial = prepare_editorial_receipt(head, load_policy(), EDITORIAL_BUDGET)
+    result["editorial_receipt"] = editorial
+    result["editorial_receipt_sha256"] = editorial["receipt_sha256"]
     result["preparation_sha256"]=digest(result)
     return result
 def persist(path,packet):
@@ -102,7 +153,7 @@ def prepare_from_request(root,request):
     packet.pop("preparation_sha256")
     packet["request_sha256"]=digest(request)
     packet["preparation_sha256"]=digest(packet)
-    return {"result":persist(Path(root)/"preparations"/(ident+".json"),packet),"preparation_sha256":packet["preparation_sha256"],"delivery_id":ident,"canon_changed":False}
+    return {"result":persist(Path(root)/"preparations"/(ident+".json"),packet),"preparation_sha256":packet["preparation_sha256"],"delivery_id":ident,"editorial_receipt_sha256":packet["editorial_receipt_sha256"],"canon_changed":False}
 def verify_submission(root,head,payload):
     ident=payload["delivery_id"];check_id(ident)
     packet=read(Path(root)/"preparations"/(ident+".json"))
@@ -113,6 +164,7 @@ def verify_submission(root,head,payload):
     if digest(request)!=packet.get("request_sha256"):raise ValueError("Preparation request changed")
     review=payload.get("r33_review")
     if not isinstance(review,dict) or review.get("preparation_sha256")!=recorded:raise ValueError("Preparation not bound to submission")
+    editorial = verify_preparation_editorial(packet, payload, head)
     r32=payload["r32_review"]
     for key in ("requirements","reviewed","domain_review"):
         if r32.get(key)!=packet[key]:raise ValueError("Preparation changed: "+key)
@@ -129,7 +181,7 @@ def verify_submission(root,head,payload):
     from .character_design import verify_binding
     design=verify_binding(root,request,packet)
     r=release_review(root,head,payload)
-    extra={}
+    extra={"editorial": editorial}
     from .live_codex import validate_submission as validate_codex_submission
     codex=validate_codex_submission(root,request,packet,payload)
     if codex is not None:extra.update(codex)
@@ -148,31 +200,61 @@ def verify_submission(root,head,payload):
         extra["r35"]=validate_delivery(root,request,payload,packet["authority"]["choice"])
     elif "r35_plan" in packet:raise ValueError("R35 preparation requires R35 delivery")
     return {**extra,"schema":"worldroot-r33-receipt-v1","preparation_sha256":recorded,"request_sha256":packet["request_sha256"],"source_head_sha256":digest(head),"choice_sha256":packet["authority"]["choice_sha256"],"prose_sha256":hashlib.sha256(prose.encode()).hexdigest(),"r32":r,"reviews":reviews,"canon_changed":False,"semantic_certification":False}
+def verify_archived_preparation(root, ident, payload=None, *, current_head=None):
+    """Read one archived preparation without rewriting historical records."""
+    root=Path(root);check_id(ident)
+    receipt=read(root/"episodes"/ident/"review/preparation_r33.json");request=read(root/"requests"/(ident+".json"));prep=read(root/"preparations"/(ident+".json"))
+    value=dict(prep);seal=value.pop("preparation_sha256",None)
+    if not seal or digest(value)!=seal or digest(request)!=prep.get("request_sha256"):raise ValueError("Historic request/preparation mismatch")
+    if receipt.get("preparation_sha256")!=seal or receipt.get("request_sha256")!=digest(request) or receipt.get("source_head_sha256")!=digest(prep["head"]) or receipt.get("choice_sha256")!=prep["authority"]["choice_sha256"]:raise ValueError("Historic receipt mismatch")
+    draft,manifest=verify_episode(root,ident)
+    if receipt.get("source_sha256")!=manifest["original_readback_sha256"] or receipt.get("prose_sha256")!=hashlib.sha256(draft.prose.encode()).hexdigest():raise ValueError("Historic prose mismatch")
+    if "r34" in receipt:
+        inbox=read(root/"inbox"/(ident+".json"))
+        if inbox.get("metadata",{}).get("worldroot_revision") not in (34,35) or receipt.get("r34_input_sha256")!=digest(inbox.get("r34_review")) or prep.get("r34_intent")!=request.get("r34_intent"):
+            raise ValueError("Historic R34 intent/review mismatch")
+    if "r35" in receipt:
+        from .longform_segments import verify_longform_segments
+        inbox=read(root/"inbox"/(ident+".json"))
+        if inbox.get("metadata",{}).get("worldroot_revision")!=35 or receipt.get("r35_input_sha256")!=digest(inbox.get("r35_review")) or prep.get("r35_plan")!=request.get("r35_plan") or not verify_longform_segments(root,ident,inbox)["verified"]:
+            raise ValueError("Historic R35 plan/review/segments mismatch")
+    if "character_design" in prep and receipt.get("character_design_sha256")!=prep["character_design"]["sha256"]:raise ValueError("Historic character design binding mismatch")
+
+    marker = manifest.get("editorial_preparation")
+    new_contract = ("editorial_receipt" in prep or "editorial_receipt_sha256" in prep
+                    or "editorial" in receipt or "editorial_preparation" in manifest)
+    if new_contract:
+        inbox = read(root/"inbox"/(ident+".json"))
+        if payload is not None and inbox != payload:
+            raise ValueError("Archived inbox differs")
+        if current_head is not None and current_head != prep["head"]:
+            raise ValueError("Stale editorial source HEAD")
+        editorial = verify_preparation_editorial(prep, inbox, prep["head"], historical=True)
+        expected_marker = {"preparation_sha256": seal,
+                           "receipt_sha256": editorial["receipt_sha256"],
+                           "review_sha256": digest(receipt)}
+        if (marker != expected_marker or receipt.get("editorial") != editorial
+                or receipt.get("review_input_sha256") != digest(inbox.get("r33_review"))
+                or draft.metadata != inbox.get("metadata")
+                or ("r34_intent" in prep and "r34" not in receipt)
+                or ("r35_plan" in prep and "r35" not in receipt)):
+            raise ValueError("Archived editorial preparation binding mismatch")
+    return {"receipt": receipt, "manifest": manifest, "editorial_verified": new_contract}
+
+
 def verify_history(root):
-    """Read back archived R33 receipts, their requests, preparations and immutable prose.
-    No replay of old choices or old policy as current state.
-    """
-    root=Path(root);count=0
-    for file in sorted((root/"episodes").glob("*/review/preparation_r33.json")):
-        ident=file.parent.parent.name;check_id(ident)
-        receipt=read(file);request=read(root/"requests"/(ident+".json"));prep=read(root/"preparations"/(ident+".json"))
-        value=dict(prep);seal=value.pop("preparation_sha256",None)
-        if not seal or digest(value)!=seal or digest(request)!=prep.get("request_sha256"):raise ValueError("Historic request/preparation mismatch")
-        if receipt.get("preparation_sha256")!=seal or receipt.get("request_sha256")!=digest(request) or receipt.get("source_head_sha256")!=digest(prep["head"]) or receipt.get("choice_sha256")!=prep["authority"]["choice_sha256"]:raise ValueError("Historic receipt mismatch")
-        draft,manifest=verify_episode(root,ident)
-        if receipt.get("source_sha256")!=manifest["original_readback_sha256"] or receipt.get("prose_sha256")!=hashlib.sha256(draft.prose.encode()).hexdigest():raise ValueError("Historic prose mismatch")
-        if "r34" in receipt:
-            inbox=read(root/"inbox"/(ident+".json"))
-            if inbox.get("metadata",{}).get("worldroot_revision") not in (34,35) or receipt.get("r34_input_sha256")!=digest(inbox.get("r34_review")) or prep.get("r34_intent")!=request.get("r34_intent"):
-                raise ValueError("Historic R34 intent/review mismatch")
-        if "r35" in receipt:
-            from .longform_segments import verify_longform_segments
-            inbox=read(root/"inbox"/(ident+".json"))
-            if inbox.get("metadata",{}).get("worldroot_revision")!=35 or receipt.get("r35_input_sha256")!=digest(inbox.get("r35_review")) or prep.get("r35_plan")!=request.get("r35_plan") or not verify_longform_segments(root,ident,inbox)["verified"]:
-                raise ValueError("Historic R35 plan/review/segments mismatch")
-        if "character_design" in prep and receipt.get("character_design_sha256")!=prep["character_design"]["sha256"]:raise ValueError("Historic character design binding mismatch")
-        count+=1
-    return {"verified_r33_receipts":count,"canon_changed":False}
+    """Read back all R33 receipts and archived preparations, including missing-sidecar detection."""
+    root=Path(root);ids=set()
+    for file in (root/"episodes").glob("*/review/preparation_r33.json"):
+        ids.add(file.parent.parent.name)
+    for file in (root/"episodes").glob("*/draft/manifesto_imutavel.json"):
+        ident=file.parent.parent.name
+        manifest=read(file)
+        if "editorial_preparation" in manifest or preparation_required(root,ident):
+            ids.add(ident)
+    for ident in sorted(ids):
+        verify_archived_preparation(root,ident)
+    return {"verified_r33_receipts":len(ids),"canon_changed":False}
 
 def main():
     import argparse

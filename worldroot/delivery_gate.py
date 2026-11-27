@@ -58,6 +58,12 @@ def audit_release(root: Path, episode_id: str) -> dict:
             raise GateError("No archived literal story readback")
         draft, manifest = verify_episode(root, episode_id)
         checks["immutable_manifest"] = True
+        from .r33_runtime import preparation_required, verify_archived_preparation
+        if "editorial_preparation" in manifest or preparation_required(root, episode_id, inbox):
+            preparation = verify_archived_preparation(root, episode_id, inbox, current_head=head)
+            checks["r33_archived_preparation"] = True
+            if preparation["editorial_verified"]:
+                checks["editorial_preparation_integrity"] = True
         source = story_path.read_text(encoding="utf-8")
         checks["literal_source_equals_inbox"] = (
             source == inbox["full_text"]

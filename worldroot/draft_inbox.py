@@ -257,6 +257,21 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
             and meta.get("book") == "Livro VI"
             and payload.get("schema") != "worldroot-draft-inbox-v3"):
         raise GateError("R26 new Livro VI draft requires v3: R25 experience + fantasy review")
+    from .r33_runtime import preparation_required, verify_archived_preparation
+    required = preparation_required(root, episode_id, payload)
+    archived_preparation = None
+    if existing_manifest.is_file():
+        archived_manifest = load(existing_manifest)
+        required = required or "editorial_preparation" in archived_manifest
+        if required:
+            try:
+                archived_preparation = verify_archived_preparation(root, episode_id, payload)
+            except (ValueError, KeyError, TypeError, OSError) as exc:
+                raise GateError("Archived preparation blocked: " + str(exc)[:250]) from None
+    elif required and (not isinstance(meta, dict)
+                       or meta.get("worldroot_revision") not in (33,34,35)
+                       or not isinstance(payload.get("r33_review"), dict)):
+        raise GateError("Persisted preparation requires R33+ review and revision")
     draft, files, review_files = _assemble(
         episode_id, payload, enforce_presentation=not existing_manifest.is_file(),
         book_end_approval_verified=book_end_approval_verified, head=head,
@@ -265,7 +280,7 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
     # R32 opt-in on staged branch. Preserve immutable old v3 drafts and their choices.
     if "r34_review" in payload and meta.get("worldroot_revision") not in (34,35):
         raise GateError("R34 review requires revision 34 metadata")
-    r33_declared = meta.get("worldroot_revision") in (33,34,35) or "r33_review" in payload or "r34_review" in payload or "r35_review" in payload
+    r33_declared = required
     r32_declared = meta.get("worldroot_revision")==32 or "r32_review" in payload or r33_declared
     if r32_declared:
         from .r32_release import release_review
@@ -303,6 +318,14 @@ def archive_inbox(root: Path, inbox: Path) -> dict:
             if r35_input_sha is not None:rr["r35_input_sha256"]=r35_input_sha
             rr["source_sha256"]=sha(payload["full_text"].encode("utf-8"))
         review_files["preparation_r33.json"]=_bytes(rr)
+        if "editorial" in rr:
+            manifest = json.loads(files["manifesto_imutavel.json"])
+            manifest["editorial_preparation"] = {
+                "preparation_sha256": rr["preparation_sha256"],
+                "receipt_sha256": rr["editorial"]["receipt_sha256"],
+                "review_sha256": sha(_bytes(rr)),
+            }
+            files["manifesto_imutavel.json"] = _bytes(manifest)
     if existing_manifest.is_file():
         for name, body in files.items():
             existing = root / "episodes" / episode_id / "draft" / name
