@@ -541,8 +541,12 @@
           "anchor": "AELDRIC assentiu."
         },
         {
-          "line": 33121,
+          "line": 33119,
           "anchor": "Nela estava representado o símbolo das Quatro Correntes."
+        },
+        {
+          "line": 33115,
+          "anchor": "Uma pequena peça de metal, cuidadosamente gravada."
         }
       ]
     },
@@ -581,8 +585,16 @@
           "anchor": "A criança mostrou um pequeno desenho."
         },
         {
-          "line": 19210,
-          "anchor": "A menina sorriu."
+          "line": 19214,
+          "anchor": "— É para a LIRA."
+        },
+        {
+          "line": 19200,
+          "anchor": "Três Arcos."
+        },
+        {
+          "line": 19202,
+          "anchor": "Calderva."
         }
       ]
     },
@@ -671,6 +683,22 @@
         {
           "line": 10701,
           "anchor": "O Coração de AERÚN ainda não existe e não deve ser tratado como fonte atual de energia."
+        }
+      ]
+    },
+    {
+      "id": "candidate:academia-projeto-pessoas",
+      "field": "history",
+      "value": "Designação do projeto convencional em caderno de Lucas; hífen simples no texto literal explica a ausência de correspondência com travessão editorial. Não afirmar conclusão.",
+      "source": "history/sources/06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "valid_at": "D519",
+      "kind": "NOMINAL_PUNCTUATION_VARIANT",
+      "status": "AUTHOR_GATE_PENDING",
+      "scope": "AUTHOR_ONLY",
+      "anchors": [
+        {
+          "line": 64840,
+          "anchor": "ACADEMIA - PROJETO DAS PESSOAS"
         }
       ]
     }
@@ -2820,7 +2848,7 @@
     },
     {
       "id": "candidate:academia-projeto-pessoas",
-      "status": "PENDENTE_FONTE",
+      "status": "LITERAL_PROPOSAL_PENDING",
       "classification": "EDITORIAL_DESCRIPTION",
       "identity_merge": false
     },
@@ -3588,7 +3616,7 @@
     },
     {
       "id": "candidate:academia-projeto-pessoas",
-      "status": "SEMANTIC_REVIEW_PENDING"
+      "status": "TARGETED_PROPOSAL_PENDING"
     },
     {
       "id": "candidate:ceramica-fornos-baixos",
@@ -3644,10 +3672,164 @@
     }
   ],
   "counts": {
-    "observations": 33,
-    "targets": 19,
+    "observations": 34,
+    "targets": 20,
     "labels": 158,
     "contextual_label_proposals": 26,
-    "zero_hit_proposals": 11
-  }
+    "zero_hit_proposals": 12,
+    "candidate_inventory": 24,
+    "candidate_targets": 4,
+    "official_targets": 16,
+    "label_triage_counts": {
+      "DESCRIPTIVE_OR_UNCLASSIFIED_NO_GLOBAL_ID": 116,
+      "CONTEXTUAL_PROPOSAL": 26,
+      "NAMED_OR_AMBIGUOUS_PENDING": 16
+    }
+  },
+  "candidate_review_inventory": [
+    {
+      "id": "saira-venn",
+      "recovered": 10,
+      "pending": 30,
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "doru",
+      "recovered": 8,
+      "pending": 32,
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "nuri-arva",
+      "recovered": 10,
+      "pending": 30,
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "jardim-errante",
+      "recovered": 7,
+      "pending": 3,
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "veias-do-alto",
+      "recovered": 3,
+      "pending": 3,
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "manta-tempestade",
+      "recovered": 5,
+      "pending": 3,
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "bruma-clara",
+      "recovered": 5,
+      "pending": 3,
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "ibis-01",
+      "recovered": 4,
+      "pending": 3,
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "marco-sete",
+      "recovered": 1,
+      "pending": 3,
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "instalacao-suspensao-cargas",
+      "recovered": 3,
+      "pending": 3,
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "kairon-resgate-manta",
+      "recovered": 1,
+      "pending": 3,
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "povos-do-alto",
+      "recovered": 3,
+      "pending": 3,
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "legacy-reconnaissance-drone",
+      "recovered": 3,
+      "pending": 3,
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "calderva-journey-candidate",
+      "recovered": 4,
+      "pending": 3,
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "candidate:tarek",
+      "recovered": 2,
+      "pending": 38,
+      "status": "TARGETED_PROPOSAL_PENDING"
+    },
+    {
+      "id": "candidate:esmara",
+      "recovered": 2,
+      "pending": 38,
+      "status": "TARGETED_PROPOSAL_PENDING"
+    },
+    {
+      "id": "candidate:toran",
+      "recovered": 2,
+      "pending": 38,
+      "status": "TARGETED_PROPOSAL_PENDING"
+    },
+    {
+      "id": "candidate:nina",
+      "recovered": 2,
+      "pending": 38,
+      "status": "TARGETED_PROPOSAL_PENDING"
+    },
+    {
+      "id": "candidate:maira-kest",
+      "recovered": 2,
+      "pending": 38,
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "candidate:tomren-vale",
+      "recovered": 2,
+      "pending": 38,
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "candidate:selia-nar",
+      "recovered": 2,
+      "pending": 38,
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "candidate:navel-ardon",
+      "recovered": 2,
+      "pending": 38,
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "candidate:ilara-voss",
+      "recovered": 2,
+      "pending": 38,
+      "status": "SEMANTIC_REVIEW_PENDING"
+    },
+    {
+      "id": "candidate:yra-beldon",
+      "recovered": 2,
+      "pending": 38,
+      "status": "SEMANTIC_REVIEW_PENDING"
+    }
+  ]
 }

@@ -78,3 +78,5 @@ jobs:
           test -z "$(git -C engine status --porcelain)"
           test -z "$(git -C archive status --porcelain)"
           sha256sum engine/editorial/codex-staging/r36-multidimensional-lot-07-semantic-proposals.json
+
+# Lot 07 correction: exact readback line offsets, candidate inventory, no reindex.

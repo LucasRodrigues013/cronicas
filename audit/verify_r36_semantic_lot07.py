@@ -24,6 +24,7 @@ for f in ("04-native-candidates","05-discoveries"):
     x=json.loads((st/("r36-multidimensional-lot-"+f+".json")).read_bytes())
     candidates.update(r["id"] for r in x["characters"]+x["records"])
 assert len(candidates)==24
+assert {x['id'] for x in d['candidate_review_inventory']}==candidates
 source_map={x["path"]:(x["path"],x["blob"],None) for x in inv["source_inventory"]}
 source_map.update({x["episode"]:(x["source_path"],x["source_blob"],x["receipt_blob"]) for x in inv["closed_episode_inventory"]})
 hashes={x["source"]:x["sha256"] for x in i["sources"]}
