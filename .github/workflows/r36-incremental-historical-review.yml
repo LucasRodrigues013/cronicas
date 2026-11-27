@@ -1,5 +1,5 @@
 name: R36 incremental historical review gate (candidate only)
-# Public standard runner only; no paid storage, external services, or publication.
+# Public standard runner. One-shot approved transfer to isolated review branch only; never write canon or main.
 on:
   push:
     branches: [review/r36-b007-native-gate]
@@ -15,7 +15,9 @@ concurrency:
   cancel-in-progress: false
 jobs:
   verify:
-    if: github.event.repository.private == false && github.ref == 'refs/heads/review/r36-b007-native-gate'
+    if: github.event.repository.private == false && github.ref == 'refs/heads/review/r36-b007-native-gate' && github.actor == 'LucasRodrigues013'
+    permissions:
+      contents: write
     runs-on: ubuntu-24.04
     timeout-minutes: 12
     steps:
@@ -101,4 +103,64 @@ jobs:
           print('R36_PUBLIC_GATE_RECEIPT '+line)
           with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as f:
               f.write('## R36 B007 — validated candidate only\n\n```json\n'+line+'\n```\n')
+          PY
+      - name: Transfer exact approved B007 bytes to isolated review branch
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: |
+          python - <<'PY'
+          import hashlib, json, os, shutil, subprocess
+          from pathlib import Path
+          p=Path('audit/editorial/codex-staging/r36-book-ii-stage-b-b007-preflight-DRAFT.json')
+          def git(*args, **kwargs):
+              return subprocess.check_output(['git','-C','archive',*args],text=True,**kwargs).strip()
+          assert subprocess.check_output(['git','hash-object','--no-filters',str(p)],text=True).strip()=='43c72add8a3e3fca4573dc048056f3a66dba2279'
+          a=json.loads(p.read_bytes())
+          approval=a['author_approval']
+          assert approval['status']=='GRANTED_B007_AND_SQLITE_COMPATIBILITY_ONLY' and approval['approved_ids']==[460,520] and approval['approved_fields']==19
+          assert a['production_hold'] is True and approval['production_hold'] is True
+          expected=a['public_free_only_execution']['result']['receipt']
+          native=Path('candidate/native-receipt.json')
+          review=Path('candidate/review-evidence.json')
+          assert json.loads(native.read_bytes())==expected['native_receipt']
+          assert hashlib.sha256(native.read_bytes()).hexdigest()==approval['native_receipt_sha256']
+          for pth in (native,review):
+              assert hashlib.sha256(pth.read_bytes()).hexdigest()==expected['sha256'][pth.as_posix()]
+          assert git('rev-parse','HEAD')==a['base_archive']=='bd94ce02c705904b0ad9a562bc8edce3e3039f77'
+          assert not git('status','--porcelain')
+          for path, blob in expected['native_receipt']['candidate_blobs'].items():
+              target=Path('archive')/path
+              assert target.parent==Path('archive/editorial/registries')
+              source=Path('candidate/registries')/target.name
+              assert hashlib.sha256(source.read_bytes()).hexdigest()==expected['sha256'][source.as_posix()]
+              assert subprocess.check_output(['git','hash-object','--no-filters',str(source)],text=True).strip()==blob
+              shutil.copyfile(source,target)
+              git('add','--',path)
+          assert set(git('diff','--cached','--name-only').splitlines())==set(expected['native_receipt']['candidate_blobs'])
+          assert git('rev-parse','HEAD:canon/HEAD.json')=='9b4e09682fc3148511d59e73ec56fdcda4e396e5'
+          git('config','user.name','WORLDROOT approved transfer')
+          git('config','user.email','41898282+github-actions[bot]@users.noreply.github.com')
+          git('commit','-m','R36 B007: exact approved registry candidate transfer; production hold')
+          candidate_commit=git('rev-parse','HEAD')
+          assert all(git('rev-parse','HEAD:'+path)==blob for path,blob in expected['native_receipt']['candidate_blobs'].items())
+          evidence=Path('archive/editorial/codex-staging/r36-book-ii-stage-b-b007-transfer-evidence')
+          evidence.mkdir(parents=True,exist_ok=False)
+          for src in (native,review,Path('regression.log')):
+              shutil.copyfile(src,evidence/src.name)
+          (evidence/'transfer-receipt.json').write_text(json.dumps({'status':'APPROVED_EXACT_TRANSFER_ONLY','candidate_commit':candidate_commit,'approval_commit':'b69911bec741365c3cde0eff0c256faf0fef0ba4','validated_run':45915067003,'original_hashes':expected['sha256'],'candidate_blobs':expected['native_receipt']['candidate_blobs'],'regenerated_evidence_sha256':{x.name:hashlib.sha256(x.read_bytes()).hexdigest() for x in evidence.iterdir()},'production_hold':True,'canon_changed':False},indent=2)+'\n',encoding='utf-8')
+          git('add','--',str(evidence.relative_to('archive')))
+          git('commit','-m','R36 B007: preserve regenerated exact native and review evidence')
+          transfer_commit=git('rev-parse','HEAD')
+          # Token is provided only here; no credentials persisted in checkouts.
+          import base64
+          header='AUTHORIZATION: basic '+base64.b64encode(('x-access-token:'+os.environ['GH_TOKEN']).encode()).decode()
+          print('::add-mask::'+header,flush=True)
+          env=dict(os.environ,GIT_CONFIG_COUNT='1',GIT_CONFIG_KEY_0='http.https://github.com/.extraheader',GIT_CONFIG_VALUE_0=header,GIT_TERMINAL_PROMPT='0')
+          dest='refs/heads/review/r36-b007-approved-transfer'
+          assert not git('ls-remote','--heads','origin',dest,env=env)
+          git('push','origin','HEAD:'+dest,env=env)
+          assert git('ls-remote','--heads','origin',dest,env=env).split()[0]==transfer_commit
+          print('R36_APPROVED_TRANSFER '+json.dumps({'candidate_commit':candidate_commit,'transfer_commit':transfer_commit,'production_hold':True,'canon_changed':False}))
           PY
