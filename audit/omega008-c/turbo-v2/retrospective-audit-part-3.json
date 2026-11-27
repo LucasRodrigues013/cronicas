@@ -1,0 +1,475 @@
+{
+  "schema": "OMEGA_TURBO_V2_RETROSPECTIVE_AUDIT_PART",
+  "part": 3,
+  "base": "97679a36b0a9cff33ee231c844c018e49658dc8f",
+  "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+  "official_checkpoint_sha256": "1b92a806c9415fb70b95e1d5ed1ee0670585c5c2bb75b4a4d400ea5a182e6c5c",
+  "files": 8,
+  "records": 446,
+  "record_anchors_verified": 446,
+  "coverage_spans_verified": 57,
+  "axis_counts": [
+    {
+      "axis": 1,
+      "records": 426
+    },
+    {
+      "axis": 2,
+      "records": 241
+    },
+    {
+      "axis": 3,
+      "records": 414
+    },
+    {
+      "axis": 4,
+      "records": 115
+    },
+    {
+      "axis": 5,
+      "records": 67
+    },
+    {
+      "axis": 6,
+      "records": 40
+    },
+    {
+      "axis": 7,
+      "records": 395
+    },
+    {
+      "axis": 8,
+      "records": 203
+    },
+    {
+      "axis": 9,
+      "records": 223
+    },
+    {
+      "axis": 10,
+      "records": 176
+    },
+    {
+      "axis": 11,
+      "records": 185
+    },
+    {
+      "axis": 12,
+      "records": 116
+    },
+    {
+      "axis": 13,
+      "records": 169
+    },
+    {
+      "axis": 14,
+      "records": 129
+    },
+    {
+      "axis": 15,
+      "records": 199
+    },
+    {
+      "axis": 16,
+      "records": 214
+    },
+    {
+      "axis": 17,
+      "records": 87
+    },
+    {
+      "axis": 18,
+      "records": 94
+    },
+    {
+      "axis": 19,
+      "records": 231
+    },
+    {
+      "axis": 20,
+      "records": 115
+    },
+    {
+      "axis": 21,
+      "records": 29
+    },
+    {
+      "axis": 22,
+      "records": 34
+    },
+    {
+      "axis": 23,
+      "records": 148
+    },
+    {
+      "axis": 24,
+      "records": 75
+    },
+    {
+      "axis": 25,
+      "records": 422
+    },
+    {
+      "axis": 26,
+      "records": 161
+    },
+    {
+      "axis": 27,
+      "records": 245
+    },
+    {
+      "axis": 28,
+      "records": 73
+    },
+    {
+      "axis": 29,
+      "records": 28
+    },
+    {
+      "axis": 30,
+      "records": 105
+    }
+  ],
+  "receipt_results": [
+    {
+      "path": "audit/omega008-c/bulk-semantic-macro-0015.json",
+      "hash_ok": true,
+      "records": 26,
+      "anchors_verified": 26,
+      "coverage_spans": 1,
+      "represented": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        30
+      ],
+      "issues": []
+    },
+    {
+      "path": "audit/omega008-c/bulk-semantic-macro-0016.json",
+      "hash_ok": true,
+      "records": 53,
+      "anchors_verified": 53,
+      "coverage_spans": 10,
+      "represented": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "issues": []
+    },
+    {
+      "path": "audit/omega008-c/bulk-semantic-macro-0017.json",
+      "hash_ok": true,
+      "records": 47,
+      "anchors_verified": 47,
+      "coverage_spans": 5,
+      "represented": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "issues": []
+    },
+    {
+      "path": "audit/omega008-c/bulk-semantic-macro-0018.json",
+      "hash_ok": true,
+      "records": 64,
+      "anchors_verified": 64,
+      "coverage_spans": 15,
+      "represented": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "issues": [
+        "declared_axis_mismatch"
+      ]
+    },
+    {
+      "path": "audit/omega008-c/bulk-semantic-macro-0019.json",
+      "hash_ok": true,
+      "records": 60,
+      "anchors_verified": 60,
+      "coverage_spans": 7,
+      "represented": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "issues": []
+    },
+    {
+      "path": "audit/omega008-c/bulk-semantic-macro-0020.json",
+      "hash_ok": true,
+      "records": 55,
+      "anchors_verified": 55,
+      "coverage_spans": 5,
+      "represented": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "issues": []
+    },
+    {
+      "path": "audit/omega008-c/bulk-semantic-macro-0021.json",
+      "hash_ok": true,
+      "records": 68,
+      "anchors_verified": 68,
+      "coverage_spans": 9,
+      "represented": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "issues": []
+    },
+    {
+      "path": "audit/omega008-c/bulk-semantic-macro-0022.json",
+      "hash_ok": true,
+      "records": 73,
+      "anchors_verified": 73,
+      "coverage_spans": 5,
+      "represented": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "issues": []
+    }
+  ],
+  "issues": [
+    {
+      "path": "audit/omega008-c/bulk-semantic-macro-0018.json",
+      "issue": "declared_axis_mismatch"
+    }
+  ],
+  "lexical_axis6_review_candidates": [
+    {
+      "path": "audit/omega008-c/bulk-semantic-macro-0022.json",
+      "id": "O8C-B22-001",
+      "axis": 6,
+      "kind": "LEXICAL_REVIEW_CANDIDATE_NOT_AUTOMATIC_CORRECTION"
+    },
+    {
+      "path": "audit/omega008-c/bulk-semantic-macro-0022.json",
+      "id": "O8C-B22-010",
+      "axis": 6,
+      "kind": "LEXICAL_REVIEW_CANDIDATE_NOT_AUTOMATIC_CORRECTION"
+    }
+  ],
+  "semantic_recall_validated": false,
+  "independent_review": false,
+  "canon_changed": false
+}
