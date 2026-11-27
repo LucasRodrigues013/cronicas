@@ -1,0 +1,31 @@
+{
+  "schema": "OMEGA_BOOK_IV_NATIVE_PARTIAL_READBACK_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "validated_commit": "be6443c83962b7ec2dfce86f73cc9b30b0e822af",
+  "prior_partial_checkpoint_blob": "ebe0400a343c01bf9725606dc0170b474fdd75df",
+  "receipt_blob": "e0cf64d9739ea7d5e79daab2200172b8b054c1bb",
+  "receipt_sha256": "238ecf65a1b196d3678dfb4e8f9f28fbd66a8b738ce56ab31200d6c6fb3afb81",
+  "release_blob": "1ea9d60a58ecf00a368f0e33631164fc7cbe0051",
+  "workflow": {
+    "id": 46049846687,
+    "job": 140678168259,
+    "conclusion": "success",
+    "logs_readback": true
+  },
+  "native": {
+    "status": "PASS_NATIVE_PARTIAL_RECEIPT",
+    "records": 7,
+    "coverage": 7,
+    "lines": 398,
+    "axes_assessed": 30,
+    "axes_represented": 25,
+    "next_line": 269102,
+    "macro_complete": false
+  },
+  "previous_book_literal_and_registry": "PASS",
+  "targeted_tests": "47/47",
+  "promotion": false,
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "production_gate": "HOLD"
+}
