@@ -1,0 +1,1241 @@
+{
+  "schema": "r36-native-field-candidates-v1",
+  "base": "5a326a1edd08ccd7d83b6fc744b4158b48876916",
+  "policy": {
+    "days": [
+      1,
+      579
+    ],
+    "books": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "domains": [
+      "character",
+      "world",
+      "technology",
+      "journey",
+      "archaeology",
+      "event"
+    ],
+    "preserve_prior": 229,
+    "production_hold": true,
+    "author_gate": true
+  },
+  "characters": [
+    {
+      "id": "saira-venn",
+      "name": "Saira Venn",
+      "fields": {
+        "identity": {
+          "value": "Saira Venn",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 159883,
+              "anchor": "— SAIRA VENN. Capitã do Jardim Errante."
+            }
+          ],
+          "justification": "Evidência histórica; não estabelece estado atual.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "species": {
+          "value": "Humana",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 159949,
+              "anchor": "SAIRA era humana."
+            }
+          ],
+          "justification": "Evidência histórica; não estabelece estado atual.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "lineage": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "origin": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "age_chronological": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "age_biological": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "age_apparent": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "age_experiential": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "height_cm": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "mass_kg": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "body": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "face": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "hair": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "eyes": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "skin": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "voice": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "gestures": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "wardrobe": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "occupation": {
+          "value": "Capitã do Jardim Errante",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 159883,
+              "anchor": "— SAIRA VENN. Capitã do Jardim Errante."
+            }
+          ],
+          "justification": "Evidência histórica; não estabelece estado atual.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "roles": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "languages": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "attributes": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "skills": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "proficiencies": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "combat_style": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "magic_repertoire": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "equipment": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "inventory": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "condition": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "relationships": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "goals": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "values": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "contradictions": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "fears": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "preferences": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "knowledge": {
+          "value": "Reconhece rotas e correntes aéreas; não conhece a origem integral da magia do céu.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 160029,
+              "anchor": "— Essa é uma pergunta que nossos estudiosos discutem há muitas gerações. Sabemos reconhecer e utilizar certas correntes, armazenar parte de sua energia e medir quando as reservas estão diminuindo."
+            },
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 160033,
+              "anchor": "— Não afirmo conhecer a origem de toda a magia do céu."
+            },
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 160555,
+              "anchor": "— Estas são algumas rotas que conhecemos nas cordilheiras. Não atravessamos qualquer lugar. Navegamos onde as Veias do Alto oferecem condições suficientes para nossas embarcações."
+            }
+          ],
+          "justification": "Evidência histórica; não estabelece estado atual.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "location": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "journey": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "history": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "visual_refs": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        }
+      },
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "doru",
+      "name": "Doru",
+      "fields": {
+        "identity": {
+          "value": "Doru; sobrenome desconhecido. Khelen é o povo.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 159951,
+              "anchor": "Um dos navegadores, DORU, pertencia aos KHELEN, um povo cujos corpos apresentavam formações minerais naturais. Suas marcas cristalinas não eram armaduras, implantes nem efeitos de CREATION."
+            },
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 160223,
+              "anchor": "O gigante apontou para os cristais das têmporas do KHELEN."
+            }
+          ],
+          "justification": "Evidência histórica; não estabelece estado atual.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "species": {
+          "value": "Pertence ao povo Khelen",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 159951,
+              "anchor": "Um dos navegadores, DORU, pertencia aos KHELEN, um povo cujos corpos apresentavam formações minerais naturais. Suas marcas cristalinas não eram armaduras, implantes nem efeitos de CREATION."
+            }
+          ],
+          "justification": "Evidência histórica; não estabelece estado atual.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "lineage": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "origin": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "age_chronological": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "age_biological": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "age_apparent": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "age_experiential": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "height_cm": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "mass_kg": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "body": {
+          "value": "Formações minerais naturais, incluindo cristais nas têmporas.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 159951,
+              "anchor": "Um dos navegadores, DORU, pertencia aos KHELEN, um povo cujos corpos apresentavam formações minerais naturais. Suas marcas cristalinas não eram armaduras, implantes nem efeitos de CREATION."
+            },
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 160223,
+              "anchor": "O gigante apontou para os cristais das têmporas do KHELEN."
+            }
+          ],
+          "justification": "Evidência histórica; não estabelece estado atual.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "face": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "hair": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "eyes": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "skin": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "voice": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "gestures": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "wardrobe": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "occupation": {
+          "value": "Navegador do Jardim Errante",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 159951,
+              "anchor": "Um dos navegadores, DORU, pertencia aos KHELEN, um povo cujos corpos apresentavam formações minerais naturais. Suas marcas cristalinas não eram armaduras, implantes nem efeitos de CREATION."
+            }
+          ],
+          "justification": "Evidência histórica; não estabelece estado atual.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "roles": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "languages": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "attributes": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "skills": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "proficiencies": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "combat_style": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "magic_repertoire": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "equipment": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "inventory": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "condition": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "relationships": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "goals": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "values": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "contradictions": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "fears": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "preferences": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "knowledge": {
+          "value": "Relata crescimento lento e possibilidade de aparar cristais por profissionais.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 160229,
+              "anchor": "— Lentamente. E podem ser aparados por profissionais quando necessário."
+            },
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 160235,
+              "anchor": "— Depende do cuidado."
+            }
+          ],
+          "justification": "Evidência histórica; não estabelece estado atual.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "location": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "journey": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "history": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "visual_refs": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        }
+      },
+      "status": "AUTHOR_GATE_PENDING"
+    },
+    {
+      "id": "nuri-arva",
+      "name": "Núri Arva",
+      "fields": {
+        "identity": {
+          "value": "Núri Arva",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 159953,
+              "anchor": "Outra tripulante, NÚRI ARVA, era uma botânica de pele bronzeada e cabelos presos em longas tranças com pequenas sementes entrelaçadas."
+            }
+          ],
+          "justification": "Evidência histórica; não estabelece estado atual.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "species": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "lineage": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "origin": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "age_chronological": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "age_biological": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "age_apparent": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "age_experiential": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "height_cm": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "mass_kg": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "body": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "face": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "hair": {
+          "value": "Longas tranças com pequenas sementes entrelaçadas.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 159953,
+              "anchor": "Outra tripulante, NÚRI ARVA, era uma botânica de pele bronzeada e cabelos presos em longas tranças com pequenas sementes entrelaçadas."
+            }
+          ],
+          "justification": "Evidência histórica; não estabelece estado atual.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "eyes": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "skin": {
+          "value": "Bronzeada",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 159953,
+              "anchor": "Outra tripulante, NÚRI ARVA, era uma botânica de pele bronzeada e cabelos presos em longas tranças com pequenas sementes entrelaçadas."
+            }
+          ],
+          "justification": "Evidência histórica; não estabelece estado atual.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "voice": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "gestures": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "wardrobe": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "occupation": {
+          "value": "Botânica",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 159953,
+              "anchor": "Outra tripulante, NÚRI ARVA, era uma botânica de pele bronzeada e cabelos presos em longas tranças com pequenas sementes entrelaçadas."
+            }
+          ],
+          "justification": "Evidência histórica; não estabelece estado atual.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "roles": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "languages": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "attributes": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "skills": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "proficiencies": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "combat_style": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "magic_repertoire": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "equipment": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "inventory": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "condition": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "relationships": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "goals": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "values": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "contradictions": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "fears": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "preferences": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "knowledge": {
+          "value": "Pesquisa, preservação e cultivo autorizado; sementes suspensas sob condições específicas.",
+          "status": "RECUPERADO",
+          "origin": [
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 160141,
+              "anchor": "— Não exatamente. É uma espécie que cresce em determinadas encostas mágicas. Suas sementes podem permanecer suspensas quando encontram condições específicas."
+            },
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 160149,
+              "anchor": "— Pesquisa, preservação e cultivo autorizado."
+            },
+            {
+              "source_blob": "94dfd877863a539b1a904cc23c4dd6540dd0426d",
+              "line": 160165,
+              "anchor": "— Não são presentes mágicos que resolverão todos os problemas. Algumas espécies não se adaptam. Outras exigem cuidados específicos."
+            }
+          ],
+          "justification": "Evidência histórica; não estabelece estado atual.",
+          "scope": "AUTHOR_ONLY",
+          "valid_at": "D208"
+        },
+        "location": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "journey": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "history": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        },
+        "visual_refs": {
+          "value": "Desconhecido nesta revisão",
+          "status": "PENDENTE_FONTE",
+          "origin": {
+            "review": "5a326a1edd08ccd7d83b6fc744b4158b48876916"
+          },
+          "justification": "Não estabelecido pelas evidências selecionadas.",
+          "scope": "AUTHOR_ONLY"
+        }
+      },
+      "status": "AUTHOR_GATE_PENDING"
+    }
+  ],
+  "checks": {
+    "required_fields": 40,
+    "exact_source": true
+  }
+}
