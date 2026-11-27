@@ -1,0 +1,53 @@
+{
+  "schema": "OMEGA_HYBRID_MACRO_0032_PARTIAL_CHECKPOINT_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "release_blob": "1ea9d60a58ecf00a368f0e33631164fc7cbe0051",
+  "previous_checkpoint_blob": "94d41c66a771ff76b3ef1e3c2f8b72764b5e9410",
+  "macro": 32,
+  "book": "IV",
+  "chapter": 6,
+  "day": 374,
+  "status": "MACRO_0032_STARTED_NATIVE_READBACK_PENDING",
+  "receipt_path": "audit/omega008-c/turbo-v3/partial-macro-0032-01.json",
+  "receipt_sha256": "5bc58bc5ef1f1e4a48ed728cc9144bd187a748755c36bcefba4e7f256c782fea",
+  "receipt_blob": "4eb7d142f6b28e7e45ec854b143959ab07eccfd0",
+  "range": [
+    289145,
+    289313
+  ],
+  "macro_range": [
+    289145,
+    296900
+  ],
+  "lines_recovered_this_macro": 169,
+  "macro_total_lines": 7756,
+  "records": 2,
+  "macro_records": 2,
+  "staging_records": 2302,
+  "official_records": 1656,
+  "book_counts": {
+    "I": 490,
+    "II": 746,
+    "III": 886,
+    "IV": 180
+  },
+  "completed_macros": 31,
+  "macro_complete": false,
+  "next_line": 289314,
+  "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+  "source_order": true,
+  "recovery_gate": "AUTHORIZED_STAGING_ONLY",
+  "production_gate": "HOLD",
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "semantic_certification": false,
+  "independent_review": false,
+  "promotion": false,
+  "native_validation": "PENDING",
+  "cycle_release": "PENDING_NATIVE_READBACK",
+  "global_independent_review": "PENDING_AT_D579",
+  "global_typed_projection": "PENDING_AT_D579",
+  "global_full_regression": "PENDING_AT_D579",
+  "next_action": "Verify partial 0032 native cumulative readback; then recover remaining 289314–296900."
+}
