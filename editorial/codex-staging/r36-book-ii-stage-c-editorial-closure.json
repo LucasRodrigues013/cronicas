@@ -1,0 +1,34 @@
+{
+  "schema": "worldroot-r36-book-ii-stage-c-editorial-closure-v1",
+  "book": 2,
+  "stage": "C",
+  "status": "EDITORIAL_CLOSURE_WITH_EXPLICIT_RESERVATIONS",
+  "author_direction": "Concluir etapa C e iniciar inventário do livro 3",
+  "archive": "db53de0f7f58acc12da2c706dbeff5745cd83206",
+  "previous_checkpoint": "bf67c81b71ed215cf0074af83b4a0e8712611a96",
+  "checks": {
+    "inventory_records": 261,
+    "groups": 203,
+    "contiguous_ids": [
+      308,
+      568
+    ],
+    "eight_checkpoint_group_totals_match": true,
+    "eight_archive_heads_preserved": true,
+    "field_updates": 177,
+    "prior_native_tests_passed": 706
+  },
+  "reservations": {
+    "independent_semantic_certified": 0,
+    "book_ii_pending": 261,
+    "book_i_pending": 307,
+    "exhaustive_scene_coverage_not_certified": true,
+    "typed_event_admission_pending": true,
+    "unresolved_identities_pending": true,
+    "production_hold": true
+  },
+  "next": "Book III Stage A inventory only",
+  "canon_changed": false,
+  "production_activated": false,
+  "free_only": true
+}
