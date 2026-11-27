@@ -1,0 +1,53 @@
+{
+  "schema": "OMEGA_BOOK_III_NATIVE_STAGING_EVIDENCE_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "validated_commit": "4c883d7a35e3ed3edfcf84e076fdbbea03c77210",
+  "prior_review_commit": "ca23f23c625b740959d066ab8753067dd50be14e",
+  "prior_checkpoint_blob": "24536b92edfeeb0b3f35bdd848511bb61e63c572",
+  "workflow_run": 46048028643,
+  "workflow_job": 140672083377,
+  "workflow_conclusion": "success",
+  "logs_readback": true,
+  "tests": {
+    "hybrid_adapter": 12,
+    "turbo_v2_v3": 11,
+    "live_codex": 12,
+    "total": 35,
+    "failed": 0
+  },
+  "native_result": {
+    "status": "PASS_NATIVE_STAGING_STRUCTURE",
+    "records": 886,
+    "macros": 14,
+    "coverage": 395,
+    "metadata_spans": 11,
+    "effective_axes": 30,
+    "sqlite": {
+      "staging_rows": 886,
+      "canonical_records": 0,
+      "typed_events": 0,
+      "promotion_constraint": true
+    },
+    "literal_native_reverified": false,
+    "registry_ids_native_checked": false,
+    "typed_projection": false,
+    "semantic_certification": false,
+    "independent_review": false,
+    "canon_changed": false,
+    "official_checkpoint_changed": false,
+    "next_macro": "NOT_STARTED",
+    "gate": "HOLD"
+  },
+  "private_job": {
+    "id": 140672085200,
+    "conclusion": "skipped",
+    "reason": "Repository public; custody policy excludes raw archive/registry from public runner."
+  },
+  "limitations": [
+    "Native full literal replay and registry identity validation require isolated authorized executor; container GitHub DNS unavailable.",
+    "Native SQLite staging isolation is not typed Codex projection.",
+    "No independent semantic review or measured claim-level recall; prior source verification remains separate.",
+    "35 targeted tests, not complete global suite."
+  ],
+  "scope": "Public-safe aggregate staging only; no new source corpus, reserved labels or canonical changes."
+}
