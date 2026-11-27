@@ -1,6 +1,6 @@
 {
   "schema": "worldroot-r36-b008-preflight-v1",
-  "status": "STRUCTURAL_PREFLIGHT_PASS_NATIVE_PENDING",
+  "status": "STRUCTURAL_PREFLIGHT_PASS_NATIVE_CANDIDATE_VALIDATED_NOT_APPROVED",
   "base_checkpoint": "a84c799f43088e82e0af033aa1b387d82c9934fc",
   "base_archive": "96012cea0072e60cb401186a1bdc901fb11bb85b",
   "engine": "46c40e18d3e0f4fbcafc025ae9d08b91ca6e6417",
@@ -19,7 +19,7 @@
     ],
     "exact_anchor_hashes_verified": 48,
     "exact_context_comparisons": 432,
-    "whole_source_hash_verification": "PENDING_NATIVE"
+    "whole_source_hash_verification": "PASS_NATIVE_6_PARTS"
   },
   "coverage": {
     "ids": [
@@ -49,13 +49,85 @@
     "additional": "2daee347783fc22d8d0d6b05681c6da6b7d71f7790bff7cff7385ba95b85c36a"
   },
   "public_free_only_execution": {
-    "status": "NATIVE_GATE_PENDING",
+    "status": "NATIVE_CANDIDATE_VALIDATED_NOT_APPROVED",
     "runner": "ubuntu-24.04",
     "repository_public": true,
     "permissions": "contents: read",
     "artifact_upload": false,
     "paid_services_authorized": false,
-    "previous_workflow_proven_run": 45915067003
+    "previous_workflow_proven_run": 45915067003,
+    "result": {
+      "run_id": 45918475529,
+      "job_id": 140243257243,
+      "validated_commit": "017b155104689408f0472ddc721611d533d7bc41",
+      "run_url": "https://github.com/LucasRodrigues013/cronicas/actions/runs/45918475529",
+      "conclusion": "success",
+      "sqlite": "3.45.1",
+      "regression": {
+        "tests": 706,
+        "seconds": 12.985,
+        "status": "OK"
+      },
+      "receipt": {
+        "approval_required": true,
+        "artifact_upload": false,
+        "native_receipt": {
+          "all_protected_fields_unchanged": 153,
+          "approval_required": true,
+          "base_archive": "96012cea0072e60cb401186a1bdc901fb11bb85b",
+          "base_checkpoint": "a84c799f43088e82e0af033aa1b387d82c9934fc",
+          "candidate_blobs": {
+            "editorial/registries/r35-legacy-name-reconciliation-v10.json": "baffe1ae35556394a8cbdc788197e741b88e269f",
+            "editorial/registries/r35-living-overlay-manifest.json": "02525c88956350aebfc2ef4d05e039b784593c75",
+            "editorial/registries/r35-natural-completion-d579-v14.json": "db6190d652c35e87ad8c6f670de077e3b13b816e",
+            "editorial/registries/r35-world-completion-d579-v12.json": "7eabe936795808d65a6a2f8c12a742475a9a3605"
+          },
+          "canon_changed": false,
+          "changed_fields": 18,
+          "contexts_verified": 432,
+          "engine": "46c40e18d3e0f4fbcafc025ae9d08b91ca6e6417",
+          "fields": 5923,
+          "future_packets": [],
+          "groups": 41,
+          "links": 25,
+          "naming_count": 96,
+          "native_load_overlay_before_after": true,
+          "next": {
+            "id": null,
+            "line": null,
+            "stage": "C_PENDING"
+          },
+          "private_scope_fields_unchanged": 40,
+          "production_activated": false,
+          "profiles": 192,
+          "projection_events": 0,
+          "projection_records": 1256,
+          "records": 48,
+          "replay_restore": true,
+          "semantic_certification": false,
+          "source_part_hashes": 6,
+          "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+          "status": "NATIVE_CANDIDATE_VALIDATED_NOT_APPROVED",
+          "unchanged_fields": 5905
+        },
+        "production_hold": true,
+        "seconds": 12.985,
+        "sha256": {
+          "candidate/native-receipt.json": "4290fac5478025a059c67251beba1f1983194b0c84445ca9d703aa8c7cf0aac3",
+          "candidate/registries/r35-legacy-name-reconciliation-v10.json": "ad918bfe874149035ff0bd078d926a1c3758337ec3193f125eca6c7b71c47d0f",
+          "candidate/registries/r35-living-overlay-manifest.json": "c1364cddd2b76bdc83ce4df35305b7dceaed19fc652fb46a5ed20ea9f18b3330",
+          "candidate/registries/r35-natural-completion-d579-v14.json": "50fe68c1d870cbe792b0c2ead717b1e7f3d32b5bd4083ed4598b0cb7fd3f94f2",
+          "candidate/registries/r35-world-completion-d579-v12.json": "2bffcc1316945c7bdb4bb08593950bbd0af46cd7a271fd6d8d8bf9c72270b53e",
+          "candidate/review-evidence.json": "206d34acd6c5b87e072503269c5d14a80d1e29d56ce25d39e72f27e91288fad3",
+          "regression.log": "e3c983bb82f8a796d5946f8c72c89c7cf0f2ccf425ec5eb66b4b0303ccd48ae3"
+        },
+        "status": "PASS_CANDIDATE_ONLY",
+        "tests": 706
+      },
+      "evidence_storage": "Receipt and hashes persisted; original detailed evidence and candidate files require exact deterministic regeneration before incorporation. No artifact upload.",
+      "production_hold": true,
+      "approval_required": true
+    }
   },
   "official_cursor_unchanged": {
     "id": 521,
@@ -70,5 +142,13 @@
   "production_hold": true,
   "canon_changed": false,
   "production_activated": false,
-  "semantic_certification": false
+  "semantic_certification": false,
+  "editorial_completion_if_approved": {
+    "book": 2,
+    "records": 261,
+    "groups": 203,
+    "cumulative_field_updates": 177,
+    "independent_certification_pending": true,
+    "next_stage": "C_PENDING"
+  }
 }
