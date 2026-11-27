@@ -39,7 +39,7 @@ def stage(name, fn):
         # Fixed, non-sensitive classifications only.
         message=str(e)
         known=("Missing Codex delta","Missing coherence review","Scene Codex Sync required",
-               "R35_DEPTH","R35 refinement","R35 opportunity","R34 evidence","R34/R35 design",
+               "R35_DEPTH","R35 refinement","R35 opportunity","R35 distinct literal scene beats missing","R35 missing opportunity moment","R35 requires 2–6 exact final segment receipts","R35 unresolved refinement","R35 specific comparative review","R35 unresolved comparative regression","R35 adult","R35 review","R35 explain","R35 overlapping","R34 evidence","R34/R35 design",
                "R34 physical","R33","R32","Editorial preparation receipt")
         output(name,t,status="BLOCKED",error_type=type(e).__name__,
                reason_code=next((x for x in known if x in message),"UNCLASSIFIED_VALIDATION_ERROR"))
@@ -79,7 +79,7 @@ BEATS={
 2:("Lucas pegou um pedaço de madeira encontrado junto às sobras de uma bancada","Quando a claridade se dissipou, seis armações perfeitamente iguais repousavam em seis estojos abertos.","Isto vai mudar o modo como examino algumas peças."),
 3:("O problema não havia surgido numa máquina em circulação.","Dorek conferiu as medidas, pediu outra repetição","A fixação estava contribuindo para a deformação."),
 4:("Lysa escolheu um pequeno conjunto de documentos da próxima remessa civil.","Ela pegou a caneta, conferiu parte das parcelas no papel","O valor reservado permanece este."),
-5:("A primeira estação foi instalada no lugar indicado pela equipe.","O homem escolheu o estado correspondente e chamou uma colega","Uma pequena parte das informações da jornada já havia sido transferida"),
+5:("A primeira estação foi instalada no lugar indicado pela equipe.","O homem escolheu o estado correspondente e chamou uma colega","uma pequena parte das informações da jornada já havia sido transferida"),
 6:("Miren havia conseguido uma coisa importante","O primeiro visitante se levantou devagar.","Quando os participantes terminaram de examinar as condições, havia um texto concreto sobre a mesa."),
 7:("Osvan pediu que ele desenhasse o trecho.","O menino começou a fazer perguntas sobre os desenhos.","A nova observação poderia ser acrescentada sem apagar a posição"),
 8:("Astra solicitou a abertura a partir da segunda estação.","Lucas fez uma pequena dança de vitória tão despropositada que a artesã começou a rir.","A passagem de trem continuava dentro do livro.")
