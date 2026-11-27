@@ -283,7 +283,39 @@ def verify_cycle_30_34(root,archive):
     require(review["checks"]["production_gate"]=="HOLD" and review["checks"]["semantic_exhaustive"] is False and review["checks"]["independent_review"] is False,"review scope")
     return {**prior,"status":"PASS_NATIVE_CYCLE_0030_0034","cycle_lines":total,"cycle_records":len(allr),"cycle_unique_ids":len(ids),"cycle_axes_represented":axes,"cycle_authority_counts":t["authority_counts"],"cycle_visibility_counts":t["visibility_counts"],"cycle_review":"PASS_STAGING_ONLY","tilo_resolution":"UNRESOLVED_NO_MERGE","macro33_axes_represented":29}
 
+def verify_macro35_start(root,archive):
+    from collections import Counter
+    root=Path(root); archive=Path(archive)
+    prior=verify_cycle_30_34(root,archive)
+    c0=read(root,ROOT+"recovery-checkpoint-0034-validated.json","8354b031b5318f640b094266d47dbd94b089f08d")
+    review=read(root,c0["cycle_review_path"],"3f8f84f05aef6963e0955f9fab2fdb77b99311b1")
+    require(prior["macro_complete"] and c0["native_validation"]=="PASS" and c0["next_line"]==20428 and c0["cycle_consolidated_review"]==review["status"]=="PASS_STAGING_ONLY" and review["release"]=="APPROVED_STAGING_ONLY","cycle release")
+    cp=read(root,ROOT+"recovery-checkpoint-0035-partial-01.json","6737be346264afaf0e08c7c4eac284ea47e6e241")
+    r=read(root,cp["receipt_path"],"6cd26612896f3de794cd48e2d47a5ca0ba9a71f8",cp["receipt_sha256"])
+    q=read(root,"audit/omega008-c/bulk-macro-queue.json","e5a5f9e358d20acf8559f6313c2da24b64665f48")["macros"]
+    m=q[34]
+    require(r["previous_checkpoint_blob"]==cp["previous_checkpoint_blob"]=="8354b031b5318f640b094266d47dbd94b089f08d" and r["release_blob"]==cp["release_blob"]==c0["release_blob"],"checkpoint chain")
+    require(c0["next_macro"]==m and r["previous_macro_id"]==q[33]["id"] and r["official_unit_seal"]==m["unit_seal"],"queue chain")
+    source=SourceCache(archive,read(archive,"history/sources/MANIFEST.json","2048141263f66151230119af9b0ee51796ac846b")).get(m["source"])
+    ids=[]
+    for g in review["macros"]:
+        for entry in g["receipts"]:
+            ids.extend(x["id"] for x in read(root,entry["path"],entry["blob"])["records"])
+    result=validate_receipt(r,m,source,r["project"],ARCHIVE,previous_ids=ids,expected_range=[20428,22413])
+    allr=r["records"]
+    require(result["lines"]==1986 and result["records"]==result["coverage"]==cp["records"]==20,"counts")
+    require(all(x["book"]=="IV" and x["chapter_hint"]==11 and x["day"] in (393,394) for x in allr),"scope")
+    require(all((x["evidence"]["role"]=="Prompt")==(x["authority"]=="AUTHOR_DIRECTION_NOT_EVENT") for x in allr),"author separation")
+    require(all(x["authority"]=="METADATA_NOT_EVENT" for x in allr if x["type"]=="metadata"),"metadata separation")
+    require(all(x["authority"]=="NARRATOR_PROPOSED_BRANCH_NOT_EVENT" for x in allr if x["type"]=="transition_options"),"teaser separation")
+    require(all(x["visibility"]=="RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION" for x in allr if x["type"]=="knowledge"),"private knowledge separation")
+    require(all(x["visibility"]=="READER_ONLY_NO_CHARACTER_INJECTION" for x in allr if x["type"]=="reader_scene"),"reader separation")
+    require(source[0][21522]=="## Prompt:" and source[0][21527]=="## Response:" and "29 dias"==source[0][21550] and "HORIZONTE CAFÉ" in source[0][21694] and source[0][22413]=="" and source[0][22414]=="— Então vamos fazer isso direito.","literal anchors")
+    require(cp["next_line"]==r["next_line"]==22414 and cp["staging_records"]==c0["staging_records"]+20==2533 and cp["book_counts"]["IV"]==411 and cp["completed_macros"]==34,"checkpoint")
+    require(cp["production_gate"]=="HOLD" and not cp["canon_changed"] and not cp["official_checkpoint_changed"] and not cp["semantic_certification"] and not cp["macro_complete"],"gate")
+    return {**result,"status":"PASS_NATIVE_MACRO_0035_PARTIAL","authority_counts":dict(Counter(x["authority"] for x in allr)),"visibility_counts":dict(Counter(x["visibility"] for x in allr)),"next_line":22414,"macro_complete":False,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False,"prior_cycle_release":"PASS_STAGING_ONLY","prior_cycle_review_blob":c0["cycle_review_blob"]}
+
 def main():
     p=argparse.ArgumentParser();p.add_argument("--engine-root",default=".");p.add_argument("--archive-root",required=True)
-    a=p.parse_args();print(json.dumps(verify_cycle_30_34(a.engine_root,a.archive_root),sort_keys=True))
+    a=p.parse_args();print(json.dumps(verify_macro35_start(a.engine_root,a.archive_root),sort_keys=True))
 if __name__=="__main__":main()
