@@ -1,0 +1,34 @@
+{
+  "schema": "OMEGA_BOOK_III_CONSOLIDATED_REVIEW_CHECKPOINT_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "parent": "6600a4d20b169a2bc66386e4a50f0903a4ff6f91",
+  "diagnostic_blob": "d7bf3a9b26deec6e17fb77e69d70d53e35b5a8da",
+  "previous_checkpoint_blob": "7fa6e5ebc5bb8a51b6b544649101efd2c4474b66",
+  "overlay": "audit/omega008-c/turbo-v3/book-III-consolidated-review-overlay.json",
+  "state": "PARTIAL_CONSOLIDATED_REVIEW_SOURCE_AND_TARGETED_CONNECTOR_REGRESSION_COMPLETE_NATIVE_HOLD",
+  "records": 886,
+  "controls": 45,
+  "source_span_hashes": 1281,
+  "connector_tests": {
+    "passed": 18,
+    "failed": 0
+  },
+  "cursor": 268704,
+  "macro": 29,
+  "next_macro": 30,
+  "next_macro_status": "NOT_STARTED",
+  "book_III_semantic_homologation_complete": false,
+  "independent_review": false,
+  "native_regression": "NOT_RUN",
+  "codex_native_projection": "NOT_RUN",
+  "official_checkpoint_changed": false,
+  "canon_changed": false,
+  "archive_head": {
+    "day": 579,
+    "sequence": 50,
+    "blob": "9b4e09682fc3148511d59e73ec56fdcda4e396e5",
+    "pending": "LVI-C09-PII-D580-AUTHOR-SOURCE"
+  },
+  "gate": "HOLD",
+  "next_action": "Implement/test hybrid receipt adapter against actual pinned receipts in authorized isolated native executor; resolve or explicitly retain open nomenclature and identity constraints; then verify gate before any macro30."
+}
