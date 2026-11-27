@@ -1,0 +1,801 @@
+{
+  "schema": "worldroot-omega008-c-checkpoint-v1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "protocol": "OMEGA-008 C",
+  "status": "HISTORICAL_INTAKE_MACRO_0022_RECOVERED_FINAL_REVIEW_DEFERRED",
+  "engine_base": "b7ba937bcaeac185f3ac46bc93e8e1a2fe516b49",
+  "source_archive": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "branch": "review/omega-cycle-1",
+  "pr": 79,
+  "archive_head": {
+    "day": 579,
+    "sequence": 50,
+    "blob": "9b4e09682fc3148511d59e73ec56fdcda4e396e5",
+    "pending": "LVI-C09-PII-D580-AUTHOR-SOURCE"
+  },
+  "editorial": {
+    "version": 22,
+    "rules": 130
+  },
+  "baseline": {
+    "regression_documented": 901,
+    "release_documented": "15/15",
+    "not_reexecuted": false,
+    "verified_commit": "9b98c2261c0e604193e9f753dafadf75b9a59dc5",
+    "run": 45992428818,
+    "job": 140483351781,
+    "tests": 901,
+    "seconds": 14.864,
+    "aggregate_run": 45992428792,
+    "aggregate_result": "9 PASS / 1 FAIL: Missing Codex delta (known historic submission incompatibility)"
+  },
+  "inventory": {
+    "manifest_blob": "2048141263f66151230119af9b0ee51796ac846b",
+    "logical_sources": 6,
+    "git_parts": 11,
+    "lines_read": 611011,
+    "closed_episode_index": 50,
+    "source_raw_sha256_recomputed": false,
+    "source_lines": [
+      296900,
+      85803,
+      20286,
+      75170,
+      31423,
+      101429
+    ],
+    "source_line_counts_match_baseline": true,
+    "source_hashes_manifest": [
+      {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "lines": 296900
+      },
+      {
+        "source": "02_DIA_383_A_431_FONTE_LITERAL.txt",
+        "sha256": "468635338ce16b22fb9216589ea6c572597d313da70cae7b9e9c08b5689afb81",
+        "lines": 85803
+      },
+      {
+        "source": "03_DIA_431_A_457_FONTE_LITERAL.txt",
+        "sha256": "c03918eac20e57762d4f182f6cf3e8562357e0942476369730773484ab46b242",
+        "lines": 20286
+      },
+      {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "sha256": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "lines": 75170
+      },
+      {
+        "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+        "sha256": "4162351007e7ccaaa22964d91cda7e0feba82aea48752a09522b9731a68f4385",
+        "lines": 31423
+      },
+      {
+        "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+        "sha256": "9e09d84f6c80de7c81fbf3b4f3aa6edf4fc649801c80d25247668ba1c61b8ecd",
+        "lines": 101429
+      }
+    ],
+    "source_raw_sha256_verified_by_ci": {
+      "commit": "9b98c2261c0e604193e9f753dafadf75b9a59dc5",
+      "run": 45992428792,
+      "job": 140483351530,
+      "logical_sources": 6,
+      "git_parts": 11,
+      "lines": 611011,
+      "bytes": 13928807,
+      "status": "PASS"
+    }
+  },
+  "boundaries": [
+    {
+      "book": "I",
+      "days": "1–90",
+      "start": {
+        "source": 1,
+        "line": 1
+      },
+      "end": {
+        "source": 1,
+        "line": 40848
+      },
+      "evidence": [
+        285,
+        40807,
+        40845,
+        40849
+      ]
+    },
+    {
+      "book": "II",
+      "days": "91–201",
+      "start": {
+        "source": 1,
+        "line": 40849
+      },
+      "end": {
+        "source": 1,
+        "line": 135470
+      },
+      "evidence": [
+        40929,
+        134700,
+        135471,
+        135474
+      ]
+    },
+    {
+      "book": "III",
+      "days": "201–365 / transition to D366",
+      "start": {
+        "source": 1,
+        "line": 135471
+      },
+      "end_candidate": null,
+      "evidence": [
+        135525,
+        268630,
+        268656,
+        268662,
+        268702,
+        268704
+      ],
+      "end": {
+        "source": 1,
+        "line": 268703
+      }
+    },
+    {
+      "book": "IV",
+      "days": "366–439",
+      "start": {
+        "source": 1,
+        "line": 268704
+      },
+      "end": {
+        "source": 3,
+        "line": 8935
+      },
+      "evidence": [
+        268662,
+        8904,
+        8939,
+        268704,
+        268740,
+        268750
+      ]
+    },
+    {
+      "book": "V",
+      "days": "440–537",
+      "start": {
+        "source": 3,
+        "line": 8936
+      },
+      "end_episode": "LV-C16-PV-D537-AUTHOR-SOURCE",
+      "evidence": [
+        8982,
+        9006
+      ],
+      "closure_blob": "ac12a6336ba876d1ed42f11bec855d6245f1d0b5"
+    },
+    {
+      "book": "VI",
+      "days": "538–579 closed; D580 draft",
+      "start_episode": "LVI-C01-PI-D538-REAUTHORIZED-R2-AUTHOR-SOURCE",
+      "start_closure_blob": "45697d143232f3f481ff99354e0fe88361a0d3ed",
+      "end_episode": "LVI-C09-PI-D579-AUTHOR-SOURCE"
+    }
+  ],
+  "boundary_scope": "macro message boundaries located; chapter/part coverage audit remains pending; D201 shared; filenames not authority",
+  "stage": 1,
+  "book": "I",
+  "lot_reviewed": 2,
+  "range_reviewed": [
+    1,
+    1216
+  ],
+  "last_verified_line": 1216,
+  "records_candidate": 58,
+  "records_controller_reviewed": 58,
+  "records_promoted": 0,
+  "independent_reviewed": 0,
+  "conflicts_open": 0,
+  "conflicts_resolved": 1,
+  "lot_path": "audit/omega008-c/book-I/lote-0002.json",
+  "lot_sha256_utf8": "bd2748790f503adf27203a3a8a7c527583810c7b7f302ee3202201485317e61c",
+  "tests": {
+    "previous_lot_sha256": true,
+    "previous_checkpoint_blob": true,
+    "previous_anchors": 26,
+    "new_anchors": 32,
+    "role_integrity": true,
+    "unique_ids": true,
+    "existing_ids_verified": 4,
+    "personnel_arithmetic": true,
+    "next_role_boundary": true,
+    "source_hashes_verified_by_previous_commit_ci": true,
+    "native_regression_previous_commit": "901/901",
+    "aggregate_previous_commit": "9 PASS, 1 FAIL: Missing Codex delta"
+  },
+  "elapsed_preparation_ms": 1840,
+  "visibility": "PUBLIC_REPOSITORY: derived public-safe metadata only; no private corpus or reserved answers",
+  "pending": [
+    "Original image evidence unavailable",
+    "Provisional prologue/geography incorporation unresolved",
+    "Unresolved entity labels require later scene evidence",
+    "Eastern patrol fate and messenger identity unknown at D1 cutoff",
+    "Book chapter/part audit incomplete",
+    "Independent review and native integration pending",
+    "Resolve overlaps between source exports; V/VI transcript boundaries",
+    "Missing Codex delta in aggregate replay; do not weaken gate",
+    "First macro grouped review validated, not exhaustive; independent semantic review pending",
+    "Open D4 experiment continuation at 11228",
+    "Six local entity labels without registry ID: see phase2 report",
+    "Variant response and repeated chapter numbering pending adjudication",
+    "Generalize receipt wrapper to future macro chain without regenerating original queue",
+    "Global semantic reconciliation, registry integration/homologation and regression review deferred until all historical intake through D579; local unresolved labels preserved.",
+    "Book I grouped intake complete through 40848; independent semantic review, chronology/assembly inconsistencies, entity resolution and native validation deferred; do not homologate.",
+    "Book II macro 0006 grouped recovery complete; image-only export, opening chapter/day discrepancies, provisional identities and D114 open scene preserved for review.",
+    "Book II macro 0007 grouped recovery complete; historical equipment limits, chapter-title discrepancies, local identities, ancient causality and D129 incomplete confrontation deferred.",
+    "Book II macro 0008 grouped recovery complete; repeated D131 directive, overlapping chronology, historical power nomenclature/counts, and D137 open awakening deferred.",
+    "Book II macro 0009 grouped recovery complete; planning versus narrated numbers, D139 overlap, provisional Carta, KÁIRON separate from originals, axis 21 absent and D153 open boundary deferred.",
+    "Book II macro 0010 grouped recovery complete; image-only export, D167 night timestamp overlap, provisional civic/institutional states, three disappeared, ancient network unknowns and D168 open third new life scene deferred.",
+    "Book II macro 0011 grouped recovery complete; D168 identity and coordinated Genesis, D169 provisional civil registration and industrial/Coliseum capacity, D171 Observatory, D172 reader-only threat and drone provenance, D173 experimental defense and open tower project deferred.",
+    "Book II macro 0012 grouped recovery complete; D173 Coliseu fire and Véspera rescue, D176 Eldren Voss testimony and Tecelã alias, D178 six new individuals once only, protected Sombras affiliation, integrated Aurora prototype and open cost discussion deferred.",
+    "Book II macro 0013 grouped recovery complete; D178-D179 integration and Aurora tests, D180 Miren disclosure and bridge injuries, D181 first limited Sombras operation and open voice imitation scene deferred.",
+    "Book II macro 0014 grouped recovery complete; D181 Helion rescue, D184 Riacho liberation, D197 Aurora phase I, D199 competing continuation quarantined and overlapping source times deferred, D200 gift scene open.",
+    "Book II macro 0015 grouped recovery complete; D200 festival, gifts, D201 education and archival research; D199 conflict quarantine unchanged. Next literal author prompt closes Book II and opens Book III.",
+    "Book III macro 0016 grouped recovery complete; D201-D204 Horizonte Aberto, Leviatã, conditional port and maritime research, voluntary 10k horizon, first véu-de-rio, Aurel/Naira gradual romance. Source parts 003/004 join inside line 140991 verified; new evidence shape pending native review; D199 quarantine retained.",
+    "Book III macro 0017 grouped recovery complete D204–206; industrial autonomy, Espelhamento Referenciado I, Kael/Lysa, Varo/Maelis, three missing rescued. Preserve D199 quarantine and local temporal modalities.",
+    "Book III macro 0018 grouped recovery D206–210 complete; first naval Aurora test, travel documents, Jardim Errante/KHELEN and Veias do Alto, Encadeamento Matricial I (D208 demonstrated, D209 partial), Marco VIII and Cais das Raízes; D210 Gênese 100x/crystal author directive not yet demonstrated within cut; visual gaps and D199 quarantine preserved.",
+    "Book III macro 0019 grouped recovery D210–213: ~100x comparable Gênese demonstrated, Memória do Horizonte prototype, Maira first meeting, Calderva arc, Elen Ross, Lastro/Márlo/Vesperal, archive rescue and open Alvorada Cinzenta confrontation. Preserve reader-only, legal/identity uncertainty, D199 quarantine and author directives; independent review pending.",
+    "Book III macro 0020 grouped recovery D213–215 complete; first open ocean, Falcão da Espuma, Calderva and Casa da Maré, Lira provisional name and Elo do Horizonte I experimental (Ivo receives but delivery unconfirmed), civic aid, Quinto Arco temporary protection, nine arcs local independent signaling. Vesperal/Lastro evidence and reader perspectives separated. No dungeon confirmed. D199 quarantine unchanged.",
+    "Book III macro 0021 D215–217: Elo I urban relative tracking, Lira/Enna rescue, Veskan custody, Ivo injury, Carta das Nove Marés/Concordata dos Faróis, Taren/Ressaca clues, paternal affection without adoption, System humor, Draevor/Nysara fleet reader-only. Author future events separated. Literal physical line 196031 joined across parts 004/005. D199 quarantine preserved.",
+    "Book III macro 0022 D217–218: Calderva war, Gaivota Negra Aurora I test and defensive use, subsequent damage and unavailable status; Lira kidnapped alive, Miren protected patients, Corvo das Brumas repaired and authorized for limited rescue, Orvan independent suspension, Nysara interrupts hostile magic. Final rescue and Draevor outcome not yet narrated. 30 axes assessed, axis 6 absent. D199 quarantine preserved."
+  ],
+  "next": {
+    "stage": 1,
+    "book": "I",
+    "lot": 3,
+    "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+    "start_line": 1217,
+    "end_rule": "through next complete narrative choice boundary, bounded by complexity",
+    "checkpoint": "docs/omega008-c-checkpoint.json",
+    "action": "Active bulk.recovery_cursor=206662; continue Book III macro 0023 through 216932, D218 chapter 20 03h49 Golfo Exterior, approach to Trono de Sal. Physical source part 005 logical offset 196030. No canon or motor changes."
+  },
+  "canon_changed": false,
+  "stage00_complete": false,
+  "book_complete": false,
+  "overall_complete": false,
+  "previous_checkpoint": {
+    "commit": "7e62a71da3860ed77135430c9b9c8af6c03f000e",
+    "blob": "89fae4b02dd5ecae72977c830b25ddc2b39ad4de",
+    "sha256_utf8": "923c27195bdd07bec065998dff297d6a6400d2871f44665c41a4c32786196ade"
+  },
+  "lots": [
+    {
+      "path": "audit/omega008-c/book-I/lote-0001.json",
+      "sha256_utf8": "ed9931aac2bf59d4512107d8b1b18adabb45163485760bcaba34d1fd49d29d10",
+      "range": [
+        1,
+        640
+      ],
+      "records": 26
+    },
+    {
+      "path": "audit/omega008-c/book-I/lote-0002.json",
+      "sha256_utf8": "bd2748790f503adf27203a3a8a7c527583810c7b7f302ee3202201485317e61c",
+      "range": [
+        641,
+        1216
+      ],
+      "records": 32
+    }
+  ],
+  "bulk": {
+    "implementation_commit": "414e9d68eb61a8f249027963bdaec5e420b7d15b",
+    "workflow_run": 45994621501,
+    "workflow_job": 140490789835,
+    "report": "docs/omega008-c-bulk-pilot.json",
+    "report_sha256_utf8": "ff0f39bdf61bff216407c8b8d5f0f9c7f6958d81b57156feb2875941f243d8da",
+    "macro_queue": "audit/omega008-c/bulk-macro-queue.json",
+    "macro_queue_sha256_utf8": "475dbb505f7880b347348db5209d40b4bf4ba68910ea12ab81a70bef64593b5e",
+    "macro_sha256": "d6d4f1e5af31afb102acba3ccd8a79af6ee8aabfdd320d6afe0266ab9a71621f",
+    "queue_sha256": "62efa0cbf2fb9435446a8cca4330dc74cf1f96efedfc870084a8b3a087b6d18e",
+    "structural_lines": 706293,
+    "transcript_lines": 611011,
+    "closed_lines": 95282,
+    "total_units": 2821,
+    "macro_count": 116,
+    "pilot": {
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "book_hint": "I",
+      "end": 11227,
+      "id": "f55497c946b79e7d953e7321721d7441fbed288e7764403cb97b3ff2152342c8",
+      "lines": 10011,
+      "order_scope": "SOURCE_ORDER_NOT_EVENT_TIME",
+      "previous_macro": "be7c66fdc044f3abb71f07f96417fea2247fc5c3aeef5047259394da57b4a718",
+      "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "start": 1217,
+      "status": "PENDING",
+      "unit_seal": "f2efce0c2e2f4d1ea80bd9d3a7d2541fe69cb3ad9e46c75ad7052c804e6550af",
+      "units": 54
+    },
+    "sample": {
+      "path": "audit/omega008-c/bulk-pilot-semantic-sample.json",
+      "sha256_utf8": "63e40bb584a8a07844ce36c14705ad746973fccaf9a00906bb84f882a6dc15a3",
+      "range": [
+        1217,
+        1679
+      ],
+      "records": 21,
+      "next_review_line": 1680
+    },
+    "semantic_cursor": 206662,
+    "semantic_pilot_complete": true,
+    "independent_review": false,
+    "semantic_pilot_scope": "CONTROLLER_GROUPED_REVIEW_NOT_EXHAUSTIVE_OR_INDEPENDENT",
+    "phase2": {
+      "receipt": "audit/omega008-c/bulk-semantic-macro-0002.json",
+      "receipt_sha256_utf8": "f05972219992348821aafb31eff22f9ee930378ffcfbcad9200a42ab24f57d0a",
+      "base_checkpoint_sha256": "f5a07adc3437090aab1664c2d1186768844a42f05073ae5b75035e0d88ffece8",
+      "report": "docs/omega008-c-bulk-phase2-results.json",
+      "report_sha256_utf8": "1adcd540e53977eb5e7a40a51d9e984b933d0ff5190676f3f29bf39796d96c7f",
+      "implementation_commit": "4493484f1af797512815b4e7e4c9d5d33a5906e0",
+      "workflow_run": 45995943867,
+      "workflow_job": 140495236516,
+      "regression_run": 45995943985,
+      "regression_tests": 921,
+      "macro_id": "f55497c946b79e7d953e7321721d7441fbed288e7764403cb97b3ff2152342c8",
+      "reviewed_range": [
+        1217,
+        11227
+      ],
+      "new_grouped_records": 125,
+      "total_candidates": 204,
+      "reviewed_sections": 26,
+      "semantic_certification": false
+    },
+    "reviewed_macro_ids": [
+      "be7c66fdc044f3abb71f07f96417fea2247fc5c3aeef5047259394da57b4a718",
+      "f55497c946b79e7d953e7321721d7441fbed288e7764403cb97b3ff2152342c8"
+    ],
+    "next_macro": {
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "book_hint": "III",
+      "end": 216932,
+      "id": "e6317664d92178ba8f6d99b93ba3df39669420ac9630a35175509605849fe736",
+      "lines": 10271,
+      "order_scope": "SOURCE_ORDER_NOT_EVENT_TIME",
+      "previous_macro": "5a46669d5d3fd0516aebb491b5979ddc5aa3e72b033a2994f962e7a78ab6037c",
+      "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "start": 206662,
+      "status": "PENDING",
+      "unit_seal": "964932648b1ca60b816ace6fcdbd2230ad93ea5bd63ac5ea7e96fd0ba0706970",
+      "units": 37
+    },
+    "open_boundary": {
+      "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+      "after_line": 206661,
+      "next_line": 206662,
+      "day": 218,
+      "chapter": 20,
+      "reason": "03h49 Golfo Exterior, Nável and Yra assessing stability after artificial storm weakens; final rescue not yet narrated."
+    },
+    "recovery_cursor": 206662,
+    "native_validated_through": 11227,
+    "recovery_policy": {
+      "mode": "RECOVER_FIRST_REVIEW_AT_CURRENT_DAY",
+      "user_authorized": true,
+      "description": "Recover and append historical data in chronological source order, track evolving facts and preserve previous states; defer global reconciliation, refactors, semantic deduplication, final regression suite and canon promotion until historical intake reaches D579. Minimal per-write source, role, range, hash and readback safeguards remain.",
+      "no_current_story_action": true
+    },
+    "recovery_ledger": [
+      {
+        "macro_id": "f55497c946b79e7d953e7321721d7441fbed288e7764403cb97b3ff2152342c8",
+        "path": "audit/omega008-c/bulk-semantic-macro-0002.json",
+        "sha256_utf8": "f05972219992348821aafb31eff22f9ee930378ffcfbcad9200a42ab24f57d0a",
+        "range": [
+          1217,
+          11227
+        ],
+        "records": 146,
+        "status": "PRIOR_GROUPED_NATIVE_RECEIPT_VALIDATED"
+      },
+      {
+        "macro_id": "54ce428c4d8d4b2ea51529da9382214c0aba5a2ef79f2fb7cd13009ff19471ce",
+        "path": "audit/omega008-c/bulk-semantic-macro-0003.json",
+        "sha256_utf8": "c7d9288f4275c495052bd068bf93a5cfcd84cc62a477f3184063fbdb04243e5c",
+        "range": [
+          11228,
+          21441
+        ],
+        "records": 90,
+        "sections": 15,
+        "day_start": 4,
+        "day_end": 9,
+        "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
+      },
+      {
+        "macro_id": "32292340061ec3ff301afa88dd0d3485c7cbb4fd06371e083c30769f1994a233",
+        "path": "audit/omega008-c/bulk-semantic-macro-0004.json",
+        "sha256_utf8": "473644e501a67ebd31ff251b26556d58549ad69c77c3532d0b9747514bfb1fc8",
+        "range": [
+          21442,
+          31642
+        ],
+        "records": 110,
+        "sections": 17,
+        "day_start": 9,
+        "day_end": 35,
+        "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
+      },
+      {
+        "macro_id": "b28e40324f20345140f37e1b2791929ee153895c02e09f74cdb6e38f3a792411",
+        "path": "audit/omega008-c/bulk-semantic-macro-0005.json",
+        "sha256_utf8": "d83494f24148a429edcc77419c4d1514c942da4dc82bd10fbf0dc14b85a23d47",
+        "range": [
+          31643,
+          40848
+        ],
+        "records": 86,
+        "sections": 15,
+        "day_start": 35,
+        "day_end": 90,
+        "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
+      },
+      {
+        "macro_id": "55414ed6f8499255d0370289adbe11db1114461d04046302dcaec0e273edfe42",
+        "path": "audit/omega008-c/bulk-semantic-macro-0006.json",
+        "sha256_utf8": "73494e8b9fd7de19f368e2ed1c90f707b7c840d3c62174de909f28c3af5226a6",
+        "range": [
+          40849,
+          50884
+        ],
+        "records": 85,
+        "sections": 14,
+        "day_start": 90,
+        "day_end": 114,
+        "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
+      },
+      {
+        "macro_id": "29fa77614249d5fda8ff40e5811d7faf73f36b1f5c9dc8722b1a8f535f6ca515",
+        "path": "audit/omega008-c/bulk-semantic-macro-0007.json",
+        "sha256_utf8": "d096473cd1d13dc9b8291640b3b137282d0b5aaf0a8254f4185a9a6fa8ac313e",
+        "range": [
+          50885,
+          61067
+        ],
+        "records": 95,
+        "sections": 9,
+        "day_start": 114,
+        "day_end": 129,
+        "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
+      },
+      {
+        "macro_id": "99752b7d305bff49a659b72f6caa82fde87e0bb782d4a108f54d079c5b1eba7b",
+        "path": "audit/omega008-c/bulk-semantic-macro-0008.json",
+        "sha256_utf8": "e7300a79565757cab370ae727b50300e64751a62de0fbc8e0ee950e490a06d9c",
+        "range": [
+          61068,
+          71264
+        ],
+        "records": 90,
+        "sections": 11,
+        "day_start": 129,
+        "day_end": 137,
+        "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
+      },
+      {
+        "macro_id": "31975c3bbb1d593dcacc6041d70e46cb47f033c8c6ed41daa6fc6c6e0014b4fb",
+        "path": "audit/omega008-c/bulk-semantic-macro-0009.json",
+        "sha256_utf8": "c29bd3514cfff95536aea033c379fa30d93c37c311a6a9509ecd16142a198115",
+        "range": [
+          71265,
+          81369
+        ],
+        "records": 86,
+        "sections": 9,
+        "day_start": 137,
+        "day_end": 153,
+        "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
+      },
+      {
+        "macro_id": "bc776efc00ffae66b6428052f9795e42ccac5196ea3a108811c035d1567c24c2",
+        "path": "audit/omega008-c/bulk-semantic-macro-0010.json",
+        "sha256_utf8": "76ce5ecb24ac496e91e4481631d2c8de82a124b9e03291605d20d3929c91270d",
+        "range": [
+          81370,
+          91372
+        ],
+        "records": 85,
+        "sections": 11,
+        "day_start": 153,
+        "day_end": 168,
+        "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
+      },
+      {
+        "macro_id": "954f567fedc039eabf88693fe23a4a935a4f21a8585ed5c4a4d97e3c6d35b90e",
+        "path": "audit/omega008-c/bulk-semantic-macro-0011.json",
+        "sha256_utf8": "a61c57486b635cf3a6406aa46625698be4f1cafbd961c4b2ec0dd34c8baaf0dc",
+        "range": [
+          91373,
+          101560
+        ],
+        "records": 88,
+        "sections": 11,
+        "day_start": 168,
+        "day_end": 173,
+        "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
+      },
+      {
+        "macro_id": "70066e9929724fb649c6425c4269c6cad7fde6396a8d3600a4a2d4f66cff06ca",
+        "path": "audit/omega008-c/bulk-semantic-macro-0012.json",
+        "sha256_utf8": "1056b1fe820079fb0085ce32617df7108aac74ecaf52064ea0baa2f9ba8eacca",
+        "range": [
+          101561,
+          111838
+        ],
+        "records": 77,
+        "sections": 9,
+        "day_start": 173,
+        "day_end": 178,
+        "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
+      },
+      {
+        "macro_id": "874c1734717af63a3f05c72a8f75701a9771563f5c49f1ecf470bfe1b4c39985",
+        "path": "audit/omega008-c/bulk-semantic-macro-0013.json",
+        "sha256_utf8": "f7e83b85c2dc1d1125170291bfc600ecd4f9703572a28aed8e79e785d6ec0cdf",
+        "range": [
+          111839,
+          121894
+        ],
+        "records": 55,
+        "sections": 5,
+        "day_start": 178,
+        "day_end": 181,
+        "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
+      },
+      {
+        "macro_id": "b2c6faa567bc2ab6b074d304df6eb0919a65ef14db4f01cc8de34e73e653f792",
+        "path": "audit/omega008-c/bulk-semantic-macro-0014.json",
+        "sha256_utf8": "4d6dfe3fb2fb74cd8a80850dc58ba30de3c3d8d6c9902a5979647682c0d4b493",
+        "range": [
+          121895,
+          132026
+        ],
+        "records": 59,
+        "sections": 7,
+        "day_start": 181,
+        "day_end": 200,
+        "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
+      },
+      {
+        "macro_id": "f1804400cd289274037ad50a1f2f1d7ecaa560b87674011e99de9776333ae13f",
+        "path": "audit/omega008-c/bulk-semantic-macro-0015.json",
+        "sha256_utf8": "6145f9e2d4ec19280f37dd95e2f84a08c23a4fbca541d725b1f8fdd4592917d8",
+        "range": [
+          132027,
+          135470
+        ],
+        "records": 26,
+        "sections": 1,
+        "day_start": 200,
+        "day_end": 201,
+        "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
+      },
+      {
+        "macro_id": "d1340817b6c7970dc27635a5582c87abe68ae864b50914f17a8a60016245af21",
+        "path": "audit/omega008-c/bulk-semantic-macro-0016.json",
+        "sha256_utf8": "358cdd184a50833af5b8a52f6c2869dabd1f0e47a49926517cc0eb87eca1f5e3",
+        "range": [
+          135471,
+          145521
+        ],
+        "records": 53,
+        "sections": 10,
+        "day_start": 201,
+        "day_end": 204,
+        "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
+      },
+      {
+        "macro_id": "92a6e42e95c314278d1e3f88328283e9b602edc040d123ded9e42d1321d0cf8e",
+        "path": "audit/omega008-c/bulk-semantic-macro-0017.json",
+        "sha256_utf8": "ce23e33cabde865f3e16effda6703483b190c723aa652453f276043f526e1692",
+        "range": [
+          145522,
+          155786
+        ],
+        "records": 47,
+        "sections": 5,
+        "day_start": 204,
+        "day_end": 206,
+        "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
+      },
+      {
+        "macro_id": "3627080a2dcd1d901f480a8df65321c3d0bf4235c5e467fc2aad554a31e0abae",
+        "path": "audit/omega008-c/bulk-semantic-macro-0018.json",
+        "sha256_utf8": "a4cf8191c7c829cab6f3c41843e5a4ce0fd6cde203e2e3568f4fab53324281da",
+        "range": [
+          155787,
+          166013
+        ],
+        "records": 64,
+        "sections": 15,
+        "day_start": 206,
+        "day_end": 210,
+        "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
+      },
+      {
+        "macro_id": "2f9381267f4b1ce7a753b18c6ab9f83171e82e7e68259ccb1d46a964704aad7f",
+        "path": "audit/omega008-c/bulk-semantic-macro-0019.json",
+        "sha256_utf8": "0ba9e73cbbee8751ec3f65c7e283172acc8a12e22d1fd9921b20a58b6fe811e3",
+        "range": [
+          166014,
+          176298
+        ],
+        "records": 60,
+        "sections": 7,
+        "day_start": 210,
+        "day_end": 213,
+        "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
+      },
+      {
+        "macro_id": "9cf2f2513bb23cdae6aff2d3230fcbfaf37d67b1278a29e92a9de368d2337577",
+        "path": "audit/omega008-c/bulk-semantic-macro-0020.json",
+        "sha256_utf8": "3b4074c64f7db2d43026d5cfe9d07d8151033707202d9c46b3893ac6ec01ce4e",
+        "range": [
+          176299,
+          186394
+        ],
+        "records": 55,
+        "sections": 5,
+        "day_start": 213,
+        "day_end": 215,
+        "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
+      },
+      {
+        "macro_id": "24d8ff8c2e2192a43463c455cb4f61904a664470de81a6967c0ecdc611624aa3",
+        "path": "audit/omega008-c/bulk-semantic-macro-0021.json",
+        "sha256_utf8": "df2606e567139e260b57343fabeb4cd85fa735a9b23626e2b3893a0a747835b9",
+        "range": [
+          186395,
+          196617
+        ],
+        "records": 68,
+        "sections": 9,
+        "day_start": 215,
+        "day_end": 217,
+        "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
+      },
+      {
+        "macro_id": "5a46669d5d3fd0516aebb491b5979ddc5aa3e72b033a2994f962e7a78ab6037c",
+        "path": "audit/omega008-c/bulk-semantic-macro-0022.json",
+        "sha256_utf8": "e05d427c43a7281e3f7667fd0db46b7814f17306f1a22f2f06ed4ffaf95c2049",
+        "range": [
+          196618,
+          206661
+        ],
+        "records": 73,
+        "sections": 5,
+        "day_start": 217,
+        "day_end": 218,
+        "status": "RECOVERED_GROUPED_PENDING_GLOBAL_REVIEW"
+      }
+    ],
+    "recovered_macro_ids": [
+      "be7c66fdc044f3abb71f07f96417fea2247fc5c3aeef5047259394da57b4a718",
+      "f55497c946b79e7d953e7321721d7441fbed288e7764403cb97b3ff2152342c8",
+      "54ce428c4d8d4b2ea51529da9382214c0aba5a2ef79f2fb7cd13009ff19471ce",
+      "32292340061ec3ff301afa88dd0d3485c7cbb4fd06371e083c30769f1994a233",
+      "b28e40324f20345140f37e1b2791929ee153895c02e09f74cdb6e38f3a792411",
+      "55414ed6f8499255d0370289adbe11db1114461d04046302dcaec0e273edfe42",
+      "29fa77614249d5fda8ff40e5811d7faf73f36b1f5c9dc8722b1a8f535f6ca515",
+      "99752b7d305bff49a659b72f6caa82fde87e0bb782d4a108f54d079c5b1eba7b",
+      "31975c3bbb1d593dcacc6041d70e46cb47f033c8c6ed41daa6fc6c6e0014b4fb",
+      "bc776efc00ffae66b6428052f9795e42ccac5196ea3a108811c035d1567c24c2",
+      "954f567fedc039eabf88693fe23a4a935a4f21a8585ed5c4a4d97e3c6d35b90e",
+      "70066e9929724fb649c6425c4269c6cad7fde6396a8d3600a4a2d4f66cff06ca",
+      "874c1734717af63a3f05c72a8f75701a9771563f5c49f1ecf470bfe1b4c39985",
+      "b2c6faa567bc2ab6b074d304df6eb0919a65ef14db4f01cc8de34e73e653f792",
+      "f1804400cd289274037ad50a1f2f1d7ecaa560b87674011e99de9776333ae13f",
+      "d1340817b6c7970dc27635a5582c87abe68ae864b50914f17a8a60016245af21",
+      "92a6e42e95c314278d1e3f88328283e9b602edc040d123ded9e42d1321d0cf8e",
+      "3627080a2dcd1d901f480a8df65321c3d0bf4235c5e467fc2aad554a31e0abae",
+      "2f9381267f4b1ce7a753b18c6ab9f83171e82e7e68259ccb1d46a964704aad7f",
+      "9cf2f2513bb23cdae6aff2d3230fcbfaf37d67b1278a29e92a9de368d2337577",
+      "24d8ff8c2e2192a43463c455cb4f61904a664470de81a6967c0ecdc611624aa3",
+      "5a46669d5d3fd0516aebb491b5979ddc5aa3e72b033a2994f962e7a78ab6037c"
+    ],
+    "total_candidates_recovered": 1656,
+    "book_I_intake": {
+      "range": [
+        1,
+        40848
+      ],
+      "day_end": 90,
+      "status": "GROUPED_HISTORICAL_INTAKE_COMPLETE_NOT_HOMOLOGATED",
+      "candidate_total": 490,
+      "independent_review": false,
+      "canon_promoted": false
+    },
+    "last_recovery_readback": {
+      "macro": "0022",
+      "receipt_commit": "3f03df2d44370c8e5b034e8682ef7a36553370b8",
+      "receipt_blob": "aa635893fdc739ef00e83295458950281e8000ef",
+      "receipt_sha256_utf8": "e05d427c43a7281e3f7667fd0db46b7814f17306f1a22f2f06ed4ffaf95c2049",
+      "anchors_verified": 73,
+      "coverage_spans_verified": 5,
+      "receipt_diff_files": [
+        "audit/omega008-c/bulk-semantic-macro-0022.json"
+      ],
+      "prior_candidate_files_unchanged_by_patch": true,
+      "native_semantic_validation": "DEFERRED",
+      "independent_review": false
+    }
+  }
+}

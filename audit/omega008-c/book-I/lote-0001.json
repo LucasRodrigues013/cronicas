@@ -1,0 +1,975 @@
+{
+  "schema": "worldroot-omega008-c-semantic-lot-v1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "status": "CONTROLLER_REVIEWED_NOT_CANON_CERTIFIED",
+  "source_archive": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "engine_base": "b7ba937bcaeac185f3ac46bc93e8e1a2fe516b49",
+  "book": "I",
+  "lot": 1,
+  "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+  "range": [
+    1,
+    640
+  ],
+  "next_line": 641,
+  "records": [
+    {
+      "id": "O8C-LI-0001-001",
+      "type": "editorial",
+      "classification": "PROPOSTA_EDITORIAL",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "authority": "AUTHOR_REQUEST_OR_CHOICE",
+      "verification": "CONTROLLER_REVIEWED_CANDIDATE",
+      "day": null,
+      "book": "I",
+      "chapter": null,
+      "part": null,
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "entities": [],
+      "axes": [
+        28,
+        29,
+        30
+      ],
+      "summary": "Premissas iniciais: fantasia interativa, desafio, três escolhas e imagens; histórico, não substitui v22.",
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 12,
+        "line_end": 12,
+        "role": "Prompt",
+        "span_sha256_utf8": "43d680fbd103d42f96a8c79fbf6b3f6e511c8ae071b4f5df56254fd525f63f08",
+        "literal_policy": "Read exact span from pinned source; do not duplicate transcript in public candidate."
+      },
+      "dependencies": [],
+      "promotion": false
+    },
+    {
+      "id": "O8C-LI-0001-002",
+      "type": "editorial",
+      "classification": "PROPOSTA_EDITORIAL",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_CANDIDATE",
+      "day": null,
+      "book": "I",
+      "chapter": null,
+      "part": null,
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "entities": [],
+      "axes": [
+        16,
+        18,
+        21,
+        23
+      ],
+      "summary": "Quatro territórios provisórios; não promover geografia.",
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 61,
+        "line_end": 77,
+        "role": "Response",
+        "span_sha256_utf8": "0026383315e212354a51df2d69494040cfaf2f04c1f111487e349c386375e620",
+        "literal_policy": "Read exact span from pinned source; do not duplicate transcript in public candidate."
+      },
+      "dependencies": [],
+      "promotion": false
+    },
+    {
+      "id": "O8C-LI-0001-003",
+      "type": "editorial",
+      "classification": "PROPOSTA_EDITORIAL",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_CANDIDATE",
+      "day": null,
+      "book": "I",
+      "chapter": null,
+      "part": null,
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "entities": [],
+      "axes": [
+        3,
+        21,
+        22,
+        26
+      ],
+      "summary": "Prólogo experimental anterior à integração das imagens; não contar como acontecimento confirmado.",
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 151,
+        "line_end": 181,
+        "role": "Response",
+        "span_sha256_utf8": "bff26e6760ec57bd9bc2c664b0e29e755f6c7f33480ee7d7f2b76d622759ac88",
+        "literal_policy": "Read exact span from pinned source; do not duplicate transcript in public candidate."
+      },
+      "dependencies": [],
+      "promotion": false
+    },
+    {
+      "id": "O8C-LI-0001-004",
+      "type": "source_gap",
+      "classification": "DESCONHECIDO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_CANDIDATE",
+      "day": null,
+      "book": "I",
+      "chapter": null,
+      "part": null,
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "entities": [],
+      "axes": [
+        1,
+        3,
+        30
+      ],
+      "summary": "Parte das imagens originais não disponível para leitura detalhada; texto não prova conteúdo visual.",
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 209,
+        "line_end": 217,
+        "role": "Response",
+        "span_sha256_utf8": "6f242af4d9875fdd58067c8e21ce0e7e78374510ba2dfb7c87f6fd8cea799e87",
+        "literal_policy": "Read exact span from pinned source; do not duplicate transcript in public candidate."
+      },
+      "dependencies": [],
+      "promotion": false
+    },
+    {
+      "id": "O8C-LI-0001-005",
+      "type": "power",
+      "classification": "OBSERVAÇÃO CONTEXTUAL",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_CANDIDATE",
+      "day": 1,
+      "book": "I",
+      "chapter": 1,
+      "part": null,
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "entities": [
+        "lucas"
+      ],
+      "axes": [
+        11,
+        12
+      ],
+      "summary": "CREATION e reserva estimada de 5% na origem; limitações iniciais não estabelecem estado posterior de GÊNESE.",
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 249,
+        "line_end": 259,
+        "role": "Response",
+        "span_sha256_utf8": "5849ab89c15ddaf28a89198b0599e7ee9360c568f9106c593406d80468782efd",
+        "literal_policy": "Read exact span from pinned source; do not duplicate transcript in public candidate."
+      },
+      "dependencies": [],
+      "promotion": false
+    },
+    {
+      "id": "O8C-LI-0001-006",
+      "type": "identity",
+      "classification": "OBSERVAÇÃO CONTEXTUAL",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_CANDIDATE",
+      "day": 1,
+      "book": "I",
+      "chapter": 1,
+      "part": null,
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "entities": [
+        "lucas"
+      ],
+      "axes": [
+        4,
+        5,
+        12
+      ],
+      "summary": "Lucas Rodrigues, protagonista, exausto no painel inicial; habilidade única CREATION.",
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 253,
+        "line_end": 257,
+        "role": "Response",
+        "span_sha256_utf8": "bd059afb88690ba38640800ea003ab8946fb68d4d079032f4e70032e11161f66",
+        "literal_policy": "Read exact span from pinned source; do not duplicate transcript in public candidate."
+      },
+      "dependencies": [],
+      "promotion": false
+    },
+    {
+      "id": "O8C-LI-0001-007",
+      "type": "inventory",
+      "classification": "OBSERVAÇÃO CONTEXTUAL",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_CANDIDATE",
+      "day": 1,
+      "book": "I",
+      "chapter": 1,
+      "part": null,
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "entities": [
+        "lucas"
+      ],
+      "axes": [
+        13
+      ],
+      "summary": "Mochila dimensional e armadura regenerativa no painel inicial; custódia posterior não estabelecida.",
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 273,
+        "line_end": 277,
+        "role": "Response",
+        "span_sha256_utf8": "3956a4020b7b174f2a26a5c09cc3a8bc19953013ffbc76ff73e8181ff8fedb25",
+        "literal_policy": "Read exact span from pinned source; do not duplicate transcript in public candidate."
+      },
+      "dependencies": [],
+      "promotion": false
+    },
+    {
+      "id": "O8C-LI-0001-008",
+      "type": "world_state",
+      "classification": "OBSERVAÇÃO CONTEXTUAL",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_CANDIDATE",
+      "day": 1,
+      "book": "I",
+      "chapter": 1,
+      "part": null,
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "entities": [
+        "legiao-inicial"
+      ],
+      "axes": [
+        3,
+        14,
+        19,
+        24
+      ],
+      "summary": "300 criações; vitória inicial, inimigos dispersando, um prisioneiro; baixas ainda não apuradas.",
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 261,
+        "line_end": 283,
+        "role": "Response",
+        "span_sha256_utf8": "345eb24f75bd36960ccb13eaaac7d6db9b881c243c257eda7fb381e082c2c08e",
+        "literal_policy": "Read exact span from pinned source; do not duplicate transcript in public candidate."
+      },
+      "dependencies": [],
+      "promotion": false
+    },
+    {
+      "id": "O8C-LI-0001-009",
+      "type": "event",
+      "classification": "FATO CONFIRMADO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_CANDIDATE",
+      "day": 1,
+      "book": "I",
+      "chapter": 1,
+      "part": null,
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "entities": [
+        "lucas",
+        "chefe-orc-sem-nome"
+      ],
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        24
+      ],
+      "summary": "D1 após batalha: chefe orc imobilizado, vivo, ferido no ombro esquerdo.",
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 285,
+        "line_end": 299,
+        "role": "Response",
+        "span_sha256_utf8": "645e752ed8892497163f89d7516849ba047a35c5f5eb9ebdadd2fdde42679207",
+        "literal_policy": "Read exact span from pinned source; do not duplicate transcript in public candidate."
+      },
+      "dependencies": [],
+      "promotion": false
+    },
+    {
+      "id": "O8C-LI-0001-010",
+      "type": "event",
+      "classification": "FATO CONFIRMADO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_CANDIDATE",
+      "day": 1,
+      "book": "I",
+      "chapter": 1,
+      "part": null,
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "entities": [
+        "capitao-sem-nome",
+        "lucas"
+      ],
+      "axes": [
+        3,
+        19,
+        25
+      ],
+      "summary": "Capitão solicita decisão sobre perseguição e alerta para desconhecimento do terreno.",
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 301,
+        "line_end": 307,
+        "role": "Response",
+        "span_sha256_utf8": "3f57f5432cb3433312d7f74d6d243b4d9663a23eef704b2deb1aa8c4f7dc7618",
+        "literal_policy": "Read exact span from pinned source; do not duplicate transcript in public candidate."
+      },
+      "dependencies": [],
+      "promotion": false
+    },
+    {
+      "id": "O8C-LI-0001-011",
+      "type": "power",
+      "classification": "OBSERVAÇÃO CONTEXTUAL",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_CANDIDATE",
+      "day": 1,
+      "book": "I",
+      "chapter": 1,
+      "part": null,
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "entities": [
+        "lucas"
+      ],
+      "axes": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "summary": "Armadura aquece costas, respiração melhora; Lucas sente desgaste e teme perder vidas criadas.",
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 309,
+        "line_end": 315,
+        "role": "Response",
+        "span_sha256_utf8": "77fd4aab8ccf5e56c344408560d67d36abd81b3f66bdff7cf49714fbf79450d7",
+        "literal_policy": "Read exact span from pinned source; do not duplicate transcript in public candidate."
+      },
+      "dependencies": [],
+      "promotion": false
+    },
+    {
+      "id": "O8C-LI-0001-012",
+      "type": "event",
+      "classification": "FATO CONFIRMADO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_CANDIDATE",
+      "day": 1,
+      "book": "I",
+      "chapter": 1,
+      "part": null,
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "entities": [
+        "capitao-sem-nome",
+        "chefe-orc-sem-nome"
+      ],
+      "axes": [
+        3,
+        23,
+        26,
+        27
+      ],
+      "summary": "Capitão identifica retirada parcialmente organizada; chifre distante responde. Origem do som não confirmada.",
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 319,
+        "line_end": 347,
+        "role": "Response",
+        "span_sha256_utf8": "d7a18e822c3ad4157bb07004cc61b9180e8d1e3ed145d1d3d7b774c0e78de8e2",
+        "literal_policy": "Read exact span from pinned source; do not duplicate transcript in public candidate."
+      },
+      "dependencies": [],
+      "promotion": false
+    },
+    {
+      "id": "O8C-LI-0001-013",
+      "type": "editorial",
+      "classification": "PROPOSTA_EDITORIAL",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "authority": "AUTHOR_REQUEST_OR_CHOICE",
+      "verification": "CONTROLLER_REVIEWED_CANDIDATE",
+      "day": null,
+      "book": "I",
+      "chapter": null,
+      "part": null,
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "entities": [],
+      "axes": [
+        28,
+        29,
+        30
+      ],
+      "summary": "Autor pede realismo na fantasia, detalhes e jornada épica; pedido visual histórico sujeito a revisões.",
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 362,
+        "line_end": 362,
+        "role": "Prompt",
+        "span_sha256_utf8": "fa885d4638334057cc3c0edd4a4e68539244cabb71631685e108cb91c99ca247",
+        "literal_policy": "Read exact span from pinned source; do not duplicate transcript in public candidate."
+      },
+      "dependencies": [],
+      "promotion": false
+    },
+    {
+      "id": "O8C-LI-0001-014",
+      "type": "conflict",
+      "classification": "CONTRADIÇÃO PENDENTE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_CANDIDATE",
+      "day": 1,
+      "book": "I",
+      "chapter": 1,
+      "part": null,
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "entities": [
+        "legiao-inicial"
+      ],
+      "axes": [
+        24
+      ],
+      "summary": "Narrador afirma Legião intacta; painel anterior dizia baixas não apuradas. Buscar contagem.",
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 394,
+        "line_end": 394,
+        "role": "Response",
+        "span_sha256_utf8": "4c81bd5c4a9adf44bd41fb14d5a370a8d73d273eae74aee7b497eeeb0e3db09d",
+        "literal_policy": "Read exact span from pinned source; do not duplicate transcript in public candidate."
+      },
+      "dependencies": [],
+      "promotion": false
+    },
+    {
+      "id": "O8C-LI-0001-015",
+      "type": "choice",
+      "classification": "FATO CONFIRMADO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "authority": "AUTHOR_REQUEST_OR_CHOICE",
+      "verification": "CONTROLLER_REVIEWED_CANDIDATE",
+      "day": 1,
+      "book": "I",
+      "chapter": 1,
+      "part": null,
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "entities": [
+        "lucas"
+      ],
+      "axes": [
+        25,
+        28
+      ],
+      "summary": "Autor escolhe conhecer antes de conquistar (opção 1).",
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 399,
+        "line_end": 399,
+        "role": "Prompt",
+        "span_sha256_utf8": "1084ed921301991a6608ce6efc2a798e4b03671d04edba6c56c65961bcfad6a3",
+        "literal_policy": "Read exact span from pinned source; do not duplicate transcript in public candidate."
+      },
+      "dependencies": [],
+      "promotion": false
+    },
+    {
+      "id": "O8C-LI-0001-016",
+      "type": "event",
+      "classification": "FATO CONFIRMADO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_CANDIDATE",
+      "day": 1,
+      "book": "I",
+      "chapter": 1,
+      "part": null,
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "entities": [
+        "lucas",
+        "capitao-sem-nome",
+        "legiao-inicial"
+      ],
+      "axes": [
+        1,
+        3,
+        19,
+        24,
+        25
+      ],
+      "summary": "Lucas ordena não perseguir; tropa interrompe avanço e assume posição protetora.",
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 412,
+        "line_end": 428,
+        "role": "Response",
+        "span_sha256_utf8": "0d0b71c0f141c0eb8cff5c8ed8e0ed0ebcdb5115957a0607458821909657eead",
+        "literal_policy": "Read exact span from pinned source; do not duplicate transcript in public candidate."
+      },
+      "dependencies": [],
+      "promotion": false
+    },
+    {
+      "id": "O8C-LI-0001-017",
+      "type": "geography",
+      "classification": "FATO CONFIRMADO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_CANDIDATE",
+      "day": 1,
+      "book": "I",
+      "chapter": 1,
+      "part": null,
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "entities": [
+        "vale-sem-nome"
+      ],
+      "axes": [
+        16,
+        17
+      ],
+      "summary": "Vale é passagem com colinas laterais, rio a oeste e antiga estrada de pedra ao norte; autoria desconhecida.",
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 438,
+        "line_end": 442,
+        "role": "Response",
+        "span_sha256_utf8": "a397746f50f15ef0f0474c6a8cb8a99252ad873de108ac935f4ee9d633ee1bbb",
+        "literal_policy": "Read exact span from pinned source; do not duplicate transcript in public candidate."
+      },
+      "dependencies": [],
+      "promotion": false
+    },
+    {
+      "id": "O8C-LI-0001-018",
+      "type": "appearance",
+      "classification": "OBSERVAÇÃO CONTEXTUAL",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_CANDIDATE",
+      "day": 1,
+      "book": "I",
+      "chapter": 1,
+      "part": null,
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "entities": [
+        "capitao-sem-nome"
+      ],
+      "axes": [
+        4,
+        6,
+        7,
+        8,
+        13
+      ],
+      "summary": "Capitão ligeiramente mais alto que demais, crista carmesim, armadura negra, lança, gestos econômicos.",
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 446,
+        "line_end": 448,
+        "role": "Response",
+        "span_sha256_utf8": "f3dfeb258273afba0a25499d47b9348799a6d2dc0fd1e9f1052132b040c3dbc9",
+        "literal_policy": "Read exact span from pinned source; do not duplicate transcript in public candidate."
+      },
+      "dependencies": [],
+      "promotion": false
+    },
+    {
+      "id": "O8C-LI-0001-019",
+      "type": "appearance",
+      "classification": "OBSERVAÇÃO CONTEXTUAL",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_CANDIDATE",
+      "day": 1,
+      "book": "I",
+      "chapter": 1,
+      "part": null,
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "entities": [
+        "chefe-orc-sem-nome"
+      ],
+      "axes": [
+        4,
+        6,
+        13,
+        22
+      ],
+      "summary": "Chefe orc quase três metros, olho amarelo visível, colar de dentes e presas; ferimento ocular; nome desconhecido.",
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 450,
+        "line_end": 454,
+        "role": "Response",
+        "span_sha256_utf8": "cc73c2e693504d7108ddf7f861cd061e2ddd8059e1663fa3b43ec18b706f022c",
+        "literal_policy": "Read exact span from pinned source; do not duplicate transcript in public candidate."
+      },
+      "dependencies": [],
+      "promotion": false
+    },
+    {
+      "id": "O8C-LI-0001-020",
+      "type": "knowledge",
+      "classification": "FATO CONFIRMADO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_CANDIDATE",
+      "day": 1,
+      "book": "I",
+      "chapter": 1,
+      "part": null,
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "entities": [
+        "capitao-sem-nome",
+        "lucas"
+      ],
+      "axes": [
+        8,
+        11,
+        18,
+        27
+      ],
+      "summary": "Capitão declara compreensão parcial da língua orc; tradução imperfeita, suficiente para interrogatório. Não prova fluência geral.",
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 460,
+        "line_end": 471,
+        "role": "Response",
+        "span_sha256_utf8": "b424004b638af84ac70334492f44ebbdf640c21ef126b7f97c32aca6fdab6922",
+        "literal_policy": "Read exact span from pinned source; do not duplicate transcript in public candidate."
+      },
+      "dependencies": [],
+      "promotion": false
+    },
+    {
+      "id": "O8C-LI-0001-021",
+      "type": "report",
+      "classification": "RELATO NÃO VERIFICADO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_CANDIDATE",
+      "day": 1,
+      "book": "I",
+      "chapter": 1,
+      "part": null,
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "entities": [
+        "chefe-orc-sem-nome",
+        "cla-uzgor"
+      ],
+      "axes": [
+        5,
+        18,
+        19,
+        23,
+        27
+      ],
+      "summary": "Prisioneiro identifica clã Uzgor e alega deslocamento forçado e chegada incomum do protagonista.",
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 487,
+        "line_end": 505,
+        "role": "Response",
+        "span_sha256_utf8": "354b2fabd0d026a56299a89abebffec79c6e5cb1d681eae80550bcfcab472b1c",
+        "literal_policy": "Read exact span from pinned source; do not duplicate transcript in public candidate."
+      },
+      "dependencies": [],
+      "promotion": false
+    },
+    {
+      "id": "O8C-LI-0001-022",
+      "type": "report",
+      "classification": "RELATO NÃO VERIFICADO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_CANDIDATE",
+      "day": 1,
+      "book": "I",
+      "chapter": 1,
+      "part": null,
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "entities": [
+        "chefe-orc-sem-nome",
+        "bandeira-cinzenta"
+      ],
+      "axes": [
+        18,
+        19,
+        23,
+        26,
+        27
+      ],
+      "summary": "Prisioneiro atribui fuga à Bandeira Cinzenta e relata supostas agressões; não corroboradas na cena.",
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 525,
+        "line_end": 541,
+        "role": "Response",
+        "span_sha256_utf8": "25cd7170c9453294ea6587e84f473330ff20fd0c8a3d1178a8a0b06ebee79f46",
+        "literal_policy": "Read exact span from pinned source; do not duplicate transcript in public candidate."
+      },
+      "dependencies": [],
+      "promotion": false
+    },
+    {
+      "id": "O8C-LI-0001-023",
+      "type": "inference",
+      "classification": "INFERÊNCIA",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_CANDIDATE",
+      "day": 1,
+      "book": "I",
+      "chapter": 1,
+      "part": null,
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "entities": [
+        "capitao-sem-nome",
+        "bandeira-cinzenta"
+      ],
+      "axes": [
+        16,
+        23,
+        26,
+        27
+      ],
+      "summary": "Capitão formula hipóteses condicionais sobre passagem e chifre; não identifica cavaleiros.",
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 551,
+        "line_end": 555,
+        "role": "Response",
+        "span_sha256_utf8": "de341c5b860a63a15cf0c8f3956e2fce38102dc2848b2037dea7a267b402ce92",
+        "literal_policy": "Read exact span from pinned source; do not duplicate transcript in public candidate."
+      },
+      "dependencies": [],
+      "promotion": false
+    },
+    {
+      "id": "O8C-LI-0001-024",
+      "type": "event",
+      "classification": "FATO CONFIRMADO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_CANDIDATE",
+      "day": 1,
+      "book": "I",
+      "chapter": 1,
+      "part": null,
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "entities": [
+        "lucas",
+        "capitao-sem-nome",
+        "cavaleiros-desconhecidos"
+      ],
+      "axes": [
+        3,
+        4,
+        23,
+        26,
+        27
+      ],
+      "summary": "Grupo montado observado na colina oriental; estimativa seis ou oito, brasões indistinguíveis.",
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 563,
+        "line_end": 575,
+        "role": "Response",
+        "span_sha256_utf8": "50a53bc42783b8d65f230ae303344a8e41c0b892905f2c93dc6e0b06c92da054",
+        "literal_policy": "Read exact span from pinned source; do not duplicate transcript in public candidate."
+      },
+      "dependencies": [],
+      "promotion": false
+    },
+    {
+      "id": "O8C-LI-0001-025",
+      "type": "choice",
+      "classification": "PROPOSTA_EDITORIAL",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_CANDIDATE",
+      "day": 1,
+      "book": "I",
+      "chapter": 1,
+      "part": null,
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "entities": [],
+      "axes": [
+        28,
+        29
+      ],
+      "summary": "Três alternativas oferecidas; somente seleção subsequente estabelece ação.",
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 599,
+        "line_end": 633,
+        "role": "Response",
+        "span_sha256_utf8": "0fc4301652cf3734526473baaddb4158570b4ad1dde79164b0fce98cc4d275cc",
+        "literal_policy": "Read exact span from pinned source; do not duplicate transcript in public candidate."
+      },
+      "dependencies": [],
+      "promotion": false
+    },
+    {
+      "id": "O8C-LI-0001-026",
+      "type": "choice",
+      "classification": "FATO CONFIRMADO",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "authority": "AUTHOR_REQUEST_OR_CHOICE",
+      "verification": "CONTROLLER_REVIEWED_CANDIDATE",
+      "day": 1,
+      "book": "I",
+      "chapter": 1,
+      "part": null,
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "entities": [
+        "lucas",
+        "legiao-inicial",
+        "capitao-sem-nome"
+      ],
+      "axes": [
+        10,
+        19,
+        25,
+        28,
+        29
+      ],
+      "summary": "Autor escolhe sinal de trégua, solicita reconhecimento, inteligência, estratégia e proteção das criações. Execução na resposta seguinte.",
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 638,
+        "line_end": 639,
+        "role": "Prompt",
+        "span_sha256_utf8": "a98832f7398992df8755347bac30292316b3c588166f3411efe292aaa22ecf41",
+        "literal_policy": "Read exact span from pinned source; do not duplicate transcript in public candidate."
+      },
+      "dependencies": [],
+      "promotion": false
+    }
+  ],
+  "entity_labels_are_provisional": true,
+  "axis_coverage": {
+    "observed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      19,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "not_evidenced": [
+      9,
+      15,
+      20
+    ],
+    "note": "Coverage tags indicate relevance, not completeness; all axes to be audited per book."
+  },
+  "open_questions": [
+    "Original image evidence unavailable from literal transcript",
+    "Resolve captain identity against subsequent scenes and existing registry",
+    "Resolve casualties and initial power limitations against later evidence",
+    "Determine if provisional prologue/geography ever incorporated",
+    "Cross-check provisional entity labels against graph before promotion"
+  ],
+  "tests": {
+    "sha256_known_vectors": 2,
+    "unique_ids": true,
+    "role_range_integrity": 26,
+    "span_hash_readback": 26,
+    "negative_modified_anchor_rejected": true,
+    "next_role_boundary": true,
+    "full_source_raw_sha256_recomputed": false,
+    "python_regression": "NOT_RUN_IN_CONTROLLER"
+  },
+  "canon_changed": false,
+  "independent_review": false
+}

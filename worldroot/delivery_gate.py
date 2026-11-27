@@ -58,6 +58,12 @@ def audit_release(root: Path, episode_id: str) -> dict:
             raise GateError("No archived literal story readback")
         draft, manifest = verify_episode(root, episode_id)
         checks["immutable_manifest"] = True
+        from .r33_runtime import preparation_required, verify_archived_preparation
+        if "editorial_preparation" in manifest or preparation_required(root, episode_id, inbox):
+            preparation = verify_archived_preparation(root, episode_id, inbox, current_head=head)
+            checks["r33_archived_preparation"] = True
+            if preparation["editorial_verified"]:
+                checks["editorial_preparation_integrity"] = True
         source = story_path.read_text(encoding="utf-8")
         checks["literal_source_equals_inbox"] = (
             source == inbox["full_text"]
@@ -145,6 +151,17 @@ def audit_release(root: Path, episode_id: str) -> dict:
         "prose_words_approx": prose_words,
         "longform_target_status": (depth.get("status") if "depth" in locals() else None),
         "lived_narrative_advisory": lived_advisory,
+        "editorial_readback_diagnostic": ({
+            "mode": literary["editorial_brief_mode"],
+            "represented_rule_ids": literary["consulted_rules"],
+            "literal_rule_ids": literary["editorial_context_coverage"]["literal_rule_ids"],
+            "summary_rule_ids": literary["editorial_context_coverage"]["summary_rule_ids"],
+            "omitted_budget_rule_ids": literary["editorial_context_coverage"]["omitted_budget_rule_ids"],
+            "evaluated_rule_ids": literary["evaluated_rule_ids"],
+            "generation_evaluated": False,
+            "scope": "READBACK_PREFLIGHT_ONLY_NOT_GENERATION_CONTEXT",
+            "semantic_certification": False,
+        } if "literary" in locals() else None),
         "r25_contract": ("ENFORCED" if "inbox" in locals() and isinstance(inbox, dict)
                          and inbox.get("schema") in ("worldroot-draft-inbox-v2", "worldroot-draft-inbox-v3")
                          else "LEGACY_READBACK_NO_RETROACTIVE_REJECTION"),

@@ -1,0 +1,8 @@
+# OMEGA-008 C — bulk recovery v1
+
+Development only. Preserve the two reviewed historical lots and the semantic cursor at line 1217 until explicit semantic review. The new Python module reuses verified sources, role segmentation, registry alias matching and immutable episode validation. It builds reproducible, source-bound subunits and adaptive macrolots, with metadata only (no raw transcript or unknown names exported). Every line is assigned exactly once; overlapping context is hashed separately, without counting it as coverage. Source order and closure sequence are not asserted as historical event time; later export overlaps and V/VI boundaries still need review. Duplicate anchors are retained, not collapsed into facts. All 30 axes are lexical signals, never completeness or truth.
+
+Run with a read-only pinned archive and a fresh output directory outside both checkouts:
+`python -m worldroot.omega_bulk_recovery --archive-root archive --output /tmp/omega-bulk`
+
+The queue contains a stable predecessor chain for serial consolidation; extraction may parallelize by macro. A reviewer must retrieve the exact source span locally, verify hashes and roles, reconcile identities and temporal state, and persist semantic candidates in separate lots. No raw material or hidden evaluation data in public logs. No API calls, no new paid service, no canonical promotion. The prior 58 records form a development overlap probe, not independent ground truth. Native regression, measured throughput and actual semantic sample must be reported separately. Missing Codex delta remains an open integration issue.

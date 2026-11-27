@@ -1,0 +1,4214 @@
+{
+  "schema": "worldroot-omega-rule-trace-v1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "baseline": "3b612087a112ec008e5622af3cd076d6fe79ddff",
+  "policy_blob": "615151fc89228ddb222ea01613c23e977f8c418b",
+  "policy_version": 22,
+  "source_count": 34,
+  "original_quotes_rechecked": 6,
+  "feedback_files_read": 10,
+  "scope": "metadata references only, no duplicated literal corpus; no source publication",
+  "rules": [
+    {
+      "id": "P01",
+      "origin": "worldroot/editorial_policy.json#P01",
+      "evidence_refs": [
+        {
+          "source_id": "S01",
+          "approved_date": "2026-10-31",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S01/quote",
+          "transcript_line": 8550,
+          "original_rechecked": true
+        },
+        {
+          "source_id": "S02",
+          "approved_date": "2026-11-01",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S02/quote",
+          "transcript_line": 40890,
+          "original_rechecked": true
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "MIDIA",
+        "ESTILO"
+      ],
+      "stance": "MANTER",
+      "enforcement": "ESTRUTURAL",
+      "active": true,
+      "status": "PARTIAL_SYNTHETIC_STRUCTURAL_EVIDENCE",
+      "owner_confirmed": "worldroot/editorial_guard.py",
+      "application": "quick_preflight structural image rejection",
+      "test": "tests/test_editorial_guard.py::EditorialMemoryTests.test_images_are_structurally_rejected",
+      "execution_evidence": "45934821613 full synthetic suite success; not live UI certification",
+      "conflicts": "Prior image praise superseded by no-image rule",
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P02",
+      "origin": "worldroot/editorial_policy.json#P02",
+      "evidence_refs": [
+        {
+          "source_id": "S02",
+          "approved_date": "2026-11-01",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S02/quote",
+          "transcript_line": 40890,
+          "original_rechecked": true
+        },
+        {
+          "source_id": "S04",
+          "approved_date": "2026-11-05",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S04/quote",
+          "transcript_line": 226580,
+          "original_rechecked": true
+        },
+        {
+          "source_id": "S05",
+          "approved_date": "2026-11-05",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S05/quote",
+          "transcript_line": 247091,
+          "original_rechecked": true
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "ESTILO",
+        "CENA"
+      ],
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P03",
+      "origin": "worldroot/editorial_policy.json#P03",
+      "evidence_refs": [
+        {
+          "source_id": "S03",
+          "approved_date": "2026-11-01",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S03/quote",
+          "transcript_line": 46786,
+          "original_rechecked": true
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "TEMPO",
+        "CENA"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P04",
+      "origin": "worldroot/editorial_policy.json#P04",
+      "evidence_refs": [
+        {
+          "source_id": "S05",
+          "approved_date": "2026-11-05",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S05/quote",
+          "transcript_line": 247091,
+          "original_rechecked": true
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "LUCAS",
+        "DIALOGO"
+      ],
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P05",
+      "origin": "worldroot/editorial_policy.json#P05",
+      "evidence_refs": [
+        {
+          "source_id": "S05",
+          "approved_date": "2026-11-05",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S05/quote",
+          "transcript_line": 247091,
+          "original_rechecked": true
+        }
+      ],
+      "priority": "CONTEXTUAL",
+      "scope": [
+        "SISTEMA",
+        "DIALOGO"
+      ],
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P06",
+      "origin": "worldroot/editorial_policy.json#P06",
+      "evidence_refs": [
+        {
+          "source_id": "S04",
+          "approved_date": "2026-11-05",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S04/quote",
+          "transcript_line": 226580,
+          "original_rechecked": true
+        },
+        {
+          "source_id": "S05",
+          "approved_date": "2026-11-05",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S05/quote",
+          "transcript_line": 247091,
+          "original_rechecked": true
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "MIREN",
+        "ROMANCE",
+        "PERSONAGENS"
+      ],
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P07",
+      "origin": "worldroot/editorial_policy.json#P07",
+      "evidence_refs": [
+        {
+          "source_id": "S04",
+          "approved_date": "2026-11-05",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S04/quote",
+          "transcript_line": 226580,
+          "original_rechecked": true
+        },
+        {
+          "source_id": "S07",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S07/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "PERSONAGENS",
+        "MUNDO"
+      ],
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P08",
+      "origin": "worldroot/editorial_policy.json#P08",
+      "evidence_refs": [
+        {
+          "source_id": "S07",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S07/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "GENESE",
+        "PODER"
+      ],
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P09",
+      "origin": "worldroot/editorial_policy.json#P09",
+      "evidence_refs": [
+        {
+          "source_id": "S04",
+          "approved_date": "2026-11-05",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S04/quote",
+          "transcript_line": 226580,
+          "original_rechecked": true
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "MISTERIO",
+        "EXPLORACAO"
+      ],
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P10",
+      "origin": "worldroot/editorial_policy.json#P10",
+      "evidence_refs": [
+        {
+          "source_id": "S04",
+          "approved_date": "2026-11-05",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S04/quote",
+          "transcript_line": 226580,
+          "original_rechecked": true
+        },
+        {
+          "source_id": "S07",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S07/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "MUNDO",
+        "CAUSALIDADE"
+      ],
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P11",
+      "origin": "worldroot/editorial_policy.json#P11",
+      "evidence_refs": [
+        {
+          "source_id": "S07",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S07/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "PROJETOS",
+        "TECNOLOGIA"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P12",
+      "origin": "worldroot/editorial_policy.json#P12",
+      "evidence_refs": [
+        {
+          "source_id": "S07",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S07/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CONTEXTUAL",
+      "scope": [
+        "CIDADE",
+        "POLITICA"
+      ],
+      "stance": "EVITAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P13",
+      "origin": "worldroot/editorial_policy.json#P13",
+      "evidence_refs": [
+        {
+          "source_id": "S05",
+          "approved_date": "2026-11-05",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S05/quote",
+          "transcript_line": 247091,
+          "original_rechecked": true
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "ROMANCE",
+        "PERSONAGENS",
+        "CENA"
+      ],
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P14",
+      "origin": "worldroot/editorial_policy.json#P14",
+      "evidence_refs": [
+        {
+          "source_id": "S06",
+          "approved_date": "2026-11-06",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S06/quote",
+          "transcript_line": 256983,
+          "original_rechecked": true
+        }
+      ],
+      "priority": "CONTEXTUAL",
+      "scope": [
+        "SERIS",
+        "PERSONAGENS"
+      ],
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P15",
+      "origin": "worldroot/editorial_policy.json#P15",
+      "evidence_refs": [
+        {
+          "source_id": "S07",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S07/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        },
+        {
+          "source_id": "S08",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S08/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "CANONE",
+        "TEMPO"
+      ],
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P16",
+      "origin": "worldroot/editorial_policy.json#P16",
+      "evidence_refs": [
+        {
+          "source_id": "S07",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S07/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "ESCOLHAS"
+      ],
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P17",
+      "origin": "worldroot/editorial_policy.json#P17",
+      "evidence_refs": [
+        {
+          "source_id": "S04",
+          "approved_date": "2026-11-05",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S04/quote",
+          "transcript_line": 226580,
+          "original_rechecked": true
+        },
+        {
+          "source_id": "S05",
+          "approved_date": "2026-11-05",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S05/quote",
+          "transcript_line": 247091,
+          "original_rechecked": true
+        },
+        {
+          "source_id": "S06",
+          "approved_date": "2026-11-06",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S06/quote",
+          "transcript_line": 256983,
+          "original_rechecked": true
+        }
+      ],
+      "priority": "CONTEXTUAL",
+      "scope": [
+        "ESTILO",
+        "PERSONAGENS",
+        "EXPLORACAO"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P18",
+      "origin": "worldroot/editorial_policy.json#P18",
+      "evidence_refs": [
+        {
+          "source_id": "S08",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S08/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "CANONE",
+        "MEMORIA"
+      ],
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P19",
+      "origin": "worldroot/editorial_policy.json#P19",
+      "evidence_refs": [
+        {
+          "source_id": "S09",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S09/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CONTEXTUAL",
+      "scope": [
+        "UI",
+        "DESIGN",
+        "ESTILO"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "ESTRUTURAL",
+      "active": true,
+      "status": "PARTIAL_SYNTHETIC_STRUCTURAL_EVIDENCE",
+      "owner_confirmed": "worldroot/presentation_guard.py",
+      "application": "presentation_preflight structural layout checks",
+      "test": "tests/test_presentation_guard.py::PresentationContractTest",
+      "execution_evidence": "45934821613 full synthetic suite success; not live UI certification",
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P20",
+      "origin": "worldroot/editorial_policy.json#P20",
+      "evidence_refs": [
+        {
+          "source_id": "S09",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S09/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        },
+        {
+          "source_id": "S10",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S10/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        },
+        {
+          "source_id": "S12",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S12/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "CENA",
+        "ESTILO",
+        "LUCAS"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P21",
+      "origin": "worldroot/editorial_policy.json#P21",
+      "evidence_refs": [
+        {
+          "source_id": "S09",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S09/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        },
+        {
+          "source_id": "S10",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S10/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "CENA",
+        "LUCAS",
+        "PERSONAGENS"
+      ],
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P22",
+      "origin": "worldroot/editorial_policy.json#P22",
+      "evidence_refs": [
+        {
+          "source_id": "S09",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S09/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        },
+        {
+          "source_id": "S10",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S10/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "MISTERIO",
+        "CENA",
+        "MUNDO"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P23",
+      "origin": "worldroot/editorial_policy.json#P23",
+      "evidence_refs": [
+        {
+          "source_id": "S09",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S09/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        },
+        {
+          "source_id": "S10",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S10/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "MUNDO",
+        "CAUSALIDADE",
+        "CENA"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P24",
+      "origin": "worldroot/editorial_policy.json#P24",
+      "evidence_refs": [
+        {
+          "source_id": "S11",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S11/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "TEMPO",
+        "CENA",
+        "LUCAS",
+        "ROMANCE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P25",
+      "origin": "worldroot/editorial_policy.json#P25",
+      "evidence_refs": [
+        {
+          "source_id": "S11",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S11/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        },
+        {
+          "source_id": "S10",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S10/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "TEMPO",
+        "MISTERIO",
+        "CENA",
+        "CAUSALIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P26",
+      "origin": "worldroot/editorial_policy.json#P26",
+      "evidence_refs": [
+        {
+          "source_id": "S12",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S12/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        },
+        {
+          "source_id": "S13",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S13/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        },
+        {
+          "source_id": "S14",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S14/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "CENA",
+        "ESTILO",
+        "LUCAS"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P27",
+      "origin": "worldroot/editorial_policy.json#P27",
+      "evidence_refs": [
+        {
+          "source_id": "S12",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S12/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "CANONE",
+        "MEMORIA",
+        "TEMPO",
+        "PERSONAGENS"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P28",
+      "origin": "worldroot/editorial_policy.json#P28",
+      "evidence_refs": [
+        {
+          "source_id": "S13",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S13/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "CENA",
+        "LUCAS",
+        "ESTILO",
+        "ROMANCE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P29",
+      "origin": "worldroot/editorial_policy.json#P29",
+      "evidence_refs": [
+        {
+          "source_id": "S13",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S13/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        },
+        {
+          "source_id": "S11",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S11/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "TEMPO",
+        "CENA",
+        "CAUSALIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P30",
+      "origin": "worldroot/editorial_policy.json#P30",
+      "evidence_refs": [
+        {
+          "source_id": "S13",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S13/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "CENA",
+        "PERSONAGENS",
+        "LUCAS",
+        "ROMANCE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P31",
+      "origin": "worldroot/editorial_policy.json#P31",
+      "evidence_refs": [
+        {
+          "source_id": "S14",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S14/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "PERSONAGENS",
+        "CANONE",
+        "CENA"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P32",
+      "origin": "worldroot/editorial_policy.json#P32",
+      "evidence_refs": [
+        {
+          "source_id": "S14",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S14/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "CENA",
+        "ESTILO",
+        "CAUSALIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P33",
+      "origin": "worldroot/editorial_policy.json#P33",
+      "evidence_refs": [
+        {
+          "source_id": "S14",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S14/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "CANONE",
+        "MEMORIA",
+        "PERSONAGENS",
+        "TEMPO"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P34",
+      "origin": "worldroot/editorial_policy.json#P34",
+      "evidence_refs": [
+        {
+          "source_id": "S14",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S14/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        },
+        {
+          "source_id": "S12",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S12/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "ESTILO",
+        "CENA",
+        "PERSONAGENS"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P35",
+      "origin": "worldroot/editorial_policy.json#P35",
+      "evidence_refs": [
+        {
+          "source_id": "S15",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S15/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "LUCAS",
+        "ESTILO",
+        "PERSONAGENS"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P36",
+      "origin": "worldroot/editorial_policy.json#P36",
+      "evidence_refs": [
+        {
+          "source_id": "S15",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S15/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "PODER",
+        "GENESE",
+        "CREATION"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P37",
+      "origin": "worldroot/editorial_policy.json#P37",
+      "evidence_refs": [
+        {
+          "source_id": "S15",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S15/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "MIREN",
+        "ROMANCE",
+        "PERSONAGENS"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P38",
+      "origin": "worldroot/editorial_policy.json#P38",
+      "evidence_refs": [
+        {
+          "source_id": "S15",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S15/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "AERUN",
+        "MISTERIO",
+        "MUNDO"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P39",
+      "origin": "worldroot/editorial_policy.json#P39",
+      "evidence_refs": [
+        {
+          "source_id": "S15",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S15/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        },
+        {
+          "source_id": "S16",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S16/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "TALIS",
+        "MIREN",
+        "MISTERIO"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P40",
+      "origin": "worldroot/editorial_policy.json#P40",
+      "evidence_refs": [
+        {
+          "source_id": "S15",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S15/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "ARGOS",
+        "AVENTURA",
+        "MUNDO"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P41",
+      "origin": "worldroot/editorial_policy.json#P41",
+      "evidence_refs": [
+        {
+          "source_id": "S15",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S15/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "TRES_ARCOS",
+        "MUNDO",
+        "CONSEQUENCIAS"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P42",
+      "origin": "worldroot/editorial_policy.json#P42",
+      "evidence_refs": [
+        {
+          "source_id": "S15",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S15/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        },
+        {
+          "source_id": "S16",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S16/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "ESTILO",
+        "CENA",
+        "RITMO"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P43",
+      "origin": "worldroot/editorial_policy.json#P43",
+      "evidence_refs": [
+        {
+          "source_id": "S16",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S16/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "CANONE",
+        "PLANEJAMENTO",
+        "LIVRO_VI"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P44",
+      "origin": "worldroot/editorial_policy.json#P44",
+      "evidence_refs": [
+        {
+          "source_id": "S16",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S16/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "CANONE",
+        "AUTORIA",
+        "LIVRO_VI"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P45",
+      "origin": "worldroot/editorial_policy.json#P45",
+      "evidence_refs": [
+        {
+          "source_id": "S16",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S16/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "TEMPO",
+        "RITMO",
+        "LIVRO_VI"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P46",
+      "origin": "worldroot/editorial_policy.json#P46",
+      "evidence_refs": [
+        {
+          "source_id": "S16",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S16/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        },
+        {
+          "source_id": "S17",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S17/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "LIVRO_VI",
+        "ANTAGONISTAS",
+        "PERSONAGENS",
+        "RITMO"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P47",
+      "origin": "worldroot/editorial_policy.json#P47",
+      "evidence_refs": [
+        {
+          "source_id": "S16",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S16/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "LIVRO_VI",
+        "ESTRUTURA",
+        "RITMO"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P48",
+      "origin": "worldroot/editorial_policy.json#P48",
+      "evidence_refs": [
+        {
+          "source_id": "S16",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S16/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "TALIS",
+        "ARQUITETOS",
+        "AERUN",
+        "ANTAGONISTAS"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P49",
+      "origin": "worldroot/editorial_policy.json#P49",
+      "evidence_refs": [
+        {
+          "source_id": "S17",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S17/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        },
+        {
+          "source_id": "S19",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S19/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        },
+        {
+          "source_id": "S20",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S20/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "LIVRO_VI",
+        "LUCAS",
+        "TRES_ARCOS",
+        "GENESE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P50",
+      "origin": "worldroot/editorial_policy.json#P50",
+      "evidence_refs": [
+        {
+          "source_id": "S17",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S17/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "MALHA_AURORA",
+        "TRES_ARCOS",
+        "MUNDO",
+        "PERSONAGENS"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P51",
+      "origin": "worldroot/editorial_policy.json#P51",
+      "evidence_refs": [
+        {
+          "source_id": "S17",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S17/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "LIVRO_VI",
+        "ANTAGONISTAS",
+        "CAUSALIDADE",
+        "MUNDO"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P52",
+      "origin": "worldroot/editorial_policy.json#P52",
+      "evidence_refs": [
+        {
+          "source_id": "S17",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S17/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "AERUN",
+        "MIREN",
+        "ROMANCE",
+        "LIVRO_VI"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P53",
+      "origin": "worldroot/editorial_policy.json#P53",
+      "evidence_refs": [
+        {
+          "source_id": "S18",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S18/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "LUCAS",
+        "LIVRO_VI",
+        "RITMO"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P54",
+      "origin": "worldroot/editorial_policy.json#P54",
+      "evidence_refs": [
+        {
+          "source_id": "S18",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S18/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "TRES_ARCOS",
+        "ARQUITETURA",
+        "LIVRO_VI"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P55",
+      "origin": "worldroot/editorial_policy.json#P55",
+      "evidence_refs": [
+        {
+          "source_id": "S18",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S18/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "COSTURA_DE_DADOS",
+        "TECNOLOGIA",
+        "COMUNICACAO"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P56",
+      "origin": "worldroot/editorial_policy.json#P56",
+      "evidence_refs": [
+        {
+          "source_id": "S18",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S18/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        },
+        {
+          "source_id": "S19",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S19/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        },
+        {
+          "source_id": "S20",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S20/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "LIVRO_VI",
+        "RITMO",
+        "ANTAGONISTAS"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P57",
+      "origin": "worldroot/editorial_policy.json#P57",
+      "evidence_refs": [
+        {
+          "source_id": "S19",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S19/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "GEOGRAFIA",
+        "VIAGEM",
+        "ARGOS"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P58",
+      "origin": "worldroot/editorial_policy.json#P58",
+      "evidence_refs": [
+        {
+          "source_id": "S19",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S19/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "POVOS",
+        "WORLD_BUILDING",
+        "PERSONAGENS"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P59",
+      "origin": "worldroot/editorial_policy.json#P59",
+      "evidence_refs": [
+        {
+          "source_id": "S19",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S19/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "TRES_ARCOS",
+        "AERUN",
+        "FORJA_AURORA"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P60",
+      "origin": "worldroot/editorial_policy.json#P60",
+      "evidence_refs": [
+        {
+          "source_id": "S19",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S19/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "VELKAR",
+        "ANTAGONISTAS",
+        "BATALHAS"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P61",
+      "origin": "worldroot/editorial_policy.json#P61",
+      "evidence_refs": [
+        {
+          "source_id": "S19",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S19/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "ARQUITETOS",
+        "CORACAO",
+        "AERUN"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P62",
+      "origin": "worldroot/editorial_policy.json#P62",
+      "evidence_refs": [
+        {
+          "source_id": "S19",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S19/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "LEVIATA",
+        "PORTAIS",
+        "CALDERVA"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P63",
+      "origin": "worldroot/editorial_policy.json#P63",
+      "evidence_refs": [
+        {
+          "source_id": "S19",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S19/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        },
+        {
+          "source_id": "S20",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S20/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "NARRATIVA",
+        "RITMO",
+        "LIVRO_VI"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P64",
+      "origin": "worldroot/editorial_policy.json#P64",
+      "evidence_refs": [
+        {
+          "source_id": "S19",
+          "approved_date": "2026-11-18",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S19/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "EDITORIAL",
+        "AUDITORIA",
+        "CANO"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P65",
+      "origin": "worldroot/editorial_policy.json#P65",
+      "evidence_refs": [
+        {
+          "source_id": "S21",
+          "approved_date": "2026-11-19",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S21/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        },
+        {
+          "source_id": "S25",
+          "approved_date": "2026-11-19",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S25/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "INTEGRIDADE",
+        "PROVENIENCIA",
+        "LIVRO_VI"
+      ],
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P66",
+      "origin": "worldroot/editorial_policy.json#P66",
+      "evidence_refs": [
+        {
+          "source_id": "S21",
+          "approved_date": "2026-11-19",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S21/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        },
+        {
+          "source_id": "S22",
+          "approved_date": "2026-11-19",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S22/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        },
+        {
+          "source_id": "S25",
+          "approved_date": "2026-11-19",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S25/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "ARQUIVO",
+        "HARD_GATE",
+        "SHA256"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P67",
+      "origin": "worldroot/editorial_policy.json#P67",
+      "evidence_refs": [
+        {
+          "source_id": "S22",
+          "approved_date": "2026-11-19",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S22/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        },
+        {
+          "source_id": "S23",
+          "approved_date": "2026-11-19",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S23/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "CANO",
+        "ESCOLHAS",
+        "HEAD"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P68",
+      "origin": "worldroot/editorial_policy.json#P68",
+      "evidence_refs": [
+        {
+          "source_id": "S24",
+          "approved_date": "2026-11-19",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S24/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "CHARACTER_BUILDING",
+        "WORLD_BUILDING",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P69",
+      "origin": "worldroot/editorial_policy.json#P69",
+      "evidence_refs": [
+        {
+          "source_id": "S25",
+          "approved_date": "2026-11-19",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S25/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        },
+        {
+          "source_id": "S24",
+          "approved_date": "2026-11-19",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S24/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "PERSISTENCIA",
+        "BOOTSTRAP",
+        "FONTE_DE_VERDADE"
+      ],
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P70",
+      "origin": "worldroot/editorial_policy.json#P70",
+      "evidence_refs": [
+        {
+          "source_id": "S21",
+          "approved_date": "2026-11-19",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S21/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        },
+        {
+          "source_id": "S22",
+          "approved_date": "2026-11-19",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S22/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        },
+        {
+          "source_id": "S23",
+          "approved_date": "2026-11-19",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S23/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        },
+        {
+          "source_id": "S24",
+          "approved_date": "2026-11-19",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S24/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        },
+        {
+          "source_id": "S25",
+          "approved_date": "2026-11-19",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S25/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "QUALIDADE",
+        "AUDITORIA",
+        "UX"
+      ],
+      "stance": "MANTER",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P71",
+      "origin": "worldroot/editorial_policy.json#P71",
+      "evidence_refs": [
+        {
+          "source_id": "S26",
+          "approved_date": "2026-11-19",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S26/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "CAPITULO",
+        "CINCO_PARTES",
+        "RITMO"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P72",
+      "origin": "worldroot/editorial_policy.json#P72",
+      "evidence_refs": [
+        {
+          "source_id": "S26",
+          "approved_date": "2026-11-19",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S26/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "MUNDO",
+        "TEMPO",
+        "AUTONOMIA"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P73",
+      "origin": "worldroot/editorial_policy.json#P73",
+      "evidence_refs": [
+        {
+          "source_id": "S26",
+          "approved_date": "2026-11-19",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S26/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "ANTAGONISTAS",
+        "ESPIONAGEM",
+        "CAUSALIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P74",
+      "origin": "worldroot/editorial_policy.json#P74",
+      "evidence_refs": [
+        {
+          "source_id": "S26",
+          "approved_date": "2026-11-19",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S26/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "GENESE",
+        "MUNDO",
+        "REACOES"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P75",
+      "origin": "worldroot/editorial_policy.json#P75",
+      "evidence_refs": [
+        {
+          "source_id": "S26",
+          "approved_date": "2026-11-19",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S26/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "COMBATE",
+        "MAGIA",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P76",
+      "origin": "worldroot/editorial_policy.json#P76",
+      "evidence_refs": [
+        {
+          "source_id": "S26",
+          "approved_date": "2026-11-19",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S26/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "FANTASIA",
+        "AVENTURA",
+        "RELACOES",
+        "ESTRATEGIA"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P77",
+      "origin": "worldroot/editorial_policy.json#P77",
+      "evidence_refs": [
+        {
+          "source_id": "S26",
+          "approved_date": "2026-11-19",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S26/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "CENA",
+        "PERSONAGENS",
+        "ROMANCE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P78",
+      "origin": "worldroot/editorial_policy.json#P78",
+      "evidence_refs": [
+        {
+          "source_id": "S26",
+          "approved_date": "2026-11-19",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S26/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "MISTERIOS",
+        "LEGADO",
+        "PROVA"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P79",
+      "origin": "worldroot/editorial_policy.json#P79",
+      "evidence_refs": [
+        {
+          "source_id": "S26",
+          "approved_date": "2026-11-19",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S26/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "LIVRO_VI",
+        "TRAMAS",
+        "PROPOSTA"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P80",
+      "origin": "worldroot/editorial_policy.json#P80",
+      "evidence_refs": [
+        {
+          "source_id": "S26",
+          "approved_date": "2026-11-19",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S26/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "AUDITORIA",
+        "QUALIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P81",
+      "origin": "worldroot/editorial_policy.json#P81",
+      "evidence_refs": [
+        {
+          "source_id": "S26",
+          "approved_date": "2026-11-19",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S26/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "CANONE",
+        "APROVACAO",
+        "INTEGRIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P82",
+      "origin": "worldroot/editorial_policy.json#P82",
+      "evidence_refs": [
+        {
+          "source_id": "S27",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S27/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R28",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P83",
+      "origin": "worldroot/editorial_policy.json#P83",
+      "evidence_refs": [
+        {
+          "source_id": "S27",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S27/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R28",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P84",
+      "origin": "worldroot/editorial_policy.json#P84",
+      "evidence_refs": [
+        {
+          "source_id": "S27",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S27/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R28",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P85",
+      "origin": "worldroot/editorial_policy.json#P85",
+      "evidence_refs": [
+        {
+          "source_id": "S27",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S27/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R28",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P86",
+      "origin": "worldroot/editorial_policy.json#P86",
+      "evidence_refs": [
+        {
+          "source_id": "S27",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S27/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R28",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P87",
+      "origin": "worldroot/editorial_policy.json#P87",
+      "evidence_refs": [
+        {
+          "source_id": "S27",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S27/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R28",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P88",
+      "origin": "worldroot/editorial_policy.json#P88",
+      "evidence_refs": [
+        {
+          "source_id": "S27",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S27/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R28",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P89",
+      "origin": "worldroot/editorial_policy.json#P89",
+      "evidence_refs": [
+        {
+          "source_id": "S28",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S28/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R29",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P90",
+      "origin": "worldroot/editorial_policy.json#P90",
+      "evidence_refs": [
+        {
+          "source_id": "S28",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S28/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R29",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P91",
+      "origin": "worldroot/editorial_policy.json#P91",
+      "evidence_refs": [
+        {
+          "source_id": "S28",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S28/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R29",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P92",
+      "origin": "worldroot/editorial_policy.json#P92",
+      "evidence_refs": [
+        {
+          "source_id": "S28",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S28/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R29",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P93",
+      "origin": "worldroot/editorial_policy.json#P93",
+      "evidence_refs": [
+        {
+          "source_id": "S28",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S28/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R29",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P94",
+      "origin": "worldroot/editorial_policy.json#P94",
+      "evidence_refs": [
+        {
+          "source_id": "S28",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S28/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R29",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P95",
+      "origin": "worldroot/editorial_policy.json#P95",
+      "evidence_refs": [
+        {
+          "source_id": "S28",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S28/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R29",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P96",
+      "origin": "worldroot/editorial_policy.json#P96",
+      "evidence_refs": [
+        {
+          "source_id": "S28",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S28/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R29",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P97",
+      "origin": "worldroot/editorial_policy.json#P97",
+      "evidence_refs": [
+        {
+          "source_id": "S28",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S28/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R29",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P98",
+      "origin": "worldroot/editorial_policy.json#P98",
+      "evidence_refs": [
+        {
+          "source_id": "S28",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S28/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R29",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P99",
+      "origin": "worldroot/editorial_policy.json#P99",
+      "evidence_refs": [
+        {
+          "source_id": "S29",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S29/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R30",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P100",
+      "origin": "worldroot/editorial_policy.json#P100",
+      "evidence_refs": [
+        {
+          "source_id": "S29",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S29/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R30",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P101",
+      "origin": "worldroot/editorial_policy.json#P101",
+      "evidence_refs": [
+        {
+          "source_id": "S29",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S29/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R30",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P102",
+      "origin": "worldroot/editorial_policy.json#P102",
+      "evidence_refs": [
+        {
+          "source_id": "S29",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S29/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R30",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P103",
+      "origin": "worldroot/editorial_policy.json#P103",
+      "evidence_refs": [
+        {
+          "source_id": "S29",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S29/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R30",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P104",
+      "origin": "worldroot/editorial_policy.json#P104",
+      "evidence_refs": [
+        {
+          "source_id": "S29",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S29/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R30",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P105",
+      "origin": "worldroot/editorial_policy.json#P105",
+      "evidence_refs": [
+        {
+          "source_id": "S29",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S29/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R30",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P106",
+      "origin": "worldroot/editorial_policy.json#P106",
+      "evidence_refs": [
+        {
+          "source_id": "S30",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S30/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R31",
+        "LIVRO_VI",
+        "CONTINUIDADE",
+        "QUALIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P107",
+      "origin": "worldroot/editorial_policy.json#P107",
+      "evidence_refs": [
+        {
+          "source_id": "S30",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S30/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R31",
+        "LIVRO_VI",
+        "CONTINUIDADE",
+        "QUALIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P108",
+      "origin": "worldroot/editorial_policy.json#P108",
+      "evidence_refs": [
+        {
+          "source_id": "S30",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S30/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R31",
+        "LIVRO_VI",
+        "CONTINUIDADE",
+        "QUALIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P109",
+      "origin": "worldroot/editorial_policy.json#P109",
+      "evidence_refs": [
+        {
+          "source_id": "S30",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S30/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R31",
+        "LIVRO_VI",
+        "CONTINUIDADE",
+        "QUALIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P110",
+      "origin": "worldroot/editorial_policy.json#P110",
+      "evidence_refs": [
+        {
+          "source_id": "S31",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S31/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R33",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P111",
+      "origin": "worldroot/editorial_policy.json#P111",
+      "evidence_refs": [
+        {
+          "source_id": "S31",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S31/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R33",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE",
+        "ROMANCE",
+        "MIREN"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P112",
+      "origin": "worldroot/editorial_policy.json#P112",
+      "evidence_refs": [
+        {
+          "source_id": "S31",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S31/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R33",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE",
+        "ROMANCE",
+        "MIREN"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P113",
+      "origin": "worldroot/editorial_policy.json#P113",
+      "evidence_refs": [
+        {
+          "source_id": "S31",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S31/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R33",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P114",
+      "origin": "worldroot/editorial_policy.json#P114",
+      "evidence_refs": [
+        {
+          "source_id": "S31",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S31/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R33",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P115",
+      "origin": "worldroot/editorial_policy.json#P115",
+      "evidence_refs": [
+        {
+          "source_id": "S31",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S31/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R33",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P116",
+      "origin": "worldroot/editorial_policy.json#P116",
+      "evidence_refs": [
+        {
+          "source_id": "S32",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S32/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R34",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P117",
+      "origin": "worldroot/editorial_policy.json#P117",
+      "evidence_refs": [
+        {
+          "source_id": "S32",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S32/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R34",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P118",
+      "origin": "worldroot/editorial_policy.json#P118",
+      "evidence_refs": [
+        {
+          "source_id": "S32",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S32/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R34",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P119",
+      "origin": "worldroot/editorial_policy.json#P119",
+      "evidence_refs": [
+        {
+          "source_id": "S32",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S32/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R34",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P120",
+      "origin": "worldroot/editorial_policy.json#P120",
+      "evidence_refs": [
+        {
+          "source_id": "S32",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S32/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R34",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P121",
+      "origin": "worldroot/editorial_policy.json#P121",
+      "evidence_refs": [
+        {
+          "source_id": "S33",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S33/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R35",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P122",
+      "origin": "worldroot/editorial_policy.json#P122",
+      "evidence_refs": [
+        {
+          "source_id": "S33",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S33/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R35",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P123",
+      "origin": "worldroot/editorial_policy.json#P123",
+      "evidence_refs": [
+        {
+          "source_id": "S33",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S33/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R35",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P124",
+      "origin": "worldroot/editorial_policy.json#P124",
+      "evidence_refs": [
+        {
+          "source_id": "S33",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S33/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R35",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P125",
+      "origin": "worldroot/editorial_policy.json#P125",
+      "evidence_refs": [
+        {
+          "source_id": "S33",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S33/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R35",
+        "LIVRO_VI",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P126",
+      "origin": "worldroot/editorial_policy.json#P126",
+      "evidence_refs": [
+        {
+          "source_id": "S34",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S34/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R35",
+        "REFINAMENTO",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P127",
+      "origin": "worldroot/editorial_policy.json#P127",
+      "evidence_refs": [
+        {
+          "source_id": "S34",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S34/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R35",
+        "REFINAMENTO",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P128",
+      "origin": "worldroot/editorial_policy.json#P128",
+      "evidence_refs": [
+        {
+          "source_id": "S34",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S34/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R35",
+        "REFINAMENTO",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P129",
+      "origin": "worldroot/editorial_policy.json#P129",
+      "evidence_refs": [
+        {
+          "source_id": "S34",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S34/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R35",
+        "REFINAMENTO",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    },
+    {
+      "id": "P130",
+      "origin": "worldroot/editorial_policy.json#P130",
+      "evidence_refs": [
+        {
+          "source_id": "S34",
+          "approved_date": "2026-11-25",
+          "quote_pointer": "worldroot/editorial_policy.json#sources/S34/quote",
+          "transcript_line": null,
+          "original_rechecked": false
+        }
+      ],
+      "priority": "CORE",
+      "scope": [
+        "R35",
+        "REFINAMENTO",
+        "QUALIDADE",
+        "CONTINUIDADE"
+      ],
+      "stance": "MELHORAR",
+      "enforcement": "EDITORIAL",
+      "active": true,
+      "status": "PENDING_RULE_LEVEL_RUNTIME_AND_SEMANTIC_VALIDATION",
+      "owner_confirmed": null,
+      "application": "Approved directive; runtime per-rule evidence not audited in cycle 1",
+      "test": null,
+      "execution_evidence": null,
+      "conflicts": null,
+      "regression_risk": "Brief selection metadata is not proof of actual prompt coverage; OMEGA-005 open",
+      "semantic_certification": false
+    }
+  ]
+}

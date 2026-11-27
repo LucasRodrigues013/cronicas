@@ -1,0 +1,4162 @@
+{
+  "schema": "worldroot-omega008-c-chronological-recovery-v1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "macro_id": "70066e9929724fb649c6425c4269c6cad7fde6396a8d3600a4a2d4f66cff06ca",
+  "previous_macro_id": "954f567fedc039eabf88693fe23a4a935a4f21a8585ed5c4a4d97e3c6d35b90e",
+  "previous_receipt": {
+    "path": "audit/omega008-c/bulk-semantic-macro-0011.json",
+    "sha256_utf8": "a61c57486b635cf3a6406aa46625698be4f1cafbd961c4b2ec0dd34c8baaf0dc"
+  },
+  "base_checkpoint_sha256": "ae3b76bb86c86059b763b56167632e0a519e90c32c0675ad94a222986116e8a6",
+  "range": [
+    101561,
+    111838
+  ],
+  "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+  "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+  "source_blob_parts": [
+    "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b"
+  ],
+  "logical_line_offset": 88552,
+  "records": [
+    {
+      "id": "O8C-B12-001",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 27,
+      "type": "creation",
+      "axes": [
+        1,
+        2,
+        3,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        24,
+        25,
+        27
+      ],
+      "entities": [
+        "lucas"
+      ],
+      "summary": "Núcleo estrutural experimental de uma Torre de Vigília manifestado em área de ensaio; não é instalação defensiva autônoma completa.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 101561,
+        "line_end": 101619,
+        "role": "Response",
+        "span_sha256_utf8": "dec2d11a1d7fe41d9cc2f06d1225ae9b316df3c793436c6fd3415d81b5330310"
+      }
+    },
+    {
+      "id": "O8C-B12-002",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 27,
+      "type": "planning",
+      "axes": [
+        1,
+        2,
+        7,
+        10,
+        11,
+        12,
+        14,
+        19,
+        20,
+        25,
+        28
+      ],
+      "entities": [
+        "lucas",
+        "kairon",
+        "aurel",
+        "naira",
+        "elion"
+      ],
+      "summary": "04h07 considera dez mil novas vidas, sem executar nem conhecer custo/teto; acolhimento, autonomia e recursos importam. Medo não justifica criação compulsória.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 101620,
+        "line_end": 101749,
+        "role": "Response",
+        "span_sha256_utf8": "c7f9f90fa346bb5929642cc7aa81a793047838e9f4c5120351e7c94165780602"
+      }
+    },
+    {
+      "id": "O8C-B12-003",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 27,
+      "type": "relationship",
+      "axes": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        13,
+        15,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "miren"
+      ],
+      "summary": "05h18 Miren encontra Lucas na Forja, pede compartilhar responsabilidades e não trabalhar sozinho a cada noite de medo; alerta de incêndio interrompe conversa.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 101750,
+        "line_end": 101983,
+        "role": "Response",
+        "span_sha256_utf8": "f9990946e9e881cb22f2f6961955621f4c11cb6e1db2f3e5bba2421b67c05861"
+      }
+    },
+    {
+      "id": "O8C-B12-004",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 27,
+      "type": "event",
+      "axes": [
+        1,
+        2,
+        3,
+        10,
+        11,
+        12,
+        14,
+        15,
+        17,
+        19,
+        23,
+        24,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "varo",
+        "tavren",
+        "astra"
+      ],
+      "summary": "05h31 fogo violeta anômalo no Coliseu; galerias vazias, resposta coordenada, contenção mineral e equipes de emergência. Fachada e galeria danificadas.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 101984,
+        "line_end": 102173,
+        "role": "Response",
+        "span_sha256_utf8": "d843d29c840d0f29b4f284474dacb5bef8c3066cde839d2c65c0921fc6770447"
+      }
+    },
+    {
+      "id": "O8C-B12-005",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 27,
+      "type": "consequence",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        9,
+        10,
+        13,
+        17,
+        20,
+        23,
+        24,
+        26,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "elara",
+        "varo",
+        "oren",
+        "kairon"
+      ],
+      "summary": "06h24 sem mortes ou lesões; danos severos ao primeiro arco, materiais perdidos; peça estranha e inscrição recolhidas para investigação, autoria não comprovada. Moradores apoiam resposta.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 102174,
+        "line_end": 102363,
+        "role": "Response",
+        "span_sha256_utf8": "fadd031abd43c01b1059fd1bd709d75c34a6fae64a70306a1e5f10817ad72488"
+      }
+    },
+    {
+      "id": "O8C-B12-006",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 27,
+      "type": "technology",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        11,
+        13,
+        14,
+        15,
+        19,
+        24,
+        25,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "varo",
+        "astra",
+        "brannik",
+        "kael"
+      ],
+      "summary": "07h43 três armas experimentais e torre apresentadas; nenhum armamento aprovado para combate ou distribuição. Reguladores, energia, confiabilidade e escala segura por validar.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 102364,
+        "line_end": 102575,
+        "role": "Response",
+        "span_sha256_utf8": "8f3b7737402916c0dcb860837d5c9fa2df5483519f3eda1cd8ab1fdefc7ff22f"
+      }
+    },
+    {
+      "id": "O8C-B12-007",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 27,
+      "type": "governance",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        10,
+        17,
+        18,
+        19,
+        20,
+        25,
+        28
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "edric",
+        "mara",
+        "tarek"
+      ],
+      "summary": "09h02 Conselho Civil debate prioridades e custos; Mara e moradores questionam monumentalidade; investigação e revisão aprovadas, reconstrução por etapas sem abandono cultural; 12 mil capacidade final projetada.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 102576,
+        "line_end": 102697,
+        "role": "Response",
+        "span_sha256_utf8": "2e78e0ffd96fe9f57a0ff3db9c37ef04380a86eeffeb93377993178ae12337da"
+      }
+    },
+    {
+      "id": "O8C-B12-008",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 27,
+      "type": "relationship",
+      "axes": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        12,
+        14,
+        19,
+        20,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "varo"
+      ],
+      "summary": "10h46 conversa sobre dez mil vidas: Varo questiona futuro, moradia, alimentação e escolha profissional; ambos desejam força, nenhuma decisão de invocar milhares.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 102698,
+        "line_end": 102821,
+        "role": "Response",
+        "span_sha256_utf8": "d4e24edfd7ae9df3bd8ada54186405fbf5cc3a0167bc2d4cc726881e88df800e"
+      }
+    },
+    {
+      "id": "O8C-B12-009",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 27,
+      "type": "reader-perspectives",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        16,
+        19,
+        23,
+        24,
+        26,
+        27
+      ],
+      "entities": [
+        "feiticeira-mascara-branca"
+      ],
+      "summary": "11h28 cena externa: inimigos analisam incêndio e resposta autônoma, temem crescimento; não conhecimento de Lucas, autoria do fogo ainda não provada em personagem.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 102822,
+        "line_end": 102931,
+        "role": "Response",
+        "span_sha256_utf8": "1ee6423ae78f7d927ac0098f353a48903e5e517102cbcadec3e482ae68c6a0ae"
+      }
+    },
+    {
+      "id": "O8C-B12-010",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 27,
+      "type": "reader-perspectives",
+      "axes": [
+        1,
+        3,
+        4,
+        16,
+        23,
+        26,
+        27
+      ],
+      "entities": [
+        "feiticeira-mascara-branca"
+      ],
+      "summary": "Três prisioneiros vivos em instalação não localizada por protagonistas; pistas reservadas ao leitor.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 102932,
+        "line_end": 102959,
+        "role": "Response",
+        "span_sha256_utf8": "1eb39eef09efe32f22bf8153b07a58bad88e99b62016679af4fe7e644c37873b"
+      }
+    },
+    {
+      "id": "O8C-B12-011",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 27,
+      "type": "recap",
+      "axes": [
+        1,
+        3,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        19,
+        20,
+        23,
+        24,
+        25,
+        26,
+        28
+      ],
+      "entities": [
+        "lucas",
+        "varo"
+      ],
+      "summary": "300 vivos; três classes experimentais, núcleo estrutural sem torres operacionais, reserva reduzida sem colapso; obra principal suspensa; três cativos vivos apenas na perspectiva do leitor; Gênese maior não decidida.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 102960,
+        "line_end": 103008,
+        "role": "Response",
+        "span_sha256_utf8": "1f3745344528019a501873fb817d523711c1f97ff75929ad1547d6c728c0b25e"
+      }
+    },
+    {
+      "id": "O8C-B12-012",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 28,
+      "type": "editorial",
+      "axes": [
+        1,
+        7,
+        9,
+        11,
+        15,
+        17,
+        18,
+        19,
+        23,
+        24,
+        25,
+        28,
+        29,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "varo"
+      ],
+      "summary": "Autor combina arsenal, reconstrução e resgate no D173 sem salto; exige 300 vivos, magia cinematográfica, consequências, autonomia, segredos, três escolhas e quarta especial quando adequada.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 103009,
+        "line_end": 103013,
+        "role": "Prompt",
+        "span_sha256_utf8": "d21f2e148a662bb2d7e46a67a78bf2028f61c05cdb4aba7e65c7f59cb0d4cd1c"
+      }
+    },
+    {
+      "id": "O8C-B12-013",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 28,
+      "type": "governance",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        19,
+        20,
+        25,
+        28,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "kael",
+        "varo",
+        "astra",
+        "brannik",
+        "aurel"
+      ],
+      "summary": "11h46 reunião já iniciada sem Lucas; três prioridades coordenadas, responsabilidades e decisões compartilhadas.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 103039,
+        "line_end": 103226,
+        "role": "Response",
+        "span_sha256_utf8": "2b2adf1d556c27d4598d1198a5846ebe1a61cef3319547487bbf6b8749d7621e"
+      }
+    },
+    {
+      "id": "O8C-B12-014",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 28,
+      "type": "technology",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        11,
+        13,
+        15,
+        19,
+        24,
+        25,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "astra",
+        "brannik",
+        "aurel",
+        "varo",
+        "rhem",
+        "sael"
+      ],
+      "summary": "12h18 ensaios formais; fuzil necessita avaliação térmica, torre separa observação, proteção e resposta autorizada; não liberar resposta letal automática.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 103227,
+        "line_end": 103464,
+        "role": "Response",
+        "span_sha256_utf8": "ab7243911261774c2bc1cce2dfac728079542f0f8c8f4a06a35cdc4a4abff672"
+      }
+    },
+    {
+      "id": "O8C-B12-015",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 28,
+      "type": "technology",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        11,
+        13,
+        15,
+        19,
+        20,
+        24,
+        25,
+        27
+      ],
+      "entities": [
+        "aurel",
+        "brannik",
+        "lucas",
+        "astra",
+        "miren"
+      ],
+      "summary": "13h37 primeiro núcleo demonstra observação e proteção localizada em ensaio, sem disparo autônomo. Energia e demanda em estudo, não dez torres prontas.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 103465,
+        "line_end": 103632,
+        "role": "Response",
+        "span_sha256_utf8": "7f82dc652d3322c53bd2049eb9a58cea6d81741e78bc73945ae61f2cd99c497e"
+      }
+    },
+    {
+      "id": "O8C-B12-016",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 28,
+      "type": "architecture",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        17,
+        18,
+        19,
+        20,
+        25
+      ],
+      "entities": [
+        "elara",
+        "lucas",
+        "miren",
+        "kael",
+        "ilva"
+      ],
+      "summary": "14h26 reconstrução em fases, preservação de cicatriz do incêndio, Praça do Recomeço proposta, participação artesanal e cultural de povos; não obra concluída.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 103633,
+        "line_end": 103828,
+        "role": "Response",
+        "span_sha256_utf8": "e392e1b1d8d892857878e27b69bd6379e2f51f6ab3c0f7f5da114f25062997bb"
+      }
+    },
+    {
+      "id": "O8C-B12-017",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 28,
+      "type": "investigation",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        13,
+        16,
+        19,
+        20,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "darius",
+        "seron",
+        "edric",
+        "neria",
+        "fen"
+      ],
+      "summary": "15h09 autorização de manutenção não aprovada e marca VSP-03 ligam entrega do Coliseu a registros de Colina Negra; pista para estação abandonada.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 103829,
+        "line_end": 103926,
+        "role": "Response",
+        "span_sha256_utf8": "ef9477dce9bf834fadcb09f1878a9b2635ffef960f092dadd366f82346ef75c0"
+      }
+    },
+    {
+      "id": "O8C-B12-018",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 28,
+      "type": "geography",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        16,
+        21,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "fen",
+        "seron",
+        "darius",
+        "tavren",
+        "lucas"
+      ],
+      "summary": "15h42 arquivo identifica Véspera, antiga estação de armazenamento nas colinas; possível instalação usada por inimigos, reconhecimento planejado.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 103927,
+        "line_end": 104052,
+        "role": "Response",
+        "span_sha256_utf8": "d1acde373c1a7ace313da7f48919799269e09bf142b5f448c4dc54d812a725c9"
+      }
+    },
+    {
+      "id": "O8C-B12-019",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 28,
+      "type": "mission",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        13,
+        16,
+        19,
+        21,
+        23,
+        24,
+        25,
+        28
+      ],
+      "entities": [
+        "varo",
+        "lucas",
+        "miren",
+        "seron",
+        "darius",
+        "ciran",
+        "kairon",
+        "toran",
+        "astra",
+        "elsa-ren"
+      ],
+      "summary": "16h08 Varo comanda resgate, Lucas e Miren voluntariamente acompanham; Astra permanece em Três Arcos; Elsa Ren informada, custódia competente de Thalor; não energizar instalações antigas.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 104053,
+        "line_end": 104240,
+        "role": "Response",
+        "span_sha256_utf8": "34bc6267d9c8b57c40f3f6e188133519bf7ab3889377da55eb2774fd72657406"
+      }
+    },
+    {
+      "id": "O8C-B12-020",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 28,
+      "type": "travel",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        16,
+        18,
+        21,
+        22,
+        23,
+        25,
+        26
+      ],
+      "entities": [
+        "seron",
+        "darius",
+        "lucas",
+        "kairon"
+      ],
+      "summary": "17h23 deslocamento norte, leitura de vestígios e símbolo incompleto; cena intercalada com prisioneiros vivos, separar informação dos dois planos.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 104241,
+        "line_end": 104382,
+        "role": "Response",
+        "span_sha256_utf8": "e5d6ac713a92cd7ba47006d70bc170678cd9f4ef92913cfed36c2395dd889e58"
+      }
+    },
+    {
+      "id": "O8C-B12-021",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 28,
+      "type": "mission",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        16,
+        21,
+        23,
+        24,
+        25,
+        27
+      ],
+      "entities": [
+        "darius",
+        "seron",
+        "varo",
+        "ciran",
+        "kairon",
+        "miren",
+        "lucas"
+      ],
+      "summary": "18h16 reconhecimento da estação; equipe evita agir antes de confirmar localização dos cativos, resgate prioritário.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 104383,
+        "line_end": 104468,
+        "role": "Response",
+        "span_sha256_utf8": "80560775826945d91604d6111c2fd28ce5ffc8ea33a0f2e8fcd00b44efc9e6de"
+      }
+    },
+    {
+      "id": "O8C-B12-022",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 28,
+      "type": "event",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        9,
+        10,
+        21,
+        23,
+        24,
+        25
+      ],
+      "entities": [
+        "seli",
+        "maren",
+        "tovik",
+        "varo",
+        "kairon"
+      ],
+      "summary": "18h43 galeria inferior, cativos ouvem confronto; equipe alcança interior e identifica documentos, perigo ainda ativo.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 104469,
+        "line_end": 104582,
+        "role": "Response",
+        "span_sha256_utf8": "d18adf13f953193ce3f341e445daf3b804e2c363ebb547212673e0e88e56029c"
+      }
+    },
+    {
+      "id": "O8C-B12-023",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 28,
+      "type": "bestiary",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        11,
+        13,
+        15,
+        16,
+        21,
+        22,
+        23,
+        24,
+        26,
+        27
+      ],
+      "entities": [
+        "escrivao",
+        "lucas",
+        "miren",
+        "varo",
+        "kairon"
+      ],
+      "summary": "18h57 câmara central: construto antigo de vidro sem rosto, inscrições parcialmente cobertas por equipamentos recentes; homem se apresenta como O Escrivão; máquina indica protocolo incompatível.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 104583,
+        "line_end": 104762,
+        "role": "Response",
+        "span_sha256_utf8": "65dd8f6977aae2d1254fe36e0018671674688ac0fe8fe6e207572a6e38726b0a"
+      }
+    },
+    {
+      "id": "O8C-B12-024",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 28,
+      "type": "combat",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        11,
+        12,
+        13,
+        14,
+        15,
+        21,
+        22,
+        23,
+        24,
+        25,
+        27
+      ],
+      "entities": [
+        "kairon",
+        "varo",
+        "toran",
+        "miren",
+        "lucas",
+        "ciran",
+        "escrivao"
+      ],
+      "summary": "Guardião emprega fenômeno gravitacional e reflexos; Káiron protege equipe, Lucas estabiliza galeria e isola mecanismos externos com apoio de Miren; Escrivão capturado, guardião repousa sem destruição.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 104763,
+        "line_end": 105060,
+        "role": "Response",
+        "span_sha256_utf8": "07edcf837c61d04f34518abf089274eb4602e6ebcc16fdb11f2a2717d7cf5353"
+      }
+    },
+    {
+      "id": "O8C-B12-025",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 28,
+      "type": "rescue",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        9,
+        10,
+        16,
+        21,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "maren",
+        "tovik",
+        "seli",
+        "kairon",
+        "varo",
+        "miren",
+        "lucas",
+        "seron"
+      ],
+      "summary": "19h18 Maren, Tovik e Seli confirmam nomes da placa; três libertados vivos. Tovik relata outros transferidos antes, número e destino desconhecidos.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 105061,
+        "line_end": 105282,
+        "role": "Response",
+        "span_sha256_utf8": "689c7ddba42c0690e1501ed13613a5a67b6a8fad4e8efa8379516a435df99204"
+      }
+    },
+    {
+      "id": "O8C-B12-026",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 28,
+      "type": "consequence",
+      "axes": [
+        1,
+        2,
+        3,
+        11,
+        13,
+        15,
+        19,
+        21,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "kairon",
+        "ciran",
+        "lucas",
+        "miren",
+        "astra",
+        "escrivao"
+      ],
+      "summary": "20h06 sem mortes; escudo de Káiron danificado, legionário contundido, Círan cortes leves, reserva de Lucas reduzida; registros parcialmente destruídos, instalação instável e guardião em repouso, Coração isolado; Escrivão para custódia de Thalor.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 105283,
+        "line_end": 105420,
+        "role": "Response",
+        "span_sha256_utf8": "36c119a62260d6bb739d59f3bd4e771816f2104ab3f7f0b39a2f5025c5152f06"
+      }
+    },
+    {
+      "id": "O8C-B12-027",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 28,
+      "type": "reader-perspectives",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        13,
+        16,
+        21,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "feiticeira-mascara-branca"
+      ],
+      "summary": "20h34 feiticeira recebe notícia, possui mapas além de Thalor, nó de Vínculo de estado desconhecido, esfera escura e pretende consultar fonte antiga. Informação não disponível aos protagonistas.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 105421,
+        "line_end": 105542,
+        "role": "Response",
+        "span_sha256_utf8": "2f404393ce2268e55de7cc84e710304310042fb02f105de8f7056cab339eccb4"
+      }
+    },
+    {
+      "id": "O8C-B12-028",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 28,
+      "type": "relationship",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        10,
+        17,
+        19,
+        25
+      ],
+      "entities": [
+        "maren",
+        "tovik",
+        "seli",
+        "kael",
+        "lysa",
+        "varo",
+        "kairon",
+        "ciran"
+      ],
+      "summary": "22h18 três chegam ao portão norte de Três Arcos para acolhimento; não desfile ou interrogatório; apoio civil.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 105543,
+        "line_end": 105716,
+        "role": "Response",
+        "span_sha256_utf8": "be10917a0d3f0221aec69dca7e016a78e3a6a6b1d67e55bceb2afd2a8ff446b7"
+      }
+    },
+    {
+      "id": "O8C-B12-029",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 28,
+      "type": "relationship",
+      "axes": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        17,
+        21,
+        25,
+        26
+      ],
+      "entities": [
+        "lucas",
+        "miren"
+      ],
+      "summary": "23h06 Observatório: casal reflete sobre medo, força, resgate e confiança; Coração continua sem ativação.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 105717,
+        "line_end": 105874,
+        "role": "Response",
+        "span_sha256_utf8": "5632d6a84d33e847f1ebe81614428bd130e091b9a63b45ee7dbb37233c366d4c"
+      }
+    },
+    {
+      "id": "O8C-B12-030",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 28,
+      "type": "reader-perspectives",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        16,
+        19,
+        20,
+        23,
+        25,
+        26
+      ],
+      "entities": [
+        "ilena-sorth",
+        "darel-vaust"
+      ],
+      "summary": "23h41 capital de Thalor: notícias do resgate influenciam Ilena e oposição de Vaust; perspectiva externa.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 105875,
+        "line_end": 105940,
+        "role": "Response",
+        "span_sha256_utf8": "f610559532452247fa5e776036e96aa34dc964fbd456faa4f792d8358c0d2a8e"
+      }
+    },
+    {
+      "id": "O8C-B12-031",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 28,
+      "type": "reader-perspectives",
+      "axes": [
+        1,
+        3,
+        11,
+        13,
+        16,
+        21,
+        23,
+        26,
+        27
+      ],
+      "entities": [
+        "feiticeira-mascara-branca"
+      ],
+      "summary": "Cena ao norte: esfera ativa luz em porta antiga sem abri-la; voz pergunta sobre rede adormecida e portador, origem de Lucas e CREATION não reveladas. Leitor apenas.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 105941,
+        "line_end": 106002,
+        "role": "Response",
+        "span_sha256_utf8": "257ff9390b228e23162cea569f1f6166daa971594fe10cc7698235237a0c24f7"
+      }
+    },
+    {
+      "id": "O8C-B12-032",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 28,
+      "type": "recap",
+      "axes": [
+        1,
+        3,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        24,
+        25,
+        26,
+        28
+      ],
+      "entities": [
+        "varo",
+        "lucas",
+        "aurel",
+        "brannik"
+      ],
+      "summary": "Final D173: resgate concluído, 300 vivos, Escrivão detido, Véspera e guardião em repouso, torre experimental, Coliseu suspenso e plano de reconstrução; mobilização externa não invasão confirmada.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 106003,
+        "line_end": 106051,
+        "role": "Response",
+        "span_sha256_utf8": "5c539842123cad7b3d67f4cbb56370e3e154cc27b181824146b76e8823738733"
+      }
+    },
+    {
+      "id": "O8C-B12-033",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 29,
+      "type": "editorial",
+      "axes": [
+        1,
+        7,
+        10,
+        12,
+        14,
+        19,
+        23,
+        24,
+        25,
+        28,
+        29,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "varo"
+      ],
+      "summary": "Autor ordena ações 2,1,3; três dias de trabalho delegado, um de repouso e criação de seis Sombras, proteção e integridade institucional, decisões relevantes conjuntas. Intenção não operação realizada.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 106052,
+        "line_end": 106063,
+        "role": "Prompt",
+        "span_sha256_utf8": "63abe62c28ea59a5dd3510b6264761166fab05bbcf7552a2b9e4415ee85cfb2a"
+      }
+    },
+    {
+      "id": "O8C-B12-034",
+      "day": 173,
+      "book": "II",
+      "chapter_hint": 29,
+      "type": "reserved",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        9,
+        10,
+        12,
+        14,
+        19,
+        23,
+        25,
+        28
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael"
+      ],
+      "summary": "23h48 reunião reservada dos três; Lucas não deseja coroa, propõe célula de seis por medo de sabotagem e perda, sem escravidão, prisões secretas ou culpa sem prova, direito de recusa e revisão independente. Conversa atravessa madrugada; data narrativa preservada.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 106089,
+        "line_end": 106440,
+        "role": "Response",
+        "span_sha256_utf8": "44d0209a497bad6da5d68cd60df62d45a42968cac96539461850f27c8342a718"
+      }
+    },
+    {
+      "id": "O8C-B12-035",
+      "day": 174,
+      "book": "II",
+      "chapter_hint": 29,
+      "type": "culture",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        9,
+        10,
+        17,
+        18,
+        19,
+        25
+      ],
+      "entities": [
+        "ina",
+        "seli",
+        "maren",
+        "tovik",
+        "lucas",
+        "miren",
+        "varo"
+      ],
+      "summary": "08h56 acolhimento público dos três, cadeiras e celebração de recomeço sem espetáculo de vítimas; escola participa.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 106441,
+        "line_end": 106624,
+        "role": "Response",
+        "span_sha256_utf8": "0280c4c70100ff6077acaf062196f81e3a8610a363a751e10a6761662fe51483"
+      }
+    },
+    {
+      "id": "O8C-B12-036",
+      "day": 174,
+      "book": "II",
+      "chapter_hint": 29,
+      "type": "governance",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        17,
+        18,
+        19,
+        20,
+        25,
+        28
+      ],
+      "entities": [
+        "lucas",
+        "elara",
+        "naira"
+      ],
+      "summary": "11h34 Coliseu por etapas e participação civil na programação; pedra marcada pelo incêndio preservada, acesso e prestação de contas discutidos.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 106625,
+        "line_end": 106738,
+        "role": "Response",
+        "span_sha256_utf8": "7d91f58868553f94dd2970463c8d08259d4c3014034d96a66e08efd13187cdc4"
+      }
+    },
+    {
+      "id": "O8C-B12-037",
+      "day": 174,
+      "book": "II",
+      "chapter_hint": 29,
+      "type": "event",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        13,
+        18,
+        19,
+        20,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [],
+      "summary": "17h42 comerciante recebe abordagem sobre tecnologia, encaminha à administração e registra ocorrência; destino posterior do contato mostrado ao leitor.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 106739,
+        "line_end": 106804,
+        "role": "Response",
+        "span_sha256_utf8": "74d003215d2d68c0b6601a327458b5babd8fc59461572180004e80d7e08d9bff"
+      }
+    },
+    {
+      "id": "O8C-B12-038",
+      "day": 175,
+      "book": "II",
+      "chapter_hint": 29,
+      "type": "technology",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        11,
+        13,
+        15,
+        19,
+        20,
+        24,
+        25,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "aurel",
+        "brannik",
+        "sael"
+      ],
+      "summary": "07h26 torre de ensaio separa observação e defesa, identifica caravana sem decidir culpa; barreira melhorada, energia de serviços essenciais e operação local prioritárias; não operacional.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 106805,
+        "line_end": 106952,
+        "role": "Response",
+        "span_sha256_utf8": "796939ff1ba7793e0cb4104bedf96f0e6b0e587f2a357b8bb6f0d63224138bec"
+      }
+    },
+    {
+      "id": "O8C-B12-039",
+      "day": 175,
+      "book": "II",
+      "chapter_hint": 29,
+      "type": "investigation",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        19,
+        20,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "lysa",
+        "fen",
+        "kael"
+      ],
+      "summary": "10h58 discrepância em propostas comerciais, possível erro não fraude comprovada; fornecedor consultado, registro e análise formal.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 106953,
+        "line_end": 107048,
+        "role": "Response",
+        "span_sha256_utf8": "305a824e91ff4907f26420e774c6d7f2effeb1a3c2ef7ebf66886d9c88b625fa"
+      }
+    },
+    {
+      "id": "O8C-B12-040",
+      "day": 175,
+      "book": "II",
+      "chapter_hint": 29,
+      "type": "diplomacy",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        16,
+        19,
+        20,
+        25,
+        28
+      ],
+      "entities": [
+        "kael",
+        "lucas"
+      ],
+      "summary": "16h12 carta de nobre propondo intercâmbio industrial; avaliar limites, aprender também tecnologia local; resposta a preparar.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 107049,
+        "line_end": 107116,
+        "role": "Response",
+        "span_sha256_utf8": "fd3284f25345ed5c42bfa4c08af969f682665674c2c6de6ca0905f8bf29e1bed"
+      }
+    },
+    {
+      "id": "O8C-B12-041",
+      "day": 176,
+      "book": "II",
+      "chapter_hint": 29,
+      "type": "investigation",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        19,
+        21,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "seron",
+        "varo",
+        "kael",
+        "lucas",
+        "eldren-voss",
+        "tecela"
+      ],
+      "summary": "08h31 oitiva supervisionada por Thalor com representante legal; Escrivão declara nome ELDREN VOSS ainda sujeito a confirmação; Véspera estação de passagem; mulher máscara branca chamada Tecelã, nome real desconhecido; interesse de terceiros em reproduzir poder de Lucas é depoimento a verificar.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 107117,
+        "line_end": 107308,
+        "role": "Response",
+        "span_sha256_utf8": "2ea73b0b3d9f0cd71eb914562f64c4b671e40a52da7a8e0a979a160325495b02"
+      }
+    },
+    {
+      "id": "O8C-B12-042",
+      "day": 176,
+      "book": "II",
+      "chapter_hint": 29,
+      "type": "research",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        11,
+        12,
+        13,
+        15,
+        21,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "astra",
+        "neria",
+        "lucas",
+        "miren"
+      ],
+      "summary": "13h17 análise passiva dos registros e fragmentos de Véspera isolados; possíveis aplicações de reconhecimento/controle, não prova de que Arquitetos criaram CREATION.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 107309,
+        "line_end": 107392,
+        "role": "Response",
+        "span_sha256_utf8": "2d99b4f0cfb86b100793e761d715acb411b3b1ec024897e01c88b3e72106db31"
+      }
+    },
+    {
+      "id": "O8C-B12-043",
+      "day": 176,
+      "book": "II",
+      "chapter_hint": 29,
+      "type": "reserved",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        9,
+        10,
+        12,
+        14,
+        19,
+        25,
+        28
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael"
+      ],
+      "summary": "20h44 trio confirma plano de seis novas vidas, consentimento, limites legais e repouso prévio; nenhuma missão iniciada.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 107393,
+        "line_end": 107498,
+        "role": "Response",
+        "span_sha256_utf8": "759ab357c5a2f70e12f55d200f4d59be12f6aa46f7e9e69a938c7d5f3469eb1f"
+      }
+    },
+    {
+      "id": "O8C-B12-044",
+      "day": 177,
+      "book": "II",
+      "chapter_hint": 29,
+      "type": "relationship",
+      "axes": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        17,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "miren"
+      ],
+      "summary": "Dia inteiro de repouso, visita ao Observatório, diálogo sobre confidencialidade sem romper confiança; sem manifestação exigente, reserva recuperada à condição habitual de repouso.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 107499,
+        "line_end": 107714,
+        "role": "Response",
+        "span_sha256_utf8": "334fc8d8659d2a828c01cf89ada7f1469eb1d4f0c4ec27bd899312b12d110f64"
+      }
+    },
+    {
+      "id": "O8C-B12-045",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 29,
+      "type": "reserved",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        11,
+        12,
+        14,
+        17,
+        19,
+        25,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael"
+      ],
+      "summary": "06h11 câmara reservada, seis referências espaciais, três presentes; aptidões distintas, liberdade e apenas funções operacionais secretas.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 107715,
+        "line_end": 107856,
+        "role": "Response",
+        "span_sha256_utf8": "91578f9dad06251dc945c351e2d391b1ac28ced4096747ff33d86e92f3b64a16"
+      }
+    },
+    {
+      "id": "O8C-B12-046",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 29,
+      "type": "power",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        10,
+        11,
+        12,
+        14,
+        25,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael"
+      ],
+      "summary": "06h19 Gênese Coordenada com seis origens individualizadas; reserva expressivamente reduzida, circulação estável, seis vivos; Lucas precisa sentar. Limite superior indeterminado.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 107857,
+        "line_end": 107996,
+        "role": "Response",
+        "span_sha256_utf8": "614f0faea6b3db32be1190b4e138a7acc4fda9b826c3c08c8f1f98be2bf483bd"
+      }
+    },
+    {
+      "id": "O8C-B12-047",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 29,
+      "type": "character",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        14,
+        25
+      ],
+      "entities": [
+        "darien-sol"
+      ],
+      "summary": "06h27 DÁRIEN SOL escolhe nome; alto, cabelos negros curtos, olhos âmbar; proteção, resistência e percepção de riscos; calmo, pergunta se alguém está ferido, não submissão automática.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 107997,
+        "line_end": 108056,
+        "role": "Response",
+        "span_sha256_utf8": "87b7a1b132f8c0cb74f003b8541194c4b91bba41d890040ced80400ea8d3e699"
+      }
+    },
+    {
+      "id": "O8C-B12-048",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 29,
+      "type": "character",
+      "axes": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        14,
+        25,
+        27
+      ],
+      "entities": [
+        "nixa-vel"
+      ],
+      "summary": "NIXA VEL, cabelos acobreados, olhos verde-escuros; perspicaz, humor crítico, investiga contradições e busca verdade sem fabricar culpados.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 108057,
+        "line_end": 108106,
+        "role": "Response",
+        "span_sha256_utf8": "e1cfc5ec582d0a08a551dfef75d80f34209fbcb133f3893f607ed87ee22ac25f"
+      }
+    },
+    {
+      "id": "O8C-B12-049",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 29,
+      "type": "character",
+      "axes": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        13,
+        14,
+        19,
+        25,
+        27
+      ],
+      "entities": [
+        "severo-lyn"
+      ],
+      "summary": "SÉVERO LYN, cabelos castanho-escuros, olhos cinzentos, expressão tranquila; meticuloso em documentação, contabilidade e rastreabilidade; deseja biblioteca.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 108107,
+        "line_end": 108158,
+        "role": "Response",
+        "span_sha256_utf8": "8e658f97f36d87637428a26eb6c63b786c3330b41aeff794a56d0c6df2d4f860"
+      }
+    },
+    {
+      "id": "O8C-B12-050",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 29,
+      "type": "character",
+      "axes": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        14,
+        25,
+        26
+      ],
+      "entities": [
+        "iria-nemar"
+      ],
+      "summary": "ÍRIA NEMAR, cabelos negros ondulados com reflexos prateados; pequena centelha azul, aptidão arcana, encantamentos e interferências, precisa estudar; sem leitura mental ou neutralização universal.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 108159,
+        "line_end": 108210,
+        "role": "Response",
+        "span_sha256_utf8": "6686728d22bdbc950ed31975e5877b8f3172a09376ba28bf04a7eb1f3fb02339"
+      }
+    },
+    {
+      "id": "O8C-B12-051",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 29,
+      "type": "character",
+      "axes": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        14,
+        16,
+        22,
+        25
+      ],
+      "entities": [
+        "rael-fenn"
+      ],
+      "summary": "RAEL FENN, cabelos claros, sardas, olhos castanhos; orientação, reconhecimento e observação ambiental; aventureiro, deseja Observatório, não invisibilidade nem conhecimento prévio de estradas.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 108211,
+        "line_end": 108262,
+        "role": "Response",
+        "span_sha256_utf8": "f0ca90b7eabfe3b39911b79805feda9c7605124cba34ff91516a7a92adc559b2"
+      }
+    },
+    {
+      "id": "O8C-B12-052",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 29,
+      "type": "character",
+      "axes": [
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        14,
+        19,
+        25,
+        27
+      ],
+      "entities": [
+        "teria-solen"
+      ],
+      "summary": "TÉRIA SOLEN, cabelos castanho-escuros em trança, olhos azul-acinzentados; coordenação e avaliação de prioridades, questiona concentração de poder inclusive unanimidade dos três.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 108263,
+        "line_end": 108320,
+        "role": "Response",
+        "span_sha256_utf8": "3369ed6a5cc312fa7e37e025734443706dbd9cf0c09e36930e3850370dc4c9d9"
+      }
+    },
+    {
+      "id": "O8C-B12-053",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 29,
+      "type": "reserved",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        14,
+        19,
+        23,
+        25,
+        28
+      ],
+      "entities": [
+        "darien-sol",
+        "nixa-vel",
+        "severo-lyn",
+        "iria-nemar",
+        "rael-fenn",
+        "teria-solen",
+        "lucas",
+        "varo",
+        "kael"
+      ],
+      "summary": "07h14 proposta Sombras aceita inicialmente de forma voluntária, liberdade de recusar/sair, estudar e viajar; decisões estratégicas exigem acordo do trio, sem poder autônomo de prisão ou investigação arbitrária.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 108321,
+        "line_end": 108554,
+        "role": "Response",
+        "span_sha256_utf8": "46f25bd82f7c28d5ef6507c3b160f138e4ef3ef47fa83912f2be9e3c368e2d03"
+      }
+    },
+    {
+      "id": "O8C-B12-054",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 29,
+      "type": "reserved",
+      "axes": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        8,
+        13,
+        18,
+        19,
+        25,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael",
+        "teria-solen"
+      ],
+      "summary": "08h03 símbolo discreto de três arcos e luz; funções secretas não apagam existência civil, sem patentes, formação e integração antes de atuar.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 108555,
+        "line_end": 108682,
+        "role": "Response",
+        "span_sha256_utf8": "b6d6d02e7c36ecebe7f2996a27ea11def9dfb4d076f01533ae100953f289b6cc"
+      }
+    },
+    {
+      "id": "O8C-B12-055",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 29,
+      "type": "power",
+      "axes": [
+        1,
+        3,
+        7,
+        11,
+        12,
+        14,
+        19,
+        20,
+        25,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "varo"
+      ],
+      "summary": "Consumo expressivo e individualização mais exigente, repouso necessário; seis novas pessoas requerem moradia e acolhimento. Não estimar trinta ou milhares sem dados.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 108683,
+        "line_end": 108744,
+        "role": "Response",
+        "span_sha256_utf8": "a2ba41009708ceeed7452b47aa91bdd6fb29853c675b2d6374c523b77ca5b8fd"
+      }
+    },
+    {
+      "id": "O8C-B12-056",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 29,
+      "type": "reader-perspectives",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        16,
+        19,
+        20,
+        23,
+        25,
+        26
+      ],
+      "entities": [
+        "tecela"
+      ],
+      "summary": "09h17 em Thalor, feiticeira analisa Véspera e proposta rejeitada, busca explorar confiança institucional; desconhece seis novos. Cena posterior em ordem da fonte, não transferir ao protagonista.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 108745,
+        "line_end": 108834,
+        "role": "Response",
+        "span_sha256_utf8": "8c0c5e15ce182f32ab08873071a31e82d558f1b58e827dd69b6cb9393fba65c0"
+      }
+    },
+    {
+      "id": "O8C-B12-057",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 29,
+      "type": "recap",
+      "axes": [
+        1,
+        3,
+        4,
+        5,
+        7,
+        11,
+        12,
+        14,
+        19,
+        23,
+        25,
+        27,
+        28
+      ],
+      "entities": [
+        "darien-sol",
+        "nixa-vel",
+        "severo-lyn",
+        "iria-nemar",
+        "rael-fenn",
+        "teria-solen"
+      ],
+      "summary": "Resumo reservado: seis independentes, participação voluntária inicial, nenhuma missão; 300 originais vivos e doze posteriores distintos incluindo Kael, Astra, Káiron, Aurel, Naira, Elion e seis. Não novo censo.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 108835,
+        "line_end": 108897,
+        "role": "Response",
+        "span_sha256_utf8": "fc5f8d4d7fa9d5e724764c4da738d4fae7d7c7461940b6ded016dc158697f1e7"
+      }
+    },
+    {
+      "id": "O8C-B12-058",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 30,
+      "type": "editorial",
+      "axes": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        19,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael"
+      ],
+      "summary": "Autor explicita não reinvocar seis, preservar custo, existência pública e funções propostas, concordância tripla, integração da Rede Aurora apenas progressiva, parada emergencial independente, sem novos desbloqueios ou antecipações.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 108898,
+        "line_end": 109028,
+        "role": "Prompt",
+        "span_sha256_utf8": "2f29d93af585d943dcd5e44752bb413065125bf84ef06be87b1dd03273945eb5"
+      }
+    },
+    {
+      "id": "O8C-B12-059",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 30,
+      "type": "relationship",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        25,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael",
+        "darien-sol"
+      ],
+      "summary": "06h20 retomada da mesma manifestação, Lucas desgastado; Varo e Kael reforçam confiança e limites, Dárien oferece ajuda. Não segunda Gênese.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 109046,
+        "line_end": 109233,
+        "role": "Response",
+        "span_sha256_utf8": "729a32440a63d9dd2ed333c9b7efff4db562ffc27f36c97c87fa546a94ab6e26"
+      }
+    },
+    {
+      "id": "O8C-B12-060",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 30,
+      "type": "character",
+      "axes": [
+        1,
+        2,
+        4,
+        7,
+        8,
+        9,
+        10,
+        11,
+        14,
+        25
+      ],
+      "entities": [
+        "darien-sol",
+        "nixa-vel",
+        "severo-lyn",
+        "iria-nemar",
+        "rael-fenn",
+        "teria-solen"
+      ],
+      "summary": "06h34 seis demonstram curiosidades e personalidades diferentes; Íria pequena centelha; Rael quer conhecer cidade, Téria considera organização; relações começam sem interferência.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 109234,
+        "line_end": 109401,
+        "role": "Response",
+        "span_sha256_utf8": "36a3d7877bc7c10f531c317c754ab5aeafb65ff2b7832dc805d1bfa7c441febb"
+      }
+    },
+    {
+      "id": "O8C-B12-061",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 30,
+      "type": "power",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        11,
+        12,
+        14,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "sistema"
+      ],
+      "summary": "06h49 Sistema confirma seis individualizadas, vitalidade estável, Canal Soberano I funcional, Matriz Germinal I coordenada, Circulação de Retorno I disponível; alto consumo, repouso; teto, custos exatos e origem desconhecidos, nenhum novo poder.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 109402,
+        "line_end": 109522,
+        "role": "Response",
+        "span_sha256_utf8": "442afaca89d5f7813ce80441a714b388de10ff7ad4c01631cd90753e8b1209d6"
+      }
+    },
+    {
+      "id": "O8C-B12-062",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 30,
+      "type": "identity",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        9,
+        14,
+        19,
+        25,
+        27
+      ],
+      "entities": [
+        "kael",
+        "varo",
+        "maelis",
+        "darien-sol",
+        "nixa-vel",
+        "severo-lyn",
+        "iria-nemar",
+        "rael-fenn",
+        "teria-solen"
+      ],
+      "summary": "07h03 avaliação médica e registro civil dos seis como residentes livres reais, sem identidades falsas. Origem e funções reservadas distinguidas; documentação inicial não ocupação imposta.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 109523,
+        "line_end": 109709,
+        "role": "Response",
+        "span_sha256_utf8": "eaef4b8b921dae9918d7aaba2c04267d69ef4c3449a5b20072b767d5a459deca"
+      }
+    },
+    {
+      "id": "O8C-B12-063",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 30,
+      "type": "planning",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        9,
+        11,
+        14,
+        19,
+        25,
+        28
+      ],
+      "entities": [
+        "darien-sol",
+        "nixa-vel",
+        "severo-lyn",
+        "iria-nemar",
+        "rael-fenn",
+        "teria-solen"
+      ],
+      "summary": "07h27 propostas de formação progressiva: proteção, investigação institucional, integridade de registros, pesquisa arcana, cartografia e coordenação respectivamente; mentores e aceitação individual, não cargos consumados.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 109710,
+        "line_end": 109815,
+        "role": "Response",
+        "span_sha256_utf8": "17becee840396cc23fa1ba0083afde5b619c3341264ff23f546ad002f5580744"
+      }
+    },
+    {
+      "id": "O8C-B12-064",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 30,
+      "type": "technology",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        13,
+        14,
+        15,
+        16,
+        17,
+        19,
+        24,
+        25,
+        27
+      ],
+      "entities": [
+        "miren",
+        "aurel",
+        "tavren",
+        "astra"
+      ],
+      "summary": "07h51 proposta Rede Integrada Aurora: observação, sensores, comunicação, mapa tridimensional, proteção e central; observação distinta de estimativa e última leitura confiável, não rede concluída.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 109816,
+        "line_end": 109917,
+        "role": "Response",
+        "span_sha256_utf8": "e36c50572843a64f1d3fd78245fb6f9df531b0aecfd8aba7827166ac26c02639"
+      }
+    },
+    {
+      "id": "O8C-B12-065",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 30,
+      "type": "technology",
+      "axes": [
+        1,
+        3,
+        7,
+        11,
+        13,
+        15,
+        19,
+        24,
+        25,
+        27
+      ],
+      "entities": [
+        "astra",
+        "aurel",
+        "miren"
+      ],
+      "summary": "Sinal incompleto em ensaio mostra necessidade de distinguir observação, contenção não letal e resposta autorizada; sem decisão letal autônoma, controles locais e parada independente em estudo.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 109918,
+        "line_end": 110026,
+        "role": "Response",
+        "span_sha256_utf8": "8a43008f61a5a790c69cef4ee9d730ea7f9777960881ed0f11f570091538f670"
+      }
+    },
+    {
+      "id": "O8C-B12-066",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 30,
+      "type": "reserved",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        13,
+        19,
+        23,
+        25,
+        27
+      ],
+      "entities": [
+        "kael",
+        "nixa-vel",
+        "severo-lyn",
+        "teria-solen",
+        "iria-nemar"
+      ],
+      "summary": "08h06 três níveis de informação: público, reservado e Dossiê Sombras, mesma verdade; critérios, originais, acesso individual, registro de consultas e revisão. Nenhum acesso irrestrito ou missão.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 110027,
+        "line_end": 110175,
+        "role": "Response",
+        "span_sha256_utf8": "46fc56648dee7a287da320737a56d4ecd99aa8b3ca9bda86c2a27cdbc189cff1"
+      }
+    },
+    {
+      "id": "O8C-B12-067",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 30,
+      "type": "relationship",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        14,
+        19,
+        25,
+        28
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "varo",
+        "teria-solen"
+      ],
+      "summary": "08h23 Téria pergunta qual futuro os seis poderão escolher; protagonista deve responder, não impor destino.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 110176,
+        "line_end": 110287,
+        "role": "Response",
+        "span_sha256_utf8": "cee778da708b27f001c52867bfaa807531433ed3e87ed7fa1bb17220f5ebab0e"
+      }
+    },
+    {
+      "id": "O8C-B12-068",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 30,
+      "type": "recap",
+      "axes": [
+        1,
+        3,
+        5,
+        7,
+        11,
+        12,
+        14,
+        15,
+        19,
+        23,
+        25,
+        27,
+        28,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael"
+      ],
+      "summary": "Resumo: mesma Gênese confirmada, desgaste, Sombras conhecidos pelo trio e seis, sem missão, rede em estudo e nenhum desbloqueio; Tecelã desconhece unidade.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 110288,
+        "line_end": 110331,
+        "role": "Response",
+        "span_sha256_utf8": "3067427ac6a7749ef246504a3e6b84b17a7270195c870d52624c2d2aa3cf3e6c"
+      }
+    },
+    {
+      "id": "O8C-B12-069",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 31,
+      "type": "editorial",
+      "axes": [
+        1,
+        7,
+        9,
+        25,
+        28,
+        29,
+        30
+      ],
+      "entities": [
+        "lucas"
+      ],
+      "summary": "Autor combina benevolente e especial, retoma 08h23.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 110332,
+        "line_end": 110338,
+        "role": "Prompt",
+        "span_sha256_utf8": "33e8e77dcbe377315e81234b2a6d147c48c195f0c9d1c50af47a0d5ef24f5cfb"
+      }
+    },
+    {
+      "id": "O8C-B12-070",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 31,
+      "type": "relationship",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        16,
+        18,
+        19,
+        25,
+        28
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael",
+        "teria-solen",
+        "rael-fenn"
+      ],
+      "summary": "Lucas apresenta mapa e possibilidades de vida, território ainda desconhecido; não ordens de destino; Varo observa que nenhum pergunta pela guerra.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 110368,
+        "line_end": 110607,
+        "role": "Response",
+        "span_sha256_utf8": "17db02be0b08c890b0b983b44d31514dde8417b8f95cb97b52fa32e76bd35a0a"
+      }
+    },
+    {
+      "id": "O8C-B12-071",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 31,
+      "type": "character",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        19,
+        25,
+        28
+      ],
+      "entities": [
+        "nixa-vel",
+        "rael-fenn",
+        "teria-solen",
+        "kael",
+        "darien-sol"
+      ],
+      "summary": "09h06 Nixa recusa ficar o dia em sala, visita acompanhada negociada; Lucas ainda precisa repouso; autonomia e humor em prática.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 110608,
+        "line_end": 110731,
+        "role": "Response",
+        "span_sha256_utf8": "00c85c8dcb4109cf468fd0f6de3eae57ab9a7b241e1821327bcb9c5e7d62c56b"
+      }
+    },
+    {
+      "id": "O8C-B12-072",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 31,
+      "type": "world-state",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        10,
+        16,
+        17,
+        18,
+        19,
+        25
+      ],
+      "entities": [
+        "ina",
+        "varo",
+        "darien-sol",
+        "nixa-vel"
+      ],
+      "summary": "09h43 seis visitam Avenida, apresentados como habitantes reais, não unidade; Dárien ajuda idosa atravessar, reflete sobre confiança.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 110732,
+        "line_end": 110927,
+        "role": "Response",
+        "span_sha256_utf8": "f3a788e91bebc52dc5b36c32c3d08d6feae8b787ec1a4c47e7d29de536b7cf30"
+      }
+    },
+    {
+      "id": "O8C-B12-073",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 31,
+      "type": "culture",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        18,
+        20,
+        25
+      ],
+      "entities": [
+        "halden",
+        "kairon",
+        "ciran",
+        "seron",
+        "darien-sol",
+        "iria-nemar",
+        "rael-fenn",
+        "severo-lyn",
+        "teria-solen"
+      ],
+      "summary": "10h27 Cozinha dos Três Caminhos: preferências alimentares, sobremesa de mudança de cor, abastecimento e capacidade futura; encontros e humor com Káiron, Círan e Seron.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 110928,
+        "line_end": 111149,
+        "role": "Response",
+        "span_sha256_utf8": "1a03d679cf6bf0004d00f2fdb68640761906ff7f048268cc14cc31d729af0d2a"
+      }
+    },
+    {
+      "id": "O8C-B12-074",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 31,
+      "type": "character",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        13,
+        19,
+        20,
+        23,
+        25,
+        27
+      ],
+      "entities": [
+        "lysa",
+        "fen",
+        "kael",
+        "severo-lyn",
+        "nixa-vel",
+        "teria-solen"
+      ],
+      "summary": "11h18 Administração Civil, Sévero e Nixa analisam questões documentais sem confundir hipótese e prova; Téria identifica dependências entre departamentos, cargos não presentes automáticos.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 111150,
+        "line_end": 111373,
+        "role": "Response",
+        "span_sha256_utf8": "b7dc9105ac339817296aa35b642de740ade7b04f2777f70bebb0ec422fad262c"
+      }
+    },
+    {
+      "id": "O8C-B12-075",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 31,
+      "type": "bestiary",
+      "axes": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8,
+        9,
+        11,
+        16,
+        18,
+        22,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "iria-nemar",
+        "rael-fenn",
+        "miren",
+        "seron",
+        "kairon"
+      ],
+      "summary": "12h36 Parque das Águas, organismos luminosos alados azuis após chuva, ciclo vital incompleto; um pousa em Íria e retorna ao canal; Rael aprende leitura ambiental, sem espécie inventada.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 111374,
+        "line_end": 111587,
+        "role": "Response",
+        "span_sha256_utf8": "856668519057be1ac1b2ff0cf1c0fd86368fd9c72f1b9c32e1632e4352625a65"
+      }
+    },
+    {
+      "id": "O8C-B12-076",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 31,
+      "type": "technology",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        11,
+        13,
+        14,
+        15,
+        16,
+        19,
+        24,
+        25,
+        27
+      ],
+      "entities": [
+        "aurel",
+        "brannik",
+        "astra",
+        "tavren",
+        "miren",
+        "iria-nemar",
+        "nixa-vel",
+        "severo-lyn",
+        "rael-fenn",
+        "darien-sol",
+        "teria-solen"
+      ],
+      "summary": "14h08 projeção luminosa experimental de torre, rua e estação, duplicações/tremor; transmissor desconectado deixa marcador desatualizado. Seis contribuem com confiança, atualização e resposta humana. Não central operacional.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 111588,
+        "line_end": 111807,
+        "role": "Response",
+        "span_sha256_utf8": "815e3e80ca7edf6c20a657f84db10a14695c052abb4f8663b74cebe1bc57586b"
+      }
+    },
+    {
+      "id": "O8C-B12-077",
+      "day": 178,
+      "book": "II",
+      "chapter_hint": 31,
+      "type": "planning",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        15,
+        19,
+        20,
+        25,
+        28
+      ],
+      "entities": [
+        "lysa",
+        "aurel",
+        "brannik",
+        "astra"
+      ],
+      "summary": "15h17 discussão de materiais para motores e observação, Lysa recusa aprovar todos os projetos imediatamente; cena interrompida antes de decisão orçamentária.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+        "line_start": 111808,
+        "line_end": 111838,
+        "role": "Response",
+        "span_sha256_utf8": "e9e0716df7620697bfad08f19b07dc74d5c5cdaf5ca14d97f397975f3be1a2b4"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "start": 101561,
+      "end": 103008,
+      "role": "Response",
+      "disposition": "CONTINUATION_FROM_PREVIOUS_MACRO",
+      "span_sha256_utf8": "97c9c45141f05d88d03fd3223a98aeba161283488970315dfa2464117b14274b",
+      "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+      "record_ids": [
+        "O8C-B12-001",
+        "O8C-B12-002",
+        "O8C-B12-003",
+        "O8C-B12-004",
+        "O8C-B12-005",
+        "O8C-B12-006",
+        "O8C-B12-007",
+        "O8C-B12-008",
+        "O8C-B12-009",
+        "O8C-B12-010",
+        "O8C-B12-011"
+      ]
+    },
+    {
+      "start": 103009,
+      "end": 103013,
+      "role": "Prompt",
+      "span_sha256_utf8": "d21f2e148a662bb2d7e46a67a78bf2028f61c05cdb4aba7e65c7f59cb0d4cd1c",
+      "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+      "record_ids": [
+        "O8C-B12-012"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 103014,
+      "end": 106051,
+      "role": "Response",
+      "span_sha256_utf8": "42070e7bed23b01a6da8ac1f75aace1987638d789a5bf6a0c55e795662dedc63",
+      "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+      "record_ids": [
+        "O8C-B12-013",
+        "O8C-B12-014",
+        "O8C-B12-015",
+        "O8C-B12-016",
+        "O8C-B12-017",
+        "O8C-B12-018",
+        "O8C-B12-019",
+        "O8C-B12-020",
+        "O8C-B12-021",
+        "O8C-B12-022",
+        "O8C-B12-023",
+        "O8C-B12-024",
+        "O8C-B12-025",
+        "O8C-B12-026",
+        "O8C-B12-027",
+        "O8C-B12-028",
+        "O8C-B12-029",
+        "O8C-B12-030",
+        "O8C-B12-031",
+        "O8C-B12-032"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 106052,
+      "end": 106063,
+      "role": "Prompt",
+      "span_sha256_utf8": "63abe62c28ea59a5dd3510b6264761166fab05bbcf7552a2b9e4415ee85cfb2a",
+      "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+      "record_ids": [
+        "O8C-B12-033"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 106064,
+      "end": 108897,
+      "role": "Response",
+      "span_sha256_utf8": "ebdf587d716e57df9f9610e9815ae42cc5cdb1ec99baabc88b24382ad2a552bf",
+      "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+      "record_ids": [
+        "O8C-B12-034",
+        "O8C-B12-035",
+        "O8C-B12-036",
+        "O8C-B12-037",
+        "O8C-B12-038",
+        "O8C-B12-039",
+        "O8C-B12-040",
+        "O8C-B12-041",
+        "O8C-B12-042",
+        "O8C-B12-043",
+        "O8C-B12-044",
+        "O8C-B12-045",
+        "O8C-B12-046",
+        "O8C-B12-047",
+        "O8C-B12-048",
+        "O8C-B12-049",
+        "O8C-B12-050",
+        "O8C-B12-051",
+        "O8C-B12-052",
+        "O8C-B12-053",
+        "O8C-B12-054",
+        "O8C-B12-055",
+        "O8C-B12-056",
+        "O8C-B12-057"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 108898,
+      "end": 109028,
+      "role": "Prompt",
+      "span_sha256_utf8": "2f29d93af585d943dcd5e44752bb413065125bf84ef06be87b1dd03273945eb5",
+      "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+      "record_ids": [
+        "O8C-B12-058"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 109029,
+      "end": 110331,
+      "role": "Response",
+      "span_sha256_utf8": "e127f7d6c1eaa96da097de8eec63887e0d5410ee3f7cad000081fe4817fbc0bc",
+      "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+      "record_ids": [
+        "O8C-B12-059",
+        "O8C-B12-060",
+        "O8C-B12-061",
+        "O8C-B12-062",
+        "O8C-B12-063",
+        "O8C-B12-064",
+        "O8C-B12-065",
+        "O8C-B12-066",
+        "O8C-B12-067",
+        "O8C-B12-068"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 110332,
+      "end": 110338,
+      "role": "Prompt",
+      "span_sha256_utf8": "33e8e77dcbe377315e81234b2a6d147c48c195f0c9d1c50af47a0d5ef24f5cfb",
+      "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+      "record_ids": [
+        "O8C-B12-069"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 110339,
+      "end": 111838,
+      "role": "Response",
+      "disposition": "OPEN_AT_MACRO_END",
+      "span_sha256_utf8": "629fc686f9e478894aa6b809c6be3ec9e82d4dcf3967f26c80e765bfc64c5abb",
+      "blob_sha1": "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+      "record_ids": [
+        "O8C-B12-070",
+        "O8C-B12-071",
+        "O8C-B12-072",
+        "O8C-B12-073",
+        "O8C-B12-074",
+        "O8C-B12-075",
+        "O8C-B12-076",
+        "O8C-B12-077"
+      ]
+    }
+  ],
+  "axis_coverage": {
+    "assessed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "represented": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "unrepresented": [],
+    "note": "Grouped semantic relevance including author directions; not independent completeness. Reader-only and restricted narrative information cannot be injected into other characters; public identity is not operational affiliation."
+  },
+  "continuity": {
+    "from": {
+      "day": 173,
+      "chapter": 27,
+      "line": 101561,
+      "open_response": true,
+      "book": "II"
+    },
+    "to": {
+      "day": 178,
+      "chapter": 31,
+      "line": 111839,
+      "open_response": true,
+      "next_macro_id": "874c1734717af63a3f05c72a8f75701a9771563f5c49f1ecf470bfe1b4c39985"
+    }
+  },
+  "historical_state_transitions": [
+    {
+      "day": 173,
+      "subject": "creation",
+      "state": "Núcleo estrutural experimental de uma Torre de Vigília manifestado em área de ensaio; não é instalação defensiva autônoma completa.",
+      "evidence": {
+        "record_id": "O8C-B12-001",
+        "line_start": 101561,
+        "line_end": 101619,
+        "span_sha256_utf8": "dec2d11a1d7fe41d9cc2f06d1225ae9b316df3c793436c6fd3415d81b5330310"
+      }
+    },
+    {
+      "day": 173,
+      "subject": "planning",
+      "state": "04h07 considera dez mil novas vidas, sem executar nem conhecer custo/teto; acolhimento, autonomia e recursos importam. Medo não justifica criação compulsória.",
+      "evidence": {
+        "record_id": "O8C-B12-002",
+        "line_start": 101620,
+        "line_end": 101749,
+        "span_sha256_utf8": "c7f9f90fa346bb5929642cc7aa81a793047838e9f4c5120351e7c94165780602"
+      }
+    },
+    {
+      "day": 173,
+      "subject": "relationship",
+      "state": "05h18 Miren encontra Lucas na Forja, pede compartilhar responsabilidades e não trabalhar sozinho a cada noite de medo; alerta de incêndio interrompe conversa.",
+      "evidence": {
+        "record_id": "O8C-B12-003",
+        "line_start": 101750,
+        "line_end": 101983,
+        "span_sha256_utf8": "f9990946e9e881cb22f2f6961955621f4c11cb6e1db2f3e5bba2421b67c05861"
+      }
+    },
+    {
+      "day": 173,
+      "subject": "event",
+      "state": "05h31 fogo violeta anômalo no Coliseu; galerias vazias, resposta coordenada, contenção mineral e equipes de emergência. Fachada e galeria danificadas.",
+      "evidence": {
+        "record_id": "O8C-B12-004",
+        "line_start": 101984,
+        "line_end": 102173,
+        "span_sha256_utf8": "d843d29c840d0f29b4f284474dacb5bef8c3066cde839d2c65c0921fc6770447"
+      }
+    },
+    {
+      "day": 173,
+      "subject": "consequence",
+      "state": "06h24 sem mortes ou lesões; danos severos ao primeiro arco, materiais perdidos; peça estranha e inscrição recolhidas para investigação, autoria não comprovada. Moradores apoiam resposta.",
+      "evidence": {
+        "record_id": "O8C-B12-005",
+        "line_start": 102174,
+        "line_end": 102363,
+        "span_sha256_utf8": "fadd031abd43c01b1059fd1bd709d75c34a6fae64a70306a1e5f10817ad72488"
+      }
+    },
+    {
+      "day": 173,
+      "subject": "technology",
+      "state": "07h43 três armas experimentais e torre apresentadas; nenhum armamento aprovado para combate ou distribuição. Reguladores, energia, confiabilidade e escala segura por validar.",
+      "evidence": {
+        "record_id": "O8C-B12-006",
+        "line_start": 102364,
+        "line_end": 102575,
+        "span_sha256_utf8": "8f3b7737402916c0dcb860837d5c9fa2df5483519f3eda1cd8ab1fdefc7ff22f"
+      }
+    },
+    {
+      "day": 173,
+      "subject": "governance",
+      "state": "09h02 Conselho Civil debate prioridades e custos; Mara e moradores questionam monumentalidade; investigação e revisão aprovadas, reconstrução por etapas sem abandono cultural; 12 mil capacidade final projetada.",
+      "evidence": {
+        "record_id": "O8C-B12-007",
+        "line_start": 102576,
+        "line_end": 102697,
+        "span_sha256_utf8": "2e78e0ffd96fe9f57a0ff3db9c37ef04380a86eeffeb93377993178ae12337da"
+      }
+    },
+    {
+      "day": 173,
+      "subject": "relationship",
+      "state": "10h46 conversa sobre dez mil vidas: Varo questiona futuro, moradia, alimentação e escolha profissional; ambos desejam força, nenhuma decisão de invocar milhares.",
+      "evidence": {
+        "record_id": "O8C-B12-008",
+        "line_start": 102698,
+        "line_end": 102821,
+        "span_sha256_utf8": "d4e24edfd7ae9df3bd8ada54186405fbf5cc3a0167bc2d4cc726881e88df800e"
+      }
+    },
+    {
+      "day": 173,
+      "subject": "governance",
+      "state": "11h46 reunião já iniciada sem Lucas; três prioridades coordenadas, responsabilidades e decisões compartilhadas.",
+      "evidence": {
+        "record_id": "O8C-B12-013",
+        "line_start": 103039,
+        "line_end": 103226,
+        "span_sha256_utf8": "2b2adf1d556c27d4598d1198a5846ebe1a61cef3319547487bbf6b8749d7621e"
+      }
+    },
+    {
+      "day": 173,
+      "subject": "technology",
+      "state": "12h18 ensaios formais; fuzil necessita avaliação térmica, torre separa observação, proteção e resposta autorizada; não liberar resposta letal automática.",
+      "evidence": {
+        "record_id": "O8C-B12-014",
+        "line_start": 103227,
+        "line_end": 103464,
+        "span_sha256_utf8": "ab7243911261774c2bc1cce2dfac728079542f0f8c8f4a06a35cdc4a4abff672"
+      }
+    },
+    {
+      "day": 173,
+      "subject": "technology",
+      "state": "13h37 primeiro núcleo demonstra observação e proteção localizada em ensaio, sem disparo autônomo. Energia e demanda em estudo, não dez torres prontas.",
+      "evidence": {
+        "record_id": "O8C-B12-015",
+        "line_start": 103465,
+        "line_end": 103632,
+        "span_sha256_utf8": "7f82dc652d3322c53bd2049eb9a58cea6d81741e78bc73945ae61f2cd99c497e"
+      }
+    },
+    {
+      "day": 173,
+      "subject": "architecture",
+      "state": "14h26 reconstrução em fases, preservação de cicatriz do incêndio, Praça do Recomeço proposta, participação artesanal e cultural de povos; não obra concluída.",
+      "evidence": {
+        "record_id": "O8C-B12-016",
+        "line_start": 103633,
+        "line_end": 103828,
+        "span_sha256_utf8": "e392e1b1d8d892857878e27b69bd6379e2f51f6ab3c0f7f5da114f25062997bb"
+      }
+    },
+    {
+      "day": 173,
+      "subject": "investigation",
+      "state": "15h09 autorização de manutenção não aprovada e marca VSP-03 ligam entrega do Coliseu a registros de Colina Negra; pista para estação abandonada.",
+      "evidence": {
+        "record_id": "O8C-B12-017",
+        "line_start": 103829,
+        "line_end": 103926,
+        "span_sha256_utf8": "ef9477dce9bf834fadcb09f1878a9b2635ffef960f092dadd366f82346ef75c0"
+      }
+    },
+    {
+      "day": 173,
+      "subject": "geography",
+      "state": "15h42 arquivo identifica Véspera, antiga estação de armazenamento nas colinas; possível instalação usada por inimigos, reconhecimento planejado.",
+      "evidence": {
+        "record_id": "O8C-B12-018",
+        "line_start": 103927,
+        "line_end": 104052,
+        "span_sha256_utf8": "d1acde373c1a7ace313da7f48919799269e09bf142b5f448c4dc54d812a725c9"
+      }
+    },
+    {
+      "day": 173,
+      "subject": "mission",
+      "state": "16h08 Varo comanda resgate, Lucas e Miren voluntariamente acompanham; Astra permanece em Três Arcos; Elsa Ren informada, custódia competente de Thalor; não energizar instalações antigas.",
+      "evidence": {
+        "record_id": "O8C-B12-019",
+        "line_start": 104053,
+        "line_end": 104240,
+        "span_sha256_utf8": "34bc6267d9c8b57c40f3f6e188133519bf7ab3889377da55eb2774fd72657406"
+      }
+    },
+    {
+      "day": 173,
+      "subject": "travel",
+      "state": "17h23 deslocamento norte, leitura de vestígios e símbolo incompleto; cena intercalada com prisioneiros vivos, separar informação dos dois planos.",
+      "evidence": {
+        "record_id": "O8C-B12-020",
+        "line_start": 104241,
+        "line_end": 104382,
+        "span_sha256_utf8": "e5d6ac713a92cd7ba47006d70bc170678cd9f4ef92913cfed36c2395dd889e58"
+      }
+    },
+    {
+      "day": 173,
+      "subject": "mission",
+      "state": "18h16 reconhecimento da estação; equipe evita agir antes de confirmar localização dos cativos, resgate prioritário.",
+      "evidence": {
+        "record_id": "O8C-B12-021",
+        "line_start": 104383,
+        "line_end": 104468,
+        "span_sha256_utf8": "80560775826945d91604d6111c2fd28ce5ffc8ea33a0f2e8fcd00b44efc9e6de"
+      }
+    },
+    {
+      "day": 173,
+      "subject": "event",
+      "state": "18h43 galeria inferior, cativos ouvem confronto; equipe alcança interior e identifica documentos, perigo ainda ativo.",
+      "evidence": {
+        "record_id": "O8C-B12-022",
+        "line_start": 104469,
+        "line_end": 104582,
+        "span_sha256_utf8": "d18adf13f953193ce3f341e445daf3b804e2c363ebb547212673e0e88e56029c"
+      }
+    },
+    {
+      "day": 173,
+      "subject": "bestiary",
+      "state": "18h57 câmara central: construto antigo de vidro sem rosto, inscrições parcialmente cobertas por equipamentos recentes; homem se apresenta como O Escrivão; máquina indica protocolo incompatível.",
+      "evidence": {
+        "record_id": "O8C-B12-023",
+        "line_start": 104583,
+        "line_end": 104762,
+        "span_sha256_utf8": "65dd8f6977aae2d1254fe36e0018671674688ac0fe8fe6e207572a6e38726b0a"
+      }
+    },
+    {
+      "day": 173,
+      "subject": "combat",
+      "state": "Guardião emprega fenômeno gravitacional e reflexos; Káiron protege equipe, Lucas estabiliza galeria e isola mecanismos externos com apoio de Miren; Escrivão capturado, guardião repousa sem destruição.",
+      "evidence": {
+        "record_id": "O8C-B12-024",
+        "line_start": 104763,
+        "line_end": 105060,
+        "span_sha256_utf8": "07edcf837c61d04f34518abf089274eb4602e6ebcc16fdb11f2a2717d7cf5353"
+      }
+    },
+    {
+      "day": 173,
+      "subject": "rescue",
+      "state": "19h18 Maren, Tovik e Seli confirmam nomes da placa; três libertados vivos. Tovik relata outros transferidos antes, número e destino desconhecidos.",
+      "evidence": {
+        "record_id": "O8C-B12-025",
+        "line_start": 105061,
+        "line_end": 105282,
+        "span_sha256_utf8": "689c7ddba42c0690e1501ed13613a5a67b6a8fad4e8efa8379516a435df99204"
+      }
+    },
+    {
+      "day": 173,
+      "subject": "consequence",
+      "state": "20h06 sem mortes; escudo de Káiron danificado, legionário contundido, Círan cortes leves, reserva de Lucas reduzida; registros parcialmente destruídos, instalação instável e guardião em repouso, Coração isolado; Escrivão para custódia de Thalor.",
+      "evidence": {
+        "record_id": "O8C-B12-026",
+        "line_start": 105283,
+        "line_end": 105420,
+        "span_sha256_utf8": "36c119a62260d6bb739d59f3bd4e771816f2104ab3f7f0b39a2f5025c5152f06"
+      }
+    },
+    {
+      "day": 173,
+      "subject": "relationship",
+      "state": "22h18 três chegam ao portão norte de Três Arcos para acolhimento; não desfile ou interrogatório; apoio civil.",
+      "evidence": {
+        "record_id": "O8C-B12-028",
+        "line_start": 105543,
+        "line_end": 105716,
+        "span_sha256_utf8": "be10917a0d3f0221aec69dca7e016a78e3a6a6b1d67e55bceb2afd2a8ff446b7"
+      }
+    },
+    {
+      "day": 173,
+      "subject": "relationship",
+      "state": "23h06 Observatório: casal reflete sobre medo, força, resgate e confiança; Coração continua sem ativação.",
+      "evidence": {
+        "record_id": "O8C-B12-029",
+        "line_start": 105717,
+        "line_end": 105874,
+        "span_sha256_utf8": "5632d6a84d33e847f1ebe81614428bd130e091b9a63b45ee7dbb37233c366d4c"
+      }
+    },
+    {
+      "day": 174,
+      "subject": "culture",
+      "state": "08h56 acolhimento público dos três, cadeiras e celebração de recomeço sem espetáculo de vítimas; escola participa.",
+      "evidence": {
+        "record_id": "O8C-B12-035",
+        "line_start": 106441,
+        "line_end": 106624,
+        "span_sha256_utf8": "0280c4c70100ff6077acaf062196f81e3a8610a363a751e10a6761662fe51483"
+      }
+    },
+    {
+      "day": 174,
+      "subject": "governance",
+      "state": "11h34 Coliseu por etapas e participação civil na programação; pedra marcada pelo incêndio preservada, acesso e prestação de contas discutidos.",
+      "evidence": {
+        "record_id": "O8C-B12-036",
+        "line_start": 106625,
+        "line_end": 106738,
+        "span_sha256_utf8": "7d91f58868553f94dd2970463c8d08259d4c3014034d96a66e08efd13187cdc4"
+      }
+    },
+    {
+      "day": 174,
+      "subject": "event",
+      "state": "17h42 comerciante recebe abordagem sobre tecnologia, encaminha à administração e registra ocorrência; destino posterior do contato mostrado ao leitor.",
+      "evidence": {
+        "record_id": "O8C-B12-037",
+        "line_start": 106739,
+        "line_end": 106804,
+        "span_sha256_utf8": "74d003215d2d68c0b6601a327458b5babd8fc59461572180004e80d7e08d9bff"
+      }
+    },
+    {
+      "day": 175,
+      "subject": "technology",
+      "state": "07h26 torre de ensaio separa observação e defesa, identifica caravana sem decidir culpa; barreira melhorada, energia de serviços essenciais e operação local prioritárias; não operacional.",
+      "evidence": {
+        "record_id": "O8C-B12-038",
+        "line_start": 106805,
+        "line_end": 106952,
+        "span_sha256_utf8": "796939ff1ba7793e0cb4104bedf96f0e6b0e587f2a357b8bb6f0d63224138bec"
+      }
+    },
+    {
+      "day": 175,
+      "subject": "investigation",
+      "state": "10h58 discrepância em propostas comerciais, possível erro não fraude comprovada; fornecedor consultado, registro e análise formal.",
+      "evidence": {
+        "record_id": "O8C-B12-039",
+        "line_start": 106953,
+        "line_end": 107048,
+        "span_sha256_utf8": "305a824e91ff4907f26420e774c6d7f2effeb1a3c2ef7ebf66886d9c88b625fa"
+      }
+    },
+    {
+      "day": 175,
+      "subject": "diplomacy",
+      "state": "16h12 carta de nobre propondo intercâmbio industrial; avaliar limites, aprender também tecnologia local; resposta a preparar.",
+      "evidence": {
+        "record_id": "O8C-B12-040",
+        "line_start": 107049,
+        "line_end": 107116,
+        "span_sha256_utf8": "fd3284f25345ed5c42bfa4c08af969f682665674c2c6de6ca0905f8bf29e1bed"
+      }
+    },
+    {
+      "day": 176,
+      "subject": "investigation",
+      "state": "08h31 oitiva supervisionada por Thalor com representante legal; Escrivão declara nome ELDREN VOSS ainda sujeito a confirmação; Véspera estação de passagem; mulher máscara branca chamada Tecelã, nome real desconhecido; interesse de terceiros em reproduzir poder de Lucas é depoimento a verificar.",
+      "evidence": {
+        "record_id": "O8C-B12-041",
+        "line_start": 107117,
+        "line_end": 107308,
+        "span_sha256_utf8": "2ea73b0b3d9f0cd71eb914562f64c4b671e40a52da7a8e0a979a160325495b02"
+      }
+    },
+    {
+      "day": 176,
+      "subject": "research",
+      "state": "13h17 análise passiva dos registros e fragmentos de Véspera isolados; possíveis aplicações de reconhecimento/controle, não prova de que Arquitetos criaram CREATION.",
+      "evidence": {
+        "record_id": "O8C-B12-042",
+        "line_start": 107309,
+        "line_end": 107392,
+        "span_sha256_utf8": "2d99b4f0cfb86b100793e761d715acb411b3b1ec024897e01c88b3e72106db31"
+      }
+    },
+    {
+      "day": 177,
+      "subject": "relationship",
+      "state": "Dia inteiro de repouso, visita ao Observatório, diálogo sobre confidencialidade sem romper confiança; sem manifestação exigente, reserva recuperada à condição habitual de repouso.",
+      "evidence": {
+        "record_id": "O8C-B12-044",
+        "line_start": 107499,
+        "line_end": 107714,
+        "span_sha256_utf8": "334fc8d8659d2a828c01cf89ada7f1469eb1d4f0c4ec27bd899312b12d110f64"
+      }
+    },
+    {
+      "day": 178,
+      "subject": "power",
+      "state": "06h19 Gênese Coordenada com seis origens individualizadas; reserva expressivamente reduzida, circulação estável, seis vivos; Lucas precisa sentar. Limite superior indeterminado.",
+      "evidence": {
+        "record_id": "O8C-B12-046",
+        "line_start": 107857,
+        "line_end": 107996,
+        "span_sha256_utf8": "614f0faea6b3db32be1190b4e138a7acc4fda9b826c3c08c8f1f98be2bf483bd"
+      }
+    },
+    {
+      "day": 178,
+      "subject": "character",
+      "state": "06h27 DÁRIEN SOL escolhe nome; alto, cabelos negros curtos, olhos âmbar; proteção, resistência e percepção de riscos; calmo, pergunta se alguém está ferido, não submissão automática.",
+      "evidence": {
+        "record_id": "O8C-B12-047",
+        "line_start": 107997,
+        "line_end": 108056,
+        "span_sha256_utf8": "87b7a1b132f8c0cb74f003b8541194c4b91bba41d890040ced80400ea8d3e699"
+      }
+    },
+    {
+      "day": 178,
+      "subject": "character",
+      "state": "NIXA VEL, cabelos acobreados, olhos verde-escuros; perspicaz, humor crítico, investiga contradições e busca verdade sem fabricar culpados.",
+      "evidence": {
+        "record_id": "O8C-B12-048",
+        "line_start": 108057,
+        "line_end": 108106,
+        "span_sha256_utf8": "e1cfc5ec582d0a08a551dfef75d80f34209fbcb133f3893f607ed87ee22ac25f"
+      }
+    },
+    {
+      "day": 178,
+      "subject": "character",
+      "state": "SÉVERO LYN, cabelos castanho-escuros, olhos cinzentos, expressão tranquila; meticuloso em documentação, contabilidade e rastreabilidade; deseja biblioteca.",
+      "evidence": {
+        "record_id": "O8C-B12-049",
+        "line_start": 108107,
+        "line_end": 108158,
+        "span_sha256_utf8": "8e658f97f36d87637428a26eb6c63b786c3330b41aeff794a56d0c6df2d4f860"
+      }
+    },
+    {
+      "day": 178,
+      "subject": "character",
+      "state": "ÍRIA NEMAR, cabelos negros ondulados com reflexos prateados; pequena centelha azul, aptidão arcana, encantamentos e interferências, precisa estudar; sem leitura mental ou neutralização universal.",
+      "evidence": {
+        "record_id": "O8C-B12-050",
+        "line_start": 108159,
+        "line_end": 108210,
+        "span_sha256_utf8": "6686728d22bdbc950ed31975e5877b8f3172a09376ba28bf04a7eb1f3fb02339"
+      }
+    },
+    {
+      "day": 178,
+      "subject": "character",
+      "state": "RAEL FENN, cabelos claros, sardas, olhos castanhos; orientação, reconhecimento e observação ambiental; aventureiro, deseja Observatório, não invisibilidade nem conhecimento prévio de estradas.",
+      "evidence": {
+        "record_id": "O8C-B12-051",
+        "line_start": 108211,
+        "line_end": 108262,
+        "span_sha256_utf8": "f0ca90b7eabfe3b39911b79805feda9c7605124cba34ff91516a7a92adc559b2"
+      }
+    },
+    {
+      "day": 178,
+      "subject": "character",
+      "state": "TÉRIA SOLEN, cabelos castanho-escuros em trança, olhos azul-acinzentados; coordenação e avaliação de prioridades, questiona concentração de poder inclusive unanimidade dos três.",
+      "evidence": {
+        "record_id": "O8C-B12-052",
+        "line_start": 108263,
+        "line_end": 108320,
+        "span_sha256_utf8": "3369ed6a5cc312fa7e37e025734443706dbd9cf0c09e36930e3850370dc4c9d9"
+      }
+    },
+    {
+      "day": 178,
+      "subject": "power",
+      "state": "Consumo expressivo e individualização mais exigente, repouso necessário; seis novas pessoas requerem moradia e acolhimento. Não estimar trinta ou milhares sem dados.",
+      "evidence": {
+        "record_id": "O8C-B12-055",
+        "line_start": 108683,
+        "line_end": 108744,
+        "span_sha256_utf8": "a2ba41009708ceeed7452b47aa91bdd6fb29853c675b2d6374c523b77ca5b8fd"
+      }
+    },
+    {
+      "day": 178,
+      "subject": "relationship",
+      "state": "06h20 retomada da mesma manifestação, Lucas desgastado; Varo e Kael reforçam confiança e limites, Dárien oferece ajuda. Não segunda Gênese.",
+      "evidence": {
+        "record_id": "O8C-B12-059",
+        "line_start": 109046,
+        "line_end": 109233,
+        "span_sha256_utf8": "729a32440a63d9dd2ed333c9b7efff4db562ffc27f36c97c87fa546a94ab6e26"
+      }
+    },
+    {
+      "day": 178,
+      "subject": "character",
+      "state": "06h34 seis demonstram curiosidades e personalidades diferentes; Íria pequena centelha; Rael quer conhecer cidade, Téria considera organização; relações começam sem interferência.",
+      "evidence": {
+        "record_id": "O8C-B12-060",
+        "line_start": 109234,
+        "line_end": 109401,
+        "span_sha256_utf8": "36a3d7877bc7c10f531c317c754ab5aeafb65ff2b7832dc805d1bfa7c441febb"
+      }
+    },
+    {
+      "day": 178,
+      "subject": "power",
+      "state": "06h49 Sistema confirma seis individualizadas, vitalidade estável, Canal Soberano I funcional, Matriz Germinal I coordenada, Circulação de Retorno I disponível; alto consumo, repouso; teto, custos exatos e origem desconhecidos, nenhum novo poder.",
+      "evidence": {
+        "record_id": "O8C-B12-061",
+        "line_start": 109402,
+        "line_end": 109522,
+        "span_sha256_utf8": "442afaca89d5f7813ce80441a714b388de10ff7ad4c01631cd90753e8b1209d6"
+      }
+    },
+    {
+      "day": 178,
+      "subject": "identity",
+      "state": "07h03 avaliação médica e registro civil dos seis como residentes livres reais, sem identidades falsas. Origem e funções reservadas distinguidas; documentação inicial não ocupação imposta.",
+      "evidence": {
+        "record_id": "O8C-B12-062",
+        "line_start": 109523,
+        "line_end": 109709,
+        "span_sha256_utf8": "eaef4b8b921dae9918d7aaba2c04267d69ef4c3449a5b20072b767d5a459deca"
+      }
+    },
+    {
+      "day": 178,
+      "subject": "planning",
+      "state": "07h27 propostas de formação progressiva: proteção, investigação institucional, integridade de registros, pesquisa arcana, cartografia e coordenação respectivamente; mentores e aceitação individual, não cargos consumados.",
+      "evidence": {
+        "record_id": "O8C-B12-063",
+        "line_start": 109710,
+        "line_end": 109815,
+        "span_sha256_utf8": "17becee840396cc23fa1ba0083afde5b619c3341264ff23f546ad002f5580744"
+      }
+    },
+    {
+      "day": 178,
+      "subject": "technology",
+      "state": "07h51 proposta Rede Integrada Aurora: observação, sensores, comunicação, mapa tridimensional, proteção e central; observação distinta de estimativa e última leitura confiável, não rede concluída.",
+      "evidence": {
+        "record_id": "O8C-B12-064",
+        "line_start": 109816,
+        "line_end": 109917,
+        "span_sha256_utf8": "e36c50572843a64f1d3fd78245fb6f9df531b0aecfd8aba7827166ac26c02639"
+      }
+    },
+    {
+      "day": 178,
+      "subject": "technology",
+      "state": "Sinal incompleto em ensaio mostra necessidade de distinguir observação, contenção não letal e resposta autorizada; sem decisão letal autônoma, controles locais e parada independente em estudo.",
+      "evidence": {
+        "record_id": "O8C-B12-065",
+        "line_start": 109918,
+        "line_end": 110026,
+        "span_sha256_utf8": "8a43008f61a5a790c69cef4ee9d730ea7f9777960881ed0f11f570091538f670"
+      }
+    },
+    {
+      "day": 178,
+      "subject": "relationship",
+      "state": "08h23 Téria pergunta qual futuro os seis poderão escolher; protagonista deve responder, não impor destino.",
+      "evidence": {
+        "record_id": "O8C-B12-067",
+        "line_start": 110176,
+        "line_end": 110287,
+        "span_sha256_utf8": "cee778da708b27f001c52867bfaa807531433ed3e87ed7fa1bb17220f5ebab0e"
+      }
+    },
+    {
+      "day": 178,
+      "subject": "relationship",
+      "state": "Lucas apresenta mapa e possibilidades de vida, território ainda desconhecido; não ordens de destino; Varo observa que nenhum pergunta pela guerra.",
+      "evidence": {
+        "record_id": "O8C-B12-070",
+        "line_start": 110368,
+        "line_end": 110607,
+        "span_sha256_utf8": "17db02be0b08c890b0b983b44d31514dde8417b8f95cb97b52fa32e76bd35a0a"
+      }
+    },
+    {
+      "day": 178,
+      "subject": "character",
+      "state": "09h06 Nixa recusa ficar o dia em sala, visita acompanhada negociada; Lucas ainda precisa repouso; autonomia e humor em prática.",
+      "evidence": {
+        "record_id": "O8C-B12-071",
+        "line_start": 110608,
+        "line_end": 110731,
+        "span_sha256_utf8": "00c85c8dcb4109cf468fd0f6de3eae57ab9a7b241e1821327bcb9c5e7d62c56b"
+      }
+    },
+    {
+      "day": 178,
+      "subject": "world-state",
+      "state": "09h43 seis visitam Avenida, apresentados como habitantes reais, não unidade; Dárien ajuda idosa atravessar, reflete sobre confiança.",
+      "evidence": {
+        "record_id": "O8C-B12-072",
+        "line_start": 110732,
+        "line_end": 110927,
+        "span_sha256_utf8": "f3a788e91bebc52dc5b36c32c3d08d6feae8b787ec1a4c47e7d29de536b7cf30"
+      }
+    },
+    {
+      "day": 178,
+      "subject": "culture",
+      "state": "10h27 Cozinha dos Três Caminhos: preferências alimentares, sobremesa de mudança de cor, abastecimento e capacidade futura; encontros e humor com Káiron, Círan e Seron.",
+      "evidence": {
+        "record_id": "O8C-B12-073",
+        "line_start": 110928,
+        "line_end": 111149,
+        "span_sha256_utf8": "1a03d679cf6bf0004d00f2fdb68640761906ff7f048268cc14cc31d729af0d2a"
+      }
+    },
+    {
+      "day": 178,
+      "subject": "character",
+      "state": "11h18 Administração Civil, Sévero e Nixa analisam questões documentais sem confundir hipótese e prova; Téria identifica dependências entre departamentos, cargos não presentes automáticos.",
+      "evidence": {
+        "record_id": "O8C-B12-074",
+        "line_start": 111150,
+        "line_end": 111373,
+        "span_sha256_utf8": "b7dc9105ac339817296aa35b642de740ade7b04f2777f70bebb0ec422fad262c"
+      }
+    },
+    {
+      "day": 178,
+      "subject": "bestiary",
+      "state": "12h36 Parque das Águas, organismos luminosos alados azuis após chuva, ciclo vital incompleto; um pousa em Íria e retorna ao canal; Rael aprende leitura ambiental, sem espécie inventada.",
+      "evidence": {
+        "record_id": "O8C-B12-075",
+        "line_start": 111374,
+        "line_end": 111587,
+        "span_sha256_utf8": "856668519057be1ac1b2ff0cf1c0fd86368fd9c72f1b9c32e1632e4352625a65"
+      }
+    },
+    {
+      "day": 178,
+      "subject": "technology",
+      "state": "14h08 projeção luminosa experimental de torre, rua e estação, duplicações/tremor; transmissor desconectado deixa marcador desatualizado. Seis contribuem com confiança, atualização e resposta humana. Não central operacional.",
+      "evidence": {
+        "record_id": "O8C-B12-076",
+        "line_start": 111588,
+        "line_end": 111807,
+        "span_sha256_utf8": "815e3e80ca7edf6c20a657f84db10a14695c052abb4f8663b74cebe1bc57586b"
+      }
+    },
+    {
+      "day": 178,
+      "subject": "planning",
+      "state": "15h17 discussão de materiais para motores e observação, Lysa recusa aprovar todos os projetos imediatamente; cena interrompida antes de decisão orçamentária.",
+      "evidence": {
+        "record_id": "O8C-B12-077",
+        "line_start": 111808,
+        "line_end": 111838,
+        "span_sha256_utf8": "e9e0716df7620697bfad08f19b07dc74d5c5cdaf5ca14d97f397975f3be1a2b4"
+      }
+    }
+  ],
+  "deferred_review": [
+    {
+      "issue": "D173 Coliseu fire, no casualties, authorship not proven to characters; structural damage and deferred rebuild. Tower experiments not operational.",
+      "action": "Reconcile subsequent repairs and approvals with dated evidence."
+    },
+    {
+      "issue": "D173 Véspera rescue closes three missing cases; other captives reported unknown number and destination. Escrivão name Eldren Voss is D176 declaration; Tecelã alias not true name. Ancient voice/portador reader-only.",
+      "action": "Keep evidence levels and character knowledge separate."
+    },
+    {
+      "issue": "D173 23h48 meeting crosses midnight; D178 C29 epilogue 09h17 precedes C30 replay at 06h20 in source order. C29 manifestation 06h19 and C30 recap same six, not new creation.",
+      "action": "Preserve source order and overlapping time; no duplicate person/birth event."
+    },
+    {
+      "issue": "Sombras functions confidential, individuals public; voluntary initial participation, no operations; 300 originals plus 12 later creations as stated, not population census.",
+      "action": "Do not inject operational affiliation into public character knowledge."
+    },
+    {
+      "issue": "D178 holographic experiment incomplete; Lysa cost discussion open at 111838.",
+      "action": "Continue macro 0013 before deciding project priorities."
+    },
+    {
+      "issue": "Grouped excerpts and exact anchors; not exhaustive or independent semantic certification.",
+      "action": "Global reconciliation and native regression deferred through D579."
+    }
+  ],
+  "review_policy": {
+    "mode": "RECOVER_FIRST_REVIEW_AT_CURRENT_DAY",
+    "user_authorized": true,
+    "description": "Recover and append historical data in chronological source order, track evolving facts and preserve previous states; defer global reconciliation, refactors, semantic deduplication, final regression suite and canon promotion until historical intake reaches D579. Minimal per-write source, role, range, hash and readback safeguards remain.",
+    "no_current_story_action": true
+  },
+  "verification": {
+    "source_anchor_count": 77,
+    "section_count": 9,
+    "source_ranges_contiguous": true,
+    "prior_receipt_hash_verified": true,
+    "prior_candidates_checkpoint_count": 1019,
+    "prior_candidate_files_unchanged_by_patch": true,
+    "queue_hash_verified": true,
+    "checkpoint_hash_verified": true,
+    "role_integrity": true,
+    "unique_ids": true,
+    "previous_span_anchor_verified": true,
+    "controller_review_not_exhaustive": true,
+    "native_semantic_receipt_validation": "DEFERRED_FOR_NEW_FORMAT",
+    "independent_review": false,
+    "source_hashes_manifest_previously_verified_not_recomputed": true
+  },
+  "canon_changed": false,
+  "semantic_certification": false,
+  "promotion": false,
+  "next_line": 111839
+}

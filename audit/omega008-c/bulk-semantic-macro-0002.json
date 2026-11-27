@@ -1,0 +1,5338 @@
+{
+  "schema": "worldroot-omega008-c-semantic-macro-v1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "base_checkpoint_sha256": "f5a07adc3437090aab1664c2d1186768844a42f05073ae5b75035e0d88ffece8",
+  "macro_id": "f55497c946b79e7d953e7321721d7441fbed288e7764403cb97b3ff2152342c8",
+  "macro_range": [
+    1217,
+    11227
+  ],
+  "sample": {
+    "path": "audit/omega008-c/bulk-pilot-semantic-sample.json",
+    "sha256_utf8": "63e40bb584a8a07844ce36c14705ad746973fccaf9a00906bb84f882a6dc15a3",
+    "range": [
+      1217,
+      1679
+    ],
+    "records": 21
+  },
+  "range": [
+    1680,
+    11227
+  ],
+  "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+  "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+  "registry_blob": "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+  "records": [
+    {
+      "id": "O8C-B2-001",
+      "type": "choice",
+      "day": 1,
+      "chapter_hint": 5,
+      "book": "I",
+      "axes": [
+        28,
+        29,
+        30
+      ],
+      "entities": [
+        "lucas"
+      ],
+      "summary": "Autor escolhe primeiro exercício de comando; pede detalhamento, consequências realistas, conselheiros autônomos e três novas opções.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 1683,
+        "line_end": 1683,
+        "role": "Prompt",
+        "span_sha256_utf8": "7e218b7cbd83d349665000f59f184f61c40bc6decc82ca75d1bd1fd752eec038"
+      }
+    },
+    {
+      "id": "O8C-B2-002",
+      "type": "delegation",
+      "day": 1,
+      "chapter_hint": 5,
+      "book": "I",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        9,
+        19,
+        25,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael",
+        "elyan"
+      ],
+      "summary": "Lucas delega busca a Varo e negociação a Kael, protege informação sobre condição e poder, concede autonomia; Varo rejeita sacrificar muitos sem perspectiva razoável.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 1720,
+        "line_end": 1764,
+        "role": "Response",
+        "span_sha256_utf8": "45305f8bef542edd7e6b8d8890d5b797d7476f23bfd2e97b48af2c671f56803a"
+      }
+    },
+    {
+      "id": "O8C-B2-003",
+      "type": "event",
+      "day": 1,
+      "chapter_hint": 5,
+      "book": "I",
+      "axes": [
+        3,
+        7,
+        10,
+        19,
+        24
+      ],
+      "entities": [
+        "varo",
+        "legiao"
+      ],
+      "summary": "Varo sai com quinze legionários; equipe de dezesseis, competências adaptadas, não especialistas profissionais; Lucas sente desconforto por delegar.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 1766,
+        "line_end": 1800,
+        "role": "Response",
+        "span_sha256_utf8": "d754109c581c654724e8a7d5c160c0e4c5384e6f1af4efc788ecd93f81f0b4ac"
+      }
+    },
+    {
+      "id": "O8C-B2-004",
+      "type": "identity",
+      "day": 1,
+      "chapter_hint": 5,
+      "book": "I",
+      "axes": [
+        2,
+        4,
+        5,
+        6,
+        8,
+        19,
+        27
+      ],
+      "entities": [
+        "edran",
+        "kael"
+      ],
+      "summary": "Emissário identifica-se Edran Vael, tenente da Vigia de Halvern a serviço de Thalor; aparência cerca de quarenta anos, cabelos castanhos presos, cicatriz na sobrancelha direita; negociação cautelosa.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 1804,
+        "line_end": 1850,
+        "role": "Response",
+        "span_sha256_utf8": "e7a4df43482c6467a28a848b3998b0ce67f60474f0cde59a9ee559b43a7ae73f"
+      }
+    },
+    {
+      "id": "O8C-B2-005",
+      "type": "report",
+      "day": 1,
+      "chapter_hint": 5,
+      "book": "I",
+      "axes": [
+        16,
+        18,
+        19,
+        20,
+        23,
+        27
+      ],
+      "entities": [
+        "edran",
+        "kael",
+        "arvendell",
+        "thalor",
+        "halvern-region",
+        "bandeira-cinzenta"
+      ],
+      "summary": "Edran nomeia Arvendell, descreve influência de Thalor, mineração e ruínas; Bandeira Cinzenta não oficialmente reconhecida, atividade mercenária/comercial relatada; permanência sujeita a negociação, sem direito territorial.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 1852,
+        "line_end": 1906,
+        "role": "Response",
+        "span_sha256_utf8": "2c7c02687d72f74b8d84d3a9215ba932de458393826d7287f9af13bc51d2ed22"
+      }
+    },
+    {
+      "id": "O8C-B2-006",
+      "type": "event",
+      "day": 1,
+      "chapter_hint": 5,
+      "book": "I",
+      "axes": [
+        2,
+        3,
+        13,
+        16,
+        24
+      ],
+      "entities": [
+        "varo",
+        "legiao"
+      ],
+      "summary": "Busca encontra dois companheiros vivos e feridos; adapta equipamentos ruidosos; sinais de sangue e arrasto sem autoria identificada.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 1910,
+        "line_end": 1950,
+        "role": "Response",
+        "span_sha256_utf8": "daf9128fd2aa9e3db3266da71efb3bb52a72fbd3bc6c0df6f3798df5730930ff"
+      }
+    },
+    {
+      "id": "O8C-B2-007",
+      "type": "report",
+      "day": 1,
+      "chapter_hint": 5,
+      "book": "I",
+      "axes": [
+        3,
+        7,
+        8,
+        10,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "varo",
+        "elyan",
+        "legiao"
+      ],
+      "summary": "Feridos relatam quarto integrante levado vivo em carroça à pedreira; Varo sente raiva mas prioriza retirada segura; identidade dos agressores desconhecida.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 1954,
+        "line_end": 2008,
+        "role": "Response",
+        "span_sha256_utf8": "3bfbc2fe5c3e8f316947c375651a196fbb332268cfaf701d0570f737551e2129"
+      }
+    },
+    {
+      "id": "O8C-B2-008",
+      "type": "state",
+      "day": 1,
+      "chapter_hint": 5,
+      "book": "I",
+      "axes": [
+        1,
+        2,
+        3,
+        10,
+        13,
+        19,
+        24,
+        27
+      ],
+      "entities": [
+        "varo",
+        "kael",
+        "lucas",
+        "legiao",
+        "elyan"
+      ],
+      "summary": "21h38 busca retorna completa com dois feridos; último capturado visto vivo, condição atual incerta; 299 localizados, 0 mortes confirmadas; virote recolhido sem fabricante identificado.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 2012,
+        "line_end": 2108,
+        "role": "Response",
+        "span_sha256_utf8": "30a984a0b6221c75b64dc17c245c6c4f8052598160da0469ed8ae616df9a1fa2"
+      }
+    },
+    {
+      "id": "O8C-B2-009",
+      "type": "plan",
+      "day": 1,
+      "chapter_hint": 5,
+      "book": "I",
+      "axes": [
+        11,
+        12,
+        16,
+        19,
+        20,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael"
+      ],
+      "summary": "Água acessível, autossuficiência não comprovada; conselheiros propõem resgate e diplomacia; recomendam não usar CREATION naquela noite; origem e outros transferidos continuam mistério.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 2110,
+        "line_end": 2160,
+        "role": "Response",
+        "span_sha256_utf8": "78a6c6d78d51fed42ec83c7cc715fac9eaa135c3804806bac4f18e1880180010"
+      }
+    },
+    {
+      "id": "O8C-B2-010",
+      "type": "choice",
+      "day": 1,
+      "chapter_hint": 6,
+      "book": "I",
+      "axes": [
+        9,
+        12,
+        19,
+        25,
+        28,
+        29
+      ],
+      "entities": [
+        "lucas",
+        "durghan",
+        "varo",
+        "kael",
+        "edran"
+      ],
+      "summary": "Autor quer oferecer subordinação condicional ao chefe orc, representação inter-racial, reunião reservada e investigação da recuperação energética; intenção não equivale a juramento.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 2179,
+        "line_end": 2179,
+        "role": "Prompt",
+        "span_sha256_utf8": "a6c107d141cf0a069c41d8173e58ccacafbaa5e9b3ebb2ed08826d9f74f6f822"
+      }
+    },
+    {
+      "id": "O8C-B2-011",
+      "type": "plan",
+      "day": 1,
+      "chapter_hint": 6,
+      "book": "I",
+      "axes": [
+        1,
+        2,
+        9,
+        18,
+        19,
+        20,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael",
+        "durghan"
+      ],
+      "summary": "Conselho às 22h06: primeiro ponto de encontro; Kael exige adesão voluntária e Varo cadeia de comando.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 2208,
+        "line_end": 2272,
+        "role": "Response",
+        "span_sha256_utf8": "e7db78678d5f977b475cbfeb3007e6bd6224ccc7baba31c4f4f60a2c0ec58eec"
+      }
+    },
+    {
+      "id": "O8C-B2-012",
+      "type": "identity",
+      "day": 1,
+      "chapter_hint": 6,
+      "book": "I",
+      "axes": [
+        2,
+        4,
+        5,
+        6,
+        8,
+        18,
+        19,
+        27
+      ],
+      "entities": [
+        "durghan",
+        "lucas"
+      ],
+      "summary": "Chefe revela nome Durghan, chefe de guerra Uzgor; água, comida e curativo; olhos amarelados, presas; Lucas não sabe sua própria natureza biológica.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 2276,
+        "line_end": 2316,
+        "role": "Response",
+        "span_sha256_utf8": "41123202d2e325c56b7a28aaeb60ce8f4991b8c5ba2e1cdd53d417784815af8c"
+      }
+    },
+    {
+      "id": "O8C-B2-013",
+      "type": "proposal",
+      "day": 1,
+      "chapter_hint": 6,
+      "book": "I",
+      "axes": [
+        7,
+        8,
+        9,
+        18,
+        19,
+        25,
+        29
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "durghan",
+        "legiao"
+      ],
+      "summary": "Lucas propõe integrar povos, autoridade militar de Varo, proibir saques e não abandonar companheiros; Varo explicita proteção razoável sem sacrifício impossível.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 2320,
+        "line_end": 2360,
+        "role": "Response",
+        "span_sha256_utf8": "a822b1616bbbcb30331c0589e97a632cd9e9958d9d8c2878efc509c13d317775"
+      }
+    },
+    {
+      "id": "O8C-B2-014",
+      "type": "agreement",
+      "day": 1,
+      "chapter_hint": 6,
+      "book": "I",
+      "axes": [
+        3,
+        7,
+        8,
+        18,
+        19,
+        25,
+        27
+      ],
+      "entities": [
+        "durghan",
+        "kael",
+        "varo",
+        "lucas"
+      ],
+      "summary": "Durghan relata civis Uzgor dispersos, exige proteção e igualdade; aceita trégua e considera serviço futuro, sem juramento ou compromisso de todo clã.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 2374,
+        "line_end": 2428,
+        "role": "Response",
+        "span_sha256_utf8": "d496c654a6277c1c60b8642ca83a644c4a3e4b70bc37346f2b9d4fa2852aabe2"
+      }
+    },
+    {
+      "id": "O8C-B2-015",
+      "type": "report",
+      "day": 1,
+      "chapter_hint": 6,
+      "book": "I",
+      "axes": [
+        16,
+        20,
+        23,
+        26,
+        27
+      ],
+      "entities": [
+        "durghan",
+        "varo",
+        "kael",
+        "bandeira-cinzenta"
+      ],
+      "summary": "Durghan relata atividade na pedreira, tecidos cinzentos e acessos antigos; autoria e condições de acesso não verificadas; informação atribuída à testemunha.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 2436,
+        "line_end": 2474,
+        "role": "Response",
+        "span_sha256_utf8": "f17c478b571138eea71d375822b3d9d5c5d3ac2317ec8dbec49aa345085c13cb"
+      }
+    },
+    {
+      "id": "O8C-B2-016",
+      "type": "relation",
+      "day": 1,
+      "chapter_hint": 6,
+      "book": "I",
+      "axes": [
+        2,
+        3,
+        8,
+        9,
+        19
+      ],
+      "entities": [
+        "edran",
+        "lucas",
+        "kael",
+        "varo"
+      ],
+      "summary": "Reunião reservada às 22h51; Lucas apresenta-se pessoalmente, aperto de mão e humor sobre coroa; Edran conserva cautela.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 2478,
+        "line_end": 2516,
+        "role": "Response",
+        "span_sha256_utf8": "c4df07f45791dd7e146ae5c1a3b58473c05d149a68fdb07d1aa633f6ac52d41d"
+      }
+    },
+    {
+      "id": "O8C-B2-017",
+      "type": "report",
+      "day": 1,
+      "chapter_hint": 6,
+      "book": "I",
+      "axes": [
+        16,
+        18,
+        19,
+        20,
+        23,
+        27
+      ],
+      "entities": [
+        "edran",
+        "arvendell",
+        "thalor",
+        "halvern-region",
+        "bandeira-cinzenta"
+      ],
+      "summary": "Reivindicações territoriais e concessões são relatadas, não verificadas; financiamento privado de companhias é possível; virote não determina identidade, Edran oferece solicitar informações.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 2520,
+        "line_end": 2581,
+        "role": "Response",
+        "span_sha256_utf8": "a9d14e001135dc745070343f7fa188600b225762e2da6b6228423d1b95dd6eb8"
+      }
+    },
+    {
+      "id": "O8C-B2-018",
+      "type": "proposal",
+      "day": 1,
+      "chapter_hint": 6,
+      "book": "I",
+      "axes": [
+        3,
+        9,
+        18,
+        19,
+        20,
+        25,
+        27
+      ],
+      "entities": [
+        "edran",
+        "lucas",
+        "varo",
+        "kael",
+        "durghan"
+      ],
+      "summary": "Oferta emergencial de 48 horas, tropas no perímetro e proteção da estrada; sem aceite formal nesta cena, sem propriedade ou autorização permanente; justiça às possíveis vítimas Uzgor discutida.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 2583,
+        "line_end": 2655,
+        "role": "Response",
+        "span_sha256_utf8": "e95003ee00cc21a991c081a41415a1941e3b0eaf4e8bcd00b87e1ab9d09b6eae"
+      }
+    },
+    {
+      "id": "O8C-B2-019",
+      "type": "experiment",
+      "day": 1,
+      "chapter_hint": 6,
+      "book": "I",
+      "axes": [
+        2,
+        11,
+        12,
+        13,
+        14,
+        27
+      ],
+      "entities": [
+        "lucas"
+      ],
+      "summary": "Meditação distingue recuperação física e CREATION; forçar energia causa dor, sem recarga acelerada; autopercepção inicial, reserva abaixo de 5% estimados; consciência da armadura não demonstrada.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 2659,
+        "line_end": 2749,
+        "role": "Response",
+        "span_sha256_utf8": "08105ba4d10964f3654d25b5ac8dc5a02867cbedfca927cd9122559bae161c5c"
+      }
+    },
+    {
+      "id": "O8C-B2-020",
+      "type": "state",
+      "day": 1,
+      "chapter_hint": 6,
+      "book": "I",
+      "axes": [
+        1,
+        2,
+        3,
+        19,
+        23,
+        26,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael",
+        "durghan",
+        "edran",
+        "elyan"
+      ],
+      "summary": "23h51: 299 localizados, um cativo/desaparecido, trégua não jurada, proposta territorial pendente; rastros de carroça sem confirmação. Fecho mostra guerreiro vivo na carroça ao leitor, não a Lucas.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 2759,
+        "line_end": 2856,
+        "role": "Response",
+        "span_sha256_utf8": "b4fca78a518bfa8e28b088363e9b73f413ea4c8b3b04ce2c132351f60d0aa207"
+      }
+    },
+    {
+      "id": "O8C-B2-021",
+      "type": "choice",
+      "day": 2,
+      "chapter_hint": 7,
+      "book": "I",
+      "axes": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        19,
+        20,
+        28
+      ],
+      "entities": [
+        "lucas",
+        "kael"
+      ],
+      "summary": "Autor propõe testar mochila para moedas, suprimentos e tecnologia moderna e transmissão de conhecimentos; pedidos não demonstram capacidade infinita ou armamentos funcionais.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 2861,
+        "line_end": 2861,
+        "role": "Prompt",
+        "span_sha256_utf8": "01d0b444d1c3648c03805e7f8fc1bc0cfd5c7e29ac484ec78e8aa1aa7803e227"
+      }
+    },
+    {
+      "id": "O8C-B2-022",
+      "type": "inventory",
+      "day": 2,
+      "chapter_hint": 7,
+      "book": "I",
+      "axes": [
+        1,
+        2,
+        13,
+        14,
+        15,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael"
+      ],
+      "summary": "D2 00h17 mochila de couro negro e costuras azuis; discussão da distinção entre necessidade/desejo e custo oculto; lembrança de cantil produzido.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 2900,
+        "line_end": 2994,
+        "role": "Response",
+        "span_sha256_utf8": "6acfd66e0c81411ce579e088bf851810e3181d01c76896d4df7f9c23623f92c3"
+      }
+    },
+    {
+      "id": "O8C-B2-023",
+      "type": "experiment",
+      "day": 2,
+      "chapter_hint": 7,
+      "book": "I",
+      "axes": [
+        11,
+        13,
+        14,
+        20,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "edran",
+        "thalor"
+      ],
+      "summary": "Talhar de cobre emprestado por Edran, torre e duas estrelas; uma cópia aparente produzida, tentativa de multiplicação falha e tira vazia surge; autenticidade e taxa desconhecidas, risco de falsificação.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 2996,
+        "line_end": 3074,
+        "role": "Response",
+        "span_sha256_utf8": "d57dcf25277dd0355486388db984f11c8d5c772225d451b802faef339db9fc5f"
+      }
+    },
+    {
+      "id": "O8C-B2-024",
+      "type": "technology",
+      "day": 2,
+      "chapter_hint": 7,
+      "book": "I",
+      "axes": [
+        13,
+        14,
+        15,
+        20,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "varo"
+      ],
+      "summary": "Binóculo moderno funciona; GPS materializado liga mas sem sinal de satélite, posição indisponível; distinguem tecnologia de infraestrutura, não inferir inexistência absoluta de satélites.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 3076,
+        "line_end": 3194,
+        "role": "Response",
+        "span_sha256_utf8": "99704333504121d5c2c5f82db3a8ff69bb09a39b150095a6826d59b8abaffa20"
+      }
+    },
+    {
+      "id": "O8C-B2-025",
+      "type": "technology",
+      "day": 2,
+      "chapter_hint": 7,
+      "book": "I",
+      "axes": [
+        3,
+        13,
+        14,
+        15,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "varo"
+      ],
+      "summary": "Quadricóptero civil, controlador e bateria produzidos; teste breve confirma câmera, propulsão e controle a curta distância; capacidade de reposição, autonomia e alcance não demonstrados.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 3196,
+        "line_end": 3316,
+        "role": "Response",
+        "span_sha256_utf8": "e21f8121a106af3fda930ebb92f6ac37fbf3fec32f6ccbbe1c34de506da50c7b"
+      }
+    },
+    {
+      "id": "O8C-B2-026",
+      "type": "experiment",
+      "day": 2,
+      "chapter_hint": 7,
+      "book": "I",
+      "axes": [
+        7,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        25,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "varo"
+      ],
+      "summary": "Kael consente teste de memória com condição de parar; recebe fragmentos imagéticos da Terra, pede interrupção e é respeitado; não ganha conhecimento técnico pleno nem personalidade alterada.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 3320,
+        "line_end": 3448,
+        "role": "Response",
+        "span_sha256_utf8": "09a7f18f8accf78268180c42678823df49c3da46715e39508620d425c9d0d1b6"
+      }
+    },
+    {
+      "id": "O8C-B2-027",
+      "type": "organization",
+      "day": 2,
+      "chapter_hint": 7,
+      "book": "I",
+      "axes": [
+        3,
+        4,
+        13,
+        15,
+        19,
+        25
+      ],
+      "entities": [
+        "varo",
+        "kael",
+        "legiao",
+        "unidade-veu"
+      ],
+      "summary": "Unidade Véu: oito do efetivo original, comando operacional Varo e análise Kael; reconhecimento e aprendizado de equipamentos, não nova criação nem unidade plenamente treinada.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 3450,
+        "line_end": 3488,
+        "role": "Response",
+        "span_sha256_utf8": "7f4e7f87e7dcfca456ec0007412b33a30d2ec01e95b204025b67018e21891b0c"
+      }
+    },
+    {
+      "id": "O8C-B2-028",
+      "type": "state",
+      "day": 2,
+      "chapter_hint": 7,
+      "book": "I",
+      "axes": [
+        13,
+        15,
+        19,
+        20,
+        27
+      ],
+      "entities": [
+        "kael",
+        "varo",
+        "lucas"
+      ],
+      "summary": "Mochila fornece bandagem mas não vinte, alimentos ou bateria; Kael propõe custódia e sigilo de tecnologia, Varo exige treinamento.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 3498,
+        "line_end": 3528,
+        "role": "Response",
+        "span_sha256_utf8": "1d0facbd401be1f1b85e07a7c7e694e66cca4662461aaa272647506dbb34f422"
+      }
+    },
+    {
+      "id": "O8C-B2-029",
+      "type": "report",
+      "day": 2,
+      "chapter_hint": 7,
+      "book": "I",
+      "axes": [
+        2,
+        3,
+        13,
+        15,
+        23,
+        26,
+        27
+      ],
+      "entities": [
+        "varo",
+        "kael",
+        "elyan"
+      ],
+      "summary": "Luzes observadas no leste sem distância precisa; localização de cativo incerta; registro distingue arte conceitual de eventos confirmados.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 3532,
+        "line_end": 3599,
+        "role": "Response",
+        "span_sha256_utf8": "44bfb33a4037c27e6b2bbd2eab228837c9920bae4553cba46ac3c54865db9b12"
+      }
+    },
+    {
+      "id": "O8C-B2-030",
+      "type": "choice",
+      "day": 2,
+      "chapter_hint": 8,
+      "book": "I",
+      "axes": [
+        7,
+        9,
+        10,
+        11,
+        12,
+        18,
+        19,
+        25,
+        28,
+        29
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael",
+        "durghan"
+      ],
+      "summary": "Autor delega decisões, prioriza vidas sobre itens, aceita 48h, propõe irmandade e libertação do orc; pergunta sobre evolução e Sistema.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 3632,
+        "line_end": 3644,
+        "role": "Prompt",
+        "span_sha256_utf8": "534b1cb8a75d30d117617e21b32471a123a443e5b5e489daf23dc3ee07668a11"
+      }
+    },
+    {
+      "id": "O8C-B2-031",
+      "type": "relation",
+      "day": 2,
+      "chapter_hint": 8,
+      "book": "I",
+      "axes": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        10,
+        19,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael"
+      ],
+      "summary": "Lucas prioriza recuperar irmão sem novas perdas; Varo usa primeiro nome sem Mestre segundo narrador; ambos recebem autonomia e reconhecem limites da estratégia.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 3683,
+        "line_end": 3747,
+        "role": "Response",
+        "span_sha256_utf8": "78dfe4605143526109dbc922d6453b0c022e95095cc209e6894aed262b0c836c"
+      }
+    },
+    {
+      "id": "O8C-B2-032",
+      "type": "agreement",
+      "day": 2,
+      "chapter_hint": 8,
+      "book": "I",
+      "axes": [
+        3,
+        19,
+        25,
+        27
+      ],
+      "entities": [
+        "kael",
+        "edran",
+        "thalor",
+        "legiao"
+      ],
+      "summary": "Mensagem aceita permanência emergencial de 48h e restrições; pede reunião ao término, sem garantir assentamento ou identidade do futuro emissário.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 3749,
+        "line_end": 3773,
+        "role": "Response",
+        "span_sha256_utf8": "945281a318f16905254b634b6a42f224129a38976b2ad22c724ebe5ffb2fff14"
+      }
+    },
+    {
+      "id": "O8C-B2-033",
+      "type": "editorial-world",
+      "day": 2,
+      "chapter_hint": 8,
+      "book": "I",
+      "axes": [
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        18,
+        19,
+        25,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "legiao",
+        "varo",
+        "kael"
+      ],
+      "summary": "Fundação simbólica da Legião de irmandade: nomes, autonomia, ofícios, famílias voluntárias, igualdade legal e compromisso de não tratar companheiros como descartáveis; feridos e sentinelas protegidos.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 3777,
+        "line_end": 3953,
+        "role": "Response",
+        "span_sha256_utf8": "8cec9a04d4b5cc9d63410fd9122064464d9570a213078cf0154d77adcd71eb28"
+      }
+    },
+    {
+      "id": "O8C-B2-034",
+      "type": "identity",
+      "day": 2,
+      "chapter_hint": 8,
+      "book": "I",
+      "axes": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        19
+      ],
+      "entities": [
+        "oren",
+        "elyan",
+        "lucas"
+      ],
+      "summary": "Oren jovem, cabelos castanhos claros, cicatriz recente na bochecha; deseja construir casas; identifica cativo Elyan como quem primeiro perguntou seu nome; promessa de conhecer primeira casa.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 3965,
+        "line_end": 4017,
+        "role": "Response",
+        "span_sha256_utf8": "e6eb8bf82a15103c0aa2a1ce2c6bf5c9f7523ca9ff79637231e19e322d66709a"
+      }
+    },
+    {
+      "id": "O8C-B2-035",
+      "type": "relation",
+      "day": 2,
+      "chapter_hint": 8,
+      "book": "I",
+      "axes": [
+        7,
+        8,
+        9,
+        10,
+        19,
+        25,
+        30
+      ],
+      "entities": [
+        "varo",
+        "lucas",
+        "legiao"
+      ],
+      "summary": "Varo promete lealdade e julgamento independente; reação coletiva espontânea e imperfeitamente sincronizada, pertencimento não compulsório.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 4019,
+        "line_end": 4071,
+        "role": "Response",
+        "span_sha256_utf8": "b2ec0f10d042b053b285dc5927298a6afc1c7840174174bdcbf18c281659ccb4"
+      }
+    },
+    {
+      "id": "O8C-B2-036",
+      "type": "agreement",
+      "day": 2,
+      "chapter_hint": 8,
+      "book": "I",
+      "axes": [
+        3,
+        7,
+        8,
+        9,
+        18,
+        19,
+        25,
+        27
+      ],
+      "entities": [
+        "durghan",
+        "lucas",
+        "varo",
+        "kael",
+        "oren"
+      ],
+      "summary": "Durghan libertado publicamente sob trégua e escolta, sem armas de guerra ou juramento de serviço; igualdade legal reafirmada; reações de legionários variam.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 4073,
+        "line_end": 4193,
+        "role": "Response",
+        "span_sha256_utf8": "558008dc89c5161d6627b769eaf4f5dcdcf66482a4a795ac092f383df0ad59ad"
+      }
+    },
+    {
+      "id": "O8C-B2-037",
+      "type": "power",
+      "day": 2,
+      "chapter_hint": 8,
+      "book": "I",
+      "axes": [
+        2,
+        3,
+        11,
+        12,
+        14,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "sistema"
+      ],
+      "summary": "Sistema parcialmente retorna 03h09; registra criação consciente, batalha e vínculo coletivo; desbloqueia Percepção do Esforço inicial, alerta qualitativo sem reduzir custos; níveis não revelados.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 4197,
+        "line_end": 4287,
+        "role": "Response",
+        "span_sha256_utf8": "bae968b37ac00c3a5dd917039a4ab0d5c2a9dc678231a5750a847bc5a3103009"
+      }
+    },
+    {
+      "id": "O8C-B2-038",
+      "type": "quest",
+      "day": 2,
+      "chapter_hint": 8,
+      "book": "I",
+      "axes": [
+        11,
+        12,
+        18,
+        19,
+        20,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "sistema",
+        "legiao"
+      ],
+      "summary": "Missão Um lugar para pertencer: assentamento estável com direito territorial, abastecimento e primeiro membro voluntário não criado; sem prazo, recompensa oculta; origem da transferência indisponível.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 4293,
+        "line_end": 4357,
+        "role": "Response",
+        "span_sha256_utf8": "a19a46a71c29ba815d7452b1754bd76fd5adf1ab6fb53584ac5dbeccf0977b90"
+      }
+    },
+    {
+      "id": "O8C-B2-039",
+      "type": "reader-only",
+      "day": 2,
+      "chapter_hint": 8,
+      "book": "I",
+      "axes": [
+        7,
+        9,
+        10,
+        19,
+        23,
+        27
+      ],
+      "entities": [
+        "varo",
+        "kael",
+        "durghan",
+        "edran"
+      ],
+      "summary": "Interlúdio explicitamente não conhecido por Lucas: Varo preocupa-se com promessas impossíveis; Kael quer instituições; Durghan cauteloso; Edran prioriza Halvern.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_OR_UNRESOLVED_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 4369,
+        "line_end": 4397,
+        "role": "Response",
+        "span_sha256_utf8": "10849189d0a2c9292c4daf88362211ecde6eeb0f97546be78f7c121a7acd3dff"
+      }
+    },
+    {
+      "id": "O8C-B2-040",
+      "type": "plan",
+      "day": 2,
+      "chapter_hint": 8,
+      "book": "I",
+      "axes": [
+        2,
+        3,
+        15,
+        19,
+        20,
+        23,
+        26,
+        27
+      ],
+      "entities": [
+        "varo",
+        "kael",
+        "elyan",
+        "unidade-veu"
+      ],
+      "summary": "Plano de 48h: segurança, diplomacia, logística, fundação; observação de duas carroças sem confirmação de Elyan; 299 localizados, sem nova morte confirmada.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 4401,
+        "line_end": 4484,
+        "role": "Response",
+        "span_sha256_utf8": "cbb3e678862b9516581f3da16dd4aa39027efe6d5c610507ac2e2caaedacdcab"
+      }
+    },
+    {
+      "id": "O8C-B2-041",
+      "type": "choice",
+      "day": 2,
+      "chapter_hint": 9,
+      "book": "I",
+      "axes": [
+        11,
+        12,
+        13,
+        19,
+        25,
+        28
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael",
+        "elyan"
+      ],
+      "summary": "Autor quer ir à frente, testar armadura e vínculo, preparar acampamento com Kael e voltar até 13h; força/rastreio pretendidos não comprovados.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 4501,
+        "line_end": 4501,
+        "role": "Prompt",
+        "span_sha256_utf8": "37bc92aea33203faa4bb4d7a5c769b7e0e12bf6375917d1722e591068c895bb3"
+      }
+    },
+    {
+      "id": "O8C-B2-042",
+      "type": "variant",
+      "day": 2,
+      "chapter_hint": 9,
+      "book": "I",
+      "axes": [
+        1,
+        2,
+        11,
+        12,
+        24,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "elyan"
+      ],
+      "summary": "Preâmbulo em primeira pessoa contém variante de horário, testes e identificação; resposta principal começa 4610. Não mesclar variante com narrativa principal; diferenças preservadas para adjudicação.",
+      "authority": "UNADJUDICATED_RESPONSE_VARIANT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_OR_UNRESOLVED_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 4520,
+        "line_end": 4604,
+        "role": "Response",
+        "span_sha256_utf8": "f097dae07dbc217b59aff73c47f901ead6121cab9c6b4726cdd623306fe0b4bf"
+      }
+    },
+    {
+      "id": "O8C-B2-043",
+      "type": "relation",
+      "day": 2,
+      "chapter_hint": 9,
+      "book": "I",
+      "axes": [
+        2,
+        7,
+        8,
+        9,
+        10,
+        11,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael"
+      ],
+      "summary": "Varo questiona se Lucas quer salvar Elyan ou provar força; Kael aponta riscos desconhecidos de sua morte; decidem avaliar armadura.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 4616,
+        "line_end": 4684,
+        "role": "Response",
+        "span_sha256_utf8": "33f663c65ed08838491e362736349ddc760b35f9b11be49e12368f0fb63dfbd3"
+      }
+    },
+    {
+      "id": "O8C-B2-044",
+      "type": "experiment",
+      "day": 2,
+      "chapter_hint": 9,
+      "book": "I",
+      "axes": [
+        2,
+        11,
+        12,
+        13,
+        24,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael"
+      ],
+      "summary": "Testes de carga e mobilidade: suporte e proteção, dor persistente; técnica inferior a veteranos, cura gradual, magia externa não adquirida; custo da armadura não equivalente ao dos trezentos segundo relatório histórico.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 4688,
+        "line_end": 4807,
+        "role": "Response",
+        "span_sha256_utf8": "7b085b0456ba41ed609bacf90eb837de6ba22ae93f9317c9def2afa5de11b109"
+      }
+    },
+    {
+      "id": "O8C-B2-045",
+      "type": "experiment",
+      "day": 2,
+      "chapter_hint": 9,
+      "book": "I",
+      "axes": [
+        11,
+        12,
+        14,
+        26,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael",
+        "elyan"
+      ],
+      "summary": "Percepção sutil de proximidade com Varo/Kael, não localização de Elyan nem telepatia, vida/morte ou controle; expectativa como hipótese alternativa.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 4809,
+        "line_end": 4915,
+        "role": "Response",
+        "span_sha256_utf8": "0b356a4d0f66859a31b7fbf34cc4662c46bec014890708af26eefd82b3ad731d"
+      }
+    },
+    {
+      "id": "O8C-B2-046",
+      "type": "delegation",
+      "day": 2,
+      "chapter_hint": 9,
+      "book": "I",
+      "axes": [
+        2,
+        7,
+        9,
+        19,
+        20,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "varo",
+        "durghan",
+        "edran"
+      ],
+      "summary": "Kael coordena acampamento, suprimentos, saúde, segurança, contatos; pode negociar provisões e melhorias reversíveis, não tratados permanentes; retorno 13h é meta, não sacrifício obrigatório.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 4931,
+        "line_end": 4981,
+        "role": "Response",
+        "span_sha256_utf8": "ca1ea04bbc2fc59cca3620fea0011f1a343eecb2c3cb25ac063f8e7943652c19"
+      }
+    },
+    {
+      "id": "O8C-B2-047",
+      "type": "event",
+      "day": 2,
+      "chapter_hint": 9,
+      "book": "I",
+      "axes": [
+        2,
+        3,
+        4,
+        7,
+        9,
+        19,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "oren",
+        "elyan",
+        "unidade-veu"
+      ],
+      "summary": "Operação Irmandade parte 06h02: Lucas estratégico, Varo tático, oito Véu incluindo Oren (aptidão espacial); 290 localizados na base e um cativo.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 4985,
+        "line_end": 5045,
+        "role": "Response",
+        "span_sha256_utf8": "7642d3f910ed174a81ae26c307227fc3d21d13c279fcbe867d72dde75536f526"
+      }
+    },
+    {
+      "id": "O8C-B2-048",
+      "type": "geography",
+      "day": 2,
+      "chapter_hint": 9,
+      "book": "I",
+      "axes": [
+        2,
+        13,
+        16,
+        17,
+        19,
+        23,
+        27
+      ],
+      "entities": [
+        "varo",
+        "lucas",
+        "oren"
+      ],
+      "summary": "Pedreira ativa em encosta, plataformas de madeira, depósitos, trabalhadores e pelo menos duas dezenas de armados; efetivo total desconhecido.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 5049,
+        "line_end": 5105,
+        "role": "Response",
+        "span_sha256_utf8": "0b5adf4d922afe0265b292fb271467f93082e3cf4fffdc98d771d08fc39191b2"
+      }
+    },
+    {
+      "id": "O8C-B2-049",
+      "type": "event",
+      "day": 2,
+      "chapter_hint": 9,
+      "book": "I",
+      "axes": [
+        3,
+        10,
+        13,
+        15,
+        26,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "oren",
+        "elyan",
+        "unidade-veu"
+      ],
+      "summary": "Drone confirma visualmente Elyan vivo, ferido e caminhando sob custódia; imagem, não ressonância, sustenta identificação.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 5111,
+        "line_end": 5185,
+        "role": "Response",
+        "span_sha256_utf8": "705d47ae26bd3097ddb0d89159819cb33f0a1bfe56e599baf1f7faf1202b6900"
+      }
+    },
+    {
+      "id": "O8C-B2-050",
+      "type": "report",
+      "day": 2,
+      "chapter_hint": 9,
+      "book": "I",
+      "axes": [
+        2,
+        11,
+        15,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "elyan",
+        "conjurador-pedra-azul"
+      ],
+      "summary": "Homem de manto e bastão com pedra azul, possível magia ainda incerta; drone recolhido sem incidente; carroça prepara partida; 07h54, 5h06 até meta.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 5189,
+        "line_end": 5301,
+        "role": "Response",
+        "span_sha256_utf8": "bce983cda57ae6c8c64be0118f02d67b7b7ee6f1b841648ccd0d016ef50a242a"
+      }
+    },
+    {
+      "id": "O8C-B2-051",
+      "type": "choice",
+      "day": 2,
+      "chapter_hint": 10,
+      "book": "I",
+      "axes": [
+        24,
+        28,
+        29,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael",
+        "elyan"
+      ],
+      "summary": "Autor escolhe ir à frente dos irmãos; pede combate e diplomacia realistas, consequências permanentes, autonomia e três novas opções.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 5334,
+        "line_end": 5334,
+        "role": "Prompt",
+        "span_sha256_utf8": "50c59d47b749ce97e2d878016c0fb1e75d9f300030b0f6eb346c1baf9bad50a2"
+      }
+    },
+    {
+      "id": "O8C-B2-052",
+      "type": "relation",
+      "day": 2,
+      "chapter_hint": 10,
+      "book": "I",
+      "axes": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        24,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "elyan"
+      ],
+      "summary": "Varo contém impulso de Lucas e preserva comando tático; acordo de atuar juntos sem CREATION desnecessária.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 5367,
+        "line_end": 5425,
+        "role": "Response",
+        "span_sha256_utf8": "9f667dd2c9e08200f13e69cdec81cc48e25c0726cd93f0fd8160497b04f8c82c"
+      }
+    },
+    {
+      "id": "O8C-B2-053",
+      "type": "combat",
+      "day": 2,
+      "chapter_hint": 10,
+      "book": "I",
+      "axes": [
+        2,
+        3,
+        10,
+        13,
+        16,
+        24
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "oren",
+        "unidade-veu"
+      ],
+      "summary": "Confronto durante resgate; Oren sofre impacto, Lucas tem dificuldade diante de combatente comum e trauma no ombro; proteção não substitui técnica, mantém formação.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 5429,
+        "line_end": 5577,
+        "role": "Response",
+        "span_sha256_utf8": "c826ac8b073e00c564df1312d5ca45519d9229cadeea0e080201774a7cd29577"
+      }
+    },
+    {
+      "id": "O8C-B2-054",
+      "type": "combat",
+      "day": 2,
+      "chapter_hint": 10,
+      "book": "I",
+      "axes": [
+        3,
+        11,
+        12,
+        13,
+        23,
+        24,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "conjurador-pedra-azul"
+      ],
+      "summary": "Homem de manto demonstra ataque de energia com bastão; Lucas sofre trauma, outro legionário ferido; CREATION quase vazia impede tentativa de barreira.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 5581,
+        "line_end": 5653,
+        "role": "Response",
+        "span_sha256_utf8": "177a304bfd3a55719f8f9740a8da1f59f68f9324144e3ac00991081ce758203c"
+      }
+    },
+    {
+      "id": "O8C-B2-055",
+      "type": "event",
+      "day": 2,
+      "chapter_hint": 10,
+      "book": "I",
+      "axes": [
+        2,
+        3,
+        9,
+        10,
+        18,
+        24,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "elyan",
+        "lysa",
+        "brannik"
+      ],
+      "summary": "Elyan libertado com dois civis (mulher humana e anão, identificados depois); ferido, olho esquerdo inchado, Lucas decide levar ambos; não os tratar como subordinados.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 5657,
+        "line_end": 5767,
+        "role": "Response",
+        "span_sha256_utf8": "eb073e6c1997bf86c2eabf61885e0b433a6395e33f10a6904ed0b3652be24a31"
+      }
+    },
+    {
+      "id": "O8C-B2-056",
+      "type": "consequence",
+      "day": 2,
+      "chapter_hint": 10,
+      "book": "I",
+      "axes": [
+        3,
+        9,
+        10,
+        13,
+        15,
+        23,
+        24,
+        25
+      ],
+      "entities": [
+        "varo",
+        "lucas",
+        "oren",
+        "conjurador-pedra-azul"
+      ],
+      "summary": "Conjurador escapa, drone perdido, dois guardas incapacitados vivos, total inimigo desconhecido; Oren ferido no antebraço; Varo prioriza pessoas.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 5771,
+        "line_end": 5845,
+        "role": "Response",
+        "span_sha256_utf8": "5e889533edfa218e221979e0d392f5092b01ac7dd4acdd059bec3c887ac8eedb"
+      }
+    },
+    {
+      "id": "O8C-B2-057",
+      "type": "relation",
+      "day": 2,
+      "chapter_hint": 10,
+      "book": "I",
+      "axes": [
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        19,
+        25,
+        30
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael",
+        "elyan"
+      ],
+      "summary": "12h56 retorno antes da meta; humor dos três, Elyan afirma irmandade mesmo sem Criador; Lucas emocionado.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 5849,
+        "line_end": 5965,
+        "role": "Response",
+        "span_sha256_utf8": "9d747aade6ee6b77dbb93e0d30f75ffd040c6be25acae0f9d0b9fba78acbb3ed"
+      }
+    },
+    {
+      "id": "O8C-B2-058",
+      "type": "state",
+      "day": 2,
+      "chapter_hint": 10,
+      "book": "I",
+      "axes": [
+        2,
+        3,
+        13,
+        19,
+        23,
+        24,
+        26,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael",
+        "elyan",
+        "legiao"
+      ],
+      "summary": "13h24: 300 vivos confirmados, zero mortes na missão, dois civis libertados, um drone perdido; quatro feridos identificados incluindo Lucas; pedreira não ocupada; documentos não autenticados, selo não prova Thalor.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 5969,
+        "line_end": 6033,
+        "role": "Response",
+        "span_sha256_utf8": "331803f5fab542d22f29374fe89262d9ad73a2b448b7b063c6bfa8dde11fa566"
+      }
+    },
+    {
+      "id": "O8C-B2-059",
+      "type": "power",
+      "day": 2,
+      "chapter_hint": 10,
+      "book": "I",
+      "axes": [
+        11,
+        12,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "sistema"
+      ],
+      "summary": "Sistema registra resgate e experiência de combate/comando/magia externa; sem recompensa ou recarga automática.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 6037,
+        "line_end": 6059,
+        "role": "Response",
+        "span_sha256_utf8": "a0e7647b2176d6fec5d1e88965d207a1e7eb4da13021d105922bc8c3fe94c94f"
+      }
+    },
+    {
+      "id": "O8C-B2-060",
+      "type": "reader-only",
+      "day": 2,
+      "chapter_hint": 10,
+      "book": "I",
+      "axes": [
+        3,
+        19,
+        20,
+        23,
+        26,
+        27
+      ],
+      "entities": [
+        "kael",
+        "varo",
+        "lucas"
+      ],
+      "summary": "Conselho avalia suprimentos e documentos; mensageiro inimigo parte da pedreira à fortificação desconhecida, informação ao leitor; não atribuir esse conhecimento a Lucas.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_OR_UNRESOLVED_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 6069,
+        "line_end": 6129,
+        "role": "Response",
+        "span_sha256_utf8": "b144d2819fb0a0f77ce502cfc562fc0d5c23c6f49a3434064e84c129463e04cb"
+      }
+    },
+    {
+      "id": "O8C-B2-061",
+      "type": "choice",
+      "day": 2,
+      "chapter_hint": 11,
+      "book": "I",
+      "axes": [
+        7,
+        10,
+        11,
+        12,
+        13,
+        25,
+        28,
+        29
+      ],
+      "entities": [
+        "lucas"
+      ],
+      "summary": "Autor pede desenvolvimento pessoal, domínio de poderes/equipamentos e força inspiradora, sem depender sempre dos conselheiros.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 6134,
+        "line_end": 6136,
+        "role": "Prompt",
+        "span_sha256_utf8": "b65fa1d3c31e4f127dd9968203e229655f76f61439ffcd845f5500378a2eb330"
+      }
+    },
+    {
+      "id": "O8C-B2-062",
+      "type": "relation",
+      "day": 2,
+      "chapter_hint": 11,
+      "book": "I",
+      "axes": [
+        1,
+        2,
+        7,
+        9,
+        10,
+        24
+      ],
+      "entities": [
+        "lucas",
+        "varo"
+      ],
+      "summary": "Lucas reconhece vulnerabilidade e pede treinamento completo; Varo aceita papel de professor, progresso por disciplina.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 6171,
+        "line_end": 6241,
+        "role": "Response",
+        "span_sha256_utf8": "45074fb0409154f4635aa08eacd959b9dd576f697565874b71ca58b03b2bdf49"
+      }
+    },
+    {
+      "id": "O8C-B2-063",
+      "type": "training",
+      "day": 2,
+      "chapter_hint": 11,
+      "book": "I",
+      "axes": [
+        2,
+        7,
+        8,
+        9,
+        10,
+        24,
+        29
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "oren"
+      ],
+      "summary": "Treino de cerca de 15 minutos, equilíbrio e defesa com espada de madeira, interrompido por costelas; postura defensiva melhor; Oren valoriza reconhecimento dos limites.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 6245,
+        "line_end": 6407,
+        "role": "Response",
+        "span_sha256_utf8": "56bd543bda0a0216fb0a37059edebae53c9750c2cfb018d946bd98b0cad19462"
+      }
+    },
+    {
+      "id": "O8C-B2-064",
+      "type": "experiment",
+      "day": 2,
+      "chapter_hint": 11,
+      "book": "I",
+      "axes": [
+        11,
+        12,
+        14,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "varo"
+      ],
+      "summary": "Kael separa CREATION, armadura e mochila como sistemas possivelmente distintos; Percepção de Esforço alerta antes de nova armadura.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 6413,
+        "line_end": 6457,
+        "role": "Response",
+        "span_sha256_utf8": "109f27854d6c63aced555fc01f88d0163b799e3b48d41e4fe3b60a1cbcd2bece"
+      }
+    },
+    {
+      "id": "O8C-B2-065",
+      "type": "inventory",
+      "day": 2,
+      "chapter_hint": 11,
+      "book": "I",
+      "axes": [
+        11,
+        13,
+        14,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "varo"
+      ],
+      "summary": "Armadura mantém deformação de ombro, recuperação corporal não demonstra autorreparo nem consciência; estudar reforços e elmo.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 6461,
+        "line_end": 6493,
+        "role": "Response",
+        "span_sha256_utf8": "895cd06eaec3380e3cb7cc172befe868be25540327d71f206f15f1ad11417dbe"
+      }
+    },
+    {
+      "id": "O8C-B2-066",
+      "type": "experiment",
+      "day": 2,
+      "chapter_hint": 11,
+      "book": "I",
+      "axes": [
+        11,
+        13,
+        15,
+        20,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "kael"
+      ],
+      "summary": "Uma corda produzida, segunda falha; custo e reposição incertos; GPS sem infraestrutura; Lucas propõe construir infraestrutura tecnológica.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 6497,
+        "line_end": 6535,
+        "role": "Response",
+        "span_sha256_utf8": "4a6b9181d2fcddb1b1e9c469f99519464ff1626743c365fbd978c5786cc77e90"
+      }
+    },
+    {
+      "id": "O8C-B2-067",
+      "type": "state",
+      "day": 2,
+      "chapter_hint": 11,
+      "book": "I",
+      "axes": [
+        11,
+        12,
+        13,
+        24,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "sistema"
+      ],
+      "summary": "Painel histórico consolida fundamentos defensivos, criação externa, possível ressonância, nenhuma magia independente; Sistema registra treino sem novo desbloqueio.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 6539,
+        "line_end": 6597,
+        "role": "Response",
+        "span_sha256_utf8": "72e7232b9e6d97d51f677a33b876bdcb14022a9a481b98c3e1e6d6d771b2461a"
+      }
+    },
+    {
+      "id": "O8C-B2-068",
+      "type": "plan",
+      "day": 2,
+      "chapter_hint": 11,
+      "book": "I",
+      "axes": [
+        16,
+        17,
+        19,
+        20,
+        23,
+        25,
+        27
+      ],
+      "entities": [
+        "kael",
+        "varo",
+        "lucas",
+        "arvendell",
+        "tres-arcos"
+      ],
+      "summary": "Organização de feridos, suprimentos e sentinelas; quatro locais potenciais, direitos e ocupantes incertos; documentos de pedreira ambíguos; possibilidade de ofícios civis.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 6603,
+        "line_end": 6679,
+        "role": "Response",
+        "span_sha256_utf8": "a6a260df5a5bbe54ff207ea6043082209c4d54ca3be71378b8e09a2af2b24f39"
+      }
+    },
+    {
+      "id": "O8C-B2-069",
+      "type": "identity",
+      "day": 2,
+      "chapter_hint": 11,
+      "book": "I",
+      "axes": [
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        15,
+        16,
+        20,
+        27
+      ],
+      "entities": [
+        "brannik",
+        "lucas",
+        "kael",
+        "varo"
+      ],
+      "summary": "Anão resgatado Brannik, pedreiro e ex-supervisor de extração, baixo, ombros largos, barba castanha grisalha, mãos calejadas; conhece estrada das ruínas, não ocupantes atuais; sem obrigação de servir.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 6685,
+        "line_end": 6775,
+        "role": "Response",
+        "span_sha256_utf8": "3828d2cafcece2e68c25a9fe7b991980eeff9ab7a94730923594cb6fd9f20bf9"
+      }
+    },
+    {
+      "id": "O8C-B2-070",
+      "type": "state",
+      "day": 2,
+      "chapter_hint": 11,
+      "book": "I",
+      "axes": [
+        1,
+        2,
+        3,
+        11,
+        19,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael",
+        "legiao"
+      ],
+      "summary": "19h02 300 vivos, feridos recuperando, CREATION limitada, território temporário, treino iniciado.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 6779,
+        "line_end": 6853,
+        "role": "Response",
+        "span_sha256_utf8": "6dfe1129eddf94426ef6bf29a6ffbae3f1076fe15b13712d806389f114087a7f"
+      }
+    },
+    {
+      "id": "O8C-B2-071",
+      "type": "choice",
+      "day": 2,
+      "chapter_hint": 12,
+      "book": "I",
+      "axes": [
+        11,
+        12,
+        15,
+        16,
+        17,
+        19,
+        25,
+        28,
+        29
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael",
+        "brannik"
+      ],
+      "summary": "Autor quer preparação de retirada, concessão legítima, testar poder, ampliar conselho com engenharia, magia, medicina, apoio, espiritualidade e heróis.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 6878,
+        "line_end": 6886,
+        "role": "Prompt",
+        "span_sha256_utf8": "ab70a98a14bff71b64827f9564aff34f754bc7b232f46982b585899187915485"
+      }
+    },
+    {
+      "id": "O8C-B2-072",
+      "type": "delegation",
+      "day": 2,
+      "chapter_hint": 12,
+      "book": "I",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        16,
+        19,
+        20,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael",
+        "brannik"
+      ],
+      "summary": "Varo prepara permanência/retirada/mudança sem marcha; Kael investiga direitos e proposta; Brannik consultor voluntário, não subordinado.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 6927,
+        "line_end": 7047,
+        "role": "Response",
+        "span_sha256_utf8": "ac31f83e71ce2fe435a322912d7623b187c4d02c95a8f4f3b9b98dc7ad7047c4"
+      }
+    },
+    {
+      "id": "O8C-B2-073",
+      "type": "geography",
+      "day": 2,
+      "chapter_hint": 12,
+      "book": "I",
+      "axes": [
+        5,
+        16,
+        17,
+        20,
+        21,
+        26,
+        27
+      ],
+      "entities": [
+        "brannik",
+        "tres-arcos",
+        "varo",
+        "kael"
+      ],
+      "summary": "Nome Três Arcos e antiga fortificação comercial, aqueduto, nascente e cisternas relatados; funcionamento, outra passagem e titularidade desconhecidos.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 7049,
+        "line_end": 7101,
+        "role": "Response",
+        "span_sha256_utf8": "a2550d04e3c622a2114ca2bc237c09a3feba895a179fca3fae7c04fc9d47b6cb"
+      }
+    },
+    {
+      "id": "O8C-B2-074",
+      "type": "plan",
+      "day": 2,
+      "chapter_hint": 12,
+      "book": "I",
+      "axes": [
+        3,
+        16,
+        19,
+        20,
+        25
+      ],
+      "entities": [
+        "varo",
+        "legiao"
+      ],
+      "summary": "Preparação para mobilização executada, transporte de feridos e recursos necessário; nenhum deslocamento ou ocupação autorizado.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 7103,
+        "line_end": 7129,
+        "role": "Response",
+        "span_sha256_utf8": "9a383850ab95c9eddf13a77a9037d63f4c3a48852e3d86b840ee7ed32a9fe943"
+      }
+    },
+    {
+      "id": "O8C-B2-075",
+      "type": "organization",
+      "day": 2,
+      "chapter_hint": 12,
+      "book": "I",
+      "axes": [
+        7,
+        14,
+        15,
+        18,
+        19,
+        20,
+        25,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael",
+        "brannik"
+      ],
+      "summary": "Conselho de oito áreas proposto: liderança, defesa, diplomacia ativas; engenharia a negociar, magia/saúde/cultura vagos, logística provisória; Brannik oferece trabalho remunerado, conhecimento de pedra/hidráulica.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 7133,
+        "line_end": 7229,
+        "role": "Response",
+        "span_sha256_utf8": "b30b3536c7dc768721fc5397f3c31fd08f4fdaf37d284c166f900fff81c2d83a"
+      }
+    },
+    {
+      "id": "O8C-B2-076",
+      "type": "editorial-world",
+      "day": 2,
+      "chapter_hint": 12,
+      "book": "I",
+      "axes": [
+        7,
+        9,
+        19,
+        25,
+        29
+      ],
+      "entities": [
+        "varo",
+        "kael",
+        "lucas",
+        "legiao"
+      ],
+      "summary": "Heróis e especialistas por mérito, autonomia e ações civis além de combate; ordem especial apenas ideia.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 7233,
+        "line_end": 7263,
+        "role": "Response",
+        "span_sha256_utf8": "8ed31b03875d90e0c22674a51ce5f1d5e011a2c1abe5bb5516788e7b6e2e146e"
+      }
+    },
+    {
+      "id": "O8C-B2-077",
+      "type": "experiment",
+      "day": 2,
+      "chapter_hint": 12,
+      "book": "I",
+      "axes": [
+        2,
+        11,
+        12,
+        14,
+        27
+      ],
+      "entities": [
+        "lucas"
+      ],
+      "summary": "21h27 primeiro pequeno rebite de ferro após esgotamento, fadiga leve; custo relacionado a complexidade como hipótese, sem aumento de reserva máxima.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 7267,
+        "line_end": 7363,
+        "role": "Response",
+        "span_sha256_utf8": "fe6fa73a6900d0b92cb589f4ec565e54d9eab23126a8e9f91d528f88a19056af"
+      }
+    },
+    {
+      "id": "O8C-B2-078",
+      "type": "plan",
+      "day": 3,
+      "chapter_hint": 12,
+      "book": "I",
+      "axes": [
+        1,
+        2,
+        16,
+        19,
+        20,
+        25,
+        27
+      ],
+      "entities": [
+        "varo",
+        "kael",
+        "brannik",
+        "tres-arcos"
+      ],
+      "summary": "D3 madrugada: três rotas candidatas, nenhuma plenamente verificada; documentos antigos sugerem concessão de pedágio a linhagem não identificada, validade incerta; propostas de arrendamento/concessão/ocupação provisória.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 7381,
+        "line_end": 7426,
+        "role": "Response",
+        "span_sha256_utf8": "02bab7feeafd6cd2e89bde8734898d99d2adecd93d9e4999a460628441a748db"
+      }
+    },
+    {
+      "id": "O8C-B2-079",
+      "type": "report",
+      "day": 3,
+      "chapter_hint": 12,
+      "book": "I",
+      "axes": [
+        2,
+        16,
+        17,
+        21,
+        26,
+        27
+      ],
+      "entities": [
+        "varo",
+        "kael",
+        "tres-arcos"
+      ],
+      "summary": "Reconhecimento distante observa três arcos, torre quebrada, cisterna e fumaça, pegadas recentes; não identifica moradores ainda.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 7430,
+        "line_end": 7500,
+        "role": "Response",
+        "span_sha256_utf8": "3f3c2093e0e34b916aa555880a35e114a45889dcd473d1374a32142a509d1ceb"
+      }
+    },
+    {
+      "id": "O8C-B2-080",
+      "type": "proposal",
+      "day": 3,
+      "chapter_hint": 12,
+      "book": "I",
+      "axes": [
+        2,
+        16,
+        18,
+        19,
+        20,
+        25,
+        27
+      ],
+      "entities": [
+        "kael",
+        "varo",
+        "lucas",
+        "edran",
+        "thalor",
+        "tres-arcos"
+      ],
+      "summary": "Proposta de recuperar área, proteger trânsito, autonomia delimitada, comércio e direitos; sem obrigação mercenária, acolhimento inter-racial; Edran pode encaminhar, não conceder; zero assentamentos.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 7504,
+        "line_end": 7594,
+        "role": "Response",
+        "span_sha256_utf8": "994f91630163469645f5bee4d069b2d817eaa55401e8a4498d93f11db5d3cbe0"
+      }
+    },
+    {
+      "id": "O8C-B2-081",
+      "type": "reader-only",
+      "day": 3,
+      "chapter_hint": 12,
+      "book": "I",
+      "axes": [
+        23,
+        26,
+        27,
+        30
+      ],
+      "entities": [
+        "miren",
+        "tres-arcos"
+      ],
+      "summary": "Figura encapuzada e segunda voz observam legionários e pergaminho; identidade só vinculada posteriormente como candidata; informação indisponível aos protagonistas.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_OR_UNRESOLVED_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 7602,
+        "line_end": 7620,
+        "role": "Response",
+        "span_sha256_utf8": "00656c9c890fc8a292e9338fe43fc63d87be7eee9e751b5b8a5b6336fc2b95cd"
+      }
+    },
+    {
+      "id": "O8C-B2-082",
+      "type": "choice",
+      "day": 3,
+      "chapter_hint": 13,
+      "book": "I",
+      "axes": [
+        11,
+        12,
+        13,
+        14,
+        16,
+        19,
+        26,
+        28
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "varo"
+      ],
+      "summary": "Autor escolhe conhecer antes de reivindicar, pede detalhamento dos dez destacamentos, conhecer civil resgatada e investigar mana, armadura, mochila e criação conceitual.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 7625,
+        "line_end": 7631,
+        "role": "Prompt",
+        "span_sha256_utf8": "0e7866c0bcc6837e7471c93099af6069d8ab1f4d55fc31195919ef13fa1fded1"
+      }
+    },
+    {
+      "id": "O8C-B2-083",
+      "type": "organization",
+      "day": 3,
+      "chapter_hint": 13,
+      "book": "I",
+      "axes": [
+        1,
+        2,
+        19,
+        20,
+        24,
+        27
+      ],
+      "entities": [
+        "varo",
+        "legiao",
+        "unidade-veu"
+      ],
+      "summary": "Formalização 10x30: Muralha, Bastião, Sentinela, Lança Rubra, Tempestade, Martelo, Olho, Véu, Forja, Reserva. 90 defesa/90 ofensiva e reação/60 reconhecimento/60 apoio; Varo e oficiais incluídos; núcleo Véu de oito distinto do destacamento.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 7672,
+        "line_end": 7774,
+        "role": "Response",
+        "span_sha256_utf8": "a60b9942383e53824c5e4d2ca8fced7e0ad9a3256032bf2dd5338ed1235e6d9e"
+      }
+    },
+    {
+      "id": "O8C-B2-084",
+      "type": "identity",
+      "day": 3,
+      "chapter_hint": 13,
+      "book": "I",
+      "axes": [
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        18,
+        19,
+        20,
+        27
+      ],
+      "entities": [
+        "lysa",
+        "kael",
+        "lucas"
+      ],
+      "summary": "Lysa Varen, mulher humana resgatada, aparência pouco mais de 30, cabelo castanho preso e cicatriz no queixo; escriturária de caravanas; detenção por alegada dívida falsificada sem prova original; exige salário, liberdade e honestidade.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 7778,
+        "line_end": 7898,
+        "role": "Response",
+        "span_sha256_utf8": "9b73564360b12a81daa8cd949f09f03ea7127cbd6b0a8da27bbdf5840f8433ba"
+      }
+    },
+    {
+      "id": "O8C-B2-085",
+      "type": "report",
+      "day": 3,
+      "chapter_hint": 13,
+      "book": "I",
+      "axes": [
+        19,
+        20,
+        23,
+        27
+      ],
+      "entities": [
+        "lysa",
+        "kael",
+        "thalor",
+        "halvern-region"
+      ],
+      "summary": "Lysa identifica marca como selo de entreposto, não do Marquesado; entreposto específico incerto, sabe onde há registros em Halvern.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 7850,
+        "line_end": 7868,
+        "role": "Response",
+        "span_sha256_utf8": "c1fa97613559a1e693dd54f3ab4a798eb541610fee92c9f6539ae4d24544e09e"
+      }
+    },
+    {
+      "id": "O8C-B2-086",
+      "type": "report",
+      "day": 3,
+      "chapter_hint": 13,
+      "book": "I",
+      "axes": [
+        16,
+        18,
+        23,
+        27
+      ],
+      "entities": [
+        "lysa",
+        "kael",
+        "tres-arcos"
+      ],
+      "summary": "Lysa relata antigos refugiados e desconfiança de soldados/cobradores; ocupantes atuais ainda desconhecidos.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 7902,
+        "line_end": 7928,
+        "role": "Response",
+        "span_sha256_utf8": "e7d3cceca7cdcbfb085206a42fd3ac2c050f6cbd868e5f8071d9e7e394b3b0d2"
+      }
+    },
+    {
+      "id": "O8C-B2-087",
+      "type": "experiment",
+      "day": 3,
+      "chapter_hint": 13,
+      "book": "I",
+      "axes": [
+        2,
+        11,
+        12,
+        13,
+        22,
+        27
+      ],
+      "entities": [
+        "lucas"
+      ],
+      "summary": "Meditação em prado com fauna/flora não identificadas; pontos luminosos subjetivos não reproduzidos; sentinela observa brilho temporário da armadura, causa incerta.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 7932,
+        "line_end": 8062,
+        "role": "Response",
+        "span_sha256_utf8": "c70812ec6a0fc1063518109254cf6a9a222f4e207e25c11d4e2d36261953f199"
+      }
+    },
+    {
+      "id": "O8C-B2-088",
+      "type": "power",
+      "day": 3,
+      "chapter_hint": 13,
+      "book": "I",
+      "axes": [
+        11,
+        12,
+        14,
+        26,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "sistema"
+      ],
+      "summary": "Consulta descreve criação externa, custos e incompatibilidade com reescrita direta do criador; origem, absorção e conceitos não demonstrados; criação consciente excede matéria inerte sem implicar onisciência.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 8064,
+        "line_end": 8148,
+        "role": "Response",
+        "span_sha256_utf8": "a8b9b66f7ce5ca5aabdfdd95d15f91e85f40fa26d73696a3dfb8b896a83de78e"
+      }
+    },
+    {
+      "id": "O8C-B2-089",
+      "type": "experiment",
+      "day": 3,
+      "chapter_hint": 13,
+      "book": "I",
+      "axes": [
+        11,
+        12,
+        13,
+        14,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "sistema"
+      ],
+      "summary": "Meditação melhora percepção subjetiva, sem recarga acelerada; sem consciência/autorrestauração comprovada; reforça diferença de custo armadura/Legião como afirmação desta fase.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 8154,
+        "line_end": 8229,
+        "role": "Response",
+        "span_sha256_utf8": "df134b0d264eecd0301e8b46a38a704c03fbd1e5f3b997ea69072e0af3e15ec7"
+      }
+    },
+    {
+      "id": "O8C-B2-090",
+      "type": "event",
+      "day": 3,
+      "chapter_hint": 13,
+      "book": "I",
+      "axes": [
+        2,
+        3,
+        4,
+        5,
+        16,
+        17,
+        19,
+        21,
+        27
+      ],
+      "entities": [
+        "seron",
+        "brannik",
+        "tres-arcos",
+        "miren"
+      ],
+      "summary": "Seron capitaneia seis legionários com Brannik voluntário; observa ruínas habitadas (ao menos nove visíveis), hortas, fumaça; mulher solicita poucos acompanhantes, sem armas expostas; água relatada.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 8241,
+        "line_end": 8323,
+        "role": "Response",
+        "span_sha256_utf8": "48a326ca6356f2da0001c22bdaa2383ef75489527f73fc5a71ad1d20be966e91"
+      }
+    },
+    {
+      "id": "O8C-B2-091",
+      "type": "negotiation",
+      "day": 3,
+      "chapter_hint": 13,
+      "book": "I",
+      "axes": [
+        2,
+        3,
+        16,
+        19,
+        20,
+        25,
+        27
+      ],
+      "entities": [
+        "kael",
+        "lysa",
+        "edran",
+        "thalor",
+        "tres-arcos"
+      ],
+      "summary": "Lysa consultora voluntária; Edran pode solicitar análise formal dos direitos e encaminhar proposta; não expulsar moradores; extensão necessária antes D4.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 8327,
+        "line_end": 8383,
+        "role": "Response",
+        "span_sha256_utf8": "daf1c5c87fa64437f1da691e871af52ca6f7910e7eeed1aa718e80516d0ddeb6"
+      }
+    },
+    {
+      "id": "O8C-B2-092",
+      "type": "state",
+      "day": 3,
+      "chapter_hint": 13,
+      "book": "I",
+      "axes": [
+        2,
+        3,
+        16,
+        19,
+        20,
+        25,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael",
+        "lysa",
+        "tres-arcos"
+      ],
+      "summary": "Lucas veta expulsão, Varo aguarda inspeção; Lysa colaboração proposta sem remuneração confirmada; 300 vivos, 10 destacamentos, sem assentamento próprio.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 8387,
+        "line_end": 8457,
+        "role": "Response",
+        "span_sha256_utf8": "4ba4f38bcbcb461536a75b4ca19e2d69475ed1df02533e1adcd1366498e734ef"
+      }
+    },
+    {
+      "id": "O8C-B2-093",
+      "type": "mystery",
+      "day": 3,
+      "chapter_hint": 13,
+      "book": "I",
+      "axes": [
+        3,
+        13,
+        21,
+        26,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "varo",
+        "kael",
+        "miren",
+        "tres-arcos",
+        "sistema"
+      ],
+      "summary": "Tecido com três círculos e linha vertical, mensagem sobre nascimento em luz azul; similaridade ao Sistema não prova relação.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 8461,
+        "line_end": 8521,
+        "role": "Response",
+        "span_sha256_utf8": "da0ecb87ae065de56d1274ba605d2e8423eff1051144e606180dafb07d7caeb1"
+      }
+    },
+    {
+      "id": "O8C-B2-094",
+      "type": "reader-only",
+      "day": 3,
+      "chapter_hint": 13,
+      "book": "I",
+      "axes": [
+        21,
+        26,
+        27
+      ],
+      "entities": [
+        "miren",
+        "tres-arcos"
+      ],
+      "summary": "Interlúdio de mulher com objeto azul e idoso; expectativa sobre passado das ruínas, não conhecimento de Lucas.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_OR_UNRESOLVED_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 8529,
+        "line_end": 8545,
+        "role": "Response",
+        "span_sha256_utf8": "82f0ee0684bdb9733b8340984a3e69746f6fb37b3cb025ef87edf19036bb9f8b"
+      }
+    },
+    {
+      "id": "O8C-B2-095",
+      "type": "editorial",
+      "day": 3,
+      "chapter_hint": 13,
+      "book": "I",
+      "axes": [
+        11,
+        12,
+        28,
+        29,
+        30
+      ],
+      "entities": [
+        "lucas"
+      ],
+      "summary": "Diretriz autoral explícita: não produzir mais fotos, priorizar história, mundo e personagens overpower; fornecer avanços rápidos e surpreendentes ao longo da trama.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 8550,
+        "line_end": 8550,
+        "role": "Prompt",
+        "span_sha256_utf8": "3c0a41fe8406a56a3caf7b86e24a7ae2a0743eace1920589ba714bcf0297d201"
+      }
+    },
+    {
+      "id": "O8C-B2-096",
+      "type": "editorial-response",
+      "day": 3,
+      "chapter_hint": 13,
+      "book": "I",
+      "axes": [
+        11,
+        12,
+        14,
+        23,
+        29,
+        30
+      ],
+      "entities": [
+        "lucas"
+      ],
+      "summary": "Resposta aceita não gerar imagens, progressões marcantes causadas por descobertas/eventos, mundo à altura, companheiros evoluindo; evitar treino interminável e poder sem causa. Não converter promessas de exemplo em fatos.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 8555,
+        "line_end": 8603,
+        "role": "Response",
+        "span_sha256_utf8": "c2827d4eaf2ec03b6700223d5ae25b5ab68d3388aa4e650c712b8656ac2a0c43"
+      }
+    },
+    {
+      "id": "O8C-B2-097",
+      "type": "choice",
+      "day": 3,
+      "chapter_hint": 14,
+      "book": "I",
+      "axes": [
+        14,
+        18,
+        19,
+        20,
+        25,
+        28,
+        29
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "miren",
+        "tres-arcos"
+      ],
+      "summary": "Autor escolhe visita pessoal, carta e primeiro selo; blefe de alcance sem confirmar efetivo adicional; lar voluntário, conhecimento e força.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 8608,
+        "line_end": 8612,
+        "role": "Prompt",
+        "span_sha256_utf8": "24151ff4556ce44f81180c3cb867f989b9e569d55421b17805ac06826e690713"
+      }
+    },
+    {
+      "id": "O8C-B2-098",
+      "type": "event",
+      "day": 3,
+      "chapter_hint": 14,
+      "book": "I",
+      "axes": [
+        1,
+        2,
+        3,
+        8,
+        19,
+        20,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "varo",
+        "edran",
+        "thalor"
+      ],
+      "summary": "Carta redigida em conjunto pede cinco dias e recuperação regional; insinuação diplomática de alcance sem afirmar números; pedido não concessão.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 8637,
+        "line_end": 8748,
+        "role": "Response",
+        "span_sha256_utf8": "1e310c5db1e831823102f3b82293e6c1b114fb0f0cb0bab3bacc1d3c6feca000"
+      }
+    },
+    {
+      "id": "O8C-B2-099",
+      "type": "creation",
+      "day": 3,
+      "chapter_hint": 14,
+      "book": "I",
+      "axes": [
+        3,
+        11,
+        12,
+        13,
+        14,
+        17,
+        19,
+        25,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "sistema",
+        "legiao"
+      ],
+      "summary": "Primeiro selo: escudo vertical, lança, anel e três pilares (força, criação, dever); metal escuro, sulcos azuis, cansaço leve; Sistema registra Âncora Coletiva inicial, sem provar ganhos futuros.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 8750,
+        "line_end": 8918,
+        "role": "Response",
+        "span_sha256_utf8": "781374fd981e0a2caf02e9ea5b79dca3830d06aab5b21c1f95731cf8ffebb729"
+      }
+    },
+    {
+      "id": "O8C-B2-100",
+      "type": "delegation",
+      "day": 3,
+      "chapter_hint": 14,
+      "book": "I",
+      "axes": [
+        3,
+        7,
+        16,
+        19,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "varo"
+      ],
+      "summary": "Carta enviada; delegação pequena com apoio de Véu/Sentinela/Forja; Varo segurança externa, evita converter diálogo em massacre.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 8922,
+        "line_end": 8988,
+        "role": "Response",
+        "span_sha256_utf8": "881810fd82f414658d54c5a6aae17d10545bd50913f5ba98829962f40d23d418"
+      }
+    },
+    {
+      "id": "O8C-B2-101",
+      "type": "geography",
+      "day": 3,
+      "chapter_hint": 14,
+      "book": "I",
+      "axes": [
+        2,
+        12,
+        16,
+        17,
+        20,
+        27
+      ],
+      "entities": [
+        "brannik",
+        "lucas",
+        "kael",
+        "tres-arcos"
+      ],
+      "summary": "Estrada antiga degradada e canaleta relatada; hipótese de crescimento por vínculos/estruturas a partir da âncora, não poder comprovado.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 8992,
+        "line_end": 9058,
+        "role": "Response",
+        "span_sha256_utf8": "c7a650f0027872e2ad7623eae37d3db5deca6fec8eba5bd304f49bb37697c09f"
+      }
+    },
+    {
+      "id": "O8C-B2-102",
+      "type": "identity",
+      "day": 3,
+      "chapter_hint": 14,
+      "book": "I",
+      "axes": [
+        2,
+        4,
+        5,
+        6,
+        8,
+        13,
+        16,
+        17,
+        22,
+        26,
+        27
+      ],
+      "entities": [
+        "miren",
+        "lucas",
+        "kael",
+        "tres-arcos"
+      ],
+      "summary": "Primeiro encontro pessoal com Miren: alta, esguia, postura firme, manto, placa azul com símbolo; identifica-se pelo nome; olhos atentos sem cor informada; moradores, hortas e cabritos observados.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 9062,
+        "line_end": 9176,
+        "role": "Response",
+        "span_sha256_utf8": "ac74c00b2f0d2c8da966090bab17abb25ef60675aabd4becc7da243ce284ec46"
+      }
+    },
+    {
+      "id": "O8C-B2-103",
+      "type": "relation",
+      "day": 3,
+      "chapter_hint": 14,
+      "book": "I",
+      "axes": [
+        7,
+        8,
+        9,
+        10,
+        18,
+        19,
+        25,
+        29
+      ],
+      "entities": [
+        "lucas",
+        "miren",
+        "kael",
+        "tres-arcos"
+      ],
+      "summary": "Lucas oferece proteção, trabalho, ciência e lar sem reivindicar casas; moradores desconfiam de promessas e tributos; Miren curiosa, não confiante.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 9180,
+        "line_end": 9278,
+        "role": "Response",
+        "span_sha256_utf8": "42db90b8648b210cff6dea4042d6ee3d39a41aece88ce95fb2f01a686ccbe257"
+      }
+    },
+    {
+      "id": "O8C-B2-104",
+      "type": "mystery",
+      "day": 3,
+      "chapter_hint": 14,
+      "book": "I",
+      "axes": [
+        3,
+        11,
+        12,
+        13,
+        16,
+        17,
+        21,
+        26,
+        27
+      ],
+      "entities": [
+        "miren",
+        "lucas",
+        "kael",
+        "sistema",
+        "tres-arcos"
+      ],
+      "summary": "Povoado estimado 26; mesa antiga reage, Sistema detecta fragmento compatível, provável Nó de Observação/Herança Prévia dormente; Miren relata Descidas Azuis e guardiões, não prova Lucas não ser o primeiro.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 9282,
+        "line_end": 9416,
+        "role": "Response",
+        "span_sha256_utf8": "dff87c2e3c5c9490382c46fccbf45d4a42936cfb2840d903a567e74ecc8248e2"
+      }
+    },
+    {
+      "id": "O8C-B2-105",
+      "type": "agreement",
+      "day": 3,
+      "chapter_hint": 14,
+      "book": "I",
+      "axes": [
+        2,
+        3,
+        19,
+        23,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "edran",
+        "thalor",
+        "kael",
+        "lucas",
+        "miren"
+      ],
+      "summary": "Resposta concede três dias adicionais, não cinco, condicionados a ordem/ausência de hostilidade/proposta; selo citado como organização; Miren alerta sobre destruidores anteriores não identificados.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 9420,
+        "line_end": 9506,
+        "role": "Response",
+        "span_sha256_utf8": "703e6b4018d27117c018005822a0bd1dd4c7f90d810db0e3481c932672e73818"
+      }
+    },
+    {
+      "id": "O8C-B2-106",
+      "type": "choice",
+      "day": 3,
+      "chapter_hint": 15,
+      "book": "I",
+      "axes": [
+        7,
+        9,
+        11,
+        18,
+        19,
+        25,
+        28,
+        29
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "lysa",
+        "miren"
+      ],
+      "summary": "Autor escolhe estudo e negociação, quer rede de conhecimento e confiança em Kael, cooperação com Miren e investigação da mana.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 9533,
+        "line_end": 9539,
+        "role": "Prompt",
+        "span_sha256_utf8": "7d7cecd2b6a9f52cbfcb079e37d869b8919a5b7abf9237fafcdd9202ef86637b"
+      }
+    },
+    {
+      "id": "O8C-B2-107",
+      "type": "delegation",
+      "day": 3,
+      "chapter_hint": 15,
+      "book": "I",
+      "axes": [
+        1,
+        2,
+        7,
+        8,
+        9,
+        18,
+        19,
+        25,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "lysa",
+        "miren"
+      ],
+      "summary": "Lucas confia julgamento de Kael, encomenda rede ampla e legitimidade; Kael esclarece Lysa ainda não é assistente formal; Miren questiona autonomia dos criados.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 9566,
+        "line_end": 9684,
+        "role": "Response",
+        "span_sha256_utf8": "cedeb7e42bffcec600c2f09a3436347dcc8114fbf4514bd88c0053107df2ba55"
+      }
+    },
+    {
+      "id": "O8C-B2-108",
+      "type": "agreement",
+      "day": 3,
+      "chapter_hint": 15,
+      "book": "I",
+      "axes": [
+        4,
+        9,
+        16,
+        18,
+        19,
+        20,
+        25,
+        27
+      ],
+      "entities": [
+        "miren",
+        "lucas",
+        "tres-arcos"
+      ],
+      "summary": "26 moradores, seis crianças, idosos e deslocados; Miren guarda legado mas não pode ceder povoado; propõe apresentar colaboração sem submissão e ensinar parcialmente.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 9688,
+        "line_end": 9778,
+        "role": "Response",
+        "span_sha256_utf8": "3fee81970f06f719778fcd7334293328b7b1e00fc96e2e1fe544ca5596794281"
+      }
+    },
+    {
+      "id": "O8C-B2-109",
+      "type": "knowledge",
+      "day": 3,
+      "chapter_hint": 15,
+      "book": "I",
+      "axes": [
+        8,
+        11,
+        12,
+        15,
+        27
+      ],
+      "entities": [
+        "miren",
+        "lucas"
+      ],
+      "summary": "Miren explica mana como meio de interação e condução, práticas por corpo/instrumento/inscrições; conversão para CREATION é hipótese, compatibilidade desconhecida; humor com Lucas.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 9782,
+        "line_end": 9890,
+        "role": "Response",
+        "span_sha256_utf8": "c587a01b1b9503f55f502ba459f99b538ca9bc6cd03c407649d2545dd07932f3"
+      }
+    },
+    {
+      "id": "O8C-B2-110",
+      "type": "experiment",
+      "day": 3,
+      "chapter_hint": 15,
+      "book": "I",
+      "axes": [
+        3,
+        11,
+        12,
+        13,
+        14,
+        15,
+        27
+      ],
+      "entities": [
+        "miren",
+        "lucas"
+      ],
+      "summary": "Miren demonstra luz fraca e vibração por cristal, declara experiência em inscrições/condução, não maga de batalha; Lucas cria pedra simples e percebe referência observada mais estável.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 9894,
+        "line_end": 10018,
+        "role": "Response",
+        "span_sha256_utf8": "2dc924aa54faa3318de368b5a7f5a12e6446b9b023b42b7638f9345503347be5"
+      }
+    },
+    {
+      "id": "O8C-B2-111",
+      "type": "power",
+      "day": 3,
+      "chapter_hint": 15,
+      "book": "I",
+      "axes": [
+        11,
+        12,
+        14,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "sistema"
+      ],
+      "summary": "Matriz de Referência I: estabilizar modelos pela observação direta, facilitar repetição conceitual de estruturas simples; possível eficiência futura, sem eliminar custo ou conceder conhecimento automático.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 10022,
+        "line_end": 10040,
+        "role": "Response",
+        "span_sha256_utf8": "33804d5eb6e526ef0b7183d8cbc2ddcafb7303bfffe45bc66ffdfe1a444d34d1"
+      }
+    },
+    {
+      "id": "O8C-B2-112",
+      "type": "report",
+      "day": 3,
+      "chapter_hint": 15,
+      "book": "I",
+      "axes": [
+        11,
+        12,
+        18,
+        21,
+        26,
+        27
+      ],
+      "entities": [
+        "miren",
+        "lucas"
+      ],
+      "summary": "Miren associa nome a fragmentos sobre Arquitetos, distinção entre efeito e estrutura; relação com Criadores desconhecida; possibilidades de replicação futuras são hipóteses.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 10044,
+        "line_end": 10120,
+        "role": "Response",
+        "span_sha256_utf8": "c4125b0664330652ffc6e2e38bd379a627f1420dcc52dc48fad41534ee3af69b"
+      }
+    },
+    {
+      "id": "O8C-B2-113",
+      "type": "organization",
+      "day": 3,
+      "chapter_hint": 15,
+      "book": "I",
+      "axes": [
+        2,
+        7,
+        9,
+        15,
+        18,
+        19,
+        20,
+        25,
+        27
+      ],
+      "entities": [
+        "kael",
+        "lucas",
+        "lysa",
+        "brannik"
+      ],
+      "summary": "Grande Rede de Conhecimento proposta: Arquivo, Academia dos Fundadores, Observatório, Rede de Informações, Conselho de Ofícios/Povos; não instituições constituídas. Kael exige registrar resultados contrários e contestação.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 10124,
+        "line_end": 10244,
+        "role": "Response",
+        "span_sha256_utf8": "1e67a96563c39fd7769cdcc07b826e64bc67c2e3537108b25ba9b3d6e2553643"
+      }
+    },
+    {
+      "id": "O8C-B2-114",
+      "type": "identity",
+      "day": 3,
+      "chapter_hint": 15,
+      "book": "I",
+      "axes": [
+        2,
+        4,
+        5,
+        6,
+        8,
+        18,
+        19,
+        20,
+        25
+      ],
+      "entities": [
+        "tarek",
+        "miren",
+        "lucas",
+        "kael",
+        "tres-arcos"
+      ],
+      "summary": "Tarek, aparência cerca de 50, cabelos grisalhos e mãos de trabalhador, organiza alimento/abrigo; assembleia exige água, telhados, não expulsão, não recrutamento obrigatório e proteção de crianças; maioria aceita continuar diálogo, não adesão.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 10248,
+        "line_end": 10332,
+        "role": "Response",
+        "span_sha256_utf8": "5c75559324449e88beec5a79df0465193f092dbd6880c7781beb3b371a739c48"
+      }
+    },
+    {
+      "id": "O8C-B2-115",
+      "type": "relation",
+      "day": 3,
+      "chapter_hint": 15,
+      "book": "I",
+      "axes": [
+        7,
+        9,
+        10,
+        18,
+        19,
+        25
+      ],
+      "entities": [
+        "varo",
+        "lucas"
+      ],
+      "summary": "Varo reconhece desafio de proteger pessoas fora de suas ordens.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 10334,
+        "line_end": 10348,
+        "role": "Response",
+        "span_sha256_utf8": "cfd4445b1fb73d58b2ca3919a3f8d56ac57615cd7da6a96d2601da5c5405b650"
+      }
+    },
+    {
+      "id": "O8C-B2-116",
+      "type": "mystery",
+      "day": 3,
+      "chapter_hint": 15,
+      "book": "I",
+      "axes": [
+        11,
+        12,
+        14,
+        17,
+        21,
+        26,
+        27
+      ],
+      "entities": [
+        "miren",
+        "lucas",
+        "kael",
+        "tres-arcos"
+      ],
+      "summary": "Três princípios traduzidos: Observação, Forma, Vínculo; advertência de dependência entre estruturas, significado incerto; passagem subterrânea selada e tentativas anteriores descontroladas segundo Miren.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 10352,
+        "line_end": 10476,
+        "role": "Response",
+        "span_sha256_utf8": "1e07762894cbf6a28b3f3b5c7d9d8a055780f049a89cc666ce54dc8935c3c919"
+      }
+    },
+    {
+      "id": "O8C-B2-117",
+      "type": "power",
+      "day": 3,
+      "chapter_hint": 15,
+      "book": "I",
+      "axes": [
+        11,
+        12,
+        14,
+        21,
+        26,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "sistema"
+      ],
+      "summary": "Sistema identifica Arquitetura da Criação, domínio inicial, aplicações avançadas indisponíveis; estrutura inativa e origem divina não confirmada.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 10490,
+        "line_end": 10506,
+        "role": "Response",
+        "span_sha256_utf8": "7f717e1131f89cdba8a3ed3a5c994a4af9ec9743c575a0c3b2a0b720a66ebb20"
+      }
+    },
+    {
+      "id": "O8C-B2-118",
+      "type": "state",
+      "day": 3,
+      "chapter_hint": 15,
+      "book": "I",
+      "axes": [
+        2,
+        3,
+        11,
+        12,
+        19,
+        25,
+        26,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "varo",
+        "lysa",
+        "miren",
+        "tres-arcos"
+      ],
+      "summary": "22h07: 300 vivos, 26 moradores, três dias de extensão, sem posse ou adesão formal; Matriz I registrada, subterrâneo selado, pesquisa e mobilização pendentes.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 10546,
+        "line_end": 10603,
+        "role": "Response",
+        "span_sha256_utf8": "f6b066c769d764c7c2e8f60bdc19f4f5cee90711d118546bf1c1559a0affa015"
+      }
+    },
+    {
+      "id": "O8C-B2-119",
+      "type": "reader-only",
+      "day": 3,
+      "chapter_hint": 15,
+      "book": "I",
+      "axes": [
+        12,
+        21,
+        26,
+        27,
+        30
+      ],
+      "entities": [
+        "tres-arcos",
+        "sistema"
+      ],
+      "summary": "Inscrição subterrânea lampeja sem testemunha; hipótese narrativa de reconhecimento, não conhecimento do elenco.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_OR_UNRESOLVED_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 10611,
+        "line_end": 10617,
+        "role": "Response",
+        "span_sha256_utf8": "1aaa4121d7edfac69d2af258dd5f8e2f9537005839011a190d42cc6da54d0c3d"
+      }
+    },
+    {
+      "id": "O8C-B2-120",
+      "type": "choice",
+      "day": 3,
+      "chapter_hint": 16,
+      "book": "I",
+      "axes": [
+        7,
+        9,
+        11,
+        12,
+        13,
+        14,
+        19,
+        25,
+        28
+      ],
+      "entities": [
+        "lucas"
+      ],
+      "summary": "Autor quer três dias prioritários, integrar 26 voluntariamente, bolsa na cintura, estudar armadura e vínculo, meditação durante sono e treino contínuo.",
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 10622,
+        "line_end": 10626,
+        "role": "Prompt",
+        "span_sha256_utf8": "1673df993ab0f8d03219f5a5f3b7b95dcba93aaef9dcefe753f539697c835455"
+      }
+    },
+    {
+      "id": "O8C-B2-121",
+      "type": "plan",
+      "day": 3,
+      "chapter_hint": 16,
+      "book": "I",
+      "axes": [
+        1,
+        2,
+        7,
+        9,
+        18,
+        19,
+        20,
+        25
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "varo",
+        "miren",
+        "lysa",
+        "brannik",
+        "tres-arcos"
+      ],
+      "summary": "Plano dias 4 conhecimento, 5 moradores/instituições, 6 logística; segurança e cuidados simultâneos; adesão não presumida; dignidade não determinada por dinheiro, remuneração justa preservada.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 10659,
+        "line_end": 10778,
+        "role": "Response",
+        "span_sha256_utf8": "2ca34e78c5936ac208aedffb5ed4932c2760597ce563aaa10fdc41c0e0eeed44"
+      }
+    },
+    {
+      "id": "O8C-B2-122",
+      "type": "inventory",
+      "day": 3,
+      "chapter_hint": 16,
+      "book": "I",
+      "axes": [
+        2,
+        3,
+        13,
+        15,
+        19,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "legiao"
+      ],
+      "summary": "Forja fabrica suporte removível de couro/fivela para mochila no quadril esquerdo; sem CREATION ou conexão mágica; integração futura apenas proposta.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 10782,
+        "line_end": 10848,
+        "role": "Response",
+        "span_sha256_utf8": "99eb52fd7486c7389b68b72b2073057a40d8932cdf588c173a5006ecb9bf83e3"
+      }
+    },
+    {
+      "id": "O8C-B2-123",
+      "type": "experiment",
+      "day": 3,
+      "chapter_hint": 16,
+      "book": "I",
+      "axes": [
+        11,
+        12,
+        13,
+        14,
+        27
+      ],
+      "entities": [
+        "lucas"
+      ],
+      "summary": "Remove partes da armadura, observa encaixes e perda de suporte, reconhece criação separada; danos persistem; abandona reparo por custo, reequipamento retorna calor; nenhuma consciência provada.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 10854,
+        "line_end": 10942,
+        "role": "Response",
+        "span_sha256_utf8": "8968c5c4afdd0fa07b9a2124a20660044bfad81a9ab89b7c924bde3d32419f14"
+      }
+    },
+    {
+      "id": "O8C-B2-124",
+      "type": "dream",
+      "day": 3,
+      "chapter_hint": 16,
+      "book": "I",
+      "axes": [
+        2,
+        10,
+        11,
+        12,
+        14,
+        26,
+        27
+      ],
+      "entities": [
+        "lucas"
+      ],
+      "summary": "Transição ao sono, constelação e voz não identificada em sonho; hipótese de custos separados imaginar/estruturar/materializar; acorda 03h17 sem confirmação do Sistema, anota e descansa.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "READER_ONLY_OR_UNRESOLVED_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 10946,
+        "line_end": 11112,
+        "role": "Response",
+        "span_sha256_utf8": "813f264f34e96f3a31172e37dab00cacb0e177ac15ebebda841a98812e184c24"
+      }
+    },
+    {
+      "id": "O8C-B2-125",
+      "type": "experiment-open",
+      "day": 4,
+      "chapter_hint": 16,
+      "book": "I",
+      "axes": [
+        1,
+        2,
+        3,
+        11,
+        12,
+        14,
+        15,
+        25,
+        27
+      ],
+      "entities": [
+        "lucas",
+        "kael",
+        "miren",
+        "brannik",
+        "oren",
+        "varo"
+      ],
+      "summary": "D4 07h26: teste coletivo de matriz reutilizável de peça de ligação; Brannik descreve, Miren mede, Kael registra; Lucas observa, forma e estabiliza referência; brilho começa. Resultado pertence ao próximo macrolote.",
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "verification": "CONTROLLER_REVIEWED_GROUPED_CANDIDATE",
+      "scope": "LOCAL_SOURCE_ASSERTION_NOT_GLOBAL_CANON",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+        "blob_sha1": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+        "line_start": 11116,
+        "line_end": 11227,
+        "role": "Response",
+        "span_sha256_utf8": "a3d50cd652df59fc72945807c25d3853b943e10292f970fa92b8805824d5f008"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "start": 1680,
+      "end": 1684,
+      "role": "Prompt",
+      "span_sha256_utf8": "b91fb3bfc6ef98e982731aec4d36c3a6c730f8ae20f1a83ff8042f4aa3cfe60e",
+      "record_ids": [
+        "O8C-B2-001"
+      ],
+      "disposition": "REVIEWED_GROUPED_NOT_EXHAUSTIVE",
+      "review_scope": "Visible source text; planning prefaces and timestamps not asserted as story events"
+    },
+    {
+      "start": 1685,
+      "end": 2175,
+      "role": "Response",
+      "span_sha256_utf8": "dcec76111083ac3184719c60b1e65a55b5e1832ee91a59af9e992f41a3fcfda0",
+      "record_ids": [
+        "O8C-B2-002",
+        "O8C-B2-003",
+        "O8C-B2-004",
+        "O8C-B2-005",
+        "O8C-B2-006",
+        "O8C-B2-007",
+        "O8C-B2-008",
+        "O8C-B2-009"
+      ],
+      "disposition": "REVIEWED_GROUPED_NOT_EXHAUSTIVE",
+      "review_scope": "Visible source text; planning prefaces and timestamps not asserted as story events"
+    },
+    {
+      "start": 2176,
+      "end": 2180,
+      "role": "Prompt",
+      "span_sha256_utf8": "68b10fd857010024224544f916cbf21f9382cd7a750962cba06ea0c866a7fbe2",
+      "record_ids": [
+        "O8C-B2-010"
+      ],
+      "disposition": "REVIEWED_GROUPED_NOT_EXHAUSTIVE",
+      "review_scope": "Visible source text; planning prefaces and timestamps not asserted as story events"
+    },
+    {
+      "start": 2181,
+      "end": 2857,
+      "role": "Response",
+      "span_sha256_utf8": "b1310a1a9b29b302b8a7c12dc234a5ef743863361ff3093bfc5c3dbdfc5893cb",
+      "record_ids": [
+        "O8C-B2-011",
+        "O8C-B2-012",
+        "O8C-B2-013",
+        "O8C-B2-014",
+        "O8C-B2-015",
+        "O8C-B2-016",
+        "O8C-B2-017",
+        "O8C-B2-018",
+        "O8C-B2-019",
+        "O8C-B2-020"
+      ],
+      "disposition": "REVIEWED_GROUPED_NOT_EXHAUSTIVE",
+      "review_scope": "Visible source text; planning prefaces and timestamps not asserted as story events"
+    },
+    {
+      "start": 2858,
+      "end": 2862,
+      "role": "Prompt",
+      "span_sha256_utf8": "d3bc88cb979294482e4492599257ce6869f54ac725b9123df70a956c8a33f4bb",
+      "record_ids": [
+        "O8C-B2-021"
+      ],
+      "disposition": "REVIEWED_GROUPED_NOT_EXHAUSTIVE",
+      "review_scope": "Visible source text; planning prefaces and timestamps not asserted as story events"
+    },
+    {
+      "start": 2863,
+      "end": 3628,
+      "role": "Response",
+      "span_sha256_utf8": "2beda72c3ff1456ab6f8b557b9232d40abe74f50bf73475d5f709cb5ed20059b",
+      "record_ids": [
+        "O8C-B2-022",
+        "O8C-B2-023",
+        "O8C-B2-024",
+        "O8C-B2-025",
+        "O8C-B2-026",
+        "O8C-B2-027",
+        "O8C-B2-028",
+        "O8C-B2-029"
+      ],
+      "disposition": "REVIEWED_GROUPED_NOT_EXHAUSTIVE",
+      "review_scope": "Visible source text; planning prefaces and timestamps not asserted as story events"
+    },
+    {
+      "start": 3629,
+      "end": 3645,
+      "role": "Prompt",
+      "span_sha256_utf8": "7d31c764729a5bd595d4f8d929d163e8386fffad6f59cc2fc09a8f484a302a0f",
+      "record_ids": [
+        "O8C-B2-030"
+      ],
+      "disposition": "REVIEWED_GROUPED_NOT_EXHAUSTIVE",
+      "review_scope": "Visible source text; planning prefaces and timestamps not asserted as story events"
+    },
+    {
+      "start": 3646,
+      "end": 4497,
+      "role": "Response",
+      "span_sha256_utf8": "82fa53f9bdfb4a9e6cd2de9aef63594a5150931f656f9b10fbd30c9b1a0cabe5",
+      "record_ids": [
+        "O8C-B2-031",
+        "O8C-B2-032",
+        "O8C-B2-033",
+        "O8C-B2-034",
+        "O8C-B2-035",
+        "O8C-B2-036",
+        "O8C-B2-037",
+        "O8C-B2-038",
+        "O8C-B2-039",
+        "O8C-B2-040"
+      ],
+      "disposition": "REVIEWED_GROUPED_NOT_EXHAUSTIVE",
+      "review_scope": "Visible source text; planning prefaces and timestamps not asserted as story events"
+    },
+    {
+      "start": 4498,
+      "end": 4502,
+      "role": "Prompt",
+      "span_sha256_utf8": "f058e89ad03ad88afaafcae5572ef0f12983ce9f6cd05ffc6e0cc5c113c09bd0",
+      "record_ids": [
+        "O8C-B2-041"
+      ],
+      "disposition": "REVIEWED_GROUPED_NOT_EXHAUSTIVE",
+      "review_scope": "Visible source text; planning prefaces and timestamps not asserted as story events"
+    },
+    {
+      "start": 4503,
+      "end": 5330,
+      "role": "Response",
+      "span_sha256_utf8": "c05454f3088559e423cd4d37c8a4152aac8d99b2a24a0703391f5dfc386730f7",
+      "record_ids": [
+        "O8C-B2-042",
+        "O8C-B2-043",
+        "O8C-B2-044",
+        "O8C-B2-045",
+        "O8C-B2-046",
+        "O8C-B2-047",
+        "O8C-B2-048",
+        "O8C-B2-049",
+        "O8C-B2-050"
+      ],
+      "disposition": "REVIEWED_GROUPED_NOT_EXHAUSTIVE",
+      "review_scope": "Visible source text; planning prefaces and timestamps not asserted as story events"
+    },
+    {
+      "start": 5331,
+      "end": 5335,
+      "role": "Prompt",
+      "span_sha256_utf8": "d2c018b20aaf00549aa2f2824c13c99b3a21aad0f11942b8816c1c1426bcabaa",
+      "record_ids": [
+        "O8C-B2-051"
+      ],
+      "disposition": "REVIEWED_GROUPED_NOT_EXHAUSTIVE",
+      "review_scope": "Visible source text; planning prefaces and timestamps not asserted as story events"
+    },
+    {
+      "start": 5336,
+      "end": 6130,
+      "role": "Response",
+      "span_sha256_utf8": "71fa664e476ac0b00131b8acc3125c9e06fa5a95f4fea1c30278aca0c7d732c8",
+      "record_ids": [
+        "O8C-B2-052",
+        "O8C-B2-053",
+        "O8C-B2-054",
+        "O8C-B2-055",
+        "O8C-B2-056",
+        "O8C-B2-057",
+        "O8C-B2-058",
+        "O8C-B2-059",
+        "O8C-B2-060"
+      ],
+      "disposition": "REVIEWED_GROUPED_NOT_EXHAUSTIVE",
+      "review_scope": "Visible source text; planning prefaces and timestamps not asserted as story events"
+    },
+    {
+      "start": 6131,
+      "end": 6137,
+      "role": "Prompt",
+      "span_sha256_utf8": "f496248a3f3a4365c9d7f88c2ccbb54255e8d458dabe1bd520df8796da2e0874",
+      "record_ids": [
+        "O8C-B2-061"
+      ],
+      "disposition": "REVIEWED_GROUPED_NOT_EXHAUSTIVE",
+      "review_scope": "Visible source text; planning prefaces and timestamps not asserted as story events"
+    },
+    {
+      "start": 6138,
+      "end": 6874,
+      "role": "Response",
+      "span_sha256_utf8": "780697c20645e18266dd4c60007578c6d178051d96586d1f02bf04f31f17ab3d",
+      "record_ids": [
+        "O8C-B2-062",
+        "O8C-B2-063",
+        "O8C-B2-064",
+        "O8C-B2-065",
+        "O8C-B2-066",
+        "O8C-B2-067",
+        "O8C-B2-068",
+        "O8C-B2-069",
+        "O8C-B2-070"
+      ],
+      "disposition": "REVIEWED_GROUPED_NOT_EXHAUSTIVE",
+      "review_scope": "Visible source text; planning prefaces and timestamps not asserted as story events"
+    },
+    {
+      "start": 6875,
+      "end": 6887,
+      "role": "Prompt",
+      "span_sha256_utf8": "5bef6f31ea91aeaace3d10b4ee76bb9875d364496a18c4d3910d62253cdc0c82",
+      "record_ids": [
+        "O8C-B2-071"
+      ],
+      "disposition": "REVIEWED_GROUPED_NOT_EXHAUSTIVE",
+      "review_scope": "Visible source text; planning prefaces and timestamps not asserted as story events"
+    },
+    {
+      "start": 6888,
+      "end": 7621,
+      "role": "Response",
+      "span_sha256_utf8": "9bc1b49d473714b421fdcfda3a9bcfb6883d5a8f5e29ecd317cd7eca228ec73e",
+      "record_ids": [
+        "O8C-B2-072",
+        "O8C-B2-073",
+        "O8C-B2-074",
+        "O8C-B2-075",
+        "O8C-B2-076",
+        "O8C-B2-077",
+        "O8C-B2-078",
+        "O8C-B2-079",
+        "O8C-B2-080",
+        "O8C-B2-081"
+      ],
+      "disposition": "REVIEWED_GROUPED_NOT_EXHAUSTIVE",
+      "review_scope": "Visible source text; planning prefaces and timestamps not asserted as story events"
+    },
+    {
+      "start": 7622,
+      "end": 7632,
+      "role": "Prompt",
+      "span_sha256_utf8": "e9c80ca8afc99b01db374d6d1772b8f649f347c85630703a17e3741a4271a2c2",
+      "record_ids": [
+        "O8C-B2-082"
+      ],
+      "disposition": "REVIEWED_GROUPED_NOT_EXHAUSTIVE",
+      "review_scope": "Visible source text; planning prefaces and timestamps not asserted as story events"
+    },
+    {
+      "start": 7633,
+      "end": 8546,
+      "role": "Response",
+      "span_sha256_utf8": "a8670d81656dc4596263d9538ba2c95c571904603d56388272fb4c004f5e232c",
+      "record_ids": [
+        "O8C-B2-083",
+        "O8C-B2-084",
+        "O8C-B2-085",
+        "O8C-B2-086",
+        "O8C-B2-087",
+        "O8C-B2-088",
+        "O8C-B2-089",
+        "O8C-B2-090",
+        "O8C-B2-091",
+        "O8C-B2-092",
+        "O8C-B2-093",
+        "O8C-B2-094"
+      ],
+      "disposition": "REVIEWED_GROUPED_NOT_EXHAUSTIVE",
+      "review_scope": "Visible source text; planning prefaces and timestamps not asserted as story events"
+    },
+    {
+      "start": 8547,
+      "end": 8551,
+      "role": "Prompt",
+      "span_sha256_utf8": "d1e27e974b9a32284a2c08d203ff3dbbd483867bbd9fa6d4b60436eaa1b471f9",
+      "record_ids": [
+        "O8C-B2-095"
+      ],
+      "disposition": "REVIEWED_GROUPED_NOT_EXHAUSTIVE",
+      "review_scope": "Visible source text; planning prefaces and timestamps not asserted as story events"
+    },
+    {
+      "start": 8552,
+      "end": 8604,
+      "role": "Response",
+      "span_sha256_utf8": "d3d545db28bf7fd9ba444240cba6553af7e0fa76ac92e1562e1646b2ff8170fb",
+      "record_ids": [
+        "O8C-B2-096"
+      ],
+      "disposition": "REVIEWED_GROUPED_NOT_EXHAUSTIVE",
+      "review_scope": "Visible source text; planning prefaces and timestamps not asserted as story events"
+    },
+    {
+      "start": 8605,
+      "end": 8613,
+      "role": "Prompt",
+      "span_sha256_utf8": "a6acd2f8ff873babe747517c6882f8b15253589c698ba6bbb684c46bd352b534",
+      "record_ids": [
+        "O8C-B2-097"
+      ],
+      "disposition": "REVIEWED_GROUPED_NOT_EXHAUSTIVE",
+      "review_scope": "Visible source text; planning prefaces and timestamps not asserted as story events"
+    },
+    {
+      "start": 8614,
+      "end": 9529,
+      "role": "Response",
+      "span_sha256_utf8": "026a0ea5711a233ef00605420f74a01b30a2472e5005a92ff124727a44a59577",
+      "record_ids": [
+        "O8C-B2-098",
+        "O8C-B2-099",
+        "O8C-B2-100",
+        "O8C-B2-101",
+        "O8C-B2-102",
+        "O8C-B2-103",
+        "O8C-B2-104",
+        "O8C-B2-105"
+      ],
+      "disposition": "REVIEWED_GROUPED_NOT_EXHAUSTIVE",
+      "review_scope": "Visible source text; planning prefaces and timestamps not asserted as story events"
+    },
+    {
+      "start": 9530,
+      "end": 9540,
+      "role": "Prompt",
+      "span_sha256_utf8": "071519a2632342de584de625b1e1f91180dd6c1eeee44645d5a43746885404cc",
+      "record_ids": [
+        "O8C-B2-106"
+      ],
+      "disposition": "REVIEWED_GROUPED_NOT_EXHAUSTIVE",
+      "review_scope": "Visible source text; planning prefaces and timestamps not asserted as story events"
+    },
+    {
+      "start": 9541,
+      "end": 10618,
+      "role": "Response",
+      "span_sha256_utf8": "160d56d4f9f7c7bf4b7bf8d5effaf3e2a09fc0209cb112b1ea146c61e596fff2",
+      "record_ids": [
+        "O8C-B2-107",
+        "O8C-B2-108",
+        "O8C-B2-109",
+        "O8C-B2-110",
+        "O8C-B2-111",
+        "O8C-B2-112",
+        "O8C-B2-113",
+        "O8C-B2-114",
+        "O8C-B2-115",
+        "O8C-B2-116",
+        "O8C-B2-117",
+        "O8C-B2-118",
+        "O8C-B2-119"
+      ],
+      "disposition": "REVIEWED_GROUPED_NOT_EXHAUSTIVE",
+      "review_scope": "Visible source text; planning prefaces and timestamps not asserted as story events"
+    },
+    {
+      "start": 10619,
+      "end": 10627,
+      "role": "Prompt",
+      "span_sha256_utf8": "6da13dc333f8b8fcdf6d59de3dec672dd08be521e42b1fa958807daf658ccd56",
+      "record_ids": [
+        "O8C-B2-120"
+      ],
+      "disposition": "REVIEWED_GROUPED_NOT_EXHAUSTIVE",
+      "review_scope": "Visible source text; planning prefaces and timestamps not asserted as story events"
+    },
+    {
+      "start": 10628,
+      "end": 11227,
+      "role": "Response",
+      "span_sha256_utf8": "b707fa0ba6a515770f95c5a047017446f392f7b96038d9506c6064ec71e2447f",
+      "record_ids": [
+        "O8C-B2-121",
+        "O8C-B2-122",
+        "O8C-B2-123",
+        "O8C-B2-124",
+        "O8C-B2-125"
+      ],
+      "disposition": "REVIEWED_TO_MACRO_CUTOFF_OPEN_RESPONSE",
+      "review_scope": "Visible source text; planning prefaces and timestamps not asserted as story events"
+    }
+  ],
+  "entity_links": [
+    {
+      "label": "arvendell",
+      "registry_id": "arvendell",
+      "disposition": "EXISTING_ID_CANDIDATE_LINK"
+    },
+    {
+      "label": "bandeira-cinzenta",
+      "registry_id": "bandeira-cinzenta",
+      "disposition": "EXISTING_ID_CANDIDATE_LINK"
+    },
+    {
+      "label": "brannik",
+      "registry_id": "brannik",
+      "disposition": "EXISTING_ID_CANDIDATE_LINK"
+    },
+    {
+      "label": "conjurador-pedra-azul",
+      "registry_id": null,
+      "disposition": "UNRESOLVED_LOCAL_LABEL"
+    },
+    {
+      "label": "durghan",
+      "registry_id": null,
+      "disposition": "UNRESOLVED_LOCAL_LABEL"
+    },
+    {
+      "label": "edran",
+      "registry_id": "edran",
+      "disposition": "EXISTING_ID_CANDIDATE_LINK"
+    },
+    {
+      "label": "elyan",
+      "registry_id": null,
+      "disposition": "UNRESOLVED_LOCAL_LABEL"
+    },
+    {
+      "label": "halvern-region",
+      "registry_id": "halvern-region",
+      "disposition": "EXISTING_ID_CANDIDATE_LINK"
+    },
+    {
+      "label": "kael",
+      "registry_id": "kael",
+      "disposition": "EXISTING_ID_CANDIDATE_LINK"
+    },
+    {
+      "label": "legiao",
+      "registry_id": "legiao",
+      "disposition": "EXISTING_ID_CANDIDATE_LINK"
+    },
+    {
+      "label": "lucas",
+      "registry_id": "lucas",
+      "disposition": "EXISTING_ID_CANDIDATE_LINK"
+    },
+    {
+      "label": "lysa",
+      "registry_id": "lysa",
+      "disposition": "EXISTING_ID_CANDIDATE_LINK"
+    },
+    {
+      "label": "miren",
+      "registry_id": "miren",
+      "disposition": "EXISTING_ID_CANDIDATE_LINK"
+    },
+    {
+      "label": "oren",
+      "registry_id": null,
+      "disposition": "UNRESOLVED_LOCAL_LABEL"
+    },
+    {
+      "label": "seron",
+      "registry_id": "seron",
+      "disposition": "EXISTING_ID_CANDIDATE_LINK"
+    },
+    {
+      "label": "sistema",
+      "registry_id": "sistema",
+      "disposition": "EXISTING_ID_CANDIDATE_LINK"
+    },
+    {
+      "label": "tarek",
+      "registry_id": null,
+      "disposition": "UNRESOLVED_LOCAL_LABEL"
+    },
+    {
+      "label": "thalor",
+      "registry_id": "thalor",
+      "disposition": "EXISTING_ID_CANDIDATE_LINK"
+    },
+    {
+      "label": "tres-arcos",
+      "registry_id": "tres-arcos",
+      "disposition": "EXISTING_ID_CANDIDATE_LINK"
+    },
+    {
+      "label": "unidade-veu",
+      "registry_id": null,
+      "disposition": "UNRESOLVED_LOCAL_LABEL"
+    },
+    {
+      "label": "varo",
+      "registry_id": "varo",
+      "disposition": "EXISTING_ID_CANDIDATE_LINK"
+    }
+  ],
+  "reconciliations": [
+    {
+      "labels": [
+        "mensageiro-cavaleiro-sem-nome",
+        "edran"
+      ],
+      "existing_id": "edran",
+      "evidence": "O8C-B2-004",
+      "status": "IDENTITY_LINK_CANDIDATE"
+    },
+    {
+      "labels": [
+        "chefe-orc-sem-nome",
+        "durghan"
+      ],
+      "existing_id": null,
+      "evidence": "O8C-B2-012",
+      "status": "LOCAL_IDENTITY_RESOLVED_REGISTRY_PENDING"
+    },
+    {
+      "labels": [
+        "vale-sem-nome",
+        "arvendell"
+      ],
+      "existing_id": "arvendell",
+      "evidence": "O8C-B2-005",
+      "status": "IDENTITY_LINK_CANDIDATE"
+    },
+    {
+      "labels": [
+        "ruinas-norte-sem-id",
+        "tres-arcos"
+      ],
+      "existing_id": "tres-arcos",
+      "evidence": "O8C-B2-073",
+      "status": "IDENTITY_LINK_CANDIDATE"
+    },
+    {
+      "labels": [
+        "cativo-desaparecido",
+        "elyan"
+      ],
+      "existing_id": null,
+      "evidence": "O8C-B2-034",
+      "status": "LOCAL_IDENTITY_RESOLVED_REGISTRY_PENDING"
+    },
+    {
+      "labels": [
+        "mulher-resgatada",
+        "lysa"
+      ],
+      "existing_id": "lysa",
+      "evidence": "O8C-B2-084",
+      "status": "IDENTITY_LINK_CANDIDATE"
+    },
+    {
+      "labels": [
+        "anao-resgatado",
+        "brannik"
+      ],
+      "existing_id": "brannik",
+      "evidence": "O8C-B2-069",
+      "status": "IDENTITY_LINK_CANDIDATE"
+    }
+  ],
+  "causal_links": [
+    {
+      "from": "O8C-B2-004",
+      "to": "O8C-B2-016",
+      "kind": "SAME_IDENTITY_CANDIDATE",
+      "scope": "CANDIDATE_RELATION_NOT_CANON"
+    },
+    {
+      "from": "O8C-B2-012",
+      "to": "O8C-B2-036",
+      "kind": "IDENTITY_TO_RELEASE",
+      "scope": "CANDIDATE_RELATION_NOT_CANON"
+    },
+    {
+      "from": "O8C-B2-007",
+      "to": "O8C-B2-034",
+      "kind": "CAPTIVE_NAME_LATER_IDENTIFIED",
+      "scope": "CANDIDATE_RELATION_NOT_CANON"
+    },
+    {
+      "from": "O8C-B2-034",
+      "to": "O8C-B2-049",
+      "kind": "IDENTIFICATION_TO_VISUAL_CONFIRMATION",
+      "scope": "CANDIDATE_RELATION_NOT_CANON"
+    },
+    {
+      "from": "O8C-B2-049",
+      "to": "O8C-B2-055",
+      "kind": "VISUAL_CONFIRMATION_TO_RESCUE",
+      "scope": "CANDIDATE_RELATION_NOT_CANON"
+    },
+    {
+      "from": "O8C-B2-055",
+      "to": "O8C-B2-058",
+      "kind": "RESCUE_TO_UPDATED_HEADCOUNT",
+      "scope": "CANDIDATE_RELATION_NOT_CANON"
+    },
+    {
+      "from": "O8C-B2-055",
+      "to": "O8C-B2-069",
+      "kind": "RESCUED_DWARF_LATER_IDENTIFIED",
+      "scope": "CANDIDATE_RELATION_NOT_CANON"
+    },
+    {
+      "from": "O8C-B2-055",
+      "to": "O8C-B2-084",
+      "kind": "RESCUED_WOMAN_LATER_IDENTIFIED",
+      "scope": "CANDIDATE_RELATION_NOT_CANON"
+    },
+    {
+      "from": "O8C-B2-018",
+      "to": "O8C-B2-032",
+      "kind": "OFFER_TO_ACCEPTANCE",
+      "scope": "CANDIDATE_RELATION_NOT_CANON"
+    },
+    {
+      "from": "O8C-B2-098",
+      "to": "O8C-B2-105",
+      "kind": "REQUEST_FIVE_GRANTED_THREE",
+      "scope": "CANDIDATE_RELATION_NOT_CANON"
+    },
+    {
+      "from": "O8C-B2-025",
+      "to": "O8C-B2-056",
+      "kind": "DEVICE_TEST_TO_LOSS",
+      "scope": "CANDIDATE_RELATION_NOT_CANON"
+    },
+    {
+      "from": "O8C-B2-037",
+      "to": "O8C-B2-064",
+      "kind": "PERCEPTION_TO_CONTROLLED_TEST",
+      "scope": "CANDIDATE_RELATION_NOT_CANON"
+    },
+    {
+      "from": "O8C-B2-073",
+      "to": "O8C-B2-090",
+      "kind": "PLACE_REPORT_TO_VISUAL_OBSERVATION",
+      "scope": "CANDIDATE_RELATION_NOT_CANON"
+    },
+    {
+      "from": "O8C-B2-090",
+      "to": "O8C-B2-102",
+      "kind": "RESIDENTS_TO_PERSONAL_VISIT",
+      "scope": "CANDIDATE_RELATION_NOT_CANON"
+    },
+    {
+      "from": "O8C-B2-102",
+      "to": "O8C-B2-108",
+      "kind": "IDENTITY_TO_CONDITIONAL_COOPERATION",
+      "scope": "CANDIDATE_RELATION_NOT_CANON"
+    },
+    {
+      "from": "O8C-B2-099",
+      "to": "O8C-B2-116",
+      "kind": "ANCHOR_AND_LINK_HYPOTHESIS_NOT_PROVEN_CAUSAL",
+      "scope": "CANDIDATE_RELATION_NOT_CANON"
+    },
+    {
+      "from": "O8C-B2-110",
+      "to": "O8C-B2-111",
+      "kind": "EXPERIMENT_TO_SYSTEM_RECORD",
+      "scope": "CANDIDATE_RELATION_NOT_CANON"
+    },
+    {
+      "from": "O8C-B2-111",
+      "to": "O8C-B2-125",
+      "kind": "REFERENCE_TO_NEW_EXPERIMENT",
+      "scope": "CANDIDATE_RELATION_NOT_CANON"
+    },
+    {
+      "from": "O8C-B2-120",
+      "to": "O8C-B2-121",
+      "kind": "AUTHOR_DIRECTION_TO_PLAN",
+      "scope": "CANDIDATE_RELATION_NOT_CANON"
+    }
+  ],
+  "duplicate_review_groups": [
+    {
+      "members": [
+        "O8C-B2-008",
+        "O8C-B2-020",
+        "O8C-B2-040"
+      ],
+      "disposition": "REPEATED_STATE_REPORTS_NOT_NEW_EVENTS",
+      "key": "299-localizados-um-cativo",
+      "preserve_all": true
+    },
+    {
+      "members": [
+        "O8C-B2-058",
+        "O8C-B2-070",
+        "O8C-B2-092",
+        "O8C-B2-118"
+      ],
+      "disposition": "REPEATED_STATE_REPORTS_NOT_NEW_EVENTS",
+      "key": "300-vivos-confirmados-ou-ultimo-estado",
+      "preserve_all": true
+    },
+    {
+      "members": [
+        "O8C-B2-019",
+        "O8C-B2-065",
+        "O8C-B2-089",
+        "O8C-B2-123"
+      ],
+      "disposition": "REPEATED_OBSERVATIONS_NOT_IDENTICAL_EVENTS",
+      "key": "armadura-recuperacao-e-incerteza",
+      "preserve_all": true
+    }
+  ],
+  "issues": [
+    {
+      "id": "B2-ISSUE-1",
+      "status": "OPEN_VARIANT",
+      "evidence": "O8C-B2-042",
+      "detail": "Alternate response preface conflicts in time/strength/confirmation with main narrative. Kept separate; no global adjudication."
+    },
+    {
+      "id": "B2-ISSUE-2",
+      "status": "OPEN_CHAPTER_NUMBERING",
+      "detail": "Chapter 5 and 13 labels appear at previous response ending and subsequent opening; role boundaries authoritative; chapter titles not silently normalized."
+    },
+    {
+      "id": "B2-ISSUE-3",
+      "status": "OPEN_BOUNDARY",
+      "evidence": "O8C-B2-125",
+      "detail": "Macro ends during D4 experiment. Lookahead confirms continuation; do not include next macro's outcome here."
+    }
+  ],
+  "axis_coverage": {
+    "assessed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "represented": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "scope": "grouped controller annotations; not exhaustive claim recall"
+  },
+  "semantic_review_scope": "All visible text in listed intervals read and grouped; no exhaustive or independent certification",
+  "semantic_certification": false,
+  "independent_review": false,
+  "canon_changed": false,
+  "coverage_complete_for_controller_pass": true,
+  "open_response_tail": true,
+  "next_line": 11228
+}
