@@ -1,0 +1,45 @@
+{
+  "schema": "OMEGA_HYBRID_MACRO_0031_PARTIAL_CHECKPOINT_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "release_blob": "1ea9d60a58ecf00a368f0e33631164fc7cbe0051",
+  "previous_checkpoint_blob": "9965a1ce58bf6bcc24411c82e83e91927022b515",
+  "macro": 31,
+  "book": "IV",
+  "chapter": 3,
+  "day": 368,
+  "status": "MACRO_0031_STARTED_NATIVE_READBACK_PENDING",
+  "receipt_path": "audit/omega008-c/turbo-v3/partial-macro-0031-01.json",
+  "receipt_sha256": "cbefc378d6bc54641218fb83bb0dc31318043ad406be7bddb85d58fb40b0354a",
+  "range": [
+    279002,
+    279313
+  ],
+  "macro_range": [
+    279002,
+    289144
+  ],
+  "lines_recovered_this_macro": 312,
+  "macro_total_lines": 10143,
+  "records": 3,
+  "macro_records": 3,
+  "staging_records": 2222,
+  "official_records": 1656,
+  "book_counts": {
+    "I": 490,
+    "II": 746,
+    "III": 886,
+    "IV": 100
+  },
+  "completed_macros": 30,
+  "macro_complete": false,
+  "next_line": 279314,
+  "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+  "source_order": true,
+  "recovery_gate": "AUTHORIZED_STAGING_ONLY",
+  "production_gate": "HOLD",
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "semantic_certification": false,
+  "independent_review": false
+}
