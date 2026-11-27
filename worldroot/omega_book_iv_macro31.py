@@ -189,7 +189,35 @@ def verify_macro33_close(root,archive):
     require(cp["production_gate"]=="HOLD" and not cp["canon_changed"] and not cp["official_checkpoint_changed"] and not cp["semantic_certification"],"gate")
     return {**result,"status":"PASS_NATIVE_MACRO_0033_COMPLETE","lines":10229,"records":80,"coverage":80,"header_metadata_lines":8,"new_records":51,"new_lines":7816,"axes_represented":sorted({i for x in allr for i in x["axes"]}),"authority_counts":dict(Counter(x["authority"] for x in allr)),"visibility_counts":dict(Counter(x["visibility"] for x in allr)),"next_line":10230,"macro_complete":True,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False}
 
+def verify_macro34_start(root,archive):
+    from collections import Counter
+    root=Path(root); archive=Path(archive)
+    prior=verify_macro33_close(root,archive)
+    c0=read(root,ROOT+"recovery-checkpoint-0033-validated.json","c4d65f3c8e3ed1d08cc05b3d5f15cc9b05ef2f6a")
+    require(prior["macro_complete"] and c0["native_validation"]=="PASS" and c0["next_line"]==10230,"macro33 validated gate")
+    cp=read(root,ROOT+"recovery-checkpoint-0034-partial-01.json","d7f48c9025c2d9a10ffe331ed4190a727d4cb165")
+    r=read(root,cp["receipt_path"],"7e81adcd636b4d35428d7074541cd036e67ac9ca",cp["receipt_sha256"])
+    q=read(root,"audit/omega008-c/bulk-macro-queue.json","e5a5f9e358d20acf8559f6313c2da24b64665f48")["macros"]
+    m=q[33]
+    require(r["previous_checkpoint_blob"]==cp["previous_checkpoint_blob"]=="c4d65f3c8e3ed1d08cc05b3d5f15cc9b05ef2f6a" and r["release_blob"]==cp["release_blob"]==c0["release_blob"],"checkpoint chain")
+    require(c0["next_macro"]==m and r["previous_macro_id"]==q[32]["id"] and r["official_unit_seal"]==m["unit_seal"],"queue chain")
+    source=SourceCache(archive,read(archive,"history/sources/MANIFEST.json","2048141263f66151230119af9b0ee51796ac846b")).get(m["source"])
+    p1=read(root,ROOT+"partial-macro-0033-01.json")
+    p2=read(root,c0["receipt_path"],c0["receipt_blob"],c0["receipt_sha256"])
+    result=validate_receipt(r,m,source,r["project"],ARCHIVE,previous_ids=[x["id"] for x in p1["records"]+p2["records"]],expected_range=[10230,12413])
+    allr=r["records"]
+    require(result["lines"]==2184 and result["records"]==result["coverage"]==cp["records"]==20,"counts")
+    require(all(x["book"]=="IV" and x["chapter_hint"]==10 and x["day"] in (388,389) for x in allr),"scope")
+    require(all((x["evidence"]["role"]=="Prompt")==(x["authority"]=="AUTHOR_DIRECTION_NOT_EVENT") for x in allr),"author separation")
+    require(all(x["authority"]=="METADATA_NOT_EVENT" for x in allr if x["type"]=="metadata"),"metadata separation")
+    require(all(x["authority"]=="NARRATOR_PROPOSED_BRANCH_NOT_EVENT" for x in allr if x["type"]=="transition_options"),"teaser separation")
+    require(all(x["visibility"]=="RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION" for x in allr if x["type"]=="knowledge"),"private knowledge separation")
+    require(source[0][11202]=="## Prompt:" and source[0][11207]=="## Response:" and source[0][12413]=="" and source[0][12414]=="— Ainda.","literal anchors")
+    require(cp["next_line"]==r["next_line"]==12414 and cp["staging_records"]==c0["staging_records"]+20==2463 and cp["book_counts"]["IV"]==341 and cp["completed_macros"]==33,"checkpoint")
+    require(cp["production_gate"]=="HOLD" and not cp["canon_changed"] and not cp["official_checkpoint_changed"] and not cp["semantic_certification"] and not cp["macro_complete"],"gate")
+    return {**result,"status":"PASS_NATIVE_MACRO_0034_PARTIAL","authority_counts":dict(Counter(x["authority"] for x in allr)),"visibility_counts":dict(Counter(x["visibility"] for x in allr)),"next_line":12414,"macro_complete":False,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False}
+
 def main():
     p=argparse.ArgumentParser();p.add_argument("--engine-root",default=".");p.add_argument("--archive-root",required=True)
-    a=p.parse_args();print(json.dumps(verify_macro33_close(a.engine_root,a.archive_root),sort_keys=True))
+    a=p.parse_args();print(json.dumps(verify_macro34_start(a.engine_root,a.archive_root),sort_keys=True))
 if __name__=="__main__":main()
