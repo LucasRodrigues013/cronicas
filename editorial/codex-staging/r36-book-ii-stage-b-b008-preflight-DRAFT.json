@@ -1,0 +1,74 @@
+{
+  "schema": "worldroot-r36-b008-preflight-v1",
+  "status": "STRUCTURAL_PREFLIGHT_PASS_NATIVE_PENDING",
+  "base_checkpoint": "a84c799f43088e82e0af033aa1b387d82c9934fc",
+  "base_archive": "96012cea0072e60cb401186a1bdc901fb11bb85b",
+  "engine": "46c40e18d3e0f4fbcafc025ae9d08b91ca6e6417",
+  "review_branch": "review/r36-b008-native-gate",
+  "review_parent": "7c95177bbe1c67c5762fcf11cf0ffdbafff86dc7",
+  "inventory_blob": "3c3d3f6fd26f63a90a08d00f9291b68c8e4a2d55",
+  "ledger_blob": "96ebb393cb2e95975cb81948e78519c46da7b9f0",
+  "source": {
+    "name": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+    "full_sha256_expected": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+    "read_source_parts": [
+      "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+      "3449845d3854daa62af01333e4efd1a2c615b6a4",
+      "9b12c9ff6a0a2546d6153d4aaf2f1cdb49cede9b",
+      "94dfd877863a539b1a904cc23c4dd6540dd0426d"
+    ],
+    "exact_anchor_hashes_verified": 48,
+    "exact_context_comparisons": 432,
+    "whole_source_hash_verification": "PENDING_NATIVE"
+  },
+  "coverage": {
+    "ids": [
+      521,
+      568
+    ],
+    "groups": 41,
+    "records": 48,
+    "source_lines": [
+      105779,
+      135469
+    ],
+    "proposed_fields": 18,
+    "entities": 10,
+    "additional": 8,
+    "profiles": 192,
+    "total_fields": 5923,
+    "untargeted_fields": 5905,
+    "protected_fields_not_targeted": 153,
+    "private_scope_fields_not_targeted": 40,
+    "expected_names": 96,
+    "expected_links": 25
+  },
+  "delta_hashes": {
+    "rows": "11d205a21163a387e9eb033694091122bb524b4848a6f3e848a0fe75f70a55e8",
+    "reviews": "58325a3dc919867feb2b845d60b2f415214af96cddbfc4b27fffb81c8b6f9d83",
+    "additional": "2daee347783fc22d8d0d6b05681c6da6b7d71f7790bff7cff7385ba95b85c36a"
+  },
+  "public_free_only_execution": {
+    "status": "NATIVE_GATE_PENDING",
+    "runner": "ubuntu-24.04",
+    "repository_public": true,
+    "permissions": "contents: read",
+    "artifact_upload": false,
+    "paid_services_authorized": false,
+    "previous_workflow_proven_run": 45915067003
+  },
+  "official_cursor_unchanged": {
+    "id": 521,
+    "line": 105779
+  },
+  "next_after_approved_incorporation": {
+    "id": null,
+    "line": null,
+    "stage": "C_PENDING"
+  },
+  "approval_required": true,
+  "production_hold": true,
+  "canon_changed": false,
+  "production_activated": false,
+  "semantic_certification": false
+}
