@@ -1,0 +1,36 @@
+name: WORLDROOT second live preparation trial
+on:
+  pull_request:
+    paths:
+      - 'audit/run_omega_second_trial.py'
+      - '.github/workflows/omega-second-trial.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  fresh-preparation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: '9dd632fb0bcd84dfce5b631013fdc67d7492ac5d'
+          path: archive
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Fresh retrieval and immutable preparation before writing
+        run: PYTHONPATH=. python -u audit/run_omega_second_trial.py --archive-root archive --output "$RUNNER_TEMP/second-trial"
+      - name: Verify original archive checkout unchanged
+        if: always()
+        run: test -z "$(git -C archive status --porcelain)"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: omega-second-trial-preparation
+          path: ${{ runner.temp }}/second-trial/
+          retention-days: 7
+          if-no-files-found: error
