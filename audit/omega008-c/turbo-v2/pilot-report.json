@@ -1,0 +1,213 @@
+{
+  "schema": "OMEGA_TURBO_V2_PILOT_REPORT",
+  "base": "97679a36b0a9cff33ee231c844c018e49658dc8f",
+  "branch": "review/omega-turbo-v2",
+  "official_checkpoint_sha256": "1b92a806c9415fb70b95e1d5ed1ee0670585c5c2bb75b4a4d400ea5a182e6c5c",
+  "official_macros": 22,
+  "official_candidates": 1656,
+  "official_cursor": 206662,
+  "archive_head": {
+    "day": 579,
+    "sequence": 50,
+    "blob": "9b4e09682fc3148511d59e73ec56fdcda4e396e5",
+    "pending": "LVI-C09-PII-D580-AUTHOR-SOURCE"
+  },
+  "structural_preparation": {
+    "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+    "source_parts": 6,
+    "logical_source_loads": 1,
+    "lines": 20520,
+    "windows": 75,
+    "elapsed_ms": 9054,
+    "scope": "Connector-side real preparation; not semantic runtime; Python parallel preparation unit-tested only",
+    "macros": [
+      {
+        "macro": "0023",
+        "range": [
+          206662,
+          216932
+        ],
+        "lines": 10271,
+        "windows": 37,
+        "nonblank": 5175,
+        "window_seal": "b8eb4b3ccfa9689398f4358cd9911c7d96027dc10bb69fc6dc483ffe803567f9"
+      },
+      {
+        "macro": "0024",
+        "range": [
+          216933,
+          227181
+        ],
+        "lines": 10249,
+        "windows": 38,
+        "nonblank": 5166,
+        "window_seal": "18d99ee3b2ffc81ac6b43c51dcf7c96e0b8a870a222dc7c51bb6921c9e7ccfad"
+      }
+    ]
+  },
+  "pilot": {
+    "records": 122,
+    "macro23": 56,
+    "macro24": 66,
+    "sections": 12,
+    "checkpoint_sha256": "84d675182d40b392ab5579c04426f34ad7dddee2e3ebef9d27686d6f89a3e7f2",
+    "cursor_staged": 227182,
+    "day": 251,
+    "chapter": 25,
+    "official_promotion": false,
+    "semantic_extraction": "Sequential grouped controller extraction, not demonstrated parallel semantic workers",
+    "semantic_duration_ms": null
+  },
+  "retrospective": {
+    "files": 24,
+    "macros": 22,
+    "records": 1656,
+    "anchors_verified": 1656,
+    "coverage_spans_verified": 216,
+    "axes": [
+      {
+        "axis": 1,
+        "records": 882
+      },
+      {
+        "axis": 2,
+        "records": 988
+      },
+      {
+        "axis": 3,
+        "records": 970
+      },
+      {
+        "axis": 4,
+        "records": 292
+      },
+      {
+        "axis": 5,
+        "records": 168
+      },
+      {
+        "axis": 6,
+        "records": 111
+      },
+      {
+        "axis": 7,
+        "records": 1182
+      },
+      {
+        "axis": 8,
+        "records": 626
+      },
+      {
+        "axis": 9,
+        "records": 677
+      },
+      {
+        "axis": 10,
+        "records": 521
+      },
+      {
+        "axis": 11,
+        "records": 660
+      },
+      {
+        "axis": 12,
+        "records": 479
+      },
+      {
+        "axis": 13,
+        "records": 533
+      },
+      {
+        "axis": 14,
+        "records": 427
+      },
+      {
+        "axis": 15,
+        "records": 629
+      },
+      {
+        "axis": 16,
+        "records": 543
+      },
+      {
+        "axis": 17,
+        "records": 362
+      },
+      {
+        "axis": 18,
+        "records": 317
+      },
+      {
+        "axis": 19,
+        "records": 956
+      },
+      {
+        "axis": 20,
+        "records": 526
+      },
+      {
+        "axis": 21,
+        "records": 164
+      },
+      {
+        "axis": 22,
+        "records": 104
+      },
+      {
+        "axis": 23,
+        "records": 437
+      },
+      {
+        "axis": 24,
+        "records": 400
+      },
+      {
+        "axis": 25,
+        "records": 1300
+      },
+      {
+        "axis": 26,
+        "records": 463
+      },
+      {
+        "axis": 27,
+        "records": 942
+      },
+      {
+        "axis": 28,
+        "records": 276
+      },
+      {
+        "axis": 29,
+        "records": 127
+      },
+      {
+        "axis": 30,
+        "records": 250
+      }
+    ],
+    "audit_parts": [
+      "6b1907d77afe48a068c80c968410a77df82016dc11c783bb3ff282fc5668f73c",
+      "65924cae8acb87747d70e592196318e9a7fd80dba9249e79e5cacc1b493fea93",
+      "ac2d5117067778d642cf2aacc5ac4018d22c18d56f43d9fe13a28c043db0057e"
+    ],
+    "axis_overlay_sha256": "5a883030acb941dabe954de965408b43f3c24238271c726fd9e585aafe1ca861",
+    "legacy_authority_alerts": 6,
+    "axis_inconsistencies": 2,
+    "correction_records": 4,
+    "scope": "Structural and metadata axis audit, targeted semantic correction; not exhaustive semantic review"
+  },
+  "tests": {
+    "local_unittest_methods": 6,
+    "negative_subcases": 8,
+    "full_native_suite": "NOT_RUN_NO_REPOSITORY_CHECKOUT",
+    "python_real_corpus": "NOT_RUN",
+    "independent_precision": null,
+    "independent_recall": null
+  },
+  "release_gate": "HOLD_OFFICIAL_CHECKPOINT_PENDING_INDEPENDENT_SEMANTIC_HOMOLOGATION_AND_NATIVE_REGRESSION",
+  "canon_changed": false,
+  "independent_review": false,
+  "semantic_certification": false,
+  "paid_services_added": 0
+}
