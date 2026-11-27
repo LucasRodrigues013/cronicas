@@ -1,0 +1,208 @@
+name: R36 B008 approved incorporation and Stage C entry (Free-Only)
+# Public standard runner only; no paid storage, external services, or publication.
+on:
+  push:
+    branches: [review/r36-b008-native-gate]
+    paths:
+      - '.github/workflows/r36-b008-approved-incorporation.yml'
+permissions:
+  contents: write
+concurrency:
+  group: r36-b008-approved-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  verify:
+    if: github.event.repository.private == false && github.ref == 'refs/heads/review/r36-b008-native-gate'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          path: audit
+          persist-credentials: false
+      - name: Resolve and validate pinned request
+        id: pins
+        run: |
+          python - <<'PY'
+          import json, os, re
+          from pathlib import Path
+          d=json.loads(Path("audit/editorial/codex-staging/r36-native-review-request.json").read_text())
+          assert d["mode"]=="READ_ONLY_CANDIDATE" and d["production_hold"] is True
+          with open(os.environ["GITHUB_OUTPUT"],"a") as f:
+              for k in ("engine","archive","checkpoint"):
+                  assert re.fullmatch(r"[0-9a-f]{40}",d[k])
+                  f.write(k+"="+d[k]+"\n")
+          PY
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ steps.pins.outputs.engine }}
+          path: engine
+          persist-credentials: false
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ steps.pins.outputs.archive }}
+          path: archive
+          persist-credentials: false
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: ${{ steps.pins.outputs.checkpoint }}
+          path: checkpoint
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Record Python and SQLite runtime
+        run: python -c 'import sys, sqlite3; print(sys.version); print("SQLite", sqlite3.sqlite_version)'
+      - name: Native candidate load_overlay, exact sources, nominal rebind, protected diff and replay
+        env:
+          PYTHONPATH: engine
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: python audit/tools/r36_incremental_historical_review.py audit archive engine checkpoint candidate
+      - name: Full pinned R36 regression suite
+        working-directory: engine
+        env:
+          PYTHONDONTWRITEBYTECODE: '1'
+        shell: bash
+        run: |
+          set -o pipefail
+          timeout --signal=TERM --kill-after=5s 120s python -u -m unittest discover -s tests -v 2>&1 | tee ../regression.log
+      - name: Verify read-only checkouts
+        run: |
+          test -z "$(git -C audit status --porcelain)"
+          test -z "$(git -C archive status --porcelain)"
+          test -z "$(git -C checkpoint status --porcelain)"
+          test -z "$(git -C engine status --porcelain)"
+      - name: Verify candidate hashes and report read-only evidence
+        shell: bash
+        run: |
+          python - <<'PY'
+          import hashlib, json, os, re, subprocess
+          from pathlib import Path
+          req=json.loads(Path('audit/editorial/codex-staging/r36-native-review-request.json').read_bytes())
+          native=Path('candidate/native-receipt.json')
+          review=Path('candidate/review-evidence.json')
+          d=json.loads(native.read_bytes())
+          assert d['status']=='NATIVE_CANDIDATE_VALIDATED_NOT_APPROVED'
+          assert d['approval_required'] is True and d['canon_changed'] is False and d['production_activated'] is False
+          assert d['base_archive']==req['archive'] and d['base_checkpoint']==req['checkpoint'] and d['engine']==req['engine']
+          assert d['changed_fields']==req['expected_changes'] and d['replay_restore'] is True
+          assert len(d['candidate_blobs'])==4
+          files=[native,review,Path('regression.log')]
+          for path, expected in sorted(d['candidate_blobs'].items()):
+              p=Path('candidate/registries')/Path(path).name
+              assert subprocess.check_output(['git','hash-object','--no-filters',str(p)],text=True).strip()==expected
+              files.append(p)
+          log=Path('regression.log').read_text()
+          m=re.search(r'^Ran (\d+) tests? in ([\d.]+)s$',log,re.M)
+          assert m and int(m[1])>0 and log.strip().endswith('OK')
+          receipt={'status':'PASS_CANDIDATE_ONLY','tests':int(m[1]),'seconds':float(m[2]),'native_receipt':d,'sha256':{str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in files},'production_hold':True,'approval_required':True,'artifact_upload':False}
+          line=json.dumps(receipt,ensure_ascii=False,sort_keys=True)
+          print('R36_PUBLIC_GATE_RECEIPT '+line)
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as f:
+              f.write('## R36 B008 — validated candidate only\n\n```json\n'+line+'\n```\n')
+          PY
+      - name: Incorporate exact approved B008 and start Stage C structural audit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import base64, copy, hashlib, json, os, re, shutil, subprocess
+          from pathlib import Path
+          def need(x,msg):
+              if not x: raise RuntimeError(msg)
+          def read(p): return json.loads(Path(p).read_bytes())
+          def sha(p): return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+          def dump(p,d):
+              p=Path(p);p.parent.mkdir(parents=True,exist_ok=True)
+              p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          def git(root,*args,auth=False):
+              env=os.environ.copy()
+              if auth:
+                  env.update(GIT_CONFIG_COUNT='1',GIT_CONFIG_KEY_0='http.https://github.com/.extraheader',GIT_CONFIG_VALUE_0='AUTHORIZATION: basic '+base64.b64encode(('x-access-token:'+os.environ['GH_TOKEN']).encode()).decode())
+              return subprocess.check_output(['git','-C',str(root),*args],env=env,text=True).strip()
+          def remote(root,branch):
+              return git(root,'ls-remote','--exit-code','origin','refs/heads/'+branch,auth=True).split()[0]
+          a=Path('audit'); ar=Path('archive'); ck=Path('checkpoint'); ca=Path('candidate')
+          st=Path('editorial/codex-staging')
+          approval_path=st/'r36-book-ii-stage-b-b008-author-approval.json'
+          preflight_path=st/'r36-book-ii-stage-b-b008-preflight-DRAFT.json'
+          ap=read(a/approval_path); pf=read(a/preflight_path)
+          need(git(a,'hash-object',str((a/preflight_path).resolve()))=='120c3f1ea1c68e6d2404cb3d3221093c1dde4f35','Preflight blob')
+          need(ap['status']=='AUTHOR_APPROVED_EXACT_B008' and ap['approved_fields']==18 and ap['production_hold'] and ap['free_only'] and not ap['production_activated'] and not ap['canon_changed'],'Author scope')
+          approval_commit='ebfe9ef2d6a6604c2bf05d7583707308d7c767bd'
+          need(git(a,'rev-parse','HEAD:'+str(approval_path))==git(a,'hash-object',str((a/approval_path).resolve())),'Approval bytes')
+          expected=pf['public_free_only_execution']['result']['receipt']; native=read(ca/'native-receipt.json')
+          need(native==expected['native_receipt'] and native['changed_fields']==18 and native['next']['stage']=='C_PENDING','Native receipt')
+          need(ap['native_receipt_sha256']==expected['sha256']['candidate/native-receipt.json'],'Approval receipt binding')
+          for name,h in expected['sha256'].items():
+              if name!='regression.log': need(sha(name)==h,'SHA256 mismatch: '+name)
+          need(re.search(r'^Ran 706 tests? in [\d.]+s$',Path('regression.log').read_text(),re.M) and Path('regression.log').read_text().strip().endswith('OK'),'Regression mismatch')
+          base=ap['base_archive']; previous=ap['base_checkpoint']
+          need(git(ar,'rev-parse','HEAD')==base and git(ck,'rev-parse','HEAD')==previous,'Pinned base')
+          need(remote(ar,'story-archive')==base and remote(ck,'audit/r36-semantic-reconciliation')==previous,'Remote heads stale')
+          headblob='9b4e09682fc3148511d59e73ec56fdcda4e396e5'
+          need(git(ar,'rev-parse','HEAD:canon/HEAD.json')==headblob,'Narrative HEAD')
+          cp=read(ck/st/'r36-book-ii-stage-b-checkpoint-007.json')
+          need(cp['counts']['editorially_reviewed']==213 and cp['counts']['groups_reviewed']==162 and cp['counts']['field_updates_cumulative']==159 and cp['next']['batch']==8 and cp['reservations']['production_hold'],'Previous checkpoint')
+          files={}
+          for path,blob in native['candidate_blobs'].items():
+              p=ca/'registries'/Path(path).name
+              need(git(ar,'hash-object','--no-filters',str(p.resolve()))==blob,'Git blob mismatch')
+              files[path]={'sha256':sha(p),'git_blob':blob}
+              shutil.copyfile(p,ar/path)
+          for root in (ar,ck):
+              git(root,'config','user.name','github-actions[bot]')
+              git(root,'config','user.email','41898282+github-actions[bot]@users.noreply.github.com')
+          git(ar,'add','--',*files)
+          need(set(git(ar,'diff','--cached','--name-only').splitlines())==set(files),'Unexpected archive diff')
+          git(ar,'commit','-m','R36 B008: exact approved registry incorporation; production hold [skip ci]')
+          ac=git(ar,'rev-parse','HEAD')
+          need(git(ar,'rev-parse','HEAD^')==base,'Archive parent')
+          for p,d in files.items(): need(git(ar,'rev-parse','HEAD:'+p)==d['git_blob'] and sha(ar/p)==d['sha256'],'Committed bytes')
+          need(git(ar,'rev-parse','HEAD:canon/HEAD.json')==headblob,'Canon changed')
+          git(ar,'push','origin',ac+':refs/heads/story-archive',auth=True)
+          need(remote(ar,'story-archive')==ac,'Archive readback')
+          git(ar,'fetch','--no-tags','origin','refs/heads/story-archive',auth=True)
+          need(git(ar,'rev-parse','FETCH_HEAD')==ac,'Archive fetched SHA')
+          for p,d in files.items(): need(git(ar,'rev-parse','FETCH_HEAD:'+p)==d['git_blob'],'Remote blob')
+          need(git(ar,'rev-parse','FETCH_HEAD:canon/HEAD.json')==headblob,'Remote narrative head')
+          evdir=st/'r36-book-ii-stage-b-b008-transfer-evidence'
+          (ck/evdir).mkdir(parents=True,exist_ok=True)
+          for p in [ca/'native-receipt.json',ca/'review-evidence.json',Path('regression.log')]:
+              shutil.copyfile(p,ck/evdir/p.name)
+          shutil.copyfile(a/approval_path,ck/evdir/'author-approval.json')
+          evidence={p.name:sha(p) for p in (ck/evdir).iterdir()}
+          run=int(os.environ['GITHUB_RUN_ID'])
+          audit={'schema':'worldroot-r36-controlled-incorporation-v1','status':'EXACT_APPROVED_CANDIDATE_ARCHIVED','approval_commit':approval_commit,'validated_run':ap['validated_run'],'transfer_run':run,'base_archive':base,'archive_commit':ac,'base_checkpoint':previous,'engine':native['engine'],'files':files,'approved_fields':18,'unchanged_fields':5905,'protected_fields_unchanged':153,'private_scope_fields_unchanged':40,'profiles':192,'names':96,'links':25,'records':48,'groups':41,'contexts':432,'regression':{'tests':706,'status':'OK'},'evidence':{'path':str(evdir),'sha256':evidence,'original_hashes':expected['sha256'],'regression_log_note':'Regenerated log timing may differ; exact native/review and four candidate SHA256 hashes match original.'},'replay':{'records':1256,'events':0,'integrity_check':'ok','idempotent':True,'restore_matches':True},'narrative_head_blob':headblob,'remote_readback_verified':True,'production_hold':True,'canon_changed':False,'production_activated':False,'semantic_certification':False,'free_only':{'runner':'ubuntu-24.04','repository_public':True,'artifact_upload':False,'paid_services_authorized':False}}
+          audit_path=st/'r36-book-ii-stage-b-b008-incorporation-audit.json'
+          dump(ck/audit_path,audit)
+          cp.update(batch=8,status='STAGE_B_EDITORIAL_RECONCILIATION_COMPLETE_C_PENDING',previous_checkpoint=previous)
+          cp['review']={'commit':ap['validated_commit'],'author_approval_commit':approval_commit,'author_approval_preflight_path':str(preflight_path),'author_approval_preflight_blob':ap['preflight_blob'],'approved_ids':[521,568],'native_receipt_sha256':ap['native_receipt_sha256'],'validation_run':ap['validated_run'],'transfer_run':run}
+          cp['archive']={'commit':ac,'parent':base,'manifest_blob':files['editorial/registries/r35-living-overlay-manifest.json']['git_blob'],'character_overlay':files['editorial/registries/r35-natural-completion-d579-v14.json']['git_blob'],'world_overlay':files['editorial/registries/r35-world-completion-d579-v12.json']['git_blob'],'naming_overlay':files['editorial/registries/r35-legacy-name-reconciliation-v10.json']['git_blob'],'files':files,'remote_readback_verified':True}
+          cp['counts'].update(editorially_reviewed=261,remaining=0,groups_reviewed=203,fields_changed_this_batch=18,field_updates_cumulative=177,existing_entities_this_batch=10,additional_observations=8)
+          cp['verification'].update(context_comparisons=432,unchanged_fields=5905,incorporation_audit_path=str(audit_path),remote_git_commit=ac)
+          cp['next']={'ledger_id':None,'global_line':None,'stage':'C_PENDING','batch':None,'base_archive':ac}
+          cp.pop('next_packet',None)
+          cp['semantic_certification']=False
+          cp['stage_c']={'status':'STARTED_STRUCTURAL_ENTRY_ONLY','independent_certification_pending':True,'production_hold':True}
+          cp_path=st/'r36-book-ii-stage-b-checkpoint-008.json'
+          dump(ck/cp_path,cp)
+          # Stage C entry: closure inventory totals and immutable pins. No independent semantic certification.
+          inv=read(ck/st/'r36-book-ii-stage-a-inventory.json')
+          groups=inv['ledger']['groups']; ids=[i for g in groups for i in g['original_ids']]
+          need(len(ids)==261 and len(set(ids))==261 and len(groups)==203,'Book II inventory totals')
+          need(ids==list(range(ids[0],ids[-1]+1)) and ids[-1]==568,'Inventory gap')
+          need(cp['counts']['remaining']==0 and cp['counts']['independently_certified']==0,'Certification scope')
+          stage_c_path=st/'r36-book-ii-stage-c-entry.json'
+          dump(ck/stage_c_path,{'schema':'worldroot-r36-book-ii-stage-c-entry-v1','book':2,'stage':'C','status':'STARTED_STRUCTURAL_ENTRY_ONLY','stage_b_checkpoint_path':str(cp_path),'stage_b_checkpoint_sha256':sha(ck/cp_path),'archive_commit':ac,'engine':native['engine'],'inventory_blob':pf['inventory_blob'],'records':261,'groups':203,'cumulative_field_updates':177,'structural_checks':{'inventory_unique_contiguous':True,'archive_remote_readback':True,'candidate_hashes_match':True,'narrative_head_unchanged':True},'pending':['independent semantic review of all adjudications and historical observations','cross-batch continuity and identities, aliases, vetoes, knowledge scope and unresolved candidates','verify closure against original source and record independent certification or reservations'],'independently_certified':0,'semantic_certification':False,'production_hold':True,'production_activated':False,'canon_changed':False,'free_only':True})
+          need(remote(ck,'audit/r36-semantic-reconciliation')==previous,'Checkpoint branch moved')
+          git(ck,'add','--',str(evdir),str(audit_path),str(cp_path),str(stage_c_path))
+          git(ck,'commit','-m','R36 Book II: B008 final editorial checkpoint; initiate Stage C audit; hold production [skip ci]')
+          cc=git(ck,'rev-parse','HEAD')
+          git(ck,'push','origin',cc+':refs/heads/audit/r36-semantic-reconciliation',auth=True)
+          need(remote(ck,'audit/r36-semantic-reconciliation')==cc,'Checkpoint readback')
+          git(ck,'fetch','--no-tags','origin','refs/heads/audit/r36-semantic-reconciliation',auth=True)
+          need(git(ck,'rev-parse','FETCH_HEAD')==cc,'Checkpoint fetched SHA')
+          for p in [cp_path,audit_path,stage_c_path]: need(git(ck,'rev-parse','FETCH_HEAD:'+str(p))==git(ck,'hash-object',str((ck/p).resolve())),'Checkpoint remote blob')
+          print('R36_B008_INCORPORATION_RECEIPT '+json.dumps({'archive_commit':ac,'checkpoint_commit':cc,'hashes':files,'checkpoint_sha256':sha(ck/cp_path),'stage_c_sha256':sha(ck/stage_c_path),'stage_c':'STARTED_STRUCTURAL_ENTRY_ONLY','production_hold':True,'canon_changed':False,'semantic_certification':False,'readback':True},sort_keys=True))
+          PY
