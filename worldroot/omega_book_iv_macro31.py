@@ -644,7 +644,55 @@ def verify_book_iv_boundary(root,archive):
     require(all(x["production_gate"]=="HOLD" and not any(x[k] for k in ("canon_changed","official_checkpoint_changed","semantic_certification","independent_review","promotion")) for x in (cp1,cp2,review)),"gate")
     return {"status":"PASS_NATIVE_BOOK_IV_0042_COMPLETE","cycle_status":"PASS_STAGING_ONLY","book_status":"PASS_STAGING_ONLY","book_lines":lines,"book_records":len(ids),"cycle_lines":cycle_lines,"cycle_records":cycle_records,"session_lines":13563,"session_records":80,"macro41_lines":4628,"macro42_lines":8935,"metadata_lines":8,"axes":sorted(axes),"authority_counts":dict(authority),"visibility_counts":dict(visibility),"next_line":8936,"staging_records":2895,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False}
 
+
+def verify_book_v_opening(root,archive):
+    from collections import Counter
+    from hashlib import sha256
+    root=Path(root);archive=Path(archive)
+    previous=verify_book_iv_boundary(root,archive)
+    c0=read(root,ROOT+"recovery-checkpoint-0042-validated.json","a04302e6acea0af0f7da751f0efb03aeb23fdf0a")
+    boundary=read(root,c0["book_boundary_review_path"],"ac930832759e89e93e5ca801894267a0a6fb3a2e")
+    require(previous["book_status"]==boundary["status"]==c0["book_boundary_status"]=="PASS_STAGING_ONLY" and c0["native_validation"]=="PASS" and previous["staging_records"]==c0["staging_records"]==2895,"prior boundary gate")
+    q=read(root,"audit/omega008-c/bulk-macro-queue.json","e5a5f9e358d20acf8559f6313c2da24b64665f48")["macros"]
+    cache=SourceCache(archive,read(archive,"history/sources/MANIFEST.json","2048141263f66151230119af9b0ee51796ac846b"))
+    audit=read(root,ROOT+"book-V-opening-0043-0045-review-pending.json","73d26775a28261f4957f42bfe745f9f9aef36a62")
+    require(audit["previous_boundary_blob"]==c0["book_boundary_review_blob"] and [g["macro"] for g in audit["macros"]]==[43,44,45],"scope")
+    ids={x["id"] for g in boundary["macros"] for e in g["receipts"] for x in read(root,e["path"],e["blob"])["records"]}
+    require(len(ids)==773,"prior IDs")
+    prior_blob="a04302e6acea0af0f7da751f0efb03aeb23fdf0a";counts=Counter();vis=Counter();axes=set();total=0;records=0;metrics=[]
+    for g in audit["macros"]:
+        n=g["macro"];m=q[n-1];source=cache.get(m["source"])
+        cp=read(root,g["checkpoint"],g["checkpoint_blob"]);r=read(root,g["receipt"],g["blob"],cp["receipt_sha256"])
+        require(r["previous_checkpoint_blob"]==cp["previous_checkpoint_blob"]==prior_blob and r["release_blob"]==cp["release_blob"]==c0["release_blob"] and r["previous_macro_id"]==m["previous_macro"] and r["official_unit_seal"]==m["unit_seal"] and cp["next_macro"]==q[n],"chain")
+        require(cp["macro_range"]==r["macro_range"]==[m["start"],m["end"]] and cp["native_validation"]=="PENDING" and cp["next_line"]==q[n]["start"],"geometry")
+        extra=0
+        if n==45:
+            md=read(root,cp["metadata_path"],cp["metadata_blob"]);require(md["range"]==[1,8] and md["source"]==m["source"] and md["source_sha256"]==source[3] and md["blob_sha1"]==source[2][0][2] and all(x=="Metadata" for x in source[1][:8]) and sha256("\n".join(source[0][:8]).encode()).hexdigest()==md["span_sha256_utf8"] and not md["promotion"],"metadata header")
+            require(r["range"]==[9,m["end"]] and m["book_hint"]=="V_OR_VI_UNRESOLVED" and source[0][327]=="LIVRO V — ALÉM DAS ÚLTIMAS ESTRADAS" and "DIA ACUMULADO 442" in source[0][345],"book resolution")
+            extra=8
+        else:
+            require(r["range"]==[m["start"],m["end"]] and m["book_hint"]=="V","book scope")
+        result=validate_receipt(r,m,source,r["project"],ARCHIVE,previous_ids=ids,expected_range=r["range"])
+        require(result["lines"]+extra==g["lines"]==m["lines"] and result["records"]==g["records"]==cp["records"] and result["axes_represented"]==g["axes"],"metrics")
+        for x in r["records"]:
+            require(x["book"]=="V" and (x["evidence"]["role"]=="Prompt")==(x["authority"]=="AUTHOR_DIRECTION_NOT_EVENT"),"authority")
+            require(x["day"] is not None or x["authority"] in ("AUTHOR_DIRECTION_NOT_EVENT","METADATA_NOT_EVENT"),"editorial not event")
+            require(x["type"]!="reader_scene" or x["visibility"].startswith("READER_ONLY"),"reader isolation")
+            require(x["type"]!="knowledge" or x["visibility"].startswith("RESTRICTED"),"private isolation")
+            ids.add(x["id"]);counts[x["authority"]]+=1;vis[x["visibility"]]+=1
+        total+=g["lines"];records+=g["records"];axes.update(g["axes"]);prior_blob=g["checkpoint_blob"]
+        require(cp["staging_records"]==2895+records and cp["book_counts"]["V"]==records and cp["official_records"]==1656 and cp["production_gate"]=="HOLD" and not any(cp[k] for k in ("canon_changed","official_checkpoint_changed","semantic_certification","independent_review","promotion")),"staging")
+        metrics.append({"macro":n,"lines":g["lines"],"records":g["records"],"axes":g["axes"]})
+    for e in audit["findings"]:
+        s=cache.get(e["source"]);lo,hi=e["range"];require(not e["promotion"] and sha256("\n".join(s[0][lo-1:hi]).encode()).hexdigest()==e["sha256"],"finding anchor")
+    s3=cache.get(q[42]["source"])[0];s4=cache.get(q[44]["source"])[0]
+    require(s3[8935]=="## Prompt:" and s3[8981]=="LIVRO V" and s3[8983]=="ALÉM DAS ÚLTIMAS ESTRADAS" and s3[19016]=="## Prompt:","source boundaries")
+    require("geograficamente inútil" in s3[11909] and "Aethron terá poder real" in s3[20001] and "não tive acesso ao texto integral" in s3[20279],"hypothesis and editorial boundary")
+    require("Ele continuava em Thalor" in s4[4667] and "não significa que o arco antigo tenha sido consertado" in s4[6579] and "O acesso permanece em configuração preliminar" in s4[9449] and s4[10257].startswith("LUCAS — Amor"),"regression anchors")
+    require(total==audit["totals"]["lines"]==21609 and records==audit["totals"]["records"]==135 and len(ids)==773+records and audit["production_gate"]=="HOLD" and not any(audit[k] for k in ("canon_changed","official_checkpoint_changed","semantic_certification","independent_review","promotion")),"aggregate")
+    return {"status":"PASS_NATIVE_BOOK_V_0045_COMPLETE","prior_book_status":"PASS_STAGING_ONLY","source_transition_status":"PASS_STAGING_ONLY","macro_metrics":metrics,"session_lines":total,"session_records":records,"staging_records":2895+records,"book_v_records":records,"authority_counts":dict(counts),"visibility_counts":dict(vis),"axes":sorted(axes),"next_line":10259,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False}
+
 def main():
     p=argparse.ArgumentParser();p.add_argument("--engine-root",default=".");p.add_argument("--archive-root",required=True)
-    a=p.parse_args();print(json.dumps(verify_book_iv_boundary(a.engine_root,a.archive_root),sort_keys=True))
+    a=p.parse_args();print(json.dumps(verify_book_v_opening(a.engine_root,a.archive_root),sort_keys=True))
 if __name__=="__main__":main()
