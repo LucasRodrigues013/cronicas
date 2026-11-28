@@ -1,0 +1,224 @@
+{
+  "schema": "OMEGA_GLOBAL_P1_A3_NATIVE_EVIDENCE_V1",
+  "validated_commit": "a464af30e6e728be299e273552ee9e13e4dd950d",
+  "workflow_run": 46152098058,
+  "workflow_conclusion": "success",
+  "job_id": 141000742294,
+  "tests": [
+    20,
+    3,
+    15,
+    6
+  ],
+  "tests_total": 44,
+  "aggregate": {
+    "additional_children": 31,
+    "additional_compound_parents": 12,
+    "canon_changed": false,
+    "child_candidates": 269,
+    "child_controller": "ecd0e05812462a30a55393a4f0d98f0ceee5f3890f5106e94d7e8d7d88758ede",
+    "child_jobs": 92,
+    "child_manifest": [
+      {
+        "A": "0b51822dd5941c2352e5b581cb50f60547f586bac814fb64673ad0d59a5db81e",
+        "B": "d3dcd34f0ffcb35d0d4c15179f46fcf3d110896996a7908f51a3ab17484a1b7c",
+        "batch": 1,
+        "jobs": 6,
+        "targets": 10
+      },
+      {
+        "A": "6f4edb6366ef2a1dc6ddebb0250b00d9fc20b912e489a6f98550db6e12c24f6d",
+        "B": "86f4df99fe6fedb07b3ef8dbd1f1fbc0168be75a5705d4b66fd62072714f33ee",
+        "batch": 2,
+        "jobs": 6,
+        "targets": 11
+      },
+      {
+        "A": "04dabaf95ecf9661fa04a0a508ee5e72f8de443619a919e55e6b4d449fe9f71e",
+        "B": "8137aa63422f42562881cc4d6df272327009ca993b279264dd1fa59d5b1ed7aa",
+        "batch": 3,
+        "jobs": 6,
+        "targets": 11
+      },
+      {
+        "A": "83f6bd0dafb9ff8382eb3daa13970c73045c1aee27443f82a306577d75ef1d18",
+        "B": "de780063e47eaa1bcd32178fce2f9c91657761ae0651a80e64a0ecae89f6273f",
+        "batch": 4,
+        "jobs": 6,
+        "targets": 19
+      },
+      {
+        "A": "45526f1a19802ab67f48988ef6b4ee89bc2e52b180555507809529e93e10aff0",
+        "B": "d7d876bda784cbcd6f900aa7a5a718797a6c2c3148f9788e42d96102590c6378",
+        "batch": 5,
+        "jobs": 6,
+        "targets": 28
+      },
+      {
+        "A": "90c7958a75b21efe605553b36f2c8ff3b7605af67c5e450453bf506f2ac4208a",
+        "B": "0b2724634b5e599f8b6b31241fa7be6c34fa7815409fb690c727af3e0a098aef",
+        "batch": 6,
+        "jobs": 6,
+        "targets": 19
+      },
+      {
+        "A": "a8644cf8d80aa82a5dd149b879b36060a57a9fedeab07f4db6da32a27dfe0b09",
+        "B": "84c5a8660fc91c177827ac6935edace3d8df400d4e8ea3e2efc6b389bcce662c",
+        "batch": 7,
+        "jobs": 6,
+        "targets": 23
+      },
+      {
+        "A": "f966822f547b674fcafd9d5a1a6ebfc13456b49e88b6cd9fd109ba82ef250803",
+        "B": "b4390ab5708c589161e0371ad80d1a98f8332c8f06d829d49bc1297db03bd193",
+        "batch": 8,
+        "jobs": 6,
+        "targets": 17
+      },
+      {
+        "A": "cfe71c13a454468ecb7c5988ee4bb54fb38f9ca8edbcc273a982d270359f2178",
+        "B": "53aff6c57ab1c58af4e3f2a615935eb51a1681b8afa8b89ea4265167b594da70",
+        "batch": 9,
+        "jobs": 6,
+        "targets": 20
+      },
+      {
+        "A": "36b97f8854850a11c4bb0f6953687894ac613210a74513dfb8a5039e716a8c78",
+        "B": "487bd4a1d477fc54b77cffe4af0c00323d55994aaa4f6ac724a199a1c326e290",
+        "batch": 10,
+        "jobs": 6,
+        "targets": 25
+      },
+      {
+        "A": "7040a9faba7df5e34762921414088593bdaaff20c6e0390a7e205b5607b707ae",
+        "B": "f6cfd6d048c037720e71711bee968b9ccba3260d799ddedffae773a635600953",
+        "batch": 11,
+        "jobs": 6,
+        "targets": 13
+      },
+      {
+        "A": "cd88f081f44a17fed7710fa05d395b72a1f84d9d11aef2976d6963b7334988a2",
+        "B": "1da8e5ec4836860912100dfc31673d913308da7a7e6eccf0cee4a7eafb5e49b7",
+        "batch": 12,
+        "jobs": 6,
+        "targets": 17
+      },
+      {
+        "A": "01bf5b64aa4577422e6c1e89a91c23ca8099ee634f966ed24cf33842d873295e",
+        "B": "2fce581b3604d55f48e33fd021cad105bd9659e8bdbfa6b5319eaed927d1a2e1",
+        "batch": 13,
+        "jobs": 6,
+        "targets": 20
+      },
+      {
+        "A": "e4dd21b4629137c68f9b41fe06b70e4563edb484fdc9bbc3652539cfd0881759",
+        "B": "015e6a589ec069471af639803be6a4a2d05b81ed86e6f450d7508936ee08b926",
+        "batch": 14,
+        "jobs": 6,
+        "targets": 18
+      },
+      {
+        "A": "d448b02186530644bb5481499c1d82a546d60dbbe454d9b55a14512e30da0b75",
+        "B": "3d336b6ed1991bb9d3c928eee0429b1b2bbdeb207c66ee692aef0a50b66fda3d",
+        "batch": 15,
+        "jobs": 6,
+        "targets": 13
+      },
+      {
+        "A": "6fb37f232cd372de0eca54c7569cf0cf3c24f29d140bd45913ac86b6b6fa333a",
+        "B": "c8429d37e9e03ef8901c37e704759ea9e2a4a7a12f52e2aa9a1b030b7f3f7566",
+        "batch": 16,
+        "jobs": 2,
+        "targets": 5
+      }
+    ],
+    "child_modalities": {
+      "DRAFT": 7,
+      "HYPOTHESIS": 9,
+      "META": 32,
+      "NARRATED": 81,
+      "PLAN": 44,
+      "REPORT": 58,
+      "SUMMARY": 38
+    },
+    "child_packets": 32,
+    "child_pairs": 16,
+    "child_sha256": "6567a96d65e9a7531c6a3569be85fc7371efafa68469785cc45ed9a0cd960cc2",
+    "child_verdicts": {
+      "PARTIAL": 169,
+      "SUPPORTED": 81,
+      "UNKNOWN": 19
+    },
+    "expansion_batches": 117,
+    "expansion_plan_sha256": "c7d19098c864e87121c58a2cefa04825ed285782e38130f255effb159f60828a",
+    "expansion_routes": {
+      "AUTHORITY_NON_EVENT_REVIEW": 408,
+      "CRITICAL_SCOPE": 551,
+      "DEEP_SEMANTIC_REVIEW": 3603,
+      "STANDARD_SEMANTIC_REVIEW": 1,
+      "STRUCTURAL_METADATA": 299
+    },
+    "first_batch": {
+      "anchor_line_weight": 6542,
+      "batch": 1,
+      "count": 100,
+      "disposition": "PENDING_EDITORIAL_AND_SEMANTIC_REVIEW",
+      "first_line": 1683,
+      "ids_sha256": "af472139f429ee6939a31897f2dd86288bc140761d483beac1b206dd1eb765d5",
+      "last_line": 8988,
+      "macro": 2,
+      "oversize_single": false,
+      "routes": {
+        "AUTHORITY_NON_EVENT_REVIEW": 11,
+        "CRITICAL_SCOPE": 5,
+        "DEEP_SEMANTIC_REVIEW": 84
+      },
+      "source": "01_DIA_001_A_383_FONTE_LITERAL.txt"
+    },
+    "independent_review": false,
+    "inventory_sha256": "af78ceb90191dc0b204be3c21bc505e5011e7f94cd54f1cf8084f0632063cecc",
+    "leaf_review_candidates": 508,
+    "oversize_batches": 0,
+    "parent_targets": 304,
+    "prior_claims_sha256": "5ad98ac1caee57a345c54ca18b75045b4518c2b8b82355e7024afcd0c6da2373",
+    "prior_gap_sha256": "fd14709a1883ce0be099407261cc87d10b074403cdffca5966c6e4f2602644cb",
+    "prior_new_sha256": "d7dfaa07fa9b7129c5edd1b0a3aec64302c1f84ec73d74c74a503e8280f51553",
+    "prior_packets_preserved": 94,
+    "prior_supplemental_targets": 10,
+    "production_gate": "HOLD",
+    "registry_binding": "f2301e1723f4ba352f4c75ce5d4e1c3baecf7e7e5bd4779ecdc453bc68f05d30",
+    "remaining_groups": 4862,
+    "required_children": 238,
+    "required_compound_parents": 63,
+    "review_returns": 0,
+    "semantic_certification": false,
+    "status": "P1_A3_COMPOUND_CHILD_OVERLAY_PASS_INDEPENDENT_HOLD",
+    "total_candidate_ids": 583,
+    "typed_projection": false,
+    "unknown_child_values": 5,
+    "unknown_parent_values_preserved": 27
+  },
+  "logs_readback": true,
+  "previous_checkpoint_blob": "18a2886d8eb45ef65989218816bf8f40439595fc",
+  "previous_native_blob": "df0b4d1fee39f4725ddcf23dcfe25253ec16ab36",
+  "child_overlay_blob": "6e567b0750e4eec1ef7075202238b6f13be4cdda",
+  "additional_overlay_blob": "ae42c0cf4d1b581aedb0807114871f294ab353a7",
+  "prior_failure_history": [
+    46146612371,
+    46149776774,
+    46149830425
+  ],
+  "prior_blocked_runs": [
+    46149881927,
+    46149961206
+  ],
+  "prior_corrected_runs": [
+    46146630574,
+    46150096210
+  ],
+  "production_gate": "HOLD",
+  "semantic_certification": false,
+  "independent_review": false,
+  "promotion": false,
+  "canon_changed": false
+}
