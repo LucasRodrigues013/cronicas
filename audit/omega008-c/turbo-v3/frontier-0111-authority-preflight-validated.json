@@ -1,0 +1,32 @@
+{
+  "schema": "OMEGA_D574_AUTHORITY_PREFLIGHT_V1",
+  "status": "PASS_AUTHORITY_PREFLIGHT_ONLY",
+  "scope": "AUTHORITY_PREFLIGHT_ONLY_NO_0111_RECEIPT_OR_SEMANTIC_RECOVERY",
+  "episode": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+  "sequence": 45,
+  "previous_episode_id": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+  "closure_blob": "868c1cabe1905b32f8b295c3435ede69e44fa8b7",
+  "story_sha256": "d3a0c885eae310f11a5414c78817aeea0e758348610664a4062154aafe6da0b6",
+  "choice_sha256": "0e58c5cbe1c3da9471b98f1f4affe095f56abf485d6ef7f56a6e936af8226c63",
+  "pins": {
+    "choice": "bfa99b0d4496439d02048b9cdaebe288966855d7",
+    "immutable_manifest": "7bb13c1ea3326bc4c68faa2c2e340a19e21e3abc",
+    "source_proof": "8361c8987b329755fe46aacd1b4833e418c4bb71",
+    "reader_receipt": "4a2dffd80f0164134fdc045ad6c8c702d5824b18"
+  },
+  "source_proof_kind": "ASSISTANT_PREDELIVERY_EXACT_TEXT",
+  "ui_parity": "NOT_INDEPENDENTLY_VERIFIED",
+  "macro_0111_recovered": false,
+  "production_gate": "HOLD",
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "semantic_certification": false,
+  "independent_review": false,
+  "promotion": false,
+  "physical_readback": "PASS_NATIVE_HASH_ONLY_NO_PROSE_EXTRACTION",
+  "native_validation": "PASS",
+  "validated_commit": "85be884bfbdc8a830ec757e589496bd4dce7fd76",
+  "native_evidence_path": "audit/omega008-c/turbo-v3/cycle-0106-0110-native-evidence.json",
+  "native_evidence_blob": "f1ec2996bd8346b28bdecc62eac429260884de1c",
+  "pending_preflight_blob": "e7d04dcdf889c5b87db2b943da4dbec6fd431f50"
+}
