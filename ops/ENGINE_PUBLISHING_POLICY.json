@@ -5,7 +5,7 @@
   "approved_at": "2026-11-27",
   "policy_revision": "R36",
   "engine_code_branch": "main",
-  "engine_code_commit": "3b612087a112ec008e5622af3cd076d6fe79ddff",
+  "engine_code_commit": "d2513a9de30790d20aaf5eb830f56f80ac026632",
   "canonical_head_rule": "canon/HEAD.json is a historical narrative checkpoint, never a dumping ground for engine policy; update only after real next author choice and canonical validation.",
   "source_of_truth": "story-archive/episodes/<ID>/draft/narrativa_integral.md plus immutable manifest + inbox + review + reader_receipt",
   "before_new_episode": {
@@ -110,5 +110,31 @@
     "release_validation": "PUBLIC_CODE_CI_AND_CONFIG_READBACK; LIVE_NARRATIVE_REPLAY_NOT_CERTIFIED",
     "authorization_scope": "ENGINE_ONLY",
     "configuration_push_does_not_trigger_narrative_workflows": true
+  },
+  "r36_convergence": {
+    "mode": "CONTROLLED_EDITORIAL_ADVISORY",
+    "author_authorization": "USER_MESSAGE_2026-11-28: skip separate reviewer chats; internal semantic review and operational activation without canon change",
+    "engine_commit": "d2513a9de30790d20aaf5eb830f56f80ac026632",
+    "omega_export_commit": "9f7ef4adc1b73c576e8d5394de1c19772cb592e7",
+    "baseline_archive": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+    "pack_sha256": "cccd3800494dbfa669a5113ef868e084106d97708a32393ff50c689a6d3254e5",
+    "validation_workflow": 46157741217,
+    "validation_job": 141018002547,
+    "internal_regression_tests": 846,
+    "scope": "Additive director-only source locators in new genuine R33 preparations; original reviewed evidence remains mandatory; not character knowledge or typed historical facts.",
+    "independent_certification": false,
+    "level7_formal_certification": false,
+    "canon_promotion": false,
+    "automatic_adaptation": false,
+    "rollback": {
+      "engine_pin": "3b612087a112ec008e5622af3cd076d6fe79ddff",
+      "main_before": "1b063d05c1acaa86b2f237f987804af59dbeccd6",
+      "archive_config_before": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+      "policy_blob": "13fb4d1cfe0e2d8cf86d53c39f040f56646dc4f4"
+    },
+    "activation": "AUTHORIZED_CONTROLLED_OPERATIONAL_RELEASE",
+    "semantic_reconciliation": "PARTIAL_INTERNAL_REVIEW; NO AUTOMATIC FIELD PROMOTION",
+    "editorial_policy_version": 22,
+    "editorial_rules": 130
   }
 }
