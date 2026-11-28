@@ -8,3 +8,5 @@ Resumo consolidado de decisões e críticas da conversa de 28/11/2026. Não é t
 - Solicitação atual: refinamento exclusivamente do prólogo, PDF integral A5 para aprovação, guardar progresso, dados, documentos e decisões em seção separada do GitHub. Não avançar capítulo 1 sem aprovação. V0.5 é candidata à leitura, não aprovada.
 
 Os personagens fictícios, ambiente urbano não nomeado e detalhes da guerra são expansões editoriais. Aprovação do livro nunca implica aprovação no RPG.
+
+- Após V0.5: autor aprovou o texto integral do prólogo e rejeitou a apresentação visual anterior; solicitou projeto gráfico de primeira qualidade. Edição Premium entregue sem mudança de prosa, identidade visual sujeita a avaliação. Texto liberado para próxima unidade mediante pedido; capítulo 1 não alterado nesta entrega.
