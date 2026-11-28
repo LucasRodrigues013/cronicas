@@ -1,5 +1,5 @@
 # Crônicas Literary Edition — Central editorial
-**Estado atual: prólogo V0.5, capa ilustrada e capítulo 1 V0.5 aprovados pelo autor. 11.302 palavras; capítulo 2 é a próxima unidade.**
+**Estado atual: prólogo e capítulo 1 aprovados; capítulo 2 V0.1 entregue para revisão. 15.462 palavras produzidas, 11.302 aprovadas.**
 
 Esta seção existe exclusivamente na branch `literary-edition/book-i`. É uma adaptação literária separada, não uma fonte canônica do RPG. Não abrir PR para main ou story-archive. Fontes de RPG somente leitura. A rotina do RPG e Eidoryn são independentes.
 
@@ -50,3 +50,8 @@ Leia esta central, o contrato (a diretriz V0.4 prevalece), o feedback, a versão
 - [Registro de aprovação autoral e versão congelada](book-i/evidence/01-capitulo-1-approval-v0.5.json).
 - A aprovação expressa prevalece nesta unidade sobre o bloqueio anterior; a estimativa manual de 9,4 permanece registrada, sem certificação de 9,9. Meta futura de 9,9 preservada.
 - Próxima unidade proposta: capítulo 2 — O preço da primeira vitória. Recuperar desdobramentos do primeiro dia, sem repetir a batalha. Não redigir nesta entrega.
+
+## Capítulo 2 — O preço da primeira vitória
+- [Manuscrito V0.1](book-i/drafts/02-capitulo-2-v0.1.md), 4.160 palavras.
+- [Auditoria, hashes e avaliação](book-i/evidence/02-capitulo-2-review-v0.1.json). PDF acumulado 70 páginas, individual 19 páginas, entregue em conversa; binários não arquivados nesta execução.
+- Aguardando aprovação; meta 9,9 não certificada. Próxima unidade proposta: O conselho dos trezentos, somente após aprovação.
