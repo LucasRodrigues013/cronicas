@@ -77,6 +77,13 @@ def build(request,rows,overlay=None,db=None):
             if ident not in direct and ident not in neighbor:neighbor.append(ident)
         selected=direct+neighbor[:MAX_RECORDS-len(direct)]
         result.append({"scene":number,"direct_ids":direct,"records":[compact(by_id[i],db) for i in selected],"ambiguities":ambiguous,"deferred_link_count":max(0,len(direct)+len(neighbor)-MAX_RECORDS),"needs_targeted_recovery":not direct or bool(ambiguous),"source_status":"CLOSED_GRAPH_AND_EDITORIAL_CANDIDATES" if db is not None else "EDITORIAL_REGISTRY_ONLY_GRAPH_NOT_READY"})
+    # Optional experimental editorial recovery, never a character fact or public state.
+    # Existing preparations without the pinned FC layer retain their exact contract.
+    if db is not None and isinstance(request.get("head"),dict):
+        from .omega_final_runtime import preparation_locators
+        for s in result:
+            history=preparation_locators(db,request["head"],s["direct_ids"])
+            if history is not None:s["historical_editorial_recovery"]=history
     return {"schema":SCHEMA,"scenes":result,"max_records_per_scene":MAX_RECORDS,"max_events_per_record":MAX_EVENTS,"policy":"FOCAL_SCENE_ONLY; EXPLICIT_IDS_FIRST; PRIVATE_KNOWLEDGE_EXCLUDED; ESCALATE_MISSING_FACTS","semantic_certification":False}
 def pending_fronts(db,day,limit=12):
     """Advisory opportunities, never silently create or advance fictional events."""
