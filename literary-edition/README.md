@@ -1,0 +1,26 @@
+# Crônicas Literary Edition — Central editorial
+**Estado atual: prólogo V0.5 aguardando aprovação autoral.** Nenhum capítulo subsequente autorizado a avançar neste momento.
+
+Esta seção existe exclusivamente na branch `literary-edition/book-i`. É uma adaptação literária separada, não uma fonte canônica do RPG. Não abrir PR para main ou story-archive. Fontes de RPG somente leitura. A rotina do RPG e Eidoryn são independentes.
+
+## Leitura e decisão atual
+- [PDF V0.5 integral](book-i/reading-editions/Cronicas_O_Despertar_do_Criador_Prologo_v0.5.pdf) — 27 páginas A5, 4.827 palavras no manuscrito; mesmo binário entregue no chat, identificado por blob 4e8abd0c667ec166a3a07b3d61fac35a250789c6.
+- [Manuscrito V0.5](book-i/drafts/00-prologo-v0.5.md)
+- [Auditoria V0.5](book-i/evidence/00-prologo-review-v0.5.json)
+- [Contrato editorial](EDITORIAL_CONTRACT.md)
+- [Prompt permanente](PROMPT_EDITORIAL.md)
+- [Histórico de feedback](AUTHOR_FEEDBACK.md)
+
+## Histórico preservado
+| Versão | Manuscrito | Evidência |
+|---|---|---|
+| V0.1 | [Prólogo e abertura](book-i/drafts/00-prologo-e-abertura-v0.1.md) | [Fonte](book-i/evidence/00-source-packet-v0.1.json) |
+| V0.2 | [Prólogo](book-i/drafts/00-prologo-v0.2.md) | [Revisão](book-i/evidence/00-01-review-v0.2.json) |
+| V0.3 | [Prólogo](book-i/drafts/00-prologo-v0.3.md) | [Revisão](book-i/evidence/00-prologo-review-v0.3.json) |
+| V0.4 | [Prólogo](book-i/drafts/00-prologo-v0.4.md) | [Revisão](book-i/evidence/00-prologo-review-v0.4.json) |
+| V0.5 | [Prólogo](book-i/drafts/00-prologo-v0.5.md) | [Revisão](book-i/evidence/00-prologo-review-v0.5.json) |
+
+[Capítulo 1 V0.2](book-i/drafts/01-capitulo-1-v0.2.md) — rascunho legado preservado, congelado até aprovação explícita do prólogo. Os PDFs antigos V0.3/V0.4 foram entregues no chat; binários anteriores não foram arquivados aqui. A partir de V0.5, arquivar a edição PDF exata, texto, auditoria e aprovação por versão.
+
+## Retomada
+Leia esta central, o contrato (a diretriz V0.4 prevalece), o feedback, a versão V0.5 e seu parecer. Se houver aprovação explícita, registre a decisão vinculada aos blobs exatos; só então prepare o capítulo 1. Se houver críticas, criar nova versão do prólogo e repetir a revisão. Não alterar o RPG, main, story-archive ou seus HEAD/RESUME. 
