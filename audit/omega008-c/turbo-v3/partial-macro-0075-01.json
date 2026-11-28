@@ -1,0 +1,818 @@
+{
+  "schema": "OMEGA_TURBO_V3_PARTIAL_MACRO_EDITORIAL_RECEIPT_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "macro_id": "30525232d1a564c44d927876b71eea850f85760cc03fd1adb453a3455846e668",
+  "previous_macro_id": "41f14324b6add6c089bee8fa322842412876940174309359162a9df77a21d15c",
+  "official_unit_seal": "d4ad9895166595c64c61e61b6f8900afdb6ef3adf9a16c2063052acff764a80e",
+  "macro_range": [
+    1,
+    1730
+  ],
+  "range": [
+    1,
+    1730
+  ],
+  "source": "LV-C16-PV-D537-AUTHOR-SOURCE",
+  "source_sha256": "d00f5da3afa324507cc1178cb5d7a844e8eb501be2e0787192fe44e0afc2ec42",
+  "source_provenance": {
+    "kind": "CLOSED_PROSE",
+    "episode_id": "LV-C16-PV-D537-AUTHOR-SOURCE",
+    "sequence": 9,
+    "previous_episode_id": "LV-C16-PIV-D537-AUTHOR-SOURCE",
+    "previous_head_sha256": "37b3c08644a6e3a02f4467a10b5272420ec5e010f1eca0e305995c413435f722",
+    "closure_blob": "ac12a6336ba876d1ed42f11bec855d6245f1d0b5",
+    "draft_blob": "323c023f9c186e98b86b1473c57886da628904b7",
+    "immutable_manifest_blob": "a6b8a3755e75917f0d705f22a128e760aa4fb964",
+    "narrative_blob": "b75bb7d5769cc3a6e78ab6790674d7c9015710b8",
+    "full_story_sha256": "34d2fa4ce224182f3bc407b17d6ad89cc7e6a239e58fa97cecd72d46c874a01b",
+    "prose_sha256": "d00f5da3afa324507cc1178cb5d7a844e8eb501be2e0787192fe44e0afc2ec42",
+    "prose_lines": 1730,
+    "role_adapter": "Response for native receipt compatibility only; closure authority separate",
+    "closure_event_count": 17,
+    "closure_knowledge_count": 18,
+    "reviewed_events_blob": "22c61196a8b7f163602cc3229f9c4d2a9e1ccb8e",
+    "reviewed_knowledge_blob": "6f4e6fd78881fde671b985ecb62ce0819a71737b",
+    "choice_sha256": "cd1c20999023cc6b4dd2657023add598ddf57c3e71649eeb5f0eb02ab0b35876",
+    "chosen_option": 0,
+    "book_closed": true,
+    "editorial_header": "  <text color=\"secondary\" size=\"xs\" weight=\"medium\">DESFECHO AUTORIZADO PELO AUTOR · ÚLTIMA PARTE DO LIVRO V</text>",
+    "finale_author_text": "Vamos finalizar o ultimo capitulo de forma glorisa, e encerrar o livro V. Faça o ultimo capitulo digno."
+  },
+  "release_blob": "1ea9d60a58ecf00a368f0e33631164fc7cbe0051",
+  "previous_checkpoint_blob": "48946b3d3b631111ca98bd89df90b6a2c4196fee",
+  "cycle_review_blob": "2fbfe32406ee958b6e723bebb199714bec0a23e8",
+  "records": [
+    {
+      "id": "O8C-B75-001",
+      "book": "V",
+      "day": 537,
+      "chapter_hint": 16,
+      "type": "metadata",
+      "entities": [
+        "worldroot"
+      ],
+      "summary": "Desfecho autorizado pelo autor, retomada 11h46, voo005 concluído, GÊNESE plena.",
+      "axes": [
+        1,
+        2,
+        28,
+        29,
+        30
+      ],
+      "authority": "METADATA_NOT_EVENT",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LV-C16-PV-D537-AUTHOR-SOURCE",
+        "source_sha256_manifest": "d00f5da3afa324507cc1178cb5d7a844e8eb501be2e0787192fe44e0afc2ec42",
+        "blob_sha1": "323c023f9c186e98b86b1473c57886da628904b7",
+        "source_blob_sha1s": [
+          "323c023f9c186e98b86b1473c57886da628904b7"
+        ],
+        "line_start": 1,
+        "line_end": 19,
+        "role": "Response",
+        "span_sha256_utf8": "94d632ac973decaacd25f46e2f68c6939cae48cb7d905469e85441a8f5be244b",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "ac12a6336ba876d1ed42f11bec855d6245f1d0b5",
+        "full_story_sha256": "34d2fa4ce224182f3bc407b17d6ad89cc7e6a239e58fa97cecd72d46c874a01b",
+        "immutable_manifest_blob": "a6b8a3755e75917f0d705f22a128e760aa4fb964"
+      }
+    },
+    {
+      "id": "O8C-B75-002",
+      "book": "V",
+      "day": 537,
+      "chapter_hint": 16,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "naira",
+        "rumo",
+        "miren",
+        "brannik"
+      ],
+      "summary": "11h46 mãos tremem após voo005, Naira admite emoção, Rumo gostaria de voar; equipe autônoma.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        13,
+        15
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LV-C16-PV-D537-AUTHOR-SOURCE",
+        "source_sha256_manifest": "d00f5da3afa324507cc1178cb5d7a844e8eb501be2e0787192fe44e0afc2ec42",
+        "blob_sha1": "323c023f9c186e98b86b1473c57886da628904b7",
+        "source_blob_sha1s": [
+          "323c023f9c186e98b86b1473c57886da628904b7"
+        ],
+        "line_start": 20,
+        "line_end": 183,
+        "role": "Response",
+        "span_sha256_utf8": "ff1e9a30aa4ccf28e109d9f7eebe14b8e27213e8c1d685b99655b7e85919a47a",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "ac12a6336ba876d1ed42f11bec855d6245f1d0b5",
+        "full_story_sha256": "34d2fa4ce224182f3bc407b17d6ad89cc7e6a239e58fa97cecd72d46c874a01b",
+        "immutable_manifest_blob": "a6b8a3755e75917f0d705f22a128e760aa4fb964"
+      }
+    },
+    {
+      "id": "O8C-B75-003",
+      "book": "V",
+      "day": 537,
+      "chapter_hint": 16,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "brannik",
+        "miren"
+      ],
+      "summary": "12h34 Brannik presenteia peça polida à mão com marcas de erros e aprendizado.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        13,
+        18
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LV-C16-PV-D537-AUTHOR-SOURCE",
+        "source_sha256_manifest": "d00f5da3afa324507cc1178cb5d7a844e8eb501be2e0787192fe44e0afc2ec42",
+        "blob_sha1": "323c023f9c186e98b86b1473c57886da628904b7",
+        "source_blob_sha1s": [
+          "323c023f9c186e98b86b1473c57886da628904b7"
+        ],
+        "line_start": 184,
+        "line_end": 241,
+        "role": "Response",
+        "span_sha256_utf8": "cf6fec1e5d882d06d358bf4dcf8f07086943218da3293197b8468ee3f76bc763",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "ac12a6336ba876d1ed42f11bec855d6245f1d0b5",
+        "full_story_sha256": "34d2fa4ce224182f3bc407b17d6ad89cc7e6a239e58fa97cecd72d46c874a01b",
+        "immutable_manifest_blob": "a6b8a3755e75917f0d705f22a128e760aa4fb964"
+      }
+    },
+    {
+      "id": "O8C-B75-004",
+      "book": "V",
+      "day": 537,
+      "chapter_hint": 16,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "oren"
+      ],
+      "summary": "13h18 conserta pássaro de madeira de menina preservando trabalho dela e irmão; Oren lembra limites dos mapas, estrada norte não verificada.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        13,
+        14,
+        16,
+        18,
+        26,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LV-C16-PV-D537-AUTHOR-SOURCE",
+        "source_sha256_manifest": "d00f5da3afa324507cc1178cb5d7a844e8eb501be2e0787192fe44e0afc2ec42",
+        "blob_sha1": "323c023f9c186e98b86b1473c57886da628904b7",
+        "source_blob_sha1s": [
+          "323c023f9c186e98b86b1473c57886da628904b7"
+        ],
+        "line_start": 242,
+        "line_end": 403,
+        "role": "Response",
+        "span_sha256_utf8": "fb86cd218b1fc4bd361d67dfd25d518f49a1fe75fe75131c574d07488ebec31e",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "ac12a6336ba876d1ed42f11bec855d6245f1d0b5",
+        "full_story_sha256": "34d2fa4ce224182f3bc407b17d6ad89cc7e6a239e58fa97cecd72d46c874a01b",
+        "immutable_manifest_blob": "a6b8a3755e75917f0d705f22a128e760aa4fb964"
+      }
+    },
+    {
+      "id": "O8C-B75-005",
+      "book": "V",
+      "day": 537,
+      "chapter_hint": 16,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren"
+      ],
+      "summary": "14h37 intimidade, pesquisa própria, desenho de pedras escuras com perguntas e observações, sem classificação; viver presente.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        13,
+        25,
+        26,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LV-C16-PV-D537-AUTHOR-SOURCE",
+        "source_sha256_manifest": "d00f5da3afa324507cc1178cb5d7a844e8eb501be2e0787192fe44e0afc2ec42",
+        "blob_sha1": "323c023f9c186e98b86b1473c57886da628904b7",
+        "source_blob_sha1s": [
+          "323c023f9c186e98b86b1473c57886da628904b7"
+        ],
+        "line_start": 404,
+        "line_end": 556,
+        "role": "Response",
+        "span_sha256_utf8": "3289480658913d47e2392b451ca16922756a281922848c13e1e2adbdaeb56de1",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "ac12a6336ba876d1ed42f11bec855d6245f1d0b5",
+        "full_story_sha256": "34d2fa4ce224182f3bc407b17d6ad89cc7e6a239e58fa97cecd72d46c874a01b",
+        "immutable_manifest_blob": "a6b8a3755e75917f0d705f22a128e760aa4fb964"
+      }
+    },
+    {
+      "id": "O8C-B75-006",
+      "book": "V",
+      "day": 537,
+      "chapter_hint": 16,
+      "type": "scene",
+      "entities": [
+        "kael",
+        "lysa",
+        "lucas",
+        "kairon"
+      ],
+      "summary": "16h12 Cidade Livre preserva governo autônomo, divulgação local seletiva sem culto ou coroação; Káiron escolhe brincar com crianças.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        18,
+        19,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LV-C16-PV-D537-AUTHOR-SOURCE",
+        "source_sha256_manifest": "d00f5da3afa324507cc1178cb5d7a844e8eb501be2e0787192fe44e0afc2ec42",
+        "blob_sha1": "323c023f9c186e98b86b1473c57886da628904b7",
+        "source_blob_sha1s": [
+          "323c023f9c186e98b86b1473c57886da628904b7"
+        ],
+        "line_start": 557,
+        "line_end": 702,
+        "role": "Response",
+        "span_sha256_utf8": "b6bdde9969b4dd56bd985077c9b9f64c705c9dd5c87447a8721162c55384262f",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "ac12a6336ba876d1ed42f11bec855d6245f1d0b5",
+        "full_story_sha256": "34d2fa4ce224182f3bc407b17d6ad89cc7e6a239e58fa97cecd72d46c874a01b",
+        "immutable_manifest_blob": "a6b8a3755e75917f0d705f22a128e760aa4fb964"
+      }
+    },
+    {
+      "id": "O8C-B75-007",
+      "book": "V",
+      "day": 537,
+      "chapter_hint": 16,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren",
+        "kairon"
+      ],
+      "summary": "17h03 Praça da Fonte, humor e convivência.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        18
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LV-C16-PV-D537-AUTHOR-SOURCE",
+        "source_sha256_manifest": "d00f5da3afa324507cc1178cb5d7a844e8eb501be2e0787192fe44e0afc2ec42",
+        "blob_sha1": "323c023f9c186e98b86b1473c57886da628904b7",
+        "source_blob_sha1s": [
+          "323c023f9c186e98b86b1473c57886da628904b7"
+        ],
+        "line_start": 703,
+        "line_end": 760,
+        "role": "Response",
+        "span_sha256_utf8": "ff94912e0ea3b8e3189eaea212020fec7be96438f3f6d55902affe733f18c076",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "ac12a6336ba876d1ed42f11bec855d6245f1d0b5",
+        "full_story_sha256": "34d2fa4ce224182f3bc407b17d6ad89cc7e6a239e58fa97cecd72d46c874a01b",
+        "immutable_manifest_blob": "a6b8a3755e75917f0d705f22a128e760aa4fb964"
+      }
+    },
+    {
+      "id": "O8C-B75-008",
+      "book": "V",
+      "day": 537,
+      "chapter_hint": 16,
+      "type": "scene",
+      "entities": [
+        "varo",
+        "kairon",
+        "kael",
+        "lucas"
+      ],
+      "summary": "18h09 Varo fala dos trezentos originais e carpinteiro que prefere madeira à espada; valor não apenas força militar. Káiron guarda pedra, pena e barbante em caixa feita com crianças.",
+      "axes": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        8,
+        9,
+        10,
+        13,
+        18,
+        19,
+        20,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LV-C16-PV-D537-AUTHOR-SOURCE",
+        "source_sha256_manifest": "d00f5da3afa324507cc1178cb5d7a844e8eb501be2e0787192fe44e0afc2ec42",
+        "blob_sha1": "323c023f9c186e98b86b1473c57886da628904b7",
+        "source_blob_sha1s": [
+          "323c023f9c186e98b86b1473c57886da628904b7"
+        ],
+        "line_start": 761,
+        "line_end": 913,
+        "role": "Response",
+        "span_sha256_utf8": "120dc5865735f0adc694a2d5dcc584aa08f0d58c3dd78df37837fecaad1b4c67",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "ac12a6336ba876d1ed42f11bec855d6245f1d0b5",
+        "full_story_sha256": "34d2fa4ce224182f3bc407b17d6ad89cc7e6a239e58fa97cecd72d46c874a01b",
+        "immutable_manifest_blob": "a6b8a3755e75917f0d705f22a128e760aa4fb964"
+      }
+    },
+    {
+      "id": "O8C-B75-009",
+      "book": "V",
+      "day": 537,
+      "chapter_hint": 16,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren",
+        "naira",
+        "halden",
+        "sistema"
+      ],
+      "summary": "19h04 exibição voluntária local de imagens selecionadas e autorizadas do voo005, sem fanfarra/rede continental ou acesso total.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        15,
+        18,
+        19,
+        25,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LV-C16-PV-D537-AUTHOR-SOURCE",
+        "source_sha256_manifest": "d00f5da3afa324507cc1178cb5d7a844e8eb501be2e0787192fe44e0afc2ec42",
+        "blob_sha1": "323c023f9c186e98b86b1473c57886da628904b7",
+        "source_blob_sha1s": [
+          "323c023f9c186e98b86b1473c57886da628904b7"
+        ],
+        "line_start": 914,
+        "line_end": 1093,
+        "role": "Response",
+        "span_sha256_utf8": "4673dbe4bcd4e0867cb456621581093ca035f670859591cd7fa7adf8ab096adb",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "ac12a6336ba876d1ed42f11bec855d6245f1d0b5",
+        "full_story_sha256": "34d2fa4ce224182f3bc407b17d6ad89cc7e6a239e58fa97cecd72d46c874a01b",
+        "immutable_manifest_blob": "a6b8a3755e75917f0d705f22a128e760aa4fb964"
+      }
+    },
+    {
+      "id": "O8C-B75-010",
+      "book": "V",
+      "day": 537,
+      "chapter_hint": 16,
+      "type": "creation",
+      "entities": [
+        "lucas",
+        "miren",
+        "rumo",
+        "kairon",
+        "varo",
+        "brannik"
+      ],
+      "summary": "20h06 GÊNESE manifesta três arcos e constelações temporárias, trezentas luzes iniciais; cidadãos escrevem voluntariamente sem leitura mental. RUMO ESCOLHER, Káiron VIVER, Varo LIVRE.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        18,
+        19,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LV-C16-PV-D537-AUTHOR-SOURCE",
+        "source_sha256_manifest": "d00f5da3afa324507cc1178cb5d7a844e8eb501be2e0787192fe44e0afc2ec42",
+        "blob_sha1": "323c023f9c186e98b86b1473c57886da628904b7",
+        "source_blob_sha1s": [
+          "323c023f9c186e98b86b1473c57886da628904b7"
+        ],
+        "line_start": 1094,
+        "line_end": 1363,
+        "role": "Response",
+        "span_sha256_utf8": "6a1663005b1cd1c15cc9570b6a4c64884e05aabe740f80f96e7b691ff1d19dea",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "ac12a6336ba876d1ed42f11bec855d6245f1d0b5",
+        "full_story_sha256": "34d2fa4ce224182f3bc407b17d6ad89cc7e6a239e58fa97cecd72d46c874a01b",
+        "immutable_manifest_blob": "a6b8a3755e75917f0d705f22a128e760aa4fb964"
+      }
+    },
+    {
+      "id": "O8C-B75-011",
+      "book": "V",
+      "day": 537,
+      "chapter_hint": 16,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren",
+        "varo",
+        "kairon"
+      ],
+      "summary": "21h38 Lucas renova Nenhum fica para trás sem título monárquico e escreve JUNTOS entre demais palavras.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        18,
+        19,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LV-C16-PV-D537-AUTHOR-SOURCE",
+        "source_sha256_manifest": "d00f5da3afa324507cc1178cb5d7a844e8eb501be2e0787192fe44e0afc2ec42",
+        "blob_sha1": "323c023f9c186e98b86b1473c57886da628904b7",
+        "source_blob_sha1s": [
+          "323c023f9c186e98b86b1473c57886da628904b7"
+        ],
+        "line_start": 1364,
+        "line_end": 1525,
+        "role": "Response",
+        "span_sha256_utf8": "f63a1a8ea581a9ae40548aa2e6edbf783c2c4d9cbf1dd05587b56712747d818b",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "ac12a6336ba876d1ed42f11bec855d6245f1d0b5",
+        "full_story_sha256": "34d2fa4ce224182f3bc407b17d6ad89cc7e6a239e58fa97cecd72d46c874a01b",
+        "immutable_manifest_blob": "a6b8a3755e75917f0d705f22a128e760aa4fb964"
+      }
+    },
+    {
+      "id": "O8C-B75-012",
+      "book": "V",
+      "day": 537,
+      "chapter_hint": 16,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren"
+      ],
+      "summary": "23h18 casal em casa, amor, autonomia, lembranças e perguntas futuras; constelações temporárias não se tornam efeito permanente.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        11,
+        25,
+        26
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LV-C16-PV-D537-AUTHOR-SOURCE",
+        "source_sha256_manifest": "d00f5da3afa324507cc1178cb5d7a844e8eb501be2e0787192fe44e0afc2ec42",
+        "blob_sha1": "323c023f9c186e98b86b1473c57886da628904b7",
+        "source_blob_sha1s": [
+          "323c023f9c186e98b86b1473c57886da628904b7"
+        ],
+        "line_start": 1526,
+        "line_end": 1689,
+        "role": "Response",
+        "span_sha256_utf8": "b692606dbc0fce748f4a4c4d051899eb7af51e967f4bf49e2306f6d77f7756bb",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "ac12a6336ba876d1ed42f11bec855d6245f1d0b5",
+        "full_story_sha256": "34d2fa4ce224182f3bc407b17d6ad89cc7e6a239e58fa97cecd72d46c874a01b",
+        "immutable_manifest_blob": "a6b8a3755e75917f0d705f22a128e760aa4fb964"
+      }
+    },
+    {
+      "id": "O8C-B75-013",
+      "book": "V",
+      "day": 537,
+      "chapter_hint": 16,
+      "type": "metadata",
+      "entities": [
+        "worldroot"
+      ],
+      "summary": "23h46 janela Casa Jardim Branco, fim Livro V com autorização explícita, sem iniciar Livro VI.",
+      "axes": [
+        1,
+        2,
+        28,
+        29,
+        30
+      ],
+      "authority": "METADATA_NOT_EVENT",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LV-C16-PV-D537-AUTHOR-SOURCE",
+        "source_sha256_manifest": "d00f5da3afa324507cc1178cb5d7a844e8eb501be2e0787192fe44e0afc2ec42",
+        "blob_sha1": "323c023f9c186e98b86b1473c57886da628904b7",
+        "source_blob_sha1s": [
+          "323c023f9c186e98b86b1473c57886da628904b7"
+        ],
+        "line_start": 1690,
+        "line_end": 1730,
+        "role": "Response",
+        "span_sha256_utf8": "3ada0fe33f74339a336ef62f0c50caa0eef6b1ecc63b1629dfe6eae564caeb43",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "ac12a6336ba876d1ed42f11bec855d6245f1d0b5",
+        "full_story_sha256": "34d2fa4ce224182f3bc407b17d6ad89cc7e6a239e58fa97cecd72d46c874a01b",
+        "immutable_manifest_blob": "a6b8a3755e75917f0d705f22a128e760aa4fb964"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "start": 1,
+      "end": 19,
+      "role": "Response",
+      "span_sha256_utf8": "94d632ac973decaacd25f46e2f68c6939cae48cb7d905469e85441a8f5be244b",
+      "record_ids": [
+        "O8C-B75-001"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 20,
+      "end": 183,
+      "role": "Response",
+      "span_sha256_utf8": "ff1e9a30aa4ccf28e109d9f7eebe14b8e27213e8c1d685b99655b7e85919a47a",
+      "record_ids": [
+        "O8C-B75-002"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 184,
+      "end": 241,
+      "role": "Response",
+      "span_sha256_utf8": "cf6fec1e5d882d06d358bf4dcf8f07086943218da3293197b8468ee3f76bc763",
+      "record_ids": [
+        "O8C-B75-003"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 242,
+      "end": 403,
+      "role": "Response",
+      "span_sha256_utf8": "fb86cd218b1fc4bd361d67dfd25d518f49a1fe75fe75131c574d07488ebec31e",
+      "record_ids": [
+        "O8C-B75-004"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 404,
+      "end": 556,
+      "role": "Response",
+      "span_sha256_utf8": "3289480658913d47e2392b451ca16922756a281922848c13e1e2adbdaeb56de1",
+      "record_ids": [
+        "O8C-B75-005"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 557,
+      "end": 702,
+      "role": "Response",
+      "span_sha256_utf8": "b6bdde9969b4dd56bd985077c9b9f64c705c9dd5c87447a8721162c55384262f",
+      "record_ids": [
+        "O8C-B75-006"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 703,
+      "end": 760,
+      "role": "Response",
+      "span_sha256_utf8": "ff94912e0ea3b8e3189eaea212020fec7be96438f3f6d55902affe733f18c076",
+      "record_ids": [
+        "O8C-B75-007"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 761,
+      "end": 913,
+      "role": "Response",
+      "span_sha256_utf8": "120dc5865735f0adc694a2d5dcc584aa08f0d58c3dd78df37837fecaad1b4c67",
+      "record_ids": [
+        "O8C-B75-008"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 914,
+      "end": 1093,
+      "role": "Response",
+      "span_sha256_utf8": "4673dbe4bcd4e0867cb456621581093ca035f670859591cd7fa7adf8ab096adb",
+      "record_ids": [
+        "O8C-B75-009"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 1094,
+      "end": 1363,
+      "role": "Response",
+      "span_sha256_utf8": "6a1663005b1cd1c15cc9570b6a4c64884e05aabe740f80f96e7b691ff1d19dea",
+      "record_ids": [
+        "O8C-B75-010"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 1364,
+      "end": 1525,
+      "role": "Response",
+      "span_sha256_utf8": "f63a1a8ea581a9ae40548aa2e6edbf783c2c4d9cbf1dd05587b56712747d818b",
+      "record_ids": [
+        "O8C-B75-011"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 1526,
+      "end": 1689,
+      "role": "Response",
+      "span_sha256_utf8": "b692606dbc0fce748f4a4c4d051899eb7af51e967f4bf49e2306f6d77f7756bb",
+      "record_ids": [
+        "O8C-B75-012"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 1690,
+      "end": 1730,
+      "role": "Response",
+      "span_sha256_utf8": "3ada0fe33f74339a336ef62f0c50caa0eef6b1ecc63b1629dfe6eae564caeb43",
+      "record_ids": [
+        "O8C-B75-013"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    }
+  ],
+  "axis_coverage": {
+    "assessed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "represented": [
+      1,
+      2,
+      3,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      19,
+      20,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ]
+  },
+  "next_line": 1731,
+  "macro_complete": true,
+  "status": "STAGING_CANDIDATE_PENDING_NATIVE",
+  "production_gate": "HOLD",
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "semantic_certification": false,
+  "independent_review": false,
+  "promotion": false
+}
