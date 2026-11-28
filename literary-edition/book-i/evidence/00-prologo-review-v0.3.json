@@ -1,0 +1,70 @@
+{
+  "schema": "literary-edition-review-v3",
+  "status": "REVIEWED_DRAFT_AWAITING_AUTHOR",
+  "scope": "prologue_only",
+  "draft": "literary-edition/book-i/drafts/00-prologo-v0.3.md",
+  "draft_blob": "19820249792ffd8fb16b8fdcd8acef08952206bb",
+  "sha256": "753b1bab572f800d1f085a709e6e2f8e77742991d6d28f185b1ad7a5c96e3ad0",
+  "previous_blob": "b9c0570688e2729f43bbb6bc84f98eace7f1f6c7",
+  "words_whitespace": 2877,
+  "pdf": {
+    "pages": 15,
+    "format": "A5",
+    "rendered": true,
+    "visual_review": "contact sheet inspected, unsupported scene separator replaced by ASCII asterisks, final text extraction checked",
+    "delivery": "PDF in chat; text source in GitHub"
+  },
+  "feedback_rules": [
+    "Foco exclusivo no prólogo até aprovação; capítulo 1 intacto.",
+    "Narrar um dia vivido na Terra, desde despertar, café, transporte, cidade, redes sociais, amigos, almoço, escritório e reuniões; sem sobrenome na abertura nem antecipação da morte.",
+    "Emoção progressiva, não apressar a tragédia ou a perda; usar ações e relações concretas.",
+    "Inserir anomalias sensoriais e dores de cabeça progressivas; não estabelecer explicação ou poderes antecipados.",
+    "Separar realidade Terra de realidade de destino, outro universo; guerra épica de alto nível com escala humana e atmosfera própria; convergência sem spoilers.",
+    "PDF literário para leitura a cada entrega, auditoria separada e prompt de continuidade."
+  ],
+  "manual_review": [
+    {
+      "axis": "cadence",
+      "result": "revised",
+      "evidence": "day anchors 06h12, morning commute, office meeting, lunch, afternoon, evening; cuts separated by scene breaks; hospital and loss expanded"
+    },
+    {
+      "axis": "emotion",
+      "result": "revised",
+      "evidence": "friend's Saturday invitation and coffee motif return at hospital; explicit fear of death; grief persists before ability selection"
+    },
+    {
+      "axis": "worldbuilding",
+      "result": "revised",
+      "evidence": "unnamed mountainous city, cloud sea, infrastructure, aerial battle, civilian evacuation; no location or identity linked to canon"
+    },
+    {
+      "axis": "semantic_continuity",
+      "result": "conditional_pass",
+      "evidence": "existing five choices and CREATION retained; no elite warriors, equipment or battle outcomes changed; no definitive reason for transfer, anomalous symptoms editorial only"
+    },
+    {
+      "axis": "originality",
+      "result": "manual_review_only",
+      "evidence": "original prose; external-origin skill names still subject to commercial originality review"
+    },
+    {
+      "axis": "character",
+      "result": "revised",
+      "evidence": "humor, mentoring, curiosity about infrastructure, practical reasoning; Rafa fictional, family status not defined, employer and city unnamed"
+    }
+  ],
+  "decisions": [
+    "Rafa is fictional, no real personal identity used",
+    "parallel war city and anonymous soldier are editorial expansion, no fixed date/location/cosmology",
+    "ending overlaps sensory arrival only; chapter 1 must be checked for seam after prologue approval"
+  ],
+  "limitations": [
+    "25 initial images not reviewed",
+    "No independent evaluation or executable engine integration",
+    "No comprehensive historical semantic reconciliation; future conflict check conditional",
+    "No approval or modification of RPG canon",
+    "PDF binary not stored on GitHub"
+  ],
+  "next_prompt": "Leia e revise exclusivamente o prólogo v0.3 segundo as observações autorais. Preserve dia vivido, vínculos, ritmo, anomalias crescentes e guerra de outra realidade; amplie somente o que tiver função dramática. Não revele identidade da figura, época ou cosmologia. Audite antes de entregar, salve versão separada na branch literary-edition/book-i, confira readback e entregue PDF A5 limpo. Não avance capítulo 1 sem aprovação do prólogo."
+}
