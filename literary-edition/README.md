@@ -1,5 +1,5 @@
 # Crônicas Literary Edition — Central editorial
-**Estado atual: prólogo V0.5 e edição ilustrada aprovados; capítulo 1 V0.3 rejeitado; V0.4 em revisão, meta mínima 9,9 ainda não atingida.**
+**Estado atual: prólogo V0.5 e edição ilustrada aprovados; capítulo 1 V0.5 em revisão autoral, com criação dos 300 e batalha integral; meta mínima 9,9 ainda não homologada.**
 
 Esta seção existe exclusivamente na branch `literary-edition/book-i`. É uma adaptação literária separada, não uma fonte canônica do RPG. Não abrir PR para main ou story-archive. Fontes de RPG somente leitura. A rotina do RPG e Eidoryn são independentes.
 
@@ -40,3 +40,8 @@ Leia esta central, o contrato (a diretriz V0.4 prevalece), o feedback, a versão
 ## Revisão do capítulo 1 — V0.4
 - [Manuscrito revisado](book-i/drafts/01-capitulo-1-v0.4.md), 3.436 palavras.
 - [Auditoria e gate 9,9](book-i/evidence/01-capitulo-1-review-v0.4.json). Não aprovado. A V0.3 permanece no histórico, mas foi rejeitada.
+
+## Capítulo 1 V0.5 — arco completo
+- [Manuscrito](book-i/drafts/01-capitulo-1-v0.5.md) — 6.475 palavras.
+- [Auditoria e hashes](book-i/evidence/01-capitulo-1-review-v0.5.json).
+- A diretriz mais recente substitui a divisão anterior: capítulo 1 inclui nascimento dos 300 e batalha. PDFs de 29 e 52 páginas entregues em conversa. Não avançar capítulo 2 até aprovação; replanejar divisão posterior após aprovação.
