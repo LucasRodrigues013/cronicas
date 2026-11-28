@@ -1,0 +1,82 @@
+{
+  "schema": "OMEGA_HYBRID_NATIVE_EVIDENCE_V1",
+  "validated_commit": "c44a94198aacc0ade04690cc51f05b4d43939d38",
+  "workflow_run": 46086100979,
+  "jobs": {
+    "literal_authorized_public": 140795909390,
+    "native_staging": 140795909143
+  },
+  "conclusion": "success",
+  "targeted_regression": {
+    "passed": 47,
+    "total": 47,
+    "groups": [
+      14,
+      11,
+      12,
+      10
+    ]
+  },
+  "aggregate": {
+    "authority_counts": {
+      "AUTHOR_DIRECTION_NOT_EVENT": 3,
+      "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED": 39,
+      "METADATA_NOT_EVENT": 3,
+      "NARRATOR_PROPOSED_BRANCH_NOT_EVENT": 3
+    },
+    "axes_assessed": 30,
+    "axes_represented": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "canon_changed": false,
+    "coverage": 48,
+    "lines": 10016,
+    "macro_complete": true,
+    "next_line": 81176,
+    "prior_cycle_status": "PASS_STAGING_ONLY",
+    "production_gate": "HOLD",
+    "records": 48,
+    "semantic_certification": false,
+    "session_new_lines": 20254,
+    "session_new_records": 98,
+    "status": "PASS_NATIVE_MACRO_0040_COMPLETE",
+    "visibility_counts": {
+      "EDITORIAL_ONLY_NO_CHARACTER_INJECTION": 34,
+      "READER_ONLY_NO_CHARACTER_INJECTION": 7,
+      "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION": 7
+    }
+  },
+  "source_integrity": "FULL_SOURCE_SHA256_AND_GIT_BLOB_MATCH",
+  "logs_readback": true,
+  "semantic_certification": false,
+  "independent_review": false,
+  "production_gate": "HOLD"
+}
