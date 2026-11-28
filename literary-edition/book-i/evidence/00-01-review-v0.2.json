@@ -1,0 +1,62 @@
+{
+  "schema": "literary-edition-review-v2",
+  "status": "REVIEWED_DRAFT_NOT_AUTHOR_APPROVED",
+  "author_feedback": [
+    "Não antecipar a morte na abertura nem usar narrador profético",
+    "Construir cotidiano, vínculo, tensão, emoção e drama por ações",
+    "Usar princípios profissionais e WORLDROOT como consulta",
+    "Revisar antes de cada entrega; trabalhar capítulo por capítulo; entregar prompt reutilizável"
+  ],
+  "sources": [
+    "EDITORIAL_CONTRACT.md",
+    "history source blob d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+    "main@1b063d05c1acaa86b2f237f987804af59dbeccd6:docs/r35-literary-refinement.md",
+    "https://faq.brandonsanderson.com/knowledge-base/do-you-have-any-advice-about-beginnings/",
+    "https://www.brandonsanderson.com/blogs/blog/faq-friday-do-i-need-to-start-my-book-with-a-prologue",
+    "https://janefriedman.com/how-can-you-tell-if-youre-starting-your-story-in-the-right-place/",
+    "https://janefriedman.com/the-secret-ingredient-of-successful-openings/"
+  ],
+  "review": [
+    {
+      "axis": "opening",
+      "result": "revised",
+      "evidence": "Às quatro e vinte da tarde...; dialogue demonstrates mentorship, humor, curiosity; no death announcement"
+    },
+    {
+      "axis": "emotion",
+      "result": "revised",
+      "evidence": "small concern for stranger's bag, desire to return, pause after death recognition; no explicit private family details"
+    },
+    {
+      "axis": "worldbuilding",
+      "result": "revised",
+      "evidence": "parallel evacuation and anomalous gravity; no identity, epoch, location or definitive cosmology"
+    },
+    {
+      "axis": "continuity",
+      "result": "conditional",
+      "evidence": "five options from export; initial 300 orcs as estimate; 300 elite intent; no battle resolution, equipment order, energy claim, later skills or casualties introduced"
+    },
+    {
+      "axis": "originality",
+      "result": "editorial self-review only",
+      "evidence": "new prose; named skills inherited from original external inspiration, rights/commercial originality review still required"
+    },
+    {
+      "axis": "cadence",
+      "result": "revised",
+      "evidence": "scene transitions by action; chapter ends before materialization; no menu or RPG metadata"
+    }
+  ],
+  "limitations": [
+    "Drafts shorter than eventual chapter target; expand after feedback without padding",
+    "Original 25 screenshots not verified; chapter 1 new arrival details conditional",
+    "No independent evaluator or executable engine validation; manual editorial review only",
+    "Parallel battle details newly invented; reserve all causal links for later author-approved plot",
+    "No plot or character data writeback to RPG"
+  ],
+  "words": {
+    "prologue": 1567,
+    "chapter1": 1161
+  }
+}
