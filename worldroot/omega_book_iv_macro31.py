@@ -897,7 +897,65 @@ def verify_book_v_54(root,archive):
     require(audit["cycle_status"]=="OPEN_0053_0057_OR_BOOK_BOUNDARY" and audit["production_gate"]=="HOLD" and all(not x["promotion"] for x in audit["overlays"]) and not any(audit[k] for k in ("canon_changed","official_checkpoint_changed","semantic_certification","independent_review","promotion")),"audit")
     return {"status":"PASS_NATIVE_BOOK_V_0054_COMPLETE","review_status":"PASS_STAGING_ONLY","cycle_status":audit["cycle_status"],"macro_metrics":metrics,"session_lines":lines,"session_records":records,"staging_records":t["staging_records"],"book_v_records":t["book_v_records"],"book_v_lines":t["book_v_lines"],"authority_counts":dict(counts),"visibility_counts":dict(vis),"axes":sorted(axes),"next_line":20348,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False}
 
+
+def verify_book_v_57(root,archive):
+    from collections import Counter
+    from hashlib import sha256
+    root=Path(root);archive=Path(archive)
+    prior=verify_book_v_54(root,archive)
+    c0=read(root,ROOT+"recovery-checkpoint-0054-validated.json","e9174258fbb4b25e26bdf991ab6de482e66485da")
+    old=read(root,c0["session_review_path"],c0["session_review_blob"])
+    old43=read(root,ROOT+"cycle-0043-0047-consolidated-review-validated.json","960241e971063307345ec001347a3ced1476bff5")
+    old48=read(root,c0["cycle_review_path"],c0["cycle_review_blob"])
+    boundary=read(root,c0["book_boundary_review_path"],c0["book_boundary_review_blob"])
+    require(prior["status"]=="PASS_NATIVE_BOOK_V_0054_COMPLETE" and old["status"]=="PASS_STAGING_ONLY" and c0["native_validation"]=="PASS" and c0["staging_records"]==3490,"prior gate")
+    q=read(root,"audit/omega008-c/bulk-macro-queue.json","e5a5f9e358d20acf8559f6313c2da24b64665f48")["macros"]
+    cache=SourceCache(archive,read(archive,"history/sources/MANIFEST.json","2048141263f66151230119af9b0ee51796ac846b"))
+    audit=read(root,ROOT+"cycle-0053-0057-consolidated-review-pending.json","a9a4a84544a617c0092278039a75ffe889e2784f")
+    require(audit["previous_cycle_blob"]==c0["cycle_review_blob"] and audit["prior_session_review_blob"]==c0["session_review_blob"] and audit["previous_checkpoint_blob"]=="e9174258fbb4b25e26bdf991ab6de482e66485da" and audit["macros"][:2]==old["macros"] and audit["prior_findings"]==old["findings"] and [g["macro"] for g in audit["macros"]]==list(range(53,58)),"scope")
+    ids={x["id"] for g in boundary["macros"] for e in g["receipts"] for x in read(root,e["path"],e["blob"])["records"]}
+    ids.update(x["id"] for g in old43["macros"]+old48["macros"] for x in read(root,g["receipt"],g["blob"])["records"])
+    require(len(ids)==1252,"prior ids")
+    counts=Counter();vis=Counter();axes=set();lines=0;records=0;metrics=[];prev="e9174258fbb4b25e26bdf991ab6de482e66485da"
+    for g in audit["macros"]:
+        n=g["macro"];m=q[n-1];source=cache.get(m["source"])
+        cp=read(root,g["checkpoint"],g["checkpoint_blob"]);r=read(root,g["receipt"],g["blob"],cp["receipt_sha256"])
+        require(r["cycle_review_blob"]==c0["cycle_review_blob"] and r["release_blob"]==c0["release_blob"] and r["previous_macro_id"]==m["previous_macro"] and r["official_unit_seal"]==m["unit_seal"] and cp["next_macro"]==q[n],"chain")
+        if n>=55:
+            require(r["previous_checkpoint_blob"]==cp["previous_checkpoint_blob"]==prev,"new chain")
+            prev=g["checkpoint_blob"]
+        extra=8 if n in (53,57) else 0
+        require(r["range"]==[m["start"]+extra,m["end"]] and cp["macro_range"]==r["macro_range"]==[m["start"],m["end"]] and cp["native_validation"]=="PENDING" and cp["next_line"]==q[n]["start"],"geometry")
+        if extra:
+            md=read(root,cp["metadata_path"],cp["metadata_blob"])
+            require(md["range"]==[1,8] and md["source"]==m["source"] and md["source_sha256"]==source[3] and md["blob_sha1"]==source[2][0][2] and all(x=="Metadata" for x in source[1][:8]) and sha256("\n".join(source[0][:8]).encode()).hexdigest()==md["span_sha256_utf8"] and not md["promotion"],"metadata header")
+        result=validate_receipt(r,m,source,r["project"],ARCHIVE,previous_ids=ids,expected_range=r["range"])
+        require(result["lines"]+extra==m["lines"]==g["lines"] and result["records"]==g["records"]==cp["records"] and result["axes_represented"]==g["axes"],"metrics")
+        for x in r["records"]:
+            require(x["book"]=="V" and "NO_CHARACTER_INJECTION" in x["visibility"] and not x["promotion"],"scope")
+            require((x["evidence"]["role"]=="Prompt")==(x["authority"]=="AUTHOR_DIRECTION_NOT_EVENT"),"authority")
+            require(x["type"]!="knowledge" or x["visibility"].startswith("RESTRICTED"),"privacy")
+            require(x["type"]!="reader_scene" or x["visibility"].startswith("READER_ONLY"),"reader")
+            ids.add(x["id"]);counts[x["authority"]]+=1;vis[x["visibility"]]+=1
+        lines+=g["lines"];records+=g["records"];axes.update(g["axes"])
+        require(cp["staging_records"]==3374+records and cp["book_counts"]["V"]==479+records and cp["official_records"]==1656 and cp["production_gate"]=="HOLD" and not any(cp[k] for k in ("canon_changed","official_checkpoint_changed","semantic_certification","independent_review","promotion")),"gate")
+        metrics.append({"macro":n,"lines":g["lines"],"records":g["records"],"axes":g["axes"]})
+    for e in audit["findings"]+audit["prior_findings"]:
+        s=cache.get(e["source"]);lo,hi=e["range"]
+        require(not e["promotion"] and sha256("\n".join(s[0][lo-1:hi]).encode()).hexdigest()==e["sha256"],"anchor")
+    s5=cache.get(q[54]["source"])[0];s6=cache.get(q[56]["source"])[0]
+    require(len(s5)==31423 and len(s6)==101429 and q[55]["end"]==len(s5) and q[56]["start"]==1,"source transition")
+    require(all(s5[i-1].startswith("LIVRO V") for i in (21387,24179,26675,29032)) and all(s6[i-1].startswith("LIVRO V") for i in (1139,3423,5405,8035)) and not any(l.strip().startswith("LIVRO VI") for l in s5[20347:]+s6[:10089]),"book")
+    require("Integração restabelecida" in s5[21618] and "não são canônicas" in s5[24168] and "Você venceu" in s5[25820] and "Você acabou de vencer nós dois" in s5[26178],"Nox and combat")
+    require("Dia 171" in s5[29015] and "dois lugares diferentes" in s5[29009] and "23h56" in s5[31309] and "Círan permanece sem retorno comprovado" in s5[31319],"errata and closure")
+    require("Errado" in s6[127] and "496" in s6[130] and "DIA 497" in s6[1150] and "HZ-1 - Horizonte Exterior, Área Candidata" in s6[4932],"retake and HZ1")
+    require("Nenhuma estrutura permanente de AERÚN foi criada" in s6[7894] and "240 autômatos existiam" in s6[9732] and "HZ-1 ainda não era um terreno oficialmente escolhido" in s6[9928],"project and automation")
+    t=audit["totals"]
+    require(lines==t["lines"]==41512 and records==t["records"]==229 and len(ids)==1252+records and t["session_lines"]==21165 and t["session_records"]==records-116 and t["staging_records"]==3374+records and t["book_v_records"]==479+records and t["book_v_lines"]==128033 and sorted(axes)==list(range(1,31)),"totals")
+    require(audit["production_gate"]=="HOLD" and all(not x["promotion"] for x in audit["overlays"]) and not any(audit[k] for k in ("canon_changed","official_checkpoint_changed","semantic_certification","independent_review","promotion")),"audit")
+    return {"status":"PASS_NATIVE_BOOK_V_0057_COMPLETE","cycle_status":"PASS_STAGING_ONLY","source_transition":"SOURCE_05_COMPLETE_SOURCE_06_STARTED_BOOK_V_CONTINUES","macro_metrics":metrics,"cycle_lines":lines,"cycle_records":records,"session_lines":t["session_lines"],"session_records":t["session_records"],"staging_records":t["staging_records"],"book_v_records":t["book_v_records"],"book_v_lines":t["book_v_lines"],"authority_counts":dict(counts),"visibility_counts":dict(vis),"axes":sorted(axes),"next_source":q[57]["source"],"next_line":10090,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False}
+
 def main():
     p=argparse.ArgumentParser();p.add_argument("--engine-root",default=".");p.add_argument("--archive-root",required=True)
-    a=p.parse_args();print(json.dumps(verify_book_v_54(a.engine_root,a.archive_root),sort_keys=True))
+    a=p.parse_args();print(json.dumps(verify_book_v_57(a.engine_root,a.archive_root),sort_keys=True))
 if __name__=="__main__":main()
