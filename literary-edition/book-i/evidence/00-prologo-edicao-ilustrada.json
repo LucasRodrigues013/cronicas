@@ -1,0 +1,62 @@
+{
+  "schema": "literary-edition-illustrated-release-v1",
+  "status": "AUTHOR_APPROVED_TEXT_AND_COVER_ART",
+  "date": "2026-11-28",
+  "scope": "Prologue V0.5; graphical application only; chapter 1 untouched",
+  "author_feedback": "Aprovado. Aplique esse design e dados ao PDF de prologo. Ao final, revise e me dê as notas do prólogo e como estamos, desde notas literárias a design",
+  "manuscript": {
+    "blob": "835d451cb764f227d3732ef2a9a1376a3bbd59b0",
+    "sha256": "e81b42c2b1d7d41921d5b68f4fe99e1cbd9bdaa2b4e03e63fc806ae993c3eeed",
+    "words_whitespace": 4827,
+    "unchanged": true
+  },
+  "pdf": {
+    "filename": "Cronicas_O_Despertar_do_Criador_Prologo_Edicao_Ilustrada.pdf",
+    "sha256": "28d7901f3760448b77845094c4f87125a7bc3d3a3876d423b71a7ca26f1bdc72",
+    "git_blob_expected": "eba212821e03f1dd1566d9b56de10f6a4841abdf",
+    "bytes": 4081663,
+    "pages": 24,
+    "format": "A5",
+    "archive_status": "PDF delivered in chat; binary not uploaded to GitHub in this run",
+    "validation": "23579 normalized narrative characters identical to approved manuscript; all 23 interior pages text extraction and rendered pixels equal previous premium PDF; new cover rendered and inspected"
+  },
+  "cover": {
+    "status": "author approved",
+    "asset": "crônicas_de_um_novo_mundo_o_despertar_do_criador.png",
+    "resolution": "1024x1536",
+    "treatment": "aspect ratio preserved, narrow dark lateral margins for A5; original art not cropped",
+    "meaning": "symbolic art; does not establish canonical city, insignia, or appearance",
+    "print_limit": "~186 ppi at A5 height; 300 ppi target for production, bleed/back/spine and author credit still to be decided"
+  },
+  "scores": {
+    "method": "Subjective manual editorial assessment, not independent or automated certification",
+    "literary": {
+      "opening": 9,
+      "character": 9.2,
+      "emotion": 8.8,
+      "worldbuilding": 9.2,
+      "pacing": 8.6,
+      "dialogue_and_prose": 8.7,
+      "originality": 9,
+      "hook": 9.3
+    },
+    "literary_overall": 9,
+    "design": {
+      "cover": 9.5,
+      "typography": 9.3,
+      "layout": 9.3,
+      "identity": 9.4
+    },
+    "digital_design_overall": 9.4,
+    "overall_estimate": 9.1
+  },
+  "literary_findings": [
+    "Opening lets character exist before tragedy; coffee promise, guitar, friends and leadership create specific emotional stakes.",
+    "Parallel war has human perspective and escalating magic; mystery remains open.",
+    "Hospital consent is more distinctive than selection menu; no retrospective RPG retcon.",
+    "Some routines and repeated anomalies could feel slow to a new reader; retain approved prose.",
+    "Some statements of the elderly bearer explain theme rather than dramatize it; keep as approved and refine restraint in future chapters.",
+    "Future continuity and originality audit still conditional; no independent read or commercial print preflight."
+  ],
+  "next": "Do not change approved prologue; prepare chapter 1 when user requests, reconcile arrival and first 300, preserve RPG."
+}
