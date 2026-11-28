@@ -1,0 +1,715 @@
+{
+  "schema": "OMEGA_HYBRID_CYCLE_0058_0062_PENDING_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "previous_cycle_blob": "b6e3bf48bd2faf41a961b327408a7521c5c550bb",
+  "prior_session_review_blob": "41e0388bf9ffb93481b60f6a662c9c846766df7e",
+  "previous_checkpoint_blob": "31b2d581e186fae7f6c2f1c0353c61362ed8ad85",
+  "macros": [
+    {
+      "macro": 58,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0058-01.json",
+      "blob": "b968f9aefc1ec5755d717f45baa66b1249a6de0c",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0058-closure-pending.json",
+      "checkpoint_blob": "046c240ded27e4c887f408eee425ee0b5fb51f9d",
+      "records": 56,
+      "lines": 10206,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        19,
+        20,
+        21,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "macro": 59,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0059-01.json",
+      "blob": "45aa73c868e61c6dc23de7d3fb7012711ca24684",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0059-closure-pending.json",
+      "checkpoint_blob": "854da4ac1168cd62d043e226678445ca5001ca8c",
+      "records": 51,
+      "lines": 10090,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "macro": 60,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0060-01.json",
+      "blob": "78ca352c4d313d865a4a5171ccd2516ad699ebc6",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0060-closure-pending.json",
+      "checkpoint_blob": "b5ab7af1759dca714c01b4ec835a8051fdb1a781",
+      "records": 49,
+      "lines": 10053,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "macro": 61,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0061-01.json",
+      "blob": "0571be07f96be16f0c17f06b87ab74ddaf6b27f2",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0061-closure-pending.json",
+      "checkpoint_blob": "0ec4ee9cb4b7956094bae5c21c32435d10c4b6ed",
+      "records": 60,
+      "lines": 10196,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "macro": 62,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0062-01.json",
+      "blob": "4ec604a59715d273ebb3bcb5481528cc78b1abe2",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0062-closure-pending.json",
+      "checkpoint_blob": "0ba994c0bb78ffd4301c2c21cd40b151dcbb43c6",
+      "records": 50,
+      "lines": 10296,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    }
+  ],
+  "prior_findings": [
+    {
+      "id": "D499_CLOSE",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        10465,
+        10485
+      ],
+      "sha256": "f469714de14ab11dd6e7320ea9e63b89069c244a515247deeb1c1c3d73f50bc7",
+      "promotion": false
+    },
+    {
+      "id": "MALHA_AUTHOR",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        10521,
+        10938
+      ],
+      "sha256": "5a839cd6d0c6672eea6b44ffcab60419ec2f5bd99085dab8d6c33099394b2303",
+      "promotion": false
+    },
+    {
+      "id": "RUMO_INDIVIDUAL",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        11722,
+        11904
+      ],
+      "sha256": "27878cf136dc8ec88536bf073c46e5e14e952ea09416f2968467b8abb71e4ed6",
+      "promotion": false
+    },
+    {
+      "id": "D500_PROPOSAL",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        13003,
+        13031
+      ],
+      "sha256": "59490e332a71de11fb63adc226d3877847647b219e6e8f21b48c54aa2907dc69",
+      "promotion": false
+    },
+    {
+      "id": "MALHA_MANIFEST",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        13631,
+        14038
+      ],
+      "sha256": "5eb3153b84d518ba24f4554dfd2d3fa27f8321a8be02cda39688177ebe8d6600",
+      "promotion": false
+    },
+    {
+      "id": "D501_COUNTS",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        15375,
+        15403
+      ],
+      "sha256": "3f7219f0f2c61c5752c1e71bf4cf1eb288c18a174ad6ee848db91326e8d82f5c",
+      "promotion": false
+    },
+    {
+      "id": "D502_COUNTS",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        17617,
+        17653
+      ],
+      "sha256": "0b8150437717811df64a2a688b40961be08a82617bc1a1c2c564de50d0562908",
+      "promotion": false
+    },
+    {
+      "id": "ARGOS",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        18665,
+        18900
+      ],
+      "sha256": "97a2a7d82e59ff4e76875b1b6ed2702a636d60de37dead3582b08da817ec0703",
+      "promotion": false
+    },
+    {
+      "id": "D503_COUNTS",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        19919,
+        19947
+      ],
+      "sha256": "dd60a8617e017395b7a4f650387fc32a2c0fcfec8cf76f5ba68405f00e29beb0",
+      "promotion": false
+    },
+    {
+      "id": "ERENA_NOTE",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        21307,
+        21714
+      ],
+      "sha256": "129c9ae2f946bc0bf178496fdbc17a1261ef46a8c4ad838839939d39cd78dbe8",
+      "promotion": false
+    },
+    {
+      "id": "RAIN_CREATIONS",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        21715,
+        22034
+      ],
+      "sha256": "cccc91c567e80015f9c8d136c222b2804b123a76c31f8839c1c1373c0947c3d4",
+      "promotion": false
+    },
+    {
+      "id": "D504_COUNTS",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        22633,
+        22661
+      ],
+      "sha256": "23b84a6da7e1a2625e8ade22f6cf34c560824e702172ffc499df57b9caf65c4f",
+      "promotion": false
+    },
+    {
+      "id": "NETWORKS_6800",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        23409,
+        24032
+      ],
+      "sha256": "a60c52ff271b80d9bc240cb11264c973910586967f14186223a99523c71e2b7a",
+      "promotion": false
+    },
+    {
+      "id": "AVENUE_8000",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        24853,
+        25068
+      ],
+      "sha256": "4029fbc42dd410c2b72ac617ec0cdac9cea38e2667e2eaa105463a7ec446f4d8",
+      "promotion": false
+    },
+    {
+      "id": "D505_CLOSE",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        25551,
+        25579
+      ],
+      "sha256": "4bfbbd8fe2302e6e8103377da9373e7858b442e598d72a91bf365b4971785d78",
+      "promotion": false
+    },
+    {
+      "id": "CAVITY_RESEARCH",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        25851,
+        26198
+      ],
+      "sha256": "693f4a353b0486027340db682a9a5766cd040522901e843fbe03c3ad538d4b7a",
+      "promotion": false
+    },
+    {
+      "id": "COUNCIL_APPROVAL",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        26357,
+        26578
+      ],
+      "sha256": "925113c9115e49dbd19c8b1e79ae8a927a00551f080db5dc61474917a54f0342",
+      "promotion": false
+    },
+    {
+      "id": "FOUNDERS",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        26903,
+        27094
+      ],
+      "sha256": "d7833347e2d08d3deb91e293bdeea65006dddcfa0345183507e499c11634d66d",
+      "promotion": false
+    },
+    {
+      "id": "NINE_STAGES",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        27277,
+        27500
+      ],
+      "sha256": "1486bf917b36e46da3375ed4a7bd20327d573e0303d1e758f125f496ddbf7c3d",
+      "promotion": false
+    },
+    {
+      "id": "S4",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        27501,
+        27939
+      ],
+      "sha256": "18efc376dcb734bf6384ef9b4cb14a1821bee816b8cf632e701b295ead252f0e",
+      "promotion": false
+    },
+    {
+      "id": "HEART",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        28563,
+        29080
+      ],
+      "sha256": "072500ba52425e60eb98e438f2bee2936a9e5c6858d1988c59956e81423fafe0",
+      "promotion": false
+    },
+    {
+      "id": "S3",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        29817,
+        29906
+      ],
+      "sha256": "b91ca69fb373a5a5f9b723f04c3acf2bec954e50d094db340490e011add21794",
+      "promotion": false
+    },
+    {
+      "id": "S2_UNFINISHED_DIALOGUE",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        30021,
+        30385
+      ],
+      "sha256": "6adc7595b44cbbf304c6386922b82e00cfa9374d23cb5a0ec4b78ad17a1f97ed",
+      "promotion": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "S2_COMPLETE",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        30537,
+        30537
+      ],
+      "sha256": "a1e66ae88dd569e90848a77f83631dd598a1538bb9b56ecb8b063717807860e8",
+      "promotion": false
+    },
+    {
+      "id": "AUDIT_AUTHOR",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        30979,
+        31743
+      ],
+      "sha256": "bba8c1ad493c2f5079e7ef42d1cad54b44c1aaf7add552c2a01bba5bb73e01c1",
+      "promotion": false
+    },
+    {
+      "id": "MATRIX",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        32131,
+        32350
+      ],
+      "sha256": "49e00d09330c08c0ffb3489d372a317935053e68338f296aa3ebc0e9b35006dd",
+      "promotion": false
+    },
+    {
+      "id": "S1",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        33219,
+        33257
+      ],
+      "sha256": "4a2b324cfd326180e1d4426c75a20f74a835833c9e3909eb0abc2bf89fa2fa8c",
+      "promotion": false
+    },
+    {
+      "id": "P0",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        35029,
+        35058
+      ],
+      "sha256": "5d6b9fa9690d82a1e4b2911484558b463b009ed31cd5d60d0a1cec8301f80773",
+      "promotion": false
+    },
+    {
+      "id": "COVER_AUTHOR",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        35120,
+        35242
+      ],
+      "sha256": "4df43dc1b36f9a5655708bed307e661b20ebc12e0adc8c33ecea7c7e55ab96da",
+      "promotion": false
+    },
+    {
+      "id": "COSTURA",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        35998,
+        36305
+      ],
+      "sha256": "065d5e6d86e7b0a3d78b23dc28aa2241f249569070d7fc07014022ad326358b6",
+      "promotion": false
+    },
+    {
+      "id": "D509",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        37370,
+        37388
+      ],
+      "sha256": "6787b1a682ea314b62c0bf6ca949a7baa3b762e0b993bda2c347e660537f684e",
+      "promotion": false
+    },
+    {
+      "id": "P1",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        40508,
+        40526
+      ],
+      "sha256": "f181c4f37cdb4786f80462fd6d2673f7da25e787a6132930c4f887998ccf6dff",
+      "promotion": false
+    },
+    {
+      "id": "P2",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        43004,
+        43028
+      ],
+      "sha256": "1b5cc202ce72abf9acd4538de213fec043a605dfac46adf38f96226e774d7d63",
+      "promotion": false
+    },
+    {
+      "id": "PACT_AUTHOR",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        43566,
+        43992
+      ],
+      "sha256": "b40d4f02a721f1e20479c4224f4b7aa9fb42422c1e4208c35f95976e42cc6bb9",
+      "promotion": false
+    },
+    {
+      "id": "P3",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        45164,
+        45196
+      ],
+      "sha256": "8c2b1091dc864be389ad0fb3af39af6813956107bbbd88081f43666619ab5545",
+      "promotion": false
+    },
+    {
+      "id": "COVER",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        45720,
+        45732
+      ],
+      "sha256": "a8a760f89c30c6d2a8156f3bd14b8420c284a2f08bc7dc8e7fe90d284714a01b",
+      "promotion": false
+    },
+    {
+      "id": "PHYSICAL_COMPLETE",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        49882,
+        49900
+      ],
+      "sha256": "590193653ffe42974e6e66c5e45c70e5ec3a4ebbe985d26441b4f265ef240b1d",
+      "promotion": false
+    },
+    {
+      "id": "CALENDAR_CORRECTION",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        49958,
+        50028
+      ],
+      "sha256": "b3542b8f93b91bb5bb06d57fedcf1c405f9eb58412a2d26f2be24877fb54fedd",
+      "promotion": false
+    },
+    {
+      "id": "COUNCIL",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        50992,
+        51249
+      ],
+      "sha256": "4514ae7f378e56191e50fe0183f71cf079b22eeeebe633c7fbbee053da2bb52d",
+      "promotion": false
+    },
+    {
+      "id": "MIREN_VOTE",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        51756,
+        51993
+      ],
+      "sha256": "ed237b7e7b025277e996774467f9d0e99b4d1fdc7f1ab093b500dbf648913fe2",
+      "promotion": false
+    },
+    {
+      "id": "WONDER",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        52384,
+        52484
+      ],
+      "sha256": "af246d4983e1270c7d249b4de7e179e91a57efa6abaf500bd980fa4b1216d209",
+      "promotion": false
+    },
+    {
+      "id": "ASTRA_VOTE",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        53886,
+        53930
+      ],
+      "sha256": "4440d282acb2d8085c32431fe8cd728acb09a05c86746df8ffba9ab5790fe460",
+      "promotion": false
+    },
+    {
+      "id": "BIRTHDAY",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        55968,
+        55990
+      ],
+      "sha256": "a6d6de7191b8314d9dd530edbae5048509d08f5cc676d6e6ee7f4215e1181c43",
+      "promotion": false
+    },
+    {
+      "id": "ARGOS_D516",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        58068,
+        58120
+      ],
+      "sha256": "e4c3141dfe231d17417e50fbe9bdfeb3f129dd0d1e969b4ed5150297d02609c4",
+      "promotion": false
+    },
+    {
+      "id": "ARGOS_D517",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        60416,
+        60428
+      ],
+      "sha256": "0070f2f045d25803c049af854a915ee4912e4a39068d698604d65b2a141fd697",
+      "promotion": false
+    },
+    {
+      "id": "PRIVATE_NEWS",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        60560,
+        60584
+      ],
+      "sha256": "e20fe3fc65a1bc84bc5c206a28f2f4189c8480e2c8341d0a1b70157fe2b4564e",
+      "promotion": false
+    },
+    {
+      "id": "GYM",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        60844,
+        60856
+      ],
+      "sha256": "e6a4416de425b8b67d207a9243f4a27abe0dfc8bae397737d437188c03aa289a",
+      "promotion": false
+    },
+    {
+      "id": "HZ1",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        60860,
+        60930
+      ],
+      "sha256": "a044e51bb0608406623141099cfd2a11b030297e8b858eb5f92e495896e5cccc",
+      "promotion": false
+    }
+  ],
+  "controls": [
+    "Preservar integralmente overlays anteriores, identidades, inventários, poderes e 300 originais; não promover história ou conhecimento privado.",
+    "D507 S-2 concluído 20h13; D508 Matriz Integrada não consciente, coordenação técnica distinta do Coração e NÓX, quatro subsolos e P0 concluídos. D509 Ilva direção artística, Costura do Horizonte piloto P0 e coletor solar bancada; arcana experimental. D510 P1, D511 P2, D512 P3 e Cobertura Viva; D513 Atlas 36m, jardins, pavilhões, anexos, auditório 2400 lugares, Casa Delegações 48 suítes, obra física completa. Correção D507–513 sete dias, não oito; não confundir obra com operação.",
+    "D514 Pacto e abertura cívica, Conselho nove representações nomeadas por grupos, Miren 6 a 3 Astra, aceitação livre. D515 Astra vice-diretora 7 a 2, não Executivo, seis chefias e Executivo pendentes. Lucas sem cargo/gabinete/voto especial. Maravilha nº001 reconhecimento SISTEMA, sem novo poder, soberania ou reconhecimento internacional.",
+    "D515 aniversário 14 M06, convites físicos ainda em trânsito D517. Círan/Yra não teletransportar; Casa Vareth não conhece aniversário/eleições/Maravilha. Memórias Terra fragmentárias restritas; corrida D516/D517, academia intenção sem terreno/prédio, não inferir retorno integral de memórias.",
+    "ARGOS D512 bancada, D515 instrumentos, D516 cativo real resposta aprimorada, D517 Matriz Compensação Coordenada, resposta distribuída e retorno seguro em falha simulada, sem voo livre/passageiros. LEVIATÃ projeto. HZ-1 encosta protegida, sétima nota/luz não explicadas, tradição oral e rotas hipóteses, Talis sem descoberta.",
+    "Malha 3600 não conscientes; Rumo singular; Coração independente, 8km Avenida preservados. Manter conhecimento assimétrico, decisões autorais e alegações históricas de persistência não eventos atuais.",
+    "Livro V confirmado por cabeçalhos; ciclo 0058–0062 consolidado apenas após validação nativa. Agrupamentos editoriais não exaustivos, eixos sem preenchimento artificial."
+  ],
+  "overlays": [
+    {
+      "id": "D513_CONSTRUCTION_CALENDAR_CORRECTION",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        50028,
+        50028
+      ],
+      "disposition": "seven days inclusive D507–D513, preserve dates and events; supersedes eight days in opening panel",
+      "promotion": false
+    }
+  ],
+  "totals": {
+    "lines": 50841,
+    "records": 266,
+    "session_lines": 30545,
+    "session_records": 159,
+    "staging_records": 3869,
+    "book_v_records": 974,
+    "book_v_lines": 178874,
+    "official_records": 1656
+  },
+  "cycle_status": "PENDING_NATIVE_0058_0062",
+  "status": "PENDING_NATIVE_STAGING_REVIEW",
+  "production_gate": "HOLD",
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "semantic_certification": false,
+  "independent_review": false,
+  "promotion": false
+}
