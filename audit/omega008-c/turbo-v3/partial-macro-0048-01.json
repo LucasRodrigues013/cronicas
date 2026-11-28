@@ -1,0 +1,2481 @@
+{
+  "schema": "OMEGA_TURBO_V3_PARTIAL_MACRO_EDITORIAL_RECEIPT_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "macro_id": "32e71a58767326cb72cdfc5fdcb203e0f86d81444b05e786306edd2b682a6ae7",
+  "previous_macro_id": "e23dbc4576557f11058b1b55090be275c6994109e29f08f4ed8ebebad2a5d25f",
+  "official_unit_seal": "9f3f057fe2750022899a3fe973be730347b374c516de8e4130ea75a18687fdab",
+  "macro_range": [
+    30372,
+    40651
+  ],
+  "range": [
+    30372,
+    40651
+  ],
+  "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+  "source_sha256": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+  "release_blob": "1ea9d60a58ecf00a368f0e33631164fc7cbe0051",
+  "previous_checkpoint_blob": "1ee93e8909f47c8e6cf8434fcb698a1cf3eef9f9",
+  "cycle_review_blob": "960241e971063307345ec001347a3ced1476bff5",
+  "records": [
+    {
+      "id": "O8C-B48-001",
+      "book": "V",
+      "day": 451,
+      "chapter_hint": 3,
+      "type": "author_direction",
+      "entities": [
+        "lucas",
+        "miren",
+        "nox",
+        "sistema",
+        "tecela"
+      ],
+      "summary": "Escolha especial IV, Herança do Véu sigilosa, Lucas OP, Miren autônoma, cinco opções, sem publicação.",
+      "axes": [
+        1,
+        7,
+        11,
+        23,
+        28,
+        29,
+        30
+      ],
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 30372,
+        "line_end": 30376,
+        "role": "Prompt",
+        "span_sha256_utf8": "9031fbddf865c4b11da091a0f22ec9e7f33cff46e4a289ee1c8c9d32ea08c844"
+      }
+    },
+    {
+      "id": "O8C-B48-002",
+      "book": "V",
+      "day": 452,
+      "chapter_hint": 3,
+      "type": "metadata",
+      "entities": [],
+      "summary": "Preparação e cabeçalho Livro V capítulo 3 IV; comentários de planejamento não eventos.",
+      "axes": [
+        1,
+        29,
+        30
+      ],
+      "authority": "METADATA_NOT_EVENT",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 30377,
+        "line_end": 30453,
+        "role": "Response",
+        "span_sha256_utf8": "becaabf38f6ffff1c07159f5da98dfb4a44fcf57679bdffb903724d406dac7f7"
+      }
+    },
+    {
+      "id": "O8C-B48-003",
+      "book": "V",
+      "day": 452,
+      "chapter_hint": 3,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren",
+        "nox",
+        "sistema"
+      ],
+      "summary": "06h17 criatura de oito patas rouba meia; humor doméstico, NÓX e Sistema distintos; sem identificar espécie/nome por presunção.",
+      "axes": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8,
+        9,
+        13,
+        22
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 30454,
+        "line_end": 30687,
+        "role": "Response",
+        "span_sha256_utf8": "c1a3dd0e9a9d0171022d55b4cf4890b36e12bcb440ce1f23a784c38d2cac44ad"
+      }
+    },
+    {
+      "id": "O8C-B48-004",
+      "book": "V",
+      "day": 452,
+      "chapter_hint": 3,
+      "type": "knowledge",
+      "entities": [
+        "lucas",
+        "miren",
+        "sistema",
+        "horizonte-total"
+      ],
+      "summary": "07h04 sala de controle: camadas culturais e procedência separadas do mapa físico planetário, Miren acrescenta dados de condutos.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        13,
+        15,
+        16,
+        17,
+        18,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 30688,
+        "line_end": 30793,
+        "role": "Response",
+        "span_sha256_utf8": "8f3ed4fda219a4650c30bb53ae60caaa23b7325fdbe45f393ea94d6f28149bed"
+      }
+    },
+    {
+      "id": "O8C-B48-005",
+      "book": "V",
+      "day": 452,
+      "chapter_hint": 3,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren",
+        "iria",
+        "orivantes"
+      ],
+      "summary": "08h36 Velas Altas: orivantes gigantes, migração, observação local e maravilhamento; Miren segue com Iria.",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        16,
+        18,
+        20,
+        22,
+        26,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 30794,
+        "line_end": 31119,
+        "role": "Response",
+        "span_sha256_utf8": "e4f0a09f3c079ac06f1669dad967bba2b23dd6980526fb53928acb5969db8355"
+      }
+    },
+    {
+      "id": "O8C-B48-006",
+      "book": "V",
+      "day": 452,
+      "chapter_hint": 3,
+      "type": "creation",
+      "entities": [
+        "lucas",
+        "nox",
+        "sistema",
+        "orivantes",
+        "eshara"
+      ],
+      "summary": "10h54 caçadores atacam orivante; Lucas e NÓX impedem captura e neutralizam seis indivíduos, entregam-nos e equipamento à fiscalização; autorização sob exame, sem vincular roubo anterior.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        19,
+        22,
+        23,
+        24,
+        25,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 31120,
+        "line_end": 31737,
+        "role": "Response",
+        "span_sha256_utf8": "2ef43c165a44872acf7f8b54ae16a948ee43a9cbe036edc85e65c5e9356d69de"
+      }
+    },
+    {
+      "id": "O8C-B48-007",
+      "book": "V",
+      "day": 452,
+      "chapter_hint": 3,
+      "type": "knowledge",
+      "entities": [
+        "miren",
+        "iria",
+        "selene-registros-de-vento",
+        "coroa-velha"
+      ],
+      "summary": "12h18 estação: Selene grisalha responsável pela observação sazonal, distinta de Selene Vard até prova; registros Primeira Corrente e Coroa Velha, hipóteses concorrentes, cópias públicas.",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        13,
+        16,
+        18,
+        19,
+        21,
+        22,
+        26,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 31738,
+        "line_end": 32115,
+        "role": "Response",
+        "span_sha256_utf8": "d675551feca30a781ac88f597184278528ea7d16362930d40d53f97f4a5a8b3b"
+      }
+    },
+    {
+      "id": "O8C-B48-008",
+      "book": "V",
+      "day": 452,
+      "chapter_hint": 3,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren",
+        "vessa",
+        "eren",
+        "eshara"
+      ],
+      "summary": "15h06 conflito contratual de Vessa; comunicado público local, circulação comercial de notícias não instantânea; sem atribuir a Tecelã.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        13,
+        16,
+        19,
+        20,
+        25,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 32116,
+        "line_end": 32351,
+        "role": "Response",
+        "span_sha256_utf8": "048becabcd102eaa61a68f4461075294f2f3c4c1c25cbb5d3c8e769dbec60752"
+      }
+    },
+    {
+      "id": "O8C-B48-009",
+      "book": "V",
+      "day": 452,
+      "chapter_hint": 3,
+      "type": "knowledge",
+      "entities": [
+        "miren",
+        "lucas",
+        "nox",
+        "armadura-azul"
+      ],
+      "summary": "18h42 manopla esquerda independente, leitura e módulos em teste reversível, sem vínculo permanente; investigação e autonomia.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        11,
+        13,
+        14,
+        15,
+        25,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 32352,
+        "line_end": 32701,
+        "role": "Response",
+        "span_sha256_utf8": "42f33bafee9376c65caa482403670782a20b4054014ff072e68ec1a80b1f4608"
+      }
+    },
+    {
+      "id": "O8C-B48-010",
+      "book": "V",
+      "day": 452,
+      "chapter_hint": 3,
+      "type": "reader_scene",
+      "entities": [
+        "brannik",
+        "naira",
+        "aurel",
+        "argos"
+      ],
+      "summary": "19h11 Complexo ARGOS, avanço experimental independente, não autorização de voo livre.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        13,
+        15,
+        16,
+        19,
+        25,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 32702,
+        "line_end": 32783,
+        "role": "Response",
+        "span_sha256_utf8": "3a78bbade4ac0e8dae9549f1dd0e9afb00e6d4b042c4613de1c3b5e88bb31bf3"
+      }
+    },
+    {
+      "id": "O8C-B48-011",
+      "book": "V",
+      "day": 452,
+      "chapter_hint": 3,
+      "type": "reader_scene",
+      "entities": [
+        "ciran",
+        "yra",
+        "aeldric",
+        "lira",
+        "calderva",
+        "leviata"
+      ],
+      "summary": "19h34 Cais Nona Maré, trabalho marítimo e progresso local; LEVIATÃ não embarcação concluída.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        13,
+        15,
+        16,
+        19,
+        20,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 32784,
+        "line_end": 32851,
+        "role": "Response",
+        "span_sha256_utf8": "9b8d69f06fca1c090b9ae28dbd455e9e8e88b13828058a8a5fb3b0a1145a3492"
+      }
+    },
+    {
+      "id": "O8C-B48-012",
+      "book": "V",
+      "day": 452,
+      "chapter_hint": 3,
+      "type": "reader_scene",
+      "entities": [
+        "tecela",
+        "correspondencia"
+      ],
+      "summary": "20h06 entreposto distante e documentos da Tecelã; comunicação em circulação, ainda sem contato com Miren, estratégia restrita.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        16,
+        19,
+        20,
+        23,
+        25,
+        26,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 32852,
+        "line_end": 32957,
+        "role": "Response",
+        "span_sha256_utf8": "eec22e510aed9171ad560a88ed93624a420289adb48a98330d2c320c97cb4986"
+      }
+    },
+    {
+      "id": "O8C-B48-013",
+      "book": "V",
+      "day": 452,
+      "chapter_hint": 3,
+      "type": "knowledge",
+      "entities": [
+        "lucas",
+        "miren",
+        "nox",
+        "sistema"
+      ],
+      "summary": "21h28 mirante Águas Prateadas: afeto, proteção sem controle, NÓX questiona evolução; natureza definitiva em aberto.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        16,
+        25,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 32958,
+        "line_end": 33269,
+        "role": "Response",
+        "span_sha256_utf8": "5e0335770605d6e50b59cafeb3e78225daae73dcb8bb723742fe9174693c9d13"
+      }
+    },
+    {
+      "id": "O8C-B48-014",
+      "book": "V",
+      "day": 452,
+      "chapter_hint": 3,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren",
+        "casa-dos-horizontes"
+      ],
+      "summary": "23h07 repouso e decisão de prosseguir condicionada à caravana; cartas distantes não conhecidas pelos protagonistas.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        16,
+        25,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 33270,
+        "line_end": 33457,
+        "role": "Response",
+        "span_sha256_utf8": "33e980d2860b9357677aa1a0095bf842c0aab230d8fb654fa0785c3d44450bdd"
+      }
+    },
+    {
+      "id": "O8C-B48-015",
+      "book": "V",
+      "day": 452,
+      "chapter_hint": 3,
+      "type": "transition_options",
+      "entities": [
+        "lucas",
+        "miren"
+      ],
+      "summary": "Fim IV, cinco opções, não transformar alternativa em evento.",
+      "axes": [
+        1,
+        2,
+        25,
+        28,
+        30
+      ],
+      "authority": "NARRATOR_PROPOSED_BRANCH_NOT_EVENT",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 33458,
+        "line_end": 33509,
+        "role": "Response",
+        "span_sha256_utf8": "c23162da98a4948c2058208c32e9442e0fd90572d1fa4d5b819f16944260ec1a"
+      }
+    },
+    {
+      "id": "O8C-B48-016",
+      "book": "V",
+      "day": 452,
+      "chapter_hint": 3,
+      "type": "author_direction",
+      "entities": [
+        "lucas",
+        "miren"
+      ],
+      "summary": "Ação livre: café sem CREATION, pesquisa sobre Talis e viagem; não antecipar respostas.",
+      "axes": [
+        1,
+        7,
+        8,
+        13,
+        25,
+        28,
+        29,
+        30
+      ],
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 33510,
+        "line_end": 33514,
+        "role": "Prompt",
+        "span_sha256_utf8": "727e2d765645052bc27bcdde73a66b84286c6da32aff30fd0673b2a94db01d56"
+      }
+    },
+    {
+      "id": "O8C-B48-017",
+      "book": "V",
+      "day": 453,
+      "chapter_hint": 3,
+      "type": "metadata",
+      "entities": [],
+      "summary": "Preparação e cabeçalho V do capítulo 3.",
+      "axes": [
+        1,
+        29,
+        30
+      ],
+      "authority": "METADATA_NOT_EVENT",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 33515,
+        "line_end": 33581,
+        "role": "Response",
+        "span_sha256_utf8": "0dd6e014fd685f23e61643a16e69bfaf0937361f7deea13af17a93237505d5ad"
+      }
+    },
+    {
+      "id": "O8C-B48-018",
+      "book": "V",
+      "day": 453,
+      "chapter_hint": 3,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren",
+        "nox",
+        "sistema",
+        "cafe-do-criador"
+      ],
+      "summary": "06h34 cozinha, prática de café e leite sem CREATION para preparar bebida; placa Se sobreviver, volte sempre, humor e aprendizagem.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        13,
+        15,
+        18,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 33582,
+        "line_end": 34017,
+        "role": "Response",
+        "span_sha256_utf8": "7d24b0394748909543f6531899bb1217957114f4482286c918f4cbe858c721ee"
+      }
+    },
+    {
+      "id": "O8C-B48-019",
+      "book": "V",
+      "day": 453,
+      "chapter_hint": 3,
+      "type": "knowledge",
+      "entities": [
+        "miren",
+        "lucas",
+        "talis"
+      ],
+      "summary": "07h48 sala de pesquisa, fotografia das irmãs, referência acadêmica D338 posterior à última carta pessoal, sem localizar Talis; saudade e método.",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        9,
+        10,
+        13,
+        16,
+        17,
+        25,
+        26,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 34018,
+        "line_end": 34394,
+        "role": "Response",
+        "span_sha256_utf8": "74946fbbc19c72f3bfa5755f2a897d2213960da5bc26ecad8ca15e9d6dbfcb49"
+      }
+    },
+    {
+      "id": "O8C-B48-020",
+      "book": "V",
+      "day": 453,
+      "chapter_hint": 3,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren",
+        "vessa",
+        "eren",
+        "cafe",
+        "segunda-feira"
+      ],
+      "summary": "09h12 despedida de Eshara, contatos acadêmicos e saída com caravana.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        13,
+        16,
+        18,
+        19,
+        20,
+        22,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 34395,
+        "line_end": 34592,
+        "role": "Response",
+        "span_sha256_utf8": "ffd3af7a08fdbaa650abbe73b5dcd310fd7c4783ba12673901b1b55b9cad6125"
+      }
+    },
+    {
+      "id": "O8C-B48-021",
+      "book": "V",
+      "day": 453,
+      "chapter_hint": 3,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren",
+        "vessa"
+      ],
+      "summary": "11h38 encostas ocidentais, paisagens e pântano, viagem com dificuldades reais e humor.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        16,
+        18,
+        20,
+        22
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 34593,
+        "line_end": 34852,
+        "role": "Response",
+        "span_sha256_utf8": "46833ad99222fa20e41938a27049bbf355775b3bfadb21954a84400d878fe687"
+      }
+    },
+    {
+      "id": "O8C-B48-022",
+      "book": "V",
+      "day": 453,
+      "chapter_hint": 3,
+      "type": "knowledge",
+      "entities": [
+        "miren",
+        "talis",
+        "nox"
+      ],
+      "summary": "14h26 pesquisa por expedição, instituição, colaboradores e circulação de cadernos em vez de apenas sobrenome; Vélath conhecido, itinerário incompleto.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        13,
+        16,
+        19,
+        21,
+        25,
+        26,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 34853,
+        "line_end": 35062,
+        "role": "Response",
+        "span_sha256_utf8": "a21606b06b2c9244219c8577efe5284f632248bb9cfc5d8e82601d38a6d6a1fe"
+      }
+    },
+    {
+      "id": "O8C-B48-023",
+      "book": "V",
+      "day": 453,
+      "chapter_hint": 3,
+      "type": "knowledge",
+      "entities": [
+        "miren",
+        "lucas",
+        "vessa",
+        "daren",
+        "talis"
+      ],
+      "summary": "17h03 Pouso Pedra de Mel; pedido acadêmico em nome de Miren, recibo prova recebimento, não acesso ou resposta; transporte físico.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        13,
+        16,
+        19,
+        20,
+        25,
+        26,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 35063,
+        "line_end": 35326,
+        "role": "Response",
+        "span_sha256_utf8": "59524ef6946d2dec1b95ad77d083658c15537edfe4a6f6c2fb10177ad6e95832"
+      }
+    },
+    {
+      "id": "O8C-B48-024",
+      "book": "V",
+      "day": 453,
+      "chapter_hint": 3,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren",
+        "nox",
+        "cafe-do-criador"
+      ],
+      "summary": "19h16 prática de bebida sem intervenção de NÓX; 19h48 fogueira e distribuição experimental, sem negócio permanente.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        13,
+        15,
+        18,
+        20,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 35327,
+        "line_end": 35770,
+        "role": "Response",
+        "span_sha256_utf8": "8b4e8b75e4ca8825651db1557f7a858fbfadda95e607cdfff1ee7e295ea45149"
+      }
+    },
+    {
+      "id": "O8C-B48-025",
+      "book": "V",
+      "day": 453,
+      "chapter_hint": 3,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren",
+        "nox",
+        "talis"
+      ],
+      "summary": "22h06 varanda, fotografia e recibo, nenhuma resposta, planos de café e viagem, parceria.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        13,
+        25,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 35771,
+        "line_end": 36054,
+        "role": "Response",
+        "span_sha256_utf8": "19564e06ca3d1eaab1b617919e316983c54bb3509a62224e4ee9af6d2492bf22"
+      }
+    },
+    {
+      "id": "O8C-B48-026",
+      "book": "V",
+      "day": 453,
+      "chapter_hint": 3,
+      "type": "transition_options",
+      "entities": [
+        "lucas",
+        "miren"
+      ],
+      "summary": "Capítulo 3 encerrado D453 22h34; cinco escolhas, metadado HEAD r5 histórico.",
+      "axes": [
+        1,
+        2,
+        25,
+        28,
+        29,
+        30
+      ],
+      "authority": "NARRATOR_PROPOSED_BRANCH_NOT_EVENT",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 36055,
+        "line_end": 36106,
+        "role": "Response",
+        "span_sha256_utf8": "aa9490e452ad502a196e26a4c52a82403de9a7208cee36bfa60bc5ef14c1e87b"
+      }
+    },
+    {
+      "id": "O8C-B48-027",
+      "book": "V",
+      "day": 453,
+      "chapter_hint": 4,
+      "type": "author_direction",
+      "entities": [
+        "lucas",
+        "miren",
+        "nox",
+        "tecela"
+      ],
+      "summary": "Escolha 4 capítulo 4, aventura e pesquisa, café sem CREATION, não forçar captura.",
+      "axes": [
+        1,
+        7,
+        11,
+        23,
+        25,
+        28,
+        29,
+        30
+      ],
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 36107,
+        "line_end": 36111,
+        "role": "Prompt",
+        "span_sha256_utf8": "66e55f82eb25214fd7d5be2eaa33afb97e0daf7cf2204d908b4d76640616defa"
+      }
+    },
+    {
+      "id": "O8C-B48-028",
+      "book": "V",
+      "day": 453,
+      "chapter_hint": 4,
+      "type": "metadata",
+      "entities": [],
+      "summary": "Cabeçalho capítulo 4 As Cartas Que Atravessam o Nevoeiro I.",
+      "axes": [
+        1,
+        29,
+        30
+      ],
+      "authority": "METADATA_NOT_EVENT",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 36112,
+        "line_end": 36180,
+        "role": "Response",
+        "span_sha256_utf8": "552d34ff7eae9d3e89596e1df99da4f9b67aa0d5350d6f30dff7bb8915923f94"
+      }
+    },
+    {
+      "id": "O8C-B48-029",
+      "book": "V",
+      "day": 453,
+      "chapter_hint": 4,
+      "type": "knowledge",
+      "entities": [
+        "lucas",
+        "miren",
+        "nox",
+        "sistema",
+        "cafe-do-criador"
+      ],
+      "summary": "22h34 conversa sobre cafeteria pequena, trabalho remunerado, missão Dignidade do Barista e pesquisa; sem empreendimento definitivo.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        13,
+        19,
+        20,
+        25,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 36181,
+        "line_end": 36402,
+        "role": "Response",
+        "span_sha256_utf8": "5e7b75d63c61ec33e6b2cfefb51c20a3eb21291d9ac7256545c2472c10753699"
+      }
+    },
+    {
+      "id": "O8C-B48-030",
+      "book": "V",
+      "day": 454,
+      "chapter_hint": 4,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren",
+        "vessa"
+      ],
+      "summary": "06h21 Pouso Pedra de Mel: preparação e deslocamento.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        13,
+        16,
+        20,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 36403,
+        "line_end": 36572,
+        "role": "Response",
+        "span_sha256_utf8": "9435c174a05faad955951aefb748a70d76735235f36de46a3e9ff86dc6584bd9"
+      }
+    },
+    {
+      "id": "O8C-B48-031",
+      "book": "V",
+      "day": 454,
+      "chapter_hint": 4,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren",
+        "vessa",
+        "lethra",
+        "baixio-campanulas"
+      ],
+      "summary": "08h07 entrada no Baixio, contratação de orientação local e condições de passagem.",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        16,
+        18,
+        19,
+        20,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 36573,
+        "line_end": 36802,
+        "role": "Response",
+        "span_sha256_utf8": "6cafdf1f37babf16a8e4826fc019830fd6c98f024771d49ca5c34378b45b709c"
+      }
+    },
+    {
+      "id": "O8C-B48-032",
+      "book": "V",
+      "day": 454,
+      "chapter_hint": 4,
+      "type": "knowledge",
+      "entities": [
+        "miren",
+        "lucas",
+        "lethra"
+      ],
+      "summary": "09h14 Estrada dos Sinais, orientação por sons, vegetação e convenções locais, registro cultural.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        13,
+        15,
+        16,
+        18,
+        22,
+        26,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 36803,
+        "line_end": 37118,
+        "role": "Response",
+        "span_sha256_utf8": "1eb839daf4b245ededd4b312c4cad616be93686be89591d0b4bd09d02d3ab6e7"
+      }
+    },
+    {
+      "id": "O8C-B48-033",
+      "book": "V",
+      "day": 454,
+      "chapter_hint": 4,
+      "type": "creation",
+      "entities": [
+        "lucas",
+        "miren",
+        "nox",
+        "lethra",
+        "sistema"
+      ],
+      "summary": "11h32 tempestade Descida Três Pedras; Lethra e Miren organizam abrigos, Lucas protege caravana e pessoas, sem abolir clima ou agência local.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        19,
+        20,
+        24,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 37119,
+        "line_end": 37686,
+        "role": "Response",
+        "span_sha256_utf8": "c383024bae6abc0a5d5697d17a6364c72bec391cb0e1709cb2529d18fb0cb323"
+      }
+    },
+    {
+      "id": "O8C-B48-034",
+      "book": "V",
+      "day": 454,
+      "chapter_hint": 4,
+      "type": "knowledge",
+      "entities": [
+        "miren",
+        "lucas",
+        "vessa",
+        "talis"
+      ],
+      "summary": "13h06 Vau Lanternas, inspeção e pausa por Vessa, catálogos distintos e procedimento de consulta, sem localização Talis.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        13,
+        16,
+        19,
+        20,
+        25,
+        26,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 37687,
+        "line_end": 37990,
+        "role": "Response",
+        "span_sha256_utf8": "bc7e3ec18babf33c40163f8379d4cbba4419a67a3d5c9b601e1c613c2b07e6d6"
+      }
+    },
+    {
+      "id": "O8C-B48-035",
+      "book": "V",
+      "day": 454,
+      "chapter_hint": 4,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren",
+        "sistema",
+        "vessa",
+        "cafe-do-criador"
+      ],
+      "summary": "16h22 bancada de café, clientes, custos, cinco bebidas sem CREATION como missão/objetivo, prática não abertura permanente.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        13,
+        18,
+        19,
+        20,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 37991,
+        "line_end": 38300,
+        "role": "Response",
+        "span_sha256_utf8": "fa4d6c47babfef3767235f6d3cc4d06a9062e33bd41b89cfd9959861435cf150"
+      }
+    },
+    {
+      "id": "O8C-B48-036",
+      "book": "V",
+      "day": 454,
+      "chapter_hint": 4,
+      "type": "reader_scene",
+      "entities": [
+        "correspondencia",
+        "talis"
+      ],
+      "summary": "18h43 carroça de correspondência distante; transporte de cartas sem comunicação milagrosa.",
+      "axes": [
+        1,
+        2,
+        3,
+        16,
+        19,
+        20,
+        25,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 38301,
+        "line_end": 38364,
+        "role": "Response",
+        "span_sha256_utf8": "fa4dfe65013e8aa75a15ff1743ce437cbcff66cb7f713a5919f273d76fb5f8b9"
+      }
+    },
+    {
+      "id": "O8C-B48-037",
+      "book": "V",
+      "day": 454,
+      "chapter_hint": 4,
+      "type": "knowledge",
+      "entities": [
+        "miren",
+        "nox",
+        "talis"
+      ],
+      "summary": "19h17 sala de pesquisa; nenhuma resposta, NÓX relata atividade local de Lucas, não leitura remota.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        13,
+        25,
+        26,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 38365,
+        "line_end": 38444,
+        "role": "Response",
+        "span_sha256_utf8": "dc3e3a649f8f68153c018e2fc1c50227b9fb56043d57033f868da04f19e96f51"
+      }
+    },
+    {
+      "id": "O8C-B48-038",
+      "book": "V",
+      "day": 454,
+      "chapter_hint": 4,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren",
+        "sistema"
+      ],
+      "summary": "20h56 mirante, maravilhamento, lembranças, custos do café e apoio emocional.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        13,
+        16,
+        18,
+        20
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 38445,
+        "line_end": 38662,
+        "role": "Response",
+        "span_sha256_utf8": "11d2104d76ece31862848f996bc7884bd1a8e7784d1a89be4db61e141031a07f"
+      }
+    },
+    {
+      "id": "O8C-B48-039",
+      "book": "V",
+      "day": 454,
+      "chapter_hint": 4,
+      "type": "knowledge",
+      "entities": [
+        "lucas",
+        "miren",
+        "armadura-azul"
+      ],
+      "summary": "22h37 conversa sobre teste e autonomia, decisão de vínculo ainda futura.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        9,
+        10,
+        11,
+        13,
+        25,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 38663,
+        "line_end": 38794,
+        "role": "Response",
+        "span_sha256_utf8": "d71c640f1d5cf3e3537289fea90295df49b67c6ecd0629800489d43f20d956ca"
+      }
+    },
+    {
+      "id": "O8C-B48-040",
+      "book": "V",
+      "day": 454,
+      "chapter_hint": 4,
+      "type": "transition_options",
+      "entities": [
+        "lucas",
+        "miren"
+      ],
+      "summary": "Fim I, D454 22h37, cinco escolhas e estado histórico não publicado.",
+      "axes": [
+        1,
+        2,
+        25,
+        28,
+        29,
+        30
+      ],
+      "authority": "NARRATOR_PROPOSED_BRANCH_NOT_EVENT",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 38795,
+        "line_end": 38846,
+        "role": "Response",
+        "span_sha256_utf8": "559b91d32608433300e49e880329eba753123544b04d36e8a0d1b3b3944245d3"
+      }
+    },
+    {
+      "id": "O8C-B48-041",
+      "book": "V",
+      "day": 454,
+      "chapter_hint": 4,
+      "type": "author_direction",
+      "entities": [
+        "lucas",
+        "miren",
+        "nox",
+        "sistema"
+      ],
+      "summary": "Combinação 3+4; testar katana dentro de NÓX, discutir missão global, não pressupor capacidade antes do ensaio.",
+      "axes": [
+        1,
+        7,
+        11,
+        13,
+        25,
+        28,
+        29,
+        30
+      ],
+      "authority": "AUTHOR_DIRECTION_NOT_EVENT",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 38847,
+        "line_end": 38851,
+        "role": "Prompt",
+        "span_sha256_utf8": "d23692f52598b998d716e3443a89460bb6e2ec3d42842e37b25a1f673b5afc6d"
+      }
+    },
+    {
+      "id": "O8C-B48-042",
+      "book": "V",
+      "day": 455,
+      "chapter_hint": 4,
+      "type": "metadata",
+      "entities": [],
+      "summary": "Preparação e cabeçalho II capítulo 4.",
+      "axes": [
+        1,
+        29,
+        30
+      ],
+      "authority": "METADATA_NOT_EVENT",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 38852,
+        "line_end": 38936,
+        "role": "Response",
+        "span_sha256_utf8": "47ab79e1d66fe7cd7c244b9b984ad7018b6822500e216687d30940754aa9f47d"
+      }
+    },
+    {
+      "id": "O8C-B48-043",
+      "book": "V",
+      "day": 454,
+      "chapter_hint": 4,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "nox",
+        "sistema",
+        "cafe-do-criador"
+      ],
+      "summary": "22h37 discussão sobre transporte e prática do café.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        13,
+        15,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 38937,
+        "line_end": 39022,
+        "role": "Response",
+        "span_sha256_utf8": "0ea92f5ca48a2d2848c2229bf6c4bfc56e4ebc955993d732eb40596c1231d2da"
+      }
+    },
+    {
+      "id": "O8C-B48-044",
+      "book": "V",
+      "day": 455,
+      "chapter_hint": 4,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren",
+        "nox",
+        "sistema",
+        "cafe-do-criador"
+      ],
+      "summary": "06h18 cozinha, cinco bebidas prontas 06h57, consistência Dignidade do Barista reconhecida; sem substituir prática por poder.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        13,
+        18,
+        20,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 39023,
+        "line_end": 39240,
+        "role": "Response",
+        "span_sha256_utf8": "951b862e766120b3873f3fbde747aa30476ff4bb49d093c4dc6e8825f54964eb"
+      }
+    },
+    {
+      "id": "O8C-B48-045",
+      "book": "V",
+      "day": 455,
+      "chapter_hint": 4,
+      "type": "knowledge",
+      "entities": [
+        "miren",
+        "lucas",
+        "nox",
+        "armadura-azul"
+      ],
+      "summary": "08h12 arena: Miren escolhe vínculo, autorização por segmento, encerramento sob controle próprio, módulos independentes, interface própria sem nova voz; mobilidade em ensaio.",
+      "axes": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8,
+        9,
+        11,
+        13,
+        14,
+        15,
+        24,
+        25,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 39241,
+        "line_end": 39638,
+        "role": "Response",
+        "span_sha256_utf8": "5c1c70c699f0b5766f78cf995cc4c2a371c3bb1acb27dd67a9bc4ae3f7ffd267"
+      }
+    },
+    {
+      "id": "O8C-B48-046",
+      "book": "V",
+      "day": 455,
+      "chapter_hint": 4,
+      "type": "creation",
+      "entities": [
+        "lucas",
+        "miren",
+        "nox",
+        "katana-original"
+      ],
+      "summary": "09h26 arsenal: NÓX integra bainha interna em dobra espacial, preserva katana original vinho-escura fisicamente inteira, saque e guarda testados; espada azul distinta.",
+      "axes": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8,
+        11,
+        12,
+        13,
+        14,
+        15,
+        24,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 39639,
+        "line_end": 40088,
+        "role": "Response",
+        "span_sha256_utf8": "4d9c333164e16108ed79ce9296099f295f7904da276427e1710ccab10feaa0bd"
+      }
+    },
+    {
+      "id": "O8C-B48-047",
+      "book": "V",
+      "day": 455,
+      "chapter_hint": 4,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren",
+        "nox",
+        "sistema"
+      ],
+      "summary": "10h03 arena Torres Brancas, ensaio de combate, precisão, identificação de ameaça e proteção de alvos neutros; cena continua em 0049.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15,
+        24,
+        25,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+        "source_sha256_manifest": "34de2eb03be4e10b829c125498c52b9f425d92946d62c958ac62e22057a1fa86",
+        "blob_sha1": "d974d93f18ebfb7c682edb40adf009f083c7f18d",
+        "source_blob_sha1s": [
+          "d974d93f18ebfb7c682edb40adf009f083c7f18d"
+        ],
+        "line_start": 40089,
+        "line_end": 40651,
+        "role": "Response",
+        "span_sha256_utf8": "cf6b34458b7c68d4f82c2ee2e14a16526dd7b6f27ec6e1499c9c01a58f778725"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "start": 30372,
+      "end": 30376,
+      "role": "Prompt",
+      "span_sha256_utf8": "9031fbddf865c4b11da091a0f22ec9e7f33cff46e4a289ee1c8c9d32ea08c844",
+      "record_ids": [
+        "O8C-B48-001"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 30377,
+      "end": 30453,
+      "role": "Response",
+      "span_sha256_utf8": "becaabf38f6ffff1c07159f5da98dfb4a44fcf57679bdffb903724d406dac7f7",
+      "record_ids": [
+        "O8C-B48-002"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 30454,
+      "end": 30687,
+      "role": "Response",
+      "span_sha256_utf8": "c1a3dd0e9a9d0171022d55b4cf4890b36e12bcb440ce1f23a784c38d2cac44ad",
+      "record_ids": [
+        "O8C-B48-003"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 30688,
+      "end": 30793,
+      "role": "Response",
+      "span_sha256_utf8": "8f3ed4fda219a4650c30bb53ae60caaa23b7325fdbe45f393ea94d6f28149bed",
+      "record_ids": [
+        "O8C-B48-004"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 30794,
+      "end": 31119,
+      "role": "Response",
+      "span_sha256_utf8": "e4f0a09f3c079ac06f1669dad967bba2b23dd6980526fb53928acb5969db8355",
+      "record_ids": [
+        "O8C-B48-005"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 31120,
+      "end": 31737,
+      "role": "Response",
+      "span_sha256_utf8": "2ef43c165a44872acf7f8b54ae16a948ee43a9cbe036edc85e65c5e9356d69de",
+      "record_ids": [
+        "O8C-B48-006"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 31738,
+      "end": 32115,
+      "role": "Response",
+      "span_sha256_utf8": "d675551feca30a781ac88f597184278528ea7d16362930d40d53f97f4a5a8b3b",
+      "record_ids": [
+        "O8C-B48-007"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 32116,
+      "end": 32351,
+      "role": "Response",
+      "span_sha256_utf8": "048becabcd102eaa61a68f4461075294f2f3c4c1c25cbb5d3c8e769dbec60752",
+      "record_ids": [
+        "O8C-B48-008"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 32352,
+      "end": 32701,
+      "role": "Response",
+      "span_sha256_utf8": "42f33bafee9376c65caa482403670782a20b4054014ff072e68ec1a80b1f4608",
+      "record_ids": [
+        "O8C-B48-009"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 32702,
+      "end": 32783,
+      "role": "Response",
+      "span_sha256_utf8": "3a78bbade4ac0e8dae9549f1dd0e9afb00e6d4b042c4613de1c3b5e88bb31bf3",
+      "record_ids": [
+        "O8C-B48-010"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 32784,
+      "end": 32851,
+      "role": "Response",
+      "span_sha256_utf8": "9b8d69f06fca1c090b9ae28dbd455e9e8e88b13828058a8a5fb3b0a1145a3492",
+      "record_ids": [
+        "O8C-B48-011"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 32852,
+      "end": 32957,
+      "role": "Response",
+      "span_sha256_utf8": "eec22e510aed9171ad560a88ed93624a420289adb48a98330d2c320c97cb4986",
+      "record_ids": [
+        "O8C-B48-012"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 32958,
+      "end": 33269,
+      "role": "Response",
+      "span_sha256_utf8": "5e0335770605d6e50b59cafeb3e78225daae73dcb8bb723742fe9174693c9d13",
+      "record_ids": [
+        "O8C-B48-013"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 33270,
+      "end": 33457,
+      "role": "Response",
+      "span_sha256_utf8": "33e980d2860b9357677aa1a0095bf842c0aab230d8fb654fa0785c3d44450bdd",
+      "record_ids": [
+        "O8C-B48-014"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 33458,
+      "end": 33509,
+      "role": "Response",
+      "span_sha256_utf8": "c23162da98a4948c2058208c32e9442e0fd90572d1fa4d5b819f16944260ec1a",
+      "record_ids": [
+        "O8C-B48-015"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 33510,
+      "end": 33514,
+      "role": "Prompt",
+      "span_sha256_utf8": "727e2d765645052bc27bcdde73a66b84286c6da32aff30fd0673b2a94db01d56",
+      "record_ids": [
+        "O8C-B48-016"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 33515,
+      "end": 33581,
+      "role": "Response",
+      "span_sha256_utf8": "0dd6e014fd685f23e61643a16e69bfaf0937361f7deea13af17a93237505d5ad",
+      "record_ids": [
+        "O8C-B48-017"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 33582,
+      "end": 34017,
+      "role": "Response",
+      "span_sha256_utf8": "7d24b0394748909543f6531899bb1217957114f4482286c918f4cbe858c721ee",
+      "record_ids": [
+        "O8C-B48-018"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 34018,
+      "end": 34394,
+      "role": "Response",
+      "span_sha256_utf8": "74946fbbc19c72f3bfa5755f2a897d2213960da5bc26ecad8ca15e9d6dbfcb49",
+      "record_ids": [
+        "O8C-B48-019"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 34395,
+      "end": 34592,
+      "role": "Response",
+      "span_sha256_utf8": "ffd3af7a08fdbaa650abbe73b5dcd310fd7c4783ba12673901b1b55b9cad6125",
+      "record_ids": [
+        "O8C-B48-020"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 34593,
+      "end": 34852,
+      "role": "Response",
+      "span_sha256_utf8": "46833ad99222fa20e41938a27049bbf355775b3bfadb21954a84400d878fe687",
+      "record_ids": [
+        "O8C-B48-021"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 34853,
+      "end": 35062,
+      "role": "Response",
+      "span_sha256_utf8": "a21606b06b2c9244219c8577efe5284f632248bb9cfc5d8e82601d38a6d6a1fe",
+      "record_ids": [
+        "O8C-B48-022"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 35063,
+      "end": 35326,
+      "role": "Response",
+      "span_sha256_utf8": "59524ef6946d2dec1b95ad77d083658c15537edfe4a6f6c2fb10177ad6e95832",
+      "record_ids": [
+        "O8C-B48-023"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 35327,
+      "end": 35770,
+      "role": "Response",
+      "span_sha256_utf8": "8b4e8b75e4ca8825651db1557f7a858fbfadda95e607cdfff1ee7e295ea45149",
+      "record_ids": [
+        "O8C-B48-024"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 35771,
+      "end": 36054,
+      "role": "Response",
+      "span_sha256_utf8": "19564e06ca3d1eaab1b617919e316983c54bb3509a62224e4ee9af6d2492bf22",
+      "record_ids": [
+        "O8C-B48-025"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 36055,
+      "end": 36106,
+      "role": "Response",
+      "span_sha256_utf8": "aa9490e452ad502a196e26a4c52a82403de9a7208cee36bfa60bc5ef14c1e87b",
+      "record_ids": [
+        "O8C-B48-026"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 36107,
+      "end": 36111,
+      "role": "Prompt",
+      "span_sha256_utf8": "66e55f82eb25214fd7d5be2eaa33afb97e0daf7cf2204d908b4d76640616defa",
+      "record_ids": [
+        "O8C-B48-027"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 36112,
+      "end": 36180,
+      "role": "Response",
+      "span_sha256_utf8": "552d34ff7eae9d3e89596e1df99da4f9b67aa0d5350d6f30dff7bb8915923f94",
+      "record_ids": [
+        "O8C-B48-028"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 36181,
+      "end": 36402,
+      "role": "Response",
+      "span_sha256_utf8": "5e7b75d63c61ec33e6b2cfefb51c20a3eb21291d9ac7256545c2472c10753699",
+      "record_ids": [
+        "O8C-B48-029"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 36403,
+      "end": 36572,
+      "role": "Response",
+      "span_sha256_utf8": "9435c174a05faad955951aefb748a70d76735235f36de46a3e9ff86dc6584bd9",
+      "record_ids": [
+        "O8C-B48-030"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 36573,
+      "end": 36802,
+      "role": "Response",
+      "span_sha256_utf8": "6cafdf1f37babf16a8e4826fc019830fd6c98f024771d49ca5c34378b45b709c",
+      "record_ids": [
+        "O8C-B48-031"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 36803,
+      "end": 37118,
+      "role": "Response",
+      "span_sha256_utf8": "1eb839daf4b245ededd4b312c4cad616be93686be89591d0b4bd09d02d3ab6e7",
+      "record_ids": [
+        "O8C-B48-032"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 37119,
+      "end": 37686,
+      "role": "Response",
+      "span_sha256_utf8": "c383024bae6abc0a5d5697d17a6364c72bec391cb0e1709cb2529d18fb0cb323",
+      "record_ids": [
+        "O8C-B48-033"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 37687,
+      "end": 37990,
+      "role": "Response",
+      "span_sha256_utf8": "bc7e3ec18babf33c40163f8379d4cbba4419a67a3d5c9b601e1c613c2b07e6d6",
+      "record_ids": [
+        "O8C-B48-034"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 37991,
+      "end": 38300,
+      "role": "Response",
+      "span_sha256_utf8": "fa4d6c47babfef3767235f6d3cc4d06a9062e33bd41b89cfd9959861435cf150",
+      "record_ids": [
+        "O8C-B48-035"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 38301,
+      "end": 38364,
+      "role": "Response",
+      "span_sha256_utf8": "fa4dfe65013e8aa75a15ff1743ce437cbcff66cb7f713a5919f273d76fb5f8b9",
+      "record_ids": [
+        "O8C-B48-036"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 38365,
+      "end": 38444,
+      "role": "Response",
+      "span_sha256_utf8": "dc3e3a649f8f68153c018e2fc1c50227b9fb56043d57033f868da04f19e96f51",
+      "record_ids": [
+        "O8C-B48-037"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 38445,
+      "end": 38662,
+      "role": "Response",
+      "span_sha256_utf8": "11d2104d76ece31862848f996bc7884bd1a8e7784d1a89be4db61e141031a07f",
+      "record_ids": [
+        "O8C-B48-038"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 38663,
+      "end": 38794,
+      "role": "Response",
+      "span_sha256_utf8": "d71c640f1d5cf3e3537289fea90295df49b67c6ecd0629800489d43f20d956ca",
+      "record_ids": [
+        "O8C-B48-039"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 38795,
+      "end": 38846,
+      "role": "Response",
+      "span_sha256_utf8": "559b91d32608433300e49e880329eba753123544b04d36e8a0d1b3b3944245d3",
+      "record_ids": [
+        "O8C-B48-040"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 38847,
+      "end": 38851,
+      "role": "Prompt",
+      "span_sha256_utf8": "d23692f52598b998d716e3443a89460bb6e2ec3d42842e37b25a1f673b5afc6d",
+      "record_ids": [
+        "O8C-B48-041"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 38852,
+      "end": 38936,
+      "role": "Response",
+      "span_sha256_utf8": "47ab79e1d66fe7cd7c244b9b984ad7018b6822500e216687d30940754aa9f47d",
+      "record_ids": [
+        "O8C-B48-042"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 38937,
+      "end": 39022,
+      "role": "Response",
+      "span_sha256_utf8": "0ea92f5ca48a2d2848c2229bf6c4bfc56e4ebc955993d732eb40596c1231d2da",
+      "record_ids": [
+        "O8C-B48-043"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 39023,
+      "end": 39240,
+      "role": "Response",
+      "span_sha256_utf8": "951b862e766120b3873f3fbde747aa30476ff4bb49d093c4dc6e8825f54964eb",
+      "record_ids": [
+        "O8C-B48-044"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 39241,
+      "end": 39638,
+      "role": "Response",
+      "span_sha256_utf8": "5c1c70c699f0b5766f78cf995cc4c2a371c3bb1acb27dd67a9bc4ae3f7ffd267",
+      "record_ids": [
+        "O8C-B48-045"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 39639,
+      "end": 40088,
+      "role": "Response",
+      "span_sha256_utf8": "4d9c333164e16108ed79ce9296099f295f7904da276427e1710ccab10feaa0bd",
+      "record_ids": [
+        "O8C-B48-046"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 40089,
+      "end": 40651,
+      "role": "Response",
+      "span_sha256_utf8": "cf6b34458b7c68d4f82c2ee2e14a16526dd7b6f27ec6e1499c9c01a58f778725",
+      "record_ids": [
+        "O8C-B48-047"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    }
+  ],
+  "axis_coverage": {
+    "assessed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "represented": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ]
+  },
+  "next_line": 40652,
+  "macro_complete": true,
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "semantic_certification": false,
+  "independent_review": false,
+  "promotion": false,
+  "status": "STAGING_CANDIDATE_PENDING_NATIVE",
+  "controls": [
+    "Fonte 04 integral SHA256 e fila imutável; cabeçalhos V nos dois intervalos. Ciclo 0048–0052 aberto, sem fronteira de livro.",
+    "Preservar overlays anteriores, 300x comparável, 100x dimensional, Segundo Limiar, Autoridade Continuidade, Matriz Fundação, 300 originais; não rebaixar poderes.",
+    "D452 manopla independente; D455 vínculo voluntário de Miren, não NÓX nem SISTEMA; katana original íntegra na bainha interna de NÓX; D458 azul entregue sob coação, armadura permanece vinculada.",
+    "Selene dos registros de vento não fundir com Selene Vard sem evidência; Teren manutenção não fundir com Téran condutor; preservar todas divergências anteriores.",
+    "Grande Horizonte dez mil meta estabelecida por Lucas, não ordem do Sistema; missão mundial inconclusiva; origem GÊNESE/Sistema não revelada. Café do Criador distinto de Horizonte Café, prática sem CREATION para bebidas.",
+    "Seyra convite próprio escrito 17 dias antes, resposta condicionada; não confundir com convite ou captura de Miren. Talis desaparecida, D338 referência histórica.",
+    "D458 operação real, Miren sob coação e protege Olsa, não atribuir desfecho, vitória, chave, portal ou resgate; cenas da Tecelã leitor apenas; último literal partida Lucas, não chegada.",
+    "Calendário literal D455 Mês03 dia30, D457 dia32 preservado sem normalizar; ordem da fonte, não calendário inferido.",
+    "Agrupamento editorial; subspans de conhecimento misto bloqueados para injeção; homologação independente e projeção tipada pendentes."
+  ]
+}
