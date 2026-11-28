@@ -118,3 +118,28 @@ def event(prop,history,state,evidence_sha,reason,key,approval=None,approval_key=
 def staging_status(prop,history,key,approval_key=None):
     return {"state":replay(prop,history,key,approval_key),"policy_changed":False,"canon_changed":False,
             "incorporation_executed":False,"production_hold":True,"semantic_certification":False}
+
+
+def compare_experiment(rows):
+    """Paired development outcomes; preserve improvements separately from recurrence.
+    Assessment labels must be supplied by reviewer; this does not certify their truth,
+    grant approval, or invent longitudinal evidence.
+    """
+    require(isinstance(rows,list) and bool(rows),"Empty paired experiment")
+    seen=set();counts={"avoid":{"baseline_fail":0,"candidate_fail":0,"n":0},"preserve":{"baseline_pass":0,"candidate_pass":0,"lost":0,"n":0}}
+    for r in rows:
+        require(isinstance(r,dict) and set(r)=={"case_id","source_sha256","direction","baseline","candidate"},"Invalid experiment row")
+        require(text(r["case_id"]) and r["case_id"] not in seen and digest(r["source_sha256"]),"Invalid case binding")
+        seen.add(r["case_id"])
+        require(r["direction"] in ("avoid","preserve") and r["baseline"] in ("PASS","FAIL","UNKNOWN") and r["candidate"] in ("PASS","FAIL","UNKNOWN"),"Invalid outcomes")
+        k=counts[r["direction"]];k["n"]+=1
+        if r["direction"]=="avoid":
+            # Unknown is not a demonstrated success.
+            k["baseline_fail"]+=int(r["baseline"]!="PASS")
+            k["candidate_fail"]+=int(r["candidate"]!="PASS")
+        else:
+            k["baseline_pass"]+=int(r["baseline"]=="PASS");k["candidate_pass"]+=int(r["candidate"]=="PASS")
+            k["lost"]+=int(r["baseline"]=="PASS" and r["candidate"]!="PASS")
+    a=counts["avoid"]
+    reduction=(a["baseline_fail"]-a["candidate_fail"])/a["baseline_fail"] if a["baseline_fail"] else None
+    return {"cases":len(rows),"counts":counts,"paired_failure_reduction":reduction,"longitudinal_recurrence_proven":False,"independent":False,"policy_changed":False,"production_hold":True}

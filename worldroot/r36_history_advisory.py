@@ -135,7 +135,14 @@ def retrieve(root,request,pack,*,shadow_mode=None):
             from .r36_temporal import rank_public_anchors,combine_anchor_lane
             selected=combine_anchor_lane(selected,rank_public_anchors(public_rows,q))
         if not selected and req["critical"]:critical_missing+=1
-        count+=len(selected);results.append({"requirement_id":req["id"],"status":"EDITORIAL_CANDIDATES" if selected else "NOT_RECOVERED_BY_ADVISORY","locators":selected})
+        count+=len(selected)
+        result={"requirement_id":req["id"],"status":"EDITORIAL_CANDIDATES" if selected else "NOT_RECOVERED_BY_ADVISORY","locators":selected}
+        if shadow_mode=="public_anchor":
+            # Preserve the existing locator schema for consumers. Experimental public
+            # anchor metadata is a separately typed lane, not a group-shaped locator.
+            result["public_anchor_locators"]=[r for r in selected if "event_id" in r]
+            result["locators"]=[r for r in selected if "group_id" in r]
+        results.append(result)
     out={"schema":"worldroot-r36-fc-advisory-v1","project":PROJECT,"head_sha256":g.sha(g.canonical(head)),"request_sha256":g.sha(g.canonical(request)),"pack_sha256":pack["pack_sha256"],"registry_binding":binding,"baseline_alias_links_active":binding==BINDING,"indexed_groups":len(index_rows),"blocked_groups":dict(blocked),"requirements":results,"locator_count":count,"critical_without_advisory":critical_missing,"scope":"DIRECTOR_ONLY_CANDIDATES_NOT_FACTS","knowledge_injection":False,"semantic_certification":False,"canon_changed":False}
     if shadow_mode is not None:out["shadow_mode"]=shadow_mode
     if reviewed_routes is not None:out["reviewed_reference_routes"]=reviewed_routes
@@ -148,6 +155,28 @@ def configured(root,request):
     need(c.get("mode")=="CONTROLLED_EDITORIAL_ADVISORY" and c.get("independent_certification") is False and c.get("canon_promotion") is False,"FC policy")
     p=os.environ.get("WORLDROOT_FC_INDEX");need(bool(p),"FC index required by active policy")
     return retrieve(root,request,load_pack(p,c["pack_sha256"]))
-def check_binding(request,advisory):
+def check_binding(request,advisory,*,allow_shadow=False):
     if advisory is None:return
+    need("shadow_mode" not in advisory or allow_shadow,"Experimental advisory cannot enter production")
     need(advisory.get("advisory_sha256")==seal({k:v for k,v in advisory.items() if k!="advisory_sha256"}) and advisory.get("request_sha256")==g.sha(g.canonical(request)) and advisory.get("head_sha256")==g.sha(g.canonical(request["head"])) and advisory.get("knowledge_injection") is False and advisory.get("canon_changed") is False and advisory.get("semantic_certification") is False,"FC advisory binding")
+
+def validate_shadow_lanes(request,advisory):
+    """Internal shadow consumer contract: no literal data or actor knowledge."""
+    check_binding(request,advisory,allow_shadow=True)
+    need(advisory.get("shadow_mode")=="public_anchor","Expected public anchor shadow")
+    reqs=[r["id"] for r in request["requirements"] if r.get("role","Response")=="Response"]
+    need([r["requirement_id"] for r in advisory["requirements"]]==reqs,"Shadow requirement order")
+    total=0
+    group_keys={"group_id","source","source_sha256","group_interval","group_anchor","line","line_sha256","signals","identity_status","knowledge_injection"}
+    anchor_keys={"event_id","episode","sequence","day","clock","source_sha256","line","anchor_sha256","signals","scope","identity_status","knowledge_injection","semantic_certification"}
+    for r in advisory["requirements"]:
+        groups=r["locators"];public=r["public_anchor_locators"]
+        need(len(groups)+len(public)<=3 and len(public)<=1,"Shadow locator budget")
+        for x in groups:
+            need(set(x)==group_keys and x["knowledge_injection"] is False and x["identity_status"]=="CANDIDATE_ONLY","Invalid group locator")
+        for x in public:
+            need(set(x)==anchor_keys and x["knowledge_injection"] is False and x["semantic_certification"] is False and x["scope"]=="PUBLIC_CANONICAL_LITERAL_ANCHOR_DIRECTOR_ONLY" and x["identity_status"]=="UNRESOLVED_QUERY_MATCH","Invalid public locator")
+            need(not any(g["source"]==x["episode"] and g["line"]==x["line"] for g in groups),"Duplicate public locator")
+        total+=len(groups)+len(public)
+    need(total==advisory["locator_count"],"Shadow locator count")
+    return {"locators":total,"requirements":len(reqs),"scope":"SHADOW_ONLY","production_allowed":False}

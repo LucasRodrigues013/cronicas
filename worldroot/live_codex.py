@@ -545,3 +545,40 @@ def field_review_inventory(record,db=None):
                             "typed_value_sha256":vhash,"typed_source":{"event_id":event_id,"episode":episode,"day":day,"clock":clock,"source_sha256":source_sha,"line":line},
                             "current_confirmed":False}
     return {"entity_id":ident,"fields":entries,"scope":"DIRECTOR_ONLY_FIELD_REVIEW","identity_inferred":False,"knowledge_injection":False,"semantic_certification":False,"canon_changed":False}
+
+
+def shadow_field_review(root,request,entity_ids,limit=12):
+    """Explicit read-only field inspection for a shadow request, never normal R33.
+    Requires exact IDs, a verified current HEAD, bounded output, and an intact graph
+    if present. No field values, hashes of values, or private source anchors leave it.
+    """
+    from . import git_cycle as g
+    root=Path(root);head=g.load(root/"canon/HEAD.json")
+    if request.get("project")!="CRONICAS_DE_UM_NOVO_MUNDO" or request.get("head")!=head:
+        raise ValueError("Shadow field request stale")
+    if type(limit) is not int or not 1<=limit<=24 or not isinstance(entity_ids,list) or not entity_ids or len(entity_ids)>limit or any(not isinstance(x,str) or not x for x in entity_ids) or len(set(entity_ids))!=len(entity_ids):
+        raise ValueError("Invalid shadow field scope")
+    g.verify_db(root,head)
+    reg=load_registry(root)
+    if reg is None:raise ValueError("Registry absent")
+    data,binding=reg
+    graph=root/"canon/codex.sqlite"
+    def project(rows,db=None):
+        by={r["id"]:r for r in rows}
+        if any(i not in by for i in entity_ids):raise ValueError("Unknown exact entity")
+        result=[]
+        for i in entity_ids:
+            fields=field_review_inventory(by[i],db)["fields"]
+            # Counts only; even private-adjacent field names and low-entropy hashes
+            # are not emitted into the request packet.
+            counts={}
+            for f in fields.values():counts[f["status"]]=counts.get(f["status"],0)+1
+            result.append({"entity_id":i,"field_status_counts":dict(sorted(counts.items()))})
+        return {"schema":"worldroot-apex-field-shadow-v1","scope":"DIRECTOR_ONLY_COUNTS_NOT_FACTS","head_sha256":g.sha(g.canonical(head)),"request_sha256":g.sha(g.canonical(request)),"registry_binding":binding,"graph_used":db is not None,"entities":result,"knowledge_injection":False,"semantic_certification":False,"canon_changed":False,"production_allowed":False}
+    if graph.is_symlink():raise ValueError("Unsafe graph")
+    if not graph.is_file():return project(list(all_records(data)))
+    with sqlite3.connect(graph.resolve().as_uri()+"?mode=ro",uri=True) as db:
+        meta=dict(db.execute("SELECT key,value FROM meta"))
+        if json.loads(meta.get("head","null"))!=head or meta.get("registry_sha")!=binding or db.execute("PRAGMA integrity_check").fetchone()[0]!="ok" or db.execute("PRAGMA foreign_key_check").fetchall():
+            raise ValueError("Unverified shadow graph")
+        return project(graph_rows(db),db)

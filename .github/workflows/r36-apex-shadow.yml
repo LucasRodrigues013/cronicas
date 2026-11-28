@@ -8,6 +8,8 @@ on:
       - 'worldroot/r36_temporal.py'
       - 'worldroot/live_codex.py'
       - 'tests/test_r36_apex_epistemic.py'
+      - 'worldroot/r36_adaptive.py'
+      - 'tests/test_r36_apex_shadow_contract.py'
       - 'tests/test_r36_apex_selection.py'
       - '.github/workflows/r36-apex-shadow.yml'
 permissions:
