@@ -1,5 +1,5 @@
 # Crônicas Literary Edition — Central editorial
-**Estado atual: prólogo V0.5 aguardando aprovação autoral.** Nenhum capítulo subsequente autorizado a avançar neste momento.
+**Estado atual: texto do prólogo V0.5 aprovado pelo autor; identidade visual premium entregue para avaliação.** Capítulo 1 não produzido nesta entrega.
 
 Esta seção existe exclusivamente na branch `literary-edition/book-i`. É uma adaptação literária separada, não uma fonte canônica do RPG. Não abrir PR para main ou story-archive. Fontes de RPG somente leitura. A rotina do RPG e Eidoryn são independentes.
 
@@ -20,7 +20,11 @@ Esta seção existe exclusivamente na branch `literary-edition/book-i`. É uma a
 | V0.4 | [Prólogo](book-i/drafts/00-prologo-v0.4.md) | [Revisão](book-i/evidence/00-prologo-review-v0.4.json) |
 | V0.5 | [Prólogo](book-i/drafts/00-prologo-v0.5.md) | [Revisão](book-i/evidence/00-prologo-review-v0.5.json) |
 
-[Capítulo 1 V0.2](book-i/drafts/01-capitulo-1-v0.2.md) — rascunho legado preservado, congelado até aprovação explícita do prólogo. Os PDFs antigos V0.3/V0.4 foram entregues no chat; binários anteriores não foram arquivados aqui. A partir de V0.5, arquivar a edição PDF exata, texto, auditoria e aprovação por versão.
+[Capítulo 1 V0.2](book-i/drafts/01-capitulo-1-v0.2.md) — rascunho legado preservado; texto do prólogo aprovado, revisão da transição a fazer na próxima produção. Os PDFs antigos V0.3/V0.4 foram entregues no chat; binários anteriores não foram arquivados aqui. A edição PDF de leitura V0.5 está arquivada; novo PDF premium entregue na conversa, binário ainda não arquivado nesta branch.
 
 ## Retomada
-Leia esta central, o contrato (a diretriz V0.4 prevalece), o feedback, a versão V0.5 e seu parecer. Se houver aprovação explícita, registre a decisão vinculada aos blobs exatos; só então prepare o capítulo 1. Se houver críticas, criar nova versão do prólogo e repetir a revisão. Não alterar o RPG, main, story-archive ou seus HEAD/RESUME. 
+Leia esta central, o contrato (a diretriz V0.4 prevalece), o feedback, a versão V0.5 e seu parecer. A aprovação textual V0.5 já está registrada. Preservar texto aprovado. A próxima produção pode revisar a transição e preparar o capítulo 1 mediante pedido do autor; alterações gráficas não implicam revisão textual. Não alterar o RPG, main, story-archive ou seus HEAD/RESUME. 
+
+## Aprovação e projeto gráfico
+- [Aprovação explícita V0.5](book-i/evidence/00-prologo-approval-v0.5.json)
+- [Identidade visual premium](DESIGN_SYSTEM.md)
