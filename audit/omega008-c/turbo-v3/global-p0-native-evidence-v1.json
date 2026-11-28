@@ -1,0 +1,1345 @@
+{
+  "schema": "OMEGA_GLOBAL_P0_NATIVE_EVIDENCE_V1",
+  "validated_commit": "070054085119e7430e355ba07d03341ec171c2fe",
+  "workflow_run": 46150096210,
+  "workflow_conclusion": "success",
+  "jobs": [
+    {
+      "id": 140994636498,
+      "conclusion": "success",
+      "aggregate": {
+        "atomic_claims_certified": 0,
+        "authority": {
+          "AUTHOR_DIRECTION_NOT_EVENT": 298,
+          "CONFLICTING_SOURCE_NOT_ADJUDICATED": 1,
+          "DREAM_NOT_EXTERNAL_EVENT": 1,
+          "EXPORT_METADATA_NOT_EVENT": 2,
+          "EXPORT_METADATA_NOT_NARRATIVE": 1,
+          "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED": 4219,
+          "METADATA_NOT_EVENT": 306,
+          "NARRATOR_PROPOSED_BRANCH_NOT_EVENT": 109,
+          "NON_NARRATIVE_SOURCE_GAP": 3,
+          "UNADJUDICATED_RESPONSE_VARIANT": 1
+        },
+        "blockers": {},
+        "book": {
+          "I": 490,
+          "II": 746,
+          "III": 886,
+          "IV": 773,
+          "V": 1380,
+          "VI": 666
+        },
+        "canon_changed": false,
+        "cumulative_status": "PASS_NATIVE_BOOK_VI_0116_QUEUE_COMPLETE",
+        "dispositions": {
+          "NON_EVENT_OR_GAP_REVIEW": 722,
+          "PENDING_ATOMIC_REVIEW": 4217,
+          "PENDING_ATOMIC_SCOPE_SPLIT": 2
+        },
+        "duplicate_exact_spans_additional": 0,
+        "effective_axes": {
+          "1": 3484,
+          "2": 3623,
+          "3": 3405,
+          "4": 684,
+          "5": 510,
+          "6": 418,
+          "7": 3631,
+          "8": 2393,
+          "9": 2074,
+          "10": 1564,
+          "11": 1516,
+          "12": 967,
+          "13": 1967,
+          "14": 963,
+          "15": 1827,
+          "16": 1851,
+          "17": 1135,
+          "18": 1177,
+          "19": 2208,
+          "20": 1330,
+          "21": 311,
+          "22": 364,
+          "23": 868,
+          "24": 757,
+          "25": 3472,
+          "26": 1280,
+          "27": 2873,
+          "28": 726,
+          "29": 711,
+          "30": 999
+        },
+        "excluded_duplicate_partial_records": 30,
+        "expected_records": 4941,
+        "explicit_coverage_lines": 704614,
+        "independent_review": false,
+        "inventory_sha256": "af78ceb90191dc0b204be3c21bc505e5011e7f94cd54f1cf8084f0632063cecc",
+        "issues": {
+          "empty_record_metadata_spans": 11,
+          "legacy_lines_without_explicit_coverage": 1679,
+          "legacy_receipts_without_explicit_coverage": 3,
+          "separate_export_headers": 4
+        },
+        "label_counts": {
+          "AMBIGUOUS": 25,
+          "SINGLE_CANDIDATE": 143,
+          "UNMATCHED": 566
+        },
+        "legacy_partition_lines": {
+          "EXISTING_ANCHOR_NOT_SEMANTIC_CERTIFIED": 1137,
+          "METADATA_NOT_EVENT": 8,
+          "UNANNOTATED_PENDING_P1": 534
+        },
+        "legacy_partition_sha256": "235e6f339b86512c8ac2ce669a5c4e1f7f5452b17aae35824216d04cde30ce36",
+        "legacy_partition_spans": 177,
+        "legacy_records": 1656,
+        "macro_metrics": [
+          {
+            "explicit_coverage_lines": 0,
+            "lines": 1216,
+            "macro": 1,
+            "receipts": 2,
+            "records": 58
+          },
+          {
+            "explicit_coverage_lines": 9548,
+            "lines": 10011,
+            "macro": 2,
+            "receipts": 2,
+            "records": 146
+          },
+          {
+            "explicit_coverage_lines": 10214,
+            "lines": 10214,
+            "macro": 3,
+            "receipts": 1,
+            "records": 90
+          },
+          {
+            "explicit_coverage_lines": 10201,
+            "lines": 10201,
+            "macro": 4,
+            "receipts": 1,
+            "records": 110
+          },
+          {
+            "explicit_coverage_lines": 9206,
+            "lines": 9206,
+            "macro": 5,
+            "receipts": 1,
+            "records": 86
+          },
+          {
+            "explicit_coverage_lines": 10036,
+            "lines": 10036,
+            "macro": 6,
+            "receipts": 1,
+            "records": 85
+          },
+          {
+            "explicit_coverage_lines": 10183,
+            "lines": 10183,
+            "macro": 7,
+            "receipts": 1,
+            "records": 95
+          },
+          {
+            "explicit_coverage_lines": 10197,
+            "lines": 10197,
+            "macro": 8,
+            "receipts": 1,
+            "records": 90
+          },
+          {
+            "explicit_coverage_lines": 10105,
+            "lines": 10105,
+            "macro": 9,
+            "receipts": 1,
+            "records": 86
+          },
+          {
+            "explicit_coverage_lines": 10003,
+            "lines": 10003,
+            "macro": 10,
+            "receipts": 1,
+            "records": 85
+          },
+          {
+            "explicit_coverage_lines": 10188,
+            "lines": 10188,
+            "macro": 11,
+            "receipts": 1,
+            "records": 88
+          },
+          {
+            "explicit_coverage_lines": 10278,
+            "lines": 10278,
+            "macro": 12,
+            "receipts": 1,
+            "records": 77
+          },
+          {
+            "explicit_coverage_lines": 10056,
+            "lines": 10056,
+            "macro": 13,
+            "receipts": 1,
+            "records": 55
+          },
+          {
+            "explicit_coverage_lines": 10132,
+            "lines": 10132,
+            "macro": 14,
+            "receipts": 1,
+            "records": 59
+          },
+          {
+            "explicit_coverage_lines": 3444,
+            "lines": 3444,
+            "macro": 15,
+            "receipts": 1,
+            "records": 26
+          },
+          {
+            "explicit_coverage_lines": 10051,
+            "lines": 10051,
+            "macro": 16,
+            "receipts": 1,
+            "records": 53
+          },
+          {
+            "explicit_coverage_lines": 10265,
+            "lines": 10265,
+            "macro": 17,
+            "receipts": 1,
+            "records": 47
+          },
+          {
+            "explicit_coverage_lines": 10227,
+            "lines": 10227,
+            "macro": 18,
+            "receipts": 1,
+            "records": 64
+          },
+          {
+            "explicit_coverage_lines": 10285,
+            "lines": 10285,
+            "macro": 19,
+            "receipts": 1,
+            "records": 60
+          },
+          {
+            "explicit_coverage_lines": 10096,
+            "lines": 10096,
+            "macro": 20,
+            "receipts": 1,
+            "records": 55
+          },
+          {
+            "explicit_coverage_lines": 10223,
+            "lines": 10223,
+            "macro": 21,
+            "receipts": 1,
+            "records": 68
+          },
+          {
+            "explicit_coverage_lines": 10044,
+            "lines": 10044,
+            "macro": 22,
+            "receipts": 1,
+            "records": 73
+          },
+          {
+            "explicit_coverage_lines": 10271,
+            "lines": 10271,
+            "macro": 23,
+            "receipts": 1,
+            "records": 56
+          },
+          {
+            "explicit_coverage_lines": 10249,
+            "lines": 10249,
+            "macro": 24,
+            "receipts": 1,
+            "records": 66
+          },
+          {
+            "explicit_coverage_lines": 10244,
+            "lines": 10244,
+            "macro": 25,
+            "receipts": 1,
+            "records": 80
+          },
+          {
+            "explicit_coverage_lines": 10271,
+            "lines": 10271,
+            "macro": 26,
+            "receipts": 1,
+            "records": 86
+          },
+          {
+            "explicit_coverage_lines": 10188,
+            "lines": 10188,
+            "macro": 27,
+            "receipts": 1,
+            "records": 78
+          },
+          {
+            "explicit_coverage_lines": 10234,
+            "lines": 10234,
+            "macro": 28,
+            "receipts": 1,
+            "records": 88
+          },
+          {
+            "explicit_coverage_lines": 585,
+            "lines": 585,
+            "macro": 29,
+            "receipts": 1,
+            "records": 12
+          },
+          {
+            "explicit_coverage_lines": 10298,
+            "lines": 10298,
+            "macro": 30,
+            "receipts": 3,
+            "records": 97
+          },
+          {
+            "explicit_coverage_lines": 10143,
+            "lines": 10143,
+            "macro": 31,
+            "receipts": 2,
+            "records": 81
+          },
+          {
+            "explicit_coverage_lines": 7756,
+            "lines": 7756,
+            "macro": 32,
+            "receipts": 2,
+            "records": 63
+          },
+          {
+            "explicit_coverage_lines": 10229,
+            "lines": 10229,
+            "macro": 33,
+            "receipts": 2,
+            "records": 80
+          },
+          {
+            "explicit_coverage_lines": 10198,
+            "lines": 10198,
+            "macro": 34,
+            "receipts": 2,
+            "records": 70
+          },
+          {
+            "explicit_coverage_lines": 10214,
+            "lines": 10214,
+            "macro": 35,
+            "receipts": 2,
+            "records": 58
+          },
+          {
+            "explicit_coverage_lines": 10122,
+            "lines": 10122,
+            "macro": 36,
+            "receipts": 2,
+            "records": 48
+          },
+          {
+            "explicit_coverage_lines": 10026,
+            "lines": 10026,
+            "macro": 37,
+            "receipts": 1,
+            "records": 48
+          },
+          {
+            "explicit_coverage_lines": 10132,
+            "lines": 10132,
+            "macro": 38,
+            "receipts": 1,
+            "records": 50
+          },
+          {
+            "explicit_coverage_lines": 10238,
+            "lines": 10238,
+            "macro": 39,
+            "receipts": 1,
+            "records": 50
+          },
+          {
+            "explicit_coverage_lines": 10016,
+            "lines": 10016,
+            "macro": 40,
+            "receipts": 1,
+            "records": 48
+          },
+          {
+            "explicit_coverage_lines": 4628,
+            "lines": 4628,
+            "macro": 41,
+            "receipts": 1,
+            "records": 19
+          },
+          {
+            "explicit_coverage_lines": 8935,
+            "lines": 8935,
+            "macro": 42,
+            "receipts": 1,
+            "records": 61
+          },
+          {
+            "explicit_coverage_lines": 10081,
+            "lines": 10081,
+            "macro": 43,
+            "receipts": 1,
+            "records": 75
+          },
+          {
+            "explicit_coverage_lines": 1270,
+            "lines": 1270,
+            "macro": 44,
+            "receipts": 1,
+            "records": 8
+          },
+          {
+            "explicit_coverage_lines": 10258,
+            "lines": 10258,
+            "macro": 45,
+            "receipts": 1,
+            "records": 52
+          },
+          {
+            "explicit_coverage_lines": 10000,
+            "lines": 10000,
+            "macro": 46,
+            "receipts": 1,
+            "records": 54
+          },
+          {
+            "explicit_coverage_lines": 10113,
+            "lines": 10113,
+            "macro": 47,
+            "receipts": 1,
+            "records": 54
+          },
+          {
+            "explicit_coverage_lines": 10280,
+            "lines": 10280,
+            "macro": 48,
+            "receipts": 1,
+            "records": 47
+          },
+          {
+            "explicit_coverage_lines": 10178,
+            "lines": 10178,
+            "macro": 49,
+            "receipts": 1,
+            "records": 47
+          },
+          {
+            "explicit_coverage_lines": 10144,
+            "lines": 10144,
+            "macro": 50,
+            "receipts": 1,
+            "records": 55
+          },
+          {
+            "explicit_coverage_lines": 10247,
+            "lines": 10247,
+            "macro": 51,
+            "receipts": 1,
+            "records": 56
+          },
+          {
+            "explicit_coverage_lines": 3950,
+            "lines": 3950,
+            "macro": 52,
+            "receipts": 1,
+            "records": 31
+          },
+          {
+            "explicit_coverage_lines": 10158,
+            "lines": 10158,
+            "macro": 53,
+            "receipts": 1,
+            "records": 66
+          },
+          {
+            "explicit_coverage_lines": 10189,
+            "lines": 10189,
+            "macro": 54,
+            "receipts": 1,
+            "records": 50
+          },
+          {
+            "explicit_coverage_lines": 10153,
+            "lines": 10153,
+            "macro": 55,
+            "receipts": 1,
+            "records": 58
+          },
+          {
+            "explicit_coverage_lines": 923,
+            "lines": 923,
+            "macro": 56,
+            "receipts": 1,
+            "records": 6
+          },
+          {
+            "explicit_coverage_lines": 10089,
+            "lines": 10089,
+            "macro": 57,
+            "receipts": 1,
+            "records": 49
+          },
+          {
+            "explicit_coverage_lines": 10206,
+            "lines": 10206,
+            "macro": 58,
+            "receipts": 1,
+            "records": 56
+          },
+          {
+            "explicit_coverage_lines": 10090,
+            "lines": 10090,
+            "macro": 59,
+            "receipts": 1,
+            "records": 51
+          },
+          {
+            "explicit_coverage_lines": 10053,
+            "lines": 10053,
+            "macro": 60,
+            "receipts": 1,
+            "records": 49
+          },
+          {
+            "explicit_coverage_lines": 10196,
+            "lines": 10196,
+            "macro": 61,
+            "receipts": 1,
+            "records": 60
+          },
+          {
+            "explicit_coverage_lines": 10296,
+            "lines": 10296,
+            "macro": 62,
+            "receipts": 1,
+            "records": 50
+          },
+          {
+            "explicit_coverage_lines": 10243,
+            "lines": 10243,
+            "macro": 63,
+            "receipts": 1,
+            "records": 67
+          },
+          {
+            "explicit_coverage_lines": 10107,
+            "lines": 10107,
+            "macro": 64,
+            "receipts": 1,
+            "records": 67
+          },
+          {
+            "explicit_coverage_lines": 10195,
+            "lines": 10195,
+            "macro": 65,
+            "receipts": 1,
+            "records": 71
+          },
+          {
+            "explicit_coverage_lines": 9954,
+            "lines": 9954,
+            "macro": 66,
+            "receipts": 1,
+            "records": 62
+          },
+          {
+            "explicit_coverage_lines": 3269,
+            "lines": 3269,
+            "macro": 67,
+            "receipts": 1,
+            "records": 25
+          },
+          {
+            "explicit_coverage_lines": 890,
+            "lines": 890,
+            "macro": 68,
+            "receipts": 1,
+            "records": 10
+          },
+          {
+            "explicit_coverage_lines": 942,
+            "lines": 942,
+            "macro": 69,
+            "receipts": 1,
+            "records": 12
+          },
+          {
+            "explicit_coverage_lines": 904,
+            "lines": 904,
+            "macro": 70,
+            "receipts": 1,
+            "records": 15
+          },
+          {
+            "explicit_coverage_lines": 1298,
+            "lines": 1298,
+            "macro": 71,
+            "receipts": 1,
+            "records": 19
+          },
+          {
+            "explicit_coverage_lines": 1390,
+            "lines": 1390,
+            "macro": 72,
+            "receipts": 1,
+            "records": 15
+          },
+          {
+            "explicit_coverage_lines": 1262,
+            "lines": 1262,
+            "macro": 73,
+            "receipts": 1,
+            "records": 14
+          },
+          {
+            "explicit_coverage_lines": 1387,
+            "lines": 1387,
+            "macro": 74,
+            "receipts": 1,
+            "records": 16
+          },
+          {
+            "explicit_coverage_lines": 1730,
+            "lines": 1730,
+            "macro": 75,
+            "receipts": 1,
+            "records": 13
+          },
+          {
+            "explicit_coverage_lines": 3608,
+            "lines": 3608,
+            "macro": 76,
+            "receipts": 1,
+            "records": 12
+          },
+          {
+            "explicit_coverage_lines": 4288,
+            "lines": 4288,
+            "macro": 77,
+            "receipts": 1,
+            "records": 13
+          },
+          {
+            "explicit_coverage_lines": 3630,
+            "lines": 3630,
+            "macro": 78,
+            "receipts": 1,
+            "records": 18
+          },
+          {
+            "explicit_coverage_lines": 937,
+            "lines": 937,
+            "macro": 79,
+            "receipts": 1,
+            "records": 13
+          },
+          {
+            "explicit_coverage_lines": 1780,
+            "lines": 1780,
+            "macro": 80,
+            "receipts": 1,
+            "records": 16
+          },
+          {
+            "explicit_coverage_lines": 1410,
+            "lines": 1410,
+            "macro": 81,
+            "receipts": 1,
+            "records": 12
+          },
+          {
+            "explicit_coverage_lines": 2020,
+            "lines": 2020,
+            "macro": 82,
+            "receipts": 1,
+            "records": 16
+          },
+          {
+            "explicit_coverage_lines": 2260,
+            "lines": 2260,
+            "macro": 83,
+            "receipts": 1,
+            "records": 19
+          },
+          {
+            "explicit_coverage_lines": 2586,
+            "lines": 2586,
+            "macro": 84,
+            "receipts": 1,
+            "records": 21
+          },
+          {
+            "explicit_coverage_lines": 3307,
+            "lines": 3307,
+            "macro": 85,
+            "receipts": 1,
+            "records": 28
+          },
+          {
+            "explicit_coverage_lines": 2548,
+            "lines": 2548,
+            "macro": 86,
+            "receipts": 1,
+            "records": 19
+          },
+          {
+            "explicit_coverage_lines": 1880,
+            "lines": 1880,
+            "macro": 87,
+            "receipts": 1,
+            "records": 16
+          },
+          {
+            "explicit_coverage_lines": 1897,
+            "lines": 1897,
+            "macro": 88,
+            "receipts": 1,
+            "records": 19
+          },
+          {
+            "explicit_coverage_lines": 1877,
+            "lines": 1877,
+            "macro": 89,
+            "receipts": 1,
+            "records": 22
+          },
+          {
+            "explicit_coverage_lines": 1818,
+            "lines": 1818,
+            "macro": 90,
+            "receipts": 1,
+            "records": 22
+          },
+          {
+            "explicit_coverage_lines": 1317,
+            "lines": 1317,
+            "macro": 91,
+            "receipts": 1,
+            "records": 19
+          },
+          {
+            "explicit_coverage_lines": 1372,
+            "lines": 1372,
+            "macro": 92,
+            "receipts": 1,
+            "records": 19
+          },
+          {
+            "explicit_coverage_lines": 1280,
+            "lines": 1280,
+            "macro": 93,
+            "receipts": 1,
+            "records": 19
+          },
+          {
+            "explicit_coverage_lines": 1291,
+            "lines": 1291,
+            "macro": 94,
+            "receipts": 1,
+            "records": 19
+          },
+          {
+            "explicit_coverage_lines": 1166,
+            "lines": 1166,
+            "macro": 95,
+            "receipts": 1,
+            "records": 19
+          },
+          {
+            "explicit_coverage_lines": 1584,
+            "lines": 1584,
+            "macro": 96,
+            "receipts": 1,
+            "records": 20
+          },
+          {
+            "explicit_coverage_lines": 1916,
+            "lines": 1916,
+            "macro": 97,
+            "receipts": 1,
+            "records": 19
+          },
+          {
+            "explicit_coverage_lines": 2193,
+            "lines": 2193,
+            "macro": 98,
+            "receipts": 1,
+            "records": 19
+          },
+          {
+            "explicit_coverage_lines": 2170,
+            "lines": 2170,
+            "macro": 99,
+            "receipts": 1,
+            "records": 19
+          },
+          {
+            "explicit_coverage_lines": 1985,
+            "lines": 1985,
+            "macro": 100,
+            "receipts": 1,
+            "records": 19
+          },
+          {
+            "explicit_coverage_lines": 1689,
+            "lines": 1689,
+            "macro": 101,
+            "receipts": 1,
+            "records": 12
+          },
+          {
+            "explicit_coverage_lines": 2162,
+            "lines": 2162,
+            "macro": 102,
+            "receipts": 1,
+            "records": 15
+          },
+          {
+            "explicit_coverage_lines": 2432,
+            "lines": 2432,
+            "macro": 103,
+            "receipts": 1,
+            "records": 14
+          },
+          {
+            "explicit_coverage_lines": 3010,
+            "lines": 3010,
+            "macro": 104,
+            "receipts": 1,
+            "records": 14
+          },
+          {
+            "explicit_coverage_lines": 4416,
+            "lines": 4416,
+            "macro": 105,
+            "receipts": 1,
+            "records": 17
+          },
+          {
+            "explicit_coverage_lines": 2740,
+            "lines": 2740,
+            "macro": 106,
+            "receipts": 1,
+            "records": 14
+          },
+          {
+            "explicit_coverage_lines": 2687,
+            "lines": 2687,
+            "macro": 107,
+            "receipts": 1,
+            "records": 15
+          },
+          {
+            "explicit_coverage_lines": 3143,
+            "lines": 3143,
+            "macro": 108,
+            "receipts": 1,
+            "records": 16
+          },
+          {
+            "explicit_coverage_lines": 925,
+            "lines": 925,
+            "macro": 109,
+            "receipts": 1,
+            "records": 10
+          },
+          {
+            "explicit_coverage_lines": 878,
+            "lines": 878,
+            "macro": 110,
+            "receipts": 1,
+            "records": 12
+          },
+          {
+            "explicit_coverage_lines": 974,
+            "lines": 974,
+            "macro": 111,
+            "receipts": 1,
+            "records": 11
+          },
+          {
+            "explicit_coverage_lines": 573,
+            "lines": 573,
+            "macro": 112,
+            "receipts": 1,
+            "records": 9
+          },
+          {
+            "explicit_coverage_lines": 681,
+            "lines": 681,
+            "macro": 113,
+            "receipts": 1,
+            "records": 10
+          },
+          {
+            "explicit_coverage_lines": 666,
+            "lines": 666,
+            "macro": 114,
+            "receipts": 1,
+            "records": 9
+          },
+          {
+            "explicit_coverage_lines": 728,
+            "lines": 728,
+            "macro": 115,
+            "receipts": 1,
+            "records": 11
+          },
+          {
+            "explicit_coverage_lines": 2386,
+            "lines": 2386,
+            "macro": 116,
+            "receipts": 1,
+            "records": 20
+          }
+        ],
+        "macros": 116,
+        "original_closed_events": 754,
+        "original_closed_knowledge": 1468,
+        "p1_group_count": 116,
+        "p1_groups_sha256": "719816923d9ebb950fa1dd940b46f1d4fbaeffef075c77f7d4fbd58061f60d10",
+        "production_gate": "HOLD",
+        "queue_lines": 706293,
+        "queue_unresolved": 22,
+        "receipt_files": 130,
+        "receipt_manifest_sha256": "50105ba22080a1517cbcfb6604560247dccb1a4c2f97982778c0acf9a321792b",
+        "record_count_matches": true,
+        "records": 4941,
+        "registry_files": {
+          "female-character-design-d580-v2.json": {
+            "top_level_arrays": {
+              "author_approved": 21,
+              "notes": 6,
+              "profiles": 21
+            },
+            "top_level_object_sizes": {
+              "previous_version": 2,
+              "source_inventory": 2
+            }
+          },
+          "r35-legacy-name-reconciliation-v10.json": {
+            "top_level_arrays": {
+              "roster": 104
+            },
+            "top_level_object_sizes": {
+              "checkpoint": 2,
+              "counts": 3,
+              "rules": 6
+            }
+          },
+          "r35-living-overlay-manifest.json": {
+            "top_level_arrays": {
+              "notes": 11,
+              "vetoes": 0
+            },
+            "top_level_object_sizes": {
+              "author_recovery": 5,
+              "book_ii_recovery": 9,
+              "character_overlay": 2,
+              "checkpoint": 4,
+              "naming_review": 3,
+              "pending_historical_review": 6,
+              "rules": 9,
+              "world_overlay": 2
+            }
+          },
+          "r35-natural-completion-d579-v14.json": {
+            "top_level_arrays": {
+              "alias_decisions": 22,
+              "candidate_decisions": 23,
+              "characters": 96,
+              "legacy_reconciliation": 25,
+              "notes": 9,
+              "references": 4
+            },
+            "top_level_object_sizes": {
+              "book_ii_recovery": 7,
+              "checkpoint": 15,
+              "metrics": 14,
+              "policy": 4,
+              "recovery_lot": 4
+            }
+          },
+          "r35-world-completion-d579-v12.json": {
+            "top_level_arrays": {
+              "links": 25,
+              "notes": 7,
+              "records": 96
+            },
+            "top_level_object_sizes": {
+              "arcane": 5,
+              "book_ii_recovery": 7,
+              "checkpoint": 15,
+              "metrics": 3
+            }
+          },
+          "universal-codex-design-d580-v1.json": {
+            "top_level_arrays": {
+              "characters": 81,
+              "domains": 10,
+              "legacy_character_links": 25,
+              "records": 174,
+              "research": 11,
+              "school_links": 12,
+              "source_files": 7,
+              "species": 14
+            },
+            "top_level_object_sizes": {
+              "arcane": 13,
+              "authorization": 3,
+              "checkpoint": 3,
+              "checks": 16,
+              "coherence": 8,
+              "creation_age_policy": 7
+            }
+          }
+        },
+        "registry_ids": 1238,
+        "role": {
+          "Metadata": 1,
+          "Prompt": 298,
+          "Response": 4642
+        },
+        "scope_findings": [
+          {
+            "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+            "effective_visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+            "id": "O8C-B6-054",
+            "macro": 6,
+            "receipt_blob": "e366009b370f15cadc3651e44f6e226751169ad8",
+            "status": "RESTRICTED_PENDING_ATOMIC_SPLIT",
+            "type": "dream",
+            "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION"
+          },
+          {
+            "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+            "effective_visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+            "id": "O8C-B10-072",
+            "macro": 10,
+            "receipt_blob": "8a34ebb05313e06e71fd0f971ceeb8bb2301975c",
+            "status": "RESTRICTED_PENDING_ATOMIC_SPLIT",
+            "type": "dream",
+            "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION"
+          }
+        ],
+        "status": "P0_INVENTORY_STRUCTURAL_PASS",
+        "structural_disposition_lines": 706293,
+        "typed_projection": false,
+        "types": {
+          "ability": 1,
+          "aerun": 1,
+          "agreement": 11,
+          "agriculture": 1,
+          "alert": 1,
+          "ancient_lore": 1,
+          "ancient_network": 2,
+          "anniversary": 2,
+          "anomaly": 1,
+          "antagonist": 13,
+          "appearance": 5,
+          "archaeology": 1,
+          "architecture": 3,
+          "archive": 7,
+          "arena": 1,
+          "arrival": 6,
+          "artifact": 18,
+          "assembly": 2,
+          "assessment": 1,
+          "assignments": 1,
+          "atlas": 9,
+          "author": 32,
+          "author_direction": 153,
+          "award": 1,
+          "bestiary": 23,
+          "book_close": 1,
+          "calderva": 1,
+          "calendar": 2,
+          "calendar_proposal": 1,
+          "cartography": 1,
+          "celebration": 1,
+          "character": 66,
+          "character-state": 1,
+          "choice": 43,
+          "city": 13,
+          "civic": 15,
+          "civil": 3,
+          "cliffhanger": 3,
+          "closure": 29,
+          "combat": 46,
+          "command": 2,
+          "commerce": 3,
+          "commercial_conflict": 2,
+          "commercial_rivalry": 1,
+          "communication": 7,
+          "community": 5,
+          "conflict": 8,
+          "confrontation": 1,
+          "consent": 1,
+          "consequence": 14,
+          "contact": 1,
+          "continuation": 1,
+          "continuity": 4,
+          "contract_analysis": 1,
+          "cooperation": 2,
+          "creation": 209,
+          "crisis": 1,
+          "culture": 87,
+          "culture_proposal": 1,
+          "currency": 2,
+          "custody": 1,
+          "daily-life": 6,
+          "debate": 1,
+          "declaration": 1,
+          "defense": 3,
+          "delegation": 16,
+          "departure": 6,
+          "design": 1,
+          "diagnosis": 1,
+          "dialogue": 2,
+          "diplomacy": 78,
+          "discovery": 5,
+          "domestic": 1,
+          "dream": 5,
+          "ecology": 2,
+          "economy": 31,
+          "editorial": 74,
+          "editorial-repeated": 1,
+          "editorial-response": 1,
+          "editorial-world": 2,
+          "education": 10,
+          "emergency": 1,
+          "equipment": 10,
+          "ethics": 1,
+          "event": 39,
+          "exchange": 1,
+          "exercise": 2,
+          "expedition": 3,
+          "experiment": 24,
+          "experiment-open": 2,
+          "exploration": 26,
+          "export-gap": 1,
+          "export-metadata": 2,
+          "family": 5,
+          "family_and_repair": 1,
+          "fashion": 4,
+          "festival": 9,
+          "festival-plan": 1,
+          "festival_preparation": 2,
+          "festival_proposal": 1,
+          "finance": 5,
+          "flora": 2,
+          "forge": 1,
+          "foundation": 1,
+          "friendship": 2,
+          "geography": 20,
+          "gift-plan": 1,
+          "governance": 73,
+          "health": 11,
+          "heritage": 4,
+          "historical-record": 1,
+          "history": 3,
+          "home": 2,
+          "housing": 4,
+          "hypothesis": 3,
+          "identity": 26,
+          "identity_evidence": 1,
+          "incident": 2,
+          "industrial_progress": 1,
+          "industry": 15,
+          "inference": 3,
+          "infrastructure": 11,
+          "innovation": 2,
+          "institution": 21,
+          "inventory": 49,
+          "inventory_and_reconciliation": 1,
+          "investigation": 52,
+          "investment": 1,
+          "invitation": 1,
+          "journey": 3,
+          "justice": 1,
+          "knowledge": 283,
+          "knowledge_system": 1,
+          "law": 2,
+          "law-culture": 1,
+          "law-proposal": 1,
+          "leadership": 1,
+          "legal": 1,
+          "legion": 1,
+          "letter": 1,
+          "leviatan": 1,
+          "location": 5,
+          "logistics": 10,
+          "lore": 3,
+          "magic": 2,
+          "maritime_antagonist": 1,
+          "maritime_incident": 1,
+          "maritime_state": 1,
+          "measurement": 1,
+          "meeting": 2,
+          "metadata": 299,
+          "milestone": 2,
+          "military": 9,
+          "mission": 24,
+          "mobilization": 4,
+          "mystery": 15,
+          "naval": 2,
+          "negotiation": 8,
+          "options": 1,
+          "organization": 13,
+          "pending": 3,
+          "plan": 21,
+          "planning": 19,
+          "population": 2,
+          "power": 100,
+          "power-inventory": 5,
+          "power_discovery": 1,
+          "power_governance": 1,
+          "private-reflection": 1,
+          "private_knowledge": 1,
+          "private_lore": 1,
+          "private_strategy": 2,
+          "program": 2,
+          "project": 114,
+          "project-open": 1,
+          "promise": 2,
+          "property": 1,
+          "proposal": 10,
+          "quest": 2,
+          "question": 1,
+          "ranking": 2,
+          "reader-only": 20,
+          "reader-perspectives": 78,
+          "reader_lore": 4,
+          "reader_perspective": 3,
+          "reader_scene": 375,
+          "recap": 24,
+          "reconciliation": 2,
+          "reconstruction": 2,
+          "recording": 1,
+          "recruitment": 3,
+          "reflection": 6,
+          "refuge": 1,
+          "rejected_version": 5,
+          "relation": 34,
+          "relationship": 322,
+          "relationship_conflict": 2,
+          "relationships": 2,
+          "report": 39,
+          "reputation": 1,
+          "rescue": 38,
+          "research": 64,
+          "research-plan": 5,
+          "research_offer": 1,
+          "reserved": 20,
+          "responsibility": 1,
+          "restoration": 2,
+          "retrospective": 1,
+          "return": 1,
+          "reunion": 3,
+          "romance": 2,
+          "routine": 2,
+          "ruin": 3,
+          "sabotage": 1,
+          "safety": 1,
+          "scene": 880,
+          "shipyard": 1,
+          "social": 8,
+          "society": 7,
+          "source-gap": 3,
+          "source_gap": 1,
+          "speech": 2,
+          "state": 27,
+          "strategy": 5,
+          "system": 17,
+          "system_close": 1,
+          "taren": 1,
+          "technology": 149,
+          "thaeron": 2,
+          "theatre": 1,
+          "threat": 6,
+          "training": 13,
+          "training-plan": 1,
+          "transition_options": 108,
+          "travel": 7,
+          "treaty": 3,
+          "ultimatum": 1,
+          "urban": 3,
+          "validation": 1,
+          "variant": 15,
+          "vessel": 2,
+          "visitor": 1,
+          "voice": 1,
+          "wonder": 1,
+          "world": 1,
+          "world-character": 1,
+          "world-state": 16,
+          "world_event": 1,
+          "world_reaction": 5,
+          "world_state": 4,
+          "worldbuilding": 6
+        },
+        "unique_entity_labels": 734,
+        "unique_ids": 4941,
+        "visibility": {
+          "EDITORIAL_ONLY_NO_CHARACTER_INJECTION": 4099,
+          "QUARANTINED_NO_CHARACTER_INJECTION": 1,
+          "READER_ONLY_NO_CHARACTER_INJECTION": 544,
+          "READER_ONLY_OR_UNRESOLVED_NO_CHARACTER_INJECTION": 7,
+          "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION": 289,
+          "RESTRICTED_SCENE_KNOWLEDGE_NO_CHARACTER_INJECTION": 1
+        }
+      }
+    }
+  ],
+  "logs_readback": true,
+  "previous_runs": [
+    {
+      "run": 46149776774,
+      "conclusion": "failure",
+      "reason": "receipt interval; generic diagnostic"
+    },
+    {
+      "run": 46149830425,
+      "conclusion": "failure",
+      "reason": "macro42 starts line9; source export header separate"
+    },
+    {
+      "run": 46149881927,
+      "conclusion": "success",
+      "business_status": "P0_INVENTORY_BLOCKED",
+      "reason": "two reader-scope records"
+    },
+    {
+      "run": 46149961206,
+      "conclusion": "success",
+      "business_status": "P0_INVENTORY_BLOCKED",
+      "reason": "exact scope IDs identified"
+    }
+  ],
+  "scope_overlay_blob": "0d339ef0f6e954f72907f6854c05192db533a24b",
+  "prior_recovery_workflow": 46149162656,
+  "prior_failure_preserved": 46146612371,
+  "prior_failure_correction": 46146630574,
+  "production_gate": "HOLD",
+  "canon_changed": false,
+  "semantic_certification": false,
+  "independent_review": false,
+  "typed_projection": false,
+  "full_regression": false,
+  "promotion": false
+}
