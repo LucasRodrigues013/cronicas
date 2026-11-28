@@ -1,0 +1,67 @@
+{
+  "schema": "literary-edition-review-v4",
+  "status": "MANUALLY_REVIEWED_DRAFT_AWAITING_AUTHOR",
+  "scope": "prologue_only",
+  "draft": "literary-edition/book-i/drafts/00-prologo-v0.4.md",
+  "draft_blob": "0ad5b38ff01d8745c6baeb7e298544d4a5fe4bf7",
+  "previous_blob": "19820249792ffd8fb16b8fdcd8acef08952206bb",
+  "source_sha256": "e78d166139af3bb044f58fe9745f2f50e96f5e62ffff4d9dc9e21d45c18bbc66",
+  "words_whitespace": 4622,
+  "pdf": {
+    "pages": 24,
+    "format": "A5",
+    "text_match": true,
+    "rendered": true,
+    "visual_review": "initial contact sheet and final cover/opening/ending; cover glyph corrected; pagination adjusted",
+    "delivery": "PDF in chat, Markdown in GitHub"
+  },
+  "author_override": {
+    "precedence": "For literary edition only, supersedes five-skill selection in EDITORIAL_CONTRACT.md and prior drafts; no RPG retcon",
+    "changes": [
+      "Lucas adult in unnamed city, apartment view, lives a full day with breakfast, woman, friends, car, motorcycle, guitar, office leadership, happy hour, ride app and fatal robbery.",
+      "Parallel war unfolds throughout day in destination reality; anonymous aged bearer seeks someone beyond corrupted power structures; transmits CREATION; do not establish exact identity, era, mechanism or all local people being corrupt.",
+      "No five abilities menu; system offers continuation or second chance in hospital out-of-body experience. Consent, planet view, CREATION received and limited intuitive instruction; end at landing in valley."
+    ]
+  },
+  "manual_review": [
+    {
+      "axis": "character",
+      "result": "revised",
+      "evidence": "breakfast promise, motorcycle plans, guitar, driving, mentoring, restraint with alcohol, rescue impulse"
+    },
+    {
+      "axis": "emotion",
+      "result": "revised",
+      "evidence": "Sunday breakfast and Saturday ride return in ambulance; loss and consent have room to breathe"
+    },
+    {
+      "axis": "worldbuilding",
+      "result": "revised",
+      "evidence": "parallel war four phases, aerial structures and evacuation; destination visual echo; anonymous identity and era unresolved"
+    },
+    {
+      "axis": "continuity",
+      "result": "conditional",
+      "evidence": "CREATION maintained; no battle with orcs yet, no early power limits redefined, no RPG writeback; selection replaced by author directive"
+    },
+    {
+      "axis": "originality",
+      "result": "manual review only",
+      "evidence": "new prose, second chance instead of menu; publication rights review still pending"
+    }
+  ],
+  "new_editorial_details": [
+    "Helena, Rafa, Camila and André fictional; no real personal relationships or employer asserted.",
+    "Living alone is fictional choice, not autobiographical assertion.",
+    "Urban routines, driving, motorcycle, guitar based on current author direction; historical search of first block did not establish all details.",
+    "Age, motives and visible war phenomena are expansions; full cosmology and selection criteria not established."
+  ],
+  "limitations": [
+    "25 original screenshots still unverified",
+    "No independent evaluator or automated engine run",
+    "Chapter 1 V0.2 not changed; requires seam review after prologue approval",
+    "No claim of exhaustive future continuity certification",
+    "PDF binary delivered in chat only"
+  ],
+  "next_prompt": "Revise exclusivamente o prólogo V0.4 conforme feedback. Preserve o dia vivido, as relações e os planos de Lucas, os veículos e música, a guerra paralela em escala crescente, a transmissão misteriosa de CREATION, o consentimento para uma segunda chance no hospital, a visão do planeta e a chegada ao vale. Não retorne ao menu de cinco habilidades. Não fixe identidade, época ou cosmologia da guerra. Audite, corrija, versione somente na branch literary-edition/book-i, confira readback e entregue PDF literário. Não avance para capítulo 1 sem aprovação."
+}
