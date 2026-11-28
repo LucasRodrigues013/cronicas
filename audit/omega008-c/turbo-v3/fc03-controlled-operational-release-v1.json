@@ -1,0 +1,111 @@
+{
+  "schema": "OMEGA_FC03_CONTROLLED_OPERATIONAL_RELEASE_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "status": "ACTIVE_CONTROLLED_EDITORIAL_ADVISORY_INTERNAL_VALIDATION_PASS",
+  "author_direction": "28/11/2026: ignore separate reviewer chats; evaluate in current conversation; learn engineering from EIDORYN; reconcile and activate operationally without canon changes",
+  "eidoryn": {
+    "reference": "4172da4d351c11ececc55b9a9fbeca6e3f553aea",
+    "borrowed_patterns": [
+      "epistemic cue classification",
+      "bounded source evidence",
+      "selective operational activation and rollback"
+    ],
+    "narrative_data_imported": false,
+    "formal_class7_status": "HOLD"
+  },
+  "engine": {
+    "previous_main": "1b063d05c1acaa86b2f237f987804af59dbeccd6",
+    "previous_active_pin": "3b612087a112ec008e5622af3cd076d6fe79ddff",
+    "active_main": "d2513a9de30790d20aaf5eb830f56f80ac026632",
+    "omega_export": "9f7ef4adc1b73c576e8d5394de1c19772cb592e7",
+    "archive_before": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+    "archive_config": "ad1277933f341dad1d1a6b3edd25505755515241",
+    "policy_blob": "a070315a52298f86ebbf77186784d015fa6d16f3"
+  },
+  "native": {
+    "release": {
+      "workflow": 46157741217,
+      "job": 141018002547,
+      "conclusion": "success",
+      "tests": 846,
+      "aggregate": {
+        "advisory_sha256": "8b640db9100bb89fcb999d36947fa3622e3ba4556dd6a8b6349f129c08c74801",
+        "blocked_groups": {
+          "closed_nonpublic_anchor": 483
+        },
+        "canon_changed": false,
+        "critical_without_advisory": 0,
+        "idempotent": true,
+        "indexed_groups": 2904,
+        "locators": 117,
+        "original_preparation_verified": true,
+        "pack_sha256": "cccd3800494dbfa669a5113ef868e084106d97708a32393ff50c689a6d3254e5",
+        "requirements": 39,
+        "requirements_with_locators": 39,
+        "semantic_certification": false,
+        "status": "R36_CONTROLLED_ADVISORY_REAL_REQUEST_PASS"
+      }
+    },
+    "configuration": {
+      "workflow": 46157929574,
+      "job": 141018584379,
+      "conclusion": "success",
+      "aggregate": {
+        "canonical_files_unchanged": true,
+        "choice_executed": false,
+        "head_day": 579,
+        "locators": 117,
+        "narrative_generated": false,
+        "requirements": 39,
+        "semantic_certification": false,
+        "sequence": 50,
+        "status": "R36_ACTIVE_CONFIGURATION_READBACK_PASS"
+      }
+    },
+    "prior_fc02": {
+      "tests": 989,
+      "scope": "review branch only; do not add to 846 or treat as same denominator",
+      "checkpoint": "53eff49a7b8acd064c5814032d81e69f248f19e8"
+    }
+  },
+  "internal_semantic_review": {
+    "batch": "e50d200e730ba79b20dd555304bdf364a7a93a837b3de5fdce61ace359a0fe18",
+    "response_sha256": "0dc4c4e1448fb294761c96992b2ad44daa838e0a670f69306e343dc97079a428",
+    "profile": "same_conversation",
+    "targets": 8,
+    "verdicts": {
+      "SUPPORTED": 1,
+      "NOT_ATTRIBUTED": 5,
+      "NON_NARRATIVE": 2
+    },
+    "independent_returns": 0,
+    "typed_promotion": false,
+    "scope": "actual current-chat assessment; packet and response fields/hash checked; no independent certification; no private review text published"
+  },
+  "protected": {
+    "head_day": 579,
+    "clock": "23h02",
+    "sequence": 50,
+    "head_blob": "9b4e09682fc3148511d59e73ec56fdcda4e396e5",
+    "resume_blob": "f58b7bc89eaffa29e6d3db717c7d304c66d9ad87",
+    "state_blob": "0b139b087502f72d51029293adf081c182cb75c2",
+    "d580_request_blob": "2546330ab482c507ec4d0bafee3d4f42a0a9333c",
+    "d580_preparation_blob": "19a1c9520c1f133c18621bd13a25de29af043ba9",
+    "editorial_policy_version": 22,
+    "editorial_rules": 130
+  },
+  "limits": [
+    "Internal semantic review limited to 8 targets; full field-level reconciliation and typed historical projection remain incomplete.",
+    "117 locators for 39 historical request requirements are retrieval candidates, not precision or recall metrics or new facts.",
+    "483 groups containing nonpublic closed anchors were excluded; historical visibility still requires source-aware review.",
+    "Active configuration and real archived request tested read-only; no new live request, narrative generation, closure or D580 choice executed.",
+    "Original Level 7 formal metrics and independent attestation remain unresolved; operational exception is not certification.",
+    "FC pack fixed to recovered D579 history; new events use existing incremental canon/R33 paths; future registry drift disables old candidate alias boost; no false current-state inference."
+  ],
+  "next": "Use active R36 controlled advisory with the next genuine author request after authorized D580 ratification/choice; verify preparation and exact source, continue incremental semantic review of material claims and existing Codex deltas. Do not require separate chats or repeat completed recovery; no new story without author choice.",
+  "operational_activation": true,
+  "formal_level7_certified": false,
+  "semantic_certification": false,
+  "canon_changed": false,
+  "promotion": "ENGINE_CONFIGURATION_ONLY"
+}
