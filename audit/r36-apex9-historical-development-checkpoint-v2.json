@@ -1,0 +1,320 @@
+{
+  "schema": "worldroot-apex9-historical-development-checkpoint-v2",
+  "status": "39_LOCAL_SCOPE_REFERENCE_CASES_COMPLETE_GLOBAL_NATIVE_BENCHMARK_HOLD",
+  "parent_checkpoint": "c0c9cc57bba97db868082b4697c0759d225309e9",
+  "implementation": "f8990e679f97f588bda35a030649cfc69dbc258a",
+  "baseline_main": "96515d29a82d45125ddf6d8c16acef7a7a2d7b5a",
+  "active_engine": "d2513a9de30790d20aaf5eb830f56f80ac026632",
+  "archive": "ad1277933f341dad1d1a6b3edd25505755515241",
+  "omega_receipts": "c73b60d49a096e98f74c48d170b1aff19090fd49",
+  "request_blob": "2546330ab482c507ec4d0bafee3d4f42a0a9333c",
+  "eidoryn_reference": "4172da4d351c11ececc55b9a9fbeca6e3f553aea",
+  "native_code": {
+    "workflow": 46159395654,
+    "job": 141023082932,
+    "tests": 852,
+    "conclusion": "success",
+    "scope": "Previous code-only synthetic regression, not rerun."
+  },
+  "pins": [
+    {
+      "macro": 115,
+      "receipt": "e939a59b3d211d5ca08d60342b7239666dcb70ca",
+      "draft": "ff667b14a3cdc7088773fac43ed43140a1032107",
+      "closure": "bdc1d0718629ced6ab5932b3c5d65cd158194011"
+    },
+    {
+      "macro": 116,
+      "receipt": "00090575df92e731b561838d4c62e6047f70402b",
+      "draft": "f0c2cb92e17a5b066392077187f009036fd29069",
+      "closure": "687e0515763105921f04f3b4d9df8e16799e6fb9"
+    },
+    {
+      "macro": 94,
+      "receipt": "4004847f5931367f3ccb6f8464dda10af99e3dc8",
+      "draft": "144cf93dc9b5b35f43de5930b26173b30152e5fd",
+      "closure": "5ea7419626db3183592c76d7a2bd7e1d79a012b6"
+    },
+    {
+      "macro": 95,
+      "receipt": "d6b4b2642c8988b837116b20442e07d4d98b4774",
+      "draft": "7ddbb4416b77c4da877f143f89a8244758548524",
+      "closure": "5f983d7eb0d628fd9992595014c3ce0857cf0fd6"
+    },
+    {
+      "macro": 105,
+      "receipt": "7b9dcfe92632f6805321f8c805abc42f96c10305",
+      "draft": "22e3b2aa759cac0d351e185d568922385b7a4249",
+      "closure": "6d776efa822f95da878d694c91e9fcf080939cf0"
+    },
+    {
+      "macro": 107,
+      "receipt": "7ddc94cbdaf8cdbc465d33232dd06bc2c3b256fe",
+      "draft": "1a90f39832b1549688fec73fcd06ce573080db38",
+      "closure": "a5a38bc2aeca5a8b67af4fc3f80213b502b6e82f"
+    },
+    {
+      "macro": 108,
+      "receipt": "f25d502d240ce30dd634b6873bf5c9ac12492224",
+      "draft": "0c639291b830d540b4fc0795f0cc6f8e26ff38dd",
+      "closure": "8d7f6a3e60d504b97e22f34d92af169037f9baff"
+    },
+    {
+      "macro": 111,
+      "receipt": "f1719c1d898949ffa63ea3d1e1cb9f631da3247c",
+      "draft": "bde56c9d3cd682356e084467d7832f05cb8adf2b",
+      "closure": "868c1cabe1905b32f8b295c3435ede69e44fa8b7"
+    },
+    {
+      "macro": 113,
+      "receipt": "5743d7bdb5850a21f97e61b588c83b47d368ca23",
+      "draft": "112f691eb027c533032a1f6d5717342454159704",
+      "closure": "4ee5f5d512e9b36805f46347414a227c136948b9"
+    },
+    {
+      "macro": 114,
+      "receipt": "7c03ec9e78b9a13caf75295076ef3697e8253967",
+      "draft": "683ddbb43b94506d5b4d4e56accb3dec91e98718",
+      "closure": "13ac958b8eb50b2dd2bc6e9e5247971a2c488f3a"
+    }
+  ],
+  "legacy": {
+    "macro": 65,
+    "receipt": "b8e3eed2bae45e4d6c445f87117822a27f5270c5",
+    "source_blob": "c85fce532302ad2852a383263c91bd30d407804b",
+    "source_sha256": "9e09d84f6c80de7c81fbf3b4f3aa6edf4fc649801c80d25247668ba1c61b8ecd",
+    "dream_overlay": "0d339ef0f6e954f72907f6854c05192db533a24b"
+  },
+  "method": {
+    "implementation": "JavaScript reference reproduction in connector session, not native Python execution or full active runtime",
+    "corpus": "Four local sublots; each uses only designated macro sources; not pooled or global, equal candidate pools across modes within each sublot",
+    "limit": 3,
+    "alias_channel": "DISABLED_FOR_ALL",
+    "gold": "Existing D580 reviewed source intervals, not supplied to ranking; not blinded or independent; no new gold published",
+    "metric": "line hit = selected line falls inside existing reviewed interval; group hit = selected group overlaps that interval. Neither demonstrates entailment, factual correctness or semantic precision.",
+    "reachable": "An eligible line inside reference span with at least one query token; denominator includes blocked/unavailable spans.",
+    "guard": "Excluded nonhistorical/non-Response/visibility-restricted groups, dreams and known private anchor-containing groups, plus option/meta/private thought lines using existing cues; no claim of exhaustive privacy."
+  },
+  "sublots": [
+    {
+      "macros": [
+        115,
+        116
+      ],
+      "cases": 23,
+      "verified": 31,
+      "noneligible": 9,
+      "private": 15,
+      "eligible": 7,
+      "reachable": 6,
+      "baseline": {
+        "cases": 23,
+        "groupHit": 6,
+        "lineHit": 6,
+        "top1Line": 5,
+        "mrr": 0.2391304347826087,
+        "locators": 48,
+        "criticalWithout": 0
+      },
+      "fusion": {
+        "cases": 23,
+        "groupHit": 6,
+        "lineHit": 6,
+        "top1Line": 5,
+        "mrr": 0.2391304347826087,
+        "locators": 67,
+        "criticalWithout": 0
+      },
+      "coverage": {
+        "cases": 23,
+        "groupHit": 6,
+        "lineHit": 6,
+        "top1Line": 5,
+        "mrr": 0.2391304347826087,
+        "locators": 67,
+        "criticalWithout": 0
+      }
+    },
+    {
+      "macros": [
+        94,
+        95,
+        105,
+        107
+      ],
+      "cases": 6,
+      "verified": 70,
+      "noneligible": 18,
+      "private": 50,
+      "eligible": 2,
+      "reachable": 0,
+      "baseline": {
+        "cases": 6,
+        "groupHit": 0,
+        "lineHit": 0,
+        "top1Line": 0,
+        "mrr": 0,
+        "locators": 10,
+        "criticalWithout": 1
+      },
+      "fusion": {
+        "cases": 6,
+        "groupHit": 0,
+        "lineHit": 0,
+        "top1Line": 0,
+        "mrr": 0,
+        "locators": 10,
+        "criticalWithout": 1
+      },
+      "coverage": {
+        "cases": 6,
+        "groupHit": 0,
+        "lineHit": 0,
+        "top1Line": 0,
+        "mrr": 0,
+        "locators": 10,
+        "criticalWithout": 1
+      }
+    },
+    {
+      "macros": [
+        108,
+        111,
+        113,
+        114
+      ],
+      "cases": 9,
+      "verified": 46,
+      "noneligible": 19,
+      "private": 26,
+      "eligible": 1,
+      "reachable": 0,
+      "baseline": {
+        "cases": 9,
+        "groupHit": 0,
+        "lineHit": 0,
+        "top1Line": 0,
+        "mrr": 0,
+        "locators": 6,
+        "criticalWithout": 3
+      },
+      "fusion": {
+        "cases": 9,
+        "groupHit": 0,
+        "lineHit": 0,
+        "top1Line": 0,
+        "mrr": 0,
+        "locators": 6,
+        "criticalWithout": 3
+      },
+      "coverage": {
+        "cases": 9,
+        "groupHit": 0,
+        "lineHit": 0,
+        "top1Line": 0,
+        "mrr": 0,
+        "locators": 6,
+        "criticalWithout": 3
+      }
+    },
+    {
+      "macros": [
+        65
+      ],
+      "cases": 1,
+      "verified": 71,
+      "noneligible": 29,
+      "private": 0,
+      "eligible": 42,
+      "reachable": 1,
+      "baseline": {
+        "cases": 1,
+        "groupHit": 1,
+        "lineHit": 0,
+        "top1Line": 0,
+        "mrr": 0,
+        "locators": 1,
+        "criticalWithout": 0
+      },
+      "fusion": {
+        "cases": 1,
+        "groupHit": 1,
+        "lineHit": 1,
+        "top1Line": 1,
+        "mrr": 1,
+        "locators": 3,
+        "criticalWithout": 0
+      },
+      "coverage": {
+        "cases": 1,
+        "groupHit": 1,
+        "lineHit": 1,
+        "top1Line": 1,
+        "mrr": 1,
+        "locators": 3,
+        "criticalWithout": 0
+      }
+    }
+  ],
+  "descriptive_sum": {
+    "cases": 39,
+    "verified_groups": 218,
+    "noneligible": 75,
+    "private_anchor_groups": 91,
+    "eligible_groups": 52,
+    "reachable_cases": 7,
+    "baseline": {
+      "cases": 39,
+      "groupHit": 7,
+      "lineHit": 6,
+      "top1Line": 5,
+      "mrr": 0.14102564102564102,
+      "locators": 65,
+      "criticalWithout": 4
+    },
+    "fusion": {
+      "cases": 39,
+      "groupHit": 7,
+      "lineHit": 7,
+      "top1Line": 6,
+      "mrr": 0.16666666666666666,
+      "locators": 86,
+      "criticalWithout": 4
+    },
+    "coverage": {
+      "cases": 39,
+      "groupHit": 7,
+      "lineHit": 7,
+      "top1Line": 6,
+      "mrr": 0.16666666666666666,
+      "locators": 86,
+      "criticalWithout": 4
+    }
+  },
+  "public_exact_anchor_probe": {
+    "macros": [
+      115,
+      116
+    ],
+    "cases": 23,
+    "public_event_anchors": 7,
+    "nonpublic_event_anchors": 27,
+    "public_exact_in_reference": 8,
+    "nonpublic_exact_in_reference": 14,
+    "both": 2,
+    "scope": "Verified closure source hash and literal anchor line match; public candidate excludes line with nonpublic event. This is potential route availability, not ranked retrieval or semantic support; not an additional independent test population."
+  },
+  "decision": "DO_NOT_PROMOTE: same closed-episode performance, one local legacy line-hit gain, more locators, no proven global semantic or latency improvement; existing engine unchanged.",
+  "next": "Prioritize epistemic/authority routing: reuse existing reviewed R33 exact-source route for authorized director-only context, preserve visibility/unknowns; evaluate a separate exact public canonical event anchor channel using existing r36_temporal and live_codex, never infer adjacent text or actor knowledge. Establish native code parity with synthetic cases and a safe historical benchmark path without public CI corpus/gold. Then retest retrieval and only promote demonstrated gain; advance Codex field reconciliation and adaptive feedback. Do not repeat this local benchmark unchanged.",
+  "limitations": [
+    "38 closed-episode cases + one legacy case executed, but local macro candidate pools differ; sum is descriptive not global benchmark.",
+    "Only 7/39 reviewed spans lexically reachable in those restricted pools; 91 groups excluded due to nonpublic anchors. Absence not evidence of loss, and existing R33 exact reviewed route is separate.",
+    "No full alias-channel parity, independent/held-out evidence, native Python historical replay, semantic precision, performance or latency measurement.",
+    "Previously verified existing review 31/39 supported in cited scope, 8 partial; this benchmark does not repair or promote those claims.",
+    "No private corpus, queries, gold intervals, individual results or literal text added to public repository; only aggregate and source pins."
+  ],
+  "formal_level7_certified": false,
+  "canon_changed": false,
+  "production_changed": false,
+  "private_corpus_published": false
+}
