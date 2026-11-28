@@ -34,6 +34,10 @@ def geometry(records,group_ids,gaps,bounds):
         at=hi+1
     require(at==bounds[1]+1,"partition end")
 
+def remaining_counts(batch_count,offset,count,macro_count,absolute,global_count):
+    require(0<=offset<batch_count and 0<count<=batch_count-offset and absolute+count<=macro_count and count<=global_count,"denominator")
+    return batch_count-offset-count,macro_count-absolute-count,global_count-count
+
 def build(root,archive,overlay_path=DEFAULT,consumer=None):
     root=Path(root);archive=Path(archive)
     cp=read(root,ROOT+"global-p1-a3-checkpoint-v1.json",CP)
@@ -51,22 +55,28 @@ def build(root,archive,overlay_path=DEFAULT,consumer=None):
     receipt=read(root,o["receipt_path"],o["receipt_blob"])
     source=SourceCache(archive,read(archive,"history/sources/MANIFEST.json","2048141263f66151230119af9b0ee51796ac846b")).get(plan["source"])
     require(receipt["source"]==plan["source"] and receipt["archive_pin"]==cp["archive_pin"] and receipt["source_sha256"]==source[3],"receipt source")
-    records=receipt["records"];n=plan["count"]
-    matches=[i for i in range(len(records)-n+1) if digest(p0.stable([r["id"] for r in records[i:i+n]]))==plan["ids_sha256"]]
+    records=receipt["records"];batch_count=plan["count"]
+    matches=[i for i in range(len(records)-batch_count+1) if digest(p0.stable([r["id"] for r in records[i:i+batch_count]]))==plan["ids_sha256"]]
     require(len(matches)==1,"planned ID range")
-    batch=records[matches[0]:matches[0]+n]
+    batch=records[matches[0]:matches[0]+batch_count]
     require(sum(r["evidence"]["line_end"]-r["evidence"]["line_start"]+1 for r in batch)==plan["anchor_line_weight"],"plan weight")
     require(min(r["evidence"]["line_start"] for r in batch)==plan["first_line"] and max(r["evidence"]["line_end"] for r in batch)==plan["last_line"],"plan bounds")
     offset=o["offset"];count=len(o["groups"])
-    require(type(offset) is int and 0<=offset< n and 0<count<=n-offset,"sublot bounds")
+    require(type(offset) is int and 0<=offset<batch_count and 0<count<=batch_count-offset,"sublot bounds")
     chosen=batch[offset:offset+count]
     absolute=matches[0]+offset
-    start=receipt["range"][0] if absolute==0 else records[absolute-1]["evidence"]["line_end"]+1
+    start=receipt["range"][0] if absolute==0 else records[absolute]["evidence"]["line_start"]
     stop=records[absolute+count]["evidence"]["line_start"]-1 if absolute+count<len(records) else receipt["range"][1]
     require(o["range"]==[start,stop],"cursor boundary")
-    # The preceding sublot owns the gap before this sublot's first anchor.
+    # Chained offsets must bind a native checkpoint, never simply trust an offset.
     if absolute>0:
-        require(False,"noninitial offsets require chained checkpoint adapter extension") 
+        prev=read(root,o["previous_checkpoint_path"],o["previous_checkpoint_blob"])
+        require(prev["schema"]=="OMEGA_GLOBAL_P1_B_CHECKPOINT_V1" and prev["production_gate"]=="HOLD" and prev["receipt_blob"]==o["receipt_blob"] and prev["batch"]==o["batch"],"previous cursor authority")
+        prev_ev=read(root,prev["native_evidence_path"],prev["native_evidence_blob"])
+        require(prev_ev["workflow_conclusion"]=="success" and prev_ev["aggregate"]["next_anchor"]==start and prev["next_offset"]==offset and prev["next_anchor"]==start,"previous native cursor")
+        require(prev["completed_ids"]==[r["id"] for r in batch[:offset]],"previous group prefix")
+    else:
+        require(offset==0,"initial cursor")
     geometry(chosen,[g[0] for g in o["groups"]],o["gaps"],o["range"])
     claims=[];parent_rows=[];gaps=[];ids=set();target_ids={c["target_id"] for c in got["children"]}
     for r,(_,specs) in zip(chosen,o["groups"]):
@@ -111,8 +121,9 @@ def build(root,archive,overlay_path=DEFAULT,consumer=None):
         packets.append((a,b))
     require(sum(len(j["targets"]) for j in jobs)==len(claims),"target loss")
     manifest=[dict(A=a["batch_id"],B=b["batch_id"],jobs=len(a["jobs"]),targets=sum(len(j["targets"]) for j in a["jobs"])) for a,b in packets]
+    remaining_batch,remaining_macro,global_remaining=remaining_counts(batch_count,offset,count,len(records),absolute,prior["remaining_groups"]-offset)
     if consumer:consumer(parent_rows,claims,gaps,packets)
-    return dict(status="P1_B_PARTIAL_EDITORIAL_STAGING_INDEPENDENT_HOLD",batch=o["batch"],macro=o["macro"],range=o["range"],completed_ids=[r["id"] for r in chosen],processed_groups=count,remaining_in_batch=n-offset-count,remaining_in_macro=len(records)-absolute-count,global_remaining=prior["remaining_groups"]-count,next_anchor=records[absolute+count]["evidence"]["line_start"] if absolute+count<len(records) else None,children=len(claims),modalities=dict(Counter(c["modality"] for c in claims)),verdicts=dict(Counter(c["preliminary_verdict"] for c in claims)),parents_sha256=digest(p0.stable(parent_rows)),children_sha256=digest(p0.stable(claims)),gaps_sha256=digest(p0.stable(gaps)),gap_spans=len(gaps),gap_lines=sum(g["interval"][1]-g["interval"][0]+1 for g in gaps),anchor_lines=sum(r["evidence"]["line_end"]-r["evidence"]["line_start"]+1 for r in chosen),prior_packets=prior["prior_packets_preserved"]+prior["child_packets"],new_jobs=len(jobs),new_pairs=len(packets),new_packets=len(packets)*2,review_controller=controller,review_manifest=manifest,review_returns=0,registry_binding=prior["registry_binding"],production_gate="HOLD",promotion=False,semantic_certification=False,independent_review=False,canon_changed=False)
+    return dict(status="P1_B_PARTIAL_EDITORIAL_STAGING_INDEPENDENT_HOLD",batch=o["batch"],macro=o["macro"],range=o["range"],completed_ids=[r["id"] for r in chosen],processed_groups=count,remaining_in_batch=remaining_batch,remaining_in_macro=remaining_macro,global_remaining=global_remaining,next_anchor=records[absolute+count]["evidence"]["line_start"] if absolute+count<len(records) else None,children=len(claims),modalities=dict(Counter(c["modality"] for c in claims)),verdicts=dict(Counter(c["preliminary_verdict"] for c in claims)),parents_sha256=digest(p0.stable(parent_rows)),children_sha256=digest(p0.stable(claims)),gaps_sha256=digest(p0.stable(gaps)),gap_spans=len(gaps),gap_lines=sum(g["interval"][1]-g["interval"][0]+1 for g in gaps),anchor_lines=sum(r["evidence"]["line_end"]-r["evidence"]["line_start"]+1 for r in chosen),prior_packets=prior["prior_packets_preserved"]+prior["child_packets"],new_jobs=len(jobs),new_pairs=len(packets),new_packets=len(packets)*2,review_controller=controller,review_manifest=manifest,review_returns=0,registry_binding=prior["registry_binding"],production_gate="HOLD",promotion=False,semantic_certification=False,independent_review=False,canon_changed=False)
 def main():
     p=argparse.ArgumentParser();p.add_argument("--engine-root",default=".");p.add_argument("--archive-root",required=True);p.add_argument("--overlay",default=DEFAULT);a=p.parse_args();print(json.dumps(build(a.engine_root,a.archive_root,a.overlay),sort_keys=True))
 if __name__=="__main__":main()

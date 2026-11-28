@@ -1,5 +1,5 @@
 import unittest
-from worldroot.omega_global_p1b import validate_spec,geometry
+from worldroot.omega_global_p1b import validate_spec,geometry,remaining_counts
 class P1B(unittest.TestCase):
     def parent(self,role="Response",authority="HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED"):
         return {"authority":authority,"evidence":{"line_start":10,"line_end":20,"role":role}}
@@ -23,3 +23,7 @@ class P1B(unittest.TestCase):
     def test_overlap(self):
         r=[{"id":"a","evidence":{"line_start":2,"line_end":3}}]
         with self.assertRaises(ValueError):geometry(r,["a"],[[1,2,"meta"]],[1,3])
+    def test_denominators(self):
+        self.assertEqual(remaining_counts(100,0,5,125,0,4862),(95,120,4857))
+        self.assertEqual(remaining_counts(100,5,10,125,5,4857),(85,110,4847))
+        with self.assertRaises(ValueError):remaining_counts(100,99,2,125,99,4763)
