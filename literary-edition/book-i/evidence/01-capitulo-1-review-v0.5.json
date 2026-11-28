@@ -1,0 +1,74 @@
+{
+  "schema": "literary-edition-chapter-review-v3",
+  "status": "REVISED_DRAFT_AWAITING_AUTHOR_REVIEW_QUALITY_GATE_NOT_MET",
+  "date": "2026-11-28",
+  "chapter": 1,
+  "author_direction": "Integrar criação dos 300, apresentação, batalha coordenada, mochila e armadura motivadas pelo medo, fragilidades, momentos épicos e histórico.",
+  "quality_gate": {
+    "minimum": 9.9,
+    "method": "manual editorial self-assessment, not independent",
+    "estimate": 9.4,
+    "passed": false
+  },
+  "draft": {
+    "path": "book-i/drafts/01-capitulo-1-v0.5.md",
+    "blob": "1758acc47470ce5a233ccfc60b7c73884071e2a2",
+    "sha256": "fbaf8fa1f460bc38da104eee7e08eb6eb81087869aaa90c1d249ff502f116e2d",
+    "words": 6475
+  },
+  "previous": {
+    "blob": "3a8a84b8d077dd41ad4ef68577498ace3cd0b1b6",
+    "words": 3436
+  },
+  "approved_prologue": {
+    "blob": "835d451cb764f227d3732ef2a9a1376a3bbd59b0",
+    "preserved": true
+  },
+  "sources": {
+    "historical_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+    "historical_recovery": "First-day consolidation and user choices, initial battle aftermath and subsequent council; 300 warriors, captain black armor crimson crest, near 1000 orcs reported later, chief alive with left shoulder wound, approx 5% remaining, dimensional backpack, regenerative armor, cannot create infinite reserves or rewrite creator, retreat in three directions, distant horns, no pursuit. Later count: 300 alive, 275 fit, 18 lightly wounded, 7 temporarily incapacitated; intentionally not stated prematurely.",
+    "engine_pin": "1b063d05c1acaa86b2f237f987804af59dbeccd6",
+    "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+    "original_screenshots_verified": false
+  },
+  "author_changes": {
+    "chapter_boundary": "Chapter 1 now includes full 300 manifestation, first battle, armor and backpack, and decision not to pursue. Earlier plan reserving battle for chapter 3 superseded by latest author request. Next chapter titles and scopes must be reconciled; no drafting chapter 2 until approval.",
+    "armor_backpack_order": "Armor then backpack during battle is literary arrangement per author direction; exact original order remains unverified."
+  },
+  "literary_expansions": [
+    "Individual creation gestures and first captain dialogue; precise battle choreography and injury mechanism; orc viewpoint; armor/backpack manifestation and dialogue; timing of System replies. No new canonical power rules; provisional details only."
+  ],
+  "scores": {
+    "opening": 9.4,
+    "character": 9.5,
+    "emotion": 9.4,
+    "worldbuilding": 9.3,
+    "creation": 9.6,
+    "battle": 9.5,
+    "prose": 9.2,
+    "pacing": 9.2,
+    "continuity": 9.4,
+    "ending": 9.5,
+    "design": 9.4
+  },
+  "remaining": [
+    "Some repetition of explanation and fear; refine cadence and distinctive secondary voices if author requests.",
+    "No exhaustive or independent semantic validation; precise order of equipment, combat details and original images remain unverified.",
+    "No independent literary review; 9.9 gate not satisfied; approval pending."
+  ],
+  "pdf": {
+    "chapter_only": {
+      "filename": "Cronicas_O_Despertar_do_Criador_Capitulo_01_v05.pdf",
+      "pages": 29,
+      "sha256": "a065fdad4254b4f8809604aeae72e28b512442db3d36f85c9749a9cdeb83bffb"
+    },
+    "cumulative": {
+      "filename": "Cronicas_O_Despertar_do_Criador_Prologo_e_Capitulo_01_v05.pdf",
+      "pages": 52,
+      "sha256": "55df8f514cc325bd1017832303abc86c7578a9b57e2a93b026afee98e0f7f03d"
+    },
+    "checks": "31714 normalized narrative characters match manuscript; 24 prologue pages extracted text and raster identical at .65 scale; 28 chapter pages rendered, contact sheet visually inspected; A5 EB Garamond.",
+    "archive_status": "PDF binaries delivered in conversation; text, audit, hashes archived in GitHub, binaries not uploaded."
+  },
+  "next": "Await author reading; keep chapter 1 open, no chapter 2 until quality gate and explicit approval. After approval replan chapter 2 around initial aftermath/interrogation and council; no premature commitment to titles."
+}
