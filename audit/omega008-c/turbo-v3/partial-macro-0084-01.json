@@ -1,0 +1,1220 @@
+{
+  "schema": "OMEGA_TURBO_V3_PARTIAL_MACRO_EDITORIAL_RECEIPT_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "macro_id": "b6046ccbd9a1641832aa28321c0a50d8d599f9f7ef2afa31f95216ec982030d0",
+  "previous_macro_id": "009820b6d6ecb1e845e680311d92f7a72a11a7ebb069037f0bcaed78c8ee660a",
+  "official_unit_seal": "c033e2598f301a82064bdbc42435b459b98083d1da15fbfc1b50569a739e87b8",
+  "macro_range": [
+    1,
+    2586
+  ],
+  "range": [
+    1,
+    2586
+  ],
+  "source": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+  "source_sha256": "3a0c18e2965159e96f9dbf071fe87cceaeaff91729a995313b8bdfdc5b497fb3",
+  "source_provenance": {
+    "kind": "CLOSED_PROSE",
+    "episode_id": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+    "sequence": 18,
+    "previous_episode_id": "LVI-C02-PIII-D544-AUTHOR-SOURCE",
+    "previous_head_sha256": "15ae50fe63e65eb7767431f2e182aa0308d412828824e93e46745cea3d4765d3",
+    "closure_blob": "fb9e3664aa5a2c0c3aefb282493ffcdf38bcc191",
+    "draft_blob": "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33",
+    "immutable_manifest_blob": "c575ec1aa6fe0f49a7f1f0d17acb1db3282785a9",
+    "narrative_blob": "021484f272e1e2fb7893d3475743628a98ac1a5e",
+    "full_story_sha256": "ab637c49cb208c8814a2e1a49c474d23a1d80a0b4ef487ae0bb5566c0fdb64d0",
+    "prose_sha256": "3a0c18e2965159e96f9dbf071fe87cceaeaff91729a995313b8bdfdc5b497fb3",
+    "prose_lines": 2586,
+    "role_adapter": "Response for native receipt compatibility only; closure authority separate",
+    "closure_event_count": 20,
+    "closure_knowledge_count": 34,
+    "reviewed_events_blob": "29896299b6d2d37247ddd059e0628b31b5b434f8",
+    "reviewed_knowledge_blob": "8304702c577898c35e2ea05f6fa35526ef32d203",
+    "choice_sha256": "134bba9e8e50fd51ce3b8af807247995f82e8103997270175b5949b370043474",
+    "chosen_option": 4,
+    "book_closed": false,
+    "editorial_header": "  <title size=\"md\" textAlign=\"center\">PARTE IV DE V · ESPECIAL</title>",
+    "ratification_kind": null
+  },
+  "release_blob": "1ea9d60a58ecf00a368f0e33631164fc7cbe0051",
+  "previous_checkpoint_blob": "57ac7bfc71d0eec40310947dae8757c284524813",
+  "cycle_review_blob": "ddc148b0b9b7bcbaa2cec9aabc3c5ee8534ba2e9",
+  "records": [
+    {
+      "id": "O8C-B84-001",
+      "book": "VI",
+      "day": 545,
+      "chapter_hint": 2,
+      "type": "metadata",
+      "entities": [
+        "worldroot"
+      ],
+      "summary": "D545 Parte IV especial; continuidade Casa Jardim Branco, D544; ASA apenas projeto inicialmente.",
+      "axes": [
+        1,
+        2,
+        28,
+        29,
+        30
+      ],
+      "authority": "METADATA_NOT_EVENT",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+        "source_sha256_manifest": "3a0c18e2965159e96f9dbf071fe87cceaeaff91729a995313b8bdfdc5b497fb3",
+        "blob_sha1": "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33",
+        "source_blob_sha1s": [
+          "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33"
+        ],
+        "line_start": 1,
+        "line_end": 22,
+        "role": "Response",
+        "span_sha256_utf8": "385df01e96264db94e5e10be83bcf434fb6dde0b71f812c406302213bff6db1e",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "fb9e3664aa5a2c0c3aefb282493ffcdf38bcc191",
+        "full_story_sha256": "ab637c49cb208c8814a2e1a49c474d23a1d80a0b4ef487ae0bb5566c0fdb64d0",
+        "immutable_manifest_blob": "c575ec1aa6fe0f49a7f1f0d17acb1db3282785a9"
+      }
+    },
+    {
+      "id": "O8C-B84-002",
+      "book": "VI",
+      "day": 545,
+      "chapter_hint": 2,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren",
+        "nox"
+      ],
+      "summary": "06h04 manhã Casa Jardim Branco; Lucas decide desenvolver ASA com Rumo.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+        "source_sha256_manifest": "3a0c18e2965159e96f9dbf071fe87cceaeaff91729a995313b8bdfdc5b497fb3",
+        "blob_sha1": "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33",
+        "source_blob_sha1s": [
+          "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33"
+        ],
+        "line_start": 23,
+        "line_end": 134,
+        "role": "Response",
+        "span_sha256_utf8": "f874c0f4237a107bffecdba65d87874a746ac4b469fe6dec91c0afafddb9faf1",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "fb9e3664aa5a2c0c3aefb282493ffcdf38bcc191",
+        "full_story_sha256": "ab637c49cb208c8814a2e1a49c474d23a1d80a0b4ef487ae0bb5566c0fdb64d0",
+        "immutable_manifest_blob": "c575ec1aa6fe0f49a7f1f0d17acb1db3282785a9"
+      }
+    },
+    {
+      "id": "O8C-B84-003",
+      "book": "VI",
+      "day": 545,
+      "chapter_hint": 2,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren"
+      ],
+      "summary": "06h52 carona Ninja a AERÚN, combustível físico e inspeção, afeto e autonomia.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        13,
+        16,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+        "source_sha256_manifest": "3a0c18e2965159e96f9dbf071fe87cceaeaff91729a995313b8bdfdc5b497fb3",
+        "blob_sha1": "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33",
+        "source_blob_sha1s": [
+          "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33"
+        ],
+        "line_start": 135,
+        "line_end": 260,
+        "role": "Response",
+        "span_sha256_utf8": "5ddbef1497bf24172739c7258de8efbb6d777f6992c4484c66df0e00f983451b",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "fb9e3664aa5a2c0c3aefb282493ffcdf38bcc191",
+        "full_story_sha256": "ab637c49cb208c8814a2e1a49c474d23a1d80a0b4ef487ae0bb5566c0fdb64d0",
+        "immutable_manifest_blob": "c575ec1aa6fe0f49a7f1f0d17acb1db3282785a9"
+      }
+    },
+    {
+      "id": "O8C-B84-004",
+      "book": "VI",
+      "day": 545,
+      "chapter_hint": 2,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "nox"
+      ],
+      "summary": "07h48 percurso Eixo Aurora ao Campo real, lembranças Terra.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        13,
+        16
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+        "source_sha256_manifest": "3a0c18e2965159e96f9dbf071fe87cceaeaff91729a995313b8bdfdc5b497fb3",
+        "blob_sha1": "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33",
+        "source_blob_sha1s": [
+          "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33"
+        ],
+        "line_start": 261,
+        "line_end": 342,
+        "role": "Response",
+        "span_sha256_utf8": "64057d0daf2357e195c48dabf2ea444802db37f76ca8de7202b5bb9843e2fe9b",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "fb9e3664aa5a2c0c3aefb282493ffcdf38bcc191",
+        "full_story_sha256": "ab637c49cb208c8814a2e1a49c474d23a1d80a0b4ef487ae0bb5566c0fdb64d0",
+        "immutable_manifest_blob": "c575ec1aa6fe0f49a7f1f0d17acb1db3282785a9"
+      }
+    },
+    {
+      "id": "O8C-B84-005",
+      "book": "VI",
+      "day": 545,
+      "chapter_hint": 2,
+      "type": "project",
+      "entities": [
+        "lucas",
+        "naira",
+        "argos"
+      ],
+      "summary": "08h36 ARGOS no hangar pós voo005, inspeções, pico1462 não cruzeiro certificado, nenhum pouso Torre.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        13,
+        15,
+        16,
+        25,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+        "source_sha256_manifest": "3a0c18e2965159e96f9dbf071fe87cceaeaff91729a995313b8bdfdc5b497fb3",
+        "blob_sha1": "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33",
+        "source_blob_sha1s": [
+          "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33"
+        ],
+        "line_start": 343,
+        "line_end": 460,
+        "role": "Response",
+        "span_sha256_utf8": "00df0e0fd753025793771ed8dfe507f12324985b3e24acc26fa405eea4ee3928",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "fb9e3664aa5a2c0c3aefb282493ffcdf38bcc191",
+        "full_story_sha256": "ab637c49cb208c8814a2e1a49c474d23a1d80a0b4ef487ae0bb5566c0fdb64d0",
+        "immutable_manifest_blob": "c575ec1aa6fe0f49a7f1f0d17acb1db3282785a9"
+      }
+    },
+    {
+      "id": "O8C-B84-006",
+      "book": "VI",
+      "day": 545,
+      "chapter_hint": 2,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "rumo"
+      ],
+      "summary": "09h17 Rumo aceita coprojetar por escolha, pilotagem não decidida.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        14,
+        15,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+        "source_sha256_manifest": "3a0c18e2965159e96f9dbf071fe87cceaeaff91729a995313b8bdfdc5b497fb3",
+        "blob_sha1": "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33",
+        "source_blob_sha1s": [
+          "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33"
+        ],
+        "line_start": 461,
+        "line_end": 588,
+        "role": "Response",
+        "span_sha256_utf8": "ec330d745e44166832324ab82e3c8ba76d4685813bc0bb4f8e11cdebd6dc9853",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "fb9e3664aa5a2c0c3aefb282493ffcdf38bcc191",
+        "full_story_sha256": "ab637c49cb208c8814a2e1a49c474d23a1d80a0b4ef487ae0bb5566c0fdb64d0",
+        "immutable_manifest_blob": "c575ec1aa6fe0f49a7f1f0d17acb1db3282785a9"
+      }
+    },
+    {
+      "id": "O8C-B84-007",
+      "book": "VI",
+      "day": 545,
+      "chapter_hint": 2,
+      "type": "creation",
+      "entities": [
+        "lucas",
+        "cafe",
+        "segunda-feira",
+        "rumo"
+      ],
+      "summary": "10h03 estábulos, cavalos e tratador; GÊNESE melhora drenagem física, não substitui trabalho humano.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        11,
+        12,
+        14,
+        17,
+        20,
+        22
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+        "source_sha256_manifest": "3a0c18e2965159e96f9dbf071fe87cceaeaff91729a995313b8bdfdc5b497fb3",
+        "blob_sha1": "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33",
+        "source_blob_sha1s": [
+          "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33"
+        ],
+        "line_start": 589,
+        "line_end": 730,
+        "role": "Response",
+        "span_sha256_utf8": "fa24d1681c7127cfdb1e15f4ef5ab12b16a12f2abfd78a7396dbc2eb0b24cab4",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "fb9e3664aa5a2c0c3aefb282493ffcdf38bcc191",
+        "full_story_sha256": "ab637c49cb208c8814a2e1a49c474d23a1d80a0b4ef487ae0bb5566c0fdb64d0",
+        "immutable_manifest_blob": "c575ec1aa6fe0f49a7f1f0d17acb1db3282785a9"
+      }
+    },
+    {
+      "id": "O8C-B84-008",
+      "book": "VI",
+      "day": 545,
+      "chapter_hint": 2,
+      "type": "project",
+      "entities": [
+        "lucas",
+        "rumo",
+        "naira",
+        "brannik"
+      ],
+      "summary": "11h24 equipe duplica amostra técnica ARGOS, Rumo desenvolve desenho inicial ASA, sem voo.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        13,
+        14,
+        15,
+        25,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+        "source_sha256_manifest": "3a0c18e2965159e96f9dbf071fe87cceaeaff91729a995313b8bdfdc5b497fb3",
+        "blob_sha1": "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33",
+        "source_blob_sha1s": [
+          "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33"
+        ],
+        "line_start": 731,
+        "line_end": 864,
+        "role": "Response",
+        "span_sha256_utf8": "d740b5d4d797ffb7325dd63e41d7efd097f0a44087e0a40a15eff1fcb49c893d",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "fb9e3664aa5a2c0c3aefb282493ffcdf38bcc191",
+        "full_story_sha256": "ab637c49cb208c8814a2e1a49c474d23a1d80a0b4ef487ae0bb5566c0fdb64d0",
+        "immutable_manifest_blob": "c575ec1aa6fe0f49a7f1f0d17acb1db3282785a9"
+      }
+    },
+    {
+      "id": "O8C-B84-009",
+      "book": "VI",
+      "day": 545,
+      "chapter_hint": 2,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "rumo"
+      ],
+      "summary": "12h53 volta Ninja por estrada real; Rumo usa veículo serviço separado.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        13,
+        16,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+        "source_sha256_manifest": "3a0c18e2965159e96f9dbf071fe87cceaeaff91729a995313b8bdfdc5b497fb3",
+        "blob_sha1": "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33",
+        "source_blob_sha1s": [
+          "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33"
+        ],
+        "line_start": 865,
+        "line_end": 958,
+        "role": "Response",
+        "span_sha256_utf8": "f725235a3bb5872f5b108339305d1d3ec826d3243aaa2c061ccf8bd046a94b75",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "fb9e3664aa5a2c0c3aefb282493ffcdf38bcc191",
+        "full_story_sha256": "ab637c49cb208c8814a2e1a49c474d23a1d80a0b4ef487ae0bb5566c0fdb64d0",
+        "immutable_manifest_blob": "c575ec1aa6fe0f49a7f1f0d17acb1db3282785a9"
+      }
+    },
+    {
+      "id": "O8C-B84-010",
+      "book": "VI",
+      "day": 545,
+      "chapter_hint": 2,
+      "type": "knowledge",
+      "entities": [
+        "nixa_vel",
+        "severo_lyn",
+        "iria_nemar",
+        "sombras"
+      ],
+      "summary": "11h48 cena paralela explicitamente mesma manhã, provas Torre/AERÚN com permissão, falsificação corrigida e marcas semelhantes não provam autoria comum.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        13,
+        19,
+        23,
+        26,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+        "source_sha256_manifest": "3a0c18e2965159e96f9dbf071fe87cceaeaff91729a995313b8bdfdc5b497fb3",
+        "blob_sha1": "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33",
+        "source_blob_sha1s": [
+          "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33"
+        ],
+        "line_start": 959,
+        "line_end": 1044,
+        "role": "Response",
+        "span_sha256_utf8": "9bc52f18148795bf2b3a42779b8afbce445655531ab315b92e28105cc8b24089",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "fb9e3664aa5a2c0c3aefb282493ffcdf38bcc191",
+        "full_story_sha256": "ab637c49cb208c8814a2e1a49c474d23a1d80a0b4ef487ae0bb5566c0fdb64d0",
+        "immutable_manifest_blob": "c575ec1aa6fe0f49a7f1f0d17acb1db3282785a9"
+      }
+    },
+    {
+      "id": "O8C-B84-011",
+      "book": "VI",
+      "day": 545,
+      "chapter_hint": 2,
+      "type": "creation",
+      "entities": [
+        "lucas",
+        "rumo",
+        "nox"
+      ],
+      "summary": "14h18 P04 ASA LIVRE PROTÓTIPO01 manifestada fisicamente com coautoria LUCAS/RUMO, duas asas articuladas, quatro vetores, dois assentos e terceira posição apenas projeto, saídas e descida independentes, ainda sem voo.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        25,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+        "source_sha256_manifest": "3a0c18e2965159e96f9dbf071fe87cceaeaff91729a995313b8bdfdc5b497fb3",
+        "blob_sha1": "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33",
+        "source_blob_sha1s": [
+          "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33"
+        ],
+        "line_start": 1045,
+        "line_end": 1252,
+        "role": "Response",
+        "span_sha256_utf8": "5db1bd5e2ff27088bf797ebb71eab0c7020c343f994a77f03e18961ed338e2a0",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "fb9e3664aa5a2c0c3aefb282493ffcdf38bcc191",
+        "full_story_sha256": "ab637c49cb208c8814a2e1a49c474d23a1d80a0b4ef487ae0bb5566c0fdb64d0",
+        "immutable_manifest_blob": "c575ec1aa6fe0f49a7f1f0d17acb1db3282785a9"
+      }
+    },
+    {
+      "id": "O8C-B84-012",
+      "book": "VI",
+      "day": 545,
+      "chapter_hint": 2,
+      "type": "project",
+      "entities": [
+        "lucas",
+        "rumo",
+        "nox",
+        "marcador"
+      ],
+      "summary": "15h37 ensaios em berço: saídas, comandos, redundância e alimentação de descida, não decolagem nem piloto definido.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        13,
+        15,
+        25,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+        "source_sha256_manifest": "3a0c18e2965159e96f9dbf071fe87cceaeaff91729a995313b8bdfdc5b497fb3",
+        "blob_sha1": "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33",
+        "source_blob_sha1s": [
+          "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33"
+        ],
+        "line_start": 1253,
+        "line_end": 1394,
+        "role": "Response",
+        "span_sha256_utf8": "d1b93b68bcbe15f93a3c3aee9a37326df18d5f70037461173ae2f6764f7bf586",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "fb9e3664aa5a2c0c3aefb282493ffcdf38bcc191",
+        "full_story_sha256": "ab637c49cb208c8814a2e1a49c474d23a1d80a0b4ef487ae0bb5566c0fdb64d0",
+        "immutable_manifest_blob": "c575ec1aa6fe0f49a7f1f0d17acb1db3282785a9"
+      }
+    },
+    {
+      "id": "O8C-B84-013",
+      "book": "VI",
+      "day": 545,
+      "chapter_hint": 2,
+      "type": "reader_scene",
+      "entities": [
+        "vesra_keth"
+      ],
+      "summary": "15h46 Vesra troca invasões por coleta de informação e falsas pistas, controle incompleto.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        13,
+        23,
+        25,
+        26,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+        "source_sha256_manifest": "3a0c18e2965159e96f9dbf071fe87cceaeaff91729a995313b8bdfdc5b497fb3",
+        "blob_sha1": "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33",
+        "source_blob_sha1s": [
+          "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33"
+        ],
+        "line_start": 1395,
+        "line_end": 1520,
+        "role": "Response",
+        "span_sha256_utf8": "cf6639c6c67187f0a68a664ab2e57f5c1b8fe1054ddfcff05243fbecfc79db36",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "fb9e3664aa5a2c0c3aefb282493ffcdf38bcc191",
+        "full_story_sha256": "ab637c49cb208c8814a2e1a49c474d23a1d80a0b4ef487ae0bb5566c0fdb64d0",
+        "immutable_manifest_blob": "c575ec1aa6fe0f49a7f1f0d17acb1db3282785a9"
+      }
+    },
+    {
+      "id": "O8C-B84-014",
+      "book": "VI",
+      "day": 545,
+      "chapter_hint": 2,
+      "type": "reader_scene",
+      "entities": [
+        "tharvek_ormvall"
+      ],
+      "summary": "13h12 água sobe e pedra reage em câmara anã, anomalia sem causa atribuída; recuo de perspectiva distante.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        16,
+        21,
+        23,
+        26,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+        "source_sha256_manifest": "3a0c18e2965159e96f9dbf071fe87cceaeaff91729a995313b8bdfdc5b497fb3",
+        "blob_sha1": "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33",
+        "source_blob_sha1s": [
+          "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33"
+        ],
+        "line_start": 1521,
+        "line_end": 1616,
+        "role": "Response",
+        "span_sha256_utf8": "ad3d23a8e23571f46a5392fd7b3c54b54e51374b0d95488af43cd2787679fef3",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "fb9e3664aa5a2c0c3aefb282493ffcdf38bcc191",
+        "full_story_sha256": "ab637c49cb208c8814a2e1a49c474d23a1d80a0b4ef487ae0bb5566c0fdb64d0",
+        "immutable_manifest_blob": "c575ec1aa6fe0f49a7f1f0d17acb1db3282785a9"
+      }
+    },
+    {
+      "id": "O8C-B84-015",
+      "book": "VI",
+      "day": 545,
+      "chapter_hint": 2,
+      "type": "reader_scene",
+      "entities": [
+        "tharvek_ormvall"
+      ],
+      "summary": "13h29 salva civis, perde ponte principal do vale; ajuda externa cogitada, sem chegada instantânea.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        10,
+        16,
+        17,
+        23,
+        24,
+        25,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+        "source_sha256_manifest": "3a0c18e2965159e96f9dbf071fe87cceaeaff91729a995313b8bdfdc5b497fb3",
+        "blob_sha1": "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33",
+        "source_blob_sha1s": [
+          "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33"
+        ],
+        "line_start": 1617,
+        "line_end": 1812,
+        "role": "Response",
+        "span_sha256_utf8": "fee236ac0516cf4e9b6f1adee36902ac609d8db18ebb949f8c59ca963f169c26",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "fb9e3664aa5a2c0c3aefb282493ffcdf38bcc191",
+        "full_story_sha256": "ab637c49cb208c8814a2e1a49c474d23a1d80a0b4ef487ae0bb5566c0fdb64d0",
+        "immutable_manifest_blob": "c575ec1aa6fe0f49a7f1f0d17acb1db3282785a9"
+      }
+    },
+    {
+      "id": "O8C-B84-016",
+      "book": "VI",
+      "day": 545,
+      "chapter_hint": 2,
+      "type": "reader_scene",
+      "entities": [
+        "elyrien_vaelthara",
+        "neris"
+      ],
+      "summary": "14h07 floresta cristaliza e aparelho mineral hostil, sem associação comprovada à montanha.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        13,
+        16,
+        23,
+        26,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+        "source_sha256_manifest": "3a0c18e2965159e96f9dbf071fe87cceaeaff91729a995313b8bdfdc5b497fb3",
+        "blob_sha1": "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33",
+        "source_blob_sha1s": [
+          "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33"
+        ],
+        "line_start": 1813,
+        "line_end": 1930,
+        "role": "Response",
+        "span_sha256_utf8": "8588ad00ec2c3e8686507d27ff7d11b4a4d373620a233a10ce504f587795d0a6",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "fb9e3664aa5a2c0c3aefb282493ffcdf38bcc191",
+        "full_story_sha256": "ab637c49cb208c8814a2e1a49c474d23a1d80a0b4ef487ae0bb5566c0fdb64d0",
+        "immutable_manifest_blob": "c575ec1aa6fe0f49a7f1f0d17acb1db3282785a9"
+      }
+    },
+    {
+      "id": "O8C-B84-017",
+      "book": "VI",
+      "day": 545,
+      "chapter_hint": 2,
+      "type": "reader_scene",
+      "entities": [
+        "elyrien_vaelthara",
+        "neris"
+      ],
+      "summary": "14h19 Elyrien sacrifica árvore antiga para salvar famílias, riscos persistem.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        10,
+        11,
+        16,
+        23,
+        24,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+        "source_sha256_manifest": "3a0c18e2965159e96f9dbf071fe87cceaeaff91729a995313b8bdfdc5b497fb3",
+        "blob_sha1": "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33",
+        "source_blob_sha1s": [
+          "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33"
+        ],
+        "line_start": 1931,
+        "line_end": 2104,
+        "role": "Response",
+        "span_sha256_utf8": "7cc88f89741471cc5b9ec05b330e99c087805c6926feb1eb7b40b21449ca2451",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "fb9e3664aa5a2c0c3aefb282493ffcdf38bcc191",
+        "full_story_sha256": "ab637c49cb208c8814a2e1a49c474d23a1d80a0b4ef487ae0bb5566c0fdb64d0",
+        "immutable_manifest_blob": "c575ec1aa6fe0f49a7f1f0d17acb1db3282785a9"
+      }
+    },
+    {
+      "id": "O8C-B84-018",
+      "book": "VI",
+      "day": 545,
+      "chapter_hint": 2,
+      "type": "reader_scene",
+      "entities": [
+        "neris",
+        "elyrien_vaelthara",
+        "tharvek_ormvall"
+      ],
+      "summary": "17h26 e 18h02 frentes independentes preparam delegações e pedidos reais; nenhuma já chegou.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        16,
+        19,
+        25,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+        "source_sha256_manifest": "3a0c18e2965159e96f9dbf071fe87cceaeaff91729a995313b8bdfdc5b497fb3",
+        "blob_sha1": "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33",
+        "source_blob_sha1s": [
+          "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33"
+        ],
+        "line_start": 2105,
+        "line_end": 2246,
+        "role": "Response",
+        "span_sha256_utf8": "5a6c10ee7fd15b54b825328bdbbef072f0600a126eed70d8831d635265c942f6",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "fb9e3664aa5a2c0c3aefb282493ffcdf38bcc191",
+        "full_story_sha256": "ab637c49cb208c8814a2e1a49c474d23a1d80a0b4ef487ae0bb5566c0fdb64d0",
+        "immutable_manifest_blob": "c575ec1aa6fe0f49a7f1f0d17acb1db3282785a9"
+      }
+    },
+    {
+      "id": "O8C-B84-019",
+      "book": "VI",
+      "day": 545,
+      "chapter_hint": 2,
+      "type": "knowledge",
+      "entities": [
+        "miren",
+        "astra"
+      ],
+      "summary": "20h08 pesquisa AERÚN independente, Coração selado, Talis inconclusiva.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        15,
+        26,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+        "source_sha256_manifest": "3a0c18e2965159e96f9dbf071fe87cceaeaff91729a995313b8bdfdc5b497fb3",
+        "blob_sha1": "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33",
+        "source_blob_sha1s": [
+          "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33"
+        ],
+        "line_start": 2247,
+        "line_end": 2318,
+        "role": "Response",
+        "span_sha256_utf8": "ad44b951d8b9edecc635e43f4c220d561ece805726021b67d5a92ef3f7e18f65",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "fb9e3664aa5a2c0c3aefb282493ffcdf38bcc191",
+        "full_story_sha256": "ab637c49cb208c8814a2e1a49c474d23a1d80a0b4ef487ae0bb5566c0fdb64d0",
+        "immutable_manifest_blob": "c575ec1aa6fe0f49a7f1f0d17acb1db3282785a9"
+      }
+    },
+    {
+      "id": "O8C-B84-020",
+      "book": "VI",
+      "day": 545,
+      "chapter_hint": 2,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren",
+        "rumo",
+        "nox"
+      ],
+      "summary": "21h37 P04 Miren vê ASA física, Rumo coautor livre; ainda sem voo.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        13,
+        15,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+        "source_sha256_manifest": "3a0c18e2965159e96f9dbf071fe87cceaeaff91729a995313b8bdfdc5b497fb3",
+        "blob_sha1": "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33",
+        "source_blob_sha1s": [
+          "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33"
+        ],
+        "line_start": 2319,
+        "line_end": 2486,
+        "role": "Response",
+        "span_sha256_utf8": "ab9dc4cbed8b8664165809be85d56ab026bec24356d2823a88ed68a64c823793",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "fb9e3664aa5a2c0c3aefb282493ffcdf38bcc191",
+        "full_story_sha256": "ab637c49cb208c8814a2e1a49c474d23a1d80a0b4ef487ae0bb5566c0fdb64d0",
+        "immutable_manifest_blob": "c575ec1aa6fe0f49a7f1f0d17acb1db3282785a9"
+      }
+    },
+    {
+      "id": "O8C-B84-021",
+      "book": "VI",
+      "day": 545,
+      "chapter_hint": 2,
+      "type": "reader_scene",
+      "entities": [
+        "vesra_keth"
+      ],
+      "summary": "22h18 quarto Vesra, perspectiva final do leitor, planeja próximos passos; Lucas permanece P04 último local demonstrado.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        23,
+        25,
+        26,
+        27,
+        30
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C02-PIV-D545-AUTHOR-SOURCE",
+        "source_sha256_manifest": "3a0c18e2965159e96f9dbf071fe87cceaeaff91729a995313b8bdfdc5b497fb3",
+        "blob_sha1": "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33",
+        "source_blob_sha1s": [
+          "bda3d606c6a5831094f2e1c20d4c56d5cac7ea33"
+        ],
+        "line_start": 2487,
+        "line_end": 2586,
+        "role": "Response",
+        "span_sha256_utf8": "8b39839319e523479d5fe08dd7d57316712285080c2f33424c93a4b372438e94",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "fb9e3664aa5a2c0c3aefb282493ffcdf38bcc191",
+        "full_story_sha256": "ab637c49cb208c8814a2e1a49c474d23a1d80a0b4ef487ae0bb5566c0fdb64d0",
+        "immutable_manifest_blob": "c575ec1aa6fe0f49a7f1f0d17acb1db3282785a9"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "start": 1,
+      "end": 22,
+      "role": "Response",
+      "span_sha256_utf8": "385df01e96264db94e5e10be83bcf434fb6dde0b71f812c406302213bff6db1e",
+      "record_ids": [
+        "O8C-B84-001"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 23,
+      "end": 134,
+      "role": "Response",
+      "span_sha256_utf8": "f874c0f4237a107bffecdba65d87874a746ac4b469fe6dec91c0afafddb9faf1",
+      "record_ids": [
+        "O8C-B84-002"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 135,
+      "end": 260,
+      "role": "Response",
+      "span_sha256_utf8": "5ddbef1497bf24172739c7258de8efbb6d777f6992c4484c66df0e00f983451b",
+      "record_ids": [
+        "O8C-B84-003"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 261,
+      "end": 342,
+      "role": "Response",
+      "span_sha256_utf8": "64057d0daf2357e195c48dabf2ea444802db37f76ca8de7202b5bb9843e2fe9b",
+      "record_ids": [
+        "O8C-B84-004"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 343,
+      "end": 460,
+      "role": "Response",
+      "span_sha256_utf8": "00df0e0fd753025793771ed8dfe507f12324985b3e24acc26fa405eea4ee3928",
+      "record_ids": [
+        "O8C-B84-005"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 461,
+      "end": 588,
+      "role": "Response",
+      "span_sha256_utf8": "ec330d745e44166832324ab82e3c8ba76d4685813bc0bb4f8e11cdebd6dc9853",
+      "record_ids": [
+        "O8C-B84-006"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 589,
+      "end": 730,
+      "role": "Response",
+      "span_sha256_utf8": "fa24d1681c7127cfdb1e15f4ef5ab12b16a12f2abfd78a7396dbc2eb0b24cab4",
+      "record_ids": [
+        "O8C-B84-007"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 731,
+      "end": 864,
+      "role": "Response",
+      "span_sha256_utf8": "d740b5d4d797ffb7325dd63e41d7efd097f0a44087e0a40a15eff1fcb49c893d",
+      "record_ids": [
+        "O8C-B84-008"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 865,
+      "end": 958,
+      "role": "Response",
+      "span_sha256_utf8": "f725235a3bb5872f5b108339305d1d3ec826d3243aaa2c061ccf8bd046a94b75",
+      "record_ids": [
+        "O8C-B84-009"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 959,
+      "end": 1044,
+      "role": "Response",
+      "span_sha256_utf8": "9bc52f18148795bf2b3a42779b8afbce445655531ab315b92e28105cc8b24089",
+      "record_ids": [
+        "O8C-B84-010"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 1045,
+      "end": 1252,
+      "role": "Response",
+      "span_sha256_utf8": "5db1bd5e2ff27088bf797ebb71eab0c7020c343f994a77f03e18961ed338e2a0",
+      "record_ids": [
+        "O8C-B84-011"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 1253,
+      "end": 1394,
+      "role": "Response",
+      "span_sha256_utf8": "d1b93b68bcbe15f93a3c3aee9a37326df18d5f70037461173ae2f6764f7bf586",
+      "record_ids": [
+        "O8C-B84-012"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 1395,
+      "end": 1520,
+      "role": "Response",
+      "span_sha256_utf8": "cf6639c6c67187f0a68a664ab2e57f5c1b8fe1054ddfcff05243fbecfc79db36",
+      "record_ids": [
+        "O8C-B84-013"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 1521,
+      "end": 1616,
+      "role": "Response",
+      "span_sha256_utf8": "ad3d23a8e23571f46a5392fd7b3c54b54e51374b0d95488af43cd2787679fef3",
+      "record_ids": [
+        "O8C-B84-014"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 1617,
+      "end": 1812,
+      "role": "Response",
+      "span_sha256_utf8": "fee236ac0516cf4e9b6f1adee36902ac609d8db18ebb949f8c59ca963f169c26",
+      "record_ids": [
+        "O8C-B84-015"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 1813,
+      "end": 1930,
+      "role": "Response",
+      "span_sha256_utf8": "8588ad00ec2c3e8686507d27ff7d11b4a4d373620a233a10ce504f587795d0a6",
+      "record_ids": [
+        "O8C-B84-016"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 1931,
+      "end": 2104,
+      "role": "Response",
+      "span_sha256_utf8": "7cc88f89741471cc5b9ec05b330e99c087805c6926feb1eb7b40b21449ca2451",
+      "record_ids": [
+        "O8C-B84-017"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 2105,
+      "end": 2246,
+      "role": "Response",
+      "span_sha256_utf8": "5a6c10ee7fd15b54b825328bdbbef072f0600a126eed70d8831d635265c942f6",
+      "record_ids": [
+        "O8C-B84-018"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 2247,
+      "end": 2318,
+      "role": "Response",
+      "span_sha256_utf8": "ad44b951d8b9edecc635e43f4c220d561ece805726021b67d5a92ef3f7e18f65",
+      "record_ids": [
+        "O8C-B84-019"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 2319,
+      "end": 2486,
+      "role": "Response",
+      "span_sha256_utf8": "ab9dc4cbed8b8664165809be85d56ab026bec24356d2823a88ed68a64c823793",
+      "record_ids": [
+        "O8C-B84-020"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 2487,
+      "end": 2586,
+      "role": "Response",
+      "span_sha256_utf8": "8b39839319e523479d5fe08dd7d57316712285080c2f33424c93a4b372438e94",
+      "record_ids": [
+        "O8C-B84-021"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    }
+  ],
+  "axis_coverage": {
+    "assessed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "represented": [
+      1,
+      2,
+      3,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ]
+  },
+  "next_line": 2587,
+  "macro_complete": true,
+  "status": "STAGING_CANDIDATE_PENDING_NATIVE",
+  "production_gate": "HOLD",
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "semantic_certification": false,
+  "independent_review": false,
+  "promotion": false
+}
