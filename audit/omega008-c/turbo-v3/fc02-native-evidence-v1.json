@@ -1,0 +1,40 @@
+{
+  "schema": "OMEGA_FC02_NATIVE_EVIDENCE_V1",
+  "validated_commit": "0972c15fa423d969737d459c1a8ff06bdf173128",
+  "workflow": 46154701354,
+  "job": 141008672666,
+  "workflow_conclusion": "success",
+  "unittest_total": 989,
+  "compileall": "PASS",
+  "archive_unchanged": "PASS",
+  "aggregate": {
+    "canon_changed": false,
+    "canonical_graph_sha256": "a8d8763e42d25f0ae4b2c48be43002ea36204e54c21d60829d00a4afb49d62eb",
+    "closed_events": {
+      "events": 754,
+      "links": 754,
+      "links_sha256": "b5f322fc56d42d3f18bda3cdb4c1137e9376b5e99caacd7d37a046b68965dac4",
+      "unlinked": 0,
+      "visibility": {
+        "BASTIDORES": 155,
+        "PRIVADO_PERSONAGEM": 572,
+        "PUBLICO": 27
+      }
+    },
+    "closed_knowledge_verified": 1468,
+    "graph_unchanged": true,
+    "groups_verified": 4941,
+    "independent_review": false,
+    "live_integration": false,
+    "preparation_locators": 129,
+    "preparation_scenes": 24,
+    "production_gate": "HOLD",
+    "promotion": false,
+    "registry_binding": "f2301e1723f4ba352f4c75ce5d4e1c3baecf7e7e5bd4779ecdc453bc68f05d30",
+    "restricted_or_non_event_windows_denied": 1554,
+    "semantic_certification": false,
+    "source_windows_checked": 3387,
+    "status": "FC02_SOURCE_AND_PREPARATION_BRIDGE_PASS_SEMANTIC_HOLD",
+    "typed_events": 0
+  }
+}
