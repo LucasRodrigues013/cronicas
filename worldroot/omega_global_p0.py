@@ -53,7 +53,11 @@ def inspect(root,archive,*, inventory_consumer=None):
     for row in regrows:
         for label in [row["id"],row["name"],*row.get("aliases",[])]:idx[norm(label)].add(row["id"])
     require(len({r["id"] for r in regrows})==len(regrows),"registry unique ids")
-    inventory=[]; ids=set(); keys=Counter(); issues=Counter(); blocks=Counter(); group_rows=[]; receipt_pins=[]; scope_findings=[]
+    scope_overlay=read(root,ROOT+"global-p0-dream-scope-overlay-v1.json","0d339ef0f6e954f72907f6854c05192db533a24b")
+    scope_rows={x["id"]:x for x in scope_overlay["rows"]}
+    require(len(scope_rows)==2 and scope_overlay["production_gate"]=="HOLD" and scope_overlay["semantic_certification"] is False,"scope overlay")
+    used_scope=set()
+    inventory=[]; ids=set(); keys=Counter(); issues=Counter(); blocks=Counter(); group_rows=[]; receipt_pins=[]; scope_findings=[]; legacy_partition=[]
     authorities=Counter(); books=Counter(); scopes=Counter(); roles=Counter(); kinds=Counter(); axes=Counter(); dispositions=Counter(); labels=set()
     total_lines=covered_lines=0; original_events=original_knowledge=0; prior_ends={}
     journal=list(_journal(archive));require(len(journal)==50,"journal count")
@@ -113,14 +117,25 @@ def inspect(root,archive,*, inventory_consumer=None):
                     au="AUTHOR_DIRECTION_NOT_EVENT"
                 if role=="Prompt" and au!="AUTHOR_DIRECTION_NOT_EVENT":blocks["prompt_authority"]+=1
                 if role=="Metadata" and au!="METADATA_NOT_EVENT":blocks["metadata_authority"]+=1
+                original_vis=vis
+                if rid in scope_rows:
+                    patch=scope_rows[rid]
+                    require(patch["macro"]==i and patch["receipt_blob"]==receipt_blob and patch["anchor"]==e["span_sha256_utf8"] and patch["interval"]==[a,z] and patch["original_visibility"]==vis and typ=="dream" and patch["promotion"] is False,"scope patch binding")
+                    markers=patch["literal_markers"]
+                    require(all(a<=k<=z for k in markers),"scope markers bounds")
+                    marker_text=[source[0][k-1].lower() for k in markers]
+                    require(("sonho" in marker_text[0] and "profecia" in marker_text[1]) or ("pesadelo" in marker_text[0] and "acordou" in marker_text[1]),"literal dream separation")
+                    vis=patch["effective_visibility"];require(vis=="READER_ONLY_NO_CHARACTER_INJECTION","scope restriction")
+                    used_scope.add(rid)
+                    scope_findings.append(dict(id=rid,macro=i,type=typ,visibility=original_vis,effective_visibility=vis,authority=au,receipt_blob=receipt_blob,status="RESTRICTED_PENDING_ATOMIC_SPLIT"))
                 if typ in ("reader-only","reader-perspectives","reader_scene","reader_perspective","reader_lore","private_knowledge","private_strategy","private_lore","dream","variant") and not vis.startswith("READER_ONLY"):
                     blocks["reader_scope"]+=1
                     scope_findings.append(dict(id=rid,macro=i,type=typ,visibility=vis,authority=au,receipt_blob=receipt_blob))
                 effective=set(rec.get("axes",axes25.get(rid,[])))
                 if rid in corrections:effective.add(corrections[rid])
                 require(effective and effective<=set(range(1,31)),"axes")
-                disposition="PENDING_ATOMIC_REVIEW" if au=="HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED" else "NON_EVENT_OR_GAP_REVIEW"
-                row=dict(id=rid,macro=i,receipt_path=path,receipt_blob=receipt_blob,source=m["source"],source_sha256=source[3],physical_blobs=sorted({p[2] for p in source[2] if p[0]<=z and p[1]>=a}),interval=[a,z],anchor=e["span_sha256_utf8"],role=role,original_authority=rec["authority"],authority=au,book=rec.get("book"),day=rec.get("day"),entities=rec.get("entities",[]),visibility=vis,classification=typ,axes=sorted(effective),review_state=rec.get("verification","GROUPED_CANDIDATE"),disposition=disposition,semantic_verdict=None,promotion=False)
+                disposition="PENDING_ATOMIC_SCOPE_SPLIT" if rid in scope_rows else "PENDING_ATOMIC_REVIEW" if au=="HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED" else "NON_EVENT_OR_GAP_REVIEW"
+                row=dict(id=rid,macro=i,receipt_path=path,receipt_blob=receipt_blob,source=m["source"],source_sha256=source[3],physical_blobs=sorted({p[2] for p in source[2] if p[0]<=z and p[1]>=a}),interval=[a,z],anchor=e["span_sha256_utf8"],role=role,original_authority=rec["authority"],authority=au,book=rec.get("book"),day=rec.get("day"),entities=rec.get("entities",[]),original_visibility=original_vis,visibility=vis,classification=typ,axes=sorted(effective),review_state=rec.get("verification","GROUPED_CANDIDATE"),disposition=disposition,semantic_verdict=None,promotion=False)
                 inventory.append(row);ids.add(rid);current[rid]=e;num+=1
                 keys[(m["source"],a,z,e["span_sha256_utf8"])]+=1
                 authorities[au]+=1;books[str(row["book"])]+=1;scopes[vis]+=1;roles[role]+=1;kinds[typ]+=1;axes.update(effective);dispositions[disposition]+=1
@@ -129,6 +144,21 @@ def inspect(root,archive,*, inventory_consumer=None):
             if coverage is None:
                 issues["legacy_receipts_without_explicit_coverage"]+=1
                 issues["legacy_lines_without_explicit_coverage"]+=bounds[1]-bounds[0]+1
+                # Partition missing documentation by exact role and existing record membership.
+                # Unannotated text is explicitly pending, never deemed recovered semantic facts.
+                chunks=[];last=None
+                for pos in range(bounds[0],bounds[1]+1):
+                    member=sorted(rid for rid,e in current.items() if e["line_start"]<=pos<=e["line_end"])
+                    role=source[1][pos-1]
+                    key=(role,tuple(member))
+                    if last==key:chunks[-1]["end"]=pos
+                    else:
+                        chunks.append(dict(macro=i,receipt_blob=receipt_blob,source=m["source"],start=pos,end=pos,role=role,record_ids=member,disposition="EXISTING_ANCHOR_NOT_SEMANTIC_CERTIFIED" if member else "METADATA_NOT_EVENT" if role=="Metadata" else "UNANNOTATED_PENDING_P1"))
+                    last=key
+                for chunk in chunks:
+                    chunk["sha256"]=anchor(source,chunk["start"],chunk["end"])
+                require(sum(c["end"]-c["start"]+1 for c in chunks)==bounds[1]-bounds[0]+1,"legacy partition")
+                legacy_partition.extend(chunks)
             else:
                 cursor=bounds[0];seen=set()
                 for c in coverage:
@@ -159,14 +189,17 @@ def inspect(root,archive,*, inventory_consumer=None):
     policy=read(root,"worldroot/editorial_policy.json","615151fc89228ddb222ea01613c23e977f8c418b")
     require(policy["version"]==22 and len(policy["rules"])==130,"editorial policy")
     require(not subprocess.check_output(["git","-C",str(archive),"status","--porcelain"],text=True).strip(),"archive changed")
-    require(len(inventory)==cp["staging_records"],"terminal record count")
+    require(len(inventory)==cp["staging_records"] and used_scope==set(scope_rows),"terminal record count/scope overlay")
+    legacy_counts=Counter()
+    for c in legacy_partition:legacy_counts[c["disposition"]]+=c["end"]-c["start"]+1
+    require(sum(legacy_counts.values())==1679 and covered_lines+sum(legacy_counts.values())==total_lines,"legacy disposition coverage")
     p1_groups=[]
     for i in range(1,117):
         rows=[row for row in inventory if row["macro"]==i]
-        p1_groups.append(dict(macro=i,records=len(rows),atomic_review_candidates=sum(row["disposition"]=="PENDING_ATOMIC_REVIEW" for row in rows),non_event_or_gap=sum(row["disposition"]=="NON_EVENT_OR_GAP_REVIEW" for row in rows),sha256=digest(stable(rows))))
+        p1_groups.append(dict(macro=i,records=len(rows),atomic_review_candidates=sum(row["disposition"] in ("PENDING_ATOMIC_REVIEW","PENDING_ATOMIC_SCOPE_SPLIT") for row in rows),non_event_or_gap=sum(row["disposition"]=="NON_EVENT_OR_GAP_REVIEW" for row in rows),sha256=digest(stable(rows))))
     if inventory_consumer is not None:
-        inventory_consumer(inventory,p1_groups)
-    return {"scope_findings":scope_findings,"p1_groups_sha256":digest(stable(p1_groups)),"p1_group_count":len(p1_groups),"status":"P0_INVENTORY_STRUCTURAL_PASS" if not blocks else "P0_INVENTORY_BLOCKED", "macros":len(group_rows),"records":len(inventory),"expected_records":cp["staging_records"],"record_count_matches":len(inventory)==cp["staging_records"],"legacy_records":sum(x["records"] for x in group_rows[:22]),"queue_lines":total_lines,"explicit_coverage_lines":covered_lines,"unique_ids":len(ids),"duplicate_exact_spans_additional":duplicate_spans,"receipt_files":len(receipt_pins),"excluded_duplicate_partial_records":len(partial["records"]),"authority":dict(authorities),"book":dict(books),"role":dict(roles),"visibility":dict(scopes),"types":dict(kinds),"effective_axes":dict(axes),"dispositions":dict(dispositions),"label_counts":dict(label_counts),"unique_entity_labels":len(labels),"registry_ids":len(regrows),"registry_files":registry_metrics,"original_closed_events":original_events,"original_closed_knowledge":original_knowledge,"macro_metrics":group_rows,"issues":dict(issues),"blockers":dict(blocks),"inventory_sha256":digest(stable(inventory)),"receipt_manifest_sha256":digest(stable(receipt_pins)),"queue_unresolved":sum(m["book_hint"]=="V_OR_VI_UNRESOLVED" for m in q),"cumulative_status":prior["status"],"atomic_claims_certified":0,"independent_review":False,"typed_projection":False,"production_gate":"HOLD","canon_changed":False}
+        inventory_consumer(inventory,p1_groups,legacy_partition)
+    return {"legacy_partition_sha256":digest(stable(legacy_partition)),"legacy_partition_spans":len(legacy_partition),"legacy_partition_lines":dict(legacy_counts),"structural_disposition_lines":covered_lines+sum(legacy_counts.values()),"scope_findings":scope_findings,"p1_groups_sha256":digest(stable(p1_groups)),"p1_group_count":len(p1_groups),"status":"P0_INVENTORY_STRUCTURAL_PASS" if not blocks else "P0_INVENTORY_BLOCKED", "macros":len(group_rows),"records":len(inventory),"expected_records":cp["staging_records"],"record_count_matches":len(inventory)==cp["staging_records"],"legacy_records":sum(x["records"] for x in group_rows[:22]),"queue_lines":total_lines,"explicit_coverage_lines":covered_lines,"unique_ids":len(ids),"duplicate_exact_spans_additional":duplicate_spans,"receipt_files":len(receipt_pins),"excluded_duplicate_partial_records":len(partial["records"]),"authority":dict(authorities),"book":dict(books),"role":dict(roles),"visibility":dict(scopes),"types":dict(kinds),"effective_axes":dict(axes),"dispositions":dict(dispositions),"label_counts":dict(label_counts),"unique_entity_labels":len(labels),"registry_ids":len(regrows),"registry_files":registry_metrics,"original_closed_events":original_events,"original_closed_knowledge":original_knowledge,"macro_metrics":group_rows,"issues":dict(issues),"blockers":dict(blocks),"inventory_sha256":digest(stable(inventory)),"receipt_manifest_sha256":digest(stable(receipt_pins)),"queue_unresolved":sum(m["book_hint"]=="V_OR_VI_UNRESOLVED" for m in q),"cumulative_status":prior["status"],"atomic_claims_certified":0,"independent_review":False,"typed_projection":False,"production_gate":"HOLD","canon_changed":False}
 def main():
     p=argparse.ArgumentParser();p.add_argument("--engine-root",default=".");p.add_argument("--archive-root",required=True)
     a=p.parse_args()
