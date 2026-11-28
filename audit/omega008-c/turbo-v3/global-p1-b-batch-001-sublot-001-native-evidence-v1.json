@@ -1,0 +1,133 @@
+{
+  "schema": "OMEGA_GLOBAL_P1_B_NATIVE_EVIDENCE_V1",
+  "validated_commit": "8a0596fb3b5d410ad4bf4afa08f0575bb55288b3",
+  "workflow_run": 46152870742,
+  "job_id": 141003080042,
+  "workflow_conclusion": "success",
+  "tests": [
+    9,
+    20,
+    3,
+    15,
+    6
+  ],
+  "tests_total": 53,
+  "aggregate": {
+    "anchor_lines": 183,
+    "batch": 1,
+    "canon_changed": false,
+    "children": 73,
+    "children_sha256": "be049d02b137e6e467ba6677dfbc0313386e8d043b5baa0312b394d299980ab6",
+    "completed_ids": [
+      "O8C-B2-001",
+      "O8C-B2-002",
+      "O8C-B2-003",
+      "O8C-B2-004",
+      "O8C-B2-005"
+    ],
+    "gap_lines": 47,
+    "gap_spans": 9,
+    "gaps_sha256": "e922dfe93d294881de023a85e0a2e5309af50dcecc0df0a0d6b6c8becaffd6de",
+    "global_remaining": 4857,
+    "independent_review": false,
+    "macro": 2,
+    "modalities": {
+      "HYPOTHESIS": 2,
+      "META": 5,
+      "NARRATED": 28,
+      "PLAN": 14,
+      "REPORT": 24
+    },
+    "new_jobs": 40,
+    "new_packets": 14,
+    "new_pairs": 7,
+    "next_anchor": 1910,
+    "parents_sha256": "450579a9db212515cce4bec156e0cb8f1890083f7e00bd238e02b6292fe71157",
+    "prior_packets": 126,
+    "processed_groups": 5,
+    "production_gate": "HOLD",
+    "promotion": false,
+    "range": [
+      1680,
+      1909
+    ],
+    "registry_binding": "f2301e1723f4ba352f4c75ce5d4e1c3baecf7e7e5bd4779ecdc453bc68f05d30",
+    "remaining_in_batch": 95,
+    "remaining_in_macro": 120,
+    "review_controller": "0fc41c8f15376efdedb130c8b38ae515dbfdf22147d84ba00eebad31ae395ce2",
+    "review_manifest": [
+      {
+        "A": "8eef9f9345942af39e4da0ca5951495fb2984a6604bb6c4d86f6db36bd310415",
+        "B": "6e4d996e8ac37bec04accd4910435cb1cf97799662b83cebcad1547a65c4be2b",
+        "jobs": 6,
+        "targets": 11
+      },
+      {
+        "A": "61a8884741e0af95a801197621056a5ae46bf6b6dd149099ee9330ccc6c3dc71",
+        "B": "c3ff447388fd7b839f6f679665ca9893fa19b2e9b0ab5d0c18463bb6e3793ae9",
+        "jobs": 6,
+        "targets": 14
+      },
+      {
+        "A": "2ca134ef016bca5d11bd4f536ebc92ea5e349942023f3c423d04fa408c4f26ad",
+        "B": "3ecbae51eb72da9966d114d858ad5a2a32a052beb124416a4cc27ebe394b51fd",
+        "jobs": 6,
+        "targets": 10
+      },
+      {
+        "A": "33516cf906bfed8f4af64dc1344a0ceab3d41e284c8b46dd5cfd26d3158227c4",
+        "B": "7ee5bbf818a2919bf20ff5b11fb37c387abc12987d11cce99243428b8b96261a",
+        "jobs": 6,
+        "targets": 14
+      },
+      {
+        "A": "f95ee3a817a107990222401580c7ddd7cb1927615862f6ef39137e4382f8939e",
+        "B": "5f953d115e2dcfeb35fb2d532b515f3e49d7d1a4e515b480aed8f83d98a70040",
+        "jobs": 6,
+        "targets": 7
+      },
+      {
+        "A": "3a8f00553a03bbef2a320ca1906a6d13f8f55cc26c3d4dfabc75a1739d7927a2",
+        "B": "358a495d8ba9cad8f2238519680059aab60851aafb26b3e906bd60f2dd1aa5f5",
+        "jobs": 6,
+        "targets": 12
+      },
+      {
+        "A": "d913a2a8abe59ddc91dd4b25b3b83a19003d9bd8519799ea15babf67bf13a279",
+        "B": "6cacbd68ee3aff655d0e3d90ec78859fbd74af6d195500414533671d2b8b347f",
+        "jobs": 4,
+        "targets": 5
+      }
+    ],
+    "review_returns": 0,
+    "semantic_certification": false,
+    "status": "P1_B_PARTIAL_EDITORIAL_STAGING_INDEPENDENT_HOLD",
+    "verdicts": {
+      "PARTIAL": 43,
+      "SUPPORTED": 27,
+      "UNKNOWN": 3
+    }
+  },
+  "logs_readback": true,
+  "prior_run": {
+    "run": 46152759589,
+    "job": 141002745634,
+    "head": "214976e3d8a87ce8e1d45436d79af33ff7e86a44",
+    "workflow_conclusion": "success",
+    "tests_total": 52,
+    "semantic_aggregate_seals_preserved": true,
+    "invalid_remaining_in_batch": 1899,
+    "expected": 95,
+    "disposition": "DENOMINATOR_REGRESSION_CORRECTED_NOT_ACCEPTED_AS_CHECKPOINT"
+  },
+  "p1a3_checkpoint_blob": "3432df660d63f9eddf8e755d91f6572a20678e70",
+  "p1a3_native_blob": "54913acf7f07f91b6497d87f248d580033978b3f",
+  "overlay_blob": "015938dbb4013ba270bbe19bfafec46fb8b88985",
+  "adapter_blob": "d90dbe8cf9c382eb2272368d24bb70a8240c8e97",
+  "test_blob": "cbce31d59e1bd0547e94f1c5a6c792303b1094d7",
+  "production_gate": "HOLD",
+  "semantic_certification": false,
+  "independent_review": false,
+  "promotion": false,
+  "canon_changed": false
+}
