@@ -588,6 +588,9 @@ def verify_book_iv_boundary(root,archive):
     cp2=read(root,ROOT+"recovery-checkpoint-0042-closure-pending.json","f634c993ccd47ce9bb2b31498d1a325d94282b5c")
     require(cp1["previous_checkpoint_blob"]=="73e3db1bb5f0c72083982a0fe3e2b85c749d18d6" and cp2["previous_checkpoint_blob"]=="a73691f531597fce0a121ac27ea90ff3eaccf1ad" and cp1["next_macro"]==q[41] and cp2["next_macro"]==q[42] and q[42]["book_hint"]=="V","checkpoint chain")
     require([g["macro"] for g in review["macros"]]==list(range(30,43)),"book scope")
+    overlay=read(root,ROOT+"book-IV-boundary-review-overlay-01.json","6445e1451dbeab0ac0b17a0c28a2f1c572176c09")
+    corrections={x["id"]:x for x in overlay["corrections"]}; used=set()
+    require(not overlay["promotion"] and not overlay["canon_changed"],"overlay gate")
     ids=set();axes=set();authority=Counter();visibility=Counter();lines=0;cycle_lines=0;cycle_records=0
     for g in review["macros"]:
         m=q[g["macro"]-1];source=cache.get(m["source"]);at=m["start"];ga=set();gc=0;gl=0
@@ -598,19 +601,36 @@ def verify_book_iv_boundary(root,archive):
         for e in g["receipts"]:
             r=read(root,e["path"],e["blob"])
             require(r["range"]==e["range"] and r["range"][0]==at and r["previous_macro_id"]==m["previous_macro"] and r["official_unit_seal"]==m["unit_seal"],"receipt chain")
-            v=validate_receipt(r,m,source,r["project"],ARCHIVE,previous_ids=ids,expected_range=r["range"])
+            if g["macro"]==33 and r["range"][0]==1:
+                header=r["records"][0];he=header["evidence"];hc=r["coverage"][0]
+                require(header["id"]=="O8C-B33-001" and header["id"] not in ids and header["authority"]=="METADATA_NOT_EVENT" and not header["promotion"] and not header["entities"] and he["role"]=="Metadata" and [he["line_start"],he["line_end"]]==[1,8] and hc["record_ids"]==[header["id"]],"legacy header")
+                require(all(x=="Metadata" for x in source[1][:8]) and he["source_sha256_manifest"]==source[3] and he["blob_sha1"]==source[2][0][2] and sha256("\n".join(source[0][:8]).encode()).hexdigest()==he["span_sha256_utf8"]==hc["span_sha256_utf8"],"legacy header hash")
+                rr=r["records"][1:];sub=dict(r,range=[9,r["range"][1]],records=rr,coverage=r["coverage"][1:],axis_coverage={"assessed":list(range(1,31)),"represented":sorted({i for x in rr for i in x["axes"]})})
+                v=validate_receipt(sub,m,source,r["project"],ARCHIVE,previous_ids=ids|{header["id"]},expected_range=sub["range"])
+                v["lines"]+=8;v["records"]+=1;v["axes_represented"]=sorted(set(v["axes_represented"])|set(header["axes"]))
+            else:
+                v=validate_receipt(r,m,source,r["project"],ARCHIVE,previous_ids=ids,expected_range=r["range"])
             for x in r["records"]:
                 require(x["book"]=="IV" and not x["promotion"] and "NO_CHARACTER_INJECTION" in x["visibility"],"scope")
                 require((x["evidence"]["role"]=="Prompt")==(x["authority"]=="AUTHOR_DIRECTION_NOT_EVENT"),"author authority")
                 if x["type"] in ("reader_scene","variant","dream"):
                     require(x["visibility"].startswith("READER_ONLY"),"reader privacy")
+                effective=x["visibility"]
+                if x["id"] in corrections:
+                    c=corrections[x["id"]];require(c["original_receipt"]==e["blob"] and c["span_sha256"]==x["evidence"]["span_sha256_utf8"] and not c["promotion"],"overlay provenance")
+                    if c["operation"]=="RESTRICT_VISIBILITY":
+                        require(x["visibility"]==c["original"] and c["effective"]=="RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION","overlay restriction");effective=c["effective"]
+                    else:
+                        require(c["operation"]=="CORRECT_ENTITY_TOKENIZATION" and all(k in x["entities"] for k in c["original"]) and c["effective"]==["valdren"],"overlay entity")
+                    used.add(x["id"])
                 if x["type"]=="knowledge":
-                    require(x["visibility"].startswith("RESTRICTED"),"restricted privacy")
-                ids.add(x["id"]);authority[x["authority"]]+=1;visibility[x["visibility"]]+=1
+                    require(effective.startswith("RESTRICTED"),"restricted privacy")
+                ids.add(x["id"]);authority[x["authority"]]+=1;visibility[effective]+=1
             ga.update(v["axes_represented"]);gc+=v["records"];gl+=v["lines"];at=r["range"][1]+1
         require(at==m["end"]+1 and gl==g["lines"]==m["lines"] and gc==g["records"] and sorted(ga)==g["axes_represented"],"macro totals")
         axes.update(ga);lines+=gl
         if g["macro"]>=40:cycle_lines+=gl;cycle_records+=gc
+    require(used==set(corrections),"overlay coverage")
     t=review["totals"]
     require(lines==t["lines"]==122935 and len(ids)==t["records"]==773 and cycle_lines==t["cycle_lines"]==23579 and cycle_records==t["cycle_records"]==128 and sorted(axes)==t["axes_represented"]==list(range(1,31)),"review totals")
     for e in review["findings"]:

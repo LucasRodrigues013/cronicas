@@ -1,0 +1,36 @@
+{
+  "schema": "OMEGA_BOOK_IV_BOUNDARY_APPEND_ONLY_REVIEW_OVERLAY_V1",
+  "status": "PENDING_NATIVE",
+  "failed_workflow": 46086588052,
+  "scope": "Effective staging review only. Original receipts unchanged; no canon or typed projection.",
+  "corrections": [
+    {
+      "id": "O8C-B31-078",
+      "operation": "RESTRICT_VISIBILITY",
+      "original_receipt": "b890d9a2fa544fabf5ba267810311d713edb5dd2",
+      "original": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "effective": "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION",
+      "span_sha256": "516af45c25047c671176430fa12cbaa34b6a8d0aa010072658b761b836b9e924",
+      "reason": "Conservative mixed System/private context; no character injection before or after.",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B42-040",
+      "operation": "CORRECT_ENTITY_TOKENIZATION",
+      "original_receipt": "ef7e90e098476d8262bcc1cbe785432cd7df8ed4",
+      "original": [
+        "val",
+        "dren"
+      ],
+      "effective": [
+        "valdren"
+      ],
+      "span_sha256": "760f77472401da598451aac730e6a6b79bcaa6ed2b7e8102e603abe358c8aea7",
+      "reason": "Valdren is one named collection/location reference; do not create two entities.",
+      "promotion": false
+    }
+  ],
+  "metadata_0033": "Apply existing verified header treatment; no reclassification as event.",
+  "promotion": false,
+  "canon_changed": false
+}
