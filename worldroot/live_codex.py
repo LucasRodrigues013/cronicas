@@ -510,3 +510,38 @@ if __name__=="__main__":
     import argparse
     p=argparse.ArgumentParser();p.add_argument("--archive-root",required=True);p.add_argument("--db");a=p.parse_args()
     print(json.dumps(sync(a.archive_root,a.db),ensure_ascii=False))
+
+
+def field_review_inventory(record,db=None):
+    """Read-only field inventory for exact entity ID; never resolves conflicting values.
+    Editorial profile and closed typed WORLD state remain separately classified.
+    Output contains only safe field metadata; not a new profile or actor knowledge.
+    """
+    from .natural_codex import CHAR_FIELDS,PRIVATE_FIELDS,PRIVATE_SCOPES
+    ident=record["id"]
+    profile=record.get("natural_profile",{}).get("fields",{})
+    if not isinstance(profile,dict):raise ValueError("Invalid editorial profile")
+    fields=set(CHAR_FIELDS) if "Personagens" in record.get("domains",[]) else set(profile)
+    fields-=set(PRIVATE_FIELDS)
+    entries={}
+    for k in sorted(fields):
+        p=profile.get(k)
+        if p and (p.get("status")=="SEGREDO" or p.get("scope") in PRIVATE_SCOPES):continue
+        if not p or p.get("status")=="PENDENTE_FONTE":
+            entries[k]={"status":"UNKNOWN_OR_PENDING_SOURCE","current_confirmed":False}
+        else:
+            entries[k]={"status":"EDITORIAL_REFERENCE_NOT_CURRENT_STATE","editorial_status":p["status"],"value_sha256":digest(p["value"]),"current_confirmed":False}
+    if db is not None:
+        if not db.execute("SELECT 1 FROM records WHERE id=?",(ident,)).fetchone():raise ValueError("Unknown exact entity ID")
+        for field,value,event_id,raw,episode,day,clock,source_sha,line in db.execute("""SELECT s.field,s.value,s.event_id,e.body,e.episode,e.day,e.clock,e.source_sha,e.line
+            FROM codex_state s JOIN codex_events e ON e.event_id=s.event_id WHERE s.entity_id=? ORDER BY s.field""",(ident,)):
+            if field.startswith("knowledge:") or field in PRIVATE_FIELDS or json.loads(raw).get("scope")!="WORLD":continue
+            p=profile.get(field)
+            if p and (p.get("status")=="SEGREDO" or p.get("scope") in PRIVATE_SCOPES):continue
+            # A typed state is a derived closed projection, not independent semantic proof.
+            old=entries.get(field,{"status":"UNKNOWN_OR_PENDING_SOURCE","current_confirmed":False})
+            vhash=digest(json.loads(value));different="value_sha256" in old and old["value_sha256"]!=vhash
+            entries[field]={**old,"status":"MULTIPLE_VALUES_REVIEW" if different else "CLOSED_TYPED_STATE_PROJECTION",
+                            "typed_value_sha256":vhash,"typed_source":{"event_id":event_id,"episode":episode,"day":day,"clock":clock,"source_sha256":source_sha,"line":line},
+                            "current_confirmed":False}
+    return {"entity_id":ident,"fields":entries,"scope":"DIRECTOR_ONLY_FIELD_REVIEW","identity_inferred":False,"knowledge_injection":False,"semantic_certification":False,"canon_changed":False}

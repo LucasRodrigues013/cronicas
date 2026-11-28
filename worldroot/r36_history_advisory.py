@@ -68,7 +68,7 @@ def source_data(root,rows):
             if e["visibility"]!="PUBLICO":private[name].add(e["source"]["line"])
     return sources,private
 def retrieve(root,request,pack,*,shadow_mode=None):
-    need(shadow_mode in (None,"fusion","coverage"),"Invalid shadow mode")
+    need(shadow_mode in (None,"fusion","coverage","public_anchor"),"Invalid shadow mode")
     root=Path(root);head=request["head"]
     need(request.get("project")==PROJECT and g.load(root/"canon/HEAD.json")==head and head["sequence"]>=50,"FC live HEAD")
     need(blob((root/"canon/episodes/LVI-C09-PI-D579-AUTHOR-SOURCE.json").read_bytes())==BASE_CLOSURE,"FC baseline closure changed")
@@ -86,6 +86,21 @@ def retrieve(root,request,pack,*,shadow_mode=None):
         if not loc:blocked["no_eligible_line"]+=1;continue
         terms=set().union(*(v for _,v,_ in loc))
         index_rows.append((r,loc,terms))
+    public_rows=[];reviewed_routes=None
+    if shadow_mode=="public_anchor":
+        from .r36_temporal import public_anchor_rows
+        from .memory_continuity import review_creation
+        journal=list(g._journal(root))
+        need(bool(journal) and journal[-1][1]==head,"APEX verified journal HEAD")
+        def source_lookup(ep):
+            draft,manifest=g.verify_episode(root,ep)
+            return draft.prose,manifest["original_readback_sha256"]
+        public_rows=public_anchor_rows([c for c,_ in journal],head,source_lookup)
+        # Existing R33 exact-source route stays separate: only verification state,
+        # no copied claim, actor permissions, or new field assignment.
+        report=review_creation(root,head,request["requirements"],request["reviewed"])
+        missing=set(report["missing"])
+        reviewed_routes={r["id"]:("R33_REFERENCE_VERIFIED_NOT_SEMANTIC_PROOF" if r["id"] not in missing else "R33_REFERENCE_MISSING") for r in request["requirements"] if r.get("role","Response")=="Response"}
     results=[];count=0;critical_missing=0
     for req in request["requirements"]:
         if req.get("role","Response")!="Response":continue
@@ -104,7 +119,7 @@ def retrieve(root,request,pack,*,shadow_mode=None):
             ranked.append((score,coverage,r,best))
         ranked.sort(key=lambda x:(-x[0],-x[1],-x[2]["macro"],x[2]["id"]))
         selected=[];seen=set()
-        if shadow_mode is None:
+        if shadow_mode in (None,"public_anchor"):
             ranked_pairs=[]
             for score,coverage,r,best in ranked:
                 if r["source"] in seen and len(ranked)>3:continue
@@ -116,10 +131,14 @@ def retrieve(root,request,pack,*,shadow_mode=None):
         for r,(line,_,flags) in ranked_pairs:
             selected.append({"group_id":r["id"],"source":r["source"],"source_sha256":r["source_sha256"],"group_interval":r["interval"],"group_anchor":r["anchor"],"line":line,"line_sha256":sha(sources[r["source"]][0][line-1]),"signals":list(flags),"identity_status":"CANDIDATE_ONLY","knowledge_injection":False})
             if len(selected)==3:break
+        if shadow_mode=="public_anchor":
+            from .r36_temporal import rank_public_anchors,combine_anchor_lane
+            selected=combine_anchor_lane(selected,rank_public_anchors(public_rows,q))
         if not selected and req["critical"]:critical_missing+=1
         count+=len(selected);results.append({"requirement_id":req["id"],"status":"EDITORIAL_CANDIDATES" if selected else "NOT_RECOVERED_BY_ADVISORY","locators":selected})
     out={"schema":"worldroot-r36-fc-advisory-v1","project":PROJECT,"head_sha256":g.sha(g.canonical(head)),"request_sha256":g.sha(g.canonical(request)),"pack_sha256":pack["pack_sha256"],"registry_binding":binding,"baseline_alias_links_active":binding==BINDING,"indexed_groups":len(index_rows),"blocked_groups":dict(blocked),"requirements":results,"locator_count":count,"critical_without_advisory":critical_missing,"scope":"DIRECTOR_ONLY_CANDIDATES_NOT_FACTS","knowledge_injection":False,"semantic_certification":False,"canon_changed":False}
     if shadow_mode is not None:out["shadow_mode"]=shadow_mode
+    if reviewed_routes is not None:out["reviewed_reference_routes"]=reviewed_routes
     return {**out,"advisory_sha256":seal(out)}
 def configured(root,request):
     path=Path(root)/"ops/ENGINE_PUBLISHING_POLICY.json"

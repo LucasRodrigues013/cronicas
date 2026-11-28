@@ -5,6 +5,9 @@ on:
     paths:
       - 'worldroot/r36_apex_selection.py'
       - 'worldroot/r36_history_advisory.py'
+      - 'worldroot/r36_temporal.py'
+      - 'worldroot/live_codex.py'
+      - 'tests/test_r36_apex_epistemic.py'
       - 'tests/test_r36_apex_selection.py'
       - '.github/workflows/r36-apex-shadow.yml'
 permissions:

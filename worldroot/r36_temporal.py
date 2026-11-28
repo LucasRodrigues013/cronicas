@@ -83,3 +83,62 @@ def query(root,entity,day,clock=None,limit=50):
             raise ValueError("Graph integrity failed")
         return {"entity":entity,"history":entity_history(db,entity,day,clock,limit),
                 "scope":"PUBLIC_TYPED_EVENTS_ONLY","coverage":coverage(db)}
+
+
+def public_anchor_rows(closures, head, source_lookup):
+    """Director-only exact literal anchor lane; caller must supply verified journal.
+    No neighboring text, inferred identity, or character knowledge grants.
+    Unknown or conflicting visibility denies the whole line.
+    """
+    import hashlib
+    blocked=set();events=[];seen=set()
+    for c in closures:
+        if type(c["sequence"]) is not int or not 1<=c["sequence"]<=head["sequence"]:
+            raise ValueError("Closure outside verified head")
+        for e in c["events"]:
+            s=e["source"];key=(c["episode_id"],s["line"])
+            if e["event_id"] in seen or s["sha256"]!=c["story_sha256"]:
+                raise ValueError("Invalid canonical event provenance")
+            seen.add(e["event_id"])
+            if e["visibility"]!="PUBLICO":blocked.add(key)
+            else:events.append((c,e,key))
+    cache={};result=[]
+    for c,e,key in events:
+        if key in blocked:continue
+        day=g.event_day(e,c["metadata"]["day"]);clock=e.get("clock")
+        if clock is not None and not g.CLOCK.fullmatch(clock):raise ValueError("Invalid event clock")
+        if day>head["day"] or (day==head["day"] and (clock is None or clock>head["hour"])):continue
+        ep=c["episode_id"]
+        if ep not in cache:
+            prose,story_sha=source_lookup(ep)
+            if story_sha!=c["story_sha256"]:raise ValueError("Public anchor source mismatch")
+            cache[ep]=(prose.splitlines(),story_sha)
+        lines,story_sha=cache[ep]
+        s=e["source"];n=s["line"];anchor=s["literal_anchor"]
+        if story_sha!=s["sha256"] or type(n) is not int or not 1<=n<=len(lines) or not isinstance(anchor,str) or not anchor.strip() or anchor not in lines[n-1]:
+            raise ValueError("Public anchor literal mismatch")
+        result.append({"event_id":e["event_id"],"episode":ep,"sequence":c["sequence"],"day":day,"clock":clock,
+                       "source_sha256":story_sha,"line":n,"anchor_sha256":hashlib.sha256(anchor.encode()).hexdigest(),"anchor":anchor})
+    return sorted(result,key=lambda r:(r["sequence"],r["line"],r["event_id"]))
+
+def rank_public_anchors(rows, query_words, limit=3):
+    """Rank literal anchor only; no use of summaries, labels or gold."""
+    from .r36_history_advisory import words,cues
+    if type(limit) is not int or not 1<=limit<=10:raise ValueError("Invalid anchor limit")
+    q=set(query_words);ranked=[]
+    for r in rows:
+        hits=q&words(r["anchor"]);flags=cues(r["anchor"])
+        if len(hits)<2 or set(flags)&{"STRUCTURAL","META","OPTION","PRIVATE_THOUGHT_CUE"}:continue
+        ranked.append((len(hits),r,flags))
+    ranked.sort(key=lambda x:(-x[0],-x[1]["sequence"],x[1]["line"],x[1]["event_id"]))
+    return [{k:v for k,v in r.items() if k!="anchor"}|{"signals":list(flags),"scope":"PUBLIC_CANONICAL_LITERAL_ANCHOR_DIRECTOR_ONLY","identity_status":"UNRESOLVED_QUERY_MATCH","knowledge_injection":False,"semantic_certification":False} for _,r,flags in ranked[:limit]]
+
+def combine_anchor_lane(baseline,anchors,limit=3):
+    """Keep first two original locators, reserve at most one exact public anchor.
+    Duplicate line is not new evidence. Unfilled slots fall back to baseline.
+    """
+    if type(limit) is not int or not 2<=limit<=10:raise ValueError("Invalid combined limit")
+    base=list(baseline[:limit]);keys={(r["source"],r["line"]) for r in base}
+    extra=next((r for r in anchors if (r["episode"],r["line"]) not in keys),None)
+    if extra is None:return base
+    return base[:limit-1]+[extra]
