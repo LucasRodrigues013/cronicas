@@ -1,0 +1,1309 @@
+{
+  "schema": "OMEGA_BOOK_VI_CYCLE_0076_0080_PENDING_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "previous_checkpoint_blob": "75c1406ed2991e37681c96db3804ffe37aecc92e",
+  "previous_cycle_blob": "6458f000209840e883dec25f009468bab554f85e",
+  "book_v_boundary_blob": "2a4f9816734f2051aa7d60fe19931b09776cc360",
+  "prior_overlays": [
+    {
+      "id": "D533_COSTURA",
+      "status": "FOUR_REGIONAL_POINTS_AUTHORIZED_METADATA_CORRECTED_ORIGINAL_UNCHANGED",
+      "promotion": false
+    },
+    {
+      "id": "D534_FORJA",
+      "status": "DISTINCT_HEART_REVERSIBLE_DIAGNOSTIC_OPERATOR_REVIEW",
+      "promotion": false
+    },
+    {
+      "id": "D534_PRIMEIRAS_ASAS",
+      "status": "PLANNING_ONLY_DISTINCT_SITES_UNVERIFIED_ROUTES",
+      "promotion": false
+    },
+    {
+      "id": "D537_ARGOS005",
+      "status": "1462_KMH_OBSERVED_NOT_MAX_NAIRA_LUCAS_RUMO_MIREN_GROUND_NO_LANDING_AT_STONES",
+      "promotion": false
+    },
+    {
+      "id": "D537_CONSTELLATIONS",
+      "status": "TEMPORARY_VOLUNTARY_NO_MIND_READING_OR_CROWN",
+      "promotion": false
+    },
+    {
+      "id": "BOOK_V_FINALE",
+      "status": "EXISTING_EXPLICIT_AUTHOR_CLOSURE_CHOICE_0_BOOK_CLOSED_TRUE_NO_NEW_CANON",
+      "promotion": false
+    }
+  ],
+  "authority_pins": {
+    "opening_approval": {
+      "path": "author-approvals/LVI-OPEN.json",
+      "blob": "946268813b47c781be957a7852e8d7ecac6085a0"
+    },
+    "reauthorization": {
+      "path": "author-approvals/LVI-OPEN-REAUTHORIZED-20261119.json",
+      "blob": "1b2e32b0ec8a8391df7ac6911e83c3044e82e161"
+    },
+    "ratification": {
+      "path": "author-approvals/LVI-C01-D538-D539-RATIFICATION-20261119.json",
+      "blob": "844d36b83bfa4ed0bcbad75c9af9ff962d9a5b9d"
+    },
+    "trigger": {
+      "path": "canon/RETRO_RATIFY_LVI_20261119.json",
+      "blob": "da7646620bee7daa39f424486f55e34b13737fb5"
+    },
+    "rejection": {
+      "path": "editorial/rejections/LVI-C01-PI-D538-AUTHOR-SOURCE.json",
+      "blob": "ecc713dee1824150c9bf8b7282bfdcec304076d9"
+    },
+    "caedren": {
+      "path": "editorial/recovery/reconciliations/LVI-C01-PIII-D539-AUTHOR-SOURCE.json",
+      "blob": "90868423eb984be9302f83017cacca993f851387"
+    },
+    "export": {
+      "path": "history/source_exports/ChatGPT-CRONICAS_DE_UM_NOVO_MUNDO_9-20261119-1028.txt",
+      "blob": "980dd7a347a119cefbb0c2b4c25bb9961843b092",
+      "sha256": "ac693e60ec6e9dfef2ffee6fc423641541cb52fd53bbd7ffebc9691822be95f9"
+    },
+    "rejected_draft": {
+      "path": "episodes/LVI-C01-PI-D538-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "blob": "094d24d239584436168bbe13f1edac09080a0cda",
+      "sha256": "bde62ddbd8ac0977925a7ed74e9abb09c461d53cb08f36a1e245ab20a212a3da"
+    },
+    "source_proofs": [
+      "3b4e3060e6f76a47b8399a4135fef1e9672eef5b",
+      "c66d5204c556b7268a9a6744c420f975103a0dca",
+      "06ab1f5f61910ad6d3d84c6ddfbc488e22e2bfbb"
+    ],
+    "continuity_reviews": [
+      "fa3946c64e3cc3c1bc49627d7e1020947ee7b206",
+      "0083c9ea72c33e6c8dfbac05894bb1765f580cdc",
+      "59fbef6c63f2d66da41b8c1377ed57618e4972a3"
+    ]
+  },
+  "macros": [
+    {
+      "macro": 76,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0076-01.json",
+      "blob": "5880fd932147df395a9876c37b7f30580d4e7005",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0076-closure-pending.json",
+      "checkpoint_blob": "a508e46192f4754e8da68539e411cbe42a8d941c",
+      "records": 12,
+      "lines": 3608,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "source_provenance": {
+        "kind": "CLOSED_PROSE",
+        "episode_id": "LVI-C01-PI-D538-REAUTHORIZED-R2-AUTHOR-SOURCE",
+        "sequence": 10,
+        "previous_episode_id": "LV-C16-PV-D537-AUTHOR-SOURCE",
+        "previous_head_sha256": "58f615e6fe25297fc7c3f6c36c1901bc6cd1fdd4c63a3c4942bb0e62db4c68ed",
+        "closure_blob": "45697d143232f3f481ff99354e0fe88361a0d3ed",
+        "draft_blob": "089a9e483edb8f96259822d62244d8f9a72f6818",
+        "immutable_manifest_blob": "cfbb2bee8df025bd4fcc1e9701aa5b9f8f65e39a",
+        "narrative_blob": "d5c53df85803165d9cb076d02549a947f3ec9707",
+        "full_story_sha256": "fd6aa23fa1ea5e929d81e0aaebc7776ca30a697120f20d310f9b3fd1f25f98ee",
+        "prose_sha256": "61bb7aa6572fa4db908741ef85e6b5793d3a7ca23c329bc1827200b5e61598fb",
+        "prose_lines": 3608,
+        "role_adapter": "Response for native receipt compatibility only; closure authority separate",
+        "closure_event_count": 8,
+        "closure_knowledge_count": 6,
+        "reviewed_events_blob": "ff50631bad784e4030c8dacaf21cf0e0dc77c108",
+        "reviewed_knowledge_blob": "f2f7921556e20401b583302666b69c6943865306",
+        "choice_sha256": "664f47addc9ebba558bf34e5808c83ed3f42fcf71a00da6cb5e4cd61536a3b8f",
+        "chosen_option": 4,
+        "book_closed": false,
+        "editorial_header": "PARTE I DE V · A CIDADE QUE CABIA EM UM SONHO",
+        "ratification_kind": "VERBATIM_AUTHOR_RETRO_RATIFICATION_20261119"
+      },
+      "continuity": {
+        "previous_episode": "LV-C16-PV-D537-AUTHOR-SOURCE",
+        "previous_day": 537,
+        "previous_clock": "23h46",
+        "first_day": 538,
+        "first_clock": "06h08",
+        "end_day": 538,
+        "end_clock": "11h32",
+        "end_location": "Casa Cívica, Três Arcos"
+      },
+      "original_events": 8,
+      "original_knowledge": 6
+    },
+    {
+      "macro": 77,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0077-01.json",
+      "blob": "23efe4221d10166f659fca080b49ebf0ba134ee4",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0077-closure-pending.json",
+      "checkpoint_blob": "897dc8be9e2a48b87ce644c6dbfa32714494877d",
+      "records": 13,
+      "lines": 4288,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "source_provenance": {
+        "kind": "CLOSED_PROSE",
+        "episode_id": "LVI-C01-PII-D538-AUTHOR-SOURCE",
+        "sequence": 11,
+        "previous_episode_id": "LVI-C01-PI-D538-REAUTHORIZED-R2-AUTHOR-SOURCE",
+        "previous_head_sha256": "fbe13f7fdb4cd29dd5bf2537c02469cf7adccc55fd3842d3c4de5ec6cb6b1f49",
+        "closure_blob": "ea04a7bde138d52c6a8f22991b79ae91cf6a0719",
+        "draft_blob": "0a74ce6a9de7f731c4621658ff812209f77ea9e6",
+        "immutable_manifest_blob": "0e6e9086dd168ab9406f165366b1c3e4d5a0fbd3",
+        "narrative_blob": "1fa9fe4cb63f72e54589922b88f5d7517bbed28d",
+        "full_story_sha256": "69be6e8eb86e68718c3eccdb823456a0e913816f94e1ca607ff44dc37d9eb740",
+        "prose_sha256": "8a723856261656d553a51aeabf1eddae1ef42c87abe0bdc968fc336417580040",
+        "prose_lines": 4288,
+        "role_adapter": "Response for native receipt compatibility only; closure authority separate",
+        "closure_event_count": 8,
+        "closure_knowledge_count": 9,
+        "reviewed_events_blob": "883c3d471018f33fd7f06a5539ac6799149d13b7",
+        "reviewed_knowledge_blob": "d2ce9c912b7bd46ad6517161ea1a59c409bbdfbe",
+        "choice_sha256": "1465c2404202e30d1abc9392cb06c51be1a671390abc9c0f4b9bf468e8416763",
+        "chosen_option": 4,
+        "book_closed": false,
+        "editorial_header": "PARTE II DE V · ESCOLHA 4 — ESPECIAL",
+        "ratification_kind": "VERBATIM_AUTHOR_RETRO_RATIFICATION_20261119"
+      },
+      "continuity": {
+        "previous_episode": "LVI-C01-PI-D538-REAUTHORIZED-R2-AUTHOR-SOURCE",
+        "previous_day": 538,
+        "previous_clock": "11h32",
+        "first_day": 538,
+        "first_clock": "11h32",
+        "end_day": 538,
+        "end_clock": "21h14",
+        "end_location": "Casa do Jardim Branco, Três Arcos"
+      },
+      "original_events": 8,
+      "original_knowledge": 9
+    },
+    {
+      "macro": 78,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0078-01.json",
+      "blob": "65f8fd740ca7e61fb7293b6c3c6a9ce27b653d5f",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0078-closure-pending.json",
+      "checkpoint_blob": "e5531c0950683c42765d21808d017482d64ace95",
+      "records": 18,
+      "lines": 3630,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "source_provenance": {
+        "kind": "CLOSED_PROSE",
+        "episode_id": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+        "sequence": 12,
+        "previous_episode_id": "LVI-C01-PII-D538-AUTHOR-SOURCE",
+        "previous_head_sha256": "6fe21321fec197a717af2a0795bf52246876f20ba947d40ff2345a47b1dda8e2",
+        "closure_blob": "8956682d1b5be0c882487aab9f14c73404171fc4",
+        "draft_blob": "ad0eb71dc918d45dbdcb2a05b4ce4025226e071f",
+        "immutable_manifest_blob": "8fb09fd474af636c145cdd1efbfcea7f105971e4",
+        "narrative_blob": "f3569f6759ca492665b4aae613a6f442d58270d6",
+        "full_story_sha256": "74bb2ae185f21262a292d1a48e2c75e703d8ee92659f43f97c39d0174c2fd2e7",
+        "prose_sha256": "795abf6ec7ff52720c68dd13bae3eec5ddad5c4fcf34a6b40c2c3363421e57bb",
+        "prose_lines": 3630,
+        "role_adapter": "Response for native receipt compatibility only; closure authority separate",
+        "closure_event_count": 8,
+        "closure_knowledge_count": 9,
+        "reviewed_events_blob": "4f675f6891fd308eaea77867ade85ee2819fcd5b",
+        "reviewed_knowledge_blob": "82ddcccaf4d51c2aea9b84b491f760b9697279c8",
+        "choice_sha256": "8786058af5d46e7ba5d5ae7da3baec029c4d538314d96f966e3fe90e1456467a",
+        "chosen_option": 0,
+        "book_closed": false,
+        "editorial_header": "PARTE III DE V · ESCOLHA 4 — ESPECIAL",
+        "ratification_kind": "VERBATIM_AUTHOR_RETRO_RATIFICATION_20261119"
+      },
+      "continuity": {
+        "previous_episode": "LVI-C01-PII-D538-AUTHOR-SOURCE",
+        "previous_day": 538,
+        "previous_clock": "21h14",
+        "first_day": 539,
+        "first_clock": "06h34",
+        "end_day": 539,
+        "end_clock": "21h08",
+        "end_location": "Casa do Jardim Branco, Três Arcos"
+      },
+      "original_events": 8,
+      "original_knowledge": 9
+    },
+    {
+      "macro": 79,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0079-01.json",
+      "blob": "8ee290606a2fd85b6ec814f5f3b6a045d3aec3d6",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0079-closure-pending.json",
+      "checkpoint_blob": "f8786dfddbbf33ace1d752b936e12e1c049125a8",
+      "records": 13,
+      "lines": 937,
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "source_provenance": {
+        "kind": "CLOSED_PROSE",
+        "episode_id": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+        "sequence": 13,
+        "previous_episode_id": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+        "previous_head_sha256": "08bf642ae0b21343987c24705dc240e21634f8ea542d137f0710568190ec28d3",
+        "closure_blob": "6e2de6f8aba558de87fc7dc1933719ce9608149a",
+        "draft_blob": "c43f984afed9a7bb3095d1eac33a4e8a57830b2c",
+        "immutable_manifest_blob": "fa811c5c63821f49c103c3fbcfbf55ec67322730",
+        "narrative_blob": "ec04c4f337acaa42704bbad0b5807f59ab1a3df9",
+        "full_story_sha256": "61877abadada69a64f5be666db128c6c679e215cd6f99a7498e9f8272d47fc83",
+        "prose_sha256": "d667574a0753cfb96e5405e465f0d1f2f3b4901e114ec32a3aee8469ef52888c",
+        "prose_lines": 937,
+        "role_adapter": "Response for native receipt compatibility only; closure authority separate",
+        "closure_event_count": 13,
+        "closure_knowledge_count": 12,
+        "reviewed_events_blob": "e9dad9287630f863a976e3a7c8a21bfb7dcf531a",
+        "reviewed_knowledge_blob": "436b0a0fe4e5c5a19723d434bf43cea729cf8f43",
+        "choice_sha256": "4917c1eae6cdd85a0de75a4f8206efc92d6f057a255a91c65eab1114d279fed0",
+        "chosen_option": 5,
+        "book_closed": false,
+        "editorial_header": "  <title size=\"md\" textAlign=\"center\">PARTE IV DE V · ESPECIAL</title>",
+        "ratification_kind": null
+      },
+      "continuity": {
+        "previous_episode": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+        "previous_day": 539,
+        "previous_clock": "21h08",
+        "first_day": 540,
+        "first_clock": "06h14",
+        "end_day": 540,
+        "end_clock": "21h17",
+        "end_location": "Casa do Jardim Branco, varanda, Três Arcos"
+      },
+      "original_events": 13,
+      "original_knowledge": 12
+    },
+    {
+      "macro": 80,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0080-01.json",
+      "blob": "3df5ee1c5a8e8ba8a7ab21293e7c23e49bbba423",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0080-closure-pending.json",
+      "checkpoint_blob": "c7359173b367492575007f2ab18da6deeac0b4ed",
+      "records": 16,
+      "lines": 1780,
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "source_provenance": {
+        "kind": "CLOSED_PROSE",
+        "episode_id": "LVI-C01-PV-D541-AUTHOR-SOURCE",
+        "sequence": 14,
+        "previous_episode_id": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+        "previous_head_sha256": "8467db9a67d0c9360820cc536291c8e08dfe2b057c0b23c18e38a9f303c82369",
+        "closure_blob": "6777e19f971a74ab0a6fc999a566e46e9d7533ba",
+        "draft_blob": "0ad779c450a5244d9dc4190e90e246234d8e529d",
+        "immutable_manifest_blob": "5143f0f9185050a23c386d87c61b454b8427f87d",
+        "narrative_blob": "5240838052e58c40bbcb7070234a03c864ba95a2",
+        "full_story_sha256": "b669361e6490c9adfd789f9dac43e4f106ef08f05514693a21d0f4779671e5ff",
+        "prose_sha256": "541f06a181f298798ebfb264f8865d22fdbdce7d2d250f325cc7c147c2949d6b",
+        "prose_lines": 1780,
+        "role_adapter": "Response for native receipt compatibility only; closure authority separate",
+        "closure_event_count": 18,
+        "closure_knowledge_count": 15,
+        "reviewed_events_blob": "d6814113cfffdaef4063cd1fcb017ad4c055cffd",
+        "reviewed_knowledge_blob": "7cbaaf786a382118dea1548171ca5761c280e493",
+        "choice_sha256": "a0af5c1603e71db1010683dfadc99319333da81164d9c1aab856fb083a0d537c",
+        "chosen_option": 4,
+        "book_closed": false,
+        "editorial_header": "  <title size=\"md\" textAlign=\"center\">PARTE V DE V · AÇÃO LIVRE ESPECIAL</title>",
+        "ratification_kind": null
+      },
+      "continuity": {
+        "previous_episode": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+        "previous_day": 540,
+        "previous_clock": "21h17",
+        "first_day": 541,
+        "first_clock": "06h52",
+        "end_day": 541,
+        "end_clock": "22h06",
+        "end_location": "Torre do Criador, P22 Observatório do Horizonte, Três Arcos"
+      },
+      "original_events": 18,
+      "original_knowledge": 15
+    }
+  ],
+  "findings": [
+    {
+      "id": "O8C-B76-001",
+      "source": "LVI-C01-PI-D538-REAUTHORIZED-R2-AUTHOR-SOURCE",
+      "range": [
+        1,
+        52
+      ],
+      "sha256": "81f3ea55c37db6cada1a987e1b0911925cf9183394c4bdf3d8b513a7372ad6be",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B76-002",
+      "source": "LVI-C01-PI-D538-REAUTHORIZED-R2-AUTHOR-SOURCE",
+      "range": [
+        53,
+        398
+      ],
+      "sha256": "2b0fa180f1980b17cbb562a40a92149e1a415ed5706e0dfb82295ba8063b487e",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B76-003",
+      "source": "LVI-C01-PI-D538-REAUTHORIZED-R2-AUTHOR-SOURCE",
+      "range": [
+        399,
+        766
+      ],
+      "sha256": "0e40791d3a84b6e14460b527ae0c07f677a9b391c712396479da8fc450d28041",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B76-004",
+      "source": "LVI-C01-PI-D538-REAUTHORIZED-R2-AUTHOR-SOURCE",
+      "range": [
+        767,
+        1258
+      ],
+      "sha256": "58efcfffe7d77342e37c22f4fb012513bd9ae31b3b652427ee3751a4e4e976e6",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B76-005",
+      "source": "LVI-C01-PI-D538-REAUTHORIZED-R2-AUTHOR-SOURCE",
+      "range": [
+        1259,
+        1670
+      ],
+      "sha256": "338429fce5223e7acdd67ba36f0c157c2df5b03dc717e62107ccf5cef5d5f504",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B76-006",
+      "source": "LVI-C01-PI-D538-REAUTHORIZED-R2-AUTHOR-SOURCE",
+      "range": [
+        1671,
+        2240
+      ],
+      "sha256": "1a2fb9659bf045f5981691f90b69a9b2d4633df2bb92ec3a2483727bc3f3f82e",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B76-007",
+      "source": "LVI-C01-PI-D538-REAUTHORIZED-R2-AUTHOR-SOURCE",
+      "range": [
+        2241,
+        2560
+      ],
+      "sha256": "eb7453696f9d8d16aec3d50ea922dc71f043fdd53a5b803d4cbde8f505da66ab",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B76-008",
+      "source": "LVI-C01-PI-D538-REAUTHORIZED-R2-AUTHOR-SOURCE",
+      "range": [
+        2561,
+        2794
+      ],
+      "sha256": "668e4c183cff852c97cb611b2e09902d6a3e18998268619013eb5d19acdb61a2",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B76-009",
+      "source": "LVI-C01-PI-D538-REAUTHORIZED-R2-AUTHOR-SOURCE",
+      "range": [
+        2795,
+        2900
+      ],
+      "sha256": "5eebc70de56a2f337919405b11f3671af951bc10460b2c5b5583ee0a331e0f98",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B76-010",
+      "source": "LVI-C01-PI-D538-REAUTHORIZED-R2-AUTHOR-SOURCE",
+      "range": [
+        2901,
+        3430
+      ],
+      "sha256": "5222e81bde9d41ee4f25371a5dfb3a732742bca1e7e1899e3a34688a2abbf793",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B76-011",
+      "source": "LVI-C01-PI-D538-REAUTHORIZED-R2-AUTHOR-SOURCE",
+      "range": [
+        3431,
+        3602
+      ],
+      "sha256": "1eea2f220c8ed46e32cd2de05ad8da9f8cef6bfeb769eb2bc9438b65ec27bb0b",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B76-012",
+      "source": "LVI-C01-PI-D538-REAUTHORIZED-R2-AUTHOR-SOURCE",
+      "range": [
+        3603,
+        3608
+      ],
+      "sha256": "eada6834917fad80c97eef402f709e64411790b696cac4854901b9f92395dec0",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B77-001",
+      "source": "LVI-C01-PII-D538-AUTHOR-SOURCE",
+      "range": [
+        1,
+        34
+      ],
+      "sha256": "26e0fbe8186e8ac8f59c3341d00555e498e75c6e89541945076af34e627a371d",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B77-002",
+      "source": "LVI-C01-PII-D538-AUTHOR-SOURCE",
+      "range": [
+        35,
+        366
+      ],
+      "sha256": "8a0c398c2cad01b54e024c372a8b071a2d4343719742be4e88483f24c1f7c3e4",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B77-003",
+      "source": "LVI-C01-PII-D538-AUTHOR-SOURCE",
+      "range": [
+        367,
+        870
+      ],
+      "sha256": "2e926d009e1cdbbad90b0bfcbbe2064c6ebfd740a033f36c4914e3fb8850df66",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B77-004",
+      "source": "LVI-C01-PII-D538-AUTHOR-SOURCE",
+      "range": [
+        871,
+        1312
+      ],
+      "sha256": "98f416eac2f96cb71505c65c8f17c3f2af2bd304b0270ca444462b0714e0938b",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B77-005",
+      "source": "LVI-C01-PII-D538-AUTHOR-SOURCE",
+      "range": [
+        1313,
+        1656
+      ],
+      "sha256": "2674d9776a462aec439f4048d2bb254aa8da07abec58a3de5d321e5f3a122094",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B77-006",
+      "source": "LVI-C01-PII-D538-AUTHOR-SOURCE",
+      "range": [
+        1657,
+        1940
+      ],
+      "sha256": "e3cf995cf86d3f602c86137b680dc4969cebc768718039f40aa247806d1d77e3",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B77-007",
+      "source": "LVI-C01-PII-D538-AUTHOR-SOURCE",
+      "range": [
+        1941,
+        2394
+      ],
+      "sha256": "74149337c24ff66d53b9d78cea24745416a1db90039a6ed1bbd56fdf298f0b79",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B77-008",
+      "source": "LVI-C01-PII-D538-AUTHOR-SOURCE",
+      "range": [
+        2395,
+        2894
+      ],
+      "sha256": "67dfd8c4a4c2ddac535d04d9fa9bf94b679befeba2abbe7ca98c62f5fafc9bed",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B77-009",
+      "source": "LVI-C01-PII-D538-AUTHOR-SOURCE",
+      "range": [
+        2895,
+        3144
+      ],
+      "sha256": "63afeb3a652cce61aecd9fa41cd688374d09eec6d1466746892764bff1f4e176",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B77-010",
+      "source": "LVI-C01-PII-D538-AUTHOR-SOURCE",
+      "range": [
+        3145,
+        3652
+      ],
+      "sha256": "2b78245bd39b036c65f7fb08f3c5d14c61cc3527930e1dc7d59d548f193da1bc",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B77-011",
+      "source": "LVI-C01-PII-D538-AUTHOR-SOURCE",
+      "range": [
+        3653,
+        3930
+      ],
+      "sha256": "db4d7f647c1fed3aea556760725777394bcadb3421ed45f0ba500838c525321f",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B77-012",
+      "source": "LVI-C01-PII-D538-AUTHOR-SOURCE",
+      "range": [
+        3931,
+        4282
+      ],
+      "sha256": "8f14a773c3c22c4e98fae327aa047025b69df72c6943d680ee271b06de60fe67",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B77-013",
+      "source": "LVI-C01-PII-D538-AUTHOR-SOURCE",
+      "range": [
+        4283,
+        4288
+      ],
+      "sha256": "23bcd73257c82f322c545860ec0719f82f6ac47c670f5032ed433a94f173fb33",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B78-001",
+      "source": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+      "range": [
+        1,
+        36
+      ],
+      "sha256": "d05d0da98f7a8bf351d88073e15f38e56041fc4f9c9751d01096db1e993ad73b",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B78-002",
+      "source": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+      "range": [
+        37,
+        330
+      ],
+      "sha256": "be81934dfb92435d1e6d6bf187df4c8abf7c13d70245a5982b296a4d91391a80",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B78-003",
+      "source": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+      "range": [
+        331,
+        594
+      ],
+      "sha256": "f8389f70046a4037f3b873c2d9eaf52103648ce493cf783940c34cbec940c511",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B78-004",
+      "source": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+      "range": [
+        595,
+        839
+      ],
+      "sha256": "25a1a099f8269636911d3b16f677b1c2c36022bdd9adb45686bac7652d49564a",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B78-005",
+      "source": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+      "range": [
+        840,
+        1200
+      ],
+      "sha256": "c66ef34d0abc8b9dad921d9e4fa6a12de001d5c163bd014c12f553c2f1b3efef",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B78-006",
+      "source": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+      "range": [
+        1201,
+        1274
+      ],
+      "sha256": "a20176a13b7c8a3cc4b60a21d5b1591a728c8de85aff6cfec6bbf2df8d4ff8a5",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B78-007",
+      "source": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+      "range": [
+        1275,
+        1540
+      ],
+      "sha256": "30ca6f5abdb57bc210ca6570d630d5a2141afc1e1d29f03d322c3155b417b45e",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B78-008",
+      "source": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+      "range": [
+        1541,
+        1764
+      ],
+      "sha256": "3b08ba05d0b62e49acca9da0d5ac8e0a49aba66bcc00c267c9d43ae8f1fcf0f0",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B78-009",
+      "source": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+      "range": [
+        1765,
+        2038
+      ],
+      "sha256": "283d3fa15624e21022f9914c3052b0528e983089f4e765a309af80b0b6a79612",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B78-010",
+      "source": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+      "range": [
+        2039,
+        2148
+      ],
+      "sha256": "5f65899f270bb4c2efb1b5c7dee55da339d4319521ad9c025f87f86361561bac",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B78-011",
+      "source": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+      "range": [
+        2149,
+        2424
+      ],
+      "sha256": "f07a8cd48daae7b3d5e84fa3d2e5223734035efc8d691f6777b9e77dccc56949",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B78-012",
+      "source": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+      "range": [
+        2425,
+        2640
+      ],
+      "sha256": "b748126c461ba4e0b1f479d27eb530010f403aec123a817d7d7169487df72c78",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B78-013",
+      "source": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+      "range": [
+        2641,
+        2788
+      ],
+      "sha256": "75dcfbf508428238c739d3a99a1d9243a3681a241df1e57241898a90afc5ca5d",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B78-014",
+      "source": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+      "range": [
+        2789,
+        2974
+      ],
+      "sha256": "eb91fbfaf0af0a9becfd0f9bfc50126db47f3a4304cf17b79a173a51087454ef",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B78-015",
+      "source": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+      "range": [
+        2975,
+        3196
+      ],
+      "sha256": "fed9b66802eed673223644333927de7b7f06586536cc65e5beba557946e7204a",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B78-016",
+      "source": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+      "range": [
+        3197,
+        3468
+      ],
+      "sha256": "03f26aa51cf4507531b8f65d7c6f45ea3d699dfccb181f542d3f2a33f7cba649",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B78-017",
+      "source": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+      "range": [
+        3469,
+        3624
+      ],
+      "sha256": "e5d237937cd620801890fff718cb7e557bc893ec09dbedbb685d79282970f99e",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B78-018",
+      "source": "LVI-C01-PIII-D539-AUTHOR-SOURCE",
+      "range": [
+        3625,
+        3630
+      ],
+      "sha256": "990a328626c7fb4f0a06b150fa3180e0989734909cf0389ecfa72ff9bb9cc847",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B79-001",
+      "source": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+      "range": [
+        1,
+        34
+      ],
+      "sha256": "7cda1bb85f07d86270624ff38f604e11919f88e4b4534e381ecd298f7c13299f",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B79-002",
+      "source": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+      "range": [
+        35,
+        116
+      ],
+      "sha256": "987197c9dd9178de39358af4b9458c743c8c721a247b30004295a69e00b77460",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B79-003",
+      "source": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+      "range": [
+        117,
+        206
+      ],
+      "sha256": "7c8debcbf163b5e1382f1bab300b187bfb6edd11f416c4fd992c0199297f17d5",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B79-004",
+      "source": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+      "range": [
+        207,
+        298
+      ],
+      "sha256": "7765ea936de6d75c75ffd645067744cb1d4475df8af201c797e38f39d22674d6",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B79-005",
+      "source": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+      "range": [
+        299,
+        404
+      ],
+      "sha256": "1dd1dee8cfed73be12801bf7271e422ff9fd3cc00e52abc8502de6721d9d6d24",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B79-006",
+      "source": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+      "range": [
+        405,
+        488
+      ],
+      "sha256": "468cd5fe27f8d6b5aef1898c178f03b69c845f8e0b164f4b8e5d2f4513afc4dc",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B79-007",
+      "source": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+      "range": [
+        489,
+        538
+      ],
+      "sha256": "d99d7b00602dcb28804981173d976023aa5cd4a9cf07f3febcfa16494a4cd6d5",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B79-008",
+      "source": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+      "range": [
+        539,
+        564
+      ],
+      "sha256": "047c66c61cfba1f5e4fdc3a985a2077a2ae568dde39eddda25b4d8967ab8b55f",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B79-009",
+      "source": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+      "range": [
+        565,
+        640
+      ],
+      "sha256": "6ad49250b27037e3d49d103f1e444d7cc53d274e54f2d9f289a1ed5d09f9cc40",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B79-010",
+      "source": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+      "range": [
+        641,
+        730
+      ],
+      "sha256": "49b5f48bc91ea7e9f468ff83a984182e258fac731dfdfab3dc08db517d057e9c",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B79-011",
+      "source": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+      "range": [
+        731,
+        802
+      ],
+      "sha256": "b73e62304d6998304714234ecb46f2635d1509665466e5e45863f6d3db3d5752",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B79-012",
+      "source": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+      "range": [
+        803,
+        846
+      ],
+      "sha256": "d0aca8f5cc3aa78cc90886a67c23afd9bb6277d32fd0608e71f39a7399318133",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B79-013",
+      "source": "LVI-C01-PIV-D540-AUTHOR-SOURCE",
+      "range": [
+        847,
+        937
+      ],
+      "sha256": "d30a3978824ae911bf24f34b613743be99da966376aba552ce657f45c3d39ab1",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B80-001",
+      "source": "LVI-C01-PV-D541-AUTHOR-SOURCE",
+      "range": [
+        1,
+        34
+      ],
+      "sha256": "4b7439f0eae85f215889ac8743abae55387ca28bdf180a6bae8ca7057c6d3691",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B80-002",
+      "source": "LVI-C01-PV-D541-AUTHOR-SOURCE",
+      "range": [
+        35,
+        172
+      ],
+      "sha256": "1c485bc5c0045ca0a8583ea5a4ce44c7f9ac7deea3d711e248a56df57d0cf91b",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B80-003",
+      "source": "LVI-C01-PV-D541-AUTHOR-SOURCE",
+      "range": [
+        173,
+        298
+      ],
+      "sha256": "add828a991b737e34864eacb9db0be5935e20e46d8bf3ac86a69c2c5f1d1c1c8",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B80-004",
+      "source": "LVI-C01-PV-D541-AUTHOR-SOURCE",
+      "range": [
+        299,
+        386
+      ],
+      "sha256": "601a1f65964b317127a348b0394b9cc3150cd6f69aff2ac99fb571928edc4b5c",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B80-005",
+      "source": "LVI-C01-PV-D541-AUTHOR-SOURCE",
+      "range": [
+        387,
+        578
+      ],
+      "sha256": "79371cebf17644c3d329d524ac3eefedf0f22a98e4d221e17eb576685bc9c347",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B80-006",
+      "source": "LVI-C01-PV-D541-AUTHOR-SOURCE",
+      "range": [
+        579,
+        704
+      ],
+      "sha256": "fd55bf18282d2156be6a40017decaaebf15bf99c4728708952eb418e3760d461",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B80-007",
+      "source": "LVI-C01-PV-D541-AUTHOR-SOURCE",
+      "range": [
+        705,
+        826
+      ],
+      "sha256": "e643b2bb1d13e678cf3103ba0353089485eca41ec2a930b4355a8db6b1c0b9a8",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B80-008",
+      "source": "LVI-C01-PV-D541-AUTHOR-SOURCE",
+      "range": [
+        827,
+        1032
+      ],
+      "sha256": "991359d095267dab95eab0a7afe831211e42d19b62fe4249a8190fc6909adf57",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B80-009",
+      "source": "LVI-C01-PV-D541-AUTHOR-SOURCE",
+      "range": [
+        1033,
+        1100
+      ],
+      "sha256": "f5041f6acbce46f9ec9f30b664bdb4c936cf8e77ab63cf2e80a3a6f02db4a9e7",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B80-010",
+      "source": "LVI-C01-PV-D541-AUTHOR-SOURCE",
+      "range": [
+        1101,
+        1160
+      ],
+      "sha256": "a95967ff0408d46d2d114c32c14066751f12b3739eb0ef6695a44c15d6625d52",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B80-011",
+      "source": "LVI-C01-PV-D541-AUTHOR-SOURCE",
+      "range": [
+        1161,
+        1270
+      ],
+      "sha256": "401ca5fea6444b4a8775439955100cce339ce4919e34c9885a0c56b6e09151a6",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B80-012",
+      "source": "LVI-C01-PV-D541-AUTHOR-SOURCE",
+      "range": [
+        1271,
+        1372
+      ],
+      "sha256": "ddceebf4f267487c4a688a7555bb31c48f1dadc4bf988edcffbb357b68505372",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B80-013",
+      "source": "LVI-C01-PV-D541-AUTHOR-SOURCE",
+      "range": [
+        1373,
+        1454
+      ],
+      "sha256": "86f83dcb9353292943a8ece847321d10d209966e12f2cb19731217e219f22284",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B80-014",
+      "source": "LVI-C01-PV-D541-AUTHOR-SOURCE",
+      "range": [
+        1455,
+        1590
+      ],
+      "sha256": "b261b702b600c7f06ec88ee92492dc1cc60f3cc1057dd0d47459cccbd5e587f2",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B80-015",
+      "source": "LVI-C01-PV-D541-AUTHOR-SOURCE",
+      "range": [
+        1591,
+        1773
+      ],
+      "sha256": "655f1a07eafbfa8a04ff7f5fa358db6082061536bf0b4e2e8e67da70e9aa8617",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B80-016",
+      "source": "LVI-C01-PV-D541-AUTHOR-SOURCE",
+      "range": [
+        1774,
+        1780
+      ],
+      "sha256": "12d5f11723eceb8a16b573afad9badd73bf26fde6c1c2b4721c33e781326a72d",
+      "promotion": false
+    }
+  ],
+  "overlays": [
+    {
+      "id": "R17_REJECTED",
+      "status": "REJECTED_BY_AUTHOR_NEVER_EVENT",
+      "promotion": false
+    },
+    {
+      "id": "R2_OPEN",
+      "status": "AUTHOR_REAUTHORIZED_AND_VERBATIM_RATIFIED",
+      "promotion": false
+    },
+    {
+      "id": "D539_CAEDREN",
+      "status": "LITERAL_PRESENCE_ONLY_TRAVEL_AFFILIATION_COMMAND_UNPROVED",
+      "promotion": false
+    },
+    {
+      "id": "D539_RATIFICATION_0",
+      "status": "NOT_A_CONTINUATION_CHOICE",
+      "promotion": false
+    },
+    {
+      "id": "D539_HORIZONTE",
+      "status": "40000_HOMES_CAPACITY_100000_NOT_POPULATION",
+      "promotion": false
+    },
+    {
+      "id": "D539_POWERS",
+      "status": "PHYSICAL_HOUSE_INSTITUTIONS_TRANSITION_NOT_AUTOMATIC_OFFICE",
+      "promotion": false
+    },
+    {
+      "id": "D540_AUTOMATA",
+      "status": "3600_PLUS_1500_FUNCTIONAL_EXCLUDES_RUMO_VERTICE_TRANSPORT",
+      "promotion": false
+    },
+    {
+      "id": "D541_TOWER",
+      "status": "PRIVATE_LOT_TOWER_V3_NO_PUBLIC_AUTHORITY_NO_ARGOS_LANDING",
+      "promotion": false
+    },
+    {
+      "id": "D541_NOX",
+      "status": "SAME_CONSCIOUSNESS_REVERSIBLE_CONSENT_96_PRIVATE_NONCONSCIOUS",
+      "promotion": false
+    },
+    {
+      "id": "D538_D541_EXTERNAL",
+      "status": "THARVEK_ELYRIEN_READER_ONLY_UNKNOWN_ORIGIN_NO_INJECTION",
+      "promotion": false
+    }
+  ],
+  "controls": [
+    "Retain complete Book V boundary, prior cycles, Hotfix L1/L2, rejected D520, all independent semantic gates and 22 unresolved queue hints unchanged.",
+    "R2 reauthorization and exact three source slices from original export; no r17 reuse, no invented Part III choice. Caedren D539 physical presence only, no proven travel, rank or affiliation.",
+    "Three marks D538–540: actual physical changes distinct from occupation, government legitimacy and operational services. 40k homes 100k future capacity; 1m aspiration only. 5100 public functional service cohorts separate from 120 transport vehicles, Rumo, Vértice and 300 originals. 96 private tower units distinct.",
+    "Torre private acquired property, 145m 22 levels 3 basements 31000m2, NÓX same consciousness reversible, no Earth link, ARGOS no landing, ASA LIVRE concept. Distant POV Tharvek and Elyrien independent, no attribution of clues or knowledge injection."
+  ],
+  "axis_coverage": {
+    "assessed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "represented": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ]
+  },
+  "totals": {
+    "session_lines": 14243,
+    "session_records": 72,
+    "staging_records": 4347,
+    "book_v_records": 1380,
+    "book_v_lines": 232445,
+    "book_vi_records": 72,
+    "book_vi_lines": 14243,
+    "original_events": 55,
+    "original_knowledge": 51
+  },
+  "status": "PENDING_NATIVE",
+  "cycle_status": "CYCLE_REVIEW_PENDING_NATIVE",
+  "production_gate": "HOLD",
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "semantic_certification": false,
+  "independent_review": false,
+  "promotion": false
+}
