@@ -1,0 +1,318 @@
+{
+  "schema": "OMEGA_HYBRID_BOOK_V_OPENING_REVIEW_VALIDATED_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "previous_boundary_blob": "ac930832759e89e93e5ca801894267a0a6fb3a2e",
+  "macros": [
+    {
+      "macro": 43,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0043-01.json",
+      "blob": "7610ff48d01fc08b89f6acec4bae60484aa7ed9e",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0043-closure-pending.json",
+      "checkpoint_blob": "42d9b6f40ca77a1499794e349471e3b5e6c304bb",
+      "records": 75,
+      "lines": 10081,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "macro": 44,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0044-01.json",
+      "blob": "b649925efe4afdc4635bdb0bf83c1aa183d3def0",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0044-closure-pending.json",
+      "checkpoint_blob": "1b7875fe619fbd92994f1bceb1b0f6a41c68b2db",
+      "records": 8,
+      "lines": 1270,
+      "axes": [
+        1,
+        3,
+        4,
+        5,
+        7,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "macro": 45,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0045-01.json",
+      "blob": "843b89a6ce49e17f5335af49121ae74fa16beddf",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0045-closure-pending.json",
+      "checkpoint_blob": "3507f3a17563bcc0d1229812a1bb454fc3f4ccfd",
+      "records": 52,
+      "lines": 10258,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    }
+  ],
+  "scope": "Grouped editorial recovery and source transition review; not fifth-macro consolidated review or semantic certification.",
+  "findings": [
+    {
+      "id": "BOOK_V_AUTHOR_BOUNDARY",
+      "source": "03_DIA_431_A_457_FONTE_LITERAL.txt",
+      "range": [
+        8936,
+        8944
+      ],
+      "sha256": "c820b8c43691cee0a35ed016c6586614c51a21d390f7b86e0af1c42232f851e1",
+      "promotion": false
+    },
+    {
+      "id": "BOOK_V_TITLE",
+      "source": "03_DIA_431_A_457_FONTE_LITERAL.txt",
+      "range": [
+        8982,
+        8990
+      ],
+      "sha256": "1cb460cfa6105350ad30e4d9df72623c139f33e09d00cdd6cb1b42b03df25398",
+      "promotion": false
+    },
+    {
+      "id": "MAP_DEMONSTRATION_NOT_UNKNOWN_GEOGRAPHY",
+      "source": "03_DIA_431_A_457_FONTE_LITERAL.txt",
+      "range": [
+        11450,
+        11993
+      ],
+      "sha256": "2336af889729c52f84267b8260f2b695c71e50996c6b4323ce8c92205c46d4fd",
+      "promotion": false
+    },
+    {
+      "id": "SYSTEM_AUTHOR_PERSONALITY",
+      "source": "03_DIA_431_A_457_FONTE_LITERAL.txt",
+      "range": [
+        18331,
+        18477
+      ],
+      "sha256": "990424bc2060ec449c2addb690cc0da5f49ef78640d6dcfa3faf00b4068df6cd",
+      "promotion": false
+    },
+    {
+      "id": "FUTURE_CAPTURE_PLAN_NOT_EVENT",
+      "source": "03_DIA_431_A_457_FONTE_LITERAL.txt",
+      "range": [
+        19410,
+        19831
+      ],
+      "sha256": "f6acfb84854a346567c59bd396a304bbc5373ee593112a8b451ffe12847e189d",
+      "promotion": false
+    },
+    {
+      "id": "AETHRON_PROVISIONAL_BACKSTAGE",
+      "source": "03_DIA_431_A_457_FONTE_LITERAL.txt",
+      "range": [
+        19832,
+        20163
+      ],
+      "sha256": "48f609521e78286bc8180c8bc4b13a648a638215ebbbd5c9aa3784c18f485da1",
+      "promotion": false
+    },
+    {
+      "id": "D457_RECAP_NOT_LITERAL",
+      "source": "03_DIA_431_A_457_FONTE_LITERAL.txt",
+      "range": [
+        20164,
+        20286
+      ],
+      "sha256": "6f43cd01c222d55fe3f075dfe8d1a214995cde7f8bdfec3faa6b5bfa5f79cf75",
+      "promotion": false
+    },
+    {
+      "id": "SOURCE04_BOOK_V_D442",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        328,
+        346
+      ],
+      "sha256": "3fec35dc3bb87a1d7c843cd336738ee9da95e5fdf4283045e9f239c49779b5fd",
+      "promotion": false
+    },
+    {
+      "id": "MIREN_PROTECTIVE_CLOTHING",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        3474,
+        3809
+      ],
+      "sha256": "b6c0e286ae8189c819c564c7ffaf9f7e487dab8f62511b7129d759c9219cf886",
+      "promotion": false
+    },
+    {
+      "id": "ARGOS_TEST_NOT_KNOWN_TO_LUCAS",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        4454,
+        4675
+      ],
+      "sha256": "d12685e7a3e917c0e08a6741e669a83b97f55b0e8c74e9ebe4c03e4cb48b7e18",
+      "promotion": false
+    },
+    {
+      "id": "STONE_RESCUE_NOT_RESTORATION",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        6390,
+        6773
+      ],
+      "sha256": "d2771500b9c0de69748a03e10af719794a12898554d93d592b102dab39225221",
+      "promotion": false
+    },
+    {
+      "id": "CHAPTER1_END",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        7946,
+        8013
+      ],
+      "sha256": "0e466052077d0b1dfafcd234c53762232392e5a7c9cb7076c33911b0eebed874",
+      "promotion": false
+    },
+    {
+      "id": "HOUSE_DIMENSIONAL_CREATION",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        9090,
+        9467
+      ],
+      "sha256": "814140a0b4c49c2d8a5c565b7f0f32da2ef50a331fee1671edd14e2e11d7d975",
+      "promotion": false
+    },
+    {
+      "id": "SELECTIVE_ACCESS",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        9468,
+        9695
+      ],
+      "sha256": "b005f7a8a6ed9ca0629325b2919a53632bfbd78b0ec16986308b026e7ffdc74c",
+      "promotion": false
+    },
+    {
+      "id": "MID_SCENE_CUT",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        9936,
+        10258
+      ],
+      "sha256": "7c4260c01dd68a1a905910f1b66868765fa8b17389b9bf4348ec9f19f2bccdea",
+      "promotion": false
+    }
+  ],
+  "controls": [
+    "No canon promotion; source order not event time; author directions, plans, historical tool claims and recaps not current events.",
+    "Source 03 later editorial reports refer to D444–457; source 04 returns to D442 literal; preserve overlaps, no automatic deduplication.",
+    "Book V title explicitly established at source 03 line 8982; macro45 queue hint V_OR_VI_UNRESOLVED is resolved locally by literal Book V headings and D442–445 chapter 1–2; do not change official queue.",
+    "Aethron/Arconte provisional backstage only; planned kidnapping, armor symbiosis, dwarf city, portal, energy and guilds are not executed events in editorial spans.",
+    "Prior Book IV overlays and unresolved divergences preserved; 300x, storage 100x, original legionaries, eight songs, no implicit power change. Historical reports of old HEADs are not current authoritative state.",
+    "No character injection; mixed scenes containing System/private perspective remain protected and need future typed subspan review."
+  ],
+  "totals": {
+    "lines": 21609,
+    "records": 135,
+    "staging_records": 3030,
+    "official_records": 1656,
+    "axes_assessed": 30
+  },
+  "status": "PASS_STAGING_ONLY",
+  "production_gate": "HOLD",
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "semantic_certification": false,
+  "independent_review": false,
+  "promotion": false,
+  "pending_review_blob": "73d26775a28261f4957f42bfe745f9f9aef36a62",
+  "validated_commit": "9bb989d2e07436b2af425ed1ad4a637ef439437f",
+  "native_evidence_path": "audit/omega008-c/turbo-v3/book-V-opening-0043-0045-native-evidence.json",
+  "native_evidence_blob": "a457e31c8fd0d3d6d9ff38ba59314614723fc4b7",
+  "consolidated_cycle_status": "OPEN_0043_0047_OR_BOOK_BOUNDARY",
+  "authority_counts": {
+    "AUTHOR_DIRECTION_NOT_EVENT": 42,
+    "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED": 46,
+    "METADATA_NOT_EVENT": 42,
+    "NARRATOR_PROPOSED_BRANCH_NOT_EVENT": 5
+  },
+  "visibility_counts": {
+    "EDITORIAL_ONLY_NO_CHARACTER_INJECTION": 110,
+    "READER_ONLY_NO_CHARACTER_INJECTION": 16,
+    "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION": 9
+  }
+}
