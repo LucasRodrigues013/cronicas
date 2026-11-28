@@ -14,3 +14,5 @@ Os personagens fictícios, ambiente urbano não nomeado e detalhes da guerra sã
 - Capítulo 1 V0.3: autor rejeitou a força da abertura, exigiu impacto épico, emoção extraordinária e nota mínima 9,9 antes de aprovação. V0.4 em revisão, sem aprovação. Próximo capítulo bloqueado.
 
 - Capítulo 1 V0.4: autor solicitou incluir criação integral dos 300, apresentação e palavras, batalha coordenada, mochila dimensional e armadura regenerativa motivadas pelo medo e fragilidades, momentos épicos e histórico. V0.5 produzido como arco completo; não aprovado ainda. A divisão anterior dos capítulos 1–3 fica superada nesse ponto, sem mudar RPG.
+
+- Capítulo 1 V0.5: autor declarou "Capítulo 1 aprovado." Texto congelado; avaliação manual anterior 9,4 preservada. Aprovação autoral não constitui certificação da meta 9,9; manter a meta nas próximas unidades.
