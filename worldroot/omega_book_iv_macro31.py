@@ -536,7 +536,44 @@ def verify_macro39_cycle(root,archive):
     require(review["status"]=="PENDING_NATIVE_STAGING_REVIEW" and cp["native_validation"]=="PENDING" and review["production_gate"]==cp["production_gate"]=="HOLD" and not any(review[x] or cp[x] for x in ("canon_changed","official_checkpoint_changed","semantic_certification","independent_review","promotion")),"gate")
     return {"status":"PASS_NATIVE_MACRO_0039_COMPLETE","cycle_status":"PASS_STAGING_ONLY","lines":10238,"records":50,"cycle_lines":total_lines,"cycle_records":len(new_ids),"cycle_axes":sorted(axes),"next_line":71160,"staging_records":2767,"macro_complete":True,"production_gate":"HOLD","semantic_certification":False,"canon_changed":False}
 
+
+def verify_macro40_close(root,archive):
+    from collections import Counter
+    root=Path(root); archive=Path(archive)
+    prior=verify_macro39_cycle(root,archive)
+    c0=read(root,ROOT+"recovery-checkpoint-0039-validated.json","96871d1cf145b71eb8ec465432627e819eeb5c92")
+    review=read(root,c0["cycle_review_path"],"eb0aa0cbd92dc251920145f15f83ba174c18c536")
+    require(prior["next_line"]==c0["next_line"]==71160 and c0["native_validation"]=="PASS" and prior["cycle_status"]==review["status"]=="PASS_STAGING_ONLY" and review["recovery_gate"]=="AUTHORIZED_STAGING_ONLY","mandatory release")
+    require(review["totals"]["records"]==prior["cycle_records"]==254 and review["totals"]["lines"]==prior["cycle_lines"]==50732,"cycle binding")
+    cp=read(root,ROOT+"recovery-checkpoint-0040-closure-pending.json","781a4c7738f6c0d75bace52b24fc09b54ff35ac4")
+    r=read(root,cp["receipt_path"],"479b93062eb1e47bd7b804e428af81b5b64569b8",cp["receipt_sha256"])
+    q=read(root,"audit/omega008-c/bulk-macro-queue.json","e5a5f9e358d20acf8559f6313c2da24b64665f48")["macros"];m=q[39]
+    require(c0["next_macro"]==m and cp["next_macro"]==q[40] and r["previous_macro_id"]==q[38]["id"] and r["official_unit_seal"]==m["unit_seal"],"queue chain")
+    require(r["previous_checkpoint_blob"]==cp["previous_checkpoint_blob"]=="96871d1cf145b71eb8ec465432627e819eeb5c92" and r["cycle_review_blob"]==cp["cycle_review_blob"]=="eb0aa0cbd92dc251920145f15f83ba174c18c536" and r["release_blob"]==cp["release_blob"]==c0["release_blob"],"checkpoint chain")
+    source=SourceCache(archive,read(archive,"history/sources/MANIFEST.json","2048141263f66151230119af9b0ee51796ac846b")).get(m["source"])
+    ids=[x["id"] for g in review["macros"] for entry in g["receipts"] for x in read(root,entry["path"],entry["blob"])["records"]]
+    previous=read(root,ROOT+"cycle-0030-0034-consolidated-review-validated.json","3f8f84f05aef6963e0955f9fab2fdb77b99311b1")
+    ids.extend(x["id"] for g in previous["macros"] for entry in g["receipts"] for x in read(root,entry["path"],entry["blob"])["records"])
+    require(len(ids)==len(set(ids)),"prior IDs")
+    result=validate_receipt(r,m,source,r["project"],ARCHIVE,previous_ids=ids)
+    allr=r["records"]
+    require(result["lines"]==10016 and result["records"]==result["coverage"]==cp["records"]==48,"counts")
+    require(cp["staging_records"]==c0["staging_records"]+48==2815 and cp["book_counts"]["IV"]==693,"staging counts")
+    require(cp["session_new_lines"]==prior["lines"]+result["lines"]==20254 and cp["session_new_records"]==prior["records"]+result["records"]==98,"session counts")
+    require(all(x["book"]=="IV" and x["chapter_hint"]==14 and x["day"] in range(424,431) for x in allr),"scope")
+    require(all((x["evidence"]["role"]=="Prompt")==(x["authority"]=="AUTHOR_DIRECTION_NOT_EVENT") for x in allr),"author separation")
+    require(all(x["visibility"].startswith("READER_ONLY") for x in allr if x["type"]=="reader_scene") and all(x["visibility"].startswith("RESTRICTED") for x in allr if x["type"]=="knowledge"),"private boundary")
+    require(all(x["authority"]=="METADATA_NOT_EVENT" for x in allr if x["type"]=="metadata") and all(x["authority"]=="NARRATOR_PROPOSED_BRANCH_NOT_EVENT" for x in allr if x["type"]=="transition_options"),"non-event separation")
+    require("DÉLIA autorizou" in source[0][74400] and "contenção temporária" in source[0][74398] and "sem transferência de direitos" in source[0][74568],"moinho boundary")
+    require("Leitura Matricial confirmou" in source[0][74480] and "frequência das observações contextuais" in source[0][77248],"power and system")
+    require("documentos verdadeiros" in source[0][77940] and "não constitui autorização" in source[0][77954] and "pagou pela miniatura" in source[0][78626],"capital and identity")
+    require("não havia sido concedida" in source[0][80184] and "Acompanhamento civil de observação: autorizado" in source[0][80888] and "sem direito automático" in source[0][80888],"civil permission transition")
+    require("vestido azul-profundo" in source[0][81008] and source[0][81174]=="— MIREN desejava impressionar.","dress and cut")
+    require(cp["next_line"]==r["next_line"]==q[40]["start"]==81176 and q[40]["previous_macro"]==m["id"],"next cursor")
+    require(cp["native_validation"]=="PENDING" and cp["production_gate"]=="HOLD" and not cp["canon_changed"] and not cp["official_checkpoint_changed"] and not cp["semantic_certification"] and not cp["promotion"],"gate")
+    return {**result,"status":"PASS_NATIVE_MACRO_0040_COMPLETE","prior_cycle_status":"PASS_STAGING_ONLY","session_new_lines":20254,"session_new_records":98,"next_line":81176,"macro_complete":True,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False,"authority_counts":dict(Counter(x["authority"] for x in allr)),"visibility_counts":dict(Counter(x["visibility"] for x in allr))}
+
 def main():
     p=argparse.ArgumentParser();p.add_argument("--engine-root",default=".");p.add_argument("--archive-root",required=True)
-    a=p.parse_args();print(json.dumps(verify_macro39_cycle(a.engine_root,a.archive_root),sort_keys=True))
+    a=p.parse_args();print(json.dumps(verify_macro40_close(a.engine_root,a.archive_root),sort_keys=True))
 if __name__=="__main__":main()
