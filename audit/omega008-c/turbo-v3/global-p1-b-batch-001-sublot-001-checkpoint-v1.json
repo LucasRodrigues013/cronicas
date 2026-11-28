@@ -1,0 +1,146 @@
+{
+  "schema": "OMEGA_GLOBAL_P1_B_CHECKPOINT_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "status": "PARTIAL_EDITORIAL_STAGING_NATIVE_PASS_INDEPENDENT_HOLD",
+  "previous_head": "58876dcb1cafbf5c7404ca3db363beb5fb781029",
+  "validated_commit": "8a0596fb3b5d410ad4bf4afa08f0575bb55288b3",
+  "previous_checkpoint_blob": "3432df660d63f9eddf8e755d91f6572a20678e70",
+  "previous_native_blob": "54913acf7f07f91b6497d87f248d580033978b3f",
+  "native_evidence_path": "audit/omega008-c/turbo-v3/global-p1-b-batch-001-sublot-001-native-evidence-v1.json",
+  "native_evidence_blob": "12448dcb5c64ee271bc56148259b39156f67518b",
+  "workflow": 46152870742,
+  "job": 141003080042,
+  "tests_total": 53,
+  "adapter_blob": "d90dbe8cf9c382eb2272368d24bb70a8240c8e97",
+  "overlay_blob": "015938dbb4013ba270bbe19bfafec46fb8b88985",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "main_pin": "1b063d05c1acaa86b2f237f987804af59dbeccd6",
+  "receipt_path": "audit/omega008-c/bulk-semantic-macro-0002.json",
+  "receipt_blob": "e2b1c839a3958d4b3cd1ef8e6325e06bb08c7acb",
+  "batch": 1,
+  "macro": 2,
+  "completed_ids": [
+    "O8C-B2-001",
+    "O8C-B2-002",
+    "O8C-B2-003",
+    "O8C-B2-004",
+    "O8C-B2-005"
+  ],
+  "processed_range": [
+    1680,
+    1909
+  ],
+  "processed_groups": 5,
+  "planned_batch_groups": 100,
+  "remaining_in_batch": 95,
+  "remaining_in_macro": 120,
+  "global_parent_denominator": 4941,
+  "prior_groups": 79,
+  "global_groups_prepared": 84,
+  "global_remaining": 4857,
+  "next_offset": 5,
+  "next_id": "O8C-B2-006",
+  "next_anchor": 1910,
+  "next_source_line": 1910,
+  "anchor_lines": 183,
+  "gap_lines": 47,
+  "gap_spans": 9,
+  "children": 73,
+  "children_sha256": "be049d02b137e6e467ba6677dfbc0313386e8d043b5baa0312b394d299980ab6",
+  "parents_sha256": "450579a9db212515cce4bec156e0cb8f1890083f7e00bd238e02b6292fe71157",
+  "gaps_sha256": "e922dfe93d294881de023a85e0a2e5309af50dcecc0df0a0d6b6c8becaffd6de",
+  "modalities": {
+    "HYPOTHESIS": 2,
+    "META": 5,
+    "NARRATED": 28,
+    "PLAN": 14,
+    "REPORT": 24
+  },
+  "verdicts": {
+    "PARTIAL": 43,
+    "SUPPORTED": 27,
+    "UNKNOWN": 3
+  },
+  "registry_binding": "f2301e1723f4ba352f4c75ce5d4e1c3baecf7e7e5bd4779ecdc453bc68f05d30",
+  "review": {
+    "prior_jobs": 368,
+    "prior_pairs": 63,
+    "prior_packets": 126,
+    "new_jobs": 40,
+    "new_pairs": 7,
+    "new_packets": 14,
+    "total_jobs": 408,
+    "total_pairs": 70,
+    "total_packets": 140,
+    "returns": 0,
+    "new_manifest": [
+      {
+        "A": "8eef9f9345942af39e4da0ca5951495fb2984a6604bb6c4d86f6db36bd310415",
+        "B": "6e4d996e8ac37bec04accd4910435cb1cf97799662b83cebcad1547a65c4be2b",
+        "jobs": 6,
+        "targets": 11
+      },
+      {
+        "A": "61a8884741e0af95a801197621056a5ae46bf6b6dd149099ee9330ccc6c3dc71",
+        "B": "c3ff447388fd7b839f6f679665ca9893fa19b2e9b0ab5d0c18463bb6e3793ae9",
+        "jobs": 6,
+        "targets": 14
+      },
+      {
+        "A": "2ca134ef016bca5d11bd4f536ebc92ea5e349942023f3c423d04fa408c4f26ad",
+        "B": "3ecbae51eb72da9966d114d858ad5a2a32a052beb124416a4cc27ebe394b51fd",
+        "jobs": 6,
+        "targets": 10
+      },
+      {
+        "A": "33516cf906bfed8f4af64dc1344a0ceab3d41e284c8b46dd5cfd26d3158227c4",
+        "B": "7ee5bbf818a2919bf20ff5b11fb37c387abc12987d11cce99243428b8b96261a",
+        "jobs": 6,
+        "targets": 14
+      },
+      {
+        "A": "f95ee3a817a107990222401580c7ddd7cb1927615862f6ef39137e4382f8939e",
+        "B": "5f953d115e2dcfeb35fb2d532b515f3e49d7d1a4e515b480aed8f83d98a70040",
+        "jobs": 6,
+        "targets": 7
+      },
+      {
+        "A": "3a8f00553a03bbef2a320ca1906a6d13f8f55cc26c3d4dfabc75a1739d7927a2",
+        "B": "358a495d8ba9cad8f2238519680059aab60851aafb26b3e906bd60f2dd1aa5f5",
+        "jobs": 6,
+        "targets": 12
+      },
+      {
+        "A": "d913a2a8abe59ddc91dd4b25b3b83a19003d9bd8519799ea15babf67bf13a279",
+        "B": "6cacbd68ee3aff655d0e3d90ec78859fbd74af6d195500414533671d2b8b347f",
+        "jobs": 4,
+        "targets": 5
+      }
+    ],
+    "controller": "0fc41c8f15376efdedb130c8b38ae515dbfdf22147d84ba00eebad31ae395ce2",
+    "independently_certified": 0
+  },
+  "narrative": {
+    "head_day": 579,
+    "head_clock": "23h02",
+    "seq": 50,
+    "d580_ratification": "PENDING_AUTHOR",
+    "advanced": false
+  },
+  "next_task": "Continue exact source from O8C-B2-006; read bounded subchunks and use same adapter with explicit --overlay, previous_checkpoint_path and previous_checkpoint_blob. Configure native workflow to select new overlay and verify resumed offset; do not reprocess approved 001-005.",
+  "limits": [
+    "5 of 100 groups processed; no exhaustiveness or independent review",
+    "Anchor and gap partition integrity is not complete field-level semantic extraction",
+    "New adapter handles pinned legacy receipts and same-batch resumed offsets; resumed offset not yet executed natively; cross-batch/later episode support needs validation",
+    "Native workflow currently defaults to sublot 001; next execution must explicitly select subsequent overlay",
+    "No new typed transitions asserted by children; historical context is preserved",
+    "No corpus or review answers committed; no SQLite mutation, no promotion"
+  ],
+  "production_gate": "HOLD",
+  "semantic_certification": false,
+  "independent_review": false,
+  "typed_projection": false,
+  "full_regression": false,
+  "promotion": false,
+  "canon_changed": false
+}
