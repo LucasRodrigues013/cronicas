@@ -1,0 +1,286 @@
+{
+  "schema": "OMEGA_GLOBAL_READINESS_D579_V1",
+  "status": "RECOVERY_COMPLETE_GLOBAL_HOMOLOGATION_HOLD",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "recovery_head": "28576379f495367d1ed459b10db52497e1aff3a7",
+  "checkpoint_blob": "646366e51791243b4e387fd6dd0faf144f4dc9ab",
+  "cycle_blob": "1b93654a7252aac68278d7d6d727aaa009309d8b",
+  "native_blob": "d379a430c2107020d7c6cfd68e7dbff4331c9113",
+  "workflow": 46149162656,
+  "readback": {
+    "checked": 6,
+    "passed": 6,
+    "branch_identical": true
+  },
+  "metrics": {
+    "macros": 116,
+    "queue_lines": 706293,
+    "queue_units": 2821,
+    "logical_sources": 56,
+    "transcripts": 6,
+    "closed_episodes": 50,
+    "queue_chain": true,
+    "source_interval_gaps": 0,
+    "unresolved_book_markers": 22,
+    "staging_records": 4941,
+    "legacy_checkpoint_records": 1656,
+    "book_counts": {
+      "I": 490,
+      "II": 746,
+      "III": 886,
+      "IV": 773,
+      "V": 1380,
+      "VI": 666
+    },
+    "book_v_lines": 232445,
+    "book_vi_lines": 82210,
+    "native_tests": 47,
+    "test_files": 92,
+    "editorial_policy_version": 22,
+    "editorial_rules": 130
+  },
+  "source_inventory": [
+    [
+      "archive",
+      "history/sources/MANIFEST.json",
+      "2048141263f66151230119af9b0ee51796ac846b",
+      "literal sources; nominal date ranges not authority for individual events"
+    ],
+    [
+      "archive",
+      "canon/HEAD.json",
+      "9b4e09682fc3148511d59e73ec56fdcda4e396e5",
+      "D579 seq50"
+    ],
+    [
+      "archive",
+      "ops/RESUME.json",
+      "f58b7bc89eaffa29e6d3db717c7d304c66d9ad87",
+      "snapshot; D580 pending"
+    ],
+    [
+      "archive",
+      "author-approvals/LVI-C09-PII-D580-RATIFICATION-20261126.json",
+      "9a211acf0b47c6d33f5a9c81d0cfca12212ae533",
+      "explicit ratification intent, no continuation choice, not executed here"
+    ],
+    [
+      "archive",
+      "ops/ENGINE_PUBLISHING_POLICY.json",
+      "13fb4d1cfe0e2d8cf86d53c39f040f56646dc4f4",
+      "pinned snapshot R36 exceptional engine-only release, not OMEGA promotion"
+    ],
+    [
+      "archive",
+      "canon/state.sqlite",
+      "0b139b087502f72d51029293adf081c182cb75c2",
+      "tree metadata only, do not treat as fresh replay"
+    ],
+    [
+      "archive",
+      "editorial/registries/universal-codex-design-d580-v1.json",
+      "3f004e6209a46b42a35291bb40fee8386bc7d6ca",
+      "registry metadata verified; connector full JSON parse failed; native read required"
+    ],
+    [
+      "archive",
+      "editorial/registries/r35-living-overlay-manifest.json",
+      "02525c88956350aebfc2ef4d05e039b784593c75",
+      "author-authorized provisional overlay, staging"
+    ],
+    [
+      "archive",
+      "editorial/registries/r35-natural-completion-d579-v14.json",
+      "db6190d652c35e87ad8c6f670de077e3b13b816e",
+      "character overlay manifest/tree pin only"
+    ],
+    [
+      "archive",
+      "editorial/registries/r35-world-completion-d579-v12.json",
+      "7eabe936795808d65a6a2f8c12a742475a9a3605",
+      "world overlay manifest/tree pin only"
+    ],
+    [
+      "archive",
+      "editorial/registries/r35-legacy-name-reconciliation-v10.json",
+      "baffe1ae35556394a8cbdc788197e741b88e269f",
+      "naming proposals, manifest pin only"
+    ],
+    [
+      "archive",
+      "editorial/registries/female-character-design-d580-v2.json",
+      "df2504b0721cc08ebc038f11070e793ef770d7d6",
+      "approved design separate from historical fact, tree pin"
+    ],
+    [
+      "archive",
+      "editorial/codex-staging/r35-consolidation-d579-audit-v2.json",
+      "e0cd78da3c7be4e6392356decbef022593721ded",
+      "historical gap inventory, not current counts"
+    ],
+    [
+      "engine",
+      "docs/omega008-c-checkpoint.json",
+      "4a160e2eedc259e99f0199d00f7b53b4a2476d73",
+      "legacy cursor macro22; 1656 grouped candidates, not new canon"
+    ],
+    [
+      "engine",
+      "worldroot/editorial_policy.json",
+      "615151fc89228ddb222ea01613c23e977f8c418b",
+      "v22 130 rules"
+    ],
+    [
+      "engine",
+      "docs/editorial-governance.md",
+      "e0262372df483e243dd4fa044d154c9bb6369aeb",
+      "scope/precedence"
+    ],
+    [
+      "engine",
+      "docs/universal-living-codex-r35.md",
+      "9dc8e24697c513688cc4a226630b7fa997dd1c16",
+      "existing typed contract"
+    ],
+    [
+      "engine",
+      "worldroot/live_codex.py",
+      "c09d5e0f91c257658da61e58786ab8f2db218e31",
+      "reuse existing graph"
+    ],
+    [
+      "engine",
+      "worldroot/semantic_gate.py",
+      "06eb30cffa715618bce329438787e812f4681c2f",
+      "deterministic anchor gate only"
+    ],
+    [
+      "engine",
+      "docs/r36-evolution-7-cg-historical-adjudication.md",
+      "94da404151b020a3f64ceba2e249b85b32199c9c",
+      "prior Stage C and QA scope gaps"
+    ],
+    [
+      "engine",
+      "docs/r36-evolution-7-p0-p1.md",
+      "8b10088c21ede26dbc9e6114c458707c828283a6",
+      "independent evaluation contracts"
+    ],
+    [
+      "engine",
+      "docs/r36-controlled-production-release.md",
+      "3ba95f2d73153bcd1d14aeb6a784024854586481",
+      "engine-only exception, not historical approval"
+    ]
+  ],
+  "authority_precedence": [
+    "Exact authorized closed source and explicit scoped corrections/ratifications; preserve original bytes",
+    "Literal historical Response with context and dated state; legacy summaries as candidates only",
+    "Author Prompt choice/direction is not event; preproduction, rejected variants, dreams, narrator options separated",
+    "Prospective design author authority only in its scope; never retroactive biography",
+    "Derived Codex and RESUME are projections, unknown stays unknown"
+  ],
+  "findings": [
+    {
+      "id": "G01",
+      "severity": "BLOCKER",
+      "detail": "Semantic independent review not certified; Stage C prior 261/203/177/0 and A/B missing at documented baseline, verify latest receipts without recreating missing outputs."
+    },
+    {
+      "id": "G02",
+      "severity": "BLOCKER",
+      "detail": "Typed projection of recovered 4941 grouped candidates not integrated; split into atomic claims and map to existing stable IDs, scope and effective time."
+    },
+    {
+      "id": "G03",
+      "severity": "BLOCKER",
+      "detail": "Full regression not executed on terminal engine; 47 tests only cumulative recovery workflow, 92 test files are inventory not executed count."
+    },
+    {
+      "id": "G04",
+      "severity": "HIGH",
+      "detail": "22 unresolved book markers intentionally unchanged; classify only with evidence and author approval if ambiguous."
+    },
+    {
+      "id": "G05",
+      "severity": "HIGH",
+      "detail": "Legacy docs checkpoint macro22 calls 1656 total_candidates_recovered. Do not reinterpret historical label official_records as 1656 canon facts; reconcile append-only with terminal staging count."
+    },
+    {
+      "id": "G06",
+      "severity": "HIGH",
+      "detail": "D580 ratification intent exists but pinned HEAD seq50/D579 and RESUME D580 pending. Verify live authority separately; no auto-close or D580 recovery in this phase."
+    },
+    {
+      "id": "G07",
+      "severity": "HIGH",
+      "detail": "Pinned policy records R36 engine-only exceptional release. OMEGA HOLD is historical staging/promotion, not revocation of prior code release; current live policy not checked."
+    },
+    {
+      "id": "G08",
+      "severity": "HIGH",
+      "detail": "Prior R35 audit 81 character cards, 1020 spell proposals, 14 species design profiles, 9229 contexts not reviewed, 20 alias collisions, 23 provisional identities, four legacy profiles, 18/92 visual inspected and four unknown numeric ages. Historical snapshot not current backlog; rebase against v14/v12 overlays, do not add or double-count."
+    },
+    {
+      "id": "G09",
+      "severity": "HIGH",
+      "detail": "Existing QA40 probes limited, item40 mixes D350/D355, 40 same logical source cannot all fit largest 36-case split; no held-out gold fabricated."
+    },
+    {
+      "id": "G10",
+      "severity": "HIGH",
+      "detail": "Registry connector full retrieval returned incomplete JSON. Tree and manifest pins match; load/validate complete files in authorized native isolated environment. Hotfix L1/L2 named artifacts not separately located in tree; verify exact approved baseline, no new implementation inferred."
+    },
+    {
+      "id": "G11",
+      "severity": "HIGH",
+      "detail": "Engine branch has audit summaries; respect repository visibility, do not publish additional private corpus, private labels, reviewer gold or secrets. Check authorized execution environment before full private replay."
+    },
+    {
+      "id": "G12",
+      "severity": "MEDIUM",
+      "detail": "D579 lexical 29/30, axis7 no match; axis21 ruína is simile only. Lexical coverage cannot stand for semantic completeness."
+    }
+  ],
+  "plan": [
+    {
+      "id": "P0",
+      "task": "Freeze and enumerate all 116 receipt groups and actual IDs; reconcile legacy 22, 96 partial receipt files, duplicates/gaps/authority/visibility and source manifests. Build versioned global claim inventory; no promotion.",
+      "accept": "100% records dispositioned, exact source joins, unique IDs or explicit duplicate groups, all omissions and conflicts recorded; no false canon."
+    },
+    {
+      "id": "P1",
+      "task": "Use existing semantic_queue/semantic_local/R36 exchange; separate reviewer A/B and adjudicator with source-only packets, no answer leakage, authenticated actual receipts. Reuse pending Stage C batches. Review critical atomic claims 100%, every group/omission disposition, use SUPPORTED/PARTIAL/CONTRADICTED/UNKNOWN/AUTHOR_REQUIRED.",
+      "accept": "Real independent receipts, disagreements resolved or blocked, no self-certification, 0 unsupported promotions."
+    },
+    {
+      "id": "P2",
+      "task": "Use existing live_codex schema on disposable archive copy; resolve exact identities, aliases, domain, age/design, chronology, inventory custody, powers, geography, institutions, relations, knowledge, pending/consequences and scope. Source-bound deltas, no new parallel DB.",
+      "accept": "All accepted claims mapped or explicit unresolved; no secret leakage, no invented fields, idempotent replay and restore, exact readback."
+    },
+    {
+      "id": "P3",
+      "task": "Run full synthetic suite python -m unittest discover -s tests -v and compileall; in authorized private isolated runtime run complete historical regression D001-D579, negative mutations, actual retrieval probes, test chronological conflict, powers and rules, compare to pinned baseline. Verify Hotfix L1/L2 and P01–P130. No story mutations.",
+      "accept": "Exact commit/workflow/logs, complete denominator, all critical checks pass, no regressions or unauthorized state changes; no claim of 579 distinct scene days."
+    },
+    {
+      "id": "P4",
+      "task": "Separate literary/presentation and Level7-CG benchmark; repair QA40 scope, construct disjoint actual reference/validation/reserved components and real independent comparative reviews, latency/retrieval measures. No evaluation labels public.",
+      "accept": "Existing ten gates unchanged, documented calibration and held-out custody, author acceptance where needed."
+    },
+    {
+      "id": "P5",
+      "task": "Final promotion proposal only, exact diff and rollback, HEAD/RESUME/queue/archive/main unchanged until distinct explicit authorization; D580 separately verify live ratification and choice authority.",
+      "accept": "All mandatory gates PASS with readback; author decides; HOLD until then."
+    }
+  ],
+  "production_gate": "HOLD",
+  "semantic_certification": false,
+  "independent_review": false,
+  "typed_projection": false,
+  "full_regression": false,
+  "canon_changed": false,
+  "promotion": false,
+  "main_changed": false
+}
