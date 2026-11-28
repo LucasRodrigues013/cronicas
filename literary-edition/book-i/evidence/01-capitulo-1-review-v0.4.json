@@ -1,0 +1,99 @@
+{
+  "schema": "literary-edition-chapter-review-v2",
+  "status": "REVISED_DRAFT_BELOW_AUTHOR_QUALITY_GATE",
+  "date": "2026-11-28",
+  "chapter": 1,
+  "title": "Um mundo que não conhecia seu nome",
+  "author_feedback": "O capítulo 1 ficou fraco. Aqui temos tudo a abertura e pra fazer o leitor se interessar pela história. Tudo precisa ser épico e de emoção incrível, nota mínima antes de aprovar deverá ser 9.9",
+  "quality_gate": {
+    "minimum": 9.9,
+    "applies_before_approval": true,
+    "automatic_score_inflation_forbidden": true,
+    "manual_estimate": 9.3,
+    "passed": false
+  },
+  "draft": {
+    "path": "book-i/drafts/01-capitulo-1-v0.4.md",
+    "blob": "3a8a84b8d077dd41ad4ef68577498ace3cd0b1b6",
+    "sha256": "e410967099048ab4006e6538ea8aab82a08263bbb6074e8ecfbb09ab0f12a4dc",
+    "words_whitespace": 3436
+  },
+  "previous": {
+    "path": "book-i/drafts/01-capitulo-1-v0.3.md",
+    "blob": "d446c7664c3cb1f35d17a8757e05bc9397b27c7a",
+    "words_whitespace": 2850,
+    "status": "rejected by author"
+  },
+  "approved_prologue": {
+    "blob": "835d451cb764f227d3732ef2a9a1376a3bbd59b0",
+    "status": "approved and untouched"
+  },
+  "sources": {
+    "engine_pin": "1b063d05c1acaa86b2f237f987804af59dbeccd6",
+    "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+    "historical_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+    "engine_guidance": "docs/r35-literary-refinement.md",
+    "history": "first-day consolidated record and subsequent orc-chief testimony, captain design, 300 creations; actual images remain unverified"
+  },
+  "changes": [
+    {
+      "axis": "opening",
+      "action": "active fall and bodily recovery, explicit emotional consequence of Helena's unanswered message"
+    },
+    {
+      "axis": "wonder",
+      "action": "large distant flying silhouettes, native river life and evidence of ancient infrastructure; new literary details not fixed as species or historical facts"
+    },
+    {
+      "axis": "world autonomy",
+      "action": "short unnamed orc perspective, organized movement and signal; motives not revealed"
+    },
+    {
+      "axis": "tension",
+      "action": "attempted contact fails, pursuit and escape, clear physical disadvantage"
+    },
+    {
+      "axis": "emotional payoff",
+      "action": "connect rescued child and second chance to decision to survive, creation of autonomous people and first protection"
+    },
+    {
+      "axis": "chapter boundary",
+      "action": "first captain manifestation and defensive intervention moved to end of chapter 1 as editorial proposal; full manifestation of 300 remains for chapter 2, main battle for chapter 3"
+    }
+  ],
+  "scores": {
+    "method": "manual self-assessment, no independent panel or objective certification; diagnostics, not author approval",
+    "opening": 9.4,
+    "emotion": 9.2,
+    "worldbuilding": 9.3,
+    "tension": 9.4,
+    "character": 9.4,
+    "prose": 9.1,
+    "pacing": 9.2,
+    "climax": 9.5,
+    "continuity": 9.3,
+    "design": 9.4,
+    "overall": 9.3
+  },
+  "remaining": [
+    "Secondary orc voice can become more distinct without revealing clan motives.",
+    "Tighten further the balance of introspection, explanatory analogies and immediate action.",
+    "Exact order of creation, captain appearance and defense cannot be asserted as recovered history before original images are verified.",
+    "No independent literary evaluation; gate not met."
+  ],
+  "pdf": {
+    "chapter_only": {
+      "filename": "Cronicas_O_Despertar_do_Criador_Capitulo_01_v04.pdf",
+      "pages": 16,
+      "sha256": "859c8c9ec77565ae5ffe8b7d2a32447843e1141a7e7a4fc7423bd1c4a55d7cfb"
+    },
+    "cumulative": {
+      "filename": "Cronicas_O_Despertar_do_Criador_Prologo_e_Capitulo_01_v04.pdf",
+      "pages": 39,
+      "sha256": "7425f8656f53ab609a962e4bc7c02caf5bf3d3c8f45bf8b6c93635219955b67d"
+    },
+    "checks": "16848 normalized narrative characters match manuscript; all prior prologue pages extracted text and rendered pixels identical at 0.65 scale; 15 new pages rendered and contact sheet inspected; all text blocks in bounds; corrected near-empty final page by adjusting leading to 15.7 and paragraph spacing to 3.4, preserving EB Garamond and A5 design",
+    "archive_status": "PDFs delivered in conversation, binary not uploaded to GitHub"
+  },
+  "next": "Do not approve or advance to chapter 2 until 9.9 editorial gate and explicit author approval; iterate chapter 1. Preserve all RPG sources."
+}
