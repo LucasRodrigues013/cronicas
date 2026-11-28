@@ -67,7 +67,8 @@ def source_data(root,rows):
         for e in c["events"]:
             if e["visibility"]!="PUBLICO":private[name].add(e["source"]["line"])
     return sources,private
-def retrieve(root,request,pack):
+def retrieve(root,request,pack,*,shadow_mode=None):
+    need(shadow_mode in (None,"fusion","coverage"),"Invalid shadow mode")
     root=Path(root);head=request["head"]
     need(request.get("project")==PROJECT and g.load(root/"canon/HEAD.json")==head and head["sequence"]>=50,"FC live HEAD")
     need(blob((root/"canon/episodes/LVI-C09-PI-D579-AUTHOR-SOURCE.json").read_bytes())==BASE_CLOSURE,"FC baseline closure changed")
@@ -103,14 +104,22 @@ def retrieve(root,request,pack):
             ranked.append((score,coverage,r,best))
         ranked.sort(key=lambda x:(-x[0],-x[1],-x[2]["macro"],x[2]["id"]))
         selected=[];seen=set()
-        for score,coverage,r,(line,_,flags) in ranked:
-            if r["source"] in seen and len(ranked)>3:continue
-            seen.add(r["source"])
+        if shadow_mode is None:
+            ranked_pairs=[]
+            for score,coverage,r,best in ranked:
+                if r["source"] in seen and len(ranked)>3:continue
+                seen.add(r["source"]);ranked_pairs.append((r,best))
+                if len(ranked_pairs)==3:break
+        else:
+            from .r36_apex_selection import select
+            ranked_pairs=select(index_rows,q,ids,binding==BINDING,shadow_mode)
+        for r,(line,_,flags) in ranked_pairs:
             selected.append({"group_id":r["id"],"source":r["source"],"source_sha256":r["source_sha256"],"group_interval":r["interval"],"group_anchor":r["anchor"],"line":line,"line_sha256":sha(sources[r["source"]][0][line-1]),"signals":list(flags),"identity_status":"CANDIDATE_ONLY","knowledge_injection":False})
             if len(selected)==3:break
         if not selected and req["critical"]:critical_missing+=1
         count+=len(selected);results.append({"requirement_id":req["id"],"status":"EDITORIAL_CANDIDATES" if selected else "NOT_RECOVERED_BY_ADVISORY","locators":selected})
     out={"schema":"worldroot-r36-fc-advisory-v1","project":PROJECT,"head_sha256":g.sha(g.canonical(head)),"request_sha256":g.sha(g.canonical(request)),"pack_sha256":pack["pack_sha256"],"registry_binding":binding,"baseline_alias_links_active":binding==BINDING,"indexed_groups":len(index_rows),"blocked_groups":dict(blocked),"requirements":results,"locator_count":count,"critical_without_advisory":critical_missing,"scope":"DIRECTOR_ONLY_CANDIDATES_NOT_FACTS","knowledge_injection":False,"semantic_certification":False,"canon_changed":False}
+    if shadow_mode is not None:out["shadow_mode"]=shadow_mode
     return {**out,"advisory_sha256":seal(out)}
 def configured(root,request):
     path=Path(root)/"ops/ENGINE_PUBLISHING_POLICY.json"
