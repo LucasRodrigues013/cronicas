@@ -1,0 +1,30 @@
+{
+  "schema": "literary-edition-author-approval-v1",
+  "status": "AUTHOR_APPROVED_TEXT",
+  "date": "2026-11-28",
+  "author_statement": "O texto ficou bom, aprovado. Mas o design precisa melhorar, é muito, está pobre, sem graça.",
+  "scope": "prologue only; text approved, earlier design rejected; redesign requested",
+  "approved_manuscript": {
+    "path": "book-i/drafts/00-prologo-v0.5.md",
+    "blob": "835d451cb764f227d3732ef2a9a1376a3bbd59b0",
+    "sha256": "e81b42c2b1d7d41921d5b68f4fe99e1cbd9bdaa2b4e03e63fc806ae993c3eeed",
+    "words": 4827
+  },
+  "previous_archived_pdf": {
+    "blob": "4e8abd0c667ec166a3a07b3d61fac35a250789c6",
+    "status": "superseded visual design; retain historical version"
+  },
+  "new_design": {
+    "status": "DELIVERED_FOR_VISUAL_APPROVAL",
+    "filename": "Cronicas_O_Despertar_do_Criador_Prologo_Edicao_Premium.pdf",
+    "sha256": "59fafbf4ef3949edac75c2efa2dc6b608b3d8293b856aa27c0d8c30b9e8cdd7f",
+    "git_blob_expected": "2991fa0b5eb3d91d41459e8e94a6daf797a96367",
+    "pages": 24,
+    "bytes": 151383,
+    "format": "A5",
+    "text_integrity": "Exact normalized text equality against approved Markdown: 23,579 non-whitespace narrative characters, excluding Markdown scene markers and PDF furniture; no prose change",
+    "visual_check": "All pages rendered and contact sheet reviewed; cover, opening and end layout checked",
+    "pdf_archive": "new PDF delivered in chat; binary not yet archived in GitHub"
+  },
+  "next": "Prologue text gate passed. Chapter 1 may be prepared in a separate future request; not produced now. RPG canon unaffected."
+}
