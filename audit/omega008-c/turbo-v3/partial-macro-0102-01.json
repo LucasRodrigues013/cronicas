@@ -1,0 +1,1094 @@
+{
+  "schema": "OMEGA_TURBO_V3_PARTIAL_MACRO_EDITORIAL_RECEIPT_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "macro_id": "2481d689c757f12df5985bb6612e8f46922d9e8035e2d5447c48de9006d0d376",
+  "previous_macro_id": "71023a0ed227d17e7c7b79c0b87a333cd67d6eeb9512e954cff6a98cba5560e3",
+  "official_unit_seal": "4ed5a5c3dd68d62d4de147fd5e589950cb38d467015375962f89342bcf10af9b",
+  "macro_range": [
+    1,
+    2162
+  ],
+  "range": [
+    1,
+    2162
+  ],
+  "source": "LVI-C06-PII-D565-AUTHOR-SOURCE",
+  "source_sha256": "aa0cc77db327f592c7ce931559b975ff0a2fdda4a43c2ca0e46d4635c9a1abe2",
+  "source_provenance": {
+    "kind": "CLOSED_PROSE",
+    "episode_id": "LVI-C06-PII-D565-AUTHOR-SOURCE",
+    "sequence": 36,
+    "previous_episode_id": "LVI-C06-PI-D564-AUTHOR-SOURCE",
+    "previous_head_sha256": "5e5559d99f4a7a9397d03d3ea499fa47a2106b5e42b0a33400784e20123123e8",
+    "closure_blob": "439bbafcb7ee92c0e138b6e9139dfdf756e7c9eb",
+    "draft_blob": "7862a3b48eecc880be8ccb55dee3e5ae3a62b099",
+    "immutable_manifest_blob": "fe37124cb554f6f94a33633cb79dc9cd95acf673",
+    "narrative_blob": "f79d0f14e7e8c0d8a1f034481348c9e00afdae0c",
+    "full_story_sha256": "c2404b1b469ea419fdfada65baf52f029ea74b6711286336fd8bfa5abf91c2a6",
+    "prose_sha256": "aa0cc77db327f592c7ce931559b975ff0a2fdda4a43c2ca0e46d4635c9a1abe2",
+    "prose_lines": 2162,
+    "role_adapter": "Response for native receipt compatibility only; closure authority separate",
+    "closure_event_count": 12,
+    "closure_knowledge_count": 95,
+    "reviewed_events_blob": "de7b78f712bf28921d2707fef9eb07fc3b4f812c",
+    "reviewed_knowledge_blob": "f7de62c72b44d74b3b2a6c8ffd3e08476d7f3524",
+    "choice_sha256": "a6be599b346c88ca5e8a25da132d4f56264b9f3ffe06596ed392f666dbfb22f5",
+    "chosen_option": 5,
+    "book_closed": false,
+    "editorial_header": " <title size=\"md\" textAlign=\"center\">PARTE II DE V · ESCOLHA 4 ESPECIAL</title>",
+    "ratification_kind": null
+  },
+  "release_blob": "1ea9d60a58ecf00a368f0e33631164fc7cbe0051",
+  "previous_checkpoint_blob": "b9277c8510bac064701600e9f850104c1184ed00",
+  "cycle_review_blob": "e041f823e50438cf98f3dca4732ffad16424e0e3",
+  "records": [
+    {
+      "id": "O8C-B102-001",
+      "book": "VI",
+      "day": 565,
+      "chapter_hint": 6,
+      "type": "metadata",
+      "entities": [
+        "worldroot"
+      ],
+      "summary": "D565 Parte II entrada4/fechamento5; continuidade D56422h41, ARGOS estacionado, árvore antiga morta, broto distinto; controles anteriores mantidos.",
+      "axes": [
+        1,
+        2,
+        11,
+        12,
+        15,
+        19,
+        28,
+        29,
+        30
+      ],
+      "authority": "METADATA_NOT_EVENT",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C06-PII-D565-AUTHOR-SOURCE",
+        "source_sha256_manifest": "aa0cc77db327f592c7ce931559b975ff0a2fdda4a43c2ca0e46d4635c9a1abe2",
+        "blob_sha1": "7862a3b48eecc880be8ccb55dee3e5ae3a62b099",
+        "source_blob_sha1s": [
+          "7862a3b48eecc880be8ccb55dee3e5ae3a62b099"
+        ],
+        "line_start": 1,
+        "line_end": 22,
+        "role": "Response",
+        "span_sha256_utf8": "cf294c1d62105790e9532007eda260c21f95935048820cf1c209ad49bca21347",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "439bbafcb7ee92c0e138b6e9139dfdf756e7c9eb",
+        "full_story_sha256": "c2404b1b469ea419fdfada65baf52f029ea74b6711286336fd8bfa5abf91c2a6",
+        "immutable_manifest_blob": "fe37124cb554f6f94a33633cb79dc9cd95acf673"
+      }
+    },
+    {
+      "id": "O8C-B102-002",
+      "book": "VI",
+      "day": 565,
+      "chapter_hint": 6,
+      "type": "dream",
+      "entities": [
+        "lucas",
+        "miren"
+      ],
+      "summary": "02h16 sonho: Naeryn, raiz partida, três notas, semente nova e árvore gigante; visão de luz azul sem identificação, não fato ocorrido, não ordem nem ressurreição. Lucas acorda chorando.",
+      "axes": [
+        1,
+        2,
+        7,
+        9,
+        10,
+        11,
+        12,
+        14,
+        16,
+        26,
+        27
+      ],
+      "authority": "DREAM_NOT_EXTERNAL_EVENT",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C06-PII-D565-AUTHOR-SOURCE",
+        "source_sha256_manifest": "aa0cc77db327f592c7ce931559b975ff0a2fdda4a43c2ca0e46d4635c9a1abe2",
+        "blob_sha1": "7862a3b48eecc880be8ccb55dee3e5ae3a62b099",
+        "source_blob_sha1s": [
+          "7862a3b48eecc880be8ccb55dee3e5ae3a62b099"
+        ],
+        "line_start": 23,
+        "line_end": 178,
+        "role": "Response",
+        "span_sha256_utf8": "ef7af67a9db64aafd21a9b63877f266b7edd94b19f18714378af7c6a1841bcfd",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "439bbafcb7ee92c0e138b6e9139dfdf756e7c9eb",
+        "full_story_sha256": "c2404b1b469ea419fdfada65baf52f029ea74b6711286336fd8bfa5abf91c2a6",
+        "immutable_manifest_blob": "fe37124cb554f6f94a33633cb79dc9cd95acf673"
+      }
+    },
+    {
+      "id": "O8C-B102-003",
+      "book": "VI",
+      "day": 565,
+      "chapter_hint": 6,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren",
+        "sistema",
+        "nox"
+      ],
+      "summary": "02h39 relato consciente à esposa; SYSTEM sem fundamento de autoria nem gravação integral, NÓX sem intrusão física detectada, não prova fonte; conversar primeiro e consentimento; romance.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        25,
+        26,
+        27,
+        28
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C06-PII-D565-AUTHOR-SOURCE",
+        "source_sha256_manifest": "aa0cc77db327f592c7ce931559b975ff0a2fdda4a43c2ca0e46d4635c9a1abe2",
+        "blob_sha1": "7862a3b48eecc880be8ccb55dee3e5ae3a62b099",
+        "source_blob_sha1s": [
+          "7862a3b48eecc880be8ccb55dee3e5ae3a62b099"
+        ],
+        "line_start": 179,
+        "line_end": 322,
+        "role": "Response",
+        "span_sha256_utf8": "8107fb15ba8c40fcd5cf8273fa2d529c1fd622a63227621bed2b7844c06a6e37",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "439bbafcb7ee92c0e138b6e9139dfdf756e7c9eb",
+        "full_story_sha256": "c2404b1b469ea419fdfada65baf52f029ea74b6711286336fd8bfa5abf91c2a6",
+        "immutable_manifest_blob": "fe37124cb554f6f94a33633cb79dc9cd95acf673"
+      }
+    },
+    {
+      "id": "O8C-B102-004",
+      "book": "VI",
+      "day": 565,
+      "chapter_hint": 6,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren",
+        "elyrien",
+        "serael",
+        "ilven",
+        "elen"
+      ],
+      "summary": "06h58 Elyrien escuta sonho; árvore ancestral perdida de fato, chegou tarde à agressão; tradição plantios memória sem substituição; convoca cuidadores e respeita escolha local, sem prometer consentimento prévio.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        16,
+        17,
+        18,
+        25,
+        26,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C06-PII-D565-AUTHOR-SOURCE",
+        "source_sha256_manifest": "aa0cc77db327f592c7ce931559b975ff0a2fdda4a43c2ca0e46d4635c9a1abe2",
+        "blob_sha1": "7862a3b48eecc880be8ccb55dee3e5ae3a62b099",
+        "source_blob_sha1s": [
+          "7862a3b48eecc880be8ccb55dee3e5ae3a62b099"
+        ],
+        "line_start": 323,
+        "line_end": 469,
+        "role": "Response",
+        "span_sha256_utf8": "ef464766abc36cf2ea3c31a3453b02d4b3d74ee7e692e38d1ee38425c8a9d904",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "439bbafcb7ee92c0e138b6e9139dfdf756e7c9eb",
+        "full_story_sha256": "c2404b1b469ea419fdfada65baf52f029ea74b6711286336fd8bfa5abf91c2a6",
+        "immutable_manifest_blob": "fe37124cb554f6f94a33633cb79dc9cd95acf673"
+      }
+    },
+    {
+      "id": "O8C-B102-005",
+      "book": "VI",
+      "day": 565,
+      "chapter_hint": 6,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren",
+        "elyrien",
+        "elen",
+        "rumo",
+        "serael",
+        "ilven",
+        "neris",
+        "talis"
+      ],
+      "summary": "08h31 moradores presentes/guardiões e Elyrien escolhem Terraço Duas Nascentes indicado por Elen, solo/água verificados; raiz morta e broto pequeno preservados; guardiã velha luto; Miren Talis desaparecida, não morte confirmada; autorização expressa, sem voto fictício.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        13,
+        16,
+        18,
+        25,
+        26,
+        27,
+        28
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C06-PII-D565-AUTHOR-SOURCE",
+        "source_sha256_manifest": "aa0cc77db327f592c7ce931559b975ff0a2fdda4a43c2ca0e46d4635c9a1abe2",
+        "blob_sha1": "7862a3b48eecc880be8ccb55dee3e5ae3a62b099",
+        "source_blob_sha1s": [
+          "7862a3b48eecc880be8ccb55dee3e5ae3a62b099"
+        ],
+        "line_start": 470,
+        "line_end": 661,
+        "role": "Response",
+        "span_sha256_utf8": "97753e15997feeb21f129d3e1e73eb14bac90307103f8ec0244475607f31d6c7",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "439bbafcb7ee92c0e138b6e9139dfdf756e7c9eb",
+        "full_story_sha256": "c2404b1b469ea419fdfada65baf52f029ea74b6711286336fd8bfa5abf91c2a6",
+        "immutable_manifest_blob": "fe37124cb554f6f94a33633cb79dc9cd95acf673"
+      }
+    },
+    {
+      "id": "O8C-B102-006",
+      "book": "VI",
+      "day": 565,
+      "chapter_hint": 6,
+      "type": "creation",
+      "entities": [
+        "lucas",
+        "miren",
+        "elyrien",
+        "serael",
+        "elen",
+        "ilven",
+        "neris",
+        "sistema"
+      ],
+      "summary": "10h07 Lucas reconhece marca da raiz; Elyrien avó a associava nascente oriental; abraço e GÊNESE cria semente com alma vegetal própria, sem memória implantada, raiz antiga morta, sem gasto de reserva/armadura/vida alheia; entrega à Elyrien, três notas sem fonte provada.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        16,
+        18,
+        25,
+        26,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C06-PII-D565-AUTHOR-SOURCE",
+        "source_sha256_manifest": "aa0cc77db327f592c7ce931559b975ff0a2fdda4a43c2ca0e46d4635c9a1abe2",
+        "blob_sha1": "7862a3b48eecc880be8ccb55dee3e5ae3a62b099",
+        "source_blob_sha1s": [
+          "7862a3b48eecc880be8ccb55dee3e5ae3a62b099"
+        ],
+        "line_start": 662,
+        "line_end": 897,
+        "role": "Response",
+        "span_sha256_utf8": "776070960458bc46dca773f2975922eac808ccdd929bd270e8e5c2d5644c0a37",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "439bbafcb7ee92c0e138b6e9139dfdf756e7c9eb",
+        "full_story_sha256": "c2404b1b469ea419fdfada65baf52f029ea74b6711286336fd8bfa5abf91c2a6",
+        "immutable_manifest_blob": "fe37124cb554f6f94a33633cb79dc9cd95acf673"
+      }
+    },
+    {
+      "id": "O8C-B102-007",
+      "book": "VI",
+      "day": 565,
+      "chapter_hint": 6,
+      "type": "scene",
+      "entities": [
+        "elyrien",
+        "lucas",
+        "miren",
+        "serael",
+        "ilven",
+        "neris",
+        "elen",
+        "rumo",
+        "naira",
+        "nox"
+      ],
+      "summary": "11h16 plantio por mãos élficas; cordão, terra de memória, água de Elen; primeira raiz e folha reais, Naira chega após verificar ARGOS com tripulação; RUMO livre.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        13,
+        16,
+        18,
+        25,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C06-PII-D565-AUTHOR-SOURCE",
+        "source_sha256_manifest": "aa0cc77db327f592c7ce931559b975ff0a2fdda4a43c2ca0e46d4635c9a1abe2",
+        "blob_sha1": "7862a3b48eecc880be8ccb55dee3e5ae3a62b099",
+        "source_blob_sha1s": [
+          "7862a3b48eecc880be8ccb55dee3e5ae3a62b099"
+        ],
+        "line_start": 898,
+        "line_end": 1046,
+        "role": "Response",
+        "span_sha256_utf8": "91295d25a2fd105f705499164570f4f51aa3f128df74d3d4f644b864ee25c6d0",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "439bbafcb7ee92c0e138b6e9139dfdf756e7c9eb",
+        "full_story_sha256": "c2404b1b469ea419fdfada65baf52f029ea74b6711286336fd8bfa5abf91c2a6",
+        "immutable_manifest_blob": "fe37124cb554f6f94a33633cb79dc9cd95acf673"
+      }
+    },
+    {
+      "id": "O8C-B102-008",
+      "book": "VI",
+      "day": 565,
+      "chapter_hint": 6,
+      "type": "creation",
+      "entities": [
+        "niraven",
+        "lucas",
+        "miren",
+        "elyrien",
+        "elen",
+        "rumo",
+        "naira",
+        "ilven",
+        "neris"
+      ],
+      "summary": "11h38 crescimento colossal acima crista oriental/nuvens, oito/vinte/cinquenta metros etapas observadas não altura final; copa jardins e águas naturais, raízes sem esmagar vida, luz e circulação mantidas, GÊNESE sustenta possibilidade, forma própria da árvore, filha nova não antiga mãe.",
+      "axes": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        16,
+        17,
+        18,
+        22,
+        26,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C06-PII-D565-AUTHOR-SOURCE",
+        "source_sha256_manifest": "aa0cc77db327f592c7ce931559b975ff0a2fdda4a43c2ca0e46d4635c9a1abe2",
+        "blob_sha1": "7862a3b48eecc880be8ccb55dee3e5ae3a62b099",
+        "source_blob_sha1s": [
+          "7862a3b48eecc880be8ccb55dee3e5ae3a62b099"
+        ],
+        "line_start": 1047,
+        "line_end": 1244,
+        "role": "Response",
+        "span_sha256_utf8": "697b358b33499920803362ef98b0cc019537d256adf123deab134932211d47aa",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "439bbafcb7ee92c0e138b6e9139dfdf756e7c9eb",
+        "full_story_sha256": "c2404b1b469ea419fdfada65baf52f029ea74b6711286336fd8bfa5abf91c2a6",
+        "immutable_manifest_blob": "fe37124cb554f6f94a33633cb79dc9cd95acf673"
+      }
+    },
+    {
+      "id": "O8C-B102-009",
+      "book": "VI",
+      "day": 565,
+      "chapter_hint": 6,
+      "type": "scene",
+      "entities": [
+        "niraven",
+        "elyrien",
+        "lucas",
+        "miren",
+        "serael",
+        "ilven",
+        "naira",
+        "sistema",
+        "nox"
+      ],
+      "summary": "12h21 proteção viva nas regiões conectadas: partículas escuras em cristais inertes recolhíveis, nascentes claras, encostas firmes, fungos nocivos sem substrato, benéficos preservados, circulação de águas/pessoas/aves; não cura universal nem extensão medida, plantas mantêm cicatrizes; Níraven não serva nem sistema de Três Arcos.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        14,
+        16,
+        18,
+        22,
+        23,
+        24,
+        26,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C06-PII-D565-AUTHOR-SOURCE",
+        "source_sha256_manifest": "aa0cc77db327f592c7ce931559b975ff0a2fdda4a43c2ca0e46d4635c9a1abe2",
+        "blob_sha1": "7862a3b48eecc880be8ccb55dee3e5ae3a62b099",
+        "source_blob_sha1s": [
+          "7862a3b48eecc880be8ccb55dee3e5ae3a62b099"
+        ],
+        "line_start": 1245,
+        "line_end": 1424,
+        "role": "Response",
+        "span_sha256_utf8": "b65e2ff1361c938ece2b2128944a40d971035a84e55259b35b12494ccaef2553",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "439bbafcb7ee92c0e138b6e9139dfdf756e7c9eb",
+        "full_story_sha256": "c2404b1b469ea419fdfada65baf52f029ea74b6711286336fd8bfa5abf91c2a6",
+        "immutable_manifest_blob": "fe37124cb554f6f94a33633cb79dc9cd95acf673"
+      }
+    },
+    {
+      "id": "O8C-B102-010",
+      "book": "VI",
+      "day": 565,
+      "chapter_hint": 6,
+      "type": "scene",
+      "entities": [
+        "niraven",
+        "lucas",
+        "miren",
+        "naira",
+        "lysa",
+        "elyrien",
+        "elen",
+        "rumo",
+        "serael"
+      ],
+      "summary": "15h06 Naira tenta medir, altura final não dada; Lysa e duas moradoras chegam fisicamente; broto Elen distinto e protegido, RUMO acompanha; guardiã velha continua luto e canções, sem apagar sofrimento; notícias via testemunhos e caminhos reais.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        13,
+        16,
+        18,
+        22,
+        25,
+        26,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C06-PII-D565-AUTHOR-SOURCE",
+        "source_sha256_manifest": "aa0cc77db327f592c7ce931559b975ff0a2fdda4a43c2ca0e46d4635c9a1abe2",
+        "blob_sha1": "7862a3b48eecc880be8ccb55dee3e5ae3a62b099",
+        "source_blob_sha1s": [
+          "7862a3b48eecc880be8ccb55dee3e5ae3a62b099"
+        ],
+        "line_start": 1425,
+        "line_end": 1597,
+        "role": "Response",
+        "span_sha256_utf8": "a7cf914635ce8f0efa4e5376066d38586c424f88889a125055658b070e29365d",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "439bbafcb7ee92c0e138b6e9139dfdf756e7c9eb",
+        "full_story_sha256": "c2404b1b469ea419fdfada65baf52f029ea74b6711286336fd8bfa5abf91c2a6",
+        "immutable_manifest_blob": "fe37124cb554f6f94a33633cb79dc9cd95acf673"
+      }
+    },
+    {
+      "id": "O8C-B102-011",
+      "book": "VI",
+      "day": 565,
+      "chapter_hint": 6,
+      "type": "reader_scene",
+      "entities": [
+        "serakh",
+        "lethira",
+        "velkar",
+        "ithran"
+      ],
+      "summary": "18h08 Casa Pedras Negras, rotas e diplomacia, relatos de segunda mão e rumor dragões de ferro não fatos; Serakh propõe custos e vantagens, não ataque baseado em nerf; Dominato desconhece Níraven, sem transmissão instantânea.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        11,
+        15,
+        16,
+        19,
+        20,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C06-PII-D565-AUTHOR-SOURCE",
+        "source_sha256_manifest": "aa0cc77db327f592c7ce931559b975ff0a2fdda4a43c2ca0e46d4635c9a1abe2",
+        "blob_sha1": "7862a3b48eecc880be8ccb55dee3e5ae3a62b099",
+        "source_blob_sha1s": [
+          "7862a3b48eecc880be8ccb55dee3e5ae3a62b099"
+        ],
+        "line_start": 1598,
+        "line_end": 1705,
+        "role": "Response",
+        "span_sha256_utf8": "2e735fbb87ae4511f3902393264eb68190d732eb558c64edc98970d5852e7d03",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "439bbafcb7ee92c0e138b6e9139dfdf756e7c9eb",
+        "full_story_sha256": "c2404b1b469ea419fdfada65baf52f029ea74b6711286336fd8bfa5abf91c2a6",
+        "immutable_manifest_blob": "fe37124cb554f6f94a33633cb79dc9cd95acf673"
+      }
+    },
+    {
+      "id": "O8C-B102-012",
+      "book": "VI",
+      "day": 565,
+      "chapter_hint": 6,
+      "type": "scene",
+      "entities": [
+        "niraven",
+        "elyrien",
+        "lucas",
+        "miren",
+        "elen",
+        "neris",
+        "serael",
+        "rumo",
+        "naira"
+      ],
+      "summary": "20h06 comunidade nomeia Níraven, antigo sentido abrigo após última tempestade; reação luminosa e três notas não fala humana; canção familiar distinta Cântico Equinócio; sonho pode ser raiz/memória/outra causa, não comprovado; amizade Elyrien e Lucas.",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        16,
+        18,
+        25,
+        26,
+        27,
+        28
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C06-PII-D565-AUTHOR-SOURCE",
+        "source_sha256_manifest": "aa0cc77db327f592c7ce931559b975ff0a2fdda4a43c2ca0e46d4635c9a1abe2",
+        "blob_sha1": "7862a3b48eecc880be8ccb55dee3e5ae3a62b099",
+        "source_blob_sha1s": [
+          "7862a3b48eecc880be8ccb55dee3e5ae3a62b099"
+        ],
+        "line_start": 1706,
+        "line_end": 1939,
+        "role": "Response",
+        "span_sha256_utf8": "59cd39e10b60d58c6861d365c89ccd7c4882ac0f97b4de24de3ba8c7fcf6053d",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "439bbafcb7ee92c0e138b6e9139dfdf756e7c9eb",
+        "full_story_sha256": "c2404b1b469ea419fdfada65baf52f029ea74b6711286336fd8bfa5abf91c2a6",
+        "immutable_manifest_blob": "fe37124cb554f6f94a33633cb79dc9cd95acf673"
+      }
+    },
+    {
+      "id": "O8C-B102-013",
+      "book": "VI",
+      "day": 565,
+      "chapter_hint": 6,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren",
+        "niraven",
+        "nox",
+        "sistema"
+      ],
+      "summary": "22h46 Terraço Lanternas; romance, proteção ativa observável, SISTEMA hipóteses não verificadas; sonho possibilidade e escolha, não instrução, origem CREATION desconhecida.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        16,
+        25,
+        26,
+        27,
+        28
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C06-PII-D565-AUTHOR-SOURCE",
+        "source_sha256_manifest": "aa0cc77db327f592c7ce931559b975ff0a2fdda4a43c2ca0e46d4635c9a1abe2",
+        "blob_sha1": "7862a3b48eecc880be8ccb55dee3e5ae3a62b099",
+        "source_blob_sha1s": [
+          "7862a3b48eecc880be8ccb55dee3e5ae3a62b099"
+        ],
+        "line_start": 1940,
+        "line_end": 2095,
+        "role": "Response",
+        "span_sha256_utf8": "7e5e19d899269b4bc55c0d3ab43b1fc9fcc60ef716b49c1f4e4e6e3af80f5694",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "439bbafcb7ee92c0e138b6e9139dfdf756e7c9eb",
+        "full_story_sha256": "c2404b1b469ea419fdfada65baf52f029ea74b6711286336fd8bfa5abf91c2a6",
+        "immutable_manifest_blob": "fe37124cb554f6f94a33633cb79dc9cd95acf673"
+      }
+    },
+    {
+      "id": "O8C-B102-014",
+      "book": "VI",
+      "day": 565,
+      "chapter_hint": 6,
+      "type": "reader_scene",
+      "entities": [
+        "niraven",
+        "worldroot"
+      ],
+      "summary": "POV sem testemunha dos hóspedes: cordão sobre raiz morta, gota e reflexo azul momentâneo, não janela SISTEMA nem prova origem sonho/Autoridade; não conhecimento de Lucas.",
+      "axes": [
+        1,
+        2,
+        3,
+        10,
+        13,
+        16,
+        26,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C06-PII-D565-AUTHOR-SOURCE",
+        "source_sha256_manifest": "aa0cc77db327f592c7ce931559b975ff0a2fdda4a43c2ca0e46d4635c9a1abe2",
+        "blob_sha1": "7862a3b48eecc880be8ccb55dee3e5ae3a62b099",
+        "source_blob_sha1s": [
+          "7862a3b48eecc880be8ccb55dee3e5ae3a62b099"
+        ],
+        "line_start": 2096,
+        "line_end": 2115,
+        "role": "Response",
+        "span_sha256_utf8": "baf64a480b6b782e7f802b30a138f45f92680fadf515aae8a4ac242ea687aa0a",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "439bbafcb7ee92c0e138b6e9139dfdf756e7c9eb",
+        "full_story_sha256": "c2404b1b469ea419fdfada65baf52f029ea74b6711286336fd8bfa5abf91c2a6",
+        "immutable_manifest_blob": "fe37124cb554f6f94a33633cb79dc9cd95acf673"
+      }
+    },
+    {
+      "id": "O8C-B102-015",
+      "book": "VI",
+      "day": 565,
+      "chapter_hint": 6,
+      "type": "metadata",
+      "entities": [
+        "worldroot",
+        "lucas",
+        "miren",
+        "niraven",
+        "serakh",
+        "althea",
+        "thaeron",
+        "iriel",
+        "kael",
+        "varo",
+        "maelis",
+        "astra",
+        "brannik",
+        "sael",
+        "bressa",
+        "reva",
+        "ysol",
+        "talis"
+      ],
+      "summary": "Encerramento: casal quer visitar copa amanhã (intenção não evento); frentes remotas mantêm autonomia; conferência futura, Coração selado, Último Horizonte pendente, Talis ausente e origem GÊNESE não revelada; capítulo e livro abertos.",
+      "axes": [
+        1,
+        2,
+        3,
+        9,
+        10,
+        12,
+        16,
+        19,
+        25,
+        26,
+        27,
+        30
+      ],
+      "authority": "METADATA_NOT_EVENT",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C06-PII-D565-AUTHOR-SOURCE",
+        "source_sha256_manifest": "aa0cc77db327f592c7ce931559b975ff0a2fdda4a43c2ca0e46d4635c9a1abe2",
+        "blob_sha1": "7862a3b48eecc880be8ccb55dee3e5ae3a62b099",
+        "source_blob_sha1s": [
+          "7862a3b48eecc880be8ccb55dee3e5ae3a62b099"
+        ],
+        "line_start": 2116,
+        "line_end": 2162,
+        "role": "Response",
+        "span_sha256_utf8": "9c4080d54c0487fe8af993efde06d0b3b1568af395256ff30dc2f88469a063a3",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "439bbafcb7ee92c0e138b6e9139dfdf756e7c9eb",
+        "full_story_sha256": "c2404b1b469ea419fdfada65baf52f029ea74b6711286336fd8bfa5abf91c2a6",
+        "immutable_manifest_blob": "fe37124cb554f6f94a33633cb79dc9cd95acf673"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "start": 1,
+      "end": 22,
+      "role": "Response",
+      "span_sha256_utf8": "cf294c1d62105790e9532007eda260c21f95935048820cf1c209ad49bca21347",
+      "record_ids": [
+        "O8C-B102-001"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 23,
+      "end": 178,
+      "role": "Response",
+      "span_sha256_utf8": "ef7af67a9db64aafd21a9b63877f266b7edd94b19f18714378af7c6a1841bcfd",
+      "record_ids": [
+        "O8C-B102-002"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 179,
+      "end": 322,
+      "role": "Response",
+      "span_sha256_utf8": "8107fb15ba8c40fcd5cf8273fa2d529c1fd622a63227621bed2b7844c06a6e37",
+      "record_ids": [
+        "O8C-B102-003"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 323,
+      "end": 469,
+      "role": "Response",
+      "span_sha256_utf8": "ef464766abc36cf2ea3c31a3453b02d4b3d74ee7e692e38d1ee38425c8a9d904",
+      "record_ids": [
+        "O8C-B102-004"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 470,
+      "end": 661,
+      "role": "Response",
+      "span_sha256_utf8": "97753e15997feeb21f129d3e1e73eb14bac90307103f8ec0244475607f31d6c7",
+      "record_ids": [
+        "O8C-B102-005"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 662,
+      "end": 897,
+      "role": "Response",
+      "span_sha256_utf8": "776070960458bc46dca773f2975922eac808ccdd929bd270e8e5c2d5644c0a37",
+      "record_ids": [
+        "O8C-B102-006"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 898,
+      "end": 1046,
+      "role": "Response",
+      "span_sha256_utf8": "91295d25a2fd105f705499164570f4f51aa3f128df74d3d4f644b864ee25c6d0",
+      "record_ids": [
+        "O8C-B102-007"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 1047,
+      "end": 1244,
+      "role": "Response",
+      "span_sha256_utf8": "697b358b33499920803362ef98b0cc019537d256adf123deab134932211d47aa",
+      "record_ids": [
+        "O8C-B102-008"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 1245,
+      "end": 1424,
+      "role": "Response",
+      "span_sha256_utf8": "b65e2ff1361c938ece2b2128944a40d971035a84e55259b35b12494ccaef2553",
+      "record_ids": [
+        "O8C-B102-009"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 1425,
+      "end": 1597,
+      "role": "Response",
+      "span_sha256_utf8": "a7cf914635ce8f0efa4e5376066d38586c424f88889a125055658b070e29365d",
+      "record_ids": [
+        "O8C-B102-010"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 1598,
+      "end": 1705,
+      "role": "Response",
+      "span_sha256_utf8": "2e735fbb87ae4511f3902393264eb68190d732eb558c64edc98970d5852e7d03",
+      "record_ids": [
+        "O8C-B102-011"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 1706,
+      "end": 1939,
+      "role": "Response",
+      "span_sha256_utf8": "59cd39e10b60d58c6861d365c89ccd7c4882ac0f97b4de24de3ba8c7fcf6053d",
+      "record_ids": [
+        "O8C-B102-012"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 1940,
+      "end": 2095,
+      "role": "Response",
+      "span_sha256_utf8": "7e5e19d899269b4bc55c0d3ab43b1fc9fcc60ef716b49c1f4e4e6e3af80f5694",
+      "record_ids": [
+        "O8C-B102-013"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 2096,
+      "end": 2115,
+      "role": "Response",
+      "span_sha256_utf8": "baf64a480b6b782e7f802b30a138f45f92680fadf515aae8a4ac242ea687aa0a",
+      "record_ids": [
+        "O8C-B102-014"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 2116,
+      "end": 2162,
+      "role": "Response",
+      "span_sha256_utf8": "9c4080d54c0487fe8af993efde06d0b3b1568af395256ff30dc2f88469a063a3",
+      "record_ids": [
+        "O8C-B102-015"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    }
+  ],
+  "axis_coverage": {
+    "assessed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "represented": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ]
+  },
+  "next_line": 2163,
+  "macro_complete": true,
+  "status": "STAGING_CANDIDATE_PENDING_NATIVE",
+  "production_gate": "HOLD",
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "semantic_certification": false,
+  "independent_review": false,
+  "promotion": false,
+  "custody_review": {
+    "status": "REMOTE_LITERAL_CUSTODY_AND_EDITORIAL_GROUPING_PASS_NATIVE_PENDING",
+    "full_sha256_recomputed": true,
+    "prose_sha256_recomputed": true,
+    "manifest_match": true,
+    "physical_sidecars_match": true,
+    "all_event_anchors_match": true,
+    "source_prose_read_in_full": true,
+    "entry_choice": 4,
+    "closure_choice": 5,
+    "first_clock": "02h16",
+    "last_scene_clock": "22h46",
+    "previous_day": 564,
+    "previous_clock": "22h41",
+    "findings": [
+      {
+        "range": [
+          23,
+          178
+        ],
+        "correction": "Dream only, not external event.",
+        "promotion": false
+      },
+      {
+        "range": [
+          806,
+          832
+        ],
+        "correction": "New soul, old root remains dead; no copied memories.",
+        "promotion": false
+      },
+      {
+        "range": [
+          1387,
+          1390
+        ],
+        "correction": "Extent of protection not verified.",
+        "promotion": false
+      },
+      {
+        "range": [
+          2096,
+          2115
+        ],
+        "correction": "Unwitnessed reflection not SYSTEM or causation.",
+        "promotion": false
+      }
+    ],
+    "native_review_deltas": "PENDING",
+    "journal": "PENDING",
+    "native_cumulative_regression": "PENDING"
+  }
+}
