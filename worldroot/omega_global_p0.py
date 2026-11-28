@@ -78,7 +78,7 @@ def inspect(root,archive):
             require(r.get("macro_id",m["id"])==m["id"] and r.get("previous_macro_id",m["previous_macro"])==m["previous_macro"],"receipt chain")
             require(not any(r.get(k,False) for k in ("canon_changed","promotion","semantic_certification","independent_review","official_checkpoint_changed")),"false authority")
             bounds=r.get("range",r.get("reviewed_sample_range"))
-            require(bounds and bounds[0]==at and bounds[1]<=hi,"receipt interval")
+            require(bounds and bounds[0]==at and bounds[1]<=hi,f"receipt interval macro {i}: expected {at}..{hi}, got {bounds}")
             at=bounds[1]+1
             axes25={x["id"]:x["axes"] for x in r.get("axis_overlay_original_partial",[])}
             current={}
@@ -121,7 +121,7 @@ def inspect(root,archive):
                 cursor=bounds[0];seen=set()
                 for c in coverage:
                     a,z=c["start"],c["end"]
-                    require(a==cursor,"coverage gap")
+                    require(a==cursor,f"coverage gap macro {i}: expected {cursor}, got {a}")
                     check_span(None,c["role"],a,z,c["span_sha256_utf8"])
                     for rid in c["record_ids"]:
                         require(rid in current and rid not in seen,"coverage membership")
@@ -130,7 +130,7 @@ def inspect(root,archive):
                     if not c["record_ids"]:issues["empty_record_metadata_spans"]+=1
                     cursor=z+1;covlines+=z-a+1
                 require(cursor==bounds[1]+1 and seen==set(current),"coverage completion")
-        require(at==hi+1,"macro receipt coverage")
+        require(at==hi+1,f"macro receipt coverage {i}: {at} vs {hi+1}")
         group_rows.append(dict(macro=i,records=num,lines=m["lines"],explicit_coverage_lines=covlines,receipts=len(ps)))
         covered_lines+=covlines
     # The partial 0025 is an immutable predecessor, not an additional receipt.
