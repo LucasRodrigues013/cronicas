@@ -1,0 +1,696 @@
+{
+  "schema": "OMEGA_HYBRID_CYCLE_0063_0066_FRONTIER_PENDING_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "previous_cycle_blob": "eeccb73aed8b536605da5c7074a4b3628198c687",
+  "previous_checkpoint_blob": "8ca69c1d43b1095348c7b73f29ce3083cca9a6d9",
+  "prior_session_review_blob": "beee4b727fba61ea9b4da722af8b3d50d6433bf8",
+  "macros": [
+    {
+      "macro": 63,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0063-01.json",
+      "blob": "1ec960b946df542dab6d2bc05a143bfaef07263c",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0063-closure-pending.json",
+      "checkpoint_blob": "72eb09668da197b57a9fb1e088e68f8e0385b60a",
+      "records": 67,
+      "lines": 10243,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "macro": 64,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0064-01.json",
+      "blob": "f5e5aa15ba789de1a4384b29682557f335ffdd65",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0064-closure-pending.json",
+      "checkpoint_blob": "d66ab56fa7a0c371a8bffbaa07bf1fe02b52c5a2",
+      "records": 67,
+      "lines": 10107,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "macro": 65,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0065-01.json",
+      "blob": "b8e3eed2bae45e4d6c445f87117822a27f5270c5",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0065-closure-pending.json",
+      "checkpoint_blob": "f5023e7042030ea40475f6d5bad8fdda7e69a7ea",
+      "records": 71,
+      "lines": 10195,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "macro": 66,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0066-01.json",
+      "blob": "c8f93f7c11fccdeddefbf4511d08b613872323c2",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0066-closure-pending.json",
+      "checkpoint_blob": "88214cf52f305c27c09d5a3c82c7d86cc52a0bef",
+      "records": 62,
+      "lines": 9954,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    }
+  ],
+  "prior_findings": [
+    {
+      "id": "HZ1_DIVISION",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        60931,
+        60961
+      ],
+      "sha256": "fe4685f3df6f6a9af96a167cc8795f1b702f2e312a9c43514391588454131a61",
+      "promotion": false
+    },
+    {
+      "id": "D518_PROPULSION",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        63360,
+        63843
+      ],
+      "sha256": "09c8442672f69a5210402dd1df65cc8a2a693b603e4b3195519ffbe22837687c",
+      "promotion": false
+    },
+    {
+      "id": "BIRTHDAY_PRIVATE",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        64266,
+        64323
+      ],
+      "sha256": "bbb3f4b42c5e7996235ff6e290fd0759064787abe96dcb91b62673e1d79bac74",
+      "promotion": false
+    },
+    {
+      "id": "ACADEMY_CHOICE",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        64620,
+        64853
+      ],
+      "sha256": "b93880d0c1b6f625f5f5f569b2377ee947db9ffe7cb4ec37350ec9b5b71a2aff",
+      "promotion": false
+    },
+    {
+      "id": "TESSA_DISTINCT",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        65220,
+        65437
+      ],
+      "sha256": "8b6d7fda40d757df054e6c1e83c0512f52453d67b47e4fecd04a4d008a61e244",
+      "promotion": false
+    },
+    {
+      "id": "D519_CONTROL",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        65714,
+        66839
+      ],
+      "sha256": "c570138e8c60b9da07941141f082e5d64b46dff0a86f37bae921f4c6a346d449",
+      "promotion": false
+    },
+    {
+      "id": "D520_REJECTED",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        69969,
+        70018
+      ],
+      "sha256": "c4250368d92fe2c47141f7baf696c73be8e3fd69fd807c9771ccddd0043c8c46",
+      "promotion": false
+    },
+    {
+      "id": "D520_REFORM",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        71657,
+        72104
+      ],
+      "sha256": "9f2a80709fcb02e5d8cb68e06aa11b2aab34de54226f93a91748e8973c9e4a75",
+      "promotion": false
+    },
+    {
+      "id": "D520_FIRST_FLIGHT",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        72945,
+        73264
+      ],
+      "sha256": "775849d0d38b20db3ebd2a3c394537cbc8c8bd79d4d7d380cdeba1e16a707234",
+      "promotion": false
+    },
+    {
+      "id": "D520_LIMITS",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        73869,
+        73895
+      ],
+      "sha256": "dd12ac01afd64701b7149cdbd8b2e1e942d9b2b565542552258be2f428d1808f",
+      "promotion": false
+    },
+    {
+      "id": "ARGOS_SPEC",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        74833,
+        74875
+      ],
+      "sha256": "1a6e318821cfebd9963d652e56971d0d688cb069d880db6a8b6ade0cabb209f8",
+      "promotion": false
+    },
+    {
+      "id": "CAMPO_SPEC",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        75586,
+        75625
+      ],
+      "sha256": "170ed54ad0f9db2765bed06ba95ca138d1fad341847b5cb8cac726d38f9b3e83",
+      "promotion": false
+    },
+    {
+      "id": "TRANSFER_002",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        76849,
+        76880
+      ],
+      "sha256": "ab4c755853ff7be73d4795e24fa77d0ecd7b50569aa2696b1072eb121ce19485",
+      "promotion": false
+    },
+    {
+      "id": "EIXO_SPEC",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        78695,
+        78720
+      ],
+      "sha256": "05d5532f9e32f993ff5410a4d094977c713ac54061ce16cc67602db11c2d4a60",
+      "promotion": false
+    },
+    {
+      "id": "EIXO_FLEET",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        79238,
+        79252
+      ],
+      "sha256": "4b34fbcee50e272830ef6e329555723ec6148925dfda786559f901f07096b7f1",
+      "promotion": false
+    },
+    {
+      "id": "CONVIVENCIA",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        79504,
+        79789
+      ],
+      "sha256": "f808c9d7602651a3754109c3a3fcc3a0f2bef1c04f7169be01719add59d6171a",
+      "promotion": false
+    },
+    {
+      "id": "PRIVACY_LINK",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        79790,
+        80041
+      ],
+      "sha256": "96c8597b6991677064fc01eecc049d1a380a15781ff8cb4188dcb69002c00685",
+      "promotion": false
+    },
+    {
+      "id": "D522_NO_FLIGHT",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        80898,
+        80919
+      ],
+      "sha256": "56befad08e15f158ed4b207f4669cf11477b1bbf8f4fbfb39d09c28ae67b7cd8",
+      "promotion": false
+    },
+    {
+      "id": "D523_OBSERVATORY",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        82884,
+        83125
+      ],
+      "sha256": "8d1d303d245fc75f85caf55824aad2ee923328fe8684bb8f135665efc19433c7",
+      "promotion": false
+    },
+    {
+      "id": "FLIGHT_003",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        86562,
+        86607
+      ],
+      "sha256": "dbca2e198554c9f1d08b7b3a63b42cc28472bf386a9cf435d2d0662cfa3a6523",
+      "promotion": false
+    },
+    {
+      "id": "MIREN_INTERLUDE",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        87877,
+        87893
+      ],
+      "sha256": "6dd1bf7f3c1562cc38127092a41f5c67ac65a9fdab08f34bcb86a5ef2c145d76",
+      "promotion": false
+    },
+    {
+      "id": "PRISMA",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        88921,
+        89254
+      ],
+      "sha256": "d744814e214c3d5ee6e3a9bdfc34bff8dca4913eb305ccabe34c714bc01f8f03",
+      "promotion": false
+    },
+    {
+      "id": "MUDAS",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        89793,
+        90004
+      ],
+      "sha256": "3089c73eb221c6aa8ce9085713a57a4ffb4a8af404248a5652c8605366c789ed",
+      "promotion": false
+    },
+    {
+      "id": "CIDADE_VIVA",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        90005,
+        90272
+      ],
+      "sha256": "b6fcbc7b2effd2dde658e6b8e2abd52f62ff36e5f4b9c93be3e5b6b4194b7494",
+      "promotion": false
+    },
+    {
+      "id": "HZ1_DUPLICATE",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        90273,
+        90484
+      ],
+      "sha256": "f31fcacdb2383e0ba4ff177ba6fd897b86e7ecec06af04bfac2483259714fdb1",
+      "promotion": false
+    },
+    {
+      "id": "D526_READER",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        91227,
+        91302
+      ],
+      "sha256": "ff02bf012454697532b5f550f4440f8abdf8233278534b1773d4285835147d73",
+      "promotion": false
+    },
+    {
+      "id": "LIRA_OPEN",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        91303,
+        91475
+      ],
+      "sha256": "413c89bcbc7bb5f44d32404ffa30498663d6ad2aa91a66805500262bee9dce4b",
+      "promotion": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "RESCUE",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        91476,
+        91868
+      ],
+      "sha256": "00595adb14965ddc1f4595b265c389cf8fb49c1b21858fd603cfafda32c5b8a0",
+      "promotion": false
+    },
+    {
+      "id": "DOCK",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        91869,
+        92080
+      ],
+      "sha256": "c504525444dee4c25b2e0ddfba8ee6532c02422b60a3cbef6c92e202e2a91c69",
+      "promotion": false
+    },
+    {
+      "id": "HEALTH",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        92081,
+        92250
+      ],
+      "sha256": "670c00b82d04132f06ed0f8cd5e5748c3d96a791bbf3bf502d899a0574677380",
+      "promotion": false
+    },
+    {
+      "id": "COAST",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        92251,
+        92388
+      ],
+      "sha256": "3de87c90aef93f9c598b1b262c713cdd10e79fca90b4191cc8304507c00d82d7",
+      "promotion": false
+    },
+    {
+      "id": "THALOR",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        92389,
+        92934
+      ],
+      "sha256": "7f986b2ab0cf250323d88fe697c9ae9192ace70effefc32408d9f19190efff5a",
+      "promotion": false
+    },
+    {
+      "id": "WIND",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        92935,
+        93490
+      ],
+      "sha256": "fac722db83aa31fcb3c762b4440545d355980969e5a955abc6b48a612d108e6f",
+      "promotion": false
+    },
+    {
+      "id": "RUMOR",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        93491,
+        93610
+      ],
+      "sha256": "081641083b184bf6ac9cd781c3c76d2e1773cfd771d0165ee89159778f6ba8f0",
+      "promotion": false
+    },
+    {
+      "id": "NO_LEAKAGE",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        93611,
+        94128
+      ],
+      "sha256": "5d5ab307bb5cde32aabd22f719dc87b4aa7faf129c280f09b1d929f22f2b748a",
+      "promotion": false
+    },
+    {
+      "id": "SCOOTER",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        94783,
+        95084
+      ],
+      "sha256": "ab0d7ba64be3001c9e70c514c778b007e15d46f516e9c2ce3cf84ddc64d8598e",
+      "promotion": false
+    },
+    {
+      "id": "P0_P3",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        96783,
+        96987
+      ],
+      "sha256": "01f11a5b2f59fb68c9a488b1f52d174d859e17bf86a30dcffe9b7358b47d06c4",
+      "promotion": false
+    },
+    {
+      "id": "DESIGN",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        98248,
+        98252
+      ],
+      "sha256": "cb5ea9c2857943ca249fc52e8dfbb82b08833853b134ecff9415a5d81c7e7b90",
+      "promotion": false
+    },
+    {
+      "id": "KAIRON",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        98510,
+        98855
+      ],
+      "sha256": "486764b69fc658769fe9e8aef3a72e195f2fa8e9bd1a9c33826178798c1738e6",
+      "promotion": false
+    },
+    {
+      "id": "BENCH",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        98856,
+        99181
+      ],
+      "sha256": "01885404f38f8981cd8a991bb6b1963c6dc71fce0751bd2562ee0c3391334bc6",
+      "promotion": false
+    },
+    {
+      "id": "MASS",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        99182,
+        99435
+      ],
+      "sha256": "8805af83944fb9d9bf02beb79c22d2da273b6cdd6c30982142c7b5b226ab1554",
+      "promotion": false
+    },
+    {
+      "id": "MOBILITY",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        99436,
+        99613
+      ],
+      "sha256": "1c8b86873c0aeaf335847b1403c85ed01bdba58d9ae2480567ca3b34090d3699",
+      "promotion": false
+    },
+    {
+      "id": "PRISMA",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        99614,
+        99963
+      ],
+      "sha256": "9005701af5c64dcb56b4659de91934afbf30cccb0e290bc114e07176b1c0b190",
+      "promotion": false
+    },
+    {
+      "id": "PRIVATE_GIFT",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        99964,
+        100187
+      ],
+      "sha256": "5467dc541f877a3ec8170ecdddf98bc92d3ad8feea60093ce4a04a3b332feae5",
+      "promotion": false
+    },
+    {
+      "id": "SUPPORT",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        100684,
+        100889
+      ],
+      "sha256": "4583942e08ad35ff031d247d2bdb99e8f0b5ea361791981d91dc3fba3a200252",
+      "promotion": false
+    },
+    {
+      "id": "END",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        101344,
+        101429
+      ],
+      "sha256": "6326b5e6ed6e86cbc685977efc76c9ac06423400a22c61bb7e2545616409cada",
+      "promotion": false
+    }
+  ],
+  "overlays": [
+    {
+      "id": "D520_REJECTED_VERSION",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        68167,
+        69968
+      ],
+      "status": "REJECTED_BY_AUTHOR_NOT_EVENT",
+      "replacement_start": 70019,
+      "promotion": false
+    },
+    {
+      "id": "MIREN_INTERLUDE",
+      "status": "BETWEEN_CHAPTER_14_IV_AND_V",
+      "promotion": false
+    },
+    {
+      "id": "D526_READER_ONLY",
+      "status": "NO_CHARACTER_INJECTION",
+      "promotion": false
+    },
+    {
+      "id": "D526_EXTERNAL",
+      "status": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false
+    },
+    {
+      "id": "SOURCE06_CLOSURE",
+      "status": "D528_23h06_NEXT_D529_CLOSED_PROSE",
+      "promotion": false
+    },
+    {
+      "id": "D528_MASS",
+      "status": "39.86T_OBSERVED_NOT_58T_HOMOLOGATED",
+      "promotion": false
+    }
+  ],
+  "controls": [
+    "Preservar todos os overlays, decisões autorais, Hotfix L1/L2, identidades e conhecimento limitado do ciclo 0058–0062 e anteriores; não promover ou alterar fila/main.",
+    "D513 AERÚN física, sete dias D507–513, abertura D514 e ocupação progressiva; oito níveis, 72ha, 16 setores/64 programas, anel 480/390, Atlas 36m, auditório 2400, 48 suítes. Conselho nove, Miren 6:3 e Astra 7:2 aceitas; seis chefias e Executivo de Operações sem titular; gabinete do cargo, Lucas sem cargo/voto especial. Maravilha 001 sem poder/prêmio/soberania.",
+    "D518 propulsão cooperativa e D519 controle em cinco camadas ensaiados cativos, D520 primeira versão rejeitada (68167–69968), correção a partir de D519 22h28; primeiro voo válido não tripulado, D521 traslado 002, D522 sem voo, D524 003 tripulado; máximos e defesas não homologados.",
+    "Academia escolha pessoal sem GÊNESE, nenhum nerf; Tessa Maren distinta de Tessa modular. NÓX mesma consciência, 300 originais vivos, Rumo singular, Malha 3600 não conscientes; 12 bicicletas D499 preservadas, D522 48 adicionais.",
+    "HZ-1 sítio protegido, variantes atribuídas e consentidas, transcrição derivada não testemunho independente, sem solução de Talis; nenhum Aethron/Arconte antecipado. Observatórios físico D171 e dimensional distintos, Casa Jardim Branco e carruagem preservadas.",
+    "Presentes e memórias privados; cartas físicas D515 em trânsito, sem aniversários antecipados. Miren protagonista D525, Prisma experimental, Cidade Viva proposta, seis chefias vagas. D526 interlúdio leitor separado; não usar resumo editorial para antecipar eventos após 91475.",
+    "GÊNESE, CREATION 300x, dimensional 100x, Segundo Limiar, Autoridade da Continuidade, Leitura Matricial, Matriz Fundação, Grande Horizonte, Um Lugar para Pertencer, meta 10 mil, Horizonte Total sem onisciência preservados; nenhuma segunda Maravilha por inferência.",
+    "Preserve D526 local agency and restricted perspectives; no instant correspondence. D527 only scooter manifested, P0–P3 priorities not approvals. D528 39.86t measured, support bench only, first academy bench not released, mobility trial preparation only, Cidade Viva pending; birthday and secret gift not anticipated."
+  ],
+  "totals": {
+    "lines": 40499,
+    "records": 267,
+    "session_lines": 9954,
+    "session_records": 62,
+    "staging_records": 4136,
+    "book_v_records": 1241,
+    "book_v_lines": 219373,
+    "source06_lines": 101429
+  },
+  "status": "PENDING_NATIVE",
+  "cycle_status": "FRONTIER_REVIEW_PENDING",
+  "production_gate": "HOLD",
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "semantic_certification": false,
+  "independent_review": false,
+  "promotion": false
+}

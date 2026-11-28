@@ -1119,7 +1119,50 @@ def verify_book_v_65(root,archive):
     require(audit["cycle_status"]=="OPEN_0063_0067_OR_EARLIER_BOUNDARY" and audit["production_gate"]=="HOLD" and all(not x["promotion"] for x in audit["overlays"]) and not any(audit[k] for k in ("canon_changed","official_checkpoint_changed","semantic_certification","independent_review","promotion")),"audit")
     return {"status":"PASS_NATIVE_BOOK_V_0065_COMPLETE","review_status":"PASS_STAGING_ONLY","cycle_status":audit["cycle_status"],"macro_metrics":metrics,"session_lines":lines,"session_records":records,"staging_records":t["staging_records"],"book_v_records":t["book_v_records"],"book_v_lines":t["book_v_lines"],"authority_counts":dict(counts),"visibility_counts":dict(vis),"axes":sorted(axes),"next_line":91476,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False}
 
+
+def verify_book_v_66(root,archive):
+    from collections import Counter
+    from hashlib import sha256
+    from .git_cycle import verify_episode
+    root=Path(root);archive=Path(archive)
+    previous=verify_book_v_65(root,archive)
+    c=read(root,ROOT+"recovery-checkpoint-0065-validated.json","8ca69c1d43b1095348c7b73f29ce3083cca9a6d9")
+    old=read(root,c["session_review_path"],"beee4b727fba61ea9b4da722af8b3d50d6433bf8")
+    q=read(root,"audit/omega008-c/bulk-macro-queue.json","e5a5f9e358d20acf8559f6313c2da24b64665f48")["macros"]
+    audit=read(root,ROOT+"cycle-0063-0066-frontier-review-pending.json","cf30846f47f5e756acb36301b51268ebdc08f0c7")
+    require(previous["status"]=="PASS_NATIVE_BOOK_V_0065_COMPLETE" and old["status"]=="PASS_STAGING_ONLY" and audit["macros"][:3]==old["macros"] and audit["prior_findings"]==old["findings"] and audit["prior_session_review_blob"]=="beee4b727fba61ea9b4da722af8b3d50d6433bf8","prior cycle")
+    cache=SourceCache(archive,read(archive,"history/sources/MANIFEST.json","2048141263f66151230119af9b0ee51796ac846b"))
+    m=q[65];s=cache.get(m["source"]);g=audit["macros"][-1]
+    cp=read(root,g["checkpoint"],g["checkpoint_blob"]);r=read(root,g["receipt"],g["blob"],cp["receipt_sha256"])
+    ids=set()
+    for f in (root/ROOT).glob("*.json"):
+        if f.name.startswith("partial-macro-0066-"):continue
+        obj=json.loads(f.read_bytes());rows=obj.get("records")
+        if isinstance(rows,list):ids.update(x["id"] for x in rows if isinstance(x,dict) and "id" in x)
+    require(r["previous_checkpoint_blob"]==cp["previous_checkpoint_blob"]=="8ca69c1d43b1095348c7b73f29ce3083cca9a6d9" and r["cycle_review_blob"]==c["cycle_review_blob"] and r["release_blob"]==c["release_blob"] and r["previous_macro_id"]==m["previous_macro"] and r["official_unit_seal"]==m["unit_seal"] and cp["next_macro"]==q[66],"chain")
+    metrics=validate_receipt(r,m,s,c["project"],ARCHIVE,previous_ids=ids,expected_range=[91476,101429])
+    require(metrics["records"]==62 and metrics["lines"]==9954 and metrics["axes_represented"]==g["axes"],"metrics")
+    require(cp["range"]==r["range"]==[91476,101429] and cp["next_line"]==1 and cp["next_source"]==q[66]["source"] and cp["staging_records"]==4136 and cp["official_records"]==1656,"checkpoint")
+    for x in r["records"]:
+        e=x["evidence"];require(x["book"]=="V" and not x["promotion"] and (e["role"]=="Prompt")==(x["authority"]=="AUTHOR_DIRECTION_NOT_EVENT"),"authority")
+        if x["type"] in ("reader_scene","knowledge"):require(x["visibility"].startswith("READER_ONLY" if x["type"]=="reader_scene" else "RESTRICTED"),"perspective")
+        if e["line_start"]<94129:require(x["type"]=="reader_scene","D526 leak")
+    for e in audit["findings"]+audit["prior_findings"]:
+        lo,hi=e["range"];ss=cache.get(e["source"]);require(not e["promotion"] and sha256("\n".join(ss[0][lo-1:hi]).encode()).hexdigest()==e["sha256"],"literal regression")
+    L=s[0]
+    require(len(L)==101429 and L[91474]=="Selda olhou novamente para os registros." and L[91476]=="Depois fez uma pergunta:" and "Todos a bordo. Ninguém caiu ao mar." in L[91838] and "primeira Doca Ascendente" in L[92018],"Calderva")
+    require("Corredor dos Ofícios Livres" in L[92534] and "três" in L[92866].lower() and "Não podia observar todo o continente."==L[93292] and "classificada como rumor" in L[93600],"external")
+    require("Nenhum novo equipamento, infraestrutura, serviço regular, ensaio de voo ou autorização" in L[96901] and "39,86 toneladas" in L[99215] and "58 toneladas" in L[99245] and "não era uma nova peça instalada" in L[100701].lower(),"technology")
+    require("ainda sem liberação para uso" in L[101367] and "sem linha regular" in L[101373] and "cartas enviadas aos amigos distantes ainda não têm entrega confirmada" in L[101377] and "23h06" in L[101343],"end")
+    require(not any(x.strip().startswith("LIVRO VI") for x in L[91475:]),"book boundary")
+    d,manifest=verify_episode(archive,q[66]["source"])
+    closure=read(archive,"canon/episodes/"+q[66]["source"]+".json","35cb9b5a5c72bf49648e18954b5dd7ba3b6cd410")
+    require(closure["sequence"]==1 and closure["previous_episode_id"]=="LV-C15-PI-D528" and closure["metadata"]["day"]==529 and closure["metadata"]["chapter"]==15 and closure["metadata"]["part"]=="II" and manifest["original_readback_sha256"]==closure["story_sha256"] and len(d.prose.splitlines())==3269 and q[66]["previous_macro"]==m["id"],"next episode provenance")
+    axes=sorted(set(previous["axes"])|set(metrics["axes_represented"]))
+    t=audit["totals"];require(t["lines"]==40499 and t["records"]==205+62 and t["book_v_lines"]==219373 and t["source06_lines"]==101429 and audit["production_gate"]=="HOLD" and all(not x["promotion"] for x in audit["overlays"]) and not any(audit[k] for k in ("canon_changed","official_checkpoint_changed","semantic_certification","independent_review","promotion")),"frontier totals")
+    return {"status":"PASS_NATIVE_BOOK_V_0066_COMPLETE","cycle_status":"PASS_STAGING_ONLY_FRONTIER","source06_lines":101429,"cycle_lines":40499,"cycle_records":t["records"],"session_lines":9954,"session_records":62,"staging_records":t["staging_records"],"book_v_records":t["book_v_records"],"book_v_lines":219373,"axes":axes,"macro_metrics":metrics,"next_source":q[66]["source"],"next_line":1,"next_source_full_sha256":closure["story_sha256"],"next_source_prose_sha256":sha256(d.prose.encode()).hexdigest(),"next_source_prose_lines":len(d.prose.splitlines()),"next_source_manifest":"7059f4c6c13b8126463ac2007b28d71423a251be","production_gate":"HOLD","canon_changed":False,"semantic_certification":False}
+
 def main():
     p=argparse.ArgumentParser();p.add_argument("--engine-root",default=".");p.add_argument("--archive-root",required=True)
-    a=p.parse_args();print(json.dumps(verify_book_v_65(a.engine_root,a.archive_root),sort_keys=True))
+    a=p.parse_args();print(json.dumps(verify_book_v_66(a.engine_root,a.archive_root),sort_keys=True))
 if __name__=="__main__":main()
