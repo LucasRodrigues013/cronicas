@@ -1,0 +1,63 @@
+{
+  "schema": "OMEGA_FC01_NATIVE_EVIDENCE_V1",
+  "validated_commit": "e2ab65407b84372bb57b5f674b59dd7baec62d47",
+  "workflow": 46154473199,
+  "job": 141007960854,
+  "workflow_conclusion": "success",
+  "tests": {
+    "convergence": 4,
+    "live_codex": 12,
+    "temporal": 6,
+    "total": 22
+  },
+  "aggregate": {
+    "all_group_lookups": 4941,
+    "candidate_links": 17353,
+    "candidate_lookup_checks": 136,
+    "canon_changed": false,
+    "canonical_graph_sha256": "a8d8763e42d25f0ae4b2c48be43002ea36204e54c21d60829d00a4afb49d62eb",
+    "closed_typed_events": 0,
+    "graph_records": 1256,
+    "graph_unchanged": true,
+    "groups": 4941,
+    "groups_with_candidate": 4361,
+    "groups_without_labels": 282,
+    "idempotent_replay": true,
+    "independent_review": false,
+    "inventory_sha256": "af78ceb90191dc0b204be3c21bc505e5011e7f94cd54f1cf8084f0632063cecc",
+    "label_occurrences": {
+      "AMBIGUOUS": 555,
+      "SINGLE_CANDIDATE": 16212,
+      "UNMATCHED": 3854
+    },
+    "links_sha256": "41d36e31b9d0f3de46d9caa3b885fd74f07e9d60e333e611f3ec3f024de27031",
+    "live_integration": false,
+    "macros": 116,
+    "map_sha256": "a85dc433290b7f9cd1b4fb0a44a9cd0fa06f19420838de8387e931ee54be7144",
+    "prior_prepared": 84,
+    "production_gate": "HOLD",
+    "promotion": false,
+    "registry_binding": "f2301e1723f4ba352f4c75ce5d4e1c3baecf7e7e5bd4779ecdc453bc68f05d30",
+    "registry_ids_with_links": 136,
+    "registry_records": 1256,
+    "remaining_deep_preparation": 4857,
+    "routes": {
+      "AUTHORITY_NON_EVENT_REVIEW": 414,
+      "CRITICAL_SCOPE": 551,
+      "DEEP_SEMANTIC_REVIEW": 3676,
+      "STANDARD_SEMANTIC_REVIEW": 1,
+      "STRUCTURAL_METADATA": 299
+    },
+    "semantic_certification": false,
+    "source_lines": 706293,
+    "sources": 56,
+    "status": "FC01_GLOBAL_CANDIDATE_MAP_PASS_SEMANTIC_HOLD",
+    "typed_historical_projection": false,
+    "unique_labels": {
+      "AMBIGUOUS": 26,
+      "SINGLE_CANDIDATE": 159,
+      "UNMATCHED": 549
+    }
+  },
+  "scope": "disposable candidate graph only; no live archive mutation or semantic certification"
+}
