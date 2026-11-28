@@ -1,0 +1,68 @@
+{
+  "schema": "worldroot-apex9-semantic-adaptive-checkpoint-v4",
+  "status": "SHADOW_CONTRACT_PASS_EIGHT_REFERENCES_REVIEWED_ADAPTIVE_DEVELOPMENT_BASELINE",
+  "parent_checkpoint": "86783bbe5996d49de34712e77266be917d826d73",
+  "implementation": "b1eb4ea7de6d597504bfb4de387ebbd856863502",
+  "main": "96515d29a82d45125ddf6d8c16acef7a7a2d7b5a",
+  "archive": "ad1277933f341dad1d1a6b3edd25505755515241",
+  "active_engine": "d2513a9de30790d20aaf5eb830f56f80ac026632",
+  "native": {
+    "workflow": 46162070645,
+    "job": 141031368320,
+    "tests": 865,
+    "new_tests": 6,
+    "conclusion": "success",
+    "scope": "Synthetic and code only, no private corpus"
+  },
+  "semantic": {
+    "prior_receipt_blob": "b34eae69c390564339cd961428cb53abaebd19c9",
+    "request_blob": "2546330ab482c507ec4d0bafee3d4f42a0a9333c",
+    "requirements_reopened": 8,
+    "original_anchor_hashes_verified": 8,
+    "source_blobs": [
+      "ff667b14a3cdc7088773fac43ed43140a1032107",
+      "112f691eb027c533032a1f6d5717342454159704",
+      "f0c2cb92e17a5b066392077187f009036fd29069",
+      "7ddbb4416b77c4da877f143f89a8244758548524"
+    ],
+    "policy_blob": "615151fc89228ddb222ea01613c23e977f8c418b",
+    "character_overlay": "db6190d652c35e87ad8c6f670de077e3b13b816e",
+    "world_overlay": "7eabe936795808d65a6a2f8c12a742475a9a3605",
+    "review": "Current-chat source-scope adjudication of component assertions, with complementary literal sources and identity/field inspection; distinguish observed, reported, planned, approved policy, unknown. No revised claim set, literal anchors or individual gold published; no stored typed facts or current-state change. Full global reconciliation and independent evaluation pending."
+  },
+  "contract": {
+    "shadow_public_lane": "Group locators retain original schema; separately typed public_anchor_locators, shared limit 3, maximum 1 public anchor; production check_binding rejects shadow packets by default; shadow validation tests reject unexpected literal anchor keys, mixed shapes and duplicate lines.",
+    "field_shadow": "Explicit bounded exact-ID read-only request/head/registry validation. Graph if present must match head/registry and SQLite integrity; otherwise registry only. Counts only, no values or value hashes; never invoked by default R33.",
+    "adaptive": "Paired evaluator separates avoid/preserve, counts unknown as not demonstrated, rejects duplicate cases, flags preservation loss, no longitudinal or approval claim."
+  },
+  "adaptive_development": {
+    "source_blobs": [
+      "c85fce532302ad2852a383263c91bd30d407804b",
+      "70a558a9df54fbe129b4f8d17dee61a1a8db22a9"
+    ],
+    "observations": {
+      "literal_author_messages_examined": 4,
+      "design_criticism": 2,
+      "architecture_praise": 1,
+      "mixed_praise_and_character_criticism": 1,
+      "source_groups": 2,
+      "design_recurrence_independent_source_lower_bound": 1
+    },
+    "neighboring_response_pairs": 3,
+    "aggregate": {
+      "response_length_increased": 1,
+      "response_length_decreased": 2,
+      "character_mentions_before": 0,
+      "character_mentions_after": 31,
+      "character_speaker_pattern_before": 0,
+      "character_speaker_pattern_after": 4
+    },
+    "scope": "Descriptive adjacent transcript responses; not controlled old/new APEX output, no independent recurrence reduction, approval or authenticated feedback envelope. Word counts include metadata; mention/speaker counts are lexical proxies, not literary quality. Original feedback source 06 exceeds 2MB input cap of adaptive.observation; use source-bound excerpt with full provenance only under trusted custody, do not silently truncate."
+  },
+  "decision": "No production promotion. Preserve active runtime and prior notes. Shadow contract and paired metric code validated; field audit not yet run on real SQLite; semantic component review not a typed projection; real adaptive causal test not performed.",
+  "next": "Quality-focused next increment: use existing R36 adaptive trust and author rules, prepare a source-bound paired internal narrative development experiment without canon advance. Compare baseline and candidate against the actual feedback about design/voice/character involvement, measure preservation and regressions; do not treat adjacent transcript metrics as causal. Resolve exact source/episode identity and field mapping in real read-only Codex graph if available, otherwise report unavailable; no full-corpus CI on public repo. Review field projection additional character fields beyond CHAR_FIELDS and any private scope omissions before activating. Add native paired synthetic parity tests only where needed; avoid rerunning historical ranking without changed approach. If user wants formal Level7 keep original metrics and distinguish unmeasured. Main/archive unchanged; no production promotion without real gain.",
+  "formal_level7_certified": false,
+  "canon_changed": false,
+  "production_changed": false,
+  "private_corpus_published": false
+}
