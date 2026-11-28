@@ -1,0 +1,1583 @@
+{
+  "schema": "OMEGA_P1_A2_NORMALIZATION_OVERLAY_V1",
+  "base_targets_blob": "0ab64aa1b4365312c14d17e2a695478d3ad7ac87",
+  "base_atom_sha256": "b3e154c568d09e668d3ac386aad28c50dafaaa847216b3942de25262793186e4",
+  "scope": "Paraphrased historical staging descriptors only, no source text or reviewer answers. Null denotes explicitly unknown value; no production mutation.",
+  "rows": [
+    {
+      "target": "12:author:initial_game_directions:M:P",
+      "value": "RPG interativo de fantasia com escolhas, desafios, imagens e consequências",
+      "unknown_reason": null
+    },
+    {
+      "target": "61-63:world:provisional_region:P:U",
+      "value": "Sete Coroas, proposta provisória",
+      "unknown_reason": null
+    },
+    {
+      "target": "65-67:world:provisional_region:P:U",
+      "value": "Sylvaen, proposta provisória",
+      "unknown_reason": null
+    },
+    {
+      "target": "69-71:world:provisional_region:P:U",
+      "value": "Nhar-Kel, proposta provisória",
+      "unknown_reason": null
+    },
+    {
+      "target": "73-77:world:provisional_region:P:U",
+      "value": "Domínios Dracônicos, proposta provisória",
+      "unknown_reason": null
+    },
+    {
+      "target": "151-181:world:experimental_prologue:D:U",
+      "value": "Prólogo experimental sobre cidade esquecida e anomalia; não integrado",
+      "unknown_reason": null
+    },
+    {
+      "target": "209-211:source:image_availability:M:U",
+      "value": "Imagens do segundo lote indisponíveis para inspeção",
+      "unknown_reason": null
+    },
+    {
+      "target": "213-217:source:reported_prior_campaign:M:P",
+      "value": "Recapitulação textual de criação de 300 guerreiros e desgaste; imagens não verificadas",
+      "unknown_reason": null
+    },
+    {
+      "target": "249:lucas:creation_initial_constraint:M:P",
+      "value": "Restrição histórica declarada: não reescrever o criador nem produzir energia infinita",
+      "unknown_reason": null
+    },
+    {
+      "target": "259:lucas:creation_reserve_estimate:S:S",
+      "value": [
+        5,
+        5
+      ],
+      "unknown_reason": null
+    },
+    {
+      "target": "255:lucas:identity:S:S",
+      "value": "Lucas Rodrigues",
+      "unknown_reason": null
+    },
+    {
+      "target": "255:lucas:exhaustion:S:S",
+      "value": "exausto",
+      "unknown_reason": null
+    },
+    {
+      "target": "257:lucas:skill_name:S:S",
+      "value": "CREATION",
+      "unknown_reason": null
+    },
+    {
+      "target": "275:lucas:equipment_dimensional_bag:S:S",
+      "value": "mochila dimensional",
+      "unknown_reason": null
+    },
+    {
+      "target": "277:lucas:equipment_regenerative_armor:S:S",
+      "value": "armadura regenerativa",
+      "unknown_reason": null
+    },
+    {
+      "target": "261-263:legiao-inicial:created_count:S:S",
+      "value": 300,
+      "unknown_reason": null
+    },
+    {
+      "target": "265:legiao-inicial:casualty_count_unknown:S:S",
+      "value": null,
+      "unknown_reason": "baixas ainda não apuradas"
+    },
+    {
+      "target": "267-271:chefe-orc-sem-nome:captivity:S:S",
+      "value": "um chefe orc vivo sob custódia",
+      "unknown_reason": null
+    },
+    {
+      "target": "279-281:legiao-inicial:initial_victory:S:S",
+      "value": "vitória inicial",
+      "unknown_reason": null
+    },
+    {
+      "target": "283:legiao-inicial:enemy_retreat:S:S",
+      "value": "inimigos em dispersão",
+      "unknown_reason": null
+    },
+    {
+      "target": "287:lucas:initial_day_location:N:S",
+      "value": "Dia 1, vale desconhecido",
+      "unknown_reason": null
+    },
+    {
+      "target": "295:chefe-orc-sem-nome:restraint:N:S",
+      "value": "imobilizado entre dois legionários",
+      "unknown_reason": null
+    },
+    {
+      "target": "295:chefe-orc-sem-nome:left_shoulder_injury:N:S",
+      "value": "ferimento no ombro esquerdo",
+      "unknown_reason": null
+    },
+    {
+      "target": "297-299:chefe-orc-sem-nome:defeat_demeanor:N:S",
+      "value": "derrotado, sem medo aparente",
+      "unknown_reason": null
+    },
+    {
+      "target": "303:capitao-sem-nome:pursuit_proposal:P:P",
+      "value": "perseguir sobreviventes afastaria força de Lucas",
+      "unknown_reason": null
+    },
+    {
+      "target": "307:capitao-sem-nome:terrain_unknown:R:P",
+      "value": null,
+      "unknown_reason": "terreno desconhecido pelo capitão"
+    },
+    {
+      "target": "309:lucas:armor_warmth:N:S",
+      "value": "calor nas costas",
+      "unknown_reason": null
+    },
+    {
+      "target": "309:lucas:breathing_improvement:N:S",
+      "value": "respiração mais fácil",
+      "unknown_reason": null
+    },
+    {
+      "target": "313-315:lucas:loss_uncertainty:N:S",
+      "value": null,
+      "unknown_reason": "custo de perder uma criação desconhecido por Lucas"
+    },
+    {
+      "target": "323:capitao-sem-nome:retreat_directions:R:P",
+      "value": 3,
+      "unknown_reason": null
+    },
+    {
+      "target": "329:cla-uzgor:retreat_protect_wounded:N:S",
+      "value": "protegem feridos e recolhem estandartes",
+      "unknown_reason": null
+    },
+    {
+      "target": "339-343:vale-sem-nome:unidentified_horn:N:S",
+      "value": "chifre ouvido uma vez e depois duas",
+      "unknown_reason": null
+    },
+    {
+      "target": "347:capitao-sem-nome:other_force:H:U",
+      "value": null,
+      "unknown_reason": "possível outra força local"
+    },
+    {
+      "target": "362:author:narrative_detail_direction:M:P",
+      "value": "realismo e detalhe dentro da fantasia",
+      "unknown_reason": null
+    },
+    {
+      "target": "362:author:historical_visual_direction:M:P",
+      "value": "imagens para cenas marcantes, orientação histórica",
+      "unknown_reason": null
+    },
+    {
+      "target": "394:legiao-inicial:intact_summary:S:P",
+      "value": "legião descrita como intacta; não significa ilesa",
+      "unknown_reason": null
+    },
+    {
+      "target": "399:author:choice_1:M:P",
+      "value": 1,
+      "unknown_reason": null
+    },
+    {
+      "target": "416:lucas:no_pursuit_order:N:S",
+      "value": {
+        "pursuit_authorized": false
+      },
+      "unknown_reason": null
+    },
+    {
+      "target": "418:lucas:intelligence_priority:N:S",
+      "value": "entender terreno e povos antes de domínio",
+      "unknown_reason": null
+    },
+    {
+      "target": "424-428:legiao-inicial:defensive_reformation:N:S",
+      "value": "avanço interrompido e meia-lua protetora",
+      "unknown_reason": null
+    },
+    {
+      "target": "428:chefe-orc-sem-nome:returned_alive:N:S",
+      "value": "prisioneiro retornou vivo",
+      "unknown_reason": null
+    },
+    {
+      "target": "438-442:vale-sem-nome:passage:N:S",
+      "value": "passagem entre colinas",
+      "unknown_reason": null
+    },
+    {
+      "target": "442:vale-sem-nome:river_west:N:S",
+      "value": "rio ao oeste",
+      "unknown_reason": null
+    },
+    {
+      "target": "442:vale-sem-nome:stone_road_north:N:S",
+      "value": "estrada antiga de pedra ao norte",
+      "unknown_reason": null
+    },
+    {
+      "target": "442:vale-sem-nome:road_origin_unknown:H:U",
+      "value": null,
+      "unknown_reason": "autoria da estrada não identificada"
+    },
+    {
+      "target": "448:capitao-sem-nome:relative_height:N:S",
+      "value": "aproximadamente meio palmo acima dos demais",
+      "unknown_reason": null
+    },
+    {
+      "target": "448:capitao-sem-nome:crimson_crest:N:S",
+      "value": "crista carmesim",
+      "unknown_reason": null
+    },
+    {
+      "target": "448:capitao-sem-nome:black_armor:N:S",
+      "value": "armadura negra",
+      "unknown_reason": null
+    },
+    {
+      "target": "448:capitao-sem-nome:spear_gesture:N:S",
+      "value": "gesto econômico com lança",
+      "unknown_reason": null
+    },
+    {
+      "target": "454:chefe-orc-sem-nome:height_estimate:N:S",
+      "value": {
+        "approximate_m": 3,
+        "qualifier": "nearly",
+        "lower_bound": null
+      },
+      "unknown_reason": null
+    },
+    {
+      "target": "454:chefe-orc-sem-nome:eye_injury:N:S",
+      "value": "corte profundo em um olho",
+      "unknown_reason": null
+    },
+    {
+      "target": "454:chefe-orc-sem-nome:eye_color:N:S",
+      "value": "amarelo no olho visível",
+      "unknown_reason": null
+    },
+    {
+      "target": "454:chefe-orc-sem-nome:tooth_necklace:N:S",
+      "value": "colar de dentes humanos e presas animais",
+      "unknown_reason": null
+    },
+    {
+      "target": "468-471:capitao-sem-nome:partial_orc_translation:R:P",
+      "value": "compreensão parcial, suficiente para interrogatório",
+      "unknown_reason": null
+    },
+    {
+      "target": "469:capitao-sem-nome:attributed_creation_cognition:R:P",
+      "value": "interpretação e leitura tática atribuídas à intenção criadora",
+      "unknown_reason": null
+    },
+    {
+      "target": "489:chefe-orc-sem-nome:lucas_origin_assertion:R:P",
+      "value": "afirma que Lucas não pertence ao chão local",
+      "unknown_reason": null
+    },
+    {
+      "target": "497:chefe-orc-sem-nome:arrival_witness_report:R:P",
+      "value": "afirma ter visto abertura do céu, luz e surgimento do aço",
+      "unknown_reason": null
+    },
+    {
+      "target": "499:chefe-orc-sem-nome:omen_interpretation:H:U",
+      "value": "maldição ou presságio, interpretação do orc",
+      "unknown_reason": null
+    },
+    {
+      "target": "503:chefe-orc-sem-nome:clan_self_identification:R:P",
+      "value": "Uzgor",
+      "unknown_reason": null
+    },
+    {
+      "target": "505:chefe-orc-sem-nome:forced_migration_report:R:P",
+      "value": "alega deslocamento forçado",
+      "unknown_reason": null
+    },
+    {
+      "target": "527:chefe-orc-sem-nome:gray_banner_attribution:R:P",
+      "value": "atribui deslocamento à Bandeira Cinzenta",
+      "unknown_reason": null
+    },
+    {
+      "target": "539:chefe-orc-sem-nome:gray_banner_violence_report:R:P",
+      "value": "alega tomada de terras, incêndios e violência contra civis",
+      "unknown_reason": null
+    },
+    {
+      "target": "541:chefe-orc-sem-nome:southward_route_report:R:P",
+      "value": "alega rota ao sul para escapar",
+      "unknown_reason": null
+    },
+    {
+      "target": "553:capitao-sem-nome:strategic_passage_conditional:H:U",
+      "value": "passagem estratégica se relato verdadeiro",
+      "unknown_reason": null
+    },
+    {
+      "target": "555:capitao-sem-nome:horn_identity_hypotheses:H:U",
+      "value": "chifre possivelmente da Bandeira Cinzenta ou poder local",
+      "unknown_reason": null
+    },
+    {
+      "target": "565:cavaleiros-desconhecidos:eastern_hill_presence:N:S",
+      "value": "observados na colina oriental",
+      "unknown_reason": null
+    },
+    {
+      "target": "565:cavaleiros-desconhecidos:count_estimate:N:S",
+      "value": [
+        6,
+        8
+      ],
+      "unknown_reason": null
+    },
+    {
+      "target": "565:cavaleiros-desconhecidos:heraldry_unresolved:N:S",
+      "value": null,
+      "unknown_reason": "brasões indistinguíveis à distância"
+    },
+    {
+      "target": "575:capitao-sem-nome:assessment_risk:H:U",
+      "value": "possibilidade de serem avaliados como ameaça, milagre ou alvo",
+      "unknown_reason": null
+    },
+    {
+      "target": "601-607:author:unchosen_option_1:O:U",
+      "value": "interrogar e manter defesa",
+      "unknown_reason": null
+    },
+    {
+      "target": "609-615:author:option_2_proposal:O:U",
+      "value": "gesto de trégua e cooperação",
+      "unknown_reason": null
+    },
+    {
+      "target": "617-623:author:unchosen_option_3:O:U",
+      "value": "demonstrar domínio",
+      "unknown_reason": null
+    },
+    {
+      "target": "625-633:author:choice_interface:M:U",
+      "value": "interface de escolha livre",
+      "unknown_reason": null
+    },
+    {
+      "target": "638:author:choice_2:M:P",
+      "value": 2,
+      "unknown_reason": null
+    },
+    {
+      "target": "638-639:author:reconnaissance_and_preservation_direction:M:P",
+      "value": "reconhecimento, inteligência, estratégia e preservação dos companheiros",
+      "unknown_reason": null
+    },
+    {
+      "target": "672:legiao:formation_observed:N:S",
+      "value": "formação precisa em aço negro",
+      "unknown_reason": null
+    },
+    {
+      "target": "676:lucas:prior_enemy_count_recollection:S:P",
+      "value": 1000,
+      "unknown_reason": null
+    },
+    {
+      "target": "680-682:lucas:created_people_reflection:N:S",
+      "value": "criados agora respiram e pensam, mortalidade possível",
+      "unknown_reason": null
+    },
+    {
+      "target": "684:lucas:preservation_intent:N:S",
+      "value": "evitar perdas por imprudência",
+      "unknown_reason": null
+    },
+    {
+      "target": "692:lucas:critical_advice_request:N:S",
+      "value": "aconselhamento crítico, não mera obediência",
+      "unknown_reason": null
+    },
+    {
+      "target": "696:lucas:preservation_priority:N:S",
+      "value": "preservação de cada homem",
+      "unknown_reason": null
+    },
+    {
+      "target": "696:lucas:safe_base_intent:P:P",
+      "value": "construir lugar seguro",
+      "unknown_reason": null
+    },
+    {
+      "target": "700:varo:helmet_removed:N:S",
+      "value": "elmo retirado",
+      "unknown_reason": null
+    },
+    {
+      "target": "704:varo:apparent_age:N:S",
+      "value": 40,
+      "unknown_reason": null
+    },
+    {
+      "target": "704:varo:hair:N:S",
+      "value": "escuros e curtos",
+      "unknown_reason": null
+    },
+    {
+      "target": "704:varo:facial_marks:N:S",
+      "value": "marcas antigas",
+      "unknown_reason": null
+    },
+    {
+      "target": "704:varo:eye_color:N:S",
+      "value": "cinzentos",
+      "unknown_reason": null
+    },
+    {
+      "target": "712:varo:non_invincibility_assessment:R:P",
+      "value": "preparados, não invencíveis",
+      "unknown_reason": null
+    },
+    {
+      "target": "716:varo:victory_attribution:R:P",
+      "value": "formação superior em terreno aberto e fraquezas não exploradas",
+      "unknown_reason": null
+    },
+    {
+      "target": "716:varo:conditional_threats:H:U",
+      "value": "cavalaria pesada, cerco ou magia podem alterar resultado",
+      "unknown_reason": null
+    },
+    {
+      "target": "720:varo:recreation_after_death_unknown:R:P",
+      "value": null,
+      "unknown_reason": "recriação após morte desconhecida"
+    },
+    {
+      "target": "724-728:lucas:preservation_commitment:N:S",
+      "value": "compromisso de evitar perdas, sem garantia",
+      "unknown_reason": null
+    },
+    {
+      "target": "739:legiao:created_count_and_inspection:S:S",
+      "value": {
+        "created": 300,
+        "inspection": "in_progress"
+      },
+      "unknown_reason": null
+    },
+    {
+      "target": "741:legiao:heavy_infantry:S:S",
+      "value": "infantaria pesada de elite",
+      "unknown_reason": null
+    },
+    {
+      "target": "743:legiao:command_structure:S:S",
+      "value": "capitão e oficiais",
+      "unknown_reason": null
+    },
+    {
+      "target": "745:legiao:basic_recon:S:S",
+      "value": "capacidade básica, sem especialistas locais",
+      "unknown_reason": null
+    },
+    {
+      "target": "747:legiao:no_cavalry:S:S",
+      "value": 0,
+      "unknown_reason": null
+    },
+    {
+      "target": "749:legiao:archers_unconfirmed:S:S",
+      "value": null,
+      "unknown_reason": "arqueiros dedicados não confirmados"
+    },
+    {
+      "target": "751:legiao:mages_unidentified:S:S",
+      "value": null,
+      "unknown_reason": "magos não identificados"
+    },
+    {
+      "target": "753:legiao:supply_unknown:S:S",
+      "value": null,
+      "unknown_reason": "autonomia de suprimentos desconhecida"
+    },
+    {
+      "target": "755:legiao:geography_unknown:S:S",
+      "value": null,
+      "unknown_reason": "informação geográfica praticamente inexistente"
+    },
+    {
+      "target": "757:varo:initial_aptitudes_report:R:P",
+      "value": "aptidões naturais de comando, observação, orientação e organização",
+      "unknown_reason": null
+    },
+    {
+      "target": "757:legiao:specialists_not_automatic:R:P",
+      "value": "especializações não automáticas",
+      "unknown_reason": null
+    },
+    {
+      "target": "761:varo:training_development_proposal:P:P",
+      "value": "treino, experiência e contato local",
+      "unknown_reason": null
+    },
+    {
+      "target": "765:varo:recon_team_proposal:P:P",
+      "value": {
+        "people": 12,
+        "teams": 3
+      },
+      "unknown_reason": null
+    },
+    {
+      "target": "771:varo:intelligence_network_proposal:P:P",
+      "value": "observadores, informantes, mensageiros e analistas",
+      "unknown_reason": null
+    },
+    {
+      "target": "775:varo:information_verification_priority:P:P",
+      "value": "verificar veracidade da informação",
+      "unknown_reason": null
+    },
+    {
+      "target": "785:varo:relative_enemy_power_unknown:R:P",
+      "value": null,
+      "unknown_reason": "poder relativo desconhecido"
+    },
+    {
+      "target": "789:varo:orc_combat_assessment:R:P",
+      "value": "força física elevada, equipamento inferior, quase mil combatentes segundo Varo",
+      "unknown_reason": null
+    },
+    {
+      "target": "793:varo:gray_banner_conditional:H:U",
+      "value": "se relato verdadeiro, organização e logística possíveis; números e magia desconhecidos",
+      "unknown_reason": null
+    },
+    {
+      "target": "806:cavaleiros-desconhecidos:identity_unknown:S:S",
+      "value": null,
+      "unknown_reason": "identidade dos cavaleiros desconhecida"
+    },
+    {
+      "target": "808:world:no_reliable_power_ranking:M:P",
+      "value": null,
+      "unknown_reason": "dados insuficientes para ranking absoluto"
+    },
+    {
+      "target": "814:varo:temporary_defense_recommendation:P:P",
+      "value": "defesa temporária com água e retirada",
+      "unknown_reason": null
+    },
+    {
+      "target": "816:varo:recon_recommendation:P:P",
+      "value": "reconhecimento limitado",
+      "unknown_reason": null
+    },
+    {
+      "target": "818:varo:supply_capacity_unknown:R:P",
+      "value": null,
+      "unknown_reason": "capacidade alimentar da mochila não testada"
+    },
+    {
+      "target": "820:varo:diplomacy_recommendation:P:P",
+      "value": "diplomacia para evitar percepção de invasão",
+      "unknown_reason": null
+    },
+    {
+      "target": "826:varo:base_location_unselected:P:P",
+      "value": null,
+      "unknown_reason": "base permanente não escolhida"
+    },
+    {
+      "target": "836:lucas:truce_order:N:S",
+      "value": "trégua e não perseguição",
+      "unknown_reason": null
+    },
+    {
+      "target": "836:lucas:prisoner_care_order:N:S",
+      "value": "ordenados água e cuidados",
+      "unknown_reason": null
+    },
+    {
+      "target": "840:varo:command_retained:N:S",
+      "value": "mantém comando com Lucas",
+      "unknown_reason": null
+    },
+    {
+      "target": "842:legiao:three_envoys_dispatched:N:S",
+      "value": {
+        "officers": 1,
+        "soldiers": 2
+      },
+      "unknown_reason": null
+    },
+    {
+      "target": "844:legiao:defensive_posture:N:S",
+      "value": "formação defensiva sem apontar armas",
+      "unknown_reason": null
+    },
+    {
+      "target": "848:cavaleiros-desconhecidos:hold_distance:N:S",
+      "value": "não avançam",
+      "unknown_reason": null
+    },
+    {
+      "target": "850:cavaleiros-desconhecidos:one_dismounts:N:S",
+      "value": 1,
+      "unknown_reason": null
+    },
+    {
+      "target": "852:cavaleiros-desconhecidos:one_departs:N:S",
+      "value": 1,
+      "unknown_reason": null
+    },
+    {
+      "target": "852:cavaleiros-desconhecidos:messenger_inference:H:U",
+      "value": "possível mensageiro, não confirmado",
+      "unknown_reason": null
+    },
+    {
+      "target": "856:cavaleiros-desconhecidos:truce_response:N:S",
+      "value": "tecido claro erguido em resposta",
+      "unknown_reason": null
+    },
+    {
+      "target": "860:varo:intentions_unknown:R:P",
+      "value": null,
+      "unknown_reason": "intenções desconhecidas"
+    },
+    {
+      "target": "864:legiao:road_tracks_report:R:P",
+      "value": "marcas de rodas e ferraduras relatadas",
+      "unknown_reason": null
+    },
+    {
+      "target": "868:varo:trade_or_settlement_inference:H:U",
+      "value": "comércio ou assentamento possíveis",
+      "unknown_reason": null
+    },
+    {
+      "target": "874:chefe-orc-sem-nome:personal_distrust:R:P",
+      "value": "desconfiança pessoal de humanos",
+      "unknown_reason": null
+    },
+    {
+      "target": "876:varo:translation:N:S",
+      "value": "tradução pelo capitão",
+      "unknown_reason": null
+    },
+    {
+      "target": "888:legiao:defense_inspection_state:S:S",
+      "value": "defesa e inspeção em curso",
+      "unknown_reason": null
+    },
+    {
+      "target": "890:legiao:recon_not_released:S:S",
+      "value": "patrulhas ainda não liberadas",
+      "unknown_reason": null
+    },
+    {
+      "target": "892:lucas:diplomacy_no_meeting:S:S",
+      "value": "sinal de trégua sem reunião concluída",
+      "unknown_reason": null
+    },
+    {
+      "target": "894:lucas:armor_recovery_low_creation:S:S",
+      "value": "armadura auxilia, CREATION severamente reduzida",
+      "unknown_reason": null
+    },
+    {
+      "target": "907:author:choice_1_consolidation:M:P",
+      "value": 1,
+      "unknown_reason": null
+    },
+    {
+      "target": "907:author:realism_report_direction:M:P",
+      "value": "realismo, relatório, consequências e três escolhas",
+      "unknown_reason": null
+    },
+    {
+      "target": "940:lucas:day_elapsed_time:N:S",
+      "value": {
+        "day": 1,
+        "hours_after_battle": 2
+      },
+      "unknown_reason": null
+    },
+    {
+      "target": "946:lucas:camp_inspection_order:N:S",
+      "value": "consolidar, acampar, inspecionar feridos e recursos",
+      "unknown_reason": null
+    },
+    {
+      "target": "950:lucas:recon_avoid_combat_order:N:S",
+      "value": "três equipes, evitar combate e recuar se perigo",
+      "unknown_reason": null
+    },
+    {
+      "target": "958:lucas:officer_advice_autonomy:N:S",
+      "value": "autonomia para aconselhar",
+      "unknown_reason": null
+    },
+    {
+      "target": "964:varo:caution_recommendation:N:S",
+      "value": "não confundir vitória recente com segurança futura",
+      "unknown_reason": null
+    },
+    {
+      "target": "968:lucas:accepts_advice:N:S",
+      "value": "acolhe recomendação",
+      "unknown_reason": null
+    },
+    {
+      "target": "978:varo:military_knowledge_self_report:R:P",
+      "value": "afirma conhecimento militar ao despertar",
+      "unknown_reason": null
+    },
+    {
+      "target": "978:varo:no_prior_memory_self_report:R:P",
+      "value": "afirma ausência de memória de infância e vida anterior",
+      "unknown_reason": null
+    },
+    {
+      "target": "982:varo:self_chosen_name:N:S",
+      "value": "VARO",
+      "unknown_reason": null
+    },
+    {
+      "target": "984-988:varo:voluntary_naming:N:S",
+      "value": "nome escolhido por vontade própria",
+      "unknown_reason": null
+    },
+    {
+      "target": "994:varo:camp_site_selection:N:S",
+      "value": "elevação baixa a sudoeste, trilha ao rio",
+      "unknown_reason": null
+    },
+    {
+      "target": "1000:legiao:temporary_defenses:N:S",
+      "value": "pedras, estacas, escudos e sentinelas",
+      "unknown_reason": null
+    },
+    {
+      "target": "1002-1004:acampamento-inicial:not_permanent_fortress:N:S",
+      "value": "acampamento improvisado, sem fortaleza permanente",
+      "unknown_reason": null
+    },
+    {
+      "target": "1006:lucas:bag_tools:N:S",
+      "value": "utensílios úteis na mochila",
+      "unknown_reason": null
+    },
+    {
+      "target": "1008:varo:untested_supply_warning:N:S",
+      "value": "não presumir logística não testada",
+      "unknown_reason": null
+    },
+    {
+      "target": "1012:varo:water_food_rest_test_plan:P:P",
+      "value": "testar água, alimentos, descanso e abastecimento",
+      "unknown_reason": null
+    },
+    {
+      "target": "1022:legiao:ten_units_of_thirty:N:S",
+      "value": {
+        "units": 10,
+        "per_unit": 30
+      },
+      "unknown_reason": null
+    },
+    {
+      "target": "1024:legiao:alive_count:S:S",
+      "value": 300,
+      "unknown_reason": null
+    },
+    {
+      "target": "1026-1028:legiao:fit_count:S:S",
+      "value": 275,
+      "unknown_reason": null
+    },
+    {
+      "target": "1030-1032:legiao:lightly_wounded_count:S:S",
+      "value": 18,
+      "unknown_reason": null
+    },
+    {
+      "target": "1034-1036:legiao:temporarily_unfit_count:S:S",
+      "value": 7,
+      "unknown_reason": null
+    },
+    {
+      "target": "1038-1040:legiao:confirmed_deaths:S:S",
+      "value": 0,
+      "unknown_reason": null
+    },
+    {
+      "target": "1046:legiao:two_need_monitoring:S:S",
+      "value": 2,
+      "unknown_reason": null
+    },
+    {
+      "target": "1046:legiao:recovery_capacity_unknown:S:S",
+      "value": null,
+      "unknown_reason": "recuperação completa desconhecida"
+    },
+    {
+      "target": "1050:varo:armor_not_all_impacts:R:P",
+      "value": "armaduras não impediram impactos",
+      "unknown_reason": null
+    },
+    {
+      "target": "1056:varo:soldier_pain_report:R:P",
+      "value": "soldados sentem dor",
+      "unknown_reason": null
+    },
+    {
+      "target": "1062:varo:defeat_reaction_unknown:R:P",
+      "value": null,
+      "unknown_reason": "reação à derrota desconhecida"
+    },
+    {
+      "target": "1066-1068:lucas:companions_recognition:N:S",
+      "value": "reconhecimento de companheiros",
+      "unknown_reason": null
+    },
+    {
+      "target": "1072:legiao:three_teams_of_four:N:S",
+      "value": {
+        "teams": 3,
+        "per_team": 4
+      },
+      "unknown_reason": null
+    },
+    {
+      "target": "1074:legiao:recon_routes:N:S",
+      "value": "estrada norte, colinas leste, rio e passagens sul",
+      "unknown_reason": null
+    },
+    {
+      "target": "1076:varo:independent_return_order:N:S",
+      "value": "evitar combate, retornos independentes",
+      "unknown_reason": null
+    },
+    {
+      "target": "1080:lucas:armor_fatigue_reduction:N:S",
+      "value": "redução gradual da fadiga muscular",
+      "unknown_reason": null
+    },
+    {
+      "target": "1082:lucas:walking_improvement:N:S",
+      "value": "caminha sem dificuldade significativa",
+      "unknown_reason": null
+    },
+    {
+      "target": "1082:lucas:creation_reserve_still_low:N:S",
+      "value": "reserva baixa apesar da recuperação física",
+      "unknown_reason": null
+    },
+    {
+      "target": "1091-1093:ruinas-norte-sem-id:distance_observation:R:P",
+      "value": {
+        "distance_km": 8,
+        "approximate": true,
+        "observation": "distant"
+      },
+      "unknown_reason": null
+    },
+    {
+      "target": "1094-1096:vale-sem-nome:road_tracks_report:R:P",
+      "value": "marcas recentes de rodas e ferraduras",
+      "unknown_reason": null
+    },
+    {
+      "target": "1097-1099:vale-sem-nome:possible_river_crossing:R:P",
+      "value": "passagem rasa possível e pegadas orcs",
+      "unknown_reason": null
+    },
+    {
+      "target": "1100-1102:vale-sem-nome:smoke_origin_unknown:R:P",
+      "value": null,
+      "unknown_reason": "origem da fumaça oriental desconhecida"
+    },
+    {
+      "target": "1103-1105:cavaleiros-desconhecidos:messenger_departure_report:R:P",
+      "value": "um mensageiro partiu, demais mantêm distância",
+      "unknown_reason": null
+    },
+    {
+      "target": "1109:varo:ruins_function_unknown:H:U",
+      "value": null,
+      "unknown_reason": "função das ruínas desconhecida"
+    },
+    {
+      "target": "1115:varo:smoke_origin_hypotheses:H:U",
+      "value": "acampamento, aldeia ou força militar possíveis",
+      "unknown_reason": null
+    },
+    {
+      "target": "1119:varo:inhabited_region_inference:H:P",
+      "value": "indícios de trânsito sugerem presença regional",
+      "unknown_reason": null
+    },
+    {
+      "target": "1123:patrulha-oriental:not_returned:R:P",
+      "value": "equipe oriental não retornou",
+      "unknown_reason": null
+    },
+    {
+      "target": "1129:patrulha-oriental:twenty_minute_delay:R:P",
+      "value": 20,
+      "unknown_reason": null
+    },
+    {
+      "target": "1133:varo:delay_hypotheses:H:U",
+      "value": "terreno, desvio ou orientação como possíveis causas",
+      "unknown_reason": null
+    },
+    {
+      "target": "1137:varo:safety_not_assumed:R:P",
+      "value": null,
+      "unknown_reason": "segurança não confirmada"
+    },
+    {
+      "target": "1143:mensageiro-cavaleiro-sem-nome:approach:N:S",
+      "value": "aproximação pela estrada",
+      "unknown_reason": null
+    },
+    {
+      "target": "1145:mensageiro-cavaleiro-sem-nome:horse_appearance:N:S",
+      "value": "cavalo castanho-escuro, cobertura de couro",
+      "unknown_reason": null
+    },
+    {
+      "target": "1145:mensageiro-cavaleiro-sem-nome:equipment:N:S",
+      "value": "cota de malha e capa azul-acinzentada",
+      "unknown_reason": null
+    },
+    {
+      "target": "1151:mensageiro-cavaleiro-sem-nome:banner_design:N:S",
+      "value": "torre dourada sobre tecido azul",
+      "unknown_reason": null
+    },
+    {
+      "target": "1155:mensageiro-cavaleiro-sem-nome:commander_question:N:S",
+      "value": "pergunta quem comanda soldados negros",
+      "unknown_reason": null
+    },
+    {
+      "target": "1159:varo:delay_response_recommendation:N:S",
+      "value": "recomenda aguardar antes de responder",
+      "unknown_reason": null
+    },
+    {
+      "target": "1159:varo:mission_hypothesis:H:U",
+      "value": "diplomacia ou reconhecimento disfarçado",
+      "unknown_reason": null
+    },
+    {
+      "target": "1163:mensageiro-cavaleiro-sem-nome:conversation_proposal:R:P",
+      "value": "propõe conversa em nome do comandante",
+      "unknown_reason": null
+    },
+    {
+      "target": "1173:varo:possible_gray_banner_links:H:U",
+      "value": "rivalidade ou associação possíveis, não comprovadas",
+      "unknown_reason": null
+    },
+    {
+      "target": "1177:patrulha-oriental:four_missing_report:R:P",
+      "value": 4,
+      "unknown_reason": null
+    },
+    {
+      "target": "1181:lucas:dual_problem:N:S",
+      "value": "diplomacia e segurança simultâneas",
+      "unknown_reason": null
+    },
+    {
+      "target": "1187:varo:strategic_assessment:R:P",
+      "value": "efetivo preservado, posição defensiva, vitória anterior",
+      "unknown_reason": null
+    },
+    {
+      "target": "1189:varo:vulnerability_assessment:R:P",
+      "value": "suprimentos incertos, geografia desconhecida, sem montados, reconhecimento rudimentar e pouca experiência mágica",
+      "unknown_reason": null
+    },
+    {
+      "target": "1191:varo:risk_hypotheses:H:U",
+      "value": "reforços, reagrupamento orc e patrulha atrasada como riscos",
+      "unknown_reason": null
+    },
+    {
+      "target": "1193:varo:priority_recommendations:P:P",
+      "value": "manter defesa, limitar informação e priorizar batedores",
+      "unknown_reason": null
+    },
+    {
+      "target": "1199:varo:civil_specialists_needed:P:P",
+      "value": "agricultores, artesãos, médicos, construtores e comerciantes necessários",
+      "unknown_reason": null
+    },
+    {
+      "target": "1203:varo:governance_question:N:S",
+      "value": "questiona futuro governo",
+      "unknown_reason": null
+    },
+    {
+      "target": "1207-1209:author:choice_interface:O:U",
+      "value": "interface de decisão e ordens combinadas",
+      "unknown_reason": null
+    },
+    {
+      "target": "1211:mensageiro-cavaleiro-sem-nome:awaiting_response:N:S",
+      "value": "mensageiro aguarda",
+      "unknown_reason": null
+    },
+    {
+      "target": "1211:vale-sem-nome:smoke_continues:N:S",
+      "value": "fumaça oriental continua",
+      "unknown_reason": null
+    },
+    {
+      "target": "1213:patrulha-oriental:location_uncertain:N:P",
+      "value": null,
+      "unknown_reason": "localização exata dos quatro desconhecida"
+    },
+    {
+      "target": "1220-1222:author:coexistence_project:M:P",
+      "value": "nação de convivência entre criações e povos",
+      "unknown_reason": null
+    },
+    {
+      "target": "1221:author:origin_inquiry:M:P",
+      "value": "investigar quem ou o que o trouxe",
+      "unknown_reason": null
+    },
+    {
+      "target": "1222:author:strategic_adviser_creation_request:M:P",
+      "value": "criar conselheiro político e estratégico",
+      "unknown_reason": null
+    },
+    {
+      "target": "1255:lucas:time_location:N:S",
+      "value": "Dia 1, fim da tarde, acampamento",
+      "unknown_reason": null
+    },
+    {
+      "target": "1261:legiao:created_people_subjectivity:N:S",
+      "value": "criados possuem dor, trabalho e perspectivas",
+      "unknown_reason": null
+    },
+    {
+      "target": "1271-1273:lucas:origin_unknown:N:S",
+      "value": null,
+      "unknown_reason": "origem da reencarnação desconhecida"
+    },
+    {
+      "target": "1277:lucas:enthusiasm:N:S",
+      "value": "entusiasmo",
+      "unknown_reason": null
+    },
+    {
+      "target": "1283-1285:lucas:multiracial_nation_aspiration:P:P",
+      "value": "nação multirracial sob leis comuns preservando identidades",
+      "unknown_reason": null
+    },
+    {
+      "target": "1291:lucas:delegation_intent:N:S",
+      "value": "dividir funções de governo e comando",
+      "unknown_reason": null
+    },
+    {
+      "target": "1299:varo:trust_not_automatic:N:S",
+      "value": "criar seguidores não substitui conquistar confiança",
+      "unknown_reason": null
+    },
+    {
+      "target": "1303:chefe-orc-sem-nome:restraint_loosened:N:S",
+      "value": "amarras afrouxadas para beber",
+      "unknown_reason": null
+    },
+    {
+      "target": "1303-1307:chefe-orc-sem-nome:water_given_and_drunk:N:S",
+      "value": "bebe água",
+      "unknown_reason": null
+    },
+    {
+      "target": "1303:chefe-orc-sem-nome:guarded_custody:N:S",
+      "value": "dois legionários próximos",
+      "unknown_reason": null
+    },
+    {
+      "target": "1309:lucas:origin_self_assertion:R:P",
+      "value": "declara não ser humano deste mundo; espécie não comprovada",
+      "unknown_reason": null
+    },
+    {
+      "target": "1313:chefe-orc-sem-nome:human_appearance_report:R:P",
+      "value": "orc atribui aparência e cheiro humanos",
+      "unknown_reason": null
+    },
+    {
+      "target": "1321:lucas:coexistence_proposal:P:P",
+      "value": "propõe nação aberta a povos",
+      "unknown_reason": null
+    },
+    {
+      "target": "1325:chefe-orc-sem-nome:distrust_response:N:S",
+      "value": "resposta desconfiada sobre paz após morte de guerreiros",
+      "unknown_reason": null
+    },
+    {
+      "target": "1331:chefe-orc-sem-nome:perceived_threat_report:R:P",
+      "value": "alega ter acreditado em feiticeiro exterminador",
+      "unknown_reason": null
+    },
+    {
+      "target": "1341:chefe-orc-sem-nome:forced_crossing_intent_report:R:P",
+      "value": "admite intenção de esmagar quem bloqueasse passagem",
+      "unknown_reason": null
+    },
+    {
+      "target": "1351:chefe-orc-sem-nome:human_divisions_report:R:P",
+      "value": "relata divisão por terras, moedas, coroas e deuses",
+      "unknown_reason": null
+    },
+    {
+      "target": "1357:chefe-orc-sem-nome:gray_banner_superior_unknown:R:P",
+      "value": null,
+      "unknown_reason": "superior da Bandeira Cinzenta desconhecido pelo orc"
+    },
+    {
+      "target": "1357:chefe-orc-sem-nome:fire_machines_report:R:P",
+      "value": "alega máquinas de fogo contra muralhas",
+      "unknown_reason": null
+    },
+    {
+      "target": "1361:chefe-orc-sem-nome:clan_raids_admission:R:P",
+      "value": "admite saques do próprio clã",
+      "unknown_reason": null
+    },
+    {
+      "target": "1371:world:external_claims_unverified:M:P",
+      "value": "acusações externas carecem de verificação",
+      "unknown_reason": null
+    },
+    {
+      "target": "1377:lucas:adviser_intent:P:P",
+      "value": "pretende criar assessor de política, estratégia e administração",
+      "unknown_reason": null
+    },
+    {
+      "target": "1385:varo:low_reserve_warning:R:P",
+      "value": "reserva perigosamente baixa segundo Varo",
+      "unknown_reason": null
+    },
+    {
+      "target": "1389:varo:unknown_knowledge_warning:R:P",
+      "value": "não presumir conhecimento desconhecido como memória verdadeira",
+      "unknown_reason": null
+    },
+    {
+      "target": "1393:lucas:questioning_ability_intent:P:P",
+      "value": "capacidade de formular perguntas, não onisciência",
+      "unknown_reason": null
+    },
+    {
+      "target": "1397:varo:creation_pause_recommendation:P:P",
+      "value": "recomenda pausa após criação",
+      "unknown_reason": null
+    },
+    {
+      "target": "1405:lucas:desired_adviser_aptitudes:P:P",
+      "value": "talento político, negociação, história militar comparada e instituições",
+      "unknown_reason": null
+    },
+    {
+      "target": "1411-1413:lucas:creation_resistance_pain:N:S",
+      "value": "resistência energética e dor atrás dos olhos",
+      "unknown_reason": null
+    },
+    {
+      "target": "1417-1419:lucas:localized_blue_manifestation:N:S",
+      "value": "coluna azul e distorção localizada",
+      "unknown_reason": null
+    },
+    {
+      "target": "1421:kael:person_manifested:N:S",
+      "value": "figura masculina manifestada",
+      "unknown_reason": null
+    },
+    {
+      "target": "1423:kael:apparent_youth:N:S",
+      "value": "aparência jovem",
+      "unknown_reason": null
+    },
+    {
+      "target": "1423:kael:relative_height:N:S",
+      "value": "alto, sem medida",
+      "unknown_reason": null
+    },
+    {
+      "target": "1423:kael:hair:N:S",
+      "value": "escuros com mechas prateadas",
+      "unknown_reason": null
+    },
+    {
+      "target": "1423:kael:armor_design:N:S",
+      "value": "armadura negra mais leve com prata",
+      "unknown_reason": null
+    },
+    {
+      "target": "1425:kael:eyes_opened:N:S",
+      "value": "abre os olhos",
+      "unknown_reason": null
+    },
+    {
+      "target": "1443:kael:self_reported_aptitudes:R:P",
+      "value": "afirma raciocínio, argumentação, hipóteses e estruturas de poder",
+      "unknown_reason": null
+    },
+    {
+      "target": "1443:kael:world_knowledge_unknown:R:P",
+      "value": null,
+      "unknown_reason": "local e governo desconhecidos por Kael"
+    },
+    {
+      "target": "1447:kael:creator_recognition:R:P",
+      "value": "reconhece Lucas como criador",
+      "unknown_reason": null
+    },
+    {
+      "target": "1453:kael:self_chosen_name:N:S",
+      "value": "KAEL",
+      "unknown_reason": null
+    },
+    {
+      "target": "1457:kael:service_offer:P:P",
+      "value": "oferece análise, diplomacia e planejamento",
+      "unknown_reason": null
+    },
+    {
+      "target": "1457:kael:fallibility_acknowledged:R:P",
+      "value": "reconhece possibilidade de erro",
+      "unknown_reason": null
+    },
+    {
+      "target": "1461:varo:political_discussion_interest:N:S",
+      "value": "interesse em discutir política sem abandonar comando",
+      "unknown_reason": null
+    },
+    {
+      "target": "1465:kael:law_absence_question:N:S",
+      "value": "questiona soldados antes de lei escrita",
+      "unknown_reason": null
+    },
+    {
+      "target": "1467-1469:lucas:humor_reaction:N:S",
+      "value": "Lucas ri, Varo não naquele instante",
+      "unknown_reason": null
+    },
+    {
+      "target": "1475-1477:lucas:physical_weakness:N:S",
+      "value": "pontada e fraqueza nas pernas",
+      "unknown_reason": null
+    },
+    {
+      "target": "1479:varo:physical_support:N:S",
+      "value": "Varo segura braço antes de queda",
+      "unknown_reason": null
+    },
+    {
+      "target": "1481:lucas:armor_no_energy_replenishment:N:S",
+      "value": "calor reduz tensão, sem repor energia gasta",
+      "unknown_reason": null
+    },
+    {
+      "target": "1485-1487:lucas:creation_reserve_estimate:S:S",
+      "value": [
+        1,
+        2
+      ],
+      "unknown_reason": null
+    },
+    {
+      "target": "1489:kael:creation_panel_confirmation:S:S",
+      "value": "Kael criado segundo painel",
+      "unknown_reason": null
+    },
+    {
+      "target": "1491:kael:initial_aptitudes_panel:S:S",
+      "value": "análise, argumentação, negociação e organização; sem conhecimento automático",
+      "unknown_reason": null
+    },
+    {
+      "target": "1493:lucas:conditional_collapse_warning:H:P",
+      "value": "nova criação complexa pode causar colapso grave",
+      "unknown_reason": null
+    },
+    {
+      "target": "1497:kael:creation_restraint_advice:N:S",
+      "value": "recomenda trabalhar com pessoas existentes em vez de criar todas as soluções",
+      "unknown_reason": null
+    },
+    {
+      "target": "1499:varo:agreement:N:S",
+      "value": "Varo concorda",
+      "unknown_reason": null
+    },
+    {
+      "target": "1501-1503:lucas:welcomes_dissent:N:S",
+      "value": "Lucas satisfeito com divergência",
+      "unknown_reason": null
+    },
+    {
+      "target": "1507:lucas:informal_council_meeting:N:S",
+      "value": "reunião informal dos três",
+      "unknown_reason": null
+    },
+    {
+      "target": "1515:kael:future_rights_duties_proposal:P:P",
+      "value": "direitos, deveres, convivência e conflitos aplicáveis ao fundador, proposta futura",
+      "unknown_reason": null
+    },
+    {
+      "target": "1519:varo:territory_food_security_needs:P:P",
+      "value": "território, alimentos e defesa necessários",
+      "unknown_reason": null
+    },
+    {
+      "target": "1537-1539:varo:provisional_military_role:S:S",
+      "value": "comando militar, segurança, operações e logística inicial",
+      "unknown_reason": null
+    },
+    {
+      "target": "1541-1543:kael:provisional_adviser_role:S:S",
+      "value": "assessoria estratégica, negociação e planejamento institucional",
+      "unknown_reason": null
+    },
+    {
+      "target": "1545:world:no_formal_institution_or_claim:S:S",
+      "value": {
+        "formal_institution_established": false,
+        "territorial_claim": false
+      },
+      "unknown_reason": null
+    },
+    {
+      "target": "1549:kael:justice_conflict_question:N:S",
+      "value": "pergunta sobre justiça entre povos desconfiados",
+      "unknown_reason": null
+    },
+    {
+      "target": "1551:lucas:governance_reflection:N:S",
+      "value": "reflexão sobre dificuldade de construir nação",
+      "unknown_reason": null
+    },
+    {
+      "target": "1561-1565:patrulha-oriental:one_returns_injured:N:S",
+      "value": "um batedor retorna mancando, escudo e armadura atingidos",
+      "unknown_reason": null
+    },
+    {
+      "target": "1575:patrulha-oriental:armed_observers_report:R:P",
+      "value": "relata homens com bestas escondidos",
+      "unknown_reason": null
+    },
+    {
+      "target": "1579:patrulha-oriental:enemy_count_minimum_report:R:P",
+      "value": {
+        "minimum": 6,
+        "maximum": null
+      },
+      "unknown_reason": null
+    },
+    {
+      "target": "1583:patrulha-oriental:separation_report:R:P",
+      "value": "três separados durante retirada e buscaram ravina segundo relato",
+      "unknown_reason": null
+    },
+    {
+      "target": "1589:patrulha-oriental:no_death_witnessed:R:P",
+      "value": "nenhuma queda testemunhada",
+      "unknown_reason": null
+    },
+    {
+      "target": "1593:patrulha-oriental:three_missing:N:S",
+      "value": 3,
+      "unknown_reason": null
+    },
+    {
+      "target": "1597:patrulha-oriental:covered_cart_unknown_report:R:P",
+      "value": "carroça coberta, carga e símbolos desconhecidos",
+      "unknown_reason": null
+    },
+    {
+      "target": "1603:patrulha-oriental:arrow_shooter_unknown:R:P",
+      "value": null,
+      "unknown_reason": "autor do disparo não visto"
+    },
+    {
+      "target": "1607:kael:attack_hypotheses:H:U",
+      "value": "detecção, defesa de posto ou emboscada são hipóteses",
+      "unknown_reason": null
+    },
+    {
+      "target": "1611:varo:three_exposed_assessment:R:P",
+      "value": "três expostos segundo Varo",
+      "unknown_reason": null
+    },
+    {
+      "target": "1615:mensageiro-cavaleiro-sem-nome:waiting_and_reaction_report:R:P",
+      "value": "relato de emissário aguardando e inquieto após luz",
+      "unknown_reason": null
+    },
+    {
+      "target": "1621:patrulha-oriental:three_missing:N:S",
+      "value": 3,
+      "unknown_reason": null
+    },
+    {
+      "target": "1625:lucas:energy_exhaustion:N:S",
+      "value": "energia praticamente esgotada",
+      "unknown_reason": null
+    },
+    {
+      "target": "1629:lucas:delegation_need:N:S",
+      "value": "necessidade de delegar decisões",
+      "unknown_reason": null
+    },
+    {
+      "target": "1637-1638:lucas:conscious_exhausted_armor_active:S:S",
+      "value": {
+        "conscious": true,
+        "exhausted": true,
+        "armor_active": true
+      },
+      "unknown_reason": null
+    },
+    {
+      "target": "1639-1640:lucas:creation_reserve_estimate:S:S",
+      "value": [
+        1,
+        2
+      ],
+      "unknown_reason": null
+    },
+    {
+      "target": "1641-1642:legiao:last_count_alive:S:S",
+      "value": 300,
+      "unknown_reason": null
+    },
+    {
+      "target": "1643-1644:patrulha-oriental:one_returned_three_no_contact:S:S",
+      "value": {
+        "returned_injured": 1,
+        "no_contact": 3
+      },
+      "unknown_reason": null
+    },
+    {
+      "target": "1645-1646:kael:creation_confirmation:S:S",
+      "value": "Kael criado",
+      "unknown_reason": null
+    },
+    {
+      "target": "1647-1648:chefe-orc-sem-nome:alive_custody:S:S",
+      "value": "prisioneiro vivo sob custódia",
+      "unknown_reason": null
+    },
+    {
+      "target": "1649-1650:mensageiro-cavaleiro-sem-nome:awaiting:S:S",
+      "value": "emissário aguardando",
+      "unknown_reason": null
+    },
+    {
+      "target": "1651-1652:world:kingdom_not_founded:S:S",
+      "value": false,
+      "unknown_reason": null
+    },
+    {
+      "target": "1654:world:record_temporal_cutoff:M:P",
+      "value": "últimos números disponíveis, sujeitos a novos relatórios",
+      "unknown_reason": null
+    },
+    {
+      "target": "1656:world:chapter_header_repetition:M:P",
+      "value": "cabeçalho capítulo 5 dentro da resposta, repetição a verificar na fonte posterior",
+      "unknown_reason": null
+    },
+    {
+      "target": "1660:varo:rescue_proposal:P:P",
+      "value": "propõe resgate controlado sem deslocar toda Legião",
+      "unknown_reason": null
+    },
+    {
+      "target": "1664:kael:diplomatic_proposal:P:P",
+      "value": "propõe aproveitar oportunidade diplomática",
+      "unknown_reason": null
+    },
+    {
+      "target": "1668-1672:author:decision_pending:O:U",
+      "value": "decisão ainda pendente",
+      "unknown_reason": null
+    },
+    {
+      "target": "1678:world:kingdom_not_founded:N:S",
+      "value": false,
+      "unknown_reason": null
+    },
+    {
+      "target": "485:chefe-orc-sem-nome:creation_metaphor_report:R:P",
+      "value": "metáfora atribuída ao prisioneiro: soldados de ferro nascidos de feitiço",
+      "unknown_reason": null
+    },
+    {
+      "target": "523:vale-sem-nome:horn_eastern_direction:N:S",
+      "value": "chifre ouvido vindo de além das colinas orientais",
+      "unknown_reason": null
+    },
+    {
+      "target": "559:chefe-orc-sem-nome:enemy_awareness_claim:R:P",
+      "value": "alega que força externa já sabe do combate",
+      "unknown_reason": null
+    },
+    {
+      "target": "579:chefe-orc-sem-nome:conditional_threat_report:R:P",
+      "value": "ameaça condicional caso a Bandeira Cinzenta os encontre",
+      "unknown_reason": null
+    },
+    {
+      "target": "1431:kael:initial_observation:N:S",
+      "value": "examina prisioneiro, estandartes e soldados",
+      "unknown_reason": null
+    },
+    {
+      "target": "1433:kael:first_utterance:N:S",
+      "value": "primeira fala localizada: manifesta interesse",
+      "unknown_reason": null
+    }
+  ],
+  "semantic_certification": false,
+  "promotion": false
+}
