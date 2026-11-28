@@ -1059,7 +1059,67 @@ def verify_book_v_62(root,archive):
     require(audit["production_gate"]=="HOLD" and all(not e["promotion"] for e in audit["overlays"]) and not any(audit[k] for k in ("canon_changed","official_checkpoint_changed","semantic_certification","independent_review","promotion")),"audit")
     return {"status":"PASS_NATIVE_BOOK_V_0062_COMPLETE","cycle_status":"PASS_STAGING_ONLY","macro_metrics":metrics,"cycle_lines":lines,"cycle_records":records,"session_lines":t["session_lines"],"session_records":t["session_records"],"staging_records":t["staging_records"],"book_v_records":t["book_v_records"],"book_v_lines":t["book_v_lines"],"authority_counts":dict(counts),"visibility_counts":dict(vis),"axes":sorted(axes),"next_line":60931,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False}
 
+
+def verify_book_v_65(root,archive):
+    from collections import Counter
+    from hashlib import sha256
+    root=Path(root);archive=Path(archive)
+    prior=verify_book_v_62(root,archive)
+    c0=read(root,ROOT+"recovery-checkpoint-0062-validated.json","b0c875f4974db1be2c8f06df76b2d0fd61d5414f")
+    old=read(root,c0["cycle_review_path"],c0["cycle_review_blob"])
+    require(prior["status"]=="PASS_NATIVE_BOOK_V_0062_COMPLETE" and old["status"]=="PASS_STAGING_ONLY" and c0["staging_records"]==3869,"prior gate")
+    q=read(root,"audit/omega008-c/bulk-macro-queue.json","e5a5f9e358d20acf8559f6313c2da24b64665f48")["macros"]
+    cache=SourceCache(archive,read(archive,"history/sources/MANIFEST.json","2048141263f66151230119af9b0ee51796ac846b"))
+    audit=read(root,ROOT+"macros-0063-0065-review-pending.json","3fb2e673739d82bdff688e8f400fc44c1c18bc01")
+    require(audit["previous_cycle_blob"]==c0["cycle_review_blob"] and audit["previous_checkpoint_blob"]=="b0c875f4974db1be2c8f06df76b2d0fd61d5414f" and [g["macro"] for g in audit["macros"]]==[63,64,65],"scope")
+    ids=set()
+    for f in (root/ROOT).glob("*.json"):
+        if f.name.startswith("partial-macro-0063-") or f.name.startswith("partial-macro-0064-") or f.name.startswith("partial-macro-0065-"):continue
+        obj=json.loads(f.read_bytes())
+        rows=obj.get("records")
+        if isinstance(rows,list):
+            ids.update(x["id"] for x in rows if isinstance(x,dict) and "id" in x)
+    counts=Counter();vis=Counter();axes=set();lines=0;records=0;metrics=[];prev="b0c875f4974db1be2c8f06df76b2d0fd61d5414f";new_ids=set()
+    for g in audit["macros"]:
+        n=g["macro"];m=q[n-1];source=cache.get(m["source"])
+        cp=read(root,g["checkpoint"],g["checkpoint_blob"]);r=read(root,g["receipt"],g["blob"],cp["receipt_sha256"])
+        require(r["previous_checkpoint_blob"]==cp["previous_checkpoint_blob"]==prev and r["cycle_review_blob"]==c0["cycle_review_blob"] and r["release_blob"]==c0["release_blob"] and r["previous_macro_id"]==m["previous_macro"] and r["official_unit_seal"]==m["unit_seal"] and cp["next_macro"]==q[n],"chain")
+        prev=g["checkpoint_blob"]
+        require(r["range"]==[m["start"],m["end"]]==r["macro_range"]==cp["macro_range"] and cp["native_validation"]=="PENDING" and cp["next_line"]==q[n]["start"],"geometry")
+        result=validate_receipt(r,m,source,r["project"],ARCHIVE,previous_ids=ids|new_ids,expected_range=r["range"])
+        require(result["lines"]==g["lines"]==m["lines"] and result["records"]==g["records"]==cp["records"] and result["axes_represented"]==g["axes"],"metrics")
+        for x in r["records"]:
+            e=x["evidence"]
+            require(x["book"]=="V" and "NO_CHARACTER_INJECTION" in x["visibility"] and not x["promotion"],"scope")
+            require((e["role"]=="Prompt")==(x["authority"]=="AUTHOR_DIRECTION_NOT_EVENT"),"authority")
+            require(x["type"]!="knowledge" or x["visibility"].startswith("RESTRICTED"),"privacy")
+            require(x["type"] not in ("reader_scene","rejected_version") or x["visibility"].startswith("READER_ONLY"),"reader")
+            if 68167<=e["line_start"]<=69968:
+                require(x["authority"]=="METADATA_NOT_EVENT" and x["type"]=="rejected_version","rejected D520")
+            if 91245<=e["line_start"]<=91475:
+                require(x["type"]=="reader_scene" and x["visibility"].startswith("READER_ONLY"),"D526 reader")
+            new_ids.add(x["id"]);counts[x["authority"]]+=1;vis[x["visibility"]]+=1
+        lines+=g["lines"];records+=g["records"];axes.update(g["axes"])
+        require(cp["staging_records"]==3869+records and cp["book_counts"]["V"]==974+records and cp["official_records"]==1656 and cp["production_gate"]=="HOLD" and not any(cp[k] for k in ("canon_changed","official_checkpoint_changed","semantic_certification","independent_review","promotion")),"gate")
+        metrics.append({"macro":n,"lines":g["lines"],"records":g["records"],"axes":g["axes"]})
+    for e in audit["findings"]:
+        s=cache.get(e["source"]);lo,hi=e["range"]
+        require(not e["promotion"] and sha256("\n".join(s[0][lo-1:hi]).encode()).hexdigest()==e["sha256"],"anchor")
+    s=cache.get(q[62]["source"])[0]
+    require(len(s)==101429 and s[60929]=="Miren sorriu." and s[60931]=="MIREN - Então é isso que faremos.","continuity")
+    require("A versão anterior do Dia 520 fica desconsiderada" in s[70016] and "Voo livre: não demonstrado."==s[61281].strip() and "Voo livre de ARGOS: não realizado."==s[67455].strip(),"version and prior cative")
+    require("sem tripulação" in s[73874] and "Velocidade extrema e supressão de estrondo sônico" in s[73880] and "31,6 m"==s[74842].strip() and "39,2 toneladas"==s[74855].strip(),"D520 D521")
+    require("320 hectares"==s[75591].strip() and "2.400 × 48 m"==s[75599].strip() and "27,6 km"==s[76854].strip() and "78 km/h"==s[76862].strip(),"field and flight 002")
+    require("33,2 km"==s[78698].strip() and "Total físico conhecido: 60."==s[79245].strip() and "Serviço regular de transporte: ainda não iniciado."==s[79251].strip() and "Nenhum"==s[80915].strip(),"Eixo and D522")
+    require("003 - Primeiro voo tripulado"==s[86563].strip() and "43 min"==s[86569].strip() and "36,8 km"==s[86573].strip() and "138 km/h"==s[86577].strip() and "520 m"==s[86581].strip(),"D524")
+    require("Prisma da Seiva" in s[89234] and "2 mudas com melhora parcial"==s[91114].strip() and "Proposta formulada"==s[91118].strip() and "parece ter sido copiada de outra" in s[90302],"Miren and HZ1")
+    require("exclusivamente do leitor" in s[91240] and "Sete confirmadas" in s[91402] and q[65]["start"]==91476 and q[66]["source"]!=q[65]["source"],"reader and boundary")
+    t=audit["totals"]
+    require(lines==t["lines"]==30545 and records==t["records"]==205 and len(new_ids)==records and t["staging_records"]==3869+records and t["book_v_records"]==974+records and t["book_v_lines"]==209419,"totals")
+    require(audit["cycle_status"]=="OPEN_0063_0067_OR_EARLIER_BOUNDARY" and audit["production_gate"]=="HOLD" and all(not x["promotion"] for x in audit["overlays"]) and not any(audit[k] for k in ("canon_changed","official_checkpoint_changed","semantic_certification","independent_review","promotion")),"audit")
+    return {"status":"PASS_NATIVE_BOOK_V_0065_COMPLETE","review_status":"PASS_STAGING_ONLY","cycle_status":audit["cycle_status"],"macro_metrics":metrics,"session_lines":lines,"session_records":records,"staging_records":t["staging_records"],"book_v_records":t["book_v_records"],"book_v_lines":t["book_v_lines"],"authority_counts":dict(counts),"visibility_counts":dict(vis),"axes":sorted(axes),"next_line":91476,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False}
+
 def main():
     p=argparse.ArgumentParser();p.add_argument("--engine-root",default=".");p.add_argument("--archive-root",required=True)
-    a=p.parse_args();print(json.dumps(verify_book_v_62(a.engine_root,a.archive_root),sort_keys=True))
+    a=p.parse_args();print(json.dumps(verify_book_v_65(a.engine_root,a.archive_root),sort_keys=True))
 if __name__=="__main__":main()
