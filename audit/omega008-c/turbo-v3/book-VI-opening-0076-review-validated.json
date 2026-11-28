@@ -1,0 +1,162 @@
+{
+  "schema": "OMEGA_BOOK_VI_OPENING_0076_VALIDATED_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "previous_checkpoint_blob": "75c1406ed2991e37681c96db3804ffe37aecc92e",
+  "book_v_boundary_blob": "2a4f9816734f2051aa7d60fe19931b09776cc360",
+  "macro": {
+    "macro": 76,
+    "receipt": "audit/omega008-c/turbo-v3/partial-macro-0076-01.json",
+    "blob": "5880fd932147df395a9876c37b7f30580d4e7005",
+    "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0076-closure-pending.json",
+    "checkpoint_blob": "a508e46192f4754e8da68539e411cbe42a8d941c",
+    "records": 12,
+    "lines": 3608,
+    "axes": [
+      1,
+      2,
+      3,
+      4,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "source_provenance": {
+      "kind": "CLOSED_PROSE",
+      "episode_id": "LVI-C01-PI-D538-REAUTHORIZED-R2-AUTHOR-SOURCE",
+      "sequence": 10,
+      "previous_episode_id": "LV-C16-PV-D537-AUTHOR-SOURCE",
+      "previous_head_sha256": "58f615e6fe25297fc7c3f6c36c1901bc6cd1fdd4c63a3c4942bb0e62db4c68ed",
+      "closure_blob": "45697d143232f3f481ff99354e0fe88361a0d3ed",
+      "draft_blob": "089a9e483edb8f96259822d62244d8f9a72f6818",
+      "immutable_manifest_blob": "cfbb2bee8df025bd4fcc1e9701aa5b9f8f65e39a",
+      "narrative_blob": "d5c53df85803165d9cb076d02549a947f3ec9707",
+      "full_story_sha256": "fd6aa23fa1ea5e929d81e0aaebc7776ca30a697120f20d310f9b3fd1f25f98ee",
+      "prose_sha256": "61bb7aa6572fa4db908741ef85e6b5793d3a7ca23c329bc1827200b5e61598fb",
+      "prose_lines": 3608,
+      "role_adapter": "Response for native receipt compatibility only; closure authority separate",
+      "closure_event_count": 8,
+      "closure_knowledge_count": 6,
+      "reviewed_events_blob": "ff50631bad784e4030c8dacaf21cf0e0dc77c108",
+      "reviewed_knowledge_blob": "f2f7921556e20401b583302666b69c6943865306",
+      "choice_sha256": "664f47addc9ebba558bf34e5808c83ed3f42fcf71a00da6cb5e4cd61536a3b8f",
+      "chosen_option": 4,
+      "book_closed": false,
+      "editorial_header": "PARTE I DE V · A CIDADE QUE CABIA EM UM SONHO",
+      "ratification_kind": "VERBATIM_AUTHOR_RETRO_RATIFICATION_20261119"
+    },
+    "continuity": {
+      "previous_episode": "LV-C16-PV-D537-AUTHOR-SOURCE",
+      "previous_day": 537,
+      "previous_clock": "23h46",
+      "first_day": 538,
+      "first_clock": "06h08",
+      "end_day": 538,
+      "end_clock": "11h32",
+      "end_location": "Casa Cívica, Três Arcos"
+    },
+    "original_events": 8,
+    "original_knowledge": 6
+  },
+  "authority_pins": {
+    "opening_approval": {
+      "path": "author-approvals/LVI-OPEN.json",
+      "blob": "946268813b47c781be957a7852e8d7ecac6085a0"
+    },
+    "reauthorization": {
+      "path": "author-approvals/LVI-OPEN-REAUTHORIZED-20261119.json",
+      "blob": "1b2e32b0ec8a8391df7ac6911e83c3044e82e161"
+    },
+    "ratification": {
+      "path": "author-approvals/LVI-C01-D538-D539-RATIFICATION-20261119.json",
+      "blob": "844d36b83bfa4ed0bcbad75c9af9ff962d9a5b9d"
+    },
+    "trigger": {
+      "path": "canon/RETRO_RATIFY_LVI_20261119.json",
+      "blob": "da7646620bee7daa39f424486f55e34b13737fb5"
+    },
+    "rejection": {
+      "path": "editorial/rejections/LVI-C01-PI-D538-AUTHOR-SOURCE.json",
+      "blob": "ecc713dee1824150c9bf8b7282bfdcec304076d9"
+    },
+    "caedren": {
+      "path": "editorial/recovery/reconciliations/LVI-C01-PIII-D539-AUTHOR-SOURCE.json",
+      "blob": "90868423eb984be9302f83017cacca993f851387"
+    },
+    "export": {
+      "path": "history/source_exports/ChatGPT-CRONICAS_DE_UM_NOVO_MUNDO_9-20261119-1028.txt",
+      "blob": "980dd7a347a119cefbb0c2b4c25bb9961843b092",
+      "sha256": "ac693e60ec6e9dfef2ffee6fc423641541cb52fd53bbd7ffebc9691822be95f9"
+    },
+    "rejected_draft": {
+      "path": "episodes/LVI-C01-PI-D538-AUTHOR-SOURCE/draft/narrativa_integral.md",
+      "blob": "094d24d239584436168bbe13f1edac09080a0cda",
+      "sha256": "bde62ddbd8ac0977925a7ed74e9abb09c461d53cb08f36a1e245ab20a212a3da"
+    },
+    "source_proofs": [
+      "3b4e3060e6f76a47b8399a4135fef1e9672eef5b",
+      "c66d5204c556b7268a9a6744c420f975103a0dca",
+      "06ab1f5f61910ad6d3d84c6ddfbc488e22e2bfbb"
+    ],
+    "continuity_reviews": [
+      "fa3946c64e3cc3c1bc49627d7e1020947ee7b206",
+      "0083c9ea72c33e6c8dfbac05894bb1765f580cdc",
+      "59fbef6c63f2d66da41b8c1377ed57618e4972a3"
+    ]
+  },
+  "ratification_scope": "EXACT_THREE_EPISODES; 4,4,0; 0 is ratification, not continuation choice",
+  "rejected_r17_excluded": true,
+  "exact_original_slices_verified": 3,
+  "caedren_uncertainty_preserved": true,
+  "overlays": [
+    {
+      "id": "R17_REJECTED",
+      "status": "REJECTED_BY_AUTHOR_NEVER_EVENT",
+      "promotion": false
+    },
+    {
+      "id": "R2_OPEN",
+      "status": "AUTHOR_REAUTHORIZED_AND_VERBATIM_RATIFIED",
+      "promotion": false
+    },
+    {
+      "id": "D539_CAEDREN",
+      "status": "LITERAL_PRESENCE_ONLY_TRAVEL_AFFILIATION_COMMAND_UNPROVED",
+      "promotion": false
+    },
+    {
+      "id": "D539_RATIFICATION_0",
+      "status": "NOT_A_CONTINUATION_CHOICE",
+      "promotion": false
+    }
+  ],
+  "status": "PASS_STAGING_ONLY",
+  "native_validation": "PASS",
+  "validated_commit": "d993b5889a769435aaf1f54d765c49d23c1a3610",
+  "native_evidence_path": "audit/omega008-c/turbo-v3/cycle-0076-0080-native-evidence.json",
+  "native_evidence_blob": "2dca547fa64158a84b92758d18ba9eeed9ac511b",
+  "pending_review_blob": "b99a79c2fce003cd8c6cf0ca7b7873bfcf2b92ce",
+  "production_gate": "HOLD",
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "semantic_certification": false,
+  "independent_review": false,
+  "promotion": false
+}
