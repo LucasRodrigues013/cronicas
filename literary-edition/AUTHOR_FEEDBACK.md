@@ -1,0 +1,10 @@
+# Histórico autoral — Literary Edition
+Resumo consolidado de decisões e críticas da conversa de 28/11/2026. Não é transcrição literal nem registro de aprovação final do manuscrito.
+
+- Fundação: fantasia épica 120–150 mil palavras por volume, cinco atos, originalidade e expansão dos acontecimentos não vividos no RPG; edição separada sem alterar cânone. Prólogo com Terra, morte, guerra paralela, CREATION, chegada ao vale.
+- Após V0.1: abertura não deve antecipar morte; construir pessoa e emoção; avaliar antes de entregar; trabalhar capítulo por capítulo.
+- Após V0.2: início bom, mas ritmo apressado e emoção insuficiente. Um dia completo, relações, café, transporte, cidade, escritório, estranhezas e dores de cabeça. Guerra em outra realidade, atmosfera própria. PDF para leitura; foco no prólogo.
+- Após V0.3: acrescentar apartamento com vista, carro, moto, violão, mulher, amigos, planos de sábado/domingo, trabalho e liderança, happy hour e retorno por aplicativo; tragédia mais impactante envolvendo proteção de alguém. Guerra em fases ao longo do dia, portador envelhecido e motivo para procurar fora do mundo. Substituir seleção de cinco habilidades por consentimento de segunda chance no hospital, experiência extracorpórea, visão do planeta, CREATION recebido e orientação limitada, chegada ao vale. Não antecipar identidade nem cosmologia.
+- Solicitação atual: refinamento exclusivamente do prólogo, PDF integral A5 para aprovação, guardar progresso, dados, documentos e decisões em seção separada do GitHub. Não avançar capítulo 1 sem aprovação. V0.5 é candidata à leitura, não aprovada.
+
+Os personagens fictícios, ambiente urbano não nomeado e detalhes da guerra são expansões editoriais. Aprovação do livro nunca implica aprovação no RPG.
