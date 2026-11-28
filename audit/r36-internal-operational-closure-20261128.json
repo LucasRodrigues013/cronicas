@@ -1,0 +1,561 @@
+{
+  "schema": "worldroot-r36-internal-operational-closure-v1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "date": "2026-11-28",
+  "designation": "R36 EVOLUTION 7 — INTERNAL OPERATIONAL CYCLE CLOSED; CONTROLLED RELEASE ACTIVE",
+  "author_direction": "Continue and finalize Level 7 work; previous explicit direction waives separate chat reviewers for internal assessment and authorizes controlled operational activation without canon change.",
+  "authority": {
+    "active_engine": "d2513a9de30790d20aaf5eb830f56f80ac026632",
+    "archive_config": "ad1277933f341dad1d1a6b3edd25505755515241",
+    "review_checkpoint": "c73b60d49a096e98f74c48d170b1aff19090fd49",
+    "request_blob": "2546330ab482c507ec4d0bafee3d4f42a0a9333c",
+    "editorial_policy_blob": "615151fc89228ddb222ea01613c23e977f8c418b",
+    "editorial_version": 22,
+    "rules": 130
+  },
+  "evidence": {
+    "release_run": 46157741217,
+    "config_run": 46157929574,
+    "official_regression": 846,
+    "previous_review_regression": 989,
+    "previous_review_regression_separate_denominator": true,
+    "global_groups": 4941,
+    "closed_events": 754,
+    "knowledge_rows": 1468,
+    "advisory_requirements_with_candidates": 39,
+    "advisory_locators": 117,
+    "advisory_eligible_groups": 2904,
+    "excluded_nonpublic_anchor_groups": 483,
+    "semantic_review_prior_targets": 8
+  },
+  "current_chat_review": {
+    "profile": "same_conversation_nonblind_development_review",
+    "population": "All 46 already reviewed requirements of archived D580 request; assess cited source scope, not actual advisory top-3 relevance or new narrative",
+    "historical_requirements": 39,
+    "scoped_supported": 31,
+    "partial_original_anchor": 8,
+    "author_rules_confirmed": 7,
+    "rows": [
+      {
+        "id": "couple",
+        "domain": "relationship",
+        "role": "Response",
+        "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+        "line_start": 679,
+        "line_end": 710,
+        "anchor_sha": "575285fa22f34dfd1b889370e1fd5a8130f38e92215a87f93a898893f0a86af9",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "mirenlook",
+        "domain": "identity",
+        "role": "Response",
+        "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+        "line_start": 31,
+        "line_end": 65,
+        "anchor_sha": "af1f67663685ef97e641eb3ac9bff33c8c9c8cfd188a6a492df9cc3c67439b29",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "cadence",
+        "domain": "identity",
+        "role": "Response",
+        "source": "LVI-C06-PV-D568-AUTHOR-SOURCE",
+        "line_start": 44,
+        "line_end": 204,
+        "anchor_sha": "5829a036738211ca7ff56231e714d1a8554dd35a3ba67eb4b8e98130ce87c1e8",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "rail",
+        "domain": "world",
+        "role": "Response",
+        "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+        "line_start": 171,
+        "line_end": 255,
+        "anchor_sha": "e48b406a5974583effc92b526a8e17e667ab1b8cce4a830f2ae842f3fcd16080",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "train",
+        "domain": "inventory",
+        "role": "Response",
+        "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+        "line_start": 609,
+        "line_end": 663,
+        "anchor_sha": "1d49d945dd24f4ada43b68115a7eb944e9542fb5e47dd391fe2ea9ebd8b44c10",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "garran",
+        "domain": "identity",
+        "role": "Response",
+        "source": "LVI-C08-PIV-D577-AUTHOR-SOURCE",
+        "line_start": 191,
+        "line_end": 235,
+        "anchor_sha": "df381e859e40bf8761f6bf5e205f13525dd9bbab2ef0e6c706a38a6533aac1e3",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "citizen",
+        "domain": "event",
+        "role": "Response",
+        "source": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+        "line_start": 215,
+        "line_end": 277,
+        "anchor_sha": "c8663ae6a4c89303adba94d859d3d121cf335cb86871559fa79feb140234d473",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "argos",
+        "domain": "inventory",
+        "role": "Response",
+        "source": "LVI-C04-PIV-D557-AUTHOR-SOURCE",
+        "line_start": 333,
+        "line_end": 429,
+        "anchor_sha": "55ff491337720e132f2cde02b654d08ddd93772d17f7da42c7dd5314d08b46c7",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "edrik",
+        "domain": "identity",
+        "role": "Response",
+        "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+        "line_start": 94,
+        "line_end": 104,
+        "anchor_sha": "43bf302088b1e8838d2b9e7acb05209f228cb4e73e82aaddd8c570d1f0d49fb5",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "flight",
+        "domain": "event",
+        "role": "Response",
+        "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+        "line_start": 137,
+        "line_end": 161,
+        "anchor_sha": "c4754a2b15a23306c53de68abed8af8cfe3b9b9421f9ed595a64ffe32051dee3",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "cooperation",
+        "domain": "promise",
+        "role": "Response",
+        "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+        "line_start": 459,
+        "line_end": 503,
+        "anchor_sha": "d86a7f471e2bcb8cf1cab3c7872fea0af06b9361ae96d347ae423877b2b3bcab",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "ivena",
+        "domain": "identity",
+        "role": "Response",
+        "source": "LVI-C08-PIV-D577-AUTHOR-SOURCE",
+        "line_start": 111,
+        "line_end": 185,
+        "anchor_sha": "ea2d4deb8c3e68f04944cc51c29fd8b21e00fc24baa228a7f26ffbb6184cffef",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "maelis",
+        "domain": "identity",
+        "role": "Response",
+        "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+        "line_start": 439,
+        "line_end": 457,
+        "anchor_sha": "9be923719636d769587203d34f81da5ac8b6d90cf6a01efc28c10ab241c67bce",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "genese",
+        "domain": "power",
+        "role": "Response",
+        "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+        "line_start": 201,
+        "line_end": 249,
+        "anchor_sha": "378db5104dade1d40538bd265f68db60c6a705d255f58dc8287f44bfd9f378f0",
+        "status": "PARTIAL_ORIGINAL_ANCHOR",
+        "reservation": "Cited span supports observed creation and independent infrastructure energy; full authority is a separate approved rule P114, not a measured demonstration of every capability."
+      },
+      {
+        "id": "friend",
+        "domain": "relationship",
+        "role": "Response",
+        "source": "LVI-C06-PV-D568-AUTHOR-SOURCE",
+        "line_start": 1060,
+        "line_end": 1110,
+        "anchor_sha": "c3530c8f1ef286e42473488ad5ad3f1fcc389c8cd29e40c1a466fdd07dc836d5",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "custody",
+        "domain": "knowledge",
+        "role": "Response",
+        "source": "LVI-C08-PIII-D576-AUTHOR-SOURCE",
+        "line_start": 290,
+        "line_end": 322,
+        "anchor_sha": "782c2e6a761f84436246fd74ba7a9118a8263fb1f3aec0cab1786e511589ae76",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "letterpromise",
+        "domain": "promise",
+        "role": "Response",
+        "source": "LVI-C08-PIII-D576-AUTHOR-SOURCE",
+        "line_start": 70,
+        "line_end": 96,
+        "anchor_sha": "105855b937635b0d9855c0f435624d141068732cff67e88fa89ad7060ef9b03c",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "conference",
+        "domain": "event",
+        "role": "Response",
+        "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+        "line_start": 395,
+        "line_end": 437,
+        "anchor_sha": "01594df1b9edde8f976c541620b4289952cc44e16e962a2dfba105ed5180735e",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "fashion",
+        "domain": "inventory",
+        "role": "Response",
+        "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+        "line_start": 259,
+        "line_end": 291,
+        "anchor_sha": "154de5b2477cd4f311fcc361c3fcf7256d464579afc0cd62ee1bba973d59e762",
+        "status": "PARTIAL_ORIGINAL_ANCHOR",
+        "reservation": "Cited span supports commissioned designs and planned adjustments; later D578 lines 343–385 corroborate completed adjustments for the two opening outfits, not all delegation clothing."
+      },
+      {
+        "id": "ilva",
+        "domain": "relationship",
+        "role": "Response",
+        "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+        "line_start": 89567,
+        "line_end": 89691,
+        "anchor_sha": "592f664abaa9472c6defede0b1508294c2e6ed4a42c6e60cd88864ae04a16ec6",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "astra",
+        "domain": "identity",
+        "role": "Response",
+        "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+        "line_start": 343,
+        "line_end": 385,
+        "anchor_sha": "5c6b457c378fbb80721106a3af73b74318ee8dbd4c1aaef80a484777cb55812e",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "ordan",
+        "domain": "identity",
+        "role": "Response",
+        "source": "LVI-C08-PIII-D576-AUTHOR-SOURCE",
+        "line_start": 54,
+        "line_end": 96,
+        "anchor_sha": "43d4f271a79d97fe609550b71681cbfafbd2a3362a3d0153176a6a7717a0f289",
+        "status": "PARTIAL_ORIGINAL_ANCHOR",
+        "reservation": "Cited span supports woodworking, correspondence and conditional consent; exact current location of sister and her safety not established."
+      },
+      {
+        "id": "ordangift",
+        "domain": "inventory",
+        "role": "Response",
+        "source": "LVI-C08-PIII-D576-AUTHOR-SOURCE",
+        "line_start": 584,
+        "line_end": 600,
+        "anchor_sha": "700e03481e37f6342c92fd550b3794ddb181c3e3c9973bebd87c8585a409a618",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "lysa",
+        "domain": "identity",
+        "role": "Response",
+        "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+        "line_start": 105,
+        "line_end": 135,
+        "anchor_sha": "f7af1e30e2edd2530e656983b7a7c757c86584934513e922d376e701983f03f9",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "velkar",
+        "domain": "event",
+        "role": "Response",
+        "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+        "line_start": 539,
+        "line_end": 563,
+        "anchor_sha": "e6d1f298cab8619c5c0fbf22ee49d4bef2e668476d9bffbe55023367933dfc7e",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "bressa",
+        "domain": "event",
+        "role": "Response",
+        "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+        "line_start": 567,
+        "line_end": 583,
+        "anchor_sha": "ba1c960006a5dd7e74ca7d110696e6da84252143df0658d3d60cd51194e86276",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "sea",
+        "domain": "location",
+        "role": "Response",
+        "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+        "line_start": 587,
+        "line_end": 603,
+        "anchor_sha": "c2d251defc049b9cd35259e6b339bfc7df7298d048e2f9b4e2e1cc122d9ba6cd",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "kael",
+        "domain": "identity",
+        "role": "Response",
+        "source": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+        "line_start": 132,
+        "line_end": 164,
+        "anchor_sha": "1f28de07246efa03a45c840e34aede5e41264f8ceb4fb478171f38ca814ff982",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "departure",
+        "domain": "promise",
+        "role": "Response",
+        "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+        "line_start": 439,
+        "line_end": 457,
+        "anchor_sha": "9be923719636d769587203d34f81da5ac8b6d90cf6a01efc28c10ab241c67bce",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "night",
+        "domain": "relationship",
+        "role": "Response",
+        "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+        "line_start": 679,
+        "line_end": 725,
+        "anchor_sha": "aa96db122eb6ef0466909ec58f9d46e5bce6898d7750038549e339771509a3df",
+        "status": "PARTIAL_ORIGINAL_ANCHOR",
+        "reservation": "Cited span supports relationship, home scene and unresolved letter; Talis not mentioned in this span; do not infer her status from it."
+      },
+      {
+        "id": "lived",
+        "domain": "author_rule",
+        "role": "AuthorPolicy",
+        "source": "AUTHOR_POLICY",
+        "line_start": 2171,
+        "line_end": 2173,
+        "anchor_sha": "83e26d8188c306aef1c43332729303fce8e11cedc6fecd251e63701a5bc0a3c3",
+        "status": "AUTHOR_RULE_CONFIRMED",
+        "rule": "P110"
+      },
+      {
+        "id": "appearance",
+        "domain": "author_rule",
+        "role": "AuthorPolicy",
+        "source": "AUTHOR_POLICY",
+        "line_start": 2189,
+        "line_end": 2191,
+        "anchor_sha": "6d93fef05f2c43c3b78f6f4db38d09f30af31ed8e8910639055fca19f6b8ff9b",
+        "status": "AUTHOR_RULE_CONFIRMED",
+        "rule": "P111"
+      },
+      {
+        "id": "relationships",
+        "domain": "author_rule",
+        "role": "AuthorPolicy",
+        "source": "AUTHOR_POLICY",
+        "line_start": 2209,
+        "line_end": 2211,
+        "anchor_sha": "fea75d43f2e62d114cd69d4f308cba8ad21b24454c88d4eecd17727bf121a71a",
+        "status": "AUTHOR_RULE_CONFIRMED",
+        "rule": "P112"
+      },
+      {
+        "id": "cast",
+        "domain": "author_rule",
+        "role": "AuthorPolicy",
+        "source": "AUTHOR_POLICY",
+        "line_start": 2229,
+        "line_end": 2231,
+        "anchor_sha": "55df5f7e06584baf518a039d8f02c186975a18afd73f4e3d51a58898095b991d",
+        "status": "AUTHOR_RULE_CONFIRMED",
+        "rule": "P113"
+      },
+      {
+        "id": "wonder",
+        "domain": "author_rule",
+        "role": "AuthorPolicy",
+        "source": "AUTHOR_POLICY",
+        "line_start": 2247,
+        "line_end": 2249,
+        "anchor_sha": "0c9cc23c8d8d988108073e78516f727755d10245b652533b29991d80220728ba",
+        "status": "AUTHOR_RULE_CONFIRMED",
+        "rule": "P114"
+      },
+      {
+        "id": "rhythm",
+        "domain": "author_rule",
+        "role": "AuthorPolicy",
+        "source": "AUTHOR_POLICY",
+        "line_start": 2265,
+        "line_end": 2267,
+        "anchor_sha": "455798275a816e8f9b605df38ce5f0dfa0d8813cc0d467c990c8c5385893873f",
+        "status": "AUTHOR_RULE_CONFIRMED",
+        "rule": "P115"
+      },
+      {
+        "id": "design",
+        "domain": "author_rule",
+        "role": "AuthorPolicy",
+        "source": "AUTHOR_POLICY",
+        "line_start": 2337,
+        "line_end": 2339,
+        "anchor_sha": "695484c8c65b85c2a9856cb73a48056efb23a164b48236b970c797fd82601bde",
+        "status": "AUTHOR_RULE_CONFIRMED",
+        "rule": "P119"
+      },
+      {
+        "id": "actualrail",
+        "domain": "event",
+        "role": "Response",
+        "source": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "line_start": 345,
+        "line_end": 375,
+        "anchor_sha": "d1a76768dc46ada4ce09791687c7de3072a87474ec7cc16a31556262d22c8cab",
+        "status": "PARTIAL_ORIGINAL_ANCHOR",
+        "reservation": "Exact cited span supports completion and transfer, not actual remuneration; additional D579 line 229 supports the agreed remunerated arrangement, not settlement."
+      },
+      {
+        "id": "latestcivil",
+        "domain": "event",
+        "role": "Response",
+        "source": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "line_start": 1179,
+        "line_end": 1221,
+        "anchor_sha": "1e48812d2e6d99ab1b33017c8623632d3ccc5abcb3fa6ebb456409591d4b1ebd",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "actualcustody",
+        "domain": "knowledge",
+        "role": "Response",
+        "source": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "line_start": 1243,
+        "line_end": 1297,
+        "anchor_sha": "956bff3acf0cc0f4b24f20b462e619b21647ebbf81c93371bdf666ca3642c1a4",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "currentlocations",
+        "domain": "location",
+        "role": "Response",
+        "source": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "line_start": 1839,
+        "line_end": 1875,
+        "anchor_sha": "915e289f41c7c7b8b79d1d0f33380ae21a64106a034f02b3e1279a387f91c371",
+        "status": "PARTIAL_ORIGINAL_ANCHOR",
+        "reservation": "Cited span supports decision to remain that night and intended return; distinguish intended return from completed return."
+      },
+      {
+        "id": "networklimits",
+        "domain": "world",
+        "role": "Response",
+        "source": "LVI-C07-PII-D570-AUTHOR-SOURCE",
+        "line_start": 1948,
+        "line_end": 1974,
+        "anchor_sha": "9a514f19488e2d742ce6e6f3002210502b8c37133568b8462392b47b6dbc431b",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "forjaprecision",
+        "domain": "identity",
+        "role": "Response",
+        "source": "LVI-C07-PII-D570-AUTHOR-SOURCE",
+        "line_start": 872,
+        "line_end": 920,
+        "anchor_sha": "8d212859cb8c17792f8c9670f65078556de5e3425b445ad75bb2bbc81a3bd549",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "thalorroute",
+        "domain": "world",
+        "role": "Response",
+        "source": "LVI-C04-PV-D558-AUTHOR-SOURCE",
+        "line_start": 596,
+        "line_end": 648,
+        "anchor_sha": "9e3e66e9737cabb1acf1aeb3ca7300027328b0737aacd7e53ccfbddb943555fa",
+        "status": "PARTIAL_ORIGINAL_ANCHOR",
+        "reservation": "Cited span supports an authorized visit/landing and an observed route segment, not permanent access or the surname by itself."
+      },
+      {
+        "id": "lastnight",
+        "domain": "relationship",
+        "role": "Response",
+        "source": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "line_start": 2261,
+        "line_end": 2363,
+        "anchor_sha": "1f9790a4c1662a7da955532a9d368f281cf291c4c6f6e7c23bdd0f81bd1b84bc",
+        "status": "SUPPORTED_IN_CITED_SCOPE"
+      },
+      {
+        "id": "lysaaction",
+        "domain": "identity",
+        "role": "Response",
+        "source": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+        "line_start": 2005,
+        "line_end": 2041,
+        "anchor_sha": "cbfeaf17b27bee25bc66f3e29242952b6f4d3ccdead8b13ac2297193e08518e4",
+        "status": "PARTIAL_ORIGINAL_ANCHOR",
+        "reservation": "Cited span supports cooperation reporting and authorized future loading verification, not completed new configuration."
+      }
+    ],
+    "independent": false,
+    "representative_accuracy_claim": false,
+    "typed_promotion": false
+  },
+  "gate_disposition": {
+    "G1": "PARTIAL: integrity, exact anchors, internal scoped review; full critical semantic reconciliation remains open",
+    "G2": "WAIVED_FOR_INTERNAL_OPERATION_ONLY; original independent criterion unmet",
+    "G3": "UNMEASURED: representative disjoint benchmark not completed",
+    "G4": "PARTIAL: adaptive contracts available; real recurrence reduction not measured",
+    "G5": "UNMEASURED: no real blind preference",
+    "G6": "CONTROLLED_OPERATIONAL_PREPARATION_PASS; no new episode end-to-end",
+    "G7": "UNMEASURED: no equivalent workload latency measurement",
+    "G8": "CONTROLLED_RELEASE_PASS; independent evaluation custody not established",
+    "G9": "UNMEASURED: independent longitudinal semantic quality",
+    "G10": "AUTHOR_AUTHORIZED_ENGINE_ONLY; formal certification not granted"
+  },
+  "assessment": {
+    "kind": "qualitative engineering assessment by current assistant, not benchmark scores",
+    "architecture": 9.2,
+    "provenance_and_integrity": 9.5,
+    "context_retrieval": 8.5,
+    "semantic_reconciliation": 7.4,
+    "operational_reliability": 8.8,
+    "editorial_controls": 9.3,
+    "empirical_quality_and_adaptation": 7
+  },
+  "decision": {
+    "internal_operational_cycle": "CLOSED_WITH_RESERVATIONS",
+    "active_controlled_release": true,
+    "formal_level7_certification": false,
+    "original_gates_changed": false,
+    "independent_review": false,
+    "canon_changed": false,
+    "narrative_generated": false,
+    "choice_executed": false,
+    "ratification_executed": false,
+    "automatic_adaptation": false
+  },
+  "next": "Return to actual author-controlled narrative workflow. Do not modify D580 until author authorization. Incremental evidence-backed review of focal claims and typed deltas on real use; keep formal measurements explicitly unmeasured. No new mandatory separate chats, no repeating passed recovery.",
+  "limitations": [
+    "Review of cited sources only; compound claims counted by requirement, not atomic assertions. Not independent or held-out; no population precision or recall metric.",
+    "Eight partial original anchors remain reservations, not canon corrections; supplementary sources do not retroactively rewrite archived request.",
+    "846 tests are active release; 989 are separate review branch suite, not additive. Existing workflows verified on D579/D580 archive; no new episode generated.",
+    "No additional tests rerun for documentation-only closure. Active engine pin and archive stay unchanged.",
+    "No private literal narrative or reviewer gold added. Qualitative scores are judgment, not independent metrics."
+  ]
+}
