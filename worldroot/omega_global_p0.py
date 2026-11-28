@@ -71,6 +71,16 @@ def inspect(root,archive):
             original_events+=len(ev);original_knowledge+=len(kn)
         ps=paths_for(root,i);require(bool(ps),"missing receipt files")
         at=lo;num=0;covlines=0;spans=[]
+        header_pins={42:"df70aebc309db67f24a5be40ddd3b76303851a09",45:"4b07608e05ae3b5ebc20d133ba0d96765e5832d9",53:"619e519afcc45bf7f6da92e956dd204b20a05853",57:"c32e350ab924e2c58784bc7946df897991543be4"}
+        if i in header_pins:
+            path=ROOT+"macro-%04d-source-header-metadata.json"%i
+            h=read(root,path,header_pins[i])
+            require(h["source"]==m["source"] and h["range"]==[1,8] and lo==1 and h["source_sha256"]==source[3] and h["promotion"] is False,"header authority")
+            require(h["span_sha256_utf8"]==anchor(source,1,8) and all(v=="Metadata" for v in source[1][:8]) and h["blob_sha1"] in {p[2] for p in source[2] if p[0]<=8 and p[1]>=1},"header provenance")
+            require(h.get("role","Metadata")=="Metadata" and (h.get("disposition")=="NON_NARRATIVE_EXPORT_METADATA" or h.get("authority")=="METADATA_NOT_EVENT"),"header metadata")
+            at=9;covlines=8
+            issues["separate_export_headers"]+=1
+            receipt_pins.append([path,header_pins[i],digest((root/path).read_bytes())])
         for path in ps:
             raw=(root/path).read_bytes();r=json.loads(raw);receipt_blob=git_blob(raw)
             receipt_pins.append([path,receipt_blob,digest(raw)])
