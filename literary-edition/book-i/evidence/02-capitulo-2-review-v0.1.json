@@ -1,0 +1,94 @@
+{
+  "schema": "literary-edition-chapter-review-v1",
+  "date": "2026-11-28",
+  "chapter": 2,
+  "title": "O preço da primeira vitória",
+  "status": "DRAFT_AWAITING_AUTHOR_REVIEW_QUALITY_GATE_NOT_CERTIFIED",
+  "draft": {
+    "path": "book-i/drafts/02-capitulo-2-v0.1.md",
+    "blob": "bcc2f6b970dedc807b4a975ec291b6d00837e60c",
+    "sha256": "d6a059e5ca220e1b7124cb93a6d5e7127fb04a656aa5c08c730d7863808c5242",
+    "words": 4160
+  },
+  "approved_prefix": {
+    "prologue_blob": "835d451cb764f227d3732ef2a9a1376a3bbd59b0",
+    "chapter1_blob": "1758acc47470ce5a233ccfc60b7c73884071e2a2",
+    "words": 11302,
+    "pages": 52,
+    "preserved": true
+  },
+  "author_direction": "Fauna, flora, tempo, região, ambiente, grande fantasia, feitos incríveis, aura e sentimento; descoberta de um animal tão inesquecível quanto batalha.",
+  "sources": {
+    "historical_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+    "history_scope": "first day: no pursuit, wounded, captive chief, partial translation, Uzgor clan, unverified testimony about Bandeira Cinzenta, southern flight, east ridge observers, choice of truce and request for advice before diplomatic mission",
+    "engine_pin": "1b063d05c1acaa86b2f237f987804af59dbeccd6",
+    "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+    "original_screenshots_verified": false
+  },
+  "review": [
+    {
+      "axis": "seam",
+      "result": "continues after order to cease pursuit; no repetition of creation or battle"
+    },
+    {
+      "axis": "ecology",
+      "result": "copper-blue bird, reactive flowers and pollinator, large deer-like herd and amber reflection, distant winged creature; provisional observations, no species name, magic classification, season or calendar fixed"
+    },
+    {
+      "axis": "historical semantics",
+      "result": "Uzgor, alleged forced migration and Bandeira Cinzenta; partial language comprehension; mounted observers unidentified; prisoner alive, injury left shoulder; no premature casualty count or captain name"
+    },
+    {
+      "axis": "emotion",
+      "result": "water shared, bird and fallen warrior contrast, delight at fawn, unfinished ties to Earth, humane treatment and trust in captain"
+    },
+    {
+      "axis": "agency",
+      "result": "anonymous withdrawing orcs help companion; captain acknowledges unknowns; Lucas initiates truce intent and asks for counsel"
+    },
+    {
+      "axis": "scope",
+      "result": "no white flag delegation or formal council yet; next chapter may cover them after approval"
+    }
+  ],
+  "new_editorial_details": [
+    "Bird, pollinator, flowers, deer-like animals and observed light effect; waterskin, stone mark, dialogue and minor orc perspective are original literary expansions, not RPG facts.",
+    "Offering water before the later council is a minor editorial reordering; formal medical outcome and truce not asserted."
+  ],
+  "quality_gate": {
+    "minimum": 9.9,
+    "manual_estimate": 9.4,
+    "passed": false,
+    "independent": false,
+    "scores": {
+      "worldbuilding": 9.6,
+      "emotion": 9.4,
+      "character": 9.5,
+      "prose": 9.3,
+      "pacing": 9.2,
+      "continuity": 9.5,
+      "atmosphere": 9.6,
+      "hook": 9.3,
+      "design": 9.4
+    },
+    "remaining": [
+      "Some reflective passages and the transition from nature to prisoner may still be tightened.",
+      "Independent review and full original-source reconciliation remain pending."
+    ]
+  },
+  "pdf": {
+    "cumulative": {
+      "filename": "Cronicas_O_Despertar_do_Criador_Prologo_e_Capitulos_01_02.pdf",
+      "pages": 70,
+      "sha256": "26ada158f72d54162bd8b534e9b2624b139419603f525d063b66143bc2be4cc3"
+    },
+    "chapter": {
+      "filename": "Cronicas_O_Despertar_do_Criador_Capitulo_02_v01.pdf",
+      "pages": 19,
+      "sha256": "1f34e9adaea763fa8ae01a4190030f18d3ad10267cb306d7924f04e55d0bafaa"
+    },
+    "verification": "20359 normalized narrative characters exact; all 52 previous pages text and rendered pixel samples identical at .65 scale; 18 new pages rendered and contact sheet inspected; zero text blocks outside page bounds; final page reflowed to 1290 characters; A5 EB Garamond, approved cover",
+    "archive_status": "PDF binaries delivered in chat; text, audit, hashes archived in GitHub; binaries not uploaded."
+  },
+  "next": "Await author feedback or explicit approval; do not advance chapter 3. Preserve approved prefix. If approved, recover council and truce events, later named VARO only at original point."
+}
