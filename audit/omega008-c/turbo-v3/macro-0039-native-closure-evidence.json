@@ -1,0 +1,71 @@
+{
+  "schema": "OMEGA_HYBRID_NATIVE_EVIDENCE_V1",
+  "validated_commit": "121d4ac49b3502d6a1d99643d57ab8d406ef62af",
+  "workflow_run": 46085852962,
+  "jobs": {
+    "literal_authorized_public": 140795108645,
+    "native_staging": 140795108986
+  },
+  "conclusion": "success",
+  "targeted_regression": {
+    "passed": 47,
+    "total": 47,
+    "groups": [
+      14,
+      11,
+      12,
+      10
+    ]
+  },
+  "aggregate": {
+    "canon_changed": false,
+    "cycle_axes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "cycle_lines": 50732,
+    "cycle_records": 254,
+    "cycle_status": "PASS_STAGING_ONLY",
+    "lines": 10238,
+    "macro_complete": true,
+    "next_line": 71160,
+    "production_gate": "HOLD",
+    "records": 50,
+    "semantic_certification": false,
+    "staging_records": 2767,
+    "status": "PASS_NATIVE_MACRO_0039_COMPLETE"
+  },
+  "source_integrity": "FULL_SOURCE_SHA256_AND_GIT_BLOB_MATCH",
+  "logs_readback": true,
+  "semantic_certification": false,
+  "independent_review": false,
+  "production_gate": "HOLD"
+}
