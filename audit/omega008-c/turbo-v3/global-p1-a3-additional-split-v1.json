@@ -1,0 +1,385 @@
+{
+  "schema": "OMEGA_P1_A3_ADDITIONAL_SPLIT_V1",
+  "previous_checkpoint": "18a2886d8eb45ef65989218816bf8f40439595fc",
+  "rows": [
+    {
+      "parent_target": "287:lucas:initial_day_location:N:S",
+      "children": [
+        {
+          "interval": [
+            287,
+            287
+          ],
+          "subject": "lucas",
+          "predicate": "scene_day",
+          "value": 1,
+          "unknown_reason": null
+        },
+        {
+          "interval": [
+            287,
+            287
+          ],
+          "subject": "lucas",
+          "predicate": "scene_location",
+          "value": "vale desconhecido",
+          "unknown_reason": null
+        }
+      ]
+    },
+    {
+      "parent_target": "323:capitao-sem-nome:retreat_directions:R:P",
+      "children": [
+        {
+          "interval": [
+            323,
+            323
+          ],
+          "subject": "capitao-sem-nome",
+          "predicate": "retreat_direction_count",
+          "value": 3,
+          "unknown_reason": null
+        },
+        {
+          "interval": [
+            323,
+            323
+          ],
+          "subject": "capitao-sem-nome",
+          "predicate": "retreat_completely_disorganized",
+          "value": false,
+          "unknown_reason": null
+        }
+      ]
+    },
+    {
+      "parent_target": "329:cla-uzgor:retreat_protect_wounded:N:S",
+      "children": [
+        {
+          "interval": [
+            329,
+            329
+          ],
+          "subject": "cla-uzgor",
+          "predicate": "retreat_terror_observed",
+          "value": "alguns correm aterrorizados",
+          "unknown_reason": null
+        },
+        {
+          "interval": [
+            329,
+            329
+          ],
+          "subject": "cla-uzgor",
+          "predicate": "standards_retrieved",
+          "value": "outros recolhem estandartes",
+          "unknown_reason": null
+        },
+        {
+          "interval": [
+            329,
+            329
+          ],
+          "subject": "cla-uzgor",
+          "predicate": "wounded_protected",
+          "value": "outros protegem feridos",
+          "unknown_reason": null
+        }
+      ]
+    },
+    {
+      "parent_target": "424-428:legiao-inicial:defensive_reformation:N:S",
+      "children": [
+        {
+          "interval": [
+            428,
+            428
+          ],
+          "subject": "legiao-inicial",
+          "predicate": "advance_stopped",
+          "value": true,
+          "unknown_reason": null
+        },
+        {
+          "interval": [
+            428,
+            428
+          ],
+          "subject": "legiao-inicial",
+          "predicate": "protective_formation",
+          "value": "meia-lua ao redor de Lucas",
+          "unknown_reason": null
+        }
+      ]
+    },
+    {
+      "parent_target": "765:varo:recon_team_proposal:P:P",
+      "children": [
+        {
+          "interval": [
+            765,
+            765
+          ],
+          "subject": "varo",
+          "predicate": "recon_people_proposed",
+          "value": 12,
+          "unknown_reason": null
+        },
+        {
+          "interval": [
+            765,
+            765
+          ],
+          "subject": "varo",
+          "predicate": "recon_teams_proposed",
+          "value": 3,
+          "unknown_reason": null
+        },
+        {
+          "interval": [
+            765,
+            765
+          ],
+          "subject": "varo",
+          "predicate": "recon_combat_proposed",
+          "value": false,
+          "unknown_reason": null
+        },
+        {
+          "interval": [
+            765,
+            765
+          ],
+          "subject": "varo",
+          "predicate": "recon_priority",
+          "value": "observar, registrar e retornar",
+          "unknown_reason": null
+        }
+      ]
+    },
+    {
+      "parent_target": "890:legiao:recon_not_released:S:S",
+      "children": [
+        {
+          "interval": [
+            890,
+            890
+          ],
+          "subject": "legiao",
+          "predicate": "recon_plan_prepared",
+          "value": true,
+          "unknown_reason": null
+        },
+        {
+          "interval": [
+            890,
+            890
+          ],
+          "subject": "legiao",
+          "predicate": "recon_dispatched",
+          "value": false,
+          "unknown_reason": null
+        }
+      ]
+    },
+    {
+      "parent_target": "940:lucas:day_elapsed_time:N:S",
+      "children": [
+        {
+          "interval": [
+            940,
+            940
+          ],
+          "subject": "lucas",
+          "predicate": "scene_day",
+          "value": 1,
+          "unknown_reason": null
+        },
+        {
+          "interval": [
+            940,
+            940
+          ],
+          "subject": "lucas",
+          "predicate": "elapsed_hours_after_battle",
+          "value": 2,
+          "unknown_reason": null
+        },
+        {
+          "interval": [
+            940,
+            940
+          ],
+          "subject": "lucas",
+          "predicate": "scene_location",
+          "value": "vale desconhecido",
+          "unknown_reason": null
+        }
+      ]
+    },
+    {
+      "parent_target": "1022:legiao:ten_units_of_thirty:N:S",
+      "children": [
+        {
+          "interval": [
+            1022,
+            1022
+          ],
+          "subject": "legiao",
+          "predicate": "unit_count",
+          "value": 10,
+          "unknown_reason": null
+        },
+        {
+          "interval": [
+            1022,
+            1022
+          ],
+          "subject": "legiao",
+          "predicate": "soldiers_per_unit",
+          "value": 30,
+          "unknown_reason": null
+        }
+      ]
+    },
+    {
+      "parent_target": "1072:legiao:three_teams_of_four:N:S",
+      "children": [
+        {
+          "interval": [
+            1072,
+            1072
+          ],
+          "subject": "legiao",
+          "predicate": "recon_team_count",
+          "value": 3,
+          "unknown_reason": null
+        },
+        {
+          "interval": [
+            1072,
+            1072
+          ],
+          "subject": "legiao",
+          "predicate": "recon_people_per_team",
+          "value": 4,
+          "unknown_reason": null
+        }
+      ]
+    },
+    {
+      "parent_target": "1423:kael:armor_design:N:S",
+      "children": [
+        {
+          "interval": [
+            1423,
+            1423
+          ],
+          "subject": "kael",
+          "predicate": "armor_color",
+          "value": "negra",
+          "unknown_reason": null
+        },
+        {
+          "interval": [
+            1423,
+            1423
+          ],
+          "subject": "kael",
+          "predicate": "armor_relative_weight",
+          "value": "mais leve que a dos legionários",
+          "unknown_reason": null
+        },
+        {
+          "interval": [
+            1423,
+            1423
+          ],
+          "subject": "kael",
+          "predicate": "armor_detail",
+          "value": "prata discreta",
+          "unknown_reason": null
+        }
+      ]
+    },
+    {
+      "parent_target": "1431:kael:initial_observation:N:S",
+      "children": [
+        {
+          "interval": [
+            1431,
+            1431
+          ],
+          "subject": "kael",
+          "predicate": "observes_orc_chief",
+          "value": true,
+          "unknown_reason": null
+        },
+        {
+          "interval": [
+            1431,
+            1431
+          ],
+          "subject": "kael",
+          "predicate": "observes_standards",
+          "value": true,
+          "unknown_reason": null
+        },
+        {
+          "interval": [
+            1431,
+            1431
+          ],
+          "subject": "kael",
+          "predicate": "observes_soldiers",
+          "value": true,
+          "unknown_reason": null
+        }
+      ]
+    },
+    {
+      "parent_target": "1489:kael:creation_panel_confirmation:S:S",
+      "children": [
+        {
+          "interval": [
+            1489,
+            1489
+          ],
+          "subject": "kael",
+          "predicate": "creation_completed_panel",
+          "value": true,
+          "unknown_reason": null
+        },
+        {
+          "interval": [
+            1489,
+            1489
+          ],
+          "subject": "kael",
+          "predicate": "designation_panel",
+          "value": "cavaleiro negro",
+          "unknown_reason": null
+        },
+        {
+          "interval": [
+            1489,
+            1489
+          ],
+          "subject": "kael",
+          "predicate": "role_panel",
+          "value": "assessor estratégico",
+          "unknown_reason": null
+        }
+      ]
+    }
+  ],
+  "unknown_review": {
+    "preserved_all": 27,
+    "compound_unknown_targets": [
+      "1443:kael:world_knowledge_unknown:R:P"
+    ],
+    "rule": "Unknown location and government remain separately unresolved; no values asserted. Do not infer zero from absence."
+  },
+  "note": "Additional compounds discovered by source inspection; not a guarantee of exhaustive atomization.",
+  "promotion": false
+}
