@@ -1,0 +1,857 @@
+{
+  "schema": "OMEGA_TURBO_V3_PARTIAL_MACRO_EDITORIAL_RECEIPT_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "macro_id": "215161b49f81e49f8098391b69886b3dcb9323b9151e0c42ce813effed77af8d",
+  "previous_macro_id": "5f84623f49cc1d24092ab40abc82c860216ec234915564390072bf3f45562917",
+  "official_unit_seal": "8e05762d1774b8616909bf79909efb73e4c9aff87daaf841a74c802981a4e56b",
+  "macro_range": [
+    1,
+    728
+  ],
+  "range": [
+    1,
+    728
+  ],
+  "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+  "source_sha256": "21708d4e3f059b88f99bc5863e5791022146ed866dbbb65bd7186335574a0f1f",
+  "source_provenance": {
+    "kind": "CLOSED_PROSE",
+    "episode_id": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+    "sequence": 49,
+    "previous_episode_id": "LVI-C08-PIV-D577-AUTHOR-SOURCE",
+    "previous_head_sha256": "adb8a3e305f55093e76b7ecb6d35874c6bc44f84c4dd49af129148581d90ad61",
+    "closure_blob": "bdc1d0718629ced6ab5932b3c5d65cd158194011",
+    "draft_blob": "ff667b14a3cdc7088773fac43ed43140a1032107",
+    "immutable_manifest_blob": "f00f57a41f7ee860dfdc17a335f1b65eecf19427",
+    "narrative_blob": "f76077f699aa4fe231a0f78e80a9288c2e3c6106",
+    "full_story_sha256": "833bc76f88eee2956678dbf58e63e7175a8b773976599f2da7520968524fc516",
+    "prose_sha256": "21708d4e3f059b88f99bc5863e5791022146ed866dbbb65bd7186335574a0f1f",
+    "prose_lines": 728,
+    "role_adapter": "Response for native receipt compatibility only; closure authority separate",
+    "closure_event_count": 16,
+    "closure_knowledge_count": 16,
+    "reviewed_events_blob": "b229477f7a06b820dbfd1193c7984c052d2cf427",
+    "reviewed_knowledge_blob": "5c604287685670582cada4bcd4877efe3061f813",
+    "choice_sha256": "543b16b33edd11fbfbc18b26e31118fb182aa5a24577f6faeef5523ed2afa1a1",
+    "chosen_option": 4,
+    "book_closed": false,
+    "editorial_header": "  <caption>PARTE V DE V · DIA 578</caption>",
+    "ratification_kind": null
+  },
+  "release_blob": "1ea9d60a58ecf00a368f0e33631164fc7cbe0051",
+  "previous_checkpoint_blob": "ea9546d05918d3797272d9c57fa5320ef4c4bbc9",
+  "cycle_review_blob": "e613d8291571ea9549b2ffe624f2d626144213d8",
+  "records": [
+    {
+      "id": "O8C-B115-001",
+      "book": "VI",
+      "day": 578,
+      "chapter_hint": 8,
+      "type": "metadata",
+      "entities": [
+        "worldroot"
+      ],
+      "summary": "D578 M08 D03 Parte V sem número entrada no cabeçalho; fechamento4, capítulo VIII encerra livro aberto.",
+      "axes": [
+        1,
+        10,
+        14,
+        16,
+        17,
+        18,
+        28,
+        30
+      ],
+      "authority": "METADATA_NOT_EVENT",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+        "source_sha256_manifest": "21708d4e3f059b88f99bc5863e5791022146ed866dbbb65bd7186335574a0f1f",
+        "blob_sha1": "ff667b14a3cdc7088773fac43ed43140a1032107",
+        "source_blob_sha1s": [
+          "ff667b14a3cdc7088773fac43ed43140a1032107"
+        ],
+        "line_start": 1,
+        "line_end": 28,
+        "role": "Response",
+        "span_sha256_utf8": "8ea938a2a7f1929dd75f212f36f8c5632d3e1e626161247c610dad397c0ce2f7",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "bdc1d0718629ced6ab5932b3c5d65cd158194011",
+        "full_story_sha256": "833bc76f88eee2956678dbf58e63e7175a8b773976599f2da7520968524fc516",
+        "immutable_manifest_blob": "f00f57a41f7ee860dfdc17a335f1b65eecf19427"
+      }
+    },
+    {
+      "id": "O8C-B115-002",
+      "book": "VI",
+      "day": 578,
+      "chapter_hint": 8,
+      "type": "scene",
+      "entities": [
+        "Lucas",
+        "Miren",
+        "NÓX",
+        "Brannik"
+      ],
+      "summary": "05h54 Torre romance, Miren decide abertura oficial com presentes autorizados, trajes proposta.",
+      "axes": [
+        1,
+        2,
+        3,
+        6,
+        10,
+        11,
+        14,
+        17,
+        18,
+        26,
+        29,
+        30
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+        "source_sha256_manifest": "21708d4e3f059b88f99bc5863e5791022146ed866dbbb65bd7186335574a0f1f",
+        "blob_sha1": "ff667b14a3cdc7088773fac43ed43140a1032107",
+        "source_blob_sha1s": [
+          "ff667b14a3cdc7088773fac43ed43140a1032107"
+        ],
+        "line_start": 29,
+        "line_end": 102,
+        "role": "Response",
+        "span_sha256_utf8": "83921ad16dbf90ee28ecf917e3395365c99c862486949ec5c7c5a742047ebbad",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "bdc1d0718629ced6ab5932b3c5d65cd158194011",
+        "full_story_sha256": "833bc76f88eee2956678dbf58e63e7175a8b773976599f2da7520968524fc516",
+        "immutable_manifest_blob": "f00f57a41f7ee860dfdc17a335f1b65eecf19427"
+      }
+    },
+    {
+      "id": "O8C-B115-003",
+      "book": "VI",
+      "day": 578,
+      "chapter_hint": 8,
+      "type": "scene",
+      "entities": [
+        "Kael",
+        "Lysa",
+        "Miren",
+        "Astra",
+        "Althea",
+        "Naira",
+        "Edrik",
+        "Sella",
+        "ARGOS"
+      ],
+      "summary": "07h16 carta Thalor chega por montarias desde D573, participação formal com ratificação governo, delegação ausente; D585 plenária ampliada convocada condicionada, convites complementares; 08h02 ARGOS parte com bancos/suportes Ordan e reposições, 09h24 Halvern entrega bancos, Edrik/Sella embarcam; 11h03 retorno efetivo. Ordem de fonte intercalada com 10h38 construção, sem ampliar exceção0085.",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        9,
+        15,
+        16,
+        17,
+        18,
+        24,
+        27,
+        30
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+        "source_sha256_manifest": "21708d4e3f059b88f99bc5863e5791022146ed866dbbb65bd7186335574a0f1f",
+        "blob_sha1": "ff667b14a3cdc7088773fac43ed43140a1032107",
+        "source_blob_sha1s": [
+          "ff667b14a3cdc7088773fac43ed43140a1032107"
+        ],
+        "line_start": 103,
+        "line_end": 168,
+        "role": "Response",
+        "span_sha256_utf8": "b0ff04218e0fa3a729ef8f8c46e0cd1f3f1f77896b7e19245d31667ac0c69031",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "bdc1d0718629ced6ab5932b3c5d65cd158194011",
+        "full_story_sha256": "833bc76f88eee2956678dbf58e63e7175a8b773976599f2da7520968524fc516",
+        "immutable_manifest_blob": "f00f57a41f7ee860dfdc17a335f1b65eecf19427"
+      }
+    },
+    {
+      "id": "O8C-B115-004",
+      "book": "VI",
+      "day": 578,
+      "chapter_hint": 8,
+      "type": "scene",
+      "entities": [
+        "Lucas",
+        "Adela",
+        "Kael",
+        "Brannik",
+        "Dorek",
+        "Ordan"
+      ],
+      "summary": "10h38 travessia autorizada após levantamentos/aceites proprietários; GÊNESE ponte sem pilar canal principal, via e pedestres separados, 23,6km novos +8=31,6km ferroviários distintos estrada33,2; terminal civil Campo Aurora fora restrito, energia independente Lucas, bancos desenho Ordan/Ivena; 13h32 ensaio completo desocupado chega e retorno/parada antes viagem controlada.",
+      "axes": [
+        1,
+        2,
+        3,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18,
+        25,
+        27,
+        30
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+        "source_sha256_manifest": "21708d4e3f059b88f99bc5863e5791022146ed866dbbb65bd7186335574a0f1f",
+        "blob_sha1": "ff667b14a3cdc7088773fac43ed43140a1032107",
+        "source_blob_sha1s": [
+          "ff667b14a3cdc7088773fac43ed43140a1032107"
+        ],
+        "line_start": 169,
+        "line_end": 256,
+        "role": "Response",
+        "span_sha256_utf8": "ff427dea912cb99f0603db5aa23714a9baf8cec9f6ac9bf5cd83780b4b7424ca",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "bdc1d0718629ced6ab5932b3c5d65cd158194011",
+        "full_story_sha256": "833bc76f88eee2956678dbf58e63e7175a8b773976599f2da7520968524fc516",
+        "immutable_manifest_blob": "f00f57a41f7ee860dfdc17a335f1b65eecf19427"
+      }
+    },
+    {
+      "id": "O8C-B115-005",
+      "book": "VI",
+      "day": 578,
+      "chapter_hint": 8,
+      "type": "scene",
+      "entities": [
+        "Ilva",
+        "Miren",
+        "Astra"
+      ],
+      "summary": "14h18 ateliê identidade cívica não corte, trajes Miren/Astra ajustados, coleção seis pessoas encomendada não entregue toda; Miren peça pessoal seda/robe, Astra sem parceiro específico e valoriza trabalho, não inferir romance.",
+      "axes": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        10,
+        16,
+        18,
+        19,
+        24,
+        25,
+        27,
+        28,
+        29,
+        30
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+        "source_sha256_manifest": "21708d4e3f059b88f99bc5863e5791022146ed866dbbb65bd7186335574a0f1f",
+        "blob_sha1": "ff667b14a3cdc7088773fac43ed43140a1032107",
+        "source_blob_sha1s": [
+          "ff667b14a3cdc7088773fac43ed43140a1032107"
+        ],
+        "line_start": 257,
+        "line_end": 392,
+        "role": "Response",
+        "span_sha256_utf8": "4b380ec934175ce1bc8611caf8d000945b00b95e57a66d39b0ff05cdc4c49d63",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "bdc1d0718629ced6ab5932b3c5d65cd158194011",
+        "full_story_sha256": "833bc76f88eee2956678dbf58e63e7175a8b773976599f2da7520968524fc516",
+        "immutable_manifest_blob": "f00f57a41f7ee860dfdc17a335f1b65eecf19427"
+      }
+    },
+    {
+      "id": "O8C-B115-006",
+      "book": "VI",
+      "day": 578,
+      "chapter_hint": 8,
+      "type": "scene",
+      "entities": [
+        "Miren",
+        "Kael",
+        "Edrik",
+        "Sella",
+        "Lysa",
+        "Astra",
+        "Maelis",
+        "Ivena",
+        "Ordan",
+        "Garran",
+        "Lucas"
+      ],
+      "summary": "16h06 abertura OFICIAL Conferência Continental, participantes presentes Halvern e Três Arcos, Thalor confirmação não presença, D585 plenária futura; oficina Ivena/Maelis ocorreu manhã, folhas adaptadas; Acordo Cooperação Civil Três Arcos e representação postos Halvern assinado Kael/Edrik entra vigor, entregas recusáveis, profissionais voluntários, privacidade, coordenação Lysa e Campo Aurora viagens autorizadas conforme pedidos; Sella cópia a encaminhar, não aliança militar nem adesão ferroviária.",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        9,
+        10,
+        11,
+        16,
+        18,
+        19,
+        23,
+        25,
+        27,
+        28,
+        29,
+        30
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+        "source_sha256_manifest": "21708d4e3f059b88f99bc5863e5791022146ed866dbbb65bd7186335574a0f1f",
+        "blob_sha1": "ff667b14a3cdc7088773fac43ed43140a1032107",
+        "source_blob_sha1s": [
+          "ff667b14a3cdc7088773fac43ed43140a1032107"
+        ],
+        "line_start": 393,
+        "line_end": 536,
+        "role": "Response",
+        "span_sha256_utf8": "493b7fd83e7df07d100645a5a4c793c84b2c6a7419c27123ea154baa6957b3f1",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "bdc1d0718629ced6ab5932b3c5d65cd158194011",
+        "full_story_sha256": "833bc76f88eee2956678dbf58e63e7175a8b773976599f2da7520968524fc516",
+        "immutable_manifest_blob": "f00f57a41f7ee860dfdc17a335f1b65eecf19427"
+      }
+    },
+    {
+      "id": "O8C-B115-007",
+      "book": "VI",
+      "day": 578,
+      "chapter_hint": 8,
+      "type": "reader_scene",
+      "entities": [
+        "Velkar",
+        "Orelia",
+        "Rhazek",
+        "Avelna"
+      ],
+      "summary": "18h02 segunda comunidade observa experiência primeira, não adesão; direito interrupção preservado, ambição imperial continua.",
+      "axes": [
+        1,
+        2,
+        3,
+        6,
+        8,
+        10,
+        11,
+        16,
+        17,
+        20,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+        "source_sha256_manifest": "21708d4e3f059b88f99bc5863e5791022146ed866dbbb65bd7186335574a0f1f",
+        "blob_sha1": "ff667b14a3cdc7088773fac43ed43140a1032107",
+        "source_blob_sha1s": [
+          "ff667b14a3cdc7088773fac43ed43140a1032107"
+        ],
+        "line_start": 537,
+        "line_end": 566,
+        "role": "Response",
+        "span_sha256_utf8": "0d63da6463ef288d0397cd1fd2e1b769f292809b681f5f78325fd99180b825a3",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "bdc1d0718629ced6ab5932b3c5d65cd158194011",
+        "full_story_sha256": "833bc76f88eee2956678dbf58e63e7175a8b773976599f2da7520968524fc516",
+        "immutable_manifest_blob": "f00f57a41f7ee860dfdc17a335f1b65eecf19427"
+      }
+    },
+    {
+      "id": "O8C-B115-008",
+      "book": "VI",
+      "day": 578,
+      "chapter_hint": 8,
+      "type": "reader_scene",
+      "entities": [
+        "Bressa",
+        "Tharvek",
+        "trabalhador"
+      ],
+      "summary": "18h46 pátio inferior fundições concreto, inscrições não seis marcas, consulta ocupação e inspeção externa autorizadas, sem identificação depósito/autor.",
+      "axes": [
+        1,
+        2,
+        10,
+        16,
+        17,
+        18,
+        26
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+        "source_sha256_manifest": "21708d4e3f059b88f99bc5863e5791022146ed866dbbb65bd7186335574a0f1f",
+        "blob_sha1": "ff667b14a3cdc7088773fac43ed43140a1032107",
+        "source_blob_sha1s": [
+          "ff667b14a3cdc7088773fac43ed43140a1032107"
+        ],
+        "line_start": 567,
+        "line_end": 586,
+        "role": "Response",
+        "span_sha256_utf8": "caaca57118c8dbe024edf8128c9239abaaeb98e977e9dbf2eb7fe4806188af44",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "bdc1d0718629ced6ab5932b3c5d65cd158194011",
+        "full_story_sha256": "833bc76f88eee2956678dbf58e63e7175a8b773976599f2da7520968524fc516",
+        "immutable_manifest_blob": "f00f57a41f7ee860dfdc17a335f1b65eecf19427"
+      }
+    },
+    {
+      "id": "O8C-B115-009",
+      "book": "VI",
+      "day": 578,
+      "chapter_hint": 8,
+      "type": "reader_scene",
+      "entities": [
+        "Varkhess",
+        "Serina",
+        "Morvek",
+        "piloto"
+      ],
+      "summary": "19h12 segunda área candidata prioritária não confirmada, formação busca autorizada próxima saída favorável, desaparecidos não encontrados.",
+      "axes": [
+        1,
+        2,
+        3,
+        9,
+        11,
+        16,
+        18,
+        25,
+        26,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+        "source_sha256_manifest": "21708d4e3f059b88f99bc5863e5791022146ed866dbbb65bd7186335574a0f1f",
+        "blob_sha1": "ff667b14a3cdc7088773fac43ed43140a1032107",
+        "source_blob_sha1s": [
+          "ff667b14a3cdc7088773fac43ed43140a1032107"
+        ],
+        "line_start": 587,
+        "line_end": 606,
+        "role": "Response",
+        "span_sha256_utf8": "e0454874b65ab775eb79b2e45ca08699aa6aa40cb6fc6177b8e2e8a4e36e112b",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "bdc1d0718629ced6ab5932b3c5d65cd158194011",
+        "full_story_sha256": "833bc76f88eee2956678dbf58e63e7175a8b773976599f2da7520968524fc516",
+        "immutable_manifest_blob": "f00f57a41f7ee860dfdc17a335f1b65eecf19427"
+      }
+    },
+    {
+      "id": "O8C-B115-010",
+      "book": "VI",
+      "day": 578,
+      "chapter_hint": 8,
+      "type": "scene",
+      "entities": [
+        "Lucas",
+        "Miren",
+        "Naira",
+        "Adela",
+        "Kael",
+        "Ivena",
+        "Ordan",
+        "Edrik",
+        "Sella",
+        "Garran"
+      ],
+      "summary": "20h14 primeira viagem inaugural passageiros controlada Terminal Caravanas–Campo Aurora concluída, lotação/velocidade limitada, operadores, não certificação regular/continental; bancos reconhecidos.",
+      "axes": [
+        1,
+        2,
+        3,
+        6,
+        9,
+        10,
+        11,
+        13,
+        16,
+        17,
+        18,
+        19,
+        27,
+        30
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+        "source_sha256_manifest": "21708d4e3f059b88f99bc5863e5791022146ed866dbbb65bd7186335574a0f1f",
+        "blob_sha1": "ff667b14a3cdc7088773fac43ed43140a1032107",
+        "source_blob_sha1s": [
+          "ff667b14a3cdc7088773fac43ed43140a1032107"
+        ],
+        "line_start": 607,
+        "line_end": 678,
+        "role": "Response",
+        "span_sha256_utf8": "b9cd07acc5799aa84a6e1cbe302143867895a76aa1186b7c1819ebae89383054",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "bdc1d0718629ced6ab5932b3c5d65cd158194011",
+        "full_story_sha256": "833bc76f88eee2956678dbf58e63e7175a8b773976599f2da7520968524fc516",
+        "immutable_manifest_blob": "f00f57a41f7ee860dfdc17a335f1b65eecf19427"
+      }
+    },
+    {
+      "id": "O8C-B115-011",
+      "book": "VI",
+      "day": 578,
+      "chapter_hint": 8,
+      "type": "scene",
+      "entities": [
+        "Lucas",
+        "Miren"
+      ],
+      "summary": "23h18 Torre intimidade conjugal consensual, robe Ilva; recap acordo e ferrovia reais, carta Ordan destino não confirmado, fim capítulo VIII, livro aberto.",
+      "axes": [
+        1,
+        2,
+        3,
+        6,
+        9,
+        10,
+        14,
+        16,
+        17,
+        18,
+        19,
+        25,
+        27,
+        28,
+        29,
+        30
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+        "source_sha256_manifest": "21708d4e3f059b88f99bc5863e5791022146ed866dbbb65bd7186335574a0f1f",
+        "blob_sha1": "ff667b14a3cdc7088773fac43ed43140a1032107",
+        "source_blob_sha1s": [
+          "ff667b14a3cdc7088773fac43ed43140a1032107"
+        ],
+        "line_start": 679,
+        "line_end": 728,
+        "role": "Response",
+        "span_sha256_utf8": "3ed85edf18f4a68412c8f724e613a9a30ba38ea6d1b15decee3771273b5e5ed6",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "bdc1d0718629ced6ab5932b3c5d65cd158194011",
+        "full_story_sha256": "833bc76f88eee2956678dbf58e63e7175a8b773976599f2da7520968524fc516",
+        "immutable_manifest_blob": "f00f57a41f7ee860dfdc17a335f1b65eecf19427"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "start": 1,
+      "end": 28,
+      "role": "Response",
+      "span_sha256_utf8": "8ea938a2a7f1929dd75f212f36f8c5632d3e1e626161247c610dad397c0ce2f7",
+      "record_ids": [
+        "O8C-B115-001"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 29,
+      "end": 102,
+      "role": "Response",
+      "span_sha256_utf8": "83921ad16dbf90ee28ecf917e3395365c99c862486949ec5c7c5a742047ebbad",
+      "record_ids": [
+        "O8C-B115-002"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 103,
+      "end": 168,
+      "role": "Response",
+      "span_sha256_utf8": "b0ff04218e0fa3a729ef8f8c46e0cd1f3f1f77896b7e19245d31667ac0c69031",
+      "record_ids": [
+        "O8C-B115-003"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 169,
+      "end": 256,
+      "role": "Response",
+      "span_sha256_utf8": "ff427dea912cb99f0603db5aa23714a9baf8cec9f6ac9bf5cd83780b4b7424ca",
+      "record_ids": [
+        "O8C-B115-004"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 257,
+      "end": 392,
+      "role": "Response",
+      "span_sha256_utf8": "4b380ec934175ce1bc8611caf8d000945b00b95e57a66d39b0ff05cdc4c49d63",
+      "record_ids": [
+        "O8C-B115-005"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 393,
+      "end": 536,
+      "role": "Response",
+      "span_sha256_utf8": "493b7fd83e7df07d100645a5a4c793c84b2c6a7419c27123ea154baa6957b3f1",
+      "record_ids": [
+        "O8C-B115-006"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 537,
+      "end": 566,
+      "role": "Response",
+      "span_sha256_utf8": "0d63da6463ef288d0397cd1fd2e1b769f292809b681f5f78325fd99180b825a3",
+      "record_ids": [
+        "O8C-B115-007"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 567,
+      "end": 586,
+      "role": "Response",
+      "span_sha256_utf8": "caaca57118c8dbe024edf8128c9239abaaeb98e977e9dbf2eb7fe4806188af44",
+      "record_ids": [
+        "O8C-B115-008"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 587,
+      "end": 606,
+      "role": "Response",
+      "span_sha256_utf8": "e0454874b65ab775eb79b2e45ca08699aa6aa40cb6fc6177b8e2e8a4e36e112b",
+      "record_ids": [
+        "O8C-B115-009"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 607,
+      "end": 678,
+      "role": "Response",
+      "span_sha256_utf8": "b9cd07acc5799aa84a6e1cbe302143867895a76aa1186b7c1819ebae89383054",
+      "record_ids": [
+        "O8C-B115-010"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 679,
+      "end": 728,
+      "role": "Response",
+      "span_sha256_utf8": "3ed85edf18f4a68412c8f724e613a9a30ba38ea6d1b15decee3771273b5e5ed6",
+      "record_ids": [
+        "O8C-B115-011"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    }
+  ],
+  "axis_coverage": {
+    "assessed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "represented": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ]
+  },
+  "next_line": 729,
+  "macro_complete": true,
+  "status": "STAGING_CANDIDATE_PENDING_NATIVE",
+  "production_gate": "HOLD",
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "semantic_certification": false,
+  "independent_review": false,
+  "promotion": false,
+  "custody_review": {
+    "source_prose_read_in_full": true,
+    "closure_sidecars_match": true,
+    "event_anchors_match": true,
+    "source_hashes_match": true,
+    "entry_and_closure_choice_distinct": true,
+    "explicit_clocks": [
+      {
+        "line": 31,
+        "day": 578,
+        "hour": "05h54"
+      },
+      {
+        "line": 105,
+        "day": 578,
+        "hour": "07h16"
+      },
+      {
+        "line": 143,
+        "day": 578,
+        "hour": "09h24"
+      },
+      {
+        "line": 171,
+        "day": 578,
+        "hour": "10h38"
+      },
+      {
+        "line": 259,
+        "day": 578,
+        "hour": "14h18"
+      },
+      {
+        "line": 395,
+        "day": 578,
+        "hour": "16h06"
+      },
+      {
+        "line": 539,
+        "day": 578,
+        "hour": "18h02"
+      },
+      {
+        "line": 567,
+        "day": 578,
+        "hour": "18h46"
+      },
+      {
+        "line": 587,
+        "day": 578,
+        "hour": "19h12"
+      },
+      {
+        "line": 609,
+        "day": 578,
+        "hour": "20h14"
+      },
+      {
+        "line": 679,
+        "day": 578,
+        "hour": "23h18"
+      }
+    ],
+    "closure_metadata": {
+      "book": "Livro VI",
+      "chapter": 8,
+      "day": 578,
+      "hour": "23h18",
+      "location": "Torre do Criador (Lucas/Miren); Três Arcos, Campo Aurora, AERÚN, Renshar, Vale dos Ofícios Baixos, Serevan",
+      "part": "V"
+    },
+    "reader_perspectives_isolated": true,
+    "parallel_inline_clock": {
+      "from": {
+        "line": 161,
+        "hour": "11h03"
+      },
+      "to": {
+        "line": 171,
+        "hour": "10h38"
+      },
+      "scope": "same-day cross-front narrative order; no extension of 0085"
+    }
+  }
+}
