@@ -1,0 +1,945 @@
+{
+  "schema": "OMEGA_TURBO_V3_PARTIAL_MACRO_EDITORIAL_RECEIPT_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "macro_id": "e5651dfd9ac2141a9026150ed1be2b977d622530999f076f555b57975c3cd9e1",
+  "previous_macro_id": "57b12465cda1ad516e9244db88a0a934514d132a40ad4ea3d53e9483d4855057",
+  "official_unit_seal": "3c349618b11bd0532bbef8a297c81287b965a8a8e3a73287058b380796ec59b6",
+  "macro_range": [
+    1,
+    904
+  ],
+  "range": [
+    1,
+    904
+  ],
+  "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+  "source_sha256": "42cddd3a838557d6707086b2765873f20bc9a1bcd3fe6791c21f7760e9c6c6f0",
+  "source_provenance": {
+    "kind": "CLOSED_PROSE",
+    "episode_id": "LV-C15-PV-D531-AUTHOR-SOURCE",
+    "sequence": 4,
+    "previous_episode_id": "LV-C15-PIV-D530-AUTHOR-SOURCE",
+    "previous_head_sha256": "99b690e8845c5c76e5c15152a222ac0f4dda2f7a8b93054dcda232ed6ad7edb3",
+    "closure_blob": "b2f94286e5fdb0696f831d967baca9eae3d5ab17",
+    "draft_blob": "7c8a52aef126ea33df36e824bfd678f3ced87eef",
+    "immutable_manifest_blob": "e869257b8ca443425a75843beeed0c11dc9c8432",
+    "narrative_blob": "46d921cbdd7be67b0c94a3d21504d0d2fabe60bb",
+    "full_story_sha256": "6f975ce39f36c6785c71ce57e8e47a79b751c386669a18bb7d0a846975abd3aa",
+    "prose_sha256": "42cddd3a838557d6707086b2765873f20bc9a1bcd3fe6791c21f7760e9c6c6f0",
+    "prose_lines": 904,
+    "role_adapter": "Response for native receipt compatibility only; closure authority separate",
+    "closure_event_count": 14,
+    "closure_knowledge_count": 9,
+    "reviewed_events_blob": "9270310ce674bc4c21a0697a27e057010ff5b0de",
+    "reviewed_knowledge_blob": "37b25e36a8b8ce2d97ec9df60694e497fdcb9a00",
+    "choice_sha256": "c05d233572a7084841f5e2ba39d0cdb6ea4b72726960ac04ba605cc3ce18f865",
+    "chosen_option": 4
+  },
+  "release_blob": "1ea9d60a58ecf00a368f0e33631164fc7cbe0051",
+  "previous_checkpoint_blob": "7df7f383cb8938846d15ab5b66b007c4a4759ade",
+  "cycle_review_blob": "7006296be97be68839b9968bc99a57116f36006c",
+  "records": [
+    {
+      "id": "O8C-B70-001",
+      "book": "V",
+      "day": 530,
+      "chapter_hint": 15,
+      "type": "metadata",
+      "entities": [
+        "worldroot"
+      ],
+      "summary": "Escolha 5 ação livre; retomada D530 18h02.",
+      "axes": [
+        1,
+        2,
+        28,
+        29,
+        30
+      ],
+      "authority": "METADATA_NOT_EVENT",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+        "source_sha256_manifest": "42cddd3a838557d6707086b2765873f20bc9a1bcd3fe6791c21f7760e9c6c6f0",
+        "blob_sha1": "7c8a52aef126ea33df36e824bfd678f3ced87eef",
+        "source_blob_sha1s": [
+          "7c8a52aef126ea33df36e824bfd678f3ced87eef"
+        ],
+        "line_start": 1,
+        "line_end": 31,
+        "role": "Response",
+        "span_sha256_utf8": "311f46a5b2bb691d47d539966070d4f76b4393d6753a2c6829cb2a5c0b9f9249",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "b2f94286e5fdb0696f831d967baca9eae3d5ab17",
+        "full_story_sha256": "6f975ce39f36c6785c71ce57e8e47a79b751c386669a18bb7d0a846975abd3aa",
+        "immutable_manifest_blob": "e869257b8ca443425a75843beeed0c11dc9c8432"
+      }
+    },
+    {
+      "id": "O8C-B70-002",
+      "book": "V",
+      "day": 530,
+      "chapter_hint": 15,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren",
+        "rumo"
+      ],
+      "summary": "Retorno Grande Avenida à residência, conversa Casa dos Horizontes.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        16,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+        "source_sha256_manifest": "42cddd3a838557d6707086b2765873f20bc9a1bcd3fe6791c21f7760e9c6c6f0",
+        "blob_sha1": "7c8a52aef126ea33df36e824bfd678f3ced87eef",
+        "source_blob_sha1s": [
+          "7c8a52aef126ea33df36e824bfd678f3ced87eef"
+        ],
+        "line_start": 32,
+        "line_end": 71,
+        "role": "Response",
+        "span_sha256_utf8": "c93fb2dd7767e3fd83603320a22af1877f2125021922d90f1f5ce09045d3f1b0",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "b2f94286e5fdb0696f831d967baca9eae3d5ab17",
+        "full_story_sha256": "6f975ce39f36c6785c71ce57e8e47a79b751c386669a18bb7d0a846975abd3aa",
+        "immutable_manifest_blob": "e869257b8ca443425a75843beeed0c11dc9c8432"
+      }
+    },
+    {
+      "id": "O8C-B70-003",
+      "book": "V",
+      "day": 530,
+      "chapter_hint": 15,
+      "type": "creation",
+      "entities": [
+        "lucas",
+        "miren",
+        "rumo",
+        "casa_dos_horizontes"
+      ],
+      "summary": "18h39 inspeção interior dimensional e segunda entrada privada residencial à mesma dimensão; carruagem preservada.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        25,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+        "source_sha256_manifest": "42cddd3a838557d6707086b2765873f20bc9a1bcd3fe6791c21f7760e9c6c6f0",
+        "blob_sha1": "7c8a52aef126ea33df36e824bfd678f3ced87eef",
+        "source_blob_sha1s": [
+          "7c8a52aef126ea33df36e824bfd678f3ced87eef"
+        ],
+        "line_start": 72,
+        "line_end": 155,
+        "role": "Response",
+        "span_sha256_utf8": "ed41c52c973e12e2c031db6355f8fd381924fe29238a29e4943589b54c21c8fb",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "b2f94286e5fdb0696f831d967baca9eae3d5ab17",
+        "full_story_sha256": "6f975ce39f36c6785c71ce57e8e47a79b751c386669a18bb7d0a846975abd3aa",
+        "immutable_manifest_blob": "e869257b8ca443425a75843beeed0c11dc9c8432"
+      }
+    },
+    {
+      "id": "O8C-B70-004",
+      "book": "V",
+      "day": 530,
+      "chapter_hint": 15,
+      "type": "creation",
+      "entities": [
+        "lucas",
+        "rumo",
+        "nox",
+        "argos"
+      ],
+      "summary": "19h27 RUMO aceita aprender pilotagem; simulador dimensional não segunda aeronave, dados observados/hipóteses separados.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15,
+        25,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+        "source_sha256_manifest": "42cddd3a838557d6707086b2765873f20bc9a1bcd3fe6791c21f7760e9c6c6f0",
+        "blob_sha1": "7c8a52aef126ea33df36e824bfd678f3ced87eef",
+        "source_blob_sha1s": [
+          "7c8a52aef126ea33df36e824bfd678f3ced87eef"
+        ],
+        "line_start": 156,
+        "line_end": 265,
+        "role": "Response",
+        "span_sha256_utf8": "9dd1bb4301ea921fa70d0343fdda21601488d577b922d4cc63ab13f859e58a81",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "b2f94286e5fdb0696f831d967baca9eae3d5ab17",
+        "full_story_sha256": "6f975ce39f36c6785c71ce57e8e47a79b751c386669a18bb7d0a846975abd3aa",
+        "immutable_manifest_blob": "e869257b8ca443425a75843beeed0c11dc9c8432"
+      }
+    },
+    {
+      "id": "O8C-B70-005",
+      "book": "V",
+      "day": 530,
+      "chapter_hint": 15,
+      "type": "creation",
+      "entities": [
+        "lucas",
+        "vertice",
+        "rumo",
+        "nox"
+      ],
+      "summary": "21h08 Vértice coordenador técnico singular grafite e bronze, distinto de RUMO, 3600 Malha, 300 originais; sem governo irrestrito.",
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        12,
+        13,
+        14,
+        15,
+        19,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+        "source_sha256_manifest": "42cddd3a838557d6707086b2765873f20bc9a1bcd3fe6791c21f7760e9c6c6f0",
+        "blob_sha1": "7c8a52aef126ea33df36e824bfd678f3ced87eef",
+        "source_blob_sha1s": [
+          "7c8a52aef126ea33df36e824bfd678f3ced87eef"
+        ],
+        "line_start": 266,
+        "line_end": 351,
+        "role": "Response",
+        "span_sha256_utf8": "1fdfd1e3b7afafc242430816c8235c5c0e18fd8e58118204e8ae72eb6d35d942",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "b2f94286e5fdb0696f831d967baca9eae3d5ab17",
+        "full_story_sha256": "6f975ce39f36c6785c71ce57e8e47a79b751c386669a18bb7d0a846975abd3aa",
+        "immutable_manifest_blob": "e869257b8ca443425a75843beeed0c11dc9c8432"
+      }
+    },
+    {
+      "id": "O8C-B70-006",
+      "book": "V",
+      "day": 531,
+      "chapter_hint": 15,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren",
+        "rumo",
+        "vertice",
+        "cafe",
+        "segunda-feira"
+      ],
+      "summary": "06h24 partida física por Eixo Aurora na carruagem, Miren pesquisa, cuidados com éguas.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        13,
+        16,
+        20
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+        "source_sha256_manifest": "42cddd3a838557d6707086b2765873f20bc9a1bcd3fe6791c21f7760e9c6c6f0",
+        "blob_sha1": "7c8a52aef126ea33df36e824bfd678f3ced87eef",
+        "source_blob_sha1s": [
+          "7c8a52aef126ea33df36e824bfd678f3ced87eef"
+        ],
+        "line_start": 352,
+        "line_end": 423,
+        "role": "Response",
+        "span_sha256_utf8": "f16b493ce2570ed35582743a5708d6c32c0b3ea42b7d9daca418ffecab2a80ce",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "b2f94286e5fdb0696f831d967baca9eae3d5ab17",
+        "full_story_sha256": "6f975ce39f36c6785c71ce57e8e47a79b751c386669a18bb7d0a846975abd3aa",
+        "immutable_manifest_blob": "e869257b8ca443425a75843beeed0c11dc9c8432"
+      }
+    },
+    {
+      "id": "O8C-B70-007",
+      "book": "V",
+      "day": 531,
+      "chapter_hint": 15,
+      "type": "project",
+      "entities": [
+        "lucas",
+        "naira",
+        "hedra_venn",
+        "vertice",
+        "brannik"
+      ],
+      "summary": "10h11 escopo melhorias Campo dentro concessão, fauna e autoridade equipe preservadas.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        15,
+        16,
+        19,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+        "source_sha256_manifest": "42cddd3a838557d6707086b2765873f20bc9a1bcd3fe6791c21f7760e9c6c6f0",
+        "blob_sha1": "7c8a52aef126ea33df36e824bfd678f3ced87eef",
+        "source_blob_sha1s": [
+          "7c8a52aef126ea33df36e824bfd678f3ced87eef"
+        ],
+        "line_start": 424,
+        "line_end": 499,
+        "role": "Response",
+        "span_sha256_utf8": "716e526fbcbc6badb8cb414bbb275a60de3aa37696d8ae9f4e42148c8be73d7c",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "b2f94286e5fdb0696f831d967baca9eae3d5ab17",
+        "full_story_sha256": "6f975ce39f36c6785c71ce57e8e47a79b751c386669a18bb7d0a846975abd3aa",
+        "immutable_manifest_blob": "e869257b8ca443425a75843beeed0c11dc9c8432"
+      }
+    },
+    {
+      "id": "O8C-B70-008",
+      "book": "V",
+      "day": 531,
+      "chapter_hint": 15,
+      "type": "project",
+      "entities": [
+        "lucas",
+        "vertice",
+        "malha_aurora"
+      ],
+      "summary": "11h04 ensaios paralelos Malha, não novas 3600 unidades ou soldados.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        13,
+        15,
+        19,
+        20,
+        25,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+        "source_sha256_manifest": "42cddd3a838557d6707086b2765873f20bc9a1bcd3fe6791c21f7760e9c6c6f0",
+        "blob_sha1": "7c8a52aef126ea33df36e824bfd678f3ced87eef",
+        "source_blob_sha1s": [
+          "7c8a52aef126ea33df36e824bfd678f3ced87eef"
+        ],
+        "line_start": 500,
+        "line_end": 549,
+        "role": "Response",
+        "span_sha256_utf8": "b70d72036841492f47f5ef321f86002be7e28ea2c3f9ebdcc5a70168b6ec7d3c",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "b2f94286e5fdb0696f831d967baca9eae3d5ab17",
+        "full_story_sha256": "6f975ce39f36c6785c71ce57e8e47a79b751c386669a18bb7d0a846975abd3aa",
+        "immutable_manifest_blob": "e869257b8ca443425a75843beeed0c11dc9c8432"
+      }
+    },
+    {
+      "id": "O8C-B70-009",
+      "book": "V",
+      "day": 531,
+      "chapter_hint": 15,
+      "type": "project",
+      "entities": [
+        "vertice",
+        "lucas",
+        "malha_aurora"
+      ],
+      "summary": "15h26 2984 novas pendentes +376 anteriores +240 antigas =3600 verificadas funcionalmente, não autorização geral.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        13,
+        15,
+        19,
+        20,
+        25,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+        "source_sha256_manifest": "42cddd3a838557d6707086b2765873f20bc9a1bcd3fe6791c21f7760e9c6c6f0",
+        "blob_sha1": "7c8a52aef126ea33df36e824bfd678f3ced87eef",
+        "source_blob_sha1s": [
+          "7c8a52aef126ea33df36e824bfd678f3ced87eef"
+        ],
+        "line_start": 550,
+        "line_end": 591,
+        "role": "Response",
+        "span_sha256_utf8": "376c7c4220899630cf03c999d7056d5f99e0cc1bacf695113dc480fa1dfce22b",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "b2f94286e5fdb0696f831d967baca9eae3d5ab17",
+        "full_story_sha256": "6f975ce39f36c6785c71ce57e8e47a79b751c386669a18bb7d0a846975abd3aa",
+        "immutable_manifest_blob": "e869257b8ca443425a75843beeed0c11dc9c8432"
+      }
+    },
+    {
+      "id": "O8C-B70-010",
+      "book": "V",
+      "day": 531,
+      "chapter_hint": 15,
+      "type": "creation",
+      "entities": [
+        "lucas",
+        "hedra_venn",
+        "vertice",
+        "campo_aurora"
+      ],
+      "summary": "15h48 torre24m, sensores panorâmicos/arcanos e pista, FOD detecta objeto controlado e equipe retira, calibração pendente.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        25,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+        "source_sha256_manifest": "42cddd3a838557d6707086b2765873f20bc9a1bcd3fe6791c21f7760e9c6c6f0",
+        "blob_sha1": "7c8a52aef126ea33df36e824bfd678f3ced87eef",
+        "source_blob_sha1s": [
+          "7c8a52aef126ea33df36e824bfd678f3ced87eef"
+        ],
+        "line_start": 592,
+        "line_end": 643,
+        "role": "Response",
+        "span_sha256_utf8": "e52fde80391d1124308ecc841b47cbdcd63ba3658ca5f42527381f22316fdd54",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "b2f94286e5fdb0696f831d967baca9eae3d5ab17",
+        "full_story_sha256": "6f975ce39f36c6785c71ce57e8e47a79b751c386669a18bb7d0a846975abd3aa",
+        "immutable_manifest_blob": "e869257b8ca443425a75843beeed0c11dc9c8432"
+      }
+    },
+    {
+      "id": "O8C-B70-011",
+      "book": "V",
+      "day": 531,
+      "chapter_hint": 15,
+      "type": "creation",
+      "entities": [
+        "lucas",
+        "brannik",
+        "vertice",
+        "naira",
+        "campo_aurora"
+      ],
+      "summary": "16h37 melhorias hangar, rebocadores, apoio manutenção, coletores/acumuladores, rede regional; ensaios iniciais.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        20,
+        25,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+        "source_sha256_manifest": "42cddd3a838557d6707086b2765873f20bc9a1bcd3fe6791c21f7760e9c6c6f0",
+        "blob_sha1": "7c8a52aef126ea33df36e824bfd678f3ced87eef",
+        "source_blob_sha1s": [
+          "7c8a52aef126ea33df36e824bfd678f3ced87eef"
+        ],
+        "line_start": 644,
+        "line_end": 697,
+        "role": "Response",
+        "span_sha256_utf8": "9b18bc492e0d0272969e2a6ade4b2c4b9ca2463686799aba627f4cfc0ebc92d9",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "b2f94286e5fdb0696f831d967baca9eae3d5ab17",
+        "full_story_sha256": "6f975ce39f36c6785c71ce57e8e47a79b751c386669a18bb7d0a846975abd3aa",
+        "immutable_manifest_blob": "e869257b8ca443425a75843beeed0c11dc9c8432"
+      }
+    },
+    {
+      "id": "O8C-B70-012",
+      "book": "V",
+      "day": 531,
+      "chapter_hint": 15,
+      "type": "project",
+      "entities": [
+        "rumo",
+        "naira",
+        "lucas",
+        "argos"
+      ],
+      "summary": "17h12 preparação supervisionada RUMO segundo posto, verificações em solo ainda exigidas.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        13,
+        15,
+        25,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+        "source_sha256_manifest": "42cddd3a838557d6707086b2765873f20bc9a1bcd3fe6791c21f7760e9c6c6f0",
+        "blob_sha1": "7c8a52aef126ea33df36e824bfd678f3ced87eef",
+        "source_blob_sha1s": [
+          "7c8a52aef126ea33df36e824bfd678f3ced87eef"
+        ],
+        "line_start": 698,
+        "line_end": 773,
+        "role": "Response",
+        "span_sha256_utf8": "69fc83af2f3b1ab092576e99fd343e21cc82e5c693c3c31e9cdf64a78f193bda",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "b2f94286e5fdb0696f831d967baca9eae3d5ab17",
+        "full_story_sha256": "6f975ce39f36c6785c71ce57e8e47a79b751c386669a18bb7d0a846975abd3aa",
+        "immutable_manifest_blob": "e869257b8ca443425a75843beeed0c11dc9c8432"
+      }
+    },
+    {
+      "id": "O8C-B70-013",
+      "book": "V",
+      "day": 531,
+      "chapter_hint": 15,
+      "type": "project",
+      "entities": [
+        "naira",
+        "lucas",
+        "rumo",
+        "argos"
+      ],
+      "summary": "17h49 janela provisória voo004 D532, Lucas piloto e RUMO segundo posto condicionados; sem voo D531.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        11,
+        12,
+        13,
+        15,
+        25,
+        28
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+        "source_sha256_manifest": "42cddd3a838557d6707086b2765873f20bc9a1bcd3fe6791c21f7760e9c6c6f0",
+        "blob_sha1": "7c8a52aef126ea33df36e824bfd678f3ced87eef",
+        "source_blob_sha1s": [
+          "7c8a52aef126ea33df36e824bfd678f3ced87eef"
+        ],
+        "line_start": 774,
+        "line_end": 823,
+        "role": "Response",
+        "span_sha256_utf8": "b777db78fada59df5588bac9287b97435c7106554038343beb7d021685c34c48",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "b2f94286e5fdb0696f831d967baca9eae3d5ab17",
+        "full_story_sha256": "6f975ce39f36c6785c71ce57e8e47a79b751c386669a18bb7d0a846975abd3aa",
+        "immutable_manifest_blob": "e869257b8ca443425a75843beeed0c11dc9c8432"
+      }
+    },
+    {
+      "id": "O8C-B70-014",
+      "book": "V",
+      "day": 531,
+      "chapter_hint": 15,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "rumo",
+        "vertice",
+        "campo_aurora"
+      ],
+      "summary": "18h18 plataforma, responsabilidades autônomas, éguas e carruagem no Campo.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        13,
+        16,
+        19,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+        "source_sha256_manifest": "42cddd3a838557d6707086b2765873f20bc9a1bcd3fe6791c21f7760e9c6c6f0",
+        "blob_sha1": "7c8a52aef126ea33df36e824bfd678f3ced87eef",
+        "source_blob_sha1s": [
+          "7c8a52aef126ea33df36e824bfd678f3ced87eef"
+        ],
+        "line_start": 824,
+        "line_end": 897,
+        "role": "Response",
+        "span_sha256_utf8": "ebc0e42abae7bd99b3347c55c709dd85a26c955c5db2cc0ac43e924108243ea1",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "b2f94286e5fdb0696f831d967baca9eae3d5ab17",
+        "full_story_sha256": "6f975ce39f36c6785c71ce57e8e47a79b751c386669a18bb7d0a846975abd3aa",
+        "immutable_manifest_blob": "e869257b8ca443425a75843beeed0c11dc9c8432"
+      }
+    },
+    {
+      "id": "O8C-B70-015",
+      "book": "V",
+      "day": 531,
+      "chapter_hint": 15,
+      "type": "metadata",
+      "entities": [
+        "worldroot"
+      ],
+      "summary": "18h34 C15 Parte V concluída, Livro V aberto, último voo003.",
+      "axes": [
+        1,
+        2,
+        15,
+        29,
+        30
+      ],
+      "authority": "METADATA_NOT_EVENT",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+        "source_sha256_manifest": "42cddd3a838557d6707086b2765873f20bc9a1bcd3fe6791c21f7760e9c6c6f0",
+        "blob_sha1": "7c8a52aef126ea33df36e824bfd678f3ced87eef",
+        "source_blob_sha1s": [
+          "7c8a52aef126ea33df36e824bfd678f3ced87eef"
+        ],
+        "line_start": 898,
+        "line_end": 904,
+        "role": "Response",
+        "span_sha256_utf8": "eb968180e8839cd38cb30954beb6de740ba2ab29954f38855da8b94cf140cedc",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "b2f94286e5fdb0696f831d967baca9eae3d5ab17",
+        "full_story_sha256": "6f975ce39f36c6785c71ce57e8e47a79b751c386669a18bb7d0a846975abd3aa",
+        "immutable_manifest_blob": "e869257b8ca443425a75843beeed0c11dc9c8432"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "start": 1,
+      "end": 31,
+      "role": "Response",
+      "span_sha256_utf8": "311f46a5b2bb691d47d539966070d4f76b4393d6753a2c6829cb2a5c0b9f9249",
+      "record_ids": [
+        "O8C-B70-001"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 32,
+      "end": 71,
+      "role": "Response",
+      "span_sha256_utf8": "c93fb2dd7767e3fd83603320a22af1877f2125021922d90f1f5ce09045d3f1b0",
+      "record_ids": [
+        "O8C-B70-002"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 72,
+      "end": 155,
+      "role": "Response",
+      "span_sha256_utf8": "ed41c52c973e12e2c031db6355f8fd381924fe29238a29e4943589b54c21c8fb",
+      "record_ids": [
+        "O8C-B70-003"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 156,
+      "end": 265,
+      "role": "Response",
+      "span_sha256_utf8": "9dd1bb4301ea921fa70d0343fdda21601488d577b922d4cc63ab13f859e58a81",
+      "record_ids": [
+        "O8C-B70-004"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 266,
+      "end": 351,
+      "role": "Response",
+      "span_sha256_utf8": "1fdfd1e3b7afafc242430816c8235c5c0e18fd8e58118204e8ae72eb6d35d942",
+      "record_ids": [
+        "O8C-B70-005"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 352,
+      "end": 423,
+      "role": "Response",
+      "span_sha256_utf8": "f16b493ce2570ed35582743a5708d6c32c0b3ea42b7d9daca418ffecab2a80ce",
+      "record_ids": [
+        "O8C-B70-006"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 424,
+      "end": 499,
+      "role": "Response",
+      "span_sha256_utf8": "716e526fbcbc6badb8cb414bbb275a60de3aa37696d8ae9f4e42148c8be73d7c",
+      "record_ids": [
+        "O8C-B70-007"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 500,
+      "end": 549,
+      "role": "Response",
+      "span_sha256_utf8": "b70d72036841492f47f5ef321f86002be7e28ea2c3f9ebdcc5a70168b6ec7d3c",
+      "record_ids": [
+        "O8C-B70-008"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 550,
+      "end": 591,
+      "role": "Response",
+      "span_sha256_utf8": "376c7c4220899630cf03c999d7056d5f99e0cc1bacf695113dc480fa1dfce22b",
+      "record_ids": [
+        "O8C-B70-009"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 592,
+      "end": 643,
+      "role": "Response",
+      "span_sha256_utf8": "e52fde80391d1124308ecc841b47cbdcd63ba3658ca5f42527381f22316fdd54",
+      "record_ids": [
+        "O8C-B70-010"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 644,
+      "end": 697,
+      "role": "Response",
+      "span_sha256_utf8": "9b18bc492e0d0272969e2a6ade4b2c4b9ca2463686799aba627f4cfc0ebc92d9",
+      "record_ids": [
+        "O8C-B70-011"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 698,
+      "end": 773,
+      "role": "Response",
+      "span_sha256_utf8": "69fc83af2f3b1ab092576e99fd343e21cc82e5c693c3c31e9cdf64a78f193bda",
+      "record_ids": [
+        "O8C-B70-012"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 774,
+      "end": 823,
+      "role": "Response",
+      "span_sha256_utf8": "b777db78fada59df5588bac9287b97435c7106554038343beb7d021685c34c48",
+      "record_ids": [
+        "O8C-B70-013"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 824,
+      "end": 897,
+      "role": "Response",
+      "span_sha256_utf8": "ebc0e42abae7bd99b3347c55c709dd85a26c955c5db2cc0ac43e924108243ea1",
+      "record_ids": [
+        "O8C-B70-014"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 898,
+      "end": 904,
+      "role": "Response",
+      "span_sha256_utf8": "eb968180e8839cd38cb30954beb6de740ba2ab29954f38855da8b94cf140cedc",
+      "record_ids": [
+        "O8C-B70-015"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    }
+  ],
+  "axis_coverage": {
+    "assessed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "represented": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19,
+      20,
+      25,
+      27,
+      28,
+      29,
+      30
+    ]
+  },
+  "next_line": 905,
+  "macro_complete": true,
+  "status": "STAGING_CANDIDATE_PENDING_NATIVE",
+  "production_gate": "HOLD",
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "semantic_certification": false,
+  "independent_review": false,
+  "promotion": false
+}

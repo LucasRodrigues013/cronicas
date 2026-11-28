@@ -1205,7 +1205,70 @@ def verify_book_v_67(root,archive):
     require(audit["totals"]["book_v_lines"]==222642 and audit["production_gate"]=="HOLD" and all(not x["promotion"] for x in audit["overlays"]) and not any(audit[k] for k in ("canon_changed","official_checkpoint_changed","semantic_certification","independent_review","promotion")),"gate")
     return {"status":"PASS_NATIVE_BOOK_V_0067_COMPLETE","frontier_status":"PASS_STAGING_ONLY","cycle_status":"NEW_CYCLE_OPEN_0067","macro_metrics":metrics,"source_provenance":r["source_provenance"],"session_lines":13223,"session_records":87,"staging_records":4161,"book_v_records":1266,"book_v_lines":222642,"next_source":q[67]["source"],"next_line":1,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False}
 
+
+def verify_book_v_71(root,archive):
+    from hashlib import sha256
+    from itertools import islice
+    from .git_cycle import verify_episode, _journal
+    from .omega_turbo_recovery import git_blob
+    root=Path(root);archive=Path(archive)
+    prior=verify_book_v_67(root,archive)
+    c=read(root,ROOT+"recovery-checkpoint-0067-validated.json","20333e8dea79adace5182c1b6f58330ac934419d")
+    old=read(root,c["session_review_path"],"90e31d0f7d1860d6fe5c96565f3a61f962bc5f5a")
+    frontier=read(root,c["cycle_review_path"],"7006296be97be68839b9968bc99a57116f36006c")
+    require(prior["status"]=="PASS_NATIVE_BOOK_V_0067_COMPLETE" and old["status"]=="PASS_STAGING_ONLY" and frontier["status"]=="PASS_STAGING_ONLY","prior")
+    q=read(root,"audit/omega008-c/bulk-macro-queue.json","e5a5f9e358d20acf8559f6313c2da24b64665f48")["macros"]
+    audit=read(root,ROOT+"cycle-0067-0071-review-pending.json","9745b067a9dd223970d9a26bee5946319c23e998")
+    require(audit["macros"][:1]==old["macros"] and audit["prior_findings"]==old["findings"] and audit["previous_cycle_blob"]=="7006296be97be68839b9968bc99a57116f36006c" and audit["prior_session_review_blob"]=="90e31d0f7d1860d6fe5c96565f3a61f962bc5f5a","cycle predecessor")
+    journal=list(islice(_journal(archive),5))
+    require(len(journal)==5 and journal[0][0]["episode_id"]==c["source"],"journal prefix")
+    ids=set()
+    for f in (root/ROOT).glob("*.json"):
+        if any(f.name.startswith("partial-macro-%04d-"%i) for i in range(68,72)):continue
+        obj=json.loads(f.read_bytes());rows=obj.get("records")
+        if isinstance(rows,list):ids.update(x["id"] for x in rows if isinstance(x,dict) and "id" in x)
+    prev="20333e8dea79adace5182c1b6f58330ac934419d";prev_episode=c["source"];prev_day=529;prev_clock="20h42"
+    recs=0;lines=0;original_events=0;original_knowledge=0;metrics=[];sources={};axes=set(prior["macro_metrics"]["axes_represented"])
+    for g,(closure,head) in zip(audit["macros"][1:],journal[1:]):
+        num=g["macro"];m=q[num-1];name=m["source"];sp=g["source_provenance"]
+        require(num==68+len(metrics) and m["status"]=="PENDING_CLOSED_PROSE" and m["previous_macro"]==q[num-2]["id"] and closure["episode_id"]==name and closure["previous_episode_id"]==prev_episode and closure["sequence"]==num-66,"episode chain")
+        d,manifest=verify_episode(archive,name)
+        folder=archive/"episodes"/name/"draft"
+        require(closure==read(archive,"canon/episodes/"+name+".json",sp["closure_blob"]) and manifest["original_readback_sha256"]==closure["story_sha256"]==sp["full_story_sha256"] and closure["previous_head_sha256"]==sp["previous_head_sha256"] and closure["choice_sha256"]==sp["choice_sha256"] and closure["chosen_option"]==sp["chosen_option"],"closure custody")
+        for fname,key in [("episode_draft.json","draft_blob"),("manifesto_imutavel.json","immutable_manifest_blob"),("narrativa_integral.md","narrative_blob")]:
+            require(git_blob((folder/fname).read_bytes())==sp[key],"physical provenance")
+        ev=read(archive,"episodes/"+name+"/review/eventos_revisados.json",sp["reviewed_events_blob"])
+        kn=read(archive,"episodes/"+name+"/review/conhecimento_revisado.json",sp["reviewed_knowledge_blob"])
+        require(ev["review_status"]==kn["review_status"]=="REVISADO" and ev["source_sha256"]==closure["story_sha256"] and ev["events"]==closure["events"] and kn["knowledge"]==closure["knowledge"],"reviewed sidecars")
+        L=tuple(d.prose.splitlines());ph=sha256(d.prose.encode()).hexdigest();sources[name]=L
+        require(len(L)==m["lines"]==sp["prose_lines"] and ph==sp["prose_sha256"] and all(e["source"]["literal_anchor"] in L[e["source"]["line"]-1] for e in closure["events"]),"literal evidence")
+        require(all(k["source_event"] in {e["event_id"] for e in closure["events"]} for k in closure["knowledge"]),"knowledge links")
+        continuity=g["continuity"];require(continuity["previous_episode"]==prev_episode and continuity["start_day"]==prev_day and continuity["start_clock"]==prev_clock and str(prev_day) in "\n".join(L[:40]) and prev_clock in "\n".join(L[:40]) and continuity["end_day"]==head["day"] and continuity["end_clock"]==head["hour"] and continuity["end_location"]==head["location"] and head["book"]=="Livro V" and head["book_closed"] is False,"chronological boundary")
+        require("ESCOLHA "+str(g["editorial_choice_header"]) in "\n".join(L[:8]) and g["closed_choice"]==closure["chosen_option"],"separate choice authority")
+        cp=read(root,g["checkpoint"],g["checkpoint_blob"]);r=read(root,g["receipt"],g["blob"],cp["receipt_sha256"])
+        require(r["source_provenance"]==cp["source_provenance"]==sp and sp["closure_event_count"]==len(closure["events"]) and sp["closure_knowledge_count"]==len(closure["knowledge"]) and r["previous_checkpoint_blob"]==cp["previous_checkpoint_blob"]==prev and r["cycle_review_blob"]=="7006296be97be68839b9968bc99a57116f36006c" and r["previous_macro_id"]==m["previous_macro"] and r["official_unit_seal"]==m["unit_seal"] and r["release_blob"]==c["release_blob"] and cp["next_macro"]==q[num],"receipt chain")
+        source=(L,tuple("Response" for _ in L),((1,len(L),sp["draft_blob"]),),ph)
+        mm=validate_receipt(r,m,source,c["project"],ARCHIVE,previous_ids=ids,expected_range=[1,m["end"]])
+        require(mm["records"]==g["records"] and mm["lines"]==g["lines"] and mm["axes_represented"]==g["axes"],"metrics")
+        for x in r["records"]:
+            e=x["evidence"];require(x["book"]=="V" and prev_day<=x["day"]<=head["day"] and not x["promotion"] and e["source_kind"]=="CLOSED_PROSE" and e["archive_closure_blob"]==sp["closure_blob"] and e["full_story_sha256"]==sp["full_story_sha256"] and e["immutable_manifest_blob"]==sp["immutable_manifest_blob"],"authority")
+            if x["type"] in ("reader_scene","knowledge"):require(x["visibility"].startswith("READER_ONLY" if x["type"]=="reader_scene" else "RESTRICTED"),"perspective")
+        recs+=mm["records"];lines+=mm["lines"];original_events+=len(closure["events"]);original_knowledge+=len(closure["knowledge"]);ids.update(x["id"] for x in r["records"]);axes.update(mm["axes_represented"])
+        require(cp["next_line"]==1 and cp["next_source"]==q[num]["source"] and cp["staging_records"]==4161+recs and cp["official_records"]==1656 and cp["book_counts"]["V"]==1266+recs and cp["completed_macros"]==num,"checkpoint")
+        metrics.append(dict(mm,macro=num,source=name,original_events=len(closure["events"]),original_knowledge=len(closure["knowledge"]),sequence=closure["sequence"],full_sha256=sp["full_story_sha256"],prose_sha256=ph))
+        prev=g["checkpoint_blob"];prev_episode=name;prev_day=head["day"];prev_clock=head["hour"]
+    for e in audit["findings"]:
+        lo,hi=e["range"];require(not e["promotion"] and sha256("\n".join(sources[e["source"]][lo-1:hi]).encode()).hexdigest()==e["sha256"],"literal regression")
+    A,B,C,D=[sources[x["source"]] for x in q[67:71]]
+    require("Leia em casa." in A[417] and "escolhi chamar de irmão" in A[669] and "Amanhã preciso voltar a AERÚN" in A[755],"letter autonomy")
+    require("GÊNESE respondeu à sua vontade, plena e imediata."==B[85] and "Nesta muda." in B[391] and "reprovar esta configuração" in B[511] and "39,86 toneladas" in B[549] and "Nenhum quarto voo" in B[549] and "não só uma carga parada" in B[567] and "Não posso garantir até onde vai" in B[715],"D530 regressions")
+    require("mesmo espaço dimensional já existente" in C[131] and "simulador dimensional" in C[189] and "Seu nome será Vértice" in C[297] and "2.984" in C[553] and "376" in C[553] and "240" in C[553] and "3.600" in C[553] and "24 metros" in C[599] and "janela provisória" in C[803],"D531 regressions")
+    require("EU ENTREI LÁ E SAÍ AQUI" in D[401] and "não será o piloto do voo 004" in D[867] and "Eu piloto no posto esquerdo" in D[923] and "Rumo ocupa o segundo posto" in D[923] and "Lucas permanece no solo" in D[923] and "ARGOS 004 concluído" in D[1089] and "18h19" in D[1293],"D532 regressions")
+    t=audit["totals"];require(recs==56 and lines==4034 and t["lines"]==7303 and t["records"]==25+recs and t["book_v_lines"]==226676 and t["staging_records"]==4161+recs and t["book_v_records"]==1266+recs and t["original_events"]==original_events and t["original_knowledge"]==original_knowledge and sorted(axes)==audit["axis_coverage"]["represented"] and set(audit["axis_coverage"]["assessed"])==set(range(1,31)),"cycle totals")
+    require(audit["production_gate"]=="HOLD" and all(not x["promotion"] for x in audit["overlays"]) and not any(audit[k] for k in ("canon_changed","official_checkpoint_changed","semantic_certification","independent_review","promotion")),"gate")
+    return {"status":"PASS_NATIVE_BOOK_V_0071_COMPLETE","cycle_status":"PASS_STAGING_ONLY","macros":metrics,"cycle_lines":7303,"cycle_records":25+recs,"cycle_axes":sorted(axes),"session_lines":lines,"session_records":recs,"staging_records":4161+recs,"book_v_records":1266+recs,"book_v_lines":226676,"original_events":original_events,"original_knowledge":original_knowledge,"journal_prefix_verified":5,"choice_header_differences_preserved":len(audit["divergences"]),"next_source":q[71]["source"],"next_line":1,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False}
+
 def main():
     p=argparse.ArgumentParser();p.add_argument("--engine-root",default=".");p.add_argument("--archive-root",required=True)
-    a=p.parse_args();print(json.dumps(verify_book_v_67(a.engine_root,a.archive_root),sort_keys=True))
+    a=p.parse_args();print(json.dumps(verify_book_v_71(a.engine_root,a.archive_root),sort_keys=True))
 if __name__=="__main__":main()
