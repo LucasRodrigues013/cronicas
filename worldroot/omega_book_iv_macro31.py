@@ -955,7 +955,57 @@ def verify_book_v_57(root,archive):
     require(audit["production_gate"]=="HOLD" and all(not x["promotion"] for x in audit["overlays"]) and not any(audit[k] for k in ("canon_changed","official_checkpoint_changed","semantic_certification","independent_review","promotion")),"audit")
     return {"status":"PASS_NATIVE_BOOK_V_0057_COMPLETE","cycle_status":"PASS_STAGING_ONLY","source_transition":"SOURCE_05_COMPLETE_SOURCE_06_STARTED_BOOK_V_CONTINUES","macro_metrics":metrics,"cycle_lines":lines,"cycle_records":records,"session_lines":t["session_lines"],"session_records":t["session_records"],"staging_records":t["staging_records"],"book_v_records":t["book_v_records"],"book_v_lines":t["book_v_lines"],"authority_counts":dict(counts),"visibility_counts":dict(vis),"axes":sorted(axes),"next_source":q[57]["source"],"next_line":10090,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False}
 
+
+def verify_book_v_59(root,archive):
+    from collections import Counter
+    from hashlib import sha256
+    root=Path(root);archive=Path(archive)
+    prior=verify_book_v_57(root,archive)
+    c0=read(root,ROOT+"recovery-checkpoint-0057-validated.json","30d71463cb6ab57180afb7be9a195a0fca501c55")
+    old=read(root,c0["cycle_review_path"],c0["cycle_review_blob"])
+    old43=read(root,ROOT+"cycle-0043-0047-consolidated-review-validated.json","960241e971063307345ec001347a3ced1476bff5")
+    old48=read(root,"audit/omega008-c/turbo-v3/cycle-0048-0052-consolidated-review-validated.json","69a57b04c8e678716563d38e94b88c636e06294b")
+    boundary=read(root,c0["book_boundary_review_path"],c0["book_boundary_review_blob"])
+    require(prior["status"]=="PASS_NATIVE_BOOK_V_0057_COMPLETE" and old["status"]=="PASS_STAGING_ONLY" and c0["native_validation"]=="PASS" and c0["staging_records"]==3603,"prior gate")
+    q=read(root,"audit/omega008-c/bulk-macro-queue.json","e5a5f9e358d20acf8559f6313c2da24b64665f48")["macros"]
+    cache=SourceCache(archive,read(archive,"history/sources/MANIFEST.json","2048141263f66151230119af9b0ee51796ac846b"))
+    audit=read(root,ROOT+"macros-0058-0059-review-pending.json","c75d68c33112ab8476854b35026121791b18a9aa")
+    require(audit["previous_cycle_blob"]==c0["cycle_review_blob"] and audit["previous_checkpoint_blob"]=="30d71463cb6ab57180afb7be9a195a0fca501c55" and [g["macro"] for g in audit["macros"]]==[58,59],"scope")
+    ids={x["id"] for g in boundary["macros"] for e in g["receipts"] for x in read(root,e["path"],e["blob"])["records"]}
+    ids.update(x["id"] for g in old43["macros"]+old48["macros"]+old["macros"] for x in read(root,g["receipt"],g["blob"])["records"])
+    require(len(ids)==1481,"prior ids")
+    counts=Counter();vis=Counter();axes=set();lines=0;records=0;metrics=[];prev="30d71463cb6ab57180afb7be9a195a0fca501c55"
+    for g in audit["macros"]:
+        n=g["macro"];m=q[n-1];source=cache.get(m["source"])
+        cp=read(root,g["checkpoint"],g["checkpoint_blob"]);r=read(root,g["receipt"],g["blob"],cp["receipt_sha256"])
+        require(r["cycle_review_blob"]==c0["cycle_review_blob"] and r["release_blob"]==c0["release_blob"] and r["previous_macro_id"]==m["previous_macro"] and r["official_unit_seal"]==m["unit_seal"] and cp["next_macro"]==q[n],"chain")
+        require(r["previous_checkpoint_blob"]==cp["previous_checkpoint_blob"]==prev,"new chain")
+        prev=g["checkpoint_blob"]
+        require(r["range"]==[m["start"],m["end"]] and cp["macro_range"]==r["macro_range"]==r["range"] and cp["native_validation"]=="PENDING" and cp["next_line"]==q[n]["start"],"geometry")
+        result=validate_receipt(r,m,source,r["project"],ARCHIVE,previous_ids=ids,expected_range=r["range"])
+        require(result["lines"]==m["lines"]==g["lines"] and result["records"]==g["records"]==cp["records"] and result["axes_represented"]==g["axes"],"metrics")
+        for x in r["records"]:
+            require(x["book"]=="V" and "NO_CHARACTER_INJECTION" in x["visibility"] and not x["promotion"],"scope")
+            require((x["evidence"]["role"]=="Prompt")==(x["authority"]=="AUTHOR_DIRECTION_NOT_EVENT"),"authority")
+            require(x["type"]!="knowledge" or x["visibility"].startswith("RESTRICTED"),"privacy")
+            ids.add(x["id"]);counts[x["authority"]]+=1;vis[x["visibility"]]+=1
+        lines+=g["lines"];records+=g["records"];axes.update(g["axes"])
+        require(cp["staging_records"]==3603+records and cp["book_counts"]["V"]==708+records and cp["official_records"]==1656 and cp["production_gate"]=="HOLD" and not any(cp[k] for k in ("canon_changed","official_checkpoint_changed","semantic_certification","independent_review","promotion")),"gate")
+        metrics.append({"macro":n,"lines":g["lines"],"records":g["records"],"axes":g["axes"]})
+    for e in audit["findings"]:
+        s=cache.get(e["source"]);lo,hi=e["range"]
+        require(not e["promotion"] and sha256("\n".join(s[0][lo-1:hi]).encode()).hexdigest()==e["sha256"],"anchor")
+    s=cache.get(q[57]["source"])[0]
+    require(len(s)==101429 and all(s[i-1].startswith("LIVRO V") for i in (10978,13125,15487,17739,20051,22747,25677,28015)) and not any(l.strip().startswith("LIVRO VI") for l in s[10089:30385]),"book")
+    require("12"==s[10478].strip() and "240"==s[10482].strip() and "3.360"==s[13028].strip() and "3.600"==s[15388].strip() and "32"==s[15392].strip() and "12"==s[15396].strip(),"malha counts")
+    require("128"==s[17642].strip() and "288"==s[19936].strip() and "376"==s[22654].strip() and "320 m"==s[17646].strip() and "840 m"==s[19940].strip() and "960 m"==s[22646].strip() and "8,00 km"==s[25564].strip(),"progress")
+    require("A Cidade Livre aprova a implantação de AERÚN" in s[26432] and "AOS FUNDADORES DE TRÊS ARCOS" in s[27028] and "Ainda não manifestado"==s[27936].strip() and "Coração de GÊNESE: manifestado e ativado."==s[29066].strip() and "Rede municipal de Três Arcos: independente."==s[29074].strip() and "Às 16h11" in s[29868] and "VARO - Ela continuará descobrindo coisas que ninguém conhece."==s[30384].strip(),"AERUN states")
+    t=audit["totals"]
+    require(lines==t["lines"]==20296 and records==t["records"]==107 and len(ids)==1481+records and t["staging_records"]==3603+records and t["book_v_records"]==708+records and t["book_v_lines"]==148329,"totals")
+    require(audit["production_gate"]=="HOLD" and not any(audit[k] for k in ("canon_changed","official_checkpoint_changed","semantic_certification","independent_review","promotion")),"audit")
+    return {"status":"PASS_NATIVE_BOOK_V_0059_COMPLETE","review_status":"PASS_STAGING_ONLY","cycle_status":audit["cycle_status"],"macro_metrics":metrics,"session_lines":lines,"session_records":records,"staging_records":t["staging_records"],"book_v_records":t["book_v_records"],"book_v_lines":t["book_v_lines"],"authority_counts":dict(counts),"visibility_counts":dict(vis),"axes":sorted(axes),"next_line":30386,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False}
+
 def main():
     p=argparse.ArgumentParser();p.add_argument("--engine-root",default=".");p.add_argument("--archive-root",required=True)
-    a=p.parse_args();print(json.dumps(verify_book_v_57(a.engine_root,a.archive_root),sort_keys=True))
+    a=p.parse_args();print(json.dumps(verify_book_v_59(a.engine_root,a.archive_root),sort_keys=True))
 if __name__=="__main__":main()
