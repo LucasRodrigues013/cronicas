@@ -1,5 +1,5 @@
 # Crônicas Literary Edition — Central editorial
-**Estado atual: texto do prólogo V0.5 aprovado pelo autor; identidade visual premium entregue para avaliação.** Capítulo 1 não produzido nesta entrega.
+**Estado atual: texto do prólogo V0.5 e arte de capa ilustrada aprovados pelo autor; PDF ilustrado entregue na conversa.** Capítulo 1 não produzido nesta entrega.
 
 Esta seção existe exclusivamente na branch `literary-edition/book-i`. É uma adaptação literária separada, não uma fonte canônica do RPG. Não abrir PR para main ou story-archive. Fontes de RPG somente leitura. A rotina do RPG e Eidoryn são independentes.
 
@@ -28,3 +28,5 @@ Leia esta central, o contrato (a diretriz V0.4 prevalece), o feedback, a versão
 ## Aprovação e projeto gráfico
 - [Aprovação explícita V0.5](book-i/evidence/00-prologo-approval-v0.5.json)
 - [Identidade visual premium](DESIGN_SYSTEM.md)
+
+- [Edição ilustrada — aprovação da capa, auditoria de integridade e notas editoriais](book-i/evidence/00-prologo-edicao-ilustrada.json)
