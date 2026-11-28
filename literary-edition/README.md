@@ -1,5 +1,5 @@
 # Crônicas Literary Edition — Central editorial
-**Estado atual: prólogo V0.5 e edição ilustrada aprovados; capítulo 1 V0.5 em revisão autoral, com criação dos 300 e batalha integral; meta mínima 9,9 ainda não homologada.**
+**Estado atual: prólogo V0.5, capa ilustrada e capítulo 1 V0.5 aprovados pelo autor. 11.302 palavras; capítulo 2 é a próxima unidade.**
 
 Esta seção existe exclusivamente na branch `literary-edition/book-i`. É uma adaptação literária separada, não uma fonte canônica do RPG. Não abrir PR para main ou story-archive. Fontes de RPG somente leitura. A rotina do RPG e Eidoryn são independentes.
 
@@ -23,7 +23,7 @@ Esta seção existe exclusivamente na branch `literary-edition/book-i`. É uma a
 [Capítulo 1 V0.2](book-i/drafts/01-capitulo-1-v0.2.md) — rascunho legado preservado; texto do prólogo aprovado, revisão da transição a fazer na próxima produção. Os PDFs antigos V0.3/V0.4 foram entregues no chat; binários anteriores não foram arquivados aqui. A edição PDF de leitura V0.5 está arquivada; novo PDF premium entregue na conversa, binário ainda não arquivado nesta branch.
 
 ## Retomada
-Leia esta central, o contrato (a diretriz V0.4 prevalece), o feedback, a versão V0.5 e seu parecer. A aprovação textual V0.5 já está registrada. Preservar texto aprovado. A próxima produção pode revisar a transição e preparar o capítulo 1 mediante pedido do autor; alterações gráficas não implicam revisão textual. Não alterar o RPG, main, story-archive ou seus HEAD/RESUME. 
+Leia esta central, o contrato (a diretriz V0.4 prevalece), o feedback, a versão V0.5 e seu parecer. A aprovação textual V0.5 já está registrada. Preservar texto aprovado. A próxima produção deve preservar prólogo e capítulo 1 aprovados e preparar o capítulo 2 mediante pedido do autor; alterações gráficas não implicam revisão textual. Não alterar o RPG, main, story-archive ou seus HEAD/RESUME. 
 
 ## Aprovação e projeto gráfico
 - [Aprovação explícita V0.5](book-i/evidence/00-prologo-approval-v0.5.json)
@@ -45,3 +45,8 @@ Leia esta central, o contrato (a diretriz V0.4 prevalece), o feedback, a versão
 - [Manuscrito](book-i/drafts/01-capitulo-1-v0.5.md) — 6.475 palavras.
 - [Auditoria e hashes](book-i/evidence/01-capitulo-1-review-v0.5.json).
 - A diretriz mais recente substitui a divisão anterior: capítulo 1 inclui nascimento dos 300 e batalha. PDFs de 29 e 52 páginas entregues em conversa. Não avançar capítulo 2 até aprovação; replanejar divisão posterior após aprovação.
+
+## Aprovação do capítulo 1 V0.5
+- [Registro de aprovação autoral e versão congelada](book-i/evidence/01-capitulo-1-approval-v0.5.json).
+- A aprovação expressa prevalece nesta unidade sobre o bloqueio anterior; a estimativa manual de 9,4 permanece registrada, sem certificação de 9,9. Meta futura de 9,9 preservada.
+- Próxima unidade proposta: capítulo 2 — O preço da primeira vitória. Recuperar desdobramentos do primeiro dia, sem repetir a batalha. Não redigir nesta entrega.
