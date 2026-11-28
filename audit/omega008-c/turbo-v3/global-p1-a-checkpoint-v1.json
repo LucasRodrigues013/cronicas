@@ -1,0 +1,108 @@
+{
+  "schema": "OMEGA_GLOBAL_P1_A_CHECKPOINT_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "status": "P1_A_TARGET_PREPARATION_PASS_ATOMIC_NORMALIZATION_AND_INDEPENDENT_REVIEW_HOLD",
+  "previous_head": "922752cd98ec19961fa1ec7a8385f659c9280d2f",
+  "p0_checkpoint_blob": "00007832ee28d0e3f4a58095eec3cccded80b556",
+  "p0_evidence_blob": "358c9ca55edec40e950628f5d24d8e3f6a50fc0a",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "queue_blob": "e5a5f9e358d20acf8559f6313c2da24b64665f48",
+  "validated_commit": "1586337d3c0a3b4c6c44edc8d54fa6303c128699",
+  "workflow": 46150872490,
+  "native_evidence_path": "audit/omega008-c/turbo-v3/global-p1-a-native-evidence-v1.json",
+  "native_evidence_blob": "1abca997e7d0860ef43aae5ae1c0608e46d24189",
+  "target_path": "audit/omega008-c/turbo-v3/global-p1-a-targets-v1.json",
+  "target_blob": "0ab64aa1b4365312c14d17e2a695478d3ad7ac87",
+  "scope": {
+    "source": "01_DIA_001_A_383_FONTE_LITERAL.txt",
+    "source_sha256": "bb43d493ef3c28391345af7cd319e62af2f99f4f51b417bebb129fad6786cc4b",
+    "lines": [
+      1,
+      1679
+    ],
+    "parents": 79,
+    "global_parent_denominator": 4941,
+    "parent_targets": 298,
+    "gap_targets": 6,
+    "targets": 304,
+    "unique_ids": 304,
+    "normalized_value_targets": 23,
+    "pending_value_normalization": 281,
+    "preliminary_verdicts": {
+      "SUPPORTED": 165,
+      "PARTIAL": 110,
+      "UNKNOWN": 29
+    },
+    "note": "SUPPORTED is controller's local source assessment, including summary/status claims; not equivalent to reviewer SUPPORTED or canon."
+  },
+  "gap": {
+    "lines": 534,
+    "parts": 493,
+    "sha256": "f6fc6fe3331c193ac3ddf2cb9c757d7988d7335140adb9a41a035c701314fa43",
+    "categories": {
+      "AUTHOR_DIRECTION_OR_ATTACHMENT_GAP": 2,
+      "AUTHOR_OR_EDITORIAL": 59,
+      "AUTHOR_OR_SOURCE_GAP": 1,
+      "DRAFT_OR_EDITORIAL": 4,
+      "EDITORIAL_PREPARATION": 58,
+      "EDITORIAL_RECAP": 11,
+      "EXPORT_FORMAT_OR_METADATA": 331,
+      "NEW_ATOMIC_CANDIDATE": 6,
+      "OPTION_OR_INTERFACE": 8,
+      "RELEVANT_OR_REPETITION": 54
+    },
+    "unresolved": "54 lines require finer narrative relevance/duplication adjudication; broad categories are preliminary; no exhaustive semantic coverage claimed"
+  },
+  "atom_sha256": "b3e154c568d09e668d3ac386aad28c50dafaaa847216b3942de25262793186e4",
+  "review": {
+    "jobs": 266,
+    "batch_pairs": 45,
+    "packages": 90,
+    "controller_pin": "ca2020cfdea6c09f496ecf513de509deb6efaaffced65fc3a6fa59eb3d8e36d3",
+    "first_A": "fe874413a7c7b2c117653b99ba75ce71d8975a4999b9689c93ed687ab2938f9f",
+    "first_B": "18300ab1ce1cfa1985afbc24e19fa054f9777a9cbad6c4f6a1cfecbdbd4062d0",
+    "packet_manifest": "native evidence aggregate.packet_manifest",
+    "delivery": "Runtime consumer reconstructs exact packets; no public packet body or reviewer gold persisted. Reviewer should receive only own package, not target metadata or other response.",
+    "returns_A": 0,
+    "returns_B": 0,
+    "independently_certified": 0,
+    "adjudication": "PENDING",
+    "model_independence_verified": false
+  },
+  "codex": {
+    "lexical_candidate_targets": 175,
+    "unresolved_local_label_targets": 129,
+    "field_level_compatibility": "PENDING; no delta proposed",
+    "notes": "Existing registry candidate ID comparison only. No inferred stable identity or field assignment."
+  },
+  "stage_c": {
+    "previous_checkpoint": "00007832ee28d0e3f4a58095eec3cccded80b556",
+    "status": "PRESERVED; prior search of PR77 and branch found no full A/B; no new responses imported",
+    "independently_certified": 0
+  },
+  "next": {
+    "cursor": {
+      "source_line": 1680,
+      "macro": 2,
+      "parent_records_remaining": 4862
+    },
+    "order": "First normalize and adjudicate P1-A targets and 54 relevant/duplicate gaps; transport paired reviewer packets in bounded groups, then remaining macro2 receipt. Can prepare subsequent batches without duplicating prior ones but never auto certify.",
+    "existing_review_contract": "r36_chat_review.prepare_history/validate_history/accept_history/reconcile_history; declared separate sessions not proof of model independence"
+  },
+  "limitations": [
+    "No new independent review or authentication",
+    "Only 23 targets have structured normalized values; remaining 281 are field targets bound to exact spans and need explicit claim normalization",
+    "Negation/conditions/temporal state are not fully normalized",
+    "No full Codex field compatibility, no new typed projection",
+    "No new exhaustive historical or full motor regression",
+    "L1/L2 exact baseline remains unresolved",
+    "Stage C returns not re-searched beyond previously inspected authority in this cycle"
+  ],
+  "production_gate": "HOLD",
+  "semantic_certification": false,
+  "independent_review": false,
+  "typed_projection": false,
+  "full_regression": false,
+  "promotion": false,
+  "canon_changed": false
+}
