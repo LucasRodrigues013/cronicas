@@ -1,0 +1,1177 @@
+{
+  "schema": "OMEGA_HYBRID_CYCLE_0067_0071_VALIDATED_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "previous_cycle_blob": "7006296be97be68839b9968bc99a57116f36006c",
+  "previous_checkpoint_blob": "20333e8dea79adace5182c1b6f58330ac934419d",
+  "prior_session_review_blob": "90e31d0f7d1860d6fe5c96565f3a61f962bc5f5a",
+  "macros": [
+    {
+      "macro": 67,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0067-01.json",
+      "blob": "11f0780c27761609dd6294f5a834b474d7ed0254",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0067-closure-pending.json",
+      "checkpoint_blob": "694d696620ecb45c8cda6e8d285d92b6993dcaed",
+      "records": 25,
+      "lines": 3269,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        24,
+        25,
+        26,
+        27,
+        29,
+        30
+      ]
+    },
+    {
+      "macro": 68,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0068-01.json",
+      "blob": "fc7f00119d22b63ee7820fb15cde46f503eba1ea",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0068-closure-pending.json",
+      "checkpoint_blob": "e28f17def70166cdef7a3204abb8a41d1207b02e",
+      "records": 10,
+      "lines": 890,
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        13,
+        16,
+        18,
+        19,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "source_provenance": {
+        "kind": "CLOSED_PROSE",
+        "episode_id": "LV-C15-PIII-D529-AUTHOR-SOURCE",
+        "sequence": 2,
+        "previous_episode_id": "LV-C15-PII-D529-AUTHOR-SOURCE",
+        "previous_head_sha256": "2ad25225e637445f112a9997125b503ddddea509d32a7cce0069ef268f2f3747",
+        "closure_blob": "f6e14452c149afa9426b6ea1df81f4b26f163f21",
+        "draft_blob": "524532c7397f891f31a8d63ca7b1d6010f221a6f",
+        "immutable_manifest_blob": "bd9e6890730ea05bf205d4a538ba2d5f17b281c8",
+        "narrative_blob": "5f9caf904017b5c0de2c5ff012760363ddaf8bf1",
+        "full_story_sha256": "b355f64ea30ccf9f24b40e75d1d2b64261ae974639892e02eefc149ec93ed392",
+        "prose_sha256": "0c7d502a7156fa524c2ab10c4692b546bea7fb620d610c0a66f40197cad082a7",
+        "prose_lines": 890,
+        "role_adapter": "Response for native receipt compatibility only; closure authority separate",
+        "closure_event_count": 8,
+        "closure_knowledge_count": 6,
+        "reviewed_events_blob": "41cbdf31804667e36654576207b3bf1e4bec70b7",
+        "reviewed_knowledge_blob": "647d287983d6dc6c442bb3d89cb44b5200e27616",
+        "choice_sha256": "e290b238cc197e1fd643782cb23e21fce873ec93dc740d4fe95120f93e6a91f1",
+        "chosen_option": 4
+      },
+      "continuity": {
+        "previous_episode": "LV-C15-PII-D529-AUTHOR-SOURCE",
+        "start_day": 529,
+        "start_clock": "20h42",
+        "end_day": 529,
+        "end_clock": "23h43",
+        "end_location": "Casa do Jardim Branco, Três Arcos"
+      },
+      "original_events": 8,
+      "original_knowledge": 6,
+      "editorial_choice_header": 4,
+      "closed_choice": 4
+    },
+    {
+      "macro": 69,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0069-01.json",
+      "blob": "e7db0c4f0ed5bd52d1af5ea1b7b6e852d64a3616",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0069-closure-pending.json",
+      "checkpoint_blob": "7df7f383cb8938846d15ab5b66b007c4a4759ade",
+      "records": 12,
+      "lines": 942,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19,
+        20,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "source_provenance": {
+        "kind": "CLOSED_PROSE",
+        "episode_id": "LV-C15-PIV-D530-AUTHOR-SOURCE",
+        "sequence": 3,
+        "previous_episode_id": "LV-C15-PIII-D529-AUTHOR-SOURCE",
+        "previous_head_sha256": "d8d7a691ea45eee2fafd055035dd6018bdf6ad85c5b6da469030d3c5ffcf4934",
+        "closure_blob": "4953cd729d8c560e9a2bc6fc37725a61a4787816",
+        "draft_blob": "39bea91152a2e525f5b2030f22f0701e9fc64f49",
+        "immutable_manifest_blob": "55c5eb3d5e41d9f6a00cd3f006f7ff9c47790543",
+        "narrative_blob": "5a3b09a246e82f3595954fcde56be12fffb37c2c",
+        "full_story_sha256": "ab6793a493f2f449ceeeb1e980ceff3db599d6399ee3515ebfabf91ea2cd6537",
+        "prose_sha256": "236c4fbb2a8e5f5c36af01f61fd1a06c1b784bf9ae57fc880f50f2717b3abab0",
+        "prose_lines": 942,
+        "role_adapter": "Response for native receipt compatibility only; closure authority separate",
+        "closure_event_count": 11,
+        "closure_knowledge_count": 9,
+        "reviewed_events_blob": "438b1c1a41761a33beda7e1984bfcad2159ed72c",
+        "reviewed_knowledge_blob": "ce4a3f75796d97ffd43133138bda6fedf78b1e34",
+        "choice_sha256": "2bac5dc5e304725fb809d36f177d22a8f91e24750c8c1a2cf88966f8b9d3fb11",
+        "chosen_option": 5
+      },
+      "continuity": {
+        "previous_episode": "LV-C15-PIII-D529-AUTHOR-SOURCE",
+        "start_day": 529,
+        "start_clock": "23h43",
+        "end_day": 530,
+        "end_clock": "18h02",
+        "end_location": "Grande Avenida, Três Arcos"
+      },
+      "original_events": 11,
+      "original_knowledge": 9,
+      "editorial_choice_header": 4,
+      "closed_choice": 5
+    },
+    {
+      "macro": 70,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0070-01.json",
+      "blob": "489abeec2c64f20dcb6e55b412dbc0e67479418f",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0070-closure-pending.json",
+      "checkpoint_blob": "9505ff67b6f82d0dff84020fd19dfdcf683f3995",
+      "records": 15,
+      "lines": 904,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        19,
+        20,
+        25,
+        27,
+        28,
+        29,
+        30
+      ],
+      "source_provenance": {
+        "kind": "CLOSED_PROSE",
+        "episode_id": "LV-C15-PV-D531-AUTHOR-SOURCE",
+        "sequence": 4,
+        "previous_episode_id": "LV-C15-PIV-D530-AUTHOR-SOURCE",
+        "previous_head_sha256": "99b690e8845c5c76e5c15152a222ac0f4dda2f7a8b93054dcda232ed6ad7edb3",
+        "closure_blob": "b2f94286e5fdb0696f831d967baca9eae3d5ab17",
+        "draft_blob": "7c8a52aef126ea33df36e824bfd678f3ced87eef",
+        "immutable_manifest_blob": "e869257b8ca443425a75843beeed0c11dc9c8432",
+        "narrative_blob": "46d921cbdd7be67b0c94a3d21504d0d2fabe60bb",
+        "full_story_sha256": "6f975ce39f36c6785c71ce57e8e47a79b751c386669a18bb7d0a846975abd3aa",
+        "prose_sha256": "42cddd3a838557d6707086b2765873f20bc9a1bcd3fe6791c21f7760e9c6c6f0",
+        "prose_lines": 904,
+        "role_adapter": "Response for native receipt compatibility only; closure authority separate",
+        "closure_event_count": 14,
+        "closure_knowledge_count": 9,
+        "reviewed_events_blob": "9270310ce674bc4c21a0697a27e057010ff5b0de",
+        "reviewed_knowledge_blob": "37b25e36a8b8ce2d97ec9df60694e497fdcb9a00",
+        "choice_sha256": "c05d233572a7084841f5e2ba39d0cdb6ea4b72726960ac04ba605cc3ce18f865",
+        "chosen_option": 4
+      },
+      "continuity": {
+        "previous_episode": "LV-C15-PIV-D530-AUTHOR-SOURCE",
+        "start_day": 530,
+        "start_clock": "18h02",
+        "end_day": 531,
+        "end_clock": "18h34",
+        "end_location": "Campo Aurora, plataforma de observação"
+      },
+      "original_events": 14,
+      "original_knowledge": 9,
+      "editorial_choice_header": 5,
+      "closed_choice": 4
+    },
+    {
+      "macro": 71,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0071-01.json",
+      "blob": "cf91913b02c30823f1465be1f711bee29798f584",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0071-closure-pending.json",
+      "checkpoint_blob": "0e1d0f269489969ec351d6361d83cbfcfb4c9c90",
+      "records": 19,
+      "lines": 1298,
+      "axes": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        19,
+        20,
+        22,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "source_provenance": {
+        "kind": "CLOSED_PROSE",
+        "episode_id": "LV-C16-PI-D532-AUTHOR-SOURCE",
+        "sequence": 5,
+        "previous_episode_id": "LV-C15-PV-D531-AUTHOR-SOURCE",
+        "previous_head_sha256": "97eb52e5fa5955f92f7d272a319e75b6170cd549e57c5cc0ea75d8af45993680",
+        "closure_blob": "bb4029f02f447c2312bcfa460c76b16de49d9cfc",
+        "draft_blob": "04421dc2170f1f08d0976b6a938d4d2b1908a087",
+        "immutable_manifest_blob": "97e8c933516a65182683b1afef3aabe80ebdd1bf",
+        "narrative_blob": "59cd11a151e7993cba957e14ffa139da63f451cb",
+        "full_story_sha256": "3f92dc34c423245fd50b2211310bd32a7a3b6a84da6e6d4f9e066124c310be57",
+        "prose_sha256": "6013ffa25ce6fdf8ccd093f05209b86a77b6563d7932986c96cec34fb70f841f",
+        "prose_lines": 1298,
+        "role_adapter": "Response for native receipt compatibility only; closure authority separate",
+        "closure_event_count": 15,
+        "closure_knowledge_count": 13,
+        "reviewed_events_blob": "93364f4e4fc44258f36be9c5297253f0c18487fb",
+        "reviewed_knowledge_blob": "e21f7b70033cc8824027fe430285375d84a1d74d",
+        "choice_sha256": "5538b8cbdf2f731b557e28644c91957286a54a0a1426cb79a300c8b08a2b53fe",
+        "chosen_option": 5
+      },
+      "continuity": {
+        "previous_episode": "LV-C15-PV-D531-AUTHOR-SOURCE",
+        "start_day": 531,
+        "start_clock": "18h34",
+        "end_day": 532,
+        "end_clock": "18h19",
+        "end_location": "Casa do Jardim Branco, Três Arcos"
+      },
+      "original_events": 15,
+      "original_knowledge": 13,
+      "editorial_choice_header": 4,
+      "closed_choice": 5
+    }
+  ],
+  "prior_findings": [
+    {
+      "id": "BIRTHDAY",
+      "source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "range": [
+        62,
+        247
+      ],
+      "sha256": "204298dcbc2d956e7b132cd07a2281fb63fe5c40d26a031cc53abbbde299bd38",
+      "promotion": false
+    },
+    {
+      "id": "PRIVATE_PREPARATION",
+      "source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "range": [
+        398,
+        625
+      ],
+      "sha256": "23ef8a58cbd54ce605378745c4f92381c799ccaeadf728abf883eaa0c00446b9",
+      "promotion": false
+    },
+    {
+      "id": "PHYSICAL_OBSERVATORY",
+      "source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "range": [
+        850,
+        983
+      ],
+      "sha256": "df9b7e7c2fd059a9b0bf2b4a72f72773a3bcc2f8e5080af251426a0d66344a02",
+      "promotion": false
+    },
+    {
+      "id": "MIREN_LETTER",
+      "source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "range": [
+        984,
+        1191
+      ],
+      "sha256": "9e03a3cd76ed124e09881ec50919a4c0388f89b0e6043e3ae49d1e08a09a8879",
+      "promotion": false
+    },
+    {
+      "id": "MIREN_AUTONOMY",
+      "source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "range": [
+        1192,
+        1329
+      ],
+      "sha256": "61ebb00c5e9481996b4ba90b0c17be3aafc73ec6386d3c50ad2b8d1a86c26ff7",
+      "promotion": false
+    },
+    {
+      "id": "ARTISAN",
+      "source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "range": [
+        1474,
+        1579
+      ],
+      "sha256": "c8fb713c1f63715562c685763e9719063233c7f786bfd23e7115b87582eb7aa1",
+      "promotion": false
+    },
+    {
+      "id": "AERUN_PENDING",
+      "source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "range": [
+        1580,
+        1663
+      ],
+      "sha256": "85ed116fe012127e96b97c097a8eb1ebc69d6c1331c21a8308c909605c70a8a8",
+      "promotion": false
+    },
+    {
+      "id": "ARGOS_NO_INSTALL",
+      "source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "range": [
+        1664,
+        1795
+      ],
+      "sha256": "18bb70af016fde4dd41a01e46a11941bdc30a2868cdfcb45c8da9e3f278db2fc",
+      "promotion": false
+    },
+    {
+      "id": "KAIRON_AUTONOMY",
+      "source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "range": [
+        1796,
+        1907
+      ],
+      "sha256": "2245d0db4f0e79ef18368cca76f7e318d1f4d440a327b5decf0c906c1cd58ab7",
+      "promotion": false
+    },
+    {
+      "id": "VOLUNTARY_PARTY",
+      "source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "range": [
+        2032,
+        2263
+      ],
+      "sha256": "876ce1402097403e25ea18c9b3db049109c56477c795ec0df10d2e64d619d637",
+      "promotion": false
+    },
+    {
+      "id": "VOLUNTARY_STORIES",
+      "source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "range": [
+        2330,
+        2533
+      ],
+      "sha256": "66aaa8d665ca9cf8fecbc37ba395ae0cb0203b229d5f06e776866382428db558",
+      "promotion": false
+    },
+    {
+      "id": "VARO_UNREAD",
+      "source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "range": [
+        2534,
+        2619
+      ],
+      "sha256": "467182eef15019bf131ab9054364dfc3406eaec18049dd398dbe148c6da4cf53",
+      "promotion": false
+    },
+    {
+      "id": "KAIRON_LETTER",
+      "source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "range": [
+        2620,
+        2775
+      ],
+      "sha256": "121ef8f7cbd2e187aa834f3bf4b38a05c6692189a7d19c17d2e85dd67573a5db",
+      "promotion": false
+    },
+    {
+      "id": "DAY_OPEN",
+      "source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "range": [
+        3070,
+        3269
+      ],
+      "sha256": "a1224735b2fba87e35494a3c32c549d910a9b00ef437eb288f255d0824cd2980",
+      "promotion": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "O8C-B68-001",
+      "source": "LV-C15-PIII-D529-AUTHOR-SOURCE",
+      "range": [
+        1,
+        13
+      ],
+      "sha256": "09224d7d7582734db2a4a036c544bc6dc94ea4d10d4b9fe1ae155748ea5ec24b",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B68-002",
+      "source": "LV-C15-PIII-D529-AUTHOR-SOURCE",
+      "range": [
+        14,
+        137
+      ],
+      "sha256": "2f5efc005d126c3f71719cae67a6860dc1358479f63bf0e7dc9b0035d6f88d0c",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B68-003",
+      "source": "LV-C15-PIII-D529-AUTHOR-SOURCE",
+      "range": [
+        138,
+        257
+      ],
+      "sha256": "bbf0e8e87521ae1d5cf14a962a3df4432cc2ffb1360296f15a8508164bfeb5f0",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B68-004",
+      "source": "LV-C15-PIII-D529-AUTHOR-SOURCE",
+      "range": [
+        258,
+        349
+      ],
+      "sha256": "83211f672d09e7a034ea33280b692720d98c19e42f8aa153c2418a0d1267ae68",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B68-005",
+      "source": "LV-C15-PIII-D529-AUTHOR-SOURCE",
+      "range": [
+        350,
+        465
+      ],
+      "sha256": "15e57b0a808a403c8e5866c400c9d4fc09e29e8fa22a32f0c15f21eb51c1e927",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B68-006",
+      "source": "LV-C15-PIII-D529-AUTHOR-SOURCE",
+      "range": [
+        466,
+        589
+      ],
+      "sha256": "58818cc9a57d3bf3ca81fdc757745cfa57d28c2c3e2a34c4d2aa8050d81d696d",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B68-007",
+      "source": "LV-C15-PIII-D529-AUTHOR-SOURCE",
+      "range": [
+        590,
+        639
+      ],
+      "sha256": "78d8a7e71008eade1bcf54a72cf358bcbb36f06451871f9722653e5c330fe29e",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B68-008",
+      "source": "LV-C15-PIII-D529-AUTHOR-SOURCE",
+      "range": [
+        640,
+        735
+      ],
+      "sha256": "66a60f077e0bbfce34f2389761fcae5abfb4ef067ef9c4c96e3afaf0d7efb30a",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B68-009",
+      "source": "LV-C15-PIII-D529-AUTHOR-SOURCE",
+      "range": [
+        736,
+        883
+      ],
+      "sha256": "090306b60c1c82620c0948930af9858fb4919538f7fa0141941f1702ce0f3c9c",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B68-010",
+      "source": "LV-C15-PIII-D529-AUTHOR-SOURCE",
+      "range": [
+        884,
+        890
+      ],
+      "sha256": "19da06cfdeb34056081d7a3d5c3e7ac324c038d5a55e54e9d69bf4187192baaf",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B69-001",
+      "source": "LV-C15-PIV-D530-AUTHOR-SOURCE",
+      "range": [
+        1,
+        31
+      ],
+      "sha256": "68739c121922969feff7ec034ae1104273210408f3e67dfa7b94717810d55676",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B69-002",
+      "source": "LV-C15-PIV-D530-AUTHOR-SOURCE",
+      "range": [
+        32,
+        127
+      ],
+      "sha256": "d6714f3ea3ed75662d377995957f4ffc86338297aa02205627bc9bcde9b03194",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B69-003",
+      "source": "LV-C15-PIV-D530-AUTHOR-SOURCE",
+      "range": [
+        128,
+        245
+      ],
+      "sha256": "69d2da317bc065b0fac58cf3e9fa3fb6a9aa9786ffaa86c88fbc5b2928f13ceb",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B69-004",
+      "source": "LV-C15-PIV-D530-AUTHOR-SOURCE",
+      "range": [
+        246,
+        347
+      ],
+      "sha256": "1466c2b6c264a7c047ca52cf57813684052b58f845253618a3b354b2cf1147be",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B69-005",
+      "source": "LV-C15-PIV-D530-AUTHOR-SOURCE",
+      "range": [
+        348,
+        427
+      ],
+      "sha256": "86d390da20b90b8a12e50946071f44334c4920dc41b7643c6dcf1618bdaf7028",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B69-006",
+      "source": "LV-C15-PIV-D530-AUTHOR-SOURCE",
+      "range": [
+        428,
+        493
+      ],
+      "sha256": "a101fde09677f2526d54e9eaa731184dfa53ce1e2533cedeaa1f0f51eae974e4",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B69-007",
+      "source": "LV-C15-PIV-D530-AUTHOR-SOURCE",
+      "range": [
+        494,
+        551
+      ],
+      "sha256": "ef3e393be76ed93bf99a14419a9bf0f326506dc2172d0324c83c28c429c29574",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B69-008",
+      "source": "LV-C15-PIV-D530-AUTHOR-SOURCE",
+      "range": [
+        552,
+        591
+      ],
+      "sha256": "7012ad80af671f5fbe6b6666fcd3d05d6af8394f46c67adaba4d9dc6a84168a1",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B69-009",
+      "source": "LV-C15-PIV-D530-AUTHOR-SOURCE",
+      "range": [
+        592,
+        689
+      ],
+      "sha256": "ac96d499a3a158d87a4306e847fafe611b4f7e7aec70c14aef9c1f296013731d",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B69-010",
+      "source": "LV-C15-PIV-D530-AUTHOR-SOURCE",
+      "range": [
+        690,
+        793
+      ],
+      "sha256": "31af13a530c8b4d8719e98182d53de41302c6b4e4c64297c87cd8024e03ca540",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B69-011",
+      "source": "LV-C15-PIV-D530-AUTHOR-SOURCE",
+      "range": [
+        794,
+        935
+      ],
+      "sha256": "54730bcb9f216379823b7a3899936ccc1e46bab87109cadf09419993a0410f2c",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B69-012",
+      "source": "LV-C15-PIV-D530-AUTHOR-SOURCE",
+      "range": [
+        936,
+        942
+      ],
+      "sha256": "5518ab24aa2f47c6b6fd8e5270d588f757984d639ffa507377d8433fabdd837c",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B70-001",
+      "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+      "range": [
+        1,
+        31
+      ],
+      "sha256": "311f46a5b2bb691d47d539966070d4f76b4393d6753a2c6829cb2a5c0b9f9249",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B70-002",
+      "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+      "range": [
+        32,
+        71
+      ],
+      "sha256": "c93fb2dd7767e3fd83603320a22af1877f2125021922d90f1f5ce09045d3f1b0",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B70-003",
+      "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+      "range": [
+        72,
+        155
+      ],
+      "sha256": "ed41c52c973e12e2c031db6355f8fd381924fe29238a29e4943589b54c21c8fb",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B70-004",
+      "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+      "range": [
+        156,
+        265
+      ],
+      "sha256": "9dd1bb4301ea921fa70d0343fdda21601488d577b922d4cc63ab13f859e58a81",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B70-005",
+      "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+      "range": [
+        266,
+        351
+      ],
+      "sha256": "1fdfd1e3b7afafc242430816c8235c5c0e18fd8e58118204e8ae72eb6d35d942",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B70-006",
+      "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+      "range": [
+        352,
+        423
+      ],
+      "sha256": "f16b493ce2570ed35582743a5708d6c32c0b3ea42b7d9daca418ffecab2a80ce",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B70-007",
+      "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+      "range": [
+        424,
+        499
+      ],
+      "sha256": "716e526fbcbc6badb8cb414bbb275a60de3aa37696d8ae9f4e42148c8be73d7c",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B70-008",
+      "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+      "range": [
+        500,
+        549
+      ],
+      "sha256": "b70d72036841492f47f5ef321f86002be7e28ea2c3f9ebdcc5a70168b6ec7d3c",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B70-009",
+      "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+      "range": [
+        550,
+        591
+      ],
+      "sha256": "376c7c4220899630cf03c999d7056d5f99e0cc1bacf695113dc480fa1dfce22b",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B70-010",
+      "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+      "range": [
+        592,
+        643
+      ],
+      "sha256": "e52fde80391d1124308ecc841b47cbdcd63ba3658ca5f42527381f22316fdd54",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B70-011",
+      "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+      "range": [
+        644,
+        697
+      ],
+      "sha256": "9b18bc492e0d0272969e2a6ade4b2c4b9ca2463686799aba627f4cfc0ebc92d9",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B70-012",
+      "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+      "range": [
+        698,
+        773
+      ],
+      "sha256": "69fc83af2f3b1ab092576e99fd343e21cc82e5c693c3c31e9cdf64a78f193bda",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B70-013",
+      "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+      "range": [
+        774,
+        823
+      ],
+      "sha256": "b777db78fada59df5588bac9287b97435c7106554038343beb7d021685c34c48",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B70-014",
+      "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+      "range": [
+        824,
+        897
+      ],
+      "sha256": "ebc0e42abae7bd99b3347c55c709dd85a26c955c5db2cc0ac43e924108243ea1",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B70-015",
+      "source": "LV-C15-PV-D531-AUTHOR-SOURCE",
+      "range": [
+        898,
+        904
+      ],
+      "sha256": "eb968180e8839cd38cb30954beb6de740ba2ab29954f38855da8b94cf140cedc",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B71-001",
+      "source": "LV-C16-PI-D532-AUTHOR-SOURCE",
+      "range": [
+        1,
+        31
+      ],
+      "sha256": "987bb5a23ec288c3e2ae79c8449c88b1e03922893e85716d0d87be013bb64608",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B71-002",
+      "source": "LV-C16-PI-D532-AUTHOR-SOURCE",
+      "range": [
+        32,
+        131
+      ],
+      "sha256": "5a859ee2f7ffd4accc815d254b5727f77e2b16660d69262a07309275d9df0cf1",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B71-003",
+      "source": "LV-C16-PI-D532-AUTHOR-SOURCE",
+      "range": [
+        132,
+        185
+      ],
+      "sha256": "8253caeb5f1b946d0d6929d60cdd69033354899180f0e1c38f762ca5cd92e0e9",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B71-004",
+      "source": "LV-C16-PI-D532-AUTHOR-SOURCE",
+      "range": [
+        186,
+        329
+      ],
+      "sha256": "3d4e113f95adf68a94c66cb2a53594b944815de306c06a7ed72fd754c350f4a0",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B71-005",
+      "source": "LV-C16-PI-D532-AUTHOR-SOURCE",
+      "range": [
+        330,
+        373
+      ],
+      "sha256": "1b4860bf9967953a95d991bc1d2bb546a13d7dcd25bbf8cb09f18ac3d40cb96a",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B71-006",
+      "source": "LV-C16-PI-D532-AUTHOR-SOURCE",
+      "range": [
+        374,
+        453
+      ],
+      "sha256": "83f2284a29d8b0fd02d8c7e67644951e030b074f093c0ad34cbe2b21168fda21",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B71-007",
+      "source": "LV-C16-PI-D532-AUTHOR-SOURCE",
+      "range": [
+        454,
+        545
+      ],
+      "sha256": "f21b3968e3a9dd511b2e0f197aa2f2e5a21c8e6fed2c744e68075d789abf3827",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B71-008",
+      "source": "LV-C16-PI-D532-AUTHOR-SOURCE",
+      "range": [
+        546,
+        593
+      ],
+      "sha256": "e2136b16c084f5927a6d27c615348e0dd341d855f0addac4c90572e04b7f979b",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B71-009",
+      "source": "LV-C16-PI-D532-AUTHOR-SOURCE",
+      "range": [
+        594,
+        635
+      ],
+      "sha256": "73ade2fc9164b4c2a983e722d263a11ed84ae378ec1e65428526c19e1d70b44d",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B71-010",
+      "source": "LV-C16-PI-D532-AUTHOR-SOURCE",
+      "range": [
+        636,
+        735
+      ],
+      "sha256": "58fd0eda6ac3704a99c734231a84cbe9904f6d913ef2ba94bcb74683c6f11751",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B71-011",
+      "source": "LV-C16-PI-D532-AUTHOR-SOURCE",
+      "range": [
+        736,
+        811
+      ],
+      "sha256": "92e50cc9a864dd68bc61f8cd6d9d961010b123a2d94598d8118bc8846961c04b",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B71-012",
+      "source": "LV-C16-PI-D532-AUTHOR-SOURCE",
+      "range": [
+        812,
+        959
+      ],
+      "sha256": "d4d38b0f6507fde5bd61c88672b112c313f64f88bd0ddeb191141955e5537da6",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B71-013",
+      "source": "LV-C16-PI-D532-AUTHOR-SOURCE",
+      "range": [
+        960,
+        1009
+      ],
+      "sha256": "abaf0864f65033f20c1b37e512ea8ab3c16149b1d19aa3ca4a8cfea8c5f1cd2f",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B71-014",
+      "source": "LV-C16-PI-D532-AUTHOR-SOURCE",
+      "range": [
+        1010,
+        1059
+      ],
+      "sha256": "b22c92c6eb2edbe8dbd035709531b096691292266f53156192baa5f57622768f",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B71-015",
+      "source": "LV-C16-PI-D532-AUTHOR-SOURCE",
+      "range": [
+        1060,
+        1103
+      ],
+      "sha256": "1d99e39e5bb3b23a6f9fe5375806090b78289dd7fb671da8869fa22d5f782016",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B71-016",
+      "source": "LV-C16-PI-D532-AUTHOR-SOURCE",
+      "range": [
+        1104,
+        1171
+      ],
+      "sha256": "ef4ce4ea16cbfd705fe4b0fd4bc77f24afaac3a02040b80a32f452b64061a7fd",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B71-017",
+      "source": "LV-C16-PI-D532-AUTHOR-SOURCE",
+      "range": [
+        1172,
+        1245
+      ],
+      "sha256": "8281a6a2c2bebfff8ffb339c5abda1bfcae4932071299899102b9e986c2cee19",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B71-018",
+      "source": "LV-C16-PI-D532-AUTHOR-SOURCE",
+      "range": [
+        1246,
+        1291
+      ],
+      "sha256": "34f24b44fd9bbc5c7947fb726a71ebc32288681904426bd00c96fffabf964318",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B71-019",
+      "source": "LV-C16-PI-D532-AUTHOR-SOURCE",
+      "range": [
+        1292,
+        1298
+      ],
+      "sha256": "c4b66abdb2c2c4cca289178eef67a0b6adf781f3b7fe4d2d237f40fb64a008b1",
+      "promotion": false
+    }
+  ],
+  "overlays": [
+    {
+      "id": "CLOSED_PROSE_AUTHORITY",
+      "status": "CLOSURE_ALREADY_ARCHIVED; RECOVERY_CANDIDATES_NOT_PROMOTED",
+      "promotion": false
+    },
+    {
+      "id": "PRIVATE_LETTERS",
+      "status": "MIREN_AND_KAIRON_READ; VARO_UNREAD",
+      "promotion": false
+    },
+    {
+      "id": "DAY529_OPEN",
+      "status": "PART_II_COMPLETE_DAY_AND_BOOK_OPEN",
+      "promotion": false
+    },
+    {
+      "id": "VARO_LETTER",
+      "status": "READ_D529_23h08_PRIVATE_LUCAS_MIREN",
+      "promotion": false
+    },
+    {
+      "id": "D530_ARGOS_SUPPORT",
+      "status": "FAILED_VIBRATION_NOT_INSTALLED",
+      "promotion": false
+    },
+    {
+      "id": "DIMENSION_TWO_ENTRIES",
+      "status": "SAME_INTERIOR_PRIVATE_RESIDENCE_AND_CARRIAGE_D530_TESTED_DISTANCE_D531",
+      "promotion": false
+    },
+    {
+      "id": "VERTICE",
+      "status": "NEW_DISTINCT_COORDINATOR_NOT_MALHA_OR_300_OR_RUMO",
+      "promotion": false
+    },
+    {
+      "id": "MALHA_3600",
+      "status": "INITIAL_FUNCTIONAL_VERIFICATION_D531_NOT_GENERAL_AUTHORIZATION",
+      "promotion": false
+    },
+    {
+      "id": "ARGOS004",
+      "status": "D532_NAIRA_COMMAND_RUMO_SUPERVISED_LUCAS_GROUND",
+      "promotion": false
+    }
+  ],
+  "controls": [
+    "D528 23h06 to D529 06h42; no invented travel or arrivals; no party obligation, no promotion, no source rewriting; preserve all prior frontier controls.",
+    "ARGOS support not installed, no flight, Cidade Viva awaiting approval, Káiron independent; no new powers or project approvals.",
+    "D529 letter private, D530 no new flight, support failed, bench not released, road north unverified, Prisma and HZ-1 uncertain. D530 second door same interior, simulator not second aircraft, Vértice distinct. D531 2984+376+240=3600, initial function not general authorization, Campo 24m tower, FOD controlled test, preparation not flight. D532 fatigue not power nerf, Naira command and Rumo supervised, 004 real; no extreme certification. Preserve all prior overlays."
+  ],
+  "divergences": [
+    {
+      "macro": 69,
+      "editorial_header": 4,
+      "closure_choice": 5,
+      "disposition": "PRESERVE_BOTH_NO_REWRITE; closure choice identifies archived decision at closing, header describes narrative entry; not equivalent fields; independent semantic review pending"
+    },
+    {
+      "macro": 70,
+      "editorial_header": 5,
+      "closure_choice": 4,
+      "disposition": "PRESERVE_BOTH_NO_REWRITE; closure choice identifies archived decision at closing, header describes narrative entry; not equivalent fields; independent semantic review pending"
+    },
+    {
+      "macro": 71,
+      "editorial_header": 4,
+      "closure_choice": 5,
+      "disposition": "PRESERVE_BOTH_NO_REWRITE; closure choice identifies archived decision at closing, header describes narrative entry; not equivalent fields; independent semantic review pending"
+    }
+  ],
+  "axis_coverage": {
+    "assessed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "represented": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      22,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ]
+  },
+  "totals": {
+    "lines": 7303,
+    "records": 81,
+    "session_lines": 4034,
+    "session_records": 56,
+    "staging_records": 4217,
+    "book_v_records": 1322,
+    "book_v_lines": 226676,
+    "original_events": 48,
+    "original_knowledge": 37
+  },
+  "status": "PASS_STAGING_ONLY",
+  "cycle_status": "CLOSED_FIVE_MACROS",
+  "production_gate": "HOLD",
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "semantic_certification": false,
+  "independent_review": false,
+  "promotion": false,
+  "native_validation": "PASS",
+  "validated_commit": "05d4a2f6a0b34df997e5d161e52d71aa87221b05",
+  "native_evidence_path": "audit/omega008-c/turbo-v3/cycle-0067-0071-native-evidence.json",
+  "native_evidence_blob": "91089ef6d3c3c3b4a26bdbdd4b8823afecbc7276",
+  "pending_review_blob": "9745b067a9dd223970d9a26bee5946319c23e998",
+  "review_scope": "Five closed prose episodes 0067–0071; reconstructed first five canonical journal links, original events and knowledge; no semantic certification."
+}
