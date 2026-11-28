@@ -125,7 +125,8 @@ def build(root,archive):
                 else:raise ValueError("restricted source exposed")
             # Invoke actual scene preparation function, not a separate mock generator.
             from .scene_context import build as scene_build
-            eligible_groups={r["id"] for r in eligible_rows}\n            eligible_ids=sorted({i for rid,_,i,_ in links if rid in eligible_groups})
+            eligible_groups={r["id"] for r in eligible_rows}
+            eligible_ids=sorted({i for rid,_,i,_ in links if rid in eligible_groups})
             sample=eligible_ids[:24]
             request={"head":head,"scene_plan":[{"scene":i+1,"purpose":"FC02 editorial retrieval probe"} for i in range(len(sample))],"world_scope":[{"scene":i+1,"ids":[ident]} for i,ident in enumerate(sample)]}
             packet=scene_build(request,records,data.get("_natural_overlay"),db)
