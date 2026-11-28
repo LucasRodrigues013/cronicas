@@ -15,3 +15,7 @@ Capítulo 1 deve abarcar chegada, criação dos 300, apresentação do capitão,
 
 ## Estado prioritário após aprovação do capítulo 1
 Prólogo V0.5 e capítulo 1 V0.5 aprovados, congelados. A aprovação autoral expressa desta unidade libera a próxima produção mediante pedido; não altera a estimativa manual anterior de 9,4 nem a meta de 9,9 para próximas unidades. Consultar book-i/evidence/01-capitulo-1-approval-v0.5.json. Próximo capítulo proposto: O preço da primeira vitória, desdobramentos do primeiro dia, interrogatório e ameaças desconhecidas; verificar fontes antes de escrever. Não repetir nascimento e batalha dos 300.
+
+
+## Diretriz permanente — mundo vivido
+A maravilha não depende de combate. Desenvolver fauna, flora, ecologia, clima, tempo, geografia, cultura, arquitetura e cotidiano por observação, experiência sensorial, ação, consequência e emoção. Não antecipar nomes, propriedades mágicas ou conhecimentos não adquiridos. Elementos novos são expansões literárias com rastreabilidade, nunca fatos RPG. Capítulo 2 V0.1 entregue; aguardar aprovação. Prólogo e capítulo 1 congelados. Consultar book-i/evidence/02-capitulo-2-review-v0.1.json.
