@@ -1,0 +1,97 @@
+{
+  "schema": "OMEGA_CLOSED_PROSE_NATIVE_EVIDENCE_V1",
+  "validated_commit": "a19935e25a5d29ffc188563456417a31143947e1",
+  "workflow_run": 46094102419,
+  "workflow_conclusion": "success",
+  "jobs": [
+    {
+      "id": 140821417401,
+      "conclusion": "success",
+      "tests": [
+        14,
+        11,
+        12,
+        10
+      ],
+      "passed": 47,
+      "total": 47
+    },
+    {
+      "id": 140821418081,
+      "conclusion": "success",
+      "aggregate": {
+        "book_v_lines": 222642,
+        "book_v_records": 1266,
+        "canon_changed": false,
+        "cycle_status": "NEW_CYCLE_OPEN_0067",
+        "frontier_status": "PASS_STAGING_ONLY",
+        "macro_metrics": {
+          "axes_assessed": 30,
+          "axes_represented": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            24,
+            25,
+            26,
+            27,
+            29,
+            30
+          ],
+          "coverage": 25,
+          "lines": 3269,
+          "records": 25,
+          "status": "STRUCTURAL_PASS_NOT_SEMANTIC_CERTIFICATION"
+        },
+        "next_line": 1,
+        "next_source": "LV-C15-PIII-D529-AUTHOR-SOURCE",
+        "production_gate": "HOLD",
+        "semantic_certification": false,
+        "session_lines": 13223,
+        "session_records": 87,
+        "source_provenance": {
+          "closure_blob": "35cb9b5a5c72bf49648e18954b5dd7ba3b6cd410",
+          "closure_event_count": 11,
+          "closure_knowledge_count": 6,
+          "draft_blob": "420928c751a4df2131798c1547c2f2bbb7e411e1",
+          "episode_id": "LV-C15-PII-D529-AUTHOR-SOURCE",
+          "full_story_sha256": "5b2a269fa91ca1c3869d59a3b6e5fe3cccef3f226f3f7a4624597fe1dc29bea9",
+          "immutable_manifest_blob": "7059f4c6c13b8126463ac2007b28d71423a251be",
+          "kind": "CLOSED_PROSE",
+          "narrative_blob": "caaed9f3fcb7d8fd3d82eae2a26e3ca9d99482ae",
+          "previous_episode_id": "LV-C15-PI-D528",
+          "prose_lines": 3269,
+          "prose_sha256": "5cb24bfba4b90d4f710680cd598534a13376e2e6104687a6669bee754eaef7c4",
+          "role_adapter": "Response used only for native receipt compatibility; not chat export; closure authority preserved separately",
+          "sequence": 1
+        },
+        "staging_records": 4161,
+        "status": "PASS_NATIVE_BOOK_V_0067_COMPLETE"
+      }
+    }
+  ],
+  "logs_readback": true,
+  "production_gate": "HOLD",
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "semantic_certification": false,
+  "independent_review": false,
+  "promotion": false
+}

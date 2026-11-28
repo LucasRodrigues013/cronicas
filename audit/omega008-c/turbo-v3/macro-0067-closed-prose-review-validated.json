@@ -1,0 +1,248 @@
+{
+  "schema": "OMEGA_HYBRID_MACRO_0067_CLOSED_PROSE_VALIDATED_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "previous_cycle_blob": "7006296be97be68839b9968bc99a57116f36006c",
+  "previous_checkpoint_blob": "d0d98b723bd256ab46dafaa61521b400f935eee4",
+  "source_provenance": {
+    "kind": "CLOSED_PROSE",
+    "episode_id": "LV-C15-PII-D529-AUTHOR-SOURCE",
+    "sequence": 1,
+    "previous_episode_id": "LV-C15-PI-D528",
+    "closure_blob": "35cb9b5a5c72bf49648e18954b5dd7ba3b6cd410",
+    "draft_blob": "420928c751a4df2131798c1547c2f2bbb7e411e1",
+    "immutable_manifest_blob": "7059f4c6c13b8126463ac2007b28d71423a251be",
+    "narrative_blob": "caaed9f3fcb7d8fd3d82eae2a26e3ca9d99482ae",
+    "full_story_sha256": "5b2a269fa91ca1c3869d59a3b6e5fe3cccef3f226f3f7a4624597fe1dc29bea9",
+    "prose_sha256": "5cb24bfba4b90d4f710680cd598534a13376e2e6104687a6669bee754eaef7c4",
+    "prose_lines": 3269,
+    "role_adapter": "Response used only for native receipt compatibility; not chat export; closure authority preserved separately",
+    "closure_event_count": 11,
+    "closure_knowledge_count": 6
+  },
+  "macros": [
+    {
+      "macro": 67,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0067-01.json",
+      "blob": "11f0780c27761609dd6294f5a834b474d7ed0254",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0067-closure-pending.json",
+      "checkpoint_blob": "694d696620ecb45c8cda6e8d285d92b6993dcaed",
+      "records": 25,
+      "lines": 3269,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        24,
+        25,
+        26,
+        27,
+        29,
+        30
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "BIRTHDAY",
+      "source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "range": [
+        62,
+        247
+      ],
+      "sha256": "204298dcbc2d956e7b132cd07a2281fb63fe5c40d26a031cc53abbbde299bd38",
+      "promotion": false
+    },
+    {
+      "id": "PRIVATE_PREPARATION",
+      "source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "range": [
+        398,
+        625
+      ],
+      "sha256": "23ef8a58cbd54ce605378745c4f92381c799ccaeadf728abf883eaa0c00446b9",
+      "promotion": false
+    },
+    {
+      "id": "PHYSICAL_OBSERVATORY",
+      "source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "range": [
+        850,
+        983
+      ],
+      "sha256": "df9b7e7c2fd059a9b0bf2b4a72f72773a3bcc2f8e5080af251426a0d66344a02",
+      "promotion": false
+    },
+    {
+      "id": "MIREN_LETTER",
+      "source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "range": [
+        984,
+        1191
+      ],
+      "sha256": "9e03a3cd76ed124e09881ec50919a4c0388f89b0e6043e3ae49d1e08a09a8879",
+      "promotion": false
+    },
+    {
+      "id": "MIREN_AUTONOMY",
+      "source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "range": [
+        1192,
+        1329
+      ],
+      "sha256": "61ebb00c5e9481996b4ba90b0c17be3aafc73ec6386d3c50ad2b8d1a86c26ff7",
+      "promotion": false
+    },
+    {
+      "id": "ARTISAN",
+      "source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "range": [
+        1474,
+        1579
+      ],
+      "sha256": "c8fb713c1f63715562c685763e9719063233c7f786bfd23e7115b87582eb7aa1",
+      "promotion": false
+    },
+    {
+      "id": "AERUN_PENDING",
+      "source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "range": [
+        1580,
+        1663
+      ],
+      "sha256": "85ed116fe012127e96b97c097a8eb1ebc69d6c1331c21a8308c909605c70a8a8",
+      "promotion": false
+    },
+    {
+      "id": "ARGOS_NO_INSTALL",
+      "source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "range": [
+        1664,
+        1795
+      ],
+      "sha256": "18bb70af016fde4dd41a01e46a11941bdc30a2868cdfcb45c8da9e3f278db2fc",
+      "promotion": false
+    },
+    {
+      "id": "KAIRON_AUTONOMY",
+      "source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "range": [
+        1796,
+        1907
+      ],
+      "sha256": "2245d0db4f0e79ef18368cca76f7e318d1f4d440a327b5decf0c906c1cd58ab7",
+      "promotion": false
+    },
+    {
+      "id": "VOLUNTARY_PARTY",
+      "source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "range": [
+        2032,
+        2263
+      ],
+      "sha256": "876ce1402097403e25ea18c9b3db049109c56477c795ec0df10d2e64d619d637",
+      "promotion": false
+    },
+    {
+      "id": "VOLUNTARY_STORIES",
+      "source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "range": [
+        2330,
+        2533
+      ],
+      "sha256": "66aaa8d665ca9cf8fecbc37ba395ae0cb0203b229d5f06e776866382428db558",
+      "promotion": false
+    },
+    {
+      "id": "VARO_UNREAD",
+      "source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "range": [
+        2534,
+        2619
+      ],
+      "sha256": "467182eef15019bf131ab9054364dfc3406eaec18049dd398dbe148c6da4cf53",
+      "promotion": false
+    },
+    {
+      "id": "KAIRON_LETTER",
+      "source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "range": [
+        2620,
+        2775
+      ],
+      "sha256": "121ef8f7cbd2e187aa834f3bf4b38a05c6692189a7d19c17d2e85dd67573a5db",
+      "promotion": false
+    },
+    {
+      "id": "DAY_OPEN",
+      "source": "LV-C15-PII-D529-AUTHOR-SOURCE",
+      "range": [
+        3070,
+        3269
+      ],
+      "sha256": "a1224735b2fba87e35494a3c32c549d910a9b00ef437eb288f255d0824cd2980",
+      "promotion": false
+    }
+  ],
+  "overlays": [
+    {
+      "id": "CLOSED_PROSE_AUTHORITY",
+      "status": "CLOSURE_ALREADY_ARCHIVED; RECOVERY_CANDIDATES_NOT_PROMOTED",
+      "promotion": false
+    },
+    {
+      "id": "PRIVATE_LETTERS",
+      "status": "MIREN_AND_KAIRON_READ; VARO_UNREAD",
+      "promotion": false
+    },
+    {
+      "id": "DAY529_OPEN",
+      "status": "PART_II_COMPLETE_DAY_AND_BOOK_OPEN",
+      "promotion": false
+    }
+  ],
+  "controls": [
+    "D528 23h06 to D529 06h42; no invented travel or arrivals; no party obligation, no promotion, no source rewriting; preserve all prior frontier controls.",
+    "ARGOS support not installed, no flight, Cidade Viva awaiting approval, Káiron independent; no new powers or project approvals."
+  ],
+  "totals": {
+    "lines": 3269,
+    "records": 25,
+    "session_lines": 13223,
+    "session_records": 87,
+    "staging_records": 4161,
+    "book_v_records": 1266,
+    "book_v_lines": 222642
+  },
+  "status": "PASS_STAGING_ONLY",
+  "cycle_status": "NEW_CYCLE_OPEN_0067",
+  "production_gate": "HOLD",
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "semantic_certification": false,
+  "independent_review": false,
+  "promotion": false,
+  "native_validation": "PASS",
+  "validated_commit": "a19935e25a5d29ffc188563456417a31143947e1",
+  "native_evidence_path": "audit/omega008-c/turbo-v3/macro-0067-native-evidence.json",
+  "native_evidence_blob": "037e26ef4b306925c24ab352278660684a8150f4",
+  "pending_review_blob": "b40ba1f818a2025fd6279fc326d9a005a57841a5",
+  "review_scope": "First closed prose episode, session review; frontier 0063–0066 already consolidated; new cycle starts 0067."
+}
