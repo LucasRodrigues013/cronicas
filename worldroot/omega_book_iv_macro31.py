@@ -1330,7 +1330,7 @@ def verify_book_v_75(root,archive):
     t=audit["totals"];require(recs==58 and lines==5769 and t["session_lines"]==lines and t["session_records"]==recs and t["book_v_lines"]==232445 and t["staging_records"]==4217+recs and t["book_v_records"]==1322+recs and t["original_events"]==original_events and t["original_knowledge"]==original_knowledge and sorted(axes)==audit["axis_coverage"]["represented"] and set(audit["axis_coverage"]["assessed"])==set(range(1,31)),"cycle totals")
     # Full Book V ledger: re-open all pinned receipts, preserve raw metadata and
     # use the native transcript/closed-prose adapters independently of cycle sums.
-    require([g["macro"] for g in audit["book_ledger"]]==list(range(43,76)) and q[75]["book_hint"]=="VI" and all(q[i]["book_hint"]=="V" for i in range(42,75)),"book scope")
+    require([g["macro"] for g in audit["book_ledger"]]==list(range(43,76)) and q[75]["book_hint"]=="VI" and [q[i]["book_hint"] for i in range(42,75)]==["V"]*2+["V_OR_VI_UNRESOLVED"]*22+["V"]*9,"book scope: preserve unresolved queue hints; audited receipts supply staging classification")
     for cy in audit["prior_cycles"]:
         y=read(root,cy["path"],cy["blob"]);require(y["status"]=="PASS_STAGING_ONLY" and not y.get("promotion",False),"prior review")
     cache=SourceCache(archive,read(archive,"history/sources/MANIFEST.json","2048141263f66151230119af9b0ee51796ac846b"))
