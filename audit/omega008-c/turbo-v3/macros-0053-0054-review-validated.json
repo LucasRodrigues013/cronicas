@@ -1,0 +1,392 @@
+{
+  "schema": "OMEGA_HYBRID_MACROS_0053_0054_VALIDATED_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "previous_cycle_blob": "69a57b04c8e678716563d38e94b88c636e06294b",
+  "previous_checkpoint_blob": "f56d1446b134148cbe079a319ddac02105ce67ce",
+  "macros": [
+    {
+      "macro": 53,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0053-01.json",
+      "blob": "914c12c78ad30285560d110de585aa5dd861e9b4",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0053-closure-pending.json",
+      "checkpoint_blob": "1256da1f9e77b3a67db7b59d1abdc8b9ee22509e",
+      "records": 66,
+      "lines": 10158,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "macro": 54,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0054-01.json",
+      "blob": "af630156eba4a6ae5f8caa122bb0147a5640bcd6",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0054-closure-pending.json",
+      "checkpoint_blob": "197d080f2f27a9802dbab78ea5f4ffa5cc72eb67",
+      "records": 50,
+      "lines": 10189,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        22,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "URBAN_BACKSTAGE",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        9,
+        112
+      ],
+      "sha256": "6a2a1889edee802bc577e5b23ef4cb2f478b0adf706a3ee4c1237f336fea986a",
+      "promotion": false
+    },
+    {
+      "id": "CONTINUATION_MATCH",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        195,
+        264
+      ],
+      "sha256": "c4fff6a380ebb8649930041b928dd587d44ea361c25bf9ce5a75c8e4e2ead3c7",
+      "promotion": false
+    },
+    {
+      "id": "NO_TALIS_REPLY",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        457,
+        620
+      ],
+      "sha256": "7b0d4e0080d4420aaaa93d800f7823bf0bafeab33b4915251fc17eacdc080f6c",
+      "promotion": false
+    },
+    {
+      "id": "ORIVANTES_RESCUE",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        981,
+        1442
+      ],
+      "sha256": "f46b33cc4e359419dbad463598b6aa9a9a14b1411046bf454e88fd750aae79cf",
+      "promotion": false
+    },
+    {
+      "id": "ROAD_ATTACK_CUSTODY",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        3477,
+        4412
+      ],
+      "sha256": "59f5f66e0e0c664a3946da5a45057744ee7f3c09862368da1553049d9e8d74ee",
+      "promotion": false
+    },
+    {
+      "id": "PHYSICAL_ARRIVAL",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        7455,
+        8092
+      ],
+      "sha256": "ee10e7991af6721cb62a4ca4eac99ed20a58d803ce4b4f93ea25d8346af3964e",
+      "promotion": false
+    },
+    {
+      "id": "PORTAL_COLLECTIVE",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        8577,
+        9344
+      ],
+      "sha256": "3d1a54f1ef3bf028d5342aed769198ac35ac75d30c45155e17769030200ce7ed",
+      "promotion": false
+    },
+    {
+      "id": "MIREN_RESEARCH",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        11003,
+        11226
+      ],
+      "sha256": "629e8ddebc23d62b98e5bd35e9d8e0bc192a6a62661e6a78c846e19bd6e0d2f2",
+      "promotion": false
+    },
+    {
+      "id": "CREATION_RESCUE",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        11227,
+        11598
+      ],
+      "sha256": "0b268f6f2660f6c9f7d48992c68b523e48e1a2d4e74fa06e6a0ba0d30fad953a",
+      "promotion": false
+    },
+    {
+      "id": "VARO_REUNION",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        12403,
+        12798
+      ],
+      "sha256": "ed56dcd70570e1c18460af055862b893693393d1849231690ef8336afeb06aad",
+      "promotion": false
+    },
+    {
+      "id": "MISSING_IV",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        13107,
+        13121
+      ],
+      "sha256": "7db782073f30718b76c32b079c92cdfa26df56611aa5e276ae1ef1200c53cbd3",
+      "promotion": false
+    },
+    {
+      "id": "REJECTED_V",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        13122,
+        15826
+      ],
+      "sha256": "5f544cd746343f188475314ed1d08781854991bd2381cf3448f9afc25b46a5c2",
+      "promotion": false
+    },
+    {
+      "id": "AUTHOR_REJECTION",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        15827,
+        15831
+      ],
+      "sha256": "25a276e0b5f6d53ff939d293c4dccf70a0aba3c284e96f6bd912d8d3fe2d99a0",
+      "promotion": false
+    },
+    {
+      "id": "REPLACEMENT_V",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        15832,
+        18240
+      ],
+      "sha256": "585e1d19927e85c49818d14f703cda2969f3317f726f3069c102d185c7c8ffdb",
+      "promotion": false
+    },
+    {
+      "id": "TREE_D105",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        18477,
+        18586
+      ],
+      "sha256": "edddfd9821e72921360ffbe09756dbf4cd8f85881fb72374e484ef860c9dd3a0",
+      "promotion": false
+    },
+    {
+      "id": "NOX_EXTERIOR_FORM",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        18587,
+        18896
+      ],
+      "sha256": "37d84cb577be9d62a06723e6d30d47d810d8990219df357218ed0830d1e76929",
+      "promotion": false
+    },
+    {
+      "id": "CARRIAGE_RELOCATION",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        18897,
+        19250
+      ],
+      "sha256": "9dcdb7fdfa309dd7903db1d028295f80a55f3fd4b47e5d435a99281284e95ff2",
+      "promotion": false
+    },
+    {
+      "id": "PHYSICAL_REUNIONS",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        19251,
+        19928
+      ],
+      "sha256": "6319138845a486d561230584121243d7cf4774c7737eb617ff6258f01bfc561f",
+      "promotion": false
+    },
+    {
+      "id": "AVENUE_REVEAL",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        20109,
+        20347
+      ],
+      "sha256": "a592349b5b5b5111acf964f533d24d534011423dc2e09412882d80ae5cc2efa4",
+      "promotion": false
+    }
+  ],
+  "controls": [
+    "Fonte05 corresponde ao checkpoint fonte04 D469 21h12 e repetição da escolha especial IV; metadados 1–8 isolados. Livro V confirmado; sem fronteira do livro.",
+    "D470–488 viagem física; chegada D488 16h27 Pátio das Caravanas, D488 20h12 fim II; segredo urbano até observação efetiva, não transmitir seis distritos, Rua da Moda, Rua do Criador e planos dos Seis Sombras como conhecimento anterior.",
+    "D477 agressores independentes, Miren combate e Lucas protege/contém, custódia local D478, sem associação à Tecelã. Talis permanece sem notícia. Iria Eshara/Íria Seis Sombras, Orven estrada/Orven agente, Teran/Teren/Téran sem fusão presumida.",
+    "D489 pesquisa Miren com Iven e posto de correspondência ainda não consultado; Varo reencontro físico 17h42. D489 escolha IV tem apenas intenção de narrar, próxima resposta rotulada V; não fabricar IV.",
+    "Rejeição expressa D490 na linha15827–15831. Original 13122–15826 não é continuidade efetiva; metadados rejeitados, substituição 15832–18240, título capítulo8 Sete Dias para Viver; reencontros somente na versão corrigida ou mais tarde comprovada.",
+    "D490–496 férias, Casa Jardim Branco construída e vivida conjuntamente. D491 árvore plantada D105 por ambos, escolhida por Miren com Esmara; NÓX conhece por registros compartilhados, não testemunhou.",
+    "D491 07h34 mesma consciência NÓX manifesta corpo exterior, não novo membro Legião nem cópia; vinculação preservada, não atribuir todas as capacidades fora do corpo. Carruagem transferida fisicamente 09h12–11h04, sem expansão propriedade, animais área apropriada.",
+    "D491 11h36 Kael Lysa Astra chegam por estrada, 12h47 reencontro; 16h08 Avenida dos Três Horizontes descoberta por Lucas no terraço autorizado, ainda incompleta; cena continua.",
+    "Diretrizes urbanas iniciais (seis distritos, seis invenções, cais) autorais/bastidores, sem realização automática. Preservar 300 originais, ARGOS experimental, LEVIATÃ não construído, GÊNESE sem nerf, todas as correções anteriores.",
+    "Agrupamento editorial, não atomização exaustiva; revisão semântica independente, projeção tipada e regressão global pendentes."
+  ],
+  "overlays": [
+    {
+      "id": "SOURCE05-CH7-IV-NOT_NARRATED",
+      "range": [
+        13107,
+        13121
+      ],
+      "disposition": "NO_EVENT_NO_INVENTED_PART",
+      "promotion": false
+    },
+    {
+      "id": "SOURCE05-CH7-V-REJECTED",
+      "range": [
+        13122,
+        15826
+      ],
+      "author_rejection": [
+        15827,
+        15831
+      ],
+      "replacement": [
+        15832,
+        18240
+      ],
+      "disposition": "SUPERSEDED_NO_EVENT_NO_CHARACTER_INJECTION",
+      "promotion": false
+    },
+    {
+      "id": "IDENTITY-CANDIDATES",
+      "disposition": "IRIA_ESHARA_VS_IRIA_SOMBRAS; ORVEN_ESTRADA_VS_AGENT; TERAN_VS_TEREN_NO_AUTOMATIC_MERGE",
+      "promotion": false
+    }
+  ],
+  "totals": {
+    "lines": 20347,
+    "records": 116,
+    "staging_records": 3490,
+    "book_v_records": 595,
+    "book_v_lines": 106868,
+    "official_records": 1656
+  },
+  "source_transition": "SOURCE_05_STARTED_BOOK_V_CONTINUES",
+  "cycle_status": "OPEN_0053_0057_OR_BOOK_BOUNDARY",
+  "status": "PASS_STAGING_ONLY",
+  "production_gate": "HOLD",
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "semantic_certification": false,
+  "independent_review": false,
+  "promotion": false,
+  "pending_review_blob": "d14332a02b27185a68ae7f9dcec63141905daf0b",
+  "validated_commit": "7a4d835ed1a1a9f081baf3ba72796b5e17afe369",
+  "native_evidence_path": "audit/omega008-c/turbo-v3/macros-0053-0054-native-evidence.json",
+  "native_evidence_blob": "188ddf22e58f39084df245da5b6f2400370632ce",
+  "authority_counts": {
+    "AUTHOR_DIRECTION_NOT_EVENT": 10,
+    "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED": 82,
+    "METADATA_NOT_EVENT": 18,
+    "NARRATOR_PROPOSED_BRANCH_NOT_EVENT": 6
+  },
+  "visibility_counts": {
+    "EDITORIAL_ONLY_NO_CHARACTER_INJECTION": 105,
+    "READER_ONLY_NO_CHARACTER_INJECTION": 1,
+    "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION": 10
+  },
+  "axes_represented": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "book_boundary": false,
+  "source_transition_status": "PASS_STAGING_ONLY"
+}
