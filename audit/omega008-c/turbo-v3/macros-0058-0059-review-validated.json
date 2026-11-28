@@ -1,0 +1,384 @@
+{
+  "schema": "OMEGA_HYBRID_MACROS_0058_0059_VALIDATED_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "previous_cycle_blob": "b6e3bf48bd2faf41a961b327408a7521c5c550bb",
+  "previous_checkpoint_blob": "30d71463cb6ab57180afb7be9a195a0fca501c55",
+  "macros": [
+    {
+      "macro": 58,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0058-01.json",
+      "blob": "b968f9aefc1ec5755d717f45baa66b1249a6de0c",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0058-closure-pending.json",
+      "checkpoint_blob": "046c240ded27e4c887f408eee425ee0b5fb51f9d",
+      "records": 56,
+      "lines": 10206,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        19,
+        20,
+        21,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "macro": 59,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0059-01.json",
+      "blob": "45aa73c868e61c6dc23de7d3fb7012711ca24684",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0059-closure-pending.json",
+      "checkpoint_blob": "854da4ac1168cd62d043e226678445ca5001ca8c",
+      "records": 51,
+      "lines": 10090,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "D499_CLOSE",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        10465,
+        10485
+      ],
+      "sha256": "f469714de14ab11dd6e7320ea9e63b89069c244a515247deeb1c1c3d73f50bc7",
+      "promotion": false
+    },
+    {
+      "id": "MALHA_AUTHOR",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        10521,
+        10938
+      ],
+      "sha256": "5a839cd6d0c6672eea6b44ffcab60419ec2f5bd99085dab8d6c33099394b2303",
+      "promotion": false
+    },
+    {
+      "id": "RUMO_INDIVIDUAL",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        11722,
+        11904
+      ],
+      "sha256": "27878cf136dc8ec88536bf073c46e5e14e952ea09416f2968467b8abb71e4ed6",
+      "promotion": false
+    },
+    {
+      "id": "D500_PROPOSAL",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        13003,
+        13031
+      ],
+      "sha256": "59490e332a71de11fb63adc226d3877847647b219e6e8f21b48c54aa2907dc69",
+      "promotion": false
+    },
+    {
+      "id": "MALHA_MANIFEST",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        13631,
+        14038
+      ],
+      "sha256": "5eb3153b84d518ba24f4554dfd2d3fa27f8321a8be02cda39688177ebe8d6600",
+      "promotion": false
+    },
+    {
+      "id": "D501_COUNTS",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        15375,
+        15403
+      ],
+      "sha256": "3f7219f0f2c61c5752c1e71bf4cf1eb288c18a174ad6ee848db91326e8d82f5c",
+      "promotion": false
+    },
+    {
+      "id": "D502_COUNTS",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        17617,
+        17653
+      ],
+      "sha256": "0b8150437717811df64a2a688b40961be08a82617bc1a1c2c564de50d0562908",
+      "promotion": false
+    },
+    {
+      "id": "ARGOS",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        18665,
+        18900
+      ],
+      "sha256": "97a2a7d82e59ff4e76875b1b6ed2702a636d60de37dead3582b08da817ec0703",
+      "promotion": false
+    },
+    {
+      "id": "D503_COUNTS",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        19919,
+        19947
+      ],
+      "sha256": "dd60a8617e017395b7a4f650387fc32a2c0fcfec8cf76f5ba68405f00e29beb0",
+      "promotion": false
+    },
+    {
+      "id": "ERENA_NOTE",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        21307,
+        21714
+      ],
+      "sha256": "129c9ae2f946bc0bf178496fdbc17a1261ef46a8c4ad838839939d39cd78dbe8",
+      "promotion": false
+    },
+    {
+      "id": "RAIN_CREATIONS",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        21715,
+        22034
+      ],
+      "sha256": "cccc91c567e80015f9c8d136c222b2804b123a76c31f8839c1c1373c0947c3d4",
+      "promotion": false
+    },
+    {
+      "id": "D504_COUNTS",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        22633,
+        22661
+      ],
+      "sha256": "23b84a6da7e1a2625e8ade22f6cf34c560824e702172ffc499df57b9caf65c4f",
+      "promotion": false
+    },
+    {
+      "id": "NETWORKS_6800",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        23409,
+        24032
+      ],
+      "sha256": "a60c52ff271b80d9bc240cb11264c973910586967f14186223a99523c71e2b7a",
+      "promotion": false
+    },
+    {
+      "id": "AVENUE_8000",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        24853,
+        25068
+      ],
+      "sha256": "4029fbc42dd410c2b72ac617ec0cdac9cea38e2667e2eaa105463a7ec446f4d8",
+      "promotion": false
+    },
+    {
+      "id": "D505_CLOSE",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        25551,
+        25579
+      ],
+      "sha256": "4bfbbd8fe2302e6e8103377da9373e7858b442e598d72a91bf365b4971785d78",
+      "promotion": false
+    },
+    {
+      "id": "CAVITY_RESEARCH",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        25851,
+        26198
+      ],
+      "sha256": "693f4a353b0486027340db682a9a5766cd040522901e843fbe03c3ad538d4b7a",
+      "promotion": false
+    },
+    {
+      "id": "COUNCIL_APPROVAL",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        26357,
+        26578
+      ],
+      "sha256": "925113c9115e49dbd19c8b1e79ae8a927a00551f080db5dc61474917a54f0342",
+      "promotion": false
+    },
+    {
+      "id": "FOUNDERS",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        26903,
+        27094
+      ],
+      "sha256": "d7833347e2d08d3deb91e293bdeea65006dddcfa0345183507e499c11634d66d",
+      "promotion": false
+    },
+    {
+      "id": "NINE_STAGES",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        27277,
+        27500
+      ],
+      "sha256": "1486bf917b36e46da3375ed4a7bd20327d573e0303d1e758f125f496ddbf7c3d",
+      "promotion": false
+    },
+    {
+      "id": "S4",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        27501,
+        27939
+      ],
+      "sha256": "18efc376dcb734bf6384ef9b4cb14a1821bee816b8cf632e701b295ead252f0e",
+      "promotion": false
+    },
+    {
+      "id": "HEART",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        28563,
+        29080
+      ],
+      "sha256": "072500ba52425e60eb98e438f2bee2936a9e5c6858d1988c59956e81423fafe0",
+      "promotion": false
+    },
+    {
+      "id": "S3",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        29817,
+        29906
+      ],
+      "sha256": "b91ca69fb373a5a5f9b723f04c3acf2bec954e50d094db340490e011add21794",
+      "promotion": false
+    },
+    {
+      "id": "S2_UNFINISHED_DIALOGUE",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        30021,
+        30385
+      ],
+      "sha256": "6adc7595b44cbbf304c6386922b82e00cfa9374d23cb5a0ec4b78ad17a1f97ed",
+      "promotion": false
+    }
+  ],
+  "controls": [
+    "Preserve todos os overlays anteriores, identidades, poderes, inventários e autoridade. Nenhum novo cidadão consciente; Rumo singular; 300 originais não alterados.",
+    "D499 12 bicicletas/240; D500 Malha 3600 apenas proposta; D501 3360 novas manifestadas, 240 antigas integradas, total 3600; 12 estações móveis; novos testados cumulativos 32/128/288/376 nos D501–504; não presumir todos testados. Cinco estações em uso e sete reserva D502–503.",
+    "Avenida 320m D502, 840m D503, 960m D504, 6,80km + 1,20km D505 = 8,00km incluindo trechos anteriores. Redes principais operacionais D505, não presumir capacidade universal. Seis flores, um observatório local de chuva, três coberturas temporárias D504.",
+    "Erena, canção familiar, consentimento/atribuição; sétima nota, luminosidade azul-prateada e provável cavidade vinculada a água, não certeza sobre origem ou civilização. Proteger encosta, sem escavação; novo terraço recomendado D505, aprovado pelo Conselho D506.",
+    "Monumento físico aos fundadores D506, inscrição acessível, autoria Lucas/Miren/Ilva; não culto. AERÚN execução v0.5 nove etapas, S-4 estrutural D507 08h27; Coração manifestado 10h18, ativado 12h07; S-3 integrado e ensaiado 16h11; S-2 manifestado 17h22, ensaio final 19h26, encerramento ainda não lido; níveis posteriores, Atlas, jardins não presumidos.",
+    "Coração não consciente, não comanda Malha, rede municipal independente. ARGOS sustentação controlada sem voo livre, câmbio bicicleta em estudo, LEVIATÃ não concluído. Não inventar desfecho da conversa de Varo.",
+    "Livro V confirmado por cabeçalhos; fim de capítulos 9/10 não fim do livro. Ciclo 0058–0062 aberto; revisão de sessão não substitui consolidada ou fronteira."
+  ],
+  "overlays": [],
+  "totals": {
+    "lines": 20296,
+    "records": 107,
+    "staging_records": 3710,
+    "book_v_records": 815,
+    "book_v_lines": 148329,
+    "official_records": 1656
+  },
+  "cycle_status": "OPEN_0058_0062_OR_BOOK_BOUNDARY",
+  "status": "PASS_STAGING_ONLY",
+  "production_gate": "HOLD",
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "semantic_certification": false,
+  "independent_review": false,
+  "promotion": false,
+  "pending_review_blob": "c75d68c33112ab8476854b35026121791b18a9aa",
+  "validated_commit": "bedc4e614186ae2c15185d6ddf8f2ea54dff3d1e",
+  "native_evidence_path": "audit/omega008-c/turbo-v3/macros-0058-0059-native-evidence.json",
+  "native_evidence_blob": "b682552ef4599631d4210c6c07b88c93c3c2f34f",
+  "authority_counts": {
+    "AUTHOR_DIRECTION_NOT_EVENT": 8,
+    "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED": 83,
+    "METADATA_NOT_EVENT": 8,
+    "NARRATOR_PROPOSED_BRANCH_NOT_EVENT": 8
+  },
+  "visibility_counts": {
+    "EDITORIAL_ONLY_NO_CHARACTER_INJECTION": 90,
+    "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION": 17
+  },
+  "axes_represented": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "book_boundary": false
+}
