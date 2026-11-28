@@ -1,0 +1,69 @@
+name: R36 controlled convergence release validation
+on:
+  push:
+    branches: ['release/r36-convergence-operational']
+    paths:
+      - 'worldroot/r36_history_advisory.py'
+      - 'worldroot/r33_runtime.py'
+      - 'tests/test_r36_history_advisory.py'
+      - '.github/workflows/r36-convergence-release.yml'
+permissions:
+  contents: read
+jobs:
+  qualification:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: '9f7ef4adc1b73c576e8d5394de1c19772cb592e7'
+          path: omega
+          persist-credentials: false
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: '9dd632fb0bcd84dfce5b631013fdc67d7492ac5d'
+          path: archive
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Regression after selective runtime changes
+        run: |
+          python -m unittest discover -s tests -q
+          python -m compileall -q worldroot
+      - name: Reconstruct pinned FC pack in ephemeral directory
+        run: |
+          cd omega
+          python -m worldroot.omega_operational_export --archive-root ../archive --output "$RUNNER_TEMP/fc-index.json"
+      - name: Compare real archived D580 request and preparation, no narrative or write
+        run: |
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          from worldroot.r33_runtime import read,digest,author_context
+          from worldroot.memory_continuity import review_creation
+          from worldroot.r36_history_advisory import load_pack,retrieve,check_binding
+          root=Path("archive");ident="LVI-C09-PII-D580-AUTHOR-SOURCE"
+          req=read(root/"requests"/(ident+".json"));prep=read(root/"preparations"/(ident+".json"))
+          assert req["head"]==read(root/"canon/HEAD.json") and digest(req)==prep["request_sha256"]
+          assert digest({k:v for k,v in prep.items() if k!="preparation_sha256"})==prep["preparation_sha256"]
+          assert author_context(root,req["head"])==prep["authority"]
+          report=review_creation(root,req["head"],req["requirements"],req["reviewed"])
+          assert report["status"]=="REVIEWED_EVIDENCE_THRESHOLD_MET"
+          path=Path(os.environ["RUNNER_TEMP"])/"fc-index.json";raw=json.loads(path.read_text());pack=load_pack(path,raw["pack_sha256"])
+          a=retrieve(root,req,pack);b=retrieve(root,req,pack)
+          assert a==b and a["locator_count"]>0 and not a["knowledge_injection"]
+          check_binding(req,a)
+          assert len(a["requirements"])==sum(r.get("role","Response")=="Response" for r in req["requirements"])
+          assert all("lines" not in l and not l["knowledge_injection"] for x in a["requirements"] for l in x["locators"])
+          print(json.dumps({"status":"R36_CONTROLLED_ADVISORY_REAL_REQUEST_PASS","pack_sha256":pack["pack_sha256"],"advisory_sha256":a["advisory_sha256"],"requirements":len(a["requirements"]),"requirements_with_locators":sum(bool(x["locators"]) for x in a["requirements"]),"locators":a["locator_count"],"critical_without_advisory":a["critical_without_advisory"],"indexed_groups":a["indexed_groups"],"blocked_groups":a["blocked_groups"],"original_preparation_verified":True,"idempotent":True,"canon_changed":False,"semantic_certification":False},sort_keys=True))
+          PY
+      - name: Verify no archive changes
+        if: always()
+        run: test -z "$(git -C archive status --porcelain)"
+      - name: Remove temporary data
+        if: always()
+        run: rm -rf archive omega "$RUNNER_TEMP/fc-index.json"

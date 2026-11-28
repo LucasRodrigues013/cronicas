@@ -99,6 +99,9 @@ def prepare_from_request(root,request):
     from .live_codex import bind_request as bind_codex
     codex=bind_codex(root,request)
     if codex is not None:packet["universal_codex"]=codex
+    from .r36_history_advisory import configured
+    advisory=configured(root,request)
+    if advisory is not None:packet["historical_editorial_recovery"]=advisory
     packet.pop("preparation_sha256")
     packet["request_sha256"]=digest(request)
     packet["preparation_sha256"]=digest(packet)
@@ -111,6 +114,8 @@ def verify_submission(root,head,payload):
     if author_context(root,head)!=packet["authority"]:raise ValueError("Changed source authority")
     request=read(Path(root)/"requests"/(ident+".json"))
     if digest(request)!=packet.get("request_sha256"):raise ValueError("Preparation request changed")
+    from .r36_history_advisory import check_binding
+    check_binding(request,packet.get("historical_editorial_recovery"))
     review=payload.get("r33_review")
     if not isinstance(review,dict) or review.get("preparation_sha256")!=recorded:raise ValueError("Preparation not bound to submission")
     r32=payload["r32_review"]
