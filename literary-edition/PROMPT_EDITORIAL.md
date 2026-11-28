@@ -7,3 +7,7 @@ Somente para a edição literária, esta diretriz substitui qualquer instrução
 
 ## Diretriz prioritária de qualidade — capítulo 1
 A partir da rejeição do capítulo 1 V0.3, a meta mínima para aprovação editorial é 9,9/10. Não inflar notas ou declarar homologação sem evidências. Entregar drafts de revisão claramente identificados quando abaixo do gate. A aprovação autoral explícita permanece obrigatória. Não avançar para capítulo 2 enquanto o capítulo 1 não for aprovado. A abertura precisa de um arco dramático completo, maravilhamento, ação, emoção, personagens autônomos, consequências e um desfecho que recompense a leitura; não confundir extensão ou espetáculo contínuo com qualidade. Prólogo aprovado permanece congelado.
+
+
+## Diretriz prioritária — capítulo 1 V0.5
+Capítulo 1 deve abarcar chegada, criação dos 300, apresentação do capitão, batalha inicial, criação da armadura e mochila, limites de CREATION, vitória, chefe orc vivo e decisão de não perseguir. Substitui a antiga separação da criação e batalha em capítulos 2 e 3. Sequência detalhada e coreografia são propostas literárias, não fatos históricos verificados. Preserve prólogo, gate 9,9, auditoria e aprovação explícita; replaneje capítulos posteriores somente após aprovação.
