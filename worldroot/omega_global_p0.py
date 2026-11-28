@@ -29,7 +29,7 @@ def paths_for(root,n):
     if n<=24:return [PREFIX+"turbo-v2/pilot-macro-%04d.json"%n]
     if n<=29:return [ROOT+"macro-%04d-complete.json"%n]
     return [str(x.relative_to(root)) for x in sorted((root/ROOT).glob("partial-macro-%04d-*.json"%n))]
-def inspect(root,archive):
+def inspect(root,archive,*, inventory_consumer=None):
     root=Path(root).resolve();archive=Path(archive).resolve()
     require(subprocess.check_output(["git","-C",str(archive),"rev-parse","HEAD"],text=True).strip()==ARCHIVE,"archive pin")
     require(not subprocess.check_output(["git","-C",str(archive),"status","--porcelain"],text=True).strip(),"archive dirty")
@@ -53,7 +53,7 @@ def inspect(root,archive):
     for row in regrows:
         for label in [row["id"],row["name"],*row.get("aliases",[])]:idx[norm(label)].add(row["id"])
     require(len({r["id"] for r in regrows})==len(regrows),"registry unique ids")
-    inventory=[]; ids=set(); keys=Counter(); issues=Counter(); blocks=Counter(); group_rows=[]; receipt_pins=[]
+    inventory=[]; ids=set(); keys=Counter(); issues=Counter(); blocks=Counter(); group_rows=[]; receipt_pins=[]; scope_findings=[]
     authorities=Counter(); books=Counter(); scopes=Counter(); roles=Counter(); kinds=Counter(); axes=Counter(); dispositions=Counter(); labels=set()
     total_lines=covered_lines=0; original_events=original_knowledge=0; prior_ends={}
     journal=list(_journal(archive));require(len(journal)==50,"journal count")
@@ -113,7 +113,9 @@ def inspect(root,archive):
                     au="AUTHOR_DIRECTION_NOT_EVENT"
                 if role=="Prompt" and au!="AUTHOR_DIRECTION_NOT_EVENT":blocks["prompt_authority"]+=1
                 if role=="Metadata" and au!="METADATA_NOT_EVENT":blocks["metadata_authority"]+=1
-                if typ in ("reader-only","reader-perspectives","reader_scene","reader_perspective","reader_lore","private_knowledge","private_strategy","private_lore","dream","variant") and not vis.startswith("READER_ONLY"):blocks["reader_scope"]+=1
+                if typ in ("reader-only","reader-perspectives","reader_scene","reader_perspective","reader_lore","private_knowledge","private_strategy","private_lore","dream","variant") and not vis.startswith("READER_ONLY"):
+                    blocks["reader_scope"]+=1
+                    scope_findings.append(dict(id=rid,macro=i,type=typ,visibility=vis,authority=au,receipt_blob=receipt_blob))
                 effective=set(rec.get("axes",axes25.get(rid,[])))
                 if rid in corrections:effective.add(corrections[rid])
                 require(effective and effective<=set(range(1,31)),"axes")
@@ -157,7 +159,14 @@ def inspect(root,archive):
     policy=read(root,"worldroot/editorial_policy.json","615151fc89228ddb222ea01613c23e977f8c418b")
     require(policy["version"]==22 and len(policy["rules"])==130,"editorial policy")
     require(not subprocess.check_output(["git","-C",str(archive),"status","--porcelain"],text=True).strip(),"archive changed")
-    return {"status":"P0_INVENTORY_STRUCTURAL_PASS" if not blocks else "P0_INVENTORY_BLOCKED", "macros":len(group_rows),"records":len(inventory),"expected_records":cp["staging_records"],"record_count_matches":len(inventory)==cp["staging_records"],"legacy_records":sum(x["records"] for x in group_rows[:22]),"queue_lines":total_lines,"explicit_coverage_lines":covered_lines,"unique_ids":len(ids),"duplicate_exact_spans_additional":duplicate_spans,"receipt_files":len(receipt_pins),"excluded_duplicate_partial_records":len(partial["records"]),"authority":dict(authorities),"book":dict(books),"role":dict(roles),"visibility":dict(scopes),"types":dict(kinds),"effective_axes":dict(axes),"dispositions":dict(dispositions),"label_counts":dict(label_counts),"unique_entity_labels":len(labels),"registry_ids":len(regrows),"registry_files":registry_metrics,"original_closed_events":original_events,"original_closed_knowledge":original_knowledge,"macro_metrics":group_rows,"issues":dict(issues),"blockers":dict(blocks),"inventory_sha256":digest(stable(inventory)),"receipt_manifest_sha256":digest(stable(receipt_pins)),"queue_unresolved":sum(m["book_hint"]=="V_OR_VI_UNRESOLVED" for m in q),"cumulative_status":prior["status"],"atomic_claims_certified":0,"independent_review":False,"typed_projection":False,"production_gate":"HOLD","canon_changed":False}
+    require(len(inventory)==cp["staging_records"],"terminal record count")
+    p1_groups=[]
+    for i in range(1,117):
+        rows=[row for row in inventory if row["macro"]==i]
+        p1_groups.append(dict(macro=i,records=len(rows),atomic_review_candidates=sum(row["disposition"]=="PENDING_ATOMIC_REVIEW" for row in rows),non_event_or_gap=sum(row["disposition"]=="NON_EVENT_OR_GAP_REVIEW" for row in rows),sha256=digest(stable(rows))))
+    if inventory_consumer is not None:
+        inventory_consumer(inventory,p1_groups)
+    return {"scope_findings":scope_findings,"p1_groups_sha256":digest(stable(p1_groups)),"p1_group_count":len(p1_groups),"status":"P0_INVENTORY_STRUCTURAL_PASS" if not blocks else "P0_INVENTORY_BLOCKED", "macros":len(group_rows),"records":len(inventory),"expected_records":cp["staging_records"],"record_count_matches":len(inventory)==cp["staging_records"],"legacy_records":sum(x["records"] for x in group_rows[:22]),"queue_lines":total_lines,"explicit_coverage_lines":covered_lines,"unique_ids":len(ids),"duplicate_exact_spans_additional":duplicate_spans,"receipt_files":len(receipt_pins),"excluded_duplicate_partial_records":len(partial["records"]),"authority":dict(authorities),"book":dict(books),"role":dict(roles),"visibility":dict(scopes),"types":dict(kinds),"effective_axes":dict(axes),"dispositions":dict(dispositions),"label_counts":dict(label_counts),"unique_entity_labels":len(labels),"registry_ids":len(regrows),"registry_files":registry_metrics,"original_closed_events":original_events,"original_closed_knowledge":original_knowledge,"macro_metrics":group_rows,"issues":dict(issues),"blockers":dict(blocks),"inventory_sha256":digest(stable(inventory)),"receipt_manifest_sha256":digest(stable(receipt_pins)),"queue_unresolved":sum(m["book_hint"]=="V_OR_VI_UNRESOLVED" for m in q),"cumulative_status":prior["status"],"atomic_claims_certified":0,"independent_review":False,"typed_projection":False,"production_gate":"HOLD","canon_changed":False}
 def main():
     p=argparse.ArgumentParser();p.add_argument("--engine-root",default=".");p.add_argument("--archive-root",required=True)
     a=p.parse_args()
