@@ -1,0 +1,580 @@
+{
+  "schema": "OMEGA_HYBRID_CYCLE_0043_0047_CONSOLIDATED_PENDING_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "opening_review_blob": "f14d50ab69a64e9fe605a368e2bd13642a3f0055",
+  "previous_validated_checkpoint_blob": "a4e6c743a611da2c83391f6991cc0ad6c4d33b34",
+  "macros": [
+    {
+      "macro": 43,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0043-01.json",
+      "blob": "7610ff48d01fc08b89f6acec4bae60484aa7ed9e",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0043-closure-pending.json",
+      "checkpoint_blob": "42d9b6f40ca77a1499794e349471e3b5e6c304bb",
+      "records": 75,
+      "lines": 10081,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "macro": 44,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0044-01.json",
+      "blob": "b649925efe4afdc4635bdb0bf83c1aa183d3def0",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0044-closure-pending.json",
+      "checkpoint_blob": "1b7875fe619fbd92994f1bceb1b0f6a41c68b2db",
+      "records": 8,
+      "lines": 1270,
+      "axes": [
+        1,
+        3,
+        4,
+        5,
+        7,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "macro": 45,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0045-01.json",
+      "blob": "843b89a6ce49e17f5335af49121ae74fa16beddf",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0045-closure-pending.json",
+      "checkpoint_blob": "3507f3a17563bcc0d1229812a1bb454fc3f4ccfd",
+      "records": 52,
+      "lines": 10258,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "macro": 46,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0046-01.json",
+      "blob": "ac277c9163de6abd8229c36a618453400a549810",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0046-closure-pending.json",
+      "checkpoint_blob": "c62b373bb5da39a99de2ed81d0dd131180f9e66f",
+      "records": 54,
+      "lines": 10000,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "macro": 47,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0047-01.json",
+      "blob": "46850fd43e22f0af4a30b0a2d7bb1d3dcb5f62b4",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0047-closure-pending.json",
+      "checkpoint_blob": "3edf50e8f971c744d36170078b969413d8cecc8b",
+      "records": 54,
+      "lines": 10113,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "HOUSE_SHARED_NOT_MARRIAGE",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        10259,
+        10447
+      ],
+      "sha256": "98ff9c150f0a8141a8e4c644882f3aab4b6c8432df2b9bb427ad3242146ec2a5",
+      "promotion": false
+    },
+    {
+      "id": "CARAVAN_DEPARTURE",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        11000,
+        11217
+      ],
+      "sha256": "5aad72bb3fe4e04e2c9d3f6b37b4418588a472d77d102b0822b4498ab0fb9dae",
+      "promotion": false
+    },
+    {
+      "id": "VARTHOS_LOCAL_RULES_RESCUE",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        11664,
+        12257
+      ],
+      "sha256": "e6f9a9c27e153391c734a3f3db31cdac6c82e569cd3be3bcc717cc89a33449bf",
+      "promotion": false
+    },
+    {
+      "id": "NOX_ORIGINAL_ARMOR_CONTINUITY",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        13626,
+        14047
+      ],
+      "sha256": "680abfc420f6db8538fcf0bded763acea249d3db241c7e8a4bb516807bcd5884",
+      "promotion": false
+    },
+    {
+      "id": "MIREN_BLUE_UNBOUND_TWO_BLADES",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        14048,
+        14283
+      ],
+      "sha256": "684b342127eeb4c6ebec30ba923d6fa905d0659cd958f5952d005a5e536325ac",
+      "promotion": false
+    },
+    {
+      "id": "HORIZONTE_TOTAL_PHYSICAL_NOT_CULTURAL",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        14284,
+        14761
+      ],
+      "sha256": "6c3297c064ccc4066682935f3bb60e47af1912123aec1ad4c5685bf0302d940e",
+      "promotion": false
+    },
+    {
+      "id": "CONSTRUCT_CONTAINED_NOX_MIREN_AGENCY",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        17227,
+        17808
+      ],
+      "sha256": "db52bb01a900fa47a0a84932b78a87594df4fbaf0a8d62af2ebb83081c14de6d",
+      "promotion": false
+    },
+    {
+      "id": "NOX_CONTROLLED_AUTONOMY_TEST",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        19362,
+        19935
+      ],
+      "sha256": "c8a421b21d0e98296977068e2573f2282a64597eb9e21a7ceaaedd3a9f841a16",
+      "promotion": false
+    },
+    {
+      "id": "MIREN_CONSENT",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        19936,
+        20149
+      ],
+      "sha256": "7b53d28a4af126ab0676428230f9761b19f95a2ba537acd950b43c3f56694d78",
+      "promotion": false
+    },
+    {
+      "id": "SPLIT_SCENE_NO_DUPLICATE",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        20150,
+        20277
+      ],
+      "sha256": "19d5c7cc26cfc586d8380b0eed7e82202bd6a45fd25546b0cfba4434cb5ce467",
+      "promotion": false
+    },
+    {
+      "id": "AUTHOR_CAPTURE_PLAN_NOT_EVENT",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        21638,
+        21675
+      ],
+      "sha256": "f97bbef8e20e8d9f127c8e0027000e46618d03179579ce5bd29162e9f3dc6bd0",
+      "promotion": false
+    },
+    {
+      "id": "TECELA_READER_ONLY",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        22721,
+        23022
+      ],
+      "sha256": "80dd535e391e34cfe721bb7302b6541453aeb2f167071a7e3178ccdd1d125775",
+      "promotion": false
+    },
+    {
+      "id": "ESHARA_RESCUE_AND_MIREN",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        25030,
+        26297
+      ],
+      "sha256": "63ab027f5ca7a9fed583f1f7a07ec92cd75e97dad47271cbc9af6ff6233f53cb",
+      "promotion": false
+    },
+    {
+      "id": "TECELA_STRATEGY_NOT_CAPTURE",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        26604,
+        26801
+      ],
+      "sha256": "ec8118a35fe91f7f69a85de2f9452e8e87a9442f33401c1585bc82a2a6b993e0",
+      "promotion": false
+    },
+    {
+      "id": "HERANCA_VEU_AUTHOR_RULES",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        27404,
+        27470
+      ],
+      "sha256": "77eb5cb8e128370ed3466b06a583c8430f07ae277c834bb81ba80357de7e747b",
+      "promotion": false
+    },
+    {
+      "id": "BLUE_ARMOR_REVERSIBLE_TEST",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        29060,
+        29479
+      ],
+      "sha256": "8f384d626e46c7c8359d932734fe249b0ec674f05d271b9c7ab05ec61a2b950f",
+      "promotion": false
+    },
+    {
+      "id": "MESSENGER_ACCESS_REFUSED",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        29480,
+        29611
+      ],
+      "sha256": "f52fb607a96da924cab096179fdeceb56a9c7dddf4e4220fc533e790dfb0547d",
+      "promotion": false
+    },
+    {
+      "id": "D451_PART_III_BOUNDARY",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        30320,
+        30371
+      ],
+      "sha256": "6a23ae6bdcfe637705fff0caeb98f672df4bdb5d1fe82a053af62a31469238b0",
+      "promotion": false
+    }
+  ],
+  "controls": [
+    "Literal source 04 book V through both ranges; queue hints unchanged. Source order not event time.",
+    "Preserve prior Book IV and opening overlays, 300x comparable and 100x storage, no power retcon, 300 original legionaries alive, no new official song count without evidence.",
+    "NÓX continuity from original living armor, distinct from SISTEMA and Miren's blue armor; first response does not establish Miren bond or independent personhood.",
+    "Horizonte Total physical planetary coverage explicitly narrated; cultural, historic and political knowledge not automatic; no invented names or surveillance.",
+    "Tecelã scenes reader-only; planned capture and hidden superior remain backstage; no invented convergence with other antagonists.",
+    "Historical editorial operations and visual requests are not world events; four options plus fifth free action preserved as explicit source direction, no global rewriting.",
+    "Grouped editorial inspection, not exhaustive semantic certification; mixed/private perspectives no character injection."
+  ],
+  "prior_opening_findings": [
+    {
+      "id": "BOOK_V_AUTHOR_BOUNDARY",
+      "source": "03_DIA_431_A_457_FONTE_LITERAL.txt",
+      "range": [
+        8936,
+        8944
+      ],
+      "sha256": "c820b8c43691cee0a35ed016c6586614c51a21d390f7b86e0af1c42232f851e1",
+      "promotion": false
+    },
+    {
+      "id": "BOOK_V_TITLE",
+      "source": "03_DIA_431_A_457_FONTE_LITERAL.txt",
+      "range": [
+        8982,
+        8990
+      ],
+      "sha256": "1cb460cfa6105350ad30e4d9df72623c139f33e09d00cdd6cb1b42b03df25398",
+      "promotion": false
+    },
+    {
+      "id": "MAP_DEMONSTRATION_NOT_UNKNOWN_GEOGRAPHY",
+      "source": "03_DIA_431_A_457_FONTE_LITERAL.txt",
+      "range": [
+        11450,
+        11993
+      ],
+      "sha256": "2336af889729c52f84267b8260f2b695c71e50996c6b4323ce8c92205c46d4fd",
+      "promotion": false
+    },
+    {
+      "id": "SYSTEM_AUTHOR_PERSONALITY",
+      "source": "03_DIA_431_A_457_FONTE_LITERAL.txt",
+      "range": [
+        18331,
+        18477
+      ],
+      "sha256": "990424bc2060ec449c2addb690cc0da5f49ef78640d6dcfa3faf00b4068df6cd",
+      "promotion": false
+    },
+    {
+      "id": "FUTURE_CAPTURE_PLAN_NOT_EVENT",
+      "source": "03_DIA_431_A_457_FONTE_LITERAL.txt",
+      "range": [
+        19410,
+        19831
+      ],
+      "sha256": "f6acfb84854a346567c59bd396a304bbc5373ee593112a8b451ffe12847e189d",
+      "promotion": false
+    },
+    {
+      "id": "AETHRON_PROVISIONAL_BACKSTAGE",
+      "source": "03_DIA_431_A_457_FONTE_LITERAL.txt",
+      "range": [
+        19832,
+        20163
+      ],
+      "sha256": "48f609521e78286bc8180c8bc4b13a648a638215ebbbd5c9aa3784c18f485da1",
+      "promotion": false
+    },
+    {
+      "id": "D457_RECAP_NOT_LITERAL",
+      "source": "03_DIA_431_A_457_FONTE_LITERAL.txt",
+      "range": [
+        20164,
+        20286
+      ],
+      "sha256": "6f43cd01c222d55fe3f075dfe8d1a214995cde7f8bdfec3faa6b5bfa5f79cf75",
+      "promotion": false
+    },
+    {
+      "id": "SOURCE04_BOOK_V_D442",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        328,
+        346
+      ],
+      "sha256": "3fec35dc3bb87a1d7c843cd336738ee9da95e5fdf4283045e9f239c49779b5fd",
+      "promotion": false
+    },
+    {
+      "id": "MIREN_PROTECTIVE_CLOTHING",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        3474,
+        3809
+      ],
+      "sha256": "b6c0e286ae8189c819c564c7ffaf9f7e487dab8f62511b7129d759c9219cf886",
+      "promotion": false
+    },
+    {
+      "id": "ARGOS_TEST_NOT_KNOWN_TO_LUCAS",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        4454,
+        4675
+      ],
+      "sha256": "d12685e7a3e917c0e08a6741e669a83b97f55b0e8c74e9ebe4c03e4cb48b7e18",
+      "promotion": false
+    },
+    {
+      "id": "STONE_RESCUE_NOT_RESTORATION",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        6390,
+        6773
+      ],
+      "sha256": "d2771500b9c0de69748a03e10af719794a12898554d93d592b102dab39225221",
+      "promotion": false
+    },
+    {
+      "id": "CHAPTER1_END",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        7946,
+        8013
+      ],
+      "sha256": "0e466052077d0b1dfafcd234c53762232392e5a7c9cb7076c33911b0eebed874",
+      "promotion": false
+    },
+    {
+      "id": "HOUSE_DIMENSIONAL_CREATION",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        9090,
+        9467
+      ],
+      "sha256": "814140a0b4c49c2d8a5c565b7f0f32da2ef50a331fee1671edd14e2e11d7d975",
+      "promotion": false
+    },
+    {
+      "id": "SELECTIVE_ACCESS",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        9468,
+        9695
+      ],
+      "sha256": "b005f7a8a6ed9ca0629325b2919a53632bfbd78b0ec16986308b026e7ffdc74c",
+      "promotion": false
+    },
+    {
+      "id": "MID_SCENE_CUT",
+      "source": "04_DIA_457_A_469_FONTE_LITERAL.txt",
+      "range": [
+        9936,
+        10258
+      ],
+      "sha256": "7c4260c01dd68a1a905910f1b66868765fa8b17389b9bf4348ec9f19f2bccdea",
+      "promotion": false
+    }
+  ],
+  "overlays": [
+    {
+      "operation": "RETAIN_OPEN_DIVERGENCES",
+      "scope": "IV and V prior records; no rewrite",
+      "promotion": false
+    },
+    {
+      "operation": "RESTRICT_MIXED_SCENE_SUBSPAN_REVIEW",
+      "scope": "D447 NÓX private origin and System dialogue, rival scenes and local investigations; typed subspan review pending",
+      "promotion": false
+    }
+  ],
+  "totals": {
+    "lines": 41722,
+    "records": 243,
+    "session_lines": 20113,
+    "session_records": 108,
+    "staging_records": 3138,
+    "official_records": 1656,
+    "axes_assessed": 30
+  },
+  "status": "PENDING_NATIVE_STAGING_REVIEW",
+  "production_gate": "HOLD",
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "semantic_certification": false,
+  "independent_review": false,
+  "promotion": false
+}

@@ -692,7 +692,57 @@ def verify_book_v_opening(root,archive):
     require(total==audit["totals"]["lines"]==21609 and records==audit["totals"]["records"]==135 and len(ids)==773+records and audit["production_gate"]=="HOLD" and not any(audit[k] for k in ("canon_changed","official_checkpoint_changed","semantic_certification","independent_review","promotion")),"aggregate")
     return {"status":"PASS_NATIVE_BOOK_V_0045_COMPLETE","prior_book_status":"PASS_STAGING_ONLY","source_transition_status":"PASS_STAGING_ONLY","macro_metrics":metrics,"session_lines":total,"session_records":records,"staging_records":2895+records,"book_v_records":records,"authority_counts":dict(counts),"visibility_counts":dict(vis),"axes":sorted(axes),"next_line":10259,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False}
 
+
+def verify_book_v_cycle47(root,archive):
+    from collections import Counter
+    from hashlib import sha256
+    root=Path(root);archive=Path(archive)
+    opening=verify_book_v_opening(root,archive)
+    c0=read(root,ROOT+"recovery-checkpoint-0045-validated.json","a4e6c743a611da2c83391f6991cc0ad6c4d33b34")
+    old=read(root,c0["opening_review_path"],"f14d50ab69a64e9fe605a368e2bd13642a3f0055")
+    boundary=read(root,c0["book_boundary_review_path"],c0["book_boundary_review_blob"])
+    require(opening["status"]=="PASS_NATIVE_BOOK_V_0045_COMPLETE" and old["status"]=="PASS_STAGING_ONLY" and c0["native_validation"]=="PASS" and c0["staging_records"]==3030,"opening gate")
+    q=read(root,"audit/omega008-c/bulk-macro-queue.json","e5a5f9e358d20acf8559f6313c2da24b64665f48")["macros"]
+    cache=SourceCache(archive,read(archive,"history/sources/MANIFEST.json","2048141263f66151230119af9b0ee51796ac846b"))
+    review=read(root,ROOT+"cycle-0043-0047-consolidated-review-pending.json","76e0a65f0825f1e1508a16d94ff91ce869029f39")
+    require(review["opening_review_blob"]==c0["opening_review_blob"] and review["previous_validated_checkpoint_blob"]=="a4e6c743a611da2c83391f6991cc0ad6c4d33b34" and review["macros"][:3]==old["macros"] and review["prior_opening_findings"]==old["findings"] and [g["macro"] for g in review["macros"]]==list(range(43,48)),"cycle scope")
+    ids={x["id"] for g in boundary["macros"] for e in g["receipts"] for x in read(root,e["path"],e["blob"])["records"]}
+    require(len(ids)==773,"prior boundary ids")
+    counts=Counter();vis=Counter();axes=set();total=0;records=0;metrics=[]
+    prior_blob="a4e6c743a611da2c83391f6991cc0ad6c4d33b34"
+    for g in review["macros"]:
+        n=g["macro"];m=q[n-1];source=cache.get(m["source"])
+        cp=read(root,g["checkpoint"],g["checkpoint_blob"]);r=read(root,g["receipt"],g["blob"],cp["receipt_sha256"])
+        require(r["macro_id"]==m["id"] and r["previous_macro_id"]==m["previous_macro"] and r["official_unit_seal"]==m["unit_seal"] and cp["next_macro"]==q[n] and r["release_blob"]==c0["release_blob"],"queue chain")
+        extra=8 if n==45 else 0
+        require(r["range"]==[m["start"]+extra,m["end"]],"range")
+        if n>=46:
+            require(r["previous_checkpoint_blob"]==cp["previous_checkpoint_blob"]==prior_blob and cp["native_validation"]=="PENDING" and cp["next_line"]==q[n]["start"] and m["book_hint"]=="V_OR_VI_UNRESOLVED","new checkpoint chain")
+            prior_blob=g["checkpoint_blob"]
+        result=validate_receipt(r,m,source,r["project"],ARCHIVE,previous_ids=ids,expected_range=r["range"])
+        require(result["lines"]+extra==m["lines"]==g["lines"] and result["records"]==g["records"]==cp["records"] and result["axes_represented"]==g["axes"],"counts")
+        for x in r["records"]:
+            require(x["book"]=="V" and "NO_CHARACTER_INJECTION" in x["visibility"] and not x["promotion"],"scope")
+            require((x["evidence"]["role"]=="Prompt")==(x["authority"]=="AUTHOR_DIRECTION_NOT_EVENT"),"role separation")
+            require(x["day"] is not None or x["authority"] in ("AUTHOR_DIRECTION_NOT_EVENT","METADATA_NOT_EVENT"),"metadata")
+            require(x["type"]!="knowledge" or x["visibility"].startswith("RESTRICTED"),"private")
+            require(x["type"]!="reader_scene" or x["visibility"].startswith("READER_ONLY"),"reader")
+            ids.add(x["id"]);counts[x["authority"]]+=1;vis[x["visibility"]]+=1
+        total+=g["lines"];records+=g["records"];axes.update(g["axes"])
+        require(cp["staging_records"]==2895+records and cp["book_counts"]["V"]==records and cp["official_records"]==1656 and cp["production_gate"]=="HOLD" and not any(cp[k] for k in ("canon_changed","official_checkpoint_changed","semantic_certification","independent_review","promotion")),"staging gate")
+        metrics.append({"macro":n,"lines":g["lines"],"records":g["records"],"axes":g["axes"]})
+    for e in review["findings"]+review["prior_opening_findings"]:
+        s=cache.get(e["source"]);lo,hi=e["range"]
+        require(not e["promotion"] and sha256("\n".join(s[0][lo-1:hi]).encode()).hexdigest()==e["sha256"],"finding hash")
+    s=cache.get(q[45]["source"])[0]
+    require(all(s[i-1]=="LIVRO V — ALÉM DAS ÚLTIMAS ESTRADAS" for i in (10702,13052,16637,18802,21709,24260,27508)) and not any(line.strip().startswith("LIVRO VI") for line in s[10258:30371]),"book V literal headers")
+    require("SIMBIONTE VIVO — PRIMEIRA EVOLUÇÃO" in s[13853] and "NÓX" in s[13979] and "cobertura planetária de superfície" in s[14593] and "Minha estrutura foi ampliada. Nosso vínculo permanece" in s[14983],"NOX and map")
+    require("Não me tragam uma proposta baseada em vencê-lo" in s[22962] and "Sua armadura azul ainda não possui vínculo" in s[27436] and "novo checkpoint narrativo Dia 451 às 23h02" in s[30369],"private and checkpoint")
+    t=review["totals"];require(total==t["lines"]==41722 and records==t["records"]==243 and len(ids)==773+records and total-opening["session_lines"]==t["session_lines"]==20113 and records-opening["session_records"]==t["session_records"]==108 and t["staging_records"]==2895+records and sorted(axes)==list(range(1,31)),"consolidated counts")
+    require(review["production_gate"]=="HOLD" and not any(review[k] for k in ("canon_changed","official_checkpoint_changed","semantic_certification","independent_review","promotion")) and all(not x["promotion"] for x in review["overlays"]),"review gate")
+    return {"status":"PASS_NATIVE_BOOK_V_0047_COMPLETE","cycle_status":"PASS_STAGING_ONLY","macro_metrics":metrics,"cycle_lines":total,"cycle_records":records,"session_lines":t["session_lines"],"session_records":t["session_records"],"staging_records":t["staging_records"],"book_v_records":records,"authority_counts":dict(counts),"visibility_counts":dict(vis),"axes":sorted(axes),"next_line":30372,"production_gate":"HOLD","canon_changed":False,"semantic_certification":False}
+
 def main():
     p=argparse.ArgumentParser();p.add_argument("--engine-root",default=".");p.add_argument("--archive-root",required=True)
-    a=p.parse_args();print(json.dumps(verify_book_v_opening(a.engine_root,a.archive_root),sort_keys=True))
+    a=p.parse_args();print(json.dumps(verify_book_v_cycle47(a.engine_root,a.archive_root),sort_keys=True))
 if __name__=="__main__":main()
