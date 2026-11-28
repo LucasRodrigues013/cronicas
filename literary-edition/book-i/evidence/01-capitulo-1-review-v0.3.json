@@ -1,0 +1,89 @@
+{
+  "schema": "literary-edition-chapter-review-v1",
+  "status": "DRAFT_AWAITING_AUTHOR_APPROVAL",
+  "date": "2026-11-28",
+  "chapter": 1,
+  "title": "Um mundo que não conhecia seu nome",
+  "draft": {
+    "path": "book-i/drafts/01-capitulo-1-v0.3.md",
+    "blob": "d446c7664c3cb1f35d17a8757e05bc9397b27c7a",
+    "sha256": "c516c93f01e6a9eeae4d5b79f053d66e78c1a9a6598925a965db47643acf6fcd",
+    "words_whitespace": 2850
+  },
+  "approved_prologue": {
+    "blob": "835d451cb764f227d3732ef2a9a1376a3bbd59b0",
+    "status": "TEXT_AND_ILLUSTRATED_EDITION_APPROVED",
+    "last_line": "Lucas caiu."
+  },
+  "sources": {
+    "engine_pinned": "1b063d05c1acaa86b2f237f987804af59dbeccd6",
+    "archive_pinned": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+    "historical_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+    "historical_evidence": "Consolidated first-day account: CREATION, valley, 300 elite warriors, victory, captured chief alive, approx 5% remaining, dimensional backpack and regenerative armor. First 10 images referenced, subsequent images not independently inspected. Sequence before battle not reconstructed as literal evidence.",
+    "prior_draft": "073f98dbb75524bb85e7a3b61d91b01d3b06274b",
+    "contract": "EDITORIAL_CONTRACT.md",
+    "feedback": "AUTHOR_FEEDBACK.md"
+  },
+  "scenes": [
+    {
+      "name": "After impact",
+      "classification": "AUTHOR_EXPANSION",
+      "review": "continues Lucas caiu without repeating transfer, bodily and emotional aftermath; Helena and rescued girl remain memories, no claims on their fate"
+    },
+    {
+      "name": "Exploring valley and CREATION",
+      "classification": "RPG_LITERAL_PLUS_EDITORIAL_DRAFT",
+      "review": "valley, river, road and CREATION from source; reactive plant, reflection and questions new; no successful creation or new power rule claimed"
+    },
+    {
+      "name": "Orcs and first intent",
+      "classification": "RPG_LITERAL_PLUS_AUTHOR_EXPANSION",
+      "review": "first visible ~300 only, not total; no Uzgor/Bandeira Cinzenta knowledge; film 300 and mentorship connect to approved direction; no formation, equipment order, casualties or outcome asserted before next chapter"
+    }
+  ],
+  "review": {
+    "manual_only": true,
+    "changes_before_delivery": [
+      "Clarified that living was Lucas's request, not his literal final question",
+      "Removed claim that Earth day was necessarily the previous day",
+      "Retained Chapter 1 boundary before manifestation, consistent with six-chapter plan"
+    ],
+    "strengths": [
+      "Direct seam, recognizable humor and grief",
+      "Sensory worldbuilding and traces of civilization",
+      "Practical reasoning without omniscience; autonomy foreshadowing",
+      "Threat builds without revealing orc motivations"
+    ],
+    "limitations": [
+      "Some introspection and system silence recur; monitor pacing on reader feedback",
+      "Exact historical sequence of initial creation and equipment still unverified; original images pending",
+      "No independent reviewer, automated engine execution or complete future canon reconciliation"
+    ],
+    "scores": {
+      "continuity": 9.2,
+      "character": 9.1,
+      "emotion": 8.8,
+      "worldbuilding": 9,
+      "pacing": 8.7,
+      "prose": 8.8,
+      "hook": 9.2,
+      "overall_editorial_estimate": 9,
+      "design_estimate": 9.4
+    }
+  },
+  "pdf": {
+    "chapter_only": {
+      "filename": "Cronicas_O_Despertar_do_Criador_Capitulo_01.pdf",
+      "pages": 14,
+      "sha256": "e80247b661e69838fb81ca055d9eb228295d4156e360e9704c55aeeb8255ccf6"
+    },
+    "cumulative": {
+      "filename": "Cronicas_O_Despertar_do_Criador_Prologo_e_Capitulo_01.pdf",
+      "pages": 37,
+      "sha256": "31aecad3c3d1f586e15766ed17f8ba6081bf3938243e47fddfe05177c9bcd9f5"
+    },
+    "checks": "14347 normalized narrative characters identical to draft; all 24 prior pages pixel-identical at 0.65 scale and extracted text identical; 13 new pages rendered, contact sheet inspected, no out-of-bounds text blocks; A5 EB Garamond; Poppler render opening also generated",
+    "archive_status": "Both PDF binaries delivered in conversation; not uploaded to GitHub in this run. Manuscript and review archived."
+  },
+  "next": "Await Chapter 1 approval. If approved, prepare Chapter 2: O nascimento dos trezentos. Do not determine unverified exact equipment sequence or change RPG."
+}
