@@ -1,0 +1,33 @@
+{
+  "schema": "OMEGA_D579_AUTHORITY_PREFLIGHT_V1",
+  "status": "PASS_AUTHORITY_PREFLIGHT_ONLY",
+  "scope": "AUTHORITY_PREFLIGHT_ONLY_NO_0116_RECEIPT_OR_SEMANTIC_RECOVERY",
+  "episode": "LVI-C09-PI-D579-AUTHOR-SOURCE",
+  "sequence": 50,
+  "previous_episode_id": "LVI-C08-PV-D578-AUTHOR-SOURCE",
+  "closure_blob": "687e0515763105921f04f3b4d9df8e16799e6fb9",
+  "story_sha256": "4ab9ee62f9269819181dbda86285cfa5d00577c0e68992702921ad1c931ec926",
+  "choice_sha256": "28e69d6c763c609ac7fb14e174f28fcc1bb13bb4180c9b10c92dcbcda9551c8a",
+  "chosen_option": 1,
+  "pins": {
+    "choice": "e204891c079ca984a4a7eb4fb9f0cf7c9ed9e16a",
+    "immutable_manifest": "c07247f77653cf5ff11d821f35bcebe91c4cf7bd",
+    "source_proof": "d6e331f00ada4b79b9b599fa57bf6f50d60a219c",
+    "reader_receipt": "51c76b4e717e6a39969e4abf2e75f8c7f2fa91eb"
+  },
+  "source_proof_kind": "ASSISTANT_PREDELIVERY_EXACT_TEXT",
+  "ui_parity": "NOT_INDEPENDENTLY_VERIFIED",
+  "macro_0116_recovered": false,
+  "production_gate": "HOLD",
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "semantic_certification": false,
+  "independent_review": false,
+  "promotion": false,
+  "physical_readback": "PASS_NATIVE_HASH_ONLY_NO_PROSE_EXTRACTION",
+  "native_validation": "PASS",
+  "validated_commit": "51fcf74b2fce52ae96aa7de4d480fb136209afa1",
+  "native_evidence_path": "audit/omega008-c/turbo-v3/cycle-0111-0115-native-evidence.json",
+  "native_evidence_blob": "3b6cf44389a9cadb7edf18ec8618351cb3673aeb",
+  "pending_preflight_blob": "548dc0cac230beba5f53a16281459ed6c9a6b2ec"
+}
