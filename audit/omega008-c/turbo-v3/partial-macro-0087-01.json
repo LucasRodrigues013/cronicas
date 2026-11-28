@@ -1,0 +1,972 @@
+{
+  "schema": "OMEGA_TURBO_V3_PARTIAL_MACRO_EDITORIAL_RECEIPT_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "macro_id": "b56f0cae0686d81f33ee4c2d41cd8eb065b68e25c323ffadbe8b3ccab7a97afa",
+  "previous_macro_id": "e53e87eb1cfe8742edc2a08714161fc21ccda539314b6836886fa1f9c192588d",
+  "official_unit_seal": "1aa125e5259ab5a390454957f85b4de78f30c84d239fa30b1a378729ff45007f",
+  "macro_range": [
+    1,
+    1880
+  ],
+  "range": [
+    1,
+    1880
+  ],
+  "source": "LVI-C03-PII-D550-AUTHOR-SOURCE",
+  "source_sha256": "2d55f835abf5b4c8bee896d942d22b2e29869f0da332521f2d812d4700fbe1bc",
+  "source_provenance": {
+    "kind": "CLOSED_PROSE",
+    "episode_id": "LVI-C03-PII-D550-AUTHOR-SOURCE",
+    "sequence": 21,
+    "previous_episode_id": "LVI-C03-PI-D549-AUTHOR-SOURCE",
+    "previous_head_sha256": "34c4d13a5a6da8cdd1007bb2a03dbcf9414c8182093d9417f40ecac8adf8d26a",
+    "closure_blob": "0c5f43edcbf260900887a89336967044b05052f1",
+    "draft_blob": "b3b165c25d99e495db3d7054f9d8af502e426af5",
+    "immutable_manifest_blob": "0e64d773de183765532f86a2683e0fd808906331",
+    "narrative_blob": "2523c8d0afcc29b1ace7c2439570ae9a7f44eb9f",
+    "full_story_sha256": "cb22f5ef25a42a220e2fa22b024c5988df68125838dc5101136241b387520dd9",
+    "prose_sha256": "2d55f835abf5b4c8bee896d942d22b2e29869f0da332521f2d812d4700fbe1bc",
+    "prose_lines": 1880,
+    "role_adapter": "Response for native receipt compatibility only; closure authority separate",
+    "closure_event_count": 15,
+    "closure_knowledge_count": 28,
+    "reviewed_events_blob": "4f7742f754093bf2dd327c0de7c2472c5453d5ce",
+    "reviewed_knowledge_blob": "af3e4ea33e09ab16e102d423ccf7ad958b5924f6",
+    "choice_sha256": "e7192fe7b26fafab5b408be84f698d53e3e38d3fa94be83e81a917f8ebe144ec",
+    "chosen_option": 4,
+    "book_closed": false,
+    "editorial_header": "  <title size=\"md\" textAlign=\"center\">PARTE II DE V · ESCOLHA 4 ESPECIAL</title>",
+    "ratification_kind": null
+  },
+  "release_blob": "1ea9d60a58ecf00a368f0e33631164fc7cbe0051",
+  "previous_checkpoint_blob": "683da48b86fc8ebe5326f74f22fbbf852afe2a32",
+  "cycle_review_blob": "0bff215cbc214b20f462b1d1ff6f703131f49784",
+  "records": [
+    {
+      "id": "O8C-B87-001",
+      "book": "VI",
+      "day": 550,
+      "chapter_hint": 3,
+      "type": "metadata",
+      "entities": [
+        "worldroot"
+      ],
+      "summary": "D550 Parte II escolha4; anterior D54922h16.",
+      "axes": [
+        1,
+        2,
+        28,
+        29,
+        30
+      ],
+      "authority": "METADATA_NOT_EVENT",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C03-PII-D550-AUTHOR-SOURCE",
+        "source_sha256_manifest": "2d55f835abf5b4c8bee896d942d22b2e29869f0da332521f2d812d4700fbe1bc",
+        "blob_sha1": "b3b165c25d99e495db3d7054f9d8af502e426af5",
+        "source_blob_sha1s": [
+          "b3b165c25d99e495db3d7054f9d8af502e426af5"
+        ],
+        "line_start": 1,
+        "line_end": 25,
+        "role": "Response",
+        "span_sha256_utf8": "f116179910752fdd851d52fe87741b211b768113f190ae3b961bf89dba26a085",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "0c5f43edcbf260900887a89336967044b05052f1",
+        "full_story_sha256": "cb22f5ef25a42a220e2fa22b024c5988df68125838dc5101136241b387520dd9",
+        "immutable_manifest_blob": "0e64d773de183765532f86a2683e0fd808906331"
+      }
+    },
+    {
+      "id": "O8C-B87-002",
+      "book": "VI",
+      "day": 550,
+      "chapter_hint": 3,
+      "type": "scene",
+      "entities": [
+        "lucas",
+        "miren",
+        "nox"
+      ],
+      "summary": "05h07 Torre, cidade ferida e ativa, rotina e resposta continuada.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        9,
+        10,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C03-PII-D550-AUTHOR-SOURCE",
+        "source_sha256_manifest": "2d55f835abf5b4c8bee896d942d22b2e29869f0da332521f2d812d4700fbe1bc",
+        "blob_sha1": "b3b165c25d99e495db3d7054f9d8af502e426af5",
+        "source_blob_sha1s": [
+          "b3b165c25d99e495db3d7054f9d8af502e426af5"
+        ],
+        "line_start": 26,
+        "line_end": 117,
+        "role": "Response",
+        "span_sha256_utf8": "79b28339d4efdc890be4ba9e7be2a09d2447787b1cde2d98c0c971fe0acf6b1f",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "0c5f43edcbf260900887a89336967044b05052f1",
+        "full_story_sha256": "cb22f5ef25a42a220e2fa22b024c5988df68125838dc5101136241b387520dd9",
+        "immutable_manifest_blob": "0e64d773de183765532f86a2683e0fd808906331"
+      }
+    },
+    {
+      "id": "O8C-B87-003",
+      "book": "VI",
+      "day": 550,
+      "chapter_hint": 3,
+      "type": "reader_scene",
+      "entities": [
+        "ithran_veyk",
+        "brum_vass",
+        "selen_korr",
+        "ilvar_reth"
+      ],
+      "summary": "05h34 força externa prepara pressão multissetorial; conhecimento limitado e mensageiros reais.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        13,
+        16,
+        23,
+        24,
+        26,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C03-PII-D550-AUTHOR-SOURCE",
+        "source_sha256_manifest": "2d55f835abf5b4c8bee896d942d22b2e29869f0da332521f2d812d4700fbe1bc",
+        "blob_sha1": "b3b165c25d99e495db3d7054f9d8af502e426af5",
+        "source_blob_sha1s": [
+          "b3b165c25d99e495db3d7054f9d8af502e426af5"
+        ],
+        "line_start": 118,
+        "line_end": 209,
+        "role": "Response",
+        "span_sha256_utf8": "5e9a2b516b9fb3c1636bca297163d4dfc8d224253cd0e0cbc24a98166036a4be",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "0c5f43edcbf260900887a89336967044b05052f1",
+        "full_story_sha256": "cb22f5ef25a42a220e2fa22b024c5988df68125838dc5101136241b387520dd9",
+        "immutable_manifest_blob": "0e64d773de183765532f86a2683e0fd808906331"
+      }
+    },
+    {
+      "id": "O8C-B87-004",
+      "book": "VI",
+      "day": 550,
+      "chapter_hint": 3,
+      "type": "scene",
+      "entities": [
+        "moradores",
+        "legiao"
+      ],
+      "summary": "06h11 mercado sofre ataque, danos e feridos reais, defesa e socorro.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        10,
+        16,
+        17,
+        20,
+        23,
+        24
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C03-PII-D550-AUTHOR-SOURCE",
+        "source_sha256_manifest": "2d55f835abf5b4c8bee896d942d22b2e29869f0da332521f2d812d4700fbe1bc",
+        "blob_sha1": "b3b165c25d99e495db3d7054f9d8af502e426af5",
+        "source_blob_sha1s": [
+          "b3b165c25d99e495db3d7054f9d8af502e426af5"
+        ],
+        "line_start": 210,
+        "line_end": 313,
+        "role": "Response",
+        "span_sha256_utf8": "1b1475e740c328f2bd381037eff53de5e24cf62cbea9b9c7aa7f0f8dd81c2dd5",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "0c5f43edcbf260900887a89336967044b05052f1",
+        "full_story_sha256": "cb22f5ef25a42a220e2fa22b024c5988df68125838dc5101136241b387520dd9",
+        "immutable_manifest_blob": "0e64d773de183765532f86a2683e0fd808906331"
+      }
+    },
+    {
+      "id": "O8C-B87-005",
+      "book": "VI",
+      "day": 550,
+      "chapter_hint": 3,
+      "type": "scene",
+      "entities": [
+        "brannik",
+        "sael",
+        "seron"
+      ],
+      "summary": "06h14 Forja e Anel Ofícios, placas de proteção, Seron braço ferido defendendo trabalhador, restrição clínica.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        13,
+        15,
+        23,
+        24,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C03-PII-D550-AUTHOR-SOURCE",
+        "source_sha256_manifest": "2d55f835abf5b4c8bee896d942d22b2e29869f0da332521f2d812d4700fbe1bc",
+        "blob_sha1": "b3b165c25d99e495db3d7054f9d8af502e426af5",
+        "source_blob_sha1s": [
+          "b3b165c25d99e495db3d7054f9d8af502e426af5"
+        ],
+        "line_start": 314,
+        "line_end": 451,
+        "role": "Response",
+        "span_sha256_utf8": "3478f1669d04a105b6198ef91e6351c3cbd39064103161c80cd4ce983048d07c",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "0c5f43edcbf260900887a89336967044b05052f1",
+        "full_story_sha256": "cb22f5ef25a42a220e2fa22b024c5988df68125838dc5101136241b387520dd9",
+        "immutable_manifest_blob": "0e64d773de183765532f86a2683e0fd808906331"
+      }
+    },
+    {
+      "id": "O8C-B87-006",
+      "book": "VI",
+      "day": 550,
+      "chapter_hint": 3,
+      "type": "creation",
+      "entities": [
+        "lucas",
+        "nox"
+      ],
+      "summary": "06h18 GÊNESE protege mercado/Forja/passagem sul, barreiras persistentes, sem nerf.",
+      "axes": [
+        1,
+        2,
+        3,
+        11,
+        12,
+        14,
+        16,
+        17,
+        24,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C03-PII-D550-AUTHOR-SOURCE",
+        "source_sha256_manifest": "2d55f835abf5b4c8bee896d942d22b2e29869f0da332521f2d812d4700fbe1bc",
+        "blob_sha1": "b3b165c25d99e495db3d7054f9d8af502e426af5",
+        "source_blob_sha1s": [
+          "b3b165c25d99e495db3d7054f9d8af502e426af5"
+        ],
+        "line_start": 452,
+        "line_end": 571,
+        "role": "Response",
+        "span_sha256_utf8": "aa1b5759894f06b18cd2cf43a22db5d1fc13864582be6d4eab085672d3accdbd",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "0c5f43edcbf260900887a89336967044b05052f1",
+        "full_story_sha256": "cb22f5ef25a42a220e2fa22b024c5988df68125838dc5101136241b387520dd9",
+        "immutable_manifest_blob": "0e64d773de183765532f86a2683e0fd808906331"
+      }
+    },
+    {
+      "id": "O8C-B87-007",
+      "book": "VI",
+      "day": 550,
+      "chapter_hint": 3,
+      "type": "creation",
+      "entities": [
+        "lucas",
+        "reva",
+        "ysol",
+        "miren"
+      ],
+      "summary": "07h06 hospital, alas físicas com leitos e passagem, profissionais comandam triagem, não criação de cuidadores.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        11,
+        12,
+        14,
+        17,
+        19,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C03-PII-D550-AUTHOR-SOURCE",
+        "source_sha256_manifest": "2d55f835abf5b4c8bee896d942d22b2e29869f0da332521f2d812d4700fbe1bc",
+        "blob_sha1": "b3b165c25d99e495db3d7054f9d8af502e426af5",
+        "source_blob_sha1s": [
+          "b3b165c25d99e495db3d7054f9d8af502e426af5"
+        ],
+        "line_start": 572,
+        "line_end": 713,
+        "role": "Response",
+        "span_sha256_utf8": "04d3cc4459c255f4807b2c558e0ad5d74e1c7d68cf0b9542ec1f83c513553b5a",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "0c5f43edcbf260900887a89336967044b05052f1",
+        "full_story_sha256": "cb22f5ef25a42a220e2fa22b024c5988df68125838dc5101136241b387520dd9",
+        "immutable_manifest_blob": "0e64d773de183765532f86a2683e0fd808906331"
+      }
+    },
+    {
+      "id": "O8C-B87-008",
+      "book": "VI",
+      "day": 550,
+      "chapter_hint": 3,
+      "type": "creation",
+      "entities": [
+        "rumo",
+        "lucas",
+        "reva",
+        "ysol"
+      ],
+      "summary": "07h42 plataforma protótipo01 testada, ajustada e uso limitado autorizado; GÊNESE cria quatro adicionais por escolha Rumo, total cinco, não pessoas.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        11,
+        12,
+        13,
+        14,
+        15,
+        25,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C03-PII-D550-AUTHOR-SOURCE",
+        "source_sha256_manifest": "2d55f835abf5b4c8bee896d942d22b2e29869f0da332521f2d812d4700fbe1bc",
+        "blob_sha1": "b3b165c25d99e495db3d7054f9d8af502e426af5",
+        "source_blob_sha1s": [
+          "b3b165c25d99e495db3d7054f9d8af502e426af5"
+        ],
+        "line_start": 714,
+        "line_end": 833,
+        "role": "Response",
+        "span_sha256_utf8": "9121f2fd0eb8364271e495b1d0d03e8acc3d9b671b394a8a735a4100e5a280b8",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "0c5f43edcbf260900887a89336967044b05052f1",
+        "full_story_sha256": "cb22f5ef25a42a220e2fa22b024c5988df68125838dc5101136241b387520dd9",
+        "immutable_manifest_blob": "0e64d773de183765532f86a2683e0fd808906331"
+      }
+    },
+    {
+      "id": "O8C-B87-009",
+      "book": "VI",
+      "day": 550,
+      "chapter_hint": 3,
+      "type": "scene",
+      "entities": [
+        "varo",
+        "rhem",
+        "seron",
+        "brum_vass"
+      ],
+      "summary": "08h26 defesa norte, Rhem usa escudo substituto, Seron funções limitadas, Brum repelido vivo; civis prioritários.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        13,
+        16,
+        23,
+        24,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C03-PII-D550-AUTHOR-SOURCE",
+        "source_sha256_manifest": "2d55f835abf5b4c8bee896d942d22b2e29869f0da332521f2d812d4700fbe1bc",
+        "blob_sha1": "b3b165c25d99e495db3d7054f9d8af502e426af5",
+        "source_blob_sha1s": [
+          "b3b165c25d99e495db3d7054f9d8af502e426af5"
+        ],
+        "line_start": 834,
+        "line_end": 1013,
+        "role": "Response",
+        "span_sha256_utf8": "fb6d0f20c0d4e6d68c6c7bf7e4f1935d87631de9c647d8e1d737f6e9feffd2cf",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "0c5f43edcbf260900887a89336967044b05052f1",
+        "full_story_sha256": "cb22f5ef25a42a220e2fa22b024c5988df68125838dc5101136241b387520dd9",
+        "immutable_manifest_blob": "0e64d773de183765532f86a2683e0fd808906331"
+      }
+    },
+    {
+      "id": "O8C-B87-010",
+      "book": "VI",
+      "day": 550,
+      "chapter_hint": 3,
+      "type": "knowledge",
+      "entities": [
+        "nixa_vel",
+        "teria_solen",
+        "darien_sol",
+        "rael_fenn",
+        "iria_nemar",
+        "severo_lyn"
+      ],
+      "summary": "09h13 Sombras invalidam ordem falsa Lucas, Téria ferida leve braço, Dárien resgata Rina e reúne Ena; rota sem nome comandante.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        10,
+        13,
+        23,
+        24,
+        26,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C03-PII-D550-AUTHOR-SOURCE",
+        "source_sha256_manifest": "2d55f835abf5b4c8bee896d942d22b2e29869f0da332521f2d812d4700fbe1bc",
+        "blob_sha1": "b3b165c25d99e495db3d7054f9d8af502e426af5",
+        "source_blob_sha1s": [
+          "b3b165c25d99e495db3d7054f9d8af502e426af5"
+        ],
+        "line_start": 1014,
+        "line_end": 1119,
+        "role": "Response",
+        "span_sha256_utf8": "75d7b06acbd44f911f4f9f799c4ea0103151d1ba847b57820f2746a7d8f27155",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "0c5f43edcbf260900887a89336967044b05052f1",
+        "full_story_sha256": "cb22f5ef25a42a220e2fa22b024c5988df68125838dc5101136241b387520dd9",
+        "immutable_manifest_blob": "0e64d773de183765532f86a2683e0fd808906331"
+      }
+    },
+    {
+      "id": "O8C-B87-011",
+      "book": "VI",
+      "day": 550,
+      "chapter_hint": 3,
+      "type": "knowledge",
+      "entities": [
+        "miren",
+        "astra"
+      ],
+      "summary": "10h04 AERÚN apoio clínico e pesquisa, eco bélico distinto de oscilação antiga, Coração selado.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        15,
+        19,
+        26,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C03-PII-D550-AUTHOR-SOURCE",
+        "source_sha256_manifest": "2d55f835abf5b4c8bee896d942d22b2e29869f0da332521f2d812d4700fbe1bc",
+        "blob_sha1": "b3b165c25d99e495db3d7054f9d8af502e426af5",
+        "source_blob_sha1s": [
+          "b3b165c25d99e495db3d7054f9d8af502e426af5"
+        ],
+        "line_start": 1120,
+        "line_end": 1213,
+        "role": "Response",
+        "span_sha256_utf8": "e00d3ecee9a1367374e344470aec8565b0075d4ed8debe5bef34e43abe38eddd",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "0c5f43edcbf260900887a89336967044b05052f1",
+        "full_story_sha256": "cb22f5ef25a42a220e2fa22b024c5988df68125838dc5101136241b387520dd9",
+        "immutable_manifest_blob": "0e64d773de183765532f86a2683e0fd808906331"
+      }
+    },
+    {
+      "id": "O8C-B87-012",
+      "book": "VI",
+      "day": 550,
+      "chapter_hint": 3,
+      "type": "scene",
+      "entities": [
+        "maia",
+        "nelo",
+        "lucas"
+      ],
+      "summary": "11h32 abrigo Vale Baixo protegido, Maia ombro anterior, Nelo medo persiste sem novo ferimento.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        9,
+        10,
+        17,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C03-PII-D550-AUTHOR-SOURCE",
+        "source_sha256_manifest": "2d55f835abf5b4c8bee896d942d22b2e29869f0da332521f2d812d4700fbe1bc",
+        "blob_sha1": "b3b165c25d99e495db3d7054f9d8af502e426af5",
+        "source_blob_sha1s": [
+          "b3b165c25d99e495db3d7054f9d8af502e426af5"
+        ],
+        "line_start": 1214,
+        "line_end": 1323,
+        "role": "Response",
+        "span_sha256_utf8": "7aceb67eeace0cad63d908de4bd3b4c537a477fce64488941a801477ac9d8d7d",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "0c5f43edcbf260900887a89336967044b05052f1",
+        "full_story_sha256": "cb22f5ef25a42a220e2fa22b024c5988df68125838dc5101136241b387520dd9",
+        "immutable_manifest_blob": "0e64d773de183765532f86a2683e0fd808906331"
+      }
+    },
+    {
+      "id": "O8C-B87-013",
+      "book": "VI",
+      "day": 550,
+      "chapter_hint": 3,
+      "type": "scene",
+      "entities": [
+        "varo",
+        "brannik",
+        "sael",
+        "toran"
+      ],
+      "summary": "13h17 norte, combate e proteção de civis, Forja coopera sem substituir Legião.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        13,
+        16,
+        23,
+        24,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C03-PII-D550-AUTHOR-SOURCE",
+        "source_sha256_manifest": "2d55f835abf5b4c8bee896d942d22b2e29869f0da332521f2d812d4700fbe1bc",
+        "blob_sha1": "b3b165c25d99e495db3d7054f9d8af502e426af5",
+        "source_blob_sha1s": [
+          "b3b165c25d99e495db3d7054f9d8af502e426af5"
+        ],
+        "line_start": 1324,
+        "line_end": 1481,
+        "role": "Response",
+        "span_sha256_utf8": "3b6beace2c823eba4f01b2171ac06df62333857137b27d234dcb25d4a130abe5",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "0c5f43edcbf260900887a89336967044b05052f1",
+        "full_story_sha256": "cb22f5ef25a42a220e2fa22b024c5988df68125838dc5101136241b387520dd9",
+        "immutable_manifest_blob": "0e64d773de183765532f86a2683e0fd808906331"
+      }
+    },
+    {
+      "id": "O8C-B87-014",
+      "book": "VI",
+      "day": 550,
+      "chapter_hint": 3,
+      "type": "reader_scene",
+      "entities": [
+        "ithran_veyk",
+        "selen_korr",
+        "brum_vass",
+        "ilvar_reth"
+      ],
+      "summary": "15h02 comando exterior reconhece perdas, Brum retorna, eco não controla Lucas; reserva permanece.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        23,
+        24,
+        26,
+        27
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "READER_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C03-PII-D550-AUTHOR-SOURCE",
+        "source_sha256_manifest": "2d55f835abf5b4c8bee896d942d22b2e29869f0da332521f2d812d4700fbe1bc",
+        "blob_sha1": "b3b165c25d99e495db3d7054f9d8af502e426af5",
+        "source_blob_sha1s": [
+          "b3b165c25d99e495db3d7054f9d8af502e426af5"
+        ],
+        "line_start": 1482,
+        "line_end": 1569,
+        "role": "Response",
+        "span_sha256_utf8": "236fb3da813572fe5d500a40ec3fa4a41a89155d87376aee1e6ac4e6ca518705",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "0c5f43edcbf260900887a89336967044b05052f1",
+        "full_story_sha256": "cb22f5ef25a42a220e2fa22b024c5988df68125838dc5101136241b387520dd9",
+        "immutable_manifest_blob": "0e64d773de183765532f86a2683e0fd808906331"
+      }
+    },
+    {
+      "id": "O8C-B87-015",
+      "book": "VI",
+      "day": 550,
+      "chapter_hint": 3,
+      "type": "scene",
+      "entities": [
+        "reva",
+        "ysol",
+        "kael",
+        "lysa"
+      ],
+      "summary": "17h28 hospital e alas sob pressão, ferido torácico ainda observação, famílias deslocadas e apoio civil.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        10,
+        19,
+        20,
+        25
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C03-PII-D550-AUTHOR-SOURCE",
+        "source_sha256_manifest": "2d55f835abf5b4c8bee896d942d22b2e29869f0da332521f2d812d4700fbe1bc",
+        "blob_sha1": "b3b165c25d99e495db3d7054f9d8af502e426af5",
+        "source_blob_sha1s": [
+          "b3b165c25d99e495db3d7054f9d8af502e426af5"
+        ],
+        "line_start": 1570,
+        "line_end": 1687,
+        "role": "Response",
+        "span_sha256_utf8": "95018ef4c9af4396c138bb77dcbd6f842bc2efca21885d3d13dff4801d3eed6e",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "0c5f43edcbf260900887a89336967044b05052f1",
+        "full_story_sha256": "cb22f5ef25a42a220e2fa22b024c5988df68125838dc5101136241b387520dd9",
+        "immutable_manifest_blob": "0e64d773de183765532f86a2683e0fd808906331"
+      }
+    },
+    {
+      "id": "O8C-B87-016",
+      "book": "VI",
+      "day": 550,
+      "chapter_hint": 3,
+      "type": "scene",
+      "entities": [
+        "varo",
+        "lucas",
+        "brannik",
+        "seron",
+        "rhem"
+      ],
+      "summary": "20h41 pátio, prepara encontro escalonado300 sem deixar postos; Lucas reconhece autonomia. Encerramento textual21h36 Torre, não novo relógio de cena.",
+      "axes": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9,
+        10,
+        19,
+        25,
+        30
+      ],
+      "authority": "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED",
+      "visibility": "EDITORIAL_ONLY_NO_CHARACTER_INJECTION",
+      "promotion": false,
+      "evidence": {
+        "source": "LVI-C03-PII-D550-AUTHOR-SOURCE",
+        "source_sha256_manifest": "2d55f835abf5b4c8bee896d942d22b2e29869f0da332521f2d812d4700fbe1bc",
+        "blob_sha1": "b3b165c25d99e495db3d7054f9d8af502e426af5",
+        "source_blob_sha1s": [
+          "b3b165c25d99e495db3d7054f9d8af502e426af5"
+        ],
+        "line_start": 1688,
+        "line_end": 1880,
+        "role": "Response",
+        "span_sha256_utf8": "cfb86e92eb715db91749432dc0882c47379d24d410a5896a0c8cfaef136b6596",
+        "source_kind": "CLOSED_PROSE",
+        "archive_closure_blob": "0c5f43edcbf260900887a89336967044b05052f1",
+        "full_story_sha256": "cb22f5ef25a42a220e2fa22b024c5988df68125838dc5101136241b387520dd9",
+        "immutable_manifest_blob": "0e64d773de183765532f86a2683e0fd808906331"
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "start": 1,
+      "end": 25,
+      "role": "Response",
+      "span_sha256_utf8": "f116179910752fdd851d52fe87741b211b768113f190ae3b961bf89dba26a085",
+      "record_ids": [
+        "O8C-B87-001"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 26,
+      "end": 117,
+      "role": "Response",
+      "span_sha256_utf8": "79b28339d4efdc890be4ba9e7be2a09d2447787b1cde2d98c0c971fe0acf6b1f",
+      "record_ids": [
+        "O8C-B87-002"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 118,
+      "end": 209,
+      "role": "Response",
+      "span_sha256_utf8": "5e9a2b516b9fb3c1636bca297163d4dfc8d224253cd0e0cbc24a98166036a4be",
+      "record_ids": [
+        "O8C-B87-003"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 210,
+      "end": 313,
+      "role": "Response",
+      "span_sha256_utf8": "1b1475e740c328f2bd381037eff53de5e24cf62cbea9b9c7aa7f0f8dd81c2dd5",
+      "record_ids": [
+        "O8C-B87-004"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 314,
+      "end": 451,
+      "role": "Response",
+      "span_sha256_utf8": "3478f1669d04a105b6198ef91e6351c3cbd39064103161c80cd4ce983048d07c",
+      "record_ids": [
+        "O8C-B87-005"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 452,
+      "end": 571,
+      "role": "Response",
+      "span_sha256_utf8": "aa1b5759894f06b18cd2cf43a22db5d1fc13864582be6d4eab085672d3accdbd",
+      "record_ids": [
+        "O8C-B87-006"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 572,
+      "end": 713,
+      "role": "Response",
+      "span_sha256_utf8": "04d3cc4459c255f4807b2c558e0ad5d74e1c7d68cf0b9542ec1f83c513553b5a",
+      "record_ids": [
+        "O8C-B87-007"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 714,
+      "end": 833,
+      "role": "Response",
+      "span_sha256_utf8": "9121f2fd0eb8364271e495b1d0d03e8acc3d9b671b394a8a735a4100e5a280b8",
+      "record_ids": [
+        "O8C-B87-008"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 834,
+      "end": 1013,
+      "role": "Response",
+      "span_sha256_utf8": "fb6d0f20c0d4e6d68c6c7bf7e4f1935d87631de9c647d8e1d737f6e9feffd2cf",
+      "record_ids": [
+        "O8C-B87-009"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 1014,
+      "end": 1119,
+      "role": "Response",
+      "span_sha256_utf8": "75d7b06acbd44f911f4f9f799c4ea0103151d1ba847b57820f2746a7d8f27155",
+      "record_ids": [
+        "O8C-B87-010"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 1120,
+      "end": 1213,
+      "role": "Response",
+      "span_sha256_utf8": "e00d3ecee9a1367374e344470aec8565b0075d4ed8debe5bef34e43abe38eddd",
+      "record_ids": [
+        "O8C-B87-011"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 1214,
+      "end": 1323,
+      "role": "Response",
+      "span_sha256_utf8": "7aceb67eeace0cad63d908de4bd3b4c537a477fce64488941a801477ac9d8d7d",
+      "record_ids": [
+        "O8C-B87-012"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 1324,
+      "end": 1481,
+      "role": "Response",
+      "span_sha256_utf8": "3b6beace2c823eba4f01b2171ac06df62333857137b27d234dcb25d4a130abe5",
+      "record_ids": [
+        "O8C-B87-013"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 1482,
+      "end": 1569,
+      "role": "Response",
+      "span_sha256_utf8": "236fb3da813572fe5d500a40ec3fa4a41a89155d87376aee1e6ac4e6ca518705",
+      "record_ids": [
+        "O8C-B87-014"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 1570,
+      "end": 1687,
+      "role": "Response",
+      "span_sha256_utf8": "95018ef4c9af4396c138bb77dcbd6f842bc2efca21885d3d13dff4801d3eed6e",
+      "record_ids": [
+        "O8C-B87-015"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    },
+    {
+      "start": 1688,
+      "end": 1880,
+      "role": "Response",
+      "span_sha256_utf8": "cfb86e92eb715db91749432dc0882c47379d24d410a5896a0c8cfaef136b6596",
+      "record_ids": [
+        "O8C-B87-016"
+      ],
+      "disposition": "GROUPED_REVIEW_NOT_EXHAUSTIVE"
+    }
+  ],
+  "axis_coverage": {
+    "assessed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "represented": [
+      1,
+      2,
+      3,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19,
+      20,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ]
+  },
+  "next_line": 1881,
+  "macro_complete": true,
+  "status": "STAGING_CANDIDATE_PENDING_NATIVE",
+  "production_gate": "HOLD",
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "semantic_certification": false,
+  "independent_review": false,
+  "promotion": false
+}
