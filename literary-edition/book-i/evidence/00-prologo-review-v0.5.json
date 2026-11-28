@@ -1,0 +1,57 @@
+{
+  "schema": "literary-edition-review-v5",
+  "status": "AWAITING_AUTHOR_APPROVAL",
+  "scope": "prologue_only",
+  "previous_blob": "0ad5b38ff01d8745c6baeb7e298544d4a5fe4bf7",
+  "manuscript_blob": "835d451cb764f227d3732ef2a9a1376a3bbd59b0",
+  "manuscript_sha256": "e81b42c2b1d7d41921d5b68f4fe99e1cbd9bdaa2b4e03e63fc806ae993c3eeed",
+  "words_whitespace": 4827,
+  "pdf": {
+    "path": "book-i/reading-editions/Cronicas_O_Despertar_do_Criador_Prologo_v0.5.pdf",
+    "blob": "4e8abd0c667ec166a3a07b3d61fac35a250789c6",
+    "sha256": "a27e4d815d3d58d141a8767f88d8c8e6a6a66dabda76d56efb2409d7d61881d9",
+    "bytes": 103742,
+    "pages": 27,
+    "format": "A5",
+    "font": "Times-Roman/Times-Italic standard PDF fonts",
+    "verification": "PDF local and GitHub exact Git blob match; text extraction equals manuscript after stripping headings, scene markers, pagination and whitespace; all pages rendered in PyMuPDF; contact sheet and cover/opening/closing inspected; no extracted text blocks outside bounds"
+  },
+  "sources": {
+    "engine_commit": "1b063d05c1acaa86b2f237f987804af59dbeccd6",
+    "archive_commit": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+    "historical_blob": "d64d5db0e33a1c0a6a6a6d14a8be44709a3bbac2",
+    "engine_guidance": "docs/r35-literary-refinement.md",
+    "contract": "literary-edition/EDITORIAL_CONTRACT.md",
+    "previous_review": "book-i/evidence/00-prologo-review-v0.4.json"
+  },
+  "review": [
+    {
+      "axis": "cadence and continuity",
+      "change": "clinic appointment initiated earlier, Saturday ride contingent on medical clearance; remove repeated mountain wording"
+    },
+    {
+      "axis": "emotion",
+      "change": "Helena voice message reappears as unfinished farewell; preserve friends and future plans"
+    },
+    {
+      "axis": "worldbuilding and human stakes",
+      "change": "guard, wounded companion, merchant and child reunite at evacuation; war outcome remains unknown"
+    },
+    {
+      "axis": "cosmology",
+      "change": "elder explicitly recognizes worthy locals; avoids collective corruption premise; identity, dates, mechanisms and fate remain unresolved"
+    },
+    {
+      "axis": "historical semantics",
+      "change": "verified first-day historical consolidation: unique CREATION, approximate 5% after battle, 300 created, armor, backpack, chief alive, unknown losses; prologue stops before battle and makes no changes to those outcomes or limits. The author-approved second chance overrides the five-skill menu in literary edition only."
+    }
+  ],
+  "limitations": [
+    "Manual review, no independent certification or engine execution",
+    "Full future semantic reconciliation and original screenshots pending",
+    "Chapter 1 v0.2 not revised or approved; review seam after prologue approval",
+    "Original earlier PDFs v0.3 and v0.4 were delivered in chat; their exact binaries were not archived in GitHub; their textual manuscripts and reports are preserved",
+    "New fictional details and aged bearer motivations remain literary-only"
+  ],
+  "next": "Receive explicit author feedback; if approved, record approval with exact manuscript blob and PDF blob, then prepare chapter 1 using historical sources. Otherwise revise prologue only."
+}
