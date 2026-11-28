@@ -1,0 +1,1606 @@
+{
+  "schema": "OMEGA_CYCLE_0106_0110_REVIEW_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "previous_checkpoint_blob": "d24d16494b0a1685ff6cea98d06c0761150dc7c6",
+  "previous_cycle_blob": "1207e0e4144dc55f2e6d0c8079783e08e02f7c1b",
+  "book_v_boundary_blob": "2a4f9816734f2051aa7d60fe19931b09776cc360",
+  "book_vi_opening_blob": "8c6c44a7dd2e10254f50810eec92f025b9a2bed4",
+  "prior_chronology_blob": "b3107747317196af16bd8902af1f6b1c108d0132",
+  "r2_authority_preflight_blob": "34c554514a03987a60c22de6a2ba46743ea83d54",
+  "prior_overlays": [
+    {
+      "id": "D564_NAERYN",
+      "status": "CANTICO_EQUINOCIO_FIRST_IN_ABOBADA_NOT_FIRST_LIFETIME_ECOLOGY_AND_CONSENT",
+      "promotion": false
+    },
+    {
+      "id": "D565_NIRAVEN",
+      "status": "DREAM_NOT_EVENT_NEW_SOUL_NOT_RESURRECTION_ANCESTRAL_DEAD_NO_HEIGHT_OR_CAUSAL_ORIGIN_CERTIFIED",
+      "promotion": false
+    },
+    {
+      "id": "D566_VIRANDOR",
+      "status": "INDEPENDENT_GUARDIAN_PHYSICAL_FLIGHT_AERUN_DRAGON_DISTINCT_NAME_UNPRONOUNCED_NO_POWER_NERF",
+      "promotion": false
+    },
+    {
+      "id": "D567_PARALLEL_CLOCKS",
+      "status": "SOURCE_ORDER_15H07_RENSHAR_TO_11H28_CAMPINA_ADVISORY_ONLY_NO_0085_EXTENSION",
+      "promotion": false
+    },
+    {
+      "id": "D567_RENSHAR",
+      "status": "VELKAR_VICTORY_LOCAL_NO_NEUTRALIZATION_GENESIS_LUCAS_UNINFORMED",
+      "promotion": false
+    },
+    {
+      "id": "D567_PREPARATION",
+      "status": "REAL_ARGOS_RETURN_NAIRA_COMMAND_LOCAL_PREPARATION_NOT_CONFERENCE_TREATY_OR_FLEET",
+      "promotion": false
+    },
+    {
+      "id": "D568_BRIDGE",
+      "status": "REPRODUCIBLE_TECHNICAL_MECHANISM_AND_PHYSICAL_MODIFIED_SOCKET_AUTHOR_DATE_PURPOSE_UNKNOWN_SIX_GAP_NOT_EQUIVALENCE",
+      "promotion": false
+    },
+    {
+      "id": "D568_PONTE_DOS_QUE_VOLTAM",
+      "status": "CONSENT_LOCAL_DESIGN_REAL_CREATION_PEDESTRIANS_AUTHORIZED_HEAVY_LOADS_CONDITIONAL_MEMORIAL",
+      "promotion": false
+    },
+    {
+      "id": "D568_AVELNA",
+      "status": "CIVIL_VOICE_ONLY_NO_MILITARY_ALLEGIANCE_OCCUPATION_NOT_LIBERATION",
+      "promotion": false
+    },
+    {
+      "id": "D568_VARKHESS",
+      "status": "LIMITED_RECON_FORMATION_ACTUAL_DEPARTURE_NO_COUNT_OR_260_FLEET",
+      "promotion": false
+    },
+    {
+      "id": "D568_SYSTEM",
+      "status": "METAPHORICAL_REWARD_NO_POWER_UNLOCK_TALIS_UNKNOWN_BOTH_FRONTS_ISOLATED",
+      "promotion": false
+    },
+    {
+      "id": "D569_R2_PREFLIGHT",
+      "status": "AUTHORITY_ONLY_R1_EXCLUDED_NO_0106_RECOVERY_SCOPE_NOT_PERMANENT_RULE",
+      "promotion": false
+    }
+  ],
+  "prior_controls": [
+    "Inherit all earlier pinned controls cumulatively through verify_book_vi_100. No changes to main, archive, official queue or 22 unresolved markers, canon or production.",
+    "Separate author closure from entry and future plans; literal order vs chronology; D567 single-day parallel rewind only, no expansion of D546–548 multiday exception; no silent resolution of prior D545 anchors or D550 closure.",
+    "No new GÊNESE limit, reward or origin; no resurrection; living Níraven autonomous; dragon AERÚN distinct from Institute; NÓX and RUMO free singular, SYSTEM blue distinct.",
+    "No remote POV injection. Renshar, Varkhess and Velkar remain reader-only; Caedren independent; conference not held, Talis unlocated.",
+    "D568 technical cause not perpetrator, sétima posição not equivalence; consent and local authorship, pedestrians only initial authorization; do not invent cargo homologation or aircraft flight number.",
+    "D569 feedback is scoped revision request; R1 unpromoted and cannot reopen, R2 metadata custody only, no semantic or UI parity certification, no 0106 until approved native cycle and readback."
+  ],
+  "macros": [
+    {
+      "macro": 106,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0106-01.json",
+      "blob": "b4718b0f4c1f9caca2d5977f4fc59a11db288bf6",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0106-closure-pending.json",
+      "checkpoint_blob": "c7197a2b645e133378a18f41ab14f439cbd78573",
+      "records": 14,
+      "lines": 2740,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "source_provenance": {
+        "kind": "CLOSED_PROSE",
+        "episode_id": "LVI-C07-PI-D569-R2-AUTHOR-SOURCE",
+        "sequence": 40,
+        "previous_episode_id": "LVI-C06-PV-D568-AUTHOR-SOURCE",
+        "previous_head_sha256": "42ab778c428246245db862c9238882019ef71ea9d60705b47155a09481b64aa3",
+        "closure_blob": "3fd10557feba02e99ab94aa5e6cb644cfee91ca1",
+        "draft_blob": "44be6c9b58cb0871d4b565b018dfdd4bee7dca34",
+        "immutable_manifest_blob": "f84a86fb8081e4b155249a03544faff7bf260b13",
+        "narrative_blob": "ae8456740e3a2e2f8481f6590c2c169380c19a41",
+        "full_story_sha256": "9df43a78e3b8e3e612ba9a2b5e704bb85833454488bfa5602bac983a03988a92",
+        "prose_sha256": "78d122ee803795ac7e69562eb4ed3d7295ba2cdd02b39612ad0a5564eb5cb07e",
+        "prose_lines": 2740,
+        "role_adapter": "Response for native receipt compatibility only; closure authority separate",
+        "closure_event_count": 12,
+        "closure_knowledge_count": 12,
+        "reviewed_events_blob": "69a75dd604c87014504334eea1bf4ef06108181d",
+        "reviewed_knowledge_blob": "3f04ed3d6cdce6e968d3850be12a32c31a640eb8",
+        "choice_sha256": "af20eb18dfcb10541abdee00d6ba7d11e30848aab7f32d9994c265dcac2334ac",
+        "chosen_option": 4,
+        "book_closed": false,
+        "editorial_header": "  <text color=\"secondary\" size=\"xs\" weight=\"medium\">ESCOLHA 4 · ESPECIAL · REVISÃO AUTORAL R2</text>",
+        "ratification_kind": null
+      },
+      "continuity": {
+        "previous_episode": "LVI-C06-PV-D568-AUTHOR-SOURCE",
+        "previous_day": 568,
+        "previous_clock": "22h36",
+        "first_day": 569,
+        "first_clock": "06h08",
+        "end_day": 569,
+        "end_clock": "22h27",
+        "end_location": "Torre do Criador privada em Três Arcos (Lucas/Miren); POVs Kheran, Halvern e Thalor",
+        "last_scene_clock": "22h27",
+        "explicit_clocks": [
+          {
+            "line": 30,
+            "day": 569,
+            "hour": "06h08"
+          },
+          {
+            "line": 186,
+            "day": 569,
+            "hour": "07h31"
+          },
+          {
+            "line": 383,
+            "day": 569,
+            "hour": "08h22"
+          },
+          {
+            "line": 559,
+            "day": 569,
+            "hour": "10h04"
+          },
+          {
+            "line": 1116,
+            "day": 569,
+            "hour": "11h42"
+          },
+          {
+            "line": 1230,
+            "day": 569,
+            "hour": "12h26"
+          },
+          {
+            "line": 1396,
+            "day": 569,
+            "hour": "15h56"
+          },
+          {
+            "line": 1679,
+            "day": 569,
+            "hour": "17h48"
+          },
+          {
+            "line": 1967,
+            "day": 569,
+            "hour": "19h03"
+          },
+          {
+            "line": 2256,
+            "day": 569,
+            "hour": "20h14"
+          },
+          {
+            "line": 2370,
+            "day": 569,
+            "hour": "21h34"
+          },
+          {
+            "line": 2582,
+            "day": 569,
+            "hour": "22h27"
+          }
+        ],
+        "scene_clock_count": 12,
+        "source_order_rewinds": [],
+        "chronology_exception_0085_extended": false
+      }
+    },
+    {
+      "macro": 107,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0107-01.json",
+      "blob": "7ddc94cbdaf8cdbc465d33232dd06bc2c3b256fe",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0107-closure-pending.json",
+      "checkpoint_blob": "7be3103f16f2d1272b60cb8b71e296528457b8c2",
+      "records": 15,
+      "lines": 2687,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "source_provenance": {
+        "kind": "CLOSED_PROSE",
+        "episode_id": "LVI-C07-PII-D570-AUTHOR-SOURCE",
+        "sequence": 41,
+        "previous_episode_id": "LVI-C07-PI-D569-R2-AUTHOR-SOURCE",
+        "previous_head_sha256": "6be2e6ca41440687348b422057e0601fd773d862466f4c1263cb606f713ae101",
+        "closure_blob": "a5a38bc2aeca5a8b67af4fc3f80213b502b6e82f",
+        "draft_blob": "1a90f39832b1549688fec73fcd06ce573080db38",
+        "immutable_manifest_blob": "86b2086845abe0ec4da275cf3bd7a30ef74da6cb",
+        "narrative_blob": "917fcf0fec0f9e6aa2e9e8ee7a8be5b28e706b0a",
+        "full_story_sha256": "77ddfaa4b393b035b4398ed9c2795aa9a2c3db64088783ee984487ef86349ba0",
+        "prose_sha256": "039775dc0dd6e9d930ad6c0ea2142f23e4d3f306b0812eb5f58cc07487371962",
+        "prose_lines": 2687,
+        "role_adapter": "Response for native receipt compatibility only; closure authority separate",
+        "closure_event_count": 13,
+        "closure_knowledge_count": 13,
+        "reviewed_events_blob": "9b42d46e3fa12f798d2271db4c12c6c007122e2c",
+        "reviewed_knowledge_blob": "b67f13ae8f29e76061324ec7a08fe946d3a629a9",
+        "choice_sha256": "5e67dd964b2d5d14995533aa68ad5ca643604148a205bc0c8227123d4fd4a585",
+        "chosen_option": 4,
+        "book_closed": false,
+        "editorial_header": "  <text color=\"secondary\" size=\"xs\" weight=\"medium\">ESCOLHA 4 · ESPECIAL · HORIZONTE CONTINENTAL</text>",
+        "ratification_kind": null
+      },
+      "continuity": {
+        "previous_episode": "LVI-C07-PI-D569-R2-AUTHOR-SOURCE",
+        "previous_day": 569,
+        "previous_clock": "22h27",
+        "first_day": 570,
+        "first_clock": "05h46",
+        "end_day": 570,
+        "end_clock": "22h09",
+        "end_location": "Torre do Criador (Lucas/Miren); POVs Renshar e Vale dos Ofícios Baixos",
+        "last_scene_clock": "22h09",
+        "explicit_clocks": [
+          {
+            "line": 31,
+            "day": 570,
+            "hour": "05h46"
+          },
+          {
+            "line": 215,
+            "day": 570,
+            "hour": "07h19"
+          },
+          {
+            "line": 469,
+            "day": 570,
+            "hour": "08h17"
+          },
+          {
+            "line": 586,
+            "day": 570,
+            "hour": "09h26"
+          },
+          {
+            "line": 838,
+            "day": 570,
+            "hour": "11h18"
+          },
+          {
+            "line": 1060,
+            "day": 570,
+            "hour": "12h57"
+          },
+          {
+            "line": 1227,
+            "day": 570,
+            "hour": "13h36"
+          },
+          {
+            "line": 1569,
+            "day": 570,
+            "hour": "15h08"
+          },
+          {
+            "line": 1766,
+            "day": 570,
+            "hour": "18h06"
+          },
+          {
+            "line": 2134,
+            "day": 570,
+            "hour": "19h32"
+          },
+          {
+            "line": 2211,
+            "day": 570,
+            "hour": "20h13"
+          },
+          {
+            "line": 2385,
+            "day": 570,
+            "hour": "20h56"
+          },
+          {
+            "line": 2459,
+            "day": 570,
+            "hour": "22h09"
+          }
+        ],
+        "scene_clock_count": 13,
+        "source_order_rewinds": [],
+        "chronology_exception_0085_extended": false
+      }
+    },
+    {
+      "macro": 108,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0108-01.json",
+      "blob": "f25d502d240ce30dd634b6873bf5c9ac12492224",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0108-closure-pending.json",
+      "checkpoint_blob": "71a2890119e389c54dac6a11b17d0854906ad160",
+      "records": 16,
+      "lines": 3143,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "source_provenance": {
+        "kind": "CLOSED_PROSE",
+        "episode_id": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+        "sequence": 42,
+        "previous_episode_id": "LVI-C07-PII-D570-AUTHOR-SOURCE",
+        "previous_head_sha256": "ba12a7e257c5fc9f19deaefed9014ba0b39c0cf868a06f62fb3a9072842614b6",
+        "closure_blob": "8d7f6a3e60d504b97e22f34d92af169037f9baff",
+        "draft_blob": "0c639291b830d540b4fc0795f0cc6f8e26ff38dd",
+        "immutable_manifest_blob": "5aa6f9abdc13dceb1e038e7e990bdd23b2f987ed",
+        "narrative_blob": "6c9a48b5c7c1f4ad3fdd17a385435e5a230be334",
+        "full_story_sha256": "aa8df500dd4cba4a625cf8351c56c1dd40e91def1689182a6f21242cf1d1dd4f",
+        "prose_sha256": "76f34c30f0ee616b4366aba653927fe24fe90f6fa4d33b143e96e9d5fa9dfddd",
+        "prose_lines": 3143,
+        "role_adapter": "Response for native receipt compatibility only; closure authority separate",
+        "closure_event_count": 13,
+        "closure_knowledge_count": 13,
+        "reviewed_events_blob": "8aa4c099212175e2a5a98788f103af62a479ef0b",
+        "reviewed_knowledge_blob": "2a73e6e1a305a155a5bc17cdc439f43751234466",
+        "choice_sha256": "825c730e3058053befac785ee99da2a85be85a5ea3354a78d452589f6e463b95",
+        "chosen_option": 4,
+        "book_closed": false,
+        "editorial_header": "  <text color=\"secondary\" size=\"xs\" weight=\"medium\">ESCOLHA 4 · ESPECIAL · ESTRADAS QUE DECIDEM DESTINOS</text>",
+        "ratification_kind": null
+      },
+      "continuity": {
+        "previous_episode": "LVI-C07-PII-D570-AUTHOR-SOURCE",
+        "previous_day": 570,
+        "previous_clock": "22h09",
+        "first_day": 571,
+        "first_clock": "06h12",
+        "end_day": 571,
+        "end_clock": "23h34",
+        "end_location": "Torre do Criador (Lucas/Miren); POVs autônomos Halvern, Renshar, Thalor, Vale dos Ofícios Baixos",
+        "last_scene_clock": "23h34",
+        "explicit_clocks": [
+          {
+            "line": 33,
+            "day": 571,
+            "hour": "06h12"
+          },
+          {
+            "line": 215,
+            "day": 571,
+            "hour": "08h03"
+          },
+          {
+            "line": 449,
+            "day": 571,
+            "hour": "09h27"
+          },
+          {
+            "line": 556,
+            "day": 571,
+            "hour": "10h08"
+          },
+          {
+            "line": 742,
+            "day": 571,
+            "hour": "11h36"
+          },
+          {
+            "line": 912,
+            "day": 571,
+            "hour": "13h07"
+          },
+          {
+            "line": 1205,
+            "day": 571,
+            "hour": "14h18"
+          },
+          {
+            "line": 1425,
+            "day": 571,
+            "hour": "15h41"
+          },
+          {
+            "line": 1861,
+            "day": 571,
+            "hour": "17h19"
+          },
+          {
+            "line": 1972,
+            "day": 571,
+            "hour": "18h02"
+          },
+          {
+            "line": 2260,
+            "day": 571,
+            "hour": "19h21"
+          },
+          {
+            "line": 2500,
+            "day": 571,
+            "hour": "20h46"
+          },
+          {
+            "line": 2645,
+            "day": 571,
+            "hour": "22h17"
+          },
+          {
+            "line": 2939,
+            "day": 571,
+            "hour": "23h06"
+          },
+          {
+            "line": 3049,
+            "day": 571,
+            "hour": "23h34"
+          }
+        ],
+        "scene_clock_count": 15,
+        "source_order_rewinds": [],
+        "chronology_exception_0085_extended": false
+      }
+    },
+    {
+      "macro": 109,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0109-01.json",
+      "blob": "7dd09f043b5da3ead724de06b0b90bed272699fc",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0109-closure-pending.json",
+      "checkpoint_blob": "e1415f4aa824e40e8650f871957c8a02778ed9d6",
+      "records": 10,
+      "lines": 925,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        22,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "source_provenance": {
+        "kind": "CLOSED_PROSE",
+        "episode_id": "LVI-C07-PIV-D572-AUTHOR-SOURCE",
+        "sequence": 43,
+        "previous_episode_id": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+        "previous_head_sha256": "e15cd1c0080d9ebe46a4ea51598448b139cecc5a16abb259a4ae4335fc75c0bd",
+        "closure_blob": "46d13e2146af0be336ab1c3070aaf3d75aea9339",
+        "draft_blob": "4319ea41a428826fe6290cd1d2a99fb46b6ca5bd",
+        "immutable_manifest_blob": "88291470ae49b47f4114cfd3b8ac61fdfa1695de",
+        "narrative_blob": "4fee87e87f7d11fb0e9e881f7599305be4d77782",
+        "full_story_sha256": "45152dfce55825549899e82797aadb1351643cb0e3e8bf903ae5ea5af8b8cbe6",
+        "prose_sha256": "ecfaa7e959917b82e0a8fb167921d141c32e5d7c2afcc8bd0fbba1e55015174b",
+        "prose_lines": 925,
+        "role_adapter": "Response for native receipt compatibility only; closure authority separate",
+        "closure_event_count": 9,
+        "closure_knowledge_count": 9,
+        "reviewed_events_blob": "389065b33be732c13e0f39e269c7f814ba8f21c2",
+        "reviewed_knowledge_blob": "d6bdfe198179d02d2b1d31465acd04f4cfcc896a",
+        "choice_sha256": "26535a8c40891d532dd57d6138f08b736bc8e942fc9b6220caba32b5ceda9b79",
+        "chosen_option": 4,
+        "book_closed": false,
+        "editorial_header": "  <text color=\"secondary\" size=\"xs\">ESCOLHA 4 · ESPECIAL</text>",
+        "ratification_kind": null
+      },
+      "continuity": {
+        "previous_episode": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+        "previous_day": 571,
+        "previous_clock": "23h34",
+        "first_day": 572,
+        "first_clock": "07h12",
+        "end_day": 572,
+        "end_clock": "22h41",
+        "end_location": "Torre do Criador (Lucas/Miren); POVs Thalor, Renshar, Vale dos Ofícios Baixos",
+        "last_scene_clock": "22h41",
+        "explicit_clocks": [
+          {
+            "line": 24,
+            "day": 572,
+            "hour": "07h12"
+          },
+          {
+            "line": 112,
+            "day": 572,
+            "hour": "10h04"
+          },
+          {
+            "line": 214,
+            "day": 572,
+            "hour": "13h28"
+          },
+          {
+            "line": 342,
+            "day": 572,
+            "hour": "15h16"
+          },
+          {
+            "line": 386,
+            "day": 572,
+            "hour": "16h09"
+          },
+          {
+            "line": 484,
+            "day": 572,
+            "hour": "17h42"
+          },
+          {
+            "line": 632,
+            "day": 572,
+            "hour": "18h36"
+          },
+          {
+            "line": 712,
+            "day": 572,
+            "hour": "20h05"
+          },
+          {
+            "line": 814,
+            "day": 572,
+            "hour": "22h41"
+          }
+        ],
+        "scene_clock_count": 9,
+        "source_order_rewinds": [],
+        "chronology_exception_0085_extended": false
+      }
+    },
+    {
+      "macro": 110,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0110-01.json",
+      "blob": "a2ea2399b53625696ea1f6990591a7b3daf399f0",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0110-closure-pending.json",
+      "checkpoint_blob": "2a683ee0d7252d4b81f928192814eb91cf495eb1",
+      "records": 12,
+      "lines": 878,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "source_provenance": {
+        "kind": "CLOSED_PROSE",
+        "episode_id": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+        "sequence": 44,
+        "previous_episode_id": "LVI-C07-PIV-D572-AUTHOR-SOURCE",
+        "previous_head_sha256": "2f5b4c43afd166e2481d5b12002b69101bb8365c8aa088f5b6f25e8b7e5d25fb",
+        "closure_blob": "d5f1b3be9557acaff7aa0884438a4ec69dcb2a7e",
+        "draft_blob": "c58b5bb35332aa22e8265bb5a7ca5d86550bf139",
+        "immutable_manifest_blob": "5a7ae78d596c91b4b97626a432dfee29b77c37ea",
+        "narrative_blob": "93afd644479e7b6b5780aafa97789ba2f0d010b7",
+        "full_story_sha256": "aa2efa60b399a48742acf837cacb46b616574f5945fee9afdafa183bccf72646",
+        "prose_sha256": "ad8f716fe7395e5d03ca9ae7c9ecf6973cbcb768e1b926dd550e3717381c272a",
+        "prose_lines": 878,
+        "role_adapter": "Response for native receipt compatibility only; closure authority separate",
+        "closure_event_count": 8,
+        "closure_knowledge_count": 8,
+        "reviewed_events_blob": "5aa46b6f92c3a8661f69163dcbc6e323097409ee",
+        "reviewed_knowledge_blob": "2f3c40394c506618f85412e0ab82d4317e28b86c",
+        "choice_sha256": "0f8d8a4ddcafb9e5d6c1e1666789a7be3fcb81f73f6244b23253b0e8b89430dc",
+        "chosen_option": 4,
+        "book_closed": false,
+        "editorial_header": "  <caption>ESCOLHA 4 · ESPECIAL · CLÍMAX DO CAPÍTULO</caption>",
+        "ratification_kind": null
+      },
+      "continuity": {
+        "previous_episode": "LVI-C07-PIV-D572-AUTHOR-SOURCE",
+        "previous_day": 572,
+        "previous_clock": "22h41",
+        "first_day": 573,
+        "first_clock": "06h48",
+        "end_day": 573,
+        "end_clock": "23h12",
+        "end_location": "Torre do Criador (Lucas/Miren); Halvern, Thalor, Renshar, Vale dos Ofícios Baixos",
+        "last_scene_clock": "23h12",
+        "explicit_clocks": [
+          {
+            "line": 24,
+            "day": 573,
+            "hour": "06h48"
+          },
+          {
+            "line": 56,
+            "day": 573,
+            "hour": "07h39"
+          },
+          {
+            "line": 130,
+            "day": 573,
+            "hour": "09h18"
+          },
+          {
+            "line": 220,
+            "day": 573,
+            "hour": "11h36"
+          },
+          {
+            "line": 254,
+            "day": 573,
+            "hour": "12h49"
+          },
+          {
+            "line": 380,
+            "day": 573,
+            "hour": "15h14"
+          },
+          {
+            "line": 428,
+            "day": 573,
+            "hour": "16h02"
+          },
+          {
+            "line": 544,
+            "day": 573,
+            "hour": "16h48"
+          },
+          {
+            "line": 590,
+            "day": 573,
+            "hour": "18h11"
+          },
+          {
+            "line": 622,
+            "day": 573,
+            "hour": "19h37"
+          },
+          {
+            "line": 712,
+            "day": 573,
+            "hour": "21h06"
+          },
+          {
+            "line": 798,
+            "day": 573,
+            "hour": "23h12"
+          }
+        ],
+        "scene_clock_count": 12,
+        "source_order_rewinds": [],
+        "chronology_exception_0085_extended": false
+      }
+    }
+  ],
+  "findings": [
+    {
+      "id": "O8C-B106-001",
+      "source": "LVI-C07-PI-D569-R2-AUTHOR-SOURCE",
+      "range": [
+        1,
+        27
+      ],
+      "sha256": "b3e34350d1f271381a6928ddeba0669d0161698fe4bf735e38aa0d9211345622",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B106-002",
+      "source": "LVI-C07-PI-D569-R2-AUTHOR-SOURCE",
+      "range": [
+        28,
+        183
+      ],
+      "sha256": "3774058dda9dd02254619c7289d2063d8676d24cbb6ada842285e7dc35e35583",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B106-003",
+      "source": "LVI-C07-PI-D569-R2-AUTHOR-SOURCE",
+      "range": [
+        184,
+        380
+      ],
+      "sha256": "f6a2f77d469ddd4fa2d8db2fb038c05b8c776dfbe95263833471ef81da30f283",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B106-004",
+      "source": "LVI-C07-PI-D569-R2-AUTHOR-SOURCE",
+      "range": [
+        381,
+        556
+      ],
+      "sha256": "e29e069ca6424893b1c2d21aa66d0b1486e8c5629eda1437ac96ef9c0948ae48",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B106-005",
+      "source": "LVI-C07-PI-D569-R2-AUTHOR-SOURCE",
+      "range": [
+        557,
+        1113
+      ],
+      "sha256": "6dbb7b3650b64c251cbb93d0baee345f63839e1f1b61c70fb9a755e33699b3ee",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B106-006",
+      "source": "LVI-C07-PI-D569-R2-AUTHOR-SOURCE",
+      "range": [
+        1114,
+        1227
+      ],
+      "sha256": "a894dadf27949f93da05c19194bed6d3131ff46f088129eb1bc8e1b646e435b7",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B106-007",
+      "source": "LVI-C07-PI-D569-R2-AUTHOR-SOURCE",
+      "range": [
+        1228,
+        1393
+      ],
+      "sha256": "13d8fbf68e6137ff2bb40b8c2342e404072919cbf08db672345cf9af3fdba08a",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B106-008",
+      "source": "LVI-C07-PI-D569-R2-AUTHOR-SOURCE",
+      "range": [
+        1394,
+        1515
+      ],
+      "sha256": "4df162f5f05c146a251b952e5bd01a32730d3e0982fa1020a1df9bb74c7aa678",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B106-009",
+      "source": "LVI-C07-PI-D569-R2-AUTHOR-SOURCE",
+      "range": [
+        1516,
+        1676
+      ],
+      "sha256": "9e9b820b591e3ae643ae5903ff60f366e19c2008e9088ce3bcec5353dc3f01c2",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B106-010",
+      "source": "LVI-C07-PI-D569-R2-AUTHOR-SOURCE",
+      "range": [
+        1677,
+        1964
+      ],
+      "sha256": "c4ed9fcad88c182d9a8b3d88a15a624d3d9941c861ae577b1635dcb6be398401",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B106-011",
+      "source": "LVI-C07-PI-D569-R2-AUTHOR-SOURCE",
+      "range": [
+        1965,
+        2253
+      ],
+      "sha256": "b863de7a3ed663a6d2e1fdd50f74214e94cccab1f02370b6a3d022d315cec066",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B106-012",
+      "source": "LVI-C07-PI-D569-R2-AUTHOR-SOURCE",
+      "range": [
+        2254,
+        2367
+      ],
+      "sha256": "3b37e353d3a92842fc484139fe551afdbdb65ab4cb14369eb792170111c1b454",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B106-013",
+      "source": "LVI-C07-PI-D569-R2-AUTHOR-SOURCE",
+      "range": [
+        2368,
+        2579
+      ],
+      "sha256": "76108c70f997db6f200cbc1ff2a2b1030d63087fb7402662b9d5bf1f1daef2f0",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B106-014",
+      "source": "LVI-C07-PI-D569-R2-AUTHOR-SOURCE",
+      "range": [
+        2580,
+        2740
+      ],
+      "sha256": "405cba6fecedf1cf77e4a7e31c1782fbb9de4fb64020f4d42e8e3438ad1ef09c",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B107-001",
+      "source": "LVI-C07-PII-D570-AUTHOR-SOURCE",
+      "range": [
+        1,
+        28
+      ],
+      "sha256": "f8d6971f8b97053557b21110aa11a021fd91dd819a8b1e68048ba305da977891",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B107-002",
+      "source": "LVI-C07-PII-D570-AUTHOR-SOURCE",
+      "range": [
+        29,
+        212
+      ],
+      "sha256": "4e4515b8e5e7360ae30b448c63af89b528e751833f081d43c0957b65a1a4d97c",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B107-003",
+      "source": "LVI-C07-PII-D570-AUTHOR-SOURCE",
+      "range": [
+        213,
+        466
+      ],
+      "sha256": "afd1867133170deb45e7171cc492e3fd82d58073f0f6911529d2f99c26a4dfc2",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B107-004",
+      "source": "LVI-C07-PII-D570-AUTHOR-SOURCE",
+      "range": [
+        467,
+        583
+      ],
+      "sha256": "793f8682b05db00cefe0f0362895fdf3316c4b780859a728b0a0b36f1bb48e25",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B107-005",
+      "source": "LVI-C07-PII-D570-AUTHOR-SOURCE",
+      "range": [
+        584,
+        835
+      ],
+      "sha256": "9de7d1fd4e1bbca8f18141e23600a087b28d37b53fa9fbe7d98775cd54f3fd2b",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B107-006",
+      "source": "LVI-C07-PII-D570-AUTHOR-SOURCE",
+      "range": [
+        836,
+        1057
+      ],
+      "sha256": "deed341224b1e11b31127f7ccabd5c15acae9ce6588c08a1ccf05fdbf80f7beb",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B107-007",
+      "source": "LVI-C07-PII-D570-AUTHOR-SOURCE",
+      "range": [
+        1058,
+        1224
+      ],
+      "sha256": "29daa5b04dceb16507b16e03f295f4077fc5f19316be78b9376b9c32abd06340",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B107-008",
+      "source": "LVI-C07-PII-D570-AUTHOR-SOURCE",
+      "range": [
+        1225,
+        1430
+      ],
+      "sha256": "ad5c05b82fdd2d93d46f08ece0a32f49af64363ab4a365db18434dda1975f46e",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B107-009",
+      "source": "LVI-C07-PII-D570-AUTHOR-SOURCE",
+      "range": [
+        1431,
+        1566
+      ],
+      "sha256": "c2e362f94f2628e485ba93e18ac7d69e61b9487df6e28ff6ba2ff53909ef8f0b",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B107-010",
+      "source": "LVI-C07-PII-D570-AUTHOR-SOURCE",
+      "range": [
+        1567,
+        1763
+      ],
+      "sha256": "caee31d518b181ed2ad63e7c2ecac438c175c1590097ec963875ff33386f2f20",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B107-011",
+      "source": "LVI-C07-PII-D570-AUTHOR-SOURCE",
+      "range": [
+        1764,
+        2131
+      ],
+      "sha256": "d229ab362f7f87d2b4e537938d8b4db3181d60cd4e7805069306ed076f0a270e",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B107-012",
+      "source": "LVI-C07-PII-D570-AUTHOR-SOURCE",
+      "range": [
+        2132,
+        2208
+      ],
+      "sha256": "0283fd25b10ae2589c139f407d2d8e39002735bef77ce1fd025648575ecd79c0",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B107-013",
+      "source": "LVI-C07-PII-D570-AUTHOR-SOURCE",
+      "range": [
+        2209,
+        2382
+      ],
+      "sha256": "0690b26a1b532a188160d083eccee5aa1464c0fe66074259537a8ca671fd2c19",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B107-014",
+      "source": "LVI-C07-PII-D570-AUTHOR-SOURCE",
+      "range": [
+        2383,
+        2456
+      ],
+      "sha256": "b572c7d1834193c5db624a20abdafaa55ebba85a767fd68bbbd14e0f5026f8c3",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B107-015",
+      "source": "LVI-C07-PII-D570-AUTHOR-SOURCE",
+      "range": [
+        2457,
+        2687
+      ],
+      "sha256": "be50bc5ede6db81b1911136b40d87a7deb24f5df662ba18ed098d48172011cec",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B108-001",
+      "source": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+      "range": [
+        1,
+        30
+      ],
+      "sha256": "0306ba72b2b2a88db48bed464187578b32bfd0df6b1125fac43c4741d2f17964",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B108-002",
+      "source": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+      "range": [
+        31,
+        212
+      ],
+      "sha256": "37e7267e7e777883be1edfeb2f4df5a46a6ba6de9ef46c782d94c0aa575b7ec4",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B108-003",
+      "source": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+      "range": [
+        213,
+        446
+      ],
+      "sha256": "221f5444e82821efca86830191d868370be30044d22de447a903aec2d6e6c4b6",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B108-004",
+      "source": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+      "range": [
+        447,
+        553
+      ],
+      "sha256": "c084586e7175c2b4b84874635854a4e89080b7997835d9a4ef400dfe20ba63d7",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B108-005",
+      "source": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+      "range": [
+        554,
+        739
+      ],
+      "sha256": "33b0afcde6dfced26c1768224b80a96f16195fd3811d7cc342ce40fa6117b820",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B108-006",
+      "source": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+      "range": [
+        740,
+        909
+      ],
+      "sha256": "608ffe00fc58da037116e101c1ee8e7daf1043baf3a22de58d10e4fec9e05abb",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B108-007",
+      "source": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+      "range": [
+        910,
+        1202
+      ],
+      "sha256": "1de9c758d0c5db39b887705fcfa597b3446adef074c506d65d817896cc74e982",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B108-008",
+      "source": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+      "range": [
+        1203,
+        1422
+      ],
+      "sha256": "365a9e5044d7f800ba5513fb3a08065d79ab1d4a0cc79752a36ddaf081c1c9ca",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B108-009",
+      "source": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+      "range": [
+        1423,
+        1858
+      ],
+      "sha256": "a202a4ca45b9551e83ea28039f735f86ecff30503e2b4424dbef5107a2e914a8",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B108-010",
+      "source": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+      "range": [
+        1859,
+        1969
+      ],
+      "sha256": "4e48dda0a11c128efadcc01656911cfd952d720e4ee9510bc18cb7259d97a60a",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B108-011",
+      "source": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+      "range": [
+        1970,
+        2257
+      ],
+      "sha256": "311ffd95e8a9afe82911002a758dcdff1780afb92b88ffff20aadb37467b4369",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B108-012",
+      "source": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+      "range": [
+        2258,
+        2497
+      ],
+      "sha256": "3536e35735dc4c0c5a439fe00405422e107522d31dadcbe9aa655c8a4259a443",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B108-013",
+      "source": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+      "range": [
+        2498,
+        2642
+      ],
+      "sha256": "4c96809367a12f118a863e536ef99bd01f336c09c1aef334f9ef54ec62bb7448",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B108-014",
+      "source": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+      "range": [
+        2643,
+        2938
+      ],
+      "sha256": "83901d60256cc0ffb695b3caf4fb62c5bbe4a5c755f32443f44c1d27ff164688",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B108-015",
+      "source": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+      "range": [
+        2939,
+        3048
+      ],
+      "sha256": "24623157d9b99a76c8be727689751a8b97b8a89cec65f3121c2080580b47364d",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B108-016",
+      "source": "LVI-C07-PIII-D571-AUTHOR-SOURCE",
+      "range": [
+        3049,
+        3143
+      ],
+      "sha256": "592d1f7c77b7a7efbcd2df8bad30ce5e66f469240dcf90f2173956816f9b83ab",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B109-001",
+      "source": "LVI-C07-PIV-D572-AUTHOR-SOURCE",
+      "range": [
+        1,
+        21
+      ],
+      "sha256": "728e028471c4432d9c8e21af24fe0d9303432b67994b4fc8f608d8c73732be2f",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B109-002",
+      "source": "LVI-C07-PIV-D572-AUTHOR-SOURCE",
+      "range": [
+        22,
+        109
+      ],
+      "sha256": "8330929048b06c8cb29a1430e08d03a6033b5bf83aed96a7fb2bb0e574f418cf",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B109-003",
+      "source": "LVI-C07-PIV-D572-AUTHOR-SOURCE",
+      "range": [
+        110,
+        211
+      ],
+      "sha256": "83745cc083d1757a240207d651e37fcffd758d5ed2ab3031b50ddb4a5a88c86d",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B109-004",
+      "source": "LVI-C07-PIV-D572-AUTHOR-SOURCE",
+      "range": [
+        212,
+        339
+      ],
+      "sha256": "2a142daf6f683c0c4d1e42904efa8226e6d94880cf0ea425aa76915133509e5f",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B109-005",
+      "source": "LVI-C07-PIV-D572-AUTHOR-SOURCE",
+      "range": [
+        340,
+        383
+      ],
+      "sha256": "0404dcc206f72c4cc9975b6c8ea2019517cab2adca64e359e79d0a56b1fe0a61",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B109-006",
+      "source": "LVI-C07-PIV-D572-AUTHOR-SOURCE",
+      "range": [
+        384,
+        481
+      ],
+      "sha256": "32de7e3c21ade7d427b8f57b334f68026175659cc0aae85ac74d0084a7285b68",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B109-007",
+      "source": "LVI-C07-PIV-D572-AUTHOR-SOURCE",
+      "range": [
+        482,
+        629
+      ],
+      "sha256": "c0d010f86d50493f26fb126fe67caa4c6bb3c344b67da5fa05a1eef3280807de",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B109-008",
+      "source": "LVI-C07-PIV-D572-AUTHOR-SOURCE",
+      "range": [
+        630,
+        709
+      ],
+      "sha256": "2c7041d66a1cf56a9e47749f00bec1dcae1ee36c515eba402e1b30a36afc9f5e",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B109-009",
+      "source": "LVI-C07-PIV-D572-AUTHOR-SOURCE",
+      "range": [
+        710,
+        811
+      ],
+      "sha256": "86a499c041f32eda1a4e0ae0f35a6e9d698eeca15266e26ba782477b6a4b9b66",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B109-010",
+      "source": "LVI-C07-PIV-D572-AUTHOR-SOURCE",
+      "range": [
+        812,
+        925
+      ],
+      "sha256": "04f124312771e46513a9d3db482a6c75fd1c62a71b93701af304d9703512b6c3",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B110-001",
+      "source": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+      "range": [
+        1,
+        21
+      ],
+      "sha256": "da3dc294100454686cd73d258d51e1299ff5a863c042866e1feb668617dcc1cd",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B110-002",
+      "source": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+      "range": [
+        22,
+        127
+      ],
+      "sha256": "2011e41d79d22c2ce391f5768373b00e0cb748d95ab1a474555092fb286e556d",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B110-003",
+      "source": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+      "range": [
+        128,
+        217
+      ],
+      "sha256": "a062d91de2f3ba387590c0216ab122a9b219916973760f4151518067e37ded9c",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B110-004",
+      "source": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+      "range": [
+        218,
+        282
+      ],
+      "sha256": "0163568a71c9a3c106c46543222f28b7dfdba3f11de426988239919d683450ce",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B110-005",
+      "source": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+      "range": [
+        283,
+        336
+      ],
+      "sha256": "75cfeccbc6c5f7e164239ff02efa8b8f4a85d97d4a9012b1a86c97df5d60a612",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B110-006",
+      "source": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+      "range": [
+        337,
+        377
+      ],
+      "sha256": "0ddf58ff07e4fcdd5fb420f79287ff3c7cda00b3ca605f74599350ebfd0c4741",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B110-007",
+      "source": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+      "range": [
+        378,
+        425
+      ],
+      "sha256": "7cb694e57fb2a0eac6a949e8aefdee2050dbeca8c5ac23951f950165dc6377c8",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B110-008",
+      "source": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+      "range": [
+        426,
+        541
+      ],
+      "sha256": "7b4f167b916f9bd1ba0b6b17d5ee74bf20f29f93ef15ea3510ebe4792d504e6f",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B110-009",
+      "source": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+      "range": [
+        542,
+        587
+      ],
+      "sha256": "348cb99506973720586b4ed849f188b3d6f52cd23de51aba21ee0f61ec6cf529",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B110-010",
+      "source": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+      "range": [
+        588,
+        709
+      ],
+      "sha256": "1ba4242b9892546d0b3f353af41057b2e3db67712565976710088cd88ed250cf",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B110-011",
+      "source": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+      "range": [
+        710,
+        797
+      ],
+      "sha256": "a3eeba65dfbe9363e2f5dbe559a9e27e44a0071c5d966669582d0b6afc94de26",
+      "promotion": false
+    },
+    {
+      "id": "O8C-B110-012",
+      "source": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+      "range": [
+        798,
+        878
+      ],
+      "sha256": "38330b849dc6d3b5fa23f2cdcb1e9db0a65d14405c12874e0f226884f53b53d3",
+      "promotion": false
+    }
+  ],
+  "overlays": [
+    {
+      "id": "D569-R2",
+      "rule": "R1 excluded; R2 closure seq40; earlier editorial manifest is not retroactively rewritten; separate UI parity and semantic certification.",
+      "promotion": false
+    },
+    {
+      "id": "D570-D573-TECH",
+      "rule": "Project goals, failed experiments, working bounded prototypes and operational infrastructure distinct. D573 technician travel not commercial rail service.",
+      "promotion": false
+    },
+    {
+      "id": "D569-D573-POV",
+      "rule": "Lucas learns Velkar name D573 07h39 only; Renshar and Kheran reports bounded; conference preparatory session planned, no plenary.",
+      "promotion": false
+    },
+    {
+      "id": "D571-D572-NAME",
+      "rule": "Orchard woman unnamed D571; Adela named D572; family three generations. Draft grouping corrected in receipts.",
+      "promotion": false
+    }
+  ],
+  "controls": {
+    "coverage": "All 10373 literal prose lines; lexical axes assessed separately from independent semantic certification",
+    "reader_isolation": true,
+    "prior_controls_preserved": true,
+    "global_gates": "PENDING_AT_D579",
+    "no_0111_recovery": true
+  },
+  "axis_coverage": {
+    "assessed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "represented": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ]
+  },
+  "totals": {
+    "session_lines": 10373,
+    "session_records": 67,
+    "staging_records": 4871,
+    "book_v_records": 1380,
+    "book_v_lines": 232445,
+    "book_vi_records": 596,
+    "book_vi_lines": 76202,
+    "original_events": 55,
+    "original_knowledge": 55
+  },
+  "r2_recovery_review_path": "audit/omega008-c/turbo-v3/macro-0106-r2-recovery-review-pending.json",
+  "r2_recovery_review_blob": "9543f1842d8bdaab8dfd1ba10e225ae2eb495a8a",
+  "next_authority_path": "audit/omega008-c/turbo-v3/frontier-0111-authority-preflight-pending.json",
+  "next_authority_blob": "e7d04dcdf889c5b87db2b943da4dbec6fd431f50",
+  "next_authority": {
+    "schema": "OMEGA_D574_AUTHORITY_PREFLIGHT_V1",
+    "status": "PENDING_NATIVE",
+    "scope": "AUTHORITY_PREFLIGHT_ONLY_NO_0111_RECEIPT_OR_SEMANTIC_RECOVERY",
+    "episode": "LVI-C08-PI-D574-AUTHOR-SOURCE",
+    "sequence": 45,
+    "previous_episode_id": "LVI-C07-PV-D573-AUTHOR-SOURCE",
+    "closure_blob": "868c1cabe1905b32f8b295c3435ede69e44fa8b7",
+    "story_sha256": "d3a0c885eae310f11a5414c78817aeea0e758348610664a4062154aafe6da0b6",
+    "choice_sha256": "0e58c5cbe1c3da9471b98f1f4affe095f56abf485d6ef7f56a6e936af8226c63",
+    "pins": {
+      "choice": "bfa99b0d4496439d02048b9cdaebe288966855d7",
+      "immutable_manifest": "7bb13c1ea3326bc4c68faa2c2e340a19e21e3abc",
+      "source_proof": "8361c8987b329755fe46aacd1b4833e418c4bb71",
+      "reader_receipt": "4a2dffd80f0164134fdc045ad6c8c702d5824b18"
+    },
+    "source_proof_kind": "ASSISTANT_PREDELIVERY_EXACT_TEXT",
+    "ui_parity": "NOT_INDEPENDENTLY_VERIFIED",
+    "macro_0111_recovered": false,
+    "production_gate": "HOLD",
+    "canon_changed": false,
+    "official_checkpoint_changed": false,
+    "semantic_certification": false,
+    "independent_review": false,
+    "promotion": false
+  },
+  "status": "PENDING_NATIVE",
+  "cycle_status": "PENDING_NATIVE",
+  "production_gate": "HOLD",
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "semantic_certification": false,
+  "independent_review": false,
+  "promotion": false,
+  "native_validation": "PENDING",
+  "review_scope": "Grouped editorial recovery, not independent semantic certification"
+}
