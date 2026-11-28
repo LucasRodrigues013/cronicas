@@ -10,3 +10,5 @@ Resumo consolidado de decisões e críticas da conversa de 28/11/2026. Não é t
 Os personagens fictícios, ambiente urbano não nomeado e detalhes da guerra são expansões editoriais. Aprovação do livro nunca implica aprovação no RPG.
 
 - Após V0.5: autor aprovou o texto integral do prólogo e rejeitou a apresentação visual anterior; solicitou projeto gráfico de primeira qualidade. Edição Premium entregue sem mudança de prosa, identidade visual sujeita a avaliação. Texto liberado para próxima unidade mediante pedido; capítulo 1 não alterado nesta entrega.
+
+- Capítulo 1 V0.3: autor rejeitou a força da abertura, exigiu impacto épico, emoção extraordinária e nota mínima 9,9 antes de aprovação. V0.4 em revisão, sem aprovação. Próximo capítulo bloqueado.
