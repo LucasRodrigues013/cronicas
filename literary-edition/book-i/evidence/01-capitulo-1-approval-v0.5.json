@@ -1,0 +1,42 @@
+{
+  "schema": "literary-edition-author-approval-v1",
+  "date": "2026-11-28",
+  "status": "AUTHOR_APPROVED_TEXT",
+  "chapter": 1,
+  "title": "Um mundo que não conhecia seu nome",
+  "author_statement": "Capítulo 1 aprovado.",
+  "approved": {
+    "version": "V0.5",
+    "path": "book-i/drafts/01-capitulo-1-v0.5.md",
+    "blob": "1758acc47470ce5a233ccfc60b7c73884071e2a2",
+    "sha256": "fbaf8fa1f460bc38da104eee7e08eb6eb81087869aaa90c1d249ff502f116e2d",
+    "words": 6475
+  },
+  "prologue": {
+    "blob": "835d451cb764f227d3732ef2a9a1376a3bbd59b0",
+    "words": 4827,
+    "unchanged": true
+  },
+  "quality_gate": {
+    "minimum": 9.9,
+    "previous_manual_estimate": 9.4,
+    "certified": false,
+    "decision": "Explicit author approval of current version recorded despite previous estimated score below threshold; no score inflation, no global change to future quality target."
+  },
+  "cumulative": {
+    "words": 11302,
+    "pages": 52,
+    "pdf_sha256": "55df8f514cc325bd1017832303abc86c7578a9b57e2a93b026afee98e0f7f03d",
+    "binary_archive": "Previously delivered in conversation, not stored in GitHub."
+  },
+  "next": {
+    "chapter": 2,
+    "proposed_title": "O preço da primeira vitória",
+    "scope": "Aftermath, interrogation, Uzgor and reported Bandeira Cinzenta, distant observers; reconcile against historical sources before writing; no drafting in this turn."
+  },
+  "constraints": [
+    "Freeze approved prologue and chapter 1; modifications require author approval.",
+    "Preserve RPG isolation and prior drafts.",
+    "Original screenshots and independent evaluation remain pending."
+  ]
+}
