@@ -1,0 +1,84 @@
+{
+  "schema": "OMEGA_FC03_GATE_AND_REVIEW_HANDOFF_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "status": "FC03_REVIEW_DEPENDENCY_IDENTIFIED_HOLD",
+  "prior_checkpoint_blob": "53eff49a7b8acd064c5814032d81e69f248f19e8",
+  "fc02_evidence_blob": "15960f2ba7cf911e731b71d0df561bacded7b992",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "main_pin": "1b063d05c1acaa86b2f237f987804af59dbeccd6",
+  "stage_c": {
+    "branch_head": "bbba472750f8179ea4344c2bb3644cb6d5afc7b9",
+    "entry_blob": "d4fbb70267538686cc11f9d22b964a1b0401e693",
+    "closure_blob": "f58706b668f0707e8d1e1e17e4e55cb03b5a6a5e",
+    "records": 261,
+    "groups": 203,
+    "field_updates": 177,
+    "independently_certified": 0,
+    "pr": 77,
+    "pr_comments_inspected": 13,
+    "original_ledger_blob": "96ebb393cb2e95975cb81948e78519c46da7b9f0",
+    "frozen_batches": [
+      {
+        "batch": 1,
+        "targets": [
+          521,
+          522
+        ],
+        "controller": "4f8be2d223faee4a6ccc3eed9dfe107a775a78be0ee97ff6d6276b04344a5285",
+        "A": "6f2cd8546cb76eecbba869f520a86f384470566f7c31312b191949948ad787c8",
+        "B": "4b64557fca1f2dbe29427da192268f4ece9d02823a5fde4c8452a52601876ad8",
+        "reproduced": 0,
+        "limitation": "Original challenge strings not recovered; attempted reconstruction did not match. Do not replace."
+      },
+      {
+        "batch": 2,
+        "targets": [
+          529,
+          530,
+          533,
+          536,
+          548,
+          549,
+          565,
+          566
+        ],
+        "controller": "6e488cd32ac3e31e0f57b66a7a0c0da7fc6aeac6c23946c17d70f7f067f381fe",
+        "A": "e50d200e730ba79b20dd555304bdf364a7a93a837b3de5fdce61ace359a0fe18",
+        "B": "1e7f415dffd78c93cffa0f543e9d4e721a016c415f82909bfe8164e1c5079b68",
+        "reproduced": 2,
+        "verification": "Canonical JSON SHA256 of reconstructed packet body matched both existing frozen IDs; files delivered only in author chat, not GitHub."
+      }
+    ],
+    "actual_returns": 0,
+    "prior_p1_review": {
+      "jobs": 408,
+      "pairs": 70,
+      "packets": 140,
+      "returns": 0
+    }
+  },
+  "gate_status": {
+    "G1": "PARTIAL: FC02 exact source bindings and 989 tests; critical typed reconciliation and independent Stage C incomplete",
+    "G2": "BLOCKED: no independent returns, calibration or explicit CG equivalence approval",
+    "G3": "BLOCKED: 60-case 36/12/12 split and reserved custody not established",
+    "G4": "PARTIAL: existing adaptive contracts, measured recurrence reduction and approval missing",
+    "G5": "BLOCKED: no real blind paired preference results",
+    "G6": "PARTIAL: 24 actual scene preparation calls in disposable graph, no live installation or end-to-end generated episode",
+    "G7": "PENDING: no equivalent-workload latency measurement",
+    "G8": "PARTIAL: refs preserved; deployment and evaluation custody not authorized",
+    "G9": "BLOCKED: no independent longitudinal evidence",
+    "G10": "BLOCKED: author release after mandatory gates"
+  },
+  "next": "Operator submits existing frozen batch 02 A and B to separate isolated ChatGPT sessions; return raw JSON and declared session/model metadata, then use accept_history/reconcile_history and author adjudication. Recover exact batch 01 challenges separately without replacing IDs. Do not rerun recovery, create more review packets, or claim certification from hash checks. This initial exchange is not sufficient for full Stage C or Level 7.",
+  "limits": [
+    "No new historical facts, code, benchmark, tests or live graph installed in this checkpoint.",
+    "Original numeric goals and ten gates unchanged; same-provider procedural separation is not independent model attestation.",
+    "No reviewer answers found in inspected sources; absence is scoped, not proof of universal absence.",
+    "FC02 typed events remain zero; live graph not activated; no canon or D580 ratification."
+  ],
+  "production_gate": "HOLD",
+  "semantic_certification": false,
+  "independent_review": false,
+  "promotion": false,
+  "canon_changed": false
+}
