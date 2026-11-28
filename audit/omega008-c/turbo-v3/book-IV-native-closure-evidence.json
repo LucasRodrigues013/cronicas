@@ -1,0 +1,89 @@
+{
+  "schema": "OMEGA_HYBRID_NATIVE_EVIDENCE_V1",
+  "validated_commit": "6d93a46ef9219b0b2b084cfffd8396fbf020ceec",
+  "workflow_run": 46086665501,
+  "jobs": {
+    "native_staging": 140797716842,
+    "literal_authorized_public": 140797717061
+  },
+  "conclusion": "success",
+  "prior_failed_run": 46086588052,
+  "correction_overlay_blob": "6445e1451dbeab0ac0b17a0c28a2f1c572176c09",
+  "targeted_regression": {
+    "passed": 47,
+    "total": 47,
+    "groups": [
+      14,
+      11,
+      12,
+      10
+    ]
+  },
+  "aggregate": {
+    "authority_counts": {
+      "AUTHOR_DIRECTION_NOT_EVENT": 38,
+      "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED": 640,
+      "METADATA_NOT_EVENT": 61,
+      "NARRATOR_PROPOSED_BRANCH_NOT_EVENT": 34
+    },
+    "axes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "book_lines": 122935,
+    "book_records": 773,
+    "book_status": "PASS_STAGING_ONLY",
+    "canon_changed": false,
+    "cycle_lines": 23579,
+    "cycle_records": 128,
+    "cycle_status": "PASS_STAGING_ONLY",
+    "macro41_lines": 4628,
+    "macro42_lines": 8935,
+    "metadata_lines": 8,
+    "next_line": 8936,
+    "production_gate": "HOLD",
+    "semantic_certification": false,
+    "session_lines": 13563,
+    "session_records": 80,
+    "staging_records": 2895,
+    "status": "PASS_NATIVE_BOOK_IV_0042_COMPLETE",
+    "visibility_counts": {
+      "EDITORIAL_ONLY_NO_CHARACTER_INJECTION": 571,
+      "READER_ONLY_NO_CHARACTER_INJECTION": 148,
+      "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION": 54
+    }
+  },
+  "source_integrity": "FULL_SOURCE_SHA256_AND_GIT_BLOBS_MATCH",
+  "logs_readback": true,
+  "semantic_certification": false,
+  "independent_review": false,
+  "production_gate": "HOLD"
+}
