@@ -1,0 +1,746 @@
+{
+  "schema": "OMEGA_HYBRID_CYCLE_0053_0057_VALIDATED_V1",
+  "project": "CRONICAS_DE_UM_NOVO_MUNDO",
+  "archive_pin": "9dd632fb0bcd84dfce5b631013fdc67d7492ac5d",
+  "previous_cycle_blob": "69a57b04c8e678716563d38e94b88c636e06294b",
+  "prior_session_review_blob": "4220397f962e0893e39f2e791c2a564a2b1a744b",
+  "previous_checkpoint_blob": "e9174258fbb4b25e26bdf991ab6de482e66485da",
+  "macros": [
+    {
+      "macro": 53,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0053-01.json",
+      "blob": "914c12c78ad30285560d110de585aa5dd861e9b4",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0053-closure-pending.json",
+      "checkpoint_blob": "1256da1f9e77b3a67db7b59d1abdc8b9ee22509e",
+      "records": 66,
+      "lines": 10158,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "macro": 54,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0054-01.json",
+      "blob": "af630156eba4a6ae5f8caa122bb0147a5640bcd6",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0054-closure-pending.json",
+      "checkpoint_blob": "197d080f2f27a9802dbab78ea5f4ffa5cc72eb67",
+      "records": 50,
+      "lines": 10189,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        22,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "macro": 55,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0055-01.json",
+      "blob": "d4f8336f02843e8fe26069ae3b1f55ef62dd80df",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0055-closure-pending.json",
+      "checkpoint_blob": "baa8f0215abf03b57b6fc3469810dd01a64121c2",
+      "records": 58,
+      "lines": 10153,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "macro": 56,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0056-01.json",
+      "blob": "6ff43682368bd6d054d93a04d4225917205320b2",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0056-closure-pending.json",
+      "checkpoint_blob": "a1cb5e158225e113c480968c741a3f617e69bf49",
+      "records": 6,
+      "lines": 923,
+      "axes": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18,
+        19,
+        25,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "macro": 57,
+      "receipt": "audit/omega008-c/turbo-v3/partial-macro-0057-01.json",
+      "blob": "60ea17b39c7f4a6b2b6722be7c33a92f8737803c",
+      "checkpoint": "audit/omega008-c/turbo-v3/recovery-checkpoint-0057-closure-pending.json",
+      "checkpoint_blob": "a6c2c33ea1c811da40f183cafef7d02adefc49e6",
+      "records": 49,
+      "lines": 10089,
+      "axes": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    }
+  ],
+  "prior_findings": [
+    {
+      "id": "URBAN_BACKSTAGE",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        9,
+        112
+      ],
+      "sha256": "6a2a1889edee802bc577e5b23ef4cb2f478b0adf706a3ee4c1237f336fea986a",
+      "promotion": false
+    },
+    {
+      "id": "CONTINUATION_MATCH",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        195,
+        264
+      ],
+      "sha256": "c4fff6a380ebb8649930041b928dd587d44ea361c25bf9ce5a75c8e4e2ead3c7",
+      "promotion": false
+    },
+    {
+      "id": "NO_TALIS_REPLY",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        457,
+        620
+      ],
+      "sha256": "7b0d4e0080d4420aaaa93d800f7823bf0bafeab33b4915251fc17eacdc080f6c",
+      "promotion": false
+    },
+    {
+      "id": "ORIVANTES_RESCUE",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        981,
+        1442
+      ],
+      "sha256": "f46b33cc4e359419dbad463598b6aa9a9a14b1411046bf454e88fd750aae79cf",
+      "promotion": false
+    },
+    {
+      "id": "ROAD_ATTACK_CUSTODY",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        3477,
+        4412
+      ],
+      "sha256": "59f5f66e0e0c664a3946da5a45057744ee7f3c09862368da1553049d9e8d74ee",
+      "promotion": false
+    },
+    {
+      "id": "PHYSICAL_ARRIVAL",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        7455,
+        8092
+      ],
+      "sha256": "ee10e7991af6721cb62a4ca4eac99ed20a58d803ce4b4f93ea25d8346af3964e",
+      "promotion": false
+    },
+    {
+      "id": "PORTAL_COLLECTIVE",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        8577,
+        9344
+      ],
+      "sha256": "3d1a54f1ef3bf028d5342aed769198ac35ac75d30c45155e17769030200ce7ed",
+      "promotion": false
+    },
+    {
+      "id": "MIREN_RESEARCH",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        11003,
+        11226
+      ],
+      "sha256": "629e8ddebc23d62b98e5bd35e9d8e0bc192a6a62661e6a78c846e19bd6e0d2f2",
+      "promotion": false
+    },
+    {
+      "id": "CREATION_RESCUE",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        11227,
+        11598
+      ],
+      "sha256": "0b268f6f2660f6c9f7d48992c68b523e48e1a2d4e74fa06e6a0ba0d30fad953a",
+      "promotion": false
+    },
+    {
+      "id": "VARO_REUNION",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        12403,
+        12798
+      ],
+      "sha256": "ed56dcd70570e1c18460af055862b893693393d1849231690ef8336afeb06aad",
+      "promotion": false
+    },
+    {
+      "id": "MISSING_IV",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        13107,
+        13121
+      ],
+      "sha256": "7db782073f30718b76c32b079c92cdfa26df56611aa5e276ae1ef1200c53cbd3",
+      "promotion": false
+    },
+    {
+      "id": "REJECTED_V",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        13122,
+        15826
+      ],
+      "sha256": "5f544cd746343f188475314ed1d08781854991bd2381cf3448f9afc25b46a5c2",
+      "promotion": false
+    },
+    {
+      "id": "AUTHOR_REJECTION",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        15827,
+        15831
+      ],
+      "sha256": "25a276e0b5f6d53ff939d293c4dccf70a0aba3c284e96f6bd912d8d3fe2d99a0",
+      "promotion": false
+    },
+    {
+      "id": "REPLACEMENT_V",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        15832,
+        18240
+      ],
+      "sha256": "585e1d19927e85c49818d14f703cda2969f3317f726f3069c102d185c7c8ffdb",
+      "promotion": false
+    },
+    {
+      "id": "TREE_D105",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        18477,
+        18586
+      ],
+      "sha256": "edddfd9821e72921360ffbe09756dbf4cd8f85881fb72374e484ef860c9dd3a0",
+      "promotion": false
+    },
+    {
+      "id": "NOX_EXTERIOR_FORM",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        18587,
+        18896
+      ],
+      "sha256": "37d84cb577be9d62a06723e6d30d47d810d8990219df357218ed0830d1e76929",
+      "promotion": false
+    },
+    {
+      "id": "CARRIAGE_RELOCATION",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        18897,
+        19250
+      ],
+      "sha256": "9dcdb7fdfa309dd7903db1d028295f80a55f3fd4b47e5d435a99281284e95ff2",
+      "promotion": false
+    },
+    {
+      "id": "PHYSICAL_REUNIONS",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        19251,
+        19928
+      ],
+      "sha256": "6319138845a486d561230584121243d7cf4774c7737eb617ff6258f01bfc561f",
+      "promotion": false
+    },
+    {
+      "id": "AVENUE_REVEAL",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        20109,
+        20347
+      ],
+      "sha256": "a592349b5b5b5111acf964f533d24d534011423dc2e09412882d80ae5cc2efa4",
+      "promotion": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "NOX_INTEGRATION",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        21469,
+        21718
+      ],
+      "sha256": "7d8c0f6cabb7cd0d620d15f825ca8875dbc14d8a59c423b941f136152fbd4a61",
+      "promotion": false
+    },
+    {
+      "id": "MIXED_CIRAN_INVALIDATION",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        21987,
+        24116
+      ],
+      "sha256": "4b677c379a31c1fa4124a41c680b18bb05f57e9f79e957636e598a7013051de7",
+      "promotion": false
+    },
+    {
+      "id": "CIRAN_ERRATA",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        24165,
+        24173
+      ],
+      "sha256": "ea3662de8dad65b7b3c7fc466be6cb5d2030ed1b9b5d5d85314ef321b64fb97a",
+      "promotion": false
+    },
+    {
+      "id": "DUELS",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        25347,
+        26236
+      ],
+      "sha256": "1e2bc5f38339e4174b8168fae09f2793a72e094aa4f88235fdd6650981b43de3",
+      "promotion": false
+    },
+    {
+      "id": "OBSERVATORY_INFERENCE",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        26239,
+        26378
+      ],
+      "sha256": "ec9ce45bdab53394cf4f93fe827c2d545f8cd300d8d387b69c1ea7cf58190343",
+      "promotion": false
+    },
+    {
+      "id": "OBSERVATORY_DISTINCT",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        28163,
+        28524
+      ],
+      "sha256": "4ea2155c40bf4956a2648ad7b9db4f67fb259f631eb9d2ca1fda57593e274502",
+      "promotion": false
+    },
+    {
+      "id": "OBSERVATORY_ERRATA",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        28996,
+        29031
+      ],
+      "sha256": "3c4c2ae00c568ece7ea9f4372dbf969bec9266b309d88fc1142e52830aac1cd0",
+      "promotion": false
+    },
+    {
+      "id": "OBSERVATORY_PHYSICAL",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        29402,
+        29735
+      ],
+      "sha256": "4912f9e71409e33314d67c94db0d6eb6c4f1c49f40d2586c6350ca7b3a57d734",
+      "promotion": false
+    },
+    {
+      "id": "FESTIVAL",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        30550,
+        31125
+      ],
+      "sha256": "4d6d5f4068ce91f186db0e8181e1696c53cfd087e778dd69d3f03abf974cb494",
+      "promotion": false
+    },
+    {
+      "id": "SOURCE05_CLOSE",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        31300,
+        31423
+      ],
+      "sha256": "f5d8011fe91d7f353ad9dcc5b9fbf61f65de4e4b5b4f05563603a33a668dcac1",
+      "promotion": false
+    },
+    {
+      "id": "STALE_RECAP_AND_CORRECTION",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        9,
+        394
+      ],
+      "sha256": "3abc7f35482181271a31e70e533f5f0e1131a9325bcd35052a376624bc139d9c",
+      "promotion": false
+    },
+    {
+      "id": "AERUN_AUTHOR_DESIGN",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        395,
+        1105
+      ],
+      "sha256": "baf4ebc77a07286bba26f6e6dbfd044f92426d19147ef6dcee9759a9021c4000",
+      "promotion": false
+    },
+    {
+      "id": "HZ1_CANDIDATE",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        4809,
+        4986
+      ],
+      "sha256": "360d2db8e2993b1b0d13169c52f2ecacb8e7dd5d6c54caf70fad69c577d2a2d0",
+      "promotion": false
+    },
+    {
+      "id": "AERUN_MODEL_V04",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        7825,
+        7980
+      ],
+      "sha256": "a25c4f941f58cce3a6d43d766ddda9663bc0def33ac9dd62493dd0370b4edce7",
+      "promotion": false
+    },
+    {
+      "id": "NO_MANIFEST_AUTHOR",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        7981,
+        7989
+      ],
+      "sha256": "4a45fdda2f25d78f96aa0c9429beb738698bb778503c3d85ecd4821f133bfbb2",
+      "promotion": false
+    },
+    {
+      "id": "BICYCLES",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        8297,
+        8734
+      ],
+      "sha256": "2e2e4433d6b7c9be10570265e8392bfe5bcf953b84a07d502a9832dca3a47466",
+      "promotion": false
+    },
+    {
+      "id": "INFRA_GAPS",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        9233,
+        9485
+      ],
+      "sha256": "56b79d599c98505d9d9b0fc25b2cc6687ec30e730da6879280d24d434943bbf2",
+      "promotion": false
+    },
+    {
+      "id": "AUTOMATA_240",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        9658,
+        9900
+      ],
+      "sha256": "c0b1a2a26a2803f854306f469e9326a21a63a7e8ad3a9f2b5cc8ab6511ecf4b0",
+      "promotion": false
+    },
+    {
+      "id": "HZ1_RECOGNITION",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        9901,
+        10089
+      ],
+      "sha256": "c6633fa1a16d2bbf00d1a0955628db1d2a34e084100b80a2b074091095bd774b",
+      "promotion": false
+    }
+  ],
+  "controls": [
+    "Preservar todas as regras/overlays anteriores; source05 encerrada D496 23h56, source06 primeiros recaps obsoletos, autor corrige D496; capítulo9 vigente A Primeira Manhã de Uma Nova Era, Livro V confirmado nos cabeçalhos narrativos.",
+    "D492 NÓX escolhe permanecer integrado a Lucas; corpo exterior recolhido, mesma consciência, sem nerf nem perda presumida de capacidade.",
+    "D492 Círan aparição invalidada expressamente 24165–24173: excluir falas/ações e projeções dependentes, futebol e reencontros dos demais preservados; não inventar jogador substituto, resultado ou viagem. Círan e Yra Calderva. Agrupamentos mistos restritos até revisão tipada.",
+    "D493 Lucas/NÓX vencem Varo, Káiron e ambos juntos em treino sério, não letal; preservar evolução técnica/força dos adversários, não extrapolar para toda configuração.",
+    "Observatório físico Crista Vento Claro D171 e visita D400 distinto do interno Casa dos Horizontes. Corrigir inferência de inexistência D493/494, não criar visita retroativa; D495 e D496 retorno narrado; painel removível e caderno não alteração de marcos.",
+    "Talis não localizada, Tecelã última custódia anterior, nenhuma fusão de identidades; manter regra conhecimento restrito. D496 férias acabam, nenhuma obrigação automática.",
+    "AERÚN apenas projeto 72ha, anel 480m, 16 setores, 64 programas conceituais, 4 pavimentos superiores e 4 subterrâneos em estudo, esfera36m conceito. HZ-1 candidato, reconhecimento autorizado sem aprovação final. Maquete material/luminosa temporária e versão v0.4 não edifício.",
+    "D499 bicicletas efetivas e 240 autômatos não conscientes seis séries; não adicionar aos 300 originais. Infraestrutura água/esgoto/resíduos/estradas, conexão Avenida/HZ-1 ainda pendente de levantamento e autorização. ARGOS sem voo livre, LEVIATÃ projeto.",
+    "Ciclo consolidado 0053–0057: cobertura estrutural não homologação semântica; sem promoção, projeção tipada e regressão global pendentes."
+  ],
+  "overlays": [
+    {
+      "id": "SOURCE05-CH7-IV-NOT_NARRATED",
+      "range": [
+        13107,
+        13121
+      ],
+      "disposition": "NO_EVENT_NO_INVENTED_PART",
+      "promotion": false
+    },
+    {
+      "id": "SOURCE05-CH7-V-REJECTED",
+      "range": [
+        13122,
+        15826
+      ],
+      "author_rejection": [
+        15827,
+        15831
+      ],
+      "replacement": [
+        15832,
+        18240
+      ],
+      "disposition": "SUPERSEDED_NO_EVENT_NO_CHARACTER_INJECTION",
+      "promotion": false
+    },
+    {
+      "id": "IDENTITY-CANDIDATES",
+      "disposition": "IRIA_ESHARA_VS_IRIA_SOMBRAS; ORVEN_ESTRADA_VS_AGENT; TERAN_VS_TEREN_NO_AUTOMATIC_MERGE",
+      "promotion": false
+    },
+    {
+      "id": "D492-CIRAN-INVALID",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "range": [
+        21987,
+        24116
+      ],
+      "authority_anchor": [
+        24165,
+        24173
+      ],
+      "disposition": "INVALIDATE_CIRAN_ACTIONS_AND_DEPENDENT_CLAIMS_ONLY_KEEP_OTHER_EVENTS_NO_SYNTHETIC_REPLACEMENT",
+      "promotion": false
+    },
+    {
+      "id": "D493-D494-OBSERVATORY-ERRATA",
+      "source": "05_DIA_469_A_496_FONTE_LITERAL.txt",
+      "ranges": [
+        [
+          26239,
+          26378
+        ],
+        [
+          28163,
+          28524
+        ]
+      ],
+      "authority_anchor": [
+        28996,
+        29031
+      ],
+      "disposition": "TWO_DISTINCT_OBSERVATORIES_NO_RETROACTIVE_SCENE",
+      "promotion": false
+    },
+    {
+      "id": "SOURCE06-STALE-RECAP",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        9,
+        394
+      ],
+      "disposition": "EDITORIAL_NOT_NEW_EVENTS_D496_AUTHOR_CORRECTION",
+      "promotion": false
+    },
+    {
+      "id": "AERUN-STATE",
+      "source": "06_DIA_497_A_528_FONTE_LITERAL.txt",
+      "range": [
+        395,
+        10089
+      ],
+      "disposition": "PROJECT_NOT_CONSTRUCTED_BICYCLES_AND_240_AUTOMATA_ACTUAL_HZ1_CANDIDATE",
+      "promotion": false
+    }
+  ],
+  "totals": {
+    "lines": 41512,
+    "records": 229,
+    "session_lines": 21165,
+    "session_records": 113,
+    "staging_records": 3603,
+    "book_v_records": 708,
+    "book_v_lines": 128033,
+    "official_records": 1656
+  },
+  "source_transition": "SOURCE_05_COMPLETE_SOURCE_06_STARTED_BOOK_V_CONTINUES",
+  "cycle_status": "PASS_STAGING_ONLY",
+  "status": "PASS_STAGING_ONLY",
+  "production_gate": "HOLD",
+  "canon_changed": false,
+  "official_checkpoint_changed": false,
+  "semantic_certification": false,
+  "independent_review": false,
+  "promotion": false,
+  "pending_review_blob": "a9a4a84544a617c0092278039a75ffe889e2784f",
+  "validated_commit": "152f5e3c804fd770ac4dcbb8b99f112cd46deb29",
+  "native_evidence_path": "audit/omega008-c/turbo-v3/cycle-0053-0057-native-evidence.json",
+  "native_evidence_blob": "e2be0e91b1f944470f34c6fc77e2e6e542675892",
+  "authority_counts": {
+    "AUTHOR_DIRECTION_NOT_EVENT": 22,
+    "HISTORICAL_RESPONSE_NOT_CANON_CERTIFIED": 162,
+    "METADATA_NOT_EVENT": 31,
+    "NARRATOR_PROPOSED_BRANCH_NOT_EVENT": 14
+  },
+  "visibility_counts": {
+    "EDITORIAL_ONLY_NO_CHARACTER_INJECTION": 191,
+    "READER_ONLY_NO_CHARACTER_INJECTION": 1,
+    "RESTRICTED_KNOWLEDGE_NO_CHARACTER_INJECTION": 37
+  },
+  "axes_represented": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "book_boundary": false,
+  "source_transition_status": "PASS_STAGING_ONLY"
+}
